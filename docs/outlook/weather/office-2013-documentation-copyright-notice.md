@@ -1,23 +1,22 @@
 ---
-title: Excel XLL-SDK-copyright-Hinweis
+title: Office-2013 Dokumentation copyright-Hinweis
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 ms.topic: overview
+ms.prod: office-online-server
 localization_priority: Normal
-ms.assetid: 92a242e6-c94c-4eef-a4b2-efd1b8f62de8
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 0d01f908fb43215cb7d61a55220e3abe37157feb
+ms.assetid: a9c2f3d9-cea2-49a3-b709-40dc614b9f86
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.
+ms.openlocfilehash: 4a686a9d3e95ed143db69962ab45337cdb4d373d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
-ms.locfileid: "19790488"
+ms.locfileid: "19796156"
 ---
-# <a name="excel-xll-sdk-copyright-notice"></a>Excel XLL-SDK-copyright-Hinweis
+# <a name="office-2013-documentation-copyright-notice"></a>Office-2013 Dokumentation copyright-Hinweis
 
- **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
-  
 Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko. 
   
 Einige der hier dargestellten Beispiele dienen nur zu Illustrationszwecken und sind fiktional. Jegliche Ähnlichkeiten mit oder Verbindungen zur Realität sind rein zufällig.
