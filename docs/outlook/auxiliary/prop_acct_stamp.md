@@ -29,7 +29,7 @@ Finden Sie unter [IOlkAccount](iolkaccount.md).
 |Eigenschafts-Tag:  <br/> |0x000D001F  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Rufen Sie diese Eigenschaft mithilfe von [IOlkAccount::GetProp](iolkaccount-getprop.md). Wenn der Client versucht, diese Eigenschaft nicht festlegen, gibt diese Eigenschaft **E_OLK_PROP_READ_ONLY**. 
   

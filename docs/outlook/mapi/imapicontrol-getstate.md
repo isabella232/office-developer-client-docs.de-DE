@@ -58,7 +58,7 @@ S_OK
   
 > Der Zustand des Schaltflächensteuerelements wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Dienstanbieter implementieren die **IMAPIControl::GetState** -Methode, um den Status eines Schaltflächen-Steuerelements MAPI bereitzustellen. Wenn die Schaltfläche aktiviert ist, kann es zu einem Klicken mit der Maus oder Drücken einer Taste reagieren. Wenn es deaktiviert ist, wird die Schaltfläche abgeblendet und reagiert nicht auf einer klicken mit der Maus oder Drücken einer Taste. 
   
