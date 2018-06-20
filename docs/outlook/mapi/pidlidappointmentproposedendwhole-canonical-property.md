@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidAppointmentProposedEndWhole-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidAppointmentProposedEndWhole
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: 6749e7b1-7a66-4aca-92b0-9a23a87fc121
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 6db8c5d8be3bc7120c91da17135b0d871ec2b026
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793372"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidappointmentproposedendwhole-canonical-property"></a>Kanonische PidLidAppointmentProposedEndWhole-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt den vorgeschlagenen Wert für die Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) für einen Leistungsindikator Vorschlag.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidApptProposedEndWhole  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x00008251  <br/> |
+|Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Dieser Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

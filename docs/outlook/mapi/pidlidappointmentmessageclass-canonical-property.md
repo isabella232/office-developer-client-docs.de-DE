@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidAppointmentMessageClass-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidAppointmentMessageClass
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: 8b8c8484-0cb4-4842-8b11-de42d97e0140
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 8777b2119e6beefc4d69dc0babfc8672df3a468b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793353"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidappointmentmessageclass-canonical-property"></a>Kanonische PidLidAppointmentMessageClass-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt die Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) der Besprechung, die aus der Besprechungsanfrage generiert werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidApptMessageClass  <br/> |
+|-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
+|Long-ID (Abdeckung):  <br/> |0 x 00000024  <br/> |
+|Datentyp:  <br/> |PT_TSTRING  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Der Wert dieser Eigenschaft muss entweder "IPM. Termin"oder"IPM vorangestellt werden. Termin. ". Diese Eigenschaft ist nicht erforderlich.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

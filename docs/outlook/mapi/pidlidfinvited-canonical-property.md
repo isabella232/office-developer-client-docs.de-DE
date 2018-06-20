@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidFInvited-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidFInvited
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: ca1ea5ec-20d5-4b70-95de-c2246a10beae
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 409fc2e01b103378eb0df1bdd06ee8b5647148bb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793593"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidfinvited-canonical-property"></a>Kanonische PidLidFInvited-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt an, ob Einladungen für die Besprechung gesendet wurden, die diese Besprechung darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidFInvited  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x00008229  <br/> |
+|Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Den Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass eine Besprechungsanfrage nie gesendet wurde. Der Wert TRUE gibt an, dass eine Besprechungsanfrage gesendet wurde. Dieser Wert auf eine Besprechung auf TRUE festgelegt ist, muss es nicht geändert werden.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidFax3OriginalEntryId-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidFax3OriginalEntryId
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: afccacf1-0b8b-410c-b701-bf1bd8dcca99
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 76b53e208f95aa2d87e3d47cfc5beb69075d376f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793589"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidfax3originalentryid-canonical-property"></a>Kanonische PidLidFax3OriginalEntryId-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt an, dass die ursprüngliche EntryID des Kontakts Faxadresse zugrunde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Besprechungen  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidFax3OriginalEntryID  <br/> |
+|-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x000080D5  <br/> |
+|Datentyp:  <br/> |PT_BINARY  <br/> |
+|Bereich:  <br/> |Kontakt  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Diese Eigenschaft muss falls vorhanden, die einmalige EntryId angeben, die an diese Faxadresse entspricht.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,11 +45,11 @@ Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
 
 [[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
-> Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
+> Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     
 ### <a name="header-files"></a>Header-Dateien
 

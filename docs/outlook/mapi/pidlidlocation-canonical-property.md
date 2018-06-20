@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidLocation-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,45 +7,41 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidLocation
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: c0db4b9e-ab84-4f45-9dbf-9514d306119c
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 729b780c682381bb3306f25c6b857030a6c7e090
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793645"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidlocation-canonical-property"></a>Kanonische PidLidLocation-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Den Ort eines Termins darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidLocation  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Besprechungen  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x00008208  <br/> |
+|Datentyp:  <br/> |PT_UNICODE  <br/> |
+|Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
-
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
-  
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
 [[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
 [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   

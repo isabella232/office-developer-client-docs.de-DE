@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidIsException-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidIsException
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: 802321fb-4261-4c3e-9de3-8b4f490dae13
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 5a36cf21a36f83ec252923ddbb137b3b99456927
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793634"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidisexception-canonical-property"></a>Kanonische PidLidIsException-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt an, dass das Objekt, das eine Ausnahme (einschließlich einer verwaisten Instanz) darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
-|-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |LID_IS_EXCEPTION  <br/> |
+|-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x0000000A  <br/> |
+|Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Gibt der Wert FALSE an, dass das Objekt, das eine Terminserie oder eine einzelne Instanz darstellt. Das Fehlen dieser Eigenschaft für jedes Objekt gilt gibt einen Wert false mit Ausnahme der Ausnahme eingebettete Nachricht, die Wert TRUE wird davon ausgegangen.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

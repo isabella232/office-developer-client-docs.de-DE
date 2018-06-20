@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidAppointmentColor-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,38 +7,52 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidAppointmentColor
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: 91147e85-f440-4463-850b-efc9bdbd36d1
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: 251377a7b9118437aff3fbb6b2b9376cbf70375c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793340"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidappointmentcolor-canonical-property"></a>Kanonische PidLidAppointmentColor-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt die Designfarbe zu verwenden, wenn im Kalender anzeigen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidApptColor  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x00008214  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Besprechungen  <br/> |
+|Bereich:  <br/> |Kalender  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Diese Eigenschaft gibt die Farbe zu verwenden, wenn im Kalender anzeigen. Ein Client oder Server sollte diesen Wert für die Abwärtskompatibilität mit älteren Clients festlegen. Sie können stattdessen im Kalender basierend auf dem Wert der Eigenschaft **Schlüsselwörter** ([PidNameKeywords](pidnamekeywords-canonical-property.md)) als angegebenen in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angezeigt. Bei Festlegung muss der Wert eine der folgenden sein:
   
+|**Wert**|**Color**|
+|:-----|:-----|
+|0x00000000  <br/> |Keine  <br/> |
+|0x00000001  <br/> |Red  <br/> |
+|0x00000002  <br/> |Blau  <br/> |
+|0 x 00000003  <br/> |Green  <br/> |
+|0 x 00000004  <br/> |Grau  <br/> |
+|0 x 00000005  <br/> |Orange  <br/> |
+|0 x 00000006  <br/> |Cyan  <br/> |
+|0 x 00000007  <br/> |Olive  <br/> |
+|0 x 00000008  <br/> |Purple  <br/> |
+|0x00000009  <br/> |Teal  <br/> |
+|0x0000000A  <br/> |Yellow  <br/> |
+   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidHomeAddress-Eigenschaft
+title: Kanonische PidLidFax2EmailType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,38 +7,34 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidHomeAddress
+- PidLidFax2EmailType
 api_type:
 - COM
-ms.assetid: 5e9c4258-46de-476e-8a64-be9e35a23a8b
+ms.assetid: db8c3014-fa17-4b76-8a76-e352a0be8233
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 00f40a443d6ab730c8b612fd0fdfd93a1fd5cf52
+ms.openlocfilehash: e9cce286ffdf4f5a8e6bf9c072b0320a4c7b4617
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793632"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793547"
 ---
-# <a name="pidlidhomeaddress-canonical-property"></a>Kanonische PidLidHomeAddress-Eigenschaft
+# <a name="pidlidfax2emailtype-canonical-property"></a>Kanonische PidLidFax2EmailType-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Gibt die vollständige Adresse der home-Adresse des Kontakts an.
+Gibt den e-Mail-Typ, der die Adresse des Kontakts Fax privat.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidHomeAddress  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidFax2EmailType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x0000801A  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x000080C7  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
-
-Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenschaften und basiert auf dem Gebietsschema des Clients.
-  
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen

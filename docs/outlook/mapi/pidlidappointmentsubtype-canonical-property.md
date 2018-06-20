@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentLastSequence-Eigenschaft
+title: Kanonische PidLidAppointmentSubType-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidAppointmentLastSequence
+- PidLidAppointmentSubType
 api_type:
 - COM
-ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
+ms.assetid: e2e00af3-1fb3-4314-936a-f480674d3d83
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
+ms.openlocfilehash: cb9f4e0f58ea27d36ba911ed60527a2e53f23727
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793427"
 ---
-# <a name="pidlidappointmentlastsequence-canonical-property"></a>Kanonische PidLidAppointmentLastSequence-Eigenschaft
+# <a name="pidlidappointmentsubtype-canonical-property"></a>Kanonische PidLidAppointmentSubType-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
+Gibt an, ob das Ereignis den ganzen Tag ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidApptSubType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
-|Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Besprechungen  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x00008215  <br/> |
+|Datentyp:  <br/> |PT_BOOLEAN  <br/> |
+|Bereich:  <br/> |Kalender  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
+Diese Eigenschaft gibt an, ob das Ereignis ein ganztägiges Ereignis, wie vom Benutzer angegeben ist oder nicht. Der Wert gibt TRUE an, dass das Ereignis als ganztägiges Ereignis in diesem Fall müssen der Start- und Endzeit Mitternacht sein ist, damit die Dauer ein Vielfaches von 24 Stunden ist und mindestens 24 Stunden ist. Den Wert FALSE oder Abwesenheit dieser Eigenschaft wird angegeben, dass das Ereignis nicht um ein ganztägiges Ereignis ist. Der Client oder Server müssen Sie nicht den Wert true ableiten, wenn ein Benutzer ein Ereignis zu erstellen, ist von 24 Stunden, geschieht, auch wenn das Ereignis beginnt und um Mitternacht endet.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

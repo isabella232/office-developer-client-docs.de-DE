@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidHomeAddress-Eigenschaft
+title: Kanonische PidLidDistributionListChecksum-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidHomeAddress
+- MAPI.PidLidDistributionListChecksum
 api_type:
 - COM
-ms.assetid: 5e9c4258-46de-476e-8a64-be9e35a23a8b
+ms.assetid: bd50ab34-caae-4258-8afc-769e3cbc5220
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 00f40a443d6ab730c8b612fd0fdfd93a1fd5cf52
+ms.openlocfilehash: bba1e78d79800b1c8e56ad50ce1abb144d4c9aae
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793632"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793496"
 ---
-# <a name="pidlidhomeaddress-canonical-property"></a>Kanonische PidLidHomeAddress-Eigenschaft
+# <a name="pidliddistributionlistchecksum-canonical-property"></a>Kanonische PidLidDistributionListChecksum-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Gibt die vollständige Adresse der home-Adresse des Kontakts an.
+Gibt die 32-Bit-CRC polynomial Prüfsumme für eine persönliche Verteilerliste Kontrollkästchen (CRC-32).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidHomeAddress  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidDLChecksum  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x0000801A  <br/> |
-|Datentyp:  <br/> |PT_UNICODE  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x0000804C  <br/> |
+|Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenschaften und basiert auf dem Gebietsschema des Clients.
+Der Wert dieser Eigenschaft kann verwendet werden, zu erkennen, wann die **DispidDLMembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md))-Eigenschaft aktualisiert wurde, ohne die Aktualisierung der anderen persönlichen Verteilerliste Liste Elementeigenschaften durch den CRC-32 auf dem vorhandenen computing der Wert der **DispidDLMembers** und diese mit dem Wert der Eigenschaft **DispidDLChecksum** zu vergleichen. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenscha
 
 [[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
 [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidHomeAddress-Eigenschaft
+title: Kanonische PidLidAnniversaryEventEntryId-Eigenschaft
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -7,37 +7,37 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 api_name:
-- PidLidHomeAddress
+- PidLidAnniversaryEventEntryId
 api_type:
 - COM
-ms.assetid: 5e9c4258-46de-476e-8a64-be9e35a23a8b
+ms.assetid: 177b2b87-7a06-4d53-8f03-5bec5632c2dd
 description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 00f40a443d6ab730c8b612fd0fdfd93a1fd5cf52
+ms.openlocfilehash: 78096affce8fa03cc3efc8f0ca0c7048c2f9aae9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793632"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19793347"
 ---
-# <a name="pidlidhomeaddress-canonical-property"></a>Kanonische PidLidHomeAddress-Eigenschaft
+# <a name="pidlidanniversaryevententryid-canonical-property"></a>Kanonische PidLidAnniversaryEventEntryId-Eigenschaft
 
   
   
 **Betrifft**: Outlook 
   
-Gibt die vollständige Adresse der home-Adresse des Kontakts an.
+Gibt die Eintrags-ID des Termins, die das Jahrestag des Kontakts darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidHomeAddress  <br/> |
+|Zugeordneten Eigenschaften:  <br/> |dispidAnniversaryEventEID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
-|Long-ID (Abdeckung):  <br/> |0x0000801A  <br/> |
-|Datentyp:  <br/> |PT_UNICODE  <br/> |
+|Long-ID (Abdeckung):  <br/> |0x0000804E  <br/> |
+|Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
 ## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenschaften und basiert auf dem Gebietsschema des Clients.
+Der Termin durch die **DispidAnniversaryEventEID** -Eigenschaft angegebenen muss mit diesen Kontakt verknüpft werden, mithilfe der **DispidContactLinkEntry** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)) **DispidContactLinkSearchKey** ([ PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)), und die Eigenschaften der **DispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)), die detaillierte in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
@@ -45,7 +45,7 @@ Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenscha
 
 [[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
-> Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
+> Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
 [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
