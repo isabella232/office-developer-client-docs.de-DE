@@ -1,0 +1,50 @@
+---
+title: Clustersichere Funktionen
+manager: soliver
+ms.date: 11/16/2014
+ms.audience: Developer
+ms.topic: reference
+localization_priority: Normal
+ms.assetid: 787badaf-8782-454d-a016-7eae83bbd8a9
+description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+ms.openlocfilehash: f73f49e4d76a8545399eede283b70551ee6569f9
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19790383"
+---
+# <a name="cluster-safe-functions"></a><span data-ttu-id="ac6e8-103">Clustersichere Funktionen</span><span class="sxs-lookup"><span data-stu-id="ac6e8-103">Cluster safe functions</span></span>
+
+<span data-ttu-id="ac6e8-104">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="ac6e8-104">**Applies to**: Excel 2013 | Office 2013 | Visual Studio</span></span> 
+  
+<span data-ttu-id="ac6e8-105">In Excel 2013 kann Excel benutzerdefinierte Funktion (UDF) Anrufe an einen High Performance computing Cluster über eine dedizierte Cluster Connector-Schnittstelle abnimmt.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-105">In Excel 2013, Excel can offload User-Defined Function (UDF) calls to a high-performance computing cluster through a dedicated cluster connector interface.</span></span> <span data-ttu-id="ac6e8-106">Compute bereitstellen Cluster Clusterconnectoren.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-106">Compute cluster vendors provide Cluster Connectors.</span></span> <span data-ttu-id="ac6e8-107">UDF-Autoren können deklarieren ihre UDFs als Cluster sichere und wenn ein Clusterconnector vorhanden ist, sendet Excel Anrufe an diese UDFs klicken Sie dann auf den Clusterconnector für die Verschiebung.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-107">UDF authors can declare their UDFs as cluster safe and then, when a cluster connector is present, Excel sends calls to these UDFs to the cluster connector for offloading.</span></span>
+  
+<span data-ttu-id="ac6e8-108">Wenn Excel während einer neuberechnung eine UDF clustersichere ermittelt, übergibt sie den Namen der XLL, die aktuell, den Namen des clustersichere UDFs und keine Parameter an dem Konnektor Cluster ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-108">When Excel discovers a cluster-safe UDF during recalculation, it passes the name of the XLL that is currently running, the name of the cluster-safe UDF, and any parameters to the cluster connector.</span></span> <span data-ttu-id="ac6e8-109">Der Connector wird den UDF-Aufruf Remote ausgeführt und gibt die Ergebnisse nach Excel zurück.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-109">The connector runs the UDF call remotely and returns the results to Excel.</span></span> <span data-ttu-id="ac6e8-110">Unabhängige Berechnung weiterhin und nachdem die Clusterconnector die UDF ausgeführt wurde, übergibt die Ergebnisse nach Excel und abhängige Berechnungen fortfahren.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-110">Non-dependent calculation continues and when the cluster connector has finished running the UDF, it passes the results to Excel and dependent calculations continue.</span></span> <span data-ttu-id="ac6e8-111">Mechanismus für dieses asynchronen Verhalten imitiert ein Mechanismus, mit der asynchronen UDFs mit der Ausnahme, dass die Clusterconnector die asynchronen Aspekte anstelle der UDF-Autor verwaltet wird.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-111">The mechanism for this asynchronous behavior mimics the mechanism used by asynchronous UDFs, except that the cluster connector manages the asynchronous aspects instead of the UDF author.</span></span> <span data-ttu-id="ac6e8-112">In der Regel implementiert ein Clusterconnector eine XLL-Shim um XLLs laden und Ausführen von UDFs auf Compute Cluster-Knoten.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-112">Typically, a cluster connector implements an XLL shim to load XLLs and run UDFs on compute cluster nodes.</span></span>
+  
+<span data-ttu-id="ac6e8-113">Die Abläufe bei der Deklarieren von UDFs als clustersichere ähneln jenen UDFs als sicher für Multithread-neuberechnung zu deklarieren.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-113">The mechanics of declaring UDFs as cluster-safe resemble those of declaring UDFs as safe for multi-threaded recalculation.</span></span> <span data-ttu-id="ac6e8-114">Da die UDF nicht notwendigerweise auf demselben Computer wie andere UDFs aus der gleichen Excel-Sitzung ausgeführt wird, gibt es jedoch verschiedene Aspekte beim Schreiben von clustersichere UDFs.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-114">However, because the UDF is not necessarily running on the same computer as other UDFs from the same Excel session, there are different considerations when writing cluster-safe UDFs.</span></span>
+  
+<span data-ttu-id="ac6e8-115">Um eine UDF als clustersichere registrieren, müssen Sie über die Schnittstelle **Excel12** oder **Excel12v** die Rückruffunktion [XlfRegister (Formular 1)](xlfregister-form-1.md) aufrufen.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-115">To register a UDF as cluster-safe, you must call the [xlfRegister (Form 1)](xlfregister-form-1.md) callback function through the **Excel12** or **Excel12v** interface.</span></span> <span data-ttu-id="ac6e8-116">Weitere Informationen zu diesen Schnittstellen finden Sie unter der [Excel4/Excel12](excel4-excel12.md) und [Excel4v/Excel12v](excel4v-excel12v.md).</span><span class="sxs-lookup"><span data-stu-id="ac6e8-116">For more information about these interfaces, see the [Excel4/Excel12](excel4-excel12.md) and [Excel4v/Excel12v](excel4v-excel12v.md).</span></span> <span data-ttu-id="ac6e8-117">Registrieren einer UDFs als clustersichere über die Schnittstelle **Excel4** oder **Excel4v** wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-117">Registering a UDF as cluster-safe through the **Excel4** or **Excel4v** interface is not supported.</span></span> 
+  
+<span data-ttu-id="ac6e8-118">Wenn Sie eine Funktion als clustersichere registrieren, müssen Sie sicherstellen, dass die Funktion in einer Weise clustersichere verhält.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-118">If you register a function as cluster-safe, you must ensure that the function behaves in a cluster-safe way.</span></span> <span data-ttu-id="ac6e8-119">Obwohl das genaue Verhalten der Cluster Verbindung implementierungsspezifischen ist, sollten Sie die UDF-Datei in einem verteilten Computersystem ausgeführt und die folgenden Merkmale aufweisen entwerfen:</span><span class="sxs-lookup"><span data-stu-id="ac6e8-119">Although the exact behavior of the cluster connector is implementation-specific, you should design your UDF to run on a distributed computer system and to have the following characteristics:</span></span>
+  
+- <span data-ttu-id="ac6e8-120">Eine UDF sollten auf jeden Speicherzustand nicht verlassen.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-120">A UDF should not rely on any memory state.</span></span> <span data-ttu-id="ac6e8-121">Beispielsweise sollte eine UDF nicht auf einen vorhandenen in-Memory-Cache verlassen.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-121">For example, a UDF should not rely on an existing in-memory cache.</span></span>
+    
+- <span data-ttu-id="ac6e8-122">Eine UDF-Datei sollte nicht Excel Rückrufe ausführen, die der Cluster-Connector-Anbieter nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-122">A UDF should not perform Excel callbacks that the cluster connector provider does not support.</span></span>
+    
+<span data-ttu-id="ac6e8-123">Zusätzlich zu clustersichere Verhalten stehen die folgenden technischen Einschränkungen auf clustersichere UDFs:</span><span class="sxs-lookup"><span data-stu-id="ac6e8-123">In addition to cluster-safe behavior, there are the following technical restrictions on cluster-safe UDFs:</span></span>
+  
+1. <span data-ttu-id="ac6e8-124">Keine XLOPER Argumente (Typen "P", "R").</span><span class="sxs-lookup"><span data-stu-id="ac6e8-124">No XLOPER arguments (types 'P', 'R').</span></span>
+    
+2. <span data-ttu-id="ac6e8-125">Keine XLOPER12 Argumente, die Bereichs-Verweise (Typ "U") unterstützen.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-125">No XLOPER12 arguments that support range references (type 'U').</span></span>
+    
+3. <span data-ttu-id="ac6e8-126">Keine entsprechende Funktion Makro Blatt zulässig ('#' und '&amp;' kann nicht kombiniert werden).</span><span class="sxs-lookup"><span data-stu-id="ac6e8-126">Cannot be a macro sheet equivalent function ('#' and '&amp;' cannot be combined).</span></span>
+    
+<span data-ttu-id="ac6e8-127">Für UDF-Dateien mit kürzeren Ausführungszeiten der Aufwand für die Verschiebung möglicherweise größer als die Zeit, die die UDF ausgeführt wird, benötigt negieren viele der Vorteile der Verwendung dieser Infrastruktur.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-127">For UDFs with shorter execution times, the overhead of offloading may be larger than the time it takes the UDF to execute, negating many of the benefits of using this infrastructure.</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="ac6e8-128">Sie können eine UDF clustersichere als eine asynchrone UDF nicht deklarieren.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-128">You cannot declare a cluster-safe UDF as an asynchronous UDF.</span></span> 
+  
+<span data-ttu-id="ac6e8-129">Eine UDF kann bestimmen, ob es mit einen Clusterconnector durch Aufrufen von der [XlRunningOnCluster](xlrunningoncluster.md) Callback-Funktion ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="ac6e8-129">A UDF can determine whether it is being run using a cluster connector by calling the [xlRunningOnCluster](xlrunningoncluster.md) callback function.</span></span> 
+  
+
