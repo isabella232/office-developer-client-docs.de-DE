@@ -46,7 +46,7 @@ Der Name der XLL-Funktion, die registriert wird.
 
 Die Funktion sollte das Ergebnis der Versuch zum Registrieren von XLL-Funktion _PxName_ mithilfe der **XlfRegister** -Funktion zurückgegeben. Wenn die angegebene Funktion nicht von der XLL-Exporten ist, sollte Zurückgeben der **#VALUE!** Fehler oder **NULL** interpretiert Excel am **#VALUE!**.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Implementierung von **XlAutoRegister** sollte eine Groß-/Kleinschreibung unterschieden Suche durchsehen Ihrer XLL interne von Funktionen und Befehle, dass er eine Übereinstimmung mit dem Namen übergebenen Nachrichtensymbol exportiert ausführen. Wenn die Funktion oder den Befehl gefunden werden kann, sollten **XlAutoRegister** versuchen, registrieren, mit der **XlfRegister** -Funktion, wie die Zeichenfolge bereitstellen, auf denen Excel die Return und das Argument Typen von der Funktion als auch andere erforderliche angewiesen wird sichergestellt werden kann Informationen über die Funktion. Dann sollte nach Excel zurückgeben was beim Aufruf von **XlfRegister** zurückgegeben. Wenn die Funktion erfolgreich registriert wurde, gibt **XlfRegister** einen **XltypeNum** -Wert, der mit der ID registrieren der Funktion zurück. 
   
