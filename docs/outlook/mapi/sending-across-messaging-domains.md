@@ -1,0 +1,30 @@
+---
+title: Senden von Messaging-Domänen
+manager: soliver
+ms.date: 11/16/2014
+ms.audience: Developer
+localization_priority: Normal
+api_type:
+- COM
+ms.assetid: 65594253-66cd-486a-aa5b-0bc719f761f0
+description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1fc5e4de63815c2cbfcb4818a9f6454af8c4d93b
+ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "19795467"
+---
+# <a name="sending-across-messaging-domains"></a><span data-ttu-id="e6495-103">Senden von Messaging-Domänen</span><span class="sxs-lookup"><span data-stu-id="e6495-103">Sending Across Messaging Domains</span></span>
+
+  
+  
+<span data-ttu-id="e6495-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e6495-104">**Applies to**: Outlook</span></span> 
+  
+<span data-ttu-id="e6495-105">Eine messaging Domäne stellt eine oder mehrere messaging-Systemen, die ein gemeinsames Adresse Format dar.</span><span class="sxs-lookup"><span data-stu-id="e6495-105">A messaging domain represents one or more messaging systems that share a common address format.</span></span> <span data-ttu-id="e6495-106">Die Kommunikation über mehrere Domänen messaging umfasst eine Nachricht in das Format der ursprünglichen messaging-Domäne in das Format des der Zieldomäne messaging übersetzen.</span><span class="sxs-lookup"><span data-stu-id="e6495-106">Communication across multiple messaging domains involves translating a message sent in the format of the original messaging domain into the format of the destination messaging domain.</span></span> <span data-ttu-id="e6495-107">Da nicht alle Adressformate kompatibel sind, ist ein Gateway erforderlich, um die Adressinformationen sowie das Format der Quelle in das Zielformat übersetzt wird.</span><span class="sxs-lookup"><span data-stu-id="e6495-107">Because not all address formats are compatible, a gateway is needed to translate the addressing information from the source format into the destination format.</span></span> <span data-ttu-id="e6495-108">Um die Gültigkeit messaging domänenübergreifend sicherzustellen, speichern Clientanwendungen wichtige Adressinformationen in MAPI-Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="e6495-108">To ensure validity across messaging domains, client applications store important addressing information in MAPI properties.</span></span> <span data-ttu-id="e6495-109">Führen Sie darüber hinaus Gateways die Übersetzung, überprüft die Eigenschaften bekanntermaßen benötigen Übersetzung und ändern Sie diese in ein Format, die die Zieldomäne messaging verwenden können.</span><span class="sxs-lookup"><span data-stu-id="e6495-109">In addition, gateways perform the translation, examining the properties known to need translation and changing them to a format that the destination messaging domain can use.</span></span>
+  
+<span data-ttu-id="e6495-110">Bisher zulässig MAPI diese Adressinformationen, nur die Benutzer zugeordnet werden soll, die aktuelle Empfängerliste eine Nachricht umfassen.</span><span class="sxs-lookup"><span data-stu-id="e6495-110">Previously, MAPI allowed this addressing information to be associated with only the users who comprise a message's current recipient list.</span></span> <span data-ttu-id="e6495-111">Die Beschreibung jedes Mitglied die Empfängerliste Eigenschaften vorgenommen wurden die erforderliche Übersetzung vom Gateway messaging domänenübergreifend Gültigkeit sicherzustellen.</span><span class="sxs-lookup"><span data-stu-id="e6495-111">The properties describing each member of the recipient list underwent the required translation by the gateway to ensure validity across messaging domains.</span></span> <span data-ttu-id="e6495-112">Einige Anwendungen erfordern jedoch, dass ihre Nachrichten enthalten Informationen zu Benutzern, die möglicherweise Empfänger in der Vergangenheit wurden Adressierung, Empfänger in der Zukunft werden oder nie Empfänger werden.</span><span class="sxs-lookup"><span data-stu-id="e6495-112">However, some applications require that their messages include addressing information about users that perhaps were recipients in the past, will be recipients in the future, or will never be recipients.</span></span> <span data-ttu-id="e6495-113">Beispielsweise einbetten routing bereit, mit die Senden von Nachrichten an eine Gruppe von Benutzern in einer bestimmten Reihenfolge reagieren auf Informationen über diese Benutzer in den Nachrichten.</span><span class="sxs-lookup"><span data-stu-id="e6495-113">For example, routing applications, which send messages in a specified order to a group of users, embed addressing information about these users in the messages.</span></span> <span data-ttu-id="e6495-114">Die eingebettete Informationen umfasst in der Regel die Adresse und den Adresstyp zukünftige Empfänger, und möglicherweise auch ihre Rollen und Positionen in der Reihenfolge der Weiterleitung, deren Namen und eine oder mehrere binäre Kennungen pro Empfänger.</span><span class="sxs-lookup"><span data-stu-id="e6495-114">The embedded information typically includes the address and address type of the future recipients, and perhaps also their roles and positions in the routing order, their names, and one or more binary identifiers per recipient.</span></span>
+  
+<span data-ttu-id="e6495-115">Um Nachrichten mit Informationen zu diesen nonrecipient Benutzer aktivieren möchten, enthält die MAPI nun eine Strategie zum sicherstellen, dass diese nonrecipient Informationen auch ordnungsgemäß über messaging Domänen übersetzt wird.</span><span class="sxs-lookup"><span data-stu-id="e6495-115">To enable messages to include information about these nonrecipient users, MAPI now includes a strategy for ensuring that this nonrecipient information is also translated correctly across messaging domains.</span></span> <span data-ttu-id="e6495-116">Diese Strategie basiert auf das Konzept der Gateway sämtliche Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="e6495-116">This strategy is based on the concept of gateway-mappable properties.</span></span>
+  
+
