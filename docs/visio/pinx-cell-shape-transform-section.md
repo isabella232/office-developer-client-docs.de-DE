@@ -20,7 +20,7 @@ ms.locfileid: "19797606"
 
 Stellt die *X* -der Drehbezugspunkts (Drehmittelpunkts) im Verhältnis zum Ursprung seines übergeordneten-Koordinate. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn Sie einen Verweis auf die Zelle PinX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
