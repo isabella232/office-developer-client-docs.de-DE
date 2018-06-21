@@ -16,7 +16,7 @@ ms.openlocfilehash: fa279962043f6f7cb7a134b624000c9c7e65369f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19792017"
 ---
 # <a name="iaddrbookopenentry"></a>IAddrBook::OpenEntry
@@ -107,7 +107,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die in _LpEntryID_ angegebene Eintrags-ID wird nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn die Adressbuchanbieter verantwortlich für den entsprechenden Eintrag nicht geöffnet ist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Clients und -Dienstanbieter rufen Sie die **IAddrBook::OpenEntry** -Methode, um ein Adressbuch Adresseintrag zu öffnen. MAPI leitet den Anruf an die entsprechenden Adressbuchanbieter basierend auf der [MAPIUID](mapiuid.md) -Struktur in die Eintrags-ID in der _LpEntryID_ -Parameter übergeben enthalten. Der Adressbuchanbieter öffnet den Eintrag im schreibgeschützten Modus, es sei denn, das Flag MAPI_MODIFY oder MAPI_BEST_ACCESS im _UlFlags_ -Parameter festgelegt ist. Allerdings werden diese Flags Vorschläge. Wenn die Adressbuchanbieter keine Änderung für den Eintrag angefordert zulässt, wird MAPI_E_NO_ACCESS zurückgegeben. 
   
