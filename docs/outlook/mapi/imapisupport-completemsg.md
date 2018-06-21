@@ -16,16 +16,16 @@ ms.openlocfilehash: db28d9684f1bb679ce36f99346f4ecc67a1a93e6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
+ms.lasthandoff: 06/21/2018
 ms.locfileid: "19792352"
 ---
-# <a name="imapisupportcompletemsg"></a><span data-ttu-id="e5447-103">IMAPISupport::CompleteMsg</span><span class="sxs-lookup"><span data-stu-id="e5447-103">IMAPISupport::CompleteMsg</span></span>
+# <a name="imapisupportcompletemsg"></a><span data-ttu-id="83bb3-103">IMAPISupport::CompleteMsg</span><span class="sxs-lookup"><span data-stu-id="83bb3-103">IMAPISupport::CompleteMsg</span></span>
 
   
   
-<span data-ttu-id="e5447-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e5447-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="83bb3-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="83bb3-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="e5447-105">Führt Nachbearbeitung für eine Nachricht aus.</span><span class="sxs-lookup"><span data-stu-id="e5447-105">Performs postprocessing on a message.</span></span> 
+<span data-ttu-id="83bb3-105">Führt Nachbearbeitung für eine Nachricht aus.</span><span class="sxs-lookup"><span data-stu-id="83bb3-105">Performs postprocessing on a message.</span></span> 
   
 ```cpp
 HRESULT CompleteMsg(
@@ -35,41 +35,41 @@ HRESULT CompleteMsg(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e5447-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="e5447-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="83bb3-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="83bb3-106">Parameters</span></span>
 
- <span data-ttu-id="e5447-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="e5447-107">_ulFlags_</span></span>
+ <span data-ttu-id="83bb3-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="83bb3-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="e5447-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="e5447-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="83bb3-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="83bb3-108">[in] Reserved; must be zero.</span></span>
     
- <span data-ttu-id="e5447-109">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="e5447-109">_cbEntryID_</span></span>
+ <span data-ttu-id="83bb3-109">_cbEntryID_</span><span class="sxs-lookup"><span data-stu-id="83bb3-109">_cbEntryID_</span></span>
   
-> <span data-ttu-id="e5447-110">[in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen.</span><span class="sxs-lookup"><span data-stu-id="e5447-110">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
+> <span data-ttu-id="83bb3-110">[in] Die Byteanzahl von in die Eintrags-ID auf den durch den Parameter _LpEntryID_ verwiesen.</span><span class="sxs-lookup"><span data-stu-id="83bb3-110">[in] The byte count in the entry identifier pointed to by the  _lpEntryID_ parameter.</span></span> 
     
- <span data-ttu-id="e5447-111">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="e5447-111">_lpEntryID_</span></span>
+ <span data-ttu-id="83bb3-111">_lpEntryID_</span><span class="sxs-lookup"><span data-stu-id="83bb3-111">_lpEntryID_</span></span>
   
-> <span data-ttu-id="e5447-112">[in] Ein Zeiger auf die Eintrags-ID der Nachricht zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="e5447-112">[in] A pointer to the entry identifier of the message to process.</span></span>
+> <span data-ttu-id="83bb3-112">[in] Ein Zeiger auf die Eintrags-ID der Nachricht zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="83bb3-112">[in] A pointer to the entry identifier of the message to process.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e5447-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e5447-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="83bb3-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="83bb3-113">Return value</span></span>
 
-<span data-ttu-id="e5447-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="e5447-114">S_OK</span></span> 
+<span data-ttu-id="83bb3-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="83bb3-114">S_OK</span></span> 
   
-> <span data-ttu-id="e5447-115">Die Nachbearbeitung war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="e5447-115">The postprocessing was successful.</span></span>
+> <span data-ttu-id="83bb3-115">Die Nachbearbeitung war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="83bb3-115">The postprocessing was successful.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="e5447-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e5447-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="83bb3-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="83bb3-116">Remarks</span></span>
 
-<span data-ttu-id="e5447-117">Die **IMAPISupport::CompleteMsg** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert und heißt nur Zeichenfolgeneigenschaften Nachricht, die eng mit Anbietern Transport verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="e5447-117">The **IMAPISupport::CompleteMsg** method is implemented for message store provider support objects and is called only by message store providers that are tightly coupled with transport providers.</span></span> <span data-ttu-id="e5447-118">Anbieter eng gekoppelten Aufrufen **IMAPISupport::CompleteMsg** um anzuweisen, die MAPI-Warteschlange auf eine Nachricht zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="e5447-118">Tightly coupled store providers call **IMAPISupport::CompleteMsg** to instruct the MAPI spooler to postprocess a message.</span></span> 
+<span data-ttu-id="83bb3-117">Die **IMAPISupport::CompleteMsg** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert und heißt nur Zeichenfolgeneigenschaften Nachricht, die eng mit Anbietern Transport verknüpft sind.</span><span class="sxs-lookup"><span data-stu-id="83bb3-117">The **IMAPISupport::CompleteMsg** method is implemented for message store provider support objects and is called only by message store providers that are tightly coupled with transport providers.</span></span> <span data-ttu-id="83bb3-118">Anbieter eng gekoppelten Aufrufen **IMAPISupport::CompleteMsg** um anzuweisen, die MAPI-Warteschlange auf eine Nachricht zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="83bb3-118">Tightly coupled store providers call **IMAPISupport::CompleteMsg** to instruct the MAPI spooler to postprocess a message.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="e5447-119">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="e5447-119">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="83bb3-119">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="83bb3-119">Notes to callers</span></span>
 
-<span data-ttu-id="e5447-120">Rufen Sie **CompleteMsg** nur, wenn Sie eng mit eines Transportdienstes verknüpft sind, Sie alle Empfänger der Nachricht behandeln können und eine der folgenden Bedingungen zutrifft:</span><span class="sxs-lookup"><span data-stu-id="e5447-120">Call **CompleteMsg** only when you are tightly coupled with a transport provider, you can handle all of the message's recipients, and one of the following conditions exists:</span></span> 
+<span data-ttu-id="83bb3-120">Rufen Sie **CompleteMsg** nur, wenn Sie eng mit eines Transportdienstes verknüpft sind, Sie alle Empfänger der Nachricht behandeln können und eine der folgenden Bedingungen zutrifft:</span><span class="sxs-lookup"><span data-stu-id="83bb3-120">Call **CompleteMsg** only when you are tightly coupled with a transport provider, you can handle all of the message's recipients, and one of the following conditions exists:</span></span> 
   
-- <span data-ttu-id="e5447-121">Die Nachricht wurde vorverarbeitet.</span><span class="sxs-lookup"><span data-stu-id="e5447-121">The message was preprocessed.</span></span>
+- <span data-ttu-id="83bb3-121">Die Nachricht wurde vorverarbeitet.</span><span class="sxs-lookup"><span data-stu-id="83bb3-121">The message was preprocessed.</span></span>
     
-- <span data-ttu-id="e5447-122">Die Nachricht muss Nachbearbeitung durch die MAPI-Warteschlange.</span><span class="sxs-lookup"><span data-stu-id="e5447-122">The message requires postprocessing by the MAPI spooler.</span></span>
+- <span data-ttu-id="83bb3-122">Die Nachricht muss Nachbearbeitung durch die MAPI-Warteschlange.</span><span class="sxs-lookup"><span data-stu-id="83bb3-122">The message requires postprocessing by the MAPI spooler.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="e5447-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e5447-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="83bb3-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="83bb3-123">See also</span></span>
 
 
 
-[<span data-ttu-id="e5447-124">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="e5447-124">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="83bb3-124">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="83bb3-124">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
 
