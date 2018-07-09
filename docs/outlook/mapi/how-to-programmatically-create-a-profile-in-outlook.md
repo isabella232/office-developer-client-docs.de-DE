@@ -25,7 +25,7 @@ ms.locfileid: "19791872"
 
 1. <span data-ttu-id="96447-108">Make sure Outlook 2016 is property configured.</span><span class="sxs-lookup"><span data-stu-id="96447-108">Make sure Outlook 2016 is property configured.</span></span>
     
-2. <span data-ttu-id="96447-109">Using the [IMAPIProp](https://msdn.microsoft.com/en-us/library/cc815525.aspx) interface, go to the Outlook Profile section.</span><span class="sxs-lookup"><span data-stu-id="96447-109">Using the [IMAPIProp](https://msdn.microsoft.com/en-us/library/cc815525.aspx) interface, go to the Outlook Profile section.</span></span> 
+2. <span data-ttu-id="96447-109">Using the [IMAPIProp](https://msdn.microsoft.com/de-de/library/cc815525.aspx) interface, go to the Outlook Profile section.</span><span class="sxs-lookup"><span data-stu-id="96447-109">Using the [IMAPIProp](https://msdn.microsoft.com/de-de/library/cc815525.aspx) interface, go to the Outlook Profile section.</span></span> 
     
    <span data-ttu-id="96447-p101">This can be difficult in Outlook�s MAPI, since in 2010 and above there is no longer the global profile section. To find the Profile section, find the property PR_EMSMDB_SECTION_UID (0x3D150102). The value will be the GUID of the profile section persisted in binary form, which will be used in the subsequent steps. You will need to remember this value.</span><span class="sxs-lookup"><span data-stu-id="96447-p101">This can be difficult in Outlook's MAPI, since in 2010 and above there is no longer the global profile section. To find the Profile section, find the property PR_EMSMDB_SECTION_UID (0x3D150102). The value will be the GUID of the profile section persisted in binary form, which will be used in the subsequent steps. You will need to remember this value.</span></span> 
     
@@ -320,6 +320,6 @@ Cleanup:
   
 ## <a name="see-also"></a><span data-ttu-id="96447-120">See also</span><span class="sxs-lookup"><span data-stu-id="96447-120">See also</span></span>
 
-- [<span data-ttu-id="96447-121">Erstellen eines Outlook-Profils mithilfe von MFCMAPI (engl.)</span><span class="sxs-lookup"><span data-stu-id="96447-121">Create an Outlook profile using MFCMAPI</span></span>](https://msdn.microsoft.com/en-us/library/office/mt723322.aspx)
+- [<span data-ttu-id="96447-121">Erstellen eines Outlook-Profils mithilfe von MFCMAPI (engl.)</span><span class="sxs-lookup"><span data-stu-id="96447-121">Create an Outlook profile using MFCMAPI</span></span>](https://msdn.microsoft.com/de-de/library/office/mt723322.aspx)
   
 

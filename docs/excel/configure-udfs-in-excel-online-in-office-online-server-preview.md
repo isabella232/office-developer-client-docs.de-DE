@@ -42,7 +42,7 @@ ms.locfileid: "19790382"
   
 ## <a name="enable-udfs-on-office-online-server-preview"></a><span data-ttu-id="00d3b-119">Aktivieren von UDFs auf Office Online Server Preview</span><span class="sxs-lookup"><span data-stu-id="00d3b-119">Enable UDFs on Office Online Server Preview</span></span>
 
-<span data-ttu-id="00d3b-120">Wenn ein Administrator eine neue Office Web Apps Server-Farm erstellt mithilfe des [New-OfficeWebAppsFarm](https://technet.microsoft.com/en-us/library/jj219436.aspx) Windows PowerShell-Cmdlets, sind die UDF-Assemblys standardmäßig deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="00d3b-120">When an adminstrator creates a new Office Web Apps Server farm by using the [New-OfficeWebAppsFarm](https://technet.microsoft.com/en-us/library/jj219436.aspx) Windows PowerShell cmdlet, UDF assemblies are disabled by default.</span></span> <span data-ttu-id="00d3b-121">Der Standardwert des Flags **ExcelUdfsAllowed** ist false.</span><span class="sxs-lookup"><span data-stu-id="00d3b-121">The default value of the **ExcelUdfsAllowed** flag is false.</span></span> 
+<span data-ttu-id="00d3b-120">Wenn ein Administrator eine neue Office Web Apps Server-Farm erstellt mithilfe des [New-OfficeWebAppsFarm](https://technet.microsoft.com/de-de/library/jj219436.aspx) Windows PowerShell-Cmdlets, sind die UDF-Assemblys standardmäßig deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="00d3b-120">When an adminstrator creates a new Office Web Apps Server farm by using the [New-OfficeWebAppsFarm](https://technet.microsoft.com/de-de/library/jj219436.aspx) Windows PowerShell cmdlet, UDF assemblies are disabled by default.</span></span> <span data-ttu-id="00d3b-121">Der Standardwert des Flags **ExcelUdfsAllowed** ist false.</span><span class="sxs-lookup"><span data-stu-id="00d3b-121">The default value of the **ExcelUdfsAllowed** flag is false.</span></span> 
   
 <span data-ttu-id="00d3b-122">Um UDFs aktivieren möchten, führen Sie den folgenden Windows PowerShell-Befehl auf der Office Online Server Preview, nachdem die Office Web Apps Server-Farm erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="00d3b-122">To enable UDFs, run the following Windows PowerShell command on the Office Online Server Preview, after the Office Web Apps Server farm has been created.</span></span>
   
@@ -87,7 +87,7 @@ ms.locfileid: "19790382"
     
 ## <a name="see-also"></a><span data-ttu-id="00d3b-142">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="00d3b-142">See also</span></span>
 
-- [<span data-ttu-id="00d3b-143">Konfigurieren von Excel Online administrativen Einstellungen</span><span class="sxs-lookup"><span data-stu-id="00d3b-143">Configure Excel Online administrative settings</span></span>](https://technet.microsoft.com/en-us/library/jj219698%28v=office.16%29.aspx)  
-- [<span data-ttu-id="00d3b-144">Office Online Server – Vorschau</span><span class="sxs-lookup"><span data-stu-id="00d3b-144">Office Online Server Preview</span></span>](https://technet.microsoft.com/en-us/library/jj219456%28v=office.16%29.aspx)
+- [<span data-ttu-id="00d3b-143">Konfigurieren von Excel Online administrativen Einstellungen</span><span class="sxs-lookup"><span data-stu-id="00d3b-143">Configure Excel Online administrative settings</span></span>](https://technet.microsoft.com/de-de/library/jj219698%28v=office.16%29.aspx)  
+- [<span data-ttu-id="00d3b-144">Office Online Server – Vorschau</span><span class="sxs-lookup"><span data-stu-id="00d3b-144">Office Online Server Preview</span></span>](https://technet.microsoft.com/de-de/library/jj219456%28v=office.16%29.aspx)
     
 

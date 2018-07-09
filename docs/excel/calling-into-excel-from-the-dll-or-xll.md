@@ -156,7 +156,7 @@ int WINAPI InternationlExample(void)
 ```
 
 > [!NOTE]
-> <span data-ttu-id="8ffff-p117">[!HINWEIS] Da das Ergebnis des Aufrufs von **Excel12** nicht erforderlich ist, kann 0 (NULL) als zweites Argument anstelle der Adresse des **xResult**-Objekts �bergeben werden. Dies wird im n�chsten Abschnitt genauer erl�utert.</span><span class="sxs-lookup"><span data-stu-id="8ffff-p117">Because the result of the call to **Excel12** is not required, zero (NULL) could be passed as the second argument instead of the address of **xResult**. This is discussed more in the next section.</span></span> 
+> <span data-ttu-id="8ffff-p117">Da das Ergebnis des Aufrufs von **Excel12** nicht erforderlich ist, kann 0 (NULL) als zweites Argument anstelle der Adresse des **xResult**-Objekts �bergeben werden. Dies wird im n�chsten Abschnitt genauer erl�utert.</span><span class="sxs-lookup"><span data-stu-id="8ffff-p117">Because the result of the call to **Excel12** is not required, zero (NULL) could be passed as the second argument instead of the address of **xResult**. This is discussed more in the next section.</span></span> 
   
 ### <a name="dll-only-functions-and-commands"></a><span data-ttu-id="8ffff-205">Nur DLL-Funktionen und -Befehle</span><span class="sxs-lookup"><span data-stu-id="8ffff-205">DLL-Only Functions and Commands</span></span>
 
@@ -299,7 +299,7 @@ void Excel12_example(double *dbl_array, int size, double &sum, double &average, 
 ```
 
 > [!NOTE]
-> <span data-ttu-id="8ffff-p129">[!HINWEIS] In diesem Fall wird der R�ckgabewert von **Excel12** ignoriert. Stattdessen �berpr�ft der Code, ob das zur�ckgegebene **XLOPER12**-Objekt **xltypeNum** aufweist, um zu ermitteln, ob der Aufruf erfolgreich war.</span><span class="sxs-lookup"><span data-stu-id="8ffff-p129">In this case, the return value of **Excel12** is ignored. The code instead checks that the returned **XLOPER12** is **xltypeNum** to determine whether the call was successful.</span></span> 
+> <span data-ttu-id="8ffff-p129">In diesem Fall wird der R�ckgabewert von **Excel12** ignoriert. Stattdessen �berpr�ft der Code, ob das zur�ckgegebene **XLOPER12**-Objekt **xltypeNum** aufweist, um zu ermitteln, ob der Aufruf erfolgreich war.</span><span class="sxs-lookup"><span data-stu-id="8ffff-p129">In this case, the return value of **Excel12** is ignored. The code instead checks that the returned **XLOPER12** is **xltypeNum** to determine whether the call was successful.</span></span> 
   
 ## <a name="xlcallver"></a><span data-ttu-id="8ffff-301">XLCallVer</span><span class="sxs-lookup"><span data-stu-id="8ffff-301">XLCallVer</span></span>
 

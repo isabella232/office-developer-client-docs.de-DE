@@ -43,7 +43,7 @@ ms.locfileid: "19794057"
   
 > <span data-ttu-id="3493e-120">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.</span><span class="sxs-lookup"><span data-stu-id="3493e-120">Provides property set definitions and references to related Microsoft Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="3493e-121">[[MS-OXOABK]](http://msdn.microsoft.com/en-us/library/cc433489%28v=exchg.80%29)</span><span class="sxs-lookup"><span data-stu-id="3493e-121">[[MS-OXOABK]](http://msdn.microsoft.com/en-us/library/cc433489%28v=exchg.80%29)</span></span>
+<span data-ttu-id="3493e-121">[[MS-OXOABK]](http://msdn.microsoft.com/de-de/library/cc433489%28v=exchg.80%29)</span><span class="sxs-lookup"><span data-stu-id="3493e-121">[[MS-OXOABK]](http://msdn.microsoft.com/de-de/library/cc433489%28v=exchg.80%29)</span></span>
   
 > <span data-ttu-id="3493e-122">Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.</span><span class="sxs-lookup"><span data-stu-id="3493e-122">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
     

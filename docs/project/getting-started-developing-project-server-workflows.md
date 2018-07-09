@@ -35,17 +35,17 @@ ms.locfileid: "19796163"
 [<span data-ttu-id="66787-119">Massen-Update für benutzerdefinierte Felder und Erstellen von Projektwebsites in Project Online-workflow</span><span class="sxs-lookup"><span data-stu-id="66787-119">Bulk update custom fields and create project sites from a Project Online workflow</span></span>](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
 
 
-[<span data-ttu-id="66787-120">Workflowentwicklung in SharePoint Designer 2013 und Visio 2013</span><span class="sxs-lookup"><span data-stu-id="66787-120">Workflow development in SharePoint Designer 2013 and Visio 2013</span></span>](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)
+[<span data-ttu-id="66787-120">Workflowentwicklung in SharePoint Designer 2013 und Visio 2013</span><span class="sxs-lookup"><span data-stu-id="66787-120">Workflow development in SharePoint Designer 2013 and Visio 2013</span></span>](http://msdn.microsoft.com/de-de/library/jj163272%28office.15%29.aspx)
   
-[<span data-ttu-id="66787-121">Neuerungen in Workflows für SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="66787-121">What's new in workflows for SharePoint 2013</span></span>](http://msdn.microsoft.com/en-us/library/jj163177.aspx)
+[<span data-ttu-id="66787-121">Neuerungen in Workflows für SharePoint 2013</span><span class="sxs-lookup"><span data-stu-id="66787-121">What's new in workflows for SharePoint 2013</span></span>](http://msdn.microsoft.com/de-de/library/jj163177.aspx)
   
-[<span data-ttu-id="66787-122">Entwickeln von SharePoint 2013-Workflows mit Visual Studio</span><span class="sxs-lookup"><span data-stu-id="66787-122">Develop SharePoint 2013 workflows using Visual Studio</span></span>](http://msdn.microsoft.com/en-us/library/jj163199.aspx)
+[<span data-ttu-id="66787-122">Entwickeln von SharePoint 2013-Workflows mit Visual Studio</span><span class="sxs-lookup"><span data-stu-id="66787-122">Develop SharePoint 2013 workflows using Visual Studio</span></span>](http://msdn.microsoft.com/de-de/library/jj163199.aspx)
   
 [<span data-ttu-id="66787-123">Erstellen von Project-Workflows mit Visual Studio 2012</span><span class="sxs-lookup"><span data-stu-id="66787-123">Creating Project Workflows using Visual Studio 2012</span></span>](http://blogs.msdn.com/b/project_programmability/archive/2012/11/07/creating-project-workflows-using-visual-studio-2012.aspx)
   
-[<span data-ttu-id="66787-124">Windows Workflow Foundation</span><span class="sxs-lookup"><span data-stu-id="66787-124">Windows Workflow Foundation</span></span>](http://msdn.microsoft.com/en-us/library/dd489441.aspx)
+[<span data-ttu-id="66787-124">Windows Workflow Foundation</span><span class="sxs-lookup"><span data-stu-id="66787-124">Windows Workflow Foundation</span></span>](http://msdn.microsoft.com/de-de/library/dd489441.aspx)
   
-[<span data-ttu-id="66787-125">Einführung in die ein Entwickler zu Windows Workflow Foundation (WF) in .NET 4</span><span class="sxs-lookup"><span data-stu-id="66787-125">A developer's introduction to Windows Workflow Foundation (WF) in .NET 4</span></span>](http://msdn.microsoft.com/en-us/library/ee342461.aspx)
+[<span data-ttu-id="66787-125">Einführung in die ein Entwickler zu Windows Workflow Foundation (WF) in .NET 4</span><span class="sxs-lookup"><span data-stu-id="66787-125">A developer's introduction to Windows Workflow Foundation (WF) in .NET 4</span></span>](http://msdn.microsoft.com/de-de/library/ee342461.aspx)
   
-[<span data-ttu-id="66787-126">Implementierung des projektbedarfsmanagements projektbedarfsmanagement (Whitepaper)</span><span class="sxs-lookup"><span data-stu-id="66787-126">Hitchhiker's guide to demand management (white paper)</span></span>](http://msdn.microsoft.com/en-us/library/ff973112.aspx)
+[<span data-ttu-id="66787-126">Implementierung des projektbedarfsmanagements projektbedarfsmanagement (Whitepaper)</span><span class="sxs-lookup"><span data-stu-id="66787-126">Hitchhiker's guide to demand management (white paper)</span></span>](http://msdn.microsoft.com/de-de/library/ff973112.aspx)
 

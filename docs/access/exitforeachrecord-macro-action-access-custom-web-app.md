@@ -19,9 +19,9 @@ ms.locfileid: "19790185"
 <span data-ttu-id="c9515-104">Mit der **BeendenFürJedenDatensatz** -Aktion beenden Sie einen **[FürJedenDatensatz](foreachrecord-data-block-access-custom-web-app.md)** -Datenblock sofort.</span><span class="sxs-lookup"><span data-stu-id="c9515-104">Use the **ExitForEachRecord** action to immediately exit a **[ForEachRecord](foreachrecord-data-block-access-custom-web-app.md)** data block.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="c9515-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="c9515-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="c9515-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="c9515-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="c9515-107">[!HINWEIS] Die **BeendenFürJedenDatensatz** -Aktion ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c9515-107">The **ExitForEachRecord** action is available only in Data Macros.</span></span> 
+> <span data-ttu-id="c9515-107">Die **BeendenFürJedenDatensatz** -Aktion ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c9515-107">The **ExitForEachRecord** action is available only in Data Macros.</span></span> 
   
 

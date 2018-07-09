@@ -35,7 +35,7 @@ ms.locfileid: "19795732"
     
 5. <span data-ttu-id="21491-116">Verwendung [ITnef: IUnknown](itnefiunknown.md) Schnittstellenmethoden, beschreibt die Positionen der e-Mail-Anlagen im Nachrichtentext Tags einfügen.</span><span class="sxs-lookup"><span data-stu-id="21491-116">Use [ITnef : IUnknown](itnefiunknown.md) interface methods to insert tags describing the positions of message attachments in the message text.</span></span> 
     
-6. <span data-ttu-id="21491-117">Greifen Sie auf den markierten Nachrichtentext über [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System.</span><span class="sxs-lookup"><span data-stu-id="21491-117">Access the tagged message text through [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) methods, and send it to the messaging system.</span></span> 
+6. <span data-ttu-id="21491-117">Greifen Sie auf den markierten Nachrichtentext über [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System.</span><span class="sxs-lookup"><span data-stu-id="21491-117">Access the tagged message text through [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) methods, and send it to the messaging system.</span></span> 
     
  <span data-ttu-id="21491-118">**Zum Abrufen von gekapselte Eigenschaften**</span><span class="sxs-lookup"><span data-stu-id="21491-118">**To retrieve encapsulated properties**</span></span>
   

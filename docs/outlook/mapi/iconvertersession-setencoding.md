@@ -35,7 +35,7 @@ HRESULT IConverterSession:: SetEncoding (
 
 <span data-ttu-id="d7e77-107">_et_</span><span class="sxs-lookup"><span data-stu-id="d7e77-107">_et_</span></span>
   
-> <span data-ttu-id="d7e77-108">Ein [ENCODINGTYPE](http://msdn.microsoft.com/en-us/library/aa374936%28VS.85%29.aspx) -Wert.</span><span class="sxs-lookup"><span data-stu-id="d7e77-108">An [ENCODINGTYPE](http://msdn.microsoft.com/en-us/library/aa374936%28VS.85%29.aspx) value.</span></span> <span data-ttu-id="d7e77-109">Nur die folgenden Werte werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="d7e77-109">Only the following values are supported:</span></span> 
+> <span data-ttu-id="d7e77-108">Ein [ENCODINGTYPE](http://msdn.microsoft.com/de-de/library/aa374936%28VS.85%29.aspx) -Wert.</span><span class="sxs-lookup"><span data-stu-id="d7e77-108">An [ENCODINGTYPE](http://msdn.microsoft.com/de-de/library/aa374936%28VS.85%29.aspx) value.</span></span> <span data-ttu-id="d7e77-109">Nur die folgenden Werte werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="d7e77-109">Only the following values are supported:</span></span> 
     
    - <span data-ttu-id="d7e77-110">IET_BASE64</span><span class="sxs-lookup"><span data-stu-id="d7e77-110">IET_BASE64</span></span>
    - <span data-ttu-id="d7e77-111">IET_UUENCODE</span><span class="sxs-lookup"><span data-stu-id="d7e77-111">IET_UUENCODE</span></span>

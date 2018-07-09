@@ -25,9 +25,9 @@ ms.locfileid: "19790642"
   
 ## <a name="see-also"></a><span data-ttu-id="30806-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="30806-109">See also</span></span>
 
-- [<span data-ttu-id="30806-110">InfoPath Developer Center</span><span class="sxs-lookup"><span data-stu-id="30806-110">InfoPath Developer Center</span></span>](http://msdn.microsoft.com/en-us/office/aa905434.aspx)  
-- [<span data-ttu-id="30806-111">Office Developer Center</span><span class="sxs-lookup"><span data-stu-id="30806-111">Microsoft Office Developer Center</span></span>](http://msdn.microsoft.com/en-us/office/default.aspx)
-- [<span data-ttu-id="30806-112">Dokumentkonventionen in der Office-Entwicklerdokumentation</span><span class="sxs-lookup"><span data-stu-id="30806-112">Document Conventions in Office Developer Documentation</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [<span data-ttu-id="30806-110">InfoPath Developer Center</span><span class="sxs-lookup"><span data-stu-id="30806-110">InfoPath Developer Center</span></span>](http://msdn.microsoft.com/de-de/office/aa905434.aspx)  
+- [<span data-ttu-id="30806-111">Office Developer Center</span><span class="sxs-lookup"><span data-stu-id="30806-111">Microsoft Office Developer Center</span></span>](http://msdn.microsoft.com/de-de/office/default.aspx)
+- [<span data-ttu-id="30806-112">Dokumentkonventionen in der Office-Entwicklerdokumentation</span><span class="sxs-lookup"><span data-stu-id="30806-112">Document Conventions in Office Developer Documentation</span></span>](http://msdn.microsoft.com/de-de/office/aa905365.aspx)
 - [<span data-ttu-id="30806-113">Microsoft-Eingabehilfen</span><span class="sxs-lookup"><span data-stu-id="30806-113">Microsoft Accessibility</span></span>](http://www.microsoft.com/ENABLE/)
 - [<span data-ttu-id="30806-114">Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft</span><span class="sxs-lookup"><span data-stu-id="30806-114">Microsoft Online Privacy Notice</span></span>](http://privacy.microsoft.com/en-us/default.mspx)
   

@@ -24,7 +24,7 @@ ms.locfileid: "19793280"
 <span data-ttu-id="6ef8d-105">Kopiert eine Zeichenfolge in einen Puffer.</span><span class="sxs-lookup"><span data-stu-id="6ef8d-105">Copies a string to a buffer.</span></span>
   
 > [!CAUTION]
-> <span data-ttu-id="6ef8d-106">Nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="6ef8d-106">Do not use.</span></span> <span data-ttu-id="6ef8d-107">Erwägen Sie [StringCchCopy hin](http://msdn.microsoft.com/en-us/library/ms647527%28VS.85%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="6ef8d-107">Consider using [StringCchCopy](http://msdn.microsoft.com/en-us/library/ms647527%28VS.85%29.aspx) instead.</span></span> 
+> <span data-ttu-id="6ef8d-106">Nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="6ef8d-106">Do not use.</span></span> <span data-ttu-id="6ef8d-107">Erwägen Sie [StringCchCopy hin](http://msdn.microsoft.com/de-de/library/ms647527%28VS.85%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="6ef8d-107">Consider using [StringCchCopy](http://msdn.microsoft.com/de-de/library/ms647527%28VS.85%29.aspx) instead.</span></span> 
   
 ```cpp
 LPWSTR MNLS_lstrcpyW(
@@ -50,11 +50,11 @@ LPCWSTR lpString2);
   
 ## <a name="remarks"></a><span data-ttu-id="6ef8d-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6ef8d-116">Remarks</span></span>
 
-<span data-ttu-id="6ef8d-117">Diese Funktion umschließt die **Lstrcpy** -Funktion.</span><span class="sxs-lookup"><span data-stu-id="6ef8d-117">This function wraps the **lstrcpy** function.</span></span> <span data-ttu-id="6ef8d-118">Weitere Informationen finden Sie unter [Lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="6ef8d-118">For more information, see [lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="6ef8d-117">Diese Funktion umschließt die **Lstrcpy** -Funktion.</span><span class="sxs-lookup"><span data-stu-id="6ef8d-117">This function wraps the **lstrcpy** function.</span></span> <span data-ttu-id="6ef8d-118">Weitere Informationen finden Sie unter [Lstrcpy](http://msdn.microsoft.com/de-de/library/ms647490%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="6ef8d-118">For more information, see [lstrcpy](http://msdn.microsoft.com/de-de/library/ms647490%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="6ef8d-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6ef8d-119">See also</span></span>
 
 
 
-[<span data-ttu-id="6ef8d-120">lstrcpy</span><span class="sxs-lookup"><span data-stu-id="6ef8d-120">lstrcpy</span></span>](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx)
+[<span data-ttu-id="6ef8d-120">lstrcpy</span><span class="sxs-lookup"><span data-stu-id="6ef8d-120">lstrcpy</span></span>](http://msdn.microsoft.com/de-de/library/ms647490%28VS.85%29.aspx)
 

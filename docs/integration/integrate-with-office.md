@@ -37,7 +37,7 @@ ms.locfileid: "19790855"
     
 ## <a name="see-also"></a><span data-ttu-id="3cedd-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3cedd-115">See also</span></span>
 
-- [<span data-ttu-id="3cedd-116">Office-Cliententwicklung</span><span class="sxs-lookup"><span data-stu-id="3cedd-116">Office client development</span></span>](https://msdn.microsoft.com/en-us/library/dn833103.aspx)
+- [<span data-ttu-id="3cedd-116">Office-Cliententwicklung</span><span class="sxs-lookup"><span data-stu-id="3cedd-116">Office client development</span></span>](https://msdn.microsoft.com/de-de/library/dn833103.aspx)
     
 - [<span data-ttu-id="3cedd-117">Office-Entwicklung</span><span class="sxs-lookup"><span data-stu-id="3cedd-117">Office development</span></span>](http://msdn.microsoft.com/library/7f24db34-c1ad-4a83-a9bd-3c85a39c0bd8%28Office.15%29.aspx)
     

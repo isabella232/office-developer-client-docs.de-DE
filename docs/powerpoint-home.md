@@ -18,19 +18,19 @@ ms.locfileid: "19796159"
 <span data-ttu-id="77d0c-104">Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von PowerPoint.</span><span class="sxs-lookup"><span data-stu-id="77d0c-104">Find how-to content, sample code, SDK and API documentation, VBA references, training, and technical articles for developing solutions and customizing PowerPoint.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="77d0c-p101">[!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/en-us/office/dev/add-ins/) an.</span><span class="sxs-lookup"><span data-stu-id="77d0c-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/en-us/office/dev/add-ins/).</span></span> 
+> <span data-ttu-id="77d0c-p101">Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/de-de/office/dev/add-ins/) an.</span><span class="sxs-lookup"><span data-stu-id="77d0c-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/de-de/office/dev/add-ins/).</span></span> 
   
 ### <a name="viewed-most"></a><span data-ttu-id="77d0c-107">Am häufigsten angezeigt</span><span class="sxs-lookup"><span data-stu-id="77d0c-107">Viewed most</span></span>
   
-- [<span data-ttu-id="77d0c-108">VBA-Referenz für PowerPoint</span><span class="sxs-lookup"><span data-stu-id="77d0c-108">PowerPoint VBA reference</span></span>](https://msdn.microsoft.com/EN-US/library/ee861525.aspx)
+- [<span data-ttu-id="77d0c-108">VBA-Referenz für PowerPoint</span><span class="sxs-lookup"><span data-stu-id="77d0c-108">PowerPoint VBA reference</span></span>](https://msdn.microsoft.com/de-de/library/ee861525.aspx)
   
-- [<span data-ttu-id="77d0c-109">PowerPoint 2010</span><span class="sxs-lookup"><span data-stu-id="77d0c-109">PowerPoint 2010</span></span>](https://msdn.microsoft.com/en-us/library/cc313152%28v=office.12%29.aspx)
+- [<span data-ttu-id="77d0c-109">PowerPoint 2010</span><span class="sxs-lookup"><span data-stu-id="77d0c-109">PowerPoint 2010</span></span>](https://msdn.microsoft.com/de-de/library/cc313152%28v=office.12%29.aspx)
   
 ### <a name="office-add-ins"></a><span data-ttu-id="77d0c-110">Office-Add-Ins</span><span class="sxs-lookup"><span data-stu-id="77d0c-110">Office Add-ins</span></span>
   
-- [<span data-ttu-id="77d0c-111">Erste Schritte mit PowerPoint-add-ins</span><span class="sxs-lookup"><span data-stu-id="77d0c-111">Get started with PowerPoint add-ins</span></span>](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/powerpoint-quickstart)
+- [<span data-ttu-id="77d0c-111">Erste Schritte mit PowerPoint-add-ins</span><span class="sxs-lookup"><span data-stu-id="77d0c-111">Get started with PowerPoint add-ins</span></span>](https://docs.microsoft.com/de-de/office/dev/add-ins/quickstarts/powerpoint-quickstart)
   
-- [<span data-ttu-id="77d0c-112">Plattformübersicht</span><span class="sxs-lookup"><span data-stu-id="77d0c-112">Platform overview</span></span>](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)
+- [<span data-ttu-id="77d0c-112">Plattformübersicht</span><span class="sxs-lookup"><span data-stu-id="77d0c-112">Platform overview</span></span>](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-ins)
   
 ### <a name="code-samples"></a><span data-ttu-id="77d0c-113">Codebeispiele</span><span class="sxs-lookup"><span data-stu-id="77d0c-113">Code samples</span></span>
   
@@ -42,7 +42,7 @@ ms.locfileid: "19796159"
 
 - [<span data-ttu-id="77d0c-117">VBA-Sprachreferenz für Office</span><span class="sxs-lookup"><span data-stu-id="77d0c-117">Office VBA language reference</span></span>](https://msdn.microsoft.com/en-us/VBA/VBA-Language-Reference) 
 
-- [<span data-ttu-id="77d0c-118">Open XML-SDK</span><span class="sxs-lookup"><span data-stu-id="77d0c-118">Open XML SDK</span></span>](https://msdn.microsoft.com/en-us/library/bb448854.aspx)
+- [<span data-ttu-id="77d0c-118">Open XML-SDK</span><span class="sxs-lookup"><span data-stu-id="77d0c-118">Open XML SDK</span></span>](https://msdn.microsoft.com/de-de/library/bb448854.aspx)
 
-- [<span data-ttu-id="77d0c-119">VSTO-Add-Ins für Office</span><span class="sxs-lookup"><span data-stu-id="77d0c-119">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+- [<span data-ttu-id="77d0c-119">VSTO-Add-Ins für Office</span><span class="sxs-lookup"><span data-stu-id="77d0c-119">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/de-de/library/jj620922.aspx)
   

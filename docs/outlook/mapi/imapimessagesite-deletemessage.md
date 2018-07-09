@@ -42,7 +42,7 @@ HRESULT DeleteMessage(
     
  <span data-ttu-id="6ee66-109">_prcPosRect_</span><span class="sxs-lookup"><span data-stu-id="6ee66-109">_prcPosRect_</span></span>
   
-> <span data-ttu-id="6ee66-110">[in] Ein Zeiger auf ein [Rechteck](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) -Struktur, die im Fenstergröße und Position des aktuellen Formulars enthält.</span><span class="sxs-lookup"><span data-stu-id="6ee66-110">[in] A pointer to a [RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) structure that contains the current form's window size and position.</span></span> <span data-ttu-id="6ee66-111">Das nächste Formular angezeigt wird auch dieses Fenster Rechteck verwendet.</span><span class="sxs-lookup"><span data-stu-id="6ee66-111">The next form displayed also uses this window rectangle.</span></span> 
+> <span data-ttu-id="6ee66-110">[in] Ein Zeiger auf ein [Rechteck](http://msdn.microsoft.com/de-de/library/dd162897%28VS.85%29.aspx) -Struktur, die im Fenstergröße und Position des aktuellen Formulars enthält.</span><span class="sxs-lookup"><span data-stu-id="6ee66-110">[in] A pointer to a [RECT](http://msdn.microsoft.com/de-de/library/dd162897%28VS.85%29.aspx) structure that contains the current form's window size and position.</span></span> <span data-ttu-id="6ee66-111">Das nächste Formular angezeigt wird auch dieses Fenster Rechteck verwendet.</span><span class="sxs-lookup"><span data-stu-id="6ee66-111">The next form displayed also uses this window rectangle.</span></span> 
     
 ## <a name="return-value"></a><span data-ttu-id="6ee66-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6ee66-112">Return value</span></span>
 
@@ -76,7 +76,7 @@ HRESULT DeleteMessage(
     
 4. <span data-ttu-id="6ee66-130">Löscht oder verschiebt die Nachricht.</span><span class="sxs-lookup"><span data-stu-id="6ee66-130">It deletes or moves the message.</span></span>
     
-<span data-ttu-id="6ee66-131">Rufen Sie die Windows [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="6ee66-131">To obtain the **RECT** structure used by a form's window, call the Windows [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) function.</span></span> 
+<span data-ttu-id="6ee66-131">Rufen Sie die Windows [GetWindowRect](http://msdn.microsoft.com/de-de/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="6ee66-131">To obtain the **RECT** structure used by a form's window, call the Windows [GetWindowRect](http://msdn.microsoft.com/de-de/library/ms633519) function.</span></span> 
   
 <span data-ttu-id="6ee66-132">Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="6ee66-132">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
   

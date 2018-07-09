@@ -30,7 +30,7 @@ ms.locfileid: "19790914"
 - <span data-ttu-id="62e68-113">[Fehlercodes](error-codes-onenote.md): Listet die Fehlercodes im Objektmodell von OneNote 2013.</span><span class="sxs-lookup"><span data-stu-id="62e68-113">[Error codes](error-codes-onenote.md): Lists the error codes in the OneNote 2013 object model.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="62e68-p102">[!HINWEIS] Die in dieser Dokumentation beschriebenen APIs sind nur für OneNote Win32-Desktopclientlösungen in nicht verbundenen Szenarios. Verwenden Sie für verbundene Szenarien die empfohlenen OneNote-Dienst-APIs. Weitere Informationen finden Sie unter [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615).</span><span class="sxs-lookup"><span data-stu-id="62e68-p102">The APIs described in this documentation are intended only for OneNote Win32 desktop client solutions in unconnected scenarios. For connected scenarios, use the recommended OneNote service APIs. To learn more, visit [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615).</span></span> 
+> <span data-ttu-id="62e68-p102">Die in dieser Dokumentation beschriebenen APIs sind nur für OneNote Win32-Desktopclientlösungen in nicht verbundenen Szenarios. Verwenden Sie für verbundene Szenarien die empfohlenen OneNote-Dienst-APIs. Weitere Informationen finden Sie unter [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615).</span><span class="sxs-lookup"><span data-stu-id="62e68-p102">The APIs described in this documentation are intended only for OneNote Win32 desktop client solutions in unconnected scenarios. For connected scenarios, use the recommended OneNote service APIs. To learn more, visit [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615).</span></span> 
   
 ## <a name="see-also"></a><span data-ttu-id="62e68-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="62e68-117">See also</span></span>
 
@@ -40,9 +40,9 @@ ms.locfileid: "19790914"
     
 - [<span data-ttu-id="62e68-120">Accessibility in Microsoft Products (Barrierefreiheit in Microsoft-Produkten, in englischer Sprache)</span><span class="sxs-lookup"><span data-stu-id="62e68-120">Accessibility in Microsoft Products</span></span>](http://www.microsoft.com/enable/products/default.aspx)
     
-- [<span data-ttu-id="62e68-121">Konventionen für Office Developer-Dokumente</span><span class="sxs-lookup"><span data-stu-id="62e68-121">Document Conventions</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [<span data-ttu-id="62e68-121">Konventionen für Office Developer-Dokumente</span><span class="sxs-lookup"><span data-stu-id="62e68-121">Document Conventions</span></span>](http://msdn.microsoft.com/de-de/office/aa905365.aspx)
     
-- [<span data-ttu-id="62e68-122">Copyright-Informationen OneNote-Entwicklerreferenz</span><span class="sxs-lookup"><span data-stu-id="62e68-122">OneNote Developer Reference Copyright Information</span></span>](https://msdn.microsoft.com/en-us/library/office/jj680116.aspx)
+- [<span data-ttu-id="62e68-122">Copyright-Informationen OneNote-Entwicklerreferenz</span><span class="sxs-lookup"><span data-stu-id="62e68-122">OneNote Developer Reference Copyright Information</span></span>](https://msdn.microsoft.com/de-de/library/office/jj680116.aspx)
     
 - [<span data-ttu-id="62e68-123">Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft</span><span class="sxs-lookup"><span data-stu-id="62e68-123">Microsoft Online Privacy Notice</span></span>](http://privacy.microsoft.com/en-us/default.mspx)
     

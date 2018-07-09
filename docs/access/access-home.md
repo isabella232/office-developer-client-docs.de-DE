@@ -20,13 +20,13 @@ ms.locfileid: "19790156"
   
 - [<span data-ttu-id="a9b5a-106">VBA-Referenz für Access</span><span class="sxs-lookup"><span data-stu-id="a9b5a-106">Access VBA reference</span></span>](http://msdn.microsoft.com/library/0e9c6fa4-3289-4a13-b409-354c70129308%28Office.15%29.aspx)
   
-- [<span data-ttu-id="a9b5a-107">Access 2010</span><span class="sxs-lookup"><span data-stu-id="a9b5a-107">Access 2010</span></span>](https://msdn.microsoft.com/en-us/library/office/ff604965%28v=office.14%29.aspx)
+- [<span data-ttu-id="a9b5a-107">Access 2010</span><span class="sxs-lookup"><span data-stu-id="a9b5a-107">Access 2010</span></span>](https://msdn.microsoft.com/de-de/library/office/ff604965%28v=office.14%29.aspx)
   
 ### <a name="office-add-ins"></a><span data-ttu-id="a9b5a-108">Office-Add-Ins</span><span class="sxs-lookup"><span data-stu-id="a9b5a-108">Office Add-ins</span></span>
   
 - [<span data-ttu-id="a9b5a-109">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="a9b5a-109">Get started</span></span>](https://dev.office.com/getting-started/addins)
   
-- [<span data-ttu-id="a9b5a-110">Plattformübersicht</span><span class="sxs-lookup"><span data-stu-id="a9b5a-110">Platform overview</span></span>](https://msdn.microsoft.com/EN-US/library/office/jj220082.aspx)
+- [<span data-ttu-id="a9b5a-110">Plattformübersicht</span><span class="sxs-lookup"><span data-stu-id="a9b5a-110">Platform overview</span></span>](https://msdn.microsoft.com/de-de/library/office/jj220082.aspx)
   
 ### <a name="other-resources"></a><span data-ttu-id="a9b5a-111">Weitere Ressourcen</span><span class="sxs-lookup"><span data-stu-id="a9b5a-111">Other resources</span></span>
   
@@ -36,7 +36,7 @@ ms.locfileid: "19790156"
   
 - [<span data-ttu-id="a9b5a-114">Open XML-SDK</span><span class="sxs-lookup"><span data-stu-id="a9b5a-114">Open XML SDK</span></span>](http://msdn.microsoft.com/library/f6a9ae68-7989-4208-97f5-3c945137a0ab%28Office.15%29.aspx)
   
-- [<span data-ttu-id="a9b5a-115">VSTO-Add-Ins für Office</span><span class="sxs-lookup"><span data-stu-id="a9b5a-115">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+- [<span data-ttu-id="a9b5a-115">VSTO-Add-Ins für Office</span><span class="sxs-lookup"><span data-stu-id="a9b5a-115">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/de-de/library/jj620922.aspx)
   
 ### <a name="support"></a><span data-ttu-id="a9b5a-116">Unterstützung</span><span class="sxs-lookup"><span data-stu-id="a9b5a-116">Support</span></span>
   

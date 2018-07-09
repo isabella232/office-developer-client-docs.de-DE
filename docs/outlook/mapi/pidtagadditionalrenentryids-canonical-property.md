@@ -89,5 +89,5 @@ ms.locfileid: "19794045"
 [<span data-ttu-id="f3251-139">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="f3251-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
 
-[<span data-ttu-id="f3251-140">Über den API-Speicher</span><span class="sxs-lookup"><span data-stu-id="f3251-140">About the Store API</span></span>](http://msdn.microsoft.com/en-us/library/aa192884.aspx)
+[<span data-ttu-id="f3251-140">Über den API-Speicher</span><span class="sxs-lookup"><span data-stu-id="f3251-140">About the Store API</span></span>](http://msdn.microsoft.com/de-de/library/aa192884.aspx)
 

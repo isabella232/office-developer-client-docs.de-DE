@@ -28,13 +28,13 @@ ms.locfileid: "19793037"
 <span data-ttu-id="86a17-p102">Die Messaging Application Program Interface (MAPI) ist eine umfassende Sammlung von Funktionen, die Entwickler verwenden k�nnen, um E-Mail-f�hige Anwendungen zu erstellen. Die vollst�ndige Funktionsbibliothek wird als MAPI bezeichnet. MAPI erm�glicht die vollst�ndige Kontrolle �ber das Messaging-System auf dem Clientcomputer, das Erstellen und Verwalten von Nachrichten und die Verwaltung des Clientpostfachs, der Dienstanbieter usw.</span><span class="sxs-lookup"><span data-stu-id="86a17-p102">The Messaging Application Program Interface (MAPI) is an extensive set of functions that developers can use to create mail-enabled applications. The full function library is known as MAPI. MAPI enables complete control over the messaging system on the client computer, creation and management of messages, management of the client mailbox, service providers, and so on.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="86a17-112">[!HINWEIS] Die erweiterte MAPI ist identisch mit MAPI und wird in der MAPI-Dokumentation einfach als MAPI bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="86a17-112">Extended MAPI is the same as MAPI, and is simply referred to as MAPI in the MAPI documentation.</span></span> 
+> <span data-ttu-id="86a17-112">Die erweiterte MAPI ist identisch mit MAPI und wird in der MAPI-Dokumentation einfach als MAPI bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="86a17-112">Extended MAPI is the same as MAPI, and is simply referred to as MAPI in the MAPI documentation.</span></span> 
   
  <span data-ttu-id="86a17-113">**Einfache MAPI**</span><span class="sxs-lookup"><span data-stu-id="86a17-113">**Simple MAPI**</span></span>
   
 <span data-ttu-id="86a17-114">Die einfache MAPI bietet eine Reihe von Funktionen, mit denen Sie eine grundlegende Stufe von Messaging-Funktionen zu auf Microsoft Windows basierenden Anwendungen hinzuf�gen k�nnen.</span><span class="sxs-lookup"><span data-stu-id="86a17-114">Simple MAPI provides a set of functions that enables you to add a basic level of messaging functionality to Microsoft Windows-based applications.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="86a17-p103">[!WICHTIG] Die MAPISendMail-Funktion der einfachen MAPI wird von Microsoft Outlook 2013 und Microsoft Outlook 2010 unterst�tzt. Andere Funktionen der einfachen MAPI sind in Windows veraltet.</span><span class="sxs-lookup"><span data-stu-id="86a17-p103">The Simple MAPI function MAPISendMail is supported by Microsoft Outlook 2013 and Microsoft Outlook 2010. Other Simple MAPI functions have been deprecated in Windows.</span></span> 
+> <span data-ttu-id="86a17-p103">Die MAPISendMail-Funktion der einfachen MAPI wird von Microsoft Outlook 2013 und Microsoft Outlook 2010 unterst�tzt. Andere Funktionen der einfachen MAPI sind in Windows veraltet.</span><span class="sxs-lookup"><span data-stu-id="86a17-p103">The Simple MAPI function MAPISendMail is supported by Microsoft Outlook 2013 and Microsoft Outlook 2010. Other Simple MAPI functions have been deprecated in Windows.</span></span> 
   
 

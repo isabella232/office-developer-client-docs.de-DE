@@ -65,7 +65,7 @@ HRESULT Logoff(
     
 ## <a name="remarks"></a><span data-ttu-id="d0d2d-125">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d0d2d-125">Remarks</span></span>
 
-<span data-ttu-id="d0d2d-126">Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet.</span><span class="sxs-lookup"><span data-stu-id="d0d2d-126">The **IMAPISession::Logoff** method ends a MAPI session.</span></span> <span data-ttu-id="d0d2d-127">Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="d0d2d-127">When **Logoff** returns, none of the methods except for [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) can be called.</span></span> 
+<span data-ttu-id="d0d2d-126">Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet.</span><span class="sxs-lookup"><span data-stu-id="d0d2d-126">The **IMAPISession::Logoff** method ends a MAPI session.</span></span> <span data-ttu-id="d0d2d-127">Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="d0d2d-127">When **Logoff** returns, none of the methods except for [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) can be called.</span></span> 
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="d0d2d-128">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="d0d2d-128">Notes to callers</span></span>
 

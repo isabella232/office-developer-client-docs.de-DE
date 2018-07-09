@@ -18,20 +18,20 @@ ms.locfileid: "19796319"
 <span data-ttu-id="c7a27-104">Hier finden Sie praktische Inhalte, technische Artikel und Referenzen zum Entwickeln von Lösungen und Anpassen von Publisher ein.</span><span class="sxs-lookup"><span data-stu-id="c7a27-104">Find how-to content, technical articles, and references for developing solutions and customizing Publisher.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c7a27-p101">[!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins) an.</span><span class="sxs-lookup"><span data-stu-id="c7a27-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins).</span></span> 
+> <span data-ttu-id="c7a27-p101">Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-ins) an.</span><span class="sxs-lookup"><span data-stu-id="c7a27-p101">Interested in developing solutions that extend the Office experience across [multiple platforms](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-in-availability)? Check out the new [Office Add-ins model](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-ins).</span></span> 
 
 ### <a name="viewed-most"></a><span data-ttu-id="c7a27-107">Am häufigsten angezeigt</span><span class="sxs-lookup"><span data-stu-id="c7a27-107">Viewed most</span></span>
 
 - [<span data-ttu-id="c7a27-108">Publisher VBA (engl.)</span><span class="sxs-lookup"><span data-stu-id="c7a27-108">Publisher VBA reference</span></span>](https://msdn.microsoft.com/en-us/VBA/VBA-Publisher)
 
-- <span data-ttu-id="c7a27-109">[Publisher 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="c7a27-109">[Publisher 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)</span></span>
+- <span data-ttu-id="c7a27-109">[Publisher 2010](https://msdn.microsoft.com/de-de/library/office/ff604963(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="c7a27-109">[Publisher 2010](https://msdn.microsoft.com/de-de/library/office/ff604963(v=office.14).aspx)</span></span>
 
 
 ### <a name="office-add-ins"></a><span data-ttu-id="c7a27-110">Office-Add-Ins</span><span class="sxs-lookup"><span data-stu-id="c7a27-110">Office Add-ins</span></span> 
 
-- [<span data-ttu-id="c7a27-111">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="c7a27-111">Get started</span></span>](https://docs.microsoft.com/en-us/office/dev/add-ins/)
+- [<span data-ttu-id="c7a27-111">Erste Schritte</span><span class="sxs-lookup"><span data-stu-id="c7a27-111">Get started</span></span>](https://docs.microsoft.com/de-de/office/dev/add-ins/)
 
-- [<span data-ttu-id="c7a27-112">Plattformübersicht</span><span class="sxs-lookup"><span data-stu-id="c7a27-112">Platform overview</span></span>](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)
+- [<span data-ttu-id="c7a27-112">Plattformübersicht</span><span class="sxs-lookup"><span data-stu-id="c7a27-112">Platform overview</span></span>](https://docs.microsoft.com/de-de/office/dev/add-ins/overview/office-add-ins)
 
 
 ### <a name="other-resources"></a><span data-ttu-id="c7a27-113">Weitere Ressourcen</span><span class="sxs-lookup"><span data-stu-id="c7a27-113">Other resources</span></span>
@@ -40,6 +40,6 @@ ms.locfileid: "19796319"
 
 - [<span data-ttu-id="c7a27-115">VBA-Sprachreferenz für Office</span><span class="sxs-lookup"><span data-stu-id="c7a27-115">Office VBA language reference</span></span>](https://msdn.microsoft.com/en-us/VBA/VBA-Language-Reference) 
 
-- [<span data-ttu-id="c7a27-116">Open XML-SDK</span><span class="sxs-lookup"><span data-stu-id="c7a27-116">Open XML SDK</span></span>](https://msdn.microsoft.com/en-us/library/bb448854.aspx)
+- [<span data-ttu-id="c7a27-116">Open XML-SDK</span><span class="sxs-lookup"><span data-stu-id="c7a27-116">Open XML SDK</span></span>](https://msdn.microsoft.com/de-de/library/bb448854.aspx)
 
-- [<span data-ttu-id="c7a27-117">VSTO-Add-Ins für Office</span><span class="sxs-lookup"><span data-stu-id="c7a27-117">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
+- [<span data-ttu-id="c7a27-117">VSTO-Add-Ins für Office</span><span class="sxs-lookup"><span data-stu-id="c7a27-117">VSTO Add-ins for Office</span></span>](https://msdn.microsoft.com/de-de/library/jj620922.aspx)

@@ -75,11 +75,11 @@ int MNLS_WideCharToMultiByte(
   
 ## <a name="remarks"></a><span data-ttu-id="412b8-129">Hinweise</span><span class="sxs-lookup"><span data-stu-id="412b8-129">Remarks</span></span>
 
-<span data-ttu-id="412b8-130">Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen.</span><span class="sxs-lookup"><span data-stu-id="412b8-130">This function wraps the **WideCharToMultiByte** function.</span></span> <span data-ttu-id="412b8-131">Weitere Informationen finden Sie unter [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="412b8-131">For more information, see [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="412b8-130">Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen.</span><span class="sxs-lookup"><span data-stu-id="412b8-130">This function wraps the **WideCharToMultiByte** function.</span></span> <span data-ttu-id="412b8-131">Weitere Informationen finden Sie unter [WideCharToMultiByte](http://msdn.microsoft.com/de-de/library/dd374130%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="412b8-131">For more information, see [WideCharToMultiByte](http://msdn.microsoft.com/de-de/library/dd374130%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="412b8-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="412b8-132">See also</span></span>
 
 
 
-[<span data-ttu-id="412b8-133">WideCharToMultiByte</span><span class="sxs-lookup"><span data-stu-id="412b8-133">WideCharToMultiByte</span></span>](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx)
+[<span data-ttu-id="412b8-133">WideCharToMultiByte</span><span class="sxs-lookup"><span data-stu-id="412b8-133">WideCharToMultiByte</span></span>](http://msdn.microsoft.com/de-de/library/dd374130%28VS.85%29.aspx)
 

@@ -51,9 +51,9 @@ ms.locfileid: "19790725"
     
 <span data-ttu-id="12ab9-123">Es gibt auch zwei InfoPath-spezifische COM-Schnittstellen, die eine engere Integration von Steuerelementen ermöglichen:</span><span class="sxs-lookup"><span data-stu-id="12ab9-123">Also, there are two InfoPath-specific COM interfaces that provide tighter integration of controls:</span></span>
   
-- [<span data-ttu-id="12ab9-124">IInfoPathControl</span><span class="sxs-lookup"><span data-stu-id="12ab9-124">IInfoPathControl</span></span>](http://msdn.microsoft.com/en-us/library/bb264625.aspx)
+- [<span data-ttu-id="12ab9-124">IInfoPathControl</span><span class="sxs-lookup"><span data-stu-id="12ab9-124">IInfoPathControl</span></span>](http://msdn.microsoft.com/de-de/library/bb264625.aspx)
     
-- [<span data-ttu-id="12ab9-125">IInfoPathControlSite</span><span class="sxs-lookup"><span data-stu-id="12ab9-125">IInfoPathControlSite</span></span>](http://msdn.microsoft.com/en-us/library/bb264627.aspx)
+- [<span data-ttu-id="12ab9-125">IInfoPathControlSite</span><span class="sxs-lookup"><span data-stu-id="12ab9-125">IInfoPathControlSite</span></span>](http://msdn.microsoft.com/de-de/library/bb264627.aspx)
     
 ## <a name="add-an-activex-control-to-the-infopath-design-environment"></a><span data-ttu-id="12ab9-126">Hinzufügen eines ActiveX-Steuerelements zur InfoPath-Entwicklungsumgebung</span><span class="sxs-lookup"><span data-stu-id="12ab9-126">Add an ActiveX Control to the InfoPath Design Environment</span></span>
 
