@@ -46,7 +46,7 @@
           href: 'https://msdn.microsoft.com/en-us/library/office/bb448854.aspx'
         - name: Verwenden von CSISyncClient zum Steuern des ODC
           href: shared/using-csisyncclient-to-control-the-office-document-cache-odc.md
-    - name: Zugriff
+    - name: Access
       href: access/access-home.md
       items:
         - name: VBA-Referenz für Access
@@ -131,7 +131,7 @@
                       href: access/abs-function-access-custom-web-app.md
                     - name: Durchschnittl.
                       href: access/avg-function-access-custom-web-app.md
-                    - name: ceiling
+                    - name: Ceiling
                       href: access/ceiling-function-access-custom-web-app.md
                     - name: Anzahl
                       href: access/count-function-access-custom-web-app.md
