@@ -90,7 +90,7 @@ ms.locfileid: "19796174"
     
 2. <span data-ttu-id="a38cd-167">Wie möchten Sie Ihre SharePoint-Add-Ins hosten?</span><span class="sxs-lookup"><span data-stu-id="a38cd-167">How do you want to host your SharePoint Add-in?</span></span> <span data-ttu-id="a38cd-168">Wählen Sie [X] **SharePoint gehostet**.</span><span class="sxs-lookup"><span data-stu-id="a38cd-168">Choose [X] **SharePoint-hosted**.</span></span>
     
-   <span data-ttu-id="a38cd-169">Weitere Informationen zu SharePoint-Add-ins einschließlich hosting-Optionen finden Sie unter [SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).</span><span class="sxs-lookup"><span data-stu-id="a38cd-169">For more information about SharePoint Add-ins, including hosting options, see [SharePoint Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).</span></span>
+   <span data-ttu-id="a38cd-169">Weitere Informationen zu SharePoint-Add-ins einschließlich hosting-Optionen finden Sie unter [SharePoint-Add-ins](https://docs.microsoft.com/de-de/sharepoint/dev/sp-add-ins/sharepoint-add-ins).</span><span class="sxs-lookup"><span data-stu-id="a38cd-169">For more information about SharePoint Add-ins, including hosting options, see [SharePoint Add-ins](https://docs.microsoft.com/de-de/sharepoint/dev/sp-add-ins/sharepoint-add-ins).</span></span>
     
 3. <span data-ttu-id="a38cd-170">Klicken Sie auf **Weiter**.</span><span class="sxs-lookup"><span data-stu-id="a38cd-170">Click **Next**.</span></span> 
     
