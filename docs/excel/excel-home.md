@@ -20,7 +20,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
 > [!NOTE]
 > [!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Checken Sie das neue [Modell von Excel-add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-overview). 
   
-### <a name="viewed-most"></a>Am häufigsten angezeigt
+### <a name="viewed-most"></a>Meistgesehen
   
 - [VBA-Referenz für Excel](https://msdn.microsoft.com/EN-US/library/ee861528.aspx)
   
@@ -38,7 +38,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="other-resources"></a>Weitere Ressourcen
   
-- [Tipps zur Optimierung von Leistungshindernissen für Excel](https://msdn.microsoft.com/en-us/library/office/mt709003.aspx)
+- [Tipps für das Entfernen von Leistungshindernissen in Excel](https://msdn.microsoft.com/en-us/library/office/mt709003.aspx)
 
 - [VBA-Objektbibliothekreferenz für Office](http://msdn.microsoft.com/library/727c4e1c-e13c-7bac-e833-b1322607dfd3%28Office.15%29.aspx)
   

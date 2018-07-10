@@ -20,9 +20,9 @@ Hier finden Sie praktische Inhalte, technische Artikel und Referenzen zum Entwic
 > [!NOTE]
 > [!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins) an. 
 
-### <a name="viewed-most"></a>Am häufigsten angezeigt
+### <a name="viewed-most"></a>Meistgesehen
 
-- [Publisher VBA (engl.)](https://msdn.microsoft.com/en-us/VBA/VBA-Publisher)
+- [VBA-Referenz für Publisher](https://msdn.microsoft.com/en-us/VBA/VBA-Publisher)
 
 - [Publisher 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)
 

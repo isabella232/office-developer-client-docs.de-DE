@@ -21,9 +21,9 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentation, VBA-R
 > [!NOTE]
 > [!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins) an. 
   
-### <a name="viewed-most"></a>Am häufigsten angezeigt
+### <a name="viewed-most"></a>Meistgesehen
   
-- [Visio VBA (engl.)](http://msdn.microsoft.com/library/b6834d21-5898-4dd9-af2b-9ffeb1b92a1c%28Office.15%29.aspx)
+- [VBA-Referenz für Visio](http://msdn.microsoft.com/library/b6834d21-5898-4dd9-af2b-9ffeb1b92a1c%28Office.15%29.aspx)
   
 - [Visio-speichern als Webverweis](http://msdn.microsoft.com/library/83e06e12-2b4d-2bba-71e3-cb65307a3af0%28Office.15%29.aspx)
   
@@ -31,7 +31,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentation, VBA-R
   
 - [Visio-ShapeSheet-Referenz](visio-shapesheet-reference.md)
   
-- [Dateiformatreferenz für Visio](visio-file-format-reference.md)
+- [Visio-Dateiformatreferenz](visio-file-format-reference.md)
   
 - [Visio 2010](http://msdn.microsoft.com/library/4076d9a1-2c7f-499f-87c1-7ae515b7b1d2%28Office.15%29.aspx)
   

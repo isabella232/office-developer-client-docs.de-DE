@@ -23,7 +23,7 @@ Hier finden Sie praktische Inhalte, technische Artikel, Referenzen und Blogbeitr
 > [!NOTE]
 > [!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)an.  
   
-### <a name="viewed-most"></a>Am häufigsten angezeigt
+### <a name="viewed-most"></a>Meist gesehen
   
 - [OneNote-Entwicklerreferenz](onenote-developer-reference.md)
   

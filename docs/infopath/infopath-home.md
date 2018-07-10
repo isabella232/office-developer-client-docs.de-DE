@@ -24,7 +24,7 @@ Hier finden Sie praktische Inhalte, technische Artikel, Referenzen und Blogbeitr
   
 - [Neuigkeiten für InfoPath-Entwickler](http://msdn.microsoft.com/library/d0ad3111-bd41-4f35-8a34-62c17f20fc19%28Office.15%29.aspx)
   
-### <a name="references"></a>Referenzen
+### <a name="references"></a>Verweise
   
 - [Entwicklerreferenz für Formularvorlagen mit code](form-templates/infopath-developer-reference-for-form-templates.md)
   

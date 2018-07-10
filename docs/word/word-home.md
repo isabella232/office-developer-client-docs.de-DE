@@ -20,7 +20,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentation, VBA-R
 > [!NOTE]
 > [!HINWEIS] Haben Sie Interesse an der Entwicklung von Lösungen, mit denen die Funktionen von Office über [mehrere Plattformen](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-in-availability) erweitert werden können? Schauen Sie sich das neue [Office-Add-Ins-Modell](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins) an.  
   
-### <a name="viewed-most"></a>Am häufigsten angezeigt
+### <a name="viewed-most"></a>Meistgesehen
   
 - [VBA-Referenz für Word](https://msdn.microsoft.com/en-us/library/ee861527.aspx)
   

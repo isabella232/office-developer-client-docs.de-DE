@@ -16,7 +16,7 @@ ms.locfileid: "19790156"
 
 Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Access.
   
-### <a name="viewed-most"></a>Am häufigsten angezeigt
+### <a name="viewed-most"></a>Die am häufigsten aufgerufene
   
 - [VBA-Referenz für Access](http://msdn.microsoft.com/library/0e9c6fa4-3289-4a13-b409-354c70129308%28Office.15%29.aspx)
   
@@ -38,7 +38,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 - [VSTO-Add-Ins für Office](https://msdn.microsoft.com/en-us/library/jj620922.aspx)
   
-### <a name="support"></a>Unterstützung
+### <a name="support"></a>Unterstützung von
   
 - [Office Dev Center](http://dev.office.com)
   
