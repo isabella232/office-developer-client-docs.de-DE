@@ -1,5 +1,5 @@
 ---
-title: Das Visio-Dateiformat programmgesteuert bearbeiten
+title: Programmgesteuertes Bearbeiten des Visio-Dateiformats
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797169"
 ---
-# <a name="manipulate-the-visio-file-format-programmatically"></a>Das Visio-Dateiformat programmgesteuert bearbeiten
+# <a name="manipulate-the-visio-file-format-programmatically"></a>Programmgesteuertes Bearbeiten des Visio-Dateiformats
 
 ![Thema mit Anleitung](media/mod_icon_howto.png)
   
@@ -34,11 +34,11 @@ In diesem Artikel untersuchen wir zum Arbeiten mit dem Visio 2013-Dateiformat pr
 > [!NOTE]
 > Die folgenden Codebeispiele in diesem Artikel wird davon ausgegangen, dass Sie ein rudimentäre Verständnis der Klassen im [System.Xml.Linq](https://msdn.microsoft.com/library/System.Xml.Linq.aspx) und [System.IO.Packaging](https://msdn.microsoft.com/library/System.IO.Packaging.aspx) -Namespace verfügen. > In diesem Artikel wird davon ausgegangen, dass Sie die Konzepte und Terminologie der Open Packaging Conventions verstehen. Sie sollten einige gute Kenntnisse im Umgang mit den Konzepten der Pakete, Dokumentteile oder Paketteile und Beziehungen verfügen. Weitere Informationen finden Sie unter [OPC: ein neuer Standard für Packaging Your Data](http://msdn.microsoft.com/en-us/magazine/cc163372.aspx). > Der Code veranschaulicht das Erstellen von LINQ (Language-Integrated Query) Abfragen, um XML auszuwählen. Die meisten der Codebeispiele verwenden die Abfragesyntax für die Erstellung von LINQ-Abfragen. Sie können keines der LINQ-Abfragen im Code durch verwenden die Syntax der LINQ-Methode bereitgestellt, bei Bedarf umschreiben. Weitere Informationen zu LINQ-Abfragesyntax und Methodensyntax finden Sie unter [LINQ-Abfragesyntax und Methodensyntax (c#)](http://msdn.microsoft.com/en-us/library/bb397947.aspx)> in Tabelle 1 sind die wichtigsten Themen, die Sie mit vertraut sein sollten, bevor Sie über die in diesem Artikel verwendet werden. 
   
-**In Tabelle 1. Kernkonzepte für das Bearbeiten des Visio 2013-Dateiformats**
+**Tabelle 1. Grundlegende Konzepte für die Bearbeitung des Visio 2013-Dateiformats**
 
 |**Titel des Artikels**|**Beschreibung**|
 |:-----|:-----|
-|[Einführung in das Visio-Dateiformat (.vsdx) (engl.)](introduction-to-the-visio-file-formatvsdx.md) <br/> |Diese Übersicht beschreibt einige der wichtigsten Features in das Visio 2013-Dateiformat. Außerdem wird die Open Packaging-Konventionen (OPC) erläutert, wie sie das Visio 2013-Dateiformat angewendet wurden. Es sind auch einige Unterschiede zwischen dem Visio 2013-Dateiformat und der vorherigen Dateiformat für Visio XML-Zeichnung (VDX) aufgeführt.  <br/> |
+|[Einführung in das Visio-Dateiformat (.vsdx)](introduction-to-the-visio-file-formatvsdx.md) <br/> |Diese Übersicht beschreibt einige der wichtigsten Features in das Visio 2013-Dateiformat. Außerdem wird die Open Packaging-Konventionen (OPC) erläutert, wie sie das Visio 2013-Dateiformat angewendet wurden. Es sind auch einige Unterschiede zwischen dem Visio 2013-Dateiformat und der vorherigen Dateiformat für Visio XML-Zeichnung (VDX) aufgeführt.  <br/> |
 |[OPC: Ein neuer Standard für das Verpacken Ihrer Daten](http://msdn.microsoft.com/en-us/magazine/cc163372.aspx) <br/> |In diesem MSDN Magazine-Artikel werden die Open Packaging-Konventionen als Konzept beschrieben.  <br/> |
 |[Grundlagen der Open Packaging Conventions](http://msdn.microsoft.com/en-us/library/ee361919.aspx) <br/> [Einführung in die Office (2007) Open XML-Dateiformate](http://msdn.microsoft.com/en-us/library/aa338205.aspx) <br/> |Diese beiden Artikel erläutern, wie die Open Packaging-Konventionen auf Microsoft Office-Dateien angewendet wurden. Sie enthalten eine Beschreibung der Funktionsweise Beziehungen in einem Paket und auch einige Codebeispiele enthalten.  <br/> |
    
@@ -53,23 +53,23 @@ Verwenden Sie das folgende Verfahren zum Erstellen einer neuen Visio 2013-Datei,
 
 1. Öffnen Sie Visio 2013.
     
-2. Erstellen Sie ein neues Dokument basierend auf der Standardflussdiagramm-Vorlage durch Auswählen von **Kategorien**, **Flussdiagramm**, **Standardflussdiagramm**, **Erstellen**.
+2. Erstellen Sie ein neues Dokument basierend auf der Vorlage „Standardflussdiagramm“, indem Sie **Kategorien**, **Flussdiagramm**, **Standardflussdiagramm**, **Erstellen** auswählen.
     
-3. Ziehen Sie aus dem Fenster **Shapes** einer **Start-/End** -Shape des Zeichenbereichs ab. 
+3. Ziehen Sie aus dem Fenster **Shapes** ein **Anfangs-/Ende**-Shape auf den Zeichenbereich. 
     
-4. Wählen Sie den neuen Start-/End Shapes auf Zeichenbereich aus, und geben Sie "Prozess beginnen".
+4. Wählen Sie das neue Anfangs-/Ende-Shape im Zeichenbereich aus, und geben Sie Prozess beginnen ein.
     
-5. Ziehen Sie aus dem Fenster **Shapes** ein **Prozess** -Shape auf des Zeichenbereichs ab. 
+5. Ziehen Sie aus dem Fenster **Shapes** ein **Prozess**-Shape auf den Zeichenbereich. 
     
-6. Wählen Sie die neue Prozess-Shape auf Zeichenbereich aus, und geben Sie "Eine Aufgabe ausführen".
+6. Wählen Sie das neue Prozess-Shape im Zeichenbereich aus, und geben Sie Eine Aufgabe ausführen ein.
     
-7. Im Kontextmenü für die Anfangs-/Form **Hinzufügen einen Verbinder auf der Seite**wählen Sie aus, und zeichnen Sie dann eine Verbindung zwischen dem Start-/End und dem Prozess-Shapes auf des Zeichenbereichs ab, wie in Abbildung 1 dargestellt.
+7. Wählen Sie im Kontextmenü für das Anfangs-/Ende-Shape **Dem Zeichenblatt einen Verbinder hinzufügen** aus, und ziehen Sie dann einen Verbinder zwischen dem Anfangs-/Ende- und dem Prozess-Shape auf dem Zeichenbereich, wie in Abbildung 1 dargestellt.
     
     **Abbildung 1. Einfache Visio 2013-Zeichnung**
     
      ![Ein mit einem Prozess-Shape verbundenes Start-/End-Shape](media/vis15_SimpleFlowchart.png)
   
-8. Speichern Sie die Datei auf Ihrem Desktop als eine vsdx-Datei, indem Sie auf **Datei**, **Speichern unter**, **Computer**, **Desktop**.
+8. Speichern Sie die Datei auf dem Desktop als VSDX-Datei, indem Sie **Datei**, **Speichern unter**, **Computer**, **Desktop** auswählen.
     
     Geben Sie im Dialogfeld **Speichern unter** Visio-Paket in das Feld **Dateiname"** ", wählen **Visio-Zeichnung (\*.vsdx)** im Feld **Dateityp** der Liste, und klicken Sie dann auf die Schaltfläche **Speichern** . 
     
@@ -82,17 +82,17 @@ Verwenden eine Konsolenanwendung Windows dieser Verfahren zum Bearbeiten der Dat
   
 ### <a name="to-create-a-new-solution-in-visual-studio-2012"></a>Zum Erstellen einer neuen Lösung in Visual Studio 2012
 
-1. Wählen Sie im Menü **Datei** , **neu**, **Projekt**.
+1. Klicken Sie im Menü **Datei** auf **Neu** und dann auf **Projekt**.
     
-2. Klicken Sie im Dialogfeld **Neues Projekt** erweitern Sie, **Visual c#** oder **Visual Basic**, und wählen Sie dann **Windows**, **Console Application**.
+2. Erweitern Sie im Dialogfeld **Neues Projekt** entweder **Visual C#** oder **Visual Basic**, und wählen Sie dann **Windows**, **Konsolenanwendung** aus.
     
     Geben Sie im Feld **Name** 'VisioFileAccessor', wählen Sie einen Speicherort für das Projekt, und wählen Sie dann auf die Schaltfläche **OK** . 
     
 3. Wählen Sie im Menü **Projekt** **Verweis hinzufügen** aus. 
     
-    Klicken Sie im Dialogfeld **Verweis-Manager** unter **Assemblys**wählen Sie **Framework**, und fügen Sie einen Verweis auf die Komponenten **System.Xml** und **WindowsBase aus** . 
+    Wählen Sie im Dialogfeld **Verweis-Manager** unter **Assemblys** die Option **Framework** aus, und fügen Sie dann einen Verweis auf die Komponenten **System.Xml** und **WindowsBase** hinzu. 
     
-4. Fügen Sie in der Datei Program.cs oder Module1.vb für das Projekt die folgenden **using** -Direktiven (**Imports** -Anweisungen in Visual Basic): 
+4. Fügen Sie in der Datei „Program.cs“ oder „Module1.vb“ für das Projekt die folgenden **using**-Direktiven (**Imports**-Anweisungen in Visual Basic) hinzu: 
     
   ```cs
   using System.Xml;
@@ -112,7 +112,7 @@ Verwenden eine Konsolenanwendung Windows dieser Verfahren zum Bearbeiten der Dat
   
   ```
 
-5. Auch vor dem Ende der **Main** -Methode der **Programm** -Klasse (**Module1** in Visual Basic), fügen Sie folgenden Code, der die Ausführung der Konsolenanwendung bis wird in der Datei Program.cs oder Module1.vb der Benutzer eine Taste drückt. 
+5. Fügen Sie ebenfalls in der Datei „Program.cs“ oder „Module1.vb“ vor dem Ende der **Main**-Methode der **Program**-Klasse (**Module1** in Visual Basic) den folgenden Code hinzu, durch den die Ausführung der Konsolenanwendung angehalten wird, bis der Benutzer eine Taste drückt. 
     
   ```cs
   // This code stops the execution of the console application
@@ -141,7 +141,7 @@ Verwenden Sie den folgenden Code, um den vollständigen Pfad für die Datei "Vis
   
 ### <a name="to-open-a-vsdx-file-as-a-package"></a>So öffnen Sie eine VSDX-Datei als Paket
 
-1. Fügen Sie nach der **Main** -Methode in der **Anwendung** -Klasse (oder **Module1** in Visual Basic) den folgenden Code hinzu. 
+1. Fügen Sie nach der **Main**-Methode in der **Program**-Klasse (oder **Module1** in Visual Basic) den folgenden Code hinzu. 
     
   ```cs
   private static Package OpenPackage(string fileName, 
@@ -198,7 +198,7 @@ Verwenden Sie den folgenden Code, um den vollständigen Pfad für die Datei "Vis
   
   ```
 
-2. Fügen Sie in der **Main** -Methode des **Programms** -Klasse (oder **Module1** in Visual Basic) den folgenden Code ein. 
+2. Fügen Sie in der **Main**-Methode der **Program**-Klasse (oder **Module1** in Visual Basic) den folgenden Code hinzu. 
     
   ```cs
   // Open the Visio file in a Package object.
@@ -222,7 +222,7 @@ Verwenden Sie den folgenden Code, um den vollständigen Pfad für die Datei "Vis
 
 Sobald Sie die Visio 2013-Datei als Paket geöffnet haben, können Sie die Dokumentteile darin enthaltenen unter Verwendung der in den **System.IO.Packaging** -Namespace enthalten [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx) -Klasse zugreifen. **PackagePart** -Objekte können einzeln oder als Sammlung instanziiert werden. Die **Paket** -Klasse stellt eine [GetParts()](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) -Methode und eine [GetPart(Uri)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) -Methode zum Abrufen von **PackagePart** -Objekte aus dem **Paket**. Die **Package.GetParts** -Methode wird eine Instanz der [PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) -Klasse, die Sie dann wie jede andere Auflistung interagieren können, die implementiert die [IEnumerator\<T\> ](https://msdn.microsoft.com/library/System.Collections.Generic.IEnumerator`1.aspx) Schnittstelle. 
   
-Verwenden Sie Code in das folgende Verfahren, um ein **PackagePartCollection** -Objekt aus dem **Paket** als Sammlung abgerufen, die **PackagePart** -Objekte in der Auflistung durchlaufen und schreiben den URI und Inhaltstyp der einzelnen **PackagePart **in der Konsole angezeigt. 
+Verwenden Sie den Code in dem folgenden Verfahren, um ein **PackagePartCollection**-Objekt aus der **Package** als Sammlung abzurufen, durchlaufen Sie die **PackagePart**-Objekte in der Sammlung, und schreiben Sie den URI und Inhaltstyp von allen **PackagePart** in die Konsole. 
   
 ### <a name="to-iterate-through-the-package-parts-in-a-package"></a>So durchlaufen Sie die Paketteile in einem Paket
 
@@ -257,7 +257,7 @@ Verwenden Sie Code in das folgende Verfahren, um ein **PackagePartCollection** -
   
   ```
 
-2. Fügen Sie den folgenden Code in den Block **verwenden** , in der **Main** -Methode der **Programm** -Klasse ( **Using** -Block der **Main** -Methode in **Module1** in Visual Basic): 
+2. Fügen Sie den folgenden Code innerhalb des **using**-Blocks in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) hinzu:  
     
   ```cs
   // Write the URI and content type of each package part to the console.
@@ -314,7 +314,7 @@ Wenn Sie die Beziehung zwischen einem **PackagePart** auf das **Paket** oder auf
 > [!NOTE]
 > Sie können auch einen Verweis auf eine bestimmte **PackagePart** mithilfe Abrufen die **Package.GetPart** -Methode und der URI eines der **PackagePart**umgehen den Schritt, in dem Sie das Paket des Teils Beziehungen erhalten. Einige Paketteile im Paket Visio-Datei können jedoch an andere Speicherorte als den Standardspeicherorten in einem Paket gespeichert werden. Sie können nicht annehmen, dass ein pakettei immer an den gleichen URI für jede Datei befindet. > Ist es ratsam, Beziehungen verwenden, um die einzelnen **PackagePart** -Objekte zuzugreifen. 
   
-Gehen Sie zum Abrufen einer **PackagePart** (Visio-Dokument Teil) mithilfe der **PackageRelationship** aus dem **Paket** , das den Teil verweist. 
+Gehen Sie folgendermaßen vor, um **PackagePart** (das Visio-Dokumentteil) mithilfe von **PackageRelationship** aus **Package** abzurufen, das auf das Teil verweist. 
   
 ### <a name="to-select-a-specific-package-part-in-the-package-by-relationship"></a>So wählen Sie ein bestimmtes Paketteil im Paket nach Beziehung aus
 
@@ -365,7 +365,7 @@ Gehen Sie zum Abrufen einer **PackagePart** (Visio-Dokument Teil) mithilfe der *
   
   ```
 
-2. Ersetzen Sie den Code in den **using** -Block in der **Main** -Methode der **Programm** -Klasse ( **Using** -Block der **Main** -Methode in **Module1** in Visual Basic), durch den folgenden Code. 
+2. Ersetzen Sie den Code im **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) durch den folgenden Code:  
     
   ```cs
   // Get a reference to the Visio Document part contained in the file package.
@@ -385,7 +385,7 @@ Wie bereits erwähnt, können Sie auch **PackagePart** -Objekte abrufen, mit der
   
 Die **PackagePart** -Klasse stellt eine [GetRelationshipsByType(String)](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.GetRelationshipsByType.aspx) -Methode, die Sie verwenden können, um ein **PackageRelationshipCollection** -Objekt zurückzugeben, die nur einen **PackageRelationship** -Objekt enthält. Nachdem Sie die **PackageRelationshipCollection**haben, können Sie die **PackageRelationship** auswählen, dass Sie aus der Auflistung benötigen, und klicken Sie dann auf das **PackagePart** -Objekt verweisen. 
   
-Mithilfe des folgenden Codes einen **PackagePart** aus dem **Paket** abgerufen werden, mithilfe von dessen Beziehung (Abrufen von einem **PackageRelationship** -Objekt) einer anderen **PackagePart**.
+Verwenden Sie den folgenden Code zum Abrufen von **PackagePart** aus **Package** mithilfe der Beziehung zu einem anderen **PackagePart** (wodurch ein **PackageRelationship**-Objekt abgerufen wird).
   
 ### <a name="to-select-a-specific-package-part-through-its-relationship-to-another-package-part"></a>So wählen Sie ein bestimmtes Paketteil durch seine Beziehung zu einem anderen Paketteil aus
 
@@ -436,7 +436,7 @@ Mithilfe des folgenden Codes einen **PackagePart** aus dem **Paket** abgerufen w
   End Function
   ```
 
-2. Fügen Sie den folgenden Code auf den Block **verwenden** in der **Main** -Methode der **Programm** -Klasse (die **Using** -Block mit der **Main** -Methode in **Module1** in Visual Basic), unter dem Code aus der vorherigen Prozedur. (Löschen Sie den Code, den Sie im vorherigen Verfahren hinzugefügt haben nicht.) 
+2. Fügen Sie den folgenden Code zum **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) unter dem Code aus dem vorherigen Verfahren hinzu: (Löschen Sie nicht den Code, den Sie im vorherigen Verfahren hinzugefügt haben.)  
     
   ```cs
   // Get a reference to the collection of pages in the document, 
@@ -459,9 +459,9 @@ Mithilfe des folgenden Codes einen **PackagePart** aus dem **Paket** abgerufen w
 
 Bevor Sie Änderungen an den XML-Code in einen Dokumentteil enthalten vornehmen können, müssen Sie zuerst das XML-Dokument in ein Objekt geladen werden, die Sie den XML-Code, mit dem [XDocument](https://msdn.microsoft.com/library/System.Xml.Linq.XDocument.aspx) -Klasse oder [XmlDocument](https://msdn.microsoft.com/library/System.Xml.XmlDocument.aspx) -Klasse lesen können. Beide Klassen verfügbar machen für Aufgaben wie das Auswählen von XML-Elemente in der XML-Dokumenten enthaltenen Methoden. Erstellen, lesen und Schreiben von Attributen; und neue XML-Elemente in ein Dokument einfügt. 
   
-Der beiden können die **XDocument** -Klasse Sie den XML-Code mithilfe von LINQ-Abfragen. Mit LINQ können Sie problemlos einzelne Elemente aus einem XML-Dokument auswählen, durch Erstellen von Abfragen, statt aller Elemente in einer Auflistung durchlaufen und Tests für die Elemente, die Sie benötigen. Aus diesem Grund verwenden Sie die folgenden Verfahren in diesem Artikel die **XDocument** -Klasse und anderer Klassen des n: **System.Xml.Linq** Namespaces für das Arbeiten mit XML. 
+Mit der **XDocument**-Klasse können Sie die XML-Daten mithilfe von LINQ abfragen. Mit LINQ können Sie ganz einfach einzelne Elemente aus einem XML-Dokument auswählen, indem Sie Abfragen erstellen anstatt alle Elemente in einer Sammlung zu durchlaufen und nach den benötigten Elementen zu suchen. Aus diesen Gründen verwenden die folgenden Verfahren in diesem Artikel die **XDocument**-Klasse und andere Klassen des **System.Xml.Linq**-Namespace für die Arbeit mit XML. 
   
-Verwenden Sie das folgende Verfahren, um eine **PackagePart** als XML-Dokument in ein **XDocument** -Objekt zu öffnen. 
+Verwenden Sie das folgende Verfahren, um ein **PackagePart** als XML-Dokument in einem **XDocument**-Objekt zu öffnen. 
   
 ### <a name="to-read-the-xml-in-a-package-part"></a>So lesen Sie den XML-Code in einem Paketteil
 
@@ -490,7 +490,7 @@ Verwenden Sie das folgende Verfahren, um eine **PackagePart** als XML-Dokument i
   End Function
   ```
 
-2. Fügen Sie den folgenden Code auf den Block **verwenden** in der **Main** -Methode der **Programm** -Klasse (die **Using** -Block mit der **Main** -Methode in **Module1** in Visual Basic), unter dem Code aus der vorherigen Prozedur. 
+2. Fügen Sie den folgenden Code zum **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) unter dem Code aus dem vorherigen Verfahren hinzu:  
     
   ```cs
   // Open the XML from the Page Contents part.
@@ -505,11 +505,11 @@ Verwenden Sie das folgende Verfahren, um eine **PackagePart** als XML-Dokument i
 ## <a name="select-and-change-xml-data-in-a-package-part"></a>Auswählen und Ändern von XML-Daten in einem Paketteil
 <a name="vis15_ManipulateFF_ChangeXML"> </a>
 
-Nachdem Sie einen Dokumentteil in einem **XDocument** -Objekt geladen haben, können Sie LINQ wählen Sie XML-Elemente und das XML-Dokument zu ändern. Sie können XML-Daten ändern, hinzufügen oder Entfernen von Daten und speichern Sie das XML-Dokument in den Dokumentteil zurück. 
+Nachdem Sie ein Dokumentteil in ein **XDocument**-Objekt geladen haben, können Sie LINQ zum Auswählen von XML-Elementen und zum Vornehmen von Änderungen an dem XML-Dokument verwenden. Sie können XML-Daten ändern, hinzufügen oder entfernen und dann das XML-Dokument wieder in dem Dokumentteil speichern. 
   
 Die am häufigsten verwendete Aufgabe zum Bearbeiten von der Visio-Dateiformat entspricht dem bestimmten XML-Elemente oder Sammlungen von Elementen im Dokument auswählen. Der **System.Xml.Linq** -Namespace enthält die [XElement](https://msdn.microsoft.com/library/System.Xml.Linq.XElement.aspx) -Klasse, die XML-Elements darstellt. **XElement** -Klasse erhalten Sie Zugriff auf die Daten, die in der Visio-Datei auf einer Ebene Differenzierte Sicherung von einzelnen **Shape** -Elementen zu **ValidationRule** -Elemente (als Beispiele) enthalten sind. 
   
-Verwenden Sie den folgenden Code, die **Form** -Elemente aus ein **XDocument-Objekt** (mit einer Seite Inhaltsverzeichnis-Webpart) auszuwählen, und klicken Sie dann auf ein bestimmtes **Shape** -Element auswählen. 
+Verwenden Sie den folgenden Code, um die **Shape**-Elemente aus einem **XDocument** (mit einem Seiteninhaltsteil) und dann ein bestimmtes **Shape**-Element auszuwählen. 
   
 ### <a name="to-select-a-specific-element-in-a-package-part"></a>So wählen Sie ein bestimmtes Element in einem Paketteil aus
 
@@ -580,7 +580,7 @@ Verwenden Sie den folgenden Code, die **Form** -Elemente aus ein **XDocument-Obj
   
   ```
 
-3. Fügen Sie den folgenden Code auf den Block **verwenden** in der **Main** -Methode der **Programm** -Klasse (die **Using** -Block mit der **Main** -Methode in **Module1** in Visual Basic), unter dem Code aus der vorherigen Prozedur. 
+3. Fügen Sie den folgenden Code zum **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) unter dem Code aus dem vorherigen Verfahren hinzu:  
     
   ```cs
   // Get all of the shapes from the page by getting
@@ -608,7 +608,7 @@ Verwenden Sie den folgenden Code, die **Form** -Elemente aus ein **XDocument-Obj
 
 Nachdem Sie einen Verweis auf ein **XElement** -Objekt enthaltenen **XDocument** -Objekt gelangt sind, können Sie wie alle anderen XML-Daten zu bearbeiten und somit ändern Sie die Daten, die in der Visio-Datei enthalten sind. Beispielsweise wird eine Form Text enthält, wenn es in Visio geöffnet wird, das entsprechende Element **Shape** mindestens ein **Text** -Element enthalten. Wenn Sie den Wert dieses Elements **Text** zu ändern, wird der Text des Shapes geändert, wenn die Datei in Visio angezeigt wird. 
   
-Fügen Sie den folgenden Code auf den Block **verwenden** in der **Main** -Methode der **Programm** -Klasse ( **Using** -Block der **Main** -Methode in **Module1** in Visual Basic), um den Text in der Form Start-/End aus "Beginnen Sie mit dem Prozess" ändern Klicken Sie auf "Start-Prozess". 
+Fügen Sie den folgenden Code zu dem **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) hinzu, um den Text in dem Anfangs-/Ende-Shape von „Prozess beginnen“ in „Prozess anfangen“ zu ändern. 
   
 ```cs
 // Query the XML for the shape to get the Text element, and
@@ -685,7 +685,7 @@ Verwenden Sie das folgende Verfahren, um die XML-Daten aus dem Visio-Zeichenblat
   End Sub
   ```
 
-2. Fügen Sie den folgenden Code auf den Block **verwenden** in der **Main** -Methode der **Programm** -Klasse (die **Using** -Block mit der **Main** -Methode in **Module1** in Visual Basic), unter dem Code aus der vorherigen Prozedur. 
+2. Fügen Sie den folgenden Code zum **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) unter dem Code aus dem vorherigen Verfahren hinzu:  
     
   ```cs
   // Save the XML back to the Page Contents part.
@@ -944,7 +944,7 @@ Verwenden Sie den folgenden Code, um den Wert der Zelle **PinY** des Shapes Star
   End Function
   ```
 
-3. Ersetzen Sie den Code aus dem vorherigen Beispiel in den **using** -Block in der **Main** -Methode der **Programm** -Klasse (die **Using** -Block mit der **Main** -Methode in **Module1** in Visual Basic), durch den folgenden Code ein. 
+3. Ersetzen Sie den Code aus dem vorherigen Beispiel im **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) durch den folgenden Code:  
     
   ```cs
   // Change the shape's horizontal position on the page 
@@ -980,7 +980,7 @@ Verwenden Sie den folgenden Code, um den Wert der Zelle **PinY** des Shapes Star
     
 5. Öffnen Sie die Visio-Package.vsdx-Datei in Visio 2013. 
     
-Das Start-/End-Shape sollte jetzt 2 Zoll vom unteren Rand der Zeichnung. Der Verbinder zwischen dem Start-/End-Shape und den Prozess-Shape sollte umgeleitet haben, um die Änderung im Layout zu unterstützen. Wenn die **RecalcDocument** -Eigenschaft nicht in der Datei wurden, die Position der Form würde geändert wurde, aber würde der Verbindung nicht an die neue Position der Form umgeleitet haben. 
+Das Anfangs-/Ende-Shape sollte sich nun 5 cm vom unteren Rand der Zeichnung befinden. Der Verbinder zwischen dem Anfangs-/Ende-Shape und dem Prozess-Shape sollte so umgeleitet worden sein, dass die Änderung im Layout berücksichtigt wird. Wenn die **RecalcDocument**-Eigenschaft nicht zu der Datei hinzugefügt worden wäre, wäre die Shape-Position geändert worden, aber der Verbinder wäre nicht an die neue Position des Shapes umgeleitet worden. 
   
 ## <a name="add-a-new-package-part-to-a-package"></a>Hinzufügen eines neuen Paketteils zu einem Paket
 <a name="vis15_ManipulateFF_AddNewPart"> </a>
@@ -989,11 +989,11 @@ Eines der am häufigsten verwendeten Szenarien zum Ändern eines Pakets Datei wi
   
 Das Verfahren zum Hinzufügen eines neuen Teils zu dem Paket ist einfach:  
   
-1. Erstellen Sie das XML-Dokument mit den Daten, für die **PackagePart**. Sie möchten besonders auf die XML-Namespaces Zahlen, die das Schema für den bestimmten Typ des XML-Dokuments zu steuern, die Sie erstellen.
+1. Sie erstellen das XML-Dokument mit den Daten für **PackagePart**. Sie müssen besonders auf die XML-Namespaces Acht geben, die das Schema für den bestimmten Typ des XML-Dokuments festlegen, den Sie erstellen.
     
-2. Sie erstellen eine neue Datei, um den XML-Code enthalten, und speichern Sie die Datei an einen Speicherort im **Paket**.
+2. Sie erstellen eine neue Datei für die XML-Daten und speichern die Datei an einem Speicherort in **Package**.
     
-3. Erstellen Sie die erforderlichen Beziehungen zwischen der neuen **PackagePart** und das **Paket** oder sonstigen Objekte, **PackagePart** . 
+3. Sie erstellen die erforderlichen Beziehungen zwischen dem neuen **PackagePart** und **Package** oder anderen **PackagePart**-Objekten. 
     
 4. Sie aktualisieren alle vorhandenen Teile, die auf das neue Teil verweisen müssen. Wenn Sie beispielsweise ein neues Seiteninhaltsteil (eine neue Seite) zu der Datei hinzufügen, müssen Sie auch das Seitenindexteil (/visio/pages/pages.xml-Datei) aktualisieren, um die richtigen Informationen zu der neuen Seite einzuschließen.
     
@@ -1128,7 +1128,7 @@ Verwenden Sie das folgende Verfahren, um eine neue Komponente der Menüband-Erwe
   End Sub
   ```
 
-3. Ersetzen Sie der Code in die **Verwendung** in der **Main** -Methode der **Programm** -Klasse (die **Using** -Block mit der **Main** -Methode in **Module1** in Visual Basic), blockieren durch den folgenden Code. 
+3. Ersetzen Sie den gesamten Code im **using**-Block in der **Main**-Methode der **Program**-Klasse (der **Using**-Block der **Main**-Methode in **Module1** in Visual Basic) durch den folgenden Code:  
     
   ```cs
   // Create a new Ribbon Extensibility part and add it to the file.

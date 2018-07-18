@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoMonthsBusy-Eigenschaft
+title: PidTagScheduleInfoMonthsBusy (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795105"
 ---
-# <a name="pidtagscheduleinfomonthsbusy-canonical-property"></a>Kanonische PidTagScheduleInfoMonthsBusy-Eigenschaft
+# <a name="pidtagscheduleinfomonthsbusy-canonical-property"></a>PidTagScheduleInfoMonthsBusy (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Enthält die Monate, für die Frei/Gebucht-Daten vom Typ beschäftigt in der Nac
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format, Berechnung und Einschränkungen dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)), aber finden Sie unter Termine, die auf das zugehörige Calendar-Objekt gekennzeichnet sind.
   

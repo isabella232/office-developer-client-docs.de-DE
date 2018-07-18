@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreUnicodeMask-Eigenschaft
+title: PidTagStoreUnicodeMask (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795223"
 ---
-# <a name="pidtagstoreunicodemask-canonical-property"></a>Kanonische PidTagStoreUnicodeMask-Eigenschaft
+# <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags, die Clientanwendungen abgefragt werden sollen,
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Funktionen des einen Nachrichtenspeicher für Clientanwendungen, Planen sie eine Nachricht senden. Die Kennzeichen erleichtern Entscheidungen durch einen Client oder einem anderen Speicher, z. B., ob **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) oder nur **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) gesendet wird. Ein Client sollten diese Eigenschaft festlegen. Ein Versuch gibt **MAPI_E_COMPUTED**zurück. 
   

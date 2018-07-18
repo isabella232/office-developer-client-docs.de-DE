@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797989"
 ---
-# <a name="setatrefeval-function"></a>SETATREFEVAL-Funktion
+# <a name="setatrefeval-function"></a>SETATREFEVAL Function
 
 In der _Set_expression_ -Parameter der SETATREF-Funktion verwendet, um anzugeben, dass _Set_expression_ vor dem Zuweisen zum _Reference_ -Parameter in SETATREF ausgewertet werden soll. 
   
@@ -30,12 +30,12 @@ SETATREFEVAL (** *Ausdr* **)
 |:-----|:-----|:-----|:-----|
 | _expr_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Ein Ausdruck, der ausgewertet wird, wenn die SETATREF-Funktion _Set_expression_ in eine andere Zelle umleitet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Zuweisen des *Set_expression* -Parameters der SETATREF-Funktion zu einer referenzierten Zelle wird *Set_expression* von Microsoft Visio eine Standard auf die Zelle geschrieben. Wenn ein Teil von *Set_expression* -Parameters durch die SETATREFEVAL-Funktion umbrochen wird, Visio wertet den Ausdruck und ersetzt die SETATREFEVAL-Funktion durch das Ergebnis vor dem Auflösen des SETATREF-Ausdrucks. 
   
 ## <a name="example"></a>Beispiel
 
-Ein Beispiel finden Sie unter der [SETATREF](setatref-function.md) -Funktion. 
+Ein Beispiel finden Sie unter [SETATREF](setatref-function.md)-Funktion. 
   
 

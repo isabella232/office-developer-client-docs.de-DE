@@ -64,7 +64,7 @@ S_OK
   
 > Die Anlage wurde gelöscht.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::DeleteAttach** -Methode löscht eine Anlage in einer Nachricht. 
   

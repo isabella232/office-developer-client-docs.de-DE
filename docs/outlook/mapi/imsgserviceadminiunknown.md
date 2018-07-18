@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792643"
 ---
-# <a name="imsgserviceadmin--iunknown"></a>IMsgServiceAdmin: IUnknown
+# <a name="imsgserviceadmin--iunknown"></a>IMsgServiceAdmin : IUnknown
 
   
   
@@ -53,7 +53,7 @@ ms.locfileid: "19792643"
 |[SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md) <br/> |Legt eine Message Service hat der Hersteller der primäre Identität für das Profil sein.  <br/> |
 |[GetProviderTable](imsgserviceadmin-getprovidertable.md) <br/> |Bietet Zugriff auf die Tabelle Dienstanbieter, eine Liste der Dienstanbieter im Profil.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Implementierung kann einen Zeiger auf eine **IMsgServiceAdmin** -Schnittstelle auf zwei Arten erhalten: durch Aufrufen der [IMAPISession::AdminServices](imapisession-adminservices.md) -Methode oder durch Aufrufen der [IProfAdmin::AdminServices](iprofadmin-adminservices.md) -Methode. Für Clients hauptsächlich Profilkonfiguration ist **IProfAdmin::AdminServices** die bevorzugte Methode zum Abrufen der **IMsgServiceAdmin** -Schnittstelle, weil es nicht auf den Anbieter für die MAPI-Sitzung anmelden ist. Benötigt ein Client die Möglichkeit, das aktive Profil ändern, sollte **IMAPISession::AdminServices** aufgerufen werden, wenn den Mauszeiger **IMsgServiceAdmin** erhalten möchten. Beachten Sie, dass zwar MAPI nicht mit einem Profil zulässt, die zu löschenden verwendet wird, keine Sicherheitsmaßnahmen werden, um zu verhindern, dass einen Client die Message-Dienste im Profil entfernen. 
   

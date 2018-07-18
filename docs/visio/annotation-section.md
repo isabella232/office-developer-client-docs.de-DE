@@ -23,11 +23,11 @@ Enthält Informationen zu Kommentaren, die in eine Dokumentseite eingefügt wurd
 > [!NOTE]
 > In diesem Abschnitt wird für Kommentare zur Überwachung nur, wenn eine VSD-Datei in Microsoft Visio 2013 öffnen oder eine vsdx-Datei im VSD-Format speichern. Es wird nicht zum Nachverfolgen von Kommentaren in neuen vsdx-Dokumenten in Visio 2013 verwendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Abschnitt **Annotation** des ShapeSheets einer Seite enthält eine Zeile für jeden Kommentar zu einer Seite in der Zeichnung hinzugefügt, ob es sich um ein ursprünglichen Zeichenblatt oder ein Markup Überlagerung Seite (eine Seite mit Markup, das der Zeichnung durch einen Bearbeiter hinzugefügt wurde). Informationen über Markup, das per Freihand oder mit anderen Shapes anstelle von Kommentaren hinzugefügt wurde, ist nicht in den Abschnitt " **Annotation** " enthalten. 
   
-Um ShapeSheet für eine Seite angezeigt werden soll, stellen Sie sicher, dass nichts auf der Seite ausgewählt ist, mit der rechten Maustaste in der Seite, und klicken Sie auf **ShapeSheet anzeigen**.
+Wenn ein ShapeSheet für eine Seite angezeigt werden soll, dürfen keine Elemente der Seite ausgewählt sein. Klicken Sie mit der rechten Maustaste auf die Seite, und klicken Sie dann auf die Option **ShapeSheet anzeigen**.
   
 Informationen über bestimmte Bearbeiter finden Sie im Abschnitt **Reviewer** des ShapeSheet im Dokument. 
   

@@ -18,7 +18,7 @@ ms.locfileid: "19796386"
 
 Zeigt die zusätzliche Effekte auf die Form, einschließlich Reflektion, Leuchten und weiche Kanten Effekte angewendet. In diesem Abschnitt enthalten auch die Werte für eine Skizze Auswirkung.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können die Reflektion, Leuchten und weiche Kanten Effekte im Dialogfeld **Shape formatieren** festlegen (**Home** > **Formenarten** > **Effekte**). Ein Effekt Skizze kann auf ein Shape angewendet werden, mithilfe eines der Designs Skizze (**Design** > **Designs** > **Effekte**) oder durch Ändern der Werte in den entsprechenden ShapeSheet Zellen.
   

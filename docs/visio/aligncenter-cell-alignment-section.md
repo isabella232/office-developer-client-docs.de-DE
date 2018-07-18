@@ -22,13 +22,13 @@ Legt die horizontale Position einer vertikalen Führung (oder eines Führungspun
   
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle AlignCenter nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle AlignCenter aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | AlignCenter  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle AlignCenter aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle AlignCenter aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

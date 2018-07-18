@@ -1,5 +1,5 @@
 ---
-title: Synchronisieren von Freunde und Aktivitäten
+title: Synchronisieren von Freunden und Aktivitäten
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796088"
 ---
-# <a name="synchronizing-friends-and-activities"></a>Synchronisieren von Freunde und Aktivitäten
+# <a name="synchronizing-friends-and-activities"></a>Synchronisieren von Freunden und Aktivitäten
 
 Outlook Social Connector (OSC) unterstützt die Anzeige von Informationen aus einem sozialen Netzwerk zu einer Person auf der Visitenkarte oder im Bereich Personen Outlook. SharePoint Server, SharePoint-Arbeitsbereich Lync-Clients und alle Office-Clientanwendungen, die Anwesenheitsinformationen unterstützen-Unterstützung der Visitenkarte.
   

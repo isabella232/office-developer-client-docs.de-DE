@@ -97,7 +97,7 @@ Keine.
 |Qualität  <br/> |XSD:unsignedByte  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedByte.  <br/> |
 |Durchgestrichen  <br/> |XSD:unsignedByte  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedByte.  <br/> |
 |Unterstrichen  <br/> |XSD:unsignedByte  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedByte.  <br/> |
-|Gewicht  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs xsd: int.  <br/> |
+|Weight  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs xsd: int.  <br/> |
 |Breite  <br/> |XSD: int  <br/> |Optional  <br/> ||Werte des Typs xsd: int.  <br/> |
    
 

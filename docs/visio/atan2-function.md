@@ -28,10 +28,10 @@ ATAN2 (** *y* **, ** *X* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _y_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die _y_-Wert des Punkts.  <br/> |
-| _x_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die _X_-Wert des Punkts.  <br/> |
+| _y_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die _y_-Wert des Punkts.  <br/> |
+| _x_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die _X_-Wert des Punkts.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Arkustangens ist der Winkel gegen den Uhrzeigersinn gemessen, aus der positiven *X* -Achse zu einer Zeile, die den Ursprung (0,0) und den durch die *x-* und *y* dargestellten Punkt überschneidet. In Microsoft Visio gibt ATAN2(0,0) den Wert 0 zurück. Um das Ergebnis von ATAN2 in einem anderen Winkelmaß zu erzwingen, verwenden Sie die Funktionen DEG oder RAD. 
   

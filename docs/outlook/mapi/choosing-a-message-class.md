@@ -55,5 +55,5 @@ Weitere Informationen finden Sie unter [Installieren eines Formulars in eine Bib
 
 
 
-[Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+[Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

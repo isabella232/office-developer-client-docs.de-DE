@@ -33,9 +33,9 @@ FORMAT (** *Ausdruck* **, "** *Formatierungsangabe* **")
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. Die _Formatierungsangabe_ muss für den Typ des Ausdrucks sein. Weitere Informationen zu Formatierungsangaben angeben finden Sie unter [Informationen zu Formatierungsangaben](about-format-pictures.md).
   

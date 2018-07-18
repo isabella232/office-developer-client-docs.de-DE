@@ -68,7 +68,7 @@ S_OK
   
 > Die Benachrichtigungen wurden erfolgreich generiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::Notify** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter anrufen **Benachrichtigen** , um anzufordern, dass MAPI generieren eine Benachrichtigung für eine Advise-Empfänger, die für die Benachrichtigung über die **IMAPISupport::Subscribe** -Methode zuvor registriert hat. 
   
@@ -95,6 +95,6 @@ Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event No
 - [NOTIFCALLBACK](notifcallback.md) 
 - [Benachrichtigung](notification.md)  
 - [NOTIFKEY](notifkey.md)  
-- [Kanonische PidTagRecordKey-Eigenschaft](pidtagrecordkey-canonical-property.md)  
+- [PidTagRecordKey (kanonische Eigenschaft)](pidtagrecordkey-canonical-property.md)  
 - [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

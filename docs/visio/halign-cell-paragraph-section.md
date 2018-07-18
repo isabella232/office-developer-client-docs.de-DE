@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797139"
 ---
-# <a name="halign-cell-paragraph-section"></a>HAlign Cell (Paragraph Section)
+# <a name="halign-cell-paragraph-section"></a>Zelle "HAlign" (Abschnitt "Paragraph")
 
 Definiert die horizontale Ausrichtung des Texts im Textblock des Shapes.
   
@@ -34,13 +34,13 @@ Beim Blocksatz wird Platz zwischen den Wörtern in jeder Zeile (nicht in der let
   
 Bei Blocksatz erzwingen wird jede Zeile im Absatz ausgerichtet, einschließlich der letzten Zeile.
   
-Wenn Sie einen Verweis auf die Zelle HAlign nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle HAlign aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Para.HorzAlign [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle HAlign aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle HAlign aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

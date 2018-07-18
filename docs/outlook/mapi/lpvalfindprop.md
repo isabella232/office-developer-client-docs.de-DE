@@ -55,7 +55,7 @@ LPSPropValue LpValFindProp(
 
 Die **LpValFindProp** -Funktion gibt eine **SPropValue** -Struktur, die die Eigenschaft, die dem input-Eigenschaftentag übereinstimmt definiert, oder NULL, wenn keine Übereinstimmung vorliegt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **LpValFindProp** -Funktion ist identisch mit **PpropFindProp**.
   

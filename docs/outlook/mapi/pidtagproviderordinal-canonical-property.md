@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderOrdinal-Eigenschaft
+title: PidTagProviderOrdinal (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794843"
 ---
-# <a name="pidtagproviderordinal-canonical-property"></a>Kanonische PidTagProviderOrdinal-Eigenschaft
+# <a name="pidtagproviderordinal-canonical-property"></a>PidTagProviderOrdinal (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Den nullbasierten Index des Dienstanbieters Position in der Provider-Tabelle ent
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von MAPI berechnet.
   

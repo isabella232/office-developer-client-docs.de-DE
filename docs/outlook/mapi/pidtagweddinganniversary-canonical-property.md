@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagWeddingAnniversary-Eigenschaft
+title: PidTagWeddingAnniversary (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795283"
 ---
-# <a name="pidtagweddinganniversary-canonical-property"></a>Kanonische PidTagWeddingAnniversary-Eigenschaft
+# <a name="pidtagweddinganniversary-canonical-property"></a>PidTagWeddingAnniversary (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das Datum des Hochzeitstag des Benutzers an.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird durch den Benutzer oder die Organisation des Benutzers definiert.
   

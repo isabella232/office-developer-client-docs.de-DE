@@ -22,15 +22,15 @@ Legt den Standardhyperlink für ein Shape oder eine Seite fest. Setzen Sie den W
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Standardhyperlink auch festlegen, indem ein Shape auswählen, Sie auf der Registerkarte **Einfügen** auf **Hyperlink** klicken, einen Hyperlink auswählen und anschließend auf **Standard**. Der Standardhyperlink wird in Fettschrift angezeigt.
+Sie können den Standardhyperlink auch festlegen, indem Sie ein Shape auswählen, auf der Registerkarte **Einfügen** auf **Hyperlink** klicken, einen Hyperlink auswählen und anschließend auf **Standard** klicken. Der Standardhyperlink wird fett angezeigt.
   
-Wenn Sie einen Verweis auf die Zelle Default nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Default aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Hyperlink. *Name* . Standard, in dem Hyperlink. *Name* ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Default aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Default aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

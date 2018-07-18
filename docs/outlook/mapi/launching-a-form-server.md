@@ -1,5 +1,5 @@
 ---
-title: Starten eines Formulars-Servers
+title: Starten eines Formularservers
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792896"
 ---
-# <a name="launching-a-form-server"></a>Starten eines Formulars-Servers
+# <a name="launching-a-form-server"></a>Starten eines Formularservers
 
   
   
@@ -51,5 +51,5 @@ Die Reihe von Interaktionen, das auftritt, wenn ein Formular aus dem permanenten
 
 
 
-[Formular Server Interaktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

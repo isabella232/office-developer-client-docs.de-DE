@@ -58,15 +58,15 @@ Enthält die x- oder y-Koordinaten des Endpunkts des eine quadratische Bézier-K
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-|X  <br/> |Die X-Koordinate des Endscheitelpunkts eine quadratische Bézier-Kurve relativ zu der Breite der Form.  <br/> |[RelQuadBezTo Zeile (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md) <br/> |
-|v  <br/> |Die y-Koordinate des Endscheitelpunkts eine quadratische Bézier-Kurve relativ zur Höhe des Shapes.  <br/> |[RelQuadBezTo Zeile (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md) <br/> |
-|A  <br/> |Die X-Koordinate des Steuerelements für die Kurve zeigen relativ zu der Breite des Shapes. ein Punkt auf dem Bogen. Kontrollpunkts ist die beste in der Mitte zwischen dem ersten und letzten Scheitelpunkt des Bogens.  <br/> |[RelQuadBezTo Zeile (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md) <br/> |
-|B  <br/> |Die y-Koordinate des Steuerelements einer Kurve zeigen relativ zur Höhe des Shapes.  <br/> |[RelQuadBezTo Zeile (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md) <br/> |
+|X  <br/> |Die X-Koordinate des Endscheitelpunkts eine quadratische Bézier-Kurve relativ zu der Breite der Form.  <br/> |[RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md) <br/> |
+|v  <br/> |Die y-Koordinate des Endscheitelpunkts eine quadratische Bézier-Kurve relativ zur Höhe des Shapes.  <br/> |[RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md) <br/> |
+|A  <br/> |Die X-Koordinate des Steuerelements für die Kurve zeigen relativ zu der Breite des Shapes. ein Punkt auf dem Bogen. Kontrollpunkts ist die beste in der Mitte zwischen dem ersten und letzten Scheitelpunkt des Bogens.  <br/> |[RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md) <br/> |
+|B  <br/> |Die y-Koordinate des Steuerelements einer Kurve zeigen relativ zur Höhe des Shapes.  <br/> |[RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md) <br/> |
    
 

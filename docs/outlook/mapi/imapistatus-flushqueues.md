@@ -88,7 +88,7 @@ MAPI_E_NO_SUPPORT
   
 > Das Statusobjekt unterstützt keine dieser Vorgang, wie durch die Abwesenheit des STATUS_FLUSH_QUEUES-Flags in den Status des Objekts **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Methode **IMAPIStatus::FlushQueues** fordert an, dass die MAPI-Warteschlange oder eines Transportdienstes sofort alle Nachrichten in der Warteschlange für ausgehende Nachrichten senden oder empfangen alle aus der Warteschlange für eingehende. **FlushQueues** ist nur durch das MAPI-Warteschlange Status-Objekt und von Status-Objekten, die transport-Anbieter Kooperation implementiert. 
   
@@ -108,9 +108,9 @@ Ein Anruf an das MAPI-Warteschlange Status-Objekt ist eine Richtlinie auf alle N
 
 
 
-[Kanonische PidTagResourceMethods-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
   
-[Kanonische PidTagStatusCode-Eigenschaft](pidtagstatuscode-canonical-property.md)
+[PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
   
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

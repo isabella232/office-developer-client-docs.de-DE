@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResponsibility-Eigenschaft
+title: PidTagResponsibility (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794985"
 ---
-# <a name="pidtagresponsibility-canonical-property"></a>Kanonische PidTagResponsibility-Eigenschaft
+# <a name="pidtagresponsibility-canonical-property"></a>PidTagResponsibility (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält TRUE, wenn einige Adressbuchhierarchie bereits Verantwortung zur Überm
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die MAPI-Warteschlange eine ausgehende Nachricht zu einem Transportanbieter über [IXPLogon::SubmitMessage](ixplogon-submitmessage.md), stellt wird diese Eigenschaft auf FALSE für alle Empfänger für die die MAPI-Warteschlange, Adressbuchhierarchie verantwortlich und TRUE für alle berücksichtigt andere Empfänger. Der Adressbuchhierarchie sollten alle Empfänger **PR_RESPONSIBILITY** auf FALSE festgelegt werden. Nach dem erfolgreichen Senden oder nicht eindeutig an einen Empfänger senden sollte der Adressbuchhierarchie legen Sie diese Eigenschaft auf true fest, in der Quellnachricht, um anzugeben, dass er die Verantwortung für diesen Empfänger angenommen hat. 
   

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796628"
 ---
-# <a name="character-section"></a>Abschnitt "Character"
+# <a name="character-section"></a>Character Section
 
 Zeigt die Formatierungsattribute für den Text des Shapes an. Dazu zählen Schriftart, Farbe, Textformat, Groß- und Kleinschreibung, die Position relativ zur Grundlinie und der Schriftgrad.
   

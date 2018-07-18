@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792455"
 ---
-# <a name="imapitablefindrow"></a>IMAPITable
+# <a name="imapitablefindrow"></a>IMAPITable::FindRow
 
   
   
@@ -83,7 +83,7 @@ MAPI_W_POSITION_CHANGED
   
 > Der Aufruf war erfolgreich, aber die Textmarke, die in den Vorgang verwendet wird nicht mehr in der gleichen Zeile als bei der letzten Verwendung festgelegt; Wenn die Textmarke nicht verwendet wurden, ist es nicht mehr in derselben Position wie bei der es erstellt wurde. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Finden Sie unter [Verwendung von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable** -Methode sucht nach der ersten Zeile in der Tabelle auf eine Gruppe von in der auf das durch den Parameter _LpRestriction_ **SRestriction** -Struktur beschriebenen Suchkriterien erfüllen. 
   
@@ -127,7 +127,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SRestriction](srestriction.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

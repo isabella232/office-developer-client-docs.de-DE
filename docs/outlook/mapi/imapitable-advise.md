@@ -61,7 +61,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Tabelle-Implementierung unterstützt keine Änderungen auf die Zeilen und Spalten, oder unterstützt keine Benachrichtigung.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **IMAPITable::Advise** -Methode, um ein Table-Objekt im Anbieter für Benachrichtigung Rückrufe implementiert registrieren. Bei eine Änderung an das Table-Objekt, überprüft der Anbieter finden Sie unter welche Ereignis Maskenbit im _UlEventMask_ -Parameter festgelegt wurde, und daher, welche Art der Änderung. Wenn ein bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfängerobjekt durch den Parameter _LpAdviseSink_ Sie das Ereignis melden angegeben. Daten, die in der Benachrichtigungsstruktur der **OnNotify** Routine übergeben wird das Ereignis beschrieben. 
   
@@ -95,7 +95,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

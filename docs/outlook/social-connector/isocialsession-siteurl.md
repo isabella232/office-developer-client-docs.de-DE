@@ -29,5 +29,5 @@ Eine Zeichenfolge, die eine Website-URL für soziale Netzwerke darstellt.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

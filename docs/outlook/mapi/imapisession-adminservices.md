@@ -66,7 +66,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
   
 [IProfAdmin::AdminServices](iprofadmin-adminservices.md)
   

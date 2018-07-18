@@ -99,7 +99,7 @@ MAPI_E_VERSION
   
 > Die SPI-Version von MAPI verwendet wird, ist nicht kompatibel mit der SPI, die von diesem Anbieter verwendet wird.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-aufrufen, die Eintrags-Funktion **MSProviderInit** einen Anbieter für anmelden nach einer Clientanmeldung nicht initialisiert werden. 
   
@@ -121,7 +121,7 @@ Weitere Informationen über das Schreiben von **MSProviderInit**finden Sie unter
 
 [ABProviderInit](abproviderinit.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
   
 [XPProviderInit](xpproviderinit.md)
 

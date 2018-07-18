@@ -29,7 +29,7 @@ _personsCollection_
   
 > [out] Eine XML-Zeichenfolge, die eine Reihe von Freunde der Person darstellt, und gemäß Definition im XML-Schema für die Erweiterbarkeit des Outlook Social Connector (OSC)-Anbieter mit der Definition des **Freunde** entspricht. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die OSC-Aufrufe **GetFriendsAndColleagues** , wenn der OSC-Anbieter unterstützt zwischengespeichert oder Hybrid Synchronisierung von Freunde im sozialen Netzwerk. Wenn die OSC zunächst die **GetFriendsAndColleagues** -Methode für den Outlook-Benutzer aufruft, der für das soziale Netzwerk **GetFriendsAndColleagues** angemeldet ist, gibt eine XML-Zeichenfolge, die Freunde des angemeldeten Benutzers im sozialen Netzwerk darstellt zurück. Die XML-Zeichenfolge die **Freunde** XML-Schemadefinition entspricht und gibt ein **Person** -Element (das auch die OSC-Anbieter-Schemadefinition entspricht) für jeden Friend. 
   
@@ -43,6 +43,6 @@ Jedoch, wenn der ausgewählte Outlook-Benutzer keine der gleichen SMTP-Adresse e
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 - [Abrufen von Informationen von Freunden](getting-friends-information.md)
 

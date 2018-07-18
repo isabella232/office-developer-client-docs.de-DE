@@ -1,5 +1,5 @@
 ---
-title: Testen der Freunde
+title: Testen von Freunden
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796104"
 ---
-# <a name="testing-friends"></a>Testen der Freunde
+# <a name="testing-friends"></a>Testen von Freunden
 
 In diesem Thema wird beschrieben, Tests und Szenarien, um sicherzustellen, dass der Anbieter Outlook Social Connector (OSC) entsprechend Daten des Freunde und nicht-Freunde, zurückgibt, sofern zutreffend, je nach den vom Anbieter unterstützten Synchronisierungsmodus.
 

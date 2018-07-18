@@ -60,7 +60,7 @@ S_OK
   
 > Die Eintrags-ID wurde erfolgreich umbrochen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::WrapStoreEntryID** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter verwenden **WrapStoreEntryID** MAPI einen Eintrag Bezeichner für einen Nachrichtenspeicher zu erstellen, der den Speicher interne Eintrags-ID umbrochen wird. 
   

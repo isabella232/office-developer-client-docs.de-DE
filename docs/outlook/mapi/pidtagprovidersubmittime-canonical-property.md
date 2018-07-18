@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderSubmitTime-Eigenschaft
+title: PidTagProviderSubmitTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794846"
 ---
-# <a name="pidtagprovidersubmittime-canonical-property"></a>Kanonische PidTagProviderSubmitTime-Eigenschaft
+# <a name="pidtagprovidersubmittime-canonical-property"></a>PidTagProviderSubmitTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, ein Transportdienstes eine Nachricht an die zugrunde
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von der ausgehenden Adressbuchhierarchie zur Zeit festgelegt, die eine Nachricht gesendet wird.
   

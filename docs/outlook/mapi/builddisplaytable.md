@@ -98,7 +98,7 @@ PARAMETER MAPI_UNICODE
 
 Keine
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI verwendet, die auf den _LpAllocateBuffer_, _LpAllocateMore_und _LpFreeBuffer_ für die meisten Zuweisung von virtuellem Speicher und zur Freigabe, insbesondere für die Verwendung von Clientanwendungen Speicher beim Aufruf von Schnittstellen, um Funktionen wie [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPITable::QueryRows](imapitable-queryrows.md). 
   

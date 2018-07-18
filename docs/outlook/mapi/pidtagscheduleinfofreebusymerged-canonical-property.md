@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoFreeBusyMerged-Eigenschaft
+title: PidTagScheduleInfoFreeBusyMerged (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795091"
 ---
-# <a name="pidtagscheduleinfofreebusymerged-canonical-property"></a>Kanonische PidTagScheduleInfoFreeBusyMerged-Eigenschaft
+# <a name="pidtagscheduleinfofreebusymerged-canonical-property"></a>PidTagScheduleInfoFreeBusyMerged (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Zeiten, der Frei/Gebucht-Status festgelegt wird, beschäftigt oder 
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ereignisse vom Typ mit Vorbehalt Frei/Gebucht-Informationen sind nicht in dieser Eigenschaft enthalten. Das Format, Berechnung und die Einschränkungen dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)), aber finden Sie unter Termine, die im zugeordneten Kalender gebucht oder ABWESEND markiert sind.
   

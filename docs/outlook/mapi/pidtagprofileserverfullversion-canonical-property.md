@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProfileServerFullVersion-Eigenschaft
+title: PidTagProfileServerFullVersion (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794819"
 ---
-# <a name="pidtagprofileserverfullversion-canonical-property"></a>Kanonische PidTagProfileServerFullVersion-Eigenschaft
+# <a name="pidtagprofileserverfullversion-canonical-property"></a>PidTagProfileServerFullVersion (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Gibt die vollständige Angaben zu Version und Build über die Microsoft Exchange
 |Der Eigenschaftentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Profil kann eine oder mehrere Konten, die mit einem Exchange-Server verbunden angeben, jedoch müssen die gleichen Exchange-Server hergestellt werden.
   

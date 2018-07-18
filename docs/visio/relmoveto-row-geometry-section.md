@@ -28,7 +28,7 @@ Eine Zeile **RelMoveTo** enthält folgende Zellen.
 |[X](x-cell-geometry-section.md) <br/> |Wenn die **RelMoveTo** Zeile der ersten Zeile im Abschnitt ist, stellt die Zelle X die *X* -Koordinate des ersten Scheitelpunkts eines Shapes relativ zu der Breite der Form. Wenn die Zeile **RelMoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle X die *X* -Koordinate des ersten Scheitelpunkts hinter der Pfadlücke.  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |Wenn die **RelMoveTo** Zeile der ersten Zeile im Abschnitt ist, stellt die Zelle Y die *y* -Koordinate des ersten Scheitelpunkts eines Shapes. Wenn die Zeile **RelMoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle Y die *y* -Koordinate des ersten Scheitelpunkts hinter der Pfadlücke.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Werte in der Zeile **RelMoveTo** entsprechen Werten in einer Zeile [MoveTo](moveto-row-geometry-section.md) , die die Breite und Höhe des Shapes multipliziert werden. Beispiel: eine Zeile **RelMoveTo** , in denen der Wert der Zelle **X** ist "0" und der Wert der Zelle **Y** ist "0,5" konnte mit **MoveTo** -Zeile, in dem der Wert der Zelle **X** die Formel lautet, ersetzt werden "Breite*0" und die Zelle **Y** ist die Formel "Höhe*0,5." 
   

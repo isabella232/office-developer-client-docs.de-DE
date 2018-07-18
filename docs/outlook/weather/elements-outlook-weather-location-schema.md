@@ -19,8 +19,8 @@ ms.locfileid: "19796092"
 
 In diesem Thema werden die Elemente im Outlook Wetter Speicherort XML-Schema.
   
-- [Wetter-element](weather-element-weatherdata-elementoutlook-weather-location-schema.md)
+- [weather-Element](weather-element-weatherdata-elementoutlook-weather-location-schema.md)
     
-- [WeatherData-element](weatherdata-element-outlook-weather-location-schema.md)
+- [weatherdata-Element](weatherdata-element-outlook-weather-location-schema.md)
     
 

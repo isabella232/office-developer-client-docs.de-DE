@@ -98,7 +98,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter ist nicht vom durch das Container erkanntes Format. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIContainer::OpenEntry** -Methode öffnet ein Objekt in der gesamten ein Container und gibt einen Zeiger auf eine Implementierung für weitere Access verwenden. 
   
@@ -112,5 +112,5 @@ Standardmäßig öffnen Dienstanbieter Objekte mit schreibgeschützten Zugriff, 
 
 
 
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 

@@ -69,7 +69,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

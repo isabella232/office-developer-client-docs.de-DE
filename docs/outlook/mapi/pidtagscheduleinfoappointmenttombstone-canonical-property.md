@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoAppointmentTombstone-Eigenschaft
+title: PidTagScheduleInfoAppointmentTombstone (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795083"
 ---
-# <a name="pidtagscheduleinfoappointmenttombstone-canonical-property"></a>Kanonische PidTagScheduleInfoAppointmentTombstone-Eigenschaft
+# <a name="pidtagscheduleinfoappointmenttombstone-canonical-property"></a>PidTagScheduleInfoAppointmentTombstone (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste der Datenblöcke, die Besprechungen darstellen, die abgelehn
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Datenblöcke beginnen mit einer Kopfzeile der 32-Bit-Werte als definiert:
   

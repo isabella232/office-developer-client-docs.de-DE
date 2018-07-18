@@ -20,23 +20,23 @@ ms.locfileid: "19797986"
 
 Bestimmt, wie Sie ein Gruppen-Shape und dessen Mitglieder auswählen.
   
-|**Wert**|**Auswahlmodus**|**Automatisierungskonstante**|
+|**Wert**|**Markierungsmodus**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Nur das Gruppen-Shape auswählen.  <br/> |**visGrpSelModeGroupOnly** <br/> |
 |1  <br/> |Das Gruppen-Shape zuerst auswählen.  <br/> |**visGrpSelModeGroup1st** <br/> |
 |2  <br/> |Mitglieder der Gruppe zuerst auswählen.  <br/> |**visGrpSelModeMembers1st** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diesen Wert auch im Dialogfeld **Verhalten** festlegen (mit das Gruppen-Shape ausgewählt haben, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**und klicken Sie dann auf einen Modus in der Liste **Auswahl** unter **Gruppe Verhalten** ). 
   
-Wenn Sie einen Verweis auf die Zelle SelectMode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle SelectMode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |SelectMode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle SelectMode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle SelectMode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

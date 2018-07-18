@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProcessed-Eigenschaft
+title: PidTagProcessed (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794810"
 ---
-# <a name="pidtagprocessed-canonical-property"></a>Kanonische PidTagProcessed-Eigenschaft
+# <a name="pidtagprocessed-canonical-property"></a>PidTagProcessed (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Auf TRUE festgelegt, wenn die Besprechungsanfrage verarbeitet wurden.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird sichergestellt, dass Besprechungsanfragen einmal verarbeitet. Der Ersteller der Anforderung sollte diese Eigenschaft auf FALSE festgelegt, und der Empfänger sollte es auf TRUE festgelegt, nachdem die Anforderung im Kalender ist.
   

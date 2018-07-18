@@ -91,29 +91,29 @@ Da Sie können Visio 2013 und SharePoint Designer 2013 zum Entwerfen und Erstell
         
 3. **Projektdetailseiten** Bearbeiten Sie oder erstellen Sie die PDPs, die die Workflowphasen verwendet werden soll. Führen Sie beispielsweise die folgenden Schritte aus: 
         
-    1. Wählen Sie auf der Seite servereinstellungen **Projektdetailseiten** aus, und wählen Sie dann die Projektdetailseite **ProjectInformation** aus. 
+    1. Wählen Sie auf der Seite mit den Servereinstellungen **Projektdetailseiten** und dann die Projektdetailseite **ProjectInformation** aus. 
             
-    2. Wählen Sie auf der Registerkarte **Seite** des Menübands in der Gruppe **Bearbeiten** **Seite bearbeiten**.
+    2. Wählen Sie im Menüband auf der Registerkarte **SEITE** in der Gruppe **Bearbeiten****Seite bearbeiten** aus.
             
     3. Wählen Sie den Pfeil nach unten in der oberen rechten des **Grundlegenden Info** -Webparts aus, und wählen Sie dann auf **Webpart bearbeiten**. Oder wählen Sie auf der Registerkarte **Webpart** im Menüband in der Gruppe **Eigenschaften** **-Webpart-Eigenschaften** -Editor-Webpart angezeigt. 
             
-    4. Die **Angezeigte Projektfelder** Abschnitt des Editors Teil (siehe Abbildung 1), wählen Sie **Ändern**.
+    4. Wählen Sie im Abschnitt **Angezeigte Projektfelder** des Bearbeitungs-Webparts (siehe Abbildung 1) **Ändern** aus.
             
     5. Fügen Sie das benutzerdefinierte Feld **Vorschlagskosten** , verschieben Sie diese über das Feld **Besitzer** in der Liste **Ausgewählte Projektfelder** , und klicken Sie dann auf **OK** (siehe Abbildung 1).
       
-    6. Im-Editor-Webpart wählen Sie **OK**und dann in der Gruppe **Bearbeiten** auf der Registerkarte **Seite** des Menübands auf **Bearbeitung beenden** . Abbildung 2 zeigt das benutzerdefinierte Feld **Vorschlagskosten** , das die der Projektinformationen hinzugefügt wird. 
+    6. Wählen Sie im Bearbeitungs-Webpart **OK** und dann im Menüband auf der Registerkarte **SEITE** in der Gruppe **Bearbeiten****Bearbeitung beenden** aus. In Abbildung 2 ist das benutzerdefinierte Feld **Proposal Cost** dargestellt, das der Projektdetailseite "Projektinformationen" hinzugefügt wurde. 
 
     **Abbildung 1. Bearbeiten des Projektfelder-Webparts auf einer Projektdetailseite**
 
     ![Bearbeiten der Felder für die Project-Webpart auf einer Projektdetailseite] (media/pj15_CreateWorkflowSPD_EditPDP.gif "Bearbeiten der Felder für die Project-Webpart auf einer Projektdetailseite")
 
-    **Abbildung 2. Die bearbeitete PDP beinhaltet das benutzerdefinierte Feld Vorschlagskosten**
+    **Abbildung 2. Die bearbeitete Projektdetailseite enthält das benutzerdefinierte Feld "Vorschlagskosten"**
 
     ![Die bearbeitete PDP beinhaltet das Feld Vorschlagskosten] (media/pj15_CreateWorkflowSPD_EditedPDP.gif "Die bearbeitete PDP beinhaltet das Feld Vorschlagskosten")
   
 4. **Workflowstufen** Erstellen Sie die Phasen, die für die einzelnen Phasen des Workflows erforderlich sind. Klicken Sie auf der Seite servereinstellungen wählen Sie **Workflowstufen aus**, und wählen Sie dann auf **Neue WORKFLOWSTUFE**. Abbildung 3 zeigt einen Teil der Seite Workflowstufe hinzufügen.
     
-    **Abbildung 3. Hinzufügen einer Workflowphase in Project Web App**
+    **Abbildung 3. Hinzufügen einer Workflowstufe in Project Web App**
 
     ![Hinzufügen einer Workflowphase in Project Web App] (media/pj15_CreateWorkflowSPD_AddWorkflowStage.gif "Hinzufügen einer Workflowphase in Project Web App")
   
@@ -121,7 +121,7 @@ Da Sie können Visio 2013 und SharePoint Designer 2013 zum Entwerfen und Erstell
     
     In Abbildung 4 sind die vier Stufen abgebildet, die auf der Seite "Workflowstufen" durchlaufen werden.
     
-    **In Tabelle 1. Phasen für das verzweigungsworkflow**
+    **Tabelle 2. Stufen des Verzweigungsworkflows**
 
     |Name|Beschreibung|Beschreibung für Einreichung|Phase|Sichtbare PDPs|Benutzerdefinierte Felder|
     |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -130,7 +130,7 @@ Da Sie können Visio 2013 und SharePoint Designer 2013 zum Entwerfen und Erstell
     |Automatische Ablehnung  <br/> |Der Vorschlag wird auf Grundlage der angegebenen Informationen abgelehnt.  <br/> | <br/> |Erstellen  <br/> |Projektinformationen  <br/> |Vorschlagskosten (schreibgeschützt)  <br/> |
     |Ausführung  <br/> |Der Vorschlag wurde angenommen und ist bereit für das Projektmanagement.  <br/> | <br/> |Verwalten  <br/> |Projektinformationen  <br/> Projektdetails  <br/> |Vorschlagskosten (schreibgeschützt)  <br/> |
    
-    **Abbildung 4. Liste der Workflowphasen in Project Web App**
+    **Abbildung 4. Liste der Workflowstufen in Project Web App**
 
     ![Liste der Workflowphasen in Project Web App] (media/pj15_CreateWorkflowSPD_WorkflowStages.gif "Liste der Workflowphasen in Project Web App")
   
@@ -140,19 +140,19 @@ Erstellen Sie den Workflow in SharePoint Designer 2013 mithilfe deklarative Anwe
     
 1. Wählen Sie in der Backstage-Ansicht von SharePoint Designer 2013 **Website öffnen**. Öffnen Sie beispielsweise `http://ServerName/pwa`. Wählen Sie im **Navigationsbereich** **Workflows**aus. Wählen Sie dann auf der Registerkarte **WORKFLOWS** des Menübands in der Gruppe **neu** **Website-Workflow**. In diesem Beispiel nennen Sie den Workflow Verzweigung Workflow. Stellen Sie sicher, dass **SharePoint 2013-Workflow - Project Server** in der Dropdownliste **Plattformtyp** aktiviert ist (siehe Abbildung 5). 
     
-    **Abbildung 5. Erstellen eines Project Server-Website-Workflows**
+    **Abbildung 5. Erstellen eines Project Server-Websiteworkflows**
 
     ![Erstellen eines Project Server-Website-Workflows] (media/pj15_CreateWorkflowSPD_CreateSiteWorkflow.gif "Erstellen eines Project Server-Website-Workflows")
   
-2. Wählen Sie auf der Registerkarte **Workflow Verzweigen** . Wählen Sie dann auf der Registerkarte **WORKFLOW** , der dem Menüband in der Gruppe **Verwalten** in der Dropdown-Liste **Ansichten** **textbasierter Designer**. Zum Anzeigen der Ansicht durch die blinkende Orange Zeile einfügen (siehe Abbildung 6), klicken Sie in der Ansicht.
+2. Wählen Sie die Registerkarte **Verzweigungsworkflow** aus. Wählen Sie dann im Menüband auf der Registerkarte **WORKFLOW** in der Gruppe **Verwalten** in der Dropdownliste **Ansichten****Textbasierter Designer** aus. Klicken Sie in die Ansicht, um die Ansicht mit der blinkenden orangefarbenen Einfügelinie anzuzeigen (siehe Abbildung 6).
     
-    **Abbildung 6. Verwenden der textbasierten Designer-Ansicht für den workflow**
+    **Abbildung 6. Verwenden der Ansicht "Textbasierter Designer" für den Workflow**
 
     ![Verwenden der textbasierten Designer-Ansicht] (media/pj15_CreateWorkflowSPD_TextBasedDesigner.gif "Verwenden der textbasierten Designer-Ansicht")
   
-3. Fügen Sie in der Ansicht **textbasierter Designer** die Phasen, die vom Workflow verwendet. Wählen Sie auf der Registerkarte **WORKFLOW** , der dem Menüband in der Gruppe **Einfügen** in der **Phase** Dropdown-Liste unter **Erstellen**die **Ursprüngliche Vorschlagsdetails**.
+3. Fügen Sie in der Ansicht **Textbasierter Designer** die Stufen hinzu, die im Workflow verwendet werden. Wählen Sie im Menüband auf der Registerkarte **WORKFLOW** in der Gruppe **Einfügen** in der Dropdownliste **Stufe** unter **Erstellen****Ursprüngliche Vorschlagsdetails** aus.
     
-    Platzieren Sie unten orangefarbene Einfügelinie entsprechend der **Stufe: ursprüngliche Vorschlagsdetails** ein, und fügen Sie die anderen Stufen, die vom Workflow verwendet: **Projektdetails**, **Automatische Ablehnung**und **Ausführung** (siehe Abbildung 7). 
+    Platzieren Sie die orangefarbene Einfügelinie entsprechend unterhalb des Felds **Stufe: Ursprüngliche Vorschlagsdetails**, und fügen Sie die anderen Stufen hinzu, die vom Workflow verwendet werden: **Projektdetails**, **Automatische Ablehnung** und **Ausführung** (siehe Abbildung 7). 
     
     **Abbildung 7. Hinzufügen einer Stufe zu einem Workflow in SharePoint Designer**
 
@@ -160,46 +160,46 @@ Erstellen Sie den Workflow in SharePoint Designer 2013 mithilfe deklarative Anwe
   
 4. Fügen Sie in jeder Phase die Workflowschritte und die Workflowlogik hinzu: 
     
-    1. Platzieren Sie die orangefarbene Einfügelinie am Anfang des Textkörpers Phase, in der Phase **Ursprüngliche Vorschlagsdetails** . In der Gruppe **Einfügen** auf dem Menüband **Aktion**wählen, führen Sie einen Bildlauf nach unten zu **Project Web App-Aktionen**, und wählen Sie dann auf **Projektereignis warten**. Wählen Sie **dieses Projektereignis**, und wählen Sie **Ereignis: Wenn ein Projekt eingereicht wird fest** in der Dropdown-Liste. 
+    1. Platzieren Sie in der Phase **Ursprüngliche Vorschlagsdetails** die orangefarbene Einfügelinie über dem Phasentext. Wählen Sie im Menüband in der Gruppe **Einfügen****Aktion** aus, blättern Sie nach unten zu **Project Web App-Aktionen**, und wählen Sie dann **Auf Projektereignis warten** aus. Wählen Sie **Dieses Projektereignis** und dann in der Dropdownliste **Ereignis: Wenn ein Projekt eingereicht wird** aus. 
     
-    2. Fügen Sie im Abschnitt **Übergang zu Stufe** im Freigabefenster **Ursprüngliche Vorschlagsdetails** **Wenn beliebiger Wert gleich Wert ist**. Sie können starten Sie die Anweisung eingeben oder verwenden Sie das **Bedingung** -Steuerelement in der Gruppe **Einfügen** , klicken Sie im Menüband. 
+    2. Fügen Sie im Abschnitt **Übergang in Phase** der Phase **Ursprüngliche Vorschlagsdetails****Wenn ein beliebiger Wert gleich dem Wert ist** ein. Sie können mit der Eingabe der Anweisung beginnen oder auf dem Menüband in der Gruppe **Einfügen** das Steuerelement **Bedingung** verwenden. 
     
-    3. Wählen Sie **das erste Steuerelement** , und wählen Sie dann auf **fx** im Dialogfeld **Workflow-Nachschlagevorgang definieren** angezeigt (siehe Abbildung 8). Wählen Sie in der Dropdownliste **Datenquelle** **Projektdaten**aus. Wählen Sie in der Dropdownliste **Quellenfeld** **Vorschlagskosten**.
+    3. Wählen Sie das erste **value**-Steuerelement und dann **fx** aus, um das Dialogfeld **Workflow-Nachschlagevorgang definieren** anzuzeigen (siehe Abbildung 8). Wählen Sie in der Dropdownliste **Datenquelle****Projektdaten** aus. Wählen Sie in der Dropdownliste **Quellenfeld****Vorschlagskosten** aus.
     
-       **Abbildung 8. Definieren eines Suchwerts im workflow**
+       **Abbildung 8. Definieren eines Nachschlagewerts im Workflow**
 
        ![Definieren eines Suchwerts im workflow] (media/pj15_CreateWorkflowSPD_DefineWorkflowLookup.gif "Definieren eines Suchwerts im workflow")
   
     4. Führen Sie die `If` Anweisung, sodass dieser Folgendes angezeigt wird: **Wenn Project Projektdaten: Vorschlagskosten höher sind als 25000**
     
        > [!NOTE]
-       > Alternativ konnten Sie eine Workflow-Variable erstellen, legen Sie die Variable auf den Wert des benutzerdefinierten Feldes und vergleichen Sie die Variable mit einem Wert. Erstellen Sie beispielsweise aus der Dropdownliste **Lokale Variablen** auf dem Menüband eine Variable mit dem Namen **Gesamtpreis** (keine Leerzeichen) vom Typ **Number**. Klicken Sie im Dialogfeld **Workflow-Nachschlagevorgang definieren** **Workflowvariablen und-Parameter** für die Datenquelle auswählen, und wählen Sie dann **Variable: Gesamtpreis** wie das Feld. Die **If** -Anweisung werden dann: **Wenn Variable: Gesamtpreis ist größer als 25000**
+       > Alternativ könnten Sie eine Workflowvariable erstellen, die Variable auf den benutzerdefinierten Feldwert festlegen und dann die Variable mit einem Wert vergleichen. Erstellen Sie z. B. aus der Dropdownliste **Lokale Variablen** auf dem Menüband eine Variable mit der Bezeichnung **TotalCost** (keine Leerzeichen) des Typs **Number**. Wählen Sie im Dialogfeld **Workflow-Nachschlagevorgang definieren** für die Datenquelle **Workflowvariablen und -parameter** aus, und wählen Sie dann als das Feld **Variable: Gesamtkosten** aus. Die **If**-Anweisung würde dann lauten: **Wenn Variable: Gesamtkosten höher sind als 25000**
   
     5. Platzieren Sie die orangefarbene Einfügelinie innerhalb der `If` verzweigen, und fügen Sie dann mithilfe des **Aktion** -Steuerelements in der Gruppe " **Einfügen** " auf dem Menüband **eine Stufe** . Wählen Sie das **Stufen** Dropdown-Steuerelement, und wählen Sie die Phase der **Automatischen Ablehnung** . 
     
        In ähnlicher Weise in der `Else` verzweigen, **Wechseln Sie zur Projektdetails** -Anweisung einfügen. Abbildung 9 zeigt die abgeschlossene **Ursprüngliche Vorschlagsdetails** Phase. 
     
-       **Abbildung 9. Abgeschlossene Logik für die ursprüngliche Vorschlagsdetails Phase**
+       **Abbildung 9. Fertige Logik für Phase "Ursprüngliche Vorschlagsdetails"**
 
        ![Abgeschlossene Logik für ursprüngliche Vorschlagsdetails] (media/pj15_CreateWorkflowSPD_InitialStageLogic.gif "Abgeschlossene Logik für ursprüngliche Vorschlagsdetails")
   
-    6. In der Phase der **Automatischen Ablehnung** es sei denn, Sie Anhalten des Workflows und einige Daten auf einer Projektdetailseite anzeigen möchten, lassen Sie den ersten Abschnitt leer. Im Abschnitt **Übergang zu Stufe** muss einen Übergang enthalten. Da keine anderen Stufe nach einer Ablehnung vorhanden ist, geben Sie für die Anweisung Gehe zu Ende des Workflows. 
+    6. Lassen Sie in der Phase **Automatische Ablehnung** den ersten Abschnitt leer, es sei denn, Sie möchten den Workflow anhalten und einige Daten auf einer Projektdetailseite anzeigen. Der Abschnitt **Übergang in Phase** muss einen Übergang enthalten. Da auf eine Ablehnung keine weitere Phase folgt, geben Sie als Anweisung Zum Ende des Workflows wechseln ein. 
     
-    7. Fügen Sie in der Stufe ' **Projektdetails** ' navigieren Sie zur Ausführung im Abschnitt **Übergang zu Stufe** . Es sei denn, es zusätzliche Daten sind hinzufügen oder Sie den Workflow anhalten möchten, ist es nicht erforderlich, warten, bis eine gesendete Ereignis. 
+    7. Fügen Sie im Abschnitt **Übergang in Phase** in der Phase **Projektdetails**Zur Ausführung wechseln hinzu. Es ist nicht erforderlich zu warten, bis ein Ereignis übermittelt wurde, es sei denn, es müssen zusätzliche Daten hinzugefügt werden, oder Sie möchten den Workflow anhalten. 
     
-    8. In **der Ausführungsphase** es sei denn, Sie den Workflow anhalten möchten, lassen Sie Abschnitt Aktion Phase leer. Klicken Sie im Abschnitt **Übergang zu Stufe** fügen Sie hinzu, **Wechseln Sie zum Ende des Workflows**.
+    8. Lassen Sie in der Phase **Ausführung** den Abschnitt mit der Phasenaktion leer, es sei denn, Sie möchten den Workflow anhalten. Fügen Sie im Abschnitt **Übergang in Phase****Zum Ende des Workflows wechseln** hinzu.
     
-5. Wählen Sie in der Gruppe **Speichern** auf dem Menüband auf Workflowfehler überprüft (siehe Abbildung 10) **Überprüfen auf Fehler** . Beheben Sie alle Fehler, und wählen Sie dann auf **Speichern**.
+5. Wählen Sie auf dem Menüband in der Gruppe **Speichern****Auf Fehler prüfen** aus, um auf Workflowfehler zu prüfen (siehe Abbildung 10). Beheben Sie alle Fehler, und wählen Sie dann **Speichern** aus.
     
-    **Abbildung 10. Überprüfen den Workflow bei Fehlern in SharePoint Designer**
+    **Abbildung 10. Prüfen des Workflows auf Fehler im SharePoint Designer**
 
     ![Überprüfen der Fehler im workflow] (media/pj15_CreateWorkflowSPD_SPDCheckForErrors.gif "Überprüfen der Fehler im workflow")
   
-6. (Optional) Wählen Sie in der Gruppe **Verwalten** auf dem Menüband in der Dropdown-Menü **Ansichten** **Visual Designer**aus. In Abbildung 11 wird die Ansicht auf 50 % vergrößert.
+6. (Optional) Wählen Sie auf dem Menüband in der Gruppe **Verwalten** im Dropdownmenü **Ansichten****Visual Designer** aus. In Abbildung 11 ist die Ansicht auf 50 % verkleinert.
     
-    Sie können Elemente im Workflow mithilfe des visuellen Designers bearbeiten. Wählen Sie die Bedingung **Wenn beliebiger Wert gleich Wert ist** , wählen Sie das Symbol in der unteren linken Ecke der Bedingung, und wählen Sie dann den **Wert** , der die Bedingungen Vergleich im Dialogfeld **Eigenschaften** anzeigen. 
+    Sie können Elemente im Workflow mit dem Visual Designer bearbeiten. Wählen Sie z. B. die Bedingung **Wenn ein beliebiger Wert gleich dem Wert ist** aus, wählen Sie unten rechts neben der Bedingung das Extras-Symbol aus, und wählen Sie dann **Wert** aus, um die Vergleichsbedingungen im Dialogfeld **Eigenschaften** anzuzeigen. 
     
-    **Abbildung 11. Mithilfe des visuellen Designers für einen workflow**
+    **Abbildung 11. Verwenden des Visual Designer für einen Workflow**
 
     ![Verwenden Sie die Visio-Entwurfsansicht des Workflows] (media/pj15_CreateWorkflowSPD_SwitchView.gif "Verwenden Sie die Visio-Entwurfsansicht des Workflows")
   
@@ -213,61 +213,61 @@ Klicken Sie in Project Web App erstellen Sie eine EPT für den Workflow, und Tes
     
 1. Klicken Sie auf der Seite Einstellungen für PWA wählen Sie **Enterprise-Projekttypen**, und erstellen Sie eine EPT mit dem Namen Verzweigen Testen des Workflows. Deaktivieren Sie das Kontrollkästchen **neue Projekte als SharePoint-Aufgabenlistenprojekte erstellen** , sodass Project Server wird Vollzugriff auf Projekte verwalten, die mithilfe des EPT erstellt werden. Wählen Sie in der Dropdownliste **Website-Workflowzuordnung** **Verzweigungsworkflow** aus, und wählen Sie dann in der Dropdown-Liste **Neue Projektseite** auf der ersten Seite sein, die der Workflow zeigt die **Projektinformationen** PDP aus. 
     
-    **Abbildung 12. Hinzufügen eines EPT für den workflow**
+    **Abbildung 12. Hinzufügen einer EPT für den Workflow**
 
     ![Hinzufügen eines EPT für den workflow] (media/pj15_CreateWorkflowSPD_EPTs.gif "Hinzufügen eines EPT für den workflow")
   
     > [!NOTE]
-    > Ein Wert **Ja** , in der **SharePoint-Aufgabenlistenprojekt** -Spalte in der Tabelle der Enterprise-Projekttypen bezieht sich auf eine EPT, mit dem erstellt eine SharePoint-Aufgabenliste, in dem die Aufgabenliste in Project Web App sichtbar ist, aber SharePoint behält die Kontrolle des Projekts . Weitere Informationen zum Verwalten von Projekten als SharePoint-Aufgabenlisten finden Sie unter [Architektur von Project Server 2013](project-server-2013-architecture.md). 
+    > Ein **Ja**-Wert in der Spalte **SharePoint-Vorgangslistenprojekt** in der Tabelle der Enterprise-Projekttypen bezieht sich auf eine EPT, mit der eine SharePoint-Aufgabenliste erstellt wird, wobei die Aufgabenliste in Project Web App sichtbar ist, SharePoint aber die Kontrolle über das Projekt behält. Weitere Informationen zum Verwalten von Projekten als SharePoint-Aufgabenlisten finden Sie unter [Project Server 2013 architecture](project-server-2013-architecture.md). 
   
 2. Öffnen Sie auf der Seite Projekte in Project Web App, und erstellen Sie ein Projekt mithilfe des neuen EPT (siehe Abbildung 13). Da **Verzweigen Testen des Workflows** **Verzweigungsworkflow**zugeordnet ist, wird unter Kontrolle des Workflows Erstellen eines Projekts gestartet.
     
-    **Abbildung 13. Erstellen eines Projekts mithilfe des Test-Verzweigung Workflow EPT**
+    **Abbildung 13. Erstellen eines Projekts mit der EPT "Verzweigungsworkflow – Test"**
 
     ![Erstellen eines Projekts mithilfe des EPT] (media/pj15_CreateWorkflowSPD_NewProject.gif "Erstellen eines Projekts mithilfe des EPT")
   
 3. Wenn der Workflow die PDP **Projektinformationen** angezeigt wird, fügen Sie die Projektfelder Daten hinzu. Geben Sie beispielsweise den **Vorschlagskosten** Wert 30000. Die englischen Version von Project Server ändert das Feld, um 30.000 $ anzeigen (siehe Abbildung 14).
     
-    **Abbildung 14. Verwenden der bearbeiteten Projektinformationen**
+    **Abbildung 14. Verwenden der bearbeiteten Projektdetailseite "Projektinformationen"**
 
     ![Verwenden der bearbeiteten Projektinformationen] (media/pj15_CreateWorkflowSPD_NewProjectStage1.gif "Verwenden der bearbeiteten Projektinformationen")
   
-4. Wählen Sie auf der Registerkarte **Projekt** im Menüband in der Gruppe **Projekt** **zu speichern**. Projektserver die Daten in die PDP dem Projekt hinzugefügt, und zeigt dann die Seite "Workflowstatus" (siehe Abbildung 15). Um die vollständige Beschreibung der ursprüngliche Vorschlagsdetails Stufe im Workflow-Status Diagramm angezeigt wird, bewegen Sie den Mauszeiger über die Phase im Workflow Visualisierung Diagramm.
+4. Wählen Sie im Menüband auf der Registerkarte **PROJEKT** in der Gruppe **Projekt****Speichern** aus. Project Server fügt dem Projekt die Daten auf der Projektdetailseite hinzu und zeigt dann die Seite "Workflowstatus" an (siehe Abbildung 15). Um die vollständige Beschreibung der Phase "Ursprüngliche Vorschlagsdetails" im Workflowstatusdiagramm anzuzeigen, bewegen Sie den Mauszeiger im Workflowvisualisierungsdiagramm über die Phase.
     
-    Das Raster **Alle Workflowstufen** verwendet einen grünen Pfeil angezeigt wird, dass die ursprüngliche Vorschlagsdetails Phase Eingabe wartet. Dies ist, da die Submit-Ereignis in der ursprüngliche Vorschlagsdetails Phase der Workflow wartet. Wenn der Workflow nicht für eine Submit-Ereignis warten, können Sie in der Gruppe **Seite** , um zur nächsten PDP gelangen **nächsten** auswählen. 
+    Im Raster **Alle Workflowphasen** wird mithilfe eines grünen Pfeils angegeben, dass für die Phase "Ursprüngliche Vorschlagsdetails" eine Benutzereingabe erwartet wird. Der Grund dafür ist, dass der Workflow in der Phase "Ursprüngliche Vorschlagsdetails" auf ein Einreichereignis wartet. Wenn der Workflow nicht auf ein Einreichereignis warten würde, könnten Sie in der Gruppe **Seite****Weiter** auswählen, um zur nächsten Projektdetailseite zu wechseln. 
     
-    **Abbildung 15. Mithilfe der Seite Workflowstatus in der Phase der ursprüngliche Vorschlagsdetails**
+    **Abbildung 15. Verwenden der Seite "Workflowstatus" in der Phase "Ursprüngliche Vorschlagsdetails"**
 
     ![Workflow-Statusseite nach der ersten Stufe] (media/pj15_CreateWorkflowSPD_NewProjectStage1Status.gif "Workflow-Statusseite nach der ersten Stufe")
   
-    Das Workflow-Visualisierung-Diagramm zeigt die aktuelle Phase in eine hellgrüne Farbe. In der Phase **Erstellen** ist die ursprüngliche Vorschlagsdetails Phase die aktuelle Stufe. 
+    Im Workflowvisualisierungsdiagramm wird die aktuelle Phase in grün angezeigt. In der Phase **Erstellen** stellt die Phase "Ursprüngliche Vorschlagsdetails" die aktuelle Phase dar. 
     
-5. Wählen Sie auf dem Menüband in **der Gruppe** **Senden**.
+5. Wählen Sie auf dem Menüband in der Gruppe **Workflow****Einreichen** aus.
     
     > [!TIP]
-    > Wenn das Steuerelement **einreichen** deaktiviert ist, wird aktualisieren Sie die Seite. 
+    > Aktualisieren Sie die Seite, wenn das Steuerelement **Einreichen** deaktiviert ist. 
   
-    Wenn der **Vorschlagskosten** -Wert größer als 25.000 USD ist, wird der Workflow in die automatische Ablehnung Phase verschoben. Abbildung 16 zeigt den Status der automatischen Ablehnung, wenn Sie **Submit** erneut auswählen. Wenn die **Vorschlagskosten** 25.000 US-Dollar oder weniger, der Workflow in der Stufe ' Projektdetails verschiebt ' (siehe Abbildung 17). 
+    Wenn der Wert **Vorschlagskosten** höher ist als 25.000 USD, wechselt der Workflow zur Phase "Automatische Ablehnung". In Abbildung 16 ist der Status "Automatische Ablehnung" dargestellt, wenn Sie erneut **Einreichen** auswählen. Wenn die **Vorschlagskosten** 25.000 USD oder weniger betragen, wechselt der Workflow zur Phase "Projektdetails" (siehe Abbildung 17). 
     
-    **Abbildung 16. Der Workflow wird in der Phase der automatischen Ablehnung abgeschlossen**
+    **Abbildung 16. Der Workflow ist in der Phase "Automatische Ablehnung" abgeschlossen**
 
     ![Der Workflow ist in automatischer Ablehnung abgeschlossen] (media/pj15_CreateWorkflowSPD_AutomatedRejectionCompleted.gif "Der Workflow ist in automatischer Ablehnung abgeschlossen")
   
     Abbildung 17 zeigt einen weiteren Test mit einen Projektvorschlag mit dem Namen **Test 2 - Verzweigung**, wobei der Stufe ' Projektdetails ' in der Phase erstellen aktuell ist. Der Verwaltungsphase zeigt in einem Licht blauer Farbe, die angibt, Phase noch nicht aktiv ist.
     
-    **Abbildung 17. Der Workflow wird fortgesetzt, die Stufe ' Projektdetails ' ist die Kosten weniger als 25.000**
+    **Abbildung 17. Der Workflow wechselt zur Phase "Projektdetails", wenn die Kosten niedriger als 25.000 USD sind**
 
     ![Workflowstatus in der Stufe ' Projektdetails '] (media/pj15_CreateWorkflowSPD_ProjectDetailsStage.gif "Workflowstatus in der Stufe ' Projektdetails '")
   
-6. Wenn Sie auf der Stufe ' Projektdetails ' zur nächsten Folie gewechselt, sind es keine zusätzlichen Daten in der Standardseite hinzu. Wählen Sie **Submit** erneut, um der Ausführungsphase anzuzeigen (siehe Abbildung 18). 
+6. Wenn Sie mit der Phase "Projektdetails" fortfahren, müssen auf der Standardseite keine zusätzlichen Daten hinzugefügt werden. Wählen Sie erneut **Einreichen** aus, um mit der Ausführungsphase fortzufahren (siehe Abbildung 18). 
     
-    **Abbildung 18. Der Workflow ist bereit, in der Ausführungsphase verwalten**
+    **Abbildung 18. Der Workflow ist bereit zur Verwaltung in der Ausführungsphase**
 
     ![Workflowstatus in der Ausführungsphase] (media/pj15_CreateWorkflowSPD_ExecutionStage.gif "Workflowstatus in der Ausführungsphase")
   
-In der Stufe ' Projektdetails ' wartet der Workflow nicht auf Submit-Ereignis. Wenn das Projekt Details PDP zusätzliche erforderliche Felder enthält, wartet die Project Server, bis Sie Daten in die Felder hinzufügen, bevor Sie mit der Ausführungsphase fortfahren. Gemäß der Definition in der Verzweigungsworkflow wartet der Ausführungsphase auch nicht auf Submit-Ereignis. In der Ausführungsphase können Sie das Projekt als Projektmanager bearbeiten oder wählen Sie auf der Registerkarte **Projekt** im Menüband **Schließen** . Wenn Sie **Schließen**auswählen, können Sie im Projekt überprüfen und später bearbeiten oder lassen Sie das Projekt ausgecheckt.
+Der Workflow wartet in der Phase "Projektdetails" nicht auf ein Einreichereignis. Wenn die Projektdetailseite "Projektdetails" zusätzliche Pflichtfelder enthält, wartet Project Server, bis Sie den Feldern Daten hinzufügen, bevor zur Ausführungsphase gewechselt wird. Wie im Verzweigungsworkflow definiert, wartet auch die Ausführungsphase nicht auf ein Einreichereignis. Als Projektmanager können Sie das Projekt in der Ausführungsphase bearbeiten oder im Menüband auf der Registerkarte **PROJEKT****Schließen** auswählen. Wenn Sie **Schließen** auswählen, können Sie das Projekt einchecken und es später bearbeiten oder das Projekt ausgecheckt lassen.
 
-Das **Verzweigungsworkflow** -Projekt ist ein einfaches Beispiel, das nur ein Vergleich testen verfügt. Der Workflow wird in drei Phasen in der Phase erstellen und einer Phase in der Verwaltungsphase Demand Management. Um einen Workflow sorgfältig zu testen, sollten Sie alle in den Zweigstellen des Workflows testen und extreme und typische Werte verwenden, um festzustellen, ob das Verhalten ist wie erwartet. 
+Das Projekt **Verzweigungsworkflow** ist ein einfaches Beispiel mit nur einem Vergleichstest. Der Workflow umfasst in der Phase "Erstellen" drei Stufen und in der Phase "Verwalten" des Bedarfsmanagements eine Stufe. Um einen Workflow sorgfältig zu testen, sollten Sie alle Verzweigungen des Workflows testen und extreme und typische Werte verwenden, um zu sehen, ob das erwartete Verhalten auftritt. 
 
 <a name="pj15_CreateWorkflowSPD_ImportingVromVisio"> </a>
 
@@ -286,7 +286,7 @@ Sie können auch erstellen oder bearbeiten den Workflow in Visio 2013 und die Da
 
 1. Erstellen Sie einen einfachen Workflow in Visio 2013. Führen Sie beispielsweise die folgenden Schritte aus:
     
-   1. Öffnen Sie Visio, und klicken Sie dann erstellen Sie einen Workflow. Wählen Sie im Bereich **Kategorien** für einen neuen Workflow, wählen Sie **Flussdiagramm**, wählen Sie die Vorlage für **Microsoft SharePoint 2013-Workflow** im Bereich **neu** , und wählen Sie dann auf **Erstellen**. Der Workflow wird mit einem Phasen-Shape mit der **Stufe 1**. Der Workflow enthält eine Komponente starten und eine EINGABETASTE Form und Ausgangs-Shape als Teil der Phasen-Shape.
+   1. Öffnen Sie Visio, und erstellen Sie dann einen Workflow. Wählen Sie den Bereich **KATEGORIEN** für einen neuen Workflow aus. Wählen Sie **Flussdiagramm** aus, wählen Sie im Bereich **Neu** die **Microsoft SharePoint 2013-Workflow**-Vorlage aus, und wählen Sie dann **Erstellen** aus. Der Workflow wird mit einem Phasen-Shape mit der Bezeichnung **Phase 1** geöffnet. Der Workflow umfasst eine Startkomponente und als Bestandteil des Phasen-Shapes ein Eingangs-Shape und ein Ausgangs-Shape.
     
       Wenn Sie mit dem Mauszeiger des Phasen-Shapes, und wählen Sie das Symbol **Eigenschaften** , wird die Auswahl deaktiviert. Sie können die Eigenschaften Stufe und Aktion festlegen, nachdem Sie das Workflowdiagramm in SharePoint Designer 2013 importieren. 
     
@@ -296,19 +296,19 @@ Sie können auch erstellen oder bearbeiten den Workflow in Visio 2013 und die Da
       > - **Komponenten – SharePoint 2013-Workflow**
       > - **Bedingungen – SharePoint 2013-Workflow**
   
-   2. Klicken Sie im Bereich **Shapes** wählen Sie **Quick-Shapes aus**, und ziehen Sie dann die Form ' Bedingung ' mit der Bezeichnung **Wenn beliebiger Wert Wert gleich** rechts neben das Phasen-Shape. 
+   2. Wählen Sie im Bereich **Shapes****Quick-Shapes** aus, und ziehen Sie das Bedingungs-Shape mit der Bezeichnung **Wenn ein beliebiger Wert gleich dem Wert ist** dann rechts neben das Phasen-Shape. 
     
-   3. Auf der Registerkarte **Start** des Menübands, wählen Sie das **Verbinder** -Tool aus, und klicken Sie dann das Ausgangs-Shape in der Phase mit dem Bedingungs-Shape verbinden (siehe Abbildung 19). 
+   3. Wählen Sie auf dem Menüband auf der Registerkarte **HOME** das **Verbinder**-Tool aus, und verbinden Sie dann das Ausgangs-Shape in der Phase mit dem Bedingungs-Shape (siehe Abbildung 19). 
     
-      **Abbildung 19. Herstellen einer Verbindung mit einem Phasen-Shape mit einer Form ' Bedingung ' in einem Workflow Visio-Diagramm**
+      **Abbildung 19. Verbinden eines Phasen-Shapes mit einem Bedingungs-Shape in einem Visio-Workflowdiagramm**
 
       ![Erstellen eines Workflowdiagramms in Visio] (media/pj15_CreateWorkflowSPD_NewVisioWorkflow.gif "Erstellen eines Workflowdiagramms in Visio")
   
-   4. Ziehen Sie zwei weitere Phasen-Shapes rechts von der Form ' Bedingung ' aus. Die Shapes heißen **Phase 2** und **Schritt 3**.
+   4. Ziehen Sie zwei weitere Phasen-Shapes rechts neben das Bedingungs-Shape. Die Shapes heißen **Phase 2** und **Phase 3**.
     
    5. Verbinden Sie im rechten Teil der Form ' Bedingung ' über das **Verbinder** -Tool mit der EINGABETASTE Form der **Stufe 2**. Wählen Sie **das Zeigertool** , doppelklicken Sie auf die Verbindung zum Anzeigen eines TextBox-Objekts für den Namen, und nennen Sie die Verbindung Ja.
     
-   6. Verbinden Sie den unteren Rand der Form ' Bedingung ' mit der EINGABETASTE Form der **Stufe 3**. Mit dem Tool **Zeiger** mit der rechten Maustaste der Verbindungs, und wählen Sie dann auf **Nein**. Entweder-Methode funktioniert für die Benennung von Konnektoren für der **Ja** oder **Nein**.
+   6. Verbinden Sie die Unterseite des Bedingungs-Shapes mit dem Eingangs-Shape von **Phase 3**. Rechtsklicken Sie mit dem **Zeigertool** auf die Verbindung, und wählen Sie dann **Nein** aus. Beide Methoden können verwendet werden, um die Verbinder mit **Ja** oder **Nein** zu benennen.
     
    7. Klicken Sie im Bereich **Shapes** shapesaktionen **– SharePoint 2013-Workflow**aus, und ziehen Sie dann die Aktion zum **Warten auf Projektereignis** in der Mitte des Shapes für **Phase 1** (siehe Abbildung 20). 
     
@@ -326,23 +326,23 @@ Sie können auch erstellen oder bearbeiten den Workflow in Visio 2013 und die Da
     
    Im Dialogfeld **Website-Workflow erstellen** stellen Sie sicher, dass der Plattformtyp **SharePoint 2013-Workflow - Project Server**ist. Wählen Sie **Erstellen**aus, und SharePoint Designer wird geöffnet, den **textbasierten** Bereich für den neuen Workflow. 
     
-4. Wählen Sie in der Gruppe **Verwalten** auf der Registerkarte **WORKFLOW** des Menübands **Workflow-Einstellungen**.
+4. Wählen Sie im Menüband auf der Registerkarte **WORKFLOW** in der Gruppe **Verwalten****Workfloweinstellungen** aus.
     
 5. Wählen Sie in der Gruppe **Verwalten** auf der Registerkarte **WORKFLOWEINSTELLUNGEN** des Menübands **aus Visio importieren**aus, und klicken Sie dann importieren Sie die **Testen des Workflows aus Visio.vsdx** -Datei, die Sie zuvor gespeichert haben. Ein **Microsoft SharePoint Designer** -Dialogfeld darauf hingewiesen, dass das zu importierende Diagramm keine Workfloweigenschaften enthält und gefragt, ob den aktuellen Workflow überschrieben werden. Wählen Sie auf **Ja**. SharePoint Designer importiert das Workflowdiagramm, generiert-Schablonen für Formen und zeigt den **Visual Designer** -Bereich, der des importierten Workflows enthält. 
     
 6. Legen Sie die Eigenschaften jeder Form Phase im Workflow. Beispielsweise wird die erste Phase Form **Phase 1 (ungültig)**, mit der, da es keine gültige Phase in der verbundenen Project Web App-Instanz darstellt. Wenn Sie wählen oder bewegen Sie den Mauszeiger über die Phase, können Sie das Symbol **Eigenschaften** unten links der Phase Form anzeigen im Dialogfeld **Eigenschaften von Phase** im Feld (siehe Abbildung 21). Wählen Sie die **Ursprüngliche Vorschlagsdetails** Phase in der **Phase des** Dropdown-Liste, und wählen Sie dann auf **OK**. SharePoint Designer benennt die Phase an.
     
-   **Abbildung 21. Festlegen der Stufe-Eigenschaft in SharePoint Designer**
+   **Abbildung 21. Festlegen der Phaseneigenschaft in SharePoint Designer**
 
    ![Festlegen von Eigenschaften in einem importierten workflow] (media/pj15_CreateWorkflowSPD_ImportFromVisio1.gif "Festlegen von Eigenschaften in einem importierten workflow")
   
-   Legen Sie für die zweite Stufe der **Projektstufe** -Eigenschaft auf **Automatische Ablehnung**. Legen Sie für die dritte Phase der **Projektstufe** -Eigenschaft auf **Ausführung**.
+   Legen Sie bei der zweiten Phase die Eigenschaft **Projektphase** auf **Automatische Ablehnung** fest. Legen Sie die Eigenschaft **Projektphase** bei der dritten Phase auf **Ausführung** fest.
     
-7. Legen Sie auf ähnliche Weise für die Aktion **Warten auf Projektereignis** Eigenschaft **Ereignisname** auf **Ereignis: Wenn ein Projekt eingereicht wird fest**.
+7. Legen Sie entsprechend bei der Aktion **Auf Projektereignis warten** die Eigenschaft **Ereignisname** auf **Ereignis: Wenn ein Projekt eingereicht wird** fest.
     
 8. In ähnlicher Weise Festlegen der Eigenschaften der Bedingung **Wenn beliebiger Wert gleich Wert ist** . Legen Sie beispielsweise die erste **Value** -Eigenschaft auf **Projekt Projektdaten: Vorschlagskosten**. Legen Sie die **Operator** -Eigenschaft auf **ist kleiner als**. Legen Sie die zweite **Value** -Eigenschaft auf 5000.
     
-9. Überprüfen Sie den Workflow auf Fehler, und speichern Sie den Workflow. Wenn keine Fehler aufgetreten sind, können Sie die Ansicht ändern, in den **textbasierter Designer** (siehe Abbildung 22). 
+9. Prüfen Sie den Workflow auf Fehler, und speichern Sie dann den Workflow. Falls Fehler vorhanden sind, können Sie zur Ansicht **Textbasierter Designer** wechseln (siehe Abbildung 22). 
     
    **Abbildung 22. Anzeigen des importierten Workflows im textbasierten Designer**
 
@@ -358,7 +358,7 @@ Visio 2013 und SharePoint Designer bieten zusammen komfortable Möglichkeiten f�
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Architektur von Project Server 2013](project-server-2013-architecture.md)
+- [Project Server 2013-Architektur](project-server-2013-architecture.md)
 - [Start: Einrichten und Konfigurieren von SharePoint 2013-Workflow-Manager](http://msdn.microsoft.com/en-us/library/jj163276%28office.15%29.aspx)
 - [Grundlegendes zu packen und POST von Workflows in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj819316%28office.15%29.aspx)
 - [Workflows in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx)

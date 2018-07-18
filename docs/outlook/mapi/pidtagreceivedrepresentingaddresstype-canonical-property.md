@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReceivedRepresentingAddressType-Eigenschaft
+title: PidTagReceivedRepresentingAddressType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794897"
 ---
-# <a name="pidtagreceivedrepresentingaddresstype-canonical-property"></a>Kanonische PidTagReceivedRepresentingAddressType-Eigenschaft
+# <a name="pidtagreceivedrepresentingaddresstype-canonical-property"></a>PidTagReceivedRepresentingAddressType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Adresstyp für den messaging-Benutzer, die vom Benutzer tatsächlic
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den messaging-Benutzer, die von der empfangenden Benutzer dargestellt wird. Von der eingehenden Adressbuchhierarchie muss festgelegt werden, die auch für die Autorisierung oder Überprüfung des Delegaten zuständig ist. Wenn kein messaging Benutzer dargestellt wird, sollte diese Eigenschaft auf den Adresstyp, die in der Eigenschaft **PR_RECEIVED_BY_ADDRTYPE** ([PidTagReceivedByAddressType](pidtagreceivedbyaddresstype-canonical-property.md)) enthalten sind festgelegt werden.
   
@@ -82,7 +82,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagAddressType-Eigenschaft](pidtagaddresstype-canonical-property.md)
+[PidTagAddressType (kanonische Eigenschaft)](pidtagaddresstype-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreSupportMask-Eigenschaft
+title: PidTagStoreSupportMask (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795220"
 ---
-# <a name="pidtagstoresupportmask-canonical-property"></a>Kanonische PidTagStoreSupportMask-Eigenschaft
+# <a name="pidtagstoresupportmask-canonical-property"></a>PidTagStoreSupportMask (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einer Bitmaske aus Flags dieser Client Applications Abfrage aus, um die
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Funktionen des einen Nachrichtenspeicher für Clientanwendungen, die planen sie eine Nachricht senden. Die Kennzeichen unterstützen Entscheidungen durch einen Client oder einem anderen Speicher, z. B., ob **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) oder nur **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) gesendet. Ein Client sollte niemals **PR_STORE_SUPPORT_MASK**festgelegt. Beim Festlegen dieses Kennzeichen gibt MAPI_E_COMPUTED zurück. 
   

@@ -1,5 +1,5 @@
 ---
-title: Verwenden ein Dialogfeld Erweiterte Suche
+title: Verwenden eines Dialogfelds für die erweiterte Suche.
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795824"
 ---
-# <a name="using-an-advanced-search-dialog-box"></a>Verwenden ein Dialogfeld Erweiterte Suche
+# <a name="using-an-advanced-search-dialog-box"></a>Verwenden eines Dialogfelds für die erweiterte Suche.
 
   
   

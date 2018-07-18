@@ -1,5 +1,5 @@
 ---
-title: Testen von Funktionen, Authentifizierung und Konfiguration
+title: Testen der Funktionen, Authentifizierung und Konfiguration
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796087"
 ---
-# <a name="testing-capabilities-authentication-and-configuration"></a>Testen von Funktionen, Authentifizierung und Konfiguration
+# <a name="testing-capabilities-authentication-and-configuration"></a>Testen der Funktionen, Authentifizierung und Konfiguration
 
 In diesem Thema werden die Tests zum Abrufen von Funktionen und Szenarien zum Konfigurieren eines Kontos und Authentifizieren eines Benutzers für ein social Network beschrieben.
   

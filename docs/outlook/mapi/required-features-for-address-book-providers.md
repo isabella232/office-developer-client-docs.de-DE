@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Features für Adressbuchanbietern implementierte
+title: Erforderliche Funktionen für Adressbuchanbieter
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795373"
 ---
-# <a name="required-features-for-address-book-providers"></a>Erforderliche Features für Adressbuchanbietern implementierte
+# <a name="required-features-for-address-book-providers"></a>Erforderliche Funktionen für Adressbuchanbieter
 
   
   

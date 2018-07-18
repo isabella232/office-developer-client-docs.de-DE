@@ -1,5 +1,5 @@
 ---
-title: Eng gekoppelten Nachrichtenspeicher-Anbieter
+title: Eng verknüpfte Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795724"
 ---
-# <a name="tightly-coupled-message-store-providers"></a>Eng gekoppelten Nachrichtenspeicher-Anbieter
+# <a name="tightly-coupled-message-store-providers"></a>Eng verknüpfte Nachrichtenspeicheranbieter
 
   
   

@@ -23,11 +23,11 @@ Diese Methode ist in OSC 1.1 veraltet.
 HRESULT GetActivities([in] SAFEARRAY(BSTR) emailAddresses, [in] DATE startTime, [out, retval] BSTR *activities);
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In Version 1.1 OSC starten, ruft der OSC nicht mehr **GetActivities**. Die OSC wird den Wert der **DynamicActivitiesLookup**ignoriert. Um Nachschlagetabelle dynamischen Aktivitäten zu unterstützen, implementieren Sie die [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md) -Methode. Legen Sie **CacheActivities** als **"false"**, und **GetActivities** und **DynamicActivitiesLookupEx** als **true**die OSC **ISocialSession2::GetActivitiesEx** stattdessen aufzurufen aufgefordert wird. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

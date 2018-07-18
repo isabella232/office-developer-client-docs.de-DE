@@ -36,7 +36,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cEntries**
   
@@ -60,7 +60,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [ROWENTRY](rowentry.md)
   
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

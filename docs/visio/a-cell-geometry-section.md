@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796363"
 ---
-# <a name="a-cell-geometry-section"></a>A Cell (Geometry Section)
+# <a name="a-cell-geometry-section"></a>Eine Zelle (Abschnitt „Geometry“)
 
 Stellt die Informationen in den verschiedenen Zeilen dar. In der Tabelle wird die Zelle A auf der Grundlage der Zeile beschrieben, in der sie enthalten ist.
   
@@ -31,29 +31,29 @@ Stellt die Informationen in den verschiedenen Zeilen dar. In der Tabelle wird di
 |[InfiniteLine](infiniteline-row-geometry-section.md) <br/> | Eine *X* -Koordinate eines Punkts auf der unendlichen Linie gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle [B](b-cell-geometry-section.md) .  <br/> |
 |[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine *X* -Koordinate eines Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle [B](b-cell-geometry-section.md) .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle A nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft verwenden Sie zu können: 
+Wenn Sie eine Referenz auf die Zelle A nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Geometrie *i* . Ein *j* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
 || Geometrie *i* . A1 (Zeilen UnendlicheLinie und Ellipse) wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle A aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle A aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**VisRowVertex** +  *j* wobei *j* = 0, 1, 2...  <br/> |
-||**visRowVertex** (Zeilen UnendlicheLinie und Ellipse)  <br/> |
-| Zellenindex:  <br/> |**visBow** (Zeile ArcTo)  <br/> |
-||**visControlX** (Zeile EllipticalArcTo)  <br/> |
-||**visControlY** (Zeile EllipticalArcTo)  <br/> |
-||**visPolylineData** (Zeile Polyline)  <br/> |
-||**visNURBSKnot** (Zeile NURBSTo)  <br/> |
-||**visSplineKnot** (Zeilen SplineStart und SplineKnot)  <br/> |
-||**visInfiniteLineX2** (Zeile InfiniteLine)  <br/> |
-||**visEllipseMinorX** (Ellipsenzeile)  <br/> |
+||visRowVertex (Zeilen InfiniteLine und Ellipse)  <br/> |
+| Zellenindex:  <br/> |visBow(Zeile ArcTo)  <br/> |
+||visControlX (Zeile EllipticalArcTo)  <br/> |
+||visControlY (Zeile EllipticalArcTo)  <br/> |
+||visPolylineData(Zeile Polyline)  <br/> |
+||visNURBSKnot(Zeile NURBSTo)  <br/> |
+||visSplineKnot(Zeilen SplineStart und SplineKnot)  <br/> |
+||visInfiniteLineX2(Zeile InfiniteLine)  <br/> |
+||visEllipseMajorX (Zeile Ellipse)  <br/> |
    
 

@@ -30,7 +30,7 @@ CHAR (** *Anzahl* **)
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Anzahl, dessen ANSI-Zeichen, die Sie abrufen möchten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die resultierende Zeichenfolge wird einem Zeichen besteht. Der _Anzahl_ -Parameter muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, oder die Funktion gibt einen Fehler zurück. 
   

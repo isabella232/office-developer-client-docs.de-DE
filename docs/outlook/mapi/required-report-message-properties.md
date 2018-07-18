@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Bericht Nachrichteneigenschaften
+title: Erforderliche Eigenschaften  für Berichtsnachrichten
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795387"
 ---
-# <a name="required-report-message-properties"></a>Erforderliche Bericht Nachrichteneigenschaften
+# <a name="required-report-message-properties"></a>Erforderliche Eigenschaften  für Berichtsnachrichten
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPstPasswordSzNew-Eigenschaft
+title: PidTagPstPasswordSzNew (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794850"
 ---
-# <a name="pidtagpstpasswordsznew-canonical-property"></a>Kanonische PidTagPstPasswordSzNew-Eigenschaft
+# <a name="pidtagpstpasswordsznew-canonical-property"></a>PidTagPstPasswordSzNew (kanonische Eigenschaft)
 
   
   

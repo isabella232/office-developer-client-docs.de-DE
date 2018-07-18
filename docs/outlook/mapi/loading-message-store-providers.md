@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenspeicher Loading-Anbieter
+title: Laden von Nachrichtenspeicheranbietern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792899"
 ---
-# <a name="loading-message-store-providers"></a>Nachrichtenspeicher Loading-Anbieter
+# <a name="loading-message-store-providers"></a>Laden von Nachrichtenspeicheranbietern
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResponseRequested-Eigenschaft
+title: PidTagResponseRequested (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794978"
 ---
-# <a name="pidtagresponserequested-canonical-property"></a>Kanonische PidTagResponseRequested-Eigenschaft
+# <a name="pidtagresponserequested-canonical-property"></a>PidTagResponseRequested (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn der Absender der Nachricht eine Antwort auf eine Besprechung
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird für Besprechungsanfragen verwendet. Die empfangenden Clientanwendung sollte der Benutzer aufgefordert, akzeptieren oder Ablehnen der Anforderung und senden Sie diese Antwort an den Absender zurückgesendet.
   

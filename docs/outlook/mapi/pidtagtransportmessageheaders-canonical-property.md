@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTransportMessageHeaders-Eigenschaft
+title: PidTagTransportMessageHeaders (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795301"
 ---
-# <a name="pidtagtransportmessageheaders-canonical-property"></a>Kanonische PidTagTransportMessageHeaders-Eigenschaft
+# <a name="pidtagtransportmessageheaders-canonical-property"></a>PidTagTransportMessageHeaders (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Transport-spezifische Informationen im Nachrichtenumschlag enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Transportdienst kann die Kopfzeileninformationen für eingehende Nachrichten generieren.
   
@@ -70,7 +70,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagBody-Eigenschaft](pidtagbody-canonical-property.md)
+[PidTagBody (kanonische Eigenschaft)](pidtagbody-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

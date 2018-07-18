@@ -48,7 +48,7 @@ Wenn die Funktion erfolgreich ist, ist der Rückgabewert ein Zeiger auf den Puff
   
 Wenn die Funktion fehlschlägt, wird NULL zurückgegeben und lpString1 möglicherweise nicht Null endende.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Funktion umschließt die **Lstrcpy** -Funktion. Weitere Informationen finden Sie unter [Lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx).
   

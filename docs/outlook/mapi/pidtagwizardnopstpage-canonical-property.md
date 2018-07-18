@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagWizardNoPstPage-Eigenschaft
+title: PidTagWizardNoPstPage (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19795293"
 ---
-# <a name="pidtagwizardnopstpage-canonical-property"></a>Kanonische PidTagWizardNoPstPage-Eigenschaft
+# <a name="pidtagwizardnopstpage-canonical-property"></a>PidTagWizardNoPstPage (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält True, wenn der Profilassistent die Seite persönliche
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Exchange-Verwaltung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dienstanbieter können diese Eigenschaft festlegen, beim Aufrufen einer Funktion basierend auf den [LAUNCHWIZARDENTRY](launchwizardentry.md) Funktionsprototyp. Diese Eigenschaft teilt der Profil-Assistent, dass der Anbieter nicht möchte die PST-Seite, während das Benutzerdialogfeld angezeigt werden soll. 
   

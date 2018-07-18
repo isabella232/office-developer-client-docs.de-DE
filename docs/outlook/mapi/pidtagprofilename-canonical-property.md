@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProfileName-Eigenschaft
+title: PidTagProfileName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794820"
 ---
-# <a name="pidtagprofilename-canonical-property"></a>Kanonische PidTagProfileName-Eigenschaft
+# <a name="pidtagprofilename-canonical-property"></a>PidTagProfileName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen des Profils an.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden von Dienstanbietern berechnet. Implementierung der Funktion **ServiceEntry** eines Anbieters kann diese Eigenschaften verwenden, um den Profilnamen zu ermitteln. 
   

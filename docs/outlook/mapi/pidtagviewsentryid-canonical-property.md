@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagViewsEntryId-Eigenschaft
+title: PidTagViewsEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795280"
 ---
-# <a name="pidtagviewsentryid-canonical-property"></a>Kanonische PidTagViewsEntryId-Eigenschaft
+# <a name="pidtagviewsentryid-canonical-property"></a>PidTagViewsEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Eintrags-ID des Ordners benutzerdefinierte Ansichten enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der gemeinsamen Ordner anzeigen enthält ein vordefiniertes Satzes von Standardansicht Bezeichner, während der Ansichtordner Bezeichner definiert durch ein messaging-Benutzer enthält. Diese Ordner, die nicht in der Hierarchie zwischen Personen Nachricht (IPM) sichtbar sind, können enthalten viele Ansicht Bezeichner, die jeweils als eine Nachricht gespeichert. Die Client-Anwendung kann wahlweise Zusammenführen von zwei Sätze der Bezeichner und diese beiden zur Verfügung stellen.
   

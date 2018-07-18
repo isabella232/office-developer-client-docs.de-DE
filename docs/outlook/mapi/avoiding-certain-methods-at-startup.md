@@ -1,5 +1,5 @@
 ---
-title: Vermeiden bestimmte Methoden beim Start
+title: Vermeiden bestimmter Methoden beim Start
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791364"
 ---
-# <a name="avoiding-certain-methods-at-startup"></a>Vermeiden bestimmte Methoden beim Start
+# <a name="avoiding-certain-methods-at-startup"></a>Vermeiden bestimmter Methoden beim Start
 
  
   

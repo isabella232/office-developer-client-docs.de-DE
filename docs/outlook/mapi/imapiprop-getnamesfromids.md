@@ -85,7 +85,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Das **cValues** -Element aus einem oder mehreren der Einträge in der Array-Tag-Eigenschaft auf den _LppPropTags_ ist auf 0 festgelegt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Während der Zugriff auf die meisten Eigenschaften vom Eigenschaftenbezeichner ist, können einige Eigenschaften namentlich zugegriffen werden. Die **IMAPIProp::GetNamesFromIDs** -Methode kann aufgerufen werden, um Folgendes auszuführen: 
   
@@ -157,7 +157,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

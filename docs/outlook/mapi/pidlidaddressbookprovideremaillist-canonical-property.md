@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAddressBookProviderEmailList-Eigenschaft
+title: PidLidAddressBookProviderEmailList (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793357"
 ---
-# <a name="pidlidaddressbookprovideremaillist-canonical-property"></a>Kanonische PidLidAddressBookProviderEmailList-Eigenschaft
+# <a name="pidlidaddressbookprovideremaillist-canonical-property"></a>PidLidAddressBookProviderEmailList (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, welche Eigenschaften für e-Mail-Adresse auf den Kontakt festgelegt sin
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder PT_LONG Wert in dieser Eigenschaft muss in der Eigenschaft eindeutig sein und muss auf einen der Werte in der folgenden Tabelle festgelegt werden. Wenn diese Eigenschaft festgelegt ist, muss auch die **DispidABPArrayType** ([PidLidAddressBookProviderArrayType](pidlidaddressbookproviderarraytype-canonical-property.md))-Eigenschaft festgelegt werden. Diese beiden Eigenschaften müssen miteinander synchronisiert werden. Angenommen, wenn einer der Werte in **DispidABPEmailList** "0 x 00000000" **DispidABPArrayType** ist, muss das Bit "0 x 00000001" festgelegt haben. 
   

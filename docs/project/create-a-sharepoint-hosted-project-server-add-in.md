@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines SharePoint gehosteten Project Server-add-Ins
+title: Erstellen eines auf SharePoint gehosteten Project Server-Add-Ins
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796202"
 ---
-# <a name="create-a-sharepoint-hosted-project-server-add-in"></a>Erstellen eines SharePoint gehosteten Project Server-add-Ins
+# <a name="create-a-sharepoint-hosted-project-server-add-in"></a>Erstellen eines auf SharePoint gehosteten Project Server-Add-Ins
 
 Die drei Arten von apps, die Sie für Project Online (automatisch gehostet, vom Anbieter gehostet und SharePoint-Hosting) erstellen können, ist die SharePoint-hosted app am einfachsten zu erstellen und bereitstellen. Nicht der Fall ist einer SharePoint-hosted app OAuth-Authentifizierung erfordern und nicht Azure verwenden oder Wartung einer lokalen Website für die vom Anbieter gehosteten Ressourcen erfordern. Die **App für SharePoint 2013** -Vorlage in Visual Studio ist eine bequeme Framework für die Entwicklung von apps, die veröffentlicht und in den Office Store verkauft oder mit einem privaten app-Katalog in SharePoint bereitgestellt werden können. 
   

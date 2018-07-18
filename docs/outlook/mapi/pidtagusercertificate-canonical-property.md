@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagUserCertificate-Eigenschaft
+title: PidTagUserCertificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795284"
 ---
-# <a name="pidtagusercertificate-canonical-property"></a>Kanonische PidTagUserCertificate-Eigenschaft
+# <a name="pidtagusercertificate-canonical-property"></a>PidTagUserCertificate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein ASN. 1-Authentifizierungszertifikat für ein messaging-Benutzer.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Authentifizierungszertifikat ist vergleichbar mit einer digitalen Signatur. Mehrere MAPI-Eigenschaften angeben ASN. 1-Zertifikate. 
   

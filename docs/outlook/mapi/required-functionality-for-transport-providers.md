@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Funktionalität für Transportanbieter
+title: Erforderliche Funktionen für Transportanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795396"
 ---
-# <a name="required-functionality-for-transport-providers"></a>Erforderliche Funktionalität für Transportanbieter
+# <a name="required-functionality-for-transport-providers"></a>Erforderliche Funktionen für Transportanbieter
 
   
   

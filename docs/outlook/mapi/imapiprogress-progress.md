@@ -85,12 +85,12 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md)
   
-[Implementieren eine Statusanzeige](implementing-a-progress-indicator.md)
+[Implementieren eines Statusindikators](implementing-a-progress-indicator.md)
 

@@ -1,5 +1,5 @@
 ---
-title: -Adressbuch Adress-IDs
+title: Adressbuchbezeichner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791264"
 ---
-# <a name="address-book-identifiers"></a>-Adressbuch Adress-IDs
+# <a name="address-book-identifiers"></a>Adressbuchbezeichner
 
   
   

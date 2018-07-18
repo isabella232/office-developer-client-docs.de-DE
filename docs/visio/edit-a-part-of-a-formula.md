@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796915"
 ---
-# <a name="edit-a-part-of-a-formula"></a>Bearbeiten von Formelteilen
+# <a name="edit-a-part-of-a-formula"></a>Bearbeiten eines Teils einer Formel
 
 1. Doppelklicken Sie auf die Zelle. Oder markieren Sie die Zelle, und drücken Sie F2.
     

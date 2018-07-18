@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796368"
 ---
-# <a name="about-format-pictures"></a>Informationen zu Formatierungsangaben
+# <a name="about-format-pictures"></a>Informationen zum Formatieren von Bildern
 
 Eine Formatierungsangabe ist ein Formatcode, der bestimmt, wie ein Wert angezeigt wird. Sie können beispielsweise die Anzahl von Stellen bestimmen, die rechts oder links von einem Dezimaltrennzeichen angezeigt werden, oder Sie legen fest, ob eine Zeichenfolge in Klein- oder Großschreibung angezeigt wird.
   
@@ -31,8 +31,8 @@ Die folgenden Abschnitte zeigen Symbole, mit denen Sie unterschiedliche Typen vo
 |:-----|:-----|
 |#  <br/> |Platzhalter für Ziffer. Zeigt entweder eine Ziffer oder keinen Wert an. Vorangestellte und nachfolgende Nullen werden nicht angezeigt. Befinden sich links vom Dezimaltrennzeichen mehr Ziffern als Platzhalter, werden alle Ziffern angezeigt. Befinden sich rechts vom Dezimaltrennzeichen mehr Ziffern als Platzhalter, wird der Bruchteil auf die Anzahl der Platzhalter gerundet. Bei Abmessungen werden Untereinheiten mit dem Wert 0 nicht angezeigt, wenn der Platzhalter die äußerste linke Ziffer ist.  <br/> Beispielsweise wird FORMAT(0Fuß 11.25Zoll,"#.##u") als 11,25 Zoll angezeigt.  <br/> |
 |0  <br/> |Platzhalter für eine Ziffer (Null). Zeigt entweder eine Ziffer oder keinen Wert an. Vorangestellte und nachfolgende Nullen werden angezeigt. Befinden sich links vom Dezimaltrennzeichen mehr Ziffern als Platzhalter, werden alle Ziffern angezeigt. Befinden sich rechts vom Dezimaltrennzeichen mehr Ziffern als Platzhalter, wird der Bruchteil auf die Anzahl der Platzhalter gerundet. Bei Abmessungen werden Untereinheiten mit dem Wert 0 angezeigt.  <br/> Beispielsweise wird FORMAT(2Fuß 11.33Zoll,"0.## u") als 2 Fuß 11,33 Zoll angezeigt.  <br/> |
-|.  <br/> |Dezimalplatzhalter. Bestimmt, wie viele Ziffern links und rechts vom Dezimaltrennzeichen angezeigt werden. In einer mehrteiligen Einheit wird Dezimaltrennzeichen in der kleinsten (äußersten rechten) Untereinheit. Zeigt die für das System **Region und Sprache** definierten Komma Settings (Control Panel).  <br/> Beispielsweise wird FORMAT(250 cm,"0.000 u") als 250,000 cm angezeigt.  <br/> |
-|,  <br/> |Tausend Trennzeichen. Wenn von Platzhaltern für Ziffern umgeben (# oder 0), das Trennzeichen getrennt in eine Zahl mit mindestens vier Ziffern links vom Dezimalkomma. Zeigt das Tausendertrennzeichen Trennzeichen für das System **Region und Sprache** definierten Einstellungen (Control Panel).  <br/> |
+|.  <br/> |Platzhalter für Dezimalstellen. Legt die Anzahl von Ziffern fest, die links und rechts vom Dezimaltrennzeichen angezeigt werden. Bei einer mehrteiligen Einheit wird das Dezimaltrennzeichen in der kleinsten (äußersten rechten) Untereinheit verwendet. Zeigt das Dezimaltrennzeichen an, das in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert ist.<br/> Beispielsweise wird FORMAT(250 cm,"0.000 u") als 250,000 cm angezeigt.  <br/> |
+|,  <br/> |Tausendertrennzeichen. Wenn das Trennzeichen von Platzhaltern für Ziffern umgeben (# oder 0) wird, trennt dieses Tausender von Hunderten innerhalb eines numerischen Werts, der aus vier oder mehr Ziffern links vom Dezimaltrennzeichen besteht. Zeigt das Tausendertrennzeichen an, das in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert ist.<br/> |
 |E- E+ e- e+  <br/> |Wissenschaftliches Format. Wenn das Format wenigstens einen Platzhalter für Ziffern rechts von diesem Symbol enthält, wird die Zahl im wissenschaftlichen Format angezeigt. Fügen Sie das E oder e zwischen der Zahl und ihrem Exponenten ein. Bei E+ oder e+ wird das Zeichen + vor einem positiven Exponenten und das Zeichen - vor einem negativen Exponenten angezeigt. Bei E- oder e- wird das Minuszeichen (-) nur bei einem negativen Exponenten angezeigt.  <br/> Beispielsweise wird FORMAT(12345.67,"###.#e+#") als 123,5e+2 angezeigt.  <br/> |
 |u oder U  <br/> |Platzhalter für kurzen Bezeichnung. Fügt abgekürzt einheitenbeschriftungen nach jedem Untereinheit. Beispiel: Zoll, Fuß, Grad. Der Platzhalter U Fügt gemischten Groß-/Kleinschreibung Etiketten, während der Platzhalter u Kleinbuchstabe Etiketten eingefügt. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> Beispielsweise wird FORMAT(12 c 13 d,"#u") als 13c1 angezeigt.  <br/> |
 |uu oder UU  <br/> |Platzhalter für lange Beschriftung. Einheitenbeschriftungen nach jedem Untereinheit eingefügt. Beispiel: Zoll, Fuß, Grad der U Platzhalter fügt Groß-Etiketten, während der Platzhalter u Kleinbuchstabe Etiketten eingefügt. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> Beispielsweise wird FORMAT(12.43Zoll,"# #/4 UU") als 12 2/4 ZOLL angezeigt.  <br/> |
@@ -44,7 +44,7 @@ Die folgenden Abschnitte zeigen Symbole, mit denen Sie unterschiedliche Typen vo
 
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-|$  <br/> |Das Währungssymbol. Zeigt das Symbol für das System **Region und Sprache** definierten Einstellungen (Control Panel)  <br/> |
+|$  <br/> |Währungssymbol. Zeigt das Währungssymbol an, das für die Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert wurde.<br/> |
 |u oder U  <br/> |Platzhalter für kurzen Bezeichnung. Fügt das Standardsymbol für lokale Währung oder den dreistelligen Währung Abkürzungen für nicht lokalen Währungen. Beispielsweise $99,00, 42,70 FRF. Der Platzhalter u fügt Kleinbuchstaben und U Groß-Etiketten eingefügt.  <br/> |
 |uu oder UU  <br/> |Platzhalter für lange Beschriftung. Fügt lange Währung Etiketten nach jedem Untereinheit. Beispiel: US-Dollar, französische Franc. Der Platzhalter u fügt Kleinbuchstaben und U Groß-Etiketten eingefügt.  <br/> |
 |uuu oder UUU  <br/> |Platzhalter für universelle Beschriftung. Die universelle, zwei-Währung Abkürzungen für alle Währungen nach jedem Untereinheit eingefügt. Beispielsweise 99.00 USD, 42,70 FRF. Der Platzhalter u fügt Kleinbuchstaben und U Groß-Etiketten eingefügt. Fügt die gleiche Anzahl von Leerzeichen vor der Bezeichnung wie vor dem Platzhalter ein.  <br/> |
@@ -64,14 +64,14 @@ Die folgenden Abschnitte zeigen Symbole, mit denen Sie unterschiedliche Typen vo
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
 |c oder C  <br/> |Datums- oder Zeitplatzhalter. Zeigt Datums- und Zeitwerte in einem kurzen (c) oder langem (C) Datumsformat und einem allgemeinen Zeitformat an. Bis einschließlich Version 4.0 von Visio wird dieser Platzhalter ignoriert.  <br/> Beispiel: FORMAT(DATETIME("6/25/07 12:05"),"C") wird als Montag, 25. Juni 2007, 12:05:00 Uhr angezeigt. FORMAT(DATETIME("Jun. 25, 2007"),"c") wird als 25.6.2007 wiedergegeben.  <br/> |
-|/  <br/> |Datumstrennzeichen. Wenn der Ausdruck ein Datum ist, trennt die Datumskomponenten. Zeigt das Datumstrennzeichen für das System **Region und Sprache** definierten Einstellungen (Control Panel).  <br/> |
+|/  <br/> |Datumstrennzeichen. Wenn der Ausdruck ein Datum ist, trennt dieses Zeichen die einzelnen Datumskomponenten. Zeigt das Datumstrennzeichen an, das für das System in den Einstellungen unter **Region und Sprache** (Systemsteuerung) definiert ist.<br/> |
 | [ ]  <br/> |Platzhalter für vergangenes Datum. Wird zusammen mit den Platzhaltern d, dd, w und ww benutzt, um Dauereinheiten anzuzeigen.  <br/> Beispielsweise bedeutet [d] oder [dd] vergangene Tage und [w] oder [ww] vergangene Wochen.  <br/> |
 |d  <br/> |Tagplatzhalter. Zeigt den Tag als Zahl (von 1 bis 31) ohne vorangestellte 0 an.  <br/> |
 |dd  <br/> | Tagplatzhalter. Zeigt den Tag als Zahl (von 01 bis 31) mit vorangestellter 0 an.  <br/> |
 |ddd oder w  <br/> |Platzhalter für kurzen Tag der Woche. Zeigt den Tag in abgekürzter Form an (Son-Sam).  <br/> |
 |Dddd oder w  <br/> |Platzhalter für langen Tag der Woche. Zeigt den Tag in vollständiger Schreibweise (Sonntag-Samstag) an.  <br/> |
-|ddddd  <br/> |Platzhalter für kurzes Datum. Zeigt ein Datum im kurzen Format für das System **Region und Sprache** definiert Settings (Control Panel).  <br/> |
-|dddd  <br/> |Platzhalter für langes Datum. Zeigt ein Datum im langen für das System **Region und Sprache** definierten Einstellungen (Control Panel).  <br/> |
+|ddddd  <br/> |Platzhalter für kurzes Datum. Zeigt das Datum im kurzen Format an, das in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das jeweilige System definiert ist.<br/> |
+|dddd  <br/> |Platzhalter für langes Datum. Zeigt das Datum im langen Format an, das in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das jeweilige System definiert ist.<br/> |
 |D  <br/> |Tagplatzhalter für traditionelles Chinesisch. Zeigt den Monatstag als ausgeschriebene Ordnungszahl an. Gebietsschemaspezifisch.  <br/> |
 |D_c  <br/> |Tagplatzhalter für traditionelles Chinesisch. Zeigt den Monatstag als ausgeschriebene Ordnungszahl an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |W_c oder w_c  <br/> |Tagplatzhalter für traditionelles Chinesisch. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
@@ -116,7 +116,7 @@ Die folgenden Abschnitte zeigen Symbole, mit denen Sie unterschiedliche Typen vo
 
 |**Zeichen**|**Beschreibung**|
 |:-----|:-----|
-|:  <br/> |Zeittrennzeichen. Zeigt die Uhrzeit für das System **Region und Sprache** definierten Einstellungen (Control Panel).  <br/> |
+|:  <br/> |Uhrzeittrennzeichen. Zeigt die Uhrzeit an, die in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das betreffende System definiert ist.<br/> |
 |[ ]  <br/> |Platzhalter für vergangene Zeit. Wird zusammen mit den Platzhaltern h, hh, m, mm, s und ss verwendet, um Dauereinheiten anzuzeigen. Beispielsweise bedeutet [h] oder [hh] vergangene Stunden, [m] oder [mm] vergangene Minuten und [s] oder [ss] vergangene Sekunden.  <br/> |
 |h  <br/> |Stundenplatzhalter. Zeigt die Stundenangabe ohne vorangestellte Null im 12-Stunden-Format an (0-12).  <br/> |
 |hh  <br/> |Stundenplatzhalter. Zeigt die Stundenangabe mit vorangestellter Null im 12-Stunden-Format an (00-12).  <br/> |
@@ -126,8 +126,8 @@ Die folgenden Abschnitte zeigen Symbole, mit denen Sie unterschiedliche Typen vo
 |mm  <br/> |Minutenplatzhalter. Zeigt die Minuten mit vorangestellter Null an (00-59).  <br/> |
 |s  <br/> |Sekundenplatzhalter. Zeigt die Sekunden ohne vorangestellte Null an (0-59).  <br/> |
 |ss  <br/> |Sekundenplatzhalter. Zeigt die Sekunden mit vorangestellter Null an (00-59).  <br/> |
-|t  <br/> |AM/PM-Abkürzung. Zeigt die Abkürzung für das System **Region und Sprache** definierten Einstellungen (Control Panel).  <br/> |
-|tt  <br/> |AM/PM-Kennzeichner. Zeigt den vollständigen Kennzeichner für das System **Region und Sprache** definierten Einstellungen (Control Panel).  <br/> |
+|t  <br/> |AM/PM-Abkürzung. Zeigt die in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das jeweilige System definierte Abkürzung an.<br/> |
+|tt  <br/> |AM/PM-Kennzeichner. Zeigt den vollständigen Kennzeichner an, der in den Einstellungen unter **Region und Sprache** (Systemsteuerung) für das jeweilige System definiert ist.<br/> |
 |t_c oder tt_c  <br/> |AM/PM-Kennzeichner für traditionelles Chinesisch. Zeigt den Kennzeichner an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |t_k oder tt_k  <br/> |AM/PM-Kennzeichner für Koreanisch. Zeigt den Kennzeichner an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |
 |t_j oder tt_j  <br/> |AM/PM-Kennzeichner für Japanisch. Zeigt den Kennzeichner an. Unabhängig vom Gebietsschema des Benutzers.  <br/> |

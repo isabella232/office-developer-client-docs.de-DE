@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer Service Provider Eintrag Point-Funktion
+title: Implementieren einer Dienstanbieter-Einstiegspunktfunktion
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792543"
 ---
-# <a name="implementing-a-service-provider-entry-point-function"></a>Implementieren einer Service Provider Eintrag Point-Funktion
+# <a name="implementing-a-service-provider-entry-point-function"></a>Implementieren einer Dienstanbieter-Einstiegspunktfunktion
 
   
   
@@ -53,5 +53,5 @@ Adressbuch, Nachrichtenspeicher und Transportanbieter führen die folgenden zwei
 
 
 
-[Starten von einem Dienstanbieter](starting-a-service-provider.md)
+[Starten eines Dienstanbieters](starting-a-service-provider.md)
 

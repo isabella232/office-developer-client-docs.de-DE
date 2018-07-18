@@ -131,7 +131,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > Der Eigenschaftentyp ist nicht den Typ, den der Anrufer erwartet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::DoCopyProps** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht Anbieter können **DoCopyProps** zum Implementieren der [IMAPIProp::CopyProps](imapiprop-copyprops.md) -Methode für ihre Ordner und Nachrichten aufrufen. **DoCopyProps** kopiert oder verschiebt die Eigenschaften, die die Tag-Array-Eigenschaft auf den _LpIncludeProps_ erkannt werden, und, die in das Objekt, das auf _LpSrcObj_vorhanden sind. 
   
@@ -165,15 +165,15 @@ Wenn **DoCopyProps** S_OK zurückgibt, frei die zurückgegebene Struktur **SProp
   
 [IMAPISupport::GetLastError](imapisupport-getlasterror.md)
   
-[Kanonische PidTagContainerContents-Eigenschaft](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents (kanonische Eigenschaft)](pidtagcontainercontents-canonical-property.md)
   
-[Kanonische PidTagContainerHierarchy-Eigenschaft](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy (kanonische Eigenschaft)](pidtagcontainerhierarchy-canonical-property.md)
   
-[Kanonische PidTagFolderAssociatedContents-Eigenschaft](pidtagfolderassociatedcontents-canonical-property.md)
+[PidTagFolderAssociatedContents (kanonische Eigenschaft)](pidtagfolderassociatedcontents-canonical-property.md)
   
-[Kanonische PidTagMessageAttachments-Eigenschaft](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments (kanonische Eigenschaft)](pidtagmessageattachments-canonical-property.md)
   
-[Kanonische PidTagMessageRecipients-Eigenschaft](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients (kanonische Eigenschaft)](pidtagmessagerecipients-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792903"
 ---
-# <a name="ixpprovider--iunknown"></a>IXPProvider: IUnknown
+# <a name="ixpprovider--iunknown"></a>IXPProvider : IUnknown
 
   
   

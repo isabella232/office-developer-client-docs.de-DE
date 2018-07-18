@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796383"
 ---
-# <a name="actions-row-actions-section"></a>Actions Row (Actions Section)
+# <a name="actions-row-actions-section"></a>Zeile "Actions" (Abschnitt "Actions")
 
 Enthält Zellen, die einen benutzerdefinierten Befehl in einem Kontext- oder Aktionstagmenü zugeordneten Aktionen angeben. Abschnitt "Actions" enthält eine Zeile von Aktionen für die einzelnen Aktionen.
   
@@ -27,7 +27,8 @@ Aktionszeilen heißen Aktionen. *Name* und enthält folgenden Zellen. Weitere In
   
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
-|[Action](action-cell-actions-section.md) <br/> |Enthält die Formel, die ausgeführt werden, wenn ein Benutzer ein Element in einem Kontext- oder Aktionstagmenü auswählt.  <br/> |
+|[Action](action-cell-actions-section.md) <br/> |Enthält die Formel, die ausgeführt werden soll, wenn ein Benutzer ein Element in einem Kontext- oder Aktionstagmenü auswählt.
+  <br/> |
 |[Menü](menu-cell-actions-section.md) <br/> |Definiert den Namen des Menüelements, das angezeigt wird in einem Aktionstag- oder Kontextmenü.  <br/> |
 |[TagName](tagname-cell-actions-section.md) <br/> |Der logische Name des Aktionstags, in dem diese Aktion erfolgen soll.  <br/> |
 |[ButtonFace](buttonface-cell-actions-section.md) <br/> |Bestimmt das Symbol, das neben einem Element in einem Kontext- oder Aktionstagmenü angezeigt wird.  <br/> |
@@ -38,7 +39,7 @@ Aktionszeilen heißen Aktionen. *Name* und enthält folgenden Zellen. Weitere In
 |[Nicht sichtbare](invisible-cell-actions-section.md) <br/> |Zeigt an, ob das Menüelement in einem Aktionstag- oder Kontextmenü sichtbar ist.  <br/> |
 |[BeginGroup](begingroup-cell-actions-section.md) <br/> |Gibt an, ob im Menü über das Menüelement ein Trennzeichen einzufügen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  Sie können so viele Aktionen hinzufügen.  *Namen* Zeilen wie Sie benötigen, den Zeilen aussagekräftige Namen zuweisen und Zellenwerte festlegen. Klicken Sie zum Hinzufügen eines benutzerdefinierten Befehls zu einem vorhandenen Abschnitt Actions Maustaste auf eine Zeile, und klicken Sie im Kontextmenü auf **Zeile einfügen** . 
   

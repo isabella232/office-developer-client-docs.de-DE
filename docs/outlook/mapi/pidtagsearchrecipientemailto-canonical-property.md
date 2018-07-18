@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchRecipientEmailTo-Eigenschaft
+title: PidTagSearchRecipientEmailTo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795120"
 ---
-# <a name="pidtagsearchrecipientemailto-canonical-property"></a>Kanonische PidTagSearchRecipientEmailTo-Eigenschaft
+# <a name="pidtagsearchrecipientemailto-canonical-property"></a>PidTagSearchRecipientEmailTo (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält eine Unicode-Zeichenfolge, die in der Liste der e-Mail-Adressen oder An
 |Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_RECIP_EMAIL_TO_W  <br/> |
 |Bezeichner:  <br/> |0x0EA6  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

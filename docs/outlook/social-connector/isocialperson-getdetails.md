@@ -29,7 +29,7 @@ _Details_
   
 > [out] Ein XML-String-Wert, der die Details für eine Person darstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die zurückgegebene _Details_ XML-Zeichenfolge muss die Schemadefinition für die **Person**, gemäß Definition im Schema für Outlook Social Connector (OSC)-Erweiterbarkeit des Providers entsprechen.
   
@@ -37,5 +37,5 @@ Die OSC-Aufrufe **GetDetails** , wenn der OSC-Anbieter unterstützt zwischengesp
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 

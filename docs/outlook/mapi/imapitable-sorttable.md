@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792480"
 ---
-# <a name="imapitablesorttable"></a>SortTable
+# <a name="imapitablesorttable"></a>IMAPITable::SortTable
 
 **Betrifft**: Outlook 
   
@@ -84,7 +84,7 @@ MAPI_E_TOO_COMPLEX
     
    - Ein Sortiervorgang, die durch die Tabelle aus der **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))-Eigenschaft vorwärts wird fortgesetzt wird nur für eine Anlagentabelle angegeben, die diese Art der Sortierung unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **SortTable** -Methode ordnet die Zeilen in einer Tabellenansicht. Während einige Tabellen Standard- und kategorisierten auf verschiedenen Sortierschlüsselspalten Sortierung unterstützt wird, sind die Unterstützung mehr anderen Tabellen beschränkt. Von adressbuchanbietern implementierte unterstützt normalerweise nicht Sortierung. Nachricht Anbieter unterstützen normalerweise sortieren, wenn sie aufzubewahren, der die Sortierreihenfolge der Ordner, die entsteht, wenn eine vollständige Tabelle (einer Tabelle ohne Einschränkungen) sortiert ist. 
   
@@ -116,5 +116,5 @@ Bei jedem **SortTable** ein Fehler auftritt, wird die Sortierreihenfolge, die vo
 - [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)
 - [IMAPITable::SetColumns](imapitable-setcolumns.md)
 - [SSortOrderSet](ssortorderset.md)
-- [IMAPITable: IUnknown](imapitableiunknown.md)
+- [IMAPITable : IUnknown](imapitableiunknown.md)
 

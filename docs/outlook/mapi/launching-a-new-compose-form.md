@@ -1,5 +1,5 @@
 ---
-title: Starten ein neues Formular zum Verfassen
+title: Starten eines neuen Formulars zum Verfassen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792908"
 ---
-# <a name="launching-a-new-compose-form"></a>Starten ein neues Formular zum Verfassen
+# <a name="launching-a-new-compose-form"></a>Starten eines neuen Formulars zum Verfassen
 
   
   
@@ -39,5 +39,5 @@ Formular Server Implementierer erwarten, dass die folgende Sequenz von Methode v
 
 
 
-[Formular Server Interaktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

@@ -44,7 +44,7 @@ _u_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **SizedDtblCheckBox** können Sie ein Kontrollkästchen definieren, wenn die Anzahl der Zeichen Bezeichnung bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
   

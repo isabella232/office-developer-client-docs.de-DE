@@ -37,7 +37,7 @@ S_OK
   
 > MAPI-Subsystems hat versucht, um geladene MAPI-Anbieter zu benachrichtigen, dass der MAPI-Client wird ein Schnelles Herunterfahren führen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu vermeiden, sollten MAPI-Clients die basierend auf dem S_OK Ergebnis des MAPI-Subsystems in zurückgegebene **IMAPIClientShutdown::NotifyProcessShutdown** und [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) -Methoden aufrufen. die [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode. Weitere Informationen finden Sie unter [Bewährte Methoden für Schnelles Herunterfahren](best-practices-for-fast-shutdown.md).
   
@@ -45,7 +45,7 @@ Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu ver
 
 
 
-[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)
+[IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md)
 
 
 [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)

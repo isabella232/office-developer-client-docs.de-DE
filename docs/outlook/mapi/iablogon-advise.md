@@ -86,7 +86,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Der Adressbuchanbieter kann nicht die Eintrags-ID _LpEntryID_übergebenen behandeln.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Von adressbuchanbietern implementierte implementieren Sie die **IABLogon::Advise** -Methode zum Registrieren des Aufrufers benachrichtigt werden, wenn ein Objekt in einem der deren Container, geändert. Anrufer können für Benachrichtigungen bezüglich messaging-Benutzern, Verteilerlisten oder gesamte Container registrieren. 
   
@@ -130,5 +130,5 @@ Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event No
   
 [Benachrichtigung](notification.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

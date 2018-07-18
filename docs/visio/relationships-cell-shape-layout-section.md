@@ -24,7 +24,7 @@ Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes
 
  Microsoft Visio verwendet die Zelle Relationships die Beziehungen zu speichern, die dieses Shape betreffen. Eine Reihe von DEPENDSON-Funktion, mit den Parametern dargestellt, werden verwendet, um mit diesem Shape Beziehungen darstellen, wie in der folgenden Tabelle dargestellt. 
   
-|**Erster parameter**|**Zusätzliche Parameter**|
+|**Erster Parameter**|**Zusätzliche Parameter**|
 |:-----|:-----|
 |1  <br/> |Shapes, die Elemente dieses Containers sind  <br/> |
 |2  <br/> |Shapes, die Elemente dieser Liste sind  <br/> |
@@ -38,13 +38,13 @@ Speichert die Beziehungen zwischen Containern, Listen, Beschriftungen und Shapes
 |10  <br/> |Container an der unteren Begrenzungskante, an der sich dieses Shape befindet  <br/> |
 |11  <br/> |Liste, die von dieser Liste überlappt wird  <br/> |
    
-Zum Abrufen eines Verweises auf die Zelle Relationships nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie eine Referenz auf die Zelle Relationships nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Relationships  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Relationships aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle Relationships aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

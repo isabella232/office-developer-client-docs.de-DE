@@ -1,5 +1,5 @@
 ---
-title: Optional Transport Anbieter Features
+title: Optionale Funktionen für Transportanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793316"
 ---
-# <a name="optional-transport-provider-features"></a>Optional Transport Anbieter Features
+# <a name="optional-transport-provider-features"></a>Optionale Funktionen für Transportanbieter
 
   
   

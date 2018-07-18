@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -68,7 +68,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |:-----|:-----|:-----|
 |NoFill  <br/> |Gibt an, ob ein Pfad gefüllt werden kann.  <br/> |[Zelle "NoFill" (Abschnitt "Geometry")](nofill-cell-geometry-section.md) <br/> |
 |NoLine  <br/> |Legt fest, ob eine Linie um die Grenze des Pfads gezogen wird.  <br/> |[Zelle "NoLine" (Abschnitt "Geometry")](noline-cell-geometry-section.md) <br/> |
-|NoQuickDrag  <br/> |Bestimmt, ob ein Shape ausgewählt oder gezogen werden, wenn der Benutzer den vom Abschnitt "Geometrie" definierten ausgefüllten Bereich klickt werden kann.  <br/> |[Zelle "NoQuickDrag" (Abschnitt "Geometry")](noquickdrag-cell-geometry-section.md) <br/> |
+|NoQuickDrag  <br/> |Bestimmt, ob ein Shape ausgewählt oder gezogen werden, wenn der Benutzer den vom Abschnitt "Geometrie" definierten ausgefüllten Bereich klickt werden kann.  <br/> |[NoQuickDrag Cell (Geometry Section)](noquickdrag-cell-geometry-section.md) <br/> |
 |NoShow  <br/> |Gibt an, ob ein Pfad auf dem Zeichenblatt angezeigt wird.  <br/> |[Zelle "NoShow" (Abschnitt "Geometry")](noshow-cell-geometry-section.md) <br/> |
 |NoSnap  <br/> |Definiert, ob andere Shapes an einem Pfad einrasten.  <br/> |[Zelle "NoSnap" (Abschnitt "Geometry")](nosnap-cell-geometry-section.md) <br/> |
    

@@ -50,7 +50,7 @@ S_OK
   
 > Die Eintrags-ID des PAB wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients rufen Sie die **GetPAB** -Methode, um die Eintrags-ID des Containers als PAB abzurufen. Wenn ein PAB nicht im Profil eingerichtet wurde, wählt MAPI als PAB den ersten Container in der Adressbuchhierarchie, die Änderungen ermöglicht. 
   
@@ -70,9 +70,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische PidTagContainerFlags-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

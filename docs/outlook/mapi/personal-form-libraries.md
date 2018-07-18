@@ -1,5 +1,5 @@
 ---
-title: Persönliche Formularbibliotheken
+title: Eigene Formularbibliotheken
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793343"
 ---
-# <a name="personal-form-libraries"></a>Persönliche Formularbibliotheken
+# <a name="personal-form-libraries"></a>Eigene Formularbibliotheken
 
   
   

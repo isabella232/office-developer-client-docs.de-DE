@@ -58,7 +58,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Die Option MAPI_UNICODE wurde festgelegt, und die Sitzung Unicode nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::GetMsgStoresTable** -Methode ruft einen Zeiger auf die Nachricht Store-Tabelle, eine Tabelle von MAPI verwaltet wird, enthält Informationen zu jeder geöffneten Nachrichtenspeicher im Profil. 
   
@@ -84,7 +84,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [IMAPITable::QueryColumns](imapitable-querycolumns.md)
   
@@ -94,12 +94,12 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::SetColumns](imapitable-setcolumns.md)
   
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Nachrichtenspeicher Tabellen](message-store-tables.md)
+[Nachrichtenspeichertabellen](message-store-tables.md)
 

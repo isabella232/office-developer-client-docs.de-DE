@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792327"
 ---
-# <a name="imapiprovidershutdown--iunknown"></a>IMAPIProviderShutdown: IUnknown
+# <a name="imapiprovidershutdown--iunknown"></a>IMAPIProviderShutdown : IUnknown
 
   
   
@@ -44,7 +44,7 @@ Ermöglicht das MAPI-Subsystem, um einen MAPI-Anbieter für das schnelle Herunte
 |[NotifyProcessShutdown](imapiprovidershutdown-notifyprocessshutdown.md) <br/> |Zeigt den MAPI-Anbieter, dass ein MAPI-Client ausführt, ein Schnelles Herunterfahren, so dass der Anbieter Aktionen, um Datenverlust zu vermeiden nutzen kann.  <br/> |
 |[DoFastShutdown](imapiprovidershutdown-dofastshutdown.md) <br/> |Gibt an, an den MAPI-Anbieter, dass der MAPI-Client sofort beendet wird, damit der MAPI-Anbieter ändert sich, um Datenverlust zu vermeiden beibehalten wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Schnelles Herunterfahren kann ein MAPI-Client seine in kurzer Zeit zu beenden, hoffentlich geladen, nachdem sich der Client und MAPI-Anbieter haben gespeichert MAPI-Einstellungen und Daten. Der MAPI-Client initiiert ein Schnelles Herunterfahren immer und sollte Abfragen des MAPI-Subsystems für Schnelles Herunterfahren Unterstützung von MAPI-Anbieter geladen. Ein Administrator kann die Windows-Registrierung können Sie die anbieterunterstützung angeben, die erforderlich sind, um das Schnelles Herunterfahren aller MAPI-Clients zulassen wird auf Benutzerebene festgelegt. Weitere Informationen zu den Einstellungen in der Registrierung finden Sie unter [Fast Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md). Für schnelle Herunterfahren ohne Datenverlust erfolgreich ausgeführt wurde, sollte MAPI-Anbieter jedoch die **IMAPIProviderShutdown** -Schnittstelle implementieren. 
   

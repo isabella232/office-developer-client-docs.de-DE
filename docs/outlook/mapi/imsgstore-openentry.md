@@ -90,7 +90,7 @@ MAPI_NO_CACHE
   
 > Wenn ein Speichers im Cache-Modus geöffnet wird, kann ein Client oder Dienstanbieter **IMsgStore::OpenEntry**, das MAPI_NO_CACHE-Flag zum Öffnen eines Elements oder einen Ordner auf dem remote-Speicher aufrufen. Wenn Sie den Nachrichtenspeicher mit dem MDB_ONLINE-Flag auf dem Remoteserver öffnen, müssen Sie nicht das Flag MAPI_NO_CACHE verwenden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::OpenEntry** -Methode öffnet ein Ordner oder eine Nachricht und gibt einen Zeiger auf eine Schnittstelle, die für eine zusätzliche Access verwendet werden kann. 
   

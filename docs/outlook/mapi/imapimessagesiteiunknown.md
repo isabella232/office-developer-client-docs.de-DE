@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792238"
 ---
-# <a name="imapimessagesite--iunknown"></a>IMAPIMessageSite: IUnknown
+# <a name="imapimessagesite--iunknown"></a>IMAPIMessageSite : IUnknown
 
   
   

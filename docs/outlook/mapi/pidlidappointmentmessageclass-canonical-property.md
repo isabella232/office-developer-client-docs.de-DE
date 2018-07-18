@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentMessageClass-Eigenschaft
+title: PidLidAppointmentMessageClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793353"
 ---
-# <a name="pidlidappointmentmessageclass-canonical-property"></a>Kanonische PidLidAppointmentMessageClass-Eigenschaft
+# <a name="pidlidappointmentmessageclass-canonical-property"></a>PidLidAppointmentMessageClass (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessagecla
 |Datentyp:  <br/> |PT_TSTRING  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss entweder "IPM. Termin"oder"IPM vorangestellt werden. Termin. ". Diese Eigenschaft ist nicht erforderlich.
   

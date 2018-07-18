@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für E-Mail-Anlagen für Nachrichtenspeicher-Anbieter
+title: Unterstützen von Nachrichtenanlagen für Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795652"
 ---
-# <a name="supporting-message-attachments-for-message-store-providers"></a>Unterstützung für E-Mail-Anlagen für Nachrichtenspeicher-Anbieter
+# <a name="supporting-message-attachments-for-message-store-providers"></a>Unterstützen von Nachrichtenanlagen für Nachrichtenspeicheranbieter
 
  
   

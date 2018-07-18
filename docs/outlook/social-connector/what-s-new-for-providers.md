@@ -1,5 +1,5 @@
 ---
-title: What's new for Anbieter
+title: Neues für Anbieter
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796101"
 ---
-# <a name="whats-new-for-providers"></a>What's new for Anbieter
+# <a name="whats-new-for-providers"></a>Neues für Anbieter
 
 In diesem Thema werden die wichtigsten Änderungen in Outlook Social Connector 2013 (OSC). Es enthält einen Vergleich zwischen Outlook Social Connector 2013 und Outlook Social Connector 1.1 verfügbaren Features. Außerdem werden Elemente der Benutzeroberfläche und XML-Elemente, die hinzugefügt, geändert, veraltet oder wurden beschrieben. 
   

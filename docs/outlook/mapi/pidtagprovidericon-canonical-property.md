@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderIcon-Eigenschaft
+title: PidTagProviderIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794838"
 ---
-# <a name="pidtagprovidericon-canonical-property"></a>Kanonische PidTagProviderIcon-Eigenschaft
+# <a name="pidtagprovidericon-canonical-property"></a>PidTagProviderIcon (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Unicodezeichenfolge, die ein benutzerdefiniertes Symbol oder Symbo
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften geben Sie die Ressourcendatei, die ein benutzerdefiniertes Symbol enthält, die einen MAPI-Anbieter Status online, darstellt und optional ein anderes benutzerdefiniertes Symbol in den Offlinemodus. Outlook fordert immer diese Eigenschaften im Unicode-Darstellung. 
   

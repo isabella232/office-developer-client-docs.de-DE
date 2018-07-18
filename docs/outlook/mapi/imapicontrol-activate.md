@@ -50,7 +50,7 @@ S_OK
   
 > Das Button-Steuerelement wurde erfolgreich aktiviert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIControl::Activate** -Methode führt die Aufgaben, die nach Klicken auf das Schaltflächensteuerelement eines Benutzers. Klicken Sie dann auf als Teil der Verarbeitung der Tabelle anzeigen, tritt nach dem richtet MAPI eines Aufrufs an **Activate** nach der ersten aufrufenden [IMAPIControl::GetState](imapicontrol-getstate.md) um festzustellen, ob die Schaltfläche aktiviert ist. 
   
@@ -62,5 +62,5 @@ Weitere Informationen zum **Aktivieren** und die andere implementieren [IMAPICon
 
 [IMAPIControl::GetState](imapicontrol-getstate.md)
   
-[IMAPIControl: IUnknown](imapicontroliunknown.md)
+[IMAPIControl : IUnknown](imapicontroliunknown.md)
 

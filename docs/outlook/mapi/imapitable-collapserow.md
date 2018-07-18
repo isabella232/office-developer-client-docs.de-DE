@@ -68,7 +68,7 @@ MAPI_E_INVALID_ENTRYID
   
 > Die Zeile, die vom _PbInstanceKey_ -Parameter ist nicht vorhanden. Dieser Fehler ist eine Alternative zur MAPI_E_NOT_FOUND. Dienstanbieter können entweder 1 zurück. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::CollapseRow** -Methode wird eine Tabellenkategorie reduziert und entfernt ihn aus der Tabellenansicht. Die Zeilen werden regelmäßig beginnend in der Zeile, die von der **PR_INSTANCE_KEY** -Eigenschaft auf das durch den Parameter _PbInstanceKey_ identifiziert. Die Anzahl der Zeilen, die aus der Ansicht entfernt wurden, wird in den Inhalt des Parameters _LpulRowCount_ zurückgegeben. 
   
@@ -98,11 +98,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md)
   
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
 [SSortOrderSet](ssortorderset.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

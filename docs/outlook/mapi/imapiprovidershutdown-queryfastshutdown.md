@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI-Anbieter unterstützt keine den MAPI-Client zum Herunterfahren schnelle.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Anbieter, die keine schnelle Herunterfahren von Clients unterstützen müssen sollten weiterhin die [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) -Schnittstelle implementieren, und haben die **IMAPIProviderShutdown::QueryFastShutdown** -Methode MAPI_E_NO_SUPPORT zurückgeben. Für Outlook als MAPI-Client bewirkt, dass dieser Outlook warten, dass alle externen Verweise freigegeben werden muss, bevor sie beendet wird. 
   
@@ -51,7 +51,7 @@ Je nach Windows-Registrierung des Benutzers verhindert Einstellung für das schn
 
 
 
-[IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md)
+[IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md)
 
 
 [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)

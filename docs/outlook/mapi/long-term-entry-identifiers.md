@@ -1,5 +1,5 @@
 ---
-title: Langfristige-Eintragsbezeichner
+title: Langfristige Eintragsbezeichner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792912"
 ---
-# <a name="long-term-entry-identifiers"></a>Langfristige-Eintragsbezeichner
+# <a name="long-term-entry-identifiers"></a>Langfristige Eintragsbezeichner
 
   
   

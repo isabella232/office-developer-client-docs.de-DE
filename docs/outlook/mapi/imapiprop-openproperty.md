@@ -99,7 +99,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Der Eigenschaftentyp im Tag wird auf PT_UNSPECIFIED festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIProp::OpenProperty** -Methode ermöglicht den Zugriff auf eine Eigenschaft über eine bestimmte Schnittstelle. **OpenProperty** ist eine Alternative an die Methoden [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPIProp::SetProps](imapiprop-setprops.md) . Rufen Sie **GetProps** oder **SetProps** fehlschlägt, weil die Eigenschaft zu groß oder zu komplex ist, **OpenProperty**. **OpenProperty** wird in der Regel vom Typ PT_OBJECT Eigenschaften zugreifen. 
   
@@ -110,7 +110,7 @@ Die **IMAPIProp::OpenProperty** -Methode ermöglicht den Zugriff auf eine Eigens
 |**Typ der Anlage**|**Schnittstellenbezeichner, der verwendet**|
 |:-----|:-----|
 |Binary  <br/> |IID_IStream  <br/> |
-|String  <br/> |IID_IStream  <br/> |
+|Zeichenfolge  <br/> |IID_IStream  <br/> |
 |Nachricht  <br/> |IID_IMessage  <br/> |
 |OLE 2.0  <br/> |IID_IStreamDocfile  <br/> |
    
@@ -145,8 +145,8 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
 - [IMAPIProp::SetProps](imapiprop-setprops.md)
 - [IMAPISupport::IStorageFromStream](imapisupport-istoragefromstream.md)
-- [IMAPITable: IUnknown](imapitableiunknown.md)
-- [IMAPIProp: IUnknown](imapipropiunknown.md)
+- [IMAPITable : IUnknown](imapitableiunknown.md)
+- [IMAPIProp : IUnknown](imapipropiunknown.md)
 - [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
 - [Öffnen einer Anlage](opening-an-attachment.md)
 

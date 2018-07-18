@@ -23,11 +23,11 @@ Beginnen in Microsoft Outlook 2010 und jetzt einschließlich Microsoft Outlook 2
   
 In den Themen in diesem Abschnitt wird beschrieben, MAPI-Unterstützung für einen Client so schnell heruntergefahren wird.
   
-[Schnelles Herunterfahren (Übersicht)](fast-shutdown-overview.md)
+[Übersicht über das schnelle Herunterfahren](fast-shutdown-overview.md)
   
 > In diesem Thema werden den grundlegenden Mechanismus für Schnelles Herunterfahren vorgestellt.
     
-[Schnelles Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md)
+[Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md)
   
 > In diesem Thema werden die verfügbaren Optionen für Administratoren Schnelles Herunterfahren auf Benutzerebene für die MAPI-Clients des Benutzers zu übernehmen.
     

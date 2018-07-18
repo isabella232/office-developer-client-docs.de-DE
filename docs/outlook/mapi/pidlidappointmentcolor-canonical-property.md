@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentColor-Eigenschaft
+title: PidLidAppointmentColor (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793340"
 ---
-# <a name="pidlidappointmentcolor-canonical-property"></a>Kanonische PidLidAppointmentColor-Eigenschaft
+# <a name="pidlidappointmentcolor-canonical-property"></a>PidLidAppointmentColor (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Designfarbe zu verwenden, wenn im Kalender anzeigen.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Farbe zu verwenden, wenn im Kalender anzeigen. Ein Client oder Server sollte diesen Wert für die Abwärtskompatibilität mit älteren Clients festlegen. Sie können stattdessen im Kalender basierend auf dem Wert der Eigenschaft **Schlüsselwörter** ([PidNameKeywords](pidnamekeywords-canonical-property.md)) als angegebenen in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angezeigt. Bei Festlegung muss der Wert eine der folgenden sein:
   

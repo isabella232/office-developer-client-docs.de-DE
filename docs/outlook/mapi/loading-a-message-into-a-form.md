@@ -1,5 +1,5 @@
 ---
-title: Laden eine Nachricht in einem Formular
+title: Laden eine Nachricht in ein Formular
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792900"
 ---
-# <a name="loading-a-message-into-a-form"></a>Laden eine Nachricht in einem Formular
+# <a name="loading-a-message-into-a-form"></a>Laden eine Nachricht in ein Formular
 
   
   

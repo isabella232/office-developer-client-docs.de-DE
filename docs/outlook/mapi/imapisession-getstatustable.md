@@ -54,7 +54,7 @@ S_OK
   
 > Die Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::GetStatusTable** -Methode ermöglicht den Zugriff auf die Statustabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält. Es wird eine Zeile in der Tabelle Informationen zu MAPI-Subsystems, eine Zeile für die MAPI-Warteschlange, eine Zeile für die integrierte Adressbuch und eine Zeile für jeden Anbieter im Profil. 
   
@@ -74,7 +74,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [IMAPITable::QueryColumns](imapitable-querycolumns.md)
   
@@ -84,7 +84,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::SetColumns](imapitable-setcolumns.md)
   
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 

@@ -15,11 +15,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795973"
 ---
-# <a name="isocialperson--iunknown"></a>ISocialPerson: IUnknown
+# <a name="isocialperson--iunknown"></a>ISocialPerson : IUnknown
 
 Stellt eine Person im sozialen Netzwerk.
   
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 In der folgenden Tabelle werden die Member, die für die **ISocialPerson** -Schnittstelle verfügbar sind. 
   
@@ -32,7 +32,7 @@ In der folgenden Tabelle werden die Member, die für die **ISocialPerson** -Schn
 |[GetPicture](isocialperson-getpicture.md) <br/> |Methode  <br/> |Ruft ein Array von Bytes, die die Bildressource der Person enthält.  <br/> |
 |[GetStatus](isocialperson-getstatus.md) <br/> |Methode  <br/> |Diese Methode wird derzeit nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Outlook Social Connector (OSC)-Anbieter muss diese Schnittstelle für die Kommunikation mit dem OSC implementieren.
   

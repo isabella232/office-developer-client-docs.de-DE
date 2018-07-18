@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792651"
 ---
-# <a name="imsgstore--imapiprop"></a>IMsgStore: IMAPIProp
+# <a name="imsgstore--imapiprop"></a>IMsgStore : IMAPIProp
 
   
   

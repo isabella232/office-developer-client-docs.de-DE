@@ -77,7 +77,7 @@ S_OK
   
 > Der Zeichnungsanzeige Status wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular-Objekte aufrufen, die **IMAPIViewContext::GetViewStatus** -Methode, um zu bestimmen, ob es sind weitere Nachrichten an, die in einer Ansicht des Formulars in einem aktiviert werden, oder beide Richtungen d. h., in die Richtung, in dem ein Befehl **Weiter** aktiviert, Nachrichten in der Richtung, in dem ein **Vorherige** Befehl Nachrichten, aktiviert, oder in beide Richtungen. Der Wert, der auf den durch den Parameter _LpulStatus_ wird verwendet, um festzustellen, ob die Flags VCSTATUS_NEXT und VCSTATUS_PREV für [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)gültig sind. Wenn das Flag VCSTATUS_DELETE Set, aber nicht das Flag VCSTATUS_READONLY ist, kann die Nachricht mit der [IMAPIMessageSite::DeleteMessage](imapimessagesite-deletemessage.md) -Methode gelöscht werden. 
   
@@ -99,7 +99,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIMessageSite::GetSiteStatus](imapimessagesite-getsitestatus.md)
   
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

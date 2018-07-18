@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI-Subsystems bietet keine Unterstützung für schnelle Herunterfahren von Clients.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu vermeiden, sollten MAPI-Clients die basierend auf dem S_OK Ergebnis des MAPI-Subsystems in zurückgegebene [IMAPIClientShutdown::NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) und **IMAPIClientShutdown::DoFastShutdown** -Methoden aufrufen. die [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode. Weitere Informationen finden Sie unter [Bewährte Methoden für Schnelles Herunterfahren](best-practices-for-fast-shutdown.md).
   
@@ -49,7 +49,7 @@ Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu ver
 
 
 
-[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)
+[IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md)
 
 
 [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)

@@ -81,7 +81,7 @@ MAPI_E_OBJECT_DELETED
   
 > Das Objekt wurde gelöscht, da es geöffnet wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIProp::SaveChanges** -Methode ändert Eigenschaft permanente für Objekte, die Unterstützung für das Transaktionsmodell verarbeiten, wie Nachrichten, Anlagen, Address Book-Container und messaging User-Objekte. Objekte, die keine für Transaktionen im Ordner, Nachrichtenspeicher und Profil Abschnitte Unterstützung, nehmen Sie Änderungen permanente sofort. Kein Aufruf von **SaveChanges** ist erforderlich. 
   
@@ -130,9 +130,9 @@ Weitere Informationen finden Sie unter [Speichern von MAPI-Eigenschaften](saving
 
 [IMAPIProp::SetProps](imapiprop-setprops.md)
   
-[Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md)
+[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [Speichern von MAPI-Eigenschaften](saving-mapi-properties.md)

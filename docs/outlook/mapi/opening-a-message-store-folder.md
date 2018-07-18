@@ -69,6 +69,6 @@ Bevor Sie versuchen, eine der folgenden speziellen-Eintragsbezeichner abzurufen,
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md) 
+- [PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md) 
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
 

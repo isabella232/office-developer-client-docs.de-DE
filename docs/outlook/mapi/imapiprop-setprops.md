@@ -129,5 +129,5 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropValue](spropvalue.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 

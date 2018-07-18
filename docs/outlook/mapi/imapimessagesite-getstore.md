@@ -49,7 +49,7 @@ S_FALSE
   
 > Es ist kein Speicher, die die Nachricht enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
   
@@ -65,10 +65,10 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formulars Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

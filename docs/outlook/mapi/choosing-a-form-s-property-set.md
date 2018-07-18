@@ -38,5 +38,5 @@ Weitere Informationen zum Definieren von benutzerdefinierter Eigenschaften finde
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

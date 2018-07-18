@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentEndWhole-Eigenschaft
+title: PidLidAppointmentEndWhole (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793350"
 ---
-# <a name="pidlidappointmentendwhole-canonical-property"></a>Kanonische PidLidAppointmentEndWhole-Eigenschaft
+# <a name="pidlidappointmentendwhole-canonical-property"></a>PidLidAppointmentEndWhole (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Das Datum und die Zeit, die am Ende des Termins darstellt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft entspricht der **DispidApptEndWhole** -Eigenschaft des Termins in Microsoft Office Outlook-Objektmodell. 
   

@@ -49,7 +49,7 @@ S_OK
   
 > Der Wert des Flags wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Dienstanbieter zur Unterscheidung zwischen Objekte der obersten Ebene ermöglicht und Unterobjekte mit dem MAPI_TOP_LEVEL-Flag, damit alle Objekte in einem Vorgang beteiligt können die gleiche [IMAPIProgress](imapiprogressiunknown.md) -Implementierung, Status angezeigt. Daraufhin wird die Anzeige Indikator reibungslos in einer Richtung positive fortfahren. Ob das Flag MAPI_TOP_LEVEL festgelegt ist bestimmt, wie-Dienstanbieter die anderen Parameter in nachfolgenden Aufrufe der Fortschritt-Objekts festlegen. 
   
@@ -77,12 +77,12 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIProgress::SetLimits](imapiprogress-setlimits.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md)
   
-[Implementieren eine Statusanzeige](implementing-a-progress-indicator.md)
+[Implementieren eines Statusindikators](implementing-a-progress-indicator.md)
 

@@ -32,7 +32,7 @@ SETATREF (** *Verweis* ** [, ** *Set_expression* ** [, ** *Ignore_eval* **]])
 | _set_expression_ <br/> |Optional  <br/> |**String** <br/> |Ein Ausdruck, der _Reference_zugewiesen ist.  <br/> |
 | _ignore_eval_ <br/> |Optional  <br/> |**Boolean** <br/> |Wenn "true" ergibt die SETATREF-Funktion (0) 0 (null); ist der Wert FALSE ergibt (Standardeinstellung) die SETATREF-Funktion den Wert des _Verweises_.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn eine Benutzeraktion im Zeichnungsfenster oder eine Automatisierungsmethode bewirkt, Microsoft Visio dass, eine Zelle mit einer SETATREF-Formel zu aktualisieren, wird der Wert stattdessen auf die Zelle, die durch die SETATREF-Formel ( _Referenz_) umgeleitet. Die Formel in die Zelle mit der SETATREF-Funktion bleibt intakt.
   

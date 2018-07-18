@@ -1,5 +1,5 @@
 ---
-title: Abrufen von primären und Anbieter Identität
+title: Abrufen der primären und Anbieteridentität
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795389"
 ---
-# <a name="retrieving-primary-and-provider-identity"></a>Abrufen von primären und Anbieter Identität
+# <a name="retrieving-primary-and-provider-identity"></a>Abrufen der primären und Anbieteridentität
 
   
   

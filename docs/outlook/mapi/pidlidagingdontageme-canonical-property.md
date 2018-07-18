@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAgingDontAgeMe-Eigenschaft
+title: PidLidAgingDontAgeMe (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793342"
 ---
-# <a name="pidlidagingdontageme-canonical-property"></a>Kanonische PidLidAgingDontAgeMe-Eigenschaft
+# <a name="pidlidagingdontageme-canonical-property"></a>PidLidAgingDontAgeMe (kanonische Eigenschaft)
 
   
   

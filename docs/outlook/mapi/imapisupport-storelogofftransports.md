@@ -83,7 +83,7 @@ S_OK
   
 > Das Abmelden Verfahren erfolgreich war.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::StoreLogoffTransports** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **StoreLogoffTransports** um-Clientanwendungen können einige Steuern wie MAPI-Handles Transport Anbieter Aktivität als Nachrichtenspeicher geschlossen wird. 
   

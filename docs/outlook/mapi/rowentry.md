@@ -34,7 +34,7 @@ typedef struct
 }  ROWENTRY, FAR * LPROWENTRY;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulRowFlags**
   
@@ -66,6 +66,6 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
    
 ## <a name="see-also"></a>Siehe auch
   
-- [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+- [IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

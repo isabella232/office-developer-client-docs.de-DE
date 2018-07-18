@@ -18,7 +18,7 @@ ms.locfileid: "19796922"
 
 Ändert das Aussehen und Verhalten (Ornament) von Legenden, Containern, Zeitplänen und Organigramm-Shapes.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

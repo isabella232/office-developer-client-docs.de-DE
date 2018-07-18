@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSubjectMessageId-Eigenschaft
+title: PidTagSubjectMessageId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795255"
 ---
-# <a name="pidtagsubjectmessageid-canonical-property"></a>Kanonische PidTagSubjectMessageId-Eigenschaft
+# <a name="pidtagsubjectmessageid-canonical-property"></a>PidTagSubjectMessageId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Binärwert an, der aus der Nachricht kopiert wird für die ein Be
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft, wie die Eigenschaft **PR_REPORT_TAG** ([PidTagReportTag](pidtagreporttag-canonical-property.md)) kann verwendet werden, um einen Bericht mit der ursprünglichen Nachricht zu korrelieren. 
   

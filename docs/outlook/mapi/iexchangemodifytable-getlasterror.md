@@ -53,7 +53,7 @@ HRESULT GetLastError(
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
   
 [MAPIERROR](mapierror.md)
 

@@ -28,7 +28,7 @@ ANG360 (** *Winkel* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der zu normalisierende Winkel.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der zu normalisierende Winkel.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

@@ -54,7 +54,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war insgesamt erfolgreich, aber es sind keine Empfänger Optionen für diese Art des Empfängers. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::StatusRecips** -Methode wird für Transport Anbieter Unterstützungsobjekte implementiert. Transportanbieter Aufrufen **StatusRecips** um anzufordern, MAPI Senden eines Berichts Übermittlung oder Nondelivery einen Satz von mindestens eines der Empfänger einer Nachricht. 
   

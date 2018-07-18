@@ -1,5 +1,5 @@
 ---
-title: Outlook-Elemente und Felder
+title: Elemente und Felder in Outlook
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793329"
 ---
-# <a name="outlook-items-and-fields"></a>Outlook-Elemente und Felder
+# <a name="outlook-items-and-fields"></a>Elemente und Felder in Outlook
 
   
   
@@ -35,21 +35,21 @@ Jedes benutzerdefinierte Feld eines Elements ist einen Wert, der in einer entspr
 
 
 
-[Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu.](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition Stream-Beispiel](propertydefinition-stream-sample.md)
+[Beispiel für PropertyDefinition-Stream](propertydefinition-stream-sample.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[PropertyDefinition Stream-Struktur](propertydefinition-stream-structure.md)
+[PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
   
-[FieldDefinition Stream-Struktur](fielddefinition-stream-structure.md)
+[FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
   
-[SkipBlock Stream-Struktur](skipblock-stream-structure.md)
+[SkipBlock-Streamstruktur](skipblock-stream-structure.md)
   
-[FirstSkipBlockContent Stream-Struktur](firstskipblockcontent-stream-structure.md)
+[FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
   
-[PackedAnsiString Stream-Struktur](packedansistring-stream-structure.md)
+[PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
   
-[PackedUnicodeString Stream-Struktur](packedunicodestring-stream-structure.md)
+[PackedUnicodeString-Streamstruktur](packedunicodestring-stream-structure.md)
 

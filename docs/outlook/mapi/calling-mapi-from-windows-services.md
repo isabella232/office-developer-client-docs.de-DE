@@ -1,5 +1,5 @@
 ---
-title: Aufrufen von MAPI über Windows-Dienste
+title: Aufrufen von MAPI-Anruf über Windows-Dienste
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791365"
 ---
-# <a name="calling-mapi-from-windows-services"></a>Aufrufen von MAPI über Windows-Dienste
+# <a name="calling-mapi-from-windows-services"></a>Aufrufen von MAPI-Anruf über Windows-Dienste
 
   
   
@@ -43,12 +43,12 @@ Zur Verarbeitung von Nachrichten in einem Initialisierungsthread, führt ein MAP
 
 
 
-["MAPIInitialize"](mapiinitialize.md)
+[MAPIInitialize](mapiinitialize.md)
   
 [MAPIINIT_0](mapiinit_0.md)
   
 [MAPILogonEx](mapilogonex.md)
 
 
-[Betrieb von Problemen Umgebung](operating-environment-issues.md)
+[Probleme in der Betriebssystemumgebung](operating-environment-issues.md)
 

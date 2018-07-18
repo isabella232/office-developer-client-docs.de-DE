@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoMonthsAway-Eigenschaft
+title: PidTagScheduleInfoMonthsAway (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795102"
 ---
-# <a name="pidtagscheduleinfomonthsaway-canonical-property"></a>Kanonische PidTagScheduleInfoMonthsAway-Eigenschaft
+# <a name="pidtagscheduleinfomonthsaway-canonical-property"></a>PidTagScheduleInfoMonthsAway (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste der Monate, für die Frei/Gebucht-Daten vom Typ abwesend (AB
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format, Berechnung und Einschränkungen dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)), aber finden Sie unter Termine, die nicht im Büro (OOF) für das zugeordnete gekennzeichnet sind Calendar-Objekt.
   

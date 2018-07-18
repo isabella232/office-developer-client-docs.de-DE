@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792049"
 ---
-# <a name="iconvertersession--iunknown"></a>IConverterSession: IUnknown
+# <a name="iconvertersession--iunknown"></a>IConverterSession : IUnknown
 
   
   
@@ -49,7 +49,7 @@ Ermöglicht die Konvertierung zwischen MIME-Objekten und MAPI-Nachrichten. Dies 
 | *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
 |**[SetCharSet](iconvertersession-setcharset.md)** <br/> |Gibt an, dass ein optionales Zeichen festgelegt, dass die MAPI zu MIME-Konverter, beim Konvertieren einer MAPI-Nachricht in eine MIME-Stream verwendet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Rufen Sie **SetEncoding** vor der Nutzung **MAPIToMIMEStm** Konvertierung ausführen. 
   
@@ -57,7 +57,7 @@ Rufen Sie **SetEncoding** vor der Nutzung **MAPIToMIMEStm** Konvertierung ausfü
 
 
 
-[Informationen über die Konvertierung MAPI-MIME-API](about-the-mapi-mime-conversion-api.md)
+[Informationen über die MAPI-MIME-Konvertierungs-API](about-the-mapi-mime-conversion-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
 

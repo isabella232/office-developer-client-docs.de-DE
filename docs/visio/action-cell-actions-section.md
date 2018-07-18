@@ -27,13 +27,13 @@ Enthält die Formel, die ausgeführt werden soll, wenn ein Benutzer einen Befehl
 
 Die Zelle Action wird nur ausgewertet, wenn die Aktion stattfindet und nicht bei Eingabe der Formel.
   
-Ein Verweis auf die die Zelle Action nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft verwenden: 
+Wenn Sie einen Verweis auf die Zelle Action aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Aktionen.  *Name* . Aktion wobei Aktionen. *Name* ist der Name der Zeile actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Action aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Action aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

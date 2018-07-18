@@ -50,7 +50,7 @@ S_OK
   
 > Die Benachrichtigung wurde erfolgreich verarbeitet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Benachrichtigungsprozess beginnt, wenn ein Client oder MAPI **Advise** -Methode des Dienstanbieters registrieren, um eine Benachrichtigung eines bestimmten Typs für ein bestimmtes Objekt aufruft. Einer der Parameter der **Advise** -Methode ist ein Zeiger auf ein Objekt der Advise-Empfänger, die die [IMAPIAdviseSink](imapiadvisesinkiunknown.md) -Schnittstelle implementiert wird. Bei Auftreten eines Ereignisses auf dem Zielobjekt, das die registrierten Benachrichtigung, den Dienstanbieter entweder direkt oder indirekt über MAPI, entspricht, wird der Advise-Empfänger **OnNotify** -Methode aufgerufen. 
   
@@ -109,7 +109,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [Benachrichtigung](notification.md)
   
-[IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)
+[IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

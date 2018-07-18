@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagValidFolderMask-Eigenschaft
+title: PidTagValidFolderMask (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795289"
 ---
-# <a name="pidtagvalidfoldermask-canonical-property"></a>Kanonische PidTagValidFolderMask-Eigenschaft
+# <a name="pidtagvalidfoldermask-canonical-property"></a>PidTagValidFolderMask (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske der Flags, die die Gültigkeit der Eintragsbezeichner der
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eintrags-ID für einen Ordner werden ungültig, wenn ein Benutzer auf den Ordner löscht oder der Nachrichtenspeicher beschädigt.
   

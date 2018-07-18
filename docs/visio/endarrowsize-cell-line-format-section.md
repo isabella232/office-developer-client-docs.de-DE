@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796954"
 ---
-# <a name="endarrowsize-cell-line-format-section"></a>Zelle "EndArrowSize" (Abschnitt "Line Format")
+# <a name="endarrowsize-cell-line-format-section"></a>EndArrowSize Cell (Line Format Section)
 
 Bestimmt die Pfeilspitzengröße am Linienende.
   
@@ -30,17 +30,17 @@ Bestimmt die Pfeilspitzengröße am Linienende.
 |5  <br/> |Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
 |6  <br/> |Kolossal  <br/> |**visArrowSizeColossal** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können diesen Wert auch im Dialogfeld **Linie** festlegen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** klicken Sie auf **Zeile**, **Pfeile**, und klicken Sie dann auf **Weitere Pfeile**).
+Sie können diesen Wert auch im Dialogfeld **Linie** festlegen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Linie**, zeigen Sie auf **Pfeile**, und klicken Sie dann auf **Weitere Pfeile**).
   
-Wenn Sie einen Verweis auf die Zelle EndArrowSize nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle EndArrowSize aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |EndArrowSize  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EndArrowSize aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle EndArrowSize aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -46,7 +46,7 @@ Legt das Routingformat und die Richtung für einen ausgewählten Verbinder auf d
 |21  <br/> |Einfach horizontal-vertikal  <br/> |Keine  <br/> |**visLORouteSimpleHV** <br/> |
 |22  <br/> |Einfach vertikal-horizontal  <br/> |Keine  <br/> |**visLORouteSimpleVH** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch auf die Registerkarte **Verbinder** im Dialogfeld **Verhalten** für einen bestimmten Verbinder festlegen (klicken Sie bei markiertem Verbinder, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** , und klicken Sie dann auf die Registerkarte **Verbinder** ). 
   
@@ -54,13 +54,13 @@ Wenn Sie dieses Verhalten für *sämtliche* die Verbinder auf einem Zeichenblatt
   
 In Versionen vor Visio  2000 wird dieses Verhalten in der Zelle ObjVerhalten im Abschnitt Miscellaneous festgelegt.
   
-Wenn Sie einen Verweis auf die Zelle ShapeRouteStyle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapeRouteStyle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapeRouteStyle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeRouteStyle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapeRouteStyle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

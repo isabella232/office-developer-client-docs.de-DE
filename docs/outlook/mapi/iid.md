@@ -38,11 +38,11 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 Finden Sie unter der **GUID** -Struktur. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine **IID** -Struktur dient zur eindeutigen Identifizierung eine MAPI-Schnittstelle und ein Objekt eine bestimmte Schnittstelle zugeordnet. Beispielsweise legt fest, wenn eine Client-Anrufe [IMAPISession::OpenEntry](imapisession-openentry.md) an einen Ordner zu öffnen, der Client den _LpInterface_ -Parameter auf **IID** zeigen, das [IMAPIFolder](imapifolderimapicontainer.md) Schnittstelle darstellt. MAPI definiert die **IMAPIFolderIID** um IID_IMAPIFolder werden. **IID** Strukturen werden auch verwendet, um OLE-Schnittstellen eindeutig zu identifizieren. 
   

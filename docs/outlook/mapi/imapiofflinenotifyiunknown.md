@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792255"
 ---
-# <a name="imapiofflinenotify--iunknown"></a>IMAPIOfflineNotify: IUnknown
+# <a name="imapiofflinenotify--iunknown"></a>IMAPIOfflineNotify : IUnknown
 
   
   
@@ -38,7 +38,7 @@ Senden von Benachrichtigungen Rückrufe an einen Client unterstützt Microsoft O
 |:-----|:-----|
 |[Benachrichtigen](imapiofflinenotify-notify.md) <br/> |Sendet Benachrichtigungen an einen Client zu Änderungen in Verbindungsstatus.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Client muss diese Schnittstelle implementieren und einen Zeiger darauf als Mitglied in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** übergeben, beim Einrichten von Rückrufe mit **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)**. Anschließend werden Outlook 2010 oder Outlook 2013 können diese Schnittstelle verwenden, um die Benachrichtigung Rückrufe an den Client gesendet. 
   
@@ -49,7 +49,7 @@ Der Client muss diese Schnittstelle implementieren und einen Zeiger darauf als M
 [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)
 
 
-[Über die Offline State-API](about-the-offline-state-api.md)
+[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   

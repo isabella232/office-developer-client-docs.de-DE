@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleUserFlags-Eigenschaft
+title: PidTagRuleUserFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795059"
 ---
-# <a name="pidtagruleuserflags-canonical-property"></a>Kanonische PidTagRuleUserFlags-Eigenschaft
+# <a name="pidtagruleuserflags-canonical-property"></a>PidTagRuleUserFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft wird vom Client für die ausschließliche Verwendung des Clien
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Server muss den Wert dieser Eigenschaft beibehalten, wenn er vom Client festgelegt wurde. Der Server muss während Rule Evaluation und Verarbeitung ignorieren.
   

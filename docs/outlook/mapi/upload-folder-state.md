@@ -1,5 +1,5 @@
 ---
-title: Upload Ordner Zustand
+title: Status „Uploadordner“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795797"
 ---
-# <a name="upload-folder-state"></a>Upload Ordner Zustand
+# <a name="upload-folder-state"></a>Status „Uploadordner“
 
   
   
@@ -48,11 +48,11 @@ Nach Ende der Ordner Upload gibt der lokale Speicher in den Upload Hierarchie Zu
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

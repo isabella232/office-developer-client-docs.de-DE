@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentAuxiliaryFlags-Eigenschaft
+title: PidLidAppointmentAuxiliaryFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793338"
 ---
-# <a name="pidlidappointmentauxiliaryflags-canonical-property"></a>Kanonische PidLidAppointmentAuxiliaryFlags-Eigenschaft
+# <a name="pidlidappointmentauxiliaryflags-canonical-property"></a>PidLidAppointmentAuxiliaryFlags (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt ein Bitfeld, das den Hilfs Status des Objekts beschreibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich. Im folgenden sind die einzelnen Flags, die festgelegt werden können.
   

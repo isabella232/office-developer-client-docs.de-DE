@@ -33,11 +33,11 @@ _languageTag_
   
 > [in] Der Internet Engineering Task Force (IETF) Sprach-Tag, definiert durch [[RFC4646]](http://www.ietf.org/rfc/rfc4646.txt) und [[RFC4647]](http://www.ietf.org/rfc/rfc4647.txt), die die Sprache der Benutzeroberfläche von Outlook darstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Versionsformat für den Parameter _SocialProviderInterfaceVersion_ ist _X_. _Xxxx_, wobei _X_ der Hauptversion und _Xxxx_ ist die Nebenversion der die OSC. Überprüfen Sie für Office 2013 für die Hauptversion wird 15. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

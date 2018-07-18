@@ -99,7 +99,7 @@ FALSE
   
 > Der Dienstanbieter noch die empfangene Meldung nicht verarbeitet werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Benutzer eine Eigenschaft auf der Seite zu einer anderen bewegt wird, ist der Anbieter für die alte Seite Steuerelemente ein- und Ausblenden von den Steuerelementen zum nächsten oder vorherigen Seite verantwortlich. Wenn der Benutzer auf die Schaltfläche **Weiter** klickt, wird die **SERVICEWIZARDDLGPROC** Basis-Funktion mit der WM_COMMAND-Meldung und WIZ_NEXT im _wParam_ -Parameter aufgerufen. Die folgenden Schritte beschreiben, was geschieht, zwischen dem Zeitpunkt der Benutzer **Weiter** klickt und Zeitpunkt, zu dem der erste Anbieter Konfigurationsseiten gerendert werden. 
   

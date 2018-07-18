@@ -29,11 +29,11 @@ _Bild_
   
 > [out] Ein Zeiger auf eine Struktur, die ein Bytearray gibt an, die die Bildressource einer Person darstellen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Grafik, die Ressourcen in BMP, JPEG oder PNG-Format werden unterstützt.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialPerson: IUnknown](isocialpersoniunknown.md)
+- [ISocialPerson : IUnknown](isocialpersoniunknown.md)
 

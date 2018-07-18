@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSenderSearchKey-Eigenschaft
+title: PidTagSenderSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795129"
 ---
-# <a name="pidtagsendersearchkey-canonical-property"></a>Kanonische PidTagSenderSearchKey-Eigenschaft
+# <a name="pidtagsendersearchkey-canonical-property"></a>PidTagSenderSearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Nachrichtenabsender suchen-Taste.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   
@@ -86,9 +86,9 @@ Mapitags.h
 
 
 
-[Kanonische PidTagSearchKey-Eigenschaft](pidtagsearchkey-canonical-property.md)
+[PidTagSearchKey (kanonische Eigenschaft)](pidtagsearchkey-canonical-property.md)
   
-[Kanonische PidTagSentRepresentingSearchKey-Eigenschaft](pidtagsentrepresentingsearchkey-canonical-property.md)
+[PidTagSentRepresentingSearchKey (kanonische Eigenschaft)](pidtagsentrepresentingsearchkey-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: "' Srowset '"
+title: SRowSet
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795640"
 ---
-# <a name="srowset"></a>' Srowset '
+# <a name="srowset"></a>SRowSet
 
   
   
@@ -41,7 +41,7 @@ typedef struct _SRowSet
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cRows**
   
@@ -51,7 +51,7 @@ typedef struct _SRowSet
   
 > Array von Strukturen **SRow** . Es ist eine Struktur für jede Zeile in der Tabelle. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **' srowset '** wird verwendet, um mehrere Zeilen von Daten aus einer Tabelle zu beschreiben. **SRowSet** Strukturen werden in der [IAddrBook](iaddrbookimapiprop.md) [ITableData](itabledataiunknown.md)und [IMAPITable](imapitableiunknown.md) -Schnittstellenmethoden, zusätzlich zu den folgenden Funktionen verwendet: 
   
@@ -75,7 +75,7 @@ Weitere Informationen dazu, wie der Speicher für **SRowSet** Strukturen zugewie
   
 [SPropValue](spropvalue.md)
   
-[' Srow '](srow.md)
+[SRow](srow.md)
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)
   

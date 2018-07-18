@@ -1,5 +1,5 @@
 ---
-title: Synchronisieren von Inhalt Zustand
+title: Status „Inhalts synchronisieren“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795688"
 ---
-# <a name="synchronize-contents-state"></a>Synchronisieren von Inhalt Zustand
+# <a name="synchronize-contents-state"></a>Status „Inhalts synchronisieren“
 
   
   
@@ -47,11 +47,11 @@ Wenn dieser Status beendet wird, bereinigt Outlook internen Informationen. Der l
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

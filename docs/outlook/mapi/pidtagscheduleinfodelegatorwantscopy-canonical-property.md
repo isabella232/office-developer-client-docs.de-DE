@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoDelegatorWantsCopy-Eigenschaft
+title: PidTagScheduleInfoDelegatorWantsCopy (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795106"
 ---
-# <a name="pidtagscheduleinfodelegatorwantscopy-canonical-property"></a>Kanonische PidTagScheduleInfoDelegatorWantsCopy-Eigenschaft
+# <a name="pidtagscheduleinfodelegatorwantscopy-canonical-property"></a>PidTagScheduleInfoDelegatorWantsCopy (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn Stellvertreters möchte Kopien der Objekte bezüglich Bespre
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss im Delegaten Informationen-Objekt festgelegt werden.
   

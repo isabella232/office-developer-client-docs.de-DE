@@ -29,7 +29,7 @@ _Ergebnis_
   
 > [out] Eine XML-Zeichenfolge, die die Funktionen von einem Anbieter Outlook Social Connector (OSC) darstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die zurückgegebene _Ergebnis_ -XML-Zeichenfolge muss die Schemadefinition für das **Capabilities** -Element gemäß Definition im XML-Schema für die Erweiterbarkeit des OSC-Providers entsprechen. 
   
@@ -37,5 +37,5 @@ Der Anbieter muss eine Zeichenfolge _Ergebnis_ , um nachfolgende Aufrufe aus der
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für Suchvorgänge in Nachrichtenspeicher Anbietern
+title: Unterstützen von Suchvorgängen für Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795679"
 ---
-# <a name="supporting-searches-in-message-store-providers"></a>Unterstützung für Suchvorgänge in Nachrichtenspeicher Anbietern
+# <a name="supporting-searches-in-message-store-providers"></a>Unterstützen von Suchvorgängen für Nachrichtenspeicheranbieter
 
   
   

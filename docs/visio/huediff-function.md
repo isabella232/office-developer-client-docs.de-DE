@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797161"
 ---
-# <a name="huediff-function"></a>HUEDIFF-Funktion
+# <a name="huediff-function"></a>HUEDIFF Function
 
 Gibt den Unterschied im Farbton zwischen _color1_ und _color2_zurück.
   
@@ -26,7 +26,7 @@ HUEDIFF (** *color1* **, ** *color2* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der ersten Farbe.  <br/> |
-| _color2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
+| _color1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der ersten Farbe.  <br/> |
+| _color2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
    
 

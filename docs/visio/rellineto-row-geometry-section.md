@@ -28,7 +28,7 @@ Eine Zeile **RelLineTo** enthält folgende Zellen.
 |[X](x-cell-geometry-section.md) <br/> |Die *X* -Koordinate des Endscheitelpunkts eines geraden Linienabschnitts relativ zu der Breite des Shapes.  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |Die *y* -Koordinate des Endscheitelpunkts eines geraden Linienabschnitts relativ zur Höhe des Shapes.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Werte in der Zeile **RelLineTo** entsprechen Werte in einer [LineTo](lineto-row-geometry-section.md) -Zeile, die die Breite und Höhe des Shapes multipliziert werden. Beispiel: eine Zeile **RelLineTo** , in denen der Wert der Zelle **X** ist "0" und der Wert der Zelle **Y** ist "0,5" kann mit der Zeile " **LineTo"** , in dem der Wert der Zelle **X** die Formel lautet, ersetzt werden "Breite*0" und die Zelle **Y** ist die Formel "Höhe*0,5." 
   

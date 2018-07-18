@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPstConfigurationFlags-Eigenschaft
+title: PidTagPstConfigurationFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794844"
 ---
-# <a name="pidtagpstconfigurationflags-canonical-property"></a>Kanonische PidTagPstConfigurationFlags-Eigenschaft
+# <a name="pidtagpstconfigurationflags-canonical-property"></a>PidTagPstConfigurationFlags (kanonische Eigenschaft)
   
 **Betrifft**: Outlook 
   
@@ -30,7 +30,7 @@ Gibt Konfiguration Flags für eine Tabelle persönlicher Speicher (PST-Datei).
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Folgende sind gültige Werte für diese Eigenschaft:
   

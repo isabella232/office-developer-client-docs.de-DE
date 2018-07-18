@@ -56,8 +56,8 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
-|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.  <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
+|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.   <br/> |
 |**nameHint** <br/> |Der Name der feed-Element angezeigt werden. Optional.  <br/> |
 |**profileUrl** <br/> |Die URL des Profils der Person, die für den Namen der Person in der feed-Element als Hyperlink verwendet wird, wenn Sie den Namen der Person vorhanden ist. Optional.  <br/> |
 |**emailAddress** <br/> |Die e-Mail-Adresse, die verwendet wird, um die Kontaktinformationen dieser Person in Outlook zu aktualisieren. Optional.  <br/> |
@@ -66,23 +66,23 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
-|**Value** <br/> |Die URL für diese Verknüpfung. Erforderlich.  <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
+|**Value** <br/> |Die URL für diese Verknüpfung. Erforderlich.   <br/> |
 |**text** <br/> |Der Linktext, anstatt die URL selbst angezeigt. Optional.  <br/> |
    
 ### <a name="listvariable"></a>listVariable
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
-|**listItems** <br/> |Ein Container für Elemente in der Liste. Erforderlich.  <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
+|**listItems** <br/> |Ein Container für Elemente in der Liste. Erforderlich.   <br/> |
    
 ### <a name="picturevariable"></a>pictureVariable
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
-|**Value** <br/> |Die URL für das Bild. Erforderlich.  <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
+|**Value** <br/> |Die URL für das Bild. Erforderlich.   <br/> |
 |**altText** <br/> |Der alternative Text für Eingabehilfen und wenn der Benutzer den Mauszeiger über das Bild bewegt angezeigt. Optional.  <br/> |
 |**href** <br/> |Der Hyperlink klickt der Benutzer das Bild verwenden, wenn das gewünschte Ziel nicht die Bild-URL, die durch das **Value** -Element angegeben ist. Optional.  <br/> |
    
@@ -90,8 +90,8 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
-|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.  <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
+|**id** <br/> |Die eindeutige ID des Benutzers. Erforderlich.   <br/> |
 |**nameHint** <br/> |Der Name der feed-Element angezeigt werden. Optional.  <br/> |
 |**profileUrl** <br/> |Die URL des Profils der Person, die für den Namen der Person in der feed-Element als Hyperlink verwendet wird, wenn Sie den Namen der Person vorhanden ist. Optional.  <br/> |
 |**emailAddress** <br/> |Die e-Mail-Adresse, die verwendet wird, um die Kontaktinformationen dieser Person in Outlook zu aktualisieren. Optional.  <br/> |
@@ -100,7 +100,7 @@ Dieser Abschnitt enthält die erforderlichen und optionalen Elemente für jede A
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
-|**Name** <br/> |Der Name der Variablen. Erforderlich.  <br/> |
+|**Name** <br/> |Der Name der Variablen. Erforderlich.   <br/> |
 |**Value** <br/> |Der anzuzeigende Text. Optional.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

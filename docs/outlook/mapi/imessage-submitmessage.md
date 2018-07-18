@@ -53,7 +53,7 @@ MAPI_E_NO_RECIPIENTS
   
 > Empfänger der Nachricht-Tabelle ist leer.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::SubmitMessage** -Methode markiert die Nachricht als übertragen werden bereit. MAPI übergibt Nachrichten an die zugrunde liegenden messaging-System in der Reihenfolge, in der sie zum Senden von markiert sind. Aufgrund dieser Funktionalität möglicherweise eine Meldung in einem Nachrichtenspeicher bleiben Sie für eine Weile, bevor das zugrunde liegende messaging-System Verantwortung für sie entgegennehmen kann. Die Reihenfolge des Eingangs im Zielverzeichnis befindet sich in der zugrunde liegenden messaging-System-Steuerelement und entspricht nicht unbedingt die Reihenfolge, in der Nachrichten gesendet wurden. 
   

@@ -113,7 +113,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID auf den _LpEntryID_ kann von jedem-Dienstanbieter im Profil behandelt werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::Advise** -Methode richtet eine Verbindung zwischen dem Anrufer der advise-Empfängerobjekt, die Sitzung und optional einem Dienstanbieter. Diese Verbindung wird verwendet, um das Senden von Benachrichtigungen an der Advise-Empfänger, wenn sich ein oder mehr Ereignisse in der _UlEventMask_ -Parameter angegebene auf das Objekt, auf das _LpEntryID_auftreten. Wenn _LpEntryID_ NULL ist, das Zielobjekt ist die Sitzung und Benachrichtigungen werden nur für schwerwiegende Fehler und erweiterte Ereignisse gesendet. 
   

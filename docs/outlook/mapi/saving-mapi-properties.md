@@ -37,5 +37,5 @@ Durch den Aufruf von **SaveChanges** das Flag FORCE_SAVE überschreibt das vorhe
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

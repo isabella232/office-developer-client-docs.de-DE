@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSenderEntryId-Eigenschaft
+title: PidTagSenderEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795142"
 ---
-# <a name="pidtagsenderentryid-canonical-property"></a>Kanonische PidTagSenderEntryId-Eigenschaft
+# <a name="pidtagsenderentryid-canonical-property"></a>PidTagSenderEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Eintrags-ID des Absenders der Nachricht enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

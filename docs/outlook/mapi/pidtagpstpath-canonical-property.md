@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPstPath-Eigenschaft
+title: PidTagPstPath (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794849"
 ---
-# <a name="pidtagpstpath-canonical-property"></a>Kanonische PidTagPstPath-Eigenschaft
+# <a name="pidtagpstpath-canonical-property"></a>PidTagPstPath (kanonische Eigenschaft)
 
   
   

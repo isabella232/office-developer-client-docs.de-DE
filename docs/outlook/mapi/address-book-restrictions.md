@@ -1,5 +1,5 @@
 ---
-title: Address Book Einschränkungen
+title: Adressbucheinschränkungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791271"
 ---
-# <a name="address-book-restrictions"></a>Address Book Einschränkungen
+# <a name="address-book-restrictions"></a>Adressbucheinschränkungen
 
   
   

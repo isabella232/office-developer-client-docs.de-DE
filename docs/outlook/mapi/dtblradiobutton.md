@@ -43,7 +43,7 @@ typedef struct _DTBLRADIOBUTTON
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
@@ -69,7 +69,7 @@ PARAMETER MAPI_UNICODE
   
 > Eindeutige Zahl, die die ausgewählte Schaltfläche identifiziert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLRADIOBUTTON** beschreibt ein Optionsfeld ein Button-Steuerelement, das eine Gruppe von Schaltflächen zugeordnet ist. Es kann nur eine Schaltfläche in der Gruppe überprüft werden soll; Festlegen einer Schaltfläche bewirkt, dass die anderen Schaltflächen in der Gruppe nicht festgelegt werden. 
   

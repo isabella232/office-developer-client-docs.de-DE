@@ -29,7 +29,7 @@ Wobei die meisten Strukturen mit einem einzigen Aufruf **MAPIFreeBuffer**, jeden
   
 Das folgende Diagramm zeigt das Layout der **ADRLIST** -Datenstruktur, der angibt, der separate Arbeitsspeicher Zuweisungen erforderlich. Die grauen Felder anzeigen Arbeitsspeicher, die reserviert und mit einem einzigen Aufruf freigegeben werden kann. 
   
-**ADRLIST-speicherzuweisung**
+**ADRLIST-Speicherzuweisung**
   
 ![ADRLIST-speicherzuweisung] (media/amapi_52.gif "ADRLIST-speicherzuweisung")
   

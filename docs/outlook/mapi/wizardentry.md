@@ -75,7 +75,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Profil-Assistent Ruft die **WIZARDENTRY** Basis-Funktion, wenn der Dienstanbieter Konfigurationsbenutzeroberfläche anzeigen kann. Nach Abschluss der Profil-Assistent alle Anbieter konfigurieren, werden die Konfigurationseigenschaften auf das Profil durch Aufrufen von [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)schreibt. 
   

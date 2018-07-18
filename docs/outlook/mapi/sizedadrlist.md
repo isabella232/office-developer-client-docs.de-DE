@@ -44,7 +44,7 @@ __Namen_
   
 > Der Name für die neue **ADRLIST** -Struktur. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **SizedADRLIST** können Sie eine Empfängerliste definieren, die explizite Grenzen hat, wenn Array Länge Anforderungen bekannt sind. Der folgende Code zeigt, wie das Ergebnis des **SizedADRLIST** Makros in einer **ADRLIST** Struktur Zeiger umgewandelt wird: 
   

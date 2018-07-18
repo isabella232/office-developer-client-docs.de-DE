@@ -30,7 +30,7 @@ Berechnet die Anzahl von Bytes, die für eine neue [SRowSet](srowset.md) Struktu
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**' Srowset '** <br/> |
+|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbNewSRowSet (_crow)
@@ -46,9 +46,9 @@ CbNewSRowSet (_crow)
 
 
 
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
-[' Srow '](srow.md)
+[SRow](srow.md)
 
 
 [Makros im Zusammenhang mit Strukturen](macros-related-to-structures.md)

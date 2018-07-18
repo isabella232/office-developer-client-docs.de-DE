@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792014"
 ---
-# <a name="iattachmentsecurity--iunknown"></a>"IAttachmentSecurity": IUnknown
+# <a name="iattachmentsecurity--iunknown"></a>IAttachmentSecurity : IUnknown
 
   
   
@@ -37,7 +37,7 @@ Können Microsoft Outlook 2010 und Microsoft Outlook 2013-Lösungen zu ermitteln
 |:-----|:-----|
 |[IAttachmentSecurity::IsAttachmentBlocked](iattachmentsecurity-isattachmentblocked.md) <br/> |Überprüft, ob eine angegebene Anlage zum Anzeigen und Indizieren von Outlook 2010 oder Outlook 2013 ausgeschlossen wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Outlook 2010 und Outlook 2013-Lösungen können Abfragen diese Schnittstelle, um festzustellen, ob eine Anlage ausgeschlossen wird. Die Anlagen, die von Outlook 2010 oder Outlook 2013 blockiert werden variieren je nach wie Outlook 2010 oder Outlook 2013 konfiguriert wurde und die Richtlinien, die ein Administrator angewendet hat.
   
@@ -47,5 +47,5 @@ Outlook 2010 und Outlook 2013-Lösungen können Abfragen diese Schnittstelle, um
 
 [MAPI-Konstanten](mapi-constants.md)
   
-[Stellen Sie sicher, dass eine Anlage gesperrt ist](how-to-verify-an-attachment-is-blocked.md)
+[Überprüfen, ob eine Anlage blockiert ist](how-to-verify-an-attachment-is-blocked.md)
 

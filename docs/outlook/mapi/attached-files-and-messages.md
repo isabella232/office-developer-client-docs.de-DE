@@ -1,5 +1,5 @@
 ---
-title: Anlagen und Nachrichten
+title: Angefügte Dateien und Nachrichten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791298"
 ---
-# <a name="attached-files-and-messages"></a>Anlagen und Nachrichten
+# <a name="attached-files-and-messages"></a>Angefügte Dateien und Nachrichten
 
   
   
@@ -79,5 +79,5 @@ Anlage Rendering Positionen werden als solcher übertragen mithilfe der Eigensch
 
 
 
-[Zuordnung von Internet Mail-Attributen zu MAPI-Eigenschaften](mapping-of-internet-mail-attributes-to-mapi-properties.md)
+[Zuordnen von Internet-Mail-Attributen zu MAPI-Eigenschaften](mapping-of-internet-mail-attributes-to-mapi-properties.md)
 

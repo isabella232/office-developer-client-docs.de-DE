@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentProposedDuration-Eigenschaft
+title: PidLidAppointmentProposedDuration (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793352"
 ---
-# <a name="pidlidappointmentproposedduration-canonical-property"></a>Kanonische PidLidAppointmentProposedDuration-Eigenschaft
+# <a name="pidlidappointmentproposedduration-canonical-property"></a>PidLidAppointmentProposedDuration (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den vorgeschlagenen Wert für die Eigenschaft **DispidApptDuration** ([PidL
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn festgelegt, es gleich der Anzahl der Minuten zwischen den **DispidApptProposedStartWhole** ([PidLidAppointmentProposedStartWhole](pidlidappointmentproposedstartwhole-canonical-property.md)) und **DispidApptProposedEndWhole** ([PidLidAppointmentProposedEndWhole](pidlidappointmentproposedendwhole-canonical-property.md)) Eigenschaften sein muss.
   

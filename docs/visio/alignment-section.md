@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796387"
 ---
-# <a name="alignment-section"></a>Abschnitt "Alignment"
+# <a name="alignment-section"></a>Alignment Section
 
 Gibt die Ausrichtung eines Shapes in Bezug auf die Führungslinie oder eines zeigen Sie auf dem das Shape geklebt ist. Abschnitt " **Alignment** " wird nur für Formen, die an Führungslinien angeklebt werden angezeigt. 
   

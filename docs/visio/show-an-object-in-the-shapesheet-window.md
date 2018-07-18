@@ -22,31 +22,31 @@ Microsoft Visio-Objekte werden intern als eine Reihe von Formeln gespeichert. Si
   
 Weitere Einzelheiten zur Anzeige eines bestimmten Objekts im ShapeSheet-Fenster erhalten Sie, wenn Sie auf ein Element in der folgenden Liste klicken.
   
-## <a name="show-a-shape-group-guide-guide-point-or-foreign-object"></a>Ein Shape, Gruppe, Führungslinie, Führungspunkt oder fremden Objekts anzeigen
+## <a name="show-a-shape-group-guide-guide-point-or-foreign-object"></a>Anzeigen eines Shapes, einer Gruppe, einer Führungslinie, eines Führungspunkts oder eines fremden Objekts
 
 1. Wählen Sie das Objekt aus.
     
 2. Klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **ShapeSheet anzeigen**.
     
-## <a name="show-a-master"></a>Ein Master-Shape anzeigen
+## <a name="show-a-master"></a>Anzeigen eines Master-Shapes
 
 Sie können auf das ShapeSheet-Fenster zugreifen und Bearbeiten von Formeln nur für Master-Shapes auf einer benutzerdefinierten oder Dokumentschablone. Ab Microsoft Office Visio 2003, können keine Master-Shapes auf Schablonen bearbeiten, die im Lieferumfang von der Visio-Produktteams.
   
-1. Klicken Sie im Fenster **Shapes** klicken Sie auf **Weitere Shapes**, und klicken Sie dann auf **Schablone öffnen**.
+1. Klicken Sie im Fenster **Shapes** auf **Weitere Shapes**, und klicken Sie dann auf **Schablone öffnen**.
     
 2. Suchen Sie und wählen Sie die Schablone, die das Master-Shape enthält, klicken Sie auf den Pfeil neben der Schaltfläche **Öffnen** , wählen Sie eine Option öffnen aus der Dropdown-Liste und klicken Sie dann auf **Öffnen**. 
     
     Wenn die Schablone bereits geöffnet ist, klicken Sie auf der Titelleiste der Schablone, und klicken Sie dann im Kontextmenü auf **Schablone bearbeiten** . 
     
-3. Mit der rechten Maustaste in des Master-Shapes auf der Schablone, klicken Sie im Kontextmenü auf **Master-Shape bearbeiten** , und klicken Sie dann auf **Master-Shape bearbeiten**.
+3. Klicken Sie mit der rechten Maustaste auf das Master-Shape auf der Schablone, klicken Sie im Kontextmenü auf **Master-Shape bearbeiten**, und klicken Sie dann auf **Master-Shape bearbeiten**.
     
-4. Im Bearbeitungsfenster Master-Shape mit der rechten Maustaste in des Master-Shapes, und klicken Sie dann auf **ShapeSheet anzeigen**.
+4. Klicken Sie im Fenster Master-Shape bearbeiten mit der rechten Maustaste auf das Master-Shape, und klicken Sie dann auf ShapeSheet anzeigen.
     
 ## <a name="show-a-page"></a>Anzeigen einer Seite
 
 1. Vergewissern Sie sich, dass kein Element auf der Seite markiert ist.
     
-2. Maustaste auf die Seite, und klicken Sie dann auf **ShapeSheet anzeigen**.
+2. Klicken Sie mit der rechten Maustaste auf die Seite, und klicken Sie dann auf **ShapeSheet anzeigen**.
     
 ## <a name="show-a-document"></a>Anzeigen eines Dokuments
 
@@ -58,8 +58,8 @@ Sie können auf das ShapeSheet-Fenster zugreifen und Bearbeiten von Formeln nur 
 
 1. Wählen Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Einblenden/Ausblenden** **Zeichnungsexplorerfenster**aus.
     
-2. Erweitern Sie im **Zeichnungsexplorer**den Ordner **Formatvorlagen** . 
+2. Erweitern Sie im **Zeichnungsexplorer** den Ordner **Formatvorlagen**. 
     
-3. Maustaste auf die Formatvorlage, und klicken Sie dann im Kontextmenü auf **ShapeSheet anzeigen** . 
+3. Klicken Sie mit der rechten Maustaste auf die Formatvorlage, und klicken Sie dann im Kontextmenü auf **ShapeSheet anzeigen**. 
     
 

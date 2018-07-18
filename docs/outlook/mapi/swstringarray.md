@@ -40,7 +40,7 @@ typedef struct _SWStringArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SWStringArray
   
 > Zeiger auf ein Array von Zeichenfolgen mit Unicode-Zeichen Null beendet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu PT_MV_UNICODE finden Sie unter [Eigenschaftentypen](property-types.md).
   

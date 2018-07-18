@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentNotAllowPropose-Eigenschaft
+title: PidLidAppointmentNotAllowPropose (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793348"
 ---
-# <a name="pidlidappointmentnotallowpropose-canonical-property"></a>Kanonische PidLidAppointmentNotAllowPropose-Eigenschaft
+# <a name="pidlidappointmentnotallowpropose-canonical-property"></a>PidLidAppointmentNotAllowPropose (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob Teilnehmer vorschlagen eine neue Datum/Uhrzeit für die Besprechung 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Den Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass die Teilnehmer vorschlagen einen neuen Datum/Uhrzeit zulässig sind.
   

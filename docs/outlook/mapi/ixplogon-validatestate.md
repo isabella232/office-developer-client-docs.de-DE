@@ -90,7 +90,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::ValidateState** -Methode zur Unterstützung der Aufrufe der [IMAPIStatus::ValidateState](imapistatus-validatestate.md) -Methode für das Statusobjekt. Der Transportdienst sollte für den Aufruf der **IXPLogon::ValidateState** reagieren, als ob die MAPI-Warteschlange ein Statusobjekt für die aktuelle Sitzung geöffnet und anschließend **IMAPIStatus::ValidateState** für dieses Objekt aufgerufen wurde. 
   
@@ -104,5 +104,5 @@ Zur Unterstützung der Implementierung der **IMAPIStatus::ValidateState**Ruft di
   
 [IXPLogon::AddressTypes](ixplogon-addresstypes.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: PackedUnicodeString Stream-Struktur
+title: PackedUnicodeString-Streamstruktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793333"
 ---
-# <a name="packedunicodestring-stream-structure"></a>PackedUnicodeString Stream-Struktur
+# <a name="packedunicodestring-stream-structure"></a>PackedUnicodeString-Streamstruktur
 
   
   
@@ -39,9 +39,9 @@ Die PackedUnicodeString Stream-Datenstruktur enthält eine Unicode (UTF-16) Dars
 
 
 
-[Outlook-Elemente und Felder](outlook-items-and-fields.md)
+[Elemente und Felder in Outlook](outlook-items-and-fields.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[FieldDefinition Stream-Struktur](fielddefinition-stream-structure.md)
+[FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
 

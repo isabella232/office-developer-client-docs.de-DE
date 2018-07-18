@@ -49,7 +49,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > Der angeforderte Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::CreateBookmark** -Methode markiert die Position einer Tabelle, indem Sie einen Wert eine Textmarke namens erstellen. Eine Textmarke kann verwendet werden, um an der Position der Textmarke identifizierten zurückzugeben. Die mit einer Textmarke versehenen Position ist das Row-Objekts in der Tabelle-Objekt zugeordnet. 
   
@@ -75,5 +75,5 @@ Wenn der Aufrufer versucht, ein Lesezeichen zu verwenden, die auf ein sichtbares
   
 [IMAPITable::SeekRow](imapitable-seekrow.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

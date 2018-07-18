@@ -1,5 +1,5 @@
 ---
-title: Grundlagen der Entwicklung von Service Provider
+title: Grundlagen der Entwicklung von Dienstanbietern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795509"
 ---
-# <a name="service-provider-development-basics"></a>Grundlagen der Entwicklung von Service Provider
+# <a name="service-provider-development-basics"></a>Grundlagen der Entwicklung von Dienstanbietern
 
   
   
@@ -27,9 +27,9 @@ Dieser Abschnitt enthält eine Übersicht, die Sie vor dem Erstellen eigener MAP
 
 
 
-[Entwickeln von einem MAPI-Adressbuchanbieter](developing-a-mapi-address-book-provider.md)
+[Entwicklung eines MAPI-Adressbuchanbieters](developing-a-mapi-address-book-provider.md)
   
-[Entwickeln eines Transportdienstes MAPI](developing-a-mapi-transport-provider.md)
+[Entwickeln eines MAPI-Transportanbieters](developing-a-mapi-transport-provider.md)
   
 [Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
   

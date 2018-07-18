@@ -114,7 +114,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, aber nicht alle Einträge wurden erfolgreich kopiert. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::CopyFolder** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter können in ihrer Durchführung des [IMAPIFolder::CopyFolder](imapifolder-copyfolder.md) zu kopieren oder verschieben ein einzelnes Ordners aus einem übergeordneten Ordner in einen anderen **IMAPISupport::CopyFolder** aufrufen. 
   

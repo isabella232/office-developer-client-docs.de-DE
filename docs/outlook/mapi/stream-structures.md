@@ -1,5 +1,5 @@
 ---
-title: Stream-Strukturen
+title: Streamstrukturen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795644"
 ---
-# <a name="stream-structures"></a>Stream-Strukturen
+# <a name="stream-structures"></a>Streamstrukturen
 
   
   
@@ -24,25 +24,25 @@ Definitionen von benutzerdefinierten Feldern eines Microsoft Outlook-Elements we
 > [!NOTE]
 > Die Namen der diese Stream-Strukturen (beispielsweise PropertyDefinition FieldDefinition und SkipBlock) und ihre Datenelemente sind nicht technisch gesehen Teil der von der Messaging-API (MAPI)-Programmierschnittstelle und hier nur zu Dokumentationszwecken bereitgestellt werden die tatsächlichen Stream Strukturen Zwecke. Entwickler können diese Stream Strukturen und Daten der Elemente in ihren Anträgen bezeichnen, wie sie auswählen. 
   
-- [PropertyDefinition Stream-Struktur](propertydefinition-stream-structure.md)
+- [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
     
-- [FieldDefinition Stream-Struktur](fielddefinition-stream-structure.md)
+- [FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
     
-- [SkipBlock Stream-Struktur](skipblock-stream-structure.md)
+- [SkipBlock-Streamstruktur](skipblock-stream-structure.md)
     
-- [FirstSkipBlockContent Stream-Struktur](firstskipblockcontent-stream-structure.md)
+- [FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
     
-- [PackedAnsiString Stream-Struktur](packedansistring-stream-structure.md)
+- [PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
     
-- [PackedUnicodeString Stream-Struktur](packedunicodestring-stream-structure.md)
+- [PackedUnicodeString-Streamstruktur](packedunicodestring-stream-structure.md)
     
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Outlook-Elemente und Felder](outlook-items-and-fields.md)
+[Elemente und Felder in Outlook](outlook-items-and-fields.md)
   
-[Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu.](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition Stream-Beispiel](propertydefinition-stream-sample.md)
+[Beispiel für PropertyDefinition-Stream](propertydefinition-stream-sample.md)
 

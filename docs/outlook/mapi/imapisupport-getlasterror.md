@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und MAPI unterstützt keine Unicode oder Parameter MAPI_UNICODE wurde nicht festgelegt und MAPI unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::GetLastError** -Methode wird für alle Unterstützungsobjekte implementiert. Anrufer können die Benutzer einschließlich der Daten aus der **MAPIERROR** -Struktur in einem Dialogfeld mit ausführlichen Informationen zu dem Fehler bereitstellen. 
   

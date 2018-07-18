@@ -33,11 +33,11 @@ _Ergebnis_
   
 > [out] Eine **ISocialPerson** -Schnittstelle. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der _Benutzer-ID_ -Parameter muss eine Benutzer-ID oder SMTP-Adresse sein. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

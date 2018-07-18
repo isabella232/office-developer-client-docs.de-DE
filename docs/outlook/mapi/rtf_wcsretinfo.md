@@ -30,7 +30,7 @@ typedef struct {
 } RTF_WCSRETINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _Größe_
   

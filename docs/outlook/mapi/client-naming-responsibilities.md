@@ -1,5 +1,5 @@
 ---
-title: Benennen von Client-Aufgaben
+title: Kundenaufgaben bei der Benennung
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791426"
 ---
-# <a name="client-naming-responsibilities"></a>Benennen von Client-Aufgaben
+# <a name="client-naming-responsibilities"></a>Kundenaufgaben bei der Benennung
 
   
   
@@ -44,7 +44,7 @@ Berücksichtigen Sie zur Veranschaulichung der Funktionsweise dieser Namenskonve
   
 Die folgende Tabelle veranschaulicht die Einstellungen für jede Gruppe von Gateway sämtliche Eigenschaften für die drei verbleibenden Teammitglieder, die die Nachricht weitergeleitet wird, wenn das erste Teammitglied er nicht mehr wird, gespeichert.
   
-|**Eigenschaftensatz**|**Zweite Team <br/> Member**|**Drittes Team <br/> Member**|**Vierte Team <br/> Member**|
+|**Property Set**|**Zweite Team <br/> Member**|**Drittes Team <br/> Member**|**Vierte Team <br/> Member**|
 |:-----|:-----|:-----|:-----|
 |PS_ROUTING_EMAIL_ADDRESSES  <br/> |Adresse = 0  <br/> |Adresse = 1  <br/> |Adresse = 2  <br/> |
 |PS_ROUTING_ADDRTYPE  <br/> |Adresstyp = 0  <br/> |Adresstyp = 1  <br/> |Adresstyp = 2  <br/> |

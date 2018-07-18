@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792070"
 ---
-# <a name="imailuser--imapiprop"></a>IMailUser: IMAPIProp
+# <a name="imailuser--imapiprop"></a>IMailUser : IMAPIProp
 
   
   
@@ -52,7 +52,7 @@ Diese Schnittstelle hat keinen eindeutigen Methoden.
 |**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Fünf erforderlichen Eigenschaften sind als die Eigenschaften Basisadresse für Empfänger bekannt:
   

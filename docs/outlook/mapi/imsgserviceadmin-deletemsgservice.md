@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > Die auf den _Lpuid_ **MAPIUID** stimmt nicht mit einer vorhandenen Messagingdiensts überein. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin::DeleteMsgService** -Methode löscht eine Message Service aus einem Profil. **DeleteMsgService** entfernt alle Profil Abschnitte im Zusammenhang mit den Dienst. 
   
@@ -81,7 +81,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderDllName-Eigenschaft
+title: PidTagProviderDllName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794834"
 ---
-# <a name="pidtagproviderdllname-canonical-property"></a>Kanonische PidTagProviderDllName-Eigenschaft
+# <a name="pidtagproviderdllname-canonical-property"></a>PidTagProviderDllName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Der Name der Basisdatei von MAPI Service Provider Dynamic Link Library (DLL) ent
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI verwendet eine DLL-Datei Namenskonvention fest. Die Basis Dateiname enthält maximal sechs Zeichen, die die DLL eindeutig identifizieren. MAPI fügt die Zeichenfolge 32 an den Basisnamen der DLL-Datei zum Ermitteln der Version, die auf 32-Bit-Plattformen ausgeführt wird. Beispielsweise, wenn der Name MAPI. DLL-Datei angegeben wird, MAPI erstellt den Namen MAPI32. DLL, um die entsprechenden 32-Bit-Version der DLL darstellen.
   

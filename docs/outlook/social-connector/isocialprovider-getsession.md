@@ -29,11 +29,11 @@ _Sitzung_
   
 > [out] Eine **ISocialSession** -Schnittstelle. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Outlook Social Connector (OSC) verwendet die **ISocialSession** -Schnittstelle in sozialen Netzwerken anmelden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

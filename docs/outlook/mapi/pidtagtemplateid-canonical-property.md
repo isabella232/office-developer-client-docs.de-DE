@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTemplateid-Eigenschaft
+title: PidTagTemplateid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795253"
 ---
-# <a name="pidtagtemplateid-canonical-property"></a>Kanonische PidTagTemplateid-Eigenschaft
+# <a name="pidtagtemplateid-canonical-property"></a>PidTagTemplateid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Wert muss für alle Address Book-Objekte auf einem Server (NSPI = Name Service Provider Interface) vorhanden sein, den distinguished Name (DN) gleich dem Wert für **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) und der DN muss das DN-Format folgen die Spezifikation für den Typ des Objekts. 
   

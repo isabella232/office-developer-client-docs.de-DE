@@ -94,7 +94,7 @@ Sie können die Reihenfolge der Berechnung in einer Formel ändern, indem Sie Au
   
 Wenn Ausdrücke in Klammern geschachtelt sind, wird der Ausdruck im innersten Satz Klammern zuerst berechnet.
   
-## <a name="ampersand-operator"></a>Kaufmännisches und-Zeichen
+## <a name="ampersand-operator"></a>&-Operator
 
 Der &-Operator gibt eine neue Zeichenfolge zurück. Mithilfe dieses Zeichens können Sie Komposita und Phrasen erstellen. Verwenden Sie die folgende Syntax:
   

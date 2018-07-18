@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchRecipientEmailBcc-Eigenschaft
+title: PidTagSearchRecipientEmailBcc (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795111"
 ---
-# <a name="pidtagsearchrecipientemailbcc-canonical-property"></a>Kanonische PidTagSearchRecipientEmailBcc-Eigenschaft
+# <a name="pidtagsearchrecipientemailbcc-canonical-property"></a>PidTagSearchRecipientEmailBcc (kanonische Eigenschaft)
 
   
   
@@ -30,9 +30,9 @@ Enthält eine Unicodezeichenfolge, die in der Liste der e-Mail-Adressen oder Anz
 |Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_RECIP_EMAIL_BCC_W  <br/> |
 |Bezeichner:  <br/> |0x0EA8  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Access:  <br/> |Suchen  <br/> |
+|Access:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nur relevant, die Nachrichten auf den Speicher, die nicht gesendet wurden, da Nachrichten, die gesendet oder empfangen wurde keine BCC-Informationen enthalten.
   

@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen, ändern oder Löschen von Zeilen im ShapeSheet
+title: Hinzufügen, Ändern oder Löschen von Zeilen im ShapeSheet
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796377"
 ---
-# <a name="add-change-or-delete-rows-in-the-shapesheet"></a>Hinzufügen, ändern oder Löschen von Zeilen im ShapeSheet
+# <a name="add-change-or-delete-rows-in-the-shapesheet"></a>Hinzufügen, Ändern oder Löschen von Zeilen im ShapeSheet
 
 Sie können neue Zeilen hinzufügen, ändern Sie den Typ für die vorhandenen Zeilen oder Löschen von Zeilen im ShapeSheet in Microsoft Visio.
   

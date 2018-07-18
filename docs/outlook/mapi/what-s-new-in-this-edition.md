@@ -1,5 +1,5 @@
 ---
-title: Was ist neu in dieser Edition
+title: Neuigkeiten in dieser Edition
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795836"
 ---
-# <a name="whats-new-in-this-edition"></a>Was ist neu in dieser Edition
+# <a name="whats-new-in-this-edition"></a>Neuigkeiten in dieser Edition
 
  
   
@@ -39,9 +39,9 @@ Inhalt wurde für die folgenden Features hinzugefügt:
     
   - [MAPI-Profile](mapi-profiles.md)
     
-  - [Nickname-cache](nickname-cache.md)
+  - [Cache für Spitznamen](nickname-cache.md)
     
-  - [AutoVervollständigen-Stream](autocomplete-stream.md)
+  - [Stream für automatisches Vervollständigen](autocomplete-stream.md)
     
 - **Schnittstellen**-das [IAddrBook::OpenEntry](iaddrbook-openentry.md) Thema beschreibt eine Methode zum Öffnen eines Adresseintrags Adressbuch und Zurückgeben von einen Zeiger auf die Schnittstelle verwendet, um darauf zugreifen. Sie enthalten zuvor ein Flag in den *UlFlags* -Parameter **MAPI_GAL_ONLY**, die zum Öffnen der globalen Adressliste (GAL), nur verwendet werden können und wurde überarbeitet, um dessen Definition enthalten.
     
@@ -53,7 +53,7 @@ Inhalt wurde für die folgenden Features hinzugefügt:
     
   - [Zuordnung von TNEF-Attributen zu MAPI-Eigenschaften](mapping-of-tnef-attributes-to-mapi-properties.md)
     
-  - [AttConversationID und attParentID](attconversationid-and-attparentid.md)
+  - [attConversationID und attParentID](attconversationid-and-attparentid.md)
     
 ## <a name="previously-revised-content"></a>Zuvor überarbeiteten Inhalten
 

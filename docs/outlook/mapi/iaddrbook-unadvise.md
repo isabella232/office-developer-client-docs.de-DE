@@ -57,5 +57,5 @@ Clients aufrufen die **Unadvise** -Methode zum Empfangen von Benachrichtigungen 
   
 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

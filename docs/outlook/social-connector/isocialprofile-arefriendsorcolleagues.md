@@ -33,11 +33,11 @@ _Ergebnisse_
   
 > [out] Ein Zeiger auf die Struktur, die ein Array von boolesche Werte zurück, der angibt, ob die entsprechende Person in das Array _Benutzer-IDs_ ein Freund ist angibt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für jede Person in der Eingabe der Parameter _UserIds_ gibt-Array dargestellt legt diese Methode das entsprechende Element in der Matrix des Parameters _Ergebnisse_ . **true** gibt an, dass die Person einen Freund, und **false** gibt an, dass die Person keinen Freund ist. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProfile: ISocialPerson](isocialprofileisocialperson.md)
+- [ISocialProfile : ISocialPerson](isocialprofileisocialperson.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Ein Standardprofil festlegen
+title: Festlegen eines Standardprofils
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795503"
 ---
-# <a name="setting-a-default-profile"></a>Ein Standardprofil festlegen
+# <a name="setting-a-default-profile"></a>Festlegen eines Standardprofils
 
   
   

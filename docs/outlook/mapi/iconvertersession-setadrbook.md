@@ -44,7 +44,7 @@ S_OK
   
 > Der Funktionsaufruf ist erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Konvertieren von MAPI erforderlich keine Nachrichten in MIME-Stream-Objekt im Allgemeinen Protokollierung bei einem MAPI-Profil. Angeben von einem MAPI-Adressbuch für die Konvertierung erfordert jedoch zu einem Profil Abrufen des Adressbuchs anmelden.
   
@@ -61,7 +61,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IConverterSession: IUnknown](iconvertersessioniunknown.md)
+[IConverterSession : IUnknown](iconvertersessioniunknown.md)
   
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
   

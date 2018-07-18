@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProfileHomeServerFQDN-Eigenschaft
+title: PidTagProfileHomeServerFQDN (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794812"
 ---
-# <a name="pidtagprofilehomeserverfqdn-canonical-property"></a>Kanonische PidTagProfileHomeServerFQDN-Eigenschaft
+# <a name="pidtagprofilehomeserverfqdn-canonical-property"></a>PidTagProfileHomeServerFQDN (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Kerberos-Authentifizierung für eine Benutzerprofildienst-Konfiguration aktivier
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Durch Festlegen dieser Eigenschaft auf den Domänennamen des Verzeichnisservers für die Benutzer kann direkte Verbindung zu den Domänencontroller (DC), die für ein Profil erforderlich ist, die Verwendung von Kerberos-Authentifizierung für Microsoft Exchange Server 2007 konfiguriert wurde und früheren Versionen von **RPC_C_AUTHN_GSS_KERBEROS** in **PR_PROFILE_AUTH_PACKAGE**festlegen.
   

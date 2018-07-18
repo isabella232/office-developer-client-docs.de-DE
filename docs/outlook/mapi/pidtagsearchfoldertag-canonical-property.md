@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderTag-Eigenschaft
+title: PidTagSearchFolderTag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795109"
 ---
-# <a name="pidtagsearchfoldertag-canonical-property"></a>Kanonische PidTagSearchFolderTag-Eigenschaft
+# <a name="pidtagsearchfoldertag-canonical-property"></a>PidTagSearchFolderTag (kanonische Eigenschaft)
 
   
   
@@ -30,9 +30,9 @@ Enthält den Wert, mit dem diese Definition-Nachricht mit dem entsprechenden Con
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_TAG  <br/> |
 |Bezeichner:  <br/> |0x6847  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird geändert, wenn die Nachricht Definition geändert wird. Es muss jede Iteration ändern, aber möglicherweise nicht eindeutig sein.
   

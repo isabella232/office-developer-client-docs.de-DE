@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792260"
 ---
-# <a name="imapioffline--iunknown"></a>IMAPIOffline: IUnknown
+# <a name="imapioffline--iunknown"></a>IMAPIOffline : IUnknown
 
   
   
@@ -42,7 +42,7 @@ Enthält Informationen für eine offline-Objekt.
 |**[GetCurrentState](imapioffline-getcurrentstate.md)** <br/> |Ruft den aktuellen online oder offline-Status eines offline-Objekts ab.  <br/> |
 | *Platzhalter-member*  <br/> |Dieser Member ist ein Platzhalter und wird nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Client verwendet **[HrOpenOfflineObj](hropenofflineobj.md)** zu öffnen, und erhalten eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt. Da **IMAPIOfflineMgr** von [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx)erbt, kann der Client (mithilfe von [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)) diese Schnittstelle Abfragen um einen Zeiger auf den Zeiger der Schnittstelle für **IMAPIOffline** für das offline-Objekt abzurufen. Der Client kann dann abzurufen oder festzulegen den aktuellen Status des Objekts zugreifen, oder informieren Sie sich über die Callback-Funktionen des Objekts (durch Aufrufen von **IMAPIOffline::GetCapabilities** ) und auf Rückrufe mithilfe von **[IMAPIOfflineMgr](imapiofflinemgrimapioffline.md)** eingerichtet werden sollen. 
   
@@ -52,10 +52,10 @@ Ein Element in dieser Schnittstelle ist ein Platzhalter für die interne Verwend
 
 
 
-[IMAPIOfflineMgr: IMAPIOffline](imapiofflinemgrimapioffline.md)
+[IMAPIOfflineMgr : IMAPIOffline](imapiofflinemgrimapioffline.md)
 
 
-[Über die Offline State-API](about-the-offline-state-api.md)
+[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   

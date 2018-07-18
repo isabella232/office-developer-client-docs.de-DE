@@ -32,7 +32,7 @@ Eine Zeile **RelEllipticalArcTo** enthält folgende Zellen.
 |[C](c-cell-geometry-section.md) <br/> |Der Winkel der Größenachse des Bogens relativ zu der *X* -Achse des übergeordneten Objekts.  <br/> |
 |[D](d-cell-geometry-section.md) <br/> |Das Verhältnis der größeren zur kleineren Achse eines Bogens. Im Gegensatz zu der normalen Bedeutung der Bezeichnungen muss die als "große" Achse bezeichnete Achse nicht unbedingt größer als die "kleine" Achse sein, sodass das Größenverhältnis nicht größer als 1 sein muss. Beim Festlegen des Zellwerts gleich 0 bzw. größer als 1000 können unvorhergesehene Ergebnisse auftreten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Werte in der Zeile **RelEllipticalArcTo** entsprechen Werten in einer [EllipticalArcTo](ellipticalarcto-row-geometry-section.md) -Zeile, die die Breite und Höhe des Shapes multipliziert. Beispiel: ein **RelEllipticalArcTo** Zeile, in dem die Zellen **X**, **Y**, **A**, **B**, **C**und **D** die Werte aufweisen, 1, 1, 1,5, 0,5, 15 deg und 1,5 (entsprechend) können ersetzt werden mit einer **EllipticalArcTo** -Zeile mit Die Zellformeln `Width*1`, `Height*1'`, `Width*1.5`, `Height*0.5`, 15 deg und 1,5 (entsprechend).
   

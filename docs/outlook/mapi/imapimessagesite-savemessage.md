@@ -59,10 +59,10 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formulars Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

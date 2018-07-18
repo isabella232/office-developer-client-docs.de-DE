@@ -51,13 +51,17 @@ Gibt an, wie Shapes auf der Seite platziert werden, wenn im Dialogfeld **Layout 
 |**visLOPlaceRightToLeft** <br/> |5  <br/> |
 |**visLOPlaceTopToBottom** <br/> |1  <br/> |
    
-Wenn Sie auf die Zelle ShapePlaceStyle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft verweisen möchten, verwenden Sie Folgendes: 
+Wenn Sie auf die Zelle ShapePlaceStyle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
+
+ 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePlaceStyle  <br/> |
    
-Wenn Sie auf die Zelle ShapePlaceStyle durch Index aus einem Programm verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie aus einem Programm heraus nach Index auf die Zelle ShapePlaceStyle verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
+
+ 
   
 |||
 |:-----|:-----|

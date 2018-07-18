@@ -1,5 +1,5 @@
 ---
-title: Bewährte Methoden für das Entwickeln eines Providers
+title: Bewährte Methoden für die Entwicklung eines Anbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795950"
 ---
-# <a name="best-practices-for-developing-a-provider"></a>Bewährte Methoden für das Entwickeln eines Providers
+# <a name="best-practices-for-developing-a-provider"></a>Bewährte Methoden für die Entwicklung eines Anbieters
 
 Sie sollten die folgenden Methoden bei der Entwicklung eines Outlook Social Connector 2013 (OSC)-Anbieters erfüllen:
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPrimaryTelephoneNumber-Eigenschaft
+title: PidTagPrimaryTelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794817"
 ---
-# <a name="pidtagprimarytelephonenumber-canonical-property"></a>Kanonische PidTagPrimaryTelephoneNumber-Eigenschaft
+# <a name="pidtagprimarytelephonenumber-canonical-property"></a>PidTagPrimaryTelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Primäre Telefonnummer des Empfängers enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen für einen Empfänger bereitstellen. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

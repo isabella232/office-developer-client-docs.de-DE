@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoFreeBusyTentative-Eigenschaft
+title: PidTagScheduleInfoFreeBusyTentative (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795103"
 ---
-# <a name="pidtagscheduleinfofreebusytentative-canonical-property"></a>Kanonische PidTagScheduleInfoFreeBusyTentative-Eigenschaft
+# <a name="pidtagscheduleinfofreebusytentative-canonical-property"></a>PidTagScheduleInfoFreeBusyTentative (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Blöcke von Zeiten für die der Frei/Gebucht-Status mit Vorbehalt i
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft hat viele Werte als die Anzahl von Werten in **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)). Jede Binärwert stellt einen Monat und entspricht dem Wert der selben Index **PR_SCHDINFO_MONTHS_TENTATIVE**. Die binäre Werte werden in der gleichen Reihenfolge wie die Werte in **PR_SCHDINFO_MONTHS_TENTATIVE**sortiert.
   

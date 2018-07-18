@@ -95,7 +95,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs. Mögliche Werte Fehler beim Initialisieren des MAPI-Subsystems für den Benutzerprofildienst-Assistenten eingeschlossen, der Fehler beim Zugriff auf das Standardprofil und einen Fehler zurück, aus dem Dialogfeld.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Implementierung der Funktion **LAUNCHWIZARDENTRY** Prototyp ist der Einstiegspunkt in die Anwendung MAPI-Profil-Assistent. Den Namen dieser Einstiegspunkt **LaunchWizard**MAPI. 
   

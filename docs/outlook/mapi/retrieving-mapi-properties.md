@@ -72,5 +72,5 @@ Anrufer, die verschiedene Eigenschaften benötigen können **HrGetOneProp** oder
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

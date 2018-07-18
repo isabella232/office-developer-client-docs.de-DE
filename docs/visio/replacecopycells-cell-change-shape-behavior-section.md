@@ -18,7 +18,7 @@ ms.locfileid: "19797812"
 
 Gibt eine Liste der Zellen im ShapeSheet, die während ein Shape Ersetzungsvorgang aus einer alten Form zum Ersatz-Shape kopiert werden. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das master-Shape die Ersetzung muss einen Funktionsaufruf **DEPENDSON** in der Zelle **ReplaceCopyCells** enthalten, wobei jedes Argument in der Funktion einen Verweis auf eine Zelle ist. Betroffenen Zellen werden von der alten Form mit dem Shape kopiert, die eine Form Ersetzungsoperation, unabhängig davon, wo sie sich im ShapeSheet sind ergibt. 
   

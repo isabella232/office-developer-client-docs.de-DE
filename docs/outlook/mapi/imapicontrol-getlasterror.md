@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dienstanbieter implementieren die **IMAPIControl::GetLastError** -Methode, um Informationen zu einem vorherigen Methodenaufruf angeben, die nicht erfolgreich. MAPI erhalten Benutzer detaillierte Informationen zu dem Fehler durch die Daten aus der **MAPIERROR** -Struktur in einer Nachricht oder Dialogfeld anzeigen. 
   
@@ -81,5 +81,5 @@ Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Exte
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPIControl: IUnknown](imapicontroliunknown.md)
+[IMAPIControl : IUnknown](imapicontroliunknown.md)
 

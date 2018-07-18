@@ -30,5 +30,5 @@ Eine Zeichenfolge, die für soziale Netzwerke Benutzer-ID des angemeldeten Benut
 ## <a name="see-also"></a>Siehe auch
 
 - [ISocialSession::LoggedOnUserName](isocialsession-loggedonusername.md)  
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

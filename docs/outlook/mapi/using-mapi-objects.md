@@ -23,7 +23,7 @@ Clients und -Dienstanbieter verwenden MAPI-Objekten durch Aufrufen der Methoden 
   
 Wenn ein Objekt einzeln tätigen einen Anruf an eine Methode, und dieses Objekt durch Vererbung bezogene mehrere Schnittstellen implementiert, muss der Benutzer nicht wissen, welche Schnittstelle die Methode gehört. Der Benutzer kann eine der Methoden auf einer Schnittstelle mit einem einzelnen Zeiger auf das Objekt aufrufen. Die folgende Abbildung zeigt, wie eine Clientanwendung ein Folder-Objekt verwendet. Folder-Objekten Implementieren der [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) -Schnittstelle, die von [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) indirekt über erbt [IMAPIProp: IUnknown](imapipropiunknown.md) und [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md). Ein Client kann eine der Methoden **IMAPIProp** wie [IMAPIProp::GetProps](imapiprop-getprops.md), und eine der Aufrufen der [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) Methoden, wie [IMAPIFolder::CreateMessage](imapifolder-createmessage.md), auf die gleiche Weise mit dem gleichen Objektzeiger. Ein Client ist nicht kennen oder betroffenen durch die Tatsache, dass diese Anrufe zu verschiedenen Schnittstellen gehören.
   
-**Clientverwendung eines Ordnerobjekts**
+**Kundenverwendung eines Ordnerobjekts**
   
 ![Client zu verwenden, der ein Folder-Objekt] (media/amapi_40.gif "Client zu verwenden, der ein Folder-Objekt")
   

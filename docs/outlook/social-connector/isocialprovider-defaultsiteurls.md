@@ -27,7 +27,7 @@ Gibt ein Array von Zeichenfolgen, die Website-URLs für den Anbieter Outlook Soc
 
 Ein Zeiger auf eine Struktur, die ein Array von Zeichenfolgen gibt an, die Website-URLs für den OSC-Anbieter darstellen.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Anbieter kann mehrere Website-URLs unterstützen. Die OSC wird die [ISocialSession::SiteUrl](isocialsession-siteurl.md) -Eigenschaft, um den Anbieter für die ausgewählte Website-URL zu informieren. 
   
@@ -35,5 +35,5 @@ Die OSC wird das erste Element des Arrays als den Standard-URL der Website verwe
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

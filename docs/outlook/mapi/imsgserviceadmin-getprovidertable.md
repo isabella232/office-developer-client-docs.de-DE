@@ -50,7 +50,7 @@ S_OK
   
 > Die Anbieter Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin::GetProviderTable** -Methode ermöglicht den Zugriff auf die MAPI-Anbieter-Tabelle eine Tabelle, die alle Adressbuch, Nachrichtenspeicher und Transportanbieter, die derzeit im Profil installiert aufgeführt sind. 
   
@@ -94,5 +94,5 @@ Festlegen der Option MAPI_UNICODE im Parameter _UlFlags_ bewirkt Folgendes:
   
 [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

@@ -16,26 +16,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796381"
 ---
-# <a name="active-cell-layers-section"></a>Zelle "Active" (Abschnitt "Layers")
+# <a name="active-cell-layers-section"></a>Active Cell (Layers Section)
 
 Gibt an, ob der Layer aktiv ist. Shapes ohne vorher zugewiesene Layer werden dem bzw. den aktiven Layern zugewiesen, wenn Sie sie auf das Zeichenblatt ziehen.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Layer ist aktiv.  <br/> |
-|FALSE  <br/> |Layer ist nicht aktiv.  <br/> |
+|TRUE  <br/> |
+          Layer ist aktiv.
+  <br/> |
+|FALSE  <br/> |
+          Layer ist nicht aktiv.
+  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert in dieser Zelle entspricht der **aktiven** Einstellung im Dialogfeld **Layereigenschaften** (klicken Sie in der Gruppe **Bearbeiten** auf der Registerkarte **Start** , klicken Sie auf **Ebenen**, und klicken Sie dann auf **Layereigenschaften**).
+Der Wert dieser Zelle entspricht der Einstellung **Aktiv** im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**).
   
-Wenn Sie einen Verweis auf die aktive Zelle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Active aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Layers.Active [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Active aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Active aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

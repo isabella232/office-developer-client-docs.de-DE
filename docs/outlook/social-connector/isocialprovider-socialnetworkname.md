@@ -27,11 +27,11 @@ Gibt eine Zeichenfolge, die den Namen für soziale Netzwerke darstellt.
 
 Eine Zeichenfolge, die den Namen für soziale Netzwerke enthält.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Outlook Social Connector (OSC)-Anbieter sollte den Namen für soziale Netzwerke zu lokalisieren.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

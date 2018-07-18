@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAddressBookProviderArrayType-Eigenschaft
+title: PidLidAddressBookProviderArrayType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793332"
 ---
-# <a name="pidlidaddressbookproviderarraytype-canonical-property"></a>Kanonische PidLidAddressBookProviderArrayType-Eigenschaft
+# <a name="pidlidaddressbookproviderarraytype-canonical-property"></a>PidLidAddressBookProviderArrayType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Status des Kontakts elektronische Adressen und stellt einen Satz von Bi
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert der **DispidABPArrayType** -Eigenschaft muss eine Kombination von Flags, die den Zustand des Kontaktobjekts angeben. Einzelne Flags werden in der folgenden Tabelle angegeben. Wenn diese Eigenschaft festgelegt ist, muss die Eigenschaft **DispidABPEmailList** ([PidLidAddressBookProviderEmailList](pidlidaddressbookprovideremaillist-canonical-property.md)), auch festgelegt werden. Diese beiden Eigenschaften müssen miteinander synchronisiert werden. Wenn **DispidABPArrayType** das Bit "0 x 00000001 Set" aufweist, muss einer der Werte der **DispidABPEmailList** "0 x 00000000" sein. 
   

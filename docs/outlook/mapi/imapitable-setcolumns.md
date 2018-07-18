@@ -62,7 +62,7 @@ MAPI_E_BUSY
   
 > Ein anderer Vorgang wird ausgeführt, die verhindert, die Spalte festlegen Vorgang dass gestartet wird. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Spalte einer Tabelle ist die Gruppe von Eigenschaften, die die Spalten für die Zeilen in der Tabelle bilden. Es ist eine Standardspalte für jede Art von Tabelle festgelegt. Die standardspaltensammlung besteht aus den Eigenschaften, die der Tabelle Implementierer automatisch enthält. Benutzer können diese durch Aufrufen der Methode **IMAPITable::SetColumns** Standard ändern. Sie können anfordern, dass weitere Spalten hinzugefügt werden, auf den Standardwert festgelegt, wenn die Tabelle-Implementierung unterstützt diese Spalten entfernt werden soll, oder die Reihenfolge der Spalten geändert werden. **SetColumns** gibt die Spalten, die zurückgegeben werden mit jeder Zeile und die Reihenfolge der diese Spalten in der Zeile an. 
   
@@ -129,19 +129,19 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::QueryRows](imapitable-queryrows.md)
   
-[Methode IMAPITable:: Restrict](imapitable-restrict.md)
+[IMAPITable::Restrict](imapitable-restrict.md)
   
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
 [SPropTagArray](sproptagarray.md)
   
 [SPropValue](spropvalue.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

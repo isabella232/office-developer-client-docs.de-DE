@@ -88,7 +88,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange die **IXPLogon::TransportNotify** -Methode aufgerufen, um der Adressbuchhierarchie über Ereignisse signalisieren für die Benachrichtigung angefordert wurde. Diese Ereignisse enthalten eine MAPI-Warteschlange Anforderung zur Übertragung einer Nachricht, Anfang oder Ende eingehende oder ausgehende Transport-Vorgänge und Anfang oder Ende eines Vorgangs zum Löschen einer Warteschlange eingehende oder ausgehende Nachrichten Abbrechen. 
   
@@ -108,5 +108,5 @@ Der Anbieter muss Zugriff auf seine Daten für dieses Anrufs synchronisieren, da
 - [IXPLogon::StartMessage](ixplogon-startmessage.md)
 - [IXPLogon::SubmitMessage](ixplogon-submitmessage.md)
 - [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)
-- [IXPLogon: IUnknown](ixplogoniunknown.md)
+- [IXPLogon : IUnknown](ixplogoniunknown.md)
 

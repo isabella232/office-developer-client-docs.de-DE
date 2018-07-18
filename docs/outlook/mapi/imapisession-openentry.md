@@ -110,7 +110,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter übergeben wird in einem Format nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn der Dienstanbieter, der das Objekt enthält nicht geöffnet ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zugriff auf das Objekt, können die **IMAPISession::OpenEntry** -Methode wird geöffnet, eine Nachricht speichern oder address Book-Objekt zurückgeben einem Zeiger auf eine Schnittstelle, die, verwendet werden. 
   
@@ -141,11 +141,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IAddrBook::OpenEntry](iaddrbook-openentry.md)
   
-[IDistList: IMAPIContainer](idistlistimapicontainer.md)
+[IDistList : IMAPIContainer](idistlistimapicontainer.md)
   
-[IMailUser: IMAPIProp](imailuserimapiprop.md)
+[IMailUser : IMAPIProp](imailuserimapiprop.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
   
 [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md)
   

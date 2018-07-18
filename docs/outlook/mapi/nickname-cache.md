@@ -1,5 +1,5 @@
 ---
-title: Nickname-cache
+title: Cache für Spitznamen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793284"
 ---
-# <a name="nickname-cache"></a>Nickname-cache
+# <a name="nickname-cache"></a>Cache für Spitznamen
 
  
   
@@ -79,7 +79,7 @@ Speichern von Änderungen an den AutoVervollständigen-Daten umfasst das Zurück
 
 
 
-[AutoVervollständigen-Stream](autocomplete-stream.md)
+[Stream für automatisches Vervollständigen](autocomplete-stream.md)
   
 [MAPI-Profile](mapi-profiles.md)
 

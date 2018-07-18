@@ -73,7 +73,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Tabelle unterstützt keine Kategorisierung und erweiterte und reduzierte Ansichten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::GetCollapseState** -Methode funktioniert mit der [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md) -Methode zum Ändern des Benutzers Ansicht einer kategorisierten Tabelle. **GetCollapseState** speichert die Daten, die für **SetCollapseState** zu verwenden, um die entsprechenden Ansichten der Kategorien von einer kategorisierten Tabelle neu erstellen erforderlich ist. Dienstanbieter bestimmen die Daten gespeichert werden soll. Die meisten Dienstanbieter implementieren **GetCollapseState** speichern jedoch die folgenden: 
   
@@ -99,5 +99,5 @@ Rufen Sie immer **GetCollapseState** , bevor Sie **SetCollapseState**aufrufen.
 
 [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

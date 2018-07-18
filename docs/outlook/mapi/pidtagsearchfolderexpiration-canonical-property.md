@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderExpiration-Eigenschaft
+title: PidTagSearchFolderExpiration (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795113"
 ---
-# <a name="pidtagsearchfolderexpiration-canonical-property"></a>Kanonische PidTagSearchFolderExpiration-Eigenschaft
+# <a name="pidtagsearchfolderexpiration-canonical-property"></a>PidTagSearchFolderExpiration (kanonische Eigenschaft)
 
   
   
@@ -32,9 +32,9 @@ Enthält die Uhrzeit, an dem der Suche Ordnercontainer veraltete werden, und akt
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_EXPIRATION  <br/> |
 |Bezeichner:  <br/> |0x683A  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss als die Anzahl der Minuten seit Mitternacht (Coordinated Universal Time, UTC) 1. Januar 1601 formatiert werden.
   

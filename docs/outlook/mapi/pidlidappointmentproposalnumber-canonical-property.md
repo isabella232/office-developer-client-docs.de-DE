@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentProposalNumber-Eigenschaft
+title: PidLidAppointmentProposalNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793365"
 ---
-# <a name="pidlidappointmentproposalnumber-canonical-property"></a>Kanonische PidLidAppointmentProposalNumber-Eigenschaft
+# <a name="pidlidappointmentproposalnumber-canonical-property"></a>PidLidAppointmentProposalNumber (kanonische Eigenschaft)
 
   
   

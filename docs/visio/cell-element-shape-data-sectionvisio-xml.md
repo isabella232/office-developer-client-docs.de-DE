@@ -42,7 +42,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element (Abschnitt "Shape Data")](row-element-shape-data-sectionvisio-xml.md) <br/> |[Shape-Datentyp](propertyrow_type-complextypevisio-xml.md) <br/> |Gibt ein Shape-Dateneingabe zum Zuordnen von Daten mit einer Form an.  <br/> |
+|[Zeilenelement (Shape-Datenabschnitt)](row-element-shape-data-sectionvisio-xml.md) <br/> |[Shape-Datentyp](propertyrow_type-complextypevisio-xml.md) <br/> |Gibt ein Shape-Dateneingabe zum Zuordnen von Daten mit einer Form an.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -70,12 +70,12 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |DataLinked  <br/> |Gibt an, ob die Zeile mit Shape-Daten derzeit an ein Feld in einem Datenrecordset verknüpft ist.  <br/> ||
 |Format  <br/> |Gibt die Formatierung eines Shape-Datenelements an, bei dem es sich um eine Zeichenfolge, eine feste Liste, eine Zahl, eine variable Liste, ein Datum oder eine Uhrzeit, eine Zeitdauer oder eine Währung handeln kann.  <br/> |[Zelle "Format" (Abschnitt "Shape Data")](format-cell-shape-data-section.md) <br/> |
 |Nicht sichtbare  <br/> |Gibt an, ob das Shape-Datenelement im Fenster Shape-Daten angezeigt wird.  <br/> |[Zelle "Invisible" (Abschnitt "Shape Data")](invisible-cell-shape-data-section.md) <br/> |
-|Beschriftung  <br/> |Gibt die Beschriftung, die für Benutzer im Fenster Shape-Daten angezeigt wird. Eine Beschriftung besteht aus alphanumerischen Zeichen, einschließlich des Unterstrich (_).  <br/> |[Zelle "Label" (Abschnitt "Shape Data")](label-cell-shape-data-section.md) <br/> |
+|Beschriftung  <br/> |Legt die Beschriftung fest, die Benutzern im Fenster Shape-Daten angezeigt wird. Eine Beschriftung besteht aus alphanumerischen Zeichen, einschließlich dem Unterstrich (_).  <br/> |[Zelle "Label" (Abschnitt "Shape Data")](label-cell-shape-data-section.md) <br/> |
 |LangID  <br/> |Gibt die Sprache an, in der der Wert für die Shape-Daten eingegeben wurde.  <br/> |[Zelle "LangID" (Abschnitt "Shape Data")](langid-cell-shape-data-section.md) <br/> |
-|Prompt  <br/> |Gibt die Beschreibung oder Anweisung Text, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster Shape-Daten platziert wird.  <br/> |[Zelle "Prompt" (Abschnitt "Shape Data")](prompt-cell-shape-data-section.md) <br/> |
-|SortKey  <br/> |Enthält eine Zeichenfolge, die die Reihenfolge beeinflusst, in der Elemente im Fenster Shape-Daten aufgeführt sind.  <br/> |[Zelle "SortKey" (Abschnitt "Shape Data")](sortkey-cell-shape-data-section.md) <br/> |
+|Prompt  <br/> |Spezifiziert den Text der Beschreibung oder Anweisung, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster Shape-Daten platziert wird.  <br/> |[Zelle "Prompt" (Abschnitt "Shape Data")](prompt-cell-shape-data-section.md) <br/> |
+|SortKey  <br/> |Enthält eine Zeichenfolge, die die Reihenfolge beeinflusst, in der Elemente im Fenster Shape-Daten aufgelistet werden.  <br/> |[Zelle "SortKey" (Abschnitt "Shape Data")](sortkey-cell-shape-data-section.md) <br/> |
 |Typ  <br/> |Gibt einen Datentyp für den Shape-Datenwert an.  <br/> |[Zelle "Type" (Abschnitt "Shape Data")](type-cell-shape-data-section.md) <br/> |
-|Wert  <br/> |Enthält das Shape-Datenelement Wert im Dialogfeld Shape-Daten definieren eingegeben wurde.  <br/> |[Zelle "Value" (Abschnitt "Shape Data")](value-cell-shape-data-section.md) <br/> |
+|Wert  <br/> |Enthält den Wert des Shape-Datenelements, der in das Dialogfeld Shape-Daten definieren eingegeben wurde.  <br/> |[Zelle "Value" (Abschnitt "Shape Data")](value-cell-shape-data-section.md) <br/> |
 |Vergewissern Sie sich  <br/> |Gibt an, ob der Benutzer aufgefordert wird, um Informationen zu benutzerdefinierten Eigenschaften für ein Shape einzugeben, wenn eine Instanz oder beim Duplizieren oder Kopieren der Form.  <br/> |Keine.  <br/> |
    
 

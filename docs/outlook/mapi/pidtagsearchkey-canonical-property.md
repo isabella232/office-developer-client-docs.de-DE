@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchKey-Eigenschaft
+title: PidTagSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795124"
 ---
-# <a name="pidtagsearchkey-canonical-property"></a>Kanonische PidTagSearchKey-Eigenschaft
+# <a name="pidtagsearchkey-canonical-property"></a>PidTagSearchKey (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Enthält einen binären vergleichbaren Schlüssel, der für eine Suche korrelier
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft bietet eine Verfolgung für verknüpfte Objekte, wie Nachrichtenkopien, und suchen unerwünschte vorkommen, wie etwa doppelte Empfänger erleichtert.
   
@@ -87,9 +87,9 @@ Mapitags.h
 
 
 
-[Kanonische PidTagResponsibility-Eigenschaft](pidtagresponsibility-canonical-property.md)
+[PidTagResponsibility (kanonische Eigenschaft)](pidtagresponsibility-canonical-property.md)
   
-[Kanonische PidTagStoreRecordKey-Eigenschaft](pidtagstorerecordkey-canonical-property.md)
+[PidTagStoreRecordKey (kanonische Eigenschaft)](pidtagstorerecordkey-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

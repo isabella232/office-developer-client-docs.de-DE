@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchAttachments-Eigenschaft
+title: PidTagSearchAttachments (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795107"
 ---
-# <a name="pidtagsearchattachments-canonical-property"></a>Kanonische PidTagSearchAttachments-Eigenschaft
+# <a name="pidtagsearchattachments-canonical-property"></a>PidTagSearchAttachments (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält eine Unicodezeichenfolge, die im Anlageninhalt für den Speicher abgefr
 |Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_ATTACHMENTS_W  <br/> |
 |Bezeichner:  <br/> |0x0EA5  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

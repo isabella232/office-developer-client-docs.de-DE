@@ -1,5 +1,5 @@
 ---
-title: Outlook-Messaging-API (MAPI) Copyright-Anmerkung
+title: Messaging-API (MAPI) Copyright-Anmerkung zur Outlook 2013
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793335"
 ---
-# <a name="outlook-messaging-api-mapi-reference-copyright-notice"></a>Outlook-Messaging-API (MAPI) Copyright-Anmerkung
+# <a name="outlook-messaging-api-mapi-reference-copyright-notice"></a>Messaging-API (MAPI) Copyright-Anmerkung zur Outlook 2013
 
  
   

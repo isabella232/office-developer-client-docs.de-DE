@@ -75,7 +75,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::SetDefaultStore** -Methode legt einen Nachrichtenspeicher als eine der folgenden: 
   
@@ -117,9 +117,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[Kanonische PidTagResourceFlags-Eigenschaft](pidtagresourceflags-canonical-property.md)
+[PidTagResourceFlags (kanonische Eigenschaft)](pidtagresourceflags-canonical-property.md)
   
-[Kanonische PidTagStoreSupportMask-Eigenschaft](pidtagstoresupportmask-canonical-property.md)
+[PidTagStoreSupportMask (kanonische Eigenschaft)](pidtagstoresupportmask-canonical-property.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   

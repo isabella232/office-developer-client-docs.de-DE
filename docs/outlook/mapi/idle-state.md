@@ -1,5 +1,5 @@
 ---
-title: Leerlauf
+title: Status „Leerlauf“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19792040"
 ---
-# <a name="idle-state"></a>Leerlauf
+# <a name="idle-state"></a>Status „Leerlauf“
 
   
   
@@ -41,11 +41,11 @@ In diesem Status ohne Wirkung. Ein lokales Speichers wird in diesem Status vor R
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

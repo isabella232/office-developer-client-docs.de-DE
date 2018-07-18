@@ -104,7 +104,7 @@ MAPI_E_NOT_FOUND
   
 > Die angegebene Datei ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **OpenStreamOnFileW** -Funktion besitzt zwei wichtige Verwendungen neben der Behandlung von einer Datei mit einem Unicode-Namen, durch die Einstellung des Flags SOF_UNIQUEFILENAME unterschieden. Wenn dieses Flag nicht festgelegt ist, wird **OpenStreamOnFileW** **IStream** -Objekts auf eine vorhandene Datei, zum Beispiel zum Kopieren von seinen Inhalt der **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))-Eigenschaft einer Anlage, die mit der **geöffnet. :: CopyTo** Methode. In diesem Fall gibt der Parameter _LpszFileName_ den Pfad und Dateinamen der Datei an. 
   
@@ -124,5 +124,5 @@ Wenn das Flag SOF_UNIQUEFILENAME nicht festgelegt ist, _LpszPrefix_ wird ignorie
 
 
 
-[OpenStreamOnFile nicht ausgeführt werden](openstreamonfile.md)
+[OpenStreamOnFile](openstreamonfile.md)
 

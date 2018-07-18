@@ -47,7 +47,7 @@ MAPIOFFLINE_CAPABILITY_ONLINE
   
 > Das offline-Objekt ist online Benachrichtigungen bereitstellen können.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Öffnen einer offline-Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)**, kann ein Client eine Abfrage auf [IMAPIOfflineMgr](imapiofflinemgrimapioffline.md) an, um einen Zeiger auf eine **IMAPIOffline** -Schnittstelle, und rufen **IMAPIOffline::GetCapabilities** , um die Rückrufe unterstützt zu erhalten durch das Objekt. Der Client kann, wählen Sie dann mithilfe von **IMAPIOfflineMgr**Rückrufe eingerichtet.
   
@@ -63,7 +63,7 @@ Beachten Sie, dass auch während ein offline-Objekt kann Rückrufe für Änderun
   
 [IMAPIOffline::SetCurrentState](imapioffline-setcurrentstate.md)
   
-[IMAPIOfflineMgr: IMAPIOffline](imapiofflinemgrimapioffline.md)
+[IMAPIOfflineMgr : IMAPIOffline](imapiofflinemgrimapioffline.md)
 
 
 [MAPI-Konstanten](mapi-constants.md)

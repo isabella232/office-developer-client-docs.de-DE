@@ -23,7 +23,7 @@ Enthält eine Zeile für jedes Aktionstag, das für ein Shape oder Zeichenblatt 
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Abschnitt **Aktionstag** steuert die Darstellung und die Position des Aktionstags, in der Zeichnung. Verwenden die Zelle **TagName** , können Sie jedes Aktionstag zuordnen, mit einer oder mehrerer Zeilen im Abschnitt Aktionen Menüelemente, die auf ein im Aktionstagmenü angezeigt werden, in dem definiert sind. 
   

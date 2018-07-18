@@ -1,5 +1,5 @@
 ---
-title: OpenStreamOnFile nicht ausgeführt werden
+title: OpenStreamOnFile
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793324"
 ---
-# <a name="openstreamonfile"></a>OpenStreamOnFile nicht ausgeführt werden
+# <a name="openstreamonfile"></a>OpenStreamOnFile
 
   
   
@@ -104,7 +104,7 @@ MAPI_E_NOT_FOUND
   
 > Die angegebene Datei ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **OpenStreamOnFile nicht ausgeführt werden** -Funktion weist zwei wichtige verwendet, durch die Einstellung des Flags SOF_UNIQUEFILENAME unterschieden. Wenn dieses Flag nicht festgelegt ist, wird **OpenStreamOnFile nicht ausgeführt werden** **IStream** -Objekts auf eine vorhandene Datei, um den Inhalt der **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))-Eigenschaft einer Anlage, die mit der **IStream kopieren beispielsweise geöffnet. :: CopyTo** Methode. In diesem Fall gibt der Parameter _LpszFileName_ den Pfad und Dateinamen der Datei an. 
   

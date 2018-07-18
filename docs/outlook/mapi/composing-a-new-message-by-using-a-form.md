@@ -1,5 +1,5 @@
 ---
-title: Verfassen einer neuen Nachricht mithilfe eines Formulars
+title: Schreiben einer neuen Nachricht mit einem Formular
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791425"
 ---
-# <a name="composing-a-new-message-by-using-a-form"></a>Verfassen einer neuen Nachricht mithilfe eines Formulars
+# <a name="composing-a-new-message-by-using-a-form"></a>Schreiben einer neuen Nachricht mit einem Formular
 
   
   

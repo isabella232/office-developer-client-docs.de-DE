@@ -22,11 +22,11 @@ Sie können gegenseitige Abhängigkeiten zwischen Formeln mithilfe von ShapeShee
   
 In der Formel einer Zelle können Sie auf eine Zelle in demselben Shape oder in einem anderen Objekt (z. B. Dokument oder Zeichenblatt) verweisen, damit Microsoft Visio einen Wert für eine Zelle anhand des Werts einer anderen Zelle berechnet.
   
-## <a name="what-cell-references-can-include"></a>Welche Zellbezügen
+## <a name="what-cell-references-can-include"></a>Mögliche Inhalte von Zellbezügen
 
 Zellbezüge können Shape binären IDs oder Namen enthalten. Sie können jederzeit auf jedes beliebige Shape auf der Seite, anhand dessen ID verweisen, ob das Shape oder nicht benannt wird. Wenn ein Shape noch nicht benannt wurde, ist der Standardname Blatt. *i* , wobei *i* die Shape-ID ist Die ID wird zugewiesen, wenn das Shape erstellt und nicht geändert werden, wird es sei denn, Sie Shapes in einer anderen Seite oder einem Dokument verschieben. Wenn mehr als eine Form auf einer Seite, den denselben Namen hat, müssen Sie die zugewiesene ID einbeziehen. 
   
-## <a name="cell-reference-syntax-and-examples"></a>Syntax der Zelle Referenz und Beispiele
+## <a name="cell-reference-syntax-and-examples"></a>Syntax und Beispiele für Zellbezüge
 
 Die von Ihnen verwendete Syntax und die Möglichkeit, anhand eines Namens auf ein Shape verweisen zu können, hängt von der Beziehung zwischen den beiden Objekten ab. Es gelten die folgenden allgemeinen Regeln:
   
@@ -38,17 +38,69 @@ Die von Ihnen verwendete Syntax und die Möglichkeit, anhand eines Namens auf ei
     
 |**Um auf eine Zelle zu verweisen**|**Verwenden Sie diese syntax**|**Beispiel**|
 |:-----|:-----|:-----|
-|Dasselbe shape  <br/> | Abrufen CellName  <br/> | Breite  <br/> |
-| Ein Shape, eine Gruppe oder ein Leitfaden  <br/> | Shapename! Abrufen CellName  <br/> | Stern! Winkel  <br/> |
-| Ein Shape, eine Gruppe oder eine Anleitung, in denen mehrere Shapes auf derselben Ebene denselben Namen hat  <br/> | Shapename.ID! Abrufen CellName  <br/> | Executive.2! Höhe  <br/> |
-| Eine Spalte mit Namen mit indizierten Zeilen  <br/> | Section.Column[index]  <br/> | Char.Font[3]  <br/> |
-| Eine Spalte ohne Namen mit indizierten Zeilen  <br/> | Section.ColumnIndex  <br/> | Scratch.A5  <br/> |
-| Alle Shape, Page-, Master- oder Formatvorlage  <br/> | Blatt.ID! Abrufen CellName  <br/> | Sheet.8! FillForegnd  <br/> |
-| Ein Master-Shape  <br/> | Masters [MasterName]! Arbeitsblattname! Zellbezug  <br/> | Master [Zahnrad]! Welle! Geometry1.x1  <br/> |
-| Die Seite oder Master-Shape auf dem sich das Objekt befindet  <br/> | ThePage! Zellbezug  <br/> | ThePage! User.Vanishing_Point  <br/> |
-| Ein anderes Zeichenblatt im Dokument  <br/> | Seiten [PageName]! Arbeitsblattname! Zellbezug  <br/> | Seiten [Seite 3]! Sheet4! BeginX  <br/> |
-| Eine Formatvorlage  <br/> | Formatvorlagen! Arbeitsblattname! Zellbezug  <br/> | Formatvorlagen! Manager! LineColor  <br/> |
-| Das Dokument  <br/> | TheDoc! Zellbezug  <br/> | TheDoc! PreviewQuality  <br/> |
-| Ein Shape, Seite, Master-, Dokument oder Formatvorlage mit einem nicht standardmäßigen Namen.  <br/> | "Arbeitsblattname!" Abrufen CellName  <br/> | "1-D'! LineColor  <br/> |
+|
+                
+                
+                Dasselbe Shape
+  <br/> | Abrufen CellName  <br/> | Breite  <br/> |
+| 
+                
+                
+                Ein Shape, eine Gruppe oder Führungslinie
+  <br/> | Shapename! Abrufen CellName  <br/> | 
+                
+                
+                Stern!Winkel
+  <br/> |
+| 
+                
+                
+                Ein Shape, eine Gruppe oder Führungslinie, in denen mehrere Shapes auf derselben Ebene denselben Namen aufweisen
+  <br/> | Shapename.ID! Abrufen CellName  <br/> | Executive.2! Höhe  <br/> |
+| 
+                
+                
+                Eine Spalte mit Namen mit indizierten Zeilen
+  <br/> | Section.Column[index]  <br/> | Char.Font[3]  <br/> |
+| 
+                
+                
+                Eine Spalte ohne Namen mit indizierten Zeilen
+  <br/> | Section.ColumnIndex  <br/> | Scratch.A5  <br/> |
+| 
+                
+                
+                Jedes beliebige Shape, jedes Zeichenblatt, jedes Master-Shape oder jede Formatvorlage
+  <br/> | Blatt.ID! Abrufen CellName  <br/> | Sheet.8! FillForegnd  <br/> |
+| 
+                
+                
+                Ein Master-Shape
+  <br/> | Masters [MasterName]! Arbeitsblattname! Zellbezug  <br/> | Master [Zahnrad]! Welle! Geometry1.x1  <br/> |
+| 
+                
+                
+                Die Zeichenblatt oder Master-Shape, auf dem sich das Objekt befindet
+  <br/> | ThePage! Zellbezug  <br/> | ThePage! User.Vanishing_Point  <br/> |
+| 
+                
+                
+                Ein anderes Zeichenblatt im Dokument
+  <br/> | Seiten [PageName]! Arbeitsblattname! Zellbezug  <br/> | Seiten [Seite 3]! Sheet4! BeginX  <br/> |
+| 
+                
+                
+                Eine Formatvorlage
+  <br/> | Formatvorlagen! Arbeitsblattname! Zellbezug  <br/> | Formatvorlagen! Manager! LineColor  <br/> |
+| 
+                
+                
+                Das Dokument
+  <br/> | TheDoc! Zellbezug  <br/> | TheDoc! PreviewQuality  <br/> |
+| 
+                
+                
+                Ein Shape, ein Zeichenblatt, ein Master-Shape, ein Dokument oder eine Formatvorlage mit einem nicht standardmäßigen Namen.
+  <br/> | "Arbeitsblattname!" Abrufen CellName  <br/> | "1-D'! LineColor  <br/> |
    
 

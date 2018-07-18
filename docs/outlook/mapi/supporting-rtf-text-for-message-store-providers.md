@@ -1,5 +1,5 @@
 ---
-title: Unterstützung für RTF-Text für Nachrichtenspeicher-Anbieter
+title: Unterstützen von RTF-Text für Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795693"
 ---
-# <a name="supporting-rtf-text-for-message-store-providers"></a>Unterstützung für RTF-Text für Nachrichtenspeicher-Anbieter
+# <a name="supporting-rtf-text-for-message-store-providers"></a>Unterstützen von RTF-Text für Nachrichtenspeicheranbieter
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAnniversaryEventEntryId-Eigenschaft
+title: PidLidAnniversaryEventEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793347"
 ---
-# <a name="pidlidanniversaryevententryid-canonical-property"></a>Kanonische PidLidAnniversaryEventEntryId-Eigenschaft
+# <a name="pidlidanniversaryevententryid-canonical-property"></a>PidLidAnniversaryEventEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Eintrags-ID des Termins, die das Jahrestag des Kontakts darstellt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Termin durch die **DispidAnniversaryEventEID** -Eigenschaft angegebenen muss mit diesen Kontakt verknüpft werden, mithilfe der **DispidContactLinkEntry** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)) **DispidContactLinkSearchKey** ([ PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)), und die Eigenschaften der **DispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)), die detaillierte in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).
   

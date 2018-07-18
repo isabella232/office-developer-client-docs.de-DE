@@ -23,7 +23,7 @@ Gibt an, ob die Werte der angegebenen Zellen in einem master-Shape die Werte (ei
 |TRUE  <br/> |Wenn die Zelle **ReplaceLockFormat** eines master-Shapes auf TRUE festgelegt ist, überschreiben die Formatierung Werte des Master-Shapes alle entsprechenden Werte eines Shapes, die durch das Master-Shape ersetzt wird.  <br/> |
 |FALSE  <br/> |Wenn die Zelle **ReplaceLockFormat** eines master-Shapes auf FALSE festgelegt ist, enthält Ersatz-Shapes die Werte der lokalen Formatierung von der alten Form nach der Ersetzung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zelle **ReplaceLockFormat** bestimmt, ob das master-Shape der lokalen Formatierung Werte von Zellen in den folgenden Abschnitten während einer Form Ersetzungsvorgang überschreibt: 
   

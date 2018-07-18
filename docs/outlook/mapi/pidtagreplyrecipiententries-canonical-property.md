@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReplyRecipientEntries-Eigenschaft
+title: PidTagReplyRecipientEntries (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794953"
 ---
-# <a name="pidtagreplyrecipiententries-canonical-property"></a>Kanonische PidTagReplyRecipientEntries-Eigenschaft
+# <a name="pidtagreplyrecipiententries-canonical-property"></a>PidTagReplyRecipientEntries (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Größe Array von Eintragsbezeichner für Empfänger, die eine Ant
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält eine [FLATENTRYLIST](flatentrylist.md) -Struktur und ist keine mehrwertige Eigenschaft. 
   

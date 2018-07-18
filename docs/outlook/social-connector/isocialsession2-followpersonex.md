@@ -33,7 +33,7 @@ _displayName_
   
 > [in] Eine Zeichenfolge, die den Anzeigenamen der Person, die als Freund hinzugefügt werden soll.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Outlook Social Connector (OSC) bietet mehr als auf kann SMTP-Adresse des Arrays in den Parameter **EmailAddresses** die OSC-Anbieter wird vorausgesetzt, dass das erste Element die primäre SMTP-Adresse ist. 
   
@@ -45,5 +45,5 @@ Wenn der Anbieter die [ISocialSession2](isocialsession2iunknown.md) -Schnittstel
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 

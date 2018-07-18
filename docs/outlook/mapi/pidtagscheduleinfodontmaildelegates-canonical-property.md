@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoDontMailDelegates-Eigenschaft
+title: PidTagScheduleInfoDontMailDelegates (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795093"
 ---
-# <a name="pidtagscheduleinfodontmaildelegates-canonical-property"></a>Kanonische PidTagScheduleInfoDontMailDelegates-Eigenschaft
+# <a name="pidtagscheduleinfodontmaildelegates-canonical-property"></a>PidTagScheduleInfoDontMailDelegates (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn die Stellvertretung nicht Updates erhalten möchten.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss im Delegaten Informationen-Objekt festgelegt werden.
   

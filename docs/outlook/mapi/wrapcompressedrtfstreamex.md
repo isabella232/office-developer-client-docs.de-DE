@@ -68,7 +68,7 @@ MAPI_E_INVALID_PARAMETER
   
 - Dies wird zurückgegeben, wenn das Flag **MAPI_NATIVE_BODY** mit dem **MAPI_MODIFY** -Flag im Feld **UlFlags** der Struktur **RTF_WCSINFO** an, auf das *pWCSInfo* zeigt kombiniert ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **WrapCompressedRTFStreamEx** ermöglicht den Zugriff auf den Textkörper einer e-Mail-Nachricht in komprimierten RTF Dekomprimieren des Streams gekapselten der dekomprimierten Stream und das Format und optional die systemeigene Textstream zurückgegeben. Die systemeigene Textstream kann in RTF, nur-Text oder HTML sein. 
   
@@ -78,5 +78,5 @@ Da die **MAPI\_NATIVE_BODY** Flag kombiniert werden die **MAPI\_ändern** -Kennz
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Abrufen von den Textkörper einer Nachricht im RTF komprimierte und konvertieren Sie es in seinem nativen Format](how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md)
+- [Abrufen des Textkörpers einer Nachricht im komprimierten RTF-Format und Konvertieren in das systemeigene Format](how-to-retrieve-the-body-of-a-message-in-compressed-rtf-and-convert.md)
 

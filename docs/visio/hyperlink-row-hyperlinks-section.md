@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797173"
 ---
-# <a name="hyperlink-row-hyperlinks-section"></a>Zeile "Hyperlink" (Abschnitt "Hyperlinks")
+# <a name="hyperlink-row-hyperlinks-section"></a>Hyperlink Row (Hyperlinks Section)
 
 Enthält die Informationen für einen einzelnen Hyperlink, der einem Shape zugeordnet ist. Ein Shape enthält für jeden Hyperlink eine Hyperlink-Zeile.
   
@@ -25,7 +25,7 @@ Hyperlink Zeilen heißen Hyperlink. *Name* und enthält folgenden Zellen. Weiter
 |**Cell**|**Beschreibung**|
 |:-----|:-----|
 |[Description](description-cell-hyperlinks-section.md) <br/> |Ein beschreibender Text als Zeichenfolge für einen Hyperlink.  <br/> |
-|[Address](address-cell-hyperlinks-section.md) <br/> |URL-Adresse (Uniform Resource Locator), MS-DOS-Dateiname oder UNC-Pfad (Universal Naming Convention), zu der bzw. zu dem gewechselt werden soll.  <br/> |
+|[Adresse](address-cell-hyperlinks-section.md) <br/> |URL-Adresse (Uniform Resource Locator), MS-DOS-Dateiname oder UNC-Pfad (Universal Naming Convention), zu der bzw. zu dem gewechselt werden soll.  <br/> |
 |[SubAddress](subaddress-cell-hyperlinks-section.md) <br/> |Eine Stelle im Zieldokument für die Verknüpfung.  <br/> |
 |[ExtraInfo](extrainfo-cell-hyperlinks-section.md) <br/> |Eine Zeichenfolge, die Informationen für die Auflösung der URL übergibt.  <br/> |
 |[Frame](frame-cell-hyperlinks-section.md) <br/> |Der Name eines Rahmens, der als Ziel dienen soll, wenn Microsoft Office Visio als ActiveX-Dokument in einem ActiveX-Container geöffnet ist. Der Standardwert ist eine leere Zeichenfolge.  <br/> |

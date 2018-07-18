@@ -64,7 +64,7 @@ S_OK
   
 > Eine Empfangsordner wurde erfolgreich hergestellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::SetReceiveFolder** -Methode legt oder ändert den Empfangsordner für eine bestimmte Nachrichtenklasse. Mit **SetReceiveFolder**kann einen Client mithilfe von aufeinander folgenden Aufrufen angeben, ein anderes Empfangsordner für jede definierte Nachrichtenklasse oder angeben, dass eingehende Nachrichten für mehrere Nachrichtenklassen alle im gleichen Ordner wechseln. Ein Client kann beispielsweise eine eigene Klasse von Nachrichten in einem eigenen Ordner eintreffen haben. Eine Anwendung Fax kann festlegen, einen Ordner, in dem Speicheranbieter eingehende Faxe versetzt, und einen anderen Ordner, in dem der Anbieter Ausgehende Faxnachrichten versetzt.
   

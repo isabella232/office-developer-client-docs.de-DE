@@ -59,7 +59,7 @@ void CALLERRELEASE(
 
 Keine 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung oder Dienstanbieter, die ein Table-Datenobjekt gefüllt wurde kann [ITableData::HrGetView](itabledata-hrgetview.md) zum Erstellen einer Ansicht, sortierten der Tabelle aufrufen. Der Anruf an **HrGetView** übergibt einen Zeiger auf eine Rückruffunktion **CALLERRELEASE** basiert und auch einen Kontext mit der Tabellenansicht gespeichert werden soll. Wenn der Tabellenansicht der Referenzzähler gibt 0 (null) zurück, und die Ansicht wird veröffentlicht, ruft die **IMAPITable** -Implementierung die Callback-Funktion, die im Kontext der _UlCallerData_ -Parameter übergeben. 
   

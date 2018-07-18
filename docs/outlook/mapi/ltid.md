@@ -34,7 +34,7 @@ struct LTID
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _guid_
   
@@ -52,9 +52,9 @@ struct LTID
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
 [FEID](feid.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoMonthsMerged-Eigenschaft
+title: PidTagScheduleInfoMonthsMerged (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795108"
 ---
-# <a name="pidtagscheduleinfomonthsmerged-canonical-property"></a>Kanonische PidTagScheduleInfoMonthsMerged-Eigenschaft
+# <a name="pidtagscheduleinfomonthsmerged-canonical-property"></a>PidTagScheduleInfoMonthsMerged (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste der, die Monate, für welche Frei/Gebucht-Daten vom Typ besc
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ereignisse vom Typ mit Vorbehalt Frei/Gebucht-Informationen sind nicht in dieser Eigenschaft enthalten. Die Syntax der-Format und Integritätsregeln dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)), aber finden Sie unter Termine, die auf das zugehörige Calendar-Objekt ABWESEND oder beschäftigt gekennzeichnet sind. 
   

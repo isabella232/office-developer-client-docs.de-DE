@@ -1,5 +1,5 @@
 ---
-title: Optionale Features für Adressbuchanbietern implementierte
+title: Optionale Funktionen für Adressbuchanbieter
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793317"
 ---
-# <a name="optional-features-for-address-book-providers"></a>Optionale Features für Adressbuchanbietern implementierte
+# <a name="optional-features-for-address-book-providers"></a>Optionale Funktionen für Adressbuchanbieter
 
   
   

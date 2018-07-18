@@ -1,5 +1,5 @@
 ---
-title: Status der Upload löschen-Status
+title: Status „Status der Upload-Löschung“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795803"
 ---
-# <a name="upload-delete-status-state"></a>Status der Upload löschen-Status
+# <a name="upload-delete-status-state"></a>Status „Status der Upload-Löschung“
 
   
   
@@ -45,11 +45,11 @@ Wenn dieser Status beendet ist, löscht Outlook die interne Informationen zurüc
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

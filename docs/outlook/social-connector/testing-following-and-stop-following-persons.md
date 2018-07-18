@@ -1,5 +1,5 @@
 ---
-title: Testen die folgenden und Stop-folgenden Personen
+title: Testen des Folgens von Personen und Beenden des Folgens
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796078"
 ---
-# <a name="testing-following-and-stop-following-persons"></a>Testen die folgenden und Stop-folgenden Personen
+# <a name="testing-following-and-stop-following-persons"></a>Testen des Folgens von Personen und Beenden des Folgens
 
 In diesem Thema werden die Szenarien zum Testen des Outlook Social Connector (OSC)-Anbieters Möglichkeit, führen einen Freund, und beenden Sie einen Freund auf dem sozialen Netzwerk folgen.
   

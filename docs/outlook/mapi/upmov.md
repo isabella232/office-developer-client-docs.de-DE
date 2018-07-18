@@ -39,7 +39,7 @@ struct UPMOV
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _ulFlags_
   
@@ -98,8 +98,8 @@ _cEntMov_
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die API-Replikation](about-the-replication-api.md)
-- [Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+- [Informationen über die Replikations-API](about-the-replication-api.md)
+- [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
 - [MAPI-Konstanten](mapi-constants.md)
 - [FEID](feid.md)
 

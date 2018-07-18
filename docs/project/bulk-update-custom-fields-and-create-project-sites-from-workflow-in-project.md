@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796188"
 ---
-# <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>Massen-Update für benutzerdefinierte Felder und Erstellen von Projektwebsites in einem Workflow in Project Online
+# <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>Massenaktualisierung von benutzerdefinierten Feldern und Erstellen von Projektwebsites aus einem Workflow in Project Online
 
 Damit werden Kunden optimal Project Online und unsere Service Erweiterbarkeit und Flexibilität zu verbessern, haben wir zwei Methoden das clientseitige Objektmodell hinzugefügt, die Sie in Project Online apps und Workflows verwenden können.
   
@@ -77,8 +77,8 @@ Der endgültige, End-to-End-Workflow sieht folgendermaßen aus:
     
     |Name|Typ|Wert|
     |:-----|:-----|:-----|
-    |Annehmen  <br/> |String  <br/> |Application/Json; OData = verbose  <br/> |
-    |Content-Type  <br/> |String  <br/> |Application/Json; OData = verbose  <br/> |
+    |Annehmen  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
+    |Content-Type  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
    
     ![Hinzufügen eines Accept-Headers] (media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Hinzufügen eines Accept-Headers")
   
@@ -123,18 +123,18 @@ Der endgültige, End-to-End-Workflow sieht folgendermaßen aus:
   
        |Name|Typ|Wert|
        |:-----|:-----|:-----|
-       |CustomFieldDictionary (0) / __metadata/Typ  <br/> |String  <br/> |SP. KeyValue  <br/> |
-       |CustomFieldDictionary (0) / -Taste  <br/> |String  <br/> |Benutzerdefinierte\_ce23fbf43fa0e411941000155d3c8201  <br/> |
-       |CustomFieldDictionary (0) / Wert  <br/> |String  <br/> |Eintrag\_b9a2fd69279de411940f00155d3c8201; #Entry\_baa2fd69279de411940f00155d3c8201  <br/> |
-       |CustomFieldDictionary (0) / Werttyp  <br/> |String  <br/> |Edm.String  <br/> |
-       |CustomFieldDictionary (1) / __metadata/Typ  <br/> |String  <br/> |SP. KeyValue  <br/> |
-       |CustomFieldDictionary (1) / Schlüssel  <br/> |String  <br/> |Custom_c7f114c97098e411940f00155d3c8201  <br/> |
-       |CustomFieldDictionary (1)-Wert  <br/> |String  <br/> |90.5  <br/> |
-       |CustomFieldDictionary (1) / Werttyp  <br/> |String  <br/> |Edm.Double  <br/> |
-       |CustomFieldDictionary (2) / __metadata/Typ  <br/> |String  <br/> |SP. KeyValue  <br/> |
-       |CustomFieldDictionary (2) / Schlüssel  <br/> |String  <br/> |Custom_c6fb67e0b9a1e411941000155d3c8201  <br/> |
-       |CustomFieldDictionary (2)-Wert  <br/> |String  <br/> |2015-04-01T00:00:00.0000000  <br/> |
-       |CustomFieldDictionary (2) / Werttyp  <br/> |String  <br/> |Edm.DateTime  <br/> |
+       |CustomFieldDictionary (0) / __metadata/Typ  <br/> |Zeichenfolge  <br/> |SP. KeyValue  <br/> |
+       |CustomFieldDictionary (0) / -Taste  <br/> |Zeichenfolge  <br/> |Benutzerdefinierte\_ce23fbf43fa0e411941000155d3c8201  <br/> |
+       |CustomFieldDictionary (0) / Wert  <br/> |Zeichenfolge  <br/> |Eintrag\_b9a2fd69279de411940f00155d3c8201; #Entry\_baa2fd69279de411940f00155d3c8201  <br/> |
+       |CustomFieldDictionary (0) / Werttyp  <br/> |Zeichenfolge  <br/> |Edm.String  <br/> |
+       |CustomFieldDictionary (1) / __metadata/Typ  <br/> |Zeichenfolge  <br/> |SP. KeyValue  <br/> |
+       |CustomFieldDictionary (1) / Schlüssel  <br/> |Zeichenfolge  <br/> |Custom_c7f114c97098e411940f00155d3c8201  <br/> |
+       |CustomFieldDictionary (1)-Wert  <br/> |Zeichenfolge  <br/> |90.5  <br/> |
+       |CustomFieldDictionary (1) / Werttyp  <br/> |Zeichenfolge  <br/> |Edm.Double  <br/> |
+       |CustomFieldDictionary (2) / __metadata/Typ  <br/> |Zeichenfolge  <br/> |SP. KeyValue  <br/> |
+       |CustomFieldDictionary (2) / Schlüssel  <br/> |Zeichenfolge  <br/> |Custom_c6fb67e0b9a1e411941000155d3c8201  <br/> |
+       |CustomFieldDictionary (2)-Wert  <br/> |Zeichenfolge  <br/> |2015-04-01T00:00:00.0000000  <br/> |
+       |CustomFieldDictionary (2) / Werttyp  <br/> |Zeichenfolge  <br/> |Edm.DateTime  <br/> |
    
        ![Wörterbuch, das benutzerdefinierte Feld Updates definiert] (media/41a1f18f-a6b2-40ff-904b-437baf962621.png "Wörterbuch, das benutzerdefinierte Feld Updates definiert")
   
@@ -198,8 +198,8 @@ Wir haben die **CreateProjectSite** -Methode hinzugefügt, damit Sie beim Erstel
     
     |Name|Typ|Wert|
     |:-----|:-----|:-----|
-    |Annehmen  <br/> |String  <br/> |Application/Json; OData = verbose  <br/> |
-    |Content-Type  <br/> |String  <br/> |Application/Json; OData = verbose  <br/> |
+    |Annehmen  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
+    |Content-Type  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
    
     ![Hinzufügen eines Accept-Headers] (media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Hinzufügen eines Accept-Headers")
   
@@ -217,8 +217,8 @@ Wir haben die **CreateProjectSite** -Methode hinzugefügt, damit Sie beim Erstel
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Projekt Programmieraufgaben](project-programming-tasks.md)
-- [Client-seitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
+- [Project-Programmieraufgaben](project-programming-tasks.md)
+- [Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
 - [Workflows in SharePoint 2013](http://msdn.microsoft.com/library/e0602371-ae22-44be-8a7e-9e47e9f046d6%28Office.15%29.aspx)
     
 

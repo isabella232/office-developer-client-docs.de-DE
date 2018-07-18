@@ -41,5 +41,5 @@ Access-Eigenschaft und -Objekt kann auch abgerufen oder mithilfe der [IPropData]
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAllAttendeesString-Eigenschaft
+title: PidLidAllAttendeesString (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793345"
 ---
-# <a name="pidlidallattendeesstring-canonical-property"></a>Kanonische PidLidAllAttendeesString-Eigenschaft
+# <a name="pidlidallattendeesstring-canonical-property"></a>PidLidAllAttendeesString (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt eine Liste aller Teilnehmer außer dem Organisator, einschließlich Ressour
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert für jeden Teilnehmer ist Anzeigename den Namen des Teilnehmers. Separate Einträge müssen durch ein Semikolon, gefolgt von einem Leerzeichen getrennt sein. Diese Eigenschaft ist nicht erforderlich.
   

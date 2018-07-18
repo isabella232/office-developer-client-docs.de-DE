@@ -1,5 +1,5 @@
 ---
-title: Die Bezeichner Bereiche-Eigenschaft
+title: Eigenschaftenbezeichnerbereiche
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795320"
 ---
-# <a name="property-identifier-ranges"></a>Die Bezeichner Bereiche-Eigenschaft
+# <a name="property-identifier-ranges"></a>Eigenschaftenbezeichnerbereiche
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSentMailEntryId-Eigenschaft
+title: PidTagSentMailEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795143"
 ---
-# <a name="pidtagsentmailentryid-canonical-property"></a>Kanonische PidTagSentMailEntryId-Eigenschaft
+# <a name="pidtagsentmailentryid-canonical-property"></a>PidTagSentMailEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Ordners, in dem die Nachricht nach dem Absenden ver
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird häufig von der **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))-Eigenschaft, die Clientanwendung Standardordner gesendete Elemente kopiert.
   

@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796376"
 ---
-# <a name="sway-uri-scheme"></a>Sway URI-Schema
+# <a name="sway-uri-scheme"></a>Sway-URI-Schema
 
 Dieses Dokument definiert das Format des Uniform Resource Identifiers (URIs) für die Anwendung Schlingern für Windows. Dieser URI-Schema können Sie die Anwendung Schlingern mit verschiedenen Befehlen aufrufen.
 
@@ -33,11 +33,11 @@ Mehrere Befehlsargumente können in das Sway URL-Schema enthalten sein. Dieser B
 
 |Befehlsnamen argument|Beschreibung|Typ|Mögliche Werte|Erforderlich?|
 |:-----|:-----|:-----|:-----|:-----|
-|**id**|Der eindeutige Bezeichner der einer Schlingern. Verwendet, um anzugeben, die Schlingern geöffnet werden soll.|String|Ein gültiger Eindeutiger Bezeichner für eine Schlingern. Die Id ist immer Teil der URL zu einer Schlingern.<br/><br/>Zum Beispiel für die folgenden Schlingern `https://sway.com/dBheQgVZ1RQBfiQU`, die Id lautet `dBheQgVZ1RQBfiQU`.<br/><br/>Wenn das Benutzerkonto, das die Schlingern-Anwendung gehörigen Bearbeitungsberechtigungen verfügt, wird die Anwendung die Schlingern im Bearbeitungsmodus geöffnet. Andernfalls wird die Anwendung die Schlingern im Ansichtsmodus geöffnet.|Nein|
-|**mode**|Der Modus, in dem eine bestimmte Schlingern geöffnet, zur Bearbeitung oder zur Anzeige werden soll.|String|Bearbeiten<br/>Ansicht<br/><br/>**Hinweis**: dieser Befehlsargument wird ignoriert, wenn keine **Id** angegeben wird,.|Nein|
-|**auth_upn**|Das Konto beim Öffnen von Schlingern verwendet.|String|Eine gültige e-Mail-Adresse.<br/><br/>Wenn die angegebene e-Mail-Adresse nicht mit einem Konto Schlingern verknüpft ist, wird der Benutzer als der angegebene Benutzer anmelden von Schlingern gefragt.<br/><br/>Wenn mehr als ein Konto Schlingern-Anwendung zugeordnet ist, und die angegebene e-Mail-Adresse vorhanden ist, wechselt die Schlingern-Anwendung, die mit diesem Konto beim Aufrufen.|Nein|
-|**Auth\_Pvr**|Die Art des Kontos zum Öffnen der Schlingern&mdash;ein Microsoft-Konto oder einem Azure Active Directory-Konto (Azure AD).|String|WindowsLiveId – gibt an, dass die **Auth\_Upn** Konto ist ein Microsoft-Konto.<br/><br/>Organisations-ID – gibt an, dass die **Auth\_Upn** Konto ist ein Azure AD-Konto.<br/><br/>Wenn kein **Auth\_Upn** angegeben wird, ist dieses Befehlsargument wird ignoriert.|Nein|
-|**Aufrufen von\_app**|Der Name der Windows-Anwendung verwendet, um Schlingern aufzurufen.|String|Der Anzeigename der Windows-Anwendung verwendet, um über das Sway URL-Schema Schlingern aufzurufen.<br/><br/>Der Zweck dieses Befehlsargument ist für Telemetrie und Nachverfolgen von Änderungen.|Nein|
+|**id**|Der eindeutige Bezeichner der einer Schlingern. Verwendet, um anzugeben, die Schlingern geöffnet werden soll.|Zeichenfolge|Ein gültiger Eindeutiger Bezeichner für eine Schlingern. Die Id ist immer Teil der URL zu einer Schlingern.<br/><br/>Zum Beispiel für die folgenden Schlingern `https://sway.com/dBheQgVZ1RQBfiQU`, die Id lautet `dBheQgVZ1RQBfiQU`.<br/><br/>Wenn das Benutzerkonto, das die Schlingern-Anwendung gehörigen Bearbeitungsberechtigungen verfügt, wird die Anwendung die Schlingern im Bearbeitungsmodus geöffnet. Andernfalls wird die Anwendung die Schlingern im Ansichtsmodus geöffnet.|Nein|
+|**mode**|Der Modus, in dem eine bestimmte Schlingern geöffnet, zur Bearbeitung oder zur Anzeige werden soll.|Zeichenfolge|Bearbeiten<br/>Ansicht<br/><br/>**Hinweis**: dieser Befehlsargument wird ignoriert, wenn keine **Id** angegeben wird,.|Nein|
+|**auth_upn**|Das Konto beim Öffnen von Schlingern verwendet.|Zeichenfolge|Eine gültige e-Mail-Adresse.<br/><br/>Wenn die angegebene e-Mail-Adresse nicht mit einem Konto Schlingern verknüpft ist, wird der Benutzer als der angegebene Benutzer anmelden von Schlingern gefragt.<br/><br/>Wenn mehr als ein Konto Schlingern-Anwendung zugeordnet ist, und die angegebene e-Mail-Adresse vorhanden ist, wechselt die Schlingern-Anwendung, die mit diesem Konto beim Aufrufen.|Nein|
+|**Auth\_Pvr**|Die Art des Kontos zum Öffnen der Schlingern&mdash;ein Microsoft-Konto oder einem Azure Active Directory-Konto (Azure AD).|Zeichenfolge|WindowsLiveId – gibt an, dass die **Auth\_Upn** Konto ist ein Microsoft-Konto.<br/><br/>Organisations-ID – gibt an, dass die **Auth\_Upn** Konto ist ein Azure AD-Konto.<br/><br/>Wenn kein **Auth\_Upn** angegeben wird, ist dieses Befehlsargument wird ignoriert.|Nein|
+|**Aufrufen von\_app**|Der Name der Windows-Anwendung verwendet, um Schlingern aufzurufen.|Zeichenfolge|Der Anzeigename der Windows-Anwendung verwendet, um über das Sway URL-Schema Schlingern aufzurufen.<br/><br/>Der Zweck dieses Befehlsargument ist für Telemetrie und Nachverfolgen von Änderungen.|Nein|
 
 ## <a name="uri-scheme-semantics"></a>Semantik der URI-Schema
 

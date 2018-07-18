@@ -23,7 +23,7 @@ Bestimmt, ob die Form ersetzen Benutzeroberfläche für dieses Dokument deaktivi
 |TRUE  <br/> |Die **Form ersetzen** -Schaltfläche ist nicht in der Benutzeroberfläche verfügbar.  <br/> |
 |FALSE  <br/> |Die **Form ersetzen** -Schaltfläche ist aktiv in der Benutzeroberfläche. Benutzer können das Feature Shapes ersetzen Sie in diesem Dokument verwenden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **DocLockReplace** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

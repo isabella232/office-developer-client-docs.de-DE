@@ -18,7 +18,7 @@ ms.locfileid: "19797789"
 
 Bestimmt die Menge des Blur für eine Spiegelung eines Shapes, die in Punkten zwischen 0,0 und 100,0.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ReflectionBlur** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

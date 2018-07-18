@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderDefinition-Eigenschaft
+title: PidTagSearchFolderDefinition (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795104"
 ---
-# <a name="pidtagsearchfolderdefinition-canonical-property"></a>Kanonische PidTagSearchFolderDefinition-Eigenschaft
+# <a name="pidtagsearchfolderdefinition-canonical-property"></a>PidTagSearchFolderDefinition (kanonische Eigenschaft)
 
   
   
@@ -32,9 +32,9 @@ Enthält Daten, die die Suchkriterien angibt.
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_DEFINITION  <br/> |
 |Bezeichner:  <br/> |0x6845  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Inhalt der einzelnen Felder des binary large Object (BLOB) in dieser Eigenschaft enthaltenen ist abhängig von der Vorlagen-ID, die in **PidTagSearchFolderTemplateId** ([PidTagSearchFolderTemplateId](pidtagsearchfoldertemplateid-canonical-property.md))-Eigenschaft angegeben ist. Informationen zu den BLOB-Struktur, und suchen Sie die Vorlagen finden Sie unter [[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx). 
   

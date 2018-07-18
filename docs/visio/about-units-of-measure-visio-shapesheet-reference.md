@@ -59,7 +59,7 @@ Verwenden Sie bei der Angabe von Maßeinheiten in ShapeSheet-Formularen die in d
 
 In Formeln können Sie Maßeinheiten für zusammengesetzte Zahlen mit den Abkürzungen aus der folgenden Tabelle angeben. Visio vereinfacht die Ergebnisse und zeigt sie in den zusammengesetzten Einheiten an.
   
-Wenn Sie 45,635 ° eingeben, zeigt Visio den äquivalenten Wert beispielsweise als 45° 38' 6".
+Wenn Sie beispielsweise 45,635° eingeben, zeigt Visio den äquivalenten Wert als 45° 38' 6" an.
   
 |**So geben Sie Einheiten an**|**Verwenden Sie diese Abkürzung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: Component Object Model und MAPI
+title: COM (Component Object Model) und MAPI
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791443"
 ---
-# <a name="component-object-model-and-mapi"></a>Component Object Model und MAPI
+# <a name="component-object-model-and-mapi"></a>COM (Component Object Model) und MAPI
 
   
   

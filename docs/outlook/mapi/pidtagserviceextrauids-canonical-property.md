@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServiceExtraUids-Eigenschaft
+title: PidTagServiceExtraUids (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795160"
 ---
-# <a name="pidtagserviceextrauids-canonical-property"></a>Kanonische PidTagServiceExtraUids-Eigenschaft
+# <a name="pidtagserviceextrauids-canonical-property"></a>PidTagServiceExtraUids (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste von [MAPIUID](mapiuid.md) -Strukturen, die zusätzliche Prof
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Neue Profil Abschnitte können für jede Nachrichtenfilter erstellt werden. Wenn die Informationen über den Dienst ist in einem anderen Profil kopiert werden, ist es wichtig, die zusätzliche Profil Abschnitte für die Filter sowie kopieren. Ein Dienstanbieter, der zusätzliche Profil Abschnitten verwendet kann die **MAPIUID** Strukturen Abschnitten Profil in **PR_SERVICE_EXTRA_UIDS**, speichern, die MAPI zum Kopieren von Informationen für den Dienst zusätzliche Nachricht ermöglicht.
   

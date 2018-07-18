@@ -17,7 +17,7 @@ ms.locfileid: "19795948"
 ---
 # <a name="getting-started-with-developing-an-outlook-social-connector-provider"></a>Erste Schritte zur Entwicklung von einem Anbieter Outlook Connector für soziale Netzwerke
 
-Verweis auf den Outlook Social Connector (OSC) wird von einem OSC-Anbieter entwickeln mithilfe der Erweiterbarkeit des OSC-Providers beschrieben. Wenn Sie für die Entwicklung von Lösungen für Outlook nicht vertraut sind, finden Sie unter [Auswählen einer API oder Technologie zur Entwicklung von Outlook-Lösungen](http://msdn.microsoft.com/library/8295da20-e567-4d08-b8e4-5c9b4498edd4%28Office.15%29.aspx) zu den APIs und Technologien, die für Ihre Anforderungen am besten geeignet sind. 
+Verweis auf den Outlook Social Connector (OSC) wird von einem OSC-Anbieter entwickeln mithilfe der Erweiterbarkeit des OSC-Providers beschrieben. Wenn Sie gerade erst mit dem Entwickeln von Lösungen für Outlook begonnen haben, finden Sie im Artikel [Selecting an API or Technology for Developing Outlook Solutions](http://msdn.microsoft.com/library/8295da20-e567-4d08-b8e4-5c9b4498edd4%28Office.15%29.aspx) weitere Informationen zu den APIs und Technologien, die am besten zu Ihren Anforderungen passen. 
 
 Dieser Abschnitt bietet eine Übersicht über die OSC, wie ein OSC-Anbieter nützlich, schnell Schritte zum Entwickeln eines Providers, technische Anforderungen, bewährte Methoden für das Entwickeln eines Providers erlernen werden kann und was ist neu in dieser Version. 
   

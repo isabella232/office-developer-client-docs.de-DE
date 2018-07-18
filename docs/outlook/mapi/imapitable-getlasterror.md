@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::GetLastError** -Methode gibt ausführliche Informationen zurück, wenn zu einem Aufruf der vorherigen-Methode, die nicht zur Verfügung. Diese Informationen kann in einer Nachricht oder ein Dialogfeld angezeigt werden. 
   
@@ -85,5 +85,5 @@ Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Exte
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

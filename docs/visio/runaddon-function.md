@@ -28,9 +28,9 @@ RUNADDON (" *String* ")
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _string_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name eines Add-Ons in der **Addons** -Auflistung oder einem Makro in einem VBA-Projekt.  <br/> |
+| _string_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name eines Add-Ons in der **Addons**-Auflistung oder ein Makro in einem VBA-Projekt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn das Projekt des Dokuments, die den RUNADDON-Funktionsaufruf enthält (oder einem anderen Projekt, wenn darauf verwiesen wird) Makro (eine Prozedur ohne Argumente) namens _String_nicht vorhanden ist, wird in Microsoft Visio das Add-on _String_ausgeführt. Wenn kein Add-on mit dem Namen _String_ gefunden werden kann, wird von Visio hat keine Auswirkung und kein Fehler gemeldet. (Mit die **TraceFlags** -Eigenschaft können Sie die Prozeduren und Add-ons, die zum Ausführen von Visio versucht überwachen.) 
   
@@ -41,7 +41,7 @@ Zum Aufrufen einer Prozedur in einem Projekt auf das Projekt des Dokuments, die 
 > [!NOTE]
 >  Ab Visio 2002 kann die RUNADDON-Funktion keine Zeichenfolgen mit beliebigem VBA-Code ausführen. Code, der früher an die RUNADDON-Funktion übergeben wurde, kann in eine Prozedur im VBA-Projekt eines Dokuments verschoben werden, das aus der RUNADDON-Funktion aufgerufen wird. 
   
-Weitere Informationen zum Ausführen von Code in Visio finden Sie unter [Informationen zu Sicherheitseinstellungen und Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md) in dieser ShapeSheet-Referenz. 
+Weitere Informationen zum Ausführen von Code in Visio finden Sie unter [Informationen zu Sicherheitseinstellungen und zum Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md) in dieser ShapeSheet-Referenz. 
   
 In früheren Visio-Versionen wird diese Funktion in der Form _RUNADDON geschrieben. In Visio, Version 4.0 und höher, können beide Schreibweisen verwendet werden. 
   
@@ -61,7 +61,7 @@ Startet das (VSL-implementierte) Add-On Shapes anordnen.
 
 RUNADDON("ThisDocument.ReportStatistics")
   
-Ruft das Makro ReportStatistics im Modul **ThisDocument** im Dokumentprojekt, das diesen Funktionsaufruf enthält. 
+Ruft das Makro ReportStatistics im Modul ThisDocument im Dokumentprojekt auf, das diesen Funktionsaufruf enthält. 
   
 > [!NOTE]
 >  Zum Aufrufen eines Makros im Modul **ThisDocument** müssen Sie der Zeichenfolge wie dargestellt "ThisDocument" voranstellen. 

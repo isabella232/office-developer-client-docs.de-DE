@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSelectable-Eigenschaft
+title: PidTagSelectable (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795119"
 ---
-# <a name="pidtagselectable-canonical-property"></a>Kanonische PidTagSelectable-Eigenschaft
+# <a name="pidtagselectable-canonical-property"></a>PidTagSelectable (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn der Eintrag in der einmaligen Tabelle ausgewählt werden kan
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adressbuchcontainer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in erster Linie für die visuelle Formatierung einer einmaligen Tabelle verwendet. Vorlagen können, indem Sie einen Eintrag, der angibt, die Überschrift für die Gruppe erstellen gruppiert werden. Durch Festlegen dieser Eigenschaft auf false festgelegt, für die Überschrift wird sichergestellt, dass der Benutzer nur die eigentlichen Vorlagen in der Gruppe und nicht bei diesem Eintrag Überschrift auswählen kann. 
   
@@ -74,9 +74,9 @@ Mapitags.h
 
 
 
-[GetOneOffTable](iablogon-getoneofftable.md)
+[IABLogon::GetOneOffTable](iablogon-getoneofftable.md)
   
-[Kanonische PidTagFolderType-Eigenschaft](pidtagfoldertype-canonical-property.md)
+[PidTagFolderType (kanonische Eigenschaft)](pidtagfoldertype-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Die Einstellungsoptionen für das Adressbuch
+title: Festlegen von Adressbuchoptionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795512"
 ---
-# <a name="setting-address-book-options"></a>Die Einstellungsoptionen für das Adressbuch
+# <a name="setting-address-book-options"></a>Festlegen von Adressbuchoptionen
 
   
   
@@ -41,5 +41,5 @@ Diese drei Eigenschaften sind spezielle, da Sie sie über die Standardmethoden *
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

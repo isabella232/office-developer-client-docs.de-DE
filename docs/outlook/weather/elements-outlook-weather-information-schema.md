@@ -19,12 +19,12 @@ ms.locfileid: "19796094"
 
 In diesem Thema werden die Elemente im Outlook Wetter Informationen XML-Schema.
   
-- [aktuelle element](current-element-weathertype-complextypeoutlook-weather-information-schema.md)
+- [current-Element](current-element-weathertype-complextypeoutlook-weather-information-schema.md)
     
-- [Vorhersage-element](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md)
+- [forecast-Element](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md)
     
-- [Wetter-element](weather-element-weatherdata-elementoutlook-weather-information-schema.md)
+- [weather-Element](weather-element-weatherdata-elementoutlook-weather-information-schema.md)
     
-- [WeatherData-element](weatherdata-element-outlook-weather-information-schema.md)
+- [weatherdata-Element](weatherdata-element-outlook-weather-information-schema.md)
     
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderLastUsed-Eigenschaft
+title: PidTagSearchFolderLastUsed (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795110"
 ---
-# <a name="pidtagsearchfolderlastused-canonical-property"></a>Kanonische PidTagSearchFolderLastUsed-Eigenschaft
+# <a name="pidtagsearchfolderlastused-canonical-property"></a>PidTagSearchFolderLastUsed (kanonische Eigenschaft)
 
   
   
@@ -32,9 +32,9 @@ Der letzte Zeitpunkt des Zugriffs auf der Ordner darstellt.
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_LAST_USED  <br/> |
 |Bezeichner:  <br/> |0x6834  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss als die Anzahl der Minuten seit Mitternacht (Coordinated Universal Time, UTC) 1. Januar 1601 formatiert werden.
   

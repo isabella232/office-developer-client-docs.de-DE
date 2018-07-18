@@ -1,5 +1,5 @@
 ---
-title: Eine Benachrichtigung Anzeigedauer
+title: Zeitliches steuern einer Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795729"
 ---
-# <a name="timing-a-notification"></a>Eine Benachrichtigung Anzeigedauer
+# <a name="timing-a-notification"></a>Zeitliches steuern einer Benachrichtigung
 
   
   

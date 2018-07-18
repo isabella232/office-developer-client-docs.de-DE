@@ -18,7 +18,7 @@ ms.locfileid: "19796920"
 
 Bestimmt das Effektschema des Designs auf eine Form, als ganze Zahl angewendet.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **EffectSchemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

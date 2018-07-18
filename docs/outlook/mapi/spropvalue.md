@@ -42,7 +42,7 @@ typedef struct _SPropValue
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulPropTag**
   
@@ -64,7 +64,7 @@ typedef struct _SPropValue
 |PT_R4 oder PT_FLOAT  <br/> |**flt** <br/> |Gleitkommazahl  <br/> |
 |PT_R8 oder PT_DOUBLE  <br/> |**Doppelte Japan** <br/> |double  <br/> |
 |PT_BOOLEAN  <br/> |**b** <br/> |nicht signierte kurze int  <br/> |
-|PT_CURRENCY  <br/> |**Übernehmen** <br/> |[WÄHRUNG](currency.md) <br/> |
+|PT_CURRENCY  <br/> |**Übernehmen** <br/> |[CURRENCY](currency.md) <br/> |
 |PT_APPTIME  <br/> |**unter** <br/> |double  <br/> |
 |PT_SYSTIME  <br/> |**FT** <br/> |[FILETIME](filetime.md) <br/> |
 |PT_STRING8  <br/> |**lpszA** <br/> |LPSTR  <br/> |
@@ -84,11 +84,11 @@ typedef struct _SPropValue
 |PT_MV_UNICODE  <br/> |**MVszW** <br/> |[SWStringArray](swstringarray.md) <br/> |
 |PT_MV_CLSID  <br/> |**MVguid** <br/> |[SGuidArray](sguidarray.md) <br/> |
 |PT_MV_I8  <br/> |**MVli** <br/> |[SLargeIntegerArray](slargeintegerarray.md) <br/> |
-|PT_ERROR  <br/> |**Err** <br/> |[SCODE](scode.md) <br/> |
+|PT_ERROR  <br/> |**err** <br/> |[SCODE](scode.md) <br/> |
 |PT_NULL oder PT_OBJECT  <br/> |**x** <br/> |LANGE  <br/> |
 |PT_PTR  <br/> |**LPV** <br/> |VOID\*  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Element **UlPropTag** besteht aus zwei Teilen: 
   

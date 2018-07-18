@@ -15,11 +15,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796102"
 ---
-# <a name="isocialprovider--iunknown"></a>ISocialProvider: IUnknown
+# <a name="isocialprovider--iunknown"></a>ISocialProvider : IUnknown
 
 Stellt eine Instanz eines Anbieters Outlook Social Connector (OSC).
   
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 In der folgenden Tabelle werden die Member, die für die **ISocialProvider** -Schnittstelle verfügbar sind. 
   
@@ -36,7 +36,7 @@ In der folgenden Tabelle werden die Member, die für die **ISocialProvider** -Sc
 |[SocialNetworkName](isocialprovider-socialnetworkname.md) <br/> |Eigenschaft  <br/> |Gibt eine Zeichenfolge, die den Namen für soziale Netzwerke darstellt.  <br/> |
 |[Version](isocialprovider-version.md) <br/> |Eigenschaft  <br/> |Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für diese für soziale Netzwerke darstellt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein OSC-Anbieter muss diese Schnittstelle für die Kommunikation mit dem OSC implementieren.
   

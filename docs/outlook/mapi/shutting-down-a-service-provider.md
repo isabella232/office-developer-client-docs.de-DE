@@ -1,5 +1,5 @@
 ---
-title: Herunterfahren von einem Dienstanbieter
+title: Herunterfahren eines Dienstanbieters
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795542"
 ---
-# <a name="shutting-down-a-service-provider"></a>Herunterfahren von einem Dienstanbieter
+# <a name="shutting-down-a-service-provider"></a>Herunterfahren eines Dienstanbieters
 
  
   

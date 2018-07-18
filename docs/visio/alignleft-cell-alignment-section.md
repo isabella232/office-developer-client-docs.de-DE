@@ -16,19 +16,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796388"
 ---
-# <a name="alignleft-cell-alignment-section"></a>Zelle "AlignLeft" (Abschnitt "Alignment")
+# <a name="alignleft-cell-alignment-section"></a>AlignLeft Cell (Alignment Section)
 
 Legt die horizontale Position einer vertikalen Führung (oder eines Führungspunkts) relativ zum Ursprung seines übergeordneten Objekts fest, an der (bzw. dem) der linke Rand des Shapes ausgerichtet ist.
   
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle AlignLeft nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle AlignLeft aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | AlignLeft  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle AlignLeft aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle AlignLeft aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

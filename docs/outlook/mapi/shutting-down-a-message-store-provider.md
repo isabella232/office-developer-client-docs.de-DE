@@ -1,5 +1,5 @@
 ---
-title: Beenden einer Nachrichtenspeicher-Anbieters
+title: Herunterfahren eines Nachrichtenspeicheranbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795540"
 ---
-# <a name="shutting-down-a-message-store-provider"></a>Beenden einer Nachrichtenspeicher-Anbieters
+# <a name="shutting-down-a-message-store-provider"></a>Herunterfahren eines Nachrichtenspeicheranbieters
 
   
   
@@ -45,5 +45,5 @@ Einige Clients können ausgelassen werden, den Anruf an **IMsgStore::StoreLogoff
 
 
 
-[Herunterfahren von einem Dienstanbieter](shutting-down-a-service-provider.md)
+[Herunterfahren eines Dienstanbieters](shutting-down-a-service-provider.md)
 

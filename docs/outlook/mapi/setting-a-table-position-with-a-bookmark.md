@@ -1,5 +1,5 @@
 ---
-title: Wenn Sie eine Tabelle Position mit einer Textmarke
+title: Festlegen einer Tabellenposition mit einer Textmarke
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795510"
 ---
-# <a name="setting-a-table-position-with-a-bookmark"></a>Wenn Sie eine Tabelle Position mit einer Textmarke
+# <a name="setting-a-table-position-with-a-bookmark"></a>Festlegen einer Tabellenposition mit einer Textmarke
 
   
   

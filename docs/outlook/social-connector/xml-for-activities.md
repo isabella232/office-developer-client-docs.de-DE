@@ -1,5 +1,5 @@
 ---
-title: XML-Code für Aktivitäten
+title: XML für „activities“
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796098"
 ---
-# <a name="xml-for-activities"></a>XML-Code für Aktivitäten
+# <a name="xml-for-activities"></a>XML für „activities“
 
 Dieses Thema enthält ein Beispielszenario, das den Outlook Social Connector (OSC)-Anbieter zeigt Erweiterbarkeits-API-Aufrufe, die ein OSC-Anbieter implementiert und die OSC zum Abrufen von Aktivitätsinformationen macht. Informationen wird in XML-Zeichenfolgen ausgedrückt, die das OSC-Anbieter-XML-Schema entsprechen.
   

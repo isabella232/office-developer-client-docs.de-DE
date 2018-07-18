@@ -1,5 +1,5 @@
 ---
-title: Herunterfahren von einem Anbieter gepackten PST-Datei
+title: Herunterfahren eines Anbieters von umschlossenem PST-Speicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795533"
 ---
-# <a name="shutting-down-a-wrapped-pst-store-provider"></a>Herunterfahren von einem Anbieter gepackten PST-Datei
+# <a name="shutting-down-a-wrapped-pst-store-provider"></a>Herunterfahren eines Anbieters von umschlossenem PST-Speicher
 
  
   
@@ -46,13 +46,13 @@ STDMETHODIMP CMSProvider::Shutdown(ULONG * pulFlags)
 
 
 
-[Zum Beispiel umgebrochen PST-Anbieter](about-the-sample-wrapped-pst-store-provider.md)
+[Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher](about-the-sample-wrapped-pst-store-provider.md)
   
-[Installieren des Beispiels umfließendem PST-Anbieter](installing-the-sample-wrapped-pst-store-provider.md)
+[Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md)
   
-[Initialisieren einen Anbieter für umbrochenen PST anmelden](initializing-a-wrapped-pst-store-provider.md)
+[Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
   
-[Anmelden bei einem Anbieter gepackten PST-Datei](logging-on-to-a-wrapped-pst-store-provider.md)
+[Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[Verwenden eines Anbieters gepackten PST-Speichers](using-a-wrapped-pst-store-provider.md)
+[Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
 

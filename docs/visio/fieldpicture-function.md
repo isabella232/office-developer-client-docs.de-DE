@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796974"
 ---
-# <a name="fieldpicture-function"></a>FIELDPICTURE-Funktion
+# <a name="fieldpicture-function"></a>FIELDPICTURE Function
 
 Gibt eine Formatierungsangabe Zeichenfolge, die dem internen Textfeld-Formatcode von Microsoft Visio entspricht.
   

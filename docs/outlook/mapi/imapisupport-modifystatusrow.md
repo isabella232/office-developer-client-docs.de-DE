@@ -59,7 +59,7 @@ S_OK
   
 > Die Statustabelle wurde erfolgreich aktualisiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::ModifyStatusRow** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter rufen **ModifyStatusRow** Sie bei der Anmeldung, um die Statustabelle eine Zeile hinzuzufügen und zu anderen Zeiten während der Sitzung auf die Zeile zu aktualisieren. **ModifyStatusRow** bietet MAPI die erforderlichen Informationen für die Statustabelle zu erstellen. 
   

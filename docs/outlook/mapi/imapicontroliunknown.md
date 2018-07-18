@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792076"
 ---
-# <a name="imapicontrol--iunknown"></a>IMAPIControl: IUnknown
+# <a name="imapicontrol--iunknown"></a>IMAPIControl : IUnknown
 
   
   

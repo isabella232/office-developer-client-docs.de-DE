@@ -1,5 +1,5 @@
 ---
-title: Schreiben von Formularcode Server
+title: Schreiben von Formularservercode
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795855"
 ---
-# <a name="writing-form-server-code"></a>Schreiben von Formularcode Server
+# <a name="writing-form-server-code"></a>Schreiben von Formularservercode
 
   
   
@@ -43,15 +43,15 @@ Nicht alle der MAPI-Schnittstellen, die auf Formularen beziehen werden alle Form
   
 |**Schnittstelle**|**Beschreibung**|**Status**|
 |:-----|:-----|:-----|
-|[IMAPIForm: IUnknown](imapiformiunknown.md) <br/> |Die primäre Schnittstelle, die Clients zu Servern Formular geladen und Verben Formular ausführen Formular Server herunterfahren, verwenden. Dies ist auch die Schnittstelle abgeleitet OLE **IUnknown** , die mit anderen Komponenten OLE, über welche Schnittstellen zu informieren, die ein Form-Objekt implementiert wird.  <br/> |Erforderlich  <br/> |
-|[IPersistMessage: IUnknown](ipersistmessageiunknown.md) <br/> |Beim Laden von Nachrichten in und Speichern von Nachrichten von Formular-Objekte verwendet.  <br/> |Erforderlich  <br/> |
-|[IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md) <br/> |Von Formular-Objekte verwendet, um messaging Clientstatus an, und um zu ermitteln, ob das Form-Objekt zum Anzeigen der nächsten oder der vorherigen Nachricht in einem Ordner ist.  <br/> |Optional  <br/> |
+|[IMAPIForm : IUnknown](imapiformiunknown.md) <br/> |Die primäre Schnittstelle, die Clients zu Servern Formular geladen und Verben Formular ausführen Formular Server herunterfahren, verwenden. Dies ist auch die Schnittstelle abgeleitet OLE **IUnknown** , die mit anderen Komponenten OLE, über welche Schnittstellen zu informieren, die ein Form-Objekt implementiert wird.  <br/> |Erforderlich  <br/> |
+|[IPersistMessage : IUnknown](ipersistmessageiunknown.md) <br/> |Beim Laden von Nachrichten in und Speichern von Nachrichten von Formular-Objekte verwendet.  <br/> |Erforderlich  <br/> |
+|[IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md) <br/> |Von Formular-Objekte verwendet, um messaging Clientstatus an, und um zu ermitteln, ob das Form-Objekt zum Anzeigen der nächsten oder der vorherigen Nachricht in einem Ordner ist.  <br/> |Optional  <br/> |
 |[IClassFactory](http://msdn.microsoft.com/library/f624f833-2b69-43bc-92cd-c4ecbe6051c5%28Office.15%29.aspx) <br/> |Die OLE-Klasse Factory-Schnittstelle von Formularobjekten für die Einhaltung der OLE-Klasse Factory Mechanismus verwendet.  <br/> |Erforderlich  <br/> |
-|[IMAPIFormFactory: IUnknown](imapiformfactoryiunknown.md) <br/> |Wird verwendet, wenn Ihr Formular Server mehr als ein Formulartyps unterstützt. In diesem Fall kann die Schnittstelle **IMAPIFormFactory** -Clientanwendungen, die mehrere **IClassFactory** -Schnittstellen (eine pro Formulartyp, der Ihrem Formular Server unterstützt) Zugriff auf Ihrem Formular Server muss auch implementieren.  <br/> |Optional  <br/> |
+|[IMAPIFormFactory : IUnknown](imapiformfactoryiunknown.md) <br/> |Wird verwendet, wenn Ihr Formular Server mehr als ein Formulartyps unterstützt. In diesem Fall kann die Schnittstelle **IMAPIFormFactory** -Clientanwendungen, die mehrere **IClassFactory** -Schnittstellen (eine pro Formulartyp, der Ihrem Formular Server unterstützt) Zugriff auf Ihrem Formular Server muss auch implementieren.  <br/> |Optional  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+[Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

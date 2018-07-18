@@ -33,7 +33,7 @@ In den folgenden Abschnitten finden Sie Informationen zu Objekten und Schnittste
     
     Führt in der Component Object Model bezieht sich auf MAPI, beschreibt das MAPI-Hierarchie und Kapselung-Objektmodell, ordnet Objekte Schnittstellen und Implementierungsaufgaben beschreibt.
     
-- [�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+- [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
     
     Beschreibt, wie Objekte zu verwalten und Clients arbeiten mit Eigenschaften.
     
@@ -61,7 +61,7 @@ In den folgenden Abschnitten finden Sie Informationen zu Objekten und Schnittste
     
   - Benutzerprofil und Nachricht-Objekte
     
-- [Entwickeln einer MAPI-Client-Anwendung](developing-a-mapi-client-application.md)
+- [Entwickeln einer MAPI-Clientanwendung](developing-a-mapi-client-application.md)
     
     Beschreibt, wie Objekte verwenden, um einen MAPI-Client-Anwendung zu implementieren.
     
@@ -69,11 +69,11 @@ In den folgenden Abschnitten finden Sie Informationen zu Objekten und Schnittste
     
     Beschreibt, wie Objekte Support und Fortschritt verwendet und Implementierung ein Statusobjekt und Tabelle angezeigt.
     
-- [Entwickeln von einem MAPI-Adressbuchanbieter](developing-a-mapi-address-book-provider.md)
+- [Entwicklung eines MAPI-Adressbuchanbieters](developing-a-mapi-address-book-provider.md)
     
     Beschreibt, wie die Adresse Book-Anmeldung und Anbieter-Objekten implementieren, address Book-Containern und messaging-Benutzern, Verteilerlisten und verknüpfte Tabellen.
     
-- [Entwickeln eines Transportdienstes MAPI](developing-a-mapi-transport-provider.md)
+- [Entwickeln eines MAPI-Transportanbieters](developing-a-mapi-transport-provider.md)
     
     Beschreibt, wie die Transport Anmeldung und Anbieterobjekte, Statusobjekt, Transport Neutral Encapsulation Format (TNEF)-Objekt und Ordnern zu implementieren.
     
@@ -81,7 +81,7 @@ In den folgenden Abschnitten finden Sie Informationen zu Objekten und Schnittste
     
     Beschreibt, wie die Message Store-Anmeldung und Anbieter Objekte Nachrichtenspeicher, Ordner, Nachrichten, Anlagen, Empfänger und verknüpfte Tabellen implementieren.
     
-- [Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
     
     Beschreibt das Formular-Objekte zu implementieren.
     

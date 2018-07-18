@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796366"
 ---
-# <a name="acos-function"></a>ACOS Function
+# <a name="acos-function"></a>ARCCOS-Funktion
 
 Gibt den Arkuskosinus einer Zahl, beispielsweise der Winkel, dessen Kosinus *Zahl* ist. 
   
@@ -24,7 +24,7 @@ Gibt den Arkuskosinus einer Zahl, beispielsweise der Winkel, dessen Kosinus *Zah
 
 ACOS ( *Anzahl*) 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert muss im Bereich von-1 \<= Anzahl \<= 1 oder ein #NUM! Fehler wird zurückgegeben. Der resultierende Winkel liegt im Bereich von 0 bis \<= Winkel \<= PI Bogenmaß (0 \<= Winkel \<= 180 Grad).
   

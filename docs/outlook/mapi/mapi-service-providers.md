@@ -33,10 +33,10 @@ Address Book und Message-Anbieter müssen viele ähnlichkeiten. Registrieren sie
   
 |**Address Book Provider-Schnittstellen**|**Nachricht Store Provider-Schnittstellen**|
 |:-----|:-----|
-|[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md) <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) <br/> |
-|[IDistList: IMAPIContainer](idistlistimapicontainer.md) <br/> |[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) <br/> |
-|[IMailUser: IMAPIProp](imailuserimapiprop.md) <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
-| <br/> |[IAttach: IMAPIProp](iattachimapiprop.md) <br/> |
+|[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |[IMsgStore: IMAPIProp](imsgstoreimapiprop.md) <br/> |
+|[IDistList : IMAPIContainer](idistlistimapicontainer.md) <br/> |[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md) <br/> |
+|[IMailUser : IMAPIProp](imailuserimapiprop.md) <br/> |[IMessage: IMAPIProp](imessageimapiprop.md) <br/> |
+| <br/> |[IAttach : IMAPIProp](iattachimapiprop.md) <br/> |
    
 Transportanbieter unterscheiden sich von Adresse Adressbuch und Nachricht Speicher-Anbieter in die Möglichkeit, den, die Sie mit MAPI- und -Clients kommunizieren. In der Regel warten Transportanbieter MAPI, um Informationen dazu auffordern, anstatt Kommunikation zu initiieren. Im Gegensatz zu anderen Anbietern unterstützt Transportanbieter keine Vielzahl von Objekten und Tabellen, die von Clients häufig zugegriffen werden. Allerdings unterstützen sie ein Statusobjekt wie alle-Dienstanbieter, und seine Eigenschaften in der Statustabelle veröffentlichen. Während Address Book und Message-Anbieter die [IMAPISupport::SetProviderUID](imapisupport-setprovideruid.md) -Methode zum Registrieren der eindeutige Bezeichner für die Erstellung ihrer Eintragsbezeichner aufrufen, rufen Sie Transportanbieter die [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode Registrieren Sie sich eindeutige Bezeichner als auch-Adresstypen für die Verantwortung für die Übermittlung von bestimmten Nachrichten. 
   

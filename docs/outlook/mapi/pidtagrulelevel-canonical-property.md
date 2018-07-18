@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleLevel-Eigenschaft
+title: PidTagRuleLevel (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795035"
 ---
-# <a name="pidtagrulelevel-canonical-property"></a>Kanonische PidTagRuleLevel-Eigenschaft
+# <a name="pidtagrulelevel-canonical-property"></a>PidTagRuleLevel (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Exit-Ebene einer Regel enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft festlegen, muss der Client 0 x 00000000 übergeben. 
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -78,7 +78,7 @@ PARAMETER MAPI_UNICODE
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Meldungsobjekt Store behält eine interne Eintrags-ID der nur für Service Provider Coresident mit diesem Nachrichtenspeicher von Bedeutung ist. Für andere Messagingkomponenten stellt MAPI eine gepackten Version von der internen Eintrags-ID, mit die Hilfe erkennbar wie, mit dem Nachrichtenspeicher gehören. Coresident-Dienstanbieter müssen immer die ursprünglichen allein stehenden Store Eintrags-ID angegeben werden; Clientanwendungen sollte immer die gepackten Version angegeben werden, die dann verwendbar an einer beliebigen Stelle in der messaging-Domäne und in anderen Domänen. 
   

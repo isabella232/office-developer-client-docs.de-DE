@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagToDoItemFlags-Eigenschaft
+title: PidTagToDoItemFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795295"
 ---
-# <a name="pidtagtodoitemflags-canonical-property"></a>Kanonische PidTagToDoItemFlags-Eigenschaft
+# <a name="pidtagtodoitemflags-canonical-property"></a>PidTagToDoItemFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Stellt ein Aufgabenelement gekennzeichnete Bedingung dar.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ein Bitfeld, in dem jedes Bit auf 1 festgelegt werden sollte, wenn die zugeordnete Bedingung in der folgenden Tabelle angewendet wird, sonst 0.
   

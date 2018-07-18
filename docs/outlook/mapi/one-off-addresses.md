@@ -27,7 +27,7 @@ Zum Erstellen einer einmaligen Adresse verwenden Clients eine spezielle Vorlage 
   
 Es gibt sechs Komponenten in diesem Format und einige Regeln darüber, wie Sie Zeichen. In der folgenden Tabelle werden die Komponenten beschrieben.
   
-|**Komponente**|**Verwendung**|**Beschreibung**|
+|**Komponente**|**Nutzung**|**Beschreibung**|
 |:-----|:-----|:-----|
 |Anzeigename  <br/> |Optional  <br/> |Wenn nicht vorhanden ist, wird **IAddrBook::ResolveName** sichtbaren Teil der e-Mail-Adresse als Anzeigename verwendet. Kann Leerzeichen enthalten. Weitere Informationen finden Sie unter [IAddrBook::ResolveName](iaddrbook-resolvename.md).  <br/> |
 |[  <br/> |Erforderlich  <br/> |Starten des Typ und die Adresse bezeichnet.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: OpenTNEFStream nicht ausgeführt werden
+title: OpenTnefStream
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793319"
 ---
-# <a name="opentnefstream"></a>OpenTNEFStream nicht ausgeführt werden
+# <a name="opentnefstream"></a>OpenTnefStream
 
 **Betrifft**: Outlook 
   

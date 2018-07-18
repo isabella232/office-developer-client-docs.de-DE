@@ -29,7 +29,7 @@ _emailAddress_
   
 > [in] Eine Zeichenfolge, die eine e-Mail-Adresse einer Person enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Parameter _EmailAddress_ muss eine gültige SMTP-Adresse sein. Wenn der Anbieter Outlook Social Connector (OSC) die **FollowPerson** -Methode als **true** , in **Funktionen festgelegt hat**und das Argument für _EmailAddress_ keinen Benutzer im Netzwerk überein stimmt, muss der Anbieter die OSC_E_NOT_FOUND zurück. Fehler. Wenn der Anbieter **FollowPerson** als **false** in **Funktionen**festgelegt ist, sollte der Anbieter den OSC_E_FAIL-Fehler zurückgegeben.
   
@@ -39,5 +39,5 @@ Bei der Entscheidung, ob **ISocalSession::FollowPerson** oder **ISocialSession2:
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

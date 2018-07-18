@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen, anzeigen, ausblenden oder Löschen eines Abschnitts
+title: Hinzufügen, Anzeigen, Ausblenden oder Löschen eines Abschnitts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796389"
 ---
-# <a name="add-show-hide-or-delete-a-section"></a>Hinzufügen, anzeigen, ausblenden oder Löschen eines Abschnitts
+# <a name="add-show-hide-or-delete-a-section"></a>Hinzufügen, Anzeigen, Ausblenden oder Löschen eines Abschnitts
 
 Sie können hinzufügen, anzeigen, ausblenden und Löschen von Abschnitten im ShapeSheet.
   
@@ -31,21 +31,21 @@ Sie können hinzufügen, anzeigen, ausblenden und Löschen von Abschnitten im Sh
     
   - Klicken Sie unter **ShapeSheet-Tools** auf der Registerkarte **Entwurf** in der Gruppe **Abschnitte** auf **Einfügen**.
     
-  - Oder mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie dann im Kontextmenü auf **Abschnitt einfügen** . 
+  - Oder klicken Sie mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie dann im Kontextmenü auf **Abschnitt einfügen**. 
     
-3. Aktivieren Sie das Kontrollkästchen für den Abschnitt, den Sie hinzufügen möchten, und klicken Sie dann auf **OK**.
+3. Aktivieren Sie das Kontrollkästchen für den Abschnitt, den Sie einfügen möchten, und klicken Sie auf **OK**.
     
     > [!NOTE]
-    >  Wenn Sie den neuen Abschnitt im ShapeSheet-Fenster nicht angezeigt wird, stellen Sie sicher, dass im Abschnitt festgelegt ist, angezeigt werden. Klicken Sie in der Gruppe **Ansicht** auf der Registerkarte **ShapeSheet-Tools** auf **Abschnitte**, und wählen Sie dann die Kontrollkästchen für die Abschnitte, die angezeigt werden soll. 
+    >  Wenn Sie den neuen Abschnitt nicht im ShapeSheet-Fenster anzeigen können, stellen Sie sicher, dass der Abschnitt für die Anzeige festgelegt ist. Klicken Sie auf der Registerkarte **ShapeSheet-Tools** in der Gruppe **Ansicht** auf **Abschnitte**, und aktivieren Sie anschließend die Kontrollkästchen für die Abschnitte, die angezeigt werden sollen. 
   
 ### <a name="to-show-or-hide-sections"></a>Ein-oder Ausblenden von Abschnitten
 
-- Wählen Sie eine beliebige Zelle im Abschnitt, den Sie löschen möchten, und klicken Sie dann in der Gruppe **Abschnitte** auf der Registerkarte **ShapeSheet-Tools** auf **Löschen**.
+- Markieren Sie eine beliebige Zelle in dem Abschnitt, den Sie löschen möchten, und klicken Sie dann auf der Registerkarte **ShapeSheet-Tools** in der Gruppe **Abschnitte** auf **Löschen**.
     
 - Sie können auch Maustaste auf eine Zelle, und klicken Sie dann im Kontextmenü auf **Abschnitt löschen** . 
     
     > [!NOTE]
-    >  Bestimmte Abschnitte können nicht gelöscht werden. Beispielsweise können nicht Sie den Abschnitt " **Shape Transform** " gelöscht werden, da es gibt die Position einer Form an. Wenn Sie einen Abschnitt löschen können, ist der **Abschnitt löschen** nicht verfügbar. 
+    >  Bestimmte Abschnitte können nicht gelöscht werden. Es ist beispielsweise nicht möglich, den Abschnitt **Shape Transform** zu löschen, da dieser die Position eines Shapes bestimmt. Wenn ein Abschnitt nicht gelöscht werden kann, ist **Abschnitt löschen** nicht verfügbar. 
   
 ### <a name="to-collapse-or-expand-a-section"></a>Um einen Abschnitt erweitern oder reduzieren
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren eine Anmeldung-Objekt
+title: Implementieren eines Anmeldeobjekts
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792534"
 ---
-# <a name="implementing-a-logon-object"></a>Implementieren eine Anmeldung-Objekt
+# <a name="implementing-a-logon-object"></a>Implementieren eines Anmeldeobjekts
 
   
   
@@ -25,9 +25,9 @@ Jedes Adressbuch, Nachrichtenspeicher und Transport-Provider instanziiert ein An
   
 |**Anmeldung-Objektschnittstelle**|**Dienstanbieter**|
 |:-----|:-----|
-|[IABLogon: IUnknown](iablogoniunknown.md) <br/> |-Adressbuchanbieter  <br/> |
-|[IMSLogon: IUnknown](imslogoniunknown.md) <br/> |Nachricht Speicheranbieter  <br/> |
-|[IXPLogon: IUnknown](ixplogoniunknown.md) <br/> |Transportdienst  <br/> |
+|[IABLogon : IUnknown](iablogoniunknown.md) <br/> |-Adressbuchanbieter  <br/> |
+|[IMSLogon : IUnknown](imslogoniunknown.md) <br/> |Nachricht Speicheranbieter  <br/> |
+|[IXPLogon : IUnknown](ixplogoniunknown.md) <br/> |Transportdienst  <br/> |
    
 Adressbuch und Meldung von nachrichtenspeicheranbietern implementierte die folgenden Features in ihrer Anmeldung Objekte:
   
@@ -71,5 +71,5 @@ Eines Transportdienstes Anmeldung-Objekt, das implementiert [IXPLogon: IUnknown]
 
 
 
-[Implementieren von Service Provider Anmeldung](implementing-service-provider-logon.md)
+[Implementieren einer Dienstanbieteranmeldung](implementing-service-provider-logon.md)
 

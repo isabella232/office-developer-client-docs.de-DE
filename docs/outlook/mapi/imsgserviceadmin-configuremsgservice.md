@@ -97,7 +97,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Eigenschaftenfenster abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin::ConfigureMsgService** -Methode ermöglicht eine Message Service mit oder ohne ein Eigenschaftenblatt Konfiguration konfiguriert werden soll. 
   
@@ -127,7 +127,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropValue](spropvalue.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

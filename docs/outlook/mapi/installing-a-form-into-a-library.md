@@ -1,5 +1,5 @@
 ---
-title: Installieren eines Formulars in eine Bibliothek
+title: Installieren eines Formulars in einer Bibliothek
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792705"
 ---
-# <a name="installing-a-form-into-a-library"></a>Installieren eines Formulars in eine Bibliothek
+# <a name="installing-a-form-into-a-library"></a>Installieren eines Formulars in einer Bibliothek
 
   
   
@@ -46,5 +46,5 @@ Wenn Sie eine Installation Anwendung implementieren, muss der Reihe von Aktionen
 
 
 
-[Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+[Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

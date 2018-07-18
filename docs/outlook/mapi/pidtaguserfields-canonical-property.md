@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagUserFields-Eigenschaft
+title: PidTagUserFields (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795276"
 ---
-# <a name="pidtaguserfields-canonical-property"></a>Kanonische PidTagUserFields-Eigenschaft
+# <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält den Namen, Datentyp und andere Informationen zu einem benutzerdefiniert
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für jedes Element speichert Outlook die Definitionen aller benutzerdefinierten Felder in der [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md) -Eigenschaft des entsprechenden **IMessage** -Objekts. Die **PidLidPropertyDefinitionStream** -Eigenschaft enthält einen binären Datenstrom bekannt als [PropertyDefinition](propertydefinition-stream-structure.md), die die Felddefinitionen enthält. Weitere Informationen zu Stream Strukturen Felddefinitionen finden Sie unter [Stream-Strukturen](stream-structures.md).
   
@@ -59,11 +59,11 @@ Mapidefs.h
 
 
 
-[Outlook-Elemente und Felder](outlook-items-and-fields.md)
+[Elemente und Felder in Outlook](outlook-items-and-fields.md)
   
-[Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu.](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition Stream-Beispiel](propertydefinition-stream-sample.md)
+[Beispiel für PropertyDefinition-Stream](propertydefinition-stream-sample.md)
   
 [MAPI-Eigenschaften](mapi-properties.md)
   

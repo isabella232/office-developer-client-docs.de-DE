@@ -1,5 +1,5 @@
 ---
-title: Tipps für das Arbeiten mit Tabellen
+title: Tipps zum Arbeiten mit Tabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795722"
 ---
-# <a name="tips-for-working-with-tables"></a>Tipps für das Arbeiten mit Tabellen
+# <a name="tips-for-working-with-tables"></a>Tipps zum Arbeiten mit Tabellen
 
   
   

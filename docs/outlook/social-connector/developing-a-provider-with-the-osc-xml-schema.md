@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines Providers mit dem OSC-XML-schema
+title: Entwickeln eines Providers mit dem OSC-XML-Schema
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795969"
 ---
-# <a name="developing-a-provider-with-the-osc-xml-schema"></a>Entwickeln eines Providers mit dem OSC-XML-schema
+# <a name="developing-a-provider-with-the-osc-xml-schema"></a>Entwickeln eines Providers mit dem OSC-XML-Schema
 
 Outlook Social Connector (OSC) Provider-XML-Schemas definiert das Format einer beträchtlichen Anzahl von Informationen, die von einem sozialen Netzwerk an die OSC über das Netzwerk OSC-Anbieter übergeben wird. Das XML-Schema ermöglicht einen OSC-Anbieter an Funktionen der Anbieter, Freunde und Elementen im sozialen Netzwerk, mithilfe der drei Hauptelemente, **Funktionen**, **Freunde**, und **ActivityFeed**und ihre untergeordneten Aktivitätsfeed Elemente. Der OSC-Anbieter implementiert Schnittstellen und deren Methoden in die Erweiterbarkeit des OSC-Providers Rückgabe von XML-Zeichenfolgen als Output-Parameter, die mit dem OSC-Anbieter XML-Schema entsprechen. Die OSC ruft diese Methoden zum Abrufen von Informationen, die durch das XML-Schema definierten verarbeitet werden kann.
   

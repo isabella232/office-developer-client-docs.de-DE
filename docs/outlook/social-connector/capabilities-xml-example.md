@@ -1,5 +1,5 @@
 ---
-title: Funktionen XML-Beispiel
+title: XML-Beispiel für „capabilities“
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795958"
 ---
-# <a name="capabilities-xml-example"></a>Funktionen XML-Beispiel
+# <a name="capabilities-xml-example"></a>XML-Beispiel für „capabilities“
 
 Das XML-Beispiel in diesem Thema wird eine XML-Zeichenfolge an Outlook Social Connector (OSC) zurückgegeben, nachdem sie die [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) -Methode für ein social Network ruft. Der XML-Code zeigt, wie ein OSC-Anbieter die Funktionen und Anforderungen für das osc bilden angibt. 
   

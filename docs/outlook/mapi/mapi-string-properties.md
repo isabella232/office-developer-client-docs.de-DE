@@ -55,5 +55,5 @@ Wenn ein Client ein Objekt **GetProps** oder **SetProps** -Methode zum Arbeiten 
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

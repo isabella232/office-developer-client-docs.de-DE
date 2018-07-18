@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792634"
 ---
-# <a name="imsgserviceadmincreatemsgservice"></a>IMsgServiceAdmin:: CreateMsgService
+# <a name="imsgserviceadmincreatemsgservice"></a>IMsgServiceAdmin::CreateMsgService
 
   
   
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > Der Dienstname Nachricht ist nicht in der MapiSvc.inf im Abschnitt **[Services]** . 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin:: CreateMsgService** -Methode wird das aktuelle Profil ein Messagingdiensts hinzugefügt. **CreateMsgService** Ruft die Messagingdiensts Eintrag Point-Funktion, um alle dienstspezifische Konfigurationsaufgaben ausführen. Wenn das Flag SERVICE_UI_ALLOWED im _UlFlags_ -Parameter festgelegt ist, kann der Message-Dienst installiert wird ein Eigenschaftenblatt zum Aktivieren des Benutzers so konfigurieren Sie ihre Einstellungen anzeigen. 
   
@@ -120,7 +120,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

@@ -30,7 +30,7 @@ Berechnet die Anzahl von Bytes in einer vorhandenen [SRowSet](srowset.md) Strukt
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**' Srowset '** <br/> |
+|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 CbSRowSet (_lprowset)
@@ -46,7 +46,7 @@ CbSRowSet (_lprowset)
 
 
 
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
 
 
 [Makros im Zusammenhang mit Strukturen](macros-related-to-structures.md)

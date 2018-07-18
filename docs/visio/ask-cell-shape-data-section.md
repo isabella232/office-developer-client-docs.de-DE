@@ -16,26 +16,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796393"
 ---
-# <a name="ask-cell-shape-data-section"></a>Zelle "Ask" (Abschnitt "Shape Data")
+# <a name="ask-cell-shape-data-section"></a>Ask Cell (Shape Data Section)
 
 Bestimmt, ob der Benutzer beim Erstellen einer Instanz oder beim Duplizieren oder Kopieren eines Shapes aufgefordert wird, Shape-Daten einzugeben.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Auffordern Sie Benutzer zu Shape-Daten in das Dialogfeld **Shape-Daten definieren** einzugeben.  <br/> |
-|FALSE  <br/> |Bitten Sie die Benutzer Daten eingeben nicht.  <br/> |
+|TRUE  <br/> |
+          Der Benutzer wird aufgefordert, Shape-Daten in das Dialogfeld **Shape-Daten definieren** einzugeben.
+  <br/> |
+|FALSE  <br/> |
+          Benutzer nicht zur Dateneingabe auffordern.
+  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Wert in dieser Zelle entspricht dem Kontrollkästchen **beim Ablegen fragen** im Dialogfeld **Shape-Daten definieren** (mit der rechten Maustaste in des Shapes, zeigen Sie auf **Daten**, und klicken Sie dann auf **Shape-Daten definieren**).
+Der Wert in dieser Zelle entspricht dem Kontrollkästchen **Beim Ablegen fragen** im Dialogfeld **Shape-Daten definieren**. (Klicken Sie mit der rechten Maustaste auf das Shape, zeigen Sie auf **Daten**, und klicken Sie dann auf **Shape-Daten definieren**.)
   
-Zum Abrufen eines Verweises auf die Zelle Ask nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Ask aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Eigenschaft. *Name* . Stellen Sie sicher, auf dem Prop.  *Name* ist der Name der Zeile mit der benutzerdefinierten Eigenschaft.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Ask aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Ask aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

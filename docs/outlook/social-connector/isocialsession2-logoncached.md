@@ -41,7 +41,7 @@ _connectOut_
   
 > [out] Eine opake Zeichenfolge, die Anmeldeinformationen enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Methode ist für die Authentifizierung nur aufgerufen, wenn **UseLogonCached** in die **Funktionen** von [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md)zurückgegebenen XML-Daten als **true** festgelegt ist.
   
@@ -51,5 +51,5 @@ Der Parameter _ConnectOut_ ist eine opake Zeichenfolge an die OSC und auf nachfo
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 

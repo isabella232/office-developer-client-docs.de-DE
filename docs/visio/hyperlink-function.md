@@ -29,7 +29,7 @@ HYPERLINK ("** *Adresse* **" [,"** *Subaddress* **","** *Extrainfo* **", ** *Fen
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Adresse_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein vollständiger Pfad oder ein relativer Pfad.  <br/> |
-| _SubAddress_ <br/> |Optional  <br/> |**String** <br/> |Gibt eine Position innerhalb von Address zu verknüpfenden an. Beispielsweise kann Adresse eine Microsoft Visio-Datei handelt, Subaddress ein Seitenname sein; Wenn eine Microsoft Excel-Datei kann Subaddress ein Arbeitsblatt oder einen Bereich in einem Arbeitsblatt sein; Wenn eine URL für eine HTML-Seite kann Subaddress Anker sein.  <br/> |
+| _SubAddress_ <br/> |Optional  <br/> |**String** <br/> |Gibt eine Position innerhalb von address an, mit der eine Verknüpfung hergestellt werden soll. Wenn es sich bei address beispielsweise um eine Microsoft Visio-Datei handelt, kann subaddress ein Zeichenblattname sein. Wenn es sich um eine Microsoft Excel-Datei handelt, kann subaddress ein Arbeitsblatt oder ein Arbeitsblattbereich sein. Wenn es sich um eine URL für eine HTML-Seite handelt, kann sich subaddress auf einen Anker beziehen.  <br/> |
 | _ExtraInfo_ <br/> |Optional  <br/> |**String** <br/> |Übergibt Informationen, die bei der Auflösung der URL verwendet werden, z. B. die Koordinaten für eine Imagemap.  <br/> |
 | _Fenster_ <br/> |Optional  <br/> |**Boolean** <br/> |Legt fest, ob der Hyperlink in einem neuen Fenster geöffnet wird. Die Standardeinstellung lautet FALSE.  <br/> |
 | _Rahmen_ <br/> |Optional  <br/> |**String** <br/> | Legt den Namen eines Frames zu einem Ziel fest, wenn Visio als aktives Dokument in einem ActiveX-Browser, z. B. Microsoft Internet Explorer 3.0 oder höher, geöffnet ist. Die Standardeinstellung ist eine leere Zeichenfolge.  <br/> |
@@ -38,7 +38,7 @@ HYPERLINK ("** *Adresse* **" [,"** *Subaddress* **","** *Extrainfo* **", ** *Fen
 
 Wenn das Dokument keinen Basispfad besitzt, navigiert Visio relativ zum Dokumentpfad. Wenn das Dokument noch nicht gespeichert wurde, bleibt der Hyperlink undefiniert. 
   
-Relative Pfade basieren auf dem Feld **Hyperlinkbasis** im Dialogfeld **Visio Eigenschaften** angegeben. 
+Relative Pfade basieren auf dem Feld **Hyperlinkbasis**, das im Dialogfeld **Visio Eigenschaften** angegeben wird. 
   
 Sie können die GOTOPAGE-Funktion nutzen, um zu den Zeichenblättern eines Dokuments zu navigieren. 
   

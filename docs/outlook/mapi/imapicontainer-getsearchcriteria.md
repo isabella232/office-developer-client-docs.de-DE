@@ -88,7 +88,7 @@ MAPI_E_NOT_INITIALIZED
   
 > Nie wurden die Suchkriterien für den Container festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIContainer::GetSearchCriteria** -Methode ruft die Suchkriterien für einen Container, der sucht, in der Regel in einem Suchergebnisse Ordner unterstützt. Erstellen Sie Suchkriterien durch Aufrufen des Containers **IMAPIContainer::SetSearchCriteria** -Methode. 
   
@@ -118,9 +118,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische PidTagSearch-Eigenschaft](pidtagsearch-canonical-property.md)
+[PidTagSearch (kanonische Eigenschaft)](pidtagsearch-canonical-property.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

@@ -49,7 +49,7 @@ MAPI_E_INVALID_BOOKMARK
   
 > Die angegebene Textmarke ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::FreeBookmark** -Methode gibt eine Textmarke, die nicht mehr benötigt wird. Die Textmarke ist nach diesem Aufruf nicht mehr gültig. Wenn eine Tabelle aus dem Speicher freigegeben wird, werden dessen zugehörige Lesezeichen ebenfalls freigegeben. 
   
@@ -63,5 +63,5 @@ Wenn der Aufrufer eine der drei vordefinierten Textmarken im Parameter _BkPositi
 
 [IMAPITable::CreateBookmark](imapitable-createbookmark.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

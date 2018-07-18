@@ -50,7 +50,7 @@ S_OK
   
 > Der angegebene Container wurde als PAB eingerichtet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients und Dienstanbieter rufen Sie die **SetPAB** -Methode, um einen bestimmten Container als PAB festzulegen. Die PAB ist ein Container, der Einträge aus anderen Containern sowie neue Einträge kopiert besteht. 
   
@@ -74,9 +74,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[Kanonische PidTagContainerFlags-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

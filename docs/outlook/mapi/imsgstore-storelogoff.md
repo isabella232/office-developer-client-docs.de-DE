@@ -79,7 +79,7 @@ S_OK
   
 > Die Abmeldung wurde erfolgreich abgeschlossen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::StoreLogoff** -Methode beim Ausrichten ausübt Steuerelement über die Interaktion der Nachricht speichern und transport-Anbieter während des Abmeldevorgangs. Aufrufen von **StoreLogoff** gilt nur für Nachrichtenspeicher, die nur vom Anrufer verwendet werden. Beispielsweise wenn zwei Clients den gleichen Nachrichtenspeicher verwenden und einer von ihnen **StoreLogoff**aufruft, der Nachrichtenspeicher wird sofort freigegeben und wird die Steuerung an den aufrufenden Client zurückgegeben.
   

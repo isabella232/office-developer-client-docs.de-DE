@@ -1,5 +1,5 @@
 ---
-title: Synchronisieren von Zustand
+title: Status „Synchronisieren“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795698"
 ---
-# <a name="synchronize-state"></a>Synchronisieren von Zustand
+# <a name="synchronize-state"></a>Status „Synchronisieren“
 
   
   
@@ -45,11 +45,11 @@ Der Client legt die [in] Mitglieder der **SYNCHRONISIERUNG**, die Outlook mittei
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

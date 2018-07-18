@@ -1,5 +1,5 @@
 ---
-title: Makros im Zusammenhang mit Strukturen
+title: Mit Strukturen zusammenhängende Makros
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792907"
 ---
-# <a name="macros-related-to-structures"></a>Makros im Zusammenhang mit Strukturen
+# <a name="macros-related-to-structures"></a>Mit Strukturen zusammenhängende Makros
 
   
   
@@ -43,7 +43,7 @@ Die folgende Tabelle enthält Makros, die im Zusammenhang mit MAPI-Strukturen:
 |[CbSPropTagArray](cbsproptagarray.md) <br/> |[CbSRowSet](cbsrowset.md) <br/> |
 |[CbSSortOrderSet](cbssortorderset.md) <br/> |[CHANGE_PROP_TYPE](change_prop_type.md) <br/> |
 |[IsEqualMAPIUID](isequalmapiuid.md) <br/> |[MVI_PROP](mvi_prop.md) <br/> |
-|[EIGENSCH_ID](prop_id.md) <br/> |[PROP_TAG](prop_tag.md) <br/> |
+|[PROP_ID](prop_id.md) <br/> |[PROP_TAG](prop_tag.md) <br/> |
 |[PROP_TYPE](prop_type.md) <br/> |[SizedADRLIST](sizedadrlist.md) <br/> |
 |[SizedDtblButton](sizeddtblbutton.md) <br/> |[SizedDtblCheckBox](sizeddtblcheckbox.md) <br/> |
 |[SizedDtblComboBox](sizeddtblcombobox.md) <br/> |[SizedDtblEdit](sizeddtbledit.md) <br/> |

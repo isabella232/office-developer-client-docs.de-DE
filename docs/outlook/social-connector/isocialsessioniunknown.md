@@ -15,11 +15,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796004"
 ---
-# <a name="isocialsession--iunknown"></a>ISocialSession: IUnknown
+# <a name="isocialsession--iunknown"></a>ISocialSession : IUnknown
 
 Stellt eine Verbindung mit einer Website für soziale Netzwerke.
   
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 In der folgenden Tabelle werden die Member, die für die **ISocialSession** -Schnittstelle verfügbar sind. 
   
@@ -39,7 +39,7 @@ In der folgenden Tabelle werden die Member, die für die **ISocialSession** -Sch
 |[SiteUrl](isocialsession-siteurl.md) <br/> |Eigenschaft  <br/> |Legt die URL der Website für soziale Netzwerke.  <br/> |
 |[UnFollowPerson](isocialsession-unfollowperson.md) <br/> |Methode  <br/> |Entfernt die Person, die durch den _Benutzer-ID_ -Parameter als einen Freund im sozialen Netzwerk identifiziert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein OSC-Anbieter muss diese Schnittstelle für die Kommunikation mit dem OSC implementieren.
   

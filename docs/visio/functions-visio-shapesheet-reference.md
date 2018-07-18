@@ -17,317 +17,317 @@ ms.locfileid: "19797090"
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [ABS-Funktion (VisioShapeSheet)](abs-function-visioshapesheet.md)
+- [ABS Function (VisioShapeSheet)](abs-function-visioshapesheet.md)
     
-- [ACOS-Funktion](acos-function.md)
+- [ARCCOS-Funktion](acos-function.md)
     
-- [UND -Funktion](and-function.md)
+- [AND Function](and-function.md)
     
-- [ANG360-Funktion](ang360-function.md)
+- [ANG360 Function](ang360-function.md)
     
-- [ANGLEALONGPATH-Funktion](anglealongpath-function.md)
+- [ANGLEALONGPATH Function](anglealongpath-function.md)
     
-- [ANGLETOLOC-Funktion](angletoloc-function.md)
+- [ANGLETOLOC Function](angletoloc-function.md)
     
-- [ANGLETOPAR-Funktion](angletopar-function.md)
+- [ANGLETOPAR Function](angletopar-function.md)
     
-- [ARG-Funktion](arg-function.md)
+- [ARG Function](arg-function.md)
     
-- [ASIN-Funktion](asin-function.md)
+- [ASIN Function](asin-function.md)
     
-- [Atan2-Funktion](atan2-function.md)
+- [ATAN2 Function](atan2-function.md)
     
-- [ATAN-Funktion](atan-function.md)
+- [ATAN Function](atan-function.md)
     
-- [BITAND-Funktion](bitand-function.md)
+- [BITAND Function](bitand-function.md)
     
-- [BITNOT-Funktion](bitnot-function.md)
+- [BITNOT Function](bitnot-function.md)
     
-- [BITOR-Funktion](bitor-function.md)
+- [BITOR Function](bitor-function.md)
     
-- [BITXOR-Funktion](bitxor-function.md)
+- [BITXOR Function](bitxor-function.md)
     
-- [BKGPAGENAME-Funktion](bkgpagename-function.md)
+- [BKGPAGENAME Function](bkgpagename-function.md)
     
-- [BLEND-Funktion](blend-function.md)
+- [BLEND Function](blend-function.md)
     
 - [BLOB-Funktion](blob-function.md)
     
-- [BLUE-Funktion](blue-function.md)
+- [BLUE Function](blue-function.md)
     
-- [BOUNDINGBOXDIST-Funktion](boundingboxdist-function.md)
+- [BOUNDINGBOXDIST Function](boundingboxdist-function.md)
     
-- [BOUNDINGBOXRECT-Funktion](boundingboxrect-function.md)
+- [BOUNDINGBOXRECT Function](boundingboxrect-function.md)
     
 - [BOUND-Funktion](bound-function.md)
     
-- [CALLOUTCOUNT-Funktion](calloutcount-function.md)
+- [CALLOUTCOUNT Function](calloutcount-function.md)
     
-- [CALLOUTTARGETREF-Funktion](callouttargetref-function.md)
+- [CALLOUTTARGETREF Function](callouttargetref-function.md)
     
-- [CALLTHIS-Funktion](callthis-function.md)
+- [CALLTHIS Function](callthis-function.md)
     
-- [CATEGORY-Funktion](category-function.md)
+- [CATEGORY Function](category-function.md)
     
-- [CEILING-Funktion](ceiling-function.md)
+- [CEILING Function](ceiling-function.md)
     
-- [CHAR-Funktion](char-function.md)
+- [CHAR Function](char-function.md)
     
-- [COMPANY-Funktion](company-function.md)
+- [COMPANY Function](company-function.md)
     
-- [CONTAINERCOUNT-Funktion](containercount-function.md)
+- [CONTAINERCOUNT Function](containercount-function.md)
     
-- [CONTAINERMEMBERCOUNT-Funktion](containermembercount-function.md)
+- [CONTAINERMEMBERCOUNT Function](containermembercount-function.md)
     
-- [CONTAINERSHEETREF-Funktion](containersheetref-function.md)
+- [CONTAINERSHEETREF Function](containersheetref-function.md)
     
-- [COSH-Funktion](cosh-function.md)
+- [COSHYP-Funktion](cosh-function.md)
     
-- [COS Funktion (VisioShapeSheet)](cos-function-visioshapesheet.md)
+- [COS Function (VisioShapeSheet)](cos-function-visioshapesheet.md)
     
 - [CREATOR-Funktion](creator-function.md)
     
-- [CY-Funktion](cy-function.md)
+- [CY Function](cy-function.md)
     
-- [Data1-Funktion](data1-function.md)
+- [DATA1 Function](data1-function.md)
     
-- [Data2-Funktion](data2-function.md)
+- [DATA2 Function](data2-function.md)
     
-- [Data3-Funktion](data3-function.md)
+- [DATA3 Function](data3-function.md)
     
 - [DATETIME-Funktion](datetime-function.md)
     
-- [DATEVALUE-Funktion (VisioShapeSheet)](datevalue-function-visioshapesheet.md)
+- [DATEVALUE Function (VisioShapeSheet)](datevalue-function-visioshapesheet.md)
     
-- [DATE-Funktion (VisioShapeSheet)](date-function-visioshapesheet.md)
+- [DATE Function (VisioShapeSheet)](date-function-visioshapesheet.md)
     
-- [DAYOFYEAR-Funktion](dayofyear-function.md)
+- [TAGDESJAHRES-Funktion](dayofyear-function.md)
     
-- [DAY-Funktion (VisioShapeSheet)](day-function-visioshapesheet.md)
+- [DAY Function (VisioShapeSheet)](day-function-visioshapesheet.md)
     
 - [DECIMALSEP-Funktion](decimalsep-function.md)
     
 - [DEFAULTEVENT-Funktion](defaultevent-function.md)
     
-- [DEG-Funktion](deg-function.md)
+- [DEG Function](deg-function.md)
     
-- [DEPENDSON-Funktion](dependson-function.md)
+- [DEPENDSON Function](dependson-function.md)
     
-- [DESCRIPTION-Funktion](description-function.md)
+- [DESCRIPTION Function](description-function.md)
     
-- [DIRECTORY-Funktion](directory-function.md)
+- [DIRECTORY Function](directory-function.md)
     
-- [DISTTOPATH-Funktion](disttopath-function.md)
+- [DISTTOPATH Function](disttopath-function.md)
     
-- [DOCCREATION-Funktion](doccreation-function.md)
+- [DOCCREATION Function](doccreation-function.md)
     
-- [DOCLASTEDIT-Funktion](doclastedit-function.md)
+- [DOCLASTEDIT Function](doclastedit-function.md)
     
-- [DOCLASTPRINT-Funktion](doclastprint-function.md)
+- [DOCLASTPRINT Function](doclastprint-function.md)
     
-- [DOCLASTSAVE-Funktion](doclastsave-function.md)
+- [DOCLASTSAVE Function](doclastsave-function.md)
     
 - [DOCMD-Funktion](docmd-function.md)
     
-- [DOOLEVERB-Funktion](dooleverb-function.md)
+- [DOOLEVERB Function](dooleverb-function.md)
     
-- [EVALCELL-Funktion](evalcell-function.md)
+- [EVALCELL Function](evalcell-function.md)
     
-- [EVALTEXT-Funktion](evaltext-function.md)
+- [EVALTEXT Function](evaltext-function.md)
     
-- [FIELDPICTURE-Funktion](fieldpicture-function.md)
+- [FIELDPICTURE Function](fieldpicture-function.md)
     
-- [FILENAME-Funktion](filename-function.md)
+- [FILENAME Function](filename-function.md)
     
 - [FIND-Funktion](find-function.md)
     
-- [FLOOR-Funktion](floor-function.md)
+- [FLOOR Function](floor-function.md)
     
-- [Schriftart-Funktion](font-function.md)
+- [FONT Function](font-function.md)
     
-- [FONTTOID-Funktion](fonttoid-function.md)
+- [FONTTOID Function](fonttoid-function.md)
     
-- [FORMATEX-Funktion](formatex-function.md)
+- [FORMATEX Function](formatex-function.md)
     
-- [FORMAT-Funktion](format-function.md)
+- [FORMAT Function](format-function.md)
     
 - [FORMULAEXISTS-Funktion](formulaexists-function.md)
     
-- [GETREF-Funktion](getref-function.md)
+- [GETREF Function](getref-function.md)
     
-- [GETVAL-Funktion](getval-function.md)
+- [GETVAL Function](getval-function.md)
     
-- [GOTOPAGE-Funktion](gotopage-function.md)
+- [GOTOPAGE Function](gotopage-function.md)
     
-- [GRAVITY-Funktion](gravity-function.md)
+- [GRAVITY Function](gravity-function.md)
     
-- [GREEN-Funktion](green-function.md)
+- [GREEN Function](green-function.md)
     
-- [GUARD-Funktion](guard-function.md)
+- [GUARD Function](guard-function.md)
     
-- [HASCATEGORY-Funktion](hascategory-function.md)
+- [HASCATEGORY Function](hascategory-function.md)
     
 - [HELP-Funktion](help-function.md)
     
-- [HOUR-Funktion (VisioShapeSheet)](hour-function-visioshapesheet.md)
+- [HOUR Function (VisioShapeSheet)](hour-function-visioshapesheet.md)
     
 - [HSL-Funktion](hsl-function.md)
     
-- [HUEDIFF-Funktion](huediff-function.md)
+- [HUEDIFF Function](huediff-function.md)
     
-- [HUE-Funktion](hue-function.md)
+- [HUE Function](hue-function.md)
     
-- [HYPERLINKBASE-Funktion](hyperlinkbase-function.md)
+- [HYPERLINKBASE Function](hyperlinkbase-function.md)
     
-- [HYPERLINK-Funktion](hyperlink-function.md)
+- [HYPERLINK Function](hyperlink-function.md)
     
-- [ID-Funktion](id-function.md)
+- [ID Function](id-function.md)
     
-- [IFERROR-Funktion](iferror-function.md)
+- [IFERROR Function](iferror-function.md)
     
-- [IF Funktion](if-function.md)
+- [IF Function](if-function.md)
     
-- [INDEX-Funktion](index-function.md)
+- [INDEX Function](index-function.md)
     
-- [INTERSECTX-Funktion](intersectx-function.md)
+- [INTERSECTX Function](intersectx-function.md)
     
-- [INTERSECTY-Funktion](intersecty-function.md)
+- [INTERSECTY Function](intersecty-function.md)
     
-- [INTUP-Funktion](intup-function.md)
+- [INTUP Function](intup-function.md)
     
-- [INT-Funktion](int-function.md)
+- [INT Function](int-function.md)
     
-- [IS1D-Funktion](is1d-function.md)
+- [IS1D Function](is1d-function.md)
     
 - [ISERRNA-Funktion](iserrna-function.md)
     
-- [ISERROR-Funktion (VisioShapeSheet)](iserror-function-visioshapesheet.md)
+- [ISERROR Function (VisioShapeSheet)](iserror-function-visioshapesheet.md)
     
-- [ISERRVALUE-Funktion](iserrvalue-function.md)
+- [ISERRVALUE Function](iserrvalue-function.md)
     
-- [ISERR-Funktion](iserr-function.md)
+- [ISERR Function](iserr-function.md)
     
-- [ISTHEMED-Funktion](isthemed-function.md)
+- [ISTHEMED Function](isthemed-function.md)
     
-- [KEYWORDS-Funktion](keywords-function.md)
+- [KEYWORDS Function](keywords-function.md)
     
-- [Sprache-Funktion](language-function.md)
+- [LANGUAGE Function](language-function.md)
     
 - [LEFT-Funktion (VisioShapeSheet)](left-function-visioshapesheet.md)
     
 - [LEN-Funktion (VisioShapeSheet)](len-function-visioshapesheet.md)
     
-- [LISTMEMBERCOUNT-Funktion](listmembercount-function.md)
+- [LISTMEMBERCOUNT Function](listmembercount-function.md)
     
-- [LISTORDER-Funktion](listorder-function.md)
+- [LISTORDER Function](listorder-function.md)
     
-- [LISTSEP-Funktion](listsep-function.md)
+- [LISTSEP Function](listsep-function.md)
     
-- [LISTSHEETREF-Funktion](listsheetref-function.md)
+- [LISTSHEETREF Function](listsheetref-function.md)
     
-- [LN-Funktion](ln-function.md)
+- [LN Function](ln-function.md)
     
 - [LOCALFORMULAEXISTS-Funktion](localformulaexists-function.md)
     
-- [LOCTOLOC-Funktion](loctoloc-function.md)
+- [LOCTOLOC Function](loctoloc-function.md)
     
-- [LOCTOPAR-Funktion](loctopar-function.md)
+- [LOCTOPAR Function](loctopar-function.md)
     
-- [LOC-Funktion (VisioShapeSheet)](loc-function-visioshapesheet.md)
+- [LOC Function (VisioShapeSheet)](loc-function-visioshapesheet.md)
     
-- [LOG10-Funktion](log10-function.md)
+- [LOG10 Function](log10-function.md)
     
-- [LOOKUP-Funktion](lookup-function.md)
+- [LOOKUP Function](lookup-function.md)
     
-- [LOWER-Funktion](lower-function.md)
+- [LOWER Function](lower-function.md)
     
-- [LUMDIFF-Funktion](lumdiff-function.md)
+- [LUMDIFF Function](lumdiff-function.md)
     
-- [LUM-Funktion](lum-function.md)
+- [LUM Function](lum-function.md)
     
-- [MAGNITUDE-Funktion](magnitude-function.md)
+- [MAGNITUDE Function](magnitude-function.md)
     
-- [MANAGER-Funktion](manager-function.md)
+- [MANAGER Function](manager-function.md)
     
-- [MASTERNAME-Funktion](mastername-function.md)
+- [MASTERNAME Function](mastername-function.md)
     
-- [MAX-Funktion](max-function.md)
+- [MAX Function](max-function.md)
     
 - [MID-Funktion (VisioShapeSheet)](mid-function-visioshapesheet.md)
     
-- [MINUTE-Funktion (VisioShapeSheet)](minute-function-visioshapesheet.md)
+- [MINUTE Function (VisioShapeSheet)](minute-function-visioshapesheet.md)
     
-- [MIN-Funktion](min-function.md)
+- [MIN Function](min-function.md)
     
-- [MODULUS-Funktion](modulus-function.md)
+- [MODULUS Function](modulus-function.md)
     
-- [MONTH-Funktion (VisioShapeSheet)](month-function-visioshapesheet.md)
+- [MONTH Function (VisioShapeSheet)](month-function-visioshapesheet.md)
     
-- [MSOSHADE-Funktion](msoshade-function.md)
+- [MSOSHADE Function](msoshade-function.md)
     
-- [MSOTINT-Funktion](msotint-function.md)
+- [MSOTINT Function](msotint-function.md)
     
-- [NAME-Funktion](name-function.md)
+- [NAME Function](name-function.md)
     
-- [NA-Funktion](na-function.md)
+- [NA Function](na-function.md)
     
-- [NEARESTPOINTONPATH-Funktion](nearestpointonpath-function.md)
+- [NEARESTPOINTONPATH Function](nearestpointonpath-function.md)
     
-- [NOT-Funktion](not-function.md)
+- [NOT Function](not-function.md)
     
-- [JETZT Funktion (VisioShapeSheet)](now-function-visioshapesheet.md)
+- [NOW Function (VisioShapeSheet)](now-function-visioshapesheet.md)
     
-- [NURBS-Funktion](nurbs-function.md)
+- [NURBS Function](nurbs-function.md)
     
-- [OPENFILE-Funktion](openfile-function.md)
+- [OPENFILE Function](openfile-function.md)
     
-- [OPENGROUPWIN-Funktion](opengroupwin-function.md)
+- [OPENGROUPWIN Function](opengroupwin-function.md)
     
-- [OPENSHEETWIN-Funktion](opensheetwin-function.md)
+- [OPENSHEETWIN Function](opensheetwin-function.md)
     
-- [OPENTEXTWIN-Funktion](opentextwin-function.md)
+- [OPENTEXTWIN Function](opentextwin-function.md)
     
-- [OR -Funktion](or-function.md)
+- [OR Function](or-function.md)
     
-- [PAGECOUNT-Funktion](pagecount-function.md)
+- [PAGECOUNT Function](pagecount-function.md)
     
-- [PAGENAME-Funktion](pagename-function.md)
+- [PAGENAME Function](pagename-function.md)
     
-- [PAGENUMBER-Funktion](pagenumber-function.md)
+- [PAGENUMBER Function](pagenumber-function.md)
     
-- [PAR-Funktion](par-function.md)
+- [PAR Function](par-function.md)
     
-- [PATHLENGTH-Funktion](pathlength-function.md)
+- [PATHLENGTH Function](pathlength-function.md)
     
-- [PATHSEGMENT-Funktion](pathsegment-function.md)
+- [PATHSEGMENT Function](pathsegment-function.md)
     
-- [PI-Funktion](pi-function.md)
+- [PI Function](pi-function.md)
     
-- [PLAYSOUND-Funktion](playsound-function.md)
+- [PLAYSOUND Function](playsound-function.md)
     
-- [PNTX-Funktion](pntx-function.md)
+- [PNTX Function](pntx-function.md)
     
-- [PNTY-Funktion](pnty-function.md)
+- [PNTY Function](pnty-function.md)
     
-- [PNT-Funktion](pnt-function.md)
+- [PNT Function](pnt-function.md)
     
-- [POINTALONGPATH-Funktion](pointalongpath-function.md)
+- [POINTALONGPATH Function](pointalongpath-function.md)
     
-- [POLYLINE-Funktion](polyline-function.md)
+- [POLYLINE Function](polyline-function.md)
     
-- [POW-Funktion](pow-function.md)
+- [POW Function](pow-function.md)
     
 - [QUEUEMARKEREVENT-Funktion](queuemarkerevent-function.md)
     
-- [RAD-Funktion](rad-function.md)
+- [RAD Function](rad-function.md)
     
-- [RAND-Funktion](rand-function.md)
+- [RAND Function](rand-function.md)
     
-- [RECTSECT-Funktion](rectsect-function.md)
+- [RECTSECT Function](rectsect-function.md)
     
-- [RED-Funktion](red-function.md)
+- [RED Function](red-function.md)
     
-- [REF-Funktion](ref-function.md)
+- [REF Function](ref-function.md)
     
 - [REPLACE-Funktion (VisioShapeSheet)](replace-function-visioshapesheet.md)
     
@@ -335,106 +335,106 @@ ms.locfileid: "19797090"
     
 - [REWIDEN-Funktion](rewiden-function.md)
     
-- [RGB-Funktion (VisioShapeSheet)](rgb-function-visioshapesheet.md)
+- [RGB Function (VisioShapeSheet)](rgb-function-visioshapesheet.md)
     
 - [RIGHT-Funktion (VisioShapeSheet)](right-function-visioshapesheet.md)
     
-- [ROUND-Funktion (VisioShapeSheet)](round-function-visioshapesheet.md)
+- [ROUND Function (VisioShapeSheet)](round-function-visioshapesheet.md)
     
-- [RUNADDONWARGS-Funktion](runaddonwargs-function.md)
+- [RUNADDONWARGS Function](runaddonwargs-function.md)
     
-- [RUNADDON-Funktion](runaddon-function.md)
+- [RUNADDON Function](runaddon-function.md)
     
 - [RUNMACRO-Funktion](runmacro-function.md)
     
-- [SATDIFF-Funktion](satdiff-function.md)
+- [SATDIFF Function](satdiff-function.md)
     
-- [SAT-Funktion](sat-function.md)
+- [SAT Function](sat-function.md)
     
-- [SECOND-Funktion (VisioShapeSheet)](second-function-visioshapesheet.md)
+- [SECOND Function (VisioShapeSheet)](second-function-visioshapesheet.md)
     
-- [SEGMENTCOUNT-Funktion](segmentcount-function.md)
+- [SEGMENTCOUNT Function](segmentcount-function.md)
     
-- [SETATREFEVAL-Funktion](setatrefeval-function.md)
+- [SETATREFEVAL Function](setatrefeval-function.md)
     
 - [SETATREFEXPR-Funktion](setatrefexpr-function.md)
     
 - [SETATREF-Funktion](setatref-function.md)
     
-- [SETF-Funktion](setf-function.md)
+- [SETF Function](setf-function.md)
     
-- [SHADE-Funktion](shade-function.md)
+- [SHADE Function](shade-function.md)
     
-- [SHAPETEXT-Funktion](shapetext-function.md)
+- [SHAPETEXT Function](shapetext-function.md)
     
-- [SHEETREF-Funktion](sheetref-function.md)
+- [SHEETREF Function](sheetref-function.md)
     
-- [SIGN-Funktion](sign-function.md)
+- [SIGN Function](sign-function.md)
     
-- [SINH-Funktion](sinh-function.md)
+- [SINHYP-Funktion](sinh-function.md)
     
-- [SIN-Funktion (VisioShapeSheet)](sin-function-visioshapesheet.md)
+- [SIN Function (VisioShapeSheet)](sin-function-visioshapesheet.md)
     
-- [SQRT-Funktion](sqrt-function.md)
+- [WURZEL-Funktion](sqrt-function.md)
     
-- [STRSAMEEX-Funktion](strsameex-function.md)
+- [STRSAMEEX Function](strsameex-function.md)
     
-- [STRSAME-Funktion](strsame-function.md)
+- [STRSAME Function](strsame-function.md)
     
-- [SUBJECT-Funktion](subject-function.md)
+- [SUBJECT Function](subject-function.md)
     
 - [SUBSTITUTE-Funktion](substitute-function.md)
     
-- [SUM-Funktion](sum-function.md)
+- [SUM Function](sum-function.md)
     
-- [TANH-Funktion](tanh-function.md)
+- [TANHYP-Funktion](tanh-function.md)
     
-- [TAN-Funktion (VisioShapeSheet)](tan-function-visioshapesheet.md)
+- [TAN Function (VisioShapeSheet)](tan-function-visioshapesheet.md)
     
-- [TEXTHEIGHT-Funktion](textheight-function.md)
+- [TEXTHÖHE-Funktion](textheight-function.md)
     
-- [TEXTWIDTH-Funktion](textwidth-function.md)
+- [TEXTWIDTH Function](textwidth-function.md)
     
-- [THEME-Funktion](theme-function.md)
+- [THEME Function](theme-function.md)
     
-- [THEMECBV-Funktion](themecbv-function.md)
+- [THEMECBV Function](themecbv-function.md)
     
-- [THEMEGUARD-Funktion](themeguard-function.md)
+- [THEMEGUARD Function](themeguard-function.md)
     
-- [THEMERESTORE-Funktion](themerestore-function.md)
+- [THEMERESTORE Function](themerestore-function.md)
     
 - [THEMEVAL-Funktion](themeval-function.md)
     
-- [TIMEVALUE-Funktion (VisioShapeSheet)](timevalue-function-visioshapesheet.md)
+- [TIMEVALUE Function (VisioShapeSheet)](timevalue-function-visioshapesheet.md)
     
-- [TIME-Funktion (VisioShapeSheet)](time-function-visioshapesheet.md)
+- [TIME Function (VisioShapeSheet)](time-function-visioshapesheet.md)
     
 - [TINT-Funktion](tint-function.md)
     
-- [TITLE-Funktion](title-function.md)
+- [TITLE Function](title-function.md)
     
-- [TONE-Funktion](tone-function.md)
+- [TONE Function](tone-function.md)
     
 - [TRIM-Funktion](trim-function.md)
     
-- [TRUNC-Funktion](trunc-function.md)
+- [TRUNC Function](trunc-function.md)
     
-- [TYPEDESC-Funktion](typedesc-function.md)
+- [TYPEDESC Function](typedesc-function.md)
     
-- [TYPE-Funktion](type-function.md)
+- [TYPE Function](type-function.md)
     
 - [UNICHAR-Funktion](unichar-function.md)
     
-- [UPPER-Funktion](upper-function.md)
+- [UPPER Function](upper-function.md)
     
-- [USERUI-Funktion](userui-function.md)
+- [USERUI Function](userui-function.md)
     
-- [Verwenden Sie-Funktion](use-function.md)
+- [USE Function](use-function.md)
     
 - [VERSION-Funktion](version-function.md)
     
-- [WEEKDAY-Funktion (VisioShapeSheet)](weekday-function-visioshapesheet.md)
+- [WEEKDAY Function (VisioShapeSheet)](weekday-function-visioshapesheet.md)
     
-- [YEAR-Funktion (VisioShapeSheet)](year-function-visioshapesheet.md)
+- [YEAR Function (VisioShapeSheet)](year-function-visioshapesheet.md)
     
 

@@ -139,7 +139,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > Der Eigenschaftentyp ist nicht vom Anrufer erwartet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Standardmäßig wird die **IMAPIProp::CopyTo** -Methode kopiert oder verschiebt alle Eigenschaften des aktuellen Objekts ein Zielobjekt. **CopyTo** wird verwendet, wenn ein Objekt kopiert oder genau mit der gesamten oder die meisten ihrer Eigenschaften intakt verschoben werden soll. 
   
@@ -210,9 +210,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPIProp::GetLastError](imapiprop-getlasterror.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
   
 [IMAPISupport::DoProgressDialog](imapisupport-doprogressdialog.md)
   
@@ -220,23 +220,23 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische PidTagContainerContents-Eigenschaft](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents (kanonische Eigenschaft)](pidtagcontainercontents-canonical-property.md)
   
-[Kanonische PidTagContainerHierarchy-Eigenschaft](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy (kanonische Eigenschaft)](pidtagcontainerhierarchy-canonical-property.md)
   
-[Kanonische PidTagMessageAttachments-Eigenschaft](pidtagmessageattachments-canonical-property.md)
+[PidTagMessageAttachments (kanonische Eigenschaft)](pidtagmessageattachments-canonical-property.md)
   
-[Kanonische PidTagMessageDeliveryTime-Eigenschaft](pidtagmessagedeliverytime-canonical-property.md)
+[PidTagMessageDeliveryTime (kanonische Eigenschaft)](pidtagmessagedeliverytime-canonical-property.md)
   
-[Kanonische PidTagMessageRecipients-Eigenschaft](pidtagmessagerecipients-canonical-property.md)
+[PidTagMessageRecipients (kanonische Eigenschaft)](pidtagmessagerecipients-canonical-property.md)
   
-[Kanonische PidTagObjectType-Eigenschaft](pidtagobjecttype-canonical-property.md)
+[PidTagObjectType (kanonische Eigenschaft)](pidtagobjecttype-canonical-property.md)
   
 [SPropProblemArray](spropproblemarray.md)
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

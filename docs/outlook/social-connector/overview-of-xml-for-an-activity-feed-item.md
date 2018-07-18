@@ -1,5 +1,5 @@
 ---
-title: Übersicht über XML für eine Aktivität Element-feed
+title: Überblick über XML für eine Aktivitätsfeedelement
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796095"
 ---
-# <a name="overview-of-xml-for-an-activity-feed-item"></a>Übersicht über XML für eine Aktivität Element-feed
+# <a name="overview-of-xml-for-an-activity-feed-item"></a>Überblick über XML für eine Aktivitätsfeedelement
 
 Ein Aktivitätsfeed umfasst eine oder mehrere Aktivitäten, die bei einem sozialen Netzwerk. Jedes Aktivitätsfeed wird durch ein **ActivityFeed** -Element dargestellt, und wird durch diese drei Angaben Merkmale auf: 
   

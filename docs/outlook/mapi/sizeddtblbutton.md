@@ -46,7 +46,7 @@ SizedDtblButton (n, u)
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die neue Struktur wird mit der folgenden Elemente erstellt:
   

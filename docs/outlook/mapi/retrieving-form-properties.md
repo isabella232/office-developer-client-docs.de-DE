@@ -35,5 +35,5 @@ Beachten Sie, dass das dritte Argument für **ResolveMessageClass** den Ordner m
 
 
 
-[Formular Server Interaktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

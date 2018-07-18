@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797246"
 ---
-# <a name="iserrvalue-function"></a>ISERRVALUE-Funktion
+# <a name="iserrvalue-function"></a>ISERRVALUE Function
 
 Gibt True, wenn der Wert von _Zellbezug_ Fehler ist geben #VALUE, wobei ein Argument in der Formel den falschen Typ besitzt. ISERRVALUE-Funktion wird in logischen Ausdrücken verwendet, die auf einer anderen Zelle verweisen. 
   
