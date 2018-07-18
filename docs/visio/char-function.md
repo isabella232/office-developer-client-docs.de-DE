@@ -16,28 +16,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796610"
 ---
-# <a name="char-function"></a><span data-ttu-id="e271b-103">CHAR Function</span><span class="sxs-lookup"><span data-stu-id="e271b-103">CHAR Function</span></span>
+# <a name="char-function"></a><span data-ttu-id="0ad4a-103">CHAR Function</span><span class="sxs-lookup"><span data-stu-id="0ad4a-103">CHAR Function</span></span>
 
-<span data-ttu-id="e271b-104">Gibt das ANSI-Zeichen für eine Zahl zurück.</span><span class="sxs-lookup"><span data-stu-id="e271b-104">Returns the ANSI character for a number.</span></span>
+<span data-ttu-id="0ad4a-104">Gibt das ANSI-Zeichen für eine Zahl zurück.</span><span class="sxs-lookup"><span data-stu-id="0ad4a-104">Returns the ANSI character for a number.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="e271b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e271b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0ad4a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="0ad4a-105">Syntax</span></span>
 
-<span data-ttu-id="e271b-106">CHAR (** *Anzahl* **)</span><span class="sxs-lookup"><span data-stu-id="e271b-106">CHAR(** *number* ** )</span></span> 
+<span data-ttu-id="0ad4a-106">CHAR (** *Anzahl* **)</span><span class="sxs-lookup"><span data-stu-id="0ad4a-106">CHAR(** *number* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="e271b-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="e271b-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="0ad4a-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="0ad4a-107">Parameters</span></span>
 
-|<span data-ttu-id="e271b-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="e271b-108">**Name**</span></span>|<span data-ttu-id="e271b-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="e271b-109">**Required/Optional**</span></span>|<span data-ttu-id="e271b-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="e271b-110">**Data Type**</span></span>|<span data-ttu-id="e271b-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e271b-111">**Description**</span></span>|
+|<span data-ttu-id="0ad4a-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="0ad4a-108">**Name**</span></span>|<span data-ttu-id="0ad4a-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="0ad4a-109">**Required/Optional**</span></span>|<span data-ttu-id="0ad4a-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="0ad4a-110">**Data Type**</span></span>|<span data-ttu-id="0ad4a-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0ad4a-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="e271b-112">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="e271b-112">_number_</span></span> <br/> |<span data-ttu-id="e271b-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="e271b-113">Required</span></span>  <br/> |<span data-ttu-id="e271b-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="e271b-114">**Number**</span></span> <br/> |<span data-ttu-id="e271b-115">Die Anzahl, dessen ANSI-Zeichen, die Sie abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="e271b-115">The number whose ANSI character you want to get.</span></span>  <br/> |
+| <span data-ttu-id="0ad4a-112">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="0ad4a-112">_number_</span></span> <br/> |<span data-ttu-id="0ad4a-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="0ad4a-113">Required</span></span>  <br/> |<span data-ttu-id="0ad4a-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="0ad4a-114">**Number**</span></span> <br/> |<span data-ttu-id="0ad4a-115">Die Anzahl, dessen ANSI-Zeichen, die Sie abrufen möchten.</span><span class="sxs-lookup"><span data-stu-id="0ad4a-115">The number whose ANSI character you want to get.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="e271b-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e271b-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0ad4a-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0ad4a-116">Remarks</span></span>
 
-<span data-ttu-id="e271b-117">Die resultierende Zeichenfolge wird einem Zeichen besteht.</span><span class="sxs-lookup"><span data-stu-id="e271b-117">The resulting string is one character in length.</span></span> <span data-ttu-id="e271b-118">Der _Anzahl_ -Parameter muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, oder die Funktion gibt einen Fehler zurück.</span><span class="sxs-lookup"><span data-stu-id="e271b-118">The  _number_ parameter must be an integer between 1 and 255 (inclusive), or the function returns an error.</span></span> 
+<span data-ttu-id="0ad4a-117">Die resultierende Zeichenfolge wird einem Zeichen besteht.</span><span class="sxs-lookup"><span data-stu-id="0ad4a-117">The resulting string is one character in length.</span></span> <span data-ttu-id="0ad4a-118">Der _Anzahl_ -Parameter muss eine ganze Zahl zwischen 1 und 255 (einschließlich) sein, oder die Funktion gibt einen Fehler zurück.</span><span class="sxs-lookup"><span data-stu-id="0ad4a-118">The  _number_ parameter must be an integer between 1 and 255 (inclusive), or the function returns an error.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="e271b-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e271b-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0ad4a-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0ad4a-119">Example</span></span>
 
-<span data-ttu-id="e271b-120">CHAR(9)</span><span class="sxs-lookup"><span data-stu-id="e271b-120">CHAR(9)</span></span> 
+<span data-ttu-id="0ad4a-120">CHAR(9)</span><span class="sxs-lookup"><span data-stu-id="0ad4a-120">CHAR(9)</span></span> 
   
-<span data-ttu-id="e271b-121">Gibt das Tabulatorzeichen zurück.</span><span class="sxs-lookup"><span data-stu-id="e271b-121">Returns the tab character.</span></span> 
+<span data-ttu-id="0ad4a-121">Gibt das Tabulatorzeichen zurück.</span><span class="sxs-lookup"><span data-stu-id="0ad4a-121">Returns the tab character.</span></span> 
   
 

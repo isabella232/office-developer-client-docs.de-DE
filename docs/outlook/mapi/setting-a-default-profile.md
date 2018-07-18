@@ -1,5 +1,5 @@
 ---
-title: Ein Standardprofil festlegen
+title: Festlegen eines Standardprofils
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,18 +15,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795503"
 ---
-# <a name="setting-a-default-profile"></a><span data-ttu-id="7bbb9-103">Ein Standardprofil festlegen</span><span class="sxs-lookup"><span data-stu-id="7bbb9-103">Setting a Default Profile</span></span>
+# <a name="setting-a-default-profile"></a><span data-ttu-id="86e14-103">Festlegen eines Standardprofils</span><span class="sxs-lookup"><span data-stu-id="86e14-103">Setting a Default Profile</span></span>
 
   
   
-<span data-ttu-id="7bbb9-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7bbb9-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="86e14-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="86e14-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="7bbb9-105">Das Standardprofil ist das Profil, das verwendet wird, wenn Sie nicht explizit eine im Aufruf [MAPILogonEx](mapilogonex.md), stattdessen das MAPI_USE_DEFAULT-Flag festlegen angeben.</span><span class="sxs-lookup"><span data-stu-id="7bbb9-105">The default profile is the profile that is used if you do not explicitly specify one in the call to [MAPILogonEx](mapilogonex.md), setting instead the MAPI_USE_DEFAULT flag.</span></span>
+<span data-ttu-id="86e14-105">Das Standardprofil ist das Profil, das verwendet wird, wenn Sie nicht explizit eine im Aufruf [MAPILogonEx](mapilogonex.md), stattdessen das MAPI_USE_DEFAULT-Flag festlegen angeben.</span><span class="sxs-lookup"><span data-stu-id="86e14-105">The default profile is the profile that is used if you do not explicitly specify one in the call to [MAPILogonEx](mapilogonex.md), setting instead the MAPI_USE_DEFAULT flag.</span></span>
   
- <span data-ttu-id="7bbb9-106">**Ein Standardprofil herstellen**</span><span class="sxs-lookup"><span data-stu-id="7bbb9-106">**To establish a default profile**</span></span>
+ <span data-ttu-id="86e14-106">**Ein Standardprofil herstellen**</span><span class="sxs-lookup"><span data-stu-id="86e14-106">**To establish a default profile**</span></span>
   
-1. <span data-ttu-id="7bbb9-107">Rufen Sie die Funktion ["MAPIAdminProfiles"](mapiadminprofiles.md) zum Abrufen eines **IProfAdmin** Schnittstelle Zeigers.</span><span class="sxs-lookup"><span data-stu-id="7bbb9-107">Call the [MAPIAdminProfiles](mapiadminprofiles.md) function to retrieve an **IProfAdmin** interface pointer.</span></span> 
+1. <span data-ttu-id="86e14-107">Rufen Sie die Funktion ["MAPIAdminProfiles"](mapiadminprofiles.md) zum Abrufen eines **IProfAdmin** Schnittstelle Zeigers.</span><span class="sxs-lookup"><span data-stu-id="86e14-107">Call the [MAPIAdminProfiles](mapiadminprofiles.md) function to retrieve an **IProfAdmin** interface pointer.</span></span> 
     
-2. <span data-ttu-id="7bbb9-108">Rufen Sie [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md).</span><span class="sxs-lookup"><span data-stu-id="7bbb9-108">Call [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md).</span></span> <span data-ttu-id="7bbb9-109">**SetDefaultProfile** die **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))-Eigenschaft für neues Standardprofil festgelegt und die Einstellung für das vorherige Standardprofil entfernt.</span><span class="sxs-lookup"><span data-stu-id="7bbb9-109">**SetDefaultProfile** sets the **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) property for the new default profile and removes the setting for the previous default profile.</span></span>
+2. <span data-ttu-id="86e14-108">Rufen Sie [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md).</span><span class="sxs-lookup"><span data-stu-id="86e14-108">Call [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md).</span></span> <span data-ttu-id="86e14-109">**SetDefaultProfile** die **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))-Eigenschaft für neues Standardprofil festgelegt und die Einstellung für das vorherige Standardprofil entfernt.</span><span class="sxs-lookup"><span data-stu-id="86e14-109">**SetDefaultProfile** sets the **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md)) property for the new default profile and removes the setting for the previous default profile.</span></span>
     
 

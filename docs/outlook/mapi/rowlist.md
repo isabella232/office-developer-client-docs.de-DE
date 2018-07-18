@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795410"
 ---
-# <a name="rowlist"></a><span data-ttu-id="63c8d-103">ROWLIST</span><span class="sxs-lookup"><span data-stu-id="63c8d-103">ROWLIST</span></span>
+# <a name="rowlist"></a><span data-ttu-id="6a0ed-103">ROWLIST</span><span class="sxs-lookup"><span data-stu-id="6a0ed-103">ROWLIST</span></span>
 
   
   
-<span data-ttu-id="63c8d-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="63c8d-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="6a0ed-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6a0ed-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="63c8d-105">Enthält ein Array von [ROWENTRY](rowentry.md) -Strukturen, darstellen, Zeilen und die Vorgänge, die für die Zeilen in einer Tabelle über die Schnittstelle [IExchangeModifyTable](iexchangemodifytableiunknown.md) ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="63c8d-105">Contains an array of [ROWENTRY](rowentry.md) structures representing rows and the operations that are performed on those rows in a table through the [IExchangeModifyTable](iexchangemodifytableiunknown.md) interface.</span></span> 
+<span data-ttu-id="6a0ed-105">Enthält ein Array von [ROWENTRY](rowentry.md) -Strukturen, darstellen, Zeilen und die Vorgänge, die für die Zeilen in einer Tabelle über die Schnittstelle [IExchangeModifyTable](iexchangemodifytableiunknown.md) ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="6a0ed-105">Contains an array of [ROWENTRY](rowentry.md) structures representing rows and the operations that are performed on those rows in a table through the [IExchangeModifyTable](iexchangemodifytableiunknown.md) interface.</span></span> 
   
 ```cpp
 typedef struct
@@ -36,32 +36,32 @@ typedef struct
 
 ```
 
-## <a name="members"></a><span data-ttu-id="63c8d-106">Members</span><span class="sxs-lookup"><span data-stu-id="63c8d-106">Members</span></span>
+## <a name="members"></a><span data-ttu-id="6a0ed-106">Elemente</span><span class="sxs-lookup"><span data-stu-id="6a0ed-106">Members</span></span>
 
- <span data-ttu-id="63c8d-107">**cEntries**</span><span class="sxs-lookup"><span data-stu-id="63c8d-107">**cEntries**</span></span>
+ <span data-ttu-id="6a0ed-107">**cEntries**</span><span class="sxs-lookup"><span data-stu-id="6a0ed-107">**cEntries**</span></span>
   
-> <span data-ttu-id="63c8d-108">Anzahl der Einträge im Array vom **aEntries** Member angegeben.</span><span class="sxs-lookup"><span data-stu-id="63c8d-108">Count of entries in the array specified by the **aEntries** member.</span></span> 
+> <span data-ttu-id="6a0ed-108">Anzahl der Einträge im Array vom **aEntries** Member angegeben.</span><span class="sxs-lookup"><span data-stu-id="6a0ed-108">Count of entries in the array specified by the **aEntries** member.</span></span> 
     
- <span data-ttu-id="63c8d-109">**aEntries [MAPI_DIM]**</span><span class="sxs-lookup"><span data-stu-id="63c8d-109">**aEntries[MAPI_DIM]**</span></span>
+ <span data-ttu-id="6a0ed-109">**aEntries [MAPI_DIM]**</span><span class="sxs-lookup"><span data-stu-id="6a0ed-109">**aEntries[MAPI_DIM]**</span></span>
   
-> <span data-ttu-id="63c8d-110">Array von **ROWENTRY** -Strukturen, enthält die Zeilen und die Vorgänge, die für die Zeilen in der Tabelle ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="63c8d-110">Array of **ROWENTRY** structures that contains the rows and the operations that are performed on those rows in the table.</span></span> 
+> <span data-ttu-id="6a0ed-110">Array von **ROWENTRY** -Strukturen, enthält die Zeilen und die Vorgänge, die für die Zeilen in der Tabelle ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="6a0ed-110">Array of **ROWENTRY** structures that contains the rows and the operations that are performed on those rows in the table.</span></span> 
     
-## <a name="mfcmapi-reference"></a><span data-ttu-id="63c8d-111">MFCMAPI (engl.) (engl.)</span><span class="sxs-lookup"><span data-stu-id="63c8d-111">MFCMAPI reference</span></span>
+## <a name="mfcmapi-reference"></a><span data-ttu-id="6a0ed-111">MFCMAPI (engl.) (engl.)</span><span class="sxs-lookup"><span data-stu-id="6a0ed-111">MFCMAPI reference</span></span>
 
-<span data-ttu-id="63c8d-112">Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="63c8d-112">For MFCMAPI sample code, see the following table.</span></span>
+<span data-ttu-id="6a0ed-112">Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.</span><span class="sxs-lookup"><span data-stu-id="6a0ed-112">For MFCMAPI sample code, see the following table.</span></span>
   
-|<span data-ttu-id="63c8d-113">**Datei**</span><span class="sxs-lookup"><span data-stu-id="63c8d-113">**File**</span></span>|<span data-ttu-id="63c8d-114">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="63c8d-114">**Function**</span></span>|<span data-ttu-id="63c8d-115">**Comment**</span><span class="sxs-lookup"><span data-stu-id="63c8d-115">**Comment**</span></span>|
+|<span data-ttu-id="6a0ed-113">**Datei**</span><span class="sxs-lookup"><span data-stu-id="6a0ed-113">**File**</span></span>|<span data-ttu-id="6a0ed-114">**Funktion**</span><span class="sxs-lookup"><span data-stu-id="6a0ed-114">**Function**</span></span>|<span data-ttu-id="6a0ed-115">**Comment**</span><span class="sxs-lookup"><span data-stu-id="6a0ed-115">**Comment**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="63c8d-116">RulesDlg.cpp</span><span class="sxs-lookup"><span data-stu-id="63c8d-116">RulesDlg.cpp</span></span>  <br/> |<span data-ttu-id="63c8d-117">CRulesDlg::GetSelectedItems</span><span class="sxs-lookup"><span data-stu-id="63c8d-117">CRulesDlg::GetSelectedItems</span></span>  <br/> |<span data-ttu-id="63c8d-118">Verwendet, um eine Liste der ausgewählten Regeln für nachfolgende **ModifyTable** Aktionen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="63c8d-118">Used to build a list of selected rules for subsequent **ModifyTable** actions.</span></span>  <br/> |
+|<span data-ttu-id="6a0ed-116">RulesDlg.cpp</span><span class="sxs-lookup"><span data-stu-id="6a0ed-116">RulesDlg.cpp</span></span>  <br/> |<span data-ttu-id="6a0ed-117">CRulesDlg::GetSelectedItems</span><span class="sxs-lookup"><span data-stu-id="6a0ed-117">CRulesDlg::GetSelectedItems</span></span>  <br/> |<span data-ttu-id="6a0ed-118">Verwendet, um eine Liste der ausgewählten Regeln für nachfolgende **ModifyTable** Aktionen zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="6a0ed-118">Used to build a list of selected rules for subsequent **ModifyTable** actions.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="63c8d-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="63c8d-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6a0ed-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6a0ed-119">See also</span></span>
 
 
 
-[<span data-ttu-id="63c8d-120">ROWENTRY</span><span class="sxs-lookup"><span data-stu-id="63c8d-120">ROWENTRY</span></span>](rowentry.md)
+[<span data-ttu-id="6a0ed-120">ROWENTRY</span><span class="sxs-lookup"><span data-stu-id="6a0ed-120">ROWENTRY</span></span>](rowentry.md)
   
-[<span data-ttu-id="63c8d-121">IExchangeModifyTable: IUnknown</span><span class="sxs-lookup"><span data-stu-id="63c8d-121">IExchangeModifyTable : IUnknown</span></span>](iexchangemodifytableiunknown.md)
+[<span data-ttu-id="6a0ed-121">IExchangeModifyTable : IUnknown</span><span class="sxs-lookup"><span data-stu-id="6a0ed-121">IExchangeModifyTable : IUnknown</span></span>](iexchangemodifytableiunknown.md)
 
 
-[<span data-ttu-id="63c8d-122">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="63c8d-122">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="6a0ed-122">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="6a0ed-122">MAPI Structures</span></span>](mapi-structures.md)
 

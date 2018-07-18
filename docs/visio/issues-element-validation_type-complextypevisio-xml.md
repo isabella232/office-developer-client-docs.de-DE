@@ -14,44 +14,44 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797245"
 ---
-# <a name="issues-element-validationtype-complextype-visio-xml"></a><span data-ttu-id="a5f26-103">Probleme-Element (Validation_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="a5f26-103">Issues element (Validation_Type complexType) ('Visio XML')</span></span>
+# <a name="issues-element-validationtype-complextype-visio-xml"></a><span data-ttu-id="df4fd-103">Probleme-Element (Validation_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="df4fd-103">Issues element (Validation_Type complexType) ('Visio XML')</span></span>
 
-<span data-ttu-id="a5f26-104">Enthält alle Problem Elemente für das Dokument.</span><span class="sxs-lookup"><span data-stu-id="a5f26-104">Contains all the Issue elements for the document.</span></span>
+<span data-ttu-id="df4fd-104">Enthält alle Problem Elemente für das Dokument.</span><span class="sxs-lookup"><span data-stu-id="df4fd-104">Contains all the Issue elements for the document.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="a5f26-105">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="a5f26-105">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="df4fd-105">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="df4fd-105">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="a5f26-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="a5f26-106">**Element type**</span></span> <br/> |[<span data-ttu-id="a5f26-107">Issues_Type</span><span class="sxs-lookup"><span data-stu-id="a5f26-107">Issues_Type</span></span>](issues_type-complextypevisio-xml.md) <br/> |
-|<span data-ttu-id="a5f26-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="a5f26-108">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|<span data-ttu-id="a5f26-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="a5f26-109">**Schema file**</span></span> <br/> |<span data-ttu-id="a5f26-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="a5f26-110">VisioSchema15.xsd</span></span>  <br/> |
-|<span data-ttu-id="a5f26-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="a5f26-111">**Document parts**</span></span> <br/> |<span data-ttu-id="a5f26-112">Validation.Xml</span><span class="sxs-lookup"><span data-stu-id="a5f26-112">validation.xml</span></span>  <br/> |
+|<span data-ttu-id="df4fd-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="df4fd-106">**Element type**</span></span> <br/> |[<span data-ttu-id="df4fd-107">Issues_Type</span><span class="sxs-lookup"><span data-stu-id="df4fd-107">Issues_Type</span></span>](issues_type-complextypevisio-xml.md) <br/> |
+|<span data-ttu-id="df4fd-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="df4fd-108">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|<span data-ttu-id="df4fd-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="df4fd-109">**Schema file**</span></span> <br/> |<span data-ttu-id="df4fd-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="df4fd-110">VisioSchema15.xsd</span></span>  <br/> |
+|<span data-ttu-id="df4fd-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="df4fd-111">**Document parts**</span></span> <br/> |<span data-ttu-id="df4fd-112">Validation.Xml</span><span class="sxs-lookup"><span data-stu-id="df4fd-112">validation.xml</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="a5f26-113">Definition</span><span class="sxs-lookup"><span data-stu-id="a5f26-113">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="df4fd-113">Definition</span><span class="sxs-lookup"><span data-stu-id="df4fd-113">Definition</span></span>
 
 ```XML
 < xs:element name="Issues" type="Issues_Type" minOccurs="0" maxOccurs="1" >
 </xs:element >
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="a5f26-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="a5f26-114">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="df4fd-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="df4fd-114">Elements and attributes</span></span>
 
-<span data-ttu-id="a5f26-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="a5f26-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="df4fd-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="df4fd-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="a5f26-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a5f26-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="df4fd-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="df4fd-116">Parent elements</span></span>
 
-|<span data-ttu-id="a5f26-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="a5f26-117">**Element**</span></span>|<span data-ttu-id="a5f26-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="a5f26-118">**Type**</span></span>|<span data-ttu-id="a5f26-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a5f26-119">**Description**</span></span>|
+|<span data-ttu-id="df4fd-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="df4fd-117">**Element**</span></span>|<span data-ttu-id="df4fd-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="df4fd-118">**Type**</span></span>|<span data-ttu-id="df4fd-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="df4fd-119">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="a5f26-120">Prüfung</span><span class="sxs-lookup"><span data-stu-id="a5f26-120">Validation</span></span>](validation-elementvisio-xml.md) <br/> |[<span data-ttu-id="a5f26-121">Validation_Type</span><span class="sxs-lookup"><span data-stu-id="a5f26-121">Validation_Type</span></span>](validation_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="a5f26-122">Speichert Informationen zur Diagrammüberprüfung des Dokuments.</span><span class="sxs-lookup"><span data-stu-id="a5f26-122">Stores information about diagram validation for the document.</span></span>  <br/> |
+|[<span data-ttu-id="df4fd-120">Prüfung</span><span class="sxs-lookup"><span data-stu-id="df4fd-120">Validation</span></span>](validation-elementvisio-xml.md) <br/> |[<span data-ttu-id="df4fd-121">Validation_Type</span><span class="sxs-lookup"><span data-stu-id="df4fd-121">Validation_Type</span></span>](validation_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="df4fd-122">Speichert Informationen zur Diagrammüberprüfung des Dokuments.</span><span class="sxs-lookup"><span data-stu-id="df4fd-122">Stores information about diagram validation for the document.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="a5f26-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="a5f26-123">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="df4fd-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="df4fd-123">Child elements</span></span>
 
-|<span data-ttu-id="a5f26-124">**Element**</span><span class="sxs-lookup"><span data-stu-id="a5f26-124">**Element**</span></span>|<span data-ttu-id="a5f26-125">**Typ**</span><span class="sxs-lookup"><span data-stu-id="a5f26-125">**Type**</span></span>|<span data-ttu-id="a5f26-126">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a5f26-126">**Description**</span></span>|
+|<span data-ttu-id="df4fd-124">**Element**</span><span class="sxs-lookup"><span data-stu-id="df4fd-124">**Element**</span></span>|<span data-ttu-id="df4fd-125">**Typ**</span><span class="sxs-lookup"><span data-stu-id="df4fd-125">**Type**</span></span>|<span data-ttu-id="df4fd-126">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="df4fd-126">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="a5f26-127">Problem</span><span class="sxs-lookup"><span data-stu-id="a5f26-127">Issue</span></span>](issue-element-issues_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="a5f26-128">Issue_Type</span><span class="sxs-lookup"><span data-stu-id="a5f26-128">Issue_Type</span></span>](issue_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="a5f26-129">Stellt ein einzelnes Überprüfungsproblem im Dokument.</span><span class="sxs-lookup"><span data-stu-id="a5f26-129">Represents a single validation issue in the document.</span></span>  <br/> |
+|[<span data-ttu-id="df4fd-127">Problem</span><span class="sxs-lookup"><span data-stu-id="df4fd-127">Issue</span></span>](issue-element-issues_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="df4fd-128">Issue_Type</span><span class="sxs-lookup"><span data-stu-id="df4fd-128">Issue_Type</span></span>](issue_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="df4fd-129">Stellt ein einzelnes Überprüfungsproblem im Dokument.</span><span class="sxs-lookup"><span data-stu-id="df4fd-129">Represents a single validation issue in the document.</span></span>  <br/> |
    
-### <a name="attributes"></a><span data-ttu-id="a5f26-130">Attribute</span><span class="sxs-lookup"><span data-stu-id="a5f26-130">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="df4fd-130">Attribute</span><span class="sxs-lookup"><span data-stu-id="df4fd-130">Attributes</span></span>
 
-<span data-ttu-id="a5f26-131">Keine.</span><span class="sxs-lookup"><span data-stu-id="a5f26-131">None.</span></span>
+<span data-ttu-id="df4fd-131">Keine.</span><span class="sxs-lookup"><span data-stu-id="df4fd-131">None.</span></span>
   
 

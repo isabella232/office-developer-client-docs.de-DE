@@ -19,39 +19,39 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791409"
 ---
-# <a name="changeproptype"></a><span data-ttu-id="78828-103">CHANGE_PROP_TYPE</span><span class="sxs-lookup"><span data-stu-id="78828-103">CHANGE_PROP_TYPE</span></span>
+# <a name="changeproptype"></a><span data-ttu-id="d7467-103">CHANGE_PROP_TYPE</span><span class="sxs-lookup"><span data-stu-id="d7467-103">CHANGE_PROP_TYPE</span></span>
 
   
   
-<span data-ttu-id="78828-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="78828-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="d7467-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="d7467-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="78828-105">Aktualisiert den Eigenschaftentyp eines Eigenschaft-Tags mit einem angegebenen Wert.</span><span class="sxs-lookup"><span data-stu-id="78828-105">Updates the property type of a property tag to a specified value.</span></span> <span data-ttu-id="78828-106">Der Bezeichner für die bleibt unverändert.</span><span class="sxs-lookup"><span data-stu-id="78828-106">The property identifier is unchanged.</span></span> 
+<span data-ttu-id="d7467-105">Aktualisiert den Eigenschaftentyp eines Eigenschaft-Tags mit einem angegebenen Wert.</span><span class="sxs-lookup"><span data-stu-id="d7467-105">Updates the property type of a property tag to a specified value.</span></span> <span data-ttu-id="d7467-106">Der Bezeichner für die bleibt unverändert.</span><span class="sxs-lookup"><span data-stu-id="d7467-106">The property identifier is unchanged.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="78828-107">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="78828-107">Header file:</span></span>  <br/> |<span data-ttu-id="78828-108">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="78828-108">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="78828-109">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="78828-109">Related structure:</span></span>  <br/> |[<span data-ttu-id="78828-110">SPropValue</span><span class="sxs-lookup"><span data-stu-id="78828-110">SPropValue</span></span>](spropvalue.md) <br/> |
+|<span data-ttu-id="d7467-107">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="d7467-107">Header file:</span></span>  <br/> |<span data-ttu-id="d7467-108">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="d7467-108">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="d7467-109">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="d7467-109">Related structure:</span></span>  <br/> |[<span data-ttu-id="d7467-110">SPropValue</span><span class="sxs-lookup"><span data-stu-id="d7467-110">SPropValue</span></span>](spropvalue.md) <br/> |
    
 ```cpp
 CHANGE_PROP_TYPE (ulPropTag, ulPropType)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="78828-111">Parameter</span><span class="sxs-lookup"><span data-stu-id="78828-111">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="d7467-111">Parameter</span><span class="sxs-lookup"><span data-stu-id="d7467-111">Parameters</span></span>
 
- <span data-ttu-id="78828-112">_ulPropTag_</span><span class="sxs-lookup"><span data-stu-id="78828-112">_ulPropTag_</span></span>
+ <span data-ttu-id="d7467-112">_ulPropTag_</span><span class="sxs-lookup"><span data-stu-id="d7467-112">_ulPropTag_</span></span>
   
-> <span data-ttu-id="78828-113">Die Eigenschaftentag geändert werden soll.</span><span class="sxs-lookup"><span data-stu-id="78828-113">The property tag to be modified.</span></span>
+> <span data-ttu-id="d7467-113">Die Eigenschaftentag geändert werden soll.</span><span class="sxs-lookup"><span data-stu-id="d7467-113">The property tag to be modified.</span></span>
     
- <span data-ttu-id="78828-114">_ulPropType_</span><span class="sxs-lookup"><span data-stu-id="78828-114">_ulPropType_</span></span>
+ <span data-ttu-id="d7467-114">_ulPropType_</span><span class="sxs-lookup"><span data-stu-id="d7467-114">_ulPropType_</span></span>
   
-> <span data-ttu-id="78828-115">Der neue Wert für den Eigenschaftentyp.</span><span class="sxs-lookup"><span data-stu-id="78828-115">The new value for the property type.</span></span>
+> <span data-ttu-id="d7467-115">Der neue Wert für den Eigenschaftentyp.</span><span class="sxs-lookup"><span data-stu-id="d7467-115">The new value for the property type.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="78828-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="78828-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="d7467-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d7467-116">See also</span></span>
 
 
 
-[<span data-ttu-id="78828-117">SPropValue</span><span class="sxs-lookup"><span data-stu-id="78828-117">SPropValue</span></span>](spropvalue.md)
+[<span data-ttu-id="d7467-117">SPropValue</span><span class="sxs-lookup"><span data-stu-id="d7467-117">SPropValue</span></span>](spropvalue.md)
 
 
-[<span data-ttu-id="78828-118">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="78828-118">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="d7467-118">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="d7467-118">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

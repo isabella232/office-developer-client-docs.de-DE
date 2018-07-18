@@ -16,24 +16,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796378"
 ---
-# <a name="abs-function-visioshapesheet"></a><span data-ttu-id="09238-103">ABS Function (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="09238-103">ABS Function (VisioShapeSheet)</span></span>
+# <a name="abs-function-visioshapesheet"></a><span data-ttu-id="bd277-103">ABS Function (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="bd277-103">ABS Function (VisioShapeSheet)</span></span>
 
-<span data-ttu-id="09238-104">Gibt den absoluten Wert einer Zahl zurück.</span><span class="sxs-lookup"><span data-stu-id="09238-104">Returns the absolute value of a number.</span></span>
+<span data-ttu-id="bd277-104">Gibt den absoluten Wert einer Zahl zurück.</span><span class="sxs-lookup"><span data-stu-id="bd277-104">Returns the absolute value of a number.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="09238-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="09238-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bd277-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="bd277-105">Syntax</span></span>
 
-<span data-ttu-id="09238-106">ABS ( *Anzahl*)</span><span class="sxs-lookup"><span data-stu-id="09238-106">ABS( *number*)</span></span> 
+<span data-ttu-id="bd277-106">ABS ( *Anzahl*)</span><span class="sxs-lookup"><span data-stu-id="bd277-106">ABS( *number*)</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="09238-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="09238-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="bd277-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="bd277-107">Parameters</span></span>
 
-|<span data-ttu-id="09238-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="09238-108">**Name**</span></span>|<span data-ttu-id="09238-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="09238-109">**Required/Optional**</span></span>|<span data-ttu-id="09238-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="09238-110">**Data Type**</span></span>|<span data-ttu-id="09238-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="09238-111">**Description**</span></span>|
+|<span data-ttu-id="bd277-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="bd277-108">**Name**</span></span>|<span data-ttu-id="bd277-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="bd277-109">**Required/Optional**</span></span>|<span data-ttu-id="bd277-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="bd277-110">**Data Type**</span></span>|<span data-ttu-id="bd277-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="bd277-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="09238-112">_Number_</span><span class="sxs-lookup"><span data-stu-id="09238-112">_Number_</span></span> <br/> |<span data-ttu-id="09238-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="09238-113">Required</span></span>  <br/> |<span data-ttu-id="09238-114">**Decimal**</span><span class="sxs-lookup"><span data-stu-id="09238-114">**Decimal**</span></span> <br/> |<span data-ttu-id="09238-115">Die Zahl, deren absoluter Wert ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="09238-115">The number whose absolute value you want to find.</span></span>  <br/> |
+| <span data-ttu-id="bd277-112">_Number_</span><span class="sxs-lookup"><span data-stu-id="bd277-112">_Number_</span></span> <br/> |<span data-ttu-id="bd277-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="bd277-113">Required</span></span>  <br/> |<span data-ttu-id="bd277-114">**Decimal**</span><span class="sxs-lookup"><span data-stu-id="bd277-114">**Decimal**</span></span> <br/> |<span data-ttu-id="bd277-115">Die Zahl, deren absoluter Wert ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="bd277-115">The number whose absolute value you want to find.</span></span>  <br/> |
    
-## <a name="example"></a><span data-ttu-id="09238-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="09238-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bd277-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="bd277-116">Example</span></span>
 
-<span data-ttu-id="09238-117">ABS(-1.24)</span><span class="sxs-lookup"><span data-stu-id="09238-117">ABS(-1.24)</span></span> 
+<span data-ttu-id="bd277-117">ABS(-1.24)</span><span class="sxs-lookup"><span data-stu-id="bd277-117">ABS(-1.24)</span></span> 
   
-<span data-ttu-id="09238-118">Liefert 1,24.</span><span class="sxs-lookup"><span data-stu-id="09238-118">Returns 1.24.</span></span>
+<span data-ttu-id="bd277-118">Liefert 1,24.</span><span class="sxs-lookup"><span data-stu-id="bd277-118">Returns 1.24.</span></span>
   
 

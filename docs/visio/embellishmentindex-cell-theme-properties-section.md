@@ -14,24 +14,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19796922"
 ---
-# <a name="embellishmentindex-cell-theme-properties-section"></a><span data-ttu-id="38994-103">EmbellishmentIndex Cell (Theme Properties Section)</span><span class="sxs-lookup"><span data-stu-id="38994-103">EmbellishmentIndex Cell (Theme Properties Section)</span></span>
+# <a name="embellishmentindex-cell-theme-properties-section"></a><span data-ttu-id="39cd0-103">EmbellishmentIndex Cell (Theme Properties Section)</span><span class="sxs-lookup"><span data-stu-id="39cd0-103">EmbellishmentIndex Cell (Theme Properties Section)</span></span>
 
-<span data-ttu-id="38994-104">Ändert das Aussehen und Verhalten (Ornament) von Legenden, Containern, Zeitplänen und Organigramm-Shapes.</span><span class="sxs-lookup"><span data-stu-id="38994-104">Changes the look and feel (embellishment) of callouts, containers, timelines, and organization chart shapes.</span></span>
+<span data-ttu-id="39cd0-104">Ändert das Aussehen und Verhalten (Ornament) von Legenden, Containern, Zeitplänen und Organigramm-Shapes.</span><span class="sxs-lookup"><span data-stu-id="39cd0-104">Changes the look and feel (embellishment) of callouts, containers, timelines, and organization chart shapes.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="38994-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="38994-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="39cd0-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="39cd0-105">Remarks</span></span>
 
-<span data-ttu-id="38994-106">Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="38994-106">To get a reference to the **EmbellishmentIndex** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="39cd0-106">Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="39cd0-106">To get a reference to the **EmbellishmentIndex** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="38994-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="38994-107">Cell name:</span></span>  <br/> | <span data-ttu-id="38994-108">EmbellishmentIndex</span><span class="sxs-lookup"><span data-stu-id="38994-108">EmbellishmentIndex</span></span>  <br/> |
+| <span data-ttu-id="39cd0-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="39cd0-107">Cell name:</span></span>  <br/> | <span data-ttu-id="39cd0-108">EmbellishmentIndex</span><span class="sxs-lookup"><span data-stu-id="39cd0-108">EmbellishmentIndex</span></span>  <br/> |
    
-<span data-ttu-id="38994-109">Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="38994-109">To get a reference to the **EmbellishmentIndex** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="39cd0-109">Wenn Sie einen Verweis auf die Zelle **EmbellishmentIndex** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="39cd0-109">To get a reference to the **EmbellishmentIndex** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="38994-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="38994-110">Section index:</span></span>  <br/> |<span data-ttu-id="38994-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="38994-111">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="38994-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="38994-112">Row index:</span></span>  <br/> |<span data-ttu-id="38994-113">**visRowThemeProperties**</span><span class="sxs-lookup"><span data-stu-id="38994-113">**visRowThemeProperties**</span></span> <br/> |
-| <span data-ttu-id="38994-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="38994-114">Cell index:</span></span>  <br/> |<span data-ttu-id="38994-115">**visEmbellishmentIndex**</span><span class="sxs-lookup"><span data-stu-id="38994-115">**visEmbellishmentIndex**</span></span> <br/> |
+| <span data-ttu-id="39cd0-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="39cd0-110">Section index:</span></span>  <br/> |<span data-ttu-id="39cd0-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="39cd0-111">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="39cd0-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="39cd0-112">Row index:</span></span>  <br/> |<span data-ttu-id="39cd0-113">**visRowThemeProperties**</span><span class="sxs-lookup"><span data-stu-id="39cd0-113">**visRowThemeProperties**</span></span> <br/> |
+| <span data-ttu-id="39cd0-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="39cd0-114">Cell index:</span></span>  <br/> |<span data-ttu-id="39cd0-115">**visEmbellishmentIndex**</span><span class="sxs-lookup"><span data-stu-id="39cd0-115">**visEmbellishmentIndex**</span></span> <br/> |
    
 

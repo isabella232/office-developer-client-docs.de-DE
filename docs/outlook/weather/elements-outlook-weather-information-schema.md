@@ -15,16 +15,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796094"
 ---
-# <a name="elements-outlook-weather-information-schema"></a><span data-ttu-id="a7f29-103">Elemente (Outlook Wetter Informationen-Schema)</span><span class="sxs-lookup"><span data-stu-id="a7f29-103">Elements (Outlook Weather Information Schema)</span></span>
+# <a name="elements-outlook-weather-information-schema"></a><span data-ttu-id="27427-103">Elemente (Outlook Wetter Informationen-Schema)</span><span class="sxs-lookup"><span data-stu-id="27427-103">Elements (Outlook Weather Information Schema)</span></span>
 
-<span data-ttu-id="a7f29-104">In diesem Thema werden die Elemente im Outlook Wetter Informationen XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="a7f29-104">This topic lists the elements in the Outlook Weather Information XML schema.</span></span>
+<span data-ttu-id="27427-104">In diesem Thema werden die Elemente im Outlook Wetter Informationen XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="27427-104">This topic lists the elements in the Outlook Weather Information XML schema.</span></span>
   
-- [<span data-ttu-id="a7f29-105">aktuelle element</span><span class="sxs-lookup"><span data-stu-id="a7f29-105">current element</span></span>](current-element-weathertype-complextypeoutlook-weather-information-schema.md)
+- [<span data-ttu-id="27427-105">current-Element</span><span class="sxs-lookup"><span data-stu-id="27427-105">current element</span></span>](current-element-weathertype-complextypeoutlook-weather-information-schema.md)
     
-- [<span data-ttu-id="a7f29-106">Vorhersage-element</span><span class="sxs-lookup"><span data-stu-id="a7f29-106">forecast element</span></span>](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md)
+- [<span data-ttu-id="27427-106">forecast-Element</span><span class="sxs-lookup"><span data-stu-id="27427-106">forecast element</span></span>](forecast-element-weathertype-complextypeoutlook-weather-information-schema.md)
     
-- [<span data-ttu-id="a7f29-107">Wetter-element</span><span class="sxs-lookup"><span data-stu-id="a7f29-107">weather element</span></span>](weather-element-weatherdata-elementoutlook-weather-information-schema.md)
+- [<span data-ttu-id="27427-107">weather-Element</span><span class="sxs-lookup"><span data-stu-id="27427-107">weather element</span></span>](weather-element-weatherdata-elementoutlook-weather-information-schema.md)
     
-- [<span data-ttu-id="a7f29-108">WeatherData-element</span><span class="sxs-lookup"><span data-stu-id="a7f29-108">weatherdata element</span></span>](weatherdata-element-outlook-weather-information-schema.md)
+- [<span data-ttu-id="27427-108">weatherdata-Element</span><span class="sxs-lookup"><span data-stu-id="27427-108">weatherdata element</span></span>](weatherdata-element-outlook-weather-information-schema.md)
     
 

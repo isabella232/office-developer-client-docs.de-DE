@@ -15,20 +15,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795988"
 ---
-# <a name="isocialsessionloggedonuserid"></a><span data-ttu-id="4bd7c-103">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="4bd7c-103">ISocialSession::LoggedOnUserID</span></span>
+# <a name="isocialsessionloggedonuserid"></a><span data-ttu-id="e8919-103">ISocialSession::LoggedOnUserID</span><span class="sxs-lookup"><span data-stu-id="e8919-103">ISocialSession::LoggedOnUserID</span></span>
 
-<span data-ttu-id="4bd7c-104">Gibt eine Zeichenfolge, die die sozialen Netzwerk-Benutzer-ID des Benutzers darstellt, der derzeit angemeldet ist.</span><span class="sxs-lookup"><span data-stu-id="4bd7c-104">Returns a string that represents the social network user ID of the user who is currently logged on.</span></span> 
+<span data-ttu-id="e8919-104">Gibt eine Zeichenfolge, die die sozialen Netzwerk-Benutzer-ID des Benutzers darstellt, der derzeit angemeldet ist.</span><span class="sxs-lookup"><span data-stu-id="e8919-104">Returns a string that represents the social network user ID of the user who is currently logged on.</span></span> 
   
 ```cpp
 [propget] HRESULT _stdcall LoggedOnUserID([out, retval] BSTR* result);
 ```
 
-## <a name="property-value"></a><span data-ttu-id="4bd7c-105">Eigenschaftswert</span><span class="sxs-lookup"><span data-stu-id="4bd7c-105">Property value</span></span>
+## <a name="property-value"></a><span data-ttu-id="e8919-105">Eigenschaftswert</span><span class="sxs-lookup"><span data-stu-id="e8919-105">Property value</span></span>
 
-<span data-ttu-id="4bd7c-106">Eine Zeichenfolge, die für soziale Netzwerke Benutzer-ID des angemeldeten Benutzers enthält.</span><span class="sxs-lookup"><span data-stu-id="4bd7c-106">A string that contains the social network user ID of the logged-on user.</span></span>
+<span data-ttu-id="e8919-106">Eine Zeichenfolge, die für soziale Netzwerke Benutzer-ID des angemeldeten Benutzers enthält.</span><span class="sxs-lookup"><span data-stu-id="e8919-106">A string that contains the social network user ID of the logged-on user.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="4bd7c-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4bd7c-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e8919-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e8919-107">See also</span></span>
 
-- [<span data-ttu-id="4bd7c-108">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="4bd7c-108">ISocialSession::LoggedOnUserName</span></span>](isocialsession-loggedonusername.md)  
-- [<span data-ttu-id="4bd7c-109">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="4bd7c-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="e8919-108">ISocialSession::LoggedOnUserName</span><span class="sxs-lookup"><span data-stu-id="e8919-108">ISocialSession::LoggedOnUserName</span></span>](isocialsession-loggedonusername.md)  
+- [<span data-ttu-id="e8919-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="e8919-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

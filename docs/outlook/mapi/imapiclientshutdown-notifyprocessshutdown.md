@@ -19,34 +19,34 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792061"
 ---
-# <a name="imapiclientshutdownnotifyprocessshutdown"></a><span data-ttu-id="8dc70-103">IMAPIClientShutdown::NotifyProcessShutdown</span><span class="sxs-lookup"><span data-stu-id="8dc70-103">IMAPIClientShutdown::NotifyProcessShutdown</span></span>
+# <a name="imapiclientshutdownnotifyprocessshutdown"></a><span data-ttu-id="90f15-103">IMAPIClientShutdown::NotifyProcessShutdown</span><span class="sxs-lookup"><span data-stu-id="90f15-103">IMAPIClientShutdown::NotifyProcessShutdown</span></span>
 
   
   
-<span data-ttu-id="8dc70-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="8dc70-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="90f15-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="90f15-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="8dc70-105">Gibt an, fahren Sie der Zweck der MAPI-Client, fortsetzen.</span><span class="sxs-lookup"><span data-stu-id="8dc70-105">Indicates the intention of the MAPI client to proceed with shut down.</span></span>
+<span data-ttu-id="90f15-105">Gibt an, fahren Sie der Zweck der MAPI-Client, fortsetzen.</span><span class="sxs-lookup"><span data-stu-id="90f15-105">Indicates the intention of the MAPI client to proceed with shut down.</span></span>
   
 ```cpp
 HRESULT NotifyProcessShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="8dc70-106">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8dc70-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="90f15-106">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="90f15-106">Return value</span></span>
 
-<span data-ttu-id="8dc70-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="8dc70-107">S_OK</span></span>
+<span data-ttu-id="90f15-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="90f15-107">S_OK</span></span>
   
-> <span data-ttu-id="8dc70-108">MAPI-Subsystems hat versucht, um geladene MAPI-Anbieter zu benachrichtigen, dass der MAPI-Client wird ein Schnelles Herunterfahren führen.</span><span class="sxs-lookup"><span data-stu-id="8dc70-108">The MAPI subsystem has attempted to notify loaded MAPI providers that the MAPI client is going to do a fast shutdown.</span></span>
+> <span data-ttu-id="90f15-108">MAPI-Subsystems hat versucht, um geladene MAPI-Anbieter zu benachrichtigen, dass der MAPI-Client wird ein Schnelles Herunterfahren führen.</span><span class="sxs-lookup"><span data-stu-id="90f15-108">The MAPI subsystem has attempted to notify loaded MAPI providers that the MAPI client is going to do a fast shutdown.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="8dc70-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8dc70-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="90f15-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="90f15-109">Remarks</span></span>
 
-<span data-ttu-id="8dc70-110">Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu vermeiden, sollten MAPI-Clients die basierend auf dem S_OK Ergebnis des MAPI-Subsystems in zurückgegebene **IMAPIClientShutdown::NotifyProcessShutdown** und [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) -Methoden aufrufen. die [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode.</span><span class="sxs-lookup"><span data-stu-id="8dc70-110">To avoid data loss from the fast shutdown of a MAPI client, MAPI clients should call the **IMAPIClientShutdown::NotifyProcessShutdown** and [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) methods based on the S_OK result returned by the MAPI subsystem in the [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) method.</span></span> <span data-ttu-id="8dc70-111">Weitere Informationen finden Sie unter [Bewährte Methoden für Schnelles Herunterfahren](best-practices-for-fast-shutdown.md).</span><span class="sxs-lookup"><span data-stu-id="8dc70-111">For more information, see [Best Practices for Fast Shutdown](best-practices-for-fast-shutdown.md).</span></span>
+<span data-ttu-id="90f15-110">Verlust von Daten über das schnelle Herunterfahren von einem MAPI-Client zu vermeiden, sollten MAPI-Clients die basierend auf dem S_OK Ergebnis des MAPI-Subsystems in zurückgegebene **IMAPIClientShutdown::NotifyProcessShutdown** und [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) -Methoden aufrufen. die [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) -Methode.</span><span class="sxs-lookup"><span data-stu-id="90f15-110">To avoid data loss from the fast shutdown of a MAPI client, MAPI clients should call the **IMAPIClientShutdown::NotifyProcessShutdown** and [IMAPIClientShutdown::DoFastShutdown](imapiclientshutdown-dofastshutdown.md) methods based on the S_OK result returned by the MAPI subsystem in the [IMAPIClientShutdown::QueryFastShutdown](imapiclientshutdown-queryfastshutdown.md) method.</span></span> <span data-ttu-id="90f15-111">Weitere Informationen finden Sie unter [Bewährte Methoden für Schnelles Herunterfahren](best-practices-for-fast-shutdown.md).</span><span class="sxs-lookup"><span data-stu-id="90f15-111">For more information, see [Best Practices for Fast Shutdown](best-practices-for-fast-shutdown.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="8dc70-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8dc70-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="90f15-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="90f15-112">See also</span></span>
 
 
 
-[<span data-ttu-id="8dc70-113">IMAPIClientShutdown: IUnknown</span><span class="sxs-lookup"><span data-stu-id="8dc70-113">IMAPIClientShutdown : IUnknown</span></span>](imapiclientshutdowniunknown.md)
+[<span data-ttu-id="90f15-113">IMAPIClientShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="90f15-113">IMAPIClientShutdown : IUnknown</span></span>](imapiclientshutdowniunknown.md)
 
 
-[<span data-ttu-id="8dc70-114">Herunterfahren von Clients in MAPI</span><span class="sxs-lookup"><span data-stu-id="8dc70-114">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
+[<span data-ttu-id="90f15-114">Herunterfahren von Clients in MAPI</span><span class="sxs-lookup"><span data-stu-id="90f15-114">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
 
