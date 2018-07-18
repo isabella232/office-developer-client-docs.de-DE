@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798324"
 ---
-# <a name="txtpinx-cell-text-transform-section"></a><span data-ttu-id="1f1d6-104">Zelle "TxtPinX" (Abschnitt "Text Transform")</span><span class="sxs-lookup"><span data-stu-id="1f1d6-104">TxtPinX Cell (Text Transform Section)</span></span>
+# <a name="txtpinx-cell-text-transform-section"></a><span data-ttu-id="2b7c9-104">TxtPinX Cell (Text Transform Section)</span><span class="sxs-lookup"><span data-stu-id="2b7c9-104">TxtPinX Cell (Text Transform Section)</span></span>
 
-<span data-ttu-id="1f1d6-105">Legt die *X* --Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Shapes.</span><span class="sxs-lookup"><span data-stu-id="1f1d6-105">Determines the  *x*  -coordinate of the text block's center of rotation in relation to the origin of the shape.</span></span> <span data-ttu-id="1f1d6-106">Die Standardformel lautet:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-106">The default formula is:</span></span> 
+<span data-ttu-id="2b7c9-105">Legt die *X* --Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Shapes.</span><span class="sxs-lookup"><span data-stu-id="2b7c9-105">Determines the  *x*  -coordinate of the text block's center of rotation in relation to the origin of the shape.</span></span> <span data-ttu-id="2b7c9-106">Die Standardformel lautet:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-106">The default formula is:</span></span> 
   
-<span data-ttu-id="1f1d6-107">= Breite \* 0,5</span><span class="sxs-lookup"><span data-stu-id="1f1d6-107">= Width \* 0.5</span></span>
+<span data-ttu-id="2b7c9-107">= Breite \* 0,5</span><span class="sxs-lookup"><span data-stu-id="2b7c9-107">= Width \* 0.5</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1f1d6-108">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1f1d6-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2b7c9-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2b7c9-108">Remarks</span></span>
 
-<span data-ttu-id="1f1d6-109">Wenn Sie einen Verweis auf die Zelle TxtPinX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-109">To get a reference to the TxtPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="2b7c9-109">Wenn Sie einen Verweis auf die Zelle TxtPinX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-109">To get a reference to the TxtPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="1f1d6-110">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-110">Cell name:</span></span>  <br/> | <span data-ttu-id="1f1d6-111">TxtPinX</span><span class="sxs-lookup"><span data-stu-id="1f1d6-111">TxtPinX</span></span>  <br/> |
+| <span data-ttu-id="2b7c9-110">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-110">Cell name:</span></span>  <br/> | <span data-ttu-id="2b7c9-111">TxtPinX</span><span class="sxs-lookup"><span data-stu-id="2b7c9-111">TxtPinX</span></span>  <br/> |
    
-<span data-ttu-id="1f1d6-112">Wenn Sie einen Verweis auf die Zelle TxtPinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-112">To get a reference to the TxtPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="2b7c9-112">Wenn Sie einen Verweis auf die Zelle TxtPinX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-112">To get a reference to the TxtPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="1f1d6-113">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-113">Section index:</span></span>  <br/> |<span data-ttu-id="1f1d6-114">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="1f1d6-114">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="1f1d6-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-115">Row index:</span></span>  <br/> |<span data-ttu-id="1f1d6-116">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="1f1d6-116">**visRowTextXForm**</span></span> <br/> |
-| <span data-ttu-id="1f1d6-117">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="1f1d6-117">Cell index:</span></span>  <br/> |<span data-ttu-id="1f1d6-118">**visXFormPinX**</span><span class="sxs-lookup"><span data-stu-id="1f1d6-118">**visXFormPinX**</span></span> <br/> |
+| <span data-ttu-id="2b7c9-113">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-113">Section index:</span></span>  <br/> |<span data-ttu-id="2b7c9-114">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="2b7c9-114">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="2b7c9-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-115">Row index:</span></span>  <br/> |<span data-ttu-id="2b7c9-116">**visRowTextXForm**</span><span class="sxs-lookup"><span data-stu-id="2b7c9-116">**visRowTextXForm**</span></span> <br/> |
+| <span data-ttu-id="2b7c9-117">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="2b7c9-117">Cell index:</span></span>  <br/> |<span data-ttu-id="2b7c9-118">**visXFormPinX**</span><span class="sxs-lookup"><span data-stu-id="2b7c9-118">**visXFormPinX**</span></span> <br/> |
    
 

@@ -16,28 +16,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797643"
 ---
-# <a name="pntx-function"></a><span data-ttu-id="74097-103">PNTX-Funktion</span><span class="sxs-lookup"><span data-stu-id="74097-103">PNTX Function</span></span>
+# <a name="pntx-function"></a><span data-ttu-id="47ae0-103">PNTX Function</span><span class="sxs-lookup"><span data-stu-id="47ae0-103">PNTX Function</span></span>
 
-<span data-ttu-id="74097-104">Gibt die _X_-Koordinate eines Punkts.</span><span class="sxs-lookup"><span data-stu-id="74097-104">Returns the  _x_-coordinate of a point.</span></span>
+<span data-ttu-id="47ae0-104">Gibt die _X_-Koordinate eines Punkts.</span><span class="sxs-lookup"><span data-stu-id="47ae0-104">Returns the  _x_-coordinate of a point.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="74097-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="74097-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="47ae0-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="47ae0-105">Syntax</span></span>
 
-<span data-ttu-id="74097-106">PNTX (** *zeigen* **)</span><span class="sxs-lookup"><span data-stu-id="74097-106">PNTX(** *point* ** )</span></span> 
+<span data-ttu-id="47ae0-106">PNTX (** *zeigen* **)</span><span class="sxs-lookup"><span data-stu-id="47ae0-106">PNTX(** *point* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="74097-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="74097-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="47ae0-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="47ae0-107">Parameters</span></span>
 
-|<span data-ttu-id="74097-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="74097-108">**Name**</span></span>|<span data-ttu-id="74097-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="74097-109">**Required/Optional**</span></span>|<span data-ttu-id="74097-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="74097-110">**Data Type**</span></span>|<span data-ttu-id="74097-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="74097-111">**Description**</span></span>|
+|<span data-ttu-id="47ae0-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="47ae0-108">**Name**</span></span>|<span data-ttu-id="47ae0-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="47ae0-109">**Required/Optional**</span></span>|<span data-ttu-id="47ae0-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="47ae0-110">**Data Type**</span></span>|<span data-ttu-id="47ae0-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="47ae0-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="74097-112">_Zeigen Sie_</span><span class="sxs-lookup"><span data-stu-id="74097-112">_point_</span></span> <br/> |<span data-ttu-id="74097-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="74097-113">Required</span></span>  <br/> |<span data-ttu-id="74097-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="74097-114">**Number**</span></span> <br/> |<span data-ttu-id="74097-115">Die _X_-Koordinate des Punkts.</span><span class="sxs-lookup"><span data-stu-id="74097-115">The  _x_-coordinate of the point.</span></span>  <br/> |
+| <span data-ttu-id="47ae0-112">_Punkt_</span><span class="sxs-lookup"><span data-stu-id="47ae0-112">_point_</span></span> <br/> |<span data-ttu-id="47ae0-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="47ae0-113">Required</span></span>  <br/> |<span data-ttu-id="47ae0-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="47ae0-114">**Number**</span></span> <br/> |<span data-ttu-id="47ae0-115">Die _X_-Koordinate des Punkts.</span><span class="sxs-lookup"><span data-stu-id="47ae0-115">The  _x_-coordinate of the point.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="74097-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="74097-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="47ae0-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="47ae0-116">Return value</span></span>
 
-<span data-ttu-id="74097-117">Number</span><span class="sxs-lookup"><span data-stu-id="74097-117">Number</span></span>
+<span data-ttu-id="47ae0-117">Number</span><span class="sxs-lookup"><span data-stu-id="47ae0-117">Number</span></span>
   
-## <a name="example"></a><span data-ttu-id="74097-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="74097-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="47ae0-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="47ae0-118">Example</span></span>
 
-<span data-ttu-id="74097-119">PNTX(PNKT(7,12))</span><span class="sxs-lookup"><span data-stu-id="74097-119">PNTX(PNT(7,12))</span></span> 
+<span data-ttu-id="47ae0-119">PNTX(PNKT(7,12))</span><span class="sxs-lookup"><span data-stu-id="47ae0-119">PNTX(PNT(7,12))</span></span> 
   
-<span data-ttu-id="74097-120">Gibt 7 zurück.</span><span class="sxs-lookup"><span data-stu-id="74097-120">Returns 7.</span></span> 
+<span data-ttu-id="47ae0-120">Gibt 7 zurück.</span><span class="sxs-lookup"><span data-stu-id="47ae0-120">Returns 7.</span></span> 
   
 

@@ -16,29 +16,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797538"
 ---
-# <a name="noctlhandles-cell-miscellaneous-section"></a><span data-ttu-id="ff201-103">Zelle "NoCtlHandles" (Abschnitt "Miscellaneous")</span><span class="sxs-lookup"><span data-stu-id="ff201-103">NoCtlHandles Cell (Miscellaneous Section)</span></span>
+# <a name="noctlhandles-cell-miscellaneous-section"></a><span data-ttu-id="9b0d5-103">NoCtlHandles Cell (Miscellaneous Section)</span><span class="sxs-lookup"><span data-stu-id="9b0d5-103">NoCtlHandles Cell (Miscellaneous Section)</span></span>
 
-<span data-ttu-id="ff201-104">Aktiviert bzw. deaktiviert die Anzeige der Steuerpunkte für das ausgewählte Shape.</span><span class="sxs-lookup"><span data-stu-id="ff201-104">Switches the display of control handles on and off for the selected shape.</span></span>
+<span data-ttu-id="9b0d5-104">Aktiviert bzw. deaktiviert die Anzeige der Steuerpunkte für das ausgewählte Shape.</span><span class="sxs-lookup"><span data-stu-id="9b0d5-104">Switches the display of control handles on and off for the selected shape.</span></span>
   
-|<span data-ttu-id="ff201-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="ff201-105">**Value**</span></span>|<span data-ttu-id="ff201-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="ff201-106">**Description**</span></span>|
+|<span data-ttu-id="9b0d5-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="9b0d5-105">**Value**</span></span>|<span data-ttu-id="9b0d5-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9b0d5-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="ff201-107">WAHR</span><span class="sxs-lookup"><span data-stu-id="ff201-107">TRUE</span></span>  <br/> | <span data-ttu-id="ff201-108">Steuerpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="ff201-108">Control handles are not displayed when a shape is selected.</span></span>  <br/> |
-| <span data-ttu-id="ff201-109">FALSCH</span><span class="sxs-lookup"><span data-stu-id="ff201-109">FALSE</span></span>  <br/> | <span data-ttu-id="ff201-110">Steuerpunkte werden angezeigt, wenn ein Shape ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="ff201-110">Control handles are displayed when a shape is selected.</span></span>  <br/> |
+| <span data-ttu-id="9b0d5-107">WAHR</span><span class="sxs-lookup"><span data-stu-id="9b0d5-107">TRUE</span></span>  <br/> | <span data-ttu-id="9b0d5-108">Steuerpunkte werden nicht angezeigt, wenn ein Shape ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="9b0d5-108">Control handles are not displayed when a shape is selected.</span></span>  <br/> |
+| <span data-ttu-id="9b0d5-109">FALSCH</span><span class="sxs-lookup"><span data-stu-id="9b0d5-109">FALSE</span></span>  <br/> | <span data-ttu-id="9b0d5-110">Steuerpunkte werden angezeigt, wenn ein Shape ausgewählt wird.</span><span class="sxs-lookup"><span data-stu-id="9b0d5-110">Control handles are displayed when a shape is selected.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ff201-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ff201-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9b0d5-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9b0d5-111">Remarks</span></span>
 
-<span data-ttu-id="ff201-112">Wenn Sie einen Verweis auf die Zelle NoCtlHandles nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="ff201-112">To get a reference to the NoCtlHandles cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="9b0d5-112">Wenn Sie einen Verweis auf die Zelle NoCtlHandles aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="9b0d5-112">To get a reference to the NoCtlHandles cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ff201-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="ff201-113">Cell name:</span></span>  <br/> | <span data-ttu-id="ff201-114">NoCtlHandles</span><span class="sxs-lookup"><span data-stu-id="ff201-114">NoCtlHandles</span></span>  <br/> |
+| <span data-ttu-id="9b0d5-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="9b0d5-113">Cell name:</span></span>  <br/> | <span data-ttu-id="9b0d5-114">NoCtlHandles</span><span class="sxs-lookup"><span data-stu-id="9b0d5-114">NoCtlHandles</span></span>  <br/> |
    
-<span data-ttu-id="ff201-115">Wenn Sie einen Verweis auf die Zelle NoCtlHandles aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="ff201-115">To get a reference to the NoCtlHandles cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="9b0d5-115">Wenn Sie einen Verweis auf die Zelle NoCtlHandles aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="9b0d5-115">To get a reference to the NoCtlHandles cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ff201-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="ff201-116">Section index:</span></span>  <br/> |<span data-ttu-id="ff201-117">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="ff201-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="ff201-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="ff201-118">Row index:</span></span>  <br/> |<span data-ttu-id="ff201-119">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="ff201-119">**visRowMisc**</span></span> <br/> |
-| <span data-ttu-id="ff201-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="ff201-120">Cell index:</span></span>  <br/> |<span data-ttu-id="ff201-121">**visNoCtlHandles**</span><span class="sxs-lookup"><span data-stu-id="ff201-121">**visNoCtlHandles**</span></span> <br/> |
+| <span data-ttu-id="9b0d5-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="9b0d5-116">Section index:</span></span>  <br/> |<span data-ttu-id="9b0d5-117">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="9b0d5-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="9b0d5-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="9b0d5-118">Row index:</span></span>  <br/> |<span data-ttu-id="9b0d5-119">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="9b0d5-119">**visRowMisc**</span></span> <br/> |
+| <span data-ttu-id="9b0d5-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="9b0d5-120">Cell index:</span></span>  <br/> |<span data-ttu-id="9b0d5-121">**visNoCtlHandles**</span><span class="sxs-lookup"><span data-stu-id="9b0d5-121">**visNoCtlHandles**</span></span> <br/> |
    
 

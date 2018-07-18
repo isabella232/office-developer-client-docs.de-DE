@@ -13,17 +13,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798406"
 ---
-# <a name="visiodocumenttype-complextype-visio-xml"></a><span data-ttu-id="30260-102">VisioDocument_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="30260-102">VisioDocument_Type complexType ('Visio XML')</span></span>
+# <a name="visiodocumenttype-complextype-visio-xml"></a><span data-ttu-id="63098-102">VisioDocument_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="63098-102">VisioDocument_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="30260-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="30260-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="63098-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="63098-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="30260-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="30260-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="30260-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="30260-105">**Schema file**</span></span> <br/> |<span data-ttu-id="30260-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="30260-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="30260-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="30260-107">**Extension base**</span></span> <br/> |<span data-ttu-id="30260-108">Keine</span><span class="sxs-lookup"><span data-stu-id="30260-108">None</span></span>  <br/> |
+|<span data-ttu-id="63098-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="63098-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="63098-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="63098-105">**Schema file**</span></span> <br/> |<span data-ttu-id="63098-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="63098-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="63098-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="63098-107">**Extension base**</span></span> <br/> |<span data-ttu-id="63098-108">Keine</span><span class="sxs-lookup"><span data-stu-id="63098-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="30260-109">Definition</span><span class="sxs-lookup"><span data-stu-id="30260-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="63098-109">Definition</span><span class="sxs-lookup"><span data-stu-id="63098-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="VisioDocument_Type">
@@ -85,25 +85,25 @@ ms.locfileid: "19798406"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="30260-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="30260-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="63098-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="63098-110">Elements and attributes</span></span>
 
-<span data-ttu-id="30260-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="30260-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="63098-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="63098-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="30260-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="30260-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="63098-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="63098-112">Child elements</span></span>
 
-|<span data-ttu-id="30260-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="30260-113">**Element**</span></span>|<span data-ttu-id="30260-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="30260-114">**Type**</span></span>|<span data-ttu-id="30260-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="30260-115">**Description**</span></span>|
+|<span data-ttu-id="63098-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="63098-113">**Element**</span></span>|<span data-ttu-id="63098-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="63098-114">**Type**</span></span>|<span data-ttu-id="63098-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="63098-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="30260-116">Colors</span><span class="sxs-lookup"><span data-stu-id="30260-116">Colors</span></span>](colors-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-117">Colors_Type</span><span class="sxs-lookup"><span data-stu-id="30260-117">Colors_Type</span></span>](colors_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-118">DocumentSettings</span><span class="sxs-lookup"><span data-stu-id="30260-118">DocumentSettings</span></span>](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-119">DocumentSettings_Type</span><span class="sxs-lookup"><span data-stu-id="30260-119">DocumentSettings_Type</span></span>](documentsettings_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-120">DocumentSheet</span><span class="sxs-lookup"><span data-stu-id="30260-120">DocumentSheet</span></span>](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-121">DocumentSheet_Type</span><span class="sxs-lookup"><span data-stu-id="30260-121">DocumentSheet_Type</span></span>](documentsheet_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-122">EventList</span><span class="sxs-lookup"><span data-stu-id="30260-122">EventList</span></span>](eventlist-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-123">EventList_Type</span><span class="sxs-lookup"><span data-stu-id="30260-123">EventList_Type</span></span>](eventlist_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-124">FaceNames</span><span class="sxs-lookup"><span data-stu-id="30260-124">FaceNames</span></span>](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-125">FaceNames_Type</span><span class="sxs-lookup"><span data-stu-id="30260-125">FaceNames_Type</span></span>](facenames_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-126">HeaderFooter</span><span class="sxs-lookup"><span data-stu-id="30260-126">HeaderFooter</span></span>](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-127">HeaderFooter_Type</span><span class="sxs-lookup"><span data-stu-id="30260-127">HeaderFooter_Type</span></span>](headerfooter_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-128">PublishSettings</span><span class="sxs-lookup"><span data-stu-id="30260-128">PublishSettings</span></span>](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-129">PublishSettings_Type</span><span class="sxs-lookup"><span data-stu-id="30260-129">PublishSettings_Type</span></span>](publishsettings_type-complextypevisio-xml.md) <br/> ||
-|[<span data-ttu-id="30260-130">StyleSheets</span><span class="sxs-lookup"><span data-stu-id="30260-130">StyleSheets</span></span>](stylesheets-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="30260-131">StyleSheets_Type</span><span class="sxs-lookup"><span data-stu-id="30260-131">StyleSheets_Type</span></span>](stylesheets_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-116">Colors</span><span class="sxs-lookup"><span data-stu-id="63098-116">Colors</span></span>](colors-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-117">Colors_Type</span><span class="sxs-lookup"><span data-stu-id="63098-117">Colors_Type</span></span>](colors_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-118">DocumentSettings</span><span class="sxs-lookup"><span data-stu-id="63098-118">DocumentSettings</span></span>](documentsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-119">DocumentSettings_Type</span><span class="sxs-lookup"><span data-stu-id="63098-119">DocumentSettings_Type</span></span>](documentsettings_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-120">DocumentSheet</span><span class="sxs-lookup"><span data-stu-id="63098-120">DocumentSheet</span></span>](documentsheet-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-121">DocumentSheet_Type</span><span class="sxs-lookup"><span data-stu-id="63098-121">DocumentSheet_Type</span></span>](documentsheet_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-122">EventList</span><span class="sxs-lookup"><span data-stu-id="63098-122">EventList</span></span>](eventlist-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-123">EventList_Type</span><span class="sxs-lookup"><span data-stu-id="63098-123">EventList_Type</span></span>](eventlist_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-124">FaceNames</span><span class="sxs-lookup"><span data-stu-id="63098-124">FaceNames</span></span>](facenames-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-125">FaceNames_Type</span><span class="sxs-lookup"><span data-stu-id="63098-125">FaceNames_Type</span></span>](facenames_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-126">HeaderFooter</span><span class="sxs-lookup"><span data-stu-id="63098-126">HeaderFooter</span></span>](headerfooter-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-127">HeaderFooter_Type</span><span class="sxs-lookup"><span data-stu-id="63098-127">HeaderFooter_Type</span></span>](headerfooter_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-128">PublishSettings</span><span class="sxs-lookup"><span data-stu-id="63098-128">PublishSettings</span></span>](publishsettings-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-129">PublishSettings_Type</span><span class="sxs-lookup"><span data-stu-id="63098-129">PublishSettings_Type</span></span>](publishsettings_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="63098-130">StyleSheets</span><span class="sxs-lookup"><span data-stu-id="63098-130">StyleSheets</span></span>](stylesheets-element-visiodocument_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="63098-131">StyleSheets_Type</span><span class="sxs-lookup"><span data-stu-id="63098-131">StyleSheets_Type</span></span>](stylesheets_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="30260-132">Attribute</span><span class="sxs-lookup"><span data-stu-id="30260-132">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="63098-132">Attribute</span><span class="sxs-lookup"><span data-stu-id="63098-132">Attributes</span></span>
 
-<span data-ttu-id="30260-133">Keine.</span><span class="sxs-lookup"><span data-stu-id="30260-133">None.</span></span>
+<span data-ttu-id="63098-133">Keine.</span><span class="sxs-lookup"><span data-stu-id="63098-133">None.</span></span>
   
 

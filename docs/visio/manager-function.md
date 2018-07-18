@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797438"
 ---
-# <a name="manager-function"></a><span data-ttu-id="81c80-103">MANAGER-Funktion</span><span class="sxs-lookup"><span data-stu-id="81c80-103">MANAGER Function</span></span>
+# <a name="manager-function"></a><span data-ttu-id="66de5-103">MANAGER Function</span><span class="sxs-lookup"><span data-stu-id="66de5-103">MANAGER Function</span></span>
 
-<span data-ttu-id="81c80-104">Gibt den Text aus dem Feld **Manager** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="81c80-104">Returns the text from the **Manager** field of a document's properties.</span></span> 
+<span data-ttu-id="66de5-104">Gibt den Text aus dem Feld **Manager** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="66de5-104">Returns the text from the **Manager** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="81c80-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="81c80-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="66de5-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="66de5-105">Syntax</span></span>
 
-<span data-ttu-id="81c80-106">MANAGER ()</span><span class="sxs-lookup"><span data-stu-id="81c80-106">MANAGER ()</span></span>
+<span data-ttu-id="66de5-106">MANAGER ()</span><span class="sxs-lookup"><span data-stu-id="66de5-106">MANAGER ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="81c80-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="81c80-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="66de5-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="66de5-107">Return value</span></span>
 
-<span data-ttu-id="81c80-108">String</span><span class="sxs-lookup"><span data-stu-id="81c80-108">String</span></span>
+<span data-ttu-id="66de5-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="66de5-108">String</span></span>
   
 

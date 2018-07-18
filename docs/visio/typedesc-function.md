@@ -16,20 +16,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798343"
 ---
-# <a name="typedesc-function"></a><span data-ttu-id="e0130-103">TYPEDESC Function</span><span class="sxs-lookup"><span data-stu-id="e0130-103">TYPEDESC Function</span></span>
+# <a name="typedesc-function"></a><span data-ttu-id="d2aed-103">TYPEDESC Function</span><span class="sxs-lookup"><span data-stu-id="d2aed-103">TYPEDESC Function</span></span>
 
-<span data-ttu-id="e0130-104">Gibt eine Zeichenfolge, die internen Typ eines Objekts beschreibt.</span><span class="sxs-lookup"><span data-stu-id="e0130-104">Returns a string that describes an object's internal type.</span></span> 
+<span data-ttu-id="d2aed-104">Gibt eine Zeichenfolge, die internen Typ eines Objekts beschreibt.</span><span class="sxs-lookup"><span data-stu-id="d2aed-104">Returns a string that describes an object's internal type.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="e0130-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e0130-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d2aed-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="d2aed-105">Syntax</span></span>
 
-<span data-ttu-id="e0130-106">TYPEDESC ()</span><span class="sxs-lookup"><span data-stu-id="e0130-106">TYPEDESC ()</span></span>
+<span data-ttu-id="d2aed-106">TYPEDESC ()</span><span class="sxs-lookup"><span data-stu-id="d2aed-106">TYPEDESC ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="e0130-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e0130-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="d2aed-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d2aed-107">Return value</span></span>
 
-<span data-ttu-id="e0130-108">String</span><span class="sxs-lookup"><span data-stu-id="e0130-108">String</span></span>
+<span data-ttu-id="d2aed-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d2aed-108">String</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="e0130-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e0130-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d2aed-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d2aed-109">Remarks</span></span>
 
-<span data-ttu-id="e0130-110">In der folgenden Tabelle werden die beschreibenden Zeichenfolgen für interne Objekte aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="e0130-110">The following table lists descriptive strings for internal objects.</span></span>
+<span data-ttu-id="d2aed-110">In der folgenden Tabelle werden die beschreibenden Zeichenfolgen für interne Objekte aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="d2aed-110">The following table lists descriptive strings for internal objects.</span></span>
   
 

@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798210"
 ---
-# <a name="subject-function"></a><span data-ttu-id="eaa83-103">SUBJECT-Funktion</span><span class="sxs-lookup"><span data-stu-id="eaa83-103">SUBJECT Function</span></span>
+# <a name="subject-function"></a><span data-ttu-id="6d549-103">SUBJECT Function</span><span class="sxs-lookup"><span data-stu-id="6d549-103">SUBJECT Function</span></span>
 
-<span data-ttu-id="eaa83-104">Gibt den Text aus dem Feld " **Betreff** " der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="eaa83-104">Returns the text from the **Subject** field of a document's properties.</span></span> 
+<span data-ttu-id="6d549-104">Gibt den Text aus dem Feld " **Betreff** " der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="6d549-104">Returns the text from the **Subject** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="eaa83-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="eaa83-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6d549-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6d549-105">Syntax</span></span>
 
-<span data-ttu-id="eaa83-106">BETREFF)</span><span class="sxs-lookup"><span data-stu-id="eaa83-106">SUBJECT ()</span></span>
+<span data-ttu-id="6d549-106">BETREFF)</span><span class="sxs-lookup"><span data-stu-id="6d549-106">SUBJECT ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="eaa83-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="eaa83-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="6d549-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6d549-107">Return value</span></span>
 
-<span data-ttu-id="eaa83-108">String</span><span class="sxs-lookup"><span data-stu-id="eaa83-108">String</span></span>
+<span data-ttu-id="6d549-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6d549-108">String</span></span>
   
 

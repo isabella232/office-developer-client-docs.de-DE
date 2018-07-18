@@ -16,28 +16,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797145"
 ---
-# <a name="help-function"></a><span data-ttu-id="17774-103">HELP Function</span><span class="sxs-lookup"><span data-stu-id="17774-103">HELP Function</span></span>
+# <a name="help-function"></a><span data-ttu-id="17464-103">HELP-Funktion</span><span class="sxs-lookup"><span data-stu-id="17464-103">HELP Function</span></span>
 
-<span data-ttu-id="17774-104">Öffnet eine HTML-Hilfedatei mit dem angegebenen *Schlüsselwort* im Feld **Suchen** .</span><span class="sxs-lookup"><span data-stu-id="17774-104">Opens an HTML Help file with the specifed  *keyword*  in the **Search** box.</span></span> 
+<span data-ttu-id="17464-104">Öffnet eine HTML-Hilfedatei mit dem angegebenen *Schlüsselwort* im Feld **Suchen** .</span><span class="sxs-lookup"><span data-stu-id="17464-104">Opens an HTML Help file with the specifed  *keyword*  in the **Search** box.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="17774-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="17774-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="17464-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="17464-105">Syntax</span></span>
 
-<span data-ttu-id="17774-106">Hilfe ("** *filename.chm!keyword* **")</span><span class="sxs-lookup"><span data-stu-id="17774-106">HELP(" ** *filename.chm!keyword* ** ")</span></span> 
+<span data-ttu-id="17464-106">Hilfe ("** *filename.chm!keyword* **")</span><span class="sxs-lookup"><span data-stu-id="17464-106">HELP(" ** *filename.chm!keyword* ** ")</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="17774-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="17774-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="17464-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="17464-107">Parameters</span></span>
 
-|<span data-ttu-id="17774-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="17774-108">**Name**</span></span>|<span data-ttu-id="17774-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="17774-109">**Required/Optional**</span></span>|<span data-ttu-id="17774-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="17774-110">**Data Type**</span></span>|<span data-ttu-id="17774-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="17774-111">**Description**</span></span>|
+|<span data-ttu-id="17464-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="17464-108">**Name**</span></span>|<span data-ttu-id="17464-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="17464-109">**Required/Optional**</span></span>|<span data-ttu-id="17464-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="17464-110">**Data Type**</span></span>|<span data-ttu-id="17464-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="17464-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="17774-112">_filename.chm!Keyword_</span><span class="sxs-lookup"><span data-stu-id="17774-112">_filename.chm!keyword_</span></span> <br/> |<span data-ttu-id="17774-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="17774-113">Required</span></span>  <br/> |<span data-ttu-id="17774-114">**String**</span><span class="sxs-lookup"><span data-stu-id="17774-114">**String**</span></span> <br/> | <span data-ttu-id="17774-115">Der Name der Hilfedatei und das Stichwort, nach dem gesucht werden soll.</span><span class="sxs-lookup"><span data-stu-id="17774-115">The filename of the Help file and the keyword to search for.</span></span>  <br/> |
+| <span data-ttu-id="17464-112">_filename.chm!Keyword_</span><span class="sxs-lookup"><span data-stu-id="17464-112">_filename.chm!keyword_</span></span> <br/> |<span data-ttu-id="17464-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="17464-113">Required</span></span>  <br/> |<span data-ttu-id="17464-114">**String**</span><span class="sxs-lookup"><span data-stu-id="17464-114">**String**</span></span> <br/> | <span data-ttu-id="17464-115">Der Name der Hilfedatei und das Stichwort, nach dem gesucht werden soll.</span><span class="sxs-lookup"><span data-stu-id="17464-115">The filename of the Help file and the keyword to search for.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="17774-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="17774-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="17464-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="17464-116">Remarks</span></span>
 
-<span data-ttu-id="17774-117">Wenn kein *Keyword* angegeben wurde, wird die HELP-Funktion die Inhaltsübersicht der Hilfedatei geöffnet.</span><span class="sxs-lookup"><span data-stu-id="17774-117">If no  *keyword*  is specified, the HELP function opens the contents page of the Help file.</span></span> 
+<span data-ttu-id="17464-117">Wenn kein *Keyword* angegeben wurde, wird die HELP-Funktion die Inhaltsübersicht der Hilfedatei geöffnet.</span><span class="sxs-lookup"><span data-stu-id="17464-117">If no  *keyword*  is specified, the HELP function opens the contents page of the Help file.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="17774-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="17774-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="17464-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="17464-118">Example</span></span>
 
-<span data-ttu-id="17774-119">Help("Visio.chm!ShapeSheet")</span><span class="sxs-lookup"><span data-stu-id="17774-119">HELP("visio.chm!shapesheet")</span></span> 
+<span data-ttu-id="17464-119">Help("Visio.chm!ShapeSheet")</span><span class="sxs-lookup"><span data-stu-id="17464-119">HELP("visio.chm!shapesheet")</span></span> 
   
-<span data-ttu-id="17774-120">Öffnet die Visio-Hilfedatei und zeigt eine Liste der Themen zum Stichwort "Shapesheet" an.</span><span class="sxs-lookup"><span data-stu-id="17774-120">Opens the Visio Help file and displays a list of the topic(s) whose keyword is "shapesheet."</span></span> 
+<span data-ttu-id="17464-120">Öffnet die Visio-Hilfedatei und zeigt eine Liste der Themen zum Stichwort "Shapesheet" an.</span><span class="sxs-lookup"><span data-stu-id="17464-120">Opens the Visio Help file and displays a list of the topic(s) whose keyword is "shapesheet."</span></span> 
   
 

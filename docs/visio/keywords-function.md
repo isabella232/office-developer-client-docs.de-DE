@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797260"
 ---
-# <a name="keywords-function"></a><span data-ttu-id="ae638-103">KEYWORDS Function</span><span class="sxs-lookup"><span data-stu-id="ae638-103">KEYWORDS Function</span></span>
+# <a name="keywords-function"></a><span data-ttu-id="ed09a-103">KEYWORDS Function</span><span class="sxs-lookup"><span data-stu-id="ed09a-103">KEYWORDS Function</span></span>
 
-<span data-ttu-id="ae638-104">Gibt den Text aus dem Feld **Schlüsselwörter** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="ae638-104">Returns the text from the **Keywords** field of a document's properties.</span></span> 
+<span data-ttu-id="ed09a-104">Gibt den Text aus dem Feld **Schlüsselwörter** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="ed09a-104">Returns the text from the **Keywords** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="ae638-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="ae638-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ed09a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="ed09a-105">Syntax</span></span>
 
-<span data-ttu-id="ae638-106">SCHLÜSSELWÖRTER)</span><span class="sxs-lookup"><span data-stu-id="ae638-106">KEYWORDS ()</span></span>
+<span data-ttu-id="ed09a-106">SCHLÜSSELWÖRTER)</span><span class="sxs-lookup"><span data-stu-id="ed09a-106">KEYWORDS ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="ae638-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ae638-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="ed09a-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ed09a-107">Return value</span></span>
 
-<span data-ttu-id="ae638-108">String</span><span class="sxs-lookup"><span data-stu-id="ae638-108">String</span></span>
+<span data-ttu-id="ed09a-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="ed09a-108">String</span></span>
   
 

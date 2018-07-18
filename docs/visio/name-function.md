@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797537"
 ---
-# <a name="name-function"></a><span data-ttu-id="5ab41-103">NAME Function</span><span class="sxs-lookup"><span data-stu-id="5ab41-103">NAME Function</span></span>
+# <a name="name-function"></a><span data-ttu-id="1203b-103">NAME Function</span><span class="sxs-lookup"><span data-stu-id="1203b-103">NAME Function</span></span>
 
-<span data-ttu-id="5ab41-104">Gibt den Namen eines Zeichenblatts als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="5ab41-104">Returns a sheet's name as a string.</span></span>
+<span data-ttu-id="1203b-104">Gibt den Namen eines Zeichenblatts als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="1203b-104">Returns a sheet's name as a string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="5ab41-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="5ab41-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1203b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1203b-105">Syntax</span></span>
 
-<span data-ttu-id="5ab41-106">NAME (** *LangID_opt* **)</span><span class="sxs-lookup"><span data-stu-id="5ab41-106">NAME (** *langID_opt* ** )</span></span> 
+<span data-ttu-id="1203b-106">NAME (** *LangID_opt* **)</span><span class="sxs-lookup"><span data-stu-id="1203b-106">NAME (** *langID_opt* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="5ab41-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="5ab41-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="1203b-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="1203b-107">Parameters</span></span>
 
-|<span data-ttu-id="5ab41-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="5ab41-108">**Name**</span></span>|<span data-ttu-id="5ab41-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="5ab41-109">**Required/Optional**</span></span>|<span data-ttu-id="5ab41-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="5ab41-110">**Data Type**</span></span>|<span data-ttu-id="5ab41-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="5ab41-111">**Description**</span></span>|
+|<span data-ttu-id="1203b-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="1203b-108">**Name**</span></span>|<span data-ttu-id="1203b-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="1203b-109">**Required/Optional**</span></span>|<span data-ttu-id="1203b-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="1203b-110">**Data Type**</span></span>|<span data-ttu-id="1203b-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1203b-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="5ab41-112">_langID_opt_</span><span class="sxs-lookup"><span data-stu-id="5ab41-112">_langID_opt_</span></span> <br/> |<span data-ttu-id="5ab41-113">Optional</span><span class="sxs-lookup"><span data-stu-id="5ab41-113">Optional</span></span>  <br/> |<span data-ttu-id="5ab41-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="5ab41-114">**Number**</span></span> <br/> |<span data-ttu-id="5ab41-p101">Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.</span><span class="sxs-lookup"><span data-stu-id="5ab41-p101">Use to specify a language for the string the function returns. Use 0 (default value) to specify the local language. Use 750 to specify universal language.</span></span>  <br/> |
+| <span data-ttu-id="1203b-112">_langID_opt_</span><span class="sxs-lookup"><span data-stu-id="1203b-112">_langID_opt_</span></span> <br/> |<span data-ttu-id="1203b-113">Optional</span><span class="sxs-lookup"><span data-stu-id="1203b-113">Optional</span></span>  <br/> |<span data-ttu-id="1203b-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="1203b-114">**Number**</span></span> <br/> |<span data-ttu-id="1203b-p101">Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.</span><span class="sxs-lookup"><span data-stu-id="1203b-p101">Use to specify a language for the string the function returns. Use 0 (default value) to specify the local language. Use 750 to specify universal language.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="5ab41-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5ab41-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="1203b-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1203b-118">Return value</span></span>
 
-<span data-ttu-id="5ab41-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="5ab41-119">String</span></span>
+<span data-ttu-id="1203b-119">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="1203b-119">String</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="5ab41-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5ab41-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1203b-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1203b-120">Remarks</span></span>
 
-<span data-ttu-id="5ab41-121">Wenn Sie einen ungültigen Sprachencode eingeben, wird die lokale Sprache verwendet.</span><span class="sxs-lookup"><span data-stu-id="5ab41-121">If you pass an illegal language code, the local language is used.</span></span> 
+<span data-ttu-id="1203b-121">Wenn Sie einen ungültigen Sprachencode eingeben, wird die lokale Sprache verwendet.</span><span class="sxs-lookup"><span data-stu-id="1203b-121">If you pass an illegal language code, the local language is used.</span></span> 
   
 

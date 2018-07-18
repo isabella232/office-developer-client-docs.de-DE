@@ -13,17 +13,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797255"
 ---
-# <a name="issuestype-complextype-visio-xml"></a><span data-ttu-id="f79bf-102">Issues_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="f79bf-102">Issues_Type complexType ('Visio XML')</span></span>
+# <a name="issuestype-complextype-visio-xml"></a><span data-ttu-id="e2352-102">Issues_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="e2352-102">Issues_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="f79bf-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="f79bf-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="e2352-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="e2352-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="f79bf-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="f79bf-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="f79bf-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="f79bf-105">**Schema file**</span></span> <br/> |<span data-ttu-id="f79bf-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="f79bf-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="f79bf-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="f79bf-107">**Extension base**</span></span> <br/> |<span data-ttu-id="f79bf-108">Keine</span><span class="sxs-lookup"><span data-stu-id="f79bf-108">None</span></span>  <br/> |
+|<span data-ttu-id="e2352-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="e2352-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="e2352-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="e2352-105">**Schema file**</span></span> <br/> |<span data-ttu-id="e2352-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="e2352-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="e2352-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="e2352-107">**Extension base**</span></span> <br/> |<span data-ttu-id="e2352-108">Keine</span><span class="sxs-lookup"><span data-stu-id="e2352-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="f79bf-109">Definition</span><span class="sxs-lookup"><span data-stu-id="f79bf-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="e2352-109">Definition</span><span class="sxs-lookup"><span data-stu-id="e2352-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="Issues_Type">
@@ -40,18 +40,18 @@ ms.locfileid: "19797255"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="f79bf-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="f79bf-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="e2352-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="e2352-110">Elements and attributes</span></span>
 
-<span data-ttu-id="f79bf-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="f79bf-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="e2352-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="e2352-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="f79bf-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="f79bf-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="e2352-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e2352-112">Child elements</span></span>
 
-|<span data-ttu-id="f79bf-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="f79bf-113">**Element**</span></span>|<span data-ttu-id="f79bf-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="f79bf-114">**Type**</span></span>|<span data-ttu-id="f79bf-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f79bf-115">**Description**</span></span>|
+|<span data-ttu-id="e2352-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="e2352-113">**Element**</span></span>|<span data-ttu-id="e2352-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="e2352-114">**Type**</span></span>|<span data-ttu-id="e2352-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e2352-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="f79bf-116">Problem</span><span class="sxs-lookup"><span data-stu-id="f79bf-116">Issue</span></span>](issue-element-issues_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="f79bf-117">Issue_Type</span><span class="sxs-lookup"><span data-stu-id="f79bf-117">Issue_Type</span></span>](issue_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="e2352-116">Problem</span><span class="sxs-lookup"><span data-stu-id="e2352-116">Issue</span></span>](issue-element-issues_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="e2352-117">Issue_Type</span><span class="sxs-lookup"><span data-stu-id="e2352-117">Issue_Type</span></span>](issue_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="f79bf-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="f79bf-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="e2352-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="e2352-118">Attributes</span></span>
 
-<span data-ttu-id="f79bf-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="f79bf-119">None.</span></span>
+<span data-ttu-id="e2352-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="e2352-119">None.</span></span>
   
 

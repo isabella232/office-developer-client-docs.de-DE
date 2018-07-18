@@ -13,17 +13,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798209"
 ---
-# <a name="stylesheetstype-complextype-visio-xml"></a><span data-ttu-id="70971-102">StyleSheets_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="70971-102">StyleSheets_Type complexType ('Visio XML')</span></span>
+# <a name="stylesheetstype-complextype-visio-xml"></a><span data-ttu-id="3a6f0-102">StyleSheets_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="3a6f0-102">StyleSheets_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="70971-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="70971-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="3a6f0-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="3a6f0-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="70971-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="70971-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="70971-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="70971-105">**Schema file**</span></span> <br/> |<span data-ttu-id="70971-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="70971-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="70971-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="70971-107">**Extension base**</span></span> <br/> |<span data-ttu-id="70971-108">Keine</span><span class="sxs-lookup"><span data-stu-id="70971-108">None</span></span>  <br/> |
+|<span data-ttu-id="3a6f0-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="3a6f0-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="3a6f0-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="3a6f0-105">**Schema file**</span></span> <br/> |<span data-ttu-id="3a6f0-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="3a6f0-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="3a6f0-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="3a6f0-107">**Extension base**</span></span> <br/> |<span data-ttu-id="3a6f0-108">Keine</span><span class="sxs-lookup"><span data-stu-id="3a6f0-108">None</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="70971-109">Definition</span><span class="sxs-lookup"><span data-stu-id="70971-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="3a6f0-109">Definition</span><span class="sxs-lookup"><span data-stu-id="3a6f0-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="StyleSheets_Type">
@@ -40,18 +40,18 @@ ms.locfileid: "19798209"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="70971-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="70971-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="3a6f0-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="3a6f0-110">Elements and attributes</span></span>
 
-<span data-ttu-id="70971-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="70971-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="3a6f0-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="3a6f0-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="70971-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="70971-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="3a6f0-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="3a6f0-112">Child elements</span></span>
 
-|<span data-ttu-id="70971-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="70971-113">**Element**</span></span>|<span data-ttu-id="70971-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="70971-114">**Type**</span></span>|<span data-ttu-id="70971-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="70971-115">**Description**</span></span>|
+|<span data-ttu-id="3a6f0-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="3a6f0-113">**Element**</span></span>|<span data-ttu-id="3a6f0-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="3a6f0-114">**Type**</span></span>|<span data-ttu-id="3a6f0-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="3a6f0-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="70971-116">StyleSheet</span><span class="sxs-lookup"><span data-stu-id="70971-116">StyleSheet</span></span>](stylesheet-element-stylesheets_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="70971-117">StyleSheet_Type</span><span class="sxs-lookup"><span data-stu-id="70971-117">StyleSheet_Type</span></span>](stylesheet_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="3a6f0-116">StyleSheet</span><span class="sxs-lookup"><span data-stu-id="3a6f0-116">StyleSheet</span></span>](stylesheet-element-stylesheets_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="3a6f0-117">StyleSheet_Type</span><span class="sxs-lookup"><span data-stu-id="3a6f0-117">StyleSheet_Type</span></span>](stylesheet_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="70971-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="70971-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="3a6f0-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="3a6f0-118">Attributes</span></span>
 
-<span data-ttu-id="70971-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="70971-119">None.</span></span>
+<span data-ttu-id="3a6f0-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="3a6f0-119">None.</span></span>
   
 

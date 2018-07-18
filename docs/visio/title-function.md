@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798281"
 ---
-# <a name="title-function"></a><span data-ttu-id="5100d-103">TITLE Function</span><span class="sxs-lookup"><span data-stu-id="5100d-103">TITLE Function</span></span>
+# <a name="title-function"></a><span data-ttu-id="6ab8a-103">TITLE Function</span><span class="sxs-lookup"><span data-stu-id="6ab8a-103">TITLE Function</span></span>
 
-<span data-ttu-id="5100d-104">Gibt den Text aus dem Feld **Titel** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="5100d-104">Returns the text from the **Title** field of a document's properties.</span></span> 
+<span data-ttu-id="6ab8a-104">Gibt den Text aus dem Feld **Titel** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="6ab8a-104">Returns the text from the **Title** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="5100d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="5100d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6ab8a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="6ab8a-105">Syntax</span></span>
 
-<span data-ttu-id="5100d-106">TITEL)</span><span class="sxs-lookup"><span data-stu-id="5100d-106">TITLE ()</span></span>
+<span data-ttu-id="6ab8a-106">TITEL)</span><span class="sxs-lookup"><span data-stu-id="6ab8a-106">TITLE ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="5100d-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5100d-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="6ab8a-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6ab8a-107">Return value</span></span>
 
-<span data-ttu-id="5100d-108">String</span><span class="sxs-lookup"><span data-stu-id="5100d-108">String</span></span>
+<span data-ttu-id="6ab8a-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6ab8a-108">String</span></span>
   
 

@@ -14,12 +14,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798260"
 ---
-# <a name="theme-properties-section"></a><span data-ttu-id="41a21-103">Theme Properties Section</span><span class="sxs-lookup"><span data-stu-id="41a21-103">Theme Properties Section</span></span>
+# <a name="theme-properties-section"></a><span data-ttu-id="5687a-103">Theme Properties Section</span><span class="sxs-lookup"><span data-stu-id="5687a-103">Theme Properties Section</span></span>
 
-<span data-ttu-id="41a21-104">Zeigt die Indexwerte des derzeit auf das Dokument, einschließlich Farbe, Schriftart, Connector und Effekte Werte angewendeten Designs.</span><span class="sxs-lookup"><span data-stu-id="41a21-104">Shows the index values of the theme currently applied to the document, including color, font, connector, and effects values.</span></span> 
+<span data-ttu-id="5687a-104">Zeigt die Indexwerte des derzeit auf das Dokument, einschließlich Farbe, Schriftart, Connector und Effekte Werte angewendeten Designs.</span><span class="sxs-lookup"><span data-stu-id="5687a-104">Shows the index values of the theme currently applied to the document, including color, font, connector, and effects values.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="41a21-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="41a21-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5687a-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5687a-105">Remarks</span></span>
 
-<span data-ttu-id="41a21-106">Sie können Designwerte auf der Registerkarte **Entwurf** oder durch Ändern in die Zellen in der ShapeSheet-Abschnitt **Design-Eigenschaften** festlegen.</span><span class="sxs-lookup"><span data-stu-id="41a21-106">You can set theme values on the **Design** tab or by making changes in the cells in the **Theme Properties** section of the ShapeSheet.</span></span> 
+<span data-ttu-id="5687a-106">Sie können Designwerte auf der Registerkarte **Entwurf** oder durch Ändern in die Zellen in der ShapeSheet-Abschnitt **Design-Eigenschaften** festlegen.</span><span class="sxs-lookup"><span data-stu-id="5687a-106">You can set theme values on the **Design** tab or by making changes in the cells in the **Theme Properties** section of the ShapeSheet.</span></span> 
   
 

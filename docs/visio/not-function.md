@@ -16,28 +16,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797550"
 ---
-# <a name="not-function"></a><span data-ttu-id="a9711-104">NOT Function</span><span class="sxs-lookup"><span data-stu-id="a9711-104">NOT Function</span></span>
+# <a name="not-function"></a><span data-ttu-id="583c4-104">NOT Function</span><span class="sxs-lookup"><span data-stu-id="583c4-104">NOT Function</span></span>
 
-<span data-ttu-id="a9711-105">Gibt TRUE (1) zurück, wenn _Logicalexpression_ auf false festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="a9711-105">Returns TRUE (1) if  _logicalexpression_ is FALSE.</span></span> <span data-ttu-id="a9711-106">Andernfalls wird FALSE (0) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a9711-106">Otherwise, it returns FALSE (0).</span></span> 
+<span data-ttu-id="583c4-105">Gibt TRUE (1) zurück, wenn _Logicalexpression_ auf false festgelegt ist.</span><span class="sxs-lookup"><span data-stu-id="583c4-105">Returns TRUE (1) if  _logicalexpression_ is FALSE.</span></span> <span data-ttu-id="583c4-106">Andernfalls wird FALSE (0) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="583c4-106">Otherwise, it returns FALSE (0).</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="a9711-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="a9711-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="583c4-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="583c4-107">Syntax</span></span>
 
-<span data-ttu-id="a9711-108">KEINE (** *Logicalexpression* **)</span><span class="sxs-lookup"><span data-stu-id="a9711-108">NOT(** *logicalexpression* ** )</span></span> 
+<span data-ttu-id="583c4-108">KEINE (** *Logicalexpression* **)</span><span class="sxs-lookup"><span data-stu-id="583c4-108">NOT(** *logicalexpression* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="a9711-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="a9711-109">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="583c4-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="583c4-109">Parameters</span></span>
 
-|<span data-ttu-id="a9711-110">**Name**</span><span class="sxs-lookup"><span data-stu-id="a9711-110">**Name**</span></span>|<span data-ttu-id="a9711-111">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="a9711-111">**Required/Optional**</span></span>|<span data-ttu-id="a9711-112">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="a9711-112">**Data Type**</span></span>|<span data-ttu-id="a9711-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="a9711-113">**Description**</span></span>|
+|<span data-ttu-id="583c4-110">**Name**</span><span class="sxs-lookup"><span data-stu-id="583c4-110">**Name**</span></span>|<span data-ttu-id="583c4-111">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="583c4-111">**Required/Optional**</span></span>|<span data-ttu-id="583c4-112">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="583c4-112">**Data Type**</span></span>|<span data-ttu-id="583c4-113">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="583c4-113">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="a9711-114">_logicalexpression_</span><span class="sxs-lookup"><span data-stu-id="a9711-114">_logicalexpression_</span></span> <br/> |<span data-ttu-id="a9711-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="a9711-115">Required</span></span>  <br/> |<span data-ttu-id="a9711-116">**String**</span><span class="sxs-lookup"><span data-stu-id="a9711-116">**String**</span></span> <br/> |<span data-ttu-id="a9711-117">Der logische Ausdruck, der ausgewertet werden soll.</span><span class="sxs-lookup"><span data-stu-id="a9711-117">The logical expression to evaluate.</span></span>  <br/> |
+| <span data-ttu-id="583c4-114">_logicalexpression_</span><span class="sxs-lookup"><span data-stu-id="583c4-114">_logicalexpression_</span></span> <br/> |<span data-ttu-id="583c4-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="583c4-115">Required</span></span>  <br/> |<span data-ttu-id="583c4-116">**String**</span><span class="sxs-lookup"><span data-stu-id="583c4-116">**String**</span></span> <br/> |<span data-ttu-id="583c4-117">Der logische Ausdruck, der ausgewertet werden soll.</span><span class="sxs-lookup"><span data-stu-id="583c4-117">The logical expression to evaluate.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="a9711-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a9711-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="583c4-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="583c4-118">Return value</span></span>
 
-<span data-ttu-id="a9711-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9711-119">Boolean</span></span>
+<span data-ttu-id="583c4-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="583c4-119">Boolean</span></span>
   
-## <a name="example"></a><span data-ttu-id="a9711-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a9711-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="583c4-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="583c4-120">Example</span></span>
 
-<span data-ttu-id="a9711-121">KEINE (Höhe \> 0,75 Zoll)</span><span class="sxs-lookup"><span data-stu-id="a9711-121">NOT(Height \> 0.75 in)</span></span> 
+<span data-ttu-id="583c4-121">KEINE (Höhe \> 0,75 Zoll)</span><span class="sxs-lookup"><span data-stu-id="583c4-121">NOT(Height \> 0.75 in)</span></span> 
   
-<span data-ttu-id="a9711-p103">Gibt 1 zurück, wenn Höhe kleiner als oder gleich 2 cm ist. Gibt 0 zurück, wenn Höhe größer als 2 cm ist.</span><span class="sxs-lookup"><span data-stu-id="a9711-p103">Returns 1 if Height is less than or equal to 0.75 inches. Returns 0 if Height is greater than 0.75 inches.</span></span> 
+<span data-ttu-id="583c4-p103">Gibt 1 zurück, wenn Höhe kleiner als oder gleich 2 cm ist. Gibt 0 zurück, wenn Höhe größer als 2 cm ist.</span><span class="sxs-lookup"><span data-stu-id="583c4-p103">Returns 1 if Height is less than or equal to 0.75 inches. Returns 0 if Height is greater than 0.75 inches.</span></span> 
   
 

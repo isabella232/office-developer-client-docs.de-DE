@@ -14,42 +14,43 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798179"
 ---
-# <a name="stencilgroup-element-windowtype-complextype-visio-xml"></a><span data-ttu-id="2f440-103">StencilGroup-Element (Window_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="2f440-103">StencilGroup element (Window_Type complexType) ('Visio XML')</span></span>
+# <a name="stencilgroup-element-windowtype-complextype-visio-xml"></a><span data-ttu-id="0dcc0-103">StencilGroup-Element (Window_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="0dcc0-103">StencilGroup element (Window_Type complexType) ('Visio XML')</span></span>
 
-<span data-ttu-id="2f440-104">Gibt die Gruppe der zusammengeführten Schablonenfenster, das Fenster Mitglied ist.</span><span class="sxs-lookup"><span data-stu-id="2f440-104">Specifies the group of merged stencil windows of which the window is a member.</span></span>
+<span data-ttu-id="0dcc0-104">Gibt die Gruppe der zusammengeführten Schablonenfenster, das Fenster Mitglied ist.</span><span class="sxs-lookup"><span data-stu-id="0dcc0-104">Specifies the group of merged stencil windows of which the window is a member.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="2f440-105">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="2f440-105">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="0dcc0-105">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="0dcc0-105">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="2f440-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="2f440-106">**Element type**</span></span> <br/> |[<span data-ttu-id="2f440-107">StencilGroup_Type</span><span class="sxs-lookup"><span data-stu-id="2f440-107">StencilGroup_Type</span></span>](stencilgroup_type-complextypevisio-xml.md) <br/> |
-|<span data-ttu-id="2f440-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="2f440-108">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|<span data-ttu-id="2f440-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="2f440-109">**Schema file**</span></span> <br/> |<span data-ttu-id="2f440-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="2f440-110">VisioSchema15.xsd</span></span>  <br/> |
-|<span data-ttu-id="2f440-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="2f440-111">**Document parts**</span></span> <br/> |<span data-ttu-id="2f440-112">Windows.Xml</span><span class="sxs-lookup"><span data-stu-id="2f440-112">windows.xml</span></span>  <br/> |
+|<span data-ttu-id="0dcc0-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-106">**Element type**</span></span> <br/> |[<span data-ttu-id="0dcc0-107">StencilGroup_Type</span><span class="sxs-lookup"><span data-stu-id="0dcc0-107">StencilGroup_Type</span></span>](stencilgroup_type-complextypevisio-xml.md) <br/> |
+|<span data-ttu-id="0dcc0-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-108">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|<span data-ttu-id="0dcc0-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-109">**Schema file**</span></span> <br/> |<span data-ttu-id="0dcc0-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="0dcc0-110">VisioSchema15.xsd</span></span>  <br/> |
+|<span data-ttu-id="0dcc0-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-111">**Document parts**</span></span> <br/> |<span data-ttu-id="0dcc0-112">Windows.Xml</span><span class="sxs-lookup"><span data-stu-id="0dcc0-112">windows.xml</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="2f440-113">Definition</span><span class="sxs-lookup"><span data-stu-id="2f440-113">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="0dcc0-113">Definition</span><span class="sxs-lookup"><span data-stu-id="0dcc0-113">Definition</span></span>
 
 ```XML
 < xs:element name="StencilGroup" type="StencilGroup_Type" minOccurs="0" maxOccurs="1" >
 </xs:element >
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="2f440-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="2f440-114">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="0dcc0-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="0dcc0-114">Elements and attributes</span></span>
 
-<span data-ttu-id="2f440-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="2f440-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="0dcc0-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="0dcc0-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="2f440-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2f440-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="0dcc0-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0dcc0-116">Parent elements</span></span>
 
-|<span data-ttu-id="2f440-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="2f440-117">**Element**</span></span>|<span data-ttu-id="2f440-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="2f440-118">**Type**</span></span>|<span data-ttu-id="2f440-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="2f440-119">**Description**</span></span>|
+|<span data-ttu-id="0dcc0-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-117">**Element**</span></span>|<span data-ttu-id="0dcc0-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-118">**Type**</span></span>|<span data-ttu-id="0dcc0-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0dcc0-119">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="2f440-120">Window</span><span class="sxs-lookup"><span data-stu-id="2f440-120">Window</span></span>](window-element-windows_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="2f440-121">Window_Type</span><span class="sxs-lookup"><span data-stu-id="2f440-121">Window_Type</span></span>](window_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="2f440-122">Repräsentiert ein geöffnetes Fenster in einer Microsoft Visio-Instanz.</span><span class="sxs-lookup"><span data-stu-id="2f440-122">Represents an open window in a Microsoft Visio instance.</span></span>  <br/> |
+|[<span data-ttu-id="0dcc0-120">Window</span><span class="sxs-lookup"><span data-stu-id="0dcc0-120">Window</span></span>](window-element-windows_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="0dcc0-121">Window_Type</span><span class="sxs-lookup"><span data-stu-id="0dcc0-121">Window_Type</span></span>](window_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="0dcc0-122">Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
+</span><span class="sxs-lookup"><span data-stu-id="0dcc0-122">Represents an open window in a Microsoft Visio instance.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="2f440-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="2f440-123">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="0dcc0-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="0dcc0-123">Child elements</span></span>
 
-<span data-ttu-id="2f440-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="2f440-124">None.</span></span>
+<span data-ttu-id="0dcc0-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="0dcc0-124">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="2f440-125">Attribute</span><span class="sxs-lookup"><span data-stu-id="2f440-125">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="0dcc0-125">Attribute</span><span class="sxs-lookup"><span data-stu-id="0dcc0-125">Attributes</span></span>
 
-<span data-ttu-id="2f440-126">Keine.</span><span class="sxs-lookup"><span data-stu-id="2f440-126">None.</span></span>
+<span data-ttu-id="0dcc0-126">Keine.</span><span class="sxs-lookup"><span data-stu-id="0dcc0-126">None.</span></span>
   
 

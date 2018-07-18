@@ -16,32 +16,34 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798227"
 ---
-# <a name="tanh-function"></a><span data-ttu-id="9d05d-103">TANH Function</span><span class="sxs-lookup"><span data-stu-id="9d05d-103">TANH Function</span></span>
+# <a name="tanh-function"></a><span data-ttu-id="40189-103">TANHYP-Funktion</span><span class="sxs-lookup"><span data-stu-id="40189-103">TANH Function</span></span>
 
-<span data-ttu-id="9d05d-104">Gibt den hyperbolischen Tangens eines Winkels zurück.</span><span class="sxs-lookup"><span data-stu-id="9d05d-104">Returns the hyperbolic tangent of an angle.</span></span> 
+<span data-ttu-id="40189-104">Gibt den hyperbolischen Tangens eines Winkels zurück.
+    
+</span><span class="sxs-lookup"><span data-stu-id="40189-104">Returns the hyperbolic tangent of an angle.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="9d05d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="9d05d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="40189-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="40189-105">Syntax</span></span>
 
-<span data-ttu-id="9d05d-106">TANH (** *Winkel* **)</span><span class="sxs-lookup"><span data-stu-id="9d05d-106">TANH(** *angle* ** )</span></span> 
+<span data-ttu-id="40189-106">TANH (** *Winkel* **)</span><span class="sxs-lookup"><span data-stu-id="40189-106">TANH(** *angle* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="9d05d-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d05d-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="40189-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="40189-107">Parameters</span></span>
 
-|<span data-ttu-id="9d05d-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="9d05d-108">**Name**</span></span>|<span data-ttu-id="9d05d-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="9d05d-109">**Required/Optional**</span></span>|<span data-ttu-id="9d05d-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="9d05d-110">**Data Type**</span></span>|<span data-ttu-id="9d05d-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9d05d-111">**Description**</span></span>|
+|<span data-ttu-id="40189-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="40189-108">**Name**</span></span>|<span data-ttu-id="40189-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="40189-109">**Required/Optional**</span></span>|<span data-ttu-id="40189-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="40189-110">**Data Type**</span></span>|<span data-ttu-id="40189-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="40189-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="9d05d-112">_Winkel_</span><span class="sxs-lookup"><span data-stu-id="9d05d-112">_angle_</span></span> <br/> |<span data-ttu-id="9d05d-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9d05d-113">Required</span></span>  <br/> |<span data-ttu-id="9d05d-114">**Numerische**</span><span class="sxs-lookup"><span data-stu-id="9d05d-114">**Numeric**</span></span> <br/> |<span data-ttu-id="9d05d-115">Der Winkel, dessen hyperbolischer Tangens abgerufen werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d05d-115">The angle of which to get the hypbolic tangent.</span></span>  <br/> |
+| <span data-ttu-id="40189-112">_Winkel_</span><span class="sxs-lookup"><span data-stu-id="40189-112">_angle_</span></span> <br/> |<span data-ttu-id="40189-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="40189-113">Required</span></span>  <br/> |<span data-ttu-id="40189-114">**Numerisch**</span><span class="sxs-lookup"><span data-stu-id="40189-114">**Numeric**</span></span> <br/> |<span data-ttu-id="40189-115">Der Winkel, dessen hyperbolischer Tangens abgerufen werden soll.</span><span class="sxs-lookup"><span data-stu-id="40189-115">The angle of which to get the hypbolic tangent.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="9d05d-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9d05d-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="40189-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="40189-116">Return value</span></span>
 
-<span data-ttu-id="9d05d-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="9d05d-117">Numeric</span></span>
+<span data-ttu-id="40189-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="40189-117">Numeric</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="9d05d-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9d05d-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="40189-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="40189-118">Remarks</span></span>
 
-<span data-ttu-id="9d05d-119">Die TANH-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in *Winkel* angeben.</span><span class="sxs-lookup"><span data-stu-id="9d05d-119">The TANH function uses radians unless you specify a different unit of measure in  *angle*  .</span></span> 
+<span data-ttu-id="40189-119">Die TANH-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in *Winkel* angeben.</span><span class="sxs-lookup"><span data-stu-id="40189-119">The TANH function uses radians unless you specify a different unit of measure in  *angle*  .</span></span> 
   
-## <a name="example"></a><span data-ttu-id="9d05d-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9d05d-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="40189-120">Beispiel</span><span class="sxs-lookup"><span data-stu-id="40189-120">Example</span></span>
 
-<span data-ttu-id="9d05d-121">TANH(45)</span><span class="sxs-lookup"><span data-stu-id="9d05d-121">TANH(-45)</span></span> 
+<span data-ttu-id="40189-121">TANH(45)</span><span class="sxs-lookup"><span data-stu-id="40189-121">TANH(-45)</span></span> 
   
-<span data-ttu-id="9d05d-122">Gibt -0,6558 zurück.</span><span class="sxs-lookup"><span data-stu-id="9d05d-122">Returns -0.6558.</span></span> 
+<span data-ttu-id="40189-122">Gibt -0,6558 zurück.</span><span class="sxs-lookup"><span data-stu-id="40189-122">Returns -0.6558.</span></span> 
   
 
