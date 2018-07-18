@@ -121,7 +121,7 @@ In der folgenden API-Dokumentation:
     
 - Zusammenfassung der IUpdateNotify2-Schnittstelle ist nun enthalten.
     
-### <a name="apply"></a>Anwenden
+### <a name="apply"></a>Apply
 
 ```cpp
 HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
@@ -146,7 +146,7 @@ HRESULT Apply([in] LPWSTR pcwszParameters) // Apply update content.
 
 <a name="bk_ApplyRemark"></a>
 
-#### <a name="remarks"></a>Hinweise
+#### <a name="remarks"></a>Bemerkungen
 
 - Wenn eine beliebige Office-Anwendung ausgeführt wird, wenn die Aktion **Übernehmen** ausgelöst wird, wird die Aktion **Übernehmen** fehl. Übergeben von `forceappshutdown=true` für die **Apply** Methode bewirkt, dass den Dienst **OfficeClickToRun** sofort alle Office-Clientanwendungen Herunterfahren, die ausgeführt werden, und wenden Sie das Update. Der Benutzer kann Daten auftreten, wenn sie nicht, zum Speichern von Änderungen zum Öffnen von Dokumenten aufgefordert werden. 
     
@@ -181,7 +181,7 @@ HRESULT Cancel() // Cancel the download action.
 
 <a name="bk_CancelRemarks"></a>
 
-#### <a name="remarks"></a>Hinweise
+#### <a name="remarks"></a>Bemerkungen
 
 - Diese Methode kann nur dann ausgelöst, wenn die COM-Status Id **eDOWNLOAD_WIP**. Es wird versucht, die aktuelle Downloadaktion Abbrechen. Der COM-Status wird ändern, **eDOWNLOAD_CANCELLING** und schließlich auf **eDOWNLOAD_CANCELED**. Der COM-Status wird **E_ILLEGAL_METHOD_CALL** zurück, wenn Sie zu einem anderen Zeitpunkt ausgelöst. 
     
@@ -214,7 +214,7 @@ HRESULT Download([in] LPWSTR pcwszParameters) // Download update content.
 
 <a name="bk_DownloadRemark"></a>
 
-#### <a name="remarks"></a>Hinweise
+#### <a name="remarks"></a>Bemerkungen
 
 - Sie müssen als ein Paar _Downloadsource_ und _Contentid_ angeben. Wenn dies nicht der Fall ist, wird die **Download** -Methode wird ein **E_INVALIDARG** -Fehler zurückgegeben. 
     
@@ -276,7 +276,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 |:-----|:-----|
 |**S_OK** <br/> |Die **Status** -Methode gibt immer dieses Ergebnis zurück. Überprüfen Sie die `UPDATE_STATUS_RESULT` Struktur für den Status der aktuellen Aktion.  <br/> |
    
-#### <a name="remarks"></a>Hinweise
+#### <a name="remarks"></a>Bemerkungen
 
 - Im Statusfeld der `UPDATE_STATUS_REPORT` enthält den Status der aktuellen Aktion. Die folgenden Status-Werte zurückgegeben: 
     

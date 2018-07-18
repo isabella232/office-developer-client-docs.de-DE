@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHobbies-Eigenschaft
+title: PidTagHobbies (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794433"
 ---
-# <a name="pidtaghobbies-canonical-property"></a>Kanonische PidTagHobbies-Eigenschaft
+# <a name="pidtaghobbies-canonical-property"></a>PidTagHobbies (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Namen der Hobbys der messaging-Benutzer.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften geben Sie Kennung und Zugriff auf Informationen über ein messaging-Benutzer, und der Inhalt wird von der Organisation des Benutzers definiert. 
   

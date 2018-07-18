@@ -1,5 +1,5 @@
 ---
-title: Arten von Tabellen
+title: Tabellentypen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795768"
 ---
-# <a name="types-of-tables"></a>Arten von Tabellen
+# <a name="types-of-tables"></a>Tabellentypen
 
   
   
@@ -44,7 +44,7 @@ Die MAPI-Tabellen und ihre Implementierer und Benutzer sind:
 |Profil  <br/> |Von MAPI implementiert. Wird von Clients verwendet.  <br/> |
 |Provider  <br/> |Von MAPI implementiert. Wird von Clients verwendet.  <br/> |
 |Ordner empfangen  <br/> |Nachricht Zeichenfolgeneigenschaften implementiert. Wird von Clients verwendet.  <br/> |
-|Recipient  <br/> |Nachricht Zeichenfolgeneigenschaften implementiert. Wird von Clients und Transportanbieter verwendet.  <br/> |
+|Empfänger  <br/> |Nachricht Zeichenfolgeneigenschaften implementiert. Wird von Clients und Transportanbieter verwendet.  <br/> |
 |Status  <br/> |Von MAPI implementierte und Dienstanbieter. Wird von Clients verwendet.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch

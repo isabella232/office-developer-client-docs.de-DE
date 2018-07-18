@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginallyIntendedRecipEmailAddress-Eigenschaft
+title: PidTagOriginallyIntendedRecipEmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794691"
 ---
-# <a name="pidtagoriginallyintendedrecipemailaddress-canonical-property"></a>Kanonische PidTagOriginallyIntendedRecipEmailAddress-Eigenschaft
+# <a name="pidtagoriginallyintendedrecipemailaddress-canonical-property"></a>PidTagOriginallyIntendedRecipEmailAddress (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die e-Mail-Adresse des ursprünglich beabsichtigten Empfänger einer Na
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für der ursprünglich beabsichtigten Empfänger. Sie müssen vom automatische Agent festgelegt werden, die die Nachricht weitergeleitet hat.
   

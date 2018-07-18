@@ -1,5 +1,5 @@
 ---
-title: Starten von einem Dienstanbieter
+title: Starten eines Dienstanbieters
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795628"
 ---
-# <a name="starting-a-service-provider"></a>Starten von einem Dienstanbieter
+# <a name="starting-a-service-provider"></a>Starten eines Dienstanbieters
 
  
   

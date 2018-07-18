@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBirthday-Eigenschaft
+title: PidTagBirthday (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794139"
 ---
-# <a name="pidtagbirthday-canonical-property"></a>Kanonische PidTagBirthday-Eigenschaft
+# <a name="pidtagbirthday-canonical-property"></a>PidTagBirthday (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Birthday des Kontakts an.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Kontakt zur Verfügung stehen. Diese Eigenschaften werden durch den Benutzer und die Organisation des Benutzers definiert. 
   

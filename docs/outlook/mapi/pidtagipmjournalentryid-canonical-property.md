@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmJournalEntryId-Eigenschaft
+title: PidTagIpmJournalEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794524"
 ---
-# <a name="pidtagipmjournalentryid-canonical-property"></a>Kanonische PidTagIpmJournalEntryId-Eigenschaft
+# <a name="pidtagipmjournalentryid-canonical-property"></a>PidTagIpmJournalEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook Journal enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor: 
   

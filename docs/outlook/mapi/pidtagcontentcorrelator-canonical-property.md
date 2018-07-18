@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContentCorrelator-Eigenschaft
+title: PidTagContentCorrelator (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794224"
 ---
-# <a name="pidtagcontentcorrelator-canonical-property"></a>Kanonische PidTagContentCorrelator-Eigenschaft
+# <a name="pidtagcontentcorrelator-canonical-property"></a>PidTagContentCorrelator (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, den Absender der Nachricht verwenden kann, um einen Bericht
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Inhalt von binären Zeichenfolgen werden durch den Absender der Nachricht definiert. Wenn Sie auf eine ausgehende Nachricht, diese Eigenschaft auf Berichte, die als Antwort auf die Nachricht generiert kopiert werden sollen.
   

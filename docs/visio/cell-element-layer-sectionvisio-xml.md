@@ -42,7 +42,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element (Abschnitt "Layer")](row-element-layer-sectionvisio-xml.md) <br/> |[LayerRow_Type](layerrow_type-complextypevisio-xml.md) <br/> |Gibt eine Eigenschaft für eine Ebene oder seine Eigenschaften für eine Seite.  <br/> |
+|[Zeilenelement (Ebenenabschnitt)](row-element-layer-sectionvisio-xml.md) <br/> |[LayerRow_Type](layerrow_type-complextypevisio-xml.md) <br/> |Gibt eine Eigenschaft für eine Ebene oder seine Eigenschaften für eine Seite.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -70,7 +70,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |Farbe  <br/> |Gibt eine der folgenden: der Index der Farbe in der Tabelle verwendet, um die Ebene oder einen RGB-Wert festlegen einer benutzerdefinierten Farbe nicht in der Tabelle anzuzeigen.  <br/> |Keine.  <br/> |
 |ColorTrans  <br/> |Bestimmt den Grad der Transparenz für eine Ebene oder Textfarbe Shapes im Bereich von 0 (vollständig undurchsichtig) und 1 (vollständig transparent).  <br/> |Keine.  <br/> |
 |Kleber  <br/> |Gibt an, ob auf dem Layer zugehörigen Shapes geklebt werden können.  <br/> |Keine.  <br/> |
-|Sperren  <br/> |Gibt an, ob die dem Layer zugehörigen Shapes gesperrt sind, damit sie nicht ausgewählt oder bearbeitet werden können.  <br/> |Keine.  <br/> |
+|Lock  <br/> |Gibt an, ob die dem Layer zugehörigen Shapes gesperrt sind, damit sie nicht ausgewählt oder bearbeitet werden können.  <br/> |Keine.  <br/> |
 |Name  <br/> |Der Name einer Ebene.  <br/> |Keine.  <br/> |
 |NameUniv  <br/> |Gibt den universellen Namen einer Ebene.  <br/> |Keine.  <br/> |
 |Drucken  <br/> |Gibt an, ob dem Layer zugehörigen Shapes gedruckt werden, wenn die Zeichnung gedruckt wird.  <br/> |Keine.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagGender-Eigenschaft
+title: PidTagGender (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794431"
 ---
-# <a name="pidtaggender-canonical-property"></a>Kanonische PidTagGender-Eigenschaft
+# <a name="pidtaggender-canonical-property"></a>PidTagGender (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Das Geschlecht der messaging-Benutzer enthält.
 |Datentyp:  <br/> |PT_I2  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft bietet Identifikations- und Zugriff auf Informationen über ein messaging-Benutzer und der Inhalt ist. Der Inhalt wird durch die messaging-Benutzer und Organisation messaging-Benutzer definiert. 
   

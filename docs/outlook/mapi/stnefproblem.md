@@ -42,7 +42,7 @@ typedef struct _STnefProblem
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulComponent**
   
@@ -68,7 +68,7 @@ typedef struct _STnefProblem
   
 > Fehler-Wert zurück, der das Problem aufgetreten ist, während der Verarbeitung angibt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn eine Struktur **STnefProblem** während der Verarbeitung eines Attribut oder Eigenschaft nicht generiert wird, kann die Anwendung unter der Annahme fortgesetzt, die die Verarbeitung dieses Attribut oder Eigenschaft erfolgreich waren. Die einzige Ausnahme tritt auf, wenn das Problem aufgetreten ist, während der Decodierung eines Blocks Kapselung. In diesem Fall die Decodierung der die entsprechende Komponente für den Block wird angehalten und der Decodierung in einer anderen Komponente fortgesetzt wird. 
   
@@ -78,7 +78,7 @@ Wenn eine Struktur **STnefProblem** während der Verarbeitung eines Attribut ode
 
 [STnefProblemArray](stnefproblemarray.md)
   
-[Kanonische PidTagAttachNumber-Eigenschaft](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

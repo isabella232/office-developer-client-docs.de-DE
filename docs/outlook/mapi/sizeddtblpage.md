@@ -48,7 +48,7 @@ _u_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **SizedDtblPage** können Sie eine mit Registerkarten-Seitensteuerelement zu definieren, wenn die Anzahl der Zeichen in der zugeordneten Label und Hilfe Protokolldateieintrag bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
   

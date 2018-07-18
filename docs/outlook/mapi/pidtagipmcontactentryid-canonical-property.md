@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmContactEntryId-Eigenschaft
+title: PidTagIpmContactEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794513"
 ---
-# <a name="pidtagipmcontactentryid-canonical-property"></a>Kanonische PidTagIpmContactEntryId-Eigenschaft
+# <a name="pidtagipmcontactentryid-canonical-property"></a>PidTagIpmContactEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die **EntryID** des Outlook-Kontakteordner enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor: 
   

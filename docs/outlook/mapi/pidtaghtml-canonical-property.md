@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHtml-Eigenschaft
+title: PidTagHtml (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794453"
 ---
-# <a name="pidtaghtml-canonical-property"></a>Kanonische PidTagHtml-Eigenschaft
+# <a name="pidtaghtml-canonical-property"></a>PidTagHtml (kanonische Eigenschaft)
 
   
   

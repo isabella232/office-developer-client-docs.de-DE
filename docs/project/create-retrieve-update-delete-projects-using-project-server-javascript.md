@@ -351,7 +351,7 @@ Fügen Sie den folgenden Code zwischen den **Script** -Tags, die Sie im Verfahre
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Projekt Programmieraufgaben](project-programming-tasks.md)
-- [Client-seitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
+- [Project-Programmieraufgaben](project-programming-tasks.md)
+- [Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
     
 

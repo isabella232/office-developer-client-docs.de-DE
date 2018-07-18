@@ -40,7 +40,7 @@ typedef struct _SDoubleArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SDoubleArray
   
 > Zeiger auf ein Array von double-Werte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu PT_MV_DOUBLE finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
   

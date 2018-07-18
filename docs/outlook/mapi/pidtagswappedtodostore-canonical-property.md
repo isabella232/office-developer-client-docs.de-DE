@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSwappedToDoStore-Eigenschaft
+title: PidTagSwappedToDoStore (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795275"
 ---
-# <a name="pidtagswappedtodostore-canonical-property"></a>Kanonische PidTagSwappedToDoStore-Eigenschaft
+# <a name="pidtagswappedtodostore-canonical-property"></a>PidTagSwappedToDoStore (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Bestimmt die Notwendigkeit für die Verarbeitung einer e-Mail nach dem übertrag
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft auf den Entwurf einer Nachricht festgelegt ist, muss der Wert auf den Wert der **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md))-Eigenschaft der Nachricht festgelegt werden.
   

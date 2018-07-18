@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDisplayCc-Eigenschaft
+title: PidTagDisplayCc (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794324"
 ---
-# <a name="pidtagdisplaycc-canonical-property"></a>Kanonische PidTagDisplayCc-Eigenschaft
+# <a name="pidtagdisplaycc-canonical-property"></a>PidTagDisplayCc (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste ASCII, der den Anzeigenamen der alle Carbon Copy, Kopie (CC)
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Nachrichtenspeicher berechnet diese Eigenschaften für Nachrichtenobjekte, die mit der [IMessage::ModifyRecipients](imessage-modifyrecipients.md) -Methode. Der Nachrichtenspeicher verwaltet auch diese Eigenschaften, sodass es immer den letzten gespeicherten Zustand einer Nachricht widerspiegelt. Der Wert wird zum Zeitpunkt der jedem Aufruf von [IMAPIProp::SaveChanges](imapiprop-savechanges.md)synchronisiert. 
   

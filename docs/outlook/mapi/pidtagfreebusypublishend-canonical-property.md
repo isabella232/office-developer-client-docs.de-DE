@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFreeBusyPublishEnd-Eigenschaft
+title: PidTagFreeBusyPublishEnd (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794409"
 ---
-# <a name="pidtagfreebusypublishend-canonical-property"></a>Kanonische PidTagFreeBusyPublishEnd-Eigenschaft
+# <a name="pidtagfreebusypublishend-canonical-property"></a>PidTagFreeBusyPublishEnd (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Endzeit des publishing Bereichs enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert für diese Eigenschaft wird auf den Anfangstermin des publishing Bereichs durch Hinzufügen des Werts der **PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) berechnet. Dieser Wert wird als die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC) ausgedrückt.
   

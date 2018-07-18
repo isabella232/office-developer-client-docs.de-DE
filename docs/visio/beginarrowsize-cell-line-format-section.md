@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796419"
 ---
-# <a name="beginarrowsize-cell-line-format-section"></a>Zelle "BeginArrowSize" (Abschnitt "Line Format")
+# <a name="beginarrowsize-cell-line-format-section"></a>BeginArrowSize Cell (Line Format Section)
 
 Bestimmt die Pfeilspitzengröße am Linienanfang.
   
@@ -30,17 +30,17 @@ Bestimmt die Pfeilspitzengröße am Linienanfang.
 | 5  <br/> | Jumbo  <br/> |**visArrowSizeJumbo** <br/> |
 | 6  <br/> | Kolossal  <br/> |**visArrowSizeColossal** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können die Pfeilspitzengröße auch im Dialogfeld **Linie** festlegen. 
   
-Wenn Sie einen Verweis auf die Zelle BeginArrowSize nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle BeginArrowSize aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | BeginArrowSize  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BeginArrowSize aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle BeginArrowSize aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

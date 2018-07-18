@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachMimeSequence-Eigenschaft
+title: PidTagAttachMimeSequence (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794131"
 ---
-# <a name="pidtagattachmimesequence-canonical-property"></a>Kanonische PidTagAttachMimeSequence-Eigenschaft
+# <a name="pidtagattachmimesequence-canonical-property"></a>PidTagAttachMimeSequence (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die MIME-Sequenznummer des MIME-Nachrichtenanlage enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Anlage Nachrichteneigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird verwendet, für die MHTML-Unterstützung. Es stellt die Sequenznummer der Anlage innerhalb des übergeordneten MIME multipart Textteil der MIME-Nachricht.
   

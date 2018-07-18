@@ -1,5 +1,5 @@
 ---
-title: Was das CSOM ist und nicht zu
+title: Was das CSOM durchführen kann und was nicht
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796316"
 ---
-# <a name="what-the-csom-does-and-does-not-do"></a>Was das CSOM ist und nicht zu
+# <a name="what-the-csom-does-and-does-not-do"></a>Was das CSOM durchführen kann und was nicht
 
 Das Client-seitigen Objektmodell (CSOM) ist ein Satz von APIs für Project Server 2013, die für beide entworfen wurden, online und lokalen verwenden in apps, die für PCs, Tablets und mobilen Geräten entwickelt werden können. Dieser Artikel enthält einige Standardszenarien für die Verwendung des CSOM und führt außerdem Einschränkungen des CSOM.
   
@@ -117,7 +117,7 @@ Zum Erfassen der Datenteils in eine CSOM-Anforderung über HTTP oder HTTPS, kön
 
 - [Client-seitigen Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md)
     
-- [Was die PSI enthält und nicht zu](what-the-psi-does-and-does-not-do.md)
+- [Was die PSI durchführen kann und was nicht](what-the-psi-does-and-does-not-do.md)
     
 - [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx)
     

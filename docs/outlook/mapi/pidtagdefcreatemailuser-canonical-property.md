@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDefCreateMailuser-Eigenschaft
+title: PidTagDefCreateMailuser (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794290"
 ---
-# <a name="pidtagdefcreatemailuser-canonical-property"></a>Kanonische PidTagDefCreateMailuser-Eigenschaft
+# <a name="pidtagdefcreatemailuser-canonical-property"></a>PidTagDefCreateMailuser (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Vorlage Eintrags-ID für eine standardmäßige messaging User-Objekt enthäl
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clientanwendungen mit dieser Eigenschaft können Sie um ein messaging User-Objekt in einem Container zu erstellen. Unterstützung von Eintrag Creation ist optional für Address Book Container. die, die nicht unterstützen sind nicht erforderlich, diese Eigenschaft verfügbar machen. 
   

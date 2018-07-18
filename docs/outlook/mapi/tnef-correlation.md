@@ -1,5 +1,5 @@
 ---
-title: TNEF Korrelation
+title: TNEF-Korrelation
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795737"
 ---
-# <a name="tnef-correlation"></a>TNEF Korrelation
+# <a name="tnef-correlation"></a>TNEF-Korrelation
 
  
   

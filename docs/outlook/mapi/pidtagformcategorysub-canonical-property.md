@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormCategorySub-Eigenschaft
+title: PidTagFormCategorySub (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794402"
 ---
-# <a name="pidtagformcategorysub-canonical-property"></a>Kanonische PidTagFormCategorySub-Eigenschaft
+# <a name="pidtagformcategorysub-canonical-property"></a>PidTagFormCategorySub (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Unterkategorie eines Formulars, gemäß von einer Clientanwendung.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind untergeordnet Hauptformular Kategorie, die in der Eigenschaft **PR_FORM_CATEGORY** ([PidTagFormCategory](pidtagformcategory-canonical-property.md)) bereitgestellt wird. 
   

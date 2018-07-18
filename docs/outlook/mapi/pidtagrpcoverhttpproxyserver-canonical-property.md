@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRpcOverHttpProxyServer-Eigenschaft
+title: PidTagRpcOverHttpProxyServer (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795027"
 ---
-# <a name="pidtagrpcoverhttpproxyserver-canonical-property"></a>Kanonische PidTagRpcOverHttpProxyServer-Eigenschaft
+# <a name="pidtagrpcoverhttpproxyserver-canonical-property"></a>PidTagRpcOverHttpProxyServer (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachFlags-Eigenschaft
+title: PidTagAttachFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794090"
 ---
-# <a name="pidtagattachflags-canonical-property"></a>Kanonische PidTagAttachFlags-Eigenschaft
+# <a name="pidtagattachflags-canonical-property"></a>PidTagAttachFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Eine Bitmaske aus Flags für eine Anlage enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird verwendet, für die MHTML-Unterstützung. 
   

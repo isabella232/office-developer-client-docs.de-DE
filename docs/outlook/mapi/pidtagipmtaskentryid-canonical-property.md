@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmTaskEntryId-Eigenschaft
+title: PidTagIpmTaskEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794535"
 ---
-# <a name="pidtagipmtaskentryid-canonical-property"></a>Kanonische PidTagIpmTaskEntryId-Eigenschaft
+# <a name="pidtagipmtaskentryid-canonical-property"></a>PidTagIpmTaskEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook-Aufgaben enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft lesen oder mithilfe des Protokolls-Eigenschaft und Stream-Objekt geschrieben. Es ist lesen und Schreiben in den Ordner Posteingang oder Root. Die Implementierung muss den Ordner Posteingang verwenden, wenn der Informationsspeicher, die von der primären messaging-Benutzer ist und den Stammordner verwendet werden muss, wenn der Informationsspeicher, ein Stellvertreter ist.
   

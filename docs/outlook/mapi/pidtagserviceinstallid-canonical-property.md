@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServiceInstallId-Eigenschaft
+title: PidTagServiceInstallId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795172"
 ---
-# <a name="pidtagserviceinstallid-canonical-property"></a>Kanonische PidTagServiceInstallId-Eigenschaft
+# <a name="pidtagserviceinstallid-canonical-property"></a>PidTagServiceInstallId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Komponenten-ID des Anbieters.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften können als Komponentenparameter eines Aufrufs **MsiProvideQualifiedComponent** So installieren Sie den Provider verwendet werden. 
   

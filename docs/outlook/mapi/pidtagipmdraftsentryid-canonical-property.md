@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmDraftsEntryId-Eigenschaft
+title: PidTagIpmDraftsEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794517"
 ---
-# <a name="pidtagipmdraftsentryid-canonical-property"></a>Kanonische PidTagIpmDraftsEntryId-Eigenschaft
+# <a name="pidtagipmdraftsentryid-canonical-property"></a>PidTagIpmDraftsEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook Entwürfe enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor: 
   

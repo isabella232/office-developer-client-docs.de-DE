@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRemoteProgress-Eigenschaft
+title: PidTagRemoteProgress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794939"
 ---
-# <a name="pidtagremoteprogress-canonical-property"></a>Kanonische PidTagRemoteProgress-Eigenschaft
+# <a name="pidtagremoteprogress-canonical-property"></a>PidTagRemoteProgress (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält eine Zahl, die den Status einer remote Übertragungst
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie keine Übertragung ausgeführt wird, sollten diese Eigenschaft auf 1 festgelegt. Wenn eine Übertragung ausgeführt wird, sollte es auf einen anderen Wert zwischen 0 und 100, der angibt, die Übertragung Prozent der Fertigstellung festgelegt werden.
   

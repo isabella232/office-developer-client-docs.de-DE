@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNonDeliveryReportDiagCode-Eigenschaft
+title: PidTagNonDeliveryReportDiagCode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794632"
 ---
-# <a name="pidtagnondeliveryreportdiagcode-canonical-property"></a>Kanonische PidTagNonDeliveryReportDiagCode-Eigenschaft
+# <a name="pidtagnondeliveryreportdiagcode-canonical-property"></a>PidTagNonDeliveryReportDiagCode (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen diagnostic Code, der Teil einer Unzustellbarkeitsbericht bildet.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   
@@ -246,7 +246,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagNonDeliveryReportReasonCode-Eigenschaft](pidtagnondeliveryreportreasoncode-canonical-property.md)
+[PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)](pidtagnondeliveryreportreasoncode-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSubmitTime-Eigenschaft
+title: PidTagOriginalSubmitTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794723"
 ---
-# <a name="pidtagoriginalsubmittime-canonical-property"></a>Kanonische PidTagOriginalSubmitTime-Eigenschaft
+# <a name="pidtagoriginalsubmittime-canonical-property"></a>PidTagOriginalSubmitTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die ursprünglichen Übermittlung-Datum und Uhrzeit der Nachricht in den Bericht
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Am ersten Übermittlung einer Nachricht sollte eine Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) festgelegt. Er wird nicht geändert, wenn die Nachricht weitergeleitet wird. In nur-Berichten wird verwendet.
   

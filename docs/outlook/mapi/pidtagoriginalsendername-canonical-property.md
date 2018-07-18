@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSenderName-Eigenschaft
+title: PidTagOriginalSenderName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794706"
 ---
-# <a name="pidtagoriginalsendername-canonical-property"></a>Kanonische PidTagOriginalSenderName-Eigenschaft
+# <a name="pidtagoriginalsendername-canonical-property"></a>PidTagOriginalSenderName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen des Absenders der ersten Version einer Nachricht, d. h
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den ursprünglichen Absender einer Nachricht. Am ersten Übermittlung der Nachricht sollte eine Clientanwendung diese Eigenschaften auf den Wert der Eigenschaft **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   

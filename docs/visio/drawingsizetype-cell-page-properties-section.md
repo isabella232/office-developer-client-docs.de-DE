@@ -31,17 +31,17 @@ Legt die Zeichnungsgröße fest.
 |6  <br/> |ANSI-Konstruktion  <br/> |**visDSEngr** <br/> |
 |7  <br/> |ANSI-Architektur  <br/> |**visDSArch** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Um die Zeichnungsgröße festzulegen, verwenden Sie das Dialogfeld **Seite einrichten** (klicken Sie auf den Pfeil neben **Seite einrichten** auf der Registerkarte **Entwurf** ) oder die Größe die Seite mit der Maus manuell ändern. 
+Verwenden Sie das Dialogfeld **Seite einrichten**, um die Zeichnungsgröße festzulegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**), oder passen Sie die Größe der Seite manuell mit der Maus an. 
   
-Wenn Sie einen Verweis auf die Zelle DrawingSizeType nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie eine Referenz auf die Zelle DrawingSizeType nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |DrawingSizeType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DrawingSizeType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle DrawingSizeType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

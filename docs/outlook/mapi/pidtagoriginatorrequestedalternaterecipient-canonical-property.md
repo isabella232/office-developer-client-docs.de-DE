@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginatorRequestedAlternateRecipient-Eigenschaft
+title: PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794747"
 ---
-# <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>Kanonische PidTagOriginatorRequestedAlternateRecipient-Eigenschaft
+# <a name="pidtagoriginatorrequestedalternaterecipient-canonical-property"></a>PidTagOriginatorRequestedAlternateRecipient (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID für einen alternativen Empfänger vom Absender festgel
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in Autoforwarded Nachrichten verwendet. Wenn die automatische Weiterleitung nicht zulässig ist oder keine alternativer Empfänger vorgesehen ist, sollte ein Unzustellbarkeitsbericht generiert werden.
   

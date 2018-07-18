@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIcon-Eigenschaft
+title: PidTagIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794455"
 ---
-# <a name="pidtagicon-canonical-property"></a>Kanonische PidTagIcon-Eigenschaft
+# <a name="pidtagicon-canonical-property"></a>PidTagIcon (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Eine Bitmap mit einer Gesamtgröße Symbol für ein Formular enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält ein Bild mit 32 x 32 Pixeln eines Symbols, identisch mit den Inhalt ein. ICO-Datei. Diese Eigenschaft wird normalerweise übernommen aus der. ICO-Datei in der LargeIcon-Zeile der entsprechenden Abschnitt der Konfigurationsdatei Formular [Beschreibung] angegeben. 
   
@@ -60,7 +60,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagMiniIcon-Eigenschaft](pidtagminiicon-canonical-property.md)
+[PidTagMiniIcon (kanonische Eigenschaft)](pidtagminiicon-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDistributionListExpansionHistory-Eigenschaft
+title: PidTagDistributionListExpansionHistory (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794335"
 ---
-# <a name="pidtagdistributionlistexpansionhistory-canonical-property"></a>Kanonische PidTagDistributionListExpansionHistory-Eigenschaft
+# <a name="pidtagdistributionlistexpansionhistory-canonical-property"></a>PidTagDistributionListExpansionHistory (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Verlauf zeigt, wie eine Verteilerliste während der Übertragung 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft steht Clientanwendungen empfangen, wenn der Adressbuchhierarchie sie festgelegt hat. Es ist außerdem die sendende Client zur Verfügung, wenn der Inhalt der Nachricht mit einem Bericht zurückgegeben wird. 
   
@@ -54,7 +54,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagDistributionListExpansionProhibited-Eigenschaft](pidtagdistributionlistexpansionprohibited-canonical-property.md)
+[PidTagDistributionListExpansionProhibited (kanonische Eigenschaft)](pidtagdistributionlistexpansionprohibited-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

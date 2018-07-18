@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPrimarySendAccount-Eigenschaft
+title: PidTagPrimarySendAccount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794804"
 ---
-# <a name="pidtagprimarysendaccount-canonical-property"></a>Kanonische PidTagPrimarySendAccount-Eigenschaft
+# <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Zeichenfolge, die den Namen des ersten Servers, der zum Senden der
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Konto  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Gibt den ersten Server, den ein Client verwenden sollten, um die e-Mail-Nachrichten senden. Das Format dieser Eigenschaften ist die Implementierung ab. Diese Eigenschaften zum Ermitteln des Servers, der e-Mail-Nachrichten über direkte vom Client verwendet werden können, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   

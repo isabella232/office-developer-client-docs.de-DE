@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContainerFlags-Eigenschaft
+title: PidTagContainerFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794215"
 ---
-# <a name="pidtagcontainerflags-canonical-property"></a>Kanonische PidTagContainerFlags-Eigenschaft
+# <a name="pidtagcontainerflags-canonical-property"></a>PidTagContainerFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske der Flags, die ein Adressbuchcontainer Funktionen beschre
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für die Bitmaske kann eine oder mehrere der folgenden Werte festgelegt werden:
   

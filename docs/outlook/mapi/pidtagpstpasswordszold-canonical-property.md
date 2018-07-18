@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPstPasswordSzOld-Eigenschaft
+title: PidTagPstPasswordSzOld (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794851"
 ---
-# <a name="pidtagpstpasswordszold-canonical-property"></a>Kanonische PidTagPstPasswordSzOld-Eigenschaft
+# <a name="pidtagpstpasswordszold-canonical-property"></a>PidTagPstPasswordSzOld (kanonische Eigenschaft)
 
   
   

@@ -54,7 +54,7 @@ Keine.
 |:-----|:-----|:-----|:-----|:-----|
 |AutorID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Ein 1-basierte Wert, der Autor identifiziert.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |CommentID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Ein eindeutiger Wert, der den Kommentar in ein Zeichenblatt identifiziert.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Date  <br/> |XSD: DateTime  <br/> |erforderlich  <br/> |Gibt an, wann ein Kommentar erstellt wurde.  <br/> |Werte des Typs xsd: DateTime.  <br/> |
+|Datum  <br/> |XSD: DateTime  <br/> |erforderlich  <br/> |Gibt an, wann ein Kommentar erstellt wurde.  <br/> |Werte des Typs xsd: DateTime.  <br/> |
 |Fertig  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt den aktuellen Status des Kommentars.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
 |EditDate  <br/> |XSD: DateTime  <br/> |Optional  <br/> |Gibt an, wann ein Kommentar zuletzt geändert wurde.  <br/> |Werte des Typs xsd: DateTime.  <br/> |
 |PageID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Ein Wert, der das Zeichenblatt identifiziert ist der Kommentar auf.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |

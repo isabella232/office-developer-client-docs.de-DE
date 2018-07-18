@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAssociatedContentCount-Eigenschaft
+title: PidTagAssociatedContentCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794078"
 ---
-# <a name="pidtagassociatedcontentcount-canonical-property"></a>Kanonische PidTagAssociatedContentCount-Eigenschaft
+# <a name="pidtagassociatedcontentcount-canonical-property"></a>PidTagAssociatedContentCount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Anzahl der Elemente in der Inhaltstabelle zugeordneten des Ordners.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält die Anzahl der Einträge in der Inhaltstabelle des Ordners. 
   

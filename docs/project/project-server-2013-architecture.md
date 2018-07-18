@@ -32,14 +32,14 @@ Project-Anwendungsdienst in Project Server 2013 können einer SharePoint-Website
   
 Projektserver verwaltet die Projekte, wenn er über Vollzugriff verfügt. Project Professional speichert die Daten direkt in Project Server. In Tabelle 1 wird das Verhalten von einer Vorgangsliste, den Zeitplan-Webpart und andere Funktionen für SharePoint-Steuerelement mit den Aufgabenlisten und importierten Projekte verglichen, wenn Project Server über Vollzugriff verfügt. Das Zeitplan-Webpart enthält das Raster auf der Project Web App-Seite, in dem Sie einen Projektplan bearbeiten können. Der verknüpften Modus ist, Statusing-Daten einmal für Vorgänge und Arbeitszeittabellen eingegeben werden. in den einfachen Eingabemodus werden Zeitberichte Vorgangsdaten separat aus Arbeitszeittabellen eingegeben.
   
-**In Tabelle 1. Vergleich zwischen SharePoint-Aufgabenlisten und Vollzugriff**
+**Tabelle 1. Vergleich von SharePoint-Aufgabenlisten und Vollzugriff**
 
 | Feature | Aufgabenliste | Vollzugriff |
 |:-----|:-----|:-----|
 |**Aufgabenliste in SharePoint** <br/> |Lese-/Schreibzugriff  <br/> |Schreibgeschützt  <br/> |
 |**Zeitplan-Webpart** <br/> |Schreibgeschützt  <br/> |Lese-/Schreibzugriff  <br/> |
 |**Reporting** <br/> |Umfassende Berichterstellung über Project Server  <br/> |Umfassende Berichterstellung über Project Server  <br/> |
-|**Andere Project Server-Funktionen** <br/> | Gesperrte Funktionen:  <br/>-Serverseitige projektbearbeitungen, mit Project Web App oder benutzerdefinierten-Clientanwendungen  <br/>-Statusing  <br/>-Aufgaben werden nicht im verknüpften Modus angezeigt  <br/> |Es besteht Vollzugriff  <br/> |
+|**Sonstige Project Server-Funktionen** <br/> | Gesperrte Funktionen:  <br/>-Serverseitige projektbearbeitungen, mit Project Web App oder benutzerdefinierten-Clientanwendungen  <br/>-Statusing  <br/>-Aufgaben werden nicht im verknüpften Modus angezeigt  <br/> |Es besteht Vollzugriff  <br/> |
    
 ### <a name="managing-projects-as-sharepoint-task-lists"></a>Verwalten von Projekten als SharePoint-Aufgabenlisten
 <a name="pj15_Architecture_VisibilityMode"> </a>
@@ -141,7 +141,7 @@ Sie können mehrere Instanzen von Project Web App auf einem WFE und mehrere WFE-
   
 - Optimiert Aufrufe von Remote-Clients an das PSI.
     
-- Unterscheidet zwischen PSI-Aufrufe, die die Project Server-Warteschlangendienst erfordern, und die, die nicht der Fall ist. Asynchrone PSI-Methodennamen beginnen mit Warteschlange, wie beispielsweise **QueueCreateProject**.
+- Unterscheidet zwischen PSI-Aufrufen, die den Project Server-Warteschlangendienst erfordern, und Aufrufen, für die kein Warteschlangendienst erforderlich ist. Die Bezeichnungen von asynchronen PSI-Methoden beginnen mit "Queue", wie **QueueCreateProject**.
     
 - Ermittelt PSI-Aufrufe, die registrierte lokale Ereignishandler  aufrufen.
     
@@ -169,7 +169,7 @@ Clientanwendungen rufen Sie die PSI über Webdienstproxys. Clients, die das WCF-
   
 Abbildung 4 zeigt den Bereich **Verbindungen** in **Internetinformationsdienste (Internet Information Services, IIS)-Manager** für eine Einzelserverinstallation von SharePoint Server 2013, Project Server 2013 und einer lokalen Website verwalten von Workflows für Workflow-Manager-Client 1.0. SharePoint-Websitesammlung (A) enthält die Front-End-PSI-Dienste in der `_vti_bin\PSI` virtuellen Unterverzeichnis. Die SharePoint-Webdienste-Anwendung (B) enthält die Project Service-Anwendung, mit der Back-End-PSI-Dienste in der `508c23fb7dfd4c83a8919fae24bc68c5/PSI` virtuellen Unterverzeichnis. Die GUID ist der Name der Instanz Project Service-Anwendung für die Project Server-Installation. 
   
-**Abbildung 4. IIS-Manager mit der Front-End-PSI (A) und die Back-End-PSI (B)**
+**Abbildung 4. Front-End-PSI (A) und Back-End-PSI (B) in IIS-Manager**
 
 ![Die Front-End-PSI und die Back-End-PSI] (media/pj15_Architecture_PSI_IIS.gif "Die Front-End-PSI und die Back-End-PSI")
   
@@ -189,11 +189,11 @@ Das interne Objektmodell von Project Server umfasst die Geschäftsobjekte, die l
   
 Geschäftsobjekte sind für Drittanbieterentwickler nicht zugänglich. Das PSI verwaltet die Zuordnung des API zu den Geschäftsobjekten, und das CSOM ordnet sein API dem PSI zu. Die logischen Entitäten von Geschäftsobjekten können in drei Typen unterteilt werden:
   
-- **Kernentitäten** sind Objekte wie Projekte, Aufgaben, Zuordnungen, Ressourcen und Kalender. Die Kernentitäten enthalten grundlegende Geschäftslogik wie Berechtigungen und Regeln. 
+- **Kernentitäten** sind Objekte wie Projekte, Aufgaben, Aufträge, Ressourcen und Kalender. Die Kernentitäten umfassen grundlegende Bestandteile der Geschäftslogik wie Berechtigungen und Benennungsregeln. 
     
-- **Business-Entitäten** sind Objekte wie Arbeitszeittabellen, Projektportfolios und Modelle. Geschäftseinheiten zusätzliche Geschäftslogik enthalten und in der Regel aus einer Kombination der Kernentitäten erstellt werden. 
+- **Geschäftsentitäten** sind Objekte wie Arbeitszeittabellen, Projektportfolios und Modelle. Geschäftsentitäten umfassen weiterreichende Bestandteile der Geschäftslogik und werden in der Regel durch die Kombination von Kernentitäten gebildet. 
     
-- **Unterstützung für Entitäten** sind Objekte wie Sicherheit und Überprüfung. 
+- **Unterstützende Entitäten** sind u. a. Objekte für die Sicherheit und Validierung. 
     
 In Project Server 2010 werden alle von Geschäftsobjekten in der Project-Anwendung implementiert. In Project Server 2013 hostet das WFE viele Business-Objekten, die synchrone Methoden zu verarbeiten und erfordern keinen Project-Berechnungen. Synchrone PSI-Methoden wie **DeleteProject** und **ReadAssignments** verwenden Sie die Project Server-Warteschlangendienst nicht. Asynchrone Methoden in die PSI haben Namen, die beginnen mit `Queue`, wie **QueueCreateProject** und **QueueUpdateTimesheet**. Eine asynchrone Methode sendet eine Nachricht an die Project Server-Warteschlangendienst, der Verarbeitung der Methode plant, während die Steuerung an den Benutzer zurückgegeben wird.
   
@@ -263,10 +263,10 @@ Project Server ermöglicht es anhand der folgenden Schritte, dass die veröffent
 
 - [Übersicht über Project 2013 für Entwickler](http://msdn.microsoft.com/library/8da91ab0-af4f-429f-8241-490600e3f7bd%28Office.15%29.aspx)
 - [Project Server-Programmierbarkeit](project-server-programmability.md)  
-- [Client-seitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)  
-- [Was die PSI enthält und nicht zu](what-the-psi-does-and-does-not-do.md)  
-- [Erste Schritte beim Entwickeln von Project Server-workflows](getting-started-developing-project-server-workflows.md)   
-- [Übersicht über Project PSI-Verweis](project-psi-reference-overview.md)   
+- [Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)  
+- [Was die PSI durchführen kann und was nicht](what-the-psi-does-and-does-not-do.md)  
+- [Erste Schritte beim Entwickeln von Project Server-Workflows](getting-started-developing-project-server-workflows.md)   
+- [Project-PSI-Referenz – Übersicht](project-psi-reference-overview.md)   
 - [Open Data Protocol](http://www.odata.org/)
     
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSentRepresentingEmailAddress-Eigenschaft
+title: PidTagOriginalSentRepresentingEmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794703"
 ---
-# <a name="pidtagoriginalsentrepresentingemailaddress-canonical-property"></a>Kanonische PidTagOriginalSentRepresentingEmailAddress-Eigenschaft
+# <a name="pidtagoriginalsentrepresentingemailaddress-canonical-property"></a>PidTagOriginalSentRepresentingEmailAddress (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Enthält die e-Mail-Adresse des messaging Benutzers in dessen Namen die ursprün
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Absender einer Nachricht dargestellt. Es wird in einem Thread Unterhaltung verwendet.
   

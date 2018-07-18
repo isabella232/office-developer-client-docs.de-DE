@@ -41,7 +41,7 @@ typedef struct _SSizeRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **RelOp-Element**
   
@@ -83,7 +83,7 @@ RELOP_EQ
   
 > Anzahl der Bytes in der Eigenschaftswert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   

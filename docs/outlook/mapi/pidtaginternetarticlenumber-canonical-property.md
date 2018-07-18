@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInternetArticleNumber-Eigenschaft
+title: PidTagInternetArticleNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794485"
 ---
-# <a name="pidtaginternetarticlenumber-canonical-property"></a>Kanonische PidTagInternetArticleNumber-Eigenschaft
+# <a name="pidtaginternetarticlenumber-canonical-property"></a>PidTagInternetArticleNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Eine Zahl, die einem Element in einem Nachrichtenspeicher zugeordnet.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft entspricht in IMAPI Nachrichtenspeicher die IMAPI UID.
   

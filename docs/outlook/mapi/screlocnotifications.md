@@ -75,7 +75,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Eine ungültige Benachrichtigung aufgetreten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Parameter _pcb_ an die Funktion **ScRelocNotifications** ist optional. 
   

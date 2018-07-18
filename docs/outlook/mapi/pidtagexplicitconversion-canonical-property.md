@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExplicitConversion-Eigenschaft
+title: PidTagExplicitConversion (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794375"
 ---
-# <a name="pidtagexplicitconversion-canonical-property"></a>Kanonische PidTagExplicitConversion-Eigenschaft
+# <a name="pidtagexplicitconversion-canonical-property"></a>PidTagExplicitConversion (kanonische Eigenschaft)
 
   
   

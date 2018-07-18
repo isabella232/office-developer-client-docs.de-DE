@@ -40,7 +40,7 @@ typedef struct _SShortArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SShortArray
   
 > Zeiger auf ein Array von Werten Ganzzahl ohne Vorzeichen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu PT_MV_SHORT und anderer Eigenschaftsarten finden Sie unter [Eigenschaftentypen](property-types.md). 
   

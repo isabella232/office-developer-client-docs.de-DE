@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSenderEntryId-Eigenschaft
+title: PidTagOriginalSenderEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794705"
 ---
-# <a name="pidtagoriginalsenderentryid-canonical-property"></a>Kanonische PidTagOriginalSenderEntryId-Eigenschaft
+# <a name="pidtagoriginalsenderentryid-canonical-property"></a>PidTagOriginalSenderEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Absenders einer Nachricht, d. h., die Nachricht vor
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den ursprünglichen Absender einer Nachricht. Am ersten-Übermittlung der Nachricht sollte eine Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   

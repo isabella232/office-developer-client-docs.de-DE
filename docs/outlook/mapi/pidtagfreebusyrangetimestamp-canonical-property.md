@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFreeBusyRangeTimestamp-Eigenschaft
+title: PidTagFreeBusyRangeTimestamp (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794415"
 ---
-# <a name="pidtagfreebusyrangetimestamp-canonical-property"></a>Kanonische PidTagFreeBusyRangeTimestamp-Eigenschaft
+# <a name="pidtagfreebusyrangetimestamp-canonical-property"></a>PidTagFreeBusyRangeTimestamp (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Uhrzeit, wann die Daten veröffentlicht wurde.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC).
   

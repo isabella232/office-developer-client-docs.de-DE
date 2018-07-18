@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCarTelephoneNumber-Eigenschaft
+title: PidTagCarTelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794176"
 ---
-# <a name="pidtagcartelephonenumber-canonical-property"></a>Kanonische PidTagCarTelephoneNumber-Eigenschaft
+# <a name="pidtagcartelephonenumber-canonical-property"></a>PidTagCarTelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Autotelefonnummer des Empfängers enthält.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

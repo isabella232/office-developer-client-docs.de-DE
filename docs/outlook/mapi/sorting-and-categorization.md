@@ -1,5 +1,5 @@
 ---
-title: Sortieren und die Kategorisierung
+title: Sortieren und Kategorisieren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795586"
 ---
-# <a name="sorting-and-categorization"></a>Sortieren und die Kategorisierung
+# <a name="sorting-and-categorization"></a>Sortieren und Kategorisieren
 
  
   
@@ -67,15 +67,15 @@ Weitere Informationen zum Sortieren der Threads einer Unterhaltung finden Sie un
   
 - [SSortOrder](ssortorder.md)
     
-- [Kanonische PidTagSubject-Eigenschaft](pidtagsubject-canonical-property.md)
+- [PidTagSubject (kanonische Eigenschaft)](pidtagsubject-canonical-property.md)
     
-- [Kanonische PidTagSubjectPrefix-Eigenschaft](pidtagsubjectprefix-canonical-property.md)
+- [PidTagSubjectPrefix (kanonische Eigenschaft)](pidtagsubjectprefix-canonical-property.md)
     
-- [Kanonische PidTagNormalizedSubject-Eigenschaft](pidtagnormalizedsubject-canonical-property.md)
+- [PidTagNormalizedSubject (kanonische Eigenschaft)](pidtagnormalizedsubject-canonical-property.md)
     
-- [Kanonische Eigenschaftpidtagconversationtopic-Eigenschaft](pidtagconversationtopic-canonical-property.md)
+- [PidTagConversationTopic (kanonische Eigenschaft)](pidtagconversationtopic-canonical-property.md)
     
-- [Kanonische-Eigenschaft PidTagConversationIndex](pidtagconversationindex-canonical-property.md)
+- [PidTagConversationIndex (kanonische Eigenschaft)](pidtagconversationindex-canonical-property.md)
     
 - [ScCreateConversationIndex](sccreateconversationindex.md)
     

@@ -28,7 +28,7 @@ DEFAULTEVENT( )
 
 In der folgenden Tabelle wird die Standardaktion aufgelistet, die mehreren Objekten zugeordnet ist.
   
-|**Objekt**|**Standardereignis**|
+|**Objekt**|**Standardaktion**|
 |:-----|:-----|
 |Shape  <br/> |Text bearbeiten  <br/> |
 |Gruppe  <br/> |Keine Aktion  <br/> |

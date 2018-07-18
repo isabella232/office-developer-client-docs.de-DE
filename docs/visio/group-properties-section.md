@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797127"
 ---
-# <a name="group-properties-section"></a>Abschnitt "Group Properties"
+# <a name="group-properties-section"></a>Group Properties Section
 
 Enthält Zellen für eine Gruppe, die steuern, wie Sie Shapes in Gruppen einfügen, Mitglieder von Gruppen verschieben und Gruppen auswählen können. 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können diese Werte auch auf der Registerkarte **Verhalten** im Dialogfeld **Verhalten** festlegen (klicken Sie in der Gruppe **Shape-Design** auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** ). 
+Sie können diese Werte auch im Dialogfeld **Verhalten** auf der Registerkarte **Verhalten** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**). 
   
 

@@ -1,5 +1,5 @@
 ---
-title: Abrufen von Daten aus einer Tabellenzeilen
+title: Abrufen von Daten aus Tabellenzeilen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795394"
 ---
-# <a name="retrieving-data-from-table-rows"></a>Abrufen von Daten aus einer Tabellenzeilen
+# <a name="retrieving-data-from-table-rows"></a>Abrufen von Daten aus Tabellenzeilen
 
   
   

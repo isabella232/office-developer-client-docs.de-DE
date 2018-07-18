@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796522"
 ---
-# <a name="blend-function"></a>BLEND-Funktion
+# <a name="blend-function"></a>BLEND Function
 
 Mischt zwei Farben in dem Verhältnis, das vom _Float_ -Parameter angegeben. 
   
@@ -26,15 +26,15 @@ BLEND (** *color1* **, ** *color2* **, ** *Float [0,1]* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Visio oder der RGB-Wert der ersten Farbe.  <br/> |
-| _color2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
+| _color1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Visio oder der RGB-Wert der ersten Farbe.  <br/> |
+| _color2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
 | _Float [0,1]_ <br/> |Erforderlich  <br/> |**Float** <br/> |Das Verhältnis, in dem _color2_ und _color1_, jeweils gemischt. Eine reelle Zahl zwischen 0 und 1.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
  **RGB**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die zurückgegebene Farbe wird durch die relativen Proportionen in dem _color2_ und _color1_, als vom _Float_ -Parameter angegebenen gemischt bestimmt. Beispielsweise ist _Float_ 0,25, die zurückgegebene Farbe zusammengesetzten 75 % der _color1_ und 25 % der _color2_. 
   

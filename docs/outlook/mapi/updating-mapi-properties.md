@@ -46,5 +46,5 @@ Das folgende Verfahren veranschaulicht, wie **SetProps** verwenden, um die Nachr
 
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+- [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

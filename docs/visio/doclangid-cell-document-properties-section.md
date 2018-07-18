@@ -20,7 +20,7 @@ ms.locfileid: "19796888"
 
 Gibt die Standardsprache für das Dokument an.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Sprache des Dokuments basiert auf der Sprache, die im Dialogfeld **Microsoft Office-Spracheinstellungen** definiert. (Klicken Sie auf **Start**, klicken Sie auf **Alle Programme**, klicken Sie auf **Microsoft Office**, klicken Sie auf **Microsoft Office Tools**, und klicken Sie dann auf **Microsoft Office-Spracheinstellungen**.)
   

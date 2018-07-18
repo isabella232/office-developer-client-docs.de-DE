@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecordKey-Eigenschaft
+title: PidTagRecordKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794936"
 ---
-# <a name="pidtagrecordkey-canonical-property"></a>Kanonische PidTagRecordKey-Eigenschaft
+# <a name="pidtagrecordkey-canonical-property"></a>PidTagRecordKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen binären vergleichbaren eindeutigen Bezeichner für ein bestimmte
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft erleichtert das Auffinden Verweise auf ein Objekt, wie eine Zeile in einer Inhaltstabelle suchen. Diese Eigenschaft kann nicht zum Öffnen eines Objekts verwendet werden. Verwenden Sie die Eintrags-ID für diesen Zweck.
   

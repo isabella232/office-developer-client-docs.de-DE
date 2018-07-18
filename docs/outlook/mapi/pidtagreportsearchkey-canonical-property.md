@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportSearchKey-Eigenschaft
+title: PidTagReportSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794979"
 ---
-# <a name="pidtagreportsearchkey-canonical-property"></a>Kanonische PidTagReportSearchKey-Eigenschaft
+# <a name="pidtagreportsearchkey-canonical-property"></a>PidTagReportSearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Search-Schlüssel für den Empfänger, der Berichte für diese Nach
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Empfänger, den alle für diese Nachricht generierten Berichte empfangen der Absender delegiert wurde.
   

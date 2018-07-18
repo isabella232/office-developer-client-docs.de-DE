@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExtendedFolderFlags-Eigenschaft
+title: PidTagExtendedFolderFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794368"
 ---
-# <a name="pidtagextendedfolderflags-canonical-property"></a>Kanonische PidTagExtendedFolderFlags-Eigenschaft
+# <a name="pidtagextendedfolderflags-canonical-property"></a>PidTagExtendedFolderFlags (kanonische Eigenschaft)
  
 **Betrifft**: Outlook 
   
@@ -32,7 +32,7 @@ Erweiterte Flags zu einem Ordner enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ein binären Stream, der codierte untergeordnete Eigenschaften für den Ordner enthält. Es wird als eine Reihe von variabler Länge Sub-Elemente formatiert. Die ersten 8 Bits des Elements Sub ist ein Feld-ID, die angibt, welche Art von Flag das Sub-Element darstellt. Die zweite 8 Bits ist die Anzahl von Bytes der Daten, die folgen.
   

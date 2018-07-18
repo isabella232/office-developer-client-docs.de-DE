@@ -1,5 +1,5 @@
 ---
-title: Beispiel für einen Transport
+title: Beispiel für einen Transportanbieter
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795792"
 ---
-# <a name="transport-provider-sample"></a>Beispiel für einen Transport
+# <a name="transport-provider-sample"></a>Beispiel für einen Transportanbieter
 
   
   

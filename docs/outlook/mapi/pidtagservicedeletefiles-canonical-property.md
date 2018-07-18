@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServiceDeleteFiles-Eigenschaft
+title: PidTagServiceDeleteFiles (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795167"
 ---
-# <a name="pidtagservicedeletefiles-canonical-property"></a>Kanonische PidTagServiceDeleteFiles-Eigenschaft
+# <a name="pidtagservicedeletefiles-canonical-property"></a>PidTagServiceDeleteFiles (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste der Dateinamen, die bei der Deinstallation von Message-Diens
 |Datentyp:  <br/> |PT_MV_STRING8 PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Dateinamen in der Liste in diese Eigenschaften werden vom Computer gelöscht, wenn die Systemsteuerung verwenden, um den Dienst zu deinstallieren. Schließen Sie nicht in der Liste eine DLL, die mehrere Nachrichtendienste für die unterstützt oder zusätzliche Message Dienste konnte versehentlich entfernt.
   

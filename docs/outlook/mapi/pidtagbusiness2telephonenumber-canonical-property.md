@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBusiness2TelephoneNumber-Eigenschaft
+title: PidTagBusiness2TelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794147"
 ---
-# <a name="pidtagbusiness2telephonenumber-canonical-property"></a>Kanonische PidTagBusiness2TelephoneNumber-Eigenschaft
+# <a name="pidtagbusiness2telephonenumber-canonical-property"></a>PidTagBusiness2TelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine sekundäre Telefonnummer des Empfängers an Business an.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger bereitstellen. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert. 
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagBusinessTelephoneNumber-Eigenschaft](pidtagbusinesstelephonenumber-canonical-property.md)
+[PidTagBusinessTelephoneNumber (kanonische Eigenschaft)](pidtagbusinesstelephonenumber-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

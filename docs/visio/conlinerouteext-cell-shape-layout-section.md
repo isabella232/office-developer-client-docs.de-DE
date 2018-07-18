@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796710"
 ---
-# <a name="conlinerouteext-cell-shape-layout-section"></a>Zelle "ConLineRouteExt" (Abschnitt "Shape Layout")
+# <a name="conlinerouteext-cell-shape-layout-section"></a>ConLineRouteExt Cell (Shape Layout Section)
 
 Bestimmt die Darstellung eines Verbinders.
   
@@ -26,15 +26,15 @@ Bestimmt die Darstellung eines Verbinders.
 | 1  <br/> | Gerade  <br/> |**visLORouteExtStraight** <br/> |
 | 2  <br/> | Gekrümmt  <br/> |**visLORouteExtNURBS** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle ConLineRouteExt nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ConLineRouteExt aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ConLineRouteExt  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ConLineRouteExt aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ConLineRouteExt aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

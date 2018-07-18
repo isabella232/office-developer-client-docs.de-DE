@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleId-Eigenschaft
+title: PidTagRuleId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795026"
 ---
-# <a name="pidtagruleid-canonical-property"></a>Kanonische PidTagRuleId-Eigenschaft
+# <a name="pidtagruleid-canonical-property"></a>PidTagRuleId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt einen eindeutigen Bezeichner, den der messaging-Server für jede Regel gene
 |Datentyp:  <br/> |PT_I8  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Client muss diese Eigenschaft nicht angeben, beim Erstellen einer neuen Regel, jedoch müssen sie beim Ändern oder Löschen einer Regel angeben.
   
@@ -66,11 +66,11 @@ Mapitags.h
 
 
 
-[Kanonische PidTagRuleCondition-Eigenschaft](pidtagrulecondition-canonical-property.md)
+[PidTagRuleCondition (kanonische Eigenschaft)](pidtagrulecondition-canonical-property.md)
   
-[Kanonische PidTagRuleActions-Eigenschaft](pidtagruleactions-canonical-property.md)
+[PidTagRuleActions (kanonische Eigenschaft)](pidtagruleactions-canonical-property.md)
   
-[Kanonische PidTagRuleProvider-Eigenschaft](pidtagruleprovider-canonical-property.md)
+[PidTagRuleProvider (kanonische Eigenschaft)](pidtagruleprovider-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

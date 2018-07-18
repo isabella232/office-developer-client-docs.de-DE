@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachContentBase-Eigenschaft
+title: PidTagAttachContentBase (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794082"
 ---
-# <a name="pidtagattachcontentbase-canonical-property"></a>Kanonische PidTagAttachContentBase-Eigenschaft
+# <a name="pidtagattachcontentbase-canonical-property"></a>PidTagAttachContentBase (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Inhalte base Kopfzeile der e-Mail-Anlagen Multipurpose Internet Mail Extensi
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen die base Content Kopfzeile für den entsprechenden MIME Textteil dar. 
   

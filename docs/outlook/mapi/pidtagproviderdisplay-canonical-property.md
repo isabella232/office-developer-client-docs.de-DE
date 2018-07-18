@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderDisplay-Eigenschaft
+title: PidTagProviderDisplay (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794830"
 ---
-# <a name="pidtagproviderdisplay-canonical-property"></a>Kanonische PidTagProviderDisplay-Eigenschaft
+# <a name="pidtagproviderdisplay-canonical-property"></a>PidTagProviderDisplay (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den herstellerspezifischen Anzeigenamen für einen Dienstanbieter.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften und **PR_PROVIDER_DLL_NAME** ([PidTagProviderDllName](pidtagproviderdllname-canonical-property.md)) sind nur für Profil Abschnitten, Dienstanbieter angehören definiert. Sie müssen in MAPISVC.INF vorhanden sein.
   

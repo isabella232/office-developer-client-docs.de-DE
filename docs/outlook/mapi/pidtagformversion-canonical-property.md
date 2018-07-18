@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormVersion-Eigenschaft
+title: PidTagFormVersion (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794410"
 ---
-# <a name="pidtagformversion-canonical-property"></a>Kanonische PidTagFormVersion-Eigenschaft
+# <a name="pidtagformversion-canonical-property"></a>PidTagFormVersion (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Version eines Formulars an.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften geben an, welche Version Design derzeit ist Effekt für das Formular. Die Version definiert ist und vom Formular verwaltet den Designer und nicht notwendigerweise bezieht sich auf eine beliebige Version der MAPI-Komponente. 
   

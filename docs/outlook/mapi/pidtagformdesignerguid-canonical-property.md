@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormDesignerGuid-Eigenschaft
+title: PidTagFormDesignerGuid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794396"
 ---
-# <a name="pidtagformdesignerguid-canonical-property"></a>Kanonische PidTagFormDesignerGuid-Eigenschaft
+# <a name="pidtagformdesignerguid-canonical-property"></a>PidTagFormDesignerGuid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den eindeutigen Bezeichner für das Objekt, das verwendet wird, ein For
 |Datentyp:  <br/> |PT_GUID  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält in der Regel den global eindeutigen Bezeichner (GUID) des Programms entwerfen, die zum Erstellen des Formulars verwendet wird. Diese Eigenschaft kann leer sein. 
   

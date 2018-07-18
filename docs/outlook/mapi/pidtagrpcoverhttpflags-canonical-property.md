@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRpcOverHttpFlags-Eigenschaft
+title: PidTagRpcOverHttpFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794989"
 ---
-# <a name="pidtagrpcoverhttpflags-canonical-property"></a>Kanonische PidTagRpcOverHttpFlags-Eigenschaft
+# <a name="pidtagrpcoverhttpflags-canonical-property"></a>PidTagRpcOverHttpFlags (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält die Einstellungen in einem Profil von Microsoft Office Outlook verwende
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **PR_ROH_FLAGS** -Eigenschaft wird im Abschnitt globale Profil ein Profil Messaging Application Programming Interface (MAPI) gespeichert. Der Wert der **PR_ROH_FLAGS** ist eine Bitmaske, die von einem oder mehreren der folgenden Werte bestehen. 
   

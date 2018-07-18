@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalMessageClass-Eigenschaft
+title: PidTagOriginalMessageClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794719"
 ---
-# <a name="pidtagoriginalmessageclass-canonical-property"></a>Kanonische PidTagOriginalMessageClass-Eigenschaft
+# <a name="pidtagoriginalmessageclass-canonical-property"></a>PidTagOriginalMessageClass (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Klasse der ursprünglichen Nachricht für die Verwendung in einem B
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Secure Messaging-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten eine Kopie der Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) der Nachricht für die der Bericht generiert wird.
   

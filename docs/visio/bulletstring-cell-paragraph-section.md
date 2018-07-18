@@ -24,15 +24,15 @@ Ermöglicht das Erstellen von benutzerdefinierten Aufzählungszeichen.
 
 Geben Sie die Formatvorlage in Form einer Zeichenfolge (eingeschlossen in Anführungszeichen) ein. Sie können beispielsweise die Zeichenfolge "ooo" eingeben.
   
-Sie können auch den Wert dieser Zelle durch Festlegen der rechten Maustaste auf ein Shape klicken, auf **Format**, auf **Text**klicken und dann auf die Registerkarte **Aufzählungszeichen** zeigen. 
+Sie können den Wert für diese Zelle auch festlegen, indem Sie mit der rechten Maustaste auf ein Shape klicken, auf **Format** zeigen, auf **Text** klicken und dann die Registerkarte **Aufzählungszeichen** auswählen. 
   
-Zum Abrufen eines Verweises auf die Zelle BulletString nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle BulletString aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Para.BulletStr [ *i* ] wobei *i* = < 1 >, 2, 3,...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BulletString aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle BulletString aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

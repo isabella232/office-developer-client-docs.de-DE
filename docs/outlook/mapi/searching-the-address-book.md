@@ -29,7 +29,7 @@ Because address book providers can support searching for each of their container
   
 In a container that supports searches, retrieve established criteria by calling [IMAPIContainer::GetSearchCriteria](imapicontainer-getsearchcriteria.md). You can also request that the user be prompted for search criteria before a container's contents table is displayed. Wenn Sie diese Option auswählen, festlegen Sie AB_FIND_ON_OPEN das Flag des Containers **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))-Eigenschaft. After the user enters the criteria, it is stored as a restriction and passed to the **SetSearchCriteria** method. Setting AB_FIND_ON_OPEN is particularly useful if you are using an online service or any address book provider that has a slow link to its data. 
   
-### <a name="to-perform-a-basic-search-in-an-address-book-container"></a>Eine einfache Suche in einer Adressbuchcontainer ausführen
+### <a name="to-perform-a-basic-search-in-an-address-book-container"></a>Eine einfache Suche in einer Adressbuchcontainer ausf�hren
   
 1. Call the container's [IMAPIContainer::GetContentsTable](imapicontainer-getcontentstable.md) method to open its contents table. 
     

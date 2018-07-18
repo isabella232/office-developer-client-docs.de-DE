@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSendRichInfo-Eigenschaft
+title: PidTagSendRichInfo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795134"
 ---
-# <a name="pidtagsendrichinfo-canonical-property"></a>Kanonische PidTagSendRichInfo-Eigenschaft
+# <a name="pidtagsendrichinfo-canonical-property"></a>PidTagSendRichInfo (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält TRUE, wenn der Empfänger alle Nachrichteninhalt, einschließlich Rich 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es wird empfohlen, dass diese Eigenschaft Verteilerliste und messaging User-Objekte verfügbar machen. 
   
@@ -89,7 +89,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagAttachDataObject-Eigenschaft](pidtagattachdataobject-canonical-property.md)
+[PidTagAttachDataObject (kanonische Eigenschaft)](pidtagattachdataobject-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

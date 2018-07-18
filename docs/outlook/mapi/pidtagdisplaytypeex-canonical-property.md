@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDisplayTypeEx-Eigenschaft
+title: PidTagDisplayTypeEx (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794338"
 ---
-# <a name="pidtagdisplaytypeex-canonical-property"></a>Kanonische PidTagDisplayTypeEx-Eigenschaft
+# <a name="pidtagdisplaytypeex-canonical-property"></a>PidTagDisplayTypeEx (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Typ eines Eintrags im Hinblick auf wie der Eintrag für die globale
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt den Typ eines Eintrags im Hinblick auf, wie er in der globalen Adressliste angezeigt werden soll. Bietet zusätzliche Informationen, die im **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) dargestellt werden kann.
   

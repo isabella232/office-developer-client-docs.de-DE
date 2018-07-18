@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagEmailAddress-Eigenschaft
+title: PidTagEmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794339"
 ---
-# <a name="pidtagemailaddress-canonical-property"></a>Kanonische PidTagEmailAddress-Eigenschaft
+# <a name="pidtagemailaddress-canonical-property"></a>PidTagEmailAddress (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Messaging-Benutzer e-Mail-Adresse enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Basisadresse Eigenschaften für alle Benutzer messaging. Es ist eine Null endende Zeichenfolge, deren Format Bedeutung nur für das zugrunde liegende messaging-System hat. 
   

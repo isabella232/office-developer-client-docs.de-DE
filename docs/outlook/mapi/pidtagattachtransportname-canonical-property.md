@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachTransportName-Eigenschaft
+title: PidTagAttachTransportName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794130"
 ---
-# <a name="pidtagattachtransportname-canonical-property"></a>Kanonische PidTagAttachTransportName-Eigenschaft
+# <a name="pidtagattachtransportname-canonical-property"></a>PidTagAttachTransportName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen einer Anlage-Datei geändert, sodass es TNEF-Nachrichten zuge
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 TNEF und der Adressbuchhierarchie verwenden diese Eigenschaften. Sie sind in der Regel nicht Clientanwendungen zur Verfügung. 
   

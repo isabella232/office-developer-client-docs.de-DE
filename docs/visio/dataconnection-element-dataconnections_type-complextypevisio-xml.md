@@ -53,7 +53,7 @@ Keine.
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
 |AlwaysUseConnectionFile  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Der Standardwert ist false. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |Werte des Typs xsd: Boolean.  <br/> |
-|Befehl  <br/> |XSD: String  <br/> |Optional  <br/> |Die Befehlszeichenfolge wird zum Abfragen der Datenquelle verwendet.  <br/> |Werte des Typs xsd: String.  <br/> |
+|Command  <br/> |XSD: String  <br/> |Optional  <br/> |Die Befehlszeichenfolge wird zum Abfragen der Datenquelle verwendet.  <br/> |Werte des Typs xsd: String.  <br/> |
 |ConnectionString  <br/> |XSD: String  <br/> |Optional  <br/> |Die Verbindungszeichenfolge, die die Verbindung zu einer Datenquelle erforderlichen Parameter definiert.  <br/> |Werte des Typs xsd: String.  <br/> |
 |FileName  <br/> |XSD: String  <br/> |erforderlich  <br/> |Der Name der Verbindungsdatei. Weitere Informationen finden Sie unter "Anmerkungen".  <br/> |Werte des Typs xsd: String.  <br/> |
 |FriendlyName  <br/> |XSD: String  <br/> |Optional  <br/> |Ein Benutzer zur Verfügung gestellten Name für die Datenverbindung.  <br/> |Werte des Typs xsd: String.  <br/> |

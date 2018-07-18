@@ -1,5 +1,5 @@
 ---
-title: "' Srow '"
+title: SRow
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795627"
 ---
-# <a name="srow"></a>' Srow '
+# <a name="srow"></a>SRow
 
 **Betrifft**: Outlook 
   
@@ -39,7 +39,7 @@ typedef struct _SRow
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulAdrEntryPad**
   
@@ -53,7 +53,7 @@ typedef struct _SRow
   
 > Zeiger auf ein Array von [SPropValue](spropvalue.md) -Strukturen, die die Eigenschaftswerte für die Spalten in der Zeile zu beschreiben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **SRow** beschreibt eine Zeile in einer Tabelle. Es ist in der Struktur [TABLE_NOTIFICATION](table_notification.md) enthalten, die eine Benachrichtigung über eine Tabelle begleitet. 
   
@@ -91,8 +91,8 @@ Informationen dazu, wie der Speicher für **SRow** Strukturen zugewiesen werden 
 
 - [ADRENTRY](adrentry.md)
 - [SPropValue](spropvalue.md)
-- [' Srowset '](srowset.md)
+- [SRowSet](srowset.md)
 - [TABLE_NOTIFICATION](table_notification.md)
 - [MAPI-Strukturen](mapi-structures.md)
-- [Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
+- [Verwalten von Speicher für ADRLIST- und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
 

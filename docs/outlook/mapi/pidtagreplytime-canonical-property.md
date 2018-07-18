@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReplyTime-Eigenschaft
+title: PidTagReplyTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794952"
 ---
-# <a name="pidtagreplytime-canonical-property"></a>Kanonische PidTagReplyTime-Eigenschaft
+# <a name="pidtagreplytime-canonical-property"></a>PidTagReplyTime (kanonische Eigenschaft)
 
   
   

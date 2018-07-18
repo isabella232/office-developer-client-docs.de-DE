@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagConflictEntryId-Eigenschaft
+title: PidTagConflictEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794173"
 ---
-# <a name="pidtagconflictentryid-canonical-property"></a>Kanonische PidTagConflictEntryId-Eigenschaft
+# <a name="pidtagconflictentryid-canonical-property"></a>PidTagConflictEntryId (kanonische Eigenschaft)
 
   
   

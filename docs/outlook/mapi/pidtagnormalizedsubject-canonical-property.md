@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNormalizedSubject-Eigenschaft
+title: PidTagNormalizedSubject (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794649"
 ---
-# <a name="pidtagnormalizedsubject-canonical-property"></a>Kanonische PidTagNormalizedSubject-Eigenschaft
+# <a name="pidtagnormalizedsubject-canonical-property"></a>PidTagNormalizedSubject (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Betreff der Nachricht mit dem Präfix entfernt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden berechnet, indem Nachrichtenspeicher oder transport-Anbieter aus der **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) und **PR_SUBJECT_PREFIX** ([PidTagSubjectPrefix](pidtagsubjectprefix-canonical-property.md))-Eigenschaften auf folgende Weise.
   

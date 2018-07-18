@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796849"
 ---
-# <a name="disabled-cell-action-tags-section"></a>Zelle "Disabled" (Abschnitt "Action Tags")
+# <a name="disabled-cell-action-tags-section"></a>Disabled Cell (Action Tags Section)
 
 Gibt an, ob das Aktionstag im Zeichnungsfenster angezeigt wird.
   
@@ -32,13 +32,13 @@ Gibt an, ob das Aktionstag im Zeichnungsfenster angezeigt wird.
 
 Deaktivierte Aktionstags werden erst angezeigt, wenn sie wieder aktiviert werden. 
   
-Zum Abrufen eines Verweises auf die Zelle Disabled nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Disabled aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | SmartTags.  *Name* . Wobei deaktiviert SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Disabled aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Disabled aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

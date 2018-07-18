@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderEfpFlags-Eigenschaft
+title: PidTagSearchFolderEfpFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795135"
 ---
-# <a name="pidtagsearchfolderefpflags-canonical-property"></a>Kanonische PidTagSearchFolderEfpFlags-Eigenschaft
+# <a name="pidtagsearchfolderefpflags-canonical-property"></a>PidTagSearchFolderEfpFlags (kanonische Eigenschaft)
 
   
   
@@ -32,9 +32,9 @@ Enthält erweiterte Ordner Flags, die für die Suche Ordnercontainer für den Su
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_EFP_FLAGS  <br/> |
 |Bezeichner:  <br/> |0x6848  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft sollten insbesondere die Kennzeichen in der **PR_EXTENDED_FOLDER_FLAGS** ([PidTagExtendedFolderFlags](pidtagextendedfolderflags-canonical-property.md))-Eigenschaft und die untergeordnete Eigenschaft **ExtendedFlags** im Feld b für den Ordner enthalten. Informationen zum Ordner Flags finden Sie in der [[MS-OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx).
   

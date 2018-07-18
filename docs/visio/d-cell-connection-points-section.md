@@ -22,15 +22,15 @@ Eine Zelle für den Entwurf, die zum Eingeben oder Testen von Formeln verwendet 
   
 ## <a name="remarks"></a>Hinweise
 
-Um auf die Zelle D zuzugreifen, mit der rechten Maustaste in einer Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern** . 
+Um auf die Zelle D zuzugreifen, klicken Sie mit der rechten Maustaste auf eine Zeile und anschließend im Kontextmenü auf Zeilentyp ändern. 
   
-Wenn Sie einen Verweis auf die Zelle D nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie eine Referenz auf die Zelle D nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Connections.D [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle D aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle D aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

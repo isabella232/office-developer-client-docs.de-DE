@@ -1,5 +1,5 @@
 ---
-title: Nicht initialisierten Zustand
+title: Status „Nicht initialisiert“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795787"
 ---
-# <a name="uninitialized-state"></a>Nicht initialisierten Zustand
+# <a name="uninitialized-state"></a>Status „Nicht initialisiert“
 
   
   
@@ -35,7 +35,7 @@ Initialisierte Zustand ist der Anfangszustand-Formular, die Objekte in werden so
 
 
 
-[Normalzustand](normal-state.md)
+[Status „Normal“](normal-state.md)
   
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

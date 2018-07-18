@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachExtension-Eigenschaft
+title: PidTagAttachExtension (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794097"
 ---
-# <a name="pidtagattachextension-canonical-property"></a>Kanonische PidTagAttachExtension-Eigenschaft
+# <a name="pidtagattachextension-canonical-property"></a>PidTagAttachExtension (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Erweiterung, die den Dokumenttyp einer Anlage angibt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden von der Clientanwendung Zeitpunkt der Übermittlung festgelegt. 
   

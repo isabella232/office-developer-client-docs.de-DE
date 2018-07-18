@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795649"
 ---
-# <a name="supporting-formatted-text-message-store-responsibilities"></a>Unterstützende formatierter Text: Nachrichtenspeicher Zuständigkeiten
+# <a name="supporting-formatted-text-message-store-responsibilities"></a>Unterstützung von formatiertem Text: Aufgaben des Nachrichtenspeichers
 
   
   

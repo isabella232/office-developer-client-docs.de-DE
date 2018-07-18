@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientCertificate-Eigenschaft
+title: PidTagRecipientCertificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794909"
 ---
-# <a name="pidtagrecipientcertificate-canonical-property"></a>Kanonische PidTagRecipientCertificate-Eigenschaft
+# <a name="pidtagrecipientcertificate-canonical-property"></a>PidTagRecipientCertificate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Nachrichtenempfänger ASN. 1-Zertifikat für die Verwendung in ei
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine Kopie des Empfängers **PR_USER_CERTIFICATE** ([PidTagUserCertificate](pidtagusercertificate-canonical-property.md))-Eigenschaft für die Verwendung in einem Bericht. Hiermit können Sie an den Ersteller nachweisen, dass der Empfänger tatsächlich die Nachricht empfangen hat, die die ein Unzustellbarkeitsberichts nicht notwendigerweise aufweisen.
   

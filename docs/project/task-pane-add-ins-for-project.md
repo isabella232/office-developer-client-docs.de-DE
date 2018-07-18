@@ -43,7 +43,7 @@ Der Project 2013-SDK-Download enthält die **Project OM Test** Beispiel-add-in, 
     
 - [Project 2013 SDK-Download](https://www.microsoft.com/en-us/download/details.aspx?id=30435%20)
     
-- [Office- und SharePoint-Add-ins](http://msdn.microsoft.com/en-us/library/office/fp161507%28v=office.15%29)
+- [Office- und SharePoint-Add-Ins](http://msdn.microsoft.com/en-us/library/office/fp161507%28v=office.15%29)
     
 - [Office-Add-Ins](http://msdn.microsoft.com/en-us/library/office/apps/jj220060%28v=office.15%29)
     

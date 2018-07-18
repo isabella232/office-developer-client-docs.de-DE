@@ -1,5 +1,5 @@
 ---
-title: Erforderlichen und optionalen Schnittstellen für Nachrichtenspeicher-Anbieter
+title: Erforderliche und optionale Schnittstellen Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795369"
 ---
-# <a name="required-and-optional-interfaces-for-message-store-providers"></a>Erforderlichen und optionalen Schnittstellen für Nachrichtenspeicher-Anbieter
+# <a name="required-and-optional-interfaces-for-message-store-providers"></a>Erforderliche und optionale Schnittstellen Nachrichtenspeicheranbieter
 
  
   

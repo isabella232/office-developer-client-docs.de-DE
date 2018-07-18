@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagItemTemporaryflags-Eigenschaft
+title: PidTagItemTemporaryflags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794544"
 ---
-# <a name="pidtagitemtemporaryflags-canonical-property"></a>Kanonische PidTagItemTemporaryflags-Eigenschaft
+# <a name="pidtagitemtemporaryflags-canonical-property"></a>PidTagItemTemporaryflags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein Flag, das angibt, dass eine Nachricht lesen, aber nicht als gelesen
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in Outlook ungelesene Nachrichten Suchordner verwendet, um verfolgen an welche Nachrichten gelesen wurden, ohne tatsächlich markieren als gelesen, die sie aus dem Ordner entfernen möchten. Wenn die Ansicht geändert wird, den diese Eigenschaft entfernt ist und das Element wird als gekennzeichnet lesen. Diese Eigenschaft wird nicht mit dem Exchange Server synchronisiert.
   

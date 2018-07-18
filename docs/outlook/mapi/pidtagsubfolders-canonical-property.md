@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSubfolders-Eigenschaft
+title: PidTagSubfolders (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795227"
 ---
-# <a name="pidtagsubfolders-canonical-property"></a>Kanonische PidTagSubfolders-Eigenschaft
+# <a name="pidtagsubfolders-canonical-property"></a>PidTagSubfolders (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Ordner Unterordner enthält.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nachrichtenspeicher müssen diese Eigenschaft für alle Ordner angeben.
   

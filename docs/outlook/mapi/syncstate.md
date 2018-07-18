@@ -1,5 +1,5 @@
 ---
-title: SYNCHRONISIERUNGSSTATUS
+title: SYNCSTATE
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795716"
 ---
-# <a name="syncstate"></a>SYNCHRONISIERUNGSSTATUS
+# <a name="syncstate"></a>SYNCSTATE
 
 **Betrifft**: Outlook 
   
@@ -43,7 +43,7 @@ typedef enum {
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die API-Replikation](about-the-replication-api.md)
-- [Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+- [Informationen über die Replikations-API](about-the-replication-api.md)
+- [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
 - [MAPI-Konstanten](mapi-constants.md)
 

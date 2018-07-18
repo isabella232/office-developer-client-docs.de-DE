@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExpiryNumber-Eigenschaft
+title: PidTagExpiryNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794354"
 ---
-# <a name="pidtagexpirynumber-canonical-property"></a>Kanonische PidTagExpiryNumber-Eigenschaft
+# <a name="pidtagexpirynumber-canonical-property"></a>PidTagExpiryNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Definiert die Ablaufzeit senden in Verbindung mit der **PR_EXPIRY_UNITS** ([PidT
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss zwischen 0 und 999, der festgelegt werden, wenn es vorhanden ist.
   

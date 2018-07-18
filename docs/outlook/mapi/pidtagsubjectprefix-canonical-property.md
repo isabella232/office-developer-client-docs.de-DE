@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSubjectPrefix-Eigenschaft
+title: PidTagSubjectPrefix (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795239"
 ---
-# <a name="pidtagsubjectprefix-canonical-property"></a>Kanonische PidTagSubjectPrefix-Eigenschaft
+# <a name="pidtagsubjectprefix-canonical-property"></a>PidTagSubjectPrefix (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Betreffpräfix, der in der Regel eine Aktion für eine Nachricht w
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden für alle Objekte, die Meldung empfohlen. 
   

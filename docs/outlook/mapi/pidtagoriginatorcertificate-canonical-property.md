@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginatorCertificate-Eigenschaft
+title: PidTagOriginatorCertificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794736"
 ---
-# <a name="pidtagoriginatorcertificate-canonical-property"></a>Kanonische PidTagOriginatorCertificate-Eigenschaft
+# <a name="pidtagoriginatorcertificate-canonical-property"></a>PidTagOriginatorCertificate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Ein ASN. 1-Zertifikat für den Absender der Nachricht enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine Kopie der Absender **PR_USER_CERTIFICATE** ([PidTagUserCertificate](pidtagusercertificate-canonical-property.md))-Eigenschaft.
   

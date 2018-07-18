@@ -35,7 +35,7 @@ typedef struct {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _Größe_
   

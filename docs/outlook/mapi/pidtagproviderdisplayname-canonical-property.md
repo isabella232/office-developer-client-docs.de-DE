@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderDisplayName-Eigenschaft
+title: PidTagProviderDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794825"
 ---
-# <a name="pidtagproviderdisplayname-canonical-property"></a>Kanonische PidTagProviderDisplayName-Eigenschaft
+# <a name="pidtagproviderdisplayname-canonical-property"></a>PidTagProviderDisplayName (kanonische Eigenschaft)
 
   
   

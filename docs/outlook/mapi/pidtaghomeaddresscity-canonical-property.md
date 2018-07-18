@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHomeAddressCity-Eigenschaft
+title: PidTagHomeAddressCity (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794432"
 ---
-# <a name="pidtaghomeaddresscity-canonical-property"></a>Kanonische PidTagHomeAddressCity-Eigenschaft
+# <a name="pidtaghomeaddresscity-canonical-property"></a>PidTagHomeAddressCity (kanonische Eigenschaft)
 
   
   

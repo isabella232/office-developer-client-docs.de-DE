@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExpiryUnits-Eigenschaft
+title: PidTagExpiryUnits (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794348"
 ---
-# <a name="pidtagexpiryunits-canonical-property"></a>Kanonische PidTagExpiryUnits-Eigenschaft
+# <a name="pidtagexpiryunits-canonical-property"></a>PidTagExpiryUnits (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Beschreibt die Zeiteinheit, wenn die Eigenschaft **PR_EXPIRY_NUMBER** ([PidTagEx
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft, wenn festgelegt ist, muss einer der folgenden Werte sein:
   

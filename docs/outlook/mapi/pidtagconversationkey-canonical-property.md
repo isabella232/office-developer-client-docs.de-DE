@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagConversationKey-Eigenschaft
+title: PidTagConversationKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794256"
 ---
-# <a name="pidtagconversationkey-canonical-property"></a>Kanonische PidTagConversationKey-Eigenschaft
+# <a name="pidtagconversationkey-canonical-property"></a>PidTagConversationKey (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält den Unterhaltung Schlüssel in Microsoft Outlook verwendet nur, wenn **
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie e-Mail-Nachrichten als Unterhaltungen und Konvertieren von Nachrichteneigenschaften in [Transport-Neutral Encapsulation Format (TNEF)](transport-neutral-encapsulation-format-tnef.md)zugreifen möchten, verwenden Sie diese Eigenschaft nicht. Verwenden Sie stattdessen die kanonischen Eigenschaften [PidTagConversationIndex](pidtagconversationindex-canonical-property.md) und [Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md) . 
   
@@ -64,7 +64,7 @@ Mapitags.h
 
 
 
-[IPM-Unterstruktur](ipm-subtree.md)
+[IPM-Teilstruktur](ipm-subtree.md)
   
 [MAPI-Spezialordner](mapi-special-folders.md)
   

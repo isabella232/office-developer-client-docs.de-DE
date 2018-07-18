@@ -49,7 +49,7 @@ MAPI- und COM-bieten verschiedene API-Funktionen für definieren oder den Zugrif
 |:-----|:-----|
 |[HrIStorageFromStream](hristoragefromstream.md) <br/> |Erstellt ein Speicherobjekt Zugriff auf einen Datenstrom oder Sperrtyp Byte-Objekt.  <br/> |
 |[OpenIMsgOnIStg](openimsgonistg.md) <br/> |Erstellt ein Message-Objekt um ein Speicherobjekt zuzugreifen.  <br/> |
-|[OpenStreamOnFile nicht ausgeführt werden](openstreamonfile.md) <br/> |Erstellt ein Stream-Objekt, um eine Datei zuzugreifen.  <br/> |
+|[OpenStreamOnFile](openstreamonfile.md) <br/> |Erstellt ein Stream-Objekt, um eine Datei zuzugreifen.  <br/> |
 |[WrapCompressedRTFStream](wrapcompressedrtfstream.md) <br/> |Erstellt ein Stream-Objekt, das die komprimierte oder nicht komprimierte Version eines Stream-Objekts aufbewahren von rich-Text einer Nachricht enthält.  <br/> |
    
  **Um die Namen der Streams in einem bestimmten Substorage abzurufen**

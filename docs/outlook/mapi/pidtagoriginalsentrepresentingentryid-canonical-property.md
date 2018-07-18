@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSentRepresentingEntryId-Eigenschaft
+title: PidTagOriginalSentRepresentingEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794726"
 ---
-# <a name="pidtagoriginalsentrepresentingentryid-canonical-property"></a>Kanonische PidTagOriginalSentRepresentingEntryId-Eigenschaft
+# <a name="pidtagoriginalsentrepresentingentryid-canonical-property"></a>PidTagOriginalSentRepresentingEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des messaging Benutzers in dessen Namen die ursprüngli
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Absender einer Nachricht dargestellt. Es wird in einem Thread Unterhaltung verwendet.
   

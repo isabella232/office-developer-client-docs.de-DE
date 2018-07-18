@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRelatedMessageIds-Eigenschaft
+title: PidTagRelatedMessageIds (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794938"
 ---
-# <a name="pidtagrelatedmessageids-canonical-property"></a>Kanonische PidTagRelatedMessageIds-Eigenschaft
+# <a name="pidtagrelatedmessageids-canonical-property"></a>PidTagRelatedMessageIds (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste mit Bezeichnern für Nachrichten, die mit denen eine Nachric
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Bezeichner verwenden bestimmte Konstruktion dieselben Regeln wie für die **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft verwendet werden.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoDelegateEntryIds-Eigenschaft
+title: PidTagScheduleInfoDelegateEntryIds (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795076"
 ---
-# <a name="pidtagscheduleinfodelegateentryids-canonical-property"></a>Kanonische PidTagScheduleInfoDelegateEntryIds-Eigenschaft
+# <a name="pidtagscheduleinfodelegateentryids-canonical-property"></a>PidTagScheduleInfoDelegateEntryIds (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den **EntryIDs** Stellvertretungen.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder Eintrag muss den Wert der Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) der einzelnen Delegaten Adresseintrag Adressbuch enthalten. Diese Eigenschaft muss im Delegaten Informationen-Objekt festgelegt werden.
   

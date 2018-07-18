@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRemindersOnlineEntryId-Eigenschaft
+title: PidTagRemindersOnlineEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794932"
 ---
-# <a name="pidtagremindersonlineentryid-canonical-property"></a>Kanonische PidTagRemindersOnlineEntryId-Eigenschaft
+# <a name="pidtagremindersonlineentryid-canonical-property"></a>PidTagRemindersOnlineEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Erinnerungen enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf eine bestimmte Nachricht Store die folgenden Schritte aus. 
   

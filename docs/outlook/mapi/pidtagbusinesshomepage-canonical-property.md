@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBusinessHomePage-Eigenschaft
+title: PidTagBusinessHomePage (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794148"
 ---
-# <a name="pidtagbusinesshomepage-canonical-property"></a>Kanonische PidTagBusinessHomePage-Eigenschaft
+# <a name="pidtagbusinesshomepage-canonical-property"></a>PidTagBusinessHomePage (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die URL der Startseite für das Unternehmen.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden als ein Link zur Homepage für den Kontakt Business verwendet.
   

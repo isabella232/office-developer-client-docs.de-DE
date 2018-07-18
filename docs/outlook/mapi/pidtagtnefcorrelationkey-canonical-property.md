@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTnefCorrelationKey-Eigenschaft
+title: PidTagTnefCorrelationKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795256"
 ---
-# <a name="pidtagtnefcorrelationkey-canonical-property"></a>Kanonische PidTagTnefCorrelationKey-Eigenschaft
+# <a name="pidtagtnefcorrelationkey-canonical-property"></a>PidTagTnefCorrelationKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der eine Anlage Transport Neutral Encapsulation Format (TNE
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es wird empfohlen, dass TNEF-Anlage Unterobjekte diese Eigenschaft verfügbar machen. Diese Eigenschaft bestimmt, ob eine eingehende TNEF-Datei an die Nachricht gehört, für die Sie verbunden ist. Es wird hauptsächlich von Transportanbieter und Gateways verwendet.
   

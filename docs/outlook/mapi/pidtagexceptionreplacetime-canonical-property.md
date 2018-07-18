@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExceptionReplaceTime-Eigenschaft
+title: PidTagExceptionReplaceTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794346"
 ---
-# <a name="pidtagexceptionreplacetime-canonical-property"></a>Kanonische PidTagExceptionReplaceTime-Eigenschaft
+# <a name="pidtagexceptionreplacetime-canonical-property"></a>PidTagExceptionReplaceTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt an, das ursprüngliche Datum und Uhrzeit, wann die Instanz in das Serienmus
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert-Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   

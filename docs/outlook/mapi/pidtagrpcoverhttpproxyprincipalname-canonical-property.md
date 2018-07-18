@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRpcOverHttpProxyPrincipalName-Eigenschaft
+title: PidTagRpcOverHttpProxyPrincipalName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794996"
 ---
-# <a name="pidtagrpcoverhttpproxyprincipalname-canonical-property"></a>Kanonische PidTagRpcOverHttpProxyPrincipalName-Eigenschaft
+# <a name="pidtagrpcoverhttpproxyprincipalname-canonical-property"></a>PidTagRpcOverHttpProxyPrincipalName (kanonische Eigenschaft)
 
   
   

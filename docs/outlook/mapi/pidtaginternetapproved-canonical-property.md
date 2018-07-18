@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInternetApproved-Eigenschaft
+title: PidTagInternetApproved (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794477"
 ---
-# <a name="pidtaginternetapproved-canonical-property"></a>Kanonische PidTagInternetApproved-Eigenschaft
+# <a name="pidtaginternetapproved-canonical-property"></a>PidTagInternetApproved (kanonische Eigenschaft)
 
   
   

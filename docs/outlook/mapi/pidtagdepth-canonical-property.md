@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDepth-Eigenschaft
+title: PidTagDepth (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794300"
 ---
-# <a name="pidtagdepth-canonical-property"></a>Kanonische PidTagDepth-Eigenschaft
+# <a name="pidtagdepth-canonical-property"></a>PidTagDepth (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine ganze Zahl, die den relativen Einzug oder Tiefe der ein Objekt in 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann auch die Kategorisierungsebene einer Zeile in einer Inhaltstabelle oder die Ordnerhierarchie-Tiefe in einer Hierarchietabelle angeben. Die Tiefe ist nullbasiert, wobei 0 (null) die am weitesten links Kategorie darstellt. In allen Fällen stellt Wert der Eigenschaft um einen relativen Wert statt einen absoluten Wert dar. In der Hierarchietabelle befindet sich der Wert für die Tiefe beispielsweise relativ zu den Container, von dem die Hierarchietabelle abgerufen wurde. Die Tiefe stellt eine absolute Tiefe nicht aus dem Stammcontainer dar. 
   
@@ -68,9 +68,9 @@ Mapitags.h
 
 
 
-[Kanonische PidTagObjectType-Eigenschaft](pidtagobjecttype-canonical-property.md)
+[PidTagObjectType (kanonische Eigenschaft)](pidtagobjecttype-canonical-property.md)
   
-[Kanonische PidTagSelectable-Eigenschaft](pidtagselectable-canonical-property.md)
+[PidTagSelectable (kanonische Eigenschaft)](pidtagselectable-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

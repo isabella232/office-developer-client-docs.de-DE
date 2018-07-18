@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServerConnectedIcon-Eigenschaft
+title: PidTagServerConnectedIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795149"
 ---
-# <a name="pidtagserverconnectedicon-canonical-property"></a>Kanonische PidTagServerConnectedIcon-Eigenschaft
+# <a name="pidtagserverconnectedicon-canonical-property"></a>PidTagServerConnectedIcon (kanonische Eigenschaft)
 
   
   

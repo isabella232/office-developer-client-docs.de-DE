@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796704"
 ---
-# <a name="conlinejumpdirx-cell-shape-layout-section"></a>Zelle "ConLineJumpDirX" (Abschnitt "Shape Layout")
+# <a name="conlinejumpdirx-cell-shape-layout-section"></a>ConLineJumpDirX Cell (Shape Layout Section)
 
 Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem horizontalen dynamischen Verbinder für ein Shape auftreten.
   
@@ -26,17 +26,17 @@ Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem horizontale
 | 1  <br/> | Nach oben  <br/> |**visLOJumpDirXUp** <br/> |
 | 2  <br/> | Nach unten  <br/> |**visLOJumpDirXDown** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zum Festlegen der horizontaler Richtung für *Alle* Verbinder auf einem Zeichenblatt springt, verwenden Sie die Zelle PageLineJumpDirX im Abschnitt Page Layout. 
   
-Wenn Sie einen Verweis auf die Zelle ConLineJumpDirX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ConLineJumpDirX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ConLineJumpDirX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ConLineJumpDirX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ConLineJumpDirX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

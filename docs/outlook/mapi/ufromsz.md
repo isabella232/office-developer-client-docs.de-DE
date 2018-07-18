@@ -49,7 +49,7 @@ UINT UFromSz(
 
  **UFromSz** gibt eine Ganzzahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens eine Dezimalzahl beginnt, wird 0 (null) zurückgegeben. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktion **UFromSz** beendet konvertieren, wenn das erste Zeichen in der Zeichenfolge, die kein Dezimalzahl ist erreicht. Beispielsweise gibt **UFromSz** die Zeichenfolge "55" angegeben, den Ganzzahlwert 55. Die Zeichenfolge "5a5b" angegeben, gibt die Funktion den ganzzahligen Wert 5 zurück. Wenn die Zeichenfolge "a5b5", gibt **UFromSz** 0 (null) zurück. 
   

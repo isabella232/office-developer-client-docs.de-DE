@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStatus-Eigenschaft
+title: PidTagStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795208"
 ---
-# <a name="pidtagstatus-canonical-property"></a>Kanonische PidTagStatus-Eigenschaft
+# <a name="pidtagstatus-canonical-property"></a>PidTagStatus (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine 32-Bit-Bitmaske aus Flags, die Ordner Status definieren.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft für Ordner entspricht der **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft für Nachrichten. Ihre Flags werden für die Client-Anwendung bereitgestellt und wirken sich nicht auf den Nachrichtenspeicher. Clients verwenden oder ignorieren diese Einstellungen. Der Client kann auch eine eigene Werte für die Client-definierbare Bit dieser Eigenschaft definieren.
   

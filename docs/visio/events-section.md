@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796971"
 ---
-# <a name="events-section"></a>Abschnitt "Events"
+# <a name="events-section"></a>Events Section
 
 Enthält Formeln, die Shape-Ereignisse steuern. Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.
   

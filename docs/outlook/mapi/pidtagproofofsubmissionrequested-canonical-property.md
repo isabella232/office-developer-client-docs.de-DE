@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProofOfSubmissionRequested-Eigenschaft
+title: PidTagProofOfSubmissionRequested (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794841"
 ---
-# <a name="pidtagproofofsubmissionrequested-canonical-property"></a>Kanonische PidTagProofOfSubmissionRequested-Eigenschaft
+# <a name="pidtagproofofsubmissionrequested-canonical-property"></a>PidTagProofOfSubmissionRequested (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Ein ASN. 1-Nachweis der Übermittlung Wert enthält.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft entspricht einem x. 400-Übermittlung Umschlag-Message-Attribut.
   

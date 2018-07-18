@@ -43,7 +43,7 @@ typedef struct _SSortOrderSet
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cSorts**
   
@@ -61,7 +61,7 @@ typedef struct _SSortOrderSet
   
 > Array von **SSortOrder** -Strukturen, jede eine Sortierreihenfolge definieren. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine **SSortOrderSet** Struktur wird für die Definition mehrerer Sortierreihenfolgen für die Standard- und kategorisierte Sortierung verwendet. 
   

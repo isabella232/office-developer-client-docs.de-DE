@@ -37,7 +37,7 @@ Bestimmt den Typ der Beleuchtung wird von der Abschrägungseffekt verwendet.
 |14  <br/> |Leuchten  <br/> |
 |15  <br/> |Heller Raum  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **BevelLightingType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleName-Eigenschaft
+title: PidTagRuleName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795043"
 ---
-# <a name="pidtagrulename-canonical-property"></a>Kanonische PidTagRuleName-Eigenschaft
+# <a name="pidtagrulename-canonical-property"></a>PidTagRuleName (kanonische Eigenschaft)
 
   
   

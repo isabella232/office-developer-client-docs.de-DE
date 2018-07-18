@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRowid-Eigenschaft
+title: PidTagRowid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794986"
 ---
-# <a name="pidtagrowid-canonical-property"></a>Kanonische PidTagRowid-Eigenschaft
+# <a name="pidtagrowid-canonical-property"></a>PidTagRowid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen eindeutigen Bezeichner für einen Empfänger in einer Tabelle Emp
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ein temporären Wert, der nur für die Lebensdauer des Objekts gültig ist, die Besitzer der Tabelle ist. Als Spalte der Tabelle angezeigt wird, aber nicht gespeichert.
   

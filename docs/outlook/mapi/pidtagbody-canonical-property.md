@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBody-Eigenschaft
+title: PidTagBody (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794134"
 ---
-# <a name="pidtagbody-canonical-property"></a>Kanonische PidTagBody-Eigenschaft
+# <a name="pidtagbody-canonical-property"></a>PidTagBody (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Nachrichtentext.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden in der Regel nur in einer zwischen Personen Nachricht (IPM) verwendet. 
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagRtfInSync-Eigenschaft](pidtagrtfinsync-canonical-property.md)
+[PidTagRtfInSync (kanonische Eigenschaft)](pidtagrtfinsync-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

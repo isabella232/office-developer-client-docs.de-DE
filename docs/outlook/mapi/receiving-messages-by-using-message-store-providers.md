@@ -1,5 +1,5 @@
 ---
-title: Empfangen von Nachrichten mithilfe von Nachrichtenspeicher Rollenanbietern
+title: Empfangen von Nachrichten durch Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795346"
 ---
-# <a name="receiving-messages-by-using-message-store-providers"></a>Empfangen von Nachrichten mithilfe von Nachrichtenspeicher Rollenanbietern
+# <a name="receiving-messages-by-using-message-store-providers"></a>Empfangen von Nachrichten durch Nachrichtenspeicheranbieter
 
   
   

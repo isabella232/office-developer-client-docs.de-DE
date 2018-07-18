@@ -1,5 +1,5 @@
 ---
-title: Outlook Wetter Informationen XML-Schema
+title: XML-Schema für Wetterinformationen in Outlook
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796160"
 ---
-# <a name="outlook-weather-information-xml-schema"></a>Outlook Wetter Informationen XML-Schema
+# <a name="outlook-weather-information-xml-schema"></a>XML-Schema für Wetterinformationen in Outlook
 
 Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Wetter Informationen XML-Schema. Mit diesem Schema können Wetter-Dienstanbieter Wettervorhersage Informationen für einen angegebenen Standort als eine Antwort des webdienstabfragen auf Outlook senden, sodass Outlook die Informationen in der Wetterleiste anzeigen kann.
   

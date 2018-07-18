@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNextSendAcct-Eigenschaft
+title: PidTagNextSendAcct (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794638"
 ---
-# <a name="pidtagnextsendacct-canonical-property"></a>Kanonische PidTagNextSendAcct-Eigenschaft
+# <a name="pidtagnextsendacct-canonical-property"></a>PidTagNextSendAcct (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt den Server, den ein Client derzeit versucht, Senden von e-Mails zu verwende
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format dieser Eigenschaft ist die Implementierung ab. Diese Eigenschaft kann zum Ermitteln des Servers, leiten Sie die e-Mail vom Client verwendet werden, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   

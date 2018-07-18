@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRtfSyncBodyCount-Eigenschaft
+title: PidTagRtfSyncBodyCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795030"
 ---
-# <a name="pidtagrtfsyncbodycount-canonical-property"></a>Kanonische PidTagRtfSyncBodyCount-Eigenschaft
+# <a name="pidtagrtfsyncbodycount-canonical-property"></a>PidTagRtfSyncBodyCount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Anzahl der signifikanten Zeichen des Nachrichtentexts enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die [RTFSync](rtfsync.md) -Funktion berechnet die Anzahl der Zeichen im Text nur diejenigen, die sie für die Nachricht erzielt werden hält verwenden. Beispielsweise sind einige Leerzeichen und Sonderzeichen ignoriert die Anzahl der ausgelassen. 
   

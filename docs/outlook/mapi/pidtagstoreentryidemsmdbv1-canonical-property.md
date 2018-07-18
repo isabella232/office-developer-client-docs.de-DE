@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreEntryIdEmsmdbV1-Eigenschaft
+title: PidTagStoreEntryIdEmsmdbV1 (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795214"
 ---
-# <a name="pidtagstoreentryidemsmdbv1-canonical-property"></a>Kanonische PidTagStoreEntryIdEmsmdbV1-Eigenschaft
+# <a name="pidtagstoreentryidemsmdbv1-canonical-property"></a>PidTagStoreEntryIdEmsmdbV1 (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält das alte Format von Eintrags-ID des Microsoft Exchange Server 2010 oder
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ab Microsoft Outlook 2003, wurden in die Eintrags-IDs, wodurch Vermeidung von zusätzlichen RPCs für Verweise auf die Server-FQDNs integriert werden. Allerdings Dies macht die Eintrags-IDs länger und führt weitere Szenarien, in dem die **CompareEntryIDs** -Methode verwendet werden muss, um festzustellen, ob zwei Eintrag IDs gleichwertig sind. Die PR_STORE_ENTRYID_EMSMDB_V1-Eigenschaft (PidTagStoreIdEmsbdbV1) greift auf das ältere Format von der Exchange Server-Eintrags-ID, die von Microsoft Outlook 2002 (Microsoft Office XP) und früheren Versionen verwendet werden. Speicherplatz sparen Sie können und auch reduziert die Anzahl der **CompareEntryIDs** -Anrufe zu bestimmen, wann der Eintrag IDs gleichwertig sind erforderlich. Beachten Sie, dass mit älteren Eintrags-IDs Öffnen eines Postfachs einige zusätzliche RPCs anfallen kann, wenn ein Verweis erforderlich ist. 
   
@@ -40,7 +40,7 @@ Zugriff auf die Eigenschaft PR_STORE_ENTRYID_EMSMDB_V1 im Cache-Modus müssen Si
 
 
 
-[Kanonische PidTagStoreEntryId-Eigenschaft](pidtagstoreentryid-canonical-property.md)
+[PidTagStoreEntryId (kanonische Eigenschaft)](pidtagstoreentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

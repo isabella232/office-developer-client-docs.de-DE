@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMemberRights-Eigenschaft
+title: PidTagMemberRights (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794601"
 ---
-# <a name="pidtagmemberrights-canonical-property"></a>Kanonische PidTagMemberRights-Eigenschaft
+# <a name="pidtagmemberrights-canonical-property"></a>PidTagMemberRights (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Reihe von Bits an, die die Rechte von dieser Member in einem Ordne
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle zum Rechte eines Elements in einem Ordner zu definieren. Diese Rechte können angezeigt und geändert werden. Die folgenden Werte sind für diese Eigenschaft festgelegten Berechtigungen. 
   
@@ -128,7 +128,7 @@ Mapitags.h
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

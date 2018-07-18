@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalEntryId-Eigenschaft
+title: PidTagOriginalEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794698"
 ---
-# <a name="pidtagoriginalentryid-canonical-property"></a>Kanonische PidTagOriginalEntryId-Eigenschaft
+# <a name="pidtagoriginalentryid-canonical-property"></a>PidTagOriginalEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die ursprünglichen Eintrags-ID für einen Eintrag aus einem Adressbuch
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Eigenschaften, die der ursprünglichen Quelle eines Eintrags kopierten Informationen enthalten.
   

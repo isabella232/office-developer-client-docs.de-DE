@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInternetReferences-Eigenschaft
+title: PidTagInternetReferences (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794508"
 ---
-# <a name="pidtaginternetreferences-canonical-property"></a>Kanonische PidTagInternetReferences-Eigenschaft
+# <a name="pidtaginternetreferences-canonical-property"></a>PidTagInternetReferences (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Wert der Verweise Header ein Feld einer Nachricht Multipurpose Inte
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um ein Kopfzeilenfeld Verweise generiert werden soll, müssen die Clients diese Eigenschaften auf den gewünschten Wert festlegen. MIME-Writer müssen den Wert dieser Eigenschaften in die Verweise Kopfzeilenfeld kopieren.
   

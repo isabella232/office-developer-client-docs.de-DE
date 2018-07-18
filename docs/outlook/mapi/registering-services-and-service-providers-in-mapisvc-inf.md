@@ -1,5 +1,5 @@
 ---
-title: Registrieren von Diensten und Dienstanbieter in MapiSvc.inf
+title: Registrieren von Diensten und Dienstanbietern in MapiSvc.inf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795359"
 ---
-# <a name="registering-services-and-service-providers-in-mapisvcinf"></a>Registrieren von Diensten und Dienstanbieter in MapiSvc.inf
+# <a name="registering-services-and-service-providers-in-mapisvcinf"></a>Registrieren von Diensten und Dienstanbietern in MapiSvc.inf
 
  
   

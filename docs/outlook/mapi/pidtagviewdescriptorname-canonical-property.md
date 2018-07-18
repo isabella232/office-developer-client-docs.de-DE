@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagViewDescriptorName-Eigenschaft
+title: PidTagViewDescriptorName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795285"
 ---
-# <a name="pidtagviewdescriptorname-canonical-property"></a>Kanonische PidTagViewDescriptorName-Eigenschaft
+# <a name="pidtagviewdescriptorname-canonical-property"></a>PidTagViewDescriptorName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Der Name der eine Ansicht Deskriptor enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften müssen auf eine nicht leere Zeichenfolge für eine Nachricht Ordner zuordnen Informationen (FAI) festgelegt werden, die Ansichtsdefinitionen enthält.
   

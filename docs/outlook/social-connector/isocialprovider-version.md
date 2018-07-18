@@ -27,11 +27,11 @@ Gibt eine Zeichenfolge, die die Versionsnummer des Anbieters für diese für soz
 
 Eine Zeichenfolge, die die Versionsnummer des Anbieters enthält.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Versionszeichenfolge sollten die _Hauptversion_verwenden. _MinorVersion_ -Format (beispielsweise 1.4730). 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

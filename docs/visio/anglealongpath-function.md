@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796420"
 ---
-# <a name="anglealongpath-function"></a>ANGLEALONGPATH-Funktion
+# <a name="anglealongpath-function"></a>ANGLEALONGPATH Function
 
 Gibt den Winkel der Tangenten zum Pfad an einem gegebenen Punkt zurück.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

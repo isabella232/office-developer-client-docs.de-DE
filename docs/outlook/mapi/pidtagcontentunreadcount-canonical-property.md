@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContentUnreadCount-Eigenschaft
+title: PidTagContentUnreadCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794247"
 ---
-# <a name="pidtagcontentunreadcount-canonical-property"></a>Kanonische PidTagContentUnreadCount-Eigenschaft
+# <a name="pidtagcontentunreadcount-canonical-property"></a>PidTagContentUnreadCount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Anzahl der ungelesenen Nachrichten in einem Ordner enthält, wie Sie mithilf
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft von der Nachrichtenspeicher berechnet wird für zwei unterschiedliche, obwohl verbunden, Zwecke. Auf ein MAPI-Folder-Objekt enthält sie die Anzahl der Nachrichten in einem Ordner. In eine Überschriftenzeile in kategorisierten MAPI-Tabellen enthält sie die Anzahl der ungelesenen nicht zugeordneten Nachrichten in der Kategorie, die diese Zeile mit der Spaltenüberschrift entspricht.
   

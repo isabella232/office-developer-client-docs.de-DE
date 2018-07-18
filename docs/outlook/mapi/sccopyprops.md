@@ -70,7 +70,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Unbekannte Eigenschaft vom Typ aufgetreten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das neue Array und ihre Daten befinden sich in einem Puffer mit einer einzelnen Reservierung erstellt, und die [ScRelocProps](screlocprops.md) -Funktion kann zum Anpassen der Zeiger in den einzelnen [SPropValue](spropvalue.md) Strukturen verwendet werden. Bevor Sie diese Anpassung sind der Zeiger gültig. 
   

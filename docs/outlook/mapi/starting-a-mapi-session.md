@@ -1,5 +1,5 @@
 ---
-title: MAPI-Sitzung starten
+title: Staren einer MAPI-Sitzung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795623"
 ---
-# <a name="starting-a-mapi-session"></a>MAPI-Sitzung starten
+# <a name="starting-a-mapi-session"></a>Staren einer MAPI-Sitzung
 
   
   
@@ -35,11 +35,11 @@ Es ist, zwar eine große Menge von Arbeit während der Sitzung starten sind die 
     
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[MAPI-Initialisierung](initializing-mapi.md)
+[Initialisieren von MAPI](initializing-mapi.md)
   
 > Beschreibt, wie MAPI für eine Sitzung nicht initialisiert werden.
     
-[Initialisierung von OLE für die MAPI](initializing-ole-for-mapi.md)
+[Initialisieren von OLE für MAPI](initializing-ole-for-mapi.md)
   
 > Beschreibt die Anrufe tätigen OLE für die Verwendung mit MAPI nicht initialisiert werden.
     

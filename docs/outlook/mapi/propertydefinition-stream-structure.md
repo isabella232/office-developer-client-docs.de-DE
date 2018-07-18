@@ -38,8 +38,8 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook-Elemente und Felder](outlook-items-and-fields.md)
-- [Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu.](how-to-add-a-definition-for-a-new-user-defined-field.md)
-- [PropertyDefinition Stream-Beispiel](propertydefinition-stream-sample.md)
-- [Stream-Strukturen](stream-structures.md)
+- [Elemente und Felder in Outlook](outlook-items-and-fields.md)
+- [Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
+- [Beispiel für PropertyDefinition-Stream](propertydefinition-stream-sample.md)
+- [Streamstrukturen](stream-structures.md)
 

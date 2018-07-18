@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPriority-Eigenschaft
+title: PidTagPriority (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794805"
 ---
-# <a name="pidtagpriority-canonical-property"></a>Kanonische PidTagPriority-Eigenschaft
+# <a name="pidtagpriority-canonical-property"></a>PidTagPriority (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die relative Priorität der Nachricht enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft und die Eigenschaft **PR_IMPORTANCE** ([PidTagImportance](pidtagimportance-canonical-property.md)) darf nicht verwechselt werden. Bedeutung der Wert für Benutzer, während der Priorität angibt, die Reihenfolge oder Geschwindigkeit, an dem die Nachricht soll, von der messaging-Systemsoftware gesendet werden, an. Höherer Priorität Gibt in der Regel höhere Kosten. Höhere Priorität ist in der Regel eine andere Darstellung von der Benutzeroberfläche zugeordnet.
   

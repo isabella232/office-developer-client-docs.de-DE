@@ -1,5 +1,5 @@
 ---
-title: Abrufen von Informationen Freunde
+title: Abrufen von Informationen von Freunden
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795952"
 ---
-# <a name="getting-friends-information"></a>Abrufen von Informationen Freunde
+# <a name="getting-friends-information"></a>Abrufen von Informationen von Freunden
 
 Outlook Social Connector (OSC) die [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) -Methode aufgerufen, um die Funktionen des OSC-Anbieter für soziale Netzwerke bestimmen. Die **GetFriends** und **CacheFriends** -Elemente in der zurückgegebenen **Funktionen** XML angeben, dass der OSC-Anbieter erste Freunde unterstützt und Zwischenspeichern Freunde als Outlook im entsprechenden Kontakteordner Kontaktelemente, kann die OSC vornehmen. die folgenden aufrufende Sequenz. Die OSC ruft Methoden in der aufgeführten Reihenfolge aus, um Informationen und Bilder erhalten (wie durch die [ISocialPerson](isocialpersoniunknown.md) -Schnittstelle unterstützt) für Freunde im sozialen Netzwerk. 
   

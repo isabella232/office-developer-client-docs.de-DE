@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmSubtreeEntryId-Eigenschaft
+title: PidTagIpmSubtreeEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794520"
 ---
-# <a name="pidtagipmsubtreeentryid-canonical-property"></a>Kanonische PidTagIpmSubtreeEntryId-Eigenschaft
+# <a name="pidtagipmsubtreeentryid-canonical-property"></a>PidTagIpmSubtreeEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID der Stamm des untergeordneten Ordner zwischen Personen 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft stellt den Stamm der Hierarchie IPM. IPM Clients keine Ordner angezeigt werden sollen, die nicht Unterordner des durch diese Eigenschaft dargestellt wird sind.
   

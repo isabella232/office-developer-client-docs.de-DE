@@ -40,7 +40,7 @@ typedef struct _SLPSTRArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SLPSTRArray
   
 > Zeiger auf ein Array von Zeichenfolgen mit Null beendet 8-Bit-Zeichen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu PT_MV_STRING8 finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
   

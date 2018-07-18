@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInternetMailOverrideFormat-Eigenschaft
+title: PidTagInternetMailOverrideFormat (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794497"
 ---
-# <a name="pidtaginternetmailoverrideformat-canonical-property"></a>Kanonische PidTagInternetMailOverrideFormat-Eigenschaft
+# <a name="pidtaginternetmailoverrideformat-canonical-property"></a>PidTagInternetMailOverrideFormat (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt die Kodierungsmethode und HTML-Inklusion für Anlagen, die für ausgehende 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Informationen über die der untergeordneten Bereiche, in denen diese Eigenschaft aufgeteilt wird, finden Sie unter [[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx). 
   

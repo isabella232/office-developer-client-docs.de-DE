@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachmentLinkId-Eigenschaft
+title: PidTagAttachmentLinkId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794099"
 ---
-# <a name="pidtagattachmentlinkid-canonical-property"></a>Kanonische PidTagAttachmentLinkId-Eigenschaft
+# <a name="pidtagattachmentlinkid-canonical-property"></a>PidTagAttachmentLinkId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt den Typ des Message-Objekts mit der dieser Anlage verknüpft ist.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 0 muss sein, es sei denn, die durch andere Protokolle, die die Nachricht erweitern und Attachment-Objektprotokoll wie bereits erwähnt in [[MS-OXCMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)außer Kraft gesetzt.
   

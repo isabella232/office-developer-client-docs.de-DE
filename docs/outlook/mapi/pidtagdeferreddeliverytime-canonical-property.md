@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDeferredDeliveryTime-Eigenschaft
+title: PidTagDeferredDeliveryTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794309"
 ---
-# <a name="pidtagdeferreddeliverytime-canonical-property"></a>Kanonische PidTagDeferredDeliveryTime-Eigenschaft
+# <a name="pidtagdeferreddeliverytime-canonical-property"></a>PidTagDeferredDeliveryTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wenn ein Absender eine Nachricht zugestellt möchte.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI keine verzögerte Übermittlung ausgeführt wird; Es ist eine Option des zugrunde liegenden Nachrichtensystem verzögerte Übermittlung zu behandeln.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmAppointmentEntryId-Eigenschaft
+title: PidTagIpmAppointmentEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794528"
 ---
-# <a name="pidtagipmappointmententryid-canonical-property"></a>Kanonische PidTagIpmAppointmentEntryId-Eigenschaft
+# <a name="pidtagipmappointmententryid-canonical-property"></a>PidTagIpmAppointmentEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook-Kalender enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf eine bestimmte Nachricht Store die folgenden Schritte aus. 
   

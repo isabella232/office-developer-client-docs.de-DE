@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMemberEntryId-Eigenschaft
+title: PidTagMemberEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794600"
 ---
-# <a name="pidtagmemberentryid-canonical-property"></a>Kanonische PidTagMemberEntryId-Eigenschaft
+# <a name="pidtagmemberentryid-canonical-property"></a>PidTagMemberEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Directory Eintrag Objektbezeichner des Mitglied Tabelle System Acce
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird durch die [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, um eine Person oder Rolle, denen die SACL gilt, eindeutig zu identifizieren. Nachdem ein Element in der SACL-Tabelle erstellt wurde, kann die **ENTRYID** geändert werden. Zum Ändern dieser Einstellung müssen Sie das Tabelle Element löschen und mit einem anderen **ENTRYID**neu erstellen.
   

@@ -58,6 +58,6 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |IsCustomNameU  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Beschreibt, ob der universelle Name durch den Benutzer angepasst wurde.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
 |Name  <br/> |XSD: String  <br/> |Optional  <br/> |Gibt den Namen der Sprache abhängig von der DocumentSheet.  <br/> |Werte des Typs xsd: String.  <br/> |
 |NameU  <br/> |XSD: String  <br/> |Optional  <br/> |Der sprachenunabhängige Name des die DocumentSheet gibt.  <br/> |Werte des Typs xsd: String.  <br/> |
-|UniqueID  <br/> |XSD: String  <br/> |Optional  <br/> |Optionaler String-Wert. Eine GUID (globally unique Identifier), die das Shape identifiziert.  <br/> |Werte des Typs xsd: String.  <br/> |
+|UniqueID  <br/> |XSD: String  <br/> |Optional  <br/> |Optionaler string-Wert. Eine GUID (globally unique Identifier), die das Shape identifiziert.  <br/> |Werte des Typs xsd: String.  <br/> |
    
 

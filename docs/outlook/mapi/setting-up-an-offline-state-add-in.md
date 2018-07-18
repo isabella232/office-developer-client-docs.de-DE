@@ -289,9 +289,9 @@ HRESULT CMyAddin::HrAddMenuItems()
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Offline State-API](about-the-offline-state-api.md) 
-- [Installieren das Beispiel Offline State-Add-in](installing-the-sample-offline-state-add-in.md)
-- [Zum Beispiel Offline State-Add-in](about-the-sample-offline-state-add-in.md)
-- [Überwachung Verbindungsstatus ändert mit einer Offline State-Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
-- [Trennen der Verbindung ein Offline State-Add-in](disconnecting-an-offline-state-add-in.md)
+- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md) 
+- [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
+- [Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
+- [Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+- [Trennen eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
 

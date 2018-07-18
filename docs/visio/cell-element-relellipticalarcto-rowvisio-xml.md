@@ -60,17 +60,17 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-|X  <br/> |Die X-Koordinate des Endscheitelpunkts eines Bogens relativ zu der Breite der Form.  <br/> |[RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md) <br/> |
-|v  <br/> |Die y-Koordinate des Endscheitelpunkts eines Bogens relativ zur Höhe des Shapes.  <br/> |[RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md) <br/> |
-|A  <br/> |Zeigen Sie die X-Koordinate des des Bogens relativ zu der Breite des Shapes. ein Punkt auf dem Bogen.  <br/> |[RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md) <br/> |
-|B  <br/> |Zeigen Sie die y-Koordinate des Steuerelements eines Bogens relativ zu der Breite des Shapes.  <br/> |[RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md) <br/> |
-|C  <br/> |Der Winkel der Größenachse des Bogens relativ zur x-Achse des übergeordneten Objekts.  <br/> |[RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md) <br/> |
-|D  <br/> |Das Verhältnis der Größenachse zur kleineren Achse eines Bogens.  <br/> |[RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md) <br/> |
+|X  <br/> |Die X-Koordinate des Endscheitelpunkts eines Bogens relativ zu der Breite der Form.  <br/> |[RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md) <br/> |
+|v  <br/> |Die y-Koordinate des Endscheitelpunkts eines Bogens relativ zur Höhe des Shapes.  <br/> |[RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md) <br/> |
+|A  <br/> |Zeigen Sie die X-Koordinate des des Bogens relativ zu der Breite des Shapes. ein Punkt auf dem Bogen.  <br/> |[RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md) <br/> |
+|B  <br/> |Zeigen Sie die y-Koordinate des Steuerelements eines Bogens relativ zu der Breite des Shapes.  <br/> |[RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md) <br/> |
+|C  <br/> |Der Winkel der Größenachse des Bogens im Verhältnis zur X-Achse der übergeordneten Einheit.  <br/> |[RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md) <br/> |
+|D  <br/> |Das Verhältnis der Größenachse zur kleineren Achse eines Bogens.  <br/> |[RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md) <br/> |
    
 

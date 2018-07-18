@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796819"
 ---
-# <a name="decimalsep-function"></a>DECIMALSEP Function
+# <a name="decimalsep-function"></a>DECIMALSEP-Funktion
 
 Gibt das Dezimaltrennzeichen für das Gebietsschema des aktuellen Benutzers zurück.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagSenderName
+title: PidTagSenderName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795131"
 ---
-# <a name="pidtagsendername-canonical-property"></a>Kanonische-Eigenschaft PidTagSenderName
+# <a name="pidtagsendername-canonical-property"></a>PidTagSenderName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Anzeigename des Absenders der Nachricht enthält.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

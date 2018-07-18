@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachSize-Eigenschaft
+title: PidTagAttachSize (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794122"
 ---
-# <a name="pidtagattachsize-canonical-property"></a>Kanonische PidTagAttachSize-Eigenschaft
+# <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Summe der Größen aller Eigenschaften auf eine Anlage in Bytes.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es wird empfohlen, dass Anlage Unterobjekte die **PR_ATTACH_SIZE** -Eigenschaft verfügbar machen. Die Summe in **PR_ATTACH_SIZE** enthaltenen enthält die Größe des **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md)) oder **PR_ATTACH_DATA_OBJ** ([PidTagAttachDataObject](pidtagattachdataobject-canonical-property.md))-Eigenschaft. Dementsprechend ist **PR_ATTACH_SIZE** in der Regel größer als der Inhalt der Anlage allein. 
   
@@ -62,7 +62,7 @@ mapitags.h
 
 
 
-[Kanonische PidTagMessageSize-Eigenschaft](pidtagmessagesize-canonical-property.md)
+[PidTagMessageSize (kanonische Eigenschaft)](pidtagmessagesize-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

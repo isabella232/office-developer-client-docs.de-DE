@@ -1,5 +1,5 @@
 ---
-title: Einstellung Platz für eine Tabelle mit einem Wert für Bruchzahlen
+title: Festlegen der Tabellenposition mit einem Bruchwert
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795517"
 ---
-# <a name="setting-table-position-with-a-fractional-value"></a>Einstellung Platz für eine Tabelle mit einem Wert für Bruchzahlen
+# <a name="setting-table-position-with-a-fractional-value"></a>Festlegen der Tabellenposition mit einem Bruchwert
 
   
   

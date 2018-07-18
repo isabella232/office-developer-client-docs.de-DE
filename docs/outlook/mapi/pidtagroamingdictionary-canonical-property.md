@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRoamingDictionary-Eigenschaft
+title: PidTagRoamingDictionary (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795003"
 ---
-# <a name="pidtagroamingdictionary-canonical-property"></a>Kanonische PidTagRoamingDictionary-Eigenschaft
+# <a name="pidtagroamingdictionary-canonical-property"></a>PidTagRoamingDictionary (kanonische Eigenschaft)
 
 **Betrifft**: Outlook 
   
@@ -32,7 +32,7 @@ Enthält ein XML-Dokument, das Wörterbuch für die roaming beschreibt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält einen UNICODE-XML-Dokument, die die UTF8-Codierung verwendet. Eine Nachricht mit einem Wörterbuch Stream muss diese Eigenschaft mit dem folgenden Schema festlegen:
   

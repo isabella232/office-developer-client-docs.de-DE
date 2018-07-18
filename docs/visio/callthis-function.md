@@ -30,7 +30,7 @@ CALLTHIS ("** *Verfahren* **", ["** *Project* **"], [** *arg1* **, ** *arg2* **,
 |:-----|:-----|:-----|:-----|
 | _Verfahren_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Name der Prozedur, die aufgerufen werden soll.  <br/> |
 | _Projekt_ <br/> |Optional  <br/> |**String** <br/> |Das Projekt, das die Prozedur enthält.  <br/> |
-| _arg_ <br/> |Optional  <br/> |**Anzahl, String, Date oder Currency** <br/> |Wird als Parameter an die Prozedur übergeben,  <br/> |
+| _arg_ <br/> |Optional  <br/> |**Number, String, Date oder Currency** <br/> |Wird als Parameter an die Prozedur übergeben,  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 
@@ -63,7 +63,7 @@ Wenn Sie das Dokument mit der Zelle, die die CALLTHIS-Funktion nutzt, schließen
     
 - Fügen Sie Fenster-Nachrichten zum Schließen der Fenster ein, anstatt das Dokument zu schließen.
     
-Weitere Informationen zum Ausführen von Code in Visio finden Sie unter [Informationen zu Sicherheitseinstellungen und Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md) in dieser ShapeSheet-Referenz. 
+Weitere Informationen zum Ausführen von Code in Visio finden Sie unter [Informationen zu Sicherheitseinstellungen und zum Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md) in dieser ShapeSheet-Referenz. 
   
 ## <a name="example-1"></a>Beispiel 1
 

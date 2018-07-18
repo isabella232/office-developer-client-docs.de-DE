@@ -34,9 +34,9 @@ Tag ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Alle Zeitkomponenten in _Datetime_ oder _Expression_ wird verworfen. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRoamingXmlStream-Eigenschaft
+title: PidTagRoamingXmlStream (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794980"
 ---
-# <a name="pidtagroamingxmlstream-canonical-property"></a>Kanonische PidTagRoamingXmlStream-Eigenschaft
+# <a name="pidtagroamingxmlstream-canonical-property"></a>PidTagRoamingXmlStream (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen beliebigen XML-Stream.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält einen beliebigen Stream von XML-Daten. Andere Eigenschaften in der Nachricht möglicherweise bestimmte Schemas für die Verwendung in dieser Eigenschaft impliziert.
   

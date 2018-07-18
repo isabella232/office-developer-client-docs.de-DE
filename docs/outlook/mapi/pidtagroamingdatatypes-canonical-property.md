@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRoamingDatatypes-Eigenschaft
+title: PidTagRoamingDatatypes (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794990"
 ---
-# <a name="pidtagroamingdatatypes-canonical-property"></a>Kanonische PidTagRoamingDatatypes-Eigenschaft
+# <a name="pidtagroamingdatatypes-canonical-property"></a>PidTagRoamingDatatypes (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske dar, die angibt, welche Stream Eigenschaften für die Nac
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf eine oder mehrere der folgenden Werte festgelegt werden:
   

@@ -1,5 +1,5 @@
 ---
-title: Unterstützende Nachricht Service-Installation
+title: Unterstützen der Nachrichtendienstinstallation
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795668"
 ---
-# <a name="supporting-message-service-installation"></a>Unterstützende Nachricht Service-Installation
+# <a name="supporting-message-service-installation"></a>Unterstützen der Nachrichtendienstinstallation
 
   
   
@@ -44,5 +44,5 @@ Platzieren Sie das Setup-Programm in einem öffentlichen Verzeichnis. Dies ist w
 
 
 
-[Nachricht Service-Implementierung](message-service-implementation.md)
+[Nachrichtendienstimplementierung](message-service-implementation.md)
 

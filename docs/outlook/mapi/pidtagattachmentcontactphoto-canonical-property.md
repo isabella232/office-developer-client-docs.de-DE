@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachmentContactPhoto-Eigenschaft
+title: PidTagAttachmentContactPhoto (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794096"
 ---
-# <a name="pidtagattachmentcontactphoto-canonical-property"></a>Kanonische PidTagAttachmentContactPhoto-Eigenschaft
+# <a name="pidtagattachmentcontactphoto-canonical-property"></a>PidTagAttachmentContactPhoto (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt das Vorhandensein einer Anlage Foto für einen Kontakt an.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss auf TRUE festgelegt sein, und es sollte nur eine Anlage in einem bestimmten Kontaktobjekt vorhanden sein.
   

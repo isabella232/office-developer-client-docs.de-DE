@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNonDeliveryReportFromSearchKey-Eigenschaft
+title: PidTagNonDeliveryReportFromSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794639"
 ---
-# <a name="pidtagnondeliveryreportfromsearchkey-canonical-property"></a>Kanonische PidTagNonDeliveryReportFromSearchKey-Eigenschaft
+# <a name="pidtagnondeliveryreportfromsearchkey-canonical-property"></a>PidTagNonDeliveryReportFromSearchKey (kanonische Eigenschaft)
 
   
   

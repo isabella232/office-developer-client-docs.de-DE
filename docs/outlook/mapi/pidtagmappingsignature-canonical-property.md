@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMappingSignature-Eigenschaft
+title: PidTagMappingSignature (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794581"
 ---
-# <a name="pidtagmappingsignature-canonical-property"></a>Kanonische PidTagMappingSignature-Eigenschaft
+# <a name="pidtagmappingsignature-canonical-property"></a>PidTagMappingSignature (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Zuordnung Signatur für benannte Eigenschaften eines bestimmten MAPI-Objekts
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es wird empfohlen, diese Eigenschaft für Objekte mit dem benannten Eigenschaften verfügbar machen. Eine Clientanwendung sollte überprüfen Sie die Eigenschaft **PR_MAPPING_SIGNATURE** beider übergebener Objekte beim Kopieren mit dem Eigenschaften eines Objekts in einen anderen Namen. Verwendung dieser Eigenschaft können Sie minimieren übersetzen zwischen Namen und Bezeichner kopierten Eigenschaften. 
   

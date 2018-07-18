@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796709"
 ---
-# <a name="connection-points-section"></a>Abschnitt "Connection Points"
+# <a name="connection-points-section"></a>Connection Points Section
 
 Enthält eine Zeile und Zellen für jeden für das Shape definierten Verbindungspunkt.
   
@@ -26,6 +26,6 @@ Sie können Verbindungspunkte im Abschnitt **Connection Points** im ShapeSheet-F
   
 Wenn Ihr Shape kein Abschnitt **Connection Points** verfügt, können Sie einen Abschnitt **Connection Points** im ShapeSheet-Fenster einfügen. Mit der rechten Maustaste in das ShapeSheet-Fenster, klicken Sie auf **Abschnitt einfügen**, und klicken Sie dann auf **Verbindungspunkte**. Um einen vorhandenen Abschnitt Connection **Points** Verbindungspunkte hinzuzufügen, mit der rechten Maustaste in einer Zeile, und klicken Sie im Kontextmenü auf **Zeile einfügen** . 
   
-Sie können den Zeilentyp eines Verbindungspunkts in diesem Abschnitt, um zusätzliche Zellen anzuzeigen, die Sie für Scratch Berechnungen verwenden können, ändern. Zu diesem Zweck mit der rechten Maustaste in der Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern** . 
+Sie können den Zeilentyp eines Verbindungspunkts in diesem Abschnitt ändern, um zusätzliche Zellen anzuzeigen, die Sie für Berechnungsentwürfe verwenden können. Klicken Sie dazu mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern**. 
   
 

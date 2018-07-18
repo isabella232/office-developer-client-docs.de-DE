@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReturnedMessageid-Eigenschaft
+title: PidTagReturnedMessageid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794992"
 ---
-# <a name="pidtagreturnedmessageid-canonical-property"></a>Kanonische PidTagReturnedMessageid-Eigenschaft
+# <a name="pidtagreturnedmessageid-canonical-property"></a>PidTagReturnedMessageid (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Enthält True, wenn die ursprüngliche Nachricht mit einem Bericht nonread zurü
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein x. 400-Transportdienst wird diese Eigenschaft im ungelesene-Bericht.
   

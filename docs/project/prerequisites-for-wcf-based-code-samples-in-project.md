@@ -438,7 +438,7 @@ Es folgen einige der Links auf der Seite servereinstellungen für typische Berei
     
 - **Workflowphasen**
     
-- **Workflowstufen**
+- **Workflowphasen**
     
 - **Projektdetailseiten**
     
@@ -455,7 +455,7 @@ Zusätzliche Einstellungen werden von SharePoint Server 2013 für jede Project W
 - [Voraussetzungen für ASMX-basierte Codebeispiele in Project](prerequisites-for-asmx-based-code-samples-in-project.md)   
 - [Exemplarische Vorgehensweise: Entwickeln von PSI-Anwendungen mithilfe von WCF](http://msdn.microsoft.com/library/65707234-c3da-44e4-8364-32a6be28f645%28Office.15%29.aspx)   
 - [Verwenden des Identitätswechsels mit WCF](http://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)  
-- [Übersicht über Project PSI-Verweis](project-psi-reference-overview.md) 
+- [Project-PSI-Referenz – Übersicht](project-psi-reference-overview.md) 
 - [SharePoint Developer Center](http://msdn.microsoft.com/en-us/sharepoint/default.aspx)
     
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische Eigenschaftpidtagconversationtopic-Eigenschaft
+title: PidTagConversationTopic (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794259"
 ---
-# <a name="pidtagconversationtopic-canonical-property"></a>Kanonische Eigenschaftpidtagconversationtopic-Eigenschaft
+# <a name="pidtagconversationtopic-canonical-property"></a>PidTagConversationTopic (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Das Thema der ersten Nachricht in einer Unterhaltung Thread enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Unterhaltungsthreads stellt eine Reihe von Nachrichten und Antworten. Diese Eigenschaften werden für die erste Nachricht in einem Thread, in der Regel an die **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))-Eigenschaft festgelegt. Nachfolgende Nachrichten im Thread sollte im gleiche Thema ohne Änderung verwendet werden. 
   

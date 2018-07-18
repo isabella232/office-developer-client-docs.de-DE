@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagParentEntryId-Eigenschaft
+title: PidTagParentEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794787"
 ---
-# <a name="pidtagparententryid-canonical-property"></a>Kanonische PidTagParentEntryId-Eigenschaft
+# <a name="pidtagparententryid-canonical-property"></a>PidTagParentEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Ordners, der einen Ordner oder eine Nachricht enth�
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird durch Nachrichtenspeicher für alle Ordner und Nachrichten berechnet.
   
@@ -88,7 +88,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagFolderType-Eigenschaft](pidtagfoldertype-canonical-property.md)
+[PidTagFolderType (kanonische Eigenschaft)](pidtagfoldertype-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

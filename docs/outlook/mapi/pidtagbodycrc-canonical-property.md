@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBodyCrc-Eigenschaft
+title: PidTagBodyCrc (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794152"
 ---
-# <a name="pidtagbodycrc-canonical-property"></a>Kanonische PidTagBodyCrc-Eigenschaft
+# <a name="pidtagbodycrc-canonical-property"></a>PidTagBodyCrc (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen CRC CRC-Prüfung Wert auf den Nachrichtentext an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Nachrichtenspeicher können jeder CRC-Algorithmus, der einen PT_LONG Wert generiert. Es muss diese Eigenschaft als Teil der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode berechnen, wenn die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft festgelegt wurde, zum ersten Mal und wenn es später geändert wurde.
   

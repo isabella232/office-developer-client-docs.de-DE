@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoFreeBusyBusy-Eigenschaft
+title: PidTagScheduleInfoFreeBusyBusy (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795094"
 ---
-# <a name="pidtagscheduleinfofreebusybusy-canonical-property"></a>Kanonische PidTagScheduleInfoFreeBusyBusy-Eigenschaft
+# <a name="pidtagscheduleinfofreebusybusy-canonical-property"></a>PidTagScheduleInfoFreeBusyBusy (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Blöcke mit Zeit, die für die der Status beschäftigt ist.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format, Berechnung und Einschränkungen dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)), aber finden Sie unter Termine, die auf das zugehörige Calendar-Objekt gekennzeichnet sind.
   

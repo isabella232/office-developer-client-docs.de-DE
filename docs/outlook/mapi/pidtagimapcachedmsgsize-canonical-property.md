@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagImapCachedMsgsize-Eigenschaft
+title: PidTagImapCachedMsgsize (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19794488"
 ---
-# <a name="pidtagimapcachedmsgsize-canonical-property"></a>Kanonische PidTagImapCachedMsgsize-Eigenschaft
+# <a name="pidtagimapcachedmsgsize-canonical-property"></a>PidTagImapCachedMsgsize (kanonische Eigenschaft)
 
   
   

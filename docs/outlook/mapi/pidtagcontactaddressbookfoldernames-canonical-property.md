@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookFolderNames-Eigenschaft
+title: PidTagContactAddressBookFolderNames (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794218"
 ---
-# <a name="pidtagcontactaddressbookfoldernames-canonical-property"></a>Kanonische PidTagContactAddressBookFolderNames-Eigenschaft
+# <a name="pidtagcontactaddressbookfoldernames-canonical-property"></a>PidTagContactAddressBookFolderNames (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Namen der Kontakteordner, in dem e-Mail-Benutzer gespeichert werden
 |Datentyp:  <br/> |PT_MV_UNICODE PT_MV_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dies sind die Eigenschaften für einen Kontakt Adressbuch Profil.
   

@@ -33,7 +33,7 @@ Bestimmt den Typ der Inhalte, die aus der Abschrägung an.
 |10  <br/> |Durchsichtiges Pulver  <br/> |
 |11  <br/> |Transparent  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **BevelMaterialType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

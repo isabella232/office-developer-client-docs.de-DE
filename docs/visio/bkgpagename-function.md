@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796528"
 ---
-# <a name="bkgpagename-function"></a>BKGPAGENAME-Funktion
+# <a name="bkgpagename-function"></a>BKGPAGENAME Function
 
 Gibt den Namen einer Hintergrund als Zeichenfolge zurück.
   
@@ -28,13 +28,13 @@ BKGPAGENAME (** *LangID_opt* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _langID_opt_ <br/> |Optional  <br/> |**Numerische** <br/> |Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.  <br/> |
+| _langID_opt_ <br/> |Optional  <br/> |**Numeric** <br/> |Optionales Argument. Wird verwendet, um eine Sprache für die von der Funktion zurückgegebene Zeichenfolge anzugeben. Verwenden Sie 0 (Standardwert), um die lokale Sprache anzugeben. Verwenden Sie 750, um die universelle Sprache anzugeben.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Seite für die Sie die Funktion verwenden ein Hintergrundblatt die Zeichenfolge nicht "\<kein Hintergrund\>" zurückgegeben. 
   

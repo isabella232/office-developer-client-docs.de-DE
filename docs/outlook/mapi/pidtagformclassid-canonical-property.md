@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormClassId-Eigenschaft
+title: PidTagFormClassId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794383"
 ---
-# <a name="pidtagformclassid-canonical-property"></a>Kanonische PidTagFormClassId-Eigenschaft
+# <a name="pidtagformclassid-canonical-property"></a>PidTagFormClassId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den 128-Bit-Object Linking and Embedding (OLE) global eindeutigen Bezei
 |Datentyp:  <br/> |PT_CLSID  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die [MAPIUID](mapiuid.md) -Datenstruktur enthält die Definition des eindeutigen Bezeichners. 
   

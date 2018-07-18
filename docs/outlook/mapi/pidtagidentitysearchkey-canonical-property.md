@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIdentitySearchKey-Eigenschaft
+title: PidTagIdentitySearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794449"
 ---
-# <a name="pidtagidentitysearchkey-canonical-property"></a>Kanonische PidTagIdentitySearchKey-Eigenschaft
+# <a name="pidtagidentitysearchkey-canonical-property"></a>PidTagIdentitySearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Search-Schlüssel für einen Dienstanbieter Identität in einem mes
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird nicht als eine Eigenschaft für jedes Objekt, sondern nur als eine Spalte in einer Statustabelle angezeigt. Es ist Teil der Identität des Dienstanbieters die Tabellenzeile Status verfügbar zu machen. Identität des Anbieters in der Regel zu ihrer Firma auf dem Server verweist, doch verweisen auf eine beliebige Darstellung, die der Anbieter innerhalb der messaging-System definiert. 
   

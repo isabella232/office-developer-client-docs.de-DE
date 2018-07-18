@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTransmittableDisplayName-Eigenschaft
+title: PidTagTransmittableDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795257"
 ---
-# <a name="pidtagtransmittabledisplayname-canonical-property"></a>Kanonische PidTagTransmittableDisplayName-Eigenschaft
+# <a name="pidtagtransmittabledisplayname-canonical-property"></a>PidTagTransmittableDisplayName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen eines Empfängers Anzeige in einem sicheren Formular, das nic
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sollte von allen adressbuchanbietern implementierte implementiert werden. Sie enthalten die Version der Anzeigename den Namen des Empfängers, der mit der Meldung übertragen wird. Für die meisten adressbuchanbietern implementierte müssen diese Eigenschaften denselben Wert wie die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)). Anbieter, die nicht über einen sicheren Anzeigenamen PT_ERROR und MAPI-Änderungen der angezeigte Name zurückgegeben, durch den Namen in Anführungszeichen hinzufügen verfügen.
   

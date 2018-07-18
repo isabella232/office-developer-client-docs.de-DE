@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796569"
 ---
-# <a name="c-cell-geometry-section"></a>Zelle "C" (Abschnitt "Geometrie")
+# <a name="c-cell-geometry-section"></a>C Cell (Geometry Section)
 
 Stellt die Informationen in den verschiedenen Zeilen dar. In der Tabelle wird die Zelle C auf der Grundlage der Zeile beschrieben, in der sie enthalten ist.
   
@@ -27,25 +27,25 @@ Stellt die Informationen in den verschiedenen Zeilen dar. In der Tabelle wird di
 |[SplineStart](splinestart-row-geometry-section.md) <br/> | Der letzte Knoten eines Splines.  <br/> |
 |[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine *X* -Koordinate eines Punkts auf der Ellipse; gepaart mit einer *y* -Koordinate, dargestellt durch die Zelle [D](d-cell-geometry-section.md) .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle C nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie eine Referenz auf die Zelle C nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Geometrie *i* . C *j* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
 || Geometrie *i* . C1 (Zeile Ellipse)  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle C aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle C aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**VisRowVertex** +  *j* wobei *j* = 0, 1, 2...  <br/> |
-||**visRowVertex** (Ellipsenzeile)  <br/> |
-| Zellenindex:  <br/> |**visEccentricityAngle** (Zeile EllipticalArcTo)  <br/> |
-||**visNURBSKnotPrev** (Zeile NURBSTo)  <br/> |
-||**visSplineKnot3** (Zeile SplineStart)  <br/> |
-||**visEllipseMinorX** (Ellipsenzeile)  <br/> |
+||visRowVertex (Zeile Ellipse)  <br/> |
+| Zellenindex:  <br/> |visEccentricityAngle (Zeile EllipticalArcTo)  <br/> |
+||visNURBSKnotPrev (Zeile NURBSTo)  <br/> |
+||visSplineKnot3 (Zeile SplineStart)  <br/> |
+||visEllipseMinorX (Zeile Ellipse)  <br/> |
    
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAssociatedSharingProvider-Eigenschaft
+title: PidTagAssociatedSharingProvider (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794085"
 ---
-# <a name="pidtagassociatedsharingprovider-canonical-property"></a>Kanonische PidTagAssociatedSharingProvider-Eigenschaft
+# <a name="pidtagassociatedsharingprovider-canonical-property"></a>PidTagAssociatedSharingProvider (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Bestimmt, ob ein Anbieter für Persönliche Ordner-Datei (PST) Anmelden als eine
 |Datentyp:  <br/> |PT_CLSID  <br/> |
 |Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt an, ob eine PST-Datei für Microsoft SharePoint 2010 konfiguriert ist. Wenn die Eigenschaft nicht vorhanden ist, wurde die PST-Datei als eine Microsoft SharePoint 2010-PST-Datei nicht konfiguriert.
   

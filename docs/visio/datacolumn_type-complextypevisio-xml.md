@@ -92,7 +92,7 @@ Keine.
 |ColumnNameID  <br/> |XSD: String  <br/> |erforderlich  <br/> ||Werte des Typs xsd: String.  <br/> |
 |Währung  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
 |DataType  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedShort.  <br/> |
-|Grad  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
+|Degree  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
 |DisplayOrder  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
 |DisplayWidth  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> ||Werte des Typs Xsd:unsignedInt.  <br/> |
 |Hyperlink  <br/> |XSD: Boolean  <br/> |Optional  <br/> ||Werte des Typs xsd: Boolean.  <br/> |

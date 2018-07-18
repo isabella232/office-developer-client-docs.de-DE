@@ -1,5 +1,5 @@
 ---
-title: XML-Code für Funktionen
+title: XML für „capabilities“
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796084"
 ---
-# <a name="xml-for-capabilities"></a>XML-Code für Funktionen
+# <a name="xml-for-capabilities"></a>XML für „capabilities“
 
 Das **Capabilities** -Element im XML-Schema (OSC)-Anbieter ermöglicht einen OSC-Anbieter an seine Funktionalität. Eine solche Funktionalität umfasst Folgendes: 
   

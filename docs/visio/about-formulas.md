@@ -46,7 +46,7 @@ Eine Formel beginnt immer mit einem Gleichheitszeichen, das automatisch eingefü
     
 ## <a name="default-formulas"></a>Standardformeln
 
-Wenn Sie ein Shape erstellen, erstellt Visio Formeln für standardmäßig an. Um herauszufinden, was die standardmäßigen Formeln sind, zeichnen Sie eine einfache Form (beispielsweise ein Rechteck, eine Ellipse oder ein gerader Linie), und öffnen Sie das ShapeSheet-Fenster (klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **ShapeSheet anzeigen**).
+Wenn Sie ein Shape erstellen, erstellt Visio standardmäßig Formeln für das Shape. Um die standardmäßigen Formeln anzuzeigen, zeichnen Sie ein einfaches Shape (z. B. ein Rechteck, eine Ellipse oder eine gerade Linie), und öffnen Sie das ShapeSheet-Fenster (klicken Sie auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **ShapeSheet anzeigen**).
   
 ## <a name="inherited-formulas"></a>Geerbte Formeln
 

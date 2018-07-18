@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796496"
 ---
-# <a name="bitand-function"></a>BITAND-Funktion
+# <a name="bitand-function"></a>BITAND Function
 
 Gibt eine 16-Bit-Binärzahl in der jedes Bit auf 1 festgelegt ist, nur, wenn das entsprechende Bit in Binärzahl1 und binarynumber2 1 ist. Andernfalls wird das Bit auf 0 festgelegt. 
   
@@ -28,8 +28,8 @@ BITAND (** *Binärzahl1* **, ** *binarynumber2* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre Zahl1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
-| _binäre Zahl2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

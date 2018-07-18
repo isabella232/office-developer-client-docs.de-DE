@@ -16,15 +16,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796611"
 ---
-# <a name="change-the-name-and-view-the-id-of-a-shape"></a>Ändern des ID-Namens und der ID-Ansicht eines Shape
+# <a name="change-the-name-and-view-the-id-of-a-shape"></a>Ändern des Namens und Anzeigen der ID eines Shapes
 
 1. Wählen Sie ein Shape im Zeichnungsfenster aus.
     
-2. Klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Shape-Name**.
+2. Klicken Sie auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Shape-Name**.
     
 3. Geben Sie im Dialogfeld **Shape-Name** einen Namen ein. 
     
-    Die ID der Form wird oben im Dialogfeld **Shape-Name** aufgeführt. 
+    Die ID des Shapes wird oben im Dialogfeld **Shape-Name** angezeigt. 
     
 4. Klicken Sie auf **OK**.
     

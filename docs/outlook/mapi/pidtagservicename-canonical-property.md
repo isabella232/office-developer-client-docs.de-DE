@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServiceName-Eigenschaft
+title: PidTagServiceName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795159"
 ---
-# <a name="pidtagservicename-canonical-property"></a>Kanonische PidTagServiceName-Eigenschaft
+# <a name="pidtagservicename-canonical-property"></a>PidTagServiceName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen eines Diensts Nachricht als vom Benutzer in der Datei "MapiSv
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Name dieser Eigenschaften enthalten ist speziell für den Dienst. Es geht in MapiSvc.inf aktivieren Sie im Abschnitt [Services].
   

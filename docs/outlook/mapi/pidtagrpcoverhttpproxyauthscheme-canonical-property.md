@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRpcOverHttpProxyAuthScheme-Eigenschaft
+title: PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794987"
 ---
-# <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a>Kanonische PidTagRpcOverHttpProxyAuthScheme-Eigenschaft
+# <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a>PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Stellt das Authentifizierungsprotokoll für dieses Profil verwendet werden soll.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann für Standardauthentifizierung oder NT LAN Manager (NTLM) Authentifizierung festgelegt werden. Die möglichen Werte für diese Eigenschaft sind wie folgt.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResourceFlags-Eigenschaft
+title: PidTagResourceFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794976"
 ---
-# <a name="pidtagresourceflags-canonical-property"></a>Kanonische PidTagResourceFlags-Eigenschaft
+# <a name="pidtagresourceflags-canonical-property"></a>PidTagResourceFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags für die Message-Dienste und -Anbieter.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft beschreibt die Merkmale eines Diensts Nachricht, einem Dienstanbieter oder Status-Objekts. Die Kennzeichen, die für diese Eigenschaft festgelegt sind, hängt von dessen Kontext ab. Beispielsweise sind einige Kennzeichen gilt nur für Objekte der Status und anderen Flags nur für Spalten in der Tabelle der Dienste. 
   
@@ -138,7 +138,7 @@ Mapitags.h
 
 [IMsgServiceAdmin::MsgServiceTransportOrder](imsgserviceadmin-msgservicetransportorder.md)
   
-[Kanonische PidTagIdentityEntryId-Eigenschaft](pidtagidentityentryid-canonical-property.md)
+[PidTagIdentityEntryId (kanonische Eigenschaft)](pidtagidentityentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

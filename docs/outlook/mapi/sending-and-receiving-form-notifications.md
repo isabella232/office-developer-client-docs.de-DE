@@ -1,5 +1,5 @@
 ---
-title: Senden und Empfangen von Benachrichtigungen Formular
+title: Senden und Empfangen von Formularbenachrichtigungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795483"
 ---
-# <a name="sending-and-receiving-form-notifications"></a>Senden und Empfangen von Benachrichtigungen Formular
+# <a name="sending-and-receiving-form-notifications"></a>Senden und Empfangen von Formularbenachrichtigungen
 
   
   

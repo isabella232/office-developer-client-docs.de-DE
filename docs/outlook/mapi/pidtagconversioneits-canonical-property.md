@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagConversionEits-Eigenschaft
+title: PidTagConversionEits (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794257"
 ---
-# <a name="pidtagconversioneits-canonical-property"></a>Kanonische PidTagConversionEits-Eigenschaft
+# <a name="pidtagconversioneits-canonical-property"></a>PidTagConversionEits (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die codierten Informationstypen (EITs), die auf eine Nachricht während
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 X. 400-Umgebungen verwenden Sie diese Eigenschaft für ein Unzustellbarkeitsbericht und Delivery Reports.
   

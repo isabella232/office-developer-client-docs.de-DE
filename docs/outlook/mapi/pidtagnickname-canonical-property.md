@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNickname-Eigenschaft
+title: PidTagNickname (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794637"
 ---
-# <a name="pidtagnickname-canonical-property"></a>Kanonische PidTagNickname-Eigenschaft
+# <a name="pidtagnickname-canonical-property"></a>PidTagNickname (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Spitzname des Kontakts an.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind optional. Ihre Inhalte werden vom Benutzer definiert.
   

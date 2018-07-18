@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchOwnerId-Eigenschaft
+title: PidTagSearchOwnerId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795118"
 ---
-# <a name="pidtagsearchownerid-canonical-property"></a>Kanonische PidTagSearchOwnerId-Eigenschaft
+# <a name="pidtagsearchownerid-canonical-property"></a>PidTagSearchOwnerId (kanonische Eigenschaft)
 
   
   

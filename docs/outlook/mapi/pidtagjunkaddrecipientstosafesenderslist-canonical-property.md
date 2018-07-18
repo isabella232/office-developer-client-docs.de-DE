@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagJunkAddRecipientsToSafeSendersList-Eigenschaft
+title: PidTagJunkAddRecipientsToSafeSendersList (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794530"
 ---
-# <a name="pidtagjunkaddrecipientstosafesenderslist-canonical-property"></a>Kanonische PidTagJunkAddRecipientsToSafeSendersList-Eigenschaft
+# <a name="pidtagjunkaddrecipientstosafesenderslist-canonical-property"></a>PidTagJunkAddRecipientsToSafeSendersList (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt an, ob die e-Mail-Empfänger werden, die Liste sicherer Absender hinzugefü
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn dieser Parameter angegeben wurde, muss diese Eigenschaft auf 0 oder 1 festgelegt. Der Wert 1 gibt an, dass die e-Mail-Empfänger werden, die Liste sicherer Absender hinzugefügt werden soll. Der Wert 0 gibt an, dass die e-Mail-Empfänger werden nicht für die Liste sicherer Absender hinzugefügt werden.
   

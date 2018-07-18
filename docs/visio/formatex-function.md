@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797069"
 ---
-# <a name="formatex-function"></a>FORMATEX-Funktion
+# <a name="formatex-function"></a>FORMATEX Function
 
 Gibt das Ergebnis von Expression in SrcUnit als Zeichenfolge ausgewertet formatiert entsprechend Format wurde.
   
@@ -30,24 +30,24 @@ FORMATEX (** *Ausdruck* **, "** *Format* **", [** *SrcUnit* **], [** *DstUnit* *
 |:-----|:-----|:-----|:-----|
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine Kombination aus Konstanten, Operatoren, Funktionen und Bezügen auf ShapeSheet-Zellen, die einen Wert ergeben.  <br/> |
 | _format_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Formatierungsangabe zum Formatieren der Zeichenfolge verwendet. Weitere Informationen zu Formatierungsangaben finden Sie unter [Informationen zu Formatierungsangaben](about-format-pictures.md).  <br/> |
-| _srcUnit_ <br/> |Optional  <br/> |**String** <br/> | Einheiten zum Auswerten von Expression (in, cm usw.).  <br/> |
-| _dstUnit_ <br/> |Optional  <br/> |**String** <br/> |Einheiten, die für das Ergebnis von Expression (in, cm usw.) verwendet.  <br/> |
+| _srcUnit_ <br/> |Optional  <br/> |**String** <br/> | Einheiten zum Auswerten von expression (in, cm usw.).  <br/> |
+| _dstUnit_ <br/> |Optional  <br/> |**String** <br/> |Einheiten, die für das Ergebnis von expression verwendet werden sollen (in, cm usw.).  <br/> |
 | _langID_ <br/> |Optional  <br/> |**Nummer** <br/> |Die Sprache, die beim Formatieren von Datums-/Zeitangaben in Microsoft Office System verwendet wird.  <br/> |
 | _calID_ <br/> |Optional  <br/> |**Nummer** <br/> |Der Kalender, der beim Formatieren von Datums-/Zeitangaben in Microsoft Office System verwendet wird.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. Das Format muss für den Typ des Ausdrucks.
+Der Typ des Ausdrucks und der in der Formatierungsangabe angegebene Typ bestimmen das Verhalten der zurückgegebenen Zeichenfolge. format muss für den Typ des Ausdrucks gültig sein.
   
-Das Argument SrcUnit wird verwendet, um die Ergebnisse nicht typisierter Ausdruck, wie etwa 3 + 4 skalieren. Wenn das Ergebnis von Expression ausdrücklich einen Typ besitzt, wird beispielsweise 3 ft + 8 ft, SrcUnit ignoriert.
+Mit dem srcUnit-Argument werden typenlose Ergebnisse eines Ausdrucks skaliert, z. B. 3 + 4. Wenn das Ergebnis von expression ausdrücklich einen Typ besitzt, z. B. 3 cm + 8 cm, wird srcUnit ignoriert.
   
-Das Argument DstUnit wird verwendet, um die Maßeinheiten für das formatierte Ergebnis bestimmt. Wenn DstUnit nicht angegeben ist, werden die Einheiten für das Ergebnis des Ausdrucks verwendet.
+Mit dem dstUnit-Argument werden die Maßeinheiten für das formatierte Ergebnis bestimmt. Wenn dstUnit nicht angegeben wurde, werden die Einheiten für das Ergebnis des Ausdrucks verwendet.
   
-Gibt ein Fehler, wenn das Ergebnis von Expression und der erwartete Typ in Format unterschiedlich sind Wenn formatPicture Syntaxfehler im Format, oder wenn es nicht erkennt, dass die Einheiten als SrcUnit oder DstUnit übergeben.
+Ein Fehler wird zurückgegeben, wenn das Ergebnis von expression und der erwartete Typ in format unterschiedlich sind, wenn in format Syntaxfehler enthalten sind oder die als srcUnit bzw. dstUnit übergebenen Einheiten nicht erkannt werden.
   
 ## <a name="example"></a>Beispiel
 

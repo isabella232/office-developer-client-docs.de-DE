@@ -41,7 +41,7 @@ typedef struct _TABLE_NOTIFICATION
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulTableEvent**
   
@@ -55,11 +55,11 @@ TABLE_ERROR
   
 > In der Regel während der Verarbeitung eines asynchronen Vorgangs ist ein Fehler aufgetreten. Fehler bei der Verarbeitung der folgenden Methoden können dieses Ereignis generieren: 
     
-   - [SortTable](imapitable-sorttable.md)
+   - [IMAPITable::SortTable](imapitable-sorttable.md)
     
    - [IMAPITable::SetColumns](imapitable-setcolumns.md)
     
-   - [Methode IMAPITable:: Restrict](imapitable-restrict.md)
+   - [IMAPITable::Restrict](imapitable-restrict.md)
     
    Ein Client kann nicht nach dem Empfang ein TABLE_ERROR-Ereignis, auf die Genauigkeit der Inhalt der Tabelle verlassen. Darüber hinaus möglicherweise ausstehende Benachrichtigungen zu anderen Änderungen verloren. Die [IMAPITable::GetLastError](imapitable-getlasterror.md) -Methode bietet zusätzliche Informationen zu dem Fehler möglicherweise nicht, da es zu einem Zeitpunkt, was nicht notwendigerweise vom letzten Methodenaufruf generiert wurde. 
     
@@ -109,7 +109,7 @@ TABLE_SORT_DONE
   
 > [SRow](srow.md) -Struktur, die die betreffenden Zeile beschreibt. Diese Struktur ist für alle Tabelle Benachrichtigungsereignisse gefüllt. Für Benachrichtigungsereignisse der Tabelle, die keine Zeilendaten übergeben, das **cValues** Mitglied der **SRow** -Struktur auf 0 (null) festgelegt ist und der **LpProps** Member wird auf NULL festgelegt. Da diese Struktur **SRow** schreibgeschützt ist. Clients müssen eine Kopie davon vornehmen, wenn sie Änderungen vornehmen möchten. Die [ScDupPropset](scduppropset.md) -Funktion kann verwendet werden, um die Kopie zu erstellen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Tabelle\_Benachrichtigung** Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Das **Info** -Element enthält eine **Tabelle\_Benachrichtigung** Struktur, wenn der **UlEventType** Member der Struktur auf _FnevTableModified_festgelegt ist.
   
@@ -121,7 +121,7 @@ Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der fo
 |:-----|:-----|
 |[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
 |[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Benachrichtigung bei unterstützenden](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die **IMAPISupport** -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 Da Tabelle Benachrichtigungen asynchron sind, können Clients Benachrichtigung über eine hinzugefügte Zeile nach Informationen über das Hinzufügen auf andere Weise erhalten. Es ist möglich, erhalten ein TABLE_ERROR-Ereignis, wenn in einer **IMAPITable::Sort**, **IMAPITable::SetColumns** oder **Methode IMAPITable:: Restrict**-Methode ein Fehler aufgetreten ist, oder wenn eine zugrunde liegende versucht, eine Tabelle mit, aktualisieren, beispielsweise neu oder geänderte Zeilen. 
   
@@ -129,7 +129,7 @@ Da Tabelle Benachrichtigungen asynchron sind, können Clients Benachrichtigung �
 
 - [Benachrichtigung](notification.md) 
 - [ScDupPropset](scduppropset.md)
-- [' Srow '](srow.md)
+- [SRow](srow.md)
 - [SPropValue](spropvalue.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

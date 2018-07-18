@@ -21,7 +21,7 @@ Zeigt die aktuellen Werte der Winkel der Drehung entlang der X, y- und z-Achse e
 > [!NOTE]
 > Abschnitt 3-d Drehungseigenschaften enthält keinen Zellen, die steuern, Formeffekte Abschrägung an. Wenn eine Abschrägungseffekt festlegen möchten, ändern Sie die Werte der Zellen im Abschnitt [Eigenschaften Abschrägung](bevel-properties-section.md) . 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können die 3D-Drehung Werte im Dialogfeld **Shape formatieren** ändern (**Home** > **Formenarten** > **Effekte** > **3D-Drehung** oder durch eine Änderung vornehmen, um eine Zelle in der **3-d Drehungseigenschaften **Abschnitt. 
   

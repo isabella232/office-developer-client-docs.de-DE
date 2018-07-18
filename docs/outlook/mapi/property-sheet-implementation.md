@@ -1,5 +1,5 @@
 ---
-title: Implementierung von Eigenschaften Blatt
+title: Implementierung von Eigenschaftenblättern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795325"
 ---
-# <a name="property-sheet-implementation"></a>Implementierung von Eigenschaften Blatt
+# <a name="property-sheet-implementation"></a>Implementierung von Eigenschaftenblättern
 
   
   

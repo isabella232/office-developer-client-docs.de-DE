@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInstanceKey-Eigenschaft
+title: PidTagInstanceKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794484"
 ---
-# <a name="pidtaginstancekey-canonical-property"></a>Kanonische PidTagInstanceKey-Eigenschaft
+# <a name="pidtaginstancekey-canonical-property"></a>PidTagInstanceKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der eine Zeile in einer Tabelle eindeutig identifiziert.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Tabelle  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ein binärer Wert, der eine Zeile in einer Tabellenansicht eindeutig identifiziert. Es ist eine erforderliche Spalte in den meisten Tabellen. Wenn eine Zeile in zwei Ansichten enthalten ist, sind zwei andere Instanzenschlüssel. Der Instanzschlüssel einer Zeile abweichen jedes Mal, wenn die Tabelle geöffnet ist, aber konstant bleiben, während die Tabelle geöffnet ist. Zeilen hinzugefügt, während eine Tabelle verwendet wird wieder einen Instanzschlüssel nicht verwenden, der zuvor verwendet wurde. 
   

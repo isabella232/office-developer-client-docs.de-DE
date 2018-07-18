@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServiceUid-Eigenschaft
+title: PidTagServiceUid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795176"
 ---
-# <a name="pidtagserviceuid-canonical-property"></a>Kanonische PidTagServiceUid-Eigenschaft
+# <a name="pidtagserviceuid-canonical-property"></a>PidTagServiceUid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die [MAPIUID](mapiuid.md) -Struktur für einen Nachrichtendienst.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von MAPI auf Profil Section-Objekten berechnet. MAPI wird verwendet, um alle Anbieter zu gruppieren, die den Dienst angehören. Diese Eigenschaft wird als Parameter für die meisten [IMsgServiceAdmin](imsgserviceadminiunknown.md) Methoden bereitgestellt. Sie müssen nicht Mapisvc.inf angezeigt. 
   
@@ -54,7 +54,7 @@ Mapitags.h
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

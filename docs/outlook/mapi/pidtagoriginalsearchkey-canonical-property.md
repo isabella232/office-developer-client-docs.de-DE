@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSearchKey-Eigenschaft
+title: PidTagOriginalSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794720"
 ---
-# <a name="pidtagoriginalsearchkey-canonical-property"></a>Kanonische PidTagOriginalSearchKey-Eigenschaft
+# <a name="pidtagoriginalsearchkey-canonical-property"></a>PidTagOriginalSearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den ursprünglichen Suche Schlüssel für einen Eintrag aus einem Adres
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Eigenschaften, die der ursprünglichen Quelle eines Eintrags kopierten Informationen enthalten.
   

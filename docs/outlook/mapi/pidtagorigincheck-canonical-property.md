@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginCheck-Eigenschaft
+title: PidTagOriginCheck (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794745"
 ---
-# <a name="pidtagorigincheck-canonical-property"></a>Kanonische PidTagOriginCheck-Eigenschaft
+# <a name="pidtagorigincheck-canonical-property"></a>PidTagOriginCheck (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen binären Überprüfung-Wert, mit der einen Delivery Report Empfä
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft bietet eine Möglichkeit für ein Drittanbieter, wie ein Message Transfer Agent (MTA) oder ein messaging-Benutzer empfangen eines Unzustellbarkeitsberichts die gesendete Nachricht Origin überprüfen. Auf einer empfangenen Nachricht vorhanden sind, sollten diese Eigenschaft auf eine beliebige Übermittlungsbericht generiert, die als Antwort auf die Nachricht kopiert werden.
   

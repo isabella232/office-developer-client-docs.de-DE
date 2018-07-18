@@ -64,7 +64,7 @@ Keine.
 |Qualität  <br/> |XSD:unsignedByte  <br/> |Optional  <br/> |Gibt die Ausgabequalität der Schriftart an. Entspricht dem Feld GDI LOGFONTlfQuality.  <br/> |Werte des Typs Xsd:unsignedByte.  <br/> |
 |Durchgestrichen  <br/> |XSD:unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart eine Schriftart durchgestrichen aufweist. Entspricht dem Feld GDI LOGFONTlfStrikeOut.  <br/> |Werte des Typs Xsd:unsignedByte.  <br/> |
 |Unterstrichen  <br/> |XSD:unsignedByte  <br/> |Optional  <br/> |Gibt an, ob die Schriftart unterstrichen ist. Entspricht dem Feld GDI LOGFONTlfUnderline.  <br/> |Werte des Typs Xsd:unsignedByte.  <br/> |
-|Gewicht  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt die Breite der Schriftart an. Entspricht dem Feld GDI LOGFONTlfWeight.  <br/> |Werte des Typs xsd: int.  <br/> |
+|Weight  <br/> |XSD: int  <br/> |Optional  <br/> |Gibt die Breite der Schriftart an. Entspricht dem Feld GDI LOGFONTlfWeight.  <br/> |Werte des Typs xsd: int.  <br/> |
 |Breite  <br/> |XSD: int  <br/> |Optional  <br/> |Enthält die Breite des zugeordneten Shapes in Zeichnungseinheiten fest.  <br/> |Werte des Typs xsd: int.  <br/> |
    
 

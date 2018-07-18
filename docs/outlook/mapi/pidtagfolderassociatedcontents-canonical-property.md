@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFolderAssociatedContents-Eigenschaft
+title: PidTagFolderAssociatedContents (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794373"
 ---
-# <a name="pidtagfolderassociatedcontents-canonical-property"></a>Kanonische PidTagFolderAssociatedContents-Eigenschaft
+# <a name="pidtagfolderassociatedcontents-canonical-property"></a>PidTagFolderAssociatedContents (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine eingebettete Inhalt Table-Objekt, das Informationen über die Inha
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der zugehörige Inhaltstabelle stellt einen Unterordner, der nicht in der Inhaltstabelle standard angezeigt wird. Sie enthält den Ordner verknüpft oder ausgeblendet, Nachrichten. 
   
@@ -82,7 +82,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagAssociatedContentCount-Eigenschaft](pidtagassociatedcontentcount-canonical-property.md)
+[PidTagAssociatedContentCount (kanonische Eigenschaft)](pidtagassociatedcontentcount-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

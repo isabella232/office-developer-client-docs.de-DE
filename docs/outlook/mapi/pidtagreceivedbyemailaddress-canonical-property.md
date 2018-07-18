@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReceivedByEmailAddress-Eigenschaft
+title: PidTagReceivedByEmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794873"
 ---
-# <a name="pidtagreceivedbyemailaddress-canonical-property"></a>Kanonische PidTagReceivedByEmailAddress-Eigenschaft
+# <a name="pidtagreceivedbyemailaddress-canonical-property"></a>PidTagReceivedByEmailAddress (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enth채lt die e-Mail-Adresse f체r den messaging-Benutzer, der die Nachricht empf�
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele f체r die Adresseigenschaften f체r den messaging-Benutzer, der die Nachricht empf채ngt. Sie m체ssen von der eingehenden Adressbuchhierarchie festgelegt werden.
   
@@ -84,7 +84,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagEmailAddress-Eigenschaft](pidtagemailaddress-canonical-property.md)
+[PidTagEmailAddress (kanonische Eigenschaft)](pidtagemailaddress-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

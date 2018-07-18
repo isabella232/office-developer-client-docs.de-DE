@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachPayloadClass-Eigenschaft
+title: PidTagAttachPayloadClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794120"
 ---
-# <a name="pidtagattachpayloadclass-canonical-property"></a>Kanonische PidTagAttachPayloadClass-Eigenschaft
+# <a name="pidtagattachpayloadclass-canonical-property"></a>PidTagAttachPayloadClass (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Wert eines Felds Kopfzeile MIME-X-Nutzlast-Klasse.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um den Wert dieser Eigenschaften festzulegen, sollte MIME-Clients ein Kopfzeilenfeld X-Nutzlast-Klasse in eine MIME-Entität geschrieben werden, die als Anlage analysiert werden.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContentConfidentialityAlgorithmId-Eigenschaft
+title: PidTagContentConfidentialityAlgorithmId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794232"
 ---
-# <a name="pidtagcontentconfidentialityalgorithmid-canonical-property"></a>Kanonische PidTagContentConfidentialityAlgorithmId-Eigenschaft
+# <a name="pidtagcontentconfidentialityalgorithmid-canonical-property"></a>PidTagContentConfidentialityAlgorithmId (kanonische Eigenschaft)
 
   
   

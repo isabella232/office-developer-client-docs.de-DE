@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797036"
 ---
-# <a name="find-function"></a>FIND-Funktion
+# <a name="find-function"></a>FIND Function
 
 Sucht eine Zeichenfolge innerhalb einer anderen Zeichenfolge und gibt die Startposition der gesuchten relativ zu seiner Position in der Zeichenfolge, die er enthält Textzeichenfolge zurück.
   
@@ -37,7 +37,7 @@ Suchen Sie nach (** *Suchtext* **, ** *Within_text* **, [** *Erstes_Zeichen* **]
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn mehrere Übereinstimmungen gefunden werden, gibt die FIND-Funktion die Anfangsposition der die erste Übereinstimmung in der Zeichenfolge. Das Argument _Suchtext_ berücksichtigt Zeichen als Platzhalter werden nicht. 
   

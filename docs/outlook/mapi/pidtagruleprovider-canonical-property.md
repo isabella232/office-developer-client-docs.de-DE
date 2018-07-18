@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleProvider-Eigenschaft
+title: PidTagRuleProvider (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795045"
 ---
-# <a name="pidtagruleprovider-canonical-property"></a>Kanonische PidTagRuleProvider-Eigenschaft
+# <a name="pidtagruleprovider-canonical-property"></a>PidTagRuleProvider (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen der Anwendung, die eine Regel festlegt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zurückgestellt Aktionen müssen diese Eigenschaften zum Identifizieren des Codes, die interpretiert werden und die Regelaktion ausführen müssen.
   

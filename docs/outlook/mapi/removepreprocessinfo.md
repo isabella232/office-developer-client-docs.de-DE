@@ -51,7 +51,7 @@ S_OK
   
 > Vorverarbeitete Informationen wurde erfolgreich entfernt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange Ruft eine Funktion basierend auf **RemovePreprocessInfo**. Ein Transportdienstes registriert die Funktion **RemovePreprocessInfo** basierend gleichzeitig die parallele **PreprocessMessage** Basis-Funktion in einem Aufruf der [IMAPISupport::RegisterPreprocessor](imapisupport-registerpreprocessor.md) -Methode registriert. 
   

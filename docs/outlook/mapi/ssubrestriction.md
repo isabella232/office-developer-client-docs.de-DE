@@ -40,7 +40,7 @@ typedef struct _SSubRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSubObject**
   
@@ -58,7 +58,7 @@ PR_MESSAGE_ATTACHMENTS
   
 > Zeiger auf eine [SRestriction](srestriction.md) -Struktur. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Untergeordnete Objekt Einschränkungen werden durch die alle Tabellen nicht unterstützt. In der Regel nur Ordner Inhalt Tabellen und die Ergebnisse Suchordner unterstützt. Beispielsweise werden Einschränkungen untergeordneten Objekts verwendet, um eine Nachricht zu suchen, die einen bestimmten Typ Anlage oder ein Empfänger hat. 
   

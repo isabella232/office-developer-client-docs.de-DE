@@ -43,7 +43,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **lVerb**
   
@@ -69,7 +69,7 @@ PARAMETER MAPI_UNICODE
   
 > Der Anzeigename ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Anzeigename im ANSI-Format.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **SMAPIVerb** wird als Parameter in der folgenden Methoden übergeben: 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachTag-Eigenschaft
+title: PidTagAttachTag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794140"
 ---
-# <a name="pidtagattachtag-canonical-property"></a>Kanonische PidTagAttachTag-Eigenschaft
+# <a name="pidtagattachtag-canonical-property"></a>PidTagAttachTag (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen ASN. 1 Objektbezeichner angeben die Anwendung, die eine Anlage be
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft identifiziert die Anwendung, die die Anlage ursprünglich erzeugt hat.
   
@@ -66,7 +66,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagAttachMimeTag-Eigenschaft](pidtagattachmimetag-canonical-property.md)
+[PidTagAttachMimeTag (kanonische Eigenschaft)](pidtagattachmimetag-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

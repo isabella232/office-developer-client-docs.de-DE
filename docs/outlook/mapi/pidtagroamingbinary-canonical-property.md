@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRoamingBinary-Eigenschaft
+title: PidTagRoamingBinary (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794997"
 ---
-# <a name="pidtagroamingbinary-canonical-property"></a>Kanonische PidTagRoamingBinary-Eigenschaft
+# <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält eine Nachrichtendatenstrom eine Unterklasse der der **IPM zugeordnet. K
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält den Datenstrom ein **IPM zugeordnet. Konfiguration** Nachricht-Klasse. Das Format des Stream-Objekts hängt von der Nachrichtenklasse ab. Beispielsweise eine Nachricht vom Typ der Klasse **IPM. Configuration.Autocomplete** als [AutoVervollständigen Stream](autocomplete-stream.md)formatiert.
   

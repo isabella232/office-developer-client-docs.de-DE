@@ -35,7 +35,7 @@ FLOOR (** *Anzahl* **, ** *mehrere* **)
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn _mehrere_ nicht angegeben ist, wird die Zahl in Richtung 0 auf die nächste ganze Zahl gerundet. 
   

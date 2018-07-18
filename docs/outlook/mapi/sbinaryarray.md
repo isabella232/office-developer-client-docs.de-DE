@@ -40,7 +40,7 @@ typedef struct _SBinaryArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SBinaryArray
   
 > Zeiger auf ein Array von [SBinary](sbinary.md) -Strukturen, die binäre Werte enthält. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **SBinaryArray** wird verwendet, um Eigenschaften vom Typ PT_MV_BINARY beschreiben. 
   

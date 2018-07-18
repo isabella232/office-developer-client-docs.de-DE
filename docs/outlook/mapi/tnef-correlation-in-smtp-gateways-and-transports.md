@@ -1,5 +1,5 @@
 ---
-title: TNEF Korrelation SMTP-Gateways und Transport
+title: TNEF-Korrelation in SMTP-Gateways und Transport
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795736"
 ---
-# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>TNEF Korrelation SMTP-Gateways und Transport
+# <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>TNEF-Korrelation in SMTP-Gateways und Transport
 
   
   

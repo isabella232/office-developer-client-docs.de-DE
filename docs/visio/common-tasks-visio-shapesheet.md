@@ -18,13 +18,13 @@ ms.locfileid: "19796672"
 
 Diese Navigationsseite enthält Links zu Übersichtsthemen zur Programmierbarkeit in Visio. Klicken Sie unten auf die Links oder verwenden Sie das Inhaltsverzeichnis, um zu den folgenden Themen zu navigieren:
   
-- [Hinzufügen, ändern oder Löschen von Zeilen im ShapeSheet](add-change-or-delete-rows-in-the-shapesheet.md)
+- [Hinzufügen, Ändern oder Löschen von Zeilen im ShapeSheet](add-change-or-delete-rows-in-the-shapesheet.md)
     
 - [Hinzufügen, anzeigen, ausblenden oder Löschen eines Abschnitts](add-show-hide-or-delete-a-section.md)
     
-- [Ändern Sie den Namen und zeigen die ID eines Shapes an](change-the-name-and-view-the-id-of-a-shape.md)
+- [Ändern des Namens und Anzeigen der ID eines Shapes](change-the-name-and-view-the-id-of-a-shape.md)
     
-- [Kopieren und Einfügen einer Formel aus einer Zelle in eine andere](copy-and-paste-a-formula-from-one-cell-into-another.md)
+- [Kopieren und Einfügen einer Formel von einer Zelle in eine andere Zelle](copy-and-paste-a-formula-from-one-cell-into-another.md)
     
 - [Anzeigen von Formeln oder Werten in Zellen](display-formulas-or-values-in-cells.md)
     
@@ -32,18 +32,18 @@ Diese Navigationsseite enthält Links zu Übersichtsthemen zur Programmierbarkei
     
 - [Eingeben einer leeren Formel](enter-an-empty-formula.md)
     
-- [Ein ShapeSheet-Fenster verschieben](move-around-a-shapesheet-window.md)
+- [Navigieren in einem ShapeSheet-Fenster](move-around-a-shapesheet-window.md)
     
 - [Öffnen Sie aller ShapeSheets in einem Fenster](open-each-shapesheet-in-the-same-window.md)
     
-- [Öffnen Sie das ShapeSheet für ein Shape, eine Seite oder ein Dokument](open-the-shapesheet-for-a-shape-page-or-document.md)
+- [Öffnen des ShapeSheet für eine Form, Seite oder ein Dokument](open-the-shapesheet-for-a-shape-page-or-document.md)
     
 - [Verweisen auf eine Zelle in einer Formel](reference-a-cell-in-a-formula.md)
     
-- [Führen Sie im Entwicklermodus (Anzeigen der Entwicklerregisterkarte)](run-in-developer-mode-display-the-developer-tab.md)
+- [Ausführen des Entwicklermodus (Registerkarte „Entwicklertools“ anzeigen)](run-in-developer-mode-display-the-developer-tab.md)
     
 - [Anzeigen eines Objekts im ShapeSheet-Fenster](show-an-object-in-the-shapesheet-window.md)
     
-- [Geben Sie eine neue Formel für eine Zelle](type-a-new-formula-for-a-cell.md)
+- [Eingeben einer neuen Formel für eine Zelle](type-a-new-formula-for-a-cell.md)
     
 

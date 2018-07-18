@@ -60,13 +60,13 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-|X  <br/> |Wenn die **RelMoveTo** Zeile der ersten Zeile im Abschnitt ist, stellt die Zelle **X** die X-Koordinate des ersten Scheitelpunkts eines Shapes relativ zu der Breite der Form dar. Wenn die Zeile **RelMoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle **X** die X-Koordinate des ersten Scheitelpunkts hinter der Pfadlücke dar.  <br/> |[RelMoveTo Zeile (Abschnitt "Geometry")](relmoveto-row-geometry-section.md) <br/> |
-|v  <br/> |Wenn die **RelMoveTo** Zeile der ersten Zeile im Abschnitt ist, stellt die Zelle **Y** die y-Koordinate des ersten Scheitelpunkts eines Shapes relativ zur Höhe des Shapes. Wenn die Zeile **RelMoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle **Y** die y-Koordinate des ersten Scheitelpunkts hinter der Pfadlücke dar.  <br/> |[RelMoveTo Zeile (Abschnitt "Geometry")](relmoveto-row-geometry-section.md) <br/> |
+|X  <br/> |Wenn die **RelMoveTo** Zeile der ersten Zeile im Abschnitt ist, stellt die Zelle **X** die X-Koordinate des ersten Scheitelpunkts eines Shapes relativ zu der Breite der Form dar. Wenn die Zeile **RelMoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle **X** die X-Koordinate des ersten Scheitelpunkts hinter der Pfadlücke dar.  <br/> |[RelMoveTo Row (Geometry Section)](relmoveto-row-geometry-section.md) <br/> |
+|v  <br/> |Wenn die **RelMoveTo** Zeile der ersten Zeile im Abschnitt ist, stellt die Zelle **Y** die y-Koordinate des ersten Scheitelpunkts eines Shapes relativ zur Höhe des Shapes. Wenn die Zeile **RelMoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle **Y** die y-Koordinate des ersten Scheitelpunkts hinter der Pfadlücke dar.  <br/> |[RelMoveTo Row (Geometry Section)](relmoveto-row-geometry-section.md) <br/> |
    
 

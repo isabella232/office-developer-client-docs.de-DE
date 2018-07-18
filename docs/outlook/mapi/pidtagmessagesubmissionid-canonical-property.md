@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageSubmissionId-Eigenschaft
+title: PidTagMessageSubmissionId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794635"
 ---
-# <a name="pidtagmessagesubmissionid-canonical-property"></a>Kanonische PidTagMessageSubmissionId-Eigenschaft
+# <a name="pidtagmessagesubmissionid-canonical-property"></a>PidTagMessageSubmissionId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine System (MTS) ID für die Message Transfer Agent (MTA).
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von der MTA nach dem erfolgreichen Abschluss der Nachrichtenübermittlung zurückgegeben. Alle zukünftiger Kontakt mit dem MTA zu im Zusammenhang mit dieser Nachricht, wie etwa anfordernde Abbruch wird die MTS-ID in dieser Eigenschaft verwendet.
   

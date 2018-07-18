@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStartDate-Eigenschaft
+title: PidTagStartDate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795201"
 ---
-# <a name="pidtagstartdate-canonical-property"></a>Kanonische PidTagStartDate-Eigenschaft
+# <a name="pidtagstartdate-canonical-property"></a>PidTagStartDate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das Datum und die Uhrzeit eines Termins als durch eine Anwendung zur te
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Planen von Anwendungen sollte diese Eigenschaft und die Eigenschaften des **PR_END_DATE** ([PidTagEndDate](pidtagenddate-canonical-property.md)) festgelegt, wenn Senden von Besprechungsanfragen.
   

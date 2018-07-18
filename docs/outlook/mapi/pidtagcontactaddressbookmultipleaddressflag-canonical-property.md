@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookMultipleAddressFlag-Eigenschaft
+title: PidTagContactAddressBookMultipleAddressFlag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794196"
 ---
-# <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>Kanonische PidTagContactAddressBookMultipleAddressFlag-Eigenschaft
+# <a name="pidtagcontactaddressbookmultipleaddressflag-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlag (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein Flag, das auf true festgelegt ist, wenn der Anbieter pro Kontaktele
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft auf true festgelegt ist, ist der Anbieter Kontakte ohne e-Mail-Adressen nicht zulässig. Ist der Wert FALSE ist, zeigt der Anbieter alle Kontakte unabhängig davon, ob sie eine primäre e-Mail-Adresse besitzen. Nur die primäre e-Mail-Adresse wird berücksichtigt. Dies ist eine Eigenschaft für einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
   

@@ -42,7 +42,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element (Abschnitt "Line Farbverlauf")](row-element-line-gradient-sectionvisio-xml.md) <br/> |[LineGradientRow_Type](linegradientrow_type-complextypevisio-xml.md) <br/> |Enthält die Farbe, Transparenz und Position des einen Farbverlaufstopp für einen Farbverlauf Linie.  <br/> |
+|[Zeilenelement (Linienverlaufabschnitt)](row-element-line-gradient-sectionvisio-xml.md) <br/> |[LineGradientRow_Type](linegradientrow_type-complextypevisio-xml.md) <br/> |Enthält die Farbe, Transparenz und Position des einen Farbverlaufstopp für einen Farbverlauf Linie.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -60,14 +60,14 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-|GradientStopColor  <br/> |Der Wert der Farbe des Farbverlaufstopps.  <br/> |[Zeile mit Farbverlauf Stop (Abschnitt "Line Farbverlauf")](gradient-stop-row-line-gradient-section.md) <br/> |
-|GradientStopColorTrans  <br/> |Beenden Sie der Betrag der Transparenz des Farbverlaufs Farbe, als Prozentsatz.  <br/> |[Zeile mit Farbverlauf Stop (Abschnitt "Line Farbverlauf")](gradient-stop-row-line-gradient-section.md) <br/> |
-|GradientStopPosition  <br/> |Die Position des Farbverlaufstopps in Richtung des Farbverlaufs Zeile als Prozentwert aus der Ausgangspunkt für den Farbverlauf und die Außenkante des Farbverlaufs.  <br/> |[Zeile mit Farbverlauf Stop (Abschnitt "Line Farbverlauf")](gradient-stop-row-line-gradient-section.md) <br/> |
+|GradientStopColor  <br/> |Der Wert der Farbe des Farbverlaufstopps.  <br/> |[Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md) <br/> |
+|GradientStopColorTrans  <br/> |Beenden Sie der Betrag der Transparenz des Farbverlaufs Farbe, als Prozentsatz.  <br/> |[Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md) <br/> |
+|GradientStopPosition  <br/> |Die Position des Farbverlaufstopps in Richtung des Farbverlaufs Zeile als Prozentwert aus der Ausgangspunkt für den Farbverlauf und die Außenkante des Farbverlaufs.  <br/> |[Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md) <br/> |
    
 

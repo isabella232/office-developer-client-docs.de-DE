@@ -1,5 +1,5 @@
 ---
-title: Speichern eine Nachricht im Posteingang
+title: Speichern einer Nachricht im Posteingang
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795414"
 ---
-# <a name="saving-a-message-in-the-inbox"></a>Speichern eine Nachricht im Posteingang
+# <a name="saving-a-message-in-the-inbox"></a>Speichern einer Nachricht im Posteingang
 
   
   

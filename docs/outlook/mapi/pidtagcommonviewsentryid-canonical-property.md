@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCommonViewsEntryId-Eigenschaft
+title: PidTagCommonViewsEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794177"
 ---
-# <a name="pidtagcommonviewsentryid-canonical-property"></a>Kanonische PidTagCommonViewsEntryId-Eigenschaft
+# <a name="pidtagcommonviewsentryid-canonical-property"></a>PidTagCommonViewsEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID der vordefinierten gemeinsame Ansicht Ordner.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der gemeinsamen Ordner anzeigen enthält ein vordefiniertes Satzes von Standardansicht Bezeichner, während der Ansichtordner Bezeichner definiert durch ein messaging-Benutzer enthält. Diese Ordner, die nicht in der Hierarchie zwischen Personen Nachricht (IPM) sichtbar sind, können enthalten viele Ansicht Bezeichner, die jeweils als eine Nachricht gespeichert. Eine Clientanwendung kann wahlweise Zusammenführen von zwei Sätze der Bezeichner und diese beiden zur Verfügung stellen. 
   
@@ -56,9 +56,9 @@ Mapitags.h
 
 
 
-[Kanonische PidTagDefaultViewEntryId-Eigenschaft](pidtagdefaultviewentryid-canonical-property.md)
+[PidTagDefaultViewEntryId (kanonische Eigenschaft)](pidtagdefaultviewentryid-canonical-property.md)
   
-[Kanonische PidTagViewsEntryId-Eigenschaft](pidtagviewsentryid-canonical-property.md)
+[PidTagViewsEntryId (kanonische Eigenschaft)](pidtagviewsentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

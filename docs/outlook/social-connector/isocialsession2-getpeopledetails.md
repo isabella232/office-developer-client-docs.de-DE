@@ -33,7 +33,7 @@ _personsCollection_
   
 > [out] Eine XML-Zeichenfolge, die eine Auflistung von Person und Teile des Bildes Details enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Outlook Social Connector (OSC) **GetPeopleDetails** aufgerufen, wenn der OSC-Anbieter auf Abruf oder Hybriden Synchronisierung von Freunde und nicht Freunde unterstützt. 
   
@@ -43,6 +43,6 @@ Die OSC werden die Informationen zurückgegeben, die durch den Parameter _Person
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 - [Synchronisieren von Freunde und Aktivitäten](synchronizing-friends-and-activities.md)
 

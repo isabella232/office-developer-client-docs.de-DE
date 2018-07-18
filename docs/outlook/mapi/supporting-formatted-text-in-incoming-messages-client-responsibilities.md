@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19795669"
 ---
-# <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>Unterstützung von formatierten Text in eingehenden Nachrichten: Client Zuständigkeiten
+# <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>Unterstützung von formatiertem Text in eingehenden Nachrichten: Kundenaufgaben
 
   
   

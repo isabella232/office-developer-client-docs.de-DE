@@ -40,7 +40,7 @@ typedef struct _SAndRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cRes**
   
@@ -50,7 +50,7 @@ typedef struct _SAndRestriction
   
 > Zeiger auf ein Array von [SRestriction](srestriction.md) -Strukturen, die mit **eine Operation** kombiniert werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Ergebnis der **SAndRestriction** ist TRUE, wenn alle seine untergeordneten Einschränkungen zu TRUE ausgewertet werden. Es ist FALSE, wenn alle untergeordneten Beschränkung auf "false" ausgewertet wird. 
   

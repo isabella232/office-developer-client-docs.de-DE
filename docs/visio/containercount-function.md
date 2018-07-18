@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796725"
 ---
-# <a name="containercount-function"></a>CONTAINERCOUNT-Funktion
+# <a name="containercount-function"></a>CONTAINERCOUNT Function
 
 Gibt die Gesamtzahl der Container zurück, die das Shape als Element enthalten (einschließlich geschachtelter Beziehungen).
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

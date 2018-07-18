@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInternetLines-Eigenschaft
+title: PidTagInternetLines (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794499"
 ---
-# <a name="pidtaginternetlines-canonical-property"></a>Kanonische PidTagInternetLines-Eigenschaft
+# <a name="pidtaginternetlines-canonical-property"></a>PidTagInternetLines (kanonische Eigenschaft)
 
   
   

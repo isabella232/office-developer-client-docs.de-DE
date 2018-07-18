@@ -22,11 +22,11 @@ Legt eine aufzurufende URL-Adresse, einen Dateinamen oder einen UNC-Pfad fest.
   
 Sie können eine Adresse angeben, wie ein relativer Pfad basierend auf der Basispfad für das Dokument in das Feld **Hyperlinkbasis** auf der Registerkarte **Zusammenfassung** des Dialogfelds **Eigenschaften** definiert (klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Info**, klicken Sie auf ** Eigenschaften ** und klicken Sie dann auf **Erweiterte Eigenschaften**). Wenn das Dokument keinen Basispfad verfügt, navigiert die Anwendung basierend auf den Dokumentpfad. Wenn das Dokument nicht gespeichert wurde, ist der Hyperlink nicht definiert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert der Zelle Address auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie auf der Registerkarte **Einfügen** auf **Hyperlink** ). 
+Sie können den Wert der Zelle Address auch im Dialogfeld Hyperlinks festlegen (klicken Sie auf der Registerkarte Einfügen auf Hyperlink). 
   
-Wenn Sie einen Verweis auf die Zelle Address aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Bezug auf die Zelle Address aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

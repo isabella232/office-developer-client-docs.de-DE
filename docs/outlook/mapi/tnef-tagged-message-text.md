@@ -1,5 +1,5 @@
 ---
-title: TNEF-markierte Nachrichtentext
+title: TNEF-markierter Nachrichtentext
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795739"
 ---
-# <a name="tnef-tagged-message-text"></a>TNEF-markierte Nachrichtentext
+# <a name="tnef-tagged-message-text"></a>TNEF-markierter Nachrichtentext
 
   
   

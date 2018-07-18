@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReceivedRepresentingEntryId-Eigenschaft
+title: PidTagReceivedRepresentingEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794883"
 ---
-# <a name="pidtagreceivedrepresentingentryid-canonical-property"></a>Kanonische PidTagReceivedRepresentingEntryId-Eigenschaft
+# <a name="pidtagreceivedrepresentingentryid-canonical-property"></a>PidTagReceivedRepresentingEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID für den messaging-Benutzer, die von der empfangenden B
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den messaging-Benutzer, die von der empfangenden Benutzer dargestellt wird. Von der eingehenden Adressbuchhierarchie muss festgelegt werden, die auch für die Autorisierung oder Überprüfung des Delegaten zuständig ist. Wenn kein messaging Benutzer dargestellt wird, sollten diese Eigenschaft auf die Eintrags-ID, die in der Eigenschaft **PR_RECEIVED_BY_ENTRYID** ([PidTagReceivedByEntryId](pidtagreceivedbyentryid-canonical-property.md)) enthalten sind festgelegt werden.
   

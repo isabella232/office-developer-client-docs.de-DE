@@ -1,5 +1,5 @@
 ---
-title: Im Zusammenhang mit Outlook und sozialen Netzwerken der OSC
+title: Erstellen einer Beziehung zwischen dem OSC und Outlook bzw. sozialen Netzwerken
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796085"
 ---
-# <a name="relating-the-osc-with-outlook-and-social-networks"></a>Im Zusammenhang mit Outlook und sozialen Netzwerken der OSC
+# <a name="relating-the-osc-with-outlook-and-social-networks"></a>Erstellen einer Beziehung zwischen dem OSC und Outlook bzw. sozialen Netzwerken
 
 Outlook Social Connector (OSC) können in die Office-Visitenkarte und Outlook Personenbereich Aktivitäten, Status oder Foto Updates anzeigen, für einen Kollegen, Friend oder Personen, denen Sie zugeordnet sind. In der Standardeinstellung der OSC zeigt die Outlook-e-Mails, Anlagen, und Besprechungsanfragen von eine ausgewählte Person erhalten. Wenn die ausgewählte Person und der Office-Benutzer auf einer SharePoint-Website arbeiten, zeigt die OSC auch Dokument Updates und andere Website Aktivitäten aus dieser SharePoint-Website. Je nach dem Kontext der Zuordnung, die der Benutzer Office interessiert ist, kann der Benutzer Office OSC-Anbieter für Line-of-Business Applications, interne Unternehmenswebsites oder eine Vielzahl von professional und sozialen Netzwerk-Websites, wie beispielsweise LinkedIn installieren, Facebook und Windows Live.
   

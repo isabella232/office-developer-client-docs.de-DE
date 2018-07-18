@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOtherAddressCountry-Eigenschaft
+title: PidTagOtherAddressCountry (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794748"
 ---
-# <a name="pidtagotheraddresscountry-canonical-property"></a>Kanonische PidTagOtherAddressCountry-Eigenschaft
+# <a name="pidtagotheraddresscountry-canonical-property"></a>PidTagOtherAddressCountry (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält der e-Mail-Nachrichten des Benutzers anderen Land/Region.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

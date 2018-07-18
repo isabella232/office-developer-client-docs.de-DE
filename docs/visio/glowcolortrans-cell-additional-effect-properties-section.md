@@ -18,7 +18,7 @@ ms.locfileid: "19797098"
 
 Bestimmt die Transparenzstufe für die Farbe für die Kontur des das Shape Leuchten, als Prozentsatz an. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **GlowColorTrans** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

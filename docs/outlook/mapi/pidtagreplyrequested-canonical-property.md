@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReplyRequested-Eigenschaft
+title: PidTagReplyRequested (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794949"
 ---
-# <a name="pidtagreplyrequested-canonical-property"></a>Kanonische PidTagReplyRequested-Eigenschaft
+# <a name="pidtagreplyrequested-canonical-property"></a>PidTagReplyRequested (kanonische Eigenschaft)
 
   
   

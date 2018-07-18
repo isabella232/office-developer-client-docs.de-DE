@@ -39,7 +39,7 @@ typedef struct _SPropertyRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **RelOp-Element**
   
@@ -67,7 +67,7 @@ typedef struct _SPropertyRestriction
   
 > Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den konstanten Wert enthält, der im Vergleich verwendet werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es sind zwei Eigenschaftentags in eine **SPropertyRestriction** -Struktur. Eine im **UlPropTag** -Member ist und der andere im **UlPropTag** -Member der **SPropValue** Struktur auf **LpProp**zeigt. MAPI erfordert das Feld für den Bezeichner und die Eigenschaft Typ dar. Die **UlPropTag** in **SPropertyRestriction** ist der Eigenschaft abgeglichen wird und der Zeiger **LpProp** der **SPropertyRestriction** der **UlPropTag**Art der **SPropValue** gibt an, wie der Member-Wert, der die **LpProp** Union interpretiert werden. Die beiden Eigenschaftstypen müssen übereinstimmen, sonst den Fehlerwert MAPI_E_TOO_COMPLEX wird zurückgegeben, wenn die Einschränkung wieder in einem Aufruf von [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md)verwendet wird. 
   
@@ -85,9 +85,9 @@ Mehrwertige Eigenschaftentags können in den folgenden Methoden verwendet werden
     
 - [IMAPITable::SetColumns](imapitable-setcolumns.md)
     
-- [SortTable](imapitable-sorttable.md)
+- [IMAPITable::SortTable](imapitable-sorttable.md)
     
-- [Methode IMAPITable:: Restrict](imapitable-restrict.md)
+- [IMAPITable::Restrict](imapitable-restrict.md)
     
 > [!IMPORTANT]
 > Ist ein wichtiger Fall, wenn die zwei Eigenschaftentags übereinstimmt, wird nicht durch die Beschränkung auf eine mehrwertige Eigenschaft auf. In diesem Fall muss Folgendes gelten. > Wenn der Eigenschaftstyp von der **UlPropTag** des **SPropertyRestriction** das mehrwertige Eigenschaft Typ Bitflag MV_FLAG (0 x 1000) enthält, sollte der Eigenschaftstyp von der **UlPropTag** des **SPropValue** der erste Wert minus der MV_ übereinstimmen. FLAG Bitflag, d. h., die Umkehrung. > Beispielsweise beschränken Sie die Verwendung einer mehrwertige Zeichenfolgeneigenschaft benutzerdefinierte wie eine Kategorie mit einer Eigenschaftentag für die Eigenschaft 0x8012101f, d. h., PROP_TAG (MV_FLAG | PT_UNICODE 0x8012)), als würde die entsprechende **SPropertyRestriction** angezeigt folgt. >  `SPropertyRestriction.ulPropTag = 0x8012101f; // attempt to restrict a MultiValue property`>  `SPropertyRestriction.lpProp->ulPropTag = 0x8012001f; // the lpszW member of the Value property is valid`>  `SPropertyRestriction.lpProp.Value->lpszW = L"My Category";`> Beachten Sie, dass der Eigenschaftstyp von der **UlPropTag** des **SPropValue** das Bitflag MV_FLAG enthält, die wahrscheinlich Rückgabe MAPI_E_TOO_COMPLEX ist. 
@@ -100,7 +100,7 @@ Weitere Informationen zur Struktur **SPropertyRestriction** finden Sie unter [In
 - [SAndRestriction](sandrestriction.md)
 - [SPropValue](spropvalue.md)
 - [SRestriction](srestriction.md)
-- [IMAPITable](imapitable-findrow.md)
-- [Methode IMAPITable:: Restrict](imapitable-restrict.md)
+- [IMAPITable::FindRow](imapitable-findrow.md)
+- [IMAPITable::Restrict](imapitable-restrict.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

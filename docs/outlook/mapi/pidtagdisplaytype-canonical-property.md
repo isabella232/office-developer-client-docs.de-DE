@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDisplayType-Eigenschaft
+title: PidTagDisplayType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794330"
 ---
-# <a name="pidtagdisplaytype-canonical-property"></a>Kanonische PidTagDisplayType-Eigenschaft
+# <a name="pidtagdisplaytype-canonical-property"></a>PidTagDisplayType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert zum Verknüpfen eines Symbols mit einer bestimmten Zeile ein
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält eine lange Ganzzahl, die eine besondere Behandlung des Eintrags Tabelle basierend auf dieses Typs vereinfacht. Diese besondere Behandlung umfasst in der Regel ein Symbol oder andere Display-Element, den Anzeigetyp zugeordnete anzeigen. 
   

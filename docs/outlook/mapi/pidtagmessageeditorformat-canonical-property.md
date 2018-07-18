@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageEditorFormat-Eigenschaft
+title: PidTagMessageEditorFormat (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794611"
 ---
-# <a name="pidtagmessageeditorformat-canonical-property"></a>Kanonische PidTagMessageEditorFormat-Eigenschaft
+# <a name="pidtagmessageeditorformat-canonical-property"></a>PidTagMessageEditorFormat (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt das Format für einen-Editor zu verwenden, um eine Nachricht anzuzeigen.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die möglichen Werte für **PR_MSG_EDITOR_FORMAT** können eine der folgenden sein: 
   

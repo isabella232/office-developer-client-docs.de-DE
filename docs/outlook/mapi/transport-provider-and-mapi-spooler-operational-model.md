@@ -1,5 +1,5 @@
 ---
-title: Betriebliche Modell Adressbuchhierarchie und MAPI-Warteschlange
+title: Transportanbieter und MAPI-Spooler-Betriebsmodell
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795761"
 ---
-# <a name="transport-provider-and-mapi-spooler-operational-model"></a>Betriebliche Modell Adressbuchhierarchie und MAPI-Warteschlange
+# <a name="transport-provider-and-mapi-spooler-operational-model"></a>Transportanbieter und MAPI-Spooler-Betriebsmodell
 
   
   

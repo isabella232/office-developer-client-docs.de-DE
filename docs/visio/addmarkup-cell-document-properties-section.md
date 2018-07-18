@@ -32,15 +32,15 @@ Wenn die Zelle auf true festgelegt ist, der Prüfer festgelegt ist AddMarkup ist
 > [!NOTE]
 > Sie können auf Ihre Dokumente Markup verhindern, mithilfe der GUARD-Funktion. Wenn die Zelle AddMarkup die Formel =Guard(falsch), der Befehl **Markup verfolgen** ist deaktiviert. 
   
-Diese Einstellung entspricht der Einstellung **Markup verfolgen** den Befehl in der Gruppe **Markup** der Registerkarte **Überprüfen** . 
+Diese Einstellung entspricht der Einstellung für den Befehl **Änderungen markieren** in der Gruppe **Markup** der Registerkarte **Überprüfen**. 
   
-Wenn Sie einen Verweis auf die Zelle AddMarkup nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle AddMarkup aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |AddMarkup  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle AddMarkup aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle AddMarkup aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

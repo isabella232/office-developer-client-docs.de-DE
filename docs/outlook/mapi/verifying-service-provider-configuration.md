@@ -45,11 +45,11 @@ Wenn die Logon-Methode mit MAPI_E_UNCONFIGURED Ihren Dienstanbieter ein Fehler a
   
 Die folgende Abbildung zeigt die Logik für die Konfiguration in Ihrer Service Provider Logon (Methode) erforderlich. 
   
-**Flussdiagramm für konfigurationsüberprüfung**
+**Flussdiagramm für Konfigurationsüberprüfung**
   
 ![Flussdiagramm für konfigurationsüberprüfung] (media/amapi_62.gif "Flussdiagramm für konfigurationsüberprüfung")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Implementieren von Service Provider Anmeldung](implementing-service-provider-logon.md)
+- [Implementieren einer Dienstanbieteranmeldung](implementing-service-provider-logon.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachDataBinary-Eigenschaft
+title: PidTagAttachDataBinary (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794092"
 ---
-# <a name="pidtagattachdatabinary-canonical-property"></a>Kanonische PidTagAttachDataBinary-Eigenschaft
+# <a name="pidtagattachdatabinary-canonical-property"></a>PidTagAttachDataBinary (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die binären Anlagedaten in der Regel über die Schnittstelle Object Li
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält das Attachment-Objekt, wenn der Wert der Eigenschaft **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) ATTACH_BY_VALUE, ist die übliche Anlage-Methode und die einzige unterstützt werden müssen. **PR_ATTACH_DATA_BIN** enthält auch Anlage OLE 1.0 **OLESTREAM** , wenn der Wert der **PR_ATTACH_METHOD** ATTACH_OLE ist. 
   

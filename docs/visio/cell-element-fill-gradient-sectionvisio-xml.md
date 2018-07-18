@@ -60,14 +60,14 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
-|GradientStopColor  <br/> |Der Wert der Farbe des Farbverlaufstopps. Dieser Wert kann als die Indexnummer einer Farbe in der Palette Dokument oder über die Funktionen **RGB**, **THEMEVAL**oder **HSL** ausgedrückt werden.  <br/> |[Zeile mit Farbverlauf Stop (Abschnitt "Fill Farbverlauf")](gradient-stop-row-fill-gradient-section.md) <br/> |
-|GradientStopColorTrans  <br/> |Der Umfang der Transparenz des Stopps Farbverlaufstopps als Prozentsatz.  <br/> |[Zeile mit Farbverlauf Stop (Abschnitt "Fill Farbverlauf")](gradient-stop-row-fill-gradient-section.md) <br/> |
-|GradientStopPosition  <br/> |Die Position des Farbverlaufstopps in Richtung des Farbverlaufs Zeile als Prozentwert aus der Ausgangspunkt für den Farbverlauf und die Außenkante des Farbverlaufs.  <br/> |[Zeile mit Farbverlauf Stop (Abschnitt "Fill Farbverlauf")](gradient-stop-row-fill-gradient-section.md) <br/> |
+|GradientStopColor  <br/> |Der Wert der Farbe des Farbverlaufstopps. Dieser Wert kann als die Indexnummer einer Farbe in der Palette Dokument oder über die Funktionen **RGB**, **THEMEVAL**oder **HSL** ausgedrückt werden.  <br/> |[Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md) <br/> |
+|GradientStopColorTrans  <br/> |Der Umfang der Transparenz des Stopps Farbverlaufstopps als Prozentsatz.  <br/> |[Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md) <br/> |
+|GradientStopPosition  <br/> |Die Position des Farbverlaufstopps in Richtung des Farbverlaufs Zeile als Prozentwert aus der Ausgangspunkt für den Farbverlauf und die Außenkante des Farbverlaufs.  <br/> |[Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md) <br/> |
    
 

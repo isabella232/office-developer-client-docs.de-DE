@@ -1,5 +1,5 @@
 ---
-title: OSC typisch aufrufenden Sequenzen
+title: Für OSC typische Aufrufsequenzen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796074"
 ---
-# <a name="osc-typical-calling-sequences"></a>OSC typisch aufrufenden Sequenzen
+# <a name="osc-typical-calling-sequences"></a>Für OSC typische Aufrufsequenzen
 
 Dieser Abschnitt beschreibt die typischen aufrufende Outlook Social Connector (OSC) Sequenzen der Elemente in die OSC-Anbieter Erweiterungsschnittstellen, die ein OSC-Anbieter implementiert. Die normalen aufrufenden Sequenzen veranschaulichen, wie und wann die OSC verwendet diese Schnittstellen und Methoden, mit der Sie eine bessere können bestimmen, wie einen bestimmten Member für einen Anbieter Erweiterbarkeitsschnittstelle implementiert. Die tatsächliche aufrufende Sequenz kann je nach den Möglichkeiten, die von der [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) -Methode zurückgegebene variieren. Die folgenden: Beispiele für Funktionen 
   

@@ -34,7 +34,7 @@ Provider sollten Fehler an den Anrufer zurückgeben, mithilfe der Fehlercodes in
 |OSC_E_SERVER_VERSION_NOT_SUPPORTED  <br/> |0x80041406  <br/> |Die Version des Servers, das Konto für soziale Netzwerke konfigurieren wird nicht unterstützt.  <br/> |
 |OSC_E_VERSION  <br/> |0x80041401  <br/> |Der Anbieter unterstützt diese Version von OSC-anbietererweiterung nicht.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Erfolg, Warnung und Fehlerwerte werden anhand einer 32-Bit-Zahl, die ein Ergebnis Handle oder **HRESULT**aufgerufen wird zurückgegeben. Ein **HRESULT** ist kein Handle auf einen anderen Wert; Es wird lediglich eine 32-Bit-Wert, der mehrere Felder in den Wert codiert wurde. Ein positives Ergebnis gibt an, mit dem Status Erfolg, ein NULL-Ergebnis zeigt Erfolg ohne Status (S_OK) und ein negatives Ergebnis Fehler anzeigt. 
   

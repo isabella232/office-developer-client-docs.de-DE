@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOwnStoreEntryId-Eigenschaft
+title: PidTagOwnStoreEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794775"
 ---
-# <a name="pidtagownstoreentryid-canonical-property"></a>Kanonische PidTagOwnStoreEntryId-Eigenschaft
+# <a name="pidtagownstoreentryid-canonical-property"></a>PidTagOwnStoreEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Nachrichtenspeichers an einen Transport eng gekoppe
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Nachrichtenspeicher-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Eintrags-ID für den Informationsspeicher eng gekoppelten, sofern vorhanden. Beispielsweise kann ein Transportdienstes angeben der private Ordner speichern Eintrags-ID, damit die MAPI-Warteschlange in der Adressbuchhierarchie im Speicher eine Verbindung herstellen kann.
   

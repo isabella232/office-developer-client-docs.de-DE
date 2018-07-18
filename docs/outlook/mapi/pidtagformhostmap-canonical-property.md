@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormHostMap-Eigenschaft
+title: PidTagFormHostMap (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794416"
 ---
-# <a name="pidtagformhostmap-canonical-property"></a>Kanonische PidTagFormHostMap-Eigenschaft
+# <a name="pidtagformhostmap-canonical-property"></a>PidTagFormHostMap (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Zuordnung Host der verfügbaren Formulare.
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung sollten diese Eigenschaft zusammen mit der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) aktualisieren, beim Ändern die Struktur der zugrunde liegenden in der **IMAPIFormProp** -Schnittstelle. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagJunkIncludeContacts-Eigenschaft
+title: PidTagJunkIncludeContacts (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794537"
 ---
-# <a name="pidtagjunkincludecontacts-canonical-property"></a>Kanonische PidTagJunkIncludeContacts-Eigenschaft
+# <a name="pidtagjunkincludecontacts-canonical-property"></a>PidTagJunkIncludeContacts (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt an, ob e-Mail-Adressen der Kontakte im Ordner Kontakte speziell in Bezug au
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie auf "0 x 00000001" festgelegt ist, diese e-Mail-Adressen den "vertrauenswürdigen" Kontakt-e-Mail-Adressteil der Junk-e-Mail Regel Einschränkung auffüllen müssen so, dass e-Mails von diesen Adressen als "kein junk" behandelt wird. Wenn auf "0 x 00000000" gesetzt, e-Mail-Adressen aus dem Ordner Kontakte nicht hinzugefügt werden die Regel für Junk-e-Mail müssen und im Abschnitt der Regel muss NULL sein.
   

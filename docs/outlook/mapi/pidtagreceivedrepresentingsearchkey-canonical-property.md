@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReceivedRepresentingSearchKey-Eigenschaft
+title: PidTagReceivedRepresentingSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794893"
 ---
-# <a name="pidtagreceivedrepresentingsearchkey-canonical-property"></a>Kanonische PidTagReceivedRepresentingSearchKey-Eigenschaft
+# <a name="pidtagreceivedrepresentingsearchkey-canonical-property"></a>PidTagReceivedRepresentingSearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Search-Schlüssel für die messaging-Benutzer von der empfangenden 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Eigenschaften für die messaging-Benutzer, die von der empfangenden Benutzer angezeigt wird. Von der eingehenden Adressbuchhierarchie muss festgelegt werden, die auch für die Autorisierung oder Überprüfung des Delegaten zuständig ist. Wenn kein messaging Benutzer dargestellt wird, sollten diese Eigenschaft auf den Schlüssel Suche in der **PR_RECEIVED_BY_SEARCH_KEY** ([PidTagReceivedBySearchKey](pidtagreceivedbysearchkey-canonical-property.md))-Eigenschaft festgelegt werden.
   
@@ -82,7 +82,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagSearchKey-Eigenschaft](pidtagsearchkey-canonical-property.md)
+[PidTagSearchKey (kanonische Eigenschaft)](pidtagsearchkey-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

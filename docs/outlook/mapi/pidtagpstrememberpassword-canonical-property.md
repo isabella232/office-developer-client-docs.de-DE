@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPstRememberPassword-Eigenschaft
+title: PidTagPstRememberPassword (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794855"
 ---
-# <a name="pidtagpstrememberpassword-canonical-property"></a>Kanonische PidTagPstRememberPassword-Eigenschaft
+# <a name="pidtagpstrememberpassword-canonical-property"></a>PidTagPstRememberPassword (kanonische Eigenschaft)
 
   
   

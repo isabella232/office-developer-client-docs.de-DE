@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBusiness2TelephoneNumbers-Eigenschaft
+title: PidTagBusiness2TelephoneNumbers (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794150"
 ---
-# <a name="pidtagbusiness2telephonenumbers-canonical-property"></a>Kanonische PidTagBusiness2TelephoneNumbers-Eigenschaft
+# <a name="pidtagbusiness2telephonenumbers-canonical-property"></a>PidTagBusiness2TelephoneNumbers (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste von Telefonnummern für ein Unternehmen.
 |Datentyp:  <br/> |PT_MV_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann zum Auflisten von alternativen Rufnummern oder eine Liste der Erweiterungen für ein Unternehmen verwendet werden.
   

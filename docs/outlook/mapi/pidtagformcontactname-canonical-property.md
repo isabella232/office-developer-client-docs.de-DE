@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormContactName-Eigenschaft
+title: PidTagFormContactName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794390"
 ---
-# <a name="pidtagformcontactname-canonical-property"></a>Kanonische PidTagFormContactName-Eigenschaft
+# <a name="pidtagformcontactname-canonical-property"></a>PidTagFormContactName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen eines Kontakts Informationen zu einem Formular.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Kontakt enthält normalerweise den Namen einer Person oder ein Alias, der für die Verwaltung des Formulars zuständig ist. 
   

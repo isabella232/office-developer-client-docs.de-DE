@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageSizeExtended-Eigenschaft
+title: PidTagMessageSizeExtended (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794616"
 ---
-# <a name="pidtagmessagesizeextended-canonical-property"></a>Kanonische PidTagMessageSizeExtended-Eigenschaft
+# <a name="pidtagmessagesizeextended-canonical-property"></a>PidTagMessageSizeExtended (kanonische Eigenschaft)
 
   
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagMessageSize-Eigenschaft](pidtagmessagesize-canonical-property.md)
+[PidTagMessageSize (kanonische Eigenschaft)](pidtagmessagesize-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -42,7 +42,7 @@ PROP_TYPE (ulPropTag)
   
 > Eigenschafts-Tag, die den Eigenschaftentyp zurückgegeben werden soll.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **PROP_TYPE** kann verwendet werden, um den Typ einer Eigenschaft ermitteln. Beispielsweise Aufruf PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) führt den Wert PT_BINARY zurückgegeben wird.
   

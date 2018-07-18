@@ -1,5 +1,5 @@
 ---
-title: Tabelle-Status und Status-Objekte
+title: Statustabelle und Statusobjekte
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795631"
 ---
-# <a name="status-table-and-status-objects"></a>Tabelle-Status und Status-Objekte
+# <a name="status-table-and-status-objects"></a>Statustabelle und Statusobjekte
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMailPermission-Eigenschaft
+title: PidTagMailPermission (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794583"
 ---
-# <a name="pidtagmailpermission-canonical-property"></a>Kanonische PidTagMailPermission-Eigenschaft
+# <a name="pidtagmailpermission-canonical-property"></a>PidTagMailPermission (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn der messaging-Benutzer senden und Empfangen von Nachrichten 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft nicht festgelegt ist, wird Sie MAPI wie mit dem Wert TRUE behandelt. 
   

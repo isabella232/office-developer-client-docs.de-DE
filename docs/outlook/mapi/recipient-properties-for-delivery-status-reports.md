@@ -1,5 +1,5 @@
 ---
-title: Empfängereigenschaften für die Übermittlung von Statusberichten
+title: Empfängereigenschaften für Übermittlungsstatusberichte
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795335"
 ---
-# <a name="recipient-properties-for-delivery-status-reports"></a>Empfängereigenschaften für die Übermittlung von Statusberichten
+# <a name="recipient-properties-for-delivery-status-reports"></a>Empfängereigenschaften für Übermittlungsstatusberichte
 
   
   

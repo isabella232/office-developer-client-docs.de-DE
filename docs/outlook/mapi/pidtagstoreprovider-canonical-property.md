@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreProvider-Eigenschaft
+title: PidTagStoreProvider (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795216"
 ---
-# <a name="pidtagstoreprovider-canonical-property"></a>Kanonische PidTagStoreProvider-Eigenschaft
+# <a name="pidtagstoreprovider-canonical-property"></a>PidTagStoreProvider (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine vom Anbieter definiertes [MAPIUID](mapiuid.md) -Struktur, die den 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur [MAPIUID](mapiuid.md) identifiziert den Typ des Nachrichtenspeichers. Der Wert ist Zeichenfolgeneigenschaften Nachricht auf Message Store Objekte berechnet und für jeden Anbieter eindeutig ist. Es wird normalerweise zum Durchsuchen der Nachricht Store-Tabelle verwendet, um einen Speicher mit den gewünschten Typ, wie Öffentliche Ordner zu finden. 
   

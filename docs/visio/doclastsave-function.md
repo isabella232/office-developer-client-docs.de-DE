@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796889"
 ---
-# <a name="doclastsave-function"></a>DOCLASTSAVE-Funktion
+# <a name="doclastsave-function"></a>DOCLASTSAVE Function
 
 Gibt das Datum und die Uhrzeit, wenn ein Dokument zuletzt, als seriellen Wert gespeichert wurde.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContainerClass-Eigenschaft
+title: PidTagContainerClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794213"
 ---
-# <a name="pidtagcontainerclass-canonical-property"></a>Kanonische PidTagContainerClass-Eigenschaft
+# <a name="pidtagcontainerclass-canonical-property"></a>PidTagContainerClass (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Textzeichenfolge, die den Typ eines Ordners. Obwohl diese Eigensch
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden normalerweise nicht vom Exchange-Server verwendet. Allerdings fügt Microsoft Office Outlook® sie an den Postfachordner. Darüber hinaus-Versionen von Exchange Server vor Exchange Server 2003-Postfach-Manager möglicherweise nicht ordnungsgemäß Ordner verarbeitet, die nicht über diese Eigenschaften verfügen.
   

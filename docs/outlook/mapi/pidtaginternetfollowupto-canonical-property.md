@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInternetFollowupTo-Eigenschaft
+title: PidTagInternetFollowupTo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794504"
 ---
-# <a name="pidtaginternetfollowupto-canonical-property"></a>Kanonische PidTagInternetFollowupTo-Eigenschaft
+# <a name="pidtaginternetfollowupto-canonical-property"></a>PidTagInternetFollowupTo (kanonische Eigenschaft)
 
   
   

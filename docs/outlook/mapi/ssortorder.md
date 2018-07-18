@@ -38,7 +38,7 @@ typedef struct _SSortOrder
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulPropTag**
   
@@ -60,7 +60,7 @@ typedef struct _SSortOrder
       
   - TABLE_SORT_CATEG_MIN: Die Tabelle sollten auf den minimalen Wert des Elements **UlPropTag** für Datenzeilen in den durch die vorherigen Sortierreihenfolge in der Struktur der in **SSortOrderSet** angegebenen Kategorien sortiert werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine **SSortOrder** -Struktur wird verwendet, um wird beschrieben, wie Sie einen standard Sortiervorgang oder ein kategorisierten Sortiervorgang durchführen. **SSortOrder** Strukturen werden in eine **SSortOrderSet** -Struktur, die mehrere Sortierschlüsseln und erfahren Sie, wie beschrieben in der Regel zusammengefasst. **SSortOrderSet** Strukturen werden in die folgenden Funktionen und Interface-Methoden verwendet: 
   
@@ -70,7 +70,7 @@ Eine **SSortOrder** -Struktur wird verwendet, um wird beschrieben, wie Sie einen
     
 - [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)
     
-- [SortTable](imapitable-sorttable.md)
+- [IMAPITable::SortTable](imapitable-sorttable.md)
     
 - [FBadSortOrderSet](fbadsortorderset.md)
     

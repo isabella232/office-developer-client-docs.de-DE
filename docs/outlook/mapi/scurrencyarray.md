@@ -40,7 +40,7 @@ typedef struct _SCurrencyArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SCurrencyArray
   
 > Zeiger auf ein Array von [Währung](currency.md) Strukturen, die Währungswerte enthalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Informationen zu PT_MV_CURRENCY finden Sie unter [Liste der Eigenschaftentypen](property-types.md). 
   
@@ -58,7 +58,7 @@ Informationen zu PT_MV_CURRENCY finden Sie unter [Liste der Eigenschaftentypen](
 
 
 
-[WÄHRUNG](currency.md)
+[CURRENCY](currency.md)
   
 [SPropValue](spropvalue.md)
 

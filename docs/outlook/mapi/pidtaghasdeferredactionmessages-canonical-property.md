@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHasDeferredActionMessages-Eigenschaft
+title: PidTagHasDeferredActionMessages (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794422"
 ---
-# <a name="pidtaghasdeferredactionmessages-canonical-property"></a>Kanonische PidTagHasDeferredActionMessages-Eigenschaft
+# <a name="pidtaghasdeferredactionmessages-canonical-property"></a>PidTagHasDeferredActionMessages (kanonische Eigenschaft)
 
   
   

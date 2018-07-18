@@ -40,7 +40,7 @@ typedef struct _SBinary
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cb**
   
@@ -50,7 +50,7 @@ typedef struct _SBinary
   
 > Zeiger auf den Wert der PT_BINARY-Eigenschaft.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Informationen zu Eigenschaftstypen finden Sie unter [MAPI-Eigenschaft Type Overview](mapi-property-type-overview.md).
   

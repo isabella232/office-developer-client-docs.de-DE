@@ -99,7 +99,7 @@ MAPI_E_VERSION
   
 > Die SPI-Version von MAPI verwendet wird, ist nicht kompatibel mit der SPI, die von diesem Anbieter verwendet wird.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-aufrufen, die Eintrags-Funktion **XPProviderInit** ein Transportdienstes nach einer Clientanmeldung nicht initialisiert werden. **XPProviderInit** wird einmal für jede Adressbuchhierarchie im Profil des Clients angegebene aufgerufen. 
   
@@ -119,7 +119,7 @@ Weitere Informationen über das Schreiben von **XPProviderInit**finden Sie unter
 
 [ABProviderInit](abproviderinit.md)
   
-[IXPProvider: IUnknown](ixpprovideriunknown.md)
+[IXPProvider : IUnknown](ixpprovideriunknown.md)
   
 [MSProviderInit](msproviderinit.md)
 

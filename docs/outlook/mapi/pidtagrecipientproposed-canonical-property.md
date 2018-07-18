@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientProposed-Eigenschaft
+title: PidTagRecipientProposed (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794906"
 ---
-# <a name="pidtagrecipientproposed-canonical-property"></a>Kanonische PidTagRecipientProposed-Eigenschaft
+# <a name="pidtagrecipientproposed-canonical-property"></a>PidTagRecipientProposed (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt an, ob ein Teilnehmer der Besprechung geantwortet hat.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert TRUE für diese Eigenschaft gibt an, dass der Teilnehmer ein neues Datum und/oder eine Uhrzeit vorgeschlagen. Der Wert FALSE oder das Fehlen dieser Eigenschaft bedeutet, dass entweder noch, dass der Teilnehmer nicht hat geantwortet, oder die letzte Antwort vom Teilnehmer nicht enthalten ein neues Datum / Uhrzeit Vorschlag. Dieser Wert muss sich nicht auf "true" für die Teilnehmer in einer Terminserie.
   

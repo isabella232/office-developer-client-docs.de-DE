@@ -1,5 +1,5 @@
 ---
-title: PidTagSenderSmtpAddress kanonische-Eigenschaft
+title: PidTagSenderSmtpAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795132"
 ---
-# <a name="pidtagsendersmtpaddress-canonical-property"></a>PidTagSenderSmtpAddress kanonische-Eigenschaft
+# <a name="pidtagsendersmtpaddress-canonical-property"></a>PidTagSenderSmtpAddress (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält das Format Simple Mail Transport Protocol (SMTP) e-Mail-Adresse des Pos
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ein Beispiel für die Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

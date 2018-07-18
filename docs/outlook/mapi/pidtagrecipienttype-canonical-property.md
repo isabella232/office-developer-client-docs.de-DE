@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientType-Eigenschaft
+title: PidTagRecipientType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794940"
 ---
-# <a name="pidtagrecipienttype-canonical-property"></a>Kanonische PidTagRecipientType-Eigenschaft
+# <a name="pidtagrecipienttype-canonical-property"></a>PidTagRecipientType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Empfängertyp für einen Nachrichtenempfänger.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der in dieser Eigenschaft enthaltenen Empfängertyp besteht aus ein erforderlicher Wert und eine optionale Kennzeichnung.
   
@@ -110,13 +110,13 @@ Mapitags.h
 
 
 
-[Kanonische PidTagRecipientStatus-Eigenschaft](pidtagrecipientstatus-canonical-property.md)
+[PidTagRecipientStatus (kanonische Eigenschaft)](pidtagrecipientstatus-canonical-property.md)
   
-[Kanonische-Eigenschaft PidTagDisplayTo](pidtagdisplayto-canonical-property.md)
+[PidTagDisplayTo (kanonische Eigenschaft)](pidtagdisplayto-canonical-property.md)
   
-[Kanonische PidTagDisplayBcc-Eigenschaft](pidtagdisplaybcc-canonical-property.md)
+[PidTagDisplayBcc (kanonische Eigenschaft)](pidtagdisplaybcc-canonical-property.md)
   
-[Kanonische PidTagDisplayCc-Eigenschaft](pidtagdisplaycc-canonical-property.md)
+[PidTagDisplayCc (kanonische Eigenschaft)](pidtagdisplaycc-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

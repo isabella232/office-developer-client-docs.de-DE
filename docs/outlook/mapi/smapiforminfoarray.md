@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cForms**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > Zeiger auf ein Array von Zeigern auf Formular Informationen Objekte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **SMAPIFormInfoArray** wird als Parameter in der folgenden Methoden übergeben: 
   

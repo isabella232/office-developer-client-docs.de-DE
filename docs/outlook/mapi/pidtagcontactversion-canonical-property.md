@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactVersion-Eigenschaft
+title: PidTagContactVersion (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794221"
 ---
-# <a name="pidtagcontactversion-canonical-property"></a>Kanonische PidTagContactVersion-Eigenschaft
+# <a name="pidtagcontactversion-canonical-property"></a>PidTagContactVersion (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Version der Kontaktinformationen eines Empfängers an.
 |Datentyp:  <br/> |PT_CLSID  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert.
   

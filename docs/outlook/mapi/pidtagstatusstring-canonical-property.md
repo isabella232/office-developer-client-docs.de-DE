@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStatusString-Eigenschaft
+title: PidTagStatusString (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795200"
 ---
-# <a name="pidtagstatusstring-canonical-property"></a>Kanonische PidTagStatusString-Eigenschaft
+# <a name="pidtagstatusstring-canonical-property"></a>PidTagStatusString (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Meldung, die den aktuellen Status einer Sitzung Ressource angibt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften geben Dienstanbieter und MAPI-die Möglichkeit, bestimmte Informationen über den Status einer Sitzung Ressource, wie die integrierte Adressbuch oder einem bestimmten Dienstanbieter anzugeben. Diese Eigenschaft erläutert und liefert zusätzliche Informationen über einen Statuscode oder die Eigenschaft **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md)). **PR_STATUS_CODE** für alle Status erforderlich ist, sind die **PR_STATUS_STRING** und die zugehörigen Eigenschaften optional. Wenn der Adressbuchhierarchie kein Wert angegeben, stellt die MAPI-Warteschlange einen Standardwert bereit. 
   
@@ -56,7 +56,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagStatusCode-Eigenschaft](pidtagstatuscode-canonical-property.md)
+[PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

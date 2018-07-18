@@ -28,7 +28,7 @@ BITNOT (** *Binärzahl* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre Zahl_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Eine 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Eine 16-Bit-Binärzahl.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

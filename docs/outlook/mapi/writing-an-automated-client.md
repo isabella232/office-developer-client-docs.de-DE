@@ -1,5 +1,5 @@
 ---
-title: Schreiben Sie einen automatisierten Client
+title: Schreiben eines automatisierten Clients
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795848"
 ---
-# <a name="writing-an-automated-client"></a>Schreiben Sie einen automatisierten Client
+# <a name="writing-an-automated-client"></a>Schreiben eines automatisierten Clients
 
   
   

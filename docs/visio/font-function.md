@@ -23,7 +23,8 @@ Gibt den Integer-Wert, der den eindeutigen Bezeichner für eine Schriftart, die 
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2013 
+Hinzugefügte Version: Visio 2013
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -37,9 +38,9 @@ Hinzugefügte Version: Visio 2013
    
 ## <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Zeichenfolge *Font_name_string* vorgesehenen nicht über eine bekannte Schriftart übereinstimmt, gibt diese Funktion ein #VALUE! Fehler. 
   

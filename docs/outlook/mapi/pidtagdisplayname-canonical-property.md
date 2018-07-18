@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDisplayName-Eigenschaft
+title: PidTagDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794341"
 ---
-# <a name="pidtagdisplayname-canonical-property"></a>Kanonische PidTagDisplayName-Eigenschaft
+# <a name="pidtagdisplayname-canonical-property"></a>PidTagDisplayName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen für ein bestimmtes MAPI-Objekt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ordner erfordern gleichgeordneten Knoten Unterordner eindeutigen Anzeigenamen haben. Beispielsweise wenn ein Ordner zwei Unterordner enthält, können nicht zwei Unterordner den gleichen Wert für diese Eigenschaft verwenden. Diese Beschränkung gilt nicht für andere Container, z. B. Adressbücher und Verteilerlisten. 
   
@@ -97,7 +97,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagTransmittableDisplayName-Eigenschaft](pidtagtransmittabledisplayname-canonical-property.md)
+[PidTagTransmittableDisplayName (kanonische Eigenschaft)](pidtagtransmittabledisplayname-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

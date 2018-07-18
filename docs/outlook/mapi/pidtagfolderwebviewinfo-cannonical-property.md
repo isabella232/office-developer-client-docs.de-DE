@@ -1,5 +1,5 @@
 ---
-title: PidTagFolderWebViewInfo gültigen-Eigenschaft
+title: PidTagFolderWebViewInfo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794400"
 ---
-# <a name="pidtagfolderwebviewinfo-cannonical-property"></a>PidTagFolderWebViewInfo gültigen-Eigenschaft
+# <a name="pidtagfolderwebviewinfo-cannonical-property"></a>PidTagFolderWebViewInfo (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die URL für die Homepage eines Ordners in Microsoft Outlook. Diese Eig
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 URL der Startseite kann für alle Outlook-Ordner angegeben werden. Diese Informationen kann über die Registerkarte " **Homepage** " im Dialogfeld Eigenschaften für einen Ordner in Outlook zugegriffen werden. 
   

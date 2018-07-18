@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFolderType-Eigenschaft
+title: PidTagFolderType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794381"
 ---
-# <a name="pidtagfoldertype-canonical-property"></a>Kanonische PidTagFolderType-Eigenschaft
+# <a name="pidtagfoldertype-canonical-property"></a>PidTagFolderType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Konstante, die den Ordner angibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

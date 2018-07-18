@@ -1,5 +1,5 @@
 ---
-title: QuickSteps für Informationen zum Entwickeln eines Providers
+title: QuickSteps zum Entwickeln eines Anbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796081"
 ---
-# <a name="quick-steps-for-learning-to-develop-a-provider"></a>QuickSteps für Informationen zum Entwickeln eines Providers
+# <a name="quick-steps-for-learning-to-develop-a-provider"></a>QuickSteps zum Entwickeln eines Anbieters
 
 Um einen OSC-Anbieter zu entwickeln, müssen Sie die folgenden allgemeinen Schritte ausführen:
   

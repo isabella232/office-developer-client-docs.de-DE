@@ -20,9 +20,9 @@ ms.locfileid: "19796848"
 
 1. Klicken Sie in das ShapeSheet-Fenster, um es zu aktivieren.
     
-2. Klicken Sie auf der Registerkarte **ShapeSheet-Tools** in der Gruppe **Ansicht** klicken Sie auf **Formeln** , um Formeln anzuzeigen, oder klicken Sie auf **Werte** , um Werte anzuzeigen. 
+2. Klicken Sie auf der Registerkarte **ShapeSheet-Tools** in der Gruppe **Ansicht** auf **Formeln**, um Formeln anzuzeigen, oder klicken Sie auf **Werte**, um Werte anzuzeigen. 
     
     > [!NOTE]
-    > Sie können auch mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie dann im Kontextmenü auf **Formeln** oder **Werte** . 
+    > Sie können auch mit der rechten Maustaste auf das ShapeSheet-Fenster klicken und dann im Kontextmenü auf **Formeln** oder **Werte** klicken. 
   
 

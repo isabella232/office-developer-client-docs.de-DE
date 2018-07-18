@@ -1,5 +1,5 @@
 ---
-title: Richtlinien für das Aktivitäten ordnungsgemäß anzeigen
+title: Richtlinien für die ordnungsgemäße Anzeige von Aktivitäten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795954"
 ---
-# <a name="guidelines-for-properly-displaying-activities"></a>Richtlinien für das Aktivitäten ordnungsgemäß anzeigen
+# <a name="guidelines-for-properly-displaying-activities"></a>Richtlinien für die ordnungsgemäße Anzeige von Aktivitäten
 
 Outlook Social Connector (OSC)-Anbieter können die **GetActivities** und **DynamicActivitiesLookupEx** Elemente haben die OSC Aktivitätselemente im Arbeitsspeicher gespeichert. In diesem Thema werden die OSC-anbietererweiterung, die aus dem sozialen Netzwerk-APIs, die die OSC zum Abrufen oder Aktualisieren von Aktivitäten und Aktivität Besitzer Details, aufruft Wenn der OSC-Anbieter synchronisieren Aktivität unterstützt feeds. Das Thema enthält auch ein paar untergeordnete Elemente des **ActivityFeed** -Elements, dass der OSC-Anbieter für das osc bilden zum Anzeigen von Aktivitäten ordnungsgemäß in der Office-Visitenkarte oder Outlook Personenbereich festgelegt werden soll. 
   

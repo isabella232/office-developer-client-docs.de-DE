@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagX400ContentType-Eigenschaft
+title: PidTagX400ContentType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795287"
 ---
-# <a name="pidtagx400contenttype-canonical-property"></a>Kanonische PidTagX400ContentType-Eigenschaft
+# <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType (kanonische Eigenschaft)
 
   
   

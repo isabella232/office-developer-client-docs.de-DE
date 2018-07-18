@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRegisteredMailType-Eigenschaft
+title: PidTagRegisteredMailType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794931"
 ---
-# <a name="pidtagregisteredmailtype-canonical-property"></a>Kanonische PidTagRegisteredMailType-Eigenschaft
+# <a name="pidtagregisteredmailtype-canonical-property"></a>PidTagRegisteredMailType (kanonische Eigenschaft)
 
   
   

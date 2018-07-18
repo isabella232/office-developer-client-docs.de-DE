@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderTemplateId-Eigenschaft
+title: PidTagSearchFolderTemplateId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795126"
 ---
-# <a name="pidtagsearchfoldertemplateid-canonical-property"></a>Kanonische PidTagSearchFolderTemplateId-Eigenschaft
+# <a name="pidtagsearchfoldertemplateid-canonical-property"></a>PidTagSearchFolderTemplateId (kanonische Eigenschaft)
 
   
   
@@ -32,9 +32,9 @@ Enthält die ID der Vorlage, die für die Suche verwendet wird.
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_TEMPLATE_ID  <br/> |
 |Bezeichner:  <br/> |0x6841  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ordner Suchkriterien wird durch eine Vorlage angegeben. Diese Eigenschaft für die Nachricht, die den Suchordner definiert identifiziert die zugehörige Vorlage. Zusätzlich zu den Suchkriterien definieren, eine Vorlage auch Ordner, die von der Suche ausschließen definiert, Elemente aus der Suche ausschließen definiert und gibt den Wert des **PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)).
   

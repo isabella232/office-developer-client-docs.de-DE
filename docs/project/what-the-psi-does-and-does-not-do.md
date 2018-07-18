@@ -1,5 +1,5 @@
 ---
-title: Was die PSI enthält und nicht zu
+title: Was die PSI durchführen kann und was nicht
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796317"
 ---
-# <a name="what-the-psi-does-and-does-not-do"></a>Was die PSI enthält und nicht zu
+# <a name="what-the-psi-does-and-does-not-do"></a>Was die PSI durchführen kann und was nicht
 
 Project Server Interface (PSI) kann zum Automatisieren viele serverseitigen Prozessen in lokale Installationen von Project Server 2013 helfen. Aber einige Funktionen erfordern die Verwendung von Microsoft Project Professional 2013.
   
@@ -233,11 +233,11 @@ Für den Projektsammelvorgang sind die PSI-Einschränkungen die gleichen wie fü
 ## <a name="see-also"></a>Siehe auch
 <a name="pj14_WhatPSIDoes_AR"> </a>
 
-- [Was das CSOM ist und nicht zu](what-the-csom-does-and-does-not-do.md)
+- [Was das CSOM durchführen kann und was nicht](what-the-csom-does-and-does-not-do.md)
     
 - [Project Server-Programmierbarkeit](project-server-programmability.md)
     
-- [Remoteauthentifizierung in SharePoint Online mit anspruchsbasierter Authentifizierung](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)
+- [Anspruchsbasierte Remoteauthentifizierung in SharePoint Online](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)
     
 - [Office-Add-Ins](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)
     

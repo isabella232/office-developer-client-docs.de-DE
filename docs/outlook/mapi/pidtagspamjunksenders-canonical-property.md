@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSpamJunkSenders-Eigenschaft
+title: PidTagSpamJunkSenders (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795175"
 ---
-# <a name="pidtagspamjunksenders-canonical-property"></a>Kanonische PidTagSpamJunkSenders-Eigenschaft
+# <a name="pidtagspamjunksenders-canonical-property"></a>PidTagSpamJunkSenders (kanonische Eigenschaft)
 
   
   

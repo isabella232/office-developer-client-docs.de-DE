@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796524"
 ---
-# <a name="blob-function"></a>BLOB-Funktion
+# <a name="blob-function"></a>BLOB Function
 
 Dekodiert eine Base64-Zeichenfolge und speichert sie in Form von binären Daten. 
   

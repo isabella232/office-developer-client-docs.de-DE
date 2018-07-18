@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleProviderData-Eigenschaft
+title: PidTagRuleProviderData (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795046"
 ---
-# <a name="pidtagruleproviderdata-canonical-property"></a>Kanonische PidTagRuleProviderData-Eigenschaft
+# <a name="pidtagruleproviderdata-canonical-property"></a>PidTagRuleProviderData (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Eine nicht transparent-Eigenschaft, die der Client für die ausschließliche Ver
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Server muss den Wert dieser Eigenschaft beibehalten, wenn er vom Client festgelegt wurde aber seinen Inhalt während Rule Evaluation und Verarbeitung ignorieren muss.
   
@@ -64,7 +64,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagRuleProvider-Eigenschaft](pidtagruleprovider-canonical-property.md)
+[PidTagRuleProvider (kanonische Eigenschaft)](pidtagruleprovider-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

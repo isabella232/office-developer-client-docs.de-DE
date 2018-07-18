@@ -19,10 +19,10 @@ ms.locfileid: "19796158"
 
 In diesem Thema werden die Typen im Outlook Wetter Informationen XML-Schema.
   
-- [CurrentType complexType](currenttype-complextype-outlook-weather-information-schema.md)
+- [currentType complexType](currenttype-complextype-outlook-weather-information-schema.md)
     
-- [ForecastType complexType](forecasttype-complextype-outlook-weather-information-schema.md)
+- [forecastType complexType](forecasttype-complextype-outlook-weather-information-schema.md)
     
-- [WeatherType complexType](weathertype-complextype-outlook-weather-information-schema.md)
+- [weatherType complexType](weathertype-complextype-outlook-weather-information-schema.md)
     
 

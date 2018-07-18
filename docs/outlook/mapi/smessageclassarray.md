@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > Array von Zeigern auf Nachricht Klasse Zeichenfolgen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **SMessageClassArray** wird als Parameter in der folgenden Methoden übergeben: 
   

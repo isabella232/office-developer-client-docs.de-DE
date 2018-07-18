@@ -18,7 +18,7 @@ ms.locfileid: "19796607"
 
 Bestimmt die Eigenschaften, die von der alten Form zum Ersatz-Shape während einer Ersetzungsoperation übertragen werden. Die Werte der Zellen im Abschnitt **Verhalten der Shapes ändern** des Master-Shapes werden während der Ersetzung Shape Form der Ersatz gelesen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Durch Festlegen der Zellen im Abschnitt **Shape-Verhalten ändern** , können Sie sicherstellen, dass bestimmte Eigenschaften des Ersatz-Shapes während der Ersetzung unverändert. Eigenschaften, die nicht geschützt werden werden während des Vorgangs mit der lokalen Shape-Werte von der alten Form aktualisiert. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStatusCode-Eigenschaft
+title: PidTagStatusCode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795207"
 ---
-# <a name="pidtagstatuscode-canonical-property"></a>Kanonische PidTagStatusCode-Eigenschaft
+# <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske der Flags, die den aktuellen Status einer Sitzung Ressour
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Statuscode muss für alle Anbieter in der Datei "Mapisvc.inf" angezeigt werden. 
   
@@ -98,7 +98,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagStatusString-Eigenschaft](pidtagstatusstring-canonical-property.md)
+[PidTagStatusString (kanonische Eigenschaft)](pidtagstatusstring-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

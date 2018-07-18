@@ -42,7 +42,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Row-Element (Abschnitt "Controls")](row-element-controls-sectionvisio-xml.md) <br/> |[ControlRow_Type](controlrow_type-complextypevisio-xml.md) <br/> |Enthält eine Eigenschaft für ein bestimmtes Steuerpunkt eines Shapes definiert.  <br/> |
+|[Zeilenelement (Steuerelementzeile)](row-element-controls-sectionvisio-xml.md) <br/> |[ControlRow_Type](controlrow_type-complextypevisio-xml.md) <br/> |Enthält eine Eigenschaft für ein bestimmtes Steuerpunkt eines Shapes definiert.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -68,11 +68,11 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |:-----|:-----|:-----|
 |CanGlue  <br/> |Legt fest, ob ein Steuerpunkt an andere Shapes geklebt werden kann.  <br/> |[Zelle "Can Glue" (Abschnitt "Controls")](can-glue-cell-controls-section.md) <br/> |
 |Prompt  <br/> |Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn der Mauszeiger über dem Steuerpunkt eines Shapes platziert wird.  <br/> |[Zelle "Tip" (Abschnitt "Controls")](tip-cell-controls-section.md) <br/> |
-|X  <br/> |Stellt die X-Koordinate, die die Position des Steuerpunkts in lokalen Koordinaten des Shapes anzeigt.  <br/> |[Zelle "X" (Abschnitt "Controls")](x-cell-controls-section.md) <br/> |
+|X  <br/> |Stellt die X-Koordinate dar, die die Position des Steuerpunkts eines Shapes in lokalen Koordinaten anzeigt.  <br/> |[Zelle "X" (Abschnitt "Controls")](x-cell-controls-section.md) <br/> |
 |xCon  <br/> |Gibt den Typ des Verhaltens die X-Koordinate des der Steuerpunkt aufweist, wenn dieser verschoben wird.  <br/> |Keine.  <br/> |
-|xDyn  <br/> |Stellt die X-Koordinate für den Verankerungspunkt eines Steuerpunkts, in lokalen Koordinaten dar.  <br/> |[Zelle "X Dynamics" (Abschnitt "Controls")](x-dynamics-cell-controls-section.md) <br/> |
-|v  <br/> |Stellt die y-Koordinate, die die Position des Steuerpunkts in lokalen Koordinaten des Shapes anzeigt.  <br/> |[Zelle "Y" (Abschnitt "Controls")](y-cell-controls-section.md) <br/> |
+|xDyn  <br/> |Stellt die x-Koordinate für den Verankerungspunkt eines Steuerpunkts in lokalen Koordinaten dar.  <br/> |[Zelle "X Dynamics" (Abschnitt "Controls")](x-dynamics-cell-controls-section.md) <br/> |
+|v  <br/> |Stellt die Y-Koordinate dar, die die Position des Steuerpunkts eines Shapes in lokalen Koordinaten anzeigt.  <br/> |[Zelle "Y" (Abschnitt "Controls")](y-cell-controls-section.md) <br/> |
 |YCon  <br/> |Gibt den Typ des Verhalten, das die y-Koordinate des der Steuerpunkt aufweisen wird, wenn dieser verschoben wird.  <br/> |Keine.  <br/> |
-|YDyn  <br/> |Stellt die y-Koordinate für den Verankerungspunkt eines Steuerpunkts, in lokalen Koordinaten dar.  <br/> |[Zelle "Y Dynamics" (Abschnitt "Controls")](y-dynamics-cell-controls-section.md) <br/> |
+|YDyn  <br/> |Stellt die y-Koordinate für den Verankerungspunkt eines Steuerpunkts in lokalen Koordinaten dar.  <br/> |[Zelle "Y Dynamics" (Abschnitt "Controls")](y-dynamics-cell-controls-section.md) <br/> |
    
 

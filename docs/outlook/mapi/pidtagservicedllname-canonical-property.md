@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServiceDllName-Eigenschaft
+title: PidTagServiceDllName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795158"
 ---
-# <a name="pidtagservicedllname-canonical-property"></a>Kanonische PidTagServiceDllName-Eigenschaft
+# <a name="pidtagservicedllname-canonical-property"></a>PidTagServiceDllName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Dateinamen der DLL Nachricht Service Provider Entry Point-Funktion,
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Eintrag Punkt Funktionsname in der Methode **PR_SERVICE_ENTRY_NAME** ([PidTagServiceEntryName](pidtagserviceentryname-canonical-property.md)) angezeigt wird, bedeutet dies, dass der Einstiegspunkt vorhanden ist.
   
@@ -58,7 +58,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagProviderDllName-Eigenschaft](pidtagproviderdllname-canonical-property.md)
+[PidTagProviderDllName (kanonische Eigenschaft)](pidtagproviderdllname-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

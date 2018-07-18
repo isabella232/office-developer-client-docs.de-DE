@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSentRepresentingSmtpAddress-Eigenschaft
+title: PidTagSentRepresentingSmtpAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795152"
 ---
-# <a name="pidtagsentrepresentingsmtpaddress-canonical-property"></a>Kanonische PidTagSentRepresentingSmtpAddress-Eigenschaft
+# <a name="pidtagsentrepresentingsmtpaddress-canonical-property"></a>PidTagSentRepresentingSmtpAddress (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Enthält die Simple Mail Transport Protocol (SMTP) e-Mail-Adresse für den messa
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ein Beispiel für die Adresseigenschaften für die messaging-Benutzer, die vom Absender angezeigt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag einer anderen Client sendet, sollten sie alle Absender dargestellte Eigenschaften auf die Werte für diesen Client festgelegt. Ein messaging-Benutzer in der Regel in einem eigenen Auftrag senden bewirkt, dass die dargestellte Absender Eigenschaften nicht festgelegt ist.
   

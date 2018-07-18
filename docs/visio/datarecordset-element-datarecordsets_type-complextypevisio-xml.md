@@ -61,7 +61,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
 |Prüfsumme  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Ein Prüfsummenwert von Visio erstellt werden, und basierend auf Datenrecordset Eigenschaften. Diese Attirbute auf 0 festgelegt; Visio wird dieser Wert zur Laufzeit neu berechnet.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
-|Befehl  <br/> |XSD: String  <br/> |Optional  <br/> |Die Befehlszeichenfolge zum Abfragen von Daten aus der Datenquelle.  <br/> |Werte des Typs xsd: String.  <br/> |
+|Command  <br/> |XSD: String  <br/> |Optional  <br/> |Die Befehlszeichenfolge zum Abfragen von Daten aus der Datenquelle.  <br/> |Werte des Typs xsd: String.  <br/> |
 |ConnectionID  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Die Verbindungs-ID für das zugeordnete **DataConnection** -Objekt. Ist für XML-Datenquellen nicht vorhanden.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Die ID des Datenrecordsets, innerhalb des Dokuments eindeutig.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |Name  <br/> |XSD: String  <br/> |Optional  <br/> |Die Anzeige (oder "benutzerfreundlichen") Name des Datenrecordsets.  <br/> |Werte des Typs xsd: String.  <br/> |

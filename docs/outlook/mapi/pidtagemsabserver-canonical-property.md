@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagEmsAbServer-Eigenschaft
+title: PidTagEmsAbServer (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794337"
 ---
-# <a name="pidtagemsabserver-canonical-property"></a>Kanonische PidTagEmsAbServer-Eigenschaft
+# <a name="pidtagemsabserver-canonical-property"></a>PidTagEmsAbServer (kanonische Eigenschaft)
 
   
   
@@ -36,7 +36,7 @@ Gibt entweder den Pfad einer Adressbuchcontainer in einem Szenario offline oder 
 |Datentyp:  <br/> |PT_TSTRING  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft hat den Eigenschaftentyp auf **PT_UNICODE** zurückzusetzen, wenn die Kompilierung der `UNICODE` Symbol auf einer Unicode-Plattform und **PT_STRING8** bei der Kompilierung nicht mit der `UNICODE` Symbol. 
   

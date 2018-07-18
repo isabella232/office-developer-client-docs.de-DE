@@ -28,7 +28,7 @@ COS ( *Winkel*)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Winkel, dessen Kosinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Kosinus abgerufen werden soll.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

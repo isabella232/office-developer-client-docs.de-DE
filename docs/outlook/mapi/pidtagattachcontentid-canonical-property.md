@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachContentId-Eigenschaft
+title: PidTagAttachContentId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794095"
 ---
-# <a name="pidtagattachcontentid-canonical-property"></a>Kanonische PidTagAttachContentId-Eigenschaft
+# <a name="pidtagattachcontentid-canonical-property"></a>PidTagAttachContentId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Header Content Identification Multipurpose Internet Mail Extensions (MIME) e-Mai
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen die Kopfzeile Content Kennung für die entsprechenden MIME-Textkörper dar. 
   

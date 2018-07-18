@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAuthorizingUsers-Eigenschaft
+title: PidTagAuthorizingUsers (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794124"
 ---
-# <a name="pidtagauthorizingusers-canonical-property"></a>Kanonische PidTagAuthorizingUsers-Eigenschaft
+# <a name="pidtagauthorizingusers-canonical-property"></a>PidTagAuthorizingUsers (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste von Eintragsbezeichner für Benutzer, die autorisiert ist da
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Nachrichtenspeichers wird diese Eigenschaft nicht an.
   

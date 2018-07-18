@@ -1,5 +1,5 @@
 ---
-title: Rufen Sie die Project-ID in einem Webpart-Add-in auf einer Projektdetailseite
+title: Abrufen der Projekt-ID in einem Add-In-Webpart auf einer Project-Detailseite
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796165"
 ---
-# <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>Rufen Sie die Project-ID in einem Webpart-Add-in auf einer Projektdetailseite
+# <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>Abrufen der Projekt-ID in einem Add-In-Webpart auf einer Project-Detailseite
 
 Add-in-Komponenten gehostet werden in **Iframe** -Elemente, die von der Hostingseite vollständig isoliert sind. Um Informationen über das aktuelle Projekt aus einer Webpart-Add-in auf Projekt Details Seite (PDP) erhalten, können Sie die **window.postMessage** -Methode, einen Ereignislistener und einen Ereignishandler, der analysiert wird, die Projekt-ID aus der Nachricht. 
   
@@ -250,8 +250,8 @@ Im folgende Beispiel wird der vollständige Code in die Clientwebpart GetProject
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Projekt Programmieraufgaben](project-programming-tasks.md)
-- [Erstellen eines SharePoint gehosteten Project Server-add-Ins](create-a-sharepoint-hosted-project-server-add-in.md)
-- [Erstellen von Add-in-Webparts mit Ihrer SharePoint-Add-in installieren](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
+- [Project-Programmieraufgaben](project-programming-tasks.md)
+- [Erstellen eines auf SharePoint gehosteten Project Server-Add-Ins](create-a-sharepoint-hosted-project-server-add-in.md)
+- [Erstellen von Add-In-Webparts zur Installation mit Ihrem SharePoint-Add-In](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
     
 

@@ -31,7 +31,7 @@ CEILING (** *Anzahl* **, ** *mehrere* **)
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die zu rundende Zahl.  <br/> |
 | _mehrere_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Das Vielfache, auf die gerundet werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  _Anzahl_ und _Vielfaches_ müssen die gleichen Vorzeichen oder ein #NUM haben. Fehler wird zurückgegeben. Wenn _Zahl_ oder _mehrere_ auf einen Wert, der ein #VALUE konvertiert werden kann! Fehler wird zurückgegeben. Wenn _Zahl_ oder _mehrere_ 0 ist, ist das Ergebnis 0. 
   

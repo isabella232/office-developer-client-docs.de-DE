@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageFlags-Eigenschaft
+title: PidTagMessageFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794613"
 ---
-# <a name="pidtagmessageflags-canonical-property"></a>Kanonische PidTagMessageFlags-Eigenschaft
+# <a name="pidtagmessageflags-canonical-property"></a>PidTagMessageFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags, die angeben, den Ursprung und den aktuellen St
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine Eigenschaft eines Nontransmittable zur das Senden und Empfangen von Enden einer Übertragung mit unterschiedlichen Werten abhängig von der Client-Anwendung oder Store Anbieter beteiligten verfügbar gemacht werden. Diese Eigenschaft wird durch den Speicheranbieter Client oder einer Nachricht, wenn eine Nachricht erstellt und zum ersten Mal gespeichert und dann aktualisiert in regelmäßigen Abständen durch den Anbieter für die Nachricht anmelden, eines Transportdienstes und die MAPI-Warteschlange wie die Nachricht verarbeitet wird und den Zustand initialisiert ändert. 
   

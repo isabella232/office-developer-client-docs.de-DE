@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportTime-Eigenschaft
+title: PidTagReportTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794974"
 ---
-# <a name="pidtagreporttime-canonical-property"></a>Kanonische PidTagReportTime-Eigenschaft
+# <a name="pidtagreporttime-canonical-property"></a>PidTagReportTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wann das messaging-System ein Bericht erstellt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft stellt eine Eigenschaft pro Empfänger zur Übermittlung und Nondelivery Berichte und eine-Message-Eigenschaft für Berichte lesen und nonread dar. 
   

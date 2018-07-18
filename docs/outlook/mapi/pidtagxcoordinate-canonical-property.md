@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagXCoordinate-Eigenschaft
+title: PidTagXCoordinate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795322"
 ---
-# <a name="pidtagxcoordinate-canonical-property"></a>Kanonische PidTagXCoordinate-Eigenschaft
+# <a name="pidtagxcoordinate-canonical-property"></a>PidTagXCoordinate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die X-Koordinate der Startposition (die linke obere Ecke) von einem Dialogfeld-S
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft, **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) Eigenschaften position und Größe das Dialogfeld-Steuerelement.
   

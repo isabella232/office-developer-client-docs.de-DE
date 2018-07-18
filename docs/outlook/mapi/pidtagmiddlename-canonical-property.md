@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMiddleName-Eigenschaft
+title: PidTagMiddleName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794643"
 ---
-# <a name="pidtagmiddlename-canonical-property"></a>Kanonische PidTagMiddleName-Eigenschaft
+# <a name="pidtagmiddlename-canonical-property"></a>PidTagMiddleName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Vornamen eines Kontakts an.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden vom Benutzer definiert.
   

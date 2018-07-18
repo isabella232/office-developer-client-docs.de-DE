@@ -22,9 +22,9 @@ Dieser Abschnitt enthält einige "Gewusst wie" Artikel, die zeigen, wie Sie die 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[Erste Schritte beim Entwickeln von Project Server-workflows](getting-started-developing-project-server-workflows.md)
+[Erste Schritte beim Entwickeln von Project Server-Workflows](getting-started-developing-project-server-workflows.md)
   
-[Massen-Update für benutzerdefinierte Felder und Erstellen von Projektwebsites in einem Workflow in Project Online](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
+[Massenaktualisierung von benutzerdefinierten Feldern und Erstellen von Projektwebsites aus einem Workflow in Project Online](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
   
 [Erstellen, abrufen, aktualisieren und Löschen von Projekten mit dem Project Server-JavaScript-Objektmodell](create-retrieve-update-delete-projects-using-project-server-javascript.md)
   
@@ -32,11 +32,11 @@ Dieser Abschnitt enthält einige "Gewusst wie" Artikel, die zeigen, wie Sie die 
   
 ## <a name="reference"></a>Referenz
 
-[Übersicht über Project PSI-Verweis](project-psi-reference-overview.md)
+[Project-PSI-Referenz – Übersicht](project-psi-reference-overview.md)
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Client-seitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
+[Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
 

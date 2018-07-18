@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagControlFlags-Eigenschaft
+title: PidTagControlFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794261"
 ---
-# <a name="pidtagcontrolflags-canonical-property"></a>Kanonische PidTagControlFlags-Eigenschaft
+# <a name="pidtagcontrolflags-canonical-property"></a>PidTagControlFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags, die das Verhalten der ein Steuerelement in ein
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für diese Eigenschaft kann eine oder mehrere der folgenden Werte festgelegt werden:
   

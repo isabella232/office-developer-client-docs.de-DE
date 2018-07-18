@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRemoteProgressText-Eigenschaft
+title: PidTagRemoteProgressText (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794941"
 ---
-# <a name="pidtagremoteprogresstext-canonical-property"></a>Kanonische PidTagRemoteProgressText-Eigenschaft
+# <a name="pidtagremoteprogresstext-canonical-property"></a>PidTagRemoteProgressText (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält eine Zeichenfolge, die den Status einer remote Übert
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein numerischer Code zugeordnet dieser Text wird in der Eigenschaft **PR_REMOTE_PROGRESS** ([PidTagRemoteProgress](pidtagremoteprogress-canonical-property.md)) übergeben.
   

@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte beim Entwickeln von Project Server-workflows
+title: Erste Schritte beim Entwickeln von Project Server-Workflows
 manager: soliver
 ms.date: 08/10/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796163"
 ---
-# <a name="getting-started-developing-project-server-workflows"></a>Erste Schritte beim Entwickeln von Project Server-workflows
+# <a name="getting-started-developing-project-server-workflows"></a>Erste Schritte beim Entwickeln von Project Server-Workflows
 
 Bei Bedarf, dass Verwaltungsprozesse in Project Server 2013 Workflows enthalten, die Ihnen helfen Verwalten von Projektvorschlägen und Portfolioanalysen. Dieser Abschnitt enthält Artikel, die zeigen, wie Sie zum Erstellen von Workflows für Project Server.
   

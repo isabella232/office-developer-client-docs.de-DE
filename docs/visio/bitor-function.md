@@ -28,8 +28,8 @@ BITOR (** *binary Zahl1* **, ** *binary Zahl2* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _binäre Zahl1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
-| _binäre Zahl2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste 16-Bit-Binärzahl.  <br/> |
+| _binäre Zahl2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite 16-Bit-Binärzahl.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

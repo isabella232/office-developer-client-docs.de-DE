@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportEntryId-Eigenschaft
+title: PidTagReportEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794961"
 ---
-# <a name="pidtagreportentryid-canonical-property"></a>Kanonische PidTagReportEntryId-Eigenschaft
+# <a name="pidtagreportentryid-canonical-property"></a>PidTagReportEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID für den Empfänger, der Berichte für diese Nachricht 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Empfänger, Absender delegiert alle für diese Nachricht generierten Berichte empfangen hat.
   

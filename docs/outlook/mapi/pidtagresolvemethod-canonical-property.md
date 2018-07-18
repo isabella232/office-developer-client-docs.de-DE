@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResolveMethod-Eigenschaft
+title: PidTagResolveMethod (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794984"
 ---
-# <a name="pidtagresolvemethod-canonical-property"></a>Kanonische PidTagResolveMethod-Eigenschaft
+# <a name="pidtagresolvemethod-canonical-property"></a>PidTagResolveMethod (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Ordner Konflikt Lösung Wert.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft auf den Ordner mit den Konflikt Lösung Nachricht wird anzugeben, wie den Konflikt zu lösen. Diese Eigenschaft ist nicht erforderlich. Jedoch ist festgelegt, müssen als den folgenden Kennzeichen nicht vorhanden sein:
   

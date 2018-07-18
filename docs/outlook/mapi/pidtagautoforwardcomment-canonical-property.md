@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAutoForwardComment-Eigenschaft
+title: PidTagAutoForwardComment (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794128"
 ---
-# <a name="pidtagautoforwardcomment-canonical-property"></a>Kanonische PidTagAutoForwardComment-Eigenschaft
+# <a name="pidtagautoforwardcomment-canonical-property"></a>PidTagAutoForwardComment (kanonische Eigenschaft)
 
   
   

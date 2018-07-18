@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalDisplayTo-Eigenschaft
+title: PidTagOriginalDisplayTo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794687"
 ---
-# <a name="pidtagoriginaldisplayto-canonical-property"></a>Kanonische PidTagOriginalDisplayTo-Eigenschaft
+# <a name="pidtagoriginaldisplayto-canonical-property"></a>PidTagOriginalDisplayTo (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Anzeigenamen der primären (Empfänger der ursprünglichen Nachrich
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten eine durch Semikolons getrennte ASCII-Liste. Es MAPI bereitgestellten und wird direkt aus **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) bei einer Übermittlung kopiert oder Unzustellbarkeitsbericht oder einem Lese- oder nonread Bericht wird generiert. Diese Eigenschaft kann auf andere Nachrichten durch ihre Nachrichtenklassen definierten vorhanden sein.
   

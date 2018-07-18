@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContentCount-Eigenschaft
+title: PidTagContentCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794241"
 ---
-# <a name="pidtagcontentcount-canonical-property"></a>Kanonische PidTagContentCount-Eigenschaft
+# <a name="pidtagcontentcount-canonical-property"></a>PidTagContentCount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Anzahl der Nachrichten in einem Ordner enthält, wie Sie mithilfe des Nachri
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft von der Nachrichtenspeicher berechnet wird für zwei unterschiedliche, obwohl verbunden, Zwecke. Für ein MapiFolder-Objekt enthält sie die Anzahl der Nachrichten in einem Ordner. In eine Überschriftenzeile in kategorisierten MAPI-Tabellen enthält sie die Anzahl der Nachrichten in der Kategorie dieser Überschriftenzeile entsprechendes-verknüpft ist.
   

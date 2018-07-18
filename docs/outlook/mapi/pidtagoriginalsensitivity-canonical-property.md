@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSensitivity-Eigenschaft
+title: PidTagOriginalSensitivity (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794722"
 ---
-# <a name="pidtagoriginalsensitivity-canonical-property"></a>Kanonische PidTagOriginalSensitivity-Eigenschaft
+# <a name="pidtagoriginalsensitivity-canonical-property"></a>PidTagOriginalSensitivity (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die vom Absender der ersten Version einer Nachricht zugewiesen Vertraul
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung sollte diese Eigenschaft auf denselben Wert festgelegt wie die **PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md))-Eigenschaft, wenn die Nachricht wird gesendet. Es sollte niemals später geändert werden.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMemberId-Eigenschaft
+title: PidTagMemberId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794608"
 ---
-# <a name="pidtagmemberid-canonical-property"></a>Kanonische PidTagMemberId-Eigenschaft
+# <a name="pidtagmemberid-canonical-property"></a>PidTagMemberId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die ID eines Elements Tabelle, das die beschriebenen Rechte auf einem M
 |Datentyp:  <br/> |PT_I8  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt einen Bezeichner in der Tabelle eindeutig. Eine Directory-Benutzer-ID jedes Element-ID zugeordnet ist und von dieser Eigenschaft angegeben ist. Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, die Directory Eintrags-ID eines Elements mit expliziten Berechtigungen für einen Ordner abrufen. 
   
@@ -64,7 +64,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagMemberEntryId-Eigenschaft](pidtagmemberentryid-canonical-property.md)
+[PidTagMemberEntryId (kanonische Eigenschaft)](pidtagmemberentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

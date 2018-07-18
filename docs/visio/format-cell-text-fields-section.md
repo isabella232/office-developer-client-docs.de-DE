@@ -16,23 +16,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797064"
 ---
-# <a name="format-cell-text-fields-section"></a>Zelle "Format" (Abschnitt "Text Fields")
+# <a name="format-cell-text-fields-section"></a>Format Cell (Text Fields Section)
 
 Legt die Formatierung eines Textfelds in Form einer Zeichenfolge, einer Zahl, eines Datums oder einer Uhrzeit, einer Zeitdauer oder einer Währung fest.
   
 ## <a name="remarks"></a>Hinweise
 
-Wenn die Zelle Type der Wert 0, 2, 5, 6 bzw. 7 ist (Zeichenfolge, Zahl, Datum oder Uhrzeit, Dauer oder Währung, jeweils), geben Sie eine dem Datentyp entsprechende Formatierungsangabe. Die Formatierungsangabe "# #/ 4 UU" formatiert beispielsweise das Zahl 12,43 In. als 12 2/4 Zoll. Weitere Informationen zum Festlegen einer Formatierungsangabe finden Sie unter [Informationen zu Formatierungsangaben](about-format-pictures.md).
+Wenn die Zelle Type den Wert 0, 2, 5, 6 oder 7 besitzt (Zeichenfolge, Zahl, Datum bzw. Uhrzeit, Dauer oder Währung), geben Sie eine dem Datentyp entsprechende Formatierungsangabe an. Die Formatierungsangabe "# #/4 UU" formatiert beispielsweise die Zahl 12,43 Zoll als 12 2/4 ZOLL. Weitere Informationen zum Festlegen einer Formatierungsangabe finden Sie unter Informationen zu Formatierungsangaben.
   
 Eine Zahl (Typ = 2) kann einen Bemaßungs-, Skalar-, Winkel-, Datums-, Zeit- oder Währungswert darstellen. Wenn Sie sicherstellen möchten, dass eine eingegebene Zahl immer als Datum, Uhrzeit oder Währung gewertet wird, verwenden Sie anstelle einer Formatierungsangabe die Funktionen DATETIME oder CY in der Zelle Format.
   
-Wenn Sie einen Verweis auf die Zelle Format nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Format aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Fields.Format [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Format aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Format aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

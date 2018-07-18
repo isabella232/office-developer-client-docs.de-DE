@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLanguage-Eigenschaft
+title: PidTagLanguage (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794545"
 ---
-# <a name="pidtaglanguage-canonical-property"></a>Kanonische PidTagLanguage-Eigenschaft
+# <a name="pidtaglanguage-canonical-property"></a>PidTagLanguage (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der die Sprache angibt, in der der messaging-Benutzer Nachr
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zeichenfolge enthält einen einzelne zweistelligen Länder-/Regionscode. 
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagLanguages-Eigenschaft](pidtaglanguages-canonical-property.md)
+[PidTagLanguages (kanonische Eigenschaft)](pidtaglanguages-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

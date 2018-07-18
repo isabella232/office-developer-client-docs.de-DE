@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachmentFlags-Eigenschaft
+title: PidTagAttachmentFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794118"
 ---
-# <a name="pidtagattachmentflags-canonical-property"></a>Kanonische PidTagAttachmentFlags-Eigenschaft
+# <a name="pidtagattachmentflags-canonical-property"></a>PidTagAttachmentFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Besondere Behandlung für diese Attachment-Objekt angibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 0 x 00000000, muss es sei denn, die durch andere Protokolle, die die Nachricht erweitern und Attachment-Objektprotokoll wie bereits erwähnt in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx) außer Kraft gesetzt
   

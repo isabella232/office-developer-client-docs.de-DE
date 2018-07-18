@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoMonthsTentative-Eigenschaft
+title: PidTagScheduleInfoMonthsTentative (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795100"
 ---
-# <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>Kanonische PidTagScheduleInfoMonthsTentative-Eigenschaft
+# <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>PidTagScheduleInfoMonthsTentative (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Monate in der Nachricht Frei/Gebucht-Informationen mit Vorbehalt ma
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Anzahl von Werten in dieser Eigenschaft muss zwischen 0 (null) und die Anzahl der Monate nach der Veröffentlichung der Zeitraum zwischen dem **PR_FREEBUSY_PUBLISH_START** ([PidTagFreeBusyPublishStart](pidtagfreebusypublishstart-canonical-property.md)) und **PR_FREEBUSY_PUBLISH_END ist Bereich abgedeckt **([PidTagFreeBusyPublishEnd](pidtagfreebusypublishend-canonical-property.md))-Eigenschaften.
   

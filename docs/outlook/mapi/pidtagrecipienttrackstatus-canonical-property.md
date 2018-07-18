@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientTrackStatus-Eigenschaft
+title: PidTagRecipientTrackStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794930"
 ---
-# <a name="pidtagrecipienttrackstatus-canonical-property"></a>Kanonische PidTagRecipientTrackStatus-Eigenschaft
+# <a name="pidtagrecipienttrackstatus-canonical-property"></a>PidTagRecipientTrackStatus (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt den Status der Antwort vom Teilnehmer zurückgegeben.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn dieser Wert nicht festgelegt ist, muss angenommen werden RespNone werden. Anderenfalls müssen sie eine der folgenden sein:
   

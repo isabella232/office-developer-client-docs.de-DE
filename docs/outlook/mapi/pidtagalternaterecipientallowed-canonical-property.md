@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAlternateRecipientAllowed-Eigenschaft
+title: PidTagAlternateRecipientAllowed (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794070"
 ---
-# <a name="pidtagalternaterecipientallowed-canonical-property"></a>Kanonische PidTagAlternateRecipientAllowed-Eigenschaft
+# <a name="pidtagalternaterecipientallowed-canonical-property"></a>PidTagAlternateRecipientAllowed (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn der Absender automatische Weiterleitung der Nachricht ermög
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die automatische Weiterleitung nicht zulässig ist oder keine alternativer Empfänger vorgesehen ist, sollte ein Unzustellbarkeitsbericht generiert werden. 
   

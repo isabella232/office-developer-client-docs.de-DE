@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDistributionListExpansionProhibited-Eigenschaft
+title: PidTagDistributionListExpansionProhibited (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794333"
 ---
-# <a name="pidtagdistributionlistexpansionprohibited-canonical-property"></a>Kanonische PidTagDistributionListExpansionProhibited-Eigenschaft
+# <a name="pidtagdistributionlistexpansionprohibited-canonical-property"></a>PidTagDistributionListExpansionProhibited (kanonische Eigenschaft)
 
   
   

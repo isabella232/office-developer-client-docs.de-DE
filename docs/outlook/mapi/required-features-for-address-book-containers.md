@@ -1,5 +1,5 @@
 ---
-title: Erforderliche Features für Address Book Container
+title: Erforderliche Funktionen für Adressbuchcontainer
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795390"
 ---
-# <a name="required-features-for-address-book-containers"></a>Erforderliche Features für Address Book Container
+# <a name="required-features-for-address-book-containers"></a>Erforderliche Funktionen für Adressbuchcontainer
 
   
   
@@ -37,6 +37,6 @@ Die folgende Tabelle beschreibt die Features, die von adressbuchanbietern implem
 |Enthalten Sie detaillierte Informationen zu einem container  <br/> |Unterstützt die **PR_DETAILS_TABLE** -Eigenschaft für den Container an. Weitere Informationen finden Sie unter [Anzeigen von Empfängerinformationen](displaying-recipient-information.md) und [Anzeige Tabellen](display-tables.md).  <br/> |
 |Stellen Sie eine hierarchische Liste der Container  <br/> |Unterstützen Sie die Containereigenschaft **PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md)). Weitere Informationen finden Sie unter [Hierarchietabellen](hierarchy-tables.md).  <br/> |
 |Unterstützung von messaging-Benutzereigenschaften  <br/> |Implementieren der [IMailUser: IMAPIProp](imailuserimapiprop.md) Schnittstelle.  <br/> |
-|Mehrdeutige Namen auflösen  <br/> | Unterstützung der eigenschaftseinschränkung **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)).  <br/>  Implementieren Sie optional die [IABContainer](iabcontainer-resolvenames.md) -Methode. For more information, see [Implementieren der Namensaufl�sung](implementing-name-resolution.md).  <br/> |
+|Auflösen nicht eindeutiger Namen  <br/> | Unterstützung der eigenschaftseinschränkung **PR_ANR** ([PidTagAnr](pidtaganr-canonical-property.md)).  <br/>  Implementieren Sie optional die [IABContainer](iabcontainer-resolvenames.md) -Methode. For more information, see [Implementieren der Namensaufl�sung](implementing-name-resolution.md).  <br/> |
    
 

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796804"
 ---
-# <a name="date-cell-annotation-section"></a>Zelle "Date" (Abschnitt "Annotation")
+# <a name="date-cell-annotation-section"></a>Date Cell (Annotation Section)
 
 Enthält Datum und Uhrzeit der letzten Bearbeitung des Kommentars. 
   
@@ -27,13 +27,13 @@ Enthält Datum und Uhrzeit der letzten Bearbeitung des Kommentars.
 
 Auf der Benutzeroberfläche wird im Kommentarfeld nur das Datum angezeigt.
   
-Wenn Sie einen Verweis auf die Zelle Date nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Date aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Annotation.Date [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Date aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Date aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

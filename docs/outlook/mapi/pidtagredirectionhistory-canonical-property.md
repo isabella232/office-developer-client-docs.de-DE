@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRedirectionHistory-Eigenschaft
+title: PidTagRedirectionHistory (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794923"
 ---
-# <a name="pidtagredirectionhistory-canonical-property"></a>Kanonische PidTagRedirectionHistory-Eigenschaft
+# <a name="pidtagredirectionhistory-canonical-property"></a>PidTagRedirectionHistory (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Informationen über die Route, die durch eine gesendete Nachricht behan
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird verwendet, wenn eine Nachricht Autoforwarded wird, mithilfe eines automatischen Agents.
   

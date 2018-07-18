@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBusinessTelephoneNumber-Eigenschaft
+title: PidTagBusinessTelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794155"
 ---
-# <a name="pidtagbusinesstelephonenumber-canonical-property"></a>Kanonische PidTagBusinessTelephoneNumber-Eigenschaft
+# <a name="pidtagbusinesstelephonenumber-canonical-property"></a>PidTagBusinessTelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die primäre Telefonnummer des Empfängers Sitz des Business.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderParentItemId-Eigenschaft
+title: PidTagProviderParentItemId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794833"
 ---
-# <a name="pidtagproviderparentitemid-canonical-property"></a>Kanonische PidTagProviderParentItemId-Eigenschaft
+# <a name="pidtagproviderparentitemid-canonical-property"></a>PidTagProviderParentItemId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt einen Bezeichner für das übergeordnete Objekt eines Ordners oder eines El
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Anbieter können, geben Sie einen Wert für diese Eigenschaft für ein übergeordnetes Element eines Ordners oder ein Element, jedoch sollten behalten Sie den Wert zwischen Sitzungen identisch. Anbieter mit dieser Eigenschaft können Sie um Suchergebnisse aus einer Suchmaschine zu identifizieren.
   

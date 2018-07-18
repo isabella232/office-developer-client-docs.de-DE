@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDisplayNamePrefix-Eigenschaft
+title: PidTagDisplayNamePrefix (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794321"
 ---
-# <a name="pidtagdisplaynameprefix-canonical-property"></a>Kanonische PidTagDisplayNamePrefix-Eigenschaft
+# <a name="pidtagdisplaynameprefix-canonical-property"></a>PidTagDisplayNamePrefix (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das Präfix für den Namen Anzeige (beispielsweise verpassen, Mr, Frau)
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einer messaging-Benutzer. Der Inhalt wird durch die messaging-Benutzer und Organisation messaging-Benutzer definiert.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportingMessageTransferAgentCertificate-Eigenschaft
+title: PidTagReportingMessageTransferAgentCertificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794958"
 ---
-# <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>Kanonische PidTagReportingMessageTransferAgentCertificate-Eigenschaft
+# <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>PidTagReportingMessageTransferAgentCertificate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für den Message Transfer Agent, der ein Bericht gener
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft entspricht einem x. 400-Bericht-Message-Attribut.
   

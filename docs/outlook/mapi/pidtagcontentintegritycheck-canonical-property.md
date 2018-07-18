@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContentIntegrityCheck-Eigenschaft
+title: PidTagContentIntegrityCheck (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794235"
 ---
-# <a name="pidtagcontentintegritycheck-canonical-property"></a>Kanonische PidTagContentIntegrityCheck-Eigenschaft
+# <a name="pidtagcontentintegritycheck-canonical-property"></a>PidTagContentIntegrityCheck (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen ASN. 1 Content-Integrität Kontrollkästchen Wert, der einem Abse
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft bietet Nichtabstreitbarkeit des Nachrichteninhalts. In Verbindung mit **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) wird sichergestellt, dass der Inhalt einer Nachricht ihr Ziel unverändert erreicht.
   

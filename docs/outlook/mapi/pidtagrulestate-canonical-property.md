@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleState-Eigenschaft
+title: PidTagRuleState (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795051"
 ---
-# <a name="pidtagrulestate-canonical-property"></a>Kanonische PidTagRuleState-Eigenschaft
+# <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Ein Wert, der als eine Bitmaske Kombination von Flags, die angeben, den Status d
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgende Tabelle zeigt die möglichen Werte dieser Eigenschaft an.
   

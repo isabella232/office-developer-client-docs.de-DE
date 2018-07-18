@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInitialDetailsPane-Eigenschaft
+title: PidTagInitialDetailsPane (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794467"
 ---
-# <a name="pidtaginitialdetailspane-canonical-property"></a>Kanonische PidTagInitialDetailsPane-Eigenschaft
+# <a name="pidtaginitialdetailspane-canonical-property"></a>PidTagInitialDetailsPane (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt eine Anzeigevorlage zum ersten Anzeigen der Seite an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anzeige Tabellen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es muss auf allen Address Book-Objekten auf einem Server (NSPI = Name Service Provider Interface) vorhanden sein und muss den Wert NULL (0) sein. Sie müssen nicht für alle Objekte in einem Offline-Adressbuch definiert werden.
   

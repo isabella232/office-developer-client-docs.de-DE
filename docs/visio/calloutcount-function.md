@@ -20,7 +20,8 @@ Gibt die Gesamtzahl der Beschriftungs-Shapes zurück, die mit dem Shape verknüp
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

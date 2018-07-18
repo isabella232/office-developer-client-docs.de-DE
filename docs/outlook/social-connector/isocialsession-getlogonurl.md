@@ -29,11 +29,11 @@ _url_
   
 > [out] Eine Zeichenfolge, die eine URL für das Formular in der Webauthentifizierung enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nachdem das Formular für den Benutzer angezeigt wird, wird die [ISocialSession::LogonWeb](isocialsession-logonweb.md) -Methode mit einer leeren Zeichenfolge für den Parameter _ConnectIn_ aufgerufen. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

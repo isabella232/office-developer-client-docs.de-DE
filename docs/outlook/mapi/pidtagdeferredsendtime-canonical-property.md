@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDeferredSendTime-Eigenschaft
+title: PidTagDeferredSendTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794280"
 ---
-# <a name="pidtagdeferredsendtime-canonical-property"></a>Kanonische PidTagDeferredSendTime-Eigenschaft
+# <a name="pidtagdeferredsendtime-canonical-property"></a>PidTagDeferredSendTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt den Zeitpunkt, wenn ein Client Senden einer Nachricht zurückstellen möcht
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die **PR_DEFERRED_SEND_UNITS** ([PidTagDeferredSendUnits](pidtagdeferredsendunits-canonical-property.md)) und **PR_DEFERRED_SEND_NUMBER** ([PidTagDeferredSendNumber](pidtagdeferredsendnumber-canonical-property.md)) Eigenschaften vorhanden sind, der Wert dieser Eigenschaft wird neu berechnet mithilfe der folgenden Formel und der alte Wert wird ignoriert.
   

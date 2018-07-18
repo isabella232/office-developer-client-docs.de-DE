@@ -41,7 +41,7 @@ typedef struct _SPropProblem
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulIndex**
   
@@ -55,7 +55,7 @@ typedef struct _SPropProblem
   
 > Fehlerwert Beschreibung des Problems mit der-Eigenschaft. Dieser Wert kann einen beliebigen MAPI [SCODE](scode.md) -Wert sein. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Array von **SPropProblem** Strukturen wird von folgenden Methoden zurückgegeben: 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachEncoding-Eigenschaft
+title: PidTagAttachEncoding (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794103"
 ---
-# <a name="pidtagattachencoding-canonical-property"></a>Kanonische PidTagAttachEncoding-Eigenschaft
+# <a name="pidtagattachencoding-canonical-property"></a>PidTagAttachEncoding (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ ASN. 1 Objektbezeichner, der angibt, die Codierung für eine Anlage enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt den Algorithmus zum Transformieren der Daten in einer Anlage.
   

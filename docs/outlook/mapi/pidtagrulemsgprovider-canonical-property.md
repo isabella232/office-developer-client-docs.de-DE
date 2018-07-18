@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleMsgProvider-Eigenschaft
+title: PidTagRuleMsgProvider (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795049"
 ---
-# <a name="pidtagrulemsgprovider-canonical-property"></a>Kanonische PidTagRuleMsgProvider-Eigenschaft
+# <a name="pidtagrulemsgprovider-canonical-property"></a>PidTagRuleMsgProvider (kanonische Eigenschaft)
 
   
   

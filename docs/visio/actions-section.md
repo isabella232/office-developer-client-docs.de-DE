@@ -16,14 +16,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796360"
 ---
-# <a name="actions-section"></a>Abschnitt "Actions"
+# <a name="actions-section"></a>Actions Section
 
 Enthält Zeilen, die Menüelemente in einem Kontext- oder Aktionstagmenü eines Shapes oder Zeichenblatts beschreiben. In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. Die Zelle **TagName** wird verwendet, um eine Aktion zu einer Zeile im Abschnitt **Aktionstag** zuordnen Aktionstags definiert sind. 
   
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zelle **TagName** wird verwendet, um eine Aktion zu einer Zeile im Abschnitt **Aktionstag** zuordnen Aktionstags definiert sind. 
   

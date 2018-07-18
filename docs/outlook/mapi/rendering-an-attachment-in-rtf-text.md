@@ -1,5 +1,5 @@
 ---
-title: Rendern einer Anlage im RTF-Text
+title: Darstellen einer Anlage als RTF-Text
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795365"
 ---
-# <a name="rendering-an-attachment-in-rtf-text"></a>Rendern einer Anlage im RTF-Text
+# <a name="rendering-an-attachment-in-rtf-text"></a>Darstellen einer Anlage als RTF-Text
 
   
   

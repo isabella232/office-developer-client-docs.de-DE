@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRenderingPosition-Eigenschaft
+title: PidTagRenderingPosition (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794955"
 ---
-# <a name="pidtagrenderingposition-canonical-property"></a>Kanonische PidTagRenderingPosition-Eigenschaft
+# <a name="pidtagrenderingposition-canonical-property"></a>PidTagRenderingPosition (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Offset in Zeichen, die beim Rendern einer Anlage im Hauptfenster 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der angegebene Offset-1 (0xFFFFFFFF) ist, wird die Anlage unter Verwendung dieser Eigenschaft nicht gerendert. Alle Werte, die als-1 Geben Sie an der Position innerhalb der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft, an der die Anlage ist gerendert werden soll.
   

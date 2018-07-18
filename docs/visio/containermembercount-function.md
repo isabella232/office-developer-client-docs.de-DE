@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796726"
 ---
-# <a name="containermembercount-function"></a>CONTAINERMEMBERCOUNT-Funktion
+# <a name="containermembercount-function"></a>CONTAINERMEMBERCOUNT Function
 
 Gibt die Gesamtzahl der Shapes im Container zurück.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

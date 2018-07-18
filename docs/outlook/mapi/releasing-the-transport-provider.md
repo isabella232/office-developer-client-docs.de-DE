@@ -1,5 +1,5 @@
 ---
-title: Freigeben der Adressbuchhierarchie
+title: Freigeben des Transportanbieters
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795362"
 ---
-# <a name="releasing-the-transport-provider"></a>Freigeben der Adressbuchhierarchie
+# <a name="releasing-the-transport-provider"></a>Freigeben des Transportanbieters
 
  
   

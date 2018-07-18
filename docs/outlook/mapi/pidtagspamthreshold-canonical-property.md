@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSpamThreshold-Eigenschaft
+title: PidTagSpamThreshold (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795173"
 ---
-# <a name="pidtagspamthreshold-canonical-property"></a>Kanonische PidTagSpamThreshold-Eigenschaft
+# <a name="pidtagspamthreshold-canonical-property"></a>PidTagSpamThreshold (kanonische Eigenschaft)
 
   
   

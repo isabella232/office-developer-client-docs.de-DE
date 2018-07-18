@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormMessageBehavior-Eigenschaft
+title: PidTagFormMessageBehavior (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794430"
 ---
-# <a name="pidtagformmessagebehavior-canonical-property"></a>Kanonische PidTagFormMessageBehavior-Eigenschaft
+# <a name="pidtagformmessagebehavior-canonical-property"></a>PidTagFormMessageBehavior (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn eine Nachricht im aktuellen Ordner geschrieben werden soll.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert FALSE gibt an, dass die Nachricht als andere zwischen Personen Nachricht, d. h., im Ordner Postausgang bestehen soll. 
   

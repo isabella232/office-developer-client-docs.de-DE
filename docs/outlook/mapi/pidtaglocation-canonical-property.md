@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLocation-Eigenschaft
+title: PidTagLocation (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794578"
 ---
-# <a name="pidtaglocation-canonical-property"></a>Kanonische PidTagLocation-Eigenschaft
+# <a name="pidtaglocation-canonical-property"></a>PidTagLocation (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Speicherort des Empfängers in einem Format, die in der Aufgabenlis
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

@@ -1,5 +1,5 @@
 ---
-title: TNEF Korrelation x. 400-Gateways und Transport
+title: TNEF-Korrelation in X.400-Gateways und Transport
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795733"
 ---
-# <a name="tnef-correlation-in-x400-gateways-and-transports"></a>TNEF Korrelation x. 400-Gateways und Transport
+# <a name="tnef-correlation-in-x400-gateways-and-transports"></a>TNEF-Korrelation in X.400-Gateways und Transport
 
   
   

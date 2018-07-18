@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796776"
 ---
-# <a name="data3-function"></a>DATA3-Funktion
+# <a name="data3-function"></a>DATA3 Function
 
 Gibt den Text aus dem Feld **Data 3** im Dialogfeld **Shape-Name** für ein Shape zurück (klicken Sie auf der Registerkarte **Entwicklertools** **Shape-Name** ), als Zeichenfolge. 
   

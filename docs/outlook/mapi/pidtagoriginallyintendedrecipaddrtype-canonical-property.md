@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginallyIntendedRecipAddrtype-Eigenschaft
+title: PidTagOriginallyIntendedRecipAddrtype (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794716"
 ---
-# <a name="pidtagoriginallyintendedrecipaddrtype-canonical-property"></a>Kanonische PidTagOriginallyIntendedRecipAddrtype-Eigenschaft
+# <a name="pidtagoriginallyintendedrecipaddrtype-canonical-property"></a>PidTagOriginallyIntendedRecipAddrtype (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die ursprünglich beabsichtigten Empfänger einer Nachricht Autoforward
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind die Adresseigenschaften für der ursprünglich beabsichtigten Empfänger. Vom automatische Agent muss festgelegt werden, die die Nachricht weitergeleitet hat.
   

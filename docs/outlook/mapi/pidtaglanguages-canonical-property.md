@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLanguages-Eigenschaft
+title: PidTagLanguages (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794551"
 ---
-# <a name="pidtaglanguages-canonical-property"></a>Kanonische PidTagLanguages-Eigenschaft
+# <a name="pidtaglanguages-canonical-property"></a>PidTagLanguages (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine ASCII-Liste der Sprachen, die in einer Nachricht enthalten sind.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten eine Folge von zwei Zeichen Land/Region Codes, die durch ein Komma voneinander getrennt sind. 
   

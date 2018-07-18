@@ -25,5 +25,5 @@ HRESULT _stdcall GetStatusSettings([out] BSTR* statusDefault, [out] int* maxStat
 
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

@@ -53,7 +53,7 @@ Transportanbieter haben folgende Aufgaben in MAPI-messaging-System:
     
 Die folgende Abbildung zeigt eine Adressbuchhierarchie Rolle in Bezug auf die anderen Komponenten der MAPI-Architektur.
   
-**Transportanbieterrolle in einem messaging-system**
+**Transportanbieterrolle in einem Messaging-System**
   
 ![Transport-Anbieter-Rolle in einem messaging-system] (media/xp01.gif "Transport-Anbieter-Rolle in einem messaging-system")
   

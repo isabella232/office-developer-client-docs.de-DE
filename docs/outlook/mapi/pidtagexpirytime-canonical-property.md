@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExpiryTime-Eigenschaft
+title: PidTagExpiryTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794374"
 ---
-# <a name="pidtagexpirytime-canonical-property"></a>Kanonische PidTagExpiryTime-Eigenschaft
+# <a name="pidtagexpirytime-canonical-property"></a>PidTagExpiryTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wann das messaging-System den Inhalt einer Nachricht
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird verwendet, um die direkte Nachrichtensystem in Behandlung Nachrichten zwischen Personen übermittelt. 
   

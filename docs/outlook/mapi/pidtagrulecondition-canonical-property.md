@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleCondition-Eigenschaft
+title: PidTagRuleCondition (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795028"
 ---
-# <a name="pidtagrulecondition-canonical-property"></a>Kanonische PidTagRuleCondition-Eigenschaft
+# <a name="pidtagrulecondition-canonical-property"></a>PidTagRuleCondition (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Bedingung verwendet, wenn Sie die Regel ausgewertet werden soll.
 |Datentyp:  <br/> |PT_SRESTRICTION  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Bedingung ist als eine **Einschränkung** und **PropertyValue** Puffer enthält die **Einschränkung** Struktur gepackt wie in [[MS-OXCDATA]](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)angegeben.
   

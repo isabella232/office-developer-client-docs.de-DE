@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachMimeTag-Eigenschaft
+title: PidTagAttachMimeTag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794114"
 ---
-# <a name="pidtagattachmimetag-canonical-property"></a>Kanonische PidTagAttachMimeTag-Eigenschaft
+# <a name="pidtagattachmimetag-canonical-property"></a>PidTagAttachMimeTag (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Formatierung Informationen über eine Anlage Multipurpose Internet Mail
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md))-Eigenschaft den Wert **OID_MIMETAG**enthält, sollte der Adressbuchhierarchie sehen Sie sich diese Eigenschaften, um zu bestimmen, wie die Anlage formatiert ist. 
   

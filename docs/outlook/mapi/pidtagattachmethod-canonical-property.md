@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachMethod-Eigenschaft
+title: PidTagAttachMethod (kanonische Eigenschaft)
 manager: soliver
 ms.date: 9/7/2016
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794119"
 ---
-# <a name="pidtagattachmethod-canonical-property"></a>Kanonische PidTagAttachMethod-Eigenschaft
+# <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod (kanonische Eigenschaft)
 
  
   
@@ -34,7 +34,7 @@ Enthält eine benutzerdefinierte MAPI-Konstante darstellt, die den Inhalt einer 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   
@@ -86,7 +86,7 @@ Wenn das OLE-Objekt im OLE 2.0 **IStorage** Format ist, sind die Daten über **P
   
 Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter der *OLE Programmer's Reference* . 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE**ist, ist gescannt nicht in der Nachricht. Stattdessen enthält die **PR_ATTACH_LONG_FILENAME** -Eigenschaft eine absolute URL zu gescannt, der online gespeichert wird. 
   
@@ -112,7 +112,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagStoreSupportMask-Eigenschaft](pidtagstoresupportmask-canonical-property.md)
+[PidTagStoreSupportMask (kanonische Eigenschaft)](pidtagstoresupportmask-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

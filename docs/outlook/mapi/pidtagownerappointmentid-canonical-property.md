@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOwnerAppointmentId-Eigenschaft
+title: PidTagOwnerAppointmentId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794760"
 ---
-# <a name="pidtagownerappointmentid-canonical-property"></a>Kanonische PidTagOwnerAppointmentId-Eigenschaft
+# <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für einen Termin in den Besitzer Zeitplan.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Appointment  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in Besprechungsanfragen verwendet. Es stellt keine dar, eine Eintrags-ID, aber eine lange Ganzzahl, die den Termin in der Adresse des Absenders Zeitplan eindeutig identifiziert.
   
@@ -72,7 +72,7 @@ mapitags.h
 
 
 
-[Kanonische PidTagOriginalAuthorSearchKey-Eigenschaft](pidtagoriginalauthorsearchkey-canonical-property.md)
+[PidTagOriginalAuthorSearchKey (kanonische Eigenschaft)](pidtagoriginalauthorsearchkey-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

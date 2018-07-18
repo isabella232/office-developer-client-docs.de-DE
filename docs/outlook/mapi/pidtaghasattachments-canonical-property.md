@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHasAttachments-Eigenschaft
+title: PidTagHasAttachments (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794423"
 ---
-# <a name="pidtaghasattachments-canonical-property"></a>Kanonische PidTagHasAttachments-Eigenschaft
+# <a name="pidtaghasattachments-canonical-property"></a>PidTagHasAttachments (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn eine Nachricht mindestens eine Anlage enthält.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Nachrichtenspeicher kopiert diese Eigenschaft aus der **MSGFLAG_HASATTACH** Kennzeichnung der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft. Eine Clientanwendung können dann **PR_HASATTACH** auf e-Mail-Anlagen in einem Viewer Nachricht sortiert. 
   

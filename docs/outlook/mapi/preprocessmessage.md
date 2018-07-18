@@ -96,7 +96,7 @@ S_OK
   
 > Nachrichteninhalt wurden erfolgreich vorverarbeitet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Adressbuchhierarchie Nachricht Präprozessor kann eine Statusanzeige während der vorverarbeitung Nachricht darstellen. Sie sollten jedoch noch nie ein Dialogfeld Benutzereingriff während der vorverarbeitung Nachricht dar. 
   
@@ -112,9 +112,9 @@ Die MAPI-Warteschlange besitzt die Aufgabe übermitteln von Nachrichten an. Dies
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

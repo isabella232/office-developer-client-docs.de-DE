@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookStoreName-Eigenschaft
+title: PidTagContactAddressBookStoreName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794197"
 ---
-# <a name="pidtagcontactaddressbookstorename-canonical-property"></a>Kanonische PidTagContactAddressBookStoreName-Eigenschaft
+# <a name="pidtagcontactaddressbookstorename-canonical-property"></a>PidTagContactAddressBookStoreName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen des Speichers mit der Adressbuch-Anbieter verknüpft s
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind auf einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
   

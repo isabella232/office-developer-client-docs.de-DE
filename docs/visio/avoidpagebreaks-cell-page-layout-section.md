@@ -20,15 +20,15 @@ ms.locfileid: "19796413"
 
 Legt fest, ob Shapes auf Seitenumbrüchen platziert werden können, wenn die Shapes schrittweise ausgerichtet werden, der Abstand schrittweise festgelegt oder beides.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle AvoidPageBreaks nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes. 
+Wenn Sie eine Referenz auf die Zelle AvoidPageBreaks nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |AvoidPageBreaks  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle AvoidPageBreaks aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle AvoidPageBreaks aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

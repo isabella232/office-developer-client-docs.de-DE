@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginallyIntendedRecipEntryId-Eigenschaft
+title: PidTagOriginallyIntendedRecipEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794689"
 ---
-# <a name="pidtagoriginallyintendedrecipentryid-canonical-property"></a>Kanonische PidTagOriginallyIntendedRecipEntryId-Eigenschaft
+# <a name="pidtagoriginallyintendedrecipentryid-canonical-property"></a>PidTagOriginallyIntendedRecipEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des ursprünglich beabsichtigten Empfänger einer Nachr
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine Adresse Eigenschaften der ursprünglich beabsichtigten Empfänger. Vom automatische Agent muss festgelegt werden, die die Nachricht weitergeleitet hat.
   

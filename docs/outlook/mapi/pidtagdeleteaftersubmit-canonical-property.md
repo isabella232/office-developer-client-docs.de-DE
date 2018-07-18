@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDeleteAfterSubmit-Eigenschaft
+title: PidTagDeleteAfterSubmit (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794287"
 ---
-# <a name="pidtagdeleteaftersubmit-canonical-property"></a>Kanonische PidTagDeleteAfterSubmit-Eigenschaft
+# <a name="pidtagdeleteaftersubmit-canonical-property"></a>PidTagDeleteAfterSubmit (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn eine Clientanwendung MAPI, um die zugehörige Meldung nach d
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung verwendet diese Eigenschaft mit der **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))-Eigenschaft steuern, was geschieht mit einer Meldung, nachdem es gesendet wird. Eine oder die andere sollte Set, jedoch nicht beide. 
   

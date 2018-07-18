@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cProps**
   
@@ -56,7 +56,7 @@ typedef struct
   
 > Array von Formulareigenschaften.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **SMAPIFormPropArray** wird als Parameter an die folgenden Methoden übergeben: 
   

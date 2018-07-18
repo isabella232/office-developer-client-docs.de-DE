@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDetailsTable-Eigenschaft
+title: PidTagDetailsTable (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794301"
 ---
-# <a name="pidtagdetailstable-canonical-property"></a>Kanonische PidTagDetailsTable-Eigenschaft
+# <a name="pidtagdetailstable-canonical-property"></a>PidTagDetailsTable (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine eingebettete Anzeige Table-Objekt.
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Übergeben diese Eigenschaft an die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für das Objekt gibt eine [IMAPITable](imapitableiunknown.md) -Schnittstelle, mit der Erstellung der Tabelle anzeigen kann. MAPI verwendet diese Tabelle, um die Eigenschaftenseiten für ein Address Book-Objekt als Reaktion auf einen Anruf [IAddrBook::Details](iaddrbook-details.md) angezeigt. 
   
@@ -54,9 +54,9 @@ Mapitags.h
 
 
 
-[Kanonische PidTagCreateTemplates-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
-[Kanonische PidTagSearch-Eigenschaft](pidtagsearch-canonical-property.md)
+[PidTagSearch (kanonische Eigenschaft)](pidtagsearch-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

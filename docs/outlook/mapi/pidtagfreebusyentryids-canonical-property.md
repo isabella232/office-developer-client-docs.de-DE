@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFreeBusyEntryIds-Eigenschaft
+title: PidTagFreeBusyEntryIds (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794424"
 ---
-# <a name="pidtagfreebusyentryids-canonical-property"></a>Kanonische PidTagFreeBusyEntryIds-Eigenschaft
+# <a name="pidtagfreebusyentryids-canonical-property"></a>PidTagFreeBusyEntryIds (kanonische Eigenschaft)
 
   
   

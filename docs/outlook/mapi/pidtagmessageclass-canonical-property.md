@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagMessageClass
+title: PidTagMessageClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794589"
 ---
-# <a name="pidtagmessageclass-canonical-property"></a>Kanonische-Eigenschaft PidTagMessageClass
+# <a name="pidtagmessageclass-canonical-property"></a>PidTagMessageClass (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Textzeichenfolge, die die Absender benutzerdefinierte Nachrichtenk
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Nachrichtenklasse gibt den Typ der Nachricht. Bestimmt den Satz von Eigenschaften, die für die Nachricht definiert die Art von Informationen die Nachricht übermittelt, und wie die Meldung zu behandeln. 
   

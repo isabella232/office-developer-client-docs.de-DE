@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientStatus-Eigenschaft
+title: PidTagRecipientStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794903"
 ---
-# <a name="pidtagrecipientstatus-canonical-property"></a>Kanonische PidTagRecipientStatus-Eigenschaft
+# <a name="pidtagrecipientstatus-canonical-property"></a>PidTagRecipientStatus (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der durch die MAPI-Warteschlange in Verantwortlichkeitsbere
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

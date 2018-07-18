@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFlagCompleteTime-Eigenschaft
+title: PidTagFlagCompleteTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794360"
 ---
-# <a name="pidtagflagcompletetime-canonical-property"></a>Kanonische PidTagFlagCompleteTime-Eigenschaft
+# <a name="pidtagflagcompletetime-canonical-property"></a>PidTagFlagCompleteTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt das Datum und die Uhrzeit in Coordinated Universal Time (UTC), die das Obje
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird gelöscht, wenn das Objekt "Message" nicht abgeschlossen gekennzeichnet ist. Die Zeit kleinsten Auflösung muss Minuten (der Wert muss ein Vielfaches von 600,000,000). Diese Eigenschaft muss nicht vorhanden, wenn das Objekt ein Objekt bezüglich Besprechungen ist und sollte nicht auf ein Task-Objekt vorhanden sein.
   

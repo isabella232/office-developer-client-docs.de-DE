@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSenderSearchKey-Eigenschaft
+title: PidTagOriginalSenderSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794704"
 ---
-# <a name="pidtagoriginalsendersearchkey-canonical-property"></a>Kanonische PidTagOriginalSenderSearchKey-Eigenschaft
+# <a name="pidtagoriginalsendersearchkey-canonical-property"></a>PidTagOriginalSenderSearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Search-Schlüssel für den Absender der ersten Version einer Nachri
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den ursprünglichen Absender einer Nachricht. Am ersten Übermittlung der Nachricht sollte die Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_SENDER_SEARCH_KEY** ([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   

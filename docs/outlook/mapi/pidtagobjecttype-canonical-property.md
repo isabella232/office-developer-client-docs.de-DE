@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagObjectType-Eigenschaft
+title: PidTagObjectType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794653"
 ---
-# <a name="pidtagobjecttype-canonical-property"></a>Kanonische PidTagObjectType-Eigenschaft
+# <a name="pidtagobjecttype-canonical-property"></a>PidTagObjectType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Typ eines Objekts.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der in dieser Eigenschaft enthaltenen Objekttyp entspricht die primäre Schnittstelle für ein Objekt kann über die Schnittstelle **OpenEntry** zugegriffen werden. Es wird in der Regel durch consulting des _LpulObjType_ -Parameters der entsprechenden **OpenEntry** -Methode zurückgegebene abgerufen. Wenn die Schnittstelle auf andere Weise abgerufen wird, rufen Sie [IMAPIProp::GetProps](imapiprop-getprops.md) , um den Wert für diese Eigenschaft zu erhalten. 
   

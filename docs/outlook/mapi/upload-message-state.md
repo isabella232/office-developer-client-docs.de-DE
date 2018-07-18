@@ -1,5 +1,5 @@
 ---
-title: Nachrichtenstatus hochladen
+title: Status „Uploadnachricht“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795804"
 ---
-# <a name="upload-message-state"></a>Nachrichtenstatus hochladen
+# <a name="upload-message-state"></a>Status „Uploadnachricht“
 
   
   
@@ -47,11 +47,11 @@ Wenn der Hochladevorgang Element endet, Notizen Outlook, dass die Nachricht hoch
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

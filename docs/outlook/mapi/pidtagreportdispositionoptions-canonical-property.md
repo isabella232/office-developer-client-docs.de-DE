@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportDispositionOptions-Eigenschaft
+title: PidTagReportDispositionOptions (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794951"
 ---
-# <a name="pidtagreportdispositionoptions-canonical-property"></a>Kanonische PidTagReportDispositionOptions-Eigenschaft
+# <a name="pidtagreportdispositionoptions-canonical-property"></a>PidTagReportDispositionOptions (kanonische Eigenschaft)
 
   
   

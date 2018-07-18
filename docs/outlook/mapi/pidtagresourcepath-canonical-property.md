@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResourcePath-Eigenschaft
+title: PidTagResourcePath (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794981"
 ---
-# <a name="pidtagresourcepath-canonical-property"></a>Kanonische PidTagResourcePath-Eigenschaft
+# <a name="pidtagresourcepath-canonical-property"></a>PidTagResourcePath (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Einen Pfad zu den Dienstanbieter Server enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Pfad in diesen Eigenschaften enthalten stellt den vorgeschlagenen Pfad, in dem der Benutzer Ressourcen suchen kann. Die Definition dieser Eigenschaften ist anbieterspezifisch. Beispielsweise verwendet eine Anwendung zur terminplanung diese Eigenschaften, um den vorgeschlagenen Speicherort für die Planung Anwendungsdateien anzugeben.
   

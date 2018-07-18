@@ -33,7 +33,7 @@ _connectOut_
   
 > [out] Eine Zeichenfolge, die Anmeldeinformationen enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Outlook Social Connector (OSC) Ruft die **LogonWeb** -Methode nur, wenn der Anbieter gibt an, dass sie die formularbasierte Authentifizierung unterstützt. Der Anbieter gibt an, dass es formularbasierte Authentifizierung erfordert, indem **UseLogonWebAuth** als **true** in den XML-Code für **Funktionen**festlegen. Wenn der Anbieter **UseLogonWebAuth** als **false**legt fest, die OSC wird die Standardauthentifizierung verwendet und die [ISocialSession::Logon](isocialsession-logon.md) -Methode aufgerufen. 
   
@@ -59,6 +59,6 @@ Informationen zu Fehlercodes finden Sie unter [Outlook Social Connector Provider
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 - [Formularbasierte Authentifizierung](forms-based-authentication.md)
 

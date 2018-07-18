@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoResourceType-Eigenschaft
+title: PidTagScheduleInfoResourceType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795098"
 ---
-# <a name="pidtagscheduleinforesourcetype-canonical-property"></a>Kanonische PidTagScheduleInfoResourceType-Eigenschaft
+# <a name="pidtagscheduleinforesourcetype-canonical-property"></a>PidTagScheduleInfoResourceType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der auf 0 (null) festgelegt werden muss.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss festgelegt werden, auf Null (0), wenn gesendet und Erhalt ignoriert.
   

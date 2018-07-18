@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResourceType-Eigenschaft
+title: PidTagResourceType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795002"
 ---
-# <a name="pidtagresourcetype-canonical-property"></a>Kanonische PidTagResourceType-Eigenschaft
+# <a name="pidtagresourcetype-canonical-property"></a>PidTagResourceType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der angibt, der Dienstanbietertyp.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

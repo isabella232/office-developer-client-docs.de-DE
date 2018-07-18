@@ -1,5 +1,5 @@
 ---
-title: Senden von Nachrichten mithilfe von TNEF-Anlage benutzerdefinierte Verarbeitung
+title: Senden von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795481"
 ---
-# <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>Senden von Nachrichten mithilfe von TNEF-Anlage benutzerdefinierte Verarbeitung
+# <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>Senden von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
 
  
   

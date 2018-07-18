@@ -60,6 +60,6 @@ Visual Basic für Applikationen (VBA) Hilfe ist in den Visual Basic-Editor in Pr
 
 - [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md)
     
-- [Erste Schritte beim Entwickeln von Project Server-workflows](getting-started-developing-project-server-workflows.md)
+- [Erste Schritte beim Entwickeln von Project Server-Workflows](getting-started-developing-project-server-workflows.md)
     
 

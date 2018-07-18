@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNonReceiptReason-Eigenschaft
+title: PidTagNonReceiptReason (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794651"
 ---
-# <a name="pidtagnonreceiptreason-canonical-property"></a>Kanonische PidTagNonReceiptReason-Eigenschaft
+# <a name="pidtagnonreceiptreason-canonical-property"></a>PidTagNonReceiptReason (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Gründe warum eine Nachricht nicht empfangen wurde, die Teil der non-De
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Können beispielsweise Gründe, dass die Nachricht gelöscht wurde.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageSize-Eigenschaft
+title: PidTagMessageSize (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794619"
 ---
-# <a name="pidtagmessagesize-canonical-property"></a>Kanonische PidTagMessageSize-Eigenschaft
+# <a name="pidtagmessagesize-canonical-property"></a>PidTagMessageSize (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Summe der Größen aller Eigenschaften auf ein Meldungsobjekt in By
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es wird empfohlen, dass Message Objekte diese Eigenschaft verfügbar machen. Die Nachrichtengröße gibt die ungefähre Anzahl von Bytes, die übertragen werden, wenn die Nachricht von einem Informationsspeicher an eine andere verschoben wird. Wird die Summe der Größen aller Eigenschaften im Message-Objekt, ist es in der Regel deutlich größer als den Nachrichtentext allein. 
   

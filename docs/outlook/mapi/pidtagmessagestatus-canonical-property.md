@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageStatus-Eigenschaft
+title: PidTagMessageStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794622"
 ---
-# <a name="pidtagmessagestatus-canonical-property"></a>Kanonische PidTagMessageStatus-Eigenschaft
+# <a name="pidtagmessagestatus-canonical-property"></a>PidTagMessageStatus (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine 32-Bit-Bitmaske aus Flags, die den Status einer Nachricht in einer
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Nachricht kann in einer Inhaltstabelle und in eine oder mehrere Suchergebnisse Tabellen vorhanden sein, und jede Instanz der Nachricht kann einen anderen Status aufweisen. Diese Eigenschaft sollten keine-Eigenschaft für eine Nachricht aber eine Spalte in einer Inhaltstabelle berücksichtigt werden. 
   

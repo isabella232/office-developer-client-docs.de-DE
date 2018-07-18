@@ -60,7 +60,7 @@ MAPI_E_CALL_FAILED
   
 > Eine oder mehrere der Parameter sind ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **ValidateParameters** wurde durch das Makro [ValidateParms](validateparms.md) ersetzt. **ValidateParameters** funktioniert nicht ordnungsgemäß auf RISC-Plattformen und wird nun auf diese zu kompilieren verhindert. Immer noch kompiliert und auf Intel-Plattformen ordnungsgemäß funktioniert, aber **ValidateParms** wird auf allen Plattformen empfohlen. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFollowupIcon-Eigenschaft
+title: PidTagFollowupIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794389"
 ---
-# <a name="pidtagfollowupicon-canonical-property"></a>Kanonische PidTagFollowupIcon-Eigenschaft
+# <a name="pidtagfollowupicon-canonical-property"></a>PidTagFollowupIcon (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt die Kennzeichnungsfarbe des Message-Objekts.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Benennen Sie Nachrichtenordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft darf nicht vorhanden sein, es sei denn, der Wert der **PR_FLAG_STATUS** ([PidTagFlagStatus](pidtagflagstatus-canonical-property.md))-Eigenschaft auf "FollowupFlagged" festgelegt ist, oder Message-Objekts ein bezüglich Besprechungen-Objekt ist. Diese Eigenschaft sollte auf ein Task-Objekt nicht vorhanden. Bei Festlegung auf andere Nachrichtenobjekte, muss diese Eigenschaft auf einen der folgenden Werte festgelegt sein.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientEntryId-Eigenschaft
+title: PidTagRecipientEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794915"
 ---
-# <a name="pidtagrecipiententryid-canonical-property"></a>Kanonische PidTagRecipientEntryId-Eigenschaft
+# <a name="pidtagrecipiententryid-canonical-property"></a>PidTagRecipientEntryId (kanonische Eigenschaft)
 
   
   

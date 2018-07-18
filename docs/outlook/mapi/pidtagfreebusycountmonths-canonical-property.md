@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFreeBusyCountMonths-Eigenschaft
+title: PidTagFreeBusyCountMonths (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794420"
 ---
-# <a name="pidtagfreebusycountmonths-canonical-property"></a>Kanonische PidTagFreeBusyCountMonths-Eigenschaft
+# <a name="pidtagfreebusycountmonths-canonical-property"></a>PidTagFreeBusyCountMonths (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Wert für die Berechnung der Start- und Enddatum des Bereichs der F
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss größer als oder gleich 0 und kleiner oder gleich 36. Dies ist keine erforderliche Eigenschaft.
   

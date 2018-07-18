@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExceptionEndTime-Eigenschaft
+title: PidTagExceptionEndTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794356"
 ---
-# <a name="pidtagexceptionendtime-canonical-property"></a>Kanonische PidTagExceptionEndTime-Eigenschaft
+# <a name="pidtagexceptionendtime-canonical-property"></a>PidTagExceptionEndTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt das Enddatum und die Uhrzeit der Ausnahme in der lokalen Zeitzone des Compu
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert-Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!NOTE]
 > Diese Eigenschaft ist Informationszwecken und muss nicht auf wichtige Informationen verlassen. 

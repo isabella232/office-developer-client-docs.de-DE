@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagListUnsubscribe-Eigenschaft
+title: PidTagListUnsubscribe (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794570"
 ---
-# <a name="pidtaglistunsubscribe-canonical-property"></a>Kanonische PidTagListUnsubscribe-Eigenschaft
+# <a name="pidtaglistunsubscribe-canonical-property"></a>PidTagListUnsubscribe (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Wert der Liste abmelden Header ein Feld einer Nachricht Multipurpos
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um eine Liste abmelden Kopfzeilenfeld generiert werden soll, müssen die Clients diese Eigenschaften auf den gewünschten Wert festgelegt. MIME-Writer müssen den Wert dieser Eigenschaften in der Liste abmelden Kopfzeilenfeld kopieren.
   

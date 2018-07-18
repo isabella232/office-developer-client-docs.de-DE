@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDeltaX-Eigenschaft
+title: PidTagDeltaX (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794307"
 ---
-# <a name="pidtagdeltax-canonical-property"></a>Kanonische PidTagDeltaX-Eigenschaft
+# <a name="pidtagdeltax-canonical-property"></a>PidTagDeltaX (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Breite der in Standardeinheiten für Windows-Dialogfeld ein Dialogfeld-Steue
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) Eigenschaften und diese Eigenschaft die Position und Größe das Dialogfeld-Steuerelement. 
   

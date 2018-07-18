@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796854"
 ---
-# <a name="displaymode-cell-group-properties-section"></a>Zelle "DisplayMode" (Abschnitt "Group Properties")
+# <a name="displaymode-cell-group-properties-section"></a>DisplayMode Cell (Group Properties Section)
 
 Bestimmt, wie das Gruppen-Shape und dessen Mitglieder angezeigt werden.
   
@@ -26,17 +26,17 @@ Bestimmt, wie das Gruppen-Shape und dessen Mitglieder angezeigt werden.
 |1  <br/> |Zeigt das Gruppen-Shape hinter den Mitglieds-Shapes an.  <br/> |**visGrpDispModeBack** <br/> |
 |2  <br/> |Zeigt das Gruppen-Shape vor den Mitglieds-Shapes an.  <br/> |**visGrpDispModeFront** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diesen Wert auch festlegen durch die Gruppe auswählen auf die Gruppe **Shape-Design** auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) **Verhalten** klicken und anschließend einen Anzeigemodus aus der Liste **Gruppe** auswählen. 
   
-Wenn Sie einen Verweis auf die Zelle DisplayMode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle DisplayMode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |DisplayMode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DisplayMode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle DisplayMode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -22,11 +22,11 @@ Diese Navigationsseite enthält Links zu Themen zur Programmierbarkeit in Visio 
     
 - [Informationen zu Währungskonstanten](about-currency-constants.md)
     
-- [Informationen zu Datum, Uhrzeit und Werte für die Dauer](about-date-time-and-duration-values.md)
+- [Informationen zu Datum, Uhrzeit und Dauerwerten](about-date-time-and-duration-values.md)
     
 - [Informationen zu Fehlerwerten](about-error-values.md)
     
-- [Informationen zu Formatierungsangaben](about-format-pictures.md)
+- [Informationen zum Formatieren von Bildern](about-format-pictures.md)
     
 - [Informationen zu Formeln](about-formulas.md)
     

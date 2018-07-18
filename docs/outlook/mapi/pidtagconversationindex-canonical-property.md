@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagConversationIndex
+title: PidTagConversationIndex (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794253"
 ---
-# <a name="pidtagconversationindex-canonical-property"></a>Kanonische-Eigenschaft PidTagConversationIndex
+# <a name="pidtagconversationindex-canonical-property"></a>PidTagConversationIndex (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen binären Wert, der die relative Position dieser Nachricht innerha
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Unterhaltungsthreads stellt eine Reihe von Nachrichten und Antworten. Diese Eigenschaft wird normalerweise mithilfe von verketteten Zeitstempelwerten implementiert. Die Verwendung ist optional, selbst wenn **PR_CONVERSATION_TOPIC** ([Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md)) festgelegt ist. 
   

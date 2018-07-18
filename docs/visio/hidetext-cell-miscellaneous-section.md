@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797159"
 ---
-# <a name="hidetext-cell-miscellaneous-section"></a>Zelle "HideText" (Abschnitt "Miscellaneous")
+# <a name="hidetext-cell-miscellaneous-section"></a>HideText Cell (Miscellaneous Section)
 
 Blendet den Text für ein Shape aus. Sie können Text anzeigen, Eigenschaften ändern und Formatvorlagen auf den Text im Textblock anwenden. Die Änderungen werden jedoch erst übernommen, wenn Sie HideText auf FALSE (0) zurücksetzen.
   

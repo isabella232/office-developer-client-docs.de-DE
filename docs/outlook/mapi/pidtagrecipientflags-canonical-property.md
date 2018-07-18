@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientFlags-Eigenschaft
+title: PidTagRecipientFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794894"
 ---
-# <a name="pidtagrecipientflags-canonical-property"></a>Kanonische PidTagRecipientFlags-Eigenschaft
+# <a name="pidtagrecipientflags-canonical-property"></a>PidTagRecipientFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt ein Bitfeld, das der Empfängerstatus beschreibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich. Im folgenden werden die einzelnen Flags, die festgelegt werden können.
   

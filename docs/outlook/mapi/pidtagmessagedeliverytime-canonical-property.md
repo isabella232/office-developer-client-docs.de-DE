@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageDeliveryTime-Eigenschaft
+title: PidTagMessageDeliveryTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794598"
 ---
-# <a name="pidtagmessagedeliverytime-canonical-property"></a>Kanonische PidTagMessageDeliveryTime-Eigenschaft
+# <a name="pidtagmessagedeliverytime-canonical-property"></a>PidTagMessageDeliveryTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wenn eine Nachricht nicht übermittelt wurde.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft beschreibt Zeitpunkt, zu dem die Nachricht auf dem Server gespeichert wurde, statt die Uhrzeit des Downloads, wenn der Adressbuchhierarchie die Nachricht vom Server auf den lokalen Speicher kopiert.
   

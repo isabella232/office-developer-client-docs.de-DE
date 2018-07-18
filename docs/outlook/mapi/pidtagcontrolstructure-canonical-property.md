@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagControlStructure-Eigenschaft
+title: PidTagControlStructure (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794252"
 ---
-# <a name="pidtagcontrolstructure-canonical-property"></a>Kanonische PidTagControlStructure-Eigenschaft
+# <a name="pidtagcontrolstructure-canonical-property"></a>PidTagControlStructure (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Zeiger auf eine Struktur für ein Steuerelement in einem Dialogfe
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft stellt einen langen Zeiger, der auf eine der Steuerelement-Strukturen umgewandelt wird. Die Steuerstrukturen umfassen:
   

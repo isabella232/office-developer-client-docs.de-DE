@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderId-Eigenschaft
+title: PidTagSearchFolderId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795117"
 ---
-# <a name="pidtagsearchfolderid-canonical-property"></a>Kanonische PidTagSearchFolderId-Eigenschaft
+# <a name="pidtagsearchfolderid-canonical-property"></a>PidTagSearchFolderId (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Enthält einen global eindeutigen Bezeichner (GUID), der den Suchordner identifi
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_ID  <br/> |
 |Bezeichner:  <br/> |0x6842  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

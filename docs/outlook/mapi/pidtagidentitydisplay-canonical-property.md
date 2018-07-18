@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIdentityDisplay-Eigenschaft
+title: PidTagIdentityDisplay (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794469"
 ---
-# <a name="pidtagidentitydisplay-canonical-property"></a>Kanonische PidTagIdentityDisplay-Eigenschaft
+# <a name="pidtagidentitydisplay-canonical-property"></a>PidTagIdentityDisplay (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen für einen Dienstanbieter Identität in einem messagin
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden nicht als Eigenschaften für jedes Objekt, sondern nur als eine Spalte in einer Statustabelle angezeigt. Es ist Teil der Identität des Dienstanbieters die Tabellenzeile Status verfügbar zu machen. Identität des Anbieters in der Regel zu ihrer Firma auf dem Server verweist, doch verweisen auf eine beliebige Darstellung, die der Anbieter innerhalb der messaging-System definiert. 
   

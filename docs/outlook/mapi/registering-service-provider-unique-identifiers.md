@@ -1,5 +1,5 @@
 ---
-title: Registrieren von Service Provider eindeutige Bezeichner
+title: Registrieren der eindeutigen Dienstanbieterbezeichner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795360"
 ---
-# <a name="registering-service-provider-unique-identifiers"></a>Registrieren von Service Provider eindeutige Bezeichner
+# <a name="registering-service-provider-unique-identifiers"></a>Registrieren der eindeutigen Dienstanbieterbezeichner
 
   
   
@@ -51,5 +51,5 @@ Wenn mehrere Logon-Objekten, die gleichzeitig aktiv sind vorhanden sind, ist es 
 
 
 
-[Implementieren von Service Provider Anmeldung](implementing-service-provider-logon.md)
+[Implementieren einer Dienstanbieteranmeldung](implementing-service-provider-logon.md)
 

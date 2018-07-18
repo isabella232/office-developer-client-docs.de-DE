@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagSensitivity
+title: PidTagSensitivity (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795144"
 ---
-# <a name="pidtagsensitivity-canonical-property"></a>Kanonische-Eigenschaft PidTagSensitivity
+# <a name="pidtagsensitivity-canonical-property"></a>PidTagSensitivity (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der den Nachrichtenabsender Opinion, der die Vertraulichkei
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es wird empfohlen, dass Message Objekte diese Eigenschaft verfügbar machen.
   

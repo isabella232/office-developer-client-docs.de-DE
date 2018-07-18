@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDeliverTime-Eigenschaft
+title: PidTagDeliverTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794298"
 ---
-# <a name="pidtagdelivertime-canonical-property"></a>Kanonische PidTagDeliverTime-Eigenschaft
+# <a name="pidtagdelivertime-canonical-property"></a>PidTagDeliverTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wann die ursprüngliche Nachricht übermittelt wurde
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine pro Empfänger-Eigenschaft für einen Delivery Report, der die angibt, die die ursprüngliche Nachricht an die messaging-Benutzer übermittelt wurde für die der Übermittlungsbericht generiert wird.
   

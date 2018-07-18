@@ -41,7 +41,7 @@ Im Gegensatz zu den OData-Interface für den **ProjectData** -Dienst für die be
   
 Tabelle 1 enthält die **ProjectContext** -Eigenschaften, die Project Server-Objekte darstellen. Diese Objekte können Sie anderen Project Server 2013-Entitäten wie Zuordnungen und Aufgaben abrufen. 
   
-**In Tabelle 1. ProjectContext-Eigenschaften, die Zugriff auf Project Server-Objekte in der CSOM und JSOM bereitstellen**
+**Tabelle 1. ProjectContext-Eigenschaften, mit denen auf Project Server-Objekte im CSOM und JSOM zugegriffen werden kann**
 
 |**CSOM (.NET, Silverlight und Windows Phone)**|**JSOM**|
 |:-----|:-----|
@@ -66,9 +66,9 @@ Tabelle 1 enthält die **ProjectContext** -Eigenschaften, die Project Server-Obj
   
 Lesen Sie auch die folgenden Artikel, in denen die Verwendung des CSOM erläutert wird:
   
-- [Massen-Update für benutzerdefinierte Felder und Erstellen von Projektwebsites in einem Workflow in Project Online](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
+- [Massenaktualisierung von benutzerdefinierten Feldern und Erstellen von Projektwebsites aus einem Workflow in Project Online](bulk-update-custom-fields-and-create-project-sites-from-workflow-in-project.md)
     
-- [Arbeiten Sie mit Projekten mithilfe des JavaScript-Objektmodells](create-retrieve-update-delete-projects-using-project-server-javascript.md)
+- [Arbeiten mit Projekten unter Verwendung des JavaScript-Objektmodells](create-retrieve-update-delete-projects-using-project-server-javascript.md)
     
 > [!NOTE]
 > Sie können auch Visual Studio 2010 für die Entwicklung mit dem Clientobjektmodell .NET Framework 4. 
@@ -81,7 +81,7 @@ Lesen Sie auch die folgenden Artikel, in denen die Verwendung des CSOM erläuter
 
 
 
-[Architektur von Project Server 2013](project-server-2013-architecture.md)
+[Project Server 2013-Architektur](project-server-2013-architecture.md)
 
 
 [Auswählen des richtigen API-Satzes in SharePoint 2013](http://msdn.microsoft.com/library/f36645da-77c5-47f1-a2ca-13d4b62b320d%28Office.15%29.aspx)

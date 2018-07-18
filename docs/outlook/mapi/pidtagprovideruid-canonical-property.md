@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderUid-Eigenschaft
+title: PidTagProviderUid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794835"
 ---
-# <a name="pidtagprovideruid-canonical-property"></a>Kanonische PidTagProviderUid-Eigenschaft
+# <a name="pidtagprovideruid-canonical-property"></a>PidTagProviderUid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine **MAPIUID** Struktur des Dienstanbieters, der eine Nachricht behan
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von allen Dienstanbietern berechnet. Sie enthält eine [MAPIUID](mapiuid.md) Struktur zugeordnet und in der Regel hartcodierte vom Anbieter. Es wird in der Regel von einer Clientanwendung verwendet, die nur Address Book Container von einem bestimmten Anbieter bereitgestellt wird, interessiert ist. 
   

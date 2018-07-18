@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalDisplayName-Eigenschaft
+title: PidTagOriginalDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794682"
 ---
-# <a name="pidtagoriginaldisplayname-canonical-property"></a>Kanonische PidTagOriginalDisplayName-Eigenschaft
+# <a name="pidtagoriginaldisplayname-canonical-property"></a>PidTagOriginalDisplayName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den ursprünglichen Anzeigenamen für einen Eintrag aus einem Adressbuc
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten Informationen zu der ursprünglichen Quelle des kopierten-Eintrags.
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagTransmittableDisplayName-Eigenschaft](pidtagtransmittabledisplayname-canonical-property.md)
+[PidTagTransmittableDisplayName (kanonische Eigenschaft)](pidtagtransmittabledisplayname-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

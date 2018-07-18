@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreEntryId-Eigenschaft
+title: PidTagStoreEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795206"
 ---
-# <a name="pidtagstoreentryid-canonical-property"></a>Kanonische PidTagStoreEntryId-Eigenschaft
+# <a name="pidtagstoreentryid-canonical-property"></a>PidTagStoreEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die eindeutige Eintrags-ID des Nachrichtenspeichers an, in dem ein Obje
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird verwendet, um einen Nachrichtenspeicher mit der [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) -Methode zu öffnen. Es wird auch ein beliebiges Objekt öffnen, die gehört verwendet, durch die Nachrichtenspeicher. 
   

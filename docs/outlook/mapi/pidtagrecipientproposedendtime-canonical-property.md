@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientProposedEndTime-Eigenschaft
+title: PidTagRecipientProposedEndTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794913"
 ---
-# <a name="pidtagrecipientproposedendtime-canonical-property"></a>Kanonische PidTagRecipientProposedEndTime-Eigenschaft
+# <a name="pidtagrecipientproposedendtime-canonical-property"></a>PidTagRecipientProposedEndTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt eine vorgeschlagene Endzeit einer Besprechung an.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Wert der **PR_RECIPIENT_PROPOSED** ([PidTagRecipientProposed](pidtagrecipientproposed-canonical-property.md))-Eigenschaft auf TRUE festgelegt ist, gibt den Wert dieser Eigenschaft den Wert angefordert, indem die Teilnehmer als Wert des **DispidApptEndWhole** ([ festlegen PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md))-Eigenschaft für das Einzelinstanz Besprechung oder Exception-Objekt.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleActions-Eigenschaft
+title: PidTagRuleActions (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795011"
 ---
-# <a name="pidtagruleactions-canonical-property"></a>Kanonische PidTagRuleActions-Eigenschaft
+# <a name="pidtagruleactions-canonical-property"></a>PidTagRuleActions (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Satz von Aktionen, die die Regel zugeordnet.
 |Datentyp:  <br/> |PT_ACTIONS  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Aktionen werden als Regelaktion ausgedrückt, und der Eigenschaft Wert Puffer enthält die Regel Aktion-Puffer Datenstruktur gepackt wie in [[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)angegeben.
   

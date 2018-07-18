@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOtherAddressStreet-Eigenschaft
+title: PidTagOtherAddressStreet (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794761"
 ---
-# <a name="pidtagotheraddressstreet-canonical-property"></a>Kanonische PidTagOtherAddressStreet-Eigenschaft
+# <a name="pidtagotheraddressstreet-canonical-property"></a>PidTagOtherAddressStreet (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält der e-Mail-Nachrichten des Benutzers andere Straße.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

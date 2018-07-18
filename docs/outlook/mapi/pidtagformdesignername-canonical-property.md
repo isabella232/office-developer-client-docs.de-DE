@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormDesignerName-Eigenschaft
+title: PidTagFormDesignerName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794405"
 ---
-# <a name="pidtagformdesignername-canonical-property"></a>Kanonische PidTagFormDesignerName-Eigenschaft
+# <a name="pidtagformdesignername-canonical-property"></a>PidTagFormDesignerName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen für das Objekt, das verwendet wird, um das Formular e
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten den eindeutigen Bezeichner für das Formular-Designer-Objekt. 
   

@@ -41,7 +41,7 @@ typedef struct _SPropTagArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -51,7 +51,7 @@ typedef struct _SPropTagArray
   
 > Array von Eigenschaftentags.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Eigenschaftentag ist eine 32-Bit-Ganzzahl ohne Vorzeichen, die besteht aus zwei Teilen: 
   

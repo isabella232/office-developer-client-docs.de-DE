@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagBodyHtml-Eigenschaft
+title: PidTagBodyHtml (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794144"
 ---
-# <a name="pidtagbodyhtml-canonical-property"></a>Kanonische PidTagBodyHtml-Eigenschaft
+# <a name="pidtagbodyhtml-canonical-property"></a>PidTagBodyHtml (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Version Hypertext Markup Language (HTML), der den Nachrichtentext enthält.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten den gleichen Nachrichtentext als **PR_BODY_CONTENT_LOCATION** ([PidTagBodyContentLocation](pidtagbodycontentlocation-canonical-property.md)), aber im HTML-Format. 
   

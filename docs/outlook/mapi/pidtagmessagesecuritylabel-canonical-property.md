@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMessageSecurityLabel-Eigenschaft
+title: PidTagMessageSecurityLabel (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794612"
 ---
-# <a name="pidtagmessagesecuritylabel-canonical-property"></a>Kanonische PidTagMessageSecurityLabel-Eigenschaft
+# <a name="pidtagmessagesecuritylabel-canonical-property"></a>PidTagMessageSecurityLabel (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein Sicherheitskennzeichen für eine Nachricht an.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft bietet die Grundlage, auf der die **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md))-Eigenschaft eine Nachricht schützt. Die Verknüpfung mit den Nachrichteninhalt wird durch das Token garantiert.
   

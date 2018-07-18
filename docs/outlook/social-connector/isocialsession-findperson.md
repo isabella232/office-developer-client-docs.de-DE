@@ -33,11 +33,11 @@ _Ergebnis_
   
 > [out] Eine XML-Zeichenfolge, die eine oder mehrere Personen darstellt, die durch den _Benutzer-ID_ -Parameter angegebenen Informationen zur Identifizierung entsprechen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn eine oder mehrere Personen die Anforderung **FindPerson** übereinstimmen, gibt diese Methode die Informationen für die Personen in der _Result_ -Parameters. Die _resultierende_ XML-Zeichenfolge muss der Schemadefinition für **Freunde**, gemäß Definition im Schema für Outlook Social Connector (OSC)-Erweiterbarkeit des Providers entsprechen. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookStoreSupportMask-Eigenschaft
+title: PidTagContactAddressBookStoreSupportMask (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794202"
 ---
-# <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>Kanonische PidTagContactAddressBookStoreSupportMask-Eigenschaft
+# <a name="pidtagcontactaddressbookstoresupportmask-canonical-property"></a>PidTagContactAddressBookStoreSupportMask (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagcontactad
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Kontakt-Adressbuchanbieter verwendet diese Eigenschaft für die Eignung der unterstützten Features für den Speicher ausgewertet werden soll. Dies ist eine Eigenschaft für einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
   

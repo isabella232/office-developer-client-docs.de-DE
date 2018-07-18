@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796808"
 ---
-# <a name="datetime-function"></a>DATETIME Function
+# <a name="datetime-function"></a>DATETIME-Funktion
 
 Gibt den Wert Datum und Uhrzeit, die durch _Datetime_ oder _Expression_dargestellt.
   

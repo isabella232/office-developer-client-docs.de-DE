@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRulesTable-Eigenschaft
+title: PidTagRulesTable (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795050"
 ---
-# <a name="pidtagrulestable-canonical-property"></a>Kanonische PidTagRulesTable-Eigenschaft
+# <a name="pidtagrulestable-canonical-property"></a>PidTagRulesTable (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Enthält eine Tabelle mit allen Regeln in einen Ordner angewendet.
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist auf alle Ordnerobjekte auf einem Exchange-Server, denen Regeln vorhanden. Werte enthalten, die in dieser Eigenschaft werden beim Lesen und Ändern der Regeln verwendet. Sie können die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode mit der **IID_IExchangeModifyTable** Interface Identifier verwenden, erhalten eine [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md) -Schnittstelle für die Regeltabelle für einen Ordner. Sie können diese Schnittstelle zum Lesen und ändern diese Regeln verwenden. 
   
@@ -52,7 +52,7 @@ Mapitags.h
 
 
 
-[IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md)
+[IExchangeModifyTable : IUnknown](iexchangemodifytableiunknown.md)
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
 

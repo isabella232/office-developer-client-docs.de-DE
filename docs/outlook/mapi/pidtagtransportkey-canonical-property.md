@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTransportKey-Eigenschaft
+title: PidTagTransportKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795269"
 ---
-# <a name="pidtagtransportkey-canonical-property"></a>Kanonische PidTagTransportKey-Eigenschaft
+# <a name="pidtagtransportkey-canonical-property"></a>PidTagTransportKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert zum Nachverfolgen des Fortschritts des eine ausgehende Nachr
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   
@@ -54,7 +54,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagTransportProviders-Eigenschaft](pidtagtransportproviders-canonical-property.md)
+[PidTagTransportProviders (kanonische Eigenschaft)](pidtagtransportproviders-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

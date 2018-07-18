@@ -49,5 +49,5 @@ Hier finden Sie eine Übersicht der Project Server Interface (PSI)-Referenz, wie
 
 [JavaScript-API für Office](http://msdn.microsoft.com/en-us/library/fp142185.aspx)
   
-[Project 2013 VBA-Entwicklerreferenz (engl.)](http://msdn.microsoft.com/en-us/library/jj235035.aspx)
+[Project 2013-VBA-Entwicklerreferenz](http://msdn.microsoft.com/en-us/library/jj235035.aspx)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFormHidden-Eigenschaft
+title: PidTagFormHidden (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794413"
 ---
-# <a name="pidtagformhidden-canonical-property"></a>Kanonische PidTagFormHidden-Eigenschaft
+# <a name="pidtagformhidden-canonical-property"></a>PidTagFormHidden (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Formular aus der Anzeige unterdrückt werden durch Verfa
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular-bezogene Eigenschaften sind schreibgeschützt. 
   

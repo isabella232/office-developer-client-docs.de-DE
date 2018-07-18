@@ -26,12 +26,44 @@ Wenn eine Formel auf eine Zelle verweist, die einen Fehlerwert enthält, zeigt d
 
 ||||
 |:-----|:-----|:-----|
-|**Wenn die Zelle anzeigt** <br/> |**Die Formel enthält.** <br/> |**Beispiel** <br/> |
-| #DIV/0!  <br/> |Division durch 0  <br/> |10/0  <br/> |
-| #VALUE!  <br/> | Ein Argument oder Operand vom falschen Typ  <br/> | 5 + "Hütte"  <br/> |
-| #REF!  <br/> | Ein Verweis auf eine Zelle, die nicht vorhanden ist  <br/> | Eine Zelle, die in eine andere Zelle verweist, die nicht mehr vorhanden ist  <br/> |
-| #NUM!  <br/> | Eine ungültige Zahl  <br/> | Quadratwurzel einer negativen Zahl  <br/> |
-| #N/V!  <br/> | Kein verfügbaren Wert  <br/> | Funktion NA)  <br/> |
-| #DIM!  <br/> | Ein dimensionaler Wert, der den Bemaßungsbereich überschreitet (gültige Potenzen sind Ganzzahlen-128 \<n = \<= 127)  <br/> Ein dimensionaler Wert, der mit einem Vorgang ungeeignetes verwendet  <br/> |1In ^ 100 \* 1In ^ 100 (das Ergebnis ist 1In ^ 200 und liegt außerhalb des Bemaßungsbereichs)  <br/> 5, 2 cm ^ 1,5 (ist keine ganzzahlige Potenz)  <br/> |
+|**Wenn die Zelle anzeigt** <br/> |**Formel enthält** <br/> |**Beispiel** <br/> |
+| #DIV/0!  <br/> |
+                Division durch 0
+  <br/> |10/0  <br/> |
+| #VALUE!  <br/> | 
+                
+                
+                Ein Argument oder Operand vom falschen Typ
+  <br/> | 
+                
+                
+                5 + "Haus"
+  <br/> |
+| #REF!  <br/> | 
+                
+                
+                Ein Bezug auf eine nicht vorhandene Zelle
+  <br/> | 
+                
+                
+                Eine Zelle, die auf eine nicht mehr vorhandene Zelle verweist
+  <br/> |
+| #NUM!  <br/> | 
+                
+                
+                Eine ungültige Zahl
+  <br/> | 
+                
+                
+                Quadratwurzel einer negativen Zahl
+  <br/> |
+| #N/V!  <br/> | Kein verfügbaren Wert  <br/> | 
+                
+                
+                Funktion NA( )
+  <br/> |
+| #DIM!  <br/> | Ein dimensionaler Wert, der den Bemaßungsbereich überschreitet (gültige Potenzen sind Ganzzahlen-128 \<n = \<= 127)  <br/> Ein Bemaßungswert, der in einer nicht zulässigen Operation verwendet wurde.
+  <br/> |1In ^ 100 \* 1In ^ 100 (das Ergebnis ist 1In ^ 200 und liegt außerhalb des Bemaßungsbereichs)  <br/> 5,2cm^1,5 (ist keine ganzzahlige Potenz)
+  <br/> |
    
 

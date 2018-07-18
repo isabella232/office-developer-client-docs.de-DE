@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82253218
 localization_priority: Normal
 ms.assetid: 4d87313a-c09a-582c-04f4-d95800e3e9f2
-description: Gibt einen transformierten Winkel im Ziel-Shape übergeordneten Koordinatensystem zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die übergeordneten Koordinaten in einem Ziel-Shape.
+description: Gibt einen transformierten Winkel im übergeordneten Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die übergeordneten Koordinaten eines Ziel-Shapes.
 ms.openlocfilehash: 3a739c55d568dc548f8175b56f22e6ec4c28e4c7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -18,7 +18,9 @@ ms.locfileid: "19796408"
 ---
 # <a name="angletopar-function"></a>ANGLETOPAR Function
 
-Gibt einen transformierten Winkel im Ziel-Shape übergeordneten Koordinatensystem zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die übergeordneten Koordinaten in einem Ziel-Shape. 
+Gibt einen transformierten Winkel im übergeordneten Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die übergeordneten Koordinaten eines Ziel-Shapes.
+    
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +30,7 @@ ANGLETOPAR (** *SrcAngle* **, ** *SrcRef* **, ** *Zielbezug* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _srcAngle_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Ein Winkel im Quellkoordinatensystem.  <br/> |
+| _srcAngle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Ein Winkel im Quellkoordinatensystem.  <br/> |
 | _srcRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Quellobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
 | _Zielbezug_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf eine Zelle im Zielobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
    

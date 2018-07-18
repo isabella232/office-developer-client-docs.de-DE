@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797072"
 ---
-# <a name="foreign-image-info-section"></a>Abschnitt "Foreign Image Info"
+# <a name="foreign-image-info-section"></a>Foreign Image Info Section
 
 Enthält die Breite und Höhe eines Objekts aus einem anderen Programm, das in einer Microsoft Visio-Zeichnung verwendet wird. Dieser Abschnitt wird nur im ShapeSheet-Fenster für solche Objekte angezeigt. Hier ist auch der Abstand zwischen den Rahmen des Objekts und dem eigentlichen Bild angegeben.
   

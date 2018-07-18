@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPreprocess-Eigenschaft
+title: PidTagPreprocess (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794795"
 ---
-# <a name="pidtagpreprocess-canonical-property"></a>Kanonische PidTagPreprocess-Eigenschaft
+# <a name="pidtagpreprocess-canonical-property"></a>PidTagPreprocess (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn die Nachricht vorverarbeitung erforderlich sind.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!IMPORTANT]
 > Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert. 
@@ -55,7 +55,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagSubmitFlags-Eigenschaft](pidtagsubmitflags-canonical-property.md)
+[PidTagSubmitFlags (kanonische Eigenschaft)](pidtagsubmitflags-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

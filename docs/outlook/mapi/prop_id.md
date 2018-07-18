@@ -1,5 +1,5 @@
 ---
-title: EIGENSCH_ID
+title: PROP_ID
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795318"
 ---
-# <a name="propid"></a>EIGENSCH_ID
+# <a name="propid"></a>PROP_ID
 
   
   
@@ -42,7 +42,7 @@ PROP_ID (ulPropTag)
   
 > Eigenschafts-Tag mit dem Bezeichner zurückgegeben werden soll.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jede Eigenschaftentag enthält den Eigenschaftstyp in das niederwertige Wort (Bits 0 bis 15) und der Eigenschaft-ID in das hohe Word (Bits 16 bis 31). Das Makro **eigensch_id** extrahiert Bezeichner der und legt es in Bits 0 bis 15, der die ganze Zahl zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden für Nullen festgelegt. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachNumber-Eigenschaft
+title: PidTagAttachNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794111"
 ---
-# <a name="pidtagattachnumber-canonical-property"></a>Kanonische PidTagAttachNumber-Eigenschaft
+# <a name="pidtagattachnumber-canonical-property"></a>PidTagAttachNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Zahl, die die Anlage innerhalb der übergeordneten Nachricht einde
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nachrichtenspeicher generieren und verwalten diese Eigenschaft. Die Anzahl der Anlage ist die sekundäre Sortierschlüssel, nach dem Renderingposition in der Anlagentabelle. 
   

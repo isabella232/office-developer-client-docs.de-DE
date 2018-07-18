@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRemoteValidateOk-Eigenschaft
+title: PidTagRemoteValidateOk (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794950"
 ---
-# <a name="pidtagremotevalidateok-canonical-property"></a>Kanonische PidTagRemoteValidateOk-Eigenschaft
+# <a name="pidtagremotevalidateok-canonical-property"></a>PidTagRemoteValidateOk (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält True, wenn der remote-Viewer zulässig ist, die [IMAP
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in der Tabelle "Status" und einige Kontrolle über die Transport Leistung bietet. Es kann als eine andere Möglichkeit, leiten den remote Viewer, im Leerlauf betrachtet werden. Wenn sie auf "true" festgelegt ist, kann die remote-Ansicht so oft wie gewünscht **IMAPIStatus::ValidateState** aufrufen. Der Wert FALSE gibt an, dass keine weitere Aufrufe der remote-Viewer nicht ausgeführt werden kann. 
   

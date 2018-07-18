@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen von Benachrichtigungen für Nachrichtenspeicher-Anbieter
+title: Bereitstellen von Benachrichtigungen für Nachrichtenspeicheranbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795333"
 ---
-# <a name="providing-notifications-for-message-store-providers"></a>Bereitstellen von Benachrichtigungen für Nachrichtenspeicher-Anbieter
+# <a name="providing-notifications-for-message-store-providers"></a>Bereitstellen von Benachrichtigungen für Nachrichtenspeicheranbieter
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSmtpAddress-Eigenschaft
+title: PidTagSmtpAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795166"
 ---
-# <a name="pidtagsmtpaddress-canonical-property"></a>Kanonische PidTagSmtpAddress-Eigenschaft
+# <a name="pidtagsmtpaddress-canonical-property"></a>PidTagSmtpAddress (kanonische Eigenschaft)
 
   
   

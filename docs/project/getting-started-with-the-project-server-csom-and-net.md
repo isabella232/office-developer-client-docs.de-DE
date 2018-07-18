@@ -26,7 +26,7 @@ Verwenden Sie Visual Studio 2010 oder Visual Studio 2012, zum Entwickeln von Lö
   
 Sie können die CSOM-Assembly, die Sie benötigen aus der Project Server-Computer oder aus der Project 2013-SDK-Download auf einem Computer remoteentwicklung kopieren. Die **QueueCreateProject** Konsolenanwendung, die in diesem Thema beschrieben wird ist keiner Silverlight-Anwendung oder einer Windows Phone 8-Anwendung benötigen Sie die Assembly Microsoft.ProjectServer.Client.dll. Da das CSOM unabhängig von der WCF-basierte oder ASMX-basierte Project Server Interface (PSI) ist, müssen Sie keinen zum Festlegen von Dienstverweise für die PSI, oder verwenden Sie den **Microsoft.Office.Project.Server.Library** -Namespace. 
   
-Die Anwendung **QueueCreateProject** verwendet Befehlszeilenargumente für den Namen des Projekts, um das Erstellen und die Warteschlange Zeitlimit für. In Schritt 1 erstellen die standardkonsolenanwendung, eine Routine zum Analysieren der Befehlszeile hinzufügen und eine Hilfetext hinzufügen, treten Fehler in der Befehlszeile. 
+Die **QueueCreateProject**-Anwendung verwendet Befehlszeilenargumente für den Namen des zu erstellenden Projekts und das Warteschlangen-Zeitlimit In Verfahren 1 erstellen Sie die grundlegende Konsolenanwendung, fügen eine Routine zum Analysieren der Befehlszeile hinzu und fügen eine Nachricht die Verwendung hinzu, falls Fehler in der Befehlszeile auftreten. 
   
 ### <a name="procedure-1-to-create-a-csom-project-in-visual-studio"></a>Verfahren 1: So erstellen Sie ein CSOM-Projekt in Visual Studio
 
@@ -37,7 +37,7 @@ Die Anwendung **QueueCreateProject** verwendet Befehlszeilenargumente für den N
 3. Klicken Sie in Visual Studio erstellen Sie eine Windows, und legen Sie das Zielframework in .NET Framework 4. Nennen Sie beispielsweise die Anwendung QueueCreateProject.
     
    > [!NOTE]
-   > Wenn Sie vergessen, das richtige Ziel, festzulegen, nachdem Visual Studio das Projekt erstellt haben, öffnen Sie im Menü **Projekt** **QueueCreateProject Eigenschaften** . Wählen Sie auf der Registerkarte **Anwendung** in der Dropdownliste **Zielframework** **.NET Framework 4**. Verwenden Sie das **.NET Framework 4 Client Profile**nicht. 
+   > Wenn Sie vergessen, das richtige Ziel festzulegen, nachdem Visual Studio das Projekts erstellt hat, öffnen Sie **Eigenschaften von QueueCreateProject** im Menü **Projekt**. Wählen Sie auf der Registerkarte **Anwendung** in der Dropdown-Liste **Zielframework** die Option **.NET Framework 4**. Verwenden Sie nicht **.NET Framework 4 Client Profile**. 
   
 4. Legen Sie im Projektmappen-Explorer Verweise auf die folgenden Assemblys fest:
     
@@ -157,13 +157,13 @@ CSOM Entwicklung erfordert das **ProjectContext** -Objekt, das mit der Project W
 ## <a name="getting-an-enterprise-project-type"></a>Abrufen eines Enterprise-Projekttyps
 <a name="pj15_GettingStartedCSOM_GettingEPT"> </a>
 
-Die beispielanwendung **QueueCreateProject** wählt explizit Enterprise Standardprojekt-EPT um anzuzeigen, wie eine Anwendung die EPT für ein Projekt auswählen kann. Wenn die Informationen zur Erstellung von Projekt nicht die EPT GUID angegeben wird, würde eine Anwendung der Standard-EPT verwenden. Die **GetEptUid** -Methode wird von der **CreateTestProject** -Methode verwendet, die im Verfahren 4 beschrieben wird. 
+Die **QueueCreateProject**-Beispielanwendung wählt explizit den Enterprise-Projekt-EPT aus, um zu zeigen, wie eine Anwendung den EPT für ein Projekt auswählen kann. Wenn die Projekterstellungsinformationen die EPT-GUID nicht angeben, verwendet eine Anwendung den Standard-EPT. Die **GetEptUid**-Methode wird von der **CreateTestProject**-Methode verwendet, die in Verfahren 4 beschriebenen wird. 
   
-Die Methode **GetEptUid** fragt das **ProjectContext** -Objekt für die Auflistung der **EnterpriseProjectTypes** , in dem die EPT der Name der den angegebenen Namen entspricht. Nach dem Ausführen der Abfrage, wird die Variable **EptUid** auf die GUID des ersten Objekts in der Auflistung **EptList** **EnterpriseProjectType** festgelegt. Da EPT Namen eindeutig sind, besteht nur ein **EnterpriseProjectType** -Objekt, das dem angegebenen Namen ab. 
+Die **GetEptUid**-Methode fragt das **ProjectContext**-Objekt für die Auflistung von **EnterpriseProjectTypes** ab, deren EPT-Namen dem angegebenen Namen entsprechen. Nach dem Ausführen der Abfrage wird die **eptUid**-Variable auf die GUID des ersten **EnterpriseProjectType**-Objekts in der **eptList**-Auflistung festgelegt. Da EPT-Namen eindeutig sind, gibt es nur ein **EnterpriseProjectType**-Objekt mit dem angegebenen Namen. 
   
 ### <a name="procedure-3-to-get-the-guid-of-an-ept-for-a-new-project"></a>Verfahren 3: So rufen Sie die GUID für den ETP eines neuen Projekts ab
 
-- Fügen Sie die **GetEptUid** -Methode auf die **Programm** -Klasse. 
+- Fügen Sie die **GetEptUid**-Methode zur **Program**-Klasse hinzu. 
     
    ```cs
     // Get the GUID of the specified enterprise project type.
@@ -190,7 +190,7 @@ Die Methode **GetEptUid** fragt das **ProjectContext** -Objekt für die Auflistu
     }
    ```
 
-Es gibt verschiedene Möglichkeiten, die EPT-GUID finden. Die Abfrage in der **GetEptUid** -Methode dargestellt ist effizient, da sie nur das einzige Objekt **EnterpriseProjectType** heruntergeladen, das mit dem Namen EPT übereinstimmt. Die folgenden alternative Routine ist weniger effizient, da sie die vollständige Liste der EPTs an die Clientanwendung downloads und und der Liste durchlaufen. 
+Es gibt mehrere Möglichkeiten, die EPT-GUID zu ermitteln. Die in der **GetEptUid**-Methode gezeigte Abfrage ist effizient, da sie nur das eine **EnterpriseProjectType**-Objekt herunterlädt, das dem EPT-Namen entspricht. Die folgende alternative Routine ist weniger effizient, da sie die vollständige Liste der EPTs in die Clientanwendung herunterlädt und die Liste mehrmals durchläuft. 
 
 ```cs
 foreach (EnterpriseProjectType ept in projSvr.EnterpriseProjectTypes)
@@ -203,7 +203,7 @@ foreach (EnterpriseProjectType ept in projSvr.EnterpriseProjectTypes)
 }
 ```
 
-Die folgende Routine mithilfe einen LINQ-Abfrage und Lambda-Ausdruck das EPT-Objekt ausgewählt, aber weiterhin alle Objekte **EnterpriseProjectType** downloads. 
+Die folgende Routine verwendet eine LINQ-Abfrage und einen Lambda-Ausdruck zum Auswählen des EPT-Objekts, lädt jedoch auch alle **EnterpriseProjectType**-Objekte herunter. 
 
 ```cs
 var eptList = projContext.LoadQuery(projContext.EnterpriseProjectTypes);
@@ -214,13 +214,13 @@ eptUid = eptList.First(ept => ept.Name == eptName).Id;
 ## <a name="setting-the-creation-information-and-publishing-the-project"></a>Festlegen der Erstellungsinformationen und Veröffentlichen des Projekts
 <a name="pj15_GettingStartedCSOM_ProjectCreation"> </a>
 
-Die **CreateTestProject** -Methode erstellt ein **ProjectCreationInformation** -Objekt und gibt die Informationen, die zum Erstellen eines Projekts erforderlich ist. Die Projekt-GUID und Name sind erforderlich. Das Startdatum, die Beschreibung des Projekts und die EPT GUID sind optional. 
+Die **CreateTestProject**-Methode erstellt ein **ProjectCreationInformation**-Objekt und gibt die Informationen an, die zum Erstellen eines Projekts erforderlich sind. Die GUID des Projekts und der Name sind erforderlich. Das Startdatum, die Projektbeschreibung und die EPT-GUID sind optional. 
   
-Nach dem Festlegen der neuen Projekteigenschaften, fügt die **Projects.Add** -Methode des Projekts zur **Projects** -Auflistung. Um zu speichern und veröffentlichen Sie das Projekt, müssen Sie die **Projects.Update** -Methode zum Senden einer Nachricht an die Project Server-Warteschlange, und erstellen Sie ein Projekt aufrufen. 
+Nach dem Festlegen der neuen Projekteigenschaften fügt die **Projects.Add**-Methode das Projekt zur **Projects**-Auflistung hinzu. Zum Speichern und Veröffentlichen des Projekts müssen Sie die **Projects.Update**-Methode aufrufen, um eine Nachricht an die Project Server-Warteschlange zu senden und das Projekt zu erstellen. 
   
 ### <a name="procedure-4-to-set-the-new-project-properties-create-the-project-and-publish-the-project"></a>Verfahren 4: So legen Sie die neuen Projekteigenschaften fest, erstellen das Projekt und veröffentlichen das Projekt
 
-1. Fügen Sie die **CreateTestProject** -Methode auf die **Programm** -Klasse. Der folgende Code erstellt und ein Projekt veröffentlicht, aber wartet für die Durchführung der Warteschlangenauftrag nicht. 
+1. Fügen Sie die **CreateTestProject**-Methode zur **Program**-Klasse hinzu. Mit dem folgende Code wird ein Projekt erstellt und veröffentlicht, es wird jedoch nicht gewartet, bis der Warteschlangenauftrag abgeschlossen ist. 
     
    ```cs
     // Create a project.
@@ -254,7 +254,7 @@ Nach dem Festlegen der neuen Projekteigenschaften, fügt die **Projects.Add** -M
 
 2. Ersetzen Sie die `/* Add code here to wait for the queue. */` Kommentar durch den folgenden Code für den Warteschlangenauftrag gewartet. Die Routine wartet, bis zu der angegebenen **TimeoutSeconds** Anzahl von Sekunden oder wird fortgesetzt, wenn vor dem Timeout der Warteschlangenauftrag beendet wurde. Mögliche Warteschlange Auftragsstatusangaben finden Sie unter [Microsoft.ProjectServer.Client.JobState](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.JobState.aspx) . 
     
-   Das Aufrufen der **Load** -Methode und die **ExecuteQuery** -Methode für das Objekt **QueueJob** ist optional. Wenn das **QueueJob** -Objekt nicht initialisiert wird, wenn Sie die **WaitForQueue** -Methode aufrufen, Project Server wird initialisiert. 
+   Das Aufrufen der **Load**-Methode und der **ExecuteQuery**-Methode für das **QueueJob**-Objekt ist optional. Wenn das **QueueJob**-Objekt beim Aufrufen der **WaitForQueue**-Methode nicht initialisiert ist, initialisiert Project Server die Methode. 
     
    ```cs
     // Calling Load and ExecuteQuery for the queue job is optional.
@@ -283,7 +283,7 @@ Die **ListPublishedProjects** -Methode ruft die Auflistung aller Projekte, die i
   
 ### <a name="procedure-5-to-list-the-published-projects"></a>Verfahren 5: So listen Sie die veröffentlichten Projekte auf
 
-1. Fügen Sie die **ListPublishedProjects** -Methode auf die **Programm** -Klasse. 
+1. Fügen Sie die **ListPublishedProjects**-Methode zur **Program**-Klasse hinzu. 
     
    ```cs
     // List the published projects.
@@ -337,7 +337,7 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
 
 3. Führen Sie einen weiteren Test das Standardtimeout 10 Sekunden Warteschlange verwendet die folgenden Befehlszeilenargumente aus:`-n "Test proj 2"`
     
-   Die **QueueCreateProject** -Anwendung erstellt und veröffentlicht das Projekt mit dem Namen Test Proj 2. 
+   Die **QueueCreateProject**-Anwendung erstellt und veröffentlicht das Projekt mit dem Namen „Test Proj 2“. 
     
 4. Führen Sie einen anderen Test mit den folgenden Befehlszeilenargumente, und legen Sie den Timeoutwert zu kurz für Warteschlangenauftrag beendet werden:`-n "Test proj 3" -t 1`
     
@@ -372,7 +372,7 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
 
 6. Kompilieren Sie die Anwendung neu, und führen Sie einen weiteren Test mit den folgenden Befehlszeilenargumente:`-n "Test proj 4"`
     
-   Da die Routine **WaitForQueue** auskommentiert ist, wird die Anwendung Standardtimeoutwert nicht verwendet. Obwohl die Anwendung für die Warteschlange nicht wartet kann es Test Proj 4, anzeigen, wenn die Veröffentlichungsaktion in Project Server schnell genug ist. 
+   Da die **WaitForQueue**-Routine auskommentiert ist, verwendet die Anwendung nicht den Standardwert für das Zeitlimit. Obwohl die Anwendung nicht auf die Warteschlange wartet, zeigt sie möglicherweise „Test Proj 4“ an, wenn die Veröffentlichungsaktion in Project Server schnell genug ist. 
     
    ```MS-DOS
     Creating project: Test proj 4 ...
@@ -579,6 +579,6 @@ namespace QueueCreateProject
 ## <a name="see-also"></a>Siehe auch
 
 - [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md) 
-- [Client-seitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
+- [Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
     
 

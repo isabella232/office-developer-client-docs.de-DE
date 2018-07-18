@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachDataObject-Eigenschaft
+title: PidTagAttachDataObject (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794081"
 ---
-# <a name="pidtagattachdataobject-canonical-property"></a>Kanonische PidTagAttachDataObject-Eigenschaft
+# <a name="pidtagattachdataobject-canonical-property"></a>PidTagAttachDataObject (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein Attachment-Objekt in der Regel über die Schnittstelle Object Linki
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält das Attachment-Objekt, wenn der Wert der Eigenschaft **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) **ATTACH_EMBEDDED_MSG** oder **ATTACH_OLE**ist. Das Codierungstyp OLE kann aus **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) bestimmt werden. 
   

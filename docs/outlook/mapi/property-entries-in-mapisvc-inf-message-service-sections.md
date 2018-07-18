@@ -1,5 +1,5 @@
 ---
-title: Eigenschafteneinträge in MapiSvc.inf Nachricht Service Abschnitten
+title: Eigenschafteneinträge in den Nachrichtendienstabschnitten von MapiSvc.inf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795311"
 ---
-# <a name="property-entries-in-mapisvcinf-message-service-sections"></a>Eigenschafteneinträge in MapiSvc.inf Nachricht Service Abschnitten
+# <a name="property-entries-in-mapisvcinf-message-service-sections"></a>Eigenschafteneinträge in den Nachrichtendienstabschnitten von MapiSvc.inf
 
   
   

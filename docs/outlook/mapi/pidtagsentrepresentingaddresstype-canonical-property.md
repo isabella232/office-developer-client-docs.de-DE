@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSentRepresentingAddressType-Eigenschaft
+title: PidTagSentRepresentingAddressType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795141"
 ---
-# <a name="pidtagsentrepresentingaddresstype-canonical-property"></a>Kanonische PidTagSentRepresentingAddressType-Eigenschaft
+# <a name="pidtagsentrepresentingaddresstype-canonical-property"></a>PidTagSentRepresentingAddressType (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Adresstyp für den messaging-Benutzer, die vom Absender dargestellt
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für die messaging-Benutzer, die vom Absender angezeigt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag einer anderen Client sendet, sollten sie alle Absender dargestellte Eigenschaften auf die Werte für diesen Client festgelegt. Ein messaging-Benutzer in der Regel in einem eigenen Auftrag senden bewirkt, dass die dargestellte Absender Eigenschaften nicht festgelegt ist.
   
@@ -94,7 +94,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagAddressType-Eigenschaft](pidtagaddresstype-canonical-property.md)
+[PidTagAddressType (kanonische Eigenschaft)](pidtagaddresstype-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

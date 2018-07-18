@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAutoForwarded-Eigenschaft
+title: PidTagAutoForwarded (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794133"
 ---
-# <a name="pidtagautoforwarded-canonical-property"></a>Kanonische PidTagAutoForwarded-Eigenschaft
+# <a name="pidtagautoforwarded-canonical-property"></a>PidTagAutoForwarded (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn der Client eine X-MS-Exchange-Organisation-AutoForwarded Kop
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Berichterstattung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft FALSE oder nicht verwendeten gesetzt ist, werden keine X-MS-Exchange-Organisation-AutoForwarded Kopfzeilenfeld erstellt.
   

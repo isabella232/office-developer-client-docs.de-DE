@@ -41,7 +41,7 @@ Jede Struktur spezialisierte Einschränkung in der Union stellt eine andere Art 
 |Größe  <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |Die Größe einer Eigenschaft über die standardmäßigen relationale Operatoren getestet.  <br/> |
 |Vorhanden  <br/> |[SExistRestriction](sexistrestriction.md) <br/> |Überprüft, ob ein Objekt einen Wert für eine Eigenschaft verfügt.  <br/> |
 |Unterobjekt  <br/> |[SSubRestriction](ssubrestriction.md) <br/> |Verwendet für die Suche über Unterobjekte oder -Objekten, die mit einem Eintrag Bezeichner, wie Empfänger und Anlagen nicht zugegriffen werden können. Kann beispielsweise verwendet werden nach einem bestimmten Empfänger nach Nachrichten gesucht.  <br/> |
-|Comment  <br/> |[SCommentRestriction](scommentrestriction.md) <br/> |Ordnet eine Reihe von benannten Eigenschaften ein Objekt hinzu.  <br/> |
+|Kommentar  <br/> |[SCommentRestriction](scommentrestriction.md) <br/> |Ordnet eine Reihe von benannten Eigenschaften ein Objekt hinzu.  <br/> |
    
 Einige Einschränkungen mithilfe von regulären Ausdrücken und MAPI unterstützt eingeschränkte des regulären Ausdrucks Notation im Format, die viele Text Clientanwendungen verwendet.
   

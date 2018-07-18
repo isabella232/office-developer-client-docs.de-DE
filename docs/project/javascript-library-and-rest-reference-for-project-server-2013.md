@@ -41,7 +41,7 @@ Die **ProjectServer** -Ressource wird in [ProjectServer-Ressourcen in der REST-S
 
 - [Project 2013-Entwicklerdokumentation](project-2013-developer-documentation.md)   
 - [Client-seitigen Objektmodell (CSOM) für Project Server](client-side-object-model-csom-for-project-2013.md)   
-- [Erste Schritte mit der JavaScript-Objektmodell](getting-started-with-the-project-server-2013-javascript-object-model.md)  
-- [Arbeiten Sie mit Projekten mithilfe des JavaScript-Objektmodells](create-retrieve-update-delete-projects-using-project-server-javascript.md)
+- [Erste Schritte mit dem JavaScript-Objektmodell](getting-started-with-the-project-server-2013-javascript-object-model.md)  
+- [Arbeiten mit Projekten unter Verwendung des JavaScript-Objektmodells](create-retrieve-update-delete-projects-using-project-server-javascript.md)
     
 

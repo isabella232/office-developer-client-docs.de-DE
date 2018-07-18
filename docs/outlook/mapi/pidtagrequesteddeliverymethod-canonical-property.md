@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRequestedDeliveryMethod-Eigenschaft
+title: PidTagRequestedDeliveryMethod (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794983"
 ---
-# <a name="pidtagrequesteddeliverymethod-canonical-property"></a>Kanonische PidTagRequestedDeliveryMethod-Eigenschaft
+# <a name="pidtagrequesteddeliverymethod-canonical-property"></a>PidTagRequestedDeliveryMethod (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält ein binäres Array der Übermittlungsmethoden (Dienst
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die in diesem Objekt enthaltenen Arrays Eigenschaft besteht aus ASN. 1-IDs für die einzelnen-Dienstanbieter.
   

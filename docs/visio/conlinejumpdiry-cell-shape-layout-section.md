@@ -26,17 +26,17 @@ Bestimmt die Liniensprungrichtung für Liniensprünge, die bei einem vertikalen 
 | 1  <br/> | Nach links  <br/> |**visLOJumpDirYLeft** <br/> |
 | 2  <br/> | Nach rechts  <br/> |**visLOJumpDirYRight** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zum Festlegen der vertikaler Richtung für *Alle* Verbinder auf einem Zeichenblatt springt, verwenden Sie die Zelle PageLineJumpDirY im Abschnitt Page Layout. 
   
-Wenn Sie einen Verweis auf die Zelle ConLineJumpDirY nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ConLineJumpDirY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ConLineJumpDirY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ConLineJumpDirY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ConLineJumpDirY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

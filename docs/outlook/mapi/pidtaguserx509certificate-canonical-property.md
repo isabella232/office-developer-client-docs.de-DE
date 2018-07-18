@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagUserX509Certificate-Eigenschaft
+title: PidTagUserX509Certificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795288"
 ---
-# <a name="pidtaguserx509certificate-canonical-property"></a>Kanonische PidTagUserX509Certificate-Eigenschaft
+# <a name="pidtaguserx509certificate-canonical-property"></a>PidTagUserX509Certificate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ X. 509 Version 3 Sicherheitszertifikate für ein messaging-Benutzer enthält.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von Clientanwendungen, die öffentliche Schlüssel Sicherheit zu nutzen. Sie enthält eine binäre Darstellung von einem oder mehreren x. 509 Version 3 Sicherheitszertifikaten. 
   

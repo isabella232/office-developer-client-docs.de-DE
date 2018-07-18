@@ -19,6 +19,6 @@ ms.locfileid: "19796162"
 
 In diesem Thema werden die Typen in Outlook Wetter Speicherort XML-Schema.
   
-- [WeatherType complexType](weathertype-complextype-outlook-weather-location-schema.md)
+- [weatherType complexType](weathertype-complextype-outlook-weather-location-schema.md)
     
 

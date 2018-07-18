@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82253217
 localization_priority: Normal
 ms.assetid: ee5e3898-bb49-57c6-0ebe-12e1fe388e55
-description: Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shape zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten in einem Ziel-Shape.
+description: Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten eines Ziel-Shapes.
 ms.openlocfilehash: 09ab0a4a55446dd74729f1da0bcf022d8376909b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,9 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796400"
 ---
-# <a name="angletoloc-function"></a>ANGLETOLOC-Funktion
+# <a name="angletoloc-function"></a>ANGLETOLOC Function
 
-Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shape zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten in einem Ziel-Shape. 
+Gibt einen transformierten Winkel im lokalen Koordinatensystem des Ziel-Shapes zurück. Konvertiert einen Winkel aus lokalen Koordinaten in einem Quell-Shape in die lokalen Koordinaten eines Ziel-Shapes. 
+    
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +30,7 @@ ANGLETOLOC (** *SrcAngle* **, ** *SrcRef* **, ** *Zielbezug* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _srcAngle_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Ein Winkel im Quellkoordinatensystem.  <br/> |
+| _srcAngle_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Ein Winkel im Quellkoordinatensystem.  <br/> |
 | _srcRef_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Bezug auf eine Zelle im Quellobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
 | _Zielbezug_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Bezug auf eine Zelle im Zielobjekt, beispielsweise ein Shape, eine Gruppe, ein Zeichenblatt usw.  <br/> |
    

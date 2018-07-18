@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginatorAndDistributionListExpansionHistory-Eigenschaft
+title: PidTagOriginatorAndDistributionListExpansionHistory (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794739"
 ---
-# <a name="pidtagoriginatoranddistributionlistexpansionhistory-canonical-property"></a>Kanonische PidTagOriginatorAndDistributionListExpansionHistory-Eigenschaft
+# <a name="pidtagoriginatoranddistributionlistexpansionhistory-canonical-property"></a>PidTagOriginatorAndDistributionListExpansionHistory (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Informationen zu einem Absender der Nachricht und einen Verlauf zur Erw
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in Berichten verwendet.
   

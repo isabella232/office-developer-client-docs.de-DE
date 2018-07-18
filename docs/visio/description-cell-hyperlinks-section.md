@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796859"
 ---
-# <a name="description-cell-hyperlinks-section"></a>Zelle "Description" (Abschnitt "Hyperlinks")
+# <a name="description-cell-hyperlinks-section"></a>Description Cell (Hyperlinks Section)
 
 Stellt eine beschreibende Textzeichenfolge für einen Hyperlink dar. 
   
@@ -24,15 +24,15 @@ Stellt eine beschreibende Textzeichenfolge für einen Hyperlink dar.
 
 Verwenden Sie diese Zelle, um Kommentare zum Hyperlink zu speichern, beispielsweise "Link zu unserer Website mit den Preisinformationen".
   
-Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie auf der Registerkarte **Einfügen** auf **Hyperlink** ). 
+Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie dazu auf der Registerkarte **Einfügen** auf **Hyperlink**). 
   
-Wenn Sie einen Verweis auf die Zelle Description nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Description aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Hyperlink.  *Name* . Beschreibung, in dem Hyperlink.  *Ist der Name der Hyperlinkzeile*  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Description aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Description aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

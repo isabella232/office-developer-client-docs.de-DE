@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRtfSyncPrefixCount-Eigenschaft
+title: PidTagRtfSyncPrefixCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795010"
 ---
-# <a name="pidtagrtfsyncprefixcount-canonical-property"></a>Kanonische PidTagRtfSyncPrefixCount-Eigenschaft
+# <a name="pidtagrtfsyncprefixcount-canonical-property"></a>PidTagRtfSyncPrefixCount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Anzahl von Zeichen, die vor der signifikanten Zeichen der Nachrich
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Anzahl der Anfangszeichen enthält keine Leerzeichen.
   

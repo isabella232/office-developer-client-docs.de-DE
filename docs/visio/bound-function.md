@@ -28,11 +28,13 @@ GEBUNDEN (** *Wert* **, ** *Typ* **, ** *ignorieren* **, ** *Wert1* **, ** *valu
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Value_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der aktuelle einzuschränkende Wert.  <br/> |
-| _Typ_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Gibt an, ob die Einschränkung einschließend (0) ist ausschließend (1) oder deaktiviert (2).  <br/> |
+| _Value_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der aktuelle einzuschränkende Wert.  <br/> |
+| _Typ_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, ob die Einschränkung einschließend (0), ausschließend (1) oder deaktiviert (2) ist.
+  <br/> |
 | _ignorieren_ <br/> |Erforderlich  <br/> |**Boolean** <br/> | True, um den Bereich zu ignorieren. Legen Sie false fest, um den Wert der Zelle auf den Bereich einzuschränken.  <br/> |
-| _Wert1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Erster Wert in einem Bereich.  <br/> |
-| _Wert2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Zweiter Wert in einem Bereich.  <br/> |
+| _Wert1_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Erster Wert in einem Bereich.
+  <br/> |
+| _Wert2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Zweiter Wert in einem Bereich.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

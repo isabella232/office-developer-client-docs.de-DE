@@ -40,7 +40,7 @@ typedef struct _SMAPIFormPropEnumVal
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **pszDisplayName**
   
@@ -50,7 +50,7 @@ typedef struct _SMAPIFormPropEnumVal
   
 > Ein Enumerationswert für den Anzeigenamen auf den Member **PszDisplayName** zeigt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein Benutzer einen Anzeigenamen aus einem Formular auswählt, wird den Namen des entsprechenden-Enumerationswert gespeichert, mithilfe der Implementierung der [IMAPIProp](imapipropiunknown.md) -Schnittstelle, die dem Formular zugeordnet ist. 
   

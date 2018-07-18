@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLongTermEntryIdFromTable-Eigenschaft
+title: PidTagLongTermEntryIdFromTable (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794586"
 ---
-# <a name="pidtaglongtermentryidfromtable-canonical-property"></a>Kanonische PidTagLongTermEntryIdFromTable-Eigenschaft
+# <a name="pidtaglongtermentryidfromtable-canonical-property"></a>PidTagLongTermEntryIdFromTable (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Ruft die langfristige Eintrags-ID eines Elements ab.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Tabelleneigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann in einer Inhaltstabelle verwendet werden, die Eintrags-ID eines Elements als langfristige Eintrag Bezeichner anstelle einer kurzfristige Eintrags-ID abgerufen. Informationen über langfristige und kurzfristige Bezeichner finden Sie unter **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).
   
@@ -54,7 +54,7 @@ Mapitags.h
 
 
 
-[Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md)
+[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

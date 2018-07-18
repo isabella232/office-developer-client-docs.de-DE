@@ -39,7 +39,7 @@ typedef struct _SComparePropsRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **RelOp-Element**
   
@@ -67,7 +67,7 @@ typedef struct _SComparePropsRestriction
   
 > Eigenschaftentag der zweiten-Eigenschaft, die verglichen werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Reihenfolge der Vergleich ist _(Eigenschafts-Tag (1) (relationalen Operator) (Eigenschaftentag 2)_. Die Eigenschaften, die verglichen werden müssen den gleichen Typ aufweisen. Bei dem Versuch, Eigenschaften mit unterschiedlichen Typen verglichen wird MAPI oder den Dienstanbieter den Fehlerwert MAPI_E_TOO_COMPLEX [IMAPITable](imapitableiunknown.md) -Methode zurückgegeben, der die Struktur als Parameter übergeben wird. 
   

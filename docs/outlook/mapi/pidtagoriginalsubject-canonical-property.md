@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalSubject-Eigenschaft
+title: PidTagOriginalSubject (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794725"
 ---
-# <a name="pidtagoriginalsubject-canonical-property"></a>Kanonische PidTagOriginalSubject-Eigenschaft
+# <a name="pidtagoriginalsubject-canonical-property"></a>PidTagOriginalSubject (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Betreff der ursprünglichen Nachricht für die Verwendung in einem 
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden auf den gleichen Wert wie die Eigenschaft **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) ursprünglich festgelegt.
   

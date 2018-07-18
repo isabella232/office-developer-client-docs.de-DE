@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalEits-Eigenschaft
+title: PidTagOriginalEits (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794697"
 ---
-# <a name="pidtagoriginaleits-canonical-property"></a>Kanonische PidTagOriginalEits-Eigenschaft
+# <a name="pidtagoriginaleits-canonical-property"></a>PidTagOriginalEits (kanonische Eigenschaft)
 
   
   

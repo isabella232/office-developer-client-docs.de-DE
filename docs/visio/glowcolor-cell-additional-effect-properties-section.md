@@ -18,7 +18,7 @@ ms.locfileid: "19797091"
 
 Legt die Farbe für den Strich von der externen Leuchten auf ein Shape, als Wert RGB oder ein Design angewendet.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **GlowColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

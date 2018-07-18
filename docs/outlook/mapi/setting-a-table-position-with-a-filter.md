@@ -1,5 +1,5 @@
 ---
-title: Wenn Sie eine Tabelle Position mit einem Filter
+title: Festlegen einer Tabellenposition mit einem Filter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795515"
 ---
-# <a name="setting-a-table-position-with-a-filter"></a>Wenn Sie eine Tabelle Position mit einem Filter
+# <a name="setting-a-table-position-with-a-filter"></a>Festlegen einer Tabellenposition mit einem Filter
 
   
   

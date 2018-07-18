@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSendInternetEncoding-Eigenschaft
+title: PidTagSendInternetEncoding (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795138"
 ---
-# <a name="pidtagsendinternetencoding-canonical-property"></a>Kanonische PidTagSendInternetEncoding-Eigenschaft
+# <a name="pidtagsendinternetencoding-canonical-property"></a>PidTagSendInternetEncoding (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske der Voreinstellungen-Codierung.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Legen Sie diese Eigenschaft an, dass die Codierungsoptionen verwendet. 
   

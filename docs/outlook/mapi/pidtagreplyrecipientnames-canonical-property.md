@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReplyRecipientNames-Eigenschaft
+title: PidTagReplyRecipientNames (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794954"
 ---
-# <a name="pidtagreplyrecipientnames-canonical-property"></a>Kanonische PidTagReplyRecipientNames-Eigenschaft
+# <a name="pidtagreplyrecipientnames-canonical-property"></a>PidTagReplyRecipientNames (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste von Anzeigenamen für Empfänger, die eine Antwort erhalten.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten die angezeigten Namen durch Semikolons voneinander getrennt sind.
   

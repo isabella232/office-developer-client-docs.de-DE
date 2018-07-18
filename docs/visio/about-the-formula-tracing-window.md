@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm60118
 localization_priority: Normal
 ms.assetid: 0cdacd4e-74dc-32c3-2eb2-219bf7fcb532
-description: Im Fenster Formelprotokollierung bietet Shape-Entwickler mit Informationen zur Zelle Abhängigkeiten – sowohl abhängigen Zellen (Zellen, die eine Abhängigkeit auf einer bestimmten Zelle haben) und Vorgängerzellen (Zellen, die eine bestimmte Zelle abhängig).
+description: Das Fenster Formelprotokollierung bietet Shape-Entwicklern Informationen über gegenseitige Abhängigkeiten zwischen Zellen, sowohl für abhängige Zellen (Zellen mit einer Abhängigkeit gegenüber einer bestimmten Zelle) als auch für Vorgängerzellen (Zellen, von denen eine bestimmte Zelle abhängt).
 ms.openlocfilehash: 316ac219f548b2459ea2d0ad8cece0f693957fcf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,9 +16,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796361"
 ---
-# <a name="about-the-formula-tracing-window"></a>Informationen zum Formelprotokollierungsfenster
+# <a name="about-the-formula-tracing-window"></a>Informationen zur zum Formelablauffenster
 
-Im Fenster **Formelprotokollierung** bietet Shape-Entwickler mit Informationen zur Zelle Abhängigkeiten – sowohl abhängigen Zellen (Zellen, die eine Abhängigkeit auf einer bestimmten Zelle haben) und Vorgängerzellen (Zellen, die eine bestimmte Zelle abhängig). 
+Das Fenster **Formelprotokollierung** bietet Shape-Entwicklern Informationen über gegenseitige Abhängigkeiten zwischen Zellen, sowohl für abhängige Zellen (Zellen mit einer Abhängigkeit gegenüber einer bestimmten Zelle) als auch für Vorgängerzellen (Zellen, von denen eine bestimmte Zelle abhängt). 
   
 Die Zellen in einem Microsoft Visio-ShapeSheet enthalten Werte und Formeln. Formeln können wiederum Verweise auf andere Zellen, was Ihnen die Möglichkeit, einen Wert in einer Zelle basierend auf einer anderen Zelle Wert berechnen lassen. Beim Erstellen oder Verwalten komplexer Shapes, kann jedoch es schwierig sein, alle diese Abhängigkeiten identifiziert werden, da eine Formel, die eine beliebige Zelle in der Zeichnung verwiesen werden kann, ob es sich um eine Zelle in der gleichen ShapeSheet oder eine Zelle, die in ein anderes Objekt in der Zeichnung gehören ist, beispielsweise einer Seite, Formatvorlage, Master-Shape oder eine andere Form. 
   
@@ -36,7 +36,7 @@ Zum Anzeigen einer Liste von Zellen, die von einer bestimmten Zelle abhängig si
   
 Klicken Sie zum Anzeigen von ihr abhängigen Zellen klicken, in der Gruppe **Formelprotokollierung**auf **Spur zum Nachfolger**.
   
-Klicken Sie im Fenster **Formelprotokollierung** wird eine Liste aller Zellen mit einer Abhängigkeit auf die Zelle Width angezeigt. Sie können auf eine beliebige Zelle in der Liste navigieren, indem Sie den Eintrag im Fenster **Formelprotokollierung** doppelklicken. 
+Eine Liste aller von der Zelle Width abhängigen Zellen wird im Fenster Formelprotokollierung angezeigt. Sie können zu einer beliebigen Zelle in der Liste navigieren, indem Sie auf den entsprechenden Eintrag im Fenster Formelprotokollierung doppelklicken. 
   
 ![](media/ShapeSheetDependents_UI_02_ZA01039815.gif)
   

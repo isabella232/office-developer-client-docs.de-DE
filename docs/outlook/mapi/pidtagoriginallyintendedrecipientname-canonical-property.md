@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginallyIntendedRecipientName-Eigenschaft
+title: PidTagOriginallyIntendedRecipientName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794688"
 ---
-# <a name="pidtagoriginallyintendedrecipientname-canonical-property"></a>Kanonische PidTagOriginallyIntendedRecipientName-Eigenschaft
+# <a name="pidtagoriginallyintendedrecipientname-canonical-property"></a>PidTagOriginallyIntendedRecipientName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den codierten Namen von der ursprünglich beabsichtigten Empfänger ein
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **PR_ORIGINALLY_INTENDED_RECIPIENT_NAME** -Eigenschaft muss vom automatische Agent festgelegt werden, die die Nachricht weitergeleitet hat. 
   

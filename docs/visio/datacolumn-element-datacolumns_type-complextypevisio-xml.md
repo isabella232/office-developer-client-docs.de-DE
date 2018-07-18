@@ -56,7 +56,7 @@ Keine.
 |ColumnNameID  <br/> |XSD: String  <br/> |erforderlich  <br/> |Externer Name der Datenspalte. Wird in der Überschriften in das Fenster **Externe Daten** und Beschriftungen in Datengrafiken angezeigt.  <br/> |Werte des Typs xsd: String.  <br/> |
 |Währung  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> |Currency-ID der Datenspalte.  <br/> |Werte des Typs Xsd:unsignedShort.  <br/> |
 |DataType  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> |Typ der Daten in der Datenspalte.  <br/> |Werte des Typs Xsd:unsignedShort.  <br/> |
-|Grad  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Gibt den Grad der Einheiten, beispielsweise im Quadrat oder hoch drei (Power). Der Standardwert (-Attribut nicht vorhanden) ist 1.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
+|Degree  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Gibt den Grad der Einheiten, beispielsweise im Quadrat oder hoch drei (Power). Der Standardwert (-Attribut nicht vorhanden) ist 1.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |DisplayOrder  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Definiert die Anzeigeposition der Datenspalte im Fenster **Externe Daten** aus der Spalte ganz links (0), um die Spalte ganz rechts (größten Wert).  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |DisplayWidth  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Die Breite der Datenspalte im Fenster **Externe Daten** .  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |Hyperlink  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Datenspalte einen Hyperlink in einem Shape erstellt, wenn das Shape mit Daten verknüpft ist.  <br/> |Werte des Typs xsd: Boolean.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginatingMtaCertificate-Eigenschaft
+title: PidTagOriginatingMtaCertificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794731"
 ---
-# <a name="pidtagoriginatingmtacertificate-canonical-property"></a>Kanonische PidTagOriginatingMtaCertificate-Eigenschaft
+# <a name="pidtagoriginatingmtacertificate-canonical-property"></a>PidTagOriginatingMtaCertificate (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für den Message Transfer Agent (MTA), der die Nachric
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft, wenn der Wert, auf Nachrichten im Ordner "Gesendete Elemente" gesendet.
   

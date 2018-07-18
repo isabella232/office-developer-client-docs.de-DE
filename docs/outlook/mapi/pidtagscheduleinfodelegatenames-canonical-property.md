@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoDelegateNames-Eigenschaft
+title: PidTagScheduleInfoDelegateNames (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795069"
 ---
-# <a name="pidtagscheduleinfodelegatenames-canonical-property"></a>Kanonische PidTagScheduleInfoDelegateNames-Eigenschaft
+# <a name="pidtagscheduleinfodelegatenames-canonical-property"></a>PidTagScheduleInfoDelegateNames (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Namen der-Delegaten.
 |Datentyp:  <br/> |PT_MV_STRING8 PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder Eintrag in diese Eigenschaften muss den Wert der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) der einzelnen Delegaten Adressbuch enthalten.
   

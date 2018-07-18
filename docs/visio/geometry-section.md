@@ -22,7 +22,7 @@ Enthält Zeilen, in denen die Koordinaten der Scheitelpunkte für die Linien und
   
 Die Geometrie eines Shapes kann in mehreren **geometrischen** Abschnitte ausgedrückt werden. Mehrere Pfade können hilfreich sein, wenn mehrere Pfade über verschiedene Eigenschaften (z. B. [Bild Clipping](clippingpath-cell-foreign-image-info-section.md) Pfade) verfügen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Abschnitt **"Geometry"** enthält die folgenden Zeilentypen. Weitere Informationen hierzu finden Sie unter den Themen Zeile. 
   
@@ -44,6 +44,6 @@ Der Abschnitt **"Geometry"** enthält die folgenden Zeilentypen. Weitere Informa
 |[RelMoveTo](relmoveto-row-geometry-section.md) <br/> |Verschieben Sie zu einer Koordinate relativ zu der Breite und Höhe des Shapes.  <br/> |
 |[RelQuadBezTo](relquadbezto-row-geometry-section.md) <br/> |Zeichnet eine quadratische Bézierkurve relativ zu der Breite und Höhe des Shapes.  <br/> |
    
-Wenn Sie einen Zeilentyp in diesem Abschnitt ändern möchten, mit der rechten Maustaste in der Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern** . 
+Wenn Sie einen Zeilentyp in diesem Abschnitt ändern möchten, klicken Sie mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern**. 
   
 

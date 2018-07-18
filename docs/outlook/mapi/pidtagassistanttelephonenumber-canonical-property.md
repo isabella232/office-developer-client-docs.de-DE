@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAssistantTelephoneNumber-Eigenschaft
+title: PidTagAssistantTelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794084"
 ---
-# <a name="pidtagassistanttelephonenumber-canonical-property"></a>Kanonische PidTagAssistantTelephoneNumber-Eigenschaft
+# <a name="pidtagassistanttelephonenumber-canonical-property"></a>PidTagAssistantTelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Telefonnummer des Empfängers Verwaltungsmitarbeiter.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

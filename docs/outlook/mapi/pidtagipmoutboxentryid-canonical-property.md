@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmOutboxEntryId-Eigenschaft
+title: PidTagIpmOutboxEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794515"
 ---
-# <a name="pidtagipmoutboxentryid-canonical-property"></a>Kanonische PidTagIpmOutboxEntryId-Eigenschaft
+# <a name="pidtagipmoutboxentryid-canonical-property"></a>PidTagIpmOutboxEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Ordners Postausgang standard zwischen Personen Nach
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ausgehende Nachrichten werden in der Regel im Ordner Postausgang erstellt. In diesem Ordner für die Übermittlung sollte Nachrichten zwischen Personen platziert werden. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExchangeProfileSectionId-Eigenschaft
+title: PidTagExchangeProfileSectionId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794345"
 ---
-# <a name="pidtagexchangeprofilesectionid-canonical-property"></a>Kanonische PidTagExchangeProfileSectionId-Eigenschaft
+# <a name="pidtagexchangeprofilesectionid-canonical-property"></a>PidTagExchangeProfileSectionId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine dynamisch generierte GUID verwendet, um ein Konto zu bestimmen, wa
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Mehrere Exchange-Konten  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen mehrerer Exchange-Konten anstelle von einem einzelnen Exchange-Konto. Um mehrere Exchange-Konten zu unterstützen, wurde das MAPI-Profil Layout geändert. In Microsoft Office Outlook 2007 und früheren Versionen enthalten Profile feste Profile-Abschnitt für Exchange-Einstellungen wie Servernamen, Benutzernamen und Offlineordnerdatei (OST). Speicherort. Diese Einstellungen wurden über einen eindeutigen Bezeichner, der **PbGlobalProfileSectionGuid** -Eigenschaft identifiziert. Im Abschnitt für die Exchange-Einstellungen verwendet wird Abschnitts Profile globale Exchange aufgerufen. Weitere Informationen über die globale Exchange-Profil in Outlook 2007 finden Sie unter [globale Abschnitt Profile zu öffnen](http://support.microsoft.com/kb/188482).
   
@@ -46,9 +46,9 @@ Sie können diese Eigenschaft durch einen Aufruf von [IMAPIProp::GetProps](imapi
   
 - [IMsgStore: IMAPIProp](imsgstoreimapiprop.md)
     
-- [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+- [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
     
-- [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)
+- [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
 Wenn das Objekt nicht mit Exchange angegliedert ist, gibt der Aufruf **MAPI_E_NOT_FOUND**zurück.
   

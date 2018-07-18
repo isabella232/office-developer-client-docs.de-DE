@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProviderItemId-Eigenschaft
+title: PidTagProviderItemId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794858"
 ---
-# <a name="pidtagprovideritemid-canonical-property"></a>Kanonische PidTagProviderItemId-Eigenschaft
+# <a name="pidtagprovideritemid-canonical-property"></a>PidTagProviderItemId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt einen Bezeichner für einen Ordner oder ein Element in einem Speicher an.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MapiNonTransmittable  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Anbieter können Geben Sie einen Wert für diese Eigenschaft für einen Ordner oder ein Element, jedoch sollten behalten Sie den Wert zwischen Sitzungen identisch. Anbieter mit dieser Eigenschaft können Sie um Suchergebnisse aus einer Suchmaschine zu identifizieren.
   

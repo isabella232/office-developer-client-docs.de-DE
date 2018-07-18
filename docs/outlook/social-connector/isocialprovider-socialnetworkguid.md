@@ -27,11 +27,11 @@ Gibt eine GUID, die einen eindeutigen Bezeichner für das soziale Netzwerk darst
 
 Ein Zeiger auf ein GUID-Wert, der einen eindeutigen Bezeichner für das soziale Netzwerk darstellt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die GUID muss unveränderlich sein und darf nicht geändert werden, auch wenn die Anbieterversion wird geändert.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 
