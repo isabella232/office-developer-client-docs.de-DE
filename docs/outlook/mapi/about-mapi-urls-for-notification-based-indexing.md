@@ -1,5 +1,5 @@
 ---
-title: Informationen zu MAPI-URLs für die Benachrichtigung-basierte Indizierung
+title: Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791216"
 ---
-# <a name="about-mapi-urls-for-notification-based-indexing"></a>Informationen zu MAPI-URLs für die Benachrichtigung-basierte Indizierung
+# <a name="about-mapi-urls-for-notification-based-indexing"></a>Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren
 
 **Betrifft**: Outlook 
   
@@ -90,6 +90,6 @@ Speicheranbieter muss diese Werte in den BLOB in der angegebenen Reihenfolge ges
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen über die Benachrichtigung-basierten Speicher Indizierung](about-notification-based-store-indexing.md)
+- [Informationen zum benachrichtigungsbasierten Indizieren von Stores](about-notification-based-store-indexing.md)
 - [MAPI-Konstanten](mapi-constants.md)
 

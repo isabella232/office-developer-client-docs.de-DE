@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagLastModificationTime
+title: PidTagLastModificationTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19794562"
 ---
-# <a name="pidtaglastmodificationtime-canonical-property"></a>Kanonische-Eigenschaft PidTagLastModificationTime
+# <a name="pidtaglastmodificationtime-canonical-property"></a>PidTagLastModificationTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wann das Objekt oder Unterobjekts zuletzt geändert 
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist ursprünglich auf den gleichen Wert wie die Eigenschaft **PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md)) festgelegt. Anlage Unterobjekte können sie nach Bedarf aktualisieren, indem Kopieren der Zeitpunkt der letzten Änderung, die systemeigene Dateisystem verwaltet. Eine Clientanwendung kann diese Eigenschaft erst nach dem ersten Aufruf der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode festgelegt werden. Anschließend sollte der Anbieter **PR_LAST_MODIFICATION_TIME** bei jedem Aufruf **IMAPIProp::SaveChanges** aktualisieren. 
   

@@ -1,5 +1,5 @@
 ---
-title: Datenträger-Instanzen und Cachetabellen
+title: Datenträgerinstanzen und Cachetabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791549"
 ---
-# <a name="disk-instances-and-cache-tables"></a>Datenträger-Instanzen und Cachetabellen
+# <a name="disk-instances-and-cache-tables"></a>Datenträgerinstanzen und Cachetabellen
 
 **Betrifft**: Outlook 
   

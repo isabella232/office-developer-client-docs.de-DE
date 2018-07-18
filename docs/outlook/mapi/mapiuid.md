@@ -40,13 +40,13 @@ typedef struct _MAPIUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ab**
   
 > Ein Array, das einen 16-Byte-Bezeichner enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine **MAPIUID** -Struktur ist eine **GUID** -Struktur in Intel® Prozessor-Byte-Reihenfolge zu platzieren. 
   
@@ -66,9 +66,9 @@ Wenn ein Client über ein Netzwerk eine Nachricht sendet, sollte ein Protokoll o
   
 Weitere Informationen dazu, wie **MAPIUID** Strukturen verwendet werden finden Sie unter den folgenden Themen: 
   
-[Registrieren von Service Provider eindeutige Bezeichner](registering-service-provider-unique-identifiers.md)
+[Registrieren der eindeutigen Dienstanbieterbezeichner](registering-service-provider-unique-identifiers.md)
   
-[Einstellung Transport Reihenfolge](setting-transport-order.md)
+[Festlegen der Transportreihenfolge](setting-transport-order.md)
   
 ## <a name="see-also"></a>Siehe auch
 

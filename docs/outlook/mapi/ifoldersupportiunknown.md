@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792089"
 ---
-# <a name="ifoldersupport--iunknown"></a>IFolderSupport: IUnknown
+# <a name="ifoldersupport--iunknown"></a>IFolderSupport : IUnknown
 
   
   
@@ -38,7 +38,7 @@ Enthält Informationen zur Unterstützung für einen Ordner für die Freigabe.
 |:-----|:-----|
 |**[GetSupportMask](ifoldersupport-getsupportmask.md)** <br/> |Ruft Informationen über die Unterstützung für einen Ordner für die Freigabe.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Allgemeinen erfordert Microsoft Office Outlook MAPI-Speicheranbieter diese Schnittstelle implementieren, wenn der Anbieter einen Ordner freigeben möchte. Die Ausnahme ist der Exchange-Server-Speicher-Anbieter, der Ordner freigeben kann, ohne dass diese Schnittstelle implementiert.
   

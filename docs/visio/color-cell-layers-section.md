@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796647"
 ---
-# <a name="color-cell-layers-section"></a>Zelle "Color" (Abschnitt "Layers")
+# <a name="color-cell-layers-section"></a>Color Cell (Layers Section)
 
 Gibt die zur Darstellung des Layers verwendete Farbe an.
   
@@ -30,13 +30,13 @@ Um eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die RGB oder H
   
 Die Transparenz der Layer-Farbe können Sie in der Zelle Transparenz festlegen.
   
-Wenn Sie einen Verweis auf die Zelle Color nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Color aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Layers.Color [ *i* ] wobei *i* = < 1 >, 2, 3,...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Color aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Color aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

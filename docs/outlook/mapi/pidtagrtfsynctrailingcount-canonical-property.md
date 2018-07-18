@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRtfSyncTrailingCount-Eigenschaft
+title: PidTagRtfSyncTrailingCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795012"
 ---
-# <a name="pidtagrtfsynctrailingcount-canonical-property"></a>Kanonische PidTagRtfSyncTrailingCount-Eigenschaft
+# <a name="pidtagrtfsynctrailingcount-canonical-property"></a>PidTagRtfSyncTrailingCount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Anzahl von Zeichen, die nach den erheblichen Zeichen der Nachricht
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist eine zusätzliche Rich Text Format (RTF)-Eigenschaft. Diese Eigenschaften werden von der Funktion [RTFSync](rtfsync.md) verwendet und nicht direkt von Clientanwendungen verwendet werden sollen. 
   

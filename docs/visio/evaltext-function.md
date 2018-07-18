@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796950"
 ---
-# <a name="evaltext-function"></a>EVALTEXT-Funktion
+# <a name="evaltext-function"></a>EVALTEXT Function
 
 Wertet den Text in _Shapename_ wie eine Formel aus und gibt das Ergebnis zurück. 
   
@@ -32,11 +32,11 @@ EVALTEXT (** *Shapename! TheText* **)
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
- _Shapename_ kann verwendet werden, um auf den Text eines Shapes als das aktuelle Shape zu verweisen. 
+ Mit _shapename_ kann auf den Text eines anderen Shapes (statt auf den Text des aktuellen Shapes) verwiesen werden. 
   
 Wenn kein Text vorhanden ist, ist das Ergebnis 0. Wenn der Text nicht ausgewertet werden kann, gibt die Funktion einen Fehler zurück.
   

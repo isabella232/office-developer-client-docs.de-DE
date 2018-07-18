@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAnr-Eigenschaft
+title: PidTagAnr (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794072"
 ---
-# <a name="pidtaganr-canonical-property"></a>Kanonische PidTagAnr-Eigenschaft
+# <a name="pidtaganr-canonical-property"></a>PidTagAnr (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Einen String-Wert für die Verwendung in einer eigenschaftseinschränkung auf ei
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften gehören nicht auf ein beliebiges Objekt; Es wird von adressbuchanbietern implementierte in [SPropertyRestriction](spropertyrestriction.md) Strukturen bereitgestellt. Diese Eigenschaft enthält eine Zeichenfolge der mehrdeutiger Name-Lösung (ANR), die ein Adressbuchcontainer Inhaltstabelle, entsprechende Empfänger der Nachricht erhalten verglichen werden kann. 
   
@@ -70,7 +70,7 @@ Mapitags.h
 
 [IAddrBook::ResolveName](iaddrbook-resolvename.md)
   
-[IABContainer](iabcontainer-resolvenames.md)
+[IABContainer::ResolveNames](iabcontainer-resolvenames.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

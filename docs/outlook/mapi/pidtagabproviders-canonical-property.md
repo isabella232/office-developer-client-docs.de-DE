@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAbProviders-Eigenschaft
+title: PidTagAbProviders (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794006"
 ---
-# <a name="pidtagabproviders-canonical-property"></a>Kanonische PidTagAbProviders-Eigenschaft
+# <a name="pidtagabproviders-canonical-property"></a>PidTagAbProviders (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste mit Bezeichnern für adressbuchanbietern implementierte im a
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

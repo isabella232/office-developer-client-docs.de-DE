@@ -18,7 +18,7 @@ ms.locfileid: "19796663"
 
 Bestimmt den Index des Designs, die die Form Farbschema after, als ganze Zahl akzeptiert.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ColorSchemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

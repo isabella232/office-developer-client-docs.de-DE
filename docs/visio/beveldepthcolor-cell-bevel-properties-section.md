@@ -18,7 +18,7 @@ ms.locfileid: "19796436"
 
 Bestimmt die Farbe der Abschrägung Tiefe, als RGB-Wert oder durch das aktive Design bestimmt wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **BevelDepthColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

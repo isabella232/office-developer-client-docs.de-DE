@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameMultimediaClipCount-Eigenschaft
+title: PidNameMultimediaClipCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793976"
 ---
-# <a name="pidnamemultimediaclipcount-canonical-property"></a>Kanonische PidNameMultimediaClipCount-Eigenschaft
+# <a name="pidnamemultimediaclipcount-canonical-property"></a>PidNameMultimediaClipCount (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingLocalType-Eigenschaft
+title: PidLidSharingLocalType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793799"
 ---
-# <a name="pidlidsharinglocaltype-canonical-property"></a>Kanonische PidLidSharingLocalType-Eigenschaft
+# <a name="pidlidsharinglocaltype-canonical-property"></a>PidLidSharingLocalType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Wert der Eigenschaft **PR_CONTAINER_CLASS** ([PidTagContainerClass](pid
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss eine der folgenden sein:
   

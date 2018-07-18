@@ -45,7 +45,7 @@ S_FALSE
   
 > Das Formular hat keine Änderungen, die seit dem letzten Speichern vorgenommen wurden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IPersistMessage::IsDirty** -Methode, um zu bestimmen, ob die Nachricht Daten vorliegen. 
   
@@ -53,5 +53,5 @@ Formular Viewer rufen Sie die **IPersistMessage::IsDirty** -Methode, um zu besti
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

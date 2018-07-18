@@ -1,5 +1,5 @@
 ---
-title: Konstanten (Outlook exportiert APIs)
+title: Konstanten (Outlook exportierter APIs)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790927"
 ---
-# <a name="constants-outlook-exported-apis"></a>Konstanten (Outlook exportiert APIs)
+# <a name="constants-outlook-exported-apis"></a>Konstanten (Outlook exportierter APIs)
 
 Dieses Thema enthält Konstantendefinitionen für APIs, die Outlook exportiert.
   
@@ -48,8 +48,8 @@ Outlook macht die folgenden Versendung-IDs (Dispids) verfügbar, sodass Entwickl
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook exportiert APIs](outlook-exported-apis.md)
-- [Informationen zu APIs, die vom Outlook exportiert werden](about-apis-exported-by-outlook.md)
+- [Aus Outlook exportierte APIs](outlook-exported-apis.md)
+- [Informationen zu von Outlook exportierten APIs](about-apis-exported-by-outlook.md)
 - [Bestimmen Sie, ob ein Outlook-Element geändert, jedoch nicht gespeichert (Outlook-Zusatzreferenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
 - [Gibt an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) anzeigen](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
 - [Verfügbaren Ereignisse und ihrer Dispids (Outlook exportierter APIs)](available-events-and-their-dispids-outlook-exported-apis.md)

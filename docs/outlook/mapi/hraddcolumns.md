@@ -62,7 +62,7 @@ HRESULT HrAddColumns(
   
 > Der Aufruf war erfolgreich, und die angegebenen Spalten verschoben oder hinzugefügt wurden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktion **HrAddColumns** ist entspricht der Verwendung von **HrAddColumnsEx** mit _LpfnFilterColumns_ auf NULL festgelegt wurde. 
   

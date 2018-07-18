@@ -22,17 +22,17 @@ Gibt an, ob für ein Postfach für allgemeine Internet gesicherte Kennwortauthen
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0108  <br/> |
+|Bezeichner:  <br/> |0x0108  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_DWORD  <br/> |
 |Eigenschafts-Tag:  <br/> |0x01080003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine NULL bedeutet der Wert nicht gesicherte KENNWORTAUTHENTIFIZIERUNG verwenden, andernfalls können Sie SPA verwenden.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

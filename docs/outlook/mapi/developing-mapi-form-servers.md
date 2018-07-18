@@ -1,5 +1,5 @@
 ---
-title: Entwickeln von MAPI-Formular-Servern
+title: Entwickeln von MAPI-Formularservern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791543"
 ---
-# <a name="developing-mapi-form-servers"></a>Entwickeln von MAPI-Formular-Servern
+# <a name="developing-mapi-form-servers"></a>Entwickeln von MAPI-Formularservern
 
   
   

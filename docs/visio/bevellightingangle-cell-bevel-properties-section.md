@@ -18,7 +18,7 @@ ms.locfileid: "19796449"
 
 Bestimmt den Winkel der Blitz in Bezug auf die Abschrägung in Grad. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **BevelLightingAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

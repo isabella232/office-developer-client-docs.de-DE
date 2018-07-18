@@ -39,7 +39,7 @@ typedef struct _SContentRestriction
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulFuzzyLevel**
   
@@ -69,7 +69,7 @@ typedef struct _SContentRestriction
   
 > Zeiger auf eine Eigenschaft-Wert-Struktur, die den Zeichenfolgenwert für die Verwendung als die zu suchende Zeichenfolge enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es gibt zwei Eigenschaftentags in eine **SContentRestriction** -Struktur: eine in das **UlPropTag** -Element, und der andere im **UlPropTag** -Member der Struktur **SPropValue** auf die **LpProp**zeigt. In beiden Kategorien MAPI erfordert nur das Eigenschaftenfeld und das Feld für den Bezeichner ignoriert. Jedoch müssen die beiden Eigenschaftstypen übereinstimmen, sonst den Fehlerwert MAPI_E_TOO_COMPLEX wird zurückgegeben, wenn die Einschränkung wieder in einem Aufruf von [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md)verwendet wird. 
   

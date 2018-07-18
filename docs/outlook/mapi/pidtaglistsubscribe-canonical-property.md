@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagListSubscribe-Eigenschaft
+title: PidTagListSubscribe (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794573"
 ---
-# <a name="pidtaglistsubscribe-canonical-property"></a>Kanonische PidTagListSubscribe-Eigenschaft
+# <a name="pidtaglistsubscribe-canonical-property"></a>PidTagListSubscribe (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Wert der Liste abonnieren Header ein Feld einer Nachricht Multipurp
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um eine Liste abonnieren Kopfzeilenfeld generiert werden soll, müssen die Clients den Wert dieser Eigenschaften auf den gewünschten Wert festlegen. MIME-Writer müssen den Wert dieser Eigenschaften in der Liste abonnieren Kopfzeilenfeld kopieren.
   

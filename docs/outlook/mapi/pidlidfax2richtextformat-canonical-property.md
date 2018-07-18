@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax2RichTextFormat-Eigenschaft
+title: PidLidFax2RichTextFormat (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793561"
 ---
-# <a name="pidlidfax2richtextformat-canonical-property"></a>Kanonische PidLidFax2RichTextFormat-Eigenschaft
+# <a name="pidlidfax2richtextformat-canonical-property"></a>PidLidFax2RichTextFormat (kanonische Eigenschaft)
 
   
   

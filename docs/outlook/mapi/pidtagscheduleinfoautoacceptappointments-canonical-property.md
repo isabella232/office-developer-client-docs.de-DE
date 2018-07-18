@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoAutoAcceptAppointments-Eigenschaft
+title: PidTagScheduleInfoAutoAcceptAppointments (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795071"
 ---
-# <a name="pidtagscheduleinfoautoacceptappointments-canonical-property"></a>Kanonische PidTagScheduleInfoAutoAcceptAppointments-Eigenschaft
+# <a name="pidtagscheduleinfoautoacceptappointments-canonical-property"></a>PidTagScheduleInfoAutoAcceptAppointments (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Client oder Server automatisch alle Besprechungsanfragen
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Antwort, muss die Antwort Annahme, wenn für eine zusätzliche Einschränkung, die durch das **PR_SCHDINFO_DISALLOW_RECURRING_APPTS** ([PidTagScheduleInfoDisallowRecurringAppts](pidtagscheduleinfodisallowrecurringappts-canonical-property.md)) oder **PR_SCHDINFO_DISALLOW_ angegeben wird OVERLAPPING_APPTS** ([PidTagScheduleInfoDisallowOverlappingAppts](pidtagscheduleinfodisallowoverlappingappts-canonical-property.md)) Eigenschaften erfüllt ist. Den Wert FALSE oder Abwesenheit dieser Eigenschaft wird angegeben, dass ein Client oder Server nicht automatisch annehmen von Besprechungsanfragen muss. Dies ist keine erforderliche Eigenschaft.
   

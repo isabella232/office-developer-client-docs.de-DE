@@ -33,11 +33,11 @@ _startTime_
   
 > [in] Der Zeitpunkt, nach dem erstellten Aktivitäten zurückgegeben werden.
     
-_Aktivitäten_
+_activities_
   
 > [out] Eine XML-Zeichenfolge, die den Satz von Aktivitäten durch _HashedAddresses_ im sozialen Netzwerk seit _StartTime_angegebenen Benutzer darstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die OSC **GetActivitiesEx** aufgerufen, wenn der OSC-Anbieter bedarfsgesteuerten Synchronisierung von Aktivitäten unterstützt. Die OSC speichert die Informationen, die in _Aktivitäten_ im Speicher zurückgegeben. Weitere Informationen darüber, wie die OSC verwendet und diese Informationen im Speicher aktualisiert finden Sie unter [Synchronisieren Freunde und Aktivitäten](synchronizing-friends-and-activities.md).
   
@@ -53,6 +53,6 @@ Aktivitäten, die die **GetActivitiesEx** -Methode gibt benötigen einen Erstell
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession2: IUnknown](isocialsession2iunknown.md)
+- [ISocialSession2 : IUnknown](isocialsession2iunknown.md)
 - [Synchronisieren von Freunde und Aktivitäten](synchronizing-friends-and-activities.md)
 

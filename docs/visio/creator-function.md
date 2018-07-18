@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796755"
 ---
-# <a name="creator-function"></a>CREATOR Function
+# <a name="creator-function"></a>CREATOR-Funktion
 
 Gibt den Text aus dem Feld **Autor** der Eigenschaften eines Dokuments zurück. 
   

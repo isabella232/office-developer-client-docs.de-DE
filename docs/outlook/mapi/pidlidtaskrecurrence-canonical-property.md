@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskRecurrence-Eigenschaft
+title: PidLidTaskRecurrence (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793859"
 ---
-# <a name="pidlidtaskrecurrence-canonical-property"></a>Kanonische PidLidTaskRecurrence-Eigenschaft
+# <a name="pidlidtaskrecurrence-canonical-property"></a>PidLidTaskRecurrence (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält eine RecurrencePattern-Struktur, die Informationen zu wiederkehrende Au
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Informationen zum Erstellen und Angeben einer RecurrencePattern-Struktur finden Sie unter [einfache Aufgabe Serienelements erstellen](how-to-create-a-simple-recurrent-task-item.md).
   

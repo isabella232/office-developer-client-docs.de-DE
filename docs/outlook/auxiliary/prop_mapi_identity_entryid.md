@@ -29,7 +29,7 @@ Finden Sie unter [IOlkAccount](iolkaccount.md).
 |Eigenschafts-Tag:  <br/> |0x20020102  <br/> |
 |Access:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **Eigenschaft\_MAPI\_Identität\_ENTRYID** voraussichtlich nicht auf jedem Konto vorhanden sein. Beispielsweise könnte ein Exchange-Konto haben **Eigenschaft\_MAPI\_Identität\_ENTRYID** festgelegt und nicht [Eigenschaft\_ACCT_USER_EMAIL_ADDR](prop_acct_user_email_addr.md), während für ein SMTP/POP3-Konto die Situation umgekehrt wurde. **Eigenschaft\_MAPI_IDENTITY_ENTRYID** gibt eine Eintrags-ID, die auf den Wert von _LppEntryID_ in [IMAPISession::QueryIdentity](http://msdn.microsoft.com/library/a2cdda90-5457-49a7-b98c-7273ffe5cbbc%28Office.15%29.aspx)zurückgegebene ähnlich ist. 
   

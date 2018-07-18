@@ -29,7 +29,7 @@ typedef struct {
 } TZDEFINITION;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _wFlags_
   
@@ -47,7 +47,7 @@ _rgRules_
   
 > Ein Array von Regeln, die beim Auftreten von Schichten beschreiben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Es muss mindestens eine Regel in *RgRules* . Die erste Regel in *RgRules* wird unabhängig von der *StStart* auf die erste Regel angesehen werden die Regel verwenden, bis die zweite Regel beginnt. 
   

@@ -18,7 +18,7 @@ ms.locfileid: "19796427"
 
 Zeigt die Attribute für alle abschrägungseffekte auf die Form angewendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können eine Abschrägung mit einer Form im Bereich **Shape formatieren** anwenden (**Home** > **Formenarten** > **Abschrägung** > **3-d-Optionen**, oder durch die Zellen im Abschnitt **Eigenschaften Abschrägung** der Änderung der ShapeSheet. 
   

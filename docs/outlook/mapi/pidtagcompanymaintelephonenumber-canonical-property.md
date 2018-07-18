@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCompanyMainTelephoneNumber-Eigenschaft
+title: PidTagCompanyMainTelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794165"
 ---
-# <a name="pidtagcompanymaintelephonenumber-canonical-property"></a>Kanonische PidTagCompanyMainTelephoneNumber-Eigenschaft
+# <a name="pidtagcompanymaintelephonenumber-canonical-property"></a>PidTagCompanyMainTelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Haupttelefonnummer für ein Unternehmen
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentTimeZoneDefinitionEndDisplay-Eigenschaft
+title: PidLidAppointmentTimeZoneDefinitionEndDisplay (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793436"
 ---
-# <a name="pidlidappointmenttimezonedefinitionenddisplay-canonical-property"></a>Kanonische PidLidAppointmentTimeZoneDefinitionEndDisplay-Eigenschaft
+# <a name="pidlidappointmenttimezonedefinitionenddisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionEndDisplay (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINI
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Microsoft Office Outlook 2003 oder früher und Lösungen, basieren auf Collaboration Data Objects (CDO) 1.2.1 und, die das Calendar Update-Tool nicht für Microsoft Outlook und Microsoft Exchange Server ausgeführt haben, Speichern der Start- und Endzeit der Einzel-Instanz Termine und Besprechungsanfragen in koordinierter Weltzeit (UTC). Diese Clients speichern keine Informationen für die Zeitzone, in dem die Termin- oder Besprechungsanfragen erstellt wird.
   

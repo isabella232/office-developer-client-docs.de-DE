@@ -77,7 +77,7 @@ _pclsidType_
 |MAPI_E_INVALID_PARAMETER  <br/> |Der Parameter _cCategories_, _RgclsidCategories_oder _PclsidType_ ist ungleich NULL.  <br/> |
 |MAPI_E_USER_CANCEL  <br/> |Das Dialogfeld **Kontoeinstellungen** hat einen Fehler zurückgegeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Parameter _cCategories_, _RgclsidCategories_und _PclsidType_ zu diesem Zeitpunkt nicht verwendet werden und müssen NULL sein.  _WszTitle_ wird nicht verwendet und sollte auch NULL sein. 
   

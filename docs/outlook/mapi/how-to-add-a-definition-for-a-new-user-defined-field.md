@@ -35,5 +35,5 @@ Wenn Sie ein benutzerdefiniertes Feld mit einem Microsoft Outlook-Element hinzuf
     
 ## <a name="see-also"></a>Siehe auch
 
-- [PropertyDefinition Stream-Struktur](propertydefinition-stream-structure.md)
+- [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReminderSignalTime-Eigenschaft
+title: PidLidReminderSignalTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793752"
 ---
-# <a name="pidlidremindersignaltime-canonical-property"></a>Kanonische PidLidReminderSignalTime-Eigenschaft
+# <a name="pidlidremindersignaltime-canonical-property"></a>PidLidReminderSignalTime (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Position in der Zeit, wenn eine Erinnerung von ausstehenden in überfä
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss festgelegt werden, wenn die **DispidReminderSet** ([PidLidReminderSet](pidlidreminderset-canonical-property.md))-Eigenschaft auf true festgelegt ist. Clients müssen der Wert in koordinierter Weltzeit (UTC) festgelegt.
   

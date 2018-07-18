@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidPostalAddressId-Eigenschaft
+title: PidLidPostalAddressId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793728"
 ---
-# <a name="pidlidpostaladdressid-canonical-property"></a>Kanonische PidLidPostalAddressId-Eigenschaft
+# <a name="pidlidpostaladdressid-canonical-property"></a>PidLidPostalAddressId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, welche physische Adresse des Kontakts die e-Mail-Adresse ist.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn dieser Parameter angegeben wurde, muss diese Eigenschaft einen der Werte haben, die in der folgenden Tabelle oder in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sind. Wenn dies nicht festgelegt ist, die Anwendung sollte wird davon ausgegangen, dass der Wert "0 x 00000000" ist.
   

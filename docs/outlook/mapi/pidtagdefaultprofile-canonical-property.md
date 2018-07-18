@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDefaultProfile-Eigenschaft
+title: PidTagDefaultProfile (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794272"
 ---
-# <a name="pidtagdefaultprofile-canonical-property"></a>Kanonische PidTagDefaultProfile-Eigenschaft
+# <a name="pidtagdefaultprofile-canonical-property"></a>PidTagDefaultProfile (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Benutzerprofil messaging das MAPI-Standardprofil ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird nicht als eine Eigenschaft eines Objekts, sondern nur als eine Spalte in einer Profiltabelle angezeigt. Die [IProfAdmin::SetDefaultProfile](iprofadmin-setdefaultprofile.md) -Methode können eine Clientanwendung aus das Standardprofil auswählen. 
   
@@ -54,7 +54,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagDefaultStore-Eigenschaft](pidtagdefaultstore-canonical-property.md)
+[PidTagDefaultStore (kanonische Eigenschaft)](pidtagdefaultstore-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHome2TelephoneNumbers-Eigenschaft
+title: PidTagHome2TelephoneNumbers (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794466"
 ---
-# <a name="pidtaghome2telephonenumbers-canonical-property"></a>Kanonische PidTagHome2TelephoneNumbers-Eigenschaft
+# <a name="pidtaghome2telephonenumbers-canonical-property"></a>PidTagHome2TelephoneNumbers (kanonische Eigenschaft)
 
   
   

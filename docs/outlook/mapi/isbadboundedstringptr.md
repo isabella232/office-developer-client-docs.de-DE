@@ -52,7 +52,7 @@ Der Rückgabewert ist 0 (null), wenn der aufrufende Prozess Lesezugriff für all
   
 Der Rückgabewert ist ungleich NULL, wenn der aufrufende Prozess nicht Lesezugriff für alle Zeichen bis zu abschließendes Null-Zeichen der Zeichenfolge oder Lesezugriff bis zu der Anzahl von Zeichen durch _CchMax_angegeben wird.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktion **IsBadBoundedStringPtr** entspricht **IsBadStringPtr**verwenden.
   

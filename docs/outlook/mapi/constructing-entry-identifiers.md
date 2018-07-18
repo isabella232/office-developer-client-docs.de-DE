@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Eintragsbezeichner
+title: Konstruieren von Eintragsbezeichnern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791430"
 ---
-# <a name="constructing-entry-identifiers"></a>Erstellen von Eintragsbezeichner
+# <a name="constructing-entry-identifiers"></a>Konstruieren von Eintragsbezeichnern
 
   
   

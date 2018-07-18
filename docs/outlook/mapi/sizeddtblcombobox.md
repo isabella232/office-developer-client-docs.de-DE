@@ -44,7 +44,7 @@ _u_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **SizedDtblComboBox** können Sie einem Kombinationsfeld definieren, wenn die Länge der Zeichenfolge aktiviert bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
   

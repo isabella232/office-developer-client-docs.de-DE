@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingProviderUrl-Eigenschaft
+title: PidLidSharingProviderUrl (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793787"
 ---
-# <a name="pidlidsharingproviderurl-canonical-property"></a>Kanonische PidLidSharingProviderUrl-Eigenschaft
+# <a name="pidlidsharingproviderurl-canonical-property"></a>PidLidSharingProviderUrl (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die URL, die im Zusammenhang mit den Freigabedienstanbieter und von der **D
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird in der Regel verwendet, um weitere Informationen zu den Freigabedienstanbieter bereitzustellen, aber ignoriert werden soll.
   

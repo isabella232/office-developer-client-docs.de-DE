@@ -1,5 +1,5 @@
 ---
-title: MapiSvc.inf Nachricht Service Abschnitte
+title: Nachrichtendienstabschnitte in MapiSvc.inf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793158"
 ---
-# <a name="mapisvcinf-message-service-sections"></a>MapiSvc.inf Nachricht Service Abschnitte
+# <a name="mapisvcinf-message-service-sections"></a>Nachrichtendienstabschnitte in MapiSvc.inf
 
   
   

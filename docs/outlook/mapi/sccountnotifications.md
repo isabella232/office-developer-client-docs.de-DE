@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Eine ungültige Benachrichtigung aufgetreten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn NULL in der _pcb_ -Parameter übergeben wird, überprüft die Funktion **ScCountNotifications** nur das Array von Benachrichtigungen, aber keine Zählung abgeschlossen ist. Wenn ein Wert ungleich Null in _pcb_übergeben wird, bestimmt die Größe des Arrays und speichert die Ursache **ScCountNotifications** _pcb_. Der Parameter _pcb_ muss groß genug für das gesamte Array sein. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingRemoteUid-Eigenschaft
+title: PidLidSharingRemoteUid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793793"
 ---
-# <a name="pidlidsharingremoteuid-canonical-property"></a>Kanonische PidLidSharingRemoteUid-Eigenschaft
+# <a name="pidlidsharingremoteuid-canonical-property"></a>PidLidSharingRemoteUid (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Eintrags-ID des remote-Ordners freigegeben. Dies ist eine Eigenschaft e
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf die hexadezimale Zeichenfolgendarstellung des Werts der Eigenschaft PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) für den freigegebenen Ordner festgelegt werden. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   

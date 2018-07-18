@@ -49,7 +49,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Vorgang wird von dieser Site Nachricht nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formularobjekte Aufrufen die **IMAPIMessageSite::CopyMessage** -Methode, um die aktuelle Nachricht in einen neuen Ordner zu kopieren. **CopyMessage** ändert nicht die Nachricht an den Benutzer derzeit angezeigt wird, und keine Schnittstelle für die neu erstellte Nachricht an das Formular zurückgegeben wird. 
   
@@ -85,10 +85,10 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formulars Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

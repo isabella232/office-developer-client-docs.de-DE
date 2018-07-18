@@ -30,7 +30,7 @@ Die folgende Tabelle enthält die Schlüsselwörter Access reserviert.
 |FÜGEN SIE HINZU  <br/> |FÜLLFAKTOR  <br/> |Quartal  <br/> |
 |ALL  <br/> |Gleitkomma  <br/> |RAISERROR  <br/> |
 |ALTER  <br/> |FÜR  <br/> |LESEN  <br/> |
-|AND  <br/> |FREMDSCHLÜSSEL  <br/> |READTEXT  <br/> |
+|UND  <br/> |FREMDSCHLÜSSEL  <br/> |READTEXT  <br/> |
 |ANY  <br/> |FREETEXT  <br/> |NEU KONFIGURIEREN  <br/> |
 |ALS  <br/> |FREETEXTTABLE  <br/> |VERWEISE  <br/> |
 |ASC  <br/> |Von  <br/> |REPLIKATION  <br/> |
@@ -50,7 +50,7 @@ Die folgende Tabelle enthält die Schlüsselwörter Access reserviert.
 |CLUSTERED  <br/> |INDEX  <br/> |SECURITYAUDIT  <br/> |
 |COALESCE  <br/> |INNERE  <br/> |SELECT  <br/> |
 |COLLATE  <br/> |EINFÜGEN  <br/> |SEMANTICKEYPHRASETABLE  <br/> |
-|SPALTE  <br/> |Ganzzahl  <br/> |SEMANTICSIMILARITYDETAILSTABLE  <br/> |
+|SPALTE  <br/> |Ganze Zahl  <br/> |SEMANTICSIMILARITYDETAILSTABLE  <br/> |
 |COMMIT AUSFÜHREN  <br/> |SCHNEIDEN  <br/> |SEMANTICSIMILARITYTABLE  <br/> |
 |BERECHNEN  <br/> |IN  <br/> |SESSION_USER  <br/> |
 |EINSCHRÄNKUNG  <br/> |IST  <br/> |FESTLEGEN  <br/> |
@@ -59,7 +59,7 @@ Die folgende Tabelle enthält die Schlüsselwörter Access reserviert.
 |FORTSETZEN  <br/> |SCHLÜSSEL  <br/> |HERUNTERFAHREN  <br/> |
 |CONVERT  <br/> |KILL  <br/> |EINIGE  <br/> |
 |ERSTELLEN  <br/> |LEFT  <br/> |STATISTIKEN  <br/> |
-|SCHNEIDET  <br/> |mögen  <br/> |SYSTEM_USER  <br/> |
+|SCHNEIDET  <br/> |WIE  <br/> |SYSTEM_USER  <br/> |
 |Währung  <br/> |LINENO  <br/> |TABELLE  <br/> |
 |AKTUELLE  <br/> |LADEN  <br/> |TABLESAMPLE  <br/> |
 |CURRENT_DATE  <br/> |LongText  <br/> |Text  <br/> |
@@ -68,10 +68,10 @@ Die folgende Tabelle enthält die Schlüsselwörter Access reserviert.
 |CURRENT_USER  <br/> |Minute  <br/> |Zeit  <br/> |
 |CURSOR  <br/> |Monat  <br/> |An  <br/> |
 |DATENBANK  <br/> |NATIONAL  <br/> |Nach oben  <br/> |
-|Date  <br/> |Nein  <br/> |TRAN  <br/> |
+|Datum  <br/> |Nein  <br/> |TRAN  <br/> |
 |DateWithTime  <br/> |NOCHECK  <br/> |TRANSAKTION  <br/> |
 |Tag  <br/> |NONCLUSTERED  <br/> |TRIGGER  <br/> |
-|DayofYear  <br/> |NOT  <br/> |ABSCHNEIDEN  <br/> |
+|DayofYear  <br/> |NICHT  <br/> |ABSCHNEIDEN  <br/> |
 |DBCC  <br/> |NULL  <br/> |TRY_CONVERT  <br/> |
 |FREIGEBEN  <br/> |NULLIF  <br/> |TSEQUAL  <br/> |
 |DECLARE  <br/> |DER  <br/> |UNION  <br/> |
@@ -117,7 +117,7 @@ Dies ist die aktuelle Liste der reservierten ODBC-Schlüsselwörter.
 |ALL  <br/> |EXTRACT  <br/> |POSITION  <br/> |
 |RESERVIEREN  <br/> |FALSE  <br/> |PRECISION  <br/> |
 |ALTER  <br/> |FETCH  <br/> |PREPARE  <br/> |
-|AND  <br/> |ERSTE  <br/> |BEIBEHALTEN  <br/> |
+|UND  <br/> |ERSTE  <br/> |BEIBEHALTEN  <br/> |
 |ANY  <br/> |FLOAT  <br/> |PRIMÄRE  <br/> |
 |ARE  <br/> |FÜR  <br/> |VORHERIGE  <br/> |
 |ALS  <br/> |FREMDSCHLÜSSEL  <br/> |PRIVILEGES  <br/> |
@@ -158,7 +158,7 @@ Dies ist die aktuelle Liste der reservierten ODBC-Schlüsselwörter.
 |COUNT  <br/> |FÜHRENDE  <br/> |KLICKEN SIE DANN  <br/> |
 |ERSTELLEN  <br/> |LEFT  <br/> |ZEIT  <br/> |
 |SCHNEIDET  <br/> |EBENE  <br/> |ZEITSTEMPEL  <br/> |
-|AKTUELLE  <br/> |mögen  <br/> |TIMEZONE_HOUR  <br/> |
+|AKTUELLE  <br/> |WIE  <br/> |TIMEZONE_HOUR  <br/> |
 |CURRENT_DATE  <br/> |LOKALE  <br/> |TIMEZONE_MINUTE  <br/> |
 |CURRENT_TIME  <br/> |LOWER  <br/> |An  <br/> |
 |CURRENT_TIMESTAMP  <br/> |MATCH  <br/> |TRAILING  <br/> |
@@ -174,7 +174,7 @@ Dies ist die aktuelle Liste der reservierten ODBC-Schlüsselwörter.
 |VERZÖGERT WERDEN  <br/> |NÄCHSTE  <br/> |UPPER  <br/> |
 |ZURÜCKGESTELLT  <br/> |NEIN  <br/> |USAGE  <br/> |
 |DELETE  <br/> |NONE  <br/> |BENUTZER  <br/> |
-|DESC  <br/> |NOT  <br/> |USING  <br/> |
+|DESC  <br/> |NICHT  <br/> |USING  <br/> |
 |BESCHREIBEN  <br/> |NULL  <br/> |WERT  <br/> |
 |DESKRIPTOR  <br/> |NULLIF  <br/> |WERTE  <br/> |
 |DIAGNOSE  <br/> |NUMERISCHE  <br/> |VARCHAR  <br/> |

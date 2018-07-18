@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796845"
 ---
-# <a name="disabled-cell-actions-section"></a>Zelle "Disabled" (Abschnitt "Actions")
+# <a name="disabled-cell-actions-section"></a>Disabled Cell (Actions Section)
 
 Gibt an, ob ein Element in einem Kontext- oder Aktionstagmenü deaktiviert ist.
   
@@ -30,13 +30,13 @@ Gibt an, ob ein Element in einem Kontext- oder Aktionstagmenü deaktiviert ist.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle Disabled nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Disabled aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . Wobei deaktiviert Aktionen. *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Disabled aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Disabled aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

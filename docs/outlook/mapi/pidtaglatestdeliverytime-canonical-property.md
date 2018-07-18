@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLatestDeliveryTime-Eigenschaft
+title: PidTagLatestDeliveryTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794556"
 ---
-# <a name="pidtaglatestdeliverytime-canonical-property"></a>Kanonische PidTagLatestDeliveryTime-Eigenschaft
+# <a name="pidtaglatestdeliverytime-canonical-property"></a>PidTagLatestDeliveryTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das späteste Datum und Uhrzeit, wann ein Message Transfer Agent (MTA) 
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein MTA jeweils Zustellungsversuche ist nicht möglich, den diese Eigenschaft gibt an, abbricht die Nachricht ohne Übermittlung. 
   

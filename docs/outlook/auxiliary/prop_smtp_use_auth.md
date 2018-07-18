@@ -27,12 +27,12 @@ Gibt an, ob die Authentifizierung für den SMTP-Konto verwenden.
 |Eigenschafts-Tag:  <br/> |0x02030003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Möglichkeit der Wert 0 (null) verwenden Sie die Authentifizierung nicht, andernfalls-Authentifizierung verwenden.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

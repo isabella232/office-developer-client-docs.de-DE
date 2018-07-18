@@ -1,5 +1,5 @@
 ---
-title: Daten der Datenqualität Layer-API-Referenz
+title: Referenz zur Datendegradationsschicht-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790936"
 ---
-# <a name="data-degradation-layer-api-reference"></a>Daten der Datenqualität Layer-API-Referenz
+# <a name="data-degradation-layer-api-reference"></a>Referenz zur Datendegradationsschicht-API
 
 Dieser Abschnitt enthält die Referenz für die Daten Beeinträchtigung Layer-API, die bietet die Möglichkeit, das zugrunde liegenden systemeigenen Zeichenformat eines Outlook-Objekts auszublenden, Zugriff auf das Objekt in einem bevorzugten Zeichenformat, anstatt im Client kann die systemeigene Zeichenformat-Objekts.
   

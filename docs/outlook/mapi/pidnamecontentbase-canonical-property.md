@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameContentBase-Eigenschaft
+title: PidNameContentBase (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793982"
 ---
-# <a name="pidnamecontentbase-canonical-property"></a>Kanonische PidNameContentBase-Eigenschaft
+# <a name="pidnamecontentbase-canonical-property"></a>PidNameContentBase (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Einen Wert für [RFC3282] Content-Base Kopfzeile Feld enthält.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um den Wert dieser Eigenschaft festzulegen, müssen Multipurpose Internet Message Extensions (MIME) Clients den gewünschten Wert in ein Kopfzeilenfeld Content-Base auf eine Entität MIME geschrieben werden, die Textkörper einer Nachricht zugeordnet ist. MIME-Leser müssen auf den Wert dieser Eigenschaft den Wert eines Felds Header Content-Base für solche eine MIME-Entität kopieren.
   

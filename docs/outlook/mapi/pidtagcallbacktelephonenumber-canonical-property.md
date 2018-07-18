@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCallbackTelephoneNumber-Eigenschaft
+title: PidTagCallbackTelephoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794184"
 ---
-# <a name="pidtagcallbacktelephonenumber-canonical-property"></a>Kanonische PidTagCallbackTelephoneNumber-Eigenschaft
+# <a name="pidtagcallbacktelephonenumber-canonical-property"></a>PidTagCallbackTelephoneNumber (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Telefonnummer, die zum Erreichen des Absenders der Empfänger der 
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

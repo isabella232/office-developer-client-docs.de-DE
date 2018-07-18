@@ -70,7 +70,7 @@ S_FALSE
   
 > Die Nachricht wurde erfolgreich aktiviert, aber ein anderen Typ des Formulars im Prozess geöffnet wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formularobjekte Aufrufen die **IMAPIViewContext::ActivateNext** -Methode zum Ändern, welche Meldung für den Benutzer angezeigt wird. Der im _UlDir_ -Parameter übergebene Wert gibt an, welche Meldung sein sollte aktiviert und in einigen Fällen, warum. Die Flags VCDIR_NEXT und VCDIR_PREVIOUS entsprechen den Benutzer, die Sie den **nächsten** oder **vorherigen** Befehl in einer Ansicht auswählen. Diese Vorgänge entsprechen in der Regel nach oben oder nach unten eine Nachricht in der Liste der Nachrichten der Formular-Viewer verschieben. 
   
@@ -95,6 +95,6 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 ## <a name="see-also"></a>Siehe auch
 
 - [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)
-- [IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+- [IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 - [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
 

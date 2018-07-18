@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidHtml-Eigenschaft
+title: PidLidHtml (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793622"
 ---
-# <a name="pidlidhtml-canonical-property"></a>Kanonische PidLidHtml-Eigenschaft
+# <a name="pidlidhtml-canonical-property"></a>PidLidHtml (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Kontakt Business Webseiten-URL an.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft sollte falls vorhanden, die den Wert der Eigenschaft **PR_BUSINESS_HOME_PAGE** ([PidTagBusinessHomePage](pidtagbusinesshomepage-canonical-property.md)) identisch.
   

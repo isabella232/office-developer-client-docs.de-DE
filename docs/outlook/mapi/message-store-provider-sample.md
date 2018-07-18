@@ -38,15 +38,15 @@ Die meisten Funktionen in der umbrochen PST Store Beispielanbieter übergeben ih
 
 In diesem Beispiel unterstützt Microsoft Outlook 2010 64-Bit- und wurde für Outlook 2013 jetzt überarbeitet. Finden Sie unter den folgenden Themen Weitere Informationen:
   
-- [Über die API-Replikation](about-the-replication-api.md)
+- [Informationen über die Replikations-API](about-the-replication-api.md)
     
-- [Initialisieren einen Anbieter für umbrochenen PST anmelden](initializing-a-wrapped-pst-store-provider.md)
+- [Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
     
-- [Anmelden bei einem Anbieter gepackten PST-Datei](logging-on-to-a-wrapped-pst-store-provider.md)
+- [Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
     
-- [Verwenden eines Anbieters gepackten PST-Speichers](using-a-wrapped-pst-store-provider.md)
+- [Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
     
-- [Herunterfahren von einem Anbieter gepackten PST-Datei](shutting-down-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
     
  **So installieren Sie die umfließendem PST Store Beispielanbieter**
   

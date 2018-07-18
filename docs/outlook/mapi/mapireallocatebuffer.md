@@ -51,7 +51,7 @@ LPVOID * lppv
   
 > Ein Zeiger auf den zurückgegebenen zugewiesenen Puffer.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **MAPIReallocateBuffer** ordnet einen neuen Block des Systemspeichers auf die angeforderte Größe und kopiert den Inhalt des Puffers übergeben wird, die in dieser neuen Block Arbeitsspeicher. Wenn der Block des Speichers, der übergeben wird interne Zeiger enthält, Ändern der Zeiger nicht entsprechend den neuen Speicherort. 
   

@@ -1,5 +1,5 @@
 ---
-title: Stellen Sie Store Typ Private-Eigenschaft
+title: Eingenschaft zum Markieren des Store-Typs als privat
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792937"
 ---
-# <a name="make-store-type-private-property"></a>Stellen Sie Store Typ Private-Eigenschaft
+# <a name="make-store-type-private-property"></a>Eingenschaft zum Markieren des Store-Typs als privat
 
   
   
@@ -37,7 +37,7 @@ Wird einen sekundären Speicher als privat behandelt.
 |Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMsgStore: IMAPIProp](imsgstoreimapiprop.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
   

@@ -1,5 +1,5 @@
 ---
-title: Account-Management-API-Referenz
+title: Referenz zur Kontoverwaltungs-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790921"
 ---
-# <a name="account-management-api-reference"></a>Account-Management-API-Referenz
+# <a name="account-management-api-reference"></a>Referenz zur Kontoverwaltungs-API
 
 Dieser Abschnitt enthält die Referenz für das Konto Management-API, die ermöglicht den Zugriff auf Kontoinformationen, unterstützt von Konto änderungsbenachrichtigungen, Schützen von Konten vor Spam und Verwalten von Nachricht Downloads für POP3-Konten.
 

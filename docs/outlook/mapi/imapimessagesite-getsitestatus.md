@@ -99,12 +99,12 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)
   
-[Kanonische PidTagIpmWastebasketEntryId-Eigenschaft](pidtagipmwastebasketentryid-canonical-property.md)
+[PidTagIpmWastebasketEntryId (kanonische Eigenschaft)](pidtagipmwastebasketentryid-canonical-property.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formulars Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

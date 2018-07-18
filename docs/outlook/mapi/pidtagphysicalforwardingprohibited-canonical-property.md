@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPhysicalForwardingProhibited-Eigenschaft
+title: PidTagPhysicalForwardingProhibited (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794788"
 ---
-# <a name="pidtagphysicalforwardingprohibited-canonical-property"></a>Kanonische PidTagPhysicalForwardingProhibited-Eigenschaft
+# <a name="pidtagphysicalforwardingprohibited-canonical-property"></a>PidTagPhysicalForwardingProhibited (kanonische Eigenschaft)
 
   
   

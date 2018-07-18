@@ -27,7 +27,7 @@ Gibt die sekundäre Konto "Senden" für die Nachricht.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gilt für ein MAPI-Message-Objekt. Bei einer empfangenen Nachricht gibt der sekundären Konto-Stempel "Senden" welches Konto mit, eine Forward- oder eine Antwort gesendet werden soll, wenn mit das primäre Konto der weiterleiten oder der Antwort gesendet werden kann. Für eine ausgehende Nachricht bestimmt sekundäre Konto "Stempel senden" mit welchem Konto zum Senden der Nachricht, wenn die Nachricht mit das primäre Konto gesendet werden kann. Der Wert ist der [PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md) -Wert aus der [IOlkAccount](iolkaccount.md) -Schnittstelle des Kontos ein, mit denen die Nachricht gesendet wird. 
   
@@ -35,5 +35,5 @@ Diese Eigenschaft gilt für ein MAPI-Message-Objekt. Bei einer empfangenen Nachr
 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 - [MAPI-Eigenschaften](http://msdn.microsoft.com/library/3b980217-b65b-442b-8c18-b8b9f3ff487a%28Office.15%29.aspx) 
-- [Kanonische PidTagNextSendAcct-Eigenschaft](http://msdn.microsoft.com/library/b7429c2e-0d9d-4921-9f56-9ecad817f8cb%28Office.15%29.aspx)
+- [PidTagNextSendAcct (kanonische Eigenschaft)](http://msdn.microsoft.com/library/b7429c2e-0d9d-4921-9f56-9ecad817f8cb%28Office.15%29.aspx)
 

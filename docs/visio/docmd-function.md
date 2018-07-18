@@ -38,6 +38,6 @@ Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden S
 
  `DOCMD (1312)`
   
-Bewirkt, dass das Dialogfeld **Shape-Daten** in der Benutzeroberfläche angezeigt wird. 
+Bewirkt, dass das Dialogfeld **Shape-Daten** auf der Benutzeroberfläche angezeigt wird. 
   
 

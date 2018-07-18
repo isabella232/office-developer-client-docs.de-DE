@@ -28,7 +28,7 @@ typedef struct {
 } TZRULE;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _wFlags_
   
@@ -46,7 +46,7 @@ _TZReg_
   
 > Die Informationen zur Zeitzone für die Zeitzone an.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Struktur erweitert [TZREG](tzreg.md) durch mit zusätzlichen Informationen angezeigt werden, wann Zeitzonenregeln wirksam werden. 
   

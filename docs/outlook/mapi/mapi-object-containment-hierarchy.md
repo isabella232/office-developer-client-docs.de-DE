@@ -29,7 +29,7 @@ Einige Objekte bereitstellen Containern nur Zugriff. Anlagen und Empfänger sind
   
 Die folgende Abbildung zeigt die MAPI-Kapselungshierarchie. Die Sitzung wird am oberen Rand der Struktur, da es in der Sitzung ist, dass ein Client alle anderen Objekte zugreift. Die nächste Ebene enthält die Nachricht Store Tabelle ein Table-Objekt, in der Eigenschaften für alle Anbieter die Nachricht in der aktuellen Sitzung und das Adressbuch Zugriff auf alle Address Book Anbieter bereitstellen aufgelistet. Das Nachricht Store Tabelle und Ihr-Adressbuch werden verwendet, um Zugriff auf die Objekte, die von bestimmten Dienstanbietern dargestellt im Kapselung Reihenfolge weiter implementiert.
   
-**MAPI-Kapselungshierarchie**
+**MAPI-Einschlusshierarchie**
   
 ![MAPI-Kapselungshierarchie] (media/amapi_41.gif "MAPI-Kapselungshierarchie")
   

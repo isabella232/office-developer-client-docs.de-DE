@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingInitiatorName-Eigenschaft
+title: PidLidSharingInitiatorName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793783"
 ---
-# <a name="pidlidsharinginitiatorname-canonical-property"></a>Kanonische PidLidSharingInitiatorName-Eigenschaft
+# <a name="pidlidsharinginitiatorname-canonical-property"></a>PidLidSharingInitiatorName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Legt fest, wie eine eine Freigabenachricht-Eigenschaft.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf den Wert der **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) aus dem Adressbuch identifizierten **DispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md)) festgelegt und sollte ignoriert werden. 
   

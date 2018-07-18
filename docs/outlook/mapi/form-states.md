@@ -21,15 +21,15 @@ ms.locfileid: "19791749"
   
 Formular-Objekte können in eine der fünf verschiedenen Status, je nach welche Methoden werden aufgerufen wurden und ob Fehler aufgetreten sind, in diese Methoden ausgeführt werden. In den folgenden Themen werden die Zustände beschrieben:
   
-- [Nicht initialisierten Zustand](uninitialized-state.md)
+- [Status „Nicht initialisiert“](uninitialized-state.md)
     
-- [Normalzustand](normal-state.md)
+- [Status „Normal“](normal-state.md)
     
-- [NoScribble Zustand](noscribble-state.md)
+- [Status „NoScribble“](noscribble-state.md)
     
-- [HandsOffAfterSave Zustand](handsoffaftersave-state.md)
+- [Status „HandsOffAfterSave“](handsoffaftersave-state.md)
     
-- [HandsOffFromNormal Zustand](handsofffromnormal-state.md)
+- [Status „HandsOffFromNormal“](handsofffromnormal-state.md)
     
 Die Zustände beziehen sich hauptsächlich auf den Status der Daten in das Form-Objekt. Die unterschiedlichen Zustände anzugeben, ob die Daten gespeichert werden müssen, ob das Form-Objekt Änderungen an welchem Punkt beim Speichern der Daten, die darf, denen in das Formular befindet, und die Daten. Als solche Formular Zustände und Übergänge zwischen diesen stärker mit Ihrem Formular Server Implementierung von [IPersistMessage: IUnknown](ipersistmessageiunknown.md) Schnittstellenmethoden als andere. Kenntnisse in dieser Zustände ist sehr nützlich für eine ordnungsgemäße Implementierung der MAPI-Formulars Schnittstellen, die der Formular Server implementiert werden muss. 
   
@@ -40,5 +40,5 @@ In den Themen in diesem Abschnitt beschreiben die verschiedenen Status, zusammen
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

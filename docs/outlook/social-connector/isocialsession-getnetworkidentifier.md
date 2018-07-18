@@ -29,11 +29,11 @@ _networkIdentifier_
   
 > [out] Eine Zeichenfolge, die einen eindeutige für soziale Netzwerkbezeichner enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine eindeutige ID ist eine Zeichenfolge, die Outlook Social Connector (OSC) Anbieter für soziale Netzwerke identifiziert. Diese Methode kann auch E_NOTIMPL zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

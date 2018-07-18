@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskEstimatedEffort-Eigenschaft
+title: PidLidTaskEstimatedEffort (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793817"
 ---
-# <a name="pidlidtaskestimatedeffort-canonical-property"></a>Kanonische PidLidTaskEstimatedEffort-Eigenschaft
+# <a name="pidlidtaskestimatedeffort-canonical-property"></a>PidLidTaskEstimatedEffort (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Zeitspanne in Minuten, die der Benutzer zum Ausführen einer Aufgabe er
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert muss größer als oder gleich 0 und kleiner als 0x5AE980DF (1,525,252,319), wobei gleich 480 Minuten eine Tag und 2400 Minuten gleich eine Woche (acht Stunden in einen Arbeitstag und fünf Tage in einer Arbeitswoche).
   

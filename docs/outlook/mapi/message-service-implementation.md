@@ -1,5 +1,5 @@
 ---
-title: Nachricht Service-Implementierung
+title: Nachrichtendienstimplementierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793258"
 ---
-# <a name="message-service-implementation"></a>Nachricht Service-Implementierung
+# <a name="message-service-implementation"></a>Nachrichtendienstimplementierung
 
   
   

@@ -69,7 +69,7 @@ BOOL FGetComponentPath(
   
 > Der Pfad wurde nicht gefunden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **FGetComponentPath** -Funktion, wenn Sie den Pfad der privaten Mapi32.dll abzurufen müssen. 
   
@@ -77,7 +77,7 @@ Verwenden Sie die **FGetComponentPath** -Funktion, wenn Sie den Pfad der private
 
 
 
-[Wählen Sie eine bestimmte Version von MAPI zu laden](how-to-choose-a-specific-version-of-mapi-to-load.md)
+[Auswählen einer bestimmten zu ladenden MAPI-Version](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
 [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/en-us/library/dd162409.aspx)

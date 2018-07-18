@@ -87,7 +87,7 @@ MAPI_E_NOT_FOUND
   
 > Die **MAPIUID** auf das _LpUID_ bezieht sich nicht auf einem vorhandenen Meldung-Dienst. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin::CopyMsgService** -Methode kopiert eine Message Service in einem Profil, das aktive Profil oder ein anderes Profil. Das Profil, das den Dienst zu kopierenden enthält, und das Ziel müssen nicht das gleiche Profil werden, aber sie werden können. 
   
@@ -101,5 +101,5 @@ Die Messagingdiensts Eintrag Point-Funktion ist nicht für einen Kopiervorgang a
   
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

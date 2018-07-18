@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameByteCount-Eigenschaft
+title: PidNameByteCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793944"
 ---
-# <a name="pidnamebytecount-canonical-property"></a>Kanonische PidNameByteCount-Eigenschaft
+# <a name="pidnamebytecount-canonical-property"></a>PidNameByteCount (kanonische Eigenschaft)
 
   
   

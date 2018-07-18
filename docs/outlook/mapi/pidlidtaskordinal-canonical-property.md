@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskOrdinal-Eigenschaft
+title: PidLidTaskOrdinal (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793848"
 ---
-# <a name="pidlidtaskordinal-canonical-property"></a>Kanonische PidLidTaskOrdinal-Eigenschaft
+# <a name="pidlidtaskordinal-canonical-property"></a>PidLidTaskOrdinal (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Bietet Hilfe benutzerdefinierten Sortierung Aufgaben.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann nicht festgelegt bleiben. Wenn festgelegt, dessen Wert größer als "0x800186A0" (-2,147,383,648) sein muss und weniger als "0x7FFE7960" (2,147,383,648) und unter Aufgaben im selben Ordner eindeutig sein müssen.
   

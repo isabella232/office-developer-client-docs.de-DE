@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Beeinträchtigung der Datenebene API
+title: Informationen zur Datendegradationsschicht-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790919"
 ---
-# <a name="about-the-data-degradation-layer-api"></a>Informationen zu Beeinträchtigung der Datenebene API
+# <a name="about-the-data-degradation-layer-api"></a>Informationen zur Datendegradationsschicht-API
 
 Die Data-Beeinträchtigung Layer-API bietet die Möglichkeit zum Ausblenden des zugrunde liegenden systemeigenen Zeichenformat eines Outlook-Objekts Client auf das Objekt in einem bevorzugten Zeichenformat, anstatt im systemeigenen Zeichenformat des Objekts zugreifen kann. Es bietet die Konstantendefinitionen dargestellt in [Konstanten (Beeinträchtigung Datenebene API)](constants-data-degradation-layer-api.md)und die Funktion [HrCreateNewWrappedObject](hrcreatenewwrappedobject.md) , der in einem angegebenen Format ein umfließendem Outlook-Objekt zurückgibt. 
   

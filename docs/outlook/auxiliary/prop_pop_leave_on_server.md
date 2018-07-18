@@ -27,7 +27,7 @@ Gibt an, wobei eine Kopie einer Nachricht auf dem Server für ein POP-Konto.
 |Eigenschafts-Tag:  <br/> |0x10000003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In der folgenden Tabelle sind die möglichen Werte aufgeführt. Weitere Informationen zu Konstanten finden Sie unter [Konstanten (Konto Management-API)](constants-account-management-api.md) . 
   
@@ -41,6 +41,6 @@ In der folgenden Tabelle sind die möglichen Werte aufgeführt. Weitere Informat
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

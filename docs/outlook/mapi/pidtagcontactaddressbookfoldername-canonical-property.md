@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookFolderName-Eigenschaft
+title: PidTagContactAddressBookFolderName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794180"
 ---
-# <a name="pidtagcontactaddressbookfoldername-canonical-property"></a>Kanonische PidTagContactAddressBookFolderName-Eigenschaft
+# <a name="pidtagcontactaddressbookfoldername-canonical-property"></a>PidTagContactAddressBookFolderName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen eines Ordners für Adressbucheinträgen verwendet.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgenden Zeichen können nicht in Ordnernamen nicht verwendet werden:
   

@@ -22,18 +22,22 @@ Gibt an, ob über dieser Aktion ein Trennzeichen in das Menü eingefügt wird.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Klicken Sie im Menü über der Aktion wird ein Trennzeichen eingefügt.  <br/> |
-|FALSE  <br/> |Ein Trennzeichen ist nicht in das Menü über der Aktion (Standardeinstellung) eingefügt.  <br/> |
+|TRUE  <br/> |
+          Über der Aktion wird ein Trennzeichen in das Menü eingefügt. 
+  <br/> |
+|FALSE  <br/> |
+          Über der Aktion wird kein Trennzeichen in das Menü eingefügt (Standard).
+  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle BeginGroup nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle BeginGroup aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name*. BeginGroup wobei Aktionen. *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BeginGroup aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle BeginGroup aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

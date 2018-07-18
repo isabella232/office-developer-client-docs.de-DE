@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReminderFileParameter-Eigenschaft
+title: PidLidReminderFileParameter (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793745"
 ---
-# <a name="pidlidreminderfileparameter-canonical-property"></a>Kanonische PidLidReminderFileParameter-Eigenschaft
+# <a name="pidlidreminderfileparameter-canonical-property"></a>PidLidReminderFileParameter (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Dateinamen des Sounds, die ein Client wiedergegeben werden soll, wenn d
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft nicht vorhanden ist, kann der Client einen Standardwert verwenden.
   

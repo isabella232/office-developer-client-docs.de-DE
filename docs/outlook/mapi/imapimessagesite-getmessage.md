@@ -49,7 +49,7 @@ S_FALSE
   
 > Keine Meldung, die derzeit für das aufrufende Formular vorhanden ist.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formulare rufen Sie die **IMAPIMessageSite::GetMessage** -Methode, um eine Nachricht-Schnittstelle für die aktuelle Nachricht zu erhalten. Die aktuelle Nachricht ist die gleiche Nachricht an, wie zuvor in der [IPersistMessage::InitNew](ipersistmessage-initnew.md), [IPersistMessage::Load](ipersistmessage-load.md)oder [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md) -Methode übergeben wurde. 
   
@@ -73,16 +73,16 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IPersistMessage::InitNew](ipersistmessage-initnew.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
 [IPersistMessage::SaveCompleted](ipersistmessage-savecompleted.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formulars Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

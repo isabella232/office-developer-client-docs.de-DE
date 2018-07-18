@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalAuthorName-Eigenschaft
+title: PidTagOriginalAuthorName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794672"
 ---
-# <a name="pidtagoriginalauthorname-canonical-property"></a>Kanonische PidTagOriginalAuthorName-Eigenschaft
+# <a name="pidtagoriginalauthorname-canonical-property"></a>PidTagOriginalAuthorName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen des Autors der ersten Version einer Nachricht, d. h., 
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Autor einer Nachricht. Am ersten Übermittlung der Nachricht sollte die Clientanwendung diese Eigenschaften auf den Wert der **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   
@@ -66,7 +66,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

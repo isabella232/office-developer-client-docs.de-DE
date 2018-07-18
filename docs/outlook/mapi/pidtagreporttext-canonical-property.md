@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportText-Eigenschaft
+title: PidTagReportText (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794966"
 ---
-# <a name="pidtagreporttext-canonical-property"></a>Kanonische PidTagReportText-Eigenschaft
+# <a name="pidtagreporttext-canonical-property"></a>PidTagReportText (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Optionalen Text für einen Bericht generiert, die für die messaging-System enth
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In der Regel der Text in diese Eigenschaften wird als Antwort auf eine Übermittlung oder Unzustellbarkeitsbericht oder eine Lese- oder nonread aus dem zugrunde liegenden messaging-System empfangen Bericht generiert, ist jedoch nicht selbst Text, der mit diesem System übertragen worden ist. 
   

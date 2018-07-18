@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidRecurrenceType-Eigenschaft
+title: PidLidRecurrenceType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793725"
 ---
-# <a name="pidlidrecurrencetype-canonical-property"></a>Kanonische PidLidRecurrenceType-Eigenschaft
+# <a name="pidlidrecurrencetype-canonical-property"></a>PidLidRecurrenceType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Serientyp von sich wiederholenden Reihe.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt an, welche Serie von sich wiederholenden Reihe mithilfe der unten aufgeführten Werte.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDefaultPostMessageClass-Eigenschaft
+title: PidTagDefaultPostMessageClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794271"
 ---
-# <a name="pidtagdefaultpostmessageclass-canonical-property"></a>Kanonische PidTagDefaultPostMessageClass-Eigenschaft
+# <a name="pidtagdefaultpostmessageclass-canonical-property"></a>PidTagDefaultPostMessageClass (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen eines benutzerdefinierten Formulars Nachrichtenklasse.
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft auf einen Ordner festgelegt ist, muss der Wert enthalten entweder genau Basisnachrichtenklasse (z. B. "IPM. Kontakt"für einen Ordner" Kontakte "oder"IPM. Termin"für einen Kalenderordner), oder Sie zunächst die Basisnachrichtenklasse (z. B." IPM. Contact.MyContact").
   

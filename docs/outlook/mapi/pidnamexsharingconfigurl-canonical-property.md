@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameXSharingConfigUrl-Eigenschaft
+title: PidNameXSharingConfigUrl (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793994"
 ---
-# <a name="pidnamexsharingconfigurl-canonical-property"></a>Kanonische PidNameXSharingConfigUrl-Eigenschaft
+# <a name="pidnamexsharingconfigurl-canonical-property"></a>PidNameXSharingConfigUrl (kanonische Eigenschaft)
 
   
   

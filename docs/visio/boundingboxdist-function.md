@@ -20,7 +20,8 @@ Gibt die Messung für den angegebenen Teil des das Shape umgebenden Felds zurüc
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

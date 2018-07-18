@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAccessControlListTable-Eigenschaft
+title: PidTagAccessControlListTable (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794021"
 ---
-# <a name="pidtagaccesscontrollisttable-canonical-property"></a>Kanonische PidTagAccessControlListTable-Eigenschaft
+# <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Tabelle, die alle System Access Control Lists (SACL) in einen Ordn
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist für alle Ordnerobjekte, die auf einem Exchange-Server vorhanden. Werte enthalten, die in dieser Eigenschaft wird zum Lesen und ändern die Steuerung des Zugriffs Zugriffssteuerungslisten (ACLs) für Ordner. Sie können die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode mit der **IID_IExchangeModifyTable** Interface Identifier verwenden, erhalten eine [IExchangeModifyTable: IUnknown](iexchangemodifytableiunknown.md) -Schnittstelle für die ACL-Tabelle in einem Ordner. Sie können diese Schnittstelle zum Lesen und Ändern von ACLs verwenden. 
   

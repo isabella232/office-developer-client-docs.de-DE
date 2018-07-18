@@ -1,5 +1,5 @@
 ---
-title: Verteilerlisten erweitern
+title: Erweitern von Verteilerlisten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791648"
 ---
-# <a name="expanding-distribution-lists"></a>Verteilerlisten erweitern
+# <a name="expanding-distribution-lists"></a>Erweitern von Verteilerlisten
 
   
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792442"
 ---
-# <a name="imapisync--synchronizeinbackground"></a>IMAPISync: SynchronizeInBackground
+# <a name="imapisync--synchronizeinbackground"></a>IMAPISync : SynchronizeInBackground
 
  
   
@@ -49,7 +49,7 @@ S_OK
 
 
 
-[IMAPISync: IUnknown](imapisynciunknown.md)
+[IMAPISync : IUnknown](imapisynciunknown.md)
   
 [MAPISIB](mapisib.md)
 

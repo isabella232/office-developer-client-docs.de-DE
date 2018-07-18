@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReminderSet-Eigenschaft
+title: PidLidReminderSet (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793758"
 ---
-# <a name="pidlidreminderset-canonical-property"></a>Kanonische PidLidReminderSet-Eigenschaft
+# <a name="pidlidreminderset-canonical-property"></a>PidLidReminderSet (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob eine Erinnerung für das Objekt festgelegt wird.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein wiederkehrendes Calendar-Objekt dieser Eigenschaft auf TRUE festgelegt ist, kann der Client diesen Wert für Ausnahmen außer Kraft setzen.
   

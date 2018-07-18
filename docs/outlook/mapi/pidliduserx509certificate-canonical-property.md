@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidUserX509Certificate-Eigenschaft
+title: PidLidUserX509Certificate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793893"
 ---
-# <a name="pidliduserx509certificate-canonical-property"></a>Kanonische PidLidUserX509Certificate-Eigenschaft
+# <a name="pidliduserx509certificate-canonical-property"></a>PidLidUserX509Certificate (kanonische Eigenschaft)
 
   
   

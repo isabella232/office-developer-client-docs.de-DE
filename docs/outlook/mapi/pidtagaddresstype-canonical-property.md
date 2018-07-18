@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAddressType-Eigenschaft
+title: PidTagAddressType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794069"
 ---
-# <a name="pidtagaddresstype-canonical-property"></a>Kanonische PidTagAddressType-Eigenschaft
+# <a name="pidtagaddresstype-canonical-property"></a>PidTagAddressType (kanonische Eigenschaft)
 
 **Betrifft**: Outlook 
   
@@ -32,7 +32,7 @@ Enthält die messaging-Benutzer e-Mail-Adresstyp wie SMTP.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für allgemeine Eigenschaften Basisadresse an alle messaging-Benutzer. Es gibt an, welche messaging MAPI verwendet, um eine bestimmte Nachricht zu verarbeiten.
   

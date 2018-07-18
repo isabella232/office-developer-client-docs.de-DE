@@ -35,7 +35,7 @@ Die **DateWithTimeFromParts** -Funktion enthält die folgenden Argumente.
 | *Minute*  <br/> |Integer-Ausdruck Minuten angeben.  <br/> |
 | *Sekunde*  <br/> |Integer-Ausdruck Sekunden angeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **DateWithTimeFromParts** gibt einen vollständig initialisierten Datums-/Zeitwert zurück. Wenn die Argumente nicht gültig sind, wird ein Fehler ausgelöst. Falls erforderlich, dass Argumente Null sind, wird Null zurückgegeben. 
   

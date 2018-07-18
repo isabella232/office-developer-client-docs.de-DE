@@ -32,7 +32,7 @@ Die **DateFromParts** -Funktion enthält die folgenden Argumente.
 | *Month*  <br/> |Ein Ausdruck, der ganze Zahl, die einen Monat, von 1 bis 12 angibt.  <br/> |
 | *Tag*  <br/> |Ein Ausdruck, der ganze Zahl, die einen Tag angibt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **DateFromParts** gibt einen Date-Wert zurück, mit der Datumsteil auf das angegebene Jahr, Monat und Tag und auf den Standardwert den Zeitbereich festgelegt. Wenn die Argumente nicht gültig sind, wird ein Fehler ausgelöst. Falls erforderlich, dass Argumente null sind, wird NULL zurückgegeben. 
   

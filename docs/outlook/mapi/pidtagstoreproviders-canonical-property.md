@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreProviders-Eigenschaft
+title: PidTagStoreProviders (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795235"
 ---
-# <a name="pidtagstoreproviders-canonical-property"></a>Kanonische PidTagStoreProviders-Eigenschaft
+# <a name="pidtagstoreproviders-canonical-property"></a>PidTagStoreProviders (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste mit den IDs der Nachricht-Anbieter im aktuellen Profil.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

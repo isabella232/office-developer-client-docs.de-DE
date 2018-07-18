@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > **SetPrimaryIdentity** wurde versucht, eine Message Service angeben, die das SERVICE_NO_PRIMARY_IDENTITY-Flag, das in der **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))-Eigenschaft festgelegt wurde.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Methode **IMsgServiceAdmin::SetPrimaryIdentity** richtet einen Nachrichtendienst zur als hat der Hersteller der primäre Identität für das Profil. Die primäre Identität ist in der Regel der Benutzer, die den Dienst angemeldet ist. Es wird durch drei Eigenschaften dargestellt: 
   
@@ -78,5 +78,5 @@ Jeder Nachricht-Dienstanbieter, die MAPI Informationen zu verfügt kann beim Anm
   
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAbSearchPath-Eigenschaft
+title: PidTagAbSearchPath (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794042"
 ---
-# <a name="pidtagabsearchpath-canonical-property"></a>Kanonische PidTagAbSearchPath-Eigenschaft
+# <a name="pidtagabsearchpath-canonical-property"></a>PidTagAbSearchPath (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste von Eintragsbezeichner für Address Book Container, die zum 
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

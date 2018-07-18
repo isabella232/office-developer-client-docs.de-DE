@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPostalCode-Eigenschaft
+title: PidTagPostalCode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794792"
 ---
-# <a name="pidtagpostalcode-canonical-property"></a>Kanonische PidTagPostalCode-Eigenschaft
+# <a name="pidtagpostalcode-canonical-property"></a>PidTagPostalCode (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Postleitzahl für die Adresse des Empfängers.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

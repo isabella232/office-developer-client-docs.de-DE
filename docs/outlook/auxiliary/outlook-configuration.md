@@ -18,10 +18,10 @@ ms.locfileid: "19791167"
 
 In diesem Abschnitt wird das Konfigurieren von Outlook zum Element Konflikte lösen, ermitteln Sie die Aktualisierungszeit für ein Offlineadressbuch und Registrieren einer Domäne für die automatische Konfiguration beschrieben.
 
-- [Zur Konfliktbehebung für benutzerdefinierte Elementtypen](about-conflict-resolution-for-custom-item-types.md)
+- [Informationen zur Konfliktbehebung für benutzerdefinierte Typen](about-conflict-resolution-for-custom-item-types.md)
     
-- [Informationen zum Zeitpunkt letzten Aktualisierung des eines Offlineadressbuchs](about-the-last-update-time-of-an-offline-address-book.md)
+- [Informationen zum letzten Aktualisierungszeitpunkt eines Offlineadressbuchs](about-the-last-update-time-of-an-offline-address-book.md)
     
-- [Zum Registrieren einer neuen Domäne für die automatische Konfiguration](about-registering-a-new-domain-for-automatic-configuration.md)
+- [Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration](about-registering-a-new-domain-for-automatic-configuration.md)
     
 

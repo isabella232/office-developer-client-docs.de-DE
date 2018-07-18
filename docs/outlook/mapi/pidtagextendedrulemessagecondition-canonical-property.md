@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExtendedRuleMessageCondition-Eigenschaft
+title: PidTagExtendedRuleMessageCondition (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794362"
 ---
-# <a name="pidtagextendedrulemessagecondition-canonical-property"></a>Kanonische PidTagExtendedRuleMessageCondition-Eigenschaft
+# <a name="pidtagextendedrulemessagecondition-canonical-property"></a>PidTagExtendedRuleMessageCondition (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Informationen über keine benannten Eigenschaften auf, die in erweitert
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf eine Nachricht FAI festgelegt werden. Es dient als **PR_RULE_CONDITION** ([PidTagRuleCondition](pidtagrulecondition-canonical-property.md)), aber enthält zusätzliche Informationen zu den benannten Eigenschaften verwendet. Alle String-Werten, die in einem beliebigen Teil des dieser Bedingung-Eigenschaftenwert enthalten sind, muss im Unicode-Format.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidUseTnef-Eigenschaft
+title: PidLidUseTnef (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793906"
 ---
-# <a name="pidlidusetnef-canonical-property"></a>Kanonische PidLidUseTnef-Eigenschaft
+# <a name="pidlidusetnef-canonical-property"></a>PidLidUseTnef (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob Transport Neutral Encapsulation Format (TNEF) für eine Nachricht ei
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt an, ob TNEF für eine Nachricht eingeschlossen werden soll, wenn dieser Nachricht von TNEF in MIME- oder SMTP-Format konvertiert wird. Diese Eigenschaft ist nicht vorhanden, und gegebenenfalls TNEF darf nicht enthalten sein für die Nachricht.
   

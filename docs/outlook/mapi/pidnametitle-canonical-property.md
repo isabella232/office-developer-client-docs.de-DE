@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameTitle-Eigenschaft
+title: PidNameTitle (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793992"
 ---
-# <a name="pidnametitle-canonical-property"></a>Kanonische PidNameTitle-Eigenschaft
+# <a name="pidnametitle-canonical-property"></a>PidNameTitle (kanonische Eigenschaft)
 
   
   

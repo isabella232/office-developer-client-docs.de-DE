@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792616"
 ---
-# <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2: IMsgServiceAdmin
+# <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2 : IMsgServiceAdmin
 
   
   
@@ -42,7 +42,7 @@ ms.locfileid: "19792616"
 |:-----|:-----|
 |[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |Fügt einen Nachrichtendienst gibt, die Dienst-UID neu hinzugefügt und der aktuellen Profil hinzu.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin2** -Schnittstelle von dieselben Objekte, die die [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle verfügbar machen verfügbar gemacht wird, und wurde mithilfe des Outlook-Implementierung des MAPI-Subsystems seit Microsoft Outlook 2003 zur Verfügung. 
   

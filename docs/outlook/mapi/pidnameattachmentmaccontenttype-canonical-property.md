@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameAttachmentMacContentType-Eigenschaft
+title: PidNameAttachmentMacContentType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793925"
 ---
-# <a name="pidnameattachmentmaccontenttype-canonical-property"></a>Kanonische PidNameAttachmentMacContentType-Eigenschaft
+# <a name="pidnameattachmentmaccontenttype-canonical-property"></a>PidNameAttachmentMacContentType (kanonische Eigenschaft)
 
   
   

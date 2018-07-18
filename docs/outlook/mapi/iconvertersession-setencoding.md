@@ -49,7 +49,7 @@ E_INVALIDARG
   
 > Der Typ der Codierung übergeben war ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Rufen Sie **SetEncoding** vor der Nutzung [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md) Konvertierung ausführen. 
   
@@ -66,7 +66,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
    
 ## <a name="see-also"></a>Siehe auch
 
-- [IConverterSession: IUnknown](iconvertersessioniunknown.md)
+- [IConverterSession : IUnknown](iconvertersessioniunknown.md)
 - [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
 - [IConverterSession::MIMEToMAPI](iconvertersession-mimetomapi.md)
 - [IConverterSession::SetAdrBook](iconvertersession-setadrbook.md)

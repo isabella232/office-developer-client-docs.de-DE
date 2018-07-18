@@ -31,7 +31,7 @@ Stellt einen Rückruf an dem Client für Änderungen an einem Konto an.
 |:-----|:-----|
 |[Benachrichtigen](iolkaccountnotify-notify.md) <br/> |Benachrichtigt den Client von Änderungen an das angegebene Konto.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Schnittstelle wird an [IOlkAccountManager::Advise](iolkaccountmanager-advise.md) übergeben, beim Einrichten von Benachrichtigungen. 
   

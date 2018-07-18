@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameXSharingProviderName-Eigenschaft
+title: PidNameXSharingProviderName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794028"
 ---
-# <a name="pidnamexsharingprovidername-canonical-property"></a>Kanonische PidNameXSharingProviderName-Eigenschaft
+# <a name="pidnamexsharingprovidername-canonical-property"></a>PidNameXSharingProviderName (kanonische Eigenschaft)
 
   
   

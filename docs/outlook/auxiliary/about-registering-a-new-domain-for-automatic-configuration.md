@@ -1,5 +1,5 @@
 ---
-title: Zum Registrieren einer neuen Domäne für die automatische Konfiguration
+title: Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790924"
 ---
-# <a name="about-registering-a-new-domain-for-automatic-configuration"></a>Zum Registrieren einer neuen Domäne für die automatische Konfiguration
+# <a name="about-registering-a-new-domain-for-automatic-configuration"></a>Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration
 
 Outlook bietet eine Möglichkeit zum Angeben einer neuen Nachricht Service-Domäne für die automatische Konfiguration und ermöglichen die Nachricht-Dienstanbieters für das Dienstkonto konfiguriert.
   

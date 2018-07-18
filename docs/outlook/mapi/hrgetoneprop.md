@@ -61,7 +61,7 @@ MAPI_E_NOT_FOUND
   
 > Die angeforderte-Eigenschaft ist von der angegebenen Schnittstelle nicht verfügbar.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Gegensatz zu der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode gibt die **HrGetOneProp** -Funktion nie eine Warnung an. Da es nur eine Eigenschaft abruft, es einfach entweder Erfolg oder Fehler. Zum Abrufen von mehreren Eigenschaften, ist **GetProps** schneller. 
   

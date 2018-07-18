@@ -50,7 +50,7 @@ S_OK
   
 > Das Formular wurde erfolgreich gespeichert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IPersistMessage::Save** -Methode, um ein überarbeiteten Formular wieder auf die Nachricht zu speichern, von dem er geladen oder erstellt wurde. 
   
@@ -72,8 +72,8 @@ Weitere Informationen zum Speichern von Speicherobjekte finden Sie in der Dokume
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

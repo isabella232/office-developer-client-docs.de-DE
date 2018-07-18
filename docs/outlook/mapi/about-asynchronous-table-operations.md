@@ -24,8 +24,8 @@ Die **IMAPITable** -Schnittstelle umfasst drei Methoden, die asynchron arbeiten 
 |**Asynchrone operation**|**Asynchrone Steuerelementmethode**|
 |:-----|:-----|
 |[IMAPITable::SetColumns](imapitable-setcolumns.md) <br/> |[IMAPITable::GetStatus](imapitable-getstatus.md) <br/> |
-|[Methode IMAPITable:: Restrict](imapitable-restrict.md) <br/> |[IMAPITable::Abort](imapitable-abort.md) <br/> |
-|[SortTable](imapitable-sorttable.md) <br/> |[IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) <br/> |
+|[IMAPITable::Restrict](imapitable-restrict.md) <br/> |[IMAPITable::Abort](imapitable-abort.md) <br/> |
+|[IMAPITable::SortTable](imapitable-sorttable.md) <br/> |[IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md) <br/> |
    
 **Zum Abrufen von Statusinformationen über den Typ und die aktuelle Vorgang einer Tabelle**
   

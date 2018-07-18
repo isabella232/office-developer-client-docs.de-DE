@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796763"
 ---
-# <a name="d-cell-geometry-section"></a>D Cell (Geometry Section)
+# <a name="d-cell-geometry-section"></a>Zelle "D" (Abschnitt "Geometry")
 
 Stellt die Informationen in den verschiedenen Zeilen dar. Diese Tabelle beschreibt die Zelle D anhand der Zeile, in der sie sich befindet.
   
@@ -27,25 +27,25 @@ Stellt die Informationen in den verschiedenen Zeilen dar. Diese Tabelle beschrei
 |[SplineStart](splinestart-row-geometry-section.md) <br/> | Der Grad eines Splines (eine Ganzzahl von 1 bis 25).  <br/> |
 |[Ellipse](ellipse-row-geometry-section.md) <br/> | Eine *y* -Koordinate eines Punkts auf der Ellipse; gepaart mit einer *X* -Koordinate, dargestellt durch die Zelle [C](c-cell-geometry-section.md) .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle D nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie eine Referenz auf die Zelle D nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Geometrie *i* . D *j* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
 || Geometrie *i* . D1 (Zeile Ellipse) wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle D aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle D aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**VisRowVertex** +  *j* wobei *j* = 0, 1, 2...  <br/> |
-||**visRowVertex** (Ellipsenzeile)  <br/> |
-| Zellenindex  <br/> |**visAspectRatio** (Zeile EllipticalArcTo)  <br/> |
-||**visNURBSWeightPrev** (Zeile NURBSTo)  <br/> |
-||**visSplineDegree** (Zeile SplineStart)  <br/> |
-||**visEllipseMinorY** (Ellipsenzeile)  <br/> |
+||visRowVertex (Zeile Ellipse)  <br/> |
+| Zellenindex  <br/> |visAspectRatio (Zeile EllipticalArcTo)  <br/> |
+||visNURBSWeightPrev (Zeile NURBSTo)  <br/> |
+||visSplineDegree (Zeile SplineStart)  <br/> |
+||visEllipseMinorY (Zeile Ellipse)  <br/> |
    
 

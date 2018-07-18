@@ -31,7 +31,7 @@ typedef struct RenTimeZone {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _lBias_
   
@@ -53,7 +53,7 @@ _stDaylightDate_
   
 > Die Zeit, um Sommerzeit zu wechseln.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Struktur ist ähnlich **TIME_ZONE_INFORMATION**. Dies ist die Struktur, die zum Speichern von Informationen zur Zeitzone für Besprechungsserien von Legacyclients verwendet.
   

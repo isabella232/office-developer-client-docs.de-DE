@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReceiptTime-Eigenschaft
+title: PidTagReceiptTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794875"
 ---
-# <a name="pidtagreceipttime-canonical-property"></a>Kanonische PidTagReceiptTime-Eigenschaft
+# <a name="pidtagreceipttime-canonical-property"></a>PidTagReceiptTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das Datum und die Zeit, die ein Bericht generiert wird.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss vom Anbieter Nachricht empfangen der ursprünglichen Nachricht und zum Erstellen des Berichts festgelegt werden. 
   

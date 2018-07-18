@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidToDoSubOrdinal-Eigenschaft
+title: PidLidToDoSubOrdinal (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793874"
 ---
-# <a name="pidlidtodosubordinal-canonical-property"></a>Kanonische PidLidToDoSubOrdinal-Eigenschaft
+# <a name="pidlidtodosubordinal-canonical-property"></a>PidLidToDoSubOrdinal (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Fungiert als eine Tie wörtertrennung, wenn die Eigenschaft **DispidToDoOrdinalD
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn verwendet, muss diese Eigenschaft lexikografisch sortiert werden. Die Komponente Zeichen der Zeichenfolge darf nur die Ziffern 0 bis 9 bestehen. Diese Eigenschaft sollte anfänglich auf "5555555" festgelegt werden. Die Länge dieser Eigenschaft muss (mit Ausnahme der abschließenden NULL-Zeichens) 254 Zeichen nicht überschreiten.
   
@@ -61,7 +61,7 @@ Mapidefs.h
 
 
 
-[Kanonische PidLidToDoOrdinalDate-Eigenschaft](pidlidtodoordinaldate-canonical-property.md)
+[PidLidToDoOrdinalDate (kanonische Eigenschaft)](pidlidtodoordinaldate-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

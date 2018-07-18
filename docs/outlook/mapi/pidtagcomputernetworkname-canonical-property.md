@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagComputerNetworkName-Eigenschaft
+title: PidTagComputerNetworkName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794170"
 ---
-# <a name="pidtagcomputernetworkname-canonical-property"></a>Kanonische PidTagComputerNetworkName-Eigenschaft
+# <a name="pidtagcomputernetworkname-canonical-property"></a>PidTagComputerNetworkName (kanonische Eigenschaft)
 
   
   

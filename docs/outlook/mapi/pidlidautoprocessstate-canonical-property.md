@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAutoProcessState-Eigenschaft
+title: PidLidAutoProcessState (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793445"
 ---
-# <a name="pidlidautoprocessstate-canonical-property"></a>Kanonische PidLidAutoProcessState-Eigenschaft
+# <a name="pidlidautoprocessstate-canonical-property"></a>PidLidAutoProcessState (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Optionen an, mit denen auf die automatische Verarbeitung von e-Mail-Nac
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Eigenschaft nicht vorhanden ist, möglicherweise in diesem Fall ist der Standardwert der "0 x 00000000" verwendet. Wenn Sie festlegen möchten, muss diese Eigenschaft auf einen der Werte in der folgenden Tabelle festgelegt werden.
   

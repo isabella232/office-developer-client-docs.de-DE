@@ -25,7 +25,7 @@ Gibt den aktuellen Wert in der Zeitzone, die von der Anwendung definiert
 
  **Heute** () 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **Now** -Funktion ähnelt jedoch gibt die genaue Uhrzeit zurück, während die Zeit **heute** zurückgibt Wert 12:00:00 Uhr nach allen Datumsangaben. 
   

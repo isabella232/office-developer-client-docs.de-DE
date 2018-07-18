@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameApplicationName-Eigenschaft
+title: PidNameApplicationName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793922"
 ---
-# <a name="pidnameapplicationname-canonical-property"></a>Kanonische PidNameApplicationName-Eigenschaft
+# <a name="pidnameapplicationname-canonical-property"></a>PidNameApplicationName (kanonische Eigenschaft)
 
   
   

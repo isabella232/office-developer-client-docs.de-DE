@@ -95,11 +95,11 @@ _iroIdle_
 
 Die **FtgRegisterIdleRoutine** -Funktion gibt eine Function-Tag, identifiziert der im Leerlauf Routine, die die MAPI-System hinzugefügt wurde. Wenn **FtgRegisterIdleRoutine** nicht im Leerlauf Routine für die Clientanwendung oder Dienstanbieter registrieren können, beispielsweise aufgrund Speicherprobleme, wird NULL zurückgegeben. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgenden Funktionen Umgang mit der MAPI-Modul im Leerlauf und im Leerlauf Routinen basierend auf den [FNIDLE](fnidle.md) Funktionsprototyp. 
   
-|**Im Leerlauf routinemäßige-Funktion**|**Verwendung**|
+|**Im Leerlauf routinemäßige-Funktion**|**Nutzung**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten im Leerlauf Routine.  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte im Leerlauf Routine aus dem MAPI-System.  <br/> |

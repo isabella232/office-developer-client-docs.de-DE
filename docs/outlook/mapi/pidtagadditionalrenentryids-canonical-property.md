@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAdditionalRenEntryIds-Eigenschaft
+title: PidTagAdditionalRenEntryIds (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794045"
 ---
-# <a name="pidtagadditionalrenentryids-canonical-property"></a>Kanonische PidTagAdditionalRenEntryIds-Eigenschaft
+# <a name="pidtagadditionalrenentryids-canonical-property"></a>PidTagAdditionalRenEntryIds (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-IDs für bestimmte Spezialordner.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die ersten fünf Einträge in diesem mehrwertigen Eigenschaft gelten folgenden Spezialordner, sofern sie im Speicher vorhanden sind:
   
@@ -89,5 +89,5 @@ Mapidefs.h
 [Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen](mapping-mapi-names-to-canonical-property-names.md)
 
 
-[Über den API-Speicher](http://msdn.microsoft.com/en-us/library/aa192884.aspx)
+[Informationen zur Store-API](http://msdn.microsoft.com/en-us/library/aa192884.aspx)
 

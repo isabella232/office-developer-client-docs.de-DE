@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameXSharingFlavor-Eigenschaft
+title: PidNameXSharingFlavor (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794009"
 ---
-# <a name="pidnamexsharingflavor-canonical-property"></a>Kanonische PidNameXSharingFlavor-Eigenschaft
+# <a name="pidnamexsharingflavor-canonical-property"></a>PidNameXSharingFlavor (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt den Wert der Eigenschaft **DispidSharingFlavor** ([PidLidSharingFlavor](p
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **DispidSharingFlavor** -Eigenschaft muss eine der folgenden Werte sein: 
   

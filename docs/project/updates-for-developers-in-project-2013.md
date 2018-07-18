@@ -299,9 +299,9 @@ Weitere Informationen zum Entwickeln von apps, und verwenden die Programmierbark
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Architektur von Project Server 2013](project-server-2013-architecture.md)  
-- [Projekt Programmieraufgaben](project-programming-tasks.md) 
-- [Client-seitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md) 
+- [Project Server 2013-Architektur](project-server-2013-architecture.md)  
+- [Project-Programmieraufgaben](project-programming-tasks.md) 
+- [Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md) 
 - [ProjectData – OData-Dienstreferenz für Project](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx)  
 - [Aufgabenbereich-Add-Ins für Project](task-pane-add-ins-for-project.md)   
 - [OData: URI-Konventionen](http://www.odata.org/documentation/uri-conventions#FilterSystemQueryOption)    

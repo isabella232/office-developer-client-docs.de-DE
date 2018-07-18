@@ -31,7 +31,7 @@ Gibt eine ganze Zahl, die den Monat des angegebenen Datums darstellt.
 |:-----|:-----|
 | *Date*  <br/> |Ein Ausdruck, der in einen Datums-/Uhrzeitwert aufgelöst werden kann.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **Monat** gibt den gleichen Wert wie **DatePart** (Monat, Datum) zurück. 
   

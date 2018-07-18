@@ -44,7 +44,7 @@ __Namen_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie das Makro **SizedSSortOrderSet** , erstellen Sie eine Sortierreihenfolge mit expliziten Grenzen festgelegt. 
   

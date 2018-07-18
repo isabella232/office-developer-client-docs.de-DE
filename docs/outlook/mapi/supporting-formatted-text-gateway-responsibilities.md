@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795663"
 ---
-# <a name="supporting-formatted-text-gateway-responsibilities"></a>Unterstützung von formatierten Text: Gateway Zuständigkeiten
+# <a name="supporting-formatted-text-gateway-responsibilities"></a>Unterstützung von formatiertem Text: Aufgaben des Gateways
 
   
   

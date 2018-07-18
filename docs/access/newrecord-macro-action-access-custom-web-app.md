@@ -21,7 +21,7 @@ Erstellt einen neuen, leeren Datensatz in der aktuellen Ansicht an.
 > [!IMPORTANT]
 > [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **NewRecord** -Aktion können Sie einen leeren Datensatz am Ende der Ansicht hinzufügen, sodass Sie neue Daten eingeben können. 
   

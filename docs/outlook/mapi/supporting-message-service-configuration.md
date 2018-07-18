@@ -53,5 +53,5 @@ Zur Unterstützung der Nachricht Dienstkonfiguration verwenden Sie die folgende 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Nachricht Service-Implementierung](message-service-implementation.md)
+- [Nachrichtendienstimplementierung](message-service-implementation.md)
 

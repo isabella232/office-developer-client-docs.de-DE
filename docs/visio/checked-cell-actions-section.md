@@ -25,18 +25,22 @@ Gibt an, ob ein Element im Kontext- oder Aktionstagmenü aktiviert ist.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-|TRUE  <br/> |Häkchen wird angezeigt.  <br/> |
-|FALSE  <br/> |Häkchen wird nicht angezeigt (Standardeinstellung).  <br/> |
+|TRUE  <br/> |
+          Häkchen wird angezeigt.
+  <br/> |
+|FALSE  <br/> |
+          Häkchen wird nicht angezeigt (Standardeinstellung).
+  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle Checked nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Checked aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . Überprüft, wobei Aktionen. *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Checked aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Checked aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

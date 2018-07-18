@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRtfCompressed-Eigenschaft
+title: PidTagRtfCompressed (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795005"
 ---
-# <a name="pidtagrtfcompressed-canonical-property"></a>Kanonische PidTagRtfCompressed-Eigenschaft
+# <a name="pidtagrtfcompressed-canonical-property"></a>PidTagRtfCompressed (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Rich Text Format (RTF) Version des Texts Nachricht in der Regel in komprimie
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält den gleichen Nachrichtentext als **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft, aber in RTF. 
   

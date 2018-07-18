@@ -20,7 +20,7 @@ Die **ClosePopup** -Aktion können Sie um die Ansicht des aktiven Dokuments Popu
 > [!IMPORTANT]
 > [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der aktuelle Datensatz in der Ansicht Popup im Bearbeitungsmodus befindet, werden die Änderungen an den Datensatz automatisch gespeichert.
   

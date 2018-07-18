@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791991"
 ---
-# <a name="iablogon--iunknown"></a>IABLogon: IUnknown
+# <a name="iablogon--iunknown"></a>IABLogon : IUnknown
 
   
   
@@ -51,7 +51,7 @@ Greift auf Ressourcen in einer Adressbuchanbieter.
 |[GetOneOffTable](iablogon-getoneofftable.md) <br/> |Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern, die Empfängerliste von ausgehenden Nachrichten hinzugefügt werden soll.  <br/> |
 |[PrepareRecips](iablogon-preparerecips.md) <br/> |Bereitet eine Empfängerliste zur späteren Verwendung von messaging-System.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Allgemeine Informationen zu den Methoden der **IABLogon** -Schnittstelle finden Sie unter [Implementieren Service Provider Anmeldung](implementing-service-provider-logon.md).
   

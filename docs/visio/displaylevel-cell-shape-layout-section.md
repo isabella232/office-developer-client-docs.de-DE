@@ -30,13 +30,13 @@ Der Bereich der Anzeigeebenen rangiert von -32.767 bis +32.767. Shapes mit der g
   
 Sie können mithilfe der Befehle **In den Vordergrund**, **Eine Ebene nach hinten**, **in den Vordergrund**und **in den Hintergrund**der Z-Ordnung der Formen einen Streifen ändern. Diese Befehle eine Form aus der angegebenen Band verschieben, zeigt Microsoft Visio den reservierten Wert-32768 in Zelle DisplayLevel des Shapes, sofern die Zelle geschützt ist. In diesem Fall die Form nicht in einem anderen Band verschoben werden, und Visio zeigt die Warnung "Schutz und/oder Layer Formeigenschaften verhindern Ausführung dieses Befehls abgeschlossen". 
   
-Zum Abrufen eines Verweises auf die Zelle DisplayLevel nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes. 
+Wenn Sie eine Referenz auf die Zelle DisplayLevel nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |DisplayLevel  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DisplayLevel aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle DisplayLevel aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

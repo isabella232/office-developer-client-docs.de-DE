@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRtfSyncBodyTag-Eigenschaft
+title: PidTagRtfSyncBodyTag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795024"
 ---
-# <a name="pidtagrtfsyncbodytag-canonical-property"></a>Kanonische PidTagRtfSyncBodyTag-Eigenschaft
+# <a name="pidtagrtfsyncbodytag-canonical-property"></a>PidTagRtfSyncBodyTag (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält wesentliche Zeichen, die am Anfang des den Nachrichtentext angezeigt we
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die [RTFSync](rtfsync.md) -Funktion verwendet die Tags für Text an den Anfang des Nachrichtentexts angezeigt. Wenn der Text geändert wird, wird das Tag verwendet, um den Anfang der vorherigen Text zu finden. 
   

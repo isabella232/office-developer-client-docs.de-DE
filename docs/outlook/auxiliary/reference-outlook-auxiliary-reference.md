@@ -24,6 +24,6 @@ Dieser Abschnitt enthält die Referenz für die folgenden APIs in der Outlook 20
     
 - [Frei/Gebucht-API-Referenz](free-busy-api-reference.md)
     
-- [Outlook exportiert APIs](outlook-exported-apis.md)
+- [Aus Outlook exportierte APIs](outlook-exported-apis.md)
     
 

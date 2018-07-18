@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796876"
 ---
-# <a name="doccreation-function"></a>DOCCREATION-Funktion
+# <a name="doccreation-function"></a>DOCCREATION Function
 
 Gibt das Datum und die Uhrzeit der Erstellung ein Dokuments, als seriellen Wert.
   

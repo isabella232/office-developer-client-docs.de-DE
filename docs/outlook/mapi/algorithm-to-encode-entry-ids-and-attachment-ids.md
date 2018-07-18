@@ -1,5 +1,5 @@
 ---
-title: Algorithmus für die Eintrags-IDs und Anlage IDs codieren
+title: Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791300"
 ---
-# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>Algorithmus für die Eintrags-IDs und Anlage IDs codieren
+# <a name="algorithm-to-encode-entry-ids-and-attachment-ids"></a>Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
 
   
   
@@ -56,7 +56,7 @@ LPWSTR EncodeID(ULONG cbEID, LPENTRYID rgbID)
 
 
 
-[Informationen über die Benachrichtigung-basierten Speicher Indizierung](about-notification-based-store-indexing.md)
+[Informationen zum benachrichtigungsbasierten Indizieren von Stores](about-notification-based-store-indexing.md)
   
-[Informationen zu MAPI-URLs für die Benachrichtigung-basierte Indizierung](about-mapi-urls-for-notification-based-indexing.md)
+[Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren](about-mapi-urls-for-notification-based-indexing.md)
 

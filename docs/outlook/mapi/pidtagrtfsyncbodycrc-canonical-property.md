@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRtfSyncBodyCrc-Eigenschaft
+title: PidTagRtfSyncBodyCrc (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795021"
 ---
-# <a name="pidtagrtfsyncbodycrc-canonical-property"></a>Kanonische PidTagRtfSyncBodyCrc-Eigenschaft
+# <a name="pidtagrtfsyncbodycrc-canonical-property"></a>PidTagRtfSyncBodyCrc (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das Kontrollkästchen zyklischer Redundanz (CRC) für den Nachrichtente
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktion [RTFSync](rtfsync.md) berechnet das CRC mithilfe von nur die Zeichen, die sie für die Nachricht erzielt werden hält. Beispielsweise sind einige Leerzeichen und Sonderzeichen ignoriert CRC ausgelassen. 
   

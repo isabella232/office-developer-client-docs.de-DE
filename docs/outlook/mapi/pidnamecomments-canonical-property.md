@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameComments-Eigenschaft
+title: PidNameComments (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793940"
 ---
-# <a name="pidnamecomments-canonical-property"></a>Kanonische PidNameComments-Eigenschaft
+# <a name="pidnamecomments-canonical-property"></a>PidNameComments (kanonische Eigenschaft)
 
   
   

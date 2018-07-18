@@ -22,15 +22,15 @@ Enthält den Kommentartext im Zeichenformat für ein Shape.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können einen Kommentar auch einfügen, indem Sie auf **Neuer Kommentar** klicken Sie auf der Registerkarte **Überprüfen** . 
+Sie können einen Kommentar auch einfügen, indem Sie auf der Registerkarte **Überprüfen** auf **Neuer Kommentar** klicken. 
   
-Zum Abrufen eines Verweises auf die Zelle Comment nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Comment aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
-|Zellenname:  <br/> |Comment  <br/> |
+|Zellenname:  <br/> |Kommentar  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Comment aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Comment aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

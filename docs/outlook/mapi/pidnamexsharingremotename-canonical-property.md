@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameXSharingRemoteName-Eigenschaft
+title: PidNameXSharingRemoteName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794023"
 ---
-# <a name="pidnamexsharingremotename-canonical-property"></a>Kanonische PidNameXSharingRemoteName-Eigenschaft
+# <a name="pidnamexsharingremotename-canonical-property"></a>PidNameXSharingRemoteName (kanonische Eigenschaft)
 
   
   

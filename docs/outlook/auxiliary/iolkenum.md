@@ -36,7 +36,7 @@ Aufzählen von Konten als [IUnknown](http://msdn.microsoft.com/library/com.iunkn
 |[GetNext](iolkenum-getnext.md) <br/> |Ruft das nächste Konto in den Enumerator ab.  <br/> |
 |[Überspringen](iolkenum-skip.md) <br/> |Überspringt eine angegebene Anzahl von Konten in den Enumerator.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Schnittstelle wird von **IOlkAccountManager::EnumerateAccounts** zurückgegeben, wenn einen Enumerator von Konten zu erhalten. 
   

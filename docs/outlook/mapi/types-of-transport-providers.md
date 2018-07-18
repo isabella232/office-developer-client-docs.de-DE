@@ -1,5 +1,5 @@
 ---
-title: Typen der Transportanbieter
+title: Arten von Transportanbietern
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795767"
 ---
-# <a name="types-of-transport-providers"></a>Typen der Transportanbieter
+# <a name="types-of-transport-providers"></a>Arten von Transportanbietern
 
   
   

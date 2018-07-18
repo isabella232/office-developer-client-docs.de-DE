@@ -1,5 +1,5 @@
 ---
-title: Funktionen XML-Elemente
+title: XML-Elemente für „capabilities“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795951"
 ---
-# <a name="capabilities-xml-elements"></a>Funktionen XML-Elemente
+# <a name="capabilities-xml-elements"></a>XML-Elemente für „capabilities“
 
 In den Tabellen in diesem Thema wird beschrieben, untergeordnete Elemente des **Funktionen** XML und durch die Bereiche, die sie unterstützen gruppiert. Der Standardwert der einzelnen **Capabilities** -Element ist **false**. Wenn das Element nicht in die **Funktionen** von der [ISocialProvider::GetCapabilities](isocialprovider-getcapabilities.md) -Methode zurückgegebenen XML-Daten angegeben wird, ist der Wert des Elements gleich **false**.
   

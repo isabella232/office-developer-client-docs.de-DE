@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSendMeetingAsIcal-Eigenschaft
+title: PidLidSendMeetingAsIcal (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793768"
 ---
-# <a name="pidlidsendmeetingasical-canonical-property"></a>Kanonische PidLidSendMeetingAsIcal-Eigenschaft
+# <a name="pidlidsendmeetingasical-canonical-property"></a>PidLidSendMeetingAsIcal (kanonische Eigenschaft)
 
   
   

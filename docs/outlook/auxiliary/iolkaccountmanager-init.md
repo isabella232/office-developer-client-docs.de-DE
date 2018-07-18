@@ -54,7 +54,7 @@ _dwFlags_
 |E_OLK_ALREADY_INITIALIZED  <br/> |**"Init"** wurde bereits aufgerufen.  <br/> |
 |E_OLK_REGISTRY  <br/> |Konto-Manager konnte die erforderlichen Registrierungseinträge nicht zugegriffen werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Client muss **IOlkAccountManager::Init** zum Initialisieren des Kontos aufrufen Manager vor der Nutzung des Konto-Managers auf Konten zugreifen oder Benachrichtigungen einrichten. Da MAPI-Dienste mit Konten beim Starten von Outlook automatisch synchronisiert werden, verwenden Sie **ACCT_INIT_NOSYNCH_MAPI_ACCTS** , es sei denn, es eine bestimmte Ursache ist zu synchronisieren. 
   

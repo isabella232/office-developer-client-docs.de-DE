@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidRemoteTransferSize-Eigenschaft
+title: PidLidRemoteTransferSize (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793778"
 ---
-# <a name="pidlidremotetransfersize-canonical-property"></a>Kanonische PidLidRemoteTransferSize-Eigenschaft
+# <a name="pidlidremotetransfersize-canonical-property"></a>PidLidRemoteTransferSize (kanonische Eigenschaft)
 
   
   

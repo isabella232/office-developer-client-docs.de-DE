@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidBusinessCardCardPicture-Eigenschaft
+title: PidLidBusinessCardCardPicture (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793458"
 ---
-# <a name="pidlidbusinesscardcardpicture-canonical-property"></a>Kanonische PidLidBusinessCardCardPicture-Eigenschaft
+# <a name="pidlidbusinesscardcardpicture-canonical-property"></a>PidLidBusinessCardCardPicture (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält das Bild, das auf einer Visitenkarte verwenden.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss entweder ein portable Network Graphics (PNG) oder JPEG-Stream. Diese Eigenschaft sollte in Verbindung mit der **DispidBCDisplayDefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md))-Eigenschaft wie folgt verwendet werden: **DispidBCCardPicture** sollte nicht vorhanden sein, auf einen Kontakt If ** DispidBCDisplayDefinition** ist nicht vorhanden. Diese Eigenschaft sollte auch nicht vorhanden sein, wenn die Daten in **DispidBCCardPicture** Bild einer Karte nicht erforderlich sind. 
   

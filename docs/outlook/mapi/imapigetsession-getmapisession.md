@@ -43,8 +43,8 @@ HRESULT GetMAPISession(
 
 
 
-[IMAPIGetSession: IUnknown](imapigetsessioniunknown.md)
+[IMAPIGetSession : IUnknown](imapigetsessioniunknown.md)
 
 
-[Support-(Übersicht)](support-object-overview.md)
+[Übersicht über Unterstützungsobjekte](support-object-overview.md)
 

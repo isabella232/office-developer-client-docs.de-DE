@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagParentDisplay-Eigenschaft
+title: PidTagParentDisplay (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794784"
 ---
-# <a name="pidtagparentdisplay-canonical-property"></a>Kanonische PidTagParentDisplay-Eigenschaft
+# <a name="pidtagparentdisplay-canonical-property"></a>PidTagParentDisplay (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen des Ordners, in dem eine Nachricht während eines Such
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften ist nicht für jedes Objekt. Sie können nur in der Inhaltstabelle eines Ordners Suchergebnisse angezeigt werden.
   

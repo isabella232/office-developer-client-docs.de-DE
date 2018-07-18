@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidWhere-Eigenschaft
+title: PidLidWhere (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793917"
 ---
-# <a name="pidlidwhere-canonical-property"></a>Kanonische PidLidWhere-Eigenschaft
+# <a name="pidlidwhere-canonical-property"></a>PidLidWhere (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Speicherort eines Ereignisses.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft sollte den Wert der Eigenschaft **DispidLocation** ([PidLidLocation](pidlidlocation-canonical-property.md)) aus der zugeordneten Besprechung identisch sein.
   

@@ -59,7 +59,7 @@ HrSzFromEntryID(
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktionen [HrEntryIDFromSz](hrentryidfromsz.md) und **HrSzFromEntryID** bieten eine Konvertierung zwischen der Zeichenfolge und der binären Formate der Eintragsbezeichner. Mit MAPI sollten Sie die Strukturen mit Binärdaten verwenden. 
   

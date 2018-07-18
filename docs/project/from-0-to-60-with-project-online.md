@@ -1,5 +1,5 @@
 ---
-title: Im Bereich von 0 bis 60 mit Project Online
+title: Von 0 auf 100 mit Project Online
 manager: soliver
 ms.date: 11/08/2016
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796171"
 ---
-# <a name="from-0-to-60-with-project-online"></a>Im Bereich von 0 bis 60 mit Project Online
+# <a name="from-0-to-60-with-project-online"></a>Von 0 auf 100 mit Project Online
 
 Anwendungsentwickler kann eine Project Online Site (SharePoint gehostet) mithilfe von eigenständigen Applications und/oder Projekt-add-ins anpassen. Eine Vielzahl von Clientanwendungen ist möglich, die im Bereich von Adressierung Beteiligten in einem Projekt auf PMO Support-Funktionen, beispielsweise eine der folgenden Anforderungen:
   
@@ -51,7 +51,7 @@ Project Online enthält die API-Unterstützung, um die folgenden Szenarien zu er
   - Anwendung authentifiziert und Project Online-APIs direkt anrufen
     
 
-|Typ der Anwendung|API-Implementierung|Zielumgebung|Beispiele für die Anwendung|
+|Art der Anwendung|API-Implementierung|Zielumgebung|Beispiele für die Anwendung|
 |:-----|:-----|:-----|:-----|
 |Projekt gehostet  <br/> |JSOM (Java Script-Objektmodell)  <br/> REST  <br/> |Browser  <br/> |Zeitkarteneintrag  <br/> Zeitkarte Genehmigung  <br/> Projektstatus  <br/> Problembericht  <br/> |
 |Project-Anbieter gehostet  <br/> |CSOM-Clientbibliothek  <br/> |Azure-Website-App  <br/> Nicht-Windows-Umgebung (LAMP usw.)  <br/> |Externe Arbeitszeittabelle validator  <br/> Projekt zu verwendenden Importprogramms  <br/> |
@@ -163,7 +163,7 @@ Jede beispielanwendung verfügt über einen Artikel erläutern die wichtigsten a
     
 - [Entwickeln eines Project Online add-Ins mithilfe der JavaScript-Objektmodell (JSOM)](developing-a-project-online-add-in-using-the-javascript-object-model-jsom.md)
     
-- [Zugreifen auf Project Online benutzerdefinierte Enterprise-Felder](accessing-project-online-enterprise-custom-fields.md)
+- [Zugriff auf benutzerdefinierte Project Online-Unternehmensfelder](accessing-project-online-enterprise-custom-fields.md)
     
 ## <a name="see-also"></a>Siehe auch
 

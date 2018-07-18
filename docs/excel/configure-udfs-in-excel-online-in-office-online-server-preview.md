@@ -56,7 +56,7 @@ Nachdem Sie UDFs aktivieren, müssen Sie eine Definition für die Binärdatei zu
     
 - **AssemblyLocation**
     
-- **Aktivieren** (standardmäßig auf "false" festgelegt) 
+- **Enable** (standardmäßig auf False festgelegt) 
     
 - **Beschreibung**
     
@@ -66,7 +66,7 @@ Die folgenden Beispiele zeigen, wie die UDF-Definitionen erstellt werden.
   
 `New-OfficeWebAppsExcelUserDefinedFunction -Assembly "CompanyName.Hierarchichal.MyUdfNamespace.MyUdfClassName.dll, Version=1.1.0.0, Culture=en, PublicKeyToken=e8123117d7ba9ae38" -AssemblyLocation GAC -Enable:$true -Description "My GAC Server UDFs"`
   
-Nachdem das neue UDF-Verweises erstellt wurde, führen Sie **iisreset aus** , auf dem Server, um den Verweis sofort zu übernehmen. 
+Führen Sie nach dem Erstellen des neuen UDF-Verweises **iisreset** auf dem Server aus, um den Verweis sofort zu übernehmen. 
   
 ## <a name="additional-office-online-server-preview-udf-windows-powershell-commands"></a>Zusätzliche Office Online Server Preview UDF Windows PowerShell-Befehle
 
@@ -74,9 +74,9 @@ Verwenden Sie die folgenden Windows PowerShell-Cmdlets UDFs entwickelt:
   
 - **Get-OfficeWebAppsExcelUserDefinedFunction** (ohne erforderliche Parameter) - gibt eine Liste von UDF-Definitionen, die auf der Office Online Server Preview konfiguriert sind. 
     
-- **Set-OfficeWebAppsExcelUserDefinedFunction** (Identity-Parameter erforderlich) - festgelegt Eigenschaften auf vorhandene UDF-Definitionen. 
+- **Set- OfficeWebAppsExcelUserDefinedFunction** (Identity-Parameter erforderlich) – Legt Eigenschaften für vorhandene UDF-Definitionen fest. 
     
-- **Remove-OfficeWebAppsExcelUserDefinedFunction** (Identity-Parameter erforderlich) - entfernt vorhandene UDF-Definitionen. 
+- **Remove-OfficeWebAppsExcelUserDefinedFunction** (Identity-Parameter erforderlich) – Entfernt Eigenschaften von vorhandenen UDF-Definitionen. 
     
 ## <a name="udf-sample"></a>UDF-Beispiel
 
@@ -88,6 +88,6 @@ Die folgenden Dateien stellen eine Beispielarbeitsmappe, die eine UDF-Datei und 
 ## <a name="see-also"></a>Siehe auch
 
 - [Konfigurieren von Excel Online administrativen Einstellungen](https://technet.microsoft.com/en-us/library/jj219698%28v=office.16%29.aspx)  
-- [Office Online Server – Vorschau](https://technet.microsoft.com/en-us/library/jj219456%28v=office.16%29.aspx)
+- [Office Online-Server Preview](https://technet.microsoft.com/en-us/library/jj219456%28v=office.16%29.aspx)
     
 

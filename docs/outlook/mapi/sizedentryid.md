@@ -44,7 +44,7 @@ __Namen_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **SizedENTRYID** können Sie eine Eintrags-ID zu definieren, nach dem Array Länge Anforderungen bekannt sind. Verwenden Sie dieses Makro mit expliziten Grenzen eines Eintrags-ID zu erstellen. 
   

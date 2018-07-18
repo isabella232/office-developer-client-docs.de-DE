@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingProviderName-Eigenschaft
+title: PidLidSharingProviderName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793809"
 ---
-# <a name="pidlidsharingprovidername-canonical-property"></a>Kanonische PidLidSharingProviderName-Eigenschaft
+# <a name="pidlidsharingprovidername-canonical-property"></a>PidLidSharingProviderName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Benutzer angezeigten Namen von den Freigabedienstanbieter, der durch **
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft sollte ignoriert werden.
   

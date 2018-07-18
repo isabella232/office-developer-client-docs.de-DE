@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidRemoteAttachment-Eigenschaft
+title: PidLidRemoteAttachment (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793759"
 ---
-# <a name="pidlidremoteattachment-canonical-property"></a>Kanonische PidLidRemoteAttachment-Eigenschaft
+# <a name="pidlidremoteattachment-canonical-property"></a>PidLidRemoteAttachment (kanonische Eigenschaft)
 
   
   

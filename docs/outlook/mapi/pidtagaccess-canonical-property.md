@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAccess-Eigenschaft
+title: PidTagAccess (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794039"
 ---
-# <a name="pidtagaccess-canonical-property"></a>Kanonische PidTagAccess-Eigenschaft
+# <a name="pidtagaccess-canonical-property"></a>PidTagAccess (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags, die angibt, die Vorgänge, die an den Client f
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Access-Steuerelementeigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist schreibgeschützt für den Client. Es muss ein bitweises **oder** von NULL oder mehrere Werte aus der folgenden Tabelle. 
   

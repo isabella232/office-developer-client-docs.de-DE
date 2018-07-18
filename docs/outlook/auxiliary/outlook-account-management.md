@@ -1,5 +1,5 @@
 ---
-title: Outlook-Kontenverwaltung
+title: Outlook-Kontoverwaltung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791168"
 ---
-# <a name="outlook-account-management"></a>Outlook-Kontenverwaltung
+# <a name="outlook-account-management"></a>Outlook-Kontoverwaltung
 
 Dieser Abschnitt beschreibt die Konto-Verwaltungs-API ermöglicht den Zugriff auf Kontoinformationen und Konto ändern Benachrichtigungen unterstützt. Es enthält auch Informationen zum Schützen von Konten vor Spam und Verwalten von Nachricht Downloads für POP3-Konten.
 
@@ -22,6 +22,6 @@ Dieser Abschnitt beschreibt die Konto-Verwaltungs-API ermöglicht den Zugriff au
     
 - [Anti-Spam-Einstellungen](about-anti-spam-settings.md)
     
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)
     
 

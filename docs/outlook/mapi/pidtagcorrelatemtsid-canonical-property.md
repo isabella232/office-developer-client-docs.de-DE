@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCorrelateMtsid-Eigenschaft
+title: PidTagCorrelateMtsid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794276"
 ---
-# <a name="pidtagcorrelatemtsid-canonical-property"></a>Kanonische PidTagCorrelateMtsid-Eigenschaft
+# <a name="pidtagcorrelatemtsid-canonical-property"></a>PidTagCorrelateMtsid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Nachricht Transfer System (MTS)-ID in Korrelation Berichte mit gese
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein Transportdienstes eine gesendete Nachricht mit dieser Eigenschaft auf true fest, erkennt, wird diese Eigenschaft die MTS-ID für diese Nachricht. Nach der Übermittlung wird diese Eigenschaft mit der Nachricht im Ordner Gesendete Elemente zwischen Personen Nachricht (IPM) gespeichert.
   

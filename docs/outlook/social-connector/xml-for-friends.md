@@ -1,5 +1,5 @@
 ---
-title: XML-Code für Freunde
+title: XML für „friends“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796108"
 ---
-# <a name="xml-for-friends"></a>XML-Code für Freunde
+# <a name="xml-for-friends"></a>XML für „friends“
 
 Das **Freunde** -Element im XML-Schema von Microsoft Outlook Social Connector (OSC) Anbieter ermöglicht ein OSC-Anbieters zum Angeben von Informationen für eine Liste der Personen, die ein Outlook-Benutzer im sozialen Netzwerk zugeordnet. Wenn der OSC-Anbieter zwischengespeicherten Synchronisierung unterstützt, enthält die Liste der Person nur Freunde des Outlook-Benutzers im sozialen Netzwerk. Wenn die OSC auf Abruf oder Hybriden Synchronisierung unterstützt, kann diese Liste Freunde und Familie des Outlook-Benutzers enthalten. 
 
@@ -102,7 +102,7 @@ Eine vollständige Definition des OSC-Anbieter XML-Schema, welche Elemente sind,
 |**homePhone** <br/> |Private Telefonnummer der Person ein.  <br/> |
 |**Index** <br/> |Speicherort der Hash-Adresse der Person in der _PersonsAddresses_ -Parameter, die an einen Aufruf der **ISocialSession2::GetPeopleDetails** -Methode übergeben werden. Es gibt auch die Person **Person** XML in die von **GetPeopleDetails**zurückgegebene _PersonsCollection_ -Zeichenfolge an.  <br/> |
 |**Branchen** <br/> |Branchen, denen an die Person beteiligt ist.  <br/> |
-|**Interessen** <br/> |Interessen oder Hobbys der Person ein.  <br/> |
+|**interests** <br/> |Interessen oder Hobbys der Person ein.  <br/> |
 |**lastModificationTime** <br/> |Zeitpunkt der letzten Änderung der Person Profil für das soziale Netzwerk.  <br/> |
 |**lastName** <br/> |Nachname oder Nachnamen der Person ein.  <br/> |
 |**location** <br/> |Die Position der Person ein.  <br/> |
@@ -116,7 +116,7 @@ Eine vollständige Definition des OSC-Anbieter XML-Schema, welche Elemente sind,
 |**Bild-URL** <br/> |URL für ein Profilbild der Person ein.  <br/> |
 |**Beziehung** <br/> |Beziehung zwischen dieser Person mit angemeldeten Benutzers.  <br/> |
 |**Schulen** <br/> |Die Schulen, die die Person wechselt oder war.  <br/> |
-|**Fähigkeiten** <br/> |Persönliche Fachkenntnisse der Person.  <br/> |
+|**skills** <br/> |Persönliche Fachkenntnisse der Person.  <br/> |
 |**state** <br/> |Bundesland / Kanton, der die physische Adresse der Person ein.  <br/> |
 |**title** <br/> |Bezeichnung den Namen der Person hinzugefügt.  <br/> |
 |**Benutzer-ID** <br/> |ID die Person im sozialen Netzwerk identifiziert.  <br/> |

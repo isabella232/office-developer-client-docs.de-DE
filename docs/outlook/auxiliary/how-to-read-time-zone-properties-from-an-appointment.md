@@ -1,5 +1,5 @@
 ---
-title: Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin
+title: Lesen von Zeitzoneneigenschaften aus einem Termin
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790940"
 ---
-# <a name="read-time-zone-properties-from-an-appointment"></a>Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin
+# <a name="read-time-zone-properties-from-an-appointment"></a>Lesen von Zeitzoneneigenschaften aus einem Termin
 
 In diesem Thema wird eine Funktion `ReadTimeZones`, die zwei Funktionen aufruft `BinToTZDEFINITION` und `BinToTZREG`, um die Eigenschaften Zeitzone, [PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) und [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx), ausgehend von einem Termin zu lesen.
   

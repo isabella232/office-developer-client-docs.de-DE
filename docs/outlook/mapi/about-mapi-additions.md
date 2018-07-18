@@ -35,7 +35,7 @@ MAPI-Ergänzungen sind APIs, die gehören zu MAPI Messaging Application Programm
     
 ## <a name="functions"></a>Funktionen
 
-- **[Fixmapi.exe](fixmapi.md)**
+- **[FixMAPI](fixmapi.md)**
     
 ## <a name="properties"></a>Eigenschaften
 
@@ -233,8 +233,8 @@ Die folgenden Eigenschaften von Store-Objekten verfügbar gemacht werden und wer
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Access einen Speicher auf dem Remote Server bei Outlook befindet sich in der Exchange-Cache-Modus](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
-- [Erkennen von der Version von Exchange Server in ein Outlook-Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
-- [Geöffnet ist ein Speichers Remote Server Wenn Outlook im Exchange-Cache-Modus](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
-- [Verwalten einer Nachricht in einer OST ohne Aufrufen eine Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
+- [Zugreifen auf einen Store auf dem Remote-Server, wenn Outlook sich Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)  
+- [Ermitteln der Version des Exchange-Servers in einem Outlook-Profil](how-to-detect-the-version-of-exchange-server-in-an-outlook-profile.md)
+- [Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

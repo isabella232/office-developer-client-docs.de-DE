@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCreateTemplates-Eigenschaft
+title: PidTagCreateTemplates (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794269"
 ---
-# <a name="pidtagcreatetemplates-canonical-property"></a>Kanonische PidTagCreateTemplates-Eigenschaft
+# <a name="pidtagcreatetemplates-canonical-property"></a>PidTagCreateTemplates (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine eingebettete Table-Objekt, das Dialogfeld Feld Vorlage-Eintragsbez
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Welche Vorlage erhalten Sie Objekte in einem Container erstellt werden können, rufen Sie die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für diese Eigenschaft. Das resultierende Objekt ist der einmaligen Tabelle mit den Eintrag-IDs für alle Vorlagen, die Sie innerhalb des Containers erstellen können. 
   

@@ -45,7 +45,7 @@ S_OK
   
 > Der Ansichtskontext wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIForm::SetViewContext** -Methode, um ein bestimmtes Formular Ansichtskontext als aktuelle einzurichten. Ein Formular kann jeweils nur ein Ansichtskontext haben. 
   
@@ -81,7 +81,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

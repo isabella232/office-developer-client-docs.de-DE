@@ -46,7 +46,7 @@ _pVar_
 |S_OK  <br/> |Methodenaufruf war erfolgreich.  <br/> |
 |E_INVALIDARG  <br/> |Eine ungültige Eigenschafts-Tag angegeben wurde.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie [IOlkAccount::SaveChanges](iolkaccount-savechanges.md) , um Änderungen auf den Wert der Eigenschaften von Benutzerkonten zu speichern. 
   

@@ -28,10 +28,10 @@ CY (** *Wert* **, ** *CyID* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Value_ <br/> |Optional  <br/> |**Zahl oder eine Zeichenfolge** <br/> |Eine Zahl oder eine Zeichenfolge, die Währung-spezifischen Formatierung enthält. Wenn nicht angegeben, wird der Währungswert entsprechend das Währungsformat in die Standardeinstellungen des Systems Region und Sprache formatiert.  <br/> |
+| _Value_ <br/> |Optional  <br/> |**Nummer oder Zeichenfolge** <br/> |Eine Zahl oder eine Zeichenfolge, die Währung-spezifischen Formatierung enthält. Wenn nicht angegeben, wird der Währungswert entsprechend das Währungsformat in die Standardeinstellungen des Systems Region und Sprache formatiert.  <br/> |
 | _cyID_ <br/> |Optional  <br/> |**Nummer** <br/> |Eine numerische Währung-ID oder eine Zeichenfolge mit drei Zeichen in Anführungszeichen für die Abkürzung ISO 4217.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um eine andere Währung angeben, müssen Sie eine gültige _CyID_einbeziehen. Eine Liste finden Sie unter [About Currency-Konstanten](about-currency-constants.md).
   

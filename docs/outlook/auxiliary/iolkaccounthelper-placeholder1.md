@@ -30,7 +30,7 @@ HRESULT IOlkAccountHelper::Placeholder1 (
 
 Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) und wird nicht. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Member muss immer E_NOTIMPL zurückgeben.
   

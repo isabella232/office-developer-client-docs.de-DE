@@ -1,5 +1,5 @@
 ---
-title: Ein Objekt ungültig
+title: Unwirksammachen eines Objekts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792716"
 ---
-# <a name="invalidating-an-object"></a>Ein Objekt ungültig
+# <a name="invalidating-an-object"></a>Unwirksammachen eines Objekts
 
   
   
@@ -29,5 +29,5 @@ Ein Objekt ungültig bietet MAPI die ultimative Verantwortung für ein Objekt zu
 
 
 
-[Herunterfahren von einem Dienstanbieter](shutting-down-a-service-provider.md)
+[Herunterfahren eines Dienstanbieters](shutting-down-a-service-provider.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameAttachmentMacInfo-Eigenschaft
+title: PidNameAttachmentMacInfo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793950"
 ---
-# <a name="pidnameattachmentmacinfo-canonical-property"></a>Kanonische PidNameAttachmentMacInfo-Eigenschaft
+# <a name="pidnameattachmentmacinfo-canonical-property"></a>PidNameAttachmentMacInfo (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält einen [RFC3282] Anlage-Wert, der der entsprechenden Kopf- und Ressource
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen finden Sie unter MS-OXCMAIL Abschnitt 2.2.4.2 Apple-Dateiformaten.
   

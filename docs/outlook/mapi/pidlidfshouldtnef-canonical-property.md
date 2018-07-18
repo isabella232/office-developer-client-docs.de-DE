@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFShouldTNEF-Eigenschaft
+title: PidLidFShouldTNEF (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793621"
 ---
-# <a name="pidlidfshouldtnef-canonical-property"></a>Kanonische PidLidFShouldTNEF-Eigenschaft
+# <a name="pidlidfshouldtnef-canonical-property"></a>PidLidFShouldTNEF (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob ein Element mit Transport Neutral Encapsulation Format (TNEF) codier
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird festgelegt, wenn Microsoft Word als e-Mail-Editor festgelegt ist, und sendet ein OLE-Objekt, das in einem Rich Text Format (RTF)-Stream eingebettet ist.
   

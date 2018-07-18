@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskMode-Eigenschaft
+title: PidLidTaskMode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793856"
 ---
-# <a name="pidlidtaskmode-canonical-property"></a>Kanonische PidLidTaskMode-Eigenschaft
+# <a name="pidlidtaskmode-canonical-property"></a>PidLidTaskMode (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Zuordnungsstatus des Vorgangs.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert muss eine der folgenden sein:
   

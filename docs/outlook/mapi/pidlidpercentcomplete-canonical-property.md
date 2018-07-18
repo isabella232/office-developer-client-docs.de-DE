@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidPercentComplete-Eigenschaft
+title: PidLidPercentComplete (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793714"
 ---
-# <a name="pidlidpercentcomplete-canonical-property"></a>Kanonische PidLidPercentComplete-Eigenschaft
+# <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass der Fortschritt der Benutzer für einen Vorgang vorgenommen hat.
 |Datentyp:  <br/> |PT_R8  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss eine Zahl größer oder gleich 0,0 und kleiner als oder gleich 1,0, in dem 1.0 gibt an, dass Arbeit abgeschlossen ist und 0,0 gibt an, dass Arbeit nicht begonnen hat.
   

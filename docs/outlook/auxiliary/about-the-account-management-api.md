@@ -1,5 +1,5 @@
 ---
-title: Informationen zu der Konto-Management-API
+title: Informationen zur Kontoverwaltungs-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790920"
 ---
-# <a name="about-the-account-management-api"></a>Informationen zu der Konto-Management-API
+# <a name="about-the-account-management-api"></a>Informationen zur Kontoverwaltungs-API
 
 Der Konto-Verwaltungs-API ermöglicht den Zugriff auf Kontoinformationen und Benachrichtigungen von kontoänderungen unterstützt. E-Mail-Anbieter Sie als dieser API-Clients wie folgt:
   

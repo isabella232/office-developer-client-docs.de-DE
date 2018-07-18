@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidVerbResponse-Eigenschaft
+title: PidLidVerbResponse (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793901"
 ---
-# <a name="pidlidverbresponse-canonical-property"></a>Kanonische PidLidVerbResponse-Eigenschaft
+# <a name="pidlidverbresponse-canonical-property"></a>PidLidVerbResponse (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Stimmabgabe Option, die einem Teilnehmer ausgewählt.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird normalerweise auf einen der getrennten Werte festgelegt, die in der Eigenschaft **DispidVerbStream** ([PidLidVerbStream](pidlidverbstream-canonical-property.md)) enthalten sind, auf denen der Befragten stimmen.
   

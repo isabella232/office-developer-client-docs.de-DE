@@ -1,5 +1,5 @@
 ---
-title: Abschnitt MapiSvc.inf [Services]
+title: Abschnitt [Services] in MapiSvc.inf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793154"
 ---
-# <a name="mapisvcinf-services-section"></a>Abschnitt MapiSvc.inf [Services]
+# <a name="mapisvcinf-services-section"></a>Abschnitt [Services] in MapiSvc.inf
 
   
   

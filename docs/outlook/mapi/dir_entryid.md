@@ -40,7 +40,7 @@ typedef struct _dir_entryid
 #pragma pack()
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **abFlags**
   
@@ -68,7 +68,7 @@ typedef struct _dir_entryid
   
 > Eine GUID, die das Anmeldung-Objekt identifiziert wird.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Strukturen **DIR_ENTRYID** und [CONTAB_ENTRYID](contab_entryid.md) sind identisch, mit Ausnahme der **UlType** Member. Der Inhalt des Elements **UlType** bestimmt, welche Struktur für die übrigen Felder geeignet ist. 
   

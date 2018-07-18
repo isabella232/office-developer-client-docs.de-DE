@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAcknowledgementMode-Eigenschaft
+title: PidTagAcknowledgementMode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794046"
 ---
-# <a name="pidtagacknowledgementmode-canonical-property"></a>Kanonische PidTagAcknowledgementMode-Eigenschaft
+# <a name="pidtagacknowledgementmode-canonical-property"></a>PidTagAcknowledgementMode (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Bezeichner des Modus für Bestätigung der Nachricht.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

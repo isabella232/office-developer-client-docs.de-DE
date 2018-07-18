@@ -47,7 +47,7 @@ _pVar_
 |E_ACCT_NOT_FOUND  <br/> |Die Eigenschaft ist für das angegebene Konto nicht gefunden.  <br/> |
 |E_INVALIDARG  <br/> |Ein ungültiger Eigenschafts-Tag es wurde angegeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nachdem diese Methode zurückgegeben, wenn der Wert der Eigenschaft Konto einen Typ Binär oder eine Zeichenfolge handelt, müssen Sie *pVar* mithilfe von [IOlkAccount::FreeMemory](iolkaccount-freememory.md)freigeben.
   

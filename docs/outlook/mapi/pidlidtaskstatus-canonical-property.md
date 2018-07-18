@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskStatus-Eigenschaft
+title: PidLidTaskStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793881"
 ---
-# <a name="pidlidtaskstatus-canonical-property"></a>Kanonische PidLidTaskStatus-Eigenschaft
+# <a name="pidlidtaskstatus-canonical-property"></a>PidLidTaskStatus (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Status des Benutzers Fortschritt für den Vorgang.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss auf einen der folgenden festgelegt werden.
   
@@ -89,11 +89,11 @@ Mapidefs.h
 
 
 
-[Kanonische PidLidPercentComplete-Eigenschaft](pidlidpercentcomplete-canonical-property.md)
+[PidLidPercentComplete (kanonische Eigenschaft)](pidlidpercentcomplete-canonical-property.md)
   
-[Kanonische PidLidTaskDateCompleted-Eigenschaft](pidlidtaskdatecompleted-canonical-property.md)
+[PidLidTaskDateCompleted (kanonische Eigenschaft)](pidlidtaskdatecompleted-canonical-property.md)
   
-[Kanonische PidLidTaskComplete-Eigenschaft](pidlidtaskcomplete-canonical-property.md)
+[PidLidTaskComplete (kanonische Eigenschaft)](pidlidtaskcomplete-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

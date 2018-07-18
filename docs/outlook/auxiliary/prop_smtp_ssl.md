@@ -27,12 +27,12 @@ Gibt an, ob Secure Socket Layer (SSL)-Protokoll für das SMTP-Konto.
 |Eigenschafts-Tag:  <br/> |0x02020003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine NULL bedeutet der Wert nicht SSL-Verschlüsselung verwenden, andernfalls können Sie SSL-Verschlüsselung verwenden.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearchFolderStorageType-Eigenschaft
+title: PidTagSearchFolderStorageType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795122"
 ---
-# <a name="pidtagsearchfolderstoragetype-canonical-property"></a>Kanonische PidTagSearchFolderStorageType-Eigenschaft
+# <a name="pidtagsearchfolderstoragetype-canonical-property"></a>PidTagSearchFolderStorageType (kanonische Eigenschaft)
 
   
   
@@ -32,9 +32,9 @@ Enthält Flags, die die angezeigte Binary Large Object (BLOB) Daten in der Eigen
 |Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_STORAGE_TYPE  <br/> |
 |Bezeichner:  <br/> |0x6846  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Suchen  <br/> |
+|Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Definitionen der Flags werden in [[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)angegeben. Suchen nach **PR_WB_SF_STORAGE_TYPE**.
   

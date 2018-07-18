@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796880"
 ---
-# <a name="dontmovechildren-cell-group-properties-section"></a>Zelle "DontMoveChildren" (Abschnitt "Group Properties")
+# <a name="dontmovechildren-cell-group-properties-section"></a>DontMoveChildren Cell (Group Properties Section)
 
 Legt fest, ob Shapes in einer Gruppe mithilfe der Maus verschoben werden können.
   
@@ -31,13 +31,13 @@ Wenn diese Zelle den Wert TRUE enthält, können Sie Shapes in Gruppen mithilfe 
   
 Der Wert dieser Zelle ist TRUE bei Gruppen in Master-Shapes und Gruppen in Instanzen von Master-Shapes, die mit früheren Versionen von Microsoft Visio 2000 erstellt wurden.
   
-Wenn Sie einen Verweis auf die Zelle DontMoveChildren nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle DontMoveChildren aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | DontMoveChildren  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle DontMoveChildren aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle DontMoveChildren aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

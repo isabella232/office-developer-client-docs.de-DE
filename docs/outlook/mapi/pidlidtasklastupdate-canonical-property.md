@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskLastUpdate-Eigenschaft
+title: PidLidTaskLastUpdate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793838"
 ---
-# <a name="pidlidtasklastupdate-canonical-property"></a>Kanonische PidLidTaskLastUpdate-Eigenschaft
+# <a name="pidlidtasklastupdate-canonical-property"></a>PidLidTaskLastUpdate (kanonische Eigenschaft)
 
   
   

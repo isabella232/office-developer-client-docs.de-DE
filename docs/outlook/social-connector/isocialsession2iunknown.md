@@ -15,11 +15,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795999"
 ---
-# <a name="isocialsession2--iunknown"></a>ISocialSession2: IUnknown
+# <a name="isocialsession2--iunknown"></a>ISocialSession2 : IUnknown
 
 Hinzufügen von Freunden, bei Bedarf oder Hybriden Synchronisierung von Freunden, bedarfsgesteuerten Synchronisierung von Aktivitäten oder im sozialen Netzwerk anmelden mit zwischengespeicherten Anmeldeinformationen unterstützt.
   
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 In der folgenden Tabelle werden die Member, die für die **ISocialSession2** -Schnittstelle verfügbar sind. 
   
@@ -30,7 +30,7 @@ In der folgenden Tabelle werden die Member, die für die **ISocialSession2** -Sc
 |[GetPeopleDetails](isocialsession2-getpeopledetails.md) <br/> |Methode  <br/> |Gibt eine Zeichenfolge, die eine Auflistung von Person und Teile des Bildes Details für die durch den _PersonsAddresses_ -Parameter angegebenen Benutzer enthält.  <br/> |
 |[LogonCached](isocialsession2-logoncached.md) <br/> |Methode  <br/> |Meldet sich bei der social Network-Website mit zwischengespeicherten Anmeldeinformationen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Anbieter Outlook Social Connector (OSC) können diese Schnittstelle implementieren, wenn der Anbieter unterstützt mit zwischengespeicherten Anmeldeinformationen auf Abruf oder Hybriden Synchronisierung von Freunden, bedarfsgesteuerten Synchronisierung von Aktivitäten oder im sozialen Netzwerk anmelden. Wenn der OSC-Anbieter **ISocialSession2** und unterstützt die folgenden Personen im sozialen Netzwerk implementiert, die OSC würde [ISocialSession2::FollowPersonEx](isocialsession2-followpersonex.md) anstelle von [ISocialSession::FollowPerson](isocialsession-followperson.md)aufrufen und der Anbieter implementiert werden müssen **ISocialSession2::FollowPersonEx**, sowie.
   

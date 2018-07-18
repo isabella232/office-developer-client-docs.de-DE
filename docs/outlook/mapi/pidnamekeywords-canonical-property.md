@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameKeywords-Eigenschaft
+title: PidNameKeywords (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793961"
 ---
-# <a name="pidnamekeywords-canonical-property"></a>Kanonische PidNameKeywords-Eigenschaft
+# <a name="pidnamekeywords-canonical-property"></a>PidNameKeywords (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Schlüsselwörter oder Kategorien für die Message-Objekt enthält.
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein mit mehreren String-Wert, der angibt, die Kategorien für ein Meldungsobjekt, die Länge einer Zeichenfolge in dieser Eigenschaft mehrwertige Zeichenfolge muss kleiner als 256 sein.
   

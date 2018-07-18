@@ -1,5 +1,5 @@
 ---
-title: Schreiben von nicht komprimierten formatierter Text
+title: Schreiben von nicht komprimiertem formatierten Text
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795869"
 ---
-# <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimierten formatierter Text
+# <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimiertem formatierten Text
 
   
   

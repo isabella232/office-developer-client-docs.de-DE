@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792035"
 ---
-# <a name="icontabadmin--iunknown"></a>IContabAdmin: IUnknown
+# <a name="icontabadmin--iunknown"></a>IContabAdmin : IUnknown
 
   
   
@@ -31,7 +31,7 @@ Entfernt wenden Sie sich an Ordnern aus dem Adressbuch von Microsoft Outlook 201
 |:-----|:-----|
 |Headerdatei  <br/> |cabadmin.h  <br/> |
 |Verf�gbar gemacht von:  <br/> ||
-|Implementiert von:  <br/> |[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
+|Implementiert von:  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
 |Aufgerufen von:  <br/> |CRM  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IContabAdmin  <br/> |
 |Zeigertyp:  <br/> ||

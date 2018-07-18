@@ -22,13 +22,13 @@ Stellt den Benutzernamen für das Postfach von einer allgemeinen Internet dar.
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0101  <br/> |
+|Bezeichner:  <br/> |0x0101  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Eigenschafts-Tag:  <br/> |0x0101001F  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

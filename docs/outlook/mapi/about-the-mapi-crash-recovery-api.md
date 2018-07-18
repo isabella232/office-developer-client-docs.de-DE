@@ -1,5 +1,5 @@
 ---
-title: Über die Wiederherstellung von MAPI-API
+title: Informationen über die API zur MAPI-Wiederherstellung nach einem Absturz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791237"
 ---
-# <a name="about-the-mapi-crash-recovery-api"></a>Über die Wiederherstellung von MAPI-API
+# <a name="about-the-mapi-crash-recovery-api"></a>Informationen über die API zur MAPI-Wiederherstellung nach einem Absturz
 
   
   
@@ -37,5 +37,5 @@ Funktionen:
 
 
 
-[Verwenden Sie die Wiederherstellung von MAPI-API](how-to-use-the-mapi-crash-recovery-api.md)
+[Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz](how-to-use-the-mapi-crash-recovery-api.md)
 

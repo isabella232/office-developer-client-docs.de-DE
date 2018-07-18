@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagInReplyToId-Eigenschaft
+title: PidTagInReplyToId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794480"
 ---
-# <a name="pidtaginreplytoid-canonical-property"></a>Kanonische PidTagInReplyToId-Eigenschaft
+# <a name="pidtaginreplytoid-canonical-property"></a>PidTagInReplyToId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die ursprüngliche Nachricht **PR_INTERNET_MESSAGE_ID** ([PidTagInterne
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften müssen auf allen Antworten auf Nachrichten festgelegt werden.
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagInternetMessageId-Eigenschaft](pidtaginternetmessageid-canonical-property.md)
+[PidTagInternetMessageId (kanonische Eigenschaft)](pidtaginternetmessageid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

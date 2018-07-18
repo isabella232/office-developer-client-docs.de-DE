@@ -28,7 +28,7 @@ Gibt den Anzeigenamen des Kontos, das die Nachricht nicht übermittelt.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft sollte den gleichen Wert enthalten, der von der Konto-Verwaltungs-API-Eigenschaft [PROP_ACCT_NAME](prop_acct_name.md) für das Konto zurückgegeben wird, die die Nachricht nicht übermittelt. 
   
@@ -52,5 +52,5 @@ Zur Unterstützung der folgende benannten Eigenschaften erwarten Anbieter Outloo
 
 - [Über die Konto-API](about-the-account-management-api.md)
 - [Konstanten (Account Management API)](constants-account-management-api.md)
-- [Kanonische PidLidInternetAccountName-Eigenschaft](http://msdn.microsoft.com/library/29bedadf-903d-419d-804d-dc8bd92b745d%28Office.15%29.aspx)
+- [PidLidInternetAccountName (kanonische Eigenschaft)](http://msdn.microsoft.com/library/29bedadf-903d-419d-804d-dc8bd92b745d%28Office.15%29.aspx)
 

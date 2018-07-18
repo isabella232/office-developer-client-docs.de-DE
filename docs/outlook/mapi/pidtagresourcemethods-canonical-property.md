@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagResourceMethods-Eigenschaft
+title: PidTagResourceMethods (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794965"
 ---
-# <a name="pidtagresourcemethods-canonical-property"></a>Kanonische PidTagResourceMethods-Eigenschaft
+# <a name="pidtagresourcemethods-canonical-property"></a>PidTagResourceMethods (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske der Flags, die die Methoden in der Schnittstelle **IMAPIS
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt an, welche der Methoden in der Implementierung der **IMAPIStatus** ein Statusobjekt unterstützt werden. Status-Objekte sind zulässig, nicht unterstützten Methoden MAPI_E_NO_SUPPORT zurückgegeben. 
   

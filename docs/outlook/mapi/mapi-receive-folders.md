@@ -56,7 +56,7 @@ Die folgende Tabelle zeigt, wie Nachrichten mit verschiedenen Klassen an die ent
 |**Eingehende Nachricht-Klasse**|**Ordner empfangen**|
 |:-----|:-----|
 |**IPM. Note.Sample.Simple** <br/> |F�r Beispielordner  <br/> |
-|**IPM. Hinweis** <br/> |Ordner Posteingang  <br/> |
+|**IPM.Note** <br/> |Ordner Posteingang  <br/> |
 |**IPM. Zeitkarte** <br/> |Ordner Posteingang  <br/> |
 |**IPM. Note.Sample.Simple.Totally** <br/> |F�r Beispielordner  <br/> |
    

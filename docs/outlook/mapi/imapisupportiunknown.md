@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792437"
 ---
-# <a name="imapisupport--iunknown"></a>IMAPISupport: IUnknown
+# <a name="imapisupport--iunknown"></a>IMAPISupport : IUnknown
 
   
   
@@ -43,7 +43,7 @@ Bietet Implementierungen für Aufgaben vorgestellt, die in der Regel vom Diensta
 |[GetLastError](imapisupport-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen zu dem Fehler der vorherigen Support-Objekt enthält.  <br/> |
 |[GetMemAllocRoutines](imapisupport-getmemallocroutines.md) <br/> |Ruft die Adressen der MAPI-Speicher Reservierung und Freigabe Funktionen ([MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer](mapifreebuffer.md)).  <br/> |
 |[Abonnieren](imapisupport-subscribe.md) <br/> |Registriert ein Advise-Empfänger Erhalt von Benachrichtigungen über MAPI an.  <br/> |
-|[Melden Sie sich ab](imapisupport-unsubscribe.md) <br/> |Hebt die Verantwortung für Benachrichtigungen gesendet werden, die zuvor mit einem Aufruf der **Subscribe** -Methode festgelegt wurde.  <br/> |
+|[Abonnement kündigen](imapisupport-unsubscribe.md) <br/> |Hebt die Verantwortung für Benachrichtigungen gesendet werden, die zuvor mit einem Aufruf der **Subscribe** -Methode festgelegt wurde.  <br/> |
 |[Benachrichtigen](imapisupport-notify.md) <br/> |Sendet eine Benachrichtigung über ein bestimmtes Ereignis mit einer Advise-Datenquelle, die ursprünglich für die Benachrichtigung über die **Subscribe** -Methode registriert.  <br/> |
 |[ModifyStatusRow](imapisupport-modifystatusrow.md) <br/> |Ändert die Statustabelle durch eine neue Zeile hinzufügen oder Ändern einer vorhandenen Zeile.  <br/> |
 |["OpenProfileSection"](imapisupport-openprofilesection.md) <br/> |Öffnet einen Abschnitt des aktuellen Profils und gibt einen Zeiger [IProfSect](iprofsectimapiprop.md) für den weiteren Zugriff  <br/> |
@@ -58,7 +58,7 @@ Bietet Implementierungen für Aufgaben vorgestellt, die in der Regel vom Diensta
 |[OpenTemplateID](imapisupport-opentemplateid.md) <br/> |Öffnet einen Empfänger Eintrag in einem fremden Adressbuchanbieter.  <br/> |
 |[OpenEntry](imapisupport-openentry.md) <br/> |Öffnet ein Objekt und gibt einen Schnittstellenzeiger für den weiteren Zugriff.  <br/> |
 |[GetOneOffTable](imapisupport-getoneofftable.md) <br/> |Gibt einen Zeiger auf die einmaligen MAPI-Tabelle (eine Liste der Vorlagen, dass alle Anbieter für die Unterstützung für das Erstellen von neuen Empfänger Adressbuch).  <br/> |
-|[Address](imapisupport-address.md) <br/> |Zeigt das Dialogfeld allgemeine Adresse an.  <br/> |
+|[Adresse](imapisupport-address.md) <br/> |Zeigt das Dialogfeld allgemeine Adresse an.  <br/> |
 |[Details](imapisupport-details.md) <br/> |Zeigt ein Dialogfeld, das Details zu einem bestimmten Buch Adresseintrag anzeigt.  <br/> |
 |[NewEntry](imapisupport-newentry.md) <br/> |Fügt einen neuen Empfänger direkt an einen Adressbuchcontainer oder die Empfängerliste von ausgehenden Nachrichten.  <br/> |
 |[DoConfigPropsheet](imapisupport-doconfigpropsheet.md) <br/> |Zeigt eine Konfiguration Eigenschaftenblatt.  <br/> |
@@ -80,20 +80,20 @@ Bietet Implementierungen für Aufgaben vorgestellt, die in der Regel vom Diensta
 |[IStorageFromStream](imapisupport-istoragefromstream.md) <br/> |Zugriff auf einen Datenstrom ein Speicherobjekt implementiert.  <br/> |
 |[GetSvcConfigSupportObj](imapisupport-getsvcconfigsupportobj.md) <br/> |Erstellt ein Objekt "Message" Service Support.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beheben Sie, Bücher, Nachrichtenspeicher, Transportanbieter und Nachricht, dass jede Services eigene Unterstützungsobjekte verfügen. Dienstanbieter und Message-Dienste werden die Methoden in ihre Unterstützungsobjekte im Rahmen der Implementierung von anderen Schnittstellenmethoden aufgerufen. Jedes verschiedene Support-Objekt verfügt über vollständigen Implementierungen der Methoden, die an die aufrufende gelten; die Methoden, die nicht anwendbar sind zurückgeben MAPI_E_NO_SUPPORT. Address Book Anbieter Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
   
 ||||
 |:-----|:-----|:-----|
-|**Address** <br/> |**CompareEntryIDs** <br/> |**CreateOneOff** <br/> |
+|**Adresse** <br/> |**CompareEntryIDs** <br/> |**CreateOneOff** <br/> |
 |**Details** <br/> |**DoConfigPropsheet** <br/> |**DoProgressDialog** <br/> |
 |**GetLastError** <br/> |**GetMemAllocRoutines** <br/> |**GetOneOffTable** <br/> |
 |**IStorageFromStream** <br/> |**GetSvcConfigSupportObj** <br/> |**MakeInvalid** <br/> |
 |**ModifyStatusRow** <br/> |**NewEntry** <br/> |**NewUID** <br/> |
 |**Benachrichtigen** <br/> |**OpenAddressBook** <br/> |**OpenEntry** <br/> |
 |**"OpenProfileSection"** <br/> |**OpenTemplateID** <br/> |**SetProviderUID** <br/> |
-|**Abonnieren** <br/> |**Melden Sie sich ab** <br/> |**WrapStoreEntryID** <br/> |
+|**Abonnieren** <br/> |**Abonnement kündigen** <br/> |**WrapStoreEntryID** <br/> |
    
 Nachricht Store Anbieter Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
   
@@ -108,7 +108,7 @@ Nachricht Store Anbieter Unterstützungsobjekte haben Implementierungen für die
 |**NewUID** <br/> |**Benachrichtigen** <br/> |**OpenAddressBook** <br/> |
 |**OpenEntry** <br/> |**"OpenProfileSection"** <br/> |**PrepareSubmit** <br/> |
 |**ReadReceipt** <br/> |**SetProviderUID** <br/> |**SpoolerNotify** <br/> |
-|**StoreLogoffTransports** <br/> |**Abonnieren** <br/> |**Melden Sie sich ab** <br/> |
+|**StoreLogoffTransports** <br/> |**Abonnieren** <br/> |**Abonnement kündigen** <br/> |
 |**WrapStoreEntryID** <br/> |
    
 Transport-Anbieter Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
@@ -121,7 +121,7 @@ Transport-Anbieter Unterstützungsobjekte haben Implementierungen für die folge
 |**OpenAddressBook** <br/> |**RegisterPreprocessor** <br/> |**NewUID** <br/> |
 |**Benachrichtigen** <br/> |**"OpenProfileSection"** <br/> |**OpenEntry** <br/> |
 |**StatusRecips** <br/> |**SpoolerNotify** <br/> |**SpoolerYield** <br/> |
-|**WrapStoreEntryID** <br/> |**Abonnieren** <br/> |**Melden Sie sich ab** <br/> |
+|**WrapStoreEntryID** <br/> |**Abonnieren** <br/> |**Abonnement kündigen** <br/> |
    
 Nachricht Service Unterstützungsobjekte haben Implementierungen für die folgenden Methoden:
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExceptionStartTime-Eigenschaft
+title: PidTagExceptionStartTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794363"
 ---
-# <a name="pidtagexceptionstarttime-canonical-property"></a>Kanonische PidTagExceptionStartTime-Eigenschaft
+# <a name="pidtagexceptionstarttime-canonical-property"></a>PidTagExceptionStartTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt das Startdatum und die Uhrzeit der Ausnahme in der lokalen Zeitzone des Com
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert-Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!NOTE]
 > Diese Eigenschaft ist Informationszwecken und muss nicht auf wichtige Informationen verlassen. 

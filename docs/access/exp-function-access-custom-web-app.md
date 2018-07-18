@@ -31,7 +31,7 @@ Die **Exp** -Funktion enthält das folgende Argument.
 |:-----|:-----|
 | *NumericExpression*  <br/> |Ein Ausdruck vom Typ Double-Wert oder einen Typ, der implizit in Double-Wert konvertiert werden kann.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Konstante **e** (.. 2.718281) ist die Basis natürlicher Logarithmen. 
   

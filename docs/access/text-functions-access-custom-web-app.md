@@ -22,7 +22,7 @@ ms.locfileid: "19790365"
   
 - [CharIndex-Funktion (Access benutzerdefinierte Web app)](charindex-function-access-custom-web-app.md)
     
-- [Concat-Funktion (Access benutzerdefinierte Web app)](concat-function-access-custom-web-app.md)
+- [Verketten-Funktion (benutzerdefinierte Access-Web-App)](concat-function-access-custom-web-app.md)
     
 - [Left-Funktion (Access benutzerdefinierte Web app)](left-function-access-custom-web-app.md)
     

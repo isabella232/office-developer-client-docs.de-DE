@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren einer Nachricht
+title: Konfigurieren eines Nachrichtendiensts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791418"
 ---
-# <a name="configuring-a-message-service"></a>Konfigurieren einer Nachricht
+# <a name="configuring-a-message-service"></a>Konfigurieren eines Nachrichtendiensts
 
   
   

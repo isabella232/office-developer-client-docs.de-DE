@@ -27,11 +27,11 @@ Gibt ein Array von Bytes, die das Symbol für das soziale Netzwerk darstellt.
 
 Ein Zeiger auf eine Struktur, die ein Array von Bytes angibt, das das Symbol für das soziale Netzwerk enthält.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die unterstützten Bild Ressourcen sind BMP, JPEG und PNG-Dateiformate.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProvider: IUnknown](isocialprovideriunknown.md)
+- [ISocialProvider : IUnknown](isocialprovideriunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Inhalt von Tabellen
+title: Inhaltstabellen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791435"
 ---
-# <a name="contents-tables"></a>Inhalt von Tabellen
+# <a name="contents-tables"></a>Inhaltstabellen
 
   
   

@@ -64,7 +64,7 @@ S_OK
   
 > Die Anlage wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::CreateAttach** -Methode erstellt eine neue Anlage in einer Nachricht. Die neue Anlage und Eigenschaften, die für sie festgelegt sind sind nicht verfügbar, bis ein Client die Anlage [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode und die Nachricht **IMAPIProp::SaveChanges** -Methode aufgerufen wurde. 
   

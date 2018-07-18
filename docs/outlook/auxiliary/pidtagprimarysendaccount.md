@@ -27,7 +27,7 @@ Gibt die primäre Konto "Senden" Zeitstempel für eine Nachricht an.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Konto  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gilt für ein MAPI-Message-Objekt. Bei einer empfangenen Nachricht gibt der primäre Konto Stempel "Senden" welches Konto eine Forward- oder eine Antwort mit gesendet werden sollen. Für eine ausgehende Nachricht an bestimmt, welches Konto zum Senden der Nachricht mit. Der Wert ist der [PROP_ACCT_SEND_STAMP](prop_acct_send_stamp.md) -Wert aus der [IOlkAccount](iolkaccount.md) -Schnittstelle des Kontos ein, mit denen die Nachricht gesendet wird. 
   
@@ -35,5 +35,5 @@ Diese Eigenschaft gilt für ein MAPI-Message-Objekt. Bei einer empfangenen Nachr
 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 - [MAPI-Eigenschaften](http://msdn.microsoft.com/library/3b980217-b65b-442b-8c18-b8b9f3ff487a%28Office.15%29.aspx)
-- [Kanonische PidTagPrimarySendAccount-Eigenschaft](http://msdn.microsoft.com/library/2f268b3b-2e4c-4aea-8879-bdd0ac1df35c%28Office.15%29.aspx)
+- [PidTagPrimarySendAccount (kanonische Eigenschaft)](http://msdn.microsoft.com/library/2f268b3b-2e4c-4aea-8879-bdd0ac1df35c%28Office.15%29.aspx)
 

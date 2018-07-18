@@ -83,7 +83,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die foreign-Adressbuchanbieter ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::OpenTemplateID** -Methode ist nur für Address Book Anbieter Unterstützungsobjekte implementiert. **OpenTemplateID** wird nur von adressbuchanbietern implementierte aufgerufen, die als Hosts für Einträge verwendet werden können, die andere adressbuchanbietern implementierte, auch bekannt als fremden Anbietern angehören. Hostanbieter Aufrufen **OpenTemplateID** um einen fremden Eintrag öffnen, in dem tritt auf, wenn Daten in Hostanbieter Code im fremden Anbieter gebunden ist. 
   
@@ -99,11 +99,11 @@ Wenn **OpenTemplateID** mit MAPI_E_UNKNOWN_ENTRYID fehlschlägt, versuchen Sie, 
 
 
 
-[OpenTemplateID](iablogon-opentemplateid.md)
+[IABLogon::OpenTemplateID](iablogon-opentemplateid.md)
   
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[Kanonische PidTagTemplateid-Eigenschaft](pidtagtemplateid-canonical-property.md)
+[PidTagTemplateid (kanonische Eigenschaft)](pidtagtemplateid-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

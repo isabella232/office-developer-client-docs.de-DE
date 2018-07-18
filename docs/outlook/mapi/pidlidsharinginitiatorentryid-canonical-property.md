@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingInitiatorEntryId-Eigenschaft
+title: PidLidSharingInitiatorEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793788"
 ---
-# <a name="pidlidsharinginitiatorentryid-canonical-property"></a>Kanonische PidLidSharingInitiatorEntryId-Eigenschaft
+# <a name="pidlidsharinginitiatorentryid-canonical-property"></a>PidLidSharingInitiatorEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Legt fest, wie eine eine Freigabenachricht-Eigenschaft.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf den Wert der Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) für das Adressbuch des aktuell angemeldeten Benutzers festgelegt werden (siehe [[MS-OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)). 
   

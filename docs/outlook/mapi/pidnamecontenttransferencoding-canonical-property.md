@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameContentTransferEncoding-Eigenschaft
+title: PidNameContentTransferEncoding (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19793954"
 ---
-# <a name="pidnamecontenttransferencoding-canonical-property"></a>Kanonische PidNameContentTransferEncoding-Eigenschaft
+# <a name="pidnamecontenttransferencoding-canonical-property"></a>PidNameContentTransferEncoding (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidRecurrencePattern-Eigenschaft
+title: PidLidRecurrencePattern (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793718"
 ---
-# <a name="pidlidrecurrencepattern-canonical-property"></a>Kanonische PidLidRecurrencePattern-Eigenschaft
+# <a name="pidlidrecurrencepattern-canonical-property"></a>PidLidRecurrencePattern (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt eine Beschreibung des Serienmusters des Calendar-Objekts.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft festgelegt ist, muss er auf eine Beschreibung für die Serie festgelegt sein, die von der **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft angegeben wird.
   

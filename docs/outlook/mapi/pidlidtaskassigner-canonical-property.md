@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskAssigner-Eigenschaft
+title: PidLidTaskAssigner (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793818"
 ---
-# <a name="pidlidtaskassigner-canonical-property"></a>Kanonische PidLidTaskAssigner-Eigenschaft
+# <a name="pidlidtaskassigner-canonical-property"></a>PidLidTaskAssigner (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ ms.locfileid: "19793818"
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Aufgabe nicht zugewiesen wurde, bleibt diese Eigenschaft nicht festgelegt. Da der Client diese Eigenschaft festlegt, nachdem Beauftragte für die Aufgabe eine Aufgabenanfrage erhalten, wird die Eigenschaft nicht auf die Aufgabe delegierende Person Kopie der Aufgabe festgelegt werden. Wenn der Client hinzugefügt oder entfernt eine Aufgabe delegierende Person aus der Aufgabenliste delegierende Person in der Eigenschaft **DispidTaskMyDelegators** ([PidLidTaskAssigners](pidlidtaskassigners-canonical-property.md)), die **DispidTaskDelegator** ([PidLidTaskAssigner](pidlidtaskassigner-canonical-property.md))-Eigenschaft muss auf das hinzugefügte festgelegt oder entfernte Aufgabe delegierende Person.
   

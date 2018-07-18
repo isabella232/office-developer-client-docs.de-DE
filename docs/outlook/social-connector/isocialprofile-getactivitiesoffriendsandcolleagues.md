@@ -23,7 +23,7 @@ Diese Methode ist in Outlook Social Connector 2013 veraltet.
 HRESULT _stdcall GetActivitiesOfFriendsAndColleagues([in] DATE startTime, [out, retval] BSTR* activitiesCollection);
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Starten in Outlook Connector für soziale Netzwerke 2013, die OSC unterstützt nur bedarfsgesteuerten Synchronisierung von Aktivitäten und nicht zwischengespeichert oder Hybrid Synchronisierung von Aktivitäten. Die OSC ignoriert die Einstellung **CacheActivities** in die XML-Funktionen und diese Methode nicht mehr aufgerufen. Um Nachschlagetabelle dynamischen Aktivitäten zu unterstützen, implementieren Sie die [ISocialSession2::GetActivitiesEx](isocialsession2-getactivitiesex.md) -Methode. Legen Sie **GetActivities** und **DynamicActivitiesLookupEx** als **true**die OSC **ISocialSession2::GetActivitiesEx** stattdessen aufzurufen aufgefordert wird. 
   
@@ -31,5 +31,5 @@ Weitere Informationen dazu, wie die OSC Freunde Aktivitäten abruft finden Sie u
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialProfile: ISocialPerson](isocialprofileisocialperson.md)
+- [ISocialProfile : ISocialPerson](isocialprofileisocialperson.md)
 

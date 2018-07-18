@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReminderOverride-Eigenschaft
+title: PidLidReminderOverride (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793739"
 ---
-# <a name="pidlidreminderoverride-canonical-property"></a>Kanonische PidLidReminderOverride-Eigenschaft
+# <a name="pidlidreminderoverride-canonical-property"></a>PidLidReminderOverride (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob der Client die Werte der **DispidReminderPlaySound** ([PidLidReminde
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Client kann Standardwerte anstelle der Werte der Eigenschaften **DispidReminderPlaySound** und **DispidReminderFileParam** verwenden. 
   

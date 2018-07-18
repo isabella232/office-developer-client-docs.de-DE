@@ -31,7 +31,7 @@ Die **Sum** -Funktion enthält das folgende Argument.
 |:-----|:-----|
 | *NumericExpression*  <br/> |Ein Ausdruck, identifiziert das Feld mit den numerischen Daten, den, die Sie hinzufügen möchten, oder ein Ausdruck, der mithilfe der Daten in diesem Feld eine Berechnung ausgeführt wird. Zu den Operanden von *NumericExpression* zählen der Name des Tabellenfelds, eine Konstante oder eine Funktion (die integrierte oder benutzerdefinierte sein kann jedoch keine der anderen SQL-Aggregatfunktionen).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Sum** -Funktion ignoriert Datensätze, die Null-Werte enthalten. 
   

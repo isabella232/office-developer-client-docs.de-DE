@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameHiddenCount-Eigenschaft
+title: PidNameHiddenCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793966"
 ---
-# <a name="pidnamehiddencount-canonical-property"></a>Kanonische PidNameHiddenCount-Eigenschaft
+# <a name="pidnamehiddencount-canonical-property"></a>PidNameHiddenCount (kanonische Eigenschaft)
 
   
   

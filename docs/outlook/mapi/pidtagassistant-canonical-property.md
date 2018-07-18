@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAssistant-Eigenschaft
+title: PidTagAssistant (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794075"
 ---
-# <a name="pidtagassistant-canonical-property"></a>Kanonische PidTagAssistant-Eigenschaft
+# <a name="pidtagassistant-canonical-property"></a>PidTagAssistant (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen des Verwaltungsmitarbeiter des Empfängers an.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   
@@ -68,7 +68,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagAssistantTelephoneNumber-Eigenschaft](pidtagassistanttelephonenumber-canonical-property.md)
+[PidTagAssistantTelephoneNumber (kanonische Eigenschaft)](pidtagassistanttelephonenumber-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

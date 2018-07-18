@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingFlavor-Eigenschaft
+title: PidLidSharingFlavor (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793777"
 ---
-# <a name="pidlidsharingflavor-canonical-property"></a>Kanonische PidLidSharingFlavor-Eigenschaft
+# <a name="pidlidsharingflavor-canonical-property"></a>PidLidSharingFlavor (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Legt fest, wie eine eine Freigabenachricht-Eigenschaft.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss eine der folgenden sein:
   

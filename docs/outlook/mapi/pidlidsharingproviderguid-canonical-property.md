@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingProviderGuid-Eigenschaft
+title: PidLidSharingProviderGuid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793797"
 ---
-# <a name="pidlidsharingproviderguid-canonical-property"></a>Kanonische PidLidSharingProviderGuid-Eigenschaft
+# <a name="pidlidsharingproviderguid-canonical-property"></a>PidLidSharingProviderGuid (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Freigabefunktionen Dienstanbieter global eindeutigen Bezeichner (GUID) 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss auf "% xAE.F0.06.00.00.00.00.00.C0.00.00.00.00.00.00.46" festgelegt werden. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentDuration-Eigenschaft
+title: PidLidAppointmentDuration (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793355"
 ---
-# <a name="pidlidappointmentduration-canonical-property"></a>Kanonische PidLidAppointmentDuration-Eigenschaft
+# <a name="pidlidappointmentduration-canonical-property"></a>PidLidAppointmentDuration (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt die Zeitdauer in Minuten ein, wenn ein Termin geplant ist.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert muss die Anzahl der Minuten zwischen Eigenschaften **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) und der Wert der **DispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)).
   

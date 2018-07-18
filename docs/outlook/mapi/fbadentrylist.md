@@ -55,7 +55,7 @@ FALSE
   
 > Alle der aufgelisteten-Eintragsbezeichner sind ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **FBadEntryList** -Funktion bestimmt, ob die Liste den Eintrag Bezeichner ordnungsgemäß generiert wurde. Ein Beispiel für einen ungültigen Bezeichner ist eine für welche Speicher falsch zugewiesen wurde oder einen Bezeichner, der eine falsche Größe. 
   

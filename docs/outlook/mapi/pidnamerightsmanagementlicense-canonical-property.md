@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameRightsManagementLicense-Eigenschaft
+title: PidNameRightsManagementLicense (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793995"
 ---
-# <a name="pidnamerightsmanagementlicense-canonical-property"></a>Kanonische PidNameRightsManagementLicense-Eigenschaft
+# <a name="pidnamerightsmanagementlicense-canonical-property"></a>PidNameRightsManagementLicense (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Speichert die Lizenz für die rechteverwaltung e-Mail-Nachricht.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Sichere Nachrichten  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Eigenschaft auf eine e-Mail mit verwalteten rechten vorhanden ist, muss der erste Wert dieser Eigenschaft für mehrere binäre komprimierte Nutzungslizenz ZLIB (wie in [RFC1950] angegeben) für die rechteverwaltung e-Mail-Nachricht enthalten.
   

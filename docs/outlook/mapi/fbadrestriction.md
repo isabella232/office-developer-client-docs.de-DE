@@ -55,7 +55,7 @@ FALSE
   
 > Die angegebene Beschränkung und alle seine Subrestrictions sind gültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nach der Überprüfung einer Einschränkung, kann sie in der Tabelle auf bestimmte Zeilen, an die [IMAPITable](imapitable-findrow.md) -Methode, um eine Tabellenzeile zu suchen und die Methoden des der [IMAPIContainer](imapicontainerimapiprop.md) einschränken Aufrufen an die [Methode IMAPITable:: Restrict](imapitable-restrict.md) -Methode übergeben werden Schnittstelle für eine Beschränkung für ein Container-Objekt ausführen. 
   

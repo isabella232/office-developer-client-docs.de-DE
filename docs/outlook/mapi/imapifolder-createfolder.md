@@ -98,7 +98,7 @@ MAPI_E_COLLISION
   
 > Ein Ordner mit dem Namen bereits in der _LpszFolderName_ -Parameter angegebenen vorhanden ist. Ordnernamen müssen eindeutig sein. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIFolder::CreateFolder** -Methode erstellt einen Unterordner im aktuellen Ordner und den neuen Ordner eine Eintrags-ID zugewiesen. 
   
@@ -126,7 +126,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

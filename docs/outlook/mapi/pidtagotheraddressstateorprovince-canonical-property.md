@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOtherAddressStateOrProvince-Eigenschaft
+title: PidTagOtherAddressStateOrProvince (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794763"
 ---
-# <a name="pidtagotheraddressstateorprovince-canonical-property"></a>Kanonische PidTagOtherAddressStateOrProvince-Eigenschaft
+# <a name="pidtagotheraddressstateorprovince-canonical-property"></a>PidTagOtherAddressStateOrProvince (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen des Bundesland/Kanton in der anderen Adresse verwendet.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

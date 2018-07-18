@@ -42,7 +42,7 @@ _ppunk_
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |S_FALSE  <br/> |Das Ende wurde der Enumerator erreicht werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die angegebene *Ppunk* Schnittstelle erbt von **IUnknown**. Der Client kann diese Schnittstelle (Verwendung von **QueryInterface**) Abfragen, um einen Zeiger auf eine Schnittstelle **IOlkAccount** erhalten und Abrufen oder Festlegen von Informationen für dieses Konto. 
   

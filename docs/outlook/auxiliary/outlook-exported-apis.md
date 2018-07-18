@@ -1,5 +1,5 @@
 ---
-title: Outlook exportiert APIs
+title: Aus Outlook exportierte APIs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791170"
 ---
-# <a name="outlook-exported-apis"></a>Outlook exportiert APIs
+# <a name="outlook-exported-apis"></a>Aus Outlook exportierte APIs
 
 Dieser Abschnitt enthält die Referenz für die APIs, die Outlook exportiert.
 

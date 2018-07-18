@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNull-Eigenschaft
+title: PidTagNull (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794662"
 ---
-# <a name="pidtagnull-canonical-property"></a>Kanonische PidTagNull-Eigenschaft
+# <a name="pidtagnull-canonical-property"></a>PidTagNull (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Stellt einen null-Wert oder die Einstellung einer Eigenschaft oder Array-Speiche
 |Datentyp:  <br/> |PT_NULL  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird verwendet, um Speicherplatz in Arrays von [SPropValue](spropvalue.md) Strukturen zu reservieren. Es wird in ein Array von [SPropTagArray](sproptagarray.md) Strukturen verwendet, anzuweisen, die Methode, um Speicherplatz im zurückgegebenen Array der **SPropValue** Strukturen zu reservieren. Dies ermöglicht berechnete Eigenschaften in eine kostengünstige Möglichkeit gefüllt werden soll. 
   

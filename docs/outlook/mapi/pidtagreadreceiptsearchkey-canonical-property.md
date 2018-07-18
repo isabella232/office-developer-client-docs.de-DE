@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReadReceiptSearchKey-Eigenschaft
+title: PidTagReadReceiptSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794862"
 ---
-# <a name="pidtagreadreceiptsearchkey-canonical-property"></a>Kanonische PidTagReadReceiptSearchKey-Eigenschaft
+# <a name="pidtagreadreceiptsearchkey-canonical-property"></a>PidTagReadReceiptSearchKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Schlüssel Suche für die messaging-Benutzer an den messaging-Sys
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird ignoriert, es sei denn, die **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md))-Eigenschaft auf TRUE festgelegt ist.
   

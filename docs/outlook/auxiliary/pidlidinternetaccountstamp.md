@@ -28,7 +28,7 @@ Gibt den Konto Zeitstempel für das Konto, das die Nachricht nicht übermittelt.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft sollte den gleichen Wert enthalten, der von der Konto-Verwaltungs-API-Eigenschaft [PROP_ACCT_STAMP](prop_acct_stamp.md) für das Konto zurückgegeben wird, die die Nachricht nicht übermittelt. 
   
@@ -52,5 +52,5 @@ Zur Unterstützung der folgende benannten Eigenschaften erwarten Anbieter Outloo
 
 - [Über die Konto-API](about-the-account-management-api.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
-- [Kanonische PidLidInternetAccountStamp-Eigenschaft](http://msdn.microsoft.com/library/819179fe-e58e-415c-abc7-1949036745ee%28Office.15%29.aspx)
+- [PidLidInternetAccountStamp (kanonische Eigenschaft)](http://msdn.microsoft.com/library/819179fe-e58e-415c-abc7-1949036745ee%28Office.15%29.aspx)
 

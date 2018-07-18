@@ -1,5 +1,5 @@
 ---
-title: Zum Beispiel umgebrochen PST-Anbieter
+title: Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791228"
 ---
-# <a name="about-the-sample-wrapped-pst-store-provider"></a>Zum Beispiel umgebrochen PST-Anbieter
+# <a name="about-the-sample-wrapped-pst-store-provider"></a>Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher
 
  
   
@@ -37,23 +37,23 @@ Der umbrochen PST Store Beispielanbieter verwendet den Persönliche Ordner-Datei
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Installieren des Beispiels umfließendem PST-Anbieter](installing-the-sample-wrapped-pst-store-provider.md)
+- [Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md)
     
 - Erläutert das Herunterladen und Installieren der umbrochen PST Store Beispielanbieter.
     
-- [Initialisieren einen Anbieter für umbrochenen PST anmelden](initializing-a-wrapped-pst-store-provider.md)
+- [Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
     
 - Der erste Schritt beim Implementieren von eines gepackten PST-Anbieters wird initialisiert und Konfigurieren des gepackten PST-Anbieters.
     
-- [Anmelden bei einem Anbieter gepackten PST-Datei](logging-on-to-a-wrapped-pst-store-provider.md)
+- [Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
     
 - Nach ein gepackten PST-Anbieter initialisiert wird, müssen Sie Funktionen implementieren, sodass MAPI- und die MAPI-Warteschlange auf dem gepackten PST-Anbieter anmelden können.
     
-- [Verwenden eines Anbieters gepackten PST-Speichers](using-a-wrapped-pst-store-provider.md)
+- [Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
     
 - Zum Verwenden einer gepackten PST-Speichers umgebrochen Anbieter die **[IMAPISupport::IUnknown](imapisupportiunknown.md)** -Schnittstelle zum Implementieren von allgemeinen Text fließt um müssen PST-Speicher-Anbieter Aufgaben. 
     
-- [Herunterfahren von einem Anbieter gepackten PST-Datei](shutting-down-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
     
 - Nach Abschluss der mit einem gepackten PST-Anbieter, müssen Sie die gepackten PST-Speicheranbieter ordnungsgemäß herunterfahren.
     
@@ -61,7 +61,7 @@ Der umbrochen PST Store Beispielanbieter verwendet den Persönliche Ordner-Datei
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [Entwickeln eines Providers MAPI-Nachrichtenspeicher](developing-a-mapi-message-store-provider.md)
 

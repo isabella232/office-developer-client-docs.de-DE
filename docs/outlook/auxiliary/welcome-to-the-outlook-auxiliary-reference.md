@@ -30,17 +30,17 @@ Die grundlegende Diskussion umfasst die folgenden Themen:
   
 - [Anti-Spam-Einstellungen](about-anti-spam-settings.md)
     
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)
     
 - [Suchen den Nachrichten-Downloadverlauf für ein POP3-Konto](locating-the-message-download-history-for-a-pop3-account.md)
     
 - [Analysieren den Nachrichten-Downloadverlauf für ein POP3-Konto](parsing-the-message-download-history-for-a-pop3-account.md)
     
-- [Zur Konfliktbehebung für benutzerdefinierte Elementtypen](about-conflict-resolution-for-custom-item-types.md)
+- [Informationen zur Konfliktbehebung für benutzerdefinierte Typen](about-conflict-resolution-for-custom-item-types.md)
     
-- [Informationen zum Zeitpunkt letzten Aktualisierung des eines Offlineadressbuchs](about-the-last-update-time-of-an-offline-address-book.md)
+- [Informationen zum letzten Aktualisierungszeitpunkt eines Offlineadressbuchs](about-the-last-update-time-of-an-offline-address-book.md)
     
-- [Zum Registrieren einer neuen Domäne für die automatische Konfiguration](about-registering-a-new-domain-for-automatic-configuration.md)
+- [Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration](about-registering-a-new-domain-for-automatic-configuration.md)
     
 - [Über Besprechungsanfragen als aktualisierte Informationen und vollständige Aktualisierungen](about-meeting-requests-as-informational-updates-and-full-updates.md)
     
@@ -60,21 +60,21 @@ Der Verweis Inhalt umfasst Folgendes:
     
 - Die [Frei/Gebucht-API](about-the-free-busy-api.md) bietet Informationen zu bestimmten Benutzerkonten innerhalb eines bestimmten Zeitraums Frei-/Gebucht-Status. 
 
-## <a name="sample-tasks"></a>Beispielaufgaben (engl.)
+## <a name="sample-tasks"></a>Beispielaufgaben
 
 Die folgenden: Vorgehensweise Beispielaufgaben in der Outlook-Zusatzreferenz
     
 - [Bestimmen Sie, ob ein Outlook-Element geändert, jedoch nicht gespeichert (Outlook-Zusatzreferenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
-- [Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
+- [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
     
-- [Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
+- [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
     
-- [Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
+- [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
     
 - [Gibt an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) anzeigen](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
     
-- [Verwenden Sie relative Zeit Zugriff auf Frei/Gebucht-Daten](how-to-use-relative-time-to-access-free-busy-data.md)
+- [Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten](how-to-use-relative-time-to-access-free-busy-data.md)
     
 Die Referenz für jede API enthält Konstanten, Typdefinitionen und Schnittstellen, die Entwickler implementieren muss, um die zusätzlichen Funktionen verwenden.
   

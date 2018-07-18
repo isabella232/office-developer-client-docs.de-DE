@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAttachContentLocation-Eigenschaft
+title: PidTagAttachContentLocation (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794079"
 ---
-# <a name="pidtagattachcontentlocation-canonical-property"></a>Kanonische PidTagAttachContentLocation-Eigenschaft
+# <a name="pidtagattachcontentlocation-canonical-property"></a>PidTagAttachContentLocation (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Die Inhaltsspeicherort Kopfzeile der e-Mail-Anlagen Multipurpose Internet Mail E
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen den Inhaltsspeicherort Hostheader für die entsprechenden MIME-Textkörper dar. 
   

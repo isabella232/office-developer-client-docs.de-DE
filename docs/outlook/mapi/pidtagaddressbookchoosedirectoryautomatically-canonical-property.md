@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAddressBookChooseDirectoryAutomatically-Eigenschaft
+title: PidTagAddressBookChooseDirectoryAutomatically (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794056"
 ---
-# <a name="pidtagaddressbookchoosedirectoryautomatically-canonical-property"></a>Kanonische PidTagAddressBookChooseDirectoryAutomatically-Eigenschaft
+# <a name="pidtagaddressbookchoosedirectoryautomatically-canonical-property"></a>PidTagAddressBookChooseDirectoryAutomatically (kanonische Eigenschaft)
 
   
   
@@ -30,7 +30,7 @@ Können Microsoft Outlook 2010 und Microsoft Outlook 2013, zum Auswählen der am
 |Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft entspricht der Einstellung **automatisch wählen Sie** im Dialogfeld Optionen für das Adressbuch. Wenn diese Eigenschaft im Abschnitt IID_CAPONE_PROF Profile vorhanden ist und auf **"true"**, das Adressbuch Dialogfeld nicht mehr standardmäßig auf den Container, die von der [SetDefaultDir](iaddrbook-setdefaultdir.md) -Methode angegeben, aber wählt ein Adressbuch, die festgelegt ist, Outlook 2010 oder Outlook 2013 hält entsprechenden für den Kontext, in dem das Dialogfeld angezeigt wurde. Beachten Sie, dass dies eine schlechte Erfahrung für Drittanbieter-adressbuchanbietern implementierte führen kann. 
   

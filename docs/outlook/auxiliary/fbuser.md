@@ -31,7 +31,7 @@ typedef struct tagFBUser
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _m_cbEid_
   

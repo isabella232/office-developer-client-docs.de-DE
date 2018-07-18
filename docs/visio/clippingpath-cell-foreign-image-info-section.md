@@ -18,7 +18,7 @@ ms.locfileid: "19796631"
 
 Enthält einen Verweis auf die Geometrie des Pfads, der ein Bild durch begrenzt wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Zelle **ClippingPath** auf einen gültigen Pfad verweist, wird das Bild abgeschnitten, damit das Bild in den Pfad gerendert wird. Wenn die Zelle **ClippingPath** leer ist oder einen ungültigen Eintrag enthält, wird das Bild mit einem rechteckigen Clip unter Verwendung der Skalierung und Offset-Werte gerendert werden. 
   

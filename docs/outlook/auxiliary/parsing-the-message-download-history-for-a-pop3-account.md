@@ -1,5 +1,5 @@
 ---
-title: Analysieren den Nachrichten-Downloadverlauf für ein POP3-Konto
+title: Analysieren des Nachrichtendownloadverlaufs für ein POP3-Konto
 manager: soliver
 ms.date: 09/17/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791172"
 ---
-# <a name="parsing-the-message-download-history-for-a-pop3-account"></a>Analysieren den Nachrichten-Downloadverlauf für ein POP3-Konto
+# <a name="parsing-the-message-download-history-for-a-pop3-account"></a>Analysieren des Nachrichtendownloadverlaufs für ein POP3-Konto
 
 In diesem Thema wird die Struktur des POP3-BLOBs, die den Nachricht Downloadverlauf von POP3-Konto zur Kennzeichnung der Nachrichten, die auf dieses Konto gelöscht oder heruntergeladen wurden darstellt.
 
@@ -89,7 +89,7 @@ Sie können auf ähnliche Weise die verbleibenden 22 Ressource Tags für dieses 
 ## <a name="see-also"></a>Siehe auch
 <a name="OL15Con_AuxRef_ParsingMsgsHistory_AdditionalRsc"> </a>
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)    
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)    
 - [Suchen den Nachrichten-Downloadverlauf für ein POP3-Konto](locating-the-message-download-history-for-a-pop3-account.md)    
 - [Analysieren des POP3 UIDL-Verlaufs](http://blogs.msdn.com/b/stephen_griffin/archive/2012/12/04/parsing-the-pop3-uidl-history.aspx)
     

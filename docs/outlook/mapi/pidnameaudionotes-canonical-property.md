@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameAudioNotes-Eigenschaft
+title: PidNameAudioNotes (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793948"
 ---
-# <a name="pidnameaudionotes-canonical-property"></a>Kanonische PidNameAudioNotes-Eigenschaft
+# <a name="pidnameaudionotes-canonical-property"></a>PidNameAudioNotes (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Notizen in Textform, die eine Sprachnachricht angefügt sind.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Unified messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um ein Endbenutzer zum Lesen und Bearbeiten von Audionotizen direkt auf einer Sprachnachricht zu ermöglichen, bietet ein Client ein Bearbeitungsfeld, in dem der Benutzer eine Reihe von Notizen eingeben kann, die diese Eigenschaft des VoIP-Message-Objekts hinzugefügt werden.
   

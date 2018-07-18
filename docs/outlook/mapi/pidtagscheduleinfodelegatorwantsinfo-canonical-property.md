@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoDelegatorWantsInfo-Eigenschaft
+title: PidTagScheduleInfoDelegatorWantsInfo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795072"
 ---
-# <a name="pidtagscheduleinfodelegatorwantsinfo-canonical-property"></a>Kanonische PidTagScheduleInfoDelegatorWantsInfo-Eigenschaft
+# <a name="pidtagscheduleinfodelegatorwantsinfo-canonical-property"></a>PidTagScheduleInfoDelegatorWantsInfo (kanonische Eigenschaft)
 
   
   

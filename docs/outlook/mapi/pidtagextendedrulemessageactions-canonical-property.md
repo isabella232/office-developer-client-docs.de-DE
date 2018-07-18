@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExtendedRuleMessageActions-Eigenschaft
+title: PidTagExtendedRuleMessageActions (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794378"
 ---
-# <a name="pidtagextendedrulemessageactions-canonical-property"></a>Kanonische PidTagExtendedRuleMessageActions-Eigenschaft
+# <a name="pidtagextendedrulemessageactions-canonical-property"></a>PidTagExtendedRuleMessageActions (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält zusätzliche Informationen zu den benannten Eigenschaften in einer Nach
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf eine Nachricht FAI festgelegt werden. Diese Eigenschaft dient dem gleichen Zweck als **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)), jedoch enthält zusätzliche Informationen zur Version der benannten Eigenschaften in die Regelaktion gespeichert und die Regel sowie Informationen zu den Aktionen werden Durch diese Regel ausgeführt. Alle String-Werten, die in einem beliebigen Teil des Puffers Aktion verwendet, um Aktionen enthalten enthalten sind, muss im Unicode-Format.
   

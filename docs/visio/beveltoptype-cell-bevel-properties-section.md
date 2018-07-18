@@ -34,7 +34,7 @@ Bestimmt den Typ der Abschrägung auf oberen Rand eines Shapes.
 |11  <br/> |Festplatte Edge Abschrägung  <br/> |
 |12  <br/> |Art Deko Abschrägung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **BevelTopType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

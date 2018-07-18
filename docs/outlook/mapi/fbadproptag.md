@@ -55,7 +55,7 @@ FALSE
   
 > Das Tag für die angegebene Eigenschaft ist ein gültiges Tag der MAPI-Eigenschaft.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktion **FBadPropTag** überprüft das angegebene Eigenschaftstag basierend auf MAPI-Definitionen. Sures, die von der Eigenschaftstyp ist eine der Typen, die durch MAPI und die Bezeichner der wird definiert, um dieses Typs werden, erleichtern. 
   

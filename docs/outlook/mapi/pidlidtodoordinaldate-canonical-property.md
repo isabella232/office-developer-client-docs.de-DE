@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidToDoOrdinalDate-Eigenschaft
+title: PidLidToDoOrdinalDate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793876"
 ---
-# <a name="pidlidtodoordinaldate-canonical-property"></a>Kanonische PidLidToDoOrdinalDate-Eigenschaft
+# <a name="pidlidtodoordinaldate-canonical-property"></a>PidLidToDoOrdinalDate (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Bestimmt die Sortierreihenfolge der Objekte in einer konsolidierten Aufgabenlist
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein Objekt gekennzeichnet ist, muss diese Eigenschaft auf die aktuelle Zeit in koordinierter Weltzeit (UTC) festgelegt werden. 
   
@@ -65,7 +65,7 @@ Mapidefs.h
 
 
 
-[Kanonische PidLidToDoSubOrdinal-Eigenschaft](pidlidtodosubordinal-canonical-property.md)
+[PidLidToDoSubOrdinal (kanonische Eigenschaft)](pidlidtodosubordinal-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

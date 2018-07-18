@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796946"
 ---
-# <a name="eventdblclick-cell-events-section"></a>Zelle "EventDblClick" (Abschnitt "Events")
+# <a name="eventdblclick-cell-events-section"></a>EventDblClick Cell (Events Section)
 
 Eine Ereigniszelle, die ausgewertet wird, wenn Sie auf ein Shape doppelklicken.
   
@@ -24,13 +24,13 @@ Eine Ereigniszelle, die ausgewertet wird, wenn Sie auf ein Shape doppelklicken.
 
 Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.
   
-Wenn Sie einen Verweis auf die Zelle EventDblClick nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle EventDblClick aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | EventDblClick  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle EventDblClick aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle EventDblClick aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

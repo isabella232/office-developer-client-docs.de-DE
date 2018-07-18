@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRuleSequence-Eigenschaft
+title: PidTagRuleSequence (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795065"
 ---
-# <a name="pidtagrulesequence-canonical-property"></a>Kanonische PidTagRuleSequence-Eigenschaft
+# <a name="pidtagrulesequence-canonical-property"></a>PidTagRuleSequence (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Ein Wert verwendet, um die Reihenfolge zu bestimmen, in der Regeln ausgewertet u
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Regeln werden in der Reihenfolge ihrer aufsteigender Reihenfolge der dieser Wert ausgewertet. Die Auswertungsreihenfolge für Regeln mit den gleichen Wert in dieser Eigenschaft ist nicht definiert.
   

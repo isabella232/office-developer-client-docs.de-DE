@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTextAttachmentCharset-Eigenschaft
+title: PidTagTextAttachmentCharset (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795265"
 ---
-# <a name="pidtagtextattachmentcharset-canonical-property"></a>Kanonische PidTagTextAttachmentCharset-Eigenschaft
+# <a name="pidtagtextattachmentcharset-canonical-property"></a>PidTagTextAttachmentCharset (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine e-Mail-Nachrichtenanhang Zeichen festgelegter Wert.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail-Anlage  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft Daten aus einem Feld der MIME-Inhaltstyp-Header, die mit beginnt abgeleitet ist "Text /", wenn der Parameter "Charset" vorhanden ist.
   

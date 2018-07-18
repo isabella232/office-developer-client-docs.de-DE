@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796530"
 ---
-# <a name="blue-function"></a>BLUE-Funktion
+# <a name="blue-function"></a>BLUE Function
 
 Gibt die Blaukomponente einer Farbe zurück. Der Rückgabewert ist eine ganze Zahl im Bereich von 0 bis einschließlich 255. Die Funktion gibt 0 für ungültige Eingabe.
   

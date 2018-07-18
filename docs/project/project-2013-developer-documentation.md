@@ -75,7 +75,7 @@ Die neuen Themen umfassen Folgendes:
   
 - [Erstellen einer SharePoint gehosteten Project Server-add-ins](create-a-sharepoint-hosted-project-server-add-in.md) veranschaulicht, wie mithilfe von Visual Studio für die remote-Entwicklung einer App, die mit Project Server 2013 und Project Online verwendet werden können. 
     
-- [Architektur von Project Server 2013](project-server-2013-architecture.md) erläutert die wichtigsten neuen Features von Project Server-Plattform. 
+- [Project Server 2013 architecture](project-server-2013-architecture.md) erläutert die wichtigsten neuen Features der Project Server-Plattform. 
     
 - [Erste Schritte mit dem Project Server 2013 JavaScript-Objektmodell](getting-started-with-the-project-server-2013-javascript-object-model.md) zeigt, wie Webanwendungen entwickeln, die Project Server zugreifen können. 
     
@@ -103,7 +103,7 @@ Es gibt zwei Abschnitte auf oberster Ebene in Project 2013 SDK:
     
 - Im Abschnitt [Project Server 2013 Class Library und Web-Dienstverweises](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) dokumentiert das Objektmodell der öffentlichen Assemblys, die Microsoft.ProjectServer.Client.dll-Assembly für das CSOM und der PSI-Dienste. 
     
-Im Abschnitt **Konzept und Gewusst wie-Artikel** umfasst Folgendes: 
+Der Abschnitt **Konzept und Anleitungen** enthält Folgendes: 
   
 - [Neuigkeiten und was nicht mehr vorhandene für Entwickler (engl.)](updates-for-developers-in-project-2013.md) beschreibt die wichtigsten Features für neue Programmierbarkeit und veraltete Features in Project 2013. 
     
@@ -121,7 +121,7 @@ Im Abschnitt **Konzept und Gewusst wie-Artikel** umfasst Folgendes:
 
 - [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md)
     
-- [Architektur von Project Server 2013](project-server-2013-architecture.md)
+- [Project Server 2013-Architektur](project-server-2013-architecture.md)
     
 - [Project 2013 SDK-Download](https://www.microsoft.com/en-us/download/details.aspx?id=30435%20)
     

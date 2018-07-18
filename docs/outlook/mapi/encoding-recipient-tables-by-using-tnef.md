@@ -1,5 +1,5 @@
 ---
-title: Empfänger Tabellen mithilfe von TNEF-Codierung
+title: Codieren von Empfängertabellen mit TNEF
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791637"
 ---
-# <a name="encoding-recipient-tables-by-using-tnef"></a>Empfänger Tabellen mithilfe von TNEF-Codierung
+# <a name="encoding-recipient-tables-by-using-tnef"></a>Codieren von Empfängertabellen mit TNEF
 
   
   

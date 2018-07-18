@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPhysicalDeliveryReportRequest-Eigenschaft
+title: PidTagPhysicalDeliveryReportRequest (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794785"
 ---
-# <a name="pidtagphysicaldeliveryreportrequest-canonical-property"></a>Kanonische PidTagPhysicalDeliveryReportRequest-Eigenschaft
+# <a name="pidtagphysicaldeliveryreportrequest-canonical-property"></a>PidTagPhysicalDeliveryReportRequest (kanonische Eigenschaft)
 
   
   

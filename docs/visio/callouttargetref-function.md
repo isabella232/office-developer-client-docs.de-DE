@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796550"
 ---
-# <a name="callouttargetref-function"></a>CALLOUTTARGETREF-Funktion
+# <a name="callouttargetref-function"></a>CALLOUTTARGETREF Function
 
 Gibt eine Shape-Referenz auf das übergeordnete Shape des Beschriftungs-Shapes zurück.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

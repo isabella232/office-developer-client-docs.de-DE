@@ -66,7 +66,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clientanwendungen rufen Sie die **IMAPIFormContainer::CalcFormPropSet** -Methode, um ein Array von Eigenschaften, die alle Formen in einem Formular Container installiert abzurufen. **IMAPIFormContainer::CalcFormPropSet** funktioniert wie die [IMAPIFormMgr::CalcFormPropSet](imapiformmgr-calcformpropset.md) -Methode, außer dass sie für jedes Formular, das in einem bestimmten Container registriert ausgeführt wird. 
   
@@ -88,5 +88,5 @@ Wenn ein Client die Option MAPI_UNICODE _UlFlags_übergibt, werden alle zurückg
   
 [SMAPIFormPropArray](smapiformproparray.md)
   
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 

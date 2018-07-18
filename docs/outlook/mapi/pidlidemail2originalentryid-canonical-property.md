@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidEmail2OriginalEntryId-Eigenschaft
+title: PidLidEmail2OriginalEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793515"
 ---
-# <a name="pidlidemail2originalentryid-canonical-property"></a>Kanonische PidLidEmail2OriginalEntryId-Eigenschaft
+# <a name="pidlidemail2originalentryid-canonical-property"></a>PidLidEmail2OriginalEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die **EntryId** des Objekts, das den zweiten e-Mail-Adresse entspricht.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss entweder eine einmalige **EntryId** für dieses e-Mail-Adresse oder ein gültiges Adressbuch Objekt **EntryId**.
   

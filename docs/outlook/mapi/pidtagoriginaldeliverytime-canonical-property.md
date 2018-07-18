@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalDeliveryTime-Eigenschaft
+title: PidTagOriginalDeliveryTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794676"
 ---
-# <a name="pidtagoriginaldeliverytime-canonical-property"></a>Kanonische PidTagOriginalDeliveryTime-Eigenschaft
+# <a name="pidtagoriginaldeliverytime-canonical-property"></a>PidTagOriginalDeliveryTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Eine Kopie der Originalnachricht Übermittlung Datum und Uhrzeit in einem Thread
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird von der ursprünglichen **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))-Eigenschaft in den nachfolgenden Antworten oder Weiterleiten Vorgänge kopiert und in Lese- und nonread Berichten verwendet. Übermittlungsberichte verwenden Sie die Eigenschaft **PR_DELIVER_TIME** ([PidTagDeliverTime](pidtagdelivertime-canonical-property.md)).
   

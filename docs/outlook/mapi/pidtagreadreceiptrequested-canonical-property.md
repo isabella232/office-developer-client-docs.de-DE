@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReadReceiptRequested-Eigenschaft
+title: PidTagReadReceiptRequested (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794865"
 ---
-# <a name="pidtagreadreceiptrequested-canonical-property"></a>Kanonische PidTagReadReceiptRequested-Eigenschaft
+# <a name="pidtagreadreceiptrequested-canonical-property"></a>PidTagReadReceiptRequested (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn der Absender eine Nachricht möchte Nachrichtensystem einen 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf TRUE festgelegt sein, um die Werte in der **PR_READ_RECEIPT_ENTRYID** ([PidTagReadReceiptEntryId](pidtagreadreceiptentryid-canonical-property.md)) und **PR_READ_RECEIPT_SEARCH_KEY** ([PidTagReadReceiptSearchKey](pidtagreadreceiptsearchkey-canonical-property.md)) Eigenschaften zu überprüfen.
   

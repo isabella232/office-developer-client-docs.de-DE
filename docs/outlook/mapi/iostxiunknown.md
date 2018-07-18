@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792735"
 ---
-# <a name="iostx--iunknown"></a>IOSTX: IUnknown
+# <a name="iostx--iunknown"></a>IOSTX : IUnknown
 
   
   
@@ -45,7 +45,7 @@ Stellt Synchronisierungsmethoden bereit. Diese Schnittstelle ruft die erforderli
 |[SetSyncResult](iostx-setsyncresult.md) <br/> |Das Ergebnis der Synchronisierung festgelegt.  <br/> |
 | *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein Client hochgeladen oder Ordner und Ordnerinhalte in einem lokalen Speicher synchronisiert, verschiebt es den lokalen Speicher von einem Zustand zu einem anderen wie in der Statusübergangsdiagramm in [Über die Replikation Zustandsautomat](about-the-replication-state-machine.md)dargestellt. Es folgt der Reihenfolge von Ereignissen für den Client auf den lokalen Speicher von einem Zustand in einen anderen verschieben:
   
@@ -69,7 +69,7 @@ Insbesondere verwendet beim Download von Nachrichtenelemente der Client **IOSTX:
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
 

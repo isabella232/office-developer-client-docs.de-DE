@@ -29,7 +29,7 @@ Finden Sie unter [IOlkAccount](iolkaccount.md).
 |Eigenschafts-Tag:  <br/> |0x00190102  <br/> |
 |Access:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Abrufen Sie oder festlegen Sie dieser Eigenschaft mithilfe von [IOlkAccount::GetProp](iolkaccount-getprop.md) oder [IOlkAccount::SetProp](iolkaccount-setprop.md), jeweils.
   

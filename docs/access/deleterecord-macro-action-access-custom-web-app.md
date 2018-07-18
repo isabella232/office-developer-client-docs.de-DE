@@ -5,7 +5,7 @@ ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 071ef6c8-ee0a-4092-8f41-bbb115f5eeea
-description: Die DatensatzLöschen-Aktion können Sie einen Datensatz löschen.
+description: Mit der DatensatzLöschen -Aktion können Sie einen Datensatz löschen.
 ms.openlocfilehash: 7511de86b68c35921462e538e26c670d3a5e0ca8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

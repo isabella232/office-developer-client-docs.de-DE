@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDefaultStore-Eigenschaft
+title: PidTagDefaultStore (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794285"
 ---
-# <a name="pidtagdefaultstore-canonical-property"></a>Kanonische PidTagDefaultStore-Eigenschaft
+# <a name="pidtagdefaultstore-canonical-property"></a>PidTagDefaultStore (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Nachrichtenspeicher Standard-Informationsspeicher in der
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird als eine Spalte in der Nachricht Store Tabelle angezeigt. Der Wert basiert auf **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)). 
   

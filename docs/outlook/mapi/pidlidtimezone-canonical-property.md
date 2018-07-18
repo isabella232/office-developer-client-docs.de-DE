@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTimeZone-Eigenschaft
+title: PidLidTimeZone (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793884"
 ---
-# <a name="pidlidtimezone-canonical-property"></a>Kanonische PidLidTimeZone-Eigenschaft
+# <a name="pidlidtimezone-canonical-property"></a>PidLidTimeZone (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt Informationen über die Zeitzone einer Besprechungsserie.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist schreibgeschützt, wenn die **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft nicht festgelegt ist, aber die **LID_IS_RECURRING** ([PidLidIsRecurring](pidlidisrecurring-canonical-property.md))-Eigenschaft ist TRUE und **LID_IS_EXCEPTION** ([ PidLidIsException](pidlidisexception-canonical-property.md))-Eigenschaft lautet FALSE. Das untere Wort gibt einen Index in einer Tabelle, die Informationen zur Zeitzone enthält. Die obere Wort ist nur das höchste Bit gelesen werden. Wenn dieses Bit gesetzt ist, klicken Sie dann berücksichtigt die Zeitzone auf die verwiesen wird nicht, dass Sommerzeit (Ziel), andernfalls die neuen Sommerzeitregeln Datumsangaben in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx) beschrieben ausgeführt wird. 
   

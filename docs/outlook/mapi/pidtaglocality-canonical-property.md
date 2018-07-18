@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLocality-Eigenschaft
+title: PidTagLocality (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794567"
 ---
-# <a name="pidtaglocality-canonical-property"></a>Kanonische PidTagLocality-Eigenschaft
+# <a name="pidtaglocality-canonical-property"></a>PidTagLocality (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen der Ort des Empfängers, wie die Stadt oder Ort.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Theys werden durch den Empfänger und ihre Organisation definiert.
   

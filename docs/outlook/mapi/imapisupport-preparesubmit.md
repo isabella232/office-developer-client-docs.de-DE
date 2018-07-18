@@ -50,7 +50,7 @@ S_OK
   
 > Die Nachricht wurde erfolgreich vorbereitet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::PrepareSubmit** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **PrepareSubmit** in ihrer Implementierung der [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode, um eine Nachricht für die Übermittlung an die Warteschlange MAPI vorbereiten. 
   

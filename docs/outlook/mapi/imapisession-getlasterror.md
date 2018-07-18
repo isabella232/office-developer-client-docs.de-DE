@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Die Option MAPI_UNICODE wurde festgelegt, und die Sitzung Unicode nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::GetLastError** -Methode ruft Informationen über den letzten Fehler, der durch einen Aufruf der Methode **IMAPISession** zurückgegeben wurde. Clients können die Benutzer mit ausführlichen Informationen zu dem Fehler bereitstellen, indem Sie diese Informationen in einem Dialogfeld einschließlich. 
   

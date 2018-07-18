@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAccount-Eigenschaft
+title: PidTagAccount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794050"
 ---
-# <a name="pidtagaccount-canonical-property"></a>Kanonische PidTagAccount-Eigenschaft
+# <a name="pidtagaccount-canonical-property"></a>PidTagAccount (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Der Name des Empfängers Konto enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert.
   
@@ -70,7 +70,7 @@ mapidefs.h
 
 
 
-[IMailUser: IMAPIProp](imailuserimapiprop.md)
+[IMailUser : IMAPIProp](imailuserimapiprop.md)
 
 
 [Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)

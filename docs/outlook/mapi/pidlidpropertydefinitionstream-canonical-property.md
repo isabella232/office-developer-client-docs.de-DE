@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidPropertyDefinitionStream-Eigenschaft
+title: PidLidPropertyDefinitionStream (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793715"
 ---
-# <a name="pidlidpropertydefinitionstream-canonical-property"></a>Kanonische PidLidPropertyDefinitionStream-Eigenschaft
+# <a name="pidlidpropertydefinitionstream-canonical-property"></a>PidLidPropertyDefinitionStream (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt Definitionen der benutzerdefinierten Felder und Datenbindung Einstellunge
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert der Eigenschaft **PidLidPropertyDefinitionStream** wird als Teil der Definition der benutzerdefiniertes Formular für die Nachricht gespeichert. 
   
@@ -59,11 +59,11 @@ Mapidefs.h
 
 
 
-[Outlook-Elemente und Felder](outlook-items-and-fields.md)
+[Elemente und Felder in Outlook](outlook-items-and-fields.md)
   
-[Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu.](how-to-add-a-definition-for-a-new-user-defined-field.md)
+[Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
   
-[PropertyDefinition Stream-Beispiel](propertydefinition-stream-sample.md)
+[Beispiel für PropertyDefinition-Stream](propertydefinition-stream-sample.md)
   
 [MAPI-Eigenschaften](mapi-properties.md)
   

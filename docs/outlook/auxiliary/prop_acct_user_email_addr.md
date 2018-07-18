@@ -29,7 +29,7 @@ Finden Sie unter [IOlkAccount](iolkaccount.md).
 |Eigenschafts-Tag:  <br/> |0x000C001F  <br/> |
 |Access:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **PROP_ACCT_USER_EMAIL_ADDR** voraussichtlich nicht auf jedem Konto vorhanden sein. Beispielsweise konnte ein Exchange-Konto verfügen, [PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md) jedoch nicht **PROP_ACCT_USER_EMAIL_ADDR**, während für ein SMTP/POP3-Konto an, die über diese Situation rückgängig gemacht.
   

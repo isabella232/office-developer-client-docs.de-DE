@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidRecallTime-Eigenschaft
+title: PidLidRecallTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793736"
 ---
-# <a name="pidlidrecalltime-canonical-property"></a>Kanonische PidLidRecallTime-Eigenschaft
+# <a name="pidlidrecalltime-canonical-property"></a>PidLidRecallTime (kanonische Eigenschaft)
 
   
   

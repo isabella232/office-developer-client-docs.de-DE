@@ -1,5 +1,5 @@
 ---
-title: Neukonfigurieren eines Transportdienstes
+title: Neukonfigurieren eines Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795351"
 ---
-# <a name="reconfiguring-a-transport-provider"></a>Neukonfigurieren eines Transportdienstes
+# <a name="reconfiguring-a-transport-provider"></a>Neukonfigurieren eines Transportanbieters
 
   
   

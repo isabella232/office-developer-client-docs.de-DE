@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskFRecurring-Eigenschaft
+title: PidLidTaskFRecurring (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793827"
 ---
-# <a name="pidlidtaskfrecurring-canonical-property"></a>Kanonische PidLidTaskFRecurring-Eigenschaft
+# <a name="pidlidtaskfrecurring-canonical-property"></a>PidLidTaskFRecurring (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob der Vorgang ein Serienmuster enthält.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie diese Eigenschaft nicht festgelegt lassen, wird der Standardwert FALSE angenommen. Wenn sie auf true festgelegt ist, die **DispidTaskRecur** ([PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)) festgelegt ist und **DispidTaskDeadOccur** ([PidLidTaskDeadOccurrence](pidlidtaskdeadoccurrence-canonical-property.md)) Eigenschaften auch als festgelegt werden müssen, die in [[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)angegeben werden.
   

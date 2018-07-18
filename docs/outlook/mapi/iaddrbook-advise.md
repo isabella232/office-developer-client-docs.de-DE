@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID _LpEntryID_ übergebenen kann von jedem der adressbuchanbietern implementierte im Profil behandelt werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients und Dienstanbieter Aufrufen die **Advise** -Methode für einen bestimmten Typ oder Typen der Benachrichtigung auf ein Adressbuch Adresseintrag registriert. Die Typen der Benachrichtigung werden durch die mit der _UlEventMask_ -Parameter übergebene Ereignismaske angezeigt. 
   
@@ -113,5 +113,5 @@ Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event No
   
 [Benachrichtigung](notification.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

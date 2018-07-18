@@ -43,8 +43,8 @@ Clients, die Dienstanbieter und Nachricht Dienstkonfiguration unterstützen drei
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md) 
-- [IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)  
-- [IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+- [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md) 
+- [IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)  
+- [IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 - [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
 

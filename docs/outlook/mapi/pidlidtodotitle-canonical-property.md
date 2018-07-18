@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidToDoTitle-Eigenschaft
+title: PidLidToDoTitle (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793879"
 ---
-# <a name="pidlidtodotitle-canonical-property"></a>Kanonische PidLidToDoTitle-Eigenschaft
+# <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält Benutzer festzulegen Text, um dieses Objekt "Message" in einer konsolid
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf eine Aufgabe nicht festgelegt werden. Um eine leere Eigenschaft anzugeben, legen Sie diese Eigenschaft nicht auf die leere Zeichenfolge, aber stattdessen zu löschen. 
   
@@ -67,7 +67,7 @@ Mapidefs.h
 
 
 
-[Kanonische PidTagNormalizedSubject-Eigenschaft](pidtagnormalizedsubject-canonical-property.md)
+[PidTagNormalizedSubject (kanonische Eigenschaft)](pidtagnormalizedsubject-canonical-property.md)
   
 [Kanonische PidLidFlagRequest-Eigenschaft](pidlidflagrequest-canonical-property.md)
 

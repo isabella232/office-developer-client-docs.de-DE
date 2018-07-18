@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAbDefaultDir-Eigenschaft
+title: PidTagAbDefaultDir (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794005"
 ---
-# <a name="pidtagabdefaultdir-canonical-property"></a>Kanonische PidTagAbDefaultDir-Eigenschaft
+# <a name="pidtagabdefaultdir-canonical-property"></a>PidTagAbDefaultDir (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID der Adressbuchcontainer zuerst angezeigt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

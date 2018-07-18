@@ -31,7 +31,7 @@ Verwaltet den Zugriff auf Konten und -Benachrichtigungen bezüglich kontoänderu
 
 |||
 |:-----|:-----|
-|["Init"](iolkaccountmanager-init.md) <br/> |Initialisiert den Kontomanager für die Verwendung.  <br/> |
+|[Initialisierung](iolkaccountmanager-init.md) <br/> |Initialisiert den Kontomanager für die Verwendung.  <br/> |
 |[DisplayAccountList](iolkaccountmanager-displayaccountlist.md) <br/> |Dialogfeld für die **Kontoeinstellungen** oder **Hinzufügen eines neuen Kontos** angezeigt.  <br/> |
 | *Platzhalter-member*  <br/> | *Dokumentierte oder nicht unterstützt*  <br/> |
 | *Platzhalter-member*  <br/> | *Dokumentierte oder nicht unterstützt*  <br/> |

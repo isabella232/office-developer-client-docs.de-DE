@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReferenceEntryId-Eigenschaft
+title: PidLidReferenceEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793737"
 ---
-# <a name="pidlidreferenceentryid-canonical-property"></a>Kanonische PidLidReferenceEntryId-Eigenschaft
+# <a name="pidlidreferenceentryid-canonical-property"></a>PidLidReferenceEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Verweis [ENTRYID](entryid.md) für den Kontakt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Falls vorhanden, sollte diese Eigenschaft auf den Wert der **EntryId** des Kontakts entsprechen. 
   

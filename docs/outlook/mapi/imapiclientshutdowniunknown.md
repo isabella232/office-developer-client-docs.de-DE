@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792087"
 ---
-# <a name="imapiclientshutdown--iunknown"></a>IMAPIClientShutdown: IUnknown
+# <a name="imapiclientshutdown--iunknown"></a>IMAPIClientShutdown : IUnknown
 
   
   
@@ -44,7 +44,7 @@ Ermöglicht einen MAPI-Client, um das schnelle Herunterfahren des Clientprozesse
 |[NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |Gibt an, fahren Sie der Zweck der MAPI-Client, fortsetzen.  <br/> |
 |[DoFastShutdown](imapiclientshutdown-dofastshutdown.md) <br/> |Gibt an, dass der MAPI-Client der Client sofort zu beenden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Schnelles Herunterfahren dient, dass ein MAPI-Client und alle geladenen MAPI-Anbieter mit dem der MAPI-Client eine aktive MAPI-Sitzung MAPI-Einstellungen und Daten gespeichert wurde. Auf diese Weise können den MAPI-Client, trennen alle externen Verweise und zu beenden, ohne Datenverlust verursacht. Ein MAPI-Client, der muss Schnelles Herunterfahren ausführen, muss die **IMAPIClientShutdown** -Schnittstelle verwenden. Der MAPI-Client kann einen Zeiger auf diese Schnittstelle abrufen, durch die QueryInterface-Methode für jedes Objekt [IMAPISession](imapisessioniunknown.md) aufrufen. 
   

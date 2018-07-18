@@ -28,7 +28,7 @@ Erstellt eine benannte [SRowSet](srowset.md) -Struktur, die eine angegebene Anza
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verwandte Struktur:  <br/> |**' Srowset '** <br/> |
+|Verwandte Struktur:  <br/> |**SRowSet** <br/> |
    
 ```cpp
 SizedSRowSet (_crow, _name)
@@ -44,7 +44,7 @@ __Namen_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um die neue Struktur verwenden, die als Zeiger auf eine **SRowSet** -Struktur aus dem Makro **SizedSRowSet** erzeugt, führen Sie die folgende Umwandlung: 
   
@@ -55,6 +55,6 @@ lpSRowSet = (LPSRowSet) &SizedSRowSet;
 
 ## <a name="see-also"></a>Siehe auch
 
-- [' Srowset '](srowset.md)
+- [SRowSet](srowset.md)
 - [Makros im Zusammenhang mit Strukturen](macros-related-to-structures.md)
 

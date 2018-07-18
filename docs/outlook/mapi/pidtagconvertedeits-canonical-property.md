@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagConvertedEits-Eigenschaft
+title: PidTagConvertedEits (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794268"
 ---
-# <a name="pidtagconvertedeits-canonical-property"></a>Kanonische PidTagConvertedEits-Eigenschaft
+# <a name="pidtagconvertedeits-canonical-property"></a>PidTagConvertedEits (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für die Arten von Text in einer Nachricht nach der Ko
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt an, welche codierten Informationstypen (EITs) verwendet wurden, um die Textkomponenten der Nachricht zu konvertieren.
   

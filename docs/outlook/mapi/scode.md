@@ -30,7 +30,7 @@ typedef ULONG SCODE;
 
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Datentyp **SCODE** ist identisch mit der [HRESULT](hresult.md) -Datentyp. 
   

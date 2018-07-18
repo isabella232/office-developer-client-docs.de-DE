@@ -160,7 +160,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Funktion, mit dem **MSGSERVICEENTRY** Funktionsprototyp definiert ermöglicht Message Dienste so konfigurieren Sie selbst oder andere dienstspezifische Aktionen auszuführen. Die Funktion stellt bereit in erster Linie ein Dialogfeld, in dem der Benutzer den Dienst spezifischen Einstellungen ändern kann. Sie können auch programmgesteuerte Konfiguration unterstützt werden mithilfe des im _LpProps_ -Parameter übergebenen Wertearrays-Eigenschaft. Programmgesteuerte Konfiguration ist optional, es sei denn, der Dienst der Profil-Assistent unterstützt, ist es erforderlich. 
   

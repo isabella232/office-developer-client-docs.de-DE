@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskAccepted-Eigenschaft
+title: PidLidTaskAccepted (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793819"
 ---
-# <a name="pidlidtaskaccepted-canonical-property"></a>Kanonische PidLidTaskAccepted-Eigenschaft
+# <a name="pidlidtaskaccepted-canonical-property"></a>PidLidTaskAccepted (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob eine Aufgabe zugewiesenen auf eine Aufgabenanfrage beantwortet hat.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Client wird diese Eigenschaft auf false festgelegt, eine neue Aufgabe, oder des Clients wird diese Eigenschaft auf TRUE festgelegt, wenn eine Aufgabe angenommen oder abgelehnt wird. Bleibt die Eigenschaft nicht festgelegt ist, wird davon ausgegangen, dass der Wert FALSE.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidRemoteTransport-Eigenschaft
+title: PidLidRemoteTransport (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793770"
 ---
-# <a name="pidlidremotetransport-canonical-property"></a>Kanonische PidLidRemoteTransport-Eigenschaft
+# <a name="pidlidremotetransport-canonical-property"></a>PidLidRemoteTransport (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, welches Konto das Headerelement zugeordnet wird, in erster Linie auf PO
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |Remote-Nachricht  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nur für Nachrichten mit einer Nachrichtenklasse IPM relevant. Remote. Microsoft Outlook behält eine Zuordnung von verschiedenen Konten, die auf einem bestimmten Speicher in einer Nachricht Ordner verknüpften Informationen (FAI) herunterladen möchten, aber es kann auch diese Informationen in der Registrierung beibehalten.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookSortFlag-Eigenschaft
+title: PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794182"
 ---
-# <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>Kanonische PidTagContactAddressBookSortFlag-Eigenschaft
+# <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Kennung, die TRUE ist, wenn Kontakte von Datei unter und FALSE sor
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.
   

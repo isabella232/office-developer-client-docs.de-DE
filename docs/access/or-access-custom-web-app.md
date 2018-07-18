@@ -31,7 +31,7 @@ Der **oder** -Operator verwendet das folgende Argument.
 |:-----|:-----|
 | *Boolescher Ausdruck*  <br/> |Ein beliebiger gültiger Ausdruck, der TRUE oder FALSE zurückgibt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn mehr als ein logischer Operator in einer Anweisung verwendet wird, werden nach **und** Operatoren **oder** Operatoren ausgewertet. Jedoch können Sie die Reihenfolge der Auswertung ändern, indem Sie Klammern verwenden. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagCreationTime
+title: PidTagCreationTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794266"
 ---
-# <a name="pidtagcreationtime-canonical-property"></a>Kanonische-Eigenschaft PidTagCreationTime
+# <a name="pidtagcreationtime-canonical-property"></a>PidTagCreationTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das Erstellungsdatum und die Uhrzeit einer Nachricht.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Nachrichtenspeicher wird diese Eigenschaft für jede Nachricht, das erstellt wird.
   

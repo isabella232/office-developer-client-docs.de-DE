@@ -28,7 +28,7 @@ ASIN (** *Anzahl* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Sinus des Winkels.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Sinus des Winkels.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

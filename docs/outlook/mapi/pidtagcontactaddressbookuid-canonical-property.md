@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookUid-Eigenschaft
+title: PidTagContactAddressBookUid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794189"
 ---
-# <a name="pidtagcontactaddressbookuid-canonical-property"></a>Kanonische PidTagContactAddressBookUid-Eigenschaft
+# <a name="pidtagcontactaddressbookuid-canonical-property"></a>PidTagContactAddressBookUid (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die UID, die in dieser Sitzung des Adressbuchs Kontakt identifiziert.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie mehrere Kontakt Adressbücher konfiguriert haben, müssen Sie diese Eigenschaft für jeden festlegen. 
   

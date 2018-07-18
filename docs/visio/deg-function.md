@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796834"
 ---
-# <a name="deg-function"></a>DEG-Funktion
+# <a name="deg-function"></a>DEG Function
 
 Konvertiert den Wert eines Winkels von Bogenmaß in Grad.
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792441"
 ---
-# <a name="imapisyncprogresscallback--iunknown"></a>IMAPISyncProgressCallback: IUnknown
+# <a name="imapisyncprogresscallback--iunknown"></a>IMAPISyncProgressCallback : IUnknown
 
   
   
@@ -47,7 +47,7 @@ ms.locfileid: "19792441"
 
 
 
-[IMAPISync: IUnknown](imapisynciunknown.md)
+[IMAPISync : IUnknown](imapisynciunknown.md)
 
 
 [MAPI-Schnittstellen](mapi-interfaces.md)

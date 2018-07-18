@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServerAccountIcon-Eigenschaft
+title: PidTagServerAccountIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795162"
 ---
-# <a name="pidtagserveraccounticon-canonical-property"></a>Kanonische PidTagServerAccountIcon-Eigenschaft
+# <a name="pidtagserveraccounticon-canonical-property"></a>PidTagServerAccountIcon (kanonische Eigenschaft)
 
   
   

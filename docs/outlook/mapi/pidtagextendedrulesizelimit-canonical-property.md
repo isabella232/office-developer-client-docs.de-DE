@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExtendedRuleSizeLimit-Eigenschaft
+title: PidTagExtendedRuleSizeLimit (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794365"
 ---
-# <a name="pidtagextendedrulesizelimit-canonical-property"></a>Kanonische PidTagExtendedRuleSizeLimit-Eigenschaft
+# <a name="pidtagextendedrulesizelimit-canonical-property"></a>PidTagExtendedRuleSizeLimit (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die maximale Größe in Bytes, die Benutzer für eine einzelne Regel "E
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft auf das Anmeldeobjekt festgelegt ist, sollte der Client die Größe der Eigenschaft **PR_EXTENDED_RULE_MSG_CONDITION** ([PidTagExtendedRuleMessageCondition](pidtagextendedrulemessagecondition-canonical-property.md)) unter der von dieser Eigenschaft angegebene Wert beibehalten. Dagegen sollte der Server einen Fehler zurück, wenn der Client versucht, eine binäre Eigenschaft festlegen, die zu groß ist.
   

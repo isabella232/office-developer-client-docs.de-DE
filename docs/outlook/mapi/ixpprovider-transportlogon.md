@@ -84,7 +84,7 @@ MAPI_E_UNKNOWN_LCID: Gebietsschemainformationen der Client kann nicht vom Anbiet
     
 MAPI_E_USER_CANCEL: Der Benutzer den Vorgang abgebrochen, in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange die **IXPProvider::TransportLogon** -Methode aufgerufen, um eine Anmeldung für einen Benutzer einzurichten. 
   
@@ -112,7 +112,7 @@ Wenn der Anbieter, dass alle erforderliche Informationen ist nicht im Profil fes
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IXPProvider: IUnknown](ixpprovideriunknown.md)  
+- [IXPProvider : IUnknown](ixpprovideriunknown.md)  
 - [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md)  
 - [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)  
 - [IXPLogon::AddressTypes](ixplogon-addresstypes.md)  

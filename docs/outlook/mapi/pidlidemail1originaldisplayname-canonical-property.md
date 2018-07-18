@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidEmail1OriginalDisplayName-Eigenschaft
+title: PidLidEmail1OriginalDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793513"
 ---
-# <a name="pidlidemail1originaldisplayname-canonical-property"></a>Kanonische PidLidEmail1OriginalDisplayName-Eigenschaft
+# <a name="pidlidemail1originaldisplayname-canonical-property"></a>PidLidEmail1OriginalDisplayName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den ersten Anzeigenamen, der die die e-Mail-Adresse entspricht, die für de
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Wert der Eigenschaft **dispidEmail1AddrType** ([PidLidEmail1AddressType](pidlidemail1addresstype-canonical-property.md)) "SMTP" ist, sollte der Wert der jeweiligen **dispidEmail1OriginalDisplayName** -Eigenschaft den Wert der jeweiligen **entsprechen. dispidEmail1EmailAddress** -Eigenschaft ([PidLidEmail1EmailAddress](pidlidemail1emailaddress-canonical-property.md)). Diese Eigenschaft zeigt eine alternative benutzerfreundliche Adresse, die in der **dispidEmail1EmailAddress** -Eigenschaft entspricht. 
   

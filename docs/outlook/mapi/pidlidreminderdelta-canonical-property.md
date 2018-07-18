@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReminderDelta-Eigenschaft
+title: PidLidReminderDelta (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793726"
 ---
-# <a name="pidlidreminderdelta-canonical-property"></a>Kanonische PidLidReminderDelta-Eigenschaft
+# <a name="pidlidreminderdelta-canonical-property"></a>PidLidReminderDelta (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das Intervall in Minuten zwischen dem Zeitpunkt, wann die Erinnerung zuerst
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf Kalender-Objekte festgelegt werden. Für alle Objekte, nicht-Kalender wird diese Eigenschaft auf "0 x 00000000" festgelegt werden und wird ignoriert. Wenn eine Erinnerung für eine Instanz von sich wiederholenden Calendar-Objekt geschlossen ist, wird der Wert dieser Eigenschaft in der Berechnung der Zeit Signal an die nächste Instanz verwendet. Einzelheiten über das Erstellen von Calendar-Objekt finden Sie unter [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx) . 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSupplementaryInfo-Eigenschaft
+title: PidTagSupplementaryInfo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795251"
 ---
-# <a name="pidtagsupplementaryinfo-canonical-property"></a>Kanonische PidTagSupplementaryInfo-Eigenschaft
+# <a name="pidtagsupplementaryinfo-canonical-property"></a>PidTagSupplementaryInfo (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Weitere Informationen zur Verwendung in einem Bericht enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten Informationen, die vom Message Transfer Agent generiert oder Adressbuchhierarchie im Zusammenhang mit dem Bericht. Es wird in der Regel für Lieferung oder Nondelivery Berichtstext verwendet, die mit der zugrunde liegenden messaging-System stammt.
   

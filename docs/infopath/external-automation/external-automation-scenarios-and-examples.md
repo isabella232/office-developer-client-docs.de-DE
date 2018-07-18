@@ -298,6 +298,6 @@ Im folgenden Beispiel wird ein leeres Formular öffnen, und füllen den Vornamen
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Microsoft Office InfoPath primären Interop-Assembly](about-the-microsoft-office-infopath-primary-interop-assembly.md)
-- [Über die InfoPath-XML-Interop-Assembly](about-the-infopath-xml-interop-assembly.md)
+- [Informationen zur Microsoft Office InfoPath Primary Interop-Assembly](about-the-microsoft-office-infopath-primary-interop-assembly.md)
+- [Informationen zur InfoPath XML Interop-Assembly](about-the-infopath-xml-interop-assembly.md)
 

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796831"
 ---
-# <a name="dayofyear-function"></a>DAYOFYEAR Function
+# <a name="dayofyear-function"></a>TAGDESJAHRES-Funktion
 
 Gibt eine ganze Zahl 1 und 366, die den laufenden Tag des Jahres in _Datetime_ oder _Expression_darstellt. Die DAYOFYEAR-Funktion verwendet den gregorianischen Kalender.
   
@@ -34,9 +34,9 @@ DAYOFYEAR ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Alle Zeitkomponenten in _Datetime_ oder _Expression_ wird verworfen. 
   

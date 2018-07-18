@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSpamTrustedRecipients-Eigenschaft
+title: PidTagSpamTrustedRecipients (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795168"
 ---
-# <a name="pidtagspamtrustedrecipients-canonical-property"></a>Kanonische PidTagSpamTrustedRecipients-Eigenschaft
+# <a name="pidtagspamtrustedrecipients-canonical-property"></a>PidTagSpamTrustedRecipients (kanonische Eigenschaft)
  
 **Betrifft**: Outlook 
   

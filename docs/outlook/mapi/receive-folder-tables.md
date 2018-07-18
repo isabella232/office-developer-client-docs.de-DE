@@ -1,5 +1,5 @@
 ---
-title: Ordner Tabellen empfangen
+title: Tabellen für Empfängerordner
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795347"
 ---
-# <a name="receive-folder-tables"></a>Ordner Tabellen empfangen
+# <a name="receive-folder-tables"></a>Tabellen für Empfängerordner
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportDisposition-Eigenschaft
+title: PidTagReportDisposition (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794967"
 ---
-# <a name="pidtagreportdisposition-canonical-property"></a>Kanonische PidTagReportDisposition-Eigenschaft
+# <a name="pidtagreportdisposition-canonical-property"></a>PidTagReportDisposition (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Gibt den Empfangsbestätigungsstatus für Nachrichten, die Empfangsbestätigunge
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgenden Werte sind gültig:
   

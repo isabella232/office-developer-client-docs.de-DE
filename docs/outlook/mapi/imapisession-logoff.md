@@ -63,7 +63,7 @@ S_OK
   
 > Der Vorgang zum Abmelden war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet. Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden. 
   

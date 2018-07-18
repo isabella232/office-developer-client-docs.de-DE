@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSubmitFlags-Eigenschaft
+title: PidTagSubmitFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795238"
 ---
-# <a name="pidtagsubmitflags-canonical-property"></a>Kanonische PidTagSubmitFlags-Eigenschaft
+# <a name="pidtagsubmitflags-canonical-property"></a>PidTagSubmitFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags, die Details zu einer Nachrichtenübermittlung 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für die Bitmaske **PR_SUBMIT_FLAGS** kann eine oder mehrere der folgenden Werte festgelegt werden: 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidWorkAddressStreet-Eigenschaft
+title: PidLidWorkAddressStreet (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793945"
 ---
-# <a name="pidlidworkaddressstreet-canonical-property"></a>Kanonische PidLidWorkAddressStreet-Eigenschaft
+# <a name="pidlidworkaddressstreet-canonical-property"></a>PidLidWorkAddressStreet (kanonische Eigenschaft)
 
   
   

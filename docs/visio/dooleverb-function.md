@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796884"
 ---
-# <a name="dooleverb-function"></a>DOOLEVERB-Funktion
+# <a name="dooleverb-function"></a>DOOLEVERB Function
 
 Führt eine Aktion für das OLE-Objekt.
   

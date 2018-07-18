@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidWorkAddress-Eigenschaft
+title: PidLidWorkAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793908"
 ---
-# <a name="pidlidworkaddress-canonical-property"></a>Kanonische PidLidWorkAddress-Eigenschaft
+# <a name="pidlidworkaddress-canonical-property"></a>PidLidWorkAddress (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Adresse des Kontakts die Arbeit abgeschlossen.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenschaften und basiert auf dem Gebietsschema des Clients.
   

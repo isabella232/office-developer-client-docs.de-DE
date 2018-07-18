@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameWordCount-Eigenschaft
+title: PidNameWordCount (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794017"
 ---
-# <a name="pidnamewordcount-canonical-property"></a>Kanonische PidNameWordCount-Eigenschaft
+# <a name="pidnamewordcount-canonical-property"></a>PidNameWordCount (kanonische Eigenschaft)
 
   
   

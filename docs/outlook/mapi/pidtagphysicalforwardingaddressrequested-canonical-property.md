@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagPhysicalForwardingAddressRequested-Eigenschaft
+title: PidTagPhysicalForwardingAddressRequested (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794791"
 ---
-# <a name="pidtagphysicalforwardingaddressrequested-canonical-property"></a>Kanonische PidTagPhysicalForwardingAddressRequested-Eigenschaft
+# <a name="pidtagphysicalforwardingaddressrequested-canonical-property"></a>PidTagPhysicalForwardingAddressRequested (kanonische Eigenschaft)
 
   
   

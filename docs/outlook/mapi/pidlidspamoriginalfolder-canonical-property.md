@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSpamOriginalFolder-Eigenschaft
+title: PidLidSpamOriginalFolder (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793812"
 ---
-# <a name="pidlidspamoriginalfolder-canonical-property"></a>Kanonische PidLidSpamOriginalFolder-Eigenschaft
+# <a name="pidlidspamoriginalfolder-canonical-property"></a>PidLidSpamOriginalFolder (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, welcher Ordner eine Nachricht in vorher in den junk-e-Mail-Ordner gefil
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft ist die **EntryID** des Ordners, der die Nachricht enthalten, bevor sie verschoben wurde. Diese Eigenschaft muss festgelegt werden, wenn eine Nachricht als Spam gekennzeichnet ist. 
   

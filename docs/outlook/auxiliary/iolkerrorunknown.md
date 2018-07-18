@@ -31,7 +31,7 @@ Zusätzliche Informationen zu den letzten Fehler.
 |:-----|:-----|
 |[GetLastError](iolkerrorunknown-getlasterror.md) <br/> |Ruft eine Meldungszeichenfolge für den angegebenen Fehler.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Schnittstelle stellt zusätzliche Informationen zu einem Fehler in [IOlkAccountManager](iolkaccountmanager.md), [IOlkAccountNotify](iolkaccountnotify.md)und [IOlkAccount](iolkaccount.md). Es ist außerdem die Basis-Schnittstelle für **IOlkAccountManager**, **IOlkAccountNotify**und **IOlkAccount**. 
   

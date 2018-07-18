@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFinderEntryId-Eigenschaft
+title: PidTagFinderEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794369"
 ---
-# <a name="pidtagfinderentryid-canonical-property"></a>Kanonische PidTagFinderEntryId-Eigenschaft
+# <a name="pidtagfinderentryid-canonical-property"></a>PidTagFinderEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID für den Ordner, in dem die Suchergebnisse in der Regel
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In dieser Eigenschaft enthaltenen Eintrags-ID hat das gleiche Format wie die [ENTRYID](entryid.md) -Struktur. 
   

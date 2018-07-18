@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidLogStart-Eigenschaft
+title: PidLidLogStart (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793657"
 ---
-# <a name="pidlidlogstart-canonical-property"></a>Kanonische PidLidLogStart-Eigenschaft
+# <a name="pidlidlogstart-canonical-property"></a>PidLidLogStart (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt das Startdatum und die Uhrzeit für die Journalnachricht.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zeit in koordinierter Weltzeit (UTC), wenn die Aktivität begann muss die Eigenschaft **DispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) entsprechen.
   

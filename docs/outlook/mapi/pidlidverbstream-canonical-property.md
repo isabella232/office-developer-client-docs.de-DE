@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidVerbStream-Eigenschaft
+title: PidLidVerbStream (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793915"
 ---
-# <a name="pidlidverbstream-canonical-property"></a>Kanonische PidLidVerbStream-Eigenschaft
+# <a name="pidlidverbstream-canonical-property"></a>PidLidVerbStream (kanonische Eigenschaft)
 
   
   

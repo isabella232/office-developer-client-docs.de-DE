@@ -1,5 +1,5 @@
 ---
-title: Gruppieren und durch die Beschränkung auf Tabellen in Nachrichtenspeicher-Anbieter
+title: Gruppieren und Einschränken von Tabellen in Nachrichtenspeicheranbietern
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791795"
 ---
-# <a name="grouping-and-restricting-tables-in-message-store-providers"></a>Gruppieren und durch die Beschränkung auf Tabellen in Nachrichtenspeicher-Anbieter
+# <a name="grouping-and-restricting-tables-in-message-store-providers"></a>Gruppieren und Einschränken von Tabellen in Nachrichtenspeicheranbietern
 
   
   
@@ -25,10 +25,10 @@ Clientanwendungen können Benutzer häufig besser steuern, wie der Inhalt eines 
   
 |IMAPITable **-Methode **|**Beschreibung**|
 |:-----|:-----|
-|[IMAPITable](imapitable-findrow.md) <br/> |Gibt die Tabelle Zeilen, die die angegebenen Kriterien entsprechen.  <br/> |
+|[IMAPITable::FindRow](imapitable-findrow.md) <br/> |Gibt die Tabelle Zeilen, die die angegebenen Kriterien entsprechen.  <br/> |
 |[IMAPITable::QueryColumns](imapitable-querycolumns.md) <br/> |Gibt die Gruppe von Spalten in einer Tabelle oder die Gruppe von aktuell verwendeten Spalten zurück.  <br/> |
 |[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> |Gibt eine oder mehrere Zeilen aus einer Tabelle, beginnend mit einer bestimmten Position zurück.  <br/> |
-|[Methode IMAPITable:: Restrict](imapitable-restrict.md) <br/> |Wendet die Einschränkung, die einer Tabelle, sodass nachfolgende Aufrufe von **FindRow** nur Zeilen zurück, die der Einschränkung entsprechen.  <br/> |
+|[IMAPITable::Restrict](imapitable-restrict.md) <br/> |Wendet die Einschränkung, die einer Tabelle, sodass nachfolgende Aufrufe von **FindRow** nur Zeilen zurück, die der Einschränkung entsprechen.  <br/> |
 |[IMAPITable::SetColumns](imapitable-setcolumns.md) <br/> |Gibt an, welche Spalten zurückgegeben werden sollen, wenn Zeilen aus der Tabelle abgerufen werden.  <br/> |
    
 Einschränkungen können zur Implementierung komplex sein; Weitere Informationen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). Weitere Informationen zum Implementieren der Tabellen finden Sie unter [MAPI-Tabellen](mapi-tables.md).

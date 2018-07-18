@@ -32,7 +32,7 @@ Die **Try_Parse** -Funktion enthält die folgenden Argumente.
 | *TextExpression*  <br/> |Ein Ausdruck, der den formatierten Wert in den angegebenen Datentyp zu analysieren.  <br/> |
 | *DataType*  <br/> |Der Datentyp in die *TextExpression* zu analysieren.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie **Try_Parse** nur für die Konvertierung von Zeichenfolge Datum/Uhrzeit und Typen der Nummer. Allgemeine typkonvertierungen auch weiterhin **Konvertieren**verwenden. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidValidFlagStringProof-Eigenschaft
+title: PidLidValidFlagStringProof (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793913"
 ---
-# <a name="pidlidvalidflagstringproof-canonical-property"></a>Kanonische PidLidValidFlagStringProof-Eigenschaft
+# <a name="pidlidvalidflagstringproof-canonical-property"></a>PidLidValidFlagStringProof (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ ms.locfileid: "19793913"
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für nicht-sendable-Objekte (empfangene Nachrichten und nicht-Mail-Objekte) sollten Clients dieser Wert auf den Wert der **PR_MESSAGE_DELIVERY_TIME** festgelegt, wenn **DispidRequest**ändern.
   
@@ -63,7 +63,7 @@ Mapidefs.h
 
 
 
-[Kanonische PidTagMessageDeliveryTime-Eigenschaft](pidtagmessagedeliverytime-canonical-property.md)
+[PidTagMessageDeliveryTime (kanonische Eigenschaft)](pidtagmessagedeliverytime-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

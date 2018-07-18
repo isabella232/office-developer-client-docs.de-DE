@@ -1,5 +1,5 @@
 ---
-title: Zuordnung von Internet Mail-Attributen zu MAPI-Eigenschaften
+title: Zuordnen von Internet-Mail-Attributen zu MAPI-Eigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19793167"
 ---
-# <a name="mapping-of-internet-mail-attributes-to-mapi-properties"></a>Zuordnung von Internet Mail-Attributen zu MAPI-Eigenschaften
+# <a name="mapping-of-internet-mail-attributes-to-mapi-properties"></a>Zuordnen von Internet-Mail-Attributen zu MAPI-Eigenschaften
 
   
   

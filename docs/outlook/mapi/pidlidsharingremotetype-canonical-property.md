@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingRemoteType-Eigenschaft
+title: PidLidSharingRemoteType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793795"
 ---
-# <a name="pidlidsharingremotetype-canonical-property"></a>Kanonische PidLidSharingRemoteType-Eigenschaft
+# <a name="pidlidsharingremotetype-canonical-property"></a>PidLidSharingRemoteType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Typ des freigegebenen Ordners remote. Dies ist eine Eigenschaft eines e
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss festgelegt werden, auf den gleichen Wert wie die Eigenschaft **DispidSharingLocalType** ([PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md)) und sollte ignoriert werden.
   

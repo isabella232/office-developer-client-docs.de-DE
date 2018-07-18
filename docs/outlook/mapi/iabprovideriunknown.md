@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791988"
 ---
-# <a name="iabprovider--iunknown"></a>IABProvider: IUnknown
+# <a name="iabprovider--iunknown"></a>IABProvider : IUnknown
 
   
   

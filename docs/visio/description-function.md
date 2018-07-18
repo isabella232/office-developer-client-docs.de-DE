@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796833"
 ---
-# <a name="description-function"></a>DESCRIPTION-Funktion
+# <a name="description-function"></a>DESCRIPTION Function
 
 Gibt den Text aus dem Feld **Beschreibung** der Eigenschaften eines Dokuments zurück. 
   

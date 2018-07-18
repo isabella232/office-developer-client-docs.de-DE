@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHomeAddressCountry-Eigenschaft
+title: PidTagHomeAddressCountry (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794472"
 ---
-# <a name="pidtaghomeaddresscountry-canonical-property"></a>Kanonische PidTagHomeAddressCountry-Eigenschaft
+# <a name="pidtaghomeaddresscountry-canonical-property"></a>PidTagHomeAddressCountry (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Kanton in der Adresse eines Kontakts an.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

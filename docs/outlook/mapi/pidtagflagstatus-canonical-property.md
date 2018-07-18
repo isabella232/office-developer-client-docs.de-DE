@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFlagStatus-Eigenschaft
+title: PidTagFlagStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794370"
 ---
-# <a name="pidtagflagstatus-canonical-property"></a>Kanonische PidTagFlagStatus-Eigenschaft
+# <a name="pidtagflagstatus-canonical-property"></a>PidTagFlagStatus (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt den Status der Kennzeichnung des Message-Objekts.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf ein Objekt bezüglich Besprechungen nicht vorhanden, und sollte nicht auf ein Task-Objekt vorhanden sein. Bei Festlegung auf andere Nachrichtenobjekte, muss diese Eigenschaft auf einen der folgenden Werte festgelegt werden:
   

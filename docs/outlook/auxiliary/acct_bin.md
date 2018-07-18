@@ -28,7 +28,7 @@ typedef struct {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _cb_
   

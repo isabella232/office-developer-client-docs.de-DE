@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidBusyStatus-Eigenschaft
+title: PidLidBusyStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793456"
 ---
-# <a name="pidlidbusystatus-canonical-property"></a>Kanonische PidLidBusyStatus-Eigenschaft
+# <a name="pidlidbusystatus-canonical-property"></a>PidLidBusyStatus (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Die Verfügbarkeit des Benutzers für einen Termin darstellt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Verfügbarkeit eines Benutzers für das Ereignis, das durch das Objekt beschrieben und muss einer der unten angegebenen Werte.
   

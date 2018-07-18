@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskGlobalId-Eigenschaft
+title: PidLidTaskGlobalId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793826"
 ---
-# <a name="pidlidtaskglobalid-canonical-property"></a>Kanonische PidLidTaskGlobalId-Eigenschaft
+# <a name="pidlidtaskglobalid-canonical-property"></a>PidLidTaskGlobalId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Sucht nach einer vorhandenen Aufgabe anhand einer GUID, beim Empfang einer Aufga
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft bleibt für nicht zugewiesene Aufgaben nicht festgelegt ist.
   

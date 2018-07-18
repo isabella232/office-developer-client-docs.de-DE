@@ -40,7 +40,7 @@ typedef struct _SDateTimeArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SDateTimeArray
   
 > Zeiger auf ein Array von [FILETIME](filetime.md) -Strukturen, die Zeitwerte enthalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu PT_MV_SYSTIME finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
   

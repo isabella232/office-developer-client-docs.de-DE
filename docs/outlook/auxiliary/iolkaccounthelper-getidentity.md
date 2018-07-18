@@ -47,7 +47,7 @@ _pcch_
 |E_OUTOFMEMORY  <br/> |Der zurückgegebene Profilname ist länger als die Größe der _PwszIdentity_.  <br/> |
 |E_INVALIDARG  <br/> | _Pcch_ ist NULL.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn _PwszIdentity_ zu klein, um den Profilnamen enthalten ist, wird bei der Rückgabe nicht festgelegt werden, und _Pcch_ verweist auf die Größe für _PwszIdentity_erforderlich.
   

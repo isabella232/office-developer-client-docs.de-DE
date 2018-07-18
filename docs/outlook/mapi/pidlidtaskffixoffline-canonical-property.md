@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskFFixOffline-Eigenschaft
+title: PidLidTaskFFixOffline (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793839"
 ---
-# <a name="pidlidtaskffixoffline-canonical-property"></a>Kanonische PidLidTaskFFixOffline-Eigenschaft
+# <a name="pidlidtaskffixoffline-canonical-property"></a>PidLidTaskFFixOffline (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Genauigkeit der **DispidTaskOwner** ([PidLidTaskOwner](pidlidtaskowner-
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die **DispidTaskFFixOffline** -Eigenschaft auf FALSE festgelegt ist oder nicht festgelegt ist, ist der Wert der Eigenschaft **DispidTaskOwner** korrekt. Wenn **DispidTaskFFixOffline** auf TRUE festgelegt ist, kann der Client einen genauen Wert für **DispidTaskOwner**nicht ermitteln. In diesem Fall kann der Client **DispidTaskOwner** auf einen generischen Besitzername, beispielsweise "Unknown" festgelegt. Wenn ein Client einen **DispidTaskFFixOffline** Wert "true trifft" und den Namen eines Besitzers genau bestimmen kann, sollte der Client jedoch **DispidTaskOwner** aktualisieren und **DispidTaskFFixOffline** auf FALSE festgelegt. 
   

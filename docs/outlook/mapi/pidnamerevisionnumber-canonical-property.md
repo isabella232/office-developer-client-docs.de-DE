@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameRevisionNumber-Eigenschaft
+title: PidNameRevisionNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793980"
 ---
-# <a name="pidnamerevisionnumber-canonical-property"></a>Kanonische PidNameRevisionNumber-Eigenschaft
+# <a name="pidnamerevisionnumber-canonical-property"></a>PidNameRevisionNumber (kanonische Eigenschaft)
 
   
   

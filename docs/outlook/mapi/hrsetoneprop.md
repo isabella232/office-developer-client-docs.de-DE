@@ -54,7 +54,7 @@ HrSetOneProp(
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Gegensatz zu der [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode gibt die **HrSetOneProp** Funktion nie alle Warnungen. Da nur eine Eigenschaft festgelegt, es einfach entweder Erfolg oder Fehler. Für die Einstellung oder mehrere Eigenschaften ändern ist **SetProps** schneller. 
   

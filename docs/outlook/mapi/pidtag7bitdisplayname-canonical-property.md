@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTag7BitDisplayName-Eigenschaft
+title: PidTag7BitDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794027"
 ---
-# <a name="pidtag7bitdisplayname-canonical-property"></a>Kanonische PidTag7BitDisplayName-Eigenschaft
+# <a name="pidtag7bitdisplayname-canonical-property"></a>PidTag7BitDisplayName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine 7-Bit-ASCII-Darstellung der messaging dem Namen des Benutzers an.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften ordnen Sie die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) in eine 7-Bit-Zeichensatz. Einige Messagingsysteme wie Internet und bestimmte x. 400-Links sind auf die 128-7-Bit-ASCII-Code Zeichensatz beschränkt. Gateways für die messaging-Systemen können die Leistung verbessern, indem Aufrufen der [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) -Methode zum Abrufen dieser direkt-Eigenschaft, wodurch zusätzliche Verarbeitung für die Konvertierung von Code zu vermeiden. 
   

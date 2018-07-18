@@ -34,7 +34,7 @@ Gibt den unteren Abschrägungstyp eines Shapes Abschrägung an.
 |11  <br/> |Festplatte Edge Abschrägung  <br/> |
 |12  <br/> |Art Deko Abschrägung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **BevelBottomType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement im vsdx-Dateiformat** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

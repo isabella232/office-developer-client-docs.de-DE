@@ -31,7 +31,7 @@ enum
 
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Frei/Gebucht-Status eines Textblocks Zeit bestimmt die Anzeige in einem Kalender: **frei**, **gebucht**, **mit Vorbehalt**oder **Abwesend**. 
   

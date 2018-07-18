@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameLastSaveDateTime-Eigenschaft
+title: PidNameLastSaveDateTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793979"
 ---
-# <a name="pidnamelastsavedatetime-canonical-property"></a>Kanonische PidNameLastSaveDateTime-Eigenschaft
+# <a name="pidnamelastsavedatetime-canonical-property"></a>PidNameLastSaveDateTime (kanonische Eigenschaft)
 
   
   

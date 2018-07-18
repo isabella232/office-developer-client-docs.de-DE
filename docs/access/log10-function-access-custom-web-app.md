@@ -31,7 +31,7 @@ Gibt den Logarithmus einer Zahl zur Basis 10 zurück.
 |:-----|:-----|
 | *NumericExpression*  <br/> |Die positive Zahl, die für die Basis 10 Logarithmus Sie berechnen möchten.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Log** -Funktion können Sie die Basis des Logarithmus, anstatt die Basis 10 ändern. 
   

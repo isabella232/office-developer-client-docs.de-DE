@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameContentClass-Eigenschaft
+title: PidNameContentClass (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793959"
 ---
-# <a name="pidnamecontentclass-canonical-property"></a>Kanonische PidNameContentClass-Eigenschaft
+# <a name="pidnamecontentclass-canonical-property"></a>PidNameContentClass (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Einen Wert für [RFC3282] Content-Class Kopfzeile Feld enthält.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um den Wert dieser Eigenschaft festzulegen, müssen ein Kopfzeilenfeld Content-Class mit den gewünschten Wert Multipurpose Internet Message Extensions (MIME) Clients geschrieben werden. MIME-Leser müssen den Wert eines Felds Header Content-Class auf den Wert dieser Eigenschaft kopieren. 
   

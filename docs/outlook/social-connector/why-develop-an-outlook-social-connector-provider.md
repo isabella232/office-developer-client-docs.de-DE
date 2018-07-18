@@ -1,5 +1,5 @@
 ---
-title: Warum entwickelt einen Anbieter Outlook Connector für soziale Netzwerke
+title: Gründe für die Entwicklung eines Outlook Social Connector-Anbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796103"
 ---
-# <a name="why-develop-an-outlook-social-connector-provider"></a>Warum entwickelt einen Anbieter Outlook Connector für soziale Netzwerke
+# <a name="why-develop-an-outlook-social-connector-provider"></a>Gründe für die Entwicklung eines Outlook Social Connector-Anbieters
 
 Ein Outlook Social Connector (OSC)-Anbieter ermöglicht Office Benutzer innerhalb einer Office-Clientanwendung anzeigen eine Aggregation von Updates für soziale Netzwerke Informationen auf einer Website professional oder sozialen Netzwerk angewendet. SharePoint Server, SharePoint-Arbeitsbereich Lync-Clients und alle Office-Clientanwendungen, die Anwesenheitsinformationen und der Visitenkarte unterstützen unterstützen das osc bilden.
   

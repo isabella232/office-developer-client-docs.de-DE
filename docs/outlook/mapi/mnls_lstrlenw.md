@@ -41,7 +41,7 @@ int MNLS_lstrlen(
 
 Die Funktion gibt eine ganze Zahl mit der Länge der Zeichenfolge zurück. Es ist die Anzahl der Zeichen in der Zeichenfolge, ausgenommen abschließende Null-Zeichen. Wenn _Lpsz_ NULL ist, gibt die Funktion 0 (null) zurück. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Funktion umschließt die **Lstrlen** -Funktion. Weitere Informationen finden Sie unter [Lstrlen](http://msdn.microsoft.com/en-us/library/ms647492%28VS.85%29.aspx).
   

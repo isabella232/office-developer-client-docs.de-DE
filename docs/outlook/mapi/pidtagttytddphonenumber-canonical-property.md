@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagTtyTddPhoneNumber-Eigenschaft
+title: PidTagTtyTddPhoneNumber (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795262"
 ---
-# <a name="pidtagttytddphonenumber-canonical-property"></a>Kanonische PidTagTtyTddPhoneNumber-Eigenschaft
+# <a name="pidtagttytddphonenumber-canonical-property"></a>PidTagTtyTddPhoneNumber (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReceivedByName-Eigenschaft
+title: PidTagReceivedByName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794877"
 ---
-# <a name="pidtagreceivedbyname-canonical-property"></a>Kanonische PidTagReceivedByName-Eigenschaft
+# <a name="pidtagreceivedbyname-canonical-property"></a>PidTagReceivedByName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen des Benutzers, der die Nachricht empfängt messaging.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind ein Beispiel für die Adresseigenschaften für den messaging-Benutzer, der die Nachricht empfängt. Sie müssen von der eingehenden Adressbuchhierarchie festgelegt werden.
   
@@ -80,7 +80,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

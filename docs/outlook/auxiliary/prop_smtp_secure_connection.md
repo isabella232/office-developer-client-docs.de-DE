@@ -27,7 +27,7 @@ Gibt den Typ des verschlüsselten Verbindungstyp für SMTP-Konto verwenden.
 |Eigenschafts-Tag:  <br/> |0x020A0003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert kann eine der folgenden Konstanten sein. Ihren Werten finden Sie unter [Konstanten (Konto Management-API)](constants-account-management-api.md) . 
   
@@ -40,6 +40,6 @@ Der Wert kann eine der folgenden Konstanten sein. Ihren Werten finden Sie unter 
    
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

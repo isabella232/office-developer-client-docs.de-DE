@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskVersion-Eigenschaft
+title: PidLidTaskVersion (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793868"
 ---
-# <a name="pidlidtaskversion-canonical-property"></a>Kanonische PidLidTaskVersion-Eigenschaft
+# <a name="pidlidtaskversion-canonical-property"></a>PidLidTaskVersion (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, welche Kopie eines Vorgangs das neueste Update ist.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Updates mit niedrigeren Versionen als die Aufgabe werden ignoriert. 
   

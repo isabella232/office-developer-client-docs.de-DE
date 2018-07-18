@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidReminderTime-Eigenschaft
+title: PidLidReminderTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793761"
 ---
-# <a name="pidlidremindertime-canonical-property"></a>Kanonische PidLidReminderTime-Eigenschaft
+# <a name="pidlidremindertime-canonical-property"></a>PidLidReminderTime (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die anfängliche Signal Zeit für eine Erinnerung.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für Calendar-Objekten stellt diese Eigenschaft der Zeit, wenn der Benutzer spät werden, also die Anfangszeit des Termins. Clients müssen der Wert in koordinierter Weltzeit (UTC) festgelegt.
   

@@ -29,7 +29,7 @@ _Benutzer-ID_
   
 > [in] Eine Zeichenfolge, die eine Benutzer-ID für soziale Netzwerke für eine Person enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 _UserID_ -Parameter muss eine gültige Benutzer-ID für die Person im sozialen Netzwerk. 
   
@@ -37,5 +37,5 @@ Wenn der Anbieter Outlook Social Connector (OSC) **DoNotFollowPerson** als **tru
   
 ## <a name="see-also"></a>Siehe auch
 
-- [ISocialSession: IUnknown](isocialsessioniunknown.md)
+- [ISocialSession : IUnknown](isocialsessioniunknown.md)
 

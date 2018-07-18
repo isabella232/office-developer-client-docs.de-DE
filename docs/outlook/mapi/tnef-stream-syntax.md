@@ -1,5 +1,5 @@
 ---
-title: Die Syntax der TNEF-Stream-Objekt
+title: TNEF-Streamsyntax
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795756"
 ---
-# <a name="tnef-stream-syntax"></a>Die Syntax der TNEF-Stream-Objekt
+# <a name="tnef-stream-syntax"></a>TNEF-Streamsyntax
 
   
   

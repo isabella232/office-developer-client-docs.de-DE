@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAgingGranularity-Eigenschaft
+title: PidTagAgingGranularity (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794071"
 ---
-# <a name="pidtagaginggranularity-canonical-property"></a>Kanonische PidTagAgingGranularity-Eigenschaft
+# <a name="pidtagaginggranularity-canonical-property"></a>PidTagAgingGranularity (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Stellt die Zeiteinheit, die verwendet wird, bei der Bestimmung der Zeitdauer, di
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die möglichen Werte für **PR_AGING_GRANULARITY** können eine der folgenden sein. 
   

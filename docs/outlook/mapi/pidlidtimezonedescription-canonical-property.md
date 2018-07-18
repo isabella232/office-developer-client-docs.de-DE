@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTimeZoneDescription-Eigenschaft
+title: PidLidTimeZoneDescription (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793866"
 ---
-# <a name="pidlidtimezonedescription-canonical-property"></a>Kanonische PidLidTimeZoneDescription-Eigenschaft
+# <a name="pidlidtimezonedescription-canonical-property"></a>PidLidTimeZoneDescription (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt eine Zeichenfolge Beschreibung der Zeitzone.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt eine lesbare Beschreibung der Zeitzone, die durch die Daten in der **DispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md))-Eigenschaft dargestellt wird.
   

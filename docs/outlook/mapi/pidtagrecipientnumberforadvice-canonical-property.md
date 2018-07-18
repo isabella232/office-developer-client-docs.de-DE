@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagRecipientNumberForAdvice-Eigenschaft
+title: PidTagRecipientNumberForAdvice (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794900"
 ---
-# <a name="pidtagrecipientnumberforadvice-canonical-property"></a>Kanonische PidTagRecipientNumberForAdvice-Eigenschaft
+# <a name="pidtagrecipientnumberforadvice-canonical-property"></a>PidTagRecipientNumberForAdvice (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Diese Eigenschaft enthält einen Nachrichtenempfänger Telefonnummer von der phy
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind in Verbindung mit der Zustellung an eine physische Ziel, statt ein elektronisches-Postfach verwendet werden, wenn der menschliche Empfänger nicht erwartet wird, Übermittlung vorhanden sein soll. Ein Beispiel ist die Telefonnummer auf ein Faxdeckblatt.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAgingPeriod-Eigenschaft
+title: PidTagAgingPeriod (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794059"
 ---
-# <a name="pidtagagingperiod-canonical-property"></a>Kanonische PidTagAgingPeriod-Eigenschaft
+# <a name="pidtagagingperiod-canonical-property"></a>PidTagAgingPeriod (kanonische Eigenschaft)
 
   
   
@@ -36,7 +36,7 @@ Stellt die Anzahl der Einheiten, die verwendet werden, um die Dauer zu ermitteln
 |Der Eigenschaftentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zeitdauer, die ein Element in einem Ordner bleibt, bevor das Element archiviert wird, wird durch die beiden Eigenschaften **PR_AGING_PERIOD** und **[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)** bestimmt. **PR_AGING_GRANULARITY** stellt die Zeiteinheit, in der **PR_AGING_PERIOD** ausgedrückt wird, wenn diese Zeitdauer zu bestimmen. 
   

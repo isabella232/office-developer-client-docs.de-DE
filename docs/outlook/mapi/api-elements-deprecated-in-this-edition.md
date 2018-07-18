@@ -1,5 +1,5 @@
 ---
-title: In dieser Edition veraltete API-Elemente
+title: In dieser Version veraltete API-Elemente
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791299"
 ---
-# <a name="api-elements-deprecated-in-this-edition"></a>In dieser Edition veraltete API-Elemente
+# <a name="api-elements-deprecated-in-this-edition"></a>In dieser Version veraltete API-Elemente
 
   
   

@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796734"
 ---
-# <a name="containersheetref-function"></a>CONTAINERSHEETREF-Funktion
+# <a name="containersheetref-function"></a>CONTAINERSHEETREF Function
 
 Gibt eine Blattreferenz auf den angegebenen Container zurück, der das Shape enthält.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

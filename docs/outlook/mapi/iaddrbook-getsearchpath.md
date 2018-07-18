@@ -54,7 +54,7 @@ S_OK
   
 > Der Suchpfad wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients und Dienstanbieter rufen Sie die **GetSearchPath-** Methode, um den Suchpfad abzurufen, der zum Auflösen von Namen mit der **ResolveName** -Methode verwendet wird. In der Regel rufen Clients die [IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md) -Methode, um einen Container Suchpfad im Profil herzustellen, vor dem Aufruf von **GetSearchPath** , um sie abzurufen. Aufrufen von **SetSearchPath** ist jedoch optional. 
   
@@ -76,7 +76,7 @@ Nach dem ersten Aufruf von **SetSearchPath**müssen nachfolgende Aufrufe von **S
 
 [IAddrBook::SetSearchPath](iaddrbook-setsearchpath.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

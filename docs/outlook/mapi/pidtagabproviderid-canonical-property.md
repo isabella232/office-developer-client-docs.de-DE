@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAbProviderId-Eigenschaft
+title: PidTagAbProviderId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794024"
 ---
-# <a name="pidtagabproviderid-canonical-property"></a>Kanonische PidTagAbProviderId-Eigenschaft
+# <a name="pidtagabproviderid-canonical-property"></a>PidTagAbProviderId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein Adressbuchanbieter [MAPIUID](mapiuid.md) Struktur.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **MAPIUID** identifiziert, welche Adressbuchanbieter diesem Container in der Containerhierarchie bereitstellt. Der Wert ist für jeden Anbieter eindeutig. 
   
@@ -60,7 +60,7 @@ Mapidefs.h
 
 [MAPIUID](mapiuid.md)
   
-[Kanonische PidTagStoreProvider-Eigenschaft](pidtagstoreprovider-canonical-property.md)
+[PidTagStoreProvider (kanonische Eigenschaft)](pidtagstoreprovider-canonical-property.md)
 
 
 [Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)

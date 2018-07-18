@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines Transportdienstes MAPI
+title: Entwickeln eines MAPI-Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791547"
 ---
-# <a name="developing-a-mapi-transport-provider"></a>Entwickeln eines Transportdienstes MAPI
+# <a name="developing-a-mapi-transport-provider"></a>Entwickeln eines MAPI-Transportanbieters
 
   
   

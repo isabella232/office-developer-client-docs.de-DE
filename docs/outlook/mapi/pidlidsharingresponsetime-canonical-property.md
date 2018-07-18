@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingResponseTime-Eigenschaft
+title: PidLidSharingResponseTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793782"
 ---
-# <a name="pidlidsharingresponsetime-canonical-property"></a>Kanonische PidLidSharingResponseTime-Eigenschaft
+# <a name="pidlidsharingresponsetime-canonical-property"></a>PidLidSharingResponseTime (kanonische Eigenschaft)
 
   
   

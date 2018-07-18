@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameLastAuthor-Eigenschaft
+title: PidNameLastAuthor (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793962"
 ---
-# <a name="pidnamelastauthor-canonical-property"></a>Kanonische PidNameLastAuthor-Eigenschaft
+# <a name="pidnamelastauthor-canonical-property"></a>PidNameLastAuthor (kanonische Eigenschaft)
 
   
   

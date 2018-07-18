@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportDispositionMode-Eigenschaft
+title: PidTagReportDispositionMode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794963"
 ---
-# <a name="pidtagreportdispositionmode-canonical-property"></a>Kanonische PidTagReportDispositionMode-Eigenschaft
+# <a name="pidtagreportdispositionmode-canonical-property"></a>PidTagReportDispositionMode (kanonische Eigenschaft)
 
   
   
@@ -32,7 +32,7 @@ Zeigt die Disposition des Eingangs für Nachrichten, die Empfangsbestätigungen 
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die möglichen Werte für diese Eigenschaft sind "manuell-Aktion/MDN-gesendet-automatisch" und "manuell-Aktion/MDN-gesendet-manuell".
   

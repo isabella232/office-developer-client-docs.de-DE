@@ -29,7 +29,7 @@ Finden Sie unter [IOlkAccount](iolkaccount.md).
 |Eigenschafts-Tag:  <br/> |0x00220102  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit der **PROP_ACCT_PREFERENCES_UID** Aufrufe [IMAPISupport::OpenProfileSection](http://msdn.microsoft.com/library/cd1fa994-9531-46c4-94e5-505e7f90b884%28Office.15%29.aspx) Profilabschnitt abgerufen, der Konto Voreinstellungen enthält. 
   

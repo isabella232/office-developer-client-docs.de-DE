@@ -1,5 +1,5 @@
 ---
-title: Nachricht Empfang Modell
+title: Nachrichtenempfangsmodell
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19793257"
 ---
-# <a name="message-reception-model"></a>Nachricht Empfang Modell
+# <a name="message-reception-model"></a>Nachrichtenempfangsmodell
 
   
   

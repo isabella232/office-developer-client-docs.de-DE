@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagClientSubmitTime-Eigenschaft
+title: PidTagClientSubmitTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794164"
 ---
-# <a name="pidtagclientsubmittime-canonical-property"></a>Kanonische PidTagClientSubmitTime-Eigenschaft
+# <a name="pidtagclientsubmittime-canonical-property"></a>PidTagClientSubmitTime (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält Datum und Zeit für der Absender eine Nachricht gesendet.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Anbieter wird **PR_CLIENT_SUBMIT_TIME** auf die Zeit, die die Clientanwendung [IMessage::SubmitMessage](imessage-submitmessage.md)aufgerufen. 
   

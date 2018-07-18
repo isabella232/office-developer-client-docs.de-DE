@@ -1,5 +1,5 @@
 ---
-title: AttConversationID und attParentID
+title: attConversationID und attParentID
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791321"
 ---
-# <a name="attconversationid-and-attparentid"></a>AttConversationID und attParentID
+# <a name="attconversationid-and-attparentid"></a>attConversationID und attParentID
 
 **Betrifft**: Outlook 
   
@@ -24,12 +24,12 @@ Die Fenster für Arbeitsgruppen 3.1 e-Mail-Unterhaltung Schlüssel ist eine Text
 > [!NOTE]
 > Die entsprechenden Eigenschaften in MAPI, dem diese Attribute TNEF zugeordnet sind, PR_CONVERSATION_KEY und PR_PARENT_KEY, sind veraltet in Microsoft Exchange Server: Verwendung von **PR_CONVERSATION_KEY**, die kanonische PidTagConversationKey [ Eigenschaft](pidtagconversationkey-canonical-property.md), nur für die Suche nach **IPM in Outlook beibehalten. Nachrichten-Managers** Nachrichten. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **PR_CONVERSATION_KEY** -Eigenschaft ist die andernfalls veraltet Vorläufer der **PR_CONVERSATION_INDEX**, [Kanonische-Eigenschaft PidTagConversationIndex](pidtagconversationindex-canonical-property.md) und **PR_CONVERSATION_TOPIC**, [Eigenschaftpidtagconversationtopic kanonische Eigenschaft](pidtagconversationtopic-canonical-property.md), die stattdessen verwendet werden soll.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IPM-Unterstruktur](ipm-subtree.md)
+- [IPM-Teilstruktur](ipm-subtree.md)
 - [MAPI-Spezialordner](mapi-special-folders.md)
 

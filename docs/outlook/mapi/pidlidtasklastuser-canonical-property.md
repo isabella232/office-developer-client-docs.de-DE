@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskLastUser-Eigenschaft
+title: PidLidTaskLastUser (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793842"
 ---
-# <a name="pidlidtasklastuser-canonical-property"></a>Kanonische PidLidTaskLastUser-Eigenschaft
+# <a name="pidlidtasklastuser-canonical-property"></a>PidLidTaskLastUser (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Namen des aktuelle Benutzers, der Besitzer der Aufgabe wurde.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Bevor ein Client eine Aufgabenanfrage sendet, wird diese Eigenschaft auf den Namen der Aufgabe delegierende Person. Bevor ein Client eine Aufgabe Annahme sendet, wird diese Eigenschaft auf den Namen der Beauftragte für die Aufgabe. Bevor ein Client eine Aufgabe Ablehnung sendet, wird diese Eigenschaft auf den Namen der Aufgabe delegierende Person.
   

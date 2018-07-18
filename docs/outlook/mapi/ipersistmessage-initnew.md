@@ -50,7 +50,7 @@ S_OK
   
 > Die neue Nachricht wurde erfolgreich initialisiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen die **IPersistMessage::InitNew** -Methode auf, wenn der Benutzer eine neue Nachricht verfasst, zu der eine Nachrichtenklasse gehört, der das Formular behandelt. Wenn das Form-Objekt einen gültigen Benutzernamen Schnittstellenzeiger aufweist, sollte die Benutzeroberfläche für das Objekt "Message" angezeigt. 
   
@@ -92,5 +92,5 @@ Weitere Informationen über die Zustände von Formularen finden Sie unter [Formu
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

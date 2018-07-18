@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > Die-Eigenschaft auf das durch den Parameter _LpSPropValue_ wird eine Zeile in der Tabelle nicht identifiziert. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrDeleteRow** -Methode entfernt Tabellenzeile, die die Spalte enthält, die-Eigenschaft auf das durch den Parameter _LpSPropValue_ übereinstimmt. Die Daten für die Zeile werden gelöscht, und die Zeile aus alle geöffneten Ansichten entfernt wird. 
   
@@ -71,5 +71,5 @@ Löschen einer Zeile wird nicht reduziert die Spalte festlegen, die verfügbar i
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

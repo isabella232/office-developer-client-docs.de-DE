@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskDeadOccurrence-Eigenschaft
+title: PidLidTaskDeadOccurrence (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793814"
 ---
-# <a name="pidlidtaskdeadoccurrence-canonical-property"></a>Kanonische PidLidTaskDeadOccurrence-Eigenschaft
+# <a name="pidlidtaskdeadoccurrence-canonical-property"></a>PidLidTaskDeadOccurrence (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob neue Vorkommen generiert werden müssen.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Serienmuster ist nicht mehr gültig, wenn die letzte Instanz befindet sich in der Vergangenheit oder die angegebene Anzahl von Instanzen generiert wurde. Der Client wird diese Eigenschaft auf FALSE für eine neue Aufgabe oder auf true fest, wenn die letzte Instanz einer Aufgabenserie generiert wird. Beim Kopieren eines Vorgangs, um eine neue Instanz generieren, wird diese Eigenschaft für die Kopie auf TRUE festgelegt, das die Instanz abgeschlossen ist.
   

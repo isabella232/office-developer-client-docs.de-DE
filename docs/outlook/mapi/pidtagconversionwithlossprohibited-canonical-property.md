@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagConversionWithLossProhibited-Eigenschaft
+title: PidTagConversionWithLossProhibited (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794277"
 ---
-# <a name="pidtagconversionwithlossprohibited-canonical-property"></a>Kanonische PidTagConversionWithLossProhibited-Eigenschaft
+# <a name="pidtagconversionwithlossprohibited-canonical-property"></a>PidTagConversionWithLossProhibited (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Message Transfer Agent (MTA) verboten wird tätigen Nach
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Beispiel für die Art der Konvertierung wird nicht zulässig ist die "Verlust" Zuordnung von Unicode (zwei Bytes pro Zeichen) in einer Einzel-Byte-Zeichensatz. 
   

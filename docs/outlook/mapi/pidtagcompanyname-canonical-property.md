@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCompanyName-Eigenschaft
+title: PidTagCompanyName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794181"
 ---
-# <a name="pidtagcompanyname-canonical-property"></a>Kanonische PidTagCompanyName-Eigenschaft
+# <a name="pidtagcompanyname-canonical-property"></a>PidTagCompanyName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Namen des Empfängers Unternehmen.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

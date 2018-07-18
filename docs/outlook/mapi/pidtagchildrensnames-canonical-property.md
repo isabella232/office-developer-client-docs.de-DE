@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagChildrensNames-Eigenschaft
+title: PidTagChildrensNames (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794188"
 ---
-# <a name="pidtagchildrensnames-canonical-property"></a>Kanonische PidTagChildrensNames-Eigenschaft
+# <a name="pidtagchildrensnames-canonical-property"></a>PidTagChildrensNames (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste der Namen der untergeordneten Elemente
 |Datentyp:  <br/> |PT_MV_UNICODE PT_MV_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

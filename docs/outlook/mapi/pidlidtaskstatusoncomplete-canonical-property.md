@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskStatusOnComplete-Eigenschaft
+title: PidLidTaskStatusOnComplete (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793861"
 ---
-# <a name="pidlidtaskstatusoncomplete-canonical-property"></a>Kanonische PidLidTaskStatusOnComplete-Eigenschaft
+# <a name="pidlidtaskstatusoncomplete-canonical-property"></a>PidLidTaskStatusOnComplete (kanonische Eigenschaft)
 
   
   

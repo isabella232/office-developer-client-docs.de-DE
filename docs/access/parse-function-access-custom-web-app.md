@@ -32,7 +32,7 @@ Die **Parse** -Funktion enthält die folgenden Argumente.
 | *TextExpression*  <br/> |Ein Ausdruck, der den formatierten Wert in den angegebenen Datentyp zu analysieren.  <br/> |
 | *DataType*  <br/> |Literale Wert, der den Datentyp für das Ergebnis angefordert darstellt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie nur für die Konvertierung von Zeichenfolge Datum/Uhrzeit und Typen der Nummer **zu analysieren** . Verwenden Sie für allgemeine typkonvertierungen die **Convert** -Funktion. Behalten Sie im Hinterkopf, dass es eine bestimmte Leistung führt zu mehr Verarbeitungsaufwand bei der Analyse des String-Werts ist. 
   

@@ -24,17 +24,17 @@ Legt die Farbe fest, die für den Hintergrund (Füllbereich) des Füllmusters de
 
 Wenn Sie die Farbe festlegen möchten, geben Sie eine Zahl von 0 bis 23 ein.
   
-Um eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die RGB oder HSL-Funktion. Der Wert einer benutzerdefinierten Farbe ist ihre RGB-Farbe und RGB (*R, g, b*), anstatt eine Zahl in das ShapeSheet-Fenster angezeigt werden. Bei Verwendung in numerischen Operationen haben benutzerdefinierte Farben Werte von 24 und höher. 
+Wenn Sie eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die Funktionen RGB bzw. HSL. Der Wert einer benutzerdefinierten Farbe ist ihre RGB-Farbe, daher wird im ShapeSheet-Fenster statt einer Zahl der RGB-Wert (r, g, b) angezeigt. Bei Verwendung von numerischen Operationen haben benutzerdefinierte Farben Werte von 24 und höher. 
   
 Die Fülltransparenz für den Hintergrund können Sie in der Zelle FillBkgndTrans festlegen. 
   
-Wenn Sie einen Verweis auf die Zelle FillBkgnd nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle FillBkgnd aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | FillBkgnd  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle FillBkgnd aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle FillBkgnd aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagIpmWastebasketEntryId-Eigenschaft
+title: PidTagIpmWastebasketEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794553"
 ---
-# <a name="pidtagipmwastebasketentryid-canonical-property"></a>Kanonische PidTagIpmWastebasketEntryId-Eigenschaft
+# <a name="pidtagipmwastebasketentryid-canonical-property"></a>PidTagIpmWastebasketEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Ordners "Gelöschte Elemente standard zwischen Pers
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung sollte gelöschte Nachrichten zwischen Personen in den Ordner Gelöschte Objekte verschieben. Wenn die Nachricht bereits in diesem Ordner befindet, oder wenn diese Eigenschaft nicht unterstützt wird, sollte der Client die Nachricht zu löschen. 
   

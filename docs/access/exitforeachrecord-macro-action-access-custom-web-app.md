@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: ee0aec9b-cdb0-4204-8a15-7542d943f096
-description: Verwenden Sie die BeendenFürJedenDatensatz-Aktion mit einem FürJedenDatensatz-Datenblock sofort zu beenden.
+description: Mit der BeendenFürJedenDatensatz -Aktion beenden Sie einen FürJedenDatensatz -Datenblock sofort.
 ms.openlocfilehash: dba71171914b7328bdd14246fbd46969b0d242bc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSideEffects-Eigenschaft
+title: PidLidSideEffects (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793784"
 ---
-# <a name="pidlidsideeffects-canonical-property"></a>Kanonische PidLidSideEffects-Eigenschaft
+# <a name="pidlidsideeffects-canonical-property"></a>PidLidSideEffects (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Steuert, wie ein Meldungsobjekt vom Client verarbeitet wird, wenn bei der Eingab
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Muss auf eine bitweise oder 0 (null) oder mehrere der folgenden Werte festgelegt werden.
   

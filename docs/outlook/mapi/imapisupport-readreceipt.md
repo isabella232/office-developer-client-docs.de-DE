@@ -59,7 +59,7 @@ S_OK
   
 > Der Bericht wurde erfolgreich generiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::ReadReceipt** -Methode ist nur für Nachricht Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **ReadReceipt** um anzuweisen, MAPI, um eine Lese- oder nonread Bericht für die Meldung über den Parameter _LpReadMessage_ generieren. 
   
@@ -93,7 +93,7 @@ Sie können entweder aus- oder Einblenden von Lese- und nonread Berichte vom Spe
   
 [IMessage::SubmitMessage](imessage-submitmessage.md)
   
-[Kanonische PidTagReadReceiptRequested-Eigenschaft](pidtagreadreceiptrequested-canonical-property.md)
+[PidTagReadReceiptRequested (kanonische Eigenschaft)](pidtagreadreceiptrequested-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

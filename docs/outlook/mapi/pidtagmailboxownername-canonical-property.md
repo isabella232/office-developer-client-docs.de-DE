@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagMailboxOwnerName-Eigenschaft
+title: PidTagMailboxOwnerName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794576"
 ---
-# <a name="pidtagmailboxownername-canonical-property"></a>Kanonische PidTagMailboxOwnerName-Eigenschaft
+# <a name="pidtagmailboxownername-canonical-property"></a>PidTagMailboxOwnerName (kanonische Eigenschaft)
 
   
   

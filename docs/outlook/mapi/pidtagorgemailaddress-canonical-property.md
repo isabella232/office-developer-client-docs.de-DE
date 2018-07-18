@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOrgEmailAddress-Eigenschaft
+title: PidTagOrgEmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794671"
 ---
-# <a name="pidtagorgemailaddress-canonical-property"></a>Kanonische PidTagOrgEmailAddress-Eigenschaft
+# <a name="pidtagorgemailaddress-canonical-property"></a>PidTagOrgEmailAddress (kanonische Eigenschaft)
 
   
   

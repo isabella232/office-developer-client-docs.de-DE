@@ -31,7 +31,7 @@ Die **EOMonth** enthält die folgenden Argumente.
 | *Date*  <br/> |Das Startdatum in Datums-/Uhrzeitformat oder in einer akzeptierten Textdarstellung eines Datums.  <br/> |
 | *NumberOfMonth*  <br/> |Eine Zahl, die die Anzahl der Monate vor oder nach dem *Datum* darstellt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn *Datum* kein gültiges Datum vorliegt, gibt **EOMonth** einen Fehler zurück. 
   

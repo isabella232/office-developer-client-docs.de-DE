@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSurname-Eigenschaft
+title: PidTagSurname (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795242"
 ---
-# <a name="pidtagsurname-canonical-property"></a>Kanonische PidTagSurname-Eigenschaft
+# <a name="pidtagsurname-canonical-property"></a>PidTagSurname (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die letzte oder den Nachnamen des Empfängers an.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

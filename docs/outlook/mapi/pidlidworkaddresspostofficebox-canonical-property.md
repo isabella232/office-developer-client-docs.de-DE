@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidWorkAddressPostOfficeBox-Eigenschaft
+title: PidLidWorkAddressPostOfficeBox (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793921"
 ---
-# <a name="pidlidworkaddresspostofficebox-canonical-property"></a>Kanonische PidLidWorkAddressPostOfficeBox-Eigenschaft
+# <a name="pidlidworkaddresspostofficebox-canonical-property"></a>PidLidWorkAddressPostOfficeBox (kanonische Eigenschaft)
 
   
   

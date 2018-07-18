@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDeferredSendUnits-Eigenschaft
+title: PidTagDeferredSendUnits (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794282"
 ---
-# <a name="pidtagdeferredsendunits-canonical-property"></a>Kanonische PidTagDeferredSendUnits-Eigenschaft
+# <a name="pidtagdeferredsendunits-canonical-property"></a>PidTagDeferredSendUnits (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt die Zeiteinheit, von denen der Eigenschaftswert **PR_DEFERRED_SEND_NUMBER**
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn festgelegt, diese Eigenschaft einen der folgenden Werte aufweisen muss:
   

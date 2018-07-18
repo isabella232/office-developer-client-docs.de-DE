@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookFolderEntryId-Eigenschaft
+title: PidTagContactAddressBookFolderEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794172"
 ---
-# <a name="pidtagcontactaddressbookfolderentryid-canonical-property"></a>Kanonische PidTagContactAddressBookFolderEntryId-Eigenschaft
+# <a name="pidtagcontactaddressbookfolderentryid-canonical-property"></a>PidTagContactAddressBookFolderEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für den Ordner Kontakte in den Nachrichtenspeicher, i
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dies ist eine Eigenschaft für einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
   

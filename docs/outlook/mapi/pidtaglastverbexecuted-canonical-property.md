@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagLastVerbExecuted-Eigenschaft
+title: PidTagLastVerbExecuted (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794560"
 ---
-# <a name="pidtaglastverbexecuted-canonical-property"></a>Kanonische PidTagLastVerbExecuted-Eigenschaft
+# <a name="pidtaglastverbexecuted-canonical-property"></a>PidTagLastVerbExecuted (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält das letzte Verb ausgeführt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verlauf  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft kann eine der folgenden Werte aufweisen:
   

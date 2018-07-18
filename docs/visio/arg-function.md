@@ -27,7 +27,7 @@ ARG (** *ArgName* **, [** *DefaultValue* **])
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _argName_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Name eines Arguments, das die aufrufende Zelle an die Funktion übergeben kann.  <br/> |
-| _Standardwert_ <br/> |Optional  <br/> |**Numerische** <br/> |Der Wert, der von ARG zurückgegeben, wenn die aufrufende Zelle nicht in einen Wert für den _ArgName_ -Parameter übergeben hat.  <br/> |
+| _Standardwert_ <br/> |Optional  <br/> |**Numerisch** <br/> |Der Wert, der von ARG zurückgegeben, wenn die aufrufende Zelle nicht in einen Wert für den _ArgName_ -Parameter übergeben hat.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

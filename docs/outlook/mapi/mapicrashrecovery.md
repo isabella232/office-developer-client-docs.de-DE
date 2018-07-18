@@ -49,7 +49,7 @@ _ulFlags_
     
    - **MAPICRASH\_SYSTEM_SHUTDOWN**: Wenn die PST-Dateien oder OSTs in einen konsistenten Status befinden, verschieben Sie die Daten auf dem Datenträger und die PST-Dateien oder OSTs, um zu verhindern, dass Lese- oder Schreibzugriff sperren. Die PST-Dateien oder OSTs kann nicht entsperrt mit werden **MAPICRASH\_weiter**. Muss verwendet werden, in Kombination mit **MAPICRASH\_wiederherstellen**. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das obere Byte (0xFF000000) ist für Anbieter für bestimmte Absturz Recovery Flags reserviert.
   
@@ -57,6 +57,6 @@ Rufen Sie **MAPICrashRecovery** mit der **MAPICRASH\_wiederherstellen** und **MA
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Wiederherstellung von MAPI-API](about-the-mapi-crash-recovery-api.md)
-- [Verwenden Sie die Wiederherstellung von MAPI-API](how-to-use-the-mapi-crash-recovery-api.md)
+- [Informationen über die API zur MAPI-Wiederherstellung nach einem Absturz](about-the-mapi-crash-recovery-api.md)
+- [Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz](how-to-use-the-mapi-crash-recovery-api.md)
 

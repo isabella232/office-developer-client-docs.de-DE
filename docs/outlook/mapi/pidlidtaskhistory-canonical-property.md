@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskHistory-Eigenschaft
+title: PidLidTaskHistory (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793851"
 ---
-# <a name="pidlidtaskhistory-canonical-property"></a>Kanonische PidLidTaskHistory-Eigenschaft
+# <a name="pidlidtaskhistory-canonical-property"></a>PidLidTaskHistory (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Typ der Änderung an, die für die Aufgabe zuletzt vorgenommen wurde.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Wert dieser Eigenschaft festgelegt ist, muss auch die **DispidTaskLastUpdate** ([PidLidTaskLastUpdate](pidlidtasklastupdate-canonical-property.md))-Eigenschaft auf die aktuelle Zeit festgelegt werden. In der folgenden Tabelle werden die **DispidTaskHistory** Eigenschaftenwerte, in der Reihenfolge der Priorität niedriger aufgeführt. 
   

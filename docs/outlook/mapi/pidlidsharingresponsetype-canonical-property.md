@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingResponseType-Eigenschaft
+title: PidLidSharingResponseType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793803"
 ---
-# <a name="pidlidsharingresponsetype-canonical-property"></a>Kanonische PidLidSharingResponseType-Eigenschaft
+# <a name="pidlidsharingresponsetype-canonical-property"></a>PidLidSharingResponseType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Typ der Antwort mit dem der Empfänger die Freigabeanfrage geantwortet.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss auf einen der folgenden Werte festgelegt werden:
   

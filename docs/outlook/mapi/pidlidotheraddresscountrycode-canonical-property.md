@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidOtherAddressCountryCode-Eigenschaft
+title: PidLidOtherAddressCountryCode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793720"
 ---
-# <a name="pidlidotheraddresscountrycode-canonical-property"></a>Kanonische PidLidOtherAddressCountryCode-Eigenschaft
+# <a name="pidlidotheraddresscountrycode-canonical-property"></a>PidLidOtherAddressCountryCode (kanonische Eigenschaft)
 
   
   

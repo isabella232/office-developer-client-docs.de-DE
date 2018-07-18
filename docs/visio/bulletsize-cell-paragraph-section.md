@@ -26,13 +26,13 @@ Dieser Wert kann sowohl für vordefinierte als auch für benutzerdefinierte Aufz
   
 Wenn der Wert NULL (0) ist, wird das Aufzählungszeichen die gleiche Schriftgröße wie das erste Zeichen im Absatz. Wenn der Wert ein Prozentsatz ist, wird das Aufzählungszeichen als Prozentsatz der Schriftgrad des ersten Zeichens im Absatz angepasst. Negative Zahlen werden als Prozentsätze behandelt.
   
-Wenn Sie einen Verweis auf die Zelle BulletSize nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle BulletSize aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Para.BulletFontSize [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle BulletSize aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle BulletSize aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

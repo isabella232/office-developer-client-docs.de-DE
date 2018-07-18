@@ -37,7 +37,7 @@ HRESULT EmulateSpooler(
   
 >  [in] Legen Sie diesen Parameter auf true fest, wenn der lokale Speicher die Warteschlange emulieren soll; Legen Sie ihn auf False, wenn nicht. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein lokales Speichers **IPSTX::EmulateSpooler** fungieren als ein Outlook Protokollmanager, Einreihen in die Warteschlange Nachrichten in der ausgehenden Warteschlange auf dem Back-End-Server (beispielsweise MSN-Server oder AOL-Server) für die Verarbeitung von Anrufen. Emulieren einer Warteschlange während der Synchronisation, ruft der Speicher dann diese beiden Methoden: 
   

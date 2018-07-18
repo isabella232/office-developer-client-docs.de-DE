@@ -18,7 +18,7 @@ ms.locfileid: "19796995"
 
 Den Winkel des Farbverlaufs für Verläufe mit eine lineare Richtung, in Grad Füllung bestimmt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **FillGradientAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

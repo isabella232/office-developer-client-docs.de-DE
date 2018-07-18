@@ -33,23 +33,23 @@ MAPI definiert diese beiden Text Nachrichteneigenschaften und Mechanismen für d
   
 > Beschreibt, wie RTF Nachrichtentext synchronisiert mit der Formatierung beibehalten.
     
-[Unterstützung von formatierten Text in ausgehenden Nachrichten: Client Zuständigkeiten](supporting-formatted-text-in-outgoing-messages-client-responsibilities.md)
+[Unterstützung von formatiertem Text in ausgehenden Nachrichten: Kundenaufgaben](supporting-formatted-text-in-outgoing-messages-client-responsibilities.md)
   
 > Beschreibt die Client-Anwendung Aufgaben zur Unterstützung von formatierten Texts in ausgehenden Nachrichten.
     
-[Unterstützung von formatierten Text in eingehenden Nachrichten: Client Zuständigkeiten](supporting-formatted-text-in-incoming-messages-client-responsibilities.md)
+[Unterstützung von formatiertem Text in eingehenden Nachrichten: Kundenaufgaben](supporting-formatted-text-in-incoming-messages-client-responsibilities.md)
   
 > Client-Anwendung Aufgaben zur Unterstützung von formatierten Texts in eingehenden Nachrichten beschrieben.
     
-[Unterstützende formatierter Text: Nachrichtenspeicher Zuständigkeiten](supporting-formatted-text-message-store-responsibilities.md)
+[Unterstützung von formatiertem Text: Aufgaben des Nachrichtenspeichers](supporting-formatted-text-message-store-responsibilities.md)
   
 > Beschreibt Nachricht Store Verantwortung für die Unterstützung von formatierten Texts.
     
-[Unterstützen formatierter Text: Rendern von Anlagen](supporting-formatted-text-rendering-attachments.md)
+[Unterstützung von formatiertem Text: Darstellung von Anlagen](supporting-formatted-text-rendering-attachments.md)
   
 > Beschreibt, wie auswählen, in dem Anlagen gerendert werden.
     
-[Unterstützung von formatierten Text: Gateway Zuständigkeiten](supporting-formatted-text-gateway-responsibilities.md)
+[Unterstützung von formatiertem Text: Aufgaben des Gateways](supporting-formatted-text-gateway-responsibilities.md)
   
 > Beschreibt die Gateway Zuständigkeiten für ausgehenden und eingehenden formatierter Text-Nachrichten.
     

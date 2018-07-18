@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagSearch-Eigenschaft
+title: PidTagSearch (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795101"
 ---
-# <a name="pidtagsearch-canonical-property"></a>Kanonische PidTagSearch-Eigenschaft
+# <a name="pidtagsearch-canonical-property"></a>PidTagSearch (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält ein Container-Objekt, das für die erweiterte Suche verwendet wird.
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Adressbuchcontainer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Container, der Funktionen für die erweiterte Suche nicht unterstützt hat keinen die-Eigenschaft angeben.
   
@@ -54,7 +54,7 @@ Mapitags.h
 
 
 
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

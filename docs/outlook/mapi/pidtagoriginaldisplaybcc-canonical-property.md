@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagOriginalDisplayBcc-Eigenschaft
+title: PidTagOriginalDisplayBcc (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794677"
 ---
-# <a name="pidtagoriginaldisplaybcc-canonical-property"></a>Kanonische PidTagOriginalDisplayBcc-Eigenschaft
+# <a name="pidtagoriginaldisplaybcc-canonical-property"></a>PidTagOriginalDisplayBcc (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Anzeigenamen der Empfänger blind Carbon Copy, Blindkopie (BCC) der
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften enthalten eine durch Semikolons getrennte Liste. Sie MAPI bereitgestellten und direkt aus **PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md)) kopiert werden, wenn eine Lieferung oder Unzustellbarkeitsbericht oder einem Lese- oder nonread Bericht generiert wird. Diese Eigenschaften können für andere Nachrichten durch ihre Nachrichtenklassen definierten vorhanden sein.
   

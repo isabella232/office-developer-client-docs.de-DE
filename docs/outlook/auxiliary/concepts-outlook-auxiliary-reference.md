@@ -22,11 +22,11 @@ In diesem Abschnitt wird beschrieben, die vier APIs in Outlook 2013-Zusatzrefere
     
 - [Über der Datenschicht Abbau API](about-the-data-degradation-layer-api.md)
     
-- [Informationen zu APIs, die vom Outlook exportiert werden](about-apis-exported-by-outlook.md)
+- [Informationen zu von Outlook exportierten APIs](about-apis-exported-by-outlook.md)
     
 - [Outlook-Konfiguration](outlook-configuration.md)
     
-- [Outlook-Kalendern und Terminen](outlook-calendars-and-appointments.md)
+- [Outlook-Kalender und -Termine](outlook-calendars-and-appointments.md)
     
 - [Beispielaufgaben](sample-tasks.md)
     

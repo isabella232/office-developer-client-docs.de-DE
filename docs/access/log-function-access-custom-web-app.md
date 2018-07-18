@@ -32,7 +32,7 @@ Die **Log** -Funktion enthält die folgenden Argumente.
 | *NumericExpression*  <br/> |Die positive Zahl, deren Logarithmus Sie berechnen möchten.  <br/> |
 | *Base*  <br/> |Die Basis des Logarithmus. Wenn Length angegeben, gibt die **Log** -Funktion den natürlichen Logarithmus.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Log10** -Funktion ähnelt jedoch immer gibt den Logarithmus zurück, d. h., den Logarithmus zur Basis für die Basis 10. 
   

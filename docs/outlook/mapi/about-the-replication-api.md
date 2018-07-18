@@ -1,5 +1,5 @@
 ---
-title: Über die API-Replikation
+title: Informationen über die Replikations-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791220"
 ---
-# <a name="about-the-replication-api"></a>Über die API-Replikation
+# <a name="about-the-replication-api"></a>Informationen über die Replikations-API
 
   
   
@@ -74,7 +74,7 @@ Datentypen:
     
 - **[SYNCCONT](synccont.md)**
     
-- **[SYNCHRONISIERUNGSSTATUS](syncstate.md)**
+- **[SYNCSTATE](syncstate.md)**
     
 - **[UPDEL](updel.md)**
     

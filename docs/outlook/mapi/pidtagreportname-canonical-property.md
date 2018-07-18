@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagReportName-Eigenschaft
+title: PidTagReportName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794969"
 ---
-# <a name="pidtagreportname-canonical-property"></a>Kanonische PidTagReportName-Eigenschaft
+# <a name="pidtagreportname-canonical-property"></a>PidTagReportName (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den Anzeigenamen für den Empfänger, der Berichte für diese Nachricht
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Empfänger, den alle für diese Nachricht generierten Berichte empfangen der Absender delegiert wurde.
   

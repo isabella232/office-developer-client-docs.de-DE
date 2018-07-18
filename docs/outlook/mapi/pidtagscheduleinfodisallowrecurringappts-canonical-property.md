@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoDisallowRecurringAppts-Eigenschaft
+title: PidTagScheduleInfoDisallowRecurringAppts (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795084"
 ---
-# <a name="pidtagscheduleinfodisallowrecurringappts-canonical-property"></a>Kanonische PidTagScheduleInfoDisallowRecurringAppts-Eigenschaft
+# <a name="pidtagscheduleinfodisallowrecurringappts-canonical-property"></a>PidTagScheduleInfoDisallowRecurringAppts (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält True, wenn die automatische Antwort auf wiederkehrender Termine ablehne
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nur sinnvoll, wenn der Wert der **PR_SCHDINFO_AUTO_ACCEPT_APPTS** ([PidTagScheduleInfoAutoAcceptAppointments](pidtagscheduleinfoautoacceptappointments-canonical-property.md))-Eigenschaft auf true festgelegt ist. Das fehlen diese Eigenschaft gibt an, dass Besprechungsserien akzeptiert werden müssen. Dies ist keine erforderliche Eigenschaft.
   

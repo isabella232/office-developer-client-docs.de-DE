@@ -1,5 +1,5 @@
 ---
-title: Outlook Wetter Speicherort XML-Schema
+title: XML-Schema für Wetterstandort in Outlook
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796170"
 ---
-# <a name="outlook-weather-location-xml-schema"></a>Outlook Wetter Speicherort XML-Schema
+# <a name="outlook-weather-location-xml-schema"></a>XML-Schema für Wetterstandort in Outlook
 
 Dieser Abschnitt enthält die Outlook 2013-Schemareferenz für das Outlook Wetter Speicherort XML-Schema. Mit diesem Schema können Wetter-Dienstanbietern zur Beantwortung einer Outlook Web Service-Anforderung für einen Standortcode. Der Code sollte auf den Speicherort entsprechen, für die ein Benutzer in der Wetterleiste Wetterinformationen anfordert.
   

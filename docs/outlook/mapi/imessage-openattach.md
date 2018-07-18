@@ -72,7 +72,7 @@ S_OK
   
 > Die Anlage wurde erfolgreich geöffnet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::OpenAttach** -Methode wird ein e-Mail-Anlage geöffnet. 
   

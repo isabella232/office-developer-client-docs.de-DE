@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidWorkAddressState-Eigenschaft
+title: PidLidWorkAddressState (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793909"
 ---
-# <a name="pidlidworkaddressstate-canonical-property"></a>Kanonische PidLidWorkAddressState-Eigenschaft
+# <a name="pidlidworkaddressstate-canonical-property"></a>PidLidWorkAddressState (kanonische Eigenschaft)
 
   
   

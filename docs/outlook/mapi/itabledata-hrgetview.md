@@ -60,7 +60,7 @@ S_OK
   
 > Die Ansicht wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrGetView** -Methode erstellt eine schreibgeschützte Ansicht der Daten in der Tabelle, in der auf das durch den Parameter _LpSSortOrderSet_ Reihenfolge sortiert. Der Cursor befindet sich am Anfang der ersten Zeile in der Ansicht. Eine Implementierung von **IMAPITable** für den Zugriff auf die Ansicht wird zurückgegeben. 
   
@@ -74,9 +74,9 @@ Wenn es sich bei ein Dienstanbieter muss eine Ansicht an einen Client zurück, d
 
 [CALLERRELEASE](callerrelease.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [SSortOrderSet](ssortorderset.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

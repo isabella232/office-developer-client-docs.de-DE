@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAlternateRecipient-Eigenschaft
+title: PidTagAlternateRecipient (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794061"
 ---
-# <a name="pidtagalternaterecipient-canonical-property"></a>Kanonische PidTagAlternateRecipient-Eigenschaft
+# <a name="pidtagalternaterecipient-canonical-property"></a>PidTagAlternateRecipient (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine Liste der Eintragsbezeichner für den ursprünglichen Empfänger g
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird für die automatische weitergeleiteten Nachrichten verwendet. Sie enthält eine [FLATENTRYLIST](flatentrylist.md) Struktur der alternativen Empfänger. Wenn die automatische Weiterleitung nicht zulässig ist oder keine alternativer Empfänger festgelegt wurde, wird ein Unzustellbarkeitsbericht generiert. 
   

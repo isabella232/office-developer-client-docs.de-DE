@@ -55,7 +55,7 @@ S_OK
   
 > Die Vorbereitung Formular war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::PrepareForm** -Methode erstellt eine Nachricht Token für die Meldung über den Parameter _LpMessage_ und die Nachricht [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) -Methode aufgerufen. Dieses Token wird an **IMAPISession::ShowForm**im _UlMessageToken_ -Parameter übergeben. 
   

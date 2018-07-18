@@ -62,5 +62,5 @@ Die **IMAPIFormFactory::LockServer** -Methode ähnelt der [IClassFactory::LockSe
 
 
 
-[IMAPIFormFactory: IUnknown](imapiformfactoryiunknown.md)
+[IMAPIFormFactory : IUnknown](imapiformfactoryiunknown.md)
 

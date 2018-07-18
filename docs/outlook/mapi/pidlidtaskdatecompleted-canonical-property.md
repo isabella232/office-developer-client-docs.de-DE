@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskDateCompleted-Eigenschaft
+title: PidLidTaskDateCompleted (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793798"
 ---
-# <a name="pidlidtaskdatecompleted-canonical-property"></a>Kanonische PidLidTaskDateCompleted-Eigenschaft
+# <a name="pidlidtaskdatecompleted-canonical-property"></a>PidLidTaskDateCompleted (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das Datum an, wenn der Benutzer die Aufgabe abschließt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn festgelegt, diese Eigenschaft Zeitkomponente Mitternacht in der lokalen Zeitzone vorhanden sein muss (Coordinated Universal Time, UTC) konvertiert.
   

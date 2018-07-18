@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidYomiLastName-Eigenschaft
+title: PidLidYomiLastName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793916"
 ---
-# <a name="pidlidyomilastname-canonical-property"></a>Kanonische PidLidYomiLastName-Eigenschaft
+# <a name="pidlidyomilastname-canonical-property"></a>PidLidYomiLastName (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidHasPicture-Eigenschaft
+title: PidLidHasPicture (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793627"
 ---
-# <a name="pidlidhaspicture-canonical-property"></a>Kanonische PidLidHasPicture-Eigenschaft
+# <a name="pidlidhaspicture-canonical-property"></a>PidLidHasPicture (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob eine Anlage Foto für einen Kontakt vorhanden ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft vorhanden ist und auf TRUE festgelegt ist, enthält der Kontakt Anlagentabelle eine Anlage mit der **PR_ATTACHMENT_CONTACTPHOTO** ([PidTagAttachmentContactPhoto](pidtagattachmentcontactphoto-canonical-property.md))-Eigenschaft auf TRUE festgelegt.
   

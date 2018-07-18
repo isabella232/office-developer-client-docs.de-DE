@@ -1,5 +1,5 @@
 ---
-title: Implementierung der Steuerelement-Objekts
+title: Steuern der Objektimplementierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791449"
 ---
-# <a name="control-object-implementation"></a>Implementierung der Steuerelement-Objekts
+# <a name="control-object-implementation"></a>Steuern der Objektimplementierung
 
   
   

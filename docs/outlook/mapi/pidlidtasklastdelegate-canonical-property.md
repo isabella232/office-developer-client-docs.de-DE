@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskLastDelegate-Eigenschaft
+title: PidLidTaskLastDelegate (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793837"
 ---
-# <a name="pidlidtasklastdelegate-canonical-property"></a>Kanonische PidLidTaskLastDelegate-Eigenschaft
+# <a name="pidlidtasklastdelegate-canonical-property"></a>PidLidTaskLastDelegate (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ ms.locfileid: "19793837"
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Vor dem Senden einer Aufgabenanfrage, wird der Client diese Eigenschaft auf den Namen der Aufgabe delegierende Person. Vor dem Senden einer Aufgabenantwort, wird der Client diese Eigenschaft auf den Namen des Beauftragte für die Aufgabe ein.
   

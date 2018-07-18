@@ -22,17 +22,17 @@ Stellt die Portnummer für ein Postfach für allgemeine Internet dar.
 
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0104  <br/> |
+|Bezeichner:  <br/> |0x0104  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_DWORD  <br/> |
 |Eigenschafts-Tag:  <br/> |0x01040003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Beispiel ist 110 für POP-Konten.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md) 
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

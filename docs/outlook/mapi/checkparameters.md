@@ -56,7 +56,7 @@ S_OK
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Makro **CheckParameters** wurde durch das Makro [CheckParms](checkparms.md) ersetzt. **CheckParms** wird auf allen Plattformen empfohlen. 
   

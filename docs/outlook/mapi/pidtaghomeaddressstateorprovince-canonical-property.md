@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagHomeAddressStateOrProvince-Eigenschaft
+title: PidTagHomeAddressStateOrProvince (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794441"
 ---
-# <a name="pidtaghomeaddressstateorprovince-canonical-property"></a>Kanonische PidTagHomeAddressStateOrProvince-Eigenschaft
+# <a name="pidtaghomeaddressstateorprovince-canonical-property"></a>PidTagHomeAddressStateOrProvince (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Bundesland/Kanton Teil Adresse eines Benutzers enthält.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

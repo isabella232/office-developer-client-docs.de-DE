@@ -25,7 +25,7 @@ MAPI unterst�tzt die **[SetSearchPath](iaddrbook-getsearchpath.md)** -Methode 
   
 Es folgen Beispiele daf�r, wie Sie eine benutzerdefinierte Suchpfad f�r Adresslisten an Code.
   
-- [Die Reihenfolge der Lösung für Adresslisten programmgesteuert festlegen](how-to-programmatically-set-the-resolution-order-for-address-lists.md)
+- [Programmgesteuertes Festlegen der Lösungsreihenfolge für Adresslisten](how-to-programmatically-set-the-resolution-order-for-address-lists.md)
     
 - [KB 292590: zum �ndern der Address Book Sortierreihenfolge mit SetSearchPath](http://support.microsoft.com/kb/292590)
     

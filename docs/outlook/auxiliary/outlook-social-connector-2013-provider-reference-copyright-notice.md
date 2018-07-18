@@ -1,5 +1,5 @@
 ---
-title: Copyright-Anmerkung zur Outlook Social Connector 2013-Anbieter
+title: Copyright-Hinweis zur Outlook Social Connector 2013-Anbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791178"
 ---
-# <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>Copyright-Anmerkung zur Outlook Social Connector 2013-Anbieter
+# <a name="outlook-social-connector-2013-provider-reference-copyright-notice"></a>Copyright-Hinweis zur Outlook Social Connector 2013-Anbieter
 
 Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.
   

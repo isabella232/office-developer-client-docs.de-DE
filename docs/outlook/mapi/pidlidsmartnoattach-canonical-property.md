@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSmartNoAttach-Eigenschaft
+title: PidLidSmartNoAttach (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793789"
 ---
-# <a name="pidlidsmartnoattach-canonical-property"></a>Kanonische PidLidSmartNoAttach-Eigenschaft
+# <a name="pidlidsmartnoattach-canonical-property"></a>PidLidSmartNoAttach (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt dar, ob die Anlagen auf eine Nachricht gelten als ausgeblendet.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist TRUE, wenn die Anlagen der Nachricht gelten als ausgeblendet.
   

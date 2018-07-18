@@ -1,5 +1,5 @@
 ---
-title: AttDate-Attribute
+title: attDate-Attribute
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791333"
 ---
-# <a name="attdate-attributes"></a>AttDate-Attribute
+# <a name="attdate-attributes"></a>attDate-Attribute
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Installieren das Beispiel Offline State-Add-in
+title: Installieren des Offlinestatus-Add-In-Beispiels
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792715"
 ---
-# <a name="installing-the-sample-offline-state-add-in"></a>Installieren das Beispiel Offline State-Add-in
+# <a name="installing-the-sample-offline-state-add-in"></a>Installieren des Offlinestatus-Add-In-Beispiels
 
   
   
@@ -60,15 +60,15 @@ In diesem Thema führt Sie durch die Schritte zum Herunterladen und Offline-Stat
 
 
 
-[Über die Offline State-API](about-the-offline-state-api.md)
+[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
   
-[Installieren das Beispiel Offline State-Add-in](installing-the-sample-offline-state-add-in.md)
+[Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
   
-[Zum Beispiel Offline State-Add-in](about-the-sample-offline-state-add-in.md)
+[Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
   
-[Einrichten von einem Offline State Add-in](setting-up-an-offline-state-add-in.md)
+[Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
   
-[Überwachung Verbindungsstatus ändert mit einer Offline State-Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+[Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
   
-[Trennen der Verbindung ein Offline State-Add-in](disconnecting-an-offline-state-add-in.md)
+[Trennen eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
 

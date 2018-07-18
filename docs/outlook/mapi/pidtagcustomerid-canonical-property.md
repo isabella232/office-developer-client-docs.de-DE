@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagCustomerId-Eigenschaft
+title: PidTagCustomerId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794264"
 ---
-# <a name="pidtagcustomerid-canonical-property"></a>Kanonische PidTagCustomerId-Eigenschaft
+# <a name="pidtagcustomerid-canonical-property"></a>PidTagCustomerId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Kunden-ID-Nummer des Kontakts.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Inhalt dieser Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

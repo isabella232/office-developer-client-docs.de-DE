@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagDelegateFlags-Eigenschaft
+title: PidTagDelegateFlags (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794288"
 ---
-# <a name="pidtagdelegateflags-canonical-property"></a>Kanonische PidTagDelegateFlags-Eigenschaft
+# <a name="pidtagdelegateflags-canonical-property"></a>PidTagDelegateFlags (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Gibt an, ob eine Stellvertretung den Delegator privaten Message Objekte anzeigen
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder Eintrag in dieser Eigenschaft muss auf einen der folgenden Werte festgelegt werden.
   

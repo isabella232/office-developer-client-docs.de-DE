@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagImportance
+title: PidTagImportance (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794475"
 ---
-# <a name="pidtagimportance-canonical-property"></a>Kanonische-Eigenschaft PidTagImportance
+# <a name="pidtagimportance-canonical-property"></a>PidTagImportance (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der den Nachrichtenabsender Opinion die Wichtigkeitsstufe e
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft und die **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))-Eigenschaft darf nicht verwechselt werden. Bedeutung der Wert für Benutzer, während der Priorität angibt, die Reihenfolge oder Geschwindigkeit, an dem die Nachricht soll, von der messaging-Systemsoftware gesendet werden, an. Höherer Priorität Gibt in der Regel höhere Kosten. Höhere Priorität ist in der Regel eine andere Darstellung von der Benutzeroberfläche zugeordnet. 
   

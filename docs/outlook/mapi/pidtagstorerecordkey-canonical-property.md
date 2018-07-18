@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagStoreRecordKey-Eigenschaft
+title: PidTagStoreRecordKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795232"
 ---
-# <a name="pidtagstorerecordkey-canonical-property"></a>Kanonische PidTagStoreRecordKey-Eigenschaft
+# <a name="pidtagstorerecordkey-canonical-property"></a>PidTagStoreRecordKey (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält den eindeutigen binär vergleichbaren Bezeichner (Datensatzschlüssel) 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für einen Nachrichtenspeicher ist diese Eigenschaft mit der **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))-Eigenschaft des Speichers identisch.
   

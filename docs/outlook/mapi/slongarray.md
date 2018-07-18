@@ -40,7 +40,7 @@ typedef struct _SLongArray
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cValues**
   
@@ -50,7 +50,7 @@ typedef struct _SLongArray
   
 > Zeiger auf ein Array von LONG-Werte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu PT_MV_LONG finden Sie unter [Liste der Eigenschaftentypen](property-types.md).
   

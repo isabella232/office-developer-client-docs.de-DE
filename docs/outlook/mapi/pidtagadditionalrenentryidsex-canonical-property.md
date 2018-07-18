@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagAdditionalRenEntryIdsEx-Eigenschaft
+title: PidTagAdditionalRenEntryIdsEx (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794054"
 ---
-# <a name="pidtagadditionalrenentryidsex-canonical-property"></a>Kanonische PidTagAdditionalRenEntryIdsEx-Eigenschaft
+# <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Ordner mit Sonderfunktion Eintrags-IDs für ein Store-Objekt enthält. Jeder Ein
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft verwendet wird, enthält sie ein Array von Blöcken, die Eintrags-IDs für die Ordner angibt. Die Blöcke führen Sie das Format durch die folgenden vier Tabellen angegeben.
   
@@ -115,7 +115,7 @@ Mapidefs.h
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
   
 [Kanonische MAPI-Eigenschaften](mapi-canonical-properties.md)
   

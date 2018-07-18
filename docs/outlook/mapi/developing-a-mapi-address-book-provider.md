@@ -1,5 +1,5 @@
 ---
-title: Entwickeln von einem MAPI-Adressbuchanbieter
+title: Entwicklung eines MAPI-Adressbuchanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791531"
 ---
-# <a name="developing-a-mapi-address-book-provider"></a>Entwickeln von einem MAPI-Adressbuchanbieter
+# <a name="developing-a-mapi-address-book-provider"></a>Entwicklung eines MAPI-Adressbuchanbieters
 
   
   

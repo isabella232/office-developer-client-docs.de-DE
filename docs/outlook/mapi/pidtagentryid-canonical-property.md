@@ -1,5 +1,5 @@
 ---
-title: Kanonische-Eigenschaft PidTagEntryId
+title: PidTagEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794367"
 ---
-# <a name="pidtagentryid-canonical-property"></a>Kanonische-Eigenschaft PidTagEntryId
+# <a name="pidtagentryid-canonical-property"></a>PidTagEntryId (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält eine MAPI-Eintrags-ID, die zum Öffnen und Bearbeiten der Eigenschaften
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt ein Objekt für **OpenEntry** zum Instanziieren und ermöglicht den Zugriff auf alle seine Eigenschaften über die entsprechenden abgeleiteten Schnittstelle des **IMAPIProp**. 
   
@@ -109,7 +109,7 @@ Mapitags.h
 
 
 
-[Kanonische PidTagStoreEntryId-Eigenschaft](pidtagstoreentryid-canonical-property.md)
+[PidTagStoreEntryId (kanonische Eigenschaft)](pidtagstoreentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

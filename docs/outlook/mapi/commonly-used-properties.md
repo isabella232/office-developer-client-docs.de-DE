@@ -25,23 +25,23 @@ Liste der erforderlichen und optionalen MAPI-Eigenschaften werden an verschieden
   
 Finden Sie die folgenden Schnittstellen für Listen mit Objekten, die diese Schnittstellen unterstützen zugeordneten Eigenschaften:
   
-- [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)
+- [IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
     
-- [IAttach: IMAPIProp](iattachimapiprop.md)
+- [IAttach : IMAPIProp](iattachimapiprop.md)
     
-- [IDistList: IMAPIContainer](idistlistimapicontainer.md)
+- [IDistList : IMAPIContainer](idistlistimapicontainer.md)
     
-- [IMailUser: IMAPIProp](imailuserimapiprop.md)
+- [IMailUser : IMAPIProp](imailuserimapiprop.md)
     
-- [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+- [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
     
-- [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+- [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
     
 - [IMessage: IMAPIProp](imessageimapiprop.md)
     
 - [IMsgStore: IMAPIProp](imsgstoreimapiprop.md)
     
-- [IProfSect: IMAPIProp](iprofsectimapiprop.md)
+- [IProfSect : IMAPIProp](iprofsectimapiprop.md)
     
 Listen von Eigenschaften für Tabellen erforderlich finden Sie in der Dokumentation für jede Art von Tabelle in [MAPI-Tabellen](mapi-tables.md).
   
@@ -49,12 +49,12 @@ Liste der erforderlichen und optionalen Nachrichteneigenschaften für Nachrichte
   
 - [Erforderliche Eigenschaften für alle Nachrichten](required-properties-for-all-messages.md)
     
-- [Erforderliche Bericht Nachrichteneigenschaften](required-report-message-properties.md)
+- [Erforderliche Eigenschaften  für Berichtsnachrichten](required-report-message-properties.md)
     
-- [Optional Bericht Nachrichteneigenschaften](optional-report-message-properties.md)
+- [Optionale Eigenschaften für Berichtsnachrichten](optional-report-message-properties.md)
     
 - [Empfängereigenschaften für alle Nachrichten](recipient-properties-for-all-messages.md)
     
-- [Empfängereigenschaften für die Übermittlung von Statusberichten](recipient-properties-for-delivery-status-reports.md)
+- [Empfängereigenschaften für Übermittlungsstatusberichte](recipient-properties-for-delivery-status-reports.md)
     
 

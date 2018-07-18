@@ -27,12 +27,12 @@ Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwe
 |Eigenschafts-Tag:  <br/> |0x02070003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine NULL bedeutet der Wert nicht gesicherte KENNWORTAUTHENTIFIZIERUNG verwenden, andernfalls können Sie SPA verwenden.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwalten von Nachricht downloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)
+- [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)
 - [Konstanten (Account Management API)](constants-account-management-api.md)
 

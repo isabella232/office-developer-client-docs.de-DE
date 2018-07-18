@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameSubject-Eigenschaft
+title: PidNameSubject (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793996"
 ---
-# <a name="pidnamesubject-canonical-property"></a>Kanonische PidNameSubject-Eigenschaft
+# <a name="pidnamesubject-canonical-property"></a>PidNameSubject (kanonische Eigenschaft)
 
   
   
@@ -31,7 +31,7 @@ Gibt den Betreff der Datei, die an das Dokument angefügt ist.
 |:-----|:-----|
 |Anzeigenamen:  <br/> |Keine  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Name der Eigenschaft:  <br/> |Subject  <br/> |
+|Name der Eigenschaft:  <br/> |Betreff  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    

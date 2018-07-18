@@ -31,7 +31,7 @@ Ein 32-Bit-Wert, der verwendet wird, um einen Fehler oder eine Warnung zu beschr
 typedef LONG HRESULT;
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der **HRESULT** -Datentyp ist identisch mit der [SCODE](scode.md) -Datentyp. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentSubType-Eigenschaft
+title: PidLidAppointmentSubType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793427"
 ---
-# <a name="pidlidappointmentsubtype-canonical-property"></a>Kanonische PidLidAppointmentSubType-Eigenschaft
+# <a name="pidlidappointmentsubtype-canonical-property"></a>PidLidAppointmentSubType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob das Ereignis den ganzen Tag ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt an, ob das Ereignis ein ganztägiges Ereignis, wie vom Benutzer angegeben ist oder nicht. Der Wert gibt TRUE an, dass das Ereignis als ganztägiges Ereignis in diesem Fall müssen der Start- und Endzeit Mitternacht sein ist, damit die Dauer ein Vielfaches von 24 Stunden ist und mindestens 24 Stunden ist. Den Wert FALSE oder Abwesenheit dieser Eigenschaft wird angegeben, dass das Ereignis nicht um ein ganztägiges Ereignis ist. Der Client oder Server müssen Sie nicht den Wert true ableiten, wenn ein Benutzer ein Ereignis zu erstellen, ist von 24 Stunden, geschieht, auch wenn das Ereignis beginnt und um Mitternacht endet.
   

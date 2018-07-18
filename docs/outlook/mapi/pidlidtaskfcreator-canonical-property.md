@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidTaskFCreator-Eigenschaft
+title: PidLidTaskFCreator (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793834"
 ---
-# <a name="pidlidtaskfcreator-canonical-property"></a>Kanonische PidLidTaskFCreator-Eigenschaft
+# <a name="pidlidtaskfcreator-canonical-property"></a>PidLidTaskFCreator (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass die Aufgabe durch den aktuellen Benutzer oder die Benutzer-Agent a
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Client wird diese Eigenschaft auf true fest, wenn der Benutzer die Aufgabe erstellt und auf false festgelegt, wenn die Aufgabe von einem anderen Benutzer zugewiesen ist. Wenn Sie diese Eigenschaft nicht festgelegt lassen, wird der Wert TRUE angenommen.
   

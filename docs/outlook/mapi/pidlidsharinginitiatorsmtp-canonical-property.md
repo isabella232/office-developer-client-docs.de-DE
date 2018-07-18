@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidSharingInitiatorSmtp-Eigenschaft
+title: PidLidSharingInitiatorSmtp (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793786"
 ---
-# <a name="pidlidsharinginitiatorsmtp-canonical-property"></a>Kanonische PidLidSharingInitiatorSmtp-Eigenschaft
+# <a name="pidlidsharinginitiatorsmtp-canonical-property"></a>PidLidSharingInitiatorSmtp (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die SMTP-Adresse des Benutzers, der die Freigabenachricht initiiert hat. Di
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf den Wert der Eigenschaft **PR_SMTP_ADDRESS** ([PidTagSmtpAddress](pidtagsmtpaddress-canonical-property.md)) aus dem Adressbuch identifiziert durch die **DispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md))-Eigenschaft festgelegt und werden sollten ignoriert.
   

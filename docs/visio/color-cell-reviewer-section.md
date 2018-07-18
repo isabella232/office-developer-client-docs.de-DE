@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796653"
 ---
-# <a name="color-cell-reviewer-section"></a>Zelle "Color" (Abschnitt "Reviewer")
+# <a name="color-cell-reviewer-section"></a>Color Cell (Reviewer Section)
 
 Ein RGB-Wert, der die Farbe Markup eines Dokumentbearbeiters zugewiesen darstellt. 
   
@@ -26,13 +26,13 @@ Farben werden Bearbeitern in der folgenden Reihenfolge zugewiesen: Rot, Blau, Gr
   
 Kommentare auf dem ursprünglichen Zeichenblatt weisen stets die Farbe Gelb auf, ungeachtet der Farbe, die einem Bearbeiter in der Zelle Color zugewiesen ist. 
   
-Wenn Sie einen Verweis auf die Zelle Color nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Color aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Reviewer.Color [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Color aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Color aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -39,7 +39,7 @@ HRESULT GetSyncObject(
   
 >  [out] Zeiger auf die **IOSTX** -Schnittstelle zu erhalten. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Aufrufer muss sicherstellen, dass im gleiche Ordner nicht gleichzeitig auf mehreren Threads synchronisiert ist.
   

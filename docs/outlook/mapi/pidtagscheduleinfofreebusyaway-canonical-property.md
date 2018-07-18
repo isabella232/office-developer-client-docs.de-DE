@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagScheduleInfoFreeBusyAway-Eigenschaft
+title: PidTagScheduleInfoFreeBusyAway (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795089"
 ---
-# <a name="pidtagscheduleinfofreebusyaway-canonical-property"></a>Kanonische PidTagScheduleInfoFreeBusyAway-Eigenschaft
+# <a name="pidtagscheduleinfofreebusyaway-canonical-property"></a>PidTagScheduleInfoFreeBusyAway (kanonische Eigenschaft)
 
   
   
@@ -34,7 +34,7 @@ Enthält die Zeiten, die der Frei/Gebucht-Status auf ABWESEND festgelegt ist.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format, Berechnung und Einschränkungen dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)), aber finden Sie unter Termine, die im zugeordneten Kalender OOF gekennzeichnet sind.
   

@@ -1,5 +1,5 @@
 ---
-title: SkipBlock Stream-Struktur
+title: SkipBlock-Streamstruktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795562"
 ---
-# <a name="skipblock-stream-structure"></a>SkipBlock Stream-Struktur
+# <a name="skipblock-stream-structure"></a>SkipBlock-Streamstruktur
 
   
   
@@ -33,11 +33,11 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
 
 
 
-[Outlook-Elemente und Felder](outlook-items-and-fields.md)
+[Elemente und Felder in Outlook](outlook-items-and-fields.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[FieldDefinition Stream-Struktur](fielddefinition-stream-structure.md)
+[FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
   
-[FirstSkipBlockContent Stream-Struktur](firstskipblockcontent-stream-structure.md)
+[FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
 

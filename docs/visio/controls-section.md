@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796752"
 ---
-# <a name="controls-section"></a>Abschnitt "Controls"
+# <a name="controls-section"></a>Controls Section
 
 Enthält eine Zeile und Zellen für jeden für das Shape definierten Steuerpunkt.
   
