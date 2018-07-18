@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797142"
 ---
-# <a name="hascategory-function"></a>HASCATEGORY-Funktion
+# <a name="hascategory-function"></a>HASCATEGORY Function
 
 Gibt TRUE zurück, wenn es sich die angegebene Zeichenfolge in der Kategorienliste des Shapes befindet.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +37,7 @@ HASCATEGORY (** *Kategorie* **)
 
  **Boolean**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  *Kategorien* sind benutzerdefinierte Zeichenfolgen, die Sie verwenden können, die Shapes kategorisieren. Sie können die Kategorien in der Zelle User.msvShapeCategories im ShapeSheet für ein Shape definieren. Sie können mehrere Kategorien für ein Shape definieren, indem Sie die Kategorien durch ein Semikolon voneinander getrennt. 
   

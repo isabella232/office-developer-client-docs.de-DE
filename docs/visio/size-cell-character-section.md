@@ -24,13 +24,13 @@ Definiert die Größe des Texts im Textblock des Shapes.
 
 Die Größe des Texts ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt die Textgröße unverändert.
   
-Wenn Sie einen Verweis auf die Zelle Size nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Size aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Char.Size [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Size aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Size aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

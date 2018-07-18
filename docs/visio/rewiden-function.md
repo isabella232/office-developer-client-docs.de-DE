@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797862"
 ---
-# <a name="rewiden-function"></a>REWIDEN-Funktion
+# <a name="rewiden-function"></a>REWIDEN Function
 
 Konvertiert eine Formel, die 16-Bit-Zeichencodes, die erweiterte Einzel-Byte oder multibyte-Zeichensatz Codes in eine Zeichenfolge von 16-Bit-Unicode-Zeichencodes erzeugt, mithilfe der angegebenen Zeichensätze aufweisen. 
   

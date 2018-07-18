@@ -29,17 +29,17 @@ Die *X* -Abstand der Schaltfläche Aktionstag in Bezug auf den Punkt, der durch 
 | 1  <br/> | Zentriert.  <br/> |**visSmartTagXJustifyCenter** <br/> |
 | 2  <br/> | Rechts ausgerichtet.  <br/> |**visSmartTagXJustifyRight** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zellen X Justify und Y Justify bestimmen, wo die Schaltfläche Aktionstag in Bezug auf die Zellen X und Y definierten Punkt platziert wird. 
   
-Zum Abrufen eines Verweises auf die Zelle X Justify nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle X Justify aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | SmartTags.  *Name* . XJustify wobei SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle X Justify aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle X Justify aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

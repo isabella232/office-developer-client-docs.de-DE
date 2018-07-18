@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798196"
 ---
-# <a name="spafter-cell-paragraph-section"></a>Zelle "SpAfter" (Abschnitt "Paragraph")
+# <a name="spafter-cell-paragraph-section"></a>SpAfter Cell (Paragraph Section)
 
 Legt den Platz fest, der zusätzlich zum Platz, der in der Zelle SpLine angegeben wurde, nach jedem Absatz im Textblock des Shapes eingefügt wird, wenn es sich um den letzten Absatz in einem Textblock handelt (die Zelle BottomMargin).
   
@@ -24,13 +24,13 @@ Legt den Platz fest, der zusätzlich zum Platz, der in der Zelle SpLine angegebe
 
 Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn es sich um eine skalierte Zeichnung handelt, bleibt die Einstellung für Abstand nach unverändert.
   
-Wenn Sie einen Verweis auf die Zelle SpAfter nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle SpAfter aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Para.SpAfter [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle SpAfter aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle SpAfter aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

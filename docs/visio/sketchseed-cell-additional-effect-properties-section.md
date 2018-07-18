@@ -18,7 +18,7 @@ ms.locfileid: "19798131"
 
 Stellt einen zufällige Wert verwendet, um die Geometrie einer Skizze Auswirkung, wie eine positive ganze Zahl zu bestimmen. Der Wert der Zelle **SketchSeed** wird nach dem Zufallsprinzip erstellt, wenn eine Skizze Auswirkung auf die Form angewendet wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **SketchSeed** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

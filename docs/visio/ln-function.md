@@ -28,7 +28,7 @@ LN (** *Anzahl* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerische** <br/> | Die Zahl, deren natürlicher Logarithmus ermittelt werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> | Die Zahl, deren natürlicher Logarithmus ermittelt werden soll.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

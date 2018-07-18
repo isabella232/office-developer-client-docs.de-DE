@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |:-----|:-----|:-----|:-----|:-----|
 |N  <br/> |XSD: String  <br/> |erforderlich  <br/> |Der Name der die Formel, die aufgerufen werden, wenn der Trigger aktiviert ist.  <br/> Finden Sie unter "Hinweise".  <br/> |Werte des Typs xsd: String.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das **N** -Attribut des dieser **Trigger** -Element muss eine der eine begrenzte Auswahl von Werten sein, die Trigger Anweisungen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Trigger** -Element zulässig sind. 
   

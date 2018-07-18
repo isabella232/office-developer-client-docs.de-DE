@@ -28,7 +28,7 @@ TAN (** *Winkel* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Winkel, dessen den Tangens abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen den Tangens abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

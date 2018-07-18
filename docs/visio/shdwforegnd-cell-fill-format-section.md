@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798085"
 ---
-# <a name="shdwforegnd-cell-fill-format-section"></a>Zelle "ShdwForegnd" (Abschnitt "Fill Format")
+# <a name="shdwforegnd-cell-fill-format-section"></a>ShdwForegnd Cell (Fill Format Section)
 
 Legt die Farbe fest, die für den Vordergrund (Pinselstrich) des Schattenfüllmusters des Shapes verwendet wird.
   
@@ -28,13 +28,13 @@ Um eine benutzerdefinierte Farbe eingeben möchten, verwenden Sie die RGB oder H
   
 Sie können die Transparenz der Farbe für den Vordergrund des Schattenfüllmusters des Shapes in der Zelle ShdwForegndTrans festlegen.
   
-Wenn Sie einen Verweis auf die Zelle ShdwForegnd nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShdwForegnd aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ShdwForegnd  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShdwForegnd aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShdwForegnd aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797011"
 ---
-# <a name="fillpattern-cell-fill-format-section"></a>Zelle "FillPattern" (Abschnitt "Fill Format")
+# <a name="fillpattern-cell-fill-format-section"></a>FillPattern Cell (Fill Format Section)
 
 Legt das Füllmuster für das Shape fest. Verwenden Sie die USE-Funktion in dieser Zelle, um ein benutzerdefiniertes Füllmuster anzugeben.
   
@@ -24,19 +24,19 @@ Legt das Füllmuster für das Shape fest. Verwenden Sie die USE-Funktion in dies
 |:-----|:-----|
 |0  <br/> |Keine (transparente Füllung).  <br/> |
 |1  <br/> |Einfarbige Vordergrundfarbe.  <br/> |
-|2 – 40  <br/> |Verschiedene Füllmuster, die indizierten Einträgen im Dialogfeld **Füllbereich** entsprechen.  <br/> |
+|2 – 40  <br/> |Verschiedene Füllmuster, die den indizierten Einträgen im Dialogfeld **Füllbereich** entsprechen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können auch festlegen, diesen Wert über das Dialogfeld **Füllen** (auf der Registerkarte **Start** in der Gruppe **Shape** auf **Ausfüllen** und klicken Sie dann auf **Füllbereichsoptionen**).
+Sie können diesen Wert auch über das Dialogfeld **Füllbereich** festlegen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Füllbereich**, und klicken Sie dann auf **Füllbereichsoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle FillPattern nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle FillPattern aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |FillPattern  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle FillPattern aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle FillPattern aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

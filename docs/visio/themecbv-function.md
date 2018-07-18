@@ -20,7 +20,8 @@ Gibt einen RGB-Wert oder eine ganze Zahl, die einen Index in der Farbpalette des
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2013 
+Hinzugefügte Version: Visio 2013
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -37,7 +38,7 @@ Hinzugefügte Version: Visio 2013
 
  **Nummer**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!NOTE]
 > Die THEMECBV-Funktion hat keine Auswirkung auf die Farbe als Argument übergeben wird, wenn die QuickStyle, die mit dem Shape zugewiesen ist keinen Farbverlauf verfügt. 

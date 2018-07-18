@@ -18,7 +18,7 @@ ms.locfileid: "19797108"
 
 Bestimmt die Größe der der externe Leuchten eines Shapes in Punkt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **GlowSize** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798351"
 ---
-# <a name="upper-function"></a>UPPER-Funktion
+# <a name="upper-function"></a>UPPER Function
 
 Gibt eine Zeichenfolge in Großbuchstaben konvertiert.
   
@@ -28,7 +28,7 @@ OBERE (** *Ausdruck* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Großbuchstaben konvertiert wird.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Varies** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Großbuchstaben konvertiert wird.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

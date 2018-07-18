@@ -1,5 +1,5 @@
 ---
-title: THEMEVAL Function
+title: THEMEVAL-Funktion
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798277"
 ---
-# <a name="themeval-function"></a>THEMEVAL Function
+# <a name="themeval-function"></a>THEMEVAL-Funktion
 
 Ruft die Werte aus dem aktiven Design ab. 
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2013 
+Hinzugefügte Version: Visio 2013
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -33,7 +34,7 @@ Hinzugefügte Version: Visio 2013
 | _"Theme_value"_ <br/> |Optional  <br/> |**String** <br/> |Der Name einer Zelle in der Designdefinition, einen Wert abgerufen werden soll.  <br/> |
 | _default_ <br/> |Optional  <br/> |Sonstige  <br/> |Ein Standardwert, wenn das Dokument nicht entsprechendes mit Design versehenes ist (es ist keine Designdefinition).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die **THEMEVAL** -Funktion keine Argumente erhält, wird den entsprechendes mit Design versehenes Wert der Zelle Host zurückgegeben. Dies ist der Wert in der Definition des aktuellen Designs gespeichert. Die Zelle Host muss mit Designs einen Wert zurückgegeben werden können; Wenn die Zelle nicht mit Designs Lage ist, gibt **THEMEVAL** einen Fehler zurück. 
   

@@ -6,7 +6,9 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: da776276-e8c2-085b-9b23-e5b1f5ba64cd
-description: Repräsentiert ein geöffnetes Fenster in einer Microsoft Visio-Instanz. Dieses Element enthält die erforderlichen Informationen, um ein Fenster auf der Benutzeroberfläche im Anwendungsarbeitsbereich genau neu erstellen, wenn die Datei Anfangs von Visio geöffnet wird.
+description: >-
+  Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
+   Dieses Element enthält die erforderlichen Informationen, um ein Fenster auf der Benutzeroberfläche im Anwendungsarbeitsbereich genau neu erstellen, wenn die Datei Anfangs von Visio geöffnet wird.
 ms.openlocfilehash: 762b689d625c7865696a0bf8bb8c4acc25e3d8eb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,7 +18,8 @@ ms.locfileid: "19798418"
 ---
 # <a name="window-element-windowstype-complextype-visio-xml"></a>Window-Element (Windows_Type ComplexType) ("Visio XML")
 
-Repräsentiert ein geöffnetes Fenster in einer Microsoft Visio-Instanz. Dieses Element enthält die erforderlichen Informationen, um ein Fenster auf der Benutzeroberfläche im Anwendungsarbeitsbereich genau neu erstellen, wenn die Datei Anfangs von Visio geöffnet wird.
+Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
+ Dieses Element enthält die erforderlichen Informationen, um ein Fenster auf der Benutzeroberfläche im Anwendungsarbeitsbereich genau neu erstellen, wenn die Datei Anfangs von Visio geöffnet wird.
   
 ## <a name="element-information"></a>Informationen zum Element
 

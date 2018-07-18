@@ -28,7 +28,7 @@ PNTX (** *zeigen* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeigen Sie_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die _y_-Koordinate des Punkts.  <br/> |
+| _Punkt_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die _y_-Koordinate des Punkts.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

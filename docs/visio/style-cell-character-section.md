@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798192"
 ---
-# <a name="style-cell-character-section"></a>Zelle "Style" (Abschnitt "Character")
+# <a name="style-cell-character-section"></a>Style Cell (Character Section)
 
 Zeigt die Zeichenformatierung für einen Textbereich im Textblock des Shapes an.
   
@@ -33,13 +33,13 @@ Die Zelle Style enthält Formatierungsinformationen für einen Unterbereich des 
   
 Der Wert stellt eine binäre Zahl in denen jedes Bit eine Zeichenformatvorlage angibt. Beispielsweise stellt einen Wert von 3 Text fett und kursiv formatiert. Wenn der Wert der Style 0 ist, wird der Text einfache oder unformatierte. Sie können ein bestimmtes Format mit Boolean BIT testen\* Funktionen. Finden Sie unter Dokumentation zu Ihrem Programmierung Informationen zu diesen Funktionen.
   
-Wenn Sie einen Verweis auf die Zelle Style nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Style aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Char.Style [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Style aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Style aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

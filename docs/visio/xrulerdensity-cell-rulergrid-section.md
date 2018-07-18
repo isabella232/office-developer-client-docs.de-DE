@@ -1,5 +1,5 @@
 ---
-title: Zelle "XRulerDensity" (Lineal &amp; Rasterabschnitt)
+title: XRulerDensity Cell (Ruler &amp; Grid Section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798436"
 ---
-# <a name="xrulerdensity-cell-ruler-amp-grid-section"></a>Zelle "XRulerDensity" (Lineal &amp; Rasterabschnitt)
+# <a name="xrulerdensity-cell-ruler-amp-grid-section"></a>XRulerDensity Cell (Ruler &amp; Grid Section)
 
 Legt die horizontalen Einteilungen auf dem Lineal des Zeichenblatts fest.
   
@@ -27,17 +27,17 @@ Legt die horizontalen Einteilungen auf dem Lineal des Zeichenblatts fest.
 |16 (&amp;H10)  <br/> |Normal (Standard)  <br/> |**visRulerNormal** <br/> |
 |32 (&amp;H20)  <br/> |Fein  <br/> |**visRulerFine** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Zelle entspricht der horizontalen Option **Einteilung** in die **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
   
-Wenn Sie einen Verweis auf die Zelle XRulerDensity nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle XRulerDensity aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |XRulerDensity  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle XRulerDensity aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle XRulerDensity aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

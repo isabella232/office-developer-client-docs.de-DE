@@ -26,17 +26,17 @@ Legt den Verbindungspunkttyp fest.
 |1  <br/> |Nach außen  <br/> |**visCnnctTypeOutward** <br/> |
 |2  <br/> |Nach innen &amp; nach außen  <br/> |**visCnnctTypeInwardOutward** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können den Verbindungspunkttyp auch festlegen, indem **die Verbinder** auswählen, indem ein Shape und klicken Sie dann mit der rechten Maustaste eines Verbindungspunkts. Zu diesem Zweck müssen Sie im [Entwicklermodus](run-in-developer-mode-display-the-developer-tab.md) ausführen. 
+Sie können den Verbindungspunkttyp auch festlegen, indem Sie das Tool **Automatischer Verbinder** sowie ein Shape auswählen und anschließend mit der rechten Maustaste auf einen Verbindungspunkt klicken. Dazu müssen Sie in den [Entwicklermodus](run-in-developer-mode-display-the-developer-tab.md) wechseln. 
   
-Ein Verweis auf den Typ / C Zelle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft verwenden: 
+Wenn Sie einen Verweis auf die Zelle Type / C aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Verbindungen.Typ [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Ein Verweis auf den Typ / Zelle C aus einem Programm nach Index verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Type / C aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

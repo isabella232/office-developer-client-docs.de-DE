@@ -34,7 +34,7 @@ VERWENDEN ("** *Namen* **")
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn ein Master-Shape mit dem Namen _Name_ in der Dokumentschablone des Dokuments vorhanden ist, wird das Muster als Linienmuster, Füllmuster, PfeilAnfang oder Pfeilende beginnen angewendet. 
   

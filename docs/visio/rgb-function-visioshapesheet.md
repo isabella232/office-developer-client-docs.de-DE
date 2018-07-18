@@ -30,7 +30,7 @@ RGB (** *Rot* **, ** *grüne* **, ** *Blau* **)
 |:-----|:-----|:-----|:-----|
 | _Rot_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Rotkomponente.  <br/> |
 | _Grün_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Grünkomponente.  <br/> |
-| _Blau_ <br/> |Erforderlich  <br/> |**Nmber** <br/> |Die Blaukomponente.  <br/> |
+| _Blau_ <br/> |Erforderlich  <br/> |**Number** <br/> |Die Blaukomponente.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

@@ -18,7 +18,7 @@ ms.locfileid: "19797014"
 
 Zeigt die Werte der Farbe für den Farbverlauf auf die Form angewendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jede Zeile [Farbverlauf beenden Zeile (Abschnitt "Fill Farbverlauf")](gradient-stop-row-fill-gradient-section.md) im Abschnitt stellt einen Farbverlaufstopp bei der Füllung dar. In diesem Abschnitt kann leer sein. 
   

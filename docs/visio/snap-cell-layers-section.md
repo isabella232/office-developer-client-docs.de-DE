@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798137"
 ---
-# <a name="snap-cell-layers-section"></a>Zelle "Snap" (Abschnitt "Layers")
+# <a name="snap-cell-layers-section"></a>Snap Cell (Layers Section)
 
 Bestimmt, ob andere Shapes an den dem Layer zugeordneten Shapes einrasten können. Die dem Layer zugeordneten Shapes können an anderen Shapes einrasten, andere Shapes jedoch nicht.
   
@@ -27,15 +27,15 @@ Bestimmt, ob andere Shapes an den dem Layer zugeordneten Shapes einrasten könne
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können auch den Wert dieser Zelle mit der Option **Ausrichten** im Dialogfeld **Layereigenschaften** festlegen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** , klicken Sie auf **Ebenen**, und klicken Sie dann auf **Layereigenschaften**).
+Sie können den Wert dieser Zelle auch über die Option **Ausrichten** im Dialogfeld **Layereigenschaften** festlegen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**).
   
-Wenn Sie einen Verweis auf die Zelle Snap nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Snap aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Layers.Snap [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Snap aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Snap aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

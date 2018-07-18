@@ -33,7 +33,7 @@ POLYLINIE (** *xTyp gleich* **, ** *gleich* **, ** *X1* **, ** *y1* **...)
 | _x1_ <br/> |Erforderlich  <br/> |**Nummer** <br/> | Eine _X_-Koordinate.  <br/> |
 | _Y1_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Eine _y_-Koordinate.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für jedes *X* -Argument muss ein *y* -Argument; Andernfalls wird ein Fehler zurückgegeben. 
   

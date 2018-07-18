@@ -28,7 +28,7 @@ NIEDRIGERE (** *Ausdruck* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Variiert** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Kleinbuchstaben konvertiert wird.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Varies** <br/> | Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Kleinbuchstaben konvertiert wird.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

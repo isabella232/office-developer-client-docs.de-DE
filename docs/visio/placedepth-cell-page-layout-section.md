@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797608"
 ---
-# <a name="placedepth-cell-page-layout-section"></a>Zelle "PlaceDepth" (Abschnitt "Page Layout")
+# <a name="placedepth-cell-page-layout-section"></a>PlaceDepth Cell (Page Layout Section)
 
 Legt die Methode fest, anhand derer die Zeichnung vor Erstellen des Layouts analysiert wird, und definiert den Layouttyp.
   
-|**Wert**|**Platzierungstiefe für vertikale und horizontale layouts**|**Automatisierungskonstante**|
+|**Wert**|**Platzierungstiefe für vertikale und horizontale Layouts**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Zeichenblattstandard  <br/> |**visPLOPlaceDepthDefault** <br/> |
 | 1  <br/> | Mittel  <br/> |**visPLOPlaceDepthMedium** <br/> |
 | 2  <br/> | Tief  <br/> |**visPLOPlaceDepthDeep** <br/> |
 | 3  <br/> | Flach  <br/> |**visPLOPlaceDepthShallow** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle PlaceDepth nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PlaceDepth aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PlaceDepth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PlaceDepth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PlaceDepth aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

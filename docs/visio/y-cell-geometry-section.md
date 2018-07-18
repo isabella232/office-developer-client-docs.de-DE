@@ -33,24 +33,24 @@ Stellt eine *y* -Koordinaten eines Shapes in lokalen Koordinaten dar. Die folgen
 |[InfiniteLine](infiniteline-row-geometry-section.md) <br/> | Eine *y -* Koordinate eines Punkts auf der unendlichen Linie.  <br/> |
 |[Ellipse](ellipse-row-geometry-section.md) <br/> | Die *y* -Koordinate des Mittelpunkts der Ellipse.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Y nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Y aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Geometrie *i* . Y *j* wobei *i* und *j* = < 1 >, 2, 3...  <br/> |
 || Geometrie *i* . Y1 (Zeilen UnendlicheLinie und Ellipse) wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Y aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Y aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
 | Abschnittsindex:  <br/> |**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...  <br/> |
 | Zeilenindex:  <br/> |**VisRowVertex** +  *j* wobei *j* = 0, 1, 2...  <br/> |
-||**visRowVertex** (Zeilen UnendlicheLinie und Ellipse)  <br/> |
-| Zellenindex:  <br/> |**visY** (Zeilen MoveTo, LineTo, ArcTo, EllipticalArcTo, NURBSTo, Polyline, SplineStart und SplineKnot)  <br/> |
-||**visInfiniteLineY1** (Zeile InfiniteLine)  <br/> |
-||**visEllipseCenterY** (Ellipsenzeile)  <br/> |
+||visRowVertex (Zeilen InfiniteLine und Ellipse)  <br/> |
+| Zellenindex:  <br/> |visY (Zeilen MoveTo, LineTo, ArcTo, EllipticalArcTo, NURBSTo, Polyline, SplineStart und SplineKnot)  <br/> |
+||visInfiniteLineY1 (Zeile InfiniteLine)  <br/> |
+||visEllipseCenterY (Zeile Ellipse)  <br/> |
    
 

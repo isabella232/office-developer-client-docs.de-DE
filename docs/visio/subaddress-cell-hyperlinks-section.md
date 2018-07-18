@@ -24,9 +24,9 @@ Gibt eine Position im Zieldokument an, mit der eine Verknüpfung hergestellt wer
 
 Angenommen, wenn die Zelle Address "Drawing1.vsdx" ist, kann die Zelle SubAddress ein Seitenname wie "Seite 3" angeben. Wenn die Zelle Address der Microsoft Excel-Datei "Samples.xlsx" ist, kann der Wert dieser Zelle ein Arbeitsblatt oder einen Bereich in einem Arbeitsblatt, z. B. "Microsoft Excel-Arbeitsblattfunktionen" oder "Sheet1! sein A1: D10 ". Wenn die Zelle Address "http://www.microsoft.com/office/", kann der Wert dieser Zelle einen benannten Anker innerhalb des Dokuments, z. B. "Solutions" sein.
   
-Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie in der Gruppe **Hyperlinks** auf der Registerkarte **Einfügen** auf **Hyperlink**).
+Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie dazu auf der Registerkarte **Einfügen** in der Gruppe **Hyperlinks** auf **Hyperlink**).
   
-Wenn Sie einen Verweis auf die Zelle SubAddress nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle SubAddress aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|

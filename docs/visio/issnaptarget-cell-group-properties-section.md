@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797249"
 ---
-# <a name="issnaptarget-cell-group-properties-section"></a>Zelle "IsSnapTarget" (Abschnitt "Group Properties")
+# <a name="issnaptarget-cell-group-properties-section"></a>IsSnapTarget Cell (Group Properties Section)
 
 Legt fest, ob der Einrastvorgang an einer Gruppe oder an einzelnen Shapes in dieser Gruppe erfolgt.
   
@@ -27,15 +27,15 @@ Legt fest, ob der Einrastvorgang an einer Gruppe oder an einzelnen Shapes in die
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können diesen Wert auch festlegen, indem Auswählen der Gruppe auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) **Verhalten** klicken und anschließend das Kontrollkästchen **an Mitglieds-Shapes ausrichten** . 
+Sie können diesen Wert auch festlegen, indem Sie die Gruppe auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **An Mitglieds-Shapes einrasten** aktivieren. 
   
-Wenn Sie einen Verweis auf die Zelle IsSnapTarget nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle IsSnapTarget aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |IsSnapTarget  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle IsSnapTarget aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle IsSnapTarget aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

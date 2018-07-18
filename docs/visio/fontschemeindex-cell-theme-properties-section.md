@@ -18,7 +18,7 @@ ms.locfileid: "19797047"
 
 Bestimmt das Schriftartenschema eines Designs, das dem Shape als ganze Zahl angewendet wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **FontSchemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

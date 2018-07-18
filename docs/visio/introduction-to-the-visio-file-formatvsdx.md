@@ -31,15 +31,15 @@ Es gibt mehrere Dateitypen, durch Erweiterung, die das Visio 2013-Dateiformat um
   
 - .vsdx (Visio-Zeichnung)
     
-- .vsdm (Visio-Makro aktivierte Zeichnung)
+- .vsdm (per Visio-Makro aktivierte Zeichnung)
     
 - .vssx (Visio-Schablone)
     
-- .vssm (Visio-Makro aktivierte Schablone)
+- .vssm (per Visio-Makro aktivierte Schablone)
     
 - .vstx (Visio-Vorlage)
     
-- .vstm (Visio-Vorlage mit Makros)
+- .vstm (per Visio-Makro aktivierte Vorlage)
     
 > [!NOTE]
 > Nur die makrofähigen Dateien (.vsdm, .vssm, .vstm) können VBA-Makros speichern. Sie können Makros nicht in Dateien mit einer VSDX-, VSSX- oder VSTX-Erweiterung speichern. 
@@ -163,13 +163,13 @@ Im folgenden Codebeispiel können Sie sehen, wie eine VSDX-Datei geöffnet wird,
     
 4. Klicken Sie im Menü **Datei** auf **neu**, und wählen Sie dann ** Project **.
     
-5. Unter **Visual c#** oder **Visual Basic**erweitern Sie **Windows**, und wählen Sie dann **Konsolenanwendung**.
+5. Erweitern Sie unter **Visual C#** oder **Visual Basic** den Knoten **Windows**, und wählen Sie dann **Konsolenanwendung**.
     
 6. Geben Sie im Feld **Name den Namen** 'VisioFileExplorer'. Das Konsolenanwendungsprojekt wird geöffnet. 
     
-7. Klicken Sie im **Projektmappen-Explorer**-Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Verweis hinzufügen**. 
+7. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **VisioFileExplorer**, und klicken Sie dann auf **Verweis hinzufügen**. 
     
-8. Klicken Sie im Dialogfeld **Verweis hinzufügen** unter **Assemblies**erweitern Sie **Framework**, und wählen Sie dann **WindowsBase aus**.
+8. Erweitern Sie im Dialogfeld **Verweis hinzufügen** unter **Assemblies** den Knoten **Framework**, und wählen Sie dann **WindowsBase** aus.
     
 9. Fügen Sie den folgenden Code in die Lösung ein.
     

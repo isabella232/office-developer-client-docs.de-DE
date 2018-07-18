@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798042"
 ---
-# <a name="shapeshdwoffsety-cell-fill-format-section"></a>Zelle "ShapeShdwOffsetY" (Abschnitt "Fill Format")
+# <a name="shapeshdwoffsety-cell-fill-format-section"></a>ShapeShdwOffsetY Cell (Fill Format Section)
 
 Legt den Abstand in Seiteneinheiten fest, den der Schatten eines Shapes auf vertikaler Ebene vom Shape entfernt ist.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Dieser Wert entspricht dem Wert der Einstellung **Y-Abstand** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** klicken Sie auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
+Dieser Wert entspricht dem Wert der Einstellung **Y-Abstand** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle ShapeShdwOffsetY nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapeShdwOffsetY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname  <br/> | ShapeShdwOffsetY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeShdwOffsetY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapeShdwOffsetY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

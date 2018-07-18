@@ -33,9 +33,9 @@ RECHTS (** *Text* ** [, ** *Num_chars_opt* **])
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert von _Num_chars_opt_ muss größer als oder gleich 0 (null). 
   

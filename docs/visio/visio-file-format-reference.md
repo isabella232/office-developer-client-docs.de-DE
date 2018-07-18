@@ -1,5 +1,5 @@
 ---
-title: Dateiformatreferenz für Visio
+title: Visio-Dateiformatreferenz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798397"
 ---
-# <a name="visio-file-format-reference"></a>Dateiformatreferenz für Visio
+# <a name="visio-file-format-reference"></a>Visio-Dateiformatreferenz
 
 Diese Referenz enthält eine konzeptionelle Übersicht und Referenzthemen, einschließlich Beispiele, um bei der Entwicklung von Lösungen mit dem Visio-Dateiformat (\*.vsdx).
   
@@ -24,9 +24,9 @@ Wir freuen uns Ihre Kommentare oder Fragen zu dieser Inhalt. Sie können an [doc
   
 In dieser Dokumentation werden die folgenden Informationen bereitgestellt:
   
-- [Einführung in das Visio-Dateiformat (.vsdx) (engl.)](introduction-to-the-visio-file-formatvsdx.md)
+- [Einführung in das Visio-Dateiformat (.vsdx)](introduction-to-the-visio-file-formatvsdx.md)
     
-- [Das Visio-Dateiformat programmgesteuert bearbeiten](how-to-manipulate-the-visio-file-format-programmatically.md)
+- [Programmgesteuertes Bearbeiten des Visio-Dateiformats](how-to-manipulate-the-visio-file-format-programmatically.md)
     
 - [Schemazuordnung](schema-mapvisio-xml.md): Zeigt das XML-Schema des Visio-Dateiformats.
     

@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797337"
 ---
-# <a name="linetoliney-cell-page-layout-section"></a>Zelle "LineToLineY" (Abschnitt "Page Layout")
+# <a name="linetoliney-cell-page-layout-section"></a>LineToLineY Cell (Page Layout Section)
 
 Legt den vertikalen Abstand zwischen sämtlichen Verbindern auf dem Zeichenblatt fest.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert dieser Zelle auch im Dialogfeld **Layout und Routing Abstand** festlegen. (Klicken Sie auf der Registerkarte **Entwurf** klicken Sie auf den Pfeil neben **Seite einrichten** , klicken Sie auf **Layout und Routing**, und klicken Sie dann auf **Abstand**.)
+Sie können den Wert dieser Zelle auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, wählen Sie **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Wenn Sie einen Verweis auf die Zelle LineToLineY nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LineToLineY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LineToLineY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineToLineY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LineToLineY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

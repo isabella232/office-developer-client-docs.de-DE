@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797232"
 ---
-# <a name="intup-function"></a>INTUP-Funktion
+# <a name="intup-function"></a>INTUP Function
 
 Rundet eine Zahl auf die nächste ganze Zahl.
   

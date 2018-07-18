@@ -20,7 +20,8 @@ Gibt die 1-basierte Position der Form in der Liste zurück.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +29,7 @@ LISTORDER()
   
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 

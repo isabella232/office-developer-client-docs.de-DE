@@ -28,11 +28,11 @@ LOC (** *zeigen* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeigen Sie_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt, der in den lokalen Koordinaten eines Shapes definiert ist.  <br/> |
+| _Punkt_ <br/> |Erforderlich  <br/> |**String** <br/> | Ein Punkt, der in den lokalen Koordinaten eines Shapes definiert ist.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 
@@ -44,6 +44,6 @@ LOC (Pkt (Sheet.5! LocPinX, Sheet.5! LocPinY))
   
 In diesem Ausdruck konvertiert PKT ein Paar lokaler Koordinaten in Sheet.5 in einen Punkt. (Bei Sheet.5 handelt es sich um ein weiteres Shape auf demselben Zeichenblatt.) LOC konvertiert diesen Punkt dann in einen äquivalenten Punkt in dem lokalen Koordinatensystem des aktuellen Shapes - relativ zur unteren linken Ecke des Auswahlrechtecks des aktuellen Shapes. 
   
-Die 5 in Sheet.5 ist die ID-Nummer für die Form, die im Dialogfeld **Shape-Name** (Registerkarte**Entwickler** ) angezeigt wird. 
+Die 5 in Sheet.5 ist die ID für das Shape, das im Dialogfeld **Shape-Name** (Registerkarte **Entwickler**) angezeigt wird. 
   
 

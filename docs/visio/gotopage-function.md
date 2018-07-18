@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797117"
 ---
-# <a name="gotopage-function"></a>GOTOPAGE-Funktion
+# <a name="gotopage-function"></a>GOTOPAGE Function
 
 Zeigt die Seite, die den Namen *Pagename* in das derzeit aktive Fenster hat. 
   

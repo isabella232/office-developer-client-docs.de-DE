@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797230"
 ---
-# <a name="int-function"></a>INT-Funktion
+# <a name="int-function"></a>INT Function
 
 Rundet eine Zahl auf die nächste ganze Zahl.
   

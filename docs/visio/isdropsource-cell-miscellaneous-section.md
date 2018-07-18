@@ -27,17 +27,17 @@ Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefüg
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können diesen Wert auch festlegen, indem Sie das Shape auswählen, auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** und dann auswählen das Kontrollkästchen **Shape beim Ablegen der Gruppe hinzufügen** . 
+Sie können diesen Wert auch festlegen, indem Sie das Shape auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **Shape beim Ablegen der Gruppe hinzufügen** aktivieren. 
   
-Neben der Aktivierung dieses Verhalten für ein Shape, müssen Sie auch eine Gruppe Shapes annehmen, die hinein gezogen werden aktivieren. Dazu wählen Sie die Gruppe aus, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** , und wählen Sie dann das Kontrollkästchen **abgelegte Shapes annehmen** . Dieser Wert wird in der Zelle IsDropTarget im Abschnitt Group Properties gespeichert. 
+Darüber hinaus müssen Sie eine Gruppe aktivieren, damit Shapes darin abgelegt werden können. Wählen Sie dazu die entsprechende Gruppe aus, klicken Sie auf der Registerkarte Entwickler auf Verhalten, und aktivieren Sie anschließend das Kontrollkästchen Abgelegte Shapes annehmen. Dieser Wert wird in der Zelle IsDropTarget im Abschnitt Gruppeneigenschaften gespeichert. 
   
-Wenn Sie einen Verweis auf die Zelle IsDropSource nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle IsDropSource aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |IsDropSource  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle IsDropSource aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle IsDropSource aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

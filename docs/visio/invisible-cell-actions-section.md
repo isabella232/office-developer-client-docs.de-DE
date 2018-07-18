@@ -30,13 +30,13 @@ Zeigt an, ob die Aktion im Aktionstag- oder Kontextmenü sichtbar ist.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle Invisible nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Invisible aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . Invisiblewhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Invisible aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Invisible aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

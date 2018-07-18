@@ -27,17 +27,17 @@ Legt fest, ob das Shape durch Ablegen auf einer Gruppe dieser Gruppe hinzugefüg
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können diesen Wert auch festlegen, indem Auswählen der Gruppe auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) **Verhalten** klicken und anschließend das Kontrollkästchen **abgelegte Shapes annehmen** . 
+Sie können diesen Wert auch festlegen, indem Sie die Gruppe auswählen, auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** klicken und anschließend das Kontrollkästchen **Abgelegte Shapes annehmen** aktivieren. 
   
-Um eine Form zu einer Gruppe durch Ablegen der Gruppe hinzufügen möchten, müssen Sie auch ähnliches Shape-Verhalten aktivieren. Sie müssen das Shape auswählen, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** und wählen Sie dann das Kontrollkästchen **Shape beim Ablegen der Gruppe hinzufügen** . Dieser Wert wird in der Zelle IsDropSource im Abschnitt Miscellaneous gespeichert. 
+Damit Sie einer Gruppe ein Shape durch Ablegen hinzufügen können, müssen Sie außerdem ein ähnliches Shape-Verhalten aktivieren. Sie müssen das Shape auswählen, auf der Registerkarte Entwickler auf Verhalten klicken und anschließend das Kontrollkästchen Shape beim Ablegen der Gruppe hinzufügen aktivieren. Dieser Wert wird in der Zelle IsDropSource im Abschnitt Miscellaneous gespeichert. 
   
-Wenn Sie einen Verweis auf die Zelle IsDropTarget nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle IsDropTarget aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |IsDropTarget  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle IsDropTarget aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle IsDropTarget aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

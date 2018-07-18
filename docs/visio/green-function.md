@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797141"
 ---
-# <a name="green-function"></a>GREEN-Funktion
+# <a name="green-function"></a>GREEN Function
 
 Gibt die Grünkomponente einer Farbe zurück.
   
@@ -32,9 +32,9 @@ Grün (** *Ausdruck* **)
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Rückgabewert ist eine Zahl im Bereich von 0 bis einschließlich 255 oder Bezug auf eine Zelle, die als Index aufgelöst wird. Wenn *Ausdruck* ungültig ist, wird 0 (Schwarz) zurückgegeben. 
   

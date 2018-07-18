@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797530"
 ---
-# <a name="modulus-function"></a>MODULUS-Funktion
+# <a name="modulus-function"></a>MODULUS Function
 
 Gibt den Rest (Modulo), der entsteht, wenn eine Zahl durch einen Divisor geteilt wird.
   

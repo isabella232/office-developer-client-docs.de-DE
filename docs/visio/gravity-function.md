@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19797110"
 ---
-# <a name="gravity-function"></a>GRAVITY-Funktion
+# <a name="gravity-function"></a>GRAVITY Function
 
 Berechnet einen Textblock richtigen Winkel der Drehung für die Drehung der angegebenen Form um zu verhindern, dass den Text auf dem Kopf steht.
   
@@ -34,7 +34,7 @@ GRAVITY (** *Winkel* **, [** *Grenze1* **], [** *Grenze2* **])
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 

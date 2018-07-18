@@ -23,17 +23,17 @@ Der Name des Aktionstags, das als Schlüssel verwendet wird, um das Aktionstag s
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  Die Zelle TagName im Abschnitt Action Tags kann zusammen mit der Zelle TagName im Abschnitt Aktionen auf ein Aktionstag seinen Aktionen zuzuordnen. Zeilen im Abschnitt Aktionen auch eine Zelle TagName, und die Zeilen mit denselben Zelle TagName-Wert wie diese Zelle Aktionen an, die für diese Aktionstag definieren. 
   
-Zum Abrufen eines Verweises auf die Zelle TagName nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | SmartTags.  *Name* . TagName wobei SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

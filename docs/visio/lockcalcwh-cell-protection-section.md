@@ -27,13 +27,13 @@ Sperrt das Auswahlrechteck eines Shapes, damit dieses nicht neu berechnet wird, 
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle LockCalcWH nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LockCalcWH aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockCalcWH  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockCalcWH aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LockCalcWH aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

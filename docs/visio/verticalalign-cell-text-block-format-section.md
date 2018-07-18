@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798391"
 ---
-# <a name="verticalalign-cell-text-block-format-section"></a>Zelle "VerticalAlign" (Abschnitt "Text Block Format")
+# <a name="verticalalign-cell-text-block-format-section"></a>VerticalAlign Cell (Text Block Format Section)
 
 Definiert die vertikale Ausrichtung von Text in einem Textblock.
   
@@ -26,15 +26,15 @@ Definiert die vertikale Ausrichtung von Text in einem Textblock.
 | 1  <br/> | Mitte  <br/> |**visVertMiddle** <br/> |
 | 2  <br/> | Unten  <br/> |**visVertBottom** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle VerticalAlign nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle VerticalAlign aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | VerticalAlign  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle VerticalAlign aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle VerticalAlign aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

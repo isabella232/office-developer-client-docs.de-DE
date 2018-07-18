@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797543"
 ---
-# <a name="nolivedynamics-cell-miscellaneous-section"></a>Zelle "NoLiveDynamics" (Abschnitt "Miscellaneous")
+# <a name="nolivedynamics-cell-miscellaneous-section"></a>NoLiveDynamics Cell (Miscellaneous Section)
 
 Bestimmt, ob ein Shape auf dynamische Art und Weise größenmäßig angepasst oder gedreht wird, während Sie es bearbeiten.
   
@@ -29,13 +29,13 @@ Bestimmt, ob ein Shape auf dynamische Art und Weise größenmäßig angepasst od
 
 Während Sie ein zweidimensionales Shape (2D-Shape) bei deaktivierter Dynamik größenmäßig ändern oder drehen, wird ein Auswahlfeld angezeigt. Wenn das Shape eindimensional (1D-Shape) ist, hängt das visuelle Feedback vom Wert in der Zelle DynFeedback ab.
   
-Wenn Sie einen Verweis auf die Zelle NoLiveDynamics nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle NoLiveDynamics aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | NoLiveDynamics  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoLiveDynamics aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle NoLiveDynamics aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

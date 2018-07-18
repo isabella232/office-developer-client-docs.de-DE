@@ -1,5 +1,5 @@
 ---
-title: Zelle "YGridSpacing" (Lineal &amp; Rasterabschnitt)
+title: YGridSpacing Cell (Ruler &amp; Grid Section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798471"
 ---
-# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>Zelle "YGridSpacing" (Lineal &amp; Rasterabschnitt)
+# <a name="ygridspacing-cell-ruler-amp-grid-section"></a>YGridSpacing Cell (Ruler &amp; Grid Section)
 
 Gibt den Abstand zwischen den vertikalen Linien in einem festen Gitter an (YGridDensity = 0).
   
@@ -24,13 +24,13 @@ Gibt den Abstand zwischen den vertikalen Linien in einem festen Gitter an (YGrid
 
 Entspricht der vertikalen **minimaler Abstand** option in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
   
-Wenn Sie einen Verweis auf die Zelle YGridSpacing nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle YGridSpacing aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |YGridSpacing  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle YGridSpacing aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle YGridSpacing aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798357"
 ---
-# <a name="user-defined-cells-section"></a>User-defined Cells Section
+# <a name="user-defined-cells-section"></a>Abschnitt zu benutzerdefinierten Zellen
 
 Eine Arbeitsumgebung für die Eingabe von Formeln in benutzerspezifische Zellen, auf die von anderen Zellen und Add-On-Tools verwiesen werden kann.
   
@@ -26,6 +26,6 @@ Wie im Abschnitt ["Scratch"](scratch-section.md) kann im Abschnitt **User-define
   
 Wenn Ihre Lösung einen eindeutig definierten Zweck wird empfohlen, dass Sie Zellen im Abschnitt **User-defined Cells** aus Gründen der Übersichtlichkeit verwenden, da benannt werden kann. Im Abschnitt **"Scratch"** wird in der Regel wiederholte komplexe Berechnungen zu isolieren. 
   
-Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**).
+Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (klicken Sie dazu mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**).
   
 

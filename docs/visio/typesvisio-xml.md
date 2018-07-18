@@ -66,13 +66,13 @@ In diesem Thema werden die Typen in das XML-Dateiformatschema in Visio 2013.
     
 - [ControlRow_Type complexType](controlrow_type-complextypevisio-xml.md)
     
-- [Cp_Type complexType](cp_type-complextypevisio-xml.md)
+- [cp_Type complexType](cp_type-complextypevisio-xml.md)
     
 - [CustomMenusFile_Type complexType](custommenusfile_type-complextypevisio-xml.md)
     
 - [CustomToolbarsFile_Type complexType](customtoolbarsfile_type-complextypevisio-xml.md)
     
-- [Datentyp complexType](data_type-complextypevisio-xml.md)
+- [Data_Type complexType](data_type-complextypevisio-xml.md)
     
 - [DataColumn_Type complexType](datacolumn_type-complextypevisio-xml.md)
     
@@ -114,7 +114,7 @@ In diesem Thema werden die Typen in das XML-Dateiformatschema in Visio 2013.
     
 - [FillGradientRow_Type complexType](fillgradientrow_type-complextypevisio-xml.md)
     
-- [Fld_Type complexType](fld_type-complextypevisio-xml.md)
+- [fld_Type complexType](fld_type-complextypevisio-xml.md)
     
 - [FooterCenter_Type complexType](footercenter_type-complextypevisio-xml.md)
     
@@ -192,7 +192,7 @@ In diesem Thema werden die Typen in das XML-Dateiformatschema in Visio 2013.
     
 - [PolylineTo_Type complexType](polylineto_type-complextypevisio-xml.md)
     
-- [Pp_Type complexType](pp_type-complextypevisio-xml.md)
+- [pp_Type complexType](pp_type-complextypevisio-xml.md)
     
 - [PrimaryKey_Type complexType](primarykey_type-complextypevisio-xml.md)
     
@@ -308,7 +308,7 @@ In diesem Thema werden die Typen in das XML-Dateiformatschema in Visio 2013.
     
 - [Text_Type complexType](text_type-complextypevisio-xml.md)
     
-- [Tp_Type complexType](tp_type-complextypevisio-xml.md)
+- [tp_Type complexType](tp_type-complextypevisio-xml.md)
     
 - [Trigger_Type complexType](trigger_type-complextypevisio-xml.md)
     

@@ -29,16 +29,17 @@ Ersetzt einen Teil einer Zeichenfolge durch eine andere Textzeichenfolge.
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text oder der Bezug auf eine Zelle mit dem Text, in dem Zeichen ersetzt werden sollen.  <br/> |
-| _Alter_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, den Sie ersetzen möchten.  <br/> |
+| _Alter_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, der ersetzt werden soll.
+  <br/> |
 | _Neuer_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, den Sie _Alter_Text_ersetzen möchten.  <br/> |
-| _start_num_opt_ <br/> |Optional  <br/> |**Numerische** <br/> |Gibt an, welche Vorkommen von old_text ersetzt werden sollen.  <br/> |
+| _start_num_opt_ <br/> |Optional  <br/> |**Numeric** <br/> |Gibt an, welche Vorkommen von old_text ersetzt werden sollen.  <br/> |
 | _ignore_case_opt_ <br/> |Optional  <br/> |**Boolean** <br/> |FALSE, wenn Groß- und Kleinschreibung zu beachten ist; andernfalls TRUE. Die Standardeinstellung ist FALSE.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  Wenn Sie _Start_num_opt_angeben, wird nur dieses Auftreten von _Old_text_ ersetzt. Andernfalls wird jedes Vorkommen von _Old_text_ in _Text_ um geändert _Neuer_Text._
   

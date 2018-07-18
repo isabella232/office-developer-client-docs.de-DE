@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797540"
 ---
-# <a name="name-cell-reviewer-section"></a>Zelle "Name" (Abschnitt "Reviewer")
+# <a name="name-cell-reviewer-section"></a>Name Cell (Reviewer Section)
 
 Enthält den Namen des Bearbeiters eines Dokuments.
   
@@ -30,7 +30,7 @@ Zum Abrufen eines Verweises auf die Zelle nach Namen aus einer anderen Formel od
 |:-----|:-----|
 | Zellenname:  <br/> | Reviewer.Name [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Name aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Bezug auf die Zelle Name aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

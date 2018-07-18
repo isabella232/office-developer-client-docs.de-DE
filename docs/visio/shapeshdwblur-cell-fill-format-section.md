@@ -18,7 +18,7 @@ ms.locfileid: "19798074"
 
 Bestimmt die Größe des der Blur für den Schatten eines Shapes, die in Punkt (0,00 zu 100.00). 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ShapeShdwBlur** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

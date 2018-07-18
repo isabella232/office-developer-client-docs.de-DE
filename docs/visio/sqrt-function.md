@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798198"
 ---
-# <a name="sqrt-function"></a>SQRT Function
+# <a name="sqrt-function"></a>WURZEL-Funktion
 
 Gibt die Quadratwurzel einer Zahl zurück. 
   
@@ -28,7 +28,7 @@ SQRT (** *Anzahl* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die Zahl, deren Quadratwurzel ermittelt werden soll.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Zahl, deren Quadratwurzel ermittelt werden soll.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

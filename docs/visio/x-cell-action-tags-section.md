@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798424"
 ---
-# <a name="x-cell-action-tags-section"></a>Zelle "X" (Abschnitt "Action Tags")
+# <a name="x-cell-action-tags-section"></a>X Cell (Action Tags Section)
 
 Die *X* -Koordinatenposition in lokalen Koordinaten des Shapes, um die herum die Schaltfläche Aktionstag platziert wird. 
   
@@ -27,13 +27,13 @@ Die *X* -Koordinatenposition in lokalen Koordinaten des Shapes, um die herum die
 
 Die Zellen X und Y definieren einen Punkt in den lokalen Koordinaten des Shapes, und die Zellen X Justify und Y Justify definieren, wo die Schaltfläche Aktionstag in Bezug auf diesen Punkt platziert werden soll. 
   
-Wenn Sie einen Verweis auf die Zelle X nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle X aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> |SmartTags. *Name* . X Where SmartTags. *Name* ist der Name der Zeile Aktionstag  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle X aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle X aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

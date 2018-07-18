@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82251343
 localization_priority: Normal
 ms.assetid: 42f42d73-a00c-ca93-adc9-4f8869b9cd42
-description: Gibt die Beschreibung oder Anweisung Text, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster Shape-Daten platziert wird.
+description: Spezifiziert den Text der Beschreibung oder Anweisung, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster Shape-Daten platziert wird.
 ms.openlocfilehash: 1e11a8c7c680dd53ad7cd9f6877fe29eb34a7b53
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -18,17 +18,17 @@ ms.locfileid: "19797732"
 ---
 # <a name="prompt-cell-shape-data-section"></a>Prompt Cell (Shape Data Section)
 
-Gibt die Beschreibung oder Anweisung Text, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster **Shape-Daten** platziert wird. 
+Spezifiziert den Text der Beschreibung oder Anweisung, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster **Shape-Daten** platziert wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Prompt nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Prompt aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Eigenschaft.  *Name* . Auffordern Sie, wobei *Name* der Zeilenname ist  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Prompt aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Prompt aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

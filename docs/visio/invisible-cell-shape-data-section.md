@@ -27,15 +27,15 @@ Gibt an, ob das Shape-Datenelement im Fenster **Shape-Daten** angezeigt wird.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Der Wert in dieser Zelle entspricht dem Kontrollkästchen **ausgeblendet** im Dialogfeld **Shape-Daten definieren** (mit der rechten Maustaste in des Shapes, zeigen Sie auf **Daten**, und klicken Sie dann auf **Shape-Daten definieren**).
+Der Wert in dieser Zelle entspricht dem Kontrollkästchen **Ausgeblendet** im Dialogfeld **Shape-Daten definieren** (klicken Sie mit der rechten Maustaste auf das Shape, zeigen Sie auf **Daten**, und klicken Sie dann auf **Shape-Daten definieren**).
   
-Wenn Sie einen Verweis auf die Zelle Invisible nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Invisible aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Eigenschaft.  *Name* . Nicht sichtbare Where Prop.  *Name* ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Invisible aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Invisible aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

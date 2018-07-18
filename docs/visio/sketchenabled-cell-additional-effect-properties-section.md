@@ -18,7 +18,7 @@ ms.locfileid: "19798129"
 
 Bestimmt, ob eine Skizze Auswirkung auf die Form oder nicht, da ein boolescher Wert angezeigt wird. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **SketchEnabled** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

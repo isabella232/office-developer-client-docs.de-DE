@@ -26,21 +26,21 @@ Gibt den Schattentyp für ein Shape an.
 |1  <br/> |Einfach  <br/> |**visFSTSimple** <br/> |
 |2  <br/> |Schräg  <br/> |**visFSTOblique** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Zelle für einen Shape Schatten, der sich vom Zeichenblattstandard unterscheidet (der Schattentyp Seite wird in der Zelle ShdwType in den Abschnitt "Page Properties" definiert).
   
 Einfacher Schatten werden als Offset Schatten auf der Benutzeroberfläche (UI) beschrieben. Ein einfacher Schatten hat den Effekt der Form wird auf eine parallele Ebene hinter dem Shape schattiert. Schräge Schatten werden als schräge Schatten auf der Benutzeroberfläche beschrieben, und weisen Sie die Auswirkung des einen Schatten auf eine senkrecht zum Shape. 
   
-Eine Liste vordefinierter einfacher und schräger Schatten finden Sie unter Feld **Formatvorlage** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** klicken Sie auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
+Eine Liste vordefinierter einfacher und schräger Schatten finden Sie im Dialogfeld **Schatten** im Feld **Formatvorlage** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle ShapeShdwType nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapeShdwType aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapeShdwType  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeShdwType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapeShdwType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

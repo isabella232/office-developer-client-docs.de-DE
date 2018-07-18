@@ -27,17 +27,17 @@ Gibt an, ob beim Drucken einer Dokumentseite das Gitternetz gedruckt werden soll
    
 ## <a name="remarks"></a>Bemerkungen
 
-Dieser Wert entspricht dem Kontrollkästchen **Gitternetzlinien** auf der Registerkarte **Druckeinrichtung** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** ). Als Farbe (die Druckversion ist grau), das gedruckte Raster ist identisch mit dem in Microsoft Visio-Zeichnungsfenster angezeigt wird. 
+Dieser Wert entspricht der Einstellung für das Kontrollkästchen **Gitterlinien** auf der Registerkarte **Druckeinrichtung** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**). Mit Ausnahme der Farbe (die Druckversion ist grau) ist das gedruckte Gitternetz identisch mit dem im Microsoft Visio-Zeichenfenster. 
   
 Sie können auswählen, ob das Gitternetz auf Basis von Seite gedruckt. Das Format des Rasters kann auch definiert werden, auf Basis von Seite in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ) Wenn die Seite aktiv ist. 
   
-Wenn Sie einen Verweis auf die Zelle PrintGrid nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PrintGrid aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PrintGrid  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PrintGrid aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PrintGrid aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -82,9 +82,9 @@ Word 2013 ermöglicht ein einzelnes Inhaltssteuerelement in einer von drei mögl
 - Keine
     
 > [!NOTE]
-> Wenn nicht anders angegeben, werden in diesem Abschnitt die Visualisierung von Inhaltssteuerelementen behandelt, wenn das Dokument im **Entwurfsmodus**nicht angezeigt wird. Sie legen den Anzeigemodus für ein Inhaltssteuerelement mithilfe des Dropdown-Listenfeld-Steuerelements **als anzeigen** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** . 
+> Wenn nicht anders angegeben, gilt für die Darstellung der Visualisierung von Inhaltssteuerelementen in diesem Abschnitt, dass das Dokument nicht im **Entwurfsmodus** angezeigt wird. Sie legen den Anzeigemodus für ein Inhaltssteuerelement über das Dropdownlisten-Steuerelement **Anzeigen als** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** fest. 
   
-**Abbildung 1. Dialogfeld ' Inhalt Steuerelementeigenschaften**
+**Abbildung 1: Das Dialogfeld „Eigenschaften von Inhaltssteuerelementen“**
 
 ![Im Dialogfeld Eigenschaften von Inhaltssteuerelement] (media/DK2_WordCC_Fig01.jpg "Im Dialogfeld Eigenschaften von Inhaltssteuerelement")
   
@@ -99,29 +99,29 @@ Das standardmäßige Rendering für Inhaltssteuerelementen in Word 2013 ist das 
     
 - Wenn Sie den Mauszeiger über das Inhaltssteuerelement bewegen, wird es als schattiertes Rechteck angezeigt.
     
-**Abbildung 2. Inhaltssteuerelement bei Mouseover**
+**Abbildung 2: Inhaltssteuerelement, wenn der Mauszeiger darüber bewegt wird**
 
 ![Inhaltssteuerelement auf Maus über] (media/DK2_WordCC_Fig02.jpg "Inhaltssteuerelement auf Maus über")
   
 - Wenn das Inhaltssteuerelement im Fokus steht (wenn der Benutzer das Inhaltssteuerelement auswählt), wird das Steuerelement als „umgebendes Feld“ angezeigt (mit einer Linie um den Inhalt und angezeigtem Titel, wenn ein Titel festgelegt wurde).
     
-**Abbildung 3. Inhaltssteuerelement mit Fokus**
+**Abbildung 3: Inhaltssteuerelement mit Fokus**
 
 ![Inhaltssteuerelement mit Fokus] (media/DK2_WordCC_Fig03.jpg "Inhaltssteuerelement mit Fokus")
   
 ### <a name="startend-tags"></a>Start/Ende-Tags
 <a name="WordCC_StartEndTags"> </a>
 
-Wenn das Inhaltssteuerelement festgelegt ist, als **Start-/End-Tag**angezeigt, die Tags werden angezeigt, unabhängig von der Benutzerinteraktion und des Titels nie angezeigt wird. aber Schaltflächen, wie die Schaltfläche **Dropdown-Listenfeld** auf die Maus über angezeigt. 
+Wenn die Anzeige des Inhaltssteuerelements als **Start/Ende-Tag** festgelegt ist, werden die Tags unabhängig von der Benutzerinteraktion angezeigt, und der Titel wird nicht angezeigt. Wenn Sie den Mauszeiger darüber bewegen, werden jedoch Schaltflächen, z. B. die Schaltfläche **Dropdownliste** angezeigt. 
   
-**Abbildung 4. Inhaltssteuerelement wird als Start-/End-Tags anzeigen**
+**Abbildung 4: Anzeige von Inhaltssteuerelementen als Start/Ende-Tags**
 
 ![Inhaltssteuerelement eingerichtet wird, um anzuzeigen, wie starten und Beenden von tags] (media/DK2_WordCC_Fig04.jpg "Inhaltssteuerelement eingerichtet wird, um anzuzeigen, wie starten und Beenden von tags")
   
 ### <a name="none"></a>Keine
 <a name="WordCC_Invisible"> </a>
 
-Wenn das Inhaltssteuerelement anzeigen als **None**festgelegt ist, wird das Inhaltssteuerelement wird nicht angezeigt.
+Wenn die Anzeige des Inhaltssteuerelements auf **Keine** festgelegt ist, wird das Inhaltssteuerelement nicht angezeigt.
   
 ### <a name="content-control-colorization"></a>Farbgebung für Inhaltssteuerelemente
 <a name="WordCC_CCColorization"> </a>
@@ -130,7 +130,7 @@ Neben der Aktivierung einer anderen Art der Anzeige für ein Inhaltssteuerelemen
   
 Sie können auch die Farbe eines Inhaltssteuerelements festlegen, indem Sie mit dem Word 2013-Objektmodell (weiter unten in der [neuen Word 2013 Inhaltssteuerelement Objektmodellelemente](#WordCC_NewOM)).
   
-**Abbildung 5. Dialogfeld ' Inhalt Steuerelementeigenschaften**
+**Abbildung 5: Das Dialogfeld „Eigenschaften von Inhaltssteuerelementen“**
 
 ![Im Dialogfeld Eigenschaften von Inhaltssteuerelement] (media/DK2_WordCC_Fig05.jpg "Im Dialogfeld Eigenschaften von Inhaltssteuerelement")
   
@@ -142,7 +142,7 @@ Word 2013 können Sie die Inhalte von rich-Text-Inhaltssteuerelemente sowie Doku
 > [!NOTE]
 > Rich-Text-Inhaltssteuerelemente können keine anderen Rich-Text-Inhaltssteuerelemente enthalten. Wenn eins in einem anderen vorhanden ist (z. B. aufgrund von Dateiformatänderungen, Kopieren und Einfügen usw.), wird das Steuerelement getrennt, bis es nicht mehr in einem zugeordneten Rich-Text-Steuerelement enthalten ist. 
   
-Weitere Informationen zum Einrichten von XML-Zuordnung finden Sie im Abschnitt [neue Word 2013 Inhaltssteuerelement Objektmodellelemente](#WordCC_NewOM) weiter unten in diesem Thema. 
+Weitere Informationen zum Einrichten der XML-Zuordnung finden Sie im Abschnitt  [Neue Word 2013-Inhaltssteuerelement-Objektmodellelemente](#WordCC_NewOM) weiter unten in diesem Thema. 
   
 ### <a name="supporting-repeating-content"></a>Unterstützung für wiederholte Inhalte
 <a name="WordCC_SupportingRepeating"> </a>
@@ -151,19 +151,19 @@ Zusätzlich zur Visualisierung Verbesserungen und Unterstützung für XML-Zuordn
   
 Sie fügen das Steuerelement für wiederkehrende Abschnittsinhalte um ganze Absätze oder Tabellenzeilen ein. Nachdem das Steuerelement einen Abschnitt umgibt, können Sie Kopien des Abschnitts über oder unter dem enthaltenen Abschnitt einfügen.
   
-**Abbildung 6. Wiederholter Abschnitt Inhaltssteuerelement Kontextmenüs**
+**Abbildung 6: Kontextmenü des Steuerelements für wiederkehrende Inhaltsabschnitte**
 
 ![Wiederholt Kontext] (media/DK2_WordCC_Fig06.jpg "Wiederholt Kontext")
   
 Sie können den eingefügten Abschnitt mithilfe der entweder das Steuerelement auf das Ende des Inhaltssteuerelements (angezeigt als Schaltfläche mit einem Pluszeichen (![Pluszeichen (+)](media/DK2_WordCC_Fig06A.jpg "Pluszeichen (+)"))) oder indem Sie auf einen Befehl im Kontextmenü wiederholen, wie in Abbildung 6 dargestellt. Der wiederholte Inhalt wird einem separaten Abschnitt des Steuerelements können Sie einen Titel über das Dialogfeld **Eigenschaften von Inhaltssteuerelementen** zuweisen. 
   
-**Abbildung 7. Weisen Sie eine Abschnittsüberschrift im Dialogfeld Eigenschaften von Inhaltssteuerelementen**
+**Abbildung 7: Zuweisen eines Abschnittstitels im Dialogfeld „Eigenschaften von Inhaltssteuerelementen“**
 
 ![Im Dialogfeld Eigenschaften von Inhaltssteuerelement] (media/DK2_WordCC_Fig07.jpg "Im Dialogfeld Eigenschaften von Inhaltssteuerelement")
   
-Sobald Sie im Abschnitt Titel, erteilt haben, wenn Sie im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** **Hinzufügen und Entfernen von Abschnitten durch Benutzer zulassen** auswählen, können Benutzer hinzufügen oder löschen den Abschnitt nach Namen. 
+Nachdem Sie dem Abschnitt einen Titel gegeben haben, können Benutzer den Abschnitt nach Namen hinzufügen oder löschen, wenn Sie die Option **Benutzern das Hinzufügen und Entfernen von Abschnitten erlauben** im Dialogfeld **Eigenschaften von Inhaltssteuerelementen** auswählen. 
   
-**Abbildung 8. Verwenden Sie das Kontextmenü der wiederholten Abschnitt Inhaltssteuerelement zum Löschen eines Abschnitts**
+**Abbildung 8: Verwenden des Kontextmenüs des Steuerelements für wiederkehrende Abschnittsinhalte zum Löschen eines Abschnitts**
 
 ![Wiederholt Kontext] (media/DK2_WordCC_Fig08.jpg "Wiederholt Kontext")
   
@@ -173,11 +173,11 @@ Wenn ein wiederkehrender Abschnitt andere Inhaltssteuerelemente umgibt, werden d
     
 - Wenn ein untergeordnetes Steuerelement per XML einem Knoten außerhalb des Steuerelements für wiederkehrende Abschnittsinhalte zugeordnet ist.
     
-**Abbildung 9. Wiederholungsabschnitts mit untergeordneten Steuerelemente vor der Wiederholung**
+**Abbildung 9: Steuerelement für wiederkehrende Abschnittsinhalte mit untergeordneten Steuerelementen vor Wiederholung**
 
 ![Wiederholen Sie die wiederholungsabschnitts vor] (media/DK2_WordCC_Fig09.jpg "Wiederholen Sie die wiederholungsabschnitts vor")
   
-**Abbildung 10. Wiederholungsabschnitts mit untergeordneten Steuerelemente nach der Wiederholung**
+**Abbildung 10: Steuerelement für wiederkehrende Abschnittsinhalte mit untergeordneten Steuerelementen nach Wiederholung**
 
 ![Wiederholen Sie die wiederholungsabschnitts nach] (media/DK2_WordCC_Fig10.jpg "Wiederholen Sie die wiederholungsabschnitts nach")
   
@@ -225,14 +225,14 @@ Wenn ein wiederholten Abschnitt Inhaltssteuerelement an eine Tabelle gebunden we
 
 Das Schachteln von Steuerelementen für wiederkehrende Abschnittsinhalte innerhalb einer Tabelle (wenn sich beispielsweise das Ende des übergeordneten und des untergeordneten Steuerelements für wiederkehrende Abschnittsinhalte in derselben Zelle befindet) bewirkt, dass der äußere wiederholte Abschnitt gelöscht wird, wenn dem inneren Abschnitt ein Element hinzugefügt oder ein Element daraus entfernt wird.
   
-Sie können dies verhindert durch eine Absatzmarke zwischen dem Ende einer wiederholten Abschnitt Inhaltssteuerelement und des nächsten hinzufügen. Wenn die Absatzmarke ausblenden möchten, deaktivieren Sie die Option **Einblenden/Ausblenden** auf der Registerkarte **Start** des Menübands. 
+Sie können dies verhindern, indem Sie eine Absatzmarkierung zwischen dem Ende eines Steuerelements für wiederkehrende Abschnittsinhalte und dem nächsten hinzufügen. Zum Ausblenden der Absatzmarkierung deaktivieren Sie auf der Registerkarte **Start** des Menübands die Option **Ein-/Ausblenden**. 
   
 ### <a name="open-xml-file-format-schema-additions"></a>Erweiterungen für das Open XML-Dateiformatschema
 <a name="WordCC"> </a>
 
 Die folgenden Elemente wurden zum Open XML-WordprocessingML-Dateiformatschema hinzugefügt.
   
-**In Tabelle 1. Neue Elemente in das Open XML-Dateiformat WordprocessingML-Schema für Inhaltssteuerelemente**
+**Tabelle 1: Neue Elemente im Open XML-WordprocessingML-Dateiformatschema für Inhaltssteuerelemente**
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|
@@ -251,16 +251,16 @@ In den folgenden Abschnitten finden Sie weitere Informationen zu den speziellen 
 
 Mehrere objektmodellergänzungen sind für Inhaltssteuerelement Visualisierung Verbesserungen in Word 2013 enthalten. In der folgenden Tabelle werden neue Elemente des **ContentControl** -Objekts für Visualisierung aufgelistet. 
   
-**In Tabelle 2. Neue Member des ContentControl-Objekts**
+**Tabelle 2: Neue ContentControl-Objektelemente**
 
 |**Member**|**Beschreibung**|
 |:-----|:-----|
 |. **Darstellung** als **WdContentControlAppearance** <br/> |Ruft die Visualisierung des Inhaltssteuerelements ab oder legt sie fest.  <br/> |
 |. **Farbe** als **WdColor** <br/> |Ruft die Farbe des Inhaltssteuerelements ab oder legt sie fest.  <br/> |
    
-Die folgende Tabelle enthält die in der neuen **WdContentControlAppearance** -Enumeration. 
+In der folgenden Tabelle sind Konstanten in der neuen **WdContentControlAppearance**-Enumeration aufgeführt. 
   
-**Tabelle 3. Neue Konstanten der WdContentControlAppearance-enumeration**
+**Tabelle 3: Neue WdContentControlAppearance-Enumerationskonstanten**
 
 |**Konstante**|**Beschreibung**|
 |:-----|:-----|
@@ -341,39 +341,39 @@ End Sub
 ### <a name="repeating-section-content-controls-represented-in-the-object-model"></a>Im Objektmodell dargestellte Steuerelemente für wiederkehrende Abschnittsinhalte
 <a name="WordCC_RepeatingSection"> </a>
 
-Das wiederholten Abschnitt Inhaltssteuerelement ist mithilfe der folgenden Ergänzungen **ContentControl** -Objekts und die neuen **RepeatingSectionItem** und **RepeatingSectionItemColl** -Objekte im Objektmodell verfügbar. In Tabelle 4 sind die wichtigsten neue Elemente des **ContentControl** -Objekts für wiederholten Abschnitt Inhaltssteuerelemente aufgeführt. 
+Das Steuerelement für wiederkehrende Abschnittsinhalte steht im Objektmodell zur Verfügung, indem Sie die folgenden Ergänzungen für das **ContentControl**-Objekt und die neuen **RepeatingSectionItem**- und **RepeatingSectionItemColl**-Objekte verwenden. In Tabelle 4 sind die wichtigsten neuen Elemente des **ContentControl**-Objekts für Steuerelemete für wiederkehrende Abschnittsinhalte aufgeführt. 
   
-**In Tabelle 4. Elemente des ContentControl-Objekts**
+**Tabelle 4: ContentControl-Objektelemente**
 
 |**Member**|**Beschreibung**|
 |:-----|:-----|
 |**AllowInsertDeleteSection** als **Boolean** <br/> |Ruft ab oder legt fest, ob Benutzer können Abschnitte hinzufügen oder aus dem Inhaltssteuerelement entfernen mithilfe der Benutzeroberfläche. Wenn diese Eigenschaft für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt ist aufgerufen wird, wird der Aufruf fehlschlägt, wobei die folgende Fehlermeldung angezeigt: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Inhaltssteuerelemente."  <br/> |
-|**RepeatingSectionItemTitle** als **Zeichenfolge** <br/> |Dient zum Abrufen oder Festlegen des Namens wiederholter Abschnitt Elemente im Kontextmenü verwendet. Wenn diese Eigenschaft für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Inhaltssteuerelemente."  <br/> |
+|**RepeatingSectionItemTitle** als **String** <br/> |Dient zum Abrufen oder Festlegen des Namens wiederholter Abschnitt Elemente im Kontextmenü verwendet. Wenn diese Eigenschaft für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Inhaltssteuerelemente."  <br/> |
 |**InsertRepeatingSectionItemBefore** als **ContentControl** <br/> |Fügt ein wiederholten Abschnitt Element vor dem aktuellen Element und gibt das neue wiederholten Abschnitt-Element zurück. Wenn diese Methode für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt-Element ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Element von Inhaltssteuerelementen."  <br/> |
 |**InsertRepeatingSectionItemAfter** als **ContentControl** <br/> |Fügt ein wiederholten Abschnitt-Element nach dem aktuellen Element und gibt das neue wiederholten Abschnitt-Element zurück. Wenn diese Methode für ein Inhaltssteuerelement, die nicht vom Typ wiederholter Abschnitt-Element ist aufgerufen wird, schlägt der Aufruf mit: "Diese Eigenschaft kann nur verwendet werden mit wiederholter Abschnitt Element von Inhaltssteuerelementen."  <br/> |
    
-Tabelle 5 sind die wichtigsten Elemente des **RepeatingSectionItem** -Objekts aufgeführt. 
+In Tabelle 5 sind die wichtigsten Elemente des  **RepeatingSectionItem**-Objekts aufgeführt. 
   
-**Tabelle 5. Elemente des RepeatingSectionItem-Objekts**
+**Tabelle 5: RepeatingSectionItem-Objektelemente**
 
 |**Member**|**Beschreibung**|
 |:-----|:-----|
-|**Bereich** als **Bereich** <br/> |Gibt den Bereich des angegebenen wiederholten Abschnitt Elements, ausgenommen die Start- und Endtags zurück.  <br/> |
+|**Range** als **Range** <br/> |Gibt den Bereich des angegebenen wiederholten Abschnitt Elements, ausgenommen die Start- und Endtags zurück.  <br/> |
 |**Delete** <br/> |Löscht das angegebene wiederholte Abschnittselement.  <br/> |
 |**InsertItemAfter** als **RepeatingSectionItem** <br/> |Fügt ein wiederholtes Abschnittselement nach dem angegebenen Element hinzu und gibt das neue Element zurück.  <br/> |
 |**InsertItemBefore** als **RepeatingSectionItem** <br/> |Fügt ein wiederholtes Abschnittselement vor dem angegebenen Element hinzu und gibt das neue Element zurück.  <br/> |
    
-In Tabelle 6 sind die wichtigsten Elemente des **RepeatingSectionItemColl** -Objekts. 
+In Tabelle 6 sind die wichtigsten Elemente des **RepeatingSectionItemColl**-Objekts aufgeführt. 
   
-**Tabelle 6. Elemente des RepeatingSectionItemColl-Objekts**
+**Tabelle 6: RepeatingSectionItemColl-Objektelemente**
 
 |**Member**|**Beschreibung**|
 |:-----|:-----|
-|**Element** als **RepeatingSectionItem** <br/> |Gibt ein einzelnes wiederholtes Abschnittselement zurück.  <br/> |
+|**Item** als **RepeatingSectionItem** <br/> |Gibt ein einzelnes wiederholtes Abschnittselement zurück.  <br/> |
    
-In Tabelle 7 sind den neuen Member der **WdContentControlType** -Enumeration für wiederholten Abschnitt Inhaltssteuerelemente. 
+In Tabelle 7 ist das neue Element der **WdContentControlType**-Enumeration für Steuerelemente für wiederkehrende Abschnittsinhalte gezeigt. 
   
-**Tabelle 7. WdContentControlType-Enumeration hinzufügen**
+**Tabelle 7: WdContentControlType-Enumerationsergänzung**
 
 |**Konstante**|**Beschreibung**|
 |:-----|:-----|
@@ -428,7 +428,7 @@ Die Datei Format Darstellung eines wiederholten Abschnitt Inhaltssteuerelements 
   
 Die einzelnen wiederholten Elemente im Steuerelement für wiederkehrende Abschnittsinhalte (die jedes einzelnes Element umgeben) werden über die vorhandene WordprocessingML-Darstellung als Rich-Text-Inhaltssteuerelemente gespeichert. In Tabelle 8 sind die neuen Elemente im WordprocessingML-Schema für Steuerelemente für wiederkehrende Abschnittsinhalte aufgeführt.
   
-**Tabelle 8. Neue Elemente in das WordprocessingML-Schema für wiederholten Abschnitt Inhaltssteuerelemente**
+**Tabelle 8: Neue Elemente im WordprocessingML-Schema für Steuerelemente für wiederkehrende Abschnittsinhalte**
 
 |**Element**|**Beschreibung**|
 |:-----|:-----|

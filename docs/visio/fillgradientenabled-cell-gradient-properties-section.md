@@ -23,7 +23,7 @@ Bestimmt, ob für dieses Shape ein Farbverlauf aktiviert ist.
 |TRUE  <br/> |Graduelle Füllung wird auf dem Shape angezeigt.  <br/> |
 |FALSE  <br/> |Gradientenfüllungen werden nicht auf dem Shape angezeigt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **FillGradientEnabled** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

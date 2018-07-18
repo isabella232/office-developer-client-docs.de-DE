@@ -18,7 +18,7 @@ ms.locfileid: "19798381"
 
 Bestimmt den Stilindex für die aktive Design Variation auf der Seite als ganze Zahl.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **VariationStyleIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

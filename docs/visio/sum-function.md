@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798214"
 ---
-# <a name="sum-function"></a>SUM-Funktion
+# <a name="sum-function"></a>SUM Function
 
 Gibt die Summe einer Liste von Zahlen zurück.
   
@@ -28,9 +28,9 @@ SUM (** *Zahl1* **, ** *Zahl2* **,..., ** *[NumberN]* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zahl1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die erste Zahl.  <br/> |
-| _Zahl2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die zweite Zahl.  <br/> |
-| _numberN_ <br/> |Optional  <br/> |**Numerische** <br/> |Die n-te Zahl.  <br/> |
+| _Zahl1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die erste Zahl.  <br/> |
+| _Zahl2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zweite Zahl.  <br/> |
+| _numberN_ <br/> |Optional  <br/> |**Numeric** <br/> |Die n-te Zahl.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

@@ -42,7 +42,8 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Microsoft Visio-Instanz.  <br/> |
+|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
+  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 
@@ -52,7 +53,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert kann die Summe der Werte in der folgenden Tabelle sein.
   

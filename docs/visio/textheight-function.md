@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798252"
 ---
-# <a name="textheight-function"></a>TEXTHEIGHT Function
+# <a name="textheight-function"></a>TEXTHÖHE-Funktion
 
 Gibt die Höhe des zusammengesetzten Texts in einem Shape zurück, in dem keine Textzeile _maxBreite_überschreitet. 
   
@@ -29,11 +29,11 @@ TEXTHEIGHT (** *Shapename! TheText* ** ** *[, maxBreite]* **)
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Shapename! TheText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle TheText mit der in der Ziel-Shape.  _Shapename!_ ist der Name des Shapes, von dem Sie den Text abrufen möchten.  <br/> |
-| _maxBreite_ <br/> |Optional  <br/> |**Numerische** <br/> |Die maximale Breite eines Textblocks.  <br/> |
+| _maxBreite_ <br/> |Optional  <br/> |**Numeric** <br/> |Die maximale Breite eines Textblocks.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 

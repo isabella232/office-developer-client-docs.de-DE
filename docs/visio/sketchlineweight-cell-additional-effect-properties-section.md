@@ -18,7 +18,7 @@ ms.locfileid: "19798145"
 
 Bestimmt die zusätzliche Stärke als Ergebnis einer Skizze Wirkung in Punkt im Bereich von 0 bis 50 Linienbreite hinzugefügt. Die Stärke der Linie ein Shape erhöht als Wert des **SketchLineWeight** Zelle erhöht. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **SketchLineWeight** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

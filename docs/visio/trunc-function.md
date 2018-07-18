@@ -28,8 +28,8 @@ TRUNC (** *Anzahl* **, ** *AnzahlVonStellen* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die zu kürzende Zahl.  <br/> |
-| _AnzahlVonStellen_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die Anzahl der Ziffern an die zu kürzende _Zahl_.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die zu kürzende Zahl.  <br/> |
+| _AnzahlVonStellen_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Die Anzahl der Ziffern an die zu kürzende _Zahl_.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798346"
 ---
-# <a name="txtwidth-cell-text-transform-section"></a>Zelle "TxtWidth" (Abschnitt "Text Transform")
+# <a name="txtwidth-cell-text-transform-section"></a>TxtWidth Cell (Text Transform Section)
 
 Definiert die Breite eines Textblocks. Die Standardformel lautet:
   
 = Breite \* 1
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle TxtWidth nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TxtWidth aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TxtWidth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TxtWidth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TxtWidth aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

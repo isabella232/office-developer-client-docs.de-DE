@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797332"
 ---
-# <a name="linetolinex-cell-page-layout-section"></a>Zelle "LineToLineX" (Abschnitt "Page Layout")
+# <a name="linetolinex-cell-page-layout-section"></a>LineToLineX Cell (Page Layout Section)
 
 Legt den horizontalen Abstand zwischen sämtlichen Verbindern auf dem Zeichenblatt fest.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert dieser Zelle auch im Dialogfeld **Layout und Routing Abstand** festlegen. (Klicken Sie auf der Registerkarte **Entwurf** klicken Sie auf den Pfeil neben **Seite einrichten** , klicken Sie auf **Layout und Routing**, und klicken Sie dann auf **Abstand**.)
+Sie können den Wert dieser Zelle auch im Dialogfeld **Abstände für Layout und Routing** festlegen. (Klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, wählen Sie **Layout und Routing** aus, und klicken Sie dann auf **Abstand**.)
   
-Wenn Sie einen Verweis auf die Zelle LineToLineX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LineToLineX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LineToLineX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineToLineX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LineToLineX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

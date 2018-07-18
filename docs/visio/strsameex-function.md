@@ -30,16 +30,18 @@ STRSAMEEX ("** *Zeichenfolge1* **","** *Zeichenfolge2* **", ** *LocaleID* **, **
 |:-----|:-----|:-----|:-----|
 | _Zeichenfolge1_ <br/> |Erforderlich  <br/> |**String** <br/> |Die erste zu vergleichende Zeichenfolge.  <br/> |
 | _Zeichenfolge2_ <br/> |Erforderlich  <br/> |**String** <br/> | Die zweite zu vergleichende Zeichenfolge.  <br/> |
-| _Gebietsschema-ID_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der lokale ID-Code.  <br/> |
-| _Flag_ <br/> |Erforderlich  <br/> |**Numerische** <br/> | Ein Bit, das den Typ des Vergleichs bestimmt.  <br/> |
+| _Gebietsschema-ID_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der lokale ID-Code.  <br/> |
+| _Flag_ <br/> |Erforderlich  <br/> |**Numeric** <br/> | Ein Bit, das den Typ des Vergleichs bestimmt.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
 Boolean
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-STRSAMEEX gibt true, wenn beide Zeichenfolgen identisch sind, und FALSE, wenn sie nicht. Verwenden Sie diese Funktion, wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche durchführen, die Groß-/Kleinschreibung Regeln für ein bestimmtes Gebietsschema verwenden.
+STRSAMEEX gibt TRUE zurück, wenn beide Eingabezeichenfolgen identisch sind. Ist dies nicht der Fall, wird FALSE zurückgegeben. Verwenden Sie diese Funktion, wenn Sie Multibyte-Zeichenfolgen vergleichen oder Vergleiche mit Groß- und Kleinschreibregeln für ein bestimmtes Gebietsschema durchführen möchten.
+			
+
   
 Sie können eine beliebige Kombination folgender Flags mit der STRGLEICHEX-Funktion verwenden.
   

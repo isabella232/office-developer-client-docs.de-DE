@@ -1,5 +1,5 @@
 ---
-title: Zelle "YGridOrigin" (Lineal &amp; Rasterabschnitt)
+title: YGridOrigin Cell (Ruler &amp; Grid Section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798463"
 ---
-# <a name="ygridorigin-cell-ruler-amp-grid-section"></a>Zelle "YGridOrigin" (Lineal &amp; Rasterabschnitt)
+# <a name="ygridorigin-cell-ruler-amp-grid-section"></a>YGridOrigin Cell (Ruler &amp; Grid Section)
 
 Gibt den vertikalen Ursprung des Gitters an.
   
@@ -24,13 +24,13 @@ Gibt den vertikalen Ursprung des Gitters an.
 
 Diese Zelle entspricht der vertikalen **Gitterursprung** option in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil neben **Anzeigen** ). 
   
-Wenn Sie einen Verweis auf die Zelle YGridOrigin nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle YGridOrigin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |YGridOrigin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle YGridOrigin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle YGridOrigin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

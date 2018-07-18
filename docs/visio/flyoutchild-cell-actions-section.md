@@ -16,19 +16,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797030"
 ---
-# <a name="flyoutchild-cell-actions-section"></a>Zelle "FlyoutChild" (Abschnitt "Aktionen")
+# <a name="flyoutchild-cell-actions-section"></a>FlyoutChild Cell (Actions Section)
 
 Bestimmt, ob die Zeile ein untergeordnetes Erweiterungsmenü der letzten Zeile oberhalb befindlichen Zeile ist, bei der es sich nicht um eine untergeordnete Erweiterung handelt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle FlyoutChild nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes. 
+Wenn Sie eine Referenz auf die Zelle FlyoutChild nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . FlyoutChildwhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle FlyoutChild aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle FlyoutChild aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

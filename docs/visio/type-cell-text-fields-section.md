@@ -32,13 +32,13 @@ Gibt einen Datentyp für den Textfeldwert an.
 
 Sie können auch den Wert dieser Zelle im Dialogfeld **Feld** festlegen (klicken Sie mit einem Shape ausgewählt haben, klicken Sie auf der Registerkarte **Einfügen** in der Gruppe **Text** auf **Feld** ). 
   
-Zum Abrufen eines Verweises auf die Zelle Type nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Type aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Fields.Type [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Type aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Type aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

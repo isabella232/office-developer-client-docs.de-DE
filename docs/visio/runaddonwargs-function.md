@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797962"
 ---
-# <a name="runaddonwargs-function"></a>RUNADDONWARGS-Funktion
+# <a name="runaddonwargs-function"></a>RUNADDONWARGS Function
 
 Führt _String_ aus und übergibt die Befehlszeile _Argumente_ an die Anwendung als Zeichenfolge. 
   
@@ -35,13 +35,13 @@ RUNADDONWARGS ("** *Zeichenfolge* **","** *Argumente* **")
 
 In der Praxis sollten für _Arguments_ 50 oder weniger Zeichen werden. Verwenden der RUNADDONWARGS-Funktion ein Programm, wie ein Add-on, auf eine Zelle, eine Aktion oder Ereignisse Zelle einzubinden. 
   
-RUNADDONWARGS-Funktion kann nur Add-ons ausgeführt werden, die Mitglied der Anwendung **Addons** -Auflistung sind. In der Auflistung vorhanden sind, muss ein Add-on, eine EXE-Datei oder VSL-Datei, ist: 
+Mit der RUNADDONWARGS-Funktion können nur Add-Ons ausgeführt werden, die Elemente der **Addons**-Auflistung der Anwendung sind. Add-Ons in dieser Auflistung müssen EXE- oder VSL-Dateien sein, für die Folgendes gilt: 
   
-- In der Anwendung **beim Starten** oder **Addons** Pfad installiert. 
+- Sie müssen im Verzeichnis **Startup** bzw. **Addons** der Anwendung installiert sein. 
     
-- Programmgesteuert hinzugefügt mithilfe der **Add** -Methode der **Addons** -Auflistung. 
+- Sie müssen programmgesteuert mithilfe der **Add**-Methode der **Addons**-Auflistung hinzugefügt werden. 
     
-Weitere Informationen zum Ausführen von Code in Visio finden Sie unter [Informationen zu Sicherheitseinstellungen und Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md) in dieser ShapeSheet-Referenz. 
+Weitere Informationen zum Ausführen von Code in Visio finden Sie unter [Informationen zu Sicherheitseinstellungen und zum Ausführen von Code in Visio](about-security-settings-and-running-code-in-visio-shapesheet.md) in dieser ShapeSheet-Referenz. 
   
 In früheren Versionen von Visio wird diese Funktion in der Form _RUNADDONWARGS geschrieben. In Visio, Version 4.0 und höher, können beide Schreibweisen verwendet werden.
   

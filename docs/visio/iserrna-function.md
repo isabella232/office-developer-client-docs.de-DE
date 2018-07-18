@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797241"
 ---
-# <a name="iserrna-function"></a>ISERRNA Function
+# <a name="iserrna-function"></a>ISERRNA-Funktion
 
 Gibt TRUE zurück, wenn der Wert von _Zellbezug_ den Fehlertyp #n ist! (nicht verfügbar); Andernfalls wird FALSE zurückgegeben. ISERRNA-Funktion wird in Formeln verwendet, die auf einer anderen Zelle verweisen. 
   

@@ -18,7 +18,9 @@ ms.locfileid: "19798110"
 ---
 # <a name="sin-function-visioshapesheet"></a>SIN Function (VisioShapeSheet)
 
-Gibt den Sinus eines Winkels zurück. 
+Gibt den Sinus eines Winkels zurück.
+    
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,13 +30,13 @@ SIN (** *Winkel* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Winkel, dessen Sinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Winkel, dessen Sinus abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die SIN-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in _Winkel_angeben.
   

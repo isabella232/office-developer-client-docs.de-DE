@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798242"
 ---
-# <a name="tagname-cell-actions-section"></a>Zelle "TagName" (Abschnitt "Actions")
+# <a name="tagname-cell-actions-section"></a>TagName Cell (Actions Section)
 
 Enthält den Namen des Aktionstags, mit dem diese Aktion verknüpft ist.
   
@@ -35,13 +35,13 @@ Enthält den Namen des Aktionstags, mit dem diese Aktion verknüpft ist.
     
 - Wenn mehrere Smarttag-Zeilen den gleichen Wert in der Zelle TagName aufweisen, wird überall die gleiche Aktion angezeigt.
     
-Wenn Sie einen Verweis auf die Zelle TagName nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . TagNamewhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TagName aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

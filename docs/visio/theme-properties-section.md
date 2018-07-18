@@ -18,7 +18,7 @@ ms.locfileid: "19798260"
 
 Zeigt die Indexwerte des derzeit auf das Dokument, einschließlich Farbe, Schriftart, Connector und Effekte Werte angewendeten Designs. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können Designwerte auf der Registerkarte **Entwurf** oder durch Ändern in die Zellen in der ShapeSheet-Abschnitt **Design-Eigenschaften** festlegen. 
   

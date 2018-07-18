@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797438"
 ---
-# <a name="manager-function"></a>MANAGER-Funktion
+# <a name="manager-function"></a>MANAGER Function
 
 Gibt den Text aus dem Feld **Manager** der Eigenschaften eines Dokuments zurück. 
   
@@ -26,6 +26,6 @@ MANAGER ()
   
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 

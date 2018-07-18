@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798190"
 ---
-# <a name="strsame-function"></a>STRSAME-Funktion
+# <a name="strsame-function"></a>STRSAME Function
 
 Bestimmt, ob die Zeichenfolgen identisch sind. Es gibt TRUE zurück, wenn sie identisch sind, und FALSE, wenn sie nicht. 
   
@@ -34,7 +34,7 @@ STRSAME ("** *Zeichenfolge1* **","** *Zeichenfolge2* **", ** *IgnoreCase* **)
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Boolescher Wert
+Boolean
   
 ## <a name="remarks"></a>Bemerkungen
 

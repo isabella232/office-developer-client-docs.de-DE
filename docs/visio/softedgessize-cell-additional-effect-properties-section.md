@@ -18,7 +18,7 @@ ms.locfileid: "19798161"
 
 Bestimmt die Größe des ein weichen Kanteneffekt in Punkt von 0,00 zu 100.00. Wenn die Zelle **SoftEdgesSize** den Wert 0 hat, verfügt die Form nicht weiche Kanten. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **SoftEdgesSize** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

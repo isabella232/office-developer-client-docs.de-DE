@@ -18,7 +18,7 @@ ms.locfileid: "19797112"
 
 Zeigt die Eigenschaften für alle graduelle Füllung oder Linie Farbe Effekte auf die Form angewendet. Dieser Abschnitt enthält außerdem Zellen, die steuern, ob ein Shape Farbverlauf mit der Form dreht oder gibt an, ob das Shape einen angewendeten Verlauf, wenn mit anderen Shapes gruppiert wird davon ausgegangen. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können im Dialogfeld **Shape formatieren** Farbverlauf Einstellungen festlegen (**Home** > **Formenarten** > **Füllung** > **Ausfülloptionen** > **Füllung** > **graduelle Füllung**). 
   

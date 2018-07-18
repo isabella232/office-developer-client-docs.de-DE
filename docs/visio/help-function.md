@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797145"
 ---
-# <a name="help-function"></a>HELP Function
+# <a name="help-function"></a>HELP-Funktion
 
 Öffnet eine HTML-Hilfedatei mit dem angegebenen *Schlüsselwort* im Feld **Suchen** . 
   

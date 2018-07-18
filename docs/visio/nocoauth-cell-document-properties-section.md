@@ -23,7 +23,7 @@ Legt fest, ob ein Dokument gespeichert, die auf einem Microsoft SharePoint 2013-
 |TRUE  <br/> |Das Dokument kann nicht Mitautor werden und für die Bearbeitung beim Öffnen gesperrt ist.  <br/> |
 |FALSE  <br/> |Das Dokument kann Mitautor sein.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **NoCoauth** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

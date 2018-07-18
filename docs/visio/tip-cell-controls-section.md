@@ -22,13 +22,13 @@ Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn ein B
   
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle Tip nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Tip aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Steuerelemente.  *Name* . Tipwhere-Steuerelemente.  *Name* ist der Name der Zeile mit Steuerelementen.  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Tip aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Tip aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

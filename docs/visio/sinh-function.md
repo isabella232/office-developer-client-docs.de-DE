@@ -16,9 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798123"
 ---
-# <a name="sinh-function"></a>SINH-Funktion
+# <a name="sinh-function"></a>SINHYP-Funktion
 
-Gibt den hyperbolischen Sinus eines Winkels zurück. 
+Gibt den hyperbolischen Sinus eines Winkels zurück.
+    
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,13 +30,13 @@ SINH (** *Winkel* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Winkel, dessen hyperbolischen Sinus abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hyperbolischen Sinus abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die SINH-Funktion verwendet Bogenmaß (Radiant), wenn Sie eine andere Maßeinheit in _Winkel_angeben.
   

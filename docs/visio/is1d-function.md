@@ -20,7 +20,8 @@ Gibt TRUE zurück, wenn das Shape eindimensional (1D) ist; gibt FALSE zurück, w
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798210"
 ---
-# <a name="subject-function"></a>SUBJECT-Funktion
+# <a name="subject-function"></a>SUBJECT Function
 
 Gibt den Text aus dem Feld " **Betreff** " der Eigenschaften eines Dokuments zurück. 
   
@@ -26,6 +26,6 @@ BETREFF)
   
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 

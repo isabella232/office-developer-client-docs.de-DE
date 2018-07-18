@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798298"
 ---
-# <a name="tone-function"></a>TONE-Funktion
+# <a name="tone-function"></a>TONE Function
 
 Ändert die Farbe durch verringern die Sättigung entsprechend der Angabe in der _Int_ -Parameter. 
   
@@ -26,14 +26,14 @@ TONE (** *Farbe* **, ** *Int* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Farbe_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der Farbe.  <br/> |
+| _Farbe_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der Farbe.  <br/> |
 | _int_ <br/> |Erforderlich  <br/> |**Integer** <br/> |Der Wert, um den die Farbsättigung verringert werden soll. Kann positiv oder negativ sein.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
  **RGB**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die unteren und oberen Grenzwerte der Sättigung sind 0 und 240. Es gibt keine Beschränkung der Größe von die ganze Zahl, die Sie für den Parameter _Int_ weitergeben können, aber Sättigung überschreitet nie diese Grenzwerte. 
   

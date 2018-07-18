@@ -16,19 +16,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798318"
 ---
-# <a name="txtangle-cell-text-transform-section"></a>Zelle "TxtAngle" (Abschnitt "Text Transform")
+# <a name="txtangle-cell-text-transform-section"></a>TxtAngle Cell (Text Transform Section)
 
 Bestimmt den Textblock aktuellen Winkel der Drehung in Bezug auf die *X* -Achse der Form. Der Standardwert ist 0 Grad. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle TxtAngle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TxtAngle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TxtAngle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TxtAngle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TxtAngle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

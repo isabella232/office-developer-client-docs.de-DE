@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798354"
 ---
-# <a name="user-defined-cells-row-user-defined-cells-section"></a>User-defined Cells Row (User-defined Cells Section)
+# <a name="user-defined-cells-row-user-defined-cells-section"></a>Zeile "User-defined Cells" (Abschnitt "User-defined Cells")
 
 Enthält den Wert und die beschreibende Eingabeaufforderung für jede benutzerdefinierte Zelle in Ihrer Lösung. Ein Shape enthält für jedes Paar von Zellen mit Wert und Eingabeaufforderung eine User-defined Cells-Zeile.
   

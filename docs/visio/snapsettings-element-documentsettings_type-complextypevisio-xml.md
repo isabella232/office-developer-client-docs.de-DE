@@ -52,7 +52,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert kann die Summe der Werte in der folgenden Tabelle sein.
   

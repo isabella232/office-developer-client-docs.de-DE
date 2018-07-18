@@ -16,9 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798227"
 ---
-# <a name="tanh-function"></a>TANH Function
+# <a name="tanh-function"></a>TANHYP-Funktion
 
-Gibt den hyperbolischen Tangens eines Winkels zurück. 
+Gibt den hyperbolischen Tangens eines Winkels zurück.
+    
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +30,7 @@ TANH (** *Winkel* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Winkel_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Winkel, dessen hyperbolischer Tangens abgerufen werden soll.  <br/> |
+| _Winkel_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Der Winkel, dessen hyperbolischer Tangens abgerufen werden soll.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

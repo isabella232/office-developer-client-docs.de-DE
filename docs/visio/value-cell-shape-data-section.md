@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm1090
 localization_priority: Normal
 ms.assetid: fd42a6ce-f621-4e9e-aba3-23a1b87a5651
-description: Enthält das Shape-Datenelement Wert im Dialogfeld Shape-Daten definieren eingegeben wurde.
+description: Enthält den Wert des Shape-Datenelements, der in das Dialogfeld Shape-Daten definieren eingegeben wurde.
 ms.openlocfilehash: 5b373149360167585fc5a143ce9458703e219045
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798382"
 ---
-# <a name="value-cell-shape-data-section"></a>Zelle "Value" (Abschnitt "Shape Data")
+# <a name="value-cell-shape-data-section"></a>Value Cell (Shape Data Section)
 
-Enthält das Shape-Datenelement Wert im Dialogfeld **Shape-Daten definieren** eingegeben wurde. 
+Enthält den Wert des Shape-Datenelements, der in das Dialogfeld **Shape-Daten definieren** eingegeben wurde. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-In dieser Zelle eingegebenen Formeln werden durch die Werte im Dialogfeld **Shape-Daten definieren** eingegeben überschrieben. Dies gilt auch, wenn Sie die GUARD-Funktion verwenden, um die Formel zu schützen. 
+Die in diese Zelle eingegebenen Formeln werden von den im Dialogfeld **Shape-Daten definieren** eingegebenen Werten überschrieben. Dies gilt auch, wenn Sie die Formel mithilfe der GUARD-Funktion schützen. 
   
-Zum Abrufen eines Verweises auf die Zelle Value nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Value aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Eigenschaft.  *Name* . Wert wobei Prop.  *Name* ist der Zeilenname  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Value aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Value aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

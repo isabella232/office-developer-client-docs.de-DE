@@ -36,7 +36,8 @@ PLAYSOUND ("** *Filename* **" | "** *Alias* **", ** *istAlias* **, ** *Beep* **,
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie sollten in der Regel Sounds asynchron wiedergegeben werden sollen, damit Visio fortgeführt werden kann, während es der Sound wiedergegeben wird. Mehrere Sounds hintereinander abspielen möchten, deren synchron oder einige möglicherweise nicht wiedergegeben werden sollen. 
+Sounds sollten normalerweise asynchron abgespielt werden, damit Visio fortgesetzt werden kann, während der Sound abgespielt wird. Wenn Sie mehrere Sounds hintereinander abspielen möchten, sollten Sie diese synchron abspielen. Sonst könnte es geschehen, dass einige nicht abgespielt werden.
+ 
   
 ## <a name="example-1"></a>Beispiel 1
 

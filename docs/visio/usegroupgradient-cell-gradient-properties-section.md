@@ -18,7 +18,7 @@ ms.locfileid: "19798359"
 
 Bestimmt, ob die Form für einen Farbverlauf ausführt, wenn das Shape als boolescher Wert zusammen mit anderen Shapes gruppiert werden. Der Wert der Zelle **UseGroupGradient** betrifft nur die Füllung der Form. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **UseGroupGradient** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

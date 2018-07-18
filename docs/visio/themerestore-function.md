@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798278"
 ---
-# <a name="themerestore-function"></a>THEMERESTORE-Funktion
+# <a name="themerestore-function"></a>THEMERESTORE Function
 
 Speichert den Wert der lokalen Formatierungen eines Shapes anwenden eines Designs, damit Sie die lokale Formatierung wiederherstellen können, wenn der Benutzer anschließend das Design entfernt.
   

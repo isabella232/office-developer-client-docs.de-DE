@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797643"
 ---
-# <a name="pntx-function"></a>PNTX-Funktion
+# <a name="pntx-function"></a>PNTX Function
 
 Gibt die _X_-Koordinate eines Punkts.
   
@@ -28,7 +28,7 @@ PNTX (** *zeigen* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeigen Sie_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die _X_-Koordinate des Punkts.  <br/> |
+| _Punkt_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die _X_-Koordinate des Punkts.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

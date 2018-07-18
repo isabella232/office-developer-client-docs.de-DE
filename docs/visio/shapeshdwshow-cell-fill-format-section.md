@@ -24,7 +24,7 @@ Bestimmt, ob das Shape als eine ganze Zahl zwischen 0 und 2 einen Schatten angez
 |1  <br/> |Einen Schatten werden nicht gerendert werden, es sei denn, das Shape nicht über ein übergeordnetes Element verfügt. Verwenden Sie untergeordnetes Shape-Kontrollpunkte, wenn zusammengefasst.  <br/> |
 |2  <br/> |Einen Schatten immer angezeigt, wenn Sie ein Schatten angegeben ist. Schatten für die untergeordneten Formen werden angezeigt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ShapeShdwShow** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

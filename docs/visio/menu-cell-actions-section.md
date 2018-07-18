@@ -33,7 +33,7 @@ Zum Abrufen eines Verweises auf die Zelle Menu nach Namen aus einer anderen Form
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . Menuwhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Menu aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Menu aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

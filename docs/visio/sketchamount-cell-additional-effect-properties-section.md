@@ -23,7 +23,7 @@ Bestimmt die Menge des Distortion für einen Effekt Skizze als ganze Zahl zwisch
 |0  <br/> |Das Shape ist wirkungslos Skizze angewendet wird.  <br/> |
 |1-25  <br/> |Die Form angewendet wird, wobei die meisten Distortion, wird ein Wert von 1 und 25 Skizze Distortion hat die geringste.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **SketchAmount** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

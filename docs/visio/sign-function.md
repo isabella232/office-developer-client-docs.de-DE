@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798124"
 ---
-# <a name="sign-function"></a>SIGN-Funktion
+# <a name="sign-function"></a>SIGN Function
 
 Gibt einen Wert, der die Zeichen einer Zahl darstellt. 
   
@@ -28,8 +28,8 @@ Vorzeichen (** *Anzahl* **, ** *mit zufälligen Daten* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Anzahl_ <br/> |Erforderlich  <br/> |**Numerische** <br/> | Die Zahl, für die das Vorzeichen bestimmt werden soll.  <br/> |
-| _mit zufälligen Daten_ <br/> |Optional  <br/> |**Numerische** <br/> |Gibt an, wie klein der Wert einer Zahl sein muss, damit diese als gleich 0 (null) betrachtet wird.  <br/> |
+| _Anzahl_ <br/> |Erforderlich  <br/> |**Numeric** <br/> | Die Zahl, für die das Vorzeichen bestimmt werden soll.  <br/> |
+| _mit zufälligen Daten_ <br/> |Optional  <br/> |**Numeric** <br/> |Gibt an, wie klein der Wert einer Zahl sein muss, damit diese als gleich 0 (null) betrachtet wird.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

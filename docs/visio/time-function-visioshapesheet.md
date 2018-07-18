@@ -28,9 +28,9 @@ Zeit (** *Stunde* **, ** *Minute* **, ** *zweiten* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _hour_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die Stundenkomponente.  <br/> |
-| _minute_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die Minutenkomponente.  <br/> |
-| _second_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Die Sekundenkomponente.  <br/> |
+| _hour_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Stundenkomponente.  <br/> |
+| _minute_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Minutenkomponente.  <br/> |
+| _second_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Die Sekundenkomponente.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

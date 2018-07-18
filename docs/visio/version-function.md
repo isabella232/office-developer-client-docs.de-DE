@@ -14,13 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798395"
 ---
-# <a name="version-function"></a>VERSION Function
+# <a name="version-function"></a>VERSION-Funktion
 
 Gibt eine Ganzzahl zurück, die der Hauptversion der aktuell aktiven Microsoft Visio-Anwendung entspricht.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -28,7 +29,7 @@ VERSION()
   
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
 ## <a name="remarks"></a>Bemerkungen
 

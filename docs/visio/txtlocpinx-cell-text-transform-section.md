@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798313"
 ---
-# <a name="txtlocpinx-cell-text-transform-section"></a>Zelle "TxtLocPinX" (Abschnitt "Text Transform")
+# <a name="txtlocpinx-cell-text-transform-section"></a>TxtLocPinX Cell (Text Transform Section)
 
 Legt die *X* --Koordinate des Textblocks des Drehung im Verhältnis zum Ursprung des Textblocks. Die Standardformel lautet: 
   
@@ -26,13 +26,13 @@ Diese Formel berechnet die horizontale Mitte des Textblocks.
   
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle TxtLocPinX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle TxtLocPinX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | TxtLocPinX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle TxtLocPinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle TxtLocPinX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

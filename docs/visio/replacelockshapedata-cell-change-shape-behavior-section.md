@@ -23,7 +23,7 @@ Gibt an, ob die Werte der angegebenen Zellen in einem master-Shape die Werte (ei
 |1 (WAHR)  <br/> |Alle Zeilen und Werte des **Shape** -Datenabschnitt des master-Shapes auf das Ersatz-Shape kopiert wurden, und alle lokalen Werte vom alten Shape ersetzt werden verworfen.  <br/> |
 |0 (FALSE)  <br/> |Die Zeilen und Werte der **Shape** -Datenabschnitt des master-Shapes werden zum Ersatz-Shape kopiert. Alle Zeilen in der **Shape** -Datenabschnitt der alten Form mit lokalen Werte werden zum Ersatz-Shape übertragen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ReplaceLockShapeData** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

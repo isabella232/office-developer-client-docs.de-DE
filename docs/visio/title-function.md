@@ -26,6 +26,6 @@ TITEL)
   
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 

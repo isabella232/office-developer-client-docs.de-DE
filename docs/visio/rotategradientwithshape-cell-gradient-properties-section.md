@@ -23,7 +23,7 @@ Bestimmt, ob eine graduelle Füllung mit einem Shape in 2D Drehung, als ein bool
 |TRUE  <br/> |Der Farbverlauf wird mit der Form gedreht, wenn die Form um die Drehung Pin gedreht wird. "Top" des Farbverlaufs ist parallel zu den Drehpunkt.  <br/> |
 |FALSE  <br/> |Der Farbverlauf wird nicht mit der Form gedreht, bei die Form um die Drehung Pin gedreht wird. "Top" des Farbverlaufs ist parallel zum Zeichenbereich.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **RotateGradientWithShape** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

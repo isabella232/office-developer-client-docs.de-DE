@@ -8,7 +8,7 @@ f1_keywords:
 - Vis_DSS.chm82253251
 localization_priority: Normal
 ms.assetid: df014b98-cfd5-b6d3-4b8a-b0acb3b94412
-description: Legt fest, wie platzierbare Shapes kippen und/oder auf einer Seite gedreht werden, wenn Sie das Dialogfeld Layout konfigurieren verwenden (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout, klicken Sie auf der Seite Re-Layout, und klicken Sie dann auf Weitere Layoutoptionen).
+description: Legt fest, wie platzierbare Shapes auf einem Zeichenblatt gekippt und/oder gedreht werden, wenn Sie das Dialogfeld Layout konfigurieren verwenden (klicken Sie dazu auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie dann auf Weitere Layoutoptionen).
 ms.openlocfilehash: fb16849c7a496a4277133c68453d94d6fd2e67f8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,9 +16,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797614"
 ---
-# <a name="placeflip-cell-page-layout-section"></a>Zelle "PlaceFlip" (Abschnitt "Page Layout")
+# <a name="placeflip-cell-page-layout-section"></a>PlaceFlip Cell (Page Layout Section)
 
-Legt fest, wie platzierbare Shapes kippen und/oder auf einer Seite gedreht werden, wenn Sie das Dialogfeld **Layout konfigurieren** verwenden (klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** , klicken Sie auf **Der Seite Re-Layout**, und klicken Sie dann auf **Weitere Layoutoptionen**).
+Legt fest, wie platzierbare Shapes auf einem Zeichenblatt gekippt und/oder gedreht werden, wenn Sie das Dialogfeld **Layout konfigurieren** verwenden (klicken Sie dazu auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu anordnen**, und klicken Sie dann auf **Weitere Layoutoptionen**).
   
 |**Wert**|**Beschreibung**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
@@ -34,13 +34,13 @@ Der Wert in der Zelle PlaceFlip hilft bei der Ausrichtung eines platzierbaren Sh
   
 Wenn Sie dieses Verhalten für ein bestimmtes Shape festlegen möchten, verwenden Sie die Zelle ShapePlaceFlip im Abschnitt Shape Layout.
   
-Zum Abrufen eines Verweises auf die Zelle PlaceFlip nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PlaceFlip aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PlaceFlip  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PlaceFlip aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PlaceFlip aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

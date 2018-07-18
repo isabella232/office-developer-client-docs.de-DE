@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797436"
 ---
-# <a name="loctopar-function"></a>LOCTOPAR-Funktion
+# <a name="loctopar-function"></a>LOCTOPAR Function
 
 Gibt einen transformierten Punkt in übergeordneten Koordinaten im Zielkoordinatensystem zurück.
   

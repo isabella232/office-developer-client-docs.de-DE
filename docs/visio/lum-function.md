@@ -28,7 +28,7 @@ LUM (** *Ausdruck* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _expression_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.  <br/> |
+| _expression_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

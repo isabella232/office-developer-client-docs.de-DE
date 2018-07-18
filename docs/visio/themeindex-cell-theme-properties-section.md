@@ -18,7 +18,7 @@ ms.locfileid: "19798259"
 
 Speichert die Aufzählung des integrierten Microsoft Visio Design auf das Dokument, als ganze Zahl. Wenn ein neues Design für das Dokument, das die Zelle **ThemeIndex** für das Dokument ausgewählt ist, und alle Seiten und die darin enthaltenen Shapes wird mit dem Index des integrierten Designs aktualisiert. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ThemeIndex** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -1,5 +1,5 @@
 ---
-title: What's new for Visio ShapeSheet-Entwickler
+title: Neuigkeiten für Visio ShapeSheet-Entwickler
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798420"
 ---
-# <a name="whats-new-for-visio-shapesheet-developers"></a>What's new for Visio ShapeSheet-Entwickler
+# <a name="whats-new-for-visio-shapesheet-developers"></a>Neuigkeiten für Visio ShapeSheet-Entwickler
 
 Visio 2013 bietet eine leistungsstarke Plattform für benutzerdefinierten Zeichnung Lösungen. Neue ShapeSheet-Zellen und Funktionen, die zusammen mit neuen Automation-Objekte, Eigenschaften, Methoden und Ereignisse, bieten weitere Optionen zum Definieren und Steuern des Verhaltens der Elemente in Ihre Lösungen.
   
@@ -58,10 +58,10 @@ Die folgende Tabelle enthält die neuen Zellen, die Sie zum Erstellen von ShapeS
 |[LineGradientAngle](linegradientangle-cell-gradient-properties-section.md) <br/> |Farbverlauf-Eigenschaften  <br/> |
 |[LineGradientDir](linegradientdir-cell-gradient-properties-section.md) <br/> |Farbverlauf-Eigenschaften  <br/> |
 |[LineGradientEnabled](linegradientenabled-cell-gradient-properties-section.md) <br/> |Farbverlauf-Eigenschaften  <br/> |
-|[LockReplace](lockreplace-cell-protection-section.md) <br/> |Schutz  <br/> |
-|[LockThemeConnectors](lockthemeconnectors-cell-protection-section.md) <br/> |Schutz  <br/> |
-|[LockThemeFonts](lockthemefonts-cell-protection-section.md) <br/> |Schutz  <br/> |
-|[LockThemeIndex](lockthemeindex-cell-protection-section.md) <br/> |Schutz  <br/> |
+|[LockReplace](lockreplace-cell-protection-section.md) <br/> |Protection  <br/> |
+|[LockThemeConnectors](lockthemeconnectors-cell-protection-section.md) <br/> |Protection  <br/> |
+|[LockThemeFonts](lockthemefonts-cell-protection-section.md) <br/> |Protection  <br/> |
+|[LockThemeIndex](lockthemeindex-cell-protection-section.md) <br/> |Protection  <br/> |
 |[NoCoauth](nocoauth-cell-document-properties-section.md) <br/> |Dokumenteigenschaften  <br/> |
 |[PageLockReplace](pagelockreplace-cell-page-properties-section.md) <br/> |Zeichenblatteigenschaften  <br/> |
 |[Perspective](perspective-cell-3-d-rotation-properties-section.md) <br/> |3D-Drehung-Eigenschaften  <br/> |
@@ -128,7 +128,7 @@ Die folgende Tabelle enthält die neuen Funktionen in Visio 2013.
 |:-----|
 |[SCHRIFTART](font-function.md) <br/> |
 |[ISTHEMED](isthemed-function.md) <br/> |
-|[SPRACHE](language-function.md) <br/> |
+|[LANGUAGE](language-function.md) <br/> |
 |[THEMECBV](themecbv-function.md) <br/> |
 ||
 |[THEMEVAL](themeval-function.md) <br/> |

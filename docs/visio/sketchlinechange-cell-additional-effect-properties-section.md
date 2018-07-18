@@ -18,7 +18,7 @@ ms.locfileid: "19798128"
 
 Bestimmt die Menge der zufällige Zeile aus der Shape-Geometrie des Shapes an, wenn ein Effekt Skizze als Prozentwert der Länge eines Abschnitts mit. Wenn der Wert der Zelle **SketchLineChange** auf 0 % festgelegt ist, entspricht die Geometrie des Shapes Zeile der Shape-Geometrie. Ist der Wert auf 100 %, folgt die Geometrie Zeile des Shapes nicht die Geometrie des Shapes. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die besten Ergebnisse zu erzielen ist ideale Wertebereich für die Zelle **SketchLineChange** zwischen 15 % und 50 %. Es wird ein Wert weniger als 15 % kaum Renderingzeit; ein Wert größer als 50 % die Zeile zu viel randomize konnte. 
   

@@ -29,11 +29,11 @@ TEXTWIDTH (** *Shapename! TheText* ** ** *[, maxBreite]* **)
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Shapename! TheText_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Verweis auf die Zelle TheText mit der in der Ziel-Shape.  _Shapename!_ ist der Name des Shapes, von dem Sie den Text abrufen möchten.  <br/> |
-| _maxBreite_ <br/> |Optional  <br/> |**Numerische** <br/> |Die maximale Breite eines Textblocks.  <br/> |
+| _maxBreite_ <br/> |Optional  <br/> |**Numeric** <br/> |Die maximale Breite eines Textblocks.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
 ## <a name="remarks"></a>Bemerkungen
 

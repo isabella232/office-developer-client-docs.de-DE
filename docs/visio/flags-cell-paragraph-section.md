@@ -29,13 +29,13 @@ Gibt an, ob die Textrichtung von links nach rechts oder von rechts nach links ve
 
 Der Wert in dieser Zelle entspricht der Einstellung **Richtung** auf der Registerkarte **Absatz** im Dialogfeld **Text** (auf der Registerkarte **Start** , klicken Sie auf den Pfeil neben **Schriftart** ), die angezeigt wird, wenn eine Sprache, die komplexe verwendet Text Skripts wurde Klicken Sie im Dialogfeld **Microsoft Office-Spracheinstellungen** hinzugefügt. (Klicken Sie auf **Start**, klicken Sie auf **Alle Programme**, klicken Sie auf **Microsoft Office**, klicken Sie auf **Microsoft Office Tools**, und klicken Sie dann auf **Microsoft Office-Spracheinstellungen**.) 
   
-Wenn Sie einen Verweis auf die Zelle Flags nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Flags aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Para.Flags [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Flags aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Flags aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -18,7 +18,7 @@ ms.locfileid: "19798133"
 
 Bestimmt die Menge der zufälligen Anordnung von der Füllung der Form aus der Shape-Geometrie an, wenn Sie einen Effekt Skizze als Prozentwert der Länge eines Abschnitts verwenden. Wenn der Wert der Zelle **SketchFillChange** auf 0 % festgelegt ist, entspricht die umgebende Geometrie Füllung einer Form der Shape-Geometrie. Ist der Wert auf 100 %, folgt die umgebende Geometrie der Füllung der Form die Geometrie des Shapes nicht. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die besten Ergebnisse zu erzielen ist ideale Wertebereich für die Zelle **SketchFillChange** zwischen 15 % und 50 %. Es wird ein Wert weniger als 15 % kaum Renderingzeit; ein Wert größer als 50 % ist immer mehr zufällige. 
   

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797851"
 ---
-# <a name="reviewer-section"></a>Reviewer Section
+# <a name="reviewer-section"></a>Prüferabschnitt
 
 Enthält identifizierende Informationen zu den einzelnen Bearbeitern von Dokumenten.
   
@@ -24,7 +24,7 @@ Enthält identifizierende Informationen zu den einzelnen Bearbeitern von Dokumen
 
 Der Abschnitt Reviewer enthält eine Zeile für jeden Bearbeiter, der dem Dokument Markup hinzugefügt hat, selbst wenn das gesamte Markup eines bestimmten Bearbeiters bereits gelöscht wurde. 
   
-Der Abschnitt Reviewer ist im ShapeSheet eines Dokuments enthalten. Zum Anzeigen des ShapeSheets eines Dokuments, auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Einblenden/Ausblenden** **Zeichnungsexplorer**auswählen, mit der rechten Maustaste in den Namen des Dokuments, und klicken Sie dann auf **ShapeSheet anzeigen**. 
+Der Abschnitt Reviewer ist im ShapeSheet eines Dokuments enthalten. Klicken Sie zum Anzeigen des ShapeSheets eines Dokuments auf der Registerkarte Entwickler in der Gruppe Einblenden/Ausblenden auf Zeichnungsexplorer, klicken Sie mit der rechten Maustaste auf den Dokumentnamen, und klicken Sie anschließend auf ShapeSheet anzeigen. 
   
 Weitere Informationen über Kommentare, die einem Dokument im Rahmen des Markups hinzugefügt werden, finden Sie im Abschnitt **Annotation** . 
   

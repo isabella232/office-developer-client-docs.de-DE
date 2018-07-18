@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798255"
 ---
-# <a name="theme-function"></a>THEME-Funktion
+# <a name="theme-function"></a>THEME Function
 
 Ruft das aktuelle Design formateinstellungen ab.
   

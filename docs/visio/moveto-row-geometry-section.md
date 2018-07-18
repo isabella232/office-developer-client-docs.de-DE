@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797532"
 ---
-# <a name="moveto-row-geometry-section"></a>Zeile "MoveTo" (Abschnitt "Geometry")
+# <a name="moveto-row-geometry-section"></a>MoveTo Row (Geometry Section)
 
 Enthält die *X* - und *y* - Koordinaten des ersten Scheitelpunkts eines Shapes oder stellt die *X* - und *y* -Koordinaten des ersten Scheitelpunkts hinter einer Pfadlücke in einem Pfad. 
   
@@ -27,7 +27,7 @@ Eine Zeile **MoveTo** enthält folgende Zellen.
 |[X](x-cell-geometry-section.md) <br/> |Wenn die Zeile **MoveTo** die erste Zeile im Abschnitt ist, stellt die Zelle X die *X* -Koordinate des ersten Scheitelpunkts eines Shapes. Wenn die Zeile **MoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle X die *X* -Koordinate des ersten Scheitelpunkts hinter der Pfadlücke.  <br/> |
 |[Y](y-cell-geometry-section.md) <br/> |Wenn die Zeile **MoveTo** die erste Zeile im Abschnitt ist, stellt die Zelle Y die *y* -Koordinate des ersten Scheitelpunkts eines Shapes. Wenn die Zeile **MoveTo** zwischen zwei Zeilen angezeigt wird, stellt die Zelle Y die *y* -Koordinate des ersten Scheitelpunkts hinter der Pfadlücke.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Zeile **MoveTo** enthält die *X* - und *y* -Koordinaten des ersten Scheitelpunkts für das Shape, wenn die Zeile **MoveTo** die erste Zeile im Abschnitt ist. In der Regel ist dies dem ersten Scheitelpunkt und es entspricht nicht notwendigerweise auf den Anfangspunkt eines 1D-Shapes Shapes beim Zeichnen des Shapes platziert. 
   

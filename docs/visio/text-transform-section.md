@@ -22,6 +22,6 @@ Enthält Positionsdaten für den Textblock eines Shapes.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**). Festlegen von Werten in den Abschnitt " **Text Transform** " ist vergleichbar mit arbeiten mit den Textblock mithilfe des Tools **TextBlock** (der Gruppe **Tools** auf der Registerkarte **Start** ). 
+Wenn Sie diesen Abschnitt hinzufügen möchten, verwenden Sie das Dialogfeld **Abschnitt einfügen** (klicken Sie dazu mit der rechten Maustaste in das ShapeSheet-Fenster, und klicken Sie auf **Abschnitt einfügen**). Festlegen von Werten in den Abschnitt " **Text Transform** " ist vergleichbar mit arbeiten mit den Textblock mithilfe des Tools **TextBlock** (der Gruppe **Tools** auf der Registerkarte **Start** ). 
   
 

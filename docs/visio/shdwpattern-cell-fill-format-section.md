@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798078"
 ---
-# <a name="shdwpattern-cell-fill-format-section"></a>Zelle "ShdwPattern" (Abschnitt "Fill Format")
+# <a name="shdwpattern-cell-fill-format-section"></a>ShdwPattern Cell (Fill Format Section)
 
 Definiert das Füllmuster für den Schatten eines Shapes.
   
@@ -28,15 +28,15 @@ Definiert das Füllmuster für den Schatten eines Shapes.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Um das Füllmuster festgelegt, geben Sie eine Zahl von 0 bis 40, einen Index in einer Auflistung von Muster. Sie können die Auflistung der Füllung Muster im Dialogfeld **Füllbereich** anzeigen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** klicken Sie auf **Füllbereich**, und klicken Sie dann auf **Optionen**).
+Wenn Sie das Füllmuster festlegen möchten, geben Sie eine Zahl von 0 bis 40 ein. Diese Zahl ist ein Index für eine Mustersammlung. Sie können sich die Füllmustersammlung auch im Dialogfeld **Füllbereich** ansehen (klicken Sie dazu auf der Registerkarte **Start** in der Gruppe **Shape** auf **Füllbereich**, und klicken Sie dann auf **Füllbereichsoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle ShdwPattern nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShdwPattern aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShdwPattern  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShdwPattern aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShdwPattern aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

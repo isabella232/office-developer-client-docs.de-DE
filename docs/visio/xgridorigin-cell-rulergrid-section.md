@@ -1,5 +1,5 @@
 ---
-title: Zelle "XGridOrigin" (Lineal &amp; Rasterabschnitt)
+title: XGridOrigin Cell (Ruler &amp; Grid Section)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798445"
 ---
-# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>Zelle "XGridOrigin" (Lineal &amp; Rasterabschnitt)
+# <a name="xgridorigin-cell-ruler-amp-grid-section"></a>XGridOrigin Cell (Ruler &amp; Grid Section)
 
 Gibt die horizontale Koordinate des Gitterursprungs an.
   
@@ -24,13 +24,13 @@ Gibt die horizontale Koordinate des Gitterursprungs an.
 
 Diese Zelle entspricht der horizontalen **Gitterursprung** option in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** auf den Pfeil **angezeigt** . 
   
-Wenn Sie einen Verweis auf die Zelle XGridOrigin nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle XGridOrigin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |XGridOrigin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle XGridOrigin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle XGridOrigin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

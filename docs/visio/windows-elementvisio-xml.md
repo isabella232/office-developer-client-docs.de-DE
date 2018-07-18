@@ -46,7 +46,8 @@ Keine.
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Microsoft Visio-Instanz.  <br/> |
+|[Window](window-element-windows_type-complextypevisio-xml.md) <br/> |[Window_Type](window_type-complextypevisio-xml.md) <br/> |Repräsentiert ein geöffnetes Fenster in einer Instanz von Microsoft Visio.
+  <br/> |
    
 ### <a name="attributes"></a>Attribute
 

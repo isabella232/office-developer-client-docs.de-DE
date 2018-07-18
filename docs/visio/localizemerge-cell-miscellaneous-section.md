@@ -25,15 +25,15 @@ Gibt an, ob Shapes beim Kopieren zwischen Dokumenten lokalisiert werden.
 | WAHR  <br/> | Shapes werden in die Sprache des Zieldokuments lokalisiert.  <br/> |
 | FALSCH  <br/> | Ein Shape auf Grundlage der Sprache des Zieldokuments (Standard) nicht lokalisiert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle LocalizeMerge nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LocalizeMerge aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LocalizeMerge  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LocalizeMerge aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LocalizeMerge aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -31,6 +31,6 @@ PATHSEGMENT (** *Abschnitt* **, ** *Reisen* **)
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
 

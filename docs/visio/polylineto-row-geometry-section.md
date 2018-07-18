@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797634"
 ---
-# <a name="polylineto-row-geometry-section"></a>Zeile "PolylineTo" (Abschnitt "Geometry")
+# <a name="polylineto-row-geometry-section"></a>PolylineTo Row (Geometry Section)
 
 Enthält die *X* - und *y* -Koordinaten des letzten Punkts einer Polylinie und eine Polylinienformel. 
   
@@ -30,8 +30,8 @@ Eine Zeile PolylineTo enthält folgende Zellen.
    
 ## <a name="remarks"></a>Hinweise
 
-Zeilen dargestellt als einer Polylinienzeile entsprechen Zeilen, die als Folge von LineTo-Zeilen dargestellt werden, aber eine Polylinienzeile ist effizienter. Sie können eine Zeile PolylineTo in eine Zeile LineTo ändern, sodass Sie auf einfache Weise die Shape-Geometrie anzeigen können. Zu diesem Zweck mit der rechten Maustaste in der Zeile "PolylineTo", und klicken Sie dann im Kontextmenü auf **Zeile erweitern** . 
+Zeilen, die als Polylinienzeilen dargestellt werden, entsprechen Zeilen, die als Folge von LineTo-Zeilen dargestellt werden, doch eine Polylinienzeile ist effizienter. Sie können eine Zeile PolylineTo in eine Zeile LineTo ändern, damit Sie die Geometrie des Shapes problemlos anzeigen können. Klicken Sie dazu mit der rechten Maustaste auf die Zeile PolylineTo, und klicken Sie dann im Kontextmenü auf Zeile erweitern. 
   
-Wenn Sie einen Zeilentyp in eine Zeile PolylineTo ändern, mit der rechten Maustaste in der Zeile, und klicken Sie dann im Kontextmenü auf **Zeilentyp ändern** . 
+Wenn Sie einen Zeilentyp in PolylineTo ändern möchten, klicken Sie mit der rechten Maustaste auf die Zeile, und klicken Sie dann im Kontextmenü auf Zeilentyp ändern. 
   
 

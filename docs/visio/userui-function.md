@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798369"
 ---
-# <a name="userui-function"></a>USERUI-Funktion
+# <a name="userui-function"></a>USERUI Function
 
 Wertet einen der beiden Ausdrücke abhängig vom Wert des _Status_aus.
   
@@ -32,7 +32,7 @@ USERUI (** *Zustand* **, ** *Standardausdruck aus* **, ** *BenutzerAusdruck ausg
 | _Standardausdruck aus_ <br/> |Erforderlich  <br/> |**String** <br/> |Der Standardausdruck.  <br/> |
 | _BenutzerAusdruck ausgewertet_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Ausdruck, der vom Benutzer bereitgestellt wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn _Zustand_ 0 ist, wertet die USERUI-Funktion den _Standardausdruck aus_. Wenn _Zustand_ 1 ist, wird der _BenutzerAusdruck ausgewertet_.
   

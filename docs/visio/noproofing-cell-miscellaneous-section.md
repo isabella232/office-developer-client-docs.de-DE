@@ -23,7 +23,7 @@ Bestimmt, ob die Rechtschreibung automatisch korrigiert wird und ob Rechtschreib
 |TRUE  <br/> |Rechtschreibung wird nicht automatisch korrigiert und Rechtschreibfehler werden nicht für die markierte Form angezeigt.  <br/> |
 |FALSE  <br/> |Rechtschreibung wird automatisch korrigiert und Rechtschreibfehler für das ausgewählte Shape angezeigt werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zum Abrufen eines Verweises auf die Zelle NoProofing nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
   

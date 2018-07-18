@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797650"
 ---
-# <a name="plowcode-cell-page-layout-section"></a>Zelle "PlowCode" (Abschnitt "Page Layout")
+# <a name="plowcode-cell-page-layout-section"></a>PlowCode Cell (Page Layout Section)
 
 Legt fest, ob platzierbare Shapes verschoben werden, wenn Sie ein platzierbares Shape in der Nähe eines anderen auf dem Zeichenblatt ablegen.
   
@@ -25,17 +25,17 @@ Legt fest, ob platzierbare Shapes verschoben werden, wenn Sie ein platzierbares 
 |0  <br/> |Shapes nicht verschieben  <br/> |**visPLOPlowNone** <br/> |
 |1  <br/> |Shapes verschieben  <br/> |**visPLOPlowAll** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch festlegen, auf der Registerkarte **Layout und Routing** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** ) mithilfe von das Kontrollkästchen **andere Shapes beim Ablegen abwesend verschieben** . 
   
-Wenn Sie einen Verweis auf die Zelle PlowCode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PlowCode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PlowCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PlowCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PlowCode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

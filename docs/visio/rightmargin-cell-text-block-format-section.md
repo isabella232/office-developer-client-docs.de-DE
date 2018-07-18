@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797859"
 ---
-# <a name="rightmargin-cell-text-block-format-section"></a>Zelle "RightMargin" (Abschnitt "Text Block Format")
+# <a name="rightmargin-cell-text-block-format-section"></a>RightMargin Cell (Text Block Format Section)
 
 Bestimmt den Abstand zwischen dem rechten Rand des Textblocks und dem darin enthaltenen Text. Standardmäßig sind 2,54 mm festgelegt.
   
@@ -24,13 +24,13 @@ Bestimmt den Abstand zwischen dem rechten Rand des Textblocks und dem darin enth
 
 Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung maßstäblich ist, bleibt der rechte Rand unverändert.
   
-Wenn Sie einen Verweis auf die Zelle RightMargin nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle RightMargin aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | RightMargin  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle RightMargin aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle RightMargin aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

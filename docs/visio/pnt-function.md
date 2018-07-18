@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797688"
 ---
-# <a name="pnt-function"></a>PNT-Funktion
+# <a name="pnt-function"></a>PNT Function
 
 Gibt den durch die Koordinaten _X_ und _y_ als einzelner Wert dargestellten Punkt zurück. 
   
@@ -28,7 +28,7 @@ PNT (** *x, y* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _X, y_ <br/> |Erforderlich  <br/> |**Anzahl** <br/> |Die Koordinaten des Punkts im Koordinatensystem des aktuellen Shapes.  <br/> |
+| _X, y_ <br/> |Erforderlich  <br/> |**Number, Number** <br/> |Die Koordinaten des Punkts im Koordinatensystem des aktuellen Shapes.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

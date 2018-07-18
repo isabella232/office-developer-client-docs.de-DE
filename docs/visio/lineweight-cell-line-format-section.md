@@ -22,17 +22,17 @@ Legt die Linienbreite eines Shapes fest. Definieren Sie die Linienbreite, indem 
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert der LineWeight auch im Dialogfeld **Linie** festlegen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** klicken Sie auf **Zeile**, **Weight**, und klicken Sie dann auf **Weitere Linien**).
+Sie können den Wert von LineWeight auch im Dialogfeld Linie definieren (klicken Sie auf der Registerkarte Start in der Gruppe Shape auf Linie, zeigen Sie auf Linienbreite, und klicken Sie dann auf Weitere Linien).
   
 Wenn die Einheit nicht eingegeben wird, wird die Maßeinheit für den Text im Dialogfeld **Visio-Optionen** (klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Optionen**). Linienbreite ist unabhängig von der Skalierung der Zeichnung. Wenn die Zeichnung skaliert wird, bleibt die Linienstärke unverändert. 
   
-Wenn Sie einen Verweis auf die Zelle LineWeight nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Bezug auf die Zelle Name aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LineWeight  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineWeight aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Bezug auf die Zelle LineWeight aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|
