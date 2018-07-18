@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797211"
 ---
-# <a name="intersectx-function"></a>INTERSECTX-Funktion
+# <a name="intersectx-function"></a>INTERSECTX Function
 
 Gibt die *X* -Koordinate (im lokalen Koordinatensystem) des Punkts, in dem zwei Linien überschneiden. 
   
@@ -39,9 +39,9 @@ INTERSECTX (** *X1* **, ** *y1* **, ** *Winkel1* **, ** *X2* **, ** *y2* **, ** 
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Jede Zeile wird als ein Punkt (*X, y*) und ein Winkel definiert. 
+Die einzelnen Linien werden als ein Punkt (*x,y*) und ein Winkel definiert. 
   
 Von Microsoft Visio wird diese Funktion in der Zelle PinX eines Shapes verwendet, das an eine gedrehte Führungslinie geklebt ist. 
   

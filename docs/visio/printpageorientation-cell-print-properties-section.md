@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797738"
 ---
-# <a name="printpageorientation-cell-print-properties-section"></a>Zelle "PrintPageOrientation" (Abschnitt "Print Properties")
+# <a name="printpageorientation-cell-print-properties-section"></a>PrintPageOrientation Cell (Print Properties Section)
 
 Bestimmt, ob die Seite im Hoch- oder im Querformat gedruckt wird.
   
@@ -26,17 +26,17 @@ Bestimmt, ob die Seite im Hoch- oder im Querformat gedruckt wird.
 | 1  <br/> | Hochformat  <br/> |**visPPOPortrait** <br/> |
 |2  <br/> |Querformat  <br/> |**visPPOLandscape** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Einfügen neuer Seiten in einem Dokument ist die Standardeinstellung die Einstellung in der aktiven Seite.
   
-Wenn Sie einen Verweis auf die Zelle PrintPageOrientation nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PrintPageOrientation  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PrintPageOrientation aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

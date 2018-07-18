@@ -23,7 +23,7 @@ Bestimmt, ob die Design-Variante, die auf dem Zeichenblatt oder Shape angewendet
 |TRUE  <br/> |Die aktuelle Variation auf dem Zeichenblatt oder Shape angewendet kann nicht geändert werden.  <br/> |
 |FALSE  <br/> |Die Variante des Zeichenblatts oder des Shape kann geändert werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **LockVariation** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797399"
 ---
-# <a name="locktextedit-cell-protection-section"></a>Zelle "LockTextEdit" (Abschnitt "Protection")
+# <a name="locktextedit-cell-protection-section"></a>LockTextEdit Cell (Protection Section)
 
 Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
   
@@ -27,15 +27,15 @@ Sperrt den Text eines Shapes, damit dieser nicht bearbeitet werden kann.
    
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können weiterhin Text formatieren, indem Sie eine Formatvorlage im Dialogfeld **Text** anwenden (klicken Sie auf der Registerkarte **Start** auf den Pfeil neben **Schriftart** ). 
+Sie können weiterhin Text formatieren, indem Sie eine Formatvorlage aus dem Dialogfeld **Text** anwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**). 
   
-Wenn Sie einen Verweis auf die Zelle LockTextEdit nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LockTextEdit aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockTextEdit  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockTextEdit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LockTextEdit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -20,7 +20,8 @@ Gibt eine Blattreferenz auf das Listencontainer-Shape zurück, das das Shape ent
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

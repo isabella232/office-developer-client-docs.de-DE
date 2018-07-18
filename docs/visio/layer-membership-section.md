@@ -22,7 +22,7 @@ Enthält eine Zeile, in der alle Layer aufgeführt werden, denen das Shape zugew
   
 ## <a name="remarks"></a>Bemerkungen
 
-Die Layer-Zuweisung wird als Index für die Liste der Ebenen auf der Seite angezeigt. Der Ebenenindex entspricht der Reihenfolge der Ebenen im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** , klicken Sie auf **Ebenen**, und klicken Sie dann auf **Layereigenschaften**). Der erste Name in das Dialogfeld ist Layer 0, die zweite Ebene 1 und So weiter.
+Die Layerzuweisung wird als Index zu der Liste der Layer auf dem Zeichenblatt angezeigt. Der Layerindex entspricht der Reihenfolge der Layer im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**). Der erste Name in dem Dialogfeld ist Layer 0, der zweite ist Layer 1 und so weiter.
   
 Wenn ein Shape mehreren Layern zugewiesen ist, werden die einzelnen Layerindizes in der Zelle Layer Membership durch ein Semikolon getrennt angezeigt.
   

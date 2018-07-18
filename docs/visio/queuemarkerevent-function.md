@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797757"
 ---
-# <a name="queuemarkerevent-function"></a>QUEUEMARKEREVENT-Funktion
+# <a name="queuemarkerevent-function"></a>QUEUEMARKEREVENT Function
 
 Bewirkt, dass die Anwendung ein Markerereignis für das Add-on, Microsoft Visual Basic für Applikationen (VBA)-Code oder COM-add-in auslöst. 
   
@@ -30,7 +30,7 @@ QUEUEMARKEREVENT (** *Zeichenfolge Event_string* **)
 |:-----|:-----|:-----|:-----|
 | _Zeichenfolge event_string_ <br/> |Erforderlich  <br/> |**String** <br/> | Die Zeichenfolge, die an den Ereignishandler übergeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die QUEUEMARKEREVENT-Funktion bietet Entwicklern eine Möglichkeit Codeprobleme aus einer ShapeSheet-Zelle zu benachrichtigen und lösungsspezifische Informationen übergeben. Wenn die Zelle mit der Formel mit der QUEUEMARKEREVENT-Funktion ausgewertet wird, wird die Anwendung ein Markerereignis löst und übergibt die _Zeichenfolge Event_string_ an alle Ereignishandler, die auf das **MarkerEvent** -Ereignis warten. 
   
@@ -40,6 +40,6 @@ Weitere Informationen zu Markerereignissen finden Sie unter **QueueMarkerEvent**
 
 QUEUEMARKEREVENT ("MyCustomNotification") 
   
-Bewirkt, dass die Anwendung ein Markerereignis auslöst, und übergibt die Zeichenfolge "MyCustomNotification" an die Ereignishandler, die auf das **MarkerEvent** -Ereignis warten. 
+Bewirkt, dass die Anwendung ein Markerereignis auslöst und die Zeichenfolge "MyCustomNotification" an die Ereignishandler übergibt, die auf das **MarkerEvent**-Ereignis warten. 
   
 

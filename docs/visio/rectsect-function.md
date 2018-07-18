@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797772"
 ---
-# <a name="rectsect-function"></a>RECTSECT-Funktion
+# <a name="rectsect-function"></a>RECTSECT Function
 
 Berechnet den Sektor eines Rechtecks *X* und *y* zugeordnet und gibt eine Ganzzahl zwischen 0 und 4, der angibt, des Sektors. 
   

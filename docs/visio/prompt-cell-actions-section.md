@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797722"
 ---
-# <a name="prompt-cell-actions-section"></a>Zelle "Prompt" (Abschnitt "Actions")
+# <a name="prompt-cell-actions-section"></a>Prompt Cell (Actions Section)
 
 Ab Visio 2002 wird diese Zelle nicht mehr verwendet.
   

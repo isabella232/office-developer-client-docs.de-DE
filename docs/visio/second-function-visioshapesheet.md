@@ -30,13 +30,13 @@ ZWEITE ("** *Datetime* **" | ** *Ausdruck* ** [, ** *Lcid* **])
 |:-----|:-----|:-----|:-----|
 | _DateTime_ <br/> |Erforderlich  <br/> |**String** <br/> |Beliebige Zeichenfolge, die allgemein als Datums- und Zeitangabe erkannt wird, oder ein Bezug auf eine Zelle mit einer Datums- und Zeitangabe.  <br/> |
 | _expression_ <br/> |Erforderlich  <br/> |**String** <br/> | Beliebiger Ausdruck, der eine Datums- und Zeitangabe liefert.  <br/> |
-| _lcid_ <br/> |Optional  <br/> |**Numerische** <br/> |Die Gebietsschema-ID an, bei der Bewertung von Währungssymbole _Datetime_verwendet werden. Die Gebietsschema-ID ist eine Zahl, die in den Headerdateien System beschrieben.  <br/> |
+| _lcid_ <br/> |Optional  <br/> |**Numerisch** <br/> |Die Gebietsschema-ID an, bei der Bewertung von Währungssymbole _Datetime_verwendet werden. Die Gebietsschema-ID ist eine Zahl, die in den Headerdateien System beschrieben.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Datumskomponente in _Datetime_ oder _Expression_ wird verworfen. 
   

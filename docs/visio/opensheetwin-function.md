@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797564"
 ---
-# <a name="opensheetwin-function"></a>OPENSHEETWIN-Funktion
+# <a name="opensheetwin-function"></a>OPENSHEETWIN Function
 
 Öffnet das ShapeSheet-Fenster in einem neuen Fenster.
   

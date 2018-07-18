@@ -23,7 +23,7 @@ Bestimmt, ob für eine Linie oder den Rahmen eines Shapes ein Linie Farbverlauf 
 |TRUE  <br/> |Farbverlauf wird in einer Zeile oder den Rahmen einer Form angezeigt.  <br/> |
 |FALSE  <br/> |Verläufe werden nicht in einer Zeile oder den Rahmen einer Form angezeigt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **LineGradientEnabled** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

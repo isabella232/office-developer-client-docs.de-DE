@@ -19,21 +19,21 @@ ms.locfileid: "19797980"
 
 - [Abschnitt "1-D Endpoints"](1-d-endpoints-section.md)
     
-- [3D-Drehung Eigenschaften im Abschnitt](3-d-rotation-properties-section.md)
+- [3-D Rotation Properties Section](3-d-rotation-properties-section.md)
     
 - [Im Abschnitt Aktion-Tag](action-tag-section.md)
     
 - [Abschnitt "Actions"](actions-section.md)
     
-- [Zusätzliche Wirkung Eigenschaften im Abschnitt](additional-effect-properties-section.md)
+- [Additional Effect Properties Section](additional-effect-properties-section.md)
     
 - [Abschnitt "Alignment"](alignment-section.md)
     
 - [Abschnitt "Annotation"](annotation-section.md)
     
-- [Abschrägung an Eigenschaften im Abschnitt](bevel-properties-section.md)
+- [Bevel Properties Section](bevel-properties-section.md)
     
-- [Abschnitt "ändern Shape Verhalten"](change-shape-behavior-section.md)
+- [Change Shape Behavior Section](change-shape-behavior-section.md)
     
 - [Abschnitt "Character"](character-section.md)
     
@@ -47,7 +47,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Fill Format"](fill-format-section.md)
     
-- [Farbverlauf Abschnitt füllen](fill-gradient-section.md)
+- [Fill Gradient Section](fill-gradient-section.md)
     
 - [Abschnitt "Foreign Image Info"](foreign-image-info-section.md)
     
@@ -55,7 +55,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Glue Info"](glue-info-section.md)
     
-- [Farbverlauf im Eigenschaftenabschnitt](gradient-properties-section.md)
+- [Gradient Properties Section](gradient-properties-section.md)
     
 - [Abschnitt "Group Properties"](group-properties-section.md)
     
@@ -69,7 +69,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Line Format"](line-format-section.md)
     
-- [Abschnitt "Line Farbverlauf"](line-gradient-section.md)
+- [Line Gradient Section](line-gradient-section.md)
     
 - [Abschnitt "Miscellaneous"](miscellaneous-section.md)
     
@@ -83,7 +83,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Protection"](protection-section.md)
     
-- [Schnellformatvorlagen-Abschnitt](quick-style-section.md)
+- [Quick Style Section](quick-style-section.md)
     
 - [Abschnitt "Reviewer"](reviewer-section.md)
     
@@ -107,7 +107,7 @@ ms.locfileid: "19797980"
     
 - [Abschnitt "Text Transform"](text-transform-section.md)
     
-- [Design-Eigenschaften im Abschnitt](theme-properties-section.md)
+- [Theme Properties Section](theme-properties-section.md)
     
 - [Abschnitt "User-defined Cells"](user-defined-cells-section.md)
     

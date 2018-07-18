@@ -25,7 +25,7 @@ Gibt an, ob ein Shape-Text des Shapes Drehung in 3D ignoriert. Gilt nicht für 2
 |TRUE  <br/> |Shape-Text wird nicht mit der Shape-Geometrie gedreht.  <br/> |
 |FALSE  <br/> |Shape-Text wird so gedreht mit der Shape-Geometrie umgewandelt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **KeepTextFlat** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

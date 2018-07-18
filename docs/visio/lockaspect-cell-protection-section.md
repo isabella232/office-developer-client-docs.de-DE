@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797370"
 ---
-# <a name="lockaspect-cell-protection-section"></a>Zelle "LockAspect" (Abschnitt "Protection")
+# <a name="lockaspect-cell-protection-section"></a>LockAspect Cell (Protection Section)
 
 Sperrt das Seitenverhältnis des Shapes, sodass die Größe des Shapes nur proportional geändert werden kann. Die Größe kann nicht in einer einzelnen Dimension geändert werden.
   
@@ -27,13 +27,13 @@ Sperrt das Seitenverhältnis des Shapes, sodass die Größe des Shapes nur propo
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle LockAspect nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LockAspect aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockAspect  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockAspect aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LockAspect aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

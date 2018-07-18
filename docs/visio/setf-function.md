@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797996"
 ---
-# <a name="setf-function"></a>SETF-Funktion
+# <a name="setf-function"></a>SETF Function
 
 Legt die Formel einer Zelle fest. 
   

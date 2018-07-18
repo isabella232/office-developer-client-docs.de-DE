@@ -26,7 +26,7 @@ LUMDIFF (** *color1* **, ** *color2* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _color1_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der ersten Farbe.  <br/> |
-| _color2_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
+| _color1_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der ersten Farbe.  <br/> |
+| _color2_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Farbindex von Microsoft Visio oder der RGB-Wert der zweiten Farbe.  <br/> |
    
 

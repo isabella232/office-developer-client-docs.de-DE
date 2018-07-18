@@ -26,15 +26,15 @@ Bestimmt die Richtung von Liniensprüngen auf horizontalen dynamischen Verbinder
 | 1  <br/> | Nach oben  <br/> |**visLOJumpDirXUp** <br/> |
 | 2  <br/> | Nach unten  <br/> |**visLOJumpDirXDown** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle PageLineJumpDirX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PageLineJumpDirX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PageLineJumpDirX  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageLineJumpDirX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PageLineJumpDirX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797724"
 ---
-# <a name="pow-function"></a>POW-Funktion
+# <a name="pow-function"></a>POW Function
 
 Gibt eine Zahl, die potenziert mit einem Exponenten zurück.
   
@@ -29,7 +29,7 @@ POW (** *Anzahl* **, ** *Exponent* **)
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Anzahl_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Die Zahl, die mit einem Exponenten potenziert werden soll.  <br/> |
-| _Exponent_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Der Exponent.  <br/> |
+| _exponent_ <br/> |Erforderlich  <br/> |**Nummer** <br/> |Der Exponent.  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

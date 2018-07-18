@@ -17,15 +17,19 @@ ms.locfileid: "19797391"
 
 Blöcke format, Änderungen in einem Gruppen-Shape aus, die Teil-Shapes weitergegeben wird, während Benutzer dennoch ausgewählten untergeordneten Shapes direkt zu formatieren. 
   
-Der Wert der Zelle LockFromGroupFormat entspricht der Einstellung für das Kontrollkästchen **von gruppenformatierung** im Dialogfeld **Schutz** . 
+Der Wert der Zelle LockFromGroupFormat entspricht der Einstellung für das Kontrollkästchen Von Gruppenformatierung im Dialogfeld Schutz. 
   
-Auf die Zelle LockFromGroupFormat aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen verwenden: 
+Wenn Sie auf die Zelle LockFromGroupFormat aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
+
+ 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockFromGroupFormat  <br/> |
    
-Wenn Sie auf die Zelle LockFromGroupFormat durch Index aus einem Programm verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie aus einem Programm heraus nach Index auf die Zelle LockFromGroupFormat verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
+
+ 
   
 |||
 |:-----|:-----|

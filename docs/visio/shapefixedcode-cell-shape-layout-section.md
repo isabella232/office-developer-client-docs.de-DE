@@ -16,11 +16,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798009"
 ---
-# <a name="shapefixedcode-cell-shape-layout-section"></a>Zelle "ShapeFixedCode" (Abschnitt "Shape Layout")
+# <a name="shapefixedcode-cell-shape-layout-section"></a>ShapeFixedCode Cell (Shape Layout Section)
 
 Definiert das Platzierungsverhalten für ein platzierbares Shape.
   
-|**Wert**|**Auswahlmodus**|**Automatisierungskonstante**|
+|**Wert**|**Markierungsmodus**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |&amp;H1  <br/> |Verschieben Sie dieses Shape nicht, wenn Shapes mithilfe des Dialogfelds **Layout konfigurieren** angeordnet werden.  <br/> |**visSLOFixedPlacement** <br/> |
 |&amp;H2  <br/> |Dieses Shape nicht verschieben und nicht zulassen, dass verschiebbare Shapes darüber platziert werden.  <br/> |**visSLOFixedPlow** <br/> |
@@ -29,7 +29,7 @@ Definiert das Platzierungsverhalten für ein platzierbares Shape.
 |&amp;H40 (64)  <br/> |Nur die Weiterleitung zu Seiten mit Verbindungspunkten zulassen.  <br/> |**visSLOFixedConnPtsOnly** <br/> |
 |&amp;H80 (128)  <br/> |Keine Objekte an den Rand dieses Shapes kleben. Objekte stattdessen an das Ausrichtungsfeld des Shapes kleben.  <br/> |**visSLOFixedNoFoldToShape** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch festlegen, auf der Registerkarte **Platzierung** im Dialogfeld **Verhalten** (mit einem Shape ausgewählt haben, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** klicken Sie auf **das Verhalten**, und klicken Sie dann auf die Registerkarte **Platzierung** ). 
   
@@ -37,13 +37,13 @@ Sie können eine beliebige Kombination der folgenden Werte für diese Zelle fest
   
 In Versionen vor Visio  2000 wird dieses Verhalten in der Zelle ObjInterakt im Abschnitt Miscellaneous festgelegt. 
   
-Zum Abrufen eines Verweises auf die Zelle ShapeFixedCode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapeFixedCode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapeFixedCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeFixedCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapeFixedCode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

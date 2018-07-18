@@ -16,19 +16,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797555"
 ---
-# <a name="noquickdrag-cell-geometry-section"></a>Zelle "NoQuickDrag" (Abschnitt "Geometry")
+# <a name="noquickdrag-cell-geometry-section"></a>NoQuickDrag Cell (Geometry Section)
 
 Bestimmt, ob ein Shape ausgewählt oder gezogen werden, wenn der Benutzer den vom Abschnitt "Geometrie" definierten ausgefüllten Bereich klickt werden kann.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Zum Abrufen eines Verweises auf die Zelle NoQuickDrag nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie eine Referenz auf die Zelle NoQuickDrag aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes. 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Geometrie *i* . NoQuickDrag, wobei * ich * - < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoQuickDrag aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie eine Referenz auf die Zelle NoQuickDrag aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

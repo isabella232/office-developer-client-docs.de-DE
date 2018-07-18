@@ -18,7 +18,7 @@ ms.locfileid: "19797788"
 
 Bestimmt die Größe des Reflektions relativ zum Shape, als Prozentwert von 0,0 und 100,0 %. Eine Form mit einem Wert von 0 % in der Zelle **ReflectionSize** ist eine Spiegelung nicht mit. ein Wert von 100 % zeigt ein vollständiges Spiegelbild der Form. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ReflectionSize** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

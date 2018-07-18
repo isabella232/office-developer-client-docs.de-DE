@@ -20,7 +20,8 @@ Gibt die Koordinaten eines Punkts auf oder im Abstand zum Pfad zurück.
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -47,6 +48,6 @@ Positive *Offset* -Werte geben Punkten Links der Laufrichtung an.
   
 Negative *Offset* -Werte geben Punkten rechts der Laufrichtung an. 
   
-Ein **Punkt** stellt ein geordnetes Paar geometrischer Koordinaten (*X, y*) als einen single-Wert. 
+Ein **Point** steht für ein geordnetes Paar geometrischer Koordinaten (*x,y*) als einzelner Wert. 
   
 

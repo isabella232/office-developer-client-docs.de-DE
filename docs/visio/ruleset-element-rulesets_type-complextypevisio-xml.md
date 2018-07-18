@@ -56,7 +56,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |**Attribut**|**Typ**|**Erforderlich**|**Beschreibung**|**Mögliche Werte**|
 |:-----|:-----|:-----|:-----|:-----|
 |Beschreibung  <br/> |XSD: String  <br/> |Optional  <br/> |Gibt die Beschreibung, die in der Benutzeroberfläche für die Überprüfungsregel angezeigt wird. Der Standardwert ist eine leere Zeichenfolge.  <br/> |Werte des Typs xsd: String.  <br/> |
-|Aktiviert  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Regeln in der angegebenen Regelsatz überprüft werden, wenn Validierung für das aktuelle Dokument ausgelöst wird. Standardwert ist True.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
+|Aktiviert  <br/> |XSD: Boolean  <br/> |Optional  <br/> |Gibt an, ob die Regeln in der angegebenen Regelsatz überprüft werden, wenn Validierung für das aktuelle Dokument ausgelöst wird. Der Standardwert ist True.  <br/> |Werte des Typs xsd: Boolean.  <br/> |
 |ID  <br/> |XSD:unsignedInt  <br/> |erforderlich  <br/> |Gibt den eindeutigen Bezeichner der der Überprüfungsregel.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |Name  <br/> |XSD: String  <br/> |Optional  <br/> |Gibt den lokalen Namen der der Überprüfungsregel an. Der Standardwert ist NameU-Attributwert.  <br/> |Werte des Typs xsd: String.  <br/> |
 |NameU  <br/> |XSD: String  <br/> |erforderlich  <br/> |Gibt den universellen Namen eines der Überprüfungsregel an.  <br/> |Werte des Typs xsd: String.  <br/> |

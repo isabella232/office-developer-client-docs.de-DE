@@ -33,13 +33,13 @@ Zum Aktivieren oder Deaktivieren des Teilens auf Anwendungsebene, verwenden Sie 
   
 Zum Aktivieren oder Deaktivieren des Teilens auf Shape-Ebene, finden Sie in den Zellen ShapeSplit und ShapeSplittable. 
   
-Wenn Sie einen Verweis auf die Zelle PageShapeSplit nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PageShapeSplit aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageShapeSplit  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageShapeSplit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PageShapeSplit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

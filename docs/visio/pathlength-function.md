@@ -20,7 +20,8 @@ Gibt die Länge des Pfads zurück, der im angegebenen Abschnitt "Geometrie" defi
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2010 
+Hinzugefügte Version: Visio 2010
+ 
   
 ## <a name="syntax"></a>Syntax
 

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797376"
 ---
-# <a name="lockformat-cell-protection-section"></a>Zelle "LockFormat" (Abschnitt "Protection")
+# <a name="lockformat-cell-protection-section"></a>LockFormat Cell (Protection Section)
 
 Sperrt die Formatierung eines Shapes, damit dieses nicht geändert werden kann.
   
@@ -27,13 +27,13 @@ Sperrt die Formatierung eines Shapes, damit dieses nicht geändert werden kann.
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle LockFormat nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LockFormat aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockFormat  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockFormat aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LockFormat aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

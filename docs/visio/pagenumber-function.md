@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797585"
 ---
-# <a name="pagenumber-function"></a>PAGENUMBER-Funktion
+# <a name="pagenumber-function"></a>PAGENUMBER Function
 
 Gibt die Anzahl der Seite, die das Shape enthält. 
   

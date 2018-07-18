@@ -16,13 +16,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797527"
 ---
-# <a name="miscellaneous-section"></a>Abschnitt "Miscellaneous"
+# <a name="miscellaneous-section"></a>Miscellaneous Section
 
 Enthält verschiedene Attribute von Shapes und Gruppen, darunter Auswahlhervorhebung und Sichtbarkeit.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert vieler Zellen in diesem Abschnitt im ShapeSheet-Fenster oder auf der Registerkarte **Verhalten** im Dialogfeld **Verhalten** festlegen (klicken Sie in der Gruppe **Shape-Design** auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) auf **Verhalten** ). im Zeichnungsfenster. Sie können andere Gruppeneigenschaften im Abschnitt Gruppeneigenschaften festlegen. 
+Sie können den Wert vieler dieser Zellen in diesem Abschnitt im ShapeSheet-Fenster oder im Dialogfeld Verhalten auf der Registerkarte Verhalten (klicken Sie auf der Registerkarte Entwickler in der Gruppe Shape-Design auf Verhalten) im Zeichnungsfenster festlegen. Andere Gruppeneigenschaften legen Sie im Abschnitt Group Properties fest. 
   
 In Visio Version 5.0-Produkten enthalten in diesem Abschnitt die Zellen **ObjInterakt** und **ObjVerhalten** . Das Verhalten in der Zelle **ObjInterakt** ist nun den folgenden Zellen im Abschnitt Shape Layout zugeordnet: **ShapeFixedCode**, **ShapePermeableX**, **ShapePermeableY**und **ShapePermeablePlace**. Das Verhalten in der Zelle ObjVerhalten ist nun den Zellen **ConFixedCode** und **ShapeRouteStyle** zugeordnet. 
   

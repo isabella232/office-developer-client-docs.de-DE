@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7883cb55-a7db-10c0-be20-5d3c561e490f
-description: Zeigt Funktionen und Formeln, die über das Dialogfeld Feld in den Text des Shapes eingefügt.
+description: Zeigt Funktionen und Formeln an, die über das Dialogfeld Feld in den Text des Shapes eingefügt werden.
 ms.openlocfilehash: ec01ae3743eaf5345685c7273404bfdb826579ba
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.locfileid: "19797918"
 ---
 # <a name="row-element-field-section-visio-xml"></a>Row-Element (Feldabschnitt) ("Visio XML")
 
-Zeigt Funktionen und Formeln, die über das Dialogfeld Feld in den Text des Shapes eingefügt.
+Zeigt Funktionen und Formeln an, die über das Dialogfeld Feld in den Text des Shapes eingefügt werden.
   
 ## <a name="element-information"></a>Informationen zum Element
 
@@ -42,7 +42,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |Zeigt Funktionen und Formeln, die über das Dialogfeld Feld in den Text des Shapes eingefügt.  <br/> |
+|[Section](section-element-sheet_type-complextypevisio-xml.md) <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |Zeigt Funktionen und Formeln an, die über das Dialogfeld Feld in den Text des Shapes eingefügt werden.  <br/> |
    
 ### <a name="child-elements"></a>Untergeordnete Elemente
 

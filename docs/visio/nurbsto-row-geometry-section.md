@@ -34,6 +34,6 @@ Eine Zeile NURBSTo enthält folgende Zellen.
    
 ## <a name="remarks"></a>Hinweise
 
-NURBS ist eine allgemeine Möglichkeit, eine Kurve mathematisch darstellen. Sie können einen NURBS mit dem Tool **Freihand** erstellen. 
+Ein NURBS ist eine gängige Methode, mit der Sie eine Kurve mathematisch darstellen können. Sie können einen NURBS mit dem Tool **Freihand** erstellen. 
   
 

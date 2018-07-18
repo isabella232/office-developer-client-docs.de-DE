@@ -18,7 +18,7 @@ ms.locfileid: "19797607"
 
 Bestimmt die Perspektive für eine Perspektive Drehung in Grad (0-359.9)
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **Perspektive** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

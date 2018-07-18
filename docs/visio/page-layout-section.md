@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797566"
 ---
-# <a name="page-layout-section"></a>Abschnitt "Page Layout"
+# <a name="page-layout-section"></a>Page Layout Section
 
 Enthält Zellen, die die Zeichenblatteinstellungen für Shapes und Verbinder steuern. Dazu zählen die Abstände zwischen allen Shapes auf dem Zeichenblatt, die Abstände zwischen allen Verbindern auf dem Zeichenblatt und das Routingformat für alle Verbinder auf dem Zeichenblatt.
   

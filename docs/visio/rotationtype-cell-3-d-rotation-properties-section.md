@@ -28,7 +28,7 @@ Bestimmt, ob das Shape eine parallele Drehung, eine Perspektive Drehung oder ein
 |5  <br/> |Die Form ist eine unteren linken oblique Drehung.  <br/> |
 |6  <br/> |Die Form ist eine unten rechts oblique Drehung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **RotationType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

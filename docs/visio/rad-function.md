@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797784"
 ---
-# <a name="rad-function"></a>RAD-Funktion
+# <a name="rad-function"></a>RAD Function
 
 Konvertiert den Wert eines Winkels von Grad in Bogenmaß.
   

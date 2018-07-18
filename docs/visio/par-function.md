@@ -28,9 +28,9 @@ PAR (** *zeigen* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zeigen Sie_ <br/> |Erforderlich  <br/> |**Anzahl** <br/> |Die Koordinaten des Punkts im Koordinatensystem des aktuellen Shapes.  <br/> |
+| _Punkt_ <br/> |Erforderlich  <br/> |**Number, Number** <br/> |Die Koordinaten des Punkts im Koordinatensystem des aktuellen Shapes.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In Microsoft Visio ist ein Punkt einen single-Wert, der verkörpert ein Paar von *X* - und *y* -Koordinaten. Wenn das Shape in einer Gruppe ist, ist die übergeordnete Gruppe. Wenn das Shape nicht in einer Gruppe ist, ist die übergeordnete der Seite. 
   

@@ -26,19 +26,19 @@ Legt fest, ob dieses platzierbare Shape verschoben wird, wenn Sie ein anderes pl
 |1  <br/> |Keine Shapes verschieben.  <br/> |**visSLOPlowNever** <br/> |
 |2  <br/> |Jedes Shape verschieben.  <br/> |**visSLOPlowAlways** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können auch den Wert dieser Zelle für ein bestimmtes Shape auf der Registerkarte **Platzierung** im Dialogfeld **Verhalten** festlegen (klicken Sie mit einem Shape ausgewählt haben, klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**, und klicken Sie dann auf die Registerkarte **Platzierung** ). 
   
 Wenn Sie dieses Verhalten für *sämtliche* Shapes auf dem Zeichenblatt festlegen möchten, verwenden Sie die Zelle PlowCode im Abschnitt Page Layout. 
   
-Wenn Sie einen Verweis auf die Zelle ShapePlowCode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapePlowCode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePlowCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapePlowCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapePlowCode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

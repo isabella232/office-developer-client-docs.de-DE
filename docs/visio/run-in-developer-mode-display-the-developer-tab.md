@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797975"
 ---
-# <a name="run-in-developer-mode-display-the-developer-tab"></a>Im Entwicklermodus ausführen (Anzeigen der Registerkarte "Entwicklertools")
+# <a name="run-in-developer-mode-display-the-developer-tab"></a>Ausführen des Entwicklermodus (Registerkarte „Entwicklertools“ anzeigen)
 
 - Klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Optionen**.
     
 - Klicken Sie im Dialogfeld **Visio-Optionen** klicken Sie auf **Erweitert**, und wählen Sie dann unter **Allgemein** **im Entwicklermodus ausführen**.
     
-Sie können dann ein Objekt auswählen und klicken Sie für einen schnelleren Zugriff auf das ShapeSheet-Fenster auf **ShapeSheet anzeigen** . 
+Danach können Sie ein Objekt auswählen und auf **ShapeSheet anzeigen** klicken, um einen schnelleren Zugriff auf das ShapeSheet-Fenster zu erhalten. 
   
 

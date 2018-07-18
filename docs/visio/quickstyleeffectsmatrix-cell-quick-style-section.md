@@ -18,7 +18,7 @@ ms.locfileid: "19797766"
 
 Bestimmt die Schnellformatvorlage Effekte, die die Form des aktiven Designs, als ganze Zahl von 0 bis 6 erbt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **QuickStyleEffectsMatrix** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

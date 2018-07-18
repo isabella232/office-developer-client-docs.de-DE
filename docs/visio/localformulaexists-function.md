@@ -32,7 +32,7 @@ LOCALFORMULAEXISTS (** *Cellref* **)
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Boolescher Wert
+Boolean
   
 ## <a name="remarks"></a>Bemerkungen
 

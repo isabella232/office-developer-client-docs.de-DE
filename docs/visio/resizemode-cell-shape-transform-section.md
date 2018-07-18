@@ -26,7 +26,7 @@ Zeigt die aktuelle Einstellung für das Größenänderungsverhalten in Bezug auf
 |1  <br/> |Nur neu positionieren.  <br/> |**visXFormResizeSpread** <br/> |
 |2  <br/> |Mit Gruppe skalieren.  <br/> |**visXFormResizeScale** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diesen Wert auch auf der Registerkarte **Verhalten** im Dialogfeld **Verhalten** festlegen (klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md)in der Gruppe **Shape-Design** auf **Verhalten**). Wenn Sie einen Verweis auf die Zelle ResizeMode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
@@ -34,7 +34,7 @@ Sie können diesen Wert auch auf der Registerkarte **Verhalten** im Dialogfeld *
 |:-----|:-----|
 |Zellenname:  <br/> |ResizeMode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ResizeMode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ResizeMode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

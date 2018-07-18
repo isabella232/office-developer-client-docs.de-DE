@@ -30,7 +30,7 @@ Bestimmt, welche Designfarbe an, die der Schatten eines Shapes verwendet wird, a
 |6  <br/> |Die Farbe des Shape-Schattens erbt die Designfarbe Akzent 5 an.  <br/> |
 |7  <br/> |Die Farbe des Shape-Schattens erbt die Designfarbe Akzent 6 an.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **QuickStyleShadowColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

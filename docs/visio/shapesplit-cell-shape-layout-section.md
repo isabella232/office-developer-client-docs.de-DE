@@ -43,7 +43,7 @@ Zum Abrufen eines Verweises auf die Zelle ShapeSplit nach Namen aus einer andere
 |:-----|:-----|
 | Zellenname:  <br/> | ShapeSplit  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeSplit aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Bezug auf die Zelle ShapeSplit aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

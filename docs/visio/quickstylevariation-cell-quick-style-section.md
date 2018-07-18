@@ -26,7 +26,7 @@ Bestimmt, ob die Formeln und die Werte der Text, Linie, innen und Füllung Farbe
 |4  <br/> |Linienfarbe eines Shapes, zu ändern, wenn erforderlich ist, um anhand eines Designs gegebene Hintergrundfarbe sichtbar bleiben.  <br/> |
 |8  <br/> |Füllfarbe einer Form zu ändern, wenn erforderlich ist, um anhand eines Designs gegebene Hintergrundfarbe sichtbar bleiben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die Zelle QuickStyleVariation, um Sichtbarkeit in Text oder Zeilen zu gewährleisten, wenn diese außerhalb alle sichtbaren Shape-Geometrie (beispielsweise in ein Shape, dessen TextBox-Objekt den unteren Rand der Form, wie in Netzwerkdiagramm ist) werden. Die Zelle Standardwert ist 0, was bedeutet, dass ihr Verhalten inaktiv ist. Ein anderer Wert löst die Zelle Verhalten.
   

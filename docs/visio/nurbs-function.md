@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19797588"
 ---
-# <a name="nurbs-function"></a>NURBS-Funktion
+# <a name="nurbs-function"></a>NURBS Function
 
 Gibt ein nonuniform rationales B-Spline (NURBS). Diese Funktion wird in der Zelle E NURBS verwendet.
   
@@ -29,9 +29,9 @@ NURBS (** *KnotZuletst* **, ** *Grad* **, ** *xTyp gleich* **, ** *gleich* **, *
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _KnotZuletst_ <br/> |Erforderlich  <br/> |**string** <br/> | Der letzte Knoten.  <br/> |
-| _Grad_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Der Gradwert des Splines.  <br/> |
-| _xTyp gleich_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Gibt an, wie die _X_ -Eingabedaten interpretiert werden. Wenn _xTyp gleich_ 0 ist, werden alle _x_ eingegebenen Daten als Prozentsatz der Breite interpretiert. Wenn _xTyp gleich_ 1 ist, werden alle _X_ Eingabedaten als lokale Koordinaten interpretiert.  <br/> |
-| _Gleich_ <br/> |Erforderlich  <br/> |**Numerische** <br/> |Gibt an, wie die _y_ -Eingabedaten interpretiert werden. Wenn _gleich_ 0 ist, werden alle eingegebenen _y_ -Daten als Prozentsatz der Höhe interpretiert. Wenn _gleich_ 1 ist, werden alle _y_ eingegebenen Daten als lokale Koordinaten interpretiert.  <br/> |
+| _Grad_ <br/> |Erforderlich  <br/> |**Numeric** <br/> |Der Gradwert des Splines.  <br/> |
+| _xTyp gleich_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, wie die _X_ -Eingabedaten interpretiert werden. Wenn _xTyp gleich_ 0 ist, werden alle _x_ eingegebenen Daten als Prozentsatz der Breite interpretiert. Wenn _xTyp gleich_ 1 ist, werden alle _X_ Eingabedaten als lokale Koordinaten interpretiert.  <br/> |
+| _Gleich_ <br/> |Erforderlich  <br/> |**Numerisch** <br/> |Gibt an, wie die _y_ -Eingabedaten interpretiert werden. Wenn _gleich_ 0 ist, werden alle eingegebenen _y_ -Daten als Prozentsatz der Höhe interpretiert. Wenn _gleich_ 1 ist, werden alle _y_ eingegebenen Daten als lokale Koordinaten interpretiert.  <br/> |
 | _x1_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine x-Koordinate.  <br/> |
 | _Y1_ <br/> |Erforderlich  <br/> |**String** <br/> |Eine y-Koordinate.  <br/> |
 | _Knot1_ <br/> |Erforderlich  <br/> |**String** <br/> |Ein Knoten auf dem B-Spline.  <br/> |

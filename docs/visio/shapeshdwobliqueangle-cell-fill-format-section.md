@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798037"
 ---
-# <a name="shapeshdwobliqueangle-cell-fill-format-section"></a>Zelle "ShapeShdwObliqueAngle" (Abschnitt "Fill Format")
+# <a name="shapeshdwobliqueangle-cell-fill-format-section"></a>ShapeShdwObliqueAngle Cell (Fill Format Section)
 
 Gibt den Winkel der Schrägrichtung des Shape-Schattens an.
   
@@ -24,15 +24,15 @@ Gibt den Winkel der Schrägrichtung des Shape-Schattens an.
 
 Der Wert Null (0) in dieser Zelle zeigt an, dass die Winkelrichtung genau nach oben verläuft, sie wird im Uhrzeigersinn gemessen.
   
-Dieser Wert entspricht dem Wert der Einstellung **Richtung** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** klicken Sie auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
+Dieser Wert entspricht dem Wert der Einstellung **Richtung** im Dialogfeld **Schatten** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Shape** auf **Schatten**, und klicken Sie dann auf **Schattenoptionen**).
   
-Wenn Sie einen Verweis auf die Zelle ShapeShdwObliqueAngle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapeShdwObliqueAngle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ShapeShdwObliqueAngle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeShdwObliqueAngle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapeShdwObliqueAngle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797565"
 ---
-# <a name="openfile-function"></a>OPENFILE-Funktion
+# <a name="openfile-function"></a>OPENFILE Function
 
 Öffnet ein Microsoft Visio-Dokument, wenn es noch nicht geöffnet ist, und das Dokumentfenster aktiviert.
   

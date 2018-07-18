@@ -28,7 +28,7 @@ Bestimmt die Richtung des Farbverlaufs Linie. Ein Farbverlauf kann linear, radia
 |8 bis 12  <br/> |Rechteckige Verläufe. Der Farbverlauf erweitert als Richtungspfeile Linie vom Ursprung mit einem rechteckigen einblenden.  <br/> |
 |13  <br/> |Pfadfarbverlauf.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **LineGradientDir** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

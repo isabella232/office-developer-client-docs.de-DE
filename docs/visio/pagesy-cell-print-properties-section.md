@@ -24,13 +24,13 @@ Bestimmt die Anzahl der Druckseiten, auf denen das Zeichenblatt vertikal dargest
 
 Dieser Wert wird nur dann verwendet, wenn die Zelle OnPage auf WAHR festgelegt ist. 
   
-Wenn Sie einen Verweis auf die Zelle PagesY nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PagesY aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PagesY  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PagesY aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PagesY aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

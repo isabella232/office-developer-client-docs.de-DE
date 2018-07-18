@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798011"
 ---
-# <a name="setatrefexpr-function"></a>SETATREFEXPR-Funktion
+# <a name="setatrefexpr-function"></a>SETATREFEXPR Function
 
 Speichert einen Wert, der durch eine Aktion in der Benutzeroberfläche (UI) oder Automatisierung festgelegt ist.
   
@@ -56,6 +56,6 @@ PinY = INT (SETATREFEXPR /User.GridY () +.5)\*User.GridY
   
 ## <a name="example-3"></a>Beispiel 3
 
-Ein Beispiel zur Verwendung der SETATREFEXPR-Funktion mit der SETATREF-Funktion finden Sie unter der [SETATREF](setatref-function.md) -Funktion. 
+Ein Beispiel zur Verwendung der SETATREFEXPR-Funktion zusammen mit der SETATREF-Funktion finden Sie unter der [SETATREF ](setatref-function.md)-Funktion. 
   
 

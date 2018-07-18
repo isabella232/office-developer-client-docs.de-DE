@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797184"
 ---
-# <a name="id-function"></a>ID-Funktion
+# <a name="id-function"></a>ID Function
 
 Gibt die interne ID eines Shapes als Zahl zurück.
   

@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797624"
 ---
-# <a name="pagescale-cell-page-properties-section"></a>Zelle "PageScale" (Abschnitt "Page Properties")
+# <a name="pagescale-cell-page-properties-section"></a>PageScale Cell (Page Properties Section)
 
 Bestimmt den Wert der Seiteneinheit im aktuellen Zeichnungsmaßstab. Der Zeichnungsmaßstab für die Seite ist das Verhältnis der in der Zelle PageScale angezeigten Seiteneinheit zur in der Zelle DrawingScale angezeigten Zeichnungseinheit.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert der Zelle PageScale auch auf der Registerkarte **Zeichnungsmaßstab** im Dialogfeld **Seite einrichten** festlegen (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** ). Der Wert der Zelle ist die erste der beiden Zahlen im Feld **Vordefinierter Maßstab** oder **Benutzerdefinierter Maßstab** , je nach dem Zeichnungsmaßstab unter **Zeichnungsmaßstab**ausgewählt. Angenommen, wenn Sie einen Architekturmaßstab für Ihre Zeichnung auswählen, ist der Zeichnungsmaßstab für die Seite 3/32 "= 1'0". Der Wert in der Zelle PageScale lautet 0,0938 In. (oder 3/32") und der Wert in der Zelle DrawingScale 1 ft.
+Sie können den Wert der Zelle PageScale auch im Dialogfeld Seite einrichten auf der Registerkarte Zeichnungsmaßstab festlegen (klicken Sie dazu auf der Registerkarte Entwurf auf den Pfeil neben Seite einrichten). Der Wert der Zelle ist die erste der beiden Zahlen im Feld Vordefinierter Maßstab oder Benutzerdefinierter Maßstab, je nach dem Zeichnungsmaßstab, der unter Zeichnungsmaßstab ausgewählt wurde. Wenn Sie beispielsweise einen Architekturmaßstab für Ihre Zeichnung auswählen, ist der Zeichnungsmaßstab für die Seite 3/32" = 1'0". Der Wert in der Zelle PageScale lautet 0,0938 in. (oder 3/32") und der Wert in der Zelle DrawingScale 1 ft.
   
-Wenn Sie einen Verweis auf die Zelle PageScale nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PageScale aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageScale  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageScale aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PageScale aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

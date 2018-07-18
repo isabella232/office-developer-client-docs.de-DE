@@ -19,15 +19,19 @@ ms.locfileid: "19797398"
 
 Verhindert, dass Designfarben auf das Shape angewendet werden. 
   
-Der Wert der Zelle LockThemeColors entspricht der Einstellung für das Kontrollkästchen **von Designfarben** im Dialogfeld **Schutz** . 
+Der Wert der Zelle LockThemeColors entspricht der Einstellung für das Kontrollkästchen Von Designfarben im Dialogfeld Schutz. 
   
-Auf die Zelle LockThemeColors aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen verwenden: 
+Wenn Sie auf die Zelle LockThemeColors aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
+
+ 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockThemeColors  <br/> |
    
-Wenn Sie auf die Zelle LockThemeColors durch Index aus einem Programm verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie aus einem Programm heraus nach Index auf die Zelle LockThemeColors verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
+
+ 
   
 |||
 |:-----|:-----|

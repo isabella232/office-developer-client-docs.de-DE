@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797198"
 ---
-# <a name="index-function"></a>INDEX-Funktion
+# <a name="index-function"></a>INDEX Function
 
 Gibt die Teilzeichenfolge am Speicherort der nullbasierte _Index_ in der durch _Trennzeichen_getrennten _Liste_ zurück. Oder, wenn der Index außerhalb des gültigen Bereichs, gibt eine leere Zeichenfolge oder das optionale als Argument für *Errorvalue* bereitgestellt. 
   

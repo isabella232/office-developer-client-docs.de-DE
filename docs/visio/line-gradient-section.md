@@ -18,7 +18,7 @@ ms.locfileid: "19797304"
 
 Zeigt die RGB-Werte für die Zeile Farbverlauf auf die Form angewendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jede Zeile [Farbverlauf beenden Zeile (Zeile Farbverlauf Abschnitt)](gradient-stop-row-line-gradient-section.md) im Abschnitt stellt einen Farbverlaufstopp in der Zeile. In diesem Abschnitt kann leer sein. 
   

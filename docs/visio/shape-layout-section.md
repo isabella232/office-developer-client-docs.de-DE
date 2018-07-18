@@ -22,7 +22,7 @@ Enthält Zellen zum Steuern der Einstellungen für die Shape-Platzierung und das
   
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die Werte für die Shape-spezifischen Zellen in diesem Abschnitt auch mithilfe der Registerkarte **Platzierung** im Dialogfeld **Verhalten** festlegen (klicken Sie auf der Registerkarte [Entwicklertools](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**). Sie können die Werte für die Verbinder-spezifischen Zellen in diesem Abschnitt verwenden die Registerkarte **Verbinder** im Dialogfeld **Verhalten** festlegen. (Die Registerkarte **Verbinder** finden Sie im Zeichnungsfenster den Verbinder auswählen und dann anzeigen im Dialogfeld **Verhalten** .) 
+Sie können die Werte für die Shape-spezifischen Zellen in diesem Abschnitt auch im Dialogfeld **Verhalten** auf der Registerkarte **Platzierung** festlegen (klicken Sie dazu auf der Registerkarte [Entwickler](run-in-developer-mode-display-the-developer-tab.md) in der Gruppe **Shape-Design** auf **Verhalten**). Sie können die Werte für die Verbinder-spezifischen Zellen in diesem Abschnitt auch im Dialogfeld **Verhalten** auf der Registerkarte **Verbinder** festlegen. (Sie zeigen die Registerkarte **Verbinder** an, indem Sie im Zeichnungsfenster den Verbinder markieren und anschließend das Dialogfeld **Verhalten** öffnen.) 
   
 Werte können im Abschnitt **Shape Layout** Sie die um Standardwerte aus dem Abschnitt **Page Layout** zu überschreiben. 
   

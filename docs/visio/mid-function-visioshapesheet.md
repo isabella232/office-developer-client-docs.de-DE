@@ -34,9 +34,9 @@ MID (** *Text* **, ** *Erstes_Zeichen* **, ** *Num_chars* **)
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn *start_num* 
   

@@ -27,13 +27,13 @@ Aktiviert bzw. deaktiviert die Anzeige der Auswahlpunkte für das ausgewählte S
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle NoObjHandles nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle NoObjHandles aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | NoObjHandles  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle NoObjHandles aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle NoObjHandles aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

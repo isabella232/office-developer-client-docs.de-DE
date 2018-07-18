@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797529"
 ---
-# <a name="move-around-a-shapesheet-window"></a>Bewegen im ShapeSheet-Fenster
+# <a name="move-around-a-shapesheet-window"></a>Navigieren in einem ShapeSheet-Fenster
 
 Wenn Sie sich in einem ShapeSheet-Fenster von Zelle zu Zelle bewegen möchten, verwenden Sie die Pfeiltasten und die TABULATORTASTE. Klicken Sie in eine Zelle, um diese zu aktivieren, oder führen Sie einen Bildlauf durch die ShapeSheet-Zellen aus, ohne die aktive Zelle zu ändern.
   

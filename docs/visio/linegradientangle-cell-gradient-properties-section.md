@@ -18,7 +18,7 @@ ms.locfileid: "19797314"
 
 Den Winkel des Farbverlaufs für ein linearer Farbverlauf, im Bereich von 0 bis 359.9 Grad Zeile bestimmt.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

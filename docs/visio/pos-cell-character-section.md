@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797714"
 ---
-# <a name="pos-cell-character-section"></a>Zelle "Pos" (Abschnitt "Character")
+# <a name="pos-cell-character-section"></a>Pos Cell (Character Section)
 
 Bestimmt die Position des Shape-Texts relativ zur Grundlinie.
   
@@ -26,15 +26,15 @@ Bestimmt die Position des Shape-Texts relativ zur Grundlinie.
 | 1  <br/> | Hochgestellt  <br/> |**visPosSuper** <br/> |
 | 2  <br/> | Tiefgestellt  <br/> |**visPosSub** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle Pos nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle Pos aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | Zeichen.POS [ *i* ] wobei *i* = < 1 >, 2, 3...  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle Pos aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle Pos aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

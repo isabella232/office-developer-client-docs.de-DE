@@ -16,21 +16,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797197"
 ---
-# <a name="imgheight-cell-foreign-image-info-section"></a>Zelle "ImgHeight" (Abschnitt "Foreign Image Info")
+# <a name="imgheight-cell-foreign-image-info-section"></a>ImgHeight Cell (Foreign Image Info Section)
 
 Definiert die Höhe des Bilds des Objekts innerhalb seines Rahmens. Die Standardformel lautet:
   
 = Höhe \* 1
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Verweis auf die Zelle ImgHeight nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ImgHeight aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | ImgHeight  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ImgHeight aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ImgHeight aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -35,7 +35,7 @@ Zum Aktivieren oder Deaktivieren des Teilens auf Anwendungsebene, verwenden Sie 
   
 Zum Aktivieren oder Deaktivieren des Teilens auf einem Zeichenblatt finden die Informationen zur Zelle [PageShapeSplit](pageshapesplit-cell-page-layout-section.md) . 
   
-Wenn ein Shape teilbare 1D-Shapes können, lesen Sie die Zelle [ShapeSplit](shapesplit-cell-shape-layout-section.md) . 
+Wenn Sie ein Shape so konfigurieren möchten, dass es teilbare 1D-Shapes teilt, lesen Sie die Informationen zur Zelle [ShapeSplit](shapesplit-cell-shape-layout-section.md). 
   
 Zum Abrufen eines Verweises auf die Zelle ShapeSplittable nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
   
@@ -43,7 +43,7 @@ Zum Abrufen eines Verweises auf die Zelle ShapeSplittable nach Namen aus einer a
 |:-----|:-----|
 | Zellenname:  <br/> | ShapeSplittable  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapeSplittable aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Bezug auf die Zelle ShapeSplittable aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

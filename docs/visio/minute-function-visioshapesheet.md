@@ -34,9 +34,9 @@ MINUTE (" *Datetime* " |  *Ausdruck*  [, *Lcid* ])
    
 ### <a name="return-value"></a>R�ckgabewert
 
-Integer
+Ganze Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Datumskomponente in _Datetime_ und _Expression_ wird verworfen. 
   

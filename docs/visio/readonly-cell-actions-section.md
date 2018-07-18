@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797768"
 ---
-# <a name="readonly-cell-actions-section"></a>Zelle "ReadOnly" (Abschnitt "Actions")
+# <a name="readonly-cell-actions-section"></a>ReadOnly Cell (Actions Section)
 
 Steuert, ob die Aktion in einem Aktionstag- oder Kontextmenü schreibgeschützt ist. 
   
@@ -32,13 +32,13 @@ Steuert, ob die Aktion in einem Aktionstag- oder Kontextmenü schreibgeschützt 
 
 Wenn eine Aktion schreibgeschützt ist, wird auf das Aktionsmenü Aktionstag- oder Kontextmenü angezeigt, aber nicht ausgewählt werden. Es ist nicht abgeblendet, aber vielmehr auf einem farbigen Hintergrund, wie eine Beschriftung angezeigt wird. Damit das Menüelement abgeblendet angezeigt wird, verwenden Sie die Zelle Disabled aus. 
   
-Zum Abrufen eines Verweises auf die Zelle ReadOnly nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ReadOnly aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |Aktionen. *Name* . ReadOnlywhere Aktionen.  *Name* ist der Name der Zeile Actions  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ReadOnly aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ReadOnly aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

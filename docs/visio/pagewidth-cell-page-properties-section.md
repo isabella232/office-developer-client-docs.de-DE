@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797602"
 ---
-# <a name="pagewidth-cell-page-properties-section"></a>Zelle "PageWidth" (Abschnitt "Page Properties")
+# <a name="pagewidth-cell-page-properties-section"></a>PageWidth Cell (Page Properties Section)
 
 Legt die Breite der gedruckten Seite in Zeichnungseinheiten fest.
   
@@ -24,13 +24,13 @@ Legt die Breite der gedruckten Seite in Zeichnungseinheiten fest.
 
 Sie können auch die Breite der Seite auf der Registerkarte **Zeichenbl** im Dialogfeld **Seite einrichten** festlegen (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** ) oder die Seite mit der Maus manuell ändern. Ziehen Sie hierzu den Rand der Seite halten Sie die STRG-Taste. 
   
-Wenn Sie einen Verweis auf die Zelle PageWidth nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PageWidth aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PageWidth  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PageWidth aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PageWidth aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

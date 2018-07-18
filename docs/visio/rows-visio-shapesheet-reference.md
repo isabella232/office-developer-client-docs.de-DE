@@ -29,9 +29,9 @@ ms.locfileid: "19797921"
     
 - [Zeile "EllipticalArcTo" (Abschnitt "Geometry")](ellipticalarcto-row-geometry-section.md)
     
-- [Zeile mit Farbverlauf Stop (Abschnitt "Fill Farbverlauf")](gradient-stop-row-fill-gradient-section.md)
+- [Gradient Stop Row (Fill Gradient Section)](gradient-stop-row-fill-gradient-section.md)
     
-- [Zeile mit Farbverlauf Stop (Abschnitt "Line Farbverlauf")](gradient-stop-row-line-gradient-section.md)
+- [Gradient Stop Row (Line Gradient Section)](gradient-stop-row-line-gradient-section.md)
     
 - [Zeile "Hyperlink" (Abschnitt "Hyperlinks")](hyperlink-row-hyperlinks-section.md)
     
@@ -45,15 +45,15 @@ ms.locfileid: "19797921"
     
 - [Zeile "PolylineTo" (Abschnitt "Geometry")](polylineto-row-geometry-section.md)
     
-- [RelCubBezTo Zeile (Abschnitt "Geometry")](relcubbezto-row-geometry-section.md)
+- [RelCubBezTo Row (Geometry Section)](relcubbezto-row-geometry-section.md)
     
-- [RelEllipticalArcTo Zeile (Abschnitt "Geometry")](relellipticalarcto-row-geometry-section.md)
+- [RelEllipticalArcTo Row (Geometry Section)](relellipticalarcto-row-geometry-section.md)
     
-- [RelLineTo Zeile (Abschnitt "Geometry")](rellineto-row-geometry-section.md)
+- [RelLineTo Row (Geometry Section)](rellineto-row-geometry-section.md)
     
-- [RelMoveTo Zeile (Abschnitt "Geometry")](relmoveto-row-geometry-section.md)
+- [RelMoveTo Row (Geometry Section)](relmoveto-row-geometry-section.md)
     
-- [RelQuadBezTo Zeile (Abschnitt "Geometry")](relquadbezto-row-geometry-section.md)
+- [RelQuadBezTo Row (Geometry Section)](relquadbezto-row-geometry-section.md)
     
 - [Zeile "Shape Data" (Abschnitt "Shape Data")](shape-data-row-shape-data-section.md)
     

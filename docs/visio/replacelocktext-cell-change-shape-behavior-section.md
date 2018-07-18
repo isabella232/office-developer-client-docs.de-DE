@@ -33,7 +33,7 @@ Wenn auf TRUE (1), die Werte des Master-Shapes die Werte der folgenden auf die z
     
 - Zellen im [Abschnitt "Tabs"](tabs-section.md)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ReplaceLockText** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

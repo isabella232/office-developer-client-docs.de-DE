@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797895"
 ---
-# <a name="routestyle-cell-page-layout-section"></a>Zelle "RouteStyle" (Abschnitt "Page Layout")
+# <a name="routestyle-cell-page-layout-section"></a>RouteStyle Cell (Page Layout Section)
 
 Legt das Routingformat und die Richtung für sämtliche Verbinder auf dem Zeichenblatt fest, die kein lokales Routingformat haben.
   
@@ -46,19 +46,19 @@ Legt das Routingformat und die Richtung für sämtliche Verbinder auf dem Zeiche
 |21  <br/> |Einfach horizontal-vertikal  <br/> |Keine  <br/> |**visLORouteSimpleHV** <br/> |
 |22  <br/> |Einfach vertikal-horizontal  <br/> |Keine  <br/> |**visLORouteSimpleVH** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können den Wert dieser Zelle auch festlegen, auf der Registerkarte **Layout und Routing** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** klicken Sie auf den Pfeil neben **Seite einrichten** , klicken Sie auf **Layout und Routing**und klicken Sie dann auf **Abstand** ). 
   
 Sie können ein lokales Routingformat für einen Verbinder in der Zelle ShapeRouteStyle im Abschnitt Shape Layout festlegen. 
   
-Wenn Sie einen Verweis auf die Zelle RouteStyle nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle RouteStyle aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |RouteStyle  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle RouteStyle aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle RouteStyle aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

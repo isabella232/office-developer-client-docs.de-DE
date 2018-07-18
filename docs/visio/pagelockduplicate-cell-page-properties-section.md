@@ -23,7 +23,7 @@ Bestimmt, ob die Seite kann, wie ein boolescher Wert dupliziert werden.
 |TRUE  <br/> |**Doppelte** in das Kontextmenü der Seite und die **Page.Duplicate** Automation-Methode sind beide deaktiviert für die Seite.  <br/> |
 |FALSE  <br/> |Die Seite kann dupliziert werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **PageLockDuplicate** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19797403"
 ---
-# <a name="lockselect-cell-protection-section"></a>Zelle "LockSelect" (Abschnitt "Protection")
+# <a name="lockselect-cell-protection-section"></a>LockSelect Cell (Protection Section)
 
 Verhindert, dass ein Shape ausgewählt werden kann.
   
@@ -27,15 +27,15 @@ Verhindert, dass ein Shape ausgewählt werden kann.
    
 ## <a name="remarks"></a>Hinweise
 
-In Damit LockSelect wirksam wird muss das Kontrollkästchen **Shapes** im Dialogfeld **Dokument schützen** aktiviert werden. 
+Damit LockSelect wirksam wird, muss das Kontrollkästchen Shapes im Dialogfeld Dokument schützen aktiviert werden. 
   
-Wenn Sie einen Verweis auf die Zelle LockSelect nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LockSelect aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | LockSelect  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LockSelect aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LockSelect aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

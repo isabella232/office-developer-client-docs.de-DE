@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797707"
 ---
-# <a name="previewquality-cell-document-properties-section"></a>Zelle "PreviewQuality" (Abschnitt "Document Properties")
+# <a name="previewquality-cell-document-properties-section"></a>PreviewQuality Cell (Document Properties Section)
 
 Bestimmt, ob die Zeichnungsvorschau Entwurfsqualität hat oder detailgetreu sein soll.
   
-|**Wert**|**Vorschauqualität**|**Automatisierungskonstante**|
+|**Wert**|**PreviewQuality**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 | 0  <br/> | Entwurf  <br/> |**visDocPreviewQualityDraft** <br/> |
 | 1  <br/> | Detailliert  <br/> |**visDocPreviewQualityDetailed** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können diesen Wert auch auf der Registerkarte **Zusammenfassung** im Dialogfeld **Eigenschaften** festlegen (klicken Sie auf die **Office** -Schaltfläche, klicken Sie auf der Registerkarte **Info** , klicken Sie auf **Dokumenteigenschaften**, und klicken Sie dann auf **Erweiterte Eigenschaften**).
   
-Wenn Sie einen Verweis auf die Zelle PreviewQuality nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PreviewQuality aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | PreviewQuality  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PreviewQuality aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PreviewQuality aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

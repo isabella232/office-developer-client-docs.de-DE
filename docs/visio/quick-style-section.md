@@ -18,7 +18,7 @@ ms.locfileid: "19797759"
 
 Zeigt die aktuellen Schnellformatvorlagen Formatieren von Werten auf die Form, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Stil, Schattenfarbe, Effekte, Schriftart und Formatvorlagentyp angewendet. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können Schnellformatvorlagen auswählen das Shape und anschließend einen neuen Schnellformatvorlagen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Formenarten** klicken Sie auf **Weitere**, und wählen Sie dann eine andere Schnellformatvorlagen aus dem Katalog).
   

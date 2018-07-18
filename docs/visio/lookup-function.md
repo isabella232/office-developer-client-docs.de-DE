@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797423"
 ---
-# <a name="lookup-function"></a>LOOKUP-Funktion
+# <a name="lookup-function"></a>LOOKUP Function
 
 Gibt einen nullbasierten Index, der gibt die Position der Teilzeichenfolge _Schlüssel_ in einer _Liste_oder gibt-1 zurück, wenn die Zielzeichenfolge das _Trennzeichen_enthält.
   

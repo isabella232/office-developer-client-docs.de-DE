@@ -18,7 +18,7 @@ ms.locfileid: "19797890"
 
 Bestimmt den Winkel der Drehung entlang der z-Achse in Grad (0,0 - 359.9).
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **RotationZAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -1,5 +1,5 @@
 ---
-title: Lineal &amp; Rasterabschnitt
+title: Lineal &amp; Raster-Abschnitt
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797941"
 ---
-# <a name="ruler-amp-grid-section"></a>Lineal &amp; Rasterabschnitt
+# <a name="ruler-amp-grid-section"></a>Lineal &amp; Raster-Abschnitt
 
 Zeigt die aktuellen Einstellungen für das Lineal und die Gitter eines Zeichenblatts an.
   

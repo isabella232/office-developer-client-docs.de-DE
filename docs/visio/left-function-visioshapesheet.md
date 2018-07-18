@@ -29,13 +29,13 @@ Links (** *Text* **, [, ** *Num_chars_opt* **])
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _text_ <br/> |Erforderlich  <br/> |**String** <br/> |Die Zeichenfolge mit den zu extrahierenden Zeichen.  <br/> |
-| _num_chars_opt_ <br/> |Optional  <br/> |**Numerische** <br/> |Die Anzahl der Zeichen, die extrahiert werden sollen.  <br/> |
+| _num_chars_opt_ <br/> |Optional  <br/> |**Numeric** <br/> |Die Anzahl der Zeichen, die extrahiert werden sollen.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 
-String
+Zeichenfolge
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert von _Num_chars_opt_ muss größer als oder gleich 0 (null). 
   

@@ -23,7 +23,7 @@ Gibt an, ob für diese Seite die Schaltfläche **Form ersetzen** deaktiviert wer
 |TRUE  <br/> |Die **Form ändern** -Schaltfläche ist nicht verfügbar, wenn diese Seite aktiv ist.  <br/> |
 |FALSE  <br/> |Auf dieser Seite wird nicht die Schaltfläche **Form ändern** deaktiviert. Die Schaltfläche kann weiterhin ausgeführt, wenn abgeblendet werden: die **DocLockReplace** auf die **DocumentSheet** auf **TRUE**; festgelegt ist die Zelle **LockReplace** für das ausgewählte Shape wird auf **TRUE**festgelegt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **PageLockReplace** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

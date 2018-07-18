@@ -22,6 +22,6 @@ Zeigt alle Layer, die für das Zeichenblatt definiert sind, sowie die eingericht
   
 ## <a name="remarks"></a>Bemerkungen
 
-In diesem Abschnitt wird ein Page-Eigenschaft, die nur im ShapeSheet-Fenster für eine Seite angezeigt werden kann. Die Zellen entsprechen den Optionen im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** , klicken Sie auf **Ebenen**, und klicken Sie dann auf **Layereigenschaften**).
+Dieser Abschnitt ist eine Zeichenblatteigenschaft, die nur im ShapeSheet-Fenster eines Zeichenblatts angezeigt werden kann. Die Zellen entsprechen den Optionen im Dialogfeld **Layereigenschaften** (klicken Sie auf der Registerkarte **Start** in der Gruppe **Bearbeiten** auf **Layer**, und klicken Sie dann auf **Layereigenschaften**).
   
 

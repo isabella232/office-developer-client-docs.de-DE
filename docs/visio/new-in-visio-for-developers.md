@@ -39,15 +39,15 @@ Das neue Dateiformat enthält die folgenden Dateitypen (nach Erweiterung):
   
 - .vsdx (Visio-Zeichnung)
     
-- .vsdm (Visio-Makro aktivierte Zeichnung)
+- .vsdm (per Visio-Makro aktivierte Zeichnung)
     
 - .vssx (Visio-Schablone)
     
-- .vssm (Visio-Makro aktivierte Schablone)
+- .vssm (per Visio-Makro aktivierte Schablone)
     
 - .vstx (Visio-Vorlage)
     
-- .vstm (Visio-Vorlage mit Makros)
+- .vstm (per Visio-Makro aktivierte Vorlage)
     
 Vorhandene Unterstützung für das Lesen und Schreiben in die Datei Format-Paket (beispielsweise [System.IO.Packaging](https://msdn.microsoft.com/library/System.IO.Packaging.aspx) ) und zum Analysieren von XML ( [System.Xml.Linq](https://msdn.microsoft.com/library/System.Xml.Linq.aspx) ) verwenden, können Sie programmgesteuert mit den neuen Dateiformaten arbeiten. 
   
@@ -60,7 +60,7 @@ Mit Visio Services können Visio-Webzeichnungen im Format VDW weiterhin im Brows
 
 Designs wurden in Visio 2013 unter Verwendung der vielfältigere Effekte und Formatvorlagen, einschließlich der Integration der Form künstlerische Effekte umgestaltet. Benutzer können jetzt durch Anwenden eines Designs auf eine übergreifende Formatvorlage entscheiden, das Diagramm mit Designvarianten personalisieren und markieren die einzelnen Shapes mit Schnellformatvorlagen-Satz. ShapeSheet-Entwickler können diese Features mit neuen Funktionen und Zellen im ShapeSheet nutzen.
   
-Sie können auch auf der [Seite](http://msdn.microsoft.com/library/7a7f37ab-b448-eb70-b4f1-c185dfbd511e%28Office.15%29.aspx), [Form](http://msdn.microsoft.com/library/da7a8872-4ebb-a607-e0ed-eebf68ff5630%28Office.15%29.aspx)und [Auswahl](http://msdn.microsoft.com/library/e5734140-6dbe-7de8-9695-1a22fb4ac628%28Office.15%29.aspx) Objektebene Designs bearbeiten. Neue APIs für das Arbeiten mit Designs enthalten [Page.SetTheme](http://msdn.microsoft.com/library/5a186f58-9a7a-bd8a-826b-85da75a4d59f%28Office.15%29.aspx) -Methode, [Page.SetThemeVariant](http://msdn.microsoft.com/library/8393a95f-83ca-0efa-d987-ae498bfe5e9d%28Office.15%29.aspx) -Methode, [Shape.SetQuickStyle](http://msdn.microsoft.com/library/aebe80cb-fae9-0be7-e903-882f6eb58b63%28Office.15%29.aspx) -Methode und die [Selection.SetQuickStyle](http://msdn.microsoft.com/library/39b810b5-0738-daed-0103-8a2df07559c6%28Office.15%29.aspx) -Methode. 
+Sie können Designs auch auf den Objektebenen [Seite](http://msdn.microsoft.com/library/7a7f37ab-b448-eb70-b4f1-c185dfbd511e%28Office.15%29.aspx), [Shape](http://msdn.microsoft.com/library/da7a8872-4ebb-a607-e0ed-eebf68ff5630%28Office.15%29.aspx) und [Auswahl](http://msdn.microsoft.com/library/e5734140-6dbe-7de8-9695-1a22fb4ac628%28Office.15%29.aspx) bearbeiten. Neue APIs für das Arbeiten mit Designs umfassen z. B. die [Page.SetTheme](http://msdn.microsoft.com/library/5a186f58-9a7a-bd8a-826b-85da75a4d59f%28Office.15%29.aspx)-Methode, die [Page.SetThemeVariant](http://msdn.microsoft.com/library/8393a95f-83ca-0efa-d987-ae498bfe5e9d%28Office.15%29.aspx)-Methode, die [Shape.SetQuickStyle](http://msdn.microsoft.com/library/aebe80cb-fae9-0be7-e903-882f6eb58b63%28Office.15%29.aspx)-Methode und die [Selection.SetQuickStyle](http://msdn.microsoft.com/library/39b810b5-0738-daed-0103-8a2df07559c6%28Office.15%29.aspx)-Methode. 
   
 Eine ausführliche Liste der neuen APIs in Visio 2013 finden Sie unter in diesem Artikel im Abschnitt [Änderungen beim Objektmodell in Visio](#vis15_WhatsNew_NewOM) . Weitere Informationen zu den neuen ShapeSheet-Zellen in Visio 2013 finden Sie im Artikel [What's new for Visio ShapeSheet-Entwickler](what-s-new-for-visio-shapesheet-developers.md).
   
@@ -141,9 +141,9 @@ Neue Objekte, Eigenschaften, Methoden und Ereignisse wurden auf das Visio-Objekt
 
 Die folgenden Elemente wurden vorhandenen Objekten in der Visio-Objektmodell hinzugefügt.
   
- **In Tabelle 1. Visio-Objektmodell Verbesserungen**
+ **Tabelle 1. Verbesserungen des Visio-Objektmodells**
   
-|**Objekt oder Auflistung**|**Neue Member**|
+|**Objekt oder Sammlung**|**Neue Member**|
 |:-----|:-----|
 |[Application-Objekt (Visio)](http://msdn.microsoft.com/library/5b3c8939-793f-116f-11b8-1d4170d95a63%28Office.15%29.aspx) <br/> |[Application.AfterReplaceShapes-Ereignis (Visio)](http://msdn.microsoft.com/library/b02de031-086a-41cc-d832-5434b8096444%28Office.15%29.aspx) <br/> |
 ||[Application.BeforeReplaceShapes-Ereignis (Visio)](http://msdn.microsoft.com/library/fbf44569-0539-9292-ce20-1f9e34238b33%28Office.15%29.aspx) <br/> |
@@ -189,7 +189,7 @@ Die folgenden Elemente wurden vorhandenen Objekten in der Visio-Objektmodell hin
 
 Visio-Objektmodell wurden die folgenden Objekte hinzugefügt.
   
- **In Tabelle 2. Visio-objektmodellergänzungen**
+ **Tabelle 2. Hinzufügungen zum Visio-Objektmodell**
   
 |**Objekt**|**Eigenschaften**|**Methoden**|
 |:-----|:-----|:-----|
@@ -200,7 +200,7 @@ Visio-Objektmodell wurden die folgenden Objekte hinzugefügt.
    
 Die folgende Tabelle enthält die neuen Enumerationen und Konstanten, die in Visio 2013 eingeführt.
   
- **Tabelle 3. Visio-Enumeration Ergänzungen**
+ **Tabelle 3. Hinzugefügte Visio-Aufzählungen**
   
 |**Enumeration**|**Beschreibung**|
 |:-----|:-----|
@@ -213,9 +213,9 @@ Die folgende Tabelle enthält die neuen Enumerationen und Konstanten, die in Vis
 
 Die folgende Tabelle enthält die veraltete Objekte und Member in Visio 2013 eingeführt. Nur veraltete Objekt, die Mitglieder in der Spalte **veraltete Mitglieder** aufgeführt sind. 
   
- **In Tabelle 4. Visio-Objektmodell veraltete**
+ **Tabelle 4. Veraltete Elemente im Visio-Objektmodell**
   
-|**Objekt oder Auflistung**|**Veraltete Member**|
+|**Objekt oder Sammlung**|**Veraltete Member**|
 |:-----|:-----|
 |**Window** -Objekt  <br/> |**PageTabWidth** -Eigenschaft  <br/> |
    
@@ -224,7 +224,7 @@ Die folgende Tabelle enthält die veraltete Objekte und Member in Visio 2013 ein
 
 - [Visio für Entwickler](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
     
-- [What's new for Visio ShapeSheet-Entwickler](what-s-new-for-visio-shapesheet-developers.md)
+- [Neuigkeiten für Visio ShapeSheet-Entwickler](what-s-new-for-visio-shapesheet-developers.md)
     
 - [Visio Services in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj164027%28office.15%29.aspx)
     

@@ -24,7 +24,7 @@ Bestimmt die Farbe der Schriftart aus dem Text einer Form des aktiven Designs, a
 |0  <br/> |Der Shape-Text wird die dunklen Schriftfarbe verwendet.  <br/> |
 |1  <br/> |Der Shape-Text wird die helle Farbe verwendet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **QuickStyleFontColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

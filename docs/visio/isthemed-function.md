@@ -20,7 +20,8 @@ Gibt einen Boolean-Wert zurück, der angibt, ob ein Shape ein Design angewendet 
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2013 
+Hinzugefügte Version: Visio 2013
+ 
   
 ## <a name="syntax"></a>Syntax
 
@@ -30,7 +31,7 @@ Hinzugefügte Version: Visio 2013
 
 Boolean
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 > [!NOTE]
 > Die Funktion **ISTHEMED** in Visio 2013 ersetzt die **CELLISTHEMED** -Funktion aus früheren Versionen von Visio. 

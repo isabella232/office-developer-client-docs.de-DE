@@ -22,17 +22,17 @@ Bestimmt die Papierzufuhr für die Seite.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Diese Einstellung entspricht der Einstellung **Papierzufuhr** im Dialogfeld **Drucker einrichten** (klicken Sie auf der Registerkarte **Entwurf** , klicken Sie auf den Pfeil neben **Seite einrichten** , und klicken Sie dann auf der Registerkarte **Drucken Setup** auf **Setup**).
+Diese Einstellung entspricht der Einstellung **Papierzufuhr** im Dialogfeld **Druckeinrichtung** (klicken Sie auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten** und anschließend auf der Registerkarte **Druckeinrichtung** auf **Einrichten**).
   
 Die numerischen Werte in dieser Zelle auf Konstanten (mit dem Präfix DMBIN) in der Microsoft Windows-Datei wingdi.h definiert; Beispielsweise steht für den Wert 7 Papierauswahl. 
   
-Wenn Sie einen Verweis auf die Zelle PaperSource nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PaperSource aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PaperSource  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PaperSource aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PaperSource aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

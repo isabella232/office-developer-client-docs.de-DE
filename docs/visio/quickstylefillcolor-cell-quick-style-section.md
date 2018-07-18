@@ -30,7 +30,7 @@ Bestimmt, welche Designfarbe an, die Füllung einer Form verwendet wird, als gan
 |6  <br/> |Der Füllfarbe einer Form erbt die Designfarbe Akzent 5  <br/> |
 |7  <br/> |Der Füllfarbe einer Form erbt die Designfarbe Akzent 6  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **QuickStyleFillColor** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

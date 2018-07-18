@@ -39,9 +39,9 @@ INTERSECTX (** *X1* **, ** *y1* **, ** *Winkel1* **, ** *X2* **, ** *y2* **, ** 
 
 Zahl
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Jede Zeile wird als ein Punkt (*X, y*) und ein Winkel definiert. 
+Die einzelnen Linien werden als ein Punkt (*x,y*) und ein Winkel definiert. 
   
 Von Microsoft Visio wird diese Funktion in der Zelle PinY eines Shapes verwendet, das an eine gedrehte Führungslinie geklebt ist. 
   

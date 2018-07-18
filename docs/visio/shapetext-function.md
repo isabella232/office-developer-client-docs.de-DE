@@ -29,7 +29,7 @@ SHAPETEXT (** *Shapename! TheText* ** ** *[, Flag]* **)
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 | _Shapename! TheText_ <br/> |Erforderlich  <br/> ||Ein Verweis auf die Zelle TheText mit der in der Ziel-Shape.  _Shapename!_ ist der Name des Shapes, von dem Sie den Text abrufen möchten.  <br/> |
-| _Flag_ <br/> |Optional  <br/> |**Numerische** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
+| _Flag_ <br/> |Optional  <br/> |**Numeric** <br/> |Ein Bit, das das Format des Texts bestimmt. Wenn das Standard-Flag (0) verwendet wird, wird der Text genauso wie im Shape dargestellt.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

@@ -23,7 +23,7 @@ Verhindert, dass die **FontIndex** Zelle in der Zeile mit **Design** Anwenden ei
 |TRUE  <br/> |Die Zelle **FontIndex** kann nicht aus dem aktuellen Wert geändert werden, sofern nicht direkt im ShapeSheet geändert.  <br/> |
 |FALSE  <br/> |Die Zelle **FontIndex** kann vom aktuellen Wert geändert werden, wenn das Design geändert wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **LockThemeFonts** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

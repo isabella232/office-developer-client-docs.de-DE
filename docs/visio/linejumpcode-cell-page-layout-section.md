@@ -20,7 +20,7 @@ ms.locfileid: "19797321"
 
 Definiert die Verbinder, denen Sie Liniensprünge hinzufügen möchten.
   
-|**Wert**|**Verbinder, die Sie Liniensprünge hinzufügen möchten**|**Automatisierungskonstante**|
+|**Wert**|**Verbinder, denen Sie Liniensprünge hinzufügen möchten**|**Automatisierungskonstante**|
 |:-----|:-----|:-----|
 |0  <br/> |Keine  <br/> |**visPLOJumpNone** <br/> |
 |1  <br/> |Horizontale Linien  <br/> |**visPLOJumpHorizontal** <br/> |
@@ -29,17 +29,17 @@ Definiert die Verbinder, denen Sie Liniensprünge hinzufügen möchten.
 |4  <br/> |Letzte angezeigte Linie (oberstes Shape in der *Z* -Reihenfolge)  <br/> |**visPLOJumpDisplayOrder** <br/> |
 |5  <br/> |Erste angezeigte Linie (Shape am unteren Rand der *Z* -Reihenfolge)  <br/> |**visPLOJumpReverseDisplayOrder** <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Sie können den Wert dieser Zelle auch festlegen, auf der Registerkarte **Layout und Routing** im Dialogfeld **Seite einrichten** (klicken Sie auf der Registerkarte **Entwurf** , klicken Sie auf den Pfeil neben **Seite einrichten** , und klicken Sie dann auf **Layout und Routing**).
+Sie können den Wert dieser Zelle auch im Dialogfeld **Seite einrichten** auf der Registerkarte **Layout und Routing** festlegen (klicken Sie dazu auf der Registerkarte **Entwurf** auf den Pfeil neben **Seite einrichten**, und klicken Sie dann auf **Layout und Routing**).
   
-Wenn Sie einen Verweis auf die Zelle LineJumpCode nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle LineJumpCode aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LineJumpCode  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle LineJumpCode aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle LineJumpCode aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -20,7 +20,7 @@ ms.locfileid: "19797567"
 
 Legt das Ausgabeformat für eine Zeichnung fest. Zeichenblätter werden normalerweise für den Ausdruck formatiert (Standardeinstellung). Sie können jedoch auch andere Ausgabeformate auswählen.
   
-|**Wert**|**Ausgabeformat**|
+|**Wert**|**OutputFormat**|
 |:-----|:-----|
 | 0  <br/> | Drucken (Standard)  <br/> |
 | 1  <br/> | PowerPoint-Präsentation  <br/> |
@@ -28,13 +28,13 @@ Legt das Ausgabeformat für eine Zeichnung fest. Zeichenblätter werden normaler
    
 ## <a name="remarks"></a>Hinweise
 
-Wenn Sie einen Verweis auf die Zelle OutputFormat nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle OutputFormat aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 | Zellenname:  <br/> | OutputFormat  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle OutputFormat aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle OutputFormat aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

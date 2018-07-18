@@ -21,13 +21,17 @@ Verhindert, dass Designeffekte auf das Shape angewendet werden.
   
 Entspricht der Einstellung für das Kontrollkästchen **von Designeffekten** im Dialogfeld **Schutz** . 
   
-Wenn die Zelle LockThemeEffects aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen verwenden Sie Folgendes: 
+Wenn Sie auf die Zelle LockThemeEffects aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
+
+ 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |LockThemeEffects  <br/> |
    
-Wenn Sie auf die Zelle LockThemeEffects durch Index aus einem Programm verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie aus einem Programm heraus nach Index auf die Zelle LockThemeEffects verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
+
+ 
   
 |||
 |:-----|:-----|

@@ -20,7 +20,8 @@ Der Vergleichsvorgänge zwischen anderen Sprache Darstellungen ermöglicht. Es i
   
 ## <a name="version-information"></a>Versionsinformationen
 
-Hinzugefügte Version: Visio 2013 
+Hinzugefügte Version: Visio 2013
+ 
   
 ## <a name="syntax"></a>Syntax
 

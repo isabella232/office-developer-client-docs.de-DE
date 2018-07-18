@@ -23,7 +23,7 @@ Gibt an, ob eine Form einen Ersetzungsvorgang (als ein Ziel oder ein Replacement
 |TRUE  <br/> |Das Shape kann nicht ersetzt werden oder als Ersatz-Shape verwendet werden.  <br/> Für ein Shape auf die Canvas ist die Schaltfläche **Form ändern** deaktiviert, wenn ein Shape ausgewählt wird.  <br/> Für ein Shape in einer Schablone wird die Form nicht als Ersatz-Shape angezeigt, wenn die **Form ändern** Schaltfläche geklickt wird.  <br/> |
 |FALSE  <br/> |Das Shape kann ersetzt oder als Ersatz-Shape verwendet werden.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **LockReplace** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

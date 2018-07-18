@@ -28,9 +28,9 @@ MAX (** *Zahl1* **, ** *Zahl2* **,..., ** *NumberN* **)
 
 |**Name**|**Erforderlich/Optional**|**Datentyp**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-| _Zahl1_ <br/> |Erforderlich  <br/> |**Variiert** <br/> |Die erste Zahl in der Liste.  <br/> |
-| _Zahl2_ <br/> |Optional  <br/> |**Variiert** <br/> | Die zweite Zahl in der Liste.  <br/> |
-| _numberN_ <br/> |Optional  <br/> |**Variiert** <br/> |Die n-te Zahl in der Liste.  <br/> |
+| _Zahl1_ <br/> |Erforderlich  <br/> |**Varies** <br/> |Die erste Zahl in der Liste.  <br/> |
+| _Zahl2_ <br/> |Optional  <br/> |**Varies** <br/> | Die zweite Zahl in der Liste.  <br/> |
+| _numberN_ <br/> |Optional  <br/> |**Varies** <br/> |Die n-te Zahl in der Liste.  <br/> |
    
 ### <a name="return-value"></a>R�ckgabewert
 

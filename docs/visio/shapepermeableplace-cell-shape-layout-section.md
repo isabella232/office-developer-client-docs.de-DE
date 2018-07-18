@@ -8,7 +8,7 @@ f1_keywords:
 - vis_sdr.chm885
 localization_priority: Normal
 ms.assetid: b647cbb5-2769-068d-bbda-2dc983c47ac9
-description: Bestimmt, ob platzierbare Shapes über einem Shape platziert werden können, wenn Shapes im Dialogfeld Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout, klicken Sie auf der Seite Re-Layout, und klicken Sie dann auf Weitere Layoutoptionen).
+description: Legt fest, ob platzierbare Shapes über einem Shape platziert werden können, wenn Shapes unter Verwendung des Dialogfelds Layout konfigurieren (klicken Sie auf der Registerkarte Entwurf in der Gruppe Layout auf Seite neu anordnen, und klicken Sie anschließend auf Weitere Layoutoptionen) ausgerichtet werden.
 ms.openlocfilehash: 1873575eb4322d31f81c0dd34557c6167750ce82
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -16,9 +16,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19798018"
 ---
-# <a name="shapepermeableplace-cell-shape-layout-section"></a>Zelle "ShapePermeablePlace" (Abschnitt "Shape Layout")
+# <a name="shapepermeableplace-cell-shape-layout-section"></a>ShapePermeablePlace Cell (Shape Layout Section)
 
-Bestimmt, ob platzierbare Shapes über einem Shape platziert werden können, wenn Shapes im Dialogfeld **Layout konfigurieren** (auf der Registerkarte **Entwurf** in der Gruppe **Layout** klicken Sie auf **Der Seite Re-Layout**, und klicken Sie dann auf **Weitere Layout-Optionen **).
+Legt fest, ob platzierbare Shapes über einem Shape platziert werden können, wenn Shapes unter Verwendung des Dialogfelds **Layout konfigurieren** (klicken Sie auf der Registerkarte **Entwurf** in der Gruppe **Layout** auf **Seite neu anordnen**, und klicken Sie anschließend auf **Weitere Layoutoptionen**) ausgerichtet werden.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
@@ -31,13 +31,13 @@ Sie können den Wert dieser Zelle auch festlegen, auf der Registerkarte **Platzi
   
 In Versionen vor Visio  2000 wird dieses Verhalten in der Zelle ObjInterakt im Abschnitt Miscellaneous festgelegt.
   
-Zum Abrufen eines Verweises auf die Zelle ShapePermeablePlace nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle ShapePermeablePlace aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |ShapePermeablePlace  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle ShapePermeablePlace aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle ShapePermeablePlace aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797310"
 ---
-# <a name="line-format-section"></a>Abschnitt "Line Format"
+# <a name="line-format-section"></a>Line Format Section
 
 Enthält Zellen, die die Linienattribute für ein Shape steuern, z. B. Muster, Linienstärke und Farbe. Sie bestimmen, ob die Linienenden formatiert werden (z. B. mit einer Pfeilspitze), die Größe von Linienendformaten, den Radius des der Linie zugewiesenen Rundungskreises und das Format der Linienenden (rund oder eckig).
   

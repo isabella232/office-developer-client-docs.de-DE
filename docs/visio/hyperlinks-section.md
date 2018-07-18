@@ -16,13 +16,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797200"
 ---
-# <a name="hyperlinks-section"></a>Abschnitt "Hyperlinks"
+# <a name="hyperlinks-section"></a>Hyperlinks Section
 
 Enthält Zellen zum Erstellen mehrerer Liniensprünge zwischen einem Shape oder einem Zeichenblatt und einem anderen Zeichenblatt, einer anderen Datei oder einer Website.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Wenn Sie einen Hyperlink definieren möchten, geben Sie Werte in die Zellen dieses Abschnitts, oder verwenden Sie das Dialogfeld **Hyperlinks** (klicken Sie auf der Registerkarte **Einfügen** auf **Hyperlink** ). 
+Wenn Sie einen Hyperlink definieren möchten, geben Sie Werte in die Zellen dieses Abschnitts ein, oder verwenden Sie das Dialogfeld **Hyperlinks** (klicken Sie auf der Registerkarte **Einfügen** auf **Hyperlink**). 
   
 Sie können den Abschnitt Hyperlinks in ein ShapeSheet-Fenster für ein Shape, eine Gruppe, eine Seite oder ein fremdes Objekt einfügen.
   

@@ -16,7 +16,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797597"
 ---
-# <a name="paperkind-cell-print-properties-section"></a>Zelle "PaperKind" (Abschnitt "Print Properties")
+# <a name="paperkind-cell-print-properties-section"></a>PaperKind Cell (Print Properties Section)
 
 Gibt den Papiertyp für den Druck der Seite an.
   
@@ -26,13 +26,13 @@ Diese Einstellung entspricht der Einstellung **Papiergröße** im Dialogfeld **D
   
 Die numerischen Werte in dieser Zelle auf Konstanten (mit dem Präfix DMPAPER) in der Microsoft Windows-Datei wingdi.h für die Papierauswahl definiert sind. 
   
-Wenn Sie einen Verweis auf die Zelle PaperKind nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
+Wenn Sie einen Verweis auf die Zelle PaperKind aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes: 
   
 |||
 |:-----|:-----|
 |Zellenname:  <br/> |PaperKind  <br/> |
    
-Wenn Sie einen Verweis auf die Zelle PaperKind aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten: 
+Wenn Sie einen Verweis auf die Zelle PaperKind aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten: 
   
 |||
 |:-----|:-----|

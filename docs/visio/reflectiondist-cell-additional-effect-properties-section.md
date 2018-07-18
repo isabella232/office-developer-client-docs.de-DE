@@ -18,7 +18,7 @@ ms.locfileid: "19797781"
 
 Legt den Abstand fest, um eine Spiegelung von einer Form in abgesetzt wird von 0,0 auf 100,0 verweist. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **ReflectionDist** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   

@@ -25,7 +25,7 @@ Bestimmt den Typ der Schnellformatvorlagen (2-dimensionale, 1-dimensionales oder
 |2  <br/> |2-dimensionale  <br/> |
 |3  <br/> |Connector  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie einen Verweis auf die Zelle **QuickStyleType** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes: 
   
