@@ -27,7 +27,7 @@ Um nach Nachrichten gesucht, die für einen bestimmten Empfänger gesendet werde
   
 Die zweite und dritte Member des Arrays sind einfacher. Beide zeigen Sie auf Content Einschränkung Strukturen, eine nach Nachrichten gesucht, deren eine auf "Sam" und ein weiteres festgelegte **PR_SENDER_NAME** ([PidTagSenderName](pidtagsendername-canonical-property.md))-Eigenschaft einen Eigenschaftensatz **PR_SUBJECT** ([PidTagSubject hat](pidtagsubject-canonical-property.md)) zu" Volleyball."
   
-**Einschränkungsimplementierung**
+**Implementierung von Beschränkungen**
   
 ![Einschränkungsimplementierung] (media/amapi_61.gif "Einschränkungsimplementierung")
   

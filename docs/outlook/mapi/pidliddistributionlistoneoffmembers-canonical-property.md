@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidDistributionListOneOffMembers-Eigenschaft
+title: PidLidDistributionListOneOffMembers (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793503"
 ---
-# <a name="pidliddistributionlistoneoffmembers-canonical-property"></a>Kanonische PidLidDistributionListOneOffMembers-Eigenschaft
+# <a name="pidliddistributionlistoneoffmembers-canonical-property"></a>PidLidDistributionListOneOffMembers (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Liste der einmaligen EntryIds, die die Elemente der persönlichen Verte
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese einmaligen EntryIds kapseln Anzeigenamen und e-Mail-Adressen der Mitglieder der persönlichen Verteilerliste.
   

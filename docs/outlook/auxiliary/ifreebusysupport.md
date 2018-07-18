@@ -54,7 +54,7 @@ Angabe der Schnittstellen, die Zugriff auf Frei/Gebucht-Daten für bestimmte Ben
 |[Placeholder21](ifreebusysupport-placeholder21.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 |[Placeholder22](ifreebusysupport-placeholder22.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die meisten der Elemente in dieser Schnittstelle sind Platzhalter für die interne Verwendung von Outlook reserviert und kann geändert werden. Frei/Gebucht-Anbieter müssen implementieren sie nur als angegebenen, zurückgeben, dass nur die angegebenen Werte zurückgeben.
   

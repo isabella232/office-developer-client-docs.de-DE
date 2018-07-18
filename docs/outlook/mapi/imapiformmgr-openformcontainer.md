@@ -75,7 +75,7 @@ MAPI_E_NO_INTERFACE
   
 > Das Objekt, das auf _Lpunk_ unterstützt nicht die erforderliche Schnittstelle. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::OpenFormContainer** -Methode, um eine **IMAPIFormContainer** -Schnittstelle für ein bestimmtes Formular Container zu öffnen. Diese Schnittstelle kann dann für die Installation in und Entfernen von Formularen aus einem Formular Container verwendet werden. 
   
@@ -104,7 +104,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

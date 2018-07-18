@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidClipEnd-Eigenschaft
+title: PidLidClipEnd (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793471"
 ---
-# <a name="pidlidclipend-canonical-property"></a>Kanonische PidLidClipEnd-Eigenschaft
+# <a name="pidlidclipend-canonical-property"></a>PidLidClipEnd (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das Enddatum und die Uhrzeit des Ereignisses in koordinierter Weltzeit (UTC
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Für einzelne Instanz Calendar-Objekten gibt es das Enddatum und die Uhrzeit des Ereignisses in UTC. Für eine Besprechungsserie diese Eigenschaft gibt Mitternacht auf das Datum der letzten Instanz von der Terminserie in UTC, es sei denn, der sich wiederholenden Reihe kein Ende der Wert in dem 31. August muss 4500, 23:59 Uhr
   

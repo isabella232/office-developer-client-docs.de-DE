@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792169"
 ---
-# <a name="imapiformfactory--iunknown"></a>IMAPIFormFactory: IUnknown
+# <a name="imapiformfactory--iunknown"></a>IMAPIFormFactory : IUnknown
 
   
   
@@ -44,7 +44,7 @@ Unterstützt die Verwendung von konfigurierbar Laufzeit-Formularen in einer vert
 |[GetLastError](imapiformfactory-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler auftritt, auf das Formular Factory-Objekt enthält.  <br/> |
 |[LockServer](imapiformfactory-lockserver.md) <br/> |Wird einen geöffnete Formular Server im Arbeitsspeicher gespeichert.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Schnittstelle **IMAPIFormFactory** basiert auf der [IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx) -Schnittstelle und Objekte, die **IMAPIFormFactory** implementieren sollten auch von **IClassFactory**erben.
   

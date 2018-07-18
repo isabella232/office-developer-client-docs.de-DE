@@ -32,7 +32,7 @@ BOOL Placeholder11(
 
 Immer unterstützt **false**, da dieser Member ist ein Platzhalter und wird nicht.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Member muss **false**zurück.
   

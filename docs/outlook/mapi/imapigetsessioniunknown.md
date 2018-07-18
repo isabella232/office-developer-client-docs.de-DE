@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792218"
 ---
-# <a name="imapigetsession--iunknown"></a>IMAPIGetSession: IUnknown
+# <a name="imapigetsession--iunknown"></a>IMAPIGetSession : IUnknown
 
   
   
@@ -50,5 +50,5 @@ Bietet Zugriff auf die aktuellen MAPI-Sitzung mit dem Support-Objekt verknüpft 
 
 [MAPI-Schnittstellen](mapi-interfaces.md)
   
-[Support-(Übersicht)](support-object-overview.md)
+[Übersicht über Unterstützungsobjekte](support-object-overview.md)
 

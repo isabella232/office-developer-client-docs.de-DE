@@ -1,5 +1,5 @@
 ---
-title: FirstSkipBlockContent Stream-Struktur
+title: FirstSkipBlockContent-Streamstruktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791670"
 ---
-# <a name="firstskipblockcontent-stream-structure"></a>FirstSkipBlockContent Stream-Struktur
+# <a name="firstskipblockcontent-stream-structure"></a>FirstSkipBlockContent-Streamstruktur
 
   
   
@@ -27,11 +27,11 @@ Die FirstSkipBlockContent Stream-Struktur ist der Inhalt der ersten [SkipBlock](
 
 
 
-[Outlook-Elemente und Felder](outlook-items-and-fields.md)
+[Elemente und Felder in Outlook](outlook-items-and-fields.md)
   
-[Stream-Strukturen](stream-structures.md)
+[Streamstrukturen](stream-structures.md)
   
-[SkipBlock Stream-Struktur](skipblock-stream-structure.md)
+[SkipBlock-Streamstruktur](skipblock-stream-structure.md)
   
-[PackedUnicodeString Stream-Struktur](packedunicodestring-stream-structure.md)
+[PackedUnicodeString-Streamstruktur](packedunicodestring-stream-structure.md)
 

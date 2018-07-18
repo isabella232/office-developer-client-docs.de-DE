@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > Abschnitt angeforderten Profile ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::OpenProfileSection** -Methode öffnet eine Benutzerprofilabschnitt oder ein Objekt, das die **IProfSect** -Schnittstelle unterstützt. Profil Abschnitte dienen zum Lesen von Informationen aus und Schreiben von Informationen in das Sitzungsprofil. 
   
@@ -98,9 +98,9 @@ Sie können einen Profilabschnitt erstellen, durch Aufrufen von **"OpenProfileSe
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIUID](mapiuid.md)
   

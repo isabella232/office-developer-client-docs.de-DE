@@ -45,7 +45,7 @@ S_OK
   
 > Der Anruf in der Adressbuchhierarchie heruntergefahren war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange Ruft die **IXPProvider::Shutdown** -Methode unmittelbar vor der Freigabe ein Transport-Anbieter-Objekts. Vor dem **Herunterfahren**aufrufen, gibt MAPI alle Logon-Objekten für einen Anbieter frei.
   
@@ -55,5 +55,5 @@ Die MAPI-Warteschlange Ruft die **IXPProvider::Shutdown** -Methode unmittelbar v
 
 [XPProviderInit](xpproviderinit.md)
   
-[IXPProvider: IUnknown](ixpprovideriunknown.md)
+[IXPProvider : IUnknown](ixpprovideriunknown.md)
 

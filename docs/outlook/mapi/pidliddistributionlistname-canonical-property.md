@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidDistributionListName-Eigenschaft
+title: PidLidDistributionListName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793502"
 ---
-# <a name="pidliddistributionlistname-canonical-property"></a>Kanonische PidLidDistributionListName-Eigenschaft
+# <a name="pidliddistributionlistname-canonical-property"></a>PidLidDistributionListName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Namen der persönlichen Verteilerliste.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft sollte identisch mit dem Wert der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)).
   

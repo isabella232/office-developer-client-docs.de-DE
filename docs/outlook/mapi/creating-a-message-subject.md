@@ -1,5 +1,5 @@
 ---
-title: Erstellen einen Betreff der Nachricht
+title: Erstellen eines Nachrichtenbetreffs
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791495"
 ---
-# <a name="creating-a-message-subject"></a>Erstellen einen Betreff der Nachricht
+# <a name="creating-a-message-subject"></a>Erstellen eines Nachrichtenbetreffs
 
   
   

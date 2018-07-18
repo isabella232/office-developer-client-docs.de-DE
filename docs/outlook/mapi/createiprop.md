@@ -80,7 +80,7 @@ MAPI_E_INTERFACE_NOT_SUPPORTED
   
 > Die angeforderte Schnittstelle wird für dieses Objekt nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Eingabeparametern _LpAllocateBuffer_, _LpAllocateMore_und _LpFreeBuffer_ zeigen die [MAPIAllocateBuffer](mapiallocatebuffer.md), [MAPIAllocateMore](mapiallocatemore.md)und [MAPIFreeBuffer](mapifreebuffer.md) -Funktionen. Eine Clientanwendung Aufrufen **CreateIProp** übergibt Zeiger auf die MAPI-Funktionen, die nur mit dem Namen; Ein Dienstanbieter übergibt die Zeiger auf diese Funktionen, die es in seinem Initialisierungsaufruf empfangen oder mit einem Aufruf der [IMAPISupport::GetMemAllocRoutines](imapisupport-getmemallocroutines.md) -Methode abgerufen. 
   

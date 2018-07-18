@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidCcAttendeesString-Eigenschaft
+title: PidLidCcAttendeesString (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793473"
 ---
-# <a name="pidlidccattendeesstring-canonical-property"></a>Kanonische PidLidCcAttendeesString-Eigenschaft
+# <a name="pidlidccattendeesstring-canonical-property"></a>PidLidCcAttendeesString (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält eine Liste aller sendable Teilnehmer, die auch die optionale Teilnehmer
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert für jeden Teilnehmer ist die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Adressbuchs des Teilnehmers. Separate Einträge müssen durch ein Semikolon, gefolgt von einem Leerzeichen getrennt sein. Diese Eigenschaft ist nicht erforderlich.
   

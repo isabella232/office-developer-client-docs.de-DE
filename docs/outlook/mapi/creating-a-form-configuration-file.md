@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Konfigurationsdatei Formular
+title: Erstellen einer Formularkonfigurationsdatei
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791483"
 ---
-# <a name="creating-a-form-configuration-file"></a>Erstellen einer Konfigurationsdatei Formular
+# <a name="creating-a-form-configuration-file"></a>Erstellen einer Formularkonfigurationsdatei
 
   
   
@@ -25,7 +25,7 @@ Eine Konfigurationsdatei Formular enthält Informationen zu einem Formular, an d
   
 Eine Konfigurationsdatei Formular ist eine Datei mit der Erweiterung cfg und weist das Format einer Windows-Initialisierungsdatei ähnelt. Es handelt sich um eine nur-Text-Datei mit einer Anzahl von Abschnitten. Jeder Abschnitt beginnt mit einem Abschnittsnamen, die in Klammern eingeschlossen. Jeder Abschnitt enthält eine oder mehrere Zeilen, die Werte und Einstellungen für diesen Abschnitt relevant definieren. Werte haben einen der folgenden Typen:
   
-- String
+- Zeichenfolge
     
 - Zeichenfolge angezeigt
     
@@ -33,7 +33,7 @@ Eine Konfigurationsdatei Formular ist eine Datei mit der Erweiterung cfg und wei
     
 - Pfadname
     
-- Ganzzahl
+- Ganze Zahl
     
 - GUID
     
@@ -43,5 +43,5 @@ Weitere Informationen zu den Abschnitten einer Datei CFG finden Sie unter [File 
 
 
 
-[Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+[Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

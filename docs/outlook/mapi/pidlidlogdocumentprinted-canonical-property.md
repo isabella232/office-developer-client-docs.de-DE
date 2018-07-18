@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidLogDocumentPrinted-Eigenschaft
+title: PidLidLogDocumentPrinted (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793650"
 ---
-# <a name="pidlidlogdocumentprinted-canonical-property"></a>Kanonische PidLidLogDocumentPrinted-Eigenschaft
+# <a name="pidlidlogdocumentprinted-canonical-property"></a>PidLidLogDocumentPrinted (kanonische Eigenschaft)
 
   
   

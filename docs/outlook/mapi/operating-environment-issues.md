@@ -1,5 +1,5 @@
 ---
-title: Betrieb von Problemen Umgebung
+title: Probleme in der Betriebssystemumgebung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793315"
 ---
-# <a name="operating-environment-issues"></a>Betrieb von Problemen Umgebung
+# <a name="operating-environment-issues"></a>Probleme in der Betriebssystemumgebung
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Entwickeln eines Providers TNEF-aktivierten Transport
+title: Entwickeln eines TNEF-fähigen Transportanbieters
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791538"
 ---
-# <a name="developing-a-tnef-enabled-transport-provider"></a>Entwickeln eines Providers TNEF-aktivierten Transport
+# <a name="developing-a-tnef-enabled-transport-provider"></a>Entwickeln eines TNEF-fähigen Transportanbieters
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Lesezeichen
+title: BOOKMARK
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791529"
 ---
-# <a name="bookmark"></a>Lesezeichen
+# <a name="bookmark"></a>BOOKMARK
 
   
   
@@ -36,7 +36,7 @@ Definiert die Textmarken Daten zum Erinnern an einer Position in einer Tabelle.
 typedef ULONG_PTR BOOKMARK;
 ```
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI sind drei Textmarken, wie folgt definiert:
   
@@ -60,7 +60,7 @@ Clients können weitere Textmarken zum Erinnern an andere Positionen Tabelle ers
 
 [IMAPITable::CreateBookmark](imapitable-createbookmark.md)
   
-[IMAPITable](imapitable-findrow.md)
+[IMAPITable::FindRow](imapitable-findrow.md)
   
 [IMAPITable::FreeBookmark](imapitable-freebookmark.md)
   

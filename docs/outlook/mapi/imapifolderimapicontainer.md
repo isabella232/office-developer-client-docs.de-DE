@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792131"
 ---
-# <a name="imapifolder--imapicontainer"></a>IMAPIFolder: IMAPIContainer
+# <a name="imapifolder--imapicontainer"></a>IMAPIFolder : IMAPIContainer
 
   
   

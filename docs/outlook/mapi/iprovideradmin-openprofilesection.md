@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > Abschnitt angeforderten Profile ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProviderAdmin::OpenProfileSection** -Methode öffnet einen Profilabschnitt, aktivieren den Anrufer zum Lesen von Informationen aus und Schreiben Sie möglicherweise Informationen in das aktive Profil. 
   
@@ -106,13 +106,13 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIUID](mapiuid.md)
   
-[IProviderAdmin: IUnknown](iprovideradminiunknown.md)
+[IProviderAdmin : IUnknown](iprovideradminiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

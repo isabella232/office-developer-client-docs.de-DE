@@ -67,7 +67,7 @@ MAPI_E_CORRUPT_DATA
   
 > In einem Stream decodierte Daten ist beschädigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Transport-Provider, Anbieter Nachricht und Gateways rufen die **ITnef::ExtractProps** -Methode zum Extrahieren von (das Decodieren ist,) Eigenschaften aus der Kapselung einer Nachricht oder einer Anlage, die an die Funktion [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) übergeben wurde. Die aufrufende Anbieter oder Gateway kann eine Liste der Eigenschaften zum Decodieren angeben. Anbieter und Gateways können **ExtractProps** auch Informationen zur keine besondere Behandlung für Anlagen aktualisiert. 
   
@@ -98,11 +98,11 @@ Der in _LpProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf gibt S
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[OpenTNEFStream nicht ausgeführt werden](opentnefstream.md)
+[OpenTnefStream](opentnefstream.md)
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
 [STnefProblemArray](stnefproblemarray.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren der IClassFactory-Schnittstelle für Formular-Servern
+title: Implementieren der IClassFactory-Schnittstelle für Formularserver
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792575"
 ---
-# <a name="implementing-the-iclassfactory-interface-for-form-servers"></a>Implementieren der IClassFactory-Schnittstelle für Formular-Servern
+# <a name="implementing-the-iclassfactory-interface-for-form-servers"></a>Implementieren der IClassFactory-Schnittstelle für Formularserver
 
   
   
@@ -34,5 +34,5 @@ Für alle erforderlichen Informationen zum Implementieren dieser Methods finden 
 
 
 
-[Schreiben von Formularcode Server](writing-form-server-code.md)
+[Schreiben von Formularservercode](writing-form-server-code.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax3OriginalEntryId-Eigenschaft
+title: PidLidFax3OriginalEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793589"
 ---
-# <a name="pidlidfax3originalentryid-canonical-property"></a>Kanonische PidLidFax3OriginalEntryId-Eigenschaft
+# <a name="pidlidfax3originalentryid-canonical-property"></a>PidLidFax3OriginalEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass die ursprüngliche EntryID des Kontakts Faxadresse zugrunde.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss falls vorhanden, die einmalige EntryId angeben, die an diese Faxadresse entspricht.
   

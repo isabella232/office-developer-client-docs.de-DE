@@ -43,7 +43,7 @@ typedef struct _MAPIERROR
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulVersion**
   
@@ -65,7 +65,7 @@ typedef struct _MAPIERROR
   
 > Wert, der die Position in der Komponente darstellt, auf die der **LpszComponent** -Member, der angibt, in dem der Fehler aufgetreten ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **MAPIERROR** wird verwendet, um die Fehlerinformationen zu beschreiben. Clients und Dienstanbieter übergeben einen Zeiger auf eine **MAPIERROR** -Struktur in der _LppMAPIError_ -Parameter der [IMAPIProp::GetLastError](imapiprop-getlasterror.md) -Methode. **GetLastError** gibt Informationen zu den vorherigen auf ein Objekt aufgetretenen Fehler zurück. **GetLastError** Aufrufer freigeben den Speicher für die Struktur **MAPIERROR** durch Aufrufen von [MAPIFreeBuffer](mapifreebuffer.md).
   

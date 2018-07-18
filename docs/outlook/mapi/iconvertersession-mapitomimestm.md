@@ -93,7 +93,7 @@ E_INVALIDARG
   
 > Ungültige Flags übergeben wurden, oder *Pmsg* oder *Pstm* ist NULL. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nur für Outlook-Nachricht Standardtypen unterstützt.
   
@@ -110,7 +110,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IConverterSession: IUnknown](iconvertersessioniunknown.md)
+[IConverterSession : IUnknown](iconvertersessioniunknown.md)
   
 [IConverterSession::MAPIToMIMEStm](iconvertersession-mapitomimestm.md)
   
@@ -126,7 +126,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IConverterSession::SetTextWrapping](iconvertersession-settextwrapping.md)
   
-[Kanonische PidTagMessageEditorFormat-Eigenschaft](pidtagmessageeditorformat-canonical-property.md)
+[PidTagMessageEditorFormat (kanonische Eigenschaft)](pidtagmessageeditorformat-canonical-property.md)
   
 [Kanonische PidLidUseTnef-Eigenschaft](pidlidusetnef-canonical-property.md)
 

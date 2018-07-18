@@ -39,7 +39,7 @@ Für einen bestimmten Benutzer ruft ab und legt einen Zeitraum fest und gibt ein
 |[Placeholder6](ifreebusydata-placeholder6.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 |[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |Dient zum Abrufen eines vordefinierten Zeitraums für eine Enumeration der Datenblöcke Frei/Gebucht-Informationen für einen Benutzer.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die meisten der Elemente in dieser Schnittstelle sind Platzhalter für die interne Verwendung von Outlook reserviert und kann geändert werden. Frei/Gebucht-Anbieter müssen implementieren sie nur als angegebenen, zurückgeben, dass nur die angegebenen Werte zurückgeben.
   

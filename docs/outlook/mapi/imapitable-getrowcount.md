@@ -62,7 +62,7 @@ MAPI_W_APPROX_COUNT
   
 > Der Aufruf war erfolgreich, aber eine ungefähre Zeilenanzahl wurde zurückgegeben, da die genaue Zeilenanzahl nicht möglicherweise aufgrund der Speicherkapazität ermittelt werden kann. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Finden Sie unter [Verwendung von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::GetRowCount** -Methode ruft die Gesamtzahl der Zeilen in einer Tabelle ab. 
   
@@ -98,7 +98,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::WaitForCompletion](imapitable-waitforcompletion.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

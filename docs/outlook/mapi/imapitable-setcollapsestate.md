@@ -68,7 +68,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > Die Tabelle konnte nicht fertig gestellt Neuerstellen der Ansicht reduzierten oder erweiterten.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::SetCollapseState** -Methode wird den Zustand erweiterten oder reduzierten die Tabellenansicht. **SetCollapseState** und **GetCollapseState** arbeiten wie folgt zusammen: 
   
@@ -98,5 +98,5 @@ Wenn **SetCollapseState**anrufen möchten, müssen Sie zuvor **GetCollapseState*
   
 [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

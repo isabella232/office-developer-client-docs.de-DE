@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContacts-Eigenschaft
+title: PidLidContacts (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793479"
 ---
-# <a name="pidlidcontacts-canonical-property"></a>Kanonische PidLidContacts-Eigenschaft
+# <a name="pidlidcontacts-canonical-property"></a>PidLidContacts (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält die Namen der Kontakte, die mit dem Element verknüpft ist.
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft der einzelnen Adressbuch **EntryID** , die den Wert der Eigenschaft **DispidContactLinkEntry** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)) verwiesen wird. Es kann keine Verweise in **DispidContactLinkEntry**enthalten.
   

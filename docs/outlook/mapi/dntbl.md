@@ -47,7 +47,7 @@ struct DNTBL
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _ulFlags_
   
@@ -123,7 +123,7 @@ _pReserved2_
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)  
+- [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)  
 - [MAPI-Konstanten](mapi-constants.md) 
 - [DNTBLE](dntble.md)
 

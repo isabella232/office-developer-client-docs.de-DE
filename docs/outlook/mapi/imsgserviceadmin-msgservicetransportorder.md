@@ -63,7 +63,7 @@ MAPI_E_NOT_FOUND
   
 > Eine oder mehrere der in der _LpUIDList_ -Parameter übergeben [MAPIUID](mapiuid.md) Strukturen verweisen nicht auf eine Adressbuchhierarchie derzeit im Profil. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin::MsgServiceTransportOrder** -Methode legt die Reihenfolge der Übermittlung der Transportanbieter in einem Profil. Der _LpUIDList_ -Parameter muss eine sortierte Liste der Adressbuchhierarchie Eintragsbezeichner abgerufen, die aus der Eigenschaft **PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) aus der [IMsgServiceAdmin zurückgegebene Tabelle enthalten:: GetProviderTable](imsgserviceadmin-getprovidertable.md) Methode. Eine Clientanwendung muss die vollständige Liste _LpUIDList_übergeben.
   
@@ -75,5 +75,5 @@ Die **IMsgServiceAdmin::MsgServiceTransportOrder** -Methode legt die Reihenfolge
 
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

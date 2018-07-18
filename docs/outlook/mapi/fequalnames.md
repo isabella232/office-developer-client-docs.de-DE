@@ -60,7 +60,7 @@ FALSE
   
 > Die zwei Eigenschaftennamen sind nicht gleich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **FEqualNames** -Funktion ist nützlich, da die **MAPINAMEID** Struktur eine [GUID enthält](guid.md) und der Name der Eigenschaft selbst in mehr als eine Möglichkeit darstellen kann. Dies bedeutet, dass die zwei Strukturen nicht durch einfache binäre Methoden verglichen werden können. 
   

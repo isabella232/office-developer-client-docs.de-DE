@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > Die Nummer im _UlConnection_ -Parameter übergeben, ist nicht vorhanden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::Unsubscribe** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter rufen Sie **kündigen** , um eine zuvor vom **Subscribe**eingerichteten benachrichtigungsregistrierung abzubrechen. **Zum Abmelden** hebt die Registrierung durch den Anruf **Subscribe** übergebene Advise Empfängerzeiger freigeben. 
   

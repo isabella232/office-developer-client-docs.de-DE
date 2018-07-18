@@ -1,5 +1,5 @@
 ---
-title: Suchen von gesendet oder gespeicherte Nachrichten
+title: Suchen nach gesendeten oder gespeicherten Nachrichten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791695"
 ---
-# <a name="finding-sent-or-saved-messages"></a>Suchen von gesendet oder gespeicherte Nachrichten
+# <a name="finding-sent-or-saved-messages"></a>Suchen nach gesendeten oder gespeicherten Nachrichten
 
   
   

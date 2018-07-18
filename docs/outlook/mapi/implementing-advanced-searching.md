@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Erweiterte Suche
+title: Implementieren der erweiterten Suche
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792550"
 ---
-# <a name="implementing-advanced-searching"></a>Implementieren von Erweiterte Suche
+# <a name="implementing-advanced-searching"></a>Implementieren der erweiterten Suche
 
   
   

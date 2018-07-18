@@ -308,9 +308,9 @@ void CMyOfflineNotify::Notify(const MAPIOFFLINE_NOTIFY *pNotifyInfo)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Offline State-API](about-the-offline-state-api.md)
-- [Installieren das Beispiel Offline State-Add-in](installing-the-sample-offline-state-add-in.md)
-- [Zum Beispiel Offline State-Add-in](about-the-sample-offline-state-add-in.md)
-- [Einrichten von einem Offline State Add-in](setting-up-an-offline-state-add-in.md)
-- [Trennen der Verbindung ein Offline State-Add-in](disconnecting-an-offline-state-add-in.md)
+- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+- [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
+- [Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
+- [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
+- [Trennen eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
 

@@ -72,5 +72,5 @@ Der Hauptunterschied zwischen Erstellen einer Nachricht weitergeleitet werden, u
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Kanonische PidTagMessageAttachments-Eigenschaft](pidtagmessageattachments-canonical-property.md)
+- [PidTagMessageAttachments (kanonische Eigenschaft)](pidtagmessageattachments-canonical-property.md)
 

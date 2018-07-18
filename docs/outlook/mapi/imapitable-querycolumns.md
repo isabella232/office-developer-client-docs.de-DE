@@ -58,7 +58,7 @@ MAPI_E_BUSY
   
 > Ein anderer Vorgang wird ausgeführt, die verhindert, die Spalte dass Abrufvorgang starten festgelegt. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::QueryColumns** -Methode kann EntityInstances abgerufen werden: 
   
@@ -94,7 +94,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

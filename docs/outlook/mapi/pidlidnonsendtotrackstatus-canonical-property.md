@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidNonSendToTrackStatus-Eigenschaft
+title: PidLidNonSendToTrackStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793680"
 ---
-# <a name="pidlidnonsendtotrackstatus-canonical-property"></a>Kanonische PidLidNonSendToTrackStatus-Eigenschaft
+# <a name="pidlidnonsendtotrackstatus-canonical-property"></a>PidLidNonSendToTrackStatus (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält den Wert für jeden Teilnehmer in der Eigenschaft **DispidNonSendableTo
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist erforderlich, nur, wenn die **DispidNonSendableTo** -Eigenschaft festgelegt wird. Die Anzahl von Werten in dieser Eigenschaft muss die Anzahl von Werten in **DispidNonSendableTo**entsprechen. Jeder PT_LONG Wert in dieser Eigenschaft entspricht der Teilnehmer in der **DispidNonSendableTo** -Eigenschaft im selben Index. 
   

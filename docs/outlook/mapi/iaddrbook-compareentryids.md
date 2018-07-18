@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Eine oder beide der mit dem Parameter _lpEntryID1_ oder _lpEntryID2_ übergebene Eintrags-IDs werden durch eine beliebige Adressbuchanbieter nicht erkannt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clientanwendungen und Anbieter aufzurufen **CompareEntryIDs** -Methode zum Vergleichen von zwei Eintragsbezeichner, die gehört zu einer einzelnen Adressbuchanbieter um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. **CompareEntryIDs** ist hilfreich, da ein Objekt mehr als eine gültige Eingabe Bezeichner haben kann. Dies kann beispielsweise auftreten, wenn eine neue Version des Adressbuch-Dienstanbieter installiert ist. 
   
@@ -86,5 +86,5 @@ Wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen möchten, legt **
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

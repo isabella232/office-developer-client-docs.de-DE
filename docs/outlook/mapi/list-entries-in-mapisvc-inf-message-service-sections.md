@@ -1,5 +1,5 @@
 ---
-title: Die Einträge aus MapiSvc.inf Nachricht Service Abschnitte
+title: Listeneinträge in den Nachrichtendienstabschnitten von MapiSvc.inf
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792894"
 ---
-# <a name="list-entries-in-mapisvcinf-message-service-sections"></a>Die Einträge aus MapiSvc.inf Nachricht Service Abschnitte
+# <a name="list-entries-in-mapisvcinf-message-service-sections"></a>Listeneinträge in den Nachrichtendienstabschnitten von MapiSvc.inf
 
   
   

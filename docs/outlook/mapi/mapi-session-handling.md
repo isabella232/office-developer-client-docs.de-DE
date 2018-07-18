@@ -25,7 +25,7 @@ Bevor Sie mit der Dienstanbieter und einer zugrunde liegenden messaging-System k
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[MAPI-Sitzung starten](starting-a-mapi-session.md)
+[Staren einer MAPI-Sitzung](starting-a-mapi-session.md)
   
 > Beschreibt, wie Sie eine MAPI-Sitzung zu starten, und enthält Links zu Themen mit Ausführlichere Informationen.
     
@@ -33,15 +33,15 @@ Bevor Sie mit der Dienstanbieter und einer zugrunde liegenden messaging-System k
   
 > Beschreibt, wie eine MAPI-Sitzung zu beenden.
     
-[Zugreifen auf Objekte mithilfe der Sitzung](accessing-objects-by-using-the-session.md)
+[Zugreifen auf Objekte durch eine Sitzung](accessing-objects-by-using-the-session.md)
   
 > Beschreibt, wie einen Sitzung Zeiger verwenden, um die Sitzungsobjekte zuzugreifen.
     
-[Abrufen von primären und Anbieter Identität](retrieving-primary-and-provider-identity.md)
+[Abrufen der primären und Anbieteridentität](retrieving-primary-and-provider-identity.md)
   
 > Beschreibt die Eigenschaften, die zum Abrufen von primären und Identity Provider.
     
-[Tabelle-Status und Status-Objekte](status-table-and-status-objects.md)
+[Statustabelle und Statusobjekte](status-table-and-status-objects.md)
   
 > Beschreibt das Zugreifen auf Informationen aus der Tabelle "Status".
     

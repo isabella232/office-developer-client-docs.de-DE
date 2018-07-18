@@ -39,7 +39,7 @@ void STDMETHODCALLTYPE Notify(
   
 > [in] Benachrichtigung, die Outlook an den Client sendet. Die Benachrichtigung gibt den Teil des Verbindungsstatus, der geändert wurde, den alten Verbindungsstatus und den neuen Verbindungsstatus.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Outlook verwendet diese Methode, um die Benachrichtigung Rückrufe an einen Client gesendet. Microsoft Outlook 2010 oder Microsoft Outlook 2013 diese Schnittstelle zur Verfügung zu stellen, muss der Client diese Schnittstelle implementieren, und übergeben einen Zeiger als Mitglied in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** beim Einrichten von Rückrufe mit **[IMAPIOfflineMgr::Advise ](imapiofflinemgr-advise.md)**. 
   
@@ -51,7 +51,7 @@ Im Allgemeinen Outlook 2010 und Outlook 2013 können benachrichtigt werden, eine
 
 
 
-[Über die Offline State-API](about-the-offline-state-api.md)
+[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPIOFFLINE_NOTIFY](mapioffline_notify.md)
 

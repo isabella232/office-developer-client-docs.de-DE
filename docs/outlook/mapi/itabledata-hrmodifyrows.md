@@ -54,7 +54,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Eine oder mehrere Zeilen übergebenen verfügt nicht über eine Indexspalte. Wenn dieser Fehler zurückgegeben wird, werden keine Zeilen geändert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrModifyRows** -Methode fügt die Zeilen, die durch die [SRowSet](srowset.md) -Struktur, die auf das durch den Parameter _LpSRowSet_ beschrieben. Wenn der Wert von Column Index einer Zeile in der Zeile Set der Wert für eine vorhandene Zeile in der Tabelle entspricht, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden, die in der Struktur **SRowSet** enthaltene übereinstimmt ist, fügt **HrModifyRows** die Zeile an das Ende der Tabelle an. 
   
@@ -68,7 +68,7 @@ Nachdem **HrModifyRows** die Zeilen hinzugefügt hat, werden Benachrichtigungen 
 
 
 
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

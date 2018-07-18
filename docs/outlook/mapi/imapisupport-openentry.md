@@ -94,7 +94,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter übergeben wird in einem Format nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn die Adressbuchanbieter, die das Objekt enthält nicht geöffnet ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::OpenEntry** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter anrufen **IMAPISupport::OpenEntry** um einen Zeiger auf eine Schnittstelle abzurufen, die verwendet werden kann, um auf ein bestimmtes Objekt zuzugreifen. 
   

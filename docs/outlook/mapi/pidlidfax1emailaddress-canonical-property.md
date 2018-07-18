@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax1EmailAddress-Eigenschaft
+title: PidLidFax1EmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793528"
 ---
-# <a name="pidlidfax1emailaddress-canonical-property"></a>Kanonische PidLidFax1EmailAddress-Eigenschaft
+# <a name="pidlidfax1emailaddress-canonical-property"></a>PidLidFax1EmailAddress (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die e-Mail-Adresse des Kontakts Fax geschäftl.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft, falls vorhanden, sollte enthalten einen Benutzer lesbaren Anzeigenamen, gefolgt von der "@" Zeichen, gefolgt von einer Faxnummer.
   

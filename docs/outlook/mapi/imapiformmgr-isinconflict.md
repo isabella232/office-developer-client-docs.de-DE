@@ -63,7 +63,7 @@ S_FALSE
   
 > Das Formular eine eigene Nachricht Konflikte behandelt werden, oder die Nachricht, deren Informationen übergeben wurde, ist nicht in Konflikt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::IsInConflict** -Methode, um zu ermitteln, ob ein bestimmtes Formular eine eigene Nachricht Konflikte nicht behandelt. **IsInConflict** überprüft die Bitmasken in den _UlMessageFlags_ und _UlMessageStatus_ das Vorhandensein von ein Conflict-Flag. Wenn ein Konflikt Flag festgelegt ist, **IsInConflict** die Nachrichtenklasse in der _SzMessageClass_ -Parameter übergeben wird, aufgelöst wird und gibt S_OK zurück, wenn das Formular eine eigene Konflikte nicht behandelt. **IsInConflict** gibt S_FALSE zurück, wenn das Formular eine eigene Konflikte behandelt. 
   
@@ -79,9 +79,9 @@ Clientanwendungen weisen in der Regel für den Umgang mit Konflikte, wenn die An
 
 [IMAPIFormAdviseSink::OnActivateNext](imapiformadvisesink-onactivatenext.md)
   
-[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
   
-[Kanonische PidTagMessageStatus-Eigenschaft](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

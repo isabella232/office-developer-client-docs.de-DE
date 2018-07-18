@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax1OriginalDisplayName-Eigenschaft
+title: PidLidFax1OriginalDisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793533"
 ---
-# <a name="pidlidfax1originaldisplayname-canonical-property"></a>Kanonische PidLidFax1OriginalDisplayName-Eigenschaft
+# <a name="pidlidfax1originaldisplayname-canonical-property"></a>PidLidFax1OriginalDisplayName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den ursprünglichen Anzeigenamen des Business Fax-Adresse des Kontakts an.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss falls vorhanden, auf den gleichen Wert wie die **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))-Eigenschaft festgelegt werden.
   

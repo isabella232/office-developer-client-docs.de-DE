@@ -70,7 +70,7 @@ S_OK
   
 > Das Eigenschaftenblatt Konfiguration wurde angezeigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::DoConfigPropsheet** -Methode wird für alle Unterstützungsobjekte implementiert. **DoConfigPropSheet** stellt eine Standardbenutzeroberfläche zum Anzeigen der Eigenschaften der Dienstanbieter und Message-Dienste. Sie sollten dieses Dialogfeld standard für alle Konfiguration-Eigenschaft zeigt verwenden, damit Benutzer eine konsistente Schnittstelle Windows nutzen. 
   
@@ -90,11 +90,11 @@ Sie können die Anzeige-Tabelle der _LpDisplayTable_ -Parameter auf das durch Au
   
 [IABProvider::Logon](iabprovider-logon.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
 [IMAPIStatus::SettingsDialog](imapistatus-settingsdialog.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
   
 [IMSProvider::Logon](imsprovider-logon.md)
   

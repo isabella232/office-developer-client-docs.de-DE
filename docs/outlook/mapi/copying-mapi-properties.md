@@ -39,5 +39,5 @@ Die API-Funktionen in der vorherigen Liste Kopie Eigenschaften im Arbeitsspeiche
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

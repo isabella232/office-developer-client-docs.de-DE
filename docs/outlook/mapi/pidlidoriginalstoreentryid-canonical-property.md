@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidOriginalStoreEntryId-Eigenschaft
+title: PidLidOriginalStoreEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793691"
 ---
-# <a name="pidlidoriginalstoreentryid-canonical-property"></a>Kanonische PidLidOriginalStoreEntryId-Eigenschaft
+# <a name="pidlidoriginalstoreentryid-canonical-property"></a>PidLidOriginalStoreEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Eintrags-ID des Stellvertreters des Speichers an.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft sollte für Objekte, die Besprechung festgelegt werden, die erstellt oder von einer Stellvertretung aktualisiert wurden.
   

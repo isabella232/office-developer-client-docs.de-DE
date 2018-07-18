@@ -107,7 +107,7 @@ Da MFCMAPI (engl.) die standardmäßige Implementierung von MAPI standardmäßig
 
 - [FGetComponentPath](fgetcomponentpath.md)
 - [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
-- [Link zu MAPI-Funktionen](how-to-link-to-mapi-functions.md)
+- [Verweisen auf MAPI-Funktionen](how-to-link-to-mapi-functions.md)
 - [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx)
 - [Einrichten der MSI-Keys für die MAPI-DLL](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)
 - [Zuordnen von explizit MAPI-Aufrufe zu MAPI-DLLs](http://msdn.microsoft.com/en-us/library/ee909490%28VS.85%29.aspx)

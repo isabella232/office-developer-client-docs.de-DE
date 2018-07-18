@@ -87,7 +87,7 @@ MAPI_E_TOO_COMPLEX
   
 > Der Dienstanbieter unterstützt nicht die angegebenen Suchkriterien entsprechen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIContainer::SetSearchCriteria** -Methode richtet Suchkriterien für einen Container, der sucht, in der Regel in einem Suchergebnisse Ordner unterstützt. Suchergebnisse Ordner enthält Links zu Nachrichten, die den Suchkriterien entsprechen; die Nachrichten werden weiterhin an ihrem ursprünglichen Speicherort gespeichert. Nur eindeutigen in einem Suchergebnisse Ordner enthaltenen Daten ist die Inhaltstabelle. Die Inhaltstabelle eines Ordners Suchergebnisse hat den zusammengeführten Inhalt des Nachrichtenspeichers, nachdem die Suche Einschränkung angewendet wurde. 
   
@@ -133,7 +133,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPIFolder::CreateFolder](imapifolder-createfolder.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
   
 [SPropertyRestriction](spropertyrestriction.md)
   
@@ -141,7 +141,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SSubRestriction](ssubrestriction.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

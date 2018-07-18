@@ -76,7 +76,7 @@ S_OK
   
 > Das Objekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::IStorageFromStream** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **IStorageFromStream** zum Erstellen eines Speicherobjekts für bestimmte Eigenschaften zu öffnen. Dienstanbieter, die ihre eigene Implementierung der Schnittstelle [IStorage](http://msdn.microsoft.com/en-us/library/aa380015%28VS.85%29.aspx) haben, müssen nicht **IStorageFromStream**aufrufen. 
   

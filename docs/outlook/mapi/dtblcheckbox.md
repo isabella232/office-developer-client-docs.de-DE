@@ -42,7 +42,7 @@ typedef struct _DTBLCHECKBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
@@ -60,7 +60,7 @@ PARAMETER MAPI_UNICODE
   
 > Eigenschaftentag für eine Eigenschaft vom Typ PT_BOOLEAN. Der Wert dieser Eigenschaft wird von den Status des Kontrollkästchens beeinflusst.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLCHECKBOX** beschreibt ein Kontrollkästchen ein Steuerelement, das einen von zwei Status widerspiegelt: (aktivierte Kontrollkästchen) aktiviert oder deaktiviert (ein leeres Feld). 
   
@@ -78,7 +78,7 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
 
 [DTCTL](dtctl.md)
   
-[Kanonische PidTagControlType-Eigenschaft](pidtagcontroltype-canonical-property.md)
+[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

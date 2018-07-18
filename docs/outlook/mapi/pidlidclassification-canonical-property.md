@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidClassification-Eigenschaft
+title: PidLidClassification (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793477"
 ---
-# <a name="pidlidclassification-canonical-property"></a>Kanonische PidLidClassification-Eigenschaft
+# <a name="pidlidclassification-canonical-property"></a>PidLidClassification (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Table-Steuerelementen
+title: Anzeigen von Tabellensteuerelementen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791571"
 ---
-# <a name="displaying-table-controls"></a>Anzeigen von Table-Steuerelementen
+# <a name="displaying-table-controls"></a>Anzeigen von Tabellensteuerelementen
 
   
   
@@ -44,5 +44,5 @@ Die folgende Tabelle enthält die Strukturen, die jede Art von Steuerelement zu 
 
 
 
-[Implementierung der Anzeige-Tabelle](display-table-implementation.md)
+[Anzeigen der Tabellenimplementierung](display-table-implementation.md)
 

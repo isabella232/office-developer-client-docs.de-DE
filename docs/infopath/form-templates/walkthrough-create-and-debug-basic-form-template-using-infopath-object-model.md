@@ -27,15 +27,15 @@ Im folgenden Beispiel erfahren Sie, wie ein einfaches Warnungsdialogfeld mithilf
 
 1. Erstellen Sie eine neue Formularvorlage, die mit dem InfoPath 2003-kompatible Objektmodell verwendet wird, wie beschrieben in [einem Formular Vorlage mithilfe des InfoPath 2003-Objektmodells zu erstellen](how-to-create-a-form-template-using-the-infopath-2003-object-model.md).
     
-2. Nennen Sie das Formularvorlagenprojekt "HelloWorld", und speichern Sie es. 
+2. Geben Sie dem Formularvorlagenprojekt den Namen HelloWorld, und speichern Sie es.  
     
    Das Projektsystem erstellt Code- und Projektdateien und öffnet dann eine leere Formularvorlage im InfoPath-Entwurfsmodus. Jetzt können Sie Ereignishandler hinzufügen.
     
 ### <a name="add-a-button-with-an-onclick-event-handler"></a>Hinzufügen einer Schaltfläche mit einem OnClick-Ereignishandler
 
-1. Klicken Sie im Abschnitt **Steuerelemente** auf der Registerkarte **Start** auf das **Button** -Steuerelement, um es in die Ansicht einzufügen. 
+1. Klicken Sie auf der Registerkarte **Start** im Abschnitt **Steuerelemente** auf das Steuerelement **Schaltfläche**, um dieses in die Ansicht einzufügen. 
     
-2. Maustaste auf das Steuerelement, und klicken Sie dann auf **Schaltflächeneigenschaften**.
+2. Klicken Sie mit der rechten Maustaste auf das Steuerelement, und klicken Sie dann auf **Schaltflächeneigenschaften**.
     
 3. Ändern der **Beschriftung** auf Warnung an.
     
@@ -49,7 +49,7 @@ Im folgenden Beispiel erfahren Sie, wie ein einfaches Warnungsdialogfeld mithilf
     
 ### <a name="add-form-code-to-the-event-handler"></a>Hinzufügen von Formularcode zum Ereignishandler
 
-1. Geben Sie im **OnClick** -Ereignishandler den folgenden Code ein: 
+1. Geben Sie im **OnClick**-Ereignishandler den folgenden Code ein: 
     
    ```cs
     thisXDocument.UI.Alert("Hello World!");
@@ -79,9 +79,9 @@ Im folgenden Beispiel erfahren Sie, wie ein einfaches Warnungsdialogfeld mithilf
    > [!NOTE]
    > Als Alternative zur Verwendung der **Alert** -Methode können Sie die **MessageBox.Show** -Methode des **System.Windows.Forms** -Namespaces verwenden, um ein Meldungsfeld anzuzeigen. Hinzufügen zu diesem Zweck müssen Sie einen Verweis auf die System.Windows.Forms-Assembly hinzufügen, `using System.Windows.Forms;` oder `Imports System.Windows.Forms` auf die am Anfang des Ihrer Codedatei, und geben Sie eine Codezeile wie etwa die folgenden Richtlinien:`MessageBox.Show("Hello World!); or MessageBox.Show("Hello World!)`
   
-2. Wechseln Sie zu InfoPath-Entwurfsmodusfenster, und klicken Sie dann auf die Schaltfläche **Vorschau** auf der Registerkarte **Start** . 
+2. Wechseln Sie zum InfoPath-Entwurfsmodusfenster, und klicken Sie dann auf der Registerkarte **Start** auf die Schaltfläche **Vorschau**. 
     
-3. Klicken Sie im Fenster **Vorschau** auf die Schaltfläche **Alert** . 
+3. Klicken Sie im**** Vorschaufenster auf die Schaltfläche **Alert**. 
     
    Ein Meldungsfeld mit dem Text "Hello World!" wird angezeigt.
     
@@ -103,13 +103,13 @@ Im folgenden Beispiel erfahren Sie, wie ein einfaches Warnungsdialogfeld mithilf
     
 2. Klicken Sie im Menü **Debuggen** auf **Debuggen starten,** klicken Sie auf (oder drücken Sie F5). 
     
-3. Klicken Sie im InfoPath- **Vorschau** klicken Sie auf die Schaltfläche **Alert** . 
+3. Klicken Sie im**** Vorschaufenster von InfoPath auf die Schaltfläche **Alert**.  
     
    Der Fokus wechselt zum Code-Editor, und die Haltepunktlinie wird hervorgehoben.
     
-4. Klicken Sie im Menü **Debuggen** auf **Prozedurschritt** (oder drücken Sie UMSCHALT + F8) um das schrittweise Durchlaufen des Codes fortzusetzen. 
+4. Klicken Sie im Menü **Debuggen** auf **Prozedurschritt** (oder drücken Sie UMSCHALT+F8), um das schrittweise Durchlaufen des Codes fortzusetzen. 
     
-   Der **Alert** -Methodencode wird ausgeführt, und der "Hello World!" Warnung wird im InfoPath- **Vorschau** angezeigt. 
+   Der Code der **Alert**-Methode wird ausgeführt und der Hinweis "Hello World!" im**** Vorschaufenster von InfoPath angezeigt. 
     
 ## <a name="getting-the-current-users-name"></a>Abrufen des aktuellen Benutzernamens
 
@@ -121,11 +121,11 @@ Mithilfe der .NET Framework-Klassen können Sie auf Funktionalität zugreifen, d
     
 2. Klicken Sie auf der Registerkarte **Ansicht** auf **Felder anzeigen**.
     
-3. Maustaste auf den Knoten **MyFields** , und klicken Sie dann auf **Hinzufügen**.
+3. Klicken Sie mit der rechten Maustaste auf den Knoten **myFields**, und klicken Sie dann auf **Hinzufügen**.
     
-4. **Name**, Typ **Mitarbeiter**, klicken Sie dann auf **OK**.
+4. Geben Sie **employee** im Feld **Name** ein, und klicken Sie dann auf **OK**.
     
-5. Ziehen Sie den Knoten **Employee** in die Ansicht ein. 
+5. Ziehen Sie den Knoten **employee** in die Ansicht. 
     
 6. Klicken Sie auf der Registerkarte **Entwicklertools** auf **On Load-Ereignis**.
     
@@ -133,7 +133,7 @@ Mithilfe der .NET Framework-Klassen können Sie auf Funktionalität zugreifen, d
     
 ### <a name="add-form-code"></a>Hinzufügen von Formularcode 
 
-1. Geben Sie im **OnLoad** -Ereignishandler den folgenden Code ein: 
+1. Geben Sie im **OnLoad**-Ereignishandler den folgenden Code ein: 
     
    ```cs
     // Store an XML DOM node as a local variable.
@@ -164,13 +164,13 @@ Mithilfe der .NET Framework-Klassen können Sie auf Funktionalität zugreifen, d
 
 2. Kompilieren Sie das Formular, und zeigen Sie eine Vorschau davon an.
     
-   Das Textfeld Employee sollte jetzt mit Ihrem Benutzername aufgefüllt werden. 
+   Das Textfeld employee sollte jetzt mit Ihrem Benutzername aufgefüllt sein. 
     
 Informationen zum Bereitstellen einer Formularvorlage verwaltetem Code finden Sie unter [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md). Informationen zu den InfoPath-Objektmodell und allgemeine Programmieraufgaben in Formularvorlagen mit verwaltetem Code, die mit dem InfoPath 2003-kompatible Objektmodell arbeiten, finden Sie unter [Grundlegendes zum InfoPath 2003-Objektmodells](understanding-the-infopath-2003-object-model.md). 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Initialisierungs- und Bereinigungscode Code mit InfoPath 2003-Objektmodell](initialization-and-clean-up-code-using-infopath-2003-object-model.md)
-- [InfoPath 2003-kompatible Objektmodelle](infopath-2003-compatible-object-models.md)
+- [Initialisieren und Bereinigen von Code mit dem InfoPath 2003-Objektmodell](initialization-and-clean-up-code-using-infopath-2003-object-model.md)
+- [Mit InfoPath 2003 kompatible Objektmodelle](infopath-2003-compatible-object-models.md)
 - [Hinzufügen eines Ereignishandlers mit dem InfoPath 2003-Objektmodell](how-to-add-an-event-handler-using-the-infopath-2003-object-model.md)
 

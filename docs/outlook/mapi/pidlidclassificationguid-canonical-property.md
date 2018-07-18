@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidClassificationGuid-Eigenschaft
+title: PidLidClassificationGuid (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793472"
 ---
-# <a name="pidlidclassificationguid-canonical-property"></a>Kanonische PidLidClassificationGuid-Eigenschaft
+# <a name="pidlidclassificationguid-canonical-property"></a>PidLidClassificationGuid (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt einen global eindeutigen Bezeichner (GUID) von einer vorhandenen Nachrichte
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen finden Sie unter [Bereitstellen von Nachrichtenklassifikation für Outlook 2007](http://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
   

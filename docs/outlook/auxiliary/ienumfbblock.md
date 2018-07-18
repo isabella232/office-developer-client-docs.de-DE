@@ -35,7 +35,7 @@ Unterstützt den Zugriff auf und das Aufzählen von Datenblöcke Frei/Gebucht-In
 |[Clone](ienumfbblock-clone.md) <br/> |Erstellt eine Kopie der Enumerator, verwenden die gleichen zeitliche Beschränkung jedoch festlegen des Cursors an den Anfang des den Enumerator.  <br/> |
 |[Einschränken](ienumfbblock-restrict.md) <br/> |Legt eine Beschränkung auf die Enumeration, die einen angegebenen Zeitraum.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Enumeration enthält Frei/Gebucht-Blöcke mit Daten, die nicht rechtzeitig überlappen. Wenn sich überschneidenden Elemente in einem Kalender sind, verbindet Outlook diese Elemente um Frei/Gebucht-Blöcke übereinander in der angegebenen Reihenfolge der Priorität-Enumeration bilden: Abwesenheits, gebucht, mit Vorbehalt.
   

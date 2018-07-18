@@ -50,7 +50,7 @@ S_OK
   
 > Das Support-Konfigurationsobjekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::GetSvcConfigSupportObj** -Methode wird für alle Unterstützungsobjekte implementiert. Dienstanbieter anrufen **GetSvcConfigSupportObj** zum Erstellen eines Objekts Konfiguration Unterstützung, um auf eine Nachricht Service Entry Point-Funktion zu übergeben. 
   
@@ -60,13 +60,13 @@ Eine Nachricht Service Entry Point-Funktion basiert auf den [MSGSERVICEENTRY](ms
 
 
 
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
   
 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)
   
-[IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)
+[IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   

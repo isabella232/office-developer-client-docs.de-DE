@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen eines Dienstes Nachricht
+title: Hinzufügen eines Nachrichtendiensts
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791249"
 ---
-# <a name="adding-a-message-service"></a>Hinzufügen eines Dienstes Nachricht
+# <a name="adding-a-message-service"></a>Hinzufügen eines Nachrichtendiensts
 
   
   

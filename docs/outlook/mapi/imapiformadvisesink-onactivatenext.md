@@ -64,7 +64,7 @@ S_FALSE
   
 > Das Formular behandelt die Nachrichtenklasse für die nächste Nachricht nicht.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIFormAdviseSink::OnActivateNext** -Methode, mit denen das Formular zu bestimmen, ob die nächste Nachricht in einem Ordner angezeigt werden können. Die nächste Nachricht konnte eine Nachricht einer beliebigen Klasse werden, jedoch ist normalerweise der gleichen Klasse oder einer verknüpften-Klasse. Dadurch wird das Lesen von mehrere Nachrichten von der gleichen Klasse effizienter durch Clientanwendungen Formularobjekte nach Möglichkeit wiederverwenden aktivieren. 
   
@@ -98,15 +98,15 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
-[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
   
-[Kanonische PidTagMessageStatus-Eigenschaft](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFormAdviseSink: IUnknown](imapiformadvisesinkiunknown.md)
+[IMAPIFormAdviseSink : IUnknown](imapiformadvisesinkiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

@@ -41,7 +41,7 @@ S_OK
   
 > Die Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formularobjekte Aufrufen die **IMAPIViewAdviseSink::OnNewMessage** -Methode, wenn eine Nachricht in einem Formular mithilfe der [IPersistMessage::InitNew](ipersistmessage-initnew.md) oder [IPersistMessage::Load](ipersistmessage-load.md) -Methode geladen wird. 
   
@@ -55,11 +55,11 @@ Weitere Informationen zum Formular Benachrichtigungen finden Sie unter [Senden u
 
 
 
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
   
 [IPersistMessage::InitNew](ipersistmessage-initnew.md)
   
 [IPersistMessage::Load](ipersistmessage-load.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

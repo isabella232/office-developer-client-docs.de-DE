@@ -52,7 +52,7 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
 
 Eine Funktion mit dem Prototyp **ACCELERATEABSDI** gibt TRUE zurück, wenn die Meldung behandelt. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Funktion basierend auf den **ACCELERATEABSDI** Prototyp ist nur mit einem modalen Dialogfeld, d. h., nur verwendet, wenn die Clientanwendung das Flag DIALOG_SDI im _UlFlags_ -Member der [ADRPARM](adrparm.md) -Struktur eingerichtet hat. 
   

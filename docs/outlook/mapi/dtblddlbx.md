@@ -42,7 +42,7 @@ typedef struct _DTBLDDLBX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulFlags**
   
@@ -60,7 +60,7 @@ typedef struct _DTBLDDLBX
   
 > Rufen Sie die Eigenschaftentag für ein Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe einer **OpenProperty** geöffnet werden können. Die Tabelle sollte zwei Spalten: **UlPRDisplayProperty** und **UlPRSetProperty**. Die Zeilen der Tabelle sollten die Elemente in der Liste entsprechen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLDDLBX** beschreibt ein Dropdown-Listenfeld-Steuerelement, das als einzelnes Element angezeigt wird, bis der Benutzer entscheidet, um ihn zu erweitern. 
   
@@ -87,9 +87,9 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
 
 [MAPI-Strukturen](mapi-structures.md)
   
-[Implementierung der Anzeige-Tabelle](display-table-implementation.md)
+[Anzeigen der Tabellenimplementierung](display-table-implementation.md)
   
-[Anzeigen von Tabellen](display-tables.md)
+[Anzeigetabellen](display-tables.md)
   
 [Übersicht über Typ von MAPI-Eigenschaft](mapi-property-type-overview.md)
 

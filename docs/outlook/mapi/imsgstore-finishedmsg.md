@@ -59,7 +59,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Nachrichtenanbieter unterstützt keine Verarbeitung von gesendeten Nachrichten. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht die MAPI-Warteschlange befindet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::FinishedMsg** -Methode führt die Verarbeitung für eine gesendete Nachricht. Löschen der Nachricht in einem anderen Ordner oder beide Aktionen verschieben betreffen diese Verarbeitung. Die Art der Verarbeitung hängt davon ab, ob die **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) Eigenschaften festgelegt werden. 
   

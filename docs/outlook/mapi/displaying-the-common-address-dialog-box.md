@@ -1,5 +1,5 @@
 ---
-title: Das Dialogfeld allgemeine Adresse anzuzeigen
+title: Anzeigen des Standarddialogfelds für Adressen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791584"
 ---
-# <a name="displaying-the-common-address-dialog-box"></a>Das Dialogfeld allgemeine Adresse anzuzeigen
+# <a name="displaying-the-common-address-dialog-box"></a>Anzeigen des Standarddialogfelds für Adressen
 
   
   

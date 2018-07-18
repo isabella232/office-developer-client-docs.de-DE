@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **abFlags**
   
@@ -71,7 +71,7 @@ MAPI_THISSESSION
   
 > Gibt ein Array von binären Daten, die vom Dienstanbieter verwendet werden. Die Client-Anwendung kann nicht in Array verwenden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ENTRYID** -Struktur wird von der Nachricht speichern und Beheben von adressbuchanbietern implementierte zum Erstellen von eindeutiger Bezeichnern für Objekte. Eintragsbezeichner werden verwendet, um die folgenden Typen von Objekten zu identifizieren: 
   
@@ -125,7 +125,7 @@ Weitere Informationen finden Sie unter [Eintragsbezeichner](mapi-entry-identifie
   
 [IMAPISupport::CompareEntryIDs](imapisupport-compareentryids.md)
   
-[Kanonische PidTagRecordKey-Eigenschaft](pidtagrecordkey-canonical-property.md)
+[PidTagRecordKey (kanonische Eigenschaft)](pidtagrecordkey-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

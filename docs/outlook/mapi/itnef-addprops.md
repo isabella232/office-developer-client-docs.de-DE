@@ -106,13 +106,13 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [ITnef::Finish](itnef-finish.md)
   
-[OpenTNEFStream nicht ausgeführt werden](opentnefstream.md)
+[OpenTnefStream](opentnefstream.md)
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[Kanonische PidTagAttachTransportName-Eigenschaft](pidtagattachtransportname-canonical-property.md)
+[PidTagAttachTransportName (kanonische Eigenschaft)](pidtagattachtransportname-canonical-property.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

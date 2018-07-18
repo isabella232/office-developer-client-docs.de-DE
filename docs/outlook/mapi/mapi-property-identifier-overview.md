@@ -35,5 +35,5 @@ Eine vollständige Beschreibung der Bereiche Bezeichner finden Sie unter [Eigens
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

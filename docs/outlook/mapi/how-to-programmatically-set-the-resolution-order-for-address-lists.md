@@ -266,5 +266,5 @@ STDMETHODIMP CopySBinary(
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Zum Festlegen der Reihenfolge der Lösung für Adresslisten in Outlook](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
+- [Informationen zum Festlegen der Auflösungsreihenfolge für Adresslisten in Outlook](about-setting-the-resolution-order-for-address-lists-in-outlook.md)
 

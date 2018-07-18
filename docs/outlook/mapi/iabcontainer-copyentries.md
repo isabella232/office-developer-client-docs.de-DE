@@ -80,7 +80,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Kopiervorgang insgesamt erfolgreich, aber eine oder mehrere Einträge konnte nicht kopiert werden. Wenn dieser Wert zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diesen Wert zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IABContainer::CopyEntries** -Methode kopiert die Einträge aus der gleichen Container oder einen anderen Container. Ein Aufruf von **CopyEntries** entspricht der folgenden Aufrufe für jeden Eintrag kopiert werden: 
   
@@ -120,9 +120,9 @@ Verwenden Sie die Kennzeichen CREATE_CHECK_DUP_LOOSE und CREATE_CHECK_DUP_STRICT
   
 [IABContainer::CreateEntry](iabcontainer-createentry.md)
   
-[IMAPIProgress: IUnknown](imapiprogressiunknown.md)
+[IMAPIProgress : IUnknown](imapiprogressiunknown.md)
   
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

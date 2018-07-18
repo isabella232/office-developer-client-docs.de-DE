@@ -36,7 +36,7 @@ typedef enum
 } MSCAP_SELECTOR;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  *MSCAP_SEL_RESERVED1* 
   

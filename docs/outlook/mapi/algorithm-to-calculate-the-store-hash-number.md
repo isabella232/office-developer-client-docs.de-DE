@@ -1,5 +1,5 @@
 ---
-title: Algorithmus für die Berechnung der Anzahl der Store Hash
+title: Algorithmus zum Berechnen der Store-Hashnummer
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791277"
 ---
-# <a name="algorithm-to-calculate-the-store-hash-number"></a>Algorithmus für die Berechnung der Anzahl der Store Hash
+# <a name="algorithm-to-calculate-the-store-hash-number"></a>Algorithmus zum Berechnen der Store-Hashnummer
  
 **Betrifft**: Outlook 
   
@@ -242,6 +242,6 @@ void ComputeStoreHash(LPMAPISESSION lpMAPISession, LPSBinary lpEntryID, LPSBinar
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen über die Benachrichtigung-basierten Speicher Indizierung](about-notification-based-store-indexing.md)
-- [Informationen zu MAPI-URLs für die Benachrichtigung-basierte Indizierung](about-mapi-urls-for-notification-based-indexing.md)
+- [Informationen zum benachrichtigungsbasierten Indizieren von Stores](about-notification-based-store-indexing.md)
+- [Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren](about-mapi-urls-for-notification-based-indexing.md)
 

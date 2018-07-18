@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactItemData-Eigenschaft
+title: PidLidContactItemData (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793482"
 ---
-# <a name="pidlidcontactitemdata-canonical-property"></a>Kanonische PidLidContactItemData-Eigenschaft
+# <a name="pidlidcontactitemdata-canonical-property"></a>PidLidContactItemData (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Verwendet, um die Kontaktinformationen anzuzeigen.
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn dieser Parameter angegeben wurde, muss die Eigenschaft sechs Einträge, die jeweils entsprechen einer eingeblendeten Felder in der Benutzeroberfläche der Anwendung verfügen.
   

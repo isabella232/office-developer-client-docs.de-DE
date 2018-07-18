@@ -25,7 +25,7 @@ Jedes benutzerdefiniertes Formular implementiert eine Reihe von standard Menübe
   
 Die folgende Abbildung zeigt die Beziehung zwischen den MAPI-Komponenten für die Verwendung von Formularen. 
   
-**MAPI-Formular-Architektur**
+**Architektur des MAPI-Formulars**
   
 ![MAPI-Formular-Architektur] (media/forms01.gif "MAPI-Formular-Architektur")
   

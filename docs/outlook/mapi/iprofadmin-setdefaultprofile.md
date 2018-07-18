@@ -58,7 +58,7 @@ MAPI_E_NOT_FOUND
   
 > Das angegebene Profil ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProfAdmin::SetDefaultProfile** -Methode stellt ein bestimmtes Profil als Standardprofil für den Client her, oder löscht den aktuellen Standardprofils. Das Standardprofil ist das Profil, das automatisch verwendet wird, wenn der Client eine MAPI-Sitzung beginnt. **SetDefaultProfile** wird auch neues Standardprofil **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))-Eigenschaft auf true festgelegt.
   
@@ -74,7 +74,7 @@ Um eine Sitzung mit dem Standardprofil starten möchten, übergeben Sie die Kenn
   
 [MAPILogonEx](mapilogonex.md)
   
-[Kanonische PidTagDefaultProfile-Eigenschaft](pidtagdefaultprofile-canonical-property.md)
+[PidTagDefaultProfile (kanonische Eigenschaft)](pidtagdefaultprofile-canonical-property.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

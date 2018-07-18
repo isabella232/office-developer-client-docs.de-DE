@@ -61,7 +61,7 @@ E_UNEXPECTED
   
 > Das Formular wurde bereits von einem vorherigen Aufruf von **ShutdownForm**geschlossen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIForm::ShutdownForm** -Methode, um ein Formular zu schließen. 
   
@@ -108,5 +108,5 @@ Wenn **ShutdownForm** zurückgibt, unabhängig davon, ob ein Fehler zurückgegeb
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 

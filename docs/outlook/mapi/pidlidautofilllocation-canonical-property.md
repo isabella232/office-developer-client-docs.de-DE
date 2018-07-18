@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAutoFillLocation-Eigenschaft
+title: PidLidAutoFillLocation (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793439"
 ---
-# <a name="pidlidautofilllocation-canonical-property"></a>Kanonische PidLidAutoFillLocation-Eigenschaft
+# <a name="pidlidautofilllocation-canonical-property"></a>PidLidAutoFillLocation (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass der Wert der Eigenschaft **DispidLocation** ([PidLidLocation](pidl
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen zu RecipientRow finden Sie unter das Protokoll Nachrichten- und Attachment-Objekt wie in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angegeben.
   

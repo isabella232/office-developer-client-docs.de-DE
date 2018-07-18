@@ -127,8 +127,8 @@ MAPI-Stub-Bibliothek Computerdateien und Informationen zum Erstellen und integri
 
 - [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
 - [Installieren des MAPI-Subsystems](installing-the-mapi-subsystem.md)
-- [Installieren von MAPI-Headerdateien](how-to-install-mapi-header-files.md)
-- [Wählen Sie eine bestimmte Version von MAPI zu laden](how-to-choose-a-specific-version-of-mapi-to-load.md)
+- [Installieren der MAPI-Headerdateien](how-to-install-mapi-header-files.md)
+- [Auswählen einer bestimmten zu ladenden MAPI-Version](how-to-choose-a-specific-version-of-mapi-to-load.md)
 - [Bestimmen der zu verwendenden verknüpfen Methode](http://msdn.microsoft.com/en-us/library/253b8k2c.aspx)
 - [Verknüpfen einer ausführbaren Datei mit einer DLL](http://msdn.microsoft.com/en-us/library/9yd93633.aspx)
 - [Einrichten der MSI-Keys für die MAPI-DLL](http://msdn.microsoft.com/en-us/library/ee909494%28v=VS.85%29.aspx)

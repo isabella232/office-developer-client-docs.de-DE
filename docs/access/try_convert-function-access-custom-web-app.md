@@ -32,7 +32,7 @@ Die **Try_Convert** -Funktion enthält die folgenden Argumente.
 | *DataType*  <br/> |Geben Sie die Daten in den *Ausdruck* konvertiert.  <br/> |
 | *Expression*  <br/> |Der Wert konvertiert werden soll.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **Try_Convert** nimmt den Wert übergeben wurden und versucht, in den angegebenen *Datentyp* zu konvertieren. Wenn die Konvertierung erfolgreich ist, gibt **Try_Convert** den Wert als den angegebenen *Datentyp* zurück; Wenn ein Fehler auftritt, wird Null zurückgegeben. Jedoch wenn Sie eine Konvertierung, die nicht explizit zulässig ist anfordern, schlägt **Try_Convert** mit einem Fehler. 
   

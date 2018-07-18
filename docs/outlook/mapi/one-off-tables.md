@@ -1,5 +1,5 @@
 ---
-title: Einmaligen Tabellen
+title: Einmalige Tabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793290"
 ---
-# <a name="one-off-tables"></a>Einmaligen Tabellen
+# <a name="one-off-tables"></a>Einmalige Tabellen
 
 **Betrifft**: Outlook 
   

@@ -68,7 +68,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber die Container für eine oder mehrere adressbuchanbietern implementierte konnte nicht geöffnet werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::OpenAddressBook** -Methode öffnet das integrierte Adressbuch MAPI, eine Auflistung von Container der obersten Ebene aller von der adressbuchanbietern implementierte im Profil. Der Zeiger, der im Parameter _LppAdrBook_ zurückgegeben wird, bietet weitere Zugriff auf den Inhalt des Adressbuchs. Dadurch wird den Anrufer für Aufgaben wie öffnen einzelne Container, messaging Benutzer suchen und Anzeigen von Dialogfeldern für allgemeine Adresse. 
   
@@ -90,7 +90,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
 [IMAPISession::GetLastError](imapisession-getlasterror.md)
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792296"
 ---
-# <a name="imapiprop--iunknown"></a>IMAPIProp: IUnknown
+# <a name="imapiprop--iunknown"></a>IMAPIProp : IUnknown
 
   
   
@@ -53,7 +53,7 @@ Ermöglicht es Clients, Service Provider und MAPI-Eigenschaften entwickelt. Alle
 |[GetNamesFromIDs](imapiprop-getnamesfromids.md) <br/> |Enthält die Eigenschaftennamen, die einen oder mehrere Eigenschaftenbezeichner entsprechen.  <br/> |
 |[GetIDsFromNames](imapiprop-getidsfromnames.md) <br/> |Enthält die Eigenschaftenbezeichner, die mindestens einen Eigenschaftennamen entsprechen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **IMAPIProp** ist die Basis-Schnittstelle für die folgenden Schnittstellen: 
   

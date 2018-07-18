@@ -49,7 +49,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Die Zeile übergeben in einer Indexspalte keinen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrModifyRow** -Methode fügt die Zeile mit der **SRow** -Struktur, die auf das durch den Parameter _LpSRow_ beschrieben. Wenn eine Zeile, die den gleichen Wert für die Indexspalte der Zeile, _LpSRow_ verweist, in der Tabelle bereits vorhanden ist, wird die vorhandene Zeile ersetzt. Wenn keine Zeile vorhanden, die in der Struktur **SRow** enthaltene übereinstimmt ist, fügt **HrModifyRow** die Zeile an das Ende der Tabelle an. 
   
@@ -63,9 +63,9 @@ Nachdem **HrModifyRow** die Zeile hinzugefügt hat, werden Benachrichtigungen an
 
 
 
-[' Srow '](srow.md)
+[SRow](srow.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

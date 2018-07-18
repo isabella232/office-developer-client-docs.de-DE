@@ -31,7 +31,7 @@ Die **Update** -Funktion enthält die folgenden Argumente.
 |:-----|:-----|
 | *Column*  <br/> |Der Name des Felds, das prüfen, ob einer Operation einfügen oder aktualisieren.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Update** -Funktion gibt TRUE zurück, unabhängig davon, ob ein INSERT oder UPDATE erfolgreich hergestellt werden kann. 
   

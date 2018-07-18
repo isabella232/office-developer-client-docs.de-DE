@@ -25,7 +25,7 @@ Die **StoppMakro** -Aktion können Sie das derzeit ausgeführte Makro anzuhalten
 
 Die **StoppMakro** -Aktion verfügt nicht über keine Argumente. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Normalerweise verwenden Sie diese Aktion, wenn eine Bedingung das Makro anzuhalten vornimmt. Beispielsweise können Sie ein Benutzer Benutzeroberfläche (UI)-Makro erstellen, das eine Ansicht mit der täglichen Summen Reihenfolge für das Datum in der aktuellen Ansicht geöffnet wird. Sie können einen bedingten Ausdruck verwenden, um sicherzustellen, dass das Steuerelement Bestelldatum im Dialogfeld ein gültiges Datum enthält. Wenn dies nicht der Fall, die **Abfrageergebnis** -Aktion kann eine Fehlermeldung angezeigt, und die **StoppMakro** -Aktion kann das UI-Makro beenden. 
   

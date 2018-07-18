@@ -1,5 +1,5 @@
 ---
-title: HandsOffFromNormal Zustand
+title: Status „HandsOffFromNormal“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791831"
 ---
-# <a name="handsofffromnormal-state"></a>HandsOffFromNormal Zustand
+# <a name="handsofffromnormal-state"></a>Status „HandsOffFromNormal“
 
   
   
@@ -35,5 +35,5 @@ Der Zustand HandsOffFromNormal ist auf den Status [HandsOffAfterSave](handsoffaf
 
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

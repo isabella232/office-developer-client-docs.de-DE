@@ -45,7 +45,7 @@ typedef struct _MAPINAMEID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **x lpguid**
   
@@ -79,7 +79,7 @@ MNID_STRING
   
 > Beschreibung des Namens, der die benannte Eigenschaft Union. Der Name kann einen ganzzahligen Wert, der in **Abdeckung**, gespeichert oder ein Unicode-Zeichenfolge, die in **LpwstrName**gespeichert sein.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **MAPINAMEID** wird verwendet, um benannte Eigenschaften Eigenschaften zu beschreiben, die über 0 x 8000 Bezeichner aufweisen. Ein Eigenschaftensatz stellen einen wichtigen Bestandteil einer benannten Eigenschaft. Beispielsweise sind PS_PUBLIC_STRINGS oder PS_ROUTING_ADDRTYPE Eigenschaftensätze MAPI definiert. 
   

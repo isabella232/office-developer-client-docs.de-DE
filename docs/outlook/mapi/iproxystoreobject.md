@@ -43,7 +43,7 @@ Stellt ein Internet Message Access Protocol (IMAP) Store-Objekt, das seit allein
 |[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md) <br/> |Ruft einen Zeiger auf ein allein stehenden IMAP-Speicher ab.  <br/> |
 | *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Rufen Sie [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) in der Quelle Nachrichtenspeicher die **IProxyStoreObject** -Schnittstelle abzurufen. Rufen Sie dann **IProxyStoreObject::UnwrapNoRef** , um das allein stehenden Store-Objekt zu erhalten. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED**zurückgibt, wurde der Store nicht umgebrochen. 
   

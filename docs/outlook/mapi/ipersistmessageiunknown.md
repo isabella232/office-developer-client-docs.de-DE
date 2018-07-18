@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792764"
 ---
-# <a name="ipersistmessage--iunknown"></a>IPersistMessage: IUnknown
+# <a name="ipersistmessage--iunknown"></a>IPersistMessage : IUnknown
 
   
   
@@ -49,7 +49,7 @@ Ermöglicht das Formular Leser von Berichten, die Speicherung eines Formulars un
 |[SaveCompleted](ipersistmessage-savecompleted.md) <br/> |Das Formular benachrichtigt, einen Vorgang abgeschlossen wurde.  <br/> |
 |[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Bewirkt, dass das Formular, um die aktuelle Nachricht freigeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Alle Formulare sind erforderlich, um die **IPersistMessage** -Schnittstelle implementieren. 
   

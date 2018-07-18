@@ -42,7 +42,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cMTSIDs**
   
@@ -56,7 +56,7 @@ typedef struct
   
 > Bytearray, das eine oder mehrere **MTSID** Strukturen enthält. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **FLATMTSIDLIST** Struktur Verwendung in x. 400-messaging entspricht der [FLATENTRYLIST](flatentrylist.md) -Struktur Verwendung in MAPI messaging. MAPI verwendet **FLATMTSIDLIST** Strukturen zum Verwalten von x. 400-Eigenschaften während der Verarbeitung der Nachricht. Dienstanbieter verwenden **FLATMTSIDLIST** Strukturen beim Verarbeiten von eingehender und ausgehender x. 400-Nachrichten. 
   

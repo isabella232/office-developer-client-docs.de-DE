@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792475"
 ---
-# <a name="imapitable--iunknown"></a>IMAPITable: IUnknown
+# <a name="imapitable--iunknown"></a>IMAPITable : IUnknown
 
   
   

@@ -49,7 +49,7 @@ Mit der Sicherheitsstufe Domäne wird ein Formular auf eine bestimmte Internetdo
   
 ### <a name="full-trust"></a>Voll vertrauenswürdig
 
-Die Sicherheitsstufe Voll vertrauenswürdig können Sie ein Formular mit voller Vertrauenswürdigkeit ausgeführt auf dem Computer, auf dem das Formular verwendet werden. Diese Sicherheitsstufe kann nur verwendet werden, bei der Arbeit mit einem Formular befindet sich auf einem Server, der mit einer Signatur, die mit einem vertrauenswürdigen Stammzertifizierungsstellen Herausgeber auf Ihrem Computer oder signiert ist durch Installieren des Formulars übereinstimmt. Beide Methoden ist erforderlich, wenn **RequireFullTrust** -Attribut auf "yes" festlegen. Mit dieser Einstellung Objektmodellaufrufe wie etwa-Datei speichern auf das Formular zugreifen kann, und bestimmte Sicherheitshinweise, die angezeigt werden, bei der Ausführung auf einem restriktiveren Sicherheitsstufe sind deaktiviert. 
+Die Sicherheitsstufe Voll vertrauenswürdig ermöglicht das Ausführen eines Formulars mit vollständiger Vertrauenswürdigkeit auf dem Computer, auf dem das Formular verwendet wird. Diese Sicherheitsstufe kann nur beim Arbeiten mit einem auf einem Server gespeicherten Formular verwendet werden, der mit einer Signatur signiert wurde, die mit einem vertrauenswürdigen Stammherausgeber auf Ihrem Computer übereinstimmt, oder indem Sie das Formular installieren. Für beide Methoden muss das requireFullTrust-Attribut auf yes festgelegt werden. Durch Verwenden dieser Einstellung kann das Formular auf Objektmodellaufrufe wie z. B. die Dateispeicherung zugreifen, und bestimmte Sicherheitsaufforderungen, die bei der Ausführung auf einer restriktiveren Sicherheitsstufe angezeigt werden, werden deaktiviert. 
   
 > [!NOTE]
 > Alle Formulare im InfoPath-Designer generiert haben eine Sicherheitsstufe zugeordnet. InfoPath wird Formulare auf der zugeordneten Sicherheitsstufe geöffnet. Wenn die dem Formular zugeordnete Sicherheitsstufe höher ist als die Sicherheitsstufe ist, die es gewährt werden können, wird das Formular nicht geöffnet. 
@@ -64,19 +64,19 @@ Die höchste Stufe der Vertrauenswürdigkeit, die einer Formularvorlage gewährt
   
 |Höchste erteilte Vertrauensebene |Voll vertrauenswürdig|Clientcomputer (mit eingeschränkter Sicherheitsstufe)|Intranet (mit eingeschränkter Sicherheitsstufe)|Internet (mit eingeschränkter Sicherheitsstufe)|Eingeschränkt|
 |:-----|:-----:|:-----:|:-----:|:-----:|:-----:|
-|**Datei: Zugriffspfad = geöffnet von-Speicherort** <br/> |||X  <br/> |||
+|**Datei: Zugriffspfad=Geöffnet von-Speicherort** <br/> |||X  <br/> |||
 |**Datei: Zugriffspfad\<\>geöffnet von-Speicherort oder kein Zugriffspfad (unabhängig davon, wo das Formular stammt)** <br/> |||||X  <br/> |
-|**Geöffnet von-Speicherort: Intranet HTTP oder HTTPS** <br/> |||X  <br/> |||
-|**Geöffnet von-Speicherort: Internet HTTP oder HTTPS** <br/> ||||X  <br/> ||
+|**Geöffnet von-Speicherort: Intranet-HTTP oder -HTTPS** <br/> |||X  <br/> |||
+|**Geöffnet von-Speicherort: Internet-HTTP oder -HTTPS** <br/> ||||X  <br/> ||
 |**Geöffnet von-Speicherort: UNC** <br/> |||X  <br/> |||
-|**Installierte Vorlage (RequireFullTrust = "yes")** <br/> |X  <br/> |||||
-|**Installierte Vorlage (RequireFullTrust = "no")** <br/> ||X  <br/> ||||
+|**Installierte Vorlage (requireFullTrust="yes")** <br/> |X  <br/> |||||
+|**Installierte Vorlage (requireFullTrust="no")** <br/> ||X  <br/> ||||
 |**Vorlage mit vertrauenswürdigem Herausgeberzertifikat** <br/> |X  <br/> |||||
 |**Exportierte Formulardateien** <br/> |||X  <br/> |||
    
 ## <a name="form-open-behavior"></a>Verhalten beim Öffnen eines Formulars
 
-Alle Formulardateien in InfoPath-Editor geöffnet werden durch eine Reihe von Bedingungen gebunden, mit die bestimmt die Sicherheitsstufe an dem das Formular geöffnet wird und ob es geöffnet wird. Wenn ein InfoPath-Formular im Editor geöffnet ist, werden entweder mit einer geeigneten Sicherheitsstufe geöffnet oder wird nicht geladen. Wenn ein Formular fordert eine höhere Sicherheitsstufe als gewährt werden kann (ein Formular kann anfordern eine bestimmten Sicherheitsstufe mithilfe des Attributs **TrustLevel** oder **RequireFullTrust** ), es kann nicht geladen werden. Andernfalls wird es mit der Sicherheitsstufe geladen im Zwischenspeicherbereich befinden. Wenn die Formularvorlage nicht zulässig ist, mit der angeforderten Sicherheitsstufe zu öffnen, wird der Benutzer werden nicht das Formular zu öffnen und erhält eine Fehlermeldung angezeigt. 
+Für alle im InfoPath-Editor geöffnete Formulardateien gelten Bedingungen, die bestimmen, mit welcher Sicherheitsstufe das Formular geöffnet wird und ob es geöffnet wird. Wenn ein InfoPath-Formular im Editor geöffnet wird, wird es entweder mit einer entsprechenden Sicherheitsstufe geöffnet oder es wird nicht geladen. Falls ein Formular eine höhere Sicherheitsstufe erfordert, als für das Formular zulässig ist (ein Formular kann mit dem Attribut **trustLevel** oder **requireFullTrust** eine bestimmte Sicherheitsstufe erfordern), kann es nicht geladen werden. Andernfalls wird das Formular mit der angeforderten Sicherheitsstufe geladen. Falls die Formularvorlage nicht mit der angeforderten Sicherheitsstufe geöffnet werden kann, kann der Benutzer das Formular nicht öffnen, und es wird eine entsprechende Fehlermeldung angezeigt. 
   
 In der folgenden Tabelle werden die Bedingungen, die zum Öffnen eines Formulars auf den verschiedenen Sicherheitsstufen erforderlich sind, sowie das Verhalten beim Öffnen des Formulars beschrieben.
   
@@ -92,11 +92,11 @@ In der folgenden Tabelle werden die Bedingungen, die zum Öffnen eines Formulars
 
 Die entsprechende Sicherheitsstufe (Eingeschränkt oder Domäne) wird vom InfoPath-Formular-Designer anhand der von Ihnen im Formular verwendeten Features automatisch ausgewählt. Die Sicherheitseinstellung ist immer so restriktiv wie möglich, beginnend bei Eingeschränkt, um einen umfangreicheren Schutz für Sie und Ihre Daten sicherzustellen. Die Benutzer können diese automatische Einstellung manuell überschreiben, um eine für das Formular besser geeignete Sicherheitsstufe auszuwählen, indem sie die folgenden Schritte ausführen:
   
-1. Klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen** . 
+1. Klicken Sie auf die Registerkarte **Datei**, und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen**. 
     
 2. Klicken Sie in der Liste **Kategorien** auf **Sicherheit und Vertrauensstellung**.
     
-3. Deaktivieren Sie die **Sicherheitsstufe automatisch ermitteln (empfohlen)** das Kontrollkästchen. 
+3. Deaktivieren Sie das Kontrollkästchen **Sicherheitsstufe automatisch ermitteln (empfohlen)**. 
     
 4. Wählen Sie die gewünschte Sicherheitsstufe aus.
     
@@ -124,7 +124,7 @@ Der Zugriffspfad ist eine Speicherort-ID, mit der der entsprechende Speicherort 
     
 3. Suchen nach einer Formularvorlage im Cache mit einer passenden Formular-ID.
     
-Nachdem übereinstimmt, wird das Formular mit der zugeordneten Formularvorlage geöffnet. In Fällen, in denen die Übereinstimmung mit einem Zugriffspfad hergestellt wurde, wird InfoPath Zugriffspfad verwenden, um Updates für die Formularvorlage abzurufen. Diese Methode vereinfacht die Verwaltung von Unternehmen, Wartung und Aktualisierung von Formularen. In Fällen, in dem die Übereinstimmung ist nicht möglich, und die Vertrauensebene Domäne ist wird das Formular nicht geöffnet. Der Zugriffspfad wird als **PublishUrl** -Attribut in der Formulardefinitionsdatei (XSF) angegeben. 
+Wenn ein passendes Element gefunden wurde, wird das Formular mit der zugeordneten Formularvorlage geöffnet. In Fällen, in denen ein passender Zugriffspfad ausgewählt wurde, werden von InfoPath Aktualisierungen an der Formularvorlage mithilfe des Zugriffspfads abgerufen. Diese Methode vereinfacht die Verwaltung, Wartung und Aktualisierung von Formularen im Unternehmen. In Fällen, in denen keine Übereinstimmung möglich ist und als Vertrauensebene Domäne festgelegt ist, wird das Formular nicht geöffnet. Der Zugriffspfad wird als publishUrl-Attribut in der Formulardefinitionsdatei (.XSF) angegeben. 
   
 So wie es für jede Formularvorlage zwei Identifikationseigenschaften gibt, gibt es eine Reihe heuristischer Elemente, um die resultierenden Einträge im Cache basierend auf dem Status der Formularvorlage (ob ein Zugriffspfad und/oder eine Formular-ID vorhanden ist) und dem Status der Netzwerkverbindung zu bestimmen.
   
@@ -140,7 +140,7 @@ Alle Formulare, die im InfoPath-Designer erstellt werden, können als Anlage ein
     
 3. Eine e-Mail-Nachricht wird angezeigt, aktivieren Sie in der Liste der Empfänger und etwaige zusätzliche Anweisungen, die Sie möglicherweise für sie ausfüllen.
     
-4. Wenn Sie fertig sind, klicken Sie auf **Senden**. Das Formular und die Formularvorlage werden an die Nachricht angefügt werden soll.
+4. Wenn Sie alle Informationen eingegeben haben, klicken Sie auf **Senden**. Das Formular und die Formularvorlage werden an die Nachricht angefügt.
     
 ## <a name="email-deployment-restricted-domain-and-full-trust-form-templates"></a>E-Mail-Bereitstellung: eingeschränkt, Domäne und voll vertrauenswürdige Formularvorlagen
 
@@ -156,7 +156,7 @@ Senden Sie eine e-Mail-Formularvorlagen, die voll vertrauenswürdig Zugriff anfo
 
 Bestimmte Fragen sollten berücksichtigt werden, wenn Sie ein Formular erstellen, die e-Mail-Nachricht bereitgestellt wird.
   
-- **Wird das Formular regelmäßig werden aktualisiert?** Wenn Sie ein Formular entwickeln, das regelmäßig aktualisiert werden muss, sollte das Formular an einem freigegebenen Speicherort veröffentlicht werden, bevor sie an andere Benutzer gesendet wird. Diese Vorgehensweise können Sie das Formular durch veröffentlichen neuere Versionen zu dem freigegebenen Speicherort aktualisieren, aber auch die Möglichkeit, sofort die Formularvorlage an Benutzer verteilen, die nicht auf den freigegebenen Speicherort zugreifen können. 
+- **Wird das Formular regelmäßig aktualisiert?** Wenn Sie ein Formular entwerfen, das regelmäßig aktualisiert werden muss, sollte das Formular in einem freigegebenen Speicherort veröffentlicht werden, bevor es an andere Benutzer gesendet wird. Auf diese Weise können Sie das Formular aktualisieren, indem Sie neuere Versionen in dem freigegebenen Speicherort veröffentlichen. Sie können aber auch die Formularvorlage sofort an Benutzer verteilen, die möglicherweise keinen Zugriff auf den freigegebenen Speicherort haben. 
     
    Wenn ein Formular aktualisiert und dann durch e-Mail-Nachricht verteilt, erhalten Benutzer Meldung zu einem Konflikt angezeigt, wenn sie versuchen, das das neue Formular zu öffnen, wenn sie eine ältere Version auf ihrem Computer gespeichert haben, und der Zugriffspfad geändert wurde. Der Benutzer aufgefordert werden, auswählen, welche Version sie verwenden möchten. Auch wenn das aktualisierte Formular auf dem Computer des Benutzers identisch ist, wird der Benutzer erhalten die Meldung zu einem Konflikt angezeigt und aufgefordert, welche Kopieren wählen sie verwenden möchten. Im letzteren Fall verwenden die bewährte Methode besteht darin, das Formular aus einem freigegebenen Speicherort stattdessen freizugeben.
     
@@ -226,9 +226,9 @@ In der folgenden Tabelle werden die Standardeinstellungen für die Registrierung
   
 Die Namenswerte entsprechen den Domäneneinstellungen von Internet Explorer. Dieser Werte bestimmen das Verhalten beim Öffnen eines Formulars in diesen Sicherheitszonen, indem das Öffnen des Formulars zugelassen bzw. blockiert wird oder indem die Benutzer die Möglichkeit erhalten, das Formular zu öffnen.
   
-|**Name-Wert**|**Blockieren**|**User Interface**|**Zulassen**|
+|**Namenswert**|**Block**|**User Interface**|**Zulassen**|
 |:-----|:-----|:-----|:-----|
-|**Internet** <br/> |X  <br/> |||
+|**<ui>Internet</ui>** <br/> |X  <br/> |||
 |**Intranet** <br/> ||X  <br/> ||
 |**Clientcomputer** <br/> |||X  <br/> |
 |**Vertrauenswürdige Site** <br/> |||X  <br/> |

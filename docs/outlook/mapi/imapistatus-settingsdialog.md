@@ -58,7 +58,7 @@ MAPI_E_NO_SUPPORT
   
 > Das Statusobjekt unterstützt diese Methode nicht, wie ohne das Flag STATUS_SETTINGS_DIALOG in der **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **Die SettingsDialog** zeigt ein Eigenschaftenblatt Konfiguration. Alle-Dienstanbieter sollte die **SettingsDialog** -Methode unterstützt, aber es ist nicht erforderlich. Dienstanbieter können ihre eigenen Eigenschaftenseiten implementieren oder verwenden Sie die Implementierung [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md) -Methode für die des Unterstützungsobjekts bereitgestellt. **DoConfigPropsheet** erstellt ein Eigenschaftenblatt Lese-/Schreibzugriff. 
   
@@ -100,7 +100,7 @@ Da eine Benutzeroberfläche immer diesen Vorgang beteiligt ist, sollte nur inter
 
 [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md)
   
-[Kanonische PidTagResourceMethods-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
   
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

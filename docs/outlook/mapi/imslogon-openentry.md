@@ -98,5 +98,5 @@ Bevor MAPI **IMSLogon::OpenEntry**aufruft, bestimmt zunächst, dass die angegebe
   
 [IMsgStore::OpenEntry](imsgstore-openentry.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

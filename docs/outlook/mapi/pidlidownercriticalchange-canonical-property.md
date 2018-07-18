@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidOwnerCriticalChange-Eigenschaft
+title: PidLidOwnerCriticalChange (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793705"
 ---
-# <a name="pidlidownercriticalchange-canonical-property"></a>Kanonische PidLidOwnerCriticalChange-Eigenschaft
+# <a name="pidlidownercriticalchange-canonical-property"></a>PidLidOwnerCriticalChange (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das Datum und Uhrzeit, wann eine Besprechungsanfrage vom Organisator gesend
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   

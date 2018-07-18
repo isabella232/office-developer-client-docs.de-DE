@@ -46,7 +46,7 @@ typedef struct DTPAGE
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cctl**
   
@@ -68,7 +68,7 @@ typedef struct DTPAGE
   
 > Zeiger auf ein Array von [DTCTL](dtctl.md) -Strukturen, einen für jedes Steuerelements auf der Seite. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Legen Sie die Hilfedatei für die Seite um zu ermitteln, **LpszComponent** Mitglieds eine hartcodierte Zeichenfolge oder der **UlItemID** Member zu einem ganzzahligen Ressourcenbezeichner. 
   

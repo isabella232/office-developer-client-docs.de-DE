@@ -32,7 +32,7 @@ Vergleicht die Gleichheit zweier Ausdrücke.
 
 **Boolean**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Vergleichen von zwei NULL-Ausdrücken ist das Ergebnis TRUE.
   

@@ -43,7 +43,7 @@ typedef struct _DTBLEDIT
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszCharsAllowed**
   
@@ -73,7 +73,7 @@ PARAMETER MAPI_UNICODE
   
 > Eigenschaftentag für eine Eigenschaft vom Typ PT_TSTRING. Der **UlPropTag** Member identifiziert die Zeichenfolgeneigenschaft, deren Daten angezeigt und im Bearbeitungssteuerelement bearbeitet werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLEDIT** beschreibt ein Edit-Steuerelement einen Bereich in einem Dialogfeld, das alphanumerische Informationen enthält. Nahezu alle Dialogfelder verfügen über mindestens ein Edit-Steuerelement. Bearbeitungssteuerelemente können geändert werden, von einem Benutzer oder schreibgeschützt sein. 
   
@@ -89,7 +89,7 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[Kanonische PidTagControlType-Eigenschaft](pidtagcontroltype-canonical-property.md)
+[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

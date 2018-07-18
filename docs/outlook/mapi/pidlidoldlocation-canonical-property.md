@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidOldLocation-Eigenschaft
+title: PidLidOldLocation (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793703"
 ---
-# <a name="pidlidoldlocation-canonical-property"></a>Kanonische PidLidOldLocation-Eigenschaft
+# <a name="pidlidoldlocation-canonical-property"></a>PidLidOldLocation (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den ursprünglichen Wert der Eigenschaft **DispidLocation** ([PidLidLocatio
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich.
   

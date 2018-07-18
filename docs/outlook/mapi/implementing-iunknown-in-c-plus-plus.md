@@ -68,5 +68,5 @@ ULONG CMyMAPIObject::Release()
 ## <a name="see-also"></a>Siehe auch
 
 - [Implementieren von MAPI-Objekten](implementing-mapi-objects.md)
-- [Die IUnknown-Schnittstelle implementieren](implementing-the-iunknown-interface.md)
+- [Implementieren der IUnknown-Schnittstelle](implementing-the-iunknown-interface.md)
 

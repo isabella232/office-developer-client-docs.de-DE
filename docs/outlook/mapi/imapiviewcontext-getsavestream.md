@@ -67,7 +67,7 @@ S_OK
   
 > Der Stream wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formularobjekte aufrufen, die **IMAPIViewContext::GetSaveStream** -Methode, um einen Datenstrom ein Objekt abzurufen, die zur Unterstützung der der Handhabung des Verbs speichern unter im Formular-Viewer die **IStream** -Schnittstelle implementiert wird. Die [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode, die in dem Formular Server implementiert und von der Formular-Viewer zum Aufrufen eines Verbs aufgerufen, sollten keine zurückgegeben, bis die Nachricht vollständig in die entsprechenden Textformat konvertiert und in den entsprechenden Stream platziert. 
   
@@ -79,5 +79,5 @@ Nicht in das Stream-Objekt, auf die _Ppstm_ vor dem Aufruf von **GetSaveStream**
 
 
 
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 

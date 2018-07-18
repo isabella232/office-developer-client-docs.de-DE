@@ -62,6 +62,6 @@ Wenn die **OpenEntry** -Methode den Fehlercode **MAPI_E_INTERFACE_NOT_SUPPORTED*
 ## <a name="see-also"></a>Siehe auch
 
 - [Informationen zu MAPI-Ergänzungen](about-mapi-additions.md) 
-- [Access einen Speicher auf dem Remote Server bei Outlook befindet sich in der Exchange-Cache-Modus](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
-- [Geöffnet ist ein Speichers Remote Server Wenn Outlook im Exchange-Cache-Modus](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Zugreifen auf einen Store auf dem Remote-Server, wenn Outlook sich Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
 

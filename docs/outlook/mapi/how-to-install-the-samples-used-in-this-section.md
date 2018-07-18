@@ -78,8 +78,8 @@ Einige Themen verweisen auf Quellcode aus der MFCMAPI (engl.)-Anwendung selbst. 
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen Sie eine einfache E-Mail-Element](how-to-create-a-simple-mail-item.md)
-- [Erstellen eines einfachen wiederkehrenden Aufgabe-Elements](how-to-create-a-simple-recurrent-task-item.md)
-- [Erstellen Sie eine komplexe wiederkehrenden Terminelement](how-to-create-a-complex-recurrent-appointment-item.md)
+- [Erstellen eines einfachen E-Mail-Elements](how-to-create-a-simple-mail-item.md)
+- [Erstellen eines einfachen wiederkehrenden Aufgabenelements](how-to-create-a-simple-recurrent-task-item.md)
+- [Erstellen eines komplexen Terminserienelements](how-to-create-a-complex-recurrent-appointment-item.md)
 - [Lesen und Analysieren eines Serienmusters](how-to-read-and-parse-a-recurrence-pattern.md)
 

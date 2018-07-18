@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierter Funktionen in InfoPath
+title: Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Funktionen in InfoPath
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790636"
 ---
-# <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierter Funktionen in InfoPath
+# <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Funktionen in InfoPath
 
 Microsoft InfoPath unterstützt COM-Add-ins zur Erweiterung des Formulars Benutzererlebnis bearbeiten. Obwohl die Unterstützung für COM-Add-ins in InfoPath, andere Office-Clientanwendungen zuerst hinzugefügt wurde, wie Microsoft Office Word und Microsoft Office Excel COM-add-ins seit Office 2000 unterstützt haben.
   

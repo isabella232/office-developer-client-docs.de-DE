@@ -76,7 +76,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::FlushQueues** -Methode, um der Adressbuchhierarchie darauf hinzuweisen, dass die MAPI-Warteschlange ist dabei, die Verarbeitung von Nachrichten zu beginnen. Der Transportdienst sollte die [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zum Festlegen einer entsprechenden Bit für den Zustand in die **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))-Eigenschaft des seine Statuszeile aufrufen. Nach dem Aktualisieren der Statuszeile, sollte der Adressbuchhierarchie für den Anruf **FlushQueues** S_OK zurückgegeben. Die MAPI-Warteschlange startet das Senden von Nachrichten, mit dem Vorgang synchron an die Warteschlange MAPI. 
   
@@ -88,5 +88,5 @@ Unterstützung der Implementierung der [IMAPIStatus::FlushQueues](imapistatus-fl
 
 [IMAPIStatus::FlushQueues](imapistatus-flushqueues.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFileUnderId-Eigenschaft
+title: PidLidFileUnderId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793613"
 ---
-# <a name="pidlidfileunderid-canonical-property"></a>Kanonische PidLidFileUnderId-Eigenschaft
+# <a name="pidlidfileunderid-canonical-property"></a>PidLidFileUnderId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, wie generieren und den Wert der Eigenschaft **DispidFileUnder** ([PidLi
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft nicht vorhanden ist oder auf einen anderen Wert nicht um einen detaillierten in der folgenden Tabelle oder in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)festlegen, können die Anwendung seine eigene Logik für den Wert der **DispidFileUnder** als andere Kontaktnamen Eigenschaften Änderung neu zu berechnen. 
   

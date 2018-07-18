@@ -42,7 +42,7 @@ typedef struct _DTBLBUTTON
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
@@ -60,7 +60,7 @@ PARAMETER MAPI_UNICODE
   
 > Eigenschaftentag für eine Eigenschaft vom Typ PT_OBJECT, die die [IMAPIControl](imapicontroliunknown.md) -Schnittstelle implementiert wird. Wenn die Schaltfläche geklickt wird, ruft MAPI die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für die Anzeige Tabelle [IMAPIProp](imapipropiunknown.md) Implementierung dieser Eigenschaft abgerufen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLBUTTON** beschreibt eine Schaltfläche ein Steuerelement, das bei geklickt haben, kann sich einen Benutzer einen Vorgang beginnen. In der Regel wird eine Schaltfläche auf die ein modales Dialogfeld angezeigt werden oder eine programmtechnische Aufgabe aufgerufen werden. Dienstanbieter können alles über ein Button-Steuerelement implementieren. Wenn die Schaltfläche zum Ausführen einer Aufgabe basierend auf den Werten der andere Steuerelemente, müssen diese Steuerelemente das Flag DT_SET_IMMEDIATE festgelegt haben. 
   

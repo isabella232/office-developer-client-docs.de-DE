@@ -1,5 +1,5 @@
 ---
-title: NoScribble Zustand
+title: Status „NoScribble“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793292"
 ---
-# <a name="noscribble-state"></a>NoScribble Zustand
+# <a name="noscribble-state"></a>Status „NoScribble“
 
   
   
@@ -36,5 +36,5 @@ Der NoScribble Zustand zeigt an, dass Änderungen an einer Nachricht gespeichert
 
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

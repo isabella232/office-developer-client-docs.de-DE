@@ -49,7 +49,7 @@ MAPI_E_BUSY
   
 > Ein anderer Vorgang wird ausgeführt, die verhindert, den Vorgang Reihenfolge sortieren nicht gestartet dass. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::QuerySortOrder** -Methode ruft die aktuelle Sortierreihenfolge für eine Tabelle. Sortierreihenfolgen werden mit einer [SSortOrderSet](ssortorderset.md) Struktur beschrieben. 
   
@@ -71,11 +71,11 @@ Weitere Informationen zum Sortieren finden Sie unter [Sortieren und Kategorisier
 
 
 
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
 [SSortOrderSet](ssortorderset.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

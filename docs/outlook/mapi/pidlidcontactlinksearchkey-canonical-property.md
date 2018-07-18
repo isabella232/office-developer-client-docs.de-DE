@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactLinkSearchKey-Eigenschaft
+title: PidLidContactLinkSearchKey (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793475"
 ---
-# <a name="pidlidcontactlinksearchkey-canonical-property"></a>Kanonische PidLidContactLinkSearchKey-Eigenschaft
+# <a name="pidlidcontactlinksearchkey-canonical-property"></a>PidLidContactLinkSearchKey (kanonische Eigenschaft)
 
 **Betrifft**: Outlook 
   
@@ -33,7 +33,7 @@ Enthält die Liste der **SearchKeys** für den Kontakt mit verknüpften durch di
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 |**Länge in bytes**|**Beschreibung**|**Anmerkungen**|
 |:-----|:-----|:-----|

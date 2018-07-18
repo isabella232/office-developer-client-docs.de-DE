@@ -89,7 +89,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, aber nicht alle Einträge erfolgreich gelöscht wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIFolder::DeleteFolder** -Methode löscht einen Unterordner. In der Standardeinstellung **DeleteFolder** funktioniert nur bei leeren Ordnern, jedoch können Sie sie erfolgreich für nicht leeren Ordner durch zwei Werte festlegen: DEL_FOLDERS und DEL_MESSAGES. Nur leere Ordner oder die Ordner, in denen die DEL_FOLDERS und die DEL_MESSAGES Kennzeichen für den Aufruf **DeleteFolder** festlegen können gelöscht werden. DEL_FOLDERS können alle Unterordner des Ordners entfernt werden soll. DEL_MESSAGES können alle Nachrichten von den Ordner entfernt werden soll. 
   
@@ -123,7 +123,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

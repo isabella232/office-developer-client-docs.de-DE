@@ -49,7 +49,7 @@ S_OK
 
 
 
-[IMAPISecureMessage: IUnknown](imapisecuremessageiunknown.md)
+[IMAPISecureMessage : IUnknown](imapisecuremessageiunknown.md)
   
 [IMessage: IMAPIProp](imessageimapiprop.md)
 

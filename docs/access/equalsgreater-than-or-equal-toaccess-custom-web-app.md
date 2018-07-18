@@ -33,7 +33,7 @@ Vergleicht zwei Ausdrücke für größer als oder gleich.
 
 **Boolean**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Vergleichen von Ausdrücken ungleich Null ist das Ergebnis TRUE, wenn der linke Operand einen Wert größer oder gleich als der Rechte Operand besitzt; Das Ergebnis ist anderenfalls FALSE.
   

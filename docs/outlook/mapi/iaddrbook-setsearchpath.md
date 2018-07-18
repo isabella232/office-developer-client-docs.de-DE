@@ -54,7 +54,7 @@ MAPI_E_MISSING_REQUIRED_COLUMN
   
 > Eine der in der Struktur **SRowSet** beschriebenen Container haben dessen **PR_ENTRYID** -Eigenschaft nicht eingeschlossen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Rufen die **SetSearchPath** -Methode, um die Änderungen zu speichern, die an die Reihenfolge des Containers Suche vorgenommen wurden, die zum Auflösen von Namen mit der [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode verwendet wird, Clients und -Dienstanbieter. Der Suchpfad wird zwischen Instanzen von einer Sitzung gespeichert. 
   
@@ -70,7 +70,7 @@ Clients und Anbieter müssen nicht Aufrufen der [IMAPIProp::SaveChanges](imapipr
   
 [IAddrBook::GetSearchPath](iaddrbook-getsearchpath.md)
   
-[Kanonische PidTagContainerFlags-Eigenschaft](pidtagcontainerflags-canonical-property.md)
+[PidTagContainerFlags (kanonische Eigenschaft)](pidtagcontainerflags-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

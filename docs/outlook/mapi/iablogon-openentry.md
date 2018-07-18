@@ -76,7 +76,7 @@ MAPI_MODIFY
   
 > [out] Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 S_OK 
   
@@ -94,7 +94,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter ist nicht vom durch die Adressbuchanbieter erkanntes Format. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Aufrufen die **OpenEntry** -Methode, um einen Container öffnen messaging-Benutzer oder eine Verteilerliste. 
   
@@ -112,5 +112,5 @@ Das Objekt, das Sie aufgefordert werden, öffnen Sie möglicherweise ein Objekt 
 
 
 
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792268"
 ---
-# <a name="imapiofflinemgr--imapioffline"></a>IMAPIOfflineMgr: IMAPIOffline
+# <a name="imapiofflinemgr--imapioffline"></a>IMAPIOfflineMgr : IMAPIOffline
 
   
   
@@ -48,7 +48,7 @@ Registrieren für Benachrichtigung Rückrufe zum Ändern eines Benutzerkontos un
 | *Platzhalter-member*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 | *Platzhalter-member*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Öffnen einer offline-Objekt für ein Benutzerprofil-Konto mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)**, erhält ein Client eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt. 
   
@@ -60,10 +60,10 @@ Die meisten der Elemente in dieser Schnittstelle sind Platzhalter für die inter
 
 
 
-[IMAPIOffline: IUnknown](imapiofflineiunknown.md)
+[IMAPIOffline : IUnknown](imapiofflineiunknown.md)
 
 
-[Über die Offline State-API](about-the-offline-state-api.md)
+[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   

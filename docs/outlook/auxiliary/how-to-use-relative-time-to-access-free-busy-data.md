@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie relative Zeit Zugriff auf Frei/Gebucht-Daten
+title: Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten
 manager: soliver
 ms.date: 12/08/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790946"
 ---
-# <a name="use-relative-time-to-access-freebusy-data"></a>Verwenden Sie relative Zeit Zugriff auf Frei/Gebucht-Daten
+# <a name="use-relative-time-to-access-freebusy-data"></a>Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten
 
 Die [IFreeBusyData](ifreebusydata.md) -Schnittstelle in der Frei/Gebucht-API verwendet ein Konzept der relative Zeit, die die Anzahl der Minuten seit dem 1. Januar 1601, ausgedrückt als Weltzeit (UTC) ist und ist ein Wert vom Typ **LONG**. 
   

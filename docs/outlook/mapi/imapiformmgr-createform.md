@@ -73,7 +73,7 @@ MAPI_E_NO_INTERFACE
   
 > Die angeforderte Schnittstelle wird von der Form-Objekt nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::CreateForm** -Methode zum Öffnen eines Formulars zum Erstellen einer neuen Nachricht basierend auf der Nachrichtenklasse des Formulars. **CreateForm** Öffnet das Formular durch das Erstellen einer Instanz des Formular-Servers für das Formular in der angegebenen Form Informationen-Objekt beschrieben. Falls erforderlich, ruft **CreateForm** die [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) -Methode, um die Formularcode Server auf der Festplatte des Benutzers herunterladen. 
   
@@ -95,12 +95,12 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Starten eines Formulars-Servers](launching-a-form-server.md)
+[Starten eines Formularservers](launching-a-form-server.md)
 

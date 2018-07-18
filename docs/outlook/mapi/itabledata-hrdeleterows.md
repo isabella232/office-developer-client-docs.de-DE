@@ -59,7 +59,7 @@ S_OK
   
 > Zeilen der Tabelle gelöscht wurden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrDeleteRows** -Methode sucht und entfernt die Zeilen der Tabelle, die die Spalten enthalten, die die-Eigenschaft zum Festlegen anhand der **LpProps** Member der einzelnen **aRow** Einträge in der Zeile gezeigt entsprechen. Eine Indexspalte wird verwendet, um jede Zeile zu identifizieren. Diese Spalte muss das gleiche Eigenschafts-Tag als das Eigenschafts-Tag im _UlPropTagIndexColumn_ -Parameter im Aufruf der [CreateTable](createtable.md) -Funktion übergeben haben. 
   
@@ -79,9 +79,9 @@ Löschen von Zeilen, verringert sich nicht auf die Spalten der vorhandenen Tabel
   
 [ITableData::HrModifyRows](itabledata-hrmodifyrows.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

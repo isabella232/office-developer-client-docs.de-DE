@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidIsRecurring-Eigenschaft
+title: PidLidIsRecurring (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793648"
 ---
-# <a name="pidlidisrecurring-canonical-property"></a>Kanonische PidLidIsRecurring-Eigenschaft
+# <a name="pidlidisrecurring-canonical-property"></a>PidLidIsRecurring (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, ob das Objekt eine Terminserie zugeordnet ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert TRUE gibt an, dass das Objekt eine Terminserie oder eine Ausnahme (einschließlich einer verwaisten Instanz) darstellt. Den Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass das Objekt eine einzelne Instanz darstellt. Beachten Sie den Unterschied zwischen dieser Eigenschaft und die **PR_RECURRING** ([PidLidRecurring](pidlidrecurring-canonical-property.md))-Eigenschaft.
   

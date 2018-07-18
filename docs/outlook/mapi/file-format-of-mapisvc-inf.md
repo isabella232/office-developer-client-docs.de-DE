@@ -37,7 +37,7 @@ MapiSvc.inf ist in verknüpften hierarchische Abschnitte unterteilt:
     
 Die folgende Abbildung zeigt die Organisation der einer typischen Datei "MapiSvc.inf". Es gibt drei Message-Dienste: AB, MsgService und MS. Der Name der rechts vom Gleichheitszeichen auf für jeden Nachrichtendienst ist Anzeigename für den Dienst. Jede Messagingdiensts verfügt über einen eigenen Abschnitt an anderer Stelle in der Datei, die mit einem oder mehreren Service Provider Abschnitten verknüpft ist. Es ist ein Dienst Anbieterabschnitt für jede Dienstanbieter, die den Dienst gehört. Die AB und MS Message-Dienste sind für die einmalige Dienste, während drei-Dienstanbieter mit dem Dienst MsgService gehören.
   
-**Organisation der Datei MapiSvc.inf**
+**Organisation der Datei "MapiSvc.inf"**
   
 ![Organisation der Datei MapiSvc.inf] (media/amapi_30.gif "Organisation der Datei MapiSvc.inf")
   

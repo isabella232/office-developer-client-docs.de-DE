@@ -58,7 +58,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulCtlType**
   
@@ -168,7 +168,7 @@ DT_SET_IMMEDIATE
   
 > Eine Struktur, die die Daten für das Steuerelement enthält und **PR_CONTROL_STRUCTURE** ([PidTagControlStructure](pidtagcontrolstructure-canonical-property.md))-Eigenschaft des Steuerelements entspricht. Jede Art von Steuerelement verfügt über eine andere Struktur.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **DTCTL** beschreibt ein Steuerelement eines beliebigen Typs. Die meisten ihrer Member werden verwendet, um Eigenschaften für das Steuerelement festzulegen. 
   

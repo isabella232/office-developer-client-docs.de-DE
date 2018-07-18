@@ -59,7 +59,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber eine oder mehrere adressbuchanbietern implementierte konnte nicht geladen werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::OpenAddressBook** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter, die in der Regel eng gekoppelten Nachricht speichern und transport-Anbieter, rufen Sie **OpenAddressBook** , um auf das Adressbuch zuzugreifen. Der zurückgegebene **IAddrBook** Zeiger kann für eine Vielzahl von Address Book Aufgaben, einschließlich Adresse Adressbuch-Containern und Suchen von messaging-Benutzer und Anzeige von Adresse Dialogfelder Öffnen verwendet werden. 
   
@@ -73,7 +73,7 @@ Wenn eine oder mehrere adressbuchanbietern implementierte konnte nicht geladen w
 
 
 
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
   
 [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md)
   

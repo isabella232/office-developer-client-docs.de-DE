@@ -135,7 +135,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Clientanwendungen rufen Sie die Funktion MAPILogonEx zur Anmeldung bei einer Sitzung mit der messaging-System. Alle Zeichenfolgen, die übergeben und zurückgegeben, zu und von MAPI-Aufrufe Null endende werden und müssen in der aktuellen Zeichensatz angegeben werden oder Codepage des aufrufenden Client oder Anbieter des Betriebssystems.
   

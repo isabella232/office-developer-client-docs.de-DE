@@ -1,5 +1,5 @@
 ---
-title: Zum Beispiel Offline State-Add-in
+title: Informationen zum Offlinestatus-Add-In-Beispiel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791238"
 ---
-# <a name="about-the-sample-offline-state-add-in"></a>Zum Beispiel Offline State-Add-in
+# <a name="about-the-sample-offline-state-add-in"></a>Informationen zum Offlinestatus-Add-In-Beispiel
 
   
   
@@ -23,19 +23,19 @@ Die Offline Zustand-API unterstützt, der angibt, Änderungen in Verbindungsstat
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-- [Installieren das Beispiel Offline State-Add-in](installing-the-sample-offline-state-add-in.md)
+- [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
     
 - Erläutert das Herunterladen und Offline-Status Beispiel-Add-in installieren.
     
-- [Einrichten von einem Offline State Add-in](setting-up-an-offline-state-add-in.md)
+- [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
     
 - Beschreibt, wie Verbindung, Initialisierung und Setup-Funktionen zu implementieren, um ein Add-in-offline-Status zu verwenden.
     
-- [Überwachung Verbindungsstatus ändert mit einer Offline State-Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+- [Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
     
 - Beschreibt, wie die **[HrOpenOfflineObj](hropenofflineobj.md)** -Funktion zu verwenden, um ein offline-Objekt zum Überwachen und Ändern des Verbindungsstatus abzurufen. 
     
-- [Trennen der Verbindung ein Offline State-Add-in](disconnecting-an-offline-state-add-in.md)
+- [Trennen eines Offlinestatus-Add-Ins](disconnecting-an-offline-state-add-in.md)
     
 - Beschreibt, wie ordnungsgemäß beendet und Bereinigen von offline-Status-Add-in, wenn das Add-in getrennt wird.
     
@@ -43,5 +43,5 @@ Die Offline Zustand-API unterstützt, der angibt, Änderungen in Verbindungsstat
 
 
 
-[Über die Offline State-API](about-the-offline-state-api.md)
+[Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
 

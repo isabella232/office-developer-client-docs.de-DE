@@ -33,9 +33,9 @@ MAPI definiert viele andere Arten von Objekten, die jeweils durch eine oder mehr
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [MAPI-Konzepte (engl.)](mapi-concepts.md)

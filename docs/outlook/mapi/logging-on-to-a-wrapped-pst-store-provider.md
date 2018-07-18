@@ -159,9 +159,9 @@ STDMETHODIMP CMSProvider::SpoolerLogon (
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Zum Beispiel umgebrochen PST-Anbieter](about-the-sample-wrapped-pst-store-provider.md) 
-- [Installieren des Beispiels umfließendem PST-Anbieter](installing-the-sample-wrapped-pst-store-provider.md) 
-- [Initialisieren einen Anbieter für umbrochenen PST anmelden](initializing-a-wrapped-pst-store-provider.md)
-- [Verwenden eines Anbieters gepackten PST-Speichers](using-a-wrapped-pst-store-provider.md)
-- [Herunterfahren von einem Anbieter gepackten PST-Datei](shutting-down-a-wrapped-pst-store-provider.md)
+- [Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher](about-the-sample-wrapped-pst-store-provider.md) 
+- [Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher](installing-the-sample-wrapped-pst-store-provider.md) 
+- [Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
+- [Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
+- [Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
 

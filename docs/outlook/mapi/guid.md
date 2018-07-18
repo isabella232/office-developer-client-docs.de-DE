@@ -42,7 +42,7 @@ typedef struct _GUID
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **Data1**
   
@@ -60,7 +60,7 @@ typedef struct _GUID
   
 > Ein Array von nicht signierte Zeichen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **GUID** -Strukturen werden in MAPI wie folgt verwendet: 
   

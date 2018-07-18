@@ -51,5 +51,5 @@ Verwenden Sie den **PT_BINARY** -Typ an, dass gezählte Bytearray zurück. In di
 
 
 
-[�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+[Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

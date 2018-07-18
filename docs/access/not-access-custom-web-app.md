@@ -31,7 +31,7 @@ Der Operator **Not** enthält die folgenden Argumente.
 |:-----|:-----|
 | *Boolescher Ausdruck*  <br/> |Ein gültiger boolescher Ausdruck.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgende Tabelle zeigt die Ergebnisse des Vergleichs TRUE und FALSE Werte mithilfe des Operators **Not** . 
   

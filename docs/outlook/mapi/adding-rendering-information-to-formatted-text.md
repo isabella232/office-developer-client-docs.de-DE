@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Informationen zum Rendern formatierter Text
+title: Hinzufügen von Renderinformationen zu formatiertem Text
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791265"
 ---
-# <a name="adding-rendering-information-to-formatted-text"></a>Hinzufügen von Informationen zum Rendern formatierter Text
+# <a name="adding-rendering-information-to-formatted-text"></a>Hinzufügen von Renderinformationen zu formatiertem Text
 
   
   

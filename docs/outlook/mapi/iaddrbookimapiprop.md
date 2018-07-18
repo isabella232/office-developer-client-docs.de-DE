@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792007"
 ---
-# <a name="iaddrbook--imapiprop"></a>IAddrBook: IMAPIProp
+# <a name="iaddrbook--imapiprop"></a>IAddrBook : IMAPIProp
 
   
   
@@ -48,7 +48,7 @@ Unterstützt den Zugriff auf das MAPI-Adressbuch und enthält Vorgänge wie das 
 |[CreateOneOff](iaddrbook-createoneoff.md) <br/> |Erstellt einen Eintrag Bezeichner für eine einmalige Adresse.  <br/> |
 |[NewEntry](iaddrbook-newentry.md) <br/> |Fügt einen neuen Empfänger um eine Adressbuchcontainer oder die Empfängerliste von ausgehenden Nachrichten.  <br/> |
 |[ResolveName](iaddrbook-resolvename.md) <br/> |Führt Namensresolution Eintragsbezeichner an Empfänger in der Empfängerliste zuweisen.  <br/> |
-|[Address](iaddrbook-address.md) <br/> |Zeigt das Dialogfeld Adressbuch von Outlook-Adresse an.  <br/> |
+|[Adresse](iaddrbook-address.md) <br/> |Zeigt das Dialogfeld Adressbuch von Outlook-Adresse an.  <br/> |
 |[Details](iaddrbook-details.md) <br/> |Zeigt ein Dialogfeld, das Details zu einem bestimmten Buch Adresseintrag anzeigt.  <br/> |
 |**RecipOptions** <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
 |**QueryDefaultRecipOpt** <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |

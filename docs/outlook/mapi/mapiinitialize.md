@@ -1,5 +1,5 @@
 ---
-title: "\"MAPIInitialize\""
+title: MAPIInitialize
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793136"
 ---
-# <a name="mapiinitialize"></a>"MAPIInitialize"
+# <a name="mapiinitialize"></a>MAPIInitialize
 
   
   
@@ -51,7 +51,7 @@ S_OK
   
 > MAPI-Subsystems wurde erfolgreich initialisiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Referenz für das MAPI-Subsystem und die [MAPIUninitialize](mapiuninitialize.md) Funktion dekrementiert zählen **"MAPIInitialize"** Funktion Schritten für die interne verweiszählung. Die Anzahl der Anrufe an eine Funktion muss daher die Anzahl der Aufrufe der anderen entsprechen. **"MAPIInitialize"** gibt S_OK zurück, wenn MAPI zuvor nicht initialisiert wurde. 
   

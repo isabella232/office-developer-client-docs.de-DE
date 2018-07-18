@@ -68,5 +68,5 @@ Rufen Sie die [MAPIOpenFormMgr](mapiopenformmgr.md) -Funktion einmal während de
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPI-Formulare](mapi-forms.md)
-- [Entwickeln von MAPI-Formular-Servern](developing-mapi-form-servers.md)
+- [Entwickeln von MAPI-Formularservern](developing-mapi-form-servers.md)
 

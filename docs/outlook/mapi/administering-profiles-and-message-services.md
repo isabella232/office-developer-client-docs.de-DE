@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Benutzerprofilen und Message-Dienste
+title: Verwalten von Profilen und Nachrichtendiensten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791270"
 ---
-# <a name="administering-profiles-and-message-services"></a>Verwalten von Benutzerprofilen und Message-Dienste
+# <a name="administering-profiles-and-message-services"></a>Verwalten von Profilen und Nachrichtendiensten
 
   
   
@@ -49,31 +49,31 @@ Achten Sie darauf, dass in Ihre Unterstützung von Profil- und Nachricht verwalt
   
 > Beschreibt, wie ein Profil zu löschen.
     
-[Ein Standardprofil festlegen](setting-a-default-profile.md)
+[Festlegen eines Standardprofils](setting-a-default-profile.md)
   
 > Beschreibt, wie ein Standardprofil festgelegt.
     
-[Suchen einen Profilnamen](finding-a-profile-name.md)
+[Suchen nach einem Profilnamen](finding-a-profile-name.md)
   
 > Beschreibt, wie ein Profil einen Namen zu suchen.
     
-[Hinzufügen eines Dienstes Nachricht](adding-a-message-service.md)
+[Hinzufügen eines Nachrichtendiensts](adding-a-message-service.md)
   
 > Beschreibt, wie einen Nachrichtendienst hinzufügen.
     
-[Konfigurieren einer Nachricht](configuring-a-message-service.md)
+[Konfigurieren eines Nachrichtendiensts](configuring-a-message-service.md)
   
 > Beschreibt, wie eine Message Service konfigurieren.
     
-[Kopieren eines Nachricht-Diensts](copying-a-message-service.md)
+[Kopieren eines Nachrichtendiensts](copying-a-message-service.md)
   
 > Beschreibt, wie eine Messagingdiensts zu einem Profil zu kopieren.
     
-[Löschen einer Nachricht-Dienstes](deleting-a-message-service.md)
+[Löschen eines Nachrichtendiensts](deleting-a-message-service.md)
   
 > Beschreibt, wie eine Messagingdiensts zu löschen.
     
-[Hinzufügen oder Löschen von Anbietern in einem Message-Dienst](adding-or-deleting-providers-in-a-message-service.md)
+[Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst](adding-or-deleting-providers-in-a-message-service.md)
   
 > Beschreibt das Hinzufügen oder Löschen von Anbietern in einem Message-Dienst.
     

@@ -28,6 +28,6 @@ Eine Liste der MAPI-Headerdateien finden Sie unter [Headerdateien häufig verwen
 ## <a name="see-also"></a>Siehe auch
 
 - [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md) 
-- [Link zu MAPI-Funktionen](how-to-link-to-mapi-functions.md)
+- [Verweisen auf MAPI-Funktionen](how-to-link-to-mapi-functions.md)
 - [H�ufig verwendete Headerdateien](commonly-used-header-files.md)
 

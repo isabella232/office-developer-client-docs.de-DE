@@ -27,7 +27,7 @@ Alle von MAPI-Objekten implementiert Schnittstellen erben letztlich von [IUnknow
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IMAPIProp: IUnknown](imapipropiunknown.md) 
-- [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+- [IMAPIProp : IUnknown](imapipropiunknown.md) 
+- [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 - [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
 

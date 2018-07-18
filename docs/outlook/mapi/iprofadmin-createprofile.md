@@ -72,7 +72,7 @@ MAPI_E_NO_ACCESS
   
 > Das angegebene neue Profil ist bereits vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProfAdmin::CreateProfile** -Methode erstellt ein neues Profil. 
   
@@ -98,9 +98,9 @@ Der Parameter _LpszPassword_ muss NULL oder einen Zeiger auf eine leere Zeichenf
 
 [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)
   
-[IMsgServiceAdmin:: CreateMsgService](imsgserviceadmin-createmsgservice.md)
+[IMsgServiceAdmin::CreateMsgService](imsgserviceadmin-createmsgservice.md)
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

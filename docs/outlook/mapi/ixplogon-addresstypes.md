@@ -97,5 +97,5 @@ Ein Transportdienstes, das nicht unterstützt werden ausgehende Nachrichten, die
   
 [MAPIUID](mapiuid.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

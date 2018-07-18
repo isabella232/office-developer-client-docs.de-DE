@@ -58,7 +58,7 @@ S_OK
   
 > Der Sperrstatus der Nachricht wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::SetLockState** -Methode sperrt oder entsperrt eine Nachricht. **SetLockState** kann nur durch die MAPI-Warteschlange aufgerufen werden, während sie die Nachricht gesendet hat. 
   

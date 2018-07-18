@@ -43,7 +43,7 @@ typedef struct _DTBLPAGE
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszLabel**
   
@@ -65,7 +65,7 @@ PARAMETER MAPI_UNICODE
   
 > Ein eindeutiger Bezeichner für die Seite in der Zeichenfolge, die durch das **UlbLpszComponent** -Element definiert. Das Element **UlbLpszComponent** und der **UlContext** Member müssen beide ungleich NULL für die Schaltfläche **Hilfe** zu sein. Wenn dieser Bezeichner 0 (null ist) und die Komponente Zeichenfolge NULL ist, ist keine Hilfe mit der Seite verknüpft ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLPAGE** beschreibt eine Seite ein Steuerelement, das verwendet wird, um mehrere zugehörige Dialogfelder zu trennen. In der Regel werden diese Dialogfelder Eigenschaftenseiten für die Konfiguration, Nachricht oder Empfänger Optionen anzeigen. Durch Klicken auf die Registerkarte, kann der Benutzer von einem Arbeitsblatt wechseln. 
   

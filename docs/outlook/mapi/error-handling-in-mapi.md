@@ -25,7 +25,7 @@ MAPI auf 32-Bit-Plattformen funktioniert nur mit HRESULT-Werte.
   
 Die folgende Abbildung zeigt das HRESULT-Format für 32-Bit-Plattformen.
   
-**HRESULT-format**
+**HRESULT-Format**
   
 ![HRESULT-format] (media/amapi_49.gif "HRESULT-format")
   

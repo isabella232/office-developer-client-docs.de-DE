@@ -41,7 +41,7 @@ In diesem Thema empfiehlt bewährte Methoden für Administratoren, MAPI-Clients 
 
 [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)
   
-[Schnelles Herunterfahren (Übersicht)](fast-shutdown-overview.md)
+[Übersicht über das schnelle Herunterfahren](fast-shutdown-overview.md)
   
-[Schnelles Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md)
+[Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Konstanten (Konto Management-API)
+title: Konstanten (Account Management API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790956"
 ---
-# <a name="constants-account-management-api"></a>Konstanten (Konto Management-API)
+# <a name="constants-account-management-api"></a>Konstanten (Account Management API)
 
 Dieses Thema enthält Konstantendefinitionen, Klasse und Schnittstellenbezeichner, für das Konto Verwaltungs-API.
   

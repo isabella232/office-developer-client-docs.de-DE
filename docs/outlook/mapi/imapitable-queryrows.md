@@ -67,7 +67,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Der Parameter _IRowCount_ wird auf 0 (null) festgelegt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **Die QueryRows** Ruft eine oder mehrere Zeilen mit Daten aus einer Tabelle ab. Der Wert des Parameters _IRowCount_ wirkt sich auf der Ausgangspunkt für das Abrufen. _IRowCount_ positiv darf, werden vorwärts, ab der aktuellen Position Zeilen gelesen. Wenn _IRowCount_ negativ ist, setzt **QueryRows** Startpunkt durch Verschieben rückwärts die angegebene Anzahl von Zeilen zurück. Nach dem Zurücksetzen von des Cursors werden die Zeilen in der Reihenfolge gelesen. 
   
@@ -137,11 +137,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[' Srow '](srow.md)
+[SRow](srow.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

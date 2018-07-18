@@ -27,7 +27,7 @@ Die folgenden Einträge alphabetisch sortierte enthält Dokumentation für die D
   
 ||
 |:-----|
-|[Lesezeichen](bookmark.md) <br/> |
+|[BOOKMARK](bookmark.md) <br/> |
 |[DNHIER](dnhier.md) <br/> |
 |[DNTBL](dntbl.md) <br/> |
 |[DNTBLE](dntble.md) <br/> |
@@ -50,7 +50,7 @@ Die folgenden Einträge alphabetisch sortierte enthält Dokumentation für die D
 |[SKEY](skey.md) <br/> |
 |[SYNC](sync.md) <br/> |
 |[SYNCCONT](synccont.md) <br/> |
-|[SYNCHRONISIERUNGSSTATUS](syncstate.md) <br/> |
+|[SYNCSTATE](syncstate.md) <br/> |
 |[TCHAR](tchar.md) <br/> |
 |[UPDEL](updel.md) <br/> |
 |[UPDELE](updele.md) <br/> |

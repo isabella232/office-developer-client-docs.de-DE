@@ -1,5 +1,5 @@
 ---
-title: Verknüpfen mit MAPI-DLLs
+title: Verknüpfen mit MAPI-DLL-Dateien
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792888"
 ---
-# <a name="linking-to-the-mapi-dlls"></a>Verknüpfen mit MAPI-DLLs
+# <a name="linking-to-the-mapi-dlls"></a>Verknüpfen mit MAPI-DLL-Dateien
 
   
   
@@ -29,7 +29,7 @@ MAPI bietet Typ-Definition-Anweisungen in der MAPIX. H-Headerdatei für jede der
   
 [MAPIUninitialize](mapiuninitialize.md)
   
-["MAPIInitialize"](mapiinitialize.md)
+[MAPIInitialize](mapiinitialize.md)
   
 [MAPIAllocateBuffer](mapiallocatebuffer.md)
   
@@ -37,7 +37,7 @@ MAPI bietet Typ-Definition-Anweisungen in der MAPIX. H-Headerdatei für jede der
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-["MAPIAdminProfiles"](mapiadminprofiles.md)
+[MAPIAdminProfiles](mapiadminprofiles.md)
   
 Verwenden Sie diese Typdefinitionen ordnungsgemäß die entsprechenden Einstiegspunkte aufrufen, wenn Sie explizit MAPI-DLLs verknüpfen.
   

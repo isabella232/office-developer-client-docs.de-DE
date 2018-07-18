@@ -54,7 +54,7 @@ typedef struct _ADRPARM
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **cbABContEntryID**
   
@@ -160,7 +160,7 @@ DIALOG_SDI
   
 > Zeiger auf eine **SRestriction** -Struktur, die die Address Book Container beschränkt, die Adresseinträge im Dialogfeld anzuzeigende bereitstellen können. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 **ADRPARM** Strukturen werden von Clients und -Dienstanbieter verwendet, um das Aussehen und Verhalten der MAPI-allgemeine Adresse Dialogfelder zu steuern. Es gibt zwei Arten des Dialogfelds Adresse: ohne Modus und modal. Einige der Elemente in der Struktur **ADRPARM** gelten für beide Versionen des Dialogfelds, aber einige gelten nur für eine der beiden Versionen. In der folgenden Tabelle betrifft die Mitglieder einer **ADRPARM** Struktur für ihre Verwendung mit der Standarddialogfelder Adresse. 
   
@@ -173,8 +173,8 @@ DIALOG_SDI
 |**lpfnABSDI** <br/> |Ungebunden  <br/> |
 |**LpfnDismiss** und **lpvDismissContext** <br/> |Ungebunden  <br/> |
 |**lpszCaption** <br/> |Modale und nicht modale  <br/> |
-|**lpszNewEntryTitle** <br/> |Modales  <br/> |
-|**LpszDestWellsTitle**, **cDestFields**, **nDestFieldFocus**, **LppszDestTitles**und **lpulDestComps** <br/> |Modales  <br/> |
+|**lpszNewEntryTitle** <br/> |Modal  <br/> |
+|**LpszDestWellsTitle**, **cDestFields**, **nDestFieldFocus**, **LppszDestTitles**und **lpulDestComps** <br/> |Modal  <br/> |
 |**lpContRestriction** <br/> |Modale und nicht modale  <br/> |
 |**lpHierRestriction** <br/> |Modale und nicht modale  <br/> |
    

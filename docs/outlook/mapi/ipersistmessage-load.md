@@ -60,7 +60,7 @@ S_OK
   
 > Das Formular wurde erfolgreich geladen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IPersistMessage::Load** -Methode, um ein Formular für eine vorhandene Nachricht zu laden. 
   
@@ -86,20 +86,20 @@ Wenn keine Fehler auftreten, geben Sie S_OK zurück.
 
 
 
-[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
   
-[Kanonische PidTagMessageStatus-Eigenschaft](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[Nicht initialisierten Zustand](uninitialized-state.md)
+[Status „Nicht initialisiert“](uninitialized-state.md)
   
-[HandsOffAfterSave Zustand](handsoffaftersave-state.md)
+[Status „HandsOffAfterSave“](handsoffaftersave-state.md)
   
-[HandsOffFromNormal Zustand](handsofffromnormal-state.md)
+[Status „HandsOffFromNormal“](handsofffromnormal-state.md)
   
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 
 
 [IPersistStorage](http://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)

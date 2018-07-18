@@ -41,7 +41,7 @@ S_OK
   
 > Die Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Form-Objekt ruft die **IMAPIViewAdviseSink::OnSubmitted** -Methode auf, nachdem ein Aufruf von [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md) erfolgreich zurückgegeben hat. 
   
@@ -57,5 +57,5 @@ Weitere Informationen zum Formular Benachrichtigungen finden Sie unter [Senden u
 
 [IMAPIMessageSite::SubmitMessage](imapimessagesite-submitmessage.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

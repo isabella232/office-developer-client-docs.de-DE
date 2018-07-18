@@ -50,7 +50,7 @@ FALSE
   
 > Eine im Leerlauf Routine mit dem Prototyp **FNIDLE** sollte immer FALSE zurück. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die spezifische Funktionen der der im Leerlauf Routine wird durch die Implementierung bestimmt Clientanwendung oder den Dienstanbieter. 
   
@@ -60,7 +60,7 @@ Der Client oder Anbieter muss die MAPI-Funktion [MAPIInitIdle](mapiinitidle.md) 
   
 Die folgenden Funktionen Umgang mit der MAPI-Modul im Leerlauf und im Leerlauf Routinen basierend auf den FNIDLE Funktionsprototyp: 
   
-|**Im Leerlauf routinemäßige-Funktion**|**Verwendung**|
+|**Im Leerlauf routinemäßige-Funktion**|**Nutzung**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten im Leerlauf Routine.  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte im Leerlauf Routine aus dem MAPI-System.  <br/> |

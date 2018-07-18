@@ -78,7 +78,7 @@ S_OK
   
 > Der Bezeichner des Eingangs wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::CreateOneOff** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter anrufen **CreateOneOff** zum Erstellen eines Eintrags-ID für einen einmaligen Empfänger (Empfänger, die nicht zu keiner der Container aus der aktuell geladenen adressbuchanbietern implementierte gehört). 
   
@@ -96,9 +96,9 @@ Unterstützen Sie der Transport Neutral Encapsulation Format (TNEF), und verwend
 
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
   
-[Kanonische PidTagSendRichInfo-Eigenschaft](pidtagsendrichinfo-canonical-property.md)
+[PidTagSendRichInfo (kanonische Eigenschaft)](pidtagsendrichinfo-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

@@ -30,7 +30,7 @@ Suchvorgänge gefunden ein Textausdruck für einen anderen Ausdruck und gibt des
 | *WithinText*  <br/> |Ja  <br/> |Der Textausdruck, der durchsucht werden soll.  <br/> |
 | *Start*  <br/> |Nein  <br/> |Eine ganze Zahl, die den Speicherort in *WithinText* zum Starten der Suche angibt. Wenn *Starten* nicht angegeben ist, eine negative Zahl ist oder 0 ist, beginnt die Suche am Anfang des *WithinText* .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn *TextExpression* oder *WithinText* NULL ist, gibt *CharIndex* NULL zurück. 
   

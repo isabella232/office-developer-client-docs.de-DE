@@ -80,5 +80,5 @@ Nachricht-Anbieter implementiert die **IMSLogon::CompareEntryIDs** -Methode zum 
 
 
 
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

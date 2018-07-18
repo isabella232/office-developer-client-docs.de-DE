@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792881"
 ---
-# <a name="itnef--iunknown"></a>ITnef: IUnknown
+# <a name="itnef--iunknown"></a>ITnef : IUnknown
 
   
   

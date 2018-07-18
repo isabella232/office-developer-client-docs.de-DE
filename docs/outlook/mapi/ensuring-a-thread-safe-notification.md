@@ -1,5 +1,5 @@
 ---
-title: Sicherstellen, dass eine Benachrichtigung threadsicheren
+title: Sicherstellen einer threadsicheren Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791627"
 ---
-# <a name="ensuring-a-thread-safe-notification"></a>Sicherstellen, dass eine Benachrichtigung threadsicheren
+# <a name="ensuring-a-thread-safe-notification"></a>Sicherstellen einer threadsicheren Benachrichtigung
 
   
   

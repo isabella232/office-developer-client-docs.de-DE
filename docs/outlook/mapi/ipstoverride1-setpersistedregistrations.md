@@ -50,7 +50,7 @@ S_OK
   
 > Der Funktionsaufruf war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beibehaltene Registrierungen können die Leistung der Anwendung, wie Outlook und Windows-Desktopsuche beeinträchtigen, die PST-Dateien öffnen. Berücksichtigen Sie die Auswirkung auf die Leistung bei der Verwendung oder die Verwendung der permanenten Registrierungen erweitern.
   
@@ -59,6 +59,6 @@ Beibehaltene Registrierungen können die Leistung der Anwendung, wie Outlook und
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IPSTOVERRIDE1: IUnknown](ipstoverride1iunknown.md) 
-- [IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+- [IPSTOVERRIDE1 : IUnknown](ipstoverride1iunknown.md) 
+- [IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Service Provider Anmeldung
+title: Implementieren einer Dienstanbieteranmeldung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792572"
 ---
-# <a name="implementing-service-provider-logon"></a>Implementieren von Service Provider Anmeldung
+# <a name="implementing-service-provider-logon"></a>Implementieren einer Dienstanbieteranmeldung
 
 **Betrifft**: Outlook 
   
@@ -67,5 +67,5 @@ Die obigen Liste der Vorgänge wird eine minimale Implementierung für eine Serv
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Starten von einem Dienstanbieter](starting-a-service-provider.md)
+- [Starten eines Dienstanbieters](starting-a-service-provider.md)
 

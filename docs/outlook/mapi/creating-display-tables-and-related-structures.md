@@ -41,7 +41,7 @@ Das Steuerelement Struktur Mitglied einer **DTCTL** Struktur beschreibt die Date
   
 In der folgenden Abbildung wird die Beziehung zwischen den drei Typen von Tabellenstrukturen anzeigen angezeigt. Das Dialogfeld durch diese zeigt die Tabelle beschriebenen hat zwei Steuerelemente: eine Bezeichnung und ein Edit-Steuerelement. Die Struktur **DTBLLBX** hat ein Label-Offset-Element, wie werden einige der Steuerelement-Strukturen, die beschreibt die Zeichenfolge für die Bezeichnung an, deren beginnt. Label-Zeichenfolgen werden in der Regel im Arbeitsspeicher, die unmittelbar auf der Struktur platziert. 
   
-**Tabellenstrukturen anzeigen**
+**Anzeigetabellenstrukturen**
   
 ![Tabellenstrukturen anzeigen] (media/dtstruct.gif "Tabellenstrukturen anzeigen")
   

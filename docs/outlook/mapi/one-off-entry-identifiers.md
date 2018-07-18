@@ -21,7 +21,7 @@ ms.locfileid: "19793293"
   
 Einmaligen-Eintragsbezeichner werden erstellt, indem MAPI in der **IAddrBook::CreateOneOff** -Methode und Komponenten, die keinen Zugriff auf die MAPI-Subsystems, wie beispielsweise Gateway-Komponenten. For more information, see [IAddrBook::CreateOneOff](iaddrbook-createoneoff.md). Die folgende Abbildung zeigt das Format einer einmaligen Eintrags-ID an.
   
-**Format von Eintragsbezeichner mit Einmaliger Eingabe**
+**Format von Eintragsbezeichner mit einmaliger Eingabe**
   
 ![Format von Eintragsbezeichner mit Einmaliger Eingabe] (media/amapi_69.gif "Format von Eintragsbezeichner mit Einmaliger Eingabe")
   

@@ -1,5 +1,5 @@
 ---
-title: Implementierung der Anzeige-Tabelle
+title: Anzeigen der Tabellenimplementierung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791544"
 ---
-# <a name="display-table-implementation"></a>Implementierung der Anzeige-Tabelle
+# <a name="display-table-implementation"></a>Anzeigen der Tabellenimplementierung
 
   
   

@@ -63,7 +63,7 @@ MAPI_E_NOT_FOUND
   
 > Die Nachrichtenklasse in der _SzMessageClass_ -Parameter übergeben entspricht nicht die Nachrichtenklasse für jedes Formular im Formular-Container. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clientanwendungen rufen Sie die **IMAPIFormContainer::ResolveMessageClass** -Methode, um eine Nachrichtenklasse zu einem Formular in einem Formular Container zu beheben. Das Formular Informationen-Objekt zurückgegeben, die im Parameter _Ppforminfo_ bietet weitere Zugriff auf die Eigenschaften des Formulars mit der angegebenen Nachrichtenklasse. 
   
@@ -85,11 +85,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 
 
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
   
 [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md)
   
 [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md)
   
-[IMAPIFormContainer: IUnknown](imapiformcontaineriunknown.md)
+[IMAPIFormContainer : IUnknown](imapiformcontaineriunknown.md)
 

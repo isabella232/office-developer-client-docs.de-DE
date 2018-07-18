@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidDistributionListChecksum-Eigenschaft
+title: PidLidDistributionListChecksum (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793496"
 ---
-# <a name="pidliddistributionlistchecksum-canonical-property"></a>Kanonische PidLidDistributionListChecksum-Eigenschaft
+# <a name="pidliddistributionlistchecksum-canonical-property"></a>PidLidDistributionListChecksum (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die 32-Bit-CRC polynomial Prüfsumme für eine persönliche Verteilerliste 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft kann verwendet werden, zu erkennen, wann die **DispidDLMembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md))-Eigenschaft aktualisiert wurde, ohne die Aktualisierung der anderen persönlichen Verteilerliste Liste Elementeigenschaften durch den CRC-32 auf dem vorhandenen computing der Wert der **DispidDLMembers** und diese mit dem Wert der Eigenschaft **DispidDLChecksum** zu vergleichen. 
   

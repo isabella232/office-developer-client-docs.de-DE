@@ -1,5 +1,5 @@
 ---
-title: Trennen der Verbindung ein Offline State-Add-in
+title: Trennen eines Offlinestatus-Add-Ins
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19791542"
 ---
-# <a name="disconnecting-an-offline-state-add-in"></a>Trennen der Verbindung ein Offline State-Add-in
+# <a name="disconnecting-an-offline-state-add-in"></a>Trennen eines Offlinestatus-Add-Ins
 
 **Betrifft**: Outlook 
   
@@ -145,9 +145,9 @@ void UnloadLibraries()
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Offline State-API](about-the-offline-state-api.md)
-- [Installieren das Beispiel Offline State-Add-in](installing-the-sample-offline-state-add-in.md)
-- [Zum Beispiel Offline State-Add-in](about-the-sample-offline-state-add-in.md)
-- [Einrichten von einem Offline State Add-in](setting-up-an-offline-state-add-in.md)
-- [Überwachung Verbindungsstatus ändert mit einer Offline State-Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
+- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+- [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
+- [Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
+- [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
+- [Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md)
 

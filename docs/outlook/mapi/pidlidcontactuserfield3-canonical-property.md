@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactUserField3-Eigenschaft
+title: PidLidContactUserField3 (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793495"
 ---
-# <a name="pidlidcontactuserfield3-canonical-property"></a>Kanonische PidLidContactUserField3-Eigenschaft
+# <a name="pidlidcontactuserfield3-canonical-property"></a>PidLidContactUserField3 (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das dritte Feld auf den Kontakt, der für verschiedene Zwecke für den Kont
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält Text, der mit einer anderen Kontakt-spezifische Eigenschaft zusammenhängt.
   

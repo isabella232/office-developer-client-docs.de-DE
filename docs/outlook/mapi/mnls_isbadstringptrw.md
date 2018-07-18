@@ -43,7 +43,7 @@ BOOL MNLS_IsBadStringPtrW(
 
 Gibt einen booleschen Wert, der True, wenn die Zeichenfolge beschädigt ist.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Funktion umschließt [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx). Weitere Informationen finden Sie unter [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).
   

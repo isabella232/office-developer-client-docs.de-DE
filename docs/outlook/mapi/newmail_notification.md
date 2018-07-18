@@ -45,7 +45,7 @@ typedef struct _NEWMAIL_NOTIFICATION
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cbEntryID**
   
@@ -79,7 +79,7 @@ PARAMETER MAPI_UNICODE
   
 > Bitmaske aus Flags, die den aktuellen Status der neu empfangene Nachricht beschreibt. Der **UlMessageFlags** -Member ist eine Kopie der Nachricht **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **NEWMAIL_NOTIFICATION** -Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Wenn das **Info** Mitglied einer **Benachrichtigung** Struktur eine **NEWMAIL_NOTIFICATION** Struktur enthält, das **UlEventType** Mitglied der **Benachrichtigung** Struktur auf festgelegt ist _FnevNewMail._
   
@@ -91,7 +91,7 @@ Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der fo
 |:-----|:-----|
 |[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
 |[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Benachrichtigung bei unterstützenden](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -99,7 +99,7 @@ Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der fo
 
 [Benachrichtigung](notification.md)
   
-[Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)
+[PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

@@ -107,7 +107,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::ShowForm** -Methode zeigt ein Formular für Nachrichten, die von der **IMAPISession::PrepareForm** -Methode vorbereitet wurden. 
   

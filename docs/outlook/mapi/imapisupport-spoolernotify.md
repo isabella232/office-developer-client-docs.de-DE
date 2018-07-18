@@ -88,7 +88,7 @@ S_OK
   
 > Die Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::SpoolerNotify** -Methode wird für die Nachricht implementiert speichern und transport-Provider Unterstützungsobjekte. Diese Anbieter rufen Sie **SpoolerNotify** , um die MAPI-Warteschlange von einer Änderung im Status oder eine Anforderung für den Dienst zu benachrichtigen. **SpoolerNotify** wird hauptsächlich von Transportanbieter aufgerufen und können jederzeit während der Sitzung aufgerufen werden. 
   
@@ -114,9 +114,9 @@ Weitere Informationen zum Aufrufen von **SpoolerNotify**finden Sie unter den fol
   
 - [Implementieren der FlushQueues-Methode](implementing-the-flushqueues-method.md)
     
-- [Interaktion mit der MAPI-Warteschlange](interacting-with-the-mapi-spooler.md)
+- [Interaktion mit dem MAPI-Spooler](interacting-with-the-mapi-spooler.md)
     
-- [Nachricht Empfang Modell](message-reception-model.md)
+- [Nachrichtenempfangsmodell](message-reception-model.md)
     
 ## <a name="see-also"></a>Siehe auch
 

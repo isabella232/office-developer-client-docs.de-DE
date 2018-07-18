@@ -106,7 +106,7 @@ Um **IABLogon::PrepareRecips**implementieren möchten, verwenden Sie die folgend
 
 - [ADRLIST](adrlist.md)
 - [IMAPIProp::GetProps](imapiprop-getprops.md)
-- [Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md)
+- [PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
 - [SPropValue](spropvalue.md)
-- [IABLogon: IUnknown](iablogoniunknown.md)
+- [IABLogon : IUnknown](iablogoniunknown.md)
 

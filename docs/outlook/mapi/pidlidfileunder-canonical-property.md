@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFileUnder-Eigenschaft
+title: PidLidFileUnder (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793595"
 ---
-# <a name="pidlidfileunder-canonical-property"></a>Kanonische PidLidFileUnder-Eigenschaft
+# <a name="pidlidfileunder-canonical-property"></a>PidLidFileUnder (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Namen an, unter dem die Kontakts beim Anzeigen einer Liste von Kontakte
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Anwendung sollten diese Eigenschaft als eine leere PT_UNICODE behandeln, wenn sie von der Kontakt nicht vorhanden ist.
   

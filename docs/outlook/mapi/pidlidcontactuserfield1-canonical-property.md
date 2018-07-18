@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactUserField1-Eigenschaft
+title: PidLidContactUserField1 (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793478"
 ---
-# <a name="pidlidcontactuserfield1-canonical-property"></a>Kanonische PidLidContactUserField1-Eigenschaft
+# <a name="pidlidcontactuserfield1-canonical-property"></a>PidLidContactUserField1 (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das erste Feld auf den Kontakt, der für verschiedene Zwecke für den Konta
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält Text, der mit einer anderen Kontakt-spezifische Eigenschaft zusammenhängt.
   

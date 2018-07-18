@@ -50,7 +50,7 @@ S_OK
   
 > Die Struktur **MAPIUID** wurde erfolgreich registriert. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::SetProviderUID** -Methode wird für Adresse Adressbuch und Nachricht Store Anbieter Unterstützungsobjekte implementiert. Diese Anbieter Aufrufen **SetProviderUID** zum Registrieren eines eindeutigen Bezeichners beschrieben in der **MAPIUID** -Struktur, die mit _LpProviderID_gezeigt wird. Anbieter: Dieser Bezeichner in allen den Eintrag-IDs, die sie erstellen. 
   

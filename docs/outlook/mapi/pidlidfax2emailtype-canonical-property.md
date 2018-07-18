@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax2EmailType-Eigenschaft
+title: PidLidFax2EmailType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793547"
 ---
-# <a name="pidlidfax2emailtype-canonical-property"></a>Kanonische PidLidFax2EmailType-Eigenschaft
+# <a name="pidlidfax2emailtype-canonical-property"></a>PidLidFax2EmailType (kanonische Eigenschaft)
 
   
   

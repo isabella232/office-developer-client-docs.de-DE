@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFileUnderList-Eigenschaft
+title: PidLidFileUnderList (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793594"
 ---
-# <a name="pidlidfileunderlist-canonical-property"></a>Kanonische PidLidFileUnderList-Eigenschaft
+# <a name="pidlidfileunderlist-canonical-property"></a>PidLidFileUnderList (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt eine Liste der möglichen Werte für die Eigenschaft **DispidFileUnderId** 
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jeder Wert in der Mehrfachwert-Eigenschaft muss eine der zulässigen Werte für **DispidFileUnderId** in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sein.
   

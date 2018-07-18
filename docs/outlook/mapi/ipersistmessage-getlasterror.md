@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Adressbuchanbieter unterstützt keine Unicode oder Parameter MAPI_UNICODE wurde nicht festgelegt und die Adressbuchanbieter unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular-Objekte implementieren Sie die **IPersistMessage::GetLastError** -Methode, um Informationen zu einem vorherigen Methodenaufruf angeben, die nicht erfolgreich. Formular Viewer können die Benutzer detaillierte Informationen zu dem Fehler einschließlich der Daten aus der [MAPIERROR](mapierror.md) -Struktur in einem Dialogfeld bereitstellen. 
   
@@ -83,5 +83,5 @@ Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Exte
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 

@@ -25,7 +25,7 @@ Jede Adressbuchanbieter organisiert diese Daten mithilfe eines oder mehrerer Con
   
 Die folgende Abbildung zeigt eine typische MAPI-Struktur des Adressbuchs.
   
-**Struktur des Adressbuchs**
+**Adressbuchorganisation**
   
 ![Struktur des Adressbuchs] (media/amapi_04.gif "Struktur des Adressbuchs")
   

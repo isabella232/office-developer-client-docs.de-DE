@@ -41,7 +41,7 @@ typedef struct _ADRENTRY
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulReserved1**
   
@@ -89,9 +89,9 @@ Weitere Informationen zur Verwendung von Arbeitsspeicher für **ADRENTRY** Struk
   
 [ADRLIST](adrlist.md)
   
-[' Srow '](srow.md)
+[SRow](srow.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

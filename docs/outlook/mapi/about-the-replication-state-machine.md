@@ -1,5 +1,5 @@
 ---
-title: Informationen zu den Replikationsstatus Computer
+title: Informationen über den Replikationszustandsautomaten
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791234"
 ---
-# <a name="about-the-replication-state-machine"></a>Informationen zu den Replikationsstatus Computer
+# <a name="about-the-replication-state-machine"></a>Informationen über den Replikationszustandsautomaten
 
   
   
@@ -51,13 +51,13 @@ Ein Client ruft **[IOSTX::SyncBeg](iostx-syncbeg.md)**, **[IOSTX::SyncEnd](iostx
 |[Synchronisieren von Zustand](synchronize-state.md) <br/> |Ordner oder Elemente  <br/> |**LR_SYNC** <br/> |**[SYNC](sync.md)** <br/> |
 |[Hochladen der Hierarchie Zustand](upload-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_HIERARCHY** <br/> |**[UPHIER](uphier.md)** <br/> |
 |[Ordner Zustand hochladen](upload-folder-state.md) <br/> |Ordner  <br/> |**LR_SYNC_UPLOAD_FOLDER** <br/> |**[UPFLD](upfld.md)** <br/> |
-|[Synchronisieren von Inhalt Zustand](synchronize-contents-state.md) <br/> |Items  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
-|[Tabelle Zustand hochladen](upload-table-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
+|[Synchronisieren von Inhalt Zustand](synchronize-contents-state.md) <br/> |Elemente  <br/> |**LR_SYNC_CONTENTS** <br/> |**[SYNCCONT](synccont.md)** <br/> |
+|[Tabelle Zustand hochladen](upload-table-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_TABLE** <br/> |**[UPTBL](uptbl.md)** <br/> |
 |[Nachrichtenstatus hochladen](upload-message-state.md) <br/> |Element  <br/> |**LR_SYNC_UPLOAD_MESSAGE** <br/> |**[UPMSG](upmsg.md)** <br/> |
-|[Upload Status Zustand lesen](upload-read-status-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
-|[Status-Status löschen hochladen](upload-delete-status-state.md) <br/> |Items  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
+|[Upload Status Zustand lesen](upload-read-status-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_MESSAGE_READ** <br/> |**[UPREAD](upread.md)** <br/> |
+|[Status-Status löschen hochladen](upload-delete-status-state.md) <br/> |Elemente  <br/> |**LR_SYNC_UPLOAD_MESSAGE_DEL** <br/> |**[UPDEL](updel.md)** <br/> |
 |[Hierarchie Downloadstatus](download-hierarchy-state.md) <br/> |Ordner  <br/> |**LR_SYNC_DOWNLOAD_HIERARCHY** <br/> |**[DNHIER](dnhier.md)** <br/> |
-|[Tabelle Downloadstatus](download-table-state.md) <br/> |Items  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
+|[Tabelle Downloadstatus](download-table-state.md) <br/> |Elemente  <br/> |**LR_SYNC_DOWNLOAD_TABLE** <br/> |**[DNTBL](dntbl.md)** <br/> |
 |[Status der Nachricht Kopfzeilen herunterladen](download-message-header-state.md) <br/> |Nachrichtenkopf  <br/> |**LR_SYNC_DOWNLOAD_HEADER** <br/> |**[HDRSYNC](hdrsync.md)** <br/> |
    
 ## <a name="state-transition-diagram"></a>Statusübergang-Diagramm
@@ -87,9 +87,9 @@ Das folgende Diagramm zeigt die Statusübergänge, die beim Hochladen oder das A
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

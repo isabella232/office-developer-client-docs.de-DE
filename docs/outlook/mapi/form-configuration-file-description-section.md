@@ -1,5 +1,5 @@
 ---
-title: Formular Konfigurationsabschnitt Datei [Beschreibung]
+title: Abschnitt [Description] in der Formularkonfigurationsdatei
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791709"
 ---
-# <a name="form-configuration-file-description-section"></a>Formular Konfigurationsabschnitt Datei [Beschreibung]
+# <a name="form-configuration-file-description-section"></a>Abschnitt [Description] in der Formularkonfigurationsdatei
  
 **Betrifft**: Outlook 
   

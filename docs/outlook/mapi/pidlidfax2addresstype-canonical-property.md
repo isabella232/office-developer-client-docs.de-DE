@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax2AddressType-Eigenschaft
+title: PidLidFax2AddressType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793541"
 ---
-# <a name="pidlidfax2addresstype-canonical-property"></a>Kanonische PidLidFax2AddressType-Eigenschaft
+# <a name="pidlidfax2addresstype-canonical-property"></a>PidLidFax2AddressType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Adresstyp für die Adresse des Kontakts Fax privat.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft muss auf "FAX" Falls vorhanden, festgelegt werden.
   

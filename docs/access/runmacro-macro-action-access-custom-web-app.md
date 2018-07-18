@@ -29,7 +29,7 @@ Die **AusführenMakro** -Aktion hat die folgenden Argumente.
 |:-----|:-----|
 |**Makroname** <br/> |Der Name des auszuführenden Makros Benutzeroberfläche.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie eine Benutzeroberflächenmakro ausführen, enthält die **AusführenMakro** -Aktion, und er die **AusführenMakro** -Aktion erreicht, führt Access das gewählte UI-Makro. Wenn die gewählte Benutzeroberflächenmakro beendet wurde, Access gibt Sie zurück zum ursprünglichen UI-Makro und führt die nächste Aktion. 
   

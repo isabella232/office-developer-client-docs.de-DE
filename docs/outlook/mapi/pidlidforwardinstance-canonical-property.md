@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidForwardInstance-Eigenschaft
+title: PidLidForwardInstance (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793608"
 ---
-# <a name="pidlidforwardinstance-canonical-property"></a>Kanonische PidLidForwardInstance-Eigenschaft
+# <a name="pidlidforwardinstance-canonical-property"></a>PidLidForwardInstance (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass die Besprechungsanfrage eine Ausnahme in einer Terminserie stellt,
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert für diese Eigenschaft FALSE gibt an, dass die Besprechungsanfrage keine weitergeleitete Instanz ist. Diese Eigenschaft ist nicht erforderlich.
   

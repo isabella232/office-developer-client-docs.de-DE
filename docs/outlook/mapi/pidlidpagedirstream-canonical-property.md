@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidPageDirStream-Eigenschaft
+title: PidLidPageDirStream (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793706"
 ---
-# <a name="pidlidpagedirstream-canonical-property"></a>Kanonische PidLidPageDirStream-Eigenschaft
+# <a name="pidlidpagedirstream-canonical-property"></a>PidLidPageDirStream (kanonische Eigenschaft)
 
   
   

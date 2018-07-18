@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFlagString-Eigenschaft
+title: PidLidFlagString (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793607"
 ---
-# <a name="pidlidflagstring-canonical-property"></a>Kanonische PidLidFlagString-Eigenschaft
+# <a name="pidlidflagstring-canonical-property"></a>PidLidFlagString (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält einen Index, der eine Reihe von vordefinierten Textzeichenfolgen, die d
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn diese Eigenschaft festgelegt ist, sollten Clients den entsprechenden String-Wert in den Tabellen unten (beispielsweise um eine Zeichenfolge zu ersetzen, die in der aktuellen Sprache des Benutzers übersetzt wird), und den Wert im **DispidFlagRequest** ([ ignorieren soll PidLidFlagRequest](pidlidflagrequest-canonical-property.md)) und **DispidValidFlagStringProof** ([PidLidValidFlagStringProof](pidlidvalidflagstringproof-canonical-property.md)). 
   

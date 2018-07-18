@@ -74,7 +74,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Container hat keine untergeordnete Container und keine Hierarchietabelle bereitstellen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIContainer::GetHierarchyTable** -Methode gibt einen Zeiger auf die Hierarchietabelle eines Containers. Eine Hierarchietabelle enthält zusammenfassende Informationen zu der untergeordnete Container im Container. Ordner Hierarchietabellen enthalten Informationen über Unterordner; Address Book Hierarchietabellen enthalten Informationen über untergeordnete Address Book Container und Verteilerlisten. 
   
@@ -114,11 +114,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPIProp::GetProps](imapiprop-getprops.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
-[Kanonische PidTagContainerHierarchy-Eigenschaft](pidtagcontainerhierarchy-canonical-property.md)
+[PidTagContainerHierarchy (kanonische Eigenschaft)](pidtagcontainerhierarchy-canonical-property.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

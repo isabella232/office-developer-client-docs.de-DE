@@ -78,7 +78,7 @@ S_OK
   
 > Der Bezeichner des Eingangs wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients rufen die **CreateOneOff** -Methode zum Erstellen eines Eintrags-ID für einen einmaligen Empfänger – einen Empfänger, die nicht zu keiner der Container aus der aktuell geladenen adressbuchanbietern implementierte gehört. Einmaligen Empfänger können jede Art von-Adresse, die unterstützt wird von einem der aktiven adressbuchanbietern implementierte besitzen, für die Sitzung. 
   
@@ -102,7 +102,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPISupport::CreateOneOff](imapisupport-createoneoff.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

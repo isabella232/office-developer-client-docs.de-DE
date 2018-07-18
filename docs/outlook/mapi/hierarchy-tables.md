@@ -81,7 +81,7 @@ Von adressbuchanbietern implementierte müssen die folgenden Methoden **IMAPITab
 |:-----|:-----|
 |[IMAPITable::QueryColumns](imapitable-querycolumns.md) <br/> |[IMAPITable::QueryPosition](imapitable-queryposition.md) <br/> |
 |[IMAPITable::SeekRow](imapitable-seekrow.md) <br/> |[IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md) <br/> |
-|[IMAPITable](imapitable-findrow.md) <br/> |[Methode IMAPITable:: Restrict](imapitable-restrict.md) <br/> |
+|[IMAPITable::FindRow](imapitable-findrow.md) <br/> |[IMAPITable::Restrict](imapitable-restrict.md) <br/> |
 |[IMAPITable::CreateBookmark](imapitable-createbookmark.md) <br/> |[IMAPITable::FreeBookmark](imapitable-freebookmark.md) <br/> |
 |[IMAPITable::QueryRows](imapitable-queryrows.md) <br/> | <br/> |
    

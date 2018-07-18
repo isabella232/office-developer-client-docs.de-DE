@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791980"
 ---
-# <a name="iablogonopentemplateid"></a>OpenTemplateID
+# <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
   
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Vorlage-ID in der _LpTemplateID_ -Parameter übergeben wird von der Adressbuchanbieter nicht erkannt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **OpenTemplateID** -Methode ist nur von adressbuchanbietern implementierte implementiert, die Kontrolle über Kopien der darin enthaltenen Einträge beibehalten werden, die in der Hostanbieter den Containern befinden. Anbieter, **die OpenTemplateID** implementieren, werden als fremden adressbuchanbietern implementierte bezeichnet. Hostanbieter [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) um kopierten Eintrag erstellen oder öffnen Sie den kopierten Eintrag aufrufen und MAPI für den Aufruf von **OpenTemplateID**übergibt. **OpenTemplateID** öffnet den Eintrag und bindet den Code, der mit Daten in Hostanbieter gesteuert. 
   
@@ -133,7 +133,7 @@ Weitere Informationen zum Arbeiten mit-Adressbuch Vorlage Adress-IDs finden Sie 
   
 [IPropData: IMAPIProp](ipropdataimapiprop.md)
   
-[Kanonische PidTagTemplateid-Eigenschaft](pidtagtemplateid-canonical-property.md)
+[PidTagTemplateid (kanonische Eigenschaft)](pidtagtemplateid-canonical-property.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

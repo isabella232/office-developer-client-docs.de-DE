@@ -36,7 +36,7 @@ typedef SBinaryArray ENTRYLIST, FAR *LPENTRYLIST;
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 Elemente des Objekts finden Sie unter der Struktur **SBinaryArry** . 
   

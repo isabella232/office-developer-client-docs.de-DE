@@ -72,7 +72,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 0 (null) wurde im **cValues** -Member der **SPropTagArray** -Struktur, die auf den _LpPropTagArray_übergeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIProp::GetProps** -Methode ruft die Eigenschaftswerte der eine oder mehrere Eigenschaften eines Objekts. 
   
@@ -190,7 +190,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropValue](spropvalue.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

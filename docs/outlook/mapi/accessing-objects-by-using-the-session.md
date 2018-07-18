@@ -1,5 +1,5 @@
 ---
-title: Zugreifen auf Objekte mithilfe der Sitzung
+title: Zugreifen auf Objekte durch eine Sitzung
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791263"
 ---
-# <a name="accessing-objects-by-using-the-session"></a>Zugreifen auf Objekte mithilfe der Sitzung
+# <a name="accessing-objects-by-using-the-session"></a>Zugreifen auf Objekte durch eine Sitzung
 
   
   
@@ -38,7 +38,7 @@ Mit der Methode **OpenEntry** und eine gültige Eintrags-ID können Sie alle Add
 |--Adressbuchanbieter Anmeldung-Objekt  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
 |Adressbuch  <br/> |[IAddrBook::OpenEntry](iaddrbook-openentry.md) <br/> |
 |Adressbuchcontainer  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
-|Sitzung  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
+|Session  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
 |Nachrichtenspeicher  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |
 |Nachricht-Speicheranbieter Anmeldung-Objekt  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
 |Ordner  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |

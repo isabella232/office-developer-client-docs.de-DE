@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFlagRequest-Eigenschaft
+title: PidLidFlagRequest (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793597"
 ---
-# <a name="pidlidflagrequest-canonical-property"></a>Kanonische PidLidFlagRequest-Eigenschaft
+# <a name="pidlidflagrequest-canonical-property"></a>PidLidFlagRequest (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Den Status der einer Besprechungsanfrage darstellt.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kennzeichnen von  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In Microsoft Office Outlook ist eine Besprechungsanfrage ein Terminelement.
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792677"
 ---
-# <a name="imsprovider--iunknown"></a>IMSProvider: IUnknown
+# <a name="imsprovider--iunknown"></a>IMSProvider : IUnknown
 
   
   
@@ -45,7 +45,7 @@ Ermöglicht den Zugriff auf eine Nachricht-Anbieter über eine Nachricht Speiche
 |[SpoolerLogon](imsprovider-spoolerlogon.md) <br/> |Die MAPI-Warteschlange an einen Nachrichtenspeicher protokolliert.  <br/> |
 |[CompareStoreIDs](imsprovider-comparestoreids.md) <br/> |Vergleicht zwei e-Mail-Store-Eintragsbezeichner, um zu bestimmen, ob sie auf das gleiche Store-Objekt verweisen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI verwendet einen Speicher-Anbieterobjekt "Message" pro Sitzung, unabhängig davon, wie viele Nachricht Speicher Speicheranbieter geöffnet werden. Wenn eine zweite MAPI-Sitzung anmeldet alle geöffneten Informationsspeicher, ruft MAPI zum Erstellen eines neuen Nachricht Speicher-Anbieter-Objekts für diese Sitzung verwendet ein zweites Mal an **MSProviderInit** . 
   

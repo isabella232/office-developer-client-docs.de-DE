@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentUnsendableRecipients-Eigenschaft
+title: PidLidAppointmentUnsendableRecipients (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793466"
 ---
-# <a name="pidlidappointmentunsendablerecipients-canonical-property"></a>Kanonische PidLidAppointmentUnsendableRecipients-Eigenschaft
+# <a name="pidlidappointmentunsendablerecipients-canonical-property"></a>PidLidAppointmentUnsendableRecipients (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält eine Liste der Teilnehmer zu senden.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich, aber festgelegt werden sollte. Das Format wird in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)ausführlich beschrieben.
   

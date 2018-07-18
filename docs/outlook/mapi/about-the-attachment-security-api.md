@@ -1,5 +1,5 @@
 ---
-title: Über die Sicherheit von Anhängen in API
+title: Informationen zur Anlagensicherheits-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791233"
 ---
-# <a name="about-the-attachment-security-api"></a>Über die Sicherheit von Anhängen in API
+# <a name="about-the-attachment-security-api"></a>Informationen zur Anlagensicherheits-API
 
   
   

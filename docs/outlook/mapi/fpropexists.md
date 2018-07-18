@@ -60,7 +60,7 @@ FALSE
   
 > Eine Übereinstimmung für das Tag für die angegebene Eigenschaft wurde nicht gefunden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn das Eigenschafts-Tag im Parameter _UlPropTag_ PT_UNSPECIFIED aufweist, sucht die **FPropExists** Funktion für eine Übereinstimmung nur anhand der Eigenschaftenbezeichner. Andernfalls wird die Übereinstimmung für das gesamte Eigenschafts-Tag, einschließlich der Art ein. 
   

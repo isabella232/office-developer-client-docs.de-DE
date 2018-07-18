@@ -1,5 +1,5 @@
 ---
-title: Verfügbarer Ereignisse und ihre Dispids (Outlook exportiert APIs)
+title: Verfügbaren Ereignisse und ihrer Dispids (Outlook exportierter APIs)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790935"
 ---
-# <a name="available-events-and-their-dispids-outlook-exported-apis"></a>Verfügbarer Ereignisse und ihre Dispids (Outlook exportiert APIs)
+# <a name="available-events-and-their-dispids-outlook-exported-apis"></a>Verfügbaren Ereignisse und ihrer Dispids (Outlook exportierter APIs)
 
 Dieser Abschnitt beschreibt die Versendung Bezeichner für die Ereignisse, die Outlook verfügbar gemacht werden.
   
@@ -29,8 +29,8 @@ Ein Beispiel dafür, wie Sie mit einer Dispid anhören und Verarbeiten eines Ere
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook exportiert APIs](outlook-exported-apis.md)
+- [Aus Outlook exportierte APIs](outlook-exported-apis.md)
 - [Konstanten (Outlook exportierter APIs)](constants-outlook-exported-apis.md)
-- [Informationen zu APIs, die vom Outlook exportiert werden](about-apis-exported-by-outlook.md)
+- [Informationen zu von Outlook exportierten APIs](about-apis-exported-by-outlook.md)
 - [Implementieren von Outlook 2002/XP-Ereignis in MFC C++ 2003 .NET senken](http://www.codeproject.com/Articles/4230/Implementing-Outlook-2002-XP-Event-Sinks-in-MFC-C)
 

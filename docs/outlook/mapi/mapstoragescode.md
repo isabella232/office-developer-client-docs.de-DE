@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > Die Funktion kann einen übereinstimmenden Wert nicht finden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI bietet die **MapStorageSCode** -Funktion für die interne Verwendung von MAPI-Komponenten, die ihre Nachricht Implementierungen für die Nachricht DLL basieren soll. Da diese Komponenten OLE Remotespeicher selbst zu öffnen, müssen sie zuordnen Fehlerwerte für Probleme mit OLE-Speicher an ein HRESULT-Wert zurückgegeben werden. 
   

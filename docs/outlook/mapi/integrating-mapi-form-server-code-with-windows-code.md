@@ -1,5 +1,5 @@
 ---
-title: Integrieren von MAPI-Formularcode Server mit Windows-Code
+title: Integrieren von MAPI-Formularservercode mit Windows-Code
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792691"
 ---
-# <a name="integrating-mapi-form-server-code-with-windows-code"></a>Integrieren von MAPI-Formularcode Server mit Windows-Code
+# <a name="integrating-mapi-form-server-code-with-windows-code"></a>Integrieren von MAPI-Formularservercode mit Windows-Code
 
   
   
@@ -49,5 +49,5 @@ Wenn Ihr Formular Server beendet wird, sollten sie die folgenden Aufgaben ausfü
 
 
 
-[Schreiben von Formularcode Server](writing-form-server-code.md)
+[Schreiben von Formularservercode](writing-form-server-code.md)
 

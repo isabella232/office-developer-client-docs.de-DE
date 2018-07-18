@@ -50,5 +50,5 @@ HRESULT IAttachmentSecurity::IsAttachmentBlocked(
 
 [MAPI-Konstanten](mapi-constants.md)
   
-[Stellen Sie sicher, dass eine Anlage gesperrt ist](how-to-verify-an-attachment-is-blocked.md)
+[Überprüfen, ob eine Anlage blockiert ist](how-to-verify-an-attachment-is-blocked.md)
 

@@ -29,9 +29,9 @@ Die **ChangeView** -Aktion hat die folgenden Argumente.
 |Tabelle  <br/> |Ja  <br/> |Der Name der zu öffnenden Tabelle.  <br/> |
 |Ansicht  <br/> |Ja  <br/> |Der Name der Ansicht zu öffnen.  <br/> |
 |Wobei  <br/> |Nein  <br/> |Ersetzt, wenn angegeben, die Bedingung der Datensatzquelle des Objekts.  <br/> |
-|Order By-  <br/> |Nein  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder der Felder, nach dem oder denen Datensätze sortiert werden sollen, sowie die optionalen ASC- oder DESC-Schlüsselwörter enthält. Standardmäßig ist dieses Argument leer.  <br/> |
+|Sortiert nach  <br/> |Nein  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder der Felder, nach dem oder denen Datensätze sortiert werden sollen, sowie die optionalen ASC- oder DESC-Schlüsselwörter enthält. Standardmäßig ist dieses Argument leer.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Sortieren oder Filtern durch den Benutzer angewendet wird gelöscht, wenn die Aktion **ChangeView** aufgerufen wird. 
   

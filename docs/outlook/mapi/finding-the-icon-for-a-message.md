@@ -1,5 +1,5 @@
 ---
-title: Suchen das Symbol für eine Nachricht
+title: Suchen nach dem Symbol für eine Nachricht
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791672"
 ---
-# <a name="finding-the-icon-for-a-message"></a>Suchen das Symbol für eine Nachricht
+# <a name="finding-the-icon-for-a-message"></a>Suchen nach dem Symbol für eine Nachricht
 
   
   

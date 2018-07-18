@@ -26,5 +26,5 @@ Die Option **.NET-Programmierunterstützung für** im InfoPath-Setupprogramm wer
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Arbeiten mit MSXML und System.Xml mit dem InfoPath 2003-Objektmodell](http://msdn.microsoft.com/library/f7a0cac5-26f9-49ed-b52c-0240ef0c9d38%28Office.15%29.aspx)
+- [Arbeiten mit MSXML und System.Xml mithilfe des InfoPath 2003-Objektmodells](http://msdn.microsoft.com/library/f7a0cac5-26f9-49ed-b52c-0240ef0c9d38%28Office.15%29.aspx)
 

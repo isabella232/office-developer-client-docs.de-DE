@@ -37,7 +37,7 @@ typedef struct
 } MAPIOFFLINE_ADVISEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 _UlSize_: die Größe des **MAPIOFFLINE_ADVISEINFO**. 
     
@@ -58,7 +58,7 @@ _UlStateMask_: der einzige unterstützte Zustand MAPIOFFLINE_STATE_ALL ist.
 ## <a name="see-also"></a>Siehe auch
 
 - [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)
-- [Über die Offline State-API](about-the-offline-state-api.md) 
+- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md) 
 - [MAPI-Konstanten](mapi-constants.md) 
 - [MAPIOFFLINE_CALLBACK_TYPE](mapioffline_callback_type.md)
 

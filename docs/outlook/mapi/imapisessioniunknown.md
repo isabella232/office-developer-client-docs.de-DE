@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792338"
 ---
-# <a name="imapisession--iunknown"></a>IMAPISession: IUnknown
+# <a name="imapisession--iunknown"></a>IMAPISession : IUnknown
 
   
   

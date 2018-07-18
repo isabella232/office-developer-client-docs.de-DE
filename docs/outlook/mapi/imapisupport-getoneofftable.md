@@ -54,7 +54,7 @@ S_OK
   
 > Die einmalige Tabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::GetOneOffTable** -Methode wird für Address Book Anbieter Unterstützungsobjekte implementiert. Von adressbuchanbietern implementierte Aufrufen **GetOneOffTable** , um die vollständige Liste der Vorlagen zum Erstellen von neuen Empfänger abzurufen. Die folgende Tabelle enthält Vorlagen, die Unterstützung von adressbuchanbietern implementierte, die in der Sitzung aktiv sind, sowie Formularvorlagen, die MAPI unterstützt. 
   
@@ -76,7 +76,7 @@ Wenn Sie Erhalt von Benachrichtigungen von Änderungen an dieser einmaligen Tabe
   
 [IMAPISupport::NewEntry](imapisupport-newentry.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
 [IMAPITable::QueryColumns](imapitable-querycolumns.md)
   
@@ -84,10 +84,10 @@ Wenn Sie Erhalt von Benachrichtigungen von Änderungen an dieser einmaligen Tabe
   
 [IMAPITable::QuerySortOrder](imapitable-querysortorder.md)
   
-[Kanonische PidTagCreateTemplates-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[Einmaligen Tabellen](one-off-tables.md)
+[Einmalige Tabellen](one-off-tables.md)
 

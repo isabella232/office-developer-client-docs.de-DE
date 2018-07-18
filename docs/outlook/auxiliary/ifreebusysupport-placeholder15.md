@@ -30,7 +30,7 @@ HRESULT Placeholder15();
 
 Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter und wird nicht.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Member muss E_NOTIMPL zurückgeben.
   

@@ -55,7 +55,7 @@ S_OK
   
 > Die Methode, die gültige Werte in _LpulRow_, _LpulNumerator_und _LpulDenominator_zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::QueryPosition** -Methode die aktuelle Zeilenposition bestimmt und sowohl die Anzahl der aktuellen Zeile und eine anteilige Wert, der angibt, der der relativen Position am Ende der Tabelle zurückgegeben. MAPI definiert die aktuelle Zeile als die nächste Zeile gelesen werden sollen. 
   
@@ -79,5 +79,5 @@ Ein Aufruf von **QueryPosition** möglicherweise große Mengen von Arbeitsspeich
 
 [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

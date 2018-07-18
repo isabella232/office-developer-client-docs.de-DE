@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792587"
 ---
-# <a name="imscapabilities--iunknown"></a>IMSCapabilities: IUnknown
+# <a name="imscapabilities--iunknown"></a>IMSCapabilities : IUnknown
 
   
   
@@ -38,7 +38,7 @@ Enthält Informationen, was ein Speicher unterstützt werden kann.
 |:-----|:-----|
 |**[GetCapabilities](imscapabilities-getcapabilities.md)** <br/> |Gibt die Funktionen eines Speichers basierend auf der angegebenen Auswahl zurück.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **IMSCapabilities** enthält Informationen zu was ein Speicher unterstützen kann, wenn der Informationsspeicher diese Schnittstelle unterstützt. 
   

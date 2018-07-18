@@ -39,7 +39,7 @@ typedef struct _ADRLIST
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **cEntries**
   
@@ -49,7 +49,7 @@ typedef struct _ADRLIST
   
 > Array von [ADRENTRY](adrentry.md) Strukturen, eine Struktur für jeden Empfänger. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine **ADRLIST** -Struktur enthält ein oder mehrere **ADRENTRY** Strukturen, die die Eigenschaften eines Empfängers beschreibt. Ein Empfänger kann nicht aufgelöst werden. Dies bedeutet, dass es einen Eintrag Bezeichner in dessen Array von Eigenschaftswerten fehlen. Ein aufgelöster Empfänger bedeutet, dass die **PR\_ENTRYID** -Eigenschaft ([PidTagEntryId](pidtagentryid-canonical-property.md)) enthalten ist. Außerdem müssen in der Regel aufgelösten Empfänger eine e-Mail-Adresse die **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))-Eigenschaft. Die e-Mail-Adresse ist jedoch nicht erforderlich. **ADRLIST** -Strukturen, beispielsweise dienen zum Beschreiben der Empfängerliste für eine ausgehende Nachricht und MAPI, um die Einträge im Adressbuch anzuzeigen. 
   
@@ -74,6 +74,6 @@ Weitere Informationen zur Verwendung von Arbeitsspeicher für **ADRENTRY** Struk
 - [ADRENTRY](adrentry.md)  
 - [CbNewADRLIST](cbnewadrlist.md) 
 - [IMessage::ModifyRecipients](imessage-modifyrecipients.md) 
-- [' Srowset '](srowset.md)
+- [SRowSet](srowset.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

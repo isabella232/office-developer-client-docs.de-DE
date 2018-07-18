@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792339"
 ---
-# <a name="imapistatuschangepassword"></a>IMAPIStatus:: ChangePassword
+# <a name="imapistatuschangepassword"></a>IMAPIStatus::ChangePassword
 
   
   
@@ -67,7 +67,7 @@ MAPI_E_NO_SUPPORT
   
 > Das Statusobjekt unterstützt keine dieser Vorgang, wie durch die Abwesenheit des STATUS_CHANGE_PASSWORD-Flags in den Status des Objekts **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nicht alle Status Objekte unterstützen die **IMAPIStatus:: ChangePassword** -Methode. Es wird nur von Dienstanbietern unterstützt, die Clients ein Kennwort eingeben müssen. Keines der Status, die von MAPI implementierte Objekte unterstützt die Operation Kennwort ändern. 
   
@@ -81,7 +81,7 @@ Remote-Transport-Anbieter implementieren **ChangePassword** gemäß hier. Es gib
 
 
 
-[Kanonische PidTagResourceMethods-Eigenschaft](pidtagresourcemethods-canonical-property.md)
+[PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
   
-[IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+[IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

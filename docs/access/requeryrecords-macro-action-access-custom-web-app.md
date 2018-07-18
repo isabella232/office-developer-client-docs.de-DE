@@ -30,7 +30,7 @@ Die **RequeryRecords** -Aktion hat die folgenden Argumente.
 |**Wobei =** <br/> |Nein  <br/> |Eine SQL WHERE-Klausel, die die Datensätze in der Ansicht beschränkt. Standardmäßig ist dieses Argument leer.  <br/> |
 |**OrderBy** <br/> |Nein  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder der Felder, nach dem oder denen Datensätze sortiert werden sollen, sowie die optionalen ASC- oder DESC-Schlüsselwörter enthält. Standardmäßig ist dieses Argument leer.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Beim Sortieren oder Filtern durch den Benutzer angewendet wird gelöscht, wenn die Aktion **RequeryRecords** aufgerufen wird. 
   

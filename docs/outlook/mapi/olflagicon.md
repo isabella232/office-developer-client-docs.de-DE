@@ -38,7 +38,7 @@ enum OlFlagIcon {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _olNoFlagIcon_
   
@@ -72,5 +72,5 @@ enum OlFlagIcon {
 
 
 
-[Kanonische PidTagFollowupIcon-Eigenschaft](pidtagfollowupicon-canonical-property.md)
+[PidTagFollowupIcon (kanonische Eigenschaft)](pidtagfollowupicon-canonical-property.md)
 

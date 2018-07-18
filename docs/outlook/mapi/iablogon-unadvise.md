@@ -45,7 +45,7 @@ S_OK
   
 > Die benachrichtigungsregistrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Aufrufen die **Unadvise** -Methode, um die benachrichtigungsregistrierung eines für einen Container abzubrechen messaging-Benutzer oder Verteilung List-Objekt. 
   
@@ -63,5 +63,5 @@ Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event No
   
 [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

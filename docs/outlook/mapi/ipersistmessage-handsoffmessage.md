@@ -41,7 +41,7 @@ S_OK
   
 > Die Nachricht wurde erfolgreich veröffentlicht.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formulare Übergang in zwei HandsOff Zustände:
   
@@ -63,8 +63,8 @@ Weitere Informationen zu den unterschiedlichen Zustände eines Formulars finden 
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

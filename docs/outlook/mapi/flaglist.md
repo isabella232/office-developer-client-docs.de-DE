@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cFlags**
   
@@ -62,7 +62,7 @@ MAPI_UNRESOLVED
   
 > Der Eintrag wurde nicht behoben. Andere Address Book Container sollte versuchen, diese Empfänger aufzulösen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **FLAGLIST** wird als Parameter für [IABContainer](iabcontainer-resolvenames.md)verwendet. Einzelnen Empfänger aufgelöst werden, ist in eine [ADRLIST](adrlist.md) -Struktur enthalten. Während der Adressbuchcontainer versucht, jeden Empfänger zu beheben, legt das entsprechende Flag in den entsprechenden Eintrag in der Struktur **FLAGLIST** fest. Alle Einträge in der Struktur **FLAGLIST** sind in der gleichen Reihenfolge als die Einträge in der **ADRLIST** -Struktur. Dies vereinfacht die eine Einstellung für die Kennzeichnung mit einem Empfänger zuordnen. 
   
@@ -72,7 +72,7 @@ Die Struktur **FLAGLIST** wird als Parameter für [IABContainer](iabcontainer-re
 
 [ADRLIST](adrlist.md)
   
-[IABContainer](iabcontainer-resolvenames.md)
+[IABContainer::ResolveNames](iabcontainer-resolvenames.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

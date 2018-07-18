@@ -55,7 +55,7 @@ S_OK
   
 > Das Dialogfeld allgemeine Adresse wurde erfolgreich angezeigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der **UlFlags** Member des Parameters _LpAdrParms_ vorhersehen von die Rückgabe von den Fensterhandle des modalen Dialogfelds auf Ausgabe DIALOG_SDI festgelegt ist, wird es in Outlook ignoriert. die modale Version des Dialogfelds wird immer in Outlook nicht angezeigt. 
   
@@ -113,9 +113,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropValue](spropvalue.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

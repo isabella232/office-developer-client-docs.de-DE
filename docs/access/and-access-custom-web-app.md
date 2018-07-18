@@ -28,7 +28,7 @@ Verknüpft zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrück
 
 Gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn mehr als ein logischer Operator in einer Anweisung verwendet wird, werden die Operatoren zuerst ausgewertet. Sie können die Reihenfolge der Auswertung ändern, indem Sie Klammern verwenden.
   

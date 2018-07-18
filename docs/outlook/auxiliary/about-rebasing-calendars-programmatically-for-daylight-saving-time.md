@@ -1,5 +1,5 @@
 ---
-title: Informationen zum Neuzuordnen von Kalendern programmgesteuert Sommerzeit
+title: Informationen zum Ausführen eines programmgesteuerten Kalender-Rebase für Sommerzeit
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790918"
 ---
-# <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>Informationen zum Neuzuordnen von Kalendern programmgesteuert Sommerzeit
+# <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>Informationen zum Ausführen eines programmgesteuerten Kalender-Rebase für Sommerzeit
 
 Viele Länder beobachten Sommerzeit (Ziel) von Uhren vorwärts verschoben, sodass abends länger Sommerzeit haben. Dies erfolgt in der Regel durch Festlegen der Uhr eine Stunde lang in die Spirale und Einstellen der Uhr eine Stunde wieder in den fallen. In diesem Thema wird in diesem Zeitraum zwischen dem: Spirale und werden, die als die sommerzeitperiode bezeichnet. Die meisten Ländern haben ihre eigenen Vorschriften Sommerzeit beginnt und endet. Das Datum, von die sommerzeitperiode können von Jahr zu Jahr ändern, und Benutzer müssen Aktualisieren ihrer Microsoft Outlook-Kalender jedes Mal, dass die neuen Sommerzeitregeln Vorschriften ändern. 
   
@@ -67,9 +67,9 @@ Die Assembly Tzmovelib.dll Herunterladen der OutlookTimeZoneMoveLibRedist.exe re
 ## <a name="see-also"></a>Siehe auch
 
 - [Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
-- [Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
-- [Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
-- [Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
+- [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
+- [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
+- [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
 - [Sommerzeit Hilfe- und Supportcenter](http://support.microsoft.com/gp/cp_dst)
 - [Gewusst wie: Sommerzeit mithilfe des Exchange Calendar Update-Tools](http://support.microsoft.com/kb/941018)
 - [Wie Adresse, Zeitzone Änderungen mithilfe der Zeit Zeitzonendaten für Microsoft Office Outlook](http://support.microsoft.com/kb/931667)

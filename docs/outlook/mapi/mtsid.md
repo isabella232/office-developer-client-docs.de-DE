@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cb**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > Byte-Array, das MTS Eintrags-ID-Daten enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Struktur **MTSID** wird nur für x. 400-Zuordnungen der MAPI-Eintragsbezeichner verwendet. Es entspricht der MAPI- [FLATENTRY](flatentry.md) -Struktur. 
   

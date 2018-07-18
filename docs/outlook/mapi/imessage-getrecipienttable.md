@@ -58,7 +58,7 @@ S_OK
   
 > Die Empfänger Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::GetRecipientTable** -Methode gibt einen Zeiger auf Empfänger die Nachricht-Tabelle, die Informationen zu allen der Empfänger der Nachricht enthält. Es wird eine Zeile für jeden Empfänger. 
   

@@ -64,7 +64,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::SetProps** -Methode zum Festlegen der Eigenschaften zum Einschließen in die Kapselung einer Nachricht oder einer Anlage, ohne die ursprüngliche Nachricht oder Anlage zu ändern. Mit diesem Anruf festgelegten Eigenschaften außer Kraft setzen vorhandene Eigenschaften in die gekapselte Nachricht. 
   
@@ -79,13 +79,13 @@ Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::SetProps
 
 [ITnef::Finish](itnef-finish.md)
   
-[OpenTNEFStream nicht ausgeführt werden](opentnefstream.md)
+[OpenTnefStream](opentnefstream.md)
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[Kanonische PidTagAttachNumber-Eigenschaft](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

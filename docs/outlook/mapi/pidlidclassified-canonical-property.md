@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidClassified-Eigenschaft
+title: PidLidClassified (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793468"
 ---
-# <a name="pidlidclassified-canonical-property"></a>Kanonische PidLidClassified-Eigenschaft
+# <a name="pidlidclassified-canonical-property"></a>PidLidClassified (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass eine Nachricht eingestuft wird.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Weitere Informationen finden Sie unter [Bereitstellen von Nachrichtenklassifikation für Outlook 2007](http://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
   

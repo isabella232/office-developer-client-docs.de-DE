@@ -63,7 +63,7 @@ MAPI_E_TIMEOUT
   
 > Die asynchrone Operation oder Vorgänge wurde nicht in der angegebenen Zeit abgeschlossen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Methode **IMAPITable::WaitForCompletion** hält die Verarbeitung, bis alle derzeit asynchrone Vorgänge für die Tabelle abgeschlossen haben. **WaitForCompletion** können die asynchrone Vorgänge entweder vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden auszuführen, wie _UlTimeout_, abgebrochen wird angegeben. Zum Erkennen von asynchrone Vorgänge in Bearbeitung rufen Sie die [IMAPITable::GetStatus](imapitable-getstatus.md) -Methode auf. 
   
@@ -75,11 +75,11 @@ Die Methode **IMAPITable::WaitForCompletion** hält die Verarbeitung, bis alle d
   
 [IMAPITable::GetStatus](imapitable-getstatus.md)
   
-[Methode IMAPITable:: Restrict](imapitable-restrict.md)
+[IMAPITable::Restrict](imapitable-restrict.md)
   
 [IMAPITable::SetColumns](imapitable-setcolumns.md)
   
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

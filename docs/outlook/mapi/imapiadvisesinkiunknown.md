@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19792055"
 ---
-# <a name="imapiadvisesink--iunknown"></a>IMAPIAdviseSink: IUnknown
+# <a name="imapiadvisesink--iunknown"></a>IMAPIAdviseSink : IUnknown
 
   
   

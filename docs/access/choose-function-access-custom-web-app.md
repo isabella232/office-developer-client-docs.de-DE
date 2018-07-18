@@ -31,7 +31,7 @@ Die **Choose** -Funktion enthält die folgenden Argumente.
 | *Indexnummer kann ein*  <br/> |Ein Integer-Ausdruck, der ein 1-basierter Indexwert in der Liste der folgenden Elemente darstellt.  <br/> |
 | *Wert*  <br/> |Liste der Werte von einem beliebigen Datentyp.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der angegebenen *Indexnummer kann ein* nicht um eine ganze Zahl ist, wird der Wert auf eine Ganzzahl implizit konvertiert. 
   

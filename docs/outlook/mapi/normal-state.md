@@ -1,5 +1,5 @@
 ---
-title: Normalzustand
+title: Status „Normal“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793282"
 ---
-# <a name="normal-state"></a>Normalzustand
+# <a name="normal-state"></a>Status „Normal“
 
   
   
@@ -36,5 +36,5 @@ Normale Zustand ist, das Form-Objekt für die meisten der Wartezeit für Clienta
 
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

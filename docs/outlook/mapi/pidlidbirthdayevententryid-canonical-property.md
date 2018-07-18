@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidBirthdayEventEntryId-Eigenschaft
+title: PidLidBirthdayEventEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793454"
 ---
-# <a name="pidlidbirthdayevententryid-canonical-property"></a>Kanonische PidLidBirthdayEventEntryId-Eigenschaft
+# <a name="pidlidbirthdayevententryid-canonical-property"></a>PidLidBirthdayEventEntryId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die **EntryId** des Termins optional, die das Geburtsdatum des Kontakts dar
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Des Termins werden dies von dieser Eigenschaft angegeben wird muss mit diesem Kontakt verknüpft werden, mithilfe der **DispidApptStateFlags** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)), **DispidContactLinkSearchKey** ([PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)) und ** DispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)) Eigenschaften, die im angegebenen [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).
   

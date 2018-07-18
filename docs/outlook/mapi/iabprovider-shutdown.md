@@ -53,5 +53,5 @@ Führen Sie in der Implementierung der **Shutdown** -Methode jegliches Aufgaben 
 
 
 
-[IABProvider: IUnknown](iabprovideriunknown.md)
+[IABProvider : IUnknown](iabprovideriunknown.md)
 

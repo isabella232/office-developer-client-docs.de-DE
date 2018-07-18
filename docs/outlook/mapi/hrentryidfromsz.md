@@ -65,7 +65,7 @@ MAPI_E_INVALID_ENTRYID
   
 > Die Eintrags-ID ist ungültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Funktionen **HrEntryIDFromSz** und [HrSzFromEntryID](hrszfromentryid.md) bieten eine Konvertierung zwischen der Zeichenfolge und der binären Formate der Eintragsbezeichner. 
   

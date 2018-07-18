@@ -40,7 +40,7 @@ typedef struct _FILETIME
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **dwLowDateTime**
   
@@ -50,7 +50,7 @@ typedef struct _FILETIME
   
 > Obere 32 Bit der Datei Time-Wert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Eigenschaft vom Typ PT_SYSTIME hat eine **FILETIME** -Struktur für ihren Wert. Eine solche Eigenschaft hat einen **FILETIME** -Datentyp für den **Wert** Member in der Definition in eine [SPropValue](spropvalue.md) -Struktur. 
   

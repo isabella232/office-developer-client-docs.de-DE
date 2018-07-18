@@ -79,7 +79,7 @@ HrComposeEID(
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Nachricht oder eines anderen Objekts für die die zusammengesetzter Eintrags-ID erstellt wird in einem Nachrichtenspeicher befindet, ist der Bezeichner aus Eintrags-ID für das Objekt und den Store-Eintrag Schlüssel erstellt. Ist das Objekt nicht in einem Speicher, d. h., wird Wenn die Byteanzahl für den Store-Eintrag Schlüssel übergebenen _CbStoreRecordKey_ 0 (null) ist, ist das Objekt Eintrags-ID einfach kopiert. 
   

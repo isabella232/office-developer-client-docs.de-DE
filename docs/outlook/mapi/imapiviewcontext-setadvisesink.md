@@ -45,7 +45,7 @@ S_OK
   
 > Die Registrierung oder die Löschung für Formular-Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formularobjekte Aufrufen die **IMAPIViewContext::SetAdviseSink** -Methode, um entweder Register erfahren Sie mehr über die Änderungen im Formular-Viewer oder Abbrechen einer vorherigen Erfassung. Wenn _Pmvns_ auf NULL festgelegt ist, das Formular eine Registrierung abbrechen möchte. Wenn _Pmvns_ verweist auf ein gültiges Formular-Empfänger Advise, möchte, dass das Formular für zukünftige Benachrichtigungen registriert. 
   

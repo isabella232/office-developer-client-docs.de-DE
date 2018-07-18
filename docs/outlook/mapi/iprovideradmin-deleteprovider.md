@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > Die **MAPIUID** auf den durch den Parameter _LpUID_ verwiesen wurde nicht erkannt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProviderAdmin::DeleteProvider** -Methode löscht einen Dienstanbieter aus den Dienst. **DeleteProvider** bestimmt den Dienstanbieter zu löschen, indem Sie die **MAPIUID** -Struktur, die auf den _LpUID_ mit den IDs durch die aktiv-Dienstanbieter registriert. 
   
@@ -71,5 +71,5 @@ Die Nachricht Service Eintrag-Funktion wird nicht erneut aufgerufen, nachdem der
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IProviderAdmin: IUnknown](iprovideradminiunknown.md)
+[IProviderAdmin : IUnknown](iprovideradminiunknown.md)
 

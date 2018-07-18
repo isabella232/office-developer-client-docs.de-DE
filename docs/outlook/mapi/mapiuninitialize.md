@@ -45,7 +45,7 @@ Keine
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung ruft die **MAPIUninitialize** -Funktion, um die Interaktion mit MAPI, mit einem Aufruf der Funktion ["MAPIInitialize"](mapiinitialize.md) begonnen zu beenden. Nachdem **MAPIUninitialize** aufgerufen wurde, können keine anderen MAPI-Aufrufe vom Client vorgenommen werden. 
   

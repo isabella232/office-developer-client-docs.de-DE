@@ -79,7 +79,7 @@ MAPI_W_POSITION_CHANGED
   
 > Der Aufruf war erfolgreich, aber im _BkOrigin_ -Parameter angegebene Textmarke wird nicht mehr in der gleichen Zeile festgelegt, wie bei der es zuletzt verwendet wurde. Wenn die Textmarke nicht verwendet wurden, ist es nicht mehr an derselben Position wie bei der es erstellt wurde. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::SeekRow** -Methode stellt eine neue BOOKMARK_CURRENT Position für den Cursor her. Der Parameter _lRowCount_ gibt die Anzahl der Zeilen, die der Cursor bewegt wird und die Richtung der Bewegung an. 
   
@@ -117,13 +117,13 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPITable::CreateBookmark](imapitable-createbookmark.md)
   
-[IMAPITable](imapitable-findrow.md)
+[IMAPITable::FindRow](imapitable-findrow.md)
   
 [IMAPITable::QueryRows](imapitable-queryrows.md)
   
 [IMAPITable::SeekRowApprox](imapitable-seekrowapprox.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

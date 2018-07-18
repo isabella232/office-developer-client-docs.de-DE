@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentStartWhole-Eigenschaft
+title: PidLidAppointmentStartWhole (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793452"
 ---
-# <a name="pidlidappointmentstartwhole-canonical-property"></a>Kanonische PidLidAppointmentStartWhole-Eigenschaft
+# <a name="pidlidappointmentstartwhole-canonical-property"></a>PidLidAppointmentStartWhole (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt das Datum und die Uhrzeit ein Termins beginnt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt das Startdatum und die Uhrzeit des Ereignisses. Diese Eigenschaft muss in koordinierter Weltzeit (UTC) und muss kleiner als der Wert der Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)). Für eine Besprechungsserie wird diese Eigenschaft das Startdatum und die Uhrzeit der ersten Instanz entsprechend das Serienmuster.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFax2DisplayName-Eigenschaft
+title: PidLidFax2DisplayName  (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793539"
 ---
-# <a name="pidlidfax2displayname-canonical-property"></a>Kanonische PidLidFax2DisplayName-Eigenschaft
+# <a name="pidlidfax2displayname-canonical-property"></a>PidLidFax2DisplayName  (kanonische Eigenschaft)
 
   
   

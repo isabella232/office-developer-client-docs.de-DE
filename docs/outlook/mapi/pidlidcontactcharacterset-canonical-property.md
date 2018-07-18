@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactCharacterSet-Eigenschaft
+title: PidLidContactCharacterSet (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793499"
 ---
-# <a name="pidlidcontactcharacterset-canonical-property"></a>Kanonische PidLidContactCharacterSet-Eigenschaft
+# <a name="pidlidcontactcharacterset-canonical-property"></a>PidLidContactCharacterSet (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Zeichensatz für diesen Kontakt verwendet.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Anwendungen können diese Eigenschaft verwenden, zur Unterstützung bei der eine Zeichensatz abhängige Liste der Optionen für die **DispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md)), **DispidFileUnderList** ([PidLidFileUnderList](pidlidfileunderlist-canonical-property.md)) und **DispidFileUnderId generieren **([PidLidFileUnderId](pidlidfileunderid-canonical-property.md))-Eigenschaften. Wenn der Wert der Eigenschaft "0 x 00000000" oder "0 x 00000001" ist, sollte Applications die-Eigenschaft behandelt, als nicht festgelegt.
   

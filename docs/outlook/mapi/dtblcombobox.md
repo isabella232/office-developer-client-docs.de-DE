@@ -44,7 +44,7 @@ typedef struct _DTBLCOMBOBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulbLpszCharsAllowed**
   
@@ -78,7 +78,7 @@ PARAMETER MAPI_UNICODE
   
 > Eigenschaftentag für eine Eigenschaft vom Typ PT_OBJECT auf dem eine **IMAPITable** -Schnittstelle mithilfe eines Anrufs **OpenProperty** geöffnet werden kann. Die Tabelle muss eine Spalte mit einer Eigenschaft besitzen, die denselben Typ aufweist wie die-Eigenschaft, die durch das **UlPRPropertyName** -Element identifiziert. Die Zeilen der Tabelle dienen zum Auffüllen der Liste verwendet. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLCOMBOBOX** beschreibt ein Kombinationsfeld ein Steuerelement, das eine Liste und ein Auswahlfeld besteht. Die Liste enthält die Informationen, die von dem ein Benutzer kann auswählen, und im Auswahlfeld zeigt die aktuelle Auswahl. Im Auswahlfeld ist ein Bearbeitungssteuerelement, die auch für die Texteingabe noch nicht in der Liste verwendet werden kann. 
   
@@ -96,7 +96,7 @@ Eine Übersicht über die Anzeige Tabellen finden Sie unter [Tabellen angezeigt]
 
 [DTCTL](dtctl.md)
   
-[Kanonische PidTagControlType-Eigenschaft](pidtagcontroltype-canonical-property.md)
+[PidTagControlType (kanonische Eigenschaft)](pidtagcontroltype-canonical-property.md)
 
 
 [MAPI-Strukturen](mapi-structures.md)

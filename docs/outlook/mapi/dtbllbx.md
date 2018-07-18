@@ -41,7 +41,7 @@ typedef struct _DTBLLBX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulFlags**
   
@@ -63,7 +63,7 @@ MAPI_NO_VBAR
   
 > Rufen Sie die Eigenschaftentag für ein Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe einer **OpenProperty** geöffnet werden können. Die Anzahl der Spalten, die die Tabelle verfügen soll, hängt davon ab, ob die Liste eine einzelne oder mehrere Auswahlliste enthält. Wenn das Element **UlPRSetProperty** **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) festgelegt ist, können die Liste für die Mehrfachauswahl.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLLBX** beschreibt eine Liste ein Steuerelement, das verwendet wird, um mehrere Elemente anzeigen, und lassen Sie einen Benutzer ein oder mehrere Elemente auswählen. 
   

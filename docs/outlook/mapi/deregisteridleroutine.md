@@ -49,13 +49,13 @@ VOID DeregisterIdleRoutine(
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Jede Aufgabe in einer Clientanwendung oder Dienstanbieter kann eine beliebige im Leerlauf Routine Aufheben der Registrierung für den sie einen gültigen _Ftg_ Parameter verfügt. Insbesondere kann eine im Leerlauf Routine selbst Aufheben der Registrierung. 
   
 Die folgenden Funktionen Umgang mit der MAPI-Modul im Leerlauf und im Leerlauf Routinen basierend auf den [FNIDLE](fnidle.md) Funktionsprototyp: 
   
-|**Im Leerlauf routinemäßige-Funktion**|**Verwendung**|
+|**Im Leerlauf routinemäßige-Funktion**|**Nutzung**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten im Leerlauf Routine.  <br/> |
 |**DeregisterIdleRoutine** <br/> |Entfernt eine registrierte im Leerlauf Routine aus dem MAPI-System.  <br/> |

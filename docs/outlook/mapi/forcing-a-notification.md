@@ -1,5 +1,5 @@
 ---
-title: Erzwingen eine Benachrichtigung
+title: Erzwingen einer Benachrichtigung
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791714"
 ---
-# <a name="forcing-a-notification"></a>Erzwingen eine Benachrichtigung
+# <a name="forcing-a-notification"></a>Erzwingen einer Benachrichtigung
 
   
   

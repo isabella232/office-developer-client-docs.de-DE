@@ -1,5 +1,5 @@
 ---
-title: Fungiert als ein Host-Adressbuchanbieter
+title: Fungieren als Host-Adressbuchanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791257"
 ---
-# <a name="acting-as-a-host-address-book-provider"></a>Fungiert als ein Host-Adressbuchanbieter
+# <a name="acting-as-a-host-address-book-provider"></a>Fungieren als Host-Adressbuchanbieter
 
   
   

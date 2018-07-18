@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792274"
 ---
-# <a name="imapiprogress--iunknown"></a>IMAPIProgress: IUnknown
+# <a name="imapiprogress--iunknown"></a>IMAPIProgress : IUnknown
 
   
   
@@ -46,7 +46,7 @@ Implementiert eine Fortschritt-Objekt, das Clientanwendungen mit einer Statusanz
 |[GetMin](imapiprogress-getmin.md) <br/> |Gibt den kleinsten Wert in der [SetLimits](imapiprogress-setlimits.md) -Methode für die Fortschritt Informationen angezeigt werden.  <br/> |
 |[SetLimits](imapiprogress-setlimits.md) <br/> |Legt die oberen und unteren Grenzwerten für die Anzahl der Elemente in den Vorgang und die Kennzeichen, die steuern, wie die Statusinformationen für den Vorgang berechnet wird.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI enthält einen _LpProgress_ -Parameter in vielen der Methoden, die möglicherweise langwierige Operationen ausführen.  _LpProgress_ verweist auf eine Clientimplementierung eines Fortschritt-Objekts. Clients, die die **IMAPIProgress** -Schnittstelle implementieren legen Sie diesen Parameter auf ihre Implementierung; Clients, die nicht **IMAPIProgress** implementieren festgelegt den Parameter auf NULL wurde. Um eine Statusanzeige während der Verarbeitung des Vorgangs anzuzeigen, verwenden Sie Dienstanbieter vom Client, falls verfügbar bereitgestellte Fortschritt-Objekts oder ein MAPI-Implementierung (angegeben ist, wenn _LpProgress_ auf NULL festgelegt ist). 
   

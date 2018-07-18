@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidDistributionListMembers-Eigenschaft
+title: PidLidDistributionListMembers (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793494"
 ---
-# <a name="pidliddistributionlistmembers-canonical-property"></a>Kanonische PidLidDistributionListMembers-Eigenschaft
+# <a name="pidliddistributionlistmembers-canonical-property"></a>PidLidDistributionListMembers (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Liste der EntryIds-Objekte, die die Elemente der persönlichen Verteile
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mitglieder der persönlichen Verteilerliste möglicherweise andere persönlichen Verteilerlisten, elektronische Adressen, die in einem Kontakt, Global Address List Benutzer oder Verteilerlisten oder einmaligen e-Mail-Adressen enthalten sind. Das Format der einzelnen EntryId muss es sich um einen einmaligen Eintrags-ID, wie in [[MS-OXCDATA]](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx) angegeben oder eine gepackten EntryId sein. 
   

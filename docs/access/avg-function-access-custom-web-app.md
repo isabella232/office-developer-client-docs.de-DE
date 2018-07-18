@@ -30,9 +30,9 @@ Die **Avg** -Funktion enthält das folgende Argument.
 |:-----|:-----|
 |NumericExpression  <br/> |Ein Zeichenfolgenausdruck, der das Feld mit den numerischen Daten möchten Sie Mittelwert oder ein Ausdruck, der mithilfe der Daten in diesem Feld eine Berechnung ausgeführt wird. Zu den Operanden von *NumericExpression* zählen der Name des Tabellenfelds, eine Variable oder eine Funktion (die integrierte oder benutzerdefinierte sein kann jedoch keine der anderen SQL-Aggregatfunktionen).  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
-Durch **Avg** berechnete Mittelwert ist das arithmetische Mittel (die Summe der Werte dividiert durch die Anzahl der Werte). **Avg**, beispielsweise können Sie die durchschnittlichen Frachtkosten berechnen. 
+Bei dem von der **Avg**-Funktion berechneten Durchschnittswert handelt es sich um das arithmetische Mittel (die Summe der Werte dividiert durch die Anzahl von Werten). Mithilfe der **Avg**-Funktion können Sie beispielsweise die durchschnittlichen Frachtkosten berechnen. 
   
 Die **Avg** -Funktion umfasst keine **Null** -Werte in der Berechnung. 
   

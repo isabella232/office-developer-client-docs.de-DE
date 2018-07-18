@@ -1,5 +1,5 @@
 ---
-title: Implementieren von IUnknown in C#
+title: Implementieren von IUnknown in C
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792569"
 ---
-# <a name="implementing-iunknown-in-c"></a>Implementieren von IUnknown in C#
+# <a name="implementing-iunknown-in-c"></a>Implementieren von IUnknown in C
 
 **Betrifft**: Outlook 
   
@@ -133,5 +133,5 @@ STDMETHODIMP_(ULONG) STATUS_Release(LPMYSTATUSOBJ lpMyObj)
 ## <a name="see-also"></a>Siehe auch
 
 - [Implementieren von MAPI-Objekten](implementing-mapi-objects.md)
-- [Die IUnknown-Schnittstelle implementieren](implementing-the-iunknown-interface.md)
+- [Implementieren der IUnknown-Schnittstelle](implementing-the-iunknown-interface.md)
 

@@ -54,7 +54,7 @@ MAPI_W_NO_SERVICE
   
 > Der Aufruf war erfolgreich, es gibt aber keine primäre Identität für die Sitzung. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISession::QueryIdentity** -Methode die primäre Identität für die aktuelle Sitzung abgerufen und gibt den Wert über den Parameter _LppEntryID_ zurück. Die primäre Identität ist ein Objekt, in der Regel ein messaging-Benutzer, die den Benutzer einer Sitzung darstellt.  _LppEntryID_ gibt die primäre Identität bei einem [IMailUser](imailuserimapiprop.md) -Objekt, das auch als-Eigenschaft [PidTagEntryID](pidtagentryid-canonical-property.md) gespeichert ist. Den Rückgabewert in _LppEntryID_ können Sie um ein **IMailUser** -Objekt mit [IMAPISession::OpenEntry](imapisession-openentry.md)zu öffnen.
   
@@ -111,9 +111,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [Primäre MAPI-Identität](mapi-primary-identity.md)
   
-[Abrufen von primären und Anbieter Identität](retrieving-primary-and-provider-identity.md)
+[Abrufen der primären und Anbieteridentität](retrieving-primary-and-provider-identity.md)
   
 [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
   
-[Tabelle-Status und Status-Objekte](status-table-and-status-objects.md)
+[Statustabelle und Statusobjekte](status-table-and-status-objects.md)
 

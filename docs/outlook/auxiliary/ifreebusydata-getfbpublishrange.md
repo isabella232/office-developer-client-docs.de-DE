@@ -52,7 +52,7 @@ Ein Anbieter Frei/Gebucht-Informationen ruft [IFreeBusyData::EnumBlocks](ifreebu
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Verwenden Sie relative Zeit Zugriff auf Frei/Gebucht-Daten](how-to-use-relative-time-to-access-free-busy-data.md)
+- [Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten](how-to-use-relative-time-to-access-free-busy-data.md)
 - [IFreeBusyData::EnumBlocks](ifreebusydata-enumblocks.md)
 - [IFreeBusyData::SetFBRange](ifreebusydata-setfbrange.md)
 

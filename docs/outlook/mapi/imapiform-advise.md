@@ -54,7 +54,7 @@ E_OUTOFMEMORY
   
 > Die Registrierung war nicht erfolgreich, da nicht genügend Arbeitsspeicher.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer Aufrufen eines Formulars **IMAPIForm::Advise** -Methode, um für die Benachrichtigung zu registrieren, falls sich das Formular. 
   
@@ -74,12 +74,12 @@ Weitere Informationen zu Benachrichtigungen und Formulare finden Sie unter [Send
 
 [IMAPIForm::Unadvise](imapiform-unadvise.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
 [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md)
   
-[Senden und Empfangen von Benachrichtigungen Formular](sending-and-receiving-form-notifications.md)
+[Senden und Empfangen von Formularbenachrichtigungen](sending-and-receiving-form-notifications.md)
 

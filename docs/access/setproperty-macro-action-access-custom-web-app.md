@@ -28,10 +28,10 @@ Die **FestlegenEigenschaft** -Aktion hat die Argumente in der folgenden Tabelle 
 |**Aktionsargument**|**Beschreibung**|
 |:-----|:-----|
 | _Steuerelementname_ <br/> |Geben Sie den Namen des Felds oder der Steuerung für den Wert der Eigenschaft festgelegt werden soll. Lassen Sie dieses Argument leer, um die-Eigenschaft für die Ansicht festgelegt.  <br/> |
-| _Eigenschaft_ <br/> |Wählen Sie die Eigenschaft, die Sie festlegen möchten. Finden Sie im Abschnitt **"Hinweise"** in diesem Artikel finden Sie eine Liste der Eigenschaften, die mithilfe dieser Aktion festgelegt werden kann.  <br/> |
-| _Wert_ <br/> |Geben Sie den Wert, der die Eigenschaft festgelegt werden. Für Eigenschaften, deren Werte sind entweder Ja oder Nein, verwenden Sie **-1** für Ja, und **0** für Nein.  <br/> |
+| _Eigenschaft_ <br/> |Wählen Sie die Eigenschaft aus, die Sie festlegen möchten. Der Abschnitt **Hinweise** in diesem Artikel enthält eine Auflistung der Eigenschaften, die mithilfe dieser Aktion festgelegt werden können.<br/> |
+| _Wert_ <br/> |Geben Sie den Wert ein, auf den diese Eigenschaft festgelegt werden soll. Verwenden Sie bei Eigenschaften, deren Werte entweder Ja oder Nein lauten, -1 für Ja und 0 für Nein.<br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **FestlegenEigenschaft** -Aktion können Sie die folgenden Eigenschaften eines Steuerelements festlegen: 
   
@@ -39,7 +39,7 @@ Die **FestlegenEigenschaft** -Aktion können Sie die folgenden Eigenschaften ein
     
 - Aktiviert
     
-- ForeColor-Eigenschaft
+- ForeColor
     
 - Wert
     

@@ -1,5 +1,5 @@
 ---
-title: Bestimmen der Ende einer Tabelle
+title: Bestimmen des Tabelleendes
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791533"
 ---
-# <a name="determining-a-tables-end"></a>Bestimmen der Ende einer Tabelle
+# <a name="determining-a-tables-end"></a>Bestimmen des Tabelleendes
 
   
   

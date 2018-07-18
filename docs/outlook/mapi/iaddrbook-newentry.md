@@ -84,7 +84,7 @@ S_OK
   
 > Der neuen Adresseintrag Adressbuch wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **NewEntry** -Methode erstellt einen neuen Address Book Eintrag direkt in einem Container hinzugefügt werden soll oder verwendet werden, um eine ausgehende Nachricht zu adressieren. 
   
@@ -116,7 +116,7 @@ Um eine bestimmte Vorlage verwenden, um einen neuen Eintrag einem änderbare Con
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
   
-[Kanonische PidTagCreateTemplates-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

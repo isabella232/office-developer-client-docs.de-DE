@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidNonSendableBccTrackStatus-Eigenschaft
+title: PidLidNonSendableBccTrackStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793671"
 ---
-# <a name="pidlidnonsendablebcctrackstatus-canonical-property"></a>Kanonische PidLidNonSendableBccTrackStatus-Eigenschaft
+# <a name="pidlidnonsendablebcctrackstatus-canonical-property"></a>PidLidNonSendableBccTrackStatus (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält den Wert für jeden Teilnehmer, die in der Eigenschaft **DispidNonSenda
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist erforderlich, nur, wenn die **DispidNonSendableBCC** -Eigenschaft festgelegt wird. Die Anzahl von Werten in dieser Eigenschaft muss die Anzahl von Werten in der **DispidNonSendableBCC**entsprechen. Jeder Wert in dieser Eigenschaft entspricht der Teilnehmer in der **DispidNonSendableBCC** -Eigenschaft im selben Index. 
   

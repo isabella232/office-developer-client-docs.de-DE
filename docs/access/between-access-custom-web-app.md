@@ -38,7 +38,7 @@ Der Operator **zwischen** enthält die folgenden Argumente.
 
  **Boolean**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **BETWEEN** gibt **TRUE** zurück, wenn der Wert von *Test_expression* größer als oder gleich dem Wert von *Begin_expression* ist kleiner oder gleich dem Wert von *End_expression* . 
   

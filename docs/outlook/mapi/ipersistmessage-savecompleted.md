@@ -57,7 +57,7 @@ E_UNEXPECTED
     
    - [NoScribble](noscribble-state.md)
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IPersistMessage::SaveCompleted** -Methode wird aufgerufen, von einem Formular-Viewer, um das Formular zu benachrichtigen, das alle ausstehende Änderungen gespeichert wurden. **SaveCompleted** sollte aufgerufen werden, nur, wenn das Formular in einem der folgenden Zustände befindet: 
   
@@ -89,10 +89,10 @@ Weitere Informationen zum Speichern von Speicherobjekte finden Sie unter Dokumen
 
 
 
-[IPersistMessage: IUnknown](ipersistmessageiunknown.md)
+[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 
 
 [IPersistStorage::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersiststorage_savecompleted%28Office.15%29.aspx)

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidLogType-Eigenschaft
+title: PidLidLogType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793663"
 ---
-# <a name="pidlidlogtype-canonical-property"></a>Kanonische PidLidLogType-Eigenschaft
+# <a name="pidlidlogtype-canonical-property"></a>PidLidLogType (kanonische Eigenschaft)
 
   
   

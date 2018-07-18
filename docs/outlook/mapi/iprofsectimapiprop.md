@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792781"
 ---
-# <a name="iprofsect--imapiprop"></a>IProfSect: IMAPIProp
+# <a name="iprofsect--imapiprop"></a>IProfSect : IMAPIProp
 
   
   

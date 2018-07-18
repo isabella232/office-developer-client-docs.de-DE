@@ -1,5 +1,5 @@
 ---
-title: Address Book Anbieter Sample
+title: Adressbuchanbieter-Beispiel
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791262"
 ---
-# <a name="address-book-provider-sample"></a>Address Book Anbieter Sample
+# <a name="address-book-provider-sample"></a>Adressbuchanbieter-Beispiel
 
   
   

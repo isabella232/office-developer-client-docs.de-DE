@@ -31,7 +31,7 @@ Die **Rand** -Funktion enthält das folgende Argument.
 |:-----|:-----|
 | *Seed*  <br/> |Ein Integer-Ausdruck, der den Ausgangswert bereitstellt. Wenn der *Ausgangswert* nicht angegeben wird, wird ein Startwert nach dem Zufallsprinzip zugewiesen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sich wiederholende Aufrufe der **Rand** -Funktion mit demselben Startwert zurückgegeben die gleichen Ergebnisse. 
   

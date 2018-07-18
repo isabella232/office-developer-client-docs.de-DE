@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidCleanGlobalObjectId-Eigenschaft
+title: PidLidCleanGlobalObjectId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/21/2018
 ms.locfileid: "19793484"
 ---
-# <a name="pidlidcleanglobalobjectid-canonical-property"></a>Kanonische PidLidCleanGlobalObjectId-Eigenschaft
+# <a name="pidlidcleanglobalobjectid-canonical-property"></a>PidLidCleanGlobalObjectId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Bereinigen globale **ObjectID**gibt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format dieser Eigenschaft ist identisch mit der **LID_GLOBAL_OBJID** ([PidLidGlobalObjectId](pidlidglobalobjectid-canonical-property.md)). Der Wert dieser Eigenschaft muss auf den Wert der **LID_GLOBAL_OBJID**, mit Ausnahme der YH, YL, M, gleich und D Felder müssen null sein. Alle Objekte, die auf eine Instanz einer Terminserie (einschließlich einer verwaisten Instanz) als auch der Terminserie selbst verweisen müssen den gleichen Wert für diese Eigenschaft.
   

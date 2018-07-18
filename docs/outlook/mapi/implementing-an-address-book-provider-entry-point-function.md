@@ -1,5 +1,5 @@
 ---
-title: Implementieren eine Adresse Adressbuch Anbieter Eintrag Point-Funktion
+title: Implementieren einer Adressbuchanbieter-Einstiegspunktfunktion
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792547"
 ---
-# <a name="implementing-an-address-book-provider-entry-point-function"></a>Implementieren eine Adresse Adressbuch Anbieter Eintrag Point-Funktion
+# <a name="implementing-an-address-book-provider-entry-point-function"></a>Implementieren einer Adressbuchanbieter-Einstiegspunktfunktion
 
   
   

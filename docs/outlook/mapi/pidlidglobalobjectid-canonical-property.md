@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidGlobalObjectId-Eigenschaft
+title: PidLidGlobalObjectId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793643"
 ---
-# <a name="pidlidglobalobjectid-canonical-property"></a>Kanonische PidLidGlobalObjectId-Eigenschaft
+# <a name="pidlidglobalobjectid-canonical-property"></a>PidLidGlobalObjectId (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den eindeutigen Bezeichner des Calendar-Objekts.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Einmal für ein Calendar-Objekt festgelegt wird, muss der Wert dieser Eigenschaft nicht ändern. Eine ausführliche Beschreibung des Formats kann in [[MS-OXOCAL]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)gefunden werden.
   

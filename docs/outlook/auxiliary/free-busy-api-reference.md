@@ -1,5 +1,5 @@
 ---
-title: Frei/Gebucht-API-Referenz
+title: Referenz zur Frei/Gebucht-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790944"
 ---
-# <a name="freebusy-api-reference"></a>Frei/Gebucht-API-Referenz
+# <a name="freebusy-api-reference"></a>Referenz zur Frei/Gebucht-API
 
 Dieser Abschnitt enthält die Referenz für die Frei/Gebucht-API, die e-Mail-Anbieter für Frei-/Gebucht-Status für die angegebenen Benutzerkonten innerhalb eines angegebenen Zeitraums Informationen ermöglicht.
 

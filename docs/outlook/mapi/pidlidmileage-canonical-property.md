@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidMileage-Eigenschaft
+title: PidLidMileage (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793664"
 ---
-# <a name="pidlidmileage-canonical-property"></a>Kanonische PidLidMileage-Eigenschaft
+# <a name="pidlidmileage-canonical-property"></a>PidLidMileage (kanonische Eigenschaft)
 
   
   

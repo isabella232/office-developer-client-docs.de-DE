@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentRecur-Eigenschaft
+title: PidLidAppointmentRecur (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793389"
 ---
-# <a name="pidlidappointmentrecur-canonical-property"></a>Kanonische PidLidAppointmentRecur-Eigenschaft
+# <a name="pidlidappointmentrecur-canonical-property"></a>PidLidAppointmentRecur (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die Datums- und Zeitangaben, tritt eine Terminserie mithilfe einer Serienmu
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Datums- und Zeitangaben – Wenn eine Terminserie erfolgt über die Serienmuster und liegt im Bereich Details in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx). Der Wert dieser Eigenschaft enthält auch Informationen zu geänderten und gelöschte Ausnahmen. Informationen wie Datumsangaben, Betreff, Ort und einige andere Eigenschaften von Ausnahmen. Die binären Daten in dieser Eigenschaft für wiederkehrende Kalenderelemente werden als die Struktur **AppointmentRecurrencePattern** gespeichert. Diese Eigenschaft muss in Kalenderelementen Einzelinstanz nicht vorhanden. 
   

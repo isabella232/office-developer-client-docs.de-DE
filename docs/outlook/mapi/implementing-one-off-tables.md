@@ -1,5 +1,5 @@
 ---
-title: Implementieren der einmalige Tabellen
+title: Implementieren von Einmaltabellen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792561"
 ---
-# <a name="implementing-one-off-tables"></a>Implementieren der einmalige Tabellen
+# <a name="implementing-one-off-tables"></a>Implementieren von Einmaltabellen
 
 **Betrifft**: Outlook 
   

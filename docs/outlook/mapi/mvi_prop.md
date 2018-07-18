@@ -42,7 +42,7 @@ MVI_PROP (tag)
   
 > Die Eigenschaftentag geändert werden soll.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MVI_FLAG kombiniert die Einstellung der MV_FLAG, Identifizieren einer Eigenschaft als mehrwertige, und MV_INSTANCE vorhanden, anfordern, dass eine mehrwertige Eigenschaft in einer Tabelle in mehrere Zeilen angezeigt werden. Der Eigenschaftentyp der betroffenen-Eigenschaft wird so geändert, aber der Bezeichner bleibt unverändert. 
   

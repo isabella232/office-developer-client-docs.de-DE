@@ -1,5 +1,5 @@
 ---
-title: Die IUnknown-Schnittstelle implementieren
+title: Implementieren der IUnknown-Schnittstelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792584"
 ---
-# <a name="implementing-the-iunknown-interface"></a>Die IUnknown-Schnittstelle implementieren
+# <a name="implementing-the-iunknown-interface"></a>Implementieren der IUnknown-Schnittstelle
 
   
   

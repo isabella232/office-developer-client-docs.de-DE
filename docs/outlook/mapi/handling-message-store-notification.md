@@ -42,7 +42,7 @@ Da vorhanden, dass keine strengen Richtlinien, die zum Implementieren der Benach
 |Verschieben Sie einen Ordner aus einem Ordner in einen anderen  <br/> | _fnevObjectMoved_ <br/> |Nachrichtenspeicher verschobene Ordner  <br/> |
 |Kopieren eines Ordners aus einem Ordner in einen anderen  <br/> | _fnevObjectCopied_ <br/> |Nachricht speichern und kopiert Ordner (keine _FnevObjectCreated_ Benachrichtigung, die für die neue Kopie des Ordners)  <br/> |
 |Ändern Sie in einem berechnete-Ordnereigenschaft (**PR_SUBFOLDERS** ([PidTagSubfolders](pidtagsubfolders-canonical-property.md)), **PR_CONTENT_UNREAD** ([PidTagContentUnreadCount](pidtagcontentunreadcount-canonical-property.md)), **PR_CONTENT_COUNT** ([PidTagContentCount](pidtagcontentcount-canonical-property.md))  <br/> | _fnevObjectModified_ <br/> |Nachrichtenspeicher Changed-Ordner (keine Benachrichtigung an den übergeordneten Ordner)  <br/> |
-|Erstellen Sie eine Nachricht  <br/> | _fnevObjectCreated_ <br/> |Nachrichtenspeicher  <br/> |
+|Erstellen von Nachrichten  <br/> | _fnevObjectCreated_ <br/> |Nachrichtenspeicher  <br/> |
 |Löschen einer Nachricht, verursacht eine Änderung in der übergeordneten Ordners **PR_CONTENT_COUNT** -Eigenschaft  <br/> | _fnevObjectDeleted_ <br/> |Nachrichtenspeicher Deleted Nachricht  <br/> |
 |Verschieben Sie eine Nachricht von einem Ordner in einen anderen  <br/> | _fnevObjectMoved_ <br/> |Nachrichtenspeicher verschobene Nachricht  <br/> |
 |Kopieren Sie eine Nachricht von einem Ordner in einen anderen  <br/> | _fnevObjectCopied_ <br/> |Nachrichtenspeicher kopierte Nachricht (keine _FnevObjectCreated_ Benachrichtigung für die neue Kopie der Nachricht)  <br/> |

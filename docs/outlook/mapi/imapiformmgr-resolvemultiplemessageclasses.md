@@ -86,5 +86,5 @@ Wenn eine Nachrichtenklasse in einem Formular aufgelöst werden kann, wird NULL 
 
 [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidCommonEnd-Eigenschaft
+title: PidLidCommonEnd (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793470"
 ---
-# <a name="pidlidcommonend-canonical-property"></a>Kanonische PidLidCommonEnd-Eigenschaft
+# <a name="pidlidcommonend-canonical-property"></a>PidLidCommonEnd (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt das Enddatum und die Uhrzeit einer Nachricht.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Endzeit für ein Element an. Es muss größer als oder gleich dem Wert der Eigenschaft **DispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) sein.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidLocation-Eigenschaft
+title: PidLidLocation (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793645"
 ---
-# <a name="pidlidlocation-canonical-property"></a>Kanonische PidLidLocation-Eigenschaft
+# <a name="pidlidlocation-canonical-property"></a>PidLidLocation (kanonische Eigenschaft)
 
   
   

@@ -49,6 +49,6 @@ Wenn Sie mit dem **MDB_ONLINE** -Flag auf dem Remoteserver Nachrichtenspeicher g
 ## <a name="see-also"></a>Siehe auch
 
 - [Informationen zu MAPI-Ergänzungen](about-mapi-additions.md) 
-- [Geöffnet ist ein Speichers Remote Server Wenn Outlook im Exchange-Cache-Modus](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
-- [Verwalten einer Nachricht in einer OST ohne Aufrufen eine Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
+- [Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

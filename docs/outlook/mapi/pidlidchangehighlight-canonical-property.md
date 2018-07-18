@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidChangeHighlight-Eigenschaft
+title: PidLidChangeHighlight (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793476"
 ---
-# <a name="pidlidchangehighlight-canonical-property"></a>Kanonische PidLidChangeHighlight-Eigenschaft
+# <a name="pidlidchangehighlight-canonical-property"></a>PidLidChangeHighlight (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt ein Bitfeld, das angibt, wie das Objekt Besprechung geändert.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich. Die einzelnen Flags, die festgelegt werden können, sind in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)aufgeführt.
   

@@ -37,7 +37,7 @@ typedef struct {
 } OLFI, *POLFI;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _ulVersion_
   
@@ -67,7 +67,7 @@ typedef struct {
   
 - Struktur der langfristigen-ID, die den nächsten verfügbaren Eintrag identifiziert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Eintrags-ID ist eine 4-Byte-MAPI-Eintrags-ID für einen Ordner oder eine Nachricht. Weitere Informationen finden Sie unter [ENTRYID](http://msdn.microsoft.com/en-us/library/ms836424).
   
@@ -85,9 +85,9 @@ Ein Anbieter, der umbrochen den PST-Speicher-Anbieter wird überprüfen regelmä
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
 [LTID](ltid.md)
 

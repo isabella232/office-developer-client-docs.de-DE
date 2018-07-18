@@ -60,7 +60,7 @@ S_OK
   
 > Das Objekt wurde erfolgreich als nicht verwendbar gekennzeichnet.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::MakeInvalid** -Methode wird für alle Unterstützungsobjekte implementiert. Das Objekt, das ungültig gemacht werden muss aus die **IUnknown** -Schnittstelle oder von einer Schnittstelle abgeleitet von **IUnknown**abgeleitet werden.
   

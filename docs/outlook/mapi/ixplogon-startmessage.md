@@ -93,5 +93,5 @@ Weitere Informationen finden Sie unter [Interaktion mit der MAPI-Warteschlange](
   
 [IXPLogon::TransportNotify](ixplogon-transportnotify.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

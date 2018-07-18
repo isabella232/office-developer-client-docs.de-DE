@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792478"
 ---
-# <a name="imapitablerestrict"></a>Methode IMAPITable:: Restrict
+# <a name="imapitablerestrict"></a>IMAPITable::Restrict
 
   
   
@@ -66,7 +66,7 @@ MAPI_E_TOO_COMPLEX
   
 > Die Tabelle kann nicht den Vorgang ausgeführt werden, da der bestimmte Filter auf das durch den Parameter _LpRestriction_ zu kompliziert ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Methode IMAPITable:: Restrict** -Methode stellt eine Einschränkung oder ein Filter für eine Tabelle her. Wenn eine vorherige Einschränkung vorhanden ist, es verworfen, und die neue Datenbank angewendet. Anwenden einer Einschränkung hat keine Auswirkung auf die zugrunde liegenden Daten einer Tabelle; Diese ändert der Ansicht einfach durch Beschränken der Zeilen, die abgerufen werden können, um Zeilen mit Daten, die die Einschränkung erfüllen. 
   
@@ -109,7 +109,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPITable::Abort](imapitable-abort.md)
   
-[IMAPITable](imapitable-findrow.md)
+[IMAPITable::FindRow](imapitable-findrow.md)
   
 [IMAPITable::GetRowCount](imapitable-getrowcount.md)
   
@@ -117,7 +117,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropertyRestriction](spropertyrestriction.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

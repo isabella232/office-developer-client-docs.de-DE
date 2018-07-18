@@ -1,5 +1,5 @@
 ---
-title: MAPI-Beispiele
+title: MAPI-Dienstanbieter-Beispiel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793076"
 ---
-# <a name="mapi-service-provider-samples"></a>MAPI-Beispiele
+# <a name="mapi-service-provider-samples"></a>MAPI-Dienstanbieter-Beispiel
 
   
   
@@ -23,7 +23,7 @@ ms.locfileid: "19793076"
   
 Dieser Abschnitt enthält Codebeispiele für drei MAPI-Dienstanbieter:
   
-- [Herunterladen der MAPI-Beispiele für Outlook](downloading-the-outlook-mapi-samples.md)
+- [Herunterladen der Outlook-MAPI-Beispiele](downloading-the-outlook-mapi-samples.md)
     
     In diesem Thema wird beschrieben, wie die Beispiele herunterladen.
     

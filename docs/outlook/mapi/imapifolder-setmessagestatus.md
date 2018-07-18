@@ -89,7 +89,7 @@ S_OK
   
 > Der Nachrichtenstatus wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIFolder::SetMessageStatus** -Methode wird die Nachricht den Status auf den Wert, der in dessen **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft gespeichert ist. 
   
@@ -109,7 +109,7 @@ Die **PR_MSG_STATUS** -Eigenschaft einer Nachricht können Sie einen Nachricht S
 
 [IMAPIFolder::GetMessageStatus](imapifolder-getmessagestatus.md)
   
-[Kanonische PidTagMessageStatus-Eigenschaft](pidtagmessagestatus-canonical-property.md)
+[PidTagMessageStatus (kanonische Eigenschaft)](pidtagmessagestatus-canonical-property.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 

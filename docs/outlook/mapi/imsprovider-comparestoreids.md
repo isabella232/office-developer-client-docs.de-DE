@@ -88,5 +88,5 @@ Vergleichen von Eintragsbezeichner ist hilfreich, da ein Objekt mehr als eine g√
   
 [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
 

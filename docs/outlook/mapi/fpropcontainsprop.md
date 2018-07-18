@@ -79,7 +79,7 @@ FALSE
   
 > Die verglichenen Eigenschaftswerte sind nicht vom Typ PT_STRING8 oder PT_BINARY, die Eigenschaftswerte werden verschiedene Typen oder nicht enthalten, die zu suchende Zeichenfolge _LpSPropValueSrc_ wie in der Wert der _LpSPropValueDst_ -Eigenschaft angegeben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Vergleichsmethode hängt davon ab, die in die Definitionen der [SPropValue](spropvalue.md) -Eigenschaft angegebene Eigenschaftentypen und die fuzzy Ebene Heuristik im _UlFuzzyLevel_ -Parameter angegeben. Die Funktionen [FPropCompareProp](fpropcompareprop.md) und **FPropContainsProp** können verwendet werden, um Einschränkungen zum Generieren einer Tabelle vorzubereiten. 
   

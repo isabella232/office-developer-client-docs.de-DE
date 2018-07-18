@@ -30,7 +30,7 @@ Gibt den ersten Ausdruck, der nicht aus einer Liste der Argumente NULL ist.
 |:-----|:-----|
 | *Value*  <br/> |Ein Ausdruck.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn alle Argumente NULL sind, gibt **Coalesce** NULL zurück. 
   

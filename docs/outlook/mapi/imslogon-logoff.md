@@ -67,5 +67,5 @@ Nachricht Anbieter implementieren Sie die **IMSLogon::Logoff** -Methode eine Nac
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

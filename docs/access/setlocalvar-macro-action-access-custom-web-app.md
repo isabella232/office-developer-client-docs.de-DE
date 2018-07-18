@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 12444313-1cfa-49ff-89da-3030fe75c13e
-description: Die FestlegenLokaleVar-Aktion erstellt eine temporäre Variable und legen Sie es auf einen bestimmten Wert.
+description: Mit der FestlegenLokaleVar -Aktion erstellen Sie eine temporäre Variable und legen diese auf einen bestimmten Wert fest.
 ms.openlocfilehash: 26b1515a8604c02c32135e6e5ccf6fe1e67622f2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

@@ -69,7 +69,7 @@ S_OK
   
 > Der Empfangsordner wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::GetReceiveFolder** -Methode ruft die Eintrags-ID eines Ordners empfangen, einen Ordner, der zum Empfangen eingehender Nachrichten von einer bestimmten Nachrichtenklasse festgelegt. Anrufer können eine Nachrichtenklasse oder NULL in der _LpszMessageClass_ -Parameter angeben. Wenn _LpszMessageClass_ NULL ist, gibt **GetReceiveFolder** die folgenden Werte zurück: 
   

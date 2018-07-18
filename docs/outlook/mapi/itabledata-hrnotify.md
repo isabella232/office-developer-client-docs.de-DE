@@ -67,5 +67,5 @@ Die **ITableData::HrNotify** -Methode sendet eine Benachrichtigung TABLE_ROW_MOD
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

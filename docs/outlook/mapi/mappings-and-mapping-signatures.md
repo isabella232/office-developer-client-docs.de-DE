@@ -1,5 +1,5 @@
 ---
-title: Zuordnungen und Zuordnung Signaturen
+title: Zuordnungen und Zuordnungssignaturen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793165"
 ---
-# <a name="mappings-and-mapping-signatures"></a>Zuordnungen und Zuordnung Signaturen
+# <a name="mappings-and-mapping-signatures"></a>Zuordnungen und Zuordnungssignaturen
 
   
   
@@ -31,7 +31,7 @@ Arbeiten mit der benannten Eigenschaft der Objekte Clients verwenden der Objekte
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [Benannte Eigenschaften MAPI](mapi-named-properties.md)

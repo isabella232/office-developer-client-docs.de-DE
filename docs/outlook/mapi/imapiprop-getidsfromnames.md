@@ -80,7 +80,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war insgesamt erfolgreich, aber eine oder mehrere Eigenschaftenbezeichner konnte nicht zurückgegeben werden. Der entsprechende Eigenschaftentyp für jede Eigenschaft nicht verfügbar ist **PT_ERROR** und des Bezeichners auf NULL gesetzt. Wenn diese Warnung zurückgegeben wird, bearbeiten Sie den Anruf als erfolgreich. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Finden Sie unter [Verwendung von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIProp::GetIDsFromNames** -Methode ruft ein Array von Eigenschaftentags, die die als Eigenschaftenbezeichner für eine oder mehrere benannte Eigenschaften enthalten. **IMAPIProp::GetIDsFromNames** kann aufgerufen werden, um Folgendes auszuführen: 
   
@@ -132,7 +132,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIUID](mapiuid.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

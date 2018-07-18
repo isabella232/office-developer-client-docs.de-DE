@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792855"
 ---
-# <a name="itabledata--iunknown"></a>ITableData: IUnknown
+# <a name="itabledata--iunknown"></a>ITableData : IUnknown
 
   
   
@@ -50,7 +50,7 @@ Bietet Methoden zum Arbeiten mit Tabellen. MAPI bietet Datenobjekte Tabelle oder
 |[HrModifyRows](itabledata-hrmodifyrows.md) <br/> |Mehrere Tabellenzeilen, möglicherweise Ersetzen der vorhandene Zeilen eingefügt.  <br/> |
 |[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |Löscht mehrere Tabellenzeilen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Implementierung der **ITableData** arbeitet mit Tabellen halten Sie alle Daten und zugehörigen Einschränkungen im Arbeitsspeicher, leicht für die Verwendung mit sehr große Tabellen nicht geeignet. Große Einschränkungen und komplexe Vorgänge wie Kategorisierung werden nicht unterstützt. 
   

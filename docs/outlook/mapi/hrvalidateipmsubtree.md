@@ -67,7 +67,7 @@ MAPI_FULL_IPM_TREE
     
     - Stamm der Suche\*
     
-    - IPM-Unterstruktur\*
+    - IPM-Teilstruktur\*
     
     - Posteingang
     
@@ -95,7 +95,7 @@ MAPI_FULL_IPM_TREE
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI verwendet die Funktion **HrValidateIPMSubtree** intern standard IPM-Unterstruktur in einem Nachrichtenspeicher erstellt wird, wenn der Informationsspeicher zum ersten Mal geöffnet wird, oder ein Speichers Standard speichern vorgenommen wird. Diese Funktion kann auch verwendet werden von Clientanwendungen überprüfen oder Reparatur von e-Mail-Ordnern. 
   

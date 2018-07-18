@@ -64,7 +64,7 @@ S_OK
   
 > Wenn diese Methode aufgerufen wird, wird S_OK zurückgegeben. Es wird jedoch keine Aktion ausgeführt werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie diese Methode nicht. MAPI unterstützt keine Kennwörter für Profile.
   
@@ -72,5 +72,5 @@ Verwenden Sie diese Methode nicht. MAPI unterstützt keine Kennwörter für Prof
 
 
 
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

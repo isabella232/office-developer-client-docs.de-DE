@@ -76,7 +76,7 @@ S_OK
   
 > Der Aufruf war erfolgreich, und die angegebenen Spalten verschoben oder hinzugefügt wurden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Eigenschaften **HrAddColumnsEx** mit dem _LpproptagColumnsNew_ -Parameter übergeben werden die ersten Eigenschaften für nachfolgende Aufrufe [der QueryRows](imapitable-queryrows.md) verfügbar gemacht werden. Alle Eigenschaften zuvor in der Tabelle, die nicht im _LpproptagColumnsNew_ -Parameter angegeben wurden, werden nach alle Eigenschaften hinzugefügten und verschobenen verfügbar gemacht. 
   

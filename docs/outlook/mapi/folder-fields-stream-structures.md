@@ -1,5 +1,5 @@
 ---
-title: Ordnerfeldern Stream Strukturen
+title: Ordnerfelder-Streamstrukturen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791704"
 ---
-# <a name="folder-fields-stream-structures"></a>Ordnerfeldern Stream Strukturen
+# <a name="folder-fields-stream-structures"></a>Ordnerfelder-Streamstrukturen
 
 **Betrifft**: Outlook 
   
@@ -98,7 +98,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
 |:-----|:-----|:-----|
 |ftNull  <br/> |0 x 0  <br/> |In diesem Feldtyp wird verwendet, um ein Array von Felddefinitionen Null beenden.  <br/> |
 |ftString  <br/> |0 x 1  <br/> |Text  <br/> |
-|ftInteger  <br/> |0 x 3  <br/> |Ganzzahl  <br/> |
+|ftInteger  <br/> |0 x 3  <br/> |Ganze Zahl  <br/> |
 |ftTime  <br/> |0 x 5  <br/> |Datum/Uhrzeit  <br/> |
 |ftBoolean  <br/> |0 x 6  <br/> |Ja/Nein  <br/> |
 |ftDuration  <br/> |0 x 7  <br/> |Duration  <br/> |
@@ -170,6 +170,6 @@ Das Feld Formel in seinem UI-Format wird in das Textfeld **Formel** von der **Ne
   
 ## <a name="see-also"></a>Siehe auch
 
-- [FolderUserFields Stream-Beispiel](folderuserfields-stream-sample.md)
-- [Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu.](how-to-add-a-definition-for-a-new-user-defined-field.md)
+- [Beispiel für FolderUserFields-Stream](folderuserfields-stream-sample.md)
+- [Hinzufügen einer Definition für ein neues benutzerdefiniertes Feld](how-to-add-a-definition-for-a-new-user-defined-field.md)
 

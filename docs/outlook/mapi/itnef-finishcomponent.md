@@ -102,7 +102,7 @@ Der in _LppProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf gibt 
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[OpenTNEFStream nicht ausgeführt werden](opentnefstream.md)
+[OpenTnefStream](opentnefstream.md)
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
@@ -110,5 +110,5 @@ Der in _LppProblems_ zurückgegebene Wert ist nur gültig, wenn der Aufruf gibt 
   
 [STnefProblemArray](stnefproblemarray.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 

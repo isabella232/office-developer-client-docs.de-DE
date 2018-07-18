@@ -45,7 +45,7 @@ None.
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung oder Dienstanbieter sollte **MAPIDeInitIdle** aufrufen, wenn er nicht mehr das Modul im Leerlauf, beispielsweise benötigt bei Beenden der Verarbeitung. 
   
@@ -53,7 +53,7 @@ Jedem Aufruf von [MAPIInitIdle](mapiinitidle.md) muss durch einen nachfolgenden 
   
 Die folgenden Funktionen Umgang mit der MAPI-Modul im Leerlauf und im Leerlauf Routinen basierend auf den [FNIDLE](fnidle.md) Funktionsprototyp: 
   
-|**Im Leerlauf routinemäßige-Funktion**|**Verwendung**|
+|**Im Leerlauf routinemäßige-Funktion**|**Nutzung**|
 |:-----|:-----|
 |[ChangeIdleRoutine](changeidleroutine.md) <br/> |Ändert die Eigenschaften einer registrierten im Leerlauf Routine.  <br/> |
 |[DeregisterIdleRoutine](deregisteridleroutine.md) <br/> |Entfernt eine registrierte im Leerlauf Routine aus dem MAPI-System.  <br/> |

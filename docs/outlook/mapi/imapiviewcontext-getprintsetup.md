@@ -54,7 +54,7 @@ S_OK
   
 > Die Drucken von Informationen wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formularobjekte Aufrufen die **IMAPIViewContext::GetPrintSetup** -Methode zum Abrufen von Informationen zur Einrichtung Druckers bevor Sie versuchen, die aktuelle Nachricht zu drucken. 
   
@@ -74,5 +74,5 @@ Freigegeben Sie die **hDevMode-Feld** und **hDevName** Member der Struktur **FOR
 
 [FORMPRINTSETUP](formprintsetup.md)
   
-[IMAPIViewContext: IUnknown](imapiviewcontextiunknown.md)
+[IMAPIViewContext : IUnknown](imapiviewcontextiunknown.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur
+title: Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790943"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a>Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a>Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur
 
 In diesem Thema wird wie die [TZREG](tzreg.md) -Struktur aus der beibehaltenen Format gespeichert, in die binäre Eigenschaft [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)lesen.
   
@@ -57,5 +57,5 @@ TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
+- [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
 

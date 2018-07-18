@@ -1,5 +1,5 @@
 ---
-title: Formular Konfigurationsabschnitt Datei [Eigenschaften]
+title: Abschnitt [Properties] in der Formularkonfigurationsdatei
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791738"
 ---
-# <a name="form-configuration-file-properties-section"></a>Formular Konfigurationsabschnitt Datei [Eigenschaften]
+# <a name="form-configuration-file-properties-section"></a>Abschnitt [Properties] in der Formularkonfigurationsdatei
 
   
   

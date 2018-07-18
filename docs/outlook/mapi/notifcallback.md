@@ -59,7 +59,7 @@ ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
 
 Der Satz von gültigen Rückgabewerte für die **NOTIFCALLBACK** Funktionsprototyp hängt davon ab, ob die Funktion von einer Clientanwendung oder einem Dienstanbieter implementiert wird. Clients sollte immer S_OK zurück. Anbieter können S_OK oder CALLBACK_DISCONTINUE zurückgeben. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 CALLBACK_DISCONTINUE ist ein gültiger Rückgabewert für nur synchrone Rückruffunktionen. fordert, dass MAPI sofort Beenden der Verarbeitung der Rückrufe für diese Benachrichtigung an. Wenn CALLBACK_DISCONTINUE zurückgegeben wird, wird MAPI der _LpUlFlags_ -Parameter auf NOTIFY_CANCELED, wenn es vom [IMAPISupport::Notify](imapisupport-notify.md)zurückgibt. 
   

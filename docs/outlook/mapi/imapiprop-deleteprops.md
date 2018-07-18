@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > Der Aufrufer verfügt nicht über ausreichende Berechtigungen zum Löschen von Eigenschaften.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIProp::DeleteProps** -Methode entfernt eine oder mehrere Eigenschaften aus dem aktuellen Objekt. 
   
@@ -96,7 +96,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [SPropTagArray](sproptagarray.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

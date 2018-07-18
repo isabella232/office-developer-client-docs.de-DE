@@ -1,5 +1,5 @@
 ---
-title: MAPI-Initialisierung
+title: Initialisieren von MAPI
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792710"
 ---
-# <a name="initializing-mapi"></a>MAPI-Initialisierung
+# <a name="initializing-mapi"></a>Initialisieren von MAPI
 
   
   

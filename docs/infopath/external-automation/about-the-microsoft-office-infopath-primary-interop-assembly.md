@@ -1,5 +1,5 @@
 ---
-title: Über die Microsoft Office InfoPath primären Interop-Assembly
+title: Informationen zur Microsoft Office InfoPath Primary Interop-Assembly
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790635"
 ---
-# <a name="about-the-microsoft-office-infopath-primary-interop-assembly"></a>Über die Microsoft Office InfoPath primären Interop-Assembly
+# <a name="about-the-microsoft-office-infopath-primary-interop-assembly"></a>Informationen zur Microsoft Office InfoPath Primary Interop-Assembly
 
 Die InfoPath-Anwendung wird als Component Object Model (COM) Anwendung erstellt, die ihre Programmierbarkeit Schnittstellen für die externe Automatisierung als COM-Schnittstellen verfügbar macht. Um das Erstellen von InfoPath-Lösungen unterstützen, die Sprachen mit verwaltetem Code wie Visual c# und Visual Basic verwenden, wird die Option **.NET Programmierbarkeit Support** im InfoPath-Setupprogramm drei Interop-Assemblys installiert. Interop-Assemblys sind Assemblys, die fungieren als Brücke zwischen verwaltetem oder nicht verwaltetem Code, indem COM-Objektmember den gleichwertigen Mitglieder verwaltet. 
   

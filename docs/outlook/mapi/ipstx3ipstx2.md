@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792816"
 ---
-# <a name="ipstx3--ipstx2"></a>IPSTX3: IPSTX2
+# <a name="ipstx3--ipstx2"></a>IPSTX3 : IPSTX2
 
   
   
@@ -42,7 +42,7 @@ Diese Schnittstelle stellt Hilfsfunktionen beim Ausführen einer Replikation üb
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
 

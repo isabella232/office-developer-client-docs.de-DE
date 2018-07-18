@@ -45,7 +45,7 @@ MAPI_E_UNABLE_TO_ABORT
   
 > Ein asynchroner Vorgang ist in Arbeit und kann nicht beendet werden oder wurde bereits abgeschlossen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::Abort** -Methode beendet jede asynchrone Operation, die derzeit ausgeführt wird. 
   
@@ -63,9 +63,9 @@ Wenn die Verarbeitung von einem Aufruf der [SortTable](imapitable-sorttable.md) 
 
 [IMAPITable::GetStatus](imapitable-getstatus.md)
   
-[Methode IMAPITable:: Restrict](imapitable-restrict.md)
+[IMAPITable::Restrict](imapitable-restrict.md)
   
-[SortTable](imapitable-sorttable.md)
+[IMAPITable::SortTable](imapitable-sorttable.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 

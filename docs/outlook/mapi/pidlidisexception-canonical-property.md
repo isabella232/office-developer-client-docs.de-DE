@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidIsException-Eigenschaft
+title: PidLidIsException (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793634"
 ---
-# <a name="pidlidisexception-canonical-property"></a>Kanonische PidLidIsException-Eigenschaft
+# <a name="pidlidisexception-canonical-property"></a>PidLidIsException (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass das Objekt, das eine Ausnahme (einschließlich einer verwaisten In
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Gibt der Wert FALSE an, dass das Objekt, das eine Terminserie oder eine einzelne Instanz darstellt. Das Fehlen dieser Eigenschaft für jedes Objekt gilt gibt einen Wert false mit Ausnahme der Ausnahme eingebettete Nachricht, die Wert TRUE wird davon ausgegangen.
   

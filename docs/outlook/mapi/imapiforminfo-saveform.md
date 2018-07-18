@@ -53,7 +53,7 @@ MAPI_E_NO_SUPPORT
   
 > **SaveForm** wurde wahrscheinlich aufgerufen, um ein Formular im Container lokale Formular zu speichern. **SaveForm** wird für den Container lokale Formular nicht unterstützt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clientanwendungen rufen Sie die **IMAPIFormInfo::SaveForm** -Methode, um eine Beschreibung des aktuellen Formulars in der Datei zu speichern, die den angegebenen Dateinamen hat. **SaveForm** erstellt eine Konfigurationsdatei. 
   
@@ -71,5 +71,5 @@ Rufen Sie die Methode [IMAPIProp::GetLastError](imapiprop-getlasterror.md) **Sav
   
 [MAPIERROR](mapierror.md)
   
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
 

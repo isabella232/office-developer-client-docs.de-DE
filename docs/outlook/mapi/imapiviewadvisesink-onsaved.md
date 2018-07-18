@@ -51,5 +51,5 @@ Weitere Informationen zum Formular Benachrichtigungen finden Sie unter [Senden u
 
 
 
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
 

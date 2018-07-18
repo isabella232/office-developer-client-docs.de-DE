@@ -1,5 +1,5 @@
 ---
-title: BENACHRICHTIGUNG
+title: NOTIFICATION
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793306"
 ---
-# <a name="notification"></a>BENACHRICHTIGUNG
+# <a name="notification"></a>NOTIFICATION
  
 **Betrifft**: Outlook 
   
@@ -46,7 +46,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **ulEventType**
   
@@ -96,7 +96,7 @@ typedef struct
   
 > Union der Benachrichtigung Strukturen zur Beschreibung der betreffenden Daten für einen bestimmten Typ des Ereignisses. Die Struktur im **Info** -Member enthalten, hängt von den Wert des Elements **UlEventType** ab. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein oder mehrere **Benachrichtigung** Strukturen werden als Eingabeparameter mit jedem Aufruf einer registrierten Advise-Empfänger [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode übergeben. Die **Benachrichtigung** Strukturen enthalten Informationen zu den bestimmte Ereignisse, die aufgetreten sind, und der betroffene Objekte beschreiben. 
   
@@ -116,7 +116,7 @@ Weitere Informationen zur Benachrichtigung finden Sie unter den Themen in der fo
 |:-----|:-----|
 |[Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md) <br/> |Allgemeine Übersicht über die Benachrichtigung und Benachrichtigungsereignisse.  <br/> |
 |[Behandeln von Benachrichtigungen](handling-notifications.md) <br/> |Erläuterung der wie Clients Benachrichtigungen behandelt werden sollen.  <br/> |
-|[Benachrichtigung bei unterstützenden](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
+|[Unterstützen von Ereignisbenachrichtigungen](supporting-event-notification.md) <br/> |Erläuterung der wie-Dienstanbieter die [IMAPISupport](imapisupportiunknown.md) -Methode verwenden können, um Benachrichtigungen zu generieren.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 

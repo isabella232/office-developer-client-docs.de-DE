@@ -83,11 +83,11 @@ Informationen zu PT_ERROR finden Sie unter [Eigenschaftentypen](property-types.m
   
 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)
   
-[Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md)
+[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Ausblenden der Besprechung Update Option-Eigenschaft
+title: Eigenschaft zum Ausblenden der Besprechungsaktualisierungsoption
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791830"
 ---
-# <a name="hide-meeting-update-option-property"></a>Ausblenden der Besprechung Update Option-Eigenschaft
+# <a name="hide-meeting-update-option-property"></a>Eigenschaft zum Ausblenden der Besprechungsaktualisierungsoption
 
   
   
@@ -37,7 +37,7 @@ Blendet die Option zum besprechungsaktualisierungen auf nur hinzugefügte oder g
 |Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMAPIProp: IUnknown](imapipropiunknown.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
   

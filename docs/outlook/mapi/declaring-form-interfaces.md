@@ -1,5 +1,5 @@
 ---
-title: Deklarieren von Formular Schnittstellen
+title: Deklarieren von Formularoberflächen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791503"
 ---
-# <a name="declaring-form-interfaces"></a>Deklarieren von Formular Schnittstellen
+# <a name="declaring-form-interfaces"></a>Deklarieren von Formularoberflächen
 
   
   
@@ -45,5 +45,5 @@ public:
 
 
 
-[Schreiben von Formularcode Server](writing-form-server-code.md)
+[Schreiben von Formularservercode](writing-form-server-code.md)
 

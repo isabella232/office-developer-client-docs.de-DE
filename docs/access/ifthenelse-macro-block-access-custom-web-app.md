@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 18d28dc1-c41f-47c6-b5c7-258d5f877d01
-description: Sie können die If Makro-Block bedingt eine Gruppe von Aktionen je nach den Wert eines Ausdrucks ausgeführt.
+description: Mit dem If -Makroblock können Sie eine Gruppe von Aktionen je nach Wert eines als Bedingung verwendeten Ausdrucks ausführen.
 ms.openlocfilehash: 8ac78ff0eaf22c1d821e306654ebfa8fac4ed34a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -43,11 +43,11 @@ Für beide **Wenn** und ** sonst wenn **, die folgenden Argumente erforderlich s
    
 ## <a name="remarks"></a>Hinweise
 
-Bei Auswahl des Makro **If** -Block wird ein TextBox-Steuerelement angezeigt, sodass Sie einen Ausdruck eingeben können, der die Bedingung darstellt, den, die Sie testen möchten. Darüber hinaus wird ein Kombinationsfeld mit der Sie eine Makroaktion einfügen können Unterschreitung der Text "End If" automatisch zeigt angezeigt. Die If und End If Klammer einen Bereich, in dem Sie eine Gruppe oder einen Block von Aktionen eingeben können. Der Block wird ausgeführt, wenn der Ausdruck, den Sie eingeben auf true festgelegt ist. 
+Wenn Sie den If-Makroblock auswählen, wird ein Textfeld angezeigt, sodass Sie einen Ausdruck eingeben können, der die Bedingung darstellt, auf die Sie testen möchten. Zudem wird ein Kombinationsfeld angezeigt, in dem Sie eine Makroaktion einfügen können. Darunter wird automatisch der Text "End If" angezeigt. "If" und "End If" begrenzen einen Bereich, in dem Sie eine Gruppe oder einen Block von Aktionen eingeben können. Der Block wird nur ausgeführt, wenn der von Ihnen eingegebene Ausdruck True ist. 
   
 Um einen anderen Ausdruck auswerten, wenn der erste Ausdruck auf false festgelegt ist, können Sie **Andere Person hinzufügen Wenn** , um einen optionalen **Else If** -Block einzufügen klicken. Sie müssen einen Ausdruck, der ausgewertet wird auf True oder False, eingeben. -Block wird in diesem Fall nur, wenn der Ausdruck True ist und der erste Ausdruck False ist. 
   
-Sie können beliebig viele **Else Wenn** Blöcke beliebig in einem IF blockieren hinzufügen. 
+In einem If-Block können Sie beliebig viele Else If-Blöcke eingeben. 
   
 Sie können auf **Add Else** klicken, um einen optionalen **Else** -Block hinzuzufügen. In diesem Fall bilden die unter **Else** eingegebenen Aktionen den **Else** -Block, der nur ausgeführt wird, wenn die darüber angegebenen Aktionen nicht ausgeführt werden. Einem **If** -Block können Sie nur einen **Else** -Block hinzufügen. 
   

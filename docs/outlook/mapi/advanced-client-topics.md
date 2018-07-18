@@ -25,7 +25,7 @@ Dieser Abschnitt enthält Unterthemen zum einige Features mehr ungewöhnlicher o
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[Schreiben Sie einen automatisierten Client](writing-an-automated-client.md)
+[Schreiben eines automatisierten Clients](writing-an-automated-client.md)
   
 > Beschreibt, wie einen automatisierten Client erstellt, der die Benutzeroberfläche wird unterdrückt.
     
@@ -41,11 +41,11 @@ Dieser Abschnitt enthält Unterthemen zum einige Features mehr ungewöhnlicher o
   
 > Beschreibt, wie Sie MAPI-Dienstprogramme verwenden, die von Tabellendaten und Datenobjekte Eigenschaft sowie einer Reihe von Funktionen bestehen, um verschiedene Features unterstützen
     
-[Implementieren eine Statusanzeige](implementing-a-progress-indicator.md)
+[Implementieren eines Statusindikators](implementing-a-progress-indicator.md)
   
 > Beschreibt, wie eine Statusanzeige zu implementieren.
     
-[Zentral verwalten den Empfang von Unzustellbarkeitsberichten](centralizing-the-receipt-of-ndrs.md)
+[Zentralisieren des Empfangs von NDRs](centralizing-the-receipt-of-ndrs.md)
   
 > Beschreibt, wie den Empfang von Unzustellbarkeitsberichten zentralisieren.
     

@@ -59,7 +59,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Die [SPropValue](spropvalue.md) -Struktur, _LpSPropValue_ verweist, enthält nicht die Index-Spalte-Eigenschaft. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrQueryRow** -Methode ruft alle Eigenschaften für die Zeile, die eine Indexspalte vorhanden ist, die den Wert der Indexspalte in der Eigenschaft Struktur auf den _LpSPropValue_enthalten entspricht. **HrQueryRow** gibt auch die Nummer der Zeile zurück, wenn der Anrufer, anfordert, auf dem die Zeilenposition in der Tabelle identifiziert. 
   
@@ -75,7 +75,7 @@ Da **HrQueryRow** nicht die **SPropValue** -Struktur, die auf den _LpSPropValue_
   
 [SPropValue](spropvalue.md)
   
-[' Srow '](srow.md)
+[SRow](srow.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

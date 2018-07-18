@@ -57,5 +57,5 @@ Nachricht von nachrichtenspeicheranbietern implementierte die **IMSLogon::Unadvi
   
 [IMSLogon::Advise](imslogon-advise.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

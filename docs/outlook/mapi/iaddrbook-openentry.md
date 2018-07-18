@@ -107,7 +107,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die in _LpEntryID_ angegebene Eintrags-ID wird nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn die Adressbuchanbieter verantwortlich für den entsprechenden Eintrag nicht geöffnet ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients und -Dienstanbieter rufen Sie die **IAddrBook::OpenEntry** -Methode, um ein Adressbuch Adresseintrag zu öffnen. MAPI leitet den Anruf an die entsprechenden Adressbuchanbieter basierend auf der [MAPIUID](mapiuid.md) -Struktur in die Eintrags-ID in der _LpEntryID_ -Parameter übergeben enthalten. Der Adressbuchanbieter öffnet den Eintrag im schreibgeschützten Modus, es sei denn, das Flag MAPI_MODIFY oder MAPI_BEST_ACCESS im _UlFlags_ -Parameter festgelegt ist. Allerdings werden diese Flags Vorschläge. Wenn die Adressbuchanbieter keine Änderung für den Eintrag angefordert zulässt, wird MAPI_E_NO_ACCESS zurückgegeben. 
   
@@ -115,5 +115,5 @@ Der Parameter _LpInterface_ gibt an, welche Schnittstelle zum Zugriff auf die ge
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+- [IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 

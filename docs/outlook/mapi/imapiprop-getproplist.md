@@ -58,7 +58,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIProp::GetPropList** -Methode ruft das Eigenschafts-Tag für jede Eigenschaft, die derzeit von einem Objekt unterstützt. Wenn das Objekt keine Eigenschaften derzeit nicht unterstützt, gibt **GetPropList** ein Array Tag-Eigenschaft mit dem **cValues** -Element auf 0 festgelegt. 
   
@@ -90,7 +90,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

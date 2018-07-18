@@ -78,7 +78,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Container über keinen Inhalt verfügt und eine Inhaltstabelle nicht bereitstellen.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIContainer::GetContentsTable** -Methode gibt einen Zeiger auf die Inhaltstabelle eines Containers. Eine Inhaltstabelle enthält zusammenfassende Informationen zu Objekten im Container. 
   
@@ -158,11 +158,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
   
-[Kanonische PidTagContainerContents-Eigenschaft](pidtagcontainercontents-canonical-property.md)
+[PidTagContainerContents (kanonische Eigenschaft)](pidtagcontainercontents-canonical-property.md)
   
-[IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md)
+[IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

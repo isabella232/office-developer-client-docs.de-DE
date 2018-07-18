@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Profils mithilfe von benutzerdefiniertem Code
+title: Erstellen ein Profil mit benutzerdefiniertem Code
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791488"
 ---
-# <a name="creating-a-profile-by-using-custom-code"></a>Erstellen eines Profils mithilfe von benutzerdefiniertem Code
+# <a name="creating-a-profile-by-using-custom-code"></a>Erstellen ein Profil mit benutzerdefiniertem Code
 
   
   

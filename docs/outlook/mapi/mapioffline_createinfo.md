@@ -39,7 +39,7 @@ typedef struct
 } MAPIOFFLINE_CREATEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSize**
   

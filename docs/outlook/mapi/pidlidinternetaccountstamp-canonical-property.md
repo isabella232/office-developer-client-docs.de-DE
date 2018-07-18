@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidInternetAccountStamp-Eigenschaft
+title: PidLidInternetAccountStamp (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793636"
 ---
-# <a name="pidlidinternetaccountstamp-canonical-property"></a>Kanonische PidLidInternetAccountStamp-Eigenschaft
+# <a name="pidlidinternetaccountstamp-canonical-property"></a>PidLidInternetAccountStamp (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die e-Mail-Konto-ID, die über die die e-Mail-Nachricht gesendet wird.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Format dieser Zeichenfolge lautet Implementierung ab. Diese Eigenschaft kann zum Ermitteln des Servers, leiten Sie die Mail-vom Client verwendet werden, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   

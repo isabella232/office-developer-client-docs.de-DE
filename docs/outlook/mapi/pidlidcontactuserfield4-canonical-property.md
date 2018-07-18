@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactUserField4-Eigenschaft
+title: PidLidContactUserField4 (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793486"
 ---
-# <a name="pidlidcontactuserfield4-canonical-property"></a>Kanonische PidLidContactUserField4-Eigenschaft
+# <a name="pidlidcontactuserfield4-canonical-property"></a>PidLidContactUserField4 (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt das vierte Feld auf den Kontakt, der für verschiedene Zwecke für den Kont
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft enthält Text, der mit einer anderen Kontakt-spezifische Eigenschaft zusammenhängt.
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidEmail1AddressType-Eigenschaft
+title: PidLidEmail1AddressType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793512"
 ---
-# <a name="pidlidemail1addresstype-canonical-property"></a>Kanonische PidLidEmail1AddressType-Eigenschaft
+# <a name="pidlidemail1addresstype-canonical-property"></a>PidLidEmail1AddressType (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Adresstyp der ersten e-Mail-Adresse.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Falls vorhanden, muss Wert dieser Eigenschaft eine gültige Adresse.
   

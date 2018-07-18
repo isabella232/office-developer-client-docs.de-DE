@@ -1,5 +1,5 @@
 ---
-title: Implementieren von threadsicheren Objekte
+title: Implementieren von threadsicheren Objekten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792591"
 ---
-# <a name="implementing-thread-safe-objects"></a>Implementieren von threadsicheren Objekte
+# <a name="implementing-thread-safe-objects"></a>Implementieren von threadsicheren Objekten
 
   
   

@@ -101,7 +101,7 @@ S_OK
   
 > Im Dialogfeld Details der wurde erfolgreich für den Adresseintrag Adressbuch angezeigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clientanwendungen rufen Sie die **Details** -Methode, um ein Dialogfeld angezeigt, das Details zu einem bestimmten Eintrag im Adressbuch bereitstellt. Der Parameter _LpfButtonCallback_, _LpvButtonContext_und _LpszButtonText_ können, um das Dialogfeld eine Schaltfläche Client definiert hinzuzufügen. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die Callback-Funktion, die auf den _LpfButtonCallback_, sowohl die Eintrags-ID für die Schaltfläche und die Daten in _LpvButtonContext_übergeben. Wenn Sie eine extensible Schaltfläche nicht erforderlich ist, sollte _LpszButtonText_ NULL sein. 
   
@@ -125,7 +125,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [LPFNBUTTON](lpfnbutton.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

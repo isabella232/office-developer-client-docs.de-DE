@@ -1,5 +1,5 @@
 ---
-title: HandsOffAfterSave Zustand
+title: Status „HandsOffAfterSave“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791823"
 ---
-# <a name="handsoffaftersave-state"></a>HandsOffAfterSave Zustand
+# <a name="handsoffaftersave-state"></a>Status „HandsOffAfterSave“
 
   
   
@@ -36,5 +36,5 @@ Der Zustand HandsOffAfterSave ist Teil des Prozesses zum Speichern des Inhalts e
 
 
 
-[Formular Staaten](form-states.md)
+[Formularstatus](form-states.md)
 

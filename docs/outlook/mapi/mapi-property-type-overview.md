@@ -35,7 +35,7 @@ Obwohl die Unterstützung für mehrwertige Eigenschaften ist optional, empfiehlt
   
 Die folgende Abbildung zeigt eine Liste aller der verschiedenen Konstanten des Eigenschaftentyps, anzeigen, wo sie in einer Struktur **SPropValue** gespeichert sind. Die Größe des Elements **Wert** ist abhängig von den angegebenen Typ. Beachten Sie, dass nicht alle Typen einwertig mehrwertige-Entsprechungen. 
   
-**Konstanten des Eigenschaftentyps**
+**Eigenschaftstypenkonstanten**
   
 ![Konstanten des Eigenschaftentyps] (media/amapi_11.gif "Konstanten des Eigenschaftentyps")
   
@@ -59,5 +59,5 @@ Eine vollständige Liste der Eigenschaftentypen einwertig und mehrwertige finden
   
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+- [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

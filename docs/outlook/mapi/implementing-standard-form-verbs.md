@@ -1,5 +1,5 @@
 ---
-title: Implementierung von Verben Standardformular
+title: Implementieren von standardmäßigen Formularverben
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792577"
 ---
-# <a name="implementing-standard-form-verbs"></a>Implementierung von Verben Standardformular
+# <a name="implementing-standard-form-verbs"></a>Implementieren von standardmäßigen Formularverben
 
   
   
@@ -27,11 +27,11 @@ MAPI definiert eine Reihe von standardmäßigen Verben oder Aktionen ausgeführt
 |:-----|:-----|
 |Öffnen  <br/> |EXCHIVERB_OPEN  <br/> |
 |Antworten  <br/> |EXCHIVERB_REPLYTOSENDER  <br/> |
-|Allen Antworten  <br/> |EXCHIVERB_REPLYTOALL  <br/> |
+|Allen antworten  <br/> |EXCHIVERB_REPLYTOALL  <br/> |
 |Forward  <br/> |EXCHIVERB_FORWARD  <br/> |
 |Drucken  <br/> |EXCHIVERB_PRINT  <br/> |
 |Speichern als  <br/> |EXCHIVERB_SAVEAS  <br/> |
-|Ordner Antworten  <br/> |EXCHIVERB_REPLYTOFOLDER  <br/> |
+|In Ordner antworten  <br/> |EXCHIVERB_REPLYTOFOLDER  <br/> |
    
 Wenn ein Benutzer ein Verb auswählt, übergeben Sie die Konstante in einen Anruf an das Formular [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode zum Ausführen der entsprechenden Aktion. 
   

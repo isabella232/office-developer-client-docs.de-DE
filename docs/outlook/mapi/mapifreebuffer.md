@@ -51,7 +51,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und den angeforderten Speicher freigegeben. **MAPIFreeBuffer** können auch S_OK zurückgeben, auf dem bereits freigegebenen Speicherorte oder wenn die Arbeitsspeicher-Block mit **MAPIAllocateBuffer** und **MAPIAllocateMore**kein Speicherplatz zugeordnet ist.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In der Regel, wenn eine Clientanwendung oder Dienstanbieter [MAPIAllocateBuffer](mapiallocatebuffer.md) oder [MAPIAllocateMore](mapiallocatemore.md), der Betriebssystem-Konstrukte in einen zusammenhängenden Speicherpuffers einen oder mehrere komplexe Strukturen mit mehreren Ebenen von Zeigern aufruft. Wenn ein MAPI-Funktion oder -Methode einen Puffer mit solchen Inhalte erstellt, kann ein Client später frei alle Strukturen, die im Puffer enthalten sind, indem Sie den Zeiger auf den Puffer zurückgegeben, die von der MAPI-Funktion, die den Puffer erstellt an **MAPIFreeBuffer** übergeben. Einem Dienstanbieter mit **MAPIFreeBuffer**Speicherpuffers frei muss er den Zeiger dem Puffer mit DSO-Objekt für den Anbieter zurückgegebenen bestehen. 
   

@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792010"
 ---
-# <a name="iattach--imapiprop"></a>IAttach: IMAPIProp
+# <a name="iattach--imapiprop"></a>IAttach : IMAPIProp
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Anzeige Server Ordner Größen-Eigenschaft
+title: Eigenschaft zum Anzeigen von Serverordnergrößen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791552"
 ---
-# <a name="display-server-folder-sizes-property"></a>Anzeige Server Ordner Größen-Eigenschaft
+# <a name="display-server-folder-sizes-property"></a>Eigenschaft zum Anzeigen von Serverordnergrößen
 
   
   
@@ -37,7 +37,7 @@ Zeigt die Größe der angegebenen Ordner auf dem Server im Dialogfeld Outlook- *
 |Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMAPIProp: IUnknown](imapipropiunknown.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
   

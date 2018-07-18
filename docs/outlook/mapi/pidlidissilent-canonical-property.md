@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidIsSilent-Eigenschaft
+title: PidLidIsSilent (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793642"
 ---
-# <a name="pidlidissilent-canonical-property"></a>Kanonische PidLidIsSilent-Eigenschaft
+# <a name="pidlidissilent-canonical-property"></a>PidLidIsSilent (kanonische Eigenschaft)
 
   
   

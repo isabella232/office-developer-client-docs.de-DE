@@ -32,7 +32,7 @@ typedef struct
 } MAPIOFFLINE_AGGREGATEINFO;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulSize**
   

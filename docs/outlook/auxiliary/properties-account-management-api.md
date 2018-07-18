@@ -1,5 +1,5 @@
 ---
-title: Eigenschaften (Konto Management-API)
+title: Eigenschaften (Account Management API)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791232"
 ---
-# <a name="properties-account-management-api"></a>Eigenschaften (Konto Management-API)
+# <a name="properties-account-management-api"></a>Eigenschaften (Account Management API)
 
 In diesem Abschnitt werden die Eigenschaften in der Konto-Management-API beschrieben.
   

@@ -84,7 +84,7 @@ MAPI_E_NOT_FOUND
   
 > Mindestens ein Empfänger in der _LpAdrList_ -Parameter kann nicht aufgelöst werden. Dieser Wert wird in der Regel zurückgegeben, wenn das Flag MAPI_DIALOG verhindern der Anzeige eines Dialogfelds festgelegt ist. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients und Dienstanbieter rufen Sie die **ResolveName** -Methode, um die Namen Lösung zu initiieren. Ein nicht aufgelöster Eintrag ist ein Eintrag, der eine Eintrags-ID oder -Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) noch nicht vorhanden ist.
   
@@ -131,11 +131,11 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [ADRLIST](adrlist.md)
   
-[IABContainer](iabcontainer-resolvenames.md)
+[IABContainer::ResolveNames](iabcontainer-resolvenames.md)
   
 [IAddrBook::Address](iaddrbook-address.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

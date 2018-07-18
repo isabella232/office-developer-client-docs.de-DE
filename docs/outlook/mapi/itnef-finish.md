@@ -55,7 +55,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Transport-Provider, Anbieter Nachricht und Gateways Aufruf die **ITnef::Finish** -Methode zum Ausführen der Codierung aller Eigenschaften für die Codierung Aufrufe der Methoden [ITnef::AddProps](itnef-addprops.md) und [ITnef::SetProps](itnef-setprops.md) angefordert wurde. Wenn das TNEF-Objekt mit dem TNEF_ENCODE-Flag für die [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet wurde, codiert die Methode **Fertig stellen** die angeforderten Eigenschaften in der an dieses Objekt übergebene Encapsulation Stream. Wenn das TNEF-Objekt mit dem TNEF_DECODE-Flag geöffnet wurde, wird die Methode **Fertig stellen** decodiert die Eigenschaften aus dem TNEF-Stream und schreibt sie zurück in die Nachricht, der sie angehören. 
   
@@ -83,15 +83,15 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[OpenTNEFStream nicht ausgeführt werden](opentnefstream.md)
+[OpenTnefStream](opentnefstream.md)
   
 [OpenTnefStreamEx](opentnefstreamex.md)
   
-[Kanonische PidTagAttachNumber-Eigenschaft](pidtagattachnumber-canonical-property.md)
+[PidTagAttachNumber (kanonische Eigenschaft)](pidtagattachnumber-canonical-property.md)
   
 [STnefProblemArray](stnefproblemarray.md)
   
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

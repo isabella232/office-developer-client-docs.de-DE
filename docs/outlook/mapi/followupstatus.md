@@ -34,7 +34,7 @@ enum FollowUpStatus {
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _flwupNone_
   
@@ -56,5 +56,5 @@ enum FollowUpStatus {
 
 
 
-[Kanonische PidTagFlagStatus-Eigenschaft](pidtagflagstatus-canonical-property.md)
+[PidTagFlagStatus (kanonische Eigenschaft)](pidtagflagstatus-canonical-property.md)
 

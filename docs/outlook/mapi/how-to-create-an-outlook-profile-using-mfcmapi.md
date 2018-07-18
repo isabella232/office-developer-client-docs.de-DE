@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Outlook-Profils mithilfe von MFCMAPI (engl.)
+title: Erstellen eines Outlook-Profils mit MFCMAPI
 ms.date: 05/18/2016
 ms.audience: Developer
 localization_priority: Normal
@@ -12,7 +12,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791848"
 ---
-# <a name="create-an-outlook-profile-using-mfcmapi"></a>Erstellen eines Outlook-Profils mithilfe von MFCMAPI (engl.)
+# <a name="create-an-outlook-profile-using-mfcmapi"></a>Erstellen eines Outlook-Profils mit MFCMAPI
 
 MFCMAPI (engl.) bietet Zugriff auf MAPI-Speicher um Untersuchung von Exchange und Outlook Probleme zu vereinfachen und Entwickler mit Unterstützung für die Entwicklung von MAPI bereitzustellen.
 

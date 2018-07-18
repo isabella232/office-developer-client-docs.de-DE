@@ -25,9 +25,9 @@ Ein Profil speichert Informationen zu Dienstanbietern und Message-Dienste, die a
   
 Auch in diesen Themen finden eine Erläuterung der Nickname-Cache Sie die in einem binären Stream gespeichert ist.
   
-- [Nickname-cache](nickname-cache.md)
+- [Cache für Spitznamen](nickname-cache.md)
     
-- [AutoVervollständigen-Stream](autocomplete-stream.md)
+- [Stream für automatisches Vervollständigen](autocomplete-stream.md)
     
 - [Analysieren der Binärdatei](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
     

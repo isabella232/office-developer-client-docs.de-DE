@@ -34,7 +34,7 @@ Gibt den Datentyp des Arguments mit höherer Rangfolge zurück.
   
 Ist eine ganze Zahl *Dividend* durch eine ganze Zahl *Divisor* unterteilt, ist das Ergebnis eine ganze Zahl, die jeder Bruchteil des Ergebnisses abgeschnitten hat. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der tatsächliche Rückgabewert der / Operator ist der Quotient aus dem ersten Ausdruck geteilt durch den zweiten Ausdruck.
   

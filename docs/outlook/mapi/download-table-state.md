@@ -1,5 +1,5 @@
 ---
-title: Downloadstatus-Tabelle
+title: Status „Downloadtabelle“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791596"
 ---
-# <a name="download-table-state"></a>Downloadstatus-Tabelle
+# <a name="download-table-state"></a>Status „Downloadtabelle“
 
   
   
@@ -43,11 +43,11 @@ Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status der Sync
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

@@ -41,7 +41,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **cb**
   
@@ -51,7 +51,7 @@ typedef struct
   
 > Die vollständige Eintrag-Bezeichner, der das Array von Flags und binäre Daten enthält.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **FLATENTRY** ähnelt eine [ENTRYID](entryid.md) -Struktur. Es gibt jedoch einige Unterschiede: 
   

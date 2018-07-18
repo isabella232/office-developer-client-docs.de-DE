@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792154"
 ---
-# <a name="imapiformcontainer--iunknown"></a>IMAPIFormContainer: IUnknown
+# <a name="imapiformcontainer--iunknown"></a>IMAPIFormContainer : IUnknown
 
   
   

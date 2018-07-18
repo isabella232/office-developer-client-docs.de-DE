@@ -34,7 +34,7 @@ HRESULT Placeholder5(
 
 Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in **IFreeBusyData** und wird nicht. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Member muss E_NOTIMPL zurückgeben.
   

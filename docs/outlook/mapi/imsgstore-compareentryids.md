@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Stellen eine oder beide der Eintragsbezeichner angegeben, wie der Parameter nicht auf Objekte, möglicherweise verweisen, da die entsprechenden Objekte nicht geöffneten und nicht mehr verfügbar sind.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::CompareEntryIDs** -Methode vergleicht zwei Eintragsbezeichner, die mit dem Nachrichtenspeicher, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen gehören. 
   

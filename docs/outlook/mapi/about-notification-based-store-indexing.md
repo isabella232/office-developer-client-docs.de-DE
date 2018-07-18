@@ -1,5 +1,5 @@
 ---
-title: Informationen über die Benachrichtigung-basierten Speicher Indizierung
+title: Informationen zum benachrichtigungsbasierten Indizieren von Stores
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791224"
 ---
-# <a name="about-notification-based-store-indexing"></a>Informationen über die Benachrichtigung-basierten Speicher Indizierung
+# <a name="about-notification-based-store-indexing"></a>Informationen zum benachrichtigungsbasierten Indizieren von Stores
 
   
   
@@ -31,7 +31,7 @@ Da Indexer immer alles nicht indiziert werden vor dem Herunterfahren in einem Sp
 
 
 
-[Über den API-Speicher](about-the-store-api.md)
+[Informationen zur Store-API](about-the-store-api.md)
   
 [MAPI-Konstanten](mapi-constants.md)
 

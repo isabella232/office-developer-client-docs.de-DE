@@ -1,5 +1,5 @@
 ---
-title: Formular Konfigurationsabschnitt Datei [Plattformen]
+title: Abschnitt [Platforms] in der Formularkonfigurationsdatei
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791722"
 ---
-# <a name="form-configuration-file-platforms-section"></a>Formular Konfigurationsabschnitt Datei [Plattformen]
+# <a name="form-configuration-file-platforms-section"></a>Abschnitt [Platforms] in der Formularkonfigurationsdatei
 
 **Betrifft**: Outlook 
   

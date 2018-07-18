@@ -58,5 +58,5 @@ Clientanwendungen rufen Sie die **IMAPIFormInfo::MakeIconFromBinary** -Methode, 
 
 
 
-[IMAPIFormInfo: IMAPIProp](imapiforminfoimapiprop.md)
+[IMAPIFormInfo : IMAPIProp](imapiforminfoimapiprop.md)
 

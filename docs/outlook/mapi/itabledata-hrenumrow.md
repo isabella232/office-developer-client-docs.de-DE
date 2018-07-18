@@ -50,7 +50,7 @@ S_OK
   
 > Die Zeile erfolgreich abgerufen wurde, oder eine Zeile für die Nummer der Zeile durch den _UlRowNumber_ -Parameter angegeben ist nicht vorhanden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrEnumRow** -Methode ruft eine Zeile basierend auf eine fortlaufende Zahl. Diese Nummer stellt die Reihenfolge des Einfügevorgangs (0 gibt die erste Zeile und die Anzahl der Zeilen minus 1 gibt die letzte Zeile). MAPI behält diese Reihenfolge der Zeile eingefügt für die Lebensdauer des Table-Objekts Daten. 
   
@@ -68,7 +68,7 @@ Um Zeilen aus einer Tabelle in der Reihenfolge abzurufen, dass sie eingefügt wu
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[' Srow '](srow.md)
+[SRow](srow.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

@@ -41,7 +41,7 @@ S_OK
 
 
 
-[IMAPIProviderShutdown: IUnknown](imapiprovidershutdowniunknown.md)
+[IMAPIProviderShutdown : IUnknown](imapiprovidershutdowniunknown.md)
 
 
 [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)

@@ -55,7 +55,7 @@ S_OK
   
 > Das Dialogfeld Adresse wurde erfolgreich angezeigt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::Address** -Methode wird für Address Book Anbieter Unterstützungsobjekte implementiert. Von adressbuchanbietern implementierte Aufrufen **Adresse** zum Erstellen oder aktualisieren eine Liste der Empfänger der Nachricht. 
   
@@ -113,22 +113,22 @@ Wenn **Adresse** eine größere **ADRLIST** Struktur zurückgeben muss, oder wen
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[Kanonische PidTagAddressType-Eigenschaft](pidtagaddresstype-canonical-property.md)
+[PidTagAddressType (kanonische Eigenschaft)](pidtagaddresstype-canonical-property.md)
   
-[Kanonische PidTagDisplayName-Eigenschaft](pidtagdisplayname-canonical-property.md)
+[PidTagDisplayName (kanonische Eigenschaft)](pidtagdisplayname-canonical-property.md)
   
-[Kanonische PidTagDisplayType-Eigenschaft](pidtagdisplaytype-canonical-property.md)
+[PidTagDisplayType (kanonische Eigenschaft)](pidtagdisplaytype-canonical-property.md)
   
-[Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md)
+[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
   
-[Kanonische PidTagRecipientType-Eigenschaft](pidtagrecipienttype-canonical-property.md)
+[PidTagRecipientType (kanonische Eigenschaft)](pidtagrecipienttype-canonical-property.md)
   
 [SPropValue](spropvalue.md)
   
-[' Srowset '](srowset.md)
+[SRowSet](srowset.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 
 
-[Verwalten von Arbeitsspeicher für ADRLIST und SRowSet Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
+[Verwalten von Speicher für ADRLIST- und SRowSet-Strukturen](managing-memory-for-adrlist-and-srowset-structures.md)
 

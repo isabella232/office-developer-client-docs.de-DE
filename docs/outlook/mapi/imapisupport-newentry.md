@@ -80,7 +80,7 @@ S_OK
   
 > Der neue Eintrag wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::NewEntry** -Methode wird für Address Book Anbieter Unterstützungsobjekte implementiert. Von adressbuchanbietern implementierte Aufrufen **NewEntry** zum Erstellen eines neuen Address Book Eintrags direkt in einem Container hinzugefügt werden soll oder verwendet werden, um eine ausgehende Nachricht zu adressieren. 
   
@@ -112,7 +112,7 @@ Um eine bestimmte Vorlage verwenden, um einen neuen Eintrag einem änderbare Con
   
 [IMAPISupport::OpenEntry](imapisupport-openentry.md)
   
-[Kanonische PidTagCreateTemplates-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
 [IMAPISupport: IUnknown](imapisupportiunknown.md)
 

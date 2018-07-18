@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791954"
 ---
-# <a name="iabcontainer--imapicontainer"></a>IABContainer: IMAPIContainer
+# <a name="iabcontainer--imapicontainer"></a>IABContainer : IMAPIContainer
 
 **Betrifft**: Outlook 
   
@@ -60,7 +60,7 @@ Bietet Zugriff auf Address Book Container. MAPI-und Clientanwendungen rufen Sie 
 |**PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IABContainer** -Schnittstelle erbt indirekt von [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28VS.85%29.aspx) -Schnittstelle, über die [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) und [IMAPIProp: IUnknown](imapipropiunknown.md) Schnittstellen. Von adressbuchanbietern implementierte implementieren die **IABContainer** -Schnittstelle. 
   

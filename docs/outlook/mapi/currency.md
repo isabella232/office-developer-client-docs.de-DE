@@ -40,7 +40,7 @@ typedef struct tagCY
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **Lo**
   
@@ -50,7 +50,7 @@ typedef struct tagCY
   
 > Obere 32 Bit der Währungswert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **Währung** -Struktur ist eine skalierte Ganzzahl Darstellung einer ganzen Zahl mit vier Stellen rechts vom Dezimalkomma. Beispielsweise ist der gespeicherter Wert 327500, ausgelegt werden als einen Währungswert des 32.7500 darstellt. 
   

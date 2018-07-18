@@ -69,7 +69,7 @@ MAPI_E_INVALID_PARAMETER
     
    - CLEAR_READ_FLAG | GENERATE_RECEIPT_ONLY
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMessage::SetReadFlag** -Methode legt oder löscht die Nachricht MSGFLAG_READ Flag in der **PR_MESSAGE_FLAGS** -Eigenschaft und ruft [IMAPIProp::SaveChanges](imapiprop-savechanges.md) die Nachricht zu speichern. Festlegen des MSGFLAG_READ-Flags markiert eine Nachricht als gelesen, die nicht unbedingt darauf hinweist, dass der Empfänger die Nachricht tatsächlich gelesen hat. 
   
@@ -123,7 +123,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 - [IMAPIFolder::SetReadFlags](imapifolder-setreadflags.md)  
 - [IMAPIProp::GetProps](imapiprop-getprops.md)  
 - [IMAPIProp::SaveChanges](imapiprop-savechanges.md) 
-- [Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md) 
+- [PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md) 
 - [IMessage: IMAPIProp](imessageimapiprop.md)
 - [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Benennen von Ordnern mithilfe von Zeichenfolgen
+title: Benennen von Ordnern mit Zeichenfolgen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793285"
 ---
-# <a name="naming-folders-by-using-character-strings"></a>Benennen von Ordnern mithilfe von Zeichenfolgen
+# <a name="naming-folders-by-using-character-strings"></a>Benennen von Ordnern mit Zeichenfolgen
 
   
   

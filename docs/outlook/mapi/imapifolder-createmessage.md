@@ -67,7 +67,7 @@ S_OK
   
 > Die Nachricht wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIFolder::CreateMessage** -Methode erstellt eine neue Nachricht mit generischen oder zugehörigen Inhalte und weist einen Eintrag Bezeichner. Die Eintrags-ID besteht aus einer, die den Nachricht Speicheranbieter darstellt und einen Teil, der die einzelne Nachricht darstellt. 
   
@@ -101,7 +101,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+[IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

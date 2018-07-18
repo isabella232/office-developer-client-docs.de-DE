@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791372"
 ---
-# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>Erweitern ein Stream-Objekts mit:: setSize zu vermeiden
+# <a name="avoiding-using-istreamsetsize-to-extend-a-stream"></a>Vermeiden der Verwendung von IStream::SetSize zum Erweitern eines Streams
 
   
   

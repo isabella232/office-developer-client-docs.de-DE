@@ -1,5 +1,5 @@
 ---
-title: Interaktion von MAPI-Anbieter und Komponenten
+title: Interaktion von MAPI-Anbietern und Komponenten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792721"
 ---
-# <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbieter und Komponenten
+# <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbietern und Komponenten
 
   
   

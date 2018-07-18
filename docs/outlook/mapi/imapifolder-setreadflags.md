@@ -90,7 +90,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, jedoch nicht alle Nachrichten erfolgreich verarbeitet wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIFolder::SetReadFlags** -Methode aktiviert oder deaktiviert das Flag MSGFLAG_READ in der **PR_MESSAGE_FLAGS** -Eigenschaft von einem oder mehreren der Nachrichten, die den Ordner. Markiert die Nachricht als gelesen, die nicht unbedingt darauf hinweist, dass der Empfänger die Nachricht tatsächlich gelesen hat das MSGFLAG_READ-Flag festlegen. 
   
@@ -154,9 +154,9 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 - [ENTRYLIST](entrylist.md) 
 - [IMessage::SetReadFlag](imessage-setreadflag.md)  
-- [Kanonische PidTagMessageFlags-Eigenschaft](pidtagmessageflags-canonical-property.md)  
-- [Kanonische PidTagReadReceiptRequested-Eigenschaft](pidtagreadreceiptrequested-canonical-property.md)  
-- [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md)
+- [PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)  
+- [PidTagReadReceiptRequested (kanonische Eigenschaft)](pidtagreadreceiptrequested-canonical-property.md)  
+- [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 - [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)  
 - [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
 

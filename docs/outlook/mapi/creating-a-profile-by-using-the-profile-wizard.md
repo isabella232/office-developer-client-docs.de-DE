@@ -1,5 +1,5 @@
 ---
-title: Erstellen ein Profil mithilfe der Profil-Assistent
+title: Erstellen eines Profils mit dem Profilassistenten
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791480"
 ---
-# <a name="creating-a-profile-by-using-the-profile-wizard"></a>Erstellen ein Profil mithilfe der Profil-Assistent
+# <a name="creating-a-profile-by-using-the-profile-wizard"></a>Erstellen eines Profils mit dem Profilassistenten
 
   
   

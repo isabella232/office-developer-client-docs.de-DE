@@ -1,5 +1,5 @@
 ---
-title: Schnelles Herunterfahren (Übersicht)
+title: Übersicht über das schnelle Herunterfahren
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791651"
 ---
-# <a name="fast-shutdown-overview"></a>Schnelles Herunterfahren (Übersicht)
+# <a name="fast-shutdown-overview"></a>Übersicht über das schnelle Herunterfahren
 
 **Betrifft**: Outlook 
   
@@ -50,6 +50,6 @@ Wenn ein MAPI-Client Schnelles Herunterfahren einführen muss, verwenden sie die
 ## <a name="see-also"></a>Siehe auch
 
 - [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)
-- [Schnelles Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md)
+- [Benutzeroptionen für das schnelle Herunterfahren](fast-shutdown-user-options.md)
 - [Bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md)
 

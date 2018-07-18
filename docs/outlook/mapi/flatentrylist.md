@@ -40,7 +40,7 @@ typedef struct
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
 **cEntries**
   
@@ -54,7 +54,7 @@ typedef struct
   
 > Byte-Array, das ein oder mehrere **FLATENTRY** Strukturen enthält angeordnete Ende zu Ende. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Im Array **AbEntries** wird jede **FLATENTRY** Struktur auf einer vertrauten ausgerichtete Grenze ausgerichtet. Zusätzliche Bytes sind als Abstand, stellen Sie sicher, dass natürlichen Ausrichtung alle zweier **FLATENTRY** Strukturen enthalten. Die erste **FLATENTRY** Struktur im Array ist immer ordnungsgemäß ausgerichtet werden, da der Versatz des Elements **AbEntries** 8 ist. Berechnen Sie den Offset der nächsten Struktur, verwenden Sie die Größe des ersten Eintrags aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das Makro [CbFLATENTRY](cbflatentry.md) , um die Größe einer **FLATENTRY** -Struktur zu berechnen. 
   
@@ -71,6 +71,6 @@ Im folgenden Codebeispiel gibt an, wie Offsets in einer **FLATENTRYLIST** -Struk
 ## <a name="see-also"></a>Siehe auch
 
 - [FLATENTRY](flatentry.md)
-- [Kanonische PidTagReplyRecipientEntries-Eigenschaft](pidtagreplyrecipiententries-canonical-property.md)
+- [PidTagReplyRecipientEntries (kanonische Eigenschaft)](pidtagreplyrecipiententries-canonical-property.md)
 - [MAPI-Strukturen](mapi-structures.md)
 

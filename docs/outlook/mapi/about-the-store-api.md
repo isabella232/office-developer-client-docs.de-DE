@@ -1,5 +1,5 @@
 ---
-title: Über den API-Speicher
+title: Informationen zur Store-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791254"
 ---
-# <a name="about-the-store-api"></a>Über den API-Speicher
+# <a name="about-the-store-api"></a>Informationen zur Store-API
 
   
   

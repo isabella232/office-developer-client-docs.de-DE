@@ -53,7 +53,7 @@ Die folgende Abbildung zeigt den Inhalt der beiden typische Profile. SAM hat zwe
   
 Die folgende Abbildung zeigt ein Profil, das zwei Nachrichtendienste enthält. Der Code zum Installieren und Konfigurieren der Dienstanbieter, die den Dienst angehören, befindet sich in derselben DLL-Datei wie der Code für den Anbieter. Dieser Code liest Informationen aus dem Profil bei der Anmeldung die-Dienstanbieter zu konfigurieren, und sie werden aufgefordert, den Benutzer, wenn möglich und gegebenenfalls fehlende Informationen. Durch diesen Code allgemeine gekennzeichnete auch Anfragen von einem Client anzeigen oder Ändern von Konfigurationseinstellungen für den Anbieter.
   
-**Installieren und Konfigurieren von Dienstanbietern**
+**Installieren und Konfigurieren von Serviceanbietern**
   
 ![Installieren und Konfigurieren von Dienstanbietern] (media/amapi_55.gif "Installieren und Konfigurieren von Dienstanbietern")
   

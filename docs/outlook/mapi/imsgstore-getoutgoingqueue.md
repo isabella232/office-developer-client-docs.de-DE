@@ -50,7 +50,7 @@ S_OK
   
 > Die ausgehende Warteschlangentabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::GetOutgoingQueue** -Methode enthält die MAPI-Warteschlange mit Zugriff auf die Tabelle, die die Nachrichtenspeicher-Warteschlange von ausgehenden Nachrichten anzeigt. Nachrichten werden in der Regel in der ausgehenden Warteschlangentabelle platziert, nach deren [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode aufgerufen wird. Allerdings, da die Reihenfolge der Übermittlung die Reihenfolge der vorverarbeitung und Übermittlung an der Adressbuchhierarchie betroffen sind, möglicherweise einige Nachrichten, die für das Senden von gekennzeichnet wurden nicht in der ausgehenden Warteschlangentabelle sofort angezeigt. 
   

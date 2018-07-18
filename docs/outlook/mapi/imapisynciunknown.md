@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792430"
 ---
-# <a name="imapisync--iunknown"></a>IMAPISync: IUnknown
+# <a name="imapisync--iunknown"></a>IMAPISync : IUnknown
 
   
   
@@ -46,7 +46,7 @@ Im Ordner Postausgang ist noch in der Standard-Informationsspeichers. Outlook wi
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
 
 
 [MAPI-Schnittstellen](mapi-interfaces.md)

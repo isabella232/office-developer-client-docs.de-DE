@@ -5,7 +5,7 @@ ms.date: 09/05/2017
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 54975434-78b2-4010-b2f9-f277831fa92e
-description: Das BearbeitenDatensatz-Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern.
+description: Mit dem BearbeitenDatensatz -Datenblock können Sie die Werte in einem vorhandenen Datensatz ändern.
 ms.openlocfilehash: 6c214e48326a93cff220b5436d7e7802cd6e3431
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -31,17 +31,17 @@ Der **BearbeitenDatensatz** -Datenblock kann mit den folgenden Argumenten verwen
 |:-----|:-----|
 |**Alias** <br/> |Eine Zeichenfolge zur Identifizierung der Eintrag bearbeiten. Wenn das Argument *Alias* nicht angegeben ist, wird der aktuelle Datensatz bearbeitet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Nachdem die **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen einfügen, die ausgeführt wird, bevor die Änderungen an den Datensatz ein Commit ausgeführt werden. Die folgenden Aktionen sind in einer **BearbeitenDatensatz** -Datenblock verfügbar. 
   
 ||
 |:-----|
-|[Abbrechendatensatzänderung-Makroaktion](cancelrecordchange-macro-action-access-custom-web-app.md) <br/> |
+|[AbbrechenDatensatzänderung-Makroaktion](cancelrecordchange-macro-action-access-custom-web-app.md) <br/> |
 |[Kommentar-Makroanweisung](comment-macro-block-access-custom-web-app.md) <br/> |
 |[Gruppieren-Makroanweisung](group-macro-block-access-custom-web-app.md) <br/> |
 |[If... Im Anschluss: Else-Makroanweisung](ifthenelse-macro-block-access-custom-web-app.md) <br/> |
-|[SetField-Makroaktion](setfield-macro-action-access-custom-web-app.md) <br/> |
+|[FestlegenFeld-Makroaktion](setfield-macro-action-access-custom-web-app.md) <br/> |
 |[FestlegenLokaleVar-Makroaktion](setlocalvar-macro-action-access-custom-web-app.md) <br/> |
    
 Mit der **FestlegenFeld** -Aktion geben Sie die neuen Werte eines Felds im bearbeiteten Datensatz an. 

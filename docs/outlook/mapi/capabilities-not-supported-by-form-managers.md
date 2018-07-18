@@ -1,5 +1,5 @@
 ---
-title: Funktionen, die vom Formular-Manager nicht unterstützt
+title: Von Formularmanagern nicht unterstützte Funktionen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791371"
 ---
-# <a name="capabilities-not-supported-by-form-managers"></a>Funktionen, die vom Formular-Manager nicht unterstützt
+# <a name="capabilities-not-supported-by-form-managers"></a>Von Formularmanagern nicht unterstützte Funktionen
 
   
   

@@ -74,7 +74,7 @@ MAPI_E_INVALID_ENTRYID
   
 > Eine oder beide der Eintragsbezeichner gehören nicht zu den Adressbuchanbieter.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Von adressbuchanbietern implementierte implementieren Sie die **CompareEntryIDs** -Methode zum Vergleichen von zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. 
   
@@ -86,5 +86,5 @@ Weitere Informationen zum Erstellen von Eintragsbezeichner finden Sie unter [MAP
 
 
 
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

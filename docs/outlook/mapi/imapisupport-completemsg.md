@@ -55,7 +55,7 @@ S_OK
   
 > Die Nachbearbeitung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::CompleteMsg** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert und heißt nur Zeichenfolgeneigenschaften Nachricht, die eng mit Anbietern Transport verknüpft sind. Anbieter eng gekoppelten Aufrufen **IMAPISupport::CompleteMsg** um anzuweisen, die MAPI-Warteschlange auf eine Nachricht zu bearbeiten. 
   

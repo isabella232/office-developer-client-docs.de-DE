@@ -54,7 +54,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Vorgang wird von dieser Site Nachricht nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Form-Objekt die **IMAPIMessageSite::DeleteMessage** -Methode aufgerufen, um die Nachricht zu löschen, die das Formular derzeit angezeigt wird. 
   
@@ -100,10 +100,10 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IPersistMessage::Save](ipersistmessage-save.md)
   
-[IMAPIMessageSite: IUnknown](imapimessagesiteiunknown.md)
+[IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[MAPI-Formulars Schnittstellen](mapi-form-interfaces.md)
+[MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

@@ -67,7 +67,7 @@ Unterstützt das Abrufen und Festlegen von Eigenschaften und andere Informatione
 |[PROP_MAPI_IDENTITY_ENTRYID](prop_mapi_identity_entryid.md) <br/> |Ruft ab oder legt die Address Book Eintrags-ID für das Konto.  <br/> |
 |[PROP_MAPI_TRANSPORT_FLAGS](prop_mapi_transport_flags.md) <br/> |Stellt transporteinstellungen, die Microsoft Outlook verwendet, um die erforderlichen Aufgaben zu ermitteln und die Elemente der Benutzeroberfläche (UI) zu deaktivieren, die das Konto nicht unterstützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Schnittstelle wird von **IOlkAccountManager::FindAccount** zurückgegeben, bei der Suche nach einem Konto an, die **IOlkAccount** und **IOlkEnum::GetNext** unterstützt, wenn das nächste Konto in ein Enumerator abrufen. 
   

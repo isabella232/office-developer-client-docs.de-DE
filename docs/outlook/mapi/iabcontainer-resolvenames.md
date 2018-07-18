@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791964"
 ---
-# <a name="iabcontainerresolvenames"></a>IABContainer
+# <a name="iabcontainerresolvenames"></a>IABContainer::ResolveNames
 
   
   
@@ -92,7 +92,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Adressbuchanbieter unterstützt keine namensauflösung Massen mithilfe dieser Methode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ResolveNames** -Methode versucht, nicht aufgelösten Empfänger aus dem Array der Einträge in der _LpAdrList_ -Parameter an Empfänger in dieser Adressbuchcontainer zuzuordnen. Ein nicht aufgelöster Empfänger hat in der Regel nur die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) und möglicherweise einigen andere Eigenschaften. Ein nicht aufgelöster Empfänger verfügt nicht über die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft, und die entsprechenden Flag im Parameter _LpFlagList_ auf MAPI_UNRESOLVED festgelegt ist. Umgekehrt wurde ein aufgelöster Empfänger immer mindestens die **PR_ENTRYID** -Eigenschaft sowie einige andere Eigenschaften wie **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)), **PR_DISPLAY_NAME**und **PR_ADDRTYPE** ([ PidTagAddressType](pidtagaddresstype-canonical-property.md)).
   
@@ -150,9 +150,9 @@ Wenn Sie müssen ersetzen, anstatt eine **ADRENTRY** -Struktur zu ändern, die u
   
 [IMessage::ModifyRecipients](imessage-modifyrecipients.md)
   
-[Kanonische PidTagAnr-Eigenschaft](pidtaganr-canonical-property.md)
+[PidTagAnr (kanonische Eigenschaft)](pidtaganr-canonical-property.md)
   
 [SPropertyRestriction](spropertyrestriction.md)
   
-[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

@@ -161,11 +161,11 @@ Es folgt eine Analyse der Beispieldaten für den Datenstrom **FolderUserFields**
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook-Elemente und Felder](outlook-items-and-fields.md)
-- [PropertyDefinition Stream-Struktur](propertydefinition-stream-structure.md)
-- [FieldDefinition Stream-Struktur](fielddefinition-stream-structure.md)
-- [SkipBlock Stream-Struktur](skipblock-stream-structure.md)
-- [FirstSkipBlockContent Stream-Struktur](firstskipblockcontent-stream-structure.md)
-- [PackedAnsiString Stream-Struktur](packedansistring-stream-structure.md)
-- [PackedUnicodeString Stream-Struktur](packedunicodestring-stream-structure.md)
+- [Elemente und Felder in Outlook](outlook-items-and-fields.md)
+- [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
+- [FieldDefinition-Streamstruktur](fielddefinition-stream-structure.md)
+- [SkipBlock-Streamstruktur](skipblock-stream-structure.md)
+- [FirstSkipBlockContent-Streamstruktur](firstskipblockcontent-stream-structure.md)
+- [PackedAnsiString-Streamstruktur](packedansistring-stream-structure.md)
+- [PackedUnicodeString-Streamstruktur](packedunicodestring-stream-structure.md)
 

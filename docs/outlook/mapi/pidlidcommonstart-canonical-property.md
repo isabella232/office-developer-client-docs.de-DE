@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidCommonStart-Eigenschaft
+title: PidLidCommonStart (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793469"
 ---
-# <a name="pidlidcommonstart-canonical-property"></a>Kanonische PidLidCommonStart-Eigenschaft
+# <a name="pidlidcommonstart-canonical-property"></a>PidLidCommonStart (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt das Startdatum und die Uhrzeit einer Nachricht.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft gibt die Startzeit für ein Element an. Es muss kleiner oder gleich dem Wert der Eigenschaft **DispidCommonEnd** ([PidLidCommonEnd](pidlidcommonend-canonical-property.md)).
   

@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie die Wiederherstellung von MAPI-API
+title: Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791887"
 ---
-# <a name="use-the-mapi-crash-recovery-api"></a>Verwenden Sie die Wiederherstellung von MAPI-API
+# <a name="use-the-mapi-crash-recovery-api"></a>Verwenden der API zur MAPI-Wiederherstellung nach einem Absturz
 
 **Betrifft**: Outlook 
   
@@ -52,6 +52,6 @@ LONG WINAPI UnhandledExceptionFilter(__in EXCEPTION_POINTERS* pep)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Wiederherstellung von MAPI-API](about-the-mapi-crash-recovery-api.md) 
+- [Informationen über die API zur MAPI-Wiederherstellung nach einem Absturz](about-the-mapi-crash-recovery-api.md) 
 - [MAPICrashRecovery](mapicrashrecovery.md)
 

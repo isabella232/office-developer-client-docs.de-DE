@@ -63,7 +63,7 @@ _dwFlags_
 |S_OK  <br/> |Der Aufruf war erfolgreich.  <br/> |
 |E_INVALIDARG  <br/> | _DwFlags_ enthält eine unbekannte Kennzeichnung.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Kategorien werden persönlichen Informationen berücksichtigt und sollten nicht außerhalb des Postfachs des Benutzers übermittelt werden. Rufen Sie daher nicht **HrProcessConvActionForSentItem** für ein Element nicht gesendeten Nachrichten. Stattdessen senden Sie des Elements, und rufen Sie dann auf der archivierten **HrProcessConvActionForSentItem** . Der archivierten kann in den Ordner Gesendete Objekte oder einen entsprechenden Speicherort gespeichert werden. 
   

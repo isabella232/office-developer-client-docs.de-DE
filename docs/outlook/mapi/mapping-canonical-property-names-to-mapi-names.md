@@ -344,7 +344,7 @@ Weitere Informationen zu Eigenschaften von kanonischen beziehen sich auf MAPI-Ei
 |[PidNameRightsManagementLicense](pidnamerightsmanagementlicense-canonical-property.md) <br/> |DRMLicense  <br/> |
 |[PidNameSecurity](pidnamesecurity-canonical-property.md) <br/> |Sicherheit  <br/> |
 |[PidNameSlideCount](pidnameslidecount-canonical-property.md) <br/> |SlideCount  <br/> |
-|[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |Subject  <br/> |
+|[PidNameSubject](pidnamesubject-canonical-property.md) <br/> |Betreff  <br/> |
 |[PidNameTemplate](pidnametemplate-canonical-property.md) <br/> |Template  <br/> |
 |[PidNameTitle](pidnametitle-canonical-property.md) <br/> |Titel  <br/> |
 |[PidNameWordCount](pidnamewordcount-canonical-property.md) <br/> |WordCount  <br/> |
@@ -939,7 +939,7 @@ Weitere Informationen zu Eigenschaften von kanonischen beziehen sich auf MAPI-Ei
 |[PidTagStatusCode](pidtagstatuscode-canonical-property.md) <br/> |PR_STATUS_CODE  <br/> |
 |[PidTagStatusString](pidtagstatusstring-canonical-property.md) <br/> |PR_STATUS_STRING, PR_STATUS_STRING_A, PR_STATUS_STRING_W  <br/> |
 |[PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md) <br/> |PR_STORE_ENTRYID  <br/> |
-|[Kanonische PidTagStoreEntryIdEmsmdbV1-Eigenschaft](pidtagstoreentryidemsmdbv1-canonical-property.md) <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
+|[PidTagStoreEntryIdEmsmdbV1 (kanonische Eigenschaft)](pidtagstoreentryidemsmdbv1-canonical-property.md) <br/> |PR_STORE_ENTRYID_EMSMDB_V1  <br/> |
 |[PidTagStoreProvider](pidtagstoreprovider-canonical-property.md) <br/> |PR_MDB_PROVIDER  <br/> |
 |[PidTagStoreProviders](pidtagstoreproviders-canonical-property.md) <br/> |PR_STORE_PROVIDERS  <br/> |
 |[PidTagStoreRecordKey](pidtagstorerecordkey-canonical-property.md) <br/> |PR_STORE_RECORD_KEY  <br/> |

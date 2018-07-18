@@ -25,11 +25,11 @@ Ein Client kann ein Profil in einem der folgenden beiden Methoden, mit dem Profi
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
-[Erstellen ein Profil mithilfe der Profil-Assistent](creating-a-profile-by-using-the-profile-wizard.md)
+[Erstellen eines Profils mit dem Profilassistenten](creating-a-profile-by-using-the-profile-wizard.md)
   
 > Beschreibt, wie der Profil-Assistent, einer Anwendung aufzurufen, die ein Profil erstellt werden, da des Benutzers interaktiv Message-Dienste und -Dienstanbieter aus.
     
-[Erstellen eines Profils mithilfe von benutzerdefiniertem Code](creating-a-profile-by-using-custom-code.md)
+[Erstellen ein Profil mit benutzerdefiniertem Code](creating-a-profile-by-using-custom-code.md)
   
 > Beschreibt das Schreiben von C oder C++ Code oft die beste Wahl für nicht interaktive Clientanwendungen, die einen bestimmten Satz von Message-Dienste eine erfordern.
     

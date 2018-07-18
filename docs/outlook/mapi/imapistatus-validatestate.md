@@ -92,7 +92,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Überprüfungsvorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. Dieser Wert wird nur von remote-Transport-Anbietern zurückgegeben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPIStatus::ValidateState** -Methode überprüft den Status einer Ressource, die ein Statusobjekt zugeordnet ist. **ValidateState** ist die einzige Methode in der [IMAPIStatus](imapistatusimapiprop.md) -Schnittstelle, die für alle Status erforderlich ist. Das genaue Verhalten dieser Methode hängt von der Implementierung. Die folgende Tabelle beschreibt die Implementierung der verschiedenen Arten von Status-Objekten. 
   
@@ -192,9 +192,9 @@ Wenn das Flag SUPPRESS_UI festgelegt ist, können keines der Eigenschaftenseiten
 - [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md)
 - [IXPLogon::AddressTypes](ixplogon-addresstypes.md)
 - [IXPLogon::FlushQueues](ixplogon-flushqueues.md)
-- [Kanonische PidTagRemoteValidateOk-Eigenschaft](pidtagremotevalidateok-canonical-property.md)
-- [Kanonische PidTagResourceMethods-Eigenschaft](pidtagresourcemethods-canonical-property.md)
-- [Kanonische PidTagStatusCode-Eigenschaft](pidtagstatuscode-canonical-property.md)
-- [Kanonische PidTagStatusString-Eigenschaft](pidtagstatusstring-canonical-property.md)
-- [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md)
+- [PidTagRemoteValidateOk (kanonische Eigenschaft)](pidtagremotevalidateok-canonical-property.md)
+- [PidTagResourceMethods (kanonische Eigenschaft)](pidtagresourcemethods-canonical-property.md)
+- [PidTagStatusCode (kanonische Eigenschaft)](pidtagstatuscode-canonical-property.md)
+- [PidTagStatusString (kanonische Eigenschaft)](pidtagstatusstring-canonical-property.md)
+- [IMAPIStatus : IMAPIProp](imapistatusimapiprop.md)
 

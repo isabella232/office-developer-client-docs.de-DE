@@ -79,7 +79,7 @@ HrDecomposeEID(
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn vom _pEID_ -Parameter angegebene Bezeichner zusammengesetzter ist, wird es in die Eintrags-ID des Objekts in seiner Nachrichtenspeicher und den Store-Eintrags-ID unterteilt. Noncompound Eintrags-ID-Zeichenfolgen werden einfach kopiert. Der zusammengesetzte Bezeichner, der getrennt werden ist in der Regel durch die Funktion [HrComposeEID](hrcomposeeid.md) erstellt. 
   

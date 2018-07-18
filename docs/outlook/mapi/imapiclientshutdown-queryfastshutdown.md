@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI-Anbieter unterstützt keine den MAPI-Client zum Herunterfahren schnelle.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ob die MAPI-Subsystems auf Herunterfahren schnelle führen Sie den MAPI-Client unterstützt, hängt von Einstellung in der Windows-Registrierung des Benutzers oder das Standardverhalten des MAPI-Client für Schnelles Herunterfahren. Außerdem hängt die Möglichkeit der geladenen MAPI-Anbieter zur Unterstützung von schnellen Herunterfahren. Weitere Informationen finden Sie unter [Fast Herunterfahren Benutzeroptionen](fast-shutdown-user-options.md).
   
@@ -49,7 +49,7 @@ Ob die MAPI-Subsystems auf Herunterfahren schnelle führen Sie den MAPI-Client u
 
 
 
-[IMAPIClientShutdown: IUnknown](imapiclientshutdowniunknown.md)
+[IMAPIClientShutdown : IUnknown](imapiclientshutdowniunknown.md)
 
 
 [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)

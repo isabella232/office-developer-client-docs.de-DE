@@ -45,7 +45,7 @@ S_OK
   
 > Der Prozess für die Abmeldung wurde erfolgreich initiiert.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Prozess für die Abmeldung wird in der Regel gestartet, wenn ein Client beenden eine Sitzung die [IMAPISession::Logoff](imapisession-logoff.md) Methode aufruft. MAPI ruft dann jede Adressbuchanbieter **IABLogon::Logoff** -Methode, um den Abmeldung zu starten. 
   
@@ -63,5 +63,5 @@ Weitere Informationen zum Abmeldevorgang, von adressbuchanbietern implementierte
 
 [IABProvider::Logon](iabprovider-logon.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

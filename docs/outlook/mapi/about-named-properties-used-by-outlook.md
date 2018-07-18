@@ -185,9 +185,9 @@ Benannte Eigenschaften im Namespace **PS_PUBLIC_STRINGS** lauten wie folgt:
 
 [MAPI-Konstanten](mapi-constants.md)
   
-[Bestimmen Sie, ob Outlook nur die Kopfzeile einer Nachricht heruntergeladen](how-to-determine-if-outlook-downloaded-only-the-header-of-a-message.md)
+[Ermitteln, ob Outlook nur die Kopfzeile einer Nachricht heruntergeladen hat](how-to-determine-if-outlook-downloaded-only-the-header-of-a-message.md)
   
-[Abrufen der e-Mail-Adresse eines Kontaktelements](how-to-get-the-email-address-of-a-contact-item.md)
+[Abrufen der E-Mail-Adresse eines Kontaktelements](how-to-get-the-email-address-of-a-contact-item.md)
   
-[Entfernen Sie benutzerdefinierter Formulardefinition gespeichert mit einer Nachricht](how-to-remove-custom-form-definition-saved-with-a-message.md)
+[Entfernen benutzerdefinierter Formulardefinitionen, die mit einer Nachricht gespeichert wurden](how-to-remove-custom-form-definition-saved-with-a-message.md)
 

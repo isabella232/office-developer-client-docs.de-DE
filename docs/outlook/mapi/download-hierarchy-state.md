@@ -1,5 +1,5 @@
 ---
-title: Downloadstatus-Hierarchie
+title: Status „Downloadhierarchie“
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791577"
 ---
-# <a name="download-hierarchy-state"></a>Downloadstatus-Hierarchie
+# <a name="download-hierarchy-state"></a>Status „Downloadhierarchie“
 
   
   
@@ -45,9 +45,9 @@ Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status synchron
 
 
 
-[Über die API-Replikation](about-the-replication-api.md)
+[Informationen über die Replikations-API](about-the-replication-api.md)
   
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

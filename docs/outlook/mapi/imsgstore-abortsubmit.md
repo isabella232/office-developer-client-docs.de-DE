@@ -63,7 +63,7 @@ MAPI_E_UNABLE_TO_ABORT
   
 > Die Nachricht vom _LpEntryID_ gesperrt ist, durch die MAPI-Warteschlange, und der Vorgang kann nicht abgebrochen werden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgStore::AbortSubmit** -Methode versucht, eine gesendete Nachricht aus dem Nachrichtenspeicher ausgehende Warteschlange zu entfernen. 
   

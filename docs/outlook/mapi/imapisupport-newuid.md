@@ -45,7 +45,7 @@ S_OK
   
 > Die neue **MAPIUID** Struktur erstellt wurde. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::NewUID** -Methode wird für alle Unterstützungsobjekte implementiert. Dienstanbieter und Message-Dienste aufrufen **NewUID** , wenn sie benötigen, um eine langfristige eindeutige ID zu generieren. Eine Nachricht Speicheranbieter, zum Beispiel, **NewUID** zum Abrufen einer **MAPIUID** in die **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft einer neu erstellten Nachricht platzieren aufgerufen werden kann.
   

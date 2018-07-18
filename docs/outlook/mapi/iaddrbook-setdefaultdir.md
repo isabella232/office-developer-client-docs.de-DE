@@ -50,7 +50,7 @@ S_OK
   
 > Die Standard-Adressbuchcontainer wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Clients und Dienstanbieter rufen Sie die **SetDefaultDir** -Methode, um eine neue Standard Adressbuchcontainer herzustellen. Der standardmäßige Container ist der Container, den der Benutzer erhält im Adressbuch angezeigt wird, wenn das Adressbuch zum ersten Mal geöffnet wird. **SetDefaultDir** speichert den Standardcontainer als Eintrag im Profil. Der Container bleibt unverändert bis einen weiteren Anruf zu **SetDefaultDir** in der gleichen Sitzung oder in einer anderen Sitzung erfolgt oder der Container wird entfernt. 
   
@@ -77,7 +77,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MAPILogonEx](mapilogonex.md)
   
-[IAddrBook: IMAPIProp](iaddrbookimapiprop.md)
+[IAddrBook : IMAPIProp](iaddrbookimapiprop.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

@@ -384,7 +384,7 @@ Dieser Abschnitt enthält Konstantendefinitionen und Schnittstellenbezeichner vo
 |:-----|:-----|:-----|
 |fnevIndexing  <br/> |((ULONG) 0 X 00010000)  <br/> |Ein Anbieter anmelden kann **FnevIndexing** Geben Sie im **UlEventType** Member der Struktur **[Benachrichtigung](notification.md)** um der Indizierung zu benachrichtigen, dass ein Objekt für die Indizierung bereit ist. Der **Info** -Member der Struktur **Benachrichtigung** enthält eine **[EXTENDED_NOTIFICATION](extended_notification.md)** -Struktur.  <br/> |
 |FS_NONE  <br/> |0 x 00  <br/> |Ein Client kann **[IFolderSupport::GetSupportMask](ifoldersupport-getsupportmask.md)** und die Kontrollkästchen für die zurückgegebene Bitmaske aufrufen. **FS_NONE** gibt an, dass der Ordner Freigabe nicht unterstützt.  <br/> |
-|FS_SUPPORTS_SHARING  <br/> |0 x 01  <br/> |Ein Client kann **IFolderSupport::GetSupportMask** und die Kontrollkästchen für die zurückgegebene Bitmaske aufrufen. **FS_SUPPORTS_SHARING** gibt an, dass der Ordner Freigabe unterstützt.  <br/> |
+|FS_SUPPORTS_SHARING  <br/> |0x01  <br/> |Ein Client kann **IFolderSupport::GetSupportMask** und die Kontrollkästchen für die zurückgegebene Bitmaske aufrufen. **FS_SUPPORTS_SHARING** gibt an, dass der Ordner Freigabe unterstützt.  <br/> |
 |INDEXING_SEARCH_OWNER  <br/> |((ULONG) 0 X 00000001)  <br/> |Identifiziert den Prozess, der eine Benachrichtigung zu einem Indexer beschäftigt ist, dass ein Objekt für die Indizierung bereit ist.  <br/> |
 |MNID_ID  <br/> |Wie in der Microsoft Windows Software Development Kit (SDK)-Header-Datei mapidefs.h definiert  <br/> |Ein Wert für das Feld **UlKind** der **[MAPINAMEID](mapinameid.md)** Struktur.  <br/> |
 |MNID_STRING  <br/> |Wie in der Microsoft Windows Software Development Kit (SDK)-Header-Datei mapidefs.h definiert.  <br/> |Ein Wert für das Feld **UlKind** der **[MAPINAMEID](mapinameid.md)** Struktur.  <br/> |
@@ -679,8 +679,8 @@ DEFINE_GUID(IID_IPSTOVERRIDE1, 0xfbb68d34, 0xf561, 0x44fb, 0xa8, 0xca, 0xae, 0x3
 ## <a name="see-also"></a>Siehe auch
 
 - [Informationen zu MAPI-Ergänzungen](about-mapi-additions.md) 
-- [Informationen zu benannten von Outlook verwendete Eigenschaften](about-named-properties-used-by-outlook.md)
-- [Access einen Speicher auf dem Remote Server bei Outlook befindet sich in der Exchange-Cache-Modus](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
-- [Geöffnet ist ein Speichers Remote Server Wenn Outlook im Exchange-Cache-Modus](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
-- [Verwalten einer Nachricht in einer OST ohne Aufrufen eine Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
+- [Informationen zu benannten Eigenschaften in Outlook](about-named-properties-used-by-outlook.md)
+- [Zugreifen auf einen Store auf dem Remote-Server, wenn Outlook sich Exchange-Cache-Modus befindet](how-to-access-store-on-remote-server-in-cached-exchange-mode.md)
+- [Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet](how-to-open-store-on-remote-server-in-cached-exchange-mode.md)
+- [Verwalten einer Nachricht in einem OST ohne Aufrufen einer Synchronisierung im Exchange-Cache-Modus](how-to-manage-a-message-in-an-ost-without-invoking-a-synchronization.md)
 

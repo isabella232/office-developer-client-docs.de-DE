@@ -54,7 +54,7 @@ MAPI_E_NOT_FOUND
   
 > Das angegebene Profil ist nicht vorhanden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProfAdmin::DeleteProfile** -Methode löscht ein Profil. Wenn das zu löschende Profil verwendet wird, wenn **DeleteProfile** aufgerufen wird, **DeleteProfile** gibt S_OK zurück, jedoch wird das Profil nicht sofort gelöscht. Stattdessen **DeleteProfile** das Profil zum Löschen markiert und, nachdem es nicht mehr verwendet wird, wenn alle seine aktiven Sitzungen beendet haben, wird gelöscht. 
   
@@ -78,7 +78,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

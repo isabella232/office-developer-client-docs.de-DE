@@ -105,7 +105,7 @@ S_OK
   
 > Die benachrichtigungsregistrierung war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::Subscribe** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **Abonnieren** von einem ihrer **Advise** -Methoden, um MAPI, um die Benachrichtigungen verwalten zu ermöglichen. 
   

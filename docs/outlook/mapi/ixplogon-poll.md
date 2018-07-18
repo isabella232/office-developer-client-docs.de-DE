@@ -57,5 +57,5 @@ Die MAPI-Warteschlange in regelmäßigen Abständen um die **IXPLogon::Poll** -M
   
 [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

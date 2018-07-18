@@ -1,5 +1,5 @@
 ---
-title: Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur
+title: Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790945"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a>Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a>Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur
 
 In diesem Thema wird wie die [TZDEFINITION](tzdefinition.md) -Struktur aus der persistenten Format gespeichert, in eine binäre Eigenschaft lesen. 
   
@@ -86,5 +86,5 @@ TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef)
 ## <a name="see-also"></a>Siehe auch
 
 - [Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
-- [Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
+- [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Implementieren von Address Book Anbieter an- und Abmelden
+title: Implementieren einer An- und Abmeldung für Adressbuchanbieter
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792552"
 ---
-# <a name="implementing-address-book-provider-logon-and-logoff"></a>Implementieren von Address Book Anbieter an- und Abmelden
+# <a name="implementing-address-book-provider-logon-and-logoff"></a>Implementieren einer An- und Abmeldung für Adressbuchanbieter
 
 **Betrifft**: Outlook 
   
 Von adressbuchanbietern implementierte Sitzung an- und Abmelden durch Implementierung die Methoden des unterstützen die [IABProvider: IUnknown](iabprovideriunknown.md) Schnittstelle. Die ** IABProvider ** Schnittstelle erbt direkt von **IUnknown** und fügt nur zwei andere Methoden: **Anmelden** und **Herunterfahren**. 
   
-## <a name="logoff"></a>Abmelden
+## <a name="logoff"></a>Logoff
 
 MAPI rufen Ihres Anbieters- [IABProvider::Logon](iabprovider-logon.md) -Methode am Anfang jeder Sitzung und Ihrem Anbieter zum aktuellen Profil hinzugefügt und der Client DR unterstützt. Wenn MAPI die **IABProvider::Logon** -Methode aufruft, beginnt der Adressbuchanbieter seine Anmeldevorgang. 
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidClipStart-Eigenschaft
+title: PidLidClipStart (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793487"
 ---
-# <a name="pidlidclipstart-canonical-property"></a>Kanonische PidLidClipStart-Eigenschaft
+# <a name="pidlidclipstart-canonical-property"></a>PidLidClipStart (kanonische Eigenschaft)
 
   
   

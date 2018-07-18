@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: overview
 localization_priority: Normal
 ms.assetid: 001899f7-5b1a-4c0b-a0e4-e01985eea818
-description: Mit einem NachschlagenDatensatz-Datenblock führt eine Reihe von Aktionen für einen bestimmten Datensatz.
+description: Mit einem NachschlagenDatensatz -Datenblock wird eine Reihe von Aktionen für einen bestimmten Datensatz ausgeführt.
 ms.openlocfilehash: 7012fecdf0e73647b2b8177473dd8b5540b5fcca
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

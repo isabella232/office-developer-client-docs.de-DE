@@ -1,5 +1,5 @@
 ---
-title: IPM-Unterstruktur
+title: IPM-Teilstruktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792740"
 ---
-# <a name="ipm-subtree"></a>IPM-Unterstruktur
+# <a name="ipm-subtree"></a>IPM-Teilstruktur
 
   
   

@@ -50,7 +50,7 @@ S_OK
   
 > Der Aufruf war erfolgreich. Dieser Aufruf muss S_OK zurück.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Entfernt die Registrierung des Rückrufs, die mit *UlAdviseToken* zurückgegeben, die von einem vorherigen Aufruf von **[IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)** zugeordnet wurde. Bewirkt, dass das **IMAPIOfflineMgr** -Objekt, das den Verweis auf das zugeordnete *UlAdviseToken* **[IMAPIOfflineNotify](imapiofflinenotifyiunknown.md)** -Objekt freigeben. 
   

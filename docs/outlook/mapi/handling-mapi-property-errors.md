@@ -41,5 +41,5 @@ Wenn ein Fehlerwert von **SetProps**, **DeleteProps**, **CopyTo**oder **CopyProp
   
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+- [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

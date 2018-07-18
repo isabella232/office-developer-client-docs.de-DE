@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **IMSLogon::GetLastError** -Methode zum Abrufen von Informationen in einer Nachricht an den Benutzer über den letzten Fehler zurückgegeben, die von einem Methodenaufruf für das Objekt "Message" Store angezeigt. 
   
@@ -79,5 +79,5 @@ Der Rückgabewert von **GetLastError** muss S_OK für eine Anwendung für die **
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
 

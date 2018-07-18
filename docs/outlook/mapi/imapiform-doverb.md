@@ -64,7 +64,7 @@ OLEOBJ_S_CANNOT_DOVERB_NOW
   
 > Das Verb, dargestellt durch den Parameter _iVerb_ ist gültig, aber das Formular kann nicht ausgeführt werden die Vorgänge, die derzeit zugeordnet. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIForm::DoVerb** -Methode, um anzufordern, dass das Formular der Aufgaben, bei denen es jedes Verb zugeordnet, die das Formular unterstützt. 
   
@@ -112,10 +112,10 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
-[Formular Verben](form-verbs.md)
+[Formularverben](form-verbs.md)
 

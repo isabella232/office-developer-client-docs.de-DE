@@ -45,7 +45,7 @@ S_OK
   
 > Der Aufruf war erfolgreich.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **IMAPITable::Unadvise** -Methode, um den Zeiger auf den im Parameter _LpAdviseSink_ im vorherigen Aufruf **IMAPITable::Advise**, wodurch Stornieren einer benachrichtigungsregistrierung übergeben Advise-Empfängerobjekt freizugeben. Im Rahmen des Zeigers auf das Empfängerobjekt Advise verwerfen wird das Objekt **IUnknown** -Methode aufgerufen. Im allgemeinen **Release** aufgerufen wird während des Anrufs **Unadvise** , jedoch ist, wenn ein anderer Thread aufruft, die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfänger der Anruf **Version** verzögert, bis die **OnNotify** -Methode zurückgegeben. 
   
@@ -67,7 +67,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
   
 [IMAPITable::Advise](imapitable-advise.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

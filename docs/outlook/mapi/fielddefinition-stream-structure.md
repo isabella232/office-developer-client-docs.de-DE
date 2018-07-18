@@ -89,7 +89,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook-Elemente und Felder](outlook-items-and-fields.md)
-- [Stream-Strukturen](stream-structures.md)
-- [PropertyDefinition Stream-Struktur](propertydefinition-stream-structure.md)
+- [Elemente und Felder in Outlook](outlook-items-and-fields.md)
+- [Streamstrukturen](stream-structures.md)
+- [PropertyDefinition-Streamstruktur](propertydefinition-stream-structure.md)
 

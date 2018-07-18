@@ -22,9 +22,9 @@ Fügt den aktuellen Datensatz in den Bearbeitungsmodus.
   
 ## <a name="syntax"></a>Syntax
 
- **BearbeitenDatensatz**
+ **EditRecord**
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verwenden Sie die **SaveRecord** -Aktion zum Speichern von Änderungen an den Datensatz oder die **UndoRecord** -Aktion, um die Änderungen zu verwerfen. 
   

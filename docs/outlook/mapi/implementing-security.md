@@ -1,5 +1,5 @@
 ---
-title: Implementieren der Sicherheit
+title: Implementieren von Sicherheitsmaßnahmen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792576"
 ---
-# <a name="implementing-security"></a>Implementieren der Sicherheit
+# <a name="implementing-security"></a>Implementieren von Sicherheitsmaßnahmen
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidOfflineStatus-Eigenschaft
+title: PidLidOfflineStatus (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793684"
 ---
-# <a name="pidlidofflinestatus-canonical-property"></a>Kanonische PidLidOfflineStatus-Eigenschaft
+# <a name="pidlidofflinestatus-canonical-property"></a>PidLidOfflineStatus (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Bestimmt den Status einer Dokumentdatei auf einem Server, der [MS-LISTSWS] imple
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 In der folgenden Tabelle sind die möglichen Werte dieser Eigenschaft.
   

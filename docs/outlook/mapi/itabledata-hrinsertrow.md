@@ -54,7 +54,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Eine Zeile, die den gleichen Wert für die Indexspalte verfügt, wie die Zeile bereits eingefügt werden in der Tabelle vorhanden sind.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **ITableData::HrInsertRow** -Methode fügt eine Zeile in einer Tabelle an einer bestimmten Position. Nach der Zeile, die an der Position, die durch den Parameter _UliRow_ angegeben ist, wird die neue Zeile eingefügt. 
   
@@ -70,9 +70,9 @@ Nachdem die Zeile eingefügt wurde, werden Benachrichtigungen an alle Clients od
 
 
 
-[' Srow '](srow.md)
+[SRow](srow.md)
   
 [TABLE_NOTIFICATION](table_notification.md)
   
-[ITableData: IUnknown](itabledataiunknown.md)
+[ITableData : IUnknown](itabledataiunknown.md)
 

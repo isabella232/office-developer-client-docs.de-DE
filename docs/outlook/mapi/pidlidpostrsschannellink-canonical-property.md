@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidPostRssChannelLink-Eigenschaft
+title: PidLidPostRssChannelLink (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793708"
 ---
-# <a name="pidlidpostrsschannellink-canonical-property"></a>Kanonische PidLidPostRssChannelLink-Eigenschaft
+# <a name="pidlidpostrsschannellink-canonical-property"></a>PidLidPostRssChannelLink (kanonische Eigenschaft)
 
   
   

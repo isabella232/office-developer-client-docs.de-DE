@@ -45,7 +45,7 @@ Wenn ein Client eine Messagingdiensts **IMsgServiceAdmin::SetPrimaryIdentity** -
   
 Jeder Anbieter in den Dienst verantwortlich für die Angabe der primären Identität aktualisiert eine Zeile in der Statustabelle "auf die folgenden Eigenschaften enthalten.
   
-|**Primäre Identity-Eigenschaft**|**Legen Sie auf**|
+|**Primäre Identity-Eigenschaft**|**Festgelegt auf**|
 |:-----|:-----|
 |**PR_IDENTITY_DISPLAY** ([PidTagIdentityDisplay](pidtagidentitydisplay-canonical-property.md))  <br/> |Der Anzeigename des-Objekts die primäre Identität angeben.  <br/> |
 |**PR_IDENTITY_SEARCH_KEY** ([PidTagIdentitySearchKey](pidtagidentitysearchkey-canonical-property.md))  <br/> |Search-Schlüssel für das Objekt, das die primäre Identität angeben.  <br/> |

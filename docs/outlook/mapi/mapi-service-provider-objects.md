@@ -30,7 +30,7 @@ Dienstanbieter implementieren viele Objekte. Einige werden hauptsächlich von MA
 |Steuerelement  <br/> |Aktiviert oder deaktiviert eine Schaltfläche und initiiert verarbeiten, wenn auf die Schaltfläche geklickt wird.  <br/> |
 |Verteilerliste  <br/> |Beschreibt eine Gruppierung von einzelnen Empfängern.  <br/> |
 |Ordner  <br/> |Nachrichten und andere Container Nachricht enthält.  <br/> |
-|Anmeldung  <br/> |Handles service Provider-Ereignis Benachrichtigung und Client-Anforderungen.  <br/> |
+|Logon  <br/> |Handles service Provider-Ereignis Benachrichtigung und Client-Anforderungen.  <br/> |
 |Messaging-Benutzer  <br/> |Beschreibt einen einzelnen Empfänger einer Nachricht.  <br/> |
 |Nachricht  <br/> |Enthält Informationen, die an einen oder mehrere Empfänger gesendet werden kann.  <br/> |
 |Nachrichtenspeicher  <br/> |Fungiert als hierarchisch organisiert Datenbank von Nachrichten.  <br/> |
@@ -55,20 +55,20 @@ Transportanbieter, die die Transport Neutral Encapsulation Format (TNEF) unterst
 
 
 
-[ITnef: IUnknown](itnefiunknown.md)
+[ITnef : IUnknown](itnefiunknown.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
   
-[IMSLogon: IUnknown](imslogoniunknown.md)
+[IMSLogon : IUnknown](imslogoniunknown.md)
   
-[IABProvider: IUnknown](iabprovideriunknown.md)
+[IABProvider : IUnknown](iabprovideriunknown.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
   
-[IXPProvider: IUnknown](ixpprovideriunknown.md)
+[IXPProvider : IUnknown](ixpprovideriunknown.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 
 
-[Entwickeln eines Providers TNEF-aktivierten Transport](developing-a-tnef-enabled-transport-provider.md)
+[Entwickeln eines TNEF-fähigen Transportanbieters](developing-a-tnef-enabled-transport-provider.md)
 

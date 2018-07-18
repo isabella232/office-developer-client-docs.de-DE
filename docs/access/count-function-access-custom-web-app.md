@@ -30,7 +30,7 @@ Die **Count** -Funktion enthält das folgende Argument.
 |:-----|:-----|
 | *Expression*  <br/> |Ein Zeichenfolgenausdruck, der das Feld, das Daten enthält, die Sie Count oder ein Ausdruck, der eine Berechnung mit den Daten in das Feld durchführt möchten. Zu den Operanden von *Ausdruck* zählen der Name des Felds oder Funktion (die integrierte oder benutzerdefinierte werden können, jedoch keine anderen SQL-Aggregatfunktionen). Sie können jede Art von Daten, einschließlich Text zählen.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Count können Sie die Anzahl der Datensätze in einer zugrunde liegenden Abfrage zählen. Count können Sie beispielsweise die Anzahl von Bestellungen, die einem bestimmten Land oder einer Region zählen.
   

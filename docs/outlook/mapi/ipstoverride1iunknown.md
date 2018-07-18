@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792813"
 ---
-# <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1: IUnknown
+# <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1 : IUnknown
 
   
   
@@ -42,7 +42,7 @@ Ermöglicht einen Anbieter für Persönliche Ordner-Datei (PST) anmelden die PST
 |[IPSTOVERRIDE1::SetPersistedRegistrations](ipstoverride1-setpersistedregistrations.md) <br/> |Registriert Persönliche Ordner-Dateien für die automatische Entsperren Weitere Anrufe an HrTrustedPSTOverrideHandlerCallback zu vermeiden.  <br/> |
 |[IPSTOVERRIDE1::OverridePSTDisableGrow](ipstoverride1-overridepstdisablegrow.md) <br/> |Hebt die Sperre für das Wachstum der Persönliche Ordner-Datei.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die PST-Datei überschreiben Handler Schnittstellenbezeichner möglicherweise nicht in der herunterladbaren Headerdatei definiert werden derzeit, in diesem Fall müssen Sie finden sie im Thema [MAPI-Konstanten](mapi-constants.md) und können kopieren und fügen sie dem Code hinzu. Verwenden Sie das DEFINE_GUID-Makro in der Microsoft Windows Software Development Kit (SDK)-Header-Datei guiddef.h definiert, deren Werte symbolische Namen global eindeutigen Bezeichner (GUID) zugeordnet. 
   
@@ -52,5 +52,5 @@ Weitere Informationen finden Sie unter [ein PST Außerkraftsetzung Handler für 
 
 
 
-[IPSTOVERRIDEREQ: IUnknown](ipstoverridereqiunknown.md)
+[IPSTOVERRIDEREQ : IUnknown](ipstoverridereqiunknown.md)
 

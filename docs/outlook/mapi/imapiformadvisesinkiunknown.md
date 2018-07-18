@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792140"
 ---
-# <a name="imapiformadvisesink--iunknown"></a>IMAPIFormAdviseSink: IUnknown
+# <a name="imapiformadvisesink--iunknown"></a>IMAPIFormAdviseSink : IUnknown
 
   
   
@@ -43,7 +43,7 @@ Formular von Servern zum Formular Viewer Benachrichtigungen erhalten können.
 |[OnChange](imapiformadvisesink-onchange.md) <br/> |Gibt an, dass eine Änderung in den Status des Formular-Viewers aufgetreten ist.  <br/> |
 |[OnActivateNext](imapiformadvisesink-onactivatenext.md) <br/> |Gibt an, ob das Formular die Nachrichtenklasse für die nächste anzuzeigende Meldung verarbeiten kann.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Servern mit einem Formular advise-Empfängerobjekt **IMAPIFormAdviseSink** implementieren, anstatt mit ihren Form-Objekt. Aus diesem Grund sollten Formular Viewer erwarten, einen Fehler beim Aufruf von [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) -Methode des Formulars einen Zeiger auf diese Schnittstelle abrufen. 
   

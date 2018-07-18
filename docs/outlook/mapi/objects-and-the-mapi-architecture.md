@@ -23,12 +23,12 @@ Alle Objekte, die MAPI definiert fallen in eine oder mehrere Ebenen in der MAPI-
   
 Die folgende Abbildung zeigt, in dem einzelnen MAPI-Objekte in der MAPI-Architektur passt. Die Objekte werden mit den Namen ihrer abgeleiteten Schnittstellen dargestellt. Beispielsweise ein Empfängerobjekt Advise wird angezeigt als [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md), die Schnittstelle, die von [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) abgeleitet wird und an, die jedes Empfängerobjekt Advise implementiert wird. Die Schnittstellen, die Ebenen Brücke sind entweder verwendet oder von mehreren Komponenten implementiert. Obwohl die MAPI-Ebene angezeigt wird, trennen die Client- und Anbieter Ebenen, sagen, dass die gesamte Kommunikation über MAPI, flow muss ist dies nicht der Fall. Clients können, und führen Sie kommunizieren direkt an dienstanbieterobjekten. 
   
-**Objektebenen in MAPI**
+**Objektschichten in MAPI**
   
 ![Objektebenen in MAPI] (media/amapi_38.gif "Objektebenen in MAPI")
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md)
+- [IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md)
 - [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
 

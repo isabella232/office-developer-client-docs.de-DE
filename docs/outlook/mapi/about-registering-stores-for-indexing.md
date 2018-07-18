@@ -1,5 +1,5 @@
 ---
-title: Zum Registrieren von Speicher für die Indizierung
+title: Informationen zum Registrieren von Stores für die Indizierung
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791241"
 ---
-# <a name="about-registering-stores-for-indexing"></a>Zum Registrieren von Speicher für die Indizierung
+# <a name="about-registering-stores-for-indexing"></a>Informationen zum Registrieren von Stores für die Indizierung
 
   
   
@@ -68,5 +68,5 @@ Die MAPI-Eigenschaft **[PR_MDB_PROVIDER](pidtagstoreprovider-canonical-property.
 
 
 
-[Über den API-Speicher](about-the-store-api.md)
+[Informationen zur Store-API](about-the-store-api.md)
 

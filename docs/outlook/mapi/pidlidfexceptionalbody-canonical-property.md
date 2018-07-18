@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidFExceptionalBody-Eigenschaft
+title: PidLidFExceptionalBody (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793592"
 ---
-# <a name="pidlidfexceptionalbody-canonical-property"></a>Kanonische PidLidFExceptionalBody-Eigenschaft
+# <a name="pidlidfexceptionalbody-canonical-property"></a>PidLidFExceptionalBody (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt an, dass die Ausnahme eingebettete Nachricht, dass Objekt ein Body verfügt
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Wert dieser Eigenschaft auf true festgelegt ist, eingebettet die Ausnahme Meldung, dass das Objekt einen Rumpf haben muss. Wenn der Wert dieser Eigenschaft auf false festgelegt ist, oder die Eigenschaft nicht vorhanden ist, muss ein Client oder Server im Textkörper von sich wiederholenden Calendar-Objekt abrufen.
   

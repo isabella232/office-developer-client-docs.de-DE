@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentReplyName-Eigenschaft
+title: PidLidAppointmentReplyName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793398"
 ---
-# <a name="pidlidappointmentreplyname-canonical-property"></a>Kanonische PidLidAppointmentReplyName-Eigenschaft
+# <a name="pidlidappointmentreplyname-canonical-property"></a>PidLidAppointmentReplyName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den Benutzer, die zuletzt auf die Besprechungsanfrage darauf geantwortet od
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft wird nur für eine Delegator festgelegt, wenn eine Stellvertretung geantwortet. Der Wert ist gleich der **PR_MAILBOX_OWNER_NAME** ([PidTagMailboxOwnerName](pidtagmailboxownername-canonical-property.md))-Eigenschaft für den Delegaten Speicher. Diese Eigenschaft hat keine Bedeutung für den Organisator. Ausführliche Informationen zum **PR_MAILBOX_OWNER_NAME**finden Sie unter Speichern in [[MS-OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)angegebene Objektprotokoll.
   

@@ -40,7 +40,7 @@ typedef struct _DTBLMVLISTBOX
 
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  **ulFlags**
   
@@ -50,7 +50,7 @@ typedef struct _DTBLMVLISTBOX
   
 > Eigenschaftentag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Struktur **DTBLMVLISTBOX** beschreibt eine standard mehrwertige Liste, die eine schreibgeschützte Liste der Elemente verfügt. Eine mehrwertige Liste verwenden, werden die Werte sofort angezeigt. 
   

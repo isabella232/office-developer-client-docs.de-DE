@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidBusinessCardDisplayDefinition-Eigenschaft
+title: PidLidBusinessCardDisplayDefinition (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793462"
 ---
-# <a name="pidlidbusinesscarddisplaydefinition-canonical-property"></a>Kanonische PidLidBusinessCardDisplayDefinition-Eigenschaft
+# <a name="pidlidbusinesscarddisplaydefinition-canonical-property"></a>PidLidBusinessCardDisplayDefinition (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält benutzeranpassungen Details für einen Kontakt als Visitenkarte anzeige
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Layout einer Visitenkarte kann als ein Bild und eine Reihe von Textfeldern dargestellt werden. Das Bild kann entweder ein Foto des Kontakts oder ein Bild der Visitenkarte sein. Textfelder bestehen einen Wert aus einer anderen-Eigenschaft auf den Kontakt festlegen und eine optionale benutzerdefinierte Bezeichnung-Zeichenfolge, die vom Benutzer bereitgestellten. Beachten Sie, dass Sie Multibyte-Werte in little-Endian-Format im Puffer gespeichert sind.
   

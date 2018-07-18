@@ -73,5 +73,5 @@ Sie können **PrepareForm** verwenden, um die Dynamic Link Libraries (DLLs) und 
   
 [IMAPIFormMgr::LoadForm](imapiformmgr-loadform.md)
   
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProfAdmin::GetLastError** -Methode ruft Informationen über den letzten Fehler, die von einem Methodenaufruf für das Profil Administration-Objekt zurückgegeben. 
   
@@ -83,5 +83,5 @@ Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Erwe
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

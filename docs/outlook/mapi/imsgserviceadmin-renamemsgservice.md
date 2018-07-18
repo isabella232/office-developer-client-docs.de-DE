@@ -55,7 +55,7 @@ MAPI_E_NO_SUPPORT
   
 > Dieser Nachrichtendienst umbenennen unterstützt MAPI nicht. Dieser Wert wird immer **RenameMsgService** zurückgegeben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um eine Message Service einen neuen Namen zuzuweisen, sollten Clients die **PR_SERVICE_NAME** ([PidTagServiceName](pidtagservicename-canonical-property.md))-Eigenschaft des Diensts Nachricht verwenden. Die Namen der Dienstanbieter in einem Nachrichtendienst werden in deren Eigenschaften **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) gespeichert. 
   
@@ -65,5 +65,5 @@ Um eine Message Service einen neuen Namen zuzuweisen, sollten Clients die **PR_S
 
 [MAPIUID](mapiuid.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

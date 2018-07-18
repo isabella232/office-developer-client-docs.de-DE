@@ -1,5 +1,5 @@
 ---
-title: Zur Konfliktbehebung für benutzerdefinierte Elementtypen
+title: Informationen zur Konfliktbehebung für benutzerdefinierte Typen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790911"
 ---
-# <a name="about-conflict-resolution-for-custom-item-types"></a>Zur Konfliktbehebung für benutzerdefinierte Elementtypen
+# <a name="about-conflict-resolution-for-custom-item-types"></a>Informationen zur Konfliktbehebung für benutzerdefinierte Typen
 
 In diesem Thema wird beschrieben, wie zum Lösen von Konflikten für benutzerdefinierte Elementtypen, die Sie in Outlook erstellen.
   

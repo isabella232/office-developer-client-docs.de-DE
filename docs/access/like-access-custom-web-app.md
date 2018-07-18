@@ -33,7 +33,7 @@ Der Operator **LIKE** enthält die folgenden Argumente.
 | *Pattern*  <br/> |Ja  <br/> |Die bestimmte Zeichenfolge in *Ausdruck* suchen. Kann Platzhalterzeichen enthalten. Finden Sie in den Hinweisen für eine Liste der gültigen Platzhalterzeichen.  <br/> |
 | *EscapeChar*  <br/> |Nein  <br/> |Ein Zeichen, das vor einem Platzhalterzeichen an, dass den Platzhalter versetzt wurde, sollte als normales Zeichen und nicht als Platzhalter interpretiert werden.  *EscapeChar* ist ein Zeichenausdruck, der hat keinen Standardwert und muss nur ein Zeichen ergeben.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die folgende Tabelle enthält die Platzhalterzeichen, die für die Verwendung im Argument *Muster* gültig sind. 
   

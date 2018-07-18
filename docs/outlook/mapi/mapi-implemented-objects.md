@@ -39,9 +39,9 @@ In der folgenden Tabelle werden den Zweck für jedes Objekt, das MAPI implementi
 |Profilabschnitt  <br/> |Ein Teil eines Profils verwendet, um eine bestimmte Nachricht-Dienst oder den Dienstanbieter beschreiben.  <br/> |
 |Eigenschaftendaten  <br/> |Wird der Zugriff auf Eigenschaften, und hilft Ihnen **IMAPIProp**implementieren.  <br/> |
 |Des Anbieters für  <br/> |Bietet Zugriff auf Informationen zu Anbietern für die Konfiguration.  <br/> |
-|Sitzung  <br/> |Stellt eine Verbindung mit der zugrunde liegenden messaging-Systeme und bietet Zugriff auf Ressourcen von MAPI-Clients.  <br/> |
+|Session  <br/> |Stellt eine Verbindung mit der zugrunde liegenden messaging-Systeme und bietet Zugriff auf Ressourcen von MAPI-Clients.  <br/> |
 |Status  <br/> |Bietet Zugriff auf den Status des MAPI-Subsystems, Adressbuch oder die MAPI-Warteschlange.  <br/> |
-|Unterstützung  <br/> |Hilft Dienstanbieter Clientanforderungen.  <br/> |
+|Support  <br/> |Hilft Dienstanbieter Clientanforderungen.  <br/> |
 |Tabelle  <br/> |Bietet Zugriff auf eine Zusammenfassungsansicht der Objektdaten Zeile und Spalte, ähnlich wie in in einer Datenbanktabelle.  <br/> |
 |Tabellendaten  <br/> |Zugriff auf die zugrunde liegenden Tabellendaten verwaltet und Table-Objekte implementiert.  <br/> |
 |TNEF  <br/> |Unterstützt die Verwendung von Transport Neutral Encapsulation Format (TNEF).  <br/> |
@@ -54,6 +54,6 @@ Die folgende Abbildung zeigt die Beziehung zwischen den, die von MAPI implementi
   
 ## <a name="see-also"></a>Siehe auch
 
-- [IMAPIProp: IUnknown](imapipropiunknown.md)
+- [IMAPIProp : IUnknown](imapipropiunknown.md)
 - [MAPI-Objekt und Übersicht über die Benutzeroberfläche](mapi-object-and-interface-overview.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Tabellenzeilen und-Spalten
+title: Anzeigen von Tabellenzeilen und-spalten
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791568"
 ---
-# <a name="displaying-table-rows-and-columns"></a>Anzeigen von Tabellenzeilen und-Spalten
+# <a name="displaying-table-rows-and-columns"></a>Anzeigen von Tabellenzeilen und-spalten
 
   
   
@@ -60,5 +60,5 @@ Die endgültige Tabelle enthält jedes Steuerelement mit dem Inhalt der zugeordn
 
 
 
-[Implementierung der Anzeige-Tabelle](display-table-implementation.md)
+[Anzeigen der Tabellenimplementierung](display-table-implementation.md)
 

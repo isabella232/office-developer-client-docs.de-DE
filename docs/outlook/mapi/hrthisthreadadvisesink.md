@@ -54,7 +54,7 @@ HrThisThreadAdviseSink(
 
 None.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Zweck des Wrappers ist dafür sorgen, dass die Benachrichtigung auf dem gleichen Thread aufgerufen wird, die die **HrThisThreadAdviseSink** -Funktion aufgerufen. Diese Funktion wird verwendet, um Benachrichtigung Rückrufe zu schützen, die für einen bestimmten Thread ausgeführt werden muss. 
   

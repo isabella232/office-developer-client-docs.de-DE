@@ -35,7 +35,7 @@ struct DNTBLE
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _cEntNew_
   
@@ -57,7 +57,7 @@ struct DNTBLE
 
 
 
-[Informationen zu den Replikationsstatus Computer](about-the-replication-state-machine.md)
+[Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
 [MAPI-Konstanten](mapi-constants.md)
   

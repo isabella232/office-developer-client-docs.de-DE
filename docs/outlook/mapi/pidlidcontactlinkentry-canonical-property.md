@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactLinkEntry-Eigenschaft
+title: PidLidContactLinkEntry (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793474"
 ---
-# <a name="pidlidcontactlinkentry-canonical-property"></a>Kanonische PidLidContactLinkEntry-Eigenschaft
+# <a name="pidlidcontactlinkentry-canonical-property"></a>PidLidContactLinkEntry (kanonische Eigenschaft)
 
   
   

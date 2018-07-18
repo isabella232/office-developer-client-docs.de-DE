@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidCompanies-Eigenschaft
+title: PidLidCompanies (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793489"
 ---
-# <a name="pidlidcompanies-canonical-property"></a>Kanonische PidLidCompanies-Eigenschaft
+# <a name="pidlidcompanies-canonical-property"></a>PidLidCompanies (kanonische Eigenschaft)
 
   
   

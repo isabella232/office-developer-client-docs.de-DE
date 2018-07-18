@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidAppointmentProposedStartWhole-Eigenschaft
+title: PidLidAppointmentProposedStartWhole (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793382"
 ---
-# <a name="pidlidappointmentproposedstartwhole-canonical-property"></a>Kanonische PidLidAppointmentProposedStartWhole-Eigenschaft
+# <a name="pidlidappointmentproposedstartwhole-canonical-property"></a>PidLidAppointmentProposedStartWhole (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den vorgeschlagenen Wert für **DispidApptStartWhole** ([PidLidAppointmentS
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   

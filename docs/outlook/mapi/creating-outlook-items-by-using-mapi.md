@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Outlook-Elementen mithilfe von MAPI
+title: Erstellen von Outlook-Elementen mit MAPI
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791491"
 ---
-# <a name="creating-outlook-items-by-using-mapi"></a>Erstellen von Outlook-Elementen mithilfe von MAPI
+# <a name="creating-outlook-items-by-using-mapi"></a>Erstellen von Outlook-Elementen mit MAPI
 
   
   
@@ -23,19 +23,19 @@ ms.locfileid: "19791491"
   
 In den Themen in diesem Abschnitt wird gezeigt, wie Outlook-Elementen per MAPI zu erstellen.
   
-- [Installieren Sie die Beispiele in diesem Abschnitt](how-to-install-the-samples-used-in-this-section.md)
+- [Installieren der in diesem Abschnitt verwendeten Beispiele](how-to-install-the-samples-used-in-this-section.md)
     
     In diesem Thema wird das Installieren und die Beispiele in diesem Abschnitt behandelten anzeigen.
     
-- [Erstellen Sie eine einfache E-Mail-Element](how-to-create-a-simple-mail-item.md)
+- [Erstellen eines einfachen E-Mail-Elements](how-to-create-a-simple-mail-item.md)
     
     In diesem Thema veranschaulicht, wie eine einfache e-Mail-Element zu erstellen, die eine lesebestätigung anfordert.
     
-- [Erstellen eines einfachen wiederkehrenden Aufgabe-Elements](how-to-create-a-simple-recurrent-task-item.md)
+- [Erstellen eines einfachen wiederkehrenden Aufgabenelements](how-to-create-a-simple-recurrent-task-item.md)
     
     In diesem Thema veranschaulicht, wie ein einfaches Aufgabenelement erstellen, die jede Woche auftritt.
     
-- [Erstellen Sie eine komplexe wiederkehrenden Terminelement](how-to-create-a-complex-recurrent-appointment-item.md)
+- [Erstellen eines komplexen Terminserienelements](how-to-create-a-complex-recurrent-appointment-item.md)
     
     In diesem Thema wird wie ein Weekly wiederkehrenden Terminelement erstellt, die auch in Erwägung Probleme im Zusammenhang mit Zeitzonen akzeptiert.
     

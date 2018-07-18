@@ -33,7 +33,7 @@ Die **OpenPopup** -Aktion enthält die folgenden Argumente.
 | *Wobei =*  <br/> |Eine gültige SQL WHERE-Klausel (ohne das Wort, in dem), die die Datensätze in der Ansicht beschränkt.  <br/> |
 | *Sortiert nach*  <br/> |Ein Zeichenfolgenausdruck, der den Namen des Felds oder der Felder, nach dem oder denen Datensätze sortiert werden sollen, sowie die optionalen ASC- oder DESC-Schlüsselwörter enthält. Standardmäßig ist dieses Argument leer.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das aktuelle Makro beendet, sobald die Aktion **OpenPopup** verarbeitet wird. 
   

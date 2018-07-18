@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792679"
 ---
-# <a name="imslogon--iunknown"></a>IMSLogon: IUnknown
+# <a name="imslogon--iunknown"></a>IMSLogon : IUnknown
 
   
   
@@ -48,7 +48,7 @@ Greift auf Ressourcen in einer Nachricht speichern Anmeldeobjekt.
 |[Heben Sie diesen Vorgang](imslogon-unadvise.md) <br/> |Entfernt ein Objekt Anmeldungsseite für Benachrichtigung über Message Store Änderungen, die zuvor durch einen Aufruf an die **IMSLogon::Advise** -Methode festgelegt.  <br/> |
 |[OpenStatusEntry](imslogon-openstatusentry.md) <br/> |Öffnet ein Statusobjekt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Message Store Anmeldung-Objekts ist der Teil einer geöffneten Nachricht Speicheranbieter, die MAPI direkt aufruft. Es gibt eine 1: 1-Beziehung zwischen Message Store Anmeldung-Objekts, die MAPI-Aufrufe und die Nachricht Objekt speichern, die Clientanwendungen aufrufen. Sie können vorstellen der Anmeldung und Speichern von Objekten als ein Objekt, das zwei Schnittstellen verfügbar macht. Die zwei Objekte werden zusammen und freigegebenen zusammen erstellt.
   

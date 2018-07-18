@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Die Option MAPI_UNICODE wurde festgelegt, und das Objekt "Message" Service Administration Unicode nicht unterstützt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin::GetLastError** -Methode ruft Informationen über den letzten Fehler, der durch einen Aufruf der Methode [IMsgServiceAdmin](imsgserviceadminiunknown.md) zurückgegeben wurde. Clients können die Benutzer mit ausführlichen Informationen zu dem Fehler bereitstellen, indem Sie diese Informationen in einem Dialogfeld einschließlich. 
   
@@ -81,5 +81,5 @@ Weitere Informationen über die **GetLastError** -Methode finden Sie unter [Erwe
   
 [MAPIFreeBuffer](mapifreebuffer.md)
   
-[IMsgServiceAdmin: IUnknown](imsgserviceadminiunknown.md)
+[IMsgServiceAdmin : IUnknown](imsgserviceadminiunknown.md)
 

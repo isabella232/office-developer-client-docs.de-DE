@@ -80,7 +80,7 @@ KEINE
   
 > Die Anzahl der Zeilen in der Tabelle ist größer als die Anzahl für den _CrowsMax_ -Parameter übergeben. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Eine Clientanwendung oder Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** versucht, abrufen, außer durch die Festlegung einer Einschränkung mit durch den Parameter _Pres_ gezeigt. Der Parameter _CrowsMax_ schränkt nicht das Abrufen auf eine bestimmte Anzahl von Zeilen der Tabelle, aber vielmehr definiert eine maximale Größe des Arbeitsspeichers zur Verfügung, die alle abgerufene Zeilen enthalten soll. Der einzige Schutz gegen Speicher Überlauf ist die stetig Funktion _CrowsMax_festlegen. Die Rendite der Fehler, die bedeutet, die Tabelle dass enthält zu viele Zeilen, die alle gleichzeitig im Speicher aufbewahrt werden. 
   

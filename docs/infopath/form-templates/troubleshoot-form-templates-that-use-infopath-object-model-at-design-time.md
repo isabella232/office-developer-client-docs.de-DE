@@ -7,7 +7,7 @@ keywords:
 - Entwurfszeit InfoPath 2003-kompatible Formularvorlagen, Problembehandlung zur Entwurfszeit, Problembehandlung von Formularvorlagen [InfoPath 2007]
 localization_priority: Normal
 ms.assetid: 4179b235-e21d-4c37-ae2b-ad01388296ec
-description: Die folgenden Abschnitte beschreiben allgemeine Problembehandlungsszenarien, die Sie beim Entwerfen und Debuggen von Formularvorlagen, die durch die Microsoft.Office.Interop.InfoPath.SemiTrust bereitgestellte InfoPath 2003-kompatible Objektmodell verwenden verwaltetem Code auftreten können Namespace.
+description: Die folgenden Abschnitte beschreiben allgemeine Problembehandlungsszenarien, die beim Entwerfen und Debuggen von Formularvorlagen mit verwaltetem Code auftreten können, die das vom Microsoft.Office.Interop.InfoPath.SemiTrust-Namespace bereitgestellte InfoPath 2003-kompatible Objektmodell verwenden.
 ms.openlocfilehash: af71c8058744561a4c8ee0870fb37054e9979751
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "19790839"
 ---
 # <a name="troubleshoot-form-templates-that-use-the-infopath-object-model-at-design-time"></a>Problembehandlung von Formularvorlagen, die das InfoPath-Objektmodell zur Entwurfszeit verwenden
 
-Die folgenden Abschnitte beschreiben allgemeine Problembehandlungsszenarien, die Sie beim Entwerfen und Debuggen von Formularvorlagen, die durch die **bereitgestellte InfoPath 2003-kompatible Objektmodell verwenden verwaltetem Code auftreten können Microsoft.Office.Interop.InfoPath.SemiTrust** Namespace. 
+Die folgenden Abschnitte beschreiben allgemeine Problembehandlungsszenarien, die beim Entwerfen und Debuggen von Formularvorlagen mit verwaltetem Code auftreten können, die das vom **Microsoft.Office.Interop.InfoPath.SemiTrust**-Namespace bereitgestellte InfoPath 2003-kompatible Objektmodell verwenden. 
   
 ## <a name="cannot-preview-or-debug-form-templates-that-use-calls-to-object-model-security-level-3-methods-and-properties"></a>Das Anzeigen der Vorschau oder Debuggen von Formularvorlagen, die Aufrufe der Methoden und Eigenschaften der Objektmodell-Sicherheitsebene 3 verwenden, ist nicht möglich
 
@@ -29,7 +29,7 @@ Wenn Sie einen Ereignishandler an ein Feld oder Gruppe hinzufügen und das Schem
   
 ## <a name="cannot-call-members-of-the-infopath-2003-compatible-object-model-on-a-separate-thread"></a>Member des InfoPath 2003-kompatiblen Objektmodells können nicht in einem getrennten Thread aufgerufen werden
 
-Das InfoPath 2003-kompatible Objektmodell unterstützt keine Aufrufe in einem getrennten Thread. Beispielsweise wird der folgende Code, der Ruft eine Funktion mit dem Namen LaunchOMFunction, die Mitglieder des InfoPath-Objektmodells aufruft, nicht ausgeführt. 
+Das InfoPath 2003-kompatible Objektmodell unterstützt keine Aufrufe in einem getrennten Thread. Der folgende Code beispielsweise, der die Funktion LaunchOMFunction aufruft, die wiederum Member des InfoPath-Objektmodells aufruft, wird nicht ausgeführt. 
   
 ```cs
 Thread th = new Thread(new ThreadStart(LaunchOMFunction));
@@ -47,6 +47,6 @@ Wenn ein InfoPath-Objektmodellmember einen optionalen Parameter enthält, und Si
 - [Informationen zum Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md)
 - [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md)
 - [Behandeln von Fehlern mit dem InfoPath 2003-Objektmodell](how-to-handle-errors-using-the-infopath-2003-object-model.md)
-- [Anzeigen der Vorschau und Debuggen von Formularvorlagen, die volle Vertrauenswürdigkeit erfordern](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
+- [Anzeigen einer Vorschau und Debuggen von Formularvorlagen, die vollständig vertrauenswürdig sein müssen](how-to-preview-and-debug-form-templates-that-require-full-trust.md)
 - [Debuggen von InfoPath-Projekten mit dem InfoPath 2003-Objektmodell](how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md)
 

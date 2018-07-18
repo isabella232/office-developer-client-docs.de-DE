@@ -85,7 +85,7 @@ MAPI_E_NOT_FOUND
   
 > Der Dienstname Nachricht ist nicht in der MapiSvc.inf im Abschnitt **[Services]** . 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMsgServiceAdmin2::CreateMsgServiceEx** -Methode wird das aktuelle Profil ein Messagingdiensts hinzugefügt. **CreateMsgServiceEx** Ruft die Messagingdiensts Eintrag Point-Funktion, um alle dienstspezifische Konfigurationsaufgaben ausführen. Wenn das Flag SERVICE_UI_ALLOWED im _UlFlags_ -Parameter festgelegt ist, kann der Message-Dienst installiert wird ein Eigenschaftenblatt durch den Benutzer zum Konfigurieren der Einstellungen anzeigen. 
   
@@ -109,7 +109,7 @@ Wenn Arguments _LpuidService_ **CreateMsgServiceEx** nicht NULL ist, wird die **
 
 
 
-[IMsgServiceAdmin2: IMsgServiceAdmin](imsgserviceadmin2imsgserviceadmin.md)
+[IMsgServiceAdmin2 : IMsgServiceAdmin](imsgserviceadmin2imsgserviceadmin.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

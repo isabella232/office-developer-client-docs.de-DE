@@ -72,7 +72,7 @@ S_OK
   
 > Der neue Eintrag wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IABContainer::CreateEntry** -Methode erstellt einen neuen Eintrag eines bestimmten Typs im angegebenen Container, einen Zeiger auf eine schnittstellenimplementierung für den weiteren Zugriff auf den Eintrag zurückgibt. Der neue Eintrag wird erstellt, mithilfe einer Vorlage, die aus dem Container-Liste der verfügbaren Vorlagen in der einmaligen Tabelle veröffentlicht ausgewählt wurde. Anrufer zum Öffnen des Containers einmaligen Tabelle Aufrufen seiner [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode und die Eigenschaft **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) anfordern. 
   
@@ -114,7 +114,7 @@ Obwohl doppelte Überprüfung Flags an **CreateEntry**als Parameter übergeben w
   
 [IMAPIProp::SaveChanges](imapiprop-savechanges.md)
   
-[Kanonische PidTagCreateTemplates-Eigenschaft](pidtagcreatetemplates-canonical-property.md)
+[PidTagCreateTemplates (kanonische Eigenschaft)](pidtagcreatetemplates-canonical-property.md)
   
-[IABContainer: IMAPIContainer](iabcontainerimapicontainer.md)
+[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md)
 

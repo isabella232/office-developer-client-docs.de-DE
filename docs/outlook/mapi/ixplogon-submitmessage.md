@@ -84,7 +84,7 @@ MAPI_E_WAIT
   
 > Ein vorübergehendes Problem wird verhindert, dass der Adressbuchhierarchie Behandlung der Nachricht. Der Parameter _LpulReturnParm_ sollte auf die Anzahl der Sekunden festgelegt werden, die verstreichen die MAPI-Warteschlange werden die Nachricht erneut übermittelt. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::SubmitMessage** -Methode auf, wenn es sich um eine Nachricht an der Adressbuchhierarchie übermittelt hat. Die Nachricht wird an der Adressbuchhierarchie übergeben, mit dem Parameter _LpMessage_ . 
   
@@ -128,5 +128,5 @@ Bei Fehlern, die aufgrund von Transport Probleme auftreten, die MAPI-Warteschlan
   
 [IXPLogon::TransportNotify](ixplogon-transportnotify.md)
   
-[IXPLogon: IUnknown](ixplogoniunknown.md)
+[IXPLogon : IUnknown](ixplogoniunknown.md)
 

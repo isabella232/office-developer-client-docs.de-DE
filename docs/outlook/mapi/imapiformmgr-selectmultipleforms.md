@@ -82,7 +82,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::SelectMultipleForms** -Methode zum ersten vorhanden ein Dialogfeld, mit dem den Benutzer mehrere Formulare auswählen kann, und klicken Sie dann Informationen zum Abrufen eines Arrays des Formulars Objekte, die die ausgewählten Formulare beschreiben. Das Dialogfeld **SelectMultipleForms** zeigt alle Formulare, unabhängig davon, ob sie ausgeblendet werden (d. h., ob ihre ausgeblendeten Eigenschaften deaktiviert sind). 
   
@@ -94,5 +94,5 @@ Wenn ein Formular Viewer die Option MAPI_UNICODE im Parameter _UlFlags_ übergib
 
 
 
-[IMAPIFormMgr: IUnknown](imapiformmgriunknown.md)
+[IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 

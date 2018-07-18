@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Eine oder beide als Parameter angegebenen Eintrag Bezeichner verweisen nicht auf gültige Objekte möglicherweise, da sie derzeit nicht geöffneten und nicht verfügbar sind.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::CompareEntryIDs** -Methode wird für Adresse Adressbuch und Nachricht Store Anbieter Unterstützungsobjekte implementiert. **CompareEntryIDs** vergleicht zwei Eintragsbezeichner, die mit einem einzelnen Dienstanbieter zu bestimmen, ob sie sich auf dasselbe Objekt verweisen gehören. MAPI extrahiert den [MAPIUID](mapiuid.md) Teil aus den Eintrag-IDs den Dienstanbieter verantwortlich für die Objekte zu bestimmen. MAPI ruft dann **die Anmeldung des Objekts-Eintragsbezeichner zum Durchführen des Vergleichs** . 
   

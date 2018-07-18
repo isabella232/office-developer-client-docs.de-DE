@@ -1,5 +1,5 @@
 ---
-title: Nachricht Eigenschaften (Übersicht)
+title: Übersicht über Nachrichteneigenschaften
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793264"
 ---
-# <a name="message-properties-overview"></a>Nachricht Eigenschaften (Übersicht)
+# <a name="message-properties-overview"></a>Übersicht über Nachrichteneigenschaften
 
   
   

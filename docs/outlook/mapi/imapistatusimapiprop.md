@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792342"
 ---
-# <a name="imapistatus--imapiprop"></a>IMAPIStatus: IMAPIProp
+# <a name="imapistatus--imapiprop"></a>IMAPIStatus : IMAPIProp
 
   
   
@@ -56,7 +56,7 @@ Enthält Statusinformationen zu MAPI-Subsystems, integrierte des Adressbuchs und
 |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Status, die von MAPI implementierte Objekte unterstützen die folgenden Methoden:
   

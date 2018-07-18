@@ -1,5 +1,5 @@
 ---
-title: Fixmapi.exe
+title: FixMAPI
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791681"
 ---
-# <a name="fixmapi"></a>Fixmapi.exe
+# <a name="fixmapi"></a>FixMAPI
 
   
   
@@ -41,7 +41,7 @@ Wenn die Funktion erfolgreich ist, ist der Rückgabewert ein Wert ungleich NULL.
   
 Wenn die Funktion fehlschlägt, ist der Rückgabewert 0 (null). Wenn Sie erweiterte Fehlerinformationen erhalten möchten, rufen Sie die Microsoft Windows Software Development Kit (SDK)-Funktion, **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)**. 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
  **Fixmapi.exe** ersetzt nicht die aktuelle Datei mapi32.dll, wenn die Datei als schreibgeschützt gekennzeichnet ist. 
   

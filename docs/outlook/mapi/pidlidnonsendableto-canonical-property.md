@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidNonSendableTo-Eigenschaft
+title: PidLidNonSendableTo (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793678"
 ---
-# <a name="pidlidnonsendableto-canonical-property"></a>Kanonische PidLidNonSendableTo-Eigenschaft
+# <a name="pidlidnonsendableto-canonical-property"></a>PidLidNonSendableTo (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält eine Liste aller senden Teilnehmer, die auch die erforderlichen Teilneh
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert für jeden Teilnehmer ist die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Adressbuchs des Teilnehmers. Separate Einträge müssen durch ein Semikolon, gefolgt von einem Leerzeichen getrennt sein. Diese Eigenschaft ist nicht erforderlich.
   

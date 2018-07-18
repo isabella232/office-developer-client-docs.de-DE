@@ -49,7 +49,7 @@ E_INVALIDARG
   
 > Die Nummer der _UlConnection_ -Parameter übergebenen stellt keine Registrierung ein gültiges dar. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Formular Viewer rufen Sie die **IMAPIForm::Unadvise** -Methode, um eine Registrierung für Benachrichtigung abzubrechen, das sie zuerst die **IMAPIForm::Advise** -Methode festgelegt. 
   
@@ -63,7 +63,7 @@ Verwerfen der Zeiger, den Sie zur Ansicht des Formulars-Viewers halten advise-Em
 
 [IMAPIForm::Advise](imapiform-advise.md)
   
-[IMAPIViewAdviseSink: IUnknown](imapiviewadvisesinkiunknown.md)
+[IMAPIViewAdviseSink : IUnknown](imapiviewadvisesinkiunknown.md)
   
-[IMAPIForm: IUnknown](imapiformiunknown.md)
+[IMAPIForm : IUnknown](imapiformiunknown.md)
 

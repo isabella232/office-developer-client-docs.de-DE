@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidEmail2EmailAddress-Eigenschaft
+title: PidLidEmail2EmailAddress (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793510"
 ---
-# <a name="pidlidemail2emailaddress-canonical-property"></a>Kanonische PidLidEmail2EmailAddress-Eigenschaft
+# <a name="pidlidemail2emailaddress-canonical-property"></a>PidLidEmail2EmailAddress (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt den zweiten e-Mail-Adresse des Kontakts an.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Wert dieser Eigenschaft muss entsprechenden für den Adresstyp für diese e-Mail-Adresse angegeben.
   

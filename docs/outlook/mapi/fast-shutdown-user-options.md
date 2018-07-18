@@ -76,6 +76,6 @@ Wenn ein MAPI-Client ein Schnelles Herunterfahren initiiert und **IMAPIClientShu
 ## <a name="see-also"></a>Siehe auch
 
 - [Herunterfahren von Clients in MAPI](client-shutdown-in-mapi.md)
-- [Schnelles Herunterfahren (Übersicht)](fast-shutdown-overview.md)
+- [Übersicht über das schnelle Herunterfahren](fast-shutdown-overview.md)
 - [Bewährte Methoden für das schnelle Herunterfahren](best-practices-for-fast-shutdown.md)
 

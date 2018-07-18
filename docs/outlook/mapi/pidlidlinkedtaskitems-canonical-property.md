@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidLinkedTaskItems-Eigenschaft
+title: PidLidLinkedTaskItems (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793646"
 ---
-# <a name="pidlidlinkedtaskitems-canonical-property"></a>Kanonische PidLidLinkedTaskItems-Eigenschaft
+# <a name="pidlidlinkedtaskitems-canonical-property"></a>PidLidLinkedTaskItems (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt eine Liste der Aufgaben, die im Zusammenhang mit dem Kalender-Eigenschaft *
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich.
   
@@ -61,7 +61,7 @@ Mapidefs.h
 
 
 
-[Kanonische-Eigenschaft PidTagEntryId](pidtagentryid-canonical-property.md)
+[PidTagEntryId (kanonische Eigenschaft)](pidtagentryid-canonical-property.md)
 
 
 [MAPI-Eigenschaften](mapi-properties.md)

@@ -34,7 +34,7 @@ Die **Dinge** -Funktion enthält die folgenden Argumente.
 | *Length*  <br/> |Eine ganze Zahl, die die Anzahl der zu löschenden Zeichen angibt. Wenn Length länger als die erste *IntoTextExpression* ist, erfolgt die Löschung bis zum letzten Zeichen in der letzten *IntoTextExpression* .  <br/> |
 | *ThisTextExpression*  <br/> |Hat einen Text-Ausdruck gibt den Text in *IntoTextExpression* einfügen. Dieser Ausdruck ersetzt Length Zeichen des *IntoTextExpression* , beginnend am *Starten* .  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn die Argumente *Start* oder *Length* negativ sind oder die Startposition größer als die Länge der ersten Zeichenfolge ist, wird eine leere Zeichenfolge zurückgegeben. Wenn die Startposition 0 ist, wird ein Nullwert zurückgegeben. Wenn die Länge zu löschenden länger als die erste Zeichenfolge ist, wird es auf das erste Zeichen in der ersten Zeichenfolge gelöscht. 
   

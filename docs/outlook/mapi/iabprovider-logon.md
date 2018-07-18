@@ -112,7 +112,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld Anmeldung abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Verbindungen sind mit jedem Adressbuchanbieter im Profil der Sitzung eingerichtet, wenn ein Client die [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md) -Methode aufruft. **OpenAddressBook** ruft dann des Anbieters **Logon** (Methode). 
   
@@ -152,5 +152,5 @@ Rückgabe MAPI_E_FAILONEPROVIDER, wenn ein Fehler auftritt, kann nicht schwerwie
   
 [MSGSERVICEENTRY](msgserviceentry.md)
   
-[IABProvider: IUnknown](iabprovideriunknown.md)
+[IABProvider : IUnknown](iabprovideriunknown.md)
 

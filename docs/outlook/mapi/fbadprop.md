@@ -55,7 +55,7 @@ FALSE
   
 > Die angegebene Eigenschaft ist gültig.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Ein Dienstanbieter kann für verschiedene Gründe, beispielsweise um einen Anruf an die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode eine Eigenschaft bei der Vorbereitung die **FBadProp** -Funktion aufrufen. **FBadProp** überprüft die angegebene Eigenschaft je nach den Eigenschaftentyp. Angenommen, wenn die Eigenschaft boolescher Wert ist, **FBadProp** , Sures, dass der Wert TRUE ist oder FALSE. Wenn die Eigenschaft binär ist, **FBadProp** überprüft den Zeiger und die Größe und stellt sicher, dass es korrekt zugeordnet wird. 
   

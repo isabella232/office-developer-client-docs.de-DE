@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792428"
 ---
-# <a name="imapisyncprogresscallbackprogress"></a>IMAPISyncProgressCallback::Progress
+# <a name="imapisyncprogresscallbackprogress"></a>IMAPISyncProgressCallback : IUnknown
 
   
   
@@ -59,5 +59,5 @@ S_OK
 
 
 
-[IMAPISyncProgressCallback: IUnknown](imapisyncprogresscallbackiunknown.md)
+[IMAPISyncProgressCallback : IUnknown](imapisyncprogresscallbackiunknown.md)
 

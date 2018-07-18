@@ -42,7 +42,7 @@ typedef struct
 } MAPIOFFLINE_NOTIFY;
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Elemente
 
  _ulSize_
   
@@ -82,7 +82,7 @@ typedef struct
     
    - MAPIOFFLINE_STATE_ONLINE
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Offline Zustand API unterstützt nur Benachrichtigungen für Online-/offline geändert wird. Ein Client muss überprüfen, dass Outlook die folgenden Werte zurückgibt, bevor Sie die eigentliche Änderung untersuchen:
   
@@ -94,7 +94,7 @@ Es ist möglich, dass Outlook einen Client weitere Änderungen darüber informie
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Offline State-API](about-the-offline-state-api.md)  
+- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)  
 - [MAPI-Konstanten](mapi-constants.md)  
 - [MAPIOFFLINE_NOTIFY_TYPE](mapioffline_notify_type.md)
 

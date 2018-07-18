@@ -1,5 +1,5 @@
 ---
-title: MAPI-Funktionen, Rückrufe und Makros
+title: MAPI-Funktionen, R�ckrufe und Makros
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793005"
 ---
-# <a name="mapi-functions-callbacks-and-macros"></a>MAPI-Funktionen, Rückrufe und Makros
+# <a name="mapi-functions-callbacks-and-macros"></a>MAPI-Funktionen, R�ckrufe und Makros
 
  
   
@@ -40,7 +40,7 @@ Die folgenden Einträge alphabetische enthalten Dokumentation für die MAPI-Funk
 |[FBadRglpszW](fbadrglpszw.md) <br/> |[FBadRow](fbadrow.md) <br/> |
 |[FBadRowSet](fbadrowset.md) <br/> |[FBadSortOrderSet](fbadsortorderset.md) <br/> |
 |[FBinFromHex](fbinfromhex.md) <br/> |[FEqualNames](fequalnames.md) <br/> |
-|[FGetComponentPath](fgetcomponentpath.md) <br/> |[Fixmapi.exe](fixmapi.md) <br/> |
+|[FGetComponentPath](fgetcomponentpath.md) <br/> |[FixMAPI](fixmapi.md) <br/> |
 |[FNIDLE](fnidle.md) <br/> |[FPropCompareProp](fpropcompareprop.md) <br/> |
 |[FPropContainsProp](fpropcontainsprop.md) <br/> |[FPropExists](fpropexists.md) <br/> |
 |[FreePadrlist](freepadrlist.md) <br/> |[FreeProws](freeprows.md) <br/> |
@@ -67,11 +67,11 @@ Die folgenden Einträge alphabetische enthalten Dokumentation für die MAPI-Funk
 |[HrThisThreadAdviseSink](hrthisthreadadvisesink.md) <br/> |[HrValidateIPMSubtree](hrvalidateipmsubtree.md) <br/> |
 |[IsBadBoundedStringPtr](isbadboundedstringptr.md) <br/> |[LAUNCHWIZARDENTRY](launchwizardentry.md) <br/> |
 |[LPFNBUTTON](lpfnbutton.md) <br/> |[LPropCompareProp](lpropcompareprop.md) <br/> |
-|[LpValFindProp](lpvalfindprop.md) <br/> |["MAPIAdminProfiles"](mapiadminprofiles.md) <br/> |
+|[LpValFindProp](lpvalfindprop.md) <br/> |[MAPIAdminProfiles](mapiadminprofiles.md) <br/> |
 |[MAPIAllocateBuffer](mapiallocatebuffer.md) <br/> |[MAPIAllocateMore](mapiallocatemore.md) <br/> |
 |[MAPICrashRecovery](mapicrashrecovery.md) <br/> |[MAPIDeInitIdle](mapideinitidle.md) <br/> |
 |[MAPIFreeBuffer](mapifreebuffer.md) <br/> |[MAPIGetDefaultMalloc](mapigetdefaultmalloc.md) <br/> |
-|["MAPIInitialize"](mapiinitialize.md) <br/> |[MAPIInitIdle](mapiinitidle.md) <br/> |
+|[MAPIInitialize](mapiinitialize.md) <br/> |[MAPIInitIdle](mapiinitidle.md) <br/> |
 |[MAPILogonEx](mapilogonex.md) <br/> |[MAPIOFFLINE_AGGREGATEINFO](mapioffline_aggregateinfo.md) <br/> |
 |[MAPIOFFLINE_CREATEINFO](mapioffline_createinfo.md) <br/> |[MAPIOpenFormMgr](mapiopenformmgr.md) <br/> |
 |[MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md) <br/> |[MAPIReallocateBuffer](mapireallocatebuffer.md) <br/> |
@@ -83,8 +83,8 @@ Die folgenden Einträge alphabetische enthalten Dokumentation für die MAPI-Funk
 |[MSGSERVICEENTRY](msgserviceentry.md) <br/> |[MSProviderInit](msproviderinit.md) <br/> |
 |[NOTIFCALLBACK](notifcallback.md) <br/> |[NSTServiceEntry](nstserviceentry.md) <br/> |
 |[OpenIMsgOnIStg](openimsgonistg.md) <br/> |[OpenIMsgSession](openimsgsession.md) <br/> |
-|[OpenStreamOnFile nicht ausgeführt werden](openstreamonfile.md) <br/> |[OpenStreamOnFileW](openstreamonfilew.md) <br/> |
-|[OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) <br/> |[OpenTnefStreamEx](opentnefstreamex.md) <br/> |
+|[OpenStreamOnFile](openstreamonfile.md) <br/> |[OpenStreamOnFileW](openstreamonfilew.md) <br/> |
+|[OpenTnefStream](opentnefstream.md) <br/> |[OpenTnefStreamEx](opentnefstreamex.md) <br/> |
 |[PpropFindProp](ppropfindprop.md) <br/> |[PreprocessMessage](preprocessmessage.md) <br/> |
 |[PropCopyMore](propcopymore.md) <br/> |[RemovePreprocessInfo](removepreprocessinfo.md) <br/> |
 |[RTFSync](rtfsync.md) <br/> |[ScBinFromHexBounded](scbinfromhexbounded.md) <br/> |

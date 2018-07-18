@@ -41,5 +41,5 @@ Bevor Sie beginnen, dem Schreiben von Code, um Ihre Nachrichtendienst zu unterst
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Nachricht Service-Implementierung](message-service-implementation.md)
+- [Nachrichtendienstimplementierung](message-service-implementation.md)
 

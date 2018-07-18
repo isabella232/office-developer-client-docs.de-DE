@@ -1,5 +1,5 @@
 ---
-title: Interaktion mit der MAPI-Warteschlange
+title: Interaktion mit dem MAPI-Spooler
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792692"
 ---
-# <a name="interacting-with-the-mapi-spooler"></a>Interaktion mit der MAPI-Warteschlange
+# <a name="interacting-with-the-mapi-spooler"></a>Interaktion mit dem MAPI-Spooler
 
   
   

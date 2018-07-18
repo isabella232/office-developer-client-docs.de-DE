@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791968"
 ---
-# <a name="iablogongetoneofftable"></a>GetOneOffTable
+# <a name="iablogongetoneofftable"></a>IABLogon::GetOneOffTable
 
   
   
@@ -62,7 +62,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Adressbuchanbieter nicht einmal-Vorlagen zur Verfügung.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Aufrufen die **GetOneOffTable** -Methode, um die verfügbare einmalige Vorlagen zum Erstellen von Empfängern tätigen. Die Empfängerliste von ausgehenden Nachrichten werden die neuen Empfänger hinzugefügt. Von adressbuchanbietern implementierte sollte Benachrichtigung auf ihre einmaligen Tabelle um MAPI Vorlage Änderungen informieren zu unterstützen. MAPI bleibt die einmalige Tabelle geöffnet, um dynamische Aktualisieren zu aktivieren. 
   
@@ -80,5 +80,5 @@ Eine Übersicht über die erforderlichen Spalten in einer Adressbuchanbieter ein
   
 [IMAPISupport::GetOneOffTable](imapisupport-getoneofftable.md)
   
-[IABLogon: IUnknown](iablogoniunknown.md)
+[IABLogon : IUnknown](iablogoniunknown.md)
 

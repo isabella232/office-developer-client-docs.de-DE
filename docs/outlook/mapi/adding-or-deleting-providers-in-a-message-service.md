@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen oder Löschen von Anbietern in einem Message-Dienst
+title: Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791266"
 ---
-# <a name="adding-or-deleting-providers-in-a-message-service"></a>Hinzufügen oder Löschen von Anbietern in einem Message-Dienst
+# <a name="adding-or-deleting-providers-in-a-message-service"></a>Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst
 
   
   

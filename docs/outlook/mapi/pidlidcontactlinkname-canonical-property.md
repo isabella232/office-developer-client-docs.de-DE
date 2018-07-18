@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidContactLinkName-Eigenschaft
+title: PidLidContactLinkName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793483"
 ---
-# <a name="pidlidcontactlinkname-canonical-property"></a>Kanonische PidLidContactLinkName-Eigenschaft
+# <a name="pidlidcontactlinkname-canonical-property"></a>PidLidContactLinkName (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Enthält die Elemente der **DispidContacts** ([PidLidContacts](pidlidcontacts-ca
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Elemente in der **DispidContactLinkName** -Eigenschaft durch ein Semikolon und ein Leerzeichen getrennt sind (";"). 
   

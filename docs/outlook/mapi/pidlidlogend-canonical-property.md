@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidLogEnd-Eigenschaft
+title: PidLidLogEnd (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793658"
 ---
-# <a name="pidlidlogend-canonical-property"></a>Kanonische PidLidLogEnd-Eigenschaft
+# <a name="pidlidlogend-canonical-property"></a>PidLidLogEnd (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Stellt das Enddatum und die Uhrzeit für die Journalnachricht.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Der Zeitpunkt, wann die Aktivität in koordinierter Weltzeit The (UTC), beendet der **DispidCommonEnd** ([PidLidCommonEnd](pidlidcommonend-canonical-property.md))-Eigenschaft gleich und größer als oder gleich **DispidLogStart** ([PidLidLogStart](pidlidlogstart-canonical-property.md))-Eigenschaft sein muss.
   

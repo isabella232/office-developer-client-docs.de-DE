@@ -21,7 +21,7 @@ ms.locfileid: "19793057"
   
 Ein Eigenschaftentag ist eine 32-Bit-Zahl mit dem eindeutigen Bezeichner für eine in Bits 16 bis 31 und einen Eigenschaftentyp in Bits 0 bis 15, wie in der folgenden Abbildung dargestellt. 
   
-**Eigenschaftentags**
+**Eigenschafts-Tag-Elemente**
   
 ![Eigenschaftentags] (media/amapi_10.gif "Eigenschaftentags")
   
@@ -33,5 +33,5 @@ Einige Makros stehen zum Eigenschaftentags zwischen diesen [PROP_TYPE](prop_type
   
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md)
+- [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md)
 

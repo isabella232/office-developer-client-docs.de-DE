@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidCategories-Eigenschaft
+title: PidLidCategories (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793463"
 ---
-# <a name="pidlidcategories-canonical-property"></a>Kanonische PidLidCategories-Eigenschaft
+# <a name="pidlidcategories-canonical-property"></a>PidLidCategories (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt eine Liste der Kategorien für ein Element.
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Um ein Kopfzeilenfeld Schlüsselwörter generiert werden soll, müssen die Clients den Wert dieser Eigenschaft auf die gewünschten Werte festgelegt. Diese Eigenschaft hat mehrere Zeichenfolgen. jeder Kategorie sollte zu einem einzelnen Stichwort zugeordnet werden.
   

@@ -1,5 +1,5 @@
 ---
-title: Implementieren einer einmaligen Anbieter-Tabelle
+title: Implementieren einer Anbieter-Einmaltabelle
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792546"
 ---
-# <a name="implementing-a-provider-one-off-table"></a>Implementieren einer einmaligen Anbieter-Tabelle
+# <a name="implementing-a-provider-one-off-table"></a>Implementieren einer Anbieter-Einmaltabelle
 
   
   

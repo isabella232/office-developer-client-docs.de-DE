@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidMeetingWorkspaceUrl-Eigenschaft
+title: PidLidMeetingWorkspaceUrl (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793666"
 ---
-# <a name="pidlidmeetingworkspaceurl-canonical-property"></a>Kanonische PidLidMeetingWorkspaceUrl-Eigenschaft
+# <a name="pidlidmeetingworkspaceurl-canonical-property"></a>PidLidMeetingWorkspaceUrl (kanonische Eigenschaft)
 
   
   
@@ -35,7 +35,7 @@ Gibt die URL der Besprechungsarbeitsbereich, der ein Calendar-Objekt zugeordnet 
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Diese Eigenschaft ist nicht erforderlich.
   

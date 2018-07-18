@@ -40,7 +40,7 @@ HRESULT Placeholder4(
 
 Immer unterstützt S_OK zurück, da dies ist ein Platzhalter und wird nicht.
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Dieser Member muss S_OK zurück.
   

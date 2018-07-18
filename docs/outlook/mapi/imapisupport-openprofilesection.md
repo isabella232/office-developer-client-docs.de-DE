@@ -75,7 +75,7 @@ MAPI_E_UNKNOWN_FLAGS
   
 > Reservierte oder nicht unterstützte Flags verwendet wurden und daher der Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPISupport::OpenProfileSection** -Methode wird für alle Unterstützungsobjekte implementiert. Rufen **"OpenProfileSection"** zum Öffnen eines Abschnitts Profil und Abrufen eines Zeigers auf seine Implementierung **IProfSect** Dienstanbieter und Message-Dienste. 
   
@@ -89,9 +89,9 @@ Wenn **"OpenProfileSection"** versucht, einen nicht vorhandenen Profilabschnitt 
 
 
 
-[IMAPIProp: IUnknown](imapipropiunknown.md)
+[IMAPIProp : IUnknown](imapipropiunknown.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIUID](mapiuid.md)
   

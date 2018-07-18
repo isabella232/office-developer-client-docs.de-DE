@@ -1,5 +1,5 @@
 ---
-title: Über die Frei/Gebucht-API
+title: Informationen zur Frei/Gebucht-API
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -14,7 +14,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790923"
 ---
-# <a name="about-the-freebusy-api"></a>Über die Frei/Gebucht-API
+# <a name="about-the-freebusy-api"></a>Informationen zur Frei/Gebucht-API
 
 Die Frei/Gebucht-API ermöglicht es e-Mail-Anbieter für Frei-/Gebucht-Status Informationen für den angegebenen Benutzerkonten innerhalb eines angegebenen Zeitraums. Der Frei/Gebucht-Status eines Textblocks Kalender des Benutzers ist einer der folgenden: Abwesenheits, gebucht, mit Vorbehalt oder frei.
   

@@ -1,5 +1,5 @@
 ---
-title: Starten ein Formular zum Lesen einer Nachricht
+title: Starten eines Formulars zum Lesen einer Nachricht
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792895"
 ---
-# <a name="launching-a-form-to-read-a-message"></a>Starten ein Formular zum Lesen einer Nachricht
+# <a name="launching-a-form-to-read-a-message"></a>Starten eines Formulars zum Lesen einer Nachricht
 
   
   
@@ -37,5 +37,5 @@ Formular Server Implementierer erwarten, die folgende Sequenz von Methode Anrufe
 
 
 
-[Formular Server Interaktionen](form-server-interactions.md)
+[Formularserverinteraktionen](form-server-interactions.md)
 

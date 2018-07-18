@@ -74,7 +74,7 @@ MAPI_E_NOT_FOUND
   
 > Die Zeile, die vom _PbInstanceKey_ -Parameter ist nicht vorhanden. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IMAPITable::ExpandRow** -Methode erweitert eine reduzierte Tabellenkategorie, Hinzufügen von Endknoten oder auf niedrigerer Ebene Überschriftenzeilen, die die Tabelle-Ansicht der Kategorie angehören. Beschränkt die Anzahl der Zeilen im _LppRows_ -Parameter zurückgegeben werden soll, kann in der _UlRowCount_ -Parameter angegeben werden. Wenn _UlRowCount_ auf einen Wert größer als 0 (null) festgelegt wird, und eine oder mehrere Zeilen in der Zeile auf den _LppRows_zurückgegeben werden, legen Sie die Position der Textmarke, die bookmark_current in die Zeile unmittelbar nach der letzten Zeile in der Zeile verschoben wird.
   
@@ -106,7 +106,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 
 [IMAPITable::CollapseRow](imapitable-collapserow.md)
   
-[IMAPITable: IUnknown](imapitableiunknown.md)
+[IMAPITable : IUnknown](imapitableiunknown.md)
 
 
 [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)

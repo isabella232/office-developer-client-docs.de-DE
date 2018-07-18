@@ -85,7 +85,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit dem **IProfAdmin::CopyProfile** -Methode wird eine Kopie des Profils, auf die _LpszOldProfileName_, unter dem Namen mit _LpszNewProfileName_gezeigt. Kopieren eines Profils bewirkt, dass die Kopie mit das gleiche Kennwort wie das Original.
   
@@ -103,5 +103,5 @@ Wenn _LpszOldPassword_ auf NULL festgelegt ist, das Profil zu kopierenden erford
 
 
 
-[IProfAdmin: IUnknown](iprofadminiunknown.md)
+[IProfAdmin : IUnknown](iprofadminiunknown.md)
 

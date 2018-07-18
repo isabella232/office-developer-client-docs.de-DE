@@ -25,7 +25,7 @@ Gibt den aktuellen Wert für Datum und Uhrzeit in der Zeitzone, die von der Anwe
 
  **Jetzt** () 
   
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Das Ergebnis des **jetzt** Funktion ändert sich nur, wenn die Spalte mit der Formel aktualisiert werden sollen. Es wird nicht ständig aktualisiert. 
   

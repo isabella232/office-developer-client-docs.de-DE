@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidEmail1DisplayName-Eigenschaft
+title: PidLidEmail1DisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793500"
 ---
-# <a name="pidlidemail1displayname-canonical-property"></a>Kanonische PidLidEmail1DisplayName-Eigenschaft
+# <a name="pidlidemail1displayname-canonical-property"></a>PidLidEmail1DisplayName (kanonische Eigenschaft)
 
   
   

@@ -1,5 +1,5 @@
 ---
-title: Formular Konfigurationsabschnitt Datei [Verben]
+title: Abschnitt [Verbs] in der Formularkonfigurationsdatei
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791720"
 ---
-# <a name="form-configuration-file-verbs-section"></a>Formular Konfigurationsabschnitt Datei [Verben]
+# <a name="form-configuration-file-verbs-section"></a>Abschnitt [Verbs] in der Formularkonfigurationsdatei
 
   
   

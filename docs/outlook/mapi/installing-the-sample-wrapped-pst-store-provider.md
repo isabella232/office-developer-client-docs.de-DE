@@ -1,5 +1,5 @@
 ---
-title: Installieren des Beispiels umfließendem PST-Anbieter
+title: Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -13,7 +13,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792696"
 ---
-# <a name="installing-the-sample-wrapped-pst-store-provider"></a>Installieren des Beispiels umfließendem PST-Anbieter
+# <a name="installing-the-sample-wrapped-pst-store-provider"></a>Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher
 
   
   
@@ -29,7 +29,7 @@ In diesem Thema führt Sie durch die Schritte zum Herunterladen und Installieren
     
 3. Klicken Sie auf **Durchsuchen**, markieren Sie den Speicherort, in dem Sie das Beispiel zu speichern möchten, und klicken Sie auf **OK**.
     
-4. Klicken Sie auf **extrahieren**. Der Ordner gewählte angezeigt wird und die extrahierten Dateien enthält.
+4. Klicken Sie auf **Extract**. Der Ordner gewählte angezeigt wird und die extrahierten Dateien enthält.
     
 5. Öffnen Sie Visual Studio 2005 als Administrator an.
     
@@ -52,13 +52,13 @@ In diesem Thema führt Sie durch die Schritte zum Herunterladen und Installieren
 
 
 
-[Zum Beispiel umgebrochen PST-Anbieter](about-the-sample-wrapped-pst-store-provider.md)
+[Informationen über das Beispiel für einen Anbieter von umschlossenem PST-Speicher](about-the-sample-wrapped-pst-store-provider.md)
   
-[Initialisieren einen Anbieter für umbrochenen PST anmelden](initializing-a-wrapped-pst-store-provider.md)
+[Initialisieren eines Anbieters von umschlossenem PST-Speicher](initializing-a-wrapped-pst-store-provider.md)
   
-[Anmelden bei einem Anbieter gepackten PST-Datei](logging-on-to-a-wrapped-pst-store-provider.md)
+[Anmelden bei einem Anbieter von umschlossenem PST-Speicher](logging-on-to-a-wrapped-pst-store-provider.md)
   
-[Verwenden eines Anbieters gepackten PST-Speichers](using-a-wrapped-pst-store-provider.md)
+[Verwenden eines Anbieters von umschlossenem PST-Speicher](using-a-wrapped-pst-store-provider.md)
   
-[Herunterfahren von einem Anbieter gepackten PST-Datei](shutting-down-a-wrapped-pst-store-provider.md)
+[Herunterfahren eines Anbieters von umschlossenem PST-Speicher](shutting-down-a-wrapped-pst-store-provider.md)
 

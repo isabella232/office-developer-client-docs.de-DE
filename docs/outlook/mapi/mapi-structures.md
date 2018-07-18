@@ -28,7 +28,7 @@ Die folgenden Einträge alphabetisch sortierte werden MAPI-Strukturen beschriebe
 |||
 |:-----|:-----|
 |[ADRENTRY](adrentry.md) <br/> |[ADRLIST](adrlist.md) <br/> |
-|[ADRPARM](adrparm.md) <br/> |[WÄHRUNG](currency.md) <br/> |
+|[ADRPARM](adrparm.md) <br/> |[CURRENCY](currency.md) <br/> |
 |[CONTAB_ENTRYID](contab_entryid.md) <br/> |[DIR_ENTRYID](dir_entryid.md) <br/> |
 |[DTBLBUTTON](dtblbutton.md) <br/> |[DTBLCHECKBOX](dtblcheckbox.md) <br/> |
 |[DTBLCOMBOBOX](dtblcombobox.md) <br/> |[DTBLDDLBX](dtblddlbx.md) <br/> |
@@ -65,7 +65,7 @@ Die folgenden Einträge alphabetisch sortierte werden MAPI-Strukturen beschriebe
 |[SPropProblem](spropproblem.md) <br/> |[SPropProblemArray](spropproblemarray.md) <br/> |
 |[SPropTagArray](sproptagarray.md) <br/> |[SPropValue](spropvalue.md) <br/> |
 |[SRealArray](srealarray.md) <br/> |[SRestriction](srestriction.md) <br/> |
-|[' Srow '](srow.md) <br/> |[' Srowset '](srowset.md) <br/> |
+|[SRow](srow.md) <br/> |[SRowSet](srowset.md) <br/> |
 |[SShortArray](sshortarray.md) <br/> |[SSizeRestriction](ssizerestriction.md) <br/> |
 |[SSortOrder](ssortorder.md) <br/> |[SSortOrderSet](ssortorderset.md) <br/> |
 |[SSubRestriction](ssubrestriction.md) <br/> |[STATUS_OBJECT_NOTIFICATION](status_object_notification.md) <br/> |

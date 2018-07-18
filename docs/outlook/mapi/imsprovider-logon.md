@@ -152,7 +152,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md). Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 MAPI-Aufrufen die **IMSProvider::Logon** -Methode dazu die Mehrzahl der Verarbeitung erforderlich sind, um Zugriff auf einen Nachrichtenspeicher zu erhalten. Nachricht Anbieter Überprüfen von Anmeldeinformationen erforderlich sind, um Zugriff auf einen bestimmten Speicher und ein Message Store-Objekt zurückzugeben, der _LppMDB_ -Parameter, der die MAPI-Warteschlange und Clientanwendungen anmelden können. 
   
@@ -236,11 +236,11 @@ Wenn ein Anbieter von dessen Anmeldung MAPI_E_UNCONFIGURED zurückgibt, wird MAP
   
 [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md)
   
-[IProfSect: IMAPIProp](iprofsectimapiprop.md)
+[IProfSect : IMAPIProp](iprofsectimapiprop.md)
   
 [MAPIERROR](mapierror.md)
   
 [MSProviderInit](msproviderinit.md)
   
-[IMSProvider: IUnknown](imsprovideriunknown.md)
+[IMSProvider : IUnknown](imsprovideriunknown.md)
 

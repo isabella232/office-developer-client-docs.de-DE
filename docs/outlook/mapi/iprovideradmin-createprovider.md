@@ -76,7 +76,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die **IProviderAdmin::CreateProvider** -Methode hinzugefügt der Messagingdiensts einen Dienstanbieter. Der Parameter _LpszProvider_ muss auf den Namen eines Anbieters zeigen, die den Dienst gehört. **CreateProvider** überprüft nicht, ob der Name des Anbieters in den Dienst mit dem Namen übereinstimmt; Wenn der übergebene Name den Namen eines Dienstes nicht übereinstimmt, der Aufruf erfolgreich ist, aber sind die Ergebnisse unvorhersehbar. Die meisten Message-Dienste können nicht Anbieter hinzugefügt oder gelöscht werden, während das Profil verwendet wird. 
   
@@ -87,5 +87,5 @@ Nachdem alle verfügbaren Informationen über den Dienst wurde Anbieter hinzugef
 - [MAPIUID](mapiuid.md)  
 - [MSGSERVICEENTRY](msgserviceentry.md)  
 - [SPropValue](spropvalue.md)  
-- [IProviderAdmin: IUnknown](iprovideradminiunknown.md)
+- [IProviderAdmin : IUnknown](iprovideradminiunknown.md)
 
