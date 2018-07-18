@@ -15,17 +15,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792565"
 ---
-# <a name="implementing-messages-in-message-stores"></a><span data-ttu-id="6d6d2-103">Implementieren von Nachrichten in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="6d6d2-103">Implementing Messages in Message Stores</span></span>
+# <a name="implementing-messages-in-message-stores"></a><span data-ttu-id="6e8e5-103">Implementieren von Nachrichten in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="6e8e5-103">Implementing Messages in Message Stores</span></span>
 
   
   
-<span data-ttu-id="6d6d2-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6d6d2-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="6e8e5-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6e8e5-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="6d6d2-p101">The [IMessage: IMAPIProp](imessageimapiprop.md) interface is similar to the [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) interface in that both interfaces derive from the [IMAPIProp: IUnknown](imapipropiunknown.md) interface. Clients use the **IMAPIProp** methods to access the contents of a message. The **IMessage** interface supplies additional methods for manipulating messages (for example, adding attachments or modifying the recipients of a message). The methods in the **IMessage** interface modify attributes of messages that are not stored directly in the message's properties.</span><span class="sxs-lookup"><span data-stu-id="6d6d2-p101">The [IMessage : IMAPIProp](imessageimapiprop.md) interface is similar to the [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md) interface in that both interfaces derive from the [IMAPIProp : IUnknown](imapipropiunknown.md) interface. Clients use the **IMAPIProp** methods to access the contents of a message. The **IMessage** interface supplies additional methods for manipulating messages (for example, adding attachments or modifying the recipients of a message). The methods in the **IMessage** interface modify attributes of messages that are not stored directly in the message's properties.</span></span> 
+<span data-ttu-id="6e8e5-p101">The [IMessage: IMAPIProp](imessageimapiprop.md) interface is similar to the [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) interface in that both interfaces derive from the [IMAPIProp: IUnknown](imapipropiunknown.md) interface. Clients use the **IMAPIProp** methods to access the contents of a message. The **IMessage** interface supplies additional methods for manipulating messages (for example, adding attachments or modifying the recipients of a message). The methods in the **IMessage** interface modify attributes of messages that are not stored directly in the message's properties.</span><span class="sxs-lookup"><span data-stu-id="6e8e5-p101">The [IMessage : IMAPIProp](imessageimapiprop.md) interface is similar to the [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md) interface in that both interfaces derive from the [IMAPIProp : IUnknown](imapipropiunknown.md) interface. Clients use the **IMAPIProp** methods to access the contents of a message. The **IMessage** interface supplies additional methods for manipulating messages (for example, adding attachments or modifying the recipients of a message). The methods in the **IMessage** interface modify attributes of messages that are not stored directly in the message's properties.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="6d6d2-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6d6d2-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6e8e5-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6e8e5-109">See also</span></span>
 
 
 
-[<span data-ttu-id="6d6d2-110">Nachrichtenspeicher-Features</span><span class="sxs-lookup"><span data-stu-id="6d6d2-110">Message Store Features</span></span>](message-store-features.md)
+[<span data-ttu-id="6e8e5-110">Nachrichtenspeicher-Features</span><span class="sxs-lookup"><span data-stu-id="6e8e5-110">Message Store Features</span></span>](message-store-features.md)
 

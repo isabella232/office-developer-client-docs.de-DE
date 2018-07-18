@@ -14,30 +14,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790325"
 ---
-# <a name="not-access-custom-web-app"></a><span data-ttu-id="34ce1-103">KEINE (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="34ce1-103">NOT (Access custom web app)</span></span>
+# <a name="not-access-custom-web-app"></a><span data-ttu-id="5f455-103">KEINE (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="5f455-103">NOT (Access custom web app)</span></span>
 
-<span data-ttu-id="34ce1-104">Negiert eine boolesche Eingabe.</span><span class="sxs-lookup"><span data-stu-id="34ce1-104">Negates a Boolean input.</span></span>
+<span data-ttu-id="5f455-104">Negiert eine boolesche Eingabe.</span><span class="sxs-lookup"><span data-stu-id="5f455-104">Negates a Boolean input.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="34ce1-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="34ce1-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="5f455-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="5f455-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="34ce1-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="34ce1-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5f455-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="5f455-107">Syntax</span></span>
 
-<span data-ttu-id="34ce1-108">[ **Nicht** ]  *Boolescher Ausdruck*</span><span class="sxs-lookup"><span data-stu-id="34ce1-108">[ **Not** ]  *BooleanExpression*</span></span> 
+<span data-ttu-id="5f455-108">[ **Nicht** ]  *Boolescher Ausdruck*</span><span class="sxs-lookup"><span data-stu-id="5f455-108">[ **Not** ]  *BooleanExpression*</span></span> 
   
-<span data-ttu-id="34ce1-109">Der Operator **Not** enthält die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="34ce1-109">The **Not** operator contains the following arguments.</span></span> 
+<span data-ttu-id="5f455-109">Der Operator **Not** enthält die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="5f455-109">The **Not** operator contains the following arguments.</span></span> 
   
-|<span data-ttu-id="34ce1-110">**Argumentname**</span><span class="sxs-lookup"><span data-stu-id="34ce1-110">**Argument name**</span></span>|<span data-ttu-id="34ce1-111">**Description**</span><span class="sxs-lookup"><span data-stu-id="34ce1-111">**Description**</span></span>|
+|<span data-ttu-id="5f455-110">**Argumentname**</span><span class="sxs-lookup"><span data-stu-id="5f455-110">**Argument name**</span></span>|<span data-ttu-id="5f455-111">**Description**</span><span class="sxs-lookup"><span data-stu-id="5f455-111">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="34ce1-112">*Boolescher Ausdruck*</span><span class="sxs-lookup"><span data-stu-id="34ce1-112">*BooleanExpression*</span></span>  <br/> |<span data-ttu-id="34ce1-113">Ein gültiger boolescher Ausdruck.</span><span class="sxs-lookup"><span data-stu-id="34ce1-113">A valid Boolean expression.</span></span>  <br/> |
+| <span data-ttu-id="5f455-112">*Boolescher Ausdruck*</span><span class="sxs-lookup"><span data-stu-id="5f455-112">*BooleanExpression*</span></span>  <br/> |<span data-ttu-id="5f455-113">Ein gültiger boolescher Ausdruck.</span><span class="sxs-lookup"><span data-stu-id="5f455-113">A valid Boolean expression.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="34ce1-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="34ce1-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5f455-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5f455-114">Remarks</span></span>
 
-<span data-ttu-id="34ce1-115">Die folgende Tabelle zeigt die Ergebnisse des Vergleichs TRUE und FALSE Werte mithilfe des Operators **Not** .</span><span class="sxs-lookup"><span data-stu-id="34ce1-115">The following table shows the results of comparing TRUE and FALSE values using the **Not** operator.</span></span> 
+<span data-ttu-id="5f455-115">Die folgende Tabelle zeigt die Ergebnisse des Vergleichs TRUE und FALSE Werte mithilfe des Operators **Not** .</span><span class="sxs-lookup"><span data-stu-id="5f455-115">The following table shows the results of comparing TRUE and FALSE values using the **Not** operator.</span></span> 
   
-||<span data-ttu-id="34ce1-116">**not**</span><span class="sxs-lookup"><span data-stu-id="34ce1-116">**Not**</span></span>|
+||<span data-ttu-id="5f455-116">**not**</span><span class="sxs-lookup"><span data-stu-id="5f455-116">**Not**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="34ce1-117">**"TRUE"**</span><span class="sxs-lookup"><span data-stu-id="34ce1-117">**TRUE**</span></span> <br/> |<span data-ttu-id="34ce1-118">False</span><span class="sxs-lookup"><span data-stu-id="34ce1-118">False</span></span>  <br/> |
-|<span data-ttu-id="34ce1-119">**"FALSE"**</span><span class="sxs-lookup"><span data-stu-id="34ce1-119">**FALSE**</span></span> <br/> |<span data-ttu-id="34ce1-120">True</span><span class="sxs-lookup"><span data-stu-id="34ce1-120">True</span></span>  <br/> |
+|<span data-ttu-id="5f455-117">**"TRUE"**</span><span class="sxs-lookup"><span data-stu-id="5f455-117">**TRUE**</span></span> <br/> |<span data-ttu-id="5f455-118">False</span><span class="sxs-lookup"><span data-stu-id="5f455-118">False</span></span>  <br/> |
+|<span data-ttu-id="5f455-119">**"FALSE"**</span><span class="sxs-lookup"><span data-stu-id="5f455-119">**FALSE**</span></span> <br/> |<span data-ttu-id="5f455-120">True</span><span class="sxs-lookup"><span data-stu-id="5f455-120">True</span></span>  <br/> |
    
 

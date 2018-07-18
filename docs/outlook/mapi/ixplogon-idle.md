@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792876"
 ---
-# <a name="ixplogonidle"></a><span data-ttu-id="b4b0b-103">IXPLogon::Idle</span><span class="sxs-lookup"><span data-stu-id="b4b0b-103">IXPLogon::Idle</span></span>
+# <a name="ixplogonidle"></a><span data-ttu-id="03ff6-103">IXPLogon::Idle</span><span class="sxs-lookup"><span data-stu-id="03ff6-103">IXPLogon::Idle</span></span>
 
   
   
-<span data-ttu-id="b4b0b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="b4b0b-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="03ff6-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="03ff6-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="b4b0b-105">Gibt an, dass das System im Leerlauf, der Adressbuchhierarchie niedriger Priorität Operationen aktivieren.</span><span class="sxs-lookup"><span data-stu-id="b4b0b-105">Indicates that the system is idle, enabling the transport provider to perform low-priority operations.</span></span>
+<span data-ttu-id="03ff6-105">Gibt an, dass das System im Leerlauf, der Adressbuchhierarchie niedriger Priorität Operationen aktivieren.</span><span class="sxs-lookup"><span data-stu-id="03ff6-105">Indicates that the system is idle, enabling the transport provider to perform low-priority operations.</span></span>
   
 ```cpp
 HRESULT Idle(
@@ -33,27 +33,27 @@ HRESULT Idle(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="b4b0b-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="b4b0b-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="03ff6-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="03ff6-106">Parameters</span></span>
 
- <span data-ttu-id="b4b0b-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="b4b0b-107">_ulFlags_</span></span>
+ <span data-ttu-id="03ff6-107">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="03ff6-107">_ulFlags_</span></span>
   
-> <span data-ttu-id="b4b0b-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="b4b0b-108">[in] Reserved; must be zero.</span></span>
+> <span data-ttu-id="03ff6-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="03ff6-108">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b4b0b-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b4b0b-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="03ff6-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="03ff6-109">Return value</span></span>
 
-<span data-ttu-id="b4b0b-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="b4b0b-110">S_OK</span></span> 
+<span data-ttu-id="03ff6-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="03ff6-110">S_OK</span></span> 
   
-> <span data-ttu-id="b4b0b-111">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b4b0b-111">The call succeeded and returned the expected value or values.</span></span>
+> <span data-ttu-id="03ff6-111">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="03ff6-111">The call succeeded and returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="b4b0b-112">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b4b0b-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="03ff6-112">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="03ff6-112">Remarks</span></span>
 
-<span data-ttu-id="b4b0b-113">Die MAPI-Warteschlange ruft in regelmäßigen Abständen die **IXPLogon::Idle** -Methode, wenn Zeiten angefordert, wenn das System ist, indem das Flag XP_LOGON_SP im Aufruf der [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) -Methode, die die aktuelle Sitzung geöffnet übergeben im Leerlauf.</span><span class="sxs-lookup"><span data-stu-id="b4b0b-113">The MAPI spooler periodically calls the **IXPLogon::Idle** method, if requested, during times when the system is idle by passing the XP_LOGON_SP flag in the call to the [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) method that opened the current session.</span></span> <span data-ttu-id="b4b0b-114">Bisweilen, wenn das System im Leerlauf befindet, kann der Adressbuchhierarchie Hintergrundvorgängen ausgeführt werden, die nicht richtig sind bei anderen anrufen oder, die in regelmäßigen Abständen auftreten, müssen.</span><span class="sxs-lookup"><span data-stu-id="b4b0b-114">At times when the system is idle, the transport provider can perform background operations that are not appropriate during other calls, or that need to occur on a regular basis.</span></span> 
+<span data-ttu-id="03ff6-113">Die MAPI-Warteschlange ruft in regelmäßigen Abständen die **IXPLogon::Idle** -Methode, wenn Zeiten angefordert, wenn das System ist, indem das Flag XP_LOGON_SP im Aufruf der [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) -Methode, die die aktuelle Sitzung geöffnet übergeben im Leerlauf.</span><span class="sxs-lookup"><span data-stu-id="03ff6-113">The MAPI spooler periodically calls the **IXPLogon::Idle** method, if requested, during times when the system is idle by passing the XP_LOGON_SP flag in the call to the [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) method that opened the current session.</span></span> <span data-ttu-id="03ff6-114">Bisweilen, wenn das System im Leerlauf befindet, kann der Adressbuchhierarchie Hintergrundvorgängen ausgeführt werden, die nicht richtig sind bei anderen anrufen oder, die in regelmäßigen Abständen auftreten, müssen.</span><span class="sxs-lookup"><span data-stu-id="03ff6-114">At times when the system is idle, the transport provider can perform background operations that are not appropriate during other calls, or that need to occur on a regular basis.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="b4b0b-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b4b0b-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="03ff6-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="03ff6-115">See also</span></span>
 
 
 
-[<span data-ttu-id="b4b0b-116">IXPProvider::TransportLogon</span><span class="sxs-lookup"><span data-stu-id="b4b0b-116">IXPProvider::TransportLogon</span></span>](ixpprovider-transportlogon.md)
+[<span data-ttu-id="03ff6-116">IXPProvider::TransportLogon</span><span class="sxs-lookup"><span data-stu-id="03ff6-116">IXPProvider::TransportLogon</span></span>](ixpprovider-transportlogon.md)
   
-[<span data-ttu-id="b4b0b-117">IXPLogon: IUnknown</span><span class="sxs-lookup"><span data-stu-id="b4b0b-117">IXPLogon : IUnknown</span></span>](ixplogoniunknown.md)
+[<span data-ttu-id="03ff6-117">IXPLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="03ff6-117">IXPLogon : IUnknown</span></span>](ixplogoniunknown.md)
 

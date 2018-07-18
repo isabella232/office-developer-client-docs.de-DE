@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790974"
 ---
-# <a name="ifreebusydataplaceholder5"></a><span data-ttu-id="e9bcc-103">IFreeBusyData::Placeholder5</span><span class="sxs-lookup"><span data-stu-id="e9bcc-103">IFreeBusyData::Placeholder5</span></span>
+# <a name="ifreebusydataplaceholder5"></a><span data-ttu-id="f5197-103">IFreeBusyData::Placeholder5</span><span class="sxs-lookup"><span data-stu-id="f5197-103">IFreeBusyData::Placeholder5</span></span>
 
-<span data-ttu-id="e9bcc-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e9bcc-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="f5197-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f5197-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e9bcc-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="e9bcc-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="f5197-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="f5197-105">Quick info</span></span>
 
-<span data-ttu-id="e9bcc-106">Finden Sie unter [IFreeBusyData](ifreebusydata.md).</span><span class="sxs-lookup"><span data-stu-id="e9bcc-106">See [IFreeBusyData](ifreebusydata.md).</span></span>
+<span data-ttu-id="f5197-106">Finden Sie unter [IFreeBusyData](ifreebusydata.md).</span><span class="sxs-lookup"><span data-stu-id="f5197-106">See [IFreeBusyData](ifreebusydata.md).</span></span>
   
 ```cpp
 HRESULT Placeholder5( 
@@ -30,12 +30,12 @@ HRESULT Placeholder5(
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="e9bcc-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="e9bcc-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="f5197-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="f5197-107">Return values</span></span>
 
-<span data-ttu-id="e9bcc-108">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in **IFreeBusyData** und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="e9bcc-108">Always E_NOTIMPL, because this member is a placeholder in **IFreeBusyData** and is not supported.</span></span> 
+<span data-ttu-id="f5197-108">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in **IFreeBusyData** und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="f5197-108">Always E_NOTIMPL, because this member is a placeholder in **IFreeBusyData** and is not supported.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="e9bcc-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e9bcc-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f5197-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f5197-109">Remarks</span></span>
 
-<span data-ttu-id="e9bcc-110">Dieser Member muss E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="e9bcc-110">This member must return E_NOTIMPL.</span></span>
+<span data-ttu-id="f5197-110">Dieser Member muss E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="f5197-110">This member must return E_NOTIMPL.</span></span>
   
 

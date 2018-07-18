@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793300"
 ---
-# <a name="olflagicon"></a><span data-ttu-id="ce2c1-103">OlFlagIcon</span><span class="sxs-lookup"><span data-stu-id="ce2c1-103">OlFlagIcon</span></span>
+# <a name="olflagicon"></a><span data-ttu-id="770cc-103">OlFlagIcon</span><span class="sxs-lookup"><span data-stu-id="770cc-103">OlFlagIcon</span></span>
 
   
   
-<span data-ttu-id="ce2c1-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="ce2c1-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="770cc-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="770cc-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="ce2c1-105">Gibt an, ob ein Element gekennzeichnet ist, und wenn es ist, die Farbe der gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-105">Specifies whether an item is flagged, and if it is, the color associated with the flagged item.</span></span>
+<span data-ttu-id="770cc-105">Gibt an, ob ein Element gekennzeichnet ist, und wenn es ist, die Farbe der gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-105">Specifies whether an item is flagged, and if it is, the color associated with the flagged item.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="ce2c1-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="ce2c1-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="770cc-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="770cc-106">Quick info</span></span>
 
 ```cpp
 enum OlFlagIcon { 
@@ -38,39 +38,39 @@ enum OlFlagIcon {
 
 ```
 
-## <a name="members"></a><span data-ttu-id="ce2c1-107">Members</span><span class="sxs-lookup"><span data-stu-id="ce2c1-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="770cc-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="770cc-107">Members</span></span>
 
- <span data-ttu-id="ce2c1-108">_olNoFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-108">_olNoFlagIcon_</span></span>
+ <span data-ttu-id="770cc-108">_olNoFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-108">_olNoFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-109">Kein Flag wurde das Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-109">No flag has been associated with the item.</span></span>
+> <span data-ttu-id="770cc-109">Kein Flag wurde das Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-109">No flag has been associated with the item.</span></span>
     
- <span data-ttu-id="ce2c1-110">_olPurpleFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-110">_olPurpleFlagIcon_</span></span>
+ <span data-ttu-id="770cc-110">_olPurpleFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-110">_olPurpleFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-111">Lila wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-111">Purple has been associated with the flagged item.</span></span>
+> <span data-ttu-id="770cc-111">Lila wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-111">Purple has been associated with the flagged item.</span></span>
     
- <span data-ttu-id="ce2c1-112">_olOrangeFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-112">_olOrangeFlagIcon_</span></span>
+ <span data-ttu-id="770cc-112">_olOrangeFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-112">_olOrangeFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-113">Orange wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-113">Orange has been associated with the flagged item.</span></span>
+> <span data-ttu-id="770cc-113">Orange wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-113">Orange has been associated with the flagged item.</span></span>
     
- <span data-ttu-id="ce2c1-114">_olGreenFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-114">_olGreenFlagIcon_</span></span>
+ <span data-ttu-id="770cc-114">_olGreenFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-114">_olGreenFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-115">Grün wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-115">Green has been associated with the flagged item.</span></span>
+> <span data-ttu-id="770cc-115">Grün wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-115">Green has been associated with the flagged item.</span></span>
     
- <span data-ttu-id="ce2c1-116">_olYellowFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-116">_olYellowFlagIcon_</span></span>
+ <span data-ttu-id="770cc-116">_olYellowFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-116">_olYellowFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-117">Gelb wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-117">Yellow has been associated with the flagged item.</span></span>
+> <span data-ttu-id="770cc-117">Gelb wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-117">Yellow has been associated with the flagged item.</span></span>
     
- <span data-ttu-id="ce2c1-118">_olBlueFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-118">_olBlueFlagIcon_</span></span>
+ <span data-ttu-id="770cc-118">_olBlueFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-118">_olBlueFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-119">Blau wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-119">Blue has been associated with the flagged item.</span></span>
+> <span data-ttu-id="770cc-119">Blau wurde gekennzeichnetes Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-119">Blue has been associated with the flagged item.</span></span>
     
- <span data-ttu-id="ce2c1-120">_olRedFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="ce2c1-120">_olRedFlagIcon_</span></span>
+ <span data-ttu-id="770cc-120">_olRedFlagIcon_</span><span class="sxs-lookup"><span data-stu-id="770cc-120">_olRedFlagIcon_</span></span>
   
-> <span data-ttu-id="ce2c1-121">Rot wurde gekennzeichneten Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="ce2c1-121">Red has been associated with the flagged item.</span></span>
+> <span data-ttu-id="770cc-121">Rot wurde gekennzeichneten Element zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="770cc-121">Red has been associated with the flagged item.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ce2c1-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ce2c1-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="770cc-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="770cc-122">See also</span></span>
 
 
 
-[<span data-ttu-id="ce2c1-123">Kanonische PidTagFollowupIcon-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ce2c1-123">PidTagFollowupIcon Canonical Property</span></span>](pidtagfollowupicon-canonical-property.md)
+[<span data-ttu-id="770cc-123">PidTagFollowupIcon (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="770cc-123">PidTagFollowupIcon Canonical Property</span></span>](pidtagfollowupicon-canonical-property.md)
 

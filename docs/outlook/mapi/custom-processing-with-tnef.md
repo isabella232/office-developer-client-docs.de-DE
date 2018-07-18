@@ -15,10 +15,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791492"
 ---
-# <a name="custom-processing-with-tnef"></a><span data-ttu-id="435af-103">Benutzerdefinierte Verarbeitung mit TNEF</span><span class="sxs-lookup"><span data-stu-id="435af-103">Custom processing with TNEF</span></span>
+# <a name="custom-processing-with-tnef"></a><span data-ttu-id="347ae-103">Benutzerdefinierte Verarbeitung mit TNEF</span><span class="sxs-lookup"><span data-stu-id="347ae-103">Custom processing with TNEF</span></span>
 
-<span data-ttu-id="435af-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="435af-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="347ae-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="347ae-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="435af-105">Transportanbieter können benutzerdefinierte Verarbeitung, die Eigenschaften für eine Anlage selbst verarbeitet oder separat übertragen von Anlagen durch die messaging-System Anlage Modell zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="435af-105">Transport providers can use custom processing to process the properties on an attachment itself, transmit attachments separately, or transmit them through the messaging system's attachment model.</span></span> <span data-ttu-id="435af-106">TNEF verwendet einen Mechanismus, mit der der Adressbuchhierarchie, die Anlagen ausreichend Abstand zu platzieren die Nachricht senden, und schließen Sie sie auf der Seite empfangenden kann.</span><span class="sxs-lookup"><span data-stu-id="435af-106">TNEF uses a mechanism that enables the transport provider to send the attachments apart from the message and reconnect them on the receiving side.</span></span>
+<span data-ttu-id="347ae-105">Transportanbieter können benutzerdefinierte Verarbeitung, die Eigenschaften für eine Anlage selbst verarbeitet oder separat übertragen von Anlagen durch die messaging-System Anlage Modell zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="347ae-105">Transport providers can use custom processing to process the properties on an attachment itself, transmit attachments separately, or transmit them through the messaging system's attachment model.</span></span> <span data-ttu-id="347ae-106">TNEF verwendet einen Mechanismus, mit der der Adressbuchhierarchie, die Anlagen ausreichend Abstand zu platzieren die Nachricht senden, und schließen Sie sie auf der Seite empfangenden kann.</span><span class="sxs-lookup"><span data-stu-id="347ae-106">TNEF uses a mechanism that enables the transport provider to send the attachments apart from the message and reconnect them on the receiving side.</span></span>
   
 

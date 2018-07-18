@@ -13,23 +13,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790207"
 ---
-# <a name="and-access-custom-web-app"></a><span data-ttu-id="8cf71-103">UND (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="8cf71-103">AND (Access custom web app)</span></span>
+# <a name="and-access-custom-web-app"></a><span data-ttu-id="f8ce0-103">UND (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="f8ce0-103">AND (Access custom web app)</span></span>
 
-<span data-ttu-id="8cf71-104">Verknüpft zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.</span><span class="sxs-lookup"><span data-stu-id="8cf71-104">Combines two Boolean expressions and returns TRUE when both expressions are TRUE.</span></span> 
+<span data-ttu-id="f8ce0-104">Verknüpft zwei boolesche Ausdrücke und gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.</span><span class="sxs-lookup"><span data-stu-id="f8ce0-104">Combines two Boolean expressions and returns TRUE when both expressions are TRUE.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="8cf71-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="8cf71-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="f8ce0-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="f8ce0-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="8cf71-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="8cf71-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f8ce0-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="f8ce0-107">Syntax</span></span>
 
- <span data-ttu-id="8cf71-108">*Boolean_expression* **Und** *Boolean_expression*</span><span class="sxs-lookup"><span data-stu-id="8cf71-108">*boolean_expression* **AND** *boolean_expression*</span></span> 
+ <span data-ttu-id="f8ce0-108">*Boolean_expression* **Und** *Boolean_expression*</span><span class="sxs-lookup"><span data-stu-id="f8ce0-108">*boolean_expression* **AND** *boolean_expression*</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="8cf71-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8cf71-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f8ce0-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f8ce0-109">Return value</span></span>
 
-<span data-ttu-id="8cf71-110">Gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.</span><span class="sxs-lookup"><span data-stu-id="8cf71-110">Returns TRUE when both expressions are TRUE.</span></span>
+<span data-ttu-id="f8ce0-110">Gibt TRUE zurück, wenn beide Ausdrücke TRUE sind.</span><span class="sxs-lookup"><span data-stu-id="f8ce0-110">Returns TRUE when both expressions are TRUE.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="8cf71-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8cf71-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f8ce0-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f8ce0-111">Remarks</span></span>
 
-<span data-ttu-id="8cf71-112">Wenn mehr als ein logischer Operator in einer Anweisung verwendet wird, werden die Operatoren zuerst ausgewertet.</span><span class="sxs-lookup"><span data-stu-id="8cf71-112">When more than one logical operator is used in a statement, the AND operators are evaluated first.</span></span> <span data-ttu-id="8cf71-113">Sie können die Reihenfolge der Auswertung ändern, indem Sie Klammern verwenden.</span><span class="sxs-lookup"><span data-stu-id="8cf71-113">You can change the order of evaluation by using parentheses.</span></span>
+<span data-ttu-id="f8ce0-112">Wenn mehr als ein logischer Operator in einer Anweisung verwendet wird, werden die Operatoren zuerst ausgewertet.</span><span class="sxs-lookup"><span data-stu-id="f8ce0-112">When more than one logical operator is used in a statement, the AND operators are evaluated first.</span></span> <span data-ttu-id="f8ce0-113">Sie können die Reihenfolge der Auswertung ändern, indem Sie Klammern verwenden.</span><span class="sxs-lookup"><span data-stu-id="f8ce0-113">You can change the order of evaluation by using parentheses.</span></span>
   
 

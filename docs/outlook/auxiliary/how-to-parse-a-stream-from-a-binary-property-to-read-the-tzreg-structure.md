@@ -1,5 +1,5 @@
 ---
-title: Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur
+title: Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790943"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a><span data-ttu-id="22e93-103">Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur</span><span class="sxs-lookup"><span data-stu-id="22e93-103">Parse a stream from a binary property to read the TZREG structure</span></span>
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure"></a><span data-ttu-id="2e9cd-103">Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur</span><span class="sxs-lookup"><span data-stu-id="2e9cd-103">Parse a stream from a binary property to read the TZREG structure</span></span>
 
-<span data-ttu-id="22e93-104">In diesem Thema wird wie die [TZREG](tzreg.md) -Struktur aus der beibehaltenen Format gespeichert, in die binäre Eigenschaft [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)lesen.</span><span class="sxs-lookup"><span data-stu-id="22e93-104">This topic shows how to read the [TZREG](tzreg.md) structure from the persisted format stored in the binary property [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx).</span></span>
+<span data-ttu-id="2e9cd-104">In diesem Thema wird wie die [TZREG](tzreg.md) -Struktur aus der beibehaltenen Format gespeichert, in die binäre Eigenschaft [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)lesen.</span><span class="sxs-lookup"><span data-stu-id="2e9cd-104">This topic shows how to read the [TZREG](tzreg.md) structure from the persisted format stored in the binary property [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx).</span></span>
   
 ```cpp
 TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)  
@@ -55,7 +55,7 @@ TZREG* BinToTZREG(ULONG cbReg, LPBYTE lpbReg)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="22e93-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="22e93-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="2e9cd-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="2e9cd-105">See also</span></span>
 
-- [<span data-ttu-id="22e93-106">Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin</span><span class="sxs-lookup"><span data-stu-id="22e93-106">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
+- [<span data-ttu-id="2e9cd-106">Lesen von Zeitzoneneigenschaften aus einem Termin</span><span class="sxs-lookup"><span data-stu-id="2e9cd-106">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
 

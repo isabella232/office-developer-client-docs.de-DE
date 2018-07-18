@@ -19,35 +19,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791630"
 ---
-# <a name="entrylist"></a><span data-ttu-id="7bc32-103">ENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="7bc32-103">ENTRYLIST</span></span>
+# <a name="entrylist"></a><span data-ttu-id="4be7a-103">ENTRYLIST</span><span class="sxs-lookup"><span data-stu-id="4be7a-103">ENTRYLIST</span></span>
 
   
   
-<span data-ttu-id="7bc32-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7bc32-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="4be7a-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="4be7a-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="7bc32-105">Ein Array von Eintragsbezeichner, die dieselbe Implementierung als [SBinaryArray](sbinaryarray.md) -Struktur verwendet MAPI-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="7bc32-105">An array of entry identifiers representing MAPI object that uses the same implementation as the [SBinaryArray](sbinaryarray.md) structure.</span></span> 
+<span data-ttu-id="4be7a-105">Ein Array von Eintragsbezeichner, die dieselbe Implementierung als [SBinaryArray](sbinaryarray.md) -Struktur verwendet MAPI-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="4be7a-105">An array of entry identifiers representing MAPI object that uses the same implementation as the [SBinaryArray](sbinaryarray.md) structure.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7bc32-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="7bc32-106">Header file:</span></span>  <br/> |<span data-ttu-id="7bc32-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="7bc32-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="4be7a-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="4be7a-106">Header file:</span></span>  <br/> |<span data-ttu-id="4be7a-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="4be7a-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef SBinaryArray ENTRYLIST, FAR *LPENTRYLIST;
 
 ```
 
-## <a name="members"></a><span data-ttu-id="7bc32-108">Members</span><span class="sxs-lookup"><span data-stu-id="7bc32-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="4be7a-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="4be7a-108">Members</span></span>
 
-<span data-ttu-id="7bc32-109">Elemente des Objekts finden Sie unter der Struktur **SBinaryArry** .</span><span class="sxs-lookup"><span data-stu-id="7bc32-109">See the **SBinaryArry** structure for members.</span></span> 
+<span data-ttu-id="4be7a-109">Elemente des Objekts finden Sie unter der Struktur **SBinaryArry** .</span><span class="sxs-lookup"><span data-stu-id="4be7a-109">See the **SBinaryArry** structure for members.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="7bc32-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7bc32-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4be7a-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4be7a-110">See also</span></span>
 
 
 
-[<span data-ttu-id="7bc32-111">ENTRYID</span><span class="sxs-lookup"><span data-stu-id="7bc32-111">ENTRYID</span></span>](entryid.md)
+[<span data-ttu-id="4be7a-111">ENTRYID</span><span class="sxs-lookup"><span data-stu-id="4be7a-111">ENTRYID</span></span>](entryid.md)
   
-[<span data-ttu-id="7bc32-112">SBinaryArray</span><span class="sxs-lookup"><span data-stu-id="7bc32-112">SBinaryArray</span></span>](sbinaryarray.md)
+[<span data-ttu-id="4be7a-112">SBinaryArray</span><span class="sxs-lookup"><span data-stu-id="4be7a-112">SBinaryArray</span></span>](sbinaryarray.md)
 
 
-[<span data-ttu-id="7bc32-113">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="7bc32-113">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="4be7a-113">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="4be7a-113">MAPI Structures</span></span>](mapi-structures.md)
 

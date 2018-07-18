@@ -14,24 +14,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790979"
 ---
-# <a name="ifreebusysupportplaceholder3"></a><span data-ttu-id="3037e-103">IFreeBusySupport::Placeholder3</span><span class="sxs-lookup"><span data-stu-id="3037e-103">IFreeBusySupport::Placeholder3</span></span>
+# <a name="ifreebusysupportplaceholder3"></a><span data-ttu-id="bd139-103">IFreeBusySupport::Placeholder3</span><span class="sxs-lookup"><span data-stu-id="bd139-103">IFreeBusySupport::Placeholder3</span></span>
 
-<span data-ttu-id="3037e-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="3037e-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="bd139-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="bd139-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="3037e-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="3037e-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="bd139-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="bd139-105">Quick info</span></span>
 
-<span data-ttu-id="3037e-106">Finden Sie unter [IFreeBusySupport](ifreebusysupport.md).</span><span class="sxs-lookup"><span data-stu-id="3037e-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="bd139-106">Finden Sie unter [IFreeBusySupport](ifreebusysupport.md).</span><span class="sxs-lookup"><span data-stu-id="bd139-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder3();
 ```
 
-## <a name="return-values"></a><span data-ttu-id="3037e-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="3037e-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="bd139-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="bd139-107">Return values</span></span>
 
-<span data-ttu-id="3037e-108">Immer unterstützt S_OK zurück, da dieser Member ist ein Platzhalter und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="3037e-108">Always S_OK, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="bd139-108">Immer unterstützt S_OK zurück, da dieser Member ist ein Platzhalter und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="bd139-108">Always S_OK, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="3037e-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3037e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bd139-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="bd139-109">Remarks</span></span>
 
-<span data-ttu-id="3037e-110">Dieser Member muss S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="3037e-110">This member must return S_OK.</span></span>
+<span data-ttu-id="bd139-110">Dieser Member muss S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="bd139-110">This member must return S_OK.</span></span>
   
 

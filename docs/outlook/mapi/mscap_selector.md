@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2018
 ms.locfileid: "19793268"
 ---
-# <a name="mscapselector"></a><span data-ttu-id="c0a99-103">MSCAP_SELECTOR</span><span class="sxs-lookup"><span data-stu-id="c0a99-103">MSCAP_SELECTOR</span></span>
+# <a name="mscapselector"></a><span data-ttu-id="dbf26-103">MSCAP_SELECTOR</span><span class="sxs-lookup"><span data-stu-id="dbf26-103">MSCAP_SELECTOR</span></span>
 
   
   
-<span data-ttu-id="c0a99-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="c0a99-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="dbf26-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="dbf26-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="c0a99-105">Gibt an, das die Funktionen für einen Speicher zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c0a99-105">Specifies the capabilities to return for a store.</span></span>
+<span data-ttu-id="dbf26-105">Gibt an, das die Funktionen für einen Speicher zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dbf26-105">Specifies the capabilities to return for a store.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="c0a99-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="c0a99-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="dbf26-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="dbf26-106">Quick info</span></span>
 
 ```cpp
 typedef enum 
@@ -36,26 +36,26 @@ typedef enum
 } MSCAP_SELECTOR;
 ```
 
-## <a name="members"></a><span data-ttu-id="c0a99-107">Members</span><span class="sxs-lookup"><span data-stu-id="c0a99-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="dbf26-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="dbf26-107">Members</span></span>
 
- <span data-ttu-id="c0a99-108">*MSCAP_SEL_RESERVED1*</span><span class="sxs-lookup"><span data-stu-id="c0a99-108">*MSCAP_SEL_RESERVED1*</span></span> 
+ <span data-ttu-id="dbf26-108">*MSCAP_SEL_RESERVED1*</span><span class="sxs-lookup"><span data-stu-id="dbf26-108">*MSCAP_SEL_RESERVED1*</span></span> 
   
-> <span data-ttu-id="c0a99-109">Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c0a99-109">This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="dbf26-109">Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="dbf26-109">This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
- <span data-ttu-id="c0a99-110">*MSCAP_SEL_RESERVED2*</span><span class="sxs-lookup"><span data-stu-id="c0a99-110">*MSCAP_SEL_RESERVED2*</span></span> 
+ <span data-ttu-id="dbf26-110">*MSCAP_SEL_RESERVED2*</span><span class="sxs-lookup"><span data-stu-id="dbf26-110">*MSCAP_SEL_RESERVED2*</span></span> 
   
-> <span data-ttu-id="c0a99-111">Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c0a99-111">This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="dbf26-111">Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="dbf26-111">This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
- <span data-ttu-id="c0a99-112">*MSCAP_SEL_FOLDER*</span><span class="sxs-lookup"><span data-stu-id="c0a99-112">*MSCAP_SEL_FOLDER*</span></span> 
+ <span data-ttu-id="dbf26-112">*MSCAP_SEL_FOLDER*</span><span class="sxs-lookup"><span data-stu-id="dbf26-112">*MSCAP_SEL_FOLDER*</span></span> 
   
-> <span data-ttu-id="c0a99-113">Funktionen zur Unterstützung von Ordnern in einem Speicher.</span><span class="sxs-lookup"><span data-stu-id="c0a99-113">Capabilities about supporting folders on a store.</span></span>
+> <span data-ttu-id="dbf26-113">Funktionen zur Unterstützung von Ordnern in einem Speicher.</span><span class="sxs-lookup"><span data-stu-id="dbf26-113">Capabilities about supporting folders on a store.</span></span>
     
- <span data-ttu-id="c0a99-114">*MSCAP_SEL_RESERVED3*</span><span class="sxs-lookup"><span data-stu-id="c0a99-114">*MSCAP_SEL_RESERVED3*</span></span> 
+ <span data-ttu-id="dbf26-114">*MSCAP_SEL_RESERVED3*</span><span class="sxs-lookup"><span data-stu-id="dbf26-114">*MSCAP_SEL_RESERVED3*</span></span> 
   
-> <span data-ttu-id="c0a99-115">Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="c0a99-115">This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="dbf26-115">Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="dbf26-115">This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
- <span data-ttu-id="c0a99-116">*MSCAP_SEL_RESTRICTION*</span><span class="sxs-lookup"><span data-stu-id="c0a99-116">*MSCAP_SEL_RESTRICTION*</span></span> 
+ <span data-ttu-id="dbf26-116">*MSCAP_SEL_RESTRICTION*</span><span class="sxs-lookup"><span data-stu-id="dbf26-116">*MSCAP_SEL_RESTRICTION*</span></span> 
   
-> <span data-ttu-id="c0a99-117">Funktionen zur Unterstützung von Einschränkungen in einem Speicher.</span><span class="sxs-lookup"><span data-stu-id="c0a99-117">Capabilities about supporting restrictions on a store.</span></span>
+> <span data-ttu-id="dbf26-117">Funktionen zur Unterstützung von Einschränkungen in einem Speicher.</span><span class="sxs-lookup"><span data-stu-id="dbf26-117">Capabilities about supporting restrictions on a store.</span></span>
     
 

@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790364"
 ---
-# <a name="string-operators-access-custom-web-app"></a><span data-ttu-id="aa7d9-102">Operatoren (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="aa7d9-102">String Operators (Access custom web app)</span></span>
+# <a name="string-operators-access-custom-web-app"></a><span data-ttu-id="22dbe-102">Operatoren (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="22dbe-102">String Operators (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="aa7d9-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="aa7d9-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="22dbe-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="22dbe-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="aa7d9-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="aa7d9-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="22dbe-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="22dbe-105">In this section</span></span>
 
-- [<span data-ttu-id="aa7d9-106">+ (String-Operator für das Verketten) (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="aa7d9-106">+ (String Concatenation Operator) (Access custom web app)</span></span>](plusstring-concatenation-operatoraccess-custom-web-app.md)
+- [<span data-ttu-id="22dbe-106">+ (String-Operator für das Verketten) (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="22dbe-106">+ (String Concatenation Operator) (Access custom web app)</span></span>](plusstring-concatenation-operatoraccess-custom-web-app.md)
     
 

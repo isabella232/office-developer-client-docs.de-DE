@@ -19,13 +19,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792675"
 ---
-# <a name="imsprovidershutdown"></a><span data-ttu-id="e3882-103">IMSProvider::Shutdown</span><span class="sxs-lookup"><span data-stu-id="e3882-103">IMSProvider::Shutdown</span></span>
+# <a name="imsprovidershutdown"></a><span data-ttu-id="8e33a-103">IMSProvider::Shutdown</span><span class="sxs-lookup"><span data-stu-id="8e33a-103">IMSProvider::Shutdown</span></span>
 
   
   
-<span data-ttu-id="e3882-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e3882-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="8e33a-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="8e33a-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="e3882-105">Schließt einen Anbieter für Nachricht Anmelden in einer bestimmten Reihenfolge.</span><span class="sxs-lookup"><span data-stu-id="e3882-105">Closes a message store provider in an orderly fashion.</span></span>
+<span data-ttu-id="8e33a-105">Schließt einen Anbieter für Nachricht Anmelden in einer bestimmten Reihenfolge.</span><span class="sxs-lookup"><span data-stu-id="8e33a-105">Closes a message store provider in an orderly fashion.</span></span>
   
 ```cpp
 HRESULT Shutdown(
@@ -33,25 +33,25 @@ HRESULT Shutdown(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e3882-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="e3882-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="8e33a-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="8e33a-106">Parameters</span></span>
 
- <span data-ttu-id="e3882-107">_lpulFlags_</span><span class="sxs-lookup"><span data-stu-id="e3882-107">_lpulFlags_</span></span>
+ <span data-ttu-id="8e33a-107">_lpulFlags_</span><span class="sxs-lookup"><span data-stu-id="8e33a-107">_lpulFlags_</span></span>
   
-> <span data-ttu-id="e3882-108">[in] Reserviert. Ein Zeiger auf 0 (null) muss sein.</span><span class="sxs-lookup"><span data-stu-id="e3882-108">[in] Reserved; must be a pointer to zero.</span></span>
+> <span data-ttu-id="8e33a-108">[in] Reserviert. Ein Zeiger auf 0 (null) muss sein.</span><span class="sxs-lookup"><span data-stu-id="8e33a-108">[in] Reserved; must be a pointer to zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e3882-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e3882-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8e33a-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8e33a-109">Return value</span></span>
 
-<span data-ttu-id="e3882-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="e3882-110">S_OK</span></span> 
+<span data-ttu-id="8e33a-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="8e33a-110">S_OK</span></span> 
   
-> <span data-ttu-id="e3882-111">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="e3882-111">The call succeeded and returned the expected value or values.</span></span>
+> <span data-ttu-id="8e33a-111">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="8e33a-111">The call succeeded and returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="e3882-112">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e3882-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8e33a-112">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8e33a-112">Remarks</span></span>
 
-<span data-ttu-id="e3882-113">MAPI-Aufrufen die **IMSProvider::Shutdown** -Methode unmittelbar vor der Freigabe des Message-Speicher-Anbieter-Objekts.</span><span class="sxs-lookup"><span data-stu-id="e3882-113">MAPI calls the **IMSProvider::Shutdown** method just before releasing the message store provider object.</span></span> <span data-ttu-id="e3882-114">MAPI-Freigaben für alle Logon-Objekten für einen Anbieter vor dem **Herunterfahren** für diesen Anbieter aufrufen.</span><span class="sxs-lookup"><span data-stu-id="e3882-114">MAPI releases all logon objects for a provider before calling **Shutdown** for that provider.</span></span> 
+<span data-ttu-id="8e33a-113">MAPI-Aufrufen die **IMSProvider::Shutdown** -Methode unmittelbar vor der Freigabe des Message-Speicher-Anbieter-Objekts.</span><span class="sxs-lookup"><span data-stu-id="8e33a-113">MAPI calls the **IMSProvider::Shutdown** method just before releasing the message store provider object.</span></span> <span data-ttu-id="8e33a-114">MAPI-Freigaben für alle Logon-Objekten für einen Anbieter vor dem **Herunterfahren** für diesen Anbieter aufrufen.</span><span class="sxs-lookup"><span data-stu-id="8e33a-114">MAPI releases all logon objects for a provider before calling **Shutdown** for that provider.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="e3882-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e3882-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e33a-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8e33a-115">See also</span></span>
 
 
 
-[<span data-ttu-id="e3882-116">IMSProvider: IUnknown</span><span class="sxs-lookup"><span data-stu-id="e3882-116">IMSProvider : IUnknown</span></span>](imsprovideriunknown.md)
+[<span data-ttu-id="8e33a-116">IMSProvider : IUnknown</span><span class="sxs-lookup"><span data-stu-id="8e33a-116">IMSProvider : IUnknown</span></span>](imsprovideriunknown.md)
 

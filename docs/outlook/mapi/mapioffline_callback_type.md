@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793129"
 ---
-# <a name="mapiofflinecallbacktype"></a><span data-ttu-id="c410e-103">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="c410e-103">MAPIOFFLINE_CALLBACK_TYPE</span></span>
+# <a name="mapiofflinecallbacktype"></a><span data-ttu-id="258ed-103">MAPIOFFLINE_CALLBACK_TYPE</span><span class="sxs-lookup"><span data-stu-id="258ed-103">MAPIOFFLINE_CALLBACK_TYPE</span></span>
 
   
   
-<span data-ttu-id="c410e-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="c410e-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="258ed-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="258ed-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="c410e-105">Aufzählung der unterstützten Typen von Rückrufen.</span><span class="sxs-lookup"><span data-stu-id="c410e-105">Enumeration of supported types of callbacks.</span></span>
+<span data-ttu-id="258ed-105">Aufzählung der unterstützten Typen von Rückrufen.</span><span class="sxs-lookup"><span data-stu-id="258ed-105">Enumeration of supported types of callbacks.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="c410e-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="c410e-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="258ed-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="258ed-106">Quick info</span></span>
 
 ```cpp
 typedef enum  
@@ -33,13 +33,13 @@ typedef enum
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="c410e-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c410e-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="258ed-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="258ed-107">See also</span></span>
 
 
 
-[<span data-ttu-id="c410e-108">Über die Offline State-API</span><span class="sxs-lookup"><span data-stu-id="c410e-108">About the Offline State API</span></span>](about-the-offline-state-api.md)
+[<span data-ttu-id="258ed-108">Informationen zu der Offlinestatus-API</span><span class="sxs-lookup"><span data-stu-id="258ed-108">About the Offline State API</span></span>](about-the-offline-state-api.md)
   
-[<span data-ttu-id="c410e-109">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="c410e-109">MAPI Constants</span></span>](mapi-constants.md)
+[<span data-ttu-id="258ed-109">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="258ed-109">MAPI Constants</span></span>](mapi-constants.md)
   
-[<span data-ttu-id="c410e-110">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="c410e-110">MAPIOFFLINE_ADVISEINFO</span></span>](mapioffline_adviseinfo.md)
+[<span data-ttu-id="258ed-110">MAPIOFFLINE_ADVISEINFO</span><span class="sxs-lookup"><span data-stu-id="258ed-110">MAPIOFFLINE_ADVISEINFO</span></span>](mapioffline_adviseinfo.md)
 

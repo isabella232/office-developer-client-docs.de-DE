@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790995"
 ---
-# <a name="ifreebusysupportplaceholder16"></a><span data-ttu-id="7db69-103">IFreeBusySupport::Placeholder16</span><span class="sxs-lookup"><span data-stu-id="7db69-103">IFreeBusySupport::Placeholder16</span></span>
+# <a name="ifreebusysupportplaceholder16"></a><span data-ttu-id="a3a7a-103">IFreeBusySupport::Placeholder16</span><span class="sxs-lookup"><span data-stu-id="a3a7a-103">IFreeBusySupport::Placeholder16</span></span>
 
-<span data-ttu-id="7db69-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="7db69-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="a3a7a-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a3a7a-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="7db69-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="7db69-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="a3a7a-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="a3a7a-105">Quick info</span></span>
 
-<span data-ttu-id="7db69-106">Finden Sie unter [IFreeBusySupport](ifreebusysupport.md).</span><span class="sxs-lookup"><span data-stu-id="7db69-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
+<span data-ttu-id="a3a7a-106">Finden Sie unter [IFreeBusySupport](ifreebusysupport.md).</span><span class="sxs-lookup"><span data-stu-id="a3a7a-106">See [IFreeBusySupport](ifreebusysupport.md).</span></span>
   
 ```cpp
 HRESULT Placeholder16( 
@@ -28,16 +28,16 @@ HRESULT Placeholder16(
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="7db69-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="7db69-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="a3a7a-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="a3a7a-107">Return values</span></span>
 
-<span data-ttu-id="7db69-108">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="7db69-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="a3a7a-108">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="a3a7a-108">Always E_NOTIMPL, because this member is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="7db69-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7db69-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a3a7a-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a3a7a-109">Remarks</span></span>
 
-<span data-ttu-id="7db69-110">Dieser Member muss E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="7db69-110">This member must return E_NOTIMPL.</span></span>
+<span data-ttu-id="a3a7a-110">Dieser Member muss E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="a3a7a-110">This member must return E_NOTIMPL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="7db69-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7db69-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a3a7a-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a3a7a-111">See also</span></span>
 
-- [<span data-ttu-id="7db69-112">Konstanten (Frei/Gebucht-API)</span><span class="sxs-lookup"><span data-stu-id="7db69-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
-- [<span data-ttu-id="7db69-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="7db69-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
+- [<span data-ttu-id="a3a7a-112">Konstanten (Frei/Gebucht-API)</span><span class="sxs-lookup"><span data-stu-id="a3a7a-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
+- [<span data-ttu-id="a3a7a-113">IFreeBusySupport::LoadFreeBusyData</span><span class="sxs-lookup"><span data-stu-id="a3a7a-113">IFreeBusySupport::LoadFreeBusyData</span></span>](ifreebusysupport-loadfreebusydata.md)
 

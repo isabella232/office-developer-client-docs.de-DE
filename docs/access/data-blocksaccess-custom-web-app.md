@@ -13,19 +13,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790220"
 ---
-# <a name="data-blocks-access-custom-web-app"></a><span data-ttu-id="a7d40-102">Datenblöcke (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="a7d40-102">Data blocks (Access custom web app)</span></span>
+# <a name="data-blocks-access-custom-web-app"></a><span data-ttu-id="198b2-102">Datenblöcke (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="198b2-102">Data blocks (Access custom web app)</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a7d40-p101">Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="a7d40-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="198b2-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="198b2-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
-## <a name="in-this-section"></a><span data-ttu-id="a7d40-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="a7d40-105">In this section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="198b2-105">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="198b2-105">In this section</span></span>
 
-- [<span data-ttu-id="a7d40-106">DatensatzErstellen-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="a7d40-106">CreateRecord Data Block (Access custom web app)</span></span>](createrecord-data-block-access-custom-web-app.md)
+- [<span data-ttu-id="198b2-106">DatensatzErstellen-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="198b2-106">CreateRecord Data Block (Access custom web app)</span></span>](createrecord-data-block-access-custom-web-app.md)
     
-- [<span data-ttu-id="a7d40-107">BearbeitenDatensatz-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="a7d40-107">EditRecord Data Block (Access custom web app)</span></span>](editrecord-data-block-access-custom-web-app.md)
+- [<span data-ttu-id="198b2-107">BearbeitenDatensatz-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="198b2-107">EditRecord Data Block (Access custom web app)</span></span>](editrecord-data-block-access-custom-web-app.md)
     
-- [<span data-ttu-id="a7d40-108">FürJedenDatensatz-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="a7d40-108">ForEachRecord Data Block (Access custom web app)</span></span>](foreachrecord-data-block-access-custom-web-app.md)
+- [<span data-ttu-id="198b2-108">FürJedenDatensatz-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="198b2-108">ForEachRecord Data Block (Access custom web app)</span></span>](foreachrecord-data-block-access-custom-web-app.md)
     
-- [<span data-ttu-id="a7d40-109">NachschlagenDatensatz-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="a7d40-109">LookupRecord Data Block (Access custom web app)</span></span>](lookuprecord-data-block-access-custom-web-app.md)
+- [<span data-ttu-id="198b2-109">NachschlagenDatensatz-Datenblock (Access benutzerdefinierte Web app)</span><span class="sxs-lookup"><span data-stu-id="198b2-109">LookupRecord Data Block (Access custom web app)</span></span>](lookuprecord-data-block-access-custom-web-app.md)
     
 

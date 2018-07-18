@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790961"
 ---
-# <a name="ifreebusydataplaceholder4"></a><span data-ttu-id="980b4-103">IFreeBusyData::Placeholder4</span><span class="sxs-lookup"><span data-stu-id="980b4-103">IFreeBusyData::Placeholder4</span></span>
+# <a name="ifreebusydataplaceholder4"></a><span data-ttu-id="312b7-103">IFreeBusyData::Placeholder4</span><span class="sxs-lookup"><span data-stu-id="312b7-103">IFreeBusyData::Placeholder4</span></span>
 
-<span data-ttu-id="980b4-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="980b4-104">This member is a placeholder and is not supported.</span></span>
+<span data-ttu-id="312b7-104">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="312b7-104">This member is a placeholder and is not supported.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="980b4-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="980b4-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="312b7-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="312b7-105">Quick info</span></span>
 
-<span data-ttu-id="980b4-106">Finden Sie unter [IFreeBusyData](ifreebusydata.md).</span><span class="sxs-lookup"><span data-stu-id="980b4-106">See [IFreeBusyData](ifreebusydata.md).</span></span>
+<span data-ttu-id="312b7-106">Finden Sie unter [IFreeBusyData](ifreebusydata.md).</span><span class="sxs-lookup"><span data-stu-id="312b7-106">See [IFreeBusyData](ifreebusydata.md).</span></span>
   
 ```cpp
 HRESULT Placeholder4( 
@@ -36,18 +36,18 @@ HRESULT Placeholder4(
 
 ```
 
-## <a name="return-values"></a><span data-ttu-id="980b4-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="980b4-107">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="312b7-107">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="312b7-107">Return values</span></span>
 
-<span data-ttu-id="980b4-108">Immer unterstützt S_OK zurück, da dies ist ein Platzhalter und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="980b4-108">Always S_OK, because this is a placeholder and is not supported.</span></span>
+<span data-ttu-id="312b7-108">Immer unterstützt S_OK zurück, da dies ist ein Platzhalter und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="312b7-108">Always S_OK, because this is a placeholder and is not supported.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="980b4-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="980b4-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="312b7-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="312b7-109">Remarks</span></span>
 
-<span data-ttu-id="980b4-110">Dieser Member muss S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="980b4-110">This member must return S_OK.</span></span>
+<span data-ttu-id="312b7-110">Dieser Member muss S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="312b7-110">This member must return S_OK.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="980b4-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="980b4-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="312b7-111">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="312b7-111">See also</span></span>
 
-- [<span data-ttu-id="980b4-112">Konstanten (Frei/Gebucht-API)</span><span class="sxs-lookup"><span data-stu-id="980b4-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
-- [<span data-ttu-id="980b4-113">IFreeBusyData::EnumBlocks</span><span class="sxs-lookup"><span data-stu-id="980b4-113">IFreeBusyData::EnumBlocks</span></span>](ifreebusydata-enumblocks.md)
-- [<span data-ttu-id="980b4-114">IFreeBusyData::GetFBPublishRange</span><span class="sxs-lookup"><span data-stu-id="980b4-114">IFreeBusyData::GetFBPublishRange</span></span>](ifreebusydata-getfbpublishrange.md)
-- [<span data-ttu-id="980b4-115">IFreeBusyData::SetFBRange</span><span class="sxs-lookup"><span data-stu-id="980b4-115">IFreeBusyData::SetFBRange</span></span>](ifreebusydata-setfbrange.md)
+- [<span data-ttu-id="312b7-112">Konstanten (Frei/Gebucht-API)</span><span class="sxs-lookup"><span data-stu-id="312b7-112">Constants (Free/busy API)</span></span>](constants-free-busy-api.md)
+- [<span data-ttu-id="312b7-113">IFreeBusyData::EnumBlocks</span><span class="sxs-lookup"><span data-stu-id="312b7-113">IFreeBusyData::EnumBlocks</span></span>](ifreebusydata-enumblocks.md)
+- [<span data-ttu-id="312b7-114">IFreeBusyData::GetFBPublishRange</span><span class="sxs-lookup"><span data-stu-id="312b7-114">IFreeBusyData::GetFBPublishRange</span></span>](ifreebusydata-getfbpublishrange.md)
+- [<span data-ttu-id="312b7-115">IFreeBusyData::SetFBRange</span><span class="sxs-lookup"><span data-stu-id="312b7-115">IFreeBusyData::SetFBRange</span></span>](ifreebusydata-setfbrange.md)
 

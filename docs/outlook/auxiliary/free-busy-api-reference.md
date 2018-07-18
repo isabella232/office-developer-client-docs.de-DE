@@ -1,5 +1,5 @@
 ---
-title: Frei/Gebucht-API-Referenz
+title: Referenz zur Frei/Gebucht-API
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,14 +14,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790944"
 ---
-# <a name="freebusy-api-reference"></a><span data-ttu-id="5d6d3-103">Frei/Gebucht-API-Referenz</span><span class="sxs-lookup"><span data-stu-id="5d6d3-103">Free/busy API reference</span></span>
+# <a name="freebusy-api-reference"></a><span data-ttu-id="c68fd-103">Referenz zur Frei/Gebucht-API</span><span class="sxs-lookup"><span data-stu-id="c68fd-103">Free/busy API reference</span></span>
 
-<span data-ttu-id="5d6d3-104">Dieser Abschnitt enthält die Referenz für die Frei/Gebucht-API, die e-Mail-Anbieter für Frei-/Gebucht-Status für die angegebenen Benutzerkonten innerhalb eines angegebenen Zeitraums Informationen ermöglicht.</span><span class="sxs-lookup"><span data-stu-id="5d6d3-104">This section provides reference content for the Free/Busy API, which allows mail providers to provide free/busy status information for specified user accounts within a specified time range.</span></span>
+<span data-ttu-id="c68fd-104">Dieser Abschnitt enthält die Referenz für die Frei/Gebucht-API, die e-Mail-Anbieter für Frei-/Gebucht-Status für die angegebenen Benutzerkonten innerhalb eines angegebenen Zeitraums Informationen ermöglicht.</span><span class="sxs-lookup"><span data-stu-id="c68fd-104">This section provides reference content for the Free/Busy API, which allows mail providers to provide free/busy status information for specified user accounts within a specified time range.</span></span>
 
-- [<span data-ttu-id="5d6d3-105">Konstanten</span><span class="sxs-lookup"><span data-stu-id="5d6d3-105">Constants</span></span>](constants-free-busy-api.md)
+- [<span data-ttu-id="c68fd-105">Konstanten</span><span class="sxs-lookup"><span data-stu-id="c68fd-105">Constants</span></span>](constants-free-busy-api.md)
     
-- [<span data-ttu-id="5d6d3-106">Datentypen</span><span class="sxs-lookup"><span data-stu-id="5d6d3-106">Data Types</span></span>](data-types-free-busy-api.md)
+- [<span data-ttu-id="c68fd-106">Datentypen</span><span class="sxs-lookup"><span data-stu-id="c68fd-106">Data Types</span></span>](data-types-free-busy-api.md)
     
-- [<span data-ttu-id="5d6d3-107">Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="5d6d3-107">Interfaces</span></span>](interfaces-free-busy-api.md)
+- [<span data-ttu-id="c68fd-107">Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="c68fd-107">Interfaces</span></span>](interfaces-free-busy-api.md)
     
 

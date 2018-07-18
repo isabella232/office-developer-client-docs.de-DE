@@ -19,35 +19,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791383"
 ---
-# <a name="cbnewentryid"></a><span data-ttu-id="40f1c-103">CbNewENTRYID</span><span class="sxs-lookup"><span data-stu-id="40f1c-103">CbNewENTRYID</span></span>
+# <a name="cbnewentryid"></a><span data-ttu-id="e9817-103">CbNewENTRYID</span><span class="sxs-lookup"><span data-stu-id="e9817-103">CbNewENTRYID</span></span>
 
   
   
-<span data-ttu-id="40f1c-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="40f1c-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="e9817-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e9817-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="40f1c-105">Berechnet die Anzahl von Bytes, die für eine neue [ENTRYID](entryid.md) -Struktur einer angegebenen Größe zugeordnet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="40f1c-105">Computes the number of bytes that should be allocated for a new [ENTRYID](entryid.md) structure of a specified size.</span></span> 
+<span data-ttu-id="e9817-105">Berechnet die Anzahl von Bytes, die für eine neue [ENTRYID](entryid.md) -Struktur einer angegebenen Größe zugeordnet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="e9817-105">Computes the number of bytes that should be allocated for a new [ENTRYID](entryid.md) structure of a specified size.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="40f1c-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="40f1c-106">Header file:</span></span>  <br/> |<span data-ttu-id="40f1c-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="40f1c-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="40f1c-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="40f1c-108">Related structure:</span></span>  <br/> |<span data-ttu-id="40f1c-109">**ENTRYID**</span><span class="sxs-lookup"><span data-stu-id="40f1c-109">**ENTRYID**</span></span> <br/> |
+|<span data-ttu-id="e9817-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="e9817-106">Header file:</span></span>  <br/> |<span data-ttu-id="e9817-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e9817-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="e9817-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="e9817-108">Related structure:</span></span>  <br/> |<span data-ttu-id="e9817-109">**ENTRYID**</span><span class="sxs-lookup"><span data-stu-id="e9817-109">**ENTRYID**</span></span> <br/> |
    
 ```cpp
 CbNewENTRYID (_cb)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="40f1c-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="40f1c-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e9817-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="e9817-110">Parameters</span></span>
 
- <span data-ttu-id="40f1c-111">__cb_</span><span class="sxs-lookup"><span data-stu-id="40f1c-111">__cb_</span></span>
+ <span data-ttu-id="e9817-111">__cb_</span><span class="sxs-lookup"><span data-stu-id="e9817-111">__cb_</span></span>
   
-> <span data-ttu-id="40f1c-112">Anzahl der Bytes in die Eintrags-ID in die neue Struktur **ENTRYID** gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="40f1c-112">Count of bytes in the entry identifier to be stored in the new **ENTRYID** structure.</span></span> 
+> <span data-ttu-id="e9817-112">Anzahl der Bytes in die Eintrags-ID in die neue Struktur **ENTRYID** gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="e9817-112">Count of bytes in the entry identifier to be stored in the new **ENTRYID** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="40f1c-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="40f1c-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e9817-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e9817-113">See also</span></span>
 
 
 
-[<span data-ttu-id="40f1c-114">ENTRYID</span><span class="sxs-lookup"><span data-stu-id="40f1c-114">ENTRYID</span></span>](entryid.md)
+[<span data-ttu-id="e9817-114">ENTRYID</span><span class="sxs-lookup"><span data-stu-id="e9817-114">ENTRYID</span></span>](entryid.md)
 
 
-[<span data-ttu-id="40f1c-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="40f1c-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="e9817-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="e9817-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

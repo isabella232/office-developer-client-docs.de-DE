@@ -1,5 +1,5 @@
 ---
-title: Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur
+title: Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -14,9 +14,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790945"
 ---
-# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a><span data-ttu-id="35146-103">Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur</span><span class="sxs-lookup"><span data-stu-id="35146-103">Parse a stream from a binary property to read the TZDEFINITION structure</span></span>
+# <a name="parse-a-stream-from-a-binary-property-to-read-the-tzdefinition-structure"></a><span data-ttu-id="cfcd5-103">Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur</span><span class="sxs-lookup"><span data-stu-id="cfcd5-103">Parse a stream from a binary property to read the TZDEFINITION structure</span></span>
 
-<span data-ttu-id="35146-104">In diesem Thema wird wie die [TZDEFINITION](tzdefinition.md) -Struktur aus der persistenten Format gespeichert, in eine binäre Eigenschaft lesen.</span><span class="sxs-lookup"><span data-stu-id="35146-104">This topic shows how to read the [TZDEFINITION](tzdefinition.md) structure from the persisted format stored in a binary property.</span></span> 
+<span data-ttu-id="cfcd5-104">In diesem Thema wird wie die [TZDEFINITION](tzdefinition.md) -Struktur aus der persistenten Format gespeichert, in eine binäre Eigenschaft lesen.</span><span class="sxs-lookup"><span data-stu-id="cfcd5-104">This topic shows how to read the [TZDEFINITION](tzdefinition.md) structure from the persisted format stored in a binary property.</span></span> 
   
 ```cpp
 TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef) 
@@ -83,8 +83,8 @@ TZDEFINITION* BinToTZDEFINITION(ULONG cbDef, LPBYTE lpbDef)
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="35146-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="35146-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cfcd5-105">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="cfcd5-105">See also</span></span>
 
-- [<span data-ttu-id="35146-106">Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen</span><span class="sxs-lookup"><span data-stu-id="35146-106">About persisting TZDEFINITION to a stream to commit to a binary property</span></span>](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
-- [<span data-ttu-id="35146-107">Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin</span><span class="sxs-lookup"><span data-stu-id="35146-107">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
+- [<span data-ttu-id="cfcd5-106">Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen</span><span class="sxs-lookup"><span data-stu-id="cfcd5-106">About persisting TZDEFINITION to a stream to commit to a binary property</span></span>](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [<span data-ttu-id="cfcd5-107">Lesen von Zeitzoneneigenschaften aus einem Termin</span><span class="sxs-lookup"><span data-stu-id="cfcd5-107">Read time zone properties from an appointment</span></span>](how-to-read-time-zone-properties-from-an-appointment.md)
 

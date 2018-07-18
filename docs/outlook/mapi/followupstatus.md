@@ -15,15 +15,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791707"
 ---
-# <a name="followupstatus"></a><span data-ttu-id="4e70e-103">FollowUpStatus</span><span class="sxs-lookup"><span data-stu-id="4e70e-103">FollowUpStatus</span></span>
+# <a name="followupstatus"></a><span data-ttu-id="34e26-103">FollowUpStatus</span><span class="sxs-lookup"><span data-stu-id="34e26-103">FollowUpStatus</span></span>
 
   
   
-<span data-ttu-id="4e70e-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="4e70e-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="34e26-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="34e26-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="4e70e-105">Gibt die verschiedenen weiteren Statusarten für eine Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="4e70e-105">Specifies the different follow-up statuses for a message.</span></span>
+<span data-ttu-id="34e26-105">Gibt die verschiedenen weiteren Statusarten für eine Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="34e26-105">Specifies the different follow-up statuses for a message.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="4e70e-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="4e70e-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="34e26-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="34e26-106">Quick info</span></span>
 
 ```cpp
 enum FollowUpStatus { 
@@ -34,27 +34,27 @@ enum FollowUpStatus {
 
 ```
 
-## <a name="members"></a><span data-ttu-id="4e70e-107">Members</span><span class="sxs-lookup"><span data-stu-id="4e70e-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="34e26-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="34e26-107">Members</span></span>
 
- <span data-ttu-id="4e70e-108">_flwupNone_</span><span class="sxs-lookup"><span data-stu-id="4e70e-108">_flwupNone_</span></span>
+ <span data-ttu-id="34e26-108">_flwupNone_</span><span class="sxs-lookup"><span data-stu-id="34e26-108">_flwupNone_</span></span>
   
-> <span data-ttu-id="4e70e-109">Keine Nachsorge es wurde angegeben.</span><span class="sxs-lookup"><span data-stu-id="4e70e-109">No follow-up has been specified.</span></span>
+> <span data-ttu-id="34e26-109">Keine Nachsorge es wurde angegeben.</span><span class="sxs-lookup"><span data-stu-id="34e26-109">No follow-up has been specified.</span></span>
     
- <span data-ttu-id="4e70e-110">_flwupComplete_</span><span class="sxs-lookup"><span data-stu-id="4e70e-110">_flwupComplete_</span></span>
+ <span data-ttu-id="34e26-110">_flwupComplete_</span><span class="sxs-lookup"><span data-stu-id="34e26-110">_flwupComplete_</span></span>
   
-> <span data-ttu-id="4e70e-111">Die Nachricht ist abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="4e70e-111">The message is complete.</span></span>
+> <span data-ttu-id="34e26-111">Die Nachricht ist abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="34e26-111">The message is complete.</span></span>
     
- <span data-ttu-id="4e70e-112">_flwupMarked_</span><span class="sxs-lookup"><span data-stu-id="4e70e-112">_flwupMarked_</span></span>
+ <span data-ttu-id="34e26-112">_flwupMarked_</span><span class="sxs-lookup"><span data-stu-id="34e26-112">_flwupMarked_</span></span>
   
-> <span data-ttu-id="4e70e-113">Die Nachricht ist für die nachverfolgung gekennzeichnet.</span><span class="sxs-lookup"><span data-stu-id="4e70e-113">The message is marked for follow-up.</span></span>
+> <span data-ttu-id="34e26-113">Die Nachricht ist für die nachverfolgung gekennzeichnet.</span><span class="sxs-lookup"><span data-stu-id="34e26-113">The message is marked for follow-up.</span></span>
     
- <span data-ttu-id="4e70e-114">_flwupMAX_</span><span class="sxs-lookup"><span data-stu-id="4e70e-114">_flwupMAX_</span></span>
+ <span data-ttu-id="34e26-114">_flwupMAX_</span><span class="sxs-lookup"><span data-stu-id="34e26-114">_flwupMAX_</span></span>
   
-> <span data-ttu-id="4e70e-115">Die Anzahl der verschiedenen Statusarten für Nachsorge unterstützt.</span><span class="sxs-lookup"><span data-stu-id="4e70e-115">The number of different statuses supported for follow-up.</span></span>
+> <span data-ttu-id="34e26-115">Die Anzahl der verschiedenen Statusarten für Nachsorge unterstützt.</span><span class="sxs-lookup"><span data-stu-id="34e26-115">The number of different statuses supported for follow-up.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="4e70e-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4e70e-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="34e26-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="34e26-116">See also</span></span>
 
 
 
-[<span data-ttu-id="4e70e-117">Kanonische PidTagFlagStatus-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="4e70e-117">PidTagFlagStatus Canonical Property</span></span>](pidtagflagstatus-canonical-property.md)
+[<span data-ttu-id="34e26-117">PidTagFlagStatus (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="34e26-117">PidTagFlagStatus Canonical Property</span></span>](pidtagflagstatus-canonical-property.md)
 
