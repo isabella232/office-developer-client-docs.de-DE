@@ -19,19 +19,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791414"
 ---
-# <a name="checkparms"></a><span data-ttu-id="a0c12-103">CheckParms</span><span class="sxs-lookup"><span data-stu-id="a0c12-103">CheckParms</span></span>
+# <a name="checkparms"></a><span data-ttu-id="e1956-103">CheckParms</span><span class="sxs-lookup"><span data-stu-id="e1956-103">CheckParms</span></span>
 
   
   
-<span data-ttu-id="a0c12-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a0c12-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="e1956-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e1956-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="a0c12-105">Ruft eine interne Funktion zum debugging Parameter für Webdienstmethoden aufgerufen von MAPI-Anbieter zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="a0c12-105">Calls an internal function to validate debugging parameters on service provider methods called by MAPI.</span></span> 
+<span data-ttu-id="e1956-105">Ruft eine interne Funktion zum debugging Parameter für Webdienstmethoden aufgerufen von MAPI-Anbieter zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="e1956-105">Calls an internal function to validate debugging parameters on service provider methods called by MAPI.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a0c12-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="a0c12-106">Header file:</span></span>  <br/> |<span data-ttu-id="a0c12-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="a0c12-107">Mapival.h</span></span>  <br/> |
-|<span data-ttu-id="a0c12-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="a0c12-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="a0c12-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="a0c12-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="a0c12-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="a0c12-110">Called by:</span></span>  <br/> |<span data-ttu-id="a0c12-111">Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="a0c12-111">Service providers</span></span>  <br/> |
+|<span data-ttu-id="e1956-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="e1956-106">Header file:</span></span>  <br/> |<span data-ttu-id="e1956-107">Mapival.h</span><span class="sxs-lookup"><span data-stu-id="e1956-107">Mapival.h</span></span>  <br/> |
+|<span data-ttu-id="e1956-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="e1956-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="e1956-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="e1956-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="e1956-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="e1956-110">Called by:</span></span>  <br/> |<span data-ttu-id="e1956-111">Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="e1956-111">Service providers</span></span>  <br/> |
    
 ```cpp
 HRESULT CheckParms(
@@ -40,24 +40,24 @@ HRESULT CheckParms(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="a0c12-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="a0c12-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="e1956-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="e1956-112">Parameters</span></span>
 
- <span data-ttu-id="a0c12-113">_eMethod_</span><span class="sxs-lookup"><span data-stu-id="a0c12-113">_eMethod_</span></span>
+ <span data-ttu-id="e1956-113">_eMethod_</span><span class="sxs-lookup"><span data-stu-id="e1956-113">_eMethod_</span></span>
   
-> <span data-ttu-id="a0c12-114">[in] Gibt den-Enumeration zurück, die-Methode, um zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="a0c12-114">[in] Specifies, by enumeration, the method to validate.</span></span> 
+> <span data-ttu-id="e1956-114">[in] Gibt den-Enumeration zurück, die-Methode, um zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="e1956-114">[in] Specifies, by enumeration, the method to validate.</span></span> 
     
- <span data-ttu-id="a0c12-115">_Erster_</span><span class="sxs-lookup"><span data-stu-id="a0c12-115">_First_</span></span>
+ <span data-ttu-id="e1956-115">_Erster_</span><span class="sxs-lookup"><span data-stu-id="e1956-115">_First_</span></span>
   
-> <span data-ttu-id="a0c12-116">[in] Zeiger auf das erste Argument im Stapel.</span><span class="sxs-lookup"><span data-stu-id="a0c12-116">[in] Pointer to the first argument on the stack.</span></span>
+> <span data-ttu-id="e1956-116">[in] Zeiger auf das erste Argument im Stapel.</span><span class="sxs-lookup"><span data-stu-id="e1956-116">[in] Pointer to the first argument on the stack.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a0c12-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a0c12-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e1956-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e1956-117">Return value</span></span>
 
-<span data-ttu-id="a0c12-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="a0c12-118">S_OK</span></span> 
+<span data-ttu-id="e1956-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="e1956-118">S_OK</span></span> 
   
-> <span data-ttu-id="a0c12-119">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="a0c12-119">The call succeeded.</span></span>
+> <span data-ttu-id="e1956-119">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="e1956-119">The call succeeded.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="a0c12-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a0c12-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e1956-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e1956-120">Remarks</span></span>
 
-<span data-ttu-id="a0c12-121">Im Gegensatz zu den [ValidateParms](validateparms.md) und [UlValidateParms](ulvalidateparms.md) Makros führt das Makro **CheckParms** keine vollständige Parameter Überprüfung durch.</span><span class="sxs-lookup"><span data-stu-id="a0c12-121">In contrast to the [ValidateParms](validateparms.md) and [UlValidateParms](ulvalidateparms.md) macros, the **CheckParms** macro does not perform a full parameter validation.</span></span> <span data-ttu-id="a0c12-122">Übergeben Sie Parameter zwischen MAPI- und Service Provider wird angenommen, dass richtig sein, damit **CheckParms** nur eine Debug-Überprüfung durchführt.</span><span class="sxs-lookup"><span data-stu-id="a0c12-122">Parameters passed between MAPI and service providers are assumed to be correct, so **CheckParms** performs a debug validation only.</span></span> 
+<span data-ttu-id="e1956-121">Im Gegensatz zu den [ValidateParms](validateparms.md) und [UlValidateParms](ulvalidateparms.md) Makros führt das Makro **CheckParms** keine vollständige Parameter Überprüfung durch.</span><span class="sxs-lookup"><span data-stu-id="e1956-121">In contrast to the [ValidateParms](validateparms.md) and [UlValidateParms](ulvalidateparms.md) macros, the **CheckParms** macro does not perform a full parameter validation.</span></span> <span data-ttu-id="e1956-122">Übergeben Sie Parameter zwischen MAPI- und Service Provider wird angenommen, dass richtig sein, damit **CheckParms** nur eine Debug-Überprüfung durchführt.</span><span class="sxs-lookup"><span data-stu-id="e1956-122">Parameters passed between MAPI and service providers are assumed to be correct, so **CheckParms** performs a debug validation only.</span></span> 
   
 

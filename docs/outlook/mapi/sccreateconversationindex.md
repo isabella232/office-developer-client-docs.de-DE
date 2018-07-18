@@ -19,19 +19,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795454"
 ---
-# <a name="sccreateconversationindex"></a><span data-ttu-id="01f81-103">ScCreateConversationIndex</span><span class="sxs-lookup"><span data-stu-id="01f81-103">ScCreateConversationIndex</span></span>
+# <a name="sccreateconversationindex"></a><span data-ttu-id="1f746-103">ScCreateConversationIndex</span><span class="sxs-lookup"><span data-stu-id="1f746-103">ScCreateConversationIndex</span></span>
 
   
   
-<span data-ttu-id="01f81-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="01f81-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="1f746-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1f746-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="01f81-105">Gibt an, in dem in einem Thread Nachricht eine Nachricht gehört.</span><span class="sxs-lookup"><span data-stu-id="01f81-105">Indicates where in a message thread a message belongs.</span></span> 
+<span data-ttu-id="1f746-105">Gibt an, in dem in einem Thread Nachricht eine Nachricht gehört.</span><span class="sxs-lookup"><span data-stu-id="1f746-105">Indicates where in a message thread a message belongs.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="01f81-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="01f81-106">Header file:</span></span>  <br/> |<span data-ttu-id="01f81-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="01f81-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="01f81-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="01f81-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="01f81-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="01f81-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="01f81-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="01f81-110">Called by:</span></span>  <br/> |<span data-ttu-id="01f81-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="01f81-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="1f746-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="1f746-106">Header file:</span></span>  <br/> |<span data-ttu-id="1f746-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="1f746-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="1f746-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="1f746-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="1f746-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="1f746-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="1f746-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="1f746-110">Called by:</span></span>  <br/> |<span data-ttu-id="1f746-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="1f746-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 SCODE ScCreateConversationIndex(
@@ -42,28 +42,28 @@ SCODE ScCreateConversationIndex(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="01f81-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="01f81-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="1f746-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="1f746-112">Parameters</span></span>
 
- <span data-ttu-id="01f81-113">_cbParent_</span><span class="sxs-lookup"><span data-stu-id="01f81-113">_cbParent_</span></span>
+ <span data-ttu-id="1f746-113">_cbParent_</span><span class="sxs-lookup"><span data-stu-id="1f746-113">_cbParent_</span></span>
   
-> <span data-ttu-id="01f81-114">[in] Anzahl der Bytes in der übergeordneten Unterhaltung Index.</span><span class="sxs-lookup"><span data-stu-id="01f81-114">[in] Count of bytes in the parent conversation index.</span></span>
+> <span data-ttu-id="1f746-114">[in] Anzahl der Bytes in der übergeordneten Unterhaltung Index.</span><span class="sxs-lookup"><span data-stu-id="1f746-114">[in] Count of bytes in the parent conversation index.</span></span>
     
- <span data-ttu-id="01f81-115">_lpbParent_</span><span class="sxs-lookup"><span data-stu-id="01f81-115">_lpbParent_</span></span>
+ <span data-ttu-id="1f746-115">_lpbParent_</span><span class="sxs-lookup"><span data-stu-id="1f746-115">_lpbParent_</span></span>
   
-> <span data-ttu-id="01f81-116">[in] Zeiger auf Bytes im übergeordneten Unterhaltung Index.</span><span class="sxs-lookup"><span data-stu-id="01f81-116">[in] Pointer to bytes in the parent conversation index.</span></span> <span data-ttu-id="01f81-117">Dies kann NULL sein, wenn _CbParent_ gleich NULL ist.</span><span class="sxs-lookup"><span data-stu-id="01f81-117">This may be NULL if  _cbParent_ is zero.</span></span> 
+> <span data-ttu-id="1f746-116">[in] Zeiger auf Bytes im übergeordneten Unterhaltung Index.</span><span class="sxs-lookup"><span data-stu-id="1f746-116">[in] Pointer to bytes in the parent conversation index.</span></span> <span data-ttu-id="1f746-117">Dies kann NULL sein, wenn _CbParent_ gleich NULL ist.</span><span class="sxs-lookup"><span data-stu-id="1f746-117">This may be NULL if  _cbParent_ is zero.</span></span> 
     
- <span data-ttu-id="01f81-118">_lpcbIndex_</span><span class="sxs-lookup"><span data-stu-id="01f81-118">_lpcbIndex_</span></span>
+ <span data-ttu-id="1f746-118">_lpcbIndex_</span><span class="sxs-lookup"><span data-stu-id="1f746-118">_lpcbIndex_</span></span>
   
-> <span data-ttu-id="01f81-119">[out] Zeiger auf die Anzahl der Bytes in den neuen Unterhaltung Index durch den Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="01f81-119">[out] Pointer to the count of bytes in the new conversation index returned by the call.</span></span> 
+> <span data-ttu-id="1f746-119">[out] Zeiger auf die Anzahl der Bytes in den neuen Unterhaltung Index durch den Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1f746-119">[out] Pointer to the count of bytes in the new conversation index returned by the call.</span></span> 
     
- <span data-ttu-id="01f81-120">_lppbIndex_</span><span class="sxs-lookup"><span data-stu-id="01f81-120">_lppbIndex_</span></span>
+ <span data-ttu-id="1f746-120">_lppbIndex_</span><span class="sxs-lookup"><span data-stu-id="1f746-120">_lppbIndex_</span></span>
   
-> <span data-ttu-id="01f81-121">[out] Zeiger auf einen Zeiger auf den neuen Unterhaltung Index durch den Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="01f81-121">[out] Pointer to a pointer to the new conversation index returned by the call.</span></span>
+> <span data-ttu-id="1f746-121">[out] Zeiger auf einen Zeiger auf den neuen Unterhaltung Index durch den Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1f746-121">[out] Pointer to a pointer to the new conversation index returned by the call.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="01f81-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="01f81-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1f746-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1f746-122">Return value</span></span>
 
-<span data-ttu-id="01f81-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="01f81-123">S_OK</span></span> 
+<span data-ttu-id="1f746-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="1f746-123">S_OK</span></span> 
   
-> <span data-ttu-id="01f81-124">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="01f81-124">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="1f746-124">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="1f746-124">The call succeeded and has returned the expected value or values.</span></span>
     
 

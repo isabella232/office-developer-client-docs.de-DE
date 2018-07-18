@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796876"
 ---
-# <a name="doccreation-function"></a><span data-ttu-id="a4e36-103">DOCCREATION-Funktion</span><span class="sxs-lookup"><span data-stu-id="a4e36-103">DOCCREATION Function</span></span>
+# <a name="doccreation-function"></a><span data-ttu-id="935aa-103">DOCCREATION Function</span><span class="sxs-lookup"><span data-stu-id="935aa-103">DOCCREATION Function</span></span>
 
-<span data-ttu-id="a4e36-104">Gibt das Datum und die Uhrzeit der Erstellung ein Dokuments, als seriellen Wert.</span><span class="sxs-lookup"><span data-stu-id="a4e36-104">Returns the date and time a document was created, as a serial value.</span></span>
+<span data-ttu-id="935aa-104">Gibt das Datum und die Uhrzeit der Erstellung ein Dokuments, als seriellen Wert.</span><span class="sxs-lookup"><span data-stu-id="935aa-104">Returns the date and time a document was created, as a serial value.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="a4e36-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="a4e36-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="935aa-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="935aa-105">Syntax</span></span>
 
-<span data-ttu-id="a4e36-106">DOCCREATION ()</span><span class="sxs-lookup"><span data-stu-id="a4e36-106">DOCCREATION ()</span></span>
+<span data-ttu-id="935aa-106">DOCCREATION ()</span><span class="sxs-lookup"><span data-stu-id="935aa-106">DOCCREATION ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="a4e36-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a4e36-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="935aa-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="935aa-107">Remarks</span></span>
 
-<span data-ttu-id="a4e36-108">Verwenden Sie die FORMAT-Funktion, um den Wert zu formatieren.</span><span class="sxs-lookup"><span data-stu-id="a4e36-108">Use the FORMAT function to format the value.</span></span> 
+<span data-ttu-id="935aa-108">Verwenden Sie die FORMAT-Funktion, um den Wert zu formatieren.</span><span class="sxs-lookup"><span data-stu-id="935aa-108">Use the FORMAT function to format the value.</span></span> 
   
 

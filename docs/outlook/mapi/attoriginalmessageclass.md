@@ -15,10 +15,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791355"
 ---
-# <a name="attoriginalmessageclass"></a><span data-ttu-id="e2f5a-103">attOriginalMessageClass</span><span class="sxs-lookup"><span data-stu-id="e2f5a-103">attOriginalMessageClass</span></span>
+# <a name="attoriginalmessageclass"></a><span data-ttu-id="7d6a2-103">attOriginalMessageClass</span><span class="sxs-lookup"><span data-stu-id="7d6a2-103">attOriginalMessageClass</span></span>
 
-<span data-ttu-id="e2f5a-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e2f5a-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="7d6a2-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7d6a2-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="e2f5a-105">Eine Nachrichtenklasse wird als Zeichenfolge gespeichert.</span><span class="sxs-lookup"><span data-stu-id="e2f5a-105">A message class is stored as a string.</span></span> <span data-ttu-id="e2f5a-106">Die codierte Zeichenfolge enthält in der Regel der MAPI-angegebene Name der Nachrichtenklasse.</span><span class="sxs-lookup"><span data-stu-id="e2f5a-106">The encoded string usually holds the MAPI-specified name of the message class.</span></span>
+<span data-ttu-id="7d6a2-105">Eine Nachrichtenklasse wird als Zeichenfolge gespeichert.</span><span class="sxs-lookup"><span data-stu-id="7d6a2-105">A message class is stored as a string.</span></span> <span data-ttu-id="7d6a2-106">Die codierte Zeichenfolge enthält in der Regel der MAPI-angegebene Name der Nachrichtenklasse.</span><span class="sxs-lookup"><span data-stu-id="7d6a2-106">The encoded string usually holds the MAPI-specified name of the message class.</span></span>
   
 

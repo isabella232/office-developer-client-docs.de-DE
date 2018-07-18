@@ -16,28 +16,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796868"
 ---
-# <a name="docmd-function"></a><span data-ttu-id="54947-103">DOCMD Function</span><span class="sxs-lookup"><span data-stu-id="54947-103">DOCMD Function</span></span>
+# <a name="docmd-function"></a><span data-ttu-id="972b3-103">DOCMD Function</span><span class="sxs-lookup"><span data-stu-id="972b3-103">DOCMD Function</span></span>
 
-<span data-ttu-id="54947-104">Führt den angegebenen Befehl.</span><span class="sxs-lookup"><span data-stu-id="54947-104">Performs the identified command.</span></span>
+<span data-ttu-id="972b3-104">Führt den angegebenen Befehl.</span><span class="sxs-lookup"><span data-stu-id="972b3-104">Performs the identified command.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="54947-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="54947-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="972b3-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="972b3-105">Syntax</span></span>
 
- <span data-ttu-id="54947-106">**DOCMD** ( _CommandID_)</span><span class="sxs-lookup"><span data-stu-id="54947-106">**DOCMD**( _commandID_)</span></span>
+ <span data-ttu-id="972b3-106">**DOCMD** ( _CommandID_)</span><span class="sxs-lookup"><span data-stu-id="972b3-106">**DOCMD**( _commandID_)</span></span>
   
-### <a name="parameters"></a><span data-ttu-id="54947-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="54947-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="972b3-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="972b3-107">Parameters</span></span>
 
-|<span data-ttu-id="54947-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="54947-108">**Name**</span></span>|<span data-ttu-id="54947-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="54947-109">**Required/Optional**</span></span>|<span data-ttu-id="54947-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="54947-110">**Data Type**</span></span>|<span data-ttu-id="54947-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="54947-111">**Description**</span></span>|
+|<span data-ttu-id="972b3-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="972b3-108">**Name**</span></span>|<span data-ttu-id="972b3-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="972b3-109">**Required/Optional**</span></span>|<span data-ttu-id="972b3-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="972b3-110">**Data Type**</span></span>|<span data-ttu-id="972b3-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="972b3-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="54947-112">_commandID_</span><span class="sxs-lookup"><span data-stu-id="54947-112">_commandID_</span></span> <br/> |<span data-ttu-id="54947-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="54947-113">Required</span></span>  <br/> |<span data-ttu-id="54947-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="54947-114">**Number**</span></span> <br/> | <span data-ttu-id="54947-115">Der auszuführende Befehl.</span><span class="sxs-lookup"><span data-stu-id="54947-115">The command to perform.</span></span>  <br/> |
+| <span data-ttu-id="972b3-112">_commandID_</span><span class="sxs-lookup"><span data-stu-id="972b3-112">_commandID_</span></span> <br/> |<span data-ttu-id="972b3-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="972b3-113">Required</span></span>  <br/> |<span data-ttu-id="972b3-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="972b3-114">**Number**</span></span> <br/> | <span data-ttu-id="972b3-115">Der auszuführende Befehl.</span><span class="sxs-lookup"><span data-stu-id="972b3-115">The command to perform.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="54947-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="54947-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="972b3-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="972b3-116">Remarks</span></span>
 
-<span data-ttu-id="54947-117">Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden Sie unter dem Thema "DoCmd/DOCMD-Befehle" in der Microsoft Visio 2013-Automatisierungsreferenz.</span><span class="sxs-lookup"><span data-stu-id="54947-117">For a list of commands that are supported with the DOCMD function, see the topic "DoCmd/DOCMD commands" in the Microsoft Visio 2013 Automation Reference.</span></span> 
+<span data-ttu-id="972b3-117">Eine Liste der Befehle, die mit der DOCMD-Funktion unterstützt werden, finden Sie unter dem Thema "DoCmd/DOCMD-Befehle" in der Microsoft Visio 2013-Automatisierungsreferenz.</span><span class="sxs-lookup"><span data-stu-id="972b3-117">For a list of commands that are supported with the DOCMD function, see the topic "DoCmd/DOCMD commands" in the Microsoft Visio 2013 Automation Reference.</span></span> 
   
-## <a name="example"></a><span data-ttu-id="54947-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="54947-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="972b3-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="972b3-118">Example</span></span>
 
  `DOCMD (1312)`
   
-<span data-ttu-id="54947-119">Bewirkt, dass das Dialogfeld **Shape-Daten** in der Benutzeroberfläche angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="54947-119">Causes the **Shape Data** dialog box to appear in the user interface.</span></span> 
+<span data-ttu-id="972b3-119">Bewirkt, dass das Dialogfeld **Shape-Daten** auf der Benutzeroberfläche angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="972b3-119">Causes the **Shape Data** dialog box to appear in the user interface.</span></span> 
   
 

@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791173"
 ---
-# <a name="named-properties-account-management-api"></a><span data-ttu-id="6f0c7-103">Benannte Eigenschaften (Konto Management-API)</span><span class="sxs-lookup"><span data-stu-id="6f0c7-103">Named properties (Account management API)</span></span>
+# <a name="named-properties-account-management-api"></a><span data-ttu-id="f4f74-103">Benannte Eigenschaften (Konto Management-API)</span><span class="sxs-lookup"><span data-stu-id="f4f74-103">Named properties (Account management API)</span></span>
 
-<span data-ttu-id="6f0c7-104">Dieser Abschnitt beschreibt die Eigenschaften, die in der Konto-Verwaltungs-API.</span><span class="sxs-lookup"><span data-stu-id="6f0c7-104">This section describes the named properties in the Account Management API.</span></span>
+<span data-ttu-id="f4f74-104">Dieser Abschnitt beschreibt die Eigenschaften, die in der Konto-Verwaltungs-API.</span><span class="sxs-lookup"><span data-stu-id="f4f74-104">This section describes the named properties in the Account Management API.</span></span>
   
-|<span data-ttu-id="6f0c7-105">**Benannte Eigenschaft**</span><span class="sxs-lookup"><span data-stu-id="6f0c7-105">**Named property**</span></span>|<span data-ttu-id="6f0c7-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="6f0c7-106">**Description**</span></span>|
+|<span data-ttu-id="f4f74-105">**Benannte Eigenschaft**</span><span class="sxs-lookup"><span data-stu-id="f4f74-105">**Named property**</span></span>|<span data-ttu-id="f4f74-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="f4f74-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="6f0c7-107">PidLidInternetAccountName</span><span class="sxs-lookup"><span data-stu-id="6f0c7-107">PidLidInternetAccountName</span></span>](pidlidinternetaccountname.md) <br/> |<span data-ttu-id="6f0c7-108">Gibt den Anzeigenamen des Kontos, das die Nachricht nicht übermittelt.</span><span class="sxs-lookup"><span data-stu-id="6f0c7-108">Returns the display name of the account that delivered the message.</span></span>  <br/> |
-|[<span data-ttu-id="6f0c7-109">PidLidInternetAccountStamp</span><span class="sxs-lookup"><span data-stu-id="6f0c7-109">PidLidInternetAccountStamp</span></span>](pidlidinternetaccountstamp.md) <br/> |<span data-ttu-id="6f0c7-110">Gibt den Konto Zeitstempel für das Konto, das die Nachricht nicht übermittelt.</span><span class="sxs-lookup"><span data-stu-id="6f0c7-110">Returns the account stamp of the account that delivered the message.</span></span>  <br/> |
+|[<span data-ttu-id="f4f74-107">PidLidInternetAccountName</span><span class="sxs-lookup"><span data-stu-id="f4f74-107">PidLidInternetAccountName</span></span>](pidlidinternetaccountname.md) <br/> |<span data-ttu-id="f4f74-108">Gibt den Anzeigenamen des Kontos, das die Nachricht nicht übermittelt.</span><span class="sxs-lookup"><span data-stu-id="f4f74-108">Returns the display name of the account that delivered the message.</span></span>  <br/> |
+|[<span data-ttu-id="f4f74-109">PidLidInternetAccountStamp</span><span class="sxs-lookup"><span data-stu-id="f4f74-109">PidLidInternetAccountStamp</span></span>](pidlidinternetaccountstamp.md) <br/> |<span data-ttu-id="f4f74-110">Gibt den Konto Zeitstempel für das Konto, das die Nachricht nicht übermittelt.</span><span class="sxs-lookup"><span data-stu-id="f4f74-110">Returns the account stamp of the account that delivered the message.</span></span>  <br/> |
    
 

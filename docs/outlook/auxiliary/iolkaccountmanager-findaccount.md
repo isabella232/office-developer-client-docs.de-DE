@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791092"
 ---
-# <a name="iolkaccountmanagerfindaccount"></a><span data-ttu-id="e6b3e-103">IOlkAccountManager::FindAccount</span><span class="sxs-lookup"><span data-stu-id="e6b3e-103">IOlkAccountManager::FindAccount</span></span>
+# <a name="iolkaccountmanagerfindaccount"></a><span data-ttu-id="0ee16-103">IOlkAccountManager::FindAccount</span><span class="sxs-lookup"><span data-stu-id="0ee16-103">IOlkAccountManager::FindAccount</span></span>
 
-<span data-ttu-id="e6b3e-104">Gibt ein Konto mit Eigenschaftswert ist.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-104">Finds an account by property value.</span></span>
+<span data-ttu-id="0ee16-104">Gibt ein Konto mit Eigenschaftswert ist.</span><span class="sxs-lookup"><span data-stu-id="0ee16-104">Finds an account by property value.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e6b3e-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="e6b3e-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="0ee16-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="0ee16-105">Quick info</span></span>
 
-<span data-ttu-id="e6b3e-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="e6b3e-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
+<span data-ttu-id="0ee16-106">See [IOlkAccountManager](iolkaccountmanager.md).</span><span class="sxs-lookup"><span data-stu-id="0ee16-106">See [IOlkAccountManager](iolkaccountmanager.md).</span></span>
   
 ```cpp
 HRESULT IOlkAccountManager::FindAccount (  
@@ -30,32 +30,32 @@ HRESULT IOlkAccountManager::FindAccount (
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e6b3e-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="e6b3e-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0ee16-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="0ee16-107">Parameters</span></span>
 
-<span data-ttu-id="e6b3e-108">_dwProp_</span><span class="sxs-lookup"><span data-stu-id="e6b3e-108">_dwProp_</span></span>
+<span data-ttu-id="0ee16-108">_dwProp_</span><span class="sxs-lookup"><span data-stu-id="0ee16-108">_dwProp_</span></span>
   
-> <span data-ttu-id="e6b3e-109">[in] Die Eigenschaft für die Suche.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-109">[in] The property to search on.</span></span> <span data-ttu-id="e6b3e-110">[PROP_ACCT_ID](prop_acct_id.md) oder [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)muss sein.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-110">Must be [PROP_ACCT_ID](prop_acct_id.md) or [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md).</span></span>
+> <span data-ttu-id="0ee16-109">[in] Die Eigenschaft für die Suche.</span><span class="sxs-lookup"><span data-stu-id="0ee16-109">[in] The property to search on.</span></span> <span data-ttu-id="0ee16-110">[PROP_ACCT_ID](prop_acct_id.md) oder [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md)muss sein.</span><span class="sxs-lookup"><span data-stu-id="0ee16-110">Must be [PROP_ACCT_ID](prop_acct_id.md) or [PROP_ACCT_IS_EXCH](prop_acct_is_exch.md).</span></span>
     
-<span data-ttu-id="e6b3e-111">_pVar_</span><span class="sxs-lookup"><span data-stu-id="e6b3e-111">_pVar_</span></span>
+<span data-ttu-id="0ee16-111">_pVar_</span><span class="sxs-lookup"><span data-stu-id="0ee16-111">_pVar_</span></span>
   
-> <span data-ttu-id="e6b3e-112">[in] Der Wert übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-112">[in] The value to match.</span></span>
+> <span data-ttu-id="0ee16-112">[in] Der Wert übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="0ee16-112">[in] The value to match.</span></span>
     
-<span data-ttu-id="e6b3e-113">_ppAccount_</span><span class="sxs-lookup"><span data-stu-id="e6b3e-113">_ppAccount_</span></span>
+<span data-ttu-id="0ee16-113">_ppAccount_</span><span class="sxs-lookup"><span data-stu-id="0ee16-113">_ppAccount_</span></span>
   
-> <span data-ttu-id="e6b3e-114">[out] Das Konto gefunden.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-114">[out] The account found.</span></span> <span data-ttu-id="e6b3e-115">Dieses Objekt unterstützt eine [IOlkAccount](iolkaccount.md) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-115">This object supports an [IOlkAccount](iolkaccount.md) interface.</span></span> 
+> <span data-ttu-id="0ee16-114">[out] Das Konto gefunden.</span><span class="sxs-lookup"><span data-stu-id="0ee16-114">[out] The account found.</span></span> <span data-ttu-id="0ee16-115">Dieses Objekt unterstützt eine [IOlkAccount](iolkaccount.md) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="0ee16-115">This object supports an [IOlkAccount](iolkaccount.md) interface.</span></span> 
     
-## <a name="return-values"></a><span data-ttu-id="e6b3e-116">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="e6b3e-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="0ee16-116">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="0ee16-116">Return values</span></span>
 
-|<span data-ttu-id="e6b3e-117">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="e6b3e-117">**HRESULT**</span></span>|<span data-ttu-id="e6b3e-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e6b3e-118">**Description**</span></span>|
+|<span data-ttu-id="0ee16-117">**[HRESULT]**</span><span class="sxs-lookup"><span data-stu-id="0ee16-117">**HRESULT**</span></span>|<span data-ttu-id="0ee16-118">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="0ee16-118">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="e6b3e-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="e6b3e-119">S_OK</span></span>  <br/> |<span data-ttu-id="e6b3e-120">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-120">The call succeeded.</span></span>  <br/> |
-|<span data-ttu-id="e6b3e-121">E_ACCT_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="e6b3e-121">E_ACCT_NOT_FOUND</span></span>  <br/> |<span data-ttu-id="e6b3e-122">Das angegebene Konto kann nicht gefunden werden.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-122">The specified account cannot be found.</span></span>  <br/> |
-|<span data-ttu-id="e6b3e-123">E_OLK_NOT_INITIALIZED</span><span class="sxs-lookup"><span data-stu-id="e6b3e-123">E_OLK_NOT_INITIALIZED</span></span>  <br/> |<span data-ttu-id="e6b3e-124">Konto-Manager wurde nicht für die Verwendung initialisiert.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-124">The account manager has not been initialized for use.</span></span>  <br/> |
-|<span data-ttu-id="e6b3e-125">E_OLK_PARAM_NOT_SUPPORTED</span><span class="sxs-lookup"><span data-stu-id="e6b3e-125">E_OLK_PARAM_NOT_SUPPORTED</span></span>  <br/> |<span data-ttu-id="e6b3e-126">Ein oder mehrere Parameter sind ungültig.</span><span class="sxs-lookup"><span data-stu-id="e6b3e-126">One or more parameters are invalid.</span></span>  <br/> |
+|<span data-ttu-id="0ee16-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="0ee16-119">S_OK</span></span>  <br/> |<span data-ttu-id="0ee16-120">Der Aufruf war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="0ee16-120">The call succeeded.</span></span>  <br/> |
+|<span data-ttu-id="0ee16-121">E_ACCT_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="0ee16-121">E_ACCT_NOT_FOUND</span></span>  <br/> |<span data-ttu-id="0ee16-122">Das angegebene Konto kann nicht gefunden werden.</span><span class="sxs-lookup"><span data-stu-id="0ee16-122">The specified account cannot be found.</span></span>  <br/> |
+|<span data-ttu-id="0ee16-123">E_OLK_NOT_INITIALIZED</span><span class="sxs-lookup"><span data-stu-id="0ee16-123">E_OLK_NOT_INITIALIZED</span></span>  <br/> |<span data-ttu-id="0ee16-124">Konto-Manager wurde nicht für die Verwendung initialisiert.</span><span class="sxs-lookup"><span data-stu-id="0ee16-124">The account manager has not been initialized for use.</span></span>  <br/> |
+|<span data-ttu-id="0ee16-125">E_OLK_PARAM_NOT_SUPPORTED</span><span class="sxs-lookup"><span data-stu-id="0ee16-125">E_OLK_PARAM_NOT_SUPPORTED</span></span>  <br/> |<span data-ttu-id="0ee16-126">Ein oder mehrere Parameter sind ungültig.</span><span class="sxs-lookup"><span data-stu-id="0ee16-126">One or more parameters are invalid.</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="e6b3e-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e6b3e-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0ee16-127">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0ee16-127">See also</span></span>
 
-- [<span data-ttu-id="e6b3e-128">ACCT_VARIANT</span><span class="sxs-lookup"><span data-stu-id="e6b3e-128">ACCT_VARIANT</span></span>](acct_variant.md)  
-- [<span data-ttu-id="e6b3e-129">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="e6b3e-129">Constants (Account management API)</span></span>](constants-account-management-api.md)  
-- [<span data-ttu-id="e6b3e-130">IOlkAccountHelper</span><span class="sxs-lookup"><span data-stu-id="e6b3e-130">IOlkAccountHelper</span></span>](iolkaccounthelper.md)
+- [<span data-ttu-id="0ee16-128">ACCT_VARIANT</span><span class="sxs-lookup"><span data-stu-id="0ee16-128">ACCT_VARIANT</span></span>](acct_variant.md)  
+- [<span data-ttu-id="0ee16-129">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="0ee16-129">Constants (Account management API)</span></span>](constants-account-management-api.md)  
+- [<span data-ttu-id="0ee16-130">IOlkAccountHelper</span><span class="sxs-lookup"><span data-stu-id="0ee16-130">IOlkAccountHelper</span></span>](iolkaccounthelper.md)
 

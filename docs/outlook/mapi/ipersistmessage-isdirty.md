@@ -19,39 +19,39 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792743"
 ---
-# <a name="ipersistmessageisdirty"></a><span data-ttu-id="0767b-103">IPersistMessage::IsDirty</span><span class="sxs-lookup"><span data-stu-id="0767b-103">IPersistMessage::IsDirty</span></span>
+# <a name="ipersistmessageisdirty"></a><span data-ttu-id="dd6c0-103">IPersistMessage::IsDirty</span><span class="sxs-lookup"><span data-stu-id="dd6c0-103">IPersistMessage::IsDirty</span></span>
 
   
   
-<span data-ttu-id="0767b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="0767b-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="dd6c0-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="dd6c0-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="0767b-105">Überprüft das Formular, damit die Änderungen, die seit dem letzten Speichervorgang vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="0767b-105">Checks the form for changes that were made since the last save.</span></span>
+<span data-ttu-id="dd6c0-105">Überprüft das Formular, damit die Änderungen, die seit dem letzten Speichervorgang vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="dd6c0-105">Checks the form for changes that were made since the last save.</span></span>
   
 ```cpp
 HRESULT IsDirty( void );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="0767b-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="0767b-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="dd6c0-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="dd6c0-106">Parameters</span></span>
 
-<span data-ttu-id="0767b-107">Keine</span><span class="sxs-lookup"><span data-stu-id="0767b-107">None</span></span>
+<span data-ttu-id="dd6c0-107">Keine</span><span class="sxs-lookup"><span data-stu-id="dd6c0-107">None</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="0767b-108">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0767b-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="dd6c0-108">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dd6c0-108">Return value</span></span>
 
-<span data-ttu-id="0767b-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="0767b-109">S_OK</span></span> 
+<span data-ttu-id="dd6c0-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="dd6c0-109">S_OK</span></span> 
   
-> <span data-ttu-id="0767b-110">Das Formular wurde geändert, die seit dem letzten Speichern vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="0767b-110">The form has changes that were made since it was last saved.</span></span>
+> <span data-ttu-id="dd6c0-110">Das Formular wurde geändert, die seit dem letzten Speichern vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="dd6c0-110">The form has changes that were made since it was last saved.</span></span>
     
-<span data-ttu-id="0767b-111">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="0767b-111">S_FALSE</span></span> 
+<span data-ttu-id="dd6c0-111">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="dd6c0-111">S_FALSE</span></span> 
   
-> <span data-ttu-id="0767b-112">Das Formular hat keine Änderungen, die seit dem letzten Speichern vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="0767b-112">The form does not have changes that were made since it was last saved.</span></span>
+> <span data-ttu-id="dd6c0-112">Das Formular hat keine Änderungen, die seit dem letzten Speichern vorgenommen wurden.</span><span class="sxs-lookup"><span data-stu-id="dd6c0-112">The form does not have changes that were made since it was last saved.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="0767b-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="0767b-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dd6c0-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dd6c0-113">Remarks</span></span>
 
-<span data-ttu-id="0767b-114">Formular Viewer rufen Sie die **IPersistMessage::IsDirty** -Methode, um zu bestimmen, ob die Nachricht Daten vorliegen.</span><span class="sxs-lookup"><span data-stu-id="0767b-114">Form viewers call the **IPersistMessage::IsDirty** method to determine whether the message has unsaved data.</span></span> 
+<span data-ttu-id="dd6c0-114">Formular Viewer rufen Sie die **IPersistMessage::IsDirty** -Methode, um zu bestimmen, ob die Nachricht Daten vorliegen.</span><span class="sxs-lookup"><span data-stu-id="dd6c0-114">Form viewers call the **IPersistMessage::IsDirty** method to determine whether the message has unsaved data.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="0767b-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0767b-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="dd6c0-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="dd6c0-115">See also</span></span>
 
 
 
-[<span data-ttu-id="0767b-116">IPersistMessage: IUnknown</span><span class="sxs-lookup"><span data-stu-id="0767b-116">IPersistMessage : IUnknown</span></span>](ipersistmessageiunknown.md)
+[<span data-ttu-id="dd6c0-116">IPersistMessage : IUnknown</span><span class="sxs-lookup"><span data-stu-id="dd6c0-116">IPersistMessage : IUnknown</span></span>](ipersistmessageiunknown.md)
 

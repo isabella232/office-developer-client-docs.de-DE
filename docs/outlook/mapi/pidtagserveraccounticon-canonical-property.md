@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagServerAccountIcon-Eigenschaft
+title: PidTagServerAccountIcon (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -15,30 +15,30 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795162"
 ---
-# <a name="pidtagserveraccounticon-canonical-property"></a><span data-ttu-id="b7857-103">Kanonische PidTagServerAccountIcon-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="b7857-103">PidTagServerAccountIcon Canonical Property</span></span>
+# <a name="pidtagserveraccounticon-canonical-property"></a><span data-ttu-id="34b98-103">PidTagServerAccountIcon (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="34b98-103">PidTagServerAccountIcon Canonical Property</span></span>
 
   
   
-<span data-ttu-id="b7857-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="b7857-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="34b98-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="34b98-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="b7857-105">Gibt das Symbol im **Auswahltool Konto**angezeigt.</span><span class="sxs-lookup"><span data-stu-id="b7857-105">Specifies the icon displayed in the **Account Picker**.</span></span>
+<span data-ttu-id="34b98-105">Gibt das Symbol im **Auswahltool Konto**angezeigt.</span><span class="sxs-lookup"><span data-stu-id="34b98-105">Specifies the icon displayed in the **Account Picker**.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b7857-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="b7857-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b7857-107">PR_SERVER_ACCOUNT_ICON</span><span class="sxs-lookup"><span data-stu-id="b7857-107">PR_SERVER_ACCOUNT_ICON</span></span>  <br/> |
-|<span data-ttu-id="b7857-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="b7857-108">Identifier:</span></span>  <br/> |<span data-ttu-id="b7857-109">0x341F</span><span class="sxs-lookup"><span data-stu-id="b7857-109">0x341F</span></span>  <br/> |
-|<span data-ttu-id="b7857-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="b7857-110">Data type:</span></span>  <br/> |<span data-ttu-id="b7857-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="b7857-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="b7857-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="b7857-112">Area:</span></span>  <br/> |<span data-ttu-id="b7857-113">Common</span><span class="sxs-lookup"><span data-stu-id="b7857-113">Common</span></span>  <br/> |
+|<span data-ttu-id="34b98-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="34b98-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="34b98-107">PR_SERVER_ACCOUNT_ICON</span><span class="sxs-lookup"><span data-stu-id="34b98-107">PR_SERVER_ACCOUNT_ICON</span></span>  <br/> |
+|<span data-ttu-id="34b98-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="34b98-108">Identifier:</span></span>  <br/> |<span data-ttu-id="34b98-109">0x341F</span><span class="sxs-lookup"><span data-stu-id="34b98-109">0x341F</span></span>  <br/> |
+|<span data-ttu-id="34b98-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="34b98-110">Data type:</span></span>  <br/> |<span data-ttu-id="34b98-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="34b98-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="34b98-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="34b98-112">Area:</span></span>  <br/> |<span data-ttu-id="34b98-113">Common</span><span class="sxs-lookup"><span data-stu-id="34b98-113">Common</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="b7857-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b7857-114">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="34b98-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="34b98-114">See also</span></span>
 
 
 
-[<span data-ttu-id="b7857-115">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b7857-115">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="34b98-115">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="34b98-115">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="b7857-116">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b7857-116">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="34b98-116">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="34b98-116">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="b7857-117">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="b7857-117">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="34b98-117">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="34b98-117">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="b7857-118">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="b7857-118">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="34b98-118">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="34b98-118">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

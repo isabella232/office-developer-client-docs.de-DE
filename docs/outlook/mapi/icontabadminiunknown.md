@@ -19,27 +19,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792035"
 ---
-# <a name="icontabadmin--iunknown"></a><span data-ttu-id="aa925-103">IContabAdmin: IUnknown</span><span class="sxs-lookup"><span data-stu-id="aa925-103">IContabAdmin : IUnknown</span></span>
+# <a name="icontabadmin--iunknown"></a><span data-ttu-id="7e6d4-103">IContabAdmin : IUnknown</span><span class="sxs-lookup"><span data-stu-id="7e6d4-103">IContabAdmin : IUnknown</span></span>
 
   
   
-<span data-ttu-id="aa925-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="aa925-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="7e6d4-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7e6d4-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="aa925-105">Entfernt wenden Sie sich an Ordnern aus dem Adressbuch von Microsoft Outlook 2010 und Microsoft Outlook 2013.</span><span class="sxs-lookup"><span data-stu-id="aa925-105">Removes contact folders from the Microsoft Outlook 2010 and Microsoft Outlook 2013 address book.</span></span>
+<span data-ttu-id="7e6d4-105">Entfernt wenden Sie sich an Ordnern aus dem Adressbuch von Microsoft Outlook 2010 und Microsoft Outlook 2013.</span><span class="sxs-lookup"><span data-stu-id="7e6d4-105">Removes contact folders from the Microsoft Outlook 2010 and Microsoft Outlook 2013 address book.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="aa925-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="aa925-106">Header file:</span></span>  <br/> |<span data-ttu-id="aa925-107">cabadmin.h</span><span class="sxs-lookup"><span data-stu-id="aa925-107">cabadmin.h</span></span>  <br/> |
-|<span data-ttu-id="aa925-108">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="aa925-108">Exposed by:</span></span>  <br/> ||
-|<span data-ttu-id="aa925-109">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="aa925-109">Implemented by:</span></span>  <br/> |[<span data-ttu-id="aa925-110">IABContainer: IMAPIContainer</span><span class="sxs-lookup"><span data-stu-id="aa925-110">IABContainer : IMAPIContainer</span></span>](iabcontainerimapicontainer.md) <br/> |
-|<span data-ttu-id="aa925-111">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="aa925-111">Called by:</span></span>  <br/> |<span data-ttu-id="aa925-112">CRM</span><span class="sxs-lookup"><span data-stu-id="aa925-112">CRM</span></span>  <br/> |
-|<span data-ttu-id="aa925-113">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="aa925-113">Interface identifier:</span></span>  <br/> |<span data-ttu-id="aa925-114">IID_IContabAdmin</span><span class="sxs-lookup"><span data-stu-id="aa925-114">IID_IContabAdmin</span></span>  <br/> |
-|<span data-ttu-id="aa925-115">Zeigertyp:</span><span class="sxs-lookup"><span data-stu-id="aa925-115">Pointer type:</span></span>  <br/> ||
+|<span data-ttu-id="7e6d4-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="7e6d4-106">Header file:</span></span>  <br/> |<span data-ttu-id="7e6d4-107">cabadmin.h</span><span class="sxs-lookup"><span data-stu-id="7e6d4-107">cabadmin.h</span></span>  <br/> |
+|<span data-ttu-id="7e6d4-108">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-108">Exposed by:</span></span>  <br/> ||
+|<span data-ttu-id="7e6d4-109">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-109">Implemented by:</span></span>  <br/> |[<span data-ttu-id="7e6d4-110">IABContainer : IMAPIContainer</span><span class="sxs-lookup"><span data-stu-id="7e6d4-110">IABContainer : IMAPIContainer</span></span>](iabcontainerimapicontainer.md) <br/> |
+|<span data-ttu-id="7e6d4-111">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-111">Called by:</span></span>  <br/> |<span data-ttu-id="7e6d4-112">CRM</span><span class="sxs-lookup"><span data-stu-id="7e6d4-112">CRM</span></span>  <br/> |
+|<span data-ttu-id="7e6d4-113">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-113">Interface identifier:</span></span>  <br/> |<span data-ttu-id="7e6d4-114">IID_IContabAdmin</span><span class="sxs-lookup"><span data-stu-id="7e6d4-114">IID_IContabAdmin</span></span>  <br/> |
+|<span data-ttu-id="7e6d4-115">Zeigertyp:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-115">Pointer type:</span></span>  <br/> ||
    
-## <a name="vtable-order"></a><span data-ttu-id="aa925-116">Vtable-Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="aa925-116">Vtable order</span></span>
+## <a name="vtable-order"></a><span data-ttu-id="7e6d4-116">Vtable-Reihenfolge</span><span class="sxs-lookup"><span data-stu-id="7e6d4-116">Vtable order</span></span>
 
 |||
 |:-----|:-----|
-|[<span data-ttu-id="aa925-117">IContabAdmin::RemoveStore</span><span class="sxs-lookup"><span data-stu-id="aa925-117">IContabAdmin::RemoveStore</span></span>](icontabadmin-removestore.md) <br/> |<span data-ttu-id="aa925-118">Entfernt den Kontakt Adresse Buch (CAB) mit der angegebenen Eintrags-ID aus der Adressbuchhierarchie angegeben.</span><span class="sxs-lookup"><span data-stu-id="aa925-118">Removes the Contact Address Book (CAB) specified by the given entry ID from the address book hierarchy.</span></span>  <br/> |
+|[<span data-ttu-id="7e6d4-117">IContabAdmin::RemoveStore</span><span class="sxs-lookup"><span data-stu-id="7e6d4-117">IContabAdmin::RemoveStore</span></span>](icontabadmin-removestore.md) <br/> |<span data-ttu-id="7e6d4-118">Entfernt den Kontakt Adresse Buch (CAB) mit der angegebenen Eintrags-ID aus der Adressbuchhierarchie angegeben.</span><span class="sxs-lookup"><span data-stu-id="7e6d4-118">Removes the Contact Address Book (CAB) specified by the given entry ID from the address book hierarchy.</span></span>  <br/> |
    
 

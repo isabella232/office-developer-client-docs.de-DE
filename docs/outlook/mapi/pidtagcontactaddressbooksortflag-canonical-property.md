@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagContactAddressBookSortFlag-Eigenschaft
+title: PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,46 +19,46 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794182"
 ---
-# <a name="pidtagcontactaddressbooksortflag-canonical-property"></a><span data-ttu-id="24d65-103">Kanonische PidTagContactAddressBookSortFlag-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="24d65-103">PidTagContactAddressBookSortFlag Canonical Property</span></span>
+# <a name="pidtagcontactaddressbooksortflag-canonical-property"></a><span data-ttu-id="05b07-103">PidTagContactAddressBookSortFlag (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="05b07-103">PidTagContactAddressBookSortFlag Canonical Property</span></span>
 
   
   
-<span data-ttu-id="24d65-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="24d65-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="05b07-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="05b07-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="24d65-105">Enthält eine Kennung, die TRUE ist, wenn Kontakte von Datei unter und FALSE sortiert werden sollen, wenn sie nach dem Anzeigenamen sortiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="24d65-105">Contains a flag that is TRUE when contacts should be sorted by File Under and FALSE when they should be sorted by Display Name.</span></span> 
+<span data-ttu-id="05b07-105">Enthält eine Kennung, die TRUE ist, wenn Kontakte von Datei unter und FALSE sortiert werden sollen, wenn sie nach dem Anzeigenamen sortiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="05b07-105">Contains a flag that is TRUE when contacts should be sorted by File Under and FALSE when they should be sorted by Display Name.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="24d65-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="24d65-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="24d65-107">PR_CONTAB_SORT_FLAG</span><span class="sxs-lookup"><span data-stu-id="24d65-107">PR_CONTAB_SORT_FLAG</span></span>  <br/> |
-|<span data-ttu-id="24d65-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="24d65-108">Identifier:</span></span>  <br/> |<span data-ttu-id="24d65-109">0x6602</span><span class="sxs-lookup"><span data-stu-id="24d65-109">0x6602</span></span>  <br/> |
-|<span data-ttu-id="24d65-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="24d65-110">Data type:</span></span>  <br/> |<span data-ttu-id="24d65-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="24d65-111">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="24d65-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="24d65-112">Area:</span></span>  <br/> |<span data-ttu-id="24d65-113">Kontakt-Adressbuch</span><span class="sxs-lookup"><span data-stu-id="24d65-113">Contact address book</span></span>  <br/> |
+|<span data-ttu-id="05b07-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="05b07-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="05b07-107">PR_CONTAB_SORT_FLAG</span><span class="sxs-lookup"><span data-stu-id="05b07-107">PR_CONTAB_SORT_FLAG</span></span>  <br/> |
+|<span data-ttu-id="05b07-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="05b07-108">Identifier:</span></span>  <br/> |<span data-ttu-id="05b07-109">0x6602</span><span class="sxs-lookup"><span data-stu-id="05b07-109">0x6602</span></span>  <br/> |
+|<span data-ttu-id="05b07-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="05b07-110">Data type:</span></span>  <br/> |<span data-ttu-id="05b07-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="05b07-111">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="05b07-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="05b07-112">Area:</span></span>  <br/> |<span data-ttu-id="05b07-113">Kontakt-Adressbuch</span><span class="sxs-lookup"><span data-stu-id="05b07-113">Contact address book</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="24d65-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="24d65-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="05b07-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="05b07-114">Remarks</span></span>
 
-<span data-ttu-id="24d65-115">Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.</span><span class="sxs-lookup"><span data-stu-id="24d65-115">This is a property on a Contact Address Book profile section.</span></span>
+<span data-ttu-id="05b07-115">Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.</span><span class="sxs-lookup"><span data-stu-id="05b07-115">This is a property on a Contact Address Book profile section.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="24d65-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="24d65-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="05b07-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="05b07-116">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="24d65-117">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="24d65-117">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="05b07-117">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="05b07-117">Header files</span></span>
 
-<span data-ttu-id="24d65-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="24d65-118">Mapidefs.h</span></span>
+<span data-ttu-id="05b07-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="05b07-118">Mapidefs.h</span></span>
   
-> <span data-ttu-id="24d65-119">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="24d65-119">Provides data type definitions.</span></span>
+> <span data-ttu-id="05b07-119">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="05b07-119">Provides data type definitions.</span></span>
     
-<span data-ttu-id="24d65-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="24d65-120">Mapitags.h</span></span>
+<span data-ttu-id="05b07-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="05b07-120">Mapitags.h</span></span>
   
-> <span data-ttu-id="24d65-121">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="24d65-121">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="05b07-121">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="05b07-121">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="24d65-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="24d65-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="05b07-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="05b07-122">See also</span></span>
 
 
 
-[<span data-ttu-id="24d65-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="24d65-123">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="05b07-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="05b07-123">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="24d65-124">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="24d65-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="05b07-124">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="05b07-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="24d65-125">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="24d65-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="05b07-125">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="05b07-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="24d65-126">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="24d65-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="05b07-126">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="05b07-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

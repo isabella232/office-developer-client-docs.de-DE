@@ -15,9 +15,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796161"
 ---
-# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="fa0e2-103">Schemazuordnung (Outlook Wetter Speicherort-Schema)</span><span class="sxs-lookup"><span data-stu-id="fa0e2-103">Schema map (Outlook Weather Location Schema)</span></span>
+# <a name="schema-map-outlook-weather-location-schema"></a><span data-ttu-id="1b5c8-103">Schemazuordnung (Outlook Wetter Speicherort-Schema)</span><span class="sxs-lookup"><span data-stu-id="1b5c8-103">Schema map (Outlook Weather Location Schema)</span></span>
 
-<span data-ttu-id="fa0e2-104">In diesem Thema wird die Schemadefinition für das Outlook Wetter Speicherort XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="fa0e2-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
+<span data-ttu-id="1b5c8-104">In diesem Thema wird die Schemadefinition für das Outlook Wetter Speicherort XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="1b5c8-104">This topic shows the schema definition for the Outlook Weather Location XML Schema.</span></span>
   
 ```XML
 <?xml version="1.0" ?>

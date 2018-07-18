@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796658"
 ---
-# <a name="comment-cell-miscellaneous-section"></a><span data-ttu-id="fb0da-103">Comment Cell (Miscellaneous Section)</span><span class="sxs-lookup"><span data-stu-id="fb0da-103">Comment Cell (Miscellaneous Section)</span></span>
+# <a name="comment-cell-miscellaneous-section"></a><span data-ttu-id="cf78b-103">Comment Cell (Miscellaneous Section)</span><span class="sxs-lookup"><span data-stu-id="cf78b-103">Comment Cell (Miscellaneous Section)</span></span>
 
-<span data-ttu-id="fb0da-104">Enthält den Kommentartext im Zeichenformat für ein Shape.</span><span class="sxs-lookup"><span data-stu-id="fb0da-104">Contains the comment text in string format for a shape.</span></span>
+<span data-ttu-id="cf78b-104">Enthält den Kommentartext im Zeichenformat für ein Shape.</span><span class="sxs-lookup"><span data-stu-id="cf78b-104">Contains the comment text in string format for a shape.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="fb0da-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="fb0da-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cf78b-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cf78b-105">Remarks</span></span>
 
-<span data-ttu-id="fb0da-106">Sie können einen Kommentar auch einfügen, indem Sie auf **Neuer Kommentar** klicken Sie auf der Registerkarte **Überprüfen** .</span><span class="sxs-lookup"><span data-stu-id="fb0da-106">You can also insert a comment by clicking **New Comment** on the **Review** tab.</span></span> 
+<span data-ttu-id="cf78b-106">Sie können einen Kommentar auch einfügen, indem Sie auf der Registerkarte **Überprüfen** auf **Neuer Kommentar** klicken.</span><span class="sxs-lookup"><span data-stu-id="cf78b-106">You can also insert a comment by clicking **New Comment** on the **Review** tab.</span></span> 
   
-<span data-ttu-id="fb0da-107">Zum Abrufen eines Verweises auf die Zelle Comment nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="fb0da-107">To get a reference to the Comment cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="cf78b-107">Wenn Sie einen Verweis auf die Zelle Comment aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="cf78b-107">To get a reference to the Comment cell by name from another formula, or from a program by using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="fb0da-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="fb0da-108">Cell name:</span></span>  <br/> |<span data-ttu-id="fb0da-109">Comment</span><span class="sxs-lookup"><span data-stu-id="fb0da-109">Comment</span></span>  <br/> |
+|<span data-ttu-id="cf78b-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="cf78b-108">Cell name:</span></span>  <br/> |<span data-ttu-id="cf78b-109">Kommentar</span><span class="sxs-lookup"><span data-stu-id="cf78b-109">Comment</span></span>  <br/> |
    
-<span data-ttu-id="fb0da-110">Wenn Sie einen Verweis auf die Zelle Comment aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="fb0da-110">To get a reference to the Comment cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="cf78b-110">Wenn Sie einen Verweis auf die Zelle Comment aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="cf78b-110">To get a reference to the Comment cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="fb0da-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="fb0da-111">Section index:</span></span>  <br/> |<span data-ttu-id="fb0da-112">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="fb0da-112">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="fb0da-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="fb0da-113">Row index:</span></span>  <br/> |<span data-ttu-id="fb0da-114">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="fb0da-114">**visRowMisc**</span></span> <br/> |
-|<span data-ttu-id="fb0da-115">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="fb0da-115">Cell index:</span></span>  <br/> |<span data-ttu-id="fb0da-116">**visComment**</span><span class="sxs-lookup"><span data-stu-id="fb0da-116">**visComment**</span></span> <br/> |
+|<span data-ttu-id="cf78b-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="cf78b-111">Section index:</span></span>  <br/> |<span data-ttu-id="cf78b-112">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="cf78b-112">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="cf78b-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="cf78b-113">Row index:</span></span>  <br/> |<span data-ttu-id="cf78b-114">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="cf78b-114">**visRowMisc**</span></span> <br/> |
+|<span data-ttu-id="cf78b-115">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="cf78b-115">Cell index:</span></span>  <br/> |<span data-ttu-id="cf78b-116">**visComment**</span><span class="sxs-lookup"><span data-stu-id="cf78b-116">**visComment**</span></span> <br/> |
    
 

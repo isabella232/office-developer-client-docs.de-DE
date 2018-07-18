@@ -15,21 +15,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796107"
 ---
-# <a name="isocialsessiongetloggedonuser"></a><span data-ttu-id="68a9a-103">ISocialSession::GetLoggedOnUser</span><span class="sxs-lookup"><span data-stu-id="68a9a-103">ISocialSession::GetLoggedOnUser</span></span>
+# <a name="isocialsessiongetloggedonuser"></a><span data-ttu-id="acfc5-103">ISocialSession::GetLoggedOnUser</span><span class="sxs-lookup"><span data-stu-id="acfc5-103">ISocialSession::GetLoggedOnUser</span></span>
 
-<span data-ttu-id="68a9a-104">Ruft eine [ISocialProfile](isocialprofileisocialperson.md) -Schnittstelle, die den angemeldeten Benutzer darstellt.</span><span class="sxs-lookup"><span data-stu-id="68a9a-104">Gets an [ISocialProfile](isocialprofileisocialperson.md) interface that represents the logged-on user.</span></span> 
+<span data-ttu-id="acfc5-104">Ruft eine [ISocialProfile](isocialprofileisocialperson.md) -Schnittstelle, die den angemeldeten Benutzer darstellt.</span><span class="sxs-lookup"><span data-stu-id="acfc5-104">Gets an [ISocialProfile](isocialprofileisocialperson.md) interface that represents the logged-on user.</span></span> 
   
 ```cpp
 HRESULT _stdcall GetLoggedOnUser([out, retval] ISocialProfile** result);
 ```
 
-## <a name="parameters"></a><span data-ttu-id="68a9a-105">Parameter</span><span class="sxs-lookup"><span data-stu-id="68a9a-105">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="acfc5-105">Parameter</span><span class="sxs-lookup"><span data-stu-id="acfc5-105">Parameters</span></span>
 
-<span data-ttu-id="68a9a-106">_Ergebnis_</span><span class="sxs-lookup"><span data-stu-id="68a9a-106">_result_</span></span>
+<span data-ttu-id="acfc5-106">_Ergebnis_</span><span class="sxs-lookup"><span data-stu-id="acfc5-106">_result_</span></span>
   
-> <span data-ttu-id="68a9a-107">[out] Eine **ISocialProfile** -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="68a9a-107">[out] An **ISocialProfile** interface.</span></span> 
+> <span data-ttu-id="acfc5-107">[out] Eine **ISocialProfile** -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="acfc5-107">[out] An **ISocialProfile** interface.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="68a9a-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="68a9a-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="acfc5-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="acfc5-108">See also</span></span>
 
-- [<span data-ttu-id="68a9a-109">ISocialSession: IUnknown</span><span class="sxs-lookup"><span data-stu-id="68a9a-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
+- [<span data-ttu-id="acfc5-109">ISocialSession : IUnknown</span><span class="sxs-lookup"><span data-stu-id="acfc5-109">ISocialSession : IUnknown</span></span>](isocialsessioniunknown.md)
 

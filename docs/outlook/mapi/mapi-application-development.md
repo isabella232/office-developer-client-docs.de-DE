@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792933"
 ---
-# <a name="mapi-application-development"></a><span data-ttu-id="2eb0a-103">MAPI-Anwendungsentwicklung</span><span class="sxs-lookup"><span data-stu-id="2eb0a-103">MAPI Application Development</span></span>
+# <a name="mapi-application-development"></a><span data-ttu-id="4977b-103">MAPI-Anwendungsentwicklung</span><span class="sxs-lookup"><span data-stu-id="4977b-103">MAPI Application Development</span></span>
 
   
   
-<span data-ttu-id="2eb0a-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="2eb0a-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="4977b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="4977b-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="2eb0a-105">In den Themen in diesem Abschnitt gelten für Entwickler von Clientanwendungen und -Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="2eb0a-105">The topics in this section apply to developers of client applications and service providers.</span></span> <span data-ttu-id="2eb0a-106">In diesen Themen werden in der Reihenfolge der Priorität angeordnet.</span><span class="sxs-lookup"><span data-stu-id="2eb0a-106">These topics are arranged in order of importance.</span></span> <span data-ttu-id="2eb0a-107">D. h., Themen, in denen für alle Programmierer entscheidend sind zuerst angezeigt und Themen, in denen befinden sich nur geringfügig oder gelten nicht für alle Programmierer zuletzt angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2eb0a-107">That is, topics that are critical to all programmers appear first and topics that are either of minimal importance or do not apply to all programmers appear last.</span></span>
+<span data-ttu-id="4977b-105">In den Themen in diesem Abschnitt gelten für Entwickler von Clientanwendungen und -Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="4977b-105">The topics in this section apply to developers of client applications and service providers.</span></span> <span data-ttu-id="4977b-106">In diesen Themen werden in der Reihenfolge der Priorität angeordnet.</span><span class="sxs-lookup"><span data-stu-id="4977b-106">These topics are arranged in order of importance.</span></span> <span data-ttu-id="4977b-107">D. h., Themen, in denen für alle Programmierer entscheidend sind zuerst angezeigt und Themen, in denen befinden sich nur geringfügig oder gelten nicht für alle Programmierer zuletzt angezeigt.</span><span class="sxs-lookup"><span data-stu-id="4977b-107">That is, topics that are critical to all programmers appear first and topics that are either of minimal importance or do not apply to all programmers appear last.</span></span>
   
 

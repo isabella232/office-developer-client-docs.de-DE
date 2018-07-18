@@ -14,12 +14,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791046"
 ---
-# <a name="interfaces-outlook-exported-apis"></a><span data-ttu-id="8a384-103">(Outlook exportierten APIs)</span><span class="sxs-lookup"><span data-stu-id="8a384-103">Interfaces (Outlook exported APIs)</span></span>
+# <a name="interfaces-outlook-exported-apis"></a><span data-ttu-id="83f2f-103">(Outlook exportierten APIs)</span><span class="sxs-lookup"><span data-stu-id="83f2f-103">Interfaces (Outlook exported APIs)</span></span>
 
-<span data-ttu-id="8a384-104">In diesem Abschnitt werden die Schnittstellen, die exportiert Outlook beschrieben.</span><span class="sxs-lookup"><span data-stu-id="8a384-104">This section describes the interfaces that Outlook exports.</span></span>
+<span data-ttu-id="83f2f-104">In diesem Abschnitt werden die Schnittstellen, die exportiert Outlook beschrieben.</span><span class="sxs-lookup"><span data-stu-id="83f2f-104">This section describes the interfaces that Outlook exports.</span></span>
   
-|<span data-ttu-id="8a384-105">**Schnittstelle**</span><span class="sxs-lookup"><span data-stu-id="8a384-105">**Interface**</span></span>|<span data-ttu-id="8a384-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8a384-106">**Description**</span></span>|
+|<span data-ttu-id="83f2f-105">**Schnittstelle**</span><span class="sxs-lookup"><span data-stu-id="83f2f-105">**Interface**</span></span>|<span data-ttu-id="83f2f-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="83f2f-106">**Description**</span></span>|
 |:-----|:-----|
-|[<span data-ttu-id="8a384-107">IOlkApptRebaser</span><span class="sxs-lookup"><span data-stu-id="8a384-107">IOlkApptRebaser</span></span>](iolkapptrebaser.md) <br/> |<span data-ttu-id="8a384-108">Neuzuordnen von Terminen in einem Kalenderordner unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8a384-108">Supports rebasing appointments in a calendar folder.</span></span>  <br/> |
+|[<span data-ttu-id="83f2f-107">IOlkApptRebaser</span><span class="sxs-lookup"><span data-stu-id="83f2f-107">IOlkApptRebaser</span></span>](iolkapptrebaser.md) <br/> |<span data-ttu-id="83f2f-108">Neuzuordnen von Terminen in einem Kalenderordner unterstützt.</span><span class="sxs-lookup"><span data-stu-id="83f2f-108">Supports rebasing appointments in a calendar folder.</span></span>  <br/> |
    
 

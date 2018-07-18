@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidNameXSharingLocalType-Eigenschaft
+title: PidNameXSharingLocalType (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,49 +19,49 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794038"
 ---
-# <a name="pidnamexsharinglocaltype-canonical-property"></a><span data-ttu-id="26945-103">Kanonische PidNameXSharingLocalType-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="26945-103">PidNameXSharingLocalType Canonical Property</span></span>
+# <a name="pidnamexsharinglocaltype-canonical-property"></a><span data-ttu-id="f7639-103">PidNameXSharingLocalType (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="f7639-103">PidNameXSharingLocalType Canonical Property</span></span>
 
   
   
-<span data-ttu-id="26945-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="26945-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="f7639-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="f7639-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="26945-105">Stellt die Zeichenfolgenversion der **DispidSharingLocalType** ([PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md))-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="26945-105">Represents the string version of the **dispidSharingLocalType** ([PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md)) property.</span></span>
+<span data-ttu-id="f7639-105">Stellt die Zeichenfolgenversion der **DispidSharingLocalType** ([PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md))-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="f7639-105">Represents the string version of the **dispidSharingLocalType** ([PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md)) property.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="26945-106">Anzeigenamen:</span><span class="sxs-lookup"><span data-stu-id="26945-106">Friendly names:</span></span>  <br/> |<span data-ttu-id="26945-107">Keine</span><span class="sxs-lookup"><span data-stu-id="26945-107">None</span></span>  <br/> |
-|<span data-ttu-id="26945-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="26945-108">Property set:</span></span>  <br/> |<span data-ttu-id="26945-109">PS_INTERNET_HEADERS</span><span class="sxs-lookup"><span data-stu-id="26945-109">PS_INTERNET_HEADERS</span></span>  <br/> |
-|<span data-ttu-id="26945-110">Name der Eigenschaft:</span><span class="sxs-lookup"><span data-stu-id="26945-110">Property name:</span></span>  <br/> |<span data-ttu-id="26945-111">X-Freigabe-Local-Typ</span><span class="sxs-lookup"><span data-stu-id="26945-111">X-Sharing-Local-Type</span></span>  <br/> |
-|<span data-ttu-id="26945-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="26945-112">Data type:</span></span>  <br/> |<span data-ttu-id="26945-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="26945-113">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="26945-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="26945-114">Area:</span></span>  <br/> |<span data-ttu-id="26945-115">Freigabe</span><span class="sxs-lookup"><span data-stu-id="26945-115">Sharing</span></span>  <br/> |
+|<span data-ttu-id="f7639-106">Anzeigenamen:</span><span class="sxs-lookup"><span data-stu-id="f7639-106">Friendly names:</span></span>  <br/> |<span data-ttu-id="f7639-107">Keine</span><span class="sxs-lookup"><span data-stu-id="f7639-107">None</span></span>  <br/> |
+|<span data-ttu-id="f7639-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="f7639-108">Property set:</span></span>  <br/> |<span data-ttu-id="f7639-109">PS_INTERNET_HEADERS</span><span class="sxs-lookup"><span data-stu-id="f7639-109">PS_INTERNET_HEADERS</span></span>  <br/> |
+|<span data-ttu-id="f7639-110">Name der Eigenschaft:</span><span class="sxs-lookup"><span data-stu-id="f7639-110">Property name:</span></span>  <br/> |<span data-ttu-id="f7639-111">X-Freigabe-Local-Typ</span><span class="sxs-lookup"><span data-stu-id="f7639-111">X-Sharing-Local-Type</span></span>  <br/> |
+|<span data-ttu-id="f7639-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="f7639-112">Data type:</span></span>  <br/> |<span data-ttu-id="f7639-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="f7639-113">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="f7639-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="f7639-114">Area:</span></span>  <br/> |<span data-ttu-id="f7639-115">Freigabe</span><span class="sxs-lookup"><span data-stu-id="f7639-115">Sharing</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="26945-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="26945-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="f7639-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="f7639-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="26945-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="26945-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="f7639-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="f7639-117">Protocol specifications</span></span>
 
-<span data-ttu-id="26945-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="26945-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="f7639-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="f7639-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="26945-119">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="26945-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="f7639-119">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="f7639-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="26945-120">[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="26945-120">[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="f7639-120">[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="f7639-120">[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="26945-121">Teilt Postfachordner zwischen Clients.</span><span class="sxs-lookup"><span data-stu-id="26945-121">Shares mailbox folders between clients.</span></span>
+> <span data-ttu-id="f7639-121">Teilt Postfachordner zwischen Clients.</span><span class="sxs-lookup"><span data-stu-id="f7639-121">Shares mailbox folders between clients.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="26945-122">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="26945-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="f7639-122">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="f7639-122">Header files</span></span>
 
-<span data-ttu-id="26945-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="26945-123">Mapidefs.h</span></span>
+<span data-ttu-id="f7639-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f7639-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="26945-124">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="26945-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="f7639-124">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="f7639-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="26945-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="26945-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f7639-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f7639-125">See also</span></span>
 
 
 
-[<span data-ttu-id="26945-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="26945-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="f7639-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f7639-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="26945-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="26945-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="f7639-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f7639-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="26945-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="26945-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="f7639-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="f7639-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="26945-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="26945-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="f7639-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="f7639-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

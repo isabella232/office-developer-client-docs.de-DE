@@ -15,13 +15,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793041"
 ---
-# <a name="mapi-programming-elements"></a><span data-ttu-id="74e48-103">MAPI-Programmierung Elemente</span><span class="sxs-lookup"><span data-stu-id="74e48-103">MAPI programming elements</span></span>
+# <a name="mapi-programming-elements"></a><span data-ttu-id="1dabc-103">MAPI-Programmierung Elemente</span><span class="sxs-lookup"><span data-stu-id="1dabc-103">MAPI programming elements</span></span>
 
-<span data-ttu-id="74e48-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="74e48-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="1dabc-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1dabc-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="74e48-105">Dieser Abschnitt enthält konzeptionelle Übersichten zum Thema Programmierung Elemente in der [MAPI-Referenz](mapi-reference.md).</span><span class="sxs-lookup"><span data-stu-id="74e48-105">This section contains conceptual overviews of the programming elements in the [MAPI Reference](mapi-reference.md).</span></span> 
+<span data-ttu-id="1dabc-105">Dieser Abschnitt enthält konzeptionelle Übersichten zum Thema Programmierung Elemente in der [MAPI-Referenz](mapi-reference.md).</span><span class="sxs-lookup"><span data-stu-id="1dabc-105">This section contains conceptual overviews of the programming elements in the [MAPI Reference](mapi-reference.md).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="74e48-106">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="74e48-106">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1dabc-106">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1dabc-106">See also</span></span>
 
-- [<span data-ttu-id="74e48-107">MAPI-Konzepte (engl.)</span><span class="sxs-lookup"><span data-stu-id="74e48-107">MAPI Concepts</span></span>](mapi-concepts.md)
+- [<span data-ttu-id="1dabc-107">MAPI-Konzepte (engl.)</span><span class="sxs-lookup"><span data-stu-id="1dabc-107">MAPI Concepts</span></span>](mapi-concepts.md)
 

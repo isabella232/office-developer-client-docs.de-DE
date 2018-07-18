@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagFinderEntryId-Eigenschaft
+title: PidTagFinderEntryId (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,46 +19,46 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794369"
 ---
-# <a name="pidtagfinderentryid-canonical-property"></a><span data-ttu-id="1228b-103">Kanonische PidTagFinderEntryId-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="1228b-103">PidTagFinderEntryId Canonical Property</span></span>
+# <a name="pidtagfinderentryid-canonical-property"></a><span data-ttu-id="32e89-103">PidTagFinderEntryId (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="32e89-103">PidTagFinderEntryId Canonical Property</span></span>
 
   
   
-<span data-ttu-id="1228b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="1228b-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="32e89-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="32e89-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="1228b-105">Enthält die Eintrags-ID für den Ordner, in dem die Suchergebnisse in der Regel erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="1228b-105">Contains the entry identifier for the folder where search results are typically created.</span></span>
+<span data-ttu-id="32e89-105">Enthält die Eintrags-ID für den Ordner, in dem die Suchergebnisse in der Regel erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="32e89-105">Contains the entry identifier for the folder where search results are typically created.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1228b-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="1228b-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="1228b-107">PR_FINDER_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="1228b-107">PR_FINDER_ENTRYID</span></span>  <br/> |
-|<span data-ttu-id="1228b-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="1228b-108">Identifier:</span></span>  <br/> |<span data-ttu-id="1228b-109">0x35E7</span><span class="sxs-lookup"><span data-stu-id="1228b-109">0x35E7</span></span>  <br/> |
-|<span data-ttu-id="1228b-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="1228b-110">Data type:</span></span>  <br/> |<span data-ttu-id="1228b-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="1228b-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="1228b-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="1228b-112">Area:</span></span>  <br/> |<span data-ttu-id="1228b-113">MAPI-Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="1228b-113">MAPI message store</span></span>  <br/> |
+|<span data-ttu-id="32e89-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="32e89-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="32e89-107">PR_FINDER_ENTRYID</span><span class="sxs-lookup"><span data-stu-id="32e89-107">PR_FINDER_ENTRYID</span></span>  <br/> |
+|<span data-ttu-id="32e89-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="32e89-108">Identifier:</span></span>  <br/> |<span data-ttu-id="32e89-109">0x35E7</span><span class="sxs-lookup"><span data-stu-id="32e89-109">0x35E7</span></span>  <br/> |
+|<span data-ttu-id="32e89-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="32e89-110">Data type:</span></span>  <br/> |<span data-ttu-id="32e89-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="32e89-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="32e89-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="32e89-112">Area:</span></span>  <br/> |<span data-ttu-id="32e89-113">MAPI-Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="32e89-113">MAPI message store</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="1228b-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1228b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="32e89-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="32e89-114">Remarks</span></span>
 
-<span data-ttu-id="1228b-115">In dieser Eigenschaft enthaltenen Eintrags-ID hat das gleiche Format wie die [ENTRYID](entryid.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="1228b-115">The entry identifier contained in this property has the same format as the [ENTRYID](entryid.md) structure.</span></span> 
+<span data-ttu-id="32e89-115">In dieser Eigenschaft enthaltenen Eintrags-ID hat das gleiche Format wie die [ENTRYID](entryid.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="32e89-115">The entry identifier contained in this property has the same format as the [ENTRYID](entryid.md) structure.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="1228b-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="1228b-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="32e89-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="32e89-116">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="1228b-117">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="1228b-117">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="32e89-117">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="32e89-117">Header files</span></span>
 
-<span data-ttu-id="1228b-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1228b-118">Mapidefs.h</span></span>
+<span data-ttu-id="32e89-118">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="32e89-118">Mapidefs.h</span></span>
   
-> <span data-ttu-id="1228b-119">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="1228b-119">Provides data type definitions.</span></span>
+> <span data-ttu-id="32e89-119">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="32e89-119">Provides data type definitions.</span></span>
     
-<span data-ttu-id="1228b-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="1228b-120">Mapitags.h</span></span>
+<span data-ttu-id="32e89-120">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="32e89-120">Mapitags.h</span></span>
   
-> <span data-ttu-id="1228b-121">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="1228b-121">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="32e89-121">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="32e89-121">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="1228b-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1228b-122">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32e89-122">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="32e89-122">See also</span></span>
 
 
 
-[<span data-ttu-id="1228b-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1228b-123">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="32e89-123">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="32e89-123">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="1228b-124">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1228b-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="32e89-124">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="32e89-124">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="1228b-125">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="1228b-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="32e89-125">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="32e89-125">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="1228b-126">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="1228b-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="32e89-126">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="32e89-126">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

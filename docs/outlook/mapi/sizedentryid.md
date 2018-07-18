@@ -19,44 +19,44 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795549"
 ---
-# <a name="sizedentryid"></a><span data-ttu-id="e240b-103">SizedENTRYID</span><span class="sxs-lookup"><span data-stu-id="e240b-103">SizedENTRYID</span></span>
+# <a name="sizedentryid"></a><span data-ttu-id="721c3-103">SizedENTRYID</span><span class="sxs-lookup"><span data-stu-id="721c3-103">SizedENTRYID</span></span>
 
-<span data-ttu-id="e240b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e240b-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="721c3-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="721c3-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="e240b-105">Erstellt eine benannte [ENTRYID](entryid.md) -Struktur, die ein Element **Ab** einer angegebenen Größe enthält.</span><span class="sxs-lookup"><span data-stu-id="e240b-105">Creates a named [ENTRYID](entryid.md) structure that contains an **ab** member of a specified size.</span></span> 
+<span data-ttu-id="721c3-105">Erstellt eine benannte [ENTRYID](entryid.md) -Struktur, die ein Element **Ab** einer angegebenen Größe enthält.</span><span class="sxs-lookup"><span data-stu-id="721c3-105">Creates a named [ENTRYID](entryid.md) structure that contains an **ab** member of a specified size.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="e240b-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="e240b-106">Header file:</span></span>  <br/> |<span data-ttu-id="e240b-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e240b-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="e240b-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="e240b-108">Related structure:</span></span>  <br/> |<span data-ttu-id="e240b-109">**ENTRYID**</span><span class="sxs-lookup"><span data-stu-id="e240b-109">**ENTRYID**</span></span> <br/> |
+|<span data-ttu-id="721c3-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="721c3-106">Header file:</span></span>  <br/> |<span data-ttu-id="721c3-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="721c3-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="721c3-108">Verwandte Struktur:</span><span class="sxs-lookup"><span data-stu-id="721c3-108">Related structure:</span></span>  <br/> |<span data-ttu-id="721c3-109">**ENTRYID**</span><span class="sxs-lookup"><span data-stu-id="721c3-109">**ENTRYID**</span></span> <br/> |
    
 ```cpp
 SizedENTRYID (_cb, _name)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e240b-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="e240b-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="721c3-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="721c3-110">Parameters</span></span>
 
-<span data-ttu-id="e240b-111">__cb_</span><span class="sxs-lookup"><span data-stu-id="e240b-111">__cb_</span></span>
+<span data-ttu-id="721c3-111">__cb_</span><span class="sxs-lookup"><span data-stu-id="721c3-111">__cb_</span></span>
   
-> <span data-ttu-id="e240b-112">Die Anzahl von Bytes in die neue Struktur Mitglied **Ab** .</span><span class="sxs-lookup"><span data-stu-id="e240b-112">Count of bytes in the **ab** member of the new structure.</span></span> 
+> <span data-ttu-id="721c3-112">Die Anzahl von Bytes in die neue Struktur Mitglied **Ab** .</span><span class="sxs-lookup"><span data-stu-id="721c3-112">Count of bytes in the **ab** member of the new structure.</span></span> 
     
-<span data-ttu-id="e240b-113">__Namen_</span><span class="sxs-lookup"><span data-stu-id="e240b-113">__name_</span></span>
+<span data-ttu-id="721c3-113">__Namen_</span><span class="sxs-lookup"><span data-stu-id="721c3-113">__name_</span></span>
   
-> <span data-ttu-id="e240b-114">Der Name für die neue Struktur.</span><span class="sxs-lookup"><span data-stu-id="e240b-114">Name for the new structure.</span></span>
+> <span data-ttu-id="721c3-114">Der Name für die neue Struktur.</span><span class="sxs-lookup"><span data-stu-id="721c3-114">Name for the new structure.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="e240b-115">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e240b-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="721c3-115">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="721c3-115">Remarks</span></span>
 
-<span data-ttu-id="e240b-116">Das Makro **SizedENTRYID** können Sie eine Eintrags-ID zu definieren, nach dem Array Länge Anforderungen bekannt sind.</span><span class="sxs-lookup"><span data-stu-id="e240b-116">The **SizedENTRYID** macro lets you define an entry identifier after array length requirements are known.</span></span> <span data-ttu-id="e240b-117">Verwenden Sie dieses Makro mit expliziten Grenzen eines Eintrags-ID zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="e240b-117">Use this macro to create an entry identifier with explicit bounds.</span></span> 
+<span data-ttu-id="721c3-116">Das Makro **SizedENTRYID** können Sie eine Eintrags-ID zu definieren, nach dem Array Länge Anforderungen bekannt sind.</span><span class="sxs-lookup"><span data-stu-id="721c3-116">The **SizedENTRYID** macro lets you define an entry identifier after array length requirements are known.</span></span> <span data-ttu-id="721c3-117">Verwenden Sie dieses Makro mit expliziten Grenzen eines Eintrags-ID zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="721c3-117">Use this macro to create an entry identifier with explicit bounds.</span></span> 
   
-<span data-ttu-id="e240b-118">Um die neue Struktur verwenden, die als Zeiger auf eine **ENTRYID** -Struktur aus dem Makro **SizedENTRYID** erzeugt, führen Sie die folgende Umwandlung:</span><span class="sxs-lookup"><span data-stu-id="e240b-118">To use the new structure that results from the **SizedENTRYID** macro as a pointer to an **ENTRYID** structure, perform the following cast:</span></span> 
+<span data-ttu-id="721c3-118">Um die neue Struktur verwenden, die als Zeiger auf eine **ENTRYID** -Struktur aus dem Makro **SizedENTRYID** erzeugt, führen Sie die folgende Umwandlung:</span><span class="sxs-lookup"><span data-stu-id="721c3-118">To use the new structure that results from the **SizedENTRYID** macro as a pointer to an **ENTRYID** structure, perform the following cast:</span></span> 
   
 ```cpp
 lpENTRYID = (LPENTRYID) &SizedENTRYID;
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e240b-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e240b-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="721c3-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="721c3-119">See also</span></span>
 
-- [<span data-ttu-id="e240b-120">ENTRYID</span><span class="sxs-lookup"><span data-stu-id="e240b-120">ENTRYID</span></span>](entryid.md)
-- [<span data-ttu-id="e240b-121">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="e240b-121">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+- [<span data-ttu-id="721c3-120">ENTRYID</span><span class="sxs-lookup"><span data-stu-id="721c3-120">ENTRYID</span></span>](entryid.md)
+- [<span data-ttu-id="721c3-121">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="721c3-121">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

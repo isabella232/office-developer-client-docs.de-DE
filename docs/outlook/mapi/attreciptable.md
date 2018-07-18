@@ -15,16 +15,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791346"
 ---
-# <a name="attreciptable"></a><span data-ttu-id="addb0-103">attRecipTable</span><span class="sxs-lookup"><span data-stu-id="addb0-103">attRecipTable</span></span>
+# <a name="attreciptable"></a><span data-ttu-id="44a70-103">attRecipTable</span><span class="sxs-lookup"><span data-stu-id="44a70-103">attRecipTable</span></span>
 
-<span data-ttu-id="addb0-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="addb0-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="44a70-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="44a70-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="addb0-105">Wenn eine Empfänger Tabelle codiert wird, wird als einer Reihe von MAPI-Eigenschaften jeden Empfänger codiert.</span><span class="sxs-lookup"><span data-stu-id="addb0-105">When a recipient table is being encoded, each recipient is encoded as a row of MAPI properties.</span></span> <span data-ttu-id="addb0-106">Das Format lautet wie folgt:</span><span class="sxs-lookup"><span data-stu-id="addb0-106">The format is as follows:</span></span> 
+<span data-ttu-id="44a70-105">Wenn eine Empfänger Tabelle codiert wird, wird als einer Reihe von MAPI-Eigenschaften jeden Empfänger codiert.</span><span class="sxs-lookup"><span data-stu-id="44a70-105">When a recipient table is being encoded, each recipient is encoded as a row of MAPI properties.</span></span> <span data-ttu-id="44a70-106">Das Format lautet wie folgt:</span><span class="sxs-lookup"><span data-stu-id="44a70-106">The format is as follows:</span></span> 
   
-<span data-ttu-id="addb0-107">_Row_Seq:_</span><span class="sxs-lookup"><span data-stu-id="addb0-107">_Row_Seq:_</span></span>
+<span data-ttu-id="44a70-107">_Row_Seq:_</span><span class="sxs-lookup"><span data-stu-id="44a70-107">_Row_Seq:_</span></span>
   
->  <span data-ttu-id="addb0-108">_Anzahl der Zeilen_ _Property_Sequence_...</span><span class="sxs-lookup"><span data-stu-id="addb0-108">_row-count_ _Property_Sequence,_...</span></span> 
+>  <span data-ttu-id="44a70-108">_Anzahl der Zeilen_ _Property_Sequence_...</span><span class="sxs-lookup"><span data-stu-id="44a70-108">_row-count_ _Property_Sequence,_...</span></span> 
     
-<span data-ttu-id="addb0-109">Das Format des _Property_Seq_ ist identisch mit dem [AttMAPIProps](attmapiprops.md) -Attribut.</span><span class="sxs-lookup"><span data-stu-id="addb0-109">The format of  _Property_Seq_ is the same as in the [attMAPIProps](attmapiprops.md) attribute.</span></span> 
+<span data-ttu-id="44a70-109">Das Format des _Property_Seq_ ist identisch mit dem [AttMAPIProps](attmapiprops.md) -Attribut.</span><span class="sxs-lookup"><span data-stu-id="44a70-109">The format of  _Property_Seq_ is the same as in the [attMAPIProps](attmapiprops.md) attribute.</span></span> 
     
 

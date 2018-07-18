@@ -14,11 +14,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791082"
 ---
-# <a name="iolkaccounthelperplaceholder1"></a><span data-ttu-id="0e158-104">IOlkAccountHelper::Placeholder1</span><span class="sxs-lookup"><span data-stu-id="0e158-104">IOlkAccountHelper::Placeholder1</span></span>
+# <a name="iolkaccounthelperplaceholder1"></a><span data-ttu-id="5ce5d-104">IOlkAccountHelper::Placeholder1</span><span class="sxs-lookup"><span data-stu-id="5ce5d-104">IOlkAccountHelper::Placeholder1</span></span>
 
-<span data-ttu-id="0e158-105">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="0e158-105">This member is a placeholder and is not supported.</span></span> <span data-ttu-id="0e158-106">Es muss immer E_NOTIMPL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0e158-106">It must always return E_NOTIMPL.</span></span>
+<span data-ttu-id="5ce5d-105">Dieser Member ist ein Platzhalter und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-105">This member is a placeholder and is not supported.</span></span> <span data-ttu-id="5ce5d-106">Es muss immer E_NOTIMPL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-106">It must always return E_NOTIMPL.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="0e158-107">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="0e158-107">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="5ce5d-107">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="5ce5d-107">Quick info</span></span>
 
 ```cpp
 HRESULT IOlkAccountHelper::Placeholder1 (  
@@ -26,15 +26,15 @@ HRESULT IOlkAccountHelper::Placeholder1 (
 );
 ```
 
-## <a name="return-values"></a><span data-ttu-id="0e158-108">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="0e158-108">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="5ce5d-108">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="5ce5d-108">Return values</span></span>
 
-<span data-ttu-id="0e158-109">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="0e158-109">Always E_NOTIMPL, because this member is a placeholder in [IOlkAccountHelper](iolkaccounthelper.md) and is not supported.</span></span> 
+<span data-ttu-id="5ce5d-109">Immer unterstützt E_NOTIMPL, da dieser Member ist ein Platzhalter in [IOlkAccountHelper](iolkaccounthelper.md) und wird nicht.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-109">Always E_NOTIMPL, because this member is a placeholder in [IOlkAccountHelper](iolkaccounthelper.md) and is not supported.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="0e158-110">Hinweise</span><span class="sxs-lookup"><span data-stu-id="0e158-110">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5ce5d-110">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5ce5d-110">Remarks</span></span>
 
-<span data-ttu-id="0e158-111">Dieser Member muss immer E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="0e158-111">This member must always return E_NOTIMPL.</span></span>
+<span data-ttu-id="5ce5d-111">Dieser Member muss immer E_NOTIMPL zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="5ce5d-111">This member must always return E_NOTIMPL.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="0e158-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0e158-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="5ce5d-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5ce5d-112">See also</span></span>
 
-- [<span data-ttu-id="0e158-113">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="0e158-113">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="5ce5d-113">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="5ce5d-113">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

@@ -14,25 +14,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791207"
 ---
-# <a name="propsmtpusespa"></a><span data-ttu-id="97fe1-103">PROP_SMTP_USE_SPA</span><span class="sxs-lookup"><span data-stu-id="97fe1-103">PROP_SMTP_USE_SPA</span></span>
+# <a name="propsmtpusespa"></a><span data-ttu-id="835bf-103">PROP_SMTP_USE_SPA</span><span class="sxs-lookup"><span data-stu-id="835bf-103">PROP_SMTP_USE_SPA</span></span>
 
-<span data-ttu-id="97fe1-104">Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwenden.</span><span class="sxs-lookup"><span data-stu-id="97fe1-104">Specifies whether to use Secure Password Authentication (SPA) for the SMTP account.</span></span>
+<span data-ttu-id="835bf-104">Gibt an, ob die Authentifizierung mit GESICHERTEM Kennwort für SMTP-Konto verwenden.</span><span class="sxs-lookup"><span data-stu-id="835bf-104">Specifies whether to use Secure Password Authentication (SPA) for the SMTP account.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="97fe1-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="97fe1-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="835bf-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="835bf-105">Quick info</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="97fe1-106">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="97fe1-106">Identifier:</span></span>  <br/> |<span data-ttu-id="97fe1-107">0 x 0207</span><span class="sxs-lookup"><span data-stu-id="97fe1-107">0x0207</span></span>  <br/> |
-|<span data-ttu-id="97fe1-108">Der Eigenschaftentyp:</span><span class="sxs-lookup"><span data-stu-id="97fe1-108">Property type:</span></span>  <br/> |<span data-ttu-id="97fe1-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="97fe1-109">PT_DWORD</span></span>  <br/> |
-|<span data-ttu-id="97fe1-110">Eigenschafts-Tag:</span><span class="sxs-lookup"><span data-stu-id="97fe1-110">Property tag:</span></span>  <br/> |<span data-ttu-id="97fe1-111">0x02070003</span><span class="sxs-lookup"><span data-stu-id="97fe1-111">0x02070003</span></span>  <br/> |
-|<span data-ttu-id="97fe1-112">Access:</span><span class="sxs-lookup"><span data-stu-id="97fe1-112">Access:</span></span>  <br/> |<span data-ttu-id="97fe1-113">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="97fe1-113">Read-only</span></span>  <br/> |
+|<span data-ttu-id="835bf-106">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="835bf-106">Identifier:</span></span>  <br/> |<span data-ttu-id="835bf-107">0 x 0207</span><span class="sxs-lookup"><span data-stu-id="835bf-107">0x0207</span></span>  <br/> |
+|<span data-ttu-id="835bf-108">Der Eigenschaftentyp:</span><span class="sxs-lookup"><span data-stu-id="835bf-108">Property type:</span></span>  <br/> |<span data-ttu-id="835bf-109">PT_DWORD</span><span class="sxs-lookup"><span data-stu-id="835bf-109">PT_DWORD</span></span>  <br/> |
+|<span data-ttu-id="835bf-110">Eigenschafts-Tag:</span><span class="sxs-lookup"><span data-stu-id="835bf-110">Property tag:</span></span>  <br/> |<span data-ttu-id="835bf-111">0x02070003</span><span class="sxs-lookup"><span data-stu-id="835bf-111">0x02070003</span></span>  <br/> |
+|<span data-ttu-id="835bf-112">Access:</span><span class="sxs-lookup"><span data-stu-id="835bf-112">Access:</span></span>  <br/> |<span data-ttu-id="835bf-113">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="835bf-113">Read-only</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="97fe1-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="97fe1-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="835bf-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="835bf-114">Remarks</span></span>
 
-<span data-ttu-id="97fe1-115">Eine NULL bedeutet der Wert nicht gesicherte KENNWORTAUTHENTIFIZIERUNG verwenden, andernfalls können Sie SPA verwenden.</span><span class="sxs-lookup"><span data-stu-id="97fe1-115">A zero value means do not use SPA, otherwise use SPA.</span></span>
+<span data-ttu-id="835bf-115">Eine NULL bedeutet der Wert nicht gesicherte KENNWORTAUTHENTIFIZIERUNG verwenden, andernfalls können Sie SPA verwenden.</span><span class="sxs-lookup"><span data-stu-id="835bf-115">A zero value means do not use SPA, otherwise use SPA.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="97fe1-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="97fe1-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="835bf-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="835bf-116">See also</span></span>
 
-- [<span data-ttu-id="97fe1-117">Verwalten von Nachricht downloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="97fe1-117">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md)
-- [<span data-ttu-id="97fe1-118">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="97fe1-118">Constants (Account management API)</span></span>](constants-account-management-api.md)
+- [<span data-ttu-id="835bf-117">Verwalten des Nachrichtendownloads für POP3-Konten</span><span class="sxs-lookup"><span data-stu-id="835bf-117">Managing message downloads for POP3 accounts</span></span>](managing-message-downloads-for-pop3-accounts.md)
+- [<span data-ttu-id="835bf-118">Konstanten (Account Management API)</span><span class="sxs-lookup"><span data-stu-id="835bf-118">Constants (Account management API)</span></span>](constants-account-management-api.md)
 

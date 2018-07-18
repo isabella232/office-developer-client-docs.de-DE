@@ -14,13 +14,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791109"
 ---
-# <a name="iolkenumskip"></a><span data-ttu-id="e9206-103">IOlkEnum::Skip</span><span class="sxs-lookup"><span data-stu-id="e9206-103">IOlkEnum::Skip</span></span>
+# <a name="iolkenumskip"></a><span data-ttu-id="7b340-103">IOlkEnum::Skip</span><span class="sxs-lookup"><span data-stu-id="7b340-103">IOlkEnum::Skip</span></span>
 
-<span data-ttu-id="e9206-104">Überspringt eine angegebene Anzahl von Konten in den Enumerator.</span><span class="sxs-lookup"><span data-stu-id="e9206-104">Skips a specified number of accounts in the enumerator.</span></span>
+<span data-ttu-id="7b340-104">Überspringt eine angegebene Anzahl von Konten in den Enumerator.</span><span class="sxs-lookup"><span data-stu-id="7b340-104">Skips a specified number of accounts in the enumerator.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="e9206-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="e9206-105">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="7b340-105">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="7b340-105">Quick info</span></span>
 
-<span data-ttu-id="e9206-106">Finden Sie unter [IOlkEnum](iolkenum.md).</span><span class="sxs-lookup"><span data-stu-id="e9206-106">See [IOlkEnum](iolkenum.md).</span></span>
+<span data-ttu-id="7b340-106">Finden Sie unter [IOlkEnum](iolkenum.md).</span><span class="sxs-lookup"><span data-stu-id="7b340-106">See [IOlkEnum](iolkenum.md).</span></span>
   
 ```cpp
 HRESULT IOlkEnum::Skip(  
@@ -28,19 +28,19 @@ HRESULT IOlkEnum::Skip(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="e9206-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="e9206-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7b340-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="7b340-107">Parameters</span></span>
 
-<span data-ttu-id="e9206-108">_cSkip_</span><span class="sxs-lookup"><span data-stu-id="e9206-108">_cSkip_</span></span>
+<span data-ttu-id="7b340-108">_cSkip_</span><span class="sxs-lookup"><span data-stu-id="7b340-108">_cSkip_</span></span>
   
-> <span data-ttu-id="e9206-109">[in] Die Anzahl der Konten übersprungen werden soll.</span><span class="sxs-lookup"><span data-stu-id="e9206-109">[in] The number of accounts to be skipped.</span></span>
+> <span data-ttu-id="7b340-109">[in] Die Anzahl der Konten übersprungen werden soll.</span><span class="sxs-lookup"><span data-stu-id="7b340-109">[in] The number of accounts to be skipped.</span></span>
     
-## <a name="return-values"></a><span data-ttu-id="e9206-110">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="e9206-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7b340-110">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="7b340-110">Return values</span></span>
 
-<span data-ttu-id="e9206-111">S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.</span><span class="sxs-lookup"><span data-stu-id="e9206-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
+<span data-ttu-id="7b340-111">S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.</span><span class="sxs-lookup"><span data-stu-id="7b340-111">S_OK if the call succeeded; otherwise, an error code.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="e9206-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e9206-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7b340-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7b340-112">See also</span></span>
 
-- [<span data-ttu-id="e9206-113">IOlkEnum::GetCount</span><span class="sxs-lookup"><span data-stu-id="e9206-113">IOlkEnum::GetCount</span></span>](iolkenum-getcount.md) 
-- [<span data-ttu-id="e9206-114">IOlkEnum::GetNext</span><span class="sxs-lookup"><span data-stu-id="e9206-114">IOlkEnum::GetNext</span></span>](iolkenum-getnext.md)  
-- [<span data-ttu-id="e9206-115">IOlkEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="e9206-115">IOlkEnum::Reset</span></span>](iolkenum-reset.md)
+- [<span data-ttu-id="7b340-113">IOlkEnum::GetCount</span><span class="sxs-lookup"><span data-stu-id="7b340-113">IOlkEnum::GetCount</span></span>](iolkenum-getcount.md) 
+- [<span data-ttu-id="7b340-114">IOlkEnum::GetNext</span><span class="sxs-lookup"><span data-stu-id="7b340-114">IOlkEnum::GetNext</span></span>](iolkenum-getnext.md)  
+- [<span data-ttu-id="7b340-115">IOlkEnum::Reset</span><span class="sxs-lookup"><span data-stu-id="7b340-115">IOlkEnum::Reset</span></span>](iolkenum-reset.md)
 

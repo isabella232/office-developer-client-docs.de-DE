@@ -19,35 +19,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791548"
 ---
-# <a name="cbadrlist"></a><span data-ttu-id="aa60c-103">CbADRLIST</span><span class="sxs-lookup"><span data-stu-id="aa60c-103">CbADRLIST</span></span>
+# <a name="cbadrlist"></a><span data-ttu-id="df0f3-103">CbADRLIST</span><span class="sxs-lookup"><span data-stu-id="df0f3-103">CbADRLIST</span></span>
 
   
   
-<span data-ttu-id="aa60c-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="aa60c-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="df0f3-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="df0f3-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="aa60c-105">Berechnet die Anzahl von Bytes in eine vorhandene [ADRLIST](adrlist.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="aa60c-105">Computes the number of bytes in an existing [ADRLIST](adrlist.md) structure.</span></span> 
+<span data-ttu-id="df0f3-105">Berechnet die Anzahl von Bytes in eine vorhandene [ADRLIST](adrlist.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="df0f3-105">Computes the number of bytes in an existing [ADRLIST](adrlist.md) structure.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="aa60c-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="aa60c-106">Header file:</span></span>  <br/> |<span data-ttu-id="aa60c-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="aa60c-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="aa60c-108">Verwandte Struktur</span><span class="sxs-lookup"><span data-stu-id="aa60c-108">Related structure</span></span>  <br/> |<span data-ttu-id="aa60c-109">**ADRLIST**</span><span class="sxs-lookup"><span data-stu-id="aa60c-109">**ADRLIST**</span></span> <br/> |
+|<span data-ttu-id="df0f3-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="df0f3-106">Header file:</span></span>  <br/> |<span data-ttu-id="df0f3-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="df0f3-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="df0f3-108">Verwandte Struktur</span><span class="sxs-lookup"><span data-stu-id="df0f3-108">Related structure</span></span>  <br/> |<span data-ttu-id="df0f3-109">**ADRLIST**</span><span class="sxs-lookup"><span data-stu-id="df0f3-109">**ADRLIST**</span></span> <br/> |
    
 ```cpp
 CbADRLIST (_lpadrlist)
 ```
 
-## <a name="parameters"></a><span data-ttu-id="aa60c-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="aa60c-110">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="df0f3-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="df0f3-110">Parameters</span></span>
 
- <span data-ttu-id="aa60c-111">__lpadrlist_</span><span class="sxs-lookup"><span data-stu-id="aa60c-111">__lpadrlist_</span></span>
+ <span data-ttu-id="df0f3-111">__lpadrlist_</span><span class="sxs-lookup"><span data-stu-id="df0f3-111">__lpadrlist_</span></span>
   
-> <span data-ttu-id="aa60c-112">Zeiger auf die vorhandenen **ADRLIST** -Struktur.</span><span class="sxs-lookup"><span data-stu-id="aa60c-112">Pointer to the existing **ADRLIST** structure.</span></span> 
+> <span data-ttu-id="df0f3-112">Zeiger auf die vorhandenen **ADRLIST** -Struktur.</span><span class="sxs-lookup"><span data-stu-id="df0f3-112">Pointer to the existing **ADRLIST** structure.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="aa60c-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="aa60c-113">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="df0f3-113">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="df0f3-113">See also</span></span>
 
 
 
-[<span data-ttu-id="aa60c-114">ADRLIST</span><span class="sxs-lookup"><span data-stu-id="aa60c-114">ADRLIST</span></span>](adrlist.md)
+[<span data-ttu-id="df0f3-114">ADRLIST</span><span class="sxs-lookup"><span data-stu-id="df0f3-114">ADRLIST</span></span>](adrlist.md)
 
 
-[<span data-ttu-id="aa60c-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="aa60c-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
+[<span data-ttu-id="df0f3-115">Makros im Zusammenhang mit Strukturen</span><span class="sxs-lookup"><span data-stu-id="df0f3-115">Macros Related to Structures</span></span>](macros-related-to-structures.md)
 

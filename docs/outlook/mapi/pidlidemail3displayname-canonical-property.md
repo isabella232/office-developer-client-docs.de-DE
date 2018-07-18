@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidLidEmail3DisplayName-Eigenschaft
+title: PidLidEmail3DisplayName (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,49 +19,49 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793516"
 ---
-# <a name="pidlidemail3displayname-canonical-property"></a><span data-ttu-id="ef828-103">Kanonische PidLidEmail3DisplayName-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ef828-103">PidLidEmail3DisplayName Canonical Property</span></span>
+# <a name="pidlidemail3displayname-canonical-property"></a><span data-ttu-id="6efc3-103">PidLidEmail3DisplayName (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="6efc3-103">PidLidEmail3DisplayName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ef828-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="ef828-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="6efc3-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6efc3-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="ef828-105">Gibt den Benutzer lesbaren Anzeigenamen für den dritten e-Mail-Adresse.</span><span class="sxs-lookup"><span data-stu-id="ef828-105">Specifies the user-readable display name for the third email address.</span></span>
+<span data-ttu-id="6efc3-105">Gibt den Benutzer lesbaren Anzeigenamen für den dritten e-Mail-Adresse.</span><span class="sxs-lookup"><span data-stu-id="6efc3-105">Specifies the user-readable display name for the third email address.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ef828-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="ef828-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ef828-107">dispidEmail3DisplayName</span><span class="sxs-lookup"><span data-stu-id="ef828-107">dispidEmail3DisplayName</span></span>  <br/> |
-|<span data-ttu-id="ef828-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="ef828-108">Property set:</span></span>  <br/> |<span data-ttu-id="ef828-109">PSETID_Address</span><span class="sxs-lookup"><span data-stu-id="ef828-109">PSETID_Address</span></span>  <br/> |
-|<span data-ttu-id="ef828-110">Long-ID (Abdeckung):</span><span class="sxs-lookup"><span data-stu-id="ef828-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="ef828-111">0x000080A0</span><span class="sxs-lookup"><span data-stu-id="ef828-111">0x000080A0</span></span>  <br/> |
-|<span data-ttu-id="ef828-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="ef828-112">Data type:</span></span>  <br/> |<span data-ttu-id="ef828-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="ef828-113">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="ef828-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="ef828-114">Area:</span></span>  <br/> |<span data-ttu-id="ef828-115">Kontakt</span><span class="sxs-lookup"><span data-stu-id="ef828-115">Contact</span></span>  <br/> |
+|<span data-ttu-id="6efc3-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="6efc3-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="6efc3-107">dispidEmail3DisplayName</span><span class="sxs-lookup"><span data-stu-id="6efc3-107">dispidEmail3DisplayName</span></span>  <br/> |
+|<span data-ttu-id="6efc3-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="6efc3-108">Property set:</span></span>  <br/> |<span data-ttu-id="6efc3-109">PSETID_Address</span><span class="sxs-lookup"><span data-stu-id="6efc3-109">PSETID_Address</span></span>  <br/> |
+|<span data-ttu-id="6efc3-110">Long-ID (Abdeckung):</span><span class="sxs-lookup"><span data-stu-id="6efc3-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="6efc3-111">0x000080A0</span><span class="sxs-lookup"><span data-stu-id="6efc3-111">0x000080A0</span></span>  <br/> |
+|<span data-ttu-id="6efc3-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="6efc3-112">Data type:</span></span>  <br/> |<span data-ttu-id="6efc3-113">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="6efc3-113">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="6efc3-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="6efc3-114">Area:</span></span>  <br/> |<span data-ttu-id="6efc3-115">Kontakt</span><span class="sxs-lookup"><span data-stu-id="6efc3-115">Contact</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="ef828-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ef828-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="6efc3-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="6efc3-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="ef828-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="ef828-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="6efc3-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="6efc3-117">Protocol specifications</span></span>
 
-<span data-ttu-id="ef828-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ef828-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6efc3-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6efc3-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ef828-119">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="ef828-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="6efc3-119">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="6efc3-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="ef828-120">[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ef828-120">[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="6efc3-120">[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6efc3-120">[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ef828-121">Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="ef828-121">Specifies the properties and operations that are permissible for contacts and personal distribution lists.</span></span>
+> <span data-ttu-id="6efc3-121">Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="6efc3-121">Specifies the properties and operations that are permissible for contacts and personal distribution lists.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="ef828-122">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="ef828-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="6efc3-122">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="6efc3-122">Header files</span></span>
 
-<span data-ttu-id="ef828-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ef828-123">Mapidefs.h</span></span>
+<span data-ttu-id="6efc3-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6efc3-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="ef828-124">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="ef828-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="6efc3-124">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6efc3-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ef828-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ef828-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6efc3-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6efc3-125">See also</span></span>
 
 
 
-[<span data-ttu-id="ef828-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ef828-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="6efc3-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6efc3-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="ef828-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ef828-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="6efc3-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6efc3-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="ef828-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="ef828-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="6efc3-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="6efc3-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="ef828-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="ef828-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="6efc3-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="6efc3-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796998"
 ---
-# <a name="filename-function"></a><span data-ttu-id="a2c18-103">FILENAME Function</span><span class="sxs-lookup"><span data-stu-id="a2c18-103">FILENAME Function</span></span>
+# <a name="filename-function"></a><span data-ttu-id="7f836-103">FILENAME Function</span><span class="sxs-lookup"><span data-stu-id="7f836-103">FILENAME Function</span></span>
 
-<span data-ttu-id="a2c18-104">Gibt den Dateinamen des Dokuments als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="a2c18-104">Returns a document's file name as a string.</span></span>
+<span data-ttu-id="7f836-104">Gibt den Dateinamen des Dokuments als Zeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="7f836-104">Returns a document's file name as a string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="a2c18-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="a2c18-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7f836-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="7f836-105">Syntax</span></span>
 
-<span data-ttu-id="a2c18-106">FILENAME ()</span><span class="sxs-lookup"><span data-stu-id="a2c18-106">FILENAME ()</span></span>
+<span data-ttu-id="7f836-106">FILENAME ()</span><span class="sxs-lookup"><span data-stu-id="7f836-106">FILENAME ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="a2c18-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a2c18-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="7f836-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7f836-107">Return value</span></span>
 
-<span data-ttu-id="a2c18-108">String</span><span class="sxs-lookup"><span data-stu-id="a2c18-108">String</span></span>
+<span data-ttu-id="7f836-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="7f836-108">String</span></span>
   
 

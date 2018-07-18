@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796558"
 ---
-# <a name="calendar-cell-miscellaneous-section"></a><span data-ttu-id="ecd6a-103">Calendar Cell (Miscellaneous Section)</span><span class="sxs-lookup"><span data-stu-id="ecd6a-103">Calendar Cell (Miscellaneous Section)</span></span>
+# <a name="calendar-cell-miscellaneous-section"></a><span data-ttu-id="34a55-103">Calendar Cell (Miscellaneous Section)</span><span class="sxs-lookup"><span data-stu-id="34a55-103">Calendar Cell (Miscellaneous Section)</span></span>
 
-<span data-ttu-id="ecd6a-104">Bestimmt den Kalender, der verwendet wird, wenn eine Zellformel Datumsinformationen enthält.</span><span class="sxs-lookup"><span data-stu-id="ecd6a-104">Determines the calendar that is used when a cell formula contains Date information.</span></span>
+<span data-ttu-id="34a55-104">Bestimmt den Kalender, der verwendet wird, wenn eine Zellformel Datumsinformationen enthält.</span><span class="sxs-lookup"><span data-stu-id="34a55-104">Determines the calendar that is used when a cell formula contains Date information.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ecd6a-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ecd6a-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="34a55-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="34a55-105">Remarks</span></span>
 
-<span data-ttu-id="ecd6a-106">Die folgenden Werte sind möglich: 0 (Westlich), 1 (Arabisch Hijri), 2 (Hebräischer Mondkalender), 3 (Taiwankalender), 4 (Japan - Kaiserherrschaft), 5 (Thai Buddhistisch), 6 (Koreanisch Danki), 7 (Indischer Kalender), 8 (Englisch transkribiert) und 9 (Französisch transkribiert).</span><span class="sxs-lookup"><span data-stu-id="ecd6a-106">The possible values are: 0 (Western), 1 (Arabic Hijri), 2 (Hebrew Lunar), 3 (Taiwan Calendar), 4 (Japanese Emperor Reign), 5 (Thai Buddhist), 6 (Korean Danki), 7 (Saka Era), 8 (English transliterated), and 9 (French transliterated ).</span></span> 
+<span data-ttu-id="34a55-106">Die folgenden Werte sind möglich: 0 (Westlich), 1 (Arabisch Hijri), 2 (Hebräischer Mondkalender), 3 (Taiwankalender), 4 (Japan - Kaiserherrschaft), 5 (Thai Buddhistisch), 6 (Koreanisch Danki), 7 (Indischer Kalender), 8 (Englisch transkribiert) und 9 (Französisch transkribiert).</span><span class="sxs-lookup"><span data-stu-id="34a55-106">The possible values are: 0 (Western), 1 (Arabic Hijri), 2 (Hebrew Lunar), 3 (Taiwan Calendar), 4 (Japanese Emperor Reign), 5 (Thai Buddhist), 6 (Korean Danki), 7 (Saka Era), 8 (English transliterated), and 9 (French transliterated ).</span></span> 
   
-<span data-ttu-id="ecd6a-107">Wenn Sie einen Verweis auf die Zelle Calendar nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="ecd6a-107">To get a reference to the Calendar cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="34a55-107">Wenn Sie einen Verweis auf die Zelle Calendar aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="34a55-107">To get a reference to the Calendar cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ecd6a-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="ecd6a-108">Cell name:</span></span>  <br/> | <span data-ttu-id="ecd6a-109">Calendar</span><span class="sxs-lookup"><span data-stu-id="ecd6a-109">Calendar</span></span>  <br/> |
+| <span data-ttu-id="34a55-108">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="34a55-108">Cell name:</span></span>  <br/> | <span data-ttu-id="34a55-109">Calendar</span><span class="sxs-lookup"><span data-stu-id="34a55-109">Calendar</span></span>  <br/> |
    
-<span data-ttu-id="ecd6a-110">Wenn Sie einen Verweis auf die Zelle Calendar aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="ecd6a-110">To get a reference to the Calendar cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="34a55-110">Wenn Sie einen Verweis auf die Zelle Calendar aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="34a55-110">To get a reference to the Calendar cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="ecd6a-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="ecd6a-111">Section index:</span></span>  <br/> |<span data-ttu-id="ecd6a-112">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="ecd6a-112">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="ecd6a-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="ecd6a-113">Row index:</span></span>  <br/> |<span data-ttu-id="ecd6a-114">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="ecd6a-114">**visRowMisc**</span></span> <br/> |
-| <span data-ttu-id="ecd6a-115">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="ecd6a-115">Cell index:</span></span>  <br/> |<span data-ttu-id="ecd6a-116">**visObjCalendar**</span><span class="sxs-lookup"><span data-stu-id="ecd6a-116">**visObjCalendar**</span></span> <br/> |
+| <span data-ttu-id="34a55-111">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="34a55-111">Section index:</span></span>  <br/> |<span data-ttu-id="34a55-112">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="34a55-112">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="34a55-113">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="34a55-113">Row index:</span></span>  <br/> |<span data-ttu-id="34a55-114">**visRowMisc**</span><span class="sxs-lookup"><span data-stu-id="34a55-114">**visRowMisc**</span></span> <br/> |
+| <span data-ttu-id="34a55-115">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="34a55-115">Cell index:</span></span>  <br/> |<span data-ttu-id="34a55-116">**visObjCalendar**</span><span class="sxs-lookup"><span data-stu-id="34a55-116">**visObjCalendar**</span></span> <br/> |
    
 
