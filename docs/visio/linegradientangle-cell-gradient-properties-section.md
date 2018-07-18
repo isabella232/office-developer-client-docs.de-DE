@@ -14,24 +14,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797314"
 ---
-# <a name="linegradientangle-cell-gradient-properties-section"></a><span data-ttu-id="00832-103">LineGradientAngle Cell (Gradient Properties Section)</span><span class="sxs-lookup"><span data-stu-id="00832-103">LineGradientAngle Cell (Gradient Properties Section)</span></span>
+# <a name="linegradientangle-cell-gradient-properties-section"></a><span data-ttu-id="43985-103">LineGradientAngle Cell (Gradient Properties Section)</span><span class="sxs-lookup"><span data-stu-id="43985-103">LineGradientAngle Cell (Gradient Properties Section)</span></span>
 
-<span data-ttu-id="00832-104">Den Winkel des Farbverlaufs für ein linearer Farbverlauf, im Bereich von 0 bis 359.9 Grad Zeile bestimmt.</span><span class="sxs-lookup"><span data-stu-id="00832-104">Determines the angle of the line gradient for a linear gradient, from 0 to 359.9 degrees.</span></span>
+<span data-ttu-id="43985-104">Den Winkel des Farbverlaufs für ein linearer Farbverlauf, im Bereich von 0 bis 359.9 Grad Zeile bestimmt.</span><span class="sxs-lookup"><span data-stu-id="43985-104">Determines the angle of the line gradient for a linear gradient, from 0 to 359.9 degrees.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="00832-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="00832-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="43985-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="43985-105">Remarks</span></span>
 
-<span data-ttu-id="00832-106">Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="00832-106">To get a reference to the **LineGradientAngle** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="43985-106">Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="43985-106">To get a reference to the **LineGradientAngle** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="00832-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="00832-107">Cell name:</span></span>  <br/> | <span data-ttu-id="00832-108">LineGradientAngle</span><span class="sxs-lookup"><span data-stu-id="00832-108">LineGradientAngle</span></span>  <br/> |
+| <span data-ttu-id="43985-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="43985-107">Cell name:</span></span>  <br/> | <span data-ttu-id="43985-108">LineGradientAngle</span><span class="sxs-lookup"><span data-stu-id="43985-108">LineGradientAngle</span></span>  <br/> |
    
-<span data-ttu-id="00832-109">Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="00832-109">To get a reference to the **LineGradientAngle** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="43985-109">Wenn Sie einen Verweis auf die Zelle **LineGradientAngle** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="43985-109">To get a reference to the **LineGradientAngle** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="00832-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="00832-110">Section index:</span></span>  <br/> |<span data-ttu-id="00832-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="00832-111">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="00832-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="00832-112">Row index:</span></span>  <br/> |<span data-ttu-id="00832-113">**visRowGradientProperties**</span><span class="sxs-lookup"><span data-stu-id="00832-113">**visRowGradientProperties**</span></span> <br/> |
-| <span data-ttu-id="00832-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="00832-114">Cell index:</span></span>  <br/> |<span data-ttu-id="00832-115">**visLineGradientAngle**</span><span class="sxs-lookup"><span data-stu-id="00832-115">**visLineGradientAngle**</span></span> <br/> |
+| <span data-ttu-id="43985-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="43985-110">Section index:</span></span>  <br/> |<span data-ttu-id="43985-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="43985-111">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="43985-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="43985-112">Row index:</span></span>  <br/> |<span data-ttu-id="43985-113">**visRowGradientProperties**</span><span class="sxs-lookup"><span data-stu-id="43985-113">**visRowGradientProperties**</span></span> <br/> |
+| <span data-ttu-id="43985-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="43985-114">Cell index:</span></span>  <br/> |<span data-ttu-id="43985-115">**visLineGradientAngle**</span><span class="sxs-lookup"><span data-stu-id="43985-115">**visLineGradientAngle**</span></span> <br/> |
    
 

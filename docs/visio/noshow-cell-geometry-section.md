@@ -16,29 +16,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797580"
 ---
-# <a name="noshow-cell-geometry-section"></a><span data-ttu-id="9d7d1-103">NoShow Cell (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="9d7d1-103">NoShow Cell (Geometry Section)</span></span>
+# <a name="noshow-cell-geometry-section"></a><span data-ttu-id="8d253-103">NoShow Cell (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="8d253-103">NoShow Cell (Geometry Section)</span></span>
 
-<span data-ttu-id="9d7d1-104">Gibt an, ob ein Pfad auf dem Zeichenblatt angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="9d7d1-104">Indicates whether a path is displayed on the drawing page.</span></span>
+<span data-ttu-id="8d253-104">Gibt an, ob ein Pfad auf dem Zeichenblatt angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="8d253-104">Indicates whether a path is displayed on the drawing page.</span></span>
   
-|<span data-ttu-id="9d7d1-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="9d7d1-105">**Value**</span></span>|<span data-ttu-id="9d7d1-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="9d7d1-106">**Description**</span></span>|
+|<span data-ttu-id="8d253-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="8d253-105">**Value**</span></span>|<span data-ttu-id="8d253-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="8d253-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="9d7d1-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="9d7d1-107">TRUE</span></span>  <br/> | <span data-ttu-id="9d7d1-108">Der Strich und die Füllung des Pfads, der durch den Abschnitt dargestellt wird, sind ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="9d7d1-108">The stroke and fill of the path represented by the section is hidden.</span></span>  <br/> |
-| <span data-ttu-id="9d7d1-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="9d7d1-109">FALSE</span></span>  <br/> | <span data-ttu-id="9d7d1-110">Der Strich und die Füllung des Pfades werden angezeigt.</span><span class="sxs-lookup"><span data-stu-id="9d7d1-110">The stroke and fill of the path is shown.</span></span>  <br/> |
+| <span data-ttu-id="8d253-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="8d253-107">TRUE</span></span>  <br/> | <span data-ttu-id="8d253-108">Der Strich und die Füllung des Pfads, der durch den Abschnitt dargestellt wird, sind ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="8d253-108">The stroke and fill of the path represented by the section is hidden.</span></span>  <br/> |
+| <span data-ttu-id="8d253-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="8d253-109">FALSE</span></span>  <br/> | <span data-ttu-id="8d253-110">Der Strich und die Füllung des Pfades werden angezeigt.</span><span class="sxs-lookup"><span data-stu-id="8d253-110">The stroke and fill of the path is shown.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="9d7d1-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9d7d1-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8d253-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8d253-111">Remarks</span></span>
 
-<span data-ttu-id="9d7d1-112">Wenn Sie einen Verweis auf die Zelle NoShow nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="9d7d1-112">To get a reference to the NoShow cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="8d253-112">Wenn Sie einen Verweis auf die Zelle NoShow aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="8d253-112">To get a reference to the NoShow cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="9d7d1-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="9d7d1-113">Cell name:</span></span>  <br/> | <span data-ttu-id="9d7d1-114">Geometrie *i* . NoShow wobei *i* = < 1 >, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="9d7d1-114">Geometry  *i*  .NoShow            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="8d253-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="8d253-113">Cell name:</span></span>  <br/> | <span data-ttu-id="8d253-114">Geometrie *i* . NoShow wobei *i* = < 1 >, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="8d253-114">Geometry  *i*  .NoShow            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="9d7d1-115">Wenn Sie einen Verweis auf die Zelle NoShow aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="9d7d1-115">To get a reference to the NoShow cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="8d253-115">Wenn Sie einen Verweis auf die Zelle NoShow aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="8d253-115">To get a reference to the NoShow cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="9d7d1-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="9d7d1-116">Section index:</span></span>  <br/> |<span data-ttu-id="9d7d1-117">**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="9d7d1-117">**visSectionFirstComponent** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="9d7d1-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="9d7d1-118">Row index:</span></span>  <br/> |<span data-ttu-id="9d7d1-119">**visRowComponent**</span><span class="sxs-lookup"><span data-stu-id="9d7d1-119">**visRowComponent**</span></span> <br/> |
-| <span data-ttu-id="9d7d1-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="9d7d1-120">Cell index:</span></span>  <br/> |<span data-ttu-id="9d7d1-121">**visCompNoShow**</span><span class="sxs-lookup"><span data-stu-id="9d7d1-121">**visCompNoShow**</span></span> <br/> |
+| <span data-ttu-id="8d253-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="8d253-116">Section index:</span></span>  <br/> |<span data-ttu-id="8d253-117">**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="8d253-117">**visSectionFirstComponent** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="8d253-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="8d253-118">Row index:</span></span>  <br/> |<span data-ttu-id="8d253-119">**visRowComponent**</span><span class="sxs-lookup"><span data-stu-id="8d253-119">**visRowComponent**</span></span> <br/> |
+| <span data-ttu-id="8d253-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="8d253-120">Cell index:</span></span>  <br/> |<span data-ttu-id="8d253-121">**visCompNoShow**</span><span class="sxs-lookup"><span data-stu-id="8d253-121">**visCompNoShow**</span></span> <br/> |
    
 

@@ -16,20 +16,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797585"
 ---
-# <a name="pagenumber-function"></a><span data-ttu-id="4c457-103">PAGENUMBER-Funktion</span><span class="sxs-lookup"><span data-stu-id="4c457-103">PAGENUMBER Function</span></span>
+# <a name="pagenumber-function"></a><span data-ttu-id="1820b-103">PAGENUMBER Function</span><span class="sxs-lookup"><span data-stu-id="1820b-103">PAGENUMBER Function</span></span>
 
-<span data-ttu-id="4c457-104">Gibt die Anzahl der Seite, die das Shape enthält.</span><span class="sxs-lookup"><span data-stu-id="4c457-104">Returns the number of the page that contains the shape.</span></span> 
+<span data-ttu-id="1820b-104">Gibt die Anzahl der Seite, die das Shape enthält.</span><span class="sxs-lookup"><span data-stu-id="1820b-104">Returns the number of the page that contains the shape.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="4c457-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="4c457-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1820b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1820b-105">Syntax</span></span>
 
-<span data-ttu-id="4c457-106">PAGENUMBER()</span><span class="sxs-lookup"><span data-stu-id="4c457-106">PAGENUMBER()</span></span>
+<span data-ttu-id="1820b-106">PAGENUMBER()</span><span class="sxs-lookup"><span data-stu-id="1820b-106">PAGENUMBER()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="4c457-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4c457-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="1820b-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1820b-107">Return value</span></span>
 
-<span data-ttu-id="4c457-108">Zahl</span><span class="sxs-lookup"><span data-stu-id="4c457-108">Number</span></span>
+<span data-ttu-id="1820b-108">Zahl</span><span class="sxs-lookup"><span data-stu-id="1820b-108">Number</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="4c457-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4c457-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1820b-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1820b-109">Remarks</span></span>
 
-<span data-ttu-id="4c457-110">Wenn es sich bei dem aktuellen Zeichenblatt um ein Hintergrundzeichenblatt (ohne Nummerierung) handelt oder ein Fehler auftritt, gibt die PAGENUMBER-Funktion 0 zurück.</span><span class="sxs-lookup"><span data-stu-id="4c457-110">If the current page is a background page (unnumbered), or if an error occurs, the PAGENUMBER function returns zero.</span></span>
+<span data-ttu-id="1820b-110">Wenn es sich bei dem aktuellen Zeichenblatt um ein Hintergrundzeichenblatt (ohne Nummerierung) handelt oder ein Fehler auftritt, gibt die PAGENUMBER-Funktion 0 zurück.</span><span class="sxs-lookup"><span data-stu-id="1820b-110">If the current page is a background page (unnumbered), or if an error occurs, the PAGENUMBER function returns zero.</span></span>
   
 

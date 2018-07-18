@@ -14,12 +14,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797759"
 ---
-# <a name="quick-style-section"></a><span data-ttu-id="a16d1-103">Quick Style Section</span><span class="sxs-lookup"><span data-stu-id="a16d1-103">Quick Style Section</span></span>
+# <a name="quick-style-section"></a><span data-ttu-id="9ec79-103">Quick Style Section</span><span class="sxs-lookup"><span data-stu-id="9ec79-103">Quick Style Section</span></span>
 
-<span data-ttu-id="a16d1-104">Zeigt die aktuellen Schnellformatvorlagen Formatieren von Werten auf die Form, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Stil, Schattenfarbe, Effekte, Schriftart und Formatvorlagentyp angewendet.</span><span class="sxs-lookup"><span data-stu-id="a16d1-104">Shows the current Quick Style formatting values applied to the shape, including line color and style, fill color and style, shadow color, effects, font, and style type.</span></span> 
+<span data-ttu-id="9ec79-104">Zeigt die aktuellen Schnellformatvorlagen Formatieren von Werten auf die Form, einschließlich Linienfarbe und Formatvorlage, Füllfarbe und Stil, Schattenfarbe, Effekte, Schriftart und Formatvorlagentyp angewendet.</span><span class="sxs-lookup"><span data-stu-id="9ec79-104">Shows the current Quick Style formatting values applied to the shape, including line color and style, fill color and style, shadow color, effects, font, and style type.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="a16d1-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a16d1-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ec79-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9ec79-105">Remarks</span></span>
 
-<span data-ttu-id="a16d1-106">Sie können Schnellformatvorlagen auswählen das Shape und anschließend einen neuen Schnellformatvorlagen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Formenarten** klicken Sie auf **Weitere**, und wählen Sie dann eine andere Schnellformatvorlagen aus dem Katalog).</span><span class="sxs-lookup"><span data-stu-id="a16d1-106">You can Quick Style selecting the shape and then selecting a new Quick Style (on the **Home** tab, in the **Shape Styles** group, click **More**, and then select another Quick Style from the gallery).</span></span>
+<span data-ttu-id="9ec79-106">Sie können Schnellformatvorlagen auswählen das Shape und anschließend einen neuen Schnellformatvorlagen (klicken Sie auf der Registerkarte **Start** in der Gruppe **Formenarten** klicken Sie auf **Weitere**, und wählen Sie dann eine andere Schnellformatvorlagen aus dem Katalog).</span><span class="sxs-lookup"><span data-stu-id="9ec79-106">You can Quick Style selecting the shape and then selecting a new Quick Style (on the **Home** tab, in the **Shape Styles** group, click **More**, and then select another Quick Style from the gallery).</span></span>
   
 

@@ -16,31 +16,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797541"
 ---
-# <a name="noline-cell-geometry-section"></a><span data-ttu-id="fbdd0-103">Zelle "NoLine" (Abschnitt "Geometry")</span><span class="sxs-lookup"><span data-stu-id="fbdd0-103">NoLine Cell (Geometry Section)</span></span>
+# <a name="noline-cell-geometry-section"></a><span data-ttu-id="10b89-103">NoLine Cell (Geometry Section)</span><span class="sxs-lookup"><span data-stu-id="10b89-103">NoLine Cell (Geometry Section)</span></span>
 
-<span data-ttu-id="fbdd0-104">Legt fest, ob eine Linie um die Grenze des Pfads gezogen wird.</span><span class="sxs-lookup"><span data-stu-id="fbdd0-104">Determines whether a line is drawn around the boundary of the path.</span></span>
+<span data-ttu-id="10b89-104">Legt fest, ob eine Linie um die Grenze des Pfads gezogen wird.</span><span class="sxs-lookup"><span data-stu-id="10b89-104">Determines whether a line is drawn around the boundary of the path.</span></span>
   
-|<span data-ttu-id="fbdd0-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="fbdd0-105">**Value**</span></span>|<span data-ttu-id="fbdd0-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="fbdd0-106">**Description**</span></span>|
+|<span data-ttu-id="10b89-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="10b89-105">**Value**</span></span>|<span data-ttu-id="10b89-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="10b89-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="fbdd0-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="fbdd0-107">TRUE</span></span>  <br/> | <span data-ttu-id="fbdd0-108">Es wird keine Linie um die Grenze eines Pfads gezogen, bei der es sich um die Grenze eines ausgefüllten Bereichs handelt.</span><span class="sxs-lookup"><span data-stu-id="fbdd0-108">A line is not drawn around the boundary of the path that is the boundary of a filled region.</span></span>  <br/> |
-| <span data-ttu-id="fbdd0-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="fbdd0-109">FALSE</span></span>  <br/> | <span data-ttu-id="fbdd0-110">Es wird eine Linie um die Grenze eines Pfades gezogen.</span><span class="sxs-lookup"><span data-stu-id="fbdd0-110">A line is drawn around the boundary of a path.</span></span>  <br/> |
+| <span data-ttu-id="10b89-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="10b89-107">TRUE</span></span>  <br/> | <span data-ttu-id="10b89-108">Es wird keine Linie um die Grenze eines Pfads gezogen, bei der es sich um die Grenze eines ausgefüllten Bereichs handelt.</span><span class="sxs-lookup"><span data-stu-id="10b89-108">A line is not drawn around the boundary of the path that is the boundary of a filled region.</span></span>  <br/> |
+| <span data-ttu-id="10b89-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="10b89-109">FALSE</span></span>  <br/> | <span data-ttu-id="10b89-110">Es wird eine Linie um die Grenze eines Pfades gezogen.</span><span class="sxs-lookup"><span data-stu-id="10b89-110">A line is drawn around the boundary of a path.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="fbdd0-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="fbdd0-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="10b89-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="10b89-111">Remarks</span></span>
 
-<span data-ttu-id="fbdd0-p101">Wenn Sie die Farbe einer Linie in weiß ändern, ist diese Linie immer noch vorhanden, auch wenn sie vor einem weißen Hintergrund nicht mehr angezeigt wird. Wenn Sie in diese Zelle den Wert WAHR einsetzen, wird keine Linie gezogen.</span><span class="sxs-lookup"><span data-stu-id="fbdd0-p101">When you change the color of a line to white, the line still exists even though you can't see it on a white background. When you set the value of this cell to TRUE, no line is drawn.</span></span>
+<span data-ttu-id="10b89-p101">Wenn Sie die Farbe einer Linie in weiß ändern, ist diese Linie immer noch vorhanden, auch wenn sie vor einem weißen Hintergrund nicht mehr angezeigt wird. Wenn Sie in diese Zelle den Wert WAHR einsetzen, wird keine Linie gezogen.</span><span class="sxs-lookup"><span data-stu-id="10b89-p101">When you change the color of a line to white, the line still exists even though you can't see it on a white background. When you set the value of this cell to TRUE, no line is drawn.</span></span>
   
-<span data-ttu-id="fbdd0-114">Wenn Sie einen Verweis auf die Zelle NoLine nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="fbdd0-114">To get a reference to the NoLine cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="10b89-114">Wenn Sie einen Verweis auf die Zelle NoLine aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="10b89-114">To get a reference to the NoLine cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="fbdd0-115">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="fbdd0-115">Cell name:</span></span>  <br/> | <span data-ttu-id="fbdd0-116">Geometrie *i* . NoLine wobei *i* = < 1 >, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="fbdd0-116">Geometry  *i*  .NoLine            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="10b89-115">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="10b89-115">Cell name:</span></span>  <br/> | <span data-ttu-id="10b89-116">Geometrie *i* . NoLine wobei *i* = < 1 >, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="10b89-116">Geometry  *i*  .NoLine            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="fbdd0-117">Wenn Sie einen Verweis auf die Zelle NoLine aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="fbdd0-117">To get a reference to the NoLine cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="10b89-117">Wenn Sie einen Verweis auf die Zelle NoLine aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="10b89-117">To get a reference to the NoLine cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="fbdd0-118">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="fbdd0-118">Section index:</span></span>  <br/> |<span data-ttu-id="fbdd0-119">**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="fbdd0-119">**visSectionFirstComponent** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="fbdd0-120">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="fbdd0-120">Row index:</span></span>  <br/> |<span data-ttu-id="fbdd0-121">**visRowComponent**</span><span class="sxs-lookup"><span data-stu-id="fbdd0-121">**visRowComponent**</span></span> <br/> |
-| <span data-ttu-id="fbdd0-122">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="fbdd0-122">Cell index:</span></span>  <br/> |<span data-ttu-id="fbdd0-123">**visCompNoLine**</span><span class="sxs-lookup"><span data-stu-id="fbdd0-123">**visCompNoLine**</span></span> <br/> |
+| <span data-ttu-id="10b89-118">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="10b89-118">Section index:</span></span>  <br/> |<span data-ttu-id="10b89-119">**VisSectionFirstComponent** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="10b89-119">**visSectionFirstComponent** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="10b89-120">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="10b89-120">Row index:</span></span>  <br/> |<span data-ttu-id="10b89-121">**visRowComponent**</span><span class="sxs-lookup"><span data-stu-id="10b89-121">**visRowComponent**</span></span> <br/> |
+| <span data-ttu-id="10b89-122">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="10b89-122">Cell index:</span></span>  <br/> |<span data-ttu-id="10b89-123">**visCompNoLine**</span><span class="sxs-lookup"><span data-stu-id="10b89-123">**visCompNoLine**</span></span> <br/> |
    
 

@@ -16,24 +16,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797203"
 ---
-# <a name="indright-cell-paragraph-section"></a><span data-ttu-id="faae8-105">Zelle "IndRight" (Abschnitt "Paragraph")</span><span class="sxs-lookup"><span data-stu-id="faae8-105">IndRight Cell (Paragraph Section)</span></span>
+# <a name="indright-cell-paragraph-section"></a><span data-ttu-id="ff44e-105">IndRight Cell (Paragraph Section)</span><span class="sxs-lookup"><span data-stu-id="ff44e-105">IndRight Cell (Paragraph Section)</span></span>
 
-<span data-ttu-id="faae8-p102">Stellt den Abstand dar, den sämtliche Textzeilen in einem Absatz vom rechten Rand des Textblocks eingezogen sind. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung skaliert ist, bleibt der rechte Einzug gleich.</span><span class="sxs-lookup"><span data-stu-id="faae8-p102">Represents the distance all lines of text in a paragraph are indented from the right margin of the text block. This value is independent of the scale of the drawing. If the drawing is scaled, the right indent remains the same.</span></span>
+<span data-ttu-id="ff44e-p102">Stellt den Abstand dar, den sämtliche Textzeilen in einem Absatz vom rechten Rand des Textblocks eingezogen sind. Dieser Wert ist unabhängig vom Zeichnungsmaßstab. Wenn die Zeichnung skaliert ist, bleibt der rechte Einzug gleich.</span><span class="sxs-lookup"><span data-stu-id="ff44e-p102">Represents the distance all lines of text in a paragraph are indented from the right margin of the text block. This value is independent of the scale of the drawing. If the drawing is scaled, the right indent remains the same.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="faae8-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="faae8-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ff44e-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ff44e-109">Remarks</span></span>
 
-<span data-ttu-id="faae8-110">Wenn Sie einen Verweis auf die Zelle IndRight nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="faae8-110">To get a reference to the IndRight cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="ff44e-110">Wenn Sie einen Verweis auf die Zelle IndRight aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="ff44e-110">To get a reference to the IndRight cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="faae8-111">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="faae8-111">Cell name:</span></span>  <br/> | <span data-ttu-id="faae8-112">Para.IndRight [ *i* ] wobei *i* = < 1 >, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="faae8-112">Para.IndRight[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
+| <span data-ttu-id="ff44e-111">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="ff44e-111">Cell name:</span></span>  <br/> | <span data-ttu-id="ff44e-112">Para.IndRight [ *i* ] wobei *i* = < 1 >, 2, 3...</span><span class="sxs-lookup"><span data-stu-id="ff44e-112">Para.IndRight[  *i*  ]            where  *i*  = <1>, 2, 3...</span></span>  <br/> |
    
-<span data-ttu-id="faae8-113">Wenn Sie einen Verweis auf die Zelle IndRight aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="faae8-113">To get a reference to the IndRight cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="ff44e-113">Wenn Sie einen Verweis auf die Zelle IndRight aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="ff44e-113">To get a reference to the IndRight cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="faae8-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="faae8-114">Section index:</span></span>  <br/> |<span data-ttu-id="faae8-115">**visSectionParagraph**</span><span class="sxs-lookup"><span data-stu-id="faae8-115">**visSectionParagraph**</span></span> <br/> |
-| <span data-ttu-id="faae8-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="faae8-116">Row index:</span></span>  <br/> |<span data-ttu-id="faae8-117">**VisRowParagraph** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="faae8-117">**visRowParagraph** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
-| <span data-ttu-id="faae8-118">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="faae8-118">Cell index:</span></span>  <br/> |<span data-ttu-id="faae8-119">**visIndentRight**</span><span class="sxs-lookup"><span data-stu-id="faae8-119">**visIndentRight**</span></span> <br/> |
+| <span data-ttu-id="ff44e-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="ff44e-114">Section index:</span></span>  <br/> |<span data-ttu-id="ff44e-115">**visSectionParagraph**</span><span class="sxs-lookup"><span data-stu-id="ff44e-115">**visSectionParagraph**</span></span> <br/> |
+| <span data-ttu-id="ff44e-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="ff44e-116">Row index:</span></span>  <br/> |<span data-ttu-id="ff44e-117">**VisRowParagraph** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="ff44e-117">**visRowParagraph** +  *i*            where  *i*  = 0, 1, 2...</span></span>  <br/> |
+| <span data-ttu-id="ff44e-118">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="ff44e-118">Cell index:</span></span>  <br/> |<span data-ttu-id="ff44e-119">**visIndentRight**</span><span class="sxs-lookup"><span data-stu-id="ff44e-119">**visIndentRight**</span></span> <br/> |
    
 

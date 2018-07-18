@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797722"
 ---
-# <a name="prompt-cell-actions-section"></a><span data-ttu-id="f81be-103">Zelle "Prompt" (Abschnitt "Actions")</span><span class="sxs-lookup"><span data-stu-id="f81be-103">Prompt Cell (Actions Section)</span></span>
+# <a name="prompt-cell-actions-section"></a><span data-ttu-id="3edd7-103">Prompt Cell (Actions Section)</span><span class="sxs-lookup"><span data-stu-id="3edd7-103">Prompt Cell (Actions Section)</span></span>
 
-<span data-ttu-id="f81be-104">Ab Visio 2002 wird diese Zelle nicht mehr verwendet.</span><span class="sxs-lookup"><span data-stu-id="f81be-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
+<span data-ttu-id="3edd7-104">Ab Visio 2002 wird diese Zelle nicht mehr verwendet.</span><span class="sxs-lookup"><span data-stu-id="3edd7-104">Beginning with Visio 2002, this cell is no longer used.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="f81be-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f81be-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3edd7-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="3edd7-105">Remarks</span></span>
 
-<span data-ttu-id="f81be-106">In früheren Versionen von Visio wurde in diese Zelle eine Beschreibung eingegeben, die in der Statusleiste angezeigt wurde, wenn auf den entsprechenden Befehl im Kontextmenü geklickt wurde.</span><span class="sxs-lookup"><span data-stu-id="f81be-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
+<span data-ttu-id="3edd7-106">In früheren Versionen von Visio wurde in diese Zelle eine Beschreibung eingegeben, die in der Statusleiste angezeigt wurde, wenn auf den entsprechenden Befehl im Kontextmenü geklickt wurde.</span><span class="sxs-lookup"><span data-stu-id="3edd7-106">In earlier versions of Visio, this cell specified a descriptive prompt that appeared in the status bar when you selected the corresponding shortcut command.</span></span>
   
 

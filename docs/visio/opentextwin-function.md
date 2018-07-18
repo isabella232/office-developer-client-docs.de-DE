@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797561"
 ---
-# <a name="opentextwin-function"></a><span data-ttu-id="241d2-103">OPENTEXTWIN Function</span><span class="sxs-lookup"><span data-stu-id="241d2-103">OPENTEXTWIN Function</span></span>
+# <a name="opentextwin-function"></a><span data-ttu-id="55505-103">OPENTEXTWIN Function</span><span class="sxs-lookup"><span data-stu-id="55505-103">OPENTEXTWIN Function</span></span>
 
-<span data-ttu-id="241d2-104">Öffnet den Textblock, damit der Text bearbeitet werden kann.</span><span class="sxs-lookup"><span data-stu-id="241d2-104">Opens the shape's text block so that the text can be edited.</span></span>
+<span data-ttu-id="55505-104">Öffnet den Textblock, damit der Text bearbeitet werden kann.</span><span class="sxs-lookup"><span data-stu-id="55505-104">Opens the shape's text block so that the text can be edited.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="241d2-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="241d2-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="55505-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="55505-105">Syntax</span></span>
 
-<span data-ttu-id="241d2-106">OPENTEXTWIN( )</span><span class="sxs-lookup"><span data-stu-id="241d2-106">OPENTEXTWIN( )</span></span>
+<span data-ttu-id="55505-106">OPENTEXTWIN( )</span><span class="sxs-lookup"><span data-stu-id="55505-106">OPENTEXTWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="241d2-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="241d2-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="55505-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="55505-107">Remarks</span></span>
 
-<span data-ttu-id="241d2-p101">In früheren Versionen von Visio wird diese Funktion in der Form _OPENTEXTWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="241d2-p101">In earlier versions of Visio, this function appears as _OPENTEXTWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="55505-p101">In früheren Versionen von Visio wird diese Funktion in der Form _OPENTEXTWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="55505-p101">In earlier versions of Visio, this function appears as _OPENTEXTWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

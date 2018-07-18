@@ -14,16 +14,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797787"
 ---
-# <a name="reference-visio-shapesheet"></a><span data-ttu-id="9c1f5-103">Verweis (Visio-ShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="9c1f5-103">Reference (Visio ShapeSheet)</span></span>
+# <a name="reference-visio-shapesheet"></a><span data-ttu-id="8d719-103">Verweis (Visio-ShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="8d719-103">Reference (Visio ShapeSheet)</span></span>
 
-<span data-ttu-id="9c1f5-104">In diesem Teil des Visio 2013-ShapeSheet-Referenz enthält die folgenden Abschnitte:</span><span class="sxs-lookup"><span data-stu-id="9c1f5-104">This part of the Visio 2013 ShapeSheet reference contains the following sections:</span></span>
+<span data-ttu-id="8d719-104">In diesem Teil des Visio 2013-ShapeSheet-Referenz enthält die folgenden Abschnitte:</span><span class="sxs-lookup"><span data-stu-id="8d719-104">This part of the Visio 2013 ShapeSheet reference contains the following sections:</span></span>
   
-- [<span data-ttu-id="9c1f5-105">Zellen</span><span class="sxs-lookup"><span data-stu-id="9c1f5-105">Cells</span></span>](a-cell-geometry-section.md)
+- [<span data-ttu-id="8d719-105">Zellen</span><span class="sxs-lookup"><span data-stu-id="8d719-105">Cells</span></span>](a-cell-geometry-section.md)
     
-- [<span data-ttu-id="9c1f5-106">Functions</span><span class="sxs-lookup"><span data-stu-id="9c1f5-106">Functions</span></span>](abs-function-visioshapesheet.md)
+- [<span data-ttu-id="8d719-106">Functions</span><span class="sxs-lookup"><span data-stu-id="8d719-106">Functions</span></span>](abs-function-visioshapesheet.md)
     
-- [<span data-ttu-id="9c1f5-107">Rows</span><span class="sxs-lookup"><span data-stu-id="9c1f5-107">Rows</span></span>](actions-row-actions-section.md)
+- [<span data-ttu-id="8d719-107">Rows</span><span class="sxs-lookup"><span data-stu-id="8d719-107">Rows</span></span>](actions-row-actions-section.md)
     
-- [<span data-ttu-id="9c1f5-108">Sections</span><span class="sxs-lookup"><span data-stu-id="9c1f5-108">Sections</span></span>](1-d-endpoints-section.md)
+- [<span data-ttu-id="8d719-108">Sections</span><span class="sxs-lookup"><span data-stu-id="8d719-108">Sections</span></span>](1-d-endpoints-section.md)
     
 

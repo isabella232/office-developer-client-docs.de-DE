@@ -15,24 +15,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797402"
 ---
-# <a name="lockthemeeffects-cell-protection-section"></a><span data-ttu-id="34b00-102">LockThemeEffects Cell (Protection Section)</span><span class="sxs-lookup"><span data-stu-id="34b00-102">LockThemeEffects Cell (Protection Section)</span></span>
+# <a name="lockthemeeffects-cell-protection-section"></a><span data-ttu-id="a0f79-102">LockThemeEffects Cell (Protection Section)</span><span class="sxs-lookup"><span data-stu-id="a0f79-102">LockThemeEffects Cell (Protection Section)</span></span>
 
-<span data-ttu-id="34b00-103">Verhindert, dass Designeffekte auf das Shape angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="34b00-103">Prevents application of theme effects to the shape.</span></span> 
+<span data-ttu-id="a0f79-103">Verhindert, dass Designeffekte auf das Shape angewendet werden.</span><span class="sxs-lookup"><span data-stu-id="a0f79-103">Prevents application of theme effects to the shape.</span></span> 
   
-<span data-ttu-id="34b00-104">Entspricht der Einstellung für das Kontrollkästchen **von Designeffekten** im Dialogfeld **Schutz** .</span><span class="sxs-lookup"><span data-stu-id="34b00-104">Corresponds to the **From theme effects** check box setting in the **Protection** dialog box.</span></span> 
+<span data-ttu-id="a0f79-104">Entspricht der Einstellung für das Kontrollkästchen **von Designeffekten** im Dialogfeld **Schutz** .</span><span class="sxs-lookup"><span data-stu-id="a0f79-104">Corresponds to the **From theme effects** check box setting in the **Protection** dialog box.</span></span> 
   
-<span data-ttu-id="34b00-105">Wenn die Zelle LockThemeEffects aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft nach Namen verweisen verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="34b00-105">To refer ti the LockThemeColors cell by name from another formula, or from a program, using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="a0f79-105">Wenn Sie auf die Zelle LockThemeEffects aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen verweisen möchten, verwenden Sie Folgendes:
+
+</span><span class="sxs-lookup"><span data-stu-id="a0f79-105">To refer ti the LockThemeColors cell by name from another formula, or from a program, using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="34b00-106">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="34b00-106">Cell name:</span></span>  <br/> |<span data-ttu-id="34b00-107">LockThemeEffects</span><span class="sxs-lookup"><span data-stu-id="34b00-107">LockThemeEffects</span></span>  <br/> |
+|<span data-ttu-id="a0f79-106">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="a0f79-106">Cell name:</span></span>  <br/> |<span data-ttu-id="a0f79-107">LockThemeEffects</span><span class="sxs-lookup"><span data-stu-id="a0f79-107">LockThemeEffects</span></span>  <br/> |
    
-<span data-ttu-id="34b00-108">Wenn Sie auf die Zelle LockThemeEffects durch Index aus einem Programm verweisen möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="34b00-108">To refer to the LockThemeEffects cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="a0f79-108">Wenn Sie aus einem Programm heraus nach Index auf die Zelle LockThemeEffects verweisen möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:
+
+</span><span class="sxs-lookup"><span data-stu-id="a0f79-108">To refer to the LockThemeEffects cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="34b00-109">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="34b00-109">Section index:</span></span>  <br/> |<span data-ttu-id="34b00-110">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="34b00-110">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="34b00-111">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="34b00-111">Row index:</span></span>  <br/> |<span data-ttu-id="34b00-112">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="34b00-112">**visRowLock**</span></span> <br/> |
-|<span data-ttu-id="34b00-113">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="34b00-113">Cell index:</span></span>  <br/> |<span data-ttu-id="34b00-114">**visLockThemeEffects**</span><span class="sxs-lookup"><span data-stu-id="34b00-114">**visLockThemeEffects**</span></span> <br/> |
+|<span data-ttu-id="a0f79-109">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="a0f79-109">Section index:</span></span>  <br/> |<span data-ttu-id="a0f79-110">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="a0f79-110">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="a0f79-111">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="a0f79-111">Row index:</span></span>  <br/> |<span data-ttu-id="a0f79-112">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="a0f79-112">**visRowLock**</span></span> <br/> |
+|<span data-ttu-id="a0f79-113">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="a0f79-113">Cell index:</span></span>  <br/> |<span data-ttu-id="a0f79-114">**visLockThemeEffects**</span><span class="sxs-lookup"><span data-stu-id="a0f79-114">**visLockThemeEffects**</span></span> <br/> |
    
 

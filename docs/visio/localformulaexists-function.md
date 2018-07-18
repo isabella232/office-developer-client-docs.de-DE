@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797368"
 ---
-# <a name="localformulaexists-function"></a><span data-ttu-id="1e45d-103">LOCALFORMULAEXISTS Function</span><span class="sxs-lookup"><span data-stu-id="1e45d-103">LOCALFORMULAEXISTS Function</span></span>
+# <a name="localformulaexists-function"></a><span data-ttu-id="dfc44-103">LOCALFORMULAEXISTS Function</span><span class="sxs-lookup"><span data-stu-id="dfc44-103">LOCALFORMULAEXISTS Function</span></span>
 
-<span data-ttu-id="1e45d-104">Gibt an, ob die referenzierte Zelle eine lokale Formel enthält.</span><span class="sxs-lookup"><span data-stu-id="1e45d-104">Indicates whether the referenced cell contains a local formula.</span></span> 
+<span data-ttu-id="dfc44-104">Gibt an, ob die referenzierte Zelle eine lokale Formel enthält.</span><span class="sxs-lookup"><span data-stu-id="dfc44-104">Indicates whether the referenced cell contains a local formula.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="1e45d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1e45d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="dfc44-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="dfc44-105">Syntax</span></span>
 
-<span data-ttu-id="1e45d-106">LOCALFORMULAEXISTS (** *Cellref* **)</span><span class="sxs-lookup"><span data-stu-id="1e45d-106">LOCALFORMULAEXISTS (** *cellref* ** )</span></span> 
+<span data-ttu-id="dfc44-106">LOCALFORMULAEXISTS (** *Cellref* **)</span><span class="sxs-lookup"><span data-stu-id="dfc44-106">LOCALFORMULAEXISTS (** *cellref* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="1e45d-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="1e45d-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="dfc44-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="dfc44-107">Parameters</span></span>
 
-|<span data-ttu-id="1e45d-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="1e45d-108">**Name**</span></span>|<span data-ttu-id="1e45d-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="1e45d-109">**Required/Optional**</span></span>|<span data-ttu-id="1e45d-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="1e45d-110">**Data Type**</span></span>|<span data-ttu-id="1e45d-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1e45d-111">**Description**</span></span>|
+|<span data-ttu-id="dfc44-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="dfc44-108">**Name**</span></span>|<span data-ttu-id="dfc44-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="dfc44-109">**Required/Optional**</span></span>|<span data-ttu-id="dfc44-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="dfc44-110">**Data Type**</span></span>|<span data-ttu-id="dfc44-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="dfc44-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="1e45d-112">_CellRef_</span><span class="sxs-lookup"><span data-stu-id="1e45d-112">_cellref_</span></span> <br/> |<span data-ttu-id="1e45d-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="1e45d-113">Required</span></span>  <br/> |<span data-ttu-id="1e45d-114">**String**</span><span class="sxs-lookup"><span data-stu-id="1e45d-114">**String**</span></span> <br/> | <span data-ttu-id="1e45d-115">Die Zelle, die auf das Vorhandensein einer Formel überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="1e45d-115">The cell that you want to check for the presence of a formula.</span></span>  <br/> |
+| <span data-ttu-id="dfc44-112">_CellRef_</span><span class="sxs-lookup"><span data-stu-id="dfc44-112">_cellref_</span></span> <br/> |<span data-ttu-id="dfc44-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="dfc44-113">Required</span></span>  <br/> |<span data-ttu-id="dfc44-114">**String**</span><span class="sxs-lookup"><span data-stu-id="dfc44-114">**String**</span></span> <br/> | <span data-ttu-id="dfc44-115">Die Zelle, die auf das Vorhandensein einer Formel überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="dfc44-115">The cell that you want to check for the presence of a formula.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="1e45d-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1e45d-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="dfc44-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dfc44-116">Return value</span></span>
 
-<span data-ttu-id="1e45d-117">Boolescher Wert</span><span class="sxs-lookup"><span data-stu-id="1e45d-117">Boolean</span></span>
+<span data-ttu-id="dfc44-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="dfc44-117">Boolean</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1e45d-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1e45d-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dfc44-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dfc44-118">Remarks</span></span>
 
-<span data-ttu-id="1e45d-119">Die LOCALFORMULAEXISTS-Funktion gibt 1 zurück, wenn die Zelle eine Formel enthält; wenn keine Formel vorhanden ist oder wenn die Formel übernommen wurde, wird 0 (null) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1e45d-119">The LOCALFORMULAEXISTS function returns 1 if the cell contains a local formula; if there is no formula, or if the formula is inherited, it returns 0 (zero).</span></span> 
+<span data-ttu-id="dfc44-119">Die LOCALFORMULAEXISTS-Funktion gibt 1 zurück, wenn die Zelle eine Formel enthält; wenn keine Formel vorhanden ist oder wenn die Formel übernommen wurde, wird 0 (null) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="dfc44-119">The LOCALFORMULAEXISTS function returns 1 if the cell contains a local formula; if there is no formula, or if the formula is inherited, it returns 0 (zero).</span></span> 
   
 

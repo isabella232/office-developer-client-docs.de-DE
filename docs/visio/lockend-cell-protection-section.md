@@ -16,29 +16,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797377"
 ---
-# <a name="lockend-cell-protection-section"></a><span data-ttu-id="11a8f-103">Zelle "LockEnd" (Abschnitt "Protection")</span><span class="sxs-lookup"><span data-stu-id="11a8f-103">LockEnd Cell (Protection Section)</span></span>
+# <a name="lockend-cell-protection-section"></a><span data-ttu-id="de3bc-103">LockEnd Cell (Protection Section)</span><span class="sxs-lookup"><span data-stu-id="de3bc-103">LockEnd Cell (Protection Section)</span></span>
 
-<span data-ttu-id="11a8f-104">Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.</span><span class="sxs-lookup"><span data-stu-id="11a8f-104">Locks the endpoint (EndX, EndY) of a 1-D shape to a specific location.</span></span>
+<span data-ttu-id="de3bc-104">Sperrt den Endpunkt (EndeX, EndeY) eines 1D-Shapes an einer bestimmten Position.</span><span class="sxs-lookup"><span data-stu-id="de3bc-104">Locks the endpoint (EndX, EndY) of a 1-D shape to a specific location.</span></span>
   
-|<span data-ttu-id="11a8f-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="11a8f-105">**Value**</span></span>|<span data-ttu-id="11a8f-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="11a8f-106">**Description**</span></span>|
+|<span data-ttu-id="de3bc-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="de3bc-105">**Value**</span></span>|<span data-ttu-id="de3bc-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="de3bc-106">**Description**</span></span>|
 |:-----|:-----|
-| <span data-ttu-id="11a8f-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="11a8f-107">TRUE</span></span>  <br/> | <span data-ttu-id="11a8f-108">Endpunkt ist gesperrt.</span><span class="sxs-lookup"><span data-stu-id="11a8f-108">Endpoint is locked.</span></span>  <br/> |
-| <span data-ttu-id="11a8f-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="11a8f-109">FALSE</span></span>  <br/> | <span data-ttu-id="11a8f-110">Endpunkt ist nicht gesperrt.</span><span class="sxs-lookup"><span data-stu-id="11a8f-110">Endpoint is not locked.</span></span>  <br/> |
+| <span data-ttu-id="de3bc-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="de3bc-107">TRUE</span></span>  <br/> | <span data-ttu-id="de3bc-108">Endpunkt ist gesperrt.</span><span class="sxs-lookup"><span data-stu-id="de3bc-108">Endpoint is locked.</span></span>  <br/> |
+| <span data-ttu-id="de3bc-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="de3bc-109">FALSE</span></span>  <br/> | <span data-ttu-id="de3bc-110">Endpunkt ist nicht gesperrt.</span><span class="sxs-lookup"><span data-stu-id="de3bc-110">Endpoint is not locked.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="11a8f-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="11a8f-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="de3bc-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="de3bc-111">Remarks</span></span>
 
-<span data-ttu-id="11a8f-112">Wenn Sie einen Verweis auf die Zelle LockEnd nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="11a8f-112">To get a reference to the LockEnd cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="de3bc-112">Wenn Sie einen Verweis auf die Zelle LockEnd aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="de3bc-112">To get a reference to the LockEnd cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="11a8f-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="11a8f-113">Cell name:</span></span>  <br/> | <span data-ttu-id="11a8f-114">LockEnd</span><span class="sxs-lookup"><span data-stu-id="11a8f-114">LockEnd</span></span>  <br/> |
+| <span data-ttu-id="de3bc-113">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="de3bc-113">Cell name:</span></span>  <br/> | <span data-ttu-id="de3bc-114">LockEnd</span><span class="sxs-lookup"><span data-stu-id="de3bc-114">LockEnd</span></span>  <br/> |
    
-<span data-ttu-id="11a8f-115">Wenn Sie einen Verweis auf die Zelle LockEnd aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="11a8f-115">To get a reference to the LockEnd cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="de3bc-115">Wenn Sie einen Verweis auf die Zelle LockEnd aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="de3bc-115">To get a reference to the LockEnd cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="11a8f-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="11a8f-116">Section index:</span></span>  <br/> |<span data-ttu-id="11a8f-117">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="11a8f-117">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="11a8f-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="11a8f-118">Row index:</span></span>  <br/> |<span data-ttu-id="11a8f-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="11a8f-119">**visRowLock**</span></span> <br/> |
-| <span data-ttu-id="11a8f-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="11a8f-120">Cell index:</span></span>  <br/> |<span data-ttu-id="11a8f-121">**visLockEnd**</span><span class="sxs-lookup"><span data-stu-id="11a8f-121">**visLockEnd**</span></span> <br/> |
+| <span data-ttu-id="de3bc-116">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="de3bc-116">Section index:</span></span>  <br/> |<span data-ttu-id="de3bc-117">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="de3bc-117">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="de3bc-118">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="de3bc-118">Row index:</span></span>  <br/> |<span data-ttu-id="de3bc-119">**visRowLock**</span><span class="sxs-lookup"><span data-stu-id="de3bc-119">**visRowLock**</span></span> <br/> |
+| <span data-ttu-id="de3bc-120">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="de3bc-120">Cell index:</span></span>  <br/> |<span data-ttu-id="de3bc-121">**visLockEnd**</span><span class="sxs-lookup"><span data-stu-id="de3bc-121">**visLockEnd**</span></span> <br/> |
    
 

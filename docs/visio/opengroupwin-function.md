@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797560"
 ---
-# <a name="opengroupwin-function"></a><span data-ttu-id="95f2e-104">OPENGROUPWIN Function</span><span class="sxs-lookup"><span data-stu-id="95f2e-104">OPENGROUPWIN Function</span></span>
+# <a name="opengroupwin-function"></a><span data-ttu-id="64384-104">OPENGROUPWIN Function</span><span class="sxs-lookup"><span data-stu-id="64384-104">OPENGROUPWIN Function</span></span>
 
-<span data-ttu-id="95f2e-105">Öffnet die Gruppe im Gruppenfenster.</span><span class="sxs-lookup"><span data-stu-id="95f2e-105">Opens the group in the group window.</span></span> <span data-ttu-id="95f2e-106">Wenn das Objekt keine Gruppe ist, hat diese Funktion keine Auswirkung.</span><span class="sxs-lookup"><span data-stu-id="95f2e-106">If the object is not a group, this function does nothing.</span></span>
+<span data-ttu-id="64384-105">Öffnet die Gruppe im Gruppenfenster.</span><span class="sxs-lookup"><span data-stu-id="64384-105">Opens the group in the group window.</span></span> <span data-ttu-id="64384-106">Wenn das Objekt keine Gruppe ist, hat diese Funktion keine Auswirkung.</span><span class="sxs-lookup"><span data-stu-id="64384-106">If the object is not a group, this function does nothing.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="95f2e-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="95f2e-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="64384-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="64384-107">Syntax</span></span>
 
-<span data-ttu-id="95f2e-108">OPENGROUPWIN( )</span><span class="sxs-lookup"><span data-stu-id="95f2e-108">OPENGROUPWIN( )</span></span>
+<span data-ttu-id="64384-108">OPENGROUPWIN( )</span><span class="sxs-lookup"><span data-stu-id="64384-108">OPENGROUPWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="95f2e-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="95f2e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="64384-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="64384-109">Remarks</span></span>
 
-<span data-ttu-id="95f2e-p103">In früheren Versionen von Visio wird diese Funktion in der Form _OPENGROUPWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="95f2e-p103">In earlier versions of Visio, this function appears as _OPENGROUPWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="64384-p103">In früheren Versionen von Visio wird diese Funktion in der Form _OPENGROUPWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="64384-p103">In earlier versions of Visio, this function appears as _OPENGROUPWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

@@ -16,28 +16,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797312"
 ---
-# <a name="len-function-visioshapesheet"></a><span data-ttu-id="99414-103">LEN Function (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="99414-103">LEN Function (VisioShapeSheet)</span></span>
+# <a name="len-function-visioshapesheet"></a><span data-ttu-id="09b9f-103">LEN Function (VisioShapeSheet)</span><span class="sxs-lookup"><span data-stu-id="09b9f-103">LEN Function (VisioShapeSheet)</span></span>
 
-<span data-ttu-id="99414-104">Gibt die Anzahl der Zeichen in einer Textzeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="99414-104">Returns the number of characters in a text string.</span></span>
+<span data-ttu-id="09b9f-104">Gibt die Anzahl der Zeichen in einer Textzeichenfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="09b9f-104">Returns the number of characters in a text string.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="99414-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="99414-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="09b9f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="09b9f-105">Syntax</span></span>
 
-<span data-ttu-id="99414-106">LEN (** *Text* **)</span><span class="sxs-lookup"><span data-stu-id="99414-106">LEN (** *text* ** )</span></span> 
+<span data-ttu-id="09b9f-106">LEN (** *Text* **)</span><span class="sxs-lookup"><span data-stu-id="09b9f-106">LEN (** *text* ** )</span></span> 
   
-### <a name="parameters"></a><span data-ttu-id="99414-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="99414-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="09b9f-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="09b9f-107">Parameters</span></span>
 
-|<span data-ttu-id="99414-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="99414-108">**Name**</span></span>|<span data-ttu-id="99414-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="99414-109">**Required/Optional**</span></span>|<span data-ttu-id="99414-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="99414-110">**Data Type**</span></span>|<span data-ttu-id="99414-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="99414-111">**Description**</span></span>|
+|<span data-ttu-id="09b9f-108">**Name**</span><span class="sxs-lookup"><span data-stu-id="09b9f-108">**Name**</span></span>|<span data-ttu-id="09b9f-109">**Erforderlich/Optional**</span><span class="sxs-lookup"><span data-stu-id="09b9f-109">**Required/Optional**</span></span>|<span data-ttu-id="09b9f-110">**Datentyp**</span><span class="sxs-lookup"><span data-stu-id="09b9f-110">**Data Type**</span></span>|<span data-ttu-id="09b9f-111">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="09b9f-111">**Description**</span></span>|
 |:-----|:-----|:-----|:-----|
-| <span data-ttu-id="99414-112">_text_</span><span class="sxs-lookup"><span data-stu-id="99414-112">_text_</span></span> <br/> |<span data-ttu-id="99414-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="99414-113">Required</span></span>  <br/> |<span data-ttu-id="99414-114">**String**</span><span class="sxs-lookup"><span data-stu-id="99414-114">**String**</span></span> <br/> |<span data-ttu-id="99414-115">Die Zeichenfolge, deren Länge ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="99414-115">The character string whose length you want to find.</span></span>  <br/> |
+| <span data-ttu-id="09b9f-112">_text_</span><span class="sxs-lookup"><span data-stu-id="09b9f-112">_text_</span></span> <br/> |<span data-ttu-id="09b9f-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="09b9f-113">Required</span></span>  <br/> |<span data-ttu-id="09b9f-114">**String**</span><span class="sxs-lookup"><span data-stu-id="09b9f-114">**String**</span></span> <br/> |<span data-ttu-id="09b9f-115">Die Zeichenfolge, deren Länge ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="09b9f-115">The character string whose length you want to find.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="99414-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="99414-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="09b9f-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="09b9f-116">Return value</span></span>
 
-<span data-ttu-id="99414-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="99414-117">Numeric</span></span>
+<span data-ttu-id="09b9f-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="09b9f-117">Numeric</span></span>
   
-## <a name="example"></a><span data-ttu-id="99414-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="99414-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="09b9f-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="09b9f-118">Example</span></span>
 
-<span data-ttu-id="99414-119">LEN ("Dortmund, NRW")</span><span class="sxs-lookup"><span data-stu-id="99414-119">LEN ("Seattle, WA")</span></span> 
+<span data-ttu-id="09b9f-119">LEN ("Dortmund, NRW")</span><span class="sxs-lookup"><span data-stu-id="09b9f-119">LEN ("Seattle, WA")</span></span> 
   
-<span data-ttu-id="99414-120">Gibt 11 zurück.</span><span class="sxs-lookup"><span data-stu-id="99414-120">Returns 11.</span></span> 
+<span data-ttu-id="09b9f-120">Gibt 11 zurück.</span><span class="sxs-lookup"><span data-stu-id="09b9f-120">Returns 11.</span></span> 
   
 

@@ -16,31 +16,31 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797569"
 ---
-# <a name="overline-cell-character-section"></a><span data-ttu-id="1b8cc-103">Overline Cell (Character Section)</span><span class="sxs-lookup"><span data-stu-id="1b8cc-103">Overline Cell (Character Section)</span></span>
+# <a name="overline-cell-character-section"></a><span data-ttu-id="7d9fb-103">Overline Cell (Character Section)</span><span class="sxs-lookup"><span data-stu-id="7d9fb-103">Overline Cell (Character Section)</span></span>
 
-<span data-ttu-id="1b8cc-104">Legt fest, ob der Text überstrichen ist.</span><span class="sxs-lookup"><span data-stu-id="1b8cc-104">Determines whether the text has a line above it.</span></span>
+<span data-ttu-id="7d9fb-104">Legt fest, ob der Text überstrichen ist.</span><span class="sxs-lookup"><span data-stu-id="7d9fb-104">Determines whether the text has a line above it.</span></span>
   
-|<span data-ttu-id="1b8cc-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="1b8cc-105">**Value**</span></span>|<span data-ttu-id="1b8cc-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="1b8cc-106">**Description**</span></span>|
+|<span data-ttu-id="7d9fb-105">**Wert**</span><span class="sxs-lookup"><span data-stu-id="7d9fb-105">**Value**</span></span>|<span data-ttu-id="7d9fb-106">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="7d9fb-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="1b8cc-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="1b8cc-107">TRUE</span></span>  <br/> |<span data-ttu-id="1b8cc-108">Text ist überstrichen.</span><span class="sxs-lookup"><span data-stu-id="1b8cc-108">Text has a line above it.</span></span>  <br/> |
-|<span data-ttu-id="1b8cc-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="1b8cc-109">FALSE</span></span>  <br/> |<span data-ttu-id="1b8cc-110">Text ist nicht überstrichen.</span><span class="sxs-lookup"><span data-stu-id="1b8cc-110">Text does not have a line above it.</span></span>  <br/> |
+|<span data-ttu-id="7d9fb-107">TRUE</span><span class="sxs-lookup"><span data-stu-id="7d9fb-107">TRUE</span></span>  <br/> |<span data-ttu-id="7d9fb-108">Text ist überstrichen.</span><span class="sxs-lookup"><span data-stu-id="7d9fb-108">Text has a line above it.</span></span>  <br/> |
+|<span data-ttu-id="7d9fb-109">FALSE</span><span class="sxs-lookup"><span data-stu-id="7d9fb-109">FALSE</span></span>  <br/> |<span data-ttu-id="7d9fb-110">Text ist nicht überstrichen.</span><span class="sxs-lookup"><span data-stu-id="7d9fb-110">Text does not have a line above it.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="1b8cc-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1b8cc-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7d9fb-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="7d9fb-111">Remarks</span></span>
 
-<span data-ttu-id="1b8cc-112">Sie können den Wert dieser Zelle auch festlegen, indem Sie das Dialogfeld **Text** verwenden (klicken Sie auf der Registerkarte **Start** auf den Pfeil neben **Schriftart** ).</span><span class="sxs-lookup"><span data-stu-id="1b8cc-112">You can also set the value of this cell by using the **Text** dialog box (on the **Home** tab, click the **Font** arrow).</span></span> 
+<span data-ttu-id="7d9fb-112">Sie können den Wert dieser Zelle auch festlegen, indem Sie das Dialogfeld **Text** verwenden (klicken Sie dazu auf der Registerkarte **Start** auf den Pfeil neben **Schriftart**).</span><span class="sxs-lookup"><span data-stu-id="7d9fb-112">You can also set the value of this cell by using the **Text** dialog box (on the **Home** tab, click the **Font** arrow).</span></span> 
   
-<span data-ttu-id="1b8cc-113">Wenn Sie einen Verweis auf die Zelle Overline nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="1b8cc-113">To get a reference to the Overline cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="7d9fb-113">Wenn Sie einen Verweis auf die Zelle Overline aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="7d9fb-113">To get a reference to the Overline cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1b8cc-114">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="1b8cc-114">Cell name:</span></span>  <br/> |<span data-ttu-id="1b8cc-115">Char.Overline [ *i* ] wobei *i* = < 1 >, 2.</span><span class="sxs-lookup"><span data-stu-id="1b8cc-115">Char.Overline[ *i*  ] where  *i*  = <1>, 2.</span></span> <span data-ttu-id="1b8cc-116">3...</span><span class="sxs-lookup"><span data-stu-id="1b8cc-116">3...</span></span>  <br/> |
+|<span data-ttu-id="7d9fb-114">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="7d9fb-114">Cell name:</span></span>  <br/> |<span data-ttu-id="7d9fb-115">Char.Overline [ *i* ] wobei *i* = < 1 >, 2.</span><span class="sxs-lookup"><span data-stu-id="7d9fb-115">Char.Overline[ *i*  ] where  *i*  = <1>, 2.</span></span> <span data-ttu-id="7d9fb-116">3...</span><span class="sxs-lookup"><span data-stu-id="7d9fb-116">3...</span></span>  <br/> |
    
-<span data-ttu-id="1b8cc-117">Wenn Sie einen Verweis auf die Zelle Overline aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="1b8cc-117">To get a reference to the Overline cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="7d9fb-117">Wenn Sie einen Verweis auf die Zelle Overline aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="7d9fb-117">To get a reference to the Overline cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="1b8cc-118">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="1b8cc-118">Section index:</span></span>  <br/> |<span data-ttu-id="1b8cc-119">**visSectionCharacter**</span><span class="sxs-lookup"><span data-stu-id="1b8cc-119">**visSectionCharacter**</span></span> <br/> |
-|<span data-ttu-id="1b8cc-120">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="1b8cc-120">Row index:</span></span>  <br/> |<span data-ttu-id="1b8cc-121">**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="1b8cc-121">**visRowCharacter** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
-|<span data-ttu-id="1b8cc-122">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="1b8cc-122">Cell index:</span></span>  <br/> |<span data-ttu-id="1b8cc-123">**visCharacterOverline**</span><span class="sxs-lookup"><span data-stu-id="1b8cc-123">**visCharacterOverline**</span></span> <br/> |
+|<span data-ttu-id="7d9fb-118">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="7d9fb-118">Section index:</span></span>  <br/> |<span data-ttu-id="7d9fb-119">**visSectionCharacter**</span><span class="sxs-lookup"><span data-stu-id="7d9fb-119">**visSectionCharacter**</span></span> <br/> |
+|<span data-ttu-id="7d9fb-120">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="7d9fb-120">Row index:</span></span>  <br/> |<span data-ttu-id="7d9fb-121">**VisRowCharacter** +  *i* wobei *i* = 0, 1, 2...</span><span class="sxs-lookup"><span data-stu-id="7d9fb-121">**visRowCharacter** +  *i*  where  *i*  = 0, 1, 2...</span></span>  <br/> |
+|<span data-ttu-id="7d9fb-122">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="7d9fb-122">Cell index:</span></span>  <br/> |<span data-ttu-id="7d9fb-123">**visCharacterOverline**</span><span class="sxs-lookup"><span data-stu-id="7d9fb-123">**visCharacterOverline**</span></span> <br/> |
    
 

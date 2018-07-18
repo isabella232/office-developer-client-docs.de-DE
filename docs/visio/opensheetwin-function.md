@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797564"
 ---
-# <a name="opensheetwin-function"></a><span data-ttu-id="59d5b-103">OPENSHEETWIN-Funktion</span><span class="sxs-lookup"><span data-stu-id="59d5b-103">OPENSHEETWIN Function</span></span>
+# <a name="opensheetwin-function"></a><span data-ttu-id="a3951-103">OPENSHEETWIN Function</span><span class="sxs-lookup"><span data-stu-id="a3951-103">OPENSHEETWIN Function</span></span>
 
-<span data-ttu-id="59d5b-104">Öffnet das ShapeSheet-Fenster in einem neuen Fenster.</span><span class="sxs-lookup"><span data-stu-id="59d5b-104">Opens the ShapeSheet window in a new window.</span></span>
+<span data-ttu-id="a3951-104">Öffnet das ShapeSheet-Fenster in einem neuen Fenster.</span><span class="sxs-lookup"><span data-stu-id="a3951-104">Opens the ShapeSheet window in a new window.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="59d5b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="59d5b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a3951-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="a3951-105">Syntax</span></span>
 
-<span data-ttu-id="59d5b-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="59d5b-106">OPENSHEETWIN( )</span></span>
+<span data-ttu-id="a3951-106">OPENSHEETWIN( )</span><span class="sxs-lookup"><span data-stu-id="a3951-106">OPENSHEETWIN( )</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="59d5b-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="59d5b-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a3951-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a3951-107">Remarks</span></span>
 
-<span data-ttu-id="59d5b-p101">In früheren Versionen von Visio wird diese Funktion in der Form _OPENSHEETWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="59d5b-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
+<span data-ttu-id="a3951-p101">In früheren Versionen von Visio wird diese Funktion in der Form _OPENSHEETWIN geschrieben. In den Visio-Versionen 4.0 und höher werden beide Schreibweisen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="a3951-p101">In earlier versions of Visio, this function appears as _OPENSHEETWIN. Visio versions 4.0 and later accept either style.</span></span> 
   
 

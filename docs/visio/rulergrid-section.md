@@ -1,5 +1,5 @@
 ---
-title: Lineal &amp; Rasterabschnitt
+title: Lineal &amp; Raster-Abschnitt
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797941"
 ---
-# <a name="ruler-amp-grid-section"></a><span data-ttu-id="98cd8-103">Lineal &amp; Rasterabschnitt</span><span class="sxs-lookup"><span data-stu-id="98cd8-103">Ruler &amp; Grid Section</span></span>
+# <a name="ruler-amp-grid-section"></a><span data-ttu-id="2d1d7-103">Lineal &amp; Raster-Abschnitt</span><span class="sxs-lookup"><span data-stu-id="2d1d7-103">Ruler &amp; Grid Section</span></span>
 
-<span data-ttu-id="98cd8-104">Zeigt die aktuellen Einstellungen für das Lineal und die Gitter eines Zeichenblatts an.</span><span class="sxs-lookup"><span data-stu-id="98cd8-104">Shows the current settings of the page's rulers and grid.</span></span>
+<span data-ttu-id="2d1d7-104">Zeigt die aktuellen Einstellungen für das Lineal und die Gitter eines Zeichenblatts an.</span><span class="sxs-lookup"><span data-stu-id="2d1d7-104">Shows the current settings of the page's rulers and grid.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="98cd8-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="98cd8-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2d1d7-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="2d1d7-105">Remarks</span></span>
 
-<span data-ttu-id="98cd8-106">In diesem Abschnitt wird ein Page-Eigenschaft, die nur im ShapeSheet-Fenster für eine Seite angezeigt werden kann.</span><span class="sxs-lookup"><span data-stu-id="98cd8-106">This section is a page property that can be viewed only in the ShapeSheet window for a page.</span></span> <span data-ttu-id="98cd8-107">Es enthält Zellen entsprechen den Einstellungen in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** in der Gruppe **Einblenden/Ausblenden** auf der Dialogfeld-Startprogramms).</span><span class="sxs-lookup"><span data-stu-id="98cd8-107">The cells it contains correspond to the settings in the **Ruler &amp; Grid** dialog box (on the **View** tab, in the **Show/Hide** group, click the dialog box launcher).</span></span> 
+<span data-ttu-id="2d1d7-106">In diesem Abschnitt wird ein Page-Eigenschaft, die nur im ShapeSheet-Fenster für eine Seite angezeigt werden kann.</span><span class="sxs-lookup"><span data-stu-id="2d1d7-106">This section is a page property that can be viewed only in the ShapeSheet window for a page.</span></span> <span data-ttu-id="2d1d7-107">Es enthält Zellen entsprechen den Einstellungen in der **Lineal &amp; Raster** im Dialogfeld (klicken Sie auf der Registerkarte **Ansicht** in der Gruppe **Einblenden/Ausblenden** auf der Dialogfeld-Startprogramms).</span><span class="sxs-lookup"><span data-stu-id="2d1d7-107">The cells it contains correspond to the settings in the **Ruler &amp; Grid** dialog box (on the **View** tab, in the **Show/Hide** group, click the dialog box launcher).</span></span> 
   
 

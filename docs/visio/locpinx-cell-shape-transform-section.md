@@ -16,26 +16,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19797425"
 ---
-# <a name="locpinx-cell-shape-transform-section"></a><span data-ttu-id="5c50a-104">Zelle "LocPinX" (Abschnitt "Shape Transform")</span><span class="sxs-lookup"><span data-stu-id="5c50a-104">LocPinX Cell (Shape Transform Section)</span></span>
+# <a name="locpinx-cell-shape-transform-section"></a><span data-ttu-id="1bd32-104">LocPinX Cell (Shape Transform Section)</span><span class="sxs-lookup"><span data-stu-id="1bd32-104">LocPinX Cell (Shape Transform Section)</span></span>
 
-<span data-ttu-id="5c50a-105">Stellt die *X* --Koordinate der Drehbezugspunkts (Drehmittelpunkts) im Verhältnis zum Ursprung des Shapes.</span><span class="sxs-lookup"><span data-stu-id="5c50a-105">Represents the  *x*  -coordinate of the shape's pin (center of rotation) in relation to the origin of the shape.</span></span> <span data-ttu-id="5c50a-106">Die Standardformel zum Bestimmen von LocPinX lautet:</span><span class="sxs-lookup"><span data-stu-id="5c50a-106">The default formula for determining LocPinX is:</span></span> 
+<span data-ttu-id="1bd32-105">Stellt die *X* --Koordinate der Drehbezugspunkts (Drehmittelpunkts) im Verhältnis zum Ursprung des Shapes.</span><span class="sxs-lookup"><span data-stu-id="1bd32-105">Represents the  *x*  -coordinate of the shape's pin (center of rotation) in relation to the origin of the shape.</span></span> <span data-ttu-id="1bd32-106">Die Standardformel zum Bestimmen von LocPinX lautet:</span><span class="sxs-lookup"><span data-stu-id="1bd32-106">The default formula for determining LocPinX is:</span></span> 
   
-<span data-ttu-id="5c50a-107">= Breite \* 0,5</span><span class="sxs-lookup"><span data-stu-id="5c50a-107">= Width \* 0.5</span></span>
+<span data-ttu-id="1bd32-107">= Breite \* 0,5</span><span class="sxs-lookup"><span data-stu-id="1bd32-107">= Width \* 0.5</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="5c50a-108">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5c50a-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1bd32-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1bd32-108">Remarks</span></span>
 
-<span data-ttu-id="5c50a-109">Wenn Sie einen Verweis auf die Zelle LocPinX nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="5c50a-109">To get a reference to the LocPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="1bd32-109">Wenn Sie einen Verweis auf die Zelle LocPinX aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft nach Namen erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="1bd32-109">To get a reference to the LocPinX cell by name from another formula, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="5c50a-110">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="5c50a-110">Cell name:</span></span>  <br/> | <span data-ttu-id="5c50a-111">LocPinX</span><span class="sxs-lookup"><span data-stu-id="5c50a-111">LocPinX</span></span>  <br/> |
+| <span data-ttu-id="1bd32-110">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="1bd32-110">Cell name:</span></span>  <br/> | <span data-ttu-id="1bd32-111">LocPinX</span><span class="sxs-lookup"><span data-stu-id="1bd32-111">LocPinX</span></span>  <br/> |
    
-<span data-ttu-id="5c50a-112">Wenn Sie einen Verweis auf die Zelle LocPinX aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="5c50a-112">To get a reference to the LocPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="1bd32-112">Wenn Sie einen Verweis auf die Zelle LocPinX aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="1bd32-112">To get a reference to the LocPinX cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="5c50a-113">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="5c50a-113">Section index:</span></span>  <br/> |<span data-ttu-id="5c50a-114">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="5c50a-114">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="5c50a-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="5c50a-115">Row index:</span></span>  <br/> |<span data-ttu-id="5c50a-116">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="5c50a-116">**visRowXFormOut**</span></span> <br/> |
-| <span data-ttu-id="5c50a-117">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="5c50a-117">Cell index:</span></span>  <br/> |<span data-ttu-id="5c50a-118">**visXFormLocPinX**</span><span class="sxs-lookup"><span data-stu-id="5c50a-118">**visXFormLocPinX**</span></span> <br/> |
+| <span data-ttu-id="1bd32-113">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="1bd32-113">Section index:</span></span>  <br/> |<span data-ttu-id="1bd32-114">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="1bd32-114">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="1bd32-115">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="1bd32-115">Row index:</span></span>  <br/> |<span data-ttu-id="1bd32-116">**visRowXFormOut**</span><span class="sxs-lookup"><span data-stu-id="1bd32-116">**visRowXFormOut**</span></span> <br/> |
+| <span data-ttu-id="1bd32-117">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="1bd32-117">Cell index:</span></span>  <br/> |<span data-ttu-id="1bd32-118">**visXFormLocPinX**</span><span class="sxs-lookup"><span data-stu-id="1bd32-118">**visXFormLocPinX**</span></span> <br/> |
    
 
