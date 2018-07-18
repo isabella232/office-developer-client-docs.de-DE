@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagProofOfDelivery-Eigenschaft
+title: PidTagProofOfDelivery (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,42 +19,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794829"
 ---
-# <a name="pidtagproofofdelivery-canonical-property"></a><span data-ttu-id="409db-103">Kanonische PidTagProofOfDelivery-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="409db-103">PidTagProofOfDelivery Canonical Property</span></span>
+# <a name="pidtagproofofdelivery-canonical-property"></a><span data-ttu-id="575c2-103">PidTagProofOfDelivery (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="575c2-103">PidTagProofOfDelivery Canonical Property</span></span>
 
   
   
-<span data-ttu-id="409db-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="409db-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="575c2-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="575c2-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="409db-105">Diese Eigenschaft enthält einen einen Identitätsnachweis ASN. 1 Delivery-Wert.</span><span class="sxs-lookup"><span data-stu-id="409db-105">This property contains an ASN.1 proof of delivery value.</span></span>
+<span data-ttu-id="575c2-105">Diese Eigenschaft enthält einen einen Identitätsnachweis ASN. 1 Delivery-Wert.</span><span class="sxs-lookup"><span data-stu-id="575c2-105">This property contains an ASN.1 proof of delivery value.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="409db-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="409db-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="409db-107">PR_PROOF_OF_DELIVERY</span><span class="sxs-lookup"><span data-stu-id="409db-107">PR_PROOF_OF_DELIVERY</span></span>  <br/> |
-|<span data-ttu-id="409db-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="409db-108">Identifier:</span></span>  <br/> |<span data-ttu-id="409db-109">0x0C11</span><span class="sxs-lookup"><span data-stu-id="409db-109">0x0C11</span></span>  <br/> |
-|<span data-ttu-id="409db-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="409db-110">Data type:</span></span>  <br/> |<span data-ttu-id="409db-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="409db-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="409db-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="409db-112">Area:</span></span>  <br/> |<span data-ttu-id="409db-113">MAPI-Empfänger</span><span class="sxs-lookup"><span data-stu-id="409db-113">MAPI Recipient</span></span>  <br/> |
+|<span data-ttu-id="575c2-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="575c2-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="575c2-107">PR_PROOF_OF_DELIVERY</span><span class="sxs-lookup"><span data-stu-id="575c2-107">PR_PROOF_OF_DELIVERY</span></span>  <br/> |
+|<span data-ttu-id="575c2-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="575c2-108">Identifier:</span></span>  <br/> |<span data-ttu-id="575c2-109">0x0C11</span><span class="sxs-lookup"><span data-stu-id="575c2-109">0x0C11</span></span>  <br/> |
+|<span data-ttu-id="575c2-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="575c2-110">Data type:</span></span>  <br/> |<span data-ttu-id="575c2-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="575c2-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="575c2-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="575c2-112">Area:</span></span>  <br/> |<span data-ttu-id="575c2-113">MAPI-Empfänger</span><span class="sxs-lookup"><span data-stu-id="575c2-113">MAPI Recipient</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="409db-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="409db-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="575c2-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="575c2-114">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="409db-115">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="409db-115">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="575c2-115">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="575c2-115">Header files</span></span>
 
-<span data-ttu-id="409db-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="409db-116">Mapidefs.h</span></span>
+<span data-ttu-id="575c2-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="575c2-116">Mapidefs.h</span></span>
   
-> <span data-ttu-id="409db-117">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="409db-117">Provides data type definitions.</span></span>
+> <span data-ttu-id="575c2-117">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="575c2-117">Provides data type definitions.</span></span>
     
-<span data-ttu-id="409db-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="409db-118">Mapitags.h</span></span>
+<span data-ttu-id="575c2-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="575c2-118">Mapitags.h</span></span>
   
-> <span data-ttu-id="409db-119">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="409db-119">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="575c2-119">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="575c2-119">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="409db-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="409db-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="575c2-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="575c2-120">See also</span></span>
 
 
 
-[<span data-ttu-id="409db-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="409db-121">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="575c2-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="575c2-121">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="409db-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="409db-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="575c2-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="575c2-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="409db-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="409db-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="575c2-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="575c2-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="409db-124">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="409db-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="575c2-124">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="575c2-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

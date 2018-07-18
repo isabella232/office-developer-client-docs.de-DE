@@ -15,9 +15,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796186"
 ---
-# <a name="schema-map-outlook-weather-information-schema"></a><span data-ttu-id="99352-103">Schemazuordnung (Outlook Wetter Informationen-Schema)</span><span class="sxs-lookup"><span data-stu-id="99352-103">Schema map (Outlook Weather Information Schema)</span></span>
+# <a name="schema-map-outlook-weather-information-schema"></a><span data-ttu-id="b8f8c-103">Schemazuordnung (Outlook Wetter Informationen-Schema)</span><span class="sxs-lookup"><span data-stu-id="b8f8c-103">Schema map (Outlook Weather Information Schema)</span></span>
 
-<span data-ttu-id="99352-104">In diesem Thema wird die Schemadefinition für das Outlook Wetter Informationen XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="99352-104">This topic shows the schema definition for the Outlook Weather Information XML Schema.</span></span>
+<span data-ttu-id="b8f8c-104">In diesem Thema wird die Schemadefinition für das Outlook Wetter Informationen XML-Schema.</span><span class="sxs-lookup"><span data-stu-id="b8f8c-104">This topic shows the schema definition for the Outlook Weather Information XML Schema.</span></span>
   
 ```XML
 <?xml version="1.0" ?>

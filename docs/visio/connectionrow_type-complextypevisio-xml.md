@@ -13,17 +13,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796727"
 ---
-# <a name="connectionrowtype-complextype-visio-xml"></a><span data-ttu-id="fce2a-102">ConnectionRow_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="fce2a-102">ConnectionRow_Type complexType ('Visio XML')</span></span>
+# <a name="connectionrowtype-complextype-visio-xml"></a><span data-ttu-id="834f6-102">ConnectionRow_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="834f6-102">ConnectionRow_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="fce2a-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="fce2a-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="834f6-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="834f6-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="fce2a-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="fce2a-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="fce2a-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="fce2a-105">**Schema file**</span></span> <br/> |<span data-ttu-id="fce2a-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="fce2a-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="fce2a-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="fce2a-107">**Extension base**</span></span> <br/> |<span data-ttu-id="fce2a-108">NamedIndexedRow_Type</span><span class="sxs-lookup"><span data-stu-id="fce2a-108">NamedIndexedRow_Type</span></span>  <br/> |
+|<span data-ttu-id="834f6-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="834f6-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="834f6-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="834f6-105">**Schema file**</span></span> <br/> |<span data-ttu-id="834f6-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="834f6-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="834f6-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="834f6-107">**Extension base**</span></span> <br/> |<span data-ttu-id="834f6-108">NamedIndexedRow_Type</span><span class="sxs-lookup"><span data-stu-id="834f6-108">NamedIndexedRow_Type</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="fce2a-109">Definition</span><span class="sxs-lookup"><span data-stu-id="fce2a-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="834f6-109">Definition</span><span class="sxs-lookup"><span data-stu-id="834f6-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="ConnectionRow_Type">
@@ -44,18 +44,18 @@ ms.locfileid: "19796727"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="fce2a-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="fce2a-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="834f6-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="834f6-110">Elements and attributes</span></span>
 
-<span data-ttu-id="fce2a-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="fce2a-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="834f6-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="834f6-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="fce2a-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="fce2a-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="834f6-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="834f6-112">Child elements</span></span>
 
-|<span data-ttu-id="fce2a-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="fce2a-113">**Element**</span></span>|<span data-ttu-id="fce2a-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="fce2a-114">**Type**</span></span>|<span data-ttu-id="fce2a-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="fce2a-115">**Description**</span></span>|
+|<span data-ttu-id="834f6-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="834f6-113">**Element**</span></span>|<span data-ttu-id="834f6-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="834f6-114">**Type**</span></span>|<span data-ttu-id="834f6-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="834f6-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="fce2a-116">Cell</span><span class="sxs-lookup"><span data-stu-id="fce2a-116">Cell</span></span>](cell-element-connection-rowvisio-xml.md) <br/> |[<span data-ttu-id="fce2a-117">Cell_Type</span><span class="sxs-lookup"><span data-stu-id="fce2a-117">Cell_Type</span></span>](cell_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="834f6-116">Cell</span><span class="sxs-lookup"><span data-stu-id="834f6-116">Cell</span></span>](cell-element-connection-rowvisio-xml.md) <br/> |[<span data-ttu-id="834f6-117">Cell_Type</span><span class="sxs-lookup"><span data-stu-id="834f6-117">Cell_Type</span></span>](cell_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="fce2a-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="fce2a-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="834f6-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="834f6-118">Attributes</span></span>
 
-<span data-ttu-id="fce2a-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="fce2a-119">None.</span></span>
+<span data-ttu-id="834f6-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="834f6-119">None.</span></span>
   
 

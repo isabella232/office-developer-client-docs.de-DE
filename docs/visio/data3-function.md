@@ -16,16 +16,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796776"
 ---
-# <a name="data3-function"></a><span data-ttu-id="1673c-103">DATA3-Funktion</span><span class="sxs-lookup"><span data-stu-id="1673c-103">DATA3 Function</span></span>
+# <a name="data3-function"></a><span data-ttu-id="00dc7-103">DATA3 Function</span><span class="sxs-lookup"><span data-stu-id="00dc7-103">DATA3 Function</span></span>
 
-<span data-ttu-id="1673c-104">Gibt den Text aus dem Feld **Data 3** im Dialogfeld **Shape-Name** für ein Shape zurück (klicken Sie auf der Registerkarte **Entwicklertools** **Shape-Name** ), als Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="1673c-104">Returns the text from the **Data 3** box in the **Shape Name** dialog box for a shape (on the **Developer** tab, click **Shape Name** ), as a string.</span></span> 
+<span data-ttu-id="00dc7-104">Gibt den Text aus dem Feld **Data 3** im Dialogfeld **Shape-Name** für ein Shape zurück (klicken Sie auf der Registerkarte **Entwicklertools** **Shape-Name** ), als Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="00dc7-104">Returns the text from the **Data 3** box in the **Shape Name** dialog box for a shape (on the **Developer** tab, click **Shape Name** ), as a string.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="1673c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="1673c-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="00dc7-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="00dc7-105">Syntax</span></span>
 
-<span data-ttu-id="1673c-106">DATA3 ()</span><span class="sxs-lookup"><span data-stu-id="1673c-106">DATA3 ()</span></span>
+<span data-ttu-id="00dc7-106">DATA3 ()</span><span class="sxs-lookup"><span data-stu-id="00dc7-106">DATA3 ()</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="1673c-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1673c-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="00dc7-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="00dc7-107">Remarks</span></span>
 
-<span data-ttu-id="1673c-108">Bei einem leeren Feld wird eine leere Zeichenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1673c-108">If the box is empty, the function returns an empty string.</span></span> 
+<span data-ttu-id="00dc7-108">Bei einem leeren Feld wird eine leere Zeichenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="00dc7-108">If the box is empty, the function returns an empty string.</span></span> 
   
 

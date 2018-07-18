@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795417"
 ---
-# <a name="sapptimearray"></a><span data-ttu-id="c2326-103">SAppTimeArray</span><span class="sxs-lookup"><span data-stu-id="c2326-103">SAppTimeArray</span></span>
+# <a name="sapptimearray"></a><span data-ttu-id="de342-103">SAppTimeArray</span><span class="sxs-lookup"><span data-stu-id="de342-103">SAppTimeArray</span></span>
 
   
   
-<span data-ttu-id="c2326-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="c2326-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="de342-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="de342-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="c2326-105">Enthält ein Array von Zeitwerte an.</span><span class="sxs-lookup"><span data-stu-id="c2326-105">Contains an array of time values.</span></span>
+<span data-ttu-id="de342-105">Enthält ein Array von Zeitwerte an.</span><span class="sxs-lookup"><span data-stu-id="de342-105">Contains an array of time values.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c2326-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="c2326-106">Header file:</span></span>  <br/> |<span data-ttu-id="c2326-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="c2326-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="de342-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="de342-106">Header file:</span></span>  <br/> |<span data-ttu-id="de342-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="de342-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SAppTimeArray
@@ -40,23 +40,23 @@ typedef struct _SAppTimeArray
 
 ```
 
-## <a name="members"></a><span data-ttu-id="c2326-108">Members</span><span class="sxs-lookup"><span data-stu-id="c2326-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="de342-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="de342-108">Members</span></span>
 
- <span data-ttu-id="c2326-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="c2326-109">**cValues**</span></span>
+ <span data-ttu-id="de342-109">**cValues**</span><span class="sxs-lookup"><span data-stu-id="de342-109">**cValues**</span></span>
   
-> <span data-ttu-id="c2326-110">Anzahl der Werte im Array auf den Member **Lpat** zeigt.</span><span class="sxs-lookup"><span data-stu-id="c2326-110">Count of values in the array pointed to by the **lpat** member.</span></span> 
+> <span data-ttu-id="de342-110">Anzahl der Werte im Array auf den Member **Lpat** zeigt.</span><span class="sxs-lookup"><span data-stu-id="de342-110">Count of values in the array pointed to by the **lpat** member.</span></span> 
     
- <span data-ttu-id="c2326-111">**lpat**</span><span class="sxs-lookup"><span data-stu-id="c2326-111">**lpat**</span></span>
+ <span data-ttu-id="de342-111">**lpat**</span><span class="sxs-lookup"><span data-stu-id="de342-111">**lpat**</span></span>
   
-> <span data-ttu-id="c2326-112">Zeiger auf ein Array von Zeitwerte für die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="c2326-112">Pointer to an array of application time values.</span></span> 
+> <span data-ttu-id="de342-112">Zeiger auf ein Array von Zeitwerte für die Anwendung.</span><span class="sxs-lookup"><span data-stu-id="de342-112">Pointer to an array of application time values.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="c2326-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c2326-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="de342-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="de342-113">Remarks</span></span>
 
-<span data-ttu-id="c2326-114">Die Struktur **SAppTimeArray** wird verwendet, um die Eigenschaften des Typs PT_MV_APPTIME definieren.</span><span class="sxs-lookup"><span data-stu-id="c2326-114">The **SAppTimeArray** structure is used to define properties of type PT_MV_APPTIME.</span></span> <span data-ttu-id="c2326-115">Weitere Informationen zu PT_MV_APPTIME finden Sie unter [Liste der Eigenschaftentypen](property-types.md).</span><span class="sxs-lookup"><span data-stu-id="c2326-115">For more information about PT_MV_APPTIME, see [List of Property Types](property-types.md).</span></span>
+<span data-ttu-id="de342-114">Die Struktur **SAppTimeArray** wird verwendet, um die Eigenschaften des Typs PT_MV_APPTIME definieren.</span><span class="sxs-lookup"><span data-stu-id="de342-114">The **SAppTimeArray** structure is used to define properties of type PT_MV_APPTIME.</span></span> <span data-ttu-id="de342-115">Weitere Informationen zu PT_MV_APPTIME finden Sie unter [Liste der Eigenschaftentypen](property-types.md).</span><span class="sxs-lookup"><span data-stu-id="de342-115">For more information about PT_MV_APPTIME, see [List of Property Types](property-types.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="c2326-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c2326-116">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="de342-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="de342-116">See also</span></span>
 
 
 
-[<span data-ttu-id="c2326-117">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="c2326-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="de342-117">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="de342-117">MAPI Structures</span></span>](mapi-structures.md)
 

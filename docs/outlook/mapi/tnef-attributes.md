@@ -15,12 +15,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795726"
 ---
-# <a name="tnef-attributes"></a><span data-ttu-id="6b978-103">TNEF-Attribute</span><span class="sxs-lookup"><span data-stu-id="6b978-103">TNEF Attributes</span></span>
+# <a name="tnef-attributes"></a><span data-ttu-id="2c95d-103">TNEF-Attribute</span><span class="sxs-lookup"><span data-stu-id="2c95d-103">TNEF Attributes</span></span>
 
   
   
-<span data-ttu-id="6b978-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="6b978-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="2c95d-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="2c95d-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="6b978-105">Dieser Abschnitt enthält zusätzliche Informationen zu bestimmten TNEF-Attributen.</span><span class="sxs-lookup"><span data-stu-id="6b978-105">This section provides additional information about certain TNEF attributes.</span></span> <span data-ttu-id="6b978-106">Weitere Informationen zu den MAPI-Eigenschaften, denen die die Attribute zugeordnet sind, finden Sie unter Referenz Einträge für die einzelnen Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="6b978-106">For more information about the MAPI properties that the attributes are mapped to, see the reference entries for the individual properties.</span></span>
+<span data-ttu-id="2c95d-105">Dieser Abschnitt enthält zusätzliche Informationen zu bestimmten TNEF-Attributen.</span><span class="sxs-lookup"><span data-stu-id="2c95d-105">This section provides additional information about certain TNEF attributes.</span></span> <span data-ttu-id="2c95d-106">Weitere Informationen zu den MAPI-Eigenschaften, denen die die Attribute zugeordnet sind, finden Sie unter Referenz Einträge für die einzelnen Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="2c95d-106">For more information about the MAPI properties that the attributes are mapped to, see the reference entries for the individual properties.</span></span>
   
 

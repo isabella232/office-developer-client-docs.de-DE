@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagExceptionReplaceTime-Eigenschaft
+title: PidTagExceptionReplaceTime (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,52 +19,52 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794346"
 ---
-# <a name="pidtagexceptionreplacetime-canonical-property"></a><span data-ttu-id="97e26-103">Kanonische PidTagExceptionReplaceTime-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="97e26-103">PidTagExceptionReplaceTime Canonical Property</span></span>
+# <a name="pidtagexceptionreplacetime-canonical-property"></a><span data-ttu-id="967d9-103">PidTagExceptionReplaceTime (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="967d9-103">PidTagExceptionReplaceTime Canonical Property</span></span>
 
   
   
-<span data-ttu-id="97e26-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="97e26-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="967d9-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="967d9-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="97e26-105">Gibt an, das ursprüngliche Datum und Uhrzeit, wann die Instanz in das Serienmuster wäre es keine Ausnahme aufgetreten wäre.</span><span class="sxs-lookup"><span data-stu-id="97e26-105">Indicates the original date and time when the instance in the recurrence pattern would have occurred if it were not an exception.</span></span>
+<span data-ttu-id="967d9-105">Gibt an, das ursprüngliche Datum und Uhrzeit, wann die Instanz in das Serienmuster wäre es keine Ausnahme aufgetreten wäre.</span><span class="sxs-lookup"><span data-stu-id="967d9-105">Indicates the original date and time when the instance in the recurrence pattern would have occurred if it were not an exception.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="97e26-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="97e26-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="97e26-107">PR_EXCEPTION_REPLACETIME</span><span class="sxs-lookup"><span data-stu-id="97e26-107">PR_EXCEPTION_REPLACETIME</span></span>  <br/> |
-|<span data-ttu-id="97e26-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="97e26-108">Identifier:</span></span>  <br/> |<span data-ttu-id="97e26-109">0x7FF9</span><span class="sxs-lookup"><span data-stu-id="97e26-109">0x7FF9</span></span>  <br/> |
-|<span data-ttu-id="97e26-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="97e26-110">Data type:</span></span>  <br/> |<span data-ttu-id="97e26-111">PT_SYSTIME</span><span class="sxs-lookup"><span data-stu-id="97e26-111">PT_SYSTIME</span></span>  <br/> |
-|<span data-ttu-id="97e26-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="97e26-112">Area:</span></span>  <br/> |<span data-ttu-id="97e26-113">Nachricht-Klasse definiert-Übertragungseinehit</span><span class="sxs-lookup"><span data-stu-id="97e26-113">Message class-defined non-transmittable</span></span>  <br/> |
+|<span data-ttu-id="967d9-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="967d9-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="967d9-107">PR_EXCEPTION_REPLACETIME</span><span class="sxs-lookup"><span data-stu-id="967d9-107">PR_EXCEPTION_REPLACETIME</span></span>  <br/> |
+|<span data-ttu-id="967d9-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="967d9-108">Identifier:</span></span>  <br/> |<span data-ttu-id="967d9-109">0x7FF9</span><span class="sxs-lookup"><span data-stu-id="967d9-109">0x7FF9</span></span>  <br/> |
+|<span data-ttu-id="967d9-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="967d9-110">Data type:</span></span>  <br/> |<span data-ttu-id="967d9-111">PT_SYSTIME</span><span class="sxs-lookup"><span data-stu-id="967d9-111">PT_SYSTIME</span></span>  <br/> |
+|<span data-ttu-id="967d9-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="967d9-112">Area:</span></span>  <br/> |<span data-ttu-id="967d9-113">Nachricht-Klasse definiert-Übertragungseinehit</span><span class="sxs-lookup"><span data-stu-id="967d9-113">Message class-defined non-transmittable</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="97e26-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="97e26-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="967d9-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="967d9-114">Remarks</span></span>
 
-<span data-ttu-id="97e26-115">Dieser Wert muss in koordinierter Weltzeit (UTC) angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="97e26-115">This value must be specified in Coordinated Universal Time (UTC).</span></span>
+<span data-ttu-id="967d9-115">Dieser Wert muss in koordinierter Weltzeit (UTC) angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="967d9-115">This value must be specified in Coordinated Universal Time (UTC).</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="97e26-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="97e26-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="967d9-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="967d9-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="97e26-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="97e26-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="967d9-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="967d9-117">Protocol specifications</span></span>
 
-<span data-ttu-id="97e26-118">[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="97e26-118">[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="967d9-118">[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="967d9-118">[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="97e26-119">Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.</span><span class="sxs-lookup"><span data-stu-id="97e26-119">Specifies the properties and operations for appointment, meeting request, and response messages.</span></span>
+> <span data-ttu-id="967d9-119">Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.</span><span class="sxs-lookup"><span data-stu-id="967d9-119">Specifies the properties and operations for appointment, meeting request, and response messages.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="97e26-120">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="97e26-120">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="967d9-120">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="967d9-120">Header files</span></span>
 
-<span data-ttu-id="97e26-121">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="97e26-121">Mapidefs.h</span></span>
+<span data-ttu-id="967d9-121">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="967d9-121">Mapidefs.h</span></span>
   
-> <span data-ttu-id="97e26-122">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="97e26-122">Provides data type definitions.</span></span>
+> <span data-ttu-id="967d9-122">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="967d9-122">Provides data type definitions.</span></span>
     
-<span data-ttu-id="97e26-123">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="97e26-123">Mapitags.h</span></span>
+<span data-ttu-id="967d9-123">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="967d9-123">Mapitags.h</span></span>
   
-> <span data-ttu-id="97e26-124">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="97e26-124">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="967d9-124">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="967d9-124">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="97e26-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="97e26-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="967d9-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="967d9-125">See also</span></span>
 
 
 
-[<span data-ttu-id="97e26-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="97e26-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="967d9-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="967d9-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="97e26-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="97e26-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="967d9-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="967d9-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="97e26-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="97e26-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="967d9-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="967d9-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="97e26-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="97e26-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="967d9-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="967d9-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

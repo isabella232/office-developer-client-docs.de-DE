@@ -14,29 +14,29 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796870"
 ---
-# <a name="doclockduplicatepage-cell-document-properties-section"></a><span data-ttu-id="9a20e-103">DocLockDuplicatePage Cell (Document Properties Section)</span><span class="sxs-lookup"><span data-stu-id="9a20e-103">DocLockDuplicatePage Cell (Document Properties Section)</span></span>
+# <a name="doclockduplicatepage-cell-document-properties-section"></a><span data-ttu-id="a2306-103">DocLockDuplicatePage Cell (Document Properties Section)</span><span class="sxs-lookup"><span data-stu-id="a2306-103">DocLockDuplicatePage Cell (Document Properties Section)</span></span>
 
-<span data-ttu-id="9a20e-104">Bestimmt, ob Seiten im Dokument können, wie ein boolescher Wert dupliziert werden.</span><span class="sxs-lookup"><span data-stu-id="9a20e-104">Determines whether pages in the document can be duplicated, as a Boolean.</span></span>
+<span data-ttu-id="a2306-104">Bestimmt, ob Seiten im Dokument können, wie ein boolescher Wert dupliziert werden.</span><span class="sxs-lookup"><span data-stu-id="a2306-104">Determines whether pages in the document can be duplicated, as a Boolean.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9a20e-105">TRUE</span><span class="sxs-lookup"><span data-stu-id="9a20e-105">TRUE</span></span>  <br/> |<span data-ttu-id="9a20e-106">**Doppelte** in das Kontextmenü der Seite und die **Page.Duplicate** Automation-Methode sind beide deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="9a20e-106">**Duplicate** in the page shortcut menu and the **Page.Duplicate** automation method are both disabled.</span></span>  <br/> |
-|<span data-ttu-id="9a20e-107">FALSE</span><span class="sxs-lookup"><span data-stu-id="9a20e-107">FALSE</span></span>  <br/> |<span data-ttu-id="9a20e-108">Die Seite kann dupliziert werden.</span><span class="sxs-lookup"><span data-stu-id="9a20e-108">The page can be duplicated.</span></span>  <br/> |
+|<span data-ttu-id="a2306-105">TRUE</span><span class="sxs-lookup"><span data-stu-id="a2306-105">TRUE</span></span>  <br/> |<span data-ttu-id="a2306-106">**Doppelte** in das Kontextmenü der Seite und die **Page.Duplicate** Automation-Methode sind beide deaktiviert.</span><span class="sxs-lookup"><span data-stu-id="a2306-106">**Duplicate** in the page shortcut menu and the **Page.Duplicate** automation method are both disabled.</span></span>  <br/> |
+|<span data-ttu-id="a2306-107">FALSE</span><span class="sxs-lookup"><span data-stu-id="a2306-107">FALSE</span></span>  <br/> |<span data-ttu-id="a2306-108">Die Seite kann dupliziert werden.</span><span class="sxs-lookup"><span data-stu-id="a2306-108">The page can be duplicated.</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="9a20e-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9a20e-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a2306-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a2306-109">Remarks</span></span>
 
-<span data-ttu-id="9a20e-110">Wenn Sie einen Verweis auf die Zelle **DocLockDuplicatePage** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="9a20e-110">To get a reference to the **DocLockDuplicatePage** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
+<span data-ttu-id="a2306-110">Wenn Sie einen Verweis auf die Zelle **DocLockDuplicatePage** nach Namen aus, als Wert des Attributs **N** **ein Zellenelement** , einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft erhalten möchten, verwenden Sie Folgendes:</span><span class="sxs-lookup"><span data-stu-id="a2306-110">To get a reference to the **DocLockDuplicatePage** cell by name from another formula, by value of the **N** attribute of a **Cell** element, or from a program using the **CellsU** property, use:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="9a20e-111">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="9a20e-111">Cell name:</span></span>  <br/> | <span data-ttu-id="9a20e-112">DocLockDuplicatePage</span><span class="sxs-lookup"><span data-stu-id="9a20e-112">DocLockDuplicatePage</span></span>  <br/> |
+| <span data-ttu-id="a2306-111">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="a2306-111">Cell name:</span></span>  <br/> | <span data-ttu-id="a2306-112">DocLockDuplicatePage</span><span class="sxs-lookup"><span data-stu-id="a2306-112">DocLockDuplicatePage</span></span>  <br/> |
    
-<span data-ttu-id="9a20e-113">Wenn Sie einen Verweis auf die Zelle **DocLockDuplicatePage** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="9a20e-113">To get a reference to the **DocLockDuplicatePage** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="a2306-113">Wenn Sie einen Verweis auf die Zelle **DocLockDuplicatePage** aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="a2306-113">To get a reference to the **DocLockDuplicatePage** cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-| <span data-ttu-id="9a20e-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="9a20e-114">Section index:</span></span>  <br/> |<span data-ttu-id="9a20e-115">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="9a20e-115">**visSectionObject**</span></span> <br/> |
-| <span data-ttu-id="9a20e-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="9a20e-116">Row index:</span></span>  <br/> |<span data-ttu-id="9a20e-117">**visRowDoc**</span><span class="sxs-lookup"><span data-stu-id="9a20e-117">**visRowDoc**</span></span> <br/> |
-| <span data-ttu-id="9a20e-118">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="9a20e-118">Cell index:</span></span>  <br/> |<span data-ttu-id="9a20e-119">**visDocLockDuplicatePage**</span><span class="sxs-lookup"><span data-stu-id="9a20e-119">**visDocLockDuplicatePage**</span></span> <br/> |
+| <span data-ttu-id="a2306-114">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="a2306-114">Section index:</span></span>  <br/> |<span data-ttu-id="a2306-115">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="a2306-115">**visSectionObject**</span></span> <br/> |
+| <span data-ttu-id="a2306-116">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="a2306-116">Row index:</span></span>  <br/> |<span data-ttu-id="a2306-117">**visRowDoc**</span><span class="sxs-lookup"><span data-stu-id="a2306-117">**visRowDoc**</span></span> <br/> |
+| <span data-ttu-id="a2306-118">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="a2306-118">Cell index:</span></span>  <br/> |<span data-ttu-id="a2306-119">**visDocLockDuplicatePage**</span><span class="sxs-lookup"><span data-stu-id="a2306-119">**visDocLockDuplicatePage**</span></span> <br/> |
    
 

@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796832"
 ---
-# <a name="directory-function"></a><span data-ttu-id="ded43-104">DIRECTORY Function</span><span class="sxs-lookup"><span data-stu-id="ded43-104">DIRECTORY Function</span></span>
+# <a name="directory-function"></a><span data-ttu-id="ee504-104">DIRECTORY Function</span><span class="sxs-lookup"><span data-stu-id="ee504-104">DIRECTORY Function</span></span>
 
-<span data-ttu-id="ded43-105">Gibt den vollständigen Pfad des Verzeichnisses (Ordner), in dem ein Dokument, als Zeichenfolge gespeichert wird, zurück.</span><span class="sxs-lookup"><span data-stu-id="ded43-105">Returns the full path of the directory (folder) in which a document is saved, as a string.</span></span> <span data-ttu-id="ded43-106">Gibt eine leere Zeichenfolge zurück, wenn das Dokument nicht gespeichert wurde.</span><span class="sxs-lookup"><span data-stu-id="ded43-106">Returns an empty string if the document has not been saved.</span></span>
+<span data-ttu-id="ee504-105">Gibt den vollständigen Pfad des Verzeichnisses (Ordner), in dem ein Dokument, als Zeichenfolge gespeichert wird, zurück.</span><span class="sxs-lookup"><span data-stu-id="ee504-105">Returns the full path of the directory (folder) in which a document is saved, as a string.</span></span> <span data-ttu-id="ee504-106">Gibt eine leere Zeichenfolge zurück, wenn das Dokument nicht gespeichert wurde.</span><span class="sxs-lookup"><span data-stu-id="ee504-106">Returns an empty string if the document has not been saved.</span></span>
   
-## <a name="syntax"></a><span data-ttu-id="ded43-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="ded43-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ee504-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="ee504-107">Syntax</span></span>
 
-<span data-ttu-id="ded43-108">DIRECTORY ()</span><span class="sxs-lookup"><span data-stu-id="ded43-108">DIRECTORY ()</span></span>
+<span data-ttu-id="ee504-108">DIRECTORY ()</span><span class="sxs-lookup"><span data-stu-id="ee504-108">DIRECTORY ()</span></span>
   
 

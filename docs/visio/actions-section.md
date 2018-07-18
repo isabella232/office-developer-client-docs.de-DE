@@ -16,15 +16,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796360"
 ---
-# <a name="actions-section"></a><span data-ttu-id="7c381-104">Abschnitt "Actions"</span><span class="sxs-lookup"><span data-stu-id="7c381-104">Actions Section</span></span>
+# <a name="actions-section"></a><span data-ttu-id="ccff2-104">Actions Section</span><span class="sxs-lookup"><span data-stu-id="ccff2-104">Actions Section</span></span>
 
-<span data-ttu-id="7c381-105">Enthält Zeilen, die Menüelemente in einem Kontext- oder Aktionstagmenü eines Shapes oder Zeichenblatts beschreiben.</span><span class="sxs-lookup"><span data-stu-id="7c381-105">Contains rows that describe menu items on a shortcut or action tag menu of a shape or page.</span></span> <span data-ttu-id="7c381-106">In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. Die Zelle **TagName** wird verwendet, um eine Aktion zu einer Zeile im Abschnitt **Aktionstag** zuordnen Aktionstags definiert sind.</span><span class="sxs-lookup"><span data-stu-id="7c381-106">In previous versions of Microsoft Visio, action tags are called smart tags.The **TagName** cell is used to associate an action with a row in the **Action Tag** section, where action tags are defined.</span></span> 
+<span data-ttu-id="ccff2-105">Enthält Zeilen, die Menüelemente in einem Kontext- oder Aktionstagmenü eines Shapes oder Zeichenblatts beschreiben.</span><span class="sxs-lookup"><span data-stu-id="ccff2-105">Contains rows that describe menu items on a shortcut or action tag menu of a shape or page.</span></span> <span data-ttu-id="ccff2-106">In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. Die Zelle **TagName** wird verwendet, um eine Aktion zu einer Zeile im Abschnitt **Aktionstag** zuordnen Aktionstags definiert sind.</span><span class="sxs-lookup"><span data-stu-id="ccff2-106">In previous versions of Microsoft Visio, action tags are called smart tags.The **TagName** cell is used to associate an action with a row in the **Action Tag** section, where action tags are defined.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="7c381-107">In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="7c381-107">In previous versions of Microsoft Visio, action tags are called smart tags.</span></span> 
+> <span data-ttu-id="ccff2-107">In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="ccff2-107">In previous versions of Microsoft Visio, action tags are called smart tags.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="7c381-108">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7c381-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ccff2-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ccff2-108">Remarks</span></span>
 
-<span data-ttu-id="7c381-109">Die Zelle **TagName** wird verwendet, um eine Aktion zu einer Zeile im Abschnitt **Aktionstag** zuordnen Aktionstags definiert sind.</span><span class="sxs-lookup"><span data-stu-id="7c381-109">The **TagName** cell is used to associate an action with a row in the **Action Tag** section, where action tags are defined.</span></span> 
+<span data-ttu-id="ccff2-109">Die Zelle **TagName** wird verwendet, um eine Aktion zu einer Zeile im Abschnitt **Aktionstag** zuordnen Aktionstags definiert sind.</span><span class="sxs-lookup"><span data-stu-id="ccff2-109">The **TagName** cell is used to associate an action with a row in the **Action Tag** section, where action tags are defined.</span></span> 
   
 

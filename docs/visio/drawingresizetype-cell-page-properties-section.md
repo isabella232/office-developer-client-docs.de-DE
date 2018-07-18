@@ -16,24 +16,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796891"
 ---
-# <a name="drawingresizetype-cell-page-properties-section"></a><span data-ttu-id="04125-103">DrawingResizeType Cell (Page Properties Section)</span><span class="sxs-lookup"><span data-stu-id="04125-103">DrawingResizeType Cell (Page Properties Section)</span></span>
+# <a name="drawingresizetype-cell-page-properties-section"></a><span data-ttu-id="9ea9e-103">DrawingResizeType Cell (Page Properties Section)</span><span class="sxs-lookup"><span data-stu-id="9ea9e-103">DrawingResizeType Cell (Page Properties Section)</span></span>
 
-<span data-ttu-id="04125-104">Bestimmt, ob das Zeichenblatt automatisch angepasst wird, um das Diagramm angepasst wird.</span><span class="sxs-lookup"><span data-stu-id="04125-104">Determines whether the drawing page resizes automatically to fit the diagram.</span></span> 
+<span data-ttu-id="9ea9e-104">Bestimmt, ob das Zeichenblatt automatisch angepasst wird, um das Diagramm angepasst wird.</span><span class="sxs-lookup"><span data-stu-id="9ea9e-104">Determines whether the drawing page resizes automatically to fit the diagram.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="04125-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="04125-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ea9e-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9ea9e-105">Remarks</span></span>
 
-<span data-ttu-id="04125-106">Zum Abrufen eines Verweises auf die Zelle DrawingResizeType nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der **CellsU** -Eigenschaft, verwenden Sie Folgendes.</span><span class="sxs-lookup"><span data-stu-id="04125-106">To get a reference to the DrawingResizeType cell by name from another formula, or from a program by using the **CellsU** property, use the following.</span></span> 
+<span data-ttu-id="9ea9e-106">Wenn Sie eine Referenz auf die Zelle DrawingResizeType nach Namen aus einer anderen Formel oder aus einem Programm mithilfe der CellsU-Eigenschaft erhalten möchten, verwenden Sie Folgendes.</span><span class="sxs-lookup"><span data-stu-id="9ea9e-106">To get a reference to the DrawingResizeType cell by name from another formula, or from a program by using the **CellsU** property, use the following.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="04125-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="04125-107">Cell name:</span></span>  <br/> |<span data-ttu-id="04125-108">DrawingResizeType</span><span class="sxs-lookup"><span data-stu-id="04125-108">DrawingResizeType</span></span>  <br/> |
+|<span data-ttu-id="9ea9e-107">Zellenname:</span><span class="sxs-lookup"><span data-stu-id="9ea9e-107">Cell name:</span></span>  <br/> |<span data-ttu-id="9ea9e-108">DrawingResizeType</span><span class="sxs-lookup"><span data-stu-id="9ea9e-108">DrawingResizeType</span></span>  <br/> |
    
-<span data-ttu-id="04125-109">Wenn Sie einen Verweis auf die Zelle DrawingResizeType aus einem Programm nach Index erhalten möchten, verwenden Sie die **CellsSRC** -Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="04125-109">To get a reference to the DrawingResizeType cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
+<span data-ttu-id="9ea9e-109">Wenn Sie eine Referenz auf die Zelle DrawingResizeType aus einem Programm heraus nach Index erhalten möchten, verwenden Sie die CellsSRC-Eigenschaft mit folgenden Argumenten:</span><span class="sxs-lookup"><span data-stu-id="9ea9e-109">To get a reference to the DrawingResizeType cell by index from a program, use the **CellsSRC** property with the following arguments:</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="04125-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="04125-110">Section index:</span></span>  <br/> |<span data-ttu-id="04125-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="04125-111">**visSectionObject**</span></span> <br/> |
-|<span data-ttu-id="04125-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="04125-112">Row index:</span></span>  <br/> |<span data-ttu-id="04125-113">**visRowPage**</span><span class="sxs-lookup"><span data-stu-id="04125-113">**visRowPage**</span></span> <br/> |
-|<span data-ttu-id="04125-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="04125-114">Cell index:</span></span>  <br/> |<span data-ttu-id="04125-115">**visPageDrawResizeType**</span><span class="sxs-lookup"><span data-stu-id="04125-115">**visPageDrawResizeType**</span></span> <br/> |
+|<span data-ttu-id="9ea9e-110">Abschnittsindex:</span><span class="sxs-lookup"><span data-stu-id="9ea9e-110">Section index:</span></span>  <br/> |<span data-ttu-id="9ea9e-111">**Konstanten visSectionObject**</span><span class="sxs-lookup"><span data-stu-id="9ea9e-111">**visSectionObject**</span></span> <br/> |
+|<span data-ttu-id="9ea9e-112">Zeilenindex:</span><span class="sxs-lookup"><span data-stu-id="9ea9e-112">Row index:</span></span>  <br/> |<span data-ttu-id="9ea9e-113">**visRowPage**</span><span class="sxs-lookup"><span data-stu-id="9ea9e-113">**visRowPage**</span></span> <br/> |
+|<span data-ttu-id="9ea9e-114">Zellenindex:</span><span class="sxs-lookup"><span data-stu-id="9ea9e-114">Cell index:</span></span>  <br/> |<span data-ttu-id="9ea9e-115">**visPageDrawResizeType**</span><span class="sxs-lookup"><span data-stu-id="9ea9e-115">**visPageDrawResizeType**</span></span> <br/> |
    
 

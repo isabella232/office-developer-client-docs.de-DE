@@ -1,5 +1,5 @@
 ---
-title: Kanonische PidTagNonDeliveryReportReasonCode-Eigenschaft
+title: PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -19,42 +19,42 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19794647"
 ---
-# <a name="pidtagnondeliveryreportreasoncode-canonical-property"></a><span data-ttu-id="48896-103">Kanonische PidTagNonDeliveryReportReasonCode-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="48896-103">PidTagNonDeliveryReportReasonCode Canonical Property</span></span>
+# <a name="pidtagnondeliveryreportreasoncode-canonical-property"></a><span data-ttu-id="e297d-103">PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="e297d-103">PidTagNonDeliveryReportReasonCode Canonical Property</span></span>
 
   
   
-<span data-ttu-id="48896-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="48896-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="e297d-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="e297d-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="48896-105">Enthält einen diagnostic Code, der Teil einer Unzustellbarkeitsbericht bildet.</span><span class="sxs-lookup"><span data-stu-id="48896-105">Contains a diagnostic code that forms part of a nondelivery report.</span></span>
+<span data-ttu-id="e297d-105">Enthält einen diagnostic Code, der Teil einer Unzustellbarkeitsbericht bildet.</span><span class="sxs-lookup"><span data-stu-id="e297d-105">Contains a diagnostic code that forms part of a nondelivery report.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="48896-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="48896-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="48896-107">PR_NDR_REASON_CODE</span><span class="sxs-lookup"><span data-stu-id="48896-107">PR_NDR_REASON_CODE</span></span>  <br/> |
-|<span data-ttu-id="48896-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="48896-108">Identifier:</span></span>  <br/> |<span data-ttu-id="48896-109">0x0C04</span><span class="sxs-lookup"><span data-stu-id="48896-109">0x0C04</span></span>  <br/> |
-|<span data-ttu-id="48896-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="48896-110">Data type:</span></span>  <br/> |<span data-ttu-id="48896-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="48896-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="48896-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="48896-112">Area:</span></span>  <br/> |<span data-ttu-id="48896-113">Allgemeine messaging</span><span class="sxs-lookup"><span data-stu-id="48896-113">General messaging</span></span>  <br/> |
+|<span data-ttu-id="e297d-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="e297d-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="e297d-107">PR_NDR_REASON_CODE</span><span class="sxs-lookup"><span data-stu-id="e297d-107">PR_NDR_REASON_CODE</span></span>  <br/> |
+|<span data-ttu-id="e297d-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="e297d-108">Identifier:</span></span>  <br/> |<span data-ttu-id="e297d-109">0x0C04</span><span class="sxs-lookup"><span data-stu-id="e297d-109">0x0C04</span></span>  <br/> |
+|<span data-ttu-id="e297d-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="e297d-110">Data type:</span></span>  <br/> |<span data-ttu-id="e297d-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="e297d-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="e297d-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="e297d-112">Area:</span></span>  <br/> |<span data-ttu-id="e297d-113">Allgemeine messaging</span><span class="sxs-lookup"><span data-stu-id="e297d-113">General messaging</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="48896-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="48896-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="e297d-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="e297d-114">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="48896-115">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="48896-115">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="e297d-115">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="e297d-115">Header files</span></span>
 
-<span data-ttu-id="48896-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="48896-116">Mapidefs.h</span></span>
+<span data-ttu-id="e297d-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="e297d-116">Mapidefs.h</span></span>
   
-> <span data-ttu-id="48896-117">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="48896-117">Provides data type definitions.</span></span>
+> <span data-ttu-id="e297d-117">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="e297d-117">Provides data type definitions.</span></span>
     
-<span data-ttu-id="48896-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="48896-118">Mapitags.h</span></span>
+<span data-ttu-id="e297d-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="e297d-118">Mapitags.h</span></span>
   
-> <span data-ttu-id="48896-119">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="48896-119">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="e297d-119">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="e297d-119">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="48896-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="48896-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e297d-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="e297d-120">See also</span></span>
 
 
 
-[<span data-ttu-id="48896-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="48896-121">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="e297d-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e297d-121">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="48896-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="48896-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="e297d-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e297d-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="48896-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="48896-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="e297d-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="e297d-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="48896-124">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="48896-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="e297d-124">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="e297d-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

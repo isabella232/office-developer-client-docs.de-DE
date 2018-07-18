@@ -15,9 +15,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796086"
 ---
-# <a name="outlook-social-connector-provider-xml-schema"></a><span data-ttu-id="d505e-104">Outlook Connector für soziale Netzwerke Anbieter XML-schema</span><span class="sxs-lookup"><span data-stu-id="d505e-104">Outlook Social Connector provider XML schema</span></span>
+# <a name="outlook-social-connector-provider-xml-schema"></a><span data-ttu-id="093fe-104">Outlook Connector für soziale Netzwerke Anbieter XML-schema</span><span class="sxs-lookup"><span data-stu-id="093fe-104">Outlook Social Connector provider XML schema</span></span>
 
-<span data-ttu-id="d505e-105">Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurückgegeben wird, muss mit dem folgenden XML-Schema für die OSC-Anbieter entsprechen.</span><span class="sxs-lookup"><span data-stu-id="d505e-105">All XML that is returned by OSC providers in OSC provider extensibility methods must comply with the following OSC provider XML schema.</span></span> <span data-ttu-id="d505e-106">Das OSC-Schema wird hier in seiner Gesamtheit reproduziert.</span><span class="sxs-lookup"><span data-stu-id="d505e-106">The OSC schema is reproduced here in its entirety.</span></span> <span data-ttu-id="d505e-107">Die aktuellen Schemadefinitionsdatei OutlookSocialProvider1_1.xsd, wird auch im Download für die Anbietervorlagen vom bereitgestellt, die in diesem Artikel begleitet.</span><span class="sxs-lookup"><span data-stu-id="d505e-107">The current schema definition file, OutlookSocialProvider1_1.xsd, is also provided in the download for the provider templates that accompany this article.</span></span> <span data-ttu-id="d505e-108">Weitere Informationen finden Sie unter [Outlook Social Connector 2013: Anbietervorlagen](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c).</span><span class="sxs-lookup"><span data-stu-id="d505e-108">For more information, see [Outlook Social Connector 2013: Provider templates](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c).</span></span> 
+<span data-ttu-id="093fe-105">Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurückgegeben wird, muss mit dem folgenden XML-Schema für die OSC-Anbieter entsprechen.</span><span class="sxs-lookup"><span data-stu-id="093fe-105">All XML that is returned by OSC providers in OSC provider extensibility methods must comply with the following OSC provider XML schema.</span></span> <span data-ttu-id="093fe-106">Das OSC-Schema wird hier in seiner Gesamtheit reproduziert.</span><span class="sxs-lookup"><span data-stu-id="093fe-106">The OSC schema is reproduced here in its entirety.</span></span> <span data-ttu-id="093fe-107">Die aktuellen Schemadefinitionsdatei OutlookSocialProvider1_1.xsd, wird auch im Download für die Anbietervorlagen vom bereitgestellt, die in diesem Artikel begleitet.</span><span class="sxs-lookup"><span data-stu-id="093fe-107">The current schema definition file, OutlookSocialProvider1_1.xsd, is also provided in the download for the provider templates that accompany this article.</span></span> <span data-ttu-id="093fe-108">Weitere Informationen finden Sie unter [Outlook Social Connector 2013: Anbietervorlagen](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c).</span><span class="sxs-lookup"><span data-stu-id="093fe-108">For more information, see [Outlook Social Connector 2013: Provider templates](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c).</span></span> 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -458,13 +458,13 @@ ms.locfileid: "19796086"
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="d505e-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d505e-109">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="093fe-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="093fe-109">See also</span></span>
 
-- [<span data-ttu-id="d505e-110">Funktionen XML-Beispiel</span><span class="sxs-lookup"><span data-stu-id="d505e-110">Capabilities XML Example</span></span>](capabilities-xml-example.md)  
-- [<span data-ttu-id="d505e-111">Freunde XML-Beispiel</span><span class="sxs-lookup"><span data-stu-id="d505e-111">Friends XML Example</span></span>](friends-xml-example.md) 
-- [<span data-ttu-id="d505e-112">Beispiel für eine Aktivität Feed XML</span><span class="sxs-lookup"><span data-stu-id="d505e-112">Activity Feed XML Example</span></span>](activity-feed-xml-example.md)  
-- [<span data-ttu-id="d505e-113">XML-Code für Funktionen</span><span class="sxs-lookup"><span data-stu-id="d505e-113">XML for Capabilities</span></span>](xml-for-capabilities.md)  
-- [<span data-ttu-id="d505e-114">XML-Code für Freunde</span><span class="sxs-lookup"><span data-stu-id="d505e-114">XML for Friends</span></span>](xml-for-friends.md)  
-- [<span data-ttu-id="d505e-115">XML-Code für Aktivitäten</span><span class="sxs-lookup"><span data-stu-id="d505e-115">XML for Activities</span></span>](xml-for-activities.md)  
-- [<span data-ttu-id="d505e-116">Outlook Connector für soziale Netzwerke Provider-Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="d505e-116">Outlook Social Connector Provider Interfaces</span></span>](outlook-social-connector-provider-interfaces.md)
+- [<span data-ttu-id="093fe-110">Funktionen XML-Beispiel</span><span class="sxs-lookup"><span data-stu-id="093fe-110">Capabilities XML Example</span></span>](capabilities-xml-example.md)  
+- [<span data-ttu-id="093fe-111">Freunde XML-Beispiel</span><span class="sxs-lookup"><span data-stu-id="093fe-111">Friends XML Example</span></span>](friends-xml-example.md) 
+- [<span data-ttu-id="093fe-112">Beispiel für eine Aktivität Feed XML</span><span class="sxs-lookup"><span data-stu-id="093fe-112">Activity Feed XML Example</span></span>](activity-feed-xml-example.md)  
+- [<span data-ttu-id="093fe-113">XML-Code für Funktionen</span><span class="sxs-lookup"><span data-stu-id="093fe-113">XML for Capabilities</span></span>](xml-for-capabilities.md)  
+- [<span data-ttu-id="093fe-114">XML-Code für Freunde</span><span class="sxs-lookup"><span data-stu-id="093fe-114">XML for Friends</span></span>](xml-for-friends.md)  
+- [<span data-ttu-id="093fe-115">XML-Code für Aktivitäten</span><span class="sxs-lookup"><span data-stu-id="093fe-115">XML for Activities</span></span>](xml-for-activities.md)  
+- [<span data-ttu-id="093fe-116">Outlook Connector für soziale Netzwerke Provider-Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="093fe-116">Outlook Social Connector Provider Interfaces</span></span>](outlook-social-connector-provider-interfaces.md)
 

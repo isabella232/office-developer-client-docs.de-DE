@@ -14,15 +14,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796350"
 ---
-# <a name="3-d-rotation-properties-section"></a><span data-ttu-id="5d7e7-103">3-D Rotation Properties Section</span><span class="sxs-lookup"><span data-stu-id="5d7e7-103">3-D Rotation Properties Section</span></span>
+# <a name="3-d-rotation-properties-section"></a><span data-ttu-id="b8685-103">3-D Rotation Properties Section</span><span class="sxs-lookup"><span data-stu-id="b8685-103">3-D Rotation Properties Section</span></span>
 
-<span data-ttu-id="5d7e7-104">Zeigt die aktuellen Werte der Winkel der Drehung entlang der X, y- und z-Achse eines Shapes.</span><span class="sxs-lookup"><span data-stu-id="5d7e7-104">Shows the current values of a shape's angle of rotation along the x-, y-, and z-axes.</span></span>
+<span data-ttu-id="b8685-104">Zeigt die aktuellen Werte der Winkel der Drehung entlang der X, y- und z-Achse eines Shapes.</span><span class="sxs-lookup"><span data-stu-id="b8685-104">Shows the current values of a shape's angle of rotation along the x-, y-, and z-axes.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="5d7e7-105">Abschnitt 3-d Drehungseigenschaften enthält keinen Zellen, die steuern, Formeffekte Abschrägung an.</span><span class="sxs-lookup"><span data-stu-id="5d7e7-105">The 3-D Rotation Properties section does not include cells that control shape bevel effects.</span></span> <span data-ttu-id="5d7e7-106">Wenn eine Abschrägungseffekt festlegen möchten, ändern Sie die Werte der Zellen im Abschnitt [Eigenschaften Abschrägung](bevel-properties-section.md) .</span><span class="sxs-lookup"><span data-stu-id="5d7e7-106">To set a bevel effect, change the values of the cells in the [Bevel Properties](bevel-properties-section.md) section.</span></span> 
+> <span data-ttu-id="b8685-105">Abschnitt 3-d Drehungseigenschaften enthält keinen Zellen, die steuern, Formeffekte Abschrägung an.</span><span class="sxs-lookup"><span data-stu-id="b8685-105">The 3-D Rotation Properties section does not include cells that control shape bevel effects.</span></span> <span data-ttu-id="b8685-106">Wenn eine Abschrägungseffekt festlegen möchten, ändern Sie die Werte der Zellen im Abschnitt [Eigenschaften Abschrägung](bevel-properties-section.md) .</span><span class="sxs-lookup"><span data-stu-id="b8685-106">To set a bevel effect, change the values of the cells in the [Bevel Properties](bevel-properties-section.md) section.</span></span> 
   
-## <a name="remarks"></a><span data-ttu-id="5d7e7-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5d7e7-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b8685-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b8685-107">Remarks</span></span>
 
-<span data-ttu-id="5d7e7-108">Sie können die 3D-Drehung Werte im Dialogfeld **Shape formatieren** ändern (**Home** > **Formenarten** > **Effekte** > **3D-Drehung** oder durch eine Änderung vornehmen, um eine Zelle in der **3-d Drehungseigenschaften **Abschnitt.</span><span class="sxs-lookup"><span data-stu-id="5d7e7-108">You can change the 3-D rotation values in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Effects** > **3-D Rotation** or by making a change to one of the cells in the **3-D Rotation Properties** section.</span></span> 
+<span data-ttu-id="b8685-108">Sie können die 3D-Drehung Werte im Dialogfeld **Shape formatieren** ändern (**Home** > **Formenarten** > **Effekte** > **3D-Drehung** oder durch eine Änderung vornehmen, um eine Zelle in der **3-d Drehungseigenschaften **Abschnitt.</span><span class="sxs-lookup"><span data-stu-id="b8685-108">You can change the 3-D rotation values in the **Format Shape** dialog box (**Home** > **Shape Styles** > **Effects** > **3-D Rotation** or by making a change to one of the cells in the **3-D Rotation Properties** section.</span></span> 
   
 

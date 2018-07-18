@@ -16,12 +16,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796565"
 ---
-# <a name="category-function"></a><span data-ttu-id="c0ca8-103">CATEGORY Function</span><span class="sxs-lookup"><span data-stu-id="c0ca8-103">CATEGORY Function</span></span>
+# <a name="category-function"></a><span data-ttu-id="02378-103">CATEGORY Function</span><span class="sxs-lookup"><span data-stu-id="02378-103">CATEGORY Function</span></span>
 
-<span data-ttu-id="c0ca8-104">Gibt den Text aus dem Feld **Kategorie** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="c0ca8-104">Returns the text from the **Category** field of a document's properties.</span></span> 
+<span data-ttu-id="02378-104">Gibt den Text aus dem Feld **Kategorie** der Eigenschaften eines Dokuments zurück.</span><span class="sxs-lookup"><span data-stu-id="02378-104">Returns the text from the **Category** field of a document's properties.</span></span> 
   
-## <a name="syntax"></a><span data-ttu-id="c0ca8-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="c0ca8-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="02378-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="02378-105">Syntax</span></span>
 
-<span data-ttu-id="c0ca8-106">CATEGORY ( )</span><span class="sxs-lookup"><span data-stu-id="c0ca8-106">CATEGORY ( )</span></span>
+<span data-ttu-id="02378-106">CATEGORY ( )</span><span class="sxs-lookup"><span data-stu-id="02378-106">CATEGORY ( )</span></span>
   
 

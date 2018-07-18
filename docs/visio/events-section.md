@@ -16,8 +16,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796971"
 ---
-# <a name="events-section"></a><span data-ttu-id="a7267-104">Abschnitt "Events"</span><span class="sxs-lookup"><span data-stu-id="a7267-104">Events Section</span></span>
+# <a name="events-section"></a><span data-ttu-id="b1f7c-104">Events Section</span><span class="sxs-lookup"><span data-stu-id="b1f7c-104">Events Section</span></span>
 
-<span data-ttu-id="a7267-p102">Enthält Formeln, die Shape-Ereignisse steuern. Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.</span><span class="sxs-lookup"><span data-stu-id="a7267-p102">Contains formulas that control shape events. Event cells are evaluated only when the event occurs, not upon formula entry.</span></span>
+<span data-ttu-id="b1f7c-p102">Enthält Formeln, die Shape-Ereignisse steuern. Ereigniszellen werden erst beim Eintreffen des Ereignisses ausgewertet, nicht beim Eingeben der Formel.</span><span class="sxs-lookup"><span data-stu-id="b1f7c-p102">Contains formulas that control shape events. Event cells are evaluated only when the event occurs, not upon formula entry.</span></span>
   
 
