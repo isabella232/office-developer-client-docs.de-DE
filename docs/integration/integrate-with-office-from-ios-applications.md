@@ -8,7 +8,7 @@ ms.assetid: f3a277ba-7ba1-4eea-83b5-915b409f3093
 description: Office für iOS bietet eine erweiterbare Lösung, die die Integration in Drittanbieteranwendungen ermöglicht. Dieser Artikel beschreibt, wie Sie eine Integration in Office von Ihrer iOS-Anwendung ausführen können, indem Sie Benutzer von Ihrer Anwendung in Office übergeben und sie dann an die Anwendung zurückgeben.
 ms.openlocfilehash: 2ba8e1a157953705b60ff0cac7d62bafade0c469
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790859"

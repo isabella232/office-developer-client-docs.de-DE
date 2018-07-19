@@ -8,7 +8,7 @@ ms.assetid: 369b30e3-eadf-4086-b023-abbdd8e810b0
 description: Von Ihren Anwendungen und webbasierten Benutzeroberflächen aus ist eine Integration in Office für iOS, Office für Android, Office Online und Excel, PowerPoint oder Word Mobile möglich, sodass Ihre Benutzer nahtlos zu Office-Anwendungen von Drittanbieterlösungen umsteigen können.
 ms.openlocfilehash: cbd66c9ea6427826a2c043cdb4660f5d3c481efe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790855"
@@ -33,11 +33,11 @@ Wenn Sie ein Cloudspeicheranbieter sind, können Sie sich für unser [Partnerpro
     
 - [Office für Android-Unterstützung für Android Storage Access Framework](office-for-android-support-for-the-android-storage-access-framework.md)
     
-- [Integration in Office von Android-Anwendungen aus](integrate-with-office-from-android-applications.md)
+- [Integration mit Office aus Android-Anwendungen](integrate-with-office-from-android-applications.md)
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Office-Cliententwicklung](https://msdn.microsoft.com/en-us/library/dn833103.aspx)
+- [Office-Cliententwicklung](https://msdn.microsoft.com/de-DE/library/dn833103.aspx)
     
 - [Office-Entwicklung](http://msdn.microsoft.com/library/7f24db34-c1ad-4a83-a9bd-3c85a39c0bd8%28Office.15%29.aspx)
     

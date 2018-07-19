@@ -8,7 +8,7 @@ ms.assetid: f7d15fe6-bdad-4f1f-aa18-12a21fc111c4
 description: Informationen zum Steuern der Anzeige eines Datums oder einer Uhrzeit durch eine benutzerdefinierte Formatierung.
 ms.openlocfilehash: 17724cfe1c26a2b3e52eea18dfef53aff027085c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790218"
@@ -18,9 +18,9 @@ ms.locfileid: "19790218"
 Informationen zum Steuern der Anzeige eines Datums oder einer Uhrzeit durch eine benutzerdefinierte Formatierung.
   
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
-## <a name="format-specifications"></a>Spezifikationen
+## <a name="format-specifications"></a>Formatspezifikationen
 
 In der folgenden Tabelle werden Zeichen aufgeführt, die Sie in Verbindung mit der [Format-Funktion (Access benutzerdefinierte Web app)](format-function-access-custom-web-app.md)-Funktion zum Erstellen von benutzerdefinierten Datums- und Uhrzeitformaten verwenden können. 
   
@@ -64,7 +64,7 @@ Bei Formatierungszeichenfolgen werden Groß- und Kleinschreibung unterschieden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Format-Funktion (Access benutzerdefinierte Web app)](format-function-access-custom-web-app.md) 
-- [Benutzerdefinierte numerische Formate für die Formatfunktion (benutzerdefinierte Access-Web-App)](custom-numeric-formats-for-the-format-function-access-custom-web-app.md)
+- [Format-Funktion (benutzerdefinierte Access-Web-App)](format-function-access-custom-web-app.md) 
+- [Benutzerdefinierte numerische Formate für die Format-Funktion (benutzerdefinierte Access-Web-App)](custom-numeric-formats-for-the-format-function-access-custom-web-app.md)
   
 

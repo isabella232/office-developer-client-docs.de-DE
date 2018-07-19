@@ -8,7 +8,7 @@ ms.assetid: a765fa49-a272-4047-9147-59cc68e5dd27
 description: Office für Android bietet eine erweiterbare Lösung, die die Integration in Drittanbieteranwendungen ermöglicht. Von Ihrer Android-Anwendung aus ist eine Integration in Office möglich, indem Sie Ihre Anwendungsbenutzer an Office übergeben.
 ms.openlocfilehash: 2fd60c7e86d3390bc5343f3e09fb2235f97e0b13
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790853"
@@ -35,9 +35,9 @@ Verwenden Sie PackageManager von Android, um zu ermitteln, ob eine bestimmte Off
   
 |**Anwendung**|**Name des Pakets**|
 |:-----|:-----|
-|Excel  <br/> |com.Microsoft.Office.Excel  <br/> |
-|PowerPoint  <br/> |com.Microsoft.Office.PowerPoint  <br/> |
-|Word  <br/> |com.Microsoft.Office.Word  <br/> |
+|Excel  <br/> |com.microsoft.office.excel  <br/> |
+|PowerPoint  <br/> |com.microsoft.office.powerpoint  <br/> |
+|Word  <br/> |com.microsoft.office.word  <br/> |
    
 ### <a name="prompt-the-user-to-install-office"></a>Auffordern des Benutzers zur Installation von Office
 
