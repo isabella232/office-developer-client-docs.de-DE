@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cebccd2d-8215-486e-9964-7fc42412cec6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c942bdbf27590dde04b84970e345f265bc645045
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT GetProfileTable(
   
 > <span data-ttu-id="401b7-110">[out] Ein Zeiger auf einen Zeiger auf die Benutzerprofildienst-Tabelle.</span><span class="sxs-lookup"><span data-stu-id="401b7-110">[out] A pointer to a pointer to the profile table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="401b7-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="401b7-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="401b7-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="401b7-111">Return value</span></span>
 
 <span data-ttu-id="401b7-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="401b7-112">S_OK</span></span> 
   

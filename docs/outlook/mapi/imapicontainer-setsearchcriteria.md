@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b5eb1841-e450-4024-aeaa-3b5a492ddb99
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 93578300e2520dda4a9621b05ac6a79c54eca2ef
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -77,7 +77,7 @@ HRESULT SetSearchCriteria(
   
 > <span data-ttu-id="51d0f-137">Die Suche muss angehalten werden.</span><span class="sxs-lookup"><span data-stu-id="51d0f-137">The search should be stopped.</span></span> <span data-ttu-id="51d0f-138">Dieses Kennzeichen können nicht gleichzeitig als das Flag RESTART_SEARCH festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="51d0f-138">This flag cannot be set at the same time as the RESTART_SEARCH flag.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="51d0f-139">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="51d0f-139">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="51d0f-139">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="51d0f-139">Return value</span></span>
 
 <span data-ttu-id="51d0f-140">S_OK</span><span class="sxs-lookup"><span data-stu-id="51d0f-140">S_OK</span></span> 
   

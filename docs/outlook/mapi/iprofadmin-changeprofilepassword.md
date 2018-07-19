@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a41f707a-5c84-49aa-aeb6-469b2600e181
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c57f945d16cc80c637b1a4074b25f9cf1fb1edc0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT ChangeProfilePassword(
   
 > <span data-ttu-id="f9e75-118">Der Name der Benutzerprofildienst und Kennwörter werden im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="f9e75-118">The profile name and passwords are in Unicode format.</span></span> <span data-ttu-id="f9e75-119">Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind diese Zeichenfolgen in ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="f9e75-119">If the MAPI_UNICODE flag is not set, these strings are in ANSI format.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f9e75-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f9e75-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f9e75-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f9e75-120">Return value</span></span>
 
 <span data-ttu-id="f9e75-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="f9e75-121">S_OK</span></span> 
   

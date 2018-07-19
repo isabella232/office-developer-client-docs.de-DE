@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 880eb35d-7045-4fdd-bb33-0f14557a7316
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: da31da0ae0437e1578a681d9232b0693932b2aec
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ BOOL FBadRglpszW(
   
 > <span data-ttu-id="6e8fc-116">[in] Anzahl der Zeichenfolgen im Array auf den durch den Parameter _LppszW_ verwiesen.</span><span class="sxs-lookup"><span data-stu-id="6e8fc-116">[in] Count of strings in the array pointed to by the  _lppszW_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="6e8fc-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6e8fc-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6e8fc-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6e8fc-117">Return value</span></span>
 
 <span data-ttu-id="6e8fc-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="6e8fc-118">TRUE</span></span> 
   

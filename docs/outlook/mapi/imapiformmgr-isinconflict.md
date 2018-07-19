@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca86ee8-1bf6-4ec8-95b3-575c22fbb170
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: d8f28a6b0a1633b0060f02af7e38ef058527eb24
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT IsInConflict(
   
 > <span data-ttu-id="b7a1a-116">[in] Ein Zeiger auf den Ordner, der die Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="b7a1a-116">[in] A pointer to the folder that contains the message.</span></span> <span data-ttu-id="b7a1a-117">Der Parameter _pFolderFocus_ kann NULL sein, wenn eine solche ein Ordner nicht vorhanden ist (z. B., wenn die Nachricht in eine andere Nachricht eingebettet ist).</span><span class="sxs-lookup"><span data-stu-id="b7a1a-117">The  _pFolderFocus_ parameter can be NULL if such a folder does not exist (for example, if the message is embedded in another message).</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="b7a1a-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b7a1a-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b7a1a-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b7a1a-118">Return value</span></span>
 
 <span data-ttu-id="b7a1a-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="b7a1a-119">S_OK</span></span> 
   

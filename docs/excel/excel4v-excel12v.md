@@ -11,7 +11,7 @@ keywords:
 - Excel12v-Funktion [excel 2007], Excel4v-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: e3e96b98-c5a7-4625-95b6-a1e2d09c6d3d
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7ffa0bc3ae6222af1ecd7f65de66d026ea178c87
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ int _cdecl Excel12v(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 rgx[
   
 <span data-ttu-id="e307d-126">Ein Array, das die Argumente für die Funktion enthält.</span><span class="sxs-lookup"><span data-stu-id="e307d-126">An array that contains the arguments to the function.</span></span> <span data-ttu-id="e307d-127">Alle Argumente im Array müssen Zeiger auf **XLOPER** oder **XLOPER12** Werten sein.</span><span class="sxs-lookup"><span data-stu-id="e307d-127">All arguments in the array must be pointers to **XLOPER** or **XLOPER12** values.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="e307d-128">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e307d-128">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e307d-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e307d-128">Return value</span></span>
 
 <span data-ttu-id="e307d-129">Diese Funktionen geben dieselben Werte wie **Excel4** und **Excel12**.</span><span class="sxs-lookup"><span data-stu-id="e307d-129">These functions return the same values as **Excel4** and **Excel12**.</span></span>
   

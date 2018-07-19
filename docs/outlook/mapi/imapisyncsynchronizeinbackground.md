@@ -39,7 +39,7 @@ HRESULT SynchronizeInBackground (
   
 > <span data-ttu-id="734bf-109">Informiert den Anbieter von Was synchronisiert werden soll, und ermöglicht den Zugriff auf Schnittstellen, die während der Synchronisierung verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="734bf-109">Informs the provider of what will be synchronized and gives access to interfaces that can be used during the synchronization.</span></span> <span data-ttu-id="734bf-110">Es ist eine [MAPISIB](mapisib.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="734bf-110">It is a [MAPISIB](mapisib.md) structure.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="734bf-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="734bf-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="734bf-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="734bf-111">Return value</span></span>
 
 <span data-ttu-id="734bf-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="734bf-112">S_OK</span></span> 
   

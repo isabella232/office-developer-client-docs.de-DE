@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 98091e5b-1abd-4814-9c7a-583b420ee11d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 08782fe616fe260388cff8982dfbb09951453a00
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -117,7 +117,7 @@ HRESULT MAPILogonEx(
   
 > <span data-ttu-id="6d266-166">[out] Zeiger auf einen Zeiger auf die MAPI-Sitzung-Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="6d266-166">[out] Pointer to a pointer to the MAPI session interface.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6d266-167">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6d266-167">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6d266-167">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6d266-167">Return value</span></span>
 
 <span data-ttu-id="6d266-168">S_OK</span><span class="sxs-lookup"><span data-stu-id="6d266-168">S_OK</span></span> 
   

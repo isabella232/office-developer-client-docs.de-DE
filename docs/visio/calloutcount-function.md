@@ -27,7 +27,7 @@ ms.locfileid: "19796562"
 
 <span data-ttu-id="ed27f-108">CALLOUTCOUNT()</span><span class="sxs-lookup"><span data-stu-id="ed27f-108">CALLOUTCOUNT()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="ed27f-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ed27f-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="ed27f-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ed27f-109">Return value</span></span>
 
  <span data-ttu-id="ed27f-110">**Integer**</span><span class="sxs-lookup"><span data-stu-id="ed27f-110">**Integer**</span></span>
   

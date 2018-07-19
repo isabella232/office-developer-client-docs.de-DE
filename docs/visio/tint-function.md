@@ -30,7 +30,7 @@ ms.locfileid: "19798288"
 | <span data-ttu-id="b6aef-116">_int_</span><span class="sxs-lookup"><span data-stu-id="b6aef-116">_int_</span></span> <br/> |<span data-ttu-id="b6aef-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="b6aef-117">Required</span></span>  <br/> |<span data-ttu-id="b6aef-118">**Integer**</span><span class="sxs-lookup"><span data-stu-id="b6aef-118">**Integer**</span></span> <br/> |<span data-ttu-id="b6aef-p101">Der Wert, um den die Leuchtdichte der Farbe erhöht werden soll. Kann positiv oder negativ sein.
 </span><span class="sxs-lookup"><span data-stu-id="b6aef-p101">The amount by which to increase the luminosity of the color. Can be positive or negative.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="b6aef-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b6aef-121">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="b6aef-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b6aef-121">Return value</span></span>
 
  <span data-ttu-id="b6aef-122">**RGB**</span><span class="sxs-lookup"><span data-stu-id="b6aef-122">**RGB**</span></span>
   

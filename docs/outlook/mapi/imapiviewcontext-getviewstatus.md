@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2e5ec914-7171-41ce-a6fe-78dd80ac32ff
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: fb543f4188578483333614cb5768f903c9f243d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -71,7 +71,7 @@ ULONG FAR * lpulStatus
   
 > <span data-ttu-id="a5f72-127">Es ist eine nächste oder Vorherige ungelesene Nachricht in der Ansicht.</span><span class="sxs-lookup"><span data-stu-id="a5f72-127">There is a next or previous unread message in the view.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a5f72-128">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a5f72-128">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a5f72-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a5f72-128">Return value</span></span>
 
 <span data-ttu-id="a5f72-129">S_OK</span><span class="sxs-lookup"><span data-stu-id="a5f72-129">S_OK</span></span> 
   

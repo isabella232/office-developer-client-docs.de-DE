@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 985b763ade9670c064c6c338953debf7beaa2783
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT HrAddObjProps(
   
 > <span data-ttu-id="29cc2-110">[in, out] Klicken Sie auf Eingaben, einen gültigen Zeiger auf eine Struktur [SPropProblemArray](spropproblemarray.md) oder NULL.</span><span class="sxs-lookup"><span data-stu-id="29cc2-110">[in, out] On input, a valid pointer to an [SPropProblemArray](spropproblemarray.md) structure, or NULL.</span></span> <span data-ttu-id="29cc2-111">Klicken Sie auf Ausgabe, einen Zeiger auf einen Zeiger auf eine Struktur, die Informationen zu Eigenschaften enthält, die nicht hinzugefügt werden konnte, oder NULL.</span><span class="sxs-lookup"><span data-stu-id="29cc2-111">On output, a pointer to a pointer to a structure that contains information about properties that could not be added, or NULL.</span></span> <span data-ttu-id="29cc2-112">Nur, wenn ein gültiger Zeiger übergeben wird, wird ein Zeiger auf eine Eigenschaft Problem Array-Struktur zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="29cc2-112">A pointer to a property problem array structure is returned only if a valid pointer is passed in.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="29cc2-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="29cc2-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="29cc2-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="29cc2-113">Return value</span></span>
 
 <span data-ttu-id="29cc2-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="29cc2-114">S_OK</span></span> 
   

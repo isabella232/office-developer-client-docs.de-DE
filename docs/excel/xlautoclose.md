@@ -10,7 +10,7 @@ keywords:
 - XlAutoClose-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: 147e46cd-d4d7-49eb-acdc-5a2ebc2fb6c2
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 3cbe1cd879fb5a91d14b38f8a659a7f77d943fe7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

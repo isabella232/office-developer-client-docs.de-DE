@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4799084a-b5d1-48c3-a889-b2f0e9d68c30
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: abee768dd29cc807b605a7d13570a579cb271b2c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ LPMAPIFORMADVISESINK pmvns
   
 > <span data-ttu-id="b6c49-108">[in] Zeiger auf ein Formular advise-Empfängerobjekt oder NULL.</span><span class="sxs-lookup"><span data-stu-id="b6c49-108">[in] Pointer to a form advise sink object or NULL.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b6c49-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b6c49-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b6c49-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b6c49-109">Return value</span></span>
 
 <span data-ttu-id="b6c49-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="b6c49-110">S_OK</span></span> 
   

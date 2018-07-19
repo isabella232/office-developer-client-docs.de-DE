@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b39ca52c-4dbe-41c0-9e1b-3998a9dc9742
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d329d3a14b6026d0bd62df9feba6ccff251e4151
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ HRESULT InstallForm(
   
 > <span data-ttu-id="418d3-124">[in] Der Pfad zur Konfigurationsdatei für das Formular.</span><span class="sxs-lookup"><span data-stu-id="418d3-124">[in] The path to the form's configuration file.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="418d3-125">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="418d3-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="418d3-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="418d3-125">Return value</span></span>
 
 <span data-ttu-id="418d3-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="418d3-126">S_OK</span></span> 
   

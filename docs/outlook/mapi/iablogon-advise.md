@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 375d65b1-607d-4e2a-8052-9bcbf08fc2ac
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 926fef0e1b2f905d510102e69afb667414e6cce3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -68,7 +68,7 @@ HRESULT Advise(
   
 > <span data-ttu-id="0bd3f-132">[out] Ein Zeiger auf einen Wert ungleich NULL, der die benachrichtigungsregistrierung darstellt.</span><span class="sxs-lookup"><span data-stu-id="0bd3f-132">[out] A pointer to a nonzero value that represents the notification registration.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0bd3f-133">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0bd3f-133">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0bd3f-133">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0bd3f-133">Return value</span></span>
 
 <span data-ttu-id="0bd3f-134">S_OK</span><span class="sxs-lookup"><span data-stu-id="0bd3f-134">S_OK</span></span> 
   

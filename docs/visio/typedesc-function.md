@@ -24,7 +24,7 @@ ms.locfileid: "19798343"
 
 <span data-ttu-id="d2aed-106">TYPEDESC ()</span><span class="sxs-lookup"><span data-stu-id="d2aed-106">TYPEDESC ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="d2aed-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d2aed-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="d2aed-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d2aed-107">Return value</span></span>
 
 <span data-ttu-id="d2aed-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="d2aed-108">String</span></span>
   

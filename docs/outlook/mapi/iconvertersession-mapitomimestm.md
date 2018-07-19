@@ -41,7 +41,7 @@ HRESULT IConverterSession::MAPIToMIMEStm(
     
  <span data-ttu-id="89e9e-110">_pstm_</span><span class="sxs-lookup"><span data-stu-id="89e9e-110">_pstm_</span></span>
   
-> <span data-ttu-id="89e9e-111">[out] [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Schnittstelle an den Stream ausgegeben.</span><span class="sxs-lookup"><span data-stu-id="89e9e-111">[out] [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) interface to output the stream.</span></span> 
+> <span data-ttu-id="89e9e-111">[out] [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Schnittstelle an den Stream ausgegeben.</span><span class="sxs-lookup"><span data-stu-id="89e9e-111">[out] [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) interface to output the stream.</span></span> 
     
  <span data-ttu-id="89e9e-112">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="89e9e-112">_ulFlags_</span></span>
   

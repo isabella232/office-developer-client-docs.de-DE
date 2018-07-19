@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b9bd389a-6975-41a2-a2f4-e501312e434b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c33fea8a2aba875fcdc06dea3343add4b7ac5dde
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT LockServer(
   
 > <span data-ttu-id="65813-110">[in] **true,** um die Anzahl der Sperren zu erhöhen. anderenfalls **false**.</span><span class="sxs-lookup"><span data-stu-id="65813-110">[in] **true** to increment the lock count; otherwise, **false**.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="65813-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="65813-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="65813-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="65813-111">Return value</span></span>
 
 <span data-ttu-id="65813-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="65813-112">S_OK</span></span> 
   
@@ -56,7 +56,7 @@ HRESULT LockServer(
   
 ## <a name="notes-to-implementers"></a><span data-ttu-id="65813-117">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="65813-117">Notes to implementers</span></span>
 
-<span data-ttu-id="65813-118">Die **IMAPIFormFactory::LockServer** -Methode ähnelt der [IClassFactory::LockServer](http://msdn.microsoft.com/en-us/library/ms682332%28v=VS.85%29.aspx) -Methode.</span><span class="sxs-lookup"><span data-stu-id="65813-118">The **IMAPIFormFactory::LockServer** method is very similar to the [IClassFactory::LockServer](http://msdn.microsoft.com/en-us/library/ms682332%28v=VS.85%29.aspx) method.</span></span> <span data-ttu-id="65813-119">Im Wesentlichen verwaltet die **IMAPIFormFactory::LockServer** -Methode an, dass die Anzahl, wie oft aufgerufen wurde. als diese Anzahl größer als 0 ist, verhindert, dass die-Methode den Formular-Server, die aus dem Speicher entladen wird.</span><span class="sxs-lookup"><span data-stu-id="65813-119">Essentially, the **IMAPIFormFactory::LockServer** method maintains a count of how many times it has been called; as long as that count is greater than 0, the method prevents the form server from being unloaded from memory.</span></span> <span data-ttu-id="65813-120">Die [CoLockObjectExternal](http://msdn.microsoft.com/en-us/library/ms680592%28VS.85%29.aspx) -Funktion können Sie um dies zu implementieren.</span><span class="sxs-lookup"><span data-stu-id="65813-120">You can use the [CoLockObjectExternal](http://msdn.microsoft.com/en-us/library/ms680592%28VS.85%29.aspx) function to implement this.</span></span> 
+<span data-ttu-id="65813-118">Die **IMAPIFormFactory::LockServer** -Methode ähnelt der [IClassFactory::LockServer](http://msdn.microsoft.com/de-de/library/ms682332%28v=VS.85%29.aspx) -Methode.</span><span class="sxs-lookup"><span data-stu-id="65813-118">The **IMAPIFormFactory::LockServer** method is very similar to the [IClassFactory::LockServer](http://msdn.microsoft.com/de-de/library/ms682332%28v=VS.85%29.aspx) method.</span></span> <span data-ttu-id="65813-119">Im Wesentlichen verwaltet die **IMAPIFormFactory::LockServer** -Methode an, dass die Anzahl, wie oft aufgerufen wurde. als diese Anzahl größer als 0 ist, verhindert, dass die-Methode den Formular-Server, die aus dem Speicher entladen wird.</span><span class="sxs-lookup"><span data-stu-id="65813-119">Essentially, the **IMAPIFormFactory::LockServer** method maintains a count of how many times it has been called; as long as that count is greater than 0, the method prevents the form server from being unloaded from memory.</span></span> <span data-ttu-id="65813-120">Die [CoLockObjectExternal](http://msdn.microsoft.com/de-de/library/ms680592%28VS.85%29.aspx) -Funktion können Sie um dies zu implementieren.</span><span class="sxs-lookup"><span data-stu-id="65813-120">You can use the [CoLockObjectExternal](http://msdn.microsoft.com/de-de/library/ms680592%28VS.85%29.aspx) function to implement this.</span></span> 
   
 ## <a name="see-also"></a><span data-ttu-id="65813-121">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="65813-121">See also</span></span>
 

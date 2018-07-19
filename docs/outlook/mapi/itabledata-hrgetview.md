@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0e2a47be-497b-4031-87ce-60b2635e25f7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: a913f2f3a72a365ec7d5078eccf31c4212ca83a5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ HRESULT HrGetView(
   
 > <span data-ttu-id="e993f-116">[out] Ein Zeiger auf einen Zeiger auf die neu erstellte Ansicht.</span><span class="sxs-lookup"><span data-stu-id="e993f-116">[out] A pointer to a pointer to the newly created view.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e993f-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e993f-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e993f-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e993f-117">Return value</span></span>
 
 <span data-ttu-id="e993f-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="e993f-118">S_OK</span></span> 
   

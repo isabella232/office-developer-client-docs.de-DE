@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4910dabd-9380-4fde-a440-5c64d74c0bba
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 3aae61f7b21c507da7955dbb4393d13bfb5fa24c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -75,7 +75,7 @@ HRESULT CreateMsgServiceEx(
   
 > <span data-ttu-id="09013-129">[out] Der Zeiger auf die UID des Diensts Nachricht hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="09013-129">[out] The pointer to the UID of the message service added.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="09013-130">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="09013-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="09013-130">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="09013-130">Return value</span></span>
 
 <span data-ttu-id="09013-131">S_OK</span><span class="sxs-lookup"><span data-stu-id="09013-131">S_OK</span></span>
   

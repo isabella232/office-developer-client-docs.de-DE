@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 036b9b15-86e1-4a37-8e4b-e37b2963d8fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3ff29ac7e7f9b7876bb678930390ca556351ecf6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -74,7 +74,7 @@ HRESULT ValidateState(
   
 > <span data-ttu-id="cdc21-133">Verhindert, dass das Statusobjekt eine Benutzeroberfläche als Teil des Vorgangs angezeigt.</span><span class="sxs-lookup"><span data-stu-id="cdc21-133">Prevents the status object from displaying a user interface as part of the operation.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="cdc21-134">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="cdc21-134">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cdc21-134">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="cdc21-134">Return value</span></span>
 
 <span data-ttu-id="cdc21-135">S_OK</span><span class="sxs-lookup"><span data-stu-id="cdc21-135">S_OK</span></span> 
   

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8c980257-9372-4478-b635-bd91d0a66af9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: dc7fa8b546783819b701604a5e489f0fd030ae86
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -56,7 +56,7 @@ HRESULT HrAddColumns(
   
 > <span data-ttu-id="8f68c-121">[in] Zeiger auf die **MAPIFreeBuffer** -Funktion.</span><span class="sxs-lookup"><span data-stu-id="8f68c-121">[in] Pointer to the **MAPIFreeBuffer** function.</span></span> <span data-ttu-id="8f68c-122">Verwendet, um Arbeitsspeicher freizugeben.</span><span class="sxs-lookup"><span data-stu-id="8f68c-122">Used to free memory.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="8f68c-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8f68c-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8f68c-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8f68c-123">Return value</span></span>
 
  <span data-ttu-id="8f68c-124">**S_OK**</span><span class="sxs-lookup"><span data-stu-id="8f68c-124">**S_OK**</span></span>
   

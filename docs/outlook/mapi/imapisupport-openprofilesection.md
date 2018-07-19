@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd1fa994-9531-46c4-94e5-505e7f90b884
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 2f45028219f0f5f4cc881db3bc512626b3ad2f4c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -57,7 +57,7 @@ LPPROFSECT FAR * lppProfileObj
   
 > <span data-ttu-id="0b725-120">[out] Ein Zeiger auf einen Zeiger auf den Profilabschnitt geöffnete.</span><span class="sxs-lookup"><span data-stu-id="0b725-120">[out] A pointer to a pointer to the opened profile section.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0b725-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0b725-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0b725-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0b725-121">Return value</span></span>
 
 <span data-ttu-id="0b725-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="0b725-122">S_OK</span></span> 
   

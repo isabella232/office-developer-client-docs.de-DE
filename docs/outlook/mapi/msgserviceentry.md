@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 655774a6-588c-44c7-903b-4497b7eccbc2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9af170f3445757eb96b9fe78c7cbea2c29ef4612
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -138,7 +138,7 @@ HRESULT MSGSERVICEENTRY(
   
 > <span data-ttu-id="7eb9b-184">[out] Zeiger auf eine [MAPIERROR](mapierror.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="7eb9b-184">[out] Pointer to a [MAPIERROR](mapierror.md) structure.</span></span> <span data-ttu-id="7eb9b-185">Die Struktur wird mit der Funktion [MAPIAllocateBuffer](mapiallocatebuffer.md) zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="7eb9b-185">The structure is allocated with the [MAPIAllocateBuffer](mapiallocatebuffer.md) function.</span></span> <span data-ttu-id="7eb9b-186">Alle Mitglieder sind optional, obwohl die meisten Strukturen auf eine Meldungszeichenfolge gültige Fehler im _LpszError_ -Member enthalten soll.</span><span class="sxs-lookup"><span data-stu-id="7eb9b-186">All members are optional, although most structures will contain a valid error message string in the  _lpszError_ member.</span></span> <span data-ttu-id="7eb9b-187">Wenn die _LpszComponent_ oder _LpszError_ Member der Struktur vorhanden sind, muss ihre Speicher schließlich durch einen einzigen Aufruf von [MAPIFreeBuffer](mapifreebuffer.md) auf der Basis Struktur freigegeben werden.</span><span class="sxs-lookup"><span data-stu-id="7eb9b-187">If the  _lpszComponent_ or  _lpszError_ members of the structure are present, their memory must eventually be freed by a single call to [MAPIFreeBuffer](mapifreebuffer.md) on the base structure.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="7eb9b-188">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7eb9b-188">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7eb9b-188">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7eb9b-188">Return value</span></span>
 
 <span data-ttu-id="7eb9b-189">S_OK</span><span class="sxs-lookup"><span data-stu-id="7eb9b-189">S_OK</span></span> 
   

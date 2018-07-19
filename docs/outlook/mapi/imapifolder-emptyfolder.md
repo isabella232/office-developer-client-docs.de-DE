@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4cfcb498-9182-4906-bd6f-d9bc387bc88b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7d8653b8f0cb2196319c4a9c2b4bca89c8be5a24
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ HRESULT EmptyFolder(
   
 > <span data-ttu-id="40ec9-123">Eine Statusanzeige angezeigt, während der Vorgang fortgesetzt wird.</span><span class="sxs-lookup"><span data-stu-id="40ec9-123">Displays a progress indicator while the operation proceeds.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="40ec9-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="40ec9-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="40ec9-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="40ec9-124">Return value</span></span>
 
 <span data-ttu-id="40ec9-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="40ec9-125">S_OK</span></span> 
   
@@ -87,7 +87,7 @@ HRESULT EmptyFolder(
 
 <span data-ttu-id="40ec9-140">Diese Rückgabewerte unter folgenden Umständen zu erwarten.</span><span class="sxs-lookup"><span data-stu-id="40ec9-140">Expect these return values under the following conditions.</span></span>
   
-|<span data-ttu-id="40ec9-141">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="40ec9-141">**Condition**</span></span>|<span data-ttu-id="40ec9-142">**R�ckgabewert**</span><span class="sxs-lookup"><span data-stu-id="40ec9-142">**Return value**</span></span>|
+|<span data-ttu-id="40ec9-141">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="40ec9-141">**Condition**</span></span>|<span data-ttu-id="40ec9-142">**Rückgabewert**</span><span class="sxs-lookup"><span data-stu-id="40ec9-142">**Return value**</span></span>|
 |:-----|:-----|
 |<span data-ttu-id="40ec9-143">**EmptyFolder** wurde erfolgreich den Ordner geleert.</span><span class="sxs-lookup"><span data-stu-id="40ec9-143">**EmptyFolder** has successfully emptied the folder.</span></span>  <br/> |<span data-ttu-id="40ec9-144">S_OK</span><span class="sxs-lookup"><span data-stu-id="40ec9-144">S_OK</span></span>  <br/> |
 |<span data-ttu-id="40ec9-145">**EmptyFolder** konnte den Ordner zu leeren.</span><span class="sxs-lookup"><span data-stu-id="40ec9-145">**EmptyFolder** was unable to completely empty the folder.</span></span>  <br/> |<span data-ttu-id="40ec9-146">MAPI_W_PARTIAL_COMPLETION</span><span class="sxs-lookup"><span data-stu-id="40ec9-146">MAPI_W_PARTIAL_COMPLETION</span></span>  <br/> |

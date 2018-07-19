@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 4646659b-f932-4d11-a46f-4231bb397243
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 165be9eada54b2030471fc10e7a0bf0c7dcc7c8e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -30,7 +30,7 @@ int PingSession(int SessionId)
   
 > <span data-ttu-id="beb26-109">Die ID der Sitzung ping-Befehl an.</span><span class="sxs-lookup"><span data-stu-id="beb26-109">The ID of the session to ping.</span></span> <span data-ttu-id="beb26-110">Dieser Wert muss eine von einem vorherigen Aufruf von [OpenSession](opensession.md)zurückgegebene ID übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="beb26-110">This value must match an ID returned by a previous call to [OpenSession](opensession.md).</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="beb26-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="beb26-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="beb26-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="beb26-111">Return value</span></span>
 
 <span data-ttu-id="beb26-112">**XlHpcRetSuccess** Wenn das Argument _SessionId_ gültig ist; andernfalls **XlHpcRetInvalidSessionId**.</span><span class="sxs-lookup"><span data-stu-id="beb26-112">**xlHpcRetSuccess** if the  _SessionId_ argument is valid; otherwise **xlHpcRetInvalidSessionId**.</span></span>
   

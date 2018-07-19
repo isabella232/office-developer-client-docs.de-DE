@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e2d8a025-c2a3-4edb-b6e4-022e07e854dd
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: f5d253d0306e55699fbe5b9c9decf8c3242867fd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Shutdown (
   
 > <span data-ttu-id="23e7c-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="23e7c-108">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="23e7c-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="23e7c-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="23e7c-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="23e7c-109">Return value</span></span>
 
 <span data-ttu-id="23e7c-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="23e7c-110">S_OK</span></span> 
   

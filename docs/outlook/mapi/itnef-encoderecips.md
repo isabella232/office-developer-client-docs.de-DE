@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b3ce4b0e-4f48-4a7e-a30c-c4754bccb12c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: edabb9a0f55cb34b4e144672e91ea50b8e9193b0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT EncodeRecips(
   
 > <span data-ttu-id="6d55e-110">[in] Ein Zeiger auf die Empfänger Tabelle, für die die Ansicht codiert ist.</span><span class="sxs-lookup"><span data-stu-id="6d55e-110">[in] A pointer to the recipient table for which the view is encoded.</span></span> <span data-ttu-id="6d55e-111">Der Parameter _LpRecipientTable_ kann NULL sein.</span><span class="sxs-lookup"><span data-stu-id="6d55e-111">The  _lpRecipientTable_ parameter can be NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="6d55e-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6d55e-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6d55e-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6d55e-112">Return value</span></span>
 
 <span data-ttu-id="6d55e-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="6d55e-113">S_OK</span></span> 
   

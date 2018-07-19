@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d5d289b2-d4d6-49ab-bf8b-945cb35272fc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f62ced8dd2ddec588a1ae285c13268059e49da46
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -43,7 +43,7 @@ ms.locfileid: "19794057"
   
 > <span data-ttu-id="2c997-120">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.</span><span class="sxs-lookup"><span data-stu-id="2c997-120">Provides property set definitions and references to related Microsoft Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="2c997-121">[[MS-OXOABK]](http://msdn.microsoft.com/en-us/library/cc433489%28v=exchg.80%29)</span><span class="sxs-lookup"><span data-stu-id="2c997-121">[[MS-OXOABK]](http://msdn.microsoft.com/en-us/library/cc433489%28v=exchg.80%29)</span></span>
+<span data-ttu-id="2c997-121">[[MS-OXOABK]](http://msdn.microsoft.com/de-de/library/cc433489%28v=exchg.80%29)</span><span class="sxs-lookup"><span data-stu-id="2c997-121">[[MS-OXOABK]](http://msdn.microsoft.com/de-de/library/cc433489%28v=exchg.80%29)</span></span>
   
 > <span data-ttu-id="2c997-122">Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.</span><span class="sxs-lookup"><span data-stu-id="2c997-122">Specifies the properties and operations for lists of users, contacts, groups, and resources.</span></span>
     

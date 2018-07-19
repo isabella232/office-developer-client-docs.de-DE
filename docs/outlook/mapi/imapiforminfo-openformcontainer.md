@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1d6eec99-59f9-4700-9b83-7f7f8787a9f8
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: f6461a1e47437c5d0c2c422d727e2b00819629b0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT OpenFormContainer(
   
 > <span data-ttu-id="b101b-108">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Form Container-Objekt.</span><span class="sxs-lookup"><span data-stu-id="b101b-108">[out] A pointer to a pointer to the returned form container object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b101b-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b101b-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b101b-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b101b-109">Return value</span></span>
 
 <span data-ttu-id="b101b-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="b101b-110">S_OK</span></span> 
   

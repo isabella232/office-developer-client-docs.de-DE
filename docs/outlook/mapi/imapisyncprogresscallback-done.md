@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: aaa8eb56-f22f-4c5a-a224-807ff001e0ca
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: e0a34e1cc0b1da1b5e2127d0697cce472c8530c5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT Done(
   
 > <span data-ttu-id="84c5a-111">Ein HRESULT Endstatus des Fortschritts angibt.</span><span class="sxs-lookup"><span data-stu-id="84c5a-111">An HRESULT indicating final status of the progress.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="84c5a-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="84c5a-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="84c5a-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="84c5a-112">Return value</span></span>
 
 <span data-ttu-id="84c5a-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="84c5a-113">S_OK</span></span> 
   

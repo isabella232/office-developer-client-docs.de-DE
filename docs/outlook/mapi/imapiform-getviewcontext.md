@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c6938986-a9f9-4ef4-9655-ded55b7357db
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2c463252aa029ac4c7cb2fac6e962a5d8af31b97
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetViewContext(
   
 > <span data-ttu-id="d64ec-108">[out] Ein Zeiger auf einen Zeiger auf das Formular Ansichtskontext.</span><span class="sxs-lookup"><span data-stu-id="d64ec-108">[out] A pointer to a pointer to the form's view context.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="d64ec-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d64ec-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d64ec-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d64ec-109">Return value</span></span>
 
 <span data-ttu-id="d64ec-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="d64ec-110">S_OK</span></span> 
   

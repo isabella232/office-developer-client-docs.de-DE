@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6619fc41-5518-44ce-85c1-6b0077ed5cb9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 954630b0b92772d961dc61084c28a9ab419e4c2f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ FILETIME FtSubFt(
   
 > <span data-ttu-id="ee308-116">[in] Ein **FILETIME** -Struktur, die 64-Bit-Ganzzahl ohne Vorzeichen enthält, die von dem Wert, der durch den Parameter _Minuend_ subtrahiert wird.</span><span class="sxs-lookup"><span data-stu-id="ee308-116">[in] A **FILETIME** structure that contains the unsigned 64-bit integer that is subtracted from the value indicated by the  _Minuend_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ee308-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ee308-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ee308-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ee308-117">Return value</span></span>
 
 <span data-ttu-id="ee308-118">Die **FtSubFt** -Funktion gibt eine **FILETIME** -Struktur, die das Ergebnis der Subtraktion enthält.</span><span class="sxs-lookup"><span data-stu-id="ee308-118">The **FtSubFt** function returns a **FILETIME** structure that contains the result of the subtraction.</span></span> <span data-ttu-id="ee308-119">Die beiden Eingabeparameter bleiben unverändert.</span><span class="sxs-lookup"><span data-stu-id="ee308-119">The two input parameters remain unchanged.</span></span> 
   

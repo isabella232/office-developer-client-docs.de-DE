@@ -36,11 +36,11 @@ ms.locfileid: "19798397"
     
 ## <a name="see-also"></a><span data-ttu-id="82d8e-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="82d8e-114">See also</span></span>
 
-- [<span data-ttu-id="82d8e-115">Visio für Entwickler</span><span class="sxs-lookup"><span data-stu-id="82d8e-115">Visio for developers</span></span>](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
+- [<span data-ttu-id="82d8e-115">Visio für Entwickler</span><span class="sxs-lookup"><span data-stu-id="82d8e-115">Visio for developers</span></span>](http://msdn.microsoft.com/de-de/office/aa905478.aspx)
     
 - [<span data-ttu-id="82d8e-116">Accessibility in Microsoft Products (Barrierefreiheit in Microsoft-Produkten, in englischer Sprache)</span><span class="sxs-lookup"><span data-stu-id="82d8e-116">Accessibility in Microsoft Products</span></span>](http://www.microsoft.com/enable/products/default.aspx)
     
-- [<span data-ttu-id="82d8e-117">Konventionen für Office Developer-Dokumente</span><span class="sxs-lookup"><span data-stu-id="82d8e-117">Document Conventions</span></span>](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
+- [<span data-ttu-id="82d8e-117">Konventionen für Office Developer-Dokumente</span><span class="sxs-lookup"><span data-stu-id="82d8e-117">Document Conventions</span></span>](http://msdn.microsoft.com/de-de/office/aa905365.aspx)
     
 - [<span data-ttu-id="82d8e-118">Visio SDK copyright-Hinweis</span><span class="sxs-lookup"><span data-stu-id="82d8e-118">Visio SDK copyright notice</span></span>](visio-sdk-copyright-notice.md)
     

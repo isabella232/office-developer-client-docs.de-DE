@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: dceb21b1-be5e-418d-b0c9-db39195fc82e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 823e10a1f496f5f5e8bab00f94d700d06e753b48
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT CreateClassFactory(
   
 > <span data-ttu-id="4cc6d-112">[out] Ein Zeiger auf das Klassenobjekt Factory.</span><span class="sxs-lookup"><span data-stu-id="4cc6d-112">[out] A pointer to the class factory object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="4cc6d-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4cc6d-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4cc6d-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4cc6d-113">Return value</span></span>
 
 <span data-ttu-id="4cc6d-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="4cc6d-114">S_OK</span></span> 
   

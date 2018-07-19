@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7c3e5a71-7b78-4328-b8ee-265cc4da4be5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c221f98d6551ea63971dd378d522c1f2bebb312b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ LPSTR SzFindLastCh(
   
 > <span data-ttu-id="a5d6e-116">[in] Das Zeichen an, nach dem gesucht wird.</span><span class="sxs-lookup"><span data-stu-id="a5d6e-116">[in] The character to be searched for.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a5d6e-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a5d6e-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a5d6e-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a5d6e-117">Return value</span></span>
 
  <span data-ttu-id="a5d6e-118">**SzFindLastCh** gibt einen Zeiger auf das letzte Vorkommen des Zeichens in der Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="a5d6e-118">**SzFindLastCh** returns a pointer to the last occurrence of the character in the string.</span></span> <span data-ttu-id="a5d6e-119">Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der Parameter _Lpsz_ NULL ist, wird der Wert NULL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a5d6e-119">If the character does not occur anywhere in the string, or if the  _lpsz_ parameter is NULL, a value of NULL is returned.</span></span> 
   

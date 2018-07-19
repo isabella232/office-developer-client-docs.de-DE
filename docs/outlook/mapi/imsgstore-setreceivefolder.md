@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 469f0412-1343-47ce-b6e8-e0d5e56c29bb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c30c38e1dbc944fd3016badf2621aef5de1e08f4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT SetReceiveFolder(
   
 > <span data-ttu-id="8aa92-119">[in] Ein Zeiger auf die Eintrags-ID des Ordners, der als den Empfangsordner einzurichten.</span><span class="sxs-lookup"><span data-stu-id="8aa92-119">[in] A pointer to the entry identifier of the folder to establish as the receive folder.</span></span> <span data-ttu-id="8aa92-120">Der _LpEntryID_ -Parameter auf NULL **SetReceiveFolder** ersetzt festgelegt ist empfangen die aktuelle Ordner mit der Nachrichtenspeicher Standard.</span><span class="sxs-lookup"><span data-stu-id="8aa92-120">If the  _lpEntryID_ parameter is set to NULL, **SetReceiveFolder** replaces the current receive folder with the message store's default.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="8aa92-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8aa92-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8aa92-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8aa92-121">Return value</span></span>
 
 <span data-ttu-id="8aa92-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="8aa92-122">S_OK</span></span> 
   

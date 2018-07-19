@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0846415b-6fe1-4504-8620-108af6719015
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b821394f32a938f4878ee93e685aafbeb0786597
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -94,7 +94,7 @@ STDAPI BuildDisplayTable(
   
 > <span data-ttu-id="4c1a7-136">[in, out] Zeiger auf einen Zeiger auf eine Tabelle Datenobjekt Verfügbarmachen der [ITableData](itabledataiunknown.md) -Schnittstelle in der Tabelle, die in der _LppTable_ -Parameter zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="4c1a7-136">[in, out] Pointer to a pointer to a table data object exposing the [ITableData](itabledataiunknown.md) interface on the table returned in the  _lppTable_ parameter.</span></span> <span data-ttu-id="4c1a7-137">Keine Tabelle Datenobjekt gewünscht wird, sollte _LppTblData_ anstatt einen Zeigerwert auf NULL festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="4c1a7-137">If no table data object is desired,  _lppTblData_ should be set to NULL instead of a pointer value.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="4c1a7-138">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4c1a7-138">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4c1a7-138">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4c1a7-138">Return value</span></span>
 
 <span data-ttu-id="4c1a7-139">Keine</span><span class="sxs-lookup"><span data-stu-id="4c1a7-139">None</span></span>
   

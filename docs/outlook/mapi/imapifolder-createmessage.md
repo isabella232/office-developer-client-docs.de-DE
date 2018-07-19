@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e0222afa-c148-4735-a603-cac7be6c91f9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8d7e6dfbf9e6a751845adb2319b66462bcde651f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ HRESULT CreateMessage(
   
 > <span data-ttu-id="c199d-125">[out] Ein Zeiger auf einen Zeiger auf die neu erstellte Nachricht.</span><span class="sxs-lookup"><span data-stu-id="c199d-125">[out] A pointer to a pointer to the newly created message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c199d-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c199d-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c199d-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c199d-126">Return value</span></span>
 
 <span data-ttu-id="c199d-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="c199d-127">S_OK</span></span> 
   

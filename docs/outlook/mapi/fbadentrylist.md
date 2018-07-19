@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 270c47c3-ae68-4995-b304-27f861b350d6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: aae2e97b987414fc5e46b410465d3232b61f1ffe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ BOOL FBadEntryList(
   
 > <span data-ttu-id="fa4ff-114">[in] Zeiger auf eine [ENTRYLIST](entrylist.md) -Struktur, die ein Array von Eintragsbezeichner überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="fa4ff-114">[in] Pointer to an [ENTRYLIST](entrylist.md) structure that contains an array of entry identifiers to be validated.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="fa4ff-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fa4ff-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fa4ff-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fa4ff-115">Return value</span></span>
 
 <span data-ttu-id="fa4ff-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="fa4ff-116">TRUE</span></span> 
   

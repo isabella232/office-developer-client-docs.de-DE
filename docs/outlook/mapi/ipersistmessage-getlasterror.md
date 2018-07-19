@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 32cc3a1f-1310-4788-b0f4-93c1e4940f37
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 16f091f4d9527cd82ebc1d1eadee2fb55b481929
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT GetLastError(
   
 > <span data-ttu-id="619ca-116">[out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält.</span><span class="sxs-lookup"><span data-stu-id="619ca-116">[out] A pointer to a pointer to a **MAPIERROR** structure that contains version, component, and context information for the error.</span></span> <span data-ttu-id="619ca-117">Der Parameter _LppMAPIError_ kann auf NULL festgelegt werden, wenn das Formular für eine Struktur **MAPIERROR** entsprechende Informationen angegeben werden kann.</span><span class="sxs-lookup"><span data-stu-id="619ca-117">The  _lppMAPIError_ parameter can be set to NULL if the form cannot supply appropriate information for a **MAPIERROR** structure.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="619ca-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="619ca-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="619ca-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="619ca-118">Return value</span></span>
 
 <span data-ttu-id="619ca-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="619ca-119">S_OK</span></span> 
   

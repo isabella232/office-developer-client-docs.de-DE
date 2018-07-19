@@ -27,7 +27,7 @@ ms.locfileid: "19797343"
 
 <span data-ttu-id="93533-108">LISTMEMBERCOUNT()</span><span class="sxs-lookup"><span data-stu-id="93533-108">LISTMEMBERCOUNT()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="93533-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="93533-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="93533-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="93533-109">Return value</span></span>
 
 <span data-ttu-id="93533-110">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="93533-110">Integer</span></span>
   

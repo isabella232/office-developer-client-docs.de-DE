@@ -24,7 +24,7 @@ ms.locfileid: "19797767"
 
 <span data-ttu-id="e2e57-108">RAND( )</span><span class="sxs-lookup"><span data-stu-id="e2e57-108">RAND( )</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="e2e57-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e2e57-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="e2e57-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e2e57-109">Return value</span></span>
 
 <span data-ttu-id="e2e57-110">Float</span><span class="sxs-lookup"><span data-stu-id="e2e57-110">Float</span></span>
   

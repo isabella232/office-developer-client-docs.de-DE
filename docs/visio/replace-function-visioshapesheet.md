@@ -33,7 +33,7 @@ ms.locfileid: "19797815"
 | <span data-ttu-id="64121-121">_Anzahl_Zeichen_</span><span class="sxs-lookup"><span data-stu-id="64121-121">_num_chars_</span></span> <br/> |<span data-ttu-id="64121-122">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="64121-122">Required</span></span>  <br/> |<span data-ttu-id="64121-123">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="64121-123">**Number**</span></span> <br/> |<span data-ttu-id="64121-124">Die Anzahl der Zeichen in _Old_text_ , die Sie ersetzen möchten.</span><span class="sxs-lookup"><span data-stu-id="64121-124">The number of characters in  _old_text_ that you want to replace</span></span>  <br/> |
 | <span data-ttu-id="64121-125">_Neuer_Text_</span><span class="sxs-lookup"><span data-stu-id="64121-125">_new_text_</span></span> <br/> |<span data-ttu-id="64121-126">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="64121-126">Required</span></span>  <br/> |<span data-ttu-id="64121-127">**String**</span><span class="sxs-lookup"><span data-stu-id="64121-127">**String**</span></span> <br/> |<span data-ttu-id="64121-128">Der Text, der Zeichen in _Old_text_ersetzt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="64121-128">The text that will replace characters in  _old_text_.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="64121-129">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="64121-129">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="64121-129">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="64121-129">Return value</span></span>
 
 <span data-ttu-id="64121-130">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="64121-130">String</span></span>
   

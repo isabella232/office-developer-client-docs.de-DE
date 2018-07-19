@@ -10,7 +10,7 @@ keywords:
 - Tempstr-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: b21b4868-babe-4255-9093-503172efa045
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: ce9399168d5b94d10481d2d0b5b69dd2e1d1d2e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -34,7 +34,7 @@ LPXLOPER TempStr(LPSTR str);
   
 <span data-ttu-id="63ee3-112">Ein Zeiger auf die mit Null endende Quellzeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="63ee3-112">A pointer to the null-terminated source string.</span></span> <span data-ttu-id="63ee3-113">**TempStr** kürzt Zeichenfolgen, die länger als 255 Byte sind.</span><span class="sxs-lookup"><span data-stu-id="63ee3-113">**TempStr** truncates strings that are longer than 255 bytes.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="63ee3-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="63ee3-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="63ee3-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="63ee3-114">Return value</span></span>
 
 <span data-ttu-id="63ee3-115">Eine **XltypeStr** Zeichenfolge enthält einen Zeiger auf den Puffer übergebene Zeichenfolge zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="63ee3-115">Returns an **xltypeStr** string containing a pointer to the passed-in string buffer.</span></span> 
   

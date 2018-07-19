@@ -45,7 +45,7 @@ HRESULT RegisterTrustedPSTOverrideHandler (
   
 > <span data-ttu-id="1cf7a-110">[in] Ein Zeiger auf die Clientdaten, die vom Anbieter PST in nachfolgende Aufrufe an die DLL HrTrustedPSTOverrideHandlerCallback Funktion übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="1cf7a-110">[in] A pointer to client data, which will be passed by the PST provider into subsequent calls to the DLL's HrTrustedPSTOverrideHandlerCallback function.</span></span> <span data-ttu-id="1cf7a-111">Diese Clientdaten können von der DLL verwendet werden, zur Unterstützung beim Überprüfen, ob die PST-Datei aufgehoben werden soll.</span><span class="sxs-lookup"><span data-stu-id="1cf7a-111">This client data may be used by the DLL to assist in verifying whether the PST should be unlocked.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1cf7a-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1cf7a-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1cf7a-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1cf7a-112">Return value</span></span>
 
 <span data-ttu-id="1cf7a-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="1cf7a-113">S_OK</span></span>
   

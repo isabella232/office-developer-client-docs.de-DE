@@ -19,7 +19,7 @@ ms.locfileid: "19790324"
 <span data-ttu-id="3d2b2-104">Multipliziert zwei Ausdrücke.</span><span class="sxs-lookup"><span data-stu-id="3d2b2-104">Multiplies two expressions.</span></span>
   
 > [!IMPORTANT]
-> <span data-ttu-id="3d2b2-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="3d2b2-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="3d2b2-p101"> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="3d2b2-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 ## <a name="syntax"></a><span data-ttu-id="3d2b2-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="3d2b2-107">Syntax</span></span>
 
@@ -29,7 +29,7 @@ ms.locfileid: "19790324"
   
 <span data-ttu-id="3d2b2-109">*Ausdruck*  Ein beliebiger gültiger Ausdruck eines der in der Kategorie numerische Datentypen.</span><span class="sxs-lookup"><span data-stu-id="3d2b2-109">*expression*  Any valid expression of any one of the data types in the numeric category.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="3d2b2-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3d2b2-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3d2b2-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3d2b2-110">Return value</span></span>
 
 <span data-ttu-id="3d2b2-111">Gibt den Datentyp des Arguments mit höherer Rangfolge zurück.</span><span class="sxs-lookup"><span data-stu-id="3d2b2-111">Returns the data type of the argument with the higher precedence.</span></span>
   

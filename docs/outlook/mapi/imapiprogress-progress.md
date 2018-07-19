@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: edbf7623-a64e-43b8-8379-e3cde2433d91
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2a003be35fc9c3ef8efc7c66997ee99f6e578f09
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT Progress(
   
 > <span data-ttu-id="6e3b6-112">[in] Die Gesamtanzahl von Elementen, die während des Vorgangs verarbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="6e3b6-112">[in] The total number of items to be processed during the operation.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6e3b6-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6e3b6-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6e3b6-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6e3b6-113">Return value</span></span>
 
 <span data-ttu-id="6e3b6-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="6e3b6-114">S_OK</span></span> 
   

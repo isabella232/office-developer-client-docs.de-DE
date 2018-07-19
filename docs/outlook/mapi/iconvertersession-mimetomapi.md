@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee190ba7-9e71-97e4-7bf1-7b97adc73eed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 03a67371c67d5f0ac346470ec7ab38bb67d5ce2a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -40,7 +40,7 @@ HRESULT IConverterSession:: MIMEToMAPI (
 
  <span data-ttu-id="aaf81-107">_pstm_</span><span class="sxs-lookup"><span data-stu-id="aaf81-107">_pstm_</span></span>
   
-> <span data-ttu-id="aaf81-108">[in] [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Schnittstelle in eine MIME-Stream.</span><span class="sxs-lookup"><span data-stu-id="aaf81-108">[in] [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) interface to a MIME stream.</span></span> 
+> <span data-ttu-id="aaf81-108">[in] [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Schnittstelle in eine MIME-Stream.</span><span class="sxs-lookup"><span data-stu-id="aaf81-108">[in] [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) interface to a MIME stream.</span></span> 
     
  <span data-ttu-id="aaf81-109">_pmsg_</span><span class="sxs-lookup"><span data-stu-id="aaf81-109">_pmsg_</span></span>
   
@@ -70,7 +70,7 @@ HRESULT IConverterSession:: MIMEToMAPI (
   
 > <span data-ttu-id="aaf81-124">Der HTML-Textkörper des MIME-Streams sollte auf Rich Text Format (RTF) in der MAPI-Nachricht konvertiert werden.</span><span class="sxs-lookup"><span data-stu-id="aaf81-124">The HTML body of the MIME stream should be converted to Rich Text Format (RTF) in the MAPI message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="aaf81-125">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="aaf81-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="aaf81-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="aaf81-125">Return value</span></span>
 
 <span data-ttu-id="aaf81-126">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="aaf81-126">E_INVALIDARG</span></span>
   

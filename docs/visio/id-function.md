@@ -24,7 +24,7 @@ ms.locfileid: "19797184"
 
 <span data-ttu-id="39c2e-106">ID ()</span><span class="sxs-lookup"><span data-stu-id="39c2e-106">ID ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="39c2e-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39c2e-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="39c2e-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39c2e-107">Return value</span></span>
 
 <span data-ttu-id="39c2e-108">Number</span><span class="sxs-lookup"><span data-stu-id="39c2e-108">Number</span></span>
   

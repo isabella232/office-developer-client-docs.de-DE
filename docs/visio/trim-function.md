@@ -30,7 +30,7 @@ ms.locfileid: "19798319"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="39f2a-112">_text_</span><span class="sxs-lookup"><span data-stu-id="39f2a-112">_text_</span></span> <br/> |<span data-ttu-id="39f2a-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="39f2a-113">Required</span></span>  <br/> |<span data-ttu-id="39f2a-114">**String**</span><span class="sxs-lookup"><span data-stu-id="39f2a-114">**String**</span></span> <br/> |<span data-ttu-id="39f2a-115">Der Text, aus dem die Leerzeichen entfernt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="39f2a-115">The text from which you want to remove spaces.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="39f2a-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39f2a-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="39f2a-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39f2a-116">Return value</span></span>
 
 <span data-ttu-id="39f2a-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="39f2a-117">String</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12069912-4b87-4945-9123-51106e0d2d54
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: d9f08c13f68c7d3d9f41b9a67ac1888d6c507c34
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -31,7 +31,7 @@ ms.locfileid: "19792324"
 HRESULT QueryFastShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="d9f58-106">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d9f58-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d9f58-106">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d9f58-106">Return value</span></span>
 
 <span data-ttu-id="d9f58-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="d9f58-107">S_OK</span></span>
   

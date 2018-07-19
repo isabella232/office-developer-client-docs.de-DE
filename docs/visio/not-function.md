@@ -30,7 +30,7 @@ ms.locfileid: "19797550"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="583c4-114">_logicalexpression_</span><span class="sxs-lookup"><span data-stu-id="583c4-114">_logicalexpression_</span></span> <br/> |<span data-ttu-id="583c4-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="583c4-115">Required</span></span>  <br/> |<span data-ttu-id="583c4-116">**String**</span><span class="sxs-lookup"><span data-stu-id="583c4-116">**String**</span></span> <br/> |<span data-ttu-id="583c4-117">Der logische Ausdruck, der ausgewertet werden soll.</span><span class="sxs-lookup"><span data-stu-id="583c4-117">The logical expression to evaluate.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="583c4-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="583c4-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="583c4-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="583c4-118">Return value</span></span>
 
 <span data-ttu-id="583c4-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="583c4-119">Boolean</span></span>
   

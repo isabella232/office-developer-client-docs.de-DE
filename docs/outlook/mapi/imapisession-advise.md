@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6a6b6b1-31e2-4899-a5fe-74d5d1c2ccfc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 45033ab924dcf443e9d231b3a7b4348119758935
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -95,7 +95,7 @@ HRESULT Advise(
   
 > <span data-ttu-id="74987-137">[out] Ein Zeiger auf eine Zahl ungleich NULL für die Verbindung zwischen des Anrufers advise-Empfängerobjekt und der Sitzung.</span><span class="sxs-lookup"><span data-stu-id="74987-137">[out] A pointer to a nonzero number that represents the connection between the caller's advise sink object and the session.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="74987-138">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="74987-138">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="74987-138">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="74987-138">Return value</span></span>
 
 <span data-ttu-id="74987-139">S_OK</span><span class="sxs-lookup"><span data-stu-id="74987-139">S_OK</span></span> 
   

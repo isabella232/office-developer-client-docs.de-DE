@@ -31,7 +31,7 @@ ms.locfileid: "19796488"
 | <span data-ttu-id="0ccbc-114">_binäre Zahl1_</span><span class="sxs-lookup"><span data-stu-id="0ccbc-114">_binary number1_</span></span> <br/> |<span data-ttu-id="0ccbc-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="0ccbc-115">Required</span></span>  <br/> |<span data-ttu-id="0ccbc-116">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="0ccbc-116">**Numeric**</span></span> <br/> |<span data-ttu-id="0ccbc-117">Die erste 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="0ccbc-117">The first 16-bit binary number.</span></span>  <br/> |
 | <span data-ttu-id="0ccbc-118">_binäre Zahl2_</span><span class="sxs-lookup"><span data-stu-id="0ccbc-118">_binary number2_</span></span> <br/> |<span data-ttu-id="0ccbc-119">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="0ccbc-119">Required</span></span>  <br/> |<span data-ttu-id="0ccbc-120">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="0ccbc-120">**Numeric**</span></span> <br/> |<span data-ttu-id="0ccbc-121">Die zweite 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="0ccbc-121">The second 16-bit binary number.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="0ccbc-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0ccbc-122">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="0ccbc-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0ccbc-122">Return value</span></span>
 
 <span data-ttu-id="0ccbc-123">16-bit Binary</span><span class="sxs-lookup"><span data-stu-id="0ccbc-123">16-bit Binary</span></span>
   

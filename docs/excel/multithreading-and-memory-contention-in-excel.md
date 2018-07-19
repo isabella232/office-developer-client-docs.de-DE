@@ -8,7 +8,7 @@ keywords:
 - Multithreading in excel, Arbeitsspeicher Konflikte in Excel, Funktionen [Excel 2007], threadsicheren, threadsicheren Funktionen [Excel 2007], lokalen Speicher [Excel 2007]
 localization_priority: Normal
 ms.assetid: 86e1e842-f433-4ea9-8b13-ad2515fc50d8
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: fb0eddfff2f34307143bb896fd451de357f2b639
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

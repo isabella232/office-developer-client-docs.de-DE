@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 39d07fc8-09aa-4122-af32-b02f2c893d29
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 36fd729b1ca3e5d877d03358d581b83fc6d4782c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -84,7 +84,7 @@ HRESULT CreateFolder(
   
 > <span data-ttu-id="fbb06-139">[out] Ein Zeiger auf einen Zeiger auf den neu erstellten Ordner.</span><span class="sxs-lookup"><span data-stu-id="fbb06-139">[out] A pointer to a pointer to the newly created folder.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fbb06-140">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fbb06-140">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fbb06-140">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fbb06-140">Return value</span></span>
 
 <span data-ttu-id="fbb06-141">S_OK</span><span class="sxs-lookup"><span data-stu-id="fbb06-141">S_OK</span></span> 
   

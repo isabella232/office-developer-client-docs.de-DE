@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 10cda14a-8f93-41e0-b1fb-500098bdc392
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: a15561a6f3af35c1c7c2285bb6252e6400e0e8df
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -62,7 +62,7 @@ HRESULT CreateProfile(
   
 > <span data-ttu-id="1c2a3-119">Konfigurationsblätter-Eigenschaft der einzelnen die Rollenanbieter in der Nachrichtendienste hinzugefügt werden soll, können angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="1c2a3-119">The configuration property sheets of each of the providers in the message services to be added can be displayed.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="1c2a3-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1c2a3-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1c2a3-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1c2a3-120">Return value</span></span>
 
 <span data-ttu-id="1c2a3-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="1c2a3-121">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 41b6c162-9984-43a3-b38e-44f0afae67de
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 13c151a134e4334e8ed2e75e031a6fc9dddbf941
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -74,7 +74,7 @@ HRESULT GetSearchCriteria(
   
 > <span data-ttu-id="0fd18-134">Die Suche ist aktiv und Inhaltstabelle des Containers wird aktualisiert, um die Änderungen im Nachrichtenspeicher oder -Adressbuch.</span><span class="sxs-lookup"><span data-stu-id="0fd18-134">The search is active and the container's contents table is being updated to reflect changes in the message store or address book.</span></span> <span data-ttu-id="0fd18-135">Wenn dieses Flag nicht festgelegt ist, wird die Suche ist deaktiviert, und der Inhaltstabelle ist statische.</span><span class="sxs-lookup"><span data-stu-id="0fd18-135">If this flag is not set, the search is inactive and the contents table is static.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0fd18-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0fd18-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0fd18-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0fd18-136">Return value</span></span>
 
 <span data-ttu-id="0fd18-137">S_OK</span><span class="sxs-lookup"><span data-stu-id="0fd18-137">S_OK</span></span> 
   

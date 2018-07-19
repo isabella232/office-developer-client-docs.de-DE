@@ -31,7 +31,7 @@ ms.locfileid: "19798311"
 | <span data-ttu-id="13f07-112">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="13f07-112">_number_</span></span> <br/> |<span data-ttu-id="13f07-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="13f07-113">Required</span></span>  <br/> |<span data-ttu-id="13f07-114">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="13f07-114">**Numeric**</span></span> <br/> |<span data-ttu-id="13f07-115">Die zu kürzende Zahl.</span><span class="sxs-lookup"><span data-stu-id="13f07-115">The number to truncate.</span></span>  <br/> |
 | <span data-ttu-id="13f07-116">_AnzahlVonStellen_</span><span class="sxs-lookup"><span data-stu-id="13f07-116">_numberofdigits_</span></span> <br/> |<span data-ttu-id="13f07-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="13f07-117">Required</span></span>  <br/> |<span data-ttu-id="13f07-118">**Numerisch**</span><span class="sxs-lookup"><span data-stu-id="13f07-118">**Numeric**</span></span> <br/> |<span data-ttu-id="13f07-119">Die Anzahl der Ziffern an die zu kürzende _Zahl_.</span><span class="sxs-lookup"><span data-stu-id="13f07-119">The number of digits to which to truncate  _number_.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="13f07-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="13f07-120">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="13f07-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="13f07-120">Return value</span></span>
 
 <span data-ttu-id="13f07-121">Numeric.</span><span class="sxs-lookup"><span data-stu-id="13f07-121">Numeric.</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bcacfbdf-edff-4810-a985-e6d2c9271901
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: fefd81a7d6cdfda24df93ec928cd3305cb8ef8be
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -72,7 +72,7 @@ HRESULT CreateOneOff(
   
 > <span data-ttu-id="4922e-130">[out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID für den einmaligen Empfänger.</span><span class="sxs-lookup"><span data-stu-id="4922e-130">[out] A pointer to a pointer to the entry identifier for the one-off recipient.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="4922e-131">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4922e-131">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4922e-131">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4922e-131">Return value</span></span>
 
 <span data-ttu-id="4922e-132">S_OK</span><span class="sxs-lookup"><span data-stu-id="4922e-132">S_OK</span></span> 
   

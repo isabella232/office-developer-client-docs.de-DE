@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8f8ee2cb-1c2a-4958-b01e-2f4aab689f89
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 3b10ac5906be0f95930be3bef51fe2d78d583b03
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT PrepareForm(
   
 > <span data-ttu-id="6eb09-117">[in] Ein Zeiger auf ein Formular Informationen-Objekt für das Formular heruntergeladen werden.</span><span class="sxs-lookup"><span data-stu-id="6eb09-117">[in] A pointer to a form information object for the form to be downloaded.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6eb09-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6eb09-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6eb09-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6eb09-118">Return value</span></span>
 
 <span data-ttu-id="6eb09-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="6eb09-119">S_OK</span></span> 
   

@@ -32,7 +32,7 @@ ms.locfileid: "19797187"
 | <span data-ttu-id="eec86-118">_WertWennWahr_</span><span class="sxs-lookup"><span data-stu-id="eec86-118">_valueiftrue_</span></span> <br/> |<span data-ttu-id="eec86-119">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="eec86-119">Required</span></span>  <br/> |<span data-ttu-id="eec86-120">**Variiert**</span><span class="sxs-lookup"><span data-stu-id="eec86-120">**Varies**</span></span> <br/> |<span data-ttu-id="eec86-121">Der zurückzugebende Wert, wenn _Logicalexpression_ wahr ist.</span><span class="sxs-lookup"><span data-stu-id="eec86-121">Value to return if  _logicalexpression_ is true.</span></span>  <br/> |
 | <span data-ttu-id="eec86-122">_Funktion Valueiffalse zurück_</span><span class="sxs-lookup"><span data-stu-id="eec86-122">_valueiffalse_</span></span> <br/> |<span data-ttu-id="eec86-123">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="eec86-123">Required</span></span>  <br/> |<span data-ttu-id="eec86-124">**Variiert**</span><span class="sxs-lookup"><span data-stu-id="eec86-124">**Varies**</span></span> <br/> | <span data-ttu-id="eec86-125">Der zurückzugebende Wert, wenn _Logicalexpression_ falsch ist.</span><span class="sxs-lookup"><span data-stu-id="eec86-125">Value to return if  _logicalexpression_ is false.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="eec86-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="eec86-126">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="eec86-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="eec86-126">Return value</span></span>
 
 <span data-ttu-id="eec86-127">Varies</span><span class="sxs-lookup"><span data-stu-id="eec86-127">Varies</span></span>
   

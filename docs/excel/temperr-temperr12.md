@@ -11,7 +11,7 @@ keywords:
 - Temperr-Funktion [excel 2007], TempErr12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: cf8c26b2-ca2b-4dda-a02d-0ccbeac19106
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 22c0ff1b8259fc0e5ee70edb06bb3db53781ff8c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -46,7 +46,7 @@ LPXLOPER12 TempErr12(BOOL err);
 |<span data-ttu-id="ce913-128">#NUM!</span><span class="sxs-lookup"><span data-stu-id="ce913-128">#NUM!</span></span>  <br/> |<span data-ttu-id="ce913-129">**xlerrNum**</span><span class="sxs-lookup"><span data-stu-id="ce913-129">**xlerrNum**</span></span> <br/> |<span data-ttu-id="ce913-130">36</span><span class="sxs-lookup"><span data-stu-id="ce913-130">36</span></span>  <br/> |
 |<span data-ttu-id="ce913-131">#N/A</span><span class="sxs-lookup"><span data-stu-id="ce913-131">#N/A</span></span>  <br/> |<span data-ttu-id="ce913-132">**xlerrNA**</span><span class="sxs-lookup"><span data-stu-id="ce913-132">**xlerrNA**</span></span> <br/> |<span data-ttu-id="ce913-133">42</span><span class="sxs-lookup"><span data-stu-id="ce913-133">42</span></span>  <br/> |
    
-## <a name="return-value"></a><span data-ttu-id="ce913-134">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ce913-134">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ce913-134">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ce913-134">Return value</span></span>
 
 <span data-ttu-id="ce913-135">Gibt ein **XltypeBool** mit den Fehlercode übergeben wird.</span><span class="sxs-lookup"><span data-stu-id="ce913-135">Returns an **xltypeBool** containing the error code passed in.</span></span> 
   

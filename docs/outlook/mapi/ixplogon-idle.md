@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8f600db6-f6a6-44f9-aef7-c1309f61eb12
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 75607550f1d6085a670ad997238994400e08f7bd
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Idle(
   
 > <span data-ttu-id="03ff6-108">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="03ff6-108">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="03ff6-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="03ff6-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="03ff6-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="03ff6-109">Return value</span></span>
 
 <span data-ttu-id="03ff6-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="03ff6-110">S_OK</span></span> 
   

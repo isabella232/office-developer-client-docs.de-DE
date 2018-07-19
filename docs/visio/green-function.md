@@ -30,7 +30,7 @@ ms.locfileid: "19797141"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="79fea-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="79fea-112">_expression_</span></span> <br/> |<span data-ttu-id="79fea-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="79fea-113">Required</span></span>  <br/> |<span data-ttu-id="79fea-114">**Variiert**</span><span class="sxs-lookup"><span data-stu-id="79fea-114">**Varies**</span></span> <br/> |<span data-ttu-id="79fea-115">Ein Index einer Farbe in das Dokument Farbe Tabelle ein Ausdruck, der in einer benutzerdefinierten Farbe (wie RGB oder HSL) oder ein Bezug auf eine Zelle, die eine Farbe Index oder Farbe Ergebnis enthält aufgelöst wird.</span><span class="sxs-lookup"><span data-stu-id="79fea-115">An index of a color in the document's color table, an expression that resolves to a custom color (such as RGB or HSL), or a reference to a cell that contains a color index or color result.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="79fea-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="79fea-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="79fea-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="79fea-116">Return value</span></span>
 
 <span data-ttu-id="79fea-117">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="79fea-117">Integer</span></span>
   

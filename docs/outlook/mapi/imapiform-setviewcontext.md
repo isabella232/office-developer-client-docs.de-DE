@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7b10007-42d8-4755-8362-f8ad9a8dad68
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c1ba49ba1b4deacb684da1411d86ebd4dd19e63f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT SetViewContext(
   
 > <span data-ttu-id="e536b-108">[in] Ein Zeiger auf den neuen Ansichtskontext für das Formular.</span><span class="sxs-lookup"><span data-stu-id="e536b-108">[in] A pointer to the new view context for the form.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e536b-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e536b-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e536b-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e536b-109">Return value</span></span>
 
 <span data-ttu-id="e536b-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="e536b-110">S_OK</span></span> 
   
@@ -53,13 +53,13 @@ HRESULT SetViewContext(
 
 <span data-ttu-id="e536b-116">Die meisten Formular Server implementieren **SetViewContext** mithilfe des folgenden Algorithmus:</span><span class="sxs-lookup"><span data-stu-id="e536b-116">Most form servers implement **SetViewContext** by using the following algorithm:</span></span> 
   
-- <span data-ttu-id="e536b-117">Wenn ein Ansichtskontext für das Formular bereits vorhanden ist, brechen Sie Registrierung für das Formular durch Aufrufen der [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) -Methode mit **null** im Parameter _Pmnvs ab_ , und rufen Sie dann dem Ansichtskontext [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode, um die verringert den Referenzzähler.</span><span class="sxs-lookup"><span data-stu-id="e536b-117">If a view context already exists for the form, cancel the form's registration by calling the [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) method with **null** in the  _pmnvs_ parameter, and then call the view context's [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) method to decrement its reference count.</span></span> 
+- <span data-ttu-id="e536b-117">Wenn ein Ansichtskontext für das Formular bereits vorhanden ist, brechen Sie Registrierung für das Formular durch Aufrufen der [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) -Methode mit **null** im Parameter _Pmnvs ab_ , und rufen Sie dann dem Ansichtskontext [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) -Methode, um die verringert den Referenzzähler.</span><span class="sxs-lookup"><span data-stu-id="e536b-117">If a view context already exists for the form, cancel the form's registration by calling the [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) method with **null** in the  _pmnvs_ parameter, and then call the view context's [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) method to decrement its reference count.</span></span> 
     
 - <span data-ttu-id="e536b-118">Wenn der neue Ansichtskontext ungleich **null**ist, Anruf **IMAPIViewContext::SetAdviseSink** mithilfe des _pViewContext_ -Parameters So richten Sie eine neue Ansicht ein advise-Empfänger.</span><span class="sxs-lookup"><span data-stu-id="e536b-118">If the new view context is not **null**, call **IMAPIViewContext::SetAdviseSink** by using the  _pViewContext_ parameter to set up a new view advise sink.</span></span> 
     
 - <span data-ttu-id="e536b-119">Wenn der neue Ansichtskontext ungleich **null**ist, rufen Sie die [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) -Methode, um zu bestimmen, welche Status-Flags festgelegt wurden.</span><span class="sxs-lookup"><span data-stu-id="e536b-119">If the new view context is not **null**, call the [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) method to determine which status flags have been set.</span></span> 
     
-- <span data-ttu-id="e536b-120">Wenn der neue Ansichtskontext ungleich **null**ist, speichern Sie sie, und rufen Sie dessen [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode, um den Referenzzähler erhöhen.</span><span class="sxs-lookup"><span data-stu-id="e536b-120">If the new view context is not **null**, store it and call its [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) method to increment its reference count.</span></span> 
+- <span data-ttu-id="e536b-120">Wenn der neue Ansichtskontext ungleich **null**ist, speichern Sie sie, und rufen Sie dessen [IUnknown:: AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28VS.85%29.aspx) -Methode, um den Referenzzähler erhöhen.</span><span class="sxs-lookup"><span data-stu-id="e536b-120">If the new view context is not **null**, store it and call its [IUnknown::AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28VS.85%29.aspx) method to increment its reference count.</span></span> 
     
 - <span data-ttu-id="e536b-121">Aktualisieren Sie alle Elemente der Benutzeroberfläche, die von dem Ansichtskontext abhängen.</span><span class="sxs-lookup"><span data-stu-id="e536b-121">Update any user interface elements that depend on the view context.</span></span> 
     

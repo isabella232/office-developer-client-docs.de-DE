@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4860992d-65d7-4cb0-a874-ceccb153dbac
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 9dc368e6502bbb14cf42f6bc5a08fd2893f98bf6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT Error(
   
 > <span data-ttu-id="f6a59-111">Ein Zeiger auf die Zeichenfolge, die die anzuzeigende Fehler zugeordnet ist.</span><span class="sxs-lookup"><span data-stu-id="f6a59-111">A pointer to the string associated with the error to be displayed.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f6a59-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f6a59-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f6a59-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f6a59-112">Return value</span></span>
 
 <span data-ttu-id="f6a59-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="f6a59-113">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8da8be1-3efe-410a-bcce-49e522602d80
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: e9cd1c7ce0983a47311b2626cc3b40b47748b951
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ LPADRBOOK FAR * lppAdrBook
   
 > <span data-ttu-id="56e57-113">[out] Ein Zeiger auf einen Zeiger auf das Adressbuch.</span><span class="sxs-lookup"><span data-stu-id="56e57-113">[out] A pointer to a pointer to the address book.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="56e57-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="56e57-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="56e57-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="56e57-114">Return value</span></span>
 
 <span data-ttu-id="56e57-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="56e57-115">S_OK</span></span> 
   

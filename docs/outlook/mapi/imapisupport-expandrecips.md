@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 2e41701d3a739864b1eafc8001833b7df5c8908b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -52,7 +52,7 @@ HRESULT ExpandRecips(
   
 > <span data-ttu-id="39bac-115">Die MAPI-Warteschlange (anstelle der Adressbuchhierarchie, dem der Aufrufer eng verknüpft ist) muss die Nachricht zu senden.</span><span class="sxs-lookup"><span data-stu-id="39bac-115">The MAPI spooler (rather than the transport provider to which the caller is tightly coupled) must send the message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="39bac-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39bac-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="39bac-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39bac-116">Return value</span></span>
 
 <span data-ttu-id="39bac-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="39bac-117">S_OK</span></span> 
   

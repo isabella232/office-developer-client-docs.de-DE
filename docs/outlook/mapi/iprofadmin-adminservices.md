@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 87235fd2-6527-41a1-98ba-b951632a1c81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7566bb075c2ef9903b5a376fd90f209c8683c31e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -67,7 +67,7 @@ HRESULT AdminServices(
   
 > <span data-ttu-id="fcfff-123">[out] Ein Zeiger auf einen Zeiger auf ein Objekt "Message" Service-Verwaltung.</span><span class="sxs-lookup"><span data-stu-id="fcfff-123">[out] A pointer to a pointer to a message service administration object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fcfff-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fcfff-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fcfff-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fcfff-124">Return value</span></span>
 
 <span data-ttu-id="fcfff-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="fcfff-125">S_OK</span></span> 
   

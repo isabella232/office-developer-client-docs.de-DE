@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d423f7b5-23b8-44dd-bca3-6590182dc42d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: fe3e098b2b70e77bd0c536002a4724810261bff3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT PrepareRecips(
   
 > <span data-ttu-id="b052a-118">[in] Ein Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die die Liste der Empfänger enthält.</span><span class="sxs-lookup"><span data-stu-id="b052a-118">[in] A pointer to an [ADRLIST](adrlist.md) structure that contains the list of recipients.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="b052a-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b052a-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b052a-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b052a-119">Return value</span></span>
 
 <span data-ttu-id="b052a-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="b052a-120">S_OK</span></span> 
   

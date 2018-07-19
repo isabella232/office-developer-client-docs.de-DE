@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 670c2291-d5b6-4dcf-9046-9125272dd8f8
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 37d0ce65e125b2420af775d61ead51db189758ca
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT HrDeleteRow(
   
 > <span data-ttu-id="42b28-108">[in] Ein Zeiger auf eine Eigenschaft-Wert-Struktur, die beschreibt die Indexspalte für die Zeile gelöscht werden soll.</span><span class="sxs-lookup"><span data-stu-id="42b28-108">[in] A pointer to a property value structure that describes the index column for the row to be deleted.</span></span> <span data-ttu-id="42b28-109">Der **UlPropTag** Member der Eigenschaft Wert Struktur sollte das gleiche Eigenschafts-Tag als _UlPropTagIndexColumn_ -Parameter aus dem Aufruf der Funktion [CreateTable](createtable.md) enthalten.</span><span class="sxs-lookup"><span data-stu-id="42b28-109">The **ulPropTag** member of the property value structure should contain the same property tag as the  _ulPropTagIndexColumn_ parameter from the call to the [CreateTable](createtable.md) function.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="42b28-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="42b28-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="42b28-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="42b28-110">Return value</span></span>
 
 <span data-ttu-id="42b28-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="42b28-111">S_OK</span></span> 
   

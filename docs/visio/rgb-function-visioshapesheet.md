@@ -32,7 +32,7 @@ ms.locfileid: "19797856"
 | <span data-ttu-id="828f0-118">_Grün_</span><span class="sxs-lookup"><span data-stu-id="828f0-118">_green_</span></span> <br/> |<span data-ttu-id="828f0-119">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="828f0-119">Required</span></span>  <br/> |<span data-ttu-id="828f0-120">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="828f0-120">**Number**</span></span> <br/> |<span data-ttu-id="828f0-121">Die Grünkomponente.</span><span class="sxs-lookup"><span data-stu-id="828f0-121">The green component.</span></span>  <br/> |
 | <span data-ttu-id="828f0-122">_Blau_</span><span class="sxs-lookup"><span data-stu-id="828f0-122">_blue_</span></span> <br/> |<span data-ttu-id="828f0-123">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="828f0-123">Required</span></span>  <br/> |<span data-ttu-id="828f0-124">**Number**</span><span class="sxs-lookup"><span data-stu-id="828f0-124">**Nmber**</span></span> <br/> |<span data-ttu-id="828f0-125">Die Blaukomponente.</span><span class="sxs-lookup"><span data-stu-id="828f0-125">The blue component.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="828f0-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="828f0-126">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="828f0-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="828f0-126">Return value</span></span>
 
 <span data-ttu-id="828f0-127">Zahl</span><span class="sxs-lookup"><span data-stu-id="828f0-127">Number</span></span>
   

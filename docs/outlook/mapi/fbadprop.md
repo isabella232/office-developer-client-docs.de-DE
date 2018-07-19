@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 929330c8-e6f2-4adf-a36e-fba18fa055d4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 39e10e9139036cc86ec93ea24a89b98125ea6e83
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG FBadProp(
   
 > <span data-ttu-id="64b47-114">[in] Eine [SPropValue](spropvalue.md) -Struktur definieren die-Eigenschaft überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="64b47-114">[in] An [SPropValue](spropvalue.md) structure defining the property to be validated.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="64b47-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="64b47-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="64b47-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="64b47-115">Return value</span></span>
 
 <span data-ttu-id="64b47-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="64b47-116">TRUE</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a98b0b26-9b19-44ca-9b4e-0ad4d1c54325
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 27a5978d85cf06a31f583b82cd39d0001852876b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -104,7 +104,7 @@ SCODE OpenIMsgOnIStg(
   
 > <span data-ttu-id="b721d-144">[out] Zeiger auf einen Zeiger auf das geöffnete **IMessage** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="b721d-144">[out] Pointer to a pointer to the opened **IMessage** object.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="b721d-145">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b721d-145">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b721d-145">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b721d-145">Return value</span></span>
 
 <span data-ttu-id="b721d-146">S_OK</span><span class="sxs-lookup"><span data-stu-id="b721d-146">S_OK</span></span> 
   

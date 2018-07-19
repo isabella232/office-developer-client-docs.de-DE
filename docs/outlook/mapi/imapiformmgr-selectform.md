@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1cfe71b-01f3-429a-8b4c-73191a2ffea0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b481eaf00b7568da5f02ffa3301e8f2698a98e1e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -63,7 +63,7 @@ HRESULT SelectForm(
   
 > <span data-ttu-id="5e236-122">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Informationen Formularobjekt.</span><span class="sxs-lookup"><span data-stu-id="5e236-122">[out] A pointer to a pointer to the returned form information object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5e236-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5e236-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5e236-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5e236-123">Return value</span></span>
 
 <span data-ttu-id="5e236-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="5e236-124">S_OK</span></span> 
   

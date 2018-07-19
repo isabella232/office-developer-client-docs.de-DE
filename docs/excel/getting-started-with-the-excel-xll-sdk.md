@@ -8,7 +8,7 @@ keywords:
 - excel 2007 xll software development kit, getting started
 localization_priority: Normal
 ms.assetid: ba7b5817-f22f-4187-8a5f-316f0fbcb9d2
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7a140772ea025a55f32027d1699058ea6d9449f5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

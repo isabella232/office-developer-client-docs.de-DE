@@ -8,7 +8,7 @@ keywords:
 - Bereichsgröße-Funktion [excel 2007], gleichzeitige Aufgaben [Excel 2007], Benutzer Breaks [Excel 2007]
 localization_priority: Normal
 ms.assetid: 0e3df597-0aa6-497f-bc52-58c7dc064538
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: b13f9b9a8c0e5621b25df13537632bdbe5dfc29e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

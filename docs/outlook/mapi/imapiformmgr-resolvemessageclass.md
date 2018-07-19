@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c2af7516-3a97-4422-874d-b1e3a0d4f316
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: a84698ccc132c750cbd071c05160117c40e352a4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT ResolveMessageClass(
   
 > <span data-ttu-id="11a7b-118">[out] Ein Zeiger auf einen Zeiger auf ein Formular zurückgegebenen Informationen-Objekt.</span><span class="sxs-lookup"><span data-stu-id="11a7b-118">[out] A pointer to a pointer to a returned form information object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="11a7b-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="11a7b-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="11a7b-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="11a7b-119">Return value</span></span>
 
 <span data-ttu-id="11a7b-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="11a7b-120">S_OK</span></span> 
   

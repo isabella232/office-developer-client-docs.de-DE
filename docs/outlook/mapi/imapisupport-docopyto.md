@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 84019475-5176-4fc5-a3ee-871095077498
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 1040a0730c4b26b51d3c2b7763488502b2c5323c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -101,7 +101,7 @@ HRESULT DoCopyTo(
   
 > <span data-ttu-id="b61c4-141">[out] Bei Eingabe einen Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur. andernfalls NULL, gibt keine Notwendigkeit zur Fehlerinformationen an.</span><span class="sxs-lookup"><span data-stu-id="b61c4-141">[out] On input, a pointer to a pointer to an [SPropProblemArray](spropproblemarray.md) structure; otherwise, NULL, which indicates no need for error information.</span></span> <span data-ttu-id="b61c4-142">Wenn _LppProblems_ einen gültigen Zeiger für die Eingabe ist, gibt **DoCopyTo** ausführliche Informationen zu Fehlern in eine oder mehrere Eigenschaften kopieren.</span><span class="sxs-lookup"><span data-stu-id="b61c4-142">If  _lppProblems_ is a valid pointer on input, **DoCopyTo** returns detailed information about errors in copying one or more properties.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="b61c4-143">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b61c4-143">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b61c4-143">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b61c4-143">Return value</span></span>
 
 <span data-ttu-id="b61c4-144">S_OK</span><span class="sxs-lookup"><span data-stu-id="b61c4-144">S_OK</span></span> 
   

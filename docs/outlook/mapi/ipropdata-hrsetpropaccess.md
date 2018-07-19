@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02365050-5e8b-437c-925f-4eb0df646356
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 39dbf3d3c8a8e22a7b7087929f749589cdeb2090
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT HrSetPropAccess(
 |<span data-ttu-id="b7ef2-117">IPROP_READONLY, die angibt, dass die Eigenschaft nicht ge�ndert werden kann</span><span class="sxs-lookup"><span data-stu-id="b7ef2-117">IPROP_READONLY, which indicates that the property cannot be modified</span></span>  <br/> |<span data-ttu-id="b7ef2-118">IPROP_CLEAN, die angibt, dass die Eigenschaft nicht ge�ndert wurde.</span><span class="sxs-lookup"><span data-stu-id="b7ef2-118">IPROP_CLEAN, which indicates that the property has not been modified.</span></span>  <br/> |
 |<span data-ttu-id="b7ef2-119">IPROP_READWRITE, die angibt, dass die Eigenschaft ge�ndert werden kann.</span><span class="sxs-lookup"><span data-stu-id="b7ef2-119">IPROP_READWRITE, which indicates that the property can be modified.</span></span>  <br/> |<span data-ttu-id="b7ef2-120">IPROP_DIRTY, die angibt, dass die Eigenschaft ge�ndert wurde.</span><span class="sxs-lookup"><span data-stu-id="b7ef2-120">IPROP_DIRTY, which indicates that the property has been modified.</span></span>  <br/> |
    
-## <a name="return-value"></a><span data-ttu-id="b7ef2-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b7ef2-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b7ef2-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b7ef2-121">Return value</span></span>
 
 <span data-ttu-id="b7ef2-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="b7ef2-122">S_OK</span></span> 
   

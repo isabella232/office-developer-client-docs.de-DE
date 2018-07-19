@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c57ada0e-b9a1-496b-8548-75686d8cba4e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 5b96a45bab4cd00d23604d0b0b25f3e772277395
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT MsgServiceTransportOrder(
   
 > <span data-ttu-id="c88a1-113">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="c88a1-113">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c88a1-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c88a1-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c88a1-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c88a1-114">Return value</span></span>
 
 <span data-ttu-id="c88a1-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="c88a1-115">S_OK</span></span> 
   

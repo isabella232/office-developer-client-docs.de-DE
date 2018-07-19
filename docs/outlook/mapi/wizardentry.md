@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e807c6b5-06cd-4ade-9d9e-69ba6abd1614
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2c307d18c5b62e5190aa10632a47a3f16b80e81f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ ULONG WIZARDENTRY(
   
 > <span data-ttu-id="510f3-123">[in] Zeiger auf das Objekt der MAPI-Unterstützung für diese Sitzung gelten.</span><span class="sxs-lookup"><span data-stu-id="510f3-123">[in] Pointer to the MAPI support object applicable to this session.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="510f3-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="510f3-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="510f3-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="510f3-124">Return value</span></span>
 
 <span data-ttu-id="510f3-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="510f3-125">S_OK</span></span> 
   

@@ -8,7 +8,7 @@ keywords:
 - generische Dll [excel 2007], Funktionen, Funktionen [Excel 2007], generische DLL
 localization_priority: Normal
 ms.assetid: 80ce2247-d69d-45b0-b5e2-4ff0d7078a2c
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e78f276e58ca1c98786e28ed5167762cf0bfdf7f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

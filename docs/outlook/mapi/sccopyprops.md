@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 979415f1d792f92e593a7073cc84cfd6ba832b6c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ SCODE ScCopyProps(
   
 > <span data-ttu-id="21152-121">[out] Optional Zeiger auf die Größe in Bytes, den Block mit Speicher durch den Parameter _PvDst_ .</span><span class="sxs-lookup"><span data-stu-id="21152-121">[out] Optional pointer to the size, in bytes, of the block of memory pointed to by the  _pvDst_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="21152-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="21152-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="21152-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="21152-122">Return value</span></span>
 
 <span data-ttu-id="21152-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="21152-123">S_OK</span></span>
   

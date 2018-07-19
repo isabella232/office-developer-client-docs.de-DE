@@ -160,5 +160,5 @@ ms.locfileid: "19790747"
     
 ## <a name="see-also"></a><span data-ttu-id="c6c17-144">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c6c17-144">See also</span></span>
 
-- [<span data-ttu-id="c6c17-145">Entwerfen einer Formularvorlage für die Offlineverwendung</span><span class="sxs-lookup"><span data-stu-id="c6c17-145">Design a form template for offline use</span></span>](http://office.microsoft.com/en-us/infopath/HA102117391033.aspx?pid=CH100341121033)
+- [<span data-ttu-id="c6c17-145">Entwerfen einer Formularvorlage für die Offlineverwendung</span><span class="sxs-lookup"><span data-stu-id="c6c17-145">Design a form template for offline use</span></span>](http://office.microsoft.com/de-de/infopath/HA102117391033.aspx?pid=CH100341121033)
 

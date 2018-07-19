@@ -8,7 +8,7 @@ keywords:
 - xlrunningoncluster
 localization_priority: Normal
 ms.assetid: 7662f255-4184-4af0-97f5-9a89347a201a
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: f42ccbeb94e1fc6b6cf880f1b32ee1bfeb24997e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -30,7 +30,7 @@ Excel12(xlRunningOnCluster, LPXLOPER12 pxRes, 0);
 
 <span data-ttu-id="b95f6-108">Diese Funktion hat keine Argumente.</span><span class="sxs-lookup"><span data-stu-id="b95f6-108">This function has no arguments.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="b95f6-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b95f6-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b95f6-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b95f6-109">Return value</span></span>
 
 <span data-ttu-id="b95f6-110">Wenn die Funktion in einer Excel-Prozess ausgeführt wird, zurückgegeben in eine **XLOPER12** des Typs **vom Typ XlTypeInt**0.</span><span class="sxs-lookup"><span data-stu-id="b95f6-110">If the function is running in an Excel process, returns 0 in an **XLOPER12** of type **xlTypeInt**.</span></span> <span data-ttu-id="b95f6-111">Wenn die Funktion in einem Cluster ausgeführt wird, wird der Rückgabetyp und der Wert von Cluster-Connector-Anbieter bestimmt.</span><span class="sxs-lookup"><span data-stu-id="b95f6-111">If the function is running on a cluster, the return type and value is determined by the cluster connector provider.</span></span>
   

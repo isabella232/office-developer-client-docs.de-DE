@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f21fba96-c5ca-4d41-9b93-c7955ab7327f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 6624c4abf05dc7df9fc79df43f1d0fe76251d052
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -77,7 +77,7 @@ ULONG FAR * lpulFlags
   
 > <span data-ttu-id="bbab9-137">Meldungen sind in die Warteschlange für den Speicher für ausgehende derzeit verfügbar.</span><span class="sxs-lookup"><span data-stu-id="bbab9-137">There are currently messages in the outbound queue for the store.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="bbab9-138">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="bbab9-138">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bbab9-138">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="bbab9-138">Return value</span></span>
 
 <span data-ttu-id="bbab9-139">S_OK</span><span class="sxs-lookup"><span data-stu-id="bbab9-139">S_OK</span></span> 
   

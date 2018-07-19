@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02c66b46-1f01-43fb-832c-bac27aaae19f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 12b1655b1e6786d2ebc985e834b635679e59f7d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ HRESULT UlValidateParms(
   
 > <span data-ttu-id="49ac1-116">[in] Zeiger auf das erste Argument im Stapel.</span><span class="sxs-lookup"><span data-stu-id="49ac1-116">[in] Pointer to the first argument on the stack.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="49ac1-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="49ac1-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="49ac1-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="49ac1-117">Return value</span></span>
 
 <span data-ttu-id="49ac1-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="49ac1-118">S_OK</span></span> 
   

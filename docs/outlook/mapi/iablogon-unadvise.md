@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e506b29-c7e3-40d6-a08b-22fa87088c2d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: d9f69098f9c53e75dea6f485248d61d277e181c0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Unadvise(
   
 > <span data-ttu-id="2ad52-108">[in] Die Nummer eines aktiven benachrichtigungsregistrierung zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="2ad52-108">[in] The connection number associated with an active notification registration.</span></span> <span data-ttu-id="2ad52-109">Ein vorherigen Aufruf von **Advise** muss den Wert der _UlConnection_zurückgegeben haben.</span><span class="sxs-lookup"><span data-stu-id="2ad52-109">A previous call to **Advise** must have returned the value of  _ulConnection_.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2ad52-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2ad52-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2ad52-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2ad52-110">Return value</span></span>
 
 <span data-ttu-id="2ad52-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="2ad52-111">S_OK</span></span> 
   

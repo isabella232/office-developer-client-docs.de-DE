@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 53428f8d-4838-46d1-a0ab-cafb194f4cc3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7de404f421a405d80dd7f98beba5168969222fc9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT GetStatusTable(
   
 > <span data-ttu-id="f689c-114">[out] Ein Zeiger auf einen Zeiger auf die Statustabelle.</span><span class="sxs-lookup"><span data-stu-id="f689c-114">[out] A pointer to a pointer to the status table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f689c-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f689c-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f689c-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f689c-115">Return value</span></span>
 
 <span data-ttu-id="f689c-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="f689c-116">S_OK</span></span> 
   

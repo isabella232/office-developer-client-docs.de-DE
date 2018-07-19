@@ -33,7 +33,7 @@ ms.locfileid: "19796556"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="ec7f5-114">_Index_</span><span class="sxs-lookup"><span data-stu-id="ec7f5-114">_Index_</span></span> <br/> |<span data-ttu-id="ec7f5-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="ec7f5-115">Required</span></span>  <br/> |<span data-ttu-id="ec7f5-116">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="ec7f5-116">**Number**</span></span> <br/> |<span data-ttu-id="ec7f5-117">Der Teil des das Shape umgebenden Felds um messen und zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="ec7f5-117">The part of the shape's bounding box to measure and return.</span></span> <span data-ttu-id="ec7f5-118">Mögliche Werte finden Sie in den Hinweisen.</span><span class="sxs-lookup"><span data-stu-id="ec7f5-118">See Remarks for possible values.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="ec7f5-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ec7f5-119">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="ec7f5-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ec7f5-119">Return value</span></span>
 
  <span data-ttu-id="ec7f5-120">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="ec7f5-120">**Number**</span></span>
   

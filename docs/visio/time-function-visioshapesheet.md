@@ -32,7 +32,7 @@ ms.locfileid: "19798290"
 | <span data-ttu-id="91649-116">_minute_</span><span class="sxs-lookup"><span data-stu-id="91649-116">_minute_</span></span> <br/> |<span data-ttu-id="91649-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="91649-117">Required</span></span>  <br/> |<span data-ttu-id="91649-118">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="91649-118">**Numeric**</span></span> <br/> |<span data-ttu-id="91649-119">Die Minutenkomponente.</span><span class="sxs-lookup"><span data-stu-id="91649-119">The minute comonent.</span></span>  <br/> |
 | <span data-ttu-id="91649-120">_second_</span><span class="sxs-lookup"><span data-stu-id="91649-120">_second_</span></span> <br/> |<span data-ttu-id="91649-121">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="91649-121">Required</span></span>  <br/> |<span data-ttu-id="91649-122">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="91649-122">**Numeric**</span></span> <br/> |<span data-ttu-id="91649-123">Die Sekundenkomponente.</span><span class="sxs-lookup"><span data-stu-id="91649-123">The second component.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="91649-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="91649-124">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="91649-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="91649-124">Return value</span></span>
 
 <span data-ttu-id="91649-125">Numeric</span><span class="sxs-lookup"><span data-stu-id="91649-125">Numeric</span></span>
   

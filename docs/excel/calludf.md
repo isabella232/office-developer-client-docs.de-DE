@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 6421c9a2-07f7-4deb-aa43-c50d82cb0002
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 1d55f22de88b274d0403f81717d0fddefbea0219
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ int CallUDF(int SessionId, WCHAR *XllName, WCHAR *UDFName, LPXLOPER12 pxAsyncHan
   
 > <span data-ttu-id="101a9-122">Ein Wert, der benutzerdefinierten Funktion zu übergeben.</span><span class="sxs-lookup"><span data-stu-id="101a9-122">A value to pass to the user-defined function.</span></span> <span data-ttu-id="101a9-123">Wiederholen Sie dieses Argument für jeden Parameter durch _ArgCount_angegeben.</span><span class="sxs-lookup"><span data-stu-id="101a9-123">Repeat this argument for each parameter indicated by  _ArgCount_.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="101a9-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="101a9-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="101a9-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="101a9-124">Return value</span></span>
 
 <span data-ttu-id="101a9-125">**XlHpcRetSuccess** Wenn der UDF-Anruf erfolgreich initiiert wird; **XlHpcRetInvalidSessionId** Wenn das _SessionId_ -Argument ungültig ist; **XlHpcRetCallFailed** bei anderen Fehlern, einschließlich Timeout. Wenn der Anruf alle Fehlercodes (Alles außer **XlHpcRetSuccess**) zurückgibt, klicken Sie dann Excel hält den UDF-Aufruf fehlgeschlagen, macht die _PxAsyncHandle_und davon ausgehen, dass einen Rückruf ausgeführt wurde.</span><span class="sxs-lookup"><span data-stu-id="101a9-125">**xlHpcRetSuccess** if the UDF call is successfully initiated; **xlHpcRetInvalidSessionId** if the  _SessionId_ argument is invalid; **xlHpcRetCallFailed** on other failures, including time-out. If the call returns any error code (anything except **xlHpcRetSuccess**), then Excel considers the UDF call to have failed, invalidates the  _pxAsyncHandle_, and does not expect a callback to occur.</span></span>
   

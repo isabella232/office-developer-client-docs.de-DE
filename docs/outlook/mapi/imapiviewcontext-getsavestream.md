@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8316bfa1-3077-401f-aa1e-e9492aca12a8
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 7981dc8550485aa22859c4a8dc25541bedf1217c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ LPSTREAM FAR * ppstm
   
 > <span data-ttu-id="10673-121">[out] Zeiger auf einen Zeiger in das Stream-Objekt, das die gespeicherte Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="10673-121">[out] Pointer to a pointer to the stream that will contain the saved message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="10673-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="10673-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="10673-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="10673-122">Return value</span></span>
 
 <span data-ttu-id="10673-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="10673-123">S_OK</span></span> 
   

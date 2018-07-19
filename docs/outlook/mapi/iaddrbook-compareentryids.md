@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7dabc1d3-5ea4-482f-91a9-9ef3009eddd2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 807e592cf535ac060fd275075035ae8beb7d6e78
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -64,7 +64,7 @@ HRESULT CompareEntryIDs(
   
 > <span data-ttu-id="7ec59-118">[out] Ein Zeiger auf das Ergebnis des Vergleichs.</span><span class="sxs-lookup"><span data-stu-id="7ec59-118">[out] A pointer to the result of the comparison.</span></span> <span data-ttu-id="7ec59-119">Der Inhalt der _LpulResult_ sind auf TRUE festlegen, wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. Andernfalls werden die Inhalte auf FALSE festgelegt.</span><span class="sxs-lookup"><span data-stu-id="7ec59-119">The contents of  _lpulResult_ are set to TRUE if the two entry identifiers refer to the same object; otherwise, the contents are set to FALSE.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="7ec59-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7ec59-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7ec59-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7ec59-120">Return value</span></span>
 
 <span data-ttu-id="7ec59-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="7ec59-121">S_OK</span></span> 
   

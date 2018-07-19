@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 1f3a876269868c30df48e0a0b62036cfdc199955
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -97,7 +97,7 @@ HRESULT LoadForm(
   
 > <span data-ttu-id="2d170-141">[out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="2d170-141">[out] A pointer to a pointer to the returned interface.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2d170-142">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2d170-142">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2d170-142">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2d170-142">Return value</span></span>
 
 <span data-ttu-id="2d170-143">S_OK</span><span class="sxs-lookup"><span data-stu-id="2d170-143">S_OK</span></span> 
   

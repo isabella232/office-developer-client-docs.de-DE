@@ -27,7 +27,7 @@ ms.locfileid: "19798395"
 
 <span data-ttu-id="822bd-108">VERSION()</span><span class="sxs-lookup"><span data-stu-id="822bd-108">VERSION()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="822bd-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="822bd-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="822bd-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="822bd-109">Return value</span></span>
 
 <span data-ttu-id="822bd-110">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="822bd-110">Integer</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f1e2a526-40ad-4a93-908f-8ab9a65928a8
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 9a6ab96a70bce622f44de6576e7b77861302de4f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -51,7 +51,7 @@ HRESULT ShutdownForm(
   
 > <span data-ttu-id="a655e-115">Formulardaten sollte gespeichert werden, wenn es seit die letzten Speichern geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="a655e-115">Form data should be saved if it has changed since the last save.</span></span> <span data-ttu-id="a655e-116">Wenn keine Benutzeroberfläche angezeigt wird, kann das Formular optional wechseln Sie zur Verwendung der Funktionen für die Option SAVEOPTS_NOSAVE.</span><span class="sxs-lookup"><span data-stu-id="a655e-116">If no user interface is being displayed, the form can optionally switch to using the functionality for the SAVEOPTS_NOSAVE option.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a655e-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a655e-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a655e-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a655e-117">Return value</span></span>
 
 <span data-ttu-id="a655e-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="a655e-118">S_OK</span></span> 
   
@@ -71,13 +71,13 @@ HRESULT ShutdownForm(
   
 1. <span data-ttu-id="a655e-126">Überprüfen Sie, dass ein Viewer nicht bereits **ShutdownForm**aufgerufen wurde, und zurückgeben Sie E_UNEXPECTED, falls zutreffend.</span><span class="sxs-lookup"><span data-stu-id="a655e-126">Check that a viewer has not already called **ShutdownForm**, and return E_UNEXPECTED if it has.</span></span> <span data-ttu-id="a655e-127">Obgleich dies unwahrscheinlich ist, sollten Sie überprüfen.</span><span class="sxs-lookup"><span data-stu-id="a655e-127">Although this is unlikely, you should check.</span></span>
     
-2. <span data-ttu-id="a655e-128">Rufen Sie das Formular [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode, sodass Speicher für das Formular und alle internen Datenstrukturen verfügbar bleiben, bis die Verarbeitung beendet wird.</span><span class="sxs-lookup"><span data-stu-id="a655e-128">Call your form's [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) method so that storage for the form and any internal data structures remain available until processing is finished.</span></span> 
+2. <span data-ttu-id="a655e-128">Rufen Sie das Formular [IUnknown:: AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28VS.85%29.aspx) -Methode, sodass Speicher für das Formular und alle internen Datenstrukturen verfügbar bleiben, bis die Verarbeitung beendet wird.</span><span class="sxs-lookup"><span data-stu-id="a655e-128">Call your form's [IUnknown::AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28VS.85%29.aspx) method so that storage for the form and any internal data structures remain available until processing is finished.</span></span> 
     
 3. <span data-ttu-id="a655e-129">Überprüfen Sie, ob alle nicht gespeicherten Änderungen an die Daten des Formulars.</span><span class="sxs-lookup"><span data-stu-id="a655e-129">Determine whether there are any unsaved changes to the form's data.</span></span> <span data-ttu-id="a655e-130">Speichern Sie nicht gespeicherte Daten entsprechend wie der Parameter _UlSaveOptions_ durch Aufrufen des Viewers [IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md) -Methode festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="a655e-130">Save unsaved data according to how the  _ulSaveOptions_ parameter is set by calling your viewer's [IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md) method.</span></span> 
     
 4. <span data-ttu-id="a655e-131">Zerstören Sie Fenster auf der Benutzeroberfläche des Formulars.</span><span class="sxs-lookup"><span data-stu-id="a655e-131">Destroy your form's user interface window.</span></span>
     
-5. <span data-ttu-id="a655e-132">Freigeben des Formulars Nachricht und Standortobjekten Nachricht durch ihre [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methoden aufrufen.</span><span class="sxs-lookup"><span data-stu-id="a655e-132">Release your form's message and message site objects by calling their [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) methods.</span></span> 
+5. <span data-ttu-id="a655e-132">Freigeben des Formulars Nachricht und Standortobjekten Nachricht durch ihre [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) -Methoden aufrufen.</span><span class="sxs-lookup"><span data-stu-id="a655e-132">Release your form's message and message site objects by calling their [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) methods.</span></span> 
     
 6. <span data-ttu-id="a655e-133">Benachrichtigt werden alle registrierte Leser von Berichten für die ausstehende beenden, indem Sie ihre [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md) -Methoden aufrufen.</span><span class="sxs-lookup"><span data-stu-id="a655e-133">Notify all registered viewers of the pending shutdown by calling their [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md) methods.</span></span> 
     
@@ -90,7 +90,7 @@ HRESULT ShutdownForm(
 10. <span data-ttu-id="a655e-137">Geben Sie S_OK zur�ck.</span><span class="sxs-lookup"><span data-stu-id="a655e-137">Return S_OK.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="a655e-138">Nachdem diese Aktionen abgeschlossen wurden, umfassen die einzige gültigen Methoden für das Form-Objekt, das aufgerufen werden kann, die die [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="a655e-138">After these actions have been completed, the only valid methods on the form object that may be called are those from the [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) interface.</span></span> 
+> <span data-ttu-id="a655e-138">Nachdem diese Aktionen abgeschlossen wurden, umfassen die einzige gültigen Methoden für das Form-Objekt, das aufgerufen werden kann, die die [IUnknown](http://msdn.microsoft.com/de-de/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="a655e-138">After these actions have been completed, the only valid methods on the form object that may be called are those from the [IUnknown](http://msdn.microsoft.com/de-de/library/ms680509%28v=VS.85%29.aspx) interface.</span></span> 
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="a655e-139">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="a655e-139">Notes to callers</span></span>
 

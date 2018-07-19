@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 77db2dff-4534-440f-a05c-635711cbc2c3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ba540b0fd3371b3e12be9eeeb102a9bd9d7e8d22
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT GetMsgStoresTable(
   
 > <span data-ttu-id="be372-114">[out] Ein Zeiger auf einen Zeiger auf die Nachricht Store-Tabelle.</span><span class="sxs-lookup"><span data-stu-id="be372-114">[out] A pointer to a pointer to the message store table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="be372-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="be372-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="be372-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="be372-115">Return value</span></span>
 
 <span data-ttu-id="be372-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="be372-116">S_OK</span></span> 
   

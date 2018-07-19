@@ -8,7 +8,7 @@ keywords:
 - Zustände [excel 2007], Befehle [Excel 2007], Arbeitsblattfunktionen [Excel 2007], Makroblatt Funktionen [Excel 2007], Excel Staaten
 localization_priority: Normal
 ms.assetid: 20f19aa4-f184-47be-bcdd-7ded78778974
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 60977216663fb2492f425a9b7c855b77815f0e7b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

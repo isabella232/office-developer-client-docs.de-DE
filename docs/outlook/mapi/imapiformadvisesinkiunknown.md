@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 180022af-4c1c-408c-a3fe-ed075cef79ab
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: fd2575d401aa8a39d6f3b2cd08377b587b430ef1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ms.locfileid: "19792140"
    
 ## <a name="remarks"></a><span data-ttu-id="9c4ad-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9c4ad-123">Remarks</span></span>
 
-<span data-ttu-id="9c4ad-124">Formular Servern mit einem Formular advise-Empfängerobjekt **IMAPIFormAdviseSink** implementieren, anstatt mit ihren Form-Objekt.</span><span class="sxs-lookup"><span data-stu-id="9c4ad-124">Form servers use a form advise sink object to implement **IMAPIFormAdviseSink** instead of including it with their form object.</span></span> <span data-ttu-id="9c4ad-125">Aus diesem Grund sollten Formular Viewer erwarten, einen Fehler beim Aufruf von [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) -Methode des Formulars einen Zeiger auf diese Schnittstelle abrufen.</span><span class="sxs-lookup"><span data-stu-id="9c4ad-125">Therefore, form viewers should expect a failed call to a form's [IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) method to obtain a pointer to this interface.</span></span> 
+<span data-ttu-id="9c4ad-124">Formular Servern mit einem Formular advise-Empfängerobjekt **IMAPIFormAdviseSink** implementieren, anstatt mit ihren Form-Objekt.</span><span class="sxs-lookup"><span data-stu-id="9c4ad-124">Form servers use a form advise sink object to implement **IMAPIFormAdviseSink** instead of including it with their form object.</span></span> <span data-ttu-id="9c4ad-125">Aus diesem Grund sollten Formular Viewer erwarten, einen Fehler beim Aufruf von [QueryInterface](http://msdn.microsoft.com/de-de/library/ms682521%28v=VS.85%29.aspx) -Methode des Formulars einen Zeiger auf diese Schnittstelle abrufen.</span><span class="sxs-lookup"><span data-stu-id="9c4ad-125">Therefore, form viewers should expect a failed call to a form's [IUnknown::QueryInterface](http://msdn.microsoft.com/de-de/library/ms682521%28v=VS.85%29.aspx) method to obtain a pointer to this interface.</span></span> 
   
 <span data-ttu-id="9c4ad-126">Formular Servern rufen Sie einen Viewer [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) -Methode für Benachrichtigungen registriert.</span><span class="sxs-lookup"><span data-stu-id="9c4ad-126">Form servers call a viewer's [IMAPIViewContext::SetAdviseSink](imapiviewcontext-setadvisesink.md) method to register for notifications.</span></span> <span data-ttu-id="9c4ad-127">Ein Zeiger auf ihre Implementierung **IMAPIFormAdviseSink** ist als Parameter enthalten.</span><span class="sxs-lookup"><span data-stu-id="9c4ad-127">A pointer to their **IMAPIFormAdviseSink** implementation is included as a parameter.</span></span> 
   

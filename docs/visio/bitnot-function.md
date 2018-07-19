@@ -30,7 +30,7 @@ ms.locfileid: "19796471"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="68f5e-114">_binäre Zahl_</span><span class="sxs-lookup"><span data-stu-id="68f5e-114">_binary number_</span></span> <br/> |<span data-ttu-id="68f5e-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="68f5e-115">Required</span></span>  <br/> |<span data-ttu-id="68f5e-116">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="68f5e-116">**Numeric**</span></span> <br/> |<span data-ttu-id="68f5e-117">Eine 16-Bit-Binärzahl.</span><span class="sxs-lookup"><span data-stu-id="68f5e-117">A 16-bit binary number.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="68f5e-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="68f5e-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="68f5e-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="68f5e-118">Return value</span></span>
 
 <span data-ttu-id="68f5e-119">16-bit Binary</span><span class="sxs-lookup"><span data-stu-id="68f5e-119">16-bit Binary</span></span>
   

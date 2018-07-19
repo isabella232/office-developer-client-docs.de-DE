@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0069c223-32bb-4286-b763-39fd45dc263b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0457007334ad8cc69dade3abd5859dd0d5f7af7f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT GetPropList(
   
 > <span data-ttu-id="12c06-114">[out] Ein Zeiger auf einen Zeiger auf die Eigenschaft Tag-Array, das für alle Eigenschaften des Objekts enthält.</span><span class="sxs-lookup"><span data-stu-id="12c06-114">[out] A pointer to a pointer to the property tag array that contains tags for all of the object's properties.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="12c06-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="12c06-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="12c06-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="12c06-115">Return value</span></span>
 
 <span data-ttu-id="12c06-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="12c06-116">S_OK</span></span> 
   

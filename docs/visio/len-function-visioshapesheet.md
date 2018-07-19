@@ -30,7 +30,7 @@ ms.locfileid: "19797312"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="09b9f-112">_text_</span><span class="sxs-lookup"><span data-stu-id="09b9f-112">_text_</span></span> <br/> |<span data-ttu-id="09b9f-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="09b9f-113">Required</span></span>  <br/> |<span data-ttu-id="09b9f-114">**String**</span><span class="sxs-lookup"><span data-stu-id="09b9f-114">**String**</span></span> <br/> |<span data-ttu-id="09b9f-115">Die Zeichenfolge, deren Länge ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="09b9f-115">The character string whose length you want to find.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="09b9f-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="09b9f-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="09b9f-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="09b9f-116">Return value</span></span>
 
 <span data-ttu-id="09b9f-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="09b9f-117">Numeric</span></span>
   

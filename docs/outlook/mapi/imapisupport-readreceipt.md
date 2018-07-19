@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef31b61a-93b6-4ae8-bc71-f5ef5caf43f4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 5e56fd8c053ff32bdeb7b243701c0330b378cdc0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ LPMESSAGE FAR * lppEmptyMessage
   
 > <span data-ttu-id="1e0af-116">[in, out] Eingabe _LppEmptyMessage_ zeigt auf einen Zeiger auf eine leere Nachricht.</span><span class="sxs-lookup"><span data-stu-id="1e0af-116">[in, out] On input,  _lppEmptyMessage_ points to a pointer to an empty message.</span></span> <span data-ttu-id="1e0af-117">Ausgabe _LppEmptyMessage_ zeigt auf einen Zeiger auf den Berichtnachricht.</span><span class="sxs-lookup"><span data-stu-id="1e0af-117">On output,  _lppEmptyMessage_ points to a pointer to the report message.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="1e0af-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1e0af-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1e0af-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1e0af-118">Return value</span></span>
 
 <span data-ttu-id="1e0af-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="1e0af-119">S_OK</span></span> 
   

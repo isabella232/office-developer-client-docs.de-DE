@@ -8,7 +8,7 @@ keywords:
 - XLLs [excel 2007], Anzeigen von Dialogfeldern aus Dialogfelder [Excel 2007], Anzeigen von aus einer DLL oder XLL DLLs [Excel 2007], Anzeigen von Dialogfeldern
 localization_priority: Normal
 ms.assetid: e77ac555-331d-41c8-a000-7b178959754d
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: afb21125bc54a2607a997c7b2f7c73ef2f528f28
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

@@ -24,7 +24,7 @@ ms.locfileid: "19797346"
 
 <span data-ttu-id="1a4dd-106">LISTSEP ()</span><span class="sxs-lookup"><span data-stu-id="1a4dd-106">LISTSEP ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="1a4dd-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1a4dd-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="1a4dd-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1a4dd-107">Return value</span></span>
 
 <span data-ttu-id="1a4dd-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="1a4dd-108">String</span></span>
   

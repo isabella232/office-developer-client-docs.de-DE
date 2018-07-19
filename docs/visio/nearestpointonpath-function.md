@@ -35,7 +35,7 @@ ms.locfileid: "19797535"
 | <span data-ttu-id="e1224-118">_x_</span><span class="sxs-lookup"><span data-stu-id="e1224-118">_x_</span></span> <br/> |<span data-ttu-id="e1224-119">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="e1224-119">Required</span></span>  <br/> |<span data-ttu-id="e1224-120">**Double**</span><span class="sxs-lookup"><span data-stu-id="e1224-120">**Double**</span></span> <br/> |<span data-ttu-id="e1224-121">Die _X_-Koordinate des angegebenen Punkts.</span><span class="sxs-lookup"><span data-stu-id="e1224-121">The  _x_-coordinate of the specified point.</span></span>  <br/> |
 | <span data-ttu-id="e1224-122">_y_</span><span class="sxs-lookup"><span data-stu-id="e1224-122">_y_</span></span> <br/> |<span data-ttu-id="e1224-123">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="e1224-123">Required</span></span>  <br/> |<span data-ttu-id="e1224-124">**Double**</span><span class="sxs-lookup"><span data-stu-id="e1224-124">**Double**</span></span> <br/> |<span data-ttu-id="e1224-125">Die _y_-Koordinate des angegebenen Punkts.</span><span class="sxs-lookup"><span data-stu-id="e1224-125">The  _y_-coordinate of the specified point.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="e1224-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e1224-126">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="e1224-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e1224-126">Return value</span></span>
 
  <span data-ttu-id="e1224-127">**Double**</span><span class="sxs-lookup"><span data-stu-id="e1224-127">**Double**</span></span>
   

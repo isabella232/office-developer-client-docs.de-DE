@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a39cf8d-df0f-493c-b272-f15c65b3f15e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9eeab1e1186aeb5a9b458facd59bd4cc155e8014
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -52,7 +52,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="da72d-117">Ermöglicht die Tabelle, um den Vorgang der Spalte Einstellung verschieben, bis die Daten tatsächlich erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="da72d-117">Permits the table to postpone the column setting operation until the data is actually required.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="da72d-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="da72d-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="da72d-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="da72d-118">Return value</span></span>
 
 <span data-ttu-id="da72d-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="da72d-119">S_OK</span></span> 
   

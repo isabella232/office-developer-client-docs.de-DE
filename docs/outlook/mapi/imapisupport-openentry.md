@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 84662230-6a25-4403-b87e-871427a40c6e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 04bf7f2ddda7377df72417df2472246a2cf329bf
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -76,7 +76,7 @@ LPUNKNOWN FAR * lppUnk
   
 > <span data-ttu-id="c35b7-131">[out] Ein Zeiger auf einen Zeiger auf das geöffnete Objekt.</span><span class="sxs-lookup"><span data-stu-id="c35b7-131">[out] A pointer to a pointer to the opened object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c35b7-132">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c35b7-132">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c35b7-132">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c35b7-132">Return value</span></span>
 
 <span data-ttu-id="c35b7-133">S_OK</span><span class="sxs-lookup"><span data-stu-id="c35b7-133">S_OK</span></span> 
   

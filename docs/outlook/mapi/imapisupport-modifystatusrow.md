@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a304ca8f-e404-4535-be76-0b673f2061a0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 24718c50d02da5d60a6594f56ea6100650fe9f1a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="696d4-115">Weist das MAPI zum Zusammenführen der Eigenschaften im Array auf den _LpColumnVals_ mit einer vorhandenen Tabelle Statuszeile, statt die Daten in eine neue Zeile enthalten.</span><span class="sxs-lookup"><span data-stu-id="696d4-115">Directs MAPI to merge the properties included in the array pointed to by  _lpColumnVals_ with an existing status table row, rather than in a new row.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="696d4-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="696d4-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="696d4-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="696d4-116">Return value</span></span>
 
 <span data-ttu-id="696d4-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="696d4-117">S_OK</span></span> 
   

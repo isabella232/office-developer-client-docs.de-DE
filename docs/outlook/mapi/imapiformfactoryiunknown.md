@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 637be364-c393-430a-84b3-2c96aa553c22
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 651ef6a7c1af70c75a85e13414c4fd7632d30290
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -46,7 +46,7 @@ ms.locfileid: "19792169"
    
 ## <a name="remarks"></a><span data-ttu-id="89eea-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="89eea-125">Remarks</span></span>
 
-<span data-ttu-id="89eea-126">Die Schnittstelle **IMAPIFormFactory** basiert auf der [IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx) -Schnittstelle und Objekte, die **IMAPIFormFactory** implementieren sollten auch von **IClassFactory**erben.</span><span class="sxs-lookup"><span data-stu-id="89eea-126">The **IMAPIFormFactory** interface is based on the [IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx) interface, and objects that implement **IMAPIFormFactory** should also inherit from **IClassFactory**.</span></span>
+<span data-ttu-id="89eea-126">Die Schnittstelle **IMAPIFormFactory** basiert auf der [IClassFactory](http://msdn.microsoft.com/de-de/library/ms694364%28VS.85%29.aspx) -Schnittstelle und Objekte, die **IMAPIFormFactory** implementieren sollten auch von **IClassFactory**erben.</span><span class="sxs-lookup"><span data-stu-id="89eea-126">The **IMAPIFormFactory** interface is based on the [IClassFactory](http://msdn.microsoft.com/de-de/library/ms694364%28VS.85%29.aspx) interface, and objects that implement **IMAPIFormFactory** should also inherit from **IClassFactory**.</span></span>
   
  <span data-ttu-id="89eea-127">**IMAPIFormFactory** ist die Schnittstelle, die Formular Viewer verwenden, um die neue Formularobjekte zu erstellen, wenn ein Formular Server mehr als eine Nachrichtenklasse unterstützt (d. h., mehrere Typ der Form-Objekt).</span><span class="sxs-lookup"><span data-stu-id="89eea-127">**IMAPIFormFactory** is the interface that form viewers use to create new form objects when a form server supports more than one message class (that is, more than one type of form object).</span></span> 
   

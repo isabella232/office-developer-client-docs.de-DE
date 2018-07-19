@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d48bd537-c562-4deb-8a4c-011208991054
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: abaf8f665ea7add92a34c2e4d6fcbf9d5fc08d3f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetFormManager(
   
 > <span data-ttu-id="fc34a-108">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Formular-Manager-Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="fc34a-108">[out] A pointer to a pointer to the returned form manager interface.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fc34a-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fc34a-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fc34a-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fc34a-109">Return value</span></span>
 
 <span data-ttu-id="fc34a-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="fc34a-110">S_OK</span></span> 
   

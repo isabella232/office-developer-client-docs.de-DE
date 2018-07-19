@@ -24,7 +24,7 @@ ms.locfileid: "19797577"
 
 <span data-ttu-id="98008-106">NOW ( )</span><span class="sxs-lookup"><span data-stu-id="98008-106">NOW ( )</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="98008-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="98008-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="98008-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="98008-107">Return value</span></span>
 
 <span data-ttu-id="98008-108">Datetime</span><span class="sxs-lookup"><span data-stu-id="98008-108">Datetime</span></span>
   

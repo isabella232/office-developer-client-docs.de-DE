@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 4dcdce72781669988a0cb15eb9b3a7cd73494bfb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ HrGetOneProp(
   
 > <span data-ttu-id="537ef-118">[out] Zeiger auf einen Zeiger auf die zurückgegebene [SPropValue](spropvalue.md) -Struktur, die den Wert der abgerufenen-Eigenschaft definiert.</span><span class="sxs-lookup"><span data-stu-id="537ef-118">[out] Pointer to a pointer to the returned [SPropValue](spropvalue.md) structure defining the retrieved property value.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="537ef-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="537ef-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="537ef-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="537ef-119">Return value</span></span>
 
 <span data-ttu-id="537ef-120">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="537ef-120">MAPI_E_NOT_FOUND</span></span> 
   

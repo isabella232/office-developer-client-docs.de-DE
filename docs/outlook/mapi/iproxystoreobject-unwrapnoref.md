@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1122b6e0-e7e1-e68a-e090-435777343d04
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 7c6c763e918947c423c5dae283b0d4ab2f880616
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -47,7 +47,7 @@ HRESULT IProxyStoreObject::UnwrapNoRef (     LPVOID *ppvObject );
 
 <span data-ttu-id="ccd1d-113">Ohne den ersten Entpacken einen IMAP-Speicher, kann den Zugriff auf eine Nachricht im Speicher eine Synchronisierung erzwingen, die versucht, laden Sie die gesamte Nachricht.</span><span class="sxs-lookup"><span data-stu-id="ccd1d-113">Without first unwrapping an IMAP store, accessing a message in the store can force a synchronization that attempts to download the entire message.</span></span> <span data-ttu-id="ccd1d-114">Ermöglicht den Zugriff auf die Nachricht im aktuellen Zustand ohne Auslösen der Download mit den allein stehenden Speicher.</span><span class="sxs-lookup"><span data-stu-id="ccd1d-114">Using the unwrapped store allows access to the message in its current state without triggering a download.</span></span>
   
-<span data-ttu-id="ccd1d-115">Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen.</span><span class="sxs-lookup"><span data-stu-id="ccd1d-115">Because **UnwrapNoRef** does not increment the reference count for this new pointer to the unwrapped store object, after successfully calling **UnwrapNoRef**, you should call [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) to maintain the reference count.</span></span> 
+<span data-ttu-id="ccd1d-115">Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen.</span><span class="sxs-lookup"><span data-stu-id="ccd1d-115">Because **UnwrapNoRef** does not increment the reference count for this new pointer to the unwrapped store object, after successfully calling **UnwrapNoRef**, you should call [IUnknown::AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28v=VS.85%29.aspx) to maintain the reference count.</span></span> 
   
 ## <a name="see-also"></a><span data-ttu-id="ccd1d-116">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ccd1d-116">See also</span></span>
 

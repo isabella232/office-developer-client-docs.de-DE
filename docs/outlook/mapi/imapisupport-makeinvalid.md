@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c630ecaf-b19c-4991-9779-e13cc492c755
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 595d5fdba28634b038838921102d3125135452a0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ ULONG cMethods
   
 > <span data-ttu-id="0ac51-115">[in] Die Anzahl der Methoden in der Vtable des Objekts.</span><span class="sxs-lookup"><span data-stu-id="0ac51-115">[in] The count of methods in the object's vtable.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0ac51-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0ac51-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0ac51-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0ac51-116">Return value</span></span>
 
 <span data-ttu-id="0ac51-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="0ac51-117">S_OK</span></span> 
   

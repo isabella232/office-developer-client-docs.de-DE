@@ -25,7 +25,7 @@ ms.locfileid: "19796319"
 - [<span data-ttu-id="dd4c6-108">VBA-Referenz für Publisher</span><span class="sxs-lookup"><span data-stu-id="dd4c6-108">Publisher VBA reference</span></span>](https://msdn.microsoft.com/de-DE/VBA/VBA-Publisher)
 
 - <span data-ttu-id="dd4c6-109">
-  [Publisher 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="dd4c6-109">[Publisher 2010](https://msdn.microsoft.com/en-us/library/office/ff604963(v=office.14).aspx)</span></span>
+  [Publisher 2010](https://msdn.microsoft.com/de-de/library/office/ff604963(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="dd4c6-109">[Publisher 2010](https://msdn.microsoft.com/de-de/library/office/ff604963(v=office.14).aspx)</span></span>
 
 
 ### <a name="office-add-ins"></a><span data-ttu-id="dd4c6-110">Office-Add-Ins</span><span class="sxs-lookup"><span data-stu-id="dd4c6-110">Office Add-ins</span></span> 

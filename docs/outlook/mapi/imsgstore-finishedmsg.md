@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9da9a13f87eac097fba078da1f1d6c3f78f69c0e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT FinishedMsg(
   
 > <span data-ttu-id="8b82c-113">[in] Ein Zeiger auf die Eintrags-ID der Nachricht verarbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="8b82c-113">[in] A pointer to the entry identifier of the message to be processed.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="8b82c-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8b82c-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8b82c-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8b82c-114">Return value</span></span>
 
 <span data-ttu-id="8b82c-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="8b82c-115">S_OK</span></span> 
   

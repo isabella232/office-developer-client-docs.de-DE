@@ -5,7 +5,7 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 775dc1b5fdcf40867f67fbab25879bd97de24f4a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -40,7 +40,7 @@ ms.locfileid: "19791669"
     |<span data-ttu-id="b733b-135">PDO_FT_SWITCH</span><span class="sxs-lookup"><span data-stu-id="b733b-135">PDO_FT_SWITCH</span></span>  <br/> |<span data-ttu-id="b733b-136">0 x 00000020</span><span class="sxs-lookup"><span data-stu-id="b733b-136">0x00000020</span></span>  <br/> |<span data-ttu-id="b733b-137">Dieses Feld ist vom Typ **Kombination aus** , und die Option zum **Anzeigen der ersten nicht leeren Feldes und Ignorieren nachfolgender Felder** im Dialogfeld **Formel Kombinationsfeld** ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="b733b-137">This field is of type **Combination** and has the **Showing only the first non-empty field, ignoring subsequent ones** option selected in the **Combination Formula Field** dialog box.</span></span>  <br/> |
     |<span data-ttu-id="b733b-138">PDO_PRINT_SAVEAS_DEF</span><span class="sxs-lookup"><span data-stu-id="b733b-138">PDO_PRINT_SAVEAS_DEF</span></span>  <br/> |<span data-ttu-id="b733b-139">0 x 00000040</span><span class="sxs-lookup"><span data-stu-id="b733b-139">0x00000040</span></span>  <br/> |<span data-ttu-id="b733b-140">Dieses Kennzeichen werden von Outlook nicht verwendet, aber es ist für alle benutzerdefinierten Felddefinitionen enthalten.</span><span class="sxs-lookup"><span data-stu-id="b733b-140">This flag is not used by Outlook, but it is included for all user-defined field definitions.</span></span>  <br/> |
    
-- <span data-ttu-id="b733b-141">VT: Wort (2 Bytes) der Datentyp des Felds, eine Konstante aus der [VARENUM](http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.varenum.aspx) -Aufzählung.</span><span class="sxs-lookup"><span data-stu-id="b733b-141">VT: WORD (2 bytes), the data type of the field, which is a constant from the [VARENUM](http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.varenum.aspx) enumeration.</span></span> 
+- <span data-ttu-id="b733b-141">VT: Wort (2 Bytes) der Datentyp des Felds, eine Konstante aus der [VARENUM](http://msdn.microsoft.com/de-de/library/system.runtime.interopservices.varenum.aspx) -Aufzählung.</span><span class="sxs-lookup"><span data-stu-id="b733b-141">VT: WORD (2 bytes), the data type of the field, which is a constant from the [VARENUM](http://msdn.microsoft.com/de-de/library/system.runtime.interopservices.varenum.aspx) enumeration.</span></span> 
     
 - <span data-ttu-id="b733b-142">DispId: DWORD-Wert (4 Bytes) der Versendung Bezeichner des Felds.</span><span class="sxs-lookup"><span data-stu-id="b733b-142">DispId: DWORD (4 bytes), the dispatch identifier of the field.</span></span> <span data-ttu-id="b733b-143">Für ein benutzerdefiniertes Feld ist der Wert 0.</span><span class="sxs-lookup"><span data-stu-id="b733b-143">For a user-defined field, the value is 0.</span></span>
     

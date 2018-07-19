@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b680f5a7-0df3-4e7b-bf3b-f149eb42be8d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c702e4063bf5e5a06a9e476a02172a780c7e326a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -66,7 +66,7 @@ HRESULT OpenAttach(
   
 > <span data-ttu-id="d71f5-126">[out] Zeiger auf einen Zeiger auf die Anlage öffnen.</span><span class="sxs-lookup"><span data-stu-id="d71f5-126">[out] Pointer to a pointer to the open attachment.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="d71f5-127">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d71f5-127">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d71f5-127">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d71f5-127">Return value</span></span>
 
 <span data-ttu-id="d71f5-128">S_OK</span><span class="sxs-lookup"><span data-stu-id="d71f5-128">S_OK</span></span> 
   

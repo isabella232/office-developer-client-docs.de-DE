@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: eb84c408-2d8b-453b-92f4-5fd8851b84ca
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 52fd844954f41d5d09b5e78f7c23ff6f7469bb43
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -101,7 +101,7 @@ HRESULT OpenTnefStreamEx(
   
 > <span data-ttu-id="1501f-155">[out] Zeiger auf das neue TNEF-Objekt.</span><span class="sxs-lookup"><span data-stu-id="1501f-155">[out] Pointer to the new TNEF object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1501f-156">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1501f-156">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1501f-156">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1501f-156">Return value</span></span>
 
 <span data-ttu-id="1501f-157">S_OK</span><span class="sxs-lookup"><span data-stu-id="1501f-157">S_OK</span></span> 
   

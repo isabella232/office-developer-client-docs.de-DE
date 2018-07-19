@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0a65d2b-a9b8-4477-a1c7-18c8478126f6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c79d9ebb5be1d8af6c9136514d8a2b695513f755
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -70,7 +70,7 @@ HRESULT HrAddColumnsEx(
   
 > <span data-ttu-id="15f83-125">[in] Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die enthält das Array von Eigenschaftentags bereits in der Tabelle, bevor Eigenschaften hinzugefügt oder an den Anfang verschoben werden.</span><span class="sxs-lookup"><span data-stu-id="15f83-125">[in] Pointer to an [SPropTagArray](sproptagarray.md) structure that contains the array of property tags already existing in the table before properties are added or moved to the beginning.</span></span> <span data-ttu-id="15f83-126">**HrAddColumnsEx** übergibt diese Zeiger als Parameter an den Callback-Funktion mit _LpfnFilterColumns_gezeigt.</span><span class="sxs-lookup"><span data-stu-id="15f83-126">**HrAddColumnsEx** passes this pointer as the parameter to the callback function pointed to by  _lpfnFilterColumns_.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="15f83-127">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="15f83-127">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="15f83-127">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="15f83-127">Return value</span></span>
 
 <span data-ttu-id="15f83-128">S_OK</span><span class="sxs-lookup"><span data-stu-id="15f83-128">S_OK</span></span> 
   

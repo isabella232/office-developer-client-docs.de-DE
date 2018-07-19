@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5308a94-5191-2109-a881-b4f4a7ff1c61
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f1a4834fc600cc93eeb7fc96563723326c7f2169
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -35,7 +35,7 @@ HRESULT IConverterSession::SetSaveFormat (
 
 <span data-ttu-id="09bf8-107">_mstSaveFormat_</span><span class="sxs-lookup"><span data-stu-id="09bf8-107">_mstSaveFormat_</span></span>
   
-> <span data-ttu-id="09bf8-108">[in] Das Speichern-format für einen MIME-Stream verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="09bf8-108">[in] The save format to be used for a MIME stream.</span></span> <span data-ttu-id="09bf8-109">Weitere Informationen finden Sie unter den Enumerationstyp [MIMESAVETYPE](http://msdn.microsoft.com/en-us/library/ms715128%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="09bf8-109">For more information, see the enum type [MIMESAVETYPE](http://msdn.microsoft.com/en-us/library/ms715128%28VS.85%29.aspx).</span></span>
+> <span data-ttu-id="09bf8-108">[in] Das Speichern-format für einen MIME-Stream verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="09bf8-108">[in] The save format to be used for a MIME stream.</span></span> <span data-ttu-id="09bf8-109">Weitere Informationen finden Sie unter den Enumerationstyp [MIMESAVETYPE](http://msdn.microsoft.com/de-de/library/ms715128%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="09bf8-109">For more information, see the enum type [MIMESAVETYPE](http://msdn.microsoft.com/de-de/library/ms715128%28VS.85%29.aspx).</span></span>
     
   - <span data-ttu-id="09bf8-110">**SAVE_RFC1521**: Verwendung MIME, was die Standardeinstellung ist.</span><span class="sxs-lookup"><span data-stu-id="09bf8-110">**SAVE_RFC1521**: Use MIME, which is the default.</span></span>      
   - <span data-ttu-id="09bf8-111">**SAVE_RFC822**: Uuencode verwenden.</span><span class="sxs-lookup"><span data-stu-id="09bf8-111">**SAVE_RFC822**: Use uuencode.</span></span>

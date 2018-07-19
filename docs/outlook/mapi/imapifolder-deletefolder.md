@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c3e883c-80c0-4eda-8f81-8277d933a74b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 15cf8ff7e282035ddff53565aa92e81e3886729c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -71,7 +71,7 @@ HRESULT DeleteFolder(
   
 > <span data-ttu-id="1915f-126">Eine Statusanzeige sollte angezeigt werden, während der Vorgang fortgesetzt wird.</span><span class="sxs-lookup"><span data-stu-id="1915f-126">A progress indicator should be displayed while the operation proceeds.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1915f-127">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1915f-127">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1915f-127">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1915f-127">Return value</span></span>
 
 <span data-ttu-id="1915f-128">S_OK</span><span class="sxs-lookup"><span data-stu-id="1915f-128">S_OK</span></span> 
   
@@ -101,7 +101,7 @@ HRESULT DeleteFolder(
 
 <span data-ttu-id="1915f-151">Diese Rückgabewerte unter folgenden Umständen zu erwarten.</span><span class="sxs-lookup"><span data-stu-id="1915f-151">Expect these return values under the following conditions.</span></span>
   
-|<span data-ttu-id="1915f-152">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="1915f-152">**Condition**</span></span>|<span data-ttu-id="1915f-153">**R�ckgabewert**</span><span class="sxs-lookup"><span data-stu-id="1915f-153">**Return value**</span></span>|
+|<span data-ttu-id="1915f-152">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="1915f-152">**Condition**</span></span>|<span data-ttu-id="1915f-153">**Rückgabewert**</span><span class="sxs-lookup"><span data-stu-id="1915f-153">**Return value**</span></span>|
 |:-----|:-----|
 |<span data-ttu-id="1915f-154">Jede Nachricht und Unterordner **DeleteFolder** wurde gelöscht.</span><span class="sxs-lookup"><span data-stu-id="1915f-154">**DeleteFolder** has successfully deleted every message and subfolder.</span></span>  <br/> |<span data-ttu-id="1915f-155">S_OK</span><span class="sxs-lookup"><span data-stu-id="1915f-155">S_OK</span></span>  <br/> |
 |<span data-ttu-id="1915f-156">**DeleteFolder** konnte jede Nachricht und Unterordner erfolgreich zu löschen.</span><span class="sxs-lookup"><span data-stu-id="1915f-156">**DeleteFolder** was unable to successfully delete every message and subfolder.</span></span>  <br/> |<span data-ttu-id="1915f-157">MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="1915f-157">MAPI_W_PARTIAL_COMPLETION or MAPI_E_NOT_FOUND</span></span>  <br/> |

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9830e09c-700f-469b-a54d-4e4e0583aa84
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3d67d71effde87711e3be9aca1b979627acda37d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT GetPAB(
   
 > <span data-ttu-id="700ad-110">[out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID des PAB.</span><span class="sxs-lookup"><span data-stu-id="700ad-110">[out] A pointer to a pointer to the entry identifier of the PAB.</span></span> <span data-ttu-id="700ad-111">Der Parameter _LppEntryID_ enthält 0 (null), wenn kein Container als PAB festgelegt wurde.</span><span class="sxs-lookup"><span data-stu-id="700ad-111">The  _lppEntryID_ parameter contains zero if no container has been designated as the PAB.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="700ad-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="700ad-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="700ad-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="700ad-112">Return value</span></span>
 
 <span data-ttu-id="700ad-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="700ad-113">S_OK</span></span> 
   

@@ -36,7 +36,7 @@ ms.locfileid: "19797050"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="a9bb0-117">_font_name_string_</span><span class="sxs-lookup"><span data-stu-id="a9bb0-117">_font_name_string_</span></span> <br/> |<span data-ttu-id="a9bb0-118">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="a9bb0-118">Required</span></span>  <br/> |<span data-ttu-id="a9bb0-119">**string**</span><span class="sxs-lookup"><span data-stu-id="a9bb0-119">**string**</span></span> <br/> |<span data-ttu-id="a9bb0-120">Der Name der Schriftart.</span><span class="sxs-lookup"><span data-stu-id="a9bb0-120">The name of the font.</span></span>  <br/> |
    
-## <a name="return-value"></a><span data-ttu-id="a9bb0-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a9bb0-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a9bb0-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a9bb0-121">Return value</span></span>
 
 <span data-ttu-id="a9bb0-122">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="a9bb0-122">Integer</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4aafb254-6074-4a7c-b915-d3d33304ac38
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 06590fe55cb02b1abf036156877fd308548436f7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ SCODE ScRelocProps(
   
 > <span data-ttu-id="118a8-122">[in, out] Optional Zeiger auf die Größe des durch den Parameter _PvBaseNew_ angegebenen Arrays in Bytes.</span><span class="sxs-lookup"><span data-stu-id="118a8-122">[in, out] Optional pointer to the size, in bytes, of the array indicated by the  _pvBaseNew_ parameter.</span></span> <span data-ttu-id="118a8-123">Wenn nicht NULL-Wert der _pcb_ -Parameter wird festgelegt, um die Anzahl von Bytes, die im Parameter _PvD_ gespeichert.</span><span class="sxs-lookup"><span data-stu-id="118a8-123">If not NULL, the  _pcb_ parameter is set to the number of bytes stored in the  _pvD_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="118a8-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="118a8-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="118a8-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="118a8-124">Return value</span></span>
 
 <span data-ttu-id="118a8-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="118a8-125">S_OK</span></span>
   

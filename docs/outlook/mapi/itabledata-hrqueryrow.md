@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 66ce8f36-2b2b-4a8e-b9b2-43782d8357a1
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 92540159386e6f37d93684aff037b235071010f7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT HrQueryRow(
   
 > <span data-ttu-id="98b70-113">[in, out] Auf Eingabe, ein gültiger Zeiger oder NULL der angibt, dass keine Informationen zurückgegeben werden soll.</span><span class="sxs-lookup"><span data-stu-id="98b70-113">[in, out] On input, a valid pointer or NULL, which indicates that no information needs to be returned.</span></span> <span data-ttu-id="98b70-114">Bei der Ausgabe zeigt, die ein gültiger Zeiger auf die Zeile Zeilennummer, eine fortlaufende Zahl, die die Zeilenposition in der Tabelle identifiziert.</span><span class="sxs-lookup"><span data-stu-id="98b70-114">On output, a valid pointer that points to the row's row number, a sequential number that identifies the row's position in the table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="98b70-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="98b70-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="98b70-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="98b70-115">Return value</span></span>
 
 <span data-ttu-id="98b70-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="98b70-116">S_OK</span></span> 
   

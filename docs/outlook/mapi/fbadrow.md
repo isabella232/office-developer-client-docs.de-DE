@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 205d00df-488d-4888-8782-a1f70f54d720
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c3025c353c71958a19303c5e79cec319a3bf8015
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG FBadRow(
   
 > <span data-ttu-id="f17b1-114">[in] Zeiger auf eine [SRow](srow.md) -Struktur, die die Zeile zu überprüfenden identifiziert.</span><span class="sxs-lookup"><span data-stu-id="f17b1-114">[in] Pointer to an [SRow](srow.md) structure identifying the row to be validated.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="f17b1-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f17b1-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f17b1-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f17b1-115">Return value</span></span>
 
 <span data-ttu-id="f17b1-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="f17b1-116">TRUE</span></span> 
   

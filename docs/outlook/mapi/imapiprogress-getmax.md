@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88a910ed-b55a-4e5b-a43d-eb3ea795a70e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: bbd52116a108be12df7697f45df41b03adeba68e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetMax(
   
 > <span data-ttu-id="68f82-108">[out] Ein Zeiger auf die maximale Anzahl von Elementen in den Vorgang.</span><span class="sxs-lookup"><span data-stu-id="68f82-108">[out] A pointer to the maximum number of items in the operation.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="68f82-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="68f82-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="68f82-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="68f82-109">Return value</span></span>
 
 <span data-ttu-id="68f82-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="68f82-110">S_OK</span></span> 
   

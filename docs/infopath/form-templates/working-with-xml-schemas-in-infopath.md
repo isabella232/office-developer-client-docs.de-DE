@@ -535,5 +535,5 @@ xml version="1.0" encoding="UTF-8"
 - [<span data-ttu-id="8184b-303">W3C XML-Schemareferenz Strukturen</span><span class="sxs-lookup"><span data-stu-id="8184b-303">W3C XML Schema Structures Reference</span></span>](http://www.xml.com/pub/a/2000/11/29/schemas/structuresref.mdl)
 - [<span data-ttu-id="8184b-304">W3C XML-Schemareferenz für Datentypen</span><span class="sxs-lookup"><span data-stu-id="8184b-304">W3C XML Schema Datatypes Reference</span></span>](http://www.xml.com/pub/a/2000/11/29/schemas/dataref.mdl)
 - [<span data-ttu-id="8184b-305">XML-Schema-Lernprogramm</span><span class="sxs-lookup"><span data-stu-id="8184b-305">XML Schema Tutorial</span></span>](http://www.w3schools.com/schema/default.asp)
-- [<span data-ttu-id="8184b-306">XML Developer Center</span><span class="sxs-lookup"><span data-stu-id="8184b-306">XML Developer Center</span></span>](http://msdn.microsoft.com/en-us/xml/default.aspx)
+- [<span data-ttu-id="8184b-306">XML Developer Center</span><span class="sxs-lookup"><span data-stu-id="8184b-306">XML Developer Center</span></span>](http://msdn.microsoft.com/de-de/xml/default.aspx)
 

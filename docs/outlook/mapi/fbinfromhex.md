@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 47e6c576-bd99-4410-8e41-7dd3159b23b7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 64d205ee7f51c0ce6a6eb1e982659c6cda675f8e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ BOOL FBinFromHex(
   
 > <span data-ttu-id="89c8c-118">[out] Zeiger auf das zurückgegebene binäre Zahl.</span><span class="sxs-lookup"><span data-stu-id="89c8c-118">[out] Pointer to the returned binary number.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="89c8c-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="89c8c-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="89c8c-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="89c8c-119">Return value</span></span>
 
 <span data-ttu-id="89c8c-120">TRUE</span><span class="sxs-lookup"><span data-stu-id="89c8c-120">TRUE</span></span> 
   

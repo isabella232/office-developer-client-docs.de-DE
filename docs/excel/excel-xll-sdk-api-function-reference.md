@@ -10,7 +10,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2f6df879-7546-4ac0-a4e3-6b009aee9463
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 2bb0a57ebcae618c8e921135b2bd4c50e8adf751
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

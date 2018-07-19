@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3efa4731-cf32-4a6c-9ba8-d059e58b0d98
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a2ec6def319b1f4686a61e9f97a936bfeba0d410
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -67,7 +67,7 @@ HRESULT GetNamesFromIDs(
   
 > <span data-ttu-id="6a094-124">[out] Ein Zeiger auf ein Array von Zeigern für [MAPINAMEID](mapinameid.md) Strukturen, Eigenschaftennamen enthält.</span><span class="sxs-lookup"><span data-stu-id="6a094-124">[out] A pointer to an array of pointers to [MAPINAMEID](mapinameid.md) structures that contains property names.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="6a094-125">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6a094-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6a094-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6a094-125">Return value</span></span>
 
 <span data-ttu-id="6a094-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="6a094-126">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4a67faa2-8c2e-49a7-8c92-690a0a65c8f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5be5cd7c352201159c0257861c0072b56da65082
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ UINT UFromSz(
   
 > <span data-ttu-id="73cd6-114">[in] Zeiger auf die Null-Zeichenfolge konvertiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="73cd6-114">[in] Pointer to the null-terminated string to be converted.</span></span> <span data-ttu-id="73cd6-115">Der Parameter _Lpsz_ muss 65536 Zeichen nicht überschreiten.</span><span class="sxs-lookup"><span data-stu-id="73cd6-115">The  _lpsz_ parameter must not exceed 65536 characters.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="73cd6-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="73cd6-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="73cd6-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="73cd6-116">Return value</span></span>
 
  <span data-ttu-id="73cd6-117">**UFromSz** gibt eine Ganzzahl ohne Vorzeichen zurück.</span><span class="sxs-lookup"><span data-stu-id="73cd6-117">**UFromSz** returns an unsigned integer.</span></span> <span data-ttu-id="73cd6-118">Wenn die Zeichenfolge nicht mit mindestens eine Dezimalzahl beginnt, wird 0 (null) zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="73cd6-118">If the string does not begin with at least one decimal digit, zero is returned.</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 784b6218-548d-817a-caaa-cf9be6bc3d2f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 53fa6bd49190bb88daeb0438dc0112e34322383e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT COfflineObj::Advise(
   
 > <span data-ttu-id="b2adf-114">[out] Ein Advise-Token an den Clientaufrufer für anschließend stornieren Rückruf für das Objekt zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="b2adf-114">[out] An advise token returned to the client caller for subsequently canceling callback for the object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b2adf-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b2adf-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b2adf-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b2adf-115">Return value</span></span>
 
 <span data-ttu-id="b2adf-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="b2adf-116">S_OK</span></span>
   

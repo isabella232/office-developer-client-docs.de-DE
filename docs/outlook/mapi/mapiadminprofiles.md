@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 82a9e379-39e4-4257-8cba-a6758f431cdc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3cd1a19b23a3c4d3ff8a297881eb2b959585eb17
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ HRESULT MAPIAdminProfiles(
   
 > <span data-ttu-id="cc136-116">[out] Zeiger auf einen Zeiger auf das neue Profil Administration-Objekt.</span><span class="sxs-lookup"><span data-stu-id="cc136-116">[out] Pointer to a pointer to the new profile administration object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="cc136-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="cc136-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cc136-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="cc136-117">Return value</span></span>
 
 <span data-ttu-id="cc136-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="cc136-118">S_OK</span></span> 
   

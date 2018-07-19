@@ -11,7 +11,7 @@ keywords:
 - tempstr12-Funktion [excel 2007], TempStrConst-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: faf4ee4e-8d33-4cb3-ae16-5648a837ee4f
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 321c41aa87a3bfa0edc1d77ecc8fbe4b6a6a4730
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -36,7 +36,7 @@ LPXLOPER12 TempStr12(const XCHAR* lpstr);
   
 <span data-ttu-id="528ba-111">Ein Zeiger auf die mit Null endende Quellzeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="528ba-111">A pointer to the null-terminated source string.</span></span> <span data-ttu-id="528ba-112">Im Fall von **XLOPER**s schneidet TempStrConst Zeichenfolgen, die länger als 255 Byte sind.</span><span class="sxs-lookup"><span data-stu-id="528ba-112">In the case of **XLOPER**s, TempStrConst truncates strings that are longer than 255 bytes.</span></span> <span data-ttu-id="528ba-113">Im Fall von **XLOPER12**s schneidet TempStr12Const Zeichenfolgen, die länger als 32.767 Unicode-Zeichen sind.</span><span class="sxs-lookup"><span data-stu-id="528ba-113">In the case of **XLOPER12**s, TempStr12Const truncates strings that are longer than 32,767 Unicode characters.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="528ba-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="528ba-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="528ba-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="528ba-114">Return value</span></span>
 
 <span data-ttu-id="528ba-115">Gibt eine **XltypeStr** -Zeichenfolge, die eine Kopie des Puffers übergebene Zeichenfolge enthält.</span><span class="sxs-lookup"><span data-stu-id="528ba-115">Returns an **xltypeStr** string containing a copy of the passed-in string buffer.</span></span> 
   

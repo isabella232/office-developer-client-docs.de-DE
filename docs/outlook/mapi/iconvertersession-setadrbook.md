@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d276ab19-17f4-01c7-4b44-b578e631b5fe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e6880a32e30b8f208ce5ba0a2d30e635ff464461
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -38,7 +38,7 @@ LPADRBOOK pab);
   
 > <span data-ttu-id="3c461-108">[in] Zeiger auf eine [IAddrBook: IMAPIProp](iaddrbookimapiprop.md) Schnittstelle in der MAPI in MIME-Konvertierung verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="3c461-108">[in] Pointer to an [IAddrBook : IMAPIProp](iaddrbookimapiprop.md) interface to be used in the MAPI to MIME conversion.</span></span> <span data-ttu-id="3c461-109">Legen Sie diesen Parameter auf **null festgelegt** , wenn Sie nicht mehr im Adressbuch benötigen; Dies gibt die Schnittstelle und setzt den Konverter auf beliebiges Adressbuch nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="3c461-109">Set this parameter to **null** when you no longer need the Address Book; this releases the interface and resets the converter to not using any Address Book.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="3c461-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3c461-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3c461-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3c461-110">Return value</span></span>
 
 <span data-ttu-id="3c461-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="3c461-111">S_OK</span></span>
   

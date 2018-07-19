@@ -30,7 +30,7 @@ ms.locfileid: "19796530"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="ddfe2-116">_expression_</span><span class="sxs-lookup"><span data-stu-id="ddfe2-116">_expression_</span></span> <br/> |<span data-ttu-id="ddfe2-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="ddfe2-117">Required</span></span>  <br/> |<span data-ttu-id="ddfe2-118">**String**</span><span class="sxs-lookup"><span data-stu-id="ddfe2-118">**String**</span></span> <br/> |<span data-ttu-id="ddfe2-119">Ein Index einer Farbe aus der Farbtabelle des Dokuments, ein Ausdruck, der zu einer benutzerdefinierten Farbe (wie RGB oder HSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.</span><span class="sxs-lookup"><span data-stu-id="ddfe2-119">An index of a color in the document's color table, an expression that resolves to a custom color (like RGB or HSL), or a reference to a cell that contains a color index or color result.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="ddfe2-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ddfe2-120">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="ddfe2-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ddfe2-120">Return value</span></span>
 
 <span data-ttu-id="ddfe2-121">Integer</span><span class="sxs-lookup"><span data-stu-id="ddfe2-121">Integer</span></span>
   

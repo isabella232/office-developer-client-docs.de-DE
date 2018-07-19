@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 32676003-ba32-886f-1185-4760cb0e30e3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3c064301a18a8adbfb6109170ed16cb6981d96c2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ DWORD STDAPICALLTYPE FixMAPI(void);
 
 <span data-ttu-id="901e2-114">Wenn die Funktion erfolgreich ist, ist der Rückgabewert ein Wert ungleich NULL.</span><span class="sxs-lookup"><span data-stu-id="901e2-114">If the function succeeds, the return value is a non-zero value.</span></span>
   
-<span data-ttu-id="901e2-115">Wenn die Funktion fehlschlägt, ist der Rückgabewert 0 (null).</span><span class="sxs-lookup"><span data-stu-id="901e2-115">If the function fails, the return value is zero.</span></span> <span data-ttu-id="901e2-116">Wenn Sie erweiterte Fehlerinformationen erhalten möchten, rufen Sie die Microsoft Windows Software Development Kit (SDK)-Funktion, **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)**.</span><span class="sxs-lookup"><span data-stu-id="901e2-116">To get extended error information, call the Microsoft Windows Software Development Kit (SDK) function, **[GetLastError](http://msdn.microsoft.com/en-us/library/ms679360.aspx)**.</span></span> 
+<span data-ttu-id="901e2-115">Wenn die Funktion fehlschlägt, ist der Rückgabewert 0 (null).</span><span class="sxs-lookup"><span data-stu-id="901e2-115">If the function fails, the return value is zero.</span></span> <span data-ttu-id="901e2-116">Wenn Sie erweiterte Fehlerinformationen erhalten möchten, rufen Sie die Microsoft Windows Software Development Kit (SDK)-Funktion, **[GetLastError](http://msdn.microsoft.com/de-de/library/ms679360.aspx)**.</span><span class="sxs-lookup"><span data-stu-id="901e2-116">To get extended error information, call the Microsoft Windows Software Development Kit (SDK) function, **[GetLastError](http://msdn.microsoft.com/de-de/library/ms679360.aspx)**.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="901e2-117">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="901e2-117">Remarks</span></span>
 

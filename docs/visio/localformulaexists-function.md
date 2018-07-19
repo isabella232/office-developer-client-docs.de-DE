@@ -30,7 +30,7 @@ ms.locfileid: "19797368"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="dfc44-112">_CellRef_</span><span class="sxs-lookup"><span data-stu-id="dfc44-112">_cellref_</span></span> <br/> |<span data-ttu-id="dfc44-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="dfc44-113">Required</span></span>  <br/> |<span data-ttu-id="dfc44-114">**String**</span><span class="sxs-lookup"><span data-stu-id="dfc44-114">**String**</span></span> <br/> | <span data-ttu-id="dfc44-115">Die Zelle, die auf das Vorhandensein einer Formel überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="dfc44-115">The cell that you want to check for the presence of a formula.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="dfc44-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dfc44-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="dfc44-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dfc44-116">Return value</span></span>
 
 <span data-ttu-id="dfc44-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="dfc44-117">Boolean</span></span>
   

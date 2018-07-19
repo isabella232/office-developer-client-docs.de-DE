@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: cee1a940-fe01-d364-5d7c-c9e9dfeb8979
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ac6584819b5dfa96a5f7816f1d77b89323e3eaf8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -81,7 +81,7 @@ typedef HRESULT (STDMETHODCALLTYPE HROPENOFFLINEOBJ)(
 
 <span data-ttu-id="eea5b-135">Dies ist der erste Aufruf, den ein Client sendet, wenn der Client über Änderungen Zustand Verbindung für ein bestimmtes Profil benachrichtigt werden möchte.</span><span class="sxs-lookup"><span data-stu-id="eea5b-135">This is the first call that a client makes when the client wants to be notified of any connection state changes for a given profile.</span></span> <span data-ttu-id="eea5b-136">Beim Aufrufen **HrOpenOfflineObj**, erhält der Client eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt.</span><span class="sxs-lookup"><span data-stu-id="eea5b-136">Upon calling **HrOpenOfflineObj**, the client obtains an offline object that supports **IMAPIOfflineMgr**.</span></span> <span data-ttu-id="eea5b-137">Der Client kann prüfen, ob die Arten von Rückrufe (mithilfe von [IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)) durch das Objekt unterstützt, und klicken Sie dann eingerichtet Rückrufe (mithilfe von [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)).</span><span class="sxs-lookup"><span data-stu-id="eea5b-137">The client can check for the kinds of callbacks supported by the object (by using [IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)), and then set up callbacks for it (by using [IMAPIOfflineMgr::Advise](imapiofflinemgr-advise.md)).</span></span>
   
-<span data-ttu-id="eea5b-138">Wenn [GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx) für die Adresse des dieser Funktion in msmapi32.dll suchen, geben Sie **HrOpenOfflineObj@20** als den Namen der Prozedur.</span><span class="sxs-lookup"><span data-stu-id="eea5b-138">When using [GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx) to look for the address of this function in msmapi32.dll, specify **HrOpenOfflineObj@20** as the procedure name.</span></span> 
+<span data-ttu-id="eea5b-138">Wenn [GetProcAddress](http://msdn.microsoft.com/de-de/library/ms683212.aspx) für die Adresse des dieser Funktion in msmapi32.dll suchen, geben Sie **HrOpenOfflineObj@20** als den Namen der Prozedur.</span><span class="sxs-lookup"><span data-stu-id="eea5b-138">When using [GetProcAddress](http://msdn.microsoft.com/de-de/library/ms683212.aspx) to look for the address of this function in msmapi32.dll, specify **HrOpenOfflineObj@20** as the procedure name.</span></span> 
   
  <span data-ttu-id="eea5b-139">**HrOpenOfflineObj** funktioniert nur für Clients, die MAPI-Anbieter, COM-Add-Ins und Exchange-Clienterweiterungen innerhalb des Outlook ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="eea5b-139">**HrOpenOfflineObj** only works for clients that are MAPI providers, COM Add-Ins, and Exchange Client Extensions running inside the Outlook process.</span></span> <span data-ttu-id="eea5b-140">Andernfalls **HrOpenOfflineObj** **MAPI_E_NOT_FOUND**.</span><span class="sxs-lookup"><span data-stu-id="eea5b-140">Otherwise, **HrOpenOfflineObj** returns **MAPI_E_NOT_FOUND**.</span></span> 
   

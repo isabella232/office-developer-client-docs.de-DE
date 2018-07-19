@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9b897cbc-90b2-4c60-b5f1-dc78e7e7952d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: fc6c12d914e581c3f975e94809f0bdea73020099
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG UlAddRef(
   
 > <span data-ttu-id="29f9c-114">[in] Zeiger auf eine Schnittstelle abgeleitet die **IUnknown** -Schnittstelle, mit anderen Worten alle MAPI-Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="29f9c-114">[in] Pointer to an interface derived from the **IUnknown** interface, in other words any MAPI interface.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="29f9c-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="29f9c-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="29f9c-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="29f9c-115">Return value</span></span>
 
 <span data-ttu-id="29f9c-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="29f9c-116">S_OK</span></span> 
   

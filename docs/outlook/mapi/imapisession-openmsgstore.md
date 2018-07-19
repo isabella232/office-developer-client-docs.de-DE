@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f73b5cf-7093-42e9-8acc-63d73df77cf5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 983c22772acfea7837e85d409b7928a35aed91ce
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -76,7 +76,7 @@ HRESULT OpenMsgStore(
   
 > <span data-ttu-id="d970f-136">[out] Zeiger auf einen Zeiger des Nachrichtenspeichers.</span><span class="sxs-lookup"><span data-stu-id="d970f-136">[out] Pointer to a pointer of the message store.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="d970f-137">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d970f-137">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d970f-137">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d970f-137">Return value</span></span>
 
 <span data-ttu-id="d970f-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="d970f-138">S_OK</span></span> 
   

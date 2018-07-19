@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4bb65c2a-9926-42da-9161-47836e8de40a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 2bded946a1fc7d7ab181d3953defa24e247c003c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT DoSentMail(
   
 > <span data-ttu-id="b0b34-110">[in] Ein Zeiger auf die ge�ffneten Nachricht f�r die eine Nachricht im Ordner speichern gesendete Elemente vorgesehen generiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="b0b34-110">[in] A pointer to the open message for which a message should be generated in the folder designated to hold sent items.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b0b34-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b0b34-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b0b34-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b0b34-111">Return value</span></span>
 
 <span data-ttu-id="b0b34-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="b0b34-112">S_OK</span></span> 
   

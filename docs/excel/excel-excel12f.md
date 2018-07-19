@@ -10,7 +10,7 @@ keywords:
 - Excel-Funktion [excel 2007], Excel12f-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 4e6a9ccc-988d-42a9-8874-01f2ee29b835
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 56034984852713496465c3d1f79a9989fc47df1c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -51,7 +51,7 @@ LPXLOPER12 argument1, ...);
   
 <span data-ttu-id="b679f-126">Die optionalen Argumente an die Funktion.</span><span class="sxs-lookup"><span data-stu-id="b679f-126">The optional arguments to the function.</span></span> <span data-ttu-id="b679f-127">Alle Argumente müssen Zeiger auf **XLOPER**s im Fall von **Excel**oder **XLOPER12**s im Fall von **Excel12f**sein.</span><span class="sxs-lookup"><span data-stu-id="b679f-127">All arguments must be pointers to **XLOPER**s in the case of **Excel**, or **XLOPER12**s in the case of **Excel12f**.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="b679f-128">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b679f-128">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b679f-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b679f-128">Return value</span></span>
 
 <span data-ttu-id="b679f-129">Beide Funktionen zurückgegeben derselbe Fehler und Erfolgscodes als **Excel4**, **Excel4v**, **Excel12**und **Excel12v**.</span><span class="sxs-lookup"><span data-stu-id="b679f-129">Both functions return the same error and success codes as **Excel4**, **Excel4v**, **Excel12**, and **Excel12v**.</span></span> <span data-ttu-id="b679f-130">Eine vollständige Beschreibung dieser Codes finden Sie unter [Excel4/Excel12](excel4-excel12.md) .</span><span class="sxs-lookup"><span data-stu-id="b679f-130">See [Excel4/Excel12](excel4-excel12.md) for a full description of these codes.</span></span> <span data-ttu-id="b679f-131">Darüber hinaus Rückgabewerte diese Funktionen Framework **xlretFailed zurück** , ohne einen Aufruf der C-API, wenn ein NULL-Zeiger auf einen Parameter erkannt wird.</span><span class="sxs-lookup"><span data-stu-id="b679f-131">In addition, these Framework functions return **xlretFailed** without calling the C API if a NULL pointer to a parameter is detected.</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 143bd3c6-5a55-4122-8522-9c48473aa781
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d1503aaa5bddd23a90035219901e1dc232dbd026
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG FBadPropTag(
   
 > <span data-ttu-id="93a16-114">[in] Die Eigenschaftentag überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="93a16-114">[in] The property tag to be validated.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="93a16-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="93a16-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="93a16-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="93a16-115">Return value</span></span>
 
 <span data-ttu-id="93a16-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="93a16-116">TRUE</span></span> 
   

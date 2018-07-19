@@ -8,7 +8,7 @@ keywords:
 - Arbeitsspeicher XLOPER12 [excel 2007], Verwalten von Arbeitsspeicher in Excel, Excel-Stapel Zeichenfolgen [Excel 2007], Verwalten von Arbeitsspeicher, Speicherverwaltung in Excel XLOPER Speicher [Excel 2007], Speicher [Excel 2007], Richtlinien für die Verwaltung
 localization_priority: Normal
 ms.assetid: 3bf5195b-6235-43cf-8795-0c7b0a63a095
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 97c76d762fdc5e575c571804816e5581a7bec8bb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

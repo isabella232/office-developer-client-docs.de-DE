@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c3e3cfaa-9c4a-482a-9411-9c4ab01d312f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 9905a4e972f0e599629aac74b6fbc8bae06c93b0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -64,7 +64,7 @@ HRESULT CompareStoreIDs(
   
 > <span data-ttu-id="ede93-118">[out] Ein Zeiger auf das zurückgegebene Ergebnis des Vergleichs.</span><span class="sxs-lookup"><span data-stu-id="ede93-118">[out] A pointer to the returned result of the comparison.</span></span> <span data-ttu-id="ede93-119">True, wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. andernfalls, FALSE.</span><span class="sxs-lookup"><span data-stu-id="ede93-119">TRUE if the two entry identifiers refer to the same object; otherwise, FALSE.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="ede93-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ede93-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ede93-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ede93-120">Return value</span></span>
 
 <span data-ttu-id="ede93-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="ede93-121">S_OK</span></span> 
   

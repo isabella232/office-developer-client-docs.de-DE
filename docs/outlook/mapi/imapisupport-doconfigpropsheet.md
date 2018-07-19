@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3899c49c-a0ec-4dca-92e8-e801cd4908cf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 06341f897a7865c09a565db67bb409fc9f49f8da
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -64,7 +64,7 @@ HRESULT DoConfigPropsheet(
   
 > <span data-ttu-id="1ce30-118">[in] Ein nullbasierter Index der oberen Standardseite des Eigenschaftenblatts.</span><span class="sxs-lookup"><span data-stu-id="1ce30-118">[in] A zero-based index to the default top page of the property sheet.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1ce30-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1ce30-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1ce30-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1ce30-119">Return value</span></span>
 
 <span data-ttu-id="1ce30-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="1ce30-120">S_OK</span></span> 
   

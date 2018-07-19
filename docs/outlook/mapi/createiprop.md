@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9bf68814-2564-433d-b762-3d2c83ca3c60
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 906dc4a24b994e079a977808c3f501aaaea9d84f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -70,7 +70,7 @@ SCODE CreateIProp(
   
 > <span data-ttu-id="e41a7-126">[out] Zeiger auf einen Zeiger auf das zurückgegebene Daten Eigenschaftenobjekt.</span><span class="sxs-lookup"><span data-stu-id="e41a7-126">[out] Pointer to a pointer to the returned property data object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e41a7-127">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e41a7-127">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e41a7-127">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e41a7-127">Return value</span></span>
 
 <span data-ttu-id="e41a7-128">S_OK</span><span class="sxs-lookup"><span data-stu-id="e41a7-128">S_OK</span></span> 
   

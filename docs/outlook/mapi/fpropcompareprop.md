@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17cb53c4-7154-4a4e-b4ec-de720fa055cb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 69bbed644a8173bf9291ca48a63960f693108318
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ BOOL FPropCompareProp(
   
 > <span data-ttu-id="bc196-119">[in] Zeiger auf eine **SPropValue** -Struktur für den Vergleich den zweiten Eigenschaftswert definieren.</span><span class="sxs-lookup"><span data-stu-id="bc196-119">[in] Pointer to an **SPropValue** structure defining the second property value for comparison.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="bc196-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="bc196-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="bc196-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="bc196-120">Return value</span></span>
 
 <span data-ttu-id="bc196-121">TRUE</span><span class="sxs-lookup"><span data-stu-id="bc196-121">TRUE</span></span> 
   

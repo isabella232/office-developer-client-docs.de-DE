@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: df02bdc5-903a-4ce2-9f43-5f4513ea19b3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 64031725e06a949464e7bfabb0a2f114d325470e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ HRESULT OpenFormContainer(
   
 > <span data-ttu-id="0251f-123">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Form Container-Objekt.</span><span class="sxs-lookup"><span data-stu-id="0251f-123">[out] A pointer to a pointer to the returned form container object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="0251f-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0251f-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0251f-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0251f-124">Return value</span></span>
 
 <span data-ttu-id="0251f-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="0251f-125">S_OK</span></span> 
   
@@ -81,7 +81,7 @@ HRESULT OpenFormContainer(
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="0251f-132">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="0251f-132">Notes to callers</span></span>
 
-<span data-ttu-id="0251f-133">Wenn der Wert in _Hfrmreg_ HFRMREG_FOLDER ist, der Schnittstellenbezeichner in _Lpunk_ verwendet muss ungleich **null** sein und muss [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) -Methode Anrufe an eine Schnittstelle [IMAPIFolder](imapifolderimapicontainer.md) zulassen.</span><span class="sxs-lookup"><span data-stu-id="0251f-133">If the value in  _hfrmreg_ is HFRMREG_FOLDER, the interface identifier used in  _lpunk_ must be non- **null** and must allow [IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) method calls to an [IMAPIFolder](imapifolderimapicontainer.md) interface.</span></span> 
+<span data-ttu-id="0251f-133">Wenn der Wert in _Hfrmreg_ HFRMREG_FOLDER ist, der Schnittstellenbezeichner in _Lpunk_ verwendet muss ungleich **null** sein und muss [QueryInterface](http://msdn.microsoft.com/de-de/library/ms682521%28v=VS.85%29.aspx) -Methode Anrufe an eine Schnittstelle [IMAPIFolder](imapifolderimapicontainer.md) zulassen.</span><span class="sxs-lookup"><span data-stu-id="0251f-133">If the value in  _hfrmreg_ is HFRMREG_FOLDER, the interface identifier used in  _lpunk_ must be non- **null** and must allow [IUnknown::QueryInterface](http://msdn.microsoft.com/de-de/library/ms682521%28v=VS.85%29.aspx) method calls to an [IMAPIFolder](imapifolderimapicontainer.md) interface.</span></span> 
   
 <span data-ttu-id="0251f-134">Um den Container lokale Formular zu öffnen, müssen Sie einen Anruf an **OpenFormContainer** -Methode oder die [MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md) -Funktion verwenden. Sie können nicht die [IMAPIFormMgr::SelectFormContainer](imapiformmgr-selectformcontainer.md) -Methode verwenden, um die Benutzer auswählen den Container lokale Formular aktivieren.</span><span class="sxs-lookup"><span data-stu-id="0251f-134">To open the local form container, you must use a call to **OpenFormContainer** method or the [MAPIOpenLocalFormContainer](mapiopenlocalformcontainer.md) function; you cannot use the [IMAPIFormMgr::SelectFormContainer](imapiformmgr-selectformcontainer.md) method to enable the user to select the local form container.</span></span> 
   

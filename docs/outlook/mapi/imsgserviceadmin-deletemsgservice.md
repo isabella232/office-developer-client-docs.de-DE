@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3a6b34eb-9d46-488f-8d02-91b27c35de67
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0a3021ed386aa00777694452a755693fc4078093
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT DeleteMsgService(
   
 > <span data-ttu-id="42f6e-108">[in] Ein Zeiger auf die [MAPIUID](mapiuid.md) -Struktur, die den eindeutigen Bezeichner für den zu löschenden Nachrichtendienst enthält.</span><span class="sxs-lookup"><span data-stu-id="42f6e-108">[in] A pointer to the [MAPIUID](mapiuid.md) structure that contains the unique identifier for the message service to delete.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="42f6e-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="42f6e-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="42f6e-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="42f6e-109">Return value</span></span>
 
 <span data-ttu-id="42f6e-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="42f6e-110">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2acf0036-2f3e-4f90-8614-7aa667860f74
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a1a96cdb3aed03b9621097f1ef858a09391c0693
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "19793869"
   
 <span data-ttu-id="422fc-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="422fc-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="422fc-105">Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx) ist die beschreibt die Zeitzone für die Start- und Endzeit Tageszeit in einer Terminserie für einen Termin oder eine Besprechungsanfrage verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="422fc-105">Contains a stream that maps to the persisted format of a [TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx) structure, which describes the time zone to be used for the start and end time of a recurring appointment or meeting request.</span></span> 
+<span data-ttu-id="422fc-105">Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZREG](http://msdn.microsoft.com/de-de/library/bb820983%28v=office.12%29.aspx) ist die beschreibt die Zeitzone für die Start- und Endzeit Tageszeit in einer Terminserie für einen Termin oder eine Besprechungsanfrage verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="422fc-105">Contains a stream that maps to the persisted format of a [TZREG](http://msdn.microsoft.com/de-de/library/bb820983%28v=office.12%29.aspx) structure, which describes the time zone to be used for the start and end time of a recurring appointment or meeting request.</span></span> 
   
 |||
 |:-----|:-----|

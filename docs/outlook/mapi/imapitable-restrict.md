@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a5bfc190-b58f-44c3-893c-8727df14ee58
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3ab069728f872d82246e8925c5ad35c07f41f02e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -52,7 +52,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="e3130-116">Bewertung des Filters verzögert, bis die Daten in der Tabelle erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="e3130-116">Defers evaluation of the filter until the data in the table is required.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e3130-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e3130-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e3130-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e3130-117">Return value</span></span>
 
 <span data-ttu-id="e3130-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="e3130-118">S_OK</span></span> 
   

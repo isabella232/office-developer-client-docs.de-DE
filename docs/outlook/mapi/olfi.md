@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 44bfaadf-36f9-bd8e-6158-646533f6849e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: ff23472254df2bd9d2195c7cf2c4258b856ec430
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -69,7 +69,7 @@ typedef struct {
     
 ## <a name="remarks"></a><span data-ttu-id="e4b11-126">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e4b11-126">Remarks</span></span>
 
-<span data-ttu-id="e4b11-127">Eine Eintrags-ID ist eine 4-Byte-MAPI-Eintrags-ID für einen Ordner oder eine Nachricht.</span><span class="sxs-lookup"><span data-stu-id="e4b11-127">An Entry ID is a 4-byte MAPI entry identifier for a folder or a message.</span></span> <span data-ttu-id="e4b11-128">Weitere Informationen finden Sie unter [ENTRYID](http://msdn.microsoft.com/en-us/library/ms836424).</span><span class="sxs-lookup"><span data-stu-id="e4b11-128">For more information, see [ENTRYID](http://msdn.microsoft.com/en-us/library/ms836424).</span></span>
+<span data-ttu-id="e4b11-127">Eine Eintrags-ID ist eine 4-Byte-MAPI-Eintrags-ID für einen Ordner oder eine Nachricht.</span><span class="sxs-lookup"><span data-stu-id="e4b11-127">An Entry ID is a 4-byte MAPI entry identifier for a folder or a message.</span></span> <span data-ttu-id="e4b11-128">Weitere Informationen finden Sie unter [ENTRYID](http://msdn.microsoft.com/de-de/library/ms836424).</span><span class="sxs-lookup"><span data-stu-id="e4b11-128">For more information, see [ENTRYID](http://msdn.microsoft.com/de-de/library/ms836424).</span></span>
   
 <span data-ttu-id="e4b11-129">Wenn ein neues Objekt durch eine PST-Speicheranbieter eine Eintrags-ID zugewiesen wird, benötigt es zunächst eine GUID, die den Server identifiziert und ein Index, der das Objekt im Speicher angibt.</span><span class="sxs-lookup"><span data-stu-id="e4b11-129">When a PST store provider assigns an Entry ID to a new object, it first needs a GUID that identifies the server, and an index that identifies the object in the store.</span></span> <span data-ttu-id="e4b11-130">Obwohl die GUID über alle EntryIDs nicht eindeutig ist, geben Sie die GUID und der Index kombiniert einen eindeutigen Eintrag.</span><span class="sxs-lookup"><span data-stu-id="e4b11-130">Even though the GUID is not unique across all Entry IDs, the GUID and the index combined provide a unique entry.</span></span> <span data-ttu-id="e4b11-131">Dieses Paar-GUID und der Index nachverfolgt wird durch eine langfristige ID-Struktur **LTID**, das Teil der Struktur **OLFI** ist.</span><span class="sxs-lookup"><span data-stu-id="e4b11-131">This GUID and index pair is tracked by a long-term ID structure, **LTID**, which is part of the **OLFI** structure.</span></span> 
   

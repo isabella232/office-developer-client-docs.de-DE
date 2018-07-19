@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f4846dc3-0236-44ed-a1b1-8c13d48fb58a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: cd70f5ee7b58bdf0b1fd61b1056bfc77e3e35992
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -63,7 +63,7 @@ HRESULTCopyProfile(
   
 > <span data-ttu-id="22f44-119">Zeigt ein Dialogfeld an, die der Benutzer für das korrekte Kennwort des Profils kopieren kann.</span><span class="sxs-lookup"><span data-stu-id="22f44-119">Displays a dialog box that prompts the user for the correct password of the profile to copy.</span></span> <span data-ttu-id="22f44-120">Wenn dieses Flag nicht festgelegt ist, wird kein Dialogfeld angezeigt.</span><span class="sxs-lookup"><span data-stu-id="22f44-120">If this flag is not set, no dialog box is displayed.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="22f44-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="22f44-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="22f44-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="22f44-121">Return value</span></span>
 
 <span data-ttu-id="22f44-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="22f44-122">S_OK</span></span> 
   

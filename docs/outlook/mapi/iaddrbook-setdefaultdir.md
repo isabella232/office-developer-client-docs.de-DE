@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d5d60150-15e4-41ff-bfb0-0c67e2abcacc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 00d5b2bfc6b0c024f0ef12ce19fed90ef0af6721
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT SetDefaultDir(
   
 > <span data-ttu-id="feb50-110">[in] Ein Zeiger auf die Eintrags-ID der Standard-Adressbuchcontainer.</span><span class="sxs-lookup"><span data-stu-id="feb50-110">[in] A pointer to the entry identifier of the default address book container.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="feb50-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="feb50-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="feb50-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="feb50-111">Return value</span></span>
 
 <span data-ttu-id="feb50-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="feb50-112">S_OK</span></span> 
   

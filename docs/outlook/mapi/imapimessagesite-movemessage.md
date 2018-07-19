@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd4d7b11-fad0-4f05-a99e-9567abcab45c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0451d8635848705ef912b9a575d6390898251f4f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -47,9 +47,9 @@ HRESULT MoveMessage(
     
  <span data-ttu-id="e4df5-111">_prcPosRect_</span><span class="sxs-lookup"><span data-stu-id="e4df5-111">_prcPosRect_</span></span>
   
-> <span data-ttu-id="e4df5-112">[in] Ein Zeiger auf ein [Rechteck](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) -Struktur, die im Fenstergröße und Position des aktuellen Formulars enthält.</span><span class="sxs-lookup"><span data-stu-id="e4df5-112">[in] A pointer to a [RECT](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) structure that contains the current form's window size and position.</span></span> <span data-ttu-id="e4df5-113">Das nächste Formular angezeigt wird auch dieses Fenster Rechteck verwendet.</span><span class="sxs-lookup"><span data-stu-id="e4df5-113">The next form displayed also uses this window rectangle.</span></span> 
+> <span data-ttu-id="e4df5-112">[in] Ein Zeiger auf ein [Rechteck](http://msdn.microsoft.com/de-de/library/dd162897%28VS.85%29.aspx) -Struktur, die im Fenstergröße und Position des aktuellen Formulars enthält.</span><span class="sxs-lookup"><span data-stu-id="e4df5-112">[in] A pointer to a [RECT](http://msdn.microsoft.com/de-de/library/dd162897%28VS.85%29.aspx) structure that contains the current form's window size and position.</span></span> <span data-ttu-id="e4df5-113">Das nächste Formular angezeigt wird auch dieses Fenster Rechteck verwendet.</span><span class="sxs-lookup"><span data-stu-id="e4df5-113">The next form displayed also uses this window rectangle.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="e4df5-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e4df5-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e4df5-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e4df5-114">Return value</span></span>
 
 <span data-ttu-id="e4df5-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="e4df5-115">S_OK</span></span> 
   
@@ -65,7 +65,7 @@ HRESULT MoveMessage(
   
 ## <a name="notes-to-implementers"></a><span data-ttu-id="e4df5-121">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="e4df5-121">Notes to implementers</span></span>
 
-<span data-ttu-id="e4df5-122">Ein Formular Viewer-Implementierung von **MoveMessage** muss die [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) -Methode und übergeben die Kennzeichen VCDIR_MOVE vor dem Verschieben tatsächlich der Nachricht in einen neuen Ordner aufrufen.</span><span class="sxs-lookup"><span data-stu-id="e4df5-122">A form viewer's implementation of **MoveMessage** must call the [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) method, passing the VCDIR_MOVE flag, before actually moving the message to a new folder.</span></span> <span data-ttu-id="e4df5-123">Rufen Sie die Windows [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="e4df5-123">To obtain the **RECT** structure used by a form's window, call the Windows [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) function.</span></span> 
+<span data-ttu-id="e4df5-122">Ein Formular Viewer-Implementierung von **MoveMessage** muss die [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) -Methode und übergeben die Kennzeichen VCDIR_MOVE vor dem Verschieben tatsächlich der Nachricht in einen neuen Ordner aufrufen.</span><span class="sxs-lookup"><span data-stu-id="e4df5-122">A form viewer's implementation of **MoveMessage** must call the [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md) method, passing the VCDIR_MOVE flag, before actually moving the message to a new folder.</span></span> <span data-ttu-id="e4df5-123">Rufen Sie die Windows [GetWindowRect](http://msdn.microsoft.com/de-de/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="e4df5-123">To obtain the **RECT** structure used by a form's window, call the Windows [GetWindowRect](http://msdn.microsoft.com/de-de/library/ms633519) function.</span></span> 
   
 <span data-ttu-id="e4df5-124">Eine Liste der Schnittstellen im Zusammenhang mit der Formular-Servern finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).</span><span class="sxs-lookup"><span data-stu-id="e4df5-124">For a list of interfaces related to form servers, see [MAPI Form Interfaces](mapi-form-interfaces.md).</span></span>
   

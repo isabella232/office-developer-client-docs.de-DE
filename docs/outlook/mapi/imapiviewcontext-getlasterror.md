@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3306e37a-2500-4281-96c3-ca0d5c81909d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: f7455e9013f3bd9460ae5f4d876c135594840b68
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ LPMAPIERROR FAR * lppMAPIError
   
 > <span data-ttu-id="2327a-116">[out] Zeiger auf einen Zeiger auf das zurückgegebene **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält.</span><span class="sxs-lookup"><span data-stu-id="2327a-116">[out] Pointer to a pointer to the returned **MAPIERROR** structure that contains version, component, and context information for the error.</span></span> <span data-ttu-id="2327a-117">Dieser Parameter kann auf NULL festgelegt werden, wenn es keine **MAPIERROR** -Struktur ist zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2327a-117">This parameter can be set to NULL if there is no **MAPIERROR** structure to return.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="2327a-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2327a-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2327a-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2327a-118">Return value</span></span>
 
 <span data-ttu-id="2327a-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="2327a-119">S_OK</span></span> 
   

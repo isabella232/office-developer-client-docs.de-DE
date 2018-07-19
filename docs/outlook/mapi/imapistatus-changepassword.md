@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0cd1026a-342d-4d05-91ed-d3decced5bf3
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: b667f56553b717f1bc938b6ce045dbfdde8fdc0c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT ChangePassword(
   
 > <span data-ttu-id="5aede-116">Die Kennwörter sind im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="5aede-116">The passwords are in Unicode format.</span></span> <span data-ttu-id="5aede-117">Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Kennwörter im ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="5aede-117">If the MAPI_UNICODE flag is not set, the passwords are in ANSI format.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5aede-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5aede-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5aede-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5aede-118">Return value</span></span>
 
 <span data-ttu-id="5aede-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="5aede-119">S_OK</span></span> 
   

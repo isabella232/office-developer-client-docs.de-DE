@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1b0d1b52-6651-4de3-9381-86772d9d52a1
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 5d9a57cee371675493ba71b2df52b83941d34fc2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Logoff(
   
 > <span data-ttu-id="3544a-108">[in] Reserviert. Ein Zeiger auf 0 (null) muss sein.</span><span class="sxs-lookup"><span data-stu-id="3544a-108">[in] Reserved; must be a pointer to zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="3544a-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3544a-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3544a-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3544a-109">Return value</span></span>
 
 <span data-ttu-id="3544a-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="3544a-110">S_OK</span></span> 
   
@@ -51,7 +51,7 @@ HRESULT Logoff(
   
 - <span data-ttu-id="3544a-115">Während MAPI deaktiviert Clientidentität nach einem Aufruf der Methode [IMAPISession::Logoff](imapisession-logoff.md) protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="3544a-115">While MAPI is logging off a client after a call to the [IMAPISession::Logoff](imapisession-logoff.md) method.</span></span> 
     
-- <span data-ttu-id="3544a-116">Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="3544a-116">While MAPI is logging off a message store provider.</span></span> <span data-ttu-id="3544a-117">In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt.</span><span class="sxs-lookup"><span data-stu-id="3544a-117">In this case, **IMSLogon::Logoff** is called as part of MAPI processing the [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) method of the support object that the message store provider creates while it is processing an [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) or **IUnknown::Release** method call on a message store object.</span></span> 
+- <span data-ttu-id="3544a-116">Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="3544a-116">While MAPI is logging off a message store provider.</span></span> <span data-ttu-id="3544a-117">In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt.</span><span class="sxs-lookup"><span data-stu-id="3544a-117">In this case, **IMSLogon::Logoff** is called as part of MAPI processing the [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) method of the support object that the message store provider creates while it is processing an [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) or **IUnknown::Release** method call on a message store object.</span></span> 
     
 ## <a name="see-also"></a><span data-ttu-id="3544a-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3544a-118">See also</span></span>
 

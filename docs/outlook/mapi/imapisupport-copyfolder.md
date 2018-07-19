@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c2e0939f-0668-473f-856c-a27af094070b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0b079b311a68459a43b0a7659ddfbe94d96d7f9c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -100,7 +100,7 @@ HRESULT CopyFolder(
   
 > <span data-ttu-id="a309d-141">Der Name des Ordners ist im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="a309d-141">The name of the folder is in Unicode format.</span></span> <span data-ttu-id="a309d-142">Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Name des Ordners im ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="a309d-142">If the MAPI_UNICODE flag is not set, the name of the folder is in ANSI format.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a309d-143">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a309d-143">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a309d-143">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a309d-143">Return value</span></span>
 
 <span data-ttu-id="a309d-144">S_OK</span><span class="sxs-lookup"><span data-stu-id="a309d-144">S_OK</span></span> 
   
@@ -126,7 +126,7 @@ HRESULT CopyFolder(
   
 <span data-ttu-id="a309d-162">Davon ausgehen Sie, dass die folgenden Rückgabewerte in den folgenden Situationen:</span><span class="sxs-lookup"><span data-stu-id="a309d-162">Expect the following return values under the following conditions:</span></span>
   
-|<span data-ttu-id="a309d-163">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="a309d-163">**Condition**</span></span>|<span data-ttu-id="a309d-164">**R�ckgabewert**</span><span class="sxs-lookup"><span data-stu-id="a309d-164">**Return value**</span></span>|
+|<span data-ttu-id="a309d-163">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="a309d-163">**Condition**</span></span>|<span data-ttu-id="a309d-164">**Rückgabewert**</span><span class="sxs-lookup"><span data-stu-id="a309d-164">**Return value**</span></span>|
 |:-----|:-----|
 |<span data-ttu-id="a309d-165">**CopyFolder** erfolgreich kopieren oder verschieben den Ordner und alle Unterordner ein, falls zutreffend.</span><span class="sxs-lookup"><span data-stu-id="a309d-165">**CopyFolder** successfully copied or moved the folder and all its subfolders, if applicable.</span></span>  <br/> |<span data-ttu-id="a309d-166">S_OK</span><span class="sxs-lookup"><span data-stu-id="a309d-166">S_OK</span></span>  <br/> |
 |<span data-ttu-id="a309d-167">**CopyFolder** konnte erfolgreich kopieren oder verschieben Sie alle Ordner.</span><span class="sxs-lookup"><span data-stu-id="a309d-167">**CopyFolder** was unable to successfully copy or move all of the folders.</span></span>  <br/> |<span data-ttu-id="a309d-168">MAPI_W_PARTIAL_COMPLETION</span><span class="sxs-lookup"><span data-stu-id="a309d-168">MAPI_W_PARTIAL_COMPLETION</span></span>  <br/> |

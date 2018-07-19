@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 098743a5-f265-639a-8ba6-1412705bee0a
-description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
+description: 'Letzte Änderung: Donnerstag, 5. Juli 2012'
 ms.openlocfilehash: 43fd56932409861db86679eea6f1405dc4c37e62
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -82,7 +82,7 @@ struct UPMOV
     
 <span data-ttu-id="8355f-129">_pxicc_</span><span class="sxs-lookup"><span data-stu-id="8355f-129">_pxicc_</span></span>
   
->  <span data-ttu-id="8355f-130">[in] Zeiger auf die Schnittstelle der **IExchangeImportContentsChanges** -Inhalt, die Hochladen von Änderungen bei Verwendung von inkrementelle Änderung Synchronisierung (ICS) unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8355f-130">[in] Pointer to the **IExchangeImportContentsChanges** contents interface that supports uploading content changes when using Incremental Change Synchronization (ICS).</span></span> <span data-ttu-id="8355f-131">Weitere Informationen zu **IExchangeImportContentsChanges** und ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="8355f-131">For more information on **IExchangeImportContentsChanges** and ICS, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+>  <span data-ttu-id="8355f-130">[in] Zeiger auf die Schnittstelle der **IExchangeImportContentsChanges** -Inhalt, die Hochladen von Änderungen bei Verwendung von inkrementelle Änderung Synchronisierung (ICS) unterstützt.</span><span class="sxs-lookup"><span data-stu-id="8355f-130">[in] Pointer to the **IExchangeImportContentsChanges** contents interface that supports uploading content changes when using Incremental Change Synchronization (ICS).</span></span> <span data-ttu-id="8355f-131">Weitere Informationen zu **IExchangeImportContentsChanges** und ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="8355f-131">For more information on **IExchangeImportContentsChanges** and ICS, see [ICS Evaluation Criteria](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
 <span data-ttu-id="8355f-132">_dwReserved_</span><span class="sxs-lookup"><span data-stu-id="8355f-132">_dwReserved_</span></span>
   

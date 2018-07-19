@@ -8,7 +8,7 @@ keywords:
 - Funktionen [excel 2007], C-API-Rückruf
 localization_priority: Normal
 ms.assetid: 0f3ae86d-329a-4177-a65b-6288c248297e
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 221ea4c9c706d11acd31d3f2870d326a7189d299
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d5fabc40-71e8-4afa-9846-533da605ce6c
-description: 'Letzte �nderung: Montag, 7. Dezember 2015'
+description: 'Letzte Änderung: Montag, 7. Dezember 2015'
 ms.openlocfilehash: e3d6844f8fe6121d6ea063a9594aaf1fed581ee5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

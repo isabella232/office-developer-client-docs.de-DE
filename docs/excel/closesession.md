@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2c2371c8-b0e0-4992-b7ac-3949eadf1ebe
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: af8f7398ed9d5edfbf1615930874a800d8835487
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -30,7 +30,7 @@ int CloseSession(int SessionId)
   
 > <span data-ttu-id="81eda-108">Die ID der Sitzung zu schließen.</span><span class="sxs-lookup"><span data-stu-id="81eda-108">The ID of the session to close.</span></span> <span data-ttu-id="81eda-109">Dieser Wert muss den von [OpenSession](opensession.md)zurückgegebenen Wert übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="81eda-109">This value must match the value returned by [OpenSession](opensession.md).</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="81eda-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="81eda-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="81eda-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="81eda-110">Return value</span></span>
 
 <span data-ttu-id="81eda-111">**XlHpcRetSuccess** , wenn die Sitzung beendet; **XlHpcRetInvalidSessionId** Wenn das _SessionId_ -Argument ungültig ist; **XlHpcRetCallFailed** zu anderen Fehlern.</span><span class="sxs-lookup"><span data-stu-id="81eda-111">**xlHpcRetSuccess** if the session closed; **xlHpcRetInvalidSessionId** if the  _SessionId_ argument is invalid; **xlHpcRetCallFailed** on other failures.</span></span> 
   

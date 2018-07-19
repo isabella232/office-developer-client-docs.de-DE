@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 75daf9d4-6975-435f-91e5-1b41e0047ab7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3f13a4d278b85ffae33e8f44f3a15eb499fb11b3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT SetPAB(
   
 > <span data-ttu-id="6bcd3-110">[in] Ein Zeiger auf die Eintrags-ID des Containers, als die PAB festgelegt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="6bcd3-110">[in] A pointer to the entry identifier of the container to be designated as the PAB.</span></span> <span data-ttu-id="6bcd3-111">Der Parameter _LpEntryID_ darf nicht NULL sein.</span><span class="sxs-lookup"><span data-stu-id="6bcd3-111">The  _lpEntryID_ parameter cannot be NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="6bcd3-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6bcd3-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6bcd3-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6bcd3-112">Return value</span></span>
 
 <span data-ttu-id="6bcd3-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="6bcd3-113">S_OK</span></span> 
   

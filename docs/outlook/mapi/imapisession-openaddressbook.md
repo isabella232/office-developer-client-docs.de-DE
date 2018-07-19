@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b6a4c6a-bb71-4ea1-a3b6-90a2722880fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: dcde242f5f2e956d1926d6914431008383f5aa55
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT OpenAddressBook(
   
 > <span data-ttu-id="8b5df-119">[out] Ein Zeiger auf einen Zeiger auf das Adressbuch.</span><span class="sxs-lookup"><span data-stu-id="8b5df-119">[out] A pointer to a pointer to the address book.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="8b5df-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8b5df-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8b5df-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8b5df-120">Return value</span></span>
 
 <span data-ttu-id="8b5df-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="8b5df-121">S_OK</span></span> 
   
@@ -74,7 +74,7 @@ HRESULT OpenAddressBook(
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="8b5df-132">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="8b5df-132">Notes to callers</span></span>
 
- <span data-ttu-id="8b5df-133">**OpenAddressBook** gibt MAPI_W_ERRORS_RETURNED zurück, wenn mindestens eines der adressbuchanbietern implementierte im Profil geladen werden kann.</span><span class="sxs-lookup"><span data-stu-id="8b5df-133">**OpenAddressBook** returns MAPI_W_ERRORS_RETURNED if it cannot load one or more of the address book providers in the profile.</span></span> <span data-ttu-id="8b5df-134">Dieser Wert ist eine Warnung, keinen Fehlerwert. Behandeln Sie es wie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="8b5df-134">This value is a warning, not an error value; handle it as you would S_OK.</span></span> <span data-ttu-id="8b5df-135">**OpenAddressBook** gibt immer einen gültigen Zeiger in der _LppAdrBook_ -Parameter, unabhängig davon, wie viele der Address Book Anbieter konnte nicht geladen werden.</span><span class="sxs-lookup"><span data-stu-id="8b5df-135">**OpenAddressBook** always returns a valid pointer in the  _lppAdrBook_ parameter, regardless of how many of the address book providers failed to load.</span></span> <span data-ttu-id="8b5df-136">Aus diesem Grund müssen Sie zu einem bestimmten Zeitpunkt auch immer im Adressbuch [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, vor der Abmeldung.</span><span class="sxs-lookup"><span data-stu-id="8b5df-136">Therefore, you must always call the address book's [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) method at some point before logging off.</span></span> 
+ <span data-ttu-id="8b5df-133">**OpenAddressBook** gibt MAPI_W_ERRORS_RETURNED zurück, wenn mindestens eines der adressbuchanbietern implementierte im Profil geladen werden kann.</span><span class="sxs-lookup"><span data-stu-id="8b5df-133">**OpenAddressBook** returns MAPI_W_ERRORS_RETURNED if it cannot load one or more of the address book providers in the profile.</span></span> <span data-ttu-id="8b5df-134">Dieser Wert ist eine Warnung, keinen Fehlerwert. Behandeln Sie es wie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="8b5df-134">This value is a warning, not an error value; handle it as you would S_OK.</span></span> <span data-ttu-id="8b5df-135">**OpenAddressBook** gibt immer einen gültigen Zeiger in der _LppAdrBook_ -Parameter, unabhängig davon, wie viele der Address Book Anbieter konnte nicht geladen werden.</span><span class="sxs-lookup"><span data-stu-id="8b5df-135">**OpenAddressBook** always returns a valid pointer in the  _lppAdrBook_ parameter, regardless of how many of the address book providers failed to load.</span></span> <span data-ttu-id="8b5df-136">Aus diesem Grund müssen Sie zu einem bestimmten Zeitpunkt auch immer im Adressbuch [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, vor der Abmeldung.</span><span class="sxs-lookup"><span data-stu-id="8b5df-136">Therefore, you must always call the address book's [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) method at some point before logging off.</span></span> 
   
 <span data-ttu-id="8b5df-137">Wenn **OpenAddressBook** MAPI_W_ERRORS_RETURNED zurückgegeben wird, rufen Sie [IMAPISession::GetLastError](imapisession-getlasterror.md) um eine [MAPIERROR](mapierror.md) -Struktur zu erhalten, die Informationen zu den fehlerhaften Anbietern enthält.</span><span class="sxs-lookup"><span data-stu-id="8b5df-137">When **OpenAddressBook** returns MAPI_W_ERRORS_RETURNED, call [IMAPISession::GetLastError](imapisession-getlasterror.md) to obtain a [MAPIERROR](mapierror.md) structure that contains information about the failing providers.</span></span> <span data-ttu-id="8b5df-138">Eine einzelne **MAPIERROR** -Struktur zurückgegeben, die Informationen von alle Anbieter bereitgestellt wird, enthält.</span><span class="sxs-lookup"><span data-stu-id="8b5df-138">A single **MAPIERROR** structure is returned that contains information supplied by all of the providers.</span></span> 
   

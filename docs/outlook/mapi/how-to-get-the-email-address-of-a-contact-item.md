@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 032f7242-5500-1e21-06d3-b2d947eb1043
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
 ms.openlocfilehash: ce9579cb6b07336cae7d69fe503c918d96946b0c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

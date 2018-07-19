@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0a5cb49f-c4f3-4893-8616-80d6332efcfc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 93f264cc91118e40f7a2869d29e7e53d404ae381
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="7f15c-121">Fordert die Anzeige einer Statusanzeige an, wie der-Vorgang fortgesetzt wird.</span><span class="sxs-lookup"><span data-stu-id="7f15c-121">Requests the display of a progress indicator as the operation proceeds.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7f15c-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7f15c-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7f15c-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7f15c-122">Return value</span></span>
 
 <span data-ttu-id="7f15c-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="7f15c-123">S_OK</span></span> 
   

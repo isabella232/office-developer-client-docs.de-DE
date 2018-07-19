@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3890dd50-e6ca-4859-bada-f6752ab61d41
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e6963fc373f771289e3dbff3a0b41857352b4b9a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ BOOL FBadRowSet(
   
 > <span data-ttu-id="02693-114">[in] Zeiger auf eine [SRowSet](srowset.md) -Struktur, die den zu überprüfenden Rowset identifiziert.</span><span class="sxs-lookup"><span data-stu-id="02693-114">[in] Pointer to an [SRowSet](srowset.md) structure identifying the row set to be validated.</span></span> <span data-ttu-id="02693-115">Wenn der Zeiger NULL ist, ist die Struktur ungültig.</span><span class="sxs-lookup"><span data-stu-id="02693-115">If the pointer is NULL, the structure is invalid.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="02693-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="02693-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="02693-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="02693-116">Return value</span></span>
 
 <span data-ttu-id="02693-117">TRUE</span><span class="sxs-lookup"><span data-stu-id="02693-117">TRUE</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b96dd8f6-e648-4014-8a1d-ae1da771c439
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 1b3d8c74d85696e733b378a4cac2b8e2a3b6a072
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -64,7 +64,7 @@ ULONG FAR * lpulMoreRows
   
 > <span data-ttu-id="63ca2-120">[out] Ein Zeiger auf die Gesamtzahl der Zeilen, die die Tabellenansicht hinzugefügt wurden.</span><span class="sxs-lookup"><span data-stu-id="63ca2-120">[out] A pointer to the total number of rows that were added to the table view.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="63ca2-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="63ca2-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="63ca2-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="63ca2-121">Return value</span></span>
 
 <span data-ttu-id="63ca2-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="63ca2-122">S_OK</span></span> 
   

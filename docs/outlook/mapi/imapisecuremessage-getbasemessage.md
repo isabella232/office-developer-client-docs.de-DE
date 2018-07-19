@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 573f40c5-e0d2-4281-8c22-10a1ae1f0dee
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 70c8bd36142d18b541ad6a2e0ded3bebcfb6dbb4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetBaseMessage(
   
 > <span data-ttu-id="72692-108">[out] Ein sicherer Message-Objekt.</span><span class="sxs-lookup"><span data-stu-id="72692-108">[out] A secure message object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="72692-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="72692-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="72692-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="72692-109">Return value</span></span>
 
 <span data-ttu-id="72692-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="72692-110">S_OK</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 19f0dad9-9704-4bbe-a689-9531e7198351
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e9d8565cfaa17764e92bddafb29e744d23872515
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ ULONG_PTR ulConnection
   
 > <span data-ttu-id="3236f-108">[in] Die Anzahl der Registrierung Verbindung durch einen Aufruf von [IMAPITable::Advise](imapitable-advise.md)zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3236f-108">[in] The number of the registration connection returned by a call to [IMAPITable::Advise](imapitable-advise.md).</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="3236f-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3236f-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3236f-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3236f-109">Return value</span></span>
 
 <span data-ttu-id="3236f-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="3236f-110">S_OK</span></span> 
   

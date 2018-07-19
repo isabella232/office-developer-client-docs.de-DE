@@ -8,7 +8,7 @@ keywords:
 - DLLs [excel 2007], Excel, XlAutoFree-Funktion [Excel 2007], xlAutoFree12-Funktion [Excel 2007],xlcall32.lib [Excel 2007], [Excel 2007],xlcall.cpp [Excel 2007], XlAutoRemove-Funktion [Excel 2007], XlAddInManagerInfo XlAutoRegister-Funktion aufruft Funktion [Excel 2007], XlAutoAdd-Funktion [Excel 2007], XlAutoOpen-Funktion [Excel 2007], XlAutoClose-Funktion [Excel 2007], DLLs [Excel 2007], Umwandeln in XLLs XLLs [Excel 2007], Excel, xlAutoRegister12-Funktion [Excel 2007],xlcall.h [Excel aufrufen 2007], xlAddInManagerInfo12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 7754998f-4e13-4a37-9724-43b6ee6c919b
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: de347d34768c25adf0d96642b4fade781ae26a9c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

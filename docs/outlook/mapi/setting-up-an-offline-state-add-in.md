@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a326e93-fe8c-e3a5-1e92-30b75b6cb1d2
-description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
+description: 'Letzte Änderung: Donnerstag, 5. Juli 2012'
 ms.openlocfilehash: 7b3d0eed6039552813798d4ceb30158444902b36
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "19795522"
   
 ## <a name="on-connection-routine"></a><span data-ttu-id="a3a5d-113">Klicken Sie auf Verbindung routine</span><span class="sxs-lookup"><span data-stu-id="a3a5d-113">On Connection routine</span></span>
 
-<span data-ttu-id="a3a5d-114">Jedes Mal, wenn ein Add-In geladen wird, wird die **[IDTExtensibility2.OnConnection-Methode](http://msdn.microsoft.com/en-us/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="a3a5d-114">The **[IDTExtensibility2.OnConnection Method](http://msdn.microsoft.com/en-us/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** is called every time an add-in is loaded.</span></span> <span data-ttu-id="a3a5d-115">Es ist der Einstiegspunkt für das Add-in, und den Code in eingefügt die `OnConnection` Funktion wird aufgerufen, wenn das Add-In gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="a3a5d-115">It is the entry point for the add-in, so the code you put in the  `OnConnection` function will be called when the add-in starts.</span></span> <span data-ttu-id="a3a5d-116">Im folgenden Beispiel die `OnConnection` Funktionsaufrufe der `HrInitAddin` Funktion.</span><span class="sxs-lookup"><span data-stu-id="a3a5d-116">In the following example, the  `OnConnection` function calls the  `HrInitAddin` function.</span></span> 
+<span data-ttu-id="a3a5d-114">Jedes Mal, wenn ein Add-In geladen wird, wird die **[IDTExtensibility2.OnConnection-Methode](http://msdn.microsoft.com/de-de/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="a3a5d-114">The **[IDTExtensibility2.OnConnection Method](http://msdn.microsoft.com/de-de/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** is called every time an add-in is loaded.</span></span> <span data-ttu-id="a3a5d-115">Es ist der Einstiegspunkt für das Add-in, und den Code in eingefügt die `OnConnection` Funktion wird aufgerufen, wenn das Add-In gestartet wird.</span><span class="sxs-lookup"><span data-stu-id="a3a5d-115">It is the entry point for the add-in, so the code you put in the  `OnConnection` function will be called when the add-in starts.</span></span> <span data-ttu-id="a3a5d-116">Im folgenden Beispiel die `OnConnection` Funktionsaufrufe der `HrInitAddin` Funktion.</span><span class="sxs-lookup"><span data-stu-id="a3a5d-116">In the following example, the  `OnConnection` function calls the  `HrInitAddin` function.</span></span> 
   
 ### <a name="cmyaddinonconnection-example"></a><span data-ttu-id="a3a5d-117">CMyAddin::OnConnection()-Beispiel</span><span class="sxs-lookup"><span data-stu-id="a3a5d-117">CMyAddin::OnConnection() example</span></span>
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f23dd6f4-915b-4fe8-ab3f-6d625c7d6061
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b7755f2ec067003e47d358a9736c6d7d96ede267
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ LPSPropValue PpropFindProp(
   
 > <span data-ttu-id="c00fe-118">[in] Eigenschaftentag für die Eigenschaft in dem durch den _Rgprop_ -Parameter angegebenen Eigenschaftensatz suchen.</span><span class="sxs-lookup"><span data-stu-id="c00fe-118">[in] Property tag for the property to search for in the property set indicated by the  _rgprop_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c00fe-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c00fe-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c00fe-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c00fe-119">Return value</span></span>
 
  <span data-ttu-id="c00fe-120">**PpropFindProp** gibt eine [SPropValue](spropvalue.md) -Struktur definieren die Eigenschaft, die dem input-Eigenschaftentag übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt.</span><span class="sxs-lookup"><span data-stu-id="c00fe-120">**PpropFindProp** returns an [SPropValue](spropvalue.md) structure defining the property that matches the input property tag, or NULL if there is no match.</span></span> 
   

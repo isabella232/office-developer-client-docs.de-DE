@@ -32,7 +32,7 @@ ms.locfileid: "19798110"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="7123f-112">_Winkel_</span><span class="sxs-lookup"><span data-stu-id="7123f-112">_angle_</span></span> <br/> |<span data-ttu-id="7123f-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="7123f-113">Required</span></span>  <br/> |<span data-ttu-id="7123f-114">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="7123f-114">**Numeric**</span></span> <br/> |<span data-ttu-id="7123f-115">Der Winkel, dessen Sinus abgerufen werden soll.</span><span class="sxs-lookup"><span data-stu-id="7123f-115">The angle of which to get the sine.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="7123f-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7123f-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="7123f-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7123f-116">Return value</span></span>
 
 <span data-ttu-id="7123f-117">Zahl</span><span class="sxs-lookup"><span data-stu-id="7123f-117">Number</span></span>
   

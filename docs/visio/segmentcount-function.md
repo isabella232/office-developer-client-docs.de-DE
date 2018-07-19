@@ -28,7 +28,7 @@ ms.locfileid: "19797999"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="445f6-112">_pathRef_</span><span class="sxs-lookup"><span data-stu-id="445f6-112">_pathRef_</span></span> <br/> |<span data-ttu-id="445f6-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="445f6-113">Required</span></span>  <br/> |<span data-ttu-id="445f6-114">**Integer**</span><span class="sxs-lookup"><span data-stu-id="445f6-114">**Integer**</span></span> <br/> |<span data-ttu-id="445f6-115">Der Abschnitt "Geometrie", der den Pfad darstellt, angegeben mit einer Referenz auf die Zelle "Path" (z. B. Geometrie1.Path).</span><span class="sxs-lookup"><span data-stu-id="445f6-115">The Geometry section that represents the path, specified by a reference to Path cell (for example, Geometry1.Path).</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="445f6-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="445f6-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="445f6-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="445f6-116">Return value</span></span>
 
 <span data-ttu-id="445f6-117">Ganze Zahl</span><span class="sxs-lookup"><span data-stu-id="445f6-117">Integer</span></span>
   

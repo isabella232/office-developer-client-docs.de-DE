@@ -32,7 +32,7 @@ ms.locfileid: "19797110"
 | <span data-ttu-id="16737-116">_Grenze1_</span><span class="sxs-lookup"><span data-stu-id="16737-116">_limit1_</span></span> <br/> |<span data-ttu-id="16737-117">Optional</span><span class="sxs-lookup"><span data-stu-id="16737-117">Optional</span></span>  <br/> |<span data-ttu-id="16737-118">**String**</span><span class="sxs-lookup"><span data-stu-id="16737-118">**String**</span></span> <br/> |<span data-ttu-id="16737-p101">Erste Drehbegrenzung. Der Standardwert beträgt 90 Grad.</span><span class="sxs-lookup"><span data-stu-id="16737-p101">First limit of rotation. Default is 90 degrees.</span></span>  <br/> |
 | <span data-ttu-id="16737-121">_Grenze2_</span><span class="sxs-lookup"><span data-stu-id="16737-121">_limit2_</span></span> <br/> |<span data-ttu-id="16737-122">Optional</span><span class="sxs-lookup"><span data-stu-id="16737-122">Optional</span></span>  <br/> |<span data-ttu-id="16737-123">**String**</span><span class="sxs-lookup"><span data-stu-id="16737-123">**String**</span></span> <br/> |<span data-ttu-id="16737-p102">Zweite Drehbegrenzung. Der Standardwert beträgt 270 Grad.</span><span class="sxs-lookup"><span data-stu-id="16737-p102">Second limit of rotation. Default is 270 degrees.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="16737-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="16737-126">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="16737-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="16737-126">Return value</span></span>
 
 <span data-ttu-id="16737-127">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="16737-127">String</span></span>
   

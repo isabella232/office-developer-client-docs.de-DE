@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c33daad6-52c4-4968-ac56-415178c9bf12
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ef9b99f06b62fd361bb780debb527ec2d7457589
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ HRESULT SelectFormContainer(
   
 > <span data-ttu-id="30f03-120">[out] Ein Zeiger auf einen Zeiger auf die zurückgegebene Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="30f03-120">[out] A pointer to a pointer to the returned interface.</span></span> <span data-ttu-id="30f03-121">Diese Schnittstelle ist für das Containerobjekt, das vom Benutzer ausgewählt ist.</span><span class="sxs-lookup"><span data-stu-id="30f03-121">This interface is for the container object that is selected by the user.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="30f03-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="30f03-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="30f03-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="30f03-122">Return value</span></span>
 
 <span data-ttu-id="30f03-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="30f03-123">S_OK</span></span> 
   

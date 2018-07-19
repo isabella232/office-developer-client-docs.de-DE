@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 22562e1177c9a649bc66b25b5e8e9e6ecc8e397c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -90,7 +90,7 @@ HRESULT PreprocessMessage(
   
 > <span data-ttu-id="a6bb8-134">[out] Zeiger auf eine optionale zurückgegebenen [ADRLIST](adrlist.md) -Struktur, auflisten Präprozessor erkannt Empfänger für die Nachricht nicht zugestellt werden kann.</span><span class="sxs-lookup"><span data-stu-id="a6bb8-134">[out] Pointer to an optional returned [ADRLIST](adrlist.md) structure, listing preprocessor-detected recipients for which the message is undeliverable.</span></span> <span data-ttu-id="a6bb8-135">Weitere Informationen über den Inhalt dieser Liste finden Sie unter der [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) -Methode.</span><span class="sxs-lookup"><span data-stu-id="a6bb8-135">For more information about the contents of this list, see the [IMAPISupport::StatusRecips](imapisupport-statusrecips.md) method.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="a6bb8-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a6bb8-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a6bb8-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a6bb8-136">Return value</span></span>
 
 <span data-ttu-id="a6bb8-137">S_OK</span><span class="sxs-lookup"><span data-stu-id="a6bb8-137">S_OK</span></span>
   

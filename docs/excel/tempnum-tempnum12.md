@@ -11,7 +11,7 @@ keywords:
 - tempnum12-Funktion [excel 2007], TempNum-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 5b74d618-db3a-4d84-bd17-4fee7ae3b51e
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 5ebe58dba32c2cf0382bf0811713eaa0a5471dda
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -36,7 +36,7 @@ LPXLOPER12 TempNum12(double d);
   
 <span data-ttu-id="b6414-109">Der vorgesehene Wert.</span><span class="sxs-lookup"><span data-stu-id="b6414-109">The intended value.</span></span> <span data-ttu-id="b6414-110">Beachten Sie, dass IEEE Unterseite normale Zahlen derzeit nicht unterstützt werden und sind auf 0 (null) gerundet.</span><span class="sxs-lookup"><span data-stu-id="b6414-110">Note that IEEE sub-normal numbers are not currently supported and are rounded to zero.</span></span> <span data-ttu-id="b6414-111">Negativ unendlich wird unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b6414-111">Negative infinity is supported.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="b6414-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b6414-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b6414-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b6414-112">Return value</span></span>
 
 <span data-ttu-id="b6414-113">Gibt einen numerischen **XltypeNum** mit dem Wert übergeben, oder NULL, wenn der übergebene Wert Unterseite normalen wurde.</span><span class="sxs-lookup"><span data-stu-id="b6414-113">Returns a numeric **xltypeNum** containing the value passed in or zero if the passed in value was sub-normal.</span></span> 
   

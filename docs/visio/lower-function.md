@@ -30,7 +30,7 @@ ms.locfileid: "19797431"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="0712f-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="0712f-112">_expression_</span></span> <br/> |<span data-ttu-id="0712f-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="0712f-113">Required</span></span>  <br/> |<span data-ttu-id="0712f-114">**Varies**</span><span class="sxs-lookup"><span data-stu-id="0712f-114">**Varies**</span></span> <br/> | <span data-ttu-id="0712f-115">Eine Zeichenfolge, ein Zellbezug oder ein Ausdruck. Das Ergebnis wird in eine Zeichenfolge konvertiert, die anschließend in Kleinbuchstaben konvertiert wird.</span><span class="sxs-lookup"><span data-stu-id="0712f-115">A string, a cell reference, or an expression; the result is converted to a string which is then converted to lowercase.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="0712f-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0712f-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="0712f-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0712f-116">Return value</span></span>
 
 <span data-ttu-id="0712f-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="0712f-117">String</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80aadd11-5409-4636-8fad-fa2206336671
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 921417d8fc73ca9c1f126b2cb0add23f6625e3f4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ HRESULT ValidateParameters(
   
 > <span data-ttu-id="f5f7b-116">[in] Zeiger auf das erste Argument im Stapel.</span><span class="sxs-lookup"><span data-stu-id="f5f7b-116">[in] Pointer to the first argument on the stack.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f5f7b-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f5f7b-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f5f7b-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f5f7b-117">Return value</span></span>
 
 <span data-ttu-id="f5f7b-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="f5f7b-118">S_OK</span></span> 
   

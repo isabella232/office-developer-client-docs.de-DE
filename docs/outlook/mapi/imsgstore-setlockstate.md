@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b1176ec-4126-43f5-856d-cbab8d622825
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: a4e924489f2ec656f473f28407d528e9c2ddda5c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -52,7 +52,7 @@ HRESULT SetLockState(
   
 > <span data-ttu-id="dfe69-116">Die Nachricht muss aufgehoben werden.</span><span class="sxs-lookup"><span data-stu-id="dfe69-116">The message should be unlocked.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="dfe69-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dfe69-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="dfe69-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dfe69-117">Return value</span></span>
 
 <span data-ttu-id="dfe69-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="dfe69-118">S_OK</span></span> 
   

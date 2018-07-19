@@ -38,5 +38,5 @@ ms.locfileid: "19790910"
 ## <a name="see-also"></a><span data-ttu-id="405e7-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="405e7-124">See also</span></span>
 
 - [<span data-ttu-id="405e7-125">Über die Konto-API</span><span class="sxs-lookup"><span data-stu-id="405e7-125">About the Account Management API</span></span>](about-the-account-management-api.md)
-- [<span data-ttu-id="405e7-126">Hinzufügen von Namen zu den Listen Junk-e-Mail-Filter</span><span class="sxs-lookup"><span data-stu-id="405e7-126">Add names to the Junk Email Filter lists</span></span>](http://office.microsoft.com/en-us/outlook-help/add-names-to-the-junk-email-filter-lists-HA010355043.aspx?CTT=1)
+- [<span data-ttu-id="405e7-126">Hinzufügen von Namen zu den Listen Junk-e-Mail-Filter</span><span class="sxs-lookup"><span data-stu-id="405e7-126">Add names to the Junk Email Filter lists</span></span>](http://office.microsoft.com/de-de/outlook-help/add-names-to-the-junk-email-filter-lists-HA010355043.aspx?CTT=1)
 

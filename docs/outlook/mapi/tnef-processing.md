@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4d324fb3-d917-4502-b3a4-179c479deb79
-description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
+description: 'Letzte Änderung: Donnerstag, 5. Juli 2012'
 ms.openlocfilehash: bd9cc49f5d1d865d5d6b222677df0dd62ec36fd6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "19795732"
     
 5. <span data-ttu-id="1de68-116">Verwendung [ITnef: IUnknown](itnefiunknown.md) Schnittstellenmethoden, beschreibt die Positionen der e-Mail-Anlagen im Nachrichtentext Tags einfügen.</span><span class="sxs-lookup"><span data-stu-id="1de68-116">Use [ITnef : IUnknown](itnefiunknown.md) interface methods to insert tags describing the positions of message attachments in the message text.</span></span> 
     
-6. <span data-ttu-id="1de68-117">Greifen Sie auf den markierten Nachrichtentext über [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System.</span><span class="sxs-lookup"><span data-stu-id="1de68-117">Access the tagged message text through [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) methods, and send it to the messaging system.</span></span> 
+6. <span data-ttu-id="1de68-117">Greifen Sie auf den markierten Nachrichtentext über [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System.</span><span class="sxs-lookup"><span data-stu-id="1de68-117">Access the tagged message text through [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) methods, and send it to the messaging system.</span></span> 
     
  <span data-ttu-id="1de68-118">**Zum Abrufen von gekapselte Eigenschaften**</span><span class="sxs-lookup"><span data-stu-id="1de68-118">**To retrieve encapsulated properties**</span></span>
   

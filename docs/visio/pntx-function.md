@@ -30,7 +30,7 @@ ms.locfileid: "19797643"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="47ae0-112">_Punkt_</span><span class="sxs-lookup"><span data-stu-id="47ae0-112">_point_</span></span> <br/> |<span data-ttu-id="47ae0-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="47ae0-113">Required</span></span>  <br/> |<span data-ttu-id="47ae0-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="47ae0-114">**Number**</span></span> <br/> |<span data-ttu-id="47ae0-115">Die _X_-Koordinate des Punkts.</span><span class="sxs-lookup"><span data-stu-id="47ae0-115">The  _x_-coordinate of the point.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="47ae0-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="47ae0-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="47ae0-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="47ae0-116">Return value</span></span>
 
 <span data-ttu-id="47ae0-117">Number</span><span class="sxs-lookup"><span data-stu-id="47ae0-117">Number</span></span>
   

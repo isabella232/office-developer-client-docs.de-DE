@@ -27,7 +27,7 @@ ms.locfileid: "19797269"
 
  <span data-ttu-id="59faa-108">**ISTHEMED** ()</span><span class="sxs-lookup"><span data-stu-id="59faa-108">**ISTHEMED**()</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="59faa-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="59faa-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="59faa-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="59faa-109">Return value</span></span>
 
 <span data-ttu-id="59faa-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="59faa-110">Boolean</span></span>
   

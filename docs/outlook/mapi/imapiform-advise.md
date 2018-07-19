@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 961318d6-bebe-4f4b-98ff-921cafc68d24
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: b5347205e10b44d62a7e11cbe2f4179970f1bd64
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT Advise(
   
 > <span data-ttu-id="05bf7-110">[out] Ein Zeiger auf einen Wert ungleich NULL, der eine erfolgreiche benachrichtigungsregistrierung darstellt.</span><span class="sxs-lookup"><span data-stu-id="05bf7-110">[out] A pointer to a nonzero value that represents a successful notification registration.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="05bf7-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="05bf7-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="05bf7-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="05bf7-111">Return value</span></span>
 
 <span data-ttu-id="05bf7-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="05bf7-112">S_OK</span></span> 
   
@@ -60,7 +60,7 @@ HRESULT Advise(
   
 ## <a name="notes-to-implementers"></a><span data-ttu-id="05bf7-118">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="05bf7-118">Notes to implementers</span></span>
 
-<span data-ttu-id="05bf7-119">Beibehalten einer Kopie der Ansicht advise-Empfängerzeiger im _pAdvise_ -Parameter übergeben werden, sodass Sie sie verwenden können, die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufrufen, wenn ein Ereignis auftritt.</span><span class="sxs-lookup"><span data-stu-id="05bf7-119">Keep a copy of the view advise sink pointer passed in the  _pAdvise_ parameter so that you can use it to call the appropriate [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) method when an event occurs.</span></span> <span data-ttu-id="05bf7-120">Aufruf der Ansicht Teilen des Empfängers [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode, die den Zeiger beibehalten werden, bis benachrichtigungsregistrierung abgebrochen wird.</span><span class="sxs-lookup"><span data-stu-id="05bf7-120">Call the view advise sink's [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) method to retain the pointer until notification registration is canceled.</span></span> <span data-ttu-id="05bf7-121">Legen Sie den Inhalt des Parameters _PulConnection_ auf eine Zahl ungleich NULL.</span><span class="sxs-lookup"><span data-stu-id="05bf7-121">Set the contents of the  _pulConnection_ parameter to a nonzero number.</span></span> 
+<span data-ttu-id="05bf7-119">Beibehalten einer Kopie der Ansicht advise-Empfängerzeiger im _pAdvise_ -Parameter übergeben werden, sodass Sie sie verwenden können, die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufrufen, wenn ein Ereignis auftritt.</span><span class="sxs-lookup"><span data-stu-id="05bf7-119">Keep a copy of the view advise sink pointer passed in the  _pAdvise_ parameter so that you can use it to call the appropriate [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) method when an event occurs.</span></span> <span data-ttu-id="05bf7-120">Aufruf der Ansicht Teilen des Empfängers [IUnknown:: AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28VS.85%29.aspx) -Methode, die den Zeiger beibehalten werden, bis benachrichtigungsregistrierung abgebrochen wird.</span><span class="sxs-lookup"><span data-stu-id="05bf7-120">Call the view advise sink's [IUnknown::AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28VS.85%29.aspx) method to retain the pointer until notification registration is canceled.</span></span> <span data-ttu-id="05bf7-121">Legen Sie den Inhalt des Parameters _PulConnection_ auf eine Zahl ungleich NULL.</span><span class="sxs-lookup"><span data-stu-id="05bf7-121">Set the contents of the  _pulConnection_ parameter to a nonzero number.</span></span> 
   
 <span data-ttu-id="05bf7-122">Viele Formulare implementieren Sie ein Objekt, um die Registrierung und nachfolgende Benachrichtigung über Ereignisse behandelt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="05bf7-122">Many forms implement a helper object to handle the registration and subsequent notification of events.</span></span> 
   

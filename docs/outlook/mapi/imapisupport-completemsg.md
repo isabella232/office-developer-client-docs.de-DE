@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e7932433-abe0-4341-95e0-91b37c848145
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: db28d9684f1bb679ce36f99346f4ecc67a1a93e6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT CompleteMsg(
   
 > <span data-ttu-id="e0b25-112">[in] Ein Zeiger auf die Eintrags-ID der Nachricht zu verarbeiten.</span><span class="sxs-lookup"><span data-stu-id="e0b25-112">[in] A pointer to the entry identifier of the message to process.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e0b25-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e0b25-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e0b25-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e0b25-113">Return value</span></span>
 
 <span data-ttu-id="e0b25-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="e0b25-114">S_OK</span></span> 
   

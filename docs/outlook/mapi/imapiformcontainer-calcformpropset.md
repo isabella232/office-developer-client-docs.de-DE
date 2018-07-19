@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 594e3aac-a00f-422e-8e7a-949e4c9a3f8d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: b15dc4e467644c2a0c3856372b550c3b55469f1a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -56,7 +56,7 @@ HRESULT CalcFormPropSet(
   
 > <span data-ttu-id="eeb30-118">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="eeb30-118">[out] A pointer to a pointer to the returned [SMAPIFormPropArray](smapiformproparray.md) structure.</span></span> <span data-ttu-id="eeb30-119">Diese Struktur enthält alle Eigenschaften, die von den installierten Formularen verwendet.</span><span class="sxs-lookup"><span data-stu-id="eeb30-119">This structure contains all properties used by the installed forms.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="eeb30-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="eeb30-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="eeb30-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="eeb30-120">Return value</span></span>
 
 <span data-ttu-id="eeb30-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="eeb30-121">S_OK</span></span> 
   

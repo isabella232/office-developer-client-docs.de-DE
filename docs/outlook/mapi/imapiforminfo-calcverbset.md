@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0170dc9d-dc72-48e2-a522-374f199b18ea
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 362afb1efeddeae72cc19256c377cb2c0f7ecba0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT CalcVerbSet(
   
 > <span data-ttu-id="0336b-114">[out] Ein Zeiger auf einen Zeiger auf die zurückgegebene [SMAPIVerbArray](smapiverbarray.md) -Struktur, die dem Formular zugrunde Verben enthält.</span><span class="sxs-lookup"><span data-stu-id="0336b-114">[out] A pointer to a pointer to the returned [SMAPIVerbArray](smapiverbarray.md) structure that contains the form's verbs.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="0336b-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0336b-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0336b-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0336b-115">Return value</span></span>
 
 <span data-ttu-id="0336b-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="0336b-116">S_OK</span></span> 
   

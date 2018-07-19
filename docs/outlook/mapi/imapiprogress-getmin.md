@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: caceddf1-0f7c-47b5-97bf-17ffe3440a6c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ab92aee6a8254a16c48352e371b711932bbe7427
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetMin(
   
 > <span data-ttu-id="10211-108">[out] Ein Zeiger auf die minimale Anzahl von Elementen in den Vorgang.</span><span class="sxs-lookup"><span data-stu-id="10211-108">[out] A pointer to the minimum number of items in the operation.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="10211-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="10211-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="10211-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="10211-109">Return value</span></span>
 
 <span data-ttu-id="10211-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="10211-110">S_OK</span></span> 
   

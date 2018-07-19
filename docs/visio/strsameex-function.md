@@ -33,7 +33,7 @@ ms.locfileid: "19798212"
 | <span data-ttu-id="94443-120">_Gebietsschema-ID_</span><span class="sxs-lookup"><span data-stu-id="94443-120">_localeID_</span></span> <br/> |<span data-ttu-id="94443-121">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="94443-121">Required</span></span>  <br/> |<span data-ttu-id="94443-122">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="94443-122">**Numeric**</span></span> <br/> |<span data-ttu-id="94443-123">Der lokale ID-Code.</span><span class="sxs-lookup"><span data-stu-id="94443-123">The locale ID code.</span></span>  <br/> |
 | <span data-ttu-id="94443-124">_Flag_</span><span class="sxs-lookup"><span data-stu-id="94443-124">_flag_</span></span> <br/> |<span data-ttu-id="94443-125">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="94443-125">Required</span></span>  <br/> |<span data-ttu-id="94443-126">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="94443-126">**Numeric**</span></span> <br/> | <span data-ttu-id="94443-127">Ein Bit, das den Typ des Vergleichs bestimmt.</span><span class="sxs-lookup"><span data-stu-id="94443-127">A bit that specifies the type of comparison.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="94443-128">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="94443-128">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="94443-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="94443-128">Return value</span></span>
 
 <span data-ttu-id="94443-129">Boolean</span><span class="sxs-lookup"><span data-stu-id="94443-129">Boolean</span></span>
   

@@ -8,7 +8,7 @@ keywords:
 - Auswertung von Ausdrücken [excel 2007], Fehler in Arbeitsblättern [Excel 2007], lange Unicode-Zeichenfolgen [Excel 2007], Auswerten von Ausdrücken [Excel 2007], Auswerten von Arbeitsblättern [Excel 2007], Arbeitsblatt Evaluierungshandbuch und exemplarische Vorgehensweisen [Excel 2007], Arbeitsblattfehler [Excel 2007]
 localization_priority: Normal
 ms.assetid: 47b46a7d-6cfb-4f5b-946d-e0164d18512a
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 543ff7fcbc88253dafd7fc6e7000bf9657d8c258
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

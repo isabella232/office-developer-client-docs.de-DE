@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef2112c7-35cd-4106-ad18-a45e1dbe07d6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 10f8f2cf44bf1a8e00f8c2b1a76826db5fc07161
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT Address(
   
 > <span data-ttu-id="8512e-115">[in, out] Ein Zeiger auf einen Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die Empfängerinformationen enthält.</span><span class="sxs-lookup"><span data-stu-id="8512e-115">[in, out] A pointer to a pointer to an [ADRLIST](adrlist.md) structure that contains recipient information.</span></span> <span data-ttu-id="8512e-116">Dieser Parameter kann bei der Eingabe NULL sein oder zeigen Sie auf einen gültigen Zeiger.</span><span class="sxs-lookup"><span data-stu-id="8512e-116">On input, this parameter can be NULL or point to a valid pointer.</span></span> <span data-ttu-id="8512e-117">Ausgabe zeigt dieser Parameter auf einen Zeiger auf gültige Empfängerinformationen.</span><span class="sxs-lookup"><span data-stu-id="8512e-117">On output, this parameter points to a pointer to valid recipient information.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="8512e-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8512e-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8512e-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8512e-118">Return value</span></span>
 
 <span data-ttu-id="8512e-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="8512e-119">S_OK</span></span> 
   

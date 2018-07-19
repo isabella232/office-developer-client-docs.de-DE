@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25ce90ac-526e-48a0-9edb-bd266375d4f4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 150a0c6eb7efa83f5ff1d12d915351bf5ca9d45a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ LPCRECT prcPosRect
   
 > <span data-ttu-id="d091e-122">[in] Zeiger auf eine Windows **Rechteck** -Struktur mit der Größe und Position des Fensters, zum Anzeigen der aktivierten Nachricht verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="d091e-122">[in] Pointer to a Windows **RECT** structure containing the size and position of the window to be used to display the activated message.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="d091e-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d091e-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d091e-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d091e-123">Return value</span></span>
 
 <span data-ttu-id="d091e-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="d091e-124">S_OK</span></span> 
   

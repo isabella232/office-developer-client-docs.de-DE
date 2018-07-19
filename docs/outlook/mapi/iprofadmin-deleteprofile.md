@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 730af2da-4c4a-42a7-9d52-56d914107d64
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 249d2dcf3a298abde85bdc53620680146d43c168
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT DeleteProfile(
   
 > <span data-ttu-id="7862a-110">[in] Immer NULL.</span><span class="sxs-lookup"><span data-stu-id="7862a-110">[in] Always NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="7862a-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7862a-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7862a-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7862a-111">Return value</span></span>
 
 <span data-ttu-id="7862a-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="7862a-112">S_OK</span></span> 
   

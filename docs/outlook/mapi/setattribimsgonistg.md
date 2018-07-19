@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 683d0d00-1b93-445d-86ff-180a3e6d2323
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e8a0daa2afe2397f39b7f37a31ef718ba65a3350
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ HRESULT SetAttribIMsgOnIStg(
   
 > <span data-ttu-id="96ce2-120">[out] Zeiger auf das zurückgegebene [SPropProblemArray](spropproblemarray.md) -Struktur mit einem Satz von Eigenschaft Probleme.</span><span class="sxs-lookup"><span data-stu-id="96ce2-120">[out] Pointer to the returned [SPropProblemArray](spropproblemarray.md) structure containing a set of property problems.</span></span> <span data-ttu-id="96ce2-121">Diese Struktur identifiziert Probleme, wenn **SetAttribIMsgOnIStg** einige Eigenschaften festlegen können, jedoch nicht alle wurde.</span><span class="sxs-lookup"><span data-stu-id="96ce2-121">This structure identifies problems encountered if **SetAttribIMsgOnIStg** has been able to set some properties, but not all.</span></span> <span data-ttu-id="96ce2-122">Wenn ein Zeiger auf NULL in der _LppPropProblems_ -Parameter übergeben wird, wird kein Problem Array-Eigenschaft zurückgegeben, selbst wenn einige Eigenschaften nicht festgelegt wurden.</span><span class="sxs-lookup"><span data-stu-id="96ce2-122">If a pointer to NULL is passed in the  _lppPropProblems_ parameter, no property problem array is returned even if some properties were not set.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="96ce2-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="96ce2-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="96ce2-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="96ce2-123">Return value</span></span>
 
 <span data-ttu-id="96ce2-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="96ce2-124">S_OK</span></span> 
   

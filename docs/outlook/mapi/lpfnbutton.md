@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cb91ae1d-1ea8-4f02-a1f1-f2a356a71477
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e1f15a5f031f5c5a9568b8a36722eaac011b814c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
   
 > <span data-ttu-id="74f83-125">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="74f83-125">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="74f83-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="74f83-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="74f83-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="74f83-126">Return value</span></span>
 
 <span data-ttu-id="74f83-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="74f83-127">S_OK</span></span> 
   

@@ -8,7 +8,7 @@ keywords:
 - accessing dlls [excel 2007],DLLs [Excel 2007], accessing in Excel
 localization_priority: Normal
 ms.assetid: e2bfd6ea-efa3-45c1-a5b8-2ccb8650c6ab
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: bfb562b6bbe824124c6b5a691745d076720ee004
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -192,7 +192,7 @@ int WINAPI my_xll_cmd(void)
 ```
 
 > [!NOTE]
-> <span data-ttu-id="677ec-p121">Der R�ckgabewert wird von Excel ignoriert, es sei denn, der Aufruf erfolgt aus einer XLM-Makrovorlage; in diesem Fall wird der R�ckgabewert in **TRUE** oder **FALSE** konvertiert. Sie m�ssen daher 1 zur�ckgeben, wenn der Befehl erfolgreich ausgef�hrt wurde, und 0 bei einem Fehler oder Benutzerabbruch.</span><span class="sxs-lookup"><span data-stu-id="677ec-p121">Excel ignores the return value unless it is called from an XLM macro sheet, in which case the return value is converted to **TRUE** or **FALSE**. You should therefore return 1 if your command executed successfully, and 0 if it failed or was canceled by the user.</span></span> 
+> <span data-ttu-id="677ec-p121">Der Rückgabewert wird von Excel ignoriert, es sei denn, der Aufruf erfolgt aus einer XLM-Makrovorlage; in diesem Fall wird der Rückgabewert in **TRUE** oder **FALSE** konvertiert. Sie m�ssen daher 1 zur�ckgeben, wenn der Befehl erfolgreich ausgef�hrt wurde, und 0 bei einem Fehler oder Benutzerabbruch.</span><span class="sxs-lookup"><span data-stu-id="677ec-p121">Excel ignores the return value unless it is called from an XLM macro sheet, in which case the return value is converted to **TRUE** or **FALSE**. You should therefore return 1 if your command executed successfully, and 0 if it failed or was canceled by the user.</span></span> 
   
 ## <a name="dll-memory-and-multiple-dll-instances"></a><span data-ttu-id="677ec-250">DLL-Arbeitsspeicher und mehrere DLL-Instanzen</span><span class="sxs-lookup"><span data-stu-id="677ec-250">DLL memory and multiple DLL instances</span></span>
 

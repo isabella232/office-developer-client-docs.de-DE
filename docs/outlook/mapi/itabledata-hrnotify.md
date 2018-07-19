@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98548b50-342e-434a-9ad3-c37ba418c5ce
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 1be4fd95d29859c542fe553bdc3728ea23444694
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT HrNotify(
   
 > <span data-ttu-id="be66a-112">[in] Ein Zeiger auf eine **SPropValue** -Struktur, die die Werte der Spalten in der Zielzeile beschreibt.</span><span class="sxs-lookup"><span data-stu-id="be66a-112">[in] A pointer to an **SPropValue** structure that describes the values of the columns in the target row.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="be66a-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="be66a-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="be66a-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="be66a-113">Return value</span></span>
 
 <span data-ttu-id="be66a-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="be66a-114">S_OK</span></span> 
   

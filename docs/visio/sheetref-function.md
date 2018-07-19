@@ -27,7 +27,7 @@ ms.locfileid: "19798094"
 
  <span data-ttu-id="a3076-108">*\<Sheetref\>!*</span><span class="sxs-lookup"><span data-stu-id="a3076-108">*\<sheetref\>!*</span></span>  <span data-ttu-id="a3076-109">SHEETREF()</span><span class="sxs-lookup"><span data-stu-id="a3076-109">SHEETREF()</span></span> 
   
-### <a name="return-value"></a><span data-ttu-id="a3076-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a3076-110">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="a3076-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a3076-110">Return value</span></span>
 
 <span data-ttu-id="a3076-111">ShapeSheet-Referenz</span><span class="sxs-lookup"><span data-stu-id="a3076-111">ShapeSheet reference</span></span>
   

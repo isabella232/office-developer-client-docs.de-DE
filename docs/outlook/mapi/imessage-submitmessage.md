@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ce93469-c55d-48d1-9abb-a637716ed4f2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 1d325c67c836e727d8285bd2dceecf88bf68327c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -43,7 +43,7 @@ HRESULT SubmitMessage(
   
 > <span data-ttu-id="55953-111">MAPI sollten die Nachricht sofort zu übermitteln.</span><span class="sxs-lookup"><span data-stu-id="55953-111">MAPI should submit the message immediately.</span></span> <span data-ttu-id="55953-112">Dieses Kennzeichen werden derzeit nicht verwendet.</span><span class="sxs-lookup"><span data-stu-id="55953-112">This flag is not currently in use.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="55953-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="55953-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="55953-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="55953-113">Return value</span></span>
 
 <span data-ttu-id="55953-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="55953-114">S_OK</span></span> 
   

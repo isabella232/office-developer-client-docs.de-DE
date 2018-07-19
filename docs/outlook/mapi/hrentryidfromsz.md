@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14c171ec-0aec-43ab-8be8-e6bc0ce28a58
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2b7ef789c80f85f3539ec3bbd0caf4a8adc50f3e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ HRESULT HrEntryIDFromSz(
   
 > <span data-ttu-id="dbd07-118">[out] Zeiger auf einen Zeiger auf das zurückgegebene [ENTRYID](entryid.md) -Struktur, die neuen Eintrags-ID enthält.</span><span class="sxs-lookup"><span data-stu-id="dbd07-118">[out] Pointer to a pointer to the returned [ENTRYID](entryid.md) structure that contains the new entry identifier.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="dbd07-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dbd07-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="dbd07-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dbd07-119">Return value</span></span>
 
 <span data-ttu-id="dbd07-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="dbd07-120">S_OK</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01711aca-c598-438c-88d7-0719b6691e34
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 6351be353100649e38a14543a44df5e115c9408b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ LPATTACH FAR * lppAttach
   
 > <span data-ttu-id="d1011-120">[out] Zeiger auf einen Zeiger auf das Objekt Anlage öffnen.</span><span class="sxs-lookup"><span data-stu-id="d1011-120">[out] Pointer to a pointer to the open attachment object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="d1011-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d1011-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d1011-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d1011-121">Return value</span></span>
 
 <span data-ttu-id="d1011-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="d1011-122">S_OK</span></span> 
   

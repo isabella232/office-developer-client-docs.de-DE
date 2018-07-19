@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a08f5905-2585-49ca-abb7-a77f2736f604
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f58d0f5cd7dfe74d3859d4f06a41aad6c3a55ac4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -75,7 +75,7 @@ HRESULT ConfigureMsgService(
   
 > <span data-ttu-id="c6337-129">[in] Ein Zeiger auf ein Array der Eigenschaftswerte, die beschreiben, die Eigenschaften im Eigenschaftenfenster angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c6337-129">[in] A pointer to an array of property values that describe the properties to display in the property sheet.</span></span> <span data-ttu-id="c6337-130">Der Parameter _LpProps_ darf nicht NULL sein, wenn der Nachrichtendienst ohne Benutzeroberfläche konfiguriert werden soll.</span><span class="sxs-lookup"><span data-stu-id="c6337-130">The  _lpProps_ parameter should not be NULL if the message service should be configured without a user interface.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c6337-131">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c6337-131">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c6337-131">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c6337-131">Return value</span></span>
 
 <span data-ttu-id="c6337-132">S_OK</span><span class="sxs-lookup"><span data-stu-id="c6337-132">S_OK</span></span> 
   

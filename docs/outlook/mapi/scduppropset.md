@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 165ffbd0-54aa-4692-8bd1-09e6ff3762df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5b93f84026cacd8568dc5ceec5574d144f6d1633
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ SCODE ScDupPropset(
   
 > <span data-ttu-id="96de7-120">[out] Zeiger auf die Ausgangsposition im Arbeitsspeicher, in dem das duplizierte zurückgegebene Array von **SPropValue** -Strukturen gespeichert ist.</span><span class="sxs-lookup"><span data-stu-id="96de7-120">[out] Pointer to the initial position in memory where the returned duplicated array of **SPropValue** structures is stored.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="96de7-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="96de7-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="96de7-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="96de7-121">Return value</span></span>
 
 <span data-ttu-id="96de7-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="96de7-122">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e2d5190-e67a-470d-8177-0f0ba20c7b82
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 649046aa48f293caa5bd71cc670481b5c205459a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -87,7 +87,7 @@ return (BOOL)3;
   
 > <span data-ttu-id="9bbfc-140">[in] Ein 32-Bit-Parameter Fenster-Nachrichten zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="9bbfc-140">[in] A 32-bit parameter associated with window messages.</span></span> <span data-ttu-id="9bbfc-141">Mögliche Werte hängen von der in der _wMsgID_ -Parameter angegebenen Nachricht ab.</span><span class="sxs-lookup"><span data-stu-id="9bbfc-141">Possible values depend on the message specified in the  _wMsgID_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="9bbfc-142">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9bbfc-142">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="9bbfc-142">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9bbfc-142">Return value</span></span>
 
 <span data-ttu-id="9bbfc-143">Der von einer **SERVICEWIZARDDLGPROC** Basis-Funktion zurückgegebene Wert ist die empfangene Meldung Fenster abhängig.</span><span class="sxs-lookup"><span data-stu-id="9bbfc-143">The value returned by a **SERVICEWIZARDDLGPROC** based function is dependent on the window message received.</span></span> <span data-ttu-id="9bbfc-144">Beachten Sie insbesondere, dass die außergewöhnliche Wert für die Nachricht WIZ_QUERYNUMPAGES zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="9bbfc-144">Note in particular the exceptional return value for the WIZ_QUERYNUMPAGES message.</span></span> <span data-ttu-id="9bbfc-145">Normale zurückgegebenen Werte sind:</span><span class="sxs-lookup"><span data-stu-id="9bbfc-145">The normal return values are:</span></span> 
   

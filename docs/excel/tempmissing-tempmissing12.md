@@ -11,7 +11,7 @@ keywords:
 - Tempmissing-Funktion [excel 2007], TempMissing12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: d9cb6afc-1fbb-45d6-88e5-84eba3af3c60
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a6db2e1f2917ecd9361043577f4bf203b3267a5c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -34,7 +34,7 @@ LPXLOPER12 TempMissing12(void);
 
 <span data-ttu-id="52543-108">Diese Funktion verwendet keine Parameter.</span><span class="sxs-lookup"><span data-stu-id="52543-108">This function takes no parameters.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="52543-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="52543-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="52543-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="52543-109">Return value</span></span>
 
 <span data-ttu-id="52543-110">Gibt einen Zeiger auf eine **XLOPER** **XltypeMissing** / **XLOPER12**.</span><span class="sxs-lookup"><span data-stu-id="52543-110">Returns a pointer to an **xltypeMissing** **XLOPER**/ **XLOPER12**.</span></span>
   

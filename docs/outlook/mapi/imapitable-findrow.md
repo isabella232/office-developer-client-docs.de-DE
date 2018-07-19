@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6511368c-9777-497e-9eea-cf390c04b92e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: cb777074d1657a3ee5c2f1e9f70d2b304858c1b2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="303a1-122">Sucht rückwärts aus der Zeile, die durch die Textmarke identifiziert.</span><span class="sxs-lookup"><span data-stu-id="303a1-122">Searches backward from the row identified by the bookmark.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="303a1-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="303a1-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="303a1-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="303a1-123">Return value</span></span>
 
 <span data-ttu-id="303a1-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="303a1-124">S_OK</span></span> 
   

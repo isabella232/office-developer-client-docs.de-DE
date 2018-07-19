@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33bef4ea-d6c0-4455-b95d-4b29edb9c0bc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 98e6331d5a9e52d5ae73ed12d8c045bdf226c2c4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -43,7 +43,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="76687-111">Der Nachrichtenspeicher ist vorübergehend und sollten nicht auf die Nachricht Store-Tabelle hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="76687-111">The message store is temporary and should not be added to the message store table.</span></span> <span data-ttu-id="76687-112">Wenn MDB_TEMPORARY festgelegt ist, gibt **ModifyProfile** sofort S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="76687-112">When MDB_TEMPORARY is set, **ModifyProfile** returns S_OK immediately.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="76687-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="76687-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="76687-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="76687-113">Return value</span></span>
 
 <span data-ttu-id="76687-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="76687-114">S_OK</span></span> 
   

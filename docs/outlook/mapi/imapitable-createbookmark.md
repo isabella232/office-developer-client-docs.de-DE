@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 320af2ff-c2a5-43b1-b3a1-76cb5ffd6a4f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 34bd6de95f731c03466f19e0bc4fd6e2c9910900
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ BOOKMARK FAR * lpbkPosition
   
 > <span data-ttu-id="779cb-108">[out] Zeiger auf den zurückgegebenen Textmarke für 32-Bit-Wert.</span><span class="sxs-lookup"><span data-stu-id="779cb-108">[out] Pointer to the returned 32-bit bookmark value.</span></span> <span data-ttu-id="779cb-109">Dieses Lesezeichen kann später in einem Aufruf der [IMAPITable::SeekRow](imapitable-seekrow.md) -Methode übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="779cb-109">This bookmark can later be passed in a call to the [IMAPITable::SeekRow](imapitable-seekrow.md) method.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="779cb-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="779cb-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="779cb-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="779cb-110">Return value</span></span>
 
 <span data-ttu-id="779cb-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="779cb-111">S_OK</span></span> 
   

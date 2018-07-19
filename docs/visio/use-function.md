@@ -30,7 +30,7 @@ ms.locfileid: "19798355"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="c0081-112">_Name_</span><span class="sxs-lookup"><span data-stu-id="c0081-112">_name_</span></span> <br/> |<span data-ttu-id="c0081-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="c0081-113">Required</span></span>  <br/> |<span data-ttu-id="c0081-114">**String**</span><span class="sxs-lookup"><span data-stu-id="c0081-114">**String**</span></span> <br/> |<span data-ttu-id="c0081-115">Beliebige Zeichenfolge, die für einen gültigen Master-Shape-Namen steht.</span><span class="sxs-lookup"><span data-stu-id="c0081-115">Any string that is a valid master name.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="c0081-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c0081-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="c0081-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c0081-116">Return value</span></span>
 
 <span data-ttu-id="c0081-117">Zahl</span><span class="sxs-lookup"><span data-stu-id="c0081-117">Number</span></span>
   

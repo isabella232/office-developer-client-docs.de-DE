@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a16e62b-9d33-41cd-af2b-9abd403b6f2e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7845abc4f3010daf8e13d56ac4b13d0333bad07e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -62,7 +62,7 @@ HRESULT DeleteMessages(
   
 > <span data-ttu-id="66e9c-122">Eine Statusanzeige wird angezeigt, wie der-Vorgang fortgesetzt wird.</span><span class="sxs-lookup"><span data-stu-id="66e9c-122">Displays a progress indicator as the operation proceeds.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="66e9c-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="66e9c-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="66e9c-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="66e9c-123">Return value</span></span>
 
 <span data-ttu-id="66e9c-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="66e9c-124">S_OK</span></span> 
   
@@ -84,7 +84,7 @@ HRESULT DeleteMessages(
 
 <span data-ttu-id="66e9c-138">Diese Rückgabewerte unter folgenden Umständen zu erwarten.</span><span class="sxs-lookup"><span data-stu-id="66e9c-138">Expect these return values under the following conditions.</span></span>
   
-|<span data-ttu-id="66e9c-139">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="66e9c-139">**Condition**</span></span>|<span data-ttu-id="66e9c-140">**R�ckgabewert**</span><span class="sxs-lookup"><span data-stu-id="66e9c-140">**Return value**</span></span>|
+|<span data-ttu-id="66e9c-139">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="66e9c-139">**Condition**</span></span>|<span data-ttu-id="66e9c-140">**Rückgabewert**</span><span class="sxs-lookup"><span data-stu-id="66e9c-140">**Return value**</span></span>|
 |:-----|:-----|
 |<span data-ttu-id="66e9c-141">Jede Nachricht **DeleteMessages** wurde gelöscht.</span><span class="sxs-lookup"><span data-stu-id="66e9c-141">**DeleteMessages** has successfully deleted every message.</span></span>  <br/> |<span data-ttu-id="66e9c-142">S_OK</span><span class="sxs-lookup"><span data-stu-id="66e9c-142">S_OK</span></span>  <br/> |
 |<span data-ttu-id="66e9c-143">**DeleteMessages** konnte nicht erfolgreich jede Nachricht und Unterordner löschen.</span><span class="sxs-lookup"><span data-stu-id="66e9c-143">**DeleteMessages** was unable to successfully delete every message and subfolder.</span></span>  <br/> |<span data-ttu-id="66e9c-144">MAPI_W_PARTIAL_COMPLETION oder MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="66e9c-144">MAPI_W_PARTIAL_COMPLETION or MAPI_E_NOT_FOUND</span></span>  <br/> |

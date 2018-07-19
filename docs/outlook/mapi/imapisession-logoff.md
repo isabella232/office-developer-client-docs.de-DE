@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93e38f6c-4b67-4f2d-bc94-631efec86852
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7d6ccd64fea0af30e81a2db0bcb9630062b4b64d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -57,7 +57,7 @@ HRESULT Logoff(
   
 > <span data-ttu-id="c9194-121">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="c9194-121">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c9194-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c9194-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c9194-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c9194-122">Return value</span></span>
 
 <span data-ttu-id="c9194-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="c9194-123">S_OK</span></span> 
   
@@ -65,7 +65,7 @@ HRESULT Logoff(
     
 ## <a name="remarks"></a><span data-ttu-id="c9194-125">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c9194-125">Remarks</span></span>
 
-<span data-ttu-id="c9194-126">Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet.</span><span class="sxs-lookup"><span data-stu-id="c9194-126">The **IMAPISession::Logoff** method ends a MAPI session.</span></span> <span data-ttu-id="c9194-127">Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="c9194-127">When **Logoff** returns, none of the methods except for [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) can be called.</span></span> 
+<span data-ttu-id="c9194-126">Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet.</span><span class="sxs-lookup"><span data-stu-id="c9194-126">The **IMAPISession::Logoff** method ends a MAPI session.</span></span> <span data-ttu-id="c9194-127">Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="c9194-127">When **Logoff** returns, none of the methods except for [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) can be called.</span></span> 
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="c9194-128">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="c9194-128">Notes to callers</span></span>
 

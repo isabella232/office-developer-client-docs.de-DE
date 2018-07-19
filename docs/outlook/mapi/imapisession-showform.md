@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 233cf936-34db-42d4-b5e3-17a93acb2009
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d20c8e7432903ef9334f066df31694752384d034
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -97,7 +97,7 @@ HRESULT ShowForm(
   
 > <span data-ttu-id="b5822-141">[in] Ein Zeiger auf die Nachrichtenklasse der Nachricht angezeigt wird, klicken Sie im Formular aus der Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) der Nachricht dem Token im Parameter _UlMessageToken_ zugeordneten kopiert.</span><span class="sxs-lookup"><span data-stu-id="b5822-141">[in] A pointer to the message class of the message being displayed in the form, copied from the **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) property of the message associated with the token in the  _ulMessageToken_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="b5822-142">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b5822-142">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b5822-142">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b5822-142">Return value</span></span>
 
 <span data-ttu-id="b5822-143">S_OK</span><span class="sxs-lookup"><span data-stu-id="b5822-143">S_OK</span></span> 
   

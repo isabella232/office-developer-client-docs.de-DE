@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 80ba893d-3380-4db1-9175-f5b84cb57def
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 69ee06ef8c8f5499dec41232d3dc7b374b15a744
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ void CALLERRELEASE(
   
 > <span data-ttu-id="688dd-119">[in] Zeiger auf die [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle für die Tabellenansicht freigegeben wird.</span><span class="sxs-lookup"><span data-stu-id="688dd-119">[in] Pointer to the [IMAPITable : IUnknown](imapitableiunknown.md) interface for the table view being released.</span></span> <span data-ttu-id="688dd-120">Dies ist eine Schnittstelle für das Table-Objekt zurückgegeben, die im Parameter _LppMAPITable_ der [ITableData::HrGetView](itabledata-hrgetview.md) -Methode, die das freizugebende-Objekt erstellt.</span><span class="sxs-lookup"><span data-stu-id="688dd-120">This is an interface for the table object returned in the  _lppMAPITable_ parameter of the [ITableData::HrGetView](itabledata-hrgetview.md) method that created the object to release.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="688dd-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="688dd-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="688dd-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="688dd-121">Return value</span></span>
 
 <span data-ttu-id="688dd-122">Keine</span><span class="sxs-lookup"><span data-stu-id="688dd-122">None</span></span> 
   

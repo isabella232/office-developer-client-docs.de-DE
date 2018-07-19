@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce6b6e6c-7f22-43c2-8182-90cf6db93844
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7062e0b73d2d70be12fb9cead6813ef9c36fdd43
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -64,7 +64,7 @@ HRESULT NewMessage(
   
 > <span data-ttu-id="d7730-121">[out] Ein Zeiger auf einen Zeiger auf ein Ansichtskontext, die für die Übergabe an ein neues Formular mit der neuen Nachricht geeignet ist.</span><span class="sxs-lookup"><span data-stu-id="d7730-121">[out] A pointer to a pointer to a view context that is appropriate for passing to a new form with the new message.</span></span> <span data-ttu-id="d7730-122">Wenn das Formular eine eigene Ansichtskontext implementiert, kann der NULL im _PpViewContext_ -Parameter übergeben werden.</span><span class="sxs-lookup"><span data-stu-id="d7730-122">If the form implements its own view context, NULL can be passed in the  _ppViewContext_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="d7730-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d7730-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d7730-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d7730-123">Return value</span></span>
 
 <span data-ttu-id="d7730-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="d7730-124">S_OK</span></span> 
   

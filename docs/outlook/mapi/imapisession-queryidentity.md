@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2cdda90-5457-49a7-b98c-7273ffe5cbbc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c8f05707d63f922c9ce22e6e520c6c57e686f884
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT QueryIdentity(
   
 > <span data-ttu-id="3e3cb-110">[out] Ein Zeiger auf einen Zeiger auf die Eintrags-ID des Objekts, das die primäre Identität bereitstellt.</span><span class="sxs-lookup"><span data-stu-id="3e3cb-110">[out] A pointer to a pointer to the entry identifier of the object that provides the primary identity.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="3e3cb-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3e3cb-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3e3cb-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3e3cb-111">Return value</span></span>
 
 <span data-ttu-id="3e3cb-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="3e3cb-112">S_OK</span></span> 
   

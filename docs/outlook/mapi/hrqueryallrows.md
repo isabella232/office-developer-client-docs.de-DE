@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5c62e5919c6e605aa4b60f48072996ed1fd4c355
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -70,7 +70,7 @@ HRESULT HrQueryAllRows(
   
 > <span data-ttu-id="ee272-129">[out] Zeiger auf einen Zeiger auf das zurückgegebene [SRowSet](srowset.md) -Struktur, die ein Array von Zeigern für die abgerufenen Zeilen enthält.</span><span class="sxs-lookup"><span data-stu-id="ee272-129">[out] Pointer to a pointer to the returned [SRowSet](srowset.md) structure that contains an array of pointers to the retrieved table rows.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ee272-130">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ee272-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ee272-130">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ee272-130">Return value</span></span>
 
 <span data-ttu-id="ee272-131">S_OK</span><span class="sxs-lookup"><span data-stu-id="ee272-131">S_OK</span></span> 
   

@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: db5ce6576da6f925093ae413c5c5124b2a1a996f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -129,7 +129,7 @@ ms.locfileid: "19791863"
 - [<span data-ttu-id="ccb2a-155">Installieren des MAPI-Subsystems</span><span class="sxs-lookup"><span data-stu-id="ccb2a-155">Installing the MAPI Subsystem</span></span>](installing-the-mapi-subsystem.md)
 - [<span data-ttu-id="ccb2a-156">Installieren der MAPI-Headerdateien</span><span class="sxs-lookup"><span data-stu-id="ccb2a-156">Install MAPI Header Files</span></span>](how-to-install-mapi-header-files.md)
 - [<span data-ttu-id="ccb2a-157">Auswählen einer bestimmten zu ladenden MAPI-Version</span><span class="sxs-lookup"><span data-stu-id="ccb2a-157">Choose a Specific Version of MAPI to Load</span></span>](how-to-choose-a-specific-version-of-mapi-to-load.md)
-- [<span data-ttu-id="ccb2a-158">Bestimmen der zu verwendenden verknüpfen Methode</span><span class="sxs-lookup"><span data-stu-id="ccb2a-158">Determining Which Linking Method to Use</span></span>](http://msdn.microsoft.com/en-us/library/253b8k2c.aspx)
-- [<span data-ttu-id="ccb2a-159">Verknüpfen einer ausführbaren Datei mit einer DLL</span><span class="sxs-lookup"><span data-stu-id="ccb2a-159">Linking an Executable to a DLL</span></span>](http://msdn.microsoft.com/en-us/library/9yd93633.aspx)
-- [<span data-ttu-id="ccb2a-160">Einrichten der MSI-Keys für die MAPI-DLL</span><span class="sxs-lookup"><span data-stu-id="ccb2a-160">Setting Up the MSI Keys for Your MAPI DLL</span></span>](http://msdn.microsoft.com/en-us/library/ee909494%28v=VS.85%29.aspx)
+- [<span data-ttu-id="ccb2a-158">Bestimmen der zu verwendenden verknüpfen Methode</span><span class="sxs-lookup"><span data-stu-id="ccb2a-158">Determining Which Linking Method to Use</span></span>](http://msdn.microsoft.com/de-de/library/253b8k2c.aspx)
+- [<span data-ttu-id="ccb2a-159">Verknüpfen einer ausführbaren Datei mit einer DLL</span><span class="sxs-lookup"><span data-stu-id="ccb2a-159">Linking an Executable to a DLL</span></span>](http://msdn.microsoft.com/de-de/library/9yd93633.aspx)
+- [<span data-ttu-id="ccb2a-160">Einrichten der MSI-Keys für die MAPI-DLL</span><span class="sxs-lookup"><span data-stu-id="ccb2a-160">Setting Up the MSI Keys for Your MAPI DLL</span></span>](http://msdn.microsoft.com/de-de/library/ee909494%28v=VS.85%29.aspx)
 

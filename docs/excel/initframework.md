@@ -10,7 +10,7 @@ keywords:
 - Initframework-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: c472a14a-92a6-46f6-924c-db8d6199d6fb
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 2d7e3286d794d6f21da9ef83ca44d18ec242c063
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -32,7 +32,7 @@ short WINAPI InitFramework(void);
 
 <span data-ttu-id="efb93-108">Diese Funktion hat keine Argumente.</span><span class="sxs-lookup"><span data-stu-id="efb93-108">This function takes no arguments.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="efb93-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="efb93-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="efb93-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="efb93-109">Return value</span></span>
 
 <span data-ttu-id="efb93-110">Diese Funktion gibt keinen Wert zurück.</span><span class="sxs-lookup"><span data-stu-id="efb93-110">This function does not return a value.</span></span>
   

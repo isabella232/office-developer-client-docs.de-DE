@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 456c207f-5d41-4d0c-94b6-0c58893a6bed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e3c4125bf4fcf1881a0cba9b04a8bb6aa71f527d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -69,7 +69,7 @@ HRESULT SetDefaultStore(
   
 > <span data-ttu-id="06467-129">[in] Ein Zeiger auf die Eintrags-ID des Nachrichtenspeichers, das als Standard vorgesehen ist.</span><span class="sxs-lookup"><span data-stu-id="06467-129">[in] A pointer to the entry identifier of the message store that is intended as the default.</span></span> <span data-ttu-id="06467-130">Wenn ein Client NULL _LpEntryID_übergibt, wird keine Nachrichtenspeicher als Standard ausgewählt.</span><span class="sxs-lookup"><span data-stu-id="06467-130">If a client passes NULL in  _lpEntryID_, no message store is selected as the default.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="06467-131">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="06467-131">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="06467-131">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="06467-131">Return value</span></span>
 
 <span data-ttu-id="06467-132">S_OK</span><span class="sxs-lookup"><span data-stu-id="06467-132">S_OK</span></span> 
   

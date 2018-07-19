@@ -31,7 +31,7 @@ ms.locfileid: "19797020"
 | <span data-ttu-id="9cc4e-112">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="9cc4e-112">_number_</span></span> <br/> |<span data-ttu-id="9cc4e-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9cc4e-113">Required</span></span>  <br/> |<span data-ttu-id="9cc4e-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="9cc4e-114">**Number**</span></span> <br/> |<span data-ttu-id="9cc4e-115">Die zu rundende Zahl.</span><span class="sxs-lookup"><span data-stu-id="9cc4e-115">The number to round.</span></span>  <br/> |
 | <span data-ttu-id="9cc4e-116">_mehrere_</span><span class="sxs-lookup"><span data-stu-id="9cc4e-116">_multiple_</span></span> <br/> |<span data-ttu-id="9cc4e-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9cc4e-117">Required</span></span>  <br/> |<span data-ttu-id="9cc4e-118">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="9cc4e-118">**Number**</span></span> <br/> |<span data-ttu-id="9cc4e-119">Das Vielfache, auf das gerundet werden soll.</span><span class="sxs-lookup"><span data-stu-id="9cc4e-119">The multiple to which to round.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="9cc4e-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9cc4e-120">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="9cc4e-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9cc4e-120">Return value</span></span>
 
 <span data-ttu-id="9cc4e-121">Zahl</span><span class="sxs-lookup"><span data-stu-id="9cc4e-121">Number</span></span>
   

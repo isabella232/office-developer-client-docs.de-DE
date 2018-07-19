@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a261ba0d-cb56-4935-b745-1d4bbd0b8b9d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 8a0b10596bdfdc1ea33f6d170ee1e021193d3788
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT SubmitMessage(
   
 > <span data-ttu-id="134ae-122">[out] Ein Zeiger auf eine Variable, die den Fehlerwert MAPI_E_WAIT oder MAPI_E_NETWORK_ERROR **SubmitMessage**zurückgegebene entspricht.</span><span class="sxs-lookup"><span data-stu-id="134ae-122">[out] A pointer to a variable that corresponds to the MAPI_E_WAIT or MAPI_E_NETWORK_ERROR error value returned by **SubmitMessage**.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="134ae-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="134ae-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="134ae-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="134ae-123">Return value</span></span>
 
 <span data-ttu-id="134ae-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="134ae-124">S_OK</span></span> 
   

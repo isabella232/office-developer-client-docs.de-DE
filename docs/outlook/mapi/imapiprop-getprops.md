@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c7a9cd2-d765-4218-9aee-52df1a2aae6c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 33351235db2a9a3f9d9b67f59e8356a0fa8abfa8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT GetProps(
   
 > <span data-ttu-id="a7259-120">[out] Ein Zeiger auf einen Zeiger auf die abgerufenen Eigenschaftswerte.</span><span class="sxs-lookup"><span data-stu-id="a7259-120">[out] A pointer to a pointer to the retrieved property values.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a7259-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a7259-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a7259-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a7259-121">Return value</span></span>
 
 <span data-ttu-id="a7259-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="a7259-122">S_OK</span></span> 
   

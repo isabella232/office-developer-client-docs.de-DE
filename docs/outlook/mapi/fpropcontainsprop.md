@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43da5b59-7691-49aa-b83c-753d43bfd8fd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: abf33e4167d836aeb88fdefb30ba05840e80ce63
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -69,7 +69,7 @@ BOOL FPropContainsProp(
         
     - <span data-ttu-id="1c4fb-129">FL_LOOSE: Der Vergleich sollte eine Übereinstimmung nach Möglichkeit ignorieren Fall angeben Empfindlichkeit und Zeichen ohne Zwischenraum.</span><span class="sxs-lookup"><span data-stu-id="1c4fb-129">FL_LOOSE: The comparison should indicate a match whenever possible, ignoring case sensitivity and nonspacing characters.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1c4fb-130">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1c4fb-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1c4fb-130">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1c4fb-130">Return value</span></span>
 
 <span data-ttu-id="1c4fb-131">TRUE</span><span class="sxs-lookup"><span data-stu-id="1c4fb-131">TRUE</span></span> 
   

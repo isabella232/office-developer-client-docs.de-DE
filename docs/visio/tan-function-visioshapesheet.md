@@ -30,7 +30,7 @@ ms.locfileid: "19798238"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="39040-112">_Winkel_</span><span class="sxs-lookup"><span data-stu-id="39040-112">_angle_</span></span> <br/> |<span data-ttu-id="39040-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="39040-113">Required</span></span>  <br/> |<span data-ttu-id="39040-114">**Numerisch**</span><span class="sxs-lookup"><span data-stu-id="39040-114">**Numeric**</span></span> <br/> |<span data-ttu-id="39040-115">Der Winkel, dessen den Tangens abgerufen werden soll.</span><span class="sxs-lookup"><span data-stu-id="39040-115">The angle of which to get the tangent.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="39040-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39040-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="39040-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39040-116">Return value</span></span>
 
 <span data-ttu-id="39040-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="39040-117">Numeric</span></span>
   

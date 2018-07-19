@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac31cf65-a2bc-4c8e-91a4-d2903aa98776
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 28a802ffc43b08d3e2ec2be26dd98fa78f474d91
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ SCODE ScCopyNotifications(
   
 > <span data-ttu-id="c543b-120">[out] Optionaler Zeiger auf eine Variable, die die Größe in Bytes des Arrays mit der _Rgntf_ -Parameter, in dem gezeigt wird gespeichert.</span><span class="sxs-lookup"><span data-stu-id="c543b-120">[out] Optional pointer to a variable where the size, in bytes, of the array pointed to by the  _rgntf_ parameter is stored.</span></span> <span data-ttu-id="c543b-121">Wenn nicht NULL-Wert der _pcb_ -Parameter wird festgelegt, um die Anzahl von Bytes, die im Parameter _PvDst_ gespeichert.</span><span class="sxs-lookup"><span data-stu-id="c543b-121">If not NULL, the  _pcb_ parameter is set to the number of bytes stored in the  _pvDst_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c543b-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c543b-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c543b-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c543b-122">Return value</span></span>
 
 <span data-ttu-id="c543b-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="c543b-123">S_OK</span></span>
   

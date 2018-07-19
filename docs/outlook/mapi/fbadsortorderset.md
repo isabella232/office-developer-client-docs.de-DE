@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b7f80e0a-8ddd-4b24-ab63-2078a8152058
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0e200ea20c55cfd5729ce4c1f590de2d61ca73bc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG FBadSortOrderSet(
   
 > <span data-ttu-id="38a48-114">[in] Zeiger auf eine [SSortOrderSet](ssortorderset.md) -Struktur, die die Sortierreihenfolge festlegen zu überprüfenden identifiziert.</span><span class="sxs-lookup"><span data-stu-id="38a48-114">[in] Pointer to an [SSortOrderSet](ssortorderset.md) structure identifying the sort order set to be validated.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="38a48-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="38a48-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="38a48-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="38a48-115">Return value</span></span>
 
 <span data-ttu-id="38a48-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="38a48-116">TRUE</span></span> 
   

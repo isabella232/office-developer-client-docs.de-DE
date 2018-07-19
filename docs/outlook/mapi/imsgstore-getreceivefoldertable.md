@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d115ab58-07d2-4b49-8e08-2881c2924102
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8146b5c2b9c9fb5429a9c1d46bca687c32bcf3dc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -51,7 +51,7 @@ HRESULT GetReceiveFolderTable(
   
 > <span data-ttu-id="abd68-117">[out] Ein Zeiger auf einen Zeiger auf den Ordner-empfangen-Tabelle.</span><span class="sxs-lookup"><span data-stu-id="abd68-117">[out] A pointer to a pointer to the receive folder table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="abd68-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="abd68-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="abd68-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="abd68-118">Return value</span></span>
 
 <span data-ttu-id="abd68-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="abd68-119">S_OK</span></span> 
   

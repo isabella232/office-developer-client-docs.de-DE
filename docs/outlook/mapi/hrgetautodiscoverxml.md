@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: da466fc9add8cbc385014782f31749d3b6522da9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ HRESULT HrGetAutoDiscoverXML(
     
  <span data-ttu-id="04877-126">_ppXmlStream_</span><span class="sxs-lookup"><span data-stu-id="04877-126">_ppXmlStream_</span></span>
   
-> <span data-ttu-id="04877-127">[out] Ein Zeiger auf ein [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Objekt, das die AutoErmittlung XML enthält.</span><span class="sxs-lookup"><span data-stu-id="04877-127">[out] A pointer to an [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) object that contains the autodiscovery XML.</span></span> <span data-ttu-id="04877-128">Gibt **null** zurück, wenn der AutoErmittlung-Vorgang fehlschlägt.</span><span class="sxs-lookup"><span data-stu-id="04877-128">Returns **null** if the autodiscovery operation fails.</span></span> <span data-ttu-id="04877-129">Wenn Sie mit ihm fertig sind, müssen Sie [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Objekt freigeben.</span><span class="sxs-lookup"><span data-stu-id="04877-129">You must release the [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) object when you are finished with it.</span></span> 
+> <span data-ttu-id="04877-127">[out] Ein Zeiger auf ein [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Objekt, das die AutoErmittlung XML enthält.</span><span class="sxs-lookup"><span data-stu-id="04877-127">[out] A pointer to an [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) object that contains the autodiscovery XML.</span></span> <span data-ttu-id="04877-128">Gibt **null** zurück, wenn der AutoErmittlung-Vorgang fehlschlägt.</span><span class="sxs-lookup"><span data-stu-id="04877-128">Returns **null** if the autodiscovery operation fails.</span></span> <span data-ttu-id="04877-129">Wenn Sie mit ihm fertig sind, müssen Sie [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Objekt freigeben.</span><span class="sxs-lookup"><span data-stu-id="04877-129">You must release the [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) object when you are finished with it.</span></span> 
     
 ## <a name="return-values"></a><span data-ttu-id="04877-130">Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="04877-130">Return values</span></span>
 
@@ -75,7 +75,7 @@ HRESULT HrGetAutoDiscoverXML(
     
 <span data-ttu-id="04877-133">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="04877-133">E_INVALIDARG</span></span> 
   
--  <span data-ttu-id="04877-134">_PwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _PpXmlStream_ ist ein **null** -Zeiger auf eine [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Objekt.</span><span class="sxs-lookup"><span data-stu-id="04877-134">_pwzAddress_ is **null** or is not a valid SMTP address, or  _ppXmlStream_ is a **null** pointer to an [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) object.</span></span> 
+-  <span data-ttu-id="04877-134">_PwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _PpXmlStream_ ist ein **null** -Zeiger auf eine [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) -Objekt.</span><span class="sxs-lookup"><span data-stu-id="04877-134">_pwzAddress_ is **null** or is not a valid SMTP address, or  _ppXmlStream_ is a **null** pointer to an [IStream](http://msdn.microsoft.com/de-de/library/aa380034%28VS.85%29.aspx) object.</span></span> 
     
 <span data-ttu-id="04877-135">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="04877-135">MAPI_E_NOT_FOUND</span></span> 
   

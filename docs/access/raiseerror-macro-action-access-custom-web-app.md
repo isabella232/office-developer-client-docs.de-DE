@@ -19,10 +19,10 @@ ms.locfileid: "19790344"
 <span data-ttu-id="9ce61-104">Die **Auslösenfehler** -Aktion zeigt ein Popupfenster, das eine angegebene Fehlermeldung enthält.</span><span class="sxs-lookup"><span data-stu-id="9ce61-104">The **RaiseError** action displays a popup window that contains a specified error message.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="9ce61-p101">[!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="9ce61-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) to build no-code business solutions for the web and mobile devices.</span></span> 
+> <span data-ttu-id="9ce61-p101"> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen.</span><span class="sxs-lookup"><span data-stu-id="9ce61-p101">Microsoft no longer recommends creating and using Access web apps in SharePoint. As an alternative, consider using [Microsoft PowerApps](https://powerapps.microsoft.com/de-de/) to build no-code business solutions for the web and mobile devices.</span></span> 
   
 > [!NOTE]
-> <span data-ttu-id="9ce61-107">[!HINWEIS] Die **AuslösenFehler** -Aktion ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9ce61-107">The **RaiseError** action is available only in Data Macros.</span></span> 
+> <span data-ttu-id="9ce61-107"> Die **AuslösenFehler** -Aktion ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9ce61-107">The **RaiseError** action is available only in Data Macros.</span></span> 
   
 ## <a name="setting"></a><span data-ttu-id="9ce61-108">Einstellung</span><span class="sxs-lookup"><span data-stu-id="9ce61-108">Setting</span></span>
 

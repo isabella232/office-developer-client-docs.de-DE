@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6800fd3a-aa43-45fe-9cc2-102d0ef43edf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 51cd838164e3de28ab33d6ab8a08a021360f3183
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT GetOneOffTable(
   
 > <span data-ttu-id="56e7a-114">[out] Ein Zeiger auf einen Zeiger auf die einmaligen Tabelle.</span><span class="sxs-lookup"><span data-stu-id="56e7a-114">[out] A pointer to a pointer to the one-off table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="56e7a-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="56e7a-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="56e7a-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="56e7a-115">Return value</span></span>
 
 <span data-ttu-id="56e7a-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="56e7a-116">S_OK</span></span> 
   

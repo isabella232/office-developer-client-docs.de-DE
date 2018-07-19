@@ -33,7 +33,7 @@ ms.locfileid: "19797298"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="f69d1-116">_lcid_or_bcp47_</span><span class="sxs-lookup"><span data-stu-id="f69d1-116">_lcid_or_bcp47_</span></span> <br/> |<span data-ttu-id="f69d1-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="f69d1-117">Required</span></span>  <br/> |<span data-ttu-id="f69d1-118">**String**</span><span class="sxs-lookup"><span data-stu-id="f69d1-118">**String**</span></span> <br/> |<span data-ttu-id="f69d1-119">Der LCID oder BCP 47 Wert für die Sprache.</span><span class="sxs-lookup"><span data-stu-id="f69d1-119">The LCID or BCP 47 value for the language.</span></span>  <br/> |
    
-## <a name="return-value"></a><span data-ttu-id="f69d1-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f69d1-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f69d1-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f69d1-120">Return value</span></span>
 
 <span data-ttu-id="f69d1-121">Integer</span><span class="sxs-lookup"><span data-stu-id="f69d1-121">Integer</span></span>
   

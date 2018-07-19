@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c3dcd0d4-018a-47b0-b040-227034ed59d8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 03375a11be3f6f128db5f6147c5fbe901d0a0fa9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -87,7 +87,7 @@ HRESULT ABProviderInit(
   
 > <span data-ttu-id="ceec1-135">[out] Zeiger auf einen Zeiger auf das initialisierten Address Book Anbieter-Objekt.</span><span class="sxs-lookup"><span data-stu-id="ceec1-135">[out] Pointer to a pointer to the initialized address book provider object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="ceec1-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ceec1-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ceec1-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ceec1-136">Return value</span></span>
 
 <span data-ttu-id="ceec1-137">S_OK</span><span class="sxs-lookup"><span data-stu-id="ceec1-137">S_OK</span></span> 
   

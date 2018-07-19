@@ -24,7 +24,7 @@ ms.locfileid: "19797583"
 
 <span data-ttu-id="c1bd0-106">PAGECOUNT ()</span><span class="sxs-lookup"><span data-stu-id="c1bd0-106">PAGECOUNT ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="c1bd0-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c1bd0-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="c1bd0-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c1bd0-107">Return value</span></span>
 
 <span data-ttu-id="c1bd0-108">Number</span><span class="sxs-lookup"><span data-stu-id="c1bd0-108">Number</span></span>
   

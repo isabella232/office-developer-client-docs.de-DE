@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 44a12c92-7462-4acf-9520-5d4c2d7f1d47
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a591a49c1cb0ec936d09d59b4632d15e4842dd2a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ ULONG FAR * lpulCount
   
 > <span data-ttu-id="e4f1a-110">[out] Zeiger auf die Anzahl der Zeilen in der Tabelle.</span><span class="sxs-lookup"><span data-stu-id="e4f1a-110">[out] Pointer to the number of rows in the table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e4f1a-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e4f1a-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e4f1a-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e4f1a-111">Return value</span></span>
 
 <span data-ttu-id="e4f1a-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="e4f1a-112">S_OK</span></span> 
   

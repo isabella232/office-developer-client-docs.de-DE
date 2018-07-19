@@ -8,7 +8,7 @@ keywords:
 - XLL-Funktionen [excel 2007], ersetzen Sie im Dialogfeld Ersetzen Dialogfeld aufrufen Feld [Excel 2007] aufrufende XLL-Funktionen, Funktions-Assistenten [Excel 2007], [Excel 2007] XLL-Funktionen, XLL-Funktionen aufrufen Aufrufen in Funktions-Assistenten
 localization_priority: Normal
 ms.assetid: dc7e840e-6d1d-427b-97f9-7912e60ec954
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7ebb33a5b98cebedfca7fb5923e62486bfd85696
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

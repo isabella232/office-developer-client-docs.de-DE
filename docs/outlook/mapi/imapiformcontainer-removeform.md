@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f851ce8-bd01-4ea5-86e0-e44323cc0aab
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0d2c908f86ccd66ffd3a2eb2506d129ee2a14d48
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT RemoveForm(
   
 > <span data-ttu-id="6dd0e-108">[in] Eine Zeichenfolge, die den Namen die Nachrichtenklasse des Formulars aus dem Container Formular entfernt werden soll.</span><span class="sxs-lookup"><span data-stu-id="6dd0e-108">[in] A string that names the message class of the form to be removed from the form container.</span></span> <span data-ttu-id="6dd0e-109">Nachrichtenklassennamen sind immer noch nie Unicode-ANSI-Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="6dd0e-109">Message class names are always ANSI strings, never Unicode.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6dd0e-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6dd0e-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6dd0e-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6dd0e-110">Return value</span></span>
 
 <span data-ttu-id="6dd0e-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="6dd0e-111">S_OK</span></span> 
   

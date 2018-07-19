@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 74c52b96-e903-444b-8bda-73a08f278c22
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 527a7bb3201a4a6b1bc0807136bc88b80c189de2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT DoProgressDialog(
   
 > <span data-ttu-id="27f67-116">[out] Ein Zeiger auf einen Zeiger auf das Objekt ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="27f67-116">[out] A pointer to a pointer to the progress object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="27f67-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="27f67-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="27f67-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="27f67-117">Return value</span></span>
 
 <span data-ttu-id="27f67-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="27f67-118">S_OK</span></span> 
   

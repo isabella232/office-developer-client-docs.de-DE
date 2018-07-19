@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43b51a66-71fa-4e10-93e4-d533b48af4de
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c20cd7f82df2fb7f878db177fdc940022e1da351
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT GetSearchPath(
   
 > <span data-ttu-id="c3770-114">[out] Ein Zeiger auf einen Zeiger auf eine sortierte Liste der Container-Eintragsbezeichner.</span><span class="sxs-lookup"><span data-stu-id="c3770-114">[out] A pointer to a pointer to an ordered list of container entry identifiers.</span></span> <span data-ttu-id="c3770-115">**GetSearchPath** speichert die sortierte Liste in eine [SRowSet](srowset.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="c3770-115">**GetSearchPath** stores the ordered list in an [SRowSet](srowset.md) structure.</span></span> <span data-ttu-id="c3770-116">Wenn keine Container in der Adressbuchhierarchie vorhanden sind, wird 0 (null) in der Struktur **SRowSet** zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="c3770-116">If there are no containers in the address book hierarchy, zero is returned in the **SRowSet** structure.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c3770-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c3770-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c3770-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c3770-117">Return value</span></span>
 
 <span data-ttu-id="c3770-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="c3770-118">S_OK</span></span> 
   

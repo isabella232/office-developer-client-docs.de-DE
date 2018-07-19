@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8674b288-43a3-6376-35ca-9dbaa3a1851e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 81771a263a7496042d4950b465c0d5b03290399b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT IConverterSession::SetTextWrapping (
   
 > <span data-ttu-id="79ce8-110">[in] Der Textumbruch Breite zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="79ce8-110">[in] The text wrapping width to use.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="79ce8-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="79ce8-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="79ce8-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="79ce8-111">Return value</span></span>
 
 <span data-ttu-id="79ce8-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="79ce8-112">S_OK</span></span>
   

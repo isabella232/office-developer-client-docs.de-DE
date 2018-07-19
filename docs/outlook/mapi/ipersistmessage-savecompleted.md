@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83161011-90b4-49cb-9bcd-153a21a10977
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7a82ce9a46017993adfc6c4c755b6c97b847e579
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -37,7 +37,7 @@ HRESULT SaveCompleted(
   
 > <span data-ttu-id="20536-108">[in] Ein Zeiger auf die neu gespeicherte Nachricht.</span><span class="sxs-lookup"><span data-stu-id="20536-108">[in] A pointer to the newly saved message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="20536-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="20536-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="20536-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="20536-109">Return value</span></span>
 
 <span data-ttu-id="20536-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="20536-110">S_OK</span></span> 
   

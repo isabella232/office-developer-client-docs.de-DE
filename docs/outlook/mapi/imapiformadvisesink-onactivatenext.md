@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: db621dfd-c6ad-42d2-8089-db40a63cab36
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3ce4d57ab4837f40ffbc898fde68e44cc802676f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ HRESULT OnActivateNext(
   
 > <span data-ttu-id="ba607-114">[out] Ein Zeiger auf einen Zeiger auf die [IPersistMessage](ipersistmessageiunknown.md) -Implementierung für das Form-Objekt für das neue Formular verwendet wird, wenn ein neues Formular erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="ba607-114">[out] A pointer to a pointer to the [IPersistMessage](ipersistmessageiunknown.md) implementation for the form object used for the new form, if a new form is required.</span></span> <span data-ttu-id="ba607-115">Ein Zeiger auf NULL kann zurückgegeben werden, wenn das aktuelle Formularobjekt zum Anzeigen und speichern die nächste Nachricht verwendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="ba607-115">A pointer to NULL can be returned if the current form object can be used to display and save the next message.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ba607-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ba607-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ba607-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ba607-116">Return value</span></span>
 
 <span data-ttu-id="ba607-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="ba607-117">S_OK</span></span> 
   

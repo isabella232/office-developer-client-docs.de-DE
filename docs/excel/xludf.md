@@ -10,7 +10,7 @@ keywords:
 - XlUDF-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: b608b356-ca5c-47bb-9de8-9b7e2b3924dd
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 8f45f800ca50d2a46792e7cf5e00ac25bd099e8c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ LPXLOPER12 pxArg1, ...);
   
 <span data-ttu-id="c7d9f-114">NULL oder mehr Argumente an die benutzerdefinierte Funktion.</span><span class="sxs-lookup"><span data-stu-id="c7d9f-114">Zero or more arguments to the user-defined function.</span></span> <span data-ttu-id="c7d9f-115">Wenn Sie diese Funktion in Versionen vor Excel 2007 aufrufen, die maximale Anzahl von zusätzlichen Argumenten, die übergeben werden kann, ist 29, 30 einschließlich _PxFnRef_.</span><span class="sxs-lookup"><span data-stu-id="c7d9f-115">When you are calling this function in versions earlier than Excel 2007, the maximum number of additional arguments that can be passed is 29, which is 30 including  _pxFnRef_.</span></span> <span data-ttu-id="c7d9f-116">Ab Excel 2007 dieser Grenze ausgelöst wird in 254, 255 einschließlich _PxFnRef_.</span><span class="sxs-lookup"><span data-stu-id="c7d9f-116">Starting in Excel 2007, this limit is raised to 254, which is 255 including  _pxFnRef_.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="c7d9f-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c7d9f-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c7d9f-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c7d9f-117">Return value</span></span>
 
 <span data-ttu-id="c7d9f-118">Gibt den Wert der benutzerdefinierten Funktion zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="c7d9f-118">Returns whatever value the user-defined function returned.</span></span>
   

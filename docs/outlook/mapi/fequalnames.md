@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4dd58b0b-dc39-4782-a9ec-05e353c90927
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0d8d1b8509f699b20f6e436d8af2c1d0d97cf4ba
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ BOOL FEqualNames(
   
 > <span data-ttu-id="60fb5-116">[in] Zeiger auf eine **MAPINAMEID** -Struktur, die zweite benannte Eigenschaft beschreibt.</span><span class="sxs-lookup"><span data-stu-id="60fb5-116">[in] Pointer to a **MAPINAMEID** structure describing the second named property.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="60fb5-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="60fb5-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="60fb5-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="60fb5-117">Return value</span></span>
 
 <span data-ttu-id="60fb5-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="60fb5-118">TRUE</span></span> 
   

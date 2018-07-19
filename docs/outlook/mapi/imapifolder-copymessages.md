@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4c7d2110-3fcb-4b9f-bf20-1dc1a611161d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e6e9e9cefc75ffc78ee7beb47e89063ea1a66ce7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -76,7 +76,7 @@ HRESULT CopyMessages(
   
 > <span data-ttu-id="80a0d-131">Nachrichten werden anstelle von verschoben werden kopiert.</span><span class="sxs-lookup"><span data-stu-id="80a0d-131">The message or messages are to be moved instead of copied.</span></span> <span data-ttu-id="80a0d-132">Wenn MESSAGE_MOVE nicht festgelegt ist, werden die Nachrichten kopiert.</span><span class="sxs-lookup"><span data-stu-id="80a0d-132">If MESSAGE_MOVE is not set, the messages are copied.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="80a0d-133">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="80a0d-133">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="80a0d-133">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="80a0d-133">Return value</span></span>
 
 <span data-ttu-id="80a0d-134">S_OK</span><span class="sxs-lookup"><span data-stu-id="80a0d-134">S_OK</span></span> 
   
@@ -116,7 +116,7 @@ HRESULT CopyMessages(
   
 <span data-ttu-id="80a0d-162">Diese Rückgabewerte unter folgenden Umständen zu erwarten.</span><span class="sxs-lookup"><span data-stu-id="80a0d-162">Expect these return values under the following conditions.</span></span>
   
-|<span data-ttu-id="80a0d-163">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="80a0d-163">**Condition**</span></span>|<span data-ttu-id="80a0d-164">**R�ckgabewert**</span><span class="sxs-lookup"><span data-stu-id="80a0d-164">**Return value**</span></span>|
+|<span data-ttu-id="80a0d-163">**Bedingung**</span><span class="sxs-lookup"><span data-stu-id="80a0d-163">**Condition**</span></span>|<span data-ttu-id="80a0d-164">**Rückgabewert**</span><span class="sxs-lookup"><span data-stu-id="80a0d-164">**Return value**</span></span>|
 |:-----|:-----|
 |<span data-ttu-id="80a0d-165">**IMAPIFolder::CopyMessages** wurde erfolgreich kopiert oder jeder Nachricht verschoben.</span><span class="sxs-lookup"><span data-stu-id="80a0d-165">**IMAPIFolder::CopyMessages** has successfully copied or moved every message.</span></span>  <br/> |<span data-ttu-id="80a0d-166">S_OK</span><span class="sxs-lookup"><span data-stu-id="80a0d-166">S_OK</span></span>  <br/> |
 |<span data-ttu-id="80a0d-167">**IMAPIFolder::CopyMessages** konnte nicht erfolgreich kopieren oder verschieben Sie jede Nachricht.</span><span class="sxs-lookup"><span data-stu-id="80a0d-167">**IMAPIFolder::CopyMessages** was unable to successfully copy or move every message.</span></span>  <br/> |<span data-ttu-id="80a0d-168">MAPI_W_PARTIAL_COMPLETION</span><span class="sxs-lookup"><span data-stu-id="80a0d-168">MAPI_W_PARTIAL_COMPLETION</span></span>  <br/> |

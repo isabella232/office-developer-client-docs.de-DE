@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: edac715c-6edb-4b05-82e5-c08c3c7cb6d4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a00a9b2200f76dfd600f72bf387467b5792599c6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ SCODE ScBinFromHexBounded(
   
 > <span data-ttu-id="8f552-119">[in] Größe des Parameters _pb_ in Bytes.</span><span class="sxs-lookup"><span data-stu-id="8f552-119">[in] Size, in bytes, of the  _pb_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="8f552-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8f552-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8f552-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8f552-120">Return value</span></span>
 
 <span data-ttu-id="8f552-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="8f552-121">S_OK</span></span>
   

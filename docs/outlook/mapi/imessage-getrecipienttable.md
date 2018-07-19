@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a335dfca-44da-452e-b16f-25d314b1758f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 90ae9cee915296475d7fe64952b40ab7344e89e2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -52,7 +52,7 @@ HRESULT GetRecipientTable(
   
 > <span data-ttu-id="59a51-117">[out] Zeiger auf einen Zeiger auf die Empfänger Tabelle.</span><span class="sxs-lookup"><span data-stu-id="59a51-117">[out] Pointer to a pointer to the recipient table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="59a51-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="59a51-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="59a51-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="59a51-118">Return value</span></span>
 
 <span data-ttu-id="59a51-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="59a51-119">S_OK</span></span> 
   

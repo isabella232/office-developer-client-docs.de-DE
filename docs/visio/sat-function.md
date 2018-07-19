@@ -30,7 +30,7 @@ ms.locfileid: "19797968"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="1520a-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="1520a-112">_expression_</span></span> <br/> |<span data-ttu-id="1520a-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="1520a-113">Required</span></span>  <br/> |<span data-ttu-id="1520a-114">**Varies**</span><span class="sxs-lookup"><span data-stu-id="1520a-114">**Varies**</span></span> <br/> |<span data-ttu-id="1520a-115">Ein Index einer Farbe aus der Farbtabelle des Dokuments, ein Ausdruck, der zu einer benutzerdefinierten Farbe (wie RGB oder HSL) aufgelöst wird, oder ein Bezug auf eine Zelle, die einen Farbindex oder ein Farbergebnis enthält.</span><span class="sxs-lookup"><span data-stu-id="1520a-115">An index of a color in the document's color table, an expression that resolves to a custom color (like RGB or HSL), or a reference to a cell that contains a color index or color result.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="1520a-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1520a-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="1520a-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1520a-116">Return value</span></span>
 
 <span data-ttu-id="1520a-117">Numeric</span><span class="sxs-lookup"><span data-stu-id="1520a-117">Numeric</span></span>
   

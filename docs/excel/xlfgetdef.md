@@ -8,7 +8,7 @@ keywords:
 - xlfgetdef
 localization_priority: Normal
 ms.assetid: 68f5edbd-9040-46d3-acd5-dd51ca82f6fa
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 030c4e501e8a9eb4b6ce29d7fe0e171324b50b5c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

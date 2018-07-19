@@ -24,7 +24,7 @@ ms.locfileid: "19793280"
 <span data-ttu-id="5a141-105">Kopiert eine Zeichenfolge in einen Puffer.</span><span class="sxs-lookup"><span data-stu-id="5a141-105">Copies a string to a buffer.</span></span>
   
 > [!CAUTION]
-> <span data-ttu-id="5a141-106">Nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="5a141-106">Do not use.</span></span> <span data-ttu-id="5a141-107">Erwägen Sie [StringCchCopy hin](http://msdn.microsoft.com/en-us/library/ms647527%28VS.85%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="5a141-107">Consider using [StringCchCopy](http://msdn.microsoft.com/en-us/library/ms647527%28VS.85%29.aspx) instead.</span></span> 
+> <span data-ttu-id="5a141-106">Nicht verwenden.</span><span class="sxs-lookup"><span data-stu-id="5a141-106">Do not use.</span></span> <span data-ttu-id="5a141-107">Erwägen Sie [StringCchCopy hin](http://msdn.microsoft.com/de-de/library/ms647527%28VS.85%29.aspx) .</span><span class="sxs-lookup"><span data-stu-id="5a141-107">Consider using [StringCchCopy](http://msdn.microsoft.com/de-de/library/ms647527%28VS.85%29.aspx) instead.</span></span> 
   
 ```cpp
 LPWSTR MNLS_lstrcpyW(
@@ -42,7 +42,7 @@ LPCWSTR lpString2);
   
 > <span data-ttu-id="5a141-112">[in] Die Null endende Zeichenfolge kopiert werden soll.</span><span class="sxs-lookup"><span data-stu-id="5a141-112">[in] The null-terminated string to be copied.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5a141-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5a141-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5a141-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5a141-113">Return value</span></span>
 
 <span data-ttu-id="5a141-114">Wenn die Funktion erfolgreich ist, ist der Rückgabewert ein Zeiger auf den Puffer.</span><span class="sxs-lookup"><span data-stu-id="5a141-114">If the function succeeds, the return value is a pointer to the buffer.</span></span>
   
@@ -50,11 +50,11 @@ LPCWSTR lpString2);
   
 ## <a name="remarks"></a><span data-ttu-id="5a141-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5a141-116">Remarks</span></span>
 
-<span data-ttu-id="5a141-117">Diese Funktion umschließt die **Lstrcpy** -Funktion.</span><span class="sxs-lookup"><span data-stu-id="5a141-117">This function wraps the **lstrcpy** function.</span></span> <span data-ttu-id="5a141-118">Weitere Informationen finden Sie unter [Lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="5a141-118">For more information, see [lstrcpy](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="5a141-117">Diese Funktion umschließt die **Lstrcpy** -Funktion.</span><span class="sxs-lookup"><span data-stu-id="5a141-117">This function wraps the **lstrcpy** function.</span></span> <span data-ttu-id="5a141-118">Weitere Informationen finden Sie unter [Lstrcpy](http://msdn.microsoft.com/de-de/library/ms647490%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="5a141-118">For more information, see [lstrcpy](http://msdn.microsoft.com/de-de/library/ms647490%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="5a141-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5a141-119">See also</span></span>
 
 
 
-[<span data-ttu-id="5a141-120">lstrcpy</span><span class="sxs-lookup"><span data-stu-id="5a141-120">lstrcpy</span></span>](http://msdn.microsoft.com/en-us/library/ms647490%28VS.85%29.aspx)
+[<span data-ttu-id="5a141-120">lstrcpy</span><span class="sxs-lookup"><span data-stu-id="5a141-120">lstrcpy</span></span>](http://msdn.microsoft.com/de-de/library/ms647490%28VS.85%29.aspx)
 

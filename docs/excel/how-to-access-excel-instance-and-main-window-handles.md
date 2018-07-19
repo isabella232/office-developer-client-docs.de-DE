@@ -8,7 +8,7 @@ keywords:
 - Zugreifen auf excel-Kontrollpunkte, Kontrollpunkte [Excel 2007], den Zugriff auf Excel-Instanzen, die Zugriff auf Fensterhandles [Excel 2007], zugreifen auf
 localization_priority: Normal
 ms.assetid: 21e1dbdc-06fa-4514-9437-c4cffc3b4621
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 035cd2a8423e3ab14f4b2ca4b73fbc39641e54d6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

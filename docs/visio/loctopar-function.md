@@ -32,7 +32,7 @@ ms.locfileid: "19797436"
 | <span data-ttu-id="48d20-116">_srcRef_</span><span class="sxs-lookup"><span data-stu-id="48d20-116">_srcRef_</span></span> <br/> |<span data-ttu-id="48d20-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="48d20-117">Required</span></span>  <br/> |<span data-ttu-id="48d20-118">**String**</span><span class="sxs-lookup"><span data-stu-id="48d20-118">**String**</span></span> <br/> | <span data-ttu-id="48d20-119">Ein Bezug auf eine Zelle im Quellobjekt.</span><span class="sxs-lookup"><span data-stu-id="48d20-119">A reference to a cell in the source object.</span></span>  <br/> |
 | <span data-ttu-id="48d20-120">_Zielbezug_</span><span class="sxs-lookup"><span data-stu-id="48d20-120">_dstRef_</span></span> <br/> |<span data-ttu-id="48d20-121">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="48d20-121">Required</span></span>  <br/> |<span data-ttu-id="48d20-122">**String**</span><span class="sxs-lookup"><span data-stu-id="48d20-122">**String**</span></span> <br/> | <span data-ttu-id="48d20-123">Ein Bezug auf eine Zelle im Zielobjekt.</span><span class="sxs-lookup"><span data-stu-id="48d20-123">A reference to a cell in the destination object.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="48d20-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="48d20-124">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="48d20-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="48d20-124">Return value</span></span>
 
 <span data-ttu-id="48d20-125">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="48d20-125">String</span></span>
   

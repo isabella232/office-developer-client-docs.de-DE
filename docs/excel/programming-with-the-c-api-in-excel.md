@@ -8,7 +8,7 @@ keywords:
 - c api [excel 2007],programming interfaces [Excel 2007],C API [Excel 2007], when to use,C API [Excel 2007], relation to XLM,Excel programming interfaces
 localization_priority: Normal
 ms.assetid: 142bc0ce-7d16-4b69-9799-ce6558da2def
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 459e57d41ef7497c535e51944bbaf24daee84167
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 467242e3-96c9-4280-9cbc-9ecfe3f279cf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: f6902b45cde3e5349d69b6f35c3f8980deb031b4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ ULONG FAR * lpulFlags
   
 > <span data-ttu-id="8e01b-110">[in, out] Bei der Eingabe der Parameter _LpulFlags_ ist reserviert und muss NULL sein.</span><span class="sxs-lookup"><span data-stu-id="8e01b-110">[in, out] On input, the  _lpulFlags_ parameter is reserved and must be zero.</span></span> <span data-ttu-id="8e01b-111">_LpulFlags_ muss NULL sein, bei der Ausgabe.</span><span class="sxs-lookup"><span data-stu-id="8e01b-111">On output,  _lpulFlags_ must be NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="8e01b-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8e01b-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8e01b-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8e01b-112">Return value</span></span>
 
 <span data-ttu-id="8e01b-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="8e01b-113">S_OK</span></span> 
   

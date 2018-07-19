@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: cc4abf1a-c08c-4462-9d7c-6af506dc07c9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 667eda2a018d2a5d712950a31e05ec0ba9bb32ff
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ SCODE ScUNCFromLocalPath(
   
 > <span data-ttu-id="486d6-118">[in] Die Größe des Puffers für die Ausgabezeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="486d6-118">[in] Size of the buffer for the output string.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="486d6-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="486d6-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="486d6-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="486d6-119">Return value</span></span>
 
 <span data-ttu-id="486d6-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="486d6-120">S_OK</span></span>
   

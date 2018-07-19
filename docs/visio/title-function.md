@@ -24,7 +24,7 @@ ms.locfileid: "19798281"
 
 <span data-ttu-id="6ab8a-106">TITEL)</span><span class="sxs-lookup"><span data-stu-id="6ab8a-106">TITLE ()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="6ab8a-107">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6ab8a-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="6ab8a-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6ab8a-107">Return value</span></span>
 
 <span data-ttu-id="6ab8a-108">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="6ab8a-108">String</span></span>
   

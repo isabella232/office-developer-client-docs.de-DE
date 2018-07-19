@@ -39,12 +39,12 @@ BOOL MNLS_IsBadStringPtrW(
   
 > <span data-ttu-id="18655-110">[in] Die maximale Länge der Zeichenfolge in Zeichen einschließlich.</span><span class="sxs-lookup"><span data-stu-id="18655-110">[in] The maximum length of the string in characters including terminator.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="18655-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="18655-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="18655-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="18655-111">Return value</span></span>
 
 <span data-ttu-id="18655-112">Gibt einen booleschen Wert, der True, wenn die Zeichenfolge beschädigt ist.</span><span class="sxs-lookup"><span data-stu-id="18655-112">Returns a Boolean that is true if the string is bad.</span></span>
   
 ## <a name="remarks"></a><span data-ttu-id="18655-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="18655-113">Remarks</span></span>
 
-<span data-ttu-id="18655-114">Diese Funktion umschließt [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="18655-114">This function wraps [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span></span> <span data-ttu-id="18655-115">Weitere Informationen finden Sie unter [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="18655-115">For more information, see [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="18655-114">Diese Funktion umschließt [IsBadStringPtr](http://msdn.microsoft.com/de-de/library/aa366714%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="18655-114">This function wraps [IsBadStringPtr](http://msdn.microsoft.com/de-de/library/aa366714%28VS.85%29.aspx).</span></span> <span data-ttu-id="18655-115">Weitere Informationen finden Sie unter [IsBadStringPtr](http://msdn.microsoft.com/de-de/library/aa366714%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="18655-115">For more information, see [IsBadStringPtr](http://msdn.microsoft.com/de-de/library/aa366714%28VS.85%29.aspx).</span></span>
   
 

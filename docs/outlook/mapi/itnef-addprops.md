@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2d37898b100398218d4f8762cdd3a16943d8f11a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -78,7 +78,7 @@ HRESULT AddProps(
   
 > <span data-ttu-id="1588a-132">[in] Ein Zeiger auf die Liste der Eigenschaften ein-oder Ausschließen von Kapselung.</span><span class="sxs-lookup"><span data-stu-id="1588a-132">[in] A pointer to the list of properties to include in or exclude from encapsulation.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1588a-133">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1588a-133">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1588a-133">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1588a-133">Return value</span></span>
 
 <span data-ttu-id="1588a-134">S_OK</span><span class="sxs-lookup"><span data-stu-id="1588a-134">S_OK</span></span> 
   

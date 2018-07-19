@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4569b418-72db-4ba1-8184-e7a0cbac100f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d04e4647eb2bd3c1a494817bd374918beec83a49
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

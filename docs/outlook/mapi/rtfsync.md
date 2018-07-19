@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 627f95e9-39ac-4d43-8f02-687783b09785
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f6afa890f61bb2f394e3cf69e0f2c54699a2ad9e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -59,7 +59,7 @@ HRESULT RTFSync(
   
 > <span data-ttu-id="e7ed9-123">[out] Zeiger auf eine Variable, die angibt, ob eine aktualisierte Nachricht.</span><span class="sxs-lookup"><span data-stu-id="e7ed9-123">[out] Pointer to a variable indicating whether there is an updated message.</span></span> <span data-ttu-id="e7ed9-124">True, wenn es eine aktualisierte Meldung, sonst FALSE ist.</span><span class="sxs-lookup"><span data-stu-id="e7ed9-124">TRUE if there is an updated message, FALSE otherwise.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e7ed9-125">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e7ed9-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e7ed9-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e7ed9-125">Return value</span></span>
 
 <span data-ttu-id="e7ed9-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="e7ed9-126">S_OK</span></span> 
   

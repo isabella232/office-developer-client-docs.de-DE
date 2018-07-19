@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70d5b34c-85b3-4d1f-860e-2838947ba428
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: ed433dc1fcf2a366d2ece07ac06d4e12558e4aa7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -57,7 +57,7 @@ HRESULT OpenTaggedBody(
   
 > <span data-ttu-id="f0b58-122">[out] Ein Zeiger auf einen Zeiger auf ein Stream-Objekt, das den Text aus der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft des übergebenen enthält gekapselte Nachricht und, das die [IStream](http://msdn.microsoft.com/library/stg.istream%28Office.15%29.aspx) -Schnittstelle unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f0b58-122">[out] A pointer to a pointer to a stream object that contains the text from the **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) property of the passed-in encapsulated message and that supports the [IStream](http://msdn.microsoft.com/library/stg.istream%28Office.15%29.aspx) interface.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="f0b58-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f0b58-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f0b58-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f0b58-123">Return value</span></span>
 
 <span data-ttu-id="f0b58-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="f0b58-124">S_OK</span></span> 
   

@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 0de9d4e2-eb3f-40e7-aa24-f430892eb9ec
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 65d4257037b18c8fa68cabe0c08091ec67343fa5
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -30,7 +30,7 @@ int CancelOutstandingRequests(int SessionId)
   
 > <span data-ttu-id="38be0-108">Die ID der Sitzung verwendet wird, durch die Berechnung der abgebrochen.</span><span class="sxs-lookup"><span data-stu-id="38be0-108">The ID of the session used by the canceled calculation.</span></span> <span data-ttu-id="38be0-109">Dieser Wert stimmt den von [OpenSession](opensession.md)zurückgegebenen Wert.</span><span class="sxs-lookup"><span data-stu-id="38be0-109">This value matches the value returned by [OpenSession](opensession.md).</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="38be0-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="38be0-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="38be0-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="38be0-110">Return value</span></span>
 
 <span data-ttu-id="38be0-111">**XlHpcRetSuccess** Wenn das Argument _SessionId_ gültig ist; **XlHpcRetInvalidSessionId** Wenn das _SessionId_ -Argument ungültig ist; **XlHpcRetCallFailed** zu anderen Fehlern.</span><span class="sxs-lookup"><span data-stu-id="38be0-111">**xlHpcRetSuccess** if the  _SessionId_ argument is valid; **xlHpcRetInvalidSessionId** if the  _SessionId_ argument is invalid; **xlHpcRetCallFailed** on other failures.</span></span> 
   

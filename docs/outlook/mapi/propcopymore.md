@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 133d47cf-3592-44f3-8cdd-be402d160ee4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 750d8b8d50acb9cf7340e6553062412667398665
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ SCODE PropCopyMore(
   
 > <span data-ttu-id="9047f-120">[in] Zeiger auf ein Objekt für die **MAPIAllocateMore** Speicherplatz bei Bedarf reserviert werden soll.</span><span class="sxs-lookup"><span data-stu-id="9047f-120">[in] Pointer to an object for which **MAPIAllocateMore** will allocate space if necessary.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="9047f-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9047f-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="9047f-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9047f-121">Return value</span></span>
 
 <span data-ttu-id="9047f-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="9047f-122">S_OK</span></span>
   

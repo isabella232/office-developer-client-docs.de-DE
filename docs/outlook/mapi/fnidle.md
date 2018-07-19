@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6b31bb4-69dd-43de-b62b-abfa99557641
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: bf1a84a1f305580fc9d9085753ab7eb5c62b8aa9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ BOOL (STDAPICALLTYPE FNIDLE)(
   
 > <span data-ttu-id="3b864-116">[in] Zeiger auf einen Block von Arbeitsspeicher, dass MAPI an im Leerlauf Routine übergeben es Zeit wird aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="3b864-116">[in] Pointer to a block of memory that MAPI passes to the idle routine each time it calls it.</span></span> <span data-ttu-id="3b864-117">Dieser Zeiger wird vom [FtgRegisterIdleRoutine](ftgregisteridleroutine.md)an das im Leerlauf MAPI-Modul in der _PvIdleParam_ -Parameter übergeben.</span><span class="sxs-lookup"><span data-stu-id="3b864-117">This pointer is passed to the MAPI idle engine in the  _pvIdleParam_ parameter by [FtgRegisterIdleRoutine](ftgregisteridleroutine.md).</span></span> <span data-ttu-id="3b864-118">Die Daten in den Arbeitsspeicher-Block können für den Anruf an die im Leerlauf Routine, beispielsweise zum Verarbeiten von, welches Objekt oder den aktuellen Status einer langen Operation Kontext bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="3b864-118">The data in the memory block can provide context for the call to the idle routine, such as which object to operate on, or the current state of a lengthy operation.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="3b864-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3b864-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3b864-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3b864-119">Return value</span></span>
 
 <span data-ttu-id="3b864-120">FALSE</span><span class="sxs-lookup"><span data-stu-id="3b864-120">FALSE</span></span> 
   

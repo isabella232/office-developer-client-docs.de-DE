@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98c0eab1-fd7e-46c3-8619-ccd6dc7cf8f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 026a120406b714a50a9191e4761021693a250b94
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT PrepareForm(
   
 > <span data-ttu-id="6068d-114">[out] Ein Zeiger auf ein Token Nachricht, die von der **IMAPISession::ShowForm** -Methode zum Zugriff auf die Meldung _LpMessage_verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="6068d-114">[out] A pointer to a message token, which is used by the **IMAPISession::ShowForm** method to access the message pointed to by  _lpMessage_.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6068d-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6068d-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6068d-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6068d-115">Return value</span></span>
 
 <span data-ttu-id="6068d-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="6068d-116">S_OK</span></span> 
   
@@ -57,11 +57,11 @@ HRESULT PrepareForm(
     
 ## <a name="remarks"></a><span data-ttu-id="6068d-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6068d-118">Remarks</span></span>
 
-<span data-ttu-id="6068d-119">Die **IMAPISession::PrepareForm** -Methode erstellt eine Nachricht Token für die Meldung über den Parameter _LpMessage_ und die Nachricht [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) -Methode aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="6068d-119">The **IMAPISession::PrepareForm** method creates a message token for the message pointed to by the  _lpMessage_ parameter and calls the message's [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) method.</span></span> <span data-ttu-id="6068d-120">Dieses Token wird an **IMAPISession::ShowForm**im _UlMessageToken_ -Parameter übergeben.</span><span class="sxs-lookup"><span data-stu-id="6068d-120">This token is passed in the  _ulMessageToken_ parameter to **IMAPISession::ShowForm**.</span></span> 
+<span data-ttu-id="6068d-119">Die **IMAPISession::PrepareForm** -Methode erstellt eine Nachricht Token für die Meldung über den Parameter _LpMessage_ und die Nachricht [IUnknown:: AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28v=VS.85%29.aspx) -Methode aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="6068d-119">The **IMAPISession::PrepareForm** method creates a message token for the message pointed to by the  _lpMessage_ parameter and calls the message's [IUnknown::AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28v=VS.85%29.aspx) method.</span></span> <span data-ttu-id="6068d-120">Dieses Token wird an **IMAPISession::ShowForm**im _UlMessageToken_ -Parameter übergeben.</span><span class="sxs-lookup"><span data-stu-id="6068d-120">This token is passed in the  _ulMessageToken_ parameter to **IMAPISession::ShowForm**.</span></span> 
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="6068d-121">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="6068d-121">Notes to callers</span></span>
 
-<span data-ttu-id="6068d-122">Wenn der Aufruf von **PrepareForm** erfolgreich ist, Version der Meldung von _LpMessage_ dessen [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, bevor Sie **ShowForm aus**aufrufen.</span><span class="sxs-lookup"><span data-stu-id="6068d-122">If the call to **PrepareForm** succeeds, release the message pointed to by  _lpMessage_ by calling its [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) method before you call **ShowForm**.</span></span> <span data-ttu-id="6068d-123">Installationsfehler, die Nachricht freigeben, bevor Sie **ShowForm aus** aufrufen kann Speicherverluste entstehen.</span><span class="sxs-lookup"><span data-stu-id="6068d-123">Failure to release the message before you call **ShowForm** can cause memory leaks.</span></span> 
+<span data-ttu-id="6068d-122">Wenn der Aufruf von **PrepareForm** erfolgreich ist, Version der Meldung von _LpMessage_ dessen [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, bevor Sie **ShowForm aus**aufrufen.</span><span class="sxs-lookup"><span data-stu-id="6068d-122">If the call to **PrepareForm** succeeds, release the message pointed to by  _lpMessage_ by calling its [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) method before you call **ShowForm**.</span></span> <span data-ttu-id="6068d-123">Installationsfehler, die Nachricht freigeben, bevor Sie **ShowForm aus** aufrufen kann Speicherverluste entstehen.</span><span class="sxs-lookup"><span data-stu-id="6068d-123">Failure to release the message before you call **ShowForm** can cause memory leaks.</span></span> 
   
 ## <a name="mfcmapi-reference"></a><span data-ttu-id="6068d-124">MFCMAPI (engl.) (engl.)</span><span class="sxs-lookup"><span data-stu-id="6068d-124">MFCMAPI reference</span></span>
 

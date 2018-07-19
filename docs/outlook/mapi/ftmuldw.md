@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e135ba67-97be-4ce0-a72e-93c49ed7d6e2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 861a48464193f357224e33eb0348bc7d5372aa10
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ FILETIME FtMulDw(
   
 > <span data-ttu-id="e63a7-116">[in] Ein [FILETIME](filetime.md) -Struktur, die 64-Bit-Ganzzahl ohne Vorzeichen, mit dem im Parameter _Multiplikator_ multipliziert werden enthält.</span><span class="sxs-lookup"><span data-stu-id="e63a7-116">[in] A [FILETIME](filetime.md) structure that contains the unsigned 64-bit integer to be multiplied by the value in the  _Multiplier_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="e63a7-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e63a7-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e63a7-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e63a7-117">Return value</span></span>
 
 <span data-ttu-id="e63a7-118">Die **FtMulDw** -Funktion gibt eine **FILETIME** -Struktur, die das Produkt von zwei Ganzzahlen enthält.</span><span class="sxs-lookup"><span data-stu-id="e63a7-118">The **FtMulDw** function returns a **FILETIME** structure that contains the product of the two integers.</span></span> <span data-ttu-id="e63a7-119">Die beiden Eingabeparameter bleiben unverändert.</span><span class="sxs-lookup"><span data-stu-id="e63a7-119">The two input parameters remain unchanged.</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17875c13-f55b-4538-ac6f-c020281c3175
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 222d8257a802739ee8e513a0ea95a13f4b99322e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT Save(
   
 > <span data-ttu-id="56b10-110">[in] True, um anzugeben, dass die Nachricht, auf das verwiesen ist durch _pMessage_ die Nachricht aus der das Formular geladen oder erstellt wurde. andernfalls, FALSE.</span><span class="sxs-lookup"><span data-stu-id="56b10-110">[in] TRUE to indicate that the message pointed to by  _pMessage_ is the message from which the form was loaded or created; otherwise, FALSE.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="56b10-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="56b10-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="56b10-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="56b10-111">Return value</span></span>
 
 <span data-ttu-id="56b10-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="56b10-112">S_OK</span></span> 
   

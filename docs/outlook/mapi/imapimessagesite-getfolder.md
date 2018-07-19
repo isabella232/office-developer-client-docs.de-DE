@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f4b4147-ed98-47cb-a799-ddf028f8e826
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ea95ea4efbbf50e5551a27eb81fe5d5ab3b73948
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetFolder(
   
 > <span data-ttu-id="3a8e8-109">[out] Ein Zeiger auf einen Zeiger auf den zurückgegebenen Ordner.</span><span class="sxs-lookup"><span data-stu-id="3a8e8-109">[out] A pointer to a pointer to the returned folder.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="3a8e8-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3a8e8-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3a8e8-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3a8e8-110">Return value</span></span>
 
 <span data-ttu-id="3a8e8-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="3a8e8-111">S_OK</span></span> 
   

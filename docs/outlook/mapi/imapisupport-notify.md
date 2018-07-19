@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c16c668e-2c8b-4759-bbca-d0c5662b62e9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: db23d1801bf32fd947a77dfd887c56f75ded5681
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -62,7 +62,7 @@ ULONG FAR * lpulFlags
     
     > <span data-ttu-id="deb1a-122">Eine Rückruffunktion abgebrochen eine synchrone Benachrichtigung.</span><span class="sxs-lookup"><span data-stu-id="deb1a-122">A callback function canceled a synchronous notification.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="deb1a-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="deb1a-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="deb1a-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="deb1a-123">Return value</span></span>
 
 <span data-ttu-id="deb1a-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="deb1a-124">S_OK</span></span> 
   

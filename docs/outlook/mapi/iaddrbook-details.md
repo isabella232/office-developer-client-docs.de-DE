@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4eee4382-98c3-4714-8920-8d72edef00b8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: fbe7f02555f76532896c951f50648c528c250a58
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -95,7 +95,7 @@ HRESULT Details(
   
 > <span data-ttu-id="c15d7-140">Die übergebenen Zeichenfolgen sind im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="c15d7-140">The passed-in strings are in Unicode format.</span></span> <span data-ttu-id="c15d7-141">Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="c15d7-141">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c15d7-142">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c15d7-142">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c15d7-142">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c15d7-142">Return value</span></span>
 
 <span data-ttu-id="c15d7-143">S_OK</span><span class="sxs-lookup"><span data-stu-id="c15d7-143">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9c34538e-5ba4-47c8-8002-85afa9d6c067
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: f3642c890c3922611d57dea6f03aca5606876864
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ LPADRLIST lpRecipList
   
 > <span data-ttu-id="f1298-110">[in] Ein Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die Empfänger der Nachricht beschreibt, auf _LpMessage_zeigt.</span><span class="sxs-lookup"><span data-stu-id="f1298-110">[in] A pointer to an [ADRLIST](adrlist.md) structure that describes the recipients of the message pointed to by  _lpMessage_.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f1298-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f1298-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f1298-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f1298-111">Return value</span></span>
 
 <span data-ttu-id="f1298-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="f1298-112">S_OK</span></span> 
   

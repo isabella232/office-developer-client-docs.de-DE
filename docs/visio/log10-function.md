@@ -30,7 +30,7 @@ ms.locfileid: "19797421"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="887a7-114">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="887a7-114">_number_</span></span> <br/> |<span data-ttu-id="887a7-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="887a7-115">Required</span></span>  <br/> |<span data-ttu-id="887a7-116">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="887a7-116">**Numeric**</span></span> <br/> | <span data-ttu-id="887a7-117">Die Zahl, deren Logarithmus zur Basis 10 ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="887a7-117">The number whose base 10 logarithm you want to find.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="887a7-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="887a7-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="887a7-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="887a7-118">Return value</span></span>
 
 <span data-ttu-id="887a7-119">Numeric</span><span class="sxs-lookup"><span data-stu-id="887a7-119">Numeric</span></span>
   

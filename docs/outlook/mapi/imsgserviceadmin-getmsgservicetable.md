@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 064dd5ca-0108-4045-b17b-0bb29cb93346
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 588a32cb2a468c84dfc513af5e4abf6a9a1d0286
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT GetMsgServiceTable(
   
 > <span data-ttu-id="1b302-110">[out] Ein Zeiger auf einen Zeiger auf die Nachricht Service-Tabelle.</span><span class="sxs-lookup"><span data-stu-id="1b302-110">[out] A pointer to a pointer to the message service table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1b302-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1b302-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1b302-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1b302-111">Return value</span></span>
 
 <span data-ttu-id="1b302-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="1b302-112">S_OK</span></span> 
   

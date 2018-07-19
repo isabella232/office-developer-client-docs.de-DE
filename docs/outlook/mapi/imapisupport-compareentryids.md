@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: be6991d9-6353-4838-bc6b-39de51a94d8d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c939189c2c8f7d3147c3146f55deac0e032ce9df
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -64,7 +64,7 @@ HRESULT CompareEntryIDs(
   
 > <span data-ttu-id="39ecc-118">[out] Ein Zeiger auf das Ergebnis des Vergleichs.</span><span class="sxs-lookup"><span data-stu-id="39ecc-118">[out] A pointer to the result of the comparison.</span></span> <span data-ttu-id="39ecc-119">True, wenn die zwei-Eintragsbezeichner auf dasselbe Objekt verweisen. andernfalls, FALSE.</span><span class="sxs-lookup"><span data-stu-id="39ecc-119">TRUE if the two entry identifiers refer to the same object; otherwise, FALSE.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="39ecc-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39ecc-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="39ecc-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39ecc-120">Return value</span></span>
 
 <span data-ttu-id="39ecc-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="39ecc-121">S_OK</span></span> 
   

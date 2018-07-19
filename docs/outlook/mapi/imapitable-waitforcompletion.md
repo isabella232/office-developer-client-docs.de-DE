@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c7859e033924786e415f9faa9f75021ea47968c6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ ULONG FAR * lpulTableStatus
   
 > <span data-ttu-id="5d3c3-113">[in, out] Bei der Eingabe ein gültiger Zeiger oder NULL.</span><span class="sxs-lookup"><span data-stu-id="5d3c3-113">[in, out] On input, either a valid pointer or NULL.</span></span> <span data-ttu-id="5d3c3-114">Bei der Ausgabe ist _LpulTableStatus_ gültiger Zeiger ist, zeigt es auf den aktuellen Status der Tabelle.</span><span class="sxs-lookup"><span data-stu-id="5d3c3-114">On output, if  _lpulTableStatus_ is a valid pointer, it points to the most recent status of the table.</span></span> <span data-ttu-id="5d3c3-115">Wenn _LpulTableStatus_ NULL ist, werden keine Statusinformationen zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="5d3c3-115">If  _lpulTableStatus_ is NULL, no status information is returned.</span></span> <span data-ttu-id="5d3c3-116">Wenn **WaitForCompletion** nicht erfolgreichen HRESULT-Wert zurückgibt, sind der Inhalt der _LpulTableStatus_ nicht definiert.</span><span class="sxs-lookup"><span data-stu-id="5d3c3-116">If **WaitForCompletion** returns an unsuccessful HRESULT value, the contents of  _lpulTableStatus_ are undefined.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="5d3c3-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5d3c3-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5d3c3-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5d3c3-117">Return value</span></span>
 
 <span data-ttu-id="5d3c3-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="5d3c3-118">S_OK</span></span> 
   

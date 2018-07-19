@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8214390af883432d72f608452b8b944417884fd2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -69,7 +69,7 @@ HRESULT Advise(
   
 > <span data-ttu-id="88a4b-134">[out] Ein Zeiger auf eine Verbindung ungleich NULL-Zahl, die benachrichtigungsregistrierung darstellt.</span><span class="sxs-lookup"><span data-stu-id="88a4b-134">[out] A pointer to a nonzero connection number that represents the notification registration.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="88a4b-135">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="88a4b-135">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="88a4b-135">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="88a4b-135">Return value</span></span>
 
 <span data-ttu-id="88a4b-136">S_OK</span><span class="sxs-lookup"><span data-stu-id="88a4b-136">S_OK</span></span> 
   

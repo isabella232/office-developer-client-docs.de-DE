@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ccd9d623-a3cb-4e66-9649-78c3887cb726
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f58bd8499b63bcd526906f78143b76092f194cb4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -63,7 +63,7 @@ HRESULT GetReceiveFolder(
   
 > <span data-ttu-id="39de1-121">[out] Ein Zeiger auf einen Zeiger auf die Nachrichtenklasse, die explizit als festlegt seine Empfangsordner im Ordner, die auf die _LppEntryID_zeigt.</span><span class="sxs-lookup"><span data-stu-id="39de1-121">[out] A pointer to a pointer to the message class that explicitly sets as its receive folder the folder pointed to by  _lppEntryID_.</span></span> <span data-ttu-id="39de1-122">Diese Nachrichtenklasse sollte entweder der Klasse in der _LpszMessageClass_ -Parameter oder dieser Klasse eine Basisklasse identisch sein.</span><span class="sxs-lookup"><span data-stu-id="39de1-122">This message class should either be the same as the class in the  _lpszMessageClass_ parameter, or a base class of that class.</span></span> <span data-ttu-id="39de1-123">Übergeben von NULL gibt an, dass der Ordner, auf die _LppEntryID_ zeigt den standardmäßigen Ordner für den Nachrichtenspeicher empfangen.</span><span class="sxs-lookup"><span data-stu-id="39de1-123">Passing NULL indicates that the folder pointed to by  _lppEntryID_ is the default receive folder for the message store.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="39de1-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39de1-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="39de1-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39de1-124">Return value</span></span>
 
 <span data-ttu-id="39de1-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="39de1-125">S_OK</span></span> 
   

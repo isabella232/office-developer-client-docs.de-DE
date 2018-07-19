@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f5c6ba8f-4ef5-4d60-b4e6-5b9160ec4e99
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 6e917991e109ac04a14ea7d93eebcf9cce835845
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ ULONG ulFlags
   
 > <span data-ttu-id="28061-108">Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="28061-108">Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="28061-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="28061-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="28061-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="28061-109">Return value</span></span>
 
 <span data-ttu-id="28061-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="28061-110">S_OK</span></span> 
   

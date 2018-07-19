@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e8b5d21e-dc14-4b61-96b3-a51bcfa0d232
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 781146193748cdd9408a3320e90a73a070ced2af
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -51,7 +51,7 @@ ULONG_PTR FAR * lpulConnection
   
 > <span data-ttu-id="58da9-114">[out] Zeiger auf einen Wert ungleich NULL, der die erfolgreiche benachrichtigungsregistrierung darstellt.</span><span class="sxs-lookup"><span data-stu-id="58da9-114">[out] Pointer to a nonzero value that represents the successful notification registration.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="58da9-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="58da9-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="58da9-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="58da9-115">Return value</span></span>
 
 <span data-ttu-id="58da9-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="58da9-116">S_OK</span></span> 
   

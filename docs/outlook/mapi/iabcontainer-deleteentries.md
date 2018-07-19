@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70a24811-0c41-4b44-8c63-7ef807bc9051
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c744407790fecde6b6d89dff669ea4db07ce7701
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT DeleteEntries(
   
 > <span data-ttu-id="8f97a-110">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="8f97a-110">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="8f97a-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8f97a-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8f97a-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8f97a-111">Return value</span></span>
 
 <span data-ttu-id="8f97a-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="8f97a-112">S_OK</span></span> 
   

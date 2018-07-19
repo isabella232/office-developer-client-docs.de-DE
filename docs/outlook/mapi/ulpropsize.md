@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 240f1144-0805-4cd1-9e7d-f2a550a2f160
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: bc00270b167c9f7317fa466d790d5020d961676f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG UlPropSize(
   
 > <span data-ttu-id="4803e-114">[in] Zeiger auf eine [SPropValue](spropvalue.md) -Struktur definieren die Eigenschaft gemessen werden soll.</span><span class="sxs-lookup"><span data-stu-id="4803e-114">[in] Pointer to an [SPropValue](spropvalue.md) structure defining the property to be measured.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="4803e-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4803e-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4803e-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4803e-115">Return value</span></span>
 
 <span data-ttu-id="4803e-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="4803e-116">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33c00752-cdc1-4cbe-8fca-6b06c78bd362
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ccfb503f62ef039700f79cd8852883685f329dfe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ BOOL FPropExists(
   
 > <span data-ttu-id="b50c1-116">[in] Eigenschaftentag für gesucht werden soll.</span><span class="sxs-lookup"><span data-stu-id="b50c1-116">[in] Property tag for which to search.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b50c1-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b50c1-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b50c1-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b50c1-117">Return value</span></span>
 
 <span data-ttu-id="b50c1-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="b50c1-118">TRUE</span></span> 
   

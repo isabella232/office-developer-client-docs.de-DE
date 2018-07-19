@@ -8,7 +8,7 @@ keywords:
 - Funktionen [excel 2007], C-api aus Dll oder Xll aufgerufen
 localization_priority: Normal
 ms.assetid: 87c9e75b-c364-4428-a169-010886313b85
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 7935d86d1c0a460bcbec85157429d99242a73620
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

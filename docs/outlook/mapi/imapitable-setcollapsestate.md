@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 31325e8f-1cf9-49b2-8118-953996b0037f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 252b6d6c7ff74acd5f0b288af48ff2901c2330ad
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ BOOKMARK FAR * lpbkLocation
   
 > <span data-ttu-id="c3deb-114">[out] Zeiger auf eine Textmarke, identifiziert der Zeile in der Tabelle, an der der reduzierte oder erweiterte Zustand neu erstellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="c3deb-114">[out] Pointer to a bookmark identifying the row in the table at which the collapsed or expanded state should be rebuilt.</span></span> <span data-ttu-id="c3deb-115">Dieses Lesezeichen und im _LpbInstanceKey_ -Parameter im Aufruf [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md) übergebenen Instanz Taste identifizieren die gleiche Zeile.</span><span class="sxs-lookup"><span data-stu-id="c3deb-115">This bookmark and the instance key passed in the  _lpbInstanceKey_ parameter in the call to [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md) identify the same row.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c3deb-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c3deb-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c3deb-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c3deb-116">Return value</span></span>
 
 <span data-ttu-id="c3deb-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="c3deb-117">S_OK</span></span> 
   

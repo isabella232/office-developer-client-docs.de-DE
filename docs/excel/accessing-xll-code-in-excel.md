@@ -8,7 +8,7 @@ keywords:
 - Zugriff auf Xll-Code [excel 2007], XLLs [Excel 2007], den Zugriff auf Code, Befehle [Excel 2007], Registrierung, Funktionen [Excel 2007], Registrierung, Aufrufen von XLLs in Excel, Befehle [Excel 2007] registrieren, registrieren Funktionen [Excel 2007]
 localization_priority: Normal
 ms.assetid: 6e4bf1f3-8eca-4be5-9632-75355ac31d61
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 1523f9e8213cb955f1bfd995c42f921b001299fe
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -105,7 +105,7 @@ short WINAPI xll_cmd_name(void)
 
 ```
 
-<span data-ttu-id="8489b-p104">Der R�ckgabewert wird von Excel ignoriert, es sei denn, der Aufruf erfolgt aus einer XLM-Makrovorlage; in diesem Fall wird der R�ckgabewert in **TRUE** oder **FALSE** konvertiert. Sie m�ssen daher 1 zur�ckgeben, wenn der Befehl erfolgreich ausgef�hrt wurde, und 0 bei einem Fehler oder Benutzerabbruch.</span><span class="sxs-lookup"><span data-stu-id="8489b-p104">Excel ignores the return value unless it is called from an XLM macro sheet, in which case the return value is converted to **TRUE** or **FALSE**. You should therefore return 1 if your command executed successfully, and 0 if it failed or was canceled by the user.</span></span>
+<span data-ttu-id="8489b-p104">Der Rückgabewert wird von Excel ignoriert, es sei denn, der Aufruf erfolgt aus einer XLM-Makrovorlage; in diesem Fall wird der Rückgabewert in **TRUE** oder **FALSE** konvertiert. Sie m�ssen daher 1 zur�ckgeben, wenn der Befehl erfolgreich ausgef�hrt wurde, und 0 bei einem Fehler oder Benutzerabbruch.</span><span class="sxs-lookup"><span data-stu-id="8489b-p104">Excel ignores the return value unless it is called from an XLM macro sheet, in which case the return value is converted to **TRUE** or **FALSE**. You should therefore return 1 if your command executed successfully, and 0 if it failed or was canceled by the user.</span></span>
   
 <span data-ttu-id="8489b-152">Erhalten Sie Informationen zu den gewünschten Befehl wie aufgerufen wurde mit der C-API-Funktion **XlfCaller**.</span><span class="sxs-lookup"><span data-stu-id="8489b-152">You can obtain information about how your command was invoked using the C API function **xlfCaller**.</span></span> <span data-ttu-id="8489b-153">Weitere Informationen finden Sie unter [XlfCaller](xlfcaller.md).</span><span class="sxs-lookup"><span data-stu-id="8489b-153">For more information, see [xlfCaller](xlfcaller.md).</span></span>
   

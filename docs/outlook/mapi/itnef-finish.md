@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01a868f4-afda-43ba-bc17-c33ae56b7b7d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 2b95e0dd62d83dd83a064ee4627811fcb24af921
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT Finish(
   
 > <span data-ttu-id="3ae27-114">[out] Ein Zeiger auf einen Zeiger auf eine zurückgegebenen [STnefProblemArray](stnefproblemarray.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="3ae27-114">[out] A pointer to a pointer to a returned [STnefProblemArray](stnefproblemarray.md) structure.</span></span> <span data-ttu-id="3ae27-115">Die **STnefProblemArray** -Struktur gibt an, welche Eigenschaften, falls vorhanden, nicht ordnungsgemäß codiert wurden.</span><span class="sxs-lookup"><span data-stu-id="3ae27-115">The **STnefProblemArray** structure indicates which properties, if any, were not encoded properly.</span></span> <span data-ttu-id="3ae27-116">Wenn NULL in der _LpProblem_ -Parameter übergeben wird, wird kein Problem Array-Eigenschaft zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="3ae27-116">If NULL is passed in the  _lpProblem_ parameter, no property problem array is returned.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="3ae27-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="3ae27-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="3ae27-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3ae27-117">Return value</span></span>
 
 <span data-ttu-id="3ae27-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="3ae27-118">S_OK</span></span> 
   

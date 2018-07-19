@@ -32,7 +32,7 @@ ms.locfileid: "19798214"
 | <span data-ttu-id="e89f8-116">_Zahl2_</span><span class="sxs-lookup"><span data-stu-id="e89f8-116">_number2_</span></span> <br/> |<span data-ttu-id="e89f8-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="e89f8-117">Required</span></span>  <br/> |<span data-ttu-id="e89f8-118">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="e89f8-118">**Numeric**</span></span> <br/> |<span data-ttu-id="e89f8-119">Die zweite Zahl.</span><span class="sxs-lookup"><span data-stu-id="e89f8-119">The second number.</span></span>  <br/> |
 | <span data-ttu-id="e89f8-120">_numberN_</span><span class="sxs-lookup"><span data-stu-id="e89f8-120">_numberN_</span></span> <br/> |<span data-ttu-id="e89f8-121">Optional</span><span class="sxs-lookup"><span data-stu-id="e89f8-121">Optional</span></span>  <br/> |<span data-ttu-id="e89f8-122">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="e89f8-122">**Numeric**</span></span> <br/> |<span data-ttu-id="e89f8-123">Die n-te Zahl.</span><span class="sxs-lookup"><span data-stu-id="e89f8-123">The nth number.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="e89f8-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e89f8-124">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="e89f8-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e89f8-124">Return value</span></span>
 
 <span data-ttu-id="e89f8-125">Numeric</span><span class="sxs-lookup"><span data-stu-id="e89f8-125">Numeric</span></span>
   

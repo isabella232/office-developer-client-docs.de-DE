@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5778dffa-f01b-46b3-9c19-862793740918
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d80671331c2760c574ab32d79115a352ee4bcf25
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -85,7 +85,7 @@ HRESULT LAUNCHWIZARDENTRY(
   
 > <span data-ttu-id="c53df-136">[out] Zeiger auf einen Puffer vom Typ String, in dem die Funktion basierend auf **LAUNCHWIZARDENTRY** den Namen des erstellten Profils zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="c53df-136">[out] Pointer to a string buffer where the function based on **LAUNCHWIZARDENTRY** returns the name of the created profile.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c53df-137">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c53df-137">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c53df-137">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c53df-137">Return value</span></span>
 
 <span data-ttu-id="c53df-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="c53df-138">S_OK</span></span> 
   

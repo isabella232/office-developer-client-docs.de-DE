@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 63c9e316-ee53-4065-8154-449639643ff7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 14abfaadcdb1710a7cb8275c8f82d502aea8300e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT SetLimits(
   
 > <span data-ttu-id="be023-115">Verwendet die Werte in der [IMAPIProgress::Progress](imapiprogress-progress.md) -Methode _UlCount_ und _UlTotal_ -Parameter, die derzeit verarbeiteten Element und die gesamte Elemente, die jeweils auf Inkrement Bearbeitung auf den Vorgang anzugeben.</span><span class="sxs-lookup"><span data-stu-id="be023-115">Uses the values in the [IMAPIProgress::Progress](imapiprogress-progress.md) method's  _ulCount_ and  _ulTotal_ parameters, which indicate the currently processed item and the total items, respectively, to increment progress on the operation.</span></span> <span data-ttu-id="be023-116">Wenn dieses Flag festgelegt ist, können die Werte der globalen unteren und oberen Grenzwerte festgelegt werden soll.</span><span class="sxs-lookup"><span data-stu-id="be023-116">When this flag is set, the values of the global lower and upper limits have to be set.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="be023-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="be023-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="be023-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="be023-117">Return value</span></span>
 
 <span data-ttu-id="be023-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="be023-118">S_OK</span></span> 
   

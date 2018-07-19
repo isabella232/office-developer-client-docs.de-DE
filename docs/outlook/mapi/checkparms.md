@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 328f12f0-e4e7-407f-8eb8-0d4bf543962d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e7a4fde57515f0b8a41b9acf4adb01dd177a7a19
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ HRESULT CheckParms(
   
 > <span data-ttu-id="e1956-116">[in] Zeiger auf das erste Argument im Stapel.</span><span class="sxs-lookup"><span data-stu-id="e1956-116">[in] Pointer to the first argument on the stack.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e1956-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e1956-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e1956-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e1956-117">Return value</span></span>
 
 <span data-ttu-id="e1956-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="e1956-118">S_OK</span></span> 
   

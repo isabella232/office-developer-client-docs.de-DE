@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8c6e7ca2-1824-4cca-bf69-3c1ea52727de
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e63d661ab8c7e410d6a0dd786819cc189813017e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -89,5 +89,5 @@ ms.locfileid: "19794045"
 [<span data-ttu-id="c8bb1-139">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="c8bb1-139">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
 
-[<span data-ttu-id="c8bb1-140">Informationen zur Store-API</span><span class="sxs-lookup"><span data-stu-id="c8bb1-140">About the Store API</span></span>](http://msdn.microsoft.com/en-us/library/aa192884.aspx)
+[<span data-ttu-id="c8bb1-140">Informationen zur Store-API</span><span class="sxs-lookup"><span data-stu-id="c8bb1-140">About the Store API</span></span>](http://msdn.microsoft.com/de-de/library/aa192884.aspx)
 

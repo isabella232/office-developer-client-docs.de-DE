@@ -35,7 +35,7 @@ ms.locfileid: "19797214"
 | <span data-ttu-id="9b527-128">_Y2_</span><span class="sxs-lookup"><span data-stu-id="9b527-128">_y2_</span></span> <br/> |<span data-ttu-id="9b527-129">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9b527-129">Required</span></span>  <br/> |<span data-ttu-id="9b527-130">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="9b527-130">**Number**</span></span> <br/> |<span data-ttu-id="9b527-131">Die _y_-Koordinate eines Punkts auf der zweiten Linie.</span><span class="sxs-lookup"><span data-stu-id="9b527-131">The  _y_-coordinate of a point on the second line.</span></span>  <br/> |
 | <span data-ttu-id="9b527-132">_Winkel2_</span><span class="sxs-lookup"><span data-stu-id="9b527-132">_angle2_</span></span> <br/> |<span data-ttu-id="9b527-133">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="9b527-133">Required</span></span>  <br/> |<span data-ttu-id="9b527-134">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="9b527-134">**Number**</span></span> <br/> |<span data-ttu-id="9b527-135">Der Wert der Zelle Winkel für die zweite Linie.</span><span class="sxs-lookup"><span data-stu-id="9b527-135">The value of the Angle cell for the second line.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="9b527-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9b527-136">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="9b527-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9b527-136">Return value</span></span>
 
 <span data-ttu-id="9b527-137">Zahl</span><span class="sxs-lookup"><span data-stu-id="9b527-137">Number</span></span>
   

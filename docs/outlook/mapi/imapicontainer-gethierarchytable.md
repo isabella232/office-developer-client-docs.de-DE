@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d0c54092-86a3-47e0-8133-72e119e74b65
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b30c6e9840ed5dddfd2d3a5f149a3f0f6e8da605
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ HRESULT GetHierarchyTable(
   
 > <span data-ttu-id="f160f-122">[out] Ein Zeiger auf einen Zeiger auf die Hierarchietabelle.</span><span class="sxs-lookup"><span data-stu-id="f160f-122">[out] A pointer to a pointer to the hierarchy table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="f160f-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f160f-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f160f-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f160f-123">Return value</span></span>
 
 <span data-ttu-id="f160f-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="f160f-124">S_OK</span></span> 
   

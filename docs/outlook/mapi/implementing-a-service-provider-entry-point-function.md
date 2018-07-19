@@ -7,7 +7,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 83ff54c4-86ce-4529-ae45-260dfb763b30
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 632aff9c0f6fc60ee9730b5e43667b5b610ae8df
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -21,7 +21,7 @@ ms.locfileid: "19792543"
   
 <span data-ttu-id="16829-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="16829-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="16829-105">Jeder Dienstanbieter DLL hat einen Eintrag Funktion verweist, die MAPI-aufrufen, um sie zu laden.</span><span class="sxs-lookup"><span data-stu-id="16829-105">Every service provider DLL has an entry point function that MAPI calls to load it.</span></span> <span data-ttu-id="16829-106">Beachten Sie, dass dieser Eintrag Point-Funktion nicht [DllMain](http://msdn.microsoft.com/en-us/library/ms682583.aspx), die Win32-DLL-Einstiegspunktfunktion identisch ist.</span><span class="sxs-lookup"><span data-stu-id="16829-106">Be aware that this entry point function is not the same as [DllMain](http://msdn.microsoft.com/en-us/library/ms682583.aspx), the Win32 DLL entry point function.</span></span>
+<span data-ttu-id="16829-105">Jeder Dienstanbieter DLL hat einen Eintrag Funktion verweist, die MAPI-aufrufen, um sie zu laden.</span><span class="sxs-lookup"><span data-stu-id="16829-105">Every service provider DLL has an entry point function that MAPI calls to load it.</span></span> <span data-ttu-id="16829-106">Beachten Sie, dass dieser Eintrag Point-Funktion nicht [DllMain](http://msdn.microsoft.com/de-de/library/ms682583.aspx), die Win32-DLL-Einstiegspunktfunktion identisch ist.</span><span class="sxs-lookup"><span data-stu-id="16829-106">Be aware that this entry point function is not the same as [DllMain](http://msdn.microsoft.com/de-de/library/ms682583.aspx), the Win32 DLL entry point function.</span></span>
   
 <span data-ttu-id="16829-107">Je nach Typ des vom Dienstanbieter entspricht anderer Prototyp Ihrem Anbieter Eintrag Point-Funktion.</span><span class="sxs-lookup"><span data-stu-id="16829-107">Depending on the type of your provider, your provider entry point function conforms to a different prototype.</span></span> <span data-ttu-id="16829-108">MAPI definiert anderen Eintrag Punkt Prototypen für Dienstanbieter.</span><span class="sxs-lookup"><span data-stu-id="16829-108">MAPI defines different entry point function prototypes for service providers.</span></span>
   

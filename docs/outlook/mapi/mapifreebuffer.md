@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9412594f-8acc-4c7e-a668-4ec1da0ad9cf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 22aad12010a4f367e18443d8c0831c6262cc37fc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG MAPIFreeBuffer(
   
 > <span data-ttu-id="c2184-114">[in] Zeiger auf einen Puffer zuvor reservierter Speicher.</span><span class="sxs-lookup"><span data-stu-id="c2184-114">[in] Pointer to a previously allocated memory buffer.</span></span> <span data-ttu-id="c2184-115">Wenn NULL in der _LpBuffer_ -Parameter übergeben wird, hat **MAPIFreeBuffer** keine Auswirkung.</span><span class="sxs-lookup"><span data-stu-id="c2184-115">If NULL is passed in the  _lpBuffer_ parameter, **MAPIFreeBuffer** does nothing.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c2184-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c2184-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c2184-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c2184-116">Return value</span></span>
 
 <span data-ttu-id="c2184-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="c2184-117">S_OK</span></span> 
   

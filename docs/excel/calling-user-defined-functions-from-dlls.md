@@ -8,7 +8,7 @@ keywords:
 - UDFs [excel 2007], Aufrufen aus Dlls, benutzerdefinierte Funktionen [Excel 2007], Aufrufen aus DLLs DLLs [Excel 2007], Aufrufen von UDFs
 localization_priority: Normal
 ms.assetid: 99a37108-0083-4240-9c6a-3afa8d7a04f6
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 4e893cf1e54489610315dd5c5d57bd78c3c936d0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

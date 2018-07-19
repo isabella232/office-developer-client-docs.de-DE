@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 172f8f53-b837-4286-9236-3f72806d7f1f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 096437f10c5b992a1db55f6a856c38021a81b99a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -68,7 +68,7 @@ HRESULT SelectMultipleForms(
   
 > <span data-ttu-id="a88ea-124">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Array von Formular Informationen-Objekte.</span><span class="sxs-lookup"><span data-stu-id="a88ea-124">[out] A pointer to a pointer to the returned array of form information objects.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a88ea-125">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a88ea-125">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a88ea-125">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a88ea-125">Return value</span></span>
 
 <span data-ttu-id="a88ea-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="a88ea-126">S_OK</span></span> 
   

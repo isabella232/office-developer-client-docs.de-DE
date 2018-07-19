@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 77835b48-43aa-8518-9712-754e84f1e713
-description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
+description: 'Letzte Änderung: Donnerstag, 5. Juli 2012'
 ms.openlocfilehash: 6096118d72dfc51fb60025a55f581ebf97b000a7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -75,11 +75,11 @@ struct DNTBL
     
 <span data-ttu-id="a1d37-121">_pxicc_</span><span class="sxs-lookup"><span data-stu-id="a1d37-121">_pxicc_</span></span>
   
->  <span data-ttu-id="a1d37-122">[out] Zeiger auf die **IExchangeImportContentsChanges** Inhalt-Schnittstelle unterstützt, Herunterladen von Änderungen.</span><span class="sxs-lookup"><span data-stu-id="a1d37-122">[out] Pointer to the **IExchangeImportContentsChanges** contents interface that supports downloading content changes.</span></span> <span data-ttu-id="a1d37-123">Weitere Informationen zu **IExchangeImportContentsChanges**finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="a1d37-123">For more information on **IExchangeImportContentsChanges**, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+>  <span data-ttu-id="a1d37-122">[out] Zeiger auf die **IExchangeImportContentsChanges** Inhalt-Schnittstelle unterstützt, Herunterladen von Änderungen.</span><span class="sxs-lookup"><span data-stu-id="a1d37-122">[out] Pointer to the **IExchangeImportContentsChanges** contents interface that supports downloading content changes.</span></span> <span data-ttu-id="a1d37-123">Weitere Informationen zu **IExchangeImportContentsChanges**finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="a1d37-123">For more information on **IExchangeImportContentsChanges**, see [ICS Evaluation Criteria](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
 <span data-ttu-id="a1d37-124">_pxihc_</span><span class="sxs-lookup"><span data-stu-id="a1d37-124">_pxihc_</span></span>
   
->  <span data-ttu-id="a1d37-125">[out] Zeiger auf die **IExchangeImportHierarchyChanges** Hierarchie-Schnittstelle unterstützt, die Hierarchie inkrementelle Änderungen herunterladen.</span><span class="sxs-lookup"><span data-stu-id="a1d37-125">[out] Pointer to the **IExchangeImportHierarchyChanges** hierarchy interface that supports downloading incremental hierarchy changes.</span></span> <span data-ttu-id="a1d37-126">Weitere Informationen zu **IExchangeImportHierarchyChanges**finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="a1d37-126">For more information on **IExchangeImportHierarchyChanges**, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+>  <span data-ttu-id="a1d37-125">[out] Zeiger auf die **IExchangeImportHierarchyChanges** Hierarchie-Schnittstelle unterstützt, die Hierarchie inkrementelle Änderungen herunterladen.</span><span class="sxs-lookup"><span data-stu-id="a1d37-125">[out] Pointer to the **IExchangeImportHierarchyChanges** hierarchy interface that supports downloading incremental hierarchy changes.</span></span> <span data-ttu-id="a1d37-126">Weitere Informationen zu **IExchangeImportHierarchyChanges**finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="a1d37-126">For more information on **IExchangeImportHierarchyChanges**, see [ICS Evaluation Criteria](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
 <span data-ttu-id="a1d37-127">_pszName_</span><span class="sxs-lookup"><span data-stu-id="a1d37-127">_pszName_</span></span>
   
@@ -91,7 +91,7 @@ struct DNTBL
     
 <span data-ttu-id="a1d37-131">_ulRights_</span><span class="sxs-lookup"><span data-stu-id="a1d37-131">_ulRights_</span></span>
   
->  <span data-ttu-id="a1d37-132">[out] Der Wert der Eigenschaft **[PR_RIGHTS](http://msdn.microsoft.com/en-us/library/ee238052%28v=EXCHG.80%29.aspx)** des Ordners.</span><span class="sxs-lookup"><span data-stu-id="a1d37-132">[out] Value of the **[PR_RIGHTS](http://msdn.microsoft.com/en-us/library/ee238052%28v=EXCHG.80%29.aspx)** property of the folder.</span></span> 
+>  <span data-ttu-id="a1d37-132">[out] Der Wert der Eigenschaft **[PR_RIGHTS](http://msdn.microsoft.com/de-de/library/ee238052%28v=EXCHG.80%29.aspx)** des Ordners.</span><span class="sxs-lookup"><span data-stu-id="a1d37-132">[out] Value of the **[PR_RIGHTS](http://msdn.microsoft.com/de-de/library/ee238052%28v=EXCHG.80%29.aspx)** property of the folder.</span></span> 
     
 <span data-ttu-id="a1d37-133">_feid_</span><span class="sxs-lookup"><span data-stu-id="a1d37-133">_feid_</span></span>
   
@@ -103,7 +103,7 @@ struct DNTBL
     
 <span data-ttu-id="a1d37-137">_rgte_</span><span class="sxs-lookup"><span data-stu-id="a1d37-137">_rgte_</span></span>
   
-> <span data-ttu-id="a1d37-138">[out] Änderungen für normalen (oder nicht ausgeblendeten) und zugeordneten (oder ausgeblendet) Elemente.</span><span class="sxs-lookup"><span data-stu-id="a1d37-138">[out] Changes for normal (or non-hidden) and associated (or hidden) items.</span></span>  <span data-ttu-id="a1d37-139">*Rgte [0]* ist für normale Elemente und *Rgte [1]* ist für verknüpfte Objekte.</span><span class="sxs-lookup"><span data-stu-id="a1d37-139">*rgte[0]*  is for normal items, and  *rgte[1]*  is for associated items.</span></span> <span data-ttu-id="a1d37-140">Outlook wird dieser Member während des Herunterladens, wenn Sie inkrementelle Änderung Synchronisierung (ICS) verwenden.</span><span class="sxs-lookup"><span data-stu-id="a1d37-140">Outlook populates this member during the downloading when using Incremental Change Synchronization (ICS).</span></span> <span data-ttu-id="a1d37-141">Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="a1d37-141">For more information on ICS, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+> <span data-ttu-id="a1d37-138">[out] Änderungen für normalen (oder nicht ausgeblendeten) und zugeordneten (oder ausgeblendet) Elemente.</span><span class="sxs-lookup"><span data-stu-id="a1d37-138">[out] Changes for normal (or non-hidden) and associated (or hidden) items.</span></span>  <span data-ttu-id="a1d37-139">*Rgte [0]* ist für normale Elemente und *Rgte [1]* ist für verknüpfte Objekte.</span><span class="sxs-lookup"><span data-stu-id="a1d37-139">*rgte[0]*  is for normal items, and  *rgte[1]*  is for associated items.</span></span> <span data-ttu-id="a1d37-140">Outlook wird dieser Member während des Herunterladens, wenn Sie inkrementelle Änderung Synchronisierung (ICS) verwenden.</span><span class="sxs-lookup"><span data-stu-id="a1d37-140">Outlook populates this member during the downloading when using Incremental Change Synchronization (ICS).</span></span> <span data-ttu-id="a1d37-141">Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="a1d37-141">For more information on ICS, see [ICS Evaluation Criteria](http://msdn.microsoft.com/de-de/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
 <span data-ttu-id="a1d37-142">_lpsrReserved_</span><span class="sxs-lookup"><span data-stu-id="a1d37-142">_lpsrReserved_</span></span>
   

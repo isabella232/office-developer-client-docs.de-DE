@@ -8,7 +8,7 @@ keywords:
 - Auswertung von Ausdrücken [excel 2007], Arbeitsblätter [Excel 2007], Name zu Evaluierungszwecken Auswerten von Ausdrücken [Excel 2007], auswerten Arbeitsblattnamen [Excel 2007], Ausdrücke [Excel 2007], bewerten, Namen [Excel 2007], bewerten, nennen Sie Evaluierungshandbuch und exemplarische Vorgehensweisen [Excel 2007] , Zeichenfolgen [Excel 2007], konvertieren in Werte, XlfEvaluate-Funktion [Excel 2007], [Excel 2007-Arbeitsblättern, Auswertung von Ausdrücken
 localization_priority: Normal
 ms.assetid: 2b23c75e-2a95-4f26-8714-2a73f5e326a7
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 9d726d89c859e2f7428b459971d5d13586f144e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

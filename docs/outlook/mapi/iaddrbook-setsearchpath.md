@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fbff82de-77d3-411e-a30c-a37cefdd92fc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 4f9d2f4d271e467d8fac32b8f17faa8f66cd3f99
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT SetSearchPath(
   
 > <span data-ttu-id="33d39-110">[in] Ein Zeiger auf die [SRowSet](srowset.md) -Struktur verwendet, um den Suchpfad aufzunehmen.</span><span class="sxs-lookup"><span data-stu-id="33d39-110">[in] A pointer to the [SRowSet](srowset.md) structure used to hold the search path.</span></span> <span data-ttu-id="33d39-111">Die erste Eigenschaft für jedes Mitglied **aRow** in **' srowset '** muss **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).</span><span class="sxs-lookup"><span data-stu-id="33d39-111">The first property for each **aRow** member in **SRowSet** must be **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)).</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="33d39-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="33d39-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="33d39-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="33d39-112">Return value</span></span>
 
 <span data-ttu-id="33d39-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="33d39-113">S_OK</span></span> 
   

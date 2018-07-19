@@ -30,7 +30,7 @@ ms.locfileid: "19797165"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="7151d-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="7151d-112">_expression_</span></span> <br/> |<span data-ttu-id="7151d-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="7151d-113">Required</span></span>  <br/> |<span data-ttu-id="7151d-114">**String**</span><span class="sxs-lookup"><span data-stu-id="7151d-114">**String**</span></span> <br/> |<span data-ttu-id="7151d-115">Ein Ausdruck, der eine Farbe ergibt.</span><span class="sxs-lookup"><span data-stu-id="7151d-115">An expression that evaluates to a color.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="7151d-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7151d-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="7151d-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7151d-116">Return value</span></span>
 
 <span data-ttu-id="7151d-117">Zahl</span><span class="sxs-lookup"><span data-stu-id="7151d-117">Number</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 263b9f24-eac8-4d34-8f66-dc87024b94b9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 127c4a77b9184d8bb62925c5237c1aedec643992
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -90,7 +90,7 @@ HRESULT STDMETHODCALLTYPE OpenStreamOnFileW(
   
 > <span data-ttu-id="e9d83-145">[out] Zeiger auf einen Zeiger auf ein Objekt, das die **IStream** -Schnittstelle verfügbar macht.</span><span class="sxs-lookup"><span data-stu-id="e9d83-145">[out] Pointer to a pointer to an object exposing the **IStream** interface.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="e9d83-146">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e9d83-146">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e9d83-146">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e9d83-146">Return value</span></span>
 
 <span data-ttu-id="e9d83-147">S_OK</span><span class="sxs-lookup"><span data-stu-id="e9d83-147">S_OK</span></span>
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 22de5d38-7be6-48b3-90a7-bc553dcdb042
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: bb4ff6a128b9fed29ff0be5325c21e5600389740
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -65,7 +65,7 @@ SCODE ScRelocNotifications(
   
 > <span data-ttu-id="526fc-122">[out] Zeiger auf die Größe des durch den Parameter _PvBaseNew_ angegebenen Arrays in Bytes.</span><span class="sxs-lookup"><span data-stu-id="526fc-122">[out] Pointer to the size, in bytes, of the array indicated by the  _pvBaseNew_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="526fc-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="526fc-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="526fc-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="526fc-123">Return value</span></span>
 
 <span data-ttu-id="526fc-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="526fc-124">S_OK</span></span>
   

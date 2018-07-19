@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef93ef3d-c159-40ae-9b8d-0af8a0567565
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: dc830665f425b747d2fdb05641dc037a2e84f695
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ void (STDMETHODCALLTYPE DISMISSMODELESS)(
   
 > <span data-ttu-id="16194-118">[in] Zeiger auf einen beliebigen Wert wird an die Rückruffunktion übergeben, wenn MAPI aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="16194-118">[in] Pointer to an arbitrary value passed to the callback function when MAPI calls it.</span></span> <span data-ttu-id="16194-119">Dieser Wert kann eine an die Clientanwendung Vielfache von-Adresse dar.</span><span class="sxs-lookup"><span data-stu-id="16194-119">This value can represent an address of significance to the client application.</span></span> <span data-ttu-id="16194-120">In der Regel ist _LpvContext_ für C++-Code einen Zeiger auf die Adresse des eine C++-Objektinstanz.</span><span class="sxs-lookup"><span data-stu-id="16194-120">Typically, for C++ code,  _lpvContext_ is a pointer to the address of a C++ object instance.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="16194-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="16194-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="16194-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="16194-121">Return value</span></span>
 
 <span data-ttu-id="16194-122">Keine</span><span class="sxs-lookup"><span data-stu-id="16194-122">None</span></span>
   

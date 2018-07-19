@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 67461a38-bb60-467b-901b-39c645e764f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d7601eb50818fa6f39384a6b024215fc4917e83a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -51,7 +51,7 @@ LPSPropValue LpValFindProp(
   
 > <span data-ttu-id="b41fb-118">[in] Ein Array von **SPropValue** -Strukturen, die die Eigenschaften des zu durchsuchenden definiert.</span><span class="sxs-lookup"><span data-stu-id="b41fb-118">[in] Array of **SPropValue** structures that defines the properties to be searched.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="b41fb-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b41fb-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b41fb-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b41fb-119">Return value</span></span>
 
 <span data-ttu-id="b41fb-120">Die **LpValFindProp** -Funktion gibt eine **SPropValue** -Struktur, die die Eigenschaft, die dem input-Eigenschaftentag übereinstimmt definiert, oder NULL, wenn keine Übereinstimmung vorliegt.</span><span class="sxs-lookup"><span data-stu-id="b41fb-120">The **LpValFindProp** function returns an **SPropValue** structure that defines the property that matches the input property tag, or NULL if there is no match.</span></span> 
   

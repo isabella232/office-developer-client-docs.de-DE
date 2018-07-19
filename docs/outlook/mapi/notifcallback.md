@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 416008b4-13aa-4387-8c12-f8f2ca252391
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b14529e987b85d1dcbe3689d4e852a9efd39a396
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ ULONG (STDAPICALLTYPE NOTIFCALLBACK)(
   
 > <span data-ttu-id="25501-121">[out] Zeiger auf den Speicherort, in dem diese Funktion ein Array von [Benachrichtigung](notification.md) Strukturen, schreibt, enthält die ereignisbenachrichtigungen.</span><span class="sxs-lookup"><span data-stu-id="25501-121">[out] Pointer to the location where this function writes an array of [NOTIFICATION](notification.md) structures that contains the event notifications.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="25501-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="25501-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="25501-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="25501-122">Return value</span></span>
 
 <span data-ttu-id="25501-123">Der Satz von gültigen Rückgabewerte für die **NOTIFCALLBACK** Funktionsprototyp hängt davon ab, ob die Funktion von einer Clientanwendung oder einem Dienstanbieter implementiert wird.</span><span class="sxs-lookup"><span data-stu-id="25501-123">The set of valid return values for the **NOTIFCALLBACK** function prototype depends on whether the function is implemented by a client application or a service provider.</span></span> <span data-ttu-id="25501-124">Clients sollte immer S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="25501-124">Clients should always return S_OK.</span></span> <span data-ttu-id="25501-125">Anbieter können S_OK oder CALLBACK_DISCONTINUE zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="25501-125">Providers can return either S_OK or CALLBACK_DISCONTINUE.</span></span> 
   

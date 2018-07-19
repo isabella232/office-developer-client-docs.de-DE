@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5247ca71c88b9c0f8591a732746a17204265741c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT GetIDsFromNames(
   
 > <span data-ttu-id="387a2-121">[out] Ein Zeiger auf einen Zeiger auf ein Array von Eigenschaftentags, vorhandene oder neu zugewiesenen Eigenschaftenbezeichner enthält.</span><span class="sxs-lookup"><span data-stu-id="387a2-121">[out] A pointer to a pointer to an array of property tags that contains existing or newly assigned property identifiers.</span></span> <span data-ttu-id="387a2-122">Die Eigenschaftentypen für die Eigenschaftentags in diesem Array werden auf **PT_UNSPECIFIED**festgelegt.</span><span class="sxs-lookup"><span data-stu-id="387a2-122">The property types for the property tags in this array are set to **PT_UNSPECIFIED**.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="387a2-123">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="387a2-123">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="387a2-123">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="387a2-123">Return value</span></span>
 
 <span data-ttu-id="387a2-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="387a2-124">S_OK</span></span> 
   

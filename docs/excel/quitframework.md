@@ -10,7 +10,7 @@ keywords:
 - Quitframework-Funktion
 localization_priority: Normal
 ms.assetid: d17a3efe-c278-4ef1-b8f9-b958ae012361
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 5c4b122b200d9de0cf098d2bc9e2fbd887ad9ff3
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

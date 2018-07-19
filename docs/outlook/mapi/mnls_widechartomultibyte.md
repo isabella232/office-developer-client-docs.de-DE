@@ -69,17 +69,17 @@ int MNLS_WideCharToMultiByte(
   
 > <span data-ttu-id="5e106-125">[out] Optional.</span><span class="sxs-lookup"><span data-stu-id="5e106-125">[out] Optional.</span></span> <span data-ttu-id="5e106-126">Zeiger auf ein Flag, das angibt, ob die Funktion einer Standardwerte für die Zeichen in der Konvertierung verwendet hat.</span><span class="sxs-lookup"><span data-stu-id="5e106-126">Pointer to a flag that indicates if the function has used a default character in the conversion.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5e106-127">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5e106-127">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5e106-127">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5e106-127">Return value</span></span>
 
 <span data-ttu-id="5e106-128">Gibt die Anzahl der in den Puffer auf den _LpMultiByteStr_ bei erfolgreicher geschriebenen Bytes zurück.</span><span class="sxs-lookup"><span data-stu-id="5e106-128">Returns the number of bytes written to the buffer pointed to by  _lpMultiByteStr_ if successful.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="5e106-129">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5e106-129">Remarks</span></span>
 
-<span data-ttu-id="5e106-130">Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen.</span><span class="sxs-lookup"><span data-stu-id="5e106-130">This function wraps the **WideCharToMultiByte** function.</span></span> <span data-ttu-id="5e106-131">Weitere Informationen finden Sie unter [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="5e106-131">For more information, see [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="5e106-130">Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen.</span><span class="sxs-lookup"><span data-stu-id="5e106-130">This function wraps the **WideCharToMultiByte** function.</span></span> <span data-ttu-id="5e106-131">Weitere Informationen finden Sie unter [WideCharToMultiByte](http://msdn.microsoft.com/de-de/library/dd374130%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="5e106-131">For more information, see [WideCharToMultiByte](http://msdn.microsoft.com/de-de/library/dd374130%28VS.85%29.aspx).</span></span>
   
 ## <a name="see-also"></a><span data-ttu-id="5e106-132">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5e106-132">See also</span></span>
 
 
 
-[<span data-ttu-id="5e106-133">WideCharToMultiByte</span><span class="sxs-lookup"><span data-stu-id="5e106-133">WideCharToMultiByte</span></span>](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx)
+[<span data-ttu-id="5e106-133">WideCharToMultiByte</span><span class="sxs-lookup"><span data-stu-id="5e106-133">WideCharToMultiByte</span></span>](http://msdn.microsoft.com/de-de/library/dd374130%28VS.85%29.aspx)
 

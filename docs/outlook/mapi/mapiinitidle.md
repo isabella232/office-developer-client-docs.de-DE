@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: b6de7c6a-f2e7-4248-adea-d354924a8bbf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e4f4cdd1d0ed2e03d49f471e6e91464b7973c920
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ LONG MAPIInitIdle(
   
 > <span data-ttu-id="d2663-114">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="d2663-114">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="d2663-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d2663-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d2663-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d2663-115">Return value</span></span>
 
 <span data-ttu-id="d2663-116">Die **MAPIInitIdle** -Funktion gibt NULL zurück, falls die Initialisierung erfolgreich ist, und 1 ist.</span><span class="sxs-lookup"><span data-stu-id="d2663-116">The **MAPIInitIdle** function returns zero if initialization is successful, and 1 otherwise.</span></span> <span data-ttu-id="d2663-117">Wenn **MAPIInitIdle** mehrere Male aufgerufen wird, alle zusätzlichen Anrufe fehlerfrei ausgeführt werden, jedoch werden ignoriert, außer wenn erhöht den Referenzzähler.</span><span class="sxs-lookup"><span data-stu-id="d2663-117">If **MAPIInitIdle** is called multiple times, all additional calls succeed but are ignored except to increment the reference count.</span></span> 
   

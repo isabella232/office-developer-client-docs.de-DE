@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f114f1fa-bc05-4587-875b-71548c5912ea
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 6478f2c6c8196fa332a7b019269e6a6266485d1d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -88,7 +88,7 @@ ULONG FAR * lpulTableType
   
 > <span data-ttu-id="6fc2a-135">Die Tabelle sind statisch, und dessen Inhalt nicht ändern, wenn die zugrunde liegenden Daten geändert.</span><span class="sxs-lookup"><span data-stu-id="6fc2a-135">The table is static, and its contents do not change when the underlying data changes.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6fc2a-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6fc2a-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6fc2a-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6fc2a-136">Return value</span></span>
 
 <span data-ttu-id="6fc2a-137">S_OK</span><span class="sxs-lookup"><span data-stu-id="6fc2a-137">S_OK</span></span> 
   

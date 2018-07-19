@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f24910a-e14e-44a1-8477-d8968130ba74
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 954dc467a0d83466b1b16a3ead5b6404d372ecab
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -66,7 +66,7 @@ HRESULT OpenProfileSection(
   
 > <span data-ttu-id="592af-125">[out] Ein Zeiger auf einen Zeiger auf den Profilabschnitt.</span><span class="sxs-lookup"><span data-stu-id="592af-125">[out] A pointer to a pointer to the profile section.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="592af-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="592af-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="592af-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="592af-126">Return value</span></span>
 
 <span data-ttu-id="592af-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="592af-127">S_OK</span></span> 
   

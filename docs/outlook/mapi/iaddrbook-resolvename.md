@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7823c16-efda-45c2-b931-3e1fbc823b0b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: aa72085c4e50fcef1f2d3da81e5409af3d55d89b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -70,7 +70,7 @@ HRESULT ResolveName(
   
 > <span data-ttu-id="2559c-128">[in Out] Ein Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die enthält die Liste der Namen der Empfänger aufgelöst werden.</span><span class="sxs-lookup"><span data-stu-id="2559c-128">[in-out] A pointer to an [ADRLIST](adrlist.md) structure that contains the list of recipient names to be resolved.</span></span> <span data-ttu-id="2559c-129">Diese Struktur **ADRLIST** kann von der [IAddrBook::Address](iaddrbook-address.md) -Methode erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="2559c-129">This **ADRLIST** structure can be created by the [IAddrBook::Address](iaddrbook-address.md) method.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="2559c-130">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2559c-130">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2559c-130">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2559c-130">Return value</span></span>
 
 <span data-ttu-id="2559c-131">S_OK</span><span class="sxs-lookup"><span data-stu-id="2559c-131">S_OK</span></span> 
   

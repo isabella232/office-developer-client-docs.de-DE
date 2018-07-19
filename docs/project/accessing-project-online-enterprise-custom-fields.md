@@ -207,7 +207,7 @@ private static ProjectContext projContext =
 
 - [<span data-ttu-id="d7faa-212">Project-Entwicklung-Portal</span><span class="sxs-lookup"><span data-stu-id="d7faa-212">Project Development Portal</span></span>](http://dev.office.com/project.aspx)
 - [<span data-ttu-id="d7faa-213">Übersicht: Benutzerdefinierte Enterprise-Felder und Nachschlagetabellen</span><span class="sxs-lookup"><span data-stu-id="d7faa-213">Overview: Enterprise custom fields and lookup tables</span></span>](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
-- <span data-ttu-id="d7faa-214">[Lokale und benutzerdefinierte Enterprise-Felder](https://msdn.microsoft.com/en-us/library/office/ms447495(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="d7faa-214">[Local and Enterprise Custom Fields](https://msdn.microsoft.com/en-us/library/office/ms447495(v=office.14).aspx)</span></span>
+- <span data-ttu-id="d7faa-214">[Lokale und benutzerdefinierte Enterprise-Felder](https://msdn.microsoft.com/de-de/library/office/ms447495(v=office.14).aspx)</span><span class="sxs-lookup"><span data-stu-id="d7faa-214">[Local and Enterprise Custom Fields](https://msdn.microsoft.com/de-de/library/office/ms447495(v=office.14).aspx)</span></span>
 - [<span data-ttu-id="d7faa-215">Hinzufügen oder Bearbeiten von benutzerdefinierten Enterprise-Felder in Project Server 2013</span><span class="sxs-lookup"><span data-stu-id="d7faa-215">Add or edit enterprise custom fields in Project Server 2013</span></span>](https://docs.microsoft.com/en-us/project/add-or-edit-enterprise-custom-fields-in-project-server)
     
 

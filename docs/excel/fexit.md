@@ -10,7 +10,7 @@ keywords:
 - Fexit-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: d85685fa-df70-45bb-b629-a9d43b5cb926
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 3abb5cd68a45fbcd16665dbc4d492d764bbd315e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

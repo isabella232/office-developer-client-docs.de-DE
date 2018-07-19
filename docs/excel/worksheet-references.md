@@ -8,7 +8,7 @@ keywords:
 - Verweise [excel 2007], Arbeitsblatt, Arbeitsblatt Verweise [Excel 2007], externe Arbeitsblatt Verweise [Excel 2007], aktiven Arbeitsblatt [Excel 2007], aktuelle Arbeitsblatt [Excel 2007], interne Arbeitsblatt verweist [Excel 2007]
 localization_priority: Normal
 ms.assetid: 53406fb8-4ca5-4204-a6ad-b21ca9e6a100
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: b7089fb891c96be9182189e3a5f30057721cebbc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

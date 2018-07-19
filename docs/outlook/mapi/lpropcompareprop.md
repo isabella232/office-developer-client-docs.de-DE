@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f14ad568-fe45-4875-957d-415d39dc6f28
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d214cb5d449e2f7e42e7ee72774fdc146495adb4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ LONG LPropCompareProp(
   
 > <span data-ttu-id="f7c43-116">[in] Zeiger auf eine **SPropValue** -Struktur definieren den zweiten Eigenschaftswert verglichen werden soll.</span><span class="sxs-lookup"><span data-stu-id="f7c43-116">[in] Pointer to an **SPropValue** structure defining the second property value to be compared.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="f7c43-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f7c43-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f7c43-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f7c43-117">Return value</span></span>
 
  <span data-ttu-id="f7c43-118">**LPropCompareProp** gibt einen der folgenden Werte für die meisten Eigenschaftentypen zurück:</span><span class="sxs-lookup"><span data-stu-id="f7c43-118">**LPropCompareProp** returns one of the following values for most property types:</span></span> 
   

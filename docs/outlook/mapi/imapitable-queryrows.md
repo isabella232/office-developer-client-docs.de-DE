@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a6659f64f6e8d2e3dc61819b2263efe672cdd15c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ LPSRowSet FAR * lppRows
   
 > <span data-ttu-id="6790c-117">[out] Zeiger auf einen Zeiger auf eine [SRowSet](srowset.md) -Struktur, die die Tabellenzeilen.</span><span class="sxs-lookup"><span data-stu-id="6790c-117">[out] Pointer to a pointer to an [SRowSet](srowset.md) structure holding the table rows.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="6790c-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6790c-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6790c-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6790c-118">Return value</span></span>
 
 <span data-ttu-id="6790c-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="6790c-119">S_OK</span></span> 
   

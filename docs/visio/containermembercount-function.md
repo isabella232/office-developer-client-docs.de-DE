@@ -27,7 +27,7 @@ ms.locfileid: "19796726"
 
 <span data-ttu-id="5089a-108">CONTAINERMEMBERCOUNT()</span><span class="sxs-lookup"><span data-stu-id="5089a-108">CONTAINERMEMBERCOUNT()</span></span>
   
-### <a name="return-value"></a><span data-ttu-id="5089a-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5089a-109">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="5089a-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5089a-109">Return value</span></span>
 
  <span data-ttu-id="5089a-110">**Integer**</span><span class="sxs-lookup"><span data-stu-id="5089a-110">**Integer**</span></span>
   

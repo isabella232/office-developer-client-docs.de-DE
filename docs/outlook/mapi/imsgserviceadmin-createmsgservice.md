@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0135f049-0311-45e5-9685-78597d599a4e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 6e0bdd7108bacd17134592ac05ba71510fde76d8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -70,7 +70,7 @@ HRESULT CreateMsgService(
   
 > <span data-ttu-id="6f175-128">Die Messagingdiensts zeigt das Eigenschaftenfenster Konfiguration.</span><span class="sxs-lookup"><span data-stu-id="6f175-128">The message service displays its configuration property sheet.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6f175-129">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6f175-129">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6f175-129">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6f175-129">Return value</span></span>
 
 <span data-ttu-id="6f175-130">S_OK</span><span class="sxs-lookup"><span data-stu-id="6f175-130">S_OK</span></span> 
   

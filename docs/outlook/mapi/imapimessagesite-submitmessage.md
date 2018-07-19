@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6b14c383-8bc6-4e86-bd92-0500272af40d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 694ee8b12b9918502e60c0c6ea92992cc1062945
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -43,7 +43,7 @@ HRESULT SubmitMessage(
   
 > <span data-ttu-id="cb789-111">MAPI sollten die Nachricht zu übermitteln, auch wenn es nicht sofort gesendet werden kann.</span><span class="sxs-lookup"><span data-stu-id="cb789-111">MAPI should submit the message even if it might not be sent immediately.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="cb789-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="cb789-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="cb789-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="cb789-112">Return value</span></span>
 
 <span data-ttu-id="cb789-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="cb789-113">S_OK</span></span> 
   

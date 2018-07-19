@@ -30,7 +30,7 @@ ms.locfileid: "19796950"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="4e4a8-112">_Shapename! TheText_</span><span class="sxs-lookup"><span data-stu-id="4e4a8-112">_shapename!theText_</span></span> <br/> |<span data-ttu-id="4e4a8-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="4e4a8-113">Required</span></span>  <br/> |<span data-ttu-id="4e4a8-114">**String**</span><span class="sxs-lookup"><span data-stu-id="4e4a8-114">**String**</span></span> <br/> |<span data-ttu-id="4e4a8-115">Eine Zelle, die bei Änderungen an der Textgestaltung des zugeordneten Shapes ausgelöst wird.</span><span class="sxs-lookup"><span data-stu-id="4e4a8-115">A cell that is triggered when the associated shape's text composition changes.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="4e4a8-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4e4a8-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="4e4a8-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4e4a8-116">Return value</span></span>
 
 <span data-ttu-id="4e4a8-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="4e4a8-117">String</span></span>
   

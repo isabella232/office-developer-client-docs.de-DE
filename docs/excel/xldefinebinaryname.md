@@ -10,7 +10,7 @@ keywords:
 - XlDefineBinaryName-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: e3e8f91b-cc31-4f09-9941-f950ae96820a
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 14515cc262ea398a9f200c0de3a1f6b64c758b3d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

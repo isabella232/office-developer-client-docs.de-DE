@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56c3bdae-a3a8-4334-b6d2-a89c6820d72e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 5d7e3e89f15b1bc08c7ce9faab0d0a6326300e70
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT GetSvcConfigSupportObj(
   
 > <span data-ttu-id="4db32-110">[out] Ein Zeiger auf einen Zeiger auf das neue Nachricht Support-Objekt.</span><span class="sxs-lookup"><span data-stu-id="4db32-110">[out] A pointer to a pointer to the new message service support object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="4db32-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4db32-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4db32-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4db32-111">Return value</span></span>
 
 <span data-ttu-id="4db32-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="4db32-112">S_OK</span></span> 
   

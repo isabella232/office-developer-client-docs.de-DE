@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c77a8ef1-0730-d458-b35f-451d3f450fac
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 27db5f54f6a6feba77308a4a63fe4c16448550cb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ MSCAP_SELECTOR mscapSelector
   
 > <span data-ttu-id="26a2c-108">[in] Selektor, der angibt, welche Funktionen zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="26a2c-108">[in] Selector indicating which capabilities to return.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="26a2c-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="26a2c-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="26a2c-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="26a2c-109">Return value</span></span>
 
 <span data-ttu-id="26a2c-110">MSCAP_SECURE_FOLDER_HOMEPAGES</span><span class="sxs-lookup"><span data-stu-id="26a2c-110">MSCAP_SECURE_FOLDER_HOMEPAGES</span></span>
   

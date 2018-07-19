@@ -11,7 +11,7 @@ keywords:
 - tempactivecell12-Funktion [excel 2007], TempActiveCell-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: ac5a200d-32d5-4313-9a6d-d730032aaf10
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 8ad409a76195d67fa61e7991ce6527c40e0a3265
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -40,7 +40,7 @@ LPXLOPER12 TempActiveCell12(RW row, COL co);
   
 <span data-ttu-id="d8347-115">Die Spalte verwiesen werden.</span><span class="sxs-lookup"><span data-stu-id="d8347-115">The column to be referenced.</span></span> <span data-ttu-id="d8347-116">Dies ist nullbasiert, sodass diese Spalte A als 0 übergeben wird.</span><span class="sxs-lookup"><span data-stu-id="d8347-116">This is zero-based so that column A is passed as 0.</span></span> <span data-ttu-id="d8347-117">Der Höchstwert ist in Excel 2003 und früheren Versionen und ab Excel 2007 eine Arbeitsmappe im Kompatibilitätsmodus ausgeführt, 255 = 2 ^ 8-1 und der maximale Wert ist, die durch eine BYTE-Ganzzahl entnommen werden kann.</span><span class="sxs-lookup"><span data-stu-id="d8347-117">In Excel 2003 and earlier versions, and starting in Excel 2007 running a workbook in compatibility mode, the maximum value is 255 = 2^8 - 1 and is the maximum value that can be taken by a BYTE integer.</span></span> <span data-ttu-id="d8347-118">Ab Excel 2007 mit einer Arbeitsmappe, der Höchstwert ist 16,383 = 2 ^ 14 1.</span><span class="sxs-lookup"><span data-stu-id="d8347-118">Starting in Excel 2007 running a workbook, the maximum value is 16,383 = 2^14 - 1.</span></span> <span data-ttu-id="d8347-119">Spalte ist als 32-Bit-Ganzzahl mit Vorzeichen in XLCALL definiert. H.</span><span class="sxs-lookup"><span data-stu-id="d8347-119">COL is defined as a 32-bit signed integer in XLCALL.H.</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="d8347-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d8347-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d8347-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d8347-120">Return value</span></span>
 
 <span data-ttu-id="d8347-121">Gibt einen **XltypeRef** externer Verweis auf die Zelle übergeben.</span><span class="sxs-lookup"><span data-stu-id="d8347-121">Returns an **xltypeRef** external reference to the cell passed in.</span></span> 
   

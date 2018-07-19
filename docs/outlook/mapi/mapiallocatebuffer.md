@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f1fc7fc5-c71f-44f7-930a-571773eb6809
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8ba00ecc1d9ff1c0b7db63d3e6d667b374245742
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ SCODE MAPIAllocateBuffer(
   
 > <span data-ttu-id="be092-116">[out] Zeiger auf den zurückgegebenen zugewiesenen Puffer.</span><span class="sxs-lookup"><span data-stu-id="be092-116">[out] Pointer to the returned allocated buffer.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="be092-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="be092-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="be092-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="be092-117">Return value</span></span>
 
 <span data-ttu-id="be092-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="be092-118">S_OK</span></span> 
   

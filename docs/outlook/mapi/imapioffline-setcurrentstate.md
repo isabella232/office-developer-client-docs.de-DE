@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0aa0df2-79f9-2558-7eb6-accae9bef4b2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 15e2d5c2aca595c3a06d215cd069c23da3e48125
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -70,7 +70,7 @@ HRESULT SetCurrentState(
   
 > <span data-ttu-id="f084d-125">Dieser Parameter ist für die Outlook interne Verwendung reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="f084d-125">This parameter is reserved for Outlook internal use and is not supported.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="f084d-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="f084d-126">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="f084d-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f084d-126">Return value</span></span>
 
 <span data-ttu-id="f084d-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="f084d-127">S_OK</span></span>
   

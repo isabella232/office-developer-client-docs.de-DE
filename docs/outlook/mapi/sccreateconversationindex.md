@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ccfc15d-f3c6-4c7b-b1cc-855af66036de
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 43765cddb2f06bfbe58e0a4000c7eadfdc5f3347
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -60,7 +60,7 @@ SCODE ScCreateConversationIndex(
   
 > <span data-ttu-id="1f746-121">[out] Zeiger auf einen Zeiger auf den neuen Unterhaltung Index durch den Aufruf zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="1f746-121">[out] Pointer to a pointer to the new conversation index returned by the call.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1f746-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1f746-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1f746-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1f746-122">Return value</span></span>
 
 <span data-ttu-id="1f746-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="1f746-123">S_OK</span></span> 
   

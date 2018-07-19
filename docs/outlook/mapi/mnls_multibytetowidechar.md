@@ -59,12 +59,12 @@ int MNLS_MultiByteToWideChar(
   
 > <span data-ttu-id="5bb72-120">[in] Größe des Puffers durch _LpWideCharStr_in Zeichen.</span><span class="sxs-lookup"><span data-stu-id="5bb72-120">[in] Size, in characters, of the buffer indicated by  _lpWideCharStr_.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="5bb72-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5bb72-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5bb72-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5bb72-121">Return value</span></span>
 
 <span data-ttu-id="5bb72-122">Gibt die Anzahl der Zeichen in den Puffer angegeben durch _LpWideCharStr_ bei erfolgreicher geschriebenen zurück.</span><span class="sxs-lookup"><span data-stu-id="5bb72-122">Returns the number of characters written to the buffer indicated by  _lpWideCharStr_ if successful.</span></span> 
   
 ## <a name="remarks"></a><span data-ttu-id="5bb72-123">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5bb72-123">Remarks</span></span>
 
-<span data-ttu-id="5bb72-124">Diese Funktion wird die Funktion **MultiByteToWideChar** umbrochen.</span><span class="sxs-lookup"><span data-stu-id="5bb72-124">This function wraps the **MultiByteToWideChar** function.</span></span> <span data-ttu-id="5bb72-125">Weitere Informationen finden Sie unter [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="5bb72-125">For more information, see [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx).</span></span>
+<span data-ttu-id="5bb72-124">Diese Funktion wird die Funktion **MultiByteToWideChar** umbrochen.</span><span class="sxs-lookup"><span data-stu-id="5bb72-124">This function wraps the **MultiByteToWideChar** function.</span></span> <span data-ttu-id="5bb72-125">Weitere Informationen finden Sie unter [MultiByteToWideChar](http://msdn.microsoft.com/de-de/library/dd319072%28VS.85%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="5bb72-125">For more information, see [MultiByteToWideChar](http://msdn.microsoft.com/de-de/library/dd319072%28VS.85%29.aspx).</span></span>
   
 

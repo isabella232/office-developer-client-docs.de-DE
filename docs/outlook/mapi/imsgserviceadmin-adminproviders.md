@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0d605e2c-10db-46e1-95d5-12fabd524baa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9b65c8e32580fa85302b874bd17c1829ad67fd63
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT AdminProviders(
   
 > <span data-ttu-id="2f309-112">[out] Ein Zeiger auf einen Zeiger auf ein Anbieter Administration-Objekt.</span><span class="sxs-lookup"><span data-stu-id="2f309-112">[out] A pointer to a pointer to a provider administration object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2f309-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2f309-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2f309-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2f309-113">Return value</span></span>
 
 <span data-ttu-id="2f309-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="2f309-114">S_OK</span></span> 
   

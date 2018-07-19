@@ -8,7 +8,7 @@ keywords:
 - Registrierung Datentypen [excel 2007], Excel-Datentypen, Zeichenfolgen [Excel 2007], Zahlen [Excel 2007], Datenstrukturen [Excel 2007], Datentypen [Excel 2007]
 localization_priority: Normal
 ms.assetid: 8740a8fb-ad67-4232-a49b-d78967a786c2
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: b32a9beb2f77c12e6b6f2c445672c717a2546386
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: a9624d3f-a636-0267-5cbd-de0db42f9c22
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: a13d4e54900989c692add85add6853a1b511f448
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -35,7 +35,7 @@ HRESULT IConverterSession:: SetEncoding (
 
 <span data-ttu-id="2c942-107">_et_</span><span class="sxs-lookup"><span data-stu-id="2c942-107">_et_</span></span>
   
-> <span data-ttu-id="2c942-108">Ein [ENCODINGTYPE](http://msdn.microsoft.com/en-us/library/aa374936%28VS.85%29.aspx) -Wert.</span><span class="sxs-lookup"><span data-stu-id="2c942-108">An [ENCODINGTYPE](http://msdn.microsoft.com/en-us/library/aa374936%28VS.85%29.aspx) value.</span></span> <span data-ttu-id="2c942-109">Nur die folgenden Werte werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="2c942-109">Only the following values are supported:</span></span> 
+> <span data-ttu-id="2c942-108">Ein [ENCODINGTYPE](http://msdn.microsoft.com/de-de/library/aa374936%28VS.85%29.aspx) -Wert.</span><span class="sxs-lookup"><span data-stu-id="2c942-108">An [ENCODINGTYPE](http://msdn.microsoft.com/de-de/library/aa374936%28VS.85%29.aspx) value.</span></span> <span data-ttu-id="2c942-109">Nur die folgenden Werte werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="2c942-109">Only the following values are supported:</span></span> 
     
    - <span data-ttu-id="2c942-110">IET_BASE64</span><span class="sxs-lookup"><span data-stu-id="2c942-110">IET_BASE64</span></span>
    - <span data-ttu-id="2c942-111">IET_UUENCODE</span><span class="sxs-lookup"><span data-stu-id="2c942-111">IET_UUENCODE</span></span>
@@ -43,7 +43,7 @@ HRESULT IConverterSession:: SetEncoding (
    - <span data-ttu-id="2c942-113">IET_7BIT</span><span class="sxs-lookup"><span data-stu-id="2c942-113">IET_7BIT</span></span>
    - <span data-ttu-id="2c942-114">IET_8BIT</span><span class="sxs-lookup"><span data-stu-id="2c942-114">IET_8BIT</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2c942-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2c942-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2c942-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2c942-115">Return value</span></span>
 
 <span data-ttu-id="2c942-116">E_INVALIDARG</span><span class="sxs-lookup"><span data-stu-id="2c942-116">E_INVALIDARG</span></span>
   

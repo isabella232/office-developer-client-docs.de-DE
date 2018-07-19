@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 28afa338b37e747ed441a8767981b7e63808e741
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ HRESULT HrDispatchNotifications(
   
 > <span data-ttu-id="72d6f-114">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="72d6f-114">[in] Reserved; must be zero.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="72d6f-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="72d6f-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="72d6f-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="72d6f-115">Return value</span></span>
 
 <span data-ttu-id="72d6f-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="72d6f-116">S_OK</span></span>
   
@@ -65,6 +65,6 @@ HRESULT HrDispatchNotifications(
   
 ## <a name="notes-to-callers"></a><span data-ttu-id="72d6f-126">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="72d6f-126">Notes to callers</span></span>
 
-<span data-ttu-id="72d6f-127">Einige Anwendungen warten Sie eine Benachrichtigung in einer Timeoutschleife, die mit dem Windows- [PeekMessage](http://msdn.microsoft.com/en-us/library/ms644943.aspx) und [DispatchMessage](http://msdn.microsoft.com/en-us/library/ms644934.aspx) Funktionen.</span><span class="sxs-lookup"><span data-stu-id="72d6f-127">Some applications wait for a notification message in a timeout loop using the Windows [PeekMessage](http://msdn.microsoft.com/en-us/library/ms644943.aspx) and [DispatchMessage](http://msdn.microsoft.com/en-us/library/ms644934.aspx) functions.</span></span> <span data-ttu-id="72d6f-128">Klicken Sie auf alle außer den schnellsten Plattformen können solcher Anwendungen schlechten Leistung oder sogar Blockierung der Benachrichtigungen auftreten.</span><span class="sxs-lookup"><span data-stu-id="72d6f-128">On all but the fastest platforms, such applications might experience poor performance or even blockage of notifications.</span></span> <span data-ttu-id="72d6f-129">Mithilfe von **HrDispatchNotifications** nicht nur verringert Code, sondern wird die Leistung verbessert.</span><span class="sxs-lookup"><span data-stu-id="72d6f-129">Using **HrDispatchNotifications** not only reduces code but improves performance.</span></span> 
+<span data-ttu-id="72d6f-127">Einige Anwendungen warten Sie eine Benachrichtigung in einer Timeoutschleife, die mit dem Windows- [PeekMessage](http://msdn.microsoft.com/de-de/library/ms644943.aspx) und [DispatchMessage](http://msdn.microsoft.com/de-de/library/ms644934.aspx) Funktionen.</span><span class="sxs-lookup"><span data-stu-id="72d6f-127">Some applications wait for a notification message in a timeout loop using the Windows [PeekMessage](http://msdn.microsoft.com/de-de/library/ms644943.aspx) and [DispatchMessage](http://msdn.microsoft.com/de-de/library/ms644934.aspx) functions.</span></span> <span data-ttu-id="72d6f-128">Klicken Sie auf alle außer den schnellsten Plattformen können solcher Anwendungen schlechten Leistung oder sogar Blockierung der Benachrichtigungen auftreten.</span><span class="sxs-lookup"><span data-stu-id="72d6f-128">On all but the fastest platforms, such applications might experience poor performance or even blockage of notifications.</span></span> <span data-ttu-id="72d6f-129">Mithilfe von **HrDispatchNotifications** nicht nur verringert Code, sondern wird die Leistung verbessert.</span><span class="sxs-lookup"><span data-stu-id="72d6f-129">Using **HrDispatchNotifications** not only reduces code but improves performance.</span></span> 
   
 

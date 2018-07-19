@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73291a5b-b626-494c-b5d9-f7709e34bac2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 4b578f287a532475b53fb69cc4499662b6c4b6d7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -35,7 +35,7 @@ HRESULT Abort( void );
 
 <span data-ttu-id="a4e7e-107">Keine</span><span class="sxs-lookup"><span data-stu-id="a4e7e-107">None</span></span>
   
-## <a name="return-value"></a><span data-ttu-id="a4e7e-108">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a4e7e-108">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a4e7e-108">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a4e7e-108">Return value</span></span>
 
 <span data-ttu-id="a4e7e-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="a4e7e-109">S_OK</span></span> 
   

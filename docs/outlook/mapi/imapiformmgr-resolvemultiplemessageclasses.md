@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d3cc6658-e46d-42dd-b1ac-65c88cfef8ca
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: ad2014d1d003a4d80646ed1b679f0d3827341c1b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -62,7 +62,7 @@ HRESULT ResolveMultipleMessageClasses(
   
 > <span data-ttu-id="9ffb0-120">[out] Ein Zeiger auf einen Zeiger auf ein Array von Formular Informationen-Objekten.</span><span class="sxs-lookup"><span data-stu-id="9ffb0-120">[out] A pointer to a pointer to an array of form information objects.</span></span> <span data-ttu-id="9ffb0-121">Wenn ein Formular Viewer NULL im Parameter _pMsgClasses_ übergibt, enthält der Parameter _Ppfrminfoarray_ Formular Informationen-Objekte für alle Formulare im Container.</span><span class="sxs-lookup"><span data-stu-id="9ffb0-121">If a form viewer passes NULL in the  _pMsgClasses_ parameter, the  _ppfrminfoarray_ parameter contains form information objects for all forms in the container.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="9ffb0-122">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="9ffb0-122">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="9ffb0-122">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9ffb0-122">Return value</span></span>
 
 <span data-ttu-id="9ffb0-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="9ffb0-123">S_OK</span></span> 
   

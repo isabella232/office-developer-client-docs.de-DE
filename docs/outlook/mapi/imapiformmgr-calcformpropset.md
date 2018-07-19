@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ab302bfd-5cff-49b4-b0d2-308ae5af478d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: abd2a3e2a1a810f902ad977413c89f2e8b0113a0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ HRESULT CalcFormPropSet(
   
 > <span data-ttu-id="80710-120">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene [SMAPIFormPropArray](smapiformproparray.md) -Struktur, die Eigenschaften enthält, die die Formularen verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="80710-120">[out] A pointer to a pointer to the returned [SMAPIFormPropArray](smapiformproparray.md) structure, which contains the properties that the forms use.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="80710-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="80710-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="80710-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="80710-121">Return value</span></span>
 
 <span data-ttu-id="80710-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="80710-122">S_OK</span></span> 
   

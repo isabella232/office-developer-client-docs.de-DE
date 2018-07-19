@@ -10,7 +10,7 @@ keywords:
 - XlfRegister-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: c730124c-1886-4a0f-8f06-79763025537d
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 4fb4e8656b4f27105a30764cdda020849a07645e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

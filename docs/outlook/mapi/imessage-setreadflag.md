@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d02ebf6-bb8b-42bb-9bd0-870dbae9aeb4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0ae35166f01f597c2c3ab399a1b66e5760ab0dc8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT SetReadFlag(
       
   - <span data-ttu-id="eae45-115">SUPPRESS_RECEIPT: Ein ausstehender lesen Bericht sollte abgebrochen werden, wenn ein Bericht lesen angefordert und dieses Anrufs den Status der Nachricht vom ungelesene zum Lesen von ändert.</span><span class="sxs-lookup"><span data-stu-id="eae45-115">SUPPRESS_RECEIPT: A pending read report should be canceled if a read report had been requested and this call changes the state of the message from unread to read.</span></span> <span data-ttu-id="eae45-116">Wenn dieses Anrufs nicht den Status der Nachricht ändert, kann der Nachricht Speicheranbieter dieses Flag ignorieren.</span><span class="sxs-lookup"><span data-stu-id="eae45-116">If this call does not change the state of the message, the message store provider can ignore this flag.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="eae45-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="eae45-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="eae45-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="eae45-117">Return value</span></span>
 
 <span data-ttu-id="eae45-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="eae45-118">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f686a2bc-aba5-4ea3-9963-76d0e96eab50
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ab892513348541ec9de3c071a12268afa9337465
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ SCODE MapStorageSCode(
   
 > <span data-ttu-id="c1b9d-114">[in] MAPI SCODE zurück-Wert, aus einem OLE-Speicher-Objekt ein HRESULT-Wert zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="c1b9d-114">[in] MAPI SCODE return value from an OLE storage object to be mapped to a HRESULT value.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c1b9d-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c1b9d-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c1b9d-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c1b9d-115">Return value</span></span>
 
 <span data-ttu-id="c1b9d-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="c1b9d-116">S_OK</span></span> 
   

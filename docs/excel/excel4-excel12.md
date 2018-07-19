@@ -11,7 +11,7 @@ keywords:
 - Excel4-Funktion [excel 2007], Excel12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 2404f10d-8641-4ee6-a909-1c5a26610f80
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 1c2c775cc7c5b051e4a1381df09ef29e79e2aca4
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ int Excel12(int iFunction, LPXLOPER12 pxRes, int iCount, LPXLOPER12 argument1, .
   
 <span data-ttu-id="5fd62-126">Die optionalen Argumente an die Funktion.</span><span class="sxs-lookup"><span data-stu-id="5fd62-126">The optional arguments to the function.</span></span> <span data-ttu-id="5fd62-127">Alle Argumente müssen Zeiger auf **XLOPER** oder **XLOPER12** Werten sein.</span><span class="sxs-lookup"><span data-stu-id="5fd62-127">All arguments must be pointers to **XLOPER** or **XLOPER12** values.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="5fd62-128">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="5fd62-128">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="5fd62-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5fd62-128">Return value</span></span>
 
 <span data-ttu-id="5fd62-129">Gibt die folgenden Werte für ganze Zahl (**Int**).</span><span class="sxs-lookup"><span data-stu-id="5fd62-129">Returns one of the following integer (**int**) values.</span></span>
   

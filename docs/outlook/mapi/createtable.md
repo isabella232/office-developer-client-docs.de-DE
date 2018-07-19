@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 106ce3d8-d0bf-4a0e-9a15-dc8988d0eb58
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5f42e1eb0d120d2fbb785e63b451acdd2d5a91f1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -97,7 +97,7 @@ SCODE CreateTable(
   
 > <span data-ttu-id="7573c-139">[out] Zeiger auf einen Zeiger auf das zurückgegebene Tabelle Datenobjekt.</span><span class="sxs-lookup"><span data-stu-id="7573c-139">[out] Pointer to a pointer to the returned table data object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7573c-140">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7573c-140">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7573c-140">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7573c-140">Return value</span></span>
 
 <span data-ttu-id="7573c-141">S_OK</span><span class="sxs-lookup"><span data-stu-id="7573c-141">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c1a342c-d7ae-4e26-b327-a63cdd3c3ee6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 16dca82b94225afc88bcb6c4e698a50565d6b088
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ FILETIME FtMulDwDw(
   
 > <span data-ttu-id="7fc47-116">[in] Ein Wort, Double-Wert, der den 32-Bit-Ganzzahl ohne Vorzeichen Multiplikator enthält.</span><span class="sxs-lookup"><span data-stu-id="7fc47-116">[in] A double word that contains the unsigned 32-bit integer multiplier.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7fc47-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7fc47-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7fc47-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7fc47-117">Return value</span></span>
 
 <span data-ttu-id="7fc47-118">Die **FtMulDwDw** -Funktion gibt eine [FILETIME](filetime.md) -Struktur, die das Produkt von zwei Ganzzahlen enthält.</span><span class="sxs-lookup"><span data-stu-id="7fc47-118">The **FtMulDwDw** function returns a [FILETIME](filetime.md) structure that contains the product of the two integers.</span></span> <span data-ttu-id="7fc47-119">Die beiden Eingabeparameter bleiben unverändert.</span><span class="sxs-lookup"><span data-stu-id="7fc47-119">The two input parameters remain unchanged.</span></span> 
   

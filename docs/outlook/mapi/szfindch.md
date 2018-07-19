@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3406d060-bfea-4cea-8253-2a9aeb9e8147
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b517eaffa56001d8c414888ee6cbc8ec4f49cf66
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ LPSTR SzFindCh(
   
 > <span data-ttu-id="2cbea-116">[in] Das Zeichen an, nach dem gesucht wird.</span><span class="sxs-lookup"><span data-stu-id="2cbea-116">[in] The character to be searched for.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="2cbea-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="2cbea-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="2cbea-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="2cbea-117">Return value</span></span>
 
 <span data-ttu-id="2cbea-118">**SzFindCh** gibt einen Zeiger auf das erste Auftreten des Zeichens in der Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="2cbea-118">**SzFindCh** returns a pointer to the first occurrence of the character in the string.</span></span> <span data-ttu-id="2cbea-119">Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der Parameter _Lpsz_ NULL ist, wird der Wert NULL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="2cbea-119">If the character does not occur anywhere in the string, or if the  _lpsz_ parameter is NULL, a value of NULL is returned.</span></span> 
   

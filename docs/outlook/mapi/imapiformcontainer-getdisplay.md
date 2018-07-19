@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6829e273-4a75-4278-b58a-ae7543e075ac
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0f9826dab72968055604c5bb9f8f537facc5618e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT GetDisplay(
   
 > <span data-ttu-id="39b0f-114">[out] Ein Zeiger auf eine Zeichenfolge, die den Anzeigenamen des Containers Formular enthält.</span><span class="sxs-lookup"><span data-stu-id="39b0f-114">[out] A pointer to a string that contains the display name of the form container.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="39b0f-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="39b0f-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="39b0f-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="39b0f-115">Return value</span></span>
 
 <span data-ttu-id="39b0f-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="39b0f-116">S_OK</span></span> 
   

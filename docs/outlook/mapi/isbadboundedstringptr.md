@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 888c60e3-7376-4d66-8ee2-ce81abafb185
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0e4e5d5910a7ff3551057760f065e79155d65e49
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -46,7 +46,7 @@ BOOL IsBadBoundedStringPtr(
   
 > <span data-ttu-id="45802-116">[in] Die maximale Größe der Zeichenfolge in Zeichen.</span><span class="sxs-lookup"><span data-stu-id="45802-116">[in] The maximum size of the string, in CHARs.</span></span> <span data-ttu-id="45802-117">Die Funktion für Lesezugriff für alle Zeichen bis zu abschließendes Null-Zeichen der Zeichenfolge überprüft, oder bis zu die Anzahl der Zeichen, die von diesem Parameter angegebene, je nachdem, was kleiner ist.</span><span class="sxs-lookup"><span data-stu-id="45802-117">The function checks for read access in all characters up to the terminating null character of the string, or up to the number of characters specified by this parameter, whichever is smaller.</span></span> <span data-ttu-id="45802-118">Wenn dieser Parameter auf 0 (null) ist, ist der Rückgabewert 0 (null).</span><span class="sxs-lookup"><span data-stu-id="45802-118">If this parameter is zero, the return value is zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="45802-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="45802-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="45802-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="45802-119">Return value</span></span>
 
 <span data-ttu-id="45802-120">Der Rückgabewert ist 0 (null), wenn der aufrufende Prozess Lesezugriff für alle Zeichen bis zu abschließendes Null-Zeichen der Zeichenfolge oder Lesezugriff bis zu der Anzahl von Zeichen durch _CchMax_angegeben hat.</span><span class="sxs-lookup"><span data-stu-id="45802-120">The return value is zero when the calling process has read access to all characters up to the terminating null character of the string, or read access up to the number of characters specified by  _cchMax_.</span></span>
   
@@ -60,5 +60,5 @@ BOOL IsBadBoundedStringPtr(
 
 
 
-[<span data-ttu-id="45802-125">IsBadStringPtr</span><span class="sxs-lookup"><span data-stu-id="45802-125">IsBadStringPtr</span></span>](http://msdn.microsoft.com/en-us/library/windows/desktop/aa366714%28v=vs.85%29.aspx)
+[<span data-ttu-id="45802-125">IsBadStringPtr</span><span class="sxs-lookup"><span data-stu-id="45802-125">IsBadStringPtr</span></span>](http://msdn.microsoft.com/de-de/library/windows/desktop/aa366714%28v=vs.85%29.aspx)
 

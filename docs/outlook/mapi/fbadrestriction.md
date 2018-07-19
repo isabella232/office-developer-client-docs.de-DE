@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6ad3638c-d088-4a89-9b0d-f5b672162203
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 43e0d8d28836b3114ab2029bc1f241197c569ffc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ ULONG FBadRestriction(
   
 > <span data-ttu-id="4b538-114">[in] Eine [SRestriction](srestriction.md) -Struktur definieren die Einschränkung überprüft werden soll.</span><span class="sxs-lookup"><span data-stu-id="4b538-114">[in] An [SRestriction](srestriction.md) structure defining the restriction to be validated.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="4b538-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4b538-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4b538-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4b538-115">Return value</span></span>
 
 <span data-ttu-id="4b538-116">TRUE</span><span class="sxs-lookup"><span data-stu-id="4b538-116">TRUE</span></span> 
   

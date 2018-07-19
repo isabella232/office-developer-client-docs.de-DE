@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb27b28a-b2bd-4d4a-b0bb-0692f3de8e16
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: ddb6d692a8e76a9c24affc3af9f612a6f1c0d769
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ HRESULT GetAttribIMsgOnIStg(
   
 > <span data-ttu-id="0f618-118">[out] Zeiger auf einen Zeiger auf das zurückgegebene [SPropAttrArray](spropattrarray.md) -Struktur, die abgerufene Eigenschaftenattribute enthält.</span><span class="sxs-lookup"><span data-stu-id="0f618-118">[out] Pointer to a pointer to the returned [SPropAttrArray](spropattrarray.md) structure that contains the retrieved property attributes.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="0f618-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0f618-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0f618-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0f618-119">Return value</span></span>
 
 <span data-ttu-id="0f618-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="0f618-120">S_OK</span></span> 
   

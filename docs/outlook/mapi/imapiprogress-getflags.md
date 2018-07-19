@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7af74fcc-c0df-4f58-a2d4-0a79c96b2e81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8964ba8c4341bec431bdbc1690d639b345df8b1d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -43,7 +43,7 @@ HRESULT GetFlags(
   
 > <span data-ttu-id="b69a2-111">Status wird für das Objekt der obersten Ebene, das Objekt berechnet wird, die durch den Client auf die Operation beginnen aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="b69a2-111">Progress is being calculated for the top-level object, the object that is called by the client to begin the operation.</span></span> <span data-ttu-id="b69a2-112">Beispielsweise ist das Objekt der obersten Ebene in einem Ordnerkopiervorgang den Ordner, der kopiert wird.</span><span class="sxs-lookup"><span data-stu-id="b69a2-112">For example, the top-level object in a folder copy operation is the folder that is being copied.</span></span> <span data-ttu-id="b69a2-113">Wenn MAPI_TOP_LEVEL nicht festgelegt ist, wird für einen niedrigeren Level-Objekt oder Unterobjekts Fortschritt berechnet.</span><span class="sxs-lookup"><span data-stu-id="b69a2-113">When MAPI_TOP_LEVEL is not set, progress is calculated for a lower level object, or subobject.</span></span> <span data-ttu-id="b69a2-114">In den Ordnerkopiervorgang ist eine niedrigere Level-Objekt eine Unterordner in den Ordner, der kopiert wird.</span><span class="sxs-lookup"><span data-stu-id="b69a2-114">In the folder copy operation, a lower level object is one of the subfolders in the folder that is being copied.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="b69a2-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="b69a2-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="b69a2-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b69a2-115">Return value</span></span>
 
 <span data-ttu-id="b69a2-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="b69a2-116">S_OK</span></span> 
   

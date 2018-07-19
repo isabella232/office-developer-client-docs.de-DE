@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a3702a4-8a6b-4c0c-a90f-02be3a2bfa05
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 6bd13eb7180302a5ab770586cf36856ca5a22676
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -53,7 +53,7 @@ HRESULT EnumAdrTypes(
   
 > <span data-ttu-id="229dd-117">[out] Ein Zeiger auf ein Array von Zeigern für Adresstypen.</span><span class="sxs-lookup"><span data-stu-id="229dd-117">[out] A pointer to an array of pointers to address types.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="229dd-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="229dd-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="229dd-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="229dd-118">Return value</span></span>
 
 <span data-ttu-id="229dd-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="229dd-119">S_OK</span></span> 
   

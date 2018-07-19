@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 73eb92b0c1b88e114775231695b91157a3d26a2b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ ULONG OnNotify(
   
 > <span data-ttu-id="74bbf-111">[in] Ein Zeiger auf eine oder mehrere **Benachrichtigung** -Strukturen, die Informationen zu den Ereignissen bereitstellen, die aufgetreten sind.</span><span class="sxs-lookup"><span data-stu-id="74bbf-111">[in] A pointer to one or more **NOTIFICATION** structures that provide information about the events that have occurred.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="74bbf-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="74bbf-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="74bbf-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="74bbf-112">Return value</span></span>
 
 <span data-ttu-id="74bbf-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="74bbf-113">S_OK</span></span> 
   

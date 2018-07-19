@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1cdc95b8-a156-4600-9e20-caaa02680e87
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: bd2d0a662585e8aba91250786f88dd310fe37e32
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -76,7 +76,7 @@ HRESULT HrIStorageFromStream(
   
 > <span data-ttu-id="575a4-136">[out] Zeiger auf einen Zeiger auf das zurückgegebene **IStorage** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="575a4-136">[out] Pointer to a pointer to the returned **IStorage** object.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="575a4-137">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="575a4-137">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="575a4-137">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="575a4-137">Return value</span></span>
 
 <span data-ttu-id="575a4-138">S_OK</span><span class="sxs-lookup"><span data-stu-id="575a4-138">S_OK</span></span> 
   

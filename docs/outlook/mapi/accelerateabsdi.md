@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: da67dcf4-1411-4fc9-992c-115485019bd3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b7d4d758f7031c55aa3a23b662ec8727ea1e0719
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
   
 > <span data-ttu-id="01173-118">[in] Zeiger auf eine Windows-Nachricht.</span><span class="sxs-lookup"><span data-stu-id="01173-118">[in] Pointer to a Windows message.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="01173-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="01173-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="01173-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="01173-119">Return value</span></span>
 
 <span data-ttu-id="01173-120">Eine Funktion mit dem Prototyp **ACCELERATEABSDI** gibt TRUE zurück, wenn die Meldung behandelt.</span><span class="sxs-lookup"><span data-stu-id="01173-120">A function with the **ACCELERATEABSDI** prototype returns TRUE if it handles the message.</span></span> 
   

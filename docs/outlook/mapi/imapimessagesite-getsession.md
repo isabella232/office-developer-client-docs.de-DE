@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: c35d9e38-f4cf-4908-aaa1-a4263b58f7e8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d5d0f465ecdf4865ca86448448c56d54d5df4505
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT GetSession(
   
 > <span data-ttu-id="e24eb-108">[out] Ein Zeiger auf einen Zeiger auf das zurückgegebene Session-Objekt.</span><span class="sxs-lookup"><span data-stu-id="e24eb-108">[out] A pointer to a pointer to the returned session object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="e24eb-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e24eb-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e24eb-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e24eb-109">Return value</span></span>
 
 <span data-ttu-id="e24eb-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="e24eb-110">S_OK</span></span> 
   

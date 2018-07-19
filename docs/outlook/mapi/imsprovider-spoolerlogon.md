@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 79d5af23-efad-4013-a330-56babfb2bb0f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: eaf84e1b2a747b313f1534eb66b190d86cf89df9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -110,7 +110,7 @@ HRESULT SpoolerLogon(
   
 > <span data-ttu-id="eec2b-150">[out] Ein Zeiger auf den Zeiger auf die Nachricht speichern-Objekt für die MAPI-Warteschlange und Clientanwendungen anmelden.</span><span class="sxs-lookup"><span data-stu-id="eec2b-150">[out] A pointer to the pointer to the message store object for the MAPI spooler and client applications to log on to.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="eec2b-151">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="eec2b-151">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="eec2b-151">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="eec2b-151">Return value</span></span>
 
 <span data-ttu-id="eec2b-152">S_OK</span><span class="sxs-lookup"><span data-stu-id="eec2b-152">S_OK</span></span> 
   

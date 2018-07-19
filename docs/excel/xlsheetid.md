@@ -10,7 +10,7 @@ keywords:
 - Xlsheetid-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: cb32059c-b899-49cf-8028-ff828998ab75
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: e4e184d4e456ffe26292fe31b1b41463834216f9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -34,7 +34,7 @@ Excel12(xlSheetId, LPXLOPER12 pxRes, 1, LPXLOPER12 pxSheetName);
   
 <span data-ttu-id="aa221-109">(Optional).</span><span class="sxs-lookup"><span data-stu-id="aa221-109">(Optional).</span></span> <span data-ttu-id="aa221-110">Der Name des Adressbuchs und Blatt, das Sie informieren möchten.</span><span class="sxs-lookup"><span data-stu-id="aa221-110">The name of the book and sheet you want to find out about.</span></span> <span data-ttu-id="aa221-111">Wenn Length angegeben, gibt die Funktion **XlSheetId** Blatt-ID des Blatts aktiv (vorne) zurück.</span><span class="sxs-lookup"><span data-stu-id="aa221-111">If omitted, the **xlSheetId** function returns the sheet ID of the active (front) sheet.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="aa221-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="aa221-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="aa221-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="aa221-112">Return value</span></span>
 
 <span data-ttu-id="aa221-113">Gibt die Blatt-ID im _PxRes -\>val.mref.idSheet_.</span><span class="sxs-lookup"><span data-stu-id="aa221-113">Returns the sheet ID in  _pxRes-\>val.mref.idSheet_.</span></span> 
   

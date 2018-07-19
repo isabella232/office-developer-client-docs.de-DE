@@ -30,7 +30,7 @@ ms.locfileid: "19797356"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="4abdf-114">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="4abdf-114">_number_</span></span> <br/> |<span data-ttu-id="4abdf-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="4abdf-115">Required</span></span>  <br/> |<span data-ttu-id="4abdf-116">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="4abdf-116">**Numeric**</span></span> <br/> | <span data-ttu-id="4abdf-117">Die Zahl, deren natürlicher Logarithmus ermittelt werden soll.</span><span class="sxs-lookup"><span data-stu-id="4abdf-117">The number whose natural logarithm you want to find.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="4abdf-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4abdf-118">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="4abdf-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4abdf-118">Return value</span></span>
 
 <span data-ttu-id="4abdf-119">Numeric</span><span class="sxs-lookup"><span data-stu-id="4abdf-119">Numeric</span></span>
   

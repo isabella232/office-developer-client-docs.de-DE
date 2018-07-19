@@ -8,7 +8,7 @@ keywords:
 - dlls [excel 2007], creating,creating DLLs [Excel 2007]
 localization_priority: Normal
 ms.assetid: 5d69d06d-a126-4c47-82ad-17112674c8a3
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 030cdd4358d9a71841eca6acfcef6e71839e02a0
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

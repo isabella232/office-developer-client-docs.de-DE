@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 510b2e21-ba27-47dd-87cb-2a549e31fa28
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: c3c66b9e54f0776a8afd6b4638d36dec3393dda8
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ ULONG FAR * lpulDenominator
   
 > <span data-ttu-id="14056-113">[out] Zeiger auf die als Nenner für den Bruch, die die Position der Tabelle identifiziert.</span><span class="sxs-lookup"><span data-stu-id="14056-113">[out] Pointer to the denominator for the fraction identifying the table position.</span></span> <span data-ttu-id="14056-114">Der Parameter _LpulDenominator_ darf nicht NULL sein.</span><span class="sxs-lookup"><span data-stu-id="14056-114">The  _lpulDenominator_ parameter cannot be zero.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="14056-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="14056-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="14056-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="14056-115">Return value</span></span>
 
 <span data-ttu-id="14056-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="14056-116">S_OK</span></span> 
   

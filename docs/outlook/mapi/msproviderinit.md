@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 230c66c4-ab04-4fa6-946f-9f4b704f2842
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: cf1febe89c49b29cdfaf8d27760c4fb27b4c4990
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -89,7 +89,7 @@ HRESULT MSProviderInit(
   
 > <span data-ttu-id="77329-135">[out] Zeiger auf einen Zeiger auf den initialisierten Message Store Provider-Objekt.</span><span class="sxs-lookup"><span data-stu-id="77329-135">[out] Pointer to a pointer to the initialized message store provider object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="77329-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="77329-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="77329-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="77329-136">Return value</span></span>
 
 <span data-ttu-id="77329-137">S_OK</span><span class="sxs-lookup"><span data-stu-id="77329-137">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8d9557ba-7919-42c6-9e2f-f10214437d53
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0d3f24c41f2cfbd499d92e050c74da904dd4c377
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -91,7 +91,7 @@ FTG FtgRegisterIdleRoutine(
     
   > <span data-ttu-id="d6917-150">Die durch den _CsecIdle_ -Parameter angegebenen Zeit ist der Mindestzeitraum Untätigkeit für Benutzer, die verstreichen muss, bevor das im Leerlauf MAPI-Modul die im Leerlauf Routine zum ersten Mal aufruft.</span><span class="sxs-lookup"><span data-stu-id="d6917-150">The time specified by the  _csecIdle_ parameter is the minimum period of user inaction that must elapse before the MAPI idle engine calls the idle routine for the first time.</span></span> <span data-ttu-id="d6917-151">Nach der Übergabe diesmal, kann das Modul im Leerlauf die im Leerlauf Routine so oft wie nötig aufrufen.</span><span class="sxs-lookup"><span data-stu-id="d6917-151">After this time passes, the idle engine can call the idle routine as often as necessary.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="d6917-152">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d6917-152">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d6917-152">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d6917-152">Return value</span></span>
 
 <span data-ttu-id="d6917-153">Die **FtgRegisterIdleRoutine** -Funktion gibt eine Function-Tag, identifiziert der im Leerlauf Routine, die die MAPI-System hinzugefügt wurde.</span><span class="sxs-lookup"><span data-stu-id="d6917-153">The **FtgRegisterIdleRoutine** function returns a function tag identifying the idle routine that was added to the MAPI system.</span></span> <span data-ttu-id="d6917-154">Wenn **FtgRegisterIdleRoutine** nicht im Leerlauf Routine für die Clientanwendung oder Dienstanbieter registrieren können, beispielsweise aufgrund Speicherprobleme, wird NULL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="d6917-154">If **FtgRegisterIdleRoutine** cannot register the idle routine for the client application or service provider, for example because of memory problems, it returns NULL.</span></span> 
   

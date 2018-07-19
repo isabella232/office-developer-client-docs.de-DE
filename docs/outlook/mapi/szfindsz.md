@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f4584569-1246-4ac9-a404-48284e4920d7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0cc8f25271d1494ebdaca82caa2e77839f299276
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ LPSTR SzFindCh(
   
 > <span data-ttu-id="a0e31-117">[in] Zeiger auf Null endende Teilzeichenfolge gesucht werden.</span><span class="sxs-lookup"><span data-stu-id="a0e31-117">[in] Pointer to the null-terminated substring to be searched for.</span></span> <span data-ttu-id="a0e31-118">Der Parameter _LpszKey_ muss 65536 Zeichen nicht überschreiten.</span><span class="sxs-lookup"><span data-stu-id="a0e31-118">The  _lpszKey_ parameter must not exceed 65536 characters.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="a0e31-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a0e31-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a0e31-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a0e31-119">Return value</span></span>
 
  <span data-ttu-id="a0e31-120">**SzFindSz** gibt einen Zeiger auf das erste Zeichen des ersten Vorkommens der Teilzeichenfolge in der Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="a0e31-120">**SzFindSz** returns a pointer to the first character of the first occurrence of the substring in the string.</span></span> <span data-ttu-id="a0e31-121">Wenn die Teilzeichenfolge nicht an einer beliebigen Stelle in der Zeichenfolge auftritt, wenn _LpszKey_ größer als _Lpsz_ist oder einer der Parameter NULL ist, wird der Wert NULL zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="a0e31-121">If the substring does not occur anywhere in the string, if  _lpszKey_ is larger than  _lpsz_, or if either parameter is NULL, a value of NULL is returned.</span></span> 
   

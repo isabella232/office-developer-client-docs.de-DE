@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 567bede4-39a3-bfb4-af85-ba678e2cf4a5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: f6566f567c228b6416a64dbd58653561bb592e6d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -31,7 +31,7 @@ ms.locfileid: "19792794"
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="39330-107">Vererbte Berechtigungen aus:</span><span class="sxs-lookup"><span data-stu-id="39330-107">Inherited from:</span></span>  <br/> |[<span data-ttu-id="39330-108">IUnknown</span><span class="sxs-lookup"><span data-stu-id="39330-108">IUnknown</span></span>](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) <br/> |
+|<span data-ttu-id="39330-107">Vererbte Berechtigungen aus:</span><span class="sxs-lookup"><span data-stu-id="39330-107">Inherited from:</span></span>  <br/> |[<span data-ttu-id="39330-108">IUnknown</span><span class="sxs-lookup"><span data-stu-id="39330-108">IUnknown</span></span>](http://msdn.microsoft.com/de-de/library/ms680509%28v=VS.85%29.aspx) <br/> |
 |<span data-ttu-id="39330-109">Bereitgestellt von:</span><span class="sxs-lookup"><span data-stu-id="39330-109">Provided By:</span></span>  <br/> |<span data-ttu-id="39330-110">Nachricht Speicheranbieter</span><span class="sxs-lookup"><span data-stu-id="39330-110">Message store provider</span></span>  <br/> |
 |<span data-ttu-id="39330-111">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="39330-111">Interface identifier:</span></span>  <br/> |<span data-ttu-id="39330-112">**IID_IProxyStoreObject**</span><span class="sxs-lookup"><span data-stu-id="39330-112">**IID_IProxyStoreObject**</span></span> <br/> |
    
@@ -45,8 +45,8 @@ ms.locfileid: "19792794"
    
 ## <a name="remarks"></a><span data-ttu-id="39330-120">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="39330-120">Remarks</span></span>
 
-<span data-ttu-id="39330-121">Rufen Sie [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) in der Quelle Nachrichtenspeicher die **IProxyStoreObject** -Schnittstelle abzurufen.</span><span class="sxs-lookup"><span data-stu-id="39330-121">Call [IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) on the source message store to obtain the **IProxyStoreObject** interface.</span></span> <span data-ttu-id="39330-122">Rufen Sie dann **IProxyStoreObject::UnwrapNoRef** , um das allein stehenden Store-Objekt zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="39330-122">Then call **IProxyStoreObject::UnwrapNoRef** to obtain the unwrapped store object.</span></span> <span data-ttu-id="39330-123">Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED**zurückgibt, wurde der Store nicht umgebrochen.</span><span class="sxs-lookup"><span data-stu-id="39330-123">If **QueryInterface** returns the error **MAPI_E_INTERFACE_NOT_SUPPORTED**, then the store has not been wrapped.</span></span> 
+<span data-ttu-id="39330-121">Rufen Sie [QueryInterface](http://msdn.microsoft.com/de-de/library/ms682521%28v=VS.85%29.aspx) in der Quelle Nachrichtenspeicher die **IProxyStoreObject** -Schnittstelle abzurufen.</span><span class="sxs-lookup"><span data-stu-id="39330-121">Call [IUnknown::QueryInterface](http://msdn.microsoft.com/de-de/library/ms682521%28v=VS.85%29.aspx) on the source message store to obtain the **IProxyStoreObject** interface.</span></span> <span data-ttu-id="39330-122">Rufen Sie dann **IProxyStoreObject::UnwrapNoRef** , um das allein stehenden Store-Objekt zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="39330-122">Then call **IProxyStoreObject::UnwrapNoRef** to obtain the unwrapped store object.</span></span> <span data-ttu-id="39330-123">Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED**zurückgibt, wurde der Store nicht umgebrochen.</span><span class="sxs-lookup"><span data-stu-id="39330-123">If **QueryInterface** returns the error **MAPI_E_INTERFACE_NOT_SUPPORTED**, then the store has not been wrapped.</span></span> 
   
-<span data-ttu-id="39330-124">Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen.</span><span class="sxs-lookup"><span data-stu-id="39330-124">Because **UnwrapNoRef** does not increment the reference count for this new pointer to the unwrapped store object, after successfully calling **UnwrapNoRef**, you should call [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) to maintain the reference count.</span></span> 
+<span data-ttu-id="39330-124">Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen.</span><span class="sxs-lookup"><span data-stu-id="39330-124">Because **UnwrapNoRef** does not increment the reference count for this new pointer to the unwrapped store object, after successfully calling **UnwrapNoRef**, you should call [IUnknown::AddRef](http://msdn.microsoft.com/de-de/library/ms691379%28v=VS.85%29.aspx) to maintain the reference count.</span></span> 
   
 

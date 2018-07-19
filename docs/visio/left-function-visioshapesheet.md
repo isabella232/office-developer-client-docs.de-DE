@@ -31,7 +31,7 @@ ms.locfileid: "19797309"
 | <span data-ttu-id="8c013-112">_text_</span><span class="sxs-lookup"><span data-stu-id="8c013-112">_text_</span></span> <br/> |<span data-ttu-id="8c013-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="8c013-113">Required</span></span>  <br/> |<span data-ttu-id="8c013-114">**String**</span><span class="sxs-lookup"><span data-stu-id="8c013-114">**String**</span></span> <br/> |<span data-ttu-id="8c013-115">Die Zeichenfolge mit den zu extrahierenden Zeichen.</span><span class="sxs-lookup"><span data-stu-id="8c013-115">The text string that contains the characters you want to extract.</span></span>  <br/> |
 | <span data-ttu-id="8c013-116">_num_chars_opt_</span><span class="sxs-lookup"><span data-stu-id="8c013-116">_num_chars_opt_</span></span> <br/> |<span data-ttu-id="8c013-117">Optional</span><span class="sxs-lookup"><span data-stu-id="8c013-117">Optional</span></span>  <br/> |<span data-ttu-id="8c013-118">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="8c013-118">**Numeric**</span></span> <br/> |<span data-ttu-id="8c013-119">Die Anzahl der Zeichen, die extrahiert werden sollen.</span><span class="sxs-lookup"><span data-stu-id="8c013-119">The number of characters you want to extract.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="8c013-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8c013-120">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="8c013-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8c013-120">Return value</span></span>
 
 <span data-ttu-id="8c013-121">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="8c013-121">String</span></span>
   

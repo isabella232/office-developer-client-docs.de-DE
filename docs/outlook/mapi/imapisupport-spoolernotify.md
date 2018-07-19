@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d4f153b2-939f-4153-85fb-dc510193848c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 21ea5faaccb81e763d6d062b6ff567db509d9d35
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -82,7 +82,7 @@ LPVOID lpvData
 |<span data-ttu-id="fc3e8-143">NOTIFY_NEWMAIL_RECEIVED</span><span class="sxs-lookup"><span data-stu-id="fc3e8-143">NOTIFY_NEWMAIL_RECEIVED</span></span>  <br/> |<span data-ttu-id="fc3e8-144">Eine **NEWMAIL_NOTIFICATION** -Struktur, die Informationen über die neu gesendete Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="fc3e8-144">A **NEWMAIL_NOTIFICATION** structure that contains information about the newly delivered message.</span></span>  <br/> |
 |<span data-ttu-id="fc3e8-145">NOTIFY_SENTDEFERRED</span><span class="sxs-lookup"><span data-stu-id="fc3e8-145">NOTIFY_SENTDEFERRED</span></span>  <br/> |<span data-ttu-id="fc3e8-146">Eine **SBinary** -Struktur, die Eintrags-ID der zurückgestellte Nachricht enthält.</span><span class="sxs-lookup"><span data-stu-id="fc3e8-146">An **SBinary** structure that contains the entry identifier of deferred message.</span></span>  <br/> |
    
-## <a name="return-value"></a><span data-ttu-id="fc3e8-147">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fc3e8-147">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fc3e8-147">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fc3e8-147">Return value</span></span>
 
 <span data-ttu-id="fc3e8-148">S_OK</span><span class="sxs-lookup"><span data-stu-id="fc3e8-148">S_OK</span></span> 
   

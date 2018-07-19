@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 250b9137-facb-81a2-41b1-96a57366c04e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: b52dcd87c8714ad59db560a5ae4a8300f9cc83ae
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT COfflineObj::Unadvise(
   
 > <span data-ttu-id="a4021-111">[in] Ein Advise-Token, das die Rückruf Registrierung identifiziert, die abgebrochen werden soll.</span><span class="sxs-lookup"><span data-stu-id="a4021-111">[in] An advise token that identifies the callback registration that is to be canceled.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="a4021-112">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a4021-112">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a4021-112">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a4021-112">Return value</span></span>
 
 <span data-ttu-id="a4021-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="a4021-113">S_OK</span></span>
   

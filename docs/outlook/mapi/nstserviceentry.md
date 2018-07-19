@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: b5902c25197c2ae5790e654a8f29227e107b4a72
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ HRESULT NSTServiceEntry(
   
 ## <a name="remarks"></a><span data-ttu-id="316cb-116">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="316cb-116">Remarks</span></span>
 
-<span data-ttu-id="316cb-117">Wenn **[GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx)** für die Adresse des dieser Funktion in msmapi32.dll suchen, geben Sie "NSTServiceEntry" als den Namen der Prozedur.</span><span class="sxs-lookup"><span data-stu-id="316cb-117">When using **[GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx)** to look for the address of this function in msmapi32.dll, specify "NSTServiceEntry" as the procedure name.</span></span> 
+<span data-ttu-id="316cb-117">Wenn **[GetProcAddress](http://msdn.microsoft.com/de-de/library/ms683212.aspx)** für die Adresse des dieser Funktion in msmapi32.dll suchen, geben Sie "NSTServiceEntry" als den Namen der Prozedur.</span><span class="sxs-lookup"><span data-stu-id="316cb-117">When using **[GetProcAddress](http://msdn.microsoft.com/de-de/library/ms683212.aspx)** to look for the address of this function in msmapi32.dll, specify "NSTServiceEntry" as the procedure name.</span></span> 
   
 <span data-ttu-id="316cb-118">Um die Replikation-API verwenden, muss ein MAPI-Anbieter zuerst öffnen und in eine PST-basierten lokalen Speicher durch Aufrufen von **[NSTServiceEntry](nstserviceentry.md)** umgebrochen.</span><span class="sxs-lookup"><span data-stu-id="316cb-118">To use the Replication API, a MAPI store provider must first open and wrap a PST-based local store by calling **[NSTServiceEntry](nstserviceentry.md)**.</span></span> <span data-ttu-id="316cb-119">Der Anbieter können Sie die wichtigsten Schnittstellen der API, **[IOSTX](iostxiunknown.md)** und **[IPSTX](ipstxiunknown.md)**, um die Replikation auszuführen.</span><span class="sxs-lookup"><span data-stu-id="316cb-119">The provider can then use the major interfaces of the API, **[IOSTX](iostxiunknown.md)** and **[IPSTX](ipstxiunknown.md)**, to carry out replication.</span></span> 
   

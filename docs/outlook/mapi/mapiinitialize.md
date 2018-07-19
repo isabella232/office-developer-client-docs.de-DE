@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b9584226-79d2-4d83-8f31-dbfbc50f16c5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: d22c24088960debcd18ccd818dad23656f6a01f2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ HRESULT MAPIInitialize(
   
 > <span data-ttu-id="e0b78-114">[in] Zeiger auf eine [MAPIINIT_0](mapiinit_0.md) -Struktur.</span><span class="sxs-lookup"><span data-stu-id="e0b78-114">[in] Pointer to a [MAPIINIT_0](mapiinit_0.md) structure.</span></span> <span data-ttu-id="e0b78-115">Der Parameter _LpMapiInit_ kann auf NULL festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="e0b78-115">The  _lpMapiInit_ parameter can be set to NULL.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="e0b78-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="e0b78-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="e0b78-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e0b78-116">Return value</span></span>
 
 <span data-ttu-id="e0b78-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="e0b78-117">S_OK</span></span> 
   

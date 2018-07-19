@@ -8,7 +8,7 @@ keywords:
 - Funktionen der Framework-Bibliothek [excel 2007], Funktionen [Excel 2007], Framework-Klassenbibliothek
 localization_priority: Normal
 ms.assetid: 7d9a13fd-9a4c-423e-bb08-4a5be57c7905
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 1d3878e376f95be3b277f1bb1a59545eb0a631ac
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

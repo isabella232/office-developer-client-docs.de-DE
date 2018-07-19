@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5e608cb0-808d-4418-8521-71dcbce8cdff
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 25f80ddce60ab5a8966a62761d234accafbb54be
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Unadvise(
   
 > <span data-ttu-id="634fe-108">[in] Eine Verbindung Zahl mit einer aktiven benachrichtigungsregistrierung verknüpft ist.</span><span class="sxs-lookup"><span data-stu-id="634fe-108">[in] A connection number associated with an active notification registration.</span></span> <span data-ttu-id="634fe-109">Der Wert der _UlConnection_ muss durch einen vorherigen Aufruf von **IMAPISession::Advise**zurückgegeben wurde, haben.</span><span class="sxs-lookup"><span data-stu-id="634fe-109">The value of  _ulConnection_ must have been returned by a previous call to **IMAPISession::Advise**.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="634fe-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="634fe-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="634fe-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="634fe-110">Return value</span></span>
 
 <span data-ttu-id="634fe-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="634fe-111">S_OK</span></span> 
   
@@ -49,7 +49,7 @@ HRESULT Unadvise(
 
 <span data-ttu-id="634fe-114">Die **IMAPISession::Unadvise** -Methode hebt die Registrierung ein für die Benachrichtigung.</span><span class="sxs-lookup"><span data-stu-id="634fe-114">The **IMAPISession::Unadvise** method cancels a registration for notification.</span></span> <span data-ttu-id="634fe-115">**Unadvise** -Versionen der Zeiger auf des Anrufers advise-Empfänger, die sie in der **Advise** -Aufruf für die Registrierung verwendet erhalten.</span><span class="sxs-lookup"><span data-stu-id="634fe-115">**Unadvise** releases its pointer to the caller's advise sink, which it received in the **Advise** call used for registration.</span></span> 
   
-<span data-ttu-id="634fe-116">Im Allgemeinen ruft **Unadvise** Advise-Empfänger [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode während des Anrufs **Unadvise** .</span><span class="sxs-lookup"><span data-stu-id="634fe-116">Generally, **Unadvise** calls the advise sink's [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) method during the **Unadvise** call.</span></span> <span data-ttu-id="634fe-117">Wenn ein anderer Thread wird gerade Advise-Empfänger [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode aufrufen, wird jedoch **Release** -Aufruf verzögert, bis die **OnNotify** -Methode zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="634fe-117">However, if another thread is in the process of calling the advise sink's [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) method, the **Release** call is delayed until the **OnNotify** method returns.</span></span> 
+<span data-ttu-id="634fe-116">Im Allgemeinen ruft **Unadvise** Advise-Empfänger [IUnknown](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) -Methode während des Anrufs **Unadvise** .</span><span class="sxs-lookup"><span data-stu-id="634fe-116">Generally, **Unadvise** calls the advise sink's [IUnknown::Release](http://msdn.microsoft.com/de-de/library/ms682317%28v=VS.85%29.aspx) method during the **Unadvise** call.</span></span> <span data-ttu-id="634fe-117">Wenn ein anderer Thread wird gerade Advise-Empfänger [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode aufrufen, wird jedoch **Release** -Aufruf verzögert, bis die **OnNotify** -Methode zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="634fe-117">However, if another thread is in the process of calling the advise sink's [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) method, the **Release** call is delayed until the **OnNotify** method returns.</span></span> 
   
 ## <a name="see-also"></a><span data-ttu-id="634fe-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="634fe-118">See also</span></span>
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2625f29d-325f-417d-bcec-49d580f9cd7e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3edcef69880dbc2a566a44582113c43802a47324
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -56,7 +56,7 @@ HRESULT ModifyRecipients(
   
 > <span data-ttu-id="41ae2-119">[in] Zeiger auf eine [ADRLIST](adrlist.md) -Struktur, die eine Liste der Empf�nger hinzugef�gt, gel�scht oder ge�ndert werden, in der Nachricht enth�lt.</span><span class="sxs-lookup"><span data-stu-id="41ae2-119">[in] Pointer to an [ADRLIST](adrlist.md) structure that contains a list of recipients to be added, deleted, or modified in the message.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="41ae2-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="41ae2-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="41ae2-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="41ae2-120">Return value</span></span>
 
 <span data-ttu-id="41ae2-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="41ae2-121">S_OK</span></span> 
   

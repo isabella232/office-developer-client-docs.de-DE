@@ -8,7 +8,7 @@ keywords:
 - Funktionen [excel 2007], Add-in-Manager, Funktionen [Excel 2007], XLL-Schnittstelle
 localization_priority: Normal
 ms.assetid: e22d425a-75b2-412c-a07f-fb1915d08615
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: a70eb2021b464352238699b2606d2d7d4c378f0a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

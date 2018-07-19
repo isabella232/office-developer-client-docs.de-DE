@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9be6b88e-2510-4b82-8b35-5f20a0f99fc0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e2871f5804cda172328fbd3ebdc43f860de939ab
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ AbortSubmit(
   
 > <span data-ttu-id="a56c4-112">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="a56c4-112">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="a56c4-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="a56c4-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="a56c4-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="a56c4-113">Return value</span></span>
 
 <span data-ttu-id="a56c4-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="a56c4-114">S_OK</span></span> 
   

@@ -30,7 +30,7 @@ ms.locfileid: "19797433"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="36eb3-112">_expression_</span><span class="sxs-lookup"><span data-stu-id="36eb3-112">_expression_</span></span> <br/> |<span data-ttu-id="36eb3-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="36eb3-113">Required</span></span>  <br/> |<span data-ttu-id="36eb3-114">**Numeric**</span><span class="sxs-lookup"><span data-stu-id="36eb3-114">**Numeric**</span></span> <br/> |<span data-ttu-id="36eb3-115">Der Farbindex aus der Farbpalette des Dokuments oder ein Bezug auf eine Zelle, die einen Farbindex enthält.</span><span class="sxs-lookup"><span data-stu-id="36eb3-115">The index of a color in the document's color table, or a reference to a cell that contains a color index.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="36eb3-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="36eb3-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="36eb3-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="36eb3-116">Return value</span></span>
 
 <span data-ttu-id="36eb3-117">Zahl</span><span class="sxs-lookup"><span data-stu-id="36eb3-117">Number</span></span>
   

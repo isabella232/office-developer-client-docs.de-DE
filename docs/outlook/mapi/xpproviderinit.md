@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: df6eacf4-1cf9-4c25-806f-f87c38dad597
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 0415e782a98102314ce732f744c0d29590f646c2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -89,7 +89,7 @@ HRESULT XPProviderInit(
   
 > <span data-ttu-id="d54c9-135">[out] Zeiger auf einen Zeiger auf den initialisierten Transportobjekt Anbieter.</span><span class="sxs-lookup"><span data-stu-id="d54c9-135">[out] Pointer to a pointer to the initialized transport provider object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="d54c9-136">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="d54c9-136">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="d54c9-136">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d54c9-136">Return value</span></span>
 
 <span data-ttu-id="d54c9-137">S_OK</span><span class="sxs-lookup"><span data-stu-id="d54c9-137">S_OK</span></span> 
   

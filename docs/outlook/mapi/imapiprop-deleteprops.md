@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5cc642de-21f0-4826-bf21-aac4bcfc1328
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 8eb19f9a2d3458e153b0758b56c502ce612be0cc
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT DeleteProps(
   
 > <span data-ttu-id="c0f63-111">[in, out] Bei Eingabe einen Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur. andernfalls NULL, was bedeutet, dass es keine Notwendigkeit Fehlerinformationen besteht.</span><span class="sxs-lookup"><span data-stu-id="c0f63-111">[in, out] On input, a pointer to a pointer to an [SPropProblemArray](spropproblemarray.md) structure; otherwise, NULL, which indicates that there is no need for error information.</span></span> <span data-ttu-id="c0f63-112">Wenn _LppProblems_ einen gültigen Zeiger für die Eingabe ist, gibt **"DeleteProps"** detaillierte Informationen zu Fehlern beim Löschen einer oder mehrerer Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="c0f63-112">If  _lppProblems_ is a valid pointer on input, **DeleteProps** returns detailed information about errors in deleting one or more properties.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="c0f63-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c0f63-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c0f63-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c0f63-113">Return value</span></span>
 
 <span data-ttu-id="c0f63-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="c0f63-114">S_OK</span></span> 
   

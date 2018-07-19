@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83c349f7-dcac-4268-befe-fb2bc0cd9c50
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 3758cf72aa79dbf500138e96872352950fafbd2a
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT StartMessage(
   
 > <span data-ttu-id="fc222-113">[out] Ein Zeiger auf ein Referenzwert, der die Nachricht zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="fc222-113">[out] A pointer to a reference value assigned to the message.</span></span> <span data-ttu-id="fc222-114">Die MAPI-Warteschlange initialisiert dieser Wert auf 1, bevor sie den Zeiger für den Transportanbieter zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="fc222-114">The MAPI spooler initializes this value to 1 before it returns the pointer to the transport provider.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fc222-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fc222-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fc222-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fc222-115">Return value</span></span>
 
 <span data-ttu-id="fc222-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="fc222-116">S_OK</span></span> 
   

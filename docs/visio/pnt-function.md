@@ -30,7 +30,7 @@ ms.locfileid: "19797688"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="1c62c-112">_X, y_</span><span class="sxs-lookup"><span data-stu-id="1c62c-112">_x,y_</span></span> <br/> |<span data-ttu-id="1c62c-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="1c62c-113">Required</span></span>  <br/> |<span data-ttu-id="1c62c-114">**Number, Number**</span><span class="sxs-lookup"><span data-stu-id="1c62c-114">**Number, Number**</span></span> <br/> |<span data-ttu-id="1c62c-115">Die Koordinaten des Punkts im Koordinatensystem des aktuellen Shapes.</span><span class="sxs-lookup"><span data-stu-id="1c62c-115">The coordinates of the point in the coordinate system of the current shape.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="1c62c-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1c62c-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="1c62c-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1c62c-116">Return value</span></span>
 
 <span data-ttu-id="1c62c-117">Punkt</span><span class="sxs-lookup"><span data-stu-id="1c62c-117">Point</span></span>
   

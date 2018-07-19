@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ca1861d-9bc9-485a-9807-a598b869e5a2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 334ec8dd0c683cf9b765f387281c624b20520098
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Shutdown(
   
 > <span data-ttu-id="8e33a-108">[in] Reserviert. Ein Zeiger auf 0 (null) muss sein.</span><span class="sxs-lookup"><span data-stu-id="8e33a-108">[in] Reserved; must be a pointer to zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="8e33a-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="8e33a-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="8e33a-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="8e33a-109">Return value</span></span>
 
 <span data-ttu-id="8e33a-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="8e33a-110">S_OK</span></span> 
   

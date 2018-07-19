@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0949e066-aa28-4ede-ac88-b2dccd5098e8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9025bcebdd5e656070b31cd82e6519166a3e3791
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -63,7 +63,7 @@ HRESULT WrapCompressedRTFStream(
   
 > <span data-ttu-id="dbc23-123">[out] Zeiger auf den Speicherort, in dem **WrapCompressedRTFStream** einen Stream für die nicht komprimierten RTF zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="dbc23-123">[out] Pointer to the location where **WrapCompressedRTFStream** returns a stream for the uncompressed RTF.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="dbc23-124">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="dbc23-124">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="dbc23-124">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dbc23-124">Return value</span></span>
 
 <span data-ttu-id="dbc23-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="dbc23-125">S_OK</span></span> 
   

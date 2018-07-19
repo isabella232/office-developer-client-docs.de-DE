@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce5e8c43-06af-4afc-9138-5cc51d8fc401
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 12b0c9b40c7ff06e9a3cf8e7929489f30434fa12
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ ULONG ulDenominator
   
 > <span data-ttu-id="ca33d-112">[in] Zeiger auf die als Nenner des Bruchs, die die Position der Tabelle darstellen.</span><span class="sxs-lookup"><span data-stu-id="ca33d-112">[in] Pointer to the denominator of the fraction representing the table position.</span></span> <span data-ttu-id="ca33d-113">Der Parameter _UlDenominator_ darf nicht NULL sein.</span><span class="sxs-lookup"><span data-stu-id="ca33d-113">The  _ulDenominator_ parameter cannot be zero.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ca33d-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ca33d-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ca33d-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ca33d-114">Return value</span></span>
 
 <span data-ttu-id="ca33d-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="ca33d-115">S_OK</span></span> 
   

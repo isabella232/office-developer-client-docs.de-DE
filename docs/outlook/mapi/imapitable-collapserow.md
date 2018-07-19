@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1a23e555-be26-43fb-a715-cfc4ffa623cd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 1fd711683ff476ef5d381bca2f9db6bc25b07c68
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -54,7 +54,7 @@ ULONG FAR * lpulRowCount
   
 > <span data-ttu-id="09c8e-114">[out] Ein Zeiger auf die Gesamtzahl der Zeilen, die aus der Tabellenansicht entfernt werden.</span><span class="sxs-lookup"><span data-stu-id="09c8e-114">[out] A pointer to the total number of rows that are being removed from the table view.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="09c8e-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="09c8e-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="09c8e-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="09c8e-115">Return value</span></span>
 
 <span data-ttu-id="09c8e-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="09c8e-116">S_OK</span></span> 
   

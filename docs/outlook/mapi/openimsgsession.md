@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: f75229e3-5f44-4298-8706-9eddf0ef124c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e7f652e7426792d8b4c878b7f6738439aec65348
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -55,7 +55,7 @@ SCODE OpenIMsgSession(
   
 > <span data-ttu-id="67732-119">[out] Zeiger auf einen Zeiger auf das zurückgegebene Nachricht Session-Objekt.</span><span class="sxs-lookup"><span data-stu-id="67732-119">[out] Pointer to a pointer to the returned message session object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="67732-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="67732-120">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="67732-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="67732-120">Return value</span></span>
 
 <span data-ttu-id="67732-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="67732-121">S_OK</span></span>
   

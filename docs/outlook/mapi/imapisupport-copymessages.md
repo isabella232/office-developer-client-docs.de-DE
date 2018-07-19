@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70f67614-af0d-43f6-99f6-391a2f5673cb
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 64b2c147acb02b6c29cf080076b6fe2e3eefb717
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -82,7 +82,7 @@ HRESULT CopyMessages(
   
 > <span data-ttu-id="85b81-132">Die Nachrichten verschoben werden soll, sondern kopiert.</span><span class="sxs-lookup"><span data-stu-id="85b81-132">The messages should be moved, instead of copied.</span></span> <span data-ttu-id="85b81-133">Wenn MESSAGE_MOVE nicht festgelegt ist, werden die Nachrichten kopiert.</span><span class="sxs-lookup"><span data-stu-id="85b81-133">If MESSAGE_MOVE is not set, the messages are copied.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="85b81-134">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="85b81-134">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="85b81-134">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="85b81-134">Return value</span></span>
 
 <span data-ttu-id="85b81-135">S_OK</span><span class="sxs-lookup"><span data-stu-id="85b81-135">S_OK</span></span> 
   

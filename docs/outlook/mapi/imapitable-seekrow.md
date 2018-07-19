@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93ac63ae-f254-45e1-a9b1-347d69d2ed9f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 143ca03a5e98d638d29394f5c0803e349ab4de25
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -61,7 +61,7 @@ LONG FAR * lplRowsSought
   
 > <span data-ttu-id="ade76-119">[out] Ist _lRowCount_ ein gültiger Zeiger auf input _LplRowsSought_ verweist auf die Anzahl der Zeilen, die in den Suchvorgang verarbeitet wurden, gibt die Zeichen, von denen die Richtung der Suche, vorwärts oder rückwärts.</span><span class="sxs-lookup"><span data-stu-id="ade76-119">[out] If  _lRowCount_ is a valid pointer on input,  _lplRowsSought_ points to the number of rows that were processed in the seek operation, the sign of which indicates the direction of search, forward or backward.</span></span> <span data-ttu-id="ade76-120">Wenn _lRowCount_ negativ ist, klicken Sie dann ist _LplRowsSought_ negativ.</span><span class="sxs-lookup"><span data-stu-id="ade76-120">If  _lRowCount_ is negative, then  _lplRowsSought_ is negative.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ade76-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ade76-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ade76-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ade76-121">Return value</span></span>
 
 <span data-ttu-id="ade76-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="ade76-122">S_OK</span></span> 
   

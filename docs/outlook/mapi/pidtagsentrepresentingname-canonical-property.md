@@ -9,7 +9,7 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bfee6c5e-d4c6-442e-af71-23156569fed5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 5417b73fe13937a74bc01520a2dd9db359e894ed
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -46,11 +46,11 @@ ms.locfileid: "19795157"
   
 > <span data-ttu-id="fe75a-123">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="fe75a-123">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="fe75a-124">[[MS-OXOMSG]](http://msdn.microsoft.com/en-us/library/cc433482%28EXCHG.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="fe75a-124">[[MS-OXOMSG]](http://msdn.microsoft.com/en-us/library/cc433482%28EXCHG.80%29.aspx)</span></span>
+<span data-ttu-id="fe75a-124">[[MS-OXOMSG]](http://msdn.microsoft.com/de-de/library/cc433482%28EXCHG.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="fe75a-124">[[MS-OXOMSG]](http://msdn.microsoft.com/de-de/library/cc433482%28EXCHG.80%29.aspx)</span></span>
   
 > <span data-ttu-id="fe75a-125">Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="fe75a-125">Specifies the properties and operations that are permissible for email message objects.</span></span>
     
-<span data-ttu-id="fe75a-126">[[MS-OXORSS]](http://msdn.microsoft.com/en-us/library/cc463884%28EXCHG.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="fe75a-126">[[MS-OXORSS]](http://msdn.microsoft.com/en-us/library/cc463884%28EXCHG.80%29.aspx)</span></span>
+<span data-ttu-id="fe75a-126">[[MS-OXORSS]](http://msdn.microsoft.com/de-de/library/cc463884%28EXCHG.80%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="fe75a-126">[[MS-OXORSS]](http://msdn.microsoft.com/de-de/library/cc463884%28EXCHG.80%29.aspx)</span></span>
   
 > <span data-ttu-id="fe75a-127">Gibt die Eigenschaften und Operationen, die RSS-Elemente darstellen.</span><span class="sxs-lookup"><span data-stu-id="fe75a-127">Specifies the properties and operations that represent RSS items.</span></span>
     

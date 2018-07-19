@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2a303458-3283-409a-bc3b-b891f3fcfc22
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: e4bce7f122522532023d18b43fe4bfdeda84af9b
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -41,7 +41,7 @@ BOOL FGetComponentPath(
 
  <span data-ttu-id="c0b46-107">_szComponent_</span><span class="sxs-lookup"><span data-stu-id="c0b46-107">_szComponent_</span></span>
   
-> <span data-ttu-id="c0b46-108">[in] Die MSIComponentID-Registrierungsschlüssel in [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/en-us/library/dd162409.aspx)beschrieben.</span><span class="sxs-lookup"><span data-stu-id="c0b46-108">[in] The MSIComponentID reg key described in [Mapi32.dll Stub Registry Settings](http://msdn.microsoft.com/en-us/library/dd162409.aspx).</span></span>
+> <span data-ttu-id="c0b46-108">[in] Die MSIComponentID-Registrierungsschlüssel in [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/de-de/library/dd162409.aspx)beschrieben.</span><span class="sxs-lookup"><span data-stu-id="c0b46-108">[in] The MSIComponentID reg key described in [Mapi32.dll Stub Registry Settings](http://msdn.microsoft.com/de-de/library/dd162409.aspx).</span></span>
     
  <span data-ttu-id="c0b46-109">_szQualifier_</span><span class="sxs-lookup"><span data-stu-id="c0b46-109">_szQualifier_</span></span>
   
@@ -59,7 +59,7 @@ BOOL FGetComponentPath(
   
 > <span data-ttu-id="c0b46-117">[in] Erfahren Sie mehr MAPI, um die private Mapi32.dll Komponente zu installieren, wenn es nicht vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="c0b46-117">[in] Tells MAPI to install the private Mapi32.dll component if it is absent.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="c0b46-118">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="c0b46-118">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="c0b46-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="c0b46-118">Return value</span></span>
 
  <span data-ttu-id="c0b46-119">**"true"**</span><span class="sxs-lookup"><span data-stu-id="c0b46-119">**true**</span></span>
   
@@ -80,5 +80,5 @@ BOOL FGetComponentPath(
 [<span data-ttu-id="c0b46-126">Auswählen einer bestimmten zu ladenden MAPI-Version</span><span class="sxs-lookup"><span data-stu-id="c0b46-126">Choose a Specific Version of MAPI to Load</span></span>](how-to-choose-a-specific-version-of-mapi-to-load.md)
 
 
-[<span data-ttu-id="c0b46-127">Mapi32.dll Stub Registrierungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="c0b46-127">Mapi32.dll Stub Registry Settings</span></span>](http://msdn.microsoft.com/en-us/library/dd162409.aspx)
+[<span data-ttu-id="c0b46-127">Mapi32.dll Stub Registrierungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="c0b46-127">Mapi32.dll Stub Registry Settings</span></span>](http://msdn.microsoft.com/de-de/library/dd162409.aspx)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d83b8ea8-a3b8-4038-a226-de1869c5d722
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 771b466e58bf57a7eb4285c6f6ce94c815ec7288
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ SCODE ScInitMapiUtil(
   
 > <span data-ttu-id="55bf6-114">[in] Reserviert. NULL muss sein.</span><span class="sxs-lookup"><span data-stu-id="55bf6-114">[in] Reserved; must be zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="55bf6-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="55bf6-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="55bf6-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="55bf6-115">Return value</span></span>
 
 <span data-ttu-id="55bf6-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="55bf6-116">S_OK</span></span> 
   

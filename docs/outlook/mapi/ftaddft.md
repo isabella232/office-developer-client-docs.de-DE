@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 341ad06b-1caa-49bb-b859-cb512f6fb55d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e0e1535a770d4f1b437faf6a90c5f6415f6000ca
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ FILETIME FtAddFt(
   
 > <span data-ttu-id="4c178-116">[in] Ein **FILETIME** -Struktur, die enthält die zweite 64-Bit-Ganzzahl hinzugefügt werden soll.</span><span class="sxs-lookup"><span data-stu-id="4c178-116">[in] A **FILETIME** structure that contains the second unsigned 64-bit integer to be added.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="4c178-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="4c178-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="4c178-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="4c178-117">Return value</span></span>
 
 <span data-ttu-id="4c178-118">Die **FtAddFt** -Funktion gibt eine **FILETIME** -Struktur, die die Summe der beiden ganzen Zahlen enthält.</span><span class="sxs-lookup"><span data-stu-id="4c178-118">The **FtAddFt** function returns a **FILETIME** structure that contains the sum of the two integers.</span></span> <span data-ttu-id="4c178-119">Die beiden Eingabeparameter bleiben unverändert.</span><span class="sxs-lookup"><span data-stu-id="4c178-119">The two input parameters remain unchanged.</span></span> 
   

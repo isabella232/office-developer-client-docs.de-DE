@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 49f007c9-42e5-4391-8b83-988c9b0ebdba
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 304295e3ac77fb67ec5875620a7a269377b542c1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -49,7 +49,7 @@ HRESULT SetProps(
   
 > <span data-ttu-id="46b5c-113">[in, out] Bei Eingabe einen Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur. andernfalls NULL zurück, der keine Notwendigkeit zur Fehlerinformationen angibt.</span><span class="sxs-lookup"><span data-stu-id="46b5c-113">[in, out] On input, a pointer to a pointer to an [SPropProblemArray](spropproblemarray.md) structure; otherwise, NULL, indicating no need for error information.</span></span> <span data-ttu-id="46b5c-114">Wenn _LppProblems_ einen gültigen Zeiger für die Eingabe ist, gibt **SetProps** detaillierte Informationen zu Fehlern beim Aktualisieren einer oder mehrerer Eigenschaften zurück.</span><span class="sxs-lookup"><span data-stu-id="46b5c-114">If  _lppProblems_ is a valid pointer on input, **SetProps** returns detailed information about errors in updating one or more properties.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="46b5c-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="46b5c-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="46b5c-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="46b5c-115">Return value</span></span>
 
 <span data-ttu-id="46b5c-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="46b5c-116">S_OK</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: d6341acc-c6ca-4605-93af-77230040339d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 96fd317c28d95335a3acc5d0603298f2fe8345e9
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ LPSPropTagArray FAR * lpPropTagArray
   
 > <span data-ttu-id="48797-113">[out] Legen Sie den Zeiger auf eine [SPropTagArray](sproptagarray.md) -Struktur, die die Eigenschaftentags für die Spalte enthält.</span><span class="sxs-lookup"><span data-stu-id="48797-113">[out] Pointer to an [SPropTagArray](sproptagarray.md) structure containing the property tags for the column set.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="48797-114">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="48797-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="48797-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="48797-114">Return value</span></span>
 
 <span data-ttu-id="48797-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="48797-115">S_OK</span></span> 
   

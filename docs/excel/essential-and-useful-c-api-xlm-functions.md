@@ -8,7 +8,7 @@ keywords:
 - Funktionen [excel 2007], C-API-xlm
 localization_priority: Normal
 ms.assetid: dc80cb3d-0d7e-4cb9-9870-3acc84eeca82
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 410a6009bf6bbb8146dcc1354e7f5688c28d96c6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

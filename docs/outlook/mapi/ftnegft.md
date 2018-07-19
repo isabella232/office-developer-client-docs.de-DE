@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 639a408c-aed1-456b-9f75-9d6fb8dcb33b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: e26acb8415df007a7f3fb5901521da7222ae40ed
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -45,7 +45,7 @@ FILETIME FtNegFt(
   
 > <span data-ttu-id="ca115-114">[in] Ein [FILETIME](filetime.md) -Struktur, die 64-Bit-Ganzzahl ohne Vorzeichen für die die beiden Ergänzung berechnet enthält.</span><span class="sxs-lookup"><span data-stu-id="ca115-114">[in] A [FILETIME](filetime.md) structure that contains the unsigned 64-bit integer for which to compute the two's complement.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ca115-115">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ca115-115">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="ca115-115">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ca115-115">Return value</span></span>
 
 <span data-ttu-id="ca115-116">Die **FtNegFt** -Funktion gibt eine **FILETIME** -Struktur, die die beiden Ergänzung der ganzen Zahl enthält.</span><span class="sxs-lookup"><span data-stu-id="ca115-116">The **FtNegFt** function returns a **FILETIME** structure that contains the two's complement of the integer.</span></span> <span data-ttu-id="ca115-117">Der Eingabeparameter bleibt unverändert.</span><span class="sxs-lookup"><span data-stu-id="ca115-117">The input parameter remains unchanged.</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: fec5d5ac-bca6-4fff-b264-45cdb6b37f55
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 3f04c5be240f63d35ea8dba0f7abbf1085f2a41d
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ BOOL FBadRglpNameID(
   
 > <span data-ttu-id="0650d-116">[in] Anzahl der benannten Eigenschaft Strukturen im Array auf den durch den Parameter _LppNameId_ verwiesen.</span><span class="sxs-lookup"><span data-stu-id="0650d-116">[in] Count of named property structures in the array pointed to by the  _lppNameId_ parameter.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="0650d-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0650d-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0650d-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="0650d-117">Return value</span></span>
 
 <span data-ttu-id="0650d-118">TRUE</span><span class="sxs-lookup"><span data-stu-id="0650d-118">TRUE</span></span> 
   

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 032f071e18af3a89a2850cf2bd1e141f34bc86d2
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -42,13 +42,13 @@ HRESULT SetCharset(
     
  <span data-ttu-id="6e33f-111">_hcharset_</span><span class="sxs-lookup"><span data-stu-id="6e33f-111">_hcharset_</span></span>
   
-> <span data-ttu-id="6e33f-112">[in] Ein Handle für einen Zeichensatz gemäß Definition im mimeole.h von Windows Mail.</span><span class="sxs-lookup"><span data-stu-id="6e33f-112">[in] A handle to a character set as defined in mimeole.h of Windows Mail.</span></span> <span data-ttu-id="6e33f-113">Geben Sie **null,** um anzugeben, dass keine bestimmten Zeichensatz anwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="6e33f-113">Specify **null** to specify that you do not want to apply any specific character set.</span></span> <span data-ttu-id="6e33f-114">Für nicht - **null** -Werte können mit einer Funktion wie [MimeOleGetCodePageCharset](http://msdn.microsoft.com/en-us/library/ms714746%28VS.85%29.aspx) einen Handle für den Zeichensatz abrufen.</span><span class="sxs-lookup"><span data-stu-id="6e33f-114">For non- **null** values, use a function such as [MimeOleGetCodePageCharset](http://msdn.microsoft.com/en-us/library/ms714746%28VS.85%29.aspx) to obtain a handle to the character set.</span></span> 
+> <span data-ttu-id="6e33f-112">[in] Ein Handle für einen Zeichensatz gemäß Definition im mimeole.h von Windows Mail.</span><span class="sxs-lookup"><span data-stu-id="6e33f-112">[in] A handle to a character set as defined in mimeole.h of Windows Mail.</span></span> <span data-ttu-id="6e33f-113">Geben Sie **null,** um anzugeben, dass keine bestimmten Zeichensatz anwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="6e33f-113">Specify **null** to specify that you do not want to apply any specific character set.</span></span> <span data-ttu-id="6e33f-114">Für nicht - **null** -Werte können mit einer Funktion wie [MimeOleGetCodePageCharset](http://msdn.microsoft.com/de-de/library/ms714746%28VS.85%29.aspx) einen Handle für den Zeichensatz abrufen.</span><span class="sxs-lookup"><span data-stu-id="6e33f-114">For non- **null** values, use a function such as [MimeOleGetCodePageCharset](http://msdn.microsoft.com/de-de/library/ms714746%28VS.85%29.aspx) to obtain a handle to the character set.</span></span> 
     
  <span data-ttu-id="6e33f-115">_csetapplytype_</span><span class="sxs-lookup"><span data-stu-id="6e33f-115">_csetapplytype_</span></span>
   
 > <span data-ttu-id="6e33f-116">[in] Gibt an, wie anwenden ein Zeichensatzes auf eine Nachricht zu konvertieren, gemäß Definition im mimeole.h von Windows Mail.</span><span class="sxs-lookup"><span data-stu-id="6e33f-116">[in] Indicates how to apply a character set to convert a message, as defined in mimeole.h of Windows Mail.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="6e33f-117">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="6e33f-117">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="6e33f-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="6e33f-117">Return value</span></span>
 
 <span data-ttu-id="6e33f-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="6e33f-118">S_OK</span></span>
   

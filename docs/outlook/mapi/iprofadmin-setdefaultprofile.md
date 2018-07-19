@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 58f50535-b0ed-4097-bda8-fd3ccc2d4b49
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: cf5060ba2113032fe1e13e5417590006808a53e1
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -48,7 +48,7 @@ HRESULT SetDefaultProfile(
   
 > <span data-ttu-id="7be4a-114">Der Name der Benutzerprofildienst wird im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="7be4a-114">The profile name is in Unicode format.</span></span> <span data-ttu-id="7be4a-115">Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Name der Benutzerprofildienst im ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="7be4a-115">If the MAPI_UNICODE flag is not set, the profile name is in ANSI format.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="7be4a-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="7be4a-116">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="7be4a-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="7be4a-116">Return value</span></span>
 
 <span data-ttu-id="7be4a-117">S_OK</span><span class="sxs-lookup"><span data-stu-id="7be4a-117">S_OK</span></span> 
   

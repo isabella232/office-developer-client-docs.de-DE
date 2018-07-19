@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1524eb06-7492-42de-b455-e0982bda7ece
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 17470f9ff552eaa4908973c4f033db2b4e754d7c
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -39,7 +39,7 @@ HRESULT Poll(
   
 > <span data-ttu-id="72d0a-108">[out] Ein Wert, der angibt, das Vorhandensein von eingehenden Nachrichten.</span><span class="sxs-lookup"><span data-stu-id="72d0a-108">[out] A value that indicates the existence of inbound messages.</span></span> <span data-ttu-id="72d0a-109">Ein Wert ungleich Null gibt an, dass eingehende Nachrichten vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="72d0a-109">A nonzero value indicates that there are inbound messages.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="72d0a-110">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="72d0a-110">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="72d0a-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="72d0a-110">Return value</span></span>
 
 <span data-ttu-id="72d0a-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="72d0a-111">S_OK</span></span> 
   

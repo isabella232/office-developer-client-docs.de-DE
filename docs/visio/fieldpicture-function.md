@@ -30,7 +30,7 @@ ms.locfileid: "19796974"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="66d1a-112">_code_</span><span class="sxs-lookup"><span data-stu-id="66d1a-112">_code_</span></span> <br/> |<span data-ttu-id="66d1a-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="66d1a-113">Required</span></span>  <br/> |<span data-ttu-id="66d1a-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="66d1a-114">**Number**</span></span> <br/> | <span data-ttu-id="66d1a-115">Ein Textfeld-Formatcode.</span><span class="sxs-lookup"><span data-stu-id="66d1a-115">A text field format code.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="66d1a-116">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="66d1a-116">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="66d1a-116">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="66d1a-116">Return value</span></span>
 
 <span data-ttu-id="66d1a-117">Zeichenfolge</span><span class="sxs-lookup"><span data-stu-id="66d1a-117">String</span></span>
   

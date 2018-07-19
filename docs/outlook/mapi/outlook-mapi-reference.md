@@ -5,7 +5,7 @@ ms.date: 04/04/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3d980b86-7001-4869-9780-121c6bfc7275
-description: 'Letzte �nderung: Montag, 4. April 2016'
+description: 'Letzte Änderung: Montag, 4. April 2016'
 ms.openlocfilehash: 50ae7562905f3f7910f70cc4d7667de069a41bd6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

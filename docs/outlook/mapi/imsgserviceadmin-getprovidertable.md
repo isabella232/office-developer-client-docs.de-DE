@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7180bff2-91ad-4e11-923e-2a9acefa3215
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 4272edef5b1b72944d1d27f0e4dd99ee4956aa57
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -44,7 +44,7 @@ HRESULT GetProviderTable(
   
 > <span data-ttu-id="def28-110">[out] Ein Zeiger auf einen Zeiger auf den Anbieter-Tabelle.</span><span class="sxs-lookup"><span data-stu-id="def28-110">[out] A pointer to a pointer to the provider table.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="def28-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="def28-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="def28-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="def28-111">Return value</span></span>
 
 <span data-ttu-id="def28-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="def28-112">S_OK</span></span> 
   

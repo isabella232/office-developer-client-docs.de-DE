@@ -10,7 +10,7 @@ keywords:
 - xlopertoxloper12-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: b2d4581b-ebf6-4eba-aa95-69a5a9ee8028
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 76c78e5a2ad62b1a3d1aa23748b10e49e07f6543
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT

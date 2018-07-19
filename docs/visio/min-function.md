@@ -32,7 +32,7 @@ ms.locfileid: "19797525"
 | <span data-ttu-id="10f1e-118">_Zahl2_</span><span class="sxs-lookup"><span data-stu-id="10f1e-118">_number2_</span></span> <br/> |<span data-ttu-id="10f1e-119">Optional</span><span class="sxs-lookup"><span data-stu-id="10f1e-119">Optional</span></span>  <br/> |<span data-ttu-id="10f1e-120">**Varies**</span><span class="sxs-lookup"><span data-stu-id="10f1e-120">**Varies**</span></span> <br/> | <span data-ttu-id="10f1e-121">Die zweite Zahl in der Liste.</span><span class="sxs-lookup"><span data-stu-id="10f1e-121">The second number in the list.</span></span>  <br/> |
 | <span data-ttu-id="10f1e-122">_numberN_</span><span class="sxs-lookup"><span data-stu-id="10f1e-122">_numberN_</span></span> <br/> |<span data-ttu-id="10f1e-123">Optional</span><span class="sxs-lookup"><span data-stu-id="10f1e-123">Optional</span></span>  <br/> |<span data-ttu-id="10f1e-124">**Varies**</span><span class="sxs-lookup"><span data-stu-id="10f1e-124">**Varies**</span></span> <br/> |<span data-ttu-id="10f1e-125">Die n-te Zahl in der Liste.</span><span class="sxs-lookup"><span data-stu-id="10f1e-125">The nth number in the list.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="10f1e-126">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="10f1e-126">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="10f1e-126">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="10f1e-126">Return value</span></span>
 
 <span data-ttu-id="10f1e-127">Varies</span><span class="sxs-lookup"><span data-stu-id="10f1e-127">Varies</span></span>
   

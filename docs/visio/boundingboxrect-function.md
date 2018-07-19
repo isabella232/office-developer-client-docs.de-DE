@@ -33,7 +33,7 @@ ms.locfileid: "19796551"
 |:-----|:-----|:-----|:-----|
 | <span data-ttu-id="ebef2-114">_Index_</span><span class="sxs-lookup"><span data-stu-id="ebef2-114">_Index_</span></span> <br/> |<span data-ttu-id="ebef2-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="ebef2-115">Required</span></span>  <br/> |<span data-ttu-id="ebef2-116">**Integer**</span><span class="sxs-lookup"><span data-stu-id="ebef2-116">**Integer**</span></span> <br/> |<span data-ttu-id="ebef2-p101">Der Rand des das Shape umgebenden Felds, für den die Koordinate abgerufen werden soll. Mögliche Werte finden Sie in den Anmerkungen.</span><span class="sxs-lookup"><span data-stu-id="ebef2-p101">The edge of the shape's bounding box for which to get the coordinate. See Remarks for possible values.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="ebef2-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ebef2-119">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="ebef2-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ebef2-119">Return value</span></span>
 
  <span data-ttu-id="ebef2-120">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="ebef2-120">**Number**</span></span>
   

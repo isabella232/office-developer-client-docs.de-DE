@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2635a829-0f3a-49ed-a672-2f350a2cf979
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 9be25dc655536ff5d32a635da57c54ebd12fea0f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -50,7 +50,7 @@ FILETIME FtAdcFt(
   
 > <span data-ttu-id="500d5-116">[eingehend, ausgehend, optional] Führen bei der Eingabe ein Zeiger auf die eingehenden Kennzeichnung.</span><span class="sxs-lookup"><span data-stu-id="500d5-116">[in, out, optional] On input, a pointer to the incoming carry flag.</span></span> <span data-ttu-id="500d5-117">Bei der Ausgabe einen Zeiger auf das Ergebnis sind für das Hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="500d5-117">On output, a pointer to the carry result for the addition.</span></span> <span data-ttu-id="500d5-118">Dieser Parameter kann NULL sein, wenn das Ergebnis sind nicht erforderlich ist.</span><span class="sxs-lookup"><span data-stu-id="500d5-118">This parameter can be NULL if the carry result is not required.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="500d5-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="500d5-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="500d5-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="500d5-119">Return value</span></span>
 
 <span data-ttu-id="500d5-120">Die **FtAdcFt** -Funktion gibt eine **FILETIME** -Struktur, die die Summe der beiden ganzen Zahlen enthält.</span><span class="sxs-lookup"><span data-stu-id="500d5-120">The **FtAdcFt** function returns a **FILETIME** structure that contains the sum of the two integers.</span></span> <span data-ttu-id="500d5-121">Die beiden Eingabeparameter bleiben unverändert.</span><span class="sxs-lookup"><span data-stu-id="500d5-121">The two input parameters remain unchanged.</span></span> <span data-ttu-id="500d5-122">Wenn **PwCarry** ungleich NULL ist, werden für die Summe das Ergebnis ausführen enthält 0 oder 1.</span><span class="sxs-lookup"><span data-stu-id="500d5-122">If **pwCarry** is non-NULL, it contains the carry result for the sum, either 0 or 1.</span></span> 
   

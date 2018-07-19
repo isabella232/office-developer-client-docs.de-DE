@@ -7,7 +7,7 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c4859fa4f8f55af7913c884e25c96727c063ba79
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -51,7 +51,7 @@ HRESULT GetTnefStreamCodepage(
   
 > <span data-ttu-id="fa3c8-118">[out] Zeiger auf der Seite Subcode des Stream-Objekts.</span><span class="sxs-lookup"><span data-stu-id="fa3c8-118">[out] Pointer to the subcode page of the stream.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fa3c8-119">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fa3c8-119">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="fa3c8-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="fa3c8-119">Return value</span></span>
 
  <span data-ttu-id="fa3c8-120">**S_OK**</span><span class="sxs-lookup"><span data-stu-id="fa3c8-120">**S_OK**</span></span>
   
@@ -73,5 +73,5 @@ HRESULT GetTnefStreamCodepage(
 
 
 
-[<span data-ttu-id="fa3c8-130">attOemCodepage</span><span class="sxs-lookup"><span data-stu-id="fa3c8-130">attOemCodepage</span></span>](http://msdn.microsoft.com/en-us/library/ee158667%28EXCHG.80%29.aspx)
+[<span data-ttu-id="fa3c8-130">attOemCodepage</span><span class="sxs-lookup"><span data-stu-id="fa3c8-130">attOemCodepage</span></span>](http://msdn.microsoft.com/de-de/library/ee158667%28EXCHG.80%29.aspx)
 

@@ -11,7 +11,7 @@ api_name:
 api_type:
 - COM
 ms.assetid: 261d5f7c-bb61-4e1d-aa41-cca224c63f8e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: 0e96c0b99f0a5f7511ed59b483ab9409eafad882
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -58,7 +58,7 @@ HRESULT OpenStatusEntry(
   
 > <span data-ttu-id="1bbb7-120">[out] Ein Zeiger auf den Zeiger auf das Statusobjekt geöffnet.</span><span class="sxs-lookup"><span data-stu-id="1bbb7-120">[out] A pointer to the pointer to the opened status object.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="1bbb7-121">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="1bbb7-121">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="1bbb7-121">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="1bbb7-121">Return value</span></span>
 
 <span data-ttu-id="1bbb7-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="1bbb7-122">S_OK</span></span> 
   

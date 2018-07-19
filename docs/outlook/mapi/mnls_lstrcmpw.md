@@ -39,7 +39,7 @@ int MNLS_lstrcmpW(
   
 > <span data-ttu-id="32a7b-110">[in] Zeiger auf die zweite zu vergleichende Unicode-Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="32a7b-110">[in] Pointer to the second Unicode string to compare.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="32a7b-111">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="32a7b-111">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="32a7b-111">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="32a7b-111">Return value</span></span>
 
 <span data-ttu-id="32a7b-112">Gibt die Werte für einen entsprechenden Aufruf **MNLS_CompareStringW** außer CSTR_EQUAL beschrieben.</span><span class="sxs-lookup"><span data-stu-id="32a7b-112">Returns the values described for an equivalent call to **MNLS_CompareStringW** except for CSTR_EQUAL.</span></span> 
   
@@ -51,5 +51,5 @@ int MNLS_lstrcmpW(
 
 
 
-[<span data-ttu-id="32a7b-116">GetUserDefaultLCID</span><span class="sxs-lookup"><span data-stu-id="32a7b-116">GetUserDefaultLCID</span></span>](http://msdn.microsoft.com/en-us/library/dd318135%28VS.85%29.aspx)
+[<span data-ttu-id="32a7b-116">GetUserDefaultLCID</span><span class="sxs-lookup"><span data-stu-id="32a7b-116">GetUserDefaultLCID</span></span>](http://msdn.microsoft.com/de-de/library/dd318135%28VS.85%29.aspx)
 

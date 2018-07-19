@@ -6,7 +6,7 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 51acac58-ec39-488f-979c-1887dc2ab94b
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: dbf6f0f50e9f7fa988e83f3b58012e9deac13eac
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -30,7 +30,7 @@ int ShowOptions(HWND hWndParent)
   
 > <span data-ttu-id="55e95-112">Ein Handle für das Excel-Fenster.</span><span class="sxs-lookup"><span data-stu-id="55e95-112">A handle to the Excel window.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="55e95-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="55e95-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="55e95-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="55e95-113">Return value</span></span>
 
 <span data-ttu-id="55e95-114">**XlHpcRetSuccess** , wenn das Dialogfeld angezeigt wurde; **XlHpcRetCallFailed** , wenn er nicht angezeigt wurde.</span><span class="sxs-lookup"><span data-stu-id="55e95-114">**xlHpcRetSuccess** if the dialog box was shown; **xlHpcRetCallFailed** if it was not shown.</span></span> 
   

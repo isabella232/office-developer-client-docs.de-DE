@@ -31,7 +31,7 @@ ms.locfileid: "19797530"
 | <span data-ttu-id="ed1a4-112">_Anzahl_</span><span class="sxs-lookup"><span data-stu-id="ed1a4-112">_number_</span></span> <br/> |<span data-ttu-id="ed1a4-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="ed1a4-113">Required</span></span>  <br/> |<span data-ttu-id="ed1a4-114">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="ed1a4-114">**Number**</span></span> <br/> |<span data-ttu-id="ed1a4-115">Der Dividend.</span><span class="sxs-lookup"><span data-stu-id="ed1a4-115">The dividend.</span></span>  <br/> |
 | <span data-ttu-id="ed1a4-116">_Divisor_</span><span class="sxs-lookup"><span data-stu-id="ed1a4-116">_divisor_</span></span> <br/> |<span data-ttu-id="ed1a4-117">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="ed1a4-117">Required</span></span>  <br/> |<span data-ttu-id="ed1a4-118">**Nummer**</span><span class="sxs-lookup"><span data-stu-id="ed1a4-118">**Number**</span></span> <br/> |<span data-ttu-id="ed1a4-119">Der Divisor.</span><span class="sxs-lookup"><span data-stu-id="ed1a4-119">The divisor.</span></span>  <br/> |
    
-### <a name="return-value"></a><span data-ttu-id="ed1a4-120">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="ed1a4-120">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="ed1a4-120">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ed1a4-120">Return value</span></span>
 
 <span data-ttu-id="ed1a4-121">Zahl</span><span class="sxs-lookup"><span data-stu-id="ed1a4-121">Number</span></span>
   

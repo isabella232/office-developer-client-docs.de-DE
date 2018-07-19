@@ -35,7 +35,7 @@ ms.locfileid: "19798531"
 ### <a name="code-samples"></a><span data-ttu-id="45cf5-113">Codebeispiele</span><span class="sxs-lookup"><span data-stu-id="45cf5-113">Code samples</span></span>
   
 - <span data-ttu-id="45cf5-114">
-  [Word-Codebeispiele im Office Dev Center](https://developer.microsoft.com/en-us/word/gallery/?filterBy=Word,Samples)</span><span class="sxs-lookup"><span data-stu-id="45cf5-114">[Office code samples in the Office Dev Center](https://developer.microsoft.com/en-us/word/gallery/?filterBy=Word,Samples)</span></span>
+  [Word-Codebeispiele im Office Dev Center](https://developer.microsoft.com/de-de/word/gallery/?filterBy=Word,Samples)</span><span class="sxs-lookup"><span data-stu-id="45cf5-114">[Office code samples in the Office Dev Center](https://developer.microsoft.com/de-de/word/gallery/?filterBy=Word,Samples)</span></span>
   
 ### <a name="other-resources"></a><span data-ttu-id="45cf5-115">Sonstige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="45cf5-115">Other resources</span></span>
   
