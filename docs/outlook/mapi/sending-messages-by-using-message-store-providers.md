@@ -113,7 +113,7 @@ ms.locfileid: "19795488"
     
   1. <span data-ttu-id="14930-168">Versetzt die Nachricht in der ausgehenden Warteschlange ohne das SUBMITFLAG_PREPROCESS Bit in der **PR_SUBMIT_FLAGS** -Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="14930-168">Puts the message in the outgoing queue without setting the SUBMITFLAG_PREPROCESS bit in the **PR_SUBMIT_FLAGS** property.</span></span> 
     
-  2. <span data-ttu-id="14930-169">Benachrichtigt die MAPI-Warteschlange, die die ausgehende Warteschlange geändert wurde, indem eine Benachrichtigung �ber eine Tabelle zu generieren.</span><span class="sxs-lookup"><span data-stu-id="14930-169">Notifies the MAPI spooler that the outgoing queue has changed by generating a table notification.</span></span> 
+  2. <span data-ttu-id="14930-169">Benachrichtigt die MAPI-Warteschlange, die die ausgehende Warteschlange geändert wurde, indem eine Benachrichtigung über eine Tabelle zu generieren.</span><span class="sxs-lookup"><span data-stu-id="14930-169">Notifies the MAPI spooler that the outgoing queue has changed by generating a table notification.</span></span> 
     
   3. <span data-ttu-id="14930-170">Gibt für den Client und Nachrichtenfluss weiterhin mit einem Satz von Aufgaben, die MAPI-Warteschlange.</span><span class="sxs-lookup"><span data-stu-id="14930-170">Returns to the client, and message flow continues with a set of tasks performed by the MAPI spooler.</span></span>
     

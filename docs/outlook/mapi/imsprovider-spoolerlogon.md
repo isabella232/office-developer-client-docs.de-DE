@@ -114,7 +114,7 @@ HRESULT SpoolerLogon(
 
 <span data-ttu-id="eec2b-152">S_OK</span><span class="sxs-lookup"><span data-stu-id="eec2b-152">S_OK</span></span> 
   
-> <span data-ttu-id="eec2b-153">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="eec2b-153">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="eec2b-153">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="eec2b-153">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="eec2b-154">MAPI_E_UNCONFIGURED</span><span class="sxs-lookup"><span data-stu-id="eec2b-154">MAPI_E_UNCONFIGURED</span></span> 
   

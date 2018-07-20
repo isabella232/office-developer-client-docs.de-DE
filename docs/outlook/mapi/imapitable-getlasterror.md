@@ -57,7 +57,7 @@ LPMAPIERROR FAR * lppMAPIError
 
 <span data-ttu-id="d0286-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="d0286-119">S_OK</span></span> 
   
-> <span data-ttu-id="d0286-120">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="d0286-120">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="d0286-120">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="d0286-120">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="d0286-121">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="d0286-121">MAPI_E_BAD_CHARWIDTH</span></span> 
   

@@ -29,5 +29,5 @@ ms.locfileid: "19793315"
 
 
 
-[<span data-ttu-id="8d3f7-108">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="8d3f7-108">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+[<span data-ttu-id="8d3f7-108">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="8d3f7-108">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 

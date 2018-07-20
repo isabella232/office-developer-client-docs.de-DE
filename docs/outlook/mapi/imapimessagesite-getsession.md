@@ -43,7 +43,7 @@ HRESULT GetSession(
 
 <span data-ttu-id="e24eb-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="e24eb-110">S_OK</span></span> 
   
-> <span data-ttu-id="e24eb-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e24eb-111">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="e24eb-111">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e24eb-111">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="e24eb-112">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="e24eb-112">S_FALSE</span></span> 
   

@@ -30,7 +30,7 @@ ms.locfileid: "19792035"
 |||
 |:-----|:-----|
 |<span data-ttu-id="7e6d4-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="7e6d4-106">Header file:</span></span>  <br/> |<span data-ttu-id="7e6d4-107">cabadmin.h</span><span class="sxs-lookup"><span data-stu-id="7e6d4-107">cabadmin.h</span></span>  <br/> |
-|<span data-ttu-id="7e6d4-108">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-108">Exposed by:</span></span>  <br/> ||
+|<span data-ttu-id="7e6d4-108">Verfügbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-108">Exposed by:</span></span>  <br/> ||
 |<span data-ttu-id="7e6d4-109">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-109">Implemented by:</span></span>  <br/> |[<span data-ttu-id="7e6d4-110">IABContainer : IMAPIContainer</span><span class="sxs-lookup"><span data-stu-id="7e6d4-110">IABContainer : IMAPIContainer</span></span>](iabcontainerimapicontainer.md) <br/> |
 |<span data-ttu-id="7e6d4-111">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-111">Called by:</span></span>  <br/> |<span data-ttu-id="7e6d4-112">CRM</span><span class="sxs-lookup"><span data-stu-id="7e6d4-112">CRM</span></span>  <br/> |
 |<span data-ttu-id="7e6d4-113">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="7e6d4-113">Interface identifier:</span></span>  <br/> |<span data-ttu-id="7e6d4-114">IID_IContabAdmin</span><span class="sxs-lookup"><span data-stu-id="7e6d4-114">IID_IContabAdmin</span></span>  <br/> |

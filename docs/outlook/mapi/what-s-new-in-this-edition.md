@@ -31,7 +31,7 @@ ms.locfileid: "19795836"
     
   - [<span data-ttu-id="3e2d2-110">MAPI-Referenz für Outlook</span><span class="sxs-lookup"><span data-stu-id="3e2d2-110">Outlook MAPI Reference</span></span>](outlook-mapi-reference.md)
     
-  - [<span data-ttu-id="3e2d2-111">�bersicht �ber Outlook-MAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="3e2d2-111">Outlook MAPI Reference Overview</span></span>](outlook-mapi-reference-overview.md)
+  - [<span data-ttu-id="3e2d2-111">Übersicht über Outlook-MAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="3e2d2-111">Outlook MAPI Reference Overview</span></span>](outlook-mapi-reference-overview.md)
     
 - <span data-ttu-id="3e2d2-112">**Nachricht Store Provider Example**– der Code [Sample umfließendem PST Store Provider](message-store-provider-sample.md) wurde erkannt und Outlook 2013 aufzunehmen jetzt überarbeitet.</span><span class="sxs-lookup"><span data-stu-id="3e2d2-112">**Message Store Provider Example**—The [Sample Wrapped PST Store Provider](message-store-provider-sample.md) code has now been revised to recognize and accommodate Outlook 2013.</span></span> <span data-ttu-id="3e2d2-113">Weitere Informationen finden Sie unter zuvor überarbeitet Inhalt in diesem Thema.</span><span class="sxs-lookup"><span data-stu-id="3e2d2-113">For more information, see Previously Revised Content in this topic.</span></span> 
     

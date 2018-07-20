@@ -59,7 +59,7 @@ SCODE ScCountProps(
 
 <span data-ttu-id="fd7e3-121">S_OK</span><span class="sxs-lookup"><span data-stu-id="fd7e3-121">S_OK</span></span> 
   
-> <span data-ttu-id="fd7e3-122">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fd7e3-122">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="fd7e3-122">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fd7e3-122">The call succeeded and has returned the expected value or values.</span></span> 
     
 <span data-ttu-id="fd7e3-123">MAPI_E_INVALID_PARAMETER</span><span class="sxs-lookup"><span data-stu-id="fd7e3-123">MAPI_E_INVALID_PARAMETER</span></span> 
   

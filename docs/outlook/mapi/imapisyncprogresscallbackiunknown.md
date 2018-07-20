@@ -30,7 +30,7 @@ ms.locfileid: "19792441"
 |||
 |:-----|:-----|
 |<span data-ttu-id="daa2c-107">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="daa2c-107">Header file:</span></span>  <br/> ||
-|<span data-ttu-id="daa2c-108">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="daa2c-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="daa2c-109">Outlook</span><span class="sxs-lookup"><span data-stu-id="daa2c-109">Outlook</span></span>  <br/> |
+|<span data-ttu-id="daa2c-108">Verfügbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="daa2c-108">Exposed by:</span></span>  <br/> |<span data-ttu-id="daa2c-109">Outlook</span><span class="sxs-lookup"><span data-stu-id="daa2c-109">Outlook</span></span>  <br/> |
 |<span data-ttu-id="daa2c-110">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="daa2c-110">Implemented by:</span></span>  <br/> |<span data-ttu-id="daa2c-111">Outlook</span><span class="sxs-lookup"><span data-stu-id="daa2c-111">Outlook</span></span>  <br/> |
 |<span data-ttu-id="daa2c-112">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="daa2c-112">Called by:</span></span>  <br/> |<span data-ttu-id="daa2c-113">Speicheranbieter</span><span class="sxs-lookup"><span data-stu-id="daa2c-113">Store providers</span></span>  <br/> |
 |<span data-ttu-id="daa2c-114">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="daa2c-114">Interface identifier:</span></span>  <br/> |<span data-ttu-id="daa2c-115">IID_IMAPISyncProgressCallback</span><span class="sxs-lookup"><span data-stu-id="daa2c-115">IID_IMAPISyncProgressCallback</span></span>  <br/> |

@@ -125,7 +125,7 @@ ms.locfileid: "19791863"
   
 ## <a name="see-also"></a><span data-ttu-id="ccb2a-153">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ccb2a-153">See also</span></span>
 
-- [<span data-ttu-id="ccb2a-154">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="ccb2a-154">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+- [<span data-ttu-id="ccb2a-154">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="ccb2a-154">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 - [<span data-ttu-id="ccb2a-155">Installieren des MAPI-Subsystems</span><span class="sxs-lookup"><span data-stu-id="ccb2a-155">Installing the MAPI Subsystem</span></span>](installing-the-mapi-subsystem.md)
 - [<span data-ttu-id="ccb2a-156">Installieren der MAPI-Headerdateien</span><span class="sxs-lookup"><span data-stu-id="ccb2a-156">Install MAPI Header Files</span></span>](how-to-install-mapi-header-files.md)
 - [<span data-ttu-id="ccb2a-157">Auswählen einer bestimmten zu ladenden MAPI-Version</span><span class="sxs-lookup"><span data-stu-id="ccb2a-157">Choose a Specific Version of MAPI to Load</span></span>](how-to-choose-a-specific-version-of-mapi-to-load.md)

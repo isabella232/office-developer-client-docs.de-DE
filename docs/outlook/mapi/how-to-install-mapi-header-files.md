@@ -27,7 +27,7 @@ ms.locfileid: "19791849"
   
 ## <a name="see-also"></a><span data-ttu-id="7a2f8-109">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7a2f8-109">See also</span></span>
 
-- [<span data-ttu-id="7a2f8-110">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="7a2f8-110">MAPI Programming Overview</span></span>](mapi-programming-overview.md) 
+- [<span data-ttu-id="7a2f8-110">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="7a2f8-110">MAPI Programming Overview</span></span>](mapi-programming-overview.md) 
 - [<span data-ttu-id="7a2f8-111">Verweisen auf MAPI-Funktionen</span><span class="sxs-lookup"><span data-stu-id="7a2f8-111">Link to MAPI Functions</span></span>](how-to-link-to-mapi-functions.md)
 - [<span data-ttu-id="7a2f8-112">H�ufig verwendete Headerdateien</span><span class="sxs-lookup"><span data-stu-id="7a2f8-112">Commonly Used Header Files</span></span>](commonly-used-header-files.md)
 

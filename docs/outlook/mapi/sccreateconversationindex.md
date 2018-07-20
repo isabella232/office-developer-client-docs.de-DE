@@ -64,6 +64,6 @@ SCODE ScCreateConversationIndex(
 
 <span data-ttu-id="1f746-123">S_OK</span><span class="sxs-lookup"><span data-stu-id="1f746-123">S_OK</span></span> 
   
-> <span data-ttu-id="1f746-124">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="1f746-124">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="1f746-124">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="1f746-124">The call succeeded and has returned the expected value or values.</span></span>
     
 

@@ -67,7 +67,7 @@ HRESULT SelectForm(
 
 <span data-ttu-id="5e236-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="5e236-124">S_OK</span></span> 
   
-> <span data-ttu-id="5e236-125">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5e236-125">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="5e236-125">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5e236-125">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="5e236-126">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="5e236-126">MAPI_E_BAD_CHARWIDTH</span></span> 
   

@@ -27,9 +27,9 @@ ms.locfileid: "19791494"
     
 - <span data-ttu-id="7253b-109">Bereitstellen von Lese- und nonread Berichten.</span><span class="sxs-lookup"><span data-stu-id="7253b-109">Providing read and nonread reports.</span></span>
     
-- <span data-ttu-id="7253b-110">Eingehende und ausgehende Nachrichten�bermittlungen zulassen.</span><span class="sxs-lookup"><span data-stu-id="7253b-110">Allowing incoming and outgoing message submissions.</span></span>
+- <span data-ttu-id="7253b-110">Eingehende und ausgehende Nachrichtenübermittlungen zulassen.</span><span class="sxs-lookup"><span data-stu-id="7253b-110">Allowing incoming and outgoing message submissions.</span></span>
     
-- <span data-ttu-id="7253b-111">Erm�glicht die Erstellung von Nachrichten mit beliebigen Nachrichtenklassen.</span><span class="sxs-lookup"><span data-stu-id="7253b-111">Allowing the creation of messages with arbitrary message classes.</span></span>
+- <span data-ttu-id="7253b-111">Ermöglicht die Erstellung von Nachrichten mit beliebigen Nachrichtenklassen.</span><span class="sxs-lookup"><span data-stu-id="7253b-111">Allowing the creation of messages with arbitrary message classes.</span></span>
     
 - <span data-ttu-id="7253b-112">Unterstützung für benannte und mehrwertige Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="7253b-112">Supporting named and multiple-value properties.</span></span>
     
@@ -37,7 +37,7 @@ ms.locfileid: "19791494"
     
 - <span data-ttu-id="7253b-p102">Supporting associated contents tables. For more information, see [Inhalt von Tabellen](contents-tables.md).</span><span class="sxs-lookup"><span data-stu-id="7253b-p102">Supporting associated contents tables. For more information, see [Contents Tables](contents-tables.md).</span></span>
     
-- <span data-ttu-id="7253b-116">Benachrichtigung �ber die Warteschlange MAPI-Unterstützung für Nachrichten in der Warteschlange für ausgehende Nachrichten vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="7253b-116">Supporting notification of the MAPI spooler when there are messages in the outgoing message queue.</span></span>
+- <span data-ttu-id="7253b-116">Benachrichtigung über die Warteschlange MAPI-Unterstützung für Nachrichten in der Warteschlange für ausgehende Nachrichten vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="7253b-116">Supporting notification of the MAPI spooler when there are messages in the outgoing message queue.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="7253b-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7253b-117">See also</span></span>
 

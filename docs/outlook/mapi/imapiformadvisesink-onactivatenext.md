@@ -78,7 +78,7 @@ HRESULT OnActivateNext(
     
 2. <span data-ttu-id="ba607-132">Speichern Sie diese Instanz, in den Inhalt des Parameters Zeiger _PpPersistMessage_ .</span><span class="sxs-lookup"><span data-stu-id="ba607-132">Store that instance in the contents of the  _ppPersistMessage_ pointer parameter.</span></span> 
     
-3. <span data-ttu-id="ba607-133">Geben Sie S_OK zur�ck.</span><span class="sxs-lookup"><span data-stu-id="ba607-133">Return S_OK.</span></span>
+3. <span data-ttu-id="ba607-133">Geben Sie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="ba607-133">Return S_OK.</span></span>
     
 <span data-ttu-id="ba607-134">Der Formular-Viewer lädt die Nachricht mit der [IPersistMessage::Load](ipersistmessage-load.md) -Methode, die auf das Objekt, auf das _PpPersistMessage_gehört.</span><span class="sxs-lookup"><span data-stu-id="ba607-134">The form viewer will load the message by using the [IPersistMessage::Load](ipersistmessage-load.md) method that belongs to the object pointed to by  _ppPersistMessage_.</span></span>
   

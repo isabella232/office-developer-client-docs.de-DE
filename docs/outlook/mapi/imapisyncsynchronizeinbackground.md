@@ -43,7 +43,7 @@ HRESULT SynchronizeInBackground (
 
 <span data-ttu-id="734bf-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="734bf-112">S_OK</span></span> 
   
-> <span data-ttu-id="734bf-113">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="734bf-113">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="734bf-113">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="734bf-113">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="734bf-114">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="734bf-114">See also</span></span>
 

@@ -29,7 +29,7 @@ ms.locfileid: "19792054"
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="be9d1-107">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="be9d1-107">Exposed by:</span></span>  <br/> |<span data-ttu-id="be9d1-108">Keine</span><span class="sxs-lookup"><span data-stu-id="be9d1-108">None</span></span>  <br/> |
+|<span data-ttu-id="be9d1-107">Verfügbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="be9d1-107">Exposed by:</span></span>  <br/> |<span data-ttu-id="be9d1-108">Keine</span><span class="sxs-lookup"><span data-stu-id="be9d1-108">None</span></span>  <br/> |
 |<span data-ttu-id="be9d1-109">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="be9d1-109">Implemented by:</span></span>  <br/> |<span data-ttu-id="be9d1-110">Server Table-Objekte</span><span class="sxs-lookup"><span data-stu-id="be9d1-110">Server table objects</span></span>  <br/> |
 |<span data-ttu-id="be9d1-111">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="be9d1-111">Called by:</span></span>  <br/> |<span data-ttu-id="be9d1-112">MAPI-und Clientanwendungen</span><span class="sxs-lookup"><span data-stu-id="be9d1-112">MAPI and client applications</span></span>  <br/> |
 |<span data-ttu-id="be9d1-113">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="be9d1-113">Interface identifier:</span></span>  <br/> |<span data-ttu-id="be9d1-114">IID_IExchangeModifyTable</span><span class="sxs-lookup"><span data-stu-id="be9d1-114">IID_IExchangeModifyTable</span></span>  <br/> |

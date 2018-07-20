@@ -52,7 +52,7 @@ ms.locfileid: "19790415"
   
 ## <a name="exporting-functions-and-commands"></a><span data-ttu-id="3d82d-129">Exportieren von Funktionen und Befehle</span><span class="sxs-lookup"><span data-stu-id="3d82d-129">Exporting functions and commands</span></span>
 
-<span data-ttu-id="3d82d-p105">Beim Kompilieren eines DLL-Projekts müssen der Compiler und der Linker wissen, welche Funktionen exportiert werden sollen, damit sie sie für die Anwendung verfügbar machen können. Dieser Abschnitt beschreibt die Methoden hierf�r.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p105">When compiling a DLL project, the compiler and linker need to know what functions are to be exported so that they can make them available to the application. This section describes the ways this can be done.</span></span>
+<span data-ttu-id="3d82d-p105">Beim Kompilieren eines DLL-Projekts müssen der Compiler und der Linker wissen, welche Funktionen exportiert werden sollen, damit sie sie für die Anwendung verfügbar machen können. Dieser Abschnitt beschreibt die Methoden hierfür.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p105">When compiling a DLL project, the compiler and linker need to know what functions are to be exported so that they can make them available to the application. This section describes the ways this can be done.</span></span>
   
 <span data-ttu-id="3d82d-p106">Wenn Compiler Quellcode kompilieren, �ndern sie in der Regel die Namen der Funktionen von deren Darstellung im Quellcode. Normalerweise erfolgt dies, indem etwas an den Anfang und/oder das Ende hinzugefügt wird, ein Prozess, der als Namenserg�nzung bezeichnet wird. Sie müssen sicherstellen, dass die Funktion mit einem Namen exportiert wird, der für die Anwendung erkennbar ist, die die DLL lädt. Dies kann bedeuten, dass der Linker angewiesen werden muss, dass der ergänzte Name einem einfacheren Exportnamen zugeordnet wird. Der Exportname kann der Name sein, wie er ursprünglich im Quellcode angezeigt wurde, oder ein anderer Name.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p106">When compilers compile source code, in general, they change the names of the functions from their appearance in the source code. They usually do this by adding to the beginning and/or end of the name, in a process known as name decoration. You need to make sure that the function is exported with a name that is recognizable to the application loading the DLL. This can mean telling the linker to associate the decorated name with a simpler export name. The export name can be the name as it originally appeared in the source code, or something else.</span></span>
   
@@ -62,7 +62,7 @@ ms.locfileid: "19790415"
   
 <span data-ttu-id="3d82d-142">Sie haben mehrere Möglichkeiten, den Linker anzuweisen, dass eine Funktion exportiert werden soll, und ihm den Namen, unter dem diese extern bekannt sein soll, mitzuteilen:</span><span class="sxs-lookup"><span data-stu-id="3d82d-142">You can tell the linker that a function is to be exported, and the name it is to be known by externally in one of several ways:</span></span>
   
-- <span data-ttu-id="3d82d-143">Platzieren Sie die Funktion in einer DEF-Datei nach dem **EXPORTS**-Schl�sselwort, und legen Sie die Einstellung Ihres DLL-Projekts so fest, dass beim Verknüpfen auf diese Datei verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="3d82d-143">Place the function in a DEF file after the **EXPORTS** keyword, and set your DLL project setting to reference this file when linking.</span></span> 
+- <span data-ttu-id="3d82d-143">Platzieren Sie die Funktion in einer DEF-Datei nach dem **EXPORTS**-Schlüsselwort, und legen Sie die Einstellung Ihres DLL-Projekts so fest, dass beim Verknüpfen auf diese Datei verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="3d82d-143">Place the function in a DEF file after the **EXPORTS** keyword, and set your DLL project setting to reference this file when linking.</span></span> 
     
 - <span data-ttu-id="3d82d-144">Verwenden Sie den **__declspec(dllexport)**-Deklarator in der Definition der Funktion.</span><span class="sxs-lookup"><span data-stu-id="3d82d-144">Use the **__declspec(dllexport)** declarator in the function's definition.</span></span> 
     
@@ -100,7 +100,7 @@ double WINAPI my_Cpp_export(double x)
   
 `entryname[=internalname] [@ordinal[NONAME]] [DATA] [PRIVATE]`
 
-<span data-ttu-id="3d82d-p110">Beachten Sie, dass die C-Funktion ergänzt wurde, aber die DEF-Datei den Linker explizit zwingt, die Funktion mit dem Namen des ursprünglichen Quellcodes verfügbar zu machen (in diesem Beispiel). Der Linker exportiert die C++-Funktion implizit mit dem ursprünglichen Codenamen, es ist daher nicht notwendig, den ergänzten Namen in die DEF-Datei einzuschlie�en.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p110">Note that the C function has been decorated, but the DEF file explicitly forces the linker to expose the function using the original source code name (in this example). The linker implicitly exports the C++ function using the original code name, so that it is not necessary to include the decorated name in the DEF file.</span></span>
+<span data-ttu-id="3d82d-p110">Beachten Sie, dass die C-Funktion ergänzt wurde, aber die DEF-Datei den Linker explizit zwingt, die Funktion mit dem Namen des ursprünglichen Quellcodes verfügbar zu machen (in diesem Beispiel). Der Linker exportiert die C++-Funktion implizit mit dem ursprünglichen Codenamen, es ist daher nicht notwendig, den ergänzten Namen in die DEF-Datei einzuschließen.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p110">Note that the C function has been decorated, but the DEF file explicitly forces the linker to expose the function using the original source code name (in this example). The linker implicitly exports the C++ function using the original code name, so that it is not necessary to include the decorated name in the DEF file.</span></span>
   
 <span data-ttu-id="3d82d-155">Bei 32-Bit-Windows-API-Funktionsaufrufen ist die Konvention für die Ergänzung von C-kompilierten Funktionen wie folgt: **function_name** wird _ **function_name@** _n_, wobei  _n_ der Anzahl von Bytes entspricht, ausgedrückt als Dezimalzahl, die von allen Argumenten verwendet wird, und die Bytes jeweils auf das kleinste Vielfache von vier aufgerundet wurden.</span><span class="sxs-lookup"><span data-stu-id="3d82d-155">For 32-bit Windows API function calls, the convention for the decoration of C-compiled functions is as follows: **function_name** becomes _ **function_name@** _n_ where  _n_ is the number of bytes expressed as a decimal taken up by all the arguments, with the bytes for each rounded up to the nearest multiple of four.</span></span> 
   
@@ -119,7 +119,7 @@ double WINAPI my_undecorated_Cpp_export(double x)
 
 ```
 
-<span data-ttu-id="3d82d-161">Wenn Sie C-Funktionsprototypen in Headerdateien platzieren, die in C- oder C++-Quelldateien eingeschlossen werden k�nnten, sollten Sie die folgende Präprozessordirektive einschlie�en.</span><span class="sxs-lookup"><span data-stu-id="3d82d-161">When you are placing C function prototypes in header files that could be included in C or C++ source files, you should include the following pre-processor directive.</span></span>
+<span data-ttu-id="3d82d-161">Wenn Sie C-Funktionsprototypen in Headerdateien platzieren, die in C- oder C++-Quelldateien eingeschlossen werden könnten, sollten Sie die folgende Präprozessordirektive einschließen.</span><span class="sxs-lookup"><span data-stu-id="3d82d-161">When you are placing C function prototypes in header files that could be included in C or C++ source files, you should include the following pre-processor directive.</span></span>
   
 ```cpp
 #ifdef __cplusplus
@@ -134,7 +134,7 @@ double WINAPI my_Cdecorated_Cpp_export(double x);
 
 ### <a name="using-the-declspecdllexport-declarator"></a><span data-ttu-id="3d82d-162">Verwenden von __declspec(dllexport) declarator</span><span class="sxs-lookup"><span data-stu-id="3d82d-162">Using the __declspec(dllexport) declarator</span></span>
 
-<span data-ttu-id="3d82d-163">Das **__declspec(dllexport)**-Schl�sselwort kann in der Deklaration der Funktion wie folgt verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="3d82d-163">The **__declspec(dllexport)** keyword can be used in the declaration of the function as follows.</span></span> 
+<span data-ttu-id="3d82d-163">Das **__declspec(dllexport)**-Schlüsselwort kann in der Deklaration der Funktion wie folgt verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="3d82d-163">The **__declspec(dllexport)** keyword can be used in the declaration of the function as follows.</span></span> 
   
 ```cpp
 __declspec(dllexport) double WINAPI my_C_export(double x)
@@ -144,7 +144,7 @@ __declspec(dllexport) double WINAPI my_C_export(double x)
 }
 ```
 
-<span data-ttu-id="3d82d-p113">Das **__declspec(dllexport)**-Schl�sselwort am �u�ersten linken Rand der Deklaration hinzugefügt werden. Die Vorteile dieses Ansatzes sind, dass die Funktion nicht unbedingt in einer DEF-Datei aufgelistet sein muss, und dass der Exportstatus mit der Definition richtig ist.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p113">The **__declspec(dllexport)** keyword must be added at the extreme left of the declaration. The advantages of this approach are that the function does not need to be listed in a DEF file, and that the export status is right with the definition.</span></span> 
+<span data-ttu-id="3d82d-p113">Das **__declspec(dllexport)**-Schlüsselwort am �u�ersten linken Rand der Deklaration hinzugefügt werden. Die Vorteile dieses Ansatzes sind, dass die Funktion nicht unbedingt in einer DEF-Datei aufgelistet sein muss, und dass der Exportstatus mit der Definition richtig ist.</span><span class="sxs-lookup"><span data-stu-id="3d82d-p113">The **__declspec(dllexport)** keyword must be added at the extreme left of the declaration. The advantages of this approach are that the function does not need to be listed in a DEF file, and that the export status is right with the definition.</span></span> 
   
 <span data-ttu-id="3d82d-166">Wenn Sie verhindern möchten, dass eine C++-Funktion mit der C++-Namenserg�nzung verfügbar gemacht wird, müssen Sie die Funktion wie folgt deklarieren.</span><span class="sxs-lookup"><span data-stu-id="3d82d-166">If you want to avoid a C++ function being made available with the C++ name decoration, you must declare the function as follows.</span></span>
   

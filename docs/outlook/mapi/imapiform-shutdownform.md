@@ -87,7 +87,7 @@ HRESULT ShutdownForm(
     
 9. <span data-ttu-id="a655e-136">Vergleich des in Schritt 2 **AddRef** -Aufrufs des Formulars **IUnknown** -Methode aufrufen.</span><span class="sxs-lookup"><span data-stu-id="a655e-136">Call your form's **IUnknown::Release** method, matching the **AddRef** call made in step 2.</span></span> 
     
-10. <span data-ttu-id="a655e-137">Geben Sie S_OK zur�ck.</span><span class="sxs-lookup"><span data-stu-id="a655e-137">Return S_OK.</span></span>
+10. <span data-ttu-id="a655e-137">Geben Sie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="a655e-137">Return S_OK.</span></span>
     
 > [!NOTE]
 > <span data-ttu-id="a655e-138">Nachdem diese Aktionen abgeschlossen wurden, umfassen die einzige gültigen Methoden für das Form-Objekt, das aufgerufen werden kann, die die [IUnknown](http://msdn.microsoft.com/de-de/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle.</span><span class="sxs-lookup"><span data-stu-id="a655e-138">After these actions have been completed, the only valid methods on the form object that may be called are those from the [IUnknown](http://msdn.microsoft.com/de-de/library/ms680509%28v=VS.85%29.aspx) interface.</span></span> 

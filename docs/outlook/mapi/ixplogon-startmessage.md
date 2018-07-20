@@ -53,7 +53,7 @@ HRESULT StartMessage(
 
 <span data-ttu-id="fc222-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="fc222-116">S_OK</span></span> 
   
-> <span data-ttu-id="fc222-117">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fc222-117">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="fc222-117">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fc222-117">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="fc222-118">Hinweise</span><span class="sxs-lookup"><span data-stu-id="fc222-118">Remarks</span></span>
 

@@ -37,7 +37,7 @@ HRESULT NotifyNewMail(
 
  <span data-ttu-id="169b6-108">_lpNotification_</span><span class="sxs-lookup"><span data-stu-id="169b6-108">_lpNotification_</span></span>
   
-> <span data-ttu-id="169b6-109">[in] Ein Zeiger auf eine [Benachrichtigung](notification.md) -Struktur, die Benachrichtigung �ber eine neue Nachricht beschreibt.</span><span class="sxs-lookup"><span data-stu-id="169b6-109">[in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification.</span></span> 
+> <span data-ttu-id="169b6-109">[in] Ein Zeiger auf eine [Benachrichtigung](notification.md) -Struktur, die Benachrichtigung über eine neue Nachricht beschreibt.</span><span class="sxs-lookup"><span data-stu-id="169b6-109">[in] A pointer to a [NOTIFICATION](notification.md) structure that describes the new message notification.</span></span> 
     
 ## <a name="return-value"></a><span data-ttu-id="169b6-110">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="169b6-110">Return value</span></span>
 
@@ -47,7 +47,7 @@ HRESULT NotifyNewMail(
     
 ## <a name="remarks"></a><span data-ttu-id="169b6-113">Hinweise</span><span class="sxs-lookup"><span data-stu-id="169b6-113">Remarks</span></span>
 
-<span data-ttu-id="169b6-114">Die **IMsgStore::NotifyNewMail** -Methode wird aufgerufen, durch die MAPI-Warteschlange, um dem Nachrichtenspeicher zu informieren, dass eine Nachricht für die �bermittlung bereit ist.</span><span class="sxs-lookup"><span data-stu-id="169b6-114">The **IMsgStore::NotifyNewMail** method is called by the MAPI spooler to inform the message store that a message is ready for delivery.</span></span> 
+<span data-ttu-id="169b6-114">Die **IMsgStore::NotifyNewMail** -Methode wird aufgerufen, durch die MAPI-Warteschlange, um dem Nachrichtenspeicher zu informieren, dass eine Nachricht für die übermittlung bereit ist.</span><span class="sxs-lookup"><span data-stu-id="169b6-114">The **IMsgStore::NotifyNewMail** method is called by the MAPI spooler to inform the message store that a message is ready for delivery.</span></span> 
   
 ## <a name="notes-to-implementers"></a><span data-ttu-id="169b6-115">Hinweise für Implementierer</span><span class="sxs-lookup"><span data-stu-id="169b6-115">Notes to implementers</span></span>
 

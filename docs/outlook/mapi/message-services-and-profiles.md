@@ -60,5 +60,5 @@ ms.locfileid: "19793273"
 ## <a name="see-also"></a><span data-ttu-id="9ff57-156">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9ff57-156">See also</span></span>
 
 - [<span data-ttu-id="9ff57-157">MAPIUID</span><span class="sxs-lookup"><span data-stu-id="9ff57-157">MAPIUID</span></span>](mapiuid.md)
-- [<span data-ttu-id="9ff57-158">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="9ff57-158">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+- [<span data-ttu-id="9ff57-158">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="9ff57-158">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 

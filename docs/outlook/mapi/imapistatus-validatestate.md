@@ -121,7 +121,7 @@ HRESULT ValidateState(
     
    - <span data-ttu-id="cdc21-172">Legen Sie die **PR_STATUS_STRING** ([PidTagStatusString](pidtagstatusstring-canonical-property.md))-Eigenschaft auf eine Zeichenfolge, die der Adressbuchhierarchie Status für den Benutzer angibt.</span><span class="sxs-lookup"><span data-stu-id="cdc21-172">Set the **PR_STATUS_STRING** ([PidTagStatusString](pidtagstatusstring-canonical-property.md)) property to a string that indicates the transport provider's status to the user.</span></span>
     
-   - <span data-ttu-id="cdc21-173">Geben Sie S_OK zur�ck.</span><span class="sxs-lookup"><span data-stu-id="cdc21-173">Return S_OK.</span></span> <span data-ttu-id="cdc21-174">Wenn der Vorgang in Arbeit kann nicht abgebrochen werden, sollte **ValidateState** MAPI_E_BUSY zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cdc21-174">However, if the operation in progress cannot be canceled, **ValidateState** should return MAPI_E_BUSY.</span></span> 
+   - <span data-ttu-id="cdc21-173">Geben Sie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="cdc21-173">Return S_OK.</span></span> <span data-ttu-id="cdc21-174">Wenn der Vorgang in Arbeit kann nicht abgebrochen werden, sollte **ValidateState** MAPI_E_BUSY zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="cdc21-174">However, if the operation in progress cannot be canceled, **ValidateState** should return MAPI_E_BUSY.</span></span> 
     
 <span data-ttu-id="cdc21-175">FORCE_XP_CONNECT</span><span class="sxs-lookup"><span data-stu-id="cdc21-175">FORCE_XP_CONNECT</span></span> 
   
@@ -135,7 +135,7 @@ HRESULT ValidateState(
     
    - <span data-ttu-id="cdc21-181">Deaktivieren Sie das STATUS_OFFLINE bit in der **PR_STATUS_CODE** -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="cdc21-181">Clear the STATUS_OFFLINE bit in the **PR_STATUS_CODE** property.</span></span> 
     
-   - <span data-ttu-id="cdc21-182">Geben Sie S_OK zur�ck.</span><span class="sxs-lookup"><span data-stu-id="cdc21-182">Return S_OK.</span></span>
+   - <span data-ttu-id="cdc21-182">Geben Sie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="cdc21-182">Return S_OK.</span></span>
     
 <span data-ttu-id="cdc21-183">FORCE_XP_DISCONNECT</span><span class="sxs-lookup"><span data-stu-id="cdc21-183">FORCE_XP_DISCONNECT</span></span> 
   

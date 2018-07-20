@@ -71,7 +71,7 @@ HRESULT GetSiteStatus(
 
 <span data-ttu-id="ce24a-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="ce24a-125">S_OK</span></span> 
   
-> <span data-ttu-id="ce24a-126">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="ce24a-126">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="ce24a-126">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="ce24a-126">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="ce24a-127">Hinweise</span><span class="sxs-lookup"><span data-stu-id="ce24a-127">Remarks</span></span>
 

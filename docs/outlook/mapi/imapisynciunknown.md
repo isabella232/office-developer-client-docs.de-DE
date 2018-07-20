@@ -31,7 +31,7 @@ ms.locfileid: "19792430"
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a38e5-110">Verf�gbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="a38e5-110">Exposed by:</span></span>  <br/> |<span data-ttu-id="a38e5-111">Anbieter für Speicher und transport</span><span class="sxs-lookup"><span data-stu-id="a38e5-111">Store and transport providers</span></span>  <br/> |
+|<span data-ttu-id="a38e5-110">Verfügbar gemacht von:</span><span class="sxs-lookup"><span data-stu-id="a38e5-110">Exposed by:</span></span>  <br/> |<span data-ttu-id="a38e5-111">Anbieter für Speicher und transport</span><span class="sxs-lookup"><span data-stu-id="a38e5-111">Store and transport providers</span></span>  <br/> |
 |<span data-ttu-id="a38e5-112">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="a38e5-112">Implemented by:</span></span>  <br/> |<span data-ttu-id="a38e5-113">Outlook</span><span class="sxs-lookup"><span data-stu-id="a38e5-113">Outlook</span></span>  <br/> |
 |<span data-ttu-id="a38e5-114">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="a38e5-114">Called by:</span></span>  <br/> |<span data-ttu-id="a38e5-115">Anbieter für Speicher und Transport</span><span class="sxs-lookup"><span data-stu-id="a38e5-115">Store and Transport providers</span></span>  <br/> |
 |<span data-ttu-id="a38e5-116">Schnittstellenbezeichner:</span><span class="sxs-lookup"><span data-stu-id="a38e5-116">Interface identifier:</span></span>  <br/> |<span data-ttu-id="a38e5-117">IID_IMAPISync</span><span class="sxs-lookup"><span data-stu-id="a38e5-117">IID_IMAPISync</span></span>  <br/> |

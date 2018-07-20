@@ -52,7 +52,7 @@ HRESULT CalcFormPropSet(
 
 <span data-ttu-id="6b75b-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="6b75b-116">S_OK</span></span> 
   
-> <span data-ttu-id="6b75b-117">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="6b75b-117">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="6b75b-117">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="6b75b-117">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="6b75b-118">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="6b75b-118">MAPI_E_BAD_CHARWIDTH</span></span> 
   

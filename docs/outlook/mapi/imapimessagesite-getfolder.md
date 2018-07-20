@@ -43,7 +43,7 @@ HRESULT GetFolder(
 
 <span data-ttu-id="3a8e8-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="3a8e8-111">S_OK</span></span> 
   
-> <span data-ttu-id="3a8e8-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="3a8e8-112">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="3a8e8-112">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="3a8e8-112">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="3a8e8-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="3a8e8-113">S_FALSE</span></span> 
   

@@ -47,14 +47,14 @@ ms.locfileid: "19792693"
   
 <span data-ttu-id="fb205-117">In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen für das MAPI-Subsystem auf ihrem Computer abrufen.</span><span class="sxs-lookup"><span data-stu-id="fb205-117">The following table summarizes how clients retrieve version information for the MAPI subsystem on their computer.</span></span>
   
-|<span data-ttu-id="fb205-118">**�berpr�fen**</span><span class="sxs-lookup"><span data-stu-id="fb205-118">**To check**</span></span>|<span data-ttu-id="fb205-119">**Registrierung**</span><span class="sxs-lookup"><span data-stu-id="fb205-119">**Registry**</span></span>|
+|<span data-ttu-id="fb205-118">**überpr�fen**</span><span class="sxs-lookup"><span data-stu-id="fb205-118">**To check**</span></span>|<span data-ttu-id="fb205-119">**Registrierung**</span><span class="sxs-lookup"><span data-stu-id="fb205-119">**Registry**</span></span>|
 |:-----|:-----|
 |<span data-ttu-id="fb205-120">Verfügbarkeit von MAPI</span><span class="sxs-lookup"><span data-stu-id="fb205-120">Availability of MAPI</span></span>  <br/> |<span data-ttu-id="fb205-121">Suchen Sie nach  `MAPIX=1`.</span><span class="sxs-lookup"><span data-stu-id="fb205-121">Look for  `MAPIX=1`.</span></span>  <br/> |
-|<span data-ttu-id="fb205-122">Verf�gbare Version von MAPI</span><span class="sxs-lookup"><span data-stu-id="fb205-122">Available version of MAPI</span></span>  <br/> |<span data-ttu-id="fb205-123">Suchen Sie nach einer MAPIXVER-Zeichenfolge in der Form " _x.x.x_".</span><span class="sxs-lookup"><span data-stu-id="fb205-123">Look for a MAPIXVER string of the form " _x.x.x_".</span></span>  <br/> |
+|<span data-ttu-id="fb205-122">Verfügbare Version von MAPI</span><span class="sxs-lookup"><span data-stu-id="fb205-122">Available version of MAPI</span></span>  <br/> |<span data-ttu-id="fb205-123">Suchen Sie nach einer MAPIXVER-Zeichenfolge in der Form " _x.x.x_".</span><span class="sxs-lookup"><span data-stu-id="fb205-123">Look for a MAPIXVER string of the form " _x.x.x_".</span></span>  <br/> |
    
 ## <a name="see-also"></a><span data-ttu-id="fb205-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fb205-124">See also</span></span>
 
 
 
-[<span data-ttu-id="fb205-125">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="fb205-125">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+[<span data-ttu-id="fb205-125">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="fb205-125">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 

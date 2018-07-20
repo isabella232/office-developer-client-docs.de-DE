@@ -63,7 +63,7 @@ HRESULT RTFSync(
 
 <span data-ttu-id="e7ed9-126">S_OK</span><span class="sxs-lookup"><span data-stu-id="e7ed9-126">S_OK</span></span> 
   
-> <span data-ttu-id="e7ed9-127">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e7ed9-127">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="e7ed9-127">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e7ed9-127">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="e7ed9-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e7ed9-128">Remarks</span></span>
 

@@ -20,7 +20,7 @@ ms.locfileid: "19790577"
 
  <span data-ttu-id="9e2c9-105">**Gilt für**: Excel 2013 | Office 2013 | Visual Studio</span><span class="sxs-lookup"><span data-stu-id="9e2c9-105">Applies to: Excel 2013 | Office 2013 | Visual Studio</span></span> 
   
-<span data-ttu-id="9e2c9-p101">Willkommen bei der Dokumentation zum Excel 2013 XLL Software Development Kit (SDK). Diese Referenz enthält konzeptionelle �bersichten, Programmieraufgaben und Beispiele, die Sie beim Entwickeln von Microsoft Excel 2013 XLLs unterstützen sollen.</span><span class="sxs-lookup"><span data-stu-id="9e2c9-p101">Welcome to the Excel 2013 XLL Software Development Kit (SDK) documentation. This reference contains conceptual overviews, programming tasks, and samples to help you develop Microsoft Excel 2013 XLLs.</span></span>
+<span data-ttu-id="9e2c9-p101">Willkommen bei der Dokumentation zum Excel 2013 XLL Software Development Kit (SDK). Diese Referenz enthält konzeptionelle übersichten, Programmieraufgaben und Beispiele, die Sie beim Entwickeln von Microsoft Excel 2013 XLLs unterstützen sollen.</span><span class="sxs-lookup"><span data-stu-id="9e2c9-p101">Welcome to the Excel 2013 XLL Software Development Kit (SDK) documentation. This reference contains conceptual overviews, programming tasks, and samples to help you develop Microsoft Excel 2013 XLLs.</span></span>
   
 <span data-ttu-id="9e2c9-108">Überarbeitet: November 2012</span><span class="sxs-lookup"><span data-stu-id="9e2c9-108">Revised: November 2012</span></span>
   

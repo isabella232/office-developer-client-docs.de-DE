@@ -55,7 +55,7 @@ HRESULT GetTnefStreamCodepage(
 
  <span data-ttu-id="fa3c8-120">**S_OK**</span><span class="sxs-lookup"><span data-stu-id="fa3c8-120">**S_OK**</span></span>
   
-> <span data-ttu-id="fa3c8-121">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fa3c8-121">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="fa3c8-121">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fa3c8-121">The call succeeded and has returned the expected value or values.</span></span>
     
  <span data-ttu-id="fa3c8-122">**MAPI_E_NOT_ENOUGH_DISK**</span><span class="sxs-lookup"><span data-stu-id="fa3c8-122">**MAPI_E_NOT_ENOUGH_DISK**</span></span>
   

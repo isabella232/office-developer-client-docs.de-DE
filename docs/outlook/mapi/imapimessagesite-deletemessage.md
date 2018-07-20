@@ -48,7 +48,7 @@ HRESULT DeleteMessage(
 
 <span data-ttu-id="4e8a6-113">S_OK</span><span class="sxs-lookup"><span data-stu-id="4e8a6-113">S_OK</span></span> 
   
-> <span data-ttu-id="4e8a6-114">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="4e8a6-114">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="4e8a6-114">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="4e8a6-114">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="4e8a6-115">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="4e8a6-115">MAPI_E_NO_SUPPORT</span></span> 
   

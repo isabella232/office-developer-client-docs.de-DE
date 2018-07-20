@@ -29,7 +29,7 @@ ms.locfileid: "19795713"
 
 
 
-[<span data-ttu-id="61d6a-111">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="61d6a-111">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+[<span data-ttu-id="61d6a-111">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="61d6a-111">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
   
 [<span data-ttu-id="61d6a-112">MFCMAPI (engl.) als ein Codebeispiel</span><span class="sxs-lookup"><span data-stu-id="61d6a-112">MFCMAPI as a Code Sample</span></span>](mfcmapi-as-a-code-sample.md)
 

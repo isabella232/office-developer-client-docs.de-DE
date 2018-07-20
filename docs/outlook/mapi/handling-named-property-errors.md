@@ -25,7 +25,7 @@ ms.locfileid: "19791808"
   
 <span data-ttu-id="edd11-p102">In einigen Fällen ein Client sendet einen Anruf an **GetNamesFromIDs**, der keine Eigenschaften zurückgegeben werden, z. B., wenn es sind keine Eigenschaften in einem angegebenen Eigenschaftensatz oder alle benannte Eigenschaften eines Typs werden durch die Kennzeichen ausgeschlossen werden. Clients können Dienstanbieter zu erwarten:</span><span class="sxs-lookup"><span data-stu-id="edd11-p102">Sometimes a client makes a call to **GetNamesFromIDs** that results in no properties being returned, such as when there are no properties in a specified property set, or when all named properties are of a type excluded by the flags. Clients can expect service providers to:</span></span> 
   
-- <span data-ttu-id="edd11-110">Geben Sie S_OK zur�ck.</span><span class="sxs-lookup"><span data-stu-id="edd11-110">Return S_OK.</span></span>
+- <span data-ttu-id="edd11-110">Geben Sie S_OK zurück.</span><span class="sxs-lookup"><span data-stu-id="edd11-110">Return S_OK.</span></span>
     
 - <span data-ttu-id="edd11-111">Legen Sie den Inhalt der Eigenschaft Tag Array Zeiger in ein Array der neu zugeordnete Eigenschaft Tag mit seinem **cValues** Mitglied auf 0 (null) festgelegt.</span><span class="sxs-lookup"><span data-stu-id="edd11-111">Set the contents of the property tag array pointer to a newly allocated property tag array with its **cValues** member set to zero.</span></span> 
     

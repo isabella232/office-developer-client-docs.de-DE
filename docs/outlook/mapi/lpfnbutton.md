@@ -69,7 +69,7 @@ SCODE (STDMETHODCALLTYPE FAR * LPFNBUTTON)(
 
 <span data-ttu-id="74f83-127">S_OK</span><span class="sxs-lookup"><span data-stu-id="74f83-127">S_OK</span></span> 
   
-> <span data-ttu-id="74f83-128">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="74f83-128">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="74f83-128">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="74f83-128">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="74f83-129">Hinweise</span><span class="sxs-lookup"><span data-stu-id="74f83-129">Remarks</span></span>
 

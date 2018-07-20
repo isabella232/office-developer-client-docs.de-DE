@@ -49,7 +49,7 @@ ULONG UlRelease(
 
 <span data-ttu-id="cb0ee-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="cb0ee-116">S_OK</span></span> 
   
-> <span data-ttu-id="cb0ee-117">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="cb0ee-117">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="cb0ee-117">Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="cb0ee-117">The call succeeded and has returned the expected value or values.</span></span> 
     
 <span data-ttu-id="cb0ee-118">MAPI_E_CALL_FAILED</span><span class="sxs-lookup"><span data-stu-id="cb0ee-118">MAPI_E_CALL_FAILED</span></span> 
   

@@ -1,5 +1,5 @@
 ---
-title: �bersicht �ber Outlook-MAPI-Referenz
+title: übersicht über Outlook-MAPI-Referenz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,11 +15,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793323"
 ---
-# <a name="outlook-mapi-reference-overview"></a><span data-ttu-id="062ce-103">�bersicht �ber Outlook-MAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="062ce-103">Outlook MAPI Reference Overview</span></span>
+# <a name="outlook-mapi-reference-overview"></a><span data-ttu-id="062ce-103">Übersicht über Outlook-MAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="062ce-103">Outlook MAPI Reference Overview</span></span>
 
 <span data-ttu-id="062ce-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="062ce-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="062ce-105">Dieses Thema enthält einen �berblick �ber die Referenz zur Outlook 2013-MAPI-Dokumentation.</span><span class="sxs-lookup"><span data-stu-id="062ce-105">This topic provides overview information about the Outlook 2013 MAPI Reference documentation.</span></span>
+<span data-ttu-id="062ce-105">Dieses Thema enthält einen überblick über die Referenz zur Outlook 2013-MAPI-Dokumentation.</span><span class="sxs-lookup"><span data-stu-id="062ce-105">This topic provides overview information about the Outlook 2013 MAPI Reference documentation.</span></span>
   
 ## <a name="about-this-documentation"></a><span data-ttu-id="062ce-106">Informationen zu dieser Dokumentation</span><span class="sxs-lookup"><span data-stu-id="062ce-106">About this documentation</span></span>
 
@@ -46,7 +46,7 @@ ms.locfileid: "19793323"
     
 <span data-ttu-id="062ce-127">Wenn Sie noch nicht mit der Entwicklung von MAPI-Anwendungen für Outlook lesen Sie die folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="062ce-127">If you are new to developing MAPI applications for Outlook, see the following topics:</span></span>
   
-- [<span data-ttu-id="062ce-128">Ausw�hlen einer API oder Technologie für die Entwicklung von Lösungen für Outlook 2013</span><span class="sxs-lookup"><span data-stu-id="062ce-128">Selecting an API or technology for developing solutions for Outlook 2013</span></span>](http://msdn.microsoft.com/de-de/library/jj900714.aspx)
+- [<span data-ttu-id="062ce-128">Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook 2013</span><span class="sxs-lookup"><span data-stu-id="062ce-128">Selecting an API or technology for developing solutions for Outlook 2013</span></span>](http://msdn.microsoft.com/de-de/library/jj900714.aspx)
     
 - [<span data-ttu-id="062ce-129">H�ufig verwendete Headerdateien</span><span class="sxs-lookup"><span data-stu-id="062ce-129">Commonly Used Header Files</span></span>](commonly-used-header-files.md)
     

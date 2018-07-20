@@ -106,7 +106,7 @@ ms.locfileid: "19791836"
 ## <a name="see-also"></a><span data-ttu-id="3637b-167">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3637b-167">See also</span></span>
 
 - [<span data-ttu-id="3637b-168">FGetComponentPath</span><span class="sxs-lookup"><span data-stu-id="3637b-168">FGetComponentPath</span></span>](fgetcomponentpath.md)
-- [<span data-ttu-id="3637b-169">�bersicht �ber die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="3637b-169">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+- [<span data-ttu-id="3637b-169">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="3637b-169">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 - [<span data-ttu-id="3637b-170">Verweisen auf MAPI-Funktionen</span><span class="sxs-lookup"><span data-stu-id="3637b-170">Link to MAPI Functions</span></span>](how-to-link-to-mapi-functions.md)
 - [<span data-ttu-id="3637b-171">Mapi32.dll Stub Registrierungseinstellungen</span><span class="sxs-lookup"><span data-stu-id="3637b-171">Mapi32.dll Stub Registry Settings</span></span>](http://msdn.microsoft.com/de-de/library/ms531218%28EXCHG.10%29.aspx)
 - [<span data-ttu-id="3637b-172">Einrichten der MSI-Keys für die MAPI-DLL</span><span class="sxs-lookup"><span data-stu-id="3637b-172">Setting Up the MSI Keys for Your MAPI DLL</span></span>](http://msdn.microsoft.com/de-de/library/ee909494%28VS.85%29.aspx)
