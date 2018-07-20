@@ -52,7 +52,7 @@ HRESULT GetDisplay(
 
 <span data-ttu-id="39b0f-116">S_OK</span><span class="sxs-lookup"><span data-stu-id="39b0f-116">S_OK</span></span> 
   
-> <span data-ttu-id="39b0f-117">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="39b0f-117">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="39b0f-117">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="39b0f-117">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="mfcmapi-reference"></a><span data-ttu-id="39b0f-118">MFCMAPI (engl.) (engl.)</span><span class="sxs-lookup"><span data-stu-id="39b0f-118">MFCMAPI reference</span></span>
 

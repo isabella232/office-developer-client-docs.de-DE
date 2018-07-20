@@ -57,7 +57,7 @@ HRESULT GetLastError(
 
 <span data-ttu-id="498ea-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="498ea-119">S_OK</span></span> 
   
-> <span data-ttu-id="498ea-120">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="498ea-120">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="498ea-120">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="498ea-120">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="498ea-121">MAPI_E_BAD_CHARWIDTH</span><span class="sxs-lookup"><span data-stu-id="498ea-121">MAPI_E_BAD_CHARWIDTH</span></span> 
   

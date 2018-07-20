@@ -43,7 +43,7 @@ HRESULT RemoveForm(
 
 <span data-ttu-id="6dd0e-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="6dd0e-111">S_OK</span></span> 
   
-> <span data-ttu-id="6dd0e-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="6dd0e-112">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="6dd0e-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="6dd0e-112">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="6dd0e-113">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="6dd0e-113">MAPI_E_NOT_FOUND</span></span> 
   

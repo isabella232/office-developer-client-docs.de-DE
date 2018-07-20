@@ -48,7 +48,7 @@ HRESULT MakeIconFromBinary(
 
 <span data-ttu-id="7ca82-112">S_OK</span><span class="sxs-lookup"><span data-stu-id="7ca82-112">S_OK</span></span> 
   
-> <span data-ttu-id="7ca82-113">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="7ca82-113">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="7ca82-113">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="7ca82-113">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="7ca82-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7ca82-114">Remarks</span></span>
 

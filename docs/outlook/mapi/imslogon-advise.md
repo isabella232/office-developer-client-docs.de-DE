@@ -75,7 +75,7 @@ HRESULT Advise(
 
 <span data-ttu-id="4a552-146">S_OK</span><span class="sxs-lookup"><span data-stu-id="4a552-146">S_OK</span></span> 
   
-> <span data-ttu-id="4a552-147">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="4a552-147">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="4a552-147">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="4a552-147">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="4a552-148">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="4a552-148">MAPI_E_NO_SUPPORT</span></span> 
   

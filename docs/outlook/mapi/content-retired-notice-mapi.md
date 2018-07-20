@@ -23,7 +23,7 @@ ms.locfileid: "19791441"
   
 ## <a name="microsoft-outlook-2013-messaging-api-mapi-reference"></a><span data-ttu-id="7dcd0-108">Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API)</span><span class="sxs-lookup"><span data-stu-id="7dcd0-108">Microsoft Outlook 2013 Messaging API (MAPI) Reference</span></span>
 
-- [<span data-ttu-id="7dcd0-109">MAPI-Referenz f�r Outlook</span><span class="sxs-lookup"><span data-stu-id="7dcd0-109">Outlook MAPI Reference</span></span>](outlook-mapi-reference.md)
+- [<span data-ttu-id="7dcd0-109">MAPI-Referenz für Outlook</span><span class="sxs-lookup"><span data-stu-id="7dcd0-109">Outlook MAPI Reference</span></span>](outlook-mapi-reference.md)
     
 - [<span data-ttu-id="7dcd0-110">Erste Schritte mit der Outlook-MAPI-Referenz</span><span class="sxs-lookup"><span data-stu-id="7dcd0-110">Getting Started with the Outlook MAPI Reference</span></span>](getting-started-with-the-outlook-mapi-reference.md)
     

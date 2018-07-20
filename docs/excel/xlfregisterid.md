@@ -56,5 +56,5 @@ Excel12(xlfRegisterId, LPXLOPER12 pxRes, 3,     LPXLOPER12 pxModuleText, LPXLOPE
 
 - [<span data-ttu-id="b2ddb-127">REGISTRIEREN</span><span class="sxs-lookup"><span data-stu-id="b2ddb-127">REGISTER</span></span>](xlfregister-form-1.md)
 - [<span data-ttu-id="b2ddb-128">AUFHEBEN DER REGISTRIERUNG</span><span class="sxs-lookup"><span data-stu-id="b2ddb-128">UNREGISTER</span></span>](xlfunregister-form-1.md)
-- [<span data-ttu-id="b2ddb-129">Wichtige und n�tzliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="b2ddb-129">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="b2ddb-129">Wichtige und nützliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="b2ddb-129">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 

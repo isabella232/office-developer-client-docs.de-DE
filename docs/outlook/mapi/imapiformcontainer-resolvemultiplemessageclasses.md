@@ -57,7 +57,7 @@ HRESULT ResolveMultipleMessageClasses(
 
 <span data-ttu-id="5f9a2-119">S_OK</span><span class="sxs-lookup"><span data-stu-id="5f9a2-119">S_OK</span></span> 
   
-> <span data-ttu-id="5f9a2-120">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5f9a2-120">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="5f9a2-120">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5f9a2-120">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="5f9a2-121">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5f9a2-121">Remarks</span></span>
 

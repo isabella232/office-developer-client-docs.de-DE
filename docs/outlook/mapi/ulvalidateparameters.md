@@ -54,7 +54,7 @@ HRESULT UlValidateParameters(
 
 <span data-ttu-id="bffd9-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="bffd9-118">S_OK</span></span> 
   
-> <span data-ttu-id="bffd9-119">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="bffd9-119">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="bffd9-119">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="bffd9-119">The call succeeded and has returned the expected value or values.</span></span> 
     
 <span data-ttu-id="bffd9-120">MAPI_E_CALL_FAILED</span><span class="sxs-lookup"><span data-stu-id="bffd9-120">MAPI_E_CALL_FAILED</span></span> 
   

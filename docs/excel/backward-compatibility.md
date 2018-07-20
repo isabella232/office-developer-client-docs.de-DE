@@ -75,5 +75,5 @@ ms.locfileid: "19790394"
 
 - [<span data-ttu-id="aeaf1-141">C-API-R�ckruf funktioniert Excel4 Excel12</span><span class="sxs-lookup"><span data-stu-id="aeaf1-141">C API Callback Functions Excel4, Excel12</span></span>](c-api-callback-functions-excel4-excel12.md) 
 - [<span data-ttu-id="aeaf1-142">Programmieren mit der C-API in Excel</span><span class="sxs-lookup"><span data-stu-id="aeaf1-142">Programming with the C API in Excel</span></span>](programming-with-the-c-api-in-excel.md)
-- [<span data-ttu-id="aeaf1-143">Was ist neu in der C-API f�r Excel 2013</span><span class="sxs-lookup"><span data-stu-id="aeaf1-143">What's New in the C API for Excel</span></span>](what-s-new-in-the-c-api-for-excel.md)
+- [<span data-ttu-id="aeaf1-143">Was ist neu in der C-API für Excel 2013</span><span class="sxs-lookup"><span data-stu-id="aeaf1-143">What's New in the C API for Excel</span></span>](what-s-new-in-the-c-api-for-excel.md)
 

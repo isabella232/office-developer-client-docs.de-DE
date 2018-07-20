@@ -49,21 +49,21 @@ ms.locfileid: "19795488"
     
 5. <span data-ttu-id="14930-130">Ruft die [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md) die folgenden Aufgaben:</span><span class="sxs-lookup"><span data-stu-id="14930-130">Calls [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md) to do the following:</span></span> 
     
-    1. <span data-ttu-id="14930-131">Erweitern Sie alle pers�nlichen Verteilerlisten und benutzerdefinierte Empf�nger, und Ersetzen Sie alle ge�nderten Anzeigenamen durch ihren Originalnamen.</span><span class="sxs-lookup"><span data-stu-id="14930-131">Expand all personal distribution lists and custom recipients and replace all changed display names with their original names.</span></span>
+    1. <span data-ttu-id="14930-131">Erweitern Sie alle persönlichen Verteilerlisten und benutzerdefinierte Empfänger, und Ersetzen Sie alle geänderten Anzeigenamen durch ihren Originalnamen.</span><span class="sxs-lookup"><span data-stu-id="14930-131">Expand all personal distribution lists and custom recipients and replace all changed display names with their original names.</span></span>
         
     2. <span data-ttu-id="14930-132">Entfernen von Duplikaten.</span><span class="sxs-lookup"><span data-stu-id="14930-132">Remove duplicate names.</span></span>
         
     3. <span data-ttu-id="14930-133">Prüfen Sie, ob alle erforderlichen vorverarbeitung und, wenn der vorverarbeitung erforderlich ist, legen Sie das Kennzeichen NEEDS_PREPROCESSING und die **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md))-Eigenschaft, die für die MAPI reserviert ist.</span><span class="sxs-lookup"><span data-stu-id="14930-133">Check for any required preprocessing and, if preprocessing is required, set the NEEDS_PREPROCESSING flag and the **PR_PREPROCESS** ([PidTagPreprocess](pidtagpreprocess-canonical-property.md)) property, which is reserved for MAPI.</span></span> 
         
-    4. <span data-ttu-id="14930-134">Legen Sie das Flag NEEDS_SPOOLER, wenn der Nachrichtenspeicher eng mit einer Transport verkn�pft ist und nicht behandelt alle Empf�nger werden kann.</span><span class="sxs-lookup"><span data-stu-id="14930-134">Set the NEEDS_SPOOLER flag if the message store is tightly coupled with a transport and it cannot handle all of the recipients.</span></span> 
+    4. <span data-ttu-id="14930-134">Legen Sie das Flag NEEDS_SPOOLER, wenn der Nachrichtenspeicher eng mit einer Transport verknüpft ist und nicht behandelt alle Empfänger werden kann.</span><span class="sxs-lookup"><span data-stu-id="14930-134">Set the NEEDS_SPOOLER flag if the message store is tightly coupled with a transport and it cannot handle all of the recipients.</span></span> 
     
 6. <span data-ttu-id="14930-135">F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenkennzeichnung NEEDS_PREPROCESSING festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="14930-135">Performs the following tasks if the NEEDS_PREPROCESSING message flag is set:</span></span>
     
     1. <span data-ttu-id="14930-136">Versetzt die Nachricht in der ausgehenden Warteschlange mit dem SUBMITFLAG_PREPROCESS Bit in der **PR_SUBMIT_FLAGS** -Eigenschaft festgelegt.</span><span class="sxs-lookup"><span data-stu-id="14930-136">Puts the message in the outgoing queue with the SUBMITFLAG_PREPROCESS bit set in the **PR_SUBMIT_FLAGS** property.</span></span> 
         
-    2. <span data-ttu-id="14930-137">Benachrichtigt die MAPI-Warteschlange, die die Warteschlange ge�ndert wurde.</span><span class="sxs-lookup"><span data-stu-id="14930-137">Notifies the MAPI spooler that the queue has changed.</span></span>
+    2. <span data-ttu-id="14930-137">Benachrichtigt die MAPI-Warteschlange, die die Warteschlange geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="14930-137">Notifies the MAPI spooler that the queue has changed.</span></span>
         
-    3. <span data-ttu-id="14930-138">Gibt die Steuerung an den Client, und Nachrichtenfluss wird in die Warteschlange MAPI fortgesetzt.</span><span class="sxs-lookup"><span data-stu-id="14930-138">Returns control to the client, and message flow continues in the MAPI spooler.</span></span> <span data-ttu-id="14930-139">Die MAPI-Warteschlange f�hrt die folgenden Aufgaben:</span><span class="sxs-lookup"><span data-stu-id="14930-139">The MAPI spooler performs the following tasks:</span></span> 
+    3. <span data-ttu-id="14930-138">Gibt die Steuerung an den Client, und Nachrichtenfluss wird in die Warteschlange MAPI fortgesetzt.</span><span class="sxs-lookup"><span data-stu-id="14930-138">Returns control to the client, and message flow continues in the MAPI spooler.</span></span> <span data-ttu-id="14930-139">Die MAPI-Warteschlange führt die folgenden Aufgaben:</span><span class="sxs-lookup"><span data-stu-id="14930-139">The MAPI spooler performs the following tasks:</span></span> 
     
        1. <span data-ttu-id="14930-140">Sperrt die Nachricht durch Aufrufen von [IMsgStore::SetLockState](imsgstore-setlockstate.md).</span><span class="sxs-lookup"><span data-stu-id="14930-140">Locks the message by calling [IMsgStore::SetLockState](imsgstore-setlockstate.md).</span></span>
             
@@ -75,11 +75,11 @@ ms.locfileid: "19795488"
   
 - <span data-ttu-id="14930-145">Performs the following tasks if the message store is tightly coupled to a transport and the NEEDS_SPOOLER flag was returned from [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md):</span><span class="sxs-lookup"><span data-stu-id="14930-145">Performs the following tasks if the message store is tightly coupled to a transport and the NEEDS_SPOOLER flag was returned from [IMAPISupport::ExpandRecips](imapisupport-expandrecips.md):</span></span>
     
-   - <span data-ttu-id="14930-146">Verarbeitet Empf�nger, die es verarbeiten kann.</span><span class="sxs-lookup"><span data-stu-id="14930-146">Handles any recipients that it can handle.</span></span>
+   - <span data-ttu-id="14930-146">Verarbeitet Empfänger, die es verarbeiten kann.</span><span class="sxs-lookup"><span data-stu-id="14930-146">Handles any recipients that it can handle.</span></span>
     
-   - <span data-ttu-id="14930-147">Legt die **PR_RESPONSIBILITY** -Eigenschaft auf TRUE fest, f�r alle Empf�nger, die sie behandelt.</span><span class="sxs-lookup"><span data-stu-id="14930-147">Sets the **PR_RESPONSIBILITY** property to TRUE for any recipients that it handles.</span></span> 
+   - <span data-ttu-id="14930-147">Legt die **PR_RESPONSIBILITY** -Eigenschaft auf TRUE fest, für alle Empfänger, die sie behandelt.</span><span class="sxs-lookup"><span data-stu-id="14930-147">Sets the **PR_RESPONSIBILITY** property to TRUE for any recipients that it handles.</span></span> 
     
-   - <span data-ttu-id="14930-148">F�hrt die folgenden Aufgaben aus, wenn alle Empf�nger zu diesem eng gekoppelten Store und Transport bekannt sind:</span><span class="sxs-lookup"><span data-stu-id="14930-148">Performs the following tasks if all recipients are known to this tightly coupled store and transport:</span></span> 
+   - <span data-ttu-id="14930-148">F�hrt die folgenden Aufgaben aus, wenn alle Empfänger zu diesem eng gekoppelten Store und Transport bekannt sind:</span><span class="sxs-lookup"><span data-stu-id="14930-148">Performs the following tasks if all recipients are known to this tightly coupled store and transport:</span></span> 
     
      - <span data-ttu-id="14930-149">Wenn die Nachricht vorverarbeitet wurde oder der Nachricht Speicheranbieter die MAPI-Warteschlange zur vollständigen Nachricht, die Verarbeitung möchte von Anrufen [IMAPISupport::CompleteMsg](imapisupport-completemsg.md) .</span><span class="sxs-lookup"><span data-stu-id="14930-149">Calls [IMAPISupport::CompleteMsg](imapisupport-completemsg.md) if the message was preprocessed or the message store provider wants the MAPI spooler to complete message processing.</span></span> <span data-ttu-id="14930-150">Nachrichtenfluss mit der MAPI-Warteschlange wird fortgesetzt.</span><span class="sxs-lookup"><span data-stu-id="14930-150">Message flow continues with the MAPI spooler.</span></span> 
     
@@ -109,13 +109,13 @@ ms.locfileid: "19795488"
         
     4. <span data-ttu-id="14930-165">Gibt für den Anrufer.</span><span class="sxs-lookup"><span data-stu-id="14930-165">Returns to the caller.</span></span> <span data-ttu-id="14930-166">Nachrichtenfluss ist abgeschlossen.</span><span class="sxs-lookup"><span data-stu-id="14930-166">Message flow is complete.</span></span>
     
-- <span data-ttu-id="14930-167">F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenspeicher nicht eng um einen Transport verkn�pft, nicht alle Empf�nger mit dem Nachrichtenspeicher bezeichnet wurden oder das Flag NEEDS_SPOOLER festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="14930-167">Performs the following tasks if the message store is not tightly coupled to a transport, not all of the recipients were known to the message store, or the NEEDS_SPOOLER flag is set:</span></span>
+- <span data-ttu-id="14930-167">F�hrt die folgenden Aufgaben aus, wenn der Nachrichtenspeicher nicht eng um einen Transport verknüpft, nicht alle Empfänger mit dem Nachrichtenspeicher bezeichnet wurden oder das Flag NEEDS_SPOOLER festgelegt ist:</span><span class="sxs-lookup"><span data-stu-id="14930-167">Performs the following tasks if the message store is not tightly coupled to a transport, not all of the recipients were known to the message store, or the NEEDS_SPOOLER flag is set:</span></span>
     
   1. <span data-ttu-id="14930-168">Versetzt die Nachricht in der ausgehenden Warteschlange ohne das SUBMITFLAG_PREPROCESS Bit in der **PR_SUBMIT_FLAGS** -Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="14930-168">Puts the message in the outgoing queue without setting the SUBMITFLAG_PREPROCESS bit in the **PR_SUBMIT_FLAGS** property.</span></span> 
     
-  2. <span data-ttu-id="14930-169">Benachrichtigt die MAPI-Warteschlange, die die ausgehende Warteschlange ge�ndert wurde, indem eine Benachrichtigung �ber eine Tabelle zu generieren.</span><span class="sxs-lookup"><span data-stu-id="14930-169">Notifies the MAPI spooler that the outgoing queue has changed by generating a table notification.</span></span> 
+  2. <span data-ttu-id="14930-169">Benachrichtigt die MAPI-Warteschlange, die die ausgehende Warteschlange geändert wurde, indem eine Benachrichtigung �ber eine Tabelle zu generieren.</span><span class="sxs-lookup"><span data-stu-id="14930-169">Notifies the MAPI spooler that the outgoing queue has changed by generating a table notification.</span></span> 
     
-  3. <span data-ttu-id="14930-170">Gibt f�r den Client und Nachrichtenfluss weiterhin mit einem Satz von Aufgaben, die MAPI-Warteschlange.</span><span class="sxs-lookup"><span data-stu-id="14930-170">Returns to the client, and message flow continues with a set of tasks performed by the MAPI spooler.</span></span>
+  3. <span data-ttu-id="14930-170">Gibt für den Client und Nachrichtenfluss weiterhin mit einem Satz von Aufgaben, die MAPI-Warteschlange.</span><span class="sxs-lookup"><span data-stu-id="14930-170">Returns to the client, and message flow continues with a set of tasks performed by the MAPI spooler.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="14930-171">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="14930-171">See also</span></span>
 

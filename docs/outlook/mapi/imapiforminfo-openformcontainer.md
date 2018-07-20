@@ -43,7 +43,7 @@ HRESULT OpenFormContainer(
 
 <span data-ttu-id="b101b-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="b101b-110">S_OK</span></span> 
   
-> <span data-ttu-id="b101b-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="b101b-111">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="b101b-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="b101b-111">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="b101b-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b101b-112">See also</span></span>
 

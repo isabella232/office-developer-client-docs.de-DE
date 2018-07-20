@@ -115,7 +115,7 @@ LPXLOPER12 WINAPI UDF_2(LPXLOPER12 pxArg)
   
 ## <a name="see-also"></a><span data-ttu-id="3bdfe-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="3bdfe-131">See also</span></span>
 
-- [<span data-ttu-id="3bdfe-132">Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorg�nge</span><span class="sxs-lookup"><span data-stu-id="3bdfe-132">Permitting User Breaks in Lengthy Operations</span></span>](permitting-user-breaks-in-lengthy-operations.md)
-- [<span data-ttu-id="3bdfe-133">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen</span><span class="sxs-lookup"><span data-stu-id="3bdfe-133">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [<span data-ttu-id="3bdfe-132">Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorgänge</span><span class="sxs-lookup"><span data-stu-id="3bdfe-132">Permitting User Breaks in Lengthy Operations</span></span>](permitting-user-breaks-in-lengthy-operations.md)
+- [<span data-ttu-id="3bdfe-133">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="3bdfe-133">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 - [<span data-ttu-id="3bdfe-134">Erste Schritte mit Excel XLL SDK</span><span class="sxs-lookup"><span data-stu-id="3bdfe-134">Getting Started with the Excel XLL SDK</span></span>](getting-started-with-the-excel-xll-sdk.md)
 

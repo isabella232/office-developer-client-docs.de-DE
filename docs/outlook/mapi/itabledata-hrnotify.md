@@ -53,7 +53,7 @@ HRESULT HrNotify(
 
 <span data-ttu-id="be66a-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="be66a-114">S_OK</span></span> 
   
-> <span data-ttu-id="be66a-115">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="be66a-115">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="be66a-115">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="be66a-115">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="be66a-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="be66a-116">Remarks</span></span>
 

@@ -88,6 +88,6 @@ int WINAPI evaluate_expression_example(void)
 ## <a name="see-also"></a><span data-ttu-id="82f33-131">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="82f33-131">See also</span></span>
 
 - [<span data-ttu-id="82f33-132">Excel-Arbeitsblatt und die Auswertung von Ausdrücken</span><span class="sxs-lookup"><span data-stu-id="82f33-132">Excel Worksheet and Expression Evaluation</span></span>](excel-worksheet-and-expression-evaluation.md)
-- [<span data-ttu-id="82f33-133">Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorg�nge</span><span class="sxs-lookup"><span data-stu-id="82f33-133">Permitting User Breaks in Lengthy Operations</span></span>](permitting-user-breaks-in-lengthy-operations.md)
+- [<span data-ttu-id="82f33-133">Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorgänge</span><span class="sxs-lookup"><span data-stu-id="82f33-133">Permitting User Breaks in Lengthy Operations</span></span>](permitting-user-breaks-in-lengthy-operations.md)
 - [<span data-ttu-id="82f33-134">Erste Schritte mit Excel XLL SDK</span><span class="sxs-lookup"><span data-stu-id="82f33-134">Getting Started with the Excel XLL SDK</span></span>](getting-started-with-the-excel-xll-sdk.md)
 

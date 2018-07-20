@@ -5,7 +5,7 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a191f5e0-2a60-4d01-9010-892360b3bfa6
-description: In Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API) wird das Erstellen von MAPI-L�sungen beschrieben, die mit Microsoft Outlook 2013 arbeiten.
+description: In Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API) wird das Erstellen von MAPI-Lösungen beschrieben, die mit Microsoft Outlook 2013 arbeiten.
 ms.openlocfilehash: a17038a8c0460450ac393cfad997802e7eafb0b6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: MT
@@ -17,9 +17,9 @@ ms.locfileid: "19791782"
 
 <span data-ttu-id="7338f-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7338f-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="7338f-p101">In Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API) wird das Erstellen von MAPI-L�sungen beschrieben, die mit Microsoft Outlook 2013 arbeiten. In diesem Abschnitt wird beschrieben, wie Sie die verschiedenen Referenzen und konzeptionellen Ressourcen in Referenz zur Outlook 2013-MAPI finden.</span><span class="sxs-lookup"><span data-stu-id="7338f-p101">The Microsoft Outlook 2013 Messaging API (MAPI) Reference describes how to create MAPI solutions that work with Microsoft Outlook 2013. This section describes how to find the various reference and conceptual resources in the Outlook 2013 MAPI Reference.</span></span>
+<span data-ttu-id="7338f-p101">In Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API) wird das Erstellen von MAPI-Lösungen beschrieben, die mit Microsoft Outlook 2013 arbeiten. In diesem Abschnitt wird beschrieben, wie Sie die verschiedenen Referenzen und konzeptionellen Ressourcen in Referenz zur Outlook 2013-MAPI finden.</span><span class="sxs-lookup"><span data-stu-id="7338f-p101">The Microsoft Outlook 2013 Messaging API (MAPI) Reference describes how to create MAPI solutions that work with Microsoft Outlook 2013. This section describes how to find the various reference and conceptual resources in the Outlook 2013 MAPI Reference.</span></span>
   
-<span data-ttu-id="7338f-107">Wenn Sie noch nicht mit der Entwicklung von L�sungen f�r Outlook vertraut sind, finden Sie unter [Ausw�hlen einer API oder Technologie zum Entwickeln von L�sungen f�r Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) Informationen zu den APIs und Technologien, die f�r Ihre Bed�rfnisse am besten geeignet sind.</span><span class="sxs-lookup"><span data-stu-id="7338f-107">If you are new to developing solutions for Outlook, see [Selecting an API or technology for developing solutions for Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) to identify the APIs and technologies that are most appropriate for your needs.</span></span> 
+<span data-ttu-id="7338f-107">Wenn Sie noch nicht mit der Entwicklung von Lösungen für Outlook vertraut sind, finden Sie unter [Ausw�hlen einer API oder Technologie zum Entwickeln von Lösungen für Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) Informationen zu den APIs und Technologien, die für Ihre Bedürfnisse am besten geeignet sind.</span><span class="sxs-lookup"><span data-stu-id="7338f-107">If you are new to developing solutions for Outlook, see [Selecting an API or technology for developing solutions for Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) to identify the APIs and technologies that are most appropriate for your needs.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="7338f-108">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="7338f-108">In this section</span></span>
 

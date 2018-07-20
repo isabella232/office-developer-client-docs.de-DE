@@ -67,7 +67,7 @@ HRESULT CreateForm(
 
 <span data-ttu-id="5c2ee-124">S_OK</span><span class="sxs-lookup"><span data-stu-id="5c2ee-124">S_OK</span></span> 
   
-> <span data-ttu-id="5c2ee-125">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5c2ee-125">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="5c2ee-125">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="5c2ee-125">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="5c2ee-126">MAPI_E_NO_INTERFACE</span><span class="sxs-lookup"><span data-stu-id="5c2ee-126">MAPI_E_NO_INTERFACE</span></span> 
   

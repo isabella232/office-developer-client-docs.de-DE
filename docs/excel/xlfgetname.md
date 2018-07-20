@@ -57,5 +57,5 @@ Excel12(xlfGetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxInf
 ## <a name="see-also"></a><span data-ttu-id="702bc-136">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="702bc-136">See also</span></span>
 
 - [<span data-ttu-id="702bc-137">xlfGetDef</span><span class="sxs-lookup"><span data-stu-id="702bc-137">xlfGetDef</span></span>](xlfgetdef.md)
-- [<span data-ttu-id="702bc-138">Wichtige und n�tzliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="702bc-138">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="702bc-138">Wichtige und nützliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="702bc-138">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 

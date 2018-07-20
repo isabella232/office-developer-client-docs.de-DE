@@ -43,7 +43,7 @@ HRESULT GetStore(
 
 <span data-ttu-id="22c8b-111">S_OK</span><span class="sxs-lookup"><span data-stu-id="22c8b-111">S_OK</span></span> 
   
-> <span data-ttu-id="22c8b-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="22c8b-112">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="22c8b-112">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="22c8b-112">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="22c8b-113">S_FALSE</span><span class="sxs-lookup"><span data-stu-id="22c8b-113">S_FALSE</span></span> 
   

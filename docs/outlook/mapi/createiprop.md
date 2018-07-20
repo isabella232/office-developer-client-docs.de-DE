@@ -74,7 +74,7 @@ SCODE CreateIProp(
 
 <span data-ttu-id="e41a7-128">S_OK</span><span class="sxs-lookup"><span data-stu-id="e41a7-128">S_OK</span></span> 
   
-> <span data-ttu-id="e41a7-129">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e41a7-129">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="e41a7-129">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e41a7-129">The call succeeded and has returned the expected value or values.</span></span> 
     
 <span data-ttu-id="e41a7-130">MAPI_E_INTERFACE_NOT_SUPPORTED</span><span class="sxs-lookup"><span data-stu-id="e41a7-130">MAPI_E_INTERFACE_NOT_SUPPORTED</span></span> 
   

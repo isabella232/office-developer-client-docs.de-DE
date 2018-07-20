@@ -1,5 +1,5 @@
 ---
-title: Unterst�tzung von mehrwertigen Eigenschaften in Nachrichtenspeicher
+title: Unterstützung von mehrwertigen Eigenschaften in Nachrichtenspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -15,7 +15,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795683"
 ---
-# <a name="supporting-multivalued-properties-in-message-stores"></a><span data-ttu-id="af167-103">Unterst�tzung von mehrwertigen Eigenschaften in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="af167-103">Supporting Multivalued Properties in Message Stores</span></span>
+# <a name="supporting-multivalued-properties-in-message-stores"></a><span data-ttu-id="af167-103">Unterstützung von mehrwertigen Eigenschaften in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="af167-103">Supporting Multivalued Properties in Message Stores</span></span>
 
   
   

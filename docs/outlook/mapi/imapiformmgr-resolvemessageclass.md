@@ -62,7 +62,7 @@ HRESULT ResolveMessageClass(
 
 <span data-ttu-id="11a7b-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="11a7b-120">S_OK</span></span> 
   
-> <span data-ttu-id="11a7b-121">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="11a7b-121">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="11a7b-121">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="11a7b-121">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="11a7b-122">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="11a7b-122">MAPI_E_NOT_FOUND</span></span> 
   

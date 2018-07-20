@@ -47,7 +47,7 @@ HRESULT SubmitMessage(
 
 <span data-ttu-id="55953-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="55953-114">S_OK</span></span> 
   
-> <span data-ttu-id="55953-115">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="55953-115">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="55953-115">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="55953-115">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="55953-116">MAPI_E_NO_RECIPIENTS</span><span class="sxs-lookup"><span data-stu-id="55953-116">MAPI_E_NO_RECIPIENTS</span></span> 
   

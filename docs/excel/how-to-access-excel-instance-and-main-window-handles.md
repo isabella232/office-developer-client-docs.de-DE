@@ -87,7 +87,7 @@ BOOL GetHwnd(HWND * pHwnd)
 
 [<span data-ttu-id="50453-121">Anzeigen von Dialogfeldern aus innerhalb einer DLL oder XLL</span><span class="sxs-lookup"><span data-stu-id="50453-121">Displaying Dialog Boxes from Within a DLL or XLL</span></span>](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
   
-[<span data-ttu-id="50453-122">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen</span><span class="sxs-lookup"><span data-stu-id="50453-122">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[<span data-ttu-id="50453-122">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="50453-122">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
 [<span data-ttu-id="50453-123">Entwickeln von Excel-XLLs</span><span class="sxs-lookup"><span data-stu-id="50453-123">Developing Excel XLLs</span></span>](developing-excel-xlls.md)
 

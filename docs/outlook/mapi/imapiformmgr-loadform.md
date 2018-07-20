@@ -101,7 +101,7 @@ HRESULT LoadForm(
 
 <span data-ttu-id="2d170-143">S_OK</span><span class="sxs-lookup"><span data-stu-id="2d170-143">S_OK</span></span> 
   
-> <span data-ttu-id="2d170-144">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="2d170-144">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="2d170-144">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="2d170-144">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="2d170-145">MAPI_E_NO_INTERFACE</span><span class="sxs-lookup"><span data-stu-id="2d170-145">MAPI_E_NO_INTERFACE</span></span> 
   

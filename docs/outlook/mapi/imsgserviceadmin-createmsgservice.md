@@ -74,7 +74,7 @@ HRESULT CreateMsgService(
 
 <span data-ttu-id="6f175-130">S_OK</span><span class="sxs-lookup"><span data-stu-id="6f175-130">S_OK</span></span> 
   
-> <span data-ttu-id="6f175-131">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="6f175-131">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="6f175-131">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="6f175-131">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="6f175-132">MAPI_E_NOT_FOUND</span><span class="sxs-lookup"><span data-stu-id="6f175-132">MAPI_E_NOT_FOUND</span></span> 
   

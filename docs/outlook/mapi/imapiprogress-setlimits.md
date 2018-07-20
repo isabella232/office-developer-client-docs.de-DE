@@ -57,7 +57,7 @@ HRESULT SetLimits(
 
 <span data-ttu-id="be023-118">S_OK</span><span class="sxs-lookup"><span data-stu-id="be023-118">S_OK</span></span> 
   
-> <span data-ttu-id="be023-119">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="be023-119">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="be023-119">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="be023-119">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="be023-120">Hinweise</span><span class="sxs-lookup"><span data-stu-id="be023-120">Remarks</span></span>
 

@@ -64,6 +64,6 @@ SCODE ScDupPropset(
 
 <span data-ttu-id="96de7-122">S_OK</span><span class="sxs-lookup"><span data-stu-id="96de7-122">S_OK</span></span> 
   
-> <span data-ttu-id="96de7-123">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="96de7-123">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="96de7-123">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="96de7-123">The call succeeded and has returned the expected value or values.</span></span>
     
 

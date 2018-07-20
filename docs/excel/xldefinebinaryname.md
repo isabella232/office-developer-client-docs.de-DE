@@ -47,7 +47,7 @@ Excel12(xlDefineBinaryName, 0, 2, LPXLOPER12 pxName, LPXLOPER12 pxData);
 [<span data-ttu-id="2ff06-118">xlGetBinaryName</span><span class="sxs-lookup"><span data-stu-id="2ff06-118">xlGetBinaryName</span></span>](xlgetbinaryname.md)
 
 
-[<span data-ttu-id="2ff06-119">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen</span><span class="sxs-lookup"><span data-stu-id="2ff06-119">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[<span data-ttu-id="2ff06-119">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="2ff06-119">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
 [<span data-ttu-id="2ff06-120">Bekannte Probleme in Excel XLL-Entwicklung</span><span class="sxs-lookup"><span data-stu-id="2ff06-120">Known Issues in Excel XLL Development</span></span>](known-issues-in-excel-xll-development.md)
 

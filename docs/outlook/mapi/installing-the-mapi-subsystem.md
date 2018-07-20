@@ -23,7 +23,7 @@ ms.locfileid: "19792693"
   
 <span data-ttu-id="fb205-105">Unterst�tzte Versionen von Windows installieren die MAPI-Stubbibliothek, Mapi32.dll, im Ordner  _\<Laufwerk\>_ \Windows\System32 folder.</span><span class="sxs-lookup"><span data-stu-id="fb205-105">Supported versions of Windows install the MAPI stub library, Mapi32.dll, in the  _\<drive\>_ \Windows\System32 folder.</span></span> 
   
-<span data-ttu-id="fb205-106">Die folgenden Windows-Versionen werden unterst�tzt:</span><span class="sxs-lookup"><span data-stu-id="fb205-106">The supported versions of Windows are as follows:</span></span>
+<span data-ttu-id="fb205-106">Die folgenden Windows-Versionen werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="fb205-106">The supported versions of Windows are as follows:</span></span>
   
 - <span data-ttu-id="fb205-107">Windows 7.</span><span class="sxs-lookup"><span data-stu-id="fb205-107">Windows 7.</span></span>
     
@@ -37,19 +37,19 @@ ms.locfileid: "19792693"
     
 <span data-ttu-id="fb205-112">Um das MAPI-Subsystem ordnungsgem�� zu installieren, installieren Sie eine Anwendung mit einem MAPI-basierten Speichersubsystem, z. B. Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="fb205-112">To correctly install the MAPI subsystem, install an application that contains a MAPI-based subsystem, such as Microsoft Outlook.</span></span>
   
-<span data-ttu-id="fb205-p101">Informationen zur Installation des MAPI-Subsystems eines Computers finden Sie in der Registrierung. Alle Werte in den Registrierungseintr�gen sind Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="fb205-p101">You can find information about a computer's MAPI subsystem installation in the system registry. All values in the registry entries are character strings.</span></span> 
+<span data-ttu-id="fb205-p101">Informationen zur Installation des MAPI-Subsystems eines Computers finden Sie in der Registrierung. Alle Werte in den Registrierungseinträgen sind Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="fb205-p101">You can find information about a computer's MAPI subsystem installation in the system registry. All values in the registry entries are character strings.</span></span> 
   
-<span data-ttu-id="fb205-115">Installationsprogramme f�r Nachrichtendienste sind f�r das Erstellen der Installationsinformationen im folgenden Registrierungsschl�ssel verantwortlich:</span><span class="sxs-lookup"><span data-stu-id="fb205-115">Message service installation programs are responsible for creating the installation information in the following system registry key:</span></span> 
+<span data-ttu-id="fb205-115">Installationsprogramme für Nachrichtendienste sind für das Erstellen der Installationsinformationen im folgenden Registrierungsschlüssel verantwortlich:</span><span class="sxs-lookup"><span data-stu-id="fb205-115">Message service installation programs are responsible for creating the installation information in the following system registry key:</span></span> 
   
  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Messaging Subsystem`
   
-<span data-ttu-id="fb205-116">Nachrichtendientse m�ssen der Systemregistrierung Eintr�ge hinzuf�gen.</span><span class="sxs-lookup"><span data-stu-id="fb205-116">Message services must add entries to the system registry.</span></span> 
+<span data-ttu-id="fb205-116">Nachrichtendientse müssen der Systemregistrierung Einträge hinzuf�gen.</span><span class="sxs-lookup"><span data-stu-id="fb205-116">Message services must add entries to the system registry.</span></span> 
   
-<span data-ttu-id="fb205-117">In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen f�r das MAPI-Subsystem auf ihrem Computer abrufen.</span><span class="sxs-lookup"><span data-stu-id="fb205-117">The following table summarizes how clients retrieve version information for the MAPI subsystem on their computer.</span></span>
+<span data-ttu-id="fb205-117">In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen für das MAPI-Subsystem auf ihrem Computer abrufen.</span><span class="sxs-lookup"><span data-stu-id="fb205-117">The following table summarizes how clients retrieve version information for the MAPI subsystem on their computer.</span></span>
   
 |<span data-ttu-id="fb205-118">**�berpr�fen**</span><span class="sxs-lookup"><span data-stu-id="fb205-118">**To check**</span></span>|<span data-ttu-id="fb205-119">**Registrierung**</span><span class="sxs-lookup"><span data-stu-id="fb205-119">**Registry**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="fb205-120">Verf�gbarkeit von MAPI</span><span class="sxs-lookup"><span data-stu-id="fb205-120">Availability of MAPI</span></span>  <br/> |<span data-ttu-id="fb205-121">Suchen Sie nach  `MAPIX=1`.</span><span class="sxs-lookup"><span data-stu-id="fb205-121">Look for  `MAPIX=1`.</span></span>  <br/> |
+|<span data-ttu-id="fb205-120">Verfügbarkeit von MAPI</span><span class="sxs-lookup"><span data-stu-id="fb205-120">Availability of MAPI</span></span>  <br/> |<span data-ttu-id="fb205-121">Suchen Sie nach  `MAPIX=1`.</span><span class="sxs-lookup"><span data-stu-id="fb205-121">Look for  `MAPIX=1`.</span></span>  <br/> |
 |<span data-ttu-id="fb205-122">Verf�gbare Version von MAPI</span><span class="sxs-lookup"><span data-stu-id="fb205-122">Available version of MAPI</span></span>  <br/> |<span data-ttu-id="fb205-123">Suchen Sie nach einer MAPIXVER-Zeichenfolge in der Form " _x.x.x_".</span><span class="sxs-lookup"><span data-stu-id="fb205-123">Look for a MAPIXVER string of the form " _x.x.x_".</span></span>  <br/> |
    
 ## <a name="see-also"></a><span data-ttu-id="fb205-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fb205-124">See also</span></span>

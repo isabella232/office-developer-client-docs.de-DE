@@ -307,5 +307,5 @@ extern "C" lpDbl __stdcall AddDbl(double D1,
 
 - [<span data-ttu-id="41e9e-421">REGISTER.</span><span class="sxs-lookup"><span data-stu-id="41e9e-421">REGISTER.ID</span></span>](xlfregisterid.md)
 - [<span data-ttu-id="41e9e-422">AUFHEBEN DER REGISTRIERUNG</span><span class="sxs-lookup"><span data-stu-id="41e9e-422">UNREGISTER</span></span>](xlfunregister-form-1.md)
-- [<span data-ttu-id="41e9e-423">Wichtige und n�tzliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="41e9e-423">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="41e9e-423">Wichtige und nützliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="41e9e-423">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 

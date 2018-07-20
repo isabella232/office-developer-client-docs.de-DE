@@ -116,5 +116,5 @@ ms.locfileid: "19790425"
 
 [<span data-ttu-id="6d8a3-161">Excel-Programmierkonzepte</span><span class="sxs-lookup"><span data-stu-id="6d8a3-161">Excel Programming Concepts</span></span>](excel-programming-concepts.md)
   
-[<span data-ttu-id="6d8a3-162">Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorg�nge</span><span class="sxs-lookup"><span data-stu-id="6d8a3-162">Permitting User Breaks in Lengthy Operations</span></span>](permitting-user-breaks-in-lengthy-operations.md)
+[<span data-ttu-id="6d8a3-162">Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorgänge</span><span class="sxs-lookup"><span data-stu-id="6d8a3-162">Permitting User Breaks in Lengthy Operations</span></span>](permitting-user-breaks-in-lengthy-operations.md)
 

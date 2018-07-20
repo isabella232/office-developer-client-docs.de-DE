@@ -59,7 +59,7 @@ HRESULT GetAttribIMsgOnIStg(
 
 <span data-ttu-id="0f618-120">S_OK</span><span class="sxs-lookup"><span data-stu-id="0f618-120">S_OK</span></span> 
   
-> <span data-ttu-id="0f618-121">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="0f618-121">The call succeeded and has returned the expected value or values.</span></span> 
+> <span data-ttu-id="0f618-121">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="0f618-121">The call succeeded and has returned the expected value or values.</span></span> 
     
 <span data-ttu-id="0f618-122">MAPI_W_ERRORS_RETURNED</span><span class="sxs-lookup"><span data-stu-id="0f618-122">MAPI_W_ERRORS_RETURNED</span></span> 
   

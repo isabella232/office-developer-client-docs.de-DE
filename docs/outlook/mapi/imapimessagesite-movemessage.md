@@ -53,7 +53,7 @@ HRESULT MoveMessage(
 
 <span data-ttu-id="e4df5-115">S_OK</span><span class="sxs-lookup"><span data-stu-id="e4df5-115">S_OK</span></span> 
   
-> <span data-ttu-id="e4df5-116">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e4df5-116">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="e4df5-116">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="e4df5-116">The call succeeded and has returned the expected value or values.</span></span>
     
 <span data-ttu-id="e4df5-117">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="e4df5-117">MAPI_E_NO_SUPPORT</span></span> 
   

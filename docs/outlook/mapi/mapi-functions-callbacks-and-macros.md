@@ -1,5 +1,5 @@
 ---
-title: MAPI-Funktionen, R�ckrufe und Makros
+title: MAPI-Funktionen, Rückrufe und Makros
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793005"
 ---
-# <a name="mapi-functions-callbacks-and-macros"></a><span data-ttu-id="7a99e-103">MAPI-Funktionen, R�ckrufe und Makros</span><span class="sxs-lookup"><span data-stu-id="7a99e-103">MAPI Functions, Callbacks, and Macros</span></span>
+# <a name="mapi-functions-callbacks-and-macros"></a><span data-ttu-id="7a99e-103">MAPI-Funktionen, Rückrufe und Makros</span><span class="sxs-lookup"><span data-stu-id="7a99e-103">MAPI Functions, Callbacks, and Macros</span></span>
 
  
   

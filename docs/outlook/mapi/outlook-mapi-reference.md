@@ -1,5 +1,5 @@
 ---
-title: MAPI-Referenz f�r Outlook
+title: MAPI-Referenz für Outlook
 manager: soliver
 ms.date: 04/04/2016
 ms.audience: Developer
@@ -13,16 +13,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19793328"
 ---
-# <a name="outlook-mapi-reference"></a><span data-ttu-id="f209c-103">MAPI-Referenz f�r Outlook</span><span class="sxs-lookup"><span data-stu-id="f209c-103">Outlook MAPI Reference</span></span>
+# <a name="outlook-mapi-reference"></a><span data-ttu-id="f209c-103">MAPI-Referenz für Outlook</span><span class="sxs-lookup"><span data-stu-id="f209c-103">Outlook MAPI Reference</span></span>
 
  
   
 <span data-ttu-id="f209c-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="f209c-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="f209c-p101">Willkommen bei Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API). MAPI stellt die Messagingarchitektur f�r Microsoft Outlook 2013 bereit. MAPI f�r Outlook 2013 bietet eine Reihe von Schnittstellen, Funktionen und anderen Datentypen f�r die Vereinfachung der Entwicklung von Outlook 2013-Messaginganwendungen. Anwendungen und der Transport verwenden MAPI zum Bearbeiten von E-Mail-Daten, Erstellen von E-Mail-Nachrichten und den Ordnern, in denen diese gespeichert werden, sowie zur Unterst�tzung von Benachrichtigungen �ber �nderungen an vorhandenen MAPI-bezogenen Daten.</span><span class="sxs-lookup"><span data-stu-id="f209c-p101">Welcome to the Microsoft Outlook 2013 Messaging API (MAPI) Reference. MAPI provides the messaging architecture for Microsoft Outlook 2013. MAPI for Outlook 2013 provides a set of interfaces, functions, and other data types to facilitate the development of Outlook 2013 messaging applications. Applications and transports use MAPI to manipulate email data, to create email messages and the folders to store them in, and to support notifications of changes to existing MAPI-related data.</span></span>
+<span data-ttu-id="f209c-p101">Willkommen bei Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API). MAPI stellt die Messagingarchitektur für Microsoft Outlook 2013 bereit. MAPI für Outlook 2013 bietet eine Reihe von Schnittstellen, Funktionen und anderen Datentypen für die Vereinfachung der Entwicklung von Outlook 2013-Messaginganwendungen. Anwendungen und der Transport verwenden MAPI zum Bearbeiten von E-Mail-Daten, Erstellen von E-Mail-Nachrichten und den Ordnern, in denen diese gespeichert werden, sowie zur Unterstützung von Benachrichtigungen �ber �nderungen an vorhandenen MAPI-bezogenen Daten.</span><span class="sxs-lookup"><span data-stu-id="f209c-p101">Welcome to the Microsoft Outlook 2013 Messaging API (MAPI) Reference. MAPI provides the messaging architecture for Microsoft Outlook 2013. MAPI for Outlook 2013 provides a set of interfaces, functions, and other data types to facilitate the development of Outlook 2013 messaging applications. Applications and transports use MAPI to manipulate email data, to create email messages and the folders to store them in, and to support notifications of changes to existing MAPI-related data.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="f209c-109">Wenn Sie noch nicht mit der Entwicklung von L�sungen f�r Outlook vertraut sind, finden Sie unter [Ausw�hlen einer API oder Technologie zum Entwickeln von L�sungen f�r Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) Informationen zu den APIs und Technologien, die f�r Ihre Bed�rfnisse am besten geeignet sind.</span><span class="sxs-lookup"><span data-stu-id="f209c-109">If you are new to developing solutions for Outlook, see [Selecting an API or technology for developing solutions for Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) to identify the APIs and technologies that are most appropriate for your needs.</span></span> 
+> <span data-ttu-id="f209c-109">Wenn Sie noch nicht mit der Entwicklung von Lösungen für Outlook vertraut sind, finden Sie unter [Ausw�hlen einer API oder Technologie zum Entwickeln von Lösungen für Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) Informationen zu den APIs und Technologien, die für Ihre Bedürfnisse am besten geeignet sind.</span><span class="sxs-lookup"><span data-stu-id="f209c-109">If you are new to developing solutions for Outlook, see [Selecting an API or technology for developing solutions for Outlook 2013](http://msdn.microsoft.com/de-de/library/jj900714.aspx) to identify the APIs and technologies that are most appropriate for your needs.</span></span> 
   
 ## <a name="in-this-section"></a><span data-ttu-id="f209c-110">Inhalt dieses Abschnitts</span><span class="sxs-lookup"><span data-stu-id="f209c-110">In this section</span></span>
 
@@ -36,7 +36,7 @@ ms.locfileid: "19793328"
     
 [<span data-ttu-id="f209c-115">MAPI-Konzepte (engl.)</span><span class="sxs-lookup"><span data-stu-id="f209c-115">MAPI Concepts</span></span>](mapi-concepts.md)
   
-> <span data-ttu-id="f209c-116">Bietet einen Leitfaden zum besseren Verst�ndnis und zur Programmierung mit MAPI.</span><span class="sxs-lookup"><span data-stu-id="f209c-116">Provides a guide to understanding and programming with MAPI.</span></span>
+> <span data-ttu-id="f209c-116">Bietet einen Leitfaden zum besseren Verständnis und zur Programmierung mit MAPI.</span><span class="sxs-lookup"><span data-stu-id="f209c-116">Provides a guide to understanding and programming with MAPI.</span></span>
     
 [<span data-ttu-id="f209c-117">MAPI Reference</span><span class="sxs-lookup"><span data-stu-id="f209c-117">MAPI Reference</span></span>](mapi-reference.md)
   

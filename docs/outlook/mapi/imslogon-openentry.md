@@ -80,7 +80,7 @@ HRESULT OpenEntry(
 
 <span data-ttu-id="10f2e-133">S_OK</span><span class="sxs-lookup"><span data-stu-id="10f2e-133">S_OK</span></span> 
   
-> <span data-ttu-id="10f2e-134">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="10f2e-134">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="10f2e-134">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="10f2e-134">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="10f2e-135">Hinweise</span><span class="sxs-lookup"><span data-stu-id="10f2e-135">Remarks</span></span>
 

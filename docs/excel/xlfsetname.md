@@ -54,5 +54,5 @@ Excel12(xlfSetName, LPXLOPER12 pxRes, 2, LPXLOPER12 pxNameText, LPXLOPER12 pxNam
   
 ## <a name="see-also"></a><span data-ttu-id="1fef4-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1fef4-126">See also</span></span>
 
-- [<span data-ttu-id="1fef4-127">Wichtige und n�tzliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="1fef4-127">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="1fef4-127">Wichtige und nützliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="1fef4-127">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 

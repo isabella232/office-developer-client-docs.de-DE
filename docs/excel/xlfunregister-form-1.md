@@ -94,5 +94,5 @@ int WINAPI fExit(void)
 - [<span data-ttu-id="346a9-131">XlfRegister (Formular 1)</span><span class="sxs-lookup"><span data-stu-id="346a9-131">xlfRegister (Form 1)</span></span>](xlfregister-form-1.md)
 - [<span data-ttu-id="346a9-132">xlfRegisterId</span><span class="sxs-lookup"><span data-stu-id="346a9-132">xlfRegisterId</span></span>](xlfregisterid.md)
 - [<span data-ttu-id="346a9-133">XlfUnregister (Formular 2)</span><span class="sxs-lookup"><span data-stu-id="346a9-133">xlfUnregister (Form 2)</span></span>](xlfunregister-form-2.md)
-- [<span data-ttu-id="346a9-134">Wichtige und n�tzliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="346a9-134">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="346a9-134">Wichtige und nützliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="346a9-134">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 

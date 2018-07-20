@@ -21,7 +21,7 @@ ms.locfileid: "19791494"
   
 <span data-ttu-id="7253b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="7253b-104">**Applies to**: Outlook</span></span> 
   
-<span data-ttu-id="7253b-p101">Ein Standardnachrichtenspeicher ist eine, die Client-Anwendungen f�r allgemeine Zwecke messaging Aufgaben verwenden k�nnen. Es gibt eine Reihe von optionalen Features f�r Nachricht Speicher-Anbieter, die erforderlich werden, wenn der Anbieter die Nachricht wird als Standard-Informationsspeicher verwendet werden soll. Sie sind wie folgt:</span><span class="sxs-lookup"><span data-stu-id="7253b-p101">A default message store is one that client applications can use for general purpose messaging tasks. There are a number of optional features for message store providers that become required if the message store provider is to be used as the default message store. They are as follows:</span></span>
+<span data-ttu-id="7253b-p101">Ein Standardnachrichtenspeicher ist eine, die Client-Anwendungen für allgemeine Zwecke messaging Aufgaben verwenden können. Es gibt eine Reihe von optionalen Features für Nachricht Speicher-Anbieter, die erforderlich werden, wenn der Anbieter die Nachricht wird als Standard-Informationsspeicher verwendet werden soll. Sie sind wie folgt:</span><span class="sxs-lookup"><span data-stu-id="7253b-p101">A default message store is one that client applications can use for general purpose messaging tasks. There are a number of optional features for message store providers that become required if the message store provider is to be used as the default message store. They are as follows:</span></span>
   
 - <span data-ttu-id="7253b-108">Implementieren der Spezialordner: der Ordner Posteingang und Postausgang-Ergebnisse.</span><span class="sxs-lookup"><span data-stu-id="7253b-108">Implementing the special folders: the Inbox, Outbox, and search-results folders.</span></span>
     
@@ -31,13 +31,13 @@ ms.locfileid: "19791494"
     
 - <span data-ttu-id="7253b-111">Erm�glicht die Erstellung von Nachrichten mit beliebigen Nachrichtenklassen.</span><span class="sxs-lookup"><span data-stu-id="7253b-111">Allowing the creation of messages with arbitrary message classes.</span></span>
     
-- <span data-ttu-id="7253b-112">Unterst�tzung f�r benannte und mehrwertige Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="7253b-112">Supporting named and multiple-value properties.</span></span>
+- <span data-ttu-id="7253b-112">Unterstützung für benannte und mehrwertige Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="7253b-112">Supporting named and multiple-value properties.</span></span>
     
 - <span data-ttu-id="7253b-113">Supporting the [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) method, even if the message store provider is tightly coupled with a transport provider.</span><span class="sxs-lookup"><span data-stu-id="7253b-113">Supporting the [IMSProvider::SpoolerLogon](imsprovider-spoolerlogon.md) method, even if the message store provider is tightly coupled with a transport provider.</span></span> 
     
 - <span data-ttu-id="7253b-p102">Supporting associated contents tables. For more information, see [Inhalt von Tabellen](contents-tables.md).</span><span class="sxs-lookup"><span data-stu-id="7253b-p102">Supporting associated contents tables. For more information, see [Contents Tables](contents-tables.md).</span></span>
     
-- <span data-ttu-id="7253b-116">Benachrichtigung �ber die Warteschlange MAPI-Unterst�tzung f�r Nachrichten in der Warteschlange f�r ausgehende Nachrichten vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="7253b-116">Supporting notification of the MAPI spooler when there are messages in the outgoing message queue.</span></span>
+- <span data-ttu-id="7253b-116">Benachrichtigung �ber die Warteschlange MAPI-Unterstützung für Nachrichten in der Warteschlange für ausgehende Nachrichten vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="7253b-116">Supporting notification of the MAPI spooler when there are messages in the outgoing message queue.</span></span>
     
 ## <a name="see-also"></a><span data-ttu-id="7253b-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7253b-117">See also</span></span>
 

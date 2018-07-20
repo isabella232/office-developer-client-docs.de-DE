@@ -72,5 +72,5 @@ short int WINAPI xlStackExample_XLOPER(void)
 
 ## <a name="see-also"></a><span data-ttu-id="02f70-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="02f70-123">See also</span></span>
 
-- [<span data-ttu-id="02f70-124">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen</span><span class="sxs-lookup"><span data-stu-id="02f70-124">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [<span data-ttu-id="02f70-124">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="02f70-124">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

@@ -67,7 +67,7 @@ HRESULT WrapCompressedRTFStream(
 
 <span data-ttu-id="dbc23-125">S_OK</span><span class="sxs-lookup"><span data-stu-id="dbc23-125">S_OK</span></span> 
   
-> <span data-ttu-id="dbc23-126">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="dbc23-126">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="dbc23-126">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="dbc23-126">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="dbc23-127">Hinweise</span><span class="sxs-lookup"><span data-stu-id="dbc23-127">Remarks</span></span>
 

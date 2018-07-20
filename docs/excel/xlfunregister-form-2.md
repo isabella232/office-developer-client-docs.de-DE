@@ -60,5 +60,5 @@ Excel12(xlfUnregister, LPXLOPER12 pxRes, 1, LPXLOPER12 pxModuleText);
 - [<span data-ttu-id="5e172-127">XlfRegister (Formular 1)</span><span class="sxs-lookup"><span data-stu-id="5e172-127">xlfRegister (Form 1)</span></span>](xlfregister-form-1.md)
 - [<span data-ttu-id="5e172-128">xlfRegisterId</span><span class="sxs-lookup"><span data-stu-id="5e172-128">xlfRegisterId</span></span>](xlfregisterid.md)
 - [<span data-ttu-id="5e172-129">XlfUnregister (Formular 1)</span><span class="sxs-lookup"><span data-stu-id="5e172-129">xlfUnregister (Form 1)</span></span>](xlfunregister-form-1.md)
-- [<span data-ttu-id="5e172-130">Wichtige und n�tzliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="5e172-130">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
+- [<span data-ttu-id="5e172-130">Wichtige und nützliche C-API XLM-Funktionen</span><span class="sxs-lookup"><span data-stu-id="5e172-130">Essential and Useful C API XLM Functions</span></span>](essential-and-useful-c-api-xlm-functions.md)
 

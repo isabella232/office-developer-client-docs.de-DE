@@ -31,11 +31,11 @@ ms.locfileid: "19793076"
     
     <span data-ttu-id="a545a-109">In diesem Beispiel unterstützt einen einzelnen schreibgeschützten Container für Anzeigenamen und e-Mail-Adressen, die aus einer flachen Binärdatei gelesen werden.</span><span class="sxs-lookup"><span data-stu-id="a545a-109">This sample supports a single read-only container for display names and email addresses, which are read from a flat binary file.</span></span>
     
-- [<span data-ttu-id="a545a-110">Beispiel f�r einen Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="a545a-110">Message Store Provider Sample</span></span>](message-store-provider-sample.md)
+- [<span data-ttu-id="a545a-110">Beispiel für einen Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="a545a-110">Message Store Provider Sample</span></span>](message-store-provider-sample.md)
     
     <span data-ttu-id="a545a-111">In diesem Beispiel verwendet die Verzeichnisse als Ordnern und OLE 2.0-Dokumentdateien als Nachrichten.</span><span class="sxs-lookup"><span data-stu-id="a545a-111">This sample uses directories as folders and OLE 2.0 document files as messages.</span></span> <span data-ttu-id="a545a-112">Im Beispiel werden alle erforderlichen Features für einen Standard-Nachrichtenspeicher unterstützt.</span><span class="sxs-lookup"><span data-stu-id="a545a-112">The sample supports all required features for a default message store.</span></span>
     
-- [<span data-ttu-id="a545a-113">Beispiel f�r einen Transport</span><span class="sxs-lookup"><span data-stu-id="a545a-113">Transport Provider Sample</span></span>](transport-provider-sample.md)
+- [<span data-ttu-id="a545a-113">Beispiel für einen Transport</span><span class="sxs-lookup"><span data-stu-id="a545a-113">Transport Provider Sample</span></span>](transport-provider-sample.md)
     
     <span data-ttu-id="a545a-114">In diesem Beispiel werden Dateien und Verzeichnisse senden und Empfangen von Nachrichten verwendet.</span><span class="sxs-lookup"><span data-stu-id="a545a-114">This sample uses files and directories to transmit and receive messages.</span></span>
     

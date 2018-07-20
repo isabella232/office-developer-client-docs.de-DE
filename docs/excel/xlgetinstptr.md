@@ -72,5 +72,5 @@ short WINAPI xlGetInstPtrExample(void)
 
 - [<span data-ttu-id="3576f-120">xlGetHwnd</span><span class="sxs-lookup"><span data-stu-id="3576f-120">xlGetHwnd</span></span>](xlgethwnd.md)
 - [<span data-ttu-id="3576f-121">xlGetInst</span><span class="sxs-lookup"><span data-stu-id="3576f-121">xlGetInst</span></span>](xlgetinst.md)
-- [<span data-ttu-id="3576f-122">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen</span><span class="sxs-lookup"><span data-stu-id="3576f-122">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [<span data-ttu-id="3576f-122">C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können</span><span class="sxs-lookup"><span data-stu-id="3576f-122">C API Functions That Can Be Called Only from a DLL or XLL</span></span>](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
 

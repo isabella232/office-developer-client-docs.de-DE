@@ -39,7 +39,7 @@ HRESULT OnSaved( void );
 
 <span data-ttu-id="a9432-109">S_OK</span><span class="sxs-lookup"><span data-stu-id="a9432-109">S_OK</span></span> 
   
-> <span data-ttu-id="a9432-110">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="a9432-110">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="a9432-110">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zurückgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="a9432-110">The call succeeded and has returned the expected value or values.</span></span>
     
 ## <a name="remarks"></a><span data-ttu-id="a9432-111">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a9432-111">Remarks</span></span>
 
