@@ -7,13 +7,13 @@ ms.topic: reference
 f1_keywords:
 - xlAutoClose
 keywords:
-- XlAutoClose-Funktion [excel 2007]
+- XlAutoClose-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 147e46cd-d4d7-49eb-acdc-5a2ebc2fb6c2
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 3cbe1cd879fb5a91d14b38f8a659a7f77d943fe7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790600"
@@ -22,9 +22,9 @@ ms.locfileid: "19790600"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Wird von Microsoft Excel aufgerufen, wenn die XLL deaktiviert wird. Das Add-In wird normalerweise am Ende eine Excel-Sitzung deaktiviert. Das Add-in deaktiviert werden vom Benutzer während einer Excel-Sitzung, und diese Funktion wird in diesem Fall aufgerufen werden.
+Microsoft Excel wird aufgerufen, sobald die XLL deaktiviert wird. Das Add-in wird normalerweise bei Ablauf einer Excel-Sitzung deaktiviert. Das Add-in kann vom Benutzer während einer Excel-Sitzung deaktiviert werden, und diese Funktion wird in diesem Fall aufgerufen werden.
   
-Excel erfordert eine XLL zu implementieren und exportieren Sie diese Funktion nicht auf, obwohl es ratsam ist, damit Ihre XLL Aufheben der Registrierung Funktionen und Befehle, Ressourcen freizugeben, rückgängig Anpassungen und usw.. Wenn die Funktionen und Befehle nicht explizit durch die XLL nicht registriert sind, wird Excel nach dem Aufrufen der **XlAutoClose** -Funktion. 
+Excel benötigt keine XLL zum Implementieren und Exportieren dieser Funktion, obwohl dies ratsam ist, um Ihre XLL Funktionen und Befehle nicht zu registrieren, Ressourcen freizugeben, Anpassungen rückgängig zu machen und so weiter. Falls Funktionen und Befehle nicht explizit durch die XLL nicht registriert sind, führt Excel dies nach Aufruf der **XlAutoClose** Funktion durch. 
   
 ```cs
 int WINAPI xlAutoClose(void);
@@ -32,39 +32,39 @@ int WINAPI xlAutoClose(void);
 
 ## <a name="parameters"></a>Parameter
 
-Diese Funktion hat keine Argumente.
+Diese Funktion verwendet keine Parameter.
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
-Die Implementierung dieser Funktion muss 1 (**Int**) zurückgeben.
+Die Implementierung dieser Funktion muss 1 zurückgeben (**Int**).
   
 ## <a name="remarks"></a>Hinweise
 
-Excel Ruft die **XlAutoClose** -Funktion, wenn die XLL entladen aus dem Speicher deaktiviert wird, d. h.. Die XLL ist in den folgenden Situationen deaktiviert: 
+Excel ruft die **XlAutoClose** Funktion auf, sobald die XLL deaktiviert ist, d. h. aus dem Speicher entladen. Die XLL wird in den folgenden Fällen deaktiviert: 
   
-- Am normalen Ende einer Excel-Sitzung bei active während der Sitzung.
+- Am üblichen Ende einer Excel-Sitzung falls es während dieser Sitzung aktiviert war.
     
-- Wenn Sie während einer Sitzung Excel explizit entladen.
+- Falls es während einer Excel-Sitzung explizit entladen wurde.
     
-- Eine XLL kann auf verschiedene Weise entladen werden:
+- Eine XLL kann auf verschiedene Arten entladen werden:
     
-- Verwenden Sie den Add-In-Manager.
+- Verwenden des Add-In-Managers.
     
-- Aus einer anderen XLL aufruft, [XlfUnregister](xlfunregister-form-1.md) mit dem Namen dieser DLL als einziges Argument. 
+- Aus einem anderen XLL, welches [XlfUnregister](xlfunregister-form-1.md) mit dem Namen der DLL als einziges Argument aufgerufen hat. 
     
-- Aus einer XLM-Makrovorlage aufruft, die mit dem Namen dieser DLL [UNREGISTER](xlfunregister-form-1.md) als einziges Argument. 
+- Aus einer XLM-Makrovorlage, die [UNREGISTER](xlfunregister-form-1.md) mit dem Namen der DLL als einziges Argument aufgerufen hat. 
     
-Diese Funktion sollte Folgendes:
+Diese Funktion sollte folgendermaßen vorgehen:
   
-- Entfernen Sie keine Menüs oder Menüelemente, die von der XLL hinzugefügt wurden.
+- Entfernen Sie alle Menüs oder Menüelemente, die von der XLL hinzugefügt wurden.
     
-- Führen Sie alle erforderliche globale Bereinigung aus.
+- Führen Sie jegliche erforderliche globale Reinigung durch.
     
-- Löschen Sie die Namen, die, insbesondere die Namen der exportierten Funktionen erstellt wurden. Denken Sie daran, dass Funktionen registrieren einige Namen erstellt werden soll, führen kann, wenn das vierte Argument **Registrieren** vorhanden ist. 
+- Löschen Sie alle Namen, die erstellt worden sind, insbesondere die Namen der exportierten Funktionen. Beachten Sie, dass das Registrieren von Funktionen die Erstellung einiger Namen zur Folge hat, falls das vierte Argument **Registrieren** vorhanden ist. 
     
 ## <a name="example"></a>Beispiel
 
-Finden Sie die Dateien `SAMPLES\EXAMPLE\EXAMPLE.C` und `SAMPLES\GENERIC\GENERIC.C` beispielsweise Implementierungen von dieser Funktion. Der folgende Code ist aus `SAMPLES\GENERIC\GENERIC.C`.
+Schauen Sie sich die Dateien `SAMPLES\EXAMPLE\EXAMPLE.C` und `SAMPLES\GENERIC\GENERIC.C` für Beispiel-Implementierungen dieser Funktion an. Der folgende Code stammt aus `SAMPLES\GENERIC\GENERIC.C`.
   
 ```cs
 int WINAPI xlAutoClose(void)
@@ -116,5 +116,5 @@ int WINAPI xlAutoClose(void)
 [xlAutoOpen](xlautoopen.md)
 
 
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
 
