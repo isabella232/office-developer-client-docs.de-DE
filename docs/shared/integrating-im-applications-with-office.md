@@ -8,7 +8,7 @@ ms.assetid: beba316b-1dfe-4e1b-adae-42418906c177
 description: In diesem Artikel wird beschrieben, wie Sie eine Clientanwendung für Sofortnachrichten konfigurieren, sodass Features für soziale Netzwerke in Office 2013 integriert sind,u. a. Anzeigen von Anwesenheitsinformationen und Senden von Sofortnachrichten von der Visitenkarte aus.
 ms.openlocfilehash: 383aac24be347cf637d9e2f255623035eea8bc40
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796322"
@@ -25,7 +25,7 @@ Wenn Sie Fragen oder Anmerkungen zu diesem technischen Artikel oder zu Prozessen
 Office 2013 ermöglicht die umfassende Integration mit Clientanwendungen für Chatnachrichten, einschließlich Lync 2013. Diese Integration bietet Benutzern Chat-Funktionen innerhalb von Word 2013, Excel 2013, PowerPoint 2013, Outlook 2013, Visio 2013, Project 2013 und OneNote 2013 sowie ermöglicht die Anwesenheitsintegration auf SharePoint 2013-Seiten. Benutzer können Foto, Name, Anwesenheitsstatus und Kontaktdaten für Personen in ihrer Kontaktliste sehen. Sie können Chats, Videoanrufe oder Anrufe direkt von der Visitenkarte (das Benutzeroberflächen-Element inOffice 2013 mit Kontaktinformationen und Kommunikationsoptionen) aus durchführen. Office 2013 erleichtert es, mit Kontakten direkt innerhalb von E-Mails oder Dokumenten in Verbindung zu bleiben. 
   
 > [!NOTE]
-> [!HINWEIS] In diesem Artikel wird der Begriff Clientanwendung für Chatnachrichten verwendet, mit dem speziell die auf dem Benutzercomputer installierte Anwendung gemeint ist, die mit dem Chatdienst kommuniziert. Lync 2013gilt z. B. als eine Clientanwendung für Chatnachrichten. Dieser Artikel enthält keine detaillierten Informationen zur Kommunikation der Clientanwendung für Chatnachrichten mit dem Chatdienst und dem Chatdienst an sich. 
+> In diesem Artikel wird der Begriff Clientanwendung für Chatnachrichten verwendet, mit dem speziell die auf dem Benutzercomputer installierte Anwendung gemeint ist, die mit dem Chatdienst kommuniziert. Lync 2013gilt z. B. als eine Clientanwendung für Chatnachrichten. Dieser Artikel enthält keine detaillierten Informationen zur Kommunikation der Clientanwendung für Chatnachrichten mit dem Chatdienst und dem Chatdienst an sich. 
   
 Sie können eine Clientanwendung für Chatnachrichten so anpassen, dass diese mit Office kommuniziert. Sie können insbesondere Ihre Chatanwendung zum Anzeigen der folgenden Informationen innerhalb der Office-Benutzeroberfläche anpassen:
   
@@ -37,9 +37,9 @@ Sie können eine Clientanwendung für Chatnachrichten so anpassen, dass diese mi
     
 - Anwesenheitsstatus des Kontakts
     
-- Zeichenfolge zur Verfügbarkeit des Kontakts (z. B. „Verfügbar" oder „Abwesend").
+- Zeichenfolge zur Verfügbarkeit des Kontakts (z. B. „Verfügbar“ oder „Abwesend“).
     
-- Zeichenfolge zu unterstützten Chatfunktionen des Kontakts (z. B. „Videomodus möglich").
+- Zeichenfolge zu unterstützten Chatfunktionen des Kontakts (z. B. „Videomodus möglich“).
     
 - Chat starten mit einem Klick
     
@@ -53,21 +53,21 @@ Sie können eine Clientanwendung für Chatnachrichten so anpassen, dass diese mi
     
 - Kontaktdaten, Telefonnummer, E-Mail-Adresse, Titel und Name des Unternehmens
     
-**Abbildung 1. Visitenkarte in Office 2013**
+**Abbildung 1. Visitenkarte in Office 2013**
 
-![Die Personenkarte in Office 2013] (media/ocom15_peoplecard.png "Die Personenkarte in Office 2013")
+![Personen-Karte in Office 2013](media/ocom15_peoplecard.png "Personen-Karte in Office 2013")
   
 Um diese Integration in Office zu ermöglichen, müssen in einer Clientanwendung für Chatnachrichten Schnittstellen implementiert werden, mit denen Office eine Verbindung mit dieser herstellen kann. Die APIs für diese Integration sind im [UCCollborationLib](http://msdn.microsoft.com/en-au/library/uccollaborationlib.aspx)-Namespace in der Datei „Microsoft.Office.UC.dll" enthalten, die mit Versionen von Office 2013 installiert wird, die Lync/Skype for Business umfassen. Der **UCCollaborationLib**-Namespace enthält die Schnittstellen, die Sie für die Integration in Office implementieren müssen. 
   
 > [!IMPORTANT] 
-> Die Typbibliothek für die erforderlichen Schnittstellen ist in Lync 2013/Skype für Unternehmen eingebettet. Für Drittanbieterintegratoren funktioniert dies nur, wenn sowohl Lync 2013 als auch Skype for Business auf dem Zielcomputer installiert sind. Wenn Sie die Integration mit Office Standard ausführen, müssen Sie die Typbibliothek extrahieren und auf dem Zielcomputer installieren. Das [Lync 2013 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=36824) enthält die Datei Microsoft.Office.UC.dll. 
+> Die Typbibliothek für die erforderlichen Schnittstellen ist in Lync 2013/Skype for Business eingebettet. Für Drittanbieter-Systemintegratoren funktioniert dies nur, wenn sowohl Lync 2013 als auch Skype for Business auf dem Zielcomputer installiert sind. Wenn Sie die Integration mit Office Standard ausführen, müssen Sie die Typbibliothek extrahieren und auf dem Zielcomputer installieren. Das [Lync 2013 SDK](https://www.microsoft.com/en-us/download/details.aspx?id=36824) enthält die Datei Microsoft.Office.UC.dll. 
   
 > [!NOTE]
->  [!HINWEIS] Eine Handvoll von Office 2010-Anwendungen können auf ähnliche Weise in einer Drittanbieter-Chatanwendung integriert werden: Outlook 2010, Word 2010, Excel 2010, PowerPoint 2010 und SharePoint Server 2010 (unter Verwendung eines ActiveX-Steuerelements). Viele der für die Integration in Office 2013 erforderlichen Schritte gelten auch für Office 2010. Es gibt mehrere wichtige Unterschiede bei der Integration von Office 2010 in einer Anwendung des Anbieters für Sofortnachrichten: 
->  - Office 2010 wird das Foto des Kontakts nicht angezeigt. 
->  - Sie müssen die Datei "Microsoft.Office.UC.dll" Datei separat von Office 2010 herunterladen. Das [Lync 2010 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=18898) enthält die Datei „Microsoft.Office.UC.dll" für Office 2010. 
->  - Wenn die Office-Anwendung für die Instant Messaging-Client-Anwendung die [IUCOfficeIntegration.GetAuthenticationInfo](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration) -Methode aufruft, wird in der Zeichenfolge "14.0.0.0" übergeben. 
->  - Office 2010 Listet alle Gruppen und Kontakte, sobald es mit einer Instant Messaging-Clientanwendung eine Verbindung herstellt. 
+>  Eine Handvoll von Office 2010-Anwendungen können auf ähnliche Weise in einer Drittanbieter-Chatanwendung integriert werden: Outlook 2010, Word 2010, Excel 2010, PowerPoint 2010 und SharePoint Server 2010 (unter Verwendung eines ActiveX-Steuerelements). Viele der für die Integration in Office 2013 erforderlichen Schritte gelten auch für Office 2010. Es gibt einige wichtige Unterschiede bei der Integration von Office 2010 in einer Chatanbieteranwendung: 
+>  - In Office 2010 wird das Kontakt-Foto nicht angezeigt. 
+>  - Sie müssen die Datei Microsoft.Office.Uc.dll separat von Office 2010 herunterladen. Das [Lync 2010 SDK ](http://www.microsoft.com/en-us/download/details.aspx?id=18898) enthält die Datei Microsoft.Office.UC.dll für Office 2010. 
+>  - Wenn die Office-Anwendung die [IUCOfficeIntegration.GetAuthenticationInfo](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration)-Methode in einer Clientanwendung für Chatnachrichten aufruft, übergibt diese die Zeichenfolge „14.0.0.0“. 
+>  - Office 2010 listet alle Gruppen und Kontakte auf, sobald es eine Verbindung zu einer Clientanwendung für Chatnachrichten herstellt. 
   
 ## <a name="how-office-integrates-with-an-im-client-application"></a>Integration von Office in einer Clientanwendung für Chatnachrichten
 <a name="off15_IMIntegration_How"> </a>
@@ -80,7 +80,7 @@ Wenn ein Office 2013-Anwendung gestartet wird, durchläuft sie den folgenden Pro
     
 3. Sie stellt eine Verbindung mit bestimmten Schnittstellen her, die von der Clientanwendung für Chatnachrichten bereitgestellt werden.
     
-4. Sie ermittelt die von dem aktuell angemeldeten (lokalen) Benutzer unterstützte Funktionen, u. a. Kontakte des Benutzers, Anwesenheitsinformationen und unterstützte Chatfunktionen (Chatnachrichten, Videoanrufe, VOIP usw.).
+4. Sie ermittelt die von dem aktuell angemeldeten (lokalen) Benutzer unterstützte Funktionen, u. a. Kontakte des Benutzers, Anwesenheitsinformationen und unterstützte Chatfunktionen (Chatnachrichten, Videoanrufe, VOIP usw.).
     
 5. Sie ruft Anwesenheitsinformationen für die Kontakte des lokalen Benutzers ab.
     
@@ -92,7 +92,7 @@ Die Office-Anwendung sucht nach bestimmten Schlüsseln und Einträge in der Regi
   
 Der Prozess, den die Office-Anwendung durchläuft, um die standardmäßige Clientanwendung für Chatnachrichten zu ermitteln, ist der folgendende:
   
-1. Die Office-Anwendung prüft, ob der Unterschlüssel „HKEY_CURRENT_USER\Software\IM Providers\DefaultIMApp" in der Registrierung festgelegt ist, und liest den dort aufgeführten Anwendungsnamen.
+1. Die Office-Anwendung prüft, ob der Unterschlüssel „HKEY_CURRENT_USER\Software\IM Providers\DefaultIMApp“ in der Registrierung festgelegt ist, und liest den dort aufgeführten Anwendungsnamen.
     
 2. Anschließend liest die Office-Anwendung den Schlüssel „HKEY_CURRENT_USER\Software\IM Providers\ _Application name_\UpAndRunning" Schlüssel und prüft den Wert auf Änderungen.
     
@@ -108,7 +108,7 @@ Der Prozess, den die Office-Anwendung durchläuft, um die standardmäßige Clien
 
 Nachdem die Office-Anwendung eine Verbindung mit der Clientanwendung für Chatnachrichten hergestellt hat, führt sie die folgenden Schritte aus:
   
-1. Die Office-Anwendung ruft die [IUnknown::QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx)-Methode auf, um nach der [IUCOfficeIntegration](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration)-Schnittstelle zu suchen. 
+1. Die Office-Anwendung ruft die [IUnknown::QueryInterface](http://msdn.microsoft.com/de-DE/library/ms682521%28v=VS.85%29.aspx)-Methode auf, um nach der [IUCOfficeIntegration](integrating-im-applications-with-office.md#off15_IMIntegration_ImplementRequired_IUCOfficeIntegration)-Schnittstelle zu suchen. 
     
 2. Anschließend ruft die Office-Anwendung die **IUCOfficeIntegration.GetAuthenticationInfo**-Methode auf und übergibt die höchste unterstützte Integrationsversion (z. B. „15.0.0.0"). 
     
@@ -117,7 +117,7 @@ Nachdem die Office-Anwendung eine Verbindung mit der Clientanwendung für Chatna
     `<authenticationinfo>`
     
    > [!NOTE]
-   > [!HINWEIS] Aufgrund der Kompatibilität mit Vorversionen muss die Clientanwendung für Chatnachrichten den exakten Wert „ `<authenticationinfo>`" für den Aufruf von **GetAuthenticationInfo** zurückgeben, wenn die als Parameter übergebene Office-Version von dieser Anwendung unterstützt wird. 
+   > Aufgrund der Kompatibilität mit Vorversionen muss die Clientanwendung für Chatnachrichten den exakten Wert „ `<authenticationinfo>`" für den Aufruf von **GetAuthenticationInfo** zurückgeben, wenn die als Parameter übergebene Office-Version von dieser Anwendung unterstützt wird. 
   
 4. Tritt beim Zurückgeben eines Werts durch die Clientanwendung für Chatnachrichten ein Fehler auf, ruft die Office-Anwendung erneut die **GetAuthenticationInfo**-Methode mit der nächsten höchsten unterstützten Version von Office (z. B. „14.0.0.0") auf. 
     
@@ -182,17 +182,17 @@ Wenn die Office 2013-Anwendung das **OnShuttingDown**-Ereignis in der Chatanwend
 
 Wie bereits erwähnt, suchen Chat-fähige Office 2013-Anwendungen nach bestimmten Schlüsseln, Einträgen und Werten in der Registrierung, um die Clientanwendung für Chatnachrichten zu ermitteln, mit der eine Verbindung hergestellt werden soll. Diese Registrierungswerte stellen der Office-Anwendung den Prozessnamen und die CLSID der Klasse bereit, die als Einstiegspunkt des Objektmodells der Clientanwendung für Chatnachrichten dient (d. h. die Klasse, die die **IUCOfficeIntegration**-Schnittstelle implementiert). Die Office-Anwendung ist an der Erstellung dieser Klasse beteiligt und stellt als Client eine Verbindung mit dem COM-Server ohne Prozesse in der Clientanwendung für Chatnachrichten her. 
   
-Anhand der Tabelle 1 können Sie Schlüssel, Einträge und Werte identifizieren, die in der Registrierung geschrieben werden müssen, um eine Clientanwendung für Chatnachrichten in Office zu integrieren.
+Anhand der Tabelle 1 können Sie Schlüssel, Einträge und Werte identifizieren, die in der Registrierung geschrieben werden müssen, um eine Clientanwendung für Chatnachrichten in Office zu integrieren.
   
 **Tabelle 1. Registrierungsschlüssel zum Festlegen der standardmäßigen Clientanwendung für Chatnachrichten**
 
-|**Schlüssel**|**Eintrag**|**Type**|**Wert**|**Beispiel**|
+|**Schlüssel**|**Eintrag**|**Typ**|**Wert**|**Beispiel**|
 |:-----|:-----|:-----|:-----|:-----|
 |HKEY_LOCAL_MACHINE\Software\IM Providers\\< Anwendungsname\>  <br/> |FriendlyName  <br/> |REG_SZ  <br/> |Der Name der Drittanbieter-Clientanwendung für Chatnachrichten.  <br/> |Litware IM 2012  <br/> |
 ||ProcessName  <br/> |REG_SZ  <br/> |Der Prozessname der Drittanbieter-Clientanwendung für Chatnachrichten.  <br/> |litware.exe  <br/> |
 ||GUID  <br/> |REG_SZ  <br/> |Eine Klassen-ID (CLSID) für den Stamm, eine mizugestaltende Klasse in der Chatanwendung (Klasse, die die **IUCOfficeIntegration**-Schnittstelle implementiert).  <br/> |(Eine GUID)  <br/> |
 |HKEY_CURRENT_USER\Software\IM Providers  <br/> |DefaultIMApp  <br/> |REG_SZ  <br/> |Der Name der Clientanwendung für Chatnachrichten. Dieser muss mit dem Namen auf oberster Ebene des Registrierungsschlüssels (Struktur) in HKEY_LOCAL_MACHINE übereinstimmen.  <br/> |Litware  <br/> |
-|HKEY_CURRENT_USER\Software\IM Providers\\<Anwendungsname\>  <br/> |UpAndRunning  <br/> |REG_DWORD  <br/> | Ein ganzzahliger Wert zwischen 0 und 2:  <br/>  0 - Wird ausgeführt  <br/>  1 - Wird gestartet  <br/>  2 - Wird ausgeführt  <br/> <br/>**Hinweis**: der Anwendung Namen Registrierungsschlüssel muss der Wert des Eintrags DefaultIMApp identisch sein.           ||
+|HKEY_CURRENT_USER\Software\IM Providers\\<Anwendungsname\>  <br/> |UpAndRunning  <br/> |REG_DWORD  <br/> | Ein ganzzahliger Wert zwischen 0 und 2:  <br/>  0 – Wird ausgeführt  <br/>  1 – Wird gestartet  <br/>  2 – Wird ausgeführt  <br/> <br/>**Hinweis**: Der Registrierungsschlüssel des Anwendungsnamens muss mit dem Wert des DefaultIMApp-Eintrags übereinstimmen.           ||
    
 ## <a name="implementing-the-required-interfaces-for-integration-with-office"></a>Implementieren der erforderlichen Schnittstellen für die Integration in Office
 <a name="off15_IMIntegration_ImplementRequired"> </a>
@@ -217,7 +217,7 @@ Die Klasse, die von **IUCOfficeIntegration** erbt, sollte auch die **_IUCOfficeI
 In Tabelle 2 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **IUCOfficeIntegration** und **_IUCOfficeIntegration** erbt.
   
 > [!NOTE]
-> [!HINWEIS] Weitere Informationen zu den **IUCOfficeIntegration**- und **_IUCOfficeIntegrationEvents**-Schnittstellen und den dazugehörigen Elemente finden Sie unter [UCCollaborationLib.IUCOfficeIntegration](http://msdn.microsoft.com/library/UCCollaborationLib.IUCOfficeIntegration) und [UCCollaborationLib._IUCOfficeIntegrationEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IUCOfficeIntegrationEvents). 
+> Weitere Informationen zu den **IUCOfficeIntegration**- und **_IUCOfficeIntegrationEvents**-Schnittstellen und den dazugehörigen Elemente finden Sie unter [UCCollaborationLib.IUCOfficeIntegration](http://msdn.microsoft.com/library/UCCollaborationLib.IUCOfficeIntegration) und [UCCollaborationLib._IUCOfficeIntegrationEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IUCOfficeIntegrationEvents). 
   
 **Tabelle 2 Implementierung der IUCOfficeIntegration- und _IUCOfficeIntegrationEvents-Schnittstellen**
 
@@ -243,7 +243,7 @@ public class LitwareClientAppObject : IUCOfficeIntegration
 
 ```
 
-Die **GetAuthenticationInfo** -Methode akzeptiert eine Zeichenfolge als Argument für den Parameter _Version_ . Wenn die Office-Anwendung dieser Methode aufruft, übergibt sie eine von zwei Zeichenfolgen für das Argument, je nach der Version von Office. Wenn die Office-Anwendung stellt die Methode mit der Version von Office, die die Instant Messaging-Client-Anwendung unterstützt (d. h., unterstützt die Funktionalität), die **GetAuthenticationInfo** -Methode gibt eine XML-Zeichenfolge hartcodierte `<authenticationinfo>`. 
+Die **GetAuthenticationInfo** -Methode akzeptiert eine Zeichenfolge als Argument für die _Version_ Parameter. Wenn die Office-Anwendung diese Methode aufruft, wird je nach Office-Version eine der zwei Zeichenfolgen für das Argument übergeben. Stellt die Office-Anwendung die Methode mit der Office-Version bereit, die von der Clientanwendung für Chatnachrichten unterstützt wird (d. h. die Funktionalität wird unterstützt), gibt die **GetAuthenticationInfo**-Methode eine hartcodierte XML-Zeichenfolge `<authenticationinfo>` zurück. 
   
 Verwenden Sie den folgenden Code zum Implementieren der **GetAuthentication**-Methode innerhalb des Codes der Clientanwendung für Chatnachrichten. 
   
@@ -307,12 +307,12 @@ public object GetInterface(string _version, OIInterface _interface)
 Die **GetSupportedFeatures**-Methode gibt Informationen zu den Chatfunktionen zurück, die von der Clientanwendung für Chatnachrichten unterstützt werden. Sie verwendet eine Zeichenfolge als einzigen Parameter,  _version_. Wenn die Office-Anwendung die **GetSupportFeatures**-Methode aufruft, gibt die Methode einen Wert aus der [UCCollaborationLib.OIFeature](http://msdn.microsoft.com/library/UCCollaborationLib.OIFeature)-Enumeration zurück. Der zurückgegebene Wert gibt die Funktionen des Chatclients an, wobei jede Funktion der Clientanwendung für Chatnachrichten mit einer Kennzeichnung des Werts für die Office-Anwendung versehen ist. 
   
 > [!NOTE]
->  Office 2013-Anwendungen ignorieren die folgenden Konstanten in der **OIFeature** -Enumeration: 
+>  Office 2013-Anwendungen ignorieren die folgenden Konstanten in der **OIFeature**-Enumeration: 
 > - **oiFeaturePictures** (2) 
 > - **oiFeatureFreeBusyIntegration**
 > - **oiFeaturePhoneNormalization**
   
-Verwenden Sie das folgende Codebeispiel zum Implementieren der **GetSupportFeatures**-Methode innerhalb des Codes der Clientanwendung für Chatnachrichten. 
+Verwenden Sie das folgende Codebeispiel zum Implementieren der **GetSupportFeatures** -Methode innerhalb des Codes der Clientanwendung für Chatnachrichten. 
   
 ```cs
 public OIFeature GetSupportedFeatures(string _version)
@@ -331,14 +331,14 @@ Die **ILyncClient**-Schnittstelle wird den Funktionen der Clientanwendung für C
   
 Darüber hinaus sollte die Klasse, die die **ILyncClient**-Schnittstelle Implementiert, auch die **_ILyncClientEvents**-Schnittstelle implementieren. Die **_ILyncClientEvents**-Schnittstelle legt eine Reihe von Ereignissen offen, die für die Überwachung des Status der Clientanwendung für Chatnachrichten erforderlich sind. 
   
-In Tabelle 3 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **ILyncClient** und **_ILyncClientEvents** erbt.
+In Tabelle 3 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die aus **ILyncClient** und **_ILyncClientEvents** besteht.
   
 > [!NOTE]
-> Ein beliebiges Element von der **ILyncClient** oder ** \_ILyncClientEvents** Schnittstelle in der Tabelle nicht aufgeführten muss vorhanden sein, jedoch nicht implementiert werden müssen. Elemente, jedoch nicht implementiert vorhanden sind, können **NotImplementedException** auslösen oder **E\_NOTIMPL** Fehler. 
+> Jegliche Elemente der **ILyncClient** oder **\_ILyncClientEvents**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** or **E\_NOTIMPL**-Fehler zurückgeben. 
 > 
-> Weitere Informationen zu den **ILyncClient** und **_ILyncClientEvents** Schnittstellen und deren Member finden Sie unter [UCCollaborationLib.ILyncClient](http://msdn.microsoft.com/library/UCCollaborationLib.ILyncClient) und [UCCollaborationLib._ILyncClientEvents](http://msdn.microsoft.com/library/UCCollaborationLib._ILyncClientEvents). 
+> Weitere Informationen zu den **ILyncClient**- und **_ILyncClientEvents**-Schnittstellen und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.ILyncClient](http://msdn.microsoft.com/library/UCCollaborationLib.ILyncClient) und [UCCollaborationLib._ILyncClientEvents](http://msdn.microsoft.com/library/UCCollaborationLib._ILyncClientEvents). 
   
-**Tabelle 3. Implementierung von ILyncClient- und ILyncClientEvents-Schnittstellen**
+**Tabelle 3. Implementierung von ILyncClient- und ILyncClientEvents-Schnittstellen **
 
 |**Schnittstelle**|**Element**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -661,9 +661,9 @@ Die **IAutomation**-Schnittstelle automatisiert Funktionen der Clientanwendung f
 In Tabelle 4 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **IAutomation** erbt.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **IAutomation**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **IAutomation**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben. 
 > 
-> Weitere Informationen über die Schnittstelle **IAutomation** und seine Member finden Sie unter [UCCollaborationLib.IAutomation](http://msdn.microsoft.com/library/UCCollaborationLib.IAutomation). 
+> Weitere Informationen zu der **IAutomation**-Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IAutomation](http://msdn.microsoft.com/library/UCCollaborationLib.IAutomation). 
   
 **Tabelle 4. Implementierung der IAutomation-Schnittstelle**
 
@@ -698,9 +698,9 @@ Die **IContact**-Schnittstelle stellt einen Benutzer der Clientanwendung für Ch
 In Tabelle 5 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **IContact** erbt.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **IContact**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **IContact**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben. 
 >
-> Weitere Informationen über die Schnittstelle **IContact** und seine Member finden Sie unter [UCCollaborationLib.IContact](http://msdn.microsoft.com/library/UCCollaborationLib.IContact). 
+> Weitere Informationen zu der **IContact**-Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContact](http://msdn.microsoft.com/library/UCCollaborationLib.IContact). 
   
 **Tabelle 5. Implementierung der IContact-Schnittstelle**
 
@@ -825,7 +825,7 @@ Während des Initialisierungsprozesses ruft die Office-Anwendung die Daten für 
 In Tabelle 6 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **ISelf** erbt.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **ISelf**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **ISelf**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
   
 **Tabelle 6. Implementierung der ISelf-Schnittstelle**
 
@@ -870,9 +870,9 @@ Das **IContactManager**-Objekt verwaltet die Kontakte für den lokalen Benutzer,
 In Tabelle 7 werden die Elemente aufgeführt, die in der Klasse implementiert werden müssen, die von **IContactManager** und **_IContactManagerEvents** erbt.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **IContactManager**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, jedoch nicht implementiert vorhanden sind, können **NotImplementedException** auslösen oder **E\_NOTIMPL** Fehler. 
+> Jegliche Elemente der **IContactManager**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** or **E\_NOTIMPL**-Fehler zurückgeben. 
 >
-> Weitere Informationen zu den **IContactManager** und **_IContactManagerEvents** Schnittstellen und deren Member finden Sie unter [UCCollaborationLib.IContactManager](http://msdn.microsoft.com/library/UCCollaborationLib.IContactManager) und [UCCollaborationLib._IContactManagerEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IContactManagerEvents). 
+> Weitere Informationen zu den **IContactManager**- und **_IContactManagerEvents**-Schnittstellen und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactManager](http://msdn.microsoft.com/library/UCCollaborationLib.IContactManager) und [UCCollaborationLib._IContactManagerEvents](http://msdn.microsoft.com/library/UCCollaborationLib._IContactManagerEvents). 
   
 **Tabelle 7. Implementierung der IContactManager- und _IContactManagerEvents-Schnittstellen**
 
@@ -936,9 +936,9 @@ Das **IGroup**-Objekt gibt eine Sammlung von Kontakten mit zusätzlichen Eigensc
 In Tabelle 9 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **IGroup** und **IGroupCollection** in der folgenden Tabelle erben. 
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **IGroup**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben. 
+> Elemente der **IGroup**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben. 
 >
-> Weitere Informationen über die **IGroup** und **IGroupCollection** Schnittstellen und ihre Member finden Sie unter [UCCollaborationLib.IGroup](http://msdn.microsoft.com/library/UCCollaborationLib.IGroup) und [UCCollaborationLib.IGroupCollection](http://msdn.microsoft.com/library/UCCollaborationLib.IGroupCollection). 
+> Weitere Informationen zu den **IGroup**- und **IGroupCollection**-Schnittstellen und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IGroup](http://msdn.microsoft.com/library/UCCollaborationLib.IGroup) und [UCCollaborationLib.IGroupCollection](http://msdn.microsoft.com/library/UCCollaborationLib.IGroupCollection). 
   
 **Tabelle 9. Implementierung der IGroup- und IGroupCollection-Schnittstellen**
 
@@ -958,9 +958,9 @@ Mit der **IContactSubscription**-Schnittstelle können Sie die Kontakte angeben,
 In Tabelle 10 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **IContactSubscription** erben.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **IContactSubscription**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben.
+> Elemente der **IContactSubscription**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
-> Weitere Informationen über die Schnittstelle **IContactSubscription** und seine Member finden Sie unter [UCCollaborationLib.IContactSubscription](http://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription). 
+> Weitere Informationen zu der **IContactSubscription**Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactSubscription](http://msdn.microsoft.com/library/UCCollaborationLib.IContactSubscription). 
   
 **Tabelle 10. Implementierung der IContactSubscription-Schnittstelle**
 
@@ -991,9 +991,9 @@ Das **IContactEndPoint**-Objekt gibt eine Telefonnummer aus der Sammlung von Tel
 In Tabelle 11 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **IContactEndPoint** erben.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **IContactEndPoint**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben.
+> Elemente der **IContactEndPoint**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
-> Weitere Informationen über die Schnittstelle **IContactEndPoint** und seine Member finden Sie unter [UCCollaborationLib.IContactEndpoint](http://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint). 
+> Weitere Informationen zu der **IContactEndPoint**Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.IContactEndpoint](http://msdn.microsoft.com/library/UCCollaborationLib.IContactEndpoint). 
   
 **Tabelle 11. Implementierung der IContactEndPoint-Schnittstelle**
 
@@ -1011,9 +1011,9 @@ In Tabelle 11 werden die Elemente aufgeführt, die in den Klassen implementiert 
 In Tabelle 12 werden die Elemente aufgeführt, die in den Klassen implementiert werden müssen, die von **ILocaleString** erben.
   
 > [!NOTE]
-> [!HINWEIS] Elemente der **ILocaleString**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Elemente, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException**- oder **E_NOTIMPL**-Fehler zurückgeben.
+> Elemente der **ILocaleString**-Schnittstelle, die nicht in der Tabelle aufgeführt sind, müssen zwar vorhanden sein, jedoch nicht implementiert werden. Members, die vorhanden sind, jedoch nicht implementiert werden, können einen **NotImplementedException** oder **E_NOTIMPL**-Fehler zurückgeben.
 >
-> Weitere Informationen über die Schnittstelle **ILocalString** und seine Member finden Sie unter [UCCollaborationLib.ILocaleString](http://msdn.microsoft.com/library/UCCollaborationLib.ILocaleString). 
+> Weitere Informationen zu der **ILocalString**-Schnittstelle und den dazugehörigen Elementen finden Sie unter [UCCollaborationLib.ILocaleString](http://msdn.microsoft.com/library/UCCollaborationLib.ILocaleString). 
   
 **Tabelle 12. Implementierung der ILocaleString-Schnittstelle**
 

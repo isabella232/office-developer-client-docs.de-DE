@@ -1,5 +1,5 @@
 ---
-title: Auswählen einer API oder Technologie zum Entwickeln von Lösungen für Outlook
+title: Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
 manager: soliver
 ms.date: 10/21/2016
 ms.audience: Developer
@@ -8,16 +8,16 @@ ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
 description: In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
 ms.openlocfilehash: 267ddcd69354664254755dc45ef0b0ca90f7da32
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19795974"
 ---
-# <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Auswählen einer API oder Technologie zum Entwickeln von Lösungen für Outlook
+# <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
 
 In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
   
-Microsoft unterstützt verschiedene APIs und Technologien, mit denen Microsoft Outlook erweitert werden kann: 
+Microsoft unterstützt mehrere API‘s und Technologien, die Outlook erweitern: 
   
 - Ab Office 2013 eröffnet die Apps für Office-Plattform Möglichkeiten der Erweiterung von Outlook-Funktionen über Outlook-Clients auf dem Desktop, dem Tablet-PC und dem Smartphone hinweg. Die Plattform umfasst eine JavaScript-API für Office und ein Schema für App-Manifeste.
     
@@ -43,9 +43,9 @@ Die Informationen in diesem Artikel sind dann besonders nützlich für Sie, wenn
     
 - Was können Sie mithilfe des Objektmodells und der MAPI in Outlook erweitern?
     
-- Wonach entscheiden Sie, welche API Sie verwenden sollten, wenn für Ihre Zwecke sowohl das Objektmodell als auch die MAPI geeignet ist?
+- Wenn Sie entweder das Objektmodell oder MAPI verwenden können, um die Aufgabe zu erzielen, wie können Sie entscheiden, welche der API Sie verwenden sollen?
     
-## <a name="objective-evaluation-criteria"></a>Objektive Bewertungskriterien
+## <a name="objective-evaluation-criteria"></a>Festlegen von Bewertungskriterien
 <a name="OLSelectAPI_ObjectiveChar"> </a>
 
 In diesem Abschnitt werden Kriterien beschrieben, anhand derer Sie die Office-Add-Ins-Plattform, das Objektmodell, die PIA und die MAPI miteinander vergleichen können, um herauszufinden, welche Methode Ihre Anforderungen am besten erfüllt. Dabei können die verschiedenen Kriterien je nach Projekt und verfügbaren Ressourcen mehr oder weniger ins Gewicht fallen.
@@ -97,7 +97,7 @@ Die folgenden Tabellen enthalten die Bewertungskriterien für die Office-Add-Ins
 |Skriptfähigkeit  <br/> |Die JavaScript-API für Office wird direkt in Skripts verwendet.  <br/> |
 |Test- und Debuggingtools  <br/> |Sie können ein beliebiges Webentwicklungstool verwenden. Napa und Visual Studio bieten eine integrierte Entwicklungsumgebung, die das Testen und Debugging von Apps erleichtert. Unter [Problembehandlung für die Aktivierung von Outlook-Add-Ins](http://msdn.microsoft.com/library/da5b56c9-7fd1-4556-8c0e-f489c4c9e9b6%28Office.15%29.aspx) und [Beispiel: Debug-Eigenschaften von Outlook-Elementen](http://msdn.microsoft.com/library/e3f14f07-cf35-4896-aab0-cb7625ca09b5%28Office.15%29.aspx) finden Sie nähere Informationen zur Problembehandlung und zum Debugging bei Mail-Apps.  <br/> |
 |Verfügbarkeit von Experten  <br/> |Entwickler, die erfolgreich Office-Add-Ins entwickeln können, sind relativ leicht zu finden. Die Plattform ist für die Entwicklung sowohl im professionellen als auch im privaten Bereich gedacht.  <br/> |
-|Verfügbare Informationen  <br/> |Informationen zur Entwicklung und Veröffentlichung von Office-Add-Ins finden Sie unter [Erstellen von Apps für Office und SharePoint](http://msdn.microsoft.com/en-us/office/apps/fp160950.aspx). Eine spezielle Dokumentation für Mail-Apps finden Sie unter [Outlook-Add-Ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx).  <br/> |
+|Verfügbare Informationen  <br/> |Informationen zur Entwicklung und Veröffentlichung von Office-Add-Ins finden Sie unter [Erstellen von Apps für Office und SharePoint](http://msdn.microsoft.com/de-DE/office/apps/fp160950.aspx). Eine spezielle Dokumentation für Mail-Apps finden Sie unter [Outlook-Add-Ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx).  <br/> |
 |Lizenzbestimmungen für Entwicklung und Bereitstellung  <br/> |Unter [Lizenzieren von Office- und SharePoint-Add-Ins](http://msdn.microsoft.com/library/3e0e8ff6-66d6-44ff-b0c2-59108ebd9181%28Office.15%29.aspx) finden Sie Informationen zum App-Lizenzframework für Office-Add-Ins.  <br/> |
    
 #### <a name="security-criteria"></a>Sicherheitsbezogene Kriterien
@@ -116,7 +116,7 @@ Die folgenden Tabellen enthalten die Bewertungskriterien für die Office-Add-Ins
 |:-----|:-----|
 |Anforderungen an die Serverplattform  <br/> |Das Postfach des Benutzers, für das eine Mail-App installiert wird, muss sich auf Exchange Server 2013 oder einer höheren Version befinden.  <br/> |
 |Anforderungen an die Clientplattform  <br/> |Damit eine Mail-App auf dem Outlook-Rich-Client ausgeführt wird, müssen Outlook 2013 und Internet Explorer 9 oder eine höhere Version dieser Anwendungen auf dem lokalen Computer installiert sein.  <br/> |
-|Methoden für die Bereitstellung  <br/> |Sie können Mail-Apps im Office Store oder einem Exchange-Katalog veröffentlichen, wodurch die App Benutzern auf diesem Exchange Server zur Verfügung gestellt wird. Administratoren oder Benutzer haben dann die Wahl, eine Mail-App vom Office Store oder Exchange-Katalog aus über das Exchange Admin Center (EAC) oder durch Ausführung von Windows PowerShell-Remote-Cmdlets zu installieren. Sie können das EAC über die Backstage-Ansicht von Outlook oder Outlook Web App aufrufen. Sie können sich alternativ auch direkt beim EAC für Ihr Postfach anmelden.  <br/> Weitere Informationen hierzu finden Sie unter [Bereitstellen und Installieren von Outlook-Add-Ins zu Testzwecken](http://msdn.microsoft.com/library/d6eea4c4-bb21-4f24-bcba-1eccbb4e12dd%28Office.15%29.aspx).  <br/> |
+|Bereitstellungsmethoden  <br/> |Sie können Mail-Apps im Office Store oder einem Exchange-Katalog veröffentlichen, wodurch die App Benutzern auf diesem Exchange Server zur Verfügung gestellt wird. Administratoren oder Benutzer haben dann die Wahl, eine Mail-App vom Office Store oder Exchange-Katalog aus über das Exchange Admin Center (EAC) oder durch Ausführung von Windows PowerShell-Remote-Cmdlets zu installieren. Sie können das EAC über die Backstage-Ansicht von Outlook oder Outlook Web App aufrufen. Sie können sich alternativ auch direkt beim EAC für Ihr Postfach anmelden.  <br/> Weitere Informationen hierzu finden Sie unter [Bereitstellen und Installieren von Outlook-Add-Ins zu Testzwecken](http://msdn.microsoft.com/library/d6eea4c4-bb21-4f24-bcba-1eccbb4e12dd%28Office.15%29.aspx).  <br/> |
 |Hinweise zur Bereitstellung  <br/> |Sobald Sie eine Mail-App in Outlook oder Outlook Web App installieren, ist die Mail-App für dieses Postfach auf beiden Outlook-Clients verfügbar.  <br/> |
    
 ### <a name="objective-evaluation-criteria-for-the-object-model-and-pia"></a>Objektive Bewertungskriterien für das Objektmodell und die PIA
@@ -125,7 +125,7 @@ Die folgenden Tabellen enthalten die Bewertungskriterien für die Office-Add-Ins
 Auf dem Clientcomputer ausgeführte Lösungen können das Outlook-Objektmodell oder die Outlook-PIA verwenden, um Outlook-Elemente wie Kontakte, Nachrichten, Kalenderelemente, Besprechungsanfragen und Aufgaben programmgesteuert aufzurufen. Anders als die MAPI können das Outlook-Objektmodell und die PIA bei Änderungen der Outlook-Benutzeroberfläche, wie einer Änderung des aktuellen Ordners oder der Anzeige eines Outlook-Inspectors, Ereignisbenachrichtigungen bereitstellen.
   
 > [!NOTE]
-> [!HINWEIS] Für eine Lösung für den Zugriff auf Daten, die in einem Microsoft Exchange-Postfach oder einer Persönlichen Ordner-Datei (PST) gespeichert sind, muss Outlook auf dem Clientcomputer installiert und konfiguriert sein, auf dem die Anwendung ausgeführt wird. > Das Outlook-Objektmodell und die PIA unterstützen die gleichen Funktionen zur Erweiterung von Outlook. Die PIA definiert verwaltete Schnittstellen, die dem COM-basierten Objektmodell zugeordnet sind und mit denen eine verwaltete Lösung interagieren kann. In den restlichen Erläuterungen in diesem Abschnitt beziehen sich die meisten der funktions-, sicherheits- und bereitstellungsbezogenen Kriterien gleichermaßen auf das Objektmodell wie auf die PIA. Weitere Informationen dazu, wie die PIA die Interoperabilität zwischen COM und dem .NET Framework erleichtert, finden Sie unter [Einführung in die Interoperabilität zwischen COM und .NET](http://msdn.microsoft.com/library/6b2d099a-ec6f-4099-aaf6-e61003fe5a32%28Office.15%29.aspx) und [Architektur der Outlook PIA](http://msdn.microsoft.com/library/89577d14-e6e2-4270-8e72-b0adba378667%28Office.15%29.aspx). 
+> Für eine Lösung für den Zugriff auf Daten, die in einem Microsoft Exchange-Postfach oder einer Persönlichen Ordner-Datei (PST) gespeichert sind, muss Outlook auf dem Clientcomputer installiert und konfiguriert sein, auf dem die Anwendung ausgeführt wird. > Das Outlook-Objektmodell und die PIA unterstützen die gleichen Funktionen zur Erweiterung von Outlook. Die PIA definiert verwaltete Schnittstellen, die dem COM-basierten Objektmodell zugeordnet sind und mit denen eine verwaltete Lösung interagieren kann. In den restlichen Erläuterungen in diesem Abschnitt beziehen sich die meisten der funktions-, sicherheits- und bereitstellungsbezogenen Kriterien gleichermaßen auf das Objektmodell wie auf die PIA. Weitere Informationen dazu, wie die PIA die Interoperabilität zwischen COM und dem .NET Framework erleichtert, finden Sie unter [Einführung in die Interoperabilität zwischen COM und .NET](http://msdn.microsoft.com/library/6b2d099a-ec6f-4099-aaf6-e61003fe5a32%28Office.15%29.aspx) und [Architektur der Outlook PIA](http://msdn.microsoft.com/library/89577d14-e6e2-4270-8e72-b0adba378667%28Office.15%29.aspx). 
   
 In den folgenden Tabellen sind Bewertungskriterien für das Outlook-Objektmodell und die Outlook-PIA aufgeführt.
   
@@ -151,7 +151,7 @@ In den folgenden Tabellen sind Bewertungskriterien für das Outlook-Objektmodell
 |Skriptfähigkeit  <br/> |Das Outlook-Objektmodell kann in Skripts verwendet werden.  <br/> |
 |Test- und Debuggingtools  <br/> |Wenn Sie das Outlook-Objektmodell oder die Outlook-PIA nutzen möchten, benötigen Sie keine besonderen Debuggingtools. Andererseits können Sie Visual Studio verwenden, um eine integrierte Entwicklungsumgebung bereitzustellen, die das Testen und Debuggen von Anwendungen erleichtert.  <br/> |
 |Verfügbarkeit von Experten  <br/> |Entwickler, die erfolgreich Anwendungen mithilfe des Outlook-Objektmodells oder der Outlook-PIA entwickeln können, sind relativ leicht zu finden. Das Outlook-Objektmodell und die Outlook-PIA sind für Add-Ins vorgesehen, die mit gängigen Entwicklungstools wie etwa Visual Studio erstellt werden. Diese Tools bieten Entwurfszeitumgebungen, die den Entwicklungsprozess vereinfachen.  <br/> |
-|Verfügbare Informationen  <br/> |Informationen zum Programmieren mithilfe des Outlook-Objektmodells finden Sie in Ressourcen sowohl von Microsoft als auch von Drittanbietern. Weitere Informationen zum Outlook-Objektmodell finden Sie in der [Outlook 2010-Entwicklerreferenz](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx). Weitere Informationen zur Outlook-PIA finden Sie in der [Referenz zur primären Interopassembly von Outlook 2010](http://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx). Beispiele für verwaltete Outlook-Lösungen, die mithilfe von Office-Entwicklungstools in Visual Studio entwickelt wurden, finden Sie unter [Outlook-Lösungen mit Visual Studio](http://msdn.microsoft.com/en-us/vsto/dd162450.aspx).  <br/> |
+|Verfügbare Informationen  <br/> |Informationen zum Programmieren mithilfe des Outlook-Objektmodells finden Sie in Ressourcen sowohl von Microsoft als auch von Drittanbietern. Weitere Informationen zum Outlook-Objektmodell finden Sie in der [Outlook 2010-Entwicklerreferenz](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx). Weitere Informationen zur Outlook-PIA finden Sie in der [Referenz zur primären Interopassembly von Outlook 2010](http://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx). Beispiele für verwaltete Outlook-Lösungen, die mithilfe von Office-Entwicklungstools in Visual Studio entwickelt wurden, finden Sie unter [Outlook-Lösungen mit Visual Studio](http://msdn.microsoft.com/de-DE/vsto/dd162450.aspx).  <br/> |
 |Lizenzbestimmungen für Entwicklung und Bereitstellung  <br/> |Lesen Sie in den Lizenzvereinbarungen für Ihr Exchange- und Microsoft Developer Network (MSDN)-Abonnement nach, welche zusätzlichen Lizenzen Sie u. U. für die Verwendung von Outlook und des Outlook-Objektmodells in Ihren Anwendungen benötigen.  <br/> |
    
 #### <a name="security-criteria"></a>Sicherheitsbezogene Kriterien
@@ -162,7 +162,7 @@ In den folgenden Tabellen sind Bewertungskriterien für das Outlook-Objektmodell
 |Setupberechtigungen  <br/> |Zum Installieren von Anwendungen, in denen das Outlook-Objektmodell oder die Outlook-PIA verwendet wird, benötigen Sie keine besonderen Berechtigungen. Allerdings benötigen Sie die Berechtigungen eines lokalen Administrators, um Office und Outlook zu installieren.  <br/> |
 |Laufzeitberechtigungen  <br/> |Zum Ausführen von Anwendungen, in denen das Outlook-Objektmodell oder die Outlook-PIA verwendet wird, benötigen Sie keine besonderen Berechtigungen.  <br/> |
 |Integrierte Sicherheitsfeatures  <br/> |Das Outlook-Objektmodell und die Outlook-PIA kommunizieren mit Exchange über die MAPI und mit Active Directory über die Active Directory Service Interfaces (ADSI). Anhand des aktuellen Sicherheitskontexts des Benutzers, der die Anwendung ausführt, wird ermittelt, auf welche Ressourcen dieser Code zugreifen kann. Standardmäßig gelten Add-Ins als vertrauenswürdig für den vollständigen Zugriff auf alle Objekte, Eigenschaften und Methoden im Outlook-Objektmodell oder in der PIA. IT-Administratoren können steuern, welche Add-Ins und Objekte auf das Outlook-Objektmodell oder die Outlook-PIA zugreifen können. Das Outlook-Objektmodell und die Outlook-PIA verhindern, dass Code, der außerhalb des Outlook-Prozesses ausgeführt wird, auf sichere Objekte und Methoden zugreifen kann.  <br/> |
-|Features zur Sicherheitsüberwachung  <br/> | Outlook überwacht die folgenden Kennzahlen eines Add-Ins, um zu ermitteln, ob das Add-In deaktiviert werden sollte:  <br/>  Start  <br/>  Herunterfahren  <br/>  Wechseln zwischen Ordnern  <br/>  Öffnen eines Elements  <br/> **Invoke**-Häufigkeit  <br/>  Administratoren können anhand von Gruppenrichtlinien Benutzereinstellungen überschreiben und steuern, welche Add-Ins auf den Computern der Benutzer ausgeführt werden.  <br/>  Weitere Informationen finden Sie unter [Leistungskriterien für die Aktivierung von Add-Ins](https://msdn.microsoft.com/en-us/library/office/4c6d44d2-238b-42d8-896b-51d513c9e14c#ol15WhatsNew_AddinDisabling).  <br/> |
+|Features zur Sicherheitsüberwachung  <br/> | Outlook überwacht die folgenden Kennzahlen eines Add-Ins, um zu ermitteln, ob das Add-In deaktiviert werden sollte:  <br/>  Systemstart  <br/>  Herunterfahren  <br/>  Wechseln zwischen Ordnern  <br/>  Öffnen eines Elements  <br/> **Invoke**-Häufigkeit  <br/>  Administratoren können anhand von Gruppenrichtlinien Benutzereinstellungen überschreiben und steuern, welche Add-Ins auf den Computern der Benutzer ausgeführt werden.  <br/>  Weitere Informationen finden Sie unter [Leistungskriterien für die Aktivierung von Add-Ins](https://msdn.microsoft.com/de-DE/library/office/4c6d44d2-238b-42d8-896b-51d513c9e14c#ol15WhatsNew_AddinDisabling).  <br/> |
    
 #### <a name="deployment-criteria"></a>Bereitstellungsbezogene Kriterien
 
@@ -170,7 +170,7 @@ In den folgenden Tabellen sind Bewertungskriterien für das Outlook-Objektmodell
 |:-----|:-----|
 |Anforderungen an die Serverplattform  <br/> |Das Outlook-Objektmodell und die Outlook-PIA sind clientseitige Technologien.  <br/> |
 |Anforderungen an die Clientplattform  <br/> |Für Anwendungen, in denen das Outlook-Objektmodell oder die Outlook-PIA zum Aufrufen von Exchange-Daten verwendet werden, muss Outlook auf dem lokalen Computer installiert sein.  <br/> |
-|Methoden für die Bereitstellung  <br/> |Anwendungen, in denen das Outlook-Objektmodell oder die Outlook-PIA verwendet werden, werden mithilfe herkömmlicher Software für die Anwendungsinstallation verteilt.  <br/> |
+|Bereitstellungsmethoden  <br/> |Anwendungen, in denen das Outlook-Objektmodell oder die Outlook-PIA verwendet werden, werden mithilfe herkömmlicher Software für die Anwendungsinstallation verteilt.  <br/> |
 |Hinweise zur Bereitstellung  <br/> |Da Outlook nicht auf dem Exchange Server installiert werden soll, können Anwendungen, in denen das Outlook-Objektmodell oder die Outlook-PIA verwendet werden, nicht auf dem Exchange Server ausgeführt werden.  <br/> |
    
 ### <a name="objective-evaluation-criteria-for-mapi"></a>Objektive Bewertungskriterien für die MAPI
@@ -179,7 +179,7 @@ In den folgenden Tabellen sind Bewertungskriterien für das Outlook-Objektmodell
 Sie können die MAPI verwenden, um Elemente in öffentlichen und privaten Speichern abzurufen und auf die Eigenschaften zuzugreifen, die mit jedem Element gespeichert sind. Alle Versionen von Outlook verwenden die MAPI. Sie können Clients erstellen, welche die MAPI verwenden, ebenso wie MAPI-Server und MAPI-Formularhandler. Die Informationen in diesem Abschnitt beziehen sich nur auf MAPI-Clientanwendungen.
   
 > [!NOTE]
-> [!HINWEIS] Die MAPI ist ein ausgereifter Mechanismus zum Abrufen von Informationen in Exchange oder in einer Persönlichen Ordner-Datei (PST), und die MAPI bietet einige Funktionen, die in keiner anderen API verfügbar sind. Die MAPI ist jedoch nicht gut geeignet für die Verwendung außerhalb eines Intranets, hält während der MAPI-Sitzung eine offene Verbindung und kann schwer zu erlernen sein. Die MAPI erzwingt keine Outlook-Geschäftslogik, sodass Sie besonders darauf achten müssen, dass Outlook-Geschäftslogik aufrechterhalten wird. 
+> Die MAPI ist ein ausgereifter Mechanismus zum Abrufen von Informationen in Exchange oder in einer Persönlichen Ordner-Datei (PST), und die MAPI bietet einige Funktionen, die in keiner anderen API verfügbar sind. Die MAPI ist jedoch nicht gut geeignet für die Verwendung außerhalb eines Intranets, hält während der MAPI-Sitzung eine offene Verbindung und kann schwer zu erlernen sein. Die MAPI erzwingt keine Outlook-Geschäftslogik, sodass Sie besonders darauf achten müssen, dass Outlook-Geschäftslogik aufrechterhalten wird. 
   
 In den folgenden Tabellen sind Bewertungskriterien für die MAPI aufgeführt.
   
@@ -223,7 +223,7 @@ In den folgenden Tabellen sind Bewertungskriterien für die MAPI aufgeführt.
 |:-----|:-----|
 |Anforderungen an die Serverplattform  <br/> |Der Exchange-Server, auf dem Benutzerdaten für die Benutzer der MAPI-Clientanwendung gespeichert werden, muss korrekt für den Zugriff durch MAPI-Clients konfiguriert sein.  <br/> |
 |Anforderungen an die Clientplattform  <br/> |Das Installationsprogramm der Clientanwendung sollte mithilfe der Datei "Mapisvc.inf" sicherstellen, dass die richtige MAPI-Version auf dem Computer vorhanden und korrekt konfiguriert ist.  <br/> |
-|Methoden für die Bereitstellung  <br/> |Anwendungen, in denen die MAPI verwendet wird, können mithilfe von standardmäßigen Softwareverteilungstechnologien auf Clientcomputern bereitgestellt werden.  <br/> |
+|Bereitstellungsmethoden  <br/> |Anwendungen, in denen die MAPI verwendet wird, können mithilfe von standardmäßigen Softwareverteilungstechnologien auf Clientcomputern bereitgestellt werden.  <br/> |
 |Hinweise zur Bereitstellung  <br/> |Das Installationsprogramm sollte sicherstellen, dass die korrekte MAPI-Version verfügbar ist.  <br/> |
    
 ## <a name="decision-factors-for-the-apps-for-office-platform"></a>Argumente für die Apps für Office-Plattform
@@ -273,101 +273,101 @@ Weitere Informationen zu Szenarien, die vom Objektmodell und der PIA unterstütz
 Grundsätzlich sollten Sie das Objektmodell oder die PIA verwenden, wenn die betreffende Lösung die Outlook-Benutzeroberfläche anpasst oder die Geschäftslogik von Outlook verwendet. In Abbildung 2 werden die wichtigsten Basisszenarien gezeigt, für die Outlook-Lösungen das Objektmodell oder die PIA verwenden. 
   
 > [!NOTE]
-> [!HINWEIS] Weitere Informationen zu den Szenarien erhalten Sie, indem Sie auf die betreffenden Kästchen in den folgenden Abbildungen klicken. 
+> Weitere Informationen zu den Szenarien erhalten Sie, indem Sie auf die betreffenden Kästchen in den folgenden Abbildungen klicken. 
   
-Abbildung 2: Die wichtigsten Basisszenarien, die vom Outlook-Objektmodell oder der Outlook-PIA unterstützt werden
+Abbildung 2. Wichtige, grundlegende Szenarien werden von Outlook-Objektmodellen oder PIA unterstützt
   
 [![Anpassen der Outlook-Benutzeroberfläche](media/odc_ol15_ta_SelectingTech_Fig2-1.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizeTheOutlookInterface)![Verwenden von Outlook-Elementen](media/odc_ol15_ta_SelectingTech_Fig2-2.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizeTheOutlookInterface)[![Verwenden von Outlook-Elementen](media/odc_ol15_ta_SelectingTech_Fig2-2.gif)
   
 ](http://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)[![Anpassen von Elementeigenschaften, Feldern und Formularen](media/odc_ol15_ta_SelectingTech_Fig2-3.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemPropFieldsForms)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemPropFieldsForms)
   
 [![Verarbeiten von Outlook-Ereignissen](media/odc_ol15_ta_SelectingTech_Fig2-4.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Events)![Automatisieren von Outlook](media/odc_ol15_ta_SelectingTech_Fig2-5.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Events)[![Automatisieren von Outlook](media/odc_ol15_ta_SelectingTech_Fig2-5.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AutomateOutlook)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AutomateOutlook)
   
 Wenn Ihre Outlook-Lösung eines der in Abbildung 3 gezeigten Szenarien unterstützt und mit Outlook 2007 oder einer späteren Version ausgeführt werden soll, nicht jedoch mit einer früheren Version, können Sie auch das Objektmodell oder die PIA verwenden. In Abbildung 3 werden die Hauptobjekte oder -mitglieder gezeigt, mit denen Sie im Outlook-Objektmodell die einzelnen Szenarien erweitern können (ausgenommen die [IDTExtensibility2](https://msdn.microsoft.com/library/Extensibility.IDTExtensibility2.aspx) -Schnittstelle im Visual Studio-Automatisierungsobjektmodell und die [IRibbonExtensibility](http://msdn.microsoft.com/library/b27a7576-b6f5-031e-e307-78ef5f8507e0%28Office.15%29.aspx)-Schnittstelle im Office-Objektmodell, die Sie in das Outlook-Objektmodell integrieren können). 
   
-Abbildung 3: Zusätzliche Szenarien, die vom Objektmodel oder der PIA seit Outlook 2007 unterstützt werden
+Abbildung 3. Zusätzliche Szenarien werden vom Outlook-Objektmodell oder PIA seit Outlook 2007 unterstützt
   
 [![Anpassen der Outlook-Benutzeroberfläche](media/odc_ol15_ta_SelectingAPI_Fig3-1.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizeTheOutlookInterface)![Anpassen von Formularbereichen](media/odc_ol15_ta_SelectingTech_Fig3-2.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizeTheOutlookInterface)[![Anpassen von Formularbereichen](media/odc_ol15_ta_SelectingTech_Fig3-2.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomFormRegions)![Verwenden von PropertyAccessor zum Zugreifen auf Eigenschaften](media/odc_ol15_ta_SelectingAPI_Fig3-3.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomFormRegions)[![Verwenden von PropertyAccessor für den Zugriff auf Eigenschaften](media/odc_ol15_ta_SelectingAPI_Fig3-3.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizingProperties)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizingProperties)
   
 [![Aufzählen und Anzeigen von Elementen in einem Ordner](media/odc_ol15_ta_SelectingAPI_Fig3-4.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Enumerating)![Kennzeichnen von Elementen als Aufgaben](media/odc_ol15_ta_SelectingAPI_Fig3-5.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Enumerating)[![Kennzeichnen von Elementen als Aufgaben](media/odc_ol15_ta_SelectingAPI_Fig3-5.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemsFlag)![Freigeben von Kalendern, RSS-Feeds und Ordnern](media/odc_ol15_ta_SelectingAPI_Fig3-6.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemsFlag)[![Freigeben von Kalendern, RSS-Feeds und Ordnern](media/odc_ol15_ta_SelectingAPI_Fig3-6.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Sharing)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Sharing)
   
 [![Verwalten von Anlagen](media/odc_ol15_ta_SelectingAPI_Fig3-7.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Attachments)![Verwalten von Regeln, Zeitzonen und Ansichten](media/odc_ol15_ta_SelectingAPI_Fig3-8.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Attachments)[![Verwalten von Regeln, Zeitzonen und Ansichten](media/odc_ol15_ta_SelectingAPI_Fig3-8.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Misc)![Hinzufügen oder Entfernen einer Kategorie](media/odc_ol15_ta_SelectingAPI_Fig3-9.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Misc)[![Hinzufügen oder Entfernen einer Kategorie](media/odc_ol15_ta_SelectingAPI_Fig3-9.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Categories)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Categories)
   
 [![Detaillierte Informationen für ein Konto abrufen](media/odc_ol15_ta_SelectingAPI_Fig3-10.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_PrimaryAccount)![Verwalten von Exchange-Verteilerlisten und -Benutzern](media/odc_ol15_ta_SelectingAPI_Fig3-11.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_PrimaryAccount)[![Verwalten von Exchange-Verteilerlisten und -Benutzern](media/odc_ol15_ta_SelectingAPI_Fig3-11.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AddressBook)![Speichern privater Daten für Lösungen](media/odc_ol15_ta_SelectingAPI_Fig3-12.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AddressBook)[![Einspeichern privater Daten für Lösungen](media/odc_ol15_ta_SelectingAPI_Fig3-12.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_StoringData)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_StoringData)
   
 Wenn Ihre Outlook-Lösung mit Outlook 2010 und nicht mit früheren Versionen ausgeführt werden soll, können Sie das Objektmodell oder die PIA verwenden, um die in Abbildung 4 gezeigten Szenarien zu unterstützen. Abbildung 4 gibt die Hauptobjekte oder -mitglieder an, mit denen Sie im Outlook-Objektmodell die einzelnen Szenarien erweitern können (ausgenommen die Schnittstellen [IRibbonControl](http://msdn.microsoft.com/library/63aef709-e1d3-b1a6-76af-b568ad0e69ae%28Office.15%29.aspx), [IRibbonExtensibility](http://msdn.microsoft.com/library/b27a7576-b6f5-031e-e307-78ef5f8507e0%28Office.15%29.aspx) und [IRibbonUI](http://msdn.microsoft.com/library/d323aa21-de74-e821-c914-db71ef3b9c5e%28Office.15%29.aspx) im Office-Objektmodell, die Sie in das Outlook-Objektmodell integrieren können). 
   
-Abbildung 4: Weitere Szenarien, die vom Objektmodell oder der PIA seit Outlook 2010 unterstützt werden
+Abbildung 4. Weitere Szenarien werden vom Outlook-Objektmodell oder PIA seit Outlook 2010 unterstützt
   
 [![Anpassen der Outlook 2010-Benutzeroberfläche](media/odc_ol15_ta_SelectingAPI_Fig4-1.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizingUIOutlook2010)![Verwalten von Elementen in einer Unterhaltung](media/odc_ol15_ta_SelectingAPI_Fig4-2.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_CustomizingUIOutlook2010)[![Verwalten von Elementen in einer Unterhaltung](media/odc_ol15_ta_SelectingAPI_Fig4-2.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Conversations)![Verwalten der Elementeauswahl in einem Explorer](media/odc_ol15_ta_SelectingAPI_Fig4-3.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Conversations)[![Verwalten der Elementeauswahl in einem Explorer](media/odc_ol15_ta_SelectingAPI_Fig4-3.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemSelection)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ItemSelection)
   
 [![Verwalten der Anlagenauswahl in einem Inspector](media/odc_ol15_ta_SelectingAPI_Fig4-4.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AttachmentSelection)![Unterstützen mehrerer Exchange-Konten in einem Profil](media/odc_ol15_ta_SelectingAPI_Fig4-5.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_AttachmentSelection)[![Unterstützen mehrerer Exchange-Konten in einem Profil](media/odc_ol15_ta_SelectingAPI_Fig4-5.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_MultipleAccounts)![Erstellen einer Kontaktkarte für einen Adresseneintrag](media/odc_ol15_ta_SelectingAPI_Fig4-6.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_MultipleAccounts)[![Erstellen einer Kontaktkarte für einen Adresseintrag](media/odc_ol15_ta_SelectingAPI_Fig4-6.gif)
   
 ](http://msdn.microsoft.com/library/d050e0e3-3c0d-bd01-f008-2628056625d1%28Office.15%29.aspx)
   
 [![Organisieren lösungsspezifischer Ordner](media/odc_ol15_ta_SelectingAPI_Fig4-7.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Folders)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_Folders)
   
 Wenn Ihre Outlook-Lösung mit Outlook 2013 und nicht mit früheren Versionen ausgeführt werden soll, können Sie das Objektmodell oder die PIA verwenden, um die in Abbildung 5 gezeigten Szenarien zu unterstützen.
   
-Abbildung 5: Zusätzliche Szenarien, die vom Objektmodel oder der PIA seit Outlook 2013 unterstützt werden
+Abbildung 5. Zusätzliche Szenarien werden vom Outlook-Objektmodell oder PIA seit Outlook 2013 unterstützt
   
 [![Anzeigeansicht für alle Kontakte im aktuellen Ordner](media/odc_ol15_ta_SelectingAPI_Fig5-1.gif)
   
 ](http://msdn.microsoft.com/library/7b569709-5da8-a950-a0fb-9d64b520a21b%28Office.15%29.aspx)[![Inlineantwort im Lesebereich](media/odc_ol15_ta_SelectingAPI_Fig5-2.gif)
   
-] [(selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_InlineResponse)![Dialog zum Überprüfen von Adresse oder vollständigem Namen für Kontakt anzeigen](media/odc_ol15_ta_SelectingAPI_Fig5-3.gif)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_InlineResponse)[![Anzeigen des Kontrollkästchens Adresse oder vollständiger Name für Kontakt](media/odc_ol15_ta_SelectingAPI_Fig5-3.gif)
   
-] (selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ContactCheckDialogs)
+](selecting-an-api-or-technology-for-developing-solutions-for-outlook.md#OLSelectAPI_ContactCheckDialogs)
   
-[![Ermitteln von Leseelementeigenschaften abgeschlossen](media/odc_ol15_ta_SelectingAPI_Fig5-4.gif)
+[![Ermittlung von Leseelementeigenschaften ist abgeschlossen](media/odc_ol15_ta_SelectingAPI_Fig5-4.gif)
   
 ](http://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
   
-## <a name="decision-factors-for-mapi"></a>Argumente für die MAPI
+## <a name="decision-factors-for-mapi"></a>Entscheidungsfaktoren für MAPI
 <a name="OLSelectAPI_FactorsMAPI"> </a>
 
 Grundsätzlich verwenden Sie die MAPI, um auf Daten auf einem MAPI-basierten Server wie etwa dem Microsoft Exchange-Server zuzugreifen und Aufgaben wie die folgenden auszuführen:
@@ -421,7 +421,7 @@ Weitere Informationen zu den Hilfs-APIs finden Sie im Abschnitt [Weitere Ressour
 <a name="OLSelectAPI_InOrOut"> </a>
 
 > [!NOTE]
-> [!HINWEIS] Die Erläuterungen zur Automatisierung von Outlook in diesem und dem nächsten Abschnitt gehen über den Anwendungsbereich von Office-Add-Ins hinaus. Diese sind darauf ausgelegt, die Funktionen des Office-Clients oder der Office-Webanwendung zu erweitern, jedoch nicht zu automatisieren. 
+> Die Erläuterungen zur Automatisierung von Outlook in diesem und dem nächsten Abschnitt gehen über den Anwendungsbereich von Office-Add-Ins hinaus. Diese sind darauf ausgelegt, die Funktionen des Office-Clients oder der Office-Webanwendung zu erweitern, jedoch nicht zu automatisieren. 
   
 Outlook unterstützt die Automatisierung, indem es Add-Ins verwendet, die im gleichen Vordergrundprozess wie der Outlook-Prozess ausgeführt werden, und eigenständige Lösungen, die in einem eigenen, separaten Prozess außerhalb des Outlook-Prozesses ausgeführt werden. Verwenden Sie für die Interaktion mit Outlook über das Objektmodell, PIA oder MAPI und - was weniger häufig vorkommt - über eine Hilfs-API (wie etwa [HrProcessConvActionForSentItem](auxiliary/hrprocessconvactionforsentitem.md)) grundsätzlich ein Add-In. Verwenden Sie eine prozessexterne Lösung nur, wenn es notwendig ist (z. B. wenn Sie eine MAPI-Clientanwendung schreiben, die mithilfe der Datei "Tzmovelib.dll" Outlook-Kalendern für Kunden eine neue Basis zuweist, oder wenn Sie eine große Menge von Elementen in einem Ordner auflisten und die Eigenschaften der Elemente in einem Hintergrundthread ändern, um die Leistung zu optimieren). 
   
@@ -486,12 +486,12 @@ Wenn Sie sich dafür interessieren, für die Wetterleiste einen Wetterdatendiens
   
 Nachdem Sie die für Ihre Lösung zu verwendenden APIs oder Technologien ausgewählt haben, können Sie sich im Abschnitt [Weitere Ressourcen: wichtige Referenzen, Ressourcen und Codebeispiele](#OLSelectAPI_AdditionalResourcesRefCode) über zusätzliche Dokumentation und Beispielcode informieren. 
   
-## <a name="see-also-office-add-ins"></a>Siehe auch: Office-Add-ins
+## <a name="see-also-office-add-ins"></a>Siehe auch: Office Add-ins
 <a name="OLSelectAPI_AdditionalResourcesApps"> </a>
 
 [Office-Add-Ins-Plattformübersicht](http://msdn.microsoft.com/library/e64de870-ce22-4331-92e7-76d35279bf91%28Office.15%29.aspx) bietet eine gute Einführung in Office-Add-Ins, einschließlich der Architektur und des Entwicklungslebenszyklus. 
   
-Unter [Outlook-Add-Ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx) finden Sie eine ausführliche Übersicht über Ressourcen zur Entwicklung von Mail-Apps. 
+Schauen Sie unter [Outlook-add-ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx), um eine detaillierte Übersicht über die Ressourcen zur Entwicklung von e-Mail-apps zu erhalten. 
   
 ## <a name="see-also-object-model-and-pia"></a>Siehe auch: Objektmodell und PIA
 <a name="OLSelectAPI_AdditionalResourcesObjModelPIA"> </a>
@@ -510,20 +510,20 @@ In den folgenden Ressourcen finden Sie weitere Informationen zur Verwendung des 
 
 - [Account](http://msdn.microsoft.com/library/f624438c-4e45-2822-18b6-bfe8074a33c0%28Office.15%29.aspx)-Objekt 
     
-- [Verwenden mehrere Konten für das gleiche Profil in Outlook](http://msdn.microsoft.com/library/9e06e076-d62a-37c8-4502-709da5a0b104%28Office.15%29.aspx)
+- [Verwenden von mehreren Konten für das gleiche Profil in Outlook](http://msdn.microsoft.com/library/9e06e076-d62a-37c8-4502-709da5a0b104%28Office.15%29.aspx)
     
 - [Abrufen von Informationen für mehrere Konten](http://msdn.microsoft.com/library/af587ee2-429a-252f-ecb6-2f058b9a37a8%28Office.15%29.aspx)
     
-- [Manipulating Multiple Exchange Accounts in Outlook 2010](http://msdn.microsoft.com/library/b5a80da9-102d-4617-8a06-49ded01a237a%28Office.15%29.aspx)
+- [Bearbeiten mehrerer Exchange-Konten in Outlook 2010](http://msdn.microsoft.com/library/b5a80da9-102d-4617-8a06-49ded01a237a%28Office.15%29.aspx)
     
 ### <a name="address-book-and-exchange-users"></a>Adressbuch und Exchange-Benutzer
 <a name="OLSelectAPI_AddressBook"> </a>
 
 - [Anzeigen von Namen aus dem Adressbuch](http://msdn.microsoft.com/library/32e7179c-8133-ee20-ecf6-52c9275f205f%28Office.15%29.aspx)
     
-- [Zugreifen auf Exchange-Benutzer- oder -Verteilerlisteninformationen aus dem Adressbuch](http://msdn.microsoft.com/library/077a8666-09c5-e641-0b9b-7d83133d931f%28Office.15%29.aspx)
+- [Zugriff auf Informationen zu einem Exchange-Benutzer oder zu Verteilerlisten aus dem Adressbuch](http://msdn.microsoft.com/library/077a8666-09c5-e641-0b9b-7d83133d931f%28Office.15%29.aspx)
     
-- [Auflisten der Gruppen, zu denen „Mein Vorgesetzter“ gehört](http://msdn.microsoft.com/library/2f0ff92c-e026-4f62-c039-fbda9aaf1546%28Office.15%29.aspx)
+- [Auflisten der Gruppen, zu denen Mein Vorgesetzter gehört](http://msdn.microsoft.com/library/2f0ff92c-e026-4f62-c039-fbda9aaf1546%28Office.15%29.aspx)
     
 - [Auflisten des Namens und des Bürostandorts jedes Vorgesetzten, der zu einer Exchange-Verteilerliste gehört ](http://msdn.microsoft.com/library/abc26854-62db-be7f-4025-46acbcb42541%28Office.15%29.aspx)
     
@@ -537,12 +537,12 @@ In den folgenden Ressourcen finden Sie weitere Informationen zur Verwendung des 
     
 - [SelectNamesDialog](http://msdn.microsoft.com/library/1522736a-3cad-9f1c-4da9-b52a3a01731c%28Office.15%29.aspx)-Objekt 
     
-### <a name="attachments"></a>Anhänge
+### <a name="attachments"></a>Anlagen
 <a name="OLSelectAPI_Attachments"> </a>
 
 - [Anhängen einer Datei an eine E-Mail-Nachricht](http://msdn.microsoft.com/library/1d94629b-e713-92cb-32de-c8910612e861%28Office.15%29.aspx)
     
-- [Durch Outlook 2010 eingeschränkte Anlagendateitypen](http://technet.microsoft.com/en-us/library/cc179163.aspx)
+- [Anlagendateitypen eingeschränkt von Outlook 2010](http://technet.microsoft.com/de-DE/library/cc179163.aspx)
     
 - [Attachment](http://msdn.microsoft.com/library/3e11582b-ac90-0948-bc37-506570bb287b%28Office.15%29.aspx)-Objekt 
     
@@ -580,17 +580,17 @@ In den folgenden Ressourcen finden Sie weitere Informationen zur Verwendung des 
     
 - [Einführung in die Interoperabilität zwischen COM und .NET](http://msdn.microsoft.com/library/6b2d099a-ec6f-4099-aaf6-e61003fe5a32%28Office.15%29.aspx)
     
-- [Zweck der Outlook-PIA](http://msdn.microsoft.com/library/5cc9085e-7c97-4698-8cb9-e33e427c02e7%28Office.15%29.aspx)
+- [Gründe für die Verwendung des Outlook-PIA](http://msdn.microsoft.com/library/5cc9085e-7c97-4698-8cb9-e33e427c02e7%28Office.15%29.aspx)
     
 - [Bewährte Methoden beim Entwickeln von verwalteten Outlook-Add-Ins](http://msdn.microsoft.com/library/a03246f6-2ca5-4fcb-8e63-a11cfbc8d9a0%28Office.15%29.aspx)
     
-- [Abrufen von und Anmelden bei einer Instanz von Outlook](http://msdn.microsoft.com/library/ef369364-6500-2759-3ef4-ed4411112e96%28Office.15%29.aspx)
+- [Abrufen und Anmelden bei einer Instanz von Outlook](http://msdn.microsoft.com/library/ef369364-6500-2759-3ef4-ed4411112e96%28Office.15%29.aspx)
     
-- [Automatisieren von Outlook mithilfe einer Visual Basic-Anwendung](http://msdn.microsoft.com/library/623f91af-cd50-1ff0-9519-5a39cbcf5d18%28Office.15%29.aspx)
+- [Automatisieren von Outlook aus einer Visual Basic-Anwendung](http://msdn.microsoft.com/library/623f91af-cd50-1ff0-9519-5a39cbcf5d18%28Office.15%29.aspx)
     
 - [Automatisieren von Outlook aus anderen Office-Anwendungen](http://msdn.microsoft.com/library/d3e44f80-df67-2d28-94dc-14d7a8c8c26c%28Office.15%29.aspx)
     
-### <a name="categories"></a>Kategorien
+### <a name="categories"></a>Categories
 <a name="OLSelectAPI_Categories"> </a>
 
 - [Kategorisieren von Outlook-Elementen](http://msdn.microsoft.com/library/e8cfb450-b8b0-bee6-fdf0-d0a92bf9af56%28Office.15%29.aspx)
@@ -621,14 +621,14 @@ In den folgenden Ressourcen finden Sie weitere Informationen zur Verwendung des 
     
 - **ConversationID**-Eigenschaft pro Elementobjekt 
     
-### <a name="events"></a>Ereignisse
+### <a name="events"></a>Events
 <a name="OLSelectAPI_Events"> </a>
 
 - [Arbeiten mit Outlook-Ereignissen](http://msdn.microsoft.com/library/514f8f31-8047-2a9f-cbac-d0a23218f49c%28Office.15%29.aspx)
     
-- [Implementieren eines Wrappers für Inspektoren und Nachverfolgen Elementebene Ereignisse in jedem Inspektor](http://msdn.microsoft.com/library/8021dd2b-c36c-492b-b281-783e85140ad8%28Office.15%29.aspx)
+- [Implementieren eines Wrappers für Prüfungen und Nachverfolgung von Ereignissen auf Elementebene in jedem Inspektor](http://msdn.microsoft.com/library/8021dd2b-c36c-492b-b281-783e85140ad8%28Office.15%29.aspx)
     
-### <a name="explorer-inline-response"></a>Explorer: Inlineantwort
+### <a name="explorer-inline-response"></a>Explorer: Inline-Antwort
 <a name="OLSelectAPI_InlineResponse"> </a>
 
 - [Explorer.ActiveInlineResponse](http://msdn.microsoft.com/library/fc38314d-7cff-44f4-9151-6129f918a721%28Office.15%29.aspx)-Eigenschaft 
@@ -705,7 +705,7 @@ Siehe hierzu die folgenden aufgabenbezogenen Eigenschaften in einigen Elementobj
 
 - [Anpassen und Freigeben von Visitenkarten](http://msdn.microsoft.com/library/d29fd962-ea5f-040d-e9af-e8ab70595832%28Office.15%29.aspx)
     
-- [Verwaltungsregeln im Objektmodell von Outlook](http://msdn.microsoft.com/library/05ddd643-e9bd-a37d-b680-b8519960a5f6%28Office.15%29.aspx)
+- [Verwalten von Regeln im Outlook-Objektmodell](http://msdn.microsoft.com/library/05ddd643-e9bd-a37d-b680-b8519960a5f6%28Office.15%29.aspx)
     
 - [Erstellen einer Regel zum Verschieben bestimmter E-Mails in einen Ordner](http://msdn.microsoft.com/library/e72fa307-8224-c2d2-1318-a18cd8e9f22f%28Office.15%29.aspx)
     
@@ -728,7 +728,7 @@ Siehe hierzu die folgenden aufgabenbezogenen Eigenschaften in einigen Elementobj
     
 - [Änderungen beim Herunterfahren für Outlook 2010](http://msdn.microsoft.com/library/1b154d46-8d13-4c65-91e3-180b22603d03%28Office.15%29.aspx)
     
-- [Durch Outlook 2010 eingeschränkte Anlagendateitypen](http://technet.microsoft.com/en-us/library/cc179163.aspx)
+- [Durch Outlook 2010 eingeschränkte Anlagendateitypen](http://technet.microsoft.com/de-DE/library/cc179163.aspx)
     
 - [Application Shutdown Changes in Outlook 2007 SP2](http://msdn.microsoft.com/library/795a8237-7804-4da4-9d04-2bb663d300d9%28Office.15%29.aspx)
     
@@ -766,7 +766,7 @@ Siehe hierzu die folgenden aufgabenbezogenen Eigenschaften in einigen Elementobj
     
 - [Erstellen eines Formularbereichs](http://msdn.microsoft.com/library/695b95a5-c795-cb4a-8d35-ba12b0007b1f%28Office.15%29.aspx)
     
-- [Exemplarische Vorgehensweise: Hinzufügen eines Formularbereichs zu einer bereits vorhandenen Seite in einem Formular](http://msdn.microsoft.com/library/3c988dac-f171-966d-cf9a-17139353d604%28Office.15%29.aspx)
+- [Exemplarische Vorgehensweise: Hinzufügen eines Formularbereichs zu einer vorhandenen Seite in einem Formular](http://msdn.microsoft.com/library/3c988dac-f171-966d-cf9a-17139353d604%28Office.15%29.aspx)
     
 - [Building an Outlook 2007 Form Region with a Managed Add-In](http://msdn.microsoft.com/library/cc8503c2-9e17-4718-a757-9f0b7d42f0ee%28Office.15%29.aspx)
     
@@ -823,9 +823,9 @@ Siehe hierzu die folgenden aufgabenbezogenen Eigenschaften in einigen Elementobj
     
 - [Adding Solution-Specific Folders to the Solutions Module in Outlook 2010](http://msdn.microsoft.com/library/9709af57-1577-4497-8c9c-3d239353e2ed%28Office.15%29.aspx)
     
-- [SolutionsModule](http://msdn.microsoft.com/library/4597765e-a95d-bf07-2ac4-103218ebc696%28Office.15%29.aspx)-Objekt 
+- [SolutionsModule](http://msdn.microsoft.com/library/4597765e-a95d-bf07-2ac4-103218ebc696%28Office.15%29.aspx) Objekt 
     
-## <a name="see-also-auxiliary-apis"></a>Siehe auch: Hilfs-APIs
+## <a name="see-also-auxiliary-apis"></a>Siehe auch: AUX-APIs
 <a name="OLSelectAPI_AdditionalResourcesAuxAPIs"> </a>
 
 In den folgenden Ressourcen finden Sie weitere Informationen zu den Outlook-Hilfs-APIs.
@@ -842,11 +842,11 @@ In den folgenden Ressourcen finden Sie weitere Informationen zu den Outlook-Hilf
 
 - [HrProcessConvActionForSentItem](auxiliary/hrprocessconvactionforsentitem.md)
     
-### <a name="contact-pictures"></a>Kontaktbilder
+### <a name="contact-pictures"></a>Kontakt-Bilder
 
-- [Gibt an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) anzeigen](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Geben Sie an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) angezeigt werden soll](https://msdn.microsoft.com/de-DE/library/office/gg262879.aspx)
     
-### <a name="data-degradation"></a>Verschlechterung der Datenqualität
+### <a name="data-degradation"></a>Daten-Beeinträchtigung
 
 - [Über der Datenschicht Abbau API](auxiliary/about-the-data-degradation-layer-api.md)
     
@@ -854,29 +854,29 @@ In den folgenden Ressourcen finden Sie weitere Informationen zu den Outlook-Hilf
     
 ### <a name="freebusy-status"></a>Frei/Gebucht-Status
 
-- [Über die Frei/Gebucht-API](auxiliary/about-the-free-busy-api.md)
+- [Informationen zur Frei/Gebucht-API](auxiliary/about-the-free-busy-api.md)
     
-- [Verwenden Sie relative Zeit Zugriff auf Frei/Gebucht-Daten](auxiliary/how-to-use-relative-time-to-access-free-busy-data.md)
+- [Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten](auxiliary/how-to-use-relative-time-to-access-free-busy-data.md)
     
-- [Frei/Gebucht-API-Referenz](auxiliary/free-busy-api-reference.md)
+- [Referenz zur Frei/Gebucht-API](auxiliary/free-busy-api-reference.md)
     
-### <a name="item-currency"></a>Aktualität von Elementen
+### <a name="item-currency"></a>Elements-Währung
 
-- [Bestimmen Sie, ob ein Outlook-Element geändert, jedoch nicht gespeichert (Outlook-Zusatzreferenz) wurde](auxiliary/how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
+- [Bestimmen Sie, ob ein Outlook-Element geändert, aber nicht gespeichert (Outlook 2013 Hilfs-Referenz) wurde](auxiliary/how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
-### <a name="rebase-calendars"></a>Zuweisen einer neuen Basis zu Kalendern
+### <a name="rebase-calendars"></a>Verwalten von Kalendern
 
 - [Zum neuen Basisadressen Kalender programmgesteuert Sommerzeit](auxiliary/about-rebasing-calendars-programmatically-for-daylight-saving-time.md)
     
-- [Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen](auxiliary/about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [Informationen zum Beibehalten von TZDEFINITION in einem Stream, um eine binäre Eigenschaft zu übernehmen](auxiliary/about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
     
-- [Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur](auxiliary/how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
+- [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur](auxiliary/how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
     
-- [Analysieren Sie einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur](auxiliary/how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
+- [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur](auxiliary/how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
     
-- [Lesen Sie Zeitzone Eigenschaften, ausgehend von einem Termin](auxiliary/how-to-read-time-zone-properties-from-an-appointment.md)
+- [Lesen von Zeitzoneneigenschaften aus einem Termin](auxiliary/how-to-read-time-zone-properties-from-an-appointment.md)
     
-## <a name="see-also-primary-references-resources-and-code-samples"></a>Siehe auch: wichtige Referenzen, Ressourcen und Codebeispiele
+## <a name="see-also-primary-references-resources-and-code-samples"></a>Siehe auch: Primäre Verweise, Ressourcen und -Codebeispiele
 <a name="OLSelectAPI_AdditionalResourcesRefCode"> </a>
 
 In den folgenden Ressourcen finden Sie weitere Informationen zu den wichtigsten Outlook-Referenzen, -Ressourcen und -Codebeispielen.
@@ -891,11 +891,11 @@ In den folgenden Ressourcen finden Sie weitere Informationen zu den wichtigsten 
     
 - [MAPI-Referenz für Outlook](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)
     
-- [Outlook 2013-Hilfsreferenz](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)
+- [Zusätzliche Referenz für Outlook 2013](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)
     
-- [Referenz zum Outlook Connector für soziale Netzwerke provider](social-connector/outlook-social-connector-provider-reference.md)
+- [Outlook Connector für soziale Netzwerke – Anbieterverweis](social-connector/outlook-social-connector-provider-reference.md)
     
-- [Erweitern der Wetterleiste in Outlook](weather/extending-the-weather-bar-in-outlook.md)
+- [Erweiterung der Wetterleiste in Outlook](weather/extending-the-weather-bar-in-outlook.md)
     
 - [Outlook Weather Information XML Schema](weather/outlook-weather-information-xml-schema.md)
     
