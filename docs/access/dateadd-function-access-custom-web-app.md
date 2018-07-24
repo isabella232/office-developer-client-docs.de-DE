@@ -1,5 +1,5 @@
 ---
-title: DateAdd-Funktion (Access benutzerdefinierte Web app)
+title: DateAdd-Funktion (benutzerdefinierte Access-Web-App)
 manager: kelbow
 ms.date: 09/05/2017
 ms.audience: Developer
@@ -8,31 +8,31 @@ ms.assetid: 7174c585-86e1-42a3-bb7f-d6641001b0f2
 description: Addiert zu dem angegebenen Datum die angegebene Anzahl von Intervallen (positive oder negative ganze Zahl) der angegebenen Datumskomponente und gibt das zugehörige Ergebnis zurück.
 ms.openlocfilehash: a2baa58a2ccab7d030750d03d4fddb84e8eb8ff7
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790217"
 ---
-# <a name="dateadd-function-access-custom-web-app"></a>DateAdd-Funktion (Access benutzerdefinierte Web app)
+# <a name="dateadd-function-access-custom-web-app"></a>DateAdd-Funktion (benutzerdefinierte Access-Web-App)
 
 Addiert zu dem angegebenen Datum die angegebene Anzahl von Intervallen (positive oder negative ganze Zahl) der angegebenen Datumskomponente und gibt das zugehörige Ergebnis zurück.
   
 > [!NOTE]
-> [!HINWEIS] Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
+> Die in diesem Artikel beschriebene Cloudspeicherfunktion wird in Office 2013 und Office 2016 nicht mehr unterstützt und kann dazu führen, dass die folgende Fehlermeldung angezeigt wird: >  *Leider bestehen Serverprobleme, sodass wir \<Dienst\> zurzeit nicht hinzufügen können. Bitte versuchen Sie es später erneut.* > Informationen zum Cloudspeicher für Office Online, Office für iOS und Office für Android finden Sie in unserem [Office Cloud Storage Partner Program](https://dev.office.com/programs/officecloudstorage). 
   
 ## <a name="syntax"></a>Syntax
 
-**DateAdd** (*DatePart*, *Zahl*, *Datum*) 
+**DateAdd** (*DatePart*, *Number*, *Date*) 
   
-Die **DateAdd** -Funktion enthält die folgenden Argumente. 
+Die **DateAdd**-Funktion enthält die folgenden Argumente. 
   
-|**Argumentname**|**Description**|
+|**Argumentname**|**Beschreibung**|
 |:-----|:-----|
 | *DatePart*  <br/> |Die  *Date*  -Komponente, zu der eine ganze Zahl addiert wird. Eine Liste der zulässigen Einstellungen finden Sie im Abschnitt „Hinweise".  <br/> |
 | *Number*  <br/> |Ist ein Ausdruck, der in eine ganze Zahl aufgelöst werden kann, die zu der  *DatePart*  -Komponente von  *Date*  addiert wird. Wenn Sie einen Wert mit einem Dezimalbruch angeben, wird der Bruch gekürzt.  <br/> |
 | *Date*  <br/> |Ein Ausdruck, der in einen Datums-/Uhrzeitwert aufgelöst werden kann. Der  *Date*  -Argumentausdruck, Spaltenausdruck, benutzerdefinierte Variable oder Zeichenfolgenliteral.  <br/> |
    
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Bemerkungen
 
 In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgeführt. 
   
@@ -40,7 +40,7 @@ In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgef�
 |:-----|
 |**year** <br/> |
 |**quarter** <br/> |
-|**month** <br/> |
+|**Monat** <br/> |
 |**dayofyear** <br/> |
 |**day** <br/> |
 |**week** <br/> |
@@ -49,7 +49,7 @@ In der folgenden Tabelle werden alle zulässigen  *DatePart*  -Argumente aufgef�
 |**second** <br/> |
 |**millisecond** <br/> |
    
-## <a name="example"></a>Example
+## <a name="example"></a>Beispiel
 
 Mit dem folgenden Ausdruck wird der letzte Tag des Monats berechnet.
   

@@ -7,10 +7,10 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29fb4c44-1a59-457e-813b-a982bd72891c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: c2e135fc031dd3faf5a4e08c50147dfcf7787b5e
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792693"
@@ -19,9 +19,9 @@ ms.locfileid: "19792693"
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 
   
-Unterst�tzte Versionen von Windows installieren die MAPI-Stubbibliothek, Mapi32.dll, im Ordner  _\<Laufwerk\>_ \Windows\System32 folder. 
+Unterstützte Versionen von Windows installieren die MAPI-Stub-Bibliothek „Mapi32.dll“ im Ordner _\<Laufwerk\>_ \Windows\System32. 
   
 Die folgenden Windows-Versionen werden unterst�tzt:
   
@@ -39,13 +39,13 @@ Um das MAPI-Subsystem ordnungsgem�� zu installieren, installieren Sie eine A
   
 Informationen zur Installation des MAPI-Subsystems eines Computers finden Sie in der Registrierung. Alle Werte in den Registrierungseintr�gen sind Zeichenfolgen. 
   
-Installationsprogramme f�r Nachrichtendienste sind f�r das Erstellen der Installationsinformationen im folgenden Registrierungsschl�ssel verantwortlich: 
+Installationsprogramme für Nachrichtendienste sind für das Erstellen der Installationsinformationen im folgenden Registrierungsschl�ssel verantwortlich: 
   
  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Messaging Subsystem`
   
 Nachrichtendientse m�ssen der Systemregistrierung Eintr�ge hinzuf�gen. 
   
-In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen f�r das MAPI-Subsystem auf ihrem Computer abrufen.
+In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen für das MAPI-Subsystem auf ihrem Computer abrufen.
   
 |**�berpr�fen**|**Registrierung**|
 |:-----|:-----|
@@ -56,5 +56,5 @@ In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen 
 
 
 
-[�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
+[Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 
