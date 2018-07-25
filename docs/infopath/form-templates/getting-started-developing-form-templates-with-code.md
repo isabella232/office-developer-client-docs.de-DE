@@ -7,7 +7,7 @@ keywords:
 - Formularvorlagen [Infopath 2007], erste Schritte, verwaltete Code Formularvorlagen [InfoPath 2007], erste Schritte, InfoPath 2007, erste Schritte
 localization_priority: Normal
 ms.assetid: 66468447-2012-4497-b371-c61f64a8bb49
-description: Dieser Abschnitt bietet Informationen zu den ersten Schritten beim Erstellen von Formularvorlagen mit verwaltetem Code, die das InfoPath-Objektmodell verwenden, das von Mitgliedern des N:Microsoft.Office.InfoPath-Namespace bereitgestellt wird.
+description: 'Dieser Abschnitt bietet Informationen zu den ersten Schritten beim Erstellen von Formularvorlagen mit verwaltetem Code, die das InfoPath-Objektmodell verwenden, das von Mitgliedern des N: Microsoft.Office.InfoPath-Namespace bereitgestellt wird.'
 ms.openlocfilehash: a4e4e8a4e01dc8d0fbfe9c5cbed0ae4b85b51e94
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
 ms.translationtype: HT
@@ -17,7 +17,7 @@ ms.locfileid: "19790734"
 ---
 # <a name="getting-started-developing-form-templates-with-code"></a>Erste Schritte zur Entwicklung von Formularvorlagen mit Code
 
-Dieser Abschnitt bietet Informationen zu den ersten Schritten beim Erstellen von Formularvorlagen mit verwaltetem Code, die das InfoPath-Objektmodell verwenden, das von Mitgliedern des **N:Microsoft.Office.InfoPath**-Namespace bereitgestellt wird. 
+Dieser Abschnitt bietet Informationen zu den ersten Schritten beim Erstellen von Formularvorlagen mit verwaltetem Code, die das InfoPath-Objektmodell verwenden, das von Mitgliedern des **N: Microsoft.Office.InfoPath**-Namespace bereitgestellt wird. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
