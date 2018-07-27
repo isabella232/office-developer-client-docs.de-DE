@@ -1,223 +1,223 @@
 ---
-title: AutoVervollständigen-Stream
+title: Stream für automatisches Vervollständigen
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d4f380fa-2ed9-4c7c-9ef3-b32f8409f657
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
+description: 'Letzte Änderung: Montag, 9. März 2015'
 ms.openlocfilehash: 7fc1fae4ed648d59c273b20ced247f6d20e01a6f
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19791354"
 ---
-# <a name="autocomplete-stream"></a>AutoVervollständigen-Stream
+# <a name="autocomplete-stream"></a>Stream für automatisches Vervollständigen
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 
   
-Zusätzlich zu wissen, wie Microsoft Outlook mit den AutoVervollständigen-Stream interagiert, müssen Sie auch das Binärformat des Datenstroms AutoVervollständigen verstehen.
+Sie müssen nicht nur wissen, wie Microsoft Outlook mit dem Stream für automatisches Vervollständigen interagiert, sondern auch das Binärformat von AutoVervollständigen verstehen.
   
-Die AutoVervollständigen-Datenstrom ist ein Satz von Zeilen Empfänger-Eigenschaft, die als einen binären Datenstrom zusammen mit einigen Metadaten, die Buchhaltung gespeichert sind, die nur von Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007 und Microsoft Outlook 2003 verwendet wird. Die Metadaten ist Outlook Interaktionen mit dem AutoVervollständigen-Stream für die Überprüfung relevante, sodass dritte beibehalten müssen, was in jedem Metadaten-Block ist, wenn sie einen geänderte AutoVervollständigen-Stream speichern. Anders ausgedrückt, sollten dritte nur den Zeile Set Teil der Binärformat ändern und beibehalten, was bereits in der die Metadaten-Blöcke des Datenstroms AutoVervollständigen ist.
+Der Stream für automatisches Vervollständigen besteht aus mehreren Zeilen mit Empfänger-Eigenschaften, die als binärer Stream zusammen mit einigen Verwaltungsmetadaten gespeichert und nur von Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007 und Microsoft Outlook 2003 verwendet werden. Die Metadaten sind relevant für Outlook-Interaktionen mit dem Stream für automatisches Vervollständigen, sodass Dritte die Inhalte jedes Metadatenblocks beibehalten müssen, wenn sie einen geänderten Stream für automatisches Vervollständigen speichern. Dritte sollten also nur den Zeilensatz des Binärformats ändern und die Inhalte der Metadatenblöcke des Streams für automatisches Vervollständigen beibehalten.
   
-## <a name="stream-visualization"></a>Stream Visualisierung
+## <a name="stream-visualization"></a>Stream-Visualisierung
 
-Das allgemeine Layout des Datenstroms AutoVervollständigen lautet wie folgt:
+Das allgemeine Layout des Streams für automatisches Vervollständigen lautet wie folgt:
   
 Metadaten (4 Bytes)
   
-Nummer der Hauptversion (4 Bytes)
+Hauptversionsnummer (4 Bytes)
   
-Minor Versionsnummer (4 Bytes)
+Nebenversionsnummer (4 Bytes)
   
 Anzahl der Zeilen n (4 Bytes)
   
-Anzahl der Eigenschaften p in Zeile 1 (4 Bytes)
+Anzahl der Eigenschaften p in der ersten Zeile (4 Bytes)
   
-Eigenschafts-Tag 1-Eigenschaft (4 Bytes)
+Tag der Eigenschaft 1 (4 Bytes)
   
-1-Eigenschaft des Daten (4 Bytes) reserviert.
+Reservierte Daten der Eigenschaft 1 (4 Bytes)
   
-Eigenschaft 1 Wert Union (8 Byte)
+Wertvereinigung der Eigenschaft 1 (8 Bytes)
   
-Wertdaten 1 Eigenschaft (0 oder Variable Bytes)
+Wertdaten der Eigenschaft 1 (0 oder variable Bytes)
   
-… (über-Eigenschaft P-1-Eigenschaft 2)
+… (Eigenschaft 2 bis Eigenschaft P-1)
   
-Eigenschaft p des Eigenschafts-Tag (4 Bytes)
+Tag der Eigenschaft p (4 Bytes)
   
-Eigenschaft p der Daten (4 Bytes) reserviert.
+Reservierte Daten der Eigenschaft p (4 Bytes)
   
-Eigenschaft p Wert Union (8 Byte)
+Wertvereinigung der Eigenschaft p (8 Bytes)
   
-Eigenschaft p des Wertdaten (0 oder Variable Bytes)
+Wertdaten der Eigenschaft p (0 oder variable Bytes)
   
-Anzahl der Eigenschaften Q in Zeile 2 (4 Bytes)
+Anzahl der Eigenschaften q in der zweiten Zeile (4 Bytes)
   
-… (die zweite Zeileneigenschaften)
+… (Eigenschaften der zweiten Zeile)
   
-… (Zeile 3 über Zeile n-1)
+… (Zeile 3 bis Zeile n-1)
   
-Anzahl der Eigenschaften R in Zeile n (4 Bytes)
+Anzahl der Eigenschaften r in Zeile n (4 Bytes)
   
-… (Zeile n's Eigenschaften)
+… (Eigenschaften der Zeile n)
   
 Zusätzliche Informationen Byteanzahl EI (4 Bytes)
   
-Zusätzliche Informationen (EI Bytes)
+Zusätzliche Informationen (EI-Bytes)
   
-Metadaten (8 Byte)
+Metadaten (8 Bytes)
   
-Ein Beispiel für eine binäre Struktur, finden Sie unter Binary für das Beispiel in der [Outlook 2003/2007 NK2-Dateiformat und Richtlinien für Entwickler.](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+Ein Beispiel für eine binäre Struktur finden Sie im Binärbeispiel in den [Outlook 2003/2007 NK2-Dateiformat- und Entwicklerrichtlinien.](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
   
-## <a name="high-level-layout"></a>Allgemeine Layout
+## <a name="high-level-layout"></a>Allgemeines Layout
 
-Generell wird das Layout des Datenstroms AutoVervollständigen wie folgt:
+Das allgemeine Layout des Streams für automatisches Vervollständigen lautet wie folgt:
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
 |Metadaten  <br/> |4  <br/> |
 |Nummer der Hauptversion  <br/> |4  <br/> |
 |Nummer der Nebenversion  <br/> |4  <br/> |
-|Rowset-fest  <br/> |Variable  <br/> |
+|Zeilensatz  <br/> |Variable  <br/> |
 |Zusätzliche Informationen Byteanzahl EI  <br/> |4  <br/> |
-|Zusätzliche Informationen  <br/> |EI  <br/> |
+|Weitere Informationen  <br/> |EI  <br/> |
 |Metadaten  <br/> |8  <br/> |
    
-Wenn dieser Datenstrom lesen, wenn die Hauptversion 12 unterscheidet, sollte klicken Sie dann diesen Datenstrom nicht lesen oder schreiben. Die aktuelle Nebenversion des Datenstroms AutoVervollständigen ist 0, womit die zusätzlichen Informationen Byteanzahl auf 0 festgelegt wurde. Wenn die Nebenversion 0 unterscheidet, wird die Informationen in die zusätzlichen Informationen, die beim Lesen der Streams lesen und beim Schreiben des Streams beibehalten werden muss vorhanden sein. Die Nebenversion müssen auch beim Schreiben des Streams beibehalten werden soll. Wenn beide nicht beibehalten werden, verlieren Instanzen von Outlook, die die zusätzliche Informationen geschrieben haben Daten. 
+Wenn die Hauptversion nicht 12, sollte dieser Datenstrom nicht gelesen oder geschrieben werden. Die aktuelle Nebenversion des Streams für automatisches Vervollständigen ist 0, d. h. die Bytes für die zusätzlichen Informationen sind auf "0" festgelegt. Wenn die Nebenversion nicht 0 ist, befinden sich Informationen in den zusätzlichen Informationen, die beim Lesen des Streams gelesen und beim Schreiben des Streams beibehalten werden müssen. Die Nebenversion muss auch beim Schreiben des Streams beibehalten werden. Wenn beide nicht beibehalten werden, verlieren Instanzen von Outlook, die die zusätzlichen Informationen schreiben, Daten. 
   
 > [!NOTE]
-> Applikationen dürfen keine benutzerdefinierte Daten in das Feld zusätzliche Informationen hinzufügen oder ändern die Nebenversion, wie diese Funktionalität zur Unterstützung von Outlook-Erweiterungen für das Format und nicht beliebige Drittanbieter-Erweiterungen ist. 
+> Anwendungen dürfen keine benutzerdefinierten Daten zum Feld Zusätzliche Informationen hinzufügen und nicht die Nebenversion ändern, da diese Funktion Outlook-Erweiterungen des Formats und keine beliebigen Erweiterungen von Drittanbietern unterstützt. 
   
-## <a name="row-set-layout"></a>Rowset Layout
+## <a name="row-set-layout"></a>Zeilensatz-Layout
 
-Das Layout Rowset lautet wie folgt: 
+Das Zeilensatz-Layout lautet wie folgt: 
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl von Zeilen  <br/> |4  <br/> |
-|Rows  <br/> |Variable  <br/> |
+|Anzahl der Zeilen  <br/> |4  <br/> |
+|Zeilen  <br/> |Variable  <br/> |
    
-Die Anzahl der Zeilen identifiziert, wie viele Zeilen in der nächsten Teil der Sequenz binären Stream stammen.
+Die Anzahl der Zeilen gibt an, wie viele Zeilen im nächsten Teil der binären Datenstromsequenz enthalten sind.
   
-## <a name="row-layout"></a>Zeilenlayout
+## <a name="row-layout"></a>Zeilen-Layout
 
-Jede Zeile hat Folgendes Format:
+Jede Zeile besitzt das folgende Format:
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
 |Anzahl der Eigenschaften  <br/> |4  <br/> |
 |Eigenschaften  <br/> |Variable  <br/> |
    
-Die Anzahl der Eigenschaften bestimmt, wie viele Eigenschaften in der nächsten Teil der Sequenz binären Stream stammen.
+Die Anzahl der Eigenschaften gibt an, wie viele Eigenschaften im nächsten Teil der binären Datenstromsequenz enthalten sind.
   
-## <a name="property-layout"></a>Eigenschaft Layout
+## <a name="property-layout"></a>Eigenschaften-Layout
 
-Jede Eigenschaft hat das folgende Format:
+Jede Eigenschaft besitzt das folgende Format:
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Eigenschafts-Tag  <br/> |4  <br/> |
+|Tag der Eigenschaft  <br/> |4  <br/> |
 |Reservierte Daten  <br/> |4  <br/> |
-|Eigenschaft Wert Union  <br/> ||
-|Wertdaten  <br/> |0 oder Variable (je nach Eigenschaft-Tag)  <br/> |
+|Eigenschaftswertvereinigung  <br/> ||
+|Wertdaten  <br/> |0 oder Variable (abhängig vom Tag der Eigenschaft)  <br/> |
    
-## <a name="interpreting-the-property-value"></a>Interpretieren den Eigenschaftswert
+## <a name="interpreting-the-property-value"></a>Interpretation des Eigenschaftswerts
 
-Die Union-Eigenschaft Wert und die Daten des Werts sind interpretiert werden das Eigenschafts-Tag in den ersten 4 Byte des Blocks Eigenschaft basierend auf. Dieses Eigenschaftentag befindet sich in demselben Format wie ein MAPI-Eigenschaftentag. Bits 0 bis 15 des Eigenschaftstags sind den Typ der Eigenschaft. Bits 16 bis 31 sind die Eigenschaft Bezeichner. Der Eigenschaftstyp bestimmt, wie die-Eigenschaft die restlichen gelesen werden sollen.
+Die Eigenschaftswertvereinigung und die Wertdaten werden basierend auf dem Tag der Eigenschaft in den ersten 4 Bytes des Eigenschaftsblocks interpretiert. Das Tag der Eigenschaft liegt im selben Format vor wie das Tag der MAPI-Eigenschaft. Die Bits 0 bis 15 des Tags der Eigenschaft geben den Typ der Eigenschaft an. Die Bits 16 bis 31 sind Bezeichner der Eigenschaft. Der Eigenschaftentyp bestimmt, wie der Rest der Eigenschaft gelesen werden soll.
   
-## <a name="static-value"></a>Statische Wert
+## <a name="static-value"></a>Statischer Wert
 
-Einige Eigenschaften haben keine Wertdaten und haben nur Daten in der Union. Die folgenden Eigenschaftentypen (die aus dem Tag-Eigenschaft stammen) sollte die Union-Eigenschaft 8-Byte-Daten wie folgt interpretiert werden:
+Einige Eigenschaften besitzen keine Wertdaten und verfügen nur in der Vereinigung über Daten. Die folgenden Eigenschaftstypen (die aus dem Eigenschafts-Tag stammen) sollten die 8 Byte Daten der Eigenschaftsvereinigung wie folgt interpretieren:
   
-|**Eigenschaft Type**|**Eigenschaft Union Interpretation**|
+|**Eigenschaftstyp**|**Interpretation der Eigenschaftsvereinigung**|
 |:-----|:-----|
-|PT_I2  <br/> |kurze int  <br/> |
+|PT_I2  <br/> |short int  <br/> |
 |PT_LONG  <br/> |long  <br/> |
-|PT_R4  <br/> |Gleitkommazahl  <br/> |
+|PT_R4  <br/> |float  <br/> |
 |PT_DOUBLE  <br/> |double  <br/> |
-|PT_BOOLEAN  <br/> |kurze int  <br/> |
+|PT_BOOLEAN  <br/> |short int  <br/> |
 |PT_SYSTIME  <br/> |FILETIME  <br/> |
 |PT_I8  <br/> |LARGE_INTEGER  <br/> |
    
 ## <a name="dynamic-values"></a>Dynamische Werte
 
-Andere Eigenschaften aufweisen Daten in einem Wert Datenblock, nachdem die ersten 16 Bytes, die die Tag-Eigenschaft, die reservierte Daten und der Union-Eigenschaft Wert enthalten. Im Gegensatz zu statische Werte spielt die Daten, die in der 8-Byte-Eigenschaftswert Union gespeichert werden beim Lesen. Beim Schreiben, stellen Sie sicher, dass diese 8 Bytes mit etwas zu füllen. Der Inhalt von 8 Bytes ist jedoch nicht wichtig. Dynamische Werte bestimmt das Eigenschafts-Tag-Typ wie die Daten des Werts interpretiert werden.
+Andere Eigenschaften weisen nach den 16 Bytes Daten in einem Wertdatenblock auf, die das Tag der Eigenschaft, die Reservierten Daten und die Eigenschaftswertvereinigung enthalten. Im Gegensatz zu statischen Werten sind die Daten, die in der 8-Byte-Eigenschaftswertvereinigung gespeichert sind, irrelevant für das Lesen. Stellen Sie beim Schreiben sicher, dass die 8 Bytes mit Werten gefüllt werden. Der Inhalt der 8 Bytes ist jedoch nicht wichtig. Bei dynamischen Werten bestimmt der Tagtyp der Eigenschaft die Interpretation der Wertdaten.
   
 PT_STRING8 
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl von Bytes n  <br/> |4  <br/> |
-|Bytes als ANSI-Zeichenfolge interpretiert werden soll (einschließlich der NULL-Terminator)  <br/> |n  <br/> |
+|Anzahl der Bytes n  <br/> |4  <br/> |
+|Bytes werden als ANSI-Zeichenfolge interpretiert (beinhaltet NULL-Abschlusszeichen)  <br/> |n  <br/> |
    
 PT_CLSID
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Bytes als GUID interpretiert werden soll  <br/> |16  <br/> |
+|Bytes, die als GUID interpretiert werden  <br/> |16  <br/> |
 |||
    
 PT_BINARY 
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl von Bytes n  <br/> |4  <br/> |
-|Bytes als Bytearray interpretiert werden soll  <br/> |n  <br/> |
+|Anzahl der Bytes n  <br/> |4  <br/> |
+|Bytes, die als Byte-Array interpretiert werden  <br/> |n  <br/> |
    
 PT_ERROR
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl von Bytes n  <br/> |4  <br/> |
-|Bytes als Bytearray interpretiert werden soll  <br/> |n  <br/> |
+|Anzahl der Bytes n  <br/> |4  <br/> |
+|Bytes, die als Byte-Array interpretiert werden  <br/> |n  <br/> |
    
 PT_MV_BINARY
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
 |Anzahl der binären Arrays X  <br/> |4  <br/> |
-|Ausführung von Bytes, die X enthält binäre Arrays. Jedes Array sollte genau wie das Ausführen PT_BINARY Byte interpretiert werden.  <br/> |Variable  <br/> |
+|Eine Ausführung von Bytes, die X binäre Arrays enthält. Jedes Array sollten exakt wie die PT_BINARY-Byte-Ausführung interpretiert werden.  <br/> |Variable  <br/> |
    
-PT_MV_STRING8 (Outlook 2007, Outlook 2010 und Outlook 2013)
+PT_MV_STRING8 (Outlook 2007, Outlook 2010, and Outlook 2013)
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
-|Anzahl von ANSI-Zeichenfolgen X  <br/> |4  <br/> |
-|Ein Lauf von Bytes, die X-ANSI-Zeichenfolgen enthält. Jede Zeichenfolge sollte genau wie das Ausführen PT_STRING8 Byte interpretiert werden.  <br/> |Variable  <br/> |
+|Anzahl der ANSI-Zeichenfolgen X  <br/> |4  <br/> |
+|Eine Ausführung von Bytes, die X ANSI-Zeichenfolgen enthält. Jede Zeichenfolge sollte exakt wie die PT_STRING8-Byte-Ausführung interpretiert werden.  <br/> |Variable  <br/> |
    
 PT_MV_UNICODE (Outlook 2007, Outlook 2010, Outlook 2013)
   
-|**Wertdaten**|**Anzahl von Bytes**|
+|**Wertdaten**|**Anzahl der Bytes**|
 |:-----|:-----|
 |Anzahl der Unicode-Zeichenfolgen X  <br/> |4  <br/> |
-|Ein Lauf von Bytes, die X UNICODE Zeichenfolgen enthält. Jede Zeichenfolge sollte genau wie das Ausführen PT_UNICODE Byte interpretiert werden.  <br/> |Variable  <br/> |
+|Eine Ausführung von Bytes, die X UNICODE-Zeichenfolgen enthält. Jede Zeichenfolge sollte exakt wie die PT_UNICODE-Byte-Ausführung interpretiert werden.  <br/> |Variable  <br/> |
    
 ## <a name="significant-properties"></a>Wesentliche Eigenschaften
 
-Wie zuvor in diesem Thema erwähnt, müssen die binären Blöcke, die Eigenschaften darstellen Eigenschaftentags, die die Eigenschaften Address Book Empfänger entsprechen. Für Eigenschaften, die hier nicht aufgeführt sind, können Sie Nachschlagen der Beschreibung unter http://msdn.microsoft.com/en-us/library/cc433490(EXCHG.80).aspx.
+Wie zuvor in diesem Artikel erwähnt, besitzen die binären Blöcke, die Eigenschaften darstellen, Eigenschafts-Tags, die Eigenschaften von Adressbuchempfängern entsprechen. Eine Beschreibung der Eigenschaften, die hier nicht aufgeführt sind, finden Sie unter http://msdn.microsoft.com/en-us/library/cc433490(EXCHG.80).aspx.
   
-|**Eigenschaftenname**|**Eigenschafts-Tag**|**Beschreibung (Weitere Informationen finden Sie unter MSDN)**|
+|**Eigenschaftsname**|**Eigenschafts-Tag**|**Beschreibung (weitere Informationen finden Sie unter MSDN)**|
 |:-----|:-----|:-----|
-|PR_NICK_NAME_W (nicht auf in AutoVervollständigen-Stream nur bestimmte Empfänger gesendeten)  <br/> |0x6001001f  <br/> |Diese Eigenschaft muss in jeder Zeile Empfänger ersten sein. Es dient funktional als eine Schlüssel-ID für die Empfänger Zeile.  <br/> |
-|PR_ENTRYID  <br/> |0x0FFF0102  <br/> |Der Address Book Eintrag Bezeichner für den Empfänger.  <br/> |
-|PR_DISPLAY_NAME_W  <br/> |0x3001001F  <br/> |Der Name des Empfängers anzeigen.  <br/> |
-|PR_EMAIL_ADDRESS_W  <br/> |0x3003001F  <br/> |E-Mail-Adresse des Empfängers (z. B. johndoe@contoso.com oder/o = Contoso/OU = "Foo" / Cn = Recipients/Cn = Johndoe)  <br/> |
-|PR_ADDRTYPE_W  <br/> |0x3002001F  <br/> |Der Empfänger Adresstyp (z. B. SMTP oder EX).  <br/> |
-|PR_SEARCH_KEY  <br/> |0x300B0102  <br/> |Der Empfänger MAPI-Suchen-Taste.  <br/> |
-|PR_SMTP_ADDRESS_W  <br/> |0x39FE001f  <br/> |SMTP-Adresse des Empfängers.  <br/> |
-|PR_DROPDOWN_DISPLAY_NAME_W (nicht auf in AutoVervollständigen-Stream nur bestimmte Empfänger gesendeten)  <br/> |0X6003001f  <br/> |Die Zeichenfolge, die in der AutoVervollständigen-Liste angezeigt wird.  <br/> |
-|PR_NICK_NAME_WEIGHT (nicht auf in AutoVervollständigen-Stream nur bestimmte Empfänger gesendeten)  <br/> |0x60040003  <br/> |Die Stärke des in AutoVervollständigen-Eintrag. Die Gewichtung wird verwendet, um zu bestimmen, in welcher Reihenfolge AutoVervollständigen Einträge auftreten, wenn die AutoVervollständigen-Liste entsprechen. Einträge mit höheren Gewichtung werden vor Einträgen mit geringeren Gewichtung angezeigt. Die vollständige AutoVervollständigen-Liste wird von dieser Eigenschaft sortiert. Die Gewichtung in regelmäßigen Abständen nimmt mit der Zeit und erhöht, wenn der Benutzer eine e-Mail an diesen Empfänger sendet. Siehe Beschreibung weiter unten in diesem Thema für Weitere Informationen zu dieser Eigenschaft.  <br/> |
+|PR_NICK_NAME_W (nicht auf Empfänger übertragen, spezifisch für den Stream für automatisches Vervollständigen)  <br/> |0x6001001f  <br/> |Diese Eigenschaft muss in jeder Empfängerzeile zuerst stehen. Die Funktion dient als Schlüssel-ID für die Empfängerzeile.  <br/> |
+|PR_ENTRYID  <br/> |0x0FFF0102  <br/> |Eintrag-ID des Adressbuchs für den Empfänger  <br/> |
+|PR_DISPLAY_NAME_W  <br/> |0x3001001F  <br/> |Anzeigename des Empfängers  <br/> |
+|PR_EMAIL_ADDRESS_W  <br/> |0x3003001F  <br/> |E-Mail-Adresse des Empfängers (z. B. johndoe@contoso.com oder /o=Contoso/OU=Foo/cn=Recipients/cn=johndoe)  <br/> |
+|PR_ADDRTYPE_W  <br/> |0x3002001F  <br/> |Adresstyp des Empfängers (z. B. SMTP oder EX).  <br/> |
+|PR_SEARCH_KEY  <br/> |0x300B0102  <br/> |MAPI-Suchschlüssel des Empfängers  <br/> |
+|PR_SMTP_ADDRESS_W  <br/> |0x39FE001f  <br/> |SMTP-Adresse des Empfängers  <br/> |
+|PR_DROPDOWN_DISPLAY_NAME_W (nicht auf Empfänger übertragen, spezifisch für den Stream für automatisches Vervollständigen)  <br/> |0X6003001f  <br/> |Zeichenfolge, die in der AutoVervollständigen-Liste angezeigt wird  <br/> |
+|PR_NICK_NAME_WEIGHT (nicht auf Empfänger übertragen, spezifisch für den Stream für automatisches Vervollständigen)  <br/> |0x60040003  <br/> |Gewichtung dieses AutoVervollständigen-Eintrags Mit der Gewichtung wird bestimmt, in welcher Reihenfolge AutoVervollständigen-Einträge beim Abgleich der AutoVervollständigen-Liste ausgeführt werden. Einträge mit höherer Gewichtung werden vor Einträgen mit geringerer Gewichtung angezeigt. Die komplette AutoVervollständigen-Liste wird nach dieser Eigenschaft sortiert. Die Gewichtung wird in regelmäßigen Abständen über einen Zeitraum verringert und wird vergrößert, wenn der Benutzer eine E-Mail-Nachricht an diesen Empfänger sendet. Weitere Informationen zu dieser Eigenschaft finden Sie weiter unten in diesem Thema.  <br/> |
    
 PR_NICK_NAME_WEIGHT
   
-Der Satz von Zeilen im Datenstrom AutoVervollständigen wird von der PR_NICK_NAME_WEIGHT-Eigenschaft in absteigender Reihenfolge sortiert und des AutoVervollständigen-Streams sollte immer dieses sortierte Merkmal beibehalten. Aus diesem Grund sollten Änderungen an einer Zeile Gewichtung auch Stellen Sie sicher, dass die Zeilenposition wird die Sortierreihenfolge der der vollständige Satz von Zeilen verwaltet. Hinzufügen der Zeile-Set sollte auf die richtige Position zur Aufrechterhaltung der Sortierreihenfolge eingefügt werden.
+Der Zeilensatz dieses Streams für automatisches Vervollständigen ist in absteigender Reihenfolge nach der Eigenschaft PR_NICK_NAME_WEIGHT sortiert, und der Stream für automatisches Vervollständigen sollte dieses Sortierverhalten immer beibehalten. Aus diesem Grund sollte bei Änderungen an der Gewichtung einer Zeile sichergestellt werden, dass die Position der Zeile die Sortierreihenfolge des kompletten Zeilensatzes beibehält. Zusätze zum Zeilensatz sollten an der richtigen Stelle eingefügt werden, um die Sortierreihenfolge beizubehalten.
   
-Der Mindestwert für dieses Gewicht ist 0 x 1 und der Höchstwert ist LONG_MAX. Alle anderen Werte für die Gewichtung gelten als ungültig.
+Der Mindestwert für diese Gewichtung ist 0x1, und der Maximalwert beträgt LONG_MAX. Alle anderen Werte für die Gewichtung werden als ungültig betrachtet.
   
-Wenn Outlook 2007 sendet eine e-Mail an oder löst einen Empfänger wird es Stärke des Empfängers um 0 x 2000 erhöht.
+Wenn Outlook 2007 eine E-Mail an einen Empfänger versendet oder einen Empfänger auflöst, wird die Gewichtung dieses Empfängers um 0x2000 erhöht.
   
 

@@ -5,13 +5,13 @@ ms.date: 03/09/2015
 ms.audience: Developer
 ms.topic: overview
 keywords:
-- Arbeitsspeicher XLOPER12 [excel 2007], Verwalten von Arbeitsspeicher in Excel, Excel-Stapel Zeichenfolgen [Excel 2007], Verwalten von Arbeitsspeicher, Speicherverwaltung in Excel XLOPER Speicher [Excel 2007], Speicher [Excel 2007], Richtlinien für die Verwaltung
+- Arbeitsspeicher xloper12 [excel 2007], Verwalten von Speicher in Excel, Excel-Stapel, Zeichenfolgen [Excel 2007], Speicherverwaltung, Speicherverwaltung in Excel, XLOPER-Speicher [Excel 2007], Speicher [Excel 2007], Richtlinien für die Verwaltung
 localization_priority: Normal
 ms.assetid: 3bf5195b-6235-43cf-8795-0c7b0a63a095
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
 ms.openlocfilehash: 97c76d762fdc5e575c571804816e5581a7bec8bb
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790560"
@@ -24,25 +24,25 @@ Beim Erstellen von effizienten und stabilen XLL-Dateien ist die Speicherverwaltu
   
 Eine fehlerhafte Verwaltung von Speicher ist die häufigste Ursache von schwerwiegenden Fehlern im Zusammenhang mit Add-Ins. Sie sollten daher Ihr Projekt mit einer konsistenten und gut durchdachten Strategie für Speicherverwaltung erstellen.  
   
-Speicherverwaltung änderte komplexer in Microsoft Office Excel 2007 mit der Einführung von multithreaded Arbeitsmappe neu berechnen. Wenn Sie erstellen und threadsicheren Arbeitsblattfunktionen exportieren möchten, müssen Sie die resultierende Konflikte verwalten, die bei mehreren Threads für den Zugriff konkurrieren auftreten können.
+Die Speicherverwaltung in Microsoft Office Excel 2007 wurde mit der Einführung der Multithreaded-Arbeitsmappenneuberechnung zunehmend komplexer. Wenn Sie threadsichere Arbeitsblattfunktionen erstellen und exportieren möchten, müssen Sie die Konflikte verwalten, die auftreten können, wenn mehrere Threads um Zugriff konkurrieren.
   
 Für die folgenden drei Datenstrukturtypen gibt es Überlegungen im Hinblick auf den Speicher:
   
-- S **XLOPER**und **XLOPER12**s
+- **XLOPER**s und **XLOPER12**s
     
-- Zeichenfolgen, die nicht in einer **XLOPER** oder **XLOPER12** sind
+- Zeichenfolgen, die nicht in **XLOPER** oder **XLOPER12** enthalten sind
     
-- **FZ** und **FP12** arrays 
+- **FP**- und **FP12**-Arrays 
     
 ## <a name="xloperxloper12-memory"></a>XLOPER/XLOPER12-Speicher
 
-Die **XLOPER**/ **XLOPER12** -Datenstruktur hat ein paar Untertypen, die Zeiger auf Blöcke mit Speicher, nämlich Zeichenfolgen (**XltypeStr**), Arrays (**XltypeMulti**) und externe Verweise (**XltypeRef**) enthalten. Beachten Sie außerdem, dass **XltypeMulti** Arrays Zeichenfolge **XLOPER**enthalten können/ **XLOPER12s** , die wiederum an andere Blöcke des Arbeitsspeichers zeigen. 
+Die **XLOPER**/ **XLOPER12**-Datenstruktur weist einige Untertypen auf, die Zeiger auf Speicherblöcke enthalten, und zwar Zeichenfolgen (**xltypeStr**), Arrays (**xltypeMulti**) und externe Verweise (**xltypeRef**). Beachten Sie auch, dass **xltypeMulti**-Arrays die Zeichenfolgen **XLOPER**/ **XLOPER12s** enthalten können, die wiederum auf andere Speicherblöcke zeigen. 
   
-Ein **XLOPER**/ **XLOPER12** kann auf verschiedene Weise erstellt werden: 
+Ein **XLOPER**/ **XLOPER12** kann auf verschiedene Arten erstellt werden: 
   
 - Von Excel bei der Vorbereitung von Argumenten, die an eine XLL-Funktion übergeben werden sollen
     
-- Aufrufen von Excel bei der Rückgabe eines **XLOPER** oder **XLOPER12** in einer C-API 
+- Von Excel beim Zurückgeben von **XLOPER** oder **XLOPER12** in einem C-API-Aufruf 
     
 - Von der DLL beim Erstellen von Argumenten, die an einen C-API-Aufruf übergeben werden sollen
     
@@ -54,41 +54,41 @@ Ein Speicherblock innerhalb eines der auf den Speicher zeigenden Typen kann auf 
     
 - Als statischer Block innerhalb Ihrer DLL innerhalb eines Teils des Funktionscodes. In diesem Fall müssen Sie den Speicher nicht zuordnen oder freigeben.
     
-- Es dynamisch belegt und von der DLL auf mehrere verschiedene Arten freigegeben werden kann: **Malloc** und **frei**, **neu** und **Löschen**und So weiter.
+- Der Block kann dynamisch von der DLL auf verschiedene Weise zugeteilt und freigegeben werden: **malloc** und **free**, **new** und **delete** und so weiter.
     
 - Er kann dynamisch von Excel zugewiesen werden.
     
-Angesichts der Anzahl von möglichen Herkunft für **XLOPER**/ **XLOPER12** Speicher und die Anzahl der Situationen, in denen die **XLOPER**/ **XLOPER12** diesen Speicher zugewiesen wurde, ist nicht verwunderlich, dass in diesem Thema kann scheinbar äußerst schwierig. Die Komplexität kann jedoch erheblich reduziert werden, wenn Sie mehrere Regeln und Richtlinien befolgen. 
+Angesichts der Anzahl möglicher Ursprünge für **XLOPER**/ **XLOPER12**-Speicher und der Anzahl von Situationen, in denen der Speicher möglicherweise von **XLOPER**/ **XLOPER12** zugewiesen wurde, ist es nicht verwunderlich, dass dieses Thema sehr schwierig erscheinen mag. Die Komplexität kann jedoch erheblich verringert werden, wenn Sie mehrere Regeln und Richtlinien beachten. 
   
 ### <a name="rules-for-working-with-xloperxloper12"></a>Regeln für das Arbeiten mit XLOPER/XLOPER12
 
-- Versuchen Sie nicht, Speicher freigeben oder diese überschreiben soll **XLOPERs**/ **XLOPER12**s, die als Argumente an die XLL-Funktion übergeben werden. Sie sollten diese Argumente als schreibgeschützt behandeln. Weitere Informationen finden Sie unter "Zurückgeben von **XLOPER** oder **XLOPER12** durch Modifying Argumente direkten" unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+- Versuchen Sie nicht, Speicher freizugeben oder **XLOPERs**/ **XLOPER12**s zu überschreiben, die als Argumente an Ihre XLL-Funktion übergeben werden. Sie sollten diese Argumente als schreibgeschützt behandeln. Weitere Informationen finden Sie unter „Zurückgeben von **XLOPER** oder **XLOPER12** durch Ändern von vorhandenen Argumenten“ unter [Bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
     
-- Wenn Excel Speicher für eine **XLOPER**zugewiesen hat/ **XLOPER12** an die DLL in einem Aufruf der C-API zurückgegeben: 
+- Wenn Excel Speicher für ein **XLOPER**/ **XLOPER12** zugeteilt hat, das von Ihrer DLL in einem Aufruf der C-API zurückgegeben wurde: 
     
-  - Sie müssen den Speicher freigeben, wenn Sie die **XLOPER**nicht mehr benötigen/ **XLOPER12** mit einem Aufruf von [XlFree](xlfree.md). Verwenden Sie eine andere Methode, wie freien nicht, oder löschen Sie, um den Arbeitsspeicher freizugeben.
+  - Sie müssen den Speicher durch einen Aufruf von [xlFree](xlfree.md) freigeben, wenn Sie **XLOPER**/ **XLOPER12** nicht mehr benötigen. Verwenden Sie keine andere Methode, z. B. „free“ oder „delete“, um den Speicher freizugeben.
     
-  - Ist der zurückgegebene Typ **XltypeMulti**, überschreiben alle **XLOPER**nicht/ **XLOPER12**s innerhalb des Arrays, insbesondere dann, wenn sie Zeichenfolgen, enthalten und insbesondere dann nicht, in dem Sie versuchen, mit einer Zeichenfolge zu überschreiben.
+  - Wenn der zurückgegebene Typ **xltypeMulti** ist, überschreiben Sie keine **XLOPER**/ **XLOPER12**s innerhalb des Arrays, insbesondere, wenn sie Zeichenfolgen enthalten, und vor allem nicht, wenn Sie das Überschreiben mit einer Zeichenfolge versuchen.
     
-  - Wenn Sie die **XLOPER**zurückgeben möchten/ **XLOPER12** als Rückgabewert für die DLL-Funktion in Excel, müssen Sie Excel mitteilen, Speicher, mit der Excel freigegeben werden muss, wenn keine weiteren vorhanden ist. 
+  - Wenn Sie **XLOPER**/ **XLOPER12** in Excel als Rückgabewert für die DLL-Funktion zurückgeben möchten, müssen Sie Excel anweisen, nach Abschluss des Vorgangs Speicherplatz freizugeben. 
     
-- Sie müssen ein **XLOPER**nur **XlFree** Aufrufen/ **XLOPER12** , die als den Rückgabewert in einer C-API-Aufruf erstellt wurde. 
+- Sie müssen **xlFree** nur in einem **XLOPER**/ **XLOPER12** aufrufen, das als Rückgabewert für einen C-API-Aufruf erstellt wurde. 
     
-- Wenn die DLL für eine **XLOPER**Speicher zugewiesen hat/ **XLOPER12** , die Sie als Rückgabewert für die DLL-Funktion in Excel zurückgeben möchten, müssen Sie Excel mitteilen, Speicher, die die DLL-Version muss vorhanden ist. 
+- Wenn die DLL Speicher für ein **XLOPER**/ **XLOPER12** zugeteilt hat, das Sie in Excel als Rückgabewert für die DLL-Funktion zurückgeben möchten, müssen Sie Excel mitteilen, dass die DLL Speicherplatz freigeben muss.  
     
 ### <a name="guidelines-for-memory-management"></a>Richtlinien für die Speicherverwaltung
 
 - Achten Sie darauf, dass die DLL in der Methode, die Sie zum Zuteilen und Freigeben des Speichers verwenden, konsistent ist. Vermischen Sie keine Methoden. Ein guter Ansatz besteht darin, die verwendete Methode in einer Speicherklasse oder -struktur zu umschließen, in der Sie die verwendete Methode ändern können, ohne den Code an vielen Stellen zu verändern.
     
-- Wenn Sie Arrays **XltypeMulti** innerhalb der DLL erstellen, wie Sie Speicher für Zeichenfolgen konsistent sein: immer dynamisch Speicher für sie oder verwenden Sie immer statischen Speicher. Wenn Sie so vorgehen, wenn Sie den Speicher freigegeben sind, wissen Sie, dass Sie immer oder nie die Zeichenfolgen freigeben müssen. 
+- Bleiben Sie bei der Erstellung von **xltypeMulti**-Arrays innerhalb der DLL beim Zuteilen von Speicher für Zeichenfolgen konsistent: Teilen Sie den Speicher immer dynamisch zu, oder verwenden Sie immer statischen Speicher. Wenn Sie dies tun, wissen Sie beim Freigeben des Speichers, dass Sie die Zeichenfolgen immer oder nie freigeben müssen. 
     
-- Kopieren Sie eine Excel erstellte **XLOPER**tiefe Kopien von Excel-reservierter Speicher treffen/ **XLOPER12**.
+- Erstellen Sie tiefe Kopien des Speichers, der Excel zugeteilt ist, wenn Sie ein in Excel erstelltes **XLOPER**/ **XLOPER12** kopieren.
     
-- Stellen Sie Excel zugeordneter Zeichenfolgen **XLOPER**nicht/ **XLOPER12**s in **XltypeMulti** Arrays. Tiefe Kopien der Zeichenfolgen und Zeiger auf die Kopien im Array gespeichert. 
+- Setzen Sie die Excel zugeordnete Zeichenfolgen **XLOPER**/ **XLOPER12**s nicht in **XltypeMulti**-Arrays ein. Erstellen Sie tiefe Kopien der Zeichenfolgen, und speichern Sie Zeiger auf die Kopien im Array. 
     
 ## <a name="freeing-excel-allocated-xloperxloper12-memory"></a>Freigeben von Excel zugewiesenem XLOPER/XLOPER12-Arbeitsspeicher
 
-Berücksichtigen Sie den folgenden XLL-Befehl, der **XlGetName** verwendet, um eine Zeichenfolge mit der Pfad und Dateiname der DLL zu erhalten und in ein Warnungsdialogfeld mit **XlcAlert**angezeigt.
+Sehen Sie sich den folgenden XLL-Befehl an, der **xlGetName** zum Abrufen einer Zeichenfolge mit dem Pfad und Dateinamen der DLL verwendet und diese mit **xlcAlert** in einem Warnungsdialogfeld anzeigt.
   
 ```cs
 int WINAPI show_DLL_name(void)
@@ -106,19 +106,19 @@ int WINAPI show_DLL_name(void)
 
 ```
 
-Wenn die Funktion den Arbeitsspeicher auf den **xDllName**nicht mehr benötigt, können sie ihn durch den Aufruf der [XlFree-Funktion](xlfree.md), einer DLL-only C-API-Funktion frei. 
+Wenn die Funktion den Arbeitsspeicher, auf den von **xDllName** gezeigt wird, nicht mehr benötigt, kann dieser durch einen Aufruf der [xlFree-Funktion](xlfree.md), eine der C-API-Funktionen (nur DLL), freigegeben werden.  
   
-Die Funktion **XlFree** ist vollständig im Abschnitt Referenz Funktion dokumentiert (siehe [C-API-Funktionen, dass können werden aufgerufen, nur aus einer DLL oder XLL](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)), jedoch sollten Sie Folgendes beachten:
+Die **xlFree**-Funktion ist im Funktionsreferenzabschnitt ausführlich dokumentiert (siehe [C-API-Funktionen, die nur von einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)), beachten Sie aber Folgendes:
   
-- Sie können an mehrere **XLOPER**Zeiger übergeben/ **XLOPER12**s in einem einzigen Aufruf zu **XlFree**, durch die Anzahl der Funktionsargumente in der ausgeführten Version von Excel (30 in Excel 2003 ab Excel 2007 255) unterstützt nur begrenzt.
+- Sie können Zeiger an mehrere **XLOPER**/ **XLOPER12**s in einem einzigen Aufruf von **xlFree** übergeben. Dies wird nur durch die Anzahl der Funktionsargumente beschränkt, die in der ausgeführten Version von Excel unterstützt werden (30 in Excel 2003, 255 ab Excel 2007).
     
-- **XlFree** wird den darin enthaltenen Zeiger auf **NULL,** um sicherzustellen, dass einen Versuch, eine **XLOPER**frei/ **XLOPER12** , der bereits freigegeben wurde sicher ist. **XlFree** ist die einzige C-API-Funktion, die Argumente ändert. 
+- **xlFree** legt den enthaltenen Zeiger auf **NULL** fest, um sicherzustellen, dass der Versuch, ein **XLOPER**/ **XLOPER12**, das bereits freigegeben wurde, freizugeben, sicher ist. **XlFree** ist die einzige C-API-Funktion, die die zugehörigen Argumente ändert. 
     
-- Sie können für jede **XLOPER**sicher **XlFree** Aufrufen/ **XLOPER12** verwendet für den Rückgabewert für einen Aufruf der C-API, unabhängig davon, ob es sich um einen Zeiger auf den Speicher enthält. 
+- Sie können problemlos **xlFree** in allen **XLOPER**/ **XLOPER12** aufrufen, die für den Rückgabewert eines Aufrufs der C-API verwendet werden, unabhängig davon, ob ein Zeiger auf Speicher darin enthalten ist. 
     
 ## <a name="returning-xloperxloper12s-to-be-freed-by-excel"></a>Zurückgeben von XLOPER/XLOPER12s, die von Excel freigegeben werden sollen
 
-Angenommen Sie, Sie verwenden möchten, ändern den Befehl im Beispiel im vorherigen Abschnitt, und ändern Sie ihn in einer Tabellenfunktion, die den DLL Pfad und den Dateinamen ein, wenn ein **boolesches** **true** Argument und **#n/a** andernfalls übergeben zurückgibt. Sie können nicht deutlich **XlFree** , um die Zeichenfolge Arbeitsspeicher freizugeben, vor der Rückgabe an Excel aufrufen. Jedoch, wenn es nicht zu einem bestimmten Zeitpunkt freigegeben wird, wird das Add-in zu Speicherverlusten jedes Mal, wenn die Funktion aufgerufen wird. Um dieses Problem zu umgehen, lassen sich etwas in das Feld **Xltype** , der die **XLOPER**/ **XLOPER12**, als **XlbitXLFree** in xlcall.h definiert. Durch Festlegen dieser weist Excel an, dass er den zurückgegebenen Speicher freigeben muss, nachdem der Wert kopiert wird wurde. 
+Angenommen, Sie möchten den Beispielbefehl im vorherigen Abschnitt bearbeiten und in eine Arbeitsblattfunktion ändern, die den DLL-Pfad und den Dateinamen zurückgibt, wenn ein **Boolean** **true**-Argument übergeben wird, andernfalls **#N/A**. Sie können natürlich **xlFree** nicht aufrufen, um den Zeichenfolgenspeicher vor der Rückgabe an Excel freizugeben. Wenn der Speicher jedoch nicht irgendwann freigegeben wird, geht bei dem Add-In bei jedem Aufruf der Funktion Speicher verloren. Um dieses Problem zu umgehen, können Sie ein Bit im **xltype**-Feld von **XLOPER**/ **XLOPER12**, definiert als **xlbitXLFree** in „xlcall.h“ festlegen. Wenn dies festgelegt wird, wird Excel angewiesen, den zurückgegebenen Speicher freizugeben, wenn das Kopieren des Werts abgeschlossen ist. 
   
 ### <a name="example"></a>Beispiel
 
@@ -140,19 +140,19 @@ LPXLOPER12 WINAPI get_DLL_name(int calculation_trigger)
 }
 ```
 
-XLL-Funktionen, mit denen **XLOPER**/ **XLOPER12**s muss als nutzen und Zurückgeben von Zeigern an **XLOPER**deklariert werden/ **XLOPER12**s. Die Verwendung in diesem Beispiel für eine statische **XLOPER12** innerhalb der Funktion ist nicht threadsicheren. Diese Funktion konnte nicht richtig registriert werden, als threadsicheren, aber riskieren Sie **xRtnValue** von einem Thread überschrieben wird, bevor ein anderer Thread mit diesem abgeschlossen wurde. 
+XLL-Funktionen, die **XLOPER**/ **XLOPER12**s verwenden, müssen als Zeiger auf **XLOPER**/ **XLOPER12**s deklariert werden. Die Verwendung in diesem Beispiel eines statischen **XLOPER12** innerhalb der Funktion ist nicht threadsicher. Sie könnten diese Funktion fälschlicherweise als threadsicher registrieren, würden jedoch riskieren, dass **xRtnValue** von einem Thread überschrieben wird, bevor ein anderer Thread damit fertig ist. 
   
-Sie müssen nach dem Aufruf an den Excel-Rückruf **XlbitXLFree** festlegen, die es belegt. Wenn Sie dies vor der festlegen, wird überschrieben und verfügt nicht über den gewünschten Effekt. Wenn Sie beabsichtigen, den Wert vor der Rückgabe an das Arbeitsblatt als Argument eines Anrufs an eine andere C-API-Funktion zu verwenden, sollten Sie nach jedem solchen Aufruf dieses Bit festlegen. Andernfalls werden Sie Verwechseln Sie Funktionen, die nicht dieses Bit maskieren vor der Überprüfung der **XLOPER**/ **XLLOPER12** -Typ. 
+Sie müssen **xlbitXLFree** nach dem Aufruf des Excel-Rückrufs festlegen, der dies zuweist. Wenn Sie dies davor festlegen, wird es überschrieben und hat nicht den gewünschten Effekt. Wenn Sie beabsichtigen, den Wert vor der Rückgabe an das Arbeitsblatt als Argument in einem Aufruf einer anderen C-API-Funktion zu verwenden, sollten Sie dieses Bit nach einem derartigen Aufruf festlegen. Andernfalls könnten Sie Funktionen verwechseln, die dieses Bit nicht maskieren, bevor der **XLOPER**/ **XLLOPER12**-Typ überprüft wird. 
   
 ## <a name="returning-xloperxloper12s-to-be-freed-by-the-dll"></a>Zurückgeben von XLOPER/XLOPER12s, die von der DLL freigegeben werden sollen
 
-Dadurch ein ähnliches Problem tritt auf, wenn Ihre XLL Speicher für eine **XLOPER**zugewiesen hat/ **XLOPER12** und möchte, dass sie nach Excel zurück. Excel erkennt einen anderen Bit, die im Feld **Xltype** , der die **XLOPER**festgelegt werden kann/ **XLOPER12**, als **XlbitDLLFree** in xlcall.h definiert. 
+Ein ähnliches Problem tritt auf, wenn Ihre XLL Speicher für ein **XLOPER**/ **XLOPER12** zugewiesen hat und diesen an Excel zurückgeben möchte. Excel erkennt ein anderes Bit, das im **xltype**-Feld von **XLOPER**/ **XLOPER12**, definiert als **xlbitDLLFree** in xlcall.h, festgelegt werden kann. 
   
-Wenn Excel **XLOPER**empfängt/ **XLOPER12** mit diesem bit gesetzt, wird versucht, eine Funktion aufgerufen, die durch die XLL aufgerufen [XlAutoFree](xlautofree-xlautofree12.md) (für **XLOPER**s) oder **xlAutoFree12** (für **XLOPER12**s) exportiert werden soll. Diese Funktion wird in der Funktionsreferenz zu ausführlicher beschrieben (siehe [Add-In - Manager und Schnittstelle XLL-Funktionen](add-in-manager-and-xll-interface-functions.md)), aber eine minimale beispielhafte wird hier angegeben. Es dient zum der **XLOPER**frei/ **XLOPER12** Arbeitsspeicher in eine Möglichkeit, die konsistent mit wie der ursprünglich zugeordnet ist. 
+Wenn Excel **XLOPER**/ **XLOPER12** erhält, wobei dieses Bit festgelegt ist, versucht es, eine Funktion aufzurufen, die von der XLL mit dem Namen [xlAutoFree](xlautofree-xlautofree12.md) (für **XLOPER**s) oder **xlAutoFree12** (für **XLOPER12**s) exportiert werden sollte. Diese Funktion wird in der Funktionsreferenz ausführlicher beschrieben (siehe [-Add-In-Manager und XLL-Schnittstellenfunktionen](add-in-manager-and-xll-interface-functions.md)). Hier finden Sie aber eine beispielhafte minimale Implementierung. Ihr Zweck besteht darin, den **XLOPER**/ **XLOPER12**-Speicher auf eine Weise freizugeben, die mit der ursprünglichen Zuweisung konsistent ist. 
   
 ### <a name="examples"></a>Beispiele
 
-Die folgende Beispielfunktion ist dieselbe wie die vorherige Funktion mit der Ausnahme, dass sie den Text enthält "der vollständige Pfadnamen für diese DLL ist" vor dem DLL-Namen.
+Die folgende Beispielfunktion hat den gleichen Zweck wie die vorherige Funktion, mit der Ausnahme, dass sie den Text „Der vollständige Pfadname für diese DLL ist“ vor dem DLL-Namen umfasst.
   
 ```cs
 #include <string.h>
@@ -184,7 +184,7 @@ LPXLOPER12 WINAPI get_DLL_name_2(int calculation_trigger)
 }
 ```
 
-Eine minimal ausreichende Implementierung der **xlAutoFree12** in die XLL, die die vorherige Funktion exportiert würde wie folgt aussehen. 
+Eine minimal hinreichende Implementierung von **xlAutoFree12** in der XLL, die die vorherige Funktion exportiert hat, wäre wie folgt. 
   
 ```cs
 void WINAPI xlAutoFree12(LPXLOPER12 p_oper)
@@ -194,15 +194,15 @@ void WINAPI xlAutoFree12(LPXLOPER12 p_oper)
 }
 ```
 
-Dieser Implementierung reicht nur, wenn die XLL nur **XLOPER12** Zeichenfolgen zurückgibt und diese Zeichenfolgen werden nur mit **Malloc**reserviert. Beachten Sie, dass der Test 
+Diese Implementierung ist nur ausreichend, wenn die XLL nur **XLOPER12**-Zeichenfolgen zurückgibt und diese Zeichenfolgen nur mithilfe von **malloc** zugewiesen werden. Beachten Sie, dass bei dem Test 
   
  ` if(p_oper->xltype == xltypeStr) `
   
-würde in diesem Fall fehl, da **XlbitDLLFree** festgelegt ist. 
+in diesem Fall ein Fehler auftreten würde, da **xlbitDLLFree** festgelegt ist. 
   
-Im Allgemeinen sollten **XlAutoFree** und **xlAutoFree12** implementiert werden, damit sie Speicher XLL erstellt **XltypeMulti** Arrays und externe Verweise **XltypeRef** zugeordnet. 
+Im Allgemeinen sollten **xlAutoFree** und **xlAutoFree12** so implementiert werden, dass Speicherplatz freigegeben wird, der von XLL erstellten **xltypeMulti**-Arrays und externen **xltypeRef**-Referenzen zugewiesen ist. 
   
-Sie können Ihre XLL-Funktionen zu implementieren, sodass sie alle return dynamisch zugewiesen **XLOPER**s und **XLOPER12**s. In diesem Fall müssen Sie für alle solchen s **XLOPER**und **XLOPER12**s unabhängig von den Untertyp **XlbitDLLFree** festzulegen. Sie müssen auch **XlAutoFree** und **xlAutoFree12** implementieren, damit diese Speicher freigegeben wurde und außerdem alle Speicher auf den verwiesen wird innerhalb der **XLOPER**/ **XLOPER12**. Dieser Ansatz ist eine Möglichkeit, den Rückgabewert Thread sicher zu machen. Beispielsweise könnte die vorherige Funktion wie folgt umgeschrieben werden.
+Vielleicht entschließen Sie sich, Ihre XLL-Funktionen so zu implementieren, dass sie ALLE dynamisch zugewiesenen **XLOPER**s und **XLOPER12**s zurückgeben. In diesem Fall müssen Sie **xlbitDLLFree** für alle **XLOPER**s und **XLOPER12**s unabhängig von den Untertypen festlegen. Außerdem müssten Sie **xlAutoFree** und **xlAutoFree12** implementieren, damit dieser Speicher und auch der gesamte Speicher, auf den innerhalb der **XLOPER**/ **XLOPER12** gezeigt wird, freigegeben wird. Dieser Ansatz ist eine Möglichkeit, um den Rückgabewert threadsicher zu machen. Die vorherige Funktion könnte z. B. wie folgt umgeschrieben werden.
   
 ```cs
 #include <string.h>
@@ -245,7 +245,7 @@ void WINAPI xlAutoFree12(LPXLOPER12 p_oper)
 }
 ```
 
-Weitere Informationen zu **XlAutoFree** und **xlAutoFree12**finden Sie unter [XlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md).
+Weitere Informationen zu **xlAutoFree** und **xlAutoFree12** finden Sie unter [xlAutoFree/xlAutoFree12](xlautofree-xlautofree12.md).
   
 ## <a name="returning-modify-in-place-arguments"></a>Zurückgeben von Modify-in-Place-Argumenten
 
@@ -255,18 +255,18 @@ Diese Methode des Zurückgebens eines Werts wird für allen Datentypen unterstü
   
 - ASCII-Bytezeichenfolgen mit Längenzählung, die auf NULL enden
     
-- Länge gezählt und Null endende Unicode-Zeichenfolgen (beginnend in Excel 2007)
+- Unicode-Zeichenfolgen für Breitzeichen mit Längenzählung, die auf NULL enden (beginnend bei Excel 2007)
     
-- **FZ** Gleitkomma-arrays 
+- **FP**-Gleitkommaarrays 
     
-- **FP12** Gleitkomma-Arrays (beginnend in Excel 2007) 
+- **FP12**-Gleitkommaarrays (beginnend bei Excel 2007) 
     
 > [!NOTE]
-> Sie sollten nicht auf diese Weise **XLOPER**s oder **XLOPER12**s zurückzugeben. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md). 
+> Sie sollten nicht versuchen, **XLOPER**s oder **XLOPER12**s auf diese Weise zurückzugeben. Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md). 
   
 Der Vorteil der Verwendung dieser Methode besteht darin, dass Excel den Speicher für Rückgabewerte zuweist, anstatt nur die return-Anweisung zu verwenden. Nachdem Excel das Lesen der zurückgegebenen Daten abgeschlossen hat, wird der Speicher freigegeben. Dadurch werden die Speicherverwaltungsaufgaben von der XLL-Funktion gelöst. Diese Technik ist threadsicher: Wenn Funktionen gleichzeitig von Excel in unterschiedlichen Threads aufgerufen werden, verfügt jeder Funktionsaufruf in jedem Thread über seinen eigenen Puffer.
   
-Es ist hilfreich für die oben genannten Datentypen insbesondere, da der Mechanismus zum Rückrufen an die DLL, um Arbeitsspeicher freizugeben zurückzugeben, die nach dem existiert für **XLOPER**/ **XLOPER12**s existiert nicht für einfache Zeichenfolgen und **FZ** /  **FP12** Arrays. Daher müssen bei der Rückgabe erstellte DLL String oder Gleitkomma Array Sie die folgende Auswahl: 
+Dies ist besonders für die zuvor aufgeführten Datentypen hilfreich, da der Mechanismus für den Rückruf der DLL zum Freigeben von Speicher nach der Rückgabe, der für **XLOPER**/ **XLOPER12**s besteht, für einfache Zeichenfolgen und **FP**/ **FP12**-Arrays nicht vorhanden ist. Daher stehen Ihnen beim Zurückgeben einer von DLL erstellten Zeichenfolge oder eines Gleitkommaarrays die folgenden Optionen zur Verfügung: 
   
 - Legen Sie einen persistenten Zeiger auf einen dynamisch zugewiesenen Puffer fest, und geben Sie den Zeiger zurück. Führen Sie beim nächsten Aufruf der Funktion Folgendes aus: (1) Überprüfen Sie, dass der Zeiger nicht NULL ist. (2) Geben Sie die im vorherigen Aufruf zugewiesenen Ressourcen frei, und setzen Sie den Zeiger auf NULL zurück. (3) Verwenden Sie den Zeiger für einen neu zugewiesenen Speicherblock wieder.
     
@@ -274,11 +274,11 @@ Es ist hilfreich für die oben genannten Datentypen insbesondere, da der Mechani
     
 - Ändern Sie ein vorhandenes Argument, und schreiben Ihre Zeichenfolge oder Ihr Array direkt in den von Excel reservierten Platz.
     
-Andernfalls müssen Sie ein **XLOPER**erstellen/ **XLOPER12**, und verwenden **XlbitDLLFree** und **XlAutoFree**/ **xlAutoFree12** , um die Ressourcen freizugeben. 
+Andernfalls müssen Sie ein **XLOPER**/ **XLOPER12** erstellen und **xlbitDLLFree** und **xlAutoFree**/ **xlAutoFree12** verwenden, um die Ressourcen freizugeben. 
   
-Die letzte Option möglicherweise die einfachste in diesen Fällen sein, in dem Sie ein Argument des gleichen Typs als Rückgabewert übergeben werden. Die wichtigsten wichtig ist, dass die Puffergrößen beschränkt sind, und Sie sehr achten, deren Überschreitung nicht. Erste dies falsche abstürzt Excel. Puffergrößen für Zeichenfolgen und **FZ**/ **FP12** Arrays werden als Nächstes erläutert. 
+Die letzte Option ist die einfachste Lösung, wenn ein Argument mit demselben Typ wie der Rückgabewert an Sie übergeben wird. Wichtig ist hierbei, dass Sie beachten, dass die Puffergrößen beschränkt sind und Sie sehr vorsichtig sein müssen, um diese nicht zu überschreiten. Wenn dies passiert, kann Excel abstürzen. Als Nächstes werden Puffergrößen für Zeichenfolgen und **FP**/ **FP12**-Arrays erläutert. 
   
-## <a name="strings"></a>Zeichenfolgen
+## <a name="strings"></a>Strings
 
 Probleme mit der Verwaltung von Zeichenfolgenspeicher sind wohl die häufigste Ursache für Instabilität bei Anwendungen und Add-Ins. Dies ist angesichts der Vielzahl von Möglichkeiten zur Behandlung von Zeichenfolgen leicht nachvollziehbar: Zeichenfolgen mit NULL-Terminierung oder Längenzählung (oder beides), statische oder dynamische Puffer, Zeichenfolgen mit fester Länge oder fast unbegrenzter Länge, vom Betriebssystem verwalteter Speicher (z. B. OLE BSTR) oder nicht verwaltete Zeichenfolgen usw.
   
@@ -286,7 +286,7 @@ C/C++-Programmierer kennen sich am besten mit Zeichenfolgen aus, die auf NULL en
   
 Die häufigsten Probleme sind wie folgt:
   
-- Die Übergabe von einen null oder ungültige Zeiger auf eine Funktion, die einen gültigen Zeiger erwartet und nicht der Fall ist oder der Mauszeiger Gültigkeit selbst kann nicht überprüft werden.
+- Die Übergabe eines NULL-Zeigers oder eines ungültigen Zeigers an eine Funktion, die einen gültigen Zeiger erwartet und die die Gültigkeit des Zeigers nicht selbst überprüft bzw. überprüfen kann.
     
 - Das Überschreiten der Grenzen eines Zeichenfolgenpuffers durch eine Funktion, die die Länge des Puffers nicht gegen die Länge der geschriebenen Zeichenfolge überprüfen kann.
     
@@ -296,47 +296,47 @@ Die häufigsten Probleme sind wie folgt:
     
 ### <a name="rules-for-strings"></a>Regeln für Zeichenfolgen
 
-Wie bei der **XLOPER**/ **XLOPER**s, Regeln und Sie befolgen Richtlinien vorhanden sind. Die Richtlinien sind die gleichen wie im vorherigen Abschnitt. Die Regeln hier sind eine Erweiterung der Regeln speziell für Zeichenfolgen.
+Wie bei **XLOPER**/ **XLOPER**s gibt es Regeln und Richtlinien, die Sie beachten sollten. Die Richtlinien sind identisch mit denen im vorherigen Abschnitt. Die folgenden Regeln sind eine Erweiterung der Regeln, die speziell für Zeichenfolgen gelten.
   
  **Regeln:**
   
-- Versuchen Sie nicht, Speicher freigeben oder diese überschreiben soll Zeichenfolge **XLOPER**/ **XLOPER12**s oder einfache Länge gezählt oder Null endende Zeichenfolgen als Argumente an die XLL-Funktion übergeben. Sie sollten diese Argumente als schreibgeschützt behandeln.
+- Versuchen Sie nicht, Speicher freizugeben oder Zeichenfolgen-**XLOPER**/ **XLOPER12**s bzw. einfache Zeichenfolgen mit Längenzählung oder NULL-Terminierung zu überschreiben, die als Argumente an Ihre XLL-Funktion übergeben werden. Sie sollten diese Argumente als schreibgeschützt behandeln.
     
-- Excel belegt, in dem Speicher für eine Zeichenfolge **XLOPER**/ **XLOPER12** für den Rückgabewert einer Rückruffunktion C-API **XlFree** verwenden, um es frei, oder **XlbitXLFree** festgelegt, wenn es in Excel aus eine XLL-Funktion zurückgeben. 
+- Wenn Excel Speicher für ein Zeichenfolgen-**XLOPER**/ **XLOPER12** für den Rückgabewert einer C-API-Rückruffunktion zuweist, verwenden Sie **xlFree**, um diesen freizugeben, oder legen Sie **xlbitXLFree** fest, wenn Sie ihn aus einer XLL-Funktion an Excel zurückgeben möchten. 
     
-- In dem die DLL dynamisch weist eines Zeichenfolgenpuffers für eine **XLOPER**/ **XLOPER12**, es auf eine Weise konsistent mit, wie Sie zugewiesen, wenn Sie fertig oder **XlbitDLLFree** festgelegt, wenn es in Excel aus eine XLL-Funktion zurückgeben frei, und klicken Sie dann in freizugeben **xlAutoFree** /  **xlAutoFree12**.
+- Wenn die DLL einen Zeichenfolgenpuffer dynamisch für ein **XLOPER**/ **XLOPER12** zuweist, geben Sie diesen auf eine Art und Weise frei, die damit konsistent ist, wie er nach Abschluss zugewiesen wurde, oder legen Sie **xlbitDLLFree** fest, wenn Sie ihn aus einer XLL-Funktion an Excel zurückgeben möchten, und geben Sie ihn dann in **xlAutoFree**/ **xlAutoFree12** frei.
     
-- Wenn Excel Speicher für ein zurückgegebenes zur DLL in einem Aufruf der C-API **XltypeMulti** Array zugewiesen hat, eine beliebige Zeichenfolge **XLOPER**nicht überschreiben/ **XLOPER12**s innerhalb des Arrays. Solche Arrays müssen nur mit **XlFree**, freigegeben werden oder, wenn durch eine XLL-Funktion zurückgegeben wird, indem Sie **XlbitXLFree**festlegen.
+- Wenn Excel Speicher für ein **xltypeMulti**-Array zugewiesen hat, der in einem Aufruf der C-API an Ihre DLL zurückgegeben wird, überschreiben Sie keine Zeichenfolgen-**XLOPER**/ **XLOPER12**s innerhalb des Arrays. Solche Arrays dürfen nur mithilfe von **xlFree** freigegeben werden, oder durch Festlegen von **xlbitXLFree**, wenn sie von einer XLL-Funktion zurückgegeben werden.
     
 ### <a name="string-types-supported"></a>Unterstützte Zeichenfolgentypen
 
-**C-API XltypeStr XLOPER/XLOPER12s**
+**xltypeStr XLOPER/XLOPER12s von C-API**
 
-|** Byte-Zeichenfolgen: ** XLOPER ***|** Breit Zeichenfolgen: ** XLOPER12 ***|
+|**Bytezeichenfolgen: **XLOPER****|**Zeichenfolgen für Breitzeichen: ** XLOPER12****|
 |:-----|:-----|
-|Alle Versionen von Excel  <br/> |Starten in Excel 2007  <br/> |
-|Max. Länge: 255 erweiterte ASCII-Bytes  <br/> |Maximale Länge 32.767 Unicode-Zeichen  <br/> |
+|Alle Versionen von Excel  <br/> |Ab Excel 2007  <br/> |
+|Maximale Länge: 255 erweiterte ASCII-Bytes  <br/> |Maximale Länge 32.767 Unicode-Zeichen  <br/> |
 |Erstes Byte (nicht signiert) = Länge  <br/> |Erstes Unicode-Zeichen = Länge  <br/> |
    
 > [!IMPORTANT]
-> Gehen Sie nicht null-Terminierung von **XLOPER** oder **XLOPER12** Zeichenfolgen. 
+> Gehen Sie nicht davon aus, dass **XLOPER**- oder **XLOPER12**-Zeichenfolgen auf NULL enden. 
   
 **C/C++-Zeichenfolgen**
 
-|**Byte-Zeichenfolgen**|**Zeichenfolgen**|
+|**Bytezeichenfolgen**|**Zeichenfolgen für Breitzeichen**|
 |:-----|:-----|
-|NULL endende (**Char** *) "C" die Maximallänge: 255 erweiterte ASCII-Bytes  <br/> |NULL endende (**Wchar_t** *) "C %" maximale Länge 32.767 Unicode-Zeichen  <br/> |
-|Länge gezählt (**ohne Vorzeichen** *) "D"  <br/> |Länge gezählt (**Wchar_t** *) "D %"  <br/> |
+|Null-Terminierung (**Zeichen** *) "C" Maximale Länge: 255 erweiterte ASCII-Bytes  <br/> |Null-Terminierung (**wchar_t** *) "C%" Maximale Länge 32.767 Unicode-Zeichen  <br/> |
+|Längenzählung (**nicht signiertes Zeichen** *) "D"  <br/> |Längenzählung (**wchar_t** *) "D%"  <br/> |
    
 ### <a name="strings-in-xltypemulti-xloperxloper12-arrays"></a>Zeichenfolgen in xltypeMulti XLOPER/XLOPER12-Arrays
 
-In vielen Fällen wird ein Array **XltypeMulti** für die Verwendung in Ihrer DLL/XLL in Excel erstellt. Einige Funktionen der XLM-Informationen zurückgeben solche Arrays. Beispielsweise gibt die C-API-Funktion **XlfGetWorkspace**, wenn das Argument *44* übergeben ein Array mit Zeichenfolgen, die derzeit registrierten DLL-Verfahren beschreiben. Der C-API-Funktion **XlfDialogBox** gibt eine geänderte Kopie der Array-Argument, das tiefe Kopien der Zeichenfolgen enthält. Möglicherweise ist am häufigsten eine XLL ein Array **XltypeMulti** stößt, an dem es als Argument an eine XLL-Funktion übergeben wurde, oder wurde aus einem Bereichsbezug in diesen Typ umgewandelt wurde. In diesen Fällen letzteren erstellt Excel tiefe Kopien von Zeichenfolgen in den Zellen der Datenquelle und verweist auf diese in das Array. 
+In vielen Fällen erstellt Excel ein **xltypeMulti**-Array zur Verwendung in Ihrer DLL/XLL. Einige der XLM-Informationsfunktionen geben solche Arrays zurück. Die C-API-Funktion **xlfGetWorkspace** gibt beispielsweise ein Array mit Zeichenfolgen zurück, die alle die derzeit registrierten DLL-Prozeduren beschreiben, wenn das Argument *44* übergeben wird. Die C-API-Funktion **xlfDialogBox** gibt eine geänderte Kopie ihres Arrayarguments zurück, das tiefe Kopien der Zeichenfolgen enthält. Am häufigsten trifft eine XLL auf ein **xltypeMulti**-Array, wo ein Argument an eine XLL-Funktion übergeben wurde, oder dieser Typ wurde ihr von einem Bereichsbezug aufgezwungen. In diesen Fällen erstellt Excel tiefe Kopien der Zeichenfolgen in den Quellzellen und zeigt innerhalb des Arrays auf diese. 
   
-Sie möchten diese Zeichenfolgen in der DLL zu ändern, sollten Sie eigene Tiefen Kopien erstellen. Wenn Sie Ihre eigene **XltypeMulti** Arrays erstellen, setzen Sie kein Excel zugeordneter Zeichenfolgen **XLOPER**/ **XLOPER12**s darin enthaltenen. Diese Risiken Sie nicht freigeben diese ordnungsgemäß später oder nicht in allen freigeben. Sie sollten erneut, tiefe Kopien der Zeichenfolgen und Zeiger auf die Kopien im Array gespeichert.
+Wenn Sie diese Zeichenfolgen in Ihrer DLL ändern möchten, sollten Sie Ihre eigenen tiefen Kopien erstellen. Wenn Sie eigene **xltypeMulti**-Arrays erstellen, platzieren Sie keine von Excel zugewiesenen Zeichenfolgen-**XLOPER**/ **XLOPER12**s darin. Auf diese Weise besteht das Risiko, dass Sie sie später nicht korrekt oder gar nicht freigeben. Sie sollten erneut tiefe Kopien der Zeichenfolgen erstellen und Zeiger auf die Kopien im Array speichern.
   
  **Beispiele**
   
-Die folgende Beispielfunktion erstellt eine dynamisch zugeordnete Kopie einer Länge gezählt Unicode-Zeichenfolge. Beachten Sie, dass der Aufrufer letztlich in diesem Beispiel wird mit **Löschen**[] reservierten Speicher freigeben und beendet muss, dass die Source-Zeichenfolge nicht angenommen wird, null sein. Die Zeichenfolge Kopie abgeschnitten bei Bedarf für Sicherheit und ist nicht null beendet.
+Die folgende Beispielfunktion erstellt eine dynamisch zugewiesene Kopie einer Unicode-Länge mit Längenbeschränkung. Beachten Sie, dass der Aufrufer letztendlich den in diesem Beispiel zugewiesenen Speicher mithilfe von **delete**[] freigeben muss und dass für die Quellzeichenfolge keine Null-Terminierung angenommen wird. Die kopierte Zeichenfolge wird aus Sicherheitsgründen abgeschnitten und endet nicht auf NULL.
   
 ```cs
 #include <string.h>
@@ -361,7 +361,7 @@ wchar_t * deep_copy_wcs(const wchar_t *p_source)
 }
 ```
 
-Diese Funktion kann dann sicher verwendet werden zum Kopieren von einer **XLOPER12**wie in der folgenden exportierbar XLL-Funktion dargestellt, die eine Kopie des Arguments zurückgibt, wenn es sich um eine Zeichenfolge handelt. Alle anderen Typen werden als eine leere Zeichenfolge zurückgegeben. Beachten Sie, dass die Bereiche nicht behandelt werden – gibt die Funktion **#VALUE!**. Die Funktion muss registriert werden, als ein Argument Type U nutzen, sodass Verweise als Werte übergeben werden. Dies ist gleichbedeutend mit der integrierten Arbeitsblattfunktion **T()** , mit der Ausnahme, dass **AsText** auch Fehler in leere Zeichenfolgen konvertiert. In diesem Codebeispiel wird vorausgesetzt, dass diese **xlAutoFree12** der Zeiger übergebenen und auch den Inhalt, der mithilfe des **Löschen**frei.
+Diese Funktion kann dann sicher zum Kopieren einer **XLOPER12** verwendet werden, wie in der folgenden exportierbaren XLL-Funktion dargestellt, die eine Kopie ihrer Argumente zurückgibt, wenn es sich um eine Zeichenfolge handelt. Alle anderen Typen werden als eine Zeichenfolge der Länge Null zurückgegeben. Beachten Sie, dass Bereiche nicht verarbeitet werden, die Funktion gibt **#VALUE!** zurück. Die Funktion muss so registriert werden, dass sie ein Argument vom Typ U verwendet, damit Verweise als Werte übergeben werden. Dies entspricht der integrierten Arbeitsblattfunktion **T()**, mit der Ausnahme, dass **AsText** auch Fehler in leere Zeichenfolgen konvertiert. In diesem Codebeispiel wird vorausgesetzt, dass **xlAutoFree12** den übergebenen Zeiger und auch dessen Inhalt mithilfe von **delete** freigibt.
   
 ```cs
 LPXLOPER12 WINAPI AsText(LPXLOPER12 pArg)
@@ -398,18 +398,18 @@ LPXLOPER12 WINAPI AsText(LPXLOPER12 pArg)
 
 ### <a name="returning-modify-in-place-string-arguments"></a>Zurückgeben von Modify-in-Place-Zeichenfolgenargumenten
 
-Argumente als Typen registriert, **F**, **G**, **F %** und **% G** direkt bearbeitet werden können. Wenn Excel Zeichenfolgenargumente für diese Typen vorbereitet wird, erstellt es einen Puffer maximale Länge. Klicken Sie dann kopiert zu übergebende Argumentzeichenfolge in, die, selbst wenn diese Zeichenfolge sehr wesentlich kürzer wird. Auf diese Weise können die XLL-Funktion, die ihren Rückgabewert direkt in den gleichen Arbeitsspeicher zu schreiben. 
+Argumente, die als die Typen **F**, **G**, **F%** und **G%** registriert sind, können direkt bearbeitet werden. Wenn Excel Zeichenfolgenargumente für diese Typen vorbereitet, wird ein Puffer mit maximaler Länge erstellt. Dann wir die Argumentzeichenfolge in den Puffer kopiert, auch wenn diese Zeichenfolge viel kürzer ist. Auf diese Weise kann die XLL- ihren Rückgabewert direkt in den gleichen Speicher schreiben. 
   
 Die Puffergößen für diese Typen sind wie folgt:
   
-- **Byte-Zeichenfolgen:** 256 Byte, einschließlich der Leistungsindikator Länge (Typ G) oder Null-Beendigung (Typ F). 
+- **Bytezeichenfolgen:** 256 Bytes, einschließlich der Längenzählung (Typ G) oder Null-Terminierung (Typ F). 
     
-- **Unicode-Zeichenfolgen:** 32.768 Breitzeichen (65.536 Byte) einschließlich der Leistungsindikator Länge (Typ G %) oder Null-Beendigung (Typ F %). 
+- **Unicode-Zeichenfolgen:** 32.768 Breitzeichen (65.536 Bytes), einschließlich der Längenzählung (Typ G%) oder Null-Terminierung (Typ F%). 
     
 > [!NOTE]
 > Sie können eine solche Funktion nicht direkt aus VBA (Visual Basic für Applikationen) aufrufen, da Sie nicht sicherstellen können, dass ein ausreichend großer Puffer zugewiesen wurde. Sie können eine solche Funktion nur aus einer anderen DLL sicher aufrufen, wenn Sie explizit einen ausreichend großen Puffer übergeben haben. 
   
-Hier ist ein Beispiel für eine XLL-Funktion, die übergebenen Null endende Breitzeichen Zeichenfolge mit der Standardbibliothek Funktion **Wcsrev**macht. Das Argument würde in diesem Fall als Typ **F %** erfasst werden.
+Nachfolgend sehen Sie ein Beispiel für eine XLL-Funktion, die ein übergebenes, auf NULL endendes Breitzeichen mithilfe der standardmäßigen Bibliotheksfunktion **wcsrev** reserviert. Das Argument würde in diesem Fall als Typ **F%** registriert.
   
 ```cs
 void WINAPI reverse_text_xl12(wchar_t *text)
@@ -420,9 +420,9 @@ void WINAPI reverse_text_xl12(wchar_t *text)
 
 ## <a name="persistent-storage-binary-names"></a>Beständiger Speicher (binäre Namen)
 
-Binäre Name definiert und zugeordnete Blöcke mit Binary, d. h., unstrukturierte, Daten, die zusammen mit der Arbeitsmappe gespeichert ist. Sie verwenden die Funktion [XlDefineBinaryName](xldefinebinaryname.md)erstellt werden, und die Daten werden mithilfe der Funktion [XlGetBinaryName](xlgetbinaryname.md)abgerufen. Beide Funktionen werden in der-Funktionsreferenz ausführlicher beschrieben (siehe [C-API-Funktionen, dass können werden aufgerufen, nur aus einer DLL oder XLL](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)), und beide verwenden **XltypeBigData** **XLOPER**/ **XLOPER12**. 
+Binäre Namen werden mit Blöcken von Binärdaten definiert und zugeordnet, d. h., unstrukturierte Daten, die zusammen mit der Arbeitsmappe gespeichert werden. Sie werden mit der Funktion [xlDefineBinaryName](xldefinebinaryname.md) erstellt, und die Daten werden mit der Funktion [xlGetBinaryName](xlgetbinaryname.md) abgerufen. Beide Funktionen werden in der Funktionsreferenz ausführlicher beschrieben (siehe [C-API-Funktionen, die nur von einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)), und beide verwenden **xltypeBigData** **XLOPER**/ **XLOPER12**. 
   
-Informationen zu bekannten Problemen, die in der Praxis von binären Namen einschränken, finden Sie unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+Weitere Informationen zu bekannten Problemen, durch die die praktischen Anwendungen von binären Namen eingeschränkt werden, finden Sie unter [Bekannte Probleme in Excel XLL Development](known-issues-in-excel-xll-development.md).
   
 ## <a name="excel-stack"></a>Excel-Stapel
 
@@ -434,11 +434,11 @@ Excel gibt seinen Stapelspeicher für alle geladenen DLLs frei. Der Stapelspeich
     
 - Deklarieren Sie keine sehr großen automatischen Variablenstrukturen im Funktionscode. Deklarieren Sie sie ggf. als statisch.
     
-- Rufen Sie Funktionen nicht rekursiv auf, es sei denn, Sie sind sicher, dass die Rekursionstiefe immer flach ist. Verwenden Sie stattdessen eine Schleife.
+- Rufen Sie Funktionen nicht rekursiv auf, es sei denn, Sie sind sicher, dass die Rekursionstiefe immer flach ist. Versuchen Sie es stattdessen mit einer Schleife.
     
-Wenn eine DLL wieder in Excel mithilfe der C-API aufruft, prüft Excel zunächst, ob genügend Speicherplatz vorhanden ist, auf dem Stapel für den ungünstigsten Fall Usage-Anruf, der hergestellt werden konnte. Wenn sie davon, dass möglicherweise nicht genügend Platz überzeugt, schlägt fehl den Anruf an sicheren, werden, obwohl es tatsächlich möglicherweise genügend Platz für dieses bestimmte Aufrufs wurden. In diesem Fall Zurückgeben der Rückrufe der Code **xlretFailed zurück**. Für die normale Verwendung der C-API und die Stack ist dies ein unwahrscheinlich Ursache des Fehlers eines Aufrufs C-API.
+Wenn eine DLL-Datei einen Rückruf in Excel mithilfe der C-API unternimmt, überprüft Excel zuerst, ob genügend Speicherplatz auf dem Stapel für den Aufruf mit der größten Nutzung vorhanden ist. Wenn Excel denkt, dass möglicherweise nicht genügend Platz vorhanden ist tritt ein Fehler bei dem Aufruf auf, auch wenn möglicherweise ausreichend Speicherplatz für diesen bestimmten Anruf vorhanden gewesen wäre. In diesem Fall gibt der Rückruf den Code **xlretFailed** zurück. Für eine normale Verwendung der C-API und des Stapels ist dies eine unwahrscheinliche Ursache für den Fehler eines C-API-Aufrufs.
   
-Wenn Sie betreffenden oder einfach neugierig sind oder Stack Speicherplatzmangel als einen Grund für ein Unerklärliches Fehler entfernen möchten, können Sie feststellen, mit einem Aufruf der Funktion [XlStack](xlstack.md) wie viel Speicherplatz vorhanden ist. 
+Wenn Sie sich Sorgen über den Stapelspeicher machen oder einfach nur neugierig sind oder vielleicht den mangelnden Stapelspeicher als Ursache für einen unerklärlichen Fehler beheben möchten, können Sie herausfinden, wie viel Stapelspeicher vorhanden ist, indem Sie die Funktion [xlStack](xlstack.md) aufrufen. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -446,7 +446,7 @@ Wenn Sie betreffenden oder einfach neugierig sind oder Stack Speicherplatzmangel
 
 [Multithread-Neuberechnung in Excel](multithreaded-recalculation-in-excel.md)
   
-[Multithreading und Arbeitsspeicher Konflikte in Excel](multithreading-and-memory-contention-in-excel.md)
+[Multithreading und Speicherkonflikte in Excel](multithreading-and-memory-contention-in-excel.md)
   
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

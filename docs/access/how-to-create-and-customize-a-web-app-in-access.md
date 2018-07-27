@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Anpassen einer Web-app in Access
+title: Erstellen und Anpassen einer Web-App in Access
 manager: kelbow
 ms.date: 08/18/2017
 ms.audience: Developer
@@ -8,15 +8,15 @@ localization_priority: Normal
 ms.assetid: 628745f4-82e9-4838-9726-6f3e506a654f
 ms.openlocfilehash: 7a41bc4c9509f1d9cec49003fb775a3be2768703
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19790229"
 ---
-# <a name="create-and-customize-a-web-app-in-access"></a>Erstellen und Anpassen einer Web-app in Access
+# <a name="create-and-customize-a-web-app-in-access"></a>Erstellen und Anpassen einer Web-App in Access
 
 > [!IMPORTANT]
-> [!WICHTIG] Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 Access 2013 umfasst ein neues Anwendungsmodell, das Experten das schnelle Erstellen webbasierter Anwendungen ermöglicht. In Access sind eine Reihe an Vorlagen enthalten, die Sie für den schnellen Einstieg beim Erstellen Ihrer Anwendung verwenden können.
 
@@ -30,9 +30,9 @@ Um die Schritte in diesem Beispiel auszuführen, benötigen Sie Folgendes:
     
 - Eine SharePoint-Entwicklungsumgebung
     
-Weitere Informationen zum Einrichten Ihrer SharePoint-Entwicklungsumgebung finden Sie unter [Einrichten einer Umgebung allgemeine Entwicklung für SharePoint](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint). 
+Weitere Informationen über das Einrichten Ihrer SharePoint-Entwicklungsumgebung finden Sie unter [Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint). 
   
-Weitere Informationen über das Abrufen von Access und SharePoint finden Sie unter [Downloads](http://msdn.microsoft.com/en-US/office/apps/fp123627).
+Weitere Informationen über das Abrufen von Access und SharePoint finden Sie unter [Downloads](http://msdn.microsoft.com/de-DE/office/apps/fp123627).
 
 <a name="ac15_CreateAndCustomizeWebApp_CreateTheApp"> </a>
 
@@ -52,7 +52,7 @@ Angenommen, Sie möchten eine Access-App erstellen, die Probleme für Ihr Untern
     
    **Abbildung 1. Vorlagen für die Problemverfolgung**
 
-   ![Vorlagen, die die Suche nach Problemen übereinstimmen] (media/odc_Access15_CreateAndCustomizeWebApp_Figure01.JPG "Vorlagen, die die Suche nach Problemen übereinstimmen")
+   ![Vorlagen für die Problemverfolgung](media/odc_Access15_CreateAndCustomizeWebApp_Figure01.JPG "Vorlagen für die Problemverfolgung")
   
 4. Wählen Sie **Probleme** aus.
     
@@ -63,15 +63,15 @@ Access erstellt einen Satz an Tabellen und Ansichten.
 
 Damit Sie verstehen, ob das Schema und die Ansichten Ihre Anforderungen erfüllen, sollten Sie sie prüfen.
   
-Die durch Auswahl des Schemas für Probleme erstellten Tabellen werden im Kachelbereich angezeigt. Die Tabellen „Probleme", „Kunde" und „Mitarbeiter" bilden den Schwerpunkt der App. In der Tabelle „Probleme" sind Informationen über jedes Problem gespeichert. Jedes Problem wird durch einen Mitarbeiter geöffnet und auf Veranlassung eines Kunden einem Mitarbeiter zugewiesen. Die Tabellen „Verwandte Probleme" und „Problemberichte" spielen eine unterstützende Rolle in der App. Die Tabelle „Verwandte Probleme" ermöglicht Ihnen, ein Problem mit einem anderen zu verknüpfen. Die Tabelle „Problemberichte" speichert mehrere Kommentare für ein einzelnes Problem.
+Die durch Auswahl des Schemas für Probleme erstellten Tabellen werden im Kachelbereich angezeigt. Die Tabellen „Probleme“, „Kunde“ und „Mitarbeiter“ bilden den Schwerpunkt der App. In der Tabelle „Probleme“ sind Informationen über jedes Problem gespeichert. Jedes Problem wird durch einen Mitarbeiter geöffnet und auf Veranlassung eines Kunden einem Mitarbeiter zugewiesen. Die Tabellen „Verwandte Probleme“ und „Problemberichte“ spielen eine unterstützende Rolle in der App. Die Tabelle „Verwandte Probleme“ ermöglicht Ihnen, ein Problem mit einem anderen zu verknüpfen. Die Tabelle „Problemberichte“ speichert mehrere Kommentare für ein einzelnes Problem.
   
 In einer Access-Desktop-PC-Datenbank (.accdb) werden die Beziehungen zwischen Tabellen im Fenster **Beziehungen** verwaltet. Access 2013-Apps verwalten Beziehungen durch die Verwendung von Feldern, die auf den Datentyp **Nachschlagen** festgelegt sind. Im Folgenden überprüfen wir die Beziehungen für die Tabelle „Probleme", indem wir mit der rechten Maustaste auf die Kachel **Probleme** klicken und **Tabelle bearbeiten** auswählen.
   
-Das Feld **Kunde** bezieht sich auf der **Customers** -Tabelle. Um die Beziehung zu untersuchen, wählen Sie das Feld **Kunde** aus, und wählen Sie dann **Lookups ändern**. Der **Nachschlage-Assistent** wird angezeigt, wie in Abbildung 2 dargestellt. 
+Das Feld **Kunden** bezieht sich auf die Tabelle **Kunden**. Um die Beziehung zu untersuchen, wählen Sie das Feld **Kunde** und dann **Nachschlagevorgänge ändern**. Der **Nachschlage-Assistent** wird angezeigt, wie in Abbildung 2 dargestellt. 
   
-**Abbildung 2. Der die Beziehung zur Tabelle „Kunden" anzeigende Nachschlage-Assistent**
+**Abbildung 2. Der die Beziehung zur Tabelle „Kunden“ anzeigende Nachschlage-Assistent**
 
-![Suchassistent mit Anzeige der Beziehung] (media/odc_Access15_CreateAndCustomizeWebApp_Figure02.jpg "Suchassistent mit Anzeige der Beziehung")
+![Nachschlage-Assistent zeigt die Beziehung an](media/odc_Access15_CreateAndCustomizeWebApp_Figure02.jpg "Nachschlage-Assistenten zeigt die Beziehung an")
   
 Das Dialogfeld „Nachschlage-Assistent" zeigt, dass das Feld **Kunde** mit der Tabelle **Kunden** verknüpft ist und dass **Anzeigename Vorname Nachname** von der Tabelle **Kunden** zurückgegeben wird. 
   
@@ -79,9 +79,9 @@ Die Felder **Geöffnet von**, **Zugewiesen an** und **Geändert von** stehen mit
   
 Schließen Sie die Tabelle **Probleme**, und überprüfen Sie den Kachelbereich. Die oberen drei Kacheln für die Tabellen **Probleme**, **Kunden** und **Mitarbeiter** werden analog zur Darstellung in Abbildung 3 anders dargestellt als die unteren zwei Kacheln für die Tabellen **Verwandte Probleme** und **Problemberichte**. 
   
-**Abbildung 3. Kachelbereich für das Schema „Probleme"**
+**Abbildung 3. Kachelbereich für das Schema „Probleme“**
 
-![Kachelbereich für das problemschema] (media/odc_Access15_CreateAndCustomizeWebApp_Figure03.jpg "Kachelbereich für das problemschema")
+![Kachelbereich für das Schema „Probleme“](media/odc_Access15_CreateAndCustomizeWebApp_Figure03.jpg "Kachelbereich für das Schema „Probleme“")
   
 Die Tabellen **Verwandte Probleme** und **Problemberichte** sind abgeblendet, da sie dem Benutzer im Webbrowser nicht angezeigt werden sollen. 
   
@@ -93,25 +93,25 @@ Verwenden Sie die Ansichtsauswahl zum Auswählen einer der drei verfügbaren Ans
   
 **Abbildung 4. Ansichtsauswahl**
 
-![Ansichtsauswahl] (media/odc_Access15_CreateAndCustomizeWebApp_Figure04.jpg "Ansichtsauswahl")
+![Ansichtsauswahl](media/odc_Access15_CreateAndCustomizeWebApp_Figure04.jpg "Ansichtsauswahl")
   
 Durch das Auswählen von **Liste** wird die Ansicht **Kundenliste** aktiviert, die eine Ansicht vom Typ „Detailinformationen" ist. „Detailinformationen" ist eine der durch Access automatisch generierten Ansichten, wenn Sie eine Tabelle erstellen. Das Hauptmerkmal einer Ansicht vom Typ „Detailinformationen" ist der Listenbereich, der im linken Bereich der Ansicht angezeigt wird. Der Listenbereich wird zum Filtern und Navigieren der in der Ansicht enthaltenen Datensätze verwendet. Für das Implementieren einer durchsuchbaren Liste in einer Access-Desktop-PC-Datenbank müsste benutzerdefinierter Code geschrieben werden. 
   
-**Datenblatt** auswählen, wird die **Kunden** Datenblattansicht geöffnet. Datenblatt ist die andere Art der Ansicht, die Access automatisch generiert, wenn Sie eine Tabelle erstellen. Datenblattansichten sind hilfreich für Personen, die es leichter zu geben, Sortieren und Filtern von Daten in einer Kalkulationstabelle-ähnlichen Weise. 
+Wenn Sie **Datenblatt** auswählen, wird die Ansicht **Kundendatenblatt** angezeigt. Das Datenblatt ist die andere Ansicht, die Access automatisch generiert, wenn Sie eine Tabelle erstellen. In Datenblattansichten können Sie Daten ähnlich wie bei einer Kalkulationstabelle eingeben, sortieren und filtern. 
   
-Durch das Auswählen von „Gruppen" wird eine Ansicht vom Typ „Zusammenfassung" geöffnet. Ansichten vom Typ „Zusammenfassung" können zum Gruppieren von Datensätzen auf Grundlage eines Felds und zum optionalen Berechnen einer Summe oder eines Mittelwerts verwendet werden.
+Durch das Auswählen von „Gruppen“ wird eine Ansicht vom Typ „Zusammenfassung“ geöffnet. Ansichten vom Typ „Zusammenfassung“ können zum Gruppieren von Datensätzen auf Grundlage eines Felds und zum optionalen Berechnen einer Summe oder eines Mittelwerts verwendet werden.
   
 Verwenden Sie beim Hinzufügen von Kunden die Aktionsleiste zum Hinzufügen, Bearbeiten, Speichern, Löschen von Datensätzen und zum Abbrechen von Bearbeitungen. Bei der Aktionsleiste handelt es sich um eine anpassbare Symbolleiste, die analog zur Darstellung in Abbildung 5 in jeder Ansicht oben angezeigt wird.
   
 **Abbildung 5. Aktionsleiste**
 
-![Aktionsleiste] (media/odc_Access15_CreateAndCustomizeWebApp_Figure05.jpg "Aktionsleiste")
+![Aktionsleiste](media/odc_Access15_CreateAndCustomizeWebApp_Figure05.jpg "Aktionsleiste")
   
 Sobald Sie einige Kunden und Mitarbeiter hinzugefügt haben, öffnen Sie die Ansicht „Problemliste", und fügen Sie ein Problem hinzu. Wenn Sie den Namen eines Kunden in das Feld „Kunde" eingeben, wird analog zur Darstellung in Abbildung 6 mindestens ein Kundenname angezeigt.
   
 **Abbildung 6. AutoVervollständigen-Steuerelement**
 
-![Steuerelement ' AutoVervollständigen '] (media/odc_Access15_CreateAndCustomizeWebApp_Figure06.jpg "Steuerelement ' AutoVervollständigen '")
+![AutoVervollständigen-Steuerelement](media/odc_Access15_CreateAndCustomizeWebApp_Figure06.jpg "AutoVervollständigen-Steuerelement")
   
 Das Feld „Kunde" ist ein AutoVervollständigen-Steuerelement. Das AutoVervollständigen-Steuerelement zeigt eine Liste von Datensätzen an, die mit dem, was Sie in das Feld eingeben, übereinstimmen. Dadurch wird die Genauigkeit der Dateneingabe sichergestellt.
   
@@ -120,7 +120,7 @@ Das Feld „Kunde" ist ein AutoVervollständigen-Steuerelement. Das AutoVervolls
 
 Da Sie die App nun begutachtet haben, stellen Sie fest, dass die Ansicht „Problemliste" keine Kontaktinformationen für den Kunden enthält. Im Folgenden passen wir die App an, um der Tabelle „Probleme" die geschäftliche Telefonnummer des Kunden hinzuzufügen, während das Problem erstellt wird.
   
-### <a name="to-add-a-field-to-the-issues-table"></a>So fügen Sie der Tabelle „Probleme" ein Feld hinzu
+### <a name="to-add-a-field-to-the-issues-table"></a>So fügen Sie der Tabelle „Probleme“ ein Feld hinzu
 
 1. Öffnen Sie die App in Access.
     
@@ -132,7 +132,7 @@ Da Sie die App nun begutachtet haben, stellen Sie fest, dass die Ansicht „Prob
     
 5. Wählen Sie **Speichern** aus.
     
-6. Schließen Sie die Tabelle „Probleme".
+6. Schließen Sie die Tabelle „Probleme“.
     
 Da nun ein Feld zum Speichern der Telefonnummer vorhanden ist, erstellen wir nun ein Datenmakro zum Nachschlagen der Kontaktinformationen.
   
@@ -153,11 +153,11 @@ Da nun ein Feld zum Speichern der Telefonnummer vorhanden ist, erstellen wir nun
 7. Wählen Sie **SetReturnVar** im Dropdownmenü **Neue Aktion hinzufügen** aus. 
     
     > [!NOTE]
-    > [!HINWEIS] Es werden zwei Dropdownmenüs vom Typ **Neue Aktion hinzufügen** im Block **LookupRecord** und ein weiteres außerhalb des Blocks **LookupRecord** angezeigt. Sie sollten analog zur Darstellung in Abbildung 7 das Dropdownmenü **Neue Aktion hinzufügen** im Block **LookupRecord** verwenden. 
+    > Es werden zwei Dropdownmenüs vom Typ **Neue Aktion hinzufügen** im Block **LookupRecord** und ein weiteres außerhalb des Blocks **LookupRecord** angezeigt. Sie sollten analog zur Darstellung in Abbildung 7 das Dropdownmenü **Neue Aktion hinzufügen** im Block **LookupRecord** verwenden. 
   
-   **Abbildung 7. Dropdownmenü „Neue Aktion hinzufügen"**
+   **Abbildung 7. Dropdown „Neue Aktion hinzufügen“**
 
-   ![Dropdownmenü neue Aktion hinzufügen] (media/odc_Access15_CreateAndCustomizeWebApp_Figure07.jpg "Dropdownmenü neue Aktion hinzufügen")
+   ![Dropdown „Neue Aktion hinzufügen“](media/odc_Access15_CreateAndCustomizeWebApp_Figure07.jpg "Dropdown „Neue Aktion hinzufügen“")
   
 8. Geben Sie **ContactPhone** in das Feld **Name** ein. 
     
@@ -169,13 +169,13 @@ Da nun ein Feld zum Speichern der Telefonnummer vorhanden ist, erstellen wir nun
     
     **Abbildung 8. GetContactPhone-Datenmakro**
 
-    ![GetContactPhone-Datenmakro] (media/odc_Access15_CreateAndCustomizeWebApp_Figure08.jpg "GetContactPhone-Datenmakro")
+    ![GetContactPhone-Datenmakro](media/odc_Access15_CreateAndCustomizeWebApp_Figure08.jpg "GetContactPhone-Datenmakro")
   
 11. Schließen Sie die Entwurfsansicht für das Makro.
     
 Nun können wir dem Formular „Problemliste" das Feld **Telefonnummer** hinzufügen. 
   
-### <a name="to-add-the-contact-number-field-to-the-issues-list-form"></a>So fügen Sie das Feld „Telefonnummer" zum Formular „Problemliste" hinzu
+### <a name="to-add-the-contact-number-field-to-the-issues-list-form"></a>So fügen Sie das Feld „Telefonnummer“ zum Formular „Problemliste“ hinzu
 
 1. Wählen Sie die Tabelle **Probleme** aus. Dadurch wird das Formular „Problemliste" ausgewählt. 
     
@@ -207,7 +207,7 @@ Nun sollten wir ein Benutzeroberflächenmakro schreiben, welches das Feld **Tele
     
     Wenn Sie das zuvor erstellte GetContactPhone-Datenmakro auswählen, hat Access den Parameternamen und Rückgabewert für das Makro automatisch ausgefüllt.
     
-    Die Telefonnummer für den Kunden wird in einer Variablen namens „Phone" gespeichert.
+    Die Telefonnummer für den Kunden wird in einer Variablen namens „Phone“ gespeichert.
     
 6. Wählen Sie **SetProperty** im Dropdownmenü **Neue Aktion hinzufügen** aus. 
     
@@ -221,19 +221,19 @@ Nun sollten wir ein Benutzeroberflächenmakro schreiben, welches das Feld **Tele
     
     Das Makro sollte dem Makro in Abbildung 9 gleichen.
     
-    **Abbildung 9. Makro nach Aktualisierung**
+    **Abbildung 9. AfterUpdate-Makro**
 
-    ![Nach dem Update-Makro] (media/odc_Access15_CreateAndCustomizeWebApp_Figure09.jpg "Nach dem Update-Makro")
+    ![AfterUpdate-Makro](media/odc_Access15_CreateAndCustomizeWebApp_Figure09.jpg "AfterUpdate-Makro")
   
 11. Schließen Sie die Entwurfsansicht für das Makro.
     
-12. Schließen Sie die Ansicht „Problemliste". Wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden, Ihre Änderungen zu speichern. 
+12. Schließen Sie die Ansicht „Problemliste“. Wählen Sie **Ja** aus, wenn Sie dazu aufgefordert werden, Ihre Änderungen zu speichern. 
     
-Nun können wir die Anpassung mit Text versehen. Klicken Sie auf **App starten** zum Öffnen der App in Ihrem Webbrowser, und fügen Sie dann ein neues Problem hinzu. **Telefonnummer** im Feld Updates automatisch nach Eingabe der Name des Kunden wie in Abbildung 10 dargestellt. 
+Jetzt können Sie die Anpassung formulieren. Klicken Sie auf **App starten**, um die App in Ihrem Webbrowser zu öffnen, und fügen Sie dann ein neues Problem ein. Das Feld **Telefonnummer** wird automatisch aktualisiert, nachdem der Kundenname analog zur Darstellung in Abbildung 10 eingegeben wurde. 
   
-**Abbildung 10. Mit Telefonnummer aktualisierte Ansicht vom Typ „Probleme"**
+**Abbildung 10. Mit Telefonnummer aktualisierte Ansicht vom Typ „Probleme“**
 
-![Ansicht ' Probleme ' mit Telefonnummer aktualisiert] (media/odc_Access15_CreateAndCustomizeWebApp_Figure10.jpg "Ansicht ' Probleme ' mit Telefonnummer aktualisiert")
+![Mit Telefonnummer aktualisierte Ansicht vom Typ „Probleme“](media/odc_Access15_CreateAndCustomizeWebApp_Figure10.jpg "Mit Telefonnummer aktualisierte Ansicht vom Typ „Probleme“")
   
 ## <a name="conclusion"></a>Schlussbemerkung
 
@@ -241,7 +241,7 @@ Die Verwendung einer der in enthaltenen Schemavorlagen ist eine gute Einstiegsm�
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuigkeiten in Access für Entwickler](http://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
+- [Neuigkeiten für Access 2013-Entwickler](http://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
 - [Benutzerdefinierte Web-App-Referenz für Access](access-custom-web-app-reference.md)
   
 
