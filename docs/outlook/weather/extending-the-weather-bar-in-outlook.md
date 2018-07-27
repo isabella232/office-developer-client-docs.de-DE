@@ -10,7 +10,7 @@ ms.assetid: 3b355b98-dd7d-4f16-8257-367e5dd61b34
 description: Hier erhalten Sie Informationen zum Integrieren eines Wetterwebdiensts eines Drittanbieters in die Wetterleiste in Outlook 2013, um Wetterbedingungen für einen vom Benutzer ausgewählten Ort bereitzustellen.
 ms.openlocfilehash: 6b2462615813b056ec09168ab512d456e1a7bdd6
 ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19796100"
@@ -39,15 +39,15 @@ Der Benutzer kann einen anderen Wetterdienst für die Wetterleiste angeben. Dies
   
 1. Der Wetterdienst unterstützt eine Basis-URL zu einem Webdienst. Ein Contoso-Wetterwebdienst beispielsweise kann die Basis-URL http://service.contoso.com/data.aspx haben.
     
-2. Der Webdienst ermöglicht für Outlook das Anfügen der folgenden Parameter zur Basis-URL, um einen Ortscode anzufordern: 
+2. Mit dem Webdienst können die folgenden Parameter in Outlook an die Basis-URL angefügt werden, um einen Ortscode anzufordern: 
     
-   - Outputview = Search: dieser Parameter gibt an, dass die Anforderung einer Suche Speicherort ist.
+   - outputview = search: Dieser Parameter gibt an, dass es sich bei der Anforderung um eine Standortsuche handelt.
     
-   - Weasearchstr = _Ort_: dieser Parameter gibt den Speicherort, _Stadt_, für die der Benutzer eine Wettervorhersage (beispielsweise London benötigt).
+   - weasearchstr= _city_: Dieser Parameter gibt den Standort, also die _Stadt_ an, für die der Benutzer eine Wettervorhersage wünscht (z. B. London).
     
-   - Culture = _LCID_: dieser Parameter gibt die Kultur der Version von Office für den Benutzer auf diesem Computer installiert. Der LCID-Wert ist unter [Tags für die Identifizierung von Sprachen](http://www.ietf.org/rfc/rfc4646.txt) definiert.
+   - culture= _LCID_: Dieser Parameter gibt die Kultur der für den Benutzer auf diesem Computer installierten Office-Version an. Der LCID-Wert ist in [[RFC4646]-Tags für die Identifizierung von Sprachen](http://www.ietf.org/rfc/rfc4646.txt) definiert.
     
-   - Src = Outlook: dieser Parameter gibt an, dass Outlook die Client-Anwendung anfordern des Dienstes ist.
+   - src=outlook: Dieser Parameter gibt an, dass Outlook die Clientanwendung ist, die den Dienst anfordert.
     
    Mit diesen Parametern kann Outlook den vom Benutzer gewünschten Ort verwenden und, wie vom Wetterdienst unterstützt, nach dem dazugehörigen Ortscode suchen. Der Wetterdienst sendet dann als Antwort an Outlook einen Ortscode im XML-Format, der dem [Outlook Weather Location XML Schema](outlook-weather-location-xml-schema.md) folgt. Abbildung 2 fasst die Webdienstanforderung und den darauf zurückgegebenen Ortscode zusammen.
     
@@ -55,15 +55,15 @@ Der Benutzer kann einen anderen Wetterdienst für die Wetterleiste angeben. Dies
 
    ![Anforderung und Antwort zum Wetterstandort](media/ol15_WeatherBar_Fig02.gif)
   
-3. Mit dem Webdienst kann Outlook des Weiteren die folgenden Parameter anfügen, um Wettervorhersageinformationen für einen Ortscode anzufordern.
+3. Mit dem Webdienst kann Outlook zudem die folgenden Parameter anfügen, um Vorhersageinformationen für einen Ortscode anzufordern:
     
-   - Wealocations = _Code_: _Code_ in diesem Parameter ist ein Location-Code, die Outlook aus Schritt2 abgerufen, der die Position, die der Benutzer interessiert ist zugeordnet. 
+   - wealocations= _code_: _code_ steht in diesem Parameter für einen Ortscode, den Outlook in Schritt 2 abruft, und der dem vom Benutzer gewünschten Ort zugeordnet wird. 
     
-   - Weadegreetype = _Degreetype_: dieser Parameter gibt an, ob Metrik oder Verwendung Maßeinheiten für Temperatur verwendet. Geben Sie c für das metrische oder f für das imperiale Maßsystem für  _Temperatureinheiten_ an. Dieser Parameter ist optional und ist nicht immer in der Webdienstanforderung vorhanden.
+   - weadegreetype= _degreetype_: Dieser Parameter gibt an, ob das metrische oder imperiale Maßsystem für Temperatur verwendet wird. Geben Sie c für Metrisch oder f für Imperial unter _Degreetype_ ein. Dieser Parameter ist optional und ist nicht immer in der Webserviceanfrage vorhanden.
     
-   - Culture = _LCID_: dieser Parameter gibt die Kultur der Version von Office für den Benutzer auf diesem Computer installiert. Der LCID-Wert ist unter [Tags für die Identifizierung von Sprachen](http://www.ietf.org/rfc/rfc4646.txt) definiert.
+   - culture= _LCID_: Dieser Parameter gibt die Kultur der für den Benutzer auf diesem Computer installierten Office-Version an. Der LCID-Wert ist in [[RFC4646]-Tags für die Identifizierung von Sprachen](http://www.ietf.org/rfc/rfc4646.txt) definiert.
     
-   - Src = Outlook: dieser Parameter gibt an, dass Outlook die Client-Anwendung anfordern des Dienstes ist.
+   - src=outlook: Dieser Parameter gibt an, dass Outlook die Clientanwendung ist, die den Dienst anfordert.
     
    Diese Parameter ermöglichen Outlook die Verwendung des im Schritt 2 zurückgegebenen Ortscodes und fordern Webdienstdaten für die Wettervorhersage an. Der Webdienst sollte eine Antwort an Outlook mit den entsprechenden Wetterdaten in XML senden, die das [Outlook Weather Information XML Schema](outlook-weather-information-xml-schema.md) befolgen. In Abbildung 3 ist die Webdienstanforderung und die Antwort mit Wetterinformationen für einen bestimmten Ortscode dargestellt.
     
@@ -215,7 +215,7 @@ Die Wetterleiste im Outlook-Kalender verwendet standardmäßig MSN Wetter für d
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook Weather Location XML Schema](outlook-weather-location-xml-schema.md)   
+- [XML-Schema für Wetterstandort in Outlook](outlook-weather-location-xml-schema.md)   
 - [Outlook Weather Information XML Schema](outlook-weather-information-xml-schema.md)
     
 
