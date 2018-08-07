@@ -28,15 +28,15 @@ Diese Dokumentation gilt für die Implementierung der Messaging-API (MAPI) in Mi
 Vor Microsoft Office Outlook 2007 war die MAPI-Programmiererreferenz Teil der Microsoft Exchange-Dokumentation.
   
 > [!NOTE]
-> Da in Exchange die Verwendung von MAPI seit Microsoft Exchange Server 2007 keine gro�e Bedeutung mehr hat, ist die Unterst�tzung für die Exchange-Implementierung eingeschr�nkt. 
+> Da in Exchange die Verwendung von MAPI seit Microsoft Exchange Server 2007 keine große Bedeutung mehr hat, ist die Unterstützung für die Exchange-Implementierung eingeschränkt. 
   
-Die Outlook-Implementierung von MAPI unterscheidet sich von der Microsoft Exchange-Implementierung. Die Outlook-Implementierung ist für eine Ausf�hrung auf Clientcomputern optimiert und legt Wert auf geringe Wartezeit. Die Exchange-Implementierung ist für Server gedacht, bei denen hohe Verf�gbarkeit und besseres Multithreading wichtig sind.
+Die Outlook-Implementierung von MAPI unterscheidet sich von der Microsoft Exchange-Implementierung. Die Outlook-Implementierung ist für eine Ausführung auf Clientcomputern optimiert und legt Wert auf geringe Wartezeit. Die Exchange-Implementierung ist für Server gedacht, bei denen hohe Verfügbarkeit und besseres Multithreading wichtig sind.
   
 Verwenden Sie diese Dokumentation für Anwendungen auf Endbenutzersystemen. Verwenden Sie für Serveranwendungen die Exchange-Implementierung von MAPI, sofern zutreffend, oder verwenden Sie aktuelle Exchange-APIs, wie z. B. Exchange-Webdienste. Weitere Informationen zu Exchange-Webdiensten finden Sie in der [Exchange-Webdienstereferenz](http://msdn.microsoft.com/de-DE/library/bb204119.aspx).
   
-Es können m�glicherweise Anwendungen geschrieben werden, die mit der Outlook- oder der Exchange-Implementierung von MAPI funktionieren. Beispielsweise funktioniert MFCMAPI gut auf beiden Plattformen. Die Implementierungen haben viele gemeinsame Funktionen, es gibt jedoch offensichtliche und subtile Unterschiede. Sie m�ssen sorgf�ltig auf beiden Plattformen testen, wenn Sie m�chten, dass Ihre Anwendung in allen Umgebungen funktioniert. Diese Tests erfordern zwei Systeme, da das Ausf�hren beider Implementierungen auf demselben Betriebssystem nicht unterst�tzt wird.
+Es können möglicherweise Anwendungen geschrieben werden, die mit der Outlook- oder der Exchange-Implementierung von MAPI funktionieren. Beispielsweise funktioniert MFCMAPI gut auf beiden Plattformen. Die Implementierungen haben viele gemeinsame Funktionen, es gibt jedoch offensichtliche und subtile Unterschiede. Sie müssen sorgfältig auf beiden Plattformen testen, wenn Sie möchten, dass Ihre Anwendung in allen Umgebungen funktioniert. Diese Tests erfordern zwei Systeme, da das Ausführen beider Implementierungen auf demselben Betriebssystem nicht unterstützt wird.
   
-Bedenken Sie, dass MAPI für den einfachen Zugriff auf Daten in einem MAPI-Speicher oder zum Erstellen eines Transportspeichers, eines Nachrichtenspeichers oder Adressbuchanbieters geeignet ist. Da MAPI die Gesch�ftslogik von Outlook umgeht, sollten Sie auch die Verwendung des Outlook-Objektmodells in Betracht ziehen, wenn Sie APIs für das Erstellen Ihrer L�sung auswerten. Das Outlook-Objektmodell schlie�t die Outlook-Gesch�ftslogik ein, ist jedoch nicht geeignet für Multithread-Code, Synchronisierungsanbieter oder Windows-Anwendungen.
+Bedenken Sie, dass MAPI für den einfachen Zugriff auf Daten in einem MAPI-Speicher oder zum Erstellen eines Transportspeichers, eines Nachrichtenspeichers oder Adressbuchanbieters geeignet ist. Da MAPI die Geschäftslogik von Outlook umgeht, sollten Sie auch die Verwendung des Outlook-Objektmodells in Betracht ziehen, wenn Sie APIs für das Erstellen Ihrer Lösung auswerten. Das Outlook-Objektmodell schließt die Outlook-Geschäftslogik ein, ist jedoch nicht geeignet für Multithread-Code, Synchronisierungsanbieter oder Windows-Anwendungen.
   
 Weitere Informationen zu Neuigkeiten in dieser Version finden Sie unter den folgenden Themen:
   
@@ -46,19 +46,19 @@ Weitere Informationen zu Neuigkeiten in dieser Version finden Sie unter den folg
     
 Wenn Sie noch nicht mit der Entwicklung von MAPI-Anwendungen für Outlook lesen Sie die folgenden Themen:
   
-- [Ausw�hlen einer API oder Technologie für die Entwicklung von L�sungen für Outlook 2013](http://msdn.microsoft.com/de-DE/library/jj900714.aspx)
+- [Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook 2013](http://msdn.microsoft.com/de-DE/library/jj900714.aspx)
     
-- [H�ufig verwendete Headerdateien](commonly-used-header-files.md)
+- [Häufig verwendete Headerdateien](commonly-used-header-files.md)
     
-- [H�ufig verwendete Eigenschaften](commonly-used-properties.md)
+- [Häufig verwendete Eigenschaften](commonly-used-properties.md)
     
-- [H�ufig verwendete Objekte](commonly-used-objects.md)
+- [Häufig verwendete Objekte](commonly-used-objects.md)
     
 Die restliche Referenz ist in die folgenden drei Informationstypen unterteilt:
   
 - [MAPI-Beispiele](mapi-samples.md) Leitet Sie zu zahlreichen Codebeispielen weiter, in denen die Verwendung von verschiedenen API-Elementen, die Implementierung grundlegender MAPI-Anbieter und das Erstellen von Outlook-Elementen veranschaulicht wird. 
     
-- [MAPI-Konzepte](mapi-concepts.md) Erl�utert die Konzepte und die Architektur von MAPI. 
+- [MAPI-Konzepte](mapi-concepts.md) Erläutert die Konzepte und die Architektur von MAPI. 
     
 - [MAPI Reference](mapi-reference.md) Bietet detaillierte Informationen zu den Funktionen, Schnittstellen, Strukturen und Eigenschaften in MAPI. 
     

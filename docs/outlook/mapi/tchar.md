@@ -38,7 +38,7 @@ Für Unicode-Plattformen wird TCHAR als Synonym für den Typ WCHAR definiert.
   
 MAPI-Clients können den Datentyp TCHAR verwenden, um eine Zeichenfolge des Typs WCHAR oder Char darzustellen. Achten Sie darauf, den symbolischen Konstanten-UNICODE zu definieren und die Plattform einzuschränken, wenn dies erforderlich ist. MAPI interpretiert die Plattforminformationen übersetzt TCHAR intern in die entsprechende Zeichenfolge. Der MAPI-Eigenschaftentyp, PT_TSTRING, funktioniert genauso wie der TCHAR-Datentyp. Wenn die Plattform Unicode unterstützt, werden die Eigenschaften vom Typ PT_TSTRING bei der Kompilierung dem Typ PT_UNICODE zugewiesen. Wenn die Plattform Unicode nicht unterstützt, werden diese Eigenschaften dem Typ PT_STRING8 zugewiesen.
   
-Weitere Informationen �ber diese Funktionen finden Sie unter [Zeichens�tzen](mapi-character-sets.md) und [Liste der Eigenschaftstypen](property-types.md). 
+Weitere Informationen über diese Funktionen finden Sie unter [Zeichensätzen](mapi-character-sets.md) und [Liste der Eigenschaftstypen](property-types.md). 
   
 ## <a name="see-also"></a>Siehe auch
 

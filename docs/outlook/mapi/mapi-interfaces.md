@@ -33,7 +33,7 @@ Die Dokumentation für jede Schnittstelle besteht aus einem einleitenden Abschni
 |Aufgerufen von:  <br/> |Eine Liste der Komponenten, die in der Regel die Methoden der Schnittstelle aufrufen.  <br/> |
 |Schnittstellenbezeichner:  <br/> |Die GUID des Schnittstellenbezeichners.  <br/> |
 |Zeigertyp:  <br/> |Der Zeigertyp für das Objekt, das die Schnittstelle verfügbar macht.  <br/> |
-|Transaktionsmodell:  <br/> |Für von [IMAPIProp](imapipropiunknown.md) abgeleitete Schnittstellen. Bei �nontransacted" werden die �nderungen sofort wirksam; bei �transacted" werden die �nderungen erst wirksam, wenn [IMAPIProp::SaveChanges](imapiprop-savechanges.md) aufgerufen wird.  <br/> |
+|Transaktionsmodell:  <br/> |Für von [IMAPIProp](imapipropiunknown.md) abgeleitete Schnittstellen. Bei „nontransacted“ werden die Änderungen sofort wirksam; bei „transacted“ werden die Änderungen erst wirksam, wenn [IMAPIProp::SaveChanges](imapiprop-savechanges.md) aufgerufen wird.  <br/> |
    
 Nach der ersten Tabelle folgt eine weitere Tabelle, in der alle Methoden dieser Schnittstelle in der vtable-Reihenfolge aufgelistet sind. Bei einer vtable handelt es sich um ein Array von Funktionszeigern, die von dem Compiler mit einem Funktionszeiger für jede Methode eines MAPI-Objekts erstellt werden. Die Methoden werden in der gleichen Reihenfolge aufgelistet, in der sie deklariert sind. Methoden, die von anderen Schnittstellen geerbt werden, sind nicht in der Tabelle in vtable-Reihenfolge dargestellt, können jedoch auf die gleiche Art und Weise verwendet werden, wie in der Schnittstelle dokumentiert, die sie definiert.
   
@@ -42,7 +42,7 @@ Nach jedem Schnittstellenthema werden dann die Methoden der Schnittstelle in alp
 |**Überschrift**|**Inhalt**|
 |:-----|:-----|
 |Parameter  <br/> |Eine Beschreibung der einzelnen Parameter in der Methode.  <br/> |
-|Rückgabewert  <br/> |Eine Beschreibung der eindeutigen Werte, die die Methode zur�ckgeben kann. Dies sind die Werte, nach denen Anrufer in ihrem Code suchen sollten.  <br/> |
+|Rückgabewert  <br/> |Eine Beschreibung der eindeutigen Werte, die die Methode zurückgeben kann. Dies sind die Werte, nach denen Anrufer in ihrem Code suchen sollten.  <br/> |
 |Bemerkungen  <br/> |Eine Beschreibung davon, warum und wie die Methode verwendet wird.  <br/> |
 |Siehe auch  <br/> |Querverweise zu anderen Themen in dieser Referenz.  <br/> |
    

@@ -20,31 +20,31 @@ ms.locfileid: "19790562"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Sie können das Microsoft Excel 2013 XLL Software Development Kit und die C-API verwenden, um hochleistungsf�hige Tabellenfunktionen für Excel 2013 zu erstellen. Die Upgrades auf die Excel 2013-C-API spiegeln den fortlaufenden Support für Benutzer wieder, für die die Leistung von Drittanbieterfunktionen oder internen Funktionen entscheidend ist.
+Sie können das Microsoft Excel 2013 XLL Software Development Kit und die C-API verwenden, um hochleistungsfähige Tabellenfunktionen für Excel 2013 zu erstellen. Die Upgrades auf die Excel 2013-C-API spiegeln den fortlaufenden Support für Benutzer wieder, für die die Leistung von Drittanbieterfunktionen oder internen Funktionen entscheidend ist.
   
 ## <a name="excel-programming-interfaces"></a>Excel-Programmierschnittstellen
 
 Excel bietet mehrere Optionen für die Entwicklung von Anwendungen, die Schnittstellen damit bilden. Die Excel-Programmierschnittstellen wurden in früheren Versionen in der folgenden Reihenfolge hinzugefügt:
   
-- **XLM-Makrosprache:** Die erste Sprache für die Erweiterung von Excel, auf die vom Benutzer zugegriffen werden kann, und die Grundlage für die C-API. XLM wird zwar in Excel 2010 noch unterst�tzt, wurde aber schon lange durch Visual Basic for Applications (VBA) ersetzt. 
+- **XLM-Makrosprache:** Die erste Sprache für die Erweiterung von Excel, auf die vom Benutzer zugegriffen werden kann, und die Grundlage für die C-API. XLM wird zwar in Excel 2010 noch unterstützt, wurde aber schon lange durch Visual Basic for Applications (VBA) ersetzt. 
     
-- **C-API und XLLs:** DLLs, die in Excel integriert sind. Diese DLLs bieten die direkteste und schnellste Schnittstele für das Hinzuf�gen von leistungsstarken Tabellenfunktionen, wenn auch zulasten der Komplexit�t im Vergleich zu sp�teren Technologien. 
+- **C-API und XLLs:** DLLs, die in Excel integriert sind. Diese DLLs bieten die direkteste und schnellste Schnittstele für das Hinzufügen von leistungsstarken Tabellenfunktionen, wenn auch zulasten der Komplexität im Vergleich zu späteren Technologien. 
     
-- **VBA:** Visual Basic-Codeobjekte, die Excel-Arbeitsmappenobjekten zugeordnet sind. VBA erm�glicht das Auffangen von Ereignissen, die Anpassung und das Hinzuf�gen von benutzerdefinierten Funktionen und Befehlen. VBA ist die am weitesten verbreitete und am einfachsten verf�gbare Erweiterungsoption. 
+- **VBA:** Visual Basic-Codeobjekte, die Excel-Arbeitsmappenobjekten zugeordnet sind. VBA ermöglicht das Auffangen von Ereignissen, die Anpassung und das Hinzufügen von benutzerdefinierten Funktionen und Befehlen. VBA ist die am weitesten verbreitete und am einfachsten verfügbare Erweiterungsoption. 
     
-- **COM:** Der Interoperabilit�tsstandard für Windows-basierte Anwendungen, �ber die Excel seine Ereignisse und Objekte verf�gbar macht. VBA verwendet COM zur Interaktion mit Excel. Excel exportiert COM-Typbibliotheken, die Sie bei der Erstellung von C++-COM-Coderessourcen und -Anwendungen unterst�tzen, die Excel extern steuern können. 
+- **COM:** Der Interoperabilitätsstandard für Windows-basierte Anwendungen, über die Excel seine Ereignisse und Objekte verfügbar macht. VBA verwendet COM zur Interaktion mit Excel. Excel exportiert COM-Typbibliotheken, die Sie bei der Erstellung von C++-COM-Coderessourcen und -Anwendungen unterstützen, die Excel extern steuern können. 
     
-- **Microsoft .NET Framework:** Die mehrsprachiche verwaltete Codeumgebung, die für die schnelle Anwendungsentwicklung für verteilte Umgebungen konzipiert ist. Die prim�re Programmiersprache für Code, der auf .NET Framework basiert, ist C#, es können aber viele Sprachen in der Microsoft Intermediate Language (MSIL) kompiliert werden. Excel 2013 kann auf Coderessourcen zugreifen, die in .NET Framework-Assemblys enthalten sind. 
+- **Microsoft .NET Framework:** Die mehrsprachiche verwaltete Codeumgebung, die für die schnelle Anwendungsentwicklung für verteilte Umgebungen konzipiert ist. Die primäre Programmiersprache für Code, der auf .NET Framework basiert, ist C#, es können aber viele Sprachen in der Microsoft Intermediate Language (MSIL) kompiliert werden. Excel 2013 kann auf Coderessourcen zugreifen, die in .NET Framework-Assemblys enthalten sind. 
     
 ## <a name="when-to-use-the-c-api"></a>Anwendungsbereiche der C-API
 
-Der Hauptgrund für das Schreiben von XLLs und die Verwendung der C-API ist die Erstellung von leistungsstarken Tabellenfunktionen. XLL-Funktionen werden zwar h�ufig als benutzerdefinierte Funktionen bezeichnet, aufgrund des Zeitaufwands, um sich das Verst�ndnis und die F�higkeiten anzueignen, die für das Schreiben von XLLs erforderlich sind, ist diese Technologie jedoch für die meisten Benutzer uninteressant. Nichtsdestotrotz bilden die Anwendungen mit leistungsstarken Funktionen und, in Excel 2013, die M�glichkeit, Multithread-Schnittstellen für leistungsstarke Serverressourcen zu schreiben, einen wichtigen Bestandteil der Excel-Erweiterbarkeit. 
+Der Hauptgrund für das Schreiben von XLLs und die Verwendung der C-API ist die Erstellung von leistungsstarken Tabellenfunktionen. XLL-Funktionen werden zwar häufig als benutzerdefinierte Funktionen bezeichnet, aufgrund des Zeitaufwands, um sich das Verständnis und die Fähigkeiten anzueignen, die für das Schreiben von XLLs erforderlich sind, ist diese Technologie jedoch für die meisten Benutzer uninteressant. Nichtsdestotrotz bilden die Anwendungen mit leistungsstarken Funktionen und, in Excel 2013, die Möglichkeit, Multithread-Schnittstellen für leistungsstarke Serverressourcen zu schreiben, einen wichtigen Bestandteil der Excel-Erweiterbarkeit. 
   
 Die Version der C-API, die in Excel 2007 eingeführt wurde, befasst sich in erster Linie mit den Aspekten im Zusammenhang mit leistungsstarken Berechnungen und nicht mit Features wie z. B. die Benutzeroberfläche.
   
 ### <a name="writing-high-performance-user-defined-worksheet-functions"></a>Schreiben von leistungsstarken benutzerdefinierten Tabellenfunktionen
 
-Die Excel-C-API ist die ideal Wahl, wenn Sie leistungsstarke Tabellenfunktionen durch Erstellen von XLL-Add-Ins erstellen m�chten. Durch die C-API erhalten Sie den direktesten Zugriff auf Tabellendaten. Durch XLLs erh�lt Excel den direktesten Zugriff auf die DLL-Ressourcen. Die Leistung von XLLs wird in Excel 2013 durch Hinzuf�gen neuer Datentypen und vor allem die Unterst�tzung benutzerdefinierter Funktionen in grupppierten Servern weiter verbessert.
+Die Excel-C-API ist die ideal Wahl, wenn Sie leistungsstarke Tabellenfunktionen durch Erstellen von XLL-Add-Ins erstellen möchten. Durch die C-API erhalten Sie den direktesten Zugriff auf Tabellendaten. Durch XLLs erhält Excel den direktesten Zugriff auf die DLL-Ressourcen. Die Leistung von XLLs wird in Excel 2013 durch Hinzufügen neuer Datentypen und vor allem die Unterstützung benutzerdefinierter Funktionen in grupppierten Servern weiter verbessert.
   
 Das Arbeiten mit XLLs hat seinen Preis: Die C-API verfügt nicht über die leistungsstarken Features zur schnellen Entwicklung von VBA, COM oder .NET Framework. Die Speicherverwaltung ist lediglich rudimentär, weswegen mehr Verantwortung beim Entwickler liegt. Viele Excel-Features, die über COM durch VBA und .NET Framework verfügbar sind, sind in der C-API nicht verfügbar.
   
@@ -76,11 +76,11 @@ Im Idealfall benötigen Sie einen effizienteren externen Prozess, der nach der �
   
 ## <a name="c-api-and-its-relation-to-xlm"></a>Die C-API und ihre Beziehung zu XLM
 
-Die Excel-Makrosprache (XLM) war die erste Programmierumgebung in Excel, auf die der Benutzer zugreifen konnte. Mit dieser Sprache konnten Benutzer benutzerdefinierte Befehle und Funktionen in speziellen Makrovorlagen erstellen, die wie normale Arbeitsbl�tter aussehen. XLM-Makrovorlagen werden in Excel 2013 immer noch unterst�tzt. Zus�tzlich zu den folgenden Elementen, die in einem Arbeitsblatt nicht eingegeben werden können, könnenSie alle gew�hnlichen Tabellenblattfunktion wie **SUM** und **LOG** in einer Makrovorlage verwenden: 
+Die Excel-Makrosprache (XLM) war die erste Programmierumgebung in Excel, auf die der Benutzer zugreifen konnte. Mit dieser Sprache konnten Benutzer benutzerdefinierte Befehle und Funktionen in speziellen Makrovorlagen erstellen, die wie normale Arbeitsblätter aussehen. XLM-Makrovorlagen werden in Excel 2013 immer noch unterstützt. Zusätzlich zu den folgenden Elementen, die in einem Arbeitsblatt nicht eingegeben werden können, könnenSie alle gewöhnlichen Tabellenblattfunktion wie **SUM** und **LOG** in einer Makrovorlage verwenden: 
   
 - Funktionen für Arbeitsbereichsinformationen wie **GET.CELL** und **GET.WORKBOOK**.
     
-- Funktionen, die Befehlen entsprechen, die eine Automatisierung gew�hnlicher Benutzervorg�nge erm�glichen, z. B. **DEFINE.NAME** und **PASTE**.
+- Funktionen, die Befehlen entsprechen, die eine Automatisierung gewöhnlicher Benutzervorgänge ermöglichen, z. B. **DEFINE.NAME** und **PASTE**.
     
 - Funktionen, die im Zusammenhang mit Add-Ins stehen, z. B. **REGISTER**.
     
@@ -90,14 +90,14 @@ Die Excel-Makrosprache (XLM) war die erste Programmierumgebung in Excel, auf die
     
 - Flusssteuerungsoperationen wie **GOTO** und **RETURN**.
     
-In Excel, Version 3, gab es eine einschr�nkte Version der C-API. In Excel, Version 4, wurde die XLM-Sprache jedoch der C-API zugeordnet. Seitdem können DLLs alle Tabellenblattfunktionen, Funktionen für Makrovorlageninformationen und Befehle aufrufen und Ereignistraps festlegen. DLLs können aus der C-API heraus keine XLM-Flusssteuerungsfunktionen aufrufen. Diese Makrovorlagenfunktionen und Befehle sind in der Hilfedatei "XLMacr8.hlp" (bisher bezeichnet als "Macrofun.hlp") dokumentiert. Um diese Hilfedatei abzurufen, rufen Sie das [Microsoft Download Center](http://download.microsoft.com) auf, und suchen Sie nach "XLMacr8.hlp". 
+In Excel, Version 3, gab es eine einschränkte Version der C-API. In Excel, Version 4, wurde die XLM-Sprache jedoch der C-API zugeordnet. Seitdem können DLLs alle Tabellenblattfunktionen, Funktionen für Makrovorlageninformationen und Befehle aufrufen und Ereignistraps festlegen. DLLs können aus der C-API heraus keine XLM-Flusssteuerungsfunktionen aufrufen. Diese Makrovorlagenfunktionen und Befehle sind in der Hilfedatei "XLMacr8.hlp" (bisher bezeichnet als "Macrofun.hlp") dokumentiert. Um diese Hilfedatei abzurufen, rufen Sie das [Microsoft Download Center](http://download.microsoft.com) auf, und suchen Sie nach "XLMacr8.hlp". 
   
 > [!NOTE]
-> In Windows Vista und Windows 7 werden HLP-Dateien nicht direkt unterst�tzt, Sie können aber das [Windows-Hilfeprogramm (WinHlp32.exe) für Windows Vista](http://go.microsoft.com/fwlink/?LinkID=82148) oder das [Windows-Hilfeprogramm (WinHlp32.exe) für Windows 7](http://www.microsoft.com/download/en/details.aspx?id=91) von Microsoft herunterladen und die Dateien damit �ffnen. 
+> In Windows Vista und Windows 7 werden HLP-Dateien nicht direkt unterstützt, Sie können aber das [Windows-Hilfeprogramm (WinHlp32.exe) für Windows Vista](http://go.microsoft.com/fwlink/?LinkID=82148) oder das [Windows-Hilfeprogramm (WinHlp32.exe) für Windows 7](http://www.microsoft.com/download/en/details.aspx?id=91) von Microsoft herunterladen und die Dateien damit öffnen. 
   
-DLLs rufen C-API-Entsprechungen dieser Funktionen und Befehle mithilfe der R�ckruffunktionen **Excel4**, **Excel4v**, **Excel12** und **Excel12v** auf (die beiden letzten wurden in Excel 2007 eingef�hrt). Aufgez�hlte Konstanten, die den einzelnen Funktionen und Befehlen entsprechen, sind in einer Headerdatei definiert und werdenals eines der Argumente an diese Rückrufe �bergeben. **GET.CELL** wird beispielsweise durch **xlfGetCell**, **REGISTER** durch **xlfRegister** und **DEFINE.NAME** durch **xlcDefineName** dargestellt.
+DLLs rufen C-API-Entsprechungen dieser Funktionen und Befehle mithilfe der Rückruffunktionen **Excel4**, **Excel4v**, **Excel12** und **Excel12v** auf (die beiden letzten wurden in Excel 2007 eingeführt). Aufgezählte Konstanten, die den einzelnen Funktionen und Befehlen entsprechen, sind in einer Headerdatei definiert und werdenals eines der Argumente an diese Rückrufe übergeben. **GET.CELL** wird beispielsweise durch **xlfGetCell**, **REGISTER** durch **xlfRegister** und **DEFINE.NAME** durch **xlcDefineName** dargestellt.
   
-Abgesehen davon, dass die Tabellenblattfunktionen und Makrovorlagenfunktionen und Befehle bereitgestellt werden, liefert die C-API Funktions- und Befehlsaufz�hlungen, die nur mithilfe dieser Rückrufe innerhalb einer DLL aufgerufen werden können. Mit **xlGetName** kann eine DLL beispielsweise ihren eigenen vollst�ndigen Pfad und Dateinamen ermitteln, der für die Registrierung von Funktionen und Befehlen bei Excel erforderlich ist. 
+Abgesehen davon, dass die Tabellenblattfunktionen und Makrovorlagenfunktionen und Befehle bereitgestellt werden, liefert die C-API Funktions- und Befehlsaufzählungen, die nur mithilfe dieser Rückrufe innerhalb einer DLL aufgerufen werden können. Mit **xlGetName** kann eine DLL beispielsweise ihren eigenen vollständigen Pfad und Dateinamen ermitteln, der für die Registrierung von Funktionen und Befehlen bei Excel erforderlich ist. 
   
 Seit der Einführung von VBA-Blättern (Visual Basic for Applications) in Excel, Version 5, und des Visual Basic-Editors (VBE) in Version 8 (Excel 97), besteht die einfachste Möglichkeit für Benutzer zum Anpassen von Excel darin, VBA anstele von XLM zu verwenden. Daher ist ein Großteil der neuen Funktionalität, die in späteren Verseionen von Excel eingeführt wurde, über VBA, jedoch nicht über XLM oder die C-API verfügbar.
   

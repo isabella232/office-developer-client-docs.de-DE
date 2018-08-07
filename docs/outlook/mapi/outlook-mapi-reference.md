@@ -19,16 +19,16 @@ ms.locfileid: "19793328"
   
 **Gilt für**: Outlook 
   
-Willkommen bei Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API). MAPI stellt die Messagingarchitektur für Microsoft Outlook 2013 bereit. MAPI für Outlook 2013 bietet eine Reihe von Schnittstellen, Funktionen und anderen Datentypen für die Vereinfachung der Entwicklung von Outlook 2013-Messaginganwendungen. Anwendungen und der Transport verwenden MAPI zum Bearbeiten von E-Mail-Daten, Erstellen von E-Mail-Nachrichten und den Ordnern, in denen diese gespeichert werden, sowie zur Unterst�tzung von Benachrichtigungen �ber �nderungen an vorhandenen MAPI-bezogenen Daten.
+Willkommen bei Referenz zur Microsoft Outlook 2013-MAPI (Messaging-API). MAPI stellt die Messagingarchitektur für Microsoft Outlook 2013 bereit. MAPI für Outlook 2013 bietet eine Reihe von Schnittstellen, Funktionen und anderen Datentypen für die Vereinfachung der Entwicklung von Outlook 2013-Messaginganwendungen. Anwendungen und der Transport verwenden MAPI zum Bearbeiten von E-Mail-Daten, Erstellen von E-Mail-Nachrichten und den Ordnern, in denen diese gespeichert werden, sowie zur Unterstützung von Benachrichtigungen über Änderungen an vorhandenen MAPI-bezogenen Daten.
   
 > [!NOTE]
-> Wenn Sie noch nicht mit der Entwicklung von L�sungen für Outlook vertraut sind, finden Sie unter [Ausw�hlen einer API oder Technologie zum Entwickeln von L�sungen für Outlook 2013](http://msdn.microsoft.com/de-DE/library/jj900714.aspx) Informationen zu den APIs und Technologien, die für Ihre Bed�rfnisse am besten geeignet sind. 
+> Wenn Sie noch nicht mit der Entwicklung von Lösungen für Outlook vertraut sind, finden Sie unter [Auswählen einer API oder Technologie zum Entwickeln von Lösungen für Outlook 2013](http://msdn.microsoft.com/de-DE/library/jj900714.aspx) Informationen zu den APIs und Technologien, die für Ihre Bedürfnisse am besten geeignet sind. 
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 [Erste Schritte mit der Outlook-MAPI-Referenz](getting-started-with-the-outlook-mapi-reference.md)
   
-> Enth�lt Informationen �ber die verschiedenen Referenz- und konzeptionellen Ressourcen in Referenz zur Outlook 2013-MAPI.
+> Enthält Informationen über die verschiedenen Referenz- und konzeptionellen Ressourcen in Referenz zur Outlook 2013-MAPI.
     
 [MAPI-Beispiele](mapi-samples.md)
   

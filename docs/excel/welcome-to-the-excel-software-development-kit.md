@@ -20,17 +20,17 @@ ms.locfileid: "19790577"
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Willkommen bei der Dokumentation zum Excel 2013 XLL Software Development Kit (SDK). Diese Referenz enth�lt konzeptionelle �bersichten, Programmieraufgaben und Beispiele, die Sie beim Entwickeln von Microsoft Excel 2013 XLLs unterst�tzen sollen.
+Willkommen bei der Dokumentation zum Excel 2013 XLL Software Development Kit (SDK). Diese Referenz enthält konzeptionelle Übersichten, Programmieraufgaben und Beispiele, die Sie beim Entwickeln von Microsoft Excel 2013 XLLs unterstützen sollen.
   
 Überarbeitet: November 2012
   
 Laden Sie das [Excel 2013 XLL SDK](http://go.microsoft.com/fwlink/?LinkID=251082&amp;clcid=0x409) herunter.
   
-Das Excel 2013 XLL SDK enth�lt Folgendes:
+Das Excel 2013 XLL SDK enthält Folgendes:
   
-- **C-API (Application Programming Interface, Anwendungsprogrammierschnittstelle)** � enth�lt Header- und Quelldateien, die DLLs den Zugriff auf Excel 2013-Funktionen erm�glichen, sowie eine Beschreibung der Schnittstelle, die eine DLL für die Arbeit mit dem Excel Add-In-Manager verf�gbar machen sollte.
+- **C-API (Application Programming Interface, Anwendungsprogrammierschnittstelle)** – enthält Header- und Quelldateien, die DLLs den Zugriff auf Excel 2013-Funktionen ermöglichen, sowie eine Beschreibung der Schnittstelle, die eine DLL für die Arbeit mit dem Excel Add-In-Manager verfügbar machen sollte.
     
-- **Microsoft Visual Studio-Projekte** � enth�lt C/C++-Quellcode und veranschaulicht die Verwendung der C-API. Diese Beispielprojekte stellen Beispiele zur Verf�gung und dienen als Ausgangspunkt für die Entwicklung eigener Add-Ins.
+- **Microsoft Visual Studio-Projekte** – enthält C/C++-Quellcode und veranschaulicht die Verwendung der C-API. Diese Beispielprojekte stellen Beispiele zur Verfügung und dienen als Ausgangspunkt für die Entwicklung eigener Add-Ins.
     
 Die SDK-Dokumentation enthält die folgenden Abschnitte:
   
