@@ -20,9 +20,9 @@ ms.locfileid: "19790403"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Der Hauptgrund für das Schreiben von Microsoft Excel XLLs und verwenden der C-API ist die Erstellung von Hochleistungs-Tabellenfunktionen. Die Anwendungsszenarien leistungsstarker Funktionen � und ab Excel 2007 die M�glichkeit, Multithread-Schnittstellen auf leistungsstarke Serverressourcen zu schreiben � machen sie zu einem wichtigen Bestandteil der Excel-Erweiterbarkeit. Die Leistung von XLLs wurde in Excel 2007 durch das Hinzuf�gen neuer Datentypen und die Unterst�tzung von Multithreading weiter verbessert.
+Der Hauptgrund für das Schreiben von Microsoft Excel XLLs und verwenden der C-API ist die Erstellung von Hochleistungs-Tabellenfunktionen. Die Anwendungsszenarien leistungsstarker Funktionen – und ab Excel 2007 die Möglichkeit, Multithread-Schnittstellen auf leistungsstarke Serverressourcen zu schreiben – machen sie zu einem wichtigen Bestandteil der Excel-Erweiterbarkeit. Die Leistung von XLLs wurde in Excel 2007 durch das Hinzufügen neuer Datentypen und die Unterstützung von Multithreading weiter verbessert.
   
-Die C-API verf�gt nicht �ber die leistungsstarken Features zur schnellen Entwicklung von Microsoft Visual Basic for Applications (VBA) �ber COM oder Microsoft .NET Framework. Die Speicherverwaltung ist lediglich rudiment�r, weswegen mehr Verantwortung beim Entwickler liegt. Viele Excel-Features, die �ber COM durch VBA und .NET Framework verf�gbar sind, sind in der C-API nicht verf�gbar.
+Die C-API verfügt nicht über die leistungsstarken Features zur schnellen Entwicklung von Microsoft Visual Basic for Applications (VBA) über COM oder Microsoft .NET Framework. Die Speicherverwaltung ist lediglich rudimentär, weswegen mehr Verantwortung beim Entwickler liegt. Viele Excel-Features, die über COM durch VBA und .NET Framework verfügbar sind, sind in der C-API nicht verfügbar.
 
 
 - [Konzepte der Excel-Programmierung](excel-programming-concepts.md)
@@ -37,7 +37,7 @@ Die C-API verf�gt nicht �ber die leistungsstarken Features zur schnellen Ent
   
 - [Erstellen von XLLs](creating-xlls.md)
   
-- [Auswerten von Namen und andere Arbeitsblatt Formula-Ausdr�cke](evaluating-names-and-other-worksheet-formula-expressions.md)
+- [Auswerten von Namen und anderen Arbeitsblatt-Formelausdrücken](evaluating-names-and-other-worksheet-formula-expressions.md)
   
 - [Multithreading und Speicherverwaltung](multithreading-and-memory-management.md)
   
@@ -45,7 +45,7 @@ Die C-API verf�gt nicht �ber die leistungsstarken Features zur schnellen Ent
   
 - [Clustersichere Funktionen](cluster-safe-functions.md)
   
-- [Genehmigungsverfahren Benutzer Zeilenumbr�che in langen Vorg�nge](permitting-user-breaks-in-lengthy-operations.md)
+- [Zulassen von Benutzerunterbrechungen bei langwierigen Vorgängen](permitting-user-breaks-in-lengthy-operations.md)
   
 - [Anzeigen von Dialogfeldern aus einer DLL oder XLL](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
   

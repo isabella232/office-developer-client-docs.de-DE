@@ -22,7 +22,7 @@ ms.locfileid: "19790497"
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
-Das Microsoft Excel 2013 XLL SDK enth�lt die Quelldateien für eine "Framework"-Bibliothek, die das Schreiben von XLLs beschleunigen soll, sowie die zwei Beispielprojekte "Example" und "Generic". 
+Das Microsoft Excel 2013 XLL SDK enthält die Quelldateien für eine "Framework"-Bibliothek, die das Schreiben von XLLs beschleunigen soll, sowie die zwei Beispielprojekte "Example" und "Generic". 
   
 Dieser Abschnitt stellt eine Funktionsreferenz für Folgendes bereit:
   
@@ -46,11 +46,11 @@ Das Excel 2013 XLL SDK enthält Quelldateien und Microsoft Visual Studio Project
 
 - [Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
   
-- [C-API-R�ckruf funktioniert Excel4 Excel12](c-api-callback-functions-excel4-excel12.md)
+- [C-API-Rückruffunktionen Excel4, Excel12](c-api-callback-functions-excel4-excel12.md)
   
-- [Wichtige und n�tzliche C-API XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
+- [Wichtige und nützliche C-API-XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
   
-- [C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+- [C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
 - [Funktionen in der Framework-Klassenbibliothek](functions-in-the-framework-library.md)
   

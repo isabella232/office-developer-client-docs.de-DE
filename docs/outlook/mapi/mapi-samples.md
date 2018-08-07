@@ -19,7 +19,7 @@ ms.locfileid: "19793077"
   
 **Gilt für**: Outlook 
   
-Dieser Abschnitt enth�lt Codebeispiele, in denen gezeigt wird, wie mithilfe von MAPI bestimmte Aufgaben ausgef�hrt oder bestimmte Dienstanbieter implementiert werden. MFCMAPI wird in dieser Referenz auch verwendet, um die Verwendung vieler APIs zu demonstrieren. Um eines der Beispiele auf den Betriebssystemen Windows Vista, Windows Server 2008, Windows XP oder Windows Server 2003 auszu�fhren, m�ssen Sie zuerst das MAPI-Laufzeitsystem einrichten. Weitere Informationen finden Sie unter [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md).
+Dieser Abschnitt enthält Codebeispiele, in denen gezeigt wird, wie mithilfe von MAPI bestimmte Aufgaben ausgeführt oder bestimmte Dienstanbieter implementiert werden. MFCMAPI wird in dieser Referenz auch verwendet, um die Verwendung vieler APIs zu demonstrieren. Um eines der Beispiele auf den Betriebssystemen Windows Vista, Windows Server 2008, Windows XP oder Windows Server 2003 auszuüfhren, müssen Sie zuerst das MAPI-Laufzeitsystem einrichten. Weitere Informationen finden Sie unter [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md).
   
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
