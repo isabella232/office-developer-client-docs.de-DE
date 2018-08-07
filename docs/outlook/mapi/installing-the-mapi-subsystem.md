@@ -15,46 +15,46 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2018
 ms.locfileid: "19792693"
 ---
-# <a name="installing-the-mapi-subsystem"></a><span data-ttu-id="eb776-103">Installieren des MAPI-Subsystems</span><span class="sxs-lookup"><span data-stu-id="eb776-103">Installing the MAPI Subsystem</span></span>
+# <a name="installing-the-mapi-subsystem"></a><span data-ttu-id="4033f-103">Installieren des MAPI-Subsystems</span><span class="sxs-lookup"><span data-stu-id="4033f-103">Installing the MAPI Subsystem</span></span>
 
   
   
-<span data-ttu-id="eb776-104">**Gilt für**: Outlook</span><span class="sxs-lookup"><span data-stu-id="eb776-104">**Applies to:** Outlook \*</span></span> 
+<span data-ttu-id="4033f-104">**Gilt für**: Outlook</span><span class="sxs-lookup"><span data-stu-id="4033f-104">**Applies to:** Outlook \*</span></span> 
   
-<span data-ttu-id="eb776-105">Unterstützte Versionen von Windows installieren die MAPI-Stub-Bibliothek „Mapi32.dll“ im Ordner _\<Laufwerk\>_ \Windows\System32.</span><span class="sxs-lookup"><span data-stu-id="eb776-105">Supported versions of Windows install the MAPI stub library, Mapi32.dll, in the  _\<drive\>_ \Windows\System32 folder.</span></span> 
+<span data-ttu-id="4033f-105">Unterstützte Versionen von Windows installieren die MAPI-Stub-Bibliothek „Mapi32.dll“ im Ordner _\<Laufwerk\>_ \Windows\System32.</span><span class="sxs-lookup"><span data-stu-id="4033f-105">Supported versions of Windows install the MAPI stub library, Mapi32.dll, in the  _\<drive\>_ \Windows\System32 folder.</span></span> 
   
-<span data-ttu-id="eb776-106">Die folgenden Windows-Versionen werden unterst�tzt:</span><span class="sxs-lookup"><span data-stu-id="eb776-106">The supported versions of Windows are as follows:</span></span>
+<span data-ttu-id="4033f-106">Die folgenden Windows-Versionen werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="4033f-106">The supported versions of Windows are as follows:</span></span>
   
-- <span data-ttu-id="eb776-107">Windows 7.</span><span class="sxs-lookup"><span data-stu-id="eb776-107">Windows 7.</span></span>
+- <span data-ttu-id="4033f-107">Windows 7.</span><span class="sxs-lookup"><span data-stu-id="4033f-107">Windows 7.</span></span>
     
-- <span data-ttu-id="eb776-108">Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="eb776-108">Windows Vista.</span></span>
+- <span data-ttu-id="4033f-108">Windows Vista.</span><span class="sxs-lookup"><span data-stu-id="4033f-108">Windows Vista.</span></span>
     
-- <span data-ttu-id="eb776-109">Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="eb776-109">Windows Server 2008.</span></span>
+- <span data-ttu-id="4033f-109">Windows Server 2008.</span><span class="sxs-lookup"><span data-stu-id="4033f-109">Windows Server 2008.</span></span>
     
-- <span data-ttu-id="eb776-110">Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="eb776-110">Windows Server 2003.</span></span>
+- <span data-ttu-id="4033f-110">Windows Server 2003.</span><span class="sxs-lookup"><span data-stu-id="4033f-110">Windows Server 2003.</span></span>
     
-- <span data-ttu-id="eb776-111">Windows XP.</span><span class="sxs-lookup"><span data-stu-id="eb776-111">Windows XP.</span></span>
+- <span data-ttu-id="4033f-111">Windows XP.</span><span class="sxs-lookup"><span data-stu-id="4033f-111">Windows XP.</span></span>
     
-<span data-ttu-id="eb776-112">Um das MAPI-Subsystem ordnungsgem�� zu installieren, installieren Sie eine Anwendung mit einem MAPI-basierten Speichersubsystem, z. B. Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="eb776-112">To correctly install the MAPI subsystem, install an application that contains a MAPI-based subsystem, such as Microsoft Outlook.</span></span>
+<span data-ttu-id="4033f-112">Um das MAPI-Subsystem ordnungsgemäß zu installieren, installieren Sie eine Anwendung mit einem MAPI-basierten Speichersubsystem, z. B. Microsoft Outlook.</span><span class="sxs-lookup"><span data-stu-id="4033f-112">To correctly install the MAPI subsystem, install an application that contains a MAPI-based subsystem, such as Microsoft Outlook.</span></span>
   
-<span data-ttu-id="eb776-p101">Informationen zur Installation des MAPI-Subsystems eines Computers finden Sie in der Registrierung. Alle Werte in den Registrierungseintr�gen sind Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="eb776-p101">You can find information about a computer's MAPI subsystem installation in the system registry. All values in the registry entries are character strings.</span></span> 
+<span data-ttu-id="4033f-p101">Informationen zur Installation des MAPI-Subsystems eines Computers finden Sie in der Registrierung. Alle Werte in den Registrierungseinträgen sind Zeichenfolgen.</span><span class="sxs-lookup"><span data-stu-id="4033f-p101">You can find information about a computer's MAPI subsystem installation in the system registry. All values in the registry entries are character strings.</span></span> 
   
-<span data-ttu-id="eb776-115">Installationsprogramme für Nachrichtendienste sind für das Erstellen der Installationsinformationen im folgenden Registrierungsschl�ssel verantwortlich:</span><span class="sxs-lookup"><span data-stu-id="eb776-115">Message service installation programs are responsible for creating the installation information in the following system registry key:</span></span> 
+<span data-ttu-id="4033f-115">Installationsprogramme für Nachrichtendienste sind für das Erstellen der Installationsinformationen im folgenden Registrierungsschlüssel verantwortlich:</span><span class="sxs-lookup"><span data-stu-id="4033f-115">Message service installation programs are responsible for creating the installation information in the following system registry key:</span></span> 
   
  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Messaging Subsystem`
   
-<span data-ttu-id="eb776-116">Nachrichtendientse m�ssen der Systemregistrierung Eintr�ge hinzuf�gen.</span><span class="sxs-lookup"><span data-stu-id="eb776-116">Message services must add entries to the system registry.</span></span> 
+<span data-ttu-id="4033f-116">Nachrichtendientse müssen der Systemregistrierung Einträge hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="4033f-116">Message services must add entries to the system registry.</span></span> 
   
-<span data-ttu-id="eb776-117">In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen für das MAPI-Subsystem auf ihrem Computer abrufen.</span><span class="sxs-lookup"><span data-stu-id="eb776-117">The following table summarizes how clients retrieve version information for the MAPI subsystem on their computer.</span></span>
+<span data-ttu-id="4033f-117">In der folgenden Tabelle ist zusammengefasst, wie Clients Versionsinformationen für das MAPI-Subsystem auf ihrem Computer abrufen.</span><span class="sxs-lookup"><span data-stu-id="4033f-117">The following table summarizes how clients retrieve version information for the MAPI subsystem on their computer.</span></span>
   
-|<span data-ttu-id="eb776-118">**�berpr�fen**</span><span class="sxs-lookup"><span data-stu-id="eb776-118">**To check**</span></span>|<span data-ttu-id="eb776-119">**Registrierung**</span><span class="sxs-lookup"><span data-stu-id="eb776-119">**Registry**</span></span>|
+|<span data-ttu-id="4033f-118">**Überprüfen**</span><span class="sxs-lookup"><span data-stu-id="4033f-118">**To check**</span></span>|<span data-ttu-id="4033f-119">**Registrierung**</span><span class="sxs-lookup"><span data-stu-id="4033f-119">**Registry**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="eb776-120">Verf�gbarkeit von MAPI</span><span class="sxs-lookup"><span data-stu-id="eb776-120">Availability of MAPI</span></span>  <br/> |<span data-ttu-id="eb776-121">Suchen Sie nach  `MAPIX=1`.</span><span class="sxs-lookup"><span data-stu-id="eb776-121">Look for  `MAPIX=1`.</span></span>  <br/> |
-|<span data-ttu-id="eb776-122">Verf�gbare Version von MAPI</span><span class="sxs-lookup"><span data-stu-id="eb776-122">Available version of MAPI</span></span>  <br/> |<span data-ttu-id="eb776-123">Suchen Sie nach einer MAPIXVER-Zeichenfolge in der Form " _x.x.x_".</span><span class="sxs-lookup"><span data-stu-id="eb776-123">Look for a MAPIXVER string of the form " _x.x.x_".</span></span>  <br/> |
+|<span data-ttu-id="4033f-120">Verfügbarkeit von MAPI</span><span class="sxs-lookup"><span data-stu-id="4033f-120">Availability of MAPI</span></span>  <br/> |<span data-ttu-id="4033f-121">Suchen Sie nach  `MAPIX=1`.</span><span class="sxs-lookup"><span data-stu-id="4033f-121">Look for  `MAPIX=1`.</span></span>  <br/> |
+|<span data-ttu-id="4033f-122">Verfügbare Version von MAPI</span><span class="sxs-lookup"><span data-stu-id="4033f-122">Available version of MAPI</span></span>  <br/> |<span data-ttu-id="4033f-123">Suchen Sie nach einer MAPIXVER-Zeichenfolge in der Form " _x.x.x_".</span><span class="sxs-lookup"><span data-stu-id="4033f-123">Look for a MAPIXVER string of the form " _x.x.x_".</span></span>  <br/> |
    
-## <a name="see-also"></a><span data-ttu-id="eb776-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="eb776-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4033f-124">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="4033f-124">See also</span></span>
 
 
 
-[<span data-ttu-id="eb776-125">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="eb776-125">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+[<span data-ttu-id="4033f-125">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="4033f-125">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 
