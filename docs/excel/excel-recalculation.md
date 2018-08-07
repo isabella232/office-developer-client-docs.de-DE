@@ -57,17 +57,17 @@ Die Berechnung von Arbeitsblättern in Excel kann als dreistufiger Prozess betra
     
 Die Abhängigkeitsstruktur informiert Excel darüber, welche Zellen von anderen abhängen, bzw. welche Zellen Vorgänger von anderen sind. Aus dieser Struktur erstellt Excel eine Berechnungskette. Die Berechnungskette listet alle Zellen mit Formeln in der Reihenfolge auf, in der sie berechnet werden sollen. Während der Neuberechnung überarbeitet Excel diese Kette, wenn eine Formel gefunden wird, die von einer noch nicht berechneten Zelle abhängt. In diesem Fall werden die Zelle, die gerade berechnet wird, und die davon abhängigen Zellen in der Kette nach unten verschoben. Aus diesem Grund können Berechnungszeiten in einem Arbeitsblatt, das gerade erst geöffnet wurde, häufig in den ersten paar Berechnungszyklen verbessert werden.
   
-Wenn eine �nderung an der Struktur einer Arbeitsmappe vorgenommen wird (z. B. durch Eingabe einer neuen Formel), erstellt Excel die Abh�ngigkeitsstruktur und die Berechnungskette neu. Wenn neue Daten oder neue Formeln eingegeben werden, markiert Excel alle Zellen, die von den neuen Daten abh�ngen, als Zellen, für die eine Neuberechnung erforderlich ist. Auf diese Weise markierte Zellen werden als  *ge�ndert*  bezeichnet. Alle direkt und indirekt abh�ngigen Zellen werden als ge�ndert markiert; dies bedeutet Folgendes: Wenn B1 von A1 und C1 von B1 abh�ngt, werden bei einer �nderung von A1 sowohl B1 als auch C1 als ge�ndert markiert. 
+Wenn eine Änderung an der Struktur einer Arbeitsmappe vorgenommen wird (z. B. durch Eingabe einer neuen Formel), erstellt Excel die Abhängigkeitsstruktur und die Berechnungskette neu. Wenn neue Daten oder neue Formeln eingegeben werden, markiert Excel alle Zellen, die von den neuen Daten abhängen, als Zellen, für die eine Neuberechnung erforderlich ist. Auf diese Weise markierte Zellen werden als  *geändert*  bezeichnet. Alle direkt und indirekt abhängigen Zellen werden als geändert markiert; dies bedeutet Folgendes: Wenn B1 von A1 und C1 von B1 abhängt, werden bei einer Änderung von A1 sowohl B1 als auch C1 als geändert markiert. 
   
 Wenn eine Zelle direkt oder indirekt von sich selbst abhängt, erkennt Excel den Zirkelbezug und gibt eine Warnung aus. Dies ist normalerweise eine Fehlerbedingung, die der Benutzer beheben muss, und Excel zeigt sehr hilfreiche grafische und Navigationstools an, die den Benutzer bei der Suche nach dem Ursprung des Zirkelbezugs unterstützen. In einigen Fällen ist diese Bedingung sogar wünschenswert, z. B. wenn Sie eine iterative Berechnung durchführen möchten, bei der der Startpunkt der jeweils nächsten Iteration das Ergebnis der vorherigen Iteration ist. Excel unterstützt die Steuerung von iterativen Berechnungen über das Dialogfeld mit Berechnungsoptionen.
   
 Nachdem Zellen als geändert markiert wurden, wird bei der nächsten Neuberechnung der Inhalt jeder geänderten Zelle von Excel erneut ausgewertet, und zwar in der von der Berechnungskette vorgegebenen Reihenfolge. Für das vorherige Beispiel bedeutet dies, dass zuerst B1 und dann C1 ausgewertet wird. Diese Neuberechnung findet im automatischen Neuberechnungsmodus unmittelbar nach dem Markieren der Zellen als geändert statt, andernfalls erst später.
   
-Ab Microsoft Excel 2002 unterst�tzt das **Range**-Objekt in Microsoft Visual Basic for Applications (VBA) die **Range.Dirty**-Methode, die Zellen mit der Markierung versieht, dass eine Berechung erforderlich ist. Wenn diese Methode zusammen mit der **Range.Calculate**-Methode verwendet wird (siehe n�chster Abschnitt), wird die erzwungene Neuberechnung von Zellen in einem angegebenen Bereich aktiviert. Dies ist bei der Durchf�hrung einer eingeschr�nkten Berechnung im manuellen Berechnungsmodus w�hrend eines Makros hilfreich, um zu vermeiden, dass unn�tigerweise Zellen berechnet werden, die nicht mit der Makrofunktion in Zusammenhang stehen. Berechnungsmethoden für Bereiche stehen in der C-API nicht zur Verf�gung. 
+Ab Microsoft Excel 2002 unterstützt das **Range**-Objekt in Microsoft Visual Basic for Applications (VBA) die **Range.Dirty**-Methode, die Zellen mit der Markierung versieht, dass eine Berechung erforderlich ist. Wenn diese Methode zusammen mit der **Range.Calculate**-Methode verwendet wird (siehe nächster Abschnitt), wird die erzwungene Neuberechnung von Zellen in einem angegebenen Bereich aktiviert. Dies ist bei der Durchführung einer eingeschränkten Berechnung im manuellen Berechnungsmodus während eines Makros hilfreich, um zu vermeiden, dass unnötigerweise Zellen berechnet werden, die nicht mit der Makrofunktion in Zusammenhang stehen. Berechnungsmethoden für Bereiche stehen in der C-API nicht zur Verfügung. 
   
 In Excel 2002 und früheren Versionen wurde von Excel für jedes Arbeitsblatt in jeder geöffneten Arbeitsmappe eine Berechnungskette erstellt. Dies führte dazu, dass die Verarbeitung von Verknüpfungen zwischen Arbeitsblättern ziemlich kompliziert war, und erforderte einige Sorgfalt, um eine effiziente Neuberechnung sicherzustellen. Insbesondere sollten Sie in Excel 2000 arbeitsblattübergreifende Abhängigkeiten möglichst vermeiden und Arbeitsblätter in alphabetischer Reihenfolge benennen, sodass Arbeitsblätter, die von anderen Arbeitsblättern abhängig sind, alphabetisch nach den Arbeitsblättern kommen, von denen sie abhängen.
   
-In Excel 2007 wurde die Logik verbessert und erm�glicht die Neuberechnung in mehreren Threads, sodass Abschnitte der Berechnungskette nicht voneinander abh�ngig sind und gleichzeitig berechnet werden können. Sie können Excel so konfigurieren, dass mehrere Threads auf einem Computer mit einem einzelnen Prozessor verwendet werden, oder dass ein einzelner Thread auf einem Computer mit mehreren Prozessoren oder Prozessorkernen verwendet wird. 
+In Excel 2007 wurde die Logik verbessert und ermöglicht die Neuberechnung in mehreren Threads, sodass Abschnitte der Berechnungskette nicht voneinander abhängig sind und gleichzeitig berechnet werden können. Sie können Excel so konfigurieren, dass mehrere Threads auf einem Computer mit einem einzelnen Prozessor verwendet werden, oder dass ein einzelner Thread auf einem Computer mit mehreren Prozessoren oder Prozessorkernen verwendet wird. 
   
 ## <a name="asynchronous-user-defined-functions-udfs"></a>Asynchrone benutzerdefinierte Funktionen (User-Defined Functions, UDFs)
 
@@ -110,7 +110,7 @@ Standardmäßig geht Excel davon aus, dass VBA-UDFs nicht veränderlich sind. Ex
   
 Mit der C-API können Sie eine XLL-Funktion schon vor dem ersten Aufruf als veränderlich registrieren. Außerdem können Sie den veränderlichen Status einer Arbeitsblattfunktion damit ein- und ausschalten.
   
-Standardm��ig werden XLL-UDFs, die Bereichsargumente akzeptieren und als Makrovorlagenentsprechungen deklariert sind, von Excel als unver�nderlich behandelt. Sie können diesen Standardstatus beim ersten Aufruf der UDF mit der **xlfVolatile**-Funktion deaktivieren. 
+Standardmäßig werden XLL-UDFs, die Bereichsargumente akzeptieren und als Makrovorlagenentsprechungen deklariert sind, von Excel als unveränderlich behandelt. Sie können diesen Standardstatus beim ersten Aufruf der UDF mit der **xlfVolatile**-Funktion deaktivieren. 
   
 ## <a name="calculation-modes-commands-selective-recalculation-and-data-tables"></a>Berechnungsmodi, Befehle, selektive Neuberechnung und Datentabellen
 
@@ -124,7 +124,7 @@ Excel verfügt über drei Berechnungsmodi:
     
 Im automatischen Berechnungsmodus erfolgt die Neuberechnung nach jeder Dateneingabe und nach bestimmten Ereignissen, wie z. B. den im vorherigen Abschnitt genannten Beispielen. Für sehr große Arbeitsmappen ist die Neuberechnungszeit möglicherweise so lang, dass Benutzer Neuberechnungen auf absolut erforderliche Fälle beschränken müssen. Hierzu unterstützt Excel den manuellen Modus. Der Benutzer kann den Modus über das Excel-Menüsystem oder programmgesteuert mithilfe von VBA, COM oder der C-API auswählen.
   
-Datentabellen sind spezielle Strukturen in einem Arbeitsblatt. Der Benutzer richtet zuerst die Berechnung des Ergebnisses auf einem Arbeitsblatt ein. Diese h�ngt von einer oder zwei ver�nderbaren Schl�sseleingaben und anderen Parametern ab. Der Benutzer kann dann eine Tabelle mit Ergebnissen für einen Satz von Werten für eine oder beide Schl�sseleingaben erstellen. Die Tabelle wird mit dem **Assistenten für Datentabellen** erstellt. Nachdem die Tabelle eingerichtet wurde, f�gt Excel die Eingaben einzeln nacheinander in die Berechnung ein und kopiert den resultierenden Wert in die Tabelle. Da eine oder zwei Eingaben verwendet werden können, können Datentabellen ein- oder zweidimensional sein. 
+Datentabellen sind spezielle Strukturen in einem Arbeitsblatt. Der Benutzer richtet zuerst die Berechnung des Ergebnisses auf einem Arbeitsblatt ein. Diese hängt von einer oder zwei veränderbaren Schlüsseleingaben und anderen Parametern ab. Der Benutzer kann dann eine Tabelle mit Ergebnissen für einen Satz von Werten für eine oder beide Schlüsseleingaben erstellen. Die Tabelle wird mit dem **Assistenten für Datentabellen** erstellt. Nachdem die Tabelle eingerichtet wurde, fügt Excel die Eingaben einzeln nacheinander in die Berechnung ein und kopiert den resultierenden Wert in die Tabelle. Da eine oder zwei Eingaben verwendet werden können, können Datentabellen ein- oder zweidimensional sein. 
   
 Die Neuberechnung von Datentabellen wird etwas anders gehandhabt:
   
@@ -142,15 +142,15 @@ Diese Methoden werden am häufigsten verwendet, wenn sich Excel im manuellen Ber
 
 Tastenkombination: keine
   
-VBA: **Range.Calculate** (eingef�hrt in Excel 2000, ge�ndert in Excel 2007) und **Range.CalculateRowMajorOrder** (eingef�hrt in Excel 2007) 
+VBA: **Range.Calculate** (eingeführt in Excel 2000, geändert in Excel 2007) und **Range.CalculateRowMajorOrder** (eingeführt in Excel 2007) 
   
 C-API: nicht unterstützt
   
 - **Manueller Modus**
     
-    Berechnet nur die Zellen im angegebenen Bereich neu, unabh�ngig davon, ob sie ge�ndert wurden oder nicht. Das Verhalten der **Range.Calculate**-Methode wurde in Excel 2007 ge�ndert; das alte Verhalten wird jedoch noch von der **Range.CalculateRowMajorOrder** -Methode unterst�tzt. 
+    Berechnet nur die Zellen im angegebenen Bereich neu, unabhängig davon, ob sie geändert wurden oder nicht. Das Verhalten der **Range.Calculate**-Methode wurde in Excel 2007 geändert; das alte Verhalten wird jedoch noch von der **Range.CalculateRowMajorOrder** -Methode unterstützt. 
     
-- **Modi "Automatisch" und "Automatisch au�er bei Datentabellen"**
+- **Modi "Automatisch" und "Automatisch außer bei Datentabellen"**
     
     Berechnet die Arbeitsmappe neu, erzwingt jedoch keine Neuberechnung des Bereichs oder einer Zelle im Bereich.
     
@@ -178,7 +178,7 @@ C-API: nicht unterstützt
     
     Berechnet nur die geänderten Zellen und ihre abhängigen Zellen innerhalb des angegebenen Arbeitsblatts neu. "Reference" ist der Name des Arbeitsblatts als Zeichenfolge oder die Indexnummer in der entsprechenden Arbeitsmappe.
     
-    In Excel 2000 und sp�teren Versionen steht eine **Boolean**-Arbeitsblatteigenschaft zur Verf�gung, die **EnableCalculation**-Eigenschaft. Durch Festlegen dieser Eigenschaft auf **True** von **False** werden alle Zellen im angegebenen Arbeitsblatt als ge�ndert definiert. In automatischen Modi l�st dies au�erdem eine Neuberechnung der gesamten Arbeitsmappe aus. 
+    In Excel 2000 und späteren Versionen steht eine **Boolean**-Arbeitsblatteigenschaft zur Verfügung, die **EnableCalculation**-Eigenschaft. Durch Festlegen dieser Eigenschaft auf **True** von **False** werden alle Zellen im angegebenen Arbeitsblatt als geändert definiert. In automatischen Modi löst dies außerdem eine Neuberechnung der gesamten Arbeitsmappe aus. 
     
     Im manuellen Modus bewirkt der folgende Code, dass nur das aktive Blatt neu berechnet wird.
     
@@ -195,7 +195,7 @@ C-API: nicht unterstützt
 
 Tastenkombination: STRG + ALT + UMSCHALT + F9 (eingeführt in Excel 2002)
   
-VBA: **Workbooks(** Reference **).ForceFullCalculation** (eingef�hrt in Excel 2007) 
+VBA: **Workbooks(** Reference **).ForceFullCalculation** (eingeführt in Excel 2007) 
   
 C-API: nicht unterstützt
   
