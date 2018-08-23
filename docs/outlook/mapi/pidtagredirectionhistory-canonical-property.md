@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 380ea11c-b1ac-4f54-9034-c52edec4f700
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 26e66d9a9c7427688deb3d1e888b6c2ac8d06634
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e986313ccac7533178e2c6b466053d5665b9e7e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794923"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574524"
 ---
 # <a name="pidtagredirectionhistory-canonical-property"></a>PidTagRedirectionHistory (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Informationen über die Route, die durch eine gesendete Nachricht behandelt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REDIRECTION_HISTORY  <br/> |
-|Bezeichner:  <br/> |0x002C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REDIRECTION_HISTORY  <br/> |
+|Kennung:  <br/> |0x002C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird verwendet, wenn eine Nachricht Autoforwarded wird, mithilfe eines automatischen Agents.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ffbbe0-d678-474a-a016-91c71255613e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fcca6a7e8fa70a2df9042e8b3c2b28825cee9a7b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d06523625a20760faec7a6c73a6beaef757818b3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792124"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575077"
 ---
 # <a name="imapifoldersetmessagestatus"></a>IMAPIFolder::SetMessageStatus
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Setzt den Status einer Nachricht zugeordneten (z. B., ob die Nachricht zum Löschen markiert ist).
   
@@ -89,7 +89,7 @@ S_OK
   
 > Der Nachrichtenstatus wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::SetMessageStatus** -Methode wird die Nachricht den Status auf den Wert, der in dessen **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft gespeichert ist. 
   

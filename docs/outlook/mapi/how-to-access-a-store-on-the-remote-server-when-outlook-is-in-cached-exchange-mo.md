@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5c6df156-4015-2d0f-26b7-07055a3f7810
 description: 'Zuletzt geändert: 02 Juli 2012'
-ms.openlocfilehash: 8bb1e9bfc4d816daf4285d083c87bb3bea4e1139
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c7994366000e323cc7d14a9c3a02b5229c5f08e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791826"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573313"
 ---
 # <a name="access-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Zugriff auf einen Speicher auf dem Remoteserver, wenn Outlook im Exchange-Cache-Modus befindet
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie Sie die Kennzeichen **MAPI_NO_CACHE** zum Öffnen eines Ordners oder einer Nachricht auf einen Nachrichtenspeicher auf dem Remoteserver, wenn Microsoft Office Outlook in der Exchange-Cache-Modus befindet. 
   

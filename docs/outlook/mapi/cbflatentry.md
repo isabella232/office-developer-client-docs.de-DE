@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 655b66e8-8642-43ad-8392-048578f96820
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a2865441e16ed31931042abbc42eb8c56b686525
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d3cab3073b942cd8acc0919031e212b6a7d96e8a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791373"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577079"
 ---
 # <a name="cbflatentry"></a>CbFLATENTRY
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes in einer vorhandenen [FLATENTRY](flatentry.md) Struktur. 
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 274899cc-2894-4d99-84ec-f18121e856a0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c6192e6f92078f2f9bab0d55e9952d21ebb82af6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 28dd45f29610b7ad56b4d3302715311569d497c4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792759"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577415"
 ---
 # <a name="iprofadmin--iunknown"></a>IProfAdmin : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Unterstützt die Verwaltung von Benutzerprofilen. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapix.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Profile Administration-Objekt  <br/> |
+|Verfügbar gemacht von:  <br/> |Profile Administration-Objekt  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IProfAdmin  <br/> |

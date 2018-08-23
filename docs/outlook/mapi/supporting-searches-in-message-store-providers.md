@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 30a3fe28-31ca-4eb8-9353-f75f6d339dc7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0cd8bbe14e6af020ec5c93cd46a24853d1c8401c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f206623103f810b2868502aea7c6804cd306f022
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795679"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573194"
 ---
 # <a name="supporting-searches-in-message-store-providers"></a>Unterstützen von Suchvorgängen für Nachrichtenspeicheranbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clientanwendungen weisen häufig einige Benutzeroberflächenkomponenten für die Suche nach Nachrichten in einem Nachrichtenspeicher. Suchkriterien in angegeben sind die [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) Schnittstelle mithilfe der Methoden [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) und [IMAPIContainer::GetSearchCriteria](imapicontainer-getsearchcriteria.md) . 
   

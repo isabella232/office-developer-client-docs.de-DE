@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9d54f937-c8de-4789-b134-56835f21aec2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2877a547fccd5a8ef2094ee369ba4122047d7c54
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 15a10793102e79428dc13b62631ffcf79df437c8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793771"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572744"
 ---
 # <a name="pidlidscriptstream-canonical-property"></a>PidLidScriptStream (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt den Code in Visual Basic Scripting Edition (VBScript) geschriebenen hinter dem benutzerdefinierten Formular mit der Meldung verbunden ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidScriptStream  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidScriptStream  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008541  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |

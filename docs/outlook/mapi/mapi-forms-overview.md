@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1b3afeaa-4ede-41eb-a3c1-b8947a46ef97
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 91bc0641723a92d8dc86bf3d1037d8e9936930ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 29132f24547dc744efcd6f2b6e4a8f6af87ab53c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793001"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574412"
 ---
 # <a name="mapi-forms-overview"></a>MAPI-Workflowformulare (Übersicht)
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein MAPI-Formular ist ein Viewer für eine Nachricht. Jede Nachricht weist eine Nachrichtenklasse, die bestimmte Form durch die bestimmt, die als Viewer verwendet wird. MAPI definiert verschiedene Nachrichtenklassen und die Formulare für die Anzeige von Nachrichten dieser Klassen wurde implementiert. Client-Software-Entwicklern können neue Nachrichtenklassen und benutzerdefinierte Formulare für die Anzeige von Nachrichten mithilfe der neuen Klassen erstellt erstellen.
   
@@ -49,5 +49,5 @@ Weitere Informationen zu MAPI-Formularkomponenten finden Sie unter [MAPI-Formula
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+- [MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2d405268-bb33-4863-be38-2d17e8fc956e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c7c0d1df32a0ad6359fad20128a6a1e3dd225143
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6460cd3ef0495a5494e03b4c7034e067cf8793b7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791348"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576064"
 ---
 # <a name="attfrom"></a>attFrom
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das Attribut **AttFrom** ist als **TRP** Struktur codiert, die den Anzeigenamen und die e-Mail-Adresse des Absenders, gefolgt vom Anzeigenamen und die Adresse des Absenders, gefolgt von erforderlichen Abstände codiert. Das Format für **AttFrom** lautet wie folgt: 
   

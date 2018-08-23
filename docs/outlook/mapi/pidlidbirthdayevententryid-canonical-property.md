@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6807dcfc-d9bd-48a1-a093-3097b2cb107c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4a8cf9ac24f275d8b9cdbe03b5a90477771a2ab4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7d8a142729d1c86c615653b2cbfc708268d4322e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793454"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576778"
 ---
 # <a name="pidlidbirthdayevententryid-canonical-property"></a>PidLidBirthdayEventEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die **EntryId** des Termins optional, die das Geburtsdatum des Kontakts darstellt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidBirthdayEventEID  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidBirthdayEventEID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000804D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Des Termins werden dies von dieser Eigenschaft angegeben wird muss mit diesem Kontakt verknüpft werden, mithilfe der **DispidApptStateFlags** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)), **DispidContactLinkSearchKey** ([PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)) und ** DispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)) Eigenschaften, die im angegebenen [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).
   

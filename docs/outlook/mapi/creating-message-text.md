@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 70d1fb24-91a9-4043-8c9d-be1523012e6b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 38be3bc2df8931ca45da12e43436377545e8a977
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: bd840c7bef0607db37c6477bd8f4a7320a8188c6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791511"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574755"
 ---
 # <a name="creating-message-text"></a>Erstellen des Nachrichtentexts
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Obwohl einige Nachrichten von nicht mehr als eine Empfängerliste und der Betreffzeile den Inhalt der meisten Nachrichten, insbesondere IPM vorgenommen werden. Beachten Sie Nachrichten, die Text enthält. Nachricht Text kann einfache oder formatiert sein und in drei Eigenschaften gespeichert ist: **PR\_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) **PR\_HTML** ([PidTagHtml](pidtaghtml-canonical-property.md)) und **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)). 
 

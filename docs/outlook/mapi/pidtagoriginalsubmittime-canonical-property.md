@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2e027c0c-2370-437a-ad98-2bbb5e41e525
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 43d0387f1c25c5ac86168caaddddd9fb9171c827
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 31324dff3c5780f693b1dc055fc2067436496cd3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794723"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573649"
 ---
 # <a name="pidtagoriginalsubmittime-canonical-property"></a>PidTagOriginalSubmitTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die ursprünglichen Übermittlung-Datum und Uhrzeit der Nachricht in den Bericht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_SUBMIT_TIME  <br/> |
-|Bezeichner:  <br/> |0x004E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_SUBMIT_TIME  <br/> |
+|Kennung:  <br/> |0x004E  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Am ersten Übermittlung einer Nachricht sollte eine Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) festgelegt. Er wird nicht geändert, wenn die Nachricht weitergeleitet wird. In nur-Berichten wird verwendet.
   

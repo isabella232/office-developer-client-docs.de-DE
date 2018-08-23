@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 45ac19f2-67b4-4a8e-9b56-8941db095464
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e3ec17123c0409b9733ae39813c2d21774feb7e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 569079559318f50f81bf2ceece7ec5b6333aff1b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794525"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573677"
 ---
 # <a name="pidtagisdnnumber-canonical-property"></a>PidTagIsdnNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 ISDN-fähige Telefonnummer des Empfängers enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ISDN_NUMBER, PR_ISDN_NUMBER_A, PR_ISDN_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A2D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ISDN_NUMBER, PR_ISDN_NUMBER_A, PR_ISDN_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A2D  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

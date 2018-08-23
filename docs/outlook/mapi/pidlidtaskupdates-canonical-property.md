@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 21d9fbcc-67b3-4475-b5c1-ff6af92404da
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8eda44012b01f9de94b44a3e13c30b3b382feed6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 280319f0a3cff19bae529eb398a22774eee1ecf0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793873"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572781"
 ---
 # <a name="pidlidtaskupdates-canonical-property"></a>PidLidTaskUpdates (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob ein Update Aufgabe senden eine Änderung die Aufgabe Beauftragte für die Aufgabe angefordert wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskUpdates  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskUpdates  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000811B  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

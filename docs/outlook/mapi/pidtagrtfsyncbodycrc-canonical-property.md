@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95db4837-400f-476f-b313-60e8baa1c6d1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aa144ca93e8fad9b9b5a5da1ee457e5cc3bbd841
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7c72b87eec6d0a14b0ebba10529ef5d898747028
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795021"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572977"
 ---
 # <a name="pidtagrtfsyncbodycrc-canonical-property"></a>PidTagRtfSyncBodyCrc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das Kontrollkästchen zyklischer Redundanz (CRC) für den Nachrichtentext berechnet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_CRC  <br/> |
-|Bezeichner:  <br/> |0 x 1006  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_CRC  <br/> |
+|Kennung:  <br/> |0 x 1006  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion [RTFSync](rtfsync.md) berechnet das CRC mithilfe von nur die Zeichen, die sie für die Nachricht erzielt werden hält. Beispielsweise sind einige Leerzeichen und Sonderzeichen ignoriert CRC ausgelassen. 
   

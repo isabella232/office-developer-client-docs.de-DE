@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5ff1a5e3-5b96-4f08-9b9b-aeb14304b23b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5f3bcda3beb29fa91629ea1639522ef24dc6eb32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b88545ede6275bd834fad5869d972e2860a6c77e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795347"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573180"
 ---
 # <a name="receive-folder-tables"></a>Tabellen für Empfängerordner
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine empfangen Ordner-Tabelle enthält Informationen für alle Ordner, die als Ordner für einen Nachrichtenspeicher empfangen. Eine Empfangsordner ist ein Ordner, in dem eingehende Nachrichten von einer bestimmten Nachrichtenklasse platziert werden. Store-implementierte Nachricht empfangen Ordner Tabellen, und Clientanwendungen von Anrufen an die [IMsgStore::GetReceiveFolderTable](imsgstore-getreceivefoldertable.md) -Methode verwenden. 
   

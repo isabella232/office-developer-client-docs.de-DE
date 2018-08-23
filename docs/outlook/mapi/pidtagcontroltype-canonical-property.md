@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7728fa2f-4a59-4e86-90f1-4384824598aa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fba82fef7c5330f538521d8d5fbdbcecc061ee27
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3c1d415cc9aa4e66b6c4b17262f9a491fc01f6bd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794263"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574125"
 ---
 # <a name="pidtagcontroltype-canonical-property"></a>PidTagControlType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert zurück, der für ein Steuerelement in einem Dialogfeld verwendet einen Steuerelementtyp angibt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTROL_TYPE  <br/> |
-|Bezeichner:  <br/> |0x3F02  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTROL_TYPE  <br/> |
+|Kennung:  <br/> |0x3F02  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

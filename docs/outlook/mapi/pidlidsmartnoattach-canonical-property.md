@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 60299c1b-1b46-4c3a-8fb9-a2b4d3383aac
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 43e10652a7dccdf0da6592df0f9fc2daf5ea9bee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e4a0e87b24789e3ee4cb5ed6684d508b62e65b30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793789"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575973"
 ---
 # <a name="pidlidsmartnoattach-canonical-property"></a>PidLidSmartNoAttach (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt dar, ob die Anlagen auf eine Nachricht gelten als ausgeblendet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSmartNoAttach  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSmartNoAttach  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008514  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist TRUE, wenn die Anlagen der Nachricht gelten als ausgeblendet.
   

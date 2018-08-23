@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ea1daf74-d9e3-4304-bf5d-889afeea6ae9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: acf9cee9bf0713b909b0d82fc606b015ac28474e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2f8a6baa9a910b91e633084f1d9cd8ac52b24d5b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791977"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575602"
 ---
 # <a name="iabcontainercreateentry"></a>IABContainer::CreateEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt einen neuen Eintrag, der ein messaging-Benutzer, eine Verteilerliste oder einen anderen Container sein kann.
   
@@ -72,7 +72,7 @@ S_OK
   
 > Der neue Eintrag wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IABContainer::CreateEntry** -Methode erstellt einen neuen Eintrag eines bestimmten Typs im angegebenen Container, einen Zeiger auf eine schnittstellenimplementierung für den weiteren Zugriff auf den Eintrag zurückgibt. Der neue Eintrag wird erstellt, mithilfe einer Vorlage, die aus dem Container-Liste der verfügbaren Vorlagen in der einmaligen Tabelle veröffentlicht ausgewählt wurde. Anrufer zum Öffnen des Containers einmaligen Tabelle Aufrufen seiner [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode und die Eigenschaft **PR_CREATE_TEMPLATES** ([PidTagCreateTemplates](pidtagcreatetemplates-canonical-property.md)) anfordern. 
   

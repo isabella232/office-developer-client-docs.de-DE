@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c085e3e4-5d1e-42ab-8c44-2c326c032aea
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 04dd3ddf43b1dcbab188ce75ef5c6a69186e3f9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8bcb650a7aef357be155c177c38bc39cac3fa2c2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791394"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575252"
 ---
 # <a name="cbnewspropattrarray"></a>CbNewSPropAttrArray
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes, die für eine neue [SPropAttrArray](spropattrarray.md) Struktur zugewiesen werden soll, die eine angegebene Anzahl von Eigenschaftsattributen enthält. 
   

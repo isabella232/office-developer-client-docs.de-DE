@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 108f9bd0-c80f-4790-a572-da2f571a7d85
 description: Das InfoPath-Objektmodell enthält die MachineOnlineState-Eigenschaft des Application-Klasse, mit die können Formularcode zu prüfen, ob es sich bei dem Computer des Benutzers mit dem Netzwerk verbunden ist. Überprüfen Sie den Wert der MachineOnlineState-Eigenschaft, kann Ihre Formularcode verschiedene Aktionen je nach Status der Verbindung ausführen.
-ms.openlocfilehash: fcdaae31dd6a0c76cf1c453f267be430a2b34bba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ab149b488d2b2df1e91ba2cb435960c6749ecefb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790747"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574559"
 ---
 # <a name="work-with-offline-solutions"></a>Arbeiten mit offlinelösungen
 
@@ -27,9 +27,9 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
   
 ### <a name="add-a-data-connection-that-submits-the-form-as-an-attachment-to-an-email-message"></a>Hinzufügen einer Datenverbindung, die das Formular als Anlage einer e-Mail-Nachricht sendet
 
-1. Erstellen einer InfoPath-Formularvorlage mithilfe der Vorlage **leer (InfoPath Editor)** . 
+1. Erstellen Sie eine InfoPath-Formularvorlage mithilfe der Vorlage **Leer (InfoPath Editor)**. 
     
-2. Klicken Sie im InfoPath-Entwurfsmodus auf der Registerkarte **Daten** auf **Datenverbindungen** . 
+2. Klicken Sie im InfoPath-Entwurfsmodus auf der Registerkarte **Daten** auf **Datenverbindungen**. 
     
 3. Klicken Sie im Dialogfeld **Datenverbindungen** auf **Hinzufügen**.
     
@@ -39,21 +39,21 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     
 6. Geben Sie auf der nächsten Seite des Assistenten Ihre e-Mail-Adresse in das Feld **an** . 
     
-7. Führen Sie im Feld **Betreff** Folgendes ein, um den Umsatzzeitraum mit dem Text Umsatzbericht kombinieren: 
+7. Führen Sie im Feld **Betreff** die folgenden Schritte aus, um den Umsatzzeitraum mit dem Text "Sales Report" (Umsatzbericht) zu kombinieren: 
     
    1. Klicken Sie auf die Schaltfläche **Formel** neben dem Feld **Betreff** . 
       
    2. Klicken Sie im Dialogfeld **Formel einfügen** auf **Funktion einfügen**.
       
-   3. Klicken Sie in der Liste **Kategorien** auf **Text** , und doppelklicken Sie dann auf **Concat** in der Liste **Funktionen** , klicken Sie im Dialogfeld **Funktion einfügen** . 
+   3. Klicken Sie im Dialogfeld **Funktion einfügen** in der Liste **Kategorien** auf **Text**, und doppelklicken Sie dann in der Liste **Funktionen** auf **verketten**. 
       
-   4. Ersetzen Sie die erste Instanz von **doppelklicken, um Feld einzufügen** durch den folgenden (einschließlich der einfachen Anführungszeichen): ' Umsatzbericht: ' 
+   4. Ersetzen Sie die erste Instanz von **Feld mit Doppelklick einfügen** durch den folgenden Text (einschließlich der einfachen Anführungszeichen): 'Sales Report: ' 
       
-   5. Doppelklicken Sie auf die zweite Instanz von **doppelklicken, um Feld einzufügen**.
+   5. Doppelklicken Sie auf die zweite Instanz von **Feld mit Doppelklick einfügen**.
       
-   6. Wählen Sie im Dialogfeld **Feld oder Gruppe auswählen** das Feld Periode. 
+   6. Klicken Sie im Dialogfeld **Feld oder Gruppe auswählen** auf das Feld für den Zeitraum (period). 
       
-   7. Löschen Sie die letzte Instanz von **doppelklicken, um Feld einzufügen**, und klicken Sie dann auf **OK**.
+   7. Löschen Sie die letzte Instanz von **Feld mit Doppelklick einfügen**, und klicken Sie dann auf **OK**.
     
 8. Klicken Sie im Assistenten auf **Weiter**.
     
@@ -63,9 +63,9 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     
 ### <a name="add-logic-for-submitting-the-form-depending-on-the-connected-state-of-a-users-computer"></a>Hinzufügen von Logik zum Senden des Formulars je nach dem Verbindungsstatus eines Benutzercomputers
 
-1. Klicken Sie im InfoPath-Entwurfsmodus auf der Registerkarte **Daten** auf **Absendeoptionen** . 
+1. Klicken Sie im InfoPath-Entwurfsmodus auf der Registerkarte **Daten** auf **Absendeoptionen**. 
     
-2. Klicken Sie im Dialogfeld **Absendeoptionen** klicken Sie auf **Übermitteln dieses Formulars durch Benutzer zulassen**, wählen Sie **benutzerdefinierte Aktion mithilfe von Code ausführen**, klicken Sie auf **Code bearbeiten**.
+2. Klicken Sie im Dialogfeld **Absendeoptionen** auf **Übermitteln dieses Formulars durch Benutzer zulassen**, wählen Sie **Benutzerdefinierte Aktion mithilfe von Code ausführen** aus, und klicken Sie auf **Code bearbeiten**.
     
 3. Fügen Sie die folgenden beiden Funktionen unter dem [Submit](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) -Ereignishandler hinzu: 
     
@@ -152,13 +152,13 @@ In diesem Beispiel wird davon ausgegangen, dass Sie ein Formular zum Senden von 
     
 3. Starten Sie Microsoft Internet Explorer.
     
-4. Klicken Sie in Internet Explorer im Menü **Datei** auf **offline arbeiten** . 
+4. Klicken Sie in Internet Explorer im Menü **Datei** auf **Offlinebetrieb**. 
     
 5. Klicken Sie in InfoPath auf **Senden**. Sie sollte eine Meldung angezeigt, dass das Formular als e-Mail-Nachricht gesendet werden soll.
     
-6. Klicken Sie auf **Senden**. Finden Sie unter eine Meldung angezeigt, dass das Formular offline übermittelt wurde und beim Herstellen einer Verbindung mit des Netzwerks gesendet wird.
+6. Klicken Sie auf **Senden**. Eine Meldung sollte mitteilen, dass das Formular offline gesendet wurde und gesendet wird, wenn Sie eine Verbindung mit dem Netzwerk herstellen.
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Entwerfen einer Formularvorlage für die Offlineverwendung](http://office.microsoft.com/en-us/infopath/HA102117391033.aspx?pid=CH100341121033)
+- [Entwerfen einer Formularvorlage für die Offlineverwendung](https://support.office.com/en-us/article/design-a-form-template-for-offline-use-3ab8de84-babc-4bd7-9215-66d308546be4)
 

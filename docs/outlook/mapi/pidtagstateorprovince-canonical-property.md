@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f17874f-fab5-4119-b2eb-845c1f70d882
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: da4ed488498d820c7080a87752f58c5b8c524e1d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 72f6bc791d9b27e4c9120c059ab7636672e5fa29
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795194"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573089"
 ---
 # <a name="pidtagstateorprovince-canonical-property"></a>PidTagStateOrProvince (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen des Bundesland oder den Kanton des Empfängers an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_STATE_OR_PROVINCE, PR_STATE_OR_PROVINCE_A, PR_STATE_OR_PROVINCE_W, PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE, PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_A, PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_W  <br/> |
-|Bezeichner:  <br/> |0x3A28  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_STATE_OR_PROVINCE, PR_STATE_OR_PROVINCE_A, PR_STATE_OR_PROVINCE_W, PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE, PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_A, PR_BUSINESS_ADDRESS_STATE_OR_PROVINCE_W  <br/> |
+|Kennung:  <br/> |0x3A28  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

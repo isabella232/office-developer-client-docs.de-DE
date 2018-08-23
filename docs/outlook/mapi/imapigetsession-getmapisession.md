@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 581db5d9-35f7-43ad-aef3-a5d5da310150
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8090d9b1a1f7fb571532cf32d7a2412261aee1fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7176f3547c18ec72e4bfc0a749b3814d1e906b7b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792196"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577037"
 ---
 # <a name="imapigetsessiongetmapisession"></a>IMAPIGetSession::GetMAPISession
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Zeiger auf die MAPI-Sitzung, die das MAPI-Support-Objekt zugeordnet.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 47ec3e97-ad2b-43ea-842a-b2a0675eef48
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 31f09b1c2f7b23d63e17f59c28b7bcf377b769d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b37ae47e40906342aeecf179848311556a7d4ba4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792691"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573992"
 ---
 # <a name="integrating-mapi-form-server-code-with-windows-code"></a>Integrieren von MAPI-Formularservercode mit Windows-Code
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Denken Sie daran, dass Ihr Formular Server eine Win32-Anwendung ist. Es sind einige Aufgaben im Zusammenhang mit Ihrem Formular Server in den Arbeitsspeicher geladen und ordnungsgemäß beendet. Wie alle Windows-Anwendungen ist der Einstiegspunkt für Ihren Server Formular **WinMain** -Funktion. Diese Funktion ist der entsprechenden Stelle die folgenden Aufgaben ausführen: 
   

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b68f8bff-1a20-4dfd-92fe-57869328879d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f24e2cf97aa27b220f1c214be9d4207b6871f888
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 34d7d52485e334449a7cfb995de02f68f229615e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791428"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574678"
 ---
 # <a name="commonly-used-property-sets"></a>Häufig verwendete Eigenschaftensätze
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema werden häufig verwendete Sätze von benannten Eigenschaften.
   

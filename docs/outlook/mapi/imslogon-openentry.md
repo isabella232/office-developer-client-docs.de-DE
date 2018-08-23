@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 612cbab7-60cb-48bb-906e-18d9135e7a86
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e9d9ca56a877c0106c76242fe97ce43321e62e08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 619357a608dd160cbe4811cc7db7ae3b392db858
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792673"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576890"
 ---
 # <a name="imslogonopenentry"></a>IMSLogon::OpenEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Ordner oder Message-Objekt und gibt einen Zeiger auf das Objekt, das Zugriff zu ermöglichen. 
   

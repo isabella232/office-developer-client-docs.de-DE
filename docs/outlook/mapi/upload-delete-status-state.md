@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dee566ad-b46d-1015-4b0b-6c3313060142
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ff957e649d5de64c65ac169b3bc413ac7b6c9491
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4a45cfafec5126c72f365858e41963bc95fa707a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795803"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574545"
 ---
 # <a name="upload-delete-status-state"></a>Status „Status der Upload-Löschung“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, was geschieht, während der Upload löschen Status Zustand der Replikation Zustandsautomat. 
   
@@ -51,5 +51,5 @@ Wenn dieser Status beendet ist, löscht Outlook die interne Informationen zurüc
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCSTATE](syncstate.md)
+[SYNCHRONISIERUNGSSTATUS](syncstate.md)
 

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: d83fdd83-3e86-43c8-a73f-8e9e01b53371
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e24f5ebd73a4652876282099f1460762c150b94d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 38094895fed03884b138b02d4aa1ed87bcc6ea9c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792078"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575700"
 ---
 # <a name="imapicontainer--imapiprop"></a>IMAPIContainer : IMAPIProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Allgemeine Vorgänge auf Containerobjekten wie Adressbücher, Verteilerlisten und Ordner verwaltet. Die [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md), [IABContainer: IMAPIContainer](iabcontainerimapicontainer.md), und [IDistList: IMAPIContainer](idistlistimapicontainer.md) Schnittstellen **IMAPIContainer**abgeleitet sind.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Ordner, Adressbuchcontainer und Verteilung List-Objekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Ordner, Adressbuchcontainer und Verteilung List-Objekten  <br/> |
 |Implementiert von:  <br/> |Nachrichtenspeicher, Adressbuch und remote-Transport-Anbieter  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIContainer  <br/> |
@@ -47,7 +47,7 @@ Allgemeine Vorgänge auf Containerobjekten wie Adressbücher, Verteilerlisten un
 |[SetSearchCriteria](imapicontainer-setsearchcriteria.md) <br/> |Stellt die Suchkriterien für den Container her.  <br/> |
 |[GetSearchCriteria](imapicontainer-getsearchcriteria.md) <br/> |Ruft die Suchkriterien für den Container an.  <br/> |
    
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |

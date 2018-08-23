@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 4b3ce80c-4245-47b0-ab10-a2e03ccb0b83
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d5ffa6ba2f43b57721ade2e9fd281686ae08ebdc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 25b428c084bb49315e940829979602aeb6a38ac4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794647"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573439"
 ---
 # <a name="pidtagnondeliveryreportreasoncode-canonical-property"></a>PidTagNonDeliveryReportReasonCode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen diagnostic Code, der Teil einer Unzustellbarkeitsbericht bildet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_NDR_REASON_CODE  <br/> |
-|Bezeichner:  <br/> |0x0C04  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_NDR_REASON_CODE  <br/> |
+|Kennung:  <br/> |0x0C04  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 911a41c3-c10f-4473-8853-fafb56b721ba
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ee3307836e8b167efbc2cdc870e698257526ef97
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 78f6083cf17bb21152df1a7ea09825f3be7f0e37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795866"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572942"
 ---
 # <a name="working-with-multivalued-columns"></a>Arbeiten mit Spalten mit mehreren Werten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Mehrwertige Spalte enthält die Daten der eine mehrwertige Eigenschaft, die eine Eigenschaft, die ein Array von Werten vom Basistyp anstatt einen single-Wert aufweist. Weil keine der Tabellen die Spalte Standardgruppen mehrwertige Eigenschaften verwendet, sind mehrwertige Eigenschaften in einer Tabelle enthalten nur, wenn der Tabelle der Benutzer diese anfordert. 
   

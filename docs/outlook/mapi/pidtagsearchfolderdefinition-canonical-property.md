@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a61056e7-365c-4972-abf7-26e2ab07105d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d19904b65b95468bd38df75aa8e05afdf0075961
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2f17f273afc3f2537195cde21c7bc30626b13a26
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795104"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573202"
 ---
 # <a name="pidtagsearchfolderdefinition-canonical-property"></a>PidTagSearchFolderDefinition (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Daten, die die Suchkriterien angibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_DEFINITION  <br/> |
-|Bezeichner:  <br/> |0x6845  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_WB_SF_DEFINITION  <br/> |
+|Kennung:  <br/> |0x6845  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Inhalt der einzelnen Felder des binary large Object (BLOB) in dieser Eigenschaft enthaltenen ist abhängig von der Vorlagen-ID, die in **PidTagSearchFolderTemplateId** ([PidTagSearchFolderTemplateId](pidtagsearchfoldertemplateid-canonical-property.md))-Eigenschaft angegeben ist. Informationen zu den BLOB-Struktur, und suchen Sie die Vorlagen finden Sie unter [[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx). 
   

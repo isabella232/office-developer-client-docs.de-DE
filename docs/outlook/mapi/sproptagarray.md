@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4a9e1579-bebe-4a51-8ced-6dba9c3bcb63
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5cfad1c75aaab9afae47de5798f9e6b7ea530940
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5237a5c2767920bdb604bfe86603cea4fca56b84
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795609"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572774"
 ---
 # <a name="sproptagarray"></a>SPropTagArray
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Array von Eigenschaftentags. 
   
@@ -51,7 +51,7 @@ typedef struct _SPropTagArray
   
 > Array von Eigenschaftentags.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Eigenschaftentag ist eine 32-Bit-Ganzzahl ohne Vorzeichen, die besteht aus zwei Teilen: 
   

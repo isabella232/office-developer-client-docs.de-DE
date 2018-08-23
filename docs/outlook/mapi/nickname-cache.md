@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2813c102-6778-4443-ab4b-b573f3568705
 description: 'Zuletzt geändert: 30 Januar 2013'
-ms.openlocfilehash: 1ea1d3e6f636cf6a3ad47b6fdfe88d0f7130a5f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 547733f815c7d8c8762e79febce40ee9fec07d3a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793284"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574531"
 ---
 # <a name="nickname-cache"></a>Cache für Spitznamen
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Microsoft Office Outlook 2007, Microsoft Outlook 2010 und Microsoft Outlook 2013 interagieren mit der Nickname-Cache, auch bekannt als "AutoVervollständigen Datenstroms." Der AutoVervollständigen-Stream ist, in denen Outlook weiterhin auftritt, der AutoVervollständigen-Liste wird die Liste der Namen, die in der **an**, **Cc**, anzeigt und **Bcc** Bearbeitungsfelder während ein Benutzer eine e-Mail-Nachricht erstellt wird. In diesem Thema wird beschrieben, wie Outlook 2007, Outlook 2010 und Outlook 2013 mit dem AutoVervollständigen-Stream interagieren und erörtert das binäre Format der Datei und die empfohlenen Maßnahmen für die Interaktion mit dem AutoVervollständigen-Stream. 
   

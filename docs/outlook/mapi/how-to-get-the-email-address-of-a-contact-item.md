@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 032f7242-5500-1e21-06d3-b2d947eb1043
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: ce9579cb6b07336cae7d69fe503c918d96946b0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: f9c6766c934632a83fa0388ac2bc4c2c397eead6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791850"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575553"
 ---
 # <a name="get-the-email-address-of-a-contact-item"></a>Abrufen der e-Mail-Adresse eines Kontaktelements
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema veranschaulicht, wie den Wert einer benannten Eigenschaft abrufen, die e-Mail-Adresse eines Microsoft Outlook 2010 oder Microsoft Outlook 2013 Kontakt Elements darstellt.
   

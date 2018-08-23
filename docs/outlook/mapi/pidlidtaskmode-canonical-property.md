@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 185db683-301a-4d91-a583-6959853fa1ad
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f8eef7863cec565403d41dae26687b75f078e0d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bc8e4dfe934d516c07d5532ba6a95e51a3cbf962
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793856"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578080"
 ---
 # <a name="pidlidtaskmode-canonical-property"></a>PidLidTaskMode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Zuordnungsstatus des Vorgangs.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskMode  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskMode  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008518  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert muss eine der folgenden sein:
   

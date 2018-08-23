@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0db4b9e-ab84-4f45-9dbf-9514d306119c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 729b780c682381bb3306f25c6b857030a6c7e090
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c88f963e70988b81769e3869e52c8c6454c0522b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793645"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576960"
 ---
 # <a name="pidlidlocation-canonical-property"></a>PidLidLocation (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Den Ort eines Termins darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLocation  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLocation  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008208  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

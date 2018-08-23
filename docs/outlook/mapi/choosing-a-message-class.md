@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5ca8edd2-41b7-40e2-b755-b28eecb49786
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f1e604120041e9d91d06276fabb2e9dd7505df51
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c3b486838c6ce2d7fc38d950a4de6f4589767073
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791439"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574237"
 ---
 # <a name="choosing-a-message-class"></a>Auswählen einer Nachrichtenklasse
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wie im [MAPI-Nachrichtenklassen](mapi-message-classes.md)beschrieben, sind Nachrichtenklassen wichtig für die Beziehung zwischen verschiedenen Arten von benutzerdefinierten Nachrichten und durch Erweiterung, zwischen Formular Server selbst herstellen. Auswählen einer Klasse Meldungszeichenfolge ist zum Glück relativ einfach. Die Klasse Meldungszeichenfolge einer Nachrichtenklasse ist eine beliebige Zeichenfolge, jedoch sollten Sie die folgenden typografischen Konventionen verwenden:
   

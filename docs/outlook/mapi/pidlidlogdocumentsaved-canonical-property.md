@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3809fa35-76d8-44a5-8ad9-a1ed30f91dc0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bb1ab92675ec2f68f95b12865d7a684abc79e10c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 156280bec64f5bb50901beb864e44adafdf662b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793659"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574342"
 ---
 # <a name="pidlidlogdocumentsaved-canonical-property"></a>PidLidLogDocumentSaved (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob das Dokument während der Journalfunktion gespeichert wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogDocSaved  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogDocSaved  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000870F  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 22ee8157-d74e-4a94-9c76-b9ac736d5211
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5f1dac712731175978bc639cc7296171448a41e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d896d66db13b2114c1c333084d5f3b1d3a341796
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792710"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574790"
 ---
 # <a name="initializing-mapi"></a>Initialisieren von MAPI
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Alle Clientanwendungen, die MAPI-Bibliotheken verwenden, müssen die Funktion **"MAPIInitialize"** aufrufen. Weitere Informationen finden Sie unter ["MAPIInitialize"](mapiinitialize.md). **"MAPIInitialize"** globale Daten für die Sitzung initialisiert und bereitet die MAPI-Bibliotheken, die Anrufe annehmen. Es gibt einige Flags, die die festzulegenden in manchen Fällen eine wichtige Rolle spielen: 
   

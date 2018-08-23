@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 931a004f-3f20-452b-8d9e-422ee2dba106
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e83029e1813126351593b9311a71ca9dbbbba45a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 23b364a5b4c9cec3832a4e939fa53d53d3e15420
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793952"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574118"
 ---
 # <a name="pidnamecategory-canonical-property"></a>PidNameCategory (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Kategorie der Datei mit dem Dokument verbundenen.
   

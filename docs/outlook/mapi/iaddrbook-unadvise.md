@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e0db9e86-9528-43de-b8ba-a5af8b7bda4b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bf72e6f182f67861f909e21f0ec1871d76617974
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e06f78317a1e98d47a37cb7059042b254567fe8b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19792022"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573684"
 ---
 # <a name="iaddrbookunadvise"></a>IAddrBook::Unadvise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benachrichtigungsregistrierung eines für einen Adresseintrag Adressbuch zuvor eingerichtet werden abgebrochen.
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die Registrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clients aufrufen die **Unadvise** -Methode zum Empfangen von Benachrichtigungen zu Änderungen an einer bestimmten Adressbuch Adresseintrag beenden. Wenn ein benachrichtigungsregistrierung abgebrochen wird, der Adressbuchdateien Anbieter Versionen der Zeiger auf den Anrufer der advise-Empfänger. Die Version kann jedoch während des Anrufs **Unadvise** oder zu einem späteren Zeitpunkt, auftreten, wenn ein anderer Thread ist die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode aufruft. Wenn eine Benachrichtigung ausgeführt wird, wird die Version verzögert, bis die **OnNotify** -Methode zurückgibt. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8f7119c7-ffc3-47cf-aa1b-b4e56bcc5a24
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 71c0bbec13c869c1401c60834f30ca61360c8b38
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ddb667715903656291a21ebb835690768146ee9c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794034"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575225"
 ---
 # <a name="pidtagaccesslevel-canonical-property"></a>PidTagAccessLevel (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Client Zugriffsebene auf das Objekt an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ACCESS_LEVEL  <br/> |
-|Bezeichner:  <br/> |0x0FF7  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ACCESS_LEVEL  <br/> |
+|Kennung:  <br/> |0x0FF7  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Access-Steuerelementeigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist schreibgeschützt für den Client. Es muss eine der folgenden Werte sein:
   

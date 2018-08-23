@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: f598fc57-75d3-473b-8eb0-9d8a3b92e9f2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c6e352288f0bf5b0a3f284441bffc522bf00b9f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b9244e28337c74487562ec235f246559a49a390d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19792055"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573803"
 ---
 # <a name="imapiadvisesink--iunknown"></a>IMAPIAdviseSink : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Implementiert eine Advise-Empfängerobjekt für die Verarbeitung der Benachrichtigung. Ein Zeiger auf eine Advise-Empfängerobjekt wird in einem Aufruf des Dienstanbieters **Advise** -Methode verwendeten Mechanismus zum Registrieren für die Benachrichtigung übergeben. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Beraten der Empfängerobjekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Beraten der Empfängerobjekten  <br/> |
 |Implementiert von:  <br/> |Clientanwendungen und MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter und MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIAdviseSink  <br/> |

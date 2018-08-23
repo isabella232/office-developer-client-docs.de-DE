@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c78d4d00-bc31-4d0b-8af0-dd0b8f3febfe
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9baf3397255d6138caaad84de5ff5621bd6c9555
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d34168743926681ee7169a593e302755b193aae7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795869"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577044"
 ---
 # <a name="writing-uncompressed-formatted-text"></a>Schreiben von nicht komprimiertem formatierten Text
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bei der Vorbereitung zum Senden einer Nachricht mit formatierten Text, legen Sie entweder die Nachricht **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft in komprimierten oder nicht komprimierten Text. Schreiben von komprimierten Text in der **PR_RTF_COMPRESSED** -Eigenschaft ist ein sehr CPU-intensiver Vorgang und kann die Leistung erheblich beeinträchtigen. 
   

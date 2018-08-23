@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: e4071307-6205-4079-ab65-7499d14f145c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b90639675fa566a83dd78c6ac250f743d68480e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6cafa336bf915abd35de07a11ee65baf9ac4d69f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795110"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572690"
 ---
 # <a name="pidtagsearchfolderlastused-canonical-property"></a>PidTagSearchFolderLastUsed (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der letzte Zeitpunkt des Zugriffs auf der Ordner darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_LAST_USED  <br/> |
-|Bezeichner:  <br/> |0x6834  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_WB_SF_LAST_USED  <br/> |
+|Kennung:  <br/> |0x6834  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss als die Anzahl der Minuten seit Mitternacht (Coordinated Universal Time, UTC) 1. Januar 1601 formatiert werden.
   

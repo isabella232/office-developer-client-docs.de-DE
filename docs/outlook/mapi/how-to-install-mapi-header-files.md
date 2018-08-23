@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8aaabe65-b0bc-4481-b00b-16dbe74bd8ae
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f96d951a79332b07ad65abb30bc1f2916bbbeeef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 809dbf8cfba447277c28dc72a5370f4bf1071649
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791849"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574904"
 ---
 # <a name="install-mapi-header-files"></a>Installieren von MAPI-Headerdateien
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema wird beschrieben, wie auf MAPI-Headerdateien und Bibliotheksdateien beziehen und installieren.
 
@@ -27,7 +27,7 @@ Eine Liste der MAPI-Headerdateien finden Sie unter [Headerdateien häufig verwen
   
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md) 
+- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md) 
 - [Verweisen auf MAPI-Funktionen](how-to-link-to-mapi-functions.md)
-- [H�ufig verwendete Headerdateien](commonly-used-header-files.md)
+- [Häufig verwendete Headerdateien](commonly-used-header-files.md)
 

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8b53c307-1a01-4c94-b6db-9fcb840ce390
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0148885a528f10309e2fe1132297ca5ea1f0c3c5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c027c165fb4ad353ceadf300ad354aef4af14d47
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793569"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577023"
 ---
 # <a name="pidlidfax3emailaddress-canonical-property"></a>PidLidFax3EmailAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass die e-Mail-Adresse des Kontakts Faxadresse's.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax3EmailAddress  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax3EmailAddress  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080D3  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft, falls vorhanden, sollte enthalten einen Benutzer lesbaren Anzeigenamen, gefolgt von der "@" Zeichen, gefolgt von einer Faxnummer.
   

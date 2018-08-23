@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ea5b77b7-8440-4e54-abd2-c475138c8f63
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ae25bd32819de06e91ccb20ada7c7a14b723cd65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 332b6b857921c8f72837dc115805084efd8c5a19
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794096"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574748"
 ---
 # <a name="pidtagattachmentcontactphoto-canonical-property"></a>PidTagAttachmentContactPhoto (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Vorhandensein einer Anlage Foto für einen Kontakt an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACHMENT_CONTACTPHOTO  <br/> |
-|Bezeichner:  <br/> |0x7FFF  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACHMENT_CONTACTPHOTO  <br/> |
+|Kennung:  <br/> |0x7FFF  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss auf TRUE festgelegt sein, und es sollte nur eine Anlage in einem bestimmten Kontaktobjekt vorhanden sein.
   

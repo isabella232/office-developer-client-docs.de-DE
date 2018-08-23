@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2973ff42-213f-43ce-a358-159b6c5381ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3d8f1a5f3d244da50b2ebb92be339600d47e2ace
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 120c0619827e8cbbbc92f7665c014eefdd8504e2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794150"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572627"
 ---
 # <a name="pidtagbusiness2telephonenumbers-canonical-property"></a>PidTagBusiness2TelephoneNumbers (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste von Telefonnummern für ein Unternehmen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_BUSINESS2_TELEPHONE_NUMBER_A_MV  <br/> |
-|Bezeichner:  <br/> |0x3A1B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_BUSINESS2_TELEPHONE_NUMBER_A_MV  <br/> |
+|Kennung:  <br/> |0x3A1B  <br/> |
 |Datentyp:  <br/> |PT_MV_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann zum Auflisten von alternativen Rufnummern oder eine Liste der Erweiterungen für ein Unternehmen verwendet werden.
   

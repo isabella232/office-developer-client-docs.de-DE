@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 0f2040b7-9b6c-4eae-aa68-29c4f7b8bd76
 description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 3ad9141f2530e64664a2d0c75ece2b834cc6ad78
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fc8d8d53dcbc091df98ba9e23533e4138660c8e2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793290"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574566"
 ---
 # <a name="one-off-tables"></a>Einmalige Tabellen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine einmalige Tabelle enthält Informationen zu den Vorlagen, die ein Adressbuchanbieter zum Erstellen des neuen Empfänger unterstützt. Einmalige Tabellen von adressbuchanbietern implementierte, einzelne Adresse Adressbuch Container, und von MAPI implementiert werden und beständige oder temporäre werden können. 
   

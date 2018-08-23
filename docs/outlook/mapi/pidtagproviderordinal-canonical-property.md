@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: d062b54d-7c32-4369-ab69-f7193773a1c0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b56ee557884e12728c98827f9eb1a280d7a29c30
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4cd865fbc443a20ebf4b4cd9722fe52c44d5eddc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794843"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573810"
 ---
 # <a name="pidtagproviderordinal-canonical-property"></a>PidTagProviderOrdinal (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Den nullbasierten Index des Dienstanbieters Position in der Provider-Tabelle enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROVIDER_ORDINAL  <br/> |
-|Bezeichner:  <br/> |0x300D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROVIDER_ORDINAL  <br/> |
+|Kennung:  <br/> |0x300D  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von MAPI berechnet.
   

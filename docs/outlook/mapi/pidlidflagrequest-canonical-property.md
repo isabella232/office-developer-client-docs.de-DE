@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 38981f07-14b8-47c2-93df-e6aed91896e4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: df2e474206559dadf250bdf9a078c69da61187c8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4a2bcfbbc06427e5bf7e06f1c4060a29689fce3a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793597"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575392"
 ---
 # <a name="pidlidflagrequest-canonical-property"></a>PidLidFlagRequest (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Den Status der einer Besprechungsanfrage darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidRequest  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidRequest  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008530  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kennzeichnen von  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 In Microsoft Office Outlook ist eine Besprechungsanfrage ein Terminelement.
   

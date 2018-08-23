@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: bce46687-17dc-4a3f-96be-303d8755158e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aa149a81102a4981712ea3ca897d8b1ad448a1eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 649490f18bb1a14a7056b49fd846e893fba304bd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794955"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575210"
 ---
 # <a name="pidtagrenderingposition-canonical-property"></a>PidTagRenderingPosition (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Offset in Zeichen, die beim Rendern einer Anlage im Hauptfenster Nachrichtentext verwenden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RENDERING_POSITION  <br/> |
-|Bezeichner:  <br/> |0x370B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RENDERING_POSITION  <br/> |
+|Kennung:  <br/> |0x370B  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der angegebene Offset-1 (0xFFFFFFFF) ist, wird die Anlage unter Verwendung dieser Eigenschaft nicht gerendert. Alle Werte, die als-1 Geben Sie an der Position innerhalb der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft, an der die Anlage ist gerendert werden soll.
   

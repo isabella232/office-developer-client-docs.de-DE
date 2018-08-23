@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 47e01131-f399-43cb-9815-aba69638c3fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b934f9694061e17118be35e3fabeeff3bbc61a37
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bf92e62dc572a81b6e0aab4cb1b0fc8afe97800d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794090"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573096"
 ---
 # <a name="pidtagattachflags-canonical-property"></a>PidTagAttachFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Bitmaske aus Flags für eine Anlage enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x3714  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_FLAGS  <br/> |
+|Kennung:  <br/> |0x3714  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird verwendet, für die MHTML-Unterstützung. 
   

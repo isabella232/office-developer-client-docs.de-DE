@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 49deb153-03c6-4be2-a3a5-53cca01accba
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7167b7b51698cda5610356779a8e8342b34a6082
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a0abd3618f7a1586d8ca786fc1b6802c17e0f0f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794719"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573117"
 ---
 # <a name="pidtagoriginalmessageclass-canonical-property"></a>PidTagOriginalMessageClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Klasse der ursprünglichen Nachricht für die Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIG_MESSAGE_CLASS, PR_ORIG_MESSAGE_CLASS_A, PR_ORIG_MESSAGE_CLASS_W  <br/> |
-|Bezeichner:  <br/> |0x004B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIG_MESSAGE_CLASS, PR_ORIG_MESSAGE_CLASS_A, PR_ORIG_MESSAGE_CLASS_W  <br/> |
+|Kennung:  <br/> |0x004B  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Secure Messaging-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften enthalten eine Kopie der Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) der Nachricht für die der Bericht generiert wird.
   

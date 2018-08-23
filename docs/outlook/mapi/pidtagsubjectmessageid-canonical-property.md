@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: d4b1a087-0986-467a-aaa9-fc643f7c56fc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6b0c097616dbdc24b6e39b05aa0daaabf394e7cf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c89a0a86ac733cd2cce1efc071e47fcb011fec18
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795255"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573068"
 ---
 # <a name="pidtagsubjectmessageid-canonical-property"></a>PidTagSubjectMessageId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Binärwert an, der aus der Nachricht kopiert wird für die ein Bericht generiert wird. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SUBJECT_IPM  <br/> |
-|Bezeichner:  <br/> |0x0038  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SUBJECT_IPM  <br/> |
+|Kennung:  <br/> |0x0038  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft, wie die Eigenschaft **PR_REPORT_TAG** ([PidTagReportTag](pidtagreporttag-canonical-property.md)) kann verwendet werden, um einen Bericht mit der ursprünglichen Nachricht zu korrelieren. 
   

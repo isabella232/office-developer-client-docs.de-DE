@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9eec90d3-2369-4340-86ed-0efa58918ed5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 73eb92b0c1b88e114775231695b91157a3d26a2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d052e7590ee502b55f2076d698587ab68820ca56
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792058"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576701"
 ---
 # <a name="imapiadvisesinkonnotify"></a>IMAPIAdviseSink::OnNotify
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Antwortet auf eine Benachrichtigung durch eine oder mehrere Aufgaben ausführen. Die Aufgaben ausgeführt, abhängig von den Typ des Ereignisses und das Objekt, das die Benachrichtigung generiert. 
   
@@ -50,7 +50,7 @@ S_OK
   
 > Die Benachrichtigung wurde erfolgreich verarbeitet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Benachrichtigungsprozess beginnt, wenn ein Client oder MAPI **Advise** -Methode des Dienstanbieters registrieren, um eine Benachrichtigung eines bestimmten Typs für ein bestimmtes Objekt aufruft. Einer der Parameter der **Advise** -Methode ist ein Zeiger auf ein Objekt der Advise-Empfänger, die die [IMAPIAdviseSink](imapiadvisesinkiunknown.md) -Schnittstelle implementiert wird. Bei Auftreten eines Ereignisses auf dem Zielobjekt, das die registrierten Benachrichtigung, den Dienstanbieter entweder direkt oder indirekt über MAPI, entspricht, wird der Advise-Empfänger **OnNotify** -Methode aufgerufen. 
   

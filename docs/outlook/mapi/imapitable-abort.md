@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73291a5b-b626-494c-b5d9-f7709e34bac2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4b578f287a532475b53fb69cc4499662b6c4b6d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 68d40a6e152698554fcb88c6f7e5bfd4a7ff0ce3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792443"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574006"
 ---
 # <a name="imapitableabort"></a>IMAPITable::Abort
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beendet die asynchrone Vorgänge derzeit in Arbeit für die Tabelle.
   
@@ -45,7 +45,7 @@ MAPI_E_UNABLE_TO_ABORT
   
 > Ein asynchroner Vorgang ist in Arbeit und kann nicht beendet werden oder wurde bereits abgeschlossen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::Abort** -Methode beendet jede asynchrone Operation, die derzeit ausgeführt wird. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6082162-2a74-4850-a0df-4bdbc67b41d8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 010b17de08ee5836a26c56f300b36822df2e981e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4bfbaada3ced58a689ca4d4745e6e4c798755d4a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795223"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574307"
 ---
 # <a name="pidtagstoreunicodemask-canonical-property"></a>PidTagStoreUnicodeMask (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske aus Flags, die Clientanwendungen abgefragt werden sollen, um die Eigenschaften eines Nachrichtenspeichers zu bestimmen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_STORE_UNICODE_MASK  <br/> |
-|Bezeichner:  <br/> |0x340F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_STORE_UNICODE_MASK  <br/> |
+|Kennung:  <br/> |0x340F  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt die Funktionen des einen Nachrichtenspeicher für Clientanwendungen, Planen sie eine Nachricht senden. Die Kennzeichen erleichtern Entscheidungen durch einen Client oder einem anderen Speicher, z. B., ob **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) oder nur **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) gesendet wird. Ein Client sollten diese Eigenschaft festlegen. Ein Versuch gibt **MAPI_E_COMPUTED**zurück. 
   

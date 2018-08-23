@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a63c42cf-36af-466b-b41e-d6b53ce1c9fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 124208a3f5c6bb300aca3699a04b15e842c46cd1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 611680db87c02b9370d6c1b3ac7a8d68b47f3050
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792646"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574027"
 ---
 # <a name="imsgstoreopenentry"></a>IMsgStore::OpenEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Ordner oder eine Nachricht, und gibt einen Schnittstellenzeiger für den weiteren Zugriff. 
   
@@ -90,7 +90,7 @@ MAPI_NO_CACHE
   
 > Wenn ein Speichers im Cache-Modus geöffnet wird, kann ein Client oder Dienstanbieter **IMsgStore::OpenEntry**, das MAPI_NO_CACHE-Flag zum Öffnen eines Elements oder einen Ordner auf dem remote-Speicher aufrufen. Wenn Sie den Nachrichtenspeicher mit dem MDB_ONLINE-Flag auf dem Remoteserver öffnen, müssen Sie nicht das Flag MAPI_NO_CACHE verwenden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::OpenEntry** -Methode öffnet ein Ordner oder eine Nachricht und gibt einen Zeiger auf eine Schnittstelle, die für eine zusätzliche Access verwendet werden kann. 
   

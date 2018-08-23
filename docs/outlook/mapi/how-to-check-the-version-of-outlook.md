@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 672fc380-a29b-4e99-9211-949fd5065723
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 15729f8d2c618f16fb5bebab885eaf610c09da77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6369ea8948ae1996b6f88bcacd218b8dcf397306
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791862"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574692"
 ---
 # <a name="check-the-version-of-outlook"></a>Überprüfen Sie die Version von Outlook
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enth�lt ein Codebeispiel, in dem Informationen zur Version der installierten Versionen von Microsoft Outlook �berpr�ft, ob die installierte Version Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007 oder Microsoft Outlook 2003 ist. �berpr�fen der Version der Outlook ist manchmal erforderlich sind, um sicherzustellen, dass bei einem MAPI-Anwendung Aufrufe API-Elemente, die durch die aktuell ausgef�hrte Version von Outlook unterst�tzt werden.
 
@@ -174,5 +174,5 @@ Error:
 
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
+- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 
