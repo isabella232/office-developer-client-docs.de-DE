@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 479404c5-4926-402a-aa12-75dd23276d75
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ece5340497f83862b711f076c8c6346e14ec9355
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 668e1c57c59bf2356be808e0347e1bd5135478a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795498"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563891"
 ---
 # <a name="sending-or-receiving-a-message-on-demand"></a>Senden oder Empfangen einer Nachricht bei Bedarf
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients greifen in der Regel auf das MAPI-Subsystem – die MAPI-Warteschlange und die-Dienstanbieter – den Zeitpunkt der Nachrichtenübermittlung und Empfang von Nachrichten zu behandeln. Jedoch können Sie diese Zeitdauer ändern, mithilfe des Objekts Status, der die MAPI-Warteschlange oder eines Transportdienstes.
   

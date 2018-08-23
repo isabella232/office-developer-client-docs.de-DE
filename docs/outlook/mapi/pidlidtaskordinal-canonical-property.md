@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1021860e-4c40-4c22-aa68-b568d046aaf7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 033bc038988373b11f3eac863a256717624999f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c3b7c37c800230749f841ba64f4d52cfc9877af0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793848"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563653"
 ---
 # <a name="pidlidtaskordinal-canonical-property"></a>PidLidTaskOrdinal (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Hilfe benutzerdefinierten Sortierung Aufgaben.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskOrdinal  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskOrdinal  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008123  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann nicht festgelegt bleiben. Wenn festgelegt, dessen Wert größer als "0x800186A0" (-2,147,383,648) sein muss und weniger als "0x7FFE7960" (2,147,383,648) und unter Aufgaben im selben Ordner eindeutig sein müssen.
   

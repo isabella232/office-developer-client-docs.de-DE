@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ac82f7e8-6453-4b4f-8223-3c23d09ca4c6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2b14c4fe8cbbadb2ccdd6a2f7870a07d2f96a3c9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: da49b4d8251f6b0b69d2ffbf80194943215675e2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795730"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564164"
 ---
 # <a name="tips-for-better-table-performance"></a>Tipps zur Leistungssteigerung-Tabelle
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Da viele Tabellenvorgänge zeitaufwendig sein können und es nicht möglich ist, Status anzugeben, ist es hilfreich, die folgenden Techniken zur Verbesserung der Leistung verwenden:
   

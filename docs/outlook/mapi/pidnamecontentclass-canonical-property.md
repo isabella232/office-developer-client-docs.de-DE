@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6f623345-b30e-452f-a822-9308b455697a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1ad4f83cb9021cef82ce62b6b6f5616a3fc3d118
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 20dcef118a5e3f513f8330802684a59f0f0dcf73
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793959"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565347"
 ---
 # <a name="pidnamecontentclass-canonical-property"></a>PidNameContentClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen Wert für [RFC3282] Content-Class Kopfzeile Feld enthält.
   
@@ -35,7 +35,7 @@ Einen Wert für [RFC3282] Content-Class Kopfzeile Feld enthält.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um den Wert dieser Eigenschaft festzulegen, müssen ein Kopfzeilenfeld Content-Class mit den gewünschten Wert Multipurpose Internet Message Extensions (MIME) Clients geschrieben werden. MIME-Leser müssen den Wert eines Felds Header Content-Class auf den Wert dieser Eigenschaft kopieren. 
   

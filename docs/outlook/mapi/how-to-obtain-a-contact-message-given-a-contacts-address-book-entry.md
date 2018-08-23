@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a263894b-b3da-f1e4-a7da-ca3695bddc94
 description: 'Zuletzt geändert: 13 August 2013'
-ms.openlocfilehash: 346e6bc471f5257aacb34c2e7d02a0aade1bb46e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 472b5847053c0a18026c76b8055a26551331d8dd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791864"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564542"
 ---
 # <a name="obtain-a-contact-message-given-a-contacts-address-book-entry"></a>Erhalten Sie eine Kontakte Nachricht erhält eine Kontakte Buch Adresseintrag
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält ein Beispiel in C++ `HrOpenContact`, die zeigt, wie die [CONTAB_ENTRYID](contab_entryid.md) -Struktur, die einen Eintrag in einem Adressbuch Kontakte die zugehörige MAPI Kontakt Meldung erhalten identifiziert. 
   

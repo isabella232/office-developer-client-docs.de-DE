@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b3685890-117c-9acc-e19f-cf22a349a088
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 338ae3c3c8d8b4037ab0c7b46916e45cf5a8ded2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 125147ed7d6cd90c1069aa5cc1c759abe752dfe2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791224"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564521"
 ---
 # <a name="about-notification-based-store-indexing"></a>Informationen zum benachrichtigungsbasierten Indizieren von Stores
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein MAPI-Anbieter kann angeben, ob der MAPI-Protokollhandler Durchforstungen und Indizes im Speicher Nachrichten oder gibt an, ob der Speicher sendet Benachrichtigungen die Indizierung sind Nachrichten indiziert werden. Da letztere als Benachrichtigung-basierte Indizierung bezeichnet wird, und ein Speicher, der Benachrichtigung-basierte Indizierung unterstützt, ist ein bekanntes als Pusher Speicher.
   

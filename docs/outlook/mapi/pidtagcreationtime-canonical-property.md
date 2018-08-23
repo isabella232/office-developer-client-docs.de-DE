@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 13122af2-06c8-4342-983d-e38178743d8f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 475c93e7f2c246e0351f3054b0f827fb7ee015a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 03c4c0810c69f8dd8f22ce84212200d3ccad1dab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794266"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563240"
 ---
 # <a name="pidtagcreationtime-canonical-property"></a>PidTagCreationTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das Erstellungsdatum und die Uhrzeit einer Nachricht. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CREATION_TIME  <br/> |
-|Bezeichner:  <br/> |0x3007  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CREATION_TIME  <br/> |
+|Kennung:  <br/> |0x3007  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Nachrichtenspeicher wird diese Eigenschaft für jede Nachricht, das erstellt wird.
   

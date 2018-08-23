@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b0f5393b-f923-4802-8ea0-daf58cd4bace
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e8266b0fcac8318420bd67cfd90e8ff594638cf0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 545249f4777abc7d1a0a566631c777a6a1ba190b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794206"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563761"
 ---
 # <a name="pidtagcontactaddressbookstoreentryids-canonical-property"></a>PidTagContactAddressBookStoreEntryIds (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-IDs der Speicher in welchen, die Ordnern, die als Kontaktadresse fungieren Adressbucheinträge gefunden werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAB_STORE_ENTRYIDS  <br/> |
-|Bezeichner:  <br/> |0x6626  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_ENTRYIDS  <br/> |
+|Kennung:  <br/> |0x6626  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.
   

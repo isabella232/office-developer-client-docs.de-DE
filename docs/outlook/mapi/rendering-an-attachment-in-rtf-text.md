@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 26372539-e9fe-464d-95c7-90b58c20b98f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cf22e360a0319a662c9b7dd31856dbb6eccec02a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5d8fc10f876408d616c5acefb664ba5d61c927a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795365"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562974"
 ---
 # <a name="rendering-an-attachment-in-rtf-text"></a>Darstellen einer Anlage als RTF-Text
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Rich-Text-Format (RTF)-Clients unterstützen können Positionsinformationen Rendering von RTF des Nachrichtentexts anhand der folgenden Escapezeichen in der Nachricht **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft abrufen:
   

@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 62561d8d-33cb-e482-7fa0-132afe2b464a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3a38a4604230c0aa3f5b0d104ae3b838f544b31d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bf8cf115c6188b5058717437c470e11797ff5b9a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795411"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564962"
 ---
 # <a name="rtfwcsretinfo"></a>RTF_WCSRETINFO
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Struktur enthält Informationen zu einem Datenstrom im systemeigenen Format von Dekomprimieren den Textkörper einer Nachricht, die in der komprimierten Rich Text Format (RTF) zusammengefasst wird zurückgegeben.
   
@@ -32,7 +32,7 @@ typedef struct {
 
 ## <a name="members"></a>Elemente
 
-_Größe_
+_size_
   
 > Die Größe der Struktur **RTF_WCSRETINFO** als Byteanzahl angegeben. 
     

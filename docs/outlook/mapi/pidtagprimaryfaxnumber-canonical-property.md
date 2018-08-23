@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a95330ab-fde7-4ad1-82ce-143ff2120306
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5d08bd4d3932c2e0b4d7d179bb9e0cb04467e8d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8be851270b4b4212928728eb8c7f44996f91d6fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794799"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563666"
 ---
 # <a name="pidtagprimaryfaxnumber-canonical-property"></a>PidTagPrimaryFaxNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Telefonnummer des primären Faxgerät des Empfängers an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PRIMARY_FAX_NUMBER, PR_PRIMARY_FAX_NUMBER_A, PR_PRIMARY_FAX_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A23  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PRIMARY_FAX_NUMBER, PR_PRIMARY_FAX_NUMBER_A, PR_PRIMARY_FAX_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A23  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

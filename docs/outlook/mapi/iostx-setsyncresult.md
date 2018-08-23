@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f083ee0-bf36-0059-1589-66e454fe0098
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 74a4e299da6c0637c3da70c329569266d43dbd9a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f8982bafc0678378ae46dc31a9417cc11bb695a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792709"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563072"
 ---
 # <a name="iostxsetsyncresult"></a>IOSTX::SetSyncResult
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das Ergebnis der Synchronisierung festgelegt.
   
@@ -39,7 +39,7 @@ HRESULT SetSyncResult(
   
 >  [in] Das Ergebnis der Synchronisierung. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Rufen Sie **IOSTX::SetSyncResult** vor **IOSTX::SyncEnd** , um den lokalen Speicher des Ergebnisses der Synchronisierung zu informieren. 
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17cb53c4-7154-4a4e-b4ec-de720fa055cb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 69bbed644a8173bf9291ca48a63960f693108318
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: adccbaf65adec2c517c4890f722198e8262092cb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791739"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564605"
 ---
 # <a name="fpropcompareprop"></a>FPropCompareProp
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Vergleicht zwei Eigenschaftswerte, die mit einem angegebenen relationalen Operator. 
   
@@ -63,7 +63,7 @@ FALSE
   
 > Die Eigenschaftswerte werden nicht die angegebene Relation-Objekt erfüllen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Vergleichsmethode hängt die Eigenschaftentypen in die Definitionen der [SPropValue](spropvalue.md) -Eigenschaft angegeben. Die Funktionen **FPropCompareProp** und [FPropContainsProp](fpropcontainsprop.md) können verwendet werden, um Einschränkungen zum Generieren einer Tabelle vorzubereiten. 
   

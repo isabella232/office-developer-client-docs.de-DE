@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 278bb9e4-3ff6-4bef-b208-7924f7a5e9b1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d27ef47a3ba387ae2e7acbcefc75b07ddd794e80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7686f36ca105ab92161757d492a86b4b78461dfd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795288"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564080"
 ---
 # <a name="pidtaguserx509certificate-canonical-property"></a>PidTagUserX509Certificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 X. 509 Version 3 Sicherheitszertifikate für ein messaging-Benutzer enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_USER_X509_CERTIFICATE  <br/> |
-|Bezeichner:  <br/> |0x3A70  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_USER_X509_CERTIFICATE  <br/> |
+|Kennung:  <br/> |0x3A70  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von Clientanwendungen, die öffentliche Schlüssel Sicherheit zu nutzen. Sie enthält eine binäre Darstellung von einem oder mehreren x. 509 Version 3 Sicherheitszertifikaten. 
   

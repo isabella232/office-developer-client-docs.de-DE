@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b96dd8f6-e648-4014-8a1d-ae1da771c439
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1b3d8c74d85696e733b378a4cac2b8e2a3b6a072
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ce78c6873f3a1dc034ae33f3c9e965ef8f2f1815
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792446"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563779"
 ---
 # <a name="imapitableexpandrow"></a>IMAPITable::ExpandRow
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erweitert eine reduzierte Tabellenkategorie, Hinzufügen von Endknoten oder auf niedrigerer Ebene Überschriftenzeilen der Kategorie auf die Tabellenansicht.
   
@@ -74,7 +74,7 @@ MAPI_E_NOT_FOUND
   
 > Die Zeile, die vom _PbInstanceKey_ -Parameter ist nicht vorhanden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::ExpandRow** -Methode erweitert eine reduzierte Tabellenkategorie, Hinzufügen von Endknoten oder auf niedrigerer Ebene Überschriftenzeilen, die die Tabelle-Ansicht der Kategorie angehören. Beschränkt die Anzahl der Zeilen im _LppRows_ -Parameter zurückgegeben werden soll, kann in der _UlRowCount_ -Parameter angegeben werden. Wenn _UlRowCount_ auf einen Wert größer als 0 (null) festgelegt wird, und eine oder mehrere Zeilen in der Zeile auf den _LppRows_zurückgegeben werden, legen Sie die Position der Textmarke, die bookmark_current in die Zeile unmittelbar nach der letzten Zeile in der Zeile verschoben wird.
   

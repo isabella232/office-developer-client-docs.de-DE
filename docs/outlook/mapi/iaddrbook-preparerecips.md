@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d423f7b5-23b8-44dd-bca3-6590182dc42d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fe3e098b2b70e77bd0c536002a4724810261bff3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 004498ac94aadaa075d87d4dd3c675c8cd5f4feb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19792028"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563877"
 ---
 # <a name="iaddrbookpreparerecips"></a>IAddrBook::PrepareRecips
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bereitet eine Empfängerliste zur späteren Verwendung von messaging-System. 
   
@@ -59,7 +59,7 @@ S_OK
   
 > Die Empfängerliste wurde erfolgreich vorbereitet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clients und Dienstanbieter rufen Sie die **PrepareRecips** -Methode, um Folgendes auszuführen: 
   

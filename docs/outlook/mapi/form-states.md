@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: dfc9fbf1-90d4-4756-92d9-032ac56a9c50
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 969aca6fd37f237a607df36cc58f249828449e27
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 195a82bfcc163ee01d2d42c71e79a8f5c9c620e5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791749"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564633"
 ---
 # <a name="form-states"></a>Formular Staaten
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Formular-Objekte können in eine der fünf verschiedenen Status, je nach welche Methoden werden aufgerufen wurden und ob Fehler aufgetreten sind, in diese Methoden ausgeführt werden. In den folgenden Themen werden die Zustände beschrieben:
   

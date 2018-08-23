@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 80c11dd3-775b-4c66-afc2-b31d7bbcad9f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 863dcc0a3a5081be74365ba22fea097b9e9e86f5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 743779a815274ae00fae7bacfe9755fc574f38be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794333"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563674"
 ---
 # <a name="pidtagdistributionlistexpansionprohibited-canonical-property"></a>PidTagDistributionListExpansionProhibited (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Message Transfer Agent (MTA) für die Verteilerlisten erweitern untersagt ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DL_EXPANSION_PROHIBITED  <br/> |
-|Bezeichner:  <br/> |0x0014  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DL_EXPANSION_PROHIBITED  <br/> |
+|Kennung:  <br/> |0x0014  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    

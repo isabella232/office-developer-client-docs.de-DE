@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: b79aa2b7-b6e0-46dc-89f1-f801a6b5737a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 316bd4169e3e714e7d36a16cab417a1ee2068594
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0872a2c0ebef5e83052fe671e4b463e980bc4e8b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793705"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563289"
 ---
 # <a name="pidlidownercriticalchange-canonical-property"></a>PidLidOwnerCriticalChange (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Datum und Uhrzeit, wann eine Besprechungsanfrage vom Organisator gesendet wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |LID_OWNER_CRITICAL_CHANGE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |LID_OWNER_CRITICAL_CHANGE  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000001a  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   

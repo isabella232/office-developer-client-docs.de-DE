@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 433c2ce1-4d18-4986-8416-ea0e7e0f841a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4350cd6d5e4711e7743f409a1264619075ef46ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a334032c5ebc5bb5627a8a3d9ea3a0e195824120
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793538"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564724"
 ---
 # <a name="pidlidfax1displayname-canonical-property"></a>PidLidFax1DisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Anzeigenamen des Fax Geschäftsadresse für einen Kontakt an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax1DisplayName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax1DisplayName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080B0  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

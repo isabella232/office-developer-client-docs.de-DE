@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 45a73c7b-5855-4b70-866b-facb41cb3c32
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1093975e6cbdd79004125a0a4a3098ffa421ab0b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 51a83e1e28534cc237419d9c4ae475c1d719c5de
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792054"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565074"
 ---
 # <a name="iexchangemodifytable--iunknown"></a>IExchangeModifyTable : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Unterstützt den Zugriff auf Microsoft Exchange Server Table-Objekte, insbesondere Systemzugriff (List, SACL) Table-Objekte zu steuern und Regel Table-Objekte in Microsoft Exchange Server-Ordnern. Diese Schnittstelle ähnelt der [IMAPITable: IUnknown](imapitableiunknown.md) -Schnittstelle, aber es fügt die Unterstützung für Microsoft Exchange Server-spezifische Strukturen, die zur Steuerung der SACLs und Regeln hinzu. 
   
 |||
 |:-----|:-----|
-|Verf�gbar gemacht von:  <br/> |Keine  <br/> |
+|Verfügbar gemacht von:  <br/> |Keine  <br/> |
 |Implementiert von:  <br/> |Server Table-Objekte  <br/> |
 |Aufgerufen von:  <br/> |MAPI-und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IExchangeModifyTable  <br/> |
@@ -44,7 +44,7 @@ Unterstützt den Zugriff auf Microsoft Exchange Server Table-Objekte, insbesonde
 |[GetTable](iexchangemodifytable-gettable.md) <br/> |Gibt einen Zeiger auf eine Schnittstelle für ein MAPI-Table-Objekt zurück.  <br/> |
 |[ModifyTable](iexchangemodifytable-modifytable.md) <br/> |Aktualisiert ein MAPI-Table-Objekt.  <br/> |
    
-|**Eigenschaften, die zum Ändern einer Regeltabelle**|**Zugriff**|
+|**Eigenschaften, die zum Ändern einer Regeltabelle**|**Access**|
 |:-----|:-----|
 |**PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_RULE_CONDITION** ([PidTagRuleCondition](pidtagrulecondition-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
@@ -57,14 +57,14 @@ Unterstützt den Zugriff auf Microsoft Exchange Server Table-Objekte, insbesonde
 |**PR_RULE_STATE** ([PidTagRuleState](pidtagrulestate-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_RULE_USER_FLAGS** ([PidTagRuleUserFlags](pidtagruleuserflags-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-|**Eigenschaften, die zum Ändern einer SACL-Tabelle**|**Zugriff**|
+|**Eigenschaften, die zum Ändern einer SACL-Tabelle**|**Access**|
 |:-----|:-----|
 |**PR_MEMBER_ENTRYID** ([PidTagMemberEntryId](pidtagmemberentryid-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_MEMBER_ID** ([PidTagMemberId](pidtagmemberid-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_MEMBER_NAME** ([PidTagMemberName](pidtagmembername-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_MEMBER_RIGHTS** ([PidTagMemberRights](pidtagmemberrights-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Rufen Sie zum Abrufen der **IExchangeModifyTable** -Schnittstelle, die MAPI- [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode für eine Eigenschaft vom Typ PT_OBJECT auf ein Folder-Objekt. Wenn Sie die **OpenProperty** -Methode aufrufen, übergeben Sie den Wert **IID_IExchangeModifyTable** im _Lpiid_ -Parameter. 
   

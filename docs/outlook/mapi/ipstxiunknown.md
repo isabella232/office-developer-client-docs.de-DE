@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73752f57-6fbc-0201-bf95-0e75c56c04e6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4e7df570851aa515e07117d05103f7c0631c90f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 98c3f33c5f9b4745787d6acb55d7afb230e23518
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792828"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564241"
 ---
 # <a name="ipstx--iunknown"></a>IPSTX : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Schnittstelle stellt Hilfsfunktionen beim Ausführen einer Replikation über die **[IOSTX](iostxiunknown.md)** -Schnittstelle. 
   

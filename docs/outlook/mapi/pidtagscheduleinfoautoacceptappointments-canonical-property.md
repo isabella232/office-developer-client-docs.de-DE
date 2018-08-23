@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 79505b29-2706-472b-b084-ab74be7b3405
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4f2cab31d6eed19a262bd0e667166bc79f428877
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 15feea923c31bd7f88fcb3b346905e37af106d84
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795071"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564073"
 ---
 # <a name="pidtagscheduleinfoautoacceptappointments-canonical-property"></a>PidTagScheduleInfoAutoAcceptAppointments (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Client oder Server automatisch alle Besprechungsanfragen für die Teilnehmer oder eine Ressource beantworten sollten.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_AUTO_ACCEPT_APPTS  <br/> |
-|Bezeichner:  <br/> |0x686D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_AUTO_ACCEPT_APPTS  <br/> |
+|Kennung:  <br/> |0x686D  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Antwort, muss die Antwort Annahme, wenn für eine zusätzliche Einschränkung, die durch das **PR_SCHDINFO_DISALLOW_RECURRING_APPTS** ([PidTagScheduleInfoDisallowRecurringAppts](pidtagscheduleinfodisallowrecurringappts-canonical-property.md)) oder **PR_SCHDINFO_DISALLOW_ angegeben wird OVERLAPPING_APPTS** ([PidTagScheduleInfoDisallowOverlappingAppts](pidtagscheduleinfodisallowoverlappingappts-canonical-property.md)) Eigenschaften erfüllt ist. Den Wert FALSE oder Abwesenheit dieser Eigenschaft wird angegeben, dass ein Client oder Server nicht automatisch annehmen von Besprechungsanfragen muss. Dies ist keine erforderliche Eigenschaft.
   

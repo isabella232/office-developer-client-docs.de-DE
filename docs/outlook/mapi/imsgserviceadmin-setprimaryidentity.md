@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 763cab41-f6f6-4cb0-8cb8-170fdf2a92e6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 38d55f45280b0b037dc9b5cbbd0dc8809ed04e35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 92807cb216e8a7f4eef6b4d95a8d12826b176e6e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792615"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564668"
 ---
 # <a name="imsgserviceadminsetprimaryidentity"></a>IMsgServiceAdmin::SetPrimaryIdentity
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt eine Message Service hat der Hersteller der primäre Identität für das Profil sein.
   
@@ -54,7 +54,7 @@ MAPI_E_NO_ACCESS
   
 > **SetPrimaryIdentity** wurde versucht, eine Message Service angeben, die das SERVICE_NO_PRIMARY_IDENTITY-Flag, das in der **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md))-Eigenschaft festgelegt wurde.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Methode **IMsgServiceAdmin::SetPrimaryIdentity** richtet einen Nachrichtendienst zur als hat der Hersteller der primäre Identität für das Profil. Die primäre Identität ist in der Regel der Benutzer, die den Dienst angemeldet ist. Es wird durch drei Eigenschaften dargestellt: 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 04d444a5-e97f-48e6-89a5-8a6cb2136408
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 25af87004ef5616a6c6fc575c647fdd1794d710f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 100d59a0fd95fcad1976e82aebf6892227c08ec9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794300"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564913"
 ---
 # <a name="pidtagdepth-canonical-property"></a>PidTagDepth (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine ganze Zahl, die den relativen Einzug oder Tiefe der ein Objekt in einer Hierarchietabelle darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEPTH  <br/> |
-|Bezeichner:  <br/> |0x3005  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEPTH  <br/> |
+|Kennung:  <br/> |0x3005  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann auch die Kategorisierungsebene einer Zeile in einer Inhaltstabelle oder die Ordnerhierarchie-Tiefe in einer Hierarchietabelle angeben. Die Tiefe ist nullbasiert, wobei 0 (null) die am weitesten links Kategorie darstellt. In allen Fällen stellt Wert der Eigenschaft um einen relativen Wert statt einen absoluten Wert dar. In der Hierarchietabelle befindet sich der Wert für die Tiefe beispielsweise relativ zu den Container, von dem die Hierarchietabelle abgerufen wurde. Die Tiefe stellt eine absolute Tiefe nicht aus dem Stammcontainer dar. 
   

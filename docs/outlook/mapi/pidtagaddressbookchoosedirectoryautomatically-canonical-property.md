@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: cecd0679-4bc2-4399-8f89-a4e17bb909a0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 48dfced07a8fd78a1af22679759effbd3c6da343
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b685fd0ebe4a2d0bfcfd8aab3015602b84932db7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794056"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564941"
 ---
 # <a name="pidtagaddressbookchoosedirectoryautomatically-canonical-property"></a>PidTagAddressBookChooseDirectoryAutomatically (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Können Microsoft Outlook 2010 und Microsoft Outlook 2013, zum Auswählen der am besten geeigneten globale Adressliste (GAL) oder Kontakteordner für das aktuelle Postfach.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY  <br/> |
-|Bezeichner:  <br/> |0x3D1C000B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY  <br/> |
+|Kennung:  <br/> |0x3D1C000B  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft entspricht der Einstellung **automatisch wählen Sie** im Dialogfeld Optionen für das Adressbuch. Wenn diese Eigenschaft im Abschnitt IID_CAPONE_PROF Profile vorhanden ist und auf **"true"**, das Adressbuch Dialogfeld nicht mehr standardmäßig auf den Container, die von der [SetDefaultDir](iaddrbook-setdefaultdir.md) -Methode angegeben, aber wählt ein Adressbuch, die festgelegt ist, Outlook 2010 oder Outlook 2013 hält entsprechenden für den Kontext, in dem das Dialogfeld angezeigt wurde. Beachten Sie, dass dies eine schlechte Erfahrung für Drittanbieter-adressbuchanbietern implementierte führen kann. 
   

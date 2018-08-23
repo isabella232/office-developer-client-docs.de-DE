@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e4fc8bd9-2ec4-462e-b6cb-e533b323bd05
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8d435907c150de2ad3273ac263e7c93fb19e92a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 309d2ee5310f4e329b3f08eabe98bdf834a4fd92
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794568"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563093"
 ---
 # <a name="pidtaglastverbexecutiontime-canonical-property"></a>PidTagLastVerbExecutionTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Uhrzeit, wann das letzte Verb ausgeführt wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_LAST_VERB_EXECUTION_TIME  <br/> |
-|Bezeichner:  <br/> |0x1082  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_LAST_VERB_EXECUTION_TIME  <br/> |
+|Kennung:  <br/> |0x1082  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Verlauf  <br/> |
    

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b72a0d36-c489-41d6-af57-72fbf4b7a3f5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 09cac591aac9d266571348531e378974b86a3a9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 9c9c75d0ae4b9fe060d6717dfa11ad418cbb715b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791711"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564647"
 ---
 # <a name="folder-associated-information-tables"></a>Informationstabellen, die Ordnern zugeordnet sind
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI definiert das MAPI_ASSOCIATED-Flag für verschiedene MAPI-Komponenten beim Umgang mit zugehörigen Informationstabellen verwendet werden. Jeden Ordner in einem Nachrichtenspeicher sollte eine zugeordnete Inhaltstabelle zusammen mit dessen standard-Inhaltstabelle. Clientanwendungen speichern spezielle Nachrichten in einen Ordner zugeordneten Inhaltstabelle, Formulare und Ansichten enthalten soll. Zur Unterstützung der Formulare und Ansichten muss Ihre Nachricht Speicheranbieter tatsächlich zugeordneten Inhalt Tabellen implementieren.
   

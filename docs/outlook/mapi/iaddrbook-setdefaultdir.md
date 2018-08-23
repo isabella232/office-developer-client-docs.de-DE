@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d5d60150-15e4-41ff-bfb0-0c67e2abcacc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 00d5b2bfc6b0c024f0ef12ce19fed90ef0af6721
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 68cca0b483aca91001f8ee71289f4b1673fb2888
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792002"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564654"
 ---
 # <a name="iaddrbooksetdefaultdir"></a>IAddrBook::SetDefaultDir
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt den angegebenen Container als Standard Adressbuchcontainer her.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Die Standard-Adressbuchcontainer wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clients und Dienstanbieter rufen Sie die **SetDefaultDir** -Methode, um eine neue Standard Adressbuchcontainer herzustellen. Der standardmäßige Container ist der Container, den der Benutzer erhält im Adressbuch angezeigt wird, wenn das Adressbuch zum ersten Mal geöffnet wird. **SetDefaultDir** speichert den Standardcontainer als Eintrag im Profil. Der Container bleibt unverändert bis einen weiteren Anruf zu **SetDefaultDir** in der gleichen Sitzung oder in einer anderen Sitzung erfolgt oder der Container wird entfernt. 
   

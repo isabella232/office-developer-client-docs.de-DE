@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3645e7a6-ef30-494f-bf71-fa06f819bc0c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 03569d05f724df773b1ca3aaf8b7a8f5132b8681
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b8af182d905a1b7449d96a525696fb6af912d3ef
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794956"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563793"
 ---
 # <a name="pidtagreplytemplateid-canonical-property"></a>PidTagReplyTemplateId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den global eindeutigen Bezeichner (GUID) für die Antwortvorlage.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPLY_TEMPLATE_ID  <br/> |
-|Bezeichner:  <br/> |0x65C2  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPLY_TEMPLATE_ID  <br/> |
+|Kennung:  <br/> |0x65C2  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    

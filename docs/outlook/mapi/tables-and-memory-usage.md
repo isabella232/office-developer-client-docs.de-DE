@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7ac11e60-6b2c-4241-96e2-20219f84d949
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 390cec0cc59f189f83af2c5339512d82e125771e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 383c03a00509447222204ab729c56f5eeac553df
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795718"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563016"
 ---
 # <a name="tables-and-memory-usage"></a>Tabellen und Speicherverwendung
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein wichtiger Aspekt beim Abrufen von Daten aus einer Tabelle verbunden ist, die Speicherverwendung. Wenig verfügbarer Arbeitsspeicher kann [IMAPITable::QueryRows](imapitable-queryrows.md) und [HrQueryAllRows](hrqueryallrows.md) ein Fehler auftritt, kleiner als die gewünschte Anzahl von Zeilen zurückgeben. Entscheiden, welche Methode oder der Funktion zum Abrufen von Tabellendaten hängt davon ab, ob die Tabelle im Arbeitsspeicher passt erwartet werden kann, und ist es nicht möglich, wenn Fehler zulässig ist. 
   

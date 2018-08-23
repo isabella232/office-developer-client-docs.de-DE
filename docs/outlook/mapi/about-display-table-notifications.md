@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 085151e9-4809-4d2b-ae4d-e318355e1f5a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a696357c97a85442bbfd5532892c06d570f6367c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 487a5dbcdefe901b514083ee910972354574bd82
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791222"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564458"
 ---
 # <a name="about-display-table-notifications"></a>Informationen zu anzeigebenachrichtigungen-Tabelle
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benachrichtigungen für eine Tabelle angezeigt werden vom verantwortlich für die Erstellung der Tabelle anzeigen, um MAPI-Dienstanbieter gesendet. Für diese Benachrichtigungen werden MAPI durch eine Anzeige Tabelle [IMAPITable::Advise](imapitable-advise.md) -Methode aufrufen und das geänderte Tabelle-Ereignis registriert. 
   

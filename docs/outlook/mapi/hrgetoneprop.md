@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8d0a381a-e714-4663-9a57-b0e1cdbd6ba7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4dcdce72781669988a0cb15eb9b3a7cd73494bfb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 99b63e7b0b31a603bf372b1d52e83af39784b628
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791938"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564157"
 ---
 # <a name="hrgetoneprop"></a>HrGetOneProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft den Wert einer Eigenschaft von einer Eigenschaft Oberfläche, d. h., eine Schnittstelle abgeleitet [IMAPIProp](imapipropiunknown.md)ab. 
   
@@ -61,7 +61,7 @@ MAPI_E_NOT_FOUND
   
 > Die angeforderte-Eigenschaft ist von der angegebenen Schnittstelle nicht verfügbar.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Im Gegensatz zu der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode gibt die **HrGetOneProp** -Funktion nie eine Warnung an. Da es nur eine Eigenschaft abruft, es einfach entweder Erfolg oder Fehler. Zum Abrufen von mehreren Eigenschaften, ist **GetProps** schneller. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2baed391-85bd-4e88-8800-c19bc2d2d54a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 256412f6ccbe66da067411bf9f66ad0478cf5ca2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d9b52edf7f4633fdf9c925a8d8db4953590713b3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795384"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562932"
 ---
 # <a name="resolving-a-recipient-name"></a>Auflösen eines Empfängernamens
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn eine Nachricht adressiert ist, wird eine Empfängerliste mit Eigenschaften für jeden Empfänger erstellt. Durch die Zeit, den die Nachricht gesendet wird, muss eine der Eigenschaften des Empfängers langfristige Eintrags-ID sein: Um sicherzustellen, dass für jeden Empfänger die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft enthält, die [ADRLIST](adrlist.md) -Struktur, die zur Beschreibung der Empfängerliste in den Inhalt des Parameters _LpAdrList_ in einem Aufruf von [IAddrBook übergeben:: ResolveName](iaddrbook-resolvename.md).
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 320af2ff-c2a5-43b1-b3a1-76cb5ffd6a4f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 34bd6de95f731c03466f19e0bc4fd6e2c9910900
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5e9135a52c15c18b70116aaf52e1ee63af413673
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792445"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563849"
 ---
 # <a name="imapitablecreatebookmark"></a>IMAPITable::CreateBookmark
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine Textmarke an der aktuellen Position der Tabelle an.
   
@@ -49,7 +49,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > Der angeforderte Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::CreateBookmark** -Methode markiert die Position einer Tabelle, indem Sie einen Wert eine Textmarke namens erstellen. Eine Textmarke kann verwendet werden, um an der Position der Textmarke identifizierten zurückzugeben. Die mit einer Textmarke versehenen Position ist das Row-Objekts in der Tabelle-Objekt zugeordnet. 
   

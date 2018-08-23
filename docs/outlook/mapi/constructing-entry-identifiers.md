@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bc2a9116-948e-4da3-96b8-26d73bcd63c4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1d38c0ac7ddbd24123dd51d7315644f3ad786d15
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f15749077596bd6c89828eb730cadd5624a75fe1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791430"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564584"
 ---
 # <a name="constructing-entry-identifiers"></a>Konstruieren von Eintragsbezeichnern
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eintragsbezeichner werden mit der [ENTRYID](entryid.md) -Struktur erstellt. Die **ENTRYID** -Struktur besteht ein Flag, das die Attribute des Eintrags-ID und die tatsächlichen Eintrags-ID beschreibt. 
   

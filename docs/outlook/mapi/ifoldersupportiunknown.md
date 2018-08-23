@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4b03a66-cf6d-cd20-f1df-b247d3ee87aa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a4a1c78e65d9a515b2b42d7e0a2bc3a8b4bd8869
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d17de9cc11bd791c75b83093a0431c138fd606d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792089"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564171"
 ---
 # <a name="ifoldersupport--iunknown"></a>IFolderSupport : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Informationen zur Unterstützung für einen Ordner für die Freigabe.
   
@@ -38,7 +38,7 @@ Enthält Informationen zur Unterstützung für einen Ordner für die Freigabe.
 |:-----|:-----|
 |**[GetSupportMask](ifoldersupport-getsupportmask.md)** <br/> |Ruft Informationen über die Unterstützung für einen Ordner für die Freigabe.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Im Allgemeinen erfordert Microsoft Office Outlook MAPI-Speicheranbieter diese Schnittstelle implementieren, wenn der Anbieter einen Ordner freigeben möchte. Die Ausnahme ist der Exchange-Server-Speicher-Anbieter, der Ordner freigeben kann, ohne dass diese Schnittstelle implementiert.
   

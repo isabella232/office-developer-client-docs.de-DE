@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0a65d2b-a9b8-4477-a1c7-18c8478126f6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c79d9ebb5be1d8af6c9136514d8a2b695513f755
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 566a9d23c46ec717eb5eed711fff801b15d49fc1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791896"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564234"
 ---
 # <a name="hraddcolumnsex"></a>HrAddColumnsEx
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fügt oder Spalten an den Anfang einer vorhandenen Tabelle verschoben. 
   
@@ -76,7 +76,7 @@ S_OK
   
 > Der Aufruf war erfolgreich, und die angegebenen Spalten verschoben oder hinzugefügt wurden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Eigenschaften **HrAddColumnsEx** mit dem _LpproptagColumnsNew_ -Parameter übergeben werden die ersten Eigenschaften für nachfolgende Aufrufe [der QueryRows](imapitable-queryrows.md) verfügbar gemacht werden. Alle Eigenschaften zuvor in der Tabelle, die nicht im _LpproptagColumnsNew_ -Parameter angegeben wurden, werden nach alle Eigenschaften hinzugefügten und verschobenen verfügbar gemacht. 
   

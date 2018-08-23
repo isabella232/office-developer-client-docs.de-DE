@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 977c18ce-ece5-4ad1-ac97-5a680846ab83
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 423b03d674028a2f81b4c042d6e65e9acfb57274
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3b369e20101bbaba5e246b2ef9f6ab3ed1771ef6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792698"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563555"
 ---
 # <a name="initializing-the-transport-provider"></a>Initialisieren des Transportanbieters
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Transport-Warteschlange-Schnittstelle definiert aufgerufen, der die MAPI-Warteschlange eines Transportdienstes gemacht werden. Transportanbieter implementieren diese Routinen in einer Dynamic-Link Library (DLL). Der erste direkte Einstiegspunkt in der DLL, die durch die MAPI-Warteschlange verwendet muss die Transport Anbieter Initialisierungsfunktion [XPProviderInit](xpproviderinit.md).
   

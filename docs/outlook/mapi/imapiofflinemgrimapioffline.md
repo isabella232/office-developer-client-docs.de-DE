@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e430308-190c-c9bb-fffc-c26ffecb73a5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 644fad96c8aec3701233351469a84ef93341b397
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f5a4a073559c58599b175b6f85a6dfe697aec623
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792268"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563835"
 ---
 # <a name="imapiofflinemgr--imapioffline"></a>IMAPIOfflineMgr : IMAPIOffline
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registrieren für Benachrichtigung Rückrufe zum Ändern eines Benutzerkontos unterstützt.
   
@@ -48,7 +48,7 @@ Registrieren für Benachrichtigung Rückrufe zum Ändern eines Benutzerkontos un
 | *Platzhalter-member*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 | *Platzhalter-member*  <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Beim Öffnen einer offline-Objekt für ein Benutzerprofil-Konto mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)**, erhält ein Client eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt. 
   

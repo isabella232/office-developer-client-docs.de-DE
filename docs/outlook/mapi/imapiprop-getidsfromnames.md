@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3f501a4-a8ee-43d7-bd83-c94e7980c398
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5247ca71c88b9c0f8591a732746a17204265741c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7f7c243995c633389ab8fa80a26dddd152347276
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792283"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565361"
 ---
 # <a name="imapipropgetidsfromnames"></a>IMAPIProp::GetIDsFromNames
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eigenschaftenbezeichner, die mindestens einen Eigenschaftennamen entsprechen.
   
@@ -80,7 +80,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war insgesamt erfolgreich, aber eine oder mehrere Eigenschaftenbezeichner konnte nicht zurückgegeben werden. Der entsprechende Eigenschaftentyp für jede Eigenschaft nicht verfügbar ist **PT_ERROR** und des Bezeichners auf NULL gesetzt. Wenn diese Warnung zurückgegeben wird, bearbeiten Sie den Anruf als erfolgreich. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Finden Sie unter [Verwendung von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIProp::GetIDsFromNames** -Methode ruft ein Array von Eigenschaftentags, die die als Eigenschaftenbezeichner für eine oder mehrere benannte Eigenschaften enthalten. **IMAPIProp::GetIDsFromNames** kann aufgerufen werden, um Folgendes auszuführen: 
   
@@ -135,7 +135,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Benannte Eigenschaften MAPI](mapi-named-properties.md)
   

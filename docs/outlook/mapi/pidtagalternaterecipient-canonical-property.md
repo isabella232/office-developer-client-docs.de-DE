@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: df787b60-2f53-42ac-89b5-1b52c906f472
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ea78d9487e4929c2df3d49a9b85ba4aefac90a59
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c3ebb520de8929185a8b67b585976b4d768727b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794061"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22562953"
 ---
 # <a name="pidtagalternaterecipient-canonical-property"></a>PidTagAlternateRecipient (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Eintragsbezeichner für den ursprünglichen Empfänger genehmigtes alternativen Empfänger. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ALTERNATE_RECIPIENT  <br/> |
-|Bezeichner:  <br/> |0x3A01  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ALTERNATE_RECIPIENT  <br/> |
+|Kennung:  <br/> |0x3A01  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird für die automatische weitergeleiteten Nachrichten verwendet. Sie enthält eine [FLATENTRYLIST](flatentrylist.md) Struktur der alternativen Empfänger. Wenn die automatische Weiterleitung nicht zulässig ist oder keine alternativer Empfänger festgelegt wurde, wird ein Unzustellbarkeitsbericht generiert. 
   

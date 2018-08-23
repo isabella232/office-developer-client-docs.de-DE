@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d6c57be6-2397-4ab1-a912-028454dffc44
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 573709c4374786bb1bd3d763c8ba91de59f7fb1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a34c21e20fa45cd3265ec42c9d992eb828203f66
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793028"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563912"
 ---
 # <a name="mapi-profile-overview"></a>Übersicht über die MAPI-Profil
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Profil ist eine Auflistung von Informationen zu den Message-Dienste und Dienstanbieter, die ein Benutzer von einer Clientanwendung möchte während einer bestimmten MAPI-Sitzung verfügbar sein soll. Jeder Benutzer verfügt über mindestens ein Profil; viele Benutzer behalten mehrere. Ein Benutzer möglicherweise beispielsweise ein Profil entwickelt eine serverbasierte Message Store Service und ein anderes Profil ein Informationsspeicher-Dienst auf dem lokalen Computer entwickelt. Ein Benutzer kann auf eine Gruppe von messaging-Systeme mithilfe der entsprechenden Transportdienste für einen Teil der Tag und eine andere für den Rest des Tages zugreifen möchten. Profile bieten eine flexible Möglichkeit zum Kombinationen von messaging-Systemdienste auswählen. 
   
@@ -45,5 +45,5 @@ Der Profil-Assistent ist eine Anwendung, die mit einem minimum an der Arbeit neu
 
 
 
-[MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+[MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

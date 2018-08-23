@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: cad25cca-248d-4845-9d60-7aa60f2dda62
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cba8de706e7262ff59abdb6367fb505a2303dcf3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b3d1d2a20720bd1c4b15464cd24aac4415721ae8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794932"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563177"
 ---
 # <a name="pidtagremindersonlineentryid-canonical-property"></a>PidTagRemindersOnlineEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Erinnerungen enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REM_ONLINE_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x36D5  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REM_ONLINE_ENTRYID  <br/> |
+|Kennung:  <br/> |0x36D5  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf eine bestimmte Nachricht Store die folgenden Schritte aus. 
   

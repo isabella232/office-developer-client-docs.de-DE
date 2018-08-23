@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ac67bb83-e4f3-4c82-995b-c11a2a195e90
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ad5f4e896b748dc0d7495c428af093af57bc7cdd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 91c1d9293108b96fde43b769c97ec673f82a8cb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791768"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563030"
 ---
 # <a name="gateway-mapping-responsibilities"></a>Gateway Zuordnung Zuständigkeiten
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn ein MAPI-fähigen Gateway eine Nachricht mit benannten Eigenschaften in einem der die spezielle Eigenschaftensätze festgelegte Gateway sämtliche Eigenschaften enthält empfängt, sollte das Gateway alle Eigenschaften des Protokolls des Ziels Messagingsystem zuordnen. Obwohl MAPI empfiehlt, dass Gateways alle benannte Eigenschaften in die spezielle Eigenschaftensätze zu behandeln, Gateways werden erwartet, dass nur zwei behandeln: e-Mail-Adresse und Adresstyp. Da der e-Mail-Adresse und den Typ Adresseigenschaften direkt die Nachrichtenübermittlung beeinträchtigen, ist es wichtig, Gateways die Zuordnung dieser beiden Eigenschaften unterstützen. Da Search Schlüssel Adresstyp und Adresse eines Benutzers bestehen, sollten sie auch nach Möglichkeit übersetzt werden.
   

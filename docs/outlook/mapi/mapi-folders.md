@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8fac3c92-d2f5-479e-a368-ca82bddd8e30
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 88ddfd9e6bb27abfeee9750c71e98d4fad9d1a14
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 21b738424b27d3d89d8de84c8c9ff2ff86dd945b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792987"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564087"
 ---
 # <a name="mapi-folders"></a>MAPI-Ordner
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ordner sind MAPI-Objekten, die als Basiseinheit Organisation f�r Nachrichten zu bedienen. Hierarchisch angeordnet sind, k�nnen Ordner Nachrichten und andere Ordner enthalten. Ordner erleichtern das Suchen von und Arbeiten mit Nachrichten.
   

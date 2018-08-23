@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8c8a882e-62c1-4c57-8c63-ee5849f656b0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bb00d4e0e1437f9b3c13ac5e7d0a9dc4f3610d32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dc4a784b3a3f3792622fca2d04f5bb4504a98b54
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794039"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565368"
 ---
 # <a name="pidtagaccess-canonical-property"></a>PidTagAccess (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske aus Flags, die angibt, die Vorgänge, die an den Client für das Objekt verfügbar sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ACCESS  <br/> |
-|Bezeichner:  <br/> |0x0FF4  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ACCESS  <br/> |
+|Kennung:  <br/> |0x0FF4  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Access-Steuerelementeigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist schreibgeschützt für den Client. Es muss ein bitweises **oder** von NULL oder mehrere Werte aus der folgenden Tabelle. 
   

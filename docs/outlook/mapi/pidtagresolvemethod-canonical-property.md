@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30d23c19-e0da-4511-9361-761153259216
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7f55b85e21f007be7c1b9d42d42473e3a8d2becb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e67cbb113899487f489ef7235d92d1adfcb76163
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794984"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563639"
 ---
 # <a name="pidtagresolvemethod-canonical-property"></a>PidTagResolveMethod (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Ordner Konflikt Lösung Wert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RESOLVE_METHOD  <br/> |
-|Bezeichner:  <br/> |0x3FE7  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RESOLVE_METHOD  <br/> |
+|Kennung:  <br/> |0x3FE7  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft auf den Ordner mit den Konflikt Lösung Nachricht wird anzugeben, wie den Konflikt zu lösen. Diese Eigenschaft ist nicht erforderlich. Jedoch ist festgelegt, müssen als den folgenden Kennzeichen nicht vorhanden sein:
   

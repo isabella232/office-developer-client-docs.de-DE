@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8bc40ebf-76f2-49dd-af4b-4095bc07c639
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e0feaac0cb4c52b2f2acff1460a4d8a41196954d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 603adf8df0c00efc592572fd9a46434f42845011
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794424"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564738"
 ---
 # <a name="pidtagfreebusyentryids-canonical-property"></a>PidTagFreeBusyEntryIds (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den **EntryIDs** finden Sie die Stellvertretung Informationsnachricht, die Nachricht Frei/Gebucht-Informationen des angemeldeten Benutzers, und der Ordner, dessen **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) "Frei/Gebucht-Daten" entspricht
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FREEBUSY_ENTRYIDS  <br/> |
-|Bezeichner:  <br/> |0x36E4  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FREEBUSY_ENTRYIDS  <br/> |
+|Kennung:  <br/> |0x36E4  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    

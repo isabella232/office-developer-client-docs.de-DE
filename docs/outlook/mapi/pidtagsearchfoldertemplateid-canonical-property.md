@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56288f55-b3ba-42df-9c90-f9b5857f19a1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4e752d3264a64ad7b467947c44d01eb7c47ec863
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7077210504614d7d95a7f545ea6f37ce02c92fdf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795126"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563247"
 ---
 # <a name="pidtagsearchfoldertemplateid-canonical-property"></a>PidTagSearchFolderTemplateId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die ID der Vorlage, die für die Suche verwendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_TEMPLATE_ID  <br/> |
-|Bezeichner:  <br/> |0x6841  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_WB_SF_TEMPLATE_ID  <br/> |
+|Kennung:  <br/> |0x6841  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ordner Suchkriterien wird durch eine Vorlage angegeben. Diese Eigenschaft für die Nachricht, die den Suchordner definiert identifiziert die zugehörige Vorlage. Zusätzlich zu den Suchkriterien definieren, eine Vorlage auch Ordner, die von der Suche ausschließen definiert, Elemente aus der Suche ausschließen definiert und gibt den Wert des **PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)).
   

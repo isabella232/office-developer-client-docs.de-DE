@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c5053f27-e23d-4a65-b079-5f33765c33f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bd5f52e2b5c1343544e59881ff2f54d7d518836d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5a4d25651423c697ffed713f82f41d7a5584bcfa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791415"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564598"
 ---
 # <a name="cbsproptagarray"></a>CbSPropTagArray
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes in einer vorhandenen [SPropTagArray](sproptagarray.md) Struktur. 
   

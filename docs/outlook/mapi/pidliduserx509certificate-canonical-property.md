@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: f40cd807-7aac-49f4-8e82-b0e5e1634b08
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7c356e01b2f1bdf30d72f901bc1e4dd6da8b0dc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d388ab81be33689612872795d690a26efca064f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793893"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563065"
 ---
 # <a name="pidliduserx509certificate-canonical-property"></a>PidLidUserX509Certificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 X. 509 Version 3 Sicherheitszertifikate für ein messaging-Benutzer enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEMSAbX509Cert  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEMSAbX509Cert  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080D9  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |

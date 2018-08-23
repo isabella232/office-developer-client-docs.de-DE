@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6b7ff0c-19a0-4cad-8868-c05397fcebf4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7c5cfa8f80895896eab9af5ce1f249b9b06cf425
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e2f4b1fda57eb74e0573834c6e8fb443acf7ab12
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794731"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563905"
 ---
 # <a name="pidtagoriginatingmtacertificate-canonical-property"></a>PidTagOriginatingMtaCertificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Bezeichner für den Message Transfer Agent (MTA), der die Nachricht stammt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINATING_MTA_CERTIFICATE  <br/> |
-|Bezeichner:  <br/> |0x0E25  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINATING_MTA_CERTIFICATE  <br/> |
+|Kennung:  <br/> |0x0E25  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft, wenn der Wert, auf Nachrichten im Ordner "Gesendete Elemente" gesendet.
   

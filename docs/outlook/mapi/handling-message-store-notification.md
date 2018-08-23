@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3e0cc2f9-a88d-4cec-bef5-b60f2ec80f1c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 898f8b6ff3d0b0dd42a670596b54171f18b4a5e3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 33002f31c185262bf21b4e74095e0774f55e3bf5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791810"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564591"
 ---
 # <a name="handling-message-store-notification"></a>Behandeln von Store-Benachrichtigung
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um Benachrichtigungen über Textnachrichten Store zu registrieren, rufen Sie die [IMAPISession::Advise](imapisession-advise.md) oder [IMsgStore::Advise](imsgstore-advise.md) -Methode, und geben Sie einen Nachrichtenspeicher, Ordner oder Eintrags-ID der Nachricht in den Inhalt des Parameters _LpEntryID_ . Nachricht Anbieter unterstützen Objekt und Tabelle. Ob Sie registrieren mit bestimmten Nachricht Store-Objekten, die Ordner Hierarchie und der Inhalt der Tabellen, die diese Objekte beschreiben oder beides Objekte und Tabellen hängt von der Benachrichtigungen angezeigt wird, die Anrufe Sie Operationen ausführen, stellen Sie erwarten und wie der Nachricht Speicheranbieter unterstützt die Benachrichtigung. 
   

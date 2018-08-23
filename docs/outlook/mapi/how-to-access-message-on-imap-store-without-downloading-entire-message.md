@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a93ab3e-798f-5741-d5e0-bba8c6b437c7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fa7a61da47169ca7c6a1521ad5b3e84685a9b9a3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5a5a327ff74a4058d8eb15928912ca075e55ea95
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791861"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564388"
 ---
 # <a name="access-a-message-on-an-imap-store-without-downloading-the-entire-message"></a>Zugriff auf eine Nachricht auf ein IMAP-Speicher ohne die gesamte Nachricht herunterladen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema wird ein Codebeispiel in C++, die Abfragen eines Nachrichtenspeichers für die **[IProxyStoreObject](iproxystoreobject.md)** -Schnittstelle und verwendet die zurückgegebene Zeiger und die **[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md)** -Funktion, um einen Zeiger auf ein IMAP-Speicher-Objekt abzurufen, die wurde allein stehenden. Mit diesem allein stehenden Informationsspeicher ermöglicht den Zugriff auf eine Nachricht im aktuellen Zustand ohne einen Download der gesamten Nachricht aufzurufen. 
   

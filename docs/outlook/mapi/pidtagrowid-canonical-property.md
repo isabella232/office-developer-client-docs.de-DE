@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0fdcb55a-2971-4c7d-b61e-7ada2d19d0e6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e8d0e79e01040c1cc3d46e73a7e6a456a915a67f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: efa778f51ac047c911deb6a3c4d5d9e718dc33fb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794986"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565039"
 ---
 # <a name="pidtagrowid-canonical-property"></a>PidTagRowid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen eindeutigen Bezeichner für einen Empfänger in einer Tabelle Empfänger oder Status.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROWID  <br/> |
-|Bezeichner:  <br/> |0 x 3000  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROWID  <br/> |
+|Kennung:  <br/> |0 x 3000  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist ein temporären Wert, der nur für die Lebensdauer des Objekts gültig ist, die Besitzer der Tabelle ist. Als Spalte der Tabelle angezeigt wird, aber nicht gespeichert.
   

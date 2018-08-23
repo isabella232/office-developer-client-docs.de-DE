@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 375d65b1-607d-4e2a-8052-9bcbf08fc2ac
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 926fef0e1b2f905d510102e69afb667414e6cce3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ea72a6fd2a22fe87ad63bb9c8fa6c1416d876b66
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791978"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564248"
 ---
 # <a name="iablogonadvise"></a>IABLogon::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Den Anrufer, um die Benachrichtigung der angegebenen Ereignisse, die einen Container, messaging-Benutzer oder Verteilerliste betreffen registriert.
   
@@ -86,7 +86,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Der Adressbuchanbieter kann nicht die Eintrags-ID _LpEntryID_übergebenen behandeln.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Von adressbuchanbietern implementierte implementieren Sie die **IABLogon::Advise** -Methode zum Registrieren des Aufrufers benachrichtigt werden, wenn ein Objekt in einem der deren Container, geändert. Anrufer können für Benachrichtigungen bezüglich messaging-Benutzern, Verteilerlisten oder gesamte Container registrieren. 
   

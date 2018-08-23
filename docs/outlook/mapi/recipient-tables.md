@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 02e77317-54c4-4fca-9ab4-835998ce07ce
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cc7635c474b99898d59589f33fcf06cf24697378
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: fdca2f65c73c0db0fa0b7d59b8d49b218aeb2330
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795345"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565088"
 ---
 # <a name="recipient-tables"></a>Empfängertabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Empfänger Tabelle enthält Informationen zu allen Empfängern für eine Nachricht. Nachricht Anbieter implementieren Empfänger Tabellen und Clientanwendungen verwenden. Clients tätigen eines Anrufs an die [IMessage::GetRecipientTable](imessage-getrecipienttable.md) -Methode zum Öffnen einer Empfänger Tabelle oder unterstützt, wenn die Nachricht vom Anbieter Speichern der [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode. Clients Zugriff auf Empfänger Tabellen mit **OpenProperty** angeben **PR_MESSAGE_RECIPIENTS** ([PidTagMessageRecipients](pidtagmessagerecipients-canonical-property.md)) für die Eigenschaftentag und IID_IMAPITable für den Schnittstellenbezeichner. Änderungen, die einer Tabelle Empfänger können durch Aufrufen der Methode [IMessage::ModifyRecipients](imessage-modifyrecipients.md) vorgenommen werden. 
   

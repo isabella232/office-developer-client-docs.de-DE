@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce018fb0-4e23-4451-a31a-52bd0977a061
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 267624cc89ce7cd72720a2b296f3dab5c79385e6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: affe86e9d9d34d629915732ec9cf32f20dd29c1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791396"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563964"
 ---
 # <a name="cbnewspropproblemarray"></a>CbNewSPropProblemArray
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes, die für eine neue [SPropProblemArray](spropproblemarray.md) Struktur zugeordnet werden, die eine angegebene Anzahl von [SPropProblem](spropproblem.md) Strukturen enthält. 
   

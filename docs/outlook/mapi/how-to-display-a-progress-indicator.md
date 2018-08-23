@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 20f5ad5a-b700-4fb5-9658-f71da5a06a12
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3c4c553a000dab233eb208c1222cc427c97b1e70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 62549cbeea0044ceee8aa2e704b8a9bc271b7e8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791851"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564493"
 ---
 # <a name="display-a-progress-indicator"></a>Anzeigen einer Statusanzeige
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Rufen Sie [IMAPIProgress::GetFlags](imapiprogress-getflags.md) zum Abrufen der aktuellen Flags festlegen, um eine Statusanzeige anzuzeigen. 
   

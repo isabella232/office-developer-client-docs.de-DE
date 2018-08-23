@@ -11,28 +11,28 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e0c04f98-3d66-4ab5-ba05-69f9df539fcf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4a4d3c940539c23be8ec212cb85e3dd4f3a04aab
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 23c43586157806c603ad7fd8c146270a9d71170a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794368"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563786"
 ---
 # <a name="pidtagextendedfolderflags-canonical-property"></a>PidTagExtendedFolderFlags (kanonische Eigenschaft)
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erweiterte Flags zu einem Ordner enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EXTENDED_FOLDER_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x36DA  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EXTENDED_FOLDER_FLAGS  <br/> |
+|Kennung:  <br/> |0x36DA  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist ein binären Stream, der codierte untergeordnete Eigenschaften für den Ordner enthält. Es wird als eine Reihe von variabler Länge Sub-Elemente formatiert. Die ersten 8 Bits des Elements Sub ist ein Feld-ID, die angibt, welche Art von Flag das Sub-Element darstellt. Die zweite 8 Bits ist die Anzahl von Bytes der Daten, die folgen.
   

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: da5f080d-4397-4ce6-8561-73dd13445e77
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ef9b85fd8dad980f92f5e06a4b54daf146fbcec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 52aebb53f2bc0e5af72f2da47b91ba2806d7f709
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795667"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563352"
 ---
 # <a name="supporting-forms-and-views-in-read-only-message-stores"></a>Unterst�tzung von Formularen und Ansichten in nur-Lese Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn Ihre Nachricht Speicheranbieter Lesezugriff auf die zugrunde liegende Speichermechanismus zul�sst, werden kann nicht zum Ausf�hren bestimmter Vorg�nge Client-Anwendungen und der MAPI-Formular-Manager. Insbesondere Clients k�nnen keine hinzuf�gen oder �ndern benutzerdefinierte Ansichten, und der MAPI-Formular-Manager k�nnen keine Formulare in den Tabellen zugeordneten Inhalt von Ordnern f�r den Speicher zu installieren.
   

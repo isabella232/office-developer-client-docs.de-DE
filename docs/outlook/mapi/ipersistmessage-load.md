@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd4646d2-8229-499d-91aa-3cbec72b9445
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: eff192b0d2b5cde51a2909452b19ffe1a47b2c04
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6c7942d16cabc61eab55ab145b9c26a1799bbcc4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792737"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565172"
 ---
 # <a name="ipersistmessageload"></a>IPersistMessage::Load
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Lädt das Formular für eine angegebene Nachricht.
   
@@ -60,7 +60,7 @@ S_OK
   
 > Das Formular wurde erfolgreich geladen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IPersistMessage::Load** -Methode, um ein Formular für eine vorhandene Nachricht zu laden. 
   

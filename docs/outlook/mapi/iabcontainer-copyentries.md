@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4e775228-5ceb-4002-9b68-999fb5889b86
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 44a31e46c43a065c720564f2aa193913dbfd9a2e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 36e0db77097178d2db7a11b1339d19ebb8c91f2c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791950"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565326"
 ---
 # <a name="iabcontainercopyentries"></a>IABContainer::CopyEntries
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert eine oder mehrere Einträge, in der Regel messaging Benutzer oder Verteilerlisten.
   
@@ -80,7 +80,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Kopiervorgang insgesamt erfolgreich, aber eine oder mehrere Einträge konnte nicht kopiert werden. Wenn dieser Wert zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diesen Wert zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IABContainer::CopyEntries** -Methode kopiert die Einträge aus der gleichen Container oder einen anderen Container. Ein Aufruf von **CopyEntries** entspricht der folgenden Aufrufe für jeden Eintrag kopiert werden: 
   

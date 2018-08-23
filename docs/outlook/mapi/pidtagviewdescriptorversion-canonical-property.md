@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: aaf48f2b-8c57-473c-8be4-f93619255eb8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a2e37e1118abb63ed67806451905c73c77725cc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b44d72a870f982de8b42de1331e1d6eddcb39b4c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795294"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564969"
 ---
 # <a name="pidtagviewdescriptorversion-canonical-property"></a>PidTagViewDescriptorVersion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Version der eine Beschreibung der Ansicht an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_VD_VERSION  <br/> |
-|Bezeichner:  <br/> |0x7007  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_VD_VERSION  <br/> |
+|Kennung:  <br/> |0x7007  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss 8.
   
