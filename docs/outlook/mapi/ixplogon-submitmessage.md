@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a261ba0d-cb56-4935-b745-1d4bbd0b8b9d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8a0b10596bdfdc1ea33f6d170ee1e021193d3788
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 28e7874d1e61c0a4fe0ad702f206ca03a9a1096a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792892"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575875"
 ---
 # <a name="ixplogonsubmitmessage"></a>IXPLogon::SubmitMessage
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass die MAPI-Warteschlange eine Nachricht an der Adressbuchhierarchie übermittelt wurde.
   
@@ -84,7 +84,7 @@ MAPI_E_WAIT
   
 > Ein vorübergehendes Problem wird verhindert, dass der Adressbuchhierarchie Behandlung der Nachricht. Der Parameter _LpulReturnParm_ sollte auf die Anzahl der Sekunden festgelegt werden, die verstreichen die MAPI-Warteschlange werden die Nachricht erneut übermittelt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::SubmitMessage** -Methode auf, wenn es sich um eine Nachricht an der Adressbuchhierarchie übermittelt hat. Die Nachricht wird an der Adressbuchhierarchie übergeben, mit dem Parameter _LpMessage_ . 
   

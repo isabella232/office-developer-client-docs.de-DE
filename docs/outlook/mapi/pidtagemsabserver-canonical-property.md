@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: de942619-2507-8fe0-bc81-f9da9ef7266f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 27e3a9687d66bd1cd3586a25a3ca5792523096c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0d31272e63df7f68a83b23ca7a3824c081de3c1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794337"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569267"
 ---
 # <a name="pidtagemsabserver-canonical-property"></a>PidTagEmsAbServer (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt entweder den Pfad einer Adressbuchcontainer in einem Szenario offline oder den vollqualifizierten Domänennamen des globalen Katalogservers Adressbuchcontainer sich in einem Szenario online befindet.
   
@@ -31,12 +31,12 @@ Gibt entweder den Pfad einer Adressbuchcontainer in einem Szenario offline oder 
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EMS_AB_SERVER, PR_EMS_AB_SERVER_A, PR_EMS_AB_SERVER_W  <br/> |
-|Bezeichner:  <br/> |0xFFFE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EMS_AB_SERVER, PR_EMS_AB_SERVER_A, PR_EMS_AB_SERVER_W  <br/> |
+|Kennung:  <br/> |0xFFFE  <br/> |
 |Datentyp:  <br/> |PT_TSTRING  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft hat den Eigenschaftentyp auf **PT_UNICODE** zurückzusetzen, wenn die Kompilierung der `UNICODE` Symbol auf einer Unicode-Plattform und **PT_STRING8** bei der Kompilierung nicht mit der `UNICODE` Symbol. 
   

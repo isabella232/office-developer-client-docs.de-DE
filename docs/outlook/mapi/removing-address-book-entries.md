@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 107ebcd7-b612-4139-b676-c3851f15bc74
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1fb7224e110bbee6844cf2820782aac8be213ba3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2c5d7a2114f4a85b9f63cd778e899a83d335ff45
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795356"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581279"
 ---
 # <a name="removing-address-book-entries"></a>Entfernen von Adressbucheinträgen
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Des Containers [IABContainer::DeleteEntries](iabcontainer-deleteentries.md) -Methode aufgerufen, um einen oder mehrere Empfänger zu entfernen. **DeleteEntries** hat zwei Parameter: ein Array von Eintragsbezeichner, die die Empfänger zu löschenden darstellt und ein Flagwert reserviert. Löschen eines Empfängers wirkt sich aus die Inhaltstabelle des Containers. Zusätzlich zu den Empfänger löschen, muss der Container für die Tabellenzeile Inhalt löschen, die den Empfänger darstellt. Wenn die Zeile aus der Tabelle entfernt wurde, muss der Container für eine Benachrichtigung über eine Tabelle auf allen registrierten Clients ausstellen. 
   

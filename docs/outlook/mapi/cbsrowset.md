@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d29e1f8e-bde8-4a6e-aee8-188cee94fe1a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 34822a2b451fd20a754e275e5d15f4c557de9e1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bbc652d03ef9046db08d9a56459a595073c5505b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791411"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574622"
 ---
 # <a name="cbsrowset"></a>CbSRowSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes in einer vorhandenen [SRowSet](srowset.md) Struktur. 
   

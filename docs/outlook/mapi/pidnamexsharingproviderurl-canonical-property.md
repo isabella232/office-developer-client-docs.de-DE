@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f44acaa6-1747-4b74-bf48-bb6f72b258ed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3b594e2e20b675206ec4ad5db4861f5eef78c7ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bdc8175ed277a355b66ea080daaea1dc86320066
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794014"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582091"
 ---
 # <a name="pidnamexsharingproviderurl-canonical-property"></a>PidNameXSharingProviderUrl (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt den Wert der Eigenschaft **DispidSharingProviderUrl** ([PidLidSharingProviderUrl](pidlidsharingproviderurl-canonical-property.md)).
   

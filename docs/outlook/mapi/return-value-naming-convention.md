@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2c1cdd7b-82f1-46f2-a7ce-e0efe857b7cd
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 990a48c661621a3a704236a850f5d09239a12fca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4d7a95e4681370e1aaf4f8b4c4b7ca0814b3aae7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795406"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581846"
 ---
 # <a name="return-value-naming-convention"></a>Rückgabewert-Benennungskonvention
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die MAPICODE. H-Headerdatei enthält viele der Werte, die ein Client oder Dienstanbieter zurückgeben vom eine Implementierung-Methode oder möglicherweise von einem Aufruf zurückgegebene angezeigt.
   

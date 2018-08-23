@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d345324d-83a1-40e7-a6af-16cfc67a4932
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8f9ad3a6e84d4045d157a18989f62ea6db2fb136
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e98d8f3c94c119477c48e15788cf981a2f4f8f89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793925"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581265"
 ---
 # <a name="pidnameattachmentmaccontenttype-canonical-property"></a>PidNameAttachmentMacContentType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein [RFC3282] Content-Type-Header Feldwert für Anlagen, die von Macintosh-basierten e-Mail-Clients verwendet werden.
   
@@ -33,7 +33,7 @@ Enthält ein [RFC3282] Content-Type-Header Feldwert für Anlagen, die von Macint
 |-Eigenschaft festgelegt:  <br/> |PSETID_Attachment  <br/> |
 |Name der Eigenschaft:  <br/> |AttachmentMacContentType  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

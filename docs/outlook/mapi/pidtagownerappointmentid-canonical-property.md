@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b5eea554-6bca-42d1-b943-1327f0d70584
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a6fc194a3ef7d82be656a8d6c3f5fb9ad8326ceb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 954e6fdf2f306f5a49e2d32e191c41f146ef5997
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794760"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573019"
 ---
 # <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Bezeichner für einen Termin in den Besitzer Zeitplan.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OWNER_APPT_ID  <br/> |
-|Bezeichner:  <br/> |0x0062  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OWNER_APPT_ID  <br/> |
+|Kennung:  <br/> |0x0062  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |Appointment  <br/> |
+|Bereich:  <br/> |Termin  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in Besprechungsanfragen verwendet. Es stellt keine dar, eine Eintrags-ID, aber eine lange Ganzzahl, die den Termin in der Adresse des Absenders Zeitplan eindeutig identifiziert.
   

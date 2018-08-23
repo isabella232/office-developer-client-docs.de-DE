@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 85539a7f-74b6-4267-86ea-00da2c900c34
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d0bce7b3a12f259b7ac5f28219c8a92dd2200f07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c5a7ba301d61468c0ff43a7e99d05976d55d239d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19791836"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576670"
 ---
 # <a name="choose-a-specific-version-of-mapi-to-load"></a>Wählen Sie eine bestimmte Version von MAPI geladen werden
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beim explizit auf eine Implementierung der MAPI zu verknüpfen, müssen Sie die Implementierung zum Laden sorgfältig auswählen. 
   
@@ -106,7 +106,7 @@ Da MFCMAPI (engl.) die standardmäßige Implementierung von MAPI standardmäßig
 ## <a name="see-also"></a>Siehe auch
 
 - [FGetComponentPath](fgetcomponentpath.md)
-- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
+- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 - [Verweisen auf MAPI-Funktionen](how-to-link-to-mapi-functions.md)
 - [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx)
 - [Einrichten der MSI-Keys für die MAPI-DLL](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)

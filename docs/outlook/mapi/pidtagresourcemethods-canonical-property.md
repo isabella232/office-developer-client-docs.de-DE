@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 60ebbcd5-b758-4c96-b8ec-089e0aae1a5f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f346baf303db9da765eec183d168b370547ec2de
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2e1cff8148815c3e03b92e4d57d1c6a303943c9c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794965"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578164"
 ---
 # <a name="pidtagresourcemethods-canonical-property"></a>PidTagResourceMethods (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske der Flags, die die Methoden in der Schnittstelle **IMAPIStatus** angeben, die durch die Statusobjekt unterstützt werden. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RESOURCE_METHODS  <br/> |
-|Bezeichner:  <br/> |0x3E02  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RESOURCE_METHODS  <br/> |
+|Kennung:  <br/> |0x3E02  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt an, welche der Methoden in der Implementierung der **IMAPIStatus** ein Statusobjekt unterstützt werden. Status-Objekte sind zulässig, nicht unterstützten Methoden MAPI_E_NO_SUPPORT zurückgegeben. 
   

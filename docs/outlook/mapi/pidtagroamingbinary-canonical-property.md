@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f06bf063-fc95-46f9-b5fa-3f127a59ebda
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 97650550704ba844f10131f1a3045ebbfaaaefff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 717c456024dd98495550f1377edc6a53f82ee042
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794997"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572410"
 ---
 # <a name="pidtagroamingbinary-canonical-property"></a>PidTagRoamingBinary (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Nachrichtendatenstrom eine Unterklasse der der **IPM zugeordnet. Konfiguration** Klasse. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROAMING_BINARYSTREAM  <br/> |
-|Bezeichner:  <br/> |0x7C09  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROAMING_BINARYSTREAM  <br/> |
+|Kennung:  <br/> |0x7C09  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält den Datenstrom ein **IPM zugeordnet. Konfiguration** Nachricht-Klasse. Das Format des Stream-Objekts hängt von der Nachrichtenklasse ab. Beispielsweise eine Nachricht vom Typ der Klasse **IPM. Configuration.Autocomplete** als [AutoVervollständigen Stream](autocomplete-stream.md)formatiert.
   

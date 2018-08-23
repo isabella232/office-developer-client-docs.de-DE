@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6f3db5ac-f1cb-4c55-ab88-c126dd5f48ee
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 267fcc2b6f8902b1f9abb7adcd4409875fc1a7b8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2fa762a44a107f826923d71faa79fe865413c55c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793901"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581041"
 ---
 # <a name="pidlidverbresponse-canonical-property"></a>PidLidVerbResponse (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Stimmabgabe Option, die einem Teilnehmer ausgewählt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidVerbResponse  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidVerbResponse  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008524  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird normalerweise auf einen der getrennten Werte festgelegt, die in der Eigenschaft **DispidVerbStream** ([PidLidVerbStream](pidlidverbstream-canonical-property.md)) enthalten sind, auf denen der Befragten stimmen.
   

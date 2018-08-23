@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 853c48e4-ef5b-49da-b281-f72784c598ce
 description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 5e63d276d25a26f937e9b4f44575fea1030f52d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 12668cb87f21b56cd398a7b5375f6a4b40c65829
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795586"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581531"
 ---
 # <a name="sorting-and-categorization"></a>Sortieren und Kategorisieren
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sortieren einer Tabelle platziert Zeilen in einer Bestellung, die für den Viewer sinnvoll sind. Angenommen, möchten ein Betrachter finden in der Inhaltstabelle eines Ordners sortiert nach Betreff der Nachricht, damit alle Threads einer Unterhaltung beieinander während einer anderen Viewer die Nachrichten, die nach dem Namen des Absenders sortiert sollten. Eine Tabelle neu instanziierte ist nicht unbedingt in einer bestimmten Reihenfolge sortiert. 
   

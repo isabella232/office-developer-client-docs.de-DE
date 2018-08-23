@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4e704044-5230-4521-a0d2-b7c2f981c954
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c0653caec5f3cac531206e1bb9c4330cac5f3133
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a8152a9cad7623a077cd9df3f678a9ada56e3960
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792781"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577961"
 ---
 # <a name="iprofsect--imapiprop"></a>IProfSect : IMAPIProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Funktioniert mit den Eigenschaften des Profils Section-Objekten. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapix.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Profil Section-Objekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Profil Section-Objekten  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IProfSect  <br/> |
@@ -41,7 +41,7 @@ Funktioniert mit den Eigenschaften des Profils Section-Objekten.
 
 Diese Schnittstelle hat keinen eindeutigen Methoden.
   
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_PROFILE_NAME** ([PidTagProfileName](pidtagprofilename-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |

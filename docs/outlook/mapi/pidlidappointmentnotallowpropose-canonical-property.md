@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8be9e2aa-2dc1-406d-8864-7f556de22809
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 183c8eb5112fc35f088bc5c6ac11748e3449f15a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: db88926cf86db2a628886dba4246107e0d3d571b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793348"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581377"
 ---
 # <a name="pidlidappointmentnotallowpropose-canonical-property"></a>PidLidAppointmentNotAllowPropose (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob Teilnehmer vorschlagen eine neue Datum/Uhrzeit für die Besprechung nicht zulässig sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptNotAllowPropose  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptNotAllowPropose  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000825A  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Den Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass die Teilnehmer vorschlagen einen neuen Datum/Uhrzeit zulässig sind.
   

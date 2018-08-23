@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5b02d149-e4c7-41ad-aa13-4268d82f4c42
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2b795009db981105c0857e78a9530d5396d889b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6ec654310f7f364de1dd118cda178f168f073de6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793800"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578332"
 ---
 # <a name="pidlidtaskcomplete-canonical-property"></a>PidLidTaskComplete (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass der Vorgang abgeschlossen ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskComplete  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskComplete  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000811C  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

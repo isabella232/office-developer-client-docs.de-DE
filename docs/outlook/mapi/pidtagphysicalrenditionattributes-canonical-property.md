@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6cef620b-e3b7-47b9-9727-8e609465c268
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7b930e58fc47f6927ffe7c7b257070d25de3ec9c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8b6c95093715f484bafd35c5836bb5790ce5b994
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794814"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579228"
 ---
 # <a name="pidtagphysicalrenditionattributes-canonical-property"></a>PidTagPhysicalRenditionAttributes (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen ASN. 1 Objektbezeichner, der für das rendering von Nachrichtenanlagen verwendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PHYSICAL_RENDITION_ATTRIBUTES  <br/> |
-|Bezeichner:  <br/> |0x0C10  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PHYSICAL_RENDITION_ATTRIBUTES  <br/> |
+|Kennung:  <br/> |0x0C10  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

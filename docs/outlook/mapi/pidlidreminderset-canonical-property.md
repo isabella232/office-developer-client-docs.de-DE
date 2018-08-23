@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 06b7792c-1b43-4e20-9a3b-44f2664b2125
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fd40be7733934002b81482a8bf5cfe8c9ce12313
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c056b0e587de06f6c32ceb3cebbb96f2fb737208
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793758"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579081"
 ---
 # <a name="pidlidreminderset-canonical-property"></a>PidLidReminderSet (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Erinnerung für das Objekt festgelegt wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidReminderSet  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidReminderSet  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008503  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn ein wiederkehrendes Calendar-Objekt dieser Eigenschaft auf TRUE festgelegt ist, kann der Client diesen Wert für Ausnahmen außer Kraft setzen.
   

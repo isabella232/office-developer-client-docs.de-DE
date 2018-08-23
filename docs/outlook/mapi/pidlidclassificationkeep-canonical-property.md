@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83a4d458-9982-4857-8d4a-7ce4a0d97668
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f448f25b469a1669e2fc3aaaa347dca6242da5f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5e2a1aa45bfd718fa8ae1d4cd827023a80463a47
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793467"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580446"
 ---
 # <a name="pidlidclassificationkeep-canonical-property"></a>PidLidClassificationKeep (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob die Nachrichtenklassifikation mit der Nachrichten beibehalten werden soll, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidClassKeep  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidClassKeep  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000085BA  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen finden Sie unter [Bereitstellen von Nachrichtenklassifikation für Outlook 2007](http://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx).
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: e336d2ec-57cb-4d08-bd6e-330ef7d9939e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d8d986554352e05398a843723ee802bb4969e5ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9b06ebbe8cb162d77d60cfffa866438567c84c27
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794950"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576834"
 ---
 # <a name="pidtagremotevalidateok-canonical-property"></a>PidTagRemoteValidateOk (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält True, wenn der remote-Viewer zulässig ist, die [IMAPIStatus::ValidateState](imapistatus-validatestate.md) -Methode aufrufen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REMOTE_VALIDATE_OK  <br/> |
-|Bezeichner:  <br/> |0x3E0D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REMOTE_VALIDATE_OK  <br/> |
+|Kennung:  <br/> |0x3E0D  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in der Tabelle "Status" und einige Kontrolle über die Transport Leistung bietet. Es kann als eine andere Möglichkeit, leiten den remote Viewer, im Leerlauf betrachtet werden. Wenn sie auf "true" festgelegt ist, kann die remote-Ansicht so oft wie gewünscht **IMAPIStatus::ValidateState** aufrufen. Der Wert FALSE gibt an, dass keine weitere Aufrufe der remote-Viewer nicht ausgeführt werden kann. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a067455f-c67e-4434-83bf-5acc320865d0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a89297e74851cca90463b65fe78e20c5885828f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5d1ebd7752dec05db112c6a8805244579cc9848f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795161"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571708"
 ---
 # <a name="pidtagservices-canonical-property"></a>PidTagServices (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste mit den IDs der Nachricht Services im aktuellen Profil.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SERVICES  <br/> |
-|Bezeichner:  <br/> |0x3D0E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SERVICES  <br/> |
+|Kennung:  <br/> |0x3D0E  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

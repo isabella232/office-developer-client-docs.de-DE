@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6b0baa18-135d-4cf3-b265-ad873131f036
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 19c776728b8d57c3ca27b29ee3ca0bf2585ac1a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0e68575a261725610540c5cae9c62e1d94220432
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794165"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570149"
 ---
 # <a name="pidtagcompanymaintelephonenumber-canonical-property"></a>PidTagCompanyMainTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Haupttelefonnummer für ein Unternehmen
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_COMPANY_MAIN_PHONE_NUMBER, PR_COMPANY_MAIN_PHONE_NUMBER_A, PR_COMPANY_MAIN_PHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A57  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_COMPANY_MAIN_PHONE_NUMBER, PR_COMPANY_MAIN_PHONE_NUMBER_A, PR_COMPANY_MAIN_PHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A57  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a1e3e49c-8d1d-4f7e-ba5a-be441f0f10ae
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 45bfe9f9314a154bd5f096ac20f76f6bf4f259c3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1320528a2e123d36457bef929a8454155646f0da
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795643"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580999"
 ---
 # <a name="supporting-event-notification"></a>Unterstützen von Ereignisbenachrichtigungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Da Unterstützung ereignisbenachrichtigung kompliziert sein kann, bietet MAPI drei Support-Objekt-Methoden, mit die die schwierigsten Teile des Prozesses implementiert. Diese Methoden funktionieren als Einheit und ein Anbieter muss alle drei oder keines der Projekte verwenden.
   

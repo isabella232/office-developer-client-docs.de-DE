@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: df9cd614-1198-44a2-9bf5-36c57179a9a9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ee05f2e539d379e8fe197161fa0f6453add31afb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c25888353857f9233ba487661f5f27d64cd678cb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795261"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577429"
 ---
 # <a name="pidtagtnefunprocessedprops-canonical-property"></a>PidTagTnefUnprocessedProps (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Serialisiert Eigenschaften beim Transport Neutral Encapsulation Format (TNEF) zu filtern.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |"PR_TNEF_UNPROCESSED_PROPS"  <br/> |
-|Bezeichner:  <br/> |0x0E9C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |"PR_TNEF_UNPROCESSED_PROPS"  <br/> |
+|Kennung:  <br/> |0x0E9C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwendet von Microsoft Outlook und Outlook Web Access (OWA) zum Speichern des ursprünglichen TNEF in Fällen, in denen das TNEF benannte Eigenschaften enthält, die nicht im Speicher erstellt werden kann.
   

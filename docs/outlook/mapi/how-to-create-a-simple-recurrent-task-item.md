@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e9ee8865-0983-439e-8405-7946c5ec8762
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 926b33fa3627461139362737f86248f217191534
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 68d7472f993bcc35abbd4b733bae9f137b948608
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791843"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576841"
 ---
 # <a name="create-a-simple-recurrent-task-item"></a>Erstellen eines einfachen wiederkehrenden Aufgabe-Elements
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI kann verwendet werden, zum Erstellen von Aufgabenelementen erstellen. In diesem Thema wird das Erstellen eines einfachen wiederkehrenden Aufgabe-Elements beschrieben.
   

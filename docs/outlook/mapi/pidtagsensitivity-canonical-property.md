@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5b678475-f2a8-4831-ad68-11654e09c821
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 93be3351749ac3e9d285fb214f746d58b55fb5b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f30a5848e07de03e61d3a63188aa7b608504ff24
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795144"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573733"
 ---
 # <a name="pidtagsensitivity-canonical-property"></a>PidTagSensitivity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der den Nachrichtenabsender Opinion, der die Vertraulichkeit einer Nachricht angibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENSITIVITY  <br/> |
-|Bezeichner:  <br/> |0x0036  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENSITIVITY  <br/> |
+|Kennung:  <br/> |0x0036  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es wird empfohlen, dass Message Objekte diese Eigenschaft verfügbar machen.
   

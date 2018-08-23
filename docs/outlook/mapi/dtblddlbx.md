@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: cf60584c-4357-44c7-9d51-f30f7e510c0c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2db95697cd98e66da9fb3d0cd0180b238c0a8dff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3307bb252ca4436999a541f85657fed9878c798a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791594"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579396"
 ---
 # <a name="dtblddlbx"></a>DTBLDDLBX
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt ein Dropdown-Listenfeld-Steuerelement, das in einem Dialogfeld erstellt aus einer Tabelle anzeigen verwendet wird.
   
@@ -60,7 +60,7 @@ typedef struct _DTBLDDLBX
   
 > Rufen Sie die Eigenschaftentag für ein Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe einer **OpenProperty** geöffnet werden können. Die Tabelle sollte zwei Spalten: **UlPRDisplayProperty** und **UlPRSetProperty**. Die Zeilen der Tabelle sollten die Elemente in der Liste entsprechen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **DTBLDDLBX** beschreibt ein Dropdown-Listenfeld-Steuerelement, das als einzelnes Element angezeigt wird, bis der Benutzer entscheidet, um ihn zu erweitern. 
   

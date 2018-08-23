@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 835f805e-5bf3-4ae6-a69e-41eadb76f450
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c87d5c98bea38bc889b947f7b55aaa28c7750314
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d11de59e137b03f8e7f297b468f69c1b12cea9b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793909"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574222"
 ---
 # <a name="pidlidworkaddressstate-canonical-property"></a>PidLidWorkAddressState (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Bundesland/Kanton Teil des Kontakts geschäftliche Postanschrift.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidWorkAddressState  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidWorkAddressState  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008047  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

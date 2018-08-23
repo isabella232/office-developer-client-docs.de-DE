@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 99f8e623-3138-4def-9778-5580326111a5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 19031f6c02f3e8e925adfc8d2affa43fb6532fee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 520478061e192f9fec97c6b13edde7833a13a3d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793154"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571395"
 ---
 # <a name="mapisvcinf-services-section"></a>Abschnitt [Services] in MapiSvc.inf
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Im Abschnitt **[Services]** werden die Nachrichtendienste, die auf einem Computer installiert sind. Einträge in diesem Abschnitt verwenden Sie das folgende Format: 
   

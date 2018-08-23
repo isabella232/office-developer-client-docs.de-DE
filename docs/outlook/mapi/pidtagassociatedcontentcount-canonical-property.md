@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 79bbdd84-a3a7-4472-9447-8b0ddbf163ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2c285f7655479d4599f4d62257087a5eebcfc295
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fa04f897687fb96431225b297399df977dbf944f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794078"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573509"
 ---
 # <a name="pidtagassociatedcontentcount-canonical-property"></a>PidTagAssociatedContentCount (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Anzahl der Elemente in der Inhaltstabelle zugeordneten des Ordners.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ASSOC_CONTENT_COUNT  <br/> |
-|Bezeichner:  <br/> |0x3617  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ASSOC_CONTENT_COUNT  <br/> |
+|Kennung:  <br/> |0x3617  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält die Anzahl der Einträge in der Inhaltstabelle des Ordners. 
   

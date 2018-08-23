@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8b0dcbfe-6bed-4fb8-a906-009f1d009055
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 99146f93dcf634be6766f5c6fcc0d1c610b84d4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f484174bd0a83c9bb874bec4896fe3dd925405c7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792546"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568238"
 ---
 # <a name="implementing-a-provider-one-off-table"></a>Implementieren einer Anbieter-Einmaltabelle
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI-Aufrufen des Anbieters [GetOneOffTable](iablogon-getoneofftable.md) -Methode auf, wenn der Benutzer von einer Clientanwendung eine ausgehende Nachricht einen Empfänger hinzufügt. In der Regel sind die angeforderte Adresstypen für Ihr messaging-System eindeutig. Wenn der Anbieter Empfänger erstellen unterstützt, muss sie eine einmalige Tabelle bereitstellen, die Vorlagen für jede Art von unterstützten Empfängeradresse verfügbar macht. Wird vom Dienstanbieter Recipient Creation nicht unterstützt, muss zurückgegeben Sie MAPI_E_NO_SUPPORT aus den Anruf **GetOneOffTable** . 
   

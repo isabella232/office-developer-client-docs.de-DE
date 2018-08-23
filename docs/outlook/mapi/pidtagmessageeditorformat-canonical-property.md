@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 197b21ed-9f2f-425f-a6ed-cae1208fa2ca
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a6a3eb88377777a3d27687179bfdcb82057be3a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c9c12d3e8314dea5be67727d0f286e7df13038fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794611"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574370"
 ---
 # <a name="pidtagmessageeditorformat-canonical-property"></a>PidTagMessageEditorFormat (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Format für einen-Editor zu verwenden, um eine Nachricht anzuzeigen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MSG_EDITOR_FORMAT  <br/> |
-|Bezeichner:  <br/> |0x5909  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MSG_EDITOR_FORMAT  <br/> |
+|Kennung:  <br/> |0x5909  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die möglichen Werte für **PR_MSG_EDITOR_FORMAT** können eine der folgenden sein: 
   

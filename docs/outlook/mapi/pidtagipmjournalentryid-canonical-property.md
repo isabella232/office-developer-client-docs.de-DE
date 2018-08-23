@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a3765b9d-a108-46d7-a97c-a825ae3980be
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e48b3af79656279e3c554cd5093385d894525e43
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b1fc2beaa85f8bbc82debe6b39ea02429aeeea16
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794524"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578689"
 ---
 # <a name="pidtagipmjournalentryid-canonical-property"></a>PidTagIpmJournalEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook Journal enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IPM_JOURNAL_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x36D2  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IPM_JOURNAL_ENTRYID  <br/> |
+|Kennung:  <br/> |0x36D2  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor: 
   

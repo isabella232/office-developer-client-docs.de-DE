@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d46e1063-6421-410d-a445-7477fea42089
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ccf4a6054ecc89e280f2f5cbc4c72b2a8a829055
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8c7ca5b2b6f5f3131c2fcb70ff0043825a68a91f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794164"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580124"
 ---
 # <a name="pidtagclientsubmittime-canonical-property"></a>PidTagClientSubmitTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Zeit für der Absender eine Nachricht gesendet. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CLIENT_SUBMIT_TIME  <br/> |
-|Bezeichner:  <br/> |0x0039  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CLIENT_SUBMIT_TIME  <br/> |
+|Kennung:  <br/> |0x0039  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Anbieter wird **PR_CLIENT_SUBMIT_TIME** auf die Zeit, die die Clientanwendung [IMessage::SubmitMessage](imessage-submitmessage.md)aufgerufen. 
   

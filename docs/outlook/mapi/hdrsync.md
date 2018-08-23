@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: bf6892d0-a923-e926-5361-59efa49ebdc0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bd1c327eb2042957c8fb043736950af3dae520b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 261a59e628320f384deeb760ba71c9c0386cfde6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791827"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576043"
 ---
 # <a name="hdrsync"></a>HDRSYNC
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen zum Synchronisieren von Nachrichtenkopfzeile während der [Status der Nachricht Kopfzeilen herunterladen](download-message-header-state.md).
   

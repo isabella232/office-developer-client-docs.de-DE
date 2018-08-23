@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 240f1144-0805-4cd1-9e7d-f2a550a2f160
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bc00270b167c9f7317fa466d790d5020d961676f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2bfe2841592987c530f6323db94834c1dcb64b2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795774"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576638"
 ---
 # <a name="ulpropsize"></a>UlPropSize
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Größe des einen einzelnen Eigenschaftswert zurück. 
   
@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **UlPropSize** -Funktion gibt die Größe der Wert der Eigenschaft um für die angegebene Eigenschaft in Bytes zurück. Es ignoriert die Größe des den Rest der **SPropValue** Struktur. 
   

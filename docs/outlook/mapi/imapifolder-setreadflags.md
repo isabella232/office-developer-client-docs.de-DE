@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95a40c8a-0a8b-46c7-a07a-cbc6a7de8a3c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a52c0501040d77ddb8172b212bf341a08704dcc3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 88185efea344844016547d0844277de6e0d661db
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792118"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578318"
 ---
 # <a name="imapifoldersetreadflags"></a>IMAPIFolder::SetReadFlags
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt fest oder löscht das Flag MSGFLAG_READ in der Eigenschaft **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) von einem oder mehreren der Nachrichten, die den Ordner und das Senden von lesen Berichte verwaltet. 
   
@@ -90,7 +90,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, jedoch nicht alle Nachrichten erfolgreich verarbeitet wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::SetReadFlags** -Methode aktiviert oder deaktiviert das Flag MSGFLAG_READ in der **PR_MESSAGE_FLAGS** -Eigenschaft von einem oder mehreren der Nachrichten, die den Ordner. Markiert die Nachricht als gelesen, die nicht unbedingt darauf hinweist, dass der Empfänger die Nachricht tatsächlich gelesen hat das MSGFLAG_READ-Flag festlegen. 
   
@@ -157,6 +157,6 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 - [PidTagMessageFlags (kanonische Eigenschaft)](pidtagmessageflags-canonical-property.md)  
 - [PidTagReadReceiptRequested (kanonische Eigenschaft)](pidtagreadreceiptrequested-canonical-property.md)  
 - [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
-- [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)  
+- [MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)  
 - [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
 

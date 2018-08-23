@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f98eb842-fe76-4f60-b5e2-d2217d1a66ad
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fc92cc8deb3d12c4bc8fca4c680fd4a675b4a578
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b4d46dc8a84b52605d09a694e6873cb3813ae5b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793261"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578115"
 ---
 # <a name="mfcmapi-as-a-code-sample"></a>MFCMAPI (engl.) als ein Codebeispiel
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das MFCMAPI (engl.) Beispiel verwendet der Messaging-API, Zugriff auf MAPI-Speicher über eine grafische Benutzeroberfläche ermöglicht. Nachdem Sie dieses Beispiel herunterladen, können Sie die Quelldateien, um Beispiel Usage Fälle für viele der MAPI-Schnittstellen und Verweise zu überprüfen. Weitere Informationen finden Sie unter [MAPI-Schnittstellen](mapi-interfaces.md).
   

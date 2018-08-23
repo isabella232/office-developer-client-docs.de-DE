@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b8aa6b36-d6e5-4e1f-8ac5-5d6a78a70bf8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 23314418836893b40cbddf3b90bd95ec061a00c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d135e0c224866cd2a675df2ef9ec1b206f3169ab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791844"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580754"
 ---
 # <a name="hierarchy-tables"></a>Hierarchietabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Hierarchietabelle enthält Informationen zu den Ordnern in einem Nachrichtenspeicher oder in einer Adressbuchcontainer Container. Jede Zeile einer Hierarchie-Tabelle enthält eine Reihe von Spalten mit Informationen zu einem Ordner oder Adressbuchcontainer. Hierarchietabellen werden hauptsächlich von Clients verwendete und implementiert Zeichenfolgeneigenschaften Nachricht eine Struktur der Ordner und Unterordner anzeigt und implementiert mithilfe von adressbuchanbietern implementierte Struktur von Containern im Adressbuch angezeigt. Container, die Untercontainer, enthalten können nicht durch ohne das Flag AB_SUBCONTAINERS in ihrer **PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))-Eigenschaft keine Hierarchietabelle zu implementieren.
   

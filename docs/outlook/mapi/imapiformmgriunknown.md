@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8cbd1a42-7de6-43e0-8c77-7711773843d5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4fdd50a1108a6546445516664b01fb0f994fbfdb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b4eaf424bd22f5cb7f40778d81a18cca0ef1dcc1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792197"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581517"
 ---
 # <a name="imapiformmgr--iunknown"></a>IMAPIFormMgr : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht das Formular Zuschauer zu Informationen zum Beziehen und Aktivieren von Formular Servern. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Formular-Manager-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Formular-Manager-Objekte  <br/> |
 |Implementiert von:  <br/> |Anbieter für Formular-Bibliothek  <br/> |
 |Aufgerufen von:  <br/> |Formular-Viewer  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFormMgr  <br/> |

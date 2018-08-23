@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f899f434-a5d7-4b4f-98f9-c14c9f21b24b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 86cd30b15402f35e8396dedf6b685050ee4fb45e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bd0caff8a6c7834bdd01ef4be64805bde66dd6d9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791625"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578822"
 ---
 # <a name="dtblpage"></a>DTBLPAGE
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Seite, die in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird. 
   
@@ -65,7 +65,7 @@ PARAMETER MAPI_UNICODE
   
 > Ein eindeutiger Bezeichner für die Seite in der Zeichenfolge, die durch das **UlbLpszComponent** -Element definiert. Das Element **UlbLpszComponent** und der **UlContext** Member müssen beide ungleich NULL für die Schaltfläche **Hilfe** zu sein. Wenn dieser Bezeichner 0 (null ist) und die Komponente Zeichenfolge NULL ist, ist keine Hilfe mit der Seite verknüpft ist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **DTBLPAGE** beschreibt eine Seite ein Steuerelement, das verwendet wird, um mehrere zugehörige Dialogfelder zu trennen. In der Regel werden diese Dialogfelder Eigenschaftenseiten für die Konfiguration, Nachricht oder Empfänger Optionen anzeigen. Durch Klicken auf die Registerkarte, kann der Benutzer von einem Arbeitsblatt wechseln. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 91147e85-f440-4463-850b-efc9bdbd36d1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 251377a7b9118437aff3fbb6b2b9376cbf70375c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f7dcfe32a5edc6587dfbd1351b61e2b1901e1d28
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793340"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579053"
 ---
 # <a name="pidlidappointmentcolor-canonical-property"></a>PidLidAppointmentColor (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Designfarbe zu verwenden, wenn im Kalender anzeigen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptColor  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptColor  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008214  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt die Farbe zu verwenden, wenn im Kalender anzeigen. Ein Client oder Server sollte diesen Wert für die Abwärtskompatibilität mit älteren Clients festlegen. Sie können stattdessen im Kalender basierend auf dem Wert der Eigenschaft **Schlüsselwörter** ([PidNameKeywords](pidnamekeywords-canonical-property.md)) als angegebenen in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angezeigt. Bei Festlegung muss der Wert eine der folgenden sein:
   

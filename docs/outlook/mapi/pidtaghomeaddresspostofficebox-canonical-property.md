@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c30377d3-6184-4c8a-8819-dd12c6b08ad4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 167f1c61569c6c9eec4f2361e453b58f0ab127d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9f9043a62de37baa89440a6eaa90070f68a311df
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794442"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580985"
 ---
 # <a name="pidtaghomeaddresspostofficebox-canonical-property"></a>PidTagHomeAddressPostOfficeBox (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Postfach-Informationen für die Adresse eines Benutzers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOME_ADDRESS_POST_OFFICE_BOX, PR_HOME_ADDRESS_POST_OFFICE_BOX_A, PR_HOME_ADDRESS_POST_OFFICE_BOX_W  <br/> |
-|Bezeichner:  <br/> |0x3A5E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOME_ADDRESS_POST_OFFICE_BOX, PR_HOME_ADDRESS_POST_OFFICE_BOX_A, PR_HOME_ADDRESS_POST_OFFICE_BOX_W  <br/> |
+|Kennung:  <br/> |0x3A5E  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

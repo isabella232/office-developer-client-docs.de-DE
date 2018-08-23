@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 79727700-5ef1-4a29-9ed0-fd46c7de3202
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 863c95856f3198c74bb9d72881154676386f6a9f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d8fdd9ea4dfbc40d7e800be5e2df666738d2cd23
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19795669"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577457"
 ---
 # <a name="supporting-formatted-text-in-incoming-messages-client-responsibilities"></a>Unterstützung von formatiertem Text in eingehenden Nachrichten: Kundenaufgaben
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wie Nachrichten zwischen messaging-Systemen übertragen werden, wird die MAPI-Warteschlange sichergestellt, dass die rich-Text-Formatierung mit den Nachrichtentext synchronisiert bleibt. Die MAPI-Warteschlange Ruft die [RTFSync](rtfsync.md) -Funktion aus einer gepackten Version der Nachricht, die an der Adressbuchhierarchie übergeben. Der Adressbuchhierarchie speichert die Änderungen an der Nachricht durch Aufrufen der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode ab und leitet sie an den neuen Empfänger. 
   

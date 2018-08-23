@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 80273b50-bc16-4be2-8471-1a127b6786bb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 398ff2fd4bab49c8279e198e3efa416c53abda7c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b02a55f7b87bef6a4304d006f79472bcf21c811e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794812"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581874"
 ---
 # <a name="pidtagprofilehomeserverfqdn-canonical-property"></a>PidTagProfileHomeServerFQDN (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kerberos-Authentifizierung für eine Benutzerprofildienst-Konfiguration aktiviert.
   
@@ -27,12 +27,12 @@ Kerberos-Authentifizierung für eine Benutzerprofildienst-Konfiguration aktivier
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROFILE_HOME_SERVER_FQDN  <br/> |
-|Bezeichner:  <br/> |0x662A001F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROFILE_HOME_SERVER_FQDN  <br/> |
+|Kennung:  <br/> |0x662A001F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Durch Festlegen dieser Eigenschaft auf den Domänennamen des Verzeichnisservers für die Benutzer kann direkte Verbindung zu den Domänencontroller (DC), die für ein Profil erforderlich ist, die Verwendung von Kerberos-Authentifizierung für Microsoft Exchange Server 2007 konfiguriert wurde und früheren Versionen von **RPC_C_AUTHN_GSS_KERBEROS** in **PR_PROFILE_AUTH_PACKAGE**festlegen.
   

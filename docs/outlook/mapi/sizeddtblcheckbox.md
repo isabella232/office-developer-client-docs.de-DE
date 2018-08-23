@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9d04a124-54d4-43ac-967f-ea8e7a09b1d0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9a30554253bc11c8905273079429e4b41c20583a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6120439ea0d98ed6b64fe1542a4372265574723a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795538"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567531"
 ---
 # <a name="sizeddtblcheckbox"></a>SizedDtblCheckBox
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine benannte Struktur, die eine [DTBLCHECKBOX](dtblcheckbox.md) -Struktur für die Beschreibung ein Kontrollkästchen-Steuerelement und ein Label mit einer angegebenen Länge enthält. 
   
@@ -44,7 +44,7 @@ _u_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Makro **SizedDtblCheckBox** können Sie ein Kontrollkästchen definieren, wenn die Anzahl der Zeichen Bezeichnung bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a6a6b6b1-31e2-4899-a5fe-74d5d1c2ccfc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 45033ab924dcf443e9d231b3a7b4348119758935
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 704a556b97f5fd90989641a17afe5a11d127e51b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792315"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577170"
 ---
 # <a name="imapisessionadvise"></a>IMAPISession::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um die Benachrichtigung der angegebenen Ereignisse, die Einfluss auf die Sitzung registriert.
   
@@ -113,7 +113,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID auf den _LpEntryID_ kann von jedem-Dienstanbieter im Profil behandelt werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::Advise** -Methode richtet eine Verbindung zwischen dem Anrufer der advise-Empfängerobjekt, die Sitzung und optional einem Dienstanbieter. Diese Verbindung wird verwendet, um das Senden von Benachrichtigungen an der Advise-Empfänger, wenn sich ein oder mehr Ereignisse in der _UlEventMask_ -Parameter angegebene auf das Objekt, auf das _LpEntryID_auftreten. Wenn _LpEntryID_ NULL ist, das Zielobjekt ist die Sitzung und Benachrichtigungen werden nur für schwerwiegende Fehler und erweiterte Ereignisse gesendet. 
   
@@ -156,7 +156,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Ereignisbenachrichtigung in MAPI](event-notification-in-mapi.md)
 

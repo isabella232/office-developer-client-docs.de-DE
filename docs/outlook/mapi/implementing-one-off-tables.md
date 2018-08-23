@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 57933d44-d47a-4e7f-ba95-b49b4934d0a5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b72b8658270a8e007123df3ead01168208b8d1b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b86ec02c0255d892c42a9be9610d31b76041822c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792561"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579109"
 ---
 # <a name="implementing-one-off-tables"></a>Implementieren von Einmaltabellen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Vom Dienstanbieter kann eine oder mehrere einmalige Tabellen implementieren. Eine einmalige Tabelle wird eine Übersichtsliste einmal-Vorlagen zum Erstellen von Empfängern, direkt in einen Container oder in der Empfängerliste von ausgehenden Nachrichten verwendet. Eine einmalige Vorlage ist ein Formular Benutzer beschäftigen zum Eingeben von Daten für einen bestimmten Typ der Adresse von Bedeutung. Wenn der Benutzer ist abgeschlossen arbeiten mit der Vorlage, der Anbieter den neuen Empfänger erstellt und fügt es der Nachricht hinzu. Jede Vorlage wird in der Regel einen einzelnes Adresstyp behandelt. Es ist jedoch möglich, für eine Vorlage, die mehrere Typen oder für mehrere Vorlagen zum Behandeln von des gleichen Typs. 
   

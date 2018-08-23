@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88c7a666-875d-473a-b126-dbbb7009f7d9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 871dafd7bf8959cf814d65991fe08fdb2b283c08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9fb8919287420038b5c9165bb14b7d33d1ad2fe1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792082"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578864"
 ---
 # <a name="imapicontainergetcontentstable"></a>IMAPIContainer::GetContentsTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Zeiger auf den Container Inhaltstabelle.
   
@@ -78,7 +78,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Container über keinen Inhalt verfügt und eine Inhaltstabelle nicht bereitstellen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIContainer::GetContentsTable** -Methode gibt einen Zeiger auf die Inhaltstabelle eines Containers. Eine Inhaltstabelle enthält zusammenfassende Informationen zu Objekten im Container. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 278a77f2-65ec-4281-b406-942cc416a476
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5ba76b5735687e3bb65e530b3de0d257754559c1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e7dc8c06fca48c5f7c124a1fdf2228ebeb9da450
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794420"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569981"
 ---
 # <a name="pidtagfreebusycountmonths-canonical-property"></a>PidTagFreeBusyCountMonths (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert für die Berechnung der Start- und Enddatum des Bereichs der Frei/Gebucht-Daten auf Öffentliche Ordner veröffentlicht werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FREEBUSY_COUNT_MONTHS  <br/> |
-|Bezeichner:  <br/> |0x6869  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FREEBUSY_COUNT_MONTHS  <br/> |
+|Kennung:  <br/> |0x6869  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss größer als oder gleich 0 und kleiner oder gleich 36. Dies ist keine erforderliche Eigenschaft.
   

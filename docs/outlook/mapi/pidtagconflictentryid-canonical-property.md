@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 69d56a0e-4cac-4fef-81fb-2cc5874ec799
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a0744251727a913184500cdda57d956080cc9d6c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b5744e1674e1439729b81d3024fa6b1263ac421c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794173"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580887"
 ---
 # <a name="pidtagconflictentryid-canonical-property"></a>PidTagConflictEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die EntryID des Konflikt Auflösung-Nachricht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONFLICT_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x3FF0  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONFLICT_ENTRYID  <br/> |
+|Kennung:  <br/> |0x3FF0  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Schrittweite Synchronisierung (ICS)  <br/> |
    

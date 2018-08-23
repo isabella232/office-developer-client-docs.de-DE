@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ddc0095-cd65-431c-afa9-f2fb5a7ac382
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 091c57f9bc68a43bcfa1eda49190c19a7293e2f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 254fe8368d470b3c9a555364ae31956ccb04a27f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793635"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579368"
 ---
 # <a name="pidlidinstantmessagingaddress-canonical-property"></a>PidLidInstantMessagingAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die instant messaging-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidInstMsg  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidInstMsg  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008062  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

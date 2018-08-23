@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3f07fddf-4c42-6ea7-162d-57022166a83f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c856dfd1d419fd7a4bf4f47852ffb69470f9281b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a40046a26efe118e48cdca4749d2e99212bb8bfe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795690"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579843"
 ---
 # <a name="sync"></a>SYNC
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen für die Synchronisierung zwischen einer lokalen Speicher und einem Server gestartet. Diese Informationen werden während der [Synchronisieren Zustand](synchronize-state.md)verwendet.
   

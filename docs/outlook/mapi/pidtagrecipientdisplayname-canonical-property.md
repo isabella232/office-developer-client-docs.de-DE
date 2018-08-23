@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8373edff-ef3e-4491-8cf3-e6609e1cb9b0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2e5d694c63a9d657e2d7c79b813602e95b15984a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7f546cdf65b4e248c675e838c82ab750a1e973dc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794922"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582196"
 ---
 # <a name="pidtagrecipientdisplayname-canonical-property"></a>PidTagRecipientDisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECIPIENT_DISPLAY_NAME, PR_RECIPIENT_DISPLAY_NAME_A, PR_RECIPIENT_DISPLAY_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x5FF6  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECIPIENT_DISPLAY_NAME, PR_RECIPIENT_DISPLAY_NAME_A, PR_RECIPIENT_DISPLAY_NAME_W  <br/> |
+|Kennung:  <br/> |0x5FF6  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    

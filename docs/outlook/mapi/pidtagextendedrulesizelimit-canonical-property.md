@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 87186764-fb58-4cdf-804d-bb13c5a8cb65
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 01d25614780f10f30d9e1314ea7f60ad3fbb4af0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 336f2b4bd6a4251548284eae91a51ad7018949c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794365"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582126"
 ---
 # <a name="pidtagextendedrulesizelimit-canonical-property"></a>PidTagExtendedRuleSizeLimit (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die maximale Größe in Bytes, die Benutzer für eine einzelne Regel "Erweiterte" aufgelistet werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EXTENDED_RULE_SIZE_LIMIT  <br/> |
-|Bezeichner:  <br/> |0x0E9B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EXTENDED_RULE_SIZE_LIMIT  <br/> |
+|Kennung:  <br/> |0x0E9B  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft auf das Anmeldeobjekt festgelegt ist, sollte der Client die Größe der Eigenschaft **PR_EXTENDED_RULE_MSG_CONDITION** ([PidTagExtendedRuleMessageCondition](pidtagextendedrulemessagecondition-canonical-property.md)) unter der von dieser Eigenschaft angegebene Wert beibehalten. Dagegen sollte der Server einen Fehler zurück, wenn der Client versucht, eine binäre Eigenschaft festlegen, die zu groß ist.
   

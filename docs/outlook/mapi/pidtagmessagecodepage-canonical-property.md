@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: eef73e34-470c-4c37-94ce-ea95fe83bc10
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3a343ba1a8ef5a10f23a17b5ac62fd8def5fa7f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f75a5e10a59d7c6db4e43d2552a38d523b537790
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794591"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580201"
 ---
 # <a name="pidtagmessagecodepage-canonical-property"></a>PidTagMessageCodepage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Codepage, die für die Nachricht verwendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_CODEPAGE  <br/> |
-|Bezeichner:  <br/> |0x3FFD  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_CODEPAGE  <br/> |
+|Kennung:  <br/> |0x3FFD  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Ordner-Objekt auf der Seite Code wird verwendet, wenn diese Eigenschaft auf 0 (null) festgelegt ist.
   

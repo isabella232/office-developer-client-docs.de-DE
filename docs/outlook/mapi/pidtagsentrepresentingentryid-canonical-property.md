@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f23bde8b-94cc-48c8-891a-166aa39aa3ee
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 49c7f697b6fffee15a47b56566c6fbc552a11b60
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1afb34dace1b28053b185bc25a495a19e48ec1c6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795136"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577821"
 ---
 # <a name="pidtagsentrepresentingentryid-canonical-property"></a>PidTagSentRepresentingEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID für den messaging Benutzer, die vom Absender dargestellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENT_REPRESENTING_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x0041  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENT_REPRESENTING_ENTRYID  <br/> |
+|Kennung:  <br/> |0x0041  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Eigenschaften für die messaging-Benutzer, die vom Absender angezeigt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag einer anderen Client sendet, sollten sie alle Absender dargestellte Eigenschaften auf die Werte für diesen Client festgelegt. Ein messaging-Benutzer in der Regel in einem eigenen Auftrag senden bewirkt, dass die dargestellte Absender Eigenschaften nicht festgelegt ist.
   

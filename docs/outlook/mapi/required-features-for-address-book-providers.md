@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e2ccddd7-65e8-41f6-8e21-a4ae98190a96
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ac76d1caf5db0b041a17d40d08671665b5427051
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 919b21490bb3b4418ba291e8e06198028c995b00
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795373"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570871"
 ---
 # <a name="required-features-for-address-book-providers"></a>Erforderliche Funktionen für Adressbuchanbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Von adressbuchanbietern implementierte können mit Empfängerinformationen arbeiten, die temporäre oder permanente, lokale oder remote, eine oder mehrere Messagingsystemen verständlich und formatierte für eine Tabelle Datenträger, Datei oder Datenbank befinden. Es gibt eine Vielzahl von Features, die ein Adressbuchanbieter implementiert werden kann, wodurch Mehrwert und Verbessern der Interoperabilität mit Clients und andere Anbieter. Einige Features sind jedoch erforderlich.
   

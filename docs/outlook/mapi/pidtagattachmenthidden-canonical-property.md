@@ -11,28 +11,28 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d92a01e3-9bc4-4985-aeb6-c23636cb8b2e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1c6444c6e8eace7dd2556d3b77a929c3112db1c8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b1604ae36bc20dc799fb21dec4c8742df4670ea1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794115"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581629"
 ---
 # <a name="pidtagattachmenthidden-canonical-property"></a>PidTagAttachmentHidden (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Anlage aus der Endbenutzer ausgeblendet ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACHMENT_HIDDEN  <br/> |
-|Bezeichner:  <br/> |0x7FFE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACHMENT_HIDDEN  <br/> |
+|Kennung:  <br/> |0x7FFE  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 

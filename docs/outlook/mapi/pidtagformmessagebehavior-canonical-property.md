@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8fd82432-9fd9-49ed-aa52-72109db04dc9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 127770c04e6d77932a49d4f447b0bf109afcc194
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0abb3cba2b72c18a2bc1a43a07130509ba29b56c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794430"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580418"
 ---
 # <a name="pidtagformmessagebehavior-canonical-property"></a>PidTagFormMessageBehavior (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn eine Nachricht im aktuellen Ordner geschrieben werden soll. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FORM_MESSAGE_BEHAVIOR  <br/> |
-|Bezeichner:  <br/> |0x330A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FORM_MESSAGE_BEHAVIOR  <br/> |
+|Kennung:  <br/> |0x330A  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert FALSE gibt an, dass die Nachricht als andere zwischen Personen Nachricht, d. h., im Ordner Postausgang bestehen soll. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5e09c078-b8e4-46ef-9ee7-e2ba937d53cf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ec8116d4850935209793553c39862f3cb1084495
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7e0145401b812b902fff36ab5b55794e34916356
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794188"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572515"
 ---
 # <a name="pidtagchildrensnames-canonical-property"></a>PidTagChildrensNames (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Namen der untergeordneten Elemente
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CHILDRENS_NAMES, PR_CHILDRENS_NAMES_A, PR_CHILDRENS_NAMES_W  <br/> |
-|Bezeichner:  <br/> |0x3A58  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CHILDRENS_NAMES, PR_CHILDRENS_NAMES_A, PR_CHILDRENS_NAMES_W  <br/> |
+|Kennung:  <br/> |0x3A58  <br/> |
 |Datentyp:  <br/> |PT_MV_UNICODE PT_MV_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

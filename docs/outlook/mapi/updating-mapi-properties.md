@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: faafde3d-3989-4182-91f1-a0cf0f1b5388
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5cff3a6cbf4bfca7b414f9663e71834da71926d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 172abe64073b11d98bfb5f76999237218ef8944a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795785"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581349"
 ---
 # <a name="updating-mapi-properties"></a>Aktualisieren von MAPI-Eigenschaften
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients und Dienstanbieter können durch Aufrufen ein Eigenschaftswerts aktualisieren:
   

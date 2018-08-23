@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 39ccc69a-0226-4dd7-9068-53b496b50e0f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 71bee7321c9b9e2425c70b2377961b74c0df8e73
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7c07e3c62c5279c8c0f04506d0aff3cb0a1d8ed1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793665"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572620"
 ---
 # <a name="pidlidlogtypedesc-canonical-property"></a>PidLidLogTypeDesc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt die Aktivität, die aufgezeichnet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogTypeDesc  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogTypeDesc  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008712  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

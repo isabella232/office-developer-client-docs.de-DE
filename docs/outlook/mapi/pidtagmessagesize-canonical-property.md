@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c67fb54b-8cc7-4fbc-8204-36fcddfa6192
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7da0e480af9761c1317c1941da1d68d448a1ef63
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c52fd6d6caaec6f215856daead809ceb0bd76729
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794619"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574993"
 ---
 # <a name="pidtagmessagesize-canonical-property"></a>PidTagMessageSize (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Summe der Größen aller Eigenschaften auf ein Meldungsobjekt in Bytes. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_SIZE  <br/> |
-|Bezeichner:  <br/> |0x0E08  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_SIZE  <br/> |
+|Kennung:  <br/> |0x0E08  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es wird empfohlen, dass Message Objekte diese Eigenschaft verfügbar machen. Die Nachrichtengröße gibt die ungefähre Anzahl von Bytes, die übertragen werden, wenn die Nachricht von einem Informationsspeicher an eine andere verschoben wird. Wird die Summe der Größen aller Eigenschaften im Message-Objekt, ist es in der Regel deutlich größer als den Nachrichtentext allein. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: b6a500fc-07f4-4788-ae46-d179a96a48e2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d708424ccb15be15746fe8a33eea73a8e0f99323
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b19f36337459753e153a96021b1d70308b374bed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793876"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577759"
 ---
 # <a name="pidlidtodoordinaldate-canonical-property"></a>PidLidToDoOrdinalDate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt die Sortierreihenfolge der Objekte in einer konsolidierten Aufgabenliste.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidToDoOrdinalDate  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidToDoOrdinalDate  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000085A0  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn ein Objekt gekennzeichnet ist, muss diese Eigenschaft auf die aktuelle Zeit in koordinierter Weltzeit (UTC) festgelegt werden. 
   

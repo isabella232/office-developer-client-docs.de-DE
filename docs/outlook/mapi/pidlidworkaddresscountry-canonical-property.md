@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 15b9db35-7038-40b0-9692-d93ed8ca76ba
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6360b43176afd1f33e65f42206dc7622697d481b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 36330524fb48707cc5355cb2cd213a1b0e54072c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793920"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579641"
 ---
 # <a name="pidlidworkaddresscountry-canonical-property"></a>PidLidWorkAddressCountry (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Land oder Region Teil Geschäftsadresse des Kontakts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidWorkAddressCountry  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidWorkAddressCountry  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008049  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

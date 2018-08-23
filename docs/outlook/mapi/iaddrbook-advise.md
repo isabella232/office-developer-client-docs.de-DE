@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2def89ed-e4ce-446a-8b80-132d11ae8f8b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8214390af883432d72f608452b8b944417884fd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 43569b22cace7b2700d37ace49fd734b45fec73c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791997"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580880"
 ---
 # <a name="iaddrbookadvise"></a>IAddrBook::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert einen Client oder Dienstanbieter Erhalt von Benachrichtigungen zu Änderungen an einen oder mehrere Einträge im Adressbuch an.
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID _LpEntryID_ übergebenen kann von jedem der adressbuchanbietern implementierte im Profil behandelt werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clients und Dienstanbieter Aufrufen die **Advise** -Methode für einen bestimmten Typ oder Typen der Benachrichtigung auf ein Adressbuch Adresseintrag registriert. Die Typen der Benachrichtigung werden durch die mit der _UlEventMask_ -Parameter übergebene Ereignismaske angezeigt. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 09e4b427-316b-4630-9f3d-81e74f040d7b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 480a50bd8c3738ad7d0c178cb4cabfdecd15412e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 81f9388b67d3194fe1442091b9f4f75a7671cb6d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792861"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579648"
 ---
 # <a name="itnefsetprops"></a>ITnef::SetProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt den Wert einer oder mehrerer Eigenschaften für eine gekapselte Nachricht oder Anlage ohne Ändern der ursprünglichen Nachricht oder Anlage fest. 
   
@@ -64,7 +64,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::SetProps** -Methode zum Festlegen der Eigenschaften zum Einschließen in die Kapselung einer Nachricht oder einer Anlage, ohne die ursprüngliche Nachricht oder Anlage zu ändern. Mit diesem Anruf festgelegten Eigenschaften außer Kraft setzen vorhandene Eigenschaften in die gekapselte Nachricht. 
   

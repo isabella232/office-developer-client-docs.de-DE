@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ca153737-75dc-426a-a410-7a7ab3264f23
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 844880e5a1e40b51ece30baafd969372e7d43121
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e8fa8df4e1439db3f1bc688d282e5ebdd3503024
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791628"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575504"
 ---
 # <a name="ending-a-mapi-session"></a>Beenden einer MAPI-Sitzung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients können beenden, deren Sitzung als Antwort auf Anforderung eines Benutzers, entweder sofort oder erst, nachdem alle ausgehende Nachrichten verarbeitet wurden, und wenn ein schwerwiegender Fehler auftritt. Einige Clients müssen bleiben angemeldet damit ausstehende ausgehende Nachrichten der Adressbuchhierarchie erreicht werden kann und das Ziel messaging-System. Wenn solche ein Client eine Nachricht sendet und sofort abmeldet, bleiben die Nachricht in der ausgehenden Warteschlange, bis ein Benutzer Back anmeldet und bleibt angemeldet sind lange genug für die Nachricht zu übermitteln.
   

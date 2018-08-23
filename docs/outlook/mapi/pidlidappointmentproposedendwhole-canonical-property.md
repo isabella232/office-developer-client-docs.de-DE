@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6749e7b1-7a66-4aca-92b0-9a23a87fc121
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6db8c5d8be3bc7120c91da17135b0d871ec2b026
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6c9ef670e5c066c29dc8495c3d0b08ed67284895
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793372"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577625"
 ---
 # <a name="pidlidappointmentproposedendwhole-canonical-property"></a>PidLidAppointmentProposedEndWhole (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den vorgeschlagenen Wert für die Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) für einen Leistungsindikator Vorschlag.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptProposedEndWhole  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptProposedEndWhole  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008251  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieser Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   

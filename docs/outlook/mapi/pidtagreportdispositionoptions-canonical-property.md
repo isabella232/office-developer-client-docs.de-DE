@@ -9,26 +9,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bf37786a-b6bd-48a6-a2ec-6a739a8ba0d7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b01062a136ff5c6e43ddab1bfbead8ac602acccb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cefb7948071b37a5a91bb87cb96a29c23ba5f3cd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794951"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580516"
 ---
 # <a name="pidtagreportdispositionoptions-canonical-property"></a>PidTagReportDispositionOptions (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wird die Kopfzeile MIME-Disposition-Optionen für Nachrichten, die Empfangsbestätigungen anfordern. Der Wert dieser Eigenschaft sollte eine leere Zeichenfolge.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_OPTIONS, PR_REPORT_DISPOSITION_OPTIONS_A, PR_REPORT_DISPOSITION_OPTIONS_W  <br/> |
-|Bezeichner:  <br/> |0 x 0085  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_OPTIONS, PR_REPORT_DISPOSITION_OPTIONS_A, PR_REPORT_DISPOSITION_OPTIONS_W  <br/> |
+|Kennung:  <br/> |0 x 0085  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    

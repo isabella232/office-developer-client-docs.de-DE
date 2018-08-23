@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4546dd8d-b901-4381-a715-887a31cea2b9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 714d7061cdb7fbda2d06488897a962ae5e454d3a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d4551d3c2e51380ed747e2ff56a357bbcbe6f356
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793934"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577135"
 ---
 # <a name="pidnamecompany-canonical-property"></a>PidNameCompany (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Mandanten für den die Datei erstellt wurde.
   

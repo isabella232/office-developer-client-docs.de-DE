@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca86ee8-1bf6-4ec8-95b3-575c22fbb170
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d8f28a6b0a1633b0060f02af7e38ef058527eb24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 329771bf79e30f07c9de0a311aa2a836ca507c38
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792173"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580033"
 ---
 # <a name="imapiformmgrisinconflict"></a>IMAPIFormMgr::IsInConflict
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt, ob ein Formular eine eigene Nachricht Konflikte verarbeitet werden kann. Eine Nachricht ist in Konflikt, wenn es von mehreren Benutzern gleichzeitig bearbeitet wurde. Dies kann vorkommen, auf Nachrichten in öffentlichen Ordnern.
   
@@ -63,7 +63,7 @@ S_FALSE
   
 > Das Formular eine eigene Nachricht Konflikte behandelt werden, oder die Nachricht, deren Informationen übergeben wurde, ist nicht in Konflikt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::IsInConflict** -Methode, um zu ermitteln, ob ein bestimmtes Formular eine eigene Nachricht Konflikte nicht behandelt. **IsInConflict** überprüft die Bitmasken in den _UlMessageFlags_ und _UlMessageStatus_ das Vorhandensein von ein Conflict-Flag. Wenn ein Konflikt Flag festgelegt ist, **IsInConflict** die Nachrichtenklasse in der _SzMessageClass_ -Parameter übergeben wird, aufgelöst wird und gibt S_OK zurück, wenn das Formular eine eigene Konflikte nicht behandelt. **IsInConflict** gibt S_FALSE zurück, wenn das Formular eine eigene Konflikte behandelt. 
   

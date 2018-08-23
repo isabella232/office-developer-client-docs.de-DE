@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 908c2d9f-53f4-4aa8-b309-2f3ac2dca5b5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 14a077dfdb0f0781ab0d9f085c758c7a7d6285af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 82d9060513814b5011e33ca00d849a75f9defbf6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795201"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577373"
 ---
 # <a name="pidtagstartdate-canonical-property"></a>PidTagStartDate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das Datum und die Uhrzeit eines Termins als durch eine Anwendung zur terminplanung verwaltet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_START_DATE  <br/> |
-|Bezeichner:  <br/> |0x0060  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_START_DATE  <br/> |
+|Kennung:  <br/> |0x0060  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Planen von Anwendungen sollte diese Eigenschaft und die Eigenschaften des **PR_END_DATE** ([PidTagEndDate](pidtagenddate-canonical-property.md)) festgelegt, wenn Senden von Besprechungsanfragen.
   

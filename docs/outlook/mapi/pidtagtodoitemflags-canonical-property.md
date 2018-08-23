@@ -11,37 +11,37 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb7ccb45-ce08-4d22-9259-db15cd267e34
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cae4ef6e4d7634ca2b429eb946aa948f5d90cd92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 79f6c90d1ebd2257cc428e88dfce3d9ee9dfeccf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795295"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573467"
 ---
 # <a name="pidtagtodoitemflags-canonical-property"></a>PidTagToDoItemFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt ein Aufgabenelement gekennzeichnete Bedingung dar.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TODO_ITEM_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x0E2B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TODO_ITEM_FLAGS  <br/> |
+|Kennung:  <br/> |0x0E2B  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist ein Bitfeld, in dem jedes Bit auf 1 festgelegt werden sollte, wenn die zugeordnete Bedingung in der folgenden Tabelle angewendet wird, sonst 0.
   
 ||||
 |:-----|:-----|:-----|
 |Numerischen Wert  <br/> |Name  <br/> |Beschreibung  <br/> |
-|Nicht vorhanden  <br/> |n/v  <br/> |Nicht gekennzeichnet  <br/> |
+|Nicht vorhanden  <br/> |–  <br/> |Nicht gekennzeichnet  <br/> |
 |1  <br/> |todoTimeFlagged  <br/> |Objekt ist Zeit gekennzeichnet  <br/> |
 |8  <br/> |todoRecipientFlagged  <br/> |Sollte nur auf einem Objekt "Message" Entwurf festgelegt werden, und das bedeutet, dass das Objekt für die Empfänger gekennzeichnet ist.  <br/> |
    

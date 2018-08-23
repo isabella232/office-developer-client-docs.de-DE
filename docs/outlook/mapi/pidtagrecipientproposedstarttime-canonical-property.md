@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6687ff62-7ac6-409c-8c87-4e09d38e45f1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 65d5c2f94da219fc1cb87384ebdd3c1cf34bd9a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7500918daed361eac1c20e46e4046f47b6339c89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794910"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580859"
 ---
 # <a name="pidtagrecipientproposedstarttime-canonical-property"></a>PidTagRecipientProposedStartTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine vorgeschlagene Startzeit einer Besprechung an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECIPIENT_PROPOSEDSTARTTIME  <br/> |
-|Bezeichner:  <br/> |0x5FE3  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECIPIENT_PROPOSEDSTARTTIME  <br/> |
+|Kennung:  <br/> |0x5FE3  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der Wert der **PR_RECIPIENT_PROPOSED** ([PidTagRecipientProposed](pidtagrecipientproposed-canonical-property.md))-Eigenschaft auf TRUE festgelegt ist, gibt den Wert dieser Eigenschaft den Wert angefordert, indem die Teilnehmer als Wert des **DispidApptStartWhole** ([ festlegen PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md))-Eigenschaft für das Einzelinstanz Besprechung oder Exception-Objekt.
   

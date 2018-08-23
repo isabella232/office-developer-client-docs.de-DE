@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f62f3055-b855-4203-aa5c-6ba28b58c6f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 519ee2b91275e4253845afa35a9a80470071966d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9d1adb6dd1fc151c9a599ea44391c2ca5b2fe2aa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795051"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580565"
 ---
 # <a name="pidtagrulestate-canonical-property"></a>PidTagRuleState (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Wert, der als eine Bitmaske Kombination von Flags, die angeben, den Status der Regel interpretiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_STATE  <br/> |
-|Bezeichner:  <br/> |0x6677  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_STATE  <br/> |
+|Kennung:  <br/> |0x6677  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die folgende Tabelle zeigt die möglichen Werte dieser Eigenschaft an.
   

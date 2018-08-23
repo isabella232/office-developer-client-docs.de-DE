@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: faf795a2-84db-432d-a05f-082f25a5cab5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f378bdd473410b846328cbe1f911eba9401f88cf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 60528162917a8a383060adbcadefb610aa42ce32
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795626"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580971"
 ---
 # <a name="spropvalue"></a>SPropValue
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine MAPI-Eigenschaft.
   
@@ -58,10 +58,10 @@ typedef struct _SPropValue
     
 |**Eigenschaftstyp**|**Wert**|**Datentyp des Werts**|
 |:-----|:-----|:-----|
-|PT_I2 oder PT_SHORT  <br/> |**Ich** <br/> |kurze int  <br/> |
+|PT_I2 oder PT_SHORT  <br/> |**Ich** <br/> |short int  <br/> |
 |PT_I4 oder PT_LONG (mit Vorzeichen)  <br/> |**l** <br/> |LANGE  <br/> |
 |PT_I4 oder PT_LONG (ohne Vorzeichen)  <br/> |**UL** <br/> |ULONG  <br/> |
-|PT_R4 oder PT_FLOAT  <br/> |**flt** <br/> |Gleitkommazahl  <br/> |
+|PT_R4 oder PT_FLOAT  <br/> |**flt** <br/> |float  <br/> |
 |PT_R8 oder PT_DOUBLE  <br/> |**Doppelte Japan** <br/> |double  <br/> |
 |PT_BOOLEAN  <br/> |**b** <br/> |nicht signierte kurze int  <br/> |
 |PT_CURRENCY  <br/> |**Übernehmen** <br/> |[CURRENCY](currency.md) <br/> |
@@ -88,7 +88,7 @@ typedef struct _SPropValue
 |PT_NULL oder PT_OBJECT  <br/> |**x** <br/> |LANGE  <br/> |
 |PT_PTR  <br/> |**LPV** <br/> |VOID\*  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Element **UlPropTag** besteht aus zwei Teilen: 
   

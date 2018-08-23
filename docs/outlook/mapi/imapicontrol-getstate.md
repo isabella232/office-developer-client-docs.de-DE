@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: fb321b48-3e5f-4b99-9af0-a57b66f26a2e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a6ae89bf9b2b16439cc06f0e106859dda10ea22c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3d45c4722b6a0200ea3937ba606da0af5c793df2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19792074"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581853"
 ---
 # <a name="imapicontrolgetstate"></a>IMAPIControl::GetState
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft einen Wert, der angibt, ob das Schaltflächensteuerelement aktiviert oder deaktiviert ist.
   
@@ -58,7 +58,7 @@ S_OK
   
 > Der Zustand des Schaltflächensteuerelements wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dienstanbieter implementieren die **IMAPIControl::GetState** -Methode, um den Status eines Schaltflächen-Steuerelements MAPI bereitzustellen. Wenn die Schaltfläche aktiviert ist, kann es zu einem Klicken mit der Maus oder Drücken einer Taste reagieren. Wenn es deaktiviert ist, wird die Schaltfläche abgeblendet und reagiert nicht auf einer klicken mit der Maus oder Drücken einer Taste. 
   

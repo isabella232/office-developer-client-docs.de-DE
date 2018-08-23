@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 23329ca3-89f9-4e5a-9c8a-6262f2a2d26f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: df426e3525ee70568041e90998833d6c93edcca7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 28b42e6abee5d918dbcca69c13642f3ebcc859e1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794046"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581937"
 ---
 # <a name="pidtagacknowledgementmode-canonical-property"></a>PidTagAcknowledgementMode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Bezeichner des Modus für Bestätigung der Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ACKNOWLEDGEMENT_MODE  <br/> |
-|Bezeichner:  <br/> |0x0001  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ACKNOWLEDGEMENT_MODE  <br/> |
+|Kennung:  <br/> |0x0001  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

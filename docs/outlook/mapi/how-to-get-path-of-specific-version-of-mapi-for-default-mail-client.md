@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ee7fb05-cfb3-6b68-5a9a-1d6375f2e879
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 277505beb11dbc2b32b7e970c2bcf2a34dbdf00b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5b3160bb81cee86aeab4e7eecb76fb409d8e7c4b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791840"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581608"
 ---
 # <a name="get-the-path-of-a-specific-version-of-mapi-for-the-default-mail-client"></a>Abrufen des Pfads einer bestimmten Version von MAPI für den Standard-Mail-client
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält ein Codebeispiel in C++, das zeigt, wie Sie den Pfad einer bestimmten Version von MAPI zu erhalten, die von der standardmäßige e-Mail-Client auf einem Computer verwendet wird. MAPI-Mail-Clients haben die Möglichkeit, die in der Registrierung angeben, die eine benutzerdefinierte DLL, dass die MAPI-Stub-Bibliothek laden und Versenden von MAPI sollte aufgerufen. Der Registrierungsschlüssel für diese benutzerdefinierte DLL für standardmäßige e-Mail-Client festgelegt ist **MSIComponentID**, unter dem Schlüssel **HKLM\Software\Clients\Mail** der standardmäßige e-Mail-Client. Die [FGetComponentPath](fgetcomponentpath.md) -Funktion, durch die MAPI-Stub-Bibliothek exportiert mapistub.dll, können den Pfad zu der benutzerdefinierten Version von MAPI durch den Registrierungsschlüssel **MSIComponentID** angegebenen zurückzugeben. 
   

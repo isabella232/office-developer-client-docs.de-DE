@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: eca3d4ff-2e92-4d20-a498-98e0773c1962
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 94e83f4a93bac4ee144c5fbf94fd4b3fdb6c2f55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6cc5edf1c93ca94fb9d8cab302ccd8e96373cd94
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794072"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581944"
 ---
 # <a name="pidtaganr-canonical-property"></a>PidTagAnr (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen String-Wert für die Verwendung in einer eigenschaftseinschränkung auf eine Adresse Adressbuch Container Inhaltstabelle enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ANR, PR_ANR_A, PR_ANR_W  <br/> |
-|Bezeichner:  <br/> |0x360C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ANR, PR_ANR_A, PR_ANR_W  <br/> |
+|Kennung:  <br/> |0x360C  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften gehören nicht auf ein beliebiges Objekt; Es wird von adressbuchanbietern implementierte in [SPropertyRestriction](spropertyrestriction.md) Strukturen bereitgestellt. Diese Eigenschaft enthält eine Zeichenfolge der mehrdeutiger Name-Lösung (ANR), die ein Adressbuchcontainer Inhaltstabelle, entsprechende Empfänger der Nachricht erhalten verglichen werden kann. 
   

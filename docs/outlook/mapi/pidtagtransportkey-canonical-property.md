@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 131211b3-e6f9-4dd4-b6d9-b65361bff775
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 77b302e3c8ae06fb7578fc8fcf9ba8f27d552e18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8b1fab49f348a76693cc35fd89994419b81f250a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795269"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573691"
 ---
 # <a name="pidtagtransportkey-canonical-property"></a>PidTagTransportKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert zum Nachverfolgen des Fortschritts des eine ausgehende Nachricht über den ausgehenden Transport Anbietern von die MAPI-Warteschlange verwendet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TRANSPORT_KEY  <br/> |
-|Bezeichner:  <br/> |0x0E16  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TRANSPORT_KEY  <br/> |
+|Kennung:  <br/> |0x0E16  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 48b634d7-deea-422b-8944-a8d929d83838
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5d494577721feba01dd9cb93f344308251a8ed33
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 56f14488812842d5e9fe63ae228c325059ebe679
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795002"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575091"
 ---
 # <a name="pidtagresourcetype-canonical-property"></a>PidTagResourceType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der angibt, der Dienstanbietertyp.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RESOURCE_TYPE  <br/> |
-|Bezeichner:  <br/> |0x3E03  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RESOURCE_TYPE  <br/> |
+|Kennung:  <br/> |0x3E03  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

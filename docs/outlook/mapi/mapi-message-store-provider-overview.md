@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: eae44469-b217-4d05-b47f-5a0b1fab7056
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5cc8261dfee6803492ffcf62c182930e2ac6d425
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 614d9ab1037f0fc2735112801e30e530bfafe4db
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793029"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569071"
 ---
 # <a name="mapi-message-store-provider-overview"></a>MAPI-Nachricht Speicher-Anbieter (Übersicht)
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Anbieter behandeln die Speicherung und den Abruf von Nachrichten und andere Informationen für die Benutzer der Clientanwendungen. Informationen der Nachricht ist mit einer hierarchischen System bekannt als Nachrichtenspeicher organisiert. Nachrichtenspeicher wird in mehreren Ebenen mit namens aufbewahren von Nachrichten mit unterschiedlichen Typen Folders Container implementiert. Es gibt keine Beschränkung der Anzahl der Ebenen in einem Nachrichtenspeicher. Ordner können viele Unterordner enthalten. 
   
@@ -39,5 +39,5 @@ Je nach der Nachricht Speicheranbieter, kann ein Benutzer eine neue Nachricht zu
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+- [MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

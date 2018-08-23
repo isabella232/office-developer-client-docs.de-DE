@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: e15599c5-f40f-46a6-a726-7359efd09ff8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ea0e2b753212acc48c56240b3a72b7f22954802a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3f73f1ef919bab15a8f89b7fddc43608411635e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795129"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573453"
 ---
 # <a name="pidtagsendersearchkey-canonical-property"></a>PidTagSenderSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Nachrichtenabsender suchen-Taste.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENDER_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x0C1D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENDER_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x0C1D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

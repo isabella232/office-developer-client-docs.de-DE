@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: f7047e4e-0fb3-476b-9568-8f1135e6d970
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5b711b1e0db0fab93016d3f1c979d81a142c9946
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b4c497e77b9dfcea13742535148180275495717d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793818"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581867"
 ---
 # <a name="pidlidtaskassigner-canonical-property"></a>PidLidTaskAssigner (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  Namen der Benutzer, der zuletzt verwendet wurde die Aufgabe zugewiesen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskDelegator  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskDelegator  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008121  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die Aufgabe nicht zugewiesen wurde, bleibt diese Eigenschaft nicht festgelegt. Da der Client diese Eigenschaft festlegt, nachdem Beauftragte für die Aufgabe eine Aufgabenanfrage erhalten, wird die Eigenschaft nicht auf die Aufgabe delegierende Person Kopie der Aufgabe festgelegt werden. Wenn der Client hinzugefügt oder entfernt eine Aufgabe delegierende Person aus der Aufgabenliste delegierende Person in der Eigenschaft **DispidTaskMyDelegators** ([PidLidTaskAssigners](pidlidtaskassigners-canonical-property.md)), die **DispidTaskDelegator** ([PidLidTaskAssigner](pidlidtaskassigner-canonical-property.md))-Eigenschaft muss auf das hinzugefügte festgelegt oder entfernte Aufgabe delegierende Person.
   

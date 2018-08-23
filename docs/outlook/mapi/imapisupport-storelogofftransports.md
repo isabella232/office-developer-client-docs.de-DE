@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f21fba96-c5ca-4d41-9b93-c7955ab7327f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6624c4abf05dc7df9fc79df43f1d0fe76251d052
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b77a58b04e5cdeee7a9e84051a6ed287c1a20115
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792439"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578311"
 ---
 # <a name="imapisupportstorelogofftransports"></a>IMAPISupport::StoreLogoffTransports
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fordert die ordnungsgemäße Version von eines Nachrichtenspeichers.
   
@@ -83,7 +83,7 @@ S_OK
   
 > Das Abmelden Verfahren erfolgreich war.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::StoreLogoffTransports** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **StoreLogoffTransports** um-Clientanwendungen können einige Steuern wie MAPI-Handles Transport Anbieter Aktivität als Nachrichtenspeicher geschlossen wird. 
   

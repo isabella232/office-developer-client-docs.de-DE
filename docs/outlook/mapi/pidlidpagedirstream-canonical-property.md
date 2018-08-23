@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: e94f0daf-fccb-41b6-b38b-5ef4167a6e9d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 809209863af912113ac5f0795cc7c3b0cf51e792
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cc2bacb85da810333fb9c1741fd1a414396f2f74
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793706"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578997"
 ---
 # <a name="pidlidpagedirstream-canonical-property"></a>PidLidPageDirStream (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt Informationen zu den Seiten des benutzerdefinierten Formulars mit der Meldung verbunden ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidPageDirStream  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidPageDirStream  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008513  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |

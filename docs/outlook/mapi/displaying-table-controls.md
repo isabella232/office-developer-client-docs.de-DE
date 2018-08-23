@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0882be14-573c-440c-954f-76ef70eea33e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 11b3279582c4cfb0d2c2249c6f4eddd7f0260b49
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7af1e710006986807091c5c36d54da86204a71d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791571"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568462"
 ---
 # <a name="displaying-table-controls"></a>Anzeigen von Tabellensteuerelementen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es gibt viele verschiedene Typen von Steuerelementen, keine eindeutige MAPI. MAPI definiert eine eigene Strukturen, die verwendet werden jedoch in Verbindung mit [BuildDisplayTable](builddisplaytable.md) zum Beschreiben des eindeutigen Satz von Daten, die an jedes Steuerelement beteiligt sind. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f7012f7-060d-4f2d-bcff-2aa9f6980e71
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 152f3032876d6473f1716afa46507196cd5ecc55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: de92a1328eb9a089a7914978ab20ab0bf5c430ba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795624"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581958"
 ---
 # <a name="ssubrestriction"></a>SSubRestriction
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine untergeordnete Objekt Beschränkung der verwendet wird, um die Zeilen der Anlage einer Nachricht oder ein Empfänger Tabelle Filtern beschrieben.
   
@@ -58,7 +58,7 @@ PR_MESSAGE_ATTACHMENTS
   
 > Zeiger auf eine [SRestriction](srestriction.md) -Struktur. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Untergeordnete Objekt Einschränkungen werden durch die alle Tabellen nicht unterstützt. In der Regel nur Ordner Inhalt Tabellen und die Ergebnisse Suchordner unterstützt. Beispielsweise werden Einschränkungen untergeordneten Objekts verwendet, um eine Nachricht zu suchen, die einen bestimmten Typ Anlage oder ein Empfänger hat. 
   

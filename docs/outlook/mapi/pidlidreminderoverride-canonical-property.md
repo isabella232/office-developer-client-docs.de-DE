@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ad7e37e1-bd12-409f-87e5-ebc0c298a072
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 59b1efdbb9757dbf75479eebfac8e7f67be5f587
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 55aa8e47dda82995ca1d246f36c271ef06e66954
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793739"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580180"
 ---
 # <a name="pidlidreminderoverride-canonical-property"></a>PidLidReminderOverride (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob der Client die Werte der **DispidReminderPlaySound** ([PidLidReminderPlaySound](pidlidreminderplaysound-canonical-property.md)) und **DispidReminderFileParam** ( [PidLidReminderFileParameter ](pidlidreminderfileparameter-canonical-property.md)) Eigenschaften berücksichtigen sollten.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidReminderOverride  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidReminderOverride  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000851C  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Client kann Standardwerte anstelle der Werte der Eigenschaften **DispidReminderPlaySound** und **DispidReminderFileParam** verwenden. 
   

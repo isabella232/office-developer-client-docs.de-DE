@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c0350698-5304-40cd-903d-279471f3c226
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3875e51868e882ca454c06949347327a21a93eb9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 768528c59d7aa5888c0d0427f86b8be8e1d33669
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793301"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579977"
 ---
 # <a name="opening-an-attachment"></a>Öffnen einer Anlage
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnen einer Anlage umfasst, deren Daten anzeigen. Beispielsweise werden eine Dateianlage geöffnet wird, der Inhalt der Datei angezeigt. Während ihrer Eintragsbezeichner mit Nachrichten und Ordnern geöffnet sind, werden geöffnete Anlagen unter Verwendung ihrer Anlage Zahlen – **PR_ATTACH_NUM** -Eigenschaften. Weitere Informationen finden Sie unter **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md)). Anlage Zahlen sind über eine Nachricht Anlagentabelle verfügbar.
   

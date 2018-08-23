@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 048ce01d-f2c2-40d1-88aa-25206be58dd1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f1da798d23e4ddf903844de6091f631d78bf44b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1c775d982c02225fed5e4a78cd17294c4e83e7a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793631"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575763"
 ---
 # <a name="pidlidhomeaddresscountrycode-canonical-property"></a>PidLidHomeAddressCountryCode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Land Codeteil des home-Adresse des Kontakts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidHomeAddressCountryCode  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidHomeAddressCountryCode  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080DA  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

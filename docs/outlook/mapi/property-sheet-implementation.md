@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f3475206-0237-4b5b-8efd-abd5d5e0b6c3
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 406451adac3cd73286feb787bd6b4d2f356aa283
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 9a0fad8fa20b2d94077f9fbdf8a3c595c0ab219e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795325"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580866"
 ---
 # <a name="property-sheet-implementation"></a>Implementierung von Eigenschaftenblättern
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Eigenschaftenblatt wird ein Dialogfeld zum Anzeigen der Eigenschaften eines Objekts. Die Eigenschaften können schreibgeschützt, dem der Benutzer nur Sie können diese anzeigen oder Lese-/Schreibzugriff, sodass der Benutzer Änderungen vornehmen. Ein Eigenschaftenblatt enthält eine oder mehrere überlappende untergeordnete Fenster als Seiten bezeichnet. Jede Seite enthält Steuerelement Windows für eine Gruppe von verwandten Eigenschaften festlegen. Benutzer Navigieren von einer Seite auf durch Auswählen einer Registerkarte, die die entsprechende Seite im Vordergrund im Eigenschaftsfenster bringt.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3e221944-5dc9-4cce-8b47-73af84427aea
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5eeaa9a8c1965954ad2eb0a6bfd2a174a355f10d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 050a26f4b4e6c353881189f8c7b71c2e4c378d03
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795390"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577212"
 ---
 # <a name="required-features-for-address-book-containers"></a>Erforderliche Funktionen für Adressbuchcontainer
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die meisten adressbuchanbietern implementierte unterstützt mindestens einen Container, einige von ihnen geändert werden. Address Book Containern können Inhalt und Hierarchietabellen, Funktionen für die Suche und Auflösung angeben. Änderbare Container ermöglichen das Löschen der Einträge wie messaging-Benutzern, Verteilerlisten, oder andere Container und das Hinzufügen von Einträgen von Einträgen in andere Container oder von einmal-Vorlagen.
   

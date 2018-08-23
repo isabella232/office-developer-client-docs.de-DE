@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 06fe4d20-c3f5-4f4f-b7b7-5a4f5257079b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e85150894b18881171e6c653d30188ed65d3e53a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 49f0fb7a1bcbd1920e7a2620f28fd5289104c983
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793502"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575623"
 ---
 # <a name="pidliddistributionlistname-canonical-property"></a>PidLidDistributionListName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Namen der persönlichen Verteilerliste.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidDLName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidDLName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008053  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft sollte identisch mit dem Wert der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)).
   

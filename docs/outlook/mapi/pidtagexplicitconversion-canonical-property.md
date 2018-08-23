@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8aabcec6-f735-41fe-a5f4-61d4635b2c58
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 430366614d0b4d6ca60b539264a185d1caf23420
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cf4fe916d93d330b43c0acd76be2db44687a4da7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794375"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578612"
 ---
 # <a name="pidtagexplicitconversion-canonical-property"></a>PidTagExplicitConversion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass ein Absender eine Nachricht inhaltskonvertierung für einen bestimmten Empfänger angefordert hat.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EXPLICIT_CONVERSION  <br/> |
-|Bezeichner:  <br/> |0x0C01  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EXPLICIT_CONVERSION  <br/> |
+|Kennung:  <br/> |0x0C01  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: eefbcdd4-9841-4742-b976-e85c8e686dda
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 962f77662452138d596b0a9364775f24118e66ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 83436f2183e05fe6c3b2672728b37d518d532bf9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795053"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582224"
 ---
 # <a name="pidtagrulemsgname-canonical-property"></a>PidTagRuleMsgName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen einer erweiterten Regel.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_MSG_NAME  <br/> |
-|Bezeichner:  <br/> |0x65EC  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_MSG_NAME  <br/> |
+|Kennung:  <br/> |0x65EC  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    

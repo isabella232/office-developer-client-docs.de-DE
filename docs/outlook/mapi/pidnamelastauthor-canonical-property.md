@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 50bb6ece-212f-472a-bb37-20ca984c5ef4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ff2092028e2bbfdb0c1e8b4eaa866a374204d687
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0b16a7e9dfd21238efa1437d8e9d4fc22c9e04ce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793962"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576785"
 ---
 # <a name="pidnamelastauthor-canonical-property"></a>PidNameLastAuthor (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den letzten Autor der angehängten Datei.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ccd9d623-a3cb-4e66-9649-78c3887cb726
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f58bd8499b63bcd526906f78143b76092f194cb4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a8cd211cc16b620ac47357271070e0b45b867bea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792619"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579942"
 ---
 # <a name="imsgstoregetreceivefolder"></a>IMsgStore::GetReceiveFolder
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft den Ordner, der als Ziel für eingehende Nachrichten von einer angegebenen Nachrichtenklasse oder als Standard Empfangsordner für den Nachrichtenspeicher eingerichtet wurde.
   
@@ -69,7 +69,7 @@ S_OK
   
 > Der Empfangsordner wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::GetReceiveFolder** -Methode ruft die Eintrags-ID eines Ordners empfangen, einen Ordner, der zum Empfangen eingehender Nachrichten von einer bestimmten Nachrichtenklasse festgelegt. Anrufer können eine Nachrichtenklasse oder NULL in der _LpszMessageClass_ -Parameter angeben. Wenn _LpszMessageClass_ NULL ist, gibt **GetReceiveFolder** die folgenden Werte zurück: 
   

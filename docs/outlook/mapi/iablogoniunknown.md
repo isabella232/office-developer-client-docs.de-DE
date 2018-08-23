@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe340182-f41e-42e7-b8e8-cc005b1e9a5f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 784430f1286c9a017337a0fae4b269757a56a3e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4421fcde6ccd2f2ac6245927d9d5d63ddc5200af
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791991"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573516"
 ---
 # <a name="iablogon--iunknown"></a>IABLogon : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Greift auf Ressourcen in einer Adressbuchanbieter.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Address Book Logon-Objekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Address Book Logon-Objekten  <br/> |
 |Implementiert von:  <br/> |Von adressbuchanbietern implementierte  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IABLogon  <br/> |
@@ -51,7 +51,7 @@ Greift auf Ressourcen in einer Adressbuchanbieter.
 |[GetOneOffTable](iablogon-getoneofftable.md) <br/> |Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern, die Empfängerliste von ausgehenden Nachrichten hinzugefügt werden soll.  <br/> |
 |[PrepareRecips](iablogon-preparerecips.md) <br/> |Bereitet eine Empfängerliste zur späteren Verwendung von messaging-System.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Allgemeine Informationen zu den Methoden der **IABLogon** -Schnittstelle finden Sie unter [Implementieren Service Provider Anmeldung](implementing-service-provider-logon.md).
   

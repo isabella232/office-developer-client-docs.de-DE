@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e7f9be6a-92e7-44a8-93ee-b087713a31df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1604c4a1a0d1bf4008595b0d150b4f7eb3d1c2ed
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e8d85ba55c5aa2f3780ad8e04cf1326cd7c35865
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795625"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575938"
 ---
 # <a name="ssortorderset"></a>SSortOrderSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Auflistung von Sortierschlüsseln für eine Tabelle, die für die Standard- oder kategorisierte Sortierung verwendet wird.
   
@@ -61,7 +61,7 @@ typedef struct _SSortOrderSet
   
 > Array von **SSortOrder** -Strukturen, jede eine Sortierreihenfolge definieren. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine **SSortOrderSet** Struktur wird für die Definition mehrerer Sortierreihenfolgen für die Standard- und kategorisierte Sortierung verwendet. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2c7506c4-82f6-49e2-81c8-3ca316831d93
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ad1038de2314165a095627594075498705efde62
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b4038923258ecb5bf3d00c5e92b9c0e791d6988d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794451"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580187"
 ---
 # <a name="pidtaghometelephonenumber-canonical-property"></a>PidTagHomeTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die primäre Telefonnummer des Empfängers Home. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOME_TELEPHONE_NUMBER, PR_HOME_TELEPHONE_NUMBER_A, PR_HOME_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A09  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOME_TELEPHONE_NUMBER, PR_HOME_TELEPHONE_NUMBER_A, PR_HOME_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A09  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften bieten Identifikation und den Zugriff für einen Empfänger an. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

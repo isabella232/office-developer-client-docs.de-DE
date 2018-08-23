@@ -11,36 +11,36 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b5117360-0939-4535-83fe-3b4a240b5217
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 38df67757082bd12e008e56632ec7e6961ba9d42
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8dba5906a00beb6d38e4f3e375a9c57db79d42f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794370"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575959"
 ---
 # <a name="pidtagflagstatus-canonical-property"></a>PidTagFlagStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Status der Kennzeichnung des Message-Objekts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FLAG_STATUS  <br/> |
-|Bezeichner:  <br/> |0x1090  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FLAG_STATUS  <br/> |
+|Kennung:  <br/> |0x1090  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf ein Objekt bezüglich Besprechungen nicht vorhanden, und sollte nicht auf ein Task-Objekt vorhanden sein. Bei Festlegung auf andere Nachrichtenobjekte, muss diese Eigenschaft auf einen der folgenden Werte festgelegt werden:
   
 |**Numerischen Wert**|**Name**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Nicht vorhanden  <br/> |n/v  <br/> |Nicht gekennzeichnet  <br/> |
+|Nicht vorhanden  <br/> |–  <br/> |Nicht gekennzeichnet  <br/> |
 |0x00000001  <br/> |followupComplete  <br/> |Abgeschlossen gekennzeichnet  <br/> |
 |0x00000002  <br/> |followupFlagged  <br/> |Gekennzeichnet  <br/> |
    

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b37555a-1d07-4f42-95e3-b8fa37ed0c3b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a139c39c5814b22d9b55bc937a7c300d89f1d5bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 94d33910650de4f0d625d7a819c66ad8c599a47e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794902"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581454"
 ---
 # <a name="pidtagreceivedbysearchkey-canonical-property"></a>PidTagReceivedBySearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Suchschlüssel des messaging Benutzers, der die Nachricht empfängt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECEIVED_BY_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x0051  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECEIVED_BY_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x0051  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den messaging-Benutzer, der die Nachricht empfängt. Es muss von der eingehenden Adressbuchhierarchie festgelegt werden.
   

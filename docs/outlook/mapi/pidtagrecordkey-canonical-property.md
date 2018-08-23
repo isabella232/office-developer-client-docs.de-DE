@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a12fb9a2-799d-4112-b26c-4b2854c47cc2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bd655c6245d25948d1dea1daace6a0644b47e378
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9add9246cdfb22f7c5ad579f425932f49d4a9ecd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794936"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581244"
 ---
 # <a name="pidtagrecordkey-canonical-property"></a>PidTagRecordKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen binären vergleichbaren eindeutigen Bezeichner für ein bestimmtes Objekt an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECORD_KEY  <br/> |
-|Bezeichner:  <br/> |0x0FF9  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECORD_KEY  <br/> |
+|Kennung:  <br/> |0x0FF9  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft erleichtert das Auffinden Verweise auf ein Objekt, wie eine Zeile in einer Inhaltstabelle suchen. Diese Eigenschaft kann nicht zum Öffnen eines Objekts verwendet werden. Verwenden Sie die Eintrags-ID für diesen Zweck.
   

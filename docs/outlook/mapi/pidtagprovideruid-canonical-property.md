@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 993f5bca-58a6-455d-8a25-6e08b441ad31
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7a42a3b50cfa5630ac66cb03caac06dd7cb00e6f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cca22b466b1e0d2da9ca9cc009586df08316270c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794835"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581055"
 ---
 # <a name="pidtagprovideruid-canonical-property"></a>PidTagProviderUid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine **MAPIUID** Struktur des Dienstanbieters, der eine Nachricht behandelt wird. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROVIDER_UID  <br/> |
-|Bezeichner:  <br/> |0x300C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROVIDER_UID  <br/> |
+|Kennung:  <br/> |0x300C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von allen Dienstanbietern berechnet. Sie enthält eine [MAPIUID](mapiuid.md) Struktur zugeordnet und in der Regel hartcodierte vom Anbieter. Es wird in der Regel von einer Clientanwendung verwendet, die nur Address Book Container von einem bestimmten Anbieter bereitgestellt wird, interessiert ist. 
   

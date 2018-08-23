@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 23ae2473-8b0b-4c6c-80a7-09c9e7a1a27d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 51020bb0ec2b7096a43d98f9a2049a144a22c767
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bace0e7f4dcd5eaa56ab2f922e977338dd331daa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794915"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577359"
 ---
 # <a name="pidtagrecipiententryid-canonical-property"></a>PidTagRecipientEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Empfängers enthält 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECIPIENT_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x5FF7  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECIPIENT_ENTRYID  <br/> |
+|Kennung:  <br/> |0x5FF7  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    

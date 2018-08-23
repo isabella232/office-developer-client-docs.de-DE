@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ca06502c-884c-c1ad-d2c9-31f2b2b30ae5
 description: Diese Referenz enthält konzeptionelle Übersichten, Programmieraufgaben, Beispiele und Verweise als Leitfaden zur Entwicklung von Lösungen basierend auf Visio 2013.
-ms.openlocfilehash: 4c75623aa0f1fc248c3b1b2b8f1ba1a4d43acedd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7d379004aa420febeaea13925c03eaca90349fa7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798396"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579172"
 ---
 # <a name="visio-shapesheet-reference"></a>Visio-ShapeSheet-Referenz
 
@@ -34,14 +34,10 @@ Diese Dokumentation enthält die folgenden Abschnitte:
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Visio Developer Center](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
-    
-- [Accessibility in Microsoft Products (Barrierefreiheit in Microsoft-Produkten, in englischer Sprache)](http://www.microsoft.com/enable/products/default.aspx)
-    
-- [Konventionen für Office Developer-Dokumente](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
-    
+- [Visio Developer Center](http://msdn.microsoft.com/en-us/office/aa905478.aspx)    
+- [Barrierefreiheit in Microsoft-Produkten](http://www.microsoft.com/enable/products/default.aspx)    
+- [Konventionen in diesem Dokument](http://msdn.microsoft.com/en-us/office/aa905365.aspx)   
 - [Visio SDK copyright-Hinweis](visio-sdk-copyright-notice.md)
-    
-- [Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft](http://privacy.microsoft.com/en-us/default.mspx)
+
     
 

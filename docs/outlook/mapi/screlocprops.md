@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4aafb254-6074-4a7c-b915-d3d33304ac38
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 06590fe55cb02b1abf036156877fd308548436f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 241fac608552036e4706956cbe79524aaedacec9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795487"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576848"
 ---
 # <a name="screlocprops"></a>ScRelocProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Passt die Zeiger in ein Array [SPropValue](spropvalue.md) , nachdem das Array und seine Daten kopiert oder an einen neuen Speicherort verschoben wurde. 
   
@@ -75,7 +75,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Einer oder beide Parameter war ungültig oder eine unbekannte Eigenschaftentyp aufgetreten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion **ScRelocProps** wirkt sich auf der Annahme, die das Wertearray-Eigenschaft für das Zeiger angepasst werden in einem einzigen Aufruf ähnlich einem Aufruf der Funktion **ScCopyProps** ursprünglich belegt wurde. Wenn eine Clientanwendung oder Service Provider-Eigenschaft den Wert funktionsfähig ist, die aus getrennten Blöcke des Arbeitsspeichers erstellt wird, sollte [ScCopyProps](sccopyprops.md) zum Kopieren von Eigenschaften stattdessen verwendet werden. 
   

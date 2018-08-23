@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c7092375-c945-4f2a-94e0-6d969c6edd27
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ad0d148dd29ad634a420f405cea3b2582d1d8231
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 40acb94d01afc6b46d5857c5d299195ec90a1d53
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794005"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581496"
 ---
 # <a name="pidtagabdefaultdir-canonical-property"></a>PidTagAbDefaultDir (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID der Adressbuchcontainer zuerst angezeigt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AB_DEFAULT_DIR  <br/> |
-|Bezeichner:  <br/> |0x3D06  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AB_DEFAULT_DIR  <br/> |
+|Kennung:  <br/> |0x3D06  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

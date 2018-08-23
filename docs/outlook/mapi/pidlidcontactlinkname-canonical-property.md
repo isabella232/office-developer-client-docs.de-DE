@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7b9be1cd-e81e-42f3-b391-036afa2ae1b4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 13c10a84383c9c2f775a7579485536bfd63f9a93
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cd29ed24f155e3d39d367d677f3760b2aa12a18d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793483"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582378"
 ---
 # <a name="pidlidcontactlinkname-canonical-property"></a>PidLidContactLinkName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Elemente der **DispidContacts** ([PidLidContacts](pidlidcontacts-canonical-property.md))-Eigenschaft.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidContactLinkName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidContactLinkName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008586  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Elemente in der **DispidContactLinkName** -Eigenschaft durch ein Semikolon und ein Leerzeichen getrennt sind (";"). 
   

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: c1d70e9f-b9fc-7bdb-107e-d0cd8191607b
 description: Eine Formularvorlage, die Sie mit Microsoft InfoPath erstellen verwendet ein XML-Schema (XSD) strukturelle ausführen und die datenüberprüfung auf den XML-Code, die Eingabe des bearbeitet haben, und die Ausgabe von einem InfoPath-Formular. Jede Formularvorlage in InfoPath-Formular-Designer erstellten enthält mindestens eine XSD-Schemadatei (XSD), die für die Validierung zur Laufzeit verwendet wird.
-ms.openlocfilehash: 6921a2206c098992a0a24e85c263992a0e2c98b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6b19399e4f31f6270fa6f360a8428c725050ce16
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790861"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568273"
 ---
 # <a name="working-with-xml-schemas-in-infopath"></a>Arbeiten mit XML-Schemas in InfoPath
 
@@ -28,7 +28,7 @@ Befolgen Sie diese Schritte, um eine XSD-Schemadatei zu laden, die außerhalb vo
 
 1. Klicken Sie in der Backstage-Ansicht auf **neu**, klicken Sie unter **Erweiterte Formularvorlagen**auf **XML oder Schema** , und klicken Sie dann auf **Dieses Formular entwerfen**.
     
-2. Geben Sie im **Datenquellen-Assistent**die XSD-Schemadatei zu verwenden, und klicken Sie dann auf **Weiter** , und führen Sie die restlichen Seiten des Assistenten. 
+2. Geben Sie im **Datenquellen-Assistent** die XSD-Schemadatei an, die Sie verwenden möchten und klicken Sie dann auf **Weiter**, um die restlichen Seiten im Assistenten zu vervollständigen. 
     
 ## <a name="unsupported-xsd-constructs"></a>Nicht unterstützte XSD-Konstrukte
 
@@ -36,14 +36,14 @@ In folgenden abschnitten werden die XSD-Konstrukte behandelt, die InfoPath zur L
   
 ## <a name="entity-and-entities-types"></a>Die Typen ENTITY und ENTITIES
 
-Die Typen **ENTITY** und **ENTITIES** erfordern eine Dokument-Typ-Definition (DTD) für die Überprüfung, die InfoPath nicht unterstützt. InfoPath ist nicht zulässig, Entwerfen einer Formularvorlage gegen solche ein Schema und zeigt eine Fehlermeldung an, die empfiehlt **den Entitätstyp** in den **NCName** -Typ, der von dem **ENTITÄT** abgeleitet wird geändert. 
+Bei den Typen **ENTITY** und **ENTITIES** ist für die Validierung eine Dokumenttypdefinition erforderlich, die InfoPath nicht unterstützt. Mit InfoPath können Sie keine Formularvorlage mit solch einem Schema entwerfen, es zeigt dann eine Fehlermeldung an, in der Ihnen empfohlen wird, den **ENTITY**-Typ in **NCName**  zu ändern, aus dem **ENTITY** abgeleitet wird. 
   
 > [!NOTE]
->  Wenn Sie eine InfoPath-Formularvorlage außerhalb des Entwurfsmodus manuell verfassen und ein XSD-Schemas, die Typen **ENTITY** und **ENTITIES** verwendet, funktioniert die Formularvorlage zur Laufzeit enthält die Datei Template.xml die erforderliche DTD für diese Typen. 
+>  Wenn Sie eine InfoPath-Formularvorlage außerhalb des Entwurfsmodus verfassen und sie ein XSD verwendet, das die Typen **ENTITY** und **ENTITIES** enthält, funktioniert die Formularvorlage möglicherweise zur Laufzeit, wenn die Template.xml-Datei die erforderliche DTD fü diese Typen enthält. 
   
 ## <a name="required-xsdany-element"></a>Erforderliche xsd:beliebiges Element
 
-Ein Vorkommen von einer **Xsd: alle** Platzhalterelement, d. h., ein Vorkommen von einer **Xsd: alle** Element mit einem **MinOccurs** Attributwert größer als ("erforderlich NULL alle"), wird verhindert, dass InfoPath deterministisch erstellen eine gültige Instanz für Dieses Schemafragment. InfoPath muss eine gültige Instanz erstellen, wenn ein Formular zu generieren, die dieses Schemafragment verwendet werden. Im Rahmen der **Datenquellen-Assistent**ausgeführt, Schemas mit erforderlichen **Xsd: alle** Elemente erfordern, dass Sie die Schemaelement wählen Sie anstelle des erforderlichen verwenden möchten **Xsd: alle** Element. 
+Ein Vorkommen eines **xsd:any**-Platzhalterelements, also ein Vorkommen eines **xsd:any**-Elements mit einem **minOccurs**-Attributwert größer Null ("beliebige erforderlich“) verhindert, dass InfoPath deterministisch eine gültige Instanz für dieses Schemafragment erstellt. InfoPath muss in der Lage sein, beim Generieren eines Formulars eine gültige Instanz zu erstellen, die dieses Schemafragment verwendet. Als Teil der Ausführung des **Datenquellenassistenten** müssen Sie bei Schemas mit erforderlichen **xsd:any**-Elementen auswähle, welches Schemaelement Sie statt des erforderlichen **xsd:any**-Elements verwenden möchten. 
   
 ## <a name="elements-with-an-abstract-complex-type"></a>Elemente mit einem abstrakten komplexen Typ
 
@@ -55,7 +55,7 @@ In den folgenden Abschnitten werden XSD-Konstrukte beschrieben, die beim Verwend
   
 ## <a name="substitution-groups"></a>Ersatzgruppen
 
-Alle Mitglieder der Ersetzungsgruppe im Aufgabenbereich **Felder** angezeigt werden. InfoPath stellt die Ersetzung Möglichkeiten als eine Auswahl an alle (einschließlich definierenden Elements, falls noch nicht abstrakte) Ersetzungsgruppen dar. Wenn für ein abstraktes Element keine Ersetzungsgruppen vorhanden sind, fordert Sie InfoPath, ein Schema bereitzustellen, die mindestens ein Element enthält, das eine Ersetzungsgruppe ist. 
+Alle Elemente der Ersatzgruppen werden im Aufgabenbereich **Felder** angezeigt. InfoPath stellt die Ersatzmöglichkeiten als Auswahl aller Ersatzgruppen bereit (einschließlich des definierenden Elements, wenn es nicht abstrakt ist). Wenn für ein abstraktes Element keine Ersatzgruppen vorhanden sind, fordert Sie InfoPath dazu auf, ein Schema anzugeben, das mindestens ein Element enthält, bei dem es sich um eine Ersatzgruppe handelt. 
   
 ## <a name="unbounded-choice-elements"></a>Nicht gebundene Auswahlelemente
 
@@ -69,7 +69,7 @@ Das folgende Schemafragment zeigt ein nicht gebundenes Auswahlelement:
 
 ```
 
-InfoPath zeigt wiederholt auftretende Auswahlelemente als wiederholte Auswahl im Aufgabenbereich **Felder** . Es gibt eine **Wiederholte Auswahlgruppe** -Steuerelement, mit denen Sie die heterogene vom wiederholten Choice-Element in der XSD-definierte Liste darstellen. 
+InfoPath zeigt sich wiederholende Auswahlelemente als wiederholte Auswahlen im Aufgabenbereich **Felder** an. Es gibt ein **Wiederholte Auswahlgruppe**-Steuerelement, das Sie zum Darstellen der heterogenen Liste verwenden können, die vom wiederholten Auswahlelement in der XSD definiert wird. 
   
 ## <a name="repeating-sequence"></a>Wiederholte Sequenz
 
@@ -100,7 +100,7 @@ Folgendes Schemafragement zeigt das Auswahlelement, das mehrere Modellgruppen en
 
 ```
 
-InfoPath-Entwurfsmodus unterstützt solche XSD-Konstrukte ohne jede Änderung durch den Formular-Designer. Während die Bedeutung des Schemas in InfoPath nicht geändert wird, wird in eine entsprechende reduzierten Einfachauswahl im Aufgabenbereich **Felder** Choice-Konstrukt oben vereinfacht. 
+Der InfoPath-Entwurfsmodus unterstützt diese XSD-Konstrukte, ohne dass eine Anpassung durch den Formulardesigner erforderlich ist. Obwohl InfoPath die Bedeutung des Schemas nicht anpasst, vereinfacht es das Auswahlkonstrukt oben in einer equivalenten reduzierten einzelnen Auswahl im Aufgabenbereich **Felder**. 
   
 ## <a name="optional-sibling-with-same-qualified-name"></a>Optionales gleichgeordnetes Element mit dem gleichen qualifizierten Namen
 
@@ -115,7 +115,7 @@ Das folgende Schemafragment zeigt einen optionalen gleichgeordneten Knoten mit d
 
 ```
 
-**XPath-** Ausdrücke für diese Knoten können komplex sein, da jede potenzielle XML-Instanz in der InfoPath-Formulardesigner berücksichtigt werden muss. InfoPath macht nicht Teile des Schemas für die dabei Probleme beim Erstellen der richtigen **XPath** -Bindungen auftreten können. Warnungen angezeigt werden, über die Teile des Schemas, die ignoriert werden. 
+**XPath**-Ausdrücke für diese Knoten können komplex sein, da jede potenzielle XML-Instanz im InfoPath-Formulardesigner berücksichtigt werden muss. InfoPath macht keine Teile des Schemas verfügbar, bei denen beim Erstellen der korrekten **XPath**-Bindungen Schwierigkeiten auftreten können. Es werden Warnungen zu den Teilen des Schemas angezeigt, die ignoriert werden. 
   
 ## <a name="xsd-constructs-with-special-meaning-in-infopath"></a>XSD-Konstrukte in InfoPath mit besonderer Bedeutung
 
@@ -123,7 +123,7 @@ In den folgenden Abschnitten werden XSD-Konstrukte beschrieben, die beim Erstell
   
 ## <a name="adding-new-element-fields-and-groups-with-the-fields-task-pane"></a>Hinzufügen neuer Elementfelder und Gruppen mit dem Aufgabenbereich "Felder"
 
-Sie können das Schema, damit Sie im Aufgabenbereich **Felder** verwenden können, zum Hinzufügen neuer Elementfelder und Gruppen auf ein Element zur Entwurfszeit erstellen. Dazu deklarieren Sie ein Element in Ihrem Schema mit einem optionalen unbegrenzt **Xsd: alle** -Element, das das Namespace-Attribut mit gibt die **## any** Platzhalter. Klicken Sie dann im Entwurfsmodus können im Aufgabenbereich **Felder** Sie dieses Element Hinzufügen neuer Elementfelder und Gruppen. Beispielsweise können Sie neuen Inhalte auf das folgende Element hinzufügen: 
+Sie können Ihr Schema so erstellen, dass Sie den Aufgabenbereich **Felder** zum Hinzufügen neuer Elementfelder und Gruppen zu einem Element zur Entwurfszeit verwenden können. Deklarieren Sie dazu ein Element in Ihrem Schema mit einem optionalen, nicht gebundenen **xsd:any**-Element, das das Namespace-Attribut mit dem **##any**-Platzhalter angibt. Im Entwurfsmodus können Sie anschließend den Aufgabenbereich **Felder** verwenden, um dem Element neue Elementfelder und Gruppen hinzuzufügen. Sie können beispielsweise folgendem Element neue Inhalte hinzufügen: 
   
 ```XML
 <xsd:element name="open"> 
@@ -138,7 +138,7 @@ Sie können das Schema, damit Sie im Aufgabenbereich **Felder** verwenden könne
 
 ## <a name="adding-new-attribute-fields-with-the-fields-task-pane"></a>Hinzufügen neuer Attributfelder mit dem Aufgabenbereich "Felder"
 
-Deklarieren Sie entsprechend der Anfrage Element ein Attribut mit einer **AnyAttribute** -Element, das das Namespace-Attribut als angegeben hat die **## any** Platzhalter. Der Aufgabenbereich " **Felder** " können Sie zur Entwurfszeit neuen Inhalt hinzuzufügen, um das Schemaattribut. 
+Ähnlich wie bei dem Elementfall können Sie ein Attribut mit einem **anyAttribute**-Element deklarieren, bei dem das Namespace-Attribut als **##any**-Platzhalter angegeben ist. Zur Entwurfszeit können Sie den Aufgabenbereich **Felder** verwenden, um dem Schemaattribut neue Inhalte hinzuzufügen. 
   
 ```XML
 <xsd:element name="open"> 
@@ -167,7 +167,7 @@ Um Benutzern zum digitalen Signieren ein Formulars zur Laufzeit zu ermöglichen,
 
 ## <a name="binding-a-field-to-a-rich-text-box-control"></a>Binden eines Felds an ein Rich-Text-Steuerelement
 
- **Feld für Rich-Text** -Steuerelemente in InfoPath allgemeine XHTML zu generieren. aus diesem Grund muss im Schema angegeben, dass eine beliebige Anzahl von Text und XHTML-Knoten in der XML-Code der Formularinstanz gültig ist. Sie können diese Spezifikation mit dem folgenden XSD-Konstrukt erreichen: 
+ **Rich-Text-Feld**-Steuerelemente in InfoPath generieren generische XHTML; deshalb muss Ihr Schema angeben, dass eine beliebige Anzahl von Texten und XHTML-Knoten im XML der Formularinstanz gültig ist. Sie können diese Spezifikation mit folgendem XSD-Konstrukt erreichen: 
   
 ```XML
 <xsd:element name="xhtml"> 
@@ -185,7 +185,7 @@ Um Benutzern zum digitalen Signieren ein Formulars zur Laufzeit zu ermöglichen,
   
 ## <a name="debugging-common-xsd-errors"></a>Debuggen häufiger XSD-Fehler
 
-Wenn Sie extern verfasste XSD-Dateien zum Erstellen von Formularvorlagen in InfoPath-Formulardesigner laden, erhalten Sie zwei Arten von Fehlermeldungen: MSXML Fehlermeldungen oder InfoPath-Fehlermeldungen. MSXML-Fehlermeldungen in den Abschnitt **Details** im Dialogfeld eine InfoPath Fehlermeldung angezeigt werden, und beginnen sie immer mit einem Verweis auf den Namen oder den Pfad der Schemadatei, die den Fehler auslöst. Einige gültige Schema XSD-Konstrukte werden von InfoPath nicht unterstützt. Diese werden im Abschnitt nicht unterstützte XSD-Konstrukte beschrieben. Den folgenden Abschnitten werden einige häufige Fehler, die Schemas nicht erfolgreich in InfoPath geladen verursachen können. 
+Wenn Sie extern verfasste XSD-Dateien zum Erstellen von Formularvorlagen im InfoPath-Formulardesigner laden, erhalten Sie möglicherweise eine von zwei Fehlermeldungstypen: MSXML-Fehlermeldungen oder InfoPath-Fehlermeldungen. MSXML-Fehlermeldungen werden im Bereich **Details** eines Dialogfelds einer InfoPath-Fehlermeldung angezeigt, sie beginnen immer mit einem Verweis zu dem Namen oder Pfad der Schemadatei, die den Fehler auslöst. Einige gültige XSD-Schemakonstrukte werden von InfoPath nicht unterstützt; diese werden im Abschnitt "Nicht unterstützte XSD-Konstrukte" behandeltn. In den folgenden Abschnitten werden einige häufige Fehler beschrieben, durch die beim Laden von Schemas in InfoPath ein Fehler erzeugt wird. 
   
 ## <a name="the-xsd-namespace-declaration"></a>Die XSD-Namespace-Deklaration
 
@@ -201,7 +201,7 @@ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   
 ## <a name="importing-and-including-schemas"></a>Importieren und Aufnehmen von Schemas
 
-XSD-Schemas können sind erweiterbar und importieren und andere Schemas enthalten. Im Allgemeinen sollten Sie ein Schema importieren, falls das Schema das **TargetNamespace** -Attribut angegebene aus dem aktuellen Schema abweicht. Sie sollten es aufnehmen, wenn das Schema das **TargetNamespace** -Attribut angegeben identisch mit dem aktuellen Schema ist. 
+XSD-Schemas können erweitert werden und können andere Schemas importieren sowie aufnehmen. Allgemein kann man sagen, Sie sollten ein Schema importieren, wenn das im **targetNamespace**-Attribut angegebene Schema vom aktuellen Schema abweicht. Sie sollten es aufnehmen, wenn das im **targetNamespace**-Attribut angegebene Schema dem aktuellen Schema entspricht. 
   
 Die Semantik zum Importieren und Aufnehmen von Schemas lautet wie folgt:
   
@@ -211,12 +211,12 @@ Die Semantik zum Importieren und Aufnehmen von Schemas lautet wie folgt:
 
 ```
 
-Wenn das **SchemaLocation** -Attribut ist nicht vorhanden (wie bei bestimmten Konvertern vorkommen), und klicken Sie dann MSXML einen Fehler erzeugt, weil die Datei nicht gefunden werden kann. Wenn dieser Fehler auftritt, überprüfen Sie auch, um sicherzustellen, dass die Ressource oder den Speicherort im SchemaLocation-Attribut angegebene von Benutzern der Formularvorlage zugegriffen werden kann. Natürlich treten Fehler auf, wenn das **SchemaLocation** -Attribut verweist auf einen Server oder das Verzeichnis an, das nach unten oder nicht vorhanden ist oder wenn der Benutzer keine Zugriffsberechtigungen besitzen. Darüber hinaus müssen Sie überprüfen Sie alle importierten und enthalten Schemas, um sicherzustellen, dass sie gültig sind. 
+Wenn das **schemaLocation**-Attribut fehlt (wie es bei einigen Konvertern vorkommt), löst MSXML einen Fehler aus, da es die Datei nicht finden kann. Wenn Sie diesen Fehler erhalten, stellen Sie außerdem sicher, dass die Ressource oder der Speicherort, der im schemaLocation-Attribut angegeben ist, für Benutzer der Formularvorlage zugänglich ist. Offenbar treten Fehler auf, wenn das **schemaLocation**-Attribut auf einen Server oder ein Verzeichnis verweist, der ausgefallen oder nicht vorhanden ist oder wenn Benutzer darauf keine Zugriffsberechtigungen besitzen. Untersuchen Sie außerdem alle importierten und aufgenommenen Schemas, um sicherzustellen, dass sie gültig sind. 
   
 > [!NOTE]
-> Fehler aufgrund von Problemen mit dem **SchemaLocation** -Attribut sind ein Problem nur bei InfoPath zuerst die Schemas importiert. d. h., wenn Sie sich entschieden basierend auf einem vorhandenen Schema ein Formular entwerfen. Anschließend verwendet InfoPath mit den zwischengespeicherten Versionen der Schemadateien, die in der Formularvorlage gespeichert sind. 
+> Von Problemen mit dem **schemaLocation**-Attribut verursachte Probleme sind nur ein Problem, wenn InfoPath zunächst die Schemas importiert; also wenn Sie zunächst ein Formular auf Grundlage eines vorhandenen Schemas entwerfen. Anschließend arbeitet InfoPath mit zwischengespeicherten Versionen der Schemadateien, die in der Formularvorlage gespeichert sind. 
   
-Ein leerer Namespace-Attribut ist zulässig, wenn ein Schema importiert wird, wenn dieses Schema keine **TargetNamespace** -Attribut angegeben wird. Im Allgemeinen muss der Namespace auf den Import der angegebenen im Schema **TargetNamespace** übereinstimmen, die Sie importieren. 
+Beim Import eines Schemas ist ein Namespace-Attribut zulässig, wenn das Schema kein **targetNamespace**-Attribut angibt. Allgemein lässt sich sagen, dass der Namespace beim Import mit dem im Schema angegebenen **targetNamespace** übereinstimmen muss, das Sie importieren. 
   
 ## <a name="nondeterministic-schemas"></a>Nicht deterministische Schemas
 
@@ -262,7 +262,7 @@ In diesem XML-Fragment, es ist nicht klar, ob die * \<Dateipfad\> * Element des 
     
 Einige XSD-Validierungssysteme validieren mit diesem Schema, da es einen gültigen Pfad gibt. MSXML ist strenger und löst einen Fehler aus, in dem angegeben ist,dass das Schema nicht deterministisch ist.
   
-Im folgenden sind einige weitere Beispiele für nicht deterministische Schemas. Die erste befasst sich mit optionalen Elemente. Diese Fälle treten häufig von XDR zu XSD-Konvertern aufgrund von Unterschieden bei der Standardkardinalität zwei verschiedene Sprachen. Die erste Groß-/Kleinschreibung berücksichtigt werden die optionalen Elemente mit **xsd: choice** und **xsd: Sequence** -Element deklariert. Optionalen Elemente in der Regel in einem **xsd: Sequence** -Element deklariert werden, solange Sie Elemente mit dem gleichen Namen nur einmal nur optionale Elemente dazwischen keine ordnungsgemäß überprüft. Beispiel: 
+Darauf folgenden einige Beispiele von nicht deterministischen Schemas. Das erste behandelt optionale Elemente. Diese Fälle treten oft bei XDR-zu-XSD-Konvertern auf, da Unterschiede in den Standard-Kardinalitäten in den beiden Schemasprachen vorliegen. Der erste zu berücksichtigende Fall sind optional deklarierte Elemente mit **xsd:choice**- und **xsd:sequence**-Elementen. Optionale in einem **xsd:sequence**-Element deklarierte Elemente können in der Regel ordnungsgemäß deklariert werden, so lange Sie Elemente mit dem gleichen Namen nicht mehrmals besitzen, und nur optionale Elemente dazwischen. Beispiel: 
   
 ```XML
 <xsd:element name="container"> 
@@ -302,7 +302,7 @@ Gehen wir nun davon aus, Sie müssen folgende XML-Instanz validieren:
 
 Die Herausforderung besteht darin, zu bestimmen, ob diese Instanz gültig ist. Haben Sie zwei `<aNode>` Elemente, in dem nur eines zulässig ist, oder verfügen Sie über, ein `<aNode>` -Element, in dem es zulässig ist, und eine andere Position zulässig? Das Schema ist nicht deterministisch, da es nicht möglich ist, kennen. 
   
-In ähnlicher Weise sind optional Elemente in einem **xsd: choice** -Element deklariert in der Regel problematisch. Im folgenden Beispiel vereinfachte besteht keine Möglichkeit zu bestimmen, ob die Wahl aufgetreten ist, nachdem mit dem optionalen Element nicht vorhanden war oder ob es nie überhaupt aufgetreten ist. 
+Optionale in einem **xsd:choice**-Element deklarierte Elementen sind in der Regel problematisch. Im folgenden vereinfachten Beispiel gibt es keine Möglichkeit zu ermitteln, ob die Auswahl einmal mit dem nicht vorhandenen optionalen Element auftrat, oder es nie auftrat. 
   
 ```XML
 <xsd:choice> 
@@ -341,7 +341,7 @@ XSD-Schemas führen in der Regel keine Typenvalidierung durch, bis Sie ein tats�
 
 ```
 
-Mit diesem Schema ist ungültig, da "Eleven O' Clock" kein gültiger Wert für ein Element vom Typ **xsd: Time**ist.
+Dieses Schema ist ungültig, da "elf Uhr" kein gültiger Wert für ein Element des Typs **xsd:time** ist.
   
 Im Folgenden ein komplexeres Beispiel:
   
@@ -356,13 +356,13 @@ Im Folgenden ein komplexeres Beispiel:
 
 ```
 
-Um zu verstehen, warum dieses Beispiel ungültig ist, müssen Sie verstehen, wie der Typ **xsd: NMTOKEN** definiert ist. Angabe der W3C Typen den Typ **NMTOKEN** wie folgt definiert: "Ein NMTOKEN (Namenstoken) ist eine beliebige Kombination aus Namenszeichen." 
+Um zu verstehen, warum dieses Beispiel ungültig ist, müssen Sie verstehen, wie der Typ **xsd:NMTOKEN** definiert ist. Die W3C-Datentypenspezifikation definiert den **NMTOKEN**-Typ wie folgt: "Ein NMTOKEN (Namenstoken) ist eine beliebige Mischung von Namenszeichen." 
   
-Wenn Sie weiter zu untersuchen, Sie zu suchen, die "&" ist kein gültiger Namenszeichen, und daher "M & Ms" überprüft nicht als Typ **NMTOKEN** . 
+Wenn Sie den Fall weiter untersuchen, werden Sie herausfinden, dass '&' kein gültiges Namenszeichen ist und deshalb kann "M&Ms" nicht als **NMTOKEN**-Typ validiert werden. 
   
 ## <a name="empty-sequence-or-choice-elements"></a>Leere Sequenz oder Auswahlelemente
 
-MSXML löst manchmal Fehler zu Schemadeklarationen, die leere **xsd: choice** oder **xsd: Sequence** -Elemente enthalten, wie im folgenden Beispiel dargestellt. 
+MSXML löst in manchen Fällen Fehler zu Schemadeklarationen aus, die leere  **xsd:choice**- oder **xsd:sequence**-Elemente enthalten, siehe folgendes Beispiel. 
   
 ```XML
 <xsd:element name="emptyContainer"> 
@@ -440,7 +440,7 @@ Mit diesem Schema ist ungültig, da im Namespace "global" ist "http://ns". Das e
 
 ```
 
-Wenn Ihr Schema das **TargetNamespace** -Attribut angegeben ist, stellen Sie sicher, dass alle globalen Verweise mit dem richtigen Namespacepräfix qualifiziert sind. 
+Wenn bei Ihrem Schema das **targetNamespace**-Attribut angegeben ist, vergewissern Sie sich, dass alle globalen Verweise mit dem korrekten Namespace-Präfix qualifiziert werden. 
   
 ## <a name="xml-processing-instruction-encoding-unicode-vs-ansii"></a>XML-Verarbeitungsanweisungscodierung (Unicode vs. ANSII)
 
@@ -450,11 +450,11 @@ XML unterstützt nur Unicode-Zeichensätze. Deshalb gehen Ihnen möglicherweise 
 xml version="1.0" encoding="UTF-8"
 ```
 
-Dieses Tag der Verarbeitung der Anweisung gibt an, dass die Codierung der Datei UTF-8 ist. Sie müssen sicherstellen, dass die dateicodierung identisch ist, wie die Codierung in der Verarbeitung der Anweisung Tag angegeben. Sie können bestimmen, die Codierung durch Überprüfen der Bytes der Datei und suchen Sie nach den Unicode-Byte-Reihenfolge eingeben. Es gibt aber einfacher. Wenn Sie Probleme beim Öffnen eines XSD-Schemas haben, geben Sie die Codierung als "UTF-8", öffnen Sie es in einem Text-Editor wie Editor, und speichern Sie die Datei mit UTF-8-Codierung (Editor bietet im Dialogfeld **Speichern unter** in der Dropdownliste **Codierung** ). Wenn Sie immer noch Probleme beim Öffnen der Datei haben, ist es kein Problem Codierung. 
+Dieses Verarbeitsungsanweisungstag gibt die an, dass die Codierung der Datei UTF-8 lautet. Sie müssen sich vergewissern, dass die Dateicodierung der Codierung entspricht, die im Verarbeitungsanweisungstag angegeben ist. Sie können die Codierung ermitteln, indem Sie sich die Bytes der Datei und das Unicode-Byte der Reihenfolgemarken ansehen. Es geht jedoch auch noch einfacher. Wenn Sie Probleme mit dem Öffnen eines XSD-Schemas haben, geben Sie die Codierung als "UTF-8" an, öffnen Sie es in einem Text-Editor (z. B. Notepad) und speichern Sie die Datei dann mit der UTF-8-Codierung ab (Notepad stellt im Dialogfeld**Speichern unter**  die Dropdownliste **Codierung** bereit). Wenn Sie dennoch Probleme mit dem Öffnen der Datei haben, handelt es sich nicht um ein Codierungsproblem. 
   
 ## <a name="maxoccurs-attribute-inside-the-xsdall-element"></a>maxOccurs-Attribut im xsd:all-Element
 
-Aufgrund der Art, in der XML-Schema-Empfehlung Nondeterminism definiert ist, ist der einzige gültige Wert für das **MaxOccurs** -Attribut eines Elements in einem Element **xsd: all** **xsd: Element** 1. Die folgende Anweisung ist beispielsweise gültig. 
+Aufgrund der Art und Weise wie nicht deterministisch in der XML-Schemaempfehlung definiert ist, lautet der einzige gültige Wert für das **maxOccurs**-Attribut eines **xsd:element**-Elements in einem **xsd:all**-Element 1. Der folgende Wert ist beispielsweise gültig. 
   
 ```XML
 <xsd:all> 
@@ -532,8 +532,8 @@ Durch die Nutzung der InfoPath-Unterstützung zum Entwerden von XML-Formularlös
 
 - [W3C-XML-Schema](http://www.w3.org/XML/Schema)
 - [Einführung in W3C XML-Schema](http://www.w3.org/TR/xmlschema-0/)
-- [W3C XML-Schemareferenz Strukturen](http://www.xml.com/pub/a/2000/11/29/schemas/structuresref.mdl)
-- [W3C XML-Schemareferenz für Datentypen](http://www.xml.com/pub/a/2000/11/29/schemas/dataref.mdl)
-- [XML-Schema-Lernprogramm](http://www.w3schools.com/schema/default.asp)
+- [W3C XML-Schemareferenz Strukturen](https://www.xml.com/pub/a/2000/11/29/schemas/structuresref.html)
+- [W3C XML-Schemareferenz für Datentypen](https://www.xml.com/pub/a/2000/11/29/schemas/dataref.html)
+- [XML-Schema-Lernprogramm](https://www.w3schools.com/xml/schema_intro.asp)
 - [XML Developer Center](http://msdn.microsoft.com/en-us/xml/default.aspx)
 

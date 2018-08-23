@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a8548040-13ed-4a9f-a7ca-de610f94d7df
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 177fe21537e921a4b94a34ad531847701b16c344
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e17306e2b90f26dcef0a0214e78080fe78752e5f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791481"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568567"
 ---
 # <a name="creating-display-tables-and-related-structures"></a>Erstellen von Tabellen anzeigen und verwandte Strukturen
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellen einer Tabelle anzeigen ähnelt dem Schreiben eines Programms mit einer Skriptsprache. Sie können eine Tabelle anzeigen, entweder durch Aufrufen von [BuildDisplayTable](builddisplaytable.md) oder Schreiben von benutzerdefiniertem Code zum Auffüllen der Zeilen und Spalten der Tabelle auf erstellen. Im Allgemeinen verwenden Sie das Verfahren **BuildDisplayTable** , da es einfacher ist. 
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 18324a5d-aedc-4456-b2f0-6bc42b6ab882
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c274fb58b8c5c0229c830200768d083dcdcf282d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5c49f119dd03e13439193c92168638c565074ee9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794232"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578458"
 ---
 # <a name="pidtagcontentconfidentialityalgorithmid-canonical-property"></a>PidTagContentConfidentialityAlgorithmId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Bezeichner für den Algorithmus verwendet, um Inhalt Vertraulichkeit Nachricht bestätigen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTENT_CONFIDENTIALITY_ALGORITHM_ID  <br/> |
-|Bezeichner:  <br/> |0 x 0006  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTENT_CONFIDENTIALITY_ALGORITHM_ID  <br/> |
+|Kennung:  <br/> |0 x 0006  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    

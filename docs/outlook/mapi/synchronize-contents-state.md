@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 52216bc3-8cbd-3856-ea46-78f7d0dd66ff
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 216691f2c1f94d658a5aa968d6a19148a9b3c06a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a2bdbeb39cce1e62569f364875c3828cdd530c63
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795688"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577247"
 ---
 # <a name="synchronize-contents-state"></a>Status „Inhalts synchronisieren“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, was geschieht, während die Synchronize Inhalt Zustand des Computers Zustand Replikation. 
   
@@ -53,5 +53,5 @@ Wenn dieser Status beendet wird, bereinigt Outlook internen Informationen. Der l
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCSTATE](syncstate.md)
+[SYNCHRONISIERUNGSSTATUS](syncstate.md)
 

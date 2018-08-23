@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ad2e1f2d-57c3-4fb5-9e0f-db51640df84d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cf30d38efa7ab2d579746cca6add2aad8d4963f5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 12fb03ed5a165592113f49a202f777b0f301736d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792947"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568756"
 ---
 # <a name="mapi-client-application-overview"></a>Übersicht über die MAPI-Client-Anwendung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine MAPI-Client-Anwendung ist eine Anwendung, die die MAPI-Programmierschnittstelle verwendet. Clientanwendungen implementieren messaging Aufgaben entweder als ihren primären oder sekundären Fokus. Messaging-Clientanwendungen, wie Anwendungen, die senden und Empfangen von e-Mails, die Implementierung der Nachrichtenübermittlung als ihre primäre Fokus. Für nicht-messaging-Clientanwendungen wie Inventar oder Konfiguration Applikationen ist messaging eines sekundären Features.
   
@@ -31,5 +31,5 @@ Clientanwendungen können entweder den Benutzer zum Erstellen einer interaktiven
 
 
 
-[MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+[MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

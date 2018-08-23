@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: aec4d328-c192-4672-a478-b08442352794
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2eb1f0a517b430f2c96161e94faa22ec4d67ac41
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 97986215a2280d64a7affa817e81d66e4fb82817
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793948"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577765"
 ---
 # <a name="pidnameaudionotes-canonical-property"></a>PidNameAudioNotes (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Notizen in Textform, die eine Sprachnachricht angefügt sind.
   
@@ -35,7 +35,7 @@ Gibt die Notizen in Textform, die eine Sprachnachricht angefügt sind.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Unified messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um ein Endbenutzer zum Lesen und Bearbeiten von Audionotizen direkt auf einer Sprachnachricht zu ermöglichen, bietet ein Client ein Bearbeitungsfeld, in dem der Benutzer eine Reihe von Notizen eingeben kann, die diese Eigenschaft des VoIP-Message-Objekts hinzugefügt werden.
   

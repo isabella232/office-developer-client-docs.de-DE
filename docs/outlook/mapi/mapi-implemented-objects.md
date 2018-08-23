@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5d07c259-0ceb-4ea5-98b4-b01720edfe2a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fe5549e41008dbf5b5f50f9f32769f1a820e3bc0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d212a86aae0503a5e02a5a7ecddb83db10a4d664
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793009"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572375"
 ---
 # <a name="mapi-implemented-objects"></a>MAPI implementierte Objekte
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI implementierte mehrere Objekte für die Verwendung durch Clientanwendungen und -Dienstanbieter. Session-Objekt ermöglicht Clients Sitzung Services, Zugriff auf Tabellen und zur Kommunikation mit-Dienstanbieter verwenden. Das Address Book-Objekt stellt Clients integrierte Zugriff auf alle der verschiedenen adressbuchanbietern implementierte. 
   
@@ -39,7 +39,7 @@ In der folgenden Tabelle werden den Zweck für jedes Objekt, das MAPI implementi
 |Profilabschnitt  <br/> |Ein Teil eines Profils verwendet, um eine bestimmte Nachricht-Dienst oder den Dienstanbieter beschreiben.  <br/> |
 |Eigenschaftendaten  <br/> |Wird der Zugriff auf Eigenschaften, und hilft Ihnen **IMAPIProp**implementieren.  <br/> |
 |Des Anbieters für  <br/> |Bietet Zugriff auf Informationen zu Anbietern für die Konfiguration.  <br/> |
-|Session  <br/> |Stellt eine Verbindung mit der zugrunde liegenden messaging-Systeme und bietet Zugriff auf Ressourcen von MAPI-Clients.  <br/> |
+|Sitzung  <br/> |Stellt eine Verbindung mit der zugrunde liegenden messaging-Systeme und bietet Zugriff auf Ressourcen von MAPI-Clients.  <br/> |
 |Status  <br/> |Bietet Zugriff auf den Status des MAPI-Subsystems, Adressbuch oder die MAPI-Warteschlange.  <br/> |
 |Support  <br/> |Hilft Dienstanbieter Clientanforderungen.  <br/> |
 |Tabelle  <br/> |Bietet Zugriff auf eine Zusammenfassungsansicht der Objektdaten Zeile und Spalte, ähnlich wie in in einer Datenbanktabelle.  <br/> |

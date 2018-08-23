@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 714f99e2-80fc-4785-b707-611d8a6c229f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 30f5e0b59bacfab91a3a6c77c0b345d6299df9e5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 038c13d24f3d797f7a4f8f9b7692240ce8004b74
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795311"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580334"
 ---
 # <a name="property-entries-in-mapisvcinf-message-service-sections"></a>Eigenschafteneinträge in den Nachrichtendienstabschnitten von MapiSvc.inf
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Verwenden Sie dieses Format Einträge, die Eigenschaften festlegen:
   

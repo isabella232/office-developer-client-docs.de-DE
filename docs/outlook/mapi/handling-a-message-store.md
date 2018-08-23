@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7eca0e1f-a855-4ef7-b892-0bddee59de5e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f915a17b8271f7ec4173f507504bf165a6084085
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0712407a7882c449c065cb6816694b4a1611036f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791811"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568469"
 ---
 # <a name="handling-a-message-store"></a>Behandeln eines Nachrichtenspeichers
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Behandeln eines Nachrichtenspeichers stellen einen wichtigen Bestandteil des Clients Reihe von Aufgaben. Diese Aufgaben umfassen das Öffnen, kopieren, verschieben, hinzufügen und Löschen von Ordnern und Nachrichten, Anzeigen von verschiedenen Tabellen, Festlegen von Eigenschaften und Zugriffsebenen steuern.
 

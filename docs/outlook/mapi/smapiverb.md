@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 45066528-2447-4178-aaa3-7513ed0b3ba4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4d060d62deb685b4691846c2b8e48a82ae3195ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 11f11ae2d90a951a119895f3e0e3e3ca0dbc0fc5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795599"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573698"
 ---
 # <a name="smapiverb"></a>SMAPIVerb
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt ein MAPI-Verb an.
   
@@ -69,7 +69,7 @@ PARAMETER MAPI_UNICODE
   
 > Der Anzeigename ist im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist der Anzeigename im ANSI-Format.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur **SMAPIVerb** wird als Parameter in der folgenden Methoden übergeben: 
   

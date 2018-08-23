@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 14a4c123-776d-4a32-9688-8a4402dd1f53
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 30099e9fe645f810e08ba331717cff975f69b313
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 51c88e8c062a409db305e893b82f43d8c8ac7094
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791567"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580796"
 ---
 # <a name="displaying-a-folder-contents-table"></a>Anzeigen einer Tabelle der Ordner-Inhalt
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Inhaltstabelle eines Ordners enthält zusammenfassende Informationen zu allen Nachrichten. Zusammenfassende Informationen zu neuen eingehenden Nachrichten in der Inhaltstabelle des Ordners "empfangen" für die Nachrichtenklasse wird angezeigt. Um diese Informationen für Benutzer verfügbar machen, Abrufen der Tabelle und die Spalten und Zeilen nach Bedarf angezeigt.
   

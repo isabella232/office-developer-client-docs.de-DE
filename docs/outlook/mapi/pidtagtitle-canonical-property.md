@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f35bbcc3-15dd-40ab-9bf4-bdb21f95d464
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 825922bec95a24fe718cdb7db82851a820c364ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c19a757b8adf474a3624f90a7cf19cc2308fa0d0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795250"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582266"
 ---
 # <a name="pidtagtitle-canonical-property"></a>PidTagTitle (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Position des Empfängers.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TITLE, PR_TITLE_A, PR_TITLE_W  <br/> |
-|Bezeichner:  <br/> |0x3A17  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TITLE, PR_TITLE_A, PR_TITLE_W  <br/> |
+|Kennung:  <br/> |0x3A17  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

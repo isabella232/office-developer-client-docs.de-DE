@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 85d1c44d-caab-48dc-a6a0-ad201cc365f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fab644eee8b535efe3b83bfbcaaa4f7ec5cb2aa7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1abbcabcc360eee5eb3f3db3a37bdf9aa3339080
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794264"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568476"
 ---
 # <a name="pidtagcustomerid-canonical-property"></a>PidTagCustomerId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Kunden-ID-Nummer des Kontakts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CUSTOMER_ID, PR_CUSTOMER_ID_A, PR_CUSTOMER_ID_W  <br/> |
-|Bezeichner:  <br/> |0x3A4A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CUSTOMER_ID, PR_CUSTOMER_ID_A, PR_CUSTOMER_ID_W  <br/> |
+|Kennung:  <br/> |0x3A4A  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Inhalt dieser Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

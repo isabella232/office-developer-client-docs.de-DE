@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 38fe217d-cf2e-51de-c97a-acb015129fd3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6fe59bf837d6123e5655e853531d6ab53393af91
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6ac54e5a17c17ea36ededd311d55c52ece0c184e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795125"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572606"
 ---
 # <a name="pidtagsearchrecipientemailcc-canonical-property"></a>PidTagSearchRecipientEmailCc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Unicode-Zeichenfolge, die in der Liste der e-Mail-Adressen oder Anzeigenamen der Empfänger an, die in der Zeile **CC** der Nachrichten im Store behandelt werden abgefragt wird. 
   
@@ -27,8 +27,8 @@ Enthält eine Unicode-Zeichenfolge, die in der Liste der e-Mail-Adressen oder An
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_RECIP_EMAIL_CC_W  <br/> |
-|Bezeichner:  <br/> |0x0EA7  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_RECIP_EMAIL_CC_W  <br/> |
+|Kennung:  <br/> |0x0EA7  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    

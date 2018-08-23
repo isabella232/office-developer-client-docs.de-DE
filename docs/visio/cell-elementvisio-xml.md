@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3131bfbb-9bf6-d15d-c6ca-2f15bd038f39
 description: Gibt die Zellenelemente, die innerhalb einer DocumentSheet, StyleSheet, PageSheet oder ShapeSheet enthalten sein können.
-ms.openlocfilehash: fb983b31dc69741b12c27f47833213f7b5c3ba2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 68ea20f3b2a9bebae3d8f6d12e0d818e30685710
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796664"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575630"
 ---
 # <a name="cell-element-visio-xml"></a>Zellenelement ("Visio XML")
 
 Gibt die Zellenelemente, die innerhalb einer DocumentSheet, StyleSheet, PageSheet oder ShapeSheet enthalten sein können.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
@@ -62,7 +62,7 @@ Gibt die Zellenelemente, die innerhalb einer DocumentSheet, StyleSheet, PageShee
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der **ShapeSheet** -Zelle.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -149,7 +149,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |EndArrowSize  <br/> |Bestimmt die Pfeilspitzengröße am Linienende.  <br/> |[Zelle "EndArrowSize" (Abschnitt "Line Format")](endarrowsize-cell-line-format-section.md) <br/> |
 |EndTrigger  <br/> |Enthält eine von der Anwendung generierte Triggerformel, die festlegt, ob der Endpunkt eines 1D-Shapes zur Aufrechterhaltung seiner Verbindung zu einem anderen Shape verschoben werden soll.  <br/> |[Zelle "EndTrigger" (Abschnitt "Glue Info")](endtrigger-cell-glue-info-section.md) <br/> |
 |EndX  <br/> |Stellt die x-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung seines übergeordneten Objekts dar.  <br/> |[Zelle "EndX" (Abschnitt "1-D Endpoints")](endx-cell-1-d-endpoints-section.md) <br/> |
-|EndY  <br/> |Stellt die y-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung seines übergeordneten Objekts dar.  <br/> |[Zelle "EndY" (Abschnitt "1-D Endpoints")](http://msdn.microsoft.com/library/3fbfa4bc-7792-b6d9-d549-4602d252c293"%28Office.15%29.aspx) <br/> |
+|EndY  <br/> |Stellt die y-Koordinate des Endpunkts des 1D-Shapes im Verhältnis zum Ursprung seines übergeordneten Objekts dar.  <br/> |[Zelle "EndY" (Abschnitt "1-D Endpoints")](endy-cell-1-d-endpoints-section.md) <br/> |
 |EventDblClick  <br/> |Eine Ereigniszelle, die ausgewertet wird, wenn Sie auf ein Shape doppelklicken.  <br/> |[Zelle "EventDblClick" (Abschnitt "Events")](eventdblclick-cell-events-section.md) <br/> |
 |EventDrop  <br/> |Eine Ereigniszelle, die ausgewertet wird, wenn ein Shape als Instanz auf dem Zeichenblatt abgelegt oder dupliziert oder eingefügt wird.  <br/> |[Zelle "EventDrop" (Abschnitt "Events")](eventdrop-cell-events-section.md) <br/> |
 |EventMultiDrop  <br/> |Eine Ereigniszelle, die ausgewertet wird, wenn mehrere Shapes auf dem Zeichenblatt abgelegt werden, entweder als Instanzen oder dupliziert oder eingefügt werden.  <br/> |[EventMultiDrop Cell (Events Section)](eventmultidrop-cell-events-section.md) <br/> |
@@ -168,7 +168,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |Gamma  <br/> |Passt die Intensität einer Grafik für ein spezifisches Ausgabegerät (z. B. Monitor oder Scanner) an. Der Standardwert ist 1 (keine Korrektur).  <br/> |[Zelle "Gamma" (Abschnitt "Image Properties")](gamma-cell-image-properties-section.md) <br/> |
 |GlowColor  <br/> |Legt die Farbe für den Strich von der externen Leuchten auf ein Shape, als Wert RGB oder ein Design angewendet.  <br/> |[GlowColor Cell (Additional Effect Properties Section)](glowcolor-cell-additional-effect-properties-section.md) <br/> |
 |GlowColorTrans  <br/> |Bestimmt die Transparenzstufe für die Farbe für die Kontur des das Shape Leuchten, als Prozentsatz an.  <br/> |[GlowColorTrans Cell (Additional Effect Properties Section)](glowcolortrans-cell-additional-effect-properties-section.md) <br/> |
-|GlowSize  <br/> |Bestimmt die Größe der der externe Leuchten eines Shapes in Punkt.  <br/> |[GlowSize Cell (Additional Effect Properties Section)](http://msdn.microsoft.com/library/2ddc7a08-25b8-4903-b0dd-be72d1fa8075"%28Office.15%29.aspx) <br/> |
+|GlowSize  <br/> |Bestimmt die Größe der der externe Leuchten eines Shapes in Punkt.  <br/> |[GlowSize Cell (Additional Effect Properties Section)](glowsize-cell-additional-effect-properties-section.md) <br/> |
 |GlueType  <br/> |Bestimmt, ob ein 1D-Shape statischen (Punkt-zu-Punkt) oder dynamischen (Shape-zu-Shape) Kleber verwendet, wenn es an ein anderes Shape geklebt wird.  <br/> |[Zelle "GlueType" (Abschnitt "Glue Info")](gluetype-cell-glue-info-section.md) <br/> |
 |Höhe  <br/> |Legt die Höhe des Shapes in Zeichnungseinheiten fest.  <br/> |[Zelle "Height" (Abschnitt "Shape Transform")](height-cell-shape-transform-section.md) <br/> |
 |HelpTopic  <br/> |Gibt die ID Hilfethema der Form.  <br/> ||
@@ -222,7 +222,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |LockGroup  <br/> |Sperrt eine Gruppe, damit die Gruppierung nicht aufgehoben werden kann.  <br/> |[Zelle "LockGroup" (Abschnitt "Protection")](lockgroup-cell-protection-section.md) <br/> |
 |LockHeight  <br/> |Sperrt die Höhe des Shapes, sodass sich diese nicht ändert, wenn die Größe des Shapes geändert wird.  <br/> |[Zelle "LockHeight" (Abschnitt "Protection")](lockheight-cell-protection-section.md) <br/> |
 |LockMoveX  <br/> |Sperrt die horizontale Position des Shapes, damit es nicht horizontal verschoben werden kann.  <br/> |[Zelle "LockMoveX" (Abschnitt "Protection")](lockmovex-cell-protection-section.md) <br/> |
-|LockMoveY  <br/> |Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben werden kann.  <br/> |[Zelle "LockMoveY" (Abschnitt "Protection")](http://msdn.microsoft.com/library/4ed8cab4-112a-e96a-f4e3-02490a6f87fa"%28Office.15%29.aspx) <br/> |
+|LockMoveY  <br/> |Sperrt die vertikale Position des Shapes, damit es nicht vertikal verschoben werden kann.  <br/> |[Zelle "LockMoveY" (Abschnitt "Protection")](lockmovey-cell-protection-section.md) <br/> |
 |LockPreview  <br/> |Legt fest, ob jedes Mal, wenn Sie eine Zeichnung speichern, eine Vorschau gespeichert wird.  <br/> |[Zelle "LockPreview" (Abschnitt "Document Properties")](lockpreview-cell-document-properties-section.md) <br/> |
 |LockReplace  <br/> |Gibt an, ob eine Form einen Ersetzungsvorgang (als ein Ziel oder ein Replacement-Shape) teilnehmen kann.  <br/> |[LockReplace Cell (Protection Section)](lockreplace-cell-protection-section.md) <br/> |
 |LockRotate  <br/> |Sperrt 2D-Shapes, damit sie nicht mit dem Drehpunkt oder den Befehlen Linksdrehung 90 Grad und Rechtsdrehung 90 Grad gedreht werden können.  <br/> |[Zelle "LockRotate" (Abschnitt "Protection")](lockrotate-cell-protection-section.md) <br/> |

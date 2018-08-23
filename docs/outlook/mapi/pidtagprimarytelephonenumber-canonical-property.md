@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: eac130cd-51d1-4c73-a301-a7eafa3b7749
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1a05238899ee85b29c2e96b480a0462d7b273650
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 02f3a0678c66ef684a69786f7613fa179c9b9862
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794817"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582210"
 ---
 # <a name="pidtagprimarytelephonenumber-canonical-property"></a>PidTagPrimaryTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Primäre Telefonnummer des Empfängers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PRIMARY_TELEPHONE_NUMBER, PR_PRIMARY_TELEPHONE_NUMBER_A, PR_PRIMARY_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A1A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PRIMARY_TELEPHONE_NUMBER, PR_PRIMARY_TELEPHONE_NUMBER_A, PR_PRIMARY_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A1A  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen für einen Empfänger bereitstellen. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

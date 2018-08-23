@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 784c8a5a-493e-48e6-8784-ba8122c76e3d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 34177aee48adad7eecb40836a247705fc22d2a32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 43703051193ffacec6a54355eeea74edf904f186
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795463"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580572"
 ---
 # <a name="scontentrestriction"></a>SContentRestriction
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Content Einschränkung, die verwendet wird, um einer Tabellenansicht, um nur die Zeilen zu begrenzen, die eine Spalte mit eine Suchzeichenfolge übereinstimmenden Inhalt enthalten. 
   
@@ -69,7 +69,7 @@ typedef struct _SContentRestriction
   
 > Zeiger auf eine Eigenschaft-Wert-Struktur, die den Zeichenfolgenwert für die Verwendung als die zu suchende Zeichenfolge enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es gibt zwei Eigenschaftentags in eine **SContentRestriction** -Struktur: eine in das **UlPropTag** -Element, und der andere im **UlPropTag** -Member der Struktur **SPropValue** auf die **LpProp**zeigt. In beiden Kategorien MAPI erfordert nur das Eigenschaftenfeld und das Feld für den Bezeichner ignoriert. Jedoch müssen die beiden Eigenschaftstypen übereinstimmen, sonst den Fehlerwert MAPI_E_TOO_COMPLEX wird zurückgegeben, wenn die Einschränkung wieder in einem Aufruf von [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md)verwendet wird. 
   

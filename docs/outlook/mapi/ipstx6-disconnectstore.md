@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d840aac9-f572-958b-2e1c-aea5c01c42b2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1e33f1d2327c93decc1f0310129ff187fef97c6b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 120df88231c6eed9aa6c3fbef2ea367e94dbd504
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792823"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579704"
 ---
 # <a name="ipstx6disconnectstore"></a>IPSTX6::DisconnectStore
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Trennt den lokalen Speicher.
   

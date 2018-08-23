@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c7960a9-ccfa-4872-9729-e707bfd9b68e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d0453be4da37c2f1b5bc43d171b59fb0be17ff8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2c012607815b97cedaabab4f7af2cdf54208010c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793938"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581552"
 ---
 # <a name="pidnamecharactercount-canonical-property"></a>PidNameCharacterCount (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Anzahl der Zeichen der Datei, die an das Dokument angefügt ist.
   

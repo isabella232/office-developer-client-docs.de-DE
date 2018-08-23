@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3b0a8b28-863e-4b96-a4c0-fdb8f40555b9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3646f3e3906e62fe148fe1c2b6ddca39013391e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 629746cedf8c6f4a8c960912a9ab1bcdc7a09e9e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794092"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574146"
 ---
 # <a name="pidtagattachdatabinary-canonical-property"></a>PidTagAttachDataBinary (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die binären Anlagedaten in der Regel über die Schnittstelle Object Linking and Embedding (OLE) **IStream** zugegriffen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_DATA_BIN  <br/> |
-|Bezeichner:  <br/> |0x3701  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_DATA_BIN  <br/> |
+|Kennung:  <br/> |0x3701  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält das Attachment-Objekt, wenn der Wert der Eigenschaft **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) ATTACH_BY_VALUE, ist die übliche Anlage-Methode und die einzige unterstützt werden müssen. **PR_ATTACH_DATA_BIN** enthält auch Anlage OLE 1.0 **OLESTREAM** , wenn der Wert der **PR_ATTACH_METHOD** ATTACH_OLE ist. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e071b50f-2e75-4537-ac7b-4a2f5ebea83d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c00d5bb2e5da02b007579c7a8206baa98f64143f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 95ed80a6d0ea6a6a7c8cc768b32981ac899b69e4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795787"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578248"
 ---
 # <a name="uninitialized-state"></a>Status „Nicht initialisiert“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Initialisierte Zustand ist der Anfangszustand-Formular, die Objekte in werden sollen, wenn sie zuerst erstellt werden. Formular-Objekte werden mit Meldungsdaten initialisiert, wenn eine Clientanwendung für das Form-Objekt die [IPersistMessage::InitNew](ipersistmessage-initnew.md) oder [IPersistMessage::Load](ipersistmessage-load.md) -Methode aufruft. In der folgenden Tabelle werden die zulässigen Übergänge aus dem Status Unitialized beschrieben. 
   

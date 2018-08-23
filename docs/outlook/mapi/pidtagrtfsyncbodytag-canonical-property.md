@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2dab5018-4214-4162-93bc-e5565f3ac24c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bad754d21652d3f5278a6dad3ec06f4a0b533036
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c141ce5b4a8d44cc42a070d73e8e89f35e776fe9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795024"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576856"
 ---
 # <a name="pidtagrtfsyncbodytag-canonical-property"></a>PidTagRtfSyncBodyTag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält wesentliche Zeichen, die am Anfang des den Nachrichtentext angezeigt werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_TAG, PR_RTF_SYNC_BODY_TAG_A, PR_RTF_SYNC_BODY_TAG_W  <br/> |
-|Bezeichner:  <br/> |0x1008  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_TAG, PR_RTF_SYNC_BODY_TAG_A, PR_RTF_SYNC_BODY_TAG_W  <br/> |
+|Kennung:  <br/> |0x1008  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die [RTFSync](rtfsync.md) -Funktion verwendet die Tags für Text an den Anfang des Nachrichtentexts angezeigt. Wenn der Text geändert wird, wird das Tag verwendet, um den Anfang der vorherigen Text zu finden. 
   

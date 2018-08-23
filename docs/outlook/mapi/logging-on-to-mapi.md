@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 05bafe43-a78a-4659-92f0-0b4fe444c64f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ae3c47964ff238f57e98e0005a966008192f7c7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 63f71066b1afc90c3e495ed4f9ba654bcbdfe558
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792919"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579928"
 ---
 # <a name="logging-on-to-mapi"></a>Anmelden bei MAPI
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clientanwendungen melden Sie sich an den MAPI-Subsystems durch Aufrufen der Funktion **MAPILogonEx** . Weitere Informationen finden Sie unter [MAPILogonEx](mapilogonex.md). **MAPILogonEx** überprüft die Profilauswahl und die Konfiguration der einzelnen-Dienstanbieter im Profil. Nach der Konfiguration, startet MAPI der adressbuchanbietern implementierte vor dem Starten der Nachricht-Anbieter. Transportanbieter gestartet wurden, wenn ihre Dienste zuerst benötigt werden. 
   

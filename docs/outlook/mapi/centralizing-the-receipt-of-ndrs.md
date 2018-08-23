@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: fbe1f4f6-28f8-40b8-b551-192c0ba48c18
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0af587bd07de9445f143be316798059eaef402e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 16a150105211231af54ccfdc5d1565aeecea729e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791405"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579438"
 ---
 # <a name="centralizing-the-receipt-of-ndrs"></a>Zentral verwalten den Empfang von Unzustellbarkeitsberichten
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 **Eintreffen damit Unzustellbarkeitsberichten (NDR) an einem zentralen Speicherort, wenn mehrere Instanzen Ihres Clients gleichzeitig ausgeführt werden**
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: cf4a0501-f42b-4652-a239-003022686475
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f6233afffd532c420ae170ae45b1bf93d6571865
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 44b5b489d3efce3ecea69ccd8b7b7a638b173c13
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795537"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578437"
 ---
 # <a name="setting-properties-on-incoming-messages"></a>Festlegen von Eigenschaften für eingehende Nachrichten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Clientanwendungen innerhalb des MAPI-Subsystems erwarten eine Reihe von Eigenschaften in jeder empfangenen Nachricht. Wenn der Adressbuchhierarchie eine Nachricht im MAPI öffnet, sollte diese Eigenschaften seit dem ist der einzige Prozess mit den erforderlichen Informationen dazu, oder mindestens die beste Informationsquelle ist festgelegt werden.
   

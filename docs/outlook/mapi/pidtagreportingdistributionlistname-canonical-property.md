@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8b83072-15b9-4b26-875d-147cb6535b2c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4d1460ff7e4451e455eb75de50301ae26fa3bd77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3006d1852dc47b942f87bd6cf3ffcd14f53b6632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794970"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577737"
 ---
 # <a name="pidtagreportingdistributionlistname-canonical-property"></a>PidTagReportingDistributionListName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Anzeigenamen einer Verteilerliste, an das messaging-System einen Bericht übermittelt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORTING_DL_NAME  <br/> |
-|Bezeichner:  <br/> |0 x 1003  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORTING_DL_NAME  <br/> |
+|Kennung:  <br/> |0 x 1003  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    

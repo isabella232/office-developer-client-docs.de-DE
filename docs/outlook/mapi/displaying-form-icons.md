@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 197e72ab-f9d6-4889-a677-0ce4c27b1aad
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b2e79e5568de38bee9a97c9df2598b30f1ba1bdf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7ac8026489b06031e07ab4b2978c9ece04063bb1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791563"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579144"
 ---
 # <a name="displaying-form-icons"></a>Anzeigen von Formularsymbolen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beim Anzeigen einer Liste von Nachrichten in einem Ordner ist es hilfreich, die Benutzer, wenn Sie von der standardmäßigen IPM Nachrichten mit benutzerdefinierten Nachrichtenklassen unterscheiden. Beachten Sie Nachrichten. Benutzerdefinierte Nachrichtenklassen entsprechen den Formular-Servern und Formular Server bieten Symbole, um sich selbst darstellen. Sie können diese Symbole in der Liste der Nachrichten an Benutzer zu jeder Nachricht Nachrichtenklasse anzeigen, bevor der Benutzer die Nachrichten öffnet. Das Symbol in das Formular **PR_MINI_ICON** ([PidTagMiniIcon](pidtagminiicon-canonical-property.md))-Eigenschaft ist in der Regel diejenige, die in der Liste der Nachrichten angezeigt werden soll. Formulare enthalten auch eine **PR_ICON** ([PidTagIcon](pidtagicon-canonical-property.md))-Eigenschaft, die angezeigt werden, wenn das Formular in einem Eigenschaftenfenster minimiert ist.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3f0e5b24-767e-46f5-bb3d-e9cb82cb935b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3174ebbcf70104c82305e2a20df1e183d30265d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7efa8dccf4c2c6da0ad60688d06d241d336e3943
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795012"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581006"
 ---
 # <a name="pidtagrtfsynctrailingcount-canonical-property"></a>PidTagRtfSyncTrailingCount (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Anzahl von Zeichen, die nach den erheblichen Zeichen der Nachricht angezeigt werden ignoriert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RTF_SYNC_TRAILING_COUNT  <br/> |
-|Bezeichner:  <br/> |0x1011  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RTF_SYNC_TRAILING_COUNT  <br/> |
+|Kennung:  <br/> |0x1011  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine zusätzliche Rich Text Format (RTF)-Eigenschaft. Diese Eigenschaften werden von der Funktion [RTFSync](rtfsync.md) verwendet und nicht direkt von Clientanwendungen verwendet werden sollen. 
   

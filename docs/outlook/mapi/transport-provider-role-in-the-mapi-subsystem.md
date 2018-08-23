@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7659369a-0952-4f5a-a86b-91958c4c1a3f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7ea60b73fb1abe32b6db5e3c73d6ef3fac53d35d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 263370590a35f19482cc5ad7e56c65f6df0087fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795754"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581300"
 ---
 # <a name="transport-provider-role-in-the-mapi-subsystem"></a>Transportanbieterrolle des MAPI-Subsystems
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Transport-Anbieter Dynamic Link Libraries (DLLs) stellen die Schnittstelle zwischen der MAPI-Warteschlange und das Webpart von einem verantwortlich für die Nachricht senden und Empfangen von messaging-System. Die MAPI-Warteschlange und der Adressbuchhierarchie arbeiten zusammen, um die Aufgaben der eine Nachricht senden oder Empfangen einer Nachricht zu verarbeiten. Die MAPI-Warteschlange wird der Adressbuchhierarchie DLL geladen, wenn es zuerst verwendet wird, und gibt es frei, wenn es nicht mehr benötigt wird. Mehrere Transportanbieter auf dem gleichen System installiert werden können, aber MAPI bereitstellt, die eine Warteschlange erforderlich.
   

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: a42fb112-7be5-4b7b-a2e0-7e7f7f58b9a4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e52b2e1795405990864724d873ffa604e5e949b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bb60af2550b7247b62b78b3bce1b94f9ba099b6a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793516"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581062"
 ---
 # <a name="pidlidemail3displayname-canonical-property"></a>PidLidEmail3DisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Benutzer lesbaren Anzeigenamen für den dritten e-Mail-Adresse.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail3DisplayName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail3DisplayName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080A0  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

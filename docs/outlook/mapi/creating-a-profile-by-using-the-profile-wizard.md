@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4b611818-f99f-43a2-9f6b-1aa5b9564d1d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 29a135264772847a624e1a4558b68bcf822b18df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f30dca8323f74bc2817bab375b58fcc1bc15c18b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791480"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574258"
 ---
 # <a name="creating-a-profile-by-using-the-profile-wizard"></a>Erstellen eines Profils mit dem Profilassistenten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Profil-Assistent ist ein MAPI-Feature, mit dem einen Benutzer zum Erstellen eines Profils in die einfachste Möglichkeit. Der Profil-Assistent zeigt eine Reihe von Dialogfeldern in dem der Benutzer aufgefordert, wählen Sie Nachrichtendienste, und geben Sie Werte für einige der wichtigsten Konfigurationseigenschaften. Für die meisten anderen erforderlichen Eigenschaften verwendet der Profil-Assistent Standardwerte bereitgestellt. Rufen Sie zum Aufrufen der Profil-Assistent **LaunchWizard**, eine Funktion, die basierend auf den [LAUNCHWIZARDENTRY](launchwizardentry.md) Prototyp. 
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3406d060-bfea-4cea-8253-2a9aeb9e8147
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b517eaffa56001d8c414888ee6cbc8ec4f49cf66
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8426f782eb5fbf8a125833c51b25ccd605acbd64
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795697"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573523"
 ---
 # <a name="szfindch"></a>SzFindCh
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sucht nach dem ersten Vorkommen eines Zeichens in eine mit Null endende Zeichenfolge. 
   
@@ -52,7 +52,7 @@ _Kapitel_
 
 **SzFindCh** gibt einen Zeiger auf das erste Auftreten des Zeichens in der Zeichenfolge. Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der Parameter _Lpsz_ NULL ist, wird der Wert NULL zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion **SzFindCh** sucht nach einer genauen Übereinstimmung nur; Es ist Beachtung von Groß-/Kleinschreibung und diakritische Unterschiede. Sucht in den Formaten Unicode und DBCS werden unterstützt. 
   

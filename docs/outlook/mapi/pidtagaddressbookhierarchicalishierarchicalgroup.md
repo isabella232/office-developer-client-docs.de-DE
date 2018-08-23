@@ -11,25 +11,25 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d5d289b2-d4d6-49ab-bf8b-945cb35272fc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f62ced8dd2ddec588a1ae285c13268059e49da46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 15c635992134d61329f2f49c0fe3dd84d7225837
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794057"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577128"
 ---
 # <a name="pidtagaddressbookhierarchicalishierarchicalgroup"></a>PidTagAddressBookHierarchicalIsHierarchicalGroup
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Verteilerliste auch eine Gruppe auf Abteilungsebene handelt. Diese Eigenschaft ist nur für Verteilerlisten verfügbar.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EMS_AB_HAB_IS_HIERARCHICAL_GROUP  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EMS_AB_HAB_IS_HIERARCHICAL_GROUP  <br/> |
 |-Eigenschaft festgelegt:  <br/> |Adressbuch  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x8CDD  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

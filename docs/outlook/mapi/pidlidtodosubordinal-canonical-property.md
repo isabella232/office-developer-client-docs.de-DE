@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e3bc15ef-155e-49fd-88e5-64713df9b939
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9965ed059ba4596232111f5fbd86b9d177e3c3dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 98dfdab24d2c4170609d9db1c3104a3f17436736
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793874"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578066"
 ---
 # <a name="pidlidtodosubordinal-canonical-property"></a>PidLidToDoSubOrdinal (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fungiert als eine Tie wörtertrennung, wenn die Eigenschaft **DispidToDoOrdinalDate** ([PidLidToDoOrdinalDate](pidlidtodoordinaldate-canonical-property.md)) Objekte und das Ergebnis in einer Gleichwertigkeit sortiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidToDoSubOrdinal  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidToDoSubOrdinal  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000085A1  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn verwendet, muss diese Eigenschaft lexikografisch sortiert werden. Die Komponente Zeichen der Zeichenfolge darf nur die Ziffern 0 bis 9 bestehen. Diese Eigenschaft sollte anfänglich auf "5555555" festgelegt werden. Die Länge dieser Eigenschaft muss (mit Ausnahme der abschließenden NULL-Zeichens) 254 Zeichen nicht überschreiten.
   

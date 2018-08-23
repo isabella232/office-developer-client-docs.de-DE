@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: a7830d73-427c-4f8b-86f4-51e040c142c3
 description: 'Zuletzt geändert: 26 Juni 2012'
-ms.openlocfilehash: 17b1307427af2c35fe9ba8ee40dc78958e6b4a21
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8b8335fb2722e193f0eab1288b8ffdb2aa62df8b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791651"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577786"
 ---
 # <a name="fast-shutdown-overview"></a>Übersicht über das schnelle Herunterfahren
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Schnelles Herunterfahren ist ein Mechanismus für einen MAPI-Client initiiert ein Schnelles Herunterfahren des Clientprozesses benachrichtigen alle Anbieter mit dem der Client verfügt über eine aktive MAPI-Sitzung auf Daten und Einstellungen zu speichern, bevor der Clientprozess beendet wird. In diesem Thema werden den grundlegenden Mechanismus für Schnelles Herunterfahren. 
 

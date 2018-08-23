@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: eb17675a-35e0-4545-b394-789d343510aa
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 07ad94c423c3be425dc905dc578f55ad2c467a95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3e31dd7b25b3abf333505c8bde57f61be7a10901
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791544"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580607"
 ---
 # <a name="display-table-implementation"></a>Anzeigen der Tabellenimplementierung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt die Tabelle wird verwendet, um ein Eigenschaftenblatt spezielle ein Dialogfeld, das aus der einen oder mehrere im Registerkartenformat Eigenschaftenseiten zum Anzeigen und Bearbeiten von möglicherweise eine oder mehrere Eigenschaften anzeigen. Verknüpft ist mit jedem Display-Tabelle ist eine [IAttach: IMAPIProp](iattachimapiprop.md) Schnittstelle Implementierung. Die Implementierung [IMAPIProp](imapipropiunknown.md) verwaltet die Daten, die im Eigenschaftenfenster angezeigt werden. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7994477d-5207-4335-b538-69c98782d52d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 14be41c21244abe8c54261a95a410828c973d66b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 244087c41e33e470c42434e9d57cee7317bcb78c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792386"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571689"
 ---
 # <a name="imapisupportnewuid"></a>IMAPISupport::NewUID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine neue [MAPIUID](mapiuid.md) -Struktur, die als eindeutiger Bezeichner verwendet werden. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die neue **MAPIUID** Struktur erstellt wurde. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::NewUID** -Methode wird für alle Unterstützungsobjekte implementiert. Dienstanbieter und Message-Dienste aufrufen **NewUID** , wenn sie benötigen, um eine langfristige eindeutige ID zu generieren. Eine Nachricht Speicheranbieter, zum Beispiel, **NewUID** zum Abrufen einer **MAPIUID** in die **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft einer neu erstellten Nachricht platzieren aufgerufen werden kann.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 72b447e9-b4f2-4557-baf5-0afefe463749
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 38db1d18f240188c7566a57afa23291a307446dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 031f8f17ae98bd62043a2cd8ce6c8c2d55a19c9f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795381"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582336"
 ---
 # <a name="rendering-an-attachment-in-plain-text"></a>Darstellen einer Anlage als Nur-Text
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um eine Anlage in einer Nachricht mit nur-Text zu rendern, rufen Sie die Anlage **PR_RENDERING_POSITION** ([PidTagRenderingPosition](pidtagrenderingposition-canonical-property.md))-Eigenschaft, und wenden sie auf die Daten in der **PR_ATTACH_RENDERING** ([PidTagAttachRendering](pidtagattachrendering-canonical-property.md)) -Eigenschaft. Es gibt zwei Methoden, um **PR_RENDERING_POSITION**abzurufen:
   

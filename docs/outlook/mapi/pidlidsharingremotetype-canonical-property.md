@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e9bc7c7c-86df-45d8-922b-76e3b076144a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8a9975090a8b90946482fa77fd2dafdb503c1f68
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 87f3a1902c70cc9f875d472da406104ae1b45fda
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793795"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573943"
 ---
 # <a name="pidlidsharingremotetype-canonical-property"></a>PidLidSharingRemoteType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Typ des freigegebenen Ordners remote. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSharingRemoteType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSharingRemoteType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Sharing  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008A1D  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss festgelegt werden, auf den gleichen Wert wie die Eigenschaft **DispidSharingLocalType** ([PidLidSharingLocalType](pidlidsharinglocaltype-canonical-property.md)) und sollte ignoriert werden.
   

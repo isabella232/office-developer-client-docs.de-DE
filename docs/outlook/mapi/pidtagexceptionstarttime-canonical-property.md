@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3aa4f9d7-8105-435d-af68-424a079e1a84
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fbbd261558cf75458e69371e7fb53857e0692e74
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a8de1a90c0dde029cc6880fe46b0c4d4af9b50ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794363"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579060"
 ---
 # <a name="pidtagexceptionstarttime-canonical-property"></a>PidTagExceptionStartTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Startdatum und die Uhrzeit der Ausnahme in der lokalen Zeitzone des Computers an, wenn die Ausnahme erstellt wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EXCEPTION_STARTTIME  <br/> |
-|Bezeichner:  <br/> |0x7FFB  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EXCEPTION_STARTTIME  <br/> |
+|Kennung:  <br/> |0x7FFB  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert-Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 > [!NOTE]
 > Diese Eigenschaft ist Informationszwecken und muss nicht auf wichtige Informationen verlassen. 

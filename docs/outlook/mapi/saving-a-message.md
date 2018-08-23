@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 97bff16b-dc7c-4eed-8834-d0c076d83ca3
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e61a72691309b2ac632b764c0607f5b1e36b291b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: fcb5486cc96403b872e07ab597545ca6f493907d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795423"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581321"
 ---
 # <a name="saving-a-message"></a>Speichern einer Nachricht
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Vor dem Speichern einer Nachricht call-Clients in der Regel die Nachricht [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode, um einige Eigenschaften neben der Nachricht Texteigenschaften, Eigenschaften für Dateianlage, **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) und Eigenschaften festzulegen die Empfängerliste zugeordnet sind.
   

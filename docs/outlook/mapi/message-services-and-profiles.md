@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: df0db1e4-69c8-44ec-bb2a-d31fc8a564b9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0f55d4cda013810884177a0f47e861e3693defd7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 60a102a68ee11cd6002be9edf47d0cee93ed2e15
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793273"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581433"
 ---
 # <a name="message-services-and-profiles"></a>Message-Dienste und Profile
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einige Benutzer benötigen die Dienste von verschiedenen Messagingsystemen, jeweils mit mindestens einem Dienstanbieter. Da es ist schwierig zu installieren und konfigurieren Sie jeden dieser Dienstanbieter einzeln und messaging-Server in der Regel eine Gruppe von verwandten Anbieter alle seine Funktionen verfügbar machen muss, enthält MAPI das Konzept eines Diensts Nachricht. Message-Dienste unterstützen Benutzer beim Installieren und Konfigurieren von ihren Dienstanbieter.
   
@@ -60,5 +60,5 @@ Die folgende Abbildung zeigt ein Profil, das zwei Nachrichtendienste enthält. D
 ## <a name="see-also"></a>Siehe auch
 
 - [MAPIUID](mapiuid.md)
-- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
+- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 

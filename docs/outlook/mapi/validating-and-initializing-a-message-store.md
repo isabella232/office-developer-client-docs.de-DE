@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 74f0a1fe-2a79-4b32-ab88-85a8839a2639
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 48883ec33db9ffd6b3e7cc6e16ae9c2487a31607
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7a5a5045594e87953d967fddbdeefd5ac18c8a3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795847"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581972"
 ---
 # <a name="validating-and-initializing-a-message-store"></a>Überprüfen und Initialisieren eines Nachrichtenspeichers
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beim Öffnen eines Nachrichtenspeichers über die [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) -Methode ohne das MDB_NO_MAIL-Flag MAPI mehrere Ordner erstellt und ihnen Standardnamen und Rollen zuweist. MAPI ist verantwortlich für die Erstellung dieser Ordner um Inkompatibilitäten zu vermeiden, die zwangsläufig auftreten würde, wenn Clients oder Nachricht Anbieter verantwortlich für die Erstellung wurden. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4e3f9ab-b7ee-4dff-b7bd-2462c561735c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ba79af79ddadba2ca2223008e367738299475f02
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 173c679b7a94678b1b3b14bf82abf6638ecc5b55
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793643"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575658"
 ---
 # <a name="pidlidglobalobjectid-canonical-property"></a>PidLidGlobalObjectId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den eindeutigen Bezeichner des Calendar-Objekts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |LID_GLOBAL_OBJID  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |LID_GLOBAL_OBJID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0 x 00000003  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Einmal für ein Calendar-Objekt festgelegt wird, muss der Wert dieser Eigenschaft nicht ändern. Eine ausführliche Beschreibung des Formats kann in [[MS-OXOCAL]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)gefunden werden.
   

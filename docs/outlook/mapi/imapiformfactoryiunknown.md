@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 637be364-c393-430a-84b3-2c96aa553c22
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 651ef6a7c1af70c75a85e13414c4fd7632d30290
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b2aa08ea14df87f24cda3da0137ae4bfa2c50b40
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792169"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576015"
 ---
 # <a name="imapiformfactory--iunknown"></a>IMAPIFormFactory : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Unterstützt die Verwendung von konfigurierbar Laufzeit-Formularen in einer verteilten Umgebung Netzwerke. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Formular Factory-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Formular Factory-Objekte  <br/> |
 |Implementiert von:  <br/> |Formular-Servern  <br/> |
 |Aufgerufen von:  <br/> |Formular-Viewer  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFormFactory  <br/> |
@@ -44,7 +44,7 @@ Unterstützt die Verwendung von konfigurierbar Laufzeit-Formularen in einer vert
 |[GetLastError](imapiformfactory-getlasterror.md) <br/> |Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler auftritt, auf das Formular Factory-Objekt enthält.  <br/> |
 |[LockServer](imapiformfactory-lockserver.md) <br/> |Wird einen geöffnete Formular Server im Arbeitsspeicher gespeichert.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Schnittstelle **IMAPIFormFactory** basiert auf der [IClassFactory](http://msdn.microsoft.com/en-us/library/ms694364%28VS.85%29.aspx) -Schnittstelle und Objekte, die **IMAPIFormFactory** implementieren sollten auch von **IClassFactory**erben.
   

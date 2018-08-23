@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5133045a-b1e2-7728-5cd5-6d85eb940cf9
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 50b36ee60d00e06a1f5baa8726b5f27c4a3e6ce7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 272d4147d60df53ef30a668faa8abe89f96cd654
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791220"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582322"
 ---
 # <a name="about-the-replication-api"></a>Informationen über die Replikations-API
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Replikation-API bietet die Funktionalität für einen Anbieter für MAPI-Nachricht anmelden zum Synchronisieren von Microsoft Outlook 2013 oder Microsoft Outlook 2010 Elemente zwischen einem Server und einem privaten PST-basierten lokalen Speicher, der für diesen Anbieter erstellt wird. 
   
@@ -74,7 +74,7 @@ Datentypen:
     
 - **[SYNCCONT](synccont.md)**
     
-- **[SYNCSTATE](syncstate.md)**
+- **[SYNCHRONISIERUNGSSTATUS](syncstate.md)**
     
 - **[UPDEL](updel.md)**
     

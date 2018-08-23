@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f4846dc3-0236-44ed-a1b1-8c13d48fb58a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cd70f5ee7b58bdf0b1fd61b1056bfc77e3e35992
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 9e22111ec920d89e0874baf71946681c204cacd5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792745"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571206"
 ---
 # <a name="iprofadmincopyprofile"></a>IProfAdmin::CopyProfile
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert ein Profil.
   
@@ -85,7 +85,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Mit dem **IProfAdmin::CopyProfile** -Methode wird eine Kopie des Profils, auf die _LpszOldProfileName_, unter dem Namen mit _LpszNewProfileName_gezeigt. Kopieren eines Profils bewirkt, dass die Kopie mit das gleiche Kennwort wie das Original.
   

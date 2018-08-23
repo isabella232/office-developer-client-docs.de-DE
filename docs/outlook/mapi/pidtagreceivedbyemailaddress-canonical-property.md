@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f9ebe20-b037-422b-9991-69f85122a706
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6f6718bf63c48dec6d2d19b5931c6e7e81513a2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 442a5a69138fdd229289b4201224a4f151c8ccc4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794873"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581902"
 ---
 # <a name="pidtagreceivedbyemailaddress-canonical-property"></a>PidTagReceivedByEmailAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die e-Mail-Adresse für den messaging-Benutzer, der die Nachricht empfängt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECEIVED_BY_EMAIL_ADDRESS, PR_RECEIVED_BY_EMAIL_ADDRESS_A, PR_RECEIVED_BY_EMAIL_ADDRESS_W  <br/> |
-|Bezeichner:  <br/> |0x0076  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECEIVED_BY_EMAIL_ADDRESS, PR_RECEIVED_BY_EMAIL_ADDRESS_A, PR_RECEIVED_BY_EMAIL_ADDRESS_W  <br/> |
+|Kennung:  <br/> |0x0076  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den messaging-Benutzer, der die Nachricht empfängt. Sie müssen von der eingehenden Adressbuchhierarchie festgelegt werden.
   

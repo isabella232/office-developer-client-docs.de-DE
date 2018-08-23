@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f374d8d9-be8e-2489-d5fe-8a92e0ecfc6f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7419a0df7a2f3b76caeeb1ca564624d437eddd52
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9c9252e83ce212bacf185d0eedb75d30617f9807
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792735"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581748"
 ---
 # <a name="iostx--iunknown"></a>IOSTX : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt Synchronisierungsmethoden bereit. Diese Schnittstelle ruft die erforderlichen Informationen zum Replizieren von lokaler Änderungen auf den Server und Server Änderungen an den lokalen Speicher ab.
   
@@ -45,7 +45,7 @@ Stellt Synchronisierungsmethoden bereit. Diese Schnittstelle ruft die erforderli
 |[SetSyncResult](iostx-setsyncresult.md) <br/> |Das Ergebnis der Synchronisierung festgelegt.  <br/> |
 | *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn ein Client hochgeladen oder Ordner und Ordnerinhalte in einem lokalen Speicher synchronisiert, verschiebt es den lokalen Speicher von einem Zustand zu einem anderen wie in der Statusübergangsdiagramm in [Über die Replikation Zustandsautomat](about-the-replication-state-machine.md)dargestellt. Es folgt der Reihenfolge von Ereignissen für den Client auf den lokalen Speicher von einem Zustand in einen anderen verschieben:
   

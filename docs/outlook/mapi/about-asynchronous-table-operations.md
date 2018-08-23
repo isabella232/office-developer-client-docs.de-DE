@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 57219d96-bd9e-4e9a-b34a-dd3aad97bfd9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 99bff153d4ce4bac3f85e0ed0feeaffafa6bf3f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1c31045e1fc19da63a2d4b61d92b3629afc96a55
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791218"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569421"
 ---
 # <a name="about-asynchronous-table-operations"></a>Informationen zum asynchronen Tabellenvorgänge
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **IMAPITable** -Schnittstelle umfasst drei Methoden, die asynchron arbeiten und drei Methoden zum Steuern einer asynchronen Operation. Die folgende Tabelle enthält die folgenden Methoden: 
   

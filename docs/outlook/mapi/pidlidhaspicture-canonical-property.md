@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: c3bea11c-3197-4060-8672-f1b4bf352112
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 74a54db3ebb55c178fd5f8b7317bb27c83a47311
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 30046bd7982d08d99c5581c27d1616162d904dee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793627"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577107"
 ---
 # <a name="pidlidhaspicture-canonical-property"></a>PidLidHasPicture (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Anlage Foto für einen Kontakt vorhanden ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidHasPicture  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidHasPicture  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008015  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft vorhanden ist und auf TRUE festgelegt ist, enthält der Kontakt Anlagentabelle eine Anlage mit der **PR_ATTACHMENT_CONTACTPHOTO** ([PidTagAttachmentContactPhoto](pidtagattachmentcontactphoto-canonical-property.md))-Eigenschaft auf TRUE festgelegt.
   

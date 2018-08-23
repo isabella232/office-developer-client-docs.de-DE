@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 17d64211-6265-41f4-b016-3677d75af966
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8c38fef932388347725b829cd6443c009e384e3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: be09b0f21017c81484fe538839e3bdd6137ff663
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794517"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582133"
 ---
 # <a name="pidtagipmdraftsentryid-canonical-property"></a>PidTagIpmDraftsEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook Entwürfe enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IPM_DRAFTS_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x36D7  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IPM_DRAFTS_ENTRYID  <br/> |
+|Kennung:  <br/> |0x36D7  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor: 
   

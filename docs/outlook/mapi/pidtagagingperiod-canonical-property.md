@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 762020d1-4bc8-d60d-0f66-3929aae24bfb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1fd1b06bbaa10c2d7c71ee4c161fd6a980da1865
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: caaa01982ff9e66fe7e17df4eaf37dcd25281d4e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794059"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569554"
 ---
 # <a name="pidtagagingperiod-canonical-property"></a>PidTagAgingPeriod (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt die Anzahl der Einheiten, die verwendet werden, um die Dauer zu ermitteln, die ein Element in einem Ordner bleibt, bevor das Element archiviert wird.
   
@@ -31,12 +31,12 @@ Stellt die Anzahl der Einheiten, die verwendet werden, um die Dauer zu ermitteln
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AGING_PERIOD  <br/> |
-|Bezeichner:  <br/> |0x36EC  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AGING_PERIOD  <br/> |
+|Kennung:  <br/> |0x36EC  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Zeitdauer, die ein Element in einem Ordner bleibt, bevor das Element archiviert wird, wird durch die beiden Eigenschaften **PR_AGING_PERIOD** und **[PR_AGING_GRANULARITY](pidtagaginggranularity-canonical-property.md)** bestimmt. **PR_AGING_GRANULARITY** stellt die Zeiteinheit, in der **PR_AGING_PERIOD** ausgedrückt wird, wenn diese Zeitdauer zu bestimmen. 
   

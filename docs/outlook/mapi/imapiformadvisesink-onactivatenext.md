@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: db621dfd-c6ad-42d2-8089-db40a63cab36
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3ce4d57ab4837f40ffbc898fde68e44cc802676f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7e8fb69e7d25420186d7269943c5d957311e813d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792127"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581756"
 ---
 # <a name="imapiformadvisesinkonactivatenext"></a>IMAPIFormAdviseSink::OnActivateNext
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob das Formular die Nachrichtenklasse für die nächste anzuzeigende Meldung verarbeiten kann.
   
@@ -64,7 +64,7 @@ S_FALSE
   
 > Das Formular behandelt die Nachrichtenklasse für die nächste Nachricht nicht.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIFormAdviseSink::OnActivateNext** -Methode, mit denen das Formular zu bestimmen, ob die nächste Nachricht in einem Ordner angezeigt werden können. Die nächste Nachricht konnte eine Nachricht einer beliebigen Klasse werden, jedoch ist normalerweise der gleichen Klasse oder einer verknüpften-Klasse. Dadurch wird das Lesen von mehrere Nachrichten von der gleichen Klasse effizienter durch Clientanwendungen Formularobjekte nach Möglichkeit wiederverwenden aktivieren. 
   

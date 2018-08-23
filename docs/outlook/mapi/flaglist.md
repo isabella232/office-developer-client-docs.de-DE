@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b4c0655c-1a3a-4f89-a977-0431db596512
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2cf5ff69e8453b2da26fd5044823ddf4f99a9f45
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f7a236c2a7e307d278cac5ef413cbd2f600bf09f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791697"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582098"
 ---
 # <a name="flaglist"></a>FLAGLIST
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste von Flags verwendet, um den Status von Adresseinträge während der Namensauflösungsprozess angeben.
   
@@ -62,7 +62,7 @@ MAPI_UNRESOLVED
   
 > Der Eintrag wurde nicht behoben. Andere Address Book Container sollte versuchen, diese Empfänger aufzulösen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur **FLAGLIST** wird als Parameter für [IABContainer](iabcontainer-resolvenames.md)verwendet. Einzelnen Empfänger aufgelöst werden, ist in eine [ADRLIST](adrlist.md) -Struktur enthalten. Während der Adressbuchcontainer versucht, jeden Empfänger zu beheben, legt das entsprechende Flag in den entsprechenden Eintrag in der Struktur **FLAGLIST** fest. Alle Einträge in der Struktur **FLAGLIST** sind in der gleichen Reihenfolge als die Einträge in der **ADRLIST** -Struktur. Dies vereinfacht die eine Einstellung für die Kennzeichnung mit einem Empfänger zuordnen. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3f77a7e4-342e-49da-970f-3ef02f227724
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 10de01d1411abc860dfb37e8e913b8e2645cf45b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0a84adb36c6b851c989b88f4cee6b090fd5e1679
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794157"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576764"
 ---
 # <a name="pidtagbusinessfaxnumber-canonical-property"></a>PidTagBusinessFaxNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Telefonnummer des Empfängers Business Faxgerät. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_BUSINESS_FAX_NUMBER, PR_BUSINESS_FAX_NUMBER_A, PR_BUSINESS_FAX_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A24  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_BUSINESS_FAX_NUMBER, PR_BUSINESS_FAX_NUMBER_A, PR_BUSINESS_FAX_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A24  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert. 
   

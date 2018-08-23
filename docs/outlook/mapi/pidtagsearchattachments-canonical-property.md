@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 534c3881-e12f-f228-7760-788fe2b72ae8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 008dd69f5e31b601b678a4346880e6b3c89a0f39
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 80d1fc3f711369471eb2c1473700f13a6b995594
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795107"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578507"
 ---
 # <a name="pidtagsearchattachments-canonical-property"></a>PidTagSearchAttachments (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Unicodezeichenfolge, die im Anlageninhalt für den Speicher abgefragt wird.
   
@@ -27,8 +27,8 @@ Enthält eine Unicodezeichenfolge, die im Anlageninhalt für den Speicher abgefr
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_ATTACHMENTS_W  <br/> |
-|Bezeichner:  <br/> |0x0EA5  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_ATTACHMENTS_W  <br/> |
+|Kennung:  <br/> |0x0EA5  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    

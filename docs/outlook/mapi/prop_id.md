@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ddaced5-49bb-41fe-95da-4e3300883bf7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ad4b9d3f7c2ca1766ecca4fe9467fc49098f2212
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e1846b4be93bf6300ea89a9ae3133fbba82b344e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795318"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573124"
 ---
 # <a name="propid"></a>PROP_ID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Bezeichner eines angegebenen Eigenschaft-Tags.
   
@@ -42,7 +42,7 @@ PROP_ID (ulPropTag)
   
 > Eigenschafts-Tag mit dem Bezeichner zurückgegeben werden soll.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jede Eigenschaftentag enthält den Eigenschaftstyp in das niederwertige Wort (Bits 0 bis 15) und der Eigenschaft-ID in das hohe Word (Bits 16 bis 31). Das Makro **eigensch_id** extrahiert Bezeichner der und legt es in Bits 0 bis 15, der die ganze Zahl zurückgegeben werden soll. Die verbleibenden Bits des Rückgabewerts werden für Nullen festgelegt. 
   

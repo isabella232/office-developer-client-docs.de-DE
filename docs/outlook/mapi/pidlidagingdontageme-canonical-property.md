@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb5936a2-6f78-428e-8900-dc7f2f1d67b0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bc142af5baae3f17db36dc25e1b64e06da47b9ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 59f826efd331d214d199c4bead8badc4cfb2f62d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793342"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577408"
 ---
 # <a name="pidlidagingdontageme-canonical-property"></a>PidLidAgingDontAgeMe (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Wert TRUE an, wenn das Element nicht automatisch archiviert werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidAgingDontAgeMe  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidAgingDontAgeMe  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000850E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

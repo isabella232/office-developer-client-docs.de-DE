@@ -8,14 +8,14 @@ keywords:
 localization_priority: Normal
 ms.assetid: 29415c5b-9a42-46f4-a9e8-6a7d5bb7bdbf
 description: Microsoft InfoPath 2013 unterstützt zwei Arten von Programmiermodellen zum Entwickeln von Geschäftslogik in Formularvorlagen und externe Automatisierung aus verwaltetem Code unterstützt.
-ms.openlocfilehash: 18d5d68cdc047ddcb049874d677c6a20e851f2db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 638306eabf9f761ff126953e66228cad8cc5c3ae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790848"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579529"
 ---
-# <a name="understanding-infopath-object-models-and-development-environment"></a>Grundlegendes zu Objektmodellen und zur Entwicklungsumgebung in InfoPath
+# <a name="understanding-infopath-object-models-and-development-environment"></a>Grundlegendes zu InfoPath-Objektmodellen und zur Entwicklungsumgebung
 
 Microsoft InfoPath 2013 unterstützt zwei Arten von Programmiermodellen zum Entwickeln von Geschäftslogik in Formularvorlagen und externe Automatisierung aus verwaltetem Code unterstützt.
   
@@ -110,16 +110,13 @@ Weitere Informationen zum Objektmodell für InfoPath Forms Services finden Sie i
   
 ## <a name="infopath-development-environment"></a>InfoPath-Entwicklungsumgebung
 
-Die Entwicklung von Geschäftslogik in Formularvorlagen für InfoPath 2013 kann mithilfe von Visual Studio 2012, mit dem [Microsoft Visual Studio Tools for Applications 2012](http://www.microsoft.com/en-us/download/details.aspx?id=30364) Add-on installiert ausgeführt werden. 
+Die Entwicklung von Geschäftslogik in Formularvorlagen für InfoPath 2013 kann mithilfe von Visual Studio 2012, mit dem [Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) Add-on installiert ausgeführt werden. 
   
 > [!NOTE]
 > InfoPath 2013 unterstützt keine erstellen oder Bearbeiten von Formularvorlagen, die mit JScript oder VBScript geschriebene Geschäftslogik verwenden, obwohl InfoPath Filler öffnenden Skript-basierte Formularvorlagen unterstützt, die in früheren Versionen von InfoPath erstellt wurden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[Exemplarische Vorgehensweise: Erstellen einer einfachen Formularvorlage mit Code](walkthrough-creating-a-basic-form-template-with-code.md)
-  
-[Exemplarische Vorgehensweise: Erstellen und Debuggen einer einfachen Formularvorlage mit dem InfoPath 2003-Objektmodell](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
+- [Exemplarische Vorgehensweise: Erstellen Sie eine einfache Formularvorlage mit Code](walkthrough-creating-a-basic-form-template-with-code.md)
+- [Exemplarische Vorgehensweise: Erstellen und Debuggen einer einfachen Formularvorlage mit dem InfoPath 2003-Objektmodell](walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md)
 

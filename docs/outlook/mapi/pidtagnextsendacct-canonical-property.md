@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b7429c2e-0d9d-4921-9f56-9ecad817f8cb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 517d0900e968ea55cedf6b17b31d97795fcf61c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 76584e248f03deac62af94e4638fcead15594b3e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794638"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581132"
 ---
 # <a name="pidtagnextsendacct-canonical-property"></a>PidTagNextSendAcct (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Server, den ein Client derzeit versucht, Senden von e-Mails zu verwenden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_NEXT_SEND_ACCT  <br/> |
-|Bezeichner:  <br/> |0x0E29  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_NEXT_SEND_ACCT  <br/> |
+|Kennung:  <br/> |0x0E29  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Format dieser Eigenschaft ist die Implementierung ab. Diese Eigenschaft kann zum Ermitteln des Servers, leiten Sie die e-Mail vom Client verwendet werden, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   

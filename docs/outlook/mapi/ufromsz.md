@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4a67faa2-8c2e-49a7-8c92-690a0a65c8f7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5be5cd7c352201159c0257861c0072b56da65082
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7513e361f4c1c1bcc93cc420f3a1987e0d817c54
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795796"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580502"
 ---
 # <a name="ufromsz"></a>UFromSz
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konvertiert eine mit Null endende Zeichenfolge der Nachkommastellen in ganze Zahl ohne Vorzeichen. 
   
@@ -49,7 +49,7 @@ UINT UFromSz(
 
  **UFromSz** gibt eine Ganzzahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens eine Dezimalzahl beginnt, wird 0 (null) zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion **UFromSz** beendet konvertieren, wenn das erste Zeichen in der Zeichenfolge, die kein Dezimalzahl ist erreicht. Beispielsweise gibt **UFromSz** die Zeichenfolge "55" angegeben, den Ganzzahlwert 55. Die Zeichenfolge "5a5b" angegeben, gibt die Funktion den ganzzahligen Wert 5 zurück. Wenn die Zeichenfolge "a5b5", gibt **UFromSz** 0 (null) zurück. 
   

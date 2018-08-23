@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: bb6ab537-2876-474b-be7a-84734ace2bae
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e1782f3c20c1741e0e4b1859f1b29d835444009c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6f9ac5d9cef09ce6d4f3006ecc804db6291cae77
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795653"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579340"
 ---
 # <a name="supporting-message-service-configuration"></a>Unterstützende Nachricht Dienstkonfiguration
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zur Unterstützung der Nachricht Dienstkonfiguration verwenden Sie die folgende Schritte aus:
   

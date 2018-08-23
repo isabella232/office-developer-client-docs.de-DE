@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3b23291d-3355-d772-4647-d4bbd64b0b53
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bfc03f7fe573005a235154cf179dcf44bf4abd65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 057a1ff38ed3809ce03bce8f820f1d16eea7fb46
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795794"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581125"
 ---
 # <a name="updel"></a>UPDEL
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen für Elemente, die in einem lokalen Speicher gelöscht wurden. Diese Informationen werden während der [Upload löschen Status Zustand](upload-delete-status-state.md)verwendet.
   

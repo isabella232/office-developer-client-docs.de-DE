@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5cd1fbb0-a7d3-49d5-80d0-08a7a2b8831f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e08555d5ea3d26962b7f308a476ba582d13354dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 70e1da0ff9940f343ab9c4c2695a4d438c8f113d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794011"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581468"
 ---
 # <a name="pidnametemplate-canonical-property"></a>PidNameTemplate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Vorlage der Datei, die an das Dokument angefügt ist.
   

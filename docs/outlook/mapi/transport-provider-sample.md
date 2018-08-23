@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ec6eb6c0-bfe3-4989-9071-89a14c0e7bdd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1d0538f02f852580c064560460bb8b2ba54a2f65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3b3ae4170cab109ae96a51eae6e70c674895eeae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795792"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575784"
 ---
 # <a name="transport-provider-sample"></a>Beispiel für einen Transportanbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Beispiel werden Dateien und Verzeichnisse senden und Empfangen von Nachrichten verwendet. Es implementiert und einen sehr einfachen Präprozessor, der eine Textzeile auf jede ausgehende Nachricht anfügt registriert. Im Beispiel veranschaulicht, wie Nachrichteninhalt zwischen Transport Neutral Encapsulation Format (TNEF) und Text teilen. Außerdem werden alle Konfigurationsoptionen (Eigenschaftenseiten, Assistenten und programmgesteuerte Konfiguration) und Nachrichtenoptionen unterstützt. Es wird nicht die remote-Transport-Schnittstellen unterstützt. 
   

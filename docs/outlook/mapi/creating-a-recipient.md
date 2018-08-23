@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 586c901f-d9f9-44f2-a328-051775a81265
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c596cb219cb1096f186e616c05b8372fef3b42a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4d4777077dae5effed9f233dd020628ee0dcfed5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791493"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578045"
 ---
 # <a name="creating-a-recipient"></a>Erstellen eines Empfängers
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients erstellen Empfänger an, wenn sie Nachrichten Adressierung sind und beim Hinzufügen von Einträgen änderbare Address Book Containern. MAPI bietet drei Methoden für das Erstellen von Empfängern:
   

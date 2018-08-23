@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5fa091a4-3a84-4881-91b3-e34fd9ca6f38
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4b6f850c8f88088863b37bd94de6b1f3d4c48d4f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f3a62f6783e3b1a0a0423a08c7f5e866b42b81f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19791292"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569176"
 ---
 # <a name="adrentry"></a>ADRENTRY
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 NULL oder mehrere Eigenschaften, die an einen Empfänger gehören beschrieben.
   
@@ -55,7 +55,7 @@ typedef struct _ADRENTRY
   
 > Zeiger auf ein Wertearray-Eigenschaft, beschreibt die Eigenschaften für den Empfänger. Der **RgPropVals** -Member kann NULL sein. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **ADRENTRY** beschreibt die Eigenschaften, die an einen einzelnen Empfänger gehören. Die folgenden: Eigenschaften, die in der Regel verwendet werden, um einen Empfänger zu beschreiben 
   

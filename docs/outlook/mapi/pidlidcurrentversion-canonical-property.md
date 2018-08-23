@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5894b98c-7d42-416d-b1b7-fb9a18abaaa3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f8d72efa0d6f913ce4263549a5decb3b7d919347
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2da3166e90c5988fdffa6ff736b1fb511794e798
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793481"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568539"
 ---
 # <a name="pidlidcurrentversion-canonical-property"></a>PidLidCurrentVersion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Long-Wert, der die Buildnummer der Outlook-Anwendung für ein Element darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidCurrentVersion  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidCurrentVersion  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008552  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |

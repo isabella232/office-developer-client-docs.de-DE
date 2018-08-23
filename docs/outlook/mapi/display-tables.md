@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c314ff6d-3e60-4b81-87ac-6ca6753ff633
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 556d7551f64e075d1f15a945ddb1409c3b5a775f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 738957d7fc9567a2e8202802edebd16cf57fbffd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791589"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581643"
 ---
 # <a name="display-tables"></a>Anzeigetabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt die Tabelle wird beschrieben, wie zum Anzeigen eines bestimmten Typs des Dialogfelds – eine müssen mindestens mit Registerkarten Eigenschaftenseiten zum Anzeigen und Bearbeiten von möglicherweise eine oder mehrere Eigenschaften. Verknüpft ist mit jedem Display-Tabelle ist eine [IMAPIProp: IUnknown](imapipropiunknown.md) Schnittstelle Implementierung. Die Implementierung **IMAPIProp** verwaltet die Daten, die angezeigt werden im Dialogfeld. 
   

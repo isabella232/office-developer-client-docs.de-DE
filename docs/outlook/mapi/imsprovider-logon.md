@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 890d9cbe-3570-4cf0-aeae-667c0e5ba181
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b89c8129f68852bdd243a7f984497ab312aa2551
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a8359657e4a1d52afa272898d3f6b417aa8181af
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792702"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567636"
 ---
 # <a name="imsproviderlogon"></a>IMSProvider::Logon
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Protokolle MAPI an eine Instanz der Anbieter eine Nachricht.
   
@@ -152,7 +152,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md). Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI-Aufrufen die **IMSProvider::Logon** -Methode dazu die Mehrzahl der Verarbeitung erforderlich sind, um Zugriff auf einen Nachrichtenspeicher zu erhalten. Nachricht Anbieter Überprüfen von Anmeldeinformationen erforderlich sind, um Zugriff auf einen bestimmten Speicher und ein Message Store-Objekt zurückzugeben, der _LppMDB_ -Parameter, der die MAPI-Warteschlange und Clientanwendungen anmelden können. 
   

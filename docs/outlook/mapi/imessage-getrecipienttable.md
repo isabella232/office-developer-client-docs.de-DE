@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a335dfca-44da-452e-b16f-25d314b1758f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 90ae9cee915296475d7fe64952b40ab7344e89e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5908069f5fa887fd9d2e3f8c0df75f2e3d69515c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792513"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579536"
 ---
 # <a name="imessagegetrecipienttable"></a>IMessage::GetRecipientTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Empfänger der Nachricht-Tabelle zurück.
   
@@ -58,7 +58,7 @@ S_OK
   
 > Die Empfänger Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMessage::GetRecipientTable** -Methode gibt einen Zeiger auf Empfänger die Nachricht-Tabelle, die Informationen zu allen der Empfänger der Nachricht enthält. Es wird eine Zeile für jeden Empfänger. 
   

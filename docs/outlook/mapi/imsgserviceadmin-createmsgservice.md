@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0135f049-0311-45e5-9685-78597d599a4e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6e0bdd7108bacd17134592ac05ba71510fde76d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7c649680d1d04e210ac4d90779e9a4e57aaab25a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792634"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579865"
 ---
 # <a name="imsgserviceadmincreatemsgservice"></a>IMsgServiceAdmin::CreateMsgService
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Veraltet: Die Verwendung von [IMsgServiceAdmin2::CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) wird empfohlen. Fügt einen Nachrichtendienst zum aktuellen Profil hinzu. 
   
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > Der Dienstname Nachricht ist nicht in der MapiSvc.inf im Abschnitt **[Services]** . 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin:: CreateMsgService** -Methode wird das aktuelle Profil ein Messagingdiensts hinzugefügt. **CreateMsgService** Ruft die Messagingdiensts Eintrag Point-Funktion, um alle dienstspezifische Konfigurationsaufgaben ausführen. Wenn das Flag SERVICE_UI_ALLOWED im _UlFlags_ -Parameter festgelegt ist, kann der Message-Dienst installiert wird ein Eigenschaftenblatt zum Aktivieren des Benutzers so konfigurieren Sie ihre Einstellungen anzeigen. 
   

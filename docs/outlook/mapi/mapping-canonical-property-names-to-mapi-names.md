@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 43c7225b-8f9f-47a2-aadf-36a249b2d78e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6693326df818d2792d7448407148e57d53fff86f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f82d5a13066294e8c007f70cd7f54d286ab8b02d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793244"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579361"
 ---
 # <a name="mapping-canonical-property-names-to-mapi-names"></a>Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema wird jede kanonische Eigenschaftsnamen der MAPI-Eigenschaft oder die betreffenden Eigenschaften zugeordnet. Das Thema enthält drei Tabellen: einer Tabelle für benannte Eigenschaften mit numerischen Bezeichner, eine zweite Tabelle für benannte Eigenschaften mit String-IDs und einer dritten Tabelle für markierte Eigenschaften.
   
@@ -317,7 +317,7 @@ Weitere Informationen zu Eigenschaften von kanonischen beziehen sich auf MAPI-Ei
 |[PidNameByteCount](pidnamebytecount-canonical-property.md) <br/> |ByteCount  <br/> |
 |[PidNameCategory](pidnamecategory-canonical-property.md) <br/> |Kategorie  <br/> |
 |[PidNameCharacterCount](pidnamecharactercount-canonical-property.md) <br/> |CharCount  <br/> |
-|[PidNameComments](pidnamecomments-canonical-property.md) <br/> |Kommentare  <br/> |
+|[PidNameComments](pidnamecomments-canonical-property.md) <br/> |Comments  <br/> |
 |[PidNameCompany](pidnamecompany-canonical-property.md) <br/> |Unternehmen  <br/> |
 |[PidNameContentBase](pidnamecontentbase-canonical-property.md) <br/> |Content-Base  <br/> |
 |[PidNameContentClass](pidnamecontentclass-canonical-property.md) <br/> |"Content-Class"  <br/> |

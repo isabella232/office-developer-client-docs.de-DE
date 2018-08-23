@@ -11,28 +11,28 @@ api_name:
 api_type:
 - COM
 ms.assetid: 40b50181-f88c-40ee-b3d0-a36dd36c158e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 41d1a4abe79892fa1c9c8789e159a19645318497
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 263b7eb0de7fe724625d99c3f08ad12d5740dd52
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795003"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581636"
 ---
 # <a name="pidtagroamingdictionary-canonical-property"></a>PidTagRoamingDictionary (kanonische Eigenschaft)
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein XML-Dokument, das Wörterbuch für die roaming beschreibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROAMING_DICTIONARY  <br/> |
-|Bezeichner:  <br/> |0x7C07  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROAMING_DICTIONARY  <br/> |
+|Kennung:  <br/> |0x7C07  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält einen UNICODE-XML-Dokument, die die UTF8-Codierung verwendet. Eine Nachricht mit einem Wörterbuch Stream muss diese Eigenschaft mit dem folgenden Schema festlegen:
   

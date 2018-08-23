@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 593f57d7-2891-40d1-a661-478a62d490ff
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ec1d826ee2b3b46685a2c03dfaf45d2843869cc5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8192646007e8935a750a70e46b8210eebbc353f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795736"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578535"
 ---
 # <a name="tnef-correlation-in-smtp-gateways-and-transports"></a>TNEF-Korrelation in SMTP-Gateways und Transport
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gateways und Transport, die mit dem Internet verbunden-basierte Systeme, mit denen SMTP verwenden, verwenden Sie den Wert von MessageID SMTP-Kopfzeile und die **PR_TNEF_CORRELATION_KEY** -Eigenschaft zur Implementierung einer TNEF Korrelation. 
   

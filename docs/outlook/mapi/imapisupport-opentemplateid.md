@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 532f7af0-b2cc-49dd-b1de-e3ec1dc9a3e7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f99843bcdf3689acad72145a33d6a9804175a413
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 855810f7ac3bc1bd433ddd56aba3fe1f938b9559
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792408"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575385"
 ---
 # <a name="imapisupportopentemplateid"></a>IMAPISupport::OpenTemplateID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Empfänger Eintrag in einem fremden Adressbuchanbieter.
   
@@ -83,7 +83,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die foreign-Adressbuchanbieter ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::OpenTemplateID** -Methode ist nur für Address Book Anbieter Unterstützungsobjekte implementiert. **OpenTemplateID** wird nur von adressbuchanbietern implementierte aufgerufen, die als Hosts für Einträge verwendet werden können, die andere adressbuchanbietern implementierte, auch bekannt als fremden Anbietern angehören. Hostanbieter Aufrufen **OpenTemplateID** um einen fremden Eintrag öffnen, in dem tritt auf, wenn Daten in Hostanbieter Code im fremden Anbieter gebunden ist. 
   

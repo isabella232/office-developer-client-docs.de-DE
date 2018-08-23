@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ead51434-ae19-4c34-aa7a-bdeeccca5bd9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4bd64aadd5fc18ba79a8717a5c58df72cd3695ff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 855b145bcca8007601eb8e841665306d4c58982f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792930"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576561"
 ---
 # <a name="mapi-address-book-provider-overview"></a>Übersicht über die MAPI-Adresse Adressbuch-Anbieter
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Adressbuch Anbieter Handle Zugriff auf Verzeichnisinformationen. Verzeichnisinformationen besteht aus Daten für zwei Arten von Nachrichtenempfängern: einzelne messaging-Benutzer und Gruppen von messaging-Benutzer, die häufig miteinander in Verteilerlisten behandelt werden. Je nach Art der Empfänger und die Adressbuchanbieter ist eine Vielzahl von Informationen, die verfügbar gemacht werden kann. Beispielsweise speichern alle adressbuchanbietern implementierte Name, Adresse und Adresstyp des Empfängers.
   
@@ -35,5 +35,5 @@ Die Benutzer der Clientanwendungen können den Inhalt der Address Book Container
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+- [MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

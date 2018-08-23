@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d5fabc40-71e8-4afa-9846-533da605ce6c
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: e3d6844f8fe6121d6ea063a9594aaf1fed581ee5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a94d1230f4f26d080976fd15768bdfeb6ea04748
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795652"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576099"
 ---
 # <a name="supporting-message-attachments-for-message-store-providers"></a>Unterstützen von Nachrichtenanlagen für Nachrichtenspeicheranbieter
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ihre Nachricht Speicheranbieter muss nicht zur Unterstützung von e-Mail-Anlagen. Erwarten jedoch viele Clientanwendungen Anlagen zu Nachrichten hinzufügen können. Wenn Ihre Nachrichtenspeicher zum Erstellen oder IPM Speichern verwendet wird. Beachten Sie Nachrichten, und klicken Sie dann Sie e-Mail-Anlagen unterstützen soll. Standard-Nachricht Anbieter sollten auch e-Mail-Anlagen unterstützen. Weitere Informationen finden Sie unter [MAPI Message Classes](mapi-message-classes.md)und [Nachrichtenspeicher Standard](default-message-stores.md).
   

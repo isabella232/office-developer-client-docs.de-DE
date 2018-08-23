@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: b6a5096f-ad27-48b3-b569-f33efc20fa72
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e68211049bc0f958ae24975f4ab4063953eef567
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9fb372e504eaeb55861b09c4151956fb102c08f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792087"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577149"
 ---
 # <a name="imapiclientshutdown--iunknown"></a>IMAPIClientShutdown : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht einen MAPI-Client, um das schnelle Herunterfahren des Clientprozesses auszuführen. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |[IMAPISession](imapisessioniunknown.md) -Objekt  <br/> |
+|Verfügbar gemacht von:  <br/> |[IMAPISession](imapisessioniunknown.md) -Objekt  <br/> |
 |Implementiert von:  <br/> |MAPI-Subsystems  <br/> |
 |Aufgerufen von:  <br/> |MAPI-client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIClientShutdown  <br/> |
@@ -44,7 +44,7 @@ Ermöglicht einen MAPI-Client, um das schnelle Herunterfahren des Clientprozesse
 |[NotifyProcessShutdown](imapiclientshutdown-notifyprocessshutdown.md) <br/> |Gibt an, fahren Sie der Zweck der MAPI-Client, fortsetzen.  <br/> |
 |[DoFastShutdown](imapiclientshutdown-dofastshutdown.md) <br/> |Gibt an, dass der MAPI-Client der Client sofort zu beenden.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Schnelles Herunterfahren dient, dass ein MAPI-Client und alle geladenen MAPI-Anbieter mit dem der MAPI-Client eine aktive MAPI-Sitzung MAPI-Einstellungen und Daten gespeichert wurde. Auf diese Weise können den MAPI-Client, trennen alle externen Verweise und zu beenden, ohne Datenverlust verursacht. Ein MAPI-Client, der muss Schnelles Herunterfahren ausführen, muss die **IMAPIClientShutdown** -Schnittstelle verwenden. Der MAPI-Client kann einen Zeiger auf diese Schnittstelle abrufen, durch die QueryInterface-Methode für jedes Objekt [IMAPISession](imapisessioniunknown.md) aufrufen. 
   

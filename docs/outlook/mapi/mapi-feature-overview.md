@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 22cf56c5-2804-40a8-99e6-a6d127897720
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ff3677a2bbc8ca54e5bc96ae1e873e3efd3c6bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 034f3dd8bc68462348bc92a8acf2904ab66fc798
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792979"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575609"
 ---
 # <a name="mapi-feature-overview"></a>MAPI-Features (Übersicht)
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI hat mehrere wichtige Features, mit denen sie einheitlich für Entwickler zu arbeiten mit verschiedenen Messagingsystemen nahtlos Weise bereitstellen. Diese Features enthalten einen umfassenden und Programmierschnittstelle öffnen und Unterstützung für Industriestandards. 
   
@@ -37,5 +37,5 @@ MAPI bietet plattformübergreifende Unterstützung durch eine solche Branchensta
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+- [MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

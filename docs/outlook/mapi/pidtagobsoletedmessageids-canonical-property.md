@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bc979398-f1ad-4496-b982-428b95719369
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b15b87064cc30035004596e93c20ca7d5f653c9f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1717e30679fb3f6721690db75fb5dd402048eb09
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794678"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575049"
 ---
 # <a name="pidtagobsoletedmessageids-canonical-property"></a>PidTagObsoletedMessageIds (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Bezeichner der Nachrichten, die diese Meldung hat Vorrang vor.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OBSOLETED_IPMS  <br/> |
-|Bezeichner:  <br/> |0x001F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OBSOLETED_IPMS  <br/> |
+|Kennung:  <br/> |0x001F  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die in dieser Eigenschaft enthaltenen Bezeichner sind standard Search-Schlüssel mit dem Format der **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft.
   

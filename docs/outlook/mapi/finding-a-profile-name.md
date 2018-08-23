@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 18df25b7-16b7-44cd-a9a0-5276966c1fd4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 332b78bcebbcd54de43376553ec4aea386c1c359
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a32c73f8a907b371c4d0f1c07050d44fd45801ec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791682"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576288"
 ---
 # <a name="finding-a-profile-name"></a>Suchen nach einem Profilnamen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In einigen Fällen müssen Clients suchen den Namen des Profils wird derzeit für die Sitzung, den Namen des Standardprofils oder den Namen eines alternativen Profils auf dem Computer installierten verwendet.
   

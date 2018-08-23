@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 02e5b23f-1bdb-4fbf-a27d-e3301a359573
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ed11677d09ae5acacced77373b2bca783d1ec0b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 40a71592e658110dab81c9bcb4aec97f9930d014
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793055"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576477"
 ---
 # <a name="mapi-property-overview"></a>Übersicht über die MAPI-Eigenschaft
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Eigenschaft ist ein Attribut eines MAPI-Objekts. Eigenschaften beschreiben etwas über das Objekt, wie etwa der Betreffzeile einer Nachricht oder Adresstyp ein messaging-Benutzer. MAPI definiert viele Eigenschaften, einige viele Objekte beschreiben und einige, die nur für ein Objekt eines bestimmten Typs geeignet sind. Clients und Dienstanbieter können Satz vordefinierter Eigenschaften des MAPI-erweitern, indem Sie neue, benutzerdefinierte Eigenschaften erstellen. Clients können Eigenschaften, um neue Nachrichtenklassen beschreiben definieren, und Dienstanbieter können definieren, Eigenschaften, um die eindeutigen Features messaging-System verfügbar zu machen.
   
@@ -45,5 +45,5 @@ Die **SPropTagArray** -Struktur ist ein gezählte Eigenschaftentags-Array. Viele
 
 
 
-[MAPI-Konzepte (engl.)](mapi-concepts.md)
+[MAPI-Konzepte](mapi-concepts.md)
 

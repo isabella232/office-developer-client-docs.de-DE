@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 303c9dcb-f9b5-4cea-b5f2-3eba01aa3b09
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 54b2dece31937b1ff233d4d1e7d8bbc198bfe118
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d3b20c9fb4b4f1a26eb4ed1a9a498bd56a915a70
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792705"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579781"
 ---
 # <a name="installing-a-form-into-a-library"></a>Installieren eines Formulars in einer Bibliothek
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der standardmäßigen MAPI Formular-Manager mit dem Windows SDK bereitgestellte bietet keine Benutzeroberfläche für die Installation von Formularen in die verschiedenen Formularbibliotheken. Aus diesem Grund müssen Sie eine kleine Anwendung erstellen – oder detaillierte Anweisungen –, dass Benutzer verwenden können, um das Formular zu installieren.
   

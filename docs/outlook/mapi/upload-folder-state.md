@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270b1df0-c5cd-0d0f-7b57-2726dee978ab
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 82b00a33c5de11b3fc9ccd3bde4cf31c79b99c2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ae8c3c4012874e1ca35761b103066cceebb1b165
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795797"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576750"
 ---
 # <a name="upload-folder-state"></a>Status „Uploadordner“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, was geschieht, während der Upload Ordner Zustand des Computers Zustand Replikation. 
   
@@ -54,5 +54,5 @@ Nach Ende der Ordner Upload gibt der lokale Speicher in den Upload Hierarchie Zu
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCSTATE](syncstate.md)
+[SYNCHRONISIERUNGSSTATUS](syncstate.md)
 

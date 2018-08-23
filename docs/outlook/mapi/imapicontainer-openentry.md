@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0c46c1fb-dd63-4ac5-960e-80f68e75d8f4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c13ab9ce9c2564c39bfe9b2689f05439bc7b74ff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: cd93866ae8823eb5897318fc2dda4e8432d974b0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792068"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578465"
 ---
 # <a name="imapicontaineropenentry"></a>IMAPIContainer::OpenEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet ein Objekt im Container einen Schnittstellenzeiger für den weiteren Zugriff zurückgibt.
   
@@ -98,7 +98,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter ist nicht vom durch das Container erkanntes Format. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIContainer::OpenEntry** -Methode öffnet ein Objekt in der gesamten ein Container und gibt einen Zeiger auf eine Implementierung für weitere Access verwenden. 
   

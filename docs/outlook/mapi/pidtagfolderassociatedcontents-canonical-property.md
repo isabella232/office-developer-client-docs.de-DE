@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d1f3f589-dc2d-4538-a13f-278dad29bcc7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fe6395029e312a19bce6252e73b4616bb0aa0851
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ae09488b99cd55e5cfca23f504d81ac5919633d3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794373"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574153"
 ---
 # <a name="pidtagfolderassociatedcontents-canonical-property"></a>PidTagFolderAssociatedContents (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine eingebettete Inhalt Table-Objekt, das Informationen über die Inhaltstabelle zugeordneten bereitstellt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FOLDER_ASSOCIATED_CONTENTS  <br/> |
-|Bezeichner:  <br/> |0x3610  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FOLDER_ASSOCIATED_CONTENTS  <br/> |
+|Kennung:  <br/> |0x3610  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der zugehörige Inhaltstabelle stellt einen Unterordner, der nicht in der Inhaltstabelle standard angezeigt wird. Sie enthält den Ordner verknüpft oder ausgeblendet, Nachrichten. 
   

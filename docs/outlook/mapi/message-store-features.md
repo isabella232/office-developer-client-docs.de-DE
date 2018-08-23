@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d9167cd2-fc88-46b1-9a26-151955fb606c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a26701b5b0f9f31277a442321e5e3016cfcb4d1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7e99d9d2e1289ed98ba659e97b05c8ea6d891a74
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793259"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581811"
 ---
 # <a name="message-store-features"></a>Nachrichtenspeicherfunktionen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Anbieter sind komplexer als andere MAPI-Dienstanbieter in diesem Anbieter Nachricht einen größeren Bereich von optionale Features, die sie implementieren können. Die Liste der erforderlichen Features für eine Nachricht Speicheranbieter ist relativ kurz. Eine typische Nachricht Speicheranbieter unterstützt eine Reihe von optionalen Features jedoch, da viele der optionalen Features sehr nützlich oder von den meisten MAPI-Clients erforderlich sind. Die folgende Tabelle enthält die wichtigsten Features, dass Nachricht Anbieter implementieren können und speichern Anbieter und für Standardnachricht speichern-Anbieter, ob jedes Feature erforderlich oder optional für alle Nachricht ist.
   

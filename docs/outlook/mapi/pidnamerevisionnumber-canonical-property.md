@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f0ea9833-81b8-4d9d-b91d-1a141c3f3725
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 269220e1155b49fb535d5f922486835fa9f9ff2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 78ea7d6c830be6af3ee8cf63167fe74b3acc34e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793980"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578374"
 ---
 # <a name="pidnamerevisionnumber-canonical-property"></a>PidNameRevisionNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Revisionsnummer an der Datei, die an das Dokument angefügt ist.
   

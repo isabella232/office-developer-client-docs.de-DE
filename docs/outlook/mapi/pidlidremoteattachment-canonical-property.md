@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: dcd786e2-5b93-4a4c-933a-df305abe4bcb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ae88b30baf73f3c90446f5cf0e3466ab6b86deac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a990c3622b9f37332056c162dce9445fd5b2947e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793759"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582343"
 ---
 # <a name="pidlidremoteattachment-canonical-property"></a>PidLidRemoteAttachment (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob ein Remoteelement eine Anlage zugeordnet ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidRemoteAttachment  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidRemoteAttachment  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Remote  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008F07  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

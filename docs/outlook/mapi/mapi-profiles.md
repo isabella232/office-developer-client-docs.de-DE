@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 493c87a4-317d-47ec-850b-342cac59594b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7f241fde8aedeae9debc66f728ee21c1c6bed6fb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3c6701f5b7f63fdc7d21b219a5588feb0580db48
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793040"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579858"
 ---
 # <a name="mapi-profiles"></a>MAPI-Profile
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Profil speichert Informationen zu Dienstanbietern und Message-Dienste, die auf einem Computer installiert sind. Für jede Sitzung wählt ein Client bei der Anmeldung ein Profil, das den Anbieter und die Dienste zu verwendende beschreibt. Ein Client kann eine als Standard auswählen aus einer Auflistung von Benutzerprofilen und, bei Bedarf einrichten. Das Standardprofil ist das Profil, das automatisch ausgewählt wird, wenn ein Client eine Sitzung startet und ein Profil nicht explizit angegeben wurde.
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: db5ce6576da6f925093ae413c5c5124b2a1a996f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5cb791d0d350a04864191a0a9d35a2f1c8b165d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791863"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577716"
 ---
 # <a name="link-to-mapi-functions"></a>Link zu MAPI-Funktionen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es gibt drei Methoden verknüpfen: implizite Verknüpfung, explizite Verknüpfung und die MAPI-Stub-Bibliothek mit neuen Hybridmodell bereitgestellt.
   
@@ -125,7 +125,7 @@ MAPI-Stub-Bibliothek Computerdateien und Informationen zum Erstellen und integri
   
 ## <a name="see-also"></a>Siehe auch
 
-- [�bersicht �ber die MAPI-Programmierung](mapi-programming-overview.md)
+- [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 - [Installieren des MAPI-Subsystems](installing-the-mapi-subsystem.md)
 - [Installieren der MAPI-Headerdateien](how-to-install-mapi-header-files.md)
 - [Auswählen einer bestimmten zu ladenden MAPI-Version](how-to-choose-a-specific-version-of-mapi-to-load.md)

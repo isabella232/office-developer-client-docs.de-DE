@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 417c113f-bd98-4515-85d1-09db7fc3a227
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1146fa0441d0b55a7610368324489bd3a6bb24e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cf7876dacac40420fdedb8b6f55c99efcf56c4f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793023"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579935"
 ---
 # <a name="mapi-messages"></a>MAPI-Nachrichten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachrichten werden MAPI-Objekten, die von einer Clientanwendung an eine andere über die MAPI-Warteschlange und Dienstanbieter in einem messaging-System übertragen werden. Fast jeder Komponente in MAPI arbeitet mit Nachrichten. Clients können Benutzer erstellen, speichern, senden und Löschen von Nachrichten in zusätzlich zu kopieren und verschieben Sie sie aus einem Ordner in einen anderen. Nachricht Anbieter sind verantwortlich für die Verwaltung von Nachrichten und zum Übermitteln von Nachrichten an die Warteschlange MAPI oder eines Transportdienstes. Die MAPI-Warteschlange verschiebt Nachrichten an einen entsprechenden Transport Dienstanbieter während Transportanbieter, die Bereitstellung und den Empfang von Nachrichten an und von einem messaging-System behandeln und Empfänger und Nachricht Optionseigenschaften. Von adressbuchanbietern implementierte arbeiten indirekt mit Nachrichten, Unterstützung von Eigenschaften, die Empfänger der Nachricht zu beschreiben.
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 20788f40-a7a4-44f7-8e43-efd3a34e6b10
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 34a0989b226d5d214f7c7b0a4c95df5ba9b5d865
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cd5eb15a635f87741ad4ef6c837bbe540c2b7242
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793687"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574020"
 ---
 # <a name="pidlidnotewidth-canonical-property"></a>PidLidNoteWidth (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Breite des Fensters sichtbar Nachricht in Pixeln an. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidNoteWidth  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidNoteWidth  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Note  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008B02  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kurznotizen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieser Wert muss größer als NULL sein.
   

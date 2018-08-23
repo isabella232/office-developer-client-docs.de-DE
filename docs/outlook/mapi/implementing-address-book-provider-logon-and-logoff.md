@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c4a1fb5d-ae23-445b-a6f0-ef430b03fc9a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ffde0814fe5024a3f89a93462c48136712f1013
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f26e7b7ec607c9714012870d5367a0e775c62f34
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792552"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572102"
 ---
 # <a name="implementing-address-book-provider-logon-and-logoff"></a>Implementieren einer An- und Abmeldung für Adressbuchanbieter
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Von adressbuchanbietern implementierte Sitzung an- und Abmelden durch Implementierung die Methoden des unterstützen die [IABProvider: IUnknown](iabprovideriunknown.md) Schnittstelle. Die ** IABProvider ** Schnittstelle erbt direkt von **IUnknown** und fügt nur zwei andere Methoden: **Anmelden** und **Herunterfahren**. 
   

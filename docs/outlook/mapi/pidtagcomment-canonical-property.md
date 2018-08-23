@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5750cf95-8581-43a7-a465-f4114b2939f2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1153b1bf248f8f2ce6672f5ee0f30c90124370fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e3ba97a9538b6c773c041eb7b890e834da6f0d83
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794174"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579116"
 ---
 # <a name="pidtagcomment-canonical-property"></a>PidTagComment (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Kommentar zum Zweck oder Inhalt eines Objekts. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_COMMENT, PR_COMMENT_A, PR_COMMENT_W  <br/> |
-|Bezeichner:  <br/> |0x3004  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_COMMENT, PR_COMMENT_A, PR_COMMENT_W  <br/> |
+|Kennung:  <br/> |0x3004  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Inhalt der Zeichenfolge wird durch die messaging-Benutzer definiert. 
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c9ceca01-9c4e-4b59-8171-a4c2d6aca45d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 70c3c0b60e4792c46d5cba8d40e810664ab3fbb0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f310439b3a1d8a45215b220dcd7565e821d81f01
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794231"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572802"
 ---
 # <a name="pidtagcontentlength-canonical-property"></a>PidTagContentLength (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Nachrichtenlänge in Bytes wird an eine Clientanwendung oder Dienstanbieter zu ermitteln, ob eine Nachricht dieser Länge übermittelt werden kann. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTENT_LENGTH  <br/> |
-|Bezeichner:  <br/> |0 x 0009  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTENT_LENGTH  <br/> |
+|Kennung:  <br/> |0 x 0009  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    

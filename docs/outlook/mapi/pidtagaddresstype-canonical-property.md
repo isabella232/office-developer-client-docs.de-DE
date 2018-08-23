@@ -11,28 +11,28 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 986719d2-8837-46b4-8d04-c24508f5e19a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5398519dc841aa72f2c2655aac6c9f7acba7f335
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 464121a969beea06294049985052eb150651765f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794069"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580089"
 ---
 # <a name="pidtagaddresstype-canonical-property"></a>PidTagAddressType (kanonische Eigenschaft)
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die messaging-Benutzer e-Mail-Adresstyp wie SMTP.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ADDRTYPE, PR_ADDRTYPE_A, PR_ADDRTYPE_W  <br/> |
-|Bezeichner:  <br/> |0x3002  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ADDRTYPE, PR_ADDRTYPE_A, PR_ADDRTYPE_W  <br/> |
+|Kennung:  <br/> |0x3002  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für allgemeine Eigenschaften Basisadresse an alle messaging-Benutzer. Es gibt an, welche messaging MAPI verwendet, um eine bestimmte Nachricht zu verarbeiten.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f75ea086-9d65-4396-a2e3-1751351e56d3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7877667d78cf844cce9ff8c183ff1dc575fa2798
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 601734fbaf3157fd0f3f3637b807a511076a6124
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794257"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577611"
 ---
 # <a name="pidtagconversioneits-canonical-property"></a>PidTagConversionEits (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die codierten Informationstypen (EITs), die auf eine Nachricht während der Übertragung Konvertierungen beschreiben angewendet werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONVERSION_EITS  <br/> |
-|Bezeichner:  <br/> |0x000C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONVERSION_EITS  <br/> |
+|Kennung:  <br/> |0x000C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 X. 400-Umgebungen verwenden Sie diese Eigenschaft für ein Unzustellbarkeitsbericht und Delivery Reports.
   

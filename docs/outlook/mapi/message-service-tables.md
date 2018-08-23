@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b93ab837-3918-4427-b013-bedc6f5276e4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 81772115fcd4f081718dd560759f6ab93dc7c11c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 569c1bd7ee2f4ac6c321f234be2954a57715549b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793275"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576669"
 ---
 # <a name="message-service-tables"></a>Nachrichtendiensttabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Nachricht Service-Tabelle enthält Informationen zu den Diensten Nachricht im aktuellen Profil. Es wird eine Meldung-Service-Tabelle für jede MAPI-Sitzung, MAPI Implementierung und Verwendung von speziellen-Clientanwendungen, die Konfiguration unterstützen. 
   

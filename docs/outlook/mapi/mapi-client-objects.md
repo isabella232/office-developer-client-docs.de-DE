@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 11304a4c-d986-4ad9-a140-19a59825a8df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fb37c15e6544798a956e865e6c8c6d62bee44d28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4242e466b0e784bb260d0525db0e253f1c1f37f3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792965"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568770"
 ---
 # <a name="mapi-client-objects"></a>MAPI-Client-Objekte
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Standard-Client-Messaginganwendungen implementieren nur ein Objekt – Advise-Empfänger. Advise-Senken von erben die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) Schnittstelle und werden von MAPI verwendet und Dienstanbieter für ereignisbenachrichtigung. Einige Clients implementieren auch Fortschritt-Objekte, die die Anzeige von Dialogfeldern Fortschritt zu unterstützen. 
   

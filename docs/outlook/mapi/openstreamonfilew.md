@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 263b9f24-eac8-4d34-8f66-dc87024b94b9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 127c4a77b9184d8bb62925c5237c1aedec643992
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dc8644a658b8aca97f80fcf0a942551509064bd6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793322"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581559"
 ---
 # <a name="openstreamonfilew"></a>OpenStreamOnFileW
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Reserviert und initialisiert ein OLE- **IStream** -Objekt Zugriff auf den Inhalt einer Datei. Diese Funktion akzeptiert Unicode-Zeichenfolgen als Argumente, im Gegensatz zu ANSI-Version dieser Funktion [OpenStreamOnFile nicht ausgeführt werden](openstreamonfile.md), und daher kann für beliebige Zeichen in den Dateinamen einschließlich der Erweiterungs Pfad und den Dateinamen.
   
@@ -104,7 +104,7 @@ MAPI_E_NOT_FOUND
   
 > Die angegebene Datei ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **OpenStreamOnFileW** -Funktion besitzt zwei wichtige Verwendungen neben der Behandlung von einer Datei mit einem Unicode-Namen, durch die Einstellung des Flags SOF_UNIQUEFILENAME unterschieden. Wenn dieses Flag nicht festgelegt ist, wird **OpenStreamOnFileW** **IStream** -Objekts auf eine vorhandene Datei, zum Beispiel zum Kopieren von seinen Inhalt der **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))-Eigenschaft einer Anlage, die mit der **geöffnet. :: CopyTo** Methode. In diesem Fall gibt der Parameter _LpszFileName_ den Pfad und Dateinamen der Datei an. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ba154612-1b0f-4ef3-8d9f-7981b1c61a2c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dc273e757f173515e8c49827c1a55aa04e1faaf0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1e2f09779a4f2bfa1a41810841dc16f44ff80119
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793466"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578269"
 ---
 # <a name="pidlidappointmentunsendablerecipients-canonical-property"></a>PidLidAppointmentUnsendableRecipients (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Teilnehmer zu senden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptUnsendableRecips  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptUnsendableRecips  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000823D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist nicht erforderlich, aber festgelegt werden sollte. Das Format wird in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)ausführlich beschrieben.
   

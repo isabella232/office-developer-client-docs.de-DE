@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b3646505-a9f0-4a72-8277-b238c909f66f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 95972d53f20f432bc8007f8bbc6734889773f938
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4efe68745c10521de243677c10a9ca32debd7122
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794974"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577800"
 ---
 # <a name="pidtagreporttime-canonical-property"></a>PidTagReportTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Uhrzeit, wann das messaging-System ein Bericht erstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_TIME  <br/> |
-|Bezeichner:  <br/> |0x0032  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_TIME  <br/> |
+|Kennung:  <br/> |0x0032  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft stellt eine Eigenschaft pro Empfänger zur Übermittlung und Nondelivery Berichte und eine-Message-Eigenschaft für Berichte lesen und nonread dar. 
   

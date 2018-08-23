@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4d0ff834-253b-4e8c-a5be-6e4745a2a66c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6b82a755cbf2c8bd0f1d3676d4560e131dce3bd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: bfaa4fd5f561c8138461db6ce8b9033c2a75b96b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791741"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580628"
 ---
 # <a name="formatted-text-in-mapi"></a>Formatierter Text in MAPI
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Text einer Nachricht gespeichert werden kann und mit unformatiertem Text gesendet oder formatierter Text. Formatierter Text erhöht den Nachrichtentext durch seine Darstellung mit, beispielsweise eine oder mehrere Schriftarten, Schriftgrößen oder Textfarben ändern. Es wird empfohlen, alle Clients und möglichst unterstützen alle Nachricht Speicher-Anbieter formatierten Text. Unterstützung von formatierten Text in Nachrichten fügt Wert durch Verbesserung der Lesbarkeit Nachricht und tätigen Nachrichtenbehandlung einfacher und effizienter hinzu.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3c911694-b953-4d35-9a3a-22c17cfd79bc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8c8c89f3626d54f04896ad54de5d7e480dd9b568
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2f8235caceec8b27b2b14fac26d51e9e31ce1024
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792591"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22579774"
 ---
 # <a name="implementing-thread-safe-objects"></a>Implementieren von threadsicheren Objekten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bei Objekten, die direkt von Schnittstelle-Methodenaufrufen zurückgegeben werden, ist es des Anbieters Verantwortung Threadsicherheit sicherzustellen. Mit Callback-Objekten ist es der Clientanwendung Verantwortung.
   

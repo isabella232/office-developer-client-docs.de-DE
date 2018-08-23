@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25af3683-3a65-2d39-6f6e-76c8d36f866d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 032f071e18af3a89a2850cf2bd1e141f34bc86d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 69023d2c13037fb52a4d1dc4f7376efbd839aebc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792038"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22581699"
 ---
 # <a name="iconvertersessionsetcharset"></a>IConverterSession::SetCharSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass eine optional, die die MAPI zur Verwendung von MIME-Konverter Zeichensatz beim Konvertieren einer MAPI-Nachricht in eine MIME-Stream.
   

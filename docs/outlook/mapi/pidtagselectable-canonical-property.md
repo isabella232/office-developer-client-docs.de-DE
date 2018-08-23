@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: eeecd957-dd50-4849-9698-8bc7106301e9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 225c435107ba79183c737ddb8e09cda1ffbd83f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d376a5219125866f467be01709a6a611ed8d47f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795119"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576421"
 ---
 # <a name="pidtagselectable-canonical-property"></a>PidTagSelectable (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Eintrag in der einmaligen Tabelle ausgewählt werden kann. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SELECTABLE  <br/> |
-|Bezeichner:  <br/> |0x3609  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SELECTABLE  <br/> |
+|Kennung:  <br/> |0x3609  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adressbuchcontainer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in erster Linie für die visuelle Formatierung einer einmaligen Tabelle verwendet. Vorlagen können, indem Sie einen Eintrag, der angibt, die Überschrift für die Gruppe erstellen gruppiert werden. Durch Festlegen dieser Eigenschaft auf false festgelegt, für die Überschrift wird sichergestellt, dass der Benutzer nur die eigentlichen Vorlagen in der Gruppe und nicht bei diesem Eintrag Überschrift auswählen kann. 
   

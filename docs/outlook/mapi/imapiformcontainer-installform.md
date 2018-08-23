@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b39ca52c-4dbe-41c0-9e1b-3998a9dc9742
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d329d3a14b6026d0bd62df9feba6ccff251e4151
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fd7bc8f051e9584fc63f22bdbaf9696c2e4d15a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792147"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580936"
 ---
 # <a name="imapiformcontainerinstallform"></a>IMAPIFormContainer::InstallForm
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wird ein Formular in einer Formularbibliothek installiert.
   
