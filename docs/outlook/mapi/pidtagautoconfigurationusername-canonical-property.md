@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: 05dfa0e2-4ab1-4f57-9009-6a815aca87bd
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f6f31905a7a5574d86f569664c907ad65fc64c93
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c061760fd089db0e56c79479d2d095627355d72e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794129"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590547"
 ---
-# <a name="pidtagautoconfigurationusername-canonical-property"></a><span data-ttu-id="9fb2a-103">PidTagAutoConfigurationUserName (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="9fb2a-103">PidTagAutoConfigurationUserName Canonical Property</span></span>
+# <a name="pidtagautoconfigurationusername-canonical-property"></a><span data-ttu-id="5d7ac-103">PidTagAutoConfigurationUserName (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="5d7ac-103">PidTagAutoConfigurationUserName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="9fb2a-104">**Gilt für**: Outlook</span><span class="sxs-lookup"><span data-stu-id="9fb2a-104">**Applies to:** Outlook \*</span></span> 
+<span data-ttu-id="5d7ac-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="5d7ac-104">**Applies to**: Office 365 | Outlook | Outlook 2016</span></span> 
   
-<span data-ttu-id="9fb2a-105">Stellt den Anzeigenamen des Benutzers dar.</span><span class="sxs-lookup"><span data-stu-id="9fb2a-105">Gets the user's display name.</span></span>
+<span data-ttu-id="5d7ac-105">Stellt den Anzeigenamen des Benutzers dar.</span><span class="sxs-lookup"><span data-stu-id="5d7ac-105">Represents the user's display name.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="9fb2a-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="9fb2a-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="9fb2a-107">PR_AUTOCFG_USER_NAME_W</span><span class="sxs-lookup"><span data-stu-id="9fb2a-107">PR_AUTOCFG_USER_NAME_W</span></span>  <br/> |
-|<span data-ttu-id="9fb2a-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="9fb2a-108">Identifier</span></span>  <br/> |<span data-ttu-id="9fb2a-109">0x67FE</span><span class="sxs-lookup"><span data-stu-id="9fb2a-109">0x67FE</span></span>  <br/> |
-|<span data-ttu-id="9fb2a-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="9fb2a-110">Data Type</span></span>  <br/> |<span data-ttu-id="9fb2a-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="9fb2a-111">PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="9fb2a-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="9fb2a-112">Area.</span></span>  <br/> |<span data-ttu-id="9fb2a-113">Nachrichtenanlage</span><span class="sxs-lookup"><span data-stu-id="9fb2a-113">Message with uuencode attachment</span></span>  <br/> |
+|<span data-ttu-id="5d7ac-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="5d7ac-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="5d7ac-107">PR_AUTOCFG_USER_NAME_W</span><span class="sxs-lookup"><span data-stu-id="5d7ac-107">PR_AUTOCFG_USER_NAME_W</span></span>  <br/> |
+|<span data-ttu-id="5d7ac-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="5d7ac-108">Identifier:</span></span>  <br/> |<span data-ttu-id="5d7ac-109">0x67FE</span><span class="sxs-lookup"><span data-stu-id="5d7ac-109">0x67FE</span></span>  <br/> |
+|<span data-ttu-id="5d7ac-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="5d7ac-110">Data type:</span></span>  <br/> |<span data-ttu-id="5d7ac-111">PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="5d7ac-111">PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="5d7ac-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="5d7ac-112">Area:</span></span>  <br/> |<span data-ttu-id="5d7ac-113">Nachrichtenanlage</span><span class="sxs-lookup"><span data-stu-id="5d7ac-113">Message attachment</span></span>  <br/> |
    
 
