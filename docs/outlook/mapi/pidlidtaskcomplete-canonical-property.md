@@ -12,56 +12,56 @@ api_type:
 - COM
 ms.assetid: 5b02d149-e4c7-41ad-aa13-4268d82f4c42
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2b795009db981105c0857e78a9530d5396d889b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6ec654310f7f364de1dd118cda178f168f073de6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793800"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578332"
 ---
-# <a name="pidlidtaskcomplete-canonical-property"></a><span data-ttu-id="16e73-103">PidLidTaskComplete (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="16e73-103">PidLidTaskComplete Canonical Property</span></span>
+# <a name="pidlidtaskcomplete-canonical-property"></a><span data-ttu-id="55d51-103">PidLidTaskComplete (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="55d51-103">PidLidTaskComplete Canonical Property</span></span>
 
   
   
-<span data-ttu-id="16e73-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="16e73-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="55d51-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="55d51-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="16e73-105">Gibt an, dass der Vorgang abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="16e73-105">Indicates the task is complete.</span></span>
+<span data-ttu-id="55d51-105">Gibt an, dass der Vorgang abgeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="55d51-105">Indicates the task is complete.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="16e73-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="16e73-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="16e73-107">dispidTaskComplete</span><span class="sxs-lookup"><span data-stu-id="16e73-107">dispidTaskComplete</span></span>  <br/> |
-|<span data-ttu-id="16e73-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="16e73-108">Property set:</span></span>  <br/> |<span data-ttu-id="16e73-109">PSETID_Task</span><span class="sxs-lookup"><span data-stu-id="16e73-109">PSETID_Task</span></span>  <br/> |
-|<span data-ttu-id="16e73-110">Long-ID (Abdeckung):</span><span class="sxs-lookup"><span data-stu-id="16e73-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="16e73-111">0x0000811C</span><span class="sxs-lookup"><span data-stu-id="16e73-111">0x0000811C</span></span>  <br/> |
-|<span data-ttu-id="16e73-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="16e73-112">Data type:</span></span>  <br/> |<span data-ttu-id="16e73-113">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="16e73-113">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="16e73-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="16e73-114">Area:</span></span>  <br/> |<span data-ttu-id="16e73-115">Aufgabe</span><span class="sxs-lookup"><span data-stu-id="16e73-115">Task</span></span>  <br/> |
+|<span data-ttu-id="55d51-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="55d51-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="55d51-107">dispidTaskComplete</span><span class="sxs-lookup"><span data-stu-id="55d51-107">dispidTaskComplete</span></span>  <br/> |
+|<span data-ttu-id="55d51-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="55d51-108">Property set:</span></span>  <br/> |<span data-ttu-id="55d51-109">PSETID_Task</span><span class="sxs-lookup"><span data-stu-id="55d51-109">PSETID_Task</span></span>  <br/> |
+|<span data-ttu-id="55d51-110">Long-ID (Abdeckung):</span><span class="sxs-lookup"><span data-stu-id="55d51-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="55d51-111">0x0000811C</span><span class="sxs-lookup"><span data-stu-id="55d51-111">0x0000811C</span></span>  <br/> |
+|<span data-ttu-id="55d51-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="55d51-112">Data type:</span></span>  <br/> |<span data-ttu-id="55d51-113">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="55d51-113">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="55d51-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="55d51-114">Area:</span></span>  <br/> |<span data-ttu-id="55d51-115">Aufgabe</span><span class="sxs-lookup"><span data-stu-id="55d51-115">Task</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="16e73-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="16e73-116">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="55d51-116">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="55d51-116">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="16e73-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="16e73-117">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="55d51-117">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="55d51-117">Protocol specifications</span></span>
 
-<span data-ttu-id="16e73-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="16e73-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="55d51-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="55d51-118">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="16e73-119">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="16e73-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="55d51-119">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="55d51-119">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="16e73-120">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="16e73-120">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="55d51-120">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="55d51-120">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="16e73-121">Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.</span><span class="sxs-lookup"><span data-stu-id="16e73-121">Defines several objects that model the electronic equivalent of tasks, task assignments, and task updates.</span></span> 
+> <span data-ttu-id="55d51-121">Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.</span><span class="sxs-lookup"><span data-stu-id="55d51-121">Defines several objects that model the electronic equivalent of tasks, task assignments, and task updates.</span></span> 
     
-### <a name="header-files"></a><span data-ttu-id="16e73-122">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="16e73-122">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="55d51-122">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="55d51-122">Header files</span></span>
 
-<span data-ttu-id="16e73-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="16e73-123">Mapidefs.h</span></span>
+<span data-ttu-id="55d51-123">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="55d51-123">Mapidefs.h</span></span>
   
-> <span data-ttu-id="16e73-124">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="16e73-124">Provides data type definitions.</span></span>
+> <span data-ttu-id="55d51-124">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="55d51-124">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="16e73-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="16e73-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="55d51-125">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="55d51-125">See also</span></span>
 
 
 
-[<span data-ttu-id="16e73-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="16e73-126">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="55d51-126">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="55d51-126">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="16e73-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="16e73-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="55d51-127">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="55d51-127">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="16e73-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="16e73-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="55d51-128">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="55d51-128">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="16e73-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="16e73-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="55d51-129">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="55d51-129">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

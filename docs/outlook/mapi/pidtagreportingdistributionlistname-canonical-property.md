@@ -12,49 +12,49 @@ api_type:
 - COM
 ms.assetid: d8b83072-15b9-4b26-875d-147cb6535b2c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4d1460ff7e4451e455eb75de50301ae26fa3bd77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3006d1852dc47b942f87bd6cf3ffcd14f53b6632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794970"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577737"
 ---
-# <a name="pidtagreportingdistributionlistname-canonical-property"></a><span data-ttu-id="c5db9-103">PidTagReportingDistributionListName (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="c5db9-103">PidTagReportingDistributionListName Canonical Property</span></span>
+# <a name="pidtagreportingdistributionlistname-canonical-property"></a><span data-ttu-id="b7913-103">PidTagReportingDistributionListName (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="b7913-103">PidTagReportingDistributionListName Canonical Property</span></span>
 
   
   
-<span data-ttu-id="c5db9-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="c5db9-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="b7913-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b7913-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="c5db9-105">Enthält den Anzeigenamen einer Verteilerliste, an das messaging-System einen Bericht übermittelt.</span><span class="sxs-lookup"><span data-stu-id="c5db9-105">Contains the display name of a distribution list where the messaging system delivers a report.</span></span>
+<span data-ttu-id="b7913-105">Enthält den Anzeigenamen einer Verteilerliste, an das messaging-System einen Bericht übermittelt.</span><span class="sxs-lookup"><span data-stu-id="b7913-105">Contains the display name of a distribution list where the messaging system delivers a report.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="c5db9-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="c5db9-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="c5db9-107">PR_REPORTING_DL_NAME</span><span class="sxs-lookup"><span data-stu-id="c5db9-107">PR_REPORTING_DL_NAME</span></span>  <br/> |
-|<span data-ttu-id="c5db9-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="c5db9-108">Identifier:</span></span>  <br/> |<span data-ttu-id="c5db9-109">0 x 1003</span><span class="sxs-lookup"><span data-stu-id="c5db9-109">0x1003</span></span>  <br/> |
-|<span data-ttu-id="c5db9-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="c5db9-110">Data type:</span></span>  <br/> |<span data-ttu-id="c5db9-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="c5db9-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="c5db9-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="c5db9-112">Area:</span></span>  <br/> |<span data-ttu-id="c5db9-113">MAPI-Nachricht</span><span class="sxs-lookup"><span data-stu-id="c5db9-113">MAPI Message</span></span>  <br/> |
+|<span data-ttu-id="b7913-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="b7913-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b7913-107">PR_REPORTING_DL_NAME</span><span class="sxs-lookup"><span data-stu-id="b7913-107">PR_REPORTING_DL_NAME</span></span>  <br/> |
+|<span data-ttu-id="b7913-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="b7913-108">Identifier:</span></span>  <br/> |<span data-ttu-id="b7913-109">0 x 1003</span><span class="sxs-lookup"><span data-stu-id="b7913-109">0x1003</span></span>  <br/> |
+|<span data-ttu-id="b7913-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="b7913-110">Data type:</span></span>  <br/> |<span data-ttu-id="b7913-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="b7913-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="b7913-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="b7913-112">Area:</span></span>  <br/> |<span data-ttu-id="b7913-113">MAPI-Nachricht</span><span class="sxs-lookup"><span data-stu-id="b7913-113">MAPI Message</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="c5db9-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="c5db9-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="b7913-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="b7913-114">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="c5db9-115">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="c5db9-115">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="b7913-115">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="b7913-115">Header files</span></span>
 
-<span data-ttu-id="c5db9-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="c5db9-116">Mapidefs.h</span></span>
+<span data-ttu-id="b7913-116">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b7913-116">Mapidefs.h</span></span>
   
-> <span data-ttu-id="c5db9-117">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="c5db9-117">Provides data type definitions.</span></span>
+> <span data-ttu-id="b7913-117">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="b7913-117">Provides data type definitions.</span></span>
     
-<span data-ttu-id="c5db9-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="c5db9-118">Mapitags.h</span></span>
+<span data-ttu-id="b7913-118">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="b7913-118">Mapitags.h</span></span>
   
-> <span data-ttu-id="c5db9-119">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="c5db9-119">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="b7913-119">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="b7913-119">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="c5db9-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="c5db9-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b7913-120">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b7913-120">See also</span></span>
 
 
 
-[<span data-ttu-id="c5db9-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c5db9-121">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="b7913-121">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b7913-121">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="c5db9-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="c5db9-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="b7913-122">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b7913-122">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="c5db9-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="c5db9-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="b7913-123">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="b7913-123">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="c5db9-124">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="c5db9-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="b7913-124">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="b7913-124">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
