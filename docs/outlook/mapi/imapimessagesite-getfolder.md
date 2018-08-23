@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f4b4147-ed98-47cb-a799-ddf028f8e826
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ea95ea4efbbf50e5551a27eb81fe5d5ab3b73948
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 78fb610c5afc3cac4f6de84240f734e5ae196110
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792202"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565543"
 ---
 # <a name="imapimessagesitegetfolder"></a>IMAPIMessageSite::GetFolder
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Ordner, in dem die aktuelle Nachricht geöffnet oder erstellt wurde, zurückgegeben, wenn solche ein Ordner vorhanden ist. Diese Methode gibt NULL zurück, in der _PpFolder_ -Parameter für eingebettete Nachrichten, die nicht direkt in einem Ordner gespeichert werden. 
   
@@ -49,7 +49,7 @@ S_FALSE
   
 > Kein Ordner für die Nachricht vorhanden ist.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern, finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
   
@@ -68,7 +68,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

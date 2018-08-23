@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 48e478c4-6e9a-40ab-a7bb-e6219b743b08
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fd77473ce728a51220a4c039f1d12d03d90e7f36
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7f32145e0947411c48e1e6c3a941c9913a08709c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795717"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565844"
 ---
 # <a name="tablenotification"></a>TABLE_NOTIFICATION
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Zeile in einer Tabelle, die mit einem Typ des Ereignisses, wie eine Änderung oder einen Fehler betroffen ist. Daraufhin wird eine Tabelle Benachrichtigung generiert werden soll. 
   
@@ -105,11 +105,11 @@ TABLE_SORT_DONE
   
 > **SPropValue** -Struktur für die **PR_INSTANCE_KEY** -Eigenschaft der Zeile vor der betroffenen. Wenn die betroffene Zeile der ersten Zeile in der Tabelle ist, muss **PropPrior** **PR_NULL** und nicht 0 (null) festgelegt werden. 0 (null) ist eine gültige Eigenschaftentag. 
     
-**Zeile**
+**row**
   
 > [SRow](srow.md) -Struktur, die die betreffenden Zeile beschreibt. Diese Struktur ist für alle Tabelle Benachrichtigungsereignisse gefüllt. Für Benachrichtigungsereignisse der Tabelle, die keine Zeilendaten übergeben, das **cValues** Mitglied der **SRow** -Struktur auf 0 (null) festgelegt ist und der **LpProps** Member wird auf NULL festgelegt. Da diese Struktur **SRow** schreibgeschützt ist. Clients müssen eine Kopie davon vornehmen, wenn sie Änderungen vornehmen möchten. Die [ScDupPropset](scduppropset.md) -Funktion kann verwendet werden, um die Kopie zu erstellen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **Tabelle\_Benachrichtigung** Struktur ist ein Mitglied der Union der Strukturen, die in der **Info** -Member der Struktur [Benachrichtigung](notification.md) enthalten. Das **Info** -Element enthält eine **Tabelle\_Benachrichtigung** Struktur, wenn der **UlEventType** Member der Struktur auf _FnevTableModified_festgelegt ist.
   

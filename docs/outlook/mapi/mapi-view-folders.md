@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a1936ec2-bf8a-4242-a41d-64d26b813bd0
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cb26771e9968175ab67366e35cf019ce23d51b8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3a89588294f07dca97fb48e56d2cde890c3f80ae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793106"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568819"
 ---
 # <a name="mapi-view-folders"></a>MAPI-Anzeigen von Ordnern
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Anzeigen von Ordnern sind Stammordner, die zugeh�rigen Informationen zum Definieren der alternative Anzeigelayouts f�r den Inhalt von Nachrichtenordnern zwischen Personen (IPM) enthalten. Anzeigen von Ordnern befinden sich unter dem Stammverzeichnis f�r den Nachrichtenspeicher und werden daher nicht in der Clientanwendung typische angezeigt. Nicht bei jedem Nachrichtenspeicher umfasst Ordner anzeigen. nur Nachrichtenspeicher, die f�r die Verwendung als Standard-Informationsspeicher f�r die Sitzung konfiguriert sind, m�ssen diese enthalten.  
   

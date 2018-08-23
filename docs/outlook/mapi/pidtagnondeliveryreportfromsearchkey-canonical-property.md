@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c3f10e61-1a6e-47f3-afd1-1c2a7836871b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b2e4c621295289305b34c218202dcfca13460095
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5d3b41d5f694c990be7d9aae61b86b705d1b8e17
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794639"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569407"
 ---
 # <a name="pidtagnondeliveryreportfromsearchkey-canonical-property"></a>PidTagNonDeliveryReportFromSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn für einen Unzustellbarkeitsbericht festgelegt, kennzeichnet den Suche Schlüssel des fehlerhaften senden-als Benutzer.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_NDR_FROM_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x6906  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_NDR_FROM_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x6906  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    

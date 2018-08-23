@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 306d62b1-d541-4039-9759-3903f62e0f26
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ecb40262959834ec511601ec3176887c919d944f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 96266b948d80b07d7aefefbf29225d2f85089094
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792969"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566698"
 ---
 # <a name="mapi-custom-form-objects"></a>MAPI-benutzerdefiniertes Formularobjekte
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Objekte für benutzerdefinierte Formulare werden durch drei Komponenten implementiert:
   

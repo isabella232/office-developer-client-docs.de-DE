@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 103c9cf2-42fb-4fa5-b9c2-8a92725d3097
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f3138a5994ffc6e32ffebd1a4d5b221db0dd2312
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ce69d563a0d797298a6d708bcf70f1b2e1ad950f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793797"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565942"
 ---
 # <a name="pidlidsharingproviderguid-canonical-property"></a>PidLidSharingProviderGuid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Freigabefunktionen Dienstanbieter global eindeutigen Bezeichner (GUID) an. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSharingProviderGuid  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSharingProviderGuid  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Sharing  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008A01  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss auf "% xAE.F0.06.00.00.00.00.00.C0.00.00.00.00.00.00.46" festgelegt werden. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 971b4837-6823-4f28-9803-3c22b2ec091f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 04fbfb2e6938c1ae5971e90b30f5ef749e7963e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 35e19a4281c46ae7c2b5cbd76c1ecea35bf87665
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791604"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569764"
 ---
 # <a name="dtbllbx"></a>DTBLLBX
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Liste, die in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird.
   
@@ -63,7 +63,7 @@ MAPI_NO_VBAR
   
 > Rufen Sie die Eigenschaftentag für ein Table-Eigenschaft vom Typ PT_OBJECT, die mithilfe einer **OpenProperty** geöffnet werden können. Die Anzahl der Spalten, die die Tabelle verfügen soll, hängt davon ab, ob die Liste eine einzelne oder mehrere Auswahlliste enthält. Wenn das Element **UlPRSetProperty** **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md)) festgelegt ist, können die Liste für die Mehrfachauswahl.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **DTBLLBX** beschreibt eine Liste ein Steuerelement, das verwendet wird, um mehrere Elemente anzeigen, und lassen Sie einen Benutzer ein oder mehrere Elemente auswählen. 
   

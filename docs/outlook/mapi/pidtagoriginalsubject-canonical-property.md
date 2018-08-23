@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8668ba4f-3236-4a87-a5aa-9cf7eea3d87b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6cf81a5b4c10cb7bff5f03a1b25d11bbaa8ff277
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b49398b822e6972a8a6d02e1dff9c2316ce6eb33
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794725"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566635"
 ---
 # <a name="pidtagoriginalsubject-canonical-property"></a>PidTagOriginalSubject (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Betreff der ursprünglichen Nachricht für die Verwendung in einem Bericht zur Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_SUBJECT, PR_ORIGINAL_SUBJECT_A, PR_ORIGINAL_SUBJECT_W  <br/> |
-|Bezeichner:  <br/> |0x0049  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_SUBJECT, PR_ORIGINAL_SUBJECT_A, PR_ORIGINAL_SUBJECT_W  <br/> |
+|Kennung:  <br/> |0x0049  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden auf den gleichen Wert wie die Eigenschaft **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) ursprünglich festgelegt.
   

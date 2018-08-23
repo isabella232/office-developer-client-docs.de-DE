@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 41e5c88c-d79d-4e9f-81f4-c4365cfaa15d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e23c73931c9051b61d30b7ea7e9c54d06a4d9c33
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 99a8473abf01467c534c0ea829e342fa46489e99
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792534"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568021"
 ---
 # <a name="implementing-a-logon-object"></a>Implementieren eines Anmeldeobjekts
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Jedes Adressbuch, Nachrichtenspeicher und Transport-Provider instanziiert ein Anmeldeobjekt als Teil der Implementierung der [IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md)oder [IXPProvider::TransportLogon](ixpprovider-transportlogon.md). Logon-Objekten Implementieren von Methoden, mit deren Hilfe MAPI-Client Serviceanfragen. Je nach Typ des Dienstanbieters wird Ihr Anmeldeobjekt eine der folgenden Schnittstellen unterstützen. 
   

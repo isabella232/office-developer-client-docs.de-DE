@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 65594253-66cd-486a-aa5b-0bc719f761f0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1fc5e4de63815c2cbfcb4818a9f6454af8c4d93b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 40c12a4010d51cb433b62558b5fe1d12afb583dd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795467"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567069"
 ---
 # <a name="sending-across-messaging-domains"></a>Senden über Nachrichtendomänen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine messaging Domäne stellt eine oder mehrere messaging-Systemen, die ein gemeinsames Adresse Format dar. Die Kommunikation über mehrere Domänen messaging umfasst eine Nachricht in das Format der ursprünglichen messaging-Domäne in das Format des der Zieldomäne messaging übersetzen. Da nicht alle Adressformate kompatibel sind, ist ein Gateway erforderlich, um die Adressinformationen sowie das Format der Quelle in das Zielformat übersetzt wird. Um die Gültigkeit messaging domänenübergreifend sicherzustellen, speichern Clientanwendungen wichtige Adressinformationen in MAPI-Eigenschaften. Führen Sie darüber hinaus Gateways die Übersetzung, überprüft die Eigenschaften bekanntermaßen benötigen Übersetzung und ändern Sie diese in ein Format, die die Zieldomäne messaging verwenden können.
   

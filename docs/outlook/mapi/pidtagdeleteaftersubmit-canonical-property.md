@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ba69a557-120c-4b1e-bbb7-0e901e7d1ebf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7a63b3ad3c45790e043e1ea8e7d996c4847ef8d4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 21bbb498eb4d53704c7a1a1a5bc84e9c72a75258
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794287"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566426"
 ---
 # <a name="pidtagdeleteaftersubmit-canonical-property"></a>PidTagDeleteAfterSubmit (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn eine Clientanwendung MAPI, um die zugehörige Meldung nach der Übermittlung löschen möchte. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DELETE_AFTER_SUBMIT  <br/> |
-|Bezeichner:  <br/> |0x0E01  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DELETE_AFTER_SUBMIT  <br/> |
+|Kennung:  <br/> |0x0E01  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Clientanwendung verwendet diese Eigenschaft mit der **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))-Eigenschaft steuern, was geschieht mit einer Meldung, nachdem es gesendet wird. Eine oder die andere sollte Set, jedoch nicht beide. 
   

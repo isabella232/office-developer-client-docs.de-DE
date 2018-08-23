@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a08f5905-2585-49ca-abb7-a77f2736f604
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f58d0f5cd7dfe74d3859d4f06a41aad6c3a55ac4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a599a6fe5093e52e50d33a1761df5689b7335138
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792582"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568294"
 ---
 # <a name="imsgserviceadminconfiguremsgservice"></a>IMsgServiceAdmin::ConfigureMsgService
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konfiguriert einen Message-Dienst neu.
   
@@ -97,7 +97,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Eigenschaftenfenster abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::ConfigureMsgService** -Methode ermöglicht eine Message Service mit oder ohne ein Eigenschaftenblatt Konfiguration konfiguriert werden soll. 
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 036b9b15-86e1-4a37-8e4b-e37b2963d8fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3ff29ac7e7f9b7876bb678930390ca556351ecf6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5ab459239bdcdcad30c4b6c82d5a3f8641bd4aca
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792364"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567804"
 ---
 # <a name="imapistatusvalidatestate"></a>IMAPIStatus::ValidateState
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestätigen Sie die externen Statusinformationen für die MAPI-Ressource oder den Dienstanbieter. Diese Methode wird in allen Status-Objekten unterstützt. 
   
@@ -92,7 +92,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Überprüfungsvorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. Dieser Wert wird nur von remote-Transport-Anbietern zurückgegeben. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIStatus::ValidateState** -Methode überprüft den Status einer Ressource, die ein Statusobjekt zugeordnet ist. **ValidateState** ist die einzige Methode in der [IMAPIStatus](imapistatusimapiprop.md) -Schnittstelle, die für alle Status erforderlich ist. Das genaue Verhalten dieser Methode hängt von der Implementierung. Die folgende Tabelle beschreibt die Implementierung der verschiedenen Arten von Status-Objekten. 
   

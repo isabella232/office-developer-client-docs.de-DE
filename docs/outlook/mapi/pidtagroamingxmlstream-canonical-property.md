@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: ce55b50e-3dbf-4690-9102-c08f35ada82e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b64467db112932848129b88969e4084343629c86
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e1d9a8bce2207529d1062f50a86547379c6255e4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794980"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569406"
 ---
 # <a name="pidtagroamingxmlstream-canonical-property"></a>PidTagRoamingXmlStream (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen beliebigen XML-Stream.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROAMING_XMLSTREAM  <br/> |
-|Bezeichner:  <br/> |0x7C08  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROAMING_XMLSTREAM  <br/> |
+|Kennung:  <br/> |0x7C08  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält einen beliebigen Stream von XML-Daten. Andere Eigenschaften in der Nachricht möglicherweise bestimmte Schemas für die Verwendung in dieser Eigenschaft impliziert.
   

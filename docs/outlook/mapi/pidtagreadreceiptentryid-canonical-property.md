@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 141d49c8-87cf-4d80-a33b-ccbf3eeae19e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 82bc5fd99df115527f703eff7261d02d1bf4d3ae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 658f3694e7592fab54b2ddf303da2e15e4510354
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794857"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567104"
 ---
 # <a name="pidtagreadreceiptentryid-canonical-property"></a>PidTagReadReceiptEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Eintrag Bezeichner für die messaging-Benutzer, in dem das messaging-System Berichtselemente Lesen für diese Nachricht senden sollen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_READ_RECEIPT_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0 x 0046  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_READ_RECEIPT_ENTRYID  <br/> |
+|Kennung:  <br/> |0 x 0046  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird ignoriert, es sei denn, die **PR_READ_RECEIPT_REQUESTED** ([PidTagReadReceiptRequested](pidtagreadreceiptrequested-canonical-property.md))-Eigenschaft auf TRUE festgelegt ist.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 85762771-b823-4227-9a7b-75b6ac280b2d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5b76a73a0fde8f4531b99a58646b927724162e81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b375ef279fc50aecca75b60d8379438c56f13420
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794582"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569337"
 ---
 # <a name="pidtagmessageattachments-canonical-property"></a>PidTagMessageAttachments (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Tabelle mit Einschränkungen, die auf einer Inhaltstabelle, erhalten alle Nachrichten, die Anlage Unterobjekte enthalten, die die Suchkriterien erfüllen angewendet werden kann. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_ATTACHMENTS  <br/> |
-|Bezeichner:  <br/> |0x0E13  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_ATTACHMENTS  <br/> |
+|Kennung:  <br/> |0x0E13  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann in [IMAPIProp::CopyTo](imapiprop-copyto.md) Vorgänge aus- oder in [IMAPIProp::CopyProps](imapiprop-copyprops.md) Vorgänge eingeschlossen werden. Als Eigenschaft vom Typ PT_OBJECT kann es erfolgreich von der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abgerufen werden. Von der [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode der **IID_IMAPITable** Identifier anfordern sollte seinen Inhalt zugegriffen werden. Dienstanbieter müssen es an die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode melden, wenn er festgelegt ist, aber optional meldet oder nicht, wenn sie nicht festgelegt ist. 
   

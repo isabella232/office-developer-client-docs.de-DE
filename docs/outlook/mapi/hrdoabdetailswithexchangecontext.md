@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: b4e7fed2-88e4-4e14-90b6-913a1b7e338a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cb6138072cd5dedc528168d4056041661c40fd06
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d882fa1e705969ae06da46710fc7216625ca932e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791921"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566376"
 ---
 # <a name="hrdoabdetailswithexchangecontext"></a>HrDoABDetailsWithExchangeContext
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt sicher, dass die **OpenEntry** -Methode durch die erwartete Exchange-Adressbuchanbieter geöffnet wird. Diese Funktion verhält sich [IAddrBook::Details](iaddrbook-details.md), jedoch wird die **Eintrags-ID** mithilfe des Exchange-Adressbuchs vom Parameter _pEmsmdbUID_ geöffnet. 
   

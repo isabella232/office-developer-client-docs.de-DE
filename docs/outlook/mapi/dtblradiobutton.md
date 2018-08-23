@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 64cef938-ef6f-43bb-8f6e-d4cd4d6c9888
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dee12ba9da83d2167afe13d00270a900bf0d73d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 493176029be3e7b154188aa164a95a8bc9c0e7d9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791612"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569743"
 ---
 # <a name="dtblradiobutton"></a>DTBLRADIOBUTTON
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt ein Optionsfeld, die an eine Gruppe von Optionsfeldern werden sollen. Die Gruppe von Optionsfeldern wird in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird.
   
@@ -69,7 +69,7 @@ PARAMETER MAPI_UNICODE
   
 > Eindeutige Zahl, die die ausgewählte Schaltfläche identifiziert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **DTBLRADIOBUTTON** beschreibt ein Optionsfeld ein Button-Steuerelement, das eine Gruppe von Schaltflächen zugeordnet ist. Es kann nur eine Schaltfläche in der Gruppe überprüft werden soll; Festlegen einer Schaltfläche bewirkt, dass die anderen Schaltflächen in der Gruppe nicht festgelegt werden. 
   

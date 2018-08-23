@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 73064a22-68bf-4d3f-91f5-1eec807debf8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2dfc6859b596d74af9337ff462e357c95f2ec591
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ec9ff524a53b8bb5d7bb62cc9d76bc4691e95e7e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793698"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565389"
 ---
 # <a name="pidlidoldwhenstartwhole-canonical-property"></a>PidLidOldWhenStartWhole (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den ursprünglichen Wert der Eigenschaft **DispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)) vor einer Besprechungsanfrage an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidOldWhenStartWhole  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidOldWhenStartWhole  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0 x 00000029  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist nicht erforderlich.
   

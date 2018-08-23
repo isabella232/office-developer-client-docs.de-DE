@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca3c9317-7873-4f37-b78f-b35467c81c29
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c75cb480b9a1a7ffdcff9c0f9b49aabba746fc3e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1f528332c52664ac472670566c905d36dac65bfc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793995"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565529"
 ---
 # <a name="pidnamerightsmanagementlicense-canonical-property"></a>PidNameRightsManagementLicense (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Speichert die Lizenz für die rechteverwaltung e-Mail-Nachricht.
   
@@ -35,7 +35,7 @@ Speichert die Lizenz für die rechteverwaltung e-Mail-Nachricht.
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Sichere Nachrichten  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die Eigenschaft auf eine e-Mail mit verwalteten rechten vorhanden ist, muss der erste Wert dieser Eigenschaft für mehrere binäre komprimierte Nutzungslizenz ZLIB (wie in [RFC1950] angegeben) für die rechteverwaltung e-Mail-Nachricht enthalten.
   

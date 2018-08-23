@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bfb7fd1e-774f-9a2f-fbbe-ba7f68ed8663
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5d97f56946512266bb7a08aa6b4a4ff78dded56a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cba4989ec3b1afcadb0caddd4af444cc9c96ebda
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793491"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565956"
 ---
 # <a name="pidlidcustomflag-canonical-property"></a>PidLidCustomFlag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Bitmaske, die angibt, wie eine Nachricht angepasst ist, beispielsweise mit benutzerdefinierten Eigenschaften gespeichert.
   
@@ -31,11 +31,11 @@ Eine Bitmaske, die angibt, wie eine Nachricht angepasst ist, beispielsweise mit 
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidCustomFlag  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidCustomFlag  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008251  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um den Wert dieser Eigenschaft abzurufen, zunächst mit dem **[IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)** um das Eigenschafts-Tag zu erhalten, und geben Sie in **[IMAPIProp::GetProps](imapiprop-getprops.md)** zum Abrufen des Werts dieser Eigenschaftentag. 
   

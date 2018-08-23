@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d4231b5-4096-4c0d-b694-65e2d04172b8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6f9d383b6be2ce8efc135b85e9bea151df535cfe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f9800b1822ca6881c451e01e890d582c77b64546
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795251"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566747"
 ---
 # <a name="pidtagsupplementaryinfo-canonical-property"></a>PidTagSupplementaryInfo (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Weitere Informationen zur Verwendung in einem Bericht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SUPPLEMENTARY_INFO, PR_SUPPLEMENTARY_INFO_A, PR_SUPPLEMENTARY_INFO_W  <br/> |
-|Bezeichner:  <br/> |0x0C1B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SUPPLEMENTARY_INFO, PR_SUPPLEMENTARY_INFO_A, PR_SUPPLEMENTARY_INFO_W  <br/> |
+|Kennung:  <br/> |0x0C1B  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften enthalten Informationen, die vom Message Transfer Agent generiert oder Adressbuchhierarchie im Zusammenhang mit dem Bericht. Es wird in der Regel für Lieferung oder Nondelivery Berichtstext verwendet, die mit der zugrunde liegenden messaging-System stammt.
   

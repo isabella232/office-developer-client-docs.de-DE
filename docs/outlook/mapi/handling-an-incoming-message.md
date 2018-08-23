@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d45d5ed9-41cd-4aaf-91d2-1e4a27bb16d4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5705af6c8efaf42ae27d1b39bb28d162971ebf9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d6ec40005683cc67c51a63d6b186c042c8e170d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791798"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568175"
 ---
 # <a name="handling-an-incoming-message"></a>Behandeln von einer eingehenden Nachricht
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine eingehende Nachricht ist eine Nachricht, die über eine oder mehrere Messagingsystemen gesendet wurde. Es kann nur für Sie oder für viele andere Empfänger gesendet wurden. Eingehende Nachrichten befinden sich in einem Empfangsordner vorgesehen, die Nachrichten von einer bestimmten Klasse enthalten soll. Sie können Einrichten einer anderen Empfangsordner für jede Nachrichtenklasse, dass Sie behandeln oder einen Ordner für alle Klassen.
   

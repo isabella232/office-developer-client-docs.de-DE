@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 52fa57be-746d-4b80-92b6-2ba83f796325
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 425bb54f63f6a87c2f1ae6bffef9ce2b042de6bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a17db4a79d4021e40c34254e3e531965e06d9367
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793361"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570219"
 ---
 # <a name="pidlidappointmentlastsequence-canonical-property"></a>PidLidAppointmentLastSequence (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es wird angegeben, der Organisator die letzte Sequenznummer, die an alle Teilnehmer gesendet wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptLastSequence  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008203  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft hat keine Bedeutung für einen Teilnehmer.
   

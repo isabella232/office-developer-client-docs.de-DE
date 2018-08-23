@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: c8959592-53f3-48cf-b623-91d199df0629
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ac79c37c8d646e5fa722af240972a0638d1bcec7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fc120a863fb9a061381eac81be04e385831cf484
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795287"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566789"
 ---
 # <a name="pidtagx400contenttype-canonical-property"></a>PidTagX400ContentType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält den Inhaltstyp für eine gesendete Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_X400_CONTENT_TYPE  <br/> |
-|Bezeichner:  <br/> |0x003C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_X400_CONTENT_TYPE  <br/> |
+|Kennung:  <br/> |0x003C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |X400  <br/> |
    

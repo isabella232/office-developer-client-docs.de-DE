@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0ee2db8-7cea-4af4-9646-c02ac7fdeaa3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9c4456a999ad6503ee4fa65bd1dd04340b262726
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3d0a1def329c7fbb1d344a6f714b3cd068757d1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795166"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565459"
 ---
 # <a name="pidtagsmtpaddress-canonical-property"></a>PidTagSmtpAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die SMTP-Adresse für das Address Book-Objekt enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SMTP_ADDRESS, PR_SMTP_ADDRESS_A, PR_SMTP_ADDRESS_W  <br/> |
-|Bezeichner:  <br/> |0x39FE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SMTP_ADDRESS, PR_SMTP_ADDRESS_A, PR_SMTP_ADDRESS_W  <br/> |
+|Kennung:  <br/> |0x39FE  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    

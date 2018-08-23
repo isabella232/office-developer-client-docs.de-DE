@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bd094e00-5c60-4bb3-9a45-b943fab52876
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d914d071d0845dee7d402e45d281cd774095a5a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 70b0508d9a19df42e4ab164aba58aaef44b0c01a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794341"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565487"
 ---
 # <a name="pidtagdisplayname-canonical-property"></a>PidTagDisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Anzeigenamen für ein bestimmtes MAPI-Objekt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DISPLAY_NAME, PR_DISPLAY_NAME_A, PR_DISPLAY_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3001  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DISPLAY_NAME, PR_DISPLAY_NAME_A, PR_DISPLAY_NAME_W  <br/> |
+|Kennung:  <br/> |0x3001  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ordner erfordern gleichgeordneten Knoten Unterordner eindeutigen Anzeigenamen haben. Beispielsweise wenn ein Ordner zwei Unterordner enthält, können nicht zwei Unterordner den gleichen Wert für diese Eigenschaft verwenden. Diese Beschränkung gilt nicht für andere Container, z. B. Adressbücher und Verteilerlisten. 
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 017a62c0-49c6-47fb-acce-db58e6bb9cc5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c36c70eacffcb4a41af0e73eea85143ab737867f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: cd86b9cc86f30aac75b732b97208933de4d336e9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793318"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566431"
 ---
 # <a name="opening-address-book-entries"></a>Öffnen von Adressbucheinträgen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI Ihres Anbieters [IABLogon::OpenEntry](iablogon-openentry.md) Methode aufgerufen, wenn ein Client oder Anbieter angefordert hat, dass eines Ihrer Objekte geöffnet werden. MAPI bestimmt, dass die Eintrags-ID, das Zielobjekt darstellt, die an Ihren Anbieter durch Untersuchen des [MAPIUID](mapiuid.md) Teils die Eintrags-ID und an die **MAPIUID** , die vom Dienstanbieter im Aufruf **registriert übereinstimmende gehört IMAPISupport::SetProviderUID**. MAPI ruft dann die **OpenEntry** -Methode. Vom Dienstanbieter muss durch Abrufen des entsprechenden-Objekts reagieren – eine Container, Verteilerliste oder messaging-Benutzer. 
   

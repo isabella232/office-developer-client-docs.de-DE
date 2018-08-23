@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b2b22cd-6e28-43a8-9092-b411da8bfb53
 description: Neue Features umfassen eine Client-seitigen Objektmodell (CSOM), die REST-Schnittstellen, die einen OData-Dienst für reporting, remote-Ereignisempfänger, deklarative Workflows und Task Pane-add-ins für Project-Clients.
-ms.openlocfilehash: facd52c5ba2473de41f2a6bede431af0f55ba4ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e524fe7b8cfa813bd198e99a99cf77d6e2b1905d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796315"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567839"
 ---
 # <a name="updates-for-developers-in-project"></a>Updates für Entwickler in Project
 
@@ -24,7 +24,7 @@ Die Project Server-Datenbanken werden in eine einzelne Datenbank kombiniert. Sie
 Diagramme und Weitere Informationen zu den wichtigsten Änderungen in Project Server 2013 finden Sie unter [Architektur von Project Server 2013](project-server-2013-architecture.md).
   
 > [!NOTE]
-> Projektserver 2013 basiert auf der Plattform für SharePoint Server 2013 und Project 2013 enthält einen Großteil der gleichen Infrastruktur als andere Office 2013-Anwendungen. Eine Dokumentation der einzelnen Details des Modells für SharePoint-Add-ins, SharePoint-basierten Workflows finden Sie unter Webparts, Entwicklung mit anderen SharePoint-Features und eine Dokumentation der Office-Add-ins, [Office und SharePoint-Add-ins](http://msdn.microsoft.com/library/fp161507%28office.15%29.aspx) und [SharePoint 2013-Entwicklung Übersicht über die](http://msdn.microsoft.com/library/jj164084%28office.15%29.aspx). 
+> Projektserver 2013 basiert auf der Plattform für SharePoint Server 2013 und Project 2013 enthält einen Großteil der gleichen Infrastruktur als andere Office 2013-Anwendungen. Eine Dokumentation der einzelnen Details des Modells für SharePoint-Add-ins, SharePoint-basierten Workflows finden Sie unter Webparts, Entwicklung mit anderen SharePoint-Features und eine Dokumentation der Office-Add-ins, [SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins), [Office-Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)und [SharePoint Übersicht über die Entwicklung von 2013](http://msdn.microsoft.com/library/jj164084%28office.15%29.aspx). 
   
 ## <a name="major-new-features-in-project-2013"></a>Wichtigsten neuen Features in Project 2013
 <a name="pj15_WhatsNew_MajorNewFeatures"> </a>
@@ -78,7 +78,7 @@ In den Office Developer Tools für Visual Studio 2012 hat die AppManifext.xml-Da
 > [!NOTE]
 > Projektserver 2013 und Project Online verwenden nicht im nur-app-Authentifizierungsmodell in SharePoint 2013 (siehe [-Add-in-autorisierungsrichtlinientypen in SharePoint 2013](http://msdn.microsoft.com/library/124879c7-a746-4c10-96a7-da76ad5327f0%28Office.15%29.aspx)). 
   
-Informationen zum Entwickeln verteilen, hosten und Verwalten von Add-Ins, finden Sie unter [SharePoint-Add-ins](http://msdn.microsoft.com/library/cd1eda9e-8e54-4223-93a9-a6ea0d18df70%28Office.15%29.aspx) und [Office-Add-ins](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)und Verwandte Themen in der Entwicklerdokumentation für SharePoint Server 2013 und Office 2013. Informationen zu berechtigungsanforderungsbereiche für andere SharePoint-add-ins finden Sie unter [-Add-in-Berechtigungen in SharePoint 2013](http://msdn.microsoft.com/library/5f7a8440-3c09-4cf8-83ec-c236bfa2d6c4%28Office.15%29.aspx).
+Informationen zum Entwickeln verteilen, hosten und Verwalten von Add-Ins, finden Sie unter [SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins) und [Office-Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins)und Verwandte Themen in der Entwicklerdokumentation für SharePoint Server 2013 und Office 2013. Informationen zum berechtigungsanforderungsbereich für andere SharePoint-Add-ins finden Sie unter [Add-in-Berechtigungen in SharePoint 2013](http://msdn.microsoft.com/library/5f7a8440-3c09-4cf8-83ec-c236bfa2d6c4%28Office.15%29.aspx).
   
 ### <a name="integrating-with-sharepoint-server"></a>Integrieren von SharePoint Server
 <a name="pj15_WhatsNew_IntegrationWSS"> </a>
@@ -162,7 +162,7 @@ Die vier Datenbanken in Project Server 2010 werden in einer einzelnen Projektdat
   
 Projektserver 2013 stellt einen OData-Dienst für online und lokalen Zugriff. Online reporting Tabellen und Sichten, werden nur die von der OData-Schnittstelle verfügbar gemacht. für die Verwendung von lokalen können Sie die OData-Schnittstelle verwenden oder direkt Zugriff auf die Berichte Tabellen und Ansichten in der Datenbank ProjectService in der SharePoint-Farm. Project Online wird eine mandantenfähigen Datenbank nicht unterstützt werden. Mehrere Instanzen von Project Web App jedes haben d. h., ihre eigenen Project-Datenbank. OData-Dienst intern SQL-Abfragen auf reporting Tabellen und Sichten ausgeführt wird, und bietet eine XML- oder JSON-Nutzlast. Eine Einführung in die OData-Dienst für die berichterstellung in Project Server 2013 und für den **ProjectData** -Schemareferenz (engl.) finden Sie unter [ProjectData - Projekt OData-Dienstverweises](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx).
   
-Allgemeine Informationen zu OData-Abfragen finden Sie unter [OData: URI Konventionen](http://www.odata.org/developers/protocols/uri-conventions#FilterSystemQueryOption). Beispielsweise können Sie alle Projekte in einer lokalen Instanz von Project Web App finden Sie unter der Namen des Projekts, in dem mit "Test" beginnt, mithilfe der folgenden Abfrage in einem Browser. Mit der rechten Maustaste auf der Browser, und klicken Sie dann auf **Quelle anzeigen**.
+Allgemeine Informationen zu OData-Abfragen finden Sie unter [OData: URI Konventionen](https://www.odata.org/documentation/). Beispielsweise können Sie alle Projekte in einer lokalen Instanz von Project Web App finden Sie unter der Namen des Projekts, in dem mit "Test" beginnt, mithilfe der folgenden Abfrage in einem Browser. Mit der rechten Maustaste auf der Browser, und klicken Sie dann auf **Quelle anzeigen**.
   
 ```html
 http://ServerName /ProjectServerName /_api/ProjectData/Projects?$filter=startswith(ProjectName, 'Test') eq true
@@ -239,7 +239,7 @@ Wenn Ihre Lösungen veralteten Features verwenden, sie sollten vor der Bereitste
   
 - **Erweiterungen** [PSI-Erweiterung Szenarien](https://msdn.microsoft.com/library/office/ff843378%28v=office.14%29.aspx) sind veraltet und wird in zukünftigen Versionen nicht unterstützt. Diese Szenarien des lokalen Project Server 2013 aktiviert Integration mithilfe von benutzerdefinierten Windows Communication Foundation (WCF) Dienste. 
   
-- **Project-PSI** Die [Project-Klasse](https://msdn.microsoft.com/library/office/websvcproject.project_di_pj14mref.aspx%28Office.15%29.aspx) von der PSI ist veraltet. Verwenden Sie für alle Neuentwicklungen des [Project-CSOM](https://msdn.microsoft.com/library/office/microsoft.projectserver.client_di_pj14mref.aspx%28Office.15%29.aspx). Project Server 2013-apps, die die Project-PSI zu verwenden sind weiterhin funktionsfähig, aber Project Online apps müssen alle Projektklasse PSI-Methoden mit ihren entsprechenden CSOM-Methoden zu ersetzen.
+- **Project-PSI** Die [Project-Klasse](https://docs.microsoft.com/en-us/office/client-developer/project/project-psi-reference-overview) von der PSI ist veraltet. Verwenden Sie für alle Neuentwicklungen des [Project-CSOM](client-side-object-model-csom-for-project-2013.md). Project Server 2013-apps, die die Project-PSI zu verwenden sind weiterhin funktionsfähig, aber Project Online apps müssen alle Projektklasse PSI-Methoden mit ihren entsprechenden CSOM-Methoden zu ersetzen.
   
 - **Ressourcenplan-PSI** Die [Ressource planen PSI](https://msdn.microsoft.com/library/office/websvcresourceplan_di_pj14mref.aspx) ist veraltet. Es werden weiterhin für die Entwicklung für Project 2013 unterstützt werden, jedoch wird in zukünftigen Versionen nicht unterstützt. 
   
@@ -272,7 +272,7 @@ Wenn Ihre Lösungen veralteten Features verwenden, sie sollten vor der Bereitste
 ## <a name="comparing-project-server-on-premises-with-project-online"></a>Vergleichen von Projektserver zur lokalen Verwendung mit Project Online
 <a name="pj15_WhatsNew_Comparing"> </a>
 
-Um besser entscheiden, ob Sie Project Server lokale oder Project Online verwenden, und welche Arten von Erweiterungen in beiden Fällen entwickeln können, werden in Tabelle 2 die extensible Features einer lokalen Installation von Project Server 2013 mit Project Online verglichen. In Tabelle 2 sind die Unterschiede in der Bereitstellung, Verwaltung oder Usage nicht enthalten. Weitere Informationen zu Project Online und Project Server 2013 finden Sie unter [Project 2013 für Entwickler](http://msdn.microsoft.com/en-US/office/fp161502) und [Project Online](http://www.microsoft.com/project/).
+Um besser entscheiden, ob Sie Project Server lokale oder Project Online verwenden, und welche Arten von Erweiterungen in beiden Fällen entwickeln können, werden in Tabelle 2 die extensible Features einer lokalen Installation von Project Server 2013 mit Project Online verglichen. In Tabelle 2 sind die Unterschiede in der Bereitstellung, Verwaltung oder Usage nicht enthalten. Weitere Informationen zu Project Online und Project Server 2013 finden Sie unter [Project 2013 für Entwickler](http://msdn.microsoft.com/en-US/office/fp161502) und [Project Online](https://developer.microsoft.com/en-us/project).
   
 **In Tabelle 2. Erweiterbarkeit von Projektserver: lokal und Project Online**
 
@@ -309,6 +309,6 @@ Weitere Informationen zum Entwickeln von apps, und verwenden die Programmierbark
 - [Office für Entwickler](http://msdn.microsoft.com/en-US/office)   
 - [Behandeln von Ereignissen in apps für SharePoint](http://msdn.microsoft.com/en-us/library/jj220048%28office.15%29.aspx)   
 - [Office Store](http://office.microsoft.com/en-us/store/)   
-- [Project Online](http://www.microsoft.com/project/)
+- [Project Online](https://developer.microsoft.com/en-us/project)
     
 

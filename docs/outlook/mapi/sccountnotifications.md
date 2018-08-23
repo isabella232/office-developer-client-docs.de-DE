@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 13e80bdc-cb59-47a5-8de0-404e22f87f82
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c27472a309c26882051744a23fbe05e41c36aa3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 923864c625cb032c3b351bb999ff7cc782eae588
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795460"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567167"
 ---
 # <a name="sccountnotifications"></a>ScCountNotifications
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt die Größe in Bytes, der ein Array von ereignisbenachrichtigungen, und das Array zugeordneten Arbeitsspeicher überprüft.
   
@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Eine ungültige Benachrichtigung aufgetreten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn NULL in der _pcb_ -Parameter übergeben wird, überprüft die Funktion **ScCountNotifications** nur das Array von Benachrichtigungen, aber keine Zählung abgeschlossen ist. Wenn ein Wert ungleich Null in _pcb_übergeben wird, bestimmt die Größe des Arrays und speichert die Ursache **ScCountNotifications** _pcb_. Der Parameter _pcb_ muss groß genug für das gesamte Array sein. 
   

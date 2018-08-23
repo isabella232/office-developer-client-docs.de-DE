@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b48eda17-83a8-4dc4-85c8-4ca827d13d25
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 47b698eb12577442e5b2d9ea9ecae3e8a13e402b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 726d424b6cf8d3141b36c3b61a38a6928277ec2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791676"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567174"
 ---
 # <a name="file-format-of-mapisvcinf"></a>Dateiformat von MapiSvc.inf
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Datei "MapiSvc.inf" fungiert als MAPI-Nachricht Dienstkonfigurationsinformationen zur Konfiguration der zentralen Datenbank. MapiSvc.inf enthält Informationen zu den einzelnen die Message-Dienste auf der Arbeitsstation, Informationen zu den Dienstanbieter, die für jeden Nachrichtendienst gehören, und Informationen zu MAPI-Subsystems installiert. MapiSvc.inf ist die primäre Informationsquelle für Profile. D. h., wenn ein neues Profil erstellt wird oder eine vorhandene geändert, relevanten Informationen für jeden Nachrichtendienst oder Dienstanbieter aus MapiSvc.inf kopiert wird. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8c6e7ca2-1824-4cca-bf69-3c1ea52727de
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e63d661ab8c7e410d6a0dd786819cc189813017e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5b357a068249b12468be52f8782f646f394e4060
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794045"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567825"
 ---
 # <a name="pidtagadditionalrenentryids-canonical-property"></a>PidTagAdditionalRenEntryIds (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-IDs für bestimmte Spezialordner. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS  <br/> |
-|Bezeichner:  <br/> |0x36D8  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS  <br/> |
+|Kennung:  <br/> |0x36D8  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die ersten fünf Einträge in diesem mehrwertigen Eigenschaft gelten folgenden Spezialordner, sofern sie im Speicher vorhanden sind:
   

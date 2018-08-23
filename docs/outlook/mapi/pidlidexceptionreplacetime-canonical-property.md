@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: c3aae4f5-7f00-45bf-b007-370041ba360e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2292d53997fd4d54e9272789be83ea94a93c6a3e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e28bde9571081d61b37f6939a991c11ddeb75a4c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793537"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566047"
 ---
 # <a name="pidlidexceptionreplacetime-canonical-property"></a>PidLidExceptionReplaceTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Datum und Uhrzeit in das Serienmuster, das die Ausnahme ersetzt werden sollen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidExceptionReplaceTime  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidExceptionReplaceTime  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008228  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert muss in koordinierter Weltzeit (UTC) angegeben werden. Mit dieser Eigenschaft können das Ausnahme Attachment-Objekt für eine bestimmte Instanz gefunden werden.
   

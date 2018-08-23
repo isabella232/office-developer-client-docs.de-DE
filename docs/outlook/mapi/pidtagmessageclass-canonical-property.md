@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1e704023-1992-4b43-857e-0a7da7bc8e87
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d4e478b053bc1aa81643a60899480ac2ad9d4265
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f54bdb70e9f48c89cb50e8238f8638deac8a93b0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794589"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567818"
 ---
 # <a name="pidtagmessageclass-canonical-property"></a>PidTagMessageClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Textzeichenfolge, die die Absender benutzerdefinierte Nachrichtenklasse wie IPM identifiziert. Beachten Sie. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_CLASS, PR_MESSAGE_CLASS_A, PR_MESSAGE_CLASS_W  <br/> |
-|Bezeichner:  <br/> |0x001A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_CLASS, PR_MESSAGE_CLASS_A, PR_MESSAGE_CLASS_W  <br/> |
+|Kennung:  <br/> |0x001A  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Nachrichtenklasse gibt den Typ der Nachricht. Bestimmt den Satz von Eigenschaften, die für die Nachricht definiert die Art von Informationen die Nachricht übermittelt, und wie die Meldung zu behandeln. 
   

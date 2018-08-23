@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: ab677a06-6d7d-47e7-99ea-535b0b24389a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 289227ee171c2325cad0ed321dab4f635a0ca724
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b2de22eef455e59b7877524ce998e93a0a708e0c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795336"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566656"
 ---
 # <a name="propertydefinition-stream-structure"></a>PropertyDefinition Stream-Struktur
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine PropertyDefinition Stream-Struktur ist ein Array von [FieldDefinition](fielddefinition-stream-structure.md) Stream Strukturen, die Definitionen für alle benutzerdefinierten Felder in einem Microsoft Outlook-Element und Datenbindung Einstellungen für einige integrierte Felder enthalten. 
   

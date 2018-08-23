@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 60b3e5f4-4a9b-432f-bad4-4284225ab93f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 140fe97662f7a2ce68c18d8e0eb991d0819da6dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 00ae0f4be9818e0e9e4562784b4d5bf44eefe308
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791786"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567951"
 ---
 # <a name="handling-a-transport-provider"></a>Behandeln eines Transportdienstes
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients kommunizieren mit Transportanbieter über Status Objekte von Transportanbieter sowie die MAPI-Warteschlange bereitgestellt wird. Clientzugriff Status Objekte durch Aufrufen von [IMAPISession::GetStatusTable](imapisession-getstatustable.md) zum Abrufen der Statustabelle. Status-Objekten Implementieren der [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) Schnittstelle, die verfügt über Methoden für das Konfigurieren von Anbietern, das leeren eingehende und ausgehende Warteschlangen, Festlegen von Kennwörtern und Zustand Validierung Nachricht. Weitere Informationen zu Status-Objekten finden Sie unter [Statustabelle und Status Objekte](status-table-and-status-objects.md).
 

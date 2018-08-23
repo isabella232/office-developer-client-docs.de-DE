@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8067e2b5-02df-4b96-8f66-509f5a48c8aa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0f8484e195b1cda8e1d633133cdff89c571d8ecd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7d4337105b2dcae94956f0b1badf66c663467dc3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794538"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565662"
 ---
 # <a name="pidtagjunkthreshold-canonical-property"></a>PidTagJunkThreshold (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, wie aggressiv eingehenden e-Mail-Nachrichten in den Junk-e-Mail-Ordner gesendet werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_JUNK_THRESHOLD  <br/> |
-|Bezeichner:  <br/> |0x6101  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_JUNK_THRESHOLD  <br/> |
+|Kennung:  <br/> |0x6101  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft entspricht der hoch / niedrig / keine Einstellung filtern. Der Wert "0xFFFFFFFF" gibt an, dass Spam-Filterung nicht angewendet werden soll, jedoch Sperrlisten weiterhin angewendet werden müssen. Der Wert "0 x 80000000" gibt an, dass alle e-Mails Spam außer diese Nachrichten von Absendern in der Liste vertrauenswürdiger Absender oder an Empfänger in der Liste vertrauenswürdiger Empfänger gesendet. Werte für dieses sind wie folgt:
   

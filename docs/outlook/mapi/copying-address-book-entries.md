@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 285abeb4-45c8-4e82-9a16-b935b4651afe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ce7f7e2db341be62912935b7a55d69eaf5db8ab5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eca0c9f63a4efaaa7f9fd066cf5dce451b8f6175
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791451"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565886"
 ---
 # <a name="copying-address-book-entries"></a>Kopieren von Adressbucheinträgen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 [IABContainer::CopyEntries](iabcontainer-copyentries.md) -Methode des Containers wird aufgerufen, wenn eine oder mehrere Empfänger aus der gleichen oder einen anderen Container sind in diesen Container kopiert werden. **CopyEntries** hat vier Eingabeparameter: ein Array von Eintragsbezeichner, die die Empfänger zu kopierenden darstellt, die ein Fensterhandle für die Statusanzeige, einem Objektverweis Fortschritt und ein Flagwert. Der Anbieter sollte Fortschritt angezeigt werden, wenn das Flag AB_NO_DIALOG nicht festgelegt ist und das Fortschritt-Objekt aus der _LpProgress_ -Parameter verwenden, wenn es nicht NULL ist. Wenn _LpProgress_ NULL ist, rufen Sie [IMAPISupport::DoProgressDialog](imapisupport-doprogressdialog.md) zum Verwenden des MAPI-Objekts ausgeführt. Weitere Informationen zum Anzeigen des Fortschritts finden Sie unter [eine Statusanzeige anzeigen](mapi-progress-indicators.md).
   

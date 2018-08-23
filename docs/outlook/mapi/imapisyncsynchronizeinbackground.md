@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c4aaca65-d553-476c-8c6d-5f880b6efdc1
 description: 'Zuletzt geändert: 26 Juni 2012'
-ms.openlocfilehash: fd35d38cbb70431ab7fadbab3850a1585f9c6459
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ee6fe07df894213331ab51f9abaa4008247dac07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792442"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568777"
 ---
 # <a name="imapisync--synchronizeinbackground"></a>IMAPISync : SynchronizeInBackground
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  Initiiert eine Synchronisierung. Diese Methode wird von Microsoft Outlook 2010 und Microsoft Outlook 2013 aufgerufen und Zeichenfolgeneigenschaften Nachricht implementiert. 
   

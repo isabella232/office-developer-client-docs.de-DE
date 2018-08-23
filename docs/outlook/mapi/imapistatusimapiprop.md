@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17b2aa43-0267-45b6-8c57-11b7a5c67333
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e36a987174ffb2abb4c0f5fc95bf695f31af942e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 23663cea49c50f3f584d6b06e331545320e8283b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792342"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565382"
 ---
 # <a name="imapistatus--imapiprop"></a>IMAPIStatus : IMAPIProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Statusinformationen zu MAPI-Subsystems, integrierte des Adressbuchs und die MAPI-Warteschlange. Ein Dienstanbieter implementiert **IMAPIStatus** , um Informationen über einen eigenen Status bereitzustellen. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Status-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Status-Objekte  <br/> |
 |Implementiert von:  <br/> |Dienstanbieter und MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIStatus  <br/> |
@@ -46,7 +46,7 @@ Enthält Statusinformationen zu MAPI-Subsystems, integrierte des Adressbuchs und
 |[ChangePassword](imapistatus-changepassword.md) <br/> |Ändert das Kennwort des Dienstanbieters ohne eine Benutzeroberfläche anzuzeigen.  <br/> |
 |[FlushQueues](imapistatus-flushqueues.md) <br/> |Erzwingt, dass alle Nachrichten gesendet oder empfangen, um sofort hoch- oder heruntergeladen werden.  <br/> |
    
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
 |**PR_PROVIDER_DISPLAY** ([PidTagProviderDisplay](pidtagproviderdisplay-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
@@ -56,7 +56,7 @@ Enthält Statusinformationen zu MAPI-Subsystems, integrierte des Adressbuchs und
 |**PR_RESOURCE_TYPE** ([PidTagResourceType](pidtagresourcetype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Status, die von MAPI implementierte Objekte unterstützen die folgenden Methoden:
   

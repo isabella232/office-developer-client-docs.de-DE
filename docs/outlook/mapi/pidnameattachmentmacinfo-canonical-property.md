@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c46656d5-2cb1-45eb-9f66-9c2b6e3315cf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 375eac56253772b363ae320b3f7044ac600e71f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 633a7e0ea7cc2b6ffdbc555e2e470ec66ef77f8a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793950"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565606"
 ---
 # <a name="pidnameattachmentmacinfo-canonical-property"></a>PidNameAttachmentMacInfo (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen [RFC3282] Anlage-Wert, der der entsprechenden Kopf- und Ressource Verzweigung Daten von Macintosh-e-Mail-Clients verwendete besteht.
   
@@ -33,9 +33,9 @@ Enthält einen [RFC3282] Anlage-Wert, der der entsprechenden Kopf- und Ressource
 |-Eigenschaft festgelegt:  <br/> |PSETID_Attachment  <br/> |
 |Name der Eigenschaft:  <br/> |AttachmentMacInfo  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen finden Sie unter MS-OXCMAIL Abschnitt 2.2.4.2 Apple-Dateiformaten.
   

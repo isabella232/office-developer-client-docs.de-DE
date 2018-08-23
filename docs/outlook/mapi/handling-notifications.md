@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 451b71da-a888-4d8f-9814-12f9f846de05
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fdd66e4a27209e6b80757bcf52408eb0cea43794
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4c19e88ac1cfb29a9841ec78516410e23b3e5403
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791806"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567580"
 ---
 # <a name="handling-notifications"></a>Behandeln von Benachrichtigungen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benachrichtigungen aktivieren, ein Objekt zu einem anderen zu informieren, dass es eine Änderung unterzogen wurde-Objekt. Die Art der Änderung wird als ein Ereignis bezeichnet. MAPI definiert mehrere Ereignisse, die für die Benachrichtigung generiert werden. 
   

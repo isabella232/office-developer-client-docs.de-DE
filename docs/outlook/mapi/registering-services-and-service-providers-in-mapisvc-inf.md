@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a04acf17-4b2d-458e-9852-b6074acac096
 description: 'Zuletzt geändert: 18 Juli 2013'
-ms.openlocfilehash: 2eb7f1b496e0732b157ea4f9105a0e067329c52f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c74257b84636952b26c5a624f4f7f76f66be9149
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795359"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566922"
 ---
 # <a name="registering-services-and-service-providers-in-mapisvcinf"></a>Registrieren von Diensten und Dienstanbietern in MapiSvc.inf
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Installieren einen neuen Anbieter auf einem System erfordert die Aktualisierung der Datei "MapiSvc.inf" So zeigen Sie auf den neuen Anbieter. Standardeigenschaften festlegen während der Konfiguration, die Folgendes enthalten, MAPI zu informieren, wo der Anbieter Dynamic Link Library (DLL) zu finden:
   

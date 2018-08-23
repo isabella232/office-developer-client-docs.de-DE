@@ -9,28 +9,28 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e4234ddf-d9dc-4dc9-8eda-dbbee151b5d7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b5a3978741f7ecb871e3c3de28e52dffdcf3a74f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b79b40a59a2bf7b68c58bffbccca04034b853a15
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794844"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570205"
 ---
 # <a name="pidtagpstconfigurationflags-canonical-property"></a>PidTagPstConfigurationFlags (kanonische Eigenschaft)
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt Konfiguration Flags für eine Tabelle persönlicher Speicher (PST-Datei).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PST_CONFIG_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x6770  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PST_CONFIG_FLAGS  <br/> |
+|Kennung:  <br/> |0x6770  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Folgende sind gültige Werte für diese Eigenschaft:
   

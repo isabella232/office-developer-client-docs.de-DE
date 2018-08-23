@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30511e6e-aba2-4f47-bdc7-1256b23382c5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 965b46e20f79b0af488e1f7988da4366ba270d69
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 224bf8fa29da63bc96e4d86551545ce83fc411d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794831"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565557"
 ---
 # <a name="pidtagproofofsubmission-canonical-property"></a>PidTagProofOfSubmission (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält TRUE, wenn den Absender einer Nachricht Proof fordert an, dass das Übertragung Nachrichtensystem eine Nachricht für die Übermittlung an den ursprünglich beabsichtigten Empfänger übermittelt hat.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROOF_OF_SUBMISSION  <br/> |
-|Bezeichner:  <br/> |0x0E26  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROOF_OF_SUBMISSION  <br/> |
+|Kennung:  <br/> |0x0E26  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-nicht-Übertragungseinehit  <br/> |
    

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85d71b73-0630-4c5d-b0e3-b48d27a300d0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 635a4a872b83a2996b1a0198975a0ecd2cd906eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0c72164cac8a37d0372ac93f4ed6d3face966ddb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792826"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566663"
 ---
 # <a name="isequalmapiuid"></a>IsEqualMAPIUID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Testet zwei [MAPIUID](mapiuid.md) -Strukturen, um zu bestimmen, ob sie den gleichen Bezeichner enthalten. 
   
@@ -46,7 +46,7 @@ IsEqualMAPIUID(lpuid1, lpuid2)
   
 > Zeiger auf die zweite **MAPIUID** Struktur auf getestet werden soll. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Makro **IsEqualMAPIUID** gibt TRUE zurück, wenn die zwei **MAPIUID** -Strukturen, die dieselbe ID und FALSE enthalten, wenn nicht der Fall ist. 
   

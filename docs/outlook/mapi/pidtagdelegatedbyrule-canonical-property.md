@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 284b5001-5de6-4c4e-8e5c-0593ae1b301f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d851f5cfa2697ea2a81f80c90e8051c59172d549
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e9337a49067e9789ece40ed932dbaae133aac0f0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794283"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568182"
 ---
 # <a name="pidtagdelegatedbyrule-canonical-property"></a>PidTagDelegatedByRule (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob ein Ordner Nachricht durch eine Regel delegiert wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DELEGATED_BY_RULE  <br/> |
-|Bezeichner:  <br/> |0x3FE3  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DELEGATED_BY_RULE  <br/> |
+|Kennung:  <br/> |0x3FE3  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    

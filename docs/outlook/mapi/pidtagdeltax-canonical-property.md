@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9bbe996b-1cfc-46d7-bb0a-291c760500ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7e264a75a02a08518efcf3202a60d2a4654ddfe5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 25a3a77864780fe641aabfd275567ae8ecc5e604
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794307"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569001"
 ---
 # <a name="pidtagdeltax-canonical-property"></a>PidTagDeltaX (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Breite der in Standardeinheiten für Windows-Dialogfeld ein Dialogfeld-Steuerelement enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DELTAX  <br/> |
-|Bezeichner:  <br/> |0x3F03  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DELTAX  <br/> |
+|Kennung:  <br/> |0x3F03  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), **PR_YPOS** ([PidTagYCoordinate](pidtagycoordinate-canonical-property.md)), **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) Eigenschaften und diese Eigenschaft die Position und Größe das Dialogfeld-Steuerelement. 
   

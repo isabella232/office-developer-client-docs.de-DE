@@ -7,26 +7,26 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 7b1ebf5c-3355-4691-bf7b-164d0c411d0c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1c76ddfe3676a9637042acc738791d5c528a0e4e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 526cb55ab8efd2ccd05c1ed5bc91b871ee5b8280
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795154"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566565"
 ---
 # <a name="pidtagservertypedisplayname-canonical-property"></a>PidTagServerTypeDisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Unicode-Zeichenfolge in der Statusleiste mit dieser Eigenschaft angezeigt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SERVER_TYPE_DISPLAY_NAME  <br/> |
-|Bezeichner:  <br/> |0x341D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SERVER_TYPE_DISPLAY_NAME  <br/> |
+|Kennung:  <br/> |0x341D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    

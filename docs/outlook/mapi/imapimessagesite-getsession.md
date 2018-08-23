@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c35d9e38-f4cf-4908-aaa1-a4263b58f7e8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d5d0f465ecdf4865ca86448448c56d54d5df4505
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d5d86af111bc778839a78f9b56ba7126e6c973d5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792221"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567377"
 ---
 # <a name="imapimessagesitegetsession"></a>IMAPIMessageSite::GetSession
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die MAPI-Sitzung, in der die aktuelle Nachricht erstellt oder geöffnet wurde.
   
@@ -49,7 +49,7 @@ S_FALSE
   
 > Für die aktuelle Nachricht ist keine Sitzung vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Liste der Schnittstellen im Zusammenhang mit Formular Servern, finden Sie unter [MAPI-Formulars Schnittstellen](mapi-form-interfaces.md).
   

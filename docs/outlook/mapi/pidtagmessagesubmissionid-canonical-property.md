@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0a799fe5-04e2-4e1d-b0cd-9bdd2577d299
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b3286e9e666d59997693df636263cb04f7b767d8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3a26a8483e584ccc5cf9f33e0dbd75f379c01633
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794635"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569666"
 ---
 # <a name="pidtagmessagesubmissionid-canonical-property"></a>PidTagMessageSubmissionId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine System (MTS) ID für die Message Transfer Agent (MTA).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_SUBMISSION_ID  <br/> |
-|Bezeichner:  <br/> |0x0047  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_SUBMISSION_ID  <br/> |
+|Kennung:  <br/> |0x0047  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von der MTA nach dem erfolgreichen Abschluss der Nachrichtenübermittlung zurückgegeben. Alle zukünftiger Kontakt mit dem MTA zu im Zusammenhang mit dieser Nachricht, wie etwa anfordernde Abbruch wird die MTS-ID in dieser Eigenschaft verwendet.
   

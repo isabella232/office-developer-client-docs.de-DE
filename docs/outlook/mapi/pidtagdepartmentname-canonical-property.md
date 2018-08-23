@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d8cb407e-5c3a-4b4c-b20e-78efcd373081
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1b33f051426e5bdf5ab4f949fa59535081e49185
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ead835b9ace2bb775c06421a25b439ed22d93e0f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794320"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566929"
 ---
 # <a name="pidtagdepartmentname-canonical-property"></a>PidTagDepartmentName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Namen für die Abteilung, in der der Empfänger funktioniert. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEPARTMENT_NAME, PR_DEPARTMENT_NAME_A, PR_DEPARTMENT_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A18  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEPARTMENT_NAME, PR_DEPARTMENT_NAME_A, PR_DEPARTMENT_NAME_W  <br/> |
+|Kennung:  <br/> |0x3A18  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

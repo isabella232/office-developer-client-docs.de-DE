@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b456b07b-4d83-46bf-a305-4f322ea7dbd1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: acde7f18324d5642f7b8f8b5aa25721c4019ce3a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 93e5510802fe5ff0327d7ed3fc702fa61cd3c1c4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795227"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565578"
 ---
 # <a name="pidtagsubfolders-canonical-property"></a>PidTagSubfolders (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Ordner Unterordner enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SUBFOLDERS  <br/> |
-|Bezeichner:  <br/> |0x360A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SUBFOLDERS  <br/> |
+|Kennung:  <br/> |0x360A  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nachrichtenspeicher müssen diese Eigenschaft für alle Ordner angeben.
   

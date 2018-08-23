@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: a84d8143-5fe7-4a33-bce4-aebf7a824d5f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cec541db3cc46c108d2a5c41b1d5fbd4d8fac4f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 353734d28dd10da1e503e268f9e06e9bf9c86cfc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793594"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567566"
 ---
 # <a name="pidlidfileunderlist-canonical-property"></a>PidLidFileUnderList (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Liste der möglichen Werte für die Eigenschaft **DispidFileUnderId** ([PidLidFileUnderId](pidlidfileunderid-canonical-property.md)).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFileUnderList  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFileUnderList  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008026  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jeder Wert in der Mehrfachwert-Eigenschaft muss eine der zulässigen Werte für **DispidFileUnderId** in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sein.
   

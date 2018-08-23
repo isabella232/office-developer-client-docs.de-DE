@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7310a0f2-a109-40a4-99bf-e963d754a067
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8e1578da3a9caea7533b75fe6dc16c3d7c3488d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 82d043adfe6e480b4d490f44ad89d73535c80c9c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794588"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569778"
 ---
 # <a name="pidtagmessageccme-canonical-property"></a>PidTagMessageCcMe (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn dieser Benutzer messaging speziell als Kopie (CC) Empfänger dieser Nachricht heißt und nicht Bestandteil einer Verteilerliste ist. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_CC_ME  <br/> |
-|Bezeichner:  <br/> |0x0058  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_CC_ME  <br/> |
+|Kennung:  <br/> |0x0058  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bietet eine bequeme Möglichkeit zum bestimmen, ob der Benutzername in der Empfängerliste Carbon Copy, Blindkopie, explizit angezeigt wird, ohne Betrachtung der alle Einträge in der Liste. 
   

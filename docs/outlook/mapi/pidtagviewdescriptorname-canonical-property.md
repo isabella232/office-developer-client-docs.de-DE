@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1e689ee4-9e89-4328-beb9-05c80a6544a0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9a186af55a8a2846bbb8af9e51be45ef73ce5d66
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 55d838661dcbe0efb604e6a623a434f9ae87512e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795285"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567783"
 ---
 # <a name="pidtagviewdescriptorname-canonical-property"></a>PidTagViewDescriptorName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Name der eine Ansicht Deskriptor enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_VD_NAME, PR_VD_NAME_A, PR_VD_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x7006  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_VD_NAME, PR_VD_NAME_A, PR_VD_NAME_W  <br/> |
+|Kennung:  <br/> |0x7006  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften müssen auf eine nicht leere Zeichenfolge für eine Nachricht Ordner zuordnen Informationen (FAI) festgelegt werden, die Ansichtsdefinitionen enthält.
   

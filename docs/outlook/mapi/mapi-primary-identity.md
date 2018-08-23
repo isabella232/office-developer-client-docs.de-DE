@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8787a873-6752-4b17-8ea3-8fed793e1371
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bd6fe1298a38733cb9d4916a931138c616e110bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: de1fe8fd5ef5a6e79934478c62b2403c48f85b5e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793039"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565879"
 ---
 # <a name="mapi-primary-identity"></a>Primäre MAPI-Identität
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die meisten MAPI-Sitzungen vorhanden sind, einen bestimmten Dienstanbieter, der die primäre Identität für die Sitzung bereitstellt. In der Regel ist es Adressbuch-Dienstanbieter, die Identität über Verteilerlisten oder messaging User-Objekte bereitstellt. Tatsächlich empfiehlt MAPI Message-Dienste, die ein Adressbuchanbieter einschließen eines seiner Objekte für die primäre Identität verwenden. Bei ein Dienstanbieter, der eine Message Service gehört die primäre Identität bereitstellt, teilen sich alle anderen-Dienstanbieter in den Dienst diese Identität.
   

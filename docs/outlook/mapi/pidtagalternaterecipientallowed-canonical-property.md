@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: dbbdeb54-3d14-4601-a77b-55ee31f33416
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dc77f9c7b58fc925048d6dec2bee2ff96a8723b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0fcea0f0bc19140c5a0762143ce91bd41ea8fd07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794070"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569323"
 ---
 # <a name="pidtagalternaterecipientallowed-canonical-property"></a>PidTagAlternateRecipientAllowed (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Absender automatische Weiterleitung der Nachricht ermöglicht. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ALTERNATE_RECIPIENT_ALLOWED  <br/> |
-|Bezeichner:  <br/> |0x0002  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ALTERNATE_RECIPIENT_ALLOWED  <br/> |
+|Kennung:  <br/> |0x0002  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die automatische Weiterleitung nicht zulässig ist oder keine alternativer Empfänger vorgesehen ist, sollte ein Unzustellbarkeitsbericht generiert werden. 
   

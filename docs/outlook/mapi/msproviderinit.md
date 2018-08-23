@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 230c66c4-ab04-4fa6-946f-9f4b704f2842
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cf1febe89c49b29cdfaf8d27760c4fb27b4c4990
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 33adef7a8248e137869912afc2026583828b087e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793278"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570170"
 ---
 # <a name="msproviderinit"></a>MSProviderInit
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Initialisiert eine Nachricht Speicheranbieter Vorgang.
   
@@ -99,7 +99,7 @@ MAPI_E_VERSION
   
 > Die SPI-Version von MAPI verwendet wird, ist nicht kompatibel mit der SPI, die von diesem Anbieter verwendet wird.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI-aufrufen, die Eintrags-Funktion **MSProviderInit** einen Anbieter für anmelden nach einer Clientanmeldung nicht initialisiert werden. 
   

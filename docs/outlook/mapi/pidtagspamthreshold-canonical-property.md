@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 2b2d6b8e-e3dd-4a9b-8bb5-53add675605d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 24a033269b072712fea6e9957d0ffac3573ce3a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a9a5e72a585a2af8914b858cb4d174899706797e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795173"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566775"
 ---
 # <a name="pidtagspamthreshold-canonical-property"></a>PidTagSpamThreshold (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein long-Wert, der angibt, die Ebene der Spam-Filterung.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SPAM_THRESHOLD  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SPAM_THRESHOLD  <br/> |
 |Long-ID (Abdeckung):  <br/> | 0x041B  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Spam  <br/> |

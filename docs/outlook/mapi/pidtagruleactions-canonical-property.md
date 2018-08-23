@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ec4259a-8fe9-46c3-82b8-42c6907b8515
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6edebdb63a63b9df830ae549c0f0d9146f6eb82e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ede62c792b1241a150c9d0a05adbe47fe0b6c0e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795011"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567461"
 ---
 # <a name="pidtagruleactions-canonical-property"></a>PidTagRuleActions (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Satz von Aktionen, die die Regel zugeordnet. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_ACTIONS  <br/> |
-|Bezeichner:  <br/> |0x6680  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_ACTIONS  <br/> |
+|Kennung:  <br/> |0x6680  <br/> |
 |Datentyp:  <br/> |PT_ACTIONS  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Aktionen werden als Regelaktion ausgedrückt, und der Eigenschaft Wert Puffer enthält die Regel Aktion-Puffer Datenstruktur gepackt wie in [[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)angegeben.
   

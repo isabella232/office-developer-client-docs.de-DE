@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f23dd6f4-915b-4fe8-ab3f-6d625c7d6061
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b7755f2ec067003e47d358a9736c6d7d96ede267
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f720160193613bbbb4bbd447f78c14e6e5378eb8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795319"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565655"
 ---
 # <a name="ppropfindprop"></a>PpropFindProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sucht nach einer angegebenen Eigenschaft in einer Eigenschaft festlegen.
   
@@ -59,7 +59,7 @@ LPSPropValue PpropFindProp(
 
  **PpropFindProp** gibt eine [SPropValue](spropvalue.md) -Struktur definieren die Eigenschaft, die dem input-Eigenschaftentag übereinstimmt, oder NULL, wenn keine Übereinstimmung vorliegt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der angegebene Eigenschaftstag eine Eigenschaft vom Typ PT_UNSPECIFIED gibt an, sucht die **PpropFindProp** -Funktion nur eine Übereinstimmung mit der Bezeichner für die in das Tag an. Andernfalls findet eine Übereinstimmung für das gesamte Eigenschafts-Tag, einschließlich den Eigenschaftentyp und gibt die angegebene Eigenschaft zurück. 
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 48fd3e28-c2d2-474d-9487-5e2f08ca7319
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 379378f2092f7b119a40ac44cbdcfa03f254b448
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e019ad8d0063514cd41017b459cc701c45c22a2e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795642"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569596"
 ---
 # <a name="status-object-implementation"></a>Implementierung der Status-Objekts
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Alle-Dienstanbieter müssen ein Statusobjekt implementieren und übermitteln Sie Eigenschaften aus der Sitzung Status-Tabelle. Sie können eine oder mehrere Zeilen in der Statustabelle, abhängig von der Anzahl der Ressourcen einschließen, die Sie steuern. Ein Transportdienstes sollte beispielsweise eine Zeile in der Statustabelle "für jeden Nachrichtenwarteschlange erstellen, die er verwaltet. Wenn Änderungen auftreten, muss die Tabellenzeile geeigneten Status aktualisiert werden. Status-Objekte werden implementiert, um Zugriff auf Informationen in der Tabelle "Status" sowie zu weiteren Informationen, die nicht in der Tabelle enthalten zu ermöglichen.
   

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98e4d2e3-95fc-4644-8aa8-a9787717de68
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 70dfc267acbbf4d23f744d3b8e4050162cb56152
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 61af11204cb9f78700f00e8dcc2f69fcb96245c7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793921"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566901"
 ---
 # <a name="pidlidworkaddresspostofficebox-canonical-property"></a>PidLidWorkAddressPostOfficeBox (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Postfach Teil des Kontakts Arbeit.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidWorkAddressPostOfficeBox  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidWorkAddressPostOfficeBox  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000804A  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

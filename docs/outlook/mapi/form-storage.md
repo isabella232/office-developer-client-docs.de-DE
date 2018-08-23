@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 6ddf9158-3c10-408a-aeaf-5a382c4339e7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a99ef76e63e634c661bf82bdab10b86c843e0df0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c98427ab326ada0b717282dc4077d526780aa45c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791726"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568161"
 ---
 # <a name="form-storage"></a>Formular Speicher
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Obwohl es nicht erforderlich ist, wissen Sie alle Details der wie Formulare physisch gespeichert sind, ist es sinnvoll, nur einige der wichtigsten Konzepte verstehen. Bevor Sie die drei Typen von Formularbibliotheken mithilfe der Standard-Formular-Manager unterstützt beschreiben, bietet in diesem Thema daher eine Übersicht über wie Formulare gespeichert werden.
   

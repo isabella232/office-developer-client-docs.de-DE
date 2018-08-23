@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 172dc15b-7bda-403f-a93a-446b2f9ff1d3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3fb86fba3b0ff8a79858fad59dca61069aff6db9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 48c068599506e5c050c69594caca46f28be83b0b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794297"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565802"
 ---
 # <a name="pidtagdefcreatedl-canonical-property"></a>PidTagDefCreateDl (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Vorlage Eintrags-ID für eine Verteilerliste Standard. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEF_CREATE_DL  <br/> |
-|Bezeichner:  <br/> |0x3611  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEF_CREATE_DL  <br/> |
+|Kennung:  <br/> |0x3611  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clientanwendungen mit dieser Eigenschaft können Sie um eine Verteilerliste in einem Container zu erstellen. Unterstützung von Eintrag Creation ist optional für Address Book Container. die, die nicht unterstützen sind nicht erforderlich, diese Eigenschaft verfügbar machen. 
   

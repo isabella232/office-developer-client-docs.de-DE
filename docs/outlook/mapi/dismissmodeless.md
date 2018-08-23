@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef93ef3d-c159-40ae-9b8d-0af8a0567565
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dc830665f425b747d2fdb05641dc037a2e84f695
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c66ff2338eb5751dbffe392a6a26258fb1c89476
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791564"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565837"
 ---
 # <a name="dismissmodeless"></a>DISMISSMODELESS
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Rückruffunktion, die MAPI-aufrufen, wenn sie ein Dialogfeld ohne Modus Address Book geschlossen wurde. 
   

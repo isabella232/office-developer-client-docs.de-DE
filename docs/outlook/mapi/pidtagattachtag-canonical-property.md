@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3d223809-b697-47c6-bc3c-2206aff7ad33
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d8d8d32bddb98e0ac180b0898478c67297980492
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: af5d05ee6d3592694952002c16e16188c3e458a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794140"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565620"
 ---
 # <a name="pidtagattachtag-canonical-property"></a>PidTagAttachTag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen ASN. 1 Objektbezeichner angeben die Anwendung, die eine Anlage bereitstellt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_TAG  <br/> |
-|Bezeichner:  <br/> |0x370A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_TAG  <br/> |
+|Kennung:  <br/> |0x370A  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft identifiziert die Anwendung, die die Anlage ursprünglich erzeugt hat.
   

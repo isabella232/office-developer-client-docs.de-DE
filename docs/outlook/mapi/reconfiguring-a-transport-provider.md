@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3d466bde-b70d-44b6-ba03-6ad8353ec759
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ec5a431d04799e3f19c23dd0437aeac13fbf0968
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5e7c94b387a5fe9f9682854de4097f6f1bbcd786
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795351"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565599"
 ---
 # <a name="reconfiguring-a-transport-provider"></a>Neukonfigurieren eines Transportanbieters
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Status-Objekt eines Transportdienstes können Sie einige der Eigenschaften des Anbieters ändern. Bereich von Eigenschaften, die geändert werden kann, hängt von der Eigenschaften, die mit dem Anbieter Eigenschaftenfenster und wie diese Eigenschaften definiert sind, enthalten sind. 
   

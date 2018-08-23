@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 85f0d8a5-6dd3-4f33-b31a-246d286d6286
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b2d3dce7835f92d9ad78f7d8837e655fdd8fd412
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 87b91b66807ce79533029a8d5b5c4956bc4d5ce9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791280"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565767"
 ---
 # <a name="adrlist"></a>ADRLIST
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt NULL oder mehrere Eigenschaften, die einen oder mehrere Empfänger angehören. 
   
@@ -49,7 +49,7 @@ typedef struct _ADRLIST
   
 > Array von [ADRENTRY](adrentry.md) Strukturen, eine Struktur für jeden Empfänger. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine **ADRLIST** -Struktur enthält ein oder mehrere **ADRENTRY** Strukturen, die die Eigenschaften eines Empfängers beschreibt. Ein Empfänger kann nicht aufgelöst werden. Dies bedeutet, dass es einen Eintrag Bezeichner in dessen Array von Eigenschaftswerten fehlen. Ein aufgelöster Empfänger bedeutet, dass die **PR\_ENTRYID** -Eigenschaft ([PidTagEntryId](pidtagentryid-canonical-property.md)) enthalten ist. Außerdem müssen in der Regel aufgelösten Empfänger eine e-Mail-Adresse die **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md))-Eigenschaft. Die e-Mail-Adresse ist jedoch nicht erforderlich. **ADRLIST** -Strukturen, beispielsweise dienen zum Beschreiben der Empfängerliste für eine ausgehende Nachricht und MAPI, um die Einträge im Adressbuch anzuzeigen. 
   

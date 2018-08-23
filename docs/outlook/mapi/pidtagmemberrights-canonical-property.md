@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3e526b93-1f64-41ea-b43c-5b03fe1c56ed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2ffc6973d2670402ec8095120eea3db02f529d0a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a120c44a83ad5e5a822e3959417b162e8ccbdd8c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794601"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566915"
 ---
 # <a name="pidtagmemberrights-canonical-property"></a>PidTagMemberRights (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Reihe von Bits an, die die Rechte von dieser Member in einem Ordner oder Postfach angegeben.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MEMBER_RIGHTS  <br/> |
-|Bezeichner:  <br/> |0x6673  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MEMBER_RIGHTS  <br/> |
+|Kennung:  <br/> |0x6673  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle zum Rechte eines Elements in einem Ordner zu definieren. Diese Rechte können angezeigt und geändert werden. Die folgenden Werte sind für diese Eigenschaft festgelegten Berechtigungen. 
   

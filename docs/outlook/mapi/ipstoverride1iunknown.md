@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d26cee81-45ea-4fd3-8a54-5f35264b5d6a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: db2853080b1fc2ff3a346dcfb8d112237b7f3459
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e73115811fe0009769826e0f6a011c489772f770
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792813"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569848"
 ---
 # <a name="ipstoverride1--iunknown"></a>IPSTOVERRIDE1 : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht einen Anbieter für Persönliche Ordner-Datei (PST) anmelden die PSTDisableGrow Richtlinie außer Kraft gesetzt.
   
@@ -42,7 +42,7 @@ Ermöglicht einen Anbieter für Persönliche Ordner-Datei (PST) anmelden die PST
 |[IPSTOVERRIDE1::SetPersistedRegistrations](ipstoverride1-setpersistedregistrations.md) <br/> |Registriert Persönliche Ordner-Dateien für die automatische Entsperren Weitere Anrufe an HrTrustedPSTOverrideHandlerCallback zu vermeiden.  <br/> |
 |[IPSTOVERRIDE1::OverridePSTDisableGrow](ipstoverride1-overridepstdisablegrow.md) <br/> |Hebt die Sperre für das Wachstum der Persönliche Ordner-Datei.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die PST-Datei überschreiben Handler Schnittstellenbezeichner möglicherweise nicht in der herunterladbaren Headerdatei definiert werden derzeit, in diesem Fall müssen Sie finden sie im Thema [MAPI-Konstanten](mapi-constants.md) und können kopieren und fügen sie dem Code hinzu. Verwenden Sie das DEFINE_GUID-Makro in der Microsoft Windows Software Development Kit (SDK)-Header-Datei guiddef.h definiert, deren Werte symbolische Namen global eindeutigen Bezeichner (GUID) zugeordnet. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1a724fac-2e64-48a7-92b5-d7cf1528cb2c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 18c11c3f945e00ae1f12e5c948b81abfb88e41ef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 810895836ea4d9e4aa82c189f68d13eefd409163
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793171"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568728"
 ---
 # <a name="mapping-of-tnef-attributes-to-mapi-properties"></a>Zuordnung von TNEF-Attributen zu MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die folgende Tabelle enthält die Attribute, die für die in die TNEF-Implementierung und deren Zuordnung zu MAPI-Eigenschaften definiert. In einigen Fällen werden mehrere MAPI-Eigenschaften als ein einzelnes Attribut codiert. Einige Attribute haben Beschreibungen weiter unten in diesem Abschnitt erweitert.
   

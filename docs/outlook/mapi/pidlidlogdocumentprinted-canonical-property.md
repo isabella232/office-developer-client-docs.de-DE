@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: e01bf0d9-62cf-4fba-8cec-232a46025feb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c8aac3ff8a81c9e7ec921df4d86dd33af3045064
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dcff67f6528805a33ae7a00e03e753c3219155ab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793650"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566019"
 ---
 # <a name="pidlidlogdocumentprinted-canonical-property"></a>PidLidLogDocumentPrinted (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob das Dokument während der Journalfunktion gedruckt wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogDocPrinted  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogDocPrinted  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000870E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

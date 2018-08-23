@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0d66124b-a018-4db4-b55b-a0e5ed467e14
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4c3a5c13433fb2f037be24ddd4c877579429f7bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6c4db9c67fc712143657fe66b86ea33ef2b9c272
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795515"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565592"
 ---
 # <a name="setting-a-table-position-with-a-filter"></a>Festlegen einer Tabellenposition mit einem Filter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Tabelle Benutzer können den Cursor an eine Zeile setzen, die einen Satz von Filterkriterien entsprechen. Filter können verschiedene Richtlinien wie Spaltenwerte-Eigenschaft, Bitmasken oder Unterobjekte basieren. Filter werden in MAPI mithilfe der Struktur einer [SRestriction](srestriction.md) angegeben. 
   

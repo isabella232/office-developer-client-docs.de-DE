@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 064dd5ca-0108-4045-b17b-0bb29cb93346
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 588a32cb2a468c84dfc513af5e4abf6a9a1d0286
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5d8e91490cc39c3f259d35a923bb3bcbb2bf6011
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792647"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568168"
 ---
 # <a name="imsgserviceadmingetmsgservicetable"></a>IMsgServiceAdmin::GetMsgServiceTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf die Nachricht Service Tabelle eine Liste der Nachrichtendienste im Profil.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Die Tabelle der Dienste wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::GetMsgServiceTable** -Methode ermöglicht den Zugriff auf die Nachricht Service Tabelle eine Tabelle, die MAPI verwaltet, die Message-Dienste im Profil der Sitzung derzeit installiert aufgeführt. Eine vollständige Liste der Spalten in der Tabelle der Dienste finden Sie unter [Message Service-Tabelle](message-service-tables.md).
   

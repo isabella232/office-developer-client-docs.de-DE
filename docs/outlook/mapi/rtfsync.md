@@ -11,17 +11,17 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 627f95e9-39ac-4d43-8f02-687783b09785
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f6afa890f61bb2f394e3cf69e0f2c54699a2ad9e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 706c628241e519642209a271dce62d21b16938e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795424"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565739"
 ---
 # <a name="rtfsync"></a>RTFSync
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt sicher, dass der Nachrichtentext Rich Text Format (RTF), die nur-Text-Version übereinstimmt. Es ist erforderlich, das diesen Funktionsaufruf vor dem Lesen der RTF-Version und nach dem Ändern der RTF-Version. 
   

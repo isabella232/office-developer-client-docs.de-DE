@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 28453d29-30c5-405b-84d2-5bb5f281756c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a00505b765abdcb7b8fe9d68052774b30bbdf692
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b943f9a3b6f63f185a1b44cfa811d010a287a3d9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795103"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565816"
 ---
 # <a name="pidtagscheduleinfofreebusytentative-canonical-property"></a>PidTagScheduleInfoFreeBusyTentative (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Blöcke von Zeiten für die der Frei/Gebucht-Status mit Vorbehalt ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_FREEBUSY_TENTATIVE  <br/> |
-|Bezeichner:  <br/> |0x6852  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_FREEBUSY_TENTATIVE  <br/> |
+|Kennung:  <br/> |0x6852  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft hat viele Werte als die Anzahl von Werten in **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)). Jede Binärwert stellt einen Monat und entspricht dem Wert der selben Index **PR_SCHDINFO_MONTHS_TENTATIVE**. Die binäre Werte werden in der gleichen Reihenfolge wie die Werte in **PR_SCHDINFO_MONTHS_TENTATIVE**sortiert.
   

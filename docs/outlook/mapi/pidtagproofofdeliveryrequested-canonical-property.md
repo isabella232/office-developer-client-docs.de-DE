@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4d752d3f-bf36-4711-b1d4-68cd575a062f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d5cb5807f4a3c24bf8ab1af1db2c57f361b32ae1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2eb811a88cd15ad05d016c690d3939a6b1e00ca3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794824"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567797"
 ---
 # <a name="pidtagproofofdeliveryrequested-canonical-property"></a>PidTagProofOfDeliveryRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält True, wenn der Absender eine Nachricht Nachweis der Lieferung für einen bestimmten Empfänger anfordert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROOF_OF_DELIVERY_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0x0C12  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROOF_OF_DELIVERY_REQUESTED  <br/> |
+|Kennung:  <br/> |0x0C12  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

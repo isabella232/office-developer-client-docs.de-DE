@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: d999852d-ce98-4c3c-a772-87f5db4aa04e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e2d3dee4d268a1747d6b77acf62f24c6ec459bdc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d0d72f3ca63930f1a8df7818e4ce4a34e8d11e71
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793469"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567776"
 ---
 # <a name="pidlidcommonstart-canonical-property"></a>PidLidCommonStart (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt das Startdatum und die Uhrzeit einer Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidCommonStart  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidCommonStart  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008516  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt die Startzeit für ein Element an. Es muss kleiner oder gleich dem Wert der Eigenschaft **DispidCommonEnd** ([PidLidCommonEnd](pidlidcommonend-canonical-property.md)).
   

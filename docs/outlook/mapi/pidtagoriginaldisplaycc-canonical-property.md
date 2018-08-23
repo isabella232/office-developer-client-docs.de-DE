@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f48d723c-3ad8-4617-952a-ba5216b2129c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c4fc8ef6dd67eb5187bbc0bac8c4f4f9bee13826
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 933e48de74402b02426343353b3d1e0af2c41c19
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794690"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569834"
 ---
 # <a name="pidtagoriginaldisplaycc-canonical-property"></a>PidTagOriginalDisplayCc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Anzeigenamen der Empfänger Carbon Copy, Kopie (CC) der ursprünglichen Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_DISPLAY_CC, PR_ORIGINAL_DISPLAY_CC_A, PR_ORIGINAL_DISPLAY_CC_W  <br/> |
-|Bezeichner:  <br/> |0x0073  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_DISPLAY_CC, PR_ORIGINAL_DISPLAY_CC_A, PR_ORIGINAL_DISPLAY_CC_W  <br/> |
+|Kennung:  <br/> |0x0073  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften enthalten eine durch Semikolons getrennte Liste. Es MAPI bereitgestellten und wird direkt aus **PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md)) bei einer Übermittlung kopiert oder Unzustellbarkeitsbericht oder einem Lese- oder nonread Bericht wird generiert. Diese Eigenschaft kann auf andere Nachrichten durch ihre Nachrichtenklassen definierten vorhanden sein.
   

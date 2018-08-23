@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7632d784-00d8-48fd-a73b-73778efbef7f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: aaba816ca7efab6cee939087a18332561f31b81b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e29b909e90d2767bcf1bb9382a46e6f2c1cd9f2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795488"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569799"
 ---
 # <a name="sending-messages-by-using-message-store-providers"></a>Sendende von Nachrichten mithilfe der Nachricht speichern-Anbieter
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Anbieter sind nicht erforderlich, zur Unterstützung von ausgehenden Nachrichtenübermittlungen (d. h., die Möglichkeit für Clientanwendungen Anbieter die Nachricht zum Senden von Nachrichten verwenden). Clientanwendungen müssen einen Nachrichtenspeicher verwenden beim Senden von Nachrichten, da die Nachricht Daten sein müssen an Stelle gespeicherten Verfassen Sie zwischen der Uhrzeit des Endes der Benutzer ist es und die Zeit, die die MAPI-Warteschlange auf einem Transportdienstes für die Nachricht ermöglicht Übermittlung an die zugrunde liegenden messaging-System. Wenn Ihre Nachricht Speicheranbieter ausgehende Nachrichtenübermittlungen nicht unterstützt, kann es als Standard-Informationsspeicher verwendet werden.
   

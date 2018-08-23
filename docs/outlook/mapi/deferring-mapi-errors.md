@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 93ae6d54-41cd-433c-8124-eb07d71baa57
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e2b091fa21dae4a1a8da23954d5f998010483da1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3d2a46be04f235ba55aa5f2feef222ea7372b211
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791507"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569862"
 ---
 # <a name="deferring-mapi-errors"></a>Zur�ckstellen MAPI-Fehler
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einige Schnittstellenmethoden akzeptieren Sie die Kennzeichen MAPI_DEFERRED_ERRORS als Eingabeparameter. Wenn dieses Flag festgelegt ist, muss die Methode nicht sofort mit einem Wert zur�ckgegeben; Sie k�nnen den Anrufer das Ergebnis des Anrufs zu einem sp�teren Zeitpunkt wissen lassen.
   

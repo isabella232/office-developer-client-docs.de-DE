@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 10fb1650-6c3e-f467-91cd-48e5ddd82827
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: 51a79075dac62a051f5a28dbcb70e7d6ff200e65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d92e8d7b3fb14051ffceb829f3df3f6fa12e6e23
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791618"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565858"
 ---
 # <a name="dntble"></a>DNTBLE
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen für den Inhalt eines Ordners auf dem Server während der [Tabelle Downloadstatus](download-table-state.md)herunterladen. Dieser Download Prozess verwendet Microsoft Exchange inkrementelle Änderung Synchronisierung (ICS). Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).
   

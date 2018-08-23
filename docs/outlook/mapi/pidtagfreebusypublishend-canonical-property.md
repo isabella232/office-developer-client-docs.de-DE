@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: df239741-6a63-4cd4-9bbb-42c0f5c668a5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1f7f439b211b60f7acad3a9dd19c50a21923c1cc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b539de9793c45e4b393452c264d72dda6fa58c4e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794409"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568798"
 ---
 # <a name="pidtagfreebusypublishend-canonical-property"></a>PidTagFreeBusyPublishEnd (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Endzeit des publishing Bereichs enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FREEBUSY_PUBLISH_END  <br/> |
-|Bezeichner:  <br/> |0x6848  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FREEBUSY_PUBLISH_END  <br/> |
+|Kennung:  <br/> |0x6848  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert für diese Eigenschaft wird auf den Anfangstermin des publishing Bereichs durch Hinzufügen des Werts der **PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) berechnet. Dieser Wert wird als die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC) ausgedrückt.
   

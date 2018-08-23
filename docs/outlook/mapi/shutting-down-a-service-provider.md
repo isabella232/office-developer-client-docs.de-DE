@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e518830b-0aaa-4ce4-a85a-07e4f00750a9
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 71706fc970170f74aa5555da29d904c08c0422f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 70db0b0a62568cc499cf915634756bb422ae82ca
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795542"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567195"
 ---
 # <a name="shutting-down-a-service-provider"></a>Herunterfahren eines Dienstanbieters
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn ein Client die [IMAPISession::Logoff](imapisession-logoff.md) -Methode ruft, um die Sitzung zu beenden und alle aktiven-Dienstanbieter heruntergefahren, ruft MAPI wiederum die folgenden Methoden: 
   

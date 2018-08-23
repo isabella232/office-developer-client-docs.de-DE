@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 270ff414-514c-b1fc-db48-761bf6de8867
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 36bdeecfaaa94492b1e719dbd1cf455bfa40db47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d9f2a11a9ec1691863b476fed02eff1831a69207
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795698"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569722"
 ---
 # <a name="synchronize-state"></a>Status „Synchronisieren“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, was geschieht, während die Synchronize-Zustand des Computers Zustand Replikation. 
   
@@ -51,5 +51,5 @@ Der Client legt die [in] Mitglieder der **SYNCHRONISIERUNG**, die Outlook mittei
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCSTATE](syncstate.md)
+[SYNCHRONISIERUNGSSTATUS](syncstate.md)
 

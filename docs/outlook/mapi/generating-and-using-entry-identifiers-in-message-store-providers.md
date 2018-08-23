@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0c43546a-4788-4852-bc89-d6baa4f33c94
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3bfda4a1dbe464c744917c2e9b3ca66eaf88fd20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 10634305130b0f465482cce025018d4929350513
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791792"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565452"
 ---
 # <a name="generating-and-using-entry-identifiers-in-message-store-providers"></a>Generieren und Verwenden von Eintragsbezeichner in Nachricht speichern-Anbieter
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn Sie einen neuen Ordner oder Nachricht in einem Nachrichtenspeicher erstellt wird, hat der Nachricht Speicheranbieter dieses Objekt eines Eintrags-ID zugewiesen, sodass Clientanwendungen darauf verweisen können. Nachricht-Anbieter können die außer Kraft gesetzten langfristige-Eintragsbezeichner von gelöschten Objekten wiederverwenden oder erstellen neue IDs. Es gibt keine Anforderung unidirektional oder das andere für die Nachricht-Anbieter. jedoch, wenn es möglich ist, sollte eine Nachricht Speicheranbieter immer neue langfristige Eintragsbezeichner für neue Objekte, sondern Wiederverwenden von alten generieren. Es ist kein Problem kurzfristige-Eintragsbezeichner wiederverwendet, wenn die Objekte, denen sie referenzieren gelöscht werden.
   

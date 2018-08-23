@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84251222-dac4-4f4d-97b9-aa0e2cd26c44
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2c8661f24ed9555547446cf63fc08a3be7e6e941
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ff088dc5bf62f407692c9eec649ff388f79d549d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791436"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567153"
 ---
 # <a name="contabentryid"></a>CONTAB_ENTRYID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID für den Kontakteordner.
   
@@ -77,7 +77,7 @@ typedef struct _contab_entryid
   
 > Der Eintrag Bezeichner der Nachricht Kontakt im Adressbuch Kontakte Eintrag zugeordnet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Einem Adressbuch Kontakte ist ein Adressbuch, das alle Kontaktelemente in einem Kontakteordner enthält, die eine e-Mail-Adresse oder eine Faxnummer verfügen. Jeder Eintrag in einem Adressbuch Kontakte ist eine e-Mail-Adresse oder eine Faxnummer zugeordnet. Da ein Kontaktelement kann bis zu drei e-Mail-Adressen und drei Faxnummer, kann ein Kontaktelement durch maximal sechs Einträge in der entsprechenden Kontaktadressbuch dargestellt werden.
   

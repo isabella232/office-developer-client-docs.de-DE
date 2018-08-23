@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ec1bbaa-7707-4239-9994-21ad1116430b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0bbad04e728c9283df0a9b7ceb7a8e303f0595dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 898876863223aefa868fd37deced2948bd5a5694
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791382"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569750"
 ---
 # <a name="cbnewadrlist"></a>CbNewADRLIST
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes, die für eine neue [ADRLIST](adrlist.md) -Struktur, die eine angegebene Anzahl von Empfängern, dargestellt durch [ADRENTRY](adrentry.md) Strukturen enthält zugewiesen werden soll. 
   

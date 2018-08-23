@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0aa0df2-79f9-2558-7eb6-accae9bef4b2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 15e2d5c2aca595c3a06d215cd069c23da3e48125
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 13a4cf401cf51241a52401668eef008d65aa5459
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792243"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567139"
 ---
 # <a name="imapiofflinesetcurrentstate"></a>IMAPIOffline::SetCurrentState
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt den aktuellen Zustand eines offline-Objekts zu online oder offline.
   

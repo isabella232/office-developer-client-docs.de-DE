@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 849d33e0-922f-49fe-bf2a-460329f0570d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8f61e386ed3f52c9ce3a8dbef021dc2423aedf1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3b0679c37b04b05f240d8cea1b777a430c66d18e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794221"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570107"
 ---
 # <a name="pidtagcontactversion-canonical-property"></a>PidTagContactVersion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Version der Kontaktinformationen eines Empfängers an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTACT_VERSION  <br/> |
-|Bezeichner:  <br/> |0x3A52  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTACT_VERSION  <br/> |
+|Kennung:  <br/> |0x3A52  <br/> |
 |Datentyp:  <br/> |PT_CLSID  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 47e6c576-bd99-4410-8e41-7dd3159b23b7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 64d205ee7f51c0ce6a6eb1e982659c6cda675f8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 87a470c1c682225eb1deefba9ccc8c12fbdc49c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791680"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569827"
 ---
 # <a name="fbinfromhex"></a>FBinFromHex
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeichenfolgendarstellung einer eine hexadezimale Zahl konvertiert um Binärdaten. 
   

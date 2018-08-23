@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d1883d22-5eca-4d00-8222-3fc74782c7a9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fa1eca4780a4fde1a388f8e140d76c776c3b63d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7f4d555f6ed0cc960c9752bfc2e27a70596b9a73
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793985"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567832"
 ---
 # <a name="pidnamemanager-canonical-property"></a>PidNameManager (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Manager der Datei, die an das Dokument angefügt ist.
   

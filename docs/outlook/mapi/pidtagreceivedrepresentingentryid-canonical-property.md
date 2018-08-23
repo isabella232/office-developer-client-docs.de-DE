@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2ae2266c-f093-41e5-b4d0-e12aa0f03190
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 12e4c97947cfe579f550cc6d48ca0b64750b9ab6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 490025f22cd643ffededd6d8022907761c7f15d9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794883"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567097"
 ---
 # <a name="pidtagreceivedrepresentingentryid-canonical-property"></a>PidTagReceivedRepresentingEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID für den messaging-Benutzer, die von der empfangenden Benutzer dargestellt wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RCVD_REPRESENTING_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x0043  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RCVD_REPRESENTING_ENTRYID  <br/> |
+|Kennung:  <br/> |0x0043  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den messaging-Benutzer, die von der empfangenden Benutzer dargestellt wird. Von der eingehenden Adressbuchhierarchie muss festgelegt werden, die auch für die Autorisierung oder Überprüfung des Delegaten zuständig ist. Wenn kein messaging Benutzer dargestellt wird, sollten diese Eigenschaft auf die Eintrags-ID, die in der Eigenschaft **PR_RECEIVED_BY_ENTRYID** ([PidTagReceivedByEntryId](pidtagreceivedbyentryid-canonical-property.md)) enthalten sind festgelegt werden.
   

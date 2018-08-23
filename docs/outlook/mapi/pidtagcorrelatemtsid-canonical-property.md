@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d0fc4e91-ed90-4d27-bd23-f01e99728e2d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 57da2d4c78914323b5dafa4f5ba5b7628d0e2f2f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 468cda97398bc393b1c0a65e2c13df5ba3ade3aa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794276"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568910"
 ---
 # <a name="pidtagcorrelatemtsid-canonical-property"></a>PidTagCorrelateMtsid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Nachricht Transfer System (MTS)-ID in Korrelation Berichte mit gesendete Nachrichten verwendet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CORRELATE_MTSID  <br/> |
-|Bezeichner:  <br/> |0x0E0D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CORRELATE_MTSID  <br/> |
+|Kennung:  <br/> |0x0E0D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn ein Transportdienstes eine gesendete Nachricht mit dieser Eigenschaft auf true fest, erkennt, wird diese Eigenschaft die MTS-ID für diese Nachricht. Nach der Übermittlung wird diese Eigenschaft mit der Nachricht im Ordner Gesendete Elemente zwischen Personen Nachricht (IPM) gespeichert.
   
