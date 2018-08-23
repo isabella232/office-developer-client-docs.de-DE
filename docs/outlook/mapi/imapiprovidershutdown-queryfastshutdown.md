@@ -12,47 +12,47 @@ api_type:
 - COM
 ms.assetid: 12069912-4b87-4945-9123-51106e0d2d54
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d9f08c13f68c7d3d9f41b9a67ac1888d6c507c34
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4301fb504439cf0ebd70b5ece589c812cb74844e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792324"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585297"
 ---
-# <a name="imapiprovidershutdownqueryfastshutdown"></a><span data-ttu-id="d9f58-103">IMAPIProviderShutdown::QueryFastShutdown</span><span class="sxs-lookup"><span data-stu-id="d9f58-103">IMAPIProviderShutdown::QueryFastShutdown</span></span>
+# <a name="imapiprovidershutdownqueryfastshutdown"></a><span data-ttu-id="55783-103">IMAPIProviderShutdown::QueryFastShutdown</span><span class="sxs-lookup"><span data-stu-id="55783-103">IMAPIProviderShutdown::QueryFastShutdown</span></span>
 
   
   
-<span data-ttu-id="d9f58-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="d9f58-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="55783-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="55783-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="d9f58-105">Abfragen der MAPI-Anbieter für Schnelles Herunterfahren unterstützen.</span><span class="sxs-lookup"><span data-stu-id="d9f58-105">Queries the MAPI provider for fast shutdown support.</span></span> 
+<span data-ttu-id="55783-105">Abfragen der MAPI-Anbieter für Schnelles Herunterfahren unterstützen.</span><span class="sxs-lookup"><span data-stu-id="55783-105">Queries the MAPI provider for fast shutdown support.</span></span> 
   
 ```cpp
 HRESULT QueryFastShutdown ();
 ```
 
-## <a name="return-value"></a><span data-ttu-id="d9f58-106">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="d9f58-106">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="55783-106">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="55783-106">Return value</span></span>
 
-<span data-ttu-id="d9f58-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="d9f58-107">S_OK</span></span>
+<span data-ttu-id="55783-107">S_OK</span><span class="sxs-lookup"><span data-stu-id="55783-107">S_OK</span></span>
   
-> <span data-ttu-id="d9f58-108">Der MAPI-Anbieter unterstützt den MAPI-Client zum Herunterfahren schnelle.</span><span class="sxs-lookup"><span data-stu-id="d9f58-108">The MAPI provider supports the MAPI client to do fast shutdown.</span></span>
+> <span data-ttu-id="55783-108">Der MAPI-Anbieter unterstützt den MAPI-Client zum Herunterfahren schnelle.</span><span class="sxs-lookup"><span data-stu-id="55783-108">The MAPI provider supports the MAPI client to do fast shutdown.</span></span>
     
-<span data-ttu-id="d9f58-109">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="d9f58-109">MAPI_E_NO_SUPPORT</span></span>
+<span data-ttu-id="55783-109">MAPI_E_NO_SUPPORT</span><span class="sxs-lookup"><span data-stu-id="55783-109">MAPI_E_NO_SUPPORT</span></span>
   
-> <span data-ttu-id="d9f58-110">MAPI-Anbieter unterstützt keine den MAPI-Client zum Herunterfahren schnelle.</span><span class="sxs-lookup"><span data-stu-id="d9f58-110">The MAPI provider does not support the MAPI client to do fast shutdown.</span></span>
+> <span data-ttu-id="55783-110">MAPI-Anbieter unterstützt keine den MAPI-Client zum Herunterfahren schnelle.</span><span class="sxs-lookup"><span data-stu-id="55783-110">The MAPI provider does not support the MAPI client to do fast shutdown.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="d9f58-111">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="d9f58-111">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="55783-111">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="55783-111">Remarks</span></span>
 
-<span data-ttu-id="d9f58-112">MAPI-Anbieter, die keine schnelle Herunterfahren von Clients unterstützen müssen sollten weiterhin die [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) -Schnittstelle implementieren, und haben die **IMAPIProviderShutdown::QueryFastShutdown** -Methode MAPI_E_NO_SUPPORT zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="d9f58-112">MAPI providers that do not need to support client fast shutdown should still implement the [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) interface, and have the **IMAPIProviderShutdown::QueryFastShutdown** method return MAPI_E_NO_SUPPORT.</span></span> <span data-ttu-id="d9f58-113">Für Outlook als MAPI-Client bewirkt, dass dieser Outlook warten, dass alle externen Verweise freigegeben werden muss, bevor sie beendet wird.</span><span class="sxs-lookup"><span data-stu-id="d9f58-113">For Outlook as a MAPI client, this causes Outlook to wait for all external references to be released before it exits.</span></span> 
+<span data-ttu-id="55783-112">MAPI-Anbieter, die keine schnelle Herunterfahren von Clients unterstützen müssen sollten weiterhin die [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) -Schnittstelle implementieren, und haben die **IMAPIProviderShutdown::QueryFastShutdown** -Methode MAPI_E_NO_SUPPORT zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="55783-112">MAPI providers that do not need to support client fast shutdown should still implement the [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) interface, and have the **IMAPIProviderShutdown::QueryFastShutdown** method return MAPI_E_NO_SUPPORT.</span></span> <span data-ttu-id="55783-113">Für Outlook als MAPI-Client bewirkt, dass dieser Outlook warten, dass alle externen Verweise freigegeben werden muss, bevor sie beendet wird.</span><span class="sxs-lookup"><span data-stu-id="55783-113">For Outlook as a MAPI client, this causes Outlook to wait for all external references to be released before it exits.</span></span> 
   
-<span data-ttu-id="d9f58-114">Je nach Windows-Registrierung des Benutzers verhindert Einstellung für das schnelle Herunterfahren nicht implementieren der **IMAPIProviderShutdown** -Schnittstelle nicht unbedingt ein schnelle Herunterfahren von Clients.</span><span class="sxs-lookup"><span data-stu-id="d9f58-114">Depending on the user's Windows registry setting for fast shutdown, not implementing the **IMAPIProviderShutdown** interface does not necessarily prevent a client fast shutdown.</span></span> 
+<span data-ttu-id="55783-114">Je nach Windows-Registrierung des Benutzers verhindert Einstellung für das schnelle Herunterfahren nicht implementieren der **IMAPIProviderShutdown** -Schnittstelle nicht unbedingt ein schnelle Herunterfahren von Clients.</span><span class="sxs-lookup"><span data-stu-id="55783-114">Depending on the user's Windows registry setting for fast shutdown, not implementing the **IMAPIProviderShutdown** interface does not necessarily prevent a client fast shutdown.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="d9f58-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d9f58-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="55783-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="55783-115">See also</span></span>
 
 
 
-[<span data-ttu-id="d9f58-116">IMAPIProviderShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="d9f58-116">IMAPIProviderShutdown : IUnknown</span></span>](imapiprovidershutdowniunknown.md)
+[<span data-ttu-id="55783-116">IMAPIProviderShutdown : IUnknown</span><span class="sxs-lookup"><span data-stu-id="55783-116">IMAPIProviderShutdown : IUnknown</span></span>](imapiprovidershutdowniunknown.md)
 
 
-[<span data-ttu-id="d9f58-117">Herunterfahren von Clients in MAPI</span><span class="sxs-lookup"><span data-stu-id="d9f58-117">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
+[<span data-ttu-id="55783-117">Herunterfahren von Clients in MAPI</span><span class="sxs-lookup"><span data-stu-id="55783-117">Client Shutdown in MAPI</span></span>](client-shutdown-in-mapi.md)
 

@@ -12,37 +12,37 @@ api_type:
 - HeaderDef
 ms.assetid: 148695dd-d886-4a06-9cfe-749059ae91ed
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b236b24c10a241dbdecc28bf2e04de5f69e989e5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cb0630ba30f8d3d7ae38c165c5da60bbc12077c1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793113"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592332"
 ---
-# <a name="mapigetdefaultmalloc"></a><span data-ttu-id="f1cbb-103">MAPIGetDefaultMalloc</span><span class="sxs-lookup"><span data-stu-id="f1cbb-103">MAPIGetDefaultMalloc</span></span>
+# <a name="mapigetdefaultmalloc"></a><span data-ttu-id="58e91-103">MAPIGetDefaultMalloc</span><span class="sxs-lookup"><span data-stu-id="58e91-103">MAPIGetDefaultMalloc</span></span>
 
   
   
-<span data-ttu-id="f1cbb-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="f1cbb-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="58e91-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="58e91-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="f1cbb-105">Ruft die Adresse der Verteilungsfunktion Standard MAPI-Speicher.</span><span class="sxs-lookup"><span data-stu-id="f1cbb-105">Retrieves the address of the default MAPI memory allocation function.</span></span>
+<span data-ttu-id="58e91-105">Ruft die Adresse der Verteilungsfunktion Standard MAPI-Speicher.</span><span class="sxs-lookup"><span data-stu-id="58e91-105">Retrieves the address of the default MAPI memory allocation function.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="f1cbb-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="f1cbb-106">Header file:</span></span>  <br/> |<span data-ttu-id="f1cbb-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="f1cbb-107">Mapiutil.h</span></span>  <br/> |
-|<span data-ttu-id="f1cbb-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="f1cbb-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="f1cbb-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="f1cbb-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="f1cbb-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="f1cbb-110">Called by:</span></span>  <br/> |<span data-ttu-id="f1cbb-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="f1cbb-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="58e91-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="58e91-106">Header file:</span></span>  <br/> |<span data-ttu-id="58e91-107">Mapiutil.h</span><span class="sxs-lookup"><span data-stu-id="58e91-107">Mapiutil.h</span></span>  <br/> |
+|<span data-ttu-id="58e91-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="58e91-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="58e91-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="58e91-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="58e91-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="58e91-110">Called by:</span></span>  <br/> |<span data-ttu-id="58e91-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="58e91-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 LPMALLOC MAPIGetDefaultMalloc( );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="f1cbb-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="f1cbb-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="58e91-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="58e91-112">Parameters</span></span>
 
-<span data-ttu-id="f1cbb-113">None.</span><span class="sxs-lookup"><span data-stu-id="f1cbb-113">None.</span></span> 
+<span data-ttu-id="58e91-113">None.</span><span class="sxs-lookup"><span data-stu-id="58e91-113">None.</span></span> 
   
-## <a name="return-value"></a><span data-ttu-id="f1cbb-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="f1cbb-114">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="58e91-114">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="58e91-114">Return value</span></span>
 
-<span data-ttu-id="f1cbb-115">Die **MAPIGetDefaultMalloc** -Funktion gibt einen Zeiger auf die Standardfunktion MAPI Memory Allocation.</span><span class="sxs-lookup"><span data-stu-id="f1cbb-115">The **MAPIGetDefaultMalloc** function returns a pointer to the default MAPI memory allocation function.</span></span> 
+<span data-ttu-id="58e91-115">Die **MAPIGetDefaultMalloc** -Funktion gibt einen Zeiger auf die Standardfunktion MAPI Memory Allocation.</span><span class="sxs-lookup"><span data-stu-id="58e91-115">The **MAPIGetDefaultMalloc** function returns a pointer to the default MAPI memory allocation function.</span></span> 
   
 

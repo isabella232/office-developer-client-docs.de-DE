@@ -10,55 +10,55 @@ api_type:
 - COM
 ms.assetid: 322b915f-d5b8-40cb-b41a-62d08f3d08f9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 451a8bd0ffd887212ce5c95579755fb8214bc1d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: dafa251403740aca806efbb52962cc7323e55239
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794968"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590442"
 ---
-# <a name="pidtagreportdispositiontonames-canonical-property"></a><span data-ttu-id="325d3-103">PidTagReportDispositionToNames (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="325d3-103">PidTagReportDispositionToNames Canonical Property</span></span>
+# <a name="pidtagreportdispositiontonames-canonical-property"></a><span data-ttu-id="b4388-103">PidTagReportDispositionToNames (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="b4388-103">PidTagReportDispositionToNames Canonical Property</span></span>
 
   
   
-<span data-ttu-id="325d3-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="325d3-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="b4388-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b4388-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="325d3-105">Gibt die Namen der Berichtempfänger für Nachrichten, die Empfangsbestätigungen anfordern.</span><span class="sxs-lookup"><span data-stu-id="325d3-105">Indicates the names of the report recipients for messages that request receipts.</span></span>
+<span data-ttu-id="b4388-105">Gibt die Namen der Berichtempfänger für Nachrichten, die Empfangsbestätigungen anfordern.</span><span class="sxs-lookup"><span data-stu-id="b4388-105">Indicates the names of the report recipients for messages that request receipts.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="325d3-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="325d3-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="325d3-107">PR_REPORT_DISPOSITION_TO_NAMES, PR_REPORT_DISPOSITION_TO_NAMES_A, PR_REPORT_DISPOSITION_TO_NAMES_W</span><span class="sxs-lookup"><span data-stu-id="325d3-107">PR_REPORT_DISPOSITION_TO_NAMES, PR_REPORT_DISPOSITION_TO_NAMES_A, PR_REPORT_DISPOSITION_TO_NAMES_W</span></span>  <br/> |
-|<span data-ttu-id="325d3-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="325d3-108">Identifier:</span></span>  <br/> |<span data-ttu-id="325d3-109">0x0083</span><span class="sxs-lookup"><span data-stu-id="325d3-109">0x0083</span></span>  <br/> |
-|<span data-ttu-id="325d3-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="325d3-110">Data type:</span></span>  <br/> |<span data-ttu-id="325d3-111">PT_MV_STRING8 PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="325d3-111">PT_MV_STRING8, PT_UNICODE</span></span>  <br/> |
-|<span data-ttu-id="325d3-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="325d3-112">Area:</span></span>  <br/> |<span data-ttu-id="325d3-113">MAPI-Umschlag</span><span class="sxs-lookup"><span data-stu-id="325d3-113">MAPI envelope</span></span>  <br/> |
+|<span data-ttu-id="b4388-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="b4388-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b4388-107">PR_REPORT_DISPOSITION_TO_NAMES, PR_REPORT_DISPOSITION_TO_NAMES_A, PR_REPORT_DISPOSITION_TO_NAMES_W</span><span class="sxs-lookup"><span data-stu-id="b4388-107">PR_REPORT_DISPOSITION_TO_NAMES, PR_REPORT_DISPOSITION_TO_NAMES_A, PR_REPORT_DISPOSITION_TO_NAMES_W</span></span>  <br/> |
+|<span data-ttu-id="b4388-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="b4388-108">Identifier:</span></span>  <br/> |<span data-ttu-id="b4388-109">0x0083</span><span class="sxs-lookup"><span data-stu-id="b4388-109">0x0083</span></span>  <br/> |
+|<span data-ttu-id="b4388-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="b4388-110">Data type:</span></span>  <br/> |<span data-ttu-id="b4388-111">PT_MV_STRING8 PT_UNICODE</span><span class="sxs-lookup"><span data-stu-id="b4388-111">PT_MV_STRING8, PT_UNICODE</span></span>  <br/> |
+|<span data-ttu-id="b4388-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="b4388-112">Area:</span></span>  <br/> |<span data-ttu-id="b4388-113">MAPI-Umschlag</span><span class="sxs-lookup"><span data-stu-id="b4388-113">MAPI envelope</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="325d3-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="325d3-114">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="b4388-114">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="b4388-114">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="325d3-115">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="325d3-115">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="b4388-115">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="b4388-115">Protocol specifications</span></span>
 
-<span data-ttu-id="325d3-116">[[MS-OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="325d3-116">[[MS-OXPROPS]]</span></span> 
+<span data-ttu-id="b4388-116">[[MS-OXPROPS]]</span><span class="sxs-lookup"><span data-stu-id="b4388-116">[[MS-OXPROPS]]</span></span> 
   
-> <span data-ttu-id="325d3-117">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="325d3-117">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="b4388-117">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="b4388-117">Provides references to related Exchange Server protocol specifications.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="325d3-118">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="325d3-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="b4388-118">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="b4388-118">Header files</span></span>
 
-<span data-ttu-id="325d3-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="325d3-119">Mapidefs.h</span></span>
+<span data-ttu-id="b4388-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b4388-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="325d3-120">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="325d3-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="b4388-120">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="b4388-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="325d3-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="325d3-121">Mapitags.h</span></span>
+<span data-ttu-id="b4388-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="b4388-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="325d3-122">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="325d3-122">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="b4388-122">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="b4388-122">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="325d3-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="325d3-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b4388-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b4388-123">See also</span></span>
 
 
 
-[<span data-ttu-id="325d3-124">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="325d3-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="b4388-124">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b4388-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="325d3-125">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="325d3-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="b4388-125">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b4388-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="325d3-126">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="325d3-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="b4388-126">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="b4388-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="325d3-127">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="325d3-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="b4388-127">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="b4388-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

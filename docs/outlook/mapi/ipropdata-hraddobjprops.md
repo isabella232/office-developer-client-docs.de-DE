@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 985b763ade9670c064c6c338953debf7beaa2783
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ae0d6d58f96738a9686dbdda86336c040c2e2f68
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792771"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591683"
 ---
-# <a name="ipropdatahraddobjprops"></a><span data-ttu-id="29cc2-103">IPropData::HrAddObjProps</span><span class="sxs-lookup"><span data-stu-id="29cc2-103">IPropData::HrAddObjProps</span></span>
+# <a name="ipropdatahraddobjprops"></a><span data-ttu-id="0d630-103">IPropData::HrAddObjProps</span><span class="sxs-lookup"><span data-stu-id="0d630-103">IPropData::HrAddObjProps</span></span>
 
   
   
-<span data-ttu-id="29cc2-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="29cc2-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="0d630-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="0d630-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="29cc2-105">Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.</span><span class="sxs-lookup"><span data-stu-id="29cc2-105">Adds one or more properties of type PT_OBJECT to the object.</span></span>
+<span data-ttu-id="0d630-105">Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.</span><span class="sxs-lookup"><span data-stu-id="0d630-105">Adds one or more properties of type PT_OBJECT to the object.</span></span>
   
 ```cpp
 HRESULT HrAddObjProps(
@@ -34,53 +34,53 @@ HRESULT HrAddObjProps(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="29cc2-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="29cc2-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="0d630-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="0d630-106">Parameters</span></span>
 
- <span data-ttu-id="29cc2-107">_lpPropTagArray_</span><span class="sxs-lookup"><span data-stu-id="29cc2-107">_lpPropTagArray_</span></span>
+ <span data-ttu-id="0d630-107">_lpPropTagArray_</span><span class="sxs-lookup"><span data-stu-id="0d630-107">_lpPropTagArray_</span></span>
   
-> <span data-ttu-id="29cc2-108">[in] Ein Zeiger auf ein Array von Eigenschaftentags, die angeben, die Eigenschaften hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="29cc2-108">[in] A pointer to an array of property tags that indicate the properties to add.</span></span>
+> <span data-ttu-id="0d630-108">[in] Ein Zeiger auf ein Array von Eigenschaftentags, die angeben, die Eigenschaften hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="0d630-108">[in] A pointer to an array of property tags that indicate the properties to add.</span></span>
     
- <span data-ttu-id="29cc2-109">_lppProblems_</span><span class="sxs-lookup"><span data-stu-id="29cc2-109">_lppProblems_</span></span>
+ <span data-ttu-id="0d630-109">_lppProblems_</span><span class="sxs-lookup"><span data-stu-id="0d630-109">_lppProblems_</span></span>
   
-> <span data-ttu-id="29cc2-110">[in, out] Klicken Sie auf Eingaben, einen gültigen Zeiger auf eine Struktur [SPropProblemArray](spropproblemarray.md) oder NULL.</span><span class="sxs-lookup"><span data-stu-id="29cc2-110">[in, out] On input, a valid pointer to an [SPropProblemArray](spropproblemarray.md) structure, or NULL.</span></span> <span data-ttu-id="29cc2-111">Klicken Sie auf Ausgabe, einen Zeiger auf einen Zeiger auf eine Struktur, die Informationen zu Eigenschaften enthält, die nicht hinzugefügt werden konnte, oder NULL.</span><span class="sxs-lookup"><span data-stu-id="29cc2-111">On output, a pointer to a pointer to a structure that contains information about properties that could not be added, or NULL.</span></span> <span data-ttu-id="29cc2-112">Nur, wenn ein gültiger Zeiger übergeben wird, wird ein Zeiger auf eine Eigenschaft Problem Array-Struktur zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="29cc2-112">A pointer to a property problem array structure is returned only if a valid pointer is passed in.</span></span> 
+> <span data-ttu-id="0d630-110">[in, out] Klicken Sie auf Eingaben, einen gültigen Zeiger auf eine Struktur [SPropProblemArray](spropproblemarray.md) oder NULL.</span><span class="sxs-lookup"><span data-stu-id="0d630-110">[in, out] On input, a valid pointer to an [SPropProblemArray](spropproblemarray.md) structure, or NULL.</span></span> <span data-ttu-id="0d630-111">Klicken Sie auf Ausgabe, einen Zeiger auf einen Zeiger auf eine Struktur, die Informationen zu Eigenschaften enthält, die nicht hinzugefügt werden konnte, oder NULL.</span><span class="sxs-lookup"><span data-stu-id="0d630-111">On output, a pointer to a pointer to a structure that contains information about properties that could not be added, or NULL.</span></span> <span data-ttu-id="0d630-112">Nur, wenn ein gültiger Zeiger übergeben wird, wird ein Zeiger auf eine Eigenschaft Problem Array-Struktur zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="0d630-112">A pointer to a property problem array structure is returned only if a valid pointer is passed in.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="29cc2-113">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="29cc2-113">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="0d630-113">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="0d630-113">Return value</span></span>
 
-<span data-ttu-id="29cc2-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="29cc2-114">S_OK</span></span> 
+<span data-ttu-id="0d630-114">S_OK</span><span class="sxs-lookup"><span data-stu-id="0d630-114">S_OK</span></span> 
   
-> <span data-ttu-id="29cc2-115">Die Eigenschaften wurden erfolgreich hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="29cc2-115">The properties were successfully added.</span></span>
+> <span data-ttu-id="0d630-115">Die Eigenschaften wurden erfolgreich hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="0d630-115">The properties were successfully added.</span></span>
     
-<span data-ttu-id="29cc2-116">MAPI_E_INVALID_TYPE</span><span class="sxs-lookup"><span data-stu-id="29cc2-116">MAPI_E_INVALID_TYPE</span></span> 
+<span data-ttu-id="0d630-116">MAPI_E_INVALID_TYPE</span><span class="sxs-lookup"><span data-stu-id="0d630-116">MAPI_E_INVALID_TYPE</span></span> 
   
-> <span data-ttu-id="29cc2-117">Geben Sie eine Eigenschaft außer PT_OBJECT im Array übergeben wurde, die auf der _LpPropTagArray_ -Parameter verweist.</span><span class="sxs-lookup"><span data-stu-id="29cc2-117">A property type other than PT_OBJECT was passed in the array that the  _lpPropTagArray_ parameter points to.</span></span> 
+> <span data-ttu-id="0d630-117">Geben Sie eine Eigenschaft außer PT_OBJECT im Array übergeben wurde, die auf der _LpPropTagArray_ -Parameter verweist.</span><span class="sxs-lookup"><span data-stu-id="0d630-117">A property type other than PT_OBJECT was passed in the array that the  _lpPropTagArray_ parameter points to.</span></span> 
     
-<span data-ttu-id="29cc2-118">MAPI_E_NO_ACCESS</span><span class="sxs-lookup"><span data-stu-id="29cc2-118">MAPI_E_NO_ACCESS</span></span> 
+<span data-ttu-id="0d630-118">MAPI_E_NO_ACCESS</span><span class="sxs-lookup"><span data-stu-id="0d630-118">MAPI_E_NO_ACCESS</span></span> 
   
-> <span data-ttu-id="29cc2-119">Das Objekt wurde nicht für Lese-/Schreibberechtigung zulassen festgelegt.</span><span class="sxs-lookup"><span data-stu-id="29cc2-119">The object has been set not to allow read/write permission.</span></span>
+> <span data-ttu-id="0d630-119">Das Objekt wurde nicht für Lese-/Schreibberechtigung zulassen festgelegt.</span><span class="sxs-lookup"><span data-stu-id="0d630-119">The object has been set not to allow read/write permission.</span></span>
     
-<span data-ttu-id="29cc2-120">MAPI_W_PARTIAL_COMPLETION</span><span class="sxs-lookup"><span data-stu-id="29cc2-120">MAPI_W_PARTIAL_COMPLETION</span></span> 
+<span data-ttu-id="0d630-120">MAPI_W_PARTIAL_COMPLETION</span><span class="sxs-lookup"><span data-stu-id="0d630-120">MAPI_W_PARTIAL_COMPLETION</span></span> 
   
-> <span data-ttu-id="29cc2-121">Einige, jedoch nicht alle Eigenschaften wurden hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="29cc2-121">Some, but not all, of the properties were added.</span></span>
+> <span data-ttu-id="0d630-121">Einige, jedoch nicht alle Eigenschaften wurden hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="0d630-121">Some, but not all, of the properties were added.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="29cc2-122">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="29cc2-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0d630-122">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="0d630-122">Remarks</span></span>
 
-<span data-ttu-id="29cc2-123">Die **IPropData::HrAddObjProps** -Methode fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.</span><span class="sxs-lookup"><span data-stu-id="29cc2-123">The **IPropData::HrAddObjProps** method adds one or more properties of type PT_OBJECT to the object.</span></span> <span data-ttu-id="29cc2-124">**HrAddObjProps** stellt eine Alternative zur die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode für Objekteigenschaften, da Objekteigenschaften durch Aufrufen von **SetProps**nicht erstellt werden können.</span><span class="sxs-lookup"><span data-stu-id="29cc2-124">**HrAddObjProps** provides an alternative to the [IMAPIProp::SetProps](imapiprop-setprops.md) method for object properties, because object properties cannot be created by calling **SetProps**.</span></span> <span data-ttu-id="29cc2-125">Hinzufügen einer Object-Eigenschaft führt das Eigenschafts-Tag eingeschlossen werden, in der Liste der Eigenschaftentags, die die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="29cc2-125">Adding an object property results in the property tag being included in the list of property tags that the [IMAPIProp::GetPropList](imapiprop-getproplist.md) method returns.</span></span> 
+<span data-ttu-id="0d630-123">Die **IPropData::HrAddObjProps** -Methode fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.</span><span class="sxs-lookup"><span data-stu-id="0d630-123">The **IPropData::HrAddObjProps** method adds one or more properties of type PT_OBJECT to the object.</span></span> <span data-ttu-id="0d630-124">**HrAddObjProps** stellt eine Alternative zur die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode für Objekteigenschaften, da Objekteigenschaften durch Aufrufen von **SetProps**nicht erstellt werden können.</span><span class="sxs-lookup"><span data-stu-id="0d630-124">**HrAddObjProps** provides an alternative to the [IMAPIProp::SetProps](imapiprop-setprops.md) method for object properties, because object properties cannot be created by calling **SetProps**.</span></span> <span data-ttu-id="0d630-125">Hinzufügen einer Object-Eigenschaft führt das Eigenschafts-Tag eingeschlossen werden, in der Liste der Eigenschaftentags, die die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="0d630-125">Adding an object property results in the property tag being included in the list of property tags that the [IMAPIProp::GetPropList](imapiprop-getproplist.md) method returns.</span></span> 
   
-## <a name="notes-to-callers"></a><span data-ttu-id="29cc2-126">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="29cc2-126">Notes to callers</span></span>
+## <a name="notes-to-callers"></a><span data-ttu-id="0d630-126">Hinweise für Aufrufer</span><span class="sxs-lookup"><span data-stu-id="0d630-126">Notes to callers</span></span>
 
-<span data-ttu-id="29cc2-127">Wenn **HrAddObjProps** MAPI_W_PARTIAL_COMPLETION zurückgegeben, und Sie _LppProblems_ auf einen gültigen Zeiger festgelegt haben, überprüfen Sie die zurückgegebene [SPropProblemArray](spropproblemarray.md) -Struktur, um zu ermitteln, welche Eigenschaften nicht hinzugefügt wurden.</span><span class="sxs-lookup"><span data-stu-id="29cc2-127">If **HrAddObjProps** returns MAPI_W_PARTIAL_COMPLETION and you have set  _lppProblems_ to a valid pointer, check the returned [SPropProblemArray](spropproblemarray.md) structure to find out which properties were not added.</span></span> <span data-ttu-id="29cc2-128">In der Regel ist das einzige Problem, dass nicht genügend Speicherplatz verfügbar.</span><span class="sxs-lookup"><span data-stu-id="29cc2-128">Typically, the only problem that occurs is lack of memory.</span></span> <span data-ttu-id="29cc2-129">Freigeben der Struktur **SPropProblemArray** durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion, wenn Sie mit ihm fertig sind.</span><span class="sxs-lookup"><span data-stu-id="29cc2-129">Free the **SPropProblemArray** structure by calling the [MAPIFreeBuffer](mapifreebuffer.md) function when you are finished with it.</span></span> 
+<span data-ttu-id="0d630-127">Wenn **HrAddObjProps** MAPI_W_PARTIAL_COMPLETION zurückgegeben, und Sie _LppProblems_ auf einen gültigen Zeiger festgelegt haben, überprüfen Sie die zurückgegebene [SPropProblemArray](spropproblemarray.md) -Struktur, um zu ermitteln, welche Eigenschaften nicht hinzugefügt wurden.</span><span class="sxs-lookup"><span data-stu-id="0d630-127">If **HrAddObjProps** returns MAPI_W_PARTIAL_COMPLETION and you have set  _lppProblems_ to a valid pointer, check the returned [SPropProblemArray](spropproblemarray.md) structure to find out which properties were not added.</span></span> <span data-ttu-id="0d630-128">In der Regel ist das einzige Problem, dass nicht genügend Speicherplatz verfügbar.</span><span class="sxs-lookup"><span data-stu-id="0d630-128">Typically, the only problem that occurs is lack of memory.</span></span> <span data-ttu-id="0d630-129">Freigeben der Struktur **SPropProblemArray** durch Aufrufen der [MAPIFreeBuffer](mapifreebuffer.md) -Funktion, wenn Sie mit ihm fertig sind.</span><span class="sxs-lookup"><span data-stu-id="0d630-129">Free the **SPropProblemArray** structure by calling the [MAPIFreeBuffer](mapifreebuffer.md) function when you are finished with it.</span></span> 
   
-<span data-ttu-id="29cc2-130">Zum Hinzufügen einer Eigenschaft muss das Zielobjekt Lese-/Schreibberechtigung haben.</span><span class="sxs-lookup"><span data-stu-id="29cc2-130">To add a property, the target object must have read/write permission.</span></span> <span data-ttu-id="29cc2-131">Wenn **HrAddObjProps** MAPI_E_NO_ACCESS zurückgibt, können nicht Sie Eigenschaften für das Objekt hinzufügen, da diese Änderung nicht zulässig ist.</span><span class="sxs-lookup"><span data-stu-id="29cc2-131">If **HrAddObjProps** returns MAPI_E_NO_ACCESS, you cannot add properties to the object because it does not permit modification.</span></span> <span data-ttu-id="29cc2-132">Lese-/Schreibberechtigung für ein Objekt vor dem Aufrufen von **HrAddObjProps**zu erhalten, rufen Sie [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md) , und legen Sie den Parameter _UlAccess_ auf IPROP_READWRITE.</span><span class="sxs-lookup"><span data-stu-id="29cc2-132">To obtain read/write permission to an object prior to calling **HrAddObjProps**, call [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md) and set the  _ulAccess_ parameter to IPROP_READWRITE.</span></span> 
+<span data-ttu-id="0d630-130">Zum Hinzufügen einer Eigenschaft muss das Zielobjekt Lese-/Schreibberechtigung haben.</span><span class="sxs-lookup"><span data-stu-id="0d630-130">To add a property, the target object must have read/write permission.</span></span> <span data-ttu-id="0d630-131">Wenn **HrAddObjProps** MAPI_E_NO_ACCESS zurückgibt, können nicht Sie Eigenschaften für das Objekt hinzufügen, da diese Änderung nicht zulässig ist.</span><span class="sxs-lookup"><span data-stu-id="0d630-131">If **HrAddObjProps** returns MAPI_E_NO_ACCESS, you cannot add properties to the object because it does not permit modification.</span></span> <span data-ttu-id="0d630-132">Lese-/Schreibberechtigung für ein Objekt vor dem Aufrufen von **HrAddObjProps**zu erhalten, rufen Sie [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md) , und legen Sie den Parameter _UlAccess_ auf IPROP_READWRITE.</span><span class="sxs-lookup"><span data-stu-id="0d630-132">To obtain read/write permission to an object prior to calling **HrAddObjProps**, call [IPropData::HrSetObjAccess](ipropdata-hrsetobjaccess.md) and set the  _ulAccess_ parameter to IPROP_READWRITE.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="29cc2-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="29cc2-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0d630-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="0d630-133">See also</span></span>
 
 
 
-[<span data-ttu-id="29cc2-134">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="29cc2-134">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+[<span data-ttu-id="0d630-134">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="0d630-134">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
   
-[<span data-ttu-id="29cc2-135">SPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="29cc2-135">SPropProblemArray</span></span>](spropproblemarray.md)
+[<span data-ttu-id="0d630-135">SPropProblemArray</span><span class="sxs-lookup"><span data-stu-id="0d630-135">SPropProblemArray</span></span>](spropproblemarray.md)
   
-[<span data-ttu-id="29cc2-136">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="29cc2-136">SPropTagArray</span></span>](sproptagarray.md)
+[<span data-ttu-id="0d630-136">SPropTagArray</span><span class="sxs-lookup"><span data-stu-id="0d630-136">SPropTagArray</span></span>](sproptagarray.md)
   
-[<span data-ttu-id="29cc2-137">IPropData: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="29cc2-137">IPropData : IMAPIProp</span></span>](ipropdataimapiprop.md)
+[<span data-ttu-id="0d630-137">IPropData: IMAPIProp</span><span class="sxs-lookup"><span data-stu-id="0d630-137">IPropData : IMAPIProp</span></span>](ipropdataimapiprop.md)
 

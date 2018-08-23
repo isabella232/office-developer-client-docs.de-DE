@@ -12,26 +12,26 @@ api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: aff46cca7a7d530b2eede1790176058e3b91abc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 45263396e69852a9ae17ff6fce284663bdf2fb07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795852"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585136"
 ---
-# <a name="wrapstoreentryid"></a><span data-ttu-id="ee84c-103">WrapStoreEntryID</span><span class="sxs-lookup"><span data-stu-id="ee84c-103">WrapStoreEntryID</span></span>
+# <a name="wrapstoreentryid"></a><span data-ttu-id="68582-103">WrapStoreEntryID</span><span class="sxs-lookup"><span data-stu-id="68582-103">WrapStoreEntryID</span></span>
 
   
   
-<span data-ttu-id="ee84c-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="ee84c-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="68582-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="68582-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ee84c-105">Konvertiert einen Nachrichtenspeicher interne Eintrags-ID auf einen Eintrag Bezeichner Verwendbarkeit von messaging-System.</span><span class="sxs-lookup"><span data-stu-id="ee84c-105">Converts a message store's internal entry identifier to an entry identifier more usable by the messaging system.</span></span> 
+<span data-ttu-id="68582-105">Konvertiert einen Nachrichtenspeicher interne Eintrags-ID auf einen Eintrag Bezeichner Verwendbarkeit von messaging-System.</span><span class="sxs-lookup"><span data-stu-id="68582-105">Converts a message store's internal entry identifier to an entry identifier more usable by the messaging system.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ee84c-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="ee84c-106">Header file:</span></span>  <br/> |<span data-ttu-id="ee84c-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ee84c-107">Mapidefs.h</span></span>  <br/> |
-|<span data-ttu-id="ee84c-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="ee84c-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="ee84c-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="ee84c-109">MAPI</span></span>  <br/> |
-|<span data-ttu-id="ee84c-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="ee84c-110">Called by:</span></span>  <br/> |<span data-ttu-id="ee84c-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="ee84c-111">Client applications and service providers</span></span>  <br/> |
+|<span data-ttu-id="68582-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="68582-106">Header file:</span></span>  <br/> |<span data-ttu-id="68582-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="68582-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="68582-108">Implementiert von:</span><span class="sxs-lookup"><span data-stu-id="68582-108">Implemented by:</span></span>  <br/> |<span data-ttu-id="68582-109">MAPI</span><span class="sxs-lookup"><span data-stu-id="68582-109">MAPI</span></span>  <br/> |
+|<span data-ttu-id="68582-110">Aufgerufen von:</span><span class="sxs-lookup"><span data-stu-id="68582-110">Called by:</span></span>  <br/> |<span data-ttu-id="68582-111">Clientanwendungen und -Dienstanbieter</span><span class="sxs-lookup"><span data-stu-id="68582-111">Client applications and service providers</span></span>  <br/> |
    
 ```cpp
 WrapStoreEntryID(
@@ -44,46 +44,46 @@ WrapStoreEntryID(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="ee84c-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="ee84c-112">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="68582-112">Parameter</span><span class="sxs-lookup"><span data-stu-id="68582-112">Parameters</span></span>
 
- <span data-ttu-id="ee84c-113">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="ee84c-113">_ulFlags_</span></span>
+ <span data-ttu-id="68582-113">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="68582-113">_ulFlags_</span></span>
   
-> <span data-ttu-id="ee84c-114">[in] Bitmaske der Kennzeichen.</span><span class="sxs-lookup"><span data-stu-id="ee84c-114">[in] Bitmask of flags.</span></span> <span data-ttu-id="ee84c-115">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="ee84c-115">The following flag can be set:</span></span>
+> <span data-ttu-id="68582-114">[in] Bitmaske der Kennzeichen.</span><span class="sxs-lookup"><span data-stu-id="68582-114">[in] Bitmask of flags.</span></span> <span data-ttu-id="68582-115">Das folgende Flag kann festgelegt werden:</span><span class="sxs-lookup"><span data-stu-id="68582-115">The following flag can be set:</span></span>
     
-<span data-ttu-id="ee84c-116">PARAMETER MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="ee84c-116">MAPI_UNICODE</span></span> 
+<span data-ttu-id="68582-116">PARAMETER MAPI_UNICODE</span><span class="sxs-lookup"><span data-stu-id="68582-116">MAPI_UNICODE</span></span> 
   
-> <span data-ttu-id="ee84c-117">Die Zeichenfolgen sind im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="ee84c-117">The strings are in Unicode format.</span></span> <span data-ttu-id="ee84c-118">Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="ee84c-118">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
+> <span data-ttu-id="68582-117">Die Zeichenfolgen sind im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="68582-117">The strings are in Unicode format.</span></span> <span data-ttu-id="68582-118">Wenn die Option MAPI_UNICODE nicht festgelegt ist, sind die Zeichenfolgen in ANSI-Format.</span><span class="sxs-lookup"><span data-stu-id="68582-118">If the MAPI_UNICODE flag is not set, the strings are in ANSI format.</span></span> 
     
- <span data-ttu-id="ee84c-119">_szDLLName_</span><span class="sxs-lookup"><span data-stu-id="ee84c-119">_szDLLName_</span></span>
+ <span data-ttu-id="68582-119">_szDLLName_</span><span class="sxs-lookup"><span data-stu-id="68582-119">_szDLLName_</span></span>
   
-> <span data-ttu-id="ee84c-120">[in] Der Name des Anbieters Nachricht DLL.</span><span class="sxs-lookup"><span data-stu-id="ee84c-120">[in] The name of the message store provider DLL.</span></span> 
+> <span data-ttu-id="68582-120">[in] Der Name des Anbieters Nachricht DLL.</span><span class="sxs-lookup"><span data-stu-id="68582-120">[in] The name of the message store provider DLL.</span></span> 
     
- <span data-ttu-id="ee84c-121">_cbOrigEntry_</span><span class="sxs-lookup"><span data-stu-id="ee84c-121">_cbOrigEntry_</span></span>
+ <span data-ttu-id="68582-121">_cbOrigEntry_</span><span class="sxs-lookup"><span data-stu-id="68582-121">_cbOrigEntry_</span></span>
   
-> <span data-ttu-id="ee84c-122">[in] Größe des den ursprünglichen Eintrag Bezeichner für den Nachrichtenspeicher in Bytes.</span><span class="sxs-lookup"><span data-stu-id="ee84c-122">[in] Size, in bytes, of the original entry identifier for the message store.</span></span> 
+> <span data-ttu-id="68582-122">[in] Größe des den ursprünglichen Eintrag Bezeichner für den Nachrichtenspeicher in Bytes.</span><span class="sxs-lookup"><span data-stu-id="68582-122">[in] Size, in bytes, of the original entry identifier for the message store.</span></span> 
     
- <span data-ttu-id="ee84c-123">_lpOrigEntry_</span><span class="sxs-lookup"><span data-stu-id="ee84c-123">_lpOrigEntry_</span></span>
+ <span data-ttu-id="68582-123">_lpOrigEntry_</span><span class="sxs-lookup"><span data-stu-id="68582-123">_lpOrigEntry_</span></span>
   
-> <span data-ttu-id="ee84c-124">[in] Zeiger auf eine [ENTRYID](entryid.md) -Struktur, die die ursprünglichen Eintrags-ID enthält.</span><span class="sxs-lookup"><span data-stu-id="ee84c-124">[in] Pointer to an [ENTRYID](entryid.md) structure that contains the original entry identifier.</span></span> 
+> <span data-ttu-id="68582-124">[in] Zeiger auf eine [ENTRYID](entryid.md) -Struktur, die die ursprünglichen Eintrags-ID enthält.</span><span class="sxs-lookup"><span data-stu-id="68582-124">[in] Pointer to an [ENTRYID](entryid.md) structure that contains the original entry identifier.</span></span> 
     
- <span data-ttu-id="ee84c-125">_lpcbWrappedEntry_</span><span class="sxs-lookup"><span data-stu-id="ee84c-125">_lpcbWrappedEntry_</span></span>
+ <span data-ttu-id="68582-125">_lpcbWrappedEntry_</span><span class="sxs-lookup"><span data-stu-id="68582-125">_lpcbWrappedEntry_</span></span>
   
-> <span data-ttu-id="ee84c-126">[out] Zeiger auf die Größe des neuen Eintrags-ID in Bytes.</span><span class="sxs-lookup"><span data-stu-id="ee84c-126">[out] Pointer to the size, in bytes, of the new entry identifier.</span></span> 
+> <span data-ttu-id="68582-126">[out] Zeiger auf die Größe des neuen Eintrags-ID in Bytes.</span><span class="sxs-lookup"><span data-stu-id="68582-126">[out] Pointer to the size, in bytes, of the new entry identifier.</span></span> 
     
- <span data-ttu-id="ee84c-127">_lppWrappedEntry_</span><span class="sxs-lookup"><span data-stu-id="ee84c-127">_lppWrappedEntry_</span></span>
+ <span data-ttu-id="68582-127">_lppWrappedEntry_</span><span class="sxs-lookup"><span data-stu-id="68582-127">_lppWrappedEntry_</span></span>
   
-> <span data-ttu-id="ee84c-128">[out] Zeiger auf einen Zeiger auf eine **ENTRYID** -Struktur, die die neue Eintrags-ID enthält.</span><span class="sxs-lookup"><span data-stu-id="ee84c-128">[out] Pointer to a pointer to an **ENTRYID** structure that contains the new entry identifier.</span></span> 
+> <span data-ttu-id="68582-128">[out] Zeiger auf einen Zeiger auf eine **ENTRYID** -Struktur, die die neue Eintrags-ID enthält.</span><span class="sxs-lookup"><span data-stu-id="68582-128">[out] Pointer to a pointer to an **ENTRYID** structure that contains the new entry identifier.</span></span> 
     
-## <a name="return-value"></a><span data-ttu-id="ee84c-129">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="ee84c-129">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="68582-129">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="68582-129">Return value</span></span>
 
-<span data-ttu-id="ee84c-130">None.</span><span class="sxs-lookup"><span data-stu-id="ee84c-130">None.</span></span>
+<span data-ttu-id="68582-130">None.</span><span class="sxs-lookup"><span data-stu-id="68582-130">None.</span></span>
   
-## <a name="remarks"></a><span data-ttu-id="ee84c-131">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ee84c-131">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="68582-131">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="68582-131">Remarks</span></span>
 
-<span data-ttu-id="ee84c-132">Ein Meldungsobjekt Store behält eine interne Eintrags-ID der nur für Service Provider Coresident mit diesem Nachrichtenspeicher von Bedeutung ist.</span><span class="sxs-lookup"><span data-stu-id="ee84c-132">A message store object retains an internal entry identifier which is meaningful only to service providers coresident with that message store.</span></span> <span data-ttu-id="ee84c-133">Für andere Messagingkomponenten stellt MAPI eine gepackten Version von der internen Eintrags-ID, mit die Hilfe erkennbar wie, mit dem Nachrichtenspeicher gehören.</span><span class="sxs-lookup"><span data-stu-id="ee84c-133">For other messaging components, MAPI supplies a wrapped version of the internal entry identifier that makes it recognizable as that belong to the message store.</span></span> <span data-ttu-id="ee84c-134">Coresident-Dienstanbieter müssen immer die ursprünglichen allein stehenden Store Eintrags-ID angegeben werden; Clientanwendungen sollte immer die gepackten Version angegeben werden, die dann verwendbar an einer beliebigen Stelle in der messaging-Domäne und in anderen Domänen.</span><span class="sxs-lookup"><span data-stu-id="ee84c-134">Coresident service providers should always be given the original unwrapped message store entry identifier; client applications should always be given the wrapped version, which is then usable anywhere in the messaging domain and in other domains.</span></span> 
+<span data-ttu-id="68582-132">Ein Meldungsobjekt Store behält eine interne Eintrags-ID der nur für Service Provider Coresident mit diesem Nachrichtenspeicher von Bedeutung ist.</span><span class="sxs-lookup"><span data-stu-id="68582-132">A message store object retains an internal entry identifier which is meaningful only to service providers coresident with that message store.</span></span> <span data-ttu-id="68582-133">Für andere Messagingkomponenten stellt MAPI eine gepackten Version von der internen Eintrags-ID, mit die Hilfe erkennbar wie, mit dem Nachrichtenspeicher gehören.</span><span class="sxs-lookup"><span data-stu-id="68582-133">For other messaging components, MAPI supplies a wrapped version of the internal entry identifier that makes it recognizable as that belong to the message store.</span></span> <span data-ttu-id="68582-134">Coresident-Dienstanbieter müssen immer die ursprünglichen allein stehenden Store Eintrags-ID angegeben werden; Clientanwendungen sollte immer die gepackten Version angegeben werden, die dann verwendbar an einer beliebigen Stelle in der messaging-Domäne und in anderen Domänen.</span><span class="sxs-lookup"><span data-stu-id="68582-134">Coresident service providers should always be given the original unwrapped message store entry identifier; client applications should always be given the wrapped version, which is then usable anywhere in the messaging domain and in other domains.</span></span> 
   
-<span data-ttu-id="ee84c-135">Ein Dienstanbieter kann umschließen eine Nachricht Store Eintrag ID mit der Funktion **WrapStoreEntryID** oder die [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md) -Methode, die die **WrapStoreEntryID** -Funktion aufruft.</span><span class="sxs-lookup"><span data-stu-id="ee84c-135">A service provider can wrap a message store entry identifier using either the **WrapStoreEntryID** function or the [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md) method, which calls the **WrapStoreEntryID** function.</span></span> <span data-ttu-id="ee84c-136">Der Anbieter muss die Eintrags-ID umbrochen, wenn der Nachrichtenspeicher **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) Verfügbarmachen-Eigenschaft oder Schreiben in einem Profilabschnitt und, **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) verfügbar zu machen. -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="ee84c-136">The provider must wrap the entry identifier when exposing the message store's **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) property or writing it into a profile section, and when exposing the **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) property.</span></span> <span data-ttu-id="ee84c-137">MAPI umbrochen eine Nachricht Store Eintrags-ID wird, wenn Sie einem Anruf [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) reagiert.</span><span class="sxs-lookup"><span data-stu-id="ee84c-137">MAPI wraps a message store entry identifier when responding to an [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) call.</span></span> 
+<span data-ttu-id="68582-135">Ein Dienstanbieter kann umschließen eine Nachricht Store Eintrag ID mit der Funktion **WrapStoreEntryID** oder die [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md) -Methode, die die **WrapStoreEntryID** -Funktion aufruft.</span><span class="sxs-lookup"><span data-stu-id="68582-135">A service provider can wrap a message store entry identifier using either the **WrapStoreEntryID** function or the [IMAPISupport::WrapStoreEntryID](imapisupport-wrapstoreentryid.md) method, which calls the **WrapStoreEntryID** function.</span></span> <span data-ttu-id="68582-136">Der Anbieter muss die Eintrags-ID umbrochen, wenn der Nachrichtenspeicher **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) Verfügbarmachen-Eigenschaft oder Schreiben in einem Profilabschnitt und, **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) verfügbar zu machen. -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="68582-136">The provider must wrap the entry identifier when exposing the message store's **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) property or writing it into a profile section, and when exposing the **PR_STORE_ENTRYID** ([PidTagStoreEntryId](pidtagstoreentryid-canonical-property.md)) property.</span></span> <span data-ttu-id="68582-137">MAPI umbrochen eine Nachricht Store Eintrags-ID wird, wenn Sie einem Anruf [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) reagiert.</span><span class="sxs-lookup"><span data-stu-id="68582-137">MAPI wraps a message store entry identifier when responding to an [IMAPISession::OpenMsgStore](imapisession-openmsgstore.md) call.</span></span> 
   
-<span data-ttu-id="ee84c-138">Wenn eine Clientanwendung eine gepackten Store Eintrags-ID MAPI übergibt, entpackt beispielsweise einen Aufruf [IMAPISession::OpenEntry](imapisession-openentry.md) MAPI die Eintrags-ID vor der Verwendung eine Anbieter-Methode wie [IMSProvider::Logon](imsprovider-logon.md) oder [aufrufen IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md).</span><span class="sxs-lookup"><span data-stu-id="ee84c-138">When a client application passes a wrapped message store entry identifier to MAPI, for example in an [IMAPISession::OpenEntry](imapisession-openentry.md) call, MAPI unwraps the entry identifier before using it to call a provider method such as [IMSProvider::Logon](imsprovider-logon.md) or [IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md).</span></span> 
+<span data-ttu-id="68582-138">Wenn eine Clientanwendung eine gepackten Store Eintrags-ID MAPI übergibt, entpackt beispielsweise einen Aufruf [IMAPISession::OpenEntry](imapisession-openentry.md) MAPI die Eintrags-ID vor der Verwendung eine Anbieter-Methode wie [IMSProvider::Logon](imsprovider-logon.md) oder [aufrufen IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md).</span><span class="sxs-lookup"><span data-stu-id="68582-138">When a client application passes a wrapped message store entry identifier to MAPI, for example in an [IMAPISession::OpenEntry](imapisession-openentry.md) call, MAPI unwraps the entry identifier before using it to call a provider method such as [IMSProvider::Logon](imsprovider-logon.md) or [IMSProvider::CompareStoreIDs](imsprovider-comparestoreids.md).</span></span> 
   
 
