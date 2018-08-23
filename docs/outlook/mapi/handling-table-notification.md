@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: edc9bc71-4885-4783-b465-0bafa20eff73
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 95ef351e4fe906608319a3e25de8f20a44e23d9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b36e4697bfd4360f4ea6ea47c70eaaae434696d8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791824"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595132"
 ---
 # <a name="handling-table-notification"></a>Behandeln von Tabelle Benachrichtigung
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Client kann als Alternative zum Registrieren direkt mit einer Advise-Quellobjekt, beispielsweise einen Ordner oder ein messaging-Benutzer für Benachrichtigungen auf einem Inhalt registrieren oder Hierarchietabelle. Einträge, Ordner und Nachrichten über eine Inhalt zum Nachverfolgen von Änderungen an-Adresse Buch oder Hierarchietabelle sind einfacher als auch einfacher, als über die einzelnen Objekte. 
 

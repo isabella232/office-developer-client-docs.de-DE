@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6f6cc66f-a08e-4f8e-b33a-d3674319248e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b634f815d2aedecc716227c6525b846db38ca869
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 02d2c30fede7e554910a1bedb01b79c488447bb3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795216"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595356"
 ---
 # <a name="pidtagstoreprovider-canonical-property"></a>PidTagStoreProvider (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine vom Anbieter definiertes [MAPIUID](mapiuid.md) -Struktur, die den Typ des Nachrichtenspeichers angibt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MDB_PROVIDER  <br/> |
-|Bezeichner:  <br/> |0x3414  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MDB_PROVIDER  <br/> |
+|Kennung:  <br/> |0x3414  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur [MAPIUID](mapiuid.md) identifiziert den Typ des Nachrichtenspeichers. Der Wert ist Zeichenfolgeneigenschaften Nachricht auf Message Store Objekte berechnet und für jeden Anbieter eindeutig ist. Es wird normalerweise zum Durchsuchen der Nachricht Store-Tabelle verwendet, um einen Speicher mit den gewünschten Typ, wie Öffentliche Ordner zu finden. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4860992d-65d7-4cb0-a874-ceccb153dbac
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9dc368e6502bbb14cf42f6bc5a08fd2893f98bf6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8cff424e3b589af292e56cef1ca19198e9c80d1f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792426"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594985"
 ---
 # <a name="imapisyncprogresscallbackerror"></a>IMAPISyncProgressCallback::Error
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ausführliche Informationen, die im Dialogfeld Senden/Empfangen angezeigt werden. Wenn während der Synchronisierung Fehler auftreten, ruft der Anbieter diese Funktion.
   

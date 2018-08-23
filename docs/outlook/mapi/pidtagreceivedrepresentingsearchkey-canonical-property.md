@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 234c797c-4a3c-4e05-be22-2a2fa377871f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 834e97d8bd7bf31a1241fcf0454594b015902673
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 724abb046d5a38dadc0677326ea9229acd0eb6fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794893"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594146"
 ---
 # <a name="pidtagreceivedrepresentingsearchkey-canonical-property"></a>PidTagReceivedRepresentingSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Search-Schlüssel für die messaging-Benutzer von der empfangenden Benutzer dargestellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RCVD_REPRESENTING_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x0052  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RCVD_REPRESENTING_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x0052  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Eigenschaften für die messaging-Benutzer, die von der empfangenden Benutzer angezeigt wird. Von der eingehenden Adressbuchhierarchie muss festgelegt werden, die auch für die Autorisierung oder Überprüfung des Delegaten zuständig ist. Wenn kein messaging Benutzer dargestellt wird, sollten diese Eigenschaft auf den Schlüssel Suche in der **PR_RECEIVED_BY_SEARCH_KEY** ([PidTagReceivedBySearchKey](pidtagreceivedbysearchkey-canonical-property.md))-Eigenschaft festgelegt werden.
   

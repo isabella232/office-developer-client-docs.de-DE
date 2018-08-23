@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e83c05c6-a7c0-486c-a112-58a39255767a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 573e0ba37d4117d85193933a3a5045b5060fbd3d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 33bf77029207e2d8d734d5c49735262135896660
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794481"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593725"
 ---
 # <a name="pidtaginconflict-canonical-property"></a>PidTagInConflict (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn die Anlage eine alternative Replikat darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IN_CONFLICT  <br/> |
-|Bezeichner:  <br/> |0x666C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IN_CONFLICT  <br/> |
+|Kennung:  <br/> |0x666C  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Conflict-Hinweis  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die e-Mail-Client und Server müssen eine Konflikt auflösen Nachricht generieren, wenn einen Konflikt mit der aktuellen Version einer Nachricht in das Replikat während der Synchronisierung zu erkennen. Es ist wichtig zu verstehen, dass es möglich ist, dass die aktuelle Version der Nachricht in dem lokalen Replikat während der aktuellen Synchronisierungsvorgang übermittelt wurde. Das passiert, wenn Sie der Konflikt bereits auf dem Server vorhanden ist, bevor in einer miteinander in Konflikt stehende auf dem lokalen Replikat heruntergeladen wurden. Ein Konflikt beheben, dass die Nachricht als unabhängiger Replikate mit miteinander in Konflikt stehende PCLs synchronisiert werden muss. Der Konflikt aufgelöst werden kann, dass die Nachricht selbst nicht zwischen Client und Server synchronisiert werden muss. nur die unabhängige Replikate sollte ausgetauscht werden. Der Synchronisierungspartner muss dann eine neue Nachricht generieren, die die Struktur der Konfliktnachricht entspricht. Aus diesem Grund ist es wichtig, dass Client und Server den gleichen Algorithmus verwenden, um das Element "Gewinner" zu erkennen. Die folgenden Regeln müssen angewendet werden, um zu ermitteln, den "Gewinner":
   

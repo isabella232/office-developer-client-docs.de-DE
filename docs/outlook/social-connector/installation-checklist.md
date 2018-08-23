@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9dfb9b6d-2fb4-45bf-a12f-bd10a799ce29
 description: In diesem Thema werden die erforderlichen Komponenten für die Installation von einem Anbieter Outlook Social Connector (OSC) und die Installation überprüft, dass der Anbieter Installer ausführen sollten, um ordnungsgemäß funktionieren.
-ms.openlocfilehash: cb8ed24db28c3b0e945c4db4b2daa4a2470d7dd5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9854bf5c2b524c6d735fe974046583dab990012
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795972"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593998"
 ---
 # <a name="installation-checklist"></a>Checkliste für Installation
 
@@ -90,7 +90,7 @@ Das folgende Verfahren beschreibt die Installation überprüft, die in Abbildung
       
       `{A3B82DA3-8AD9-4935-AEA8-54B754459483}`
       
-      Die gekennzeichneten Komponenten-ID ist eine GUID, die eine Methode der einstufigen Dereferenzierung, ähnlich einem Zeiger bereitgestellt. Weitere Informationen zu Windows Installer finden Sie unter [Übersicht über die Windows Installer-Dokumentation](http://msdn.microsoft.com/library/_msi_roadmap_to_windows_installer_documentation.aspx).
+      Die gekennzeichneten Komponenten-ID ist eine GUID, die eine Methode der einstufigen Dereferenzierung, ähnlich einem Zeiger bereitgestellt. Weitere Informationen zu Windows Installer finden Sie unter [Übersicht über die Windows Installer-Dokumentation](https://docs.microsoft.com/en-us/windows/desktop/msi/roadmap-to-windows-installer-documentation).
       
    2. Wenn die angegebene qualifizierte Komponente vorhanden ist, wird eine Version der die OSC installiert. Wechseln Sie zu Schritt 5, um das aktuelle Outlook Gebietsschema der Benutzeroberfläche zur Vorbereitung der Installation der aktuellen Version von der OSC suchen.
       

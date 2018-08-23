@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 42ec4266-67b9-416e-8b9b-163c95011626
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 28afa338b37e747ed441a8767981b7e63808e741
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 60c5d7e980d1dc4d4263a2be2267008dbee1fd4d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791918"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594698"
 ---
 # <a name="hrdispatchnotifications"></a>HrDispatchNotifications
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erzwingt abgesetzt der Benachrichtigungen an alle in der Warteschlange. 
   
@@ -59,7 +59,7 @@ MAPI_E_NOT_INITIALIZED
   
 > MAPI konnte nicht initialisiert werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion **HrDispatchNotifications** bewirkt, dass MAPI zu sendende alle Benachrichtigungen, die derzeit in der MAPI-Benachrichtigung Engine Warteschlange abgelegt werden ohne eine Nachricht Versendung warten. Dies kann eine wirtschaftliche Auswirkung auf die RAM-Auslastung von haben. Weitere Informationen finden Sie unter [erzwingen eine Benachrichtigung](forcing-a-notification.md). 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f26384f1-467e-4343-92b3-0425da9d2123
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a6659f64f6e8d2e3dc61819b2263efe672cdd15c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 179d76b56c1ba9b40768c691d0b1555377f7adb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792488"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595048"
 ---
 # <a name="imapitablequeryrows"></a>IMAPITable::QueryRows
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine oder mehrere Zeilen aus einer Tabelle, beginnend bei der aktuellen Cursorposition zurück.
   
@@ -67,7 +67,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Der Parameter _IRowCount_ wird auf 0 (null) festgelegt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 **Die QueryRows** Ruft eine oder mehrere Zeilen mit Daten aus einer Tabelle ab. Der Wert des Parameters _IRowCount_ wirkt sich auf der Ausgangspunkt für das Abrufen. _IRowCount_ positiv darf, werden vorwärts, ab der aktuellen Position Zeilen gelesen. Wenn _IRowCount_ negativ ist, setzt **QueryRows** Startpunkt durch Verschieben rückwärts die angegebene Anzahl von Zeilen zurück. Nach dem Zurücksetzen von des Cursors werden die Zeilen in der Reihenfolge gelesen. 
   

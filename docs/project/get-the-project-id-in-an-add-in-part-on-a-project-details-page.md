@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 009cd997-c7e5-4078-b495-c40caa29a5fb
 description: Add-in-Komponenten gehostet werden in Iframe-Elemente, die von der Hostingseite vollständig isoliert sind. Um Informationen über das aktuelle Projekt aus einer Webpart-Add-in auf Projekt Details Seite (PDP) erhalten, können Sie die window.postMessage-Methode, einen Ereignislistener und einen Ereignishandler, der analysiert wird, die Projekt-ID aus der Nachricht.
-ms.openlocfilehash: 6704dae7ded385f86d2da47a1334ae4c81622a74
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d9f6d02f328860f46784f86c049581fa28bb4749
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796165"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594425"
 ---
 # <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>Abrufen der Projekt-ID in einem Add-In-Webpart auf einer Project-Detailseite
 
@@ -38,7 +38,7 @@ Um das Codebeispiel in diesem Artikel zu verwenden, benötigen Sie eine der folg
             
         - Sie müssen als eine andere Person als das Systemkonto angemeldet sein. Das Systemkonto verfügt nicht über die Berechtigung um ein Add-in zu installieren.
     
-Weitere Informationen zur-Add-ins für Project finden Sie unter [Voraussetzungen für die Erstellung einer Add-in für Project Server 2013](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites) . Hinweise zum lokalen Setup (einschließlich wie das Kontrollkästchen Loopback deaktivieren, falls erforderlich) finden Sie unter [Einrichten einer lokalen Entwicklungsumgebung für SharePoint-Add-ins](http://msdn.microsoft.com/library/b0878c12-27c9-4eea-ae3b-7e79e5a8838d%28Office.15%29.aspx) . Wenn Sie einen Remote entwickeln, finden Sie unter [Developing apps für SharePoint auf einem Remotesystem](http://msdn.microsoft.com/library/bf35d59c-9b84-42e5-877e-fa6881a7b6fc%28Office.15%29.aspx).
+Weitere Informationen zur-Add-ins für Project finden Sie unter [Voraussetzungen für die Erstellung einer Add-in für Project Server 2013](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites) . Hinweise zum lokalen Setup (einschließlich wie das Kontrollkästchen Loopback deaktivieren, falls erforderlich) finden Sie unter [Einrichten einer lokalen Entwicklungsumgebung für SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins) . Wenn Sie einen Remote entwickeln, finden Sie unter [Developing apps für SharePoint auf einem Remotesystem](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins).
   
 ## <a name="create-the-sharepoint-hosted-add-in-and-client-web-part"></a>Erstellen Sie das SharePoint-Hosting-add-in und Client-Webpart
 <a name="CreateApp"> </a>

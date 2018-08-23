@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: db3a6947-f640-43e8-a2df-71e96560fd81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5abfd9c98c5a83ca45792f094d0c9573b8affb85
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a584c6beec0f06ab4cc6bd95f4611d1f30189a8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795276"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595153"
 ---
 # <a name="pidtaguserfields-canonical-property"></a>PidTagUserFields (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen, Datentyp und andere Informationen zu einem benutzerdefinierten Feld.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_USERFIELDS  <br/> |
-|Bezeichner:  <br/> |0x36E3  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_USERFIELDS  <br/> |
+|Kennung:  <br/> |0x36E3  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Für jedes Element speichert Outlook die Definitionen aller benutzerdefinierten Felder in der [PidLidPropertyDefinitionStream](pidlidpropertydefinitionstream-canonical-property.md) -Eigenschaft des entsprechenden **IMessage** -Objekts. Die **PidLidPropertyDefinitionStream** -Eigenschaft enthält einen binären Datenstrom bekannt als [PropertyDefinition](propertydefinition-stream-structure.md), die die Felddefinitionen enthält. Weitere Informationen zu Stream Strukturen Felddefinitionen finden Sie unter [Stream-Strukturen](stream-structures.md).
   

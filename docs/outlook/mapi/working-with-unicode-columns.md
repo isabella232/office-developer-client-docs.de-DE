@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2cd55464-263f-4f83-b874-524271773934
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9f1fd2d4e4bfdc9ccbbb771fedf1141769c8c8ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: ffeee38920bf1c864b93e6513913c140cb658d8b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795844"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595307"
 ---
 # <a name="working-with-unicode-columns"></a>Arbeiten mit Unicode-Spalten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeichenfolgen in Tabellen können mit 8-Bit-Zeichen, die Eigenschaftentyp PT_STRING8 sind, oder 16-Bit-Unicode-Zeichen werden Eigenschaftstyp PT_UNICODE dargestellt werden. Tabelle Implementierer können entscheiden, ob ihre Tabellen Unicode-Zeichenfolgen unterstützen. Da Unicode Wert für Clients und -Dienstanbieter hinzugefügt werden durch die Featuregruppe erweitern, wird empfohlen, mit Unicode-Unterstützung, wann immer möglich. 
   

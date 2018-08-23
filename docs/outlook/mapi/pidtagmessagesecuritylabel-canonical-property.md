@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: aae41f1b-19bb-40c7-8564-0c87a5a4e47c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 24cf7d8d7b025e5a013ce3a5c1bb03da5ae8a6a3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a6caa322e1d266be1fe56aecd89736e757067758
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794612"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594369"
 ---
 # <a name="pidtagmessagesecuritylabel-canonical-property"></a>PidTagMessageSecurityLabel (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Sicherheitskennzeichen für eine Nachricht an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_SECURITY_LABEL  <br/> |
-|Bezeichner:  <br/> |0x001E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_SECURITY_LABEL  <br/> |
+|Kennung:  <br/> |0x001E  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bietet die Grundlage, auf der die **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md))-Eigenschaft eine Nachricht schützt. Die Verknüpfung mit den Nachrichteninhalt wird durch das Token garantiert.
   

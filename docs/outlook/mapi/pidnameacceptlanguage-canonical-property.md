@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b202bc1-f718-446a-950f-634ffee47baf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d2c2fb31b722e76034b08077632c817d6adde802
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f66a570273d78f63ced110a4bdc8a12a49c531b6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793924"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595244"
 ---
 # <a name="pidnameacceptlanguage-canonical-property"></a>PidNameAcceptLanguage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen Wert für [RFC3282] Accept-Language-Header Feld enthält.
   
@@ -35,7 +35,7 @@ Einen Wert für [RFC3282] Accept-Language-Header Feld enthält.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um den Wert dieser Eigenschaft festzulegen, sollte ein Accept-Language-Header-Feld mit den gewünschten Wert Multipurpose Internet Message Extensions (MIME) Clients geschrieben werden. MIME-Clients können stattdessen ein Kopfzeilenfeld X akzeptieren Sprache schreiben. MIME-Leser sollten auf den Wert dieser Eigenschaft den Wert der entweder Kopfzeilenfeld kopieren. Wenn beide Kopffelder vorhanden sind, sollten MIME-Leser das Accept-Language-Header-Feld verwenden.
   

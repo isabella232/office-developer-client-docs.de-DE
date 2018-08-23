@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1353d494-c266-4715-afe7-14543a1bbe1b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cbaf37415608dd1d79a06be65b34632f2b4afc89
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: ce2b2497bd89f00ce7f063d3e482752fabfeb731
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795756"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594334"
 ---
 # <a name="tnef-stream-syntax"></a>TNEF-Streamsyntax
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema wird ein Bakus-Nauer wie Beschreibung der Syntax der TNEF-Stream. In dieser Beschreibung werden nicht terminale Elemente, die eine weitere Definition kursiv angezeigt. Konstanten und Literale Elemente sind fett dargestellt. Sequences-Elemente sind in der Reihenfolge, in einer separaten Zeile aufgeführt. Das _Stream_ -Element umfasst beispielsweise die Konstante **TNEF_SIGNATURE**, gefolgt von einem _Schlüssel_, gefolgt von einem _Objekt_. Wenn ein Element mehr als eine mögliche Implementierung aufweist, werden die alternativen in aufeinander folgenden Zeilen aufgeführt. Ein _Objekt_ kann beispielsweise eine _Message_Seq_, eine _Message_Seq_ gefolgt von einer _Attach_Seq_oder nur ein _Attach_Seq_bestehen.
   

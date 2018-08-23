@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e8b5d21e-dc14-4b61-96b3-a51bcfa0d232
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 781146193748cdd9408a3320e90a73a070ced2af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cd6b119bd88fccf80bf2488592a24b3398e6e8af
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792458"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594243"
 ---
 # <a name="imapitableadvise"></a>IMAPITable::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert ein Empfängerobjekt Advise, um die Benachrichtigung der Auswirkungen auf die Tabelle angegebenen Ereignisse.
   
@@ -61,7 +61,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Tabelle-Implementierung unterstützt keine Änderungen auf die Zeilen und Spalten, oder unterstützt keine Benachrichtigung.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **IMAPITable::Advise** -Methode, um ein Table-Objekt im Anbieter für Benachrichtigung Rückrufe implementiert registrieren. Bei eine Änderung an das Table-Objekt, überprüft der Anbieter finden Sie unter welche Ereignis Maskenbit im _UlEventMask_ -Parameter festgelegt wurde, und daher, welche Art der Änderung. Wenn ein bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfängerobjekt durch den Parameter _LpAdviseSink_ Sie das Ereignis melden angegeben. Daten, die in der Benachrichtigungsstruktur der **OnNotify** Routine übergeben wird das Ereignis beschrieben. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9bd31233-fc8d-4e0a-9f1b-218c5ecb6d1b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c64f84da6bece809176bf67985b6f55ce92414a2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0d93fde7d654f0ee56dcda9f2fb69ad622e476dd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795512"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593620"
 ---
 # <a name="setting-address-book-options"></a>Festlegen von Adressbuchoptionen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sie können drei Eigenschaften festlegen, die Optionen für die Verwendung des Adressbuchs beschreiben:
   

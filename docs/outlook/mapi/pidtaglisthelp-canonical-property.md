@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 403324b8-c992-4823-aa0f-0414b283debc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7a9a5d090babce8105fab43bf8401448373777cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b523277a3865e62e8ed95883213b28d2155ffb54
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794580"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594796"
 ---
 # <a name="pidtaglisthelp-canonical-property"></a>PidTagListHelp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert der Liste-Hilfe-Header ein Feld einer Nachricht Multipurpose Internet Mail Extensions (MIME).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_LIST_HELP, PR_LIST_HELP_A, PR_LIST_HELP_W  <br/> |
-|Bezeichner:  <br/> |0x1043  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_LIST_HELP, PR_LIST_HELP_A, PR_LIST_HELP_W  <br/> |
+|Kennung:  <br/> |0x1043  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um eine Liste Hilfe Kopfzeilenfeld generiert werden soll, müssen die Clients den Wert **PR_LIST_HELP** oder eine zugeordnete Eigenschaft auf den gewünschten Wert festgelegt. MIME-Autoren müssen diesen Wert in der Liste Hilfe Kopfzeilenfeld kopieren. 
   

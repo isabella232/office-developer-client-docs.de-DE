@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d6341acc-c6ca-4605-93af-77230040339d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 96fd317c28d95335a3acc5d0603298f2fe8345e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 86dfaa8fbc9ff24d38472f1339a22534086d890b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792467"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593746"
 ---
 # <a name="imapitablequerycolumns"></a>IMAPITable::QueryColumns
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Liste mit Spalten für die Tabelle zurück.
   
@@ -58,7 +58,7 @@ MAPI_E_BUSY
   
 > Ein anderer Vorgang wird ausgeführt, die verhindert, die Spalte dass Abrufvorgang starten festgelegt. Entweder dürfen der Vorgang in Arbeit abgeschlossen oder angehalten werden sollte.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::QueryColumns** -Methode kann EntityInstances abgerufen werden: 
   

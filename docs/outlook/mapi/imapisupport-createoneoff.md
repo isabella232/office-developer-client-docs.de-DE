@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee57d6e0-9de0-4427-97ce-371c1c01f3de
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1cfd4afbda5892e96a1d74ca56f4a6d1f98e2268
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1526ed54fd3773856b009c7c3570064f5a66df28
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792343"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594943"
 ---
 # <a name="imapisupportcreateoneoff"></a>IMAPISupport::CreateOneOff
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt einen Eintrag Bezeichner für eine einmalige Adresse.
   
@@ -78,7 +78,7 @@ S_OK
   
 > Der Bezeichner des Eingangs wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::CreateOneOff** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter anrufen **CreateOneOff** zum Erstellen eines Eintrags-ID für einen einmaligen Empfänger (Empfänger, die nicht zu keiner der Container aus der aktuell geladenen adressbuchanbietern implementierte gehört). 
   

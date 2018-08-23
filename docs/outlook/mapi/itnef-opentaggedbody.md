@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70d5b34c-85b3-4d1f-860e-2838947ba428
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ed433dc1fcf2a366d2ece07ac06d4e12558e4aa7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 14964f367e3dbca484c4e1612b374a6a72ddf17b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792852"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593781"
 ---
 # <a name="itnefopentaggedbody"></a>ITnef::OpenTaggedBody
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet eine Stream-Schnittstelle für den Text der Fehlermeldung der gekapselte.
   
@@ -55,7 +55,7 @@ MAPI_MODIFY
     
  _lppStream_
   
-> [out] Ein Zeiger auf einen Zeiger auf ein Stream-Objekt, das den Text aus der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft des übergebenen enthält gekapselte Nachricht und, das die [IStream](http://msdn.microsoft.com/library/stg.istream%28Office.15%29.aspx) -Schnittstelle unterstützt. 
+> [out] Ein Zeiger auf einen Zeiger auf ein Stream-Objekt, das den Text aus der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft des übergebenen enthält gekapselte Nachricht und, das die [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) -Schnittstelle unterstützt. 
     
 ## <a name="return-value"></a>R�ckgabewert
 
@@ -63,7 +63,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Transport-Provider, Anbieter Nachricht und Gateways rufen Sie die **ITnef::OpenTaggedBody** -Methode zum Öffnen eine Stream-Schnittstelle für den Text der Fehlermeldung der gekapselte (d. h., eine TNEF-Objekts). 
   

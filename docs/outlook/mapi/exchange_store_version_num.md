@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 88950eda-85ae-ad7a-46c6-0e1933d35e04
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 00d92f8e2ec3af766d5b241d1a911be304b346d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 152afd68bea44f3485b2cc566f3f0d2768590704
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791640"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594474"
 ---
 # <a name="exchangestoreversionnum"></a>EXCHANGE_STORE_VERSION_NUM
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Speichert die Versionsinformationen für den Microsoft Exchange Server, die mit Konten in einem Microsoft Office Outlook-Profil verbunden sind.
   

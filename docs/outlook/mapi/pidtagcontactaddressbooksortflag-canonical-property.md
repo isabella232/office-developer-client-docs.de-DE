@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: dcbd12b4-4b50-4be6-a201-45e5d4611ce0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b03deae18556a44f4d4865d7083761893e478472
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1e25c265f3136fa7caf407e4b2bf160b67ba0111
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794182"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594859"
 ---
 # <a name="pidtagcontactaddressbooksortflag-canonical-property"></a>PidTagContactAddressBookSortFlag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Kennung, die TRUE ist, wenn Kontakte von Datei unter und FALSE sortiert werden sollen, wenn sie nach dem Anzeigenamen sortiert werden sollen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAB_SORT_FLAG  <br/> |
-|Bezeichner:  <br/> |0x6602  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_SORT_FLAG  <br/> |
+|Kennung:  <br/> |0x6602  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.
   

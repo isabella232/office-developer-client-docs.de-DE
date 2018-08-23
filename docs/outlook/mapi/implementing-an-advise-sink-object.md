@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7461c4f6-7030-4ba2-ada4-26ebfbbfa001
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a95222f8ec75c519558636cf54111f28cbe14066
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b457fce208923ce01686812f20031e365842ccd8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792551"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593676"
 ---
 # <a name="implementing-an-advise-sink-object"></a>Implementieren einer Benachrichtigungssenke
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Client kann entweder Implementieren der Empfängerobjekten eigene Advise oder eine Hilfsfunktion [HrAllocAdviseSink](hrallocadvisesink.md)verwenden. **HrAllocAdviseSink** erstellt ein Advise-Empfänger-Objekt mit einer Implementierung der **OnNotify** , die eine Callback-Funktion aufruft. 
   

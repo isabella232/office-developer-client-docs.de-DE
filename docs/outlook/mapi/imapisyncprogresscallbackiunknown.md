@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 146b5e36-8d73-4949-9fed-1074f707423d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bce70d891bc33dcddb94fc05992c09991c6cdc63
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 33d811af0fc9e06902750075ba39bfb6ca88903f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792441"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593711"
 ---
 # <a name="imapisyncprogresscallback--iunknown"></a>IMAPISyncProgressCallback : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Übergibt Speicheranbieter als Feld auf der Struktur MAPISIB während eines Anrufs auf [IMAPISync: SynchronizeInBackground](imapisyncsynchronizeinbackground.md). Der Anbieter verwendet diese Schnittstelle ihr Feedback an Microsoft Outlook über den Status der Synchronisierung zu übermitteln.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> ||
-|Verf�gbar gemacht von:  <br/> |Outlook  <br/> |
+|Verfügbar gemacht von:  <br/> |Outlook  <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
 |Aufgerufen von:  <br/> |Speicheranbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPISyncProgressCallback  <br/> |

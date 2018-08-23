@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5ea20b49-8b57-4ad0-a70d-6547a01c8344
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4886749bf65d8bbb603d4b7d5fa38ad56b72ab97
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2481ad01d8777783581663ead64ad3797eb8eb1a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794043"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594383"
 ---
 # <a name="pidtagabsearchpathupdate-canonical-property"></a>PidTagAbSearchPathUpdate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste von Eintragsbezeichner für Address Book Container explizit durch den Benutzer konfiguriert. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AB_SEARCH_PATH_UPDATE  <br/> |
-|Bezeichner:  <br/> |0x3D11  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AB_SEARCH_PATH_UPDATE  <br/> |
+|Kennung:  <br/> |0x3D11  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 54a4b805-2ab7-4fb7-b0ea-4a33ead27451
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 675de7eeda534d8761887cdcb6d5c94a209ca18b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b9166090321aa24e35fe1c82908aec0c403095cd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792895"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593739"
 ---
 # <a name="launching-a-form-to-read-a-message"></a>Starten eines Formulars zum Lesen einer Nachricht
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Formular Server Implementierer erwarten, die folgende Sequenz von Methode Anrufe an ihre Formular Server- und Formularobjekte beim Laden von einer Clientanwendung aus einer Nachricht:
   

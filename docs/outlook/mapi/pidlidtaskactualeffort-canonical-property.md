@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8e9a9432-bf50-4333-82ec-fba19dff8006
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0782191010341019ebea71ebf545dec490521520
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a145a103620d23dae4f6a48c225251e8aecc278e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793802"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593669"
 ---
 # <a name="pidlidtaskactualeffort-canonical-property"></a>PidLidTaskActualEffort (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Anzahl von Minuten an, dass der Benutzer eine Aufgabe ausgeführt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskActualEffort  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskActualEffort  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008110  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert muss größer als oder gleich 0 und kleiner als 0x5AE980DF (1,525,252,319), wobei gleich 480 Minuten eine Tag und 2400 Minuten gleich eine Woche (acht Stunden in einen Arbeitstag und fünf Tage in einer Arbeitswoche).
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e9deaa7c-430b-4e97-8ed6-f7c615956e0f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2ad57b91a1b9d06ab8284fa53c283d17e4eb5613
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3ddfcdd95f0423ba92c37c434f18078eadf90d82
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792790"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594020"
 ---
 # <a name="iprovideradmingetprovidertable"></a>IProviderAdmin::GetProviderTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf den Dienst Anbieter Tabelle, eine Liste der Dienstanbieter in der Nachrichtendienst.
   
@@ -54,7 +54,7 @@ S_OK
   
 > Die Anbieter Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IProviderAdmin::GetProviderTable** -Methode ruft einen Zeiger auf den Dienst Anbieter Tabelle, einer Tabelle, die MAPI verwaltet, die Informationen zu jeder Dienstanbieter im Nachrichtendienst enthält. 
   

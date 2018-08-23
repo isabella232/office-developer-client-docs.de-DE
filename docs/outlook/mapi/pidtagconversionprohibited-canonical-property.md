@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9bd67185-9449-4db2-b3ee-93ea513e10e2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 645ea2be2f690701780932e891da3dc32bb1716f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1e15a0b09057d9aab1e6c5bec6c314463f15e329
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794273"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593942"
 ---
 # <a name="pidtagconversionprohibited-canonical-property"></a>PidTagConversionProhibited (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn die Nachricht Konvertierungen für den zugeordneten messaging Benutzer standardmäßig nicht zulässig sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONVERSION_PROHIBITED  <br/> |
-|Bezeichner:  <br/> |0x3A03  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONVERSION_PROHIBITED  <br/> |
+|Kennung:  <br/> |0x3A03  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    

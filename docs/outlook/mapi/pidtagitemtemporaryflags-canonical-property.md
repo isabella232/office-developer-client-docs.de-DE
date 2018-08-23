@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8066de8e-2b77-4bac-8df3-e64b03ee42b9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: df2fa19656aa1bff810a082cda94a091e2c7fc9a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e8bed42ee44e48540df52e806c7113e02b60cd07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794544"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593634"
 ---
 # <a name="pidtagitemtemporaryflags-canonical-property"></a>PidTagItemTemporaryflags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Flag, das angibt, dass eine Nachricht lesen, aber nicht als gelesen markiert wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ITEM_TMPFLAGS  <br/> |
-|Bezeichner:  <br/> |0x1097  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ITEM_TMPFLAGS  <br/> |
+|Kennung:  <br/> |0x1097  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in Outlook ungelesene Nachrichten Suchordner verwendet, um verfolgen an welche Nachrichten gelesen wurden, ohne tatsächlich markieren als gelesen, die sie aus dem Ordner entfernen möchten. Wenn die Ansicht geändert wird, den diese Eigenschaft entfernt ist und das Element wird als gekennzeichnet lesen. Diese Eigenschaft wird nicht mit dem Exchange Server synchronisiert.
   

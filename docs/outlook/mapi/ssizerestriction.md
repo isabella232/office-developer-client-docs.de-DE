@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4e7340d1-3cb9-4276-b83f-1c8f94acb909
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 134eb844ef7b72d396c300b27a87a3a7ae320cf1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 990fe49d39a73c5bf80b9fdda96d2e5997869edf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795635"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595419"
 ---
 # <a name="ssizerestriction"></a>SSizeRestriction
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Beschränkung der Größe der verwendet wird, um die Größe der Wert einer Eigenschaft zu testen. 
   
@@ -83,7 +83,7 @@ RELOP_EQ
   
 > Anzahl der Bytes in der Eigenschaftswert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine allgemeine Erläuterung der Funktionsweise von Einschränkungen finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md). 
   

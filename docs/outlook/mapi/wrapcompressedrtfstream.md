@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0949e066-aa28-4ede-ac88-b2dccd5098e8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9025bcebdd5e656070b31cd82e6519166a3e3791
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a7095907a1fb437e225922d0bef08b4ad79a4b6f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795873"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594593"
 ---
 # <a name="wrapcompressedrtfstream"></a>WrapCompressedRTFStream
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt einen Textstream in nicht komprimierten Rich Text Format (RTF) aus der komprimierten Format in der Eigenschaft **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) verwendet. 
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2fc3febb-8c69-4315-a112-a28eee98013d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b8521172b441bd26a6562aa28f836d453544928f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bbced8412c2c3438c58af74ef072a46606b59ddc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795550"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594614"
 ---
 # <a name="sizedspropproblemarray"></a>SizedSPropProblemArray
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine benannte [SPropProblemArray](spropproblemarray.md) -Struktur, die eine angegebene Anzahl von [SPropProblem](spropproblem.md) Strukturen enthält. 
   
@@ -44,7 +44,7 @@ __Namen_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie das Makro **SizedSPropProblemArray** , um ein Problem Array-Eigenschaft mit expliziten Grenzen zu erstellen. Um die neue Struktur verwenden, die als Zeiger auf eine **SPropProblemArray** -Struktur aus dem Makro **SizedSPropProblemArray** erzeugt, führen Sie die folgende Umwandlung: 
   

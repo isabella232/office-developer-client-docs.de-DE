@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: db249e9e-f1f0-4b95-8cd9-daa7c53ddb32
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9d40c21cde6bf3a6e8e37dda80dd6f900f233a0e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5a3a83153dc799154edc6a46946682684cad8a09
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794213"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593774"
 ---
 # <a name="pidtagcontainerclass-canonical-property"></a>PidTagContainerClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Textzeichenfolge, die den Typ eines Ordners. Obwohl diese Eigenschaft im Allgemeinen ignoriert wird, erwarten Versionen von Microsoft® Exchange Server vor Exchange Server 2003-Postfach-Manager diese Eigenschaft vorhanden sein.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAINER_CLASS, PR_CONTAINER_CLASS_A, PR_CONTAINER_CLASS_W  <br/> |
-|Bezeichner:  <br/> |0x3613  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAINER_CLASS, PR_CONTAINER_CLASS_A, PR_CONTAINER_CLASS_W  <br/> |
+|Kennung:  <br/> |0x3613  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden normalerweise nicht vom Exchange-Server verwendet. Allerdings fügt Microsoft Office Outlook® sie an den Postfachordner. Darüber hinaus-Versionen von Exchange Server vor Exchange Server 2003-Postfach-Manager möglicherweise nicht ordnungsgemäß Ordner verarbeitet, die nicht über diese Eigenschaften verfügen.
   
@@ -42,12 +42,12 @@ Diese Eigenschaften können die Zeichenfolgenwerte in der folgenden Tabelle zuge
   
 |**Wert**|**Inhalt des Ordners**|
 |:-----|:-----|
-|IPF. Termin  <br/> |Termine  <br/> |
-|IPF. Kontakt  <br/> |Kontakte  <br/> |
+|IPF.Appointment  <br/> |Termine  <br/> |
+|IPF.Contact  <br/> |Kontakte  <br/> |
 |IPF. Journal  <br/> |Outlook-Journaleinträge  <br/> |
-|IPF. Hinweis  <br/> |E-Mail-Nachrichten und Notizen  <br/> |
+|IPF.Note  <br/> |E-Mail-Nachrichten und Notizen  <br/> |
 |IPF. StickyNote  <br/> |Outlook-Kurznotizen  <br/> |
-|IPF. Aufgabe  <br/> |Outlook-Aufgaben  <br/> |
+|IPF.Task  <br/> |Outlook-Aufgaben  <br/> |
    
 Für Ordner, die e-Mail-Nachrichten enthalten, sollten diese Eigenschaften auf IPF festgelegt werden. Beachten Sie.
   

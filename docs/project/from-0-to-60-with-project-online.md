@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5b48958e-6dab-4121-871f-fb15f58f1b24
 description: 'Anwendungsentwickler kann eine Project Online Site (SharePoint gehostet) mithilfe von eigenständigen Applications und/oder Projekt-add-ins anpassen. Eine Vielzahl von Clientanwendungen ist möglich, die im Bereich von Adressierung Beteiligten in einem Projekt auf PMO Support-Funktionen, beispielsweise eine der folgenden Anforderungen:'
-ms.openlocfilehash: c50ed12e9f1127f6313a02db4d84a151778e17b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 25a38a7c7359020058983e271067a87da29f1b3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796171"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594531"
 ---
 # <a name="from-0-to-60-with-project-online"></a>Von 0 auf 100 mit Project Online
 
@@ -83,7 +83,7 @@ Sie können herunterladen und Ausführen des Beispiels in ein paar einfachen Sch
     
    Project Online untersucht sowohl die Anwendungsbereich des Add-Ins und die Berechtigungen eines Benutzers mit Zugriff auf Informationen auf dem Project Online-Host gesteuert. Wenn in einer oder beide Einstellungen explizit Zugriff verweigert wird, verweigert Project Online Zugriff auf Informationen. Andernfalls wird der Zugriff gewährt.
     
-3. Sideloading auf Ihrer Website zu aktivieren. Finden Sie weitere Informationen im Artikel [Konfigurieren von Project Online für App-Entwicklung ](http://nearbaseline.com/2013/12/configuring-project-online-for-app-development/.aspx). 
+3. [Sideloading](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins) auf Ihrer Website zu aktivieren.  
     
 4. Erstellen Sie das Projekt.
     
@@ -101,7 +101,7 @@ Ein Beispiel für die Windows-Entwicklungsumgebung für diese Art Anwendung umfa
     
 - .NET Framework 4.0 oder höher
     
-- [SharePoint Online-CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/.aspx) (für CSOM-Aufrufe) 
+- [SharePoint Online-CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM) (für CSOM-Aufrufe) 
     
 - Eine Programmiersprache wie c# 
     
@@ -115,7 +115,7 @@ Sie können das Beispiel in wenigen Schritten ausführen:
     
    Project Online untersucht sowohl die Anwendungsbereich des Add-Ins und die Berechtigungen eines Benutzers mit Zugriff auf Informationen auf dem Project Online-Host gesteuert. Wenn in einer oder beide Einstellungen explizit Zugriff verweigert wird, verweigert Project Online Zugriff auf Informationen. Andernfalls wird der Zugriff gewährt.
     
-3. Sideloading auf Ihrer Website zu aktivieren. Finden Sie weitere Informationen im Artikel [Konfigurieren von Project Online für App-Entwicklung ](http://nearbaseline.com/2013/12/configuring-project-online-for-app-development/.aspx). 
+3. [Sideloading](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins) auf Ihrer Website zu aktivieren. 
     
 4. Erstellen Sie das Projekt.
     
@@ -133,7 +133,7 @@ Ein Beispiel für die Windows-Entwicklungsumgebung für diese Art Anwendung umfa
     
 - .NET Framework 4.0 oder höher
     
-- [SharePoint Online-CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/.aspx) (für CSOM-Aufrufe) 
+- [SharePoint Online-CSOM-Paket](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM) (für CSOM-Aufrufe) 
     
 - Eine Programmiersprache wie c# 
     
@@ -167,6 +167,6 @@ Jede beispielanwendung verfügt über einen Artikel erläutern die wichtigsten a
     
 ## <a name="see-also"></a>Siehe auch
 
-Dokumentation und Beispiele im Zusammenhang mit Project Online und die Anwendungsentwicklung mithilfe von CSOM finden Sie im [Projekt Development Portal](http://dev.office.com/project.aspx).
+Dokumentation und Beispiele im Zusammenhang mit Project Online und die Anwendungsentwicklung mithilfe von CSOM finden Sie im [Projekt Development Portal](https://developer.microsoft.com/en-us/project).
     
 

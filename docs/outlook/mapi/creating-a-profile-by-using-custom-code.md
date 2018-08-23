@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5632cd25-58f5-4b9c-906c-cd377abc3daf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 74869293215b86c69ab4e0b1337be6014419fa3e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c14d58e8a03633615798b50b256b9cc54fcc4f4c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791488"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594733"
 ---
 # <a name="creating-a-profile-by-using-custom-code"></a>Erstellen ein Profil mit benutzerdefiniertem Code
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn Sie dem Schreiben von Code zum Erstellen eines Profils auswählen, stellen Sie sicher, dass Sie verstehen, wie bestellen profileinträgen und den Typ und die Menge der Informationen, die für jeden Eintrag erforderlich ist. Die Auswirkungen der Einträge in einem Profil Sortierung in [MAPI-Profile](mapi-profiles.md)erläutert wird.
   

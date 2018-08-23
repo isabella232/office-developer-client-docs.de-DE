@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d059f913-3d61-4bec-8215-5b07f0fba488
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ccee84b8e548ee656366d07c81927a701e9b70f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8d262c17ed433222cbb037ab6e86120d300df93a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794439"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594061"
 ---
 # <a name="pidtagfreebusypublishstart-canonical-property"></a>PidTagFreeBusyPublishStart (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Startzeit des Bereichs veröffentlichen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FREEBUSY_PUBLISH_START  <br/> |
-|Bezeichner:  <br/> |0x6847  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FREEBUSY_PUBLISH_START  <br/> |
+|Kennung:  <br/> |0x6847  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert für diese Eigenschaft ist die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC).
   

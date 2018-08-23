@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 481812d6-8e94-4510-b288-55501dd5757c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c2e6600af66f3dab8ff0fbb5442a1354687a3cbb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c5b2d7db745cc270c0be7ee2184e86c6a4f97aad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792661"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594299"
 ---
 # <a name="imslogoncompareentryids"></a>IMSLogon::CompareEntryIDs
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. MAPI verweist dieses Anrufs mit einem Dienstanbieter nur, wenn der eindeutige Bezeichner (UIDs) in beiden Eintragsbezeichner verglichen werden soll, die von diesem Provider behandelt werden.
   

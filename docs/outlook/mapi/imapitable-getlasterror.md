@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 832e2c18-ddba-4d18-a391-710d21fe23e6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b8ee83ad550106ae82f3308b9ef5692f66f5f5b6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8b7b1db5bcc718858b01f122f53406c885998741
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792460"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593816"
 ---
 # <a name="imapitablegetlasterror"></a>IMAPITable::GetLastError
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine [MAPIERROR](mapierror.md) -Struktur mit Informationen über den vorherigen Fehler in der Tabelle zurück. 
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::GetLastError** -Methode gibt ausführliche Informationen zurück, wenn zu einem Aufruf der vorherigen-Methode, die nicht zur Verfügung. Diese Informationen kann in einer Nachricht oder ein Dialogfeld angezeigt werden. 
   

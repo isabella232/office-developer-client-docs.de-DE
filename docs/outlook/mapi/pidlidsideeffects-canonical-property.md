@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 90d601d9-5eeb-40b6-885d-ccd8a95ae322
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 479ba1990f7cac1768fc5e514e3fc55f017e4a0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fa29a55a5fc2ce89e125909d13a2c14a347ef831
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793784"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594026"
 ---
 # <a name="pidlidsideeffects-canonical-property"></a>PidLidSideEffects (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Steuert, wie ein Meldungsobjekt vom Client verarbeitet wird, wenn bei der Eingabe der Endbenutzer fungiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSideEffects  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSideEffects  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008510  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Muss auf eine bitweise oder 0 (null) oder mehrere der folgenden Werte festgelegt werden.
   

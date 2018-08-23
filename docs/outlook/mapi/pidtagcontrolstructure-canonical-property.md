@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 02910389-b346-431c-a282-dedbc9f7dfc6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e531c986ef6de2eccca446f5d560290fed831c21
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3b517888d562ee5b178dbd011fa1ce6ab218c6b8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794252"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594355"
 ---
 # <a name="pidtagcontrolstructure-canonical-property"></a>PidTagControlStructure (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Zeiger auf eine Struktur für ein Steuerelement in einem Dialogfeld verwendet. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTROL_STRUCTURE  <br/> |
-|Bezeichner:  <br/> |0x3F01  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTROL_STRUCTURE  <br/> |
+|Kennung:  <br/> |0x3F01  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft stellt einen langen Zeiger, der auf eine der Steuerelement-Strukturen umgewandelt wird. Die Steuerstrukturen umfassen:
   

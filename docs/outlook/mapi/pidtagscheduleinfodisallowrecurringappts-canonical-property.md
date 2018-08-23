@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 61e082dd-f5bc-479b-990a-c9c0360f883e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f5f3feb5b3186f8d0239558aa410c7f71bdf54f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 19e2cc0b95aaefbca1ec618c55b8d397de4d340e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795084"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593690"
 ---
 # <a name="pidtagscheduleinfodisallowrecurringappts-canonical-property"></a>PidTagScheduleInfoDisallowRecurringAppts (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn die automatische Antwort auf wiederkehrender Termine ablehnen ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_DISALLOW_RECURRING_APPTS  <br/> |
-|Bezeichner:  <br/> |0x686E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_DISALLOW_RECURRING_APPTS  <br/> |
+|Kennung:  <br/> |0x686E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist nur sinnvoll, wenn der Wert der **PR_SCHDINFO_AUTO_ACCEPT_APPTS** ([PidTagScheduleInfoAutoAcceptAppointments](pidtagscheduleinfoautoacceptappointments-canonical-property.md))-Eigenschaft auf true festgelegt ist. Das fehlen diese Eigenschaft gibt an, dass Besprechungsserien akzeptiert werden müssen. Dies ist keine erforderliche Eigenschaft.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 87235fd2-6527-41a1-98ba-b951632a1c81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7566bb075c2ef9903b5a376fd90f209c8683c31e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a9e596ff8561d5aabc71ffe3540efaeef8f5b83d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792757"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593984"
 ---
 # <a name="iprofadminadminservices"></a>IProfAdmin::AdminServices
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf ein Objekt "Message" Service Administration für die Änderung der Nachrichtendienste in einem Profil.
   
@@ -81,7 +81,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IProfAdmin::AdminServices** -Methode ermöglicht den Zugriff auf ein Objekt "Message" Service Administration für die Änderung der Konfiguration der Nachrichtendienste in einem Profil. 
   

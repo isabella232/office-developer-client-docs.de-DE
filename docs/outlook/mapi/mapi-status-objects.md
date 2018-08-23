@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 38310619-1b1d-4934-8533-d0612676c0b0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f5b48f8cd4ef6ff41733ec9a18d1ab682f5e6bcb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 69a4d25fc6a7abec68c94cc947e5944322d230a6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793094"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594950"
 ---
 # <a name="mapi-status-objects"></a>MAPI-Status-Objekte
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Status-Objekten ein Bericht mit Informationen zu MAPI-Ressourcen. Beispielsweise einem Dienstanbieter, die MAPI-senden-empfangen-Prozess oder im Adressbuch.
   

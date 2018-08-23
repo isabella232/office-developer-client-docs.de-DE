@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56c3bdae-a3a8-4334-b6d2-a89c6820d72e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5d7e3e89f15b1bc08c7ce9faab0d0a6326300e70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1c48ceefa84658b236b8dfa4e10df18c175d920e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792363"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595160"
 ---
 # <a name="imapisupportgetsvcconfigsupportobj"></a>IMAPISupport::GetSvcConfigSupportObj
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt ein Objekt "Message" Service Support.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Das Support-Konfigurationsobjekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::GetSvcConfigSupportObj** -Methode wird für alle Unterstützungsobjekte implementiert. Dienstanbieter anrufen **GetSvcConfigSupportObj** zum Erstellen eines Objekts Konfiguration Unterstützung, um auf eine Nachricht Service Entry Point-Funktion zu übergeben. 
   

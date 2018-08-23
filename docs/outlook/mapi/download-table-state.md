@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5bcc8b0a-0ab7-6c3e-8334-9e83cf2882a7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6a29cc131b4fe352b067e343376b2b705e8e3244
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e75407f62a7e6440f6c8dca8c1d2c76843048da4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791596"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595398"
 ---
 # <a name="download-table-state"></a>Status „Downloadtabelle“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, während der Tabelle Downloadstatus von der Replikation Zustandsautomat erläutert. 
   
@@ -49,5 +49,5 @@ Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status der Sync
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCSTATE](syncstate.md)
+[SYNCHRONISIERUNGSSTATUS](syncstate.md)
 

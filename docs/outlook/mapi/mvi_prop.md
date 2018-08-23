@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d7f07524-6935-4a60-aaf3-3f753ea8d86a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f8f58ee18095dec8a222ae8b5a19cbefbaafa663
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6a3d0d79d190b318d36fd9be8a3ec39d6aa7ad29
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793310"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593977"
 ---
 # <a name="mviprop"></a>MVI_PROP
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt die MVI_FLAG für eine angegebene Eigenschaft fest. 
   
@@ -42,7 +42,7 @@ MVI_PROP (tag)
   
 > Die Eigenschaftentag geändert werden soll.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MVI_FLAG kombiniert die Einstellung der MV_FLAG, Identifizieren einer Eigenschaft als mehrwertige, und MV_INSTANCE vorhanden, anfordern, dass eine mehrwertige Eigenschaft in einer Tabelle in mehrere Zeilen angezeigt werden. Der Eigenschaftentyp der betroffenen-Eigenschaft wird so geändert, aber der Bezeichner bleibt unverändert. 
   

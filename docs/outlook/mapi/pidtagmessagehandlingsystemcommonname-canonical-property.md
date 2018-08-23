@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c6ba2fe9-c183-4d26-854c-f3ac893e75cc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f169a167342ea36eece313c68c2fe32199bb930a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8d35a16432e1a7f7e78cce600d4a1bfa3133458b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794609"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594824"
 ---
 # <a name="pidtagmessagehandlingsystemcommonname-canonical-property"></a>PidTagMessageHandlingSystemCommonName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den allgemeinen Namen des System-Systemnachrichten.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MHS_COMMON_NAME, PR_MHS_COMMON_NAME_A, PR_MHS_COMMON_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A0F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MHS_COMMON_NAME, PR_MHS_COMMON_NAME_A, PR_MHS_COMMON_NAME_W  <br/> |
+|Kennung:  <br/> |0x3A0F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften enthalten den allgemeinen Namen des System-Systemnachrichten.
   

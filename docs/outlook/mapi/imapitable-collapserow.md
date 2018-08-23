@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1a23e555-be26-43fb-a715-cfc4ffa623cd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1fd711683ff476ef5d381bca2f9db6bc25b07c68
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b4dd7e9715c2d3c99eda44f7eed0b3360a2e33be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792456"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595300"
 ---
 # <a name="imapitablecollapserow"></a>IMAPITable::CollapseRow
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Blendet eine Tabellenkategorie für erweiterte, entfernen Sie die untergeordnete Überschriften und Endknoten Zeilen aus der Tabellenansicht für die Kategorie gehören.
   
@@ -68,7 +68,7 @@ MAPI_E_INVALID_ENTRYID
   
 > Die Zeile, die vom _PbInstanceKey_ -Parameter ist nicht vorhanden. Dieser Fehler ist eine Alternative zur MAPI_E_NOT_FOUND. Dienstanbieter können entweder 1 zurück. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::CollapseRow** -Methode wird eine Tabellenkategorie reduziert und entfernt ihn aus der Tabellenansicht. Die Zeilen werden regelmäßig beginnend in der Zeile, die von der **PR_INSTANCE_KEY** -Eigenschaft auf das durch den Parameter _PbInstanceKey_ identifiziert. Die Anzahl der Zeilen, die aus der Ansicht entfernt wurden, wird in den Inhalt des Parameters _LpulRowCount_ zurückgegeben. 
   

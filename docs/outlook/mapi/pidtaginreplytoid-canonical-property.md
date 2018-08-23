@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d435a65a-de01-4fb0-bc54-a87a2c4462ac
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2e8ed4af81de6e48af3e427f2d2d2f94572d241f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6f3ae69243da185430836903da9e7b0644c5db90
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794480"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594782"
 ---
 # <a name="pidtaginreplytoid-canonical-property"></a>PidTagInReplyToId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die ursprüngliche Nachricht **PR_INTERNET_MESSAGE_ID** ([PidTagInternetMessageId](pidtaginternetmessageid-canonical-property.md))-Eigenschaftswert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IN_REPLY_TO_ID, PR_IN_REPLY_TO_ID_A, PR_IN_REPLY_TO_ID_W  <br/> |
-|Bezeichner:  <br/> |0x1042  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IN_REPLY_TO_ID, PR_IN_REPLY_TO_ID_A, PR_IN_REPLY_TO_ID_W  <br/> |
+|Kennung:  <br/> |0x1042  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften müssen auf allen Antworten auf Nachrichten festgelegt werden.
   

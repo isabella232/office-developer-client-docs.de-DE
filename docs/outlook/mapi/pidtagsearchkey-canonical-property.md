@@ -9,30 +9,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: fcab369a-a1f4-4425-a272-e35046914a4d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 169afc3b8cf982c4767802542b900ae80822cd01
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: da7d19407856570a628529877252360d1537bae7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795124"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595391"
 ---
 # <a name="pidtagsearchkey-canonical-property"></a>PidTagSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen binären vergleichbaren Schlüssel, der für eine Suche korrelierte Objekte identifiziert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x300B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x300B  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bietet eine Verfolgung für verknüpfte Objekte, wie Nachrichtenkopien, und suchen unerwünschte vorkommen, wie etwa doppelte Empfänger erleichtert.
   

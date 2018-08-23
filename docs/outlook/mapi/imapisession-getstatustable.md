@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 53428f8d-4838-46d1-a0ab-cafb194f4cc3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7de404f421a405d80dd7f98beba5168969222fc9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 48a69fa49735014dcbfffad0673f1d4da62452e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792314"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594831"
 ---
 # <a name="imapisessiongetstatustable"></a>IMAPISession::GetStatusTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf die Statustabelle, einer Tabelle, Informationen zu allen MAPI-Ressourcen in der Sitzung enthält.
   
@@ -54,7 +54,7 @@ S_OK
   
 > Die Tabelle wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::GetStatusTable** -Methode ermöglicht den Zugriff auf die Statustabelle, die Informationen zu allen MAPI-Ressourcen in der Sitzung enthält. Es wird eine Zeile in der Tabelle Informationen zu MAPI-Subsystems, eine Zeile für die MAPI-Warteschlange, eine Zeile für die integrierte Adressbuch und eine Zeile für jeden Anbieter im Profil. 
   
@@ -89,7 +89,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Statustabellen](status-tables.md)
 

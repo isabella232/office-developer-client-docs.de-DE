@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 20ff2b63-e4a3-4ba9-bad0-2c1873fb69b5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6673e1d51a7c030a35a7c5c3cbc955341afba299
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0d3fb5d2ce5036c6491e24bba8d3541b123eaab1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795479"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595125"
 ---
 # <a name="searching-the-address-book"></a>Suchen im Adressbuch
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI erm�glicht adressbuchanbietern implementierte zwei Stufen von Suchfunktionen zu implementieren:
   

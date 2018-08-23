@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: be941efd-04b3-48d0-9b9c-8195ad2bb58d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e778df216d0fe9b901cd9f7136c8014a6b8f0d0a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b0ec3ada71a3e604ea71c5d386f1ff0466132081
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795637"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594089"
 ---
 # <a name="strategies-for-error-handling"></a>Strategien zur Fehlerbehandlung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Da Schnittstellenmethoden virtuellen sind, ist es nicht möglich, als ein Anrufer den vollständigen Satz von Werten kennen, die von jeder einen Aufruf zurückgegeben werden können. Eine Implementierung einer Methode möglicherweise fünf Werte zurück. eine andere möglicherweise acht zurück. Die Einträge Verweis in der Dokumentation zu MAPI-einige Werte aufgeführt, die für jede Methode zurückgegeben werden können; Dies sind die Werte, die der Client oder Dienstanbieter suchen und verarbeiten, da sie eine besondere Bedeutung haben kann. Andere Werte zurückgegeben werden können, aber, da sie nicht aussagekräftig sind, ist die Behandlung von spezieller Code nicht erforderlich. Eine einfache Überprüfung Erfolg oder Fehler ist ausreichend.
   

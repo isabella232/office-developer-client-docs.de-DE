@@ -11,36 +11,36 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 374cef41-141a-491b-8dd1-eaf1a2044204
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 39840f27d67daca625daea08555ab89d5a362e63
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8fa96736b5404d84c6ab48851b916c5ab987ae2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794389"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593921"
 ---
 # <a name="pidtagfollowupicon-canonical-property"></a>PidTagFollowupIcon (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Kennzeichnungsfarbe des Message-Objekts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FOLLOWUP_ICON  <br/> |
-|Bezeichner:  <br/> |0x1095  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FOLLOWUP_ICON  <br/> |
+|Kennung:  <br/> |0x1095  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Benennen Sie Nachrichtenordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft darf nicht vorhanden sein, es sei denn, der Wert der **PR_FLAG_STATUS** ([PidTagFlagStatus](pidtagflagstatus-canonical-property.md))-Eigenschaft auf "FollowupFlagged" festgelegt ist, oder Message-Objekts ein bezüglich Besprechungen-Objekt ist. Diese Eigenschaft sollte auf ein Task-Objekt nicht vorhanden. Bei Festlegung auf andere Nachrichtenobjekte, muss diese Eigenschaft auf einen der folgenden Werte festgelegt sein.
   
 |**Numerischen Wert**|**Name**|**Beschreibung**|
 |:-----|:-----|:-----|
-|Nicht vorhanden  <br/> |n/v  <br/> |Keine Farbe  <br/> |
+|Nicht vorhanden  <br/> |–  <br/> |Keine Farbe  <br/> |
 |1  <br/> |followupIcon1  <br/> |Lila Kennzeichnung  <br/> |
 |2  <br/> |followupIcon2  <br/> |Orange Kennzeichnung  <br/> |
 |3  <br/> |followupIcon3  <br/> |Grüne Kennzeichnung  <br/> |

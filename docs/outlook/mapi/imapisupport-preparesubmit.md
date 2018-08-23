@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 467242e3-96c9-4280-9cbc-9ecfe3f279cf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f6902b45cde3e5349d69b6f35c3f8980deb031b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5f45a6457bba738b290d967260bbd34c0f88f93f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792424"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595062"
 ---
 # <a name="imapisupportpreparesubmit"></a>IMAPISupport::PrepareSubmit
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bereitet eine Nachricht für die Übermittlung an die MAPI-Warteschlange.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Die Nachricht wurde erfolgreich vorbereitet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::PrepareSubmit** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **PrepareSubmit** in ihrer Implementierung der [IMessage::SubmitMessage](imessage-submitmessage.md) -Methode, um eine Nachricht für die Übermittlung an die Warteschlange MAPI vorbereiten. 
   

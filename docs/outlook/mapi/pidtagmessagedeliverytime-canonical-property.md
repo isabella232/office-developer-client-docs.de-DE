@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 4f9d44f2-4faa-4f16-9e33-22f80c17db85
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4fd74e99a8073db03ad47292677ff98efca58af3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b635ad72acc2bd98ca0c207dea71ea2df757e22b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794598"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593935"
 ---
 # <a name="pidtagmessagedeliverytime-canonical-property"></a>PidTagMessageDeliveryTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Uhrzeit, wenn eine Nachricht nicht übermittelt wurde. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_DELIVERY_TIME  <br/> |
-|Bezeichner:  <br/> |0x0E06  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_DELIVERY_TIME  <br/> |
+|Kennung:  <br/> |0x0E06  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft beschreibt Zeitpunkt, zu dem die Nachricht auf dem Server gespeichert wurde, statt die Uhrzeit des Downloads, wenn der Adressbuchhierarchie die Nachricht vom Server auf den lokalen Speicher kopiert.
   

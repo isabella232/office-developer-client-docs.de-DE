@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9d88b5b0-cb61-4714-8cef-9916c6e85854
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bc4a397bec14ed54ac5c310d90dbef6a5b79e131
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 92b0c4b287d01e53e82dcf0fb2c730a9042a2d57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795072"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594397"
 ---
 # <a name="pidtagscheduleinfodelegatorwantsinfo-canonical-property"></a>PidTagScheduleInfoDelegatorWantsInfo (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Stellvertreters Informationszwecken Updates empfangen möchte.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_BOSS_WANTS_INFO  <br/> |
-|Bezeichner:  <br/> |0x684B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_BOSS_WANTS_INFO  <br/> |
+|Kennung:  <br/> |0x684B  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    

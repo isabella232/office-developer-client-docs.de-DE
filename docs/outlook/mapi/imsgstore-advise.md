@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c57e743-a798-4e39-a61a-46dff8b1ac7c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6a315cef8263f7e241a815a0f054dc3174d88fa7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ddd9d3c0a61a3a2a585edd6c370285b2f6d424e3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792612"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593718"
 ---
 # <a name="imsgstoreadvise"></a>IMsgStore::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um die Benachrichtigung der angegebenen Ereignisse, die Einfluss auf die Nachrichtenspeicher registriert.
   
@@ -113,7 +113,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Nachrichtenanbieter unterstützt keine Registrierung für die Benachrichtigung über den Nachrichtenspeicher.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::Advise** -Methode richtet eine Verbindung zwischen dem Anrufer der advise-Empfängerobjekt und der Nachrichtenspeicher oder ein Objekt im Nachrichtenspeicher. Diese Verbindung wird verwendet, um das Senden von Benachrichtigungen an der Advise-Empfänger, wenn sich ein oder mehr Ereignisse, wie in den _UlEventMask_ -Parameter angegeben an das Quellobjekt Advise auftreten. Wenn der _LpEntryID_ -Parameter verweist auf eine gültige Eingabe Bezeichner, hat die Advise-Quelle das Objekt durch dieses Eintrags-ID identifiziert. Wenn _LpEntryID_ NULL ist, ist die Advise-Quelle des Nachrichtenspeichers. 
   

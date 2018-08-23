@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a13c6757-358f-421a-9a76-de7483501613
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d9a15abc05bf0f0a6fef35dd489f12925b88014a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 791dfe094aa0ff1aab656b56fbdf7d59e880b92e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792614"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593732"
 ---
 # <a name="imsgserviceadmincopymsgservice"></a>IMsgServiceAdmin::CopyMsgService
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert eine Message Service in einem Profil. 
   
@@ -87,7 +87,7 @@ MAPI_E_NOT_FOUND
   
 > Die **MAPIUID** auf das _LpUID_ bezieht sich nicht auf einem vorhandenen Meldung-Dienst. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::CopyMsgService** -Methode kopiert eine Message Service in einem Profil, das aktive Profil oder ein anderes Profil. Das Profil, das den Dienst zu kopierenden enthält, und das Ziel müssen nicht das gleiche Profil werden, aber sie werden können. 
   

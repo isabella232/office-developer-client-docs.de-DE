@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac5eb91d-31c9-459b-bb22-f4ccfc92d1db
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 26854b640669bbc6479ce90ba9cad18cdf4d9264
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 69108529b13c8c5523f0ea92ef627c69a6722469
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794720"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594579"
 ---
 # <a name="pidtagoriginalsearchkey-canonical-property"></a>PidTagOriginalSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den ursprünglichen Suche Schlüssel für einen Eintrag aus einem Adressbuch an ein persönliches Adressbuch oder anderen beschreibbaren Adressbuch kopiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x3A14  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x3A14  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Eigenschaften, die der ursprünglichen Quelle eines Eintrags kopierten Informationen enthalten.
   

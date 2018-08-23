@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 678bdc52-3404-48b2-9154-64ce2a941555
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8f5f3bc454e18b1dbab434fc1b7cc094b0d6a360
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: be41a9916b6b231d5715cf18fe2b0d804434f2ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791529"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594481"
 ---
 # <a name="bookmark"></a>BOOKMARK
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert die Textmarken Daten zum Erinnern an einer Position in einer Tabelle. 
   
@@ -36,7 +36,7 @@ Definiert die Textmarken Daten zum Erinnern an einer Position in einer Tabelle.
 typedef ULONG_PTR BOOKMARK;
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI sind drei Textmarken, wie folgt definiert:
   

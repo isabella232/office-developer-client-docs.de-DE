@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a63bf0a7-24e6-4eef-98e8-3744ce5f9f2d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1ecc80feec2b0a86f35d03f1ca4f75ea9ff094e4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 27999c141fdeb3e1610213db128bc4ad3d049e6d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791723"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594103"
 ---
 # <a name="form-verbs"></a>Formular Verben
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benutzeroberfläche des Formulars bietet in der Regel Menüelemente oder Steuerelemente, mit denen Benutzer die verschiedenste Aktion mit dem Formular. Es ist dem Formular Server Auftrag an diese Benutzeraktionen zu behandeln. Diese Schnittstelle wird mit standard Win32-APIs implementiert. Schreiben einer verhält sich wie andere Schnittstellen für regulären Win32-Programme schreiben.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 636c1e75-3024-43ca-a7dd-1bb480dfbb5b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ac4da2d4082cac632548594411528b7bf1d6dc64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3f23a332ee6778f71ce0809dfae8c0b6a92246a8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794900"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595146"
 ---
 # <a name="pidtagrecipientnumberforadvice-canonical-property"></a>PidTagRecipientNumberForAdvice (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält einen Nachrichtenempfänger Telefonnummer von der physischen Übermittlung einer Nachricht informiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECIPIENT_NUMBER_FOR_ADVICE, PR_RECIPIENT_NUMBER_FOR_ADVICE_A, PR_RECIPIENT_NUMBER_FOR_ADVICE_W  <br/> |
-|Bezeichner:  <br/> |0x0C14  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECIPIENT_NUMBER_FOR_ADVICE, PR_RECIPIENT_NUMBER_FOR_ADVICE_A, PR_RECIPIENT_NUMBER_FOR_ADVICE_W  <br/> |
+|Kennung:  <br/> |0x0C14  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind in Verbindung mit der Zustellung an eine physische Ziel, statt ein elektronisches-Postfach verwendet werden, wenn der menschliche Empfänger nicht erwartet wird, Übermittlung vorhanden sein soll. Ein Beispiel ist die Telefonnummer auf ein Faxdeckblatt.
   

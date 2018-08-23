@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 67cda756-ba71-4f29-a601-55359e44d93b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1954e1760fead9cbe13f0f2394f8095cab7f26ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bd019378a8db7b2e356f0c8b2f30a59e685b9e8a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794681"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595433"
 ---
 # <a name="pidtagoriginalauthoremailaddress-canonical-property"></a>PidTagOriginalAuthorEmailAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die e-Mail-Adresse des Autors der ersten Version einer Nachricht, d. h., die Nachricht vor dem weitergeleitet oder darauf geantwortet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_AUTHOR_EMAIL_ADDRESS, PR_ORIGINAL_AUTHOR_EMAIL_ADDRESS_A, PR_ORIGINAL_AUTHOR_EMAIL_ADDRESS_W  <br/> |
-|Bezeichner:  <br/> |0x007A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_AUTHOR_EMAIL_ADDRESS, PR_ORIGINAL_AUTHOR_EMAIL_ADDRESS_A, PR_ORIGINAL_AUTHOR_EMAIL_ADDRESS_W  <br/> |
+|Kennung:  <br/> |0x007A  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Autor einer Nachricht. Am ersten Übermittlung der Nachricht sollte die Client-Anwendung diese Eigenschaften auf den Wert der Eigenschaft **PR_SENDER_EMAIL_ADDRESS** ([PidTagSenderEmailAddress](pidtagsenderemailaddress-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   

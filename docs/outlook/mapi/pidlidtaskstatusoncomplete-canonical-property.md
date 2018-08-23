@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: dfe66d5d-7b82-46c6-871b-2ce809bbca7e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cc467336b240ce4ee3fa2407f8e72e9c921bb9fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: beff2f67426707051e62e11776fead9abc0e1534
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793861"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595251"
 ---
 # <a name="pidlidtaskstatusoncomplete-canonical-property"></a>PidLidTaskStatusOnComplete (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob ein Update der e-Mail-Nachricht gesendet wird, sobald der zugewiesenen Aufgabe Beauftragte für die Aufgabe angefordert wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskSOC  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskSOC  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008119  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

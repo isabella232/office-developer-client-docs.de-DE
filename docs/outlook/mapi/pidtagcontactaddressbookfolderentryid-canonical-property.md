@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 54361b61-de14-4409-b120-7a01a401be49
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9fac2c315b461bd08ba9305706842b667cd99eff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c98d168ab0f3092ad3f4ada89b21fa85372b9537
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794172"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593928"
 ---
 # <a name="pidtagcontactaddressbookfolderentryid-canonical-property"></a>PidTagContactAddressBookFolderEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Bezeichner für den Ordner Kontakte in den Nachrichtenspeicher, in dem e-Mail-Benutzer gespeichert werden. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAB_FOLDER_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x6610  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_FOLDER_ENTRYID  <br/> |
+|Kennung:  <br/> |0x6610  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dies ist eine Eigenschaft für einen Kontakt Adressbuch-Container und eine Spalte in der Tabelle der Kontakt-Adressbuch-Container.
   

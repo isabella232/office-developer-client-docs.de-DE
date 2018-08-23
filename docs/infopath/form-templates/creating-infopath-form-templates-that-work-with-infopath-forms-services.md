@@ -8,14 +8,14 @@ keywords:
 localization_priority: Normal
 ms.assetid: 7bd4fbbb-49c6-46a1-9584-895e5aa9a772
 description: Browserkompatible Formulare in Microsoft SharePoint Server 2013 mit InfoPath Forms Services-Supportfunktionen und Steuerelementen, die die Mehrzahl der Verwendungsszenarien für InfoPath-Formular abdecken bereitgestellt. Browserkompatible Formulare von InfoPath Forms Services übermittelt unterstützt alle Features in InfoPath jedoch nicht. Einige Features und Steuerelemente werden auf dem Server nicht implementiert. Andere Features müssen eine aussagekräftige Darstellung nicht auf dem Server.
-ms.openlocfilehash: 65201358fc651325920bd3eefc863e839bb1f1a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c633c93eef5fa2d773ed1497f933f2cc3ee0e3bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790761"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595454"
 ---
-# <a name="creating-infopath-form-templates-that-work-with-infopath-forms-services"></a>Erstellen von InfoPath-Formularvorlagen, die von InfoPath Forms Services unterstützt werden
+# <a name="creating-infopath-form-templates-that-work-with-infopath-forms-services"></a>Erstellen von InfoPath-Formularvorlagen, die zusammen mit InfoPath-Formulardiensten verwendet werden können
 
 Browserkompatible Formulare in Microsoft SharePoint Server 2013 mit InfoPath Forms Services-Supportfunktionen und Steuerelementen, die die Mehrzahl der Verwendungsszenarien für InfoPath-Formular abdecken bereitgestellt. Browserkompatible Formulare von InfoPath Forms Services übermittelt unterstützt alle Features in InfoPath jedoch nicht. Einige Features und Steuerelemente werden auf dem Server nicht implementiert. Andere Features müssen eine aussagekräftige Darstellung nicht auf dem Server.
   
@@ -31,15 +31,15 @@ Die folgenden Steuerelemente werden in Formularvorlagen unterstützt, die sowohl
   
 - **Textfeld**
     
-- **Rich-Text-Feld** (nur in Microsoft Internet Explorer bearbeitbar) 
+- **Feld für Rich-Text** (nur in Microsoft Internet Explorer bearbeitbar) 
     
 - **Dropdown-Listenfeld**
     
 - **Listenfeld**
     
-- **Datumsauswahl** (Wie in anderen Browsern als Internet Explorer ein Textfeld gerendert) 
+- **Datumsauswahl** (wird in anderen Browsern als Internet Explorer als Textfeld gerendert) 
     
-- **Das Kontrollkästchen**
+- **Kontrollkästchen**
     
 - **Optionsfeld**
     
@@ -102,7 +102,7 @@ Code für die Geschäftslogik vom [Microsoft.Office.InfoPath](https://msdn.micro
   
 - Da jeder Server Anforderung von einem anderen front-End behandelt werden kann und InfoPath Forms Services nur eine einzige Instanz der Geschäftslogik geladen wird, können nicht im globalen oder statische Variablen gespeicherten Daten Programmierer hängen. Um dies zu unterstützen, muss Geschäftslogik Zustand in eine Eigenschaftensammlung speichern Zugriff auf die von der [FormState](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.FormState.aspx) -Eigenschaft bereitgestellt wird. 
     
-- Eine Teilmenge der Member des **Microsoft.Office.InfoPath** -Namespace Features zur Verfügung, wie etwa Information Rights Management (IRM), die auf dem Server nicht unterstützt werden. Weitere Informationen über die Elemente des Objektmodells werden und werden nicht unterstützt, finden Sie in den Abschnitten "-Objekt Modell Mitglieder, die Arbeit in InfoPath und InfoPath Forms Services" und "-Objekt Modell Mitglieder, die Arbeit nur in InfoPath" weiter unten in diesem Thema. 
+- Ein Subset der Member des **Microsoft.Office.InfoPath**-Namespace stellt Features wie RIM (Information Rights Management, Verwaltung von Informationsrechten) bereit, die auf dem Server nicht unterstützt werden. Weitere Informationen zu den nicht unterstützten Objektmodellmembern finden Sie in den Abschnitten "Objektmodellmember, die in InfoPath und InfoPath Forms Services ausgeführt werden können" und "Objektmodellmember, die nur in InfoPath ausgeführt werden können" weiter unten in diesem Thema. 
     
 - In JScript, VBScript und von Membern des [Microsoft.Office.Interop.InfoPath.SemiTrust](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.aspx) -Namespace bereitgestellte InfoPath 2003-kompatible Objektmodell geschriebene Geschäftslogik wird auf dem Server nicht unterstützt. 
     
@@ -146,7 +146,7 @@ Andere Features, die für InfoPath Forms Services nicht unterstützt werden:
     
 - Integration von HWS (Human Workflow Services). HWS wird von BizTalk Server abgelehnt.
     
-- XML-Schema-Fehlermeldung außer Kraft gesetzt. Dies ist eine selten verwendete Funktion, die im Formular-Designer eine andere Nachricht als der von MSXML oder **System.Xml** bereitgestellt, wenn ein Dokument (in der Regel aufgrund einer Typenkonflikt) zu validieren nicht bereitstellen kann. Dieses Feature wird nicht in der Designer-Benutzeroberfläche unterstützt und erfordert Hand Bearbeiten von der Formulardefinitionsdatei (XSF). 
+- Außerkraftsetzungen von XML-Schemafehlermeldungen. Dies ist ein selten verwendetes Feature, mit dessen Hilfe der Formularentwickler eine andere Meldung als die Meldung von MSXML oder **System.Xml** bereitstellen kann, wenn ein Dokument nicht überprüft werden kann (in der Regel aufgrund eines Typkonflikts). Dieses Feature wird in der Entwurfsbenutzeroberfläche nicht unterstützt und erfordert eine manuelle Bearbeitung der Formulardefinitionsdatei (XSF). 
     
 ### <a name="features-with-no-direct-parallel-on-the-infopath-forms-services"></a>Features ohne direkte Parallele in InfoPath Forms Services
 
@@ -166,7 +166,7 @@ Andere Features, die für InfoPath Forms Services nicht unterstützt werden:
     
 - Exportieren nach Excel
     
-- Tablet / Freihandfeatures, einschließlich **Des** Steuerelements Freihandzeichnung 
+- Tablett-/Freihandfeatures, einschließlich des Steuerelements **Freihandzeichnung** 
     
 - Rückgängig / Wiederholen
     
@@ -174,7 +174,7 @@ Andere Features, die für InfoPath Forms Services nicht unterstützt werden:
     
 - Modale Dialogfelder aus Geschäftslogik
     
-- XSLT-Erweiterbarkeit (**xd: preserve** -Blöcke) 
+- XSLT-Erweiterbarkeit (**xd:preserve**-Blöcke) 
     
 - Externe Automatisierung
     
@@ -185,7 +185,7 @@ Andere Features, die für InfoPath Forms Services nicht unterstützt werden:
 - Eingeschränkter Sicherheitsmodus
     
 > [!NOTE]
-> Diese Features keine Fehler oder Meldungen verursacht bei Verwendung des Features **Designdetektiv** im InfoPath-Entwurfsmodus. 
+> Von diesen Features werden beim Verwenden des Features **Designdetektiv** im InfoPath-Entwurfsmodus keine Fehler oder Meldungen verursacht. 
   
 ## <a name="object-model-members-that-work-in-both-infopath-and-infopath-forms-services"></a>Objektmodellmember, die in InfoPath und InfoPath Forms Services ausgeführt werden können
 
@@ -270,7 +270,7 @@ Die folgenden Klassen und Member des InfoPath verwaltetem Code-Objektmodells vom
 |[FormErrorType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorType.aspx) <br/> |[SchemaValidation](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorType.SchemaValidation.aspx) <br/> |
 ||[SystemGenerated](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorType.SystemGenerated.aspx) <br/> |
 ||[Vom Typ UserDefined](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormErrorType.UserDefined.aspx) <br/> |
-|[FormEvents](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.aspx) <br/> |[Laden](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) <br/> |
+|[FormEvents](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.aspx) <br/> |[Ladevorgang](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Loading.aspx) <br/> |
 ||[Senden](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.Submit.aspx) <br/> |
 ||[VersionUpgrade](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.VersionUpgrade.aspx) <br/> |
 ||[ViewSwitched](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormEvents.ViewSwitched.aspx) <br/> |
@@ -346,7 +346,7 @@ Die folgenden Klassen und Member des InfoPath verwaltetem Code-Objektmodells vom
 |[XmlValidatingEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.aspx) <br/> |[ReportError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) <br/> |
 ||[ReportError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) <br/> |
 ||[ReportError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) <br/> |
-|[XPathTypedValue](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.aspx) <br/> |[Bewerten](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.Evaluate.aspx) <br/> |
+|[XPathTypedValue](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.aspx) <br/> |[Evaluate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.Evaluate.aspx) <br/> |
 ||[SetStringValue](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.SetStringValue.aspx) <br/> |
 ||[ToString](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.ToString.aspx) <br/> |
 ||[XPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XPathTypedValue.XPath.aspx) <br/> |
@@ -425,7 +425,7 @@ Die folgenden Klassen und Member des InfoPath verwaltetem Code-Objektmodells vom
 |[MachineState](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MachineState.aspx) <br/> |[IEInOfflineState](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MachineState.IEInOfflineState.aspx) <br/> |
 ||[Offline](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MachineState.Offline.aspx) <br/> |
 ||[Online](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MachineState.Online.aspx) <br/> |
-|[MailEnvelope](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.aspx) <br/> |[Verfügbar](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Available.aspx) <br/> |
+|[MailEnvelope](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.aspx) <br/> |[Available](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Available.aspx) <br/> |
 ||[Bcc](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.Bcc.aspx) <br/> |
 ||[CC](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.CC.aspx) <br/> |
 ||[EmailAttachmentType](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MailEnvelope.EmailAttachmentType.aspx) <br/> |
@@ -461,7 +461,7 @@ Die folgenden Klassen und Member des InfoPath verwaltetem Code-Objektmodells vom
 ||[Filename](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SaveEventArgs.Filename.aspx) <br/> |
 ||[IsSaveAs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SaveEventArgs.IsSaveAs.aspx) <br/> |
 ||[PerformSaveOperation](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SaveEventArgs.PerformSaveOperation.aspx) <br/> |
-|[Signatur](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) <br/> |[Zertifikat](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.Certificate.aspx) <br/> |
+|[Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) <br/> |[Zertifikat](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.Certificate.aspx) <br/> |
 ||[Kommentar](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.Comment.aspx) <br/> |
 ||[Anmelden](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.Sign.aspx) <br/> |
 ||[SignatureBlockXmlNode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.SignatureBlockXmlNode.aspx) <br/> |
@@ -508,7 +508,7 @@ Die folgenden Klassen und Member des InfoPath verwaltetem Code-Objektmodells vom
 |[UserPermission](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.aspx) <br/> |[ExpirationDate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.ExpirationDate.aspx) <br/> |
 ||[Berechtigung](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.Permission.aspx) <br/> |
 ||[Remove](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.Remove.aspx) <br/> |
-||[Benutzer-ID](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.UserId.aspx) <br/> |
+||[UserId](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermission.UserId.aspx) <br/> |
 |[UserPermissionCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.aspx) <br/> |[Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.Add.aspx) <br/> |
 ||[Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.Add.aspx) <br/> |
 ||[Add](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.UserPermissionCollection.Add.aspx) <br/> |

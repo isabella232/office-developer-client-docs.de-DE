@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c8b30768-cf83-450d-9fe2-567a5e0c2f57
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 151aa730f2ae6a4d39ffa474eb7ecd79ed5602eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b36f71958528b25829b1ff85b29572b3590f9d4f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794989"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594817"
 ---
 # <a name="pidtagrpcoverhttpflags-canonical-property"></a>PidTagRpcOverHttpFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Einstellungen in einem Profil von Microsoft Office Outlook verwendet werden, um mit Microsoft Exchange Server eine Verbindung über einen Remoteprozeduraufruf (RPC) über Hypertext Transfer Protocol (HTTP).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROH_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x6623  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROH_FLAGS  <br/> |
+|Kennung:  <br/> |0x6623  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **PR_ROH_FLAGS** -Eigenschaft wird im Abschnitt globale Profil ein Profil Messaging Application Programming Interface (MAPI) gespeichert. Der Wert der **PR_ROH_FLAGS** ist eine Bitmaske, die von einem oder mehreren der folgenden Werte bestehen. 
   

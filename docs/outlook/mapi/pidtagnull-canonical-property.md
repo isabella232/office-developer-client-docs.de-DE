@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 192cdab8-c615-47b9-9f04-a1414eaf0c77
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 55db507055692c9e929b0125abf719d8c03ac967
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: efb0812a88ad435c2456a729a6e950b371cc0250
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794662"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595349"
 ---
 # <a name="pidtagnull-canonical-property"></a>PidTagNull (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt einen null-Wert oder die Einstellung einer Eigenschaft oder Array-Speicherplatz reserviert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_NULL  <br/> |
-|Bezeichner:  <br/> |0x0000  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_NULL  <br/> |
+|Kennung:  <br/> |0x0000  <br/> |
 |Datentyp:  <br/> |PT_NULL  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird verwendet, um Speicherplatz in Arrays von [SPropValue](spropvalue.md) Strukturen zu reservieren. Es wird in ein Array von [SPropTagArray](sproptagarray.md) Strukturen verwendet, anzuweisen, die Methode, um Speicherplatz im zurückgegebenen Array der **SPropValue** Strukturen zu reservieren. Dies ermöglicht berechnete Eigenschaften in eine kostengünstige Möglichkeit gefüllt werden soll. 
   

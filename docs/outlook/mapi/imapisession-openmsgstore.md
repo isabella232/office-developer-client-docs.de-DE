@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7f73b5cf-7093-42e9-8acc-63d73df77cf5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 983c22772acfea7837e85d409b7928a35aed91ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fdf75787153f9a85e6a7bcddff44cf2c468a7975
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792322"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595034"
 ---
 # <a name="imapisessionopenmsgstore"></a>IMAPISession::OpenMsgStore
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Nachrichtenspeicher und gibt einen Zeiger [IMsgStore](imsgstoreimapiprop.md) für den weiteren Zugriff. 
   
@@ -102,7 +102,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::OpenMsgStore** -Methode wird die einen bestimmten Nachrichtenspeicher geöffnet. 
   
@@ -157,6 +157,6 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 - [IMAPISession::OpenEntry](imapisession-openentry.md)
 - [IMAPIProp::OpenProperty](imapiprop-openproperty.md)
 - [IMAPISession: IUnknown](imapisessioniunknown.md)
-- [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+- [MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
 - [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
 
