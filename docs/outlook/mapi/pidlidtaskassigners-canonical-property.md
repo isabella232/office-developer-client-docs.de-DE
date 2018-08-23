@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 07500bd0-bcff-4b03-8ed3-80508875e253
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 89e0b6eae35de9e40dba411afb82e19aa81fb635
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 20a4cf4fc847bdb361fb73161adeb96afb49e57e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793806"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570751"
 ---
 # <a name="pidlidtaskassigners-canonical-property"></a>PidLidTaskAssigners (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Stack von Einträgen, die Aufgabe Assigners darstellen. Die letzte Aufgabe delegierende Person wird am oberen Rand des Stapels angezeigt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskMyDelegators  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskMyDelegators  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008117  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der Client eine Aufgabenanfrage erhält, fügt es an diese Eigenschaft, welche Struktur in [[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx), ein Eintrag definiert ist, der Absender die Aufgabe darstellt. Wenn der Client eine Aufgabe Ablehnung erhält, entfernt der Client den letzten Aufgabe delegierende Person Eintrag aus dieser Eigenschaft an. Wenn der Client eine Taskantwort sendet, sendet der Client es auf die letzte Aufgabe delegierende Person, die in der Wert dieser Eigenschaft aufgelistet.
   

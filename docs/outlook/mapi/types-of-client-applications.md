@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 52ce22a9-3ec2-481c-bb91-7a5bcca817f5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 17b55de84c38deb515dfb528e0ed01306934739d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 783b8972c29b80e1005f0d55e00487dd0e2757b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795763"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572060"
 ---
 # <a name="types-of-client-applications"></a>Arten von Clientanwendungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es gibt hauptsächlich zwei Arten von messaging-Clients:, die Nachrichten zwischen Personen (IPM) behandelt, und die Verarbeitung von Nachrichten prozessübergreifenden Kommunikation (IPK). In dieser Typen kann messaging-Clientanwendungen wie folgt kategorisiert:
   

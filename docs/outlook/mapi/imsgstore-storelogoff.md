@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3773c98e-531e-4bdc-a39a-2c3bb7378cd3
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2ac8fb6f4e56b6f086e6061c227120cd49fc621a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a55fc361120472473bcba70152c153fb7824fb9e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792638"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566551"
 ---
 # <a name="imsgstorestorelogoff"></a>IMsgStore::StoreLogoff
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht das ordnungsgemäße Abmelden des Nachrichtenspeichers.
   
@@ -79,7 +79,7 @@ S_OK
   
 > Die Abmeldung wurde erfolgreich abgeschlossen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::StoreLogoff** -Methode beim Ausrichten ausübt Steuerelement über die Interaktion der Nachricht speichern und transport-Anbieter während des Abmeldevorgangs. Aufrufen von **StoreLogoff** gilt nur für Nachrichtenspeicher, die nur vom Anrufer verwendet werden. Beispielsweise wenn zwei Clients den gleichen Nachrichtenspeicher verwenden und einer von ihnen **StoreLogoff**aufruft, der Nachrichtenspeicher wird sofort freigegeben und wird die Steuerung an den aufrufenden Client zurückgegeben.
   

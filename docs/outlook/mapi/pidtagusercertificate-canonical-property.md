@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2ac14c43-36c1-4f2f-97b0-2462f2360575
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0dd477a055562f692c8869bc436c4238c77fd02a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0863973a420920189cc32324154f1125a2b068fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795284"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569946"
 ---
 # <a name="pidtagusercertificate-canonical-property"></a>PidTagUserCertificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein ASN. 1-Authentifizierungszertifikat für ein messaging-Benutzer. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_USER_CERTIFICATE  <br/> |
-|Bezeichner:  <br/> |0x3A22  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_USER_CERTIFICATE  <br/> |
+|Kennung:  <br/> |0x3A22  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Authentifizierungszertifikat ist vergleichbar mit einer digitalen Signatur. Mehrere MAPI-Eigenschaften angeben ASN. 1-Zertifikate. 
   

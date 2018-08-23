@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2a303458-3283-409a-bc3b-b891f3fcfc22
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e4bce7f122522532023d18b43fe4bfdeda84af9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: fa39128ffaaaa3530b74a660c14971834a99561b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791668"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566348"
 ---
 # <a name="fgetcomponentpath"></a>FGetComponentPath
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Pfad zu der privaten Mapi32.dll zurück.
   
@@ -61,7 +61,7 @@ BOOL FGetComponentPath(
     
 ## <a name="return-value"></a>R�ckgabewert
 
- **"true"**
+ **true**
   
 > Der Pfad wurde gefunden.
     
@@ -69,7 +69,7 @@ BOOL FGetComponentPath(
   
 > Der Pfad wurde nicht gefunden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **FGetComponentPath** -Funktion, wenn Sie den Pfad der privaten Mapi32.dll abzurufen müssen. 
   

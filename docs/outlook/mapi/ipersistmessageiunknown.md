@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 40ec6dd4-2206-4e59-aafe-53aaf693f973
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 62fb2b069a50408713eea741cf837c421a749fcd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 346a2bce6d5709490ad11da842ed4f3e794b1996
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792764"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569190"
 ---
 # <a name="ipersistmessage--iunknown"></a>IPersistMessage : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht das Formular Leser von Berichten, die Speicherung eines Formulars und zum Wechseln zwischen den verschiedenen Zuständen zu behandeln.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Beibehalten von Message-Objekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Beibehalten von Message-Objekten  <br/> |
 |Implementiert von:  <br/> |Formular-Objekte  <br/> |
 |Aufgerufen von:  <br/> |Formular-Viewer  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IPersistMessage  <br/> |
@@ -49,7 +49,7 @@ Ermöglicht das Formular Leser von Berichten, die Speicherung eines Formulars un
 |[SaveCompleted](ipersistmessage-savecompleted.md) <br/> |Das Formular benachrichtigt, einen Vorgang abgeschlossen wurde.  <br/> |
 |[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Bewirkt, dass das Formular, um die aktuelle Nachricht freigeben.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Alle Formulare sind erforderlich, um die **IPersistMessage** -Schnittstelle implementieren. 
   

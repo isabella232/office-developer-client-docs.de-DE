@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6b14c383-8bc6-4e86-bd92-0500272af40d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 694ee8b12b9918502e60c0c6ea92992cc1062945
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 587b8bbb7ac25a7977d8962535f1909464ffc248
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792229"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571101"
 ---
 # <a name="imapimessagesitesubmitmessage"></a>IMAPIMessageSite::SubmitMessage
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fordert, dass die aktuelle Nachricht für die Übermittlung in die Warteschlange gestellt werden.
   
@@ -72,7 +72,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIMessageSite : IUnknown](imapimessagesiteiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [MAPI-Formularoberflächen](mapi-form-interfaces.md)
 

@@ -9,26 +9,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e5014abf-eabc-4691-844c-f317a503c41b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 685f988e636f5322e81d093a3d9e7798b4f4d281
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dc68fe38b7d658f63c57148a6978d1832bfe82da
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794959"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566852"
 ---
 # <a name="pidtagreportdispositiontoemailaddresses-canonical-property"></a>PidTagReportDispositionToEmailAddresses (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die e-Mail-Adressen der Berichtempfänger für Nachrichten, die Empfangsbestätigungen anfordern an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_TO_EMAIL_ADDRESSES, PR_REPORT_DISPOSITION_TO_EMAIL_ADDRESSES_A, PR_REPORT_DISPOSITION_TO_EMAIL_ADDRESSES_W  <br/> |
-|Bezeichner:  <br/> |0x0084  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_TO_EMAIL_ADDRESSES, PR_REPORT_DISPOSITION_TO_EMAIL_ADDRESSES_A, PR_REPORT_DISPOSITION_TO_EMAIL_ADDRESSES_W  <br/> |
+|Kennung:  <br/> |0x0084  <br/> |
 |Datentyp:  <br/> |PT_MV_STRING8 PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b98e648c-e540-4cf4-8dde-e8f88b0fb3b3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 382f3be8cfd08056a1bf9e452352850f25bd7674
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a5c2fd1d3b18ceb5aec1ca71ed3f9a28dec2db89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794739"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570198"
 ---
 # <a name="pidtagoriginatoranddistributionlistexpansionhistory-canonical-property"></a>PidTagOriginatorAndDistributionListExpansionHistory (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Informationen zu einem Absender der Nachricht und einen Verlauf zur Erweiterung der Verteilergruppe Liste.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINATOR_AND_DL_EXPANSION_HISTORY  <br/> |
-|Bezeichner:  <br/> |0x1002  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINATOR_AND_DL_EXPANSION_HISTORY  <br/> |
+|Kennung:  <br/> |0x1002  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in Berichten verwendet.
   

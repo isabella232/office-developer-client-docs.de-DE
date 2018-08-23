@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1a418c76-ebc7-47f2-ac91-797162e6e099
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7672c18f18d39ed1e4e8b4664ba7990563419a20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f95b97fc4150695c77871f8c4f768f6b5488ceb4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795253"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572460"
 ---
 # <a name="pidtagtemplateid-canonical-property"></a>PidTagTemplateid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)), ausgedrückt als Format permanente Eintrags-ID an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TEMPLATEID  <br/> |
-|Bezeichner:  <br/> |0x3902  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TEMPLATEID  <br/> |
+|Kennung:  <br/> |0x3902  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieser Wert muss für alle Address Book-Objekte auf einem Server (NSPI = Name Service Provider Interface) vorhanden sein, den distinguished Name (DN) gleich dem Wert für **PR_EMAIL_ADDRESS** ([PidTagEmailAddress](pidtagemailaddress-canonical-property.md)) und der DN muss das DN-Format folgen die Spezifikation für den Typ des Objekts. 
   

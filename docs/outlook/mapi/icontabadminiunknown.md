@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1f72ab6c-14da-47b7-97ab-f729914214ba
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 80bba1a5bfcce143fe7566d9ec1343cf56cc924b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d75f74de323e2ba70675a02e388d6d1539cd30ed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792035"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571381"
 ---
 # <a name="icontabadmin--iunknown"></a>IContabAdmin : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Entfernt wenden Sie sich an Ordnern aus dem Adressbuch von Microsoft Outlook 2010 und Microsoft Outlook 2013.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |cabadmin.h  <br/> |
-|Verf�gbar gemacht von:  <br/> ||
+|Verfügbar gemacht von:  <br/> ||
 |Implementiert von:  <br/> |[IABContainer : IMAPIContainer](iabcontainerimapicontainer.md) <br/> |
 |Aufgerufen von:  <br/> |CRM  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IContabAdmin  <br/> |

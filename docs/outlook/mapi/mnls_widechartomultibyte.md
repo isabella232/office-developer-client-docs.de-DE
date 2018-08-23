@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f64cde12-7ed1-444f-8ca4-51cb3ea514cf
 description: 'Zuletzt geändert: 21 Februar 2012'
-ms.openlocfilehash: f5cb63ca3d421073b00a448f762ecf0137494f2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6957888f6727175d73d277cf4f5b84dc234d22ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793286"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570037"
 ---
 # <a name="mnlswidechartomultibyte"></a>MNLS_WideCharToMultiByte
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Funktion ähnelt **WideCharToMultiByte**, der eine Zeichenfolge mit UTF-16 (Breitzeichen) in eine neue Zeichenfolge zugeordnet ist. Die neue Zeichenfolge ist nicht unbedingt aus einem multibyte-Zeichen festgelegt.
   
@@ -73,7 +73,7 @@ int MNLS_WideCharToMultiByte(
 
 Gibt die Anzahl der in den Puffer auf den _LpMultiByteStr_ bei erfolgreicher geschriebenen Bytes zurück. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen. Weitere Informationen finden Sie unter [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).
   

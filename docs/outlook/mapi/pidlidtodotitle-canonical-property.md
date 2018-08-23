@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 94cf031f-4c78-441d-9c01-55905b4974e0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 66208b2d31ca379389f3249abf281dd4d040e276
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9973e68dbceea03f31bfc47ede34f004fa3f39b6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793879"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570415"
 ---
 # <a name="pidlidtodotitle-canonical-property"></a>PidLidToDoTitle (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Benutzer festzulegen Text, um dieses Objekt "Message" in einer konsolidierten Vorgangsliste zu ermitteln.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidToDoTitle  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidToDoTitle  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000085A4  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf eine Aufgabe nicht festgelegt werden. Um eine leere Eigenschaft anzugeben, legen Sie diese Eigenschaft nicht auf die leere Zeichenfolge, aber stattdessen zu löschen. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0170dc9d-dc72-48e2-a522-374f199b18ea
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 362afb1efeddeae72cc19256c377cb2c0f7ecba0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: db3cc987b20a76116f2591485f57afae017d3e15
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792163"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567713"
 ---
 # <a name="imapiforminfocalcverbset"></a>IMAPIFormInfo::CalcVerbSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Zeiger auf den vollständigen Satz von Verben, die ein Formular verwendet wird.
   
@@ -58,7 +58,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clientanwendungen rufen Sie die **IMAPIFormInfo::CalcVerbSet** -Methode, um einen Zeiger auf den Satz von Verben, die von einem Formular verwendeten abrufen. In der **SMAPIVerbArray** -Struktur, die in der _PpMAPIVerbArray_ -Parameter zurückgegeben werden die Verben in der Reihenfolge der Indexnummer zurückgegeben. Index des Verbs wird in seinem **lVerb** Mitglied gefunden. Clientanwendungen können das Verb Array dynamisch erstellen Menüs, ausblenden oder Schaltflächen anzeigen, und so weiter. 
   

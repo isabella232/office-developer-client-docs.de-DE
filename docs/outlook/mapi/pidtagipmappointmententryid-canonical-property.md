@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a6e8c8fb-b76a-4a73-b112-6399e4d94233
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 231b905c4288379384530c7b35200eefb63479d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 64945d678051d2e3ae486395fb8ec6630de6a59e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794528"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571157"
 ---
 # <a name="pidtagipmappointmententryid-canonical-property"></a>PidTagIpmAppointmentEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook-Kalender enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IPM_APPOINTMENT_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x36D0  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IPM_APPOINTMENT_ENTRYID  <br/> |
+|Kennung:  <br/> |0x36D0  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf eine bestimmte Nachricht Store die folgenden Schritte aus. 
   

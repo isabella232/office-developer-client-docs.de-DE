@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f65da1c8-d49b-44e8-8c66-9c53d088d334
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ff8f13a1dcf678e1d05b6e8e083597156422b83d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ee6fcaf2fa168f6be91b798efa249799f738bfa0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792291"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571080"
 ---
 # <a name="imapipropcopyprops"></a>IMAPIProp::CopyProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert oder verschiebt ausgewählten Eigenschaften. 
   
@@ -129,7 +129,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > Der Eigenschaftentyp ist nicht vom Anrufer erwartet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIProp::CopyProps** -Methode kopiert oder verschiebt ausgewählte Eigenschaften aus dem aktuellen Objekt in ein Zielobjekt. **CopyProps** dient hauptsächlich zum Beantworten und Weiterleiten von Nachrichten, wobei nur einige der Eigenschaften aus der ursprünglichen Nachricht mit der Antwort Reisen oder Kopie weitergeleitet. 
   

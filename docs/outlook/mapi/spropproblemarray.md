@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3fbaa77a-be43-4fce-af67-1826ee101799
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3fd61828cd631c4abc0131da867ca213a3c44d20
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e71658922b6cb80dadc7e034a51c10189c4207ed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795620"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568497"
 ---
 # <a name="spropproblemarray"></a>SPropProblemArray
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Array von Strukturen für eine oder mehrere [SPropProblem](spropproblem.md) . 
   
@@ -51,7 +51,7 @@ typedef struct _SPropProblemArray
   
 > Array von **SPropProblem** -Strukturen, jeder, einen Eigenschaftsfehler beschreibt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen zur Funktionsweise von der Strukturen **SPropProblem** und **SPropProblemArray** mit Fehlern im Zusammenhang mit Eigenschaften finden Sie unter [MAPI-Eigenschaften mit dem Namen](mapi-named-properties.md). 
   

@@ -11,17 +11,17 @@ api_type:
 - COM
 ms.assetid: 8660c701-f7f4-8d92-7984-5dae7f677783
 description: 'Zuletzt geändert: 20 September 2017'
-ms.openlocfilehash: b59114926d44ba613efbbde1c8dd5d17c26756c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bcbc3d21a03c1585288ad23b1fb2d311d686f55c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792030"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570450"
 ---
 # <a name="iconvertersessionmapitomimestm"></a>IConverterSession::MAPIToMIMEStm
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konvertiert eine MAPI-Nachricht in einen MIME-Stream.
   
@@ -93,7 +93,7 @@ E_INVALIDARG
   
 > Ungültige Flags übergeben wurden, oder *Pmsg* oder *Pstm* ist NULL. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nur für Outlook-Nachricht Standardtypen unterstützt.
   

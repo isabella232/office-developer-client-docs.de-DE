@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4fb7d91d-4c51-41c1-9cb6-7b837dd12f11
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 188424fc67534ea5df6ed5eb209909731e12c73c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: be033af220135175003a6304c5429a5bdee6658e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793786"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566523"
 ---
 # <a name="pidlidsharinginitiatorsmtp-canonical-property"></a>PidLidSharingInitiatorSmtp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die SMTP-Adresse des Benutzers, der die Freigabenachricht initiiert hat. Dies ist eine Eigenschaft eines eine Freigabenachricht. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSharingInitiatorSmtp  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSharingInitiatorSmtp  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Sharing  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008A08  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf den Wert der Eigenschaft **PR_SMTP_ADDRESS** ([PidTagSmtpAddress](pidtagsmtpaddress-canonical-property.md)) aus dem Adressbuch identifiziert durch die **DispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md))-Eigenschaft festgelegt und werden sollten ignoriert.
   

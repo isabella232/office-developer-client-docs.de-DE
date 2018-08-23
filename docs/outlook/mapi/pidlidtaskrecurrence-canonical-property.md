@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e675bfdd-7598-45f3-a5aa-23b4734670dc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 29b35250a3cbbee876338ca2366726b2dd14f957
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dc164b4117099d9cef0602471af29ad4dbca9d06
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793859"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571136"
 ---
 # <a name="pidlidtaskrecurrence-canonical-property"></a>PidLidTaskRecurrence (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine RecurrencePattern-Struktur, die Informationen zu wiederkehrende Aufgaben enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskRecur  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskRecur  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008116  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Informationen zum Erstellen und Angeben einer RecurrencePattern-Struktur finden Sie unter [einfache Aufgabe Serienelements erstellen](how-to-create-a-simple-recurrent-task-item.md).
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a97993c2-52e4-4b71-ac03-2c02d82447d8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 301ebbf8e7a3e2a2deb303af5b198fd11511d495
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d5f4be5a8593cfc483dfed1cffbb59f596e2e408
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795649"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567650"
 ---
 # <a name="supporting-formatted-text-message-store-responsibilities"></a>Unterstützung von formatiertem Text: Aufgaben des Nachrichtenspeichers
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Speicheranbieter verwenden Sie die Eigenschaft **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md)) um zu veröffentlichen, und zwar unabhängig davon, ob sie HTML-Text: Rich Text Format (RTF) verarbeitet werden können und, falls sie RTF-fähigen sind, ob das Speichern von formatierten Texts in ein komprimierte oder nicht komprimierten Format. Nachricht Anbieter anzugeben, dass sie RTF-fähigen sind, indem Sie die STORE_RTF_OK Bit und sie den formatierten Text in einen nicht komprimierten Format speichern, indem Sie das STORE_UNCOMPRESSED_RTF Bit. Nachricht Anbieter geben Sie an, dass sie HTML-fähigen sind, indem Sie die STORE_HTML_OK Bit.
   

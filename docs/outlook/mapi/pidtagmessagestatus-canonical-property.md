@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e479e863-a8de-4f7e-9eae-3f721cd16e9a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 21336e158d21bba6c7204eb446df3efc80b70e46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 626bd945851155c20850ee7f367ec6073ad57bc1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794622"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570387"
 ---
 # <a name="pidtagmessagestatus-canonical-property"></a>PidTagMessageStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine 32-Bit-Bitmaske aus Flags, die den Status einer Nachricht in einer Inhaltstabelle definiert. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MSG_STATUS  <br/> |
-|Bezeichner:  <br/> |0x0E17  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MSG_STATUS  <br/> |
+|Kennung:  <br/> |0x0E17  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Nachricht kann in einer Inhaltstabelle und in eine oder mehrere Suchergebnisse Tabellen vorhanden sein, und jede Instanz der Nachricht kann einen anderen Status aufweisen. Diese Eigenschaft sollten keine-Eigenschaft für eine Nachricht aber eine Spalte in einer Inhaltstabelle berücksichtigt werden. 
   

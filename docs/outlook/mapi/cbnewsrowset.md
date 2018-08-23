@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3b8b8d9f-33e1-45c3-b024-9afcaab8839c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dd828f599d87e3912bf36c46aaee2703a4e2673a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f31bccb9c975bbbccb079e40526f6c16eda37474
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791402"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571633"
 ---
 # <a name="cbnewsrowset"></a>CbNewSRowSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes, die für eine neue [SRowSet](srowset.md) Struktur zugeordnet werden, die eine angegebene Anzahl von Zeilen dargestellt durch [SRow](srow.md) Strukturen enthält. 
   

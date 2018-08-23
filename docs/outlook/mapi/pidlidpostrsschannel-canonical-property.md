@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 249966ee-0d00-4d2d-89b0-fb7525a89735
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d159b569fba4ec413727b22b32175ccdc9d7b0a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: db72ce6f030b289dd32c7ec8e78d8eac3a57faaf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793699"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570898"
 ---
 # <a name="pidlidpostrsschannel-canonical-property"></a>PidLidPostRssChannel (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Inhalt der \<Titel\> Feld aus der XML-Code, der das Atom \<feed\> oder RSS- \<Channel\>.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidPostRssChannel  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidPostRssChannel  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_PostRss  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008904  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

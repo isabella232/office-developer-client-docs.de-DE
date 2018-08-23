@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e0222afa-c148-4735-a603-cac7be6c91f9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8d7e6dfbf9e6a751845adb2319b66462bcde651f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e740e86fc25307457119aabf6e2aa0c42a9d69b9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792095"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568224"
 ---
 # <a name="imapifoldercreatemessage"></a>IMAPIFolder::CreateMessage
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine neue Nachricht an.
   
@@ -67,7 +67,7 @@ S_OK
   
 > Die Nachricht wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::CreateMessage** -Methode erstellt eine neue Nachricht mit generischen oder zugehörigen Inhalte und weist einen Eintrag Bezeichner. Die Eintrags-ID besteht aus einer, die den Nachricht Speicheranbieter darstellt und einen Teil, der die einzelne Nachricht darstellt. 
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 33747835-6eeb-4e07-8f92-3cfa81eecd0f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 94fea23f71e6bc29b038db38f6f06cda0f85d635
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6350202eb22edc478f7738bebf6d7f0bc4684ee0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793038"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566243"
 ---
 # <a name="mapi-object-containment-hierarchy"></a>MAPI-Objekt Kapselungshierarchie
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Eingrenzung Beziehung zwischen Objekten gibt die Abhängigkeiten, die einige Objekte auf andere Objekte für den Zugriff haben. Für eine Clientanwendung ermöglicht den Zugriff auf bestimmte Objekte Zugriff auf andere. In einigen Fällen folgt die Eingrenzung Beziehung zwischen Objekten, die von einem Dienstanbieter implementiert eine logische Hierarchie. In anderen Fällen ist es frei wählbar. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8b8c8484-0cb4-4842-8b11-de42d97e0140
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8777b2119e6beefc4d69dc0babfc8672df3a468b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4b26266e58a201b13aa178534039c9e07c900de0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793353"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569498"
 ---
 # <a name="pidlidappointmentmessageclass-canonical-property"></a>PidLidAppointmentMessageClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Eigenschaft **PR_MESSAGE_CLASS** ([PidTagMessageClass](pidtagmessageclass-canonical-property.md)) der Besprechung, die aus der Besprechungsanfrage generiert werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptMessageClass  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptMessageClass  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0 x 00000024  <br/> |
 |Datentyp:  <br/> |PT_TSTRING  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss entweder "IPM. Termin"oder"IPM vorangestellt werden. Termin. ". Diese Eigenschaft ist nicht erforderlich.
   

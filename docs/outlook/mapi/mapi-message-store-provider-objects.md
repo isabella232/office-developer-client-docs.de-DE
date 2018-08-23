@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 87a452e6-dedf-414d-b7cf-07c8b02dd94a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f5bdf4a4cbf67aa9524819ffe4eee14b62714632
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d2df6dcb2e20cf1750d78f2e0b3200026b51f712
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793019"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567426"
 ---
 # <a name="mapi-message-store-provider-objects"></a>MAPI-Message-Speicher-Anbieter-Objekte
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Anbieter implementieren Anbieter und Logon-Objekten, wie alle-Dienstanbieter. Sie implementieren Sie ein Meldungsobjekt Store, Ordner, Nachrichten, Anlagen und Tabellen. Als Option implementieren einige Anbieter Nachricht Status-Objekten.
   

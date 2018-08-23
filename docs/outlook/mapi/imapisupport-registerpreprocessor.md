@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9b5659ab-2b49-41ab-92ce-ca343e35d670
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 219c15fc00490983e970e4533f927cf4d91916b6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 87f5e3f159542359f614a6ab698e6f06a2faf41a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792412"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567916"
 ---
 # <a name="imapisupportregisterpreprocessor"></a>IMAPISupport::RegisterPreprocessor
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert einen Adressbuchhierarchie Präprozessor-Funktion (eine Funktion, die den [PreprocessMessage](preprocessmessage.md) Prototyp entspricht). 
   
@@ -70,7 +70,7 @@ S_OK
   
 > Die Präprozessor-Funktion wurde erfolgreich registriert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::RegisterPreprocessor** -Methode wird für nur Unterstützungsobjekte der Transport-Anbieter implementiert. Transportanbieter Aufrufen **RegisterPreprocessor** zum Registrieren einer Präprozessor-Funktion (eine Funktion, die den [PreprocessMessage](preprocessmessage.md) Prototyp entspricht). Eine Funktion Präprozessor muss registriert werden, bevor die MAPI-Warteschlange aufgerufen werden kann. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 701fca52-0f96-4019-80cd-c0ccd059ff9b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6828a6436946de27020fa1177223955e07a08faf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3899f7000bfa1365228864d97b4410833b774bed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794130"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570784"
 ---
 # <a name="pidtagattachtransportname-canonical-property"></a>PidTagAttachTransportName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen einer Anlage-Datei geändert, sodass es TNEF-Nachrichten zugeordnet werden kann. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_TRANSPORT_NAME, PR_ATTACH_TRANSPORT_NAME_A, PR_ATTACH_TRANSPORT_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x370C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_TRANSPORT_NAME, PR_ATTACH_TRANSPORT_NAME_A, PR_ATTACH_TRANSPORT_NAME_W  <br/> |
+|Kennung:  <br/> |0x370C  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 TNEF und der Adressbuchhierarchie verwenden diese Eigenschaften. Sie sind in der Regel nicht Clientanwendungen zur Verfügung. 
   

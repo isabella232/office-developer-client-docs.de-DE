@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01fa459f-597d-4b16-b340-a79fb270cd71
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8c246968dcac719a8ee8177e20e802f9c7033435
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9f37e57f997ead58b1ef0e9a27ccbdb0a810be06
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793324"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571955"
 ---
 # <a name="openstreamonfile"></a>OpenStreamOnFile
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Reserviert und initialisiert ein OLE- **IStream** -Objekt Zugriff auf den Inhalt einer Datei. Diese Funktion übernimmt eine ANSI-Zeichenfolge als der Dateinamen einschließlich der Pfad und der Dateierweiterung, daher Verwendung der Unicode-Version dieser Funktion, [OpenStreamOnFileW](openstreamonfilew.md), wird empfohlen.
   
@@ -104,7 +104,7 @@ MAPI_E_NOT_FOUND
   
 > Die angegebene Datei ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **OpenStreamOnFile nicht ausgeführt werden** -Funktion weist zwei wichtige verwendet, durch die Einstellung des Flags SOF_UNIQUEFILENAME unterschieden. Wenn dieses Flag nicht festgelegt ist, wird **OpenStreamOnFile nicht ausgeführt werden** **IStream** -Objekts auf eine vorhandene Datei, um den Inhalt der **PR_ATTACH_DATA_BIN** ([PidTagAttachDataBinary](pidtagattachdatabinary-canonical-property.md))-Eigenschaft einer Anlage, die mit der **IStream kopieren beispielsweise geöffnet. :: CopyTo** Methode. In diesem Fall gibt der Parameter _LpszFileName_ den Pfad und Dateinamen der Datei an. 
   

@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 5f5e2288-7539-41b8-916d-410be028ed9b
 description: ''
-ms.openlocfilehash: 92ef2c084409dbe017951ff7dfdbf93839ff4b51
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ba3c03069235b1054dabd122471be996ec515772
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797169"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567846"
 ---
 # <a name="manipulate-the-visio-file-format-programmatically"></a>Programmgesteuertes Bearbeiten des Visio-Dateiformats
 
@@ -220,7 +220,7 @@ Verwenden Sie den folgenden Code, um den vollständigen Pfad für die Datei "Vis
 ## <a name="select-and-read-package-parts-from-a-package"></a>Auswählen und Lesen von Paketteilen aus einem Paket
 <a name="vis15_ManipulateFF_SelectPart"> </a>
 
-Sobald Sie die Visio 2013-Datei als Paket geöffnet haben, können Sie die Dokumentteile darin enthaltenen unter Verwendung der in den **System.IO.Packaging** -Namespace enthalten [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx) -Klasse zugreifen. **PackagePart** -Objekte können einzeln oder als Sammlung instanziiert werden. Die **Paket** -Klasse stellt eine [GetParts()](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) -Methode und eine [GetPart(Uri)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) -Methode zum Abrufen von **PackagePart** -Objekte aus dem **Paket**. Die **Package.GetParts** -Methode wird eine Instanz der [PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) -Klasse, die Sie dann wie jede andere Auflistung interagieren können, die implementiert die [IEnumerator\<T\> ](https://msdn.microsoft.com/library/System.Collections.Generic.IEnumerator`1.aspx) Schnittstelle. 
+Sobald Sie die Visio 2013-Datei als Paket geöffnet haben, können Sie die Dokumentteile darin enthaltenen unter Verwendung der in den **System.IO.Packaging** -Namespace enthalten [PackagePart](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePart.aspx) -Klasse zugreifen. **PackagePart** -Objekte können einzeln oder als Sammlung instanziiert werden. Die **Paket** -Klasse stellt eine [GetParts()](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetParts.aspx) -Methode und eine [GetPart(Uri)](https://msdn.microsoft.com/library/System.IO.Packaging.Package.GetPart.aspx) -Methode zum Abrufen von **PackagePart** -Objekte aus dem **Paket**. Die **Package.GetParts** -Methode wird eine Instanz der [PackagePartCollection](https://msdn.microsoft.com/library/System.IO.Packaging.PackagePartCollection.aspx) -Klasse, die Sie dann wie jede andere Auflistung interagieren können, die implementiert die [IEnumerator\<T\> ](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerator-1?redirectedfrom=MSDN&view=netframework-4.7.2) Schnittstelle. 
   
 Verwenden Sie den Code in dem folgenden Verfahren, um ein **PackagePartCollection**-Objekt aus der **Package** als Sammlung abzurufen, durchlaufen Sie die **PackagePart**-Objekte in der Sammlung, und schreiben Sie den URI und Inhaltstyp von allen **PackagePart** in die Konsole. 
   

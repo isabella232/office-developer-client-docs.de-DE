@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f253378-0a2d-47e3-82d3-8055b5f776dd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2f1f86f72231ae39a70977742481cb435da9d923
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9cb149f2ba8c6cd328fcffb00172a1f3f904a24e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795098"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572333"
 ---
 # <a name="pidtagscheduleinforesourcetype-canonical-property"></a>PidTagScheduleInfoResourceType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der auf 0 (null) festgelegt werden muss.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_RESOURCE_TYPE  <br/> |
-|Bezeichner:  <br/> |0x6841  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_RESOURCE_TYPE  <br/> |
+|Kennung:  <br/> |0x6841  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss festgelegt werden, auf Null (0), wenn gesendet und Erhalt ignoriert.
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e618213a-fad1-4559-a1df-5cdf4ea1637b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 75c12e4df591170337ffa8b44e5520996c935f9f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 21c8e3822da124a2aa4d2f7ff33055307e711734
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793498"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570555"
 ---
 # <a name="pidlidemail1originalentryid-canonical-property"></a>PidLidEmail1OriginalEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die **EntryId** des Objekts, das die erste e-Mail-Adresse entspricht. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail1OriginalEntryID  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail1OriginalEntryID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008085  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss entweder eine einmalige **EntryId** für dieses e-Mail-Adresse oder ein gültiges Adressbuch Objekt **EntryId**.
   

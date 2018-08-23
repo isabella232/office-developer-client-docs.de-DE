@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 49567a8d-b58d-4636-bead-a1f84b4f111d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ee60e64559a0b4163074ddb62ed72c4600c8e03d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dba7bd1fb7b0ca9bc23dbc45e07f44d0cc0dc8fe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791568"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568140"
 ---
 # <a name="displaying-table-rows-and-columns"></a>Anzeigen von Tabellenzeilen und-spalten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  Eine Eigenschaftenseite kann durch Benutzer neue e-Mail-Empfängern definieren vom Adressbuch-Dienstanbieter verwendet werden. 
   

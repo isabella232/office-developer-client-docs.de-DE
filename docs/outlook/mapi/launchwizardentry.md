@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5778dffa-f01b-46b3-9c19-862793740918
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d80671331c2760c574ab32d79115a352ee4bcf25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f2cc9a6f97fa51a255f8c24c2bb52c912aef7718
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792911"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566250"
 ---
 # <a name="launchwizardentry"></a>LAUNCHWIZARDENTRY
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Funktion, die die Anwendung-Profil-Assistent zum Hinzufügen von mindestens eine Nachricht-Diensten zu einem Profil gestartet wird. 
   
@@ -95,7 +95,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs. Mögliche Werte Fehler beim Initialisieren des MAPI-Subsystems für den Benutzerprofildienst-Assistenten eingeschlossen, der Fehler beim Zugriff auf das Standardprofil und einen Fehler zurück, aus dem Dialogfeld.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Implementierung der Funktion **LAUNCHWIZARDENTRY** Prototyp ist der Einstiegspunkt in die Anwendung MAPI-Profil-Assistent. Den Namen dieser Einstiegspunkt **LaunchWizard**MAPI. 
   

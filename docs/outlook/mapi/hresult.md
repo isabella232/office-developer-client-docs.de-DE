@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b248ed11-3d8a-4d4c-9b84-fa5bee7979c7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5bacf3c73ba7f9a7720586c77ee520d289c40e11
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a3e46732f9b74b9cdf2dc4c961e7b6b66e3d91d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791905"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565228"
 ---
 # <a name="hresult"></a>HRESULT
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein 32-Bit-Wert, der verwendet wird, um einen Fehler oder eine Warnung zu beschreiben.
   
@@ -31,7 +31,7 @@ Ein 32-Bit-Wert, der verwendet wird, um einen Fehler oder eine Warnung zu beschr
 typedef LONG HRESULT;
 ```
 
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der **HRESULT** -Datentyp ist identisch mit der [SCODE](scode.md) -Datentyp. 
   

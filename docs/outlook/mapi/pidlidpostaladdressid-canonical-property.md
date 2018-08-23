@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30fdfb20-1e12-442a-bfa0-8c18c15fa5c3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6b344986989a47c4f1159fcf50c1d067ae716e98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 32dddc77eee2e16dddb57f29bdb836d5962e29d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793728"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567454"
 ---
 # <a name="pidlidpostaladdressid-canonical-property"></a>PidLidPostalAddressId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welche physische Adresse des Kontakts die e-Mail-Adresse ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidPostalAddressId  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidPostalAddressId  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008022  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn dieser Parameter angegeben wurde, muss diese Eigenschaft einen der Werte haben, die in der folgenden Tabelle oder in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sind. Wenn dies nicht festgelegt ist, die Anwendung sollte wird davon ausgegangen, dass der Wert "0 x 00000000" ist.
   

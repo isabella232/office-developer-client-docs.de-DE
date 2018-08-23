@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 69be9ad3-006a-459e-9cd4-eb3f609d71ad
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dae917b3e536aee5f24879edc3ccf0736e7c9f34
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 875b37183134a6c5beca76ab7910cf601d1b6175
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794976"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567503"
 ---
 # <a name="pidtagresourceflags-canonical-property"></a>PidTagResourceFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske aus Flags für die Message-Dienste und -Anbieter.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RESOURCE_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x3009  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RESOURCE_FLAGS  <br/> |
+|Kennung:  <br/> |0x3009  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft beschreibt die Merkmale eines Diensts Nachricht, einem Dienstanbieter oder Status-Objekts. Die Kennzeichen, die für diese Eigenschaft festgelegt sind, hängt von dessen Kontext ab. Beispielsweise sind einige Kennzeichen gilt nur für Objekte der Status und anderen Flags nur für Spalten in der Tabelle der Dienste. 
   

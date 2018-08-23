@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: d57ce5c8-1f60-4709-b86a-4468c4208dfe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7fdb8781c39d7814ff2c38ff4df4545511d28a5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6e856cc8dc131c1b6266181a954a8da9cfb1d1ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795001"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566103"
 ---
 # <a name="pidtagrowtype-canonical-property"></a>PidTagRowType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der den Typ einer Zeile in einer Tabelle angibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROW_TYPE  <br/> |
-|Bezeichner:  <br/> |0x0FF5  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROW_TYPE  <br/> |
+|Kennung:  <br/> |0x0FF5  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird nur für Tabellen Inhalt angezeigt. Eine Kategorie ist nur vorhanden, wenn er Elemente verfügt.
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 28efecc4-b4a0-4e0b-bad6-a9005c8e5ddb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: de1755b1bf0ad01f48baea178280d7df3a5f8c17
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 06c6ca9207e9c8832f79b4532db4e3c1f5dcaeb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793511"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566089"
 ---
 # <a name="pidlidemail2addresstype-canonical-property"></a>PidLidEmail2AddressType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Adresstyp für den zweiten e-Mail-Adresse.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail2AddrType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail2AddrType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008092  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Falls vorhanden, muss Wert dieser Eigenschaft eine gültige Adresse.
   

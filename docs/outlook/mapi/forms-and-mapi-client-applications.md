@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 658ebb86-e9f4-44d8-a5f1-6f66eaf75dd6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f1256616eb73fae5f644e7e79a1b3c3350fa5727
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1357482b372e83be4aab1f77037908cafc0b3f05
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791730"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569211"
 ---
 # <a name="forms-and-mapi-client-applications"></a>Formulare und MAPI-Clientanwendungen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Da alle MAPI-Nachrichten werden Instanzen des Forms sind, Clientanwendungen anzeigen und interagieren mit Objekten Weise mit anderen Objekten Nachricht.
   

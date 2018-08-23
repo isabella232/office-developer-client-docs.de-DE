@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 829cc757-c5e3-40ed-846e-2dcaf9e13b92
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4a027e0ac586834242dc6e06d80a9d8936dbfd53
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 77393be40db939088b775095cd38f254fb7406df
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793717"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570401"
 ---
 # <a name="pidlidprivate-canonical-property"></a>PidLidPrivate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob der Endbenutzer dieses Objekt "Message möchte" andere Benutzer mit Zugriff auf das Objekt "Message" ausgeblendet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidPrivate  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidPrivate  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008506  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

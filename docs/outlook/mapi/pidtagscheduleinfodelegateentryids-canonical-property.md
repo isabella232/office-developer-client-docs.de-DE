@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: c178a4e4-6f4c-409c-9db3-f6338bd4f40f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8ea60fb989cd85b23e6dd9302bc03a9b5befd20f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f7521d387fa45c191a67f2a20320fac700baed37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795076"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567216"
 ---
 # <a name="pidtagscheduleinfodelegateentryids-canonical-property"></a>PidTagScheduleInfoDelegateEntryIds (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den **EntryIDs** Stellvertretungen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_DELEGATE_ENTRYIDS  <br/> |
-|Bezeichner:  <br/> |0x6845  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_DELEGATE_ENTRYIDS  <br/> |
+|Kennung:  <br/> |0x6845  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jeder Eintrag muss den Wert der Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) der einzelnen Delegaten Adresseintrag Adressbuch enthalten. Diese Eigenschaft muss im Delegaten Informationen-Objekt festgelegt werden.
   

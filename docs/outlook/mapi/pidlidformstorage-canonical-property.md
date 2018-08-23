@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4f6847f3-157d-4ff0-abab-90d73a893ecf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c28902f142e06970feeaef4233ee32bfa4d0ee74
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f700b1294ff08ab514d6a97386b5d40fbee0a75c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793609"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570744"
 ---
 # <a name="pidlidformstorage-canonical-property"></a>PidLidFormStorage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt die Eigenschaften des Formulars, das die Nachricht zugeordnet ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFormStorage  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFormStorage  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000850F  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |

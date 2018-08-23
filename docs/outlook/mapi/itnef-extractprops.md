@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9169a5be-21dd-4938-8db3-522bea165c92
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 26949f10e22c4d2ea49594ee3365ae7d3bb3662d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0765e46a6f0545682b16e484d08d296ea13e2136
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792870"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571346"
 ---
 # <a name="itnefextractprops"></a>ITnef::ExtractProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Extrahiert die Eigenschaften von TNEF-Kapselung. 
   
@@ -67,7 +67,7 @@ MAPI_E_CORRUPT_DATA
   
 > In einem Stream decodierte Daten ist beschädigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Transport-Provider, Anbieter Nachricht und Gateways rufen die **ITnef::ExtractProps** -Methode zum Extrahieren von (das Decodieren ist,) Eigenschaften aus der Kapselung einer Nachricht oder einer Anlage, die an die Funktion [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) übergeben wurde. Die aufrufende Anbieter oder Gateway kann eine Liste der Eigenschaften zum Decodieren angeben. Anbieter und Gateways können **ExtractProps** auch Informationen zur keine besondere Behandlung für Anlagen aktualisiert. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2e5ec914-7171-41ce-a6fe-78dd80ac32ff
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fb543f4188578483333614cb5768f903c9f243d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 992d51526c45334f6db3738e36994f4bb9c07c6e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792524"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572256"
 ---
 # <a name="imapiviewcontextgetviewstatus"></a>IMAPIViewContext::GetViewStatus
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft den aktuellen Status der Viewer ab. 
   
@@ -77,7 +77,7 @@ S_OK
   
 > Der Zeichnungsanzeige Status wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular-Objekte aufrufen, die **IMAPIViewContext::GetViewStatus** -Methode, um zu bestimmen, ob es sind weitere Nachrichten an, die in einer Ansicht des Formulars in einem aktiviert werden, oder beide Richtungen d. h., in die Richtung, in dem ein Befehl **Weiter** aktiviert, Nachrichten in der Richtung, in dem ein **Vorherige** Befehl Nachrichten, aktiviert, oder in beide Richtungen. Der Wert, der auf den durch den Parameter _LpulStatus_ wird verwendet, um festzustellen, ob die Flags VCSTATUS_NEXT und VCSTATUS_PREV für [IMAPIViewContext::ActivateNext](imapiviewcontext-activatenext.md)gültig sind. Wenn das Flag VCSTATUS_DELETE Set, aber nicht das Flag VCSTATUS_READONLY ist, kann die Nachricht mit der [IMAPIMessageSite::DeleteMessage](imapimessagesite-deletemessage.md) -Methode gelöscht werden. 
   

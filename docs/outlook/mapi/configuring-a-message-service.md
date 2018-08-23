@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d68892e3-7c87-4b3a-a691-bff92f83ed00
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd87d169cd5131c6e1c8ca45a35dded96a295c57
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2b170037bc51a7848154c12acbfe700a0142ef8f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791418"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564108"
 ---
 # <a name="configuring-a-message-service"></a>Konfigurieren eines Nachrichtendiensts
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  **So konfigurieren Sie die-Dienstanbieter in einem Message-Dienst**
   

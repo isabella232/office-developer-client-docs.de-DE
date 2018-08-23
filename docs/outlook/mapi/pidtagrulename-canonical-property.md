@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: eb326037-bc44-4b04-812c-7d1adf854cc9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 94373a412f20040a79b90219b1fb4949cfdf2299
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 31d5d15c8ccda81fb41a87d285f8f1df70e2253b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795043"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566488"
 ---
 # <a name="pidtagrulename-canonical-property"></a>PidTagRuleName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Benutzer lesbaren Namen der Regel.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_NAME  <br/> |
-|Bezeichner:  <br/> |0x6682  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_NAME  <br/> |
+|Kennung:  <br/> |0x6682  <br/> |
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    

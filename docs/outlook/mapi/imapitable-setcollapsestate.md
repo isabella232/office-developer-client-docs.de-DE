@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 31325e8f-1cf9-49b2-8118-953996b0037f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 252b6d6c7ff74acd5f0b288af48ff2901c2330ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 51c239897e5e225a0765f78404526e2836371f30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792487"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567902"
 ---
 # <a name="imapitablesetcollapsestate"></a>IMAPITable::SetCollapseState
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt den aktuellen erweiterten oder reduzierten den Status einer kategorisierten Tabelle mit Daten, die durch einen vorherigen Aufruf der [IMAPITable::GetCollapseState](imapitable-getcollapsestate.md) -Methode gespeichert wurde neu. 
   
@@ -68,7 +68,7 @@ MAPI_E_UNABLE_TO_COMPLETE
   
 > Die Tabelle konnte nicht fertig gestellt Neuerstellen der Ansicht reduzierten oder erweiterten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::SetCollapseState** -Methode wird den Zustand erweiterten oder reduzierten die Tabellenansicht. **SetCollapseState** und **GetCollapseState** arbeiten wie folgt zusammen: 
   

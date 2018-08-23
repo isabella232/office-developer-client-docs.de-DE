@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a79a139a-6813-49f6-b622-bb66d62c4462
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b2ac7aa4fca8583fc59d727c55433108bee62dee
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1c2089eee731fea8c80d8811f6b2e9f3c75ad1cd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794431"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570527"
 ---
 # <a name="pidtaggender-canonical-property"></a>PidTagGender (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das Geschlecht der messaging-Benutzer enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_GENDER  <br/> |
-|Bezeichner:  <br/> |0x3A4D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_GENDER  <br/> |
+|Kennung:  <br/> |0x3A4D  <br/> |
 |Datentyp:  <br/> |PT_I2  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bietet Identifikations- und Zugriff auf Informationen über ein messaging-Benutzer und der Inhalt ist. Der Inhalt wird durch die messaging-Benutzer und Organisation messaging-Benutzer definiert. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a4c71b08-c47a-4421-8603-d5356d32dca9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4d55404149baca07a64b75d460bdfb2a8c541725
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 489a5888014fa9299b407ebf91759627427b69bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792559"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571388"
 ---
 # <a name="implementing-name-resolution"></a>Implementieren der Namensauflösung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Von adressbuchanbietern implementierte sind verantwortlich für die Unterstützung von namensauflösung – der Vorgang der Zuordnung eines Eintrags-ID mit dem Anzeigenamen. Clients initiieren namensauflösung beim Aufruf [IAddrBook::ResolveName](iaddrbook-resolvename.md) , um sicherzustellen, dass jedes Mitglied eine ausgehende Nachricht Empfängerliste in eine gültige Adresse entspricht. 
   

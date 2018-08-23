@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 47c9ccbb-161c-4829-8ffb-201f3b54cd45
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: eb97d278640b4cdd2b14152bf4745f883fe2edba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 94ec76d3247421f163775245c43ee68e6f9b560b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793827"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569085"
 ---
 # <a name="pidlidtaskfrecurring-canonical-property"></a>PidLidTaskFRecurring (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob der Vorgang ein Serienmuster enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskFRecur  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskFRecur  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008126  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie diese Eigenschaft nicht festgelegt lassen, wird der Standardwert FALSE angenommen. Wenn sie auf true festgelegt ist, die **DispidTaskRecur** ([PidLidTaskRecurrence](pidlidtaskrecurrence-canonical-property.md)) festgelegt ist und **DispidTaskDeadOccur** ([PidLidTaskDeadOccurrence](pidlidtaskdeadoccurrence-canonical-property.md)) Eigenschaften auch als festgelegt werden müssen, die in [[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)angegeben werden.
   

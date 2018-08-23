@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 88a910ed-b55a-4e5b-a43d-eb3ea795a70e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bbd52116a108be12df7697f45df41b03adeba68e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2dadad410b9aaf1401d792de373e561c29183a12
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792256"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567237"
 ---
 # <a name="imapiprogressgetmax"></a>IMAPIProgress::GetMax
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die maximale Anzahl von Elementen in den Vorgang für den Fortschritt Informationen angezeigt werden.
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die maximale Anzahl von Elementen in der Vorgang wurde abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der maximale Wert stellt das Ende des Vorgangs in numerische Form dar. Der Wert kann einen globalen Höchstwert zur Darstellung des Bereichs der gesamte Fortschrittsanzeige oder ein lokaler Wert, der zum Darstellen eines Teils der Anzeige sein. 
   
@@ -78,7 +78,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md)
   

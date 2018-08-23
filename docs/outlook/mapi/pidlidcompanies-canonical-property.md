@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 987b680a-4b9d-47f1-8ae4-9b7ae556ccf0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: de953cea5c394fa489a013a87575906f1ce09adc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f35a2d2cb6fca125abbb4269cba0a9812d61169c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793489"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569883"
 ---
 # <a name="pidlidcompanies-canonical-property"></a>PidLidCompanies (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Namen der Unternehmen, die einem Element zugeordnet sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidCompanies  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidCompanies  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008539  <br/> |
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |

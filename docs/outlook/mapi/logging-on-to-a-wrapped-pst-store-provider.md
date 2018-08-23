@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 364bc5fd-2199-0bb2-142b-9b3b686b2268
 description: 'Zuletzt geändert: 02 Juli 2012'
-ms.openlocfilehash: 2dfa3820d8d2ab57f278e90bef5d5a40164da6fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0716017788239c22f31007438089118d109010a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19792893"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570478"
 ---
 # <a name="logging-on-to-a-wrapped-pst-store-provider"></a>Anmelden bei einem gepackten PST-Anbieter
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bevor Sie zu einem gepackten PST-Speicher-Anbieter auf MAPI anmelden können, müssen Sie initialisieren und konfigurieren den gepackten Anbieter für Persönliche Ordner-Datei (PST) anmelden. Weitere Informationen finden Sie unter [einem umfließendem PST-Anbieter zu initialisieren](initializing-a-wrapped-pst-store-provider.md).
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 08cc60d4-cac8-4ba5-bd7f-a56e63697be3
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4430b52b470b89bd7d81922b98b121b3a455768f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0ba9958588c476ae330b0f4a413361e80d54667a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792550"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571969"
 ---
 # <a name="implementing-advanced-searching"></a>Implementieren der erweiterten Suche
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einige Address Book Container unterstützt eine erweiterte Suchfunktionen, mit der Clients auf andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) durchsuchen kann. Zur Unterstützung der erweiterten Suche muss vom Dienstanbieter ein speziellen Containers implementieren, das über die **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md))-Eigenschaft des Ihrer andere Container zugegriffen werden kann. **PR_SEARCH** enthält ein Container-Objekt, das Zugriff auf eine Tabelle anzeigen bietet, die beschreibt das Dialogfeld zum eingeben und bearbeiten die Kriterien für die erweiterte Suche verwendet. 
   

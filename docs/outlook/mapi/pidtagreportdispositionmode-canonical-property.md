@@ -9,30 +9,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 67b3c76a-f6f7-462b-955c-dc7b53e7e7eb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bc2d577ad6c6b430c2339dfb0567ca56de0a7f8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9b16cf3b8d0281ba8995058af6b18dbe22dcf592
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794963"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566117"
 ---
 # <a name="pidtagreportdispositionmode-canonical-property"></a>PidTagReportDispositionMode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt die Disposition des Eingangs für Nachrichten, die Empfangsbestätigungen anfordern. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_MODE, PR_REPORT_DISPOSITION_MODE_A, PR_REPORT_DISPOSITION_MODE_W  <br/> |
-|Bezeichner:  <br/> |0x0081  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_MODE, PR_REPORT_DISPOSITION_MODE_A, PR_REPORT_DISPOSITION_MODE_W  <br/> |
+|Kennung:  <br/> |0x0081  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die möglichen Werte für diese Eigenschaft sind "manuell-Aktion/MDN-gesendet-automatisch" und "manuell-Aktion/MDN-gesendet-manuell".
   

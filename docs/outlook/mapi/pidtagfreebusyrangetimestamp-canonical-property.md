@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 142d955f-f92d-485a-80c9-9c72e82af0f2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 20bb23690a0d0833960ba3d1f104585c857c825b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6c7dbbaf9d3d8cc09eef8a6ac193e786092bb8cf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794415"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571451"
 ---
 # <a name="pidtagfreebusyrangetimestamp-canonical-property"></a>PidTagFreeBusyRangeTimestamp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Uhrzeit, wann die Daten veröffentlicht wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FREEBUSY_RANGE_TIMESTAMP  <br/> |
-|Bezeichner:  <br/> |0x6868  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FREEBUSY_RANGE_TIMESTAMP  <br/> |
+|Kennung:  <br/> |0x6868  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC).
   

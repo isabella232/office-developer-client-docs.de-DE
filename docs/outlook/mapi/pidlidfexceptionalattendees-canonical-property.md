@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: f1f489a3-e83a-4e96-bf9a-d98bc17d29f5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7c7f654d42df7856b0e69bf276a763ccd29d1d87
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 68ad6bd888594d09ab8e1dac050f8181341f7ee4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793584"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570781"
 ---
 # <a name="pidlidfexceptionalattendees-canonical-property"></a>PidLidFExceptionalAttendees (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob diese Eigenschaft ein wiederkehrendes Calendar-Objekt mit eine oder mehrere Ausnahmen ist und mindestens eines der Ausnahme eingebettete Nachrichten mindestens eine RecipientRow hat.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFExceptionalAttendees  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFExceptionalAttendees  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000822B  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass das Calendar-Objekt entweder keine Ausnahmen hat oder keine Ausnahme eingebettete Nachrichten RecipientRows hat.
   

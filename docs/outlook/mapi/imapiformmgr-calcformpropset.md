@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ab302bfd-5cff-49b4-b0d2-308ae5af478d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: abd2a3e2a1a810f902ad977413c89f2e8b0113a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5380b6541e609c17a9005c3390c6d5db06155306
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792162"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567244"
 ---
 # <a name="imapiformmgrcalcformpropset"></a>IMAPIFormMgr::CalcFormPropSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt ein Array von Eigenschaften, die eine Gruppe von Formularen verwendet.
   
@@ -71,7 +71,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::CalcFormPropSet** -Methode, um ein Array der Eigenschaften abzurufen, die eine Gruppe von Formularen verwendet. **CalcFormPropSet** übernimmt entweder eine Schnittmenge oder Kombination dieser Formulare-Eigenschaft festgelegt, je nachdem das Flag festlegen in der _UlFlags_ -Parameter, und es gibt eine **SMAPIFormPropArray** -Struktur, die resultierende Gruppe von enthält Eigenschaften. 
   

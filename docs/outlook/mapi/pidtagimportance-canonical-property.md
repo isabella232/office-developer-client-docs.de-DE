@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 274dd444-a863-4b53-bdbc-3763c375c43c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9f6a67dcff6c74f44bbc64ae8b95f3e0ec284a90
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 12fa3d0d1c5cc84c42049f4a208ea961f6631bcd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794475"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566208"
 ---
 # <a name="pidtagimportance-canonical-property"></a>PidTagImportance (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der den Nachrichtenabsender Opinion die Wichtigkeitsstufe einer Nachricht angibt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IMPORTANCE  <br/> |
-|Bezeichner:  <br/> |0x0017  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IMPORTANCE  <br/> |
+|Kennung:  <br/> |0x0017  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft und die **PR_PRIORITY** ([PidTagPriority](pidtagpriority-canonical-property.md))-Eigenschaft darf nicht verwechselt werden. Bedeutung der Wert für Benutzer, während der Priorität angibt, die Reihenfolge oder Geschwindigkeit, an dem die Nachricht soll, von der messaging-Systemsoftware gesendet werden, an. Höherer Priorität Gibt in der Regel höhere Kosten. Höhere Priorität ist in der Regel eine andere Darstellung von der Benutzeroberfläche zugeordnet. 
   

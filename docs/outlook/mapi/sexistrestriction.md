@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 48d5ab42-ee70-4f6e-9184-18d22b08ea1b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 62b5a42a540a4fb96761c45cd51c510f12225e9e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 218238bea277a2d57c77fcc9d71cd622f7da42fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795524"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571948"
 ---
 # <a name="sexistrestriction"></a>SExistRestriction
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine vorhanden Beschränkung der verwendet wird, um zu testen, ob eine bestimmte Eigenschaft als Spalte in der Tabelle vorhanden ist beschrieben. 
   
@@ -55,7 +55,7 @@ typedef struct _SExistRestriction
   
 > Reserviert. NULL muss sein.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Einschränkung vorhanden wird verwendet, um sinnvolle Ergebnisse für andere Arten von Einschränkungen zu gewährleisten, die Eigenschaften wie-Eigenschaft und Inhalte Einschränkungen betreffen. Wenn eine Einschränkung, die eine Eigenschaft beinhaltet [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md) übergeben wird, und die Eigenschaft ist nicht vorhanden, sind die Ergebnisse der Einschränkung nicht definiert. Durch das Erstellen einer **und** Einschränkung, die die eigenschaftseinschränkung mit einer Einschränkung vorhanden teilnimmt, kann ein Anrufer genaue Ergebnisse garantiert werden. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0d3bd58b-7100-4117-91ac-27139715c85b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7e3459c639cac449cdc03361949c9618827515b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 85cf254c9ea23ecbd6f311ba012d2e048a0b2a6b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795764"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572445"
 ---
 # <a name="types-of-restrictions"></a>Arten von Einschränkungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es gibt viele Arten von Einschränkungen, einige, den Fokus auf bestimmte Spalten. Alle Tabelle Implementierungen sind zur Unterstützung von Einschränkungen für die Spalten in der aktuellen Spalte Gruppe erwartet. Jedoch können Wert Tabelle Implementierer auch unterstützen Einschränkungen basierend auf Objekteigenschaften, die derzeit nicht in der Tabellenansicht sind.
   

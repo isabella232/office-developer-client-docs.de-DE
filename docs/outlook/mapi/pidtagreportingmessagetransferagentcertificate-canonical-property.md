@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 02e18d97-25d2-49a3-a63d-26a70895e21c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 780510b4557d62d77dcd69859492d0974af3a535
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fbadc9407a181ba58b4bcd726df05465b11dc789
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794958"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570947"
 ---
 # <a name="pidtagreportingmessagetransferagentcertificate-canonical-property"></a>PidTagReportingMessageTransferAgentCertificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Bezeichner für den Message Transfer Agent, der ein Bericht generiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORTING_MTA_CERTIFICATE  <br/> |
-|Bezeichner:  <br/> |0 x 1004  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORTING_MTA_CERTIFICATE  <br/> |
+|Kennung:  <br/> |0 x 1004  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft entspricht einem x. 400-Bericht-Message-Attribut.
   

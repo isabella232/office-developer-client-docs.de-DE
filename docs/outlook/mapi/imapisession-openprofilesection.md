@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e2757028-27e7-4fc0-9674-e8e30737ef1d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e5f329ef0d3483683d5c94ed38c6631d86e77b93
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: feb12be5cc836a0c7ff90dd5054a34d9df4b6622
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792329"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568189"
 ---
 # <a name="imapisessionopenprofilesection"></a>IMAPISession::OpenProfileSection
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Abschnitt des aktuellen Profils und gibt einen Zeiger [IProfSect](iprofsectimapiprop.md) für den weiteren Zugriff. 
   
@@ -80,7 +80,7 @@ MAPI_E_NOT_FOUND
   
 > Abschnitt angeforderten Profile ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::OpenProfileSection** -Methode öffnet eine Benutzerprofilabschnitt oder ein Objekt, das die **IProfSect** -Schnittstelle unterstützt. Profil Abschnitte dienen zum Lesen von Informationen aus und Schreiben von Informationen in das Sitzungsprofil. 
   

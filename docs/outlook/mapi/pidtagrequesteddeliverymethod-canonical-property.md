@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: cc55089b-e389-405e-8174-f5b5ec352f78
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8a2199ee2bba8b3b41af7bf26de6cdd3d8d0956e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f18d726c1b06a6fb7f79964165bbdb9074a6d4d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794983"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571367"
 ---
 # <a name="pidtagrequesteddeliverymethod-canonical-property"></a>PidTagRequestedDeliveryMethod (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält ein binäres Array der Übermittlungsmethoden (Dienstanbieter) Rangfolge des Nachrichtenabsenders einer.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REQUESTED_DELIVERY_METHOD  <br/> |
-|Bezeichner:  <br/> |0x0C18  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REQUESTED_DELIVERY_METHOD  <br/> |
+|Kennung:  <br/> |0x0C18  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die in diesem Objekt enthaltenen Arrays Eigenschaft besteht aus ASN. 1-IDs für die einzelnen-Dienstanbieter.
   

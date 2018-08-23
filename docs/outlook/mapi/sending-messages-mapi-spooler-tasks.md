@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 81c65f21-03ba-43eb-a6d4-d311e660ac5c
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ff40eddf63e67f45495e90c1a960e45b7cc6cfb0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: eef65990637d9c164ffe75f682e01ed134510e32
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795499"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570275"
 ---
 # <a name="sending-messages-mapi-spooler-tasks"></a>Senden von Nachrichten: MAPI-Warteschlange Aufgaben
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die MAPI-Warteschlange ist bei der �bertragung beteiligt, wenn der Nachrichtenspeicher mit einem Transportanbieter nicht eng verkn�pft ist, wenn den eng gekoppelten Speicher und Transport einen Empf�nger nicht verarbeiten k�nnen und die Nachricht Vorverarbeitung erforderlich ist.
   

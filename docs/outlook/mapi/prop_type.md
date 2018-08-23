@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 746d63fa-bfb7-479f-94dc-ba40011c1ec9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 91a9d15544ebc71d27c8a9a6f930f3c32ecaa4fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7bcaf230eed9cf21388b68f06ab678dc143f64ee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795307"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571822"
 ---
 # <a name="proptype"></a>PROP_TYPE
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Eigenschaftstyp von einem Tag für die angegebene Eigenschaft zurück.
   
@@ -42,7 +42,7 @@ PROP_TYPE (ulPropTag)
   
 > Eigenschafts-Tag, die den Eigenschaftentyp zurückgegeben werden soll.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Makro **PROP_TYPE** kann verwendet werden, um den Typ einer Eigenschaft ermitteln. Beispielsweise Aufruf PROP_TYPE (**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))) führt den Wert PT_BINARY zurückgegeben wird.
   

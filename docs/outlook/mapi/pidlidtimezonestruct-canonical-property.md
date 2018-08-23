@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2acf0036-2f3e-4f90-8614-7aa667860f74
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a1a96cdb3aed03b9621097f1ef858a09391c0693
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c9c55aa308072db08e6103418be01f91d0d31a82
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793869"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566313"
 ---
 # <a name="pidlidtimezonestruct-canonical-property"></a>PidLidTimeZoneStruct (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx) ist die beschreibt die Zeitzone für die Start- und Endzeit Tageszeit in einer Terminserie für einen Termin oder eine Besprechungsanfrage verwendet werden soll. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTimeZoneStruct  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTimeZoneStruct  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008233  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Microsoft Office Outlook 2003 der Start- und Endzeit der frühere Versionen von Outlook und Anwendungen, die Collaboration Data Objects (CDO) 1.21 basieren, dessen Benutzer das Tool Kalender Update von Outlook oder Exchange Server nicht ausgeführt haben, Speichern einer wiederkehrende Termin oder eine Besprechungsanfrage als relative Zeit, und speichern Sie die Zeitzone, in dem die Termin- oder Besprechungsanfragen in **DispidTimeZoneStruct**erstellt wird. Im Laufe der Zeit Zeitzonenregeln ändern können, was in einigen Termine und Besprechungen geplant wurden, bevor die Regeln geändert und falsche Zeiten auftreten, die Benutzer ignoriert dieses Schema jedoch. Verwenden den Kalender, Neuzuordnen von Tools, die von Outlook oder Exchange Server, um die Zeit solcher Termine und Besprechungsanfragen anzupassen bereitgestellt werden sollten Benutzern und Administratoren, die nicht mit Windows Vista oder besitzen keine automatische Updates aktiviert ist. Weitere Informationen zu diesen Kalender Basisadressen Tools und APIs, die einer Kalender, finden Sie unter [About Basisadressen Kalender für Sommerzeit programmgesteuert](http://msdn.microsoft.com/library/38b342d9-ab10-04b6-5490-9a45f847a60f%28Office.15%29.aspx)
   

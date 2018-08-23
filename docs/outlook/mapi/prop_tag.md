@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8c9d18c-4043-41f3-8501-8be8e3a2c9ac
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9e53c39b713aa782eb387b85667f5ded6193006f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cbead0a9953ae5106e1fcc7d07d965d4dc7bacb9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795305"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570989"
 ---
 # <a name="proptag"></a>PROP_TAG
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Eigenschaftentag erstellt durch die Kombination einer angegebenen Eigenschaftentyp und Bezeichner zurück. 
   
@@ -44,7 +44,7 @@ _ulPropID_
   
 > Der Bezeichner für die neue Eigenschaftentag.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **Eigenschaft\_TAG** Makro erstellt eine Eigenschaftentag für eine Eigenschaft vom Typ _UlPropType_ und die Kennung, die in _UlPropID_angegeben ist. Beispielsweise kann eine Eigenschaftentag für eine Eintrags-ID mit dem Makro **PROP_TAG** wie folgt erstellt werden: 
   

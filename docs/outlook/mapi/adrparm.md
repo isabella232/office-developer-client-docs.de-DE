@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 35cd57b4-9901-456c-bf06-1f84e274eb4e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ad26cb9b77404d6470f7a8d787eb85edc5cce402
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 560cae5e8a3d73d80a4907fd0fec43b389ef9fc5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "19791290"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572025"
 ---
 # <a name="adrparm"></a>ADRPARM
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt die Anzeige und das Verhalten des Dialogfelds allgemeine Adresse. 
   
@@ -160,7 +160,7 @@ DIALOG_SDI
   
 > Zeiger auf eine **SRestriction** -Struktur, die die Address Book Container beschränkt, die Adresseinträge im Dialogfeld anzuzeigende bereitstellen können. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 **ADRPARM** Strukturen werden von Clients und -Dienstanbieter verwendet, um das Aussehen und Verhalten der MAPI-allgemeine Adresse Dialogfelder zu steuern. Es gibt zwei Arten des Dialogfelds Adresse: ohne Modus und modal. Einige der Elemente in der Struktur **ADRPARM** gelten für beide Versionen des Dialogfelds, aber einige gelten nur für eine der beiden Versionen. In der folgenden Tabelle betrifft die Mitglieder einer **ADRPARM** Struktur für ihre Verwendung mit der Standarddialogfelder Adresse. 
   

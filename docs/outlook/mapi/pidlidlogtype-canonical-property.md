@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6cfcc048-03b9-4e34-bb92-480fe808e910
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b61012b2f0854808f0dbe002f6f2682f964b6b82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7e8a624090181ae35e4bf2828f72b645e5011728
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793663"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570051"
 ---
 # <a name="pidlidlogtype-canonical-property"></a>PidLidLogType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Anzeigenamen der Anwendung Journaling (beispielsweise "MSWord"), und ist in der Regel ein formfreies-Attribut einer Journal-Nachricht, in der Regel eine Zeichenfolge.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008700  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3e506b29-c7e3-40d6-a08b-22fa87088c2d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d9f69098f9c53e75dea6f485248d61d277e181c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3fbf8b423cfd4206a0143b5639c85dbcacce2fae
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791979"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570982"
 ---
 # <a name="iablogonunadvise"></a>IABLogon::Unadvise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benachrichtigungen, die zuvor mit einem Aufruf der Methode [IABLogon::Advise](iablogon-advise.md) eingerichtet wurden, werden abgebrochen. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die benachrichtigungsregistrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI-Aufrufen die **Unadvise** -Methode, um die benachrichtigungsregistrierung eines für einen Container abzubrechen messaging-Benutzer oder Verteilung List-Objekt. 
   

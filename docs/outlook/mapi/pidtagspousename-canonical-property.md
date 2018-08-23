@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43263f91-ccab-481a-8491-5189cfa1217d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c1b4aabe4f066e8fbb65cbcc5db64a050001e649
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6f41a353172f3991b6ac4a73afc062bd0741d0da
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795190"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566173"
 ---
 # <a name="pidtagspousename-canonical-property"></a>PidTagSpouseName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen des Benutzers Partner/in.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SPOUSE_NAME, PR_SPOUSE_NAME_A, PR_SPOUSE_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A48  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SPOUSE_NAME, PR_SPOUSE_NAME_A, PR_SPOUSE_NAME_W  <br/> |
+|Kennung:  <br/> |0x3A48  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

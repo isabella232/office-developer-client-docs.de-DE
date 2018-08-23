@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4838a9af-7818-49aa-ace8-cb94dda8471f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 71f802014200d4b767c346c14df53f1193d44b0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0deb1b34a437d47ab53cdb2e13cda006d9116f65
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795160"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570121"
 ---
 # <a name="pidtagserviceextrauids-canonical-property"></a>PidTagServiceExtraUids (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste von [MAPIUID](mapiuid.md) -Strukturen, die zusätzliche Profil Abschnitte für den Dienst zu identifizieren. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SERVICE_EXTRA_UIDS  <br/> |
-|Bezeichner:  <br/> |0x3D0D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SERVICE_EXTRA_UIDS  <br/> |
+|Kennung:  <br/> |0x3D0D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Neue Profil Abschnitte können für jede Nachrichtenfilter erstellt werden. Wenn die Informationen über den Dienst ist in einem anderen Profil kopiert werden, ist es wichtig, die zusätzliche Profil Abschnitte für die Filter sowie kopieren. Ein Dienstanbieter, der zusätzliche Profil Abschnitten verwendet kann die **MAPIUID** Strukturen Abschnitten Profil in **PR_SERVICE_EXTRA_UIDS**, speichern, die MAPI zum Kopieren von Informationen für den Dienst zusätzliche Nachricht ermöglicht.
   

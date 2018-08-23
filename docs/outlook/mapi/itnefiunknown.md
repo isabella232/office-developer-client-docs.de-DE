@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: eddca896-9497-4425-9904-87ef3cbae298
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e8267b254648870cea4e16b4dea0e9c92e316fb3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1803707b46b9b58e7372e7e58cc36241d0ebdb4d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792881"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571724"
 ---
 # <a name="itnef--iunknown"></a>ITnef : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Methoden zum Kapseln von MAPI-Eigenschaften, die nicht von einem messaging-System in binären Streams unterstützt werden, die Nachrichten zugeordnet werden kann. Das Format für diese Kapselung ist der Transport-Neutral Encapsulation Format (TNEF). Die Ziel-Transport-Anbieter oder MAPI-basierter Client-Anwendung können Sie dann auf Empfangen einer Nachricht, die TNEF-Anlage enthält, die Eigenschaften aus der Anlage wiederherstellen.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |TNEF.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |TNEF-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |TNEF-Objekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Transport-Provider, Anbieter Nachricht und gateways  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_ITNEF  <br/> |

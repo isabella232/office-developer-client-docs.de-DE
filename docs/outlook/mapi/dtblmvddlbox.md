@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0e6283dc-9a08-460f-9400-03f0ceb4081c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ede0a448a32565446e614fc2d14f2a72a9549dad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 910f779f3463ee5dccd052655a442ef24c2cce58
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791613"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570681"
 ---
 # <a name="dtblmvddlbox"></a>DTBLMVDDLBOX
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt ein Dropdown-Listenfeld, die in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird.
   
@@ -50,7 +50,7 @@ typedef struct _DTBLMVDDLBX
   
 > Eigenschaftentag für eine mehrwertige Eigenschaft vom Typ PT_MV_TSTRING. Die unterschiedlichen Werte dieser Eigenschaft werden als unterschiedliche Einträge in der Dropdown-Liste angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **DTBLMVDDLBOX** beschreibt eine mehrwertige Dropdown-Liste eine schreibgeschützte Liste von Elementen. Mithilfe ein mehrwertiges Dropdown-Listenfeld werden Werte angezeigt, wenn ein Benutzer auf eine Bildlaufleiste klickt. 
   

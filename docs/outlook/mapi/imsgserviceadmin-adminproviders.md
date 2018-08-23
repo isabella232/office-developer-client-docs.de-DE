@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0d605e2c-10db-46e1-95d5-12fabd524baa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9b65c8e32580fa85302b874bd17c1829ad67fd63
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1b03245d7af4c6fb3879e597d8345e5d9888e164
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792597"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567209"
 ---
 # <a name="imsgserviceadminadminproviders"></a>IMsgServiceAdmin::AdminProviders
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Zeiger, der Zugriff auf ein Anbieter Administration-Objekt bietet.
   
@@ -59,7 +59,7 @@ MAPI_E_NOT_FOUND
   
 > Die **MAPIUID** auf den _LpUID_ ist nicht vorhanden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::AdminProviders** -Methode ermöglicht den Zugriff auf ein Anbieter Administration-Objekt. Eine Anbieter Verwaltung ist ein Objekt, das die [IProviderAdmin](iprovideradminiunknown.md) -Schnittstelle unterstützt und ermöglicht es Clients, die folgenden Schritte aus: 
   

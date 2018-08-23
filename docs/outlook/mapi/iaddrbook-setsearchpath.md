@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: fbff82de-77d3-411e-a30c-a37cefdd92fc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4f9d2f4d271e467d8fac32b8f17faa8f66cd3f99
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1d486344ab20ef49488dbb911f3dd7000d64942e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792018"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571759"
 ---
 # <a name="iaddrbooksetsearchpath"></a>IAddrBook::SetSearchPath
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt einen neuen Pfad für die Suche in das Profil, das für den Vorgang der Lösung verwendet wird. 
   
@@ -54,7 +54,7 @@ MAPI_E_MISSING_REQUIRED_COLUMN
   
 > Eine der in der Struktur **SRowSet** beschriebenen Container haben dessen **PR_ENTRYID** -Eigenschaft nicht eingeschlossen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Rufen die **SetSearchPath** -Methode, um die Änderungen zu speichern, die an die Reihenfolge des Containers Suche vorgenommen wurden, die zum Auflösen von Namen mit der [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode verwendet wird, Clients und -Dienstanbieter. Der Suchpfad wird zwischen Instanzen von einer Sitzung gespeichert. 
   

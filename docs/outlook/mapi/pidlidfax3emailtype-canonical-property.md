@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 31076833-363f-4914-ba60-ab6f478d0cf5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a109bfee7f2d3c90971cbb8af89de1920cb75fe6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8b79b46342e9fc8bd588c115fe1d3a4a389f9c9f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793577"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570429"
 ---
 # <a name="pidlidfax3emailtype-canonical-property"></a>PidLidFax3EmailType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass der e-Mail-Typ des Kontakts Faxadresse zugrunde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax3EmailType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax3EmailType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080D7  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

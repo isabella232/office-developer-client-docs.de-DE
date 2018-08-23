@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9b82097c-dbd6-4ba0-a6cb-292301f9402b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4f41abe2ee41946f68e1d79c75b36791364ea970
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: dab13577e503a063ed1ebb48a3d6a5c531179b21
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795409"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570261"
 ---
 # <a name="sample-restriction-code"></a>Beispielcode für die Einschränkung
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der folgende Beispielcode zeigt, wie eine Einschränkung erstellen, die alle Nachrichten herausgefiltert, die nicht das Wort enthalten "Volleyball" in der Betreffzeile und nicht an Sue von Sam gesendet wurden. Eine Struktur von [SRestriction](srestriction.md) Strukturen ist erforderlich, mit den obersten Knoten, der eine Einschränkung des **und** mit einer [SAndRestriction](sandrestriction.md) Struktur implementiert wird. Die drei Einschränkungen, die von der **AND** -Operation verbunden sind werden eine Unterobjekts Einschränkung, die für Nachrichten an Sue sucht, einen Content-Beschränkung, die für Nachrichten von Sam durchsucht und eine andere **und** Einschränkung, die nach Nachrichten gesucht haben einen Betreff mit "Volleyball." Da **PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md)) keine erforderliche Eigenschaft ist, muss eine Einschränkung **vorhanden** eingeschlossen werden. 
   

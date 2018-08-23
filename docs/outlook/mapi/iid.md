@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: fa5498ab-2f8a-42f8-ba9d-1d555768594f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a0e859ac0f8bcc3bd83e336c85da21f1251efcb5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 00c7560427ece58026030ce6895d60aec7cc5a2e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792057"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570940"
 ---
 # <a name="iid"></a>IID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine [GUID](guid.md) -Struktur verwendet, um einen Bezeichner für die MAPI-Schnittstelle beschrieben. 
   
@@ -42,7 +42,7 @@ typedef struct _GUID
 
 Finden Sie unter der **GUID** -Struktur. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine **IID** -Struktur dient zur eindeutigen Identifizierung eine MAPI-Schnittstelle und ein Objekt eine bestimmte Schnittstelle zugeordnet. Beispielsweise legt fest, wenn eine Client-Anrufe [IMAPISession::OpenEntry](imapisession-openentry.md) an einen Ordner zu öffnen, der Client den _LpInterface_ -Parameter auf **IID** zeigen, das [IMAPIFolder](imapifolderimapicontainer.md) Schnittstelle darstellt. MAPI definiert die **IMAPIFolderIID** um IID_IMAPIFolder werden. **IID** Strukturen werden auch verwendet, um OLE-Schnittstellen eindeutig zu identifizieren. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: aa8c8d64-d2a0-4cdf-a8aa-21c8d0a0a3fc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd7f79ad7a36fd174bf9817ff463b00e6a334104
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b292e65ddabcbe052832687a3dcf01658de5e379
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791362"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567475"
 ---
 # <a name="attsentfor"></a>attSentFor
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gezählte Zeichenfolgen End-to-End-festgelegten, wird das Attribut **AttSentFor** codiert. Das Format für **AttSentFor** lautet wie folgt: 
   

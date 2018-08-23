@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1ce4cb8b-b1f7-420a-b0b2-322c70e4b0f3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 685ca78367ac4e0a8334a3d14c2fda9d57161e1d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1cc8471f9a3125ce89d5baefac6058e368e601d8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794778"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570408"
 ---
 # <a name="pidtagpersonalhomepage-canonical-property"></a>PidTagPersonalHomePage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die URL der persönlichen Homepage des Benutzers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PERSONAL_HOME_PAGE, PR_PERSONAL_HOME_PAGE_A, PR_PERSONAL_HOME_PAGE_W  <br/> |
-|Bezeichner:  <br/> |0x3A50  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PERSONAL_HOME_PAGE, PR_PERSONAL_HOME_PAGE_A, PR_PERSONAL_HOME_PAGE_W  <br/> |
+|Kennung:  <br/> |0x3A50  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

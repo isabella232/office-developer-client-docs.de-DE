@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2f0b1679-05b0-4580-b6d2-474fe3f9d012
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e93325873f1d9e89bb591d136df04aa27403375f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c8bd8c7fb2ff5a030cd96e4c3ac2bbb4b6b16ce5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794901"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571458"
 ---
 # <a name="pidtagreceivefoldersettings-canonical-property"></a>PidTagReceiveFolderSettings (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Tabelle mit einer Nachricht des Speichers erhalten Ordner Settings.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECEIVE_FOLDER_SETTINGS  <br/> |
-|Bezeichner:  <br/> |0x3415  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECEIVE_FOLDER_SETTINGS  <br/> |
+|Kennung:  <br/> |0x3415  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann in [IMAPIProp::CopyTo](imapiprop-copyto.md) Vorgänge aus- oder in [IMAPIProp::CopyProps](imapiprop-copyprops.md) Vorgänge eingeschlossen werden. Als Eigenschaft vom Typ PT_OBJECT kann nicht es erfolgreich von der [IMAPIProp::GetProps](imapiprop-getprops.md) -Methode abgerufen werden. von der [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode die Schnittstelle mit der ID IID_IMAPITable anfordern sollte seinen Inhalt zugegriffen werden. Dienstanbieter müssen es an die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode melden, wenn er festgelegt ist, jedoch kann positives oder nicht, wenn sie nicht festgelegt ist. 
   

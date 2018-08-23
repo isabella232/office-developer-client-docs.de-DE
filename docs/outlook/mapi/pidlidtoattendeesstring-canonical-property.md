@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca1eedba-c617-4403-8490-315ab75f2edb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c4daa46bf7c40f717f2bcd4a9ea87195f3d2c81f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 75439fccaf13665c68321cac5d39d0373ca923e1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793892"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571094"
 ---
 # <a name="pidlidtoattendeesstring-canonical-property"></a>PidLidToAttendeesString (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste aller sendable Teilnehmer, die auch die erforderlichen Teilnehmer sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidToAttendeesString  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidToAttendeesString  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000823B  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert für jeden Teilnehmer ist die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft des Adressbuchs des Teilnehmers. Separate Einträge müssen durch ein Semikolon, gefolgt von einem Leerzeichen getrennt sein. Diese Eigenschaft ist nicht erforderlich.
   

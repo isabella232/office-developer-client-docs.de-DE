@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a92e9cd-8282-4cf0-93af-4089b3763594
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c3a21e8a6e69cae9d8b757a60fe56d63e079b3ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f0ff4d8beb9c9d82d685630a35aefebaf7de71fc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793121"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570828"
 ---
 # <a name="mapinameid"></a>MAPINAMEID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine benannte Eigenschaft. 
   
@@ -79,7 +79,7 @@ MNID_STRING
   
 > Beschreibung des Namens, der die benannte Eigenschaft Union. Der Name kann einen ganzzahligen Wert, der in **Abdeckung**, gespeichert oder ein Unicode-Zeichenfolge, die in **LpwstrName**gespeichert sein.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur **MAPINAMEID** wird verwendet, um benannte Eigenschaften Eigenschaften zu beschreiben, die über 0 x 8000 Bezeichner aufweisen. Ein Eigenschaftensatz stellen einen wichtigen Bestandteil einer benannten Eigenschaft. Beispielsweise sind PS_PUBLIC_STRINGS oder PS_ROUTING_ADDRTYPE Eigenschaftensätze MAPI definiert. 
   

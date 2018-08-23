@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bc9b00b6-6337-411b-9219-067dd6c1add3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 158aae90d9e3f90ff6a53026ac299059d6b2a9c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 677457e3e774cfca09fd65ec44ef599e58ea81d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793940"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568378"
 ---
 # <a name="pidnamecomments-canonical-property"></a>PidNameComments (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Kommentare in der Datei, die an das Dokument angefügt ist.
   
@@ -31,7 +31,7 @@ Gibt die Kommentare in der Datei, die an das Dokument angefügt ist.
 |:-----|:-----|
 |Anzeigenamen:  <br/> |Keine  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Name der Eigenschaft:  <br/> |Kommentare  <br/> |
+|Name der Eigenschaft:  <br/> |Comments  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    

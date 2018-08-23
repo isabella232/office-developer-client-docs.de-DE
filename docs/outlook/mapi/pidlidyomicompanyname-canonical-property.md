@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac299846-da85-4ef2-97eb-ee157273ccc3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9d3cef760163e57ebed8346ce78e09cf9f322b51
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0e7baf7e4faeea3deab5dce01bea7522ce8a0d92
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793926"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567440"
 ---
 # <a name="pidlidyomicompanyname-canonical-property"></a>PidLidYomiCompanyName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die phonetische Aussprache des Firmenname des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidYomiCompanyName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidYomiCompanyName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000802E  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

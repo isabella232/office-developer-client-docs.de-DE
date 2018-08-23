@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 914c55e9-cb36-46a4-b5ee-382413fa25f9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6dc2bcf2003ee16fa4a6c66689b6af79653e2d04
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: db94d68a01b65410cf4f3f1f461c780f2bb01918
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793842"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568532"
 ---
 # <a name="pidlidtasklastuser-canonical-property"></a>PidLidTaskLastUser (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Namen des aktuelle Benutzers, der Besitzer der Aufgabe wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskLastUser  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskLastUser  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008122  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Bevor ein Client eine Aufgabenanfrage sendet, wird diese Eigenschaft auf den Namen der Aufgabe delegierende Person. Bevor ein Client eine Aufgabe Annahme sendet, wird diese Eigenschaft auf den Namen der Beauftragte für die Aufgabe. Bevor ein Client eine Aufgabe Ablehnung sendet, wird diese Eigenschaft auf den Namen der Aufgabe delegierende Person.
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2fcff3b3-01e7-4758-9c49-0af41abf0d6b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 57e6974219059c301786295b2d5e6b9a8fb724bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2963e65f97534cbba368b909fef79c982e81ec26
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792918"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568525"
 ---
 # <a name="mapi-address-book-provider-objects"></a>MAPI-Address Book Anbieter-Objekten
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zusätzlich zu den standardmäßigen Provider und Logon-Objekten Implementieren von adressbuchanbietern implementierte Address Book Containern, Verteilerlisten, messaging Benutzer, Tabellen, Status-Objekten und Steuerelementen.
   

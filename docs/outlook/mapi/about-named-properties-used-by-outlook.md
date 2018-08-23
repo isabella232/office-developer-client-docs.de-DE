@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8c245ec2-bb18-ecf0-b4ad-8c164c5924cf
 description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 75a08db313ac1b38a400fb329eefa914858ec71e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: aa4d52d25f120e8b3e2a4c0dcaa4845ad576127a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791223"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566229"
 ---
 # <a name="about-named-properties-used-by-outlook"></a>Informationen zu benannten von Outlook verwendete Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI bietet die M�glichkeit zum Zuweisen von Namen auf bestimmte Eigenschaften f�r die Zuordnung Managementsystems zu eindeutigen IDs und zum Beschleunigen des best�ndigen dieser Name-zu-Bezeichner zuordnen in allen Sitzungen. Benannte Eigenschaften werden durch einen Namen und einen global eindeutigen Bezeichner (GUID) f�r einen Eigenschaftensatz identifiziert. Der Name kann eine Zahl oder eine Zeichenfolge sein. F�r Microsoft Outlook 2013 oder Microsoft Outlook 2010 ist der Eigenschaftensatz oft einen Namespace definiert durch Outlook 2013 oder Outlook 2010 wie **PSETID_Appointment**. 
   

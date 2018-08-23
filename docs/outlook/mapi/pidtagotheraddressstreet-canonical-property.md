@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5f440905-8690-489c-ae96-2bc391524de9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6d2731bd9c022cf18ec0ea7eb75a1d78900e62f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1c1c4cc8a645720c6652aa49318b1b2b4920a0b7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794761"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570618"
 ---
 # <a name="pidtagotheraddressstreet-canonical-property"></a>PidTagOtherAddressStreet (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält der e-Mail-Nachrichten des Benutzers andere Straße.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OTHER_ADDRESS_STREET, PR_OTHER_ADDRESS_STREET_A, PR_OTHER_ADDRESS_STREET_W  <br/> |
-|Bezeichner:  <br/> |0x3A63  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OTHER_ADDRESS_STREET, PR_OTHER_ADDRESS_STREET_A, PR_OTHER_ADDRESS_STREET_W  <br/> |
+|Kennung:  <br/> |0x3A63  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

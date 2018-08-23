@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 44bb4d34-ca96-4d5a-93fe-85e09bd7971d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 05d6d548032476062127f21b23aa2ce141ed1b65
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 569c9d8a7ed3f56d88d83ea6fdac4477d39e50a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791266"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569484"
 ---
 # <a name="adding-or-deleting-providers-in-a-message-service"></a>Hinzufügen oder Löschen von Anbietern in einem Nachrichtendienst
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Verwenden Sie zum Hinzufügen oder löschen-Dienstanbieter in einem Message-Dienst, der [IProviderAdmin: IUnknown](iprovideradminiunknown.md) Schnittstelle. Sie können einen Zeiger **IProviderAdmin** durch Aufrufen von [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md)abrufen. Die Anbieter-Tabelle, die über [IProviderAdmin::GetProviderTable](iprovideradmin-getprovidertable.md), zugegriffen werden enthält Informationen zu den Dienstanbieter, die derzeit in der Nachrichtendienst installiert. Clients und -Dienstanbieter können die Provider-Tabelle verwenden, um Zugriff auf den Namen der Anbieter DLL-Datei, z. B. oder **MAPIUID**, Anzeigename und Typ der Anbieter sowie Informationen zu den Dienst. Weitere Informationen finden Sie unter [Provider Tabellen](provider-tables.md).
   

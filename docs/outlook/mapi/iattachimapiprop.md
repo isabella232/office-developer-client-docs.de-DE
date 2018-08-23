@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: f47e20e1-2a30-4c9e-8ca6-e8c5e72f44a1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 66e318c3b7b772f2713b5c730590ce4a8ad5965b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ce9c8b189991e4102fcc9d17b88747d4ce55efec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792010"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570912"
 ---
 # <a name="iattach--imapiprop"></a>IAttach : IMAPIProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Verwaltet und bietet Zugriff auf die Eigenschaften von Nachrichtenanlagen. Die **IAttach** -Schnittstelle hat keine eindeutigen Methoden. Weitere Informationen zur Verwendung von Anlagen finden Sie unter [MAPI-Anlagen](mapi-attachments.md) und [Anlagentabellen](attachment-tables.md). 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Attachment-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Attachment-Objekte  <br/> |
 |Implementiert von:  <br/> |Nachricht-Anbieter  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IAttachment  <br/> |
@@ -41,7 +41,7 @@ Verwaltet und bietet Zugriff auf die Eigenschaften von Nachrichtenanlagen. Die *
 
 Diese Schnittstelle hat keinen eindeutigen Methoden.
   
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |

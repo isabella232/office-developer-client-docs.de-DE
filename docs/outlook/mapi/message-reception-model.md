@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d85d269e-2251-4399-9159-a2f47a85e3d1
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cecdb2c30d6c9df2aafbeed43714269b863ebc48
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8fbc09d9d79f88ef783b8effe7a24e4b35564cee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793257"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570373"
 ---
 # <a name="message-reception-model"></a>Nachrichtenempfangsmodell
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Adressbuchhierarchie steuert, ob die MAPI-Warteschlange es für eingehende e-Mails Fragen muss oder führt gibt an, ob ein Rückruf an die Warteschlange MAPI, wenn neue Nachrichten eingehen. Beenden von [IXPProvider::TransportLogon](ixpprovider-transportlogon.md) Abruf anfordern, legt der Transportdienst SP_LOGON_POLL-Flag. Andernfalls wird der Adressbuchhierarchie [IMAPISupport::SpoolerNotify](imapisupport-spoolernotify.md) verwendet, wenn eingehende e-Mails verfügbar ist. Nach dem Learning, dass eingehende e-Mails verfügbar ist, die MAPI-Warteschlange öffnet eine neue Nachricht und fordert der Adressbuchhierarchie zum Speichern von empfangenen Nachrichteneigenschaften in die Nachricht an. 
   

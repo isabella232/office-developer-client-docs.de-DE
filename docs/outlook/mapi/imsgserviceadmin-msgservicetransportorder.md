@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c57ada0e-b9a1-496b-8548-75686d8cba4e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5b96a45bab4cd00d23604d0b0b25f3e772277395
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 559f1c609000608d0eb920a0240ac8848e4bc2a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792618"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570793"
 ---
 # <a name="imsgserviceadminmsgservicetransportorder"></a>IMsgServiceAdmin::MsgServiceTransportOrder
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt die Reihenfolge, in welcher, die Transport Anbieter aufgerufen werden, um eine Nachricht zu übermitteln.
   
@@ -63,7 +63,7 @@ MAPI_E_NOT_FOUND
   
 > Eine oder mehrere der in der _LpUIDList_ -Parameter übergeben [MAPIUID](mapiuid.md) Strukturen verweisen nicht auf eine Adressbuchhierarchie derzeit im Profil. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::MsgServiceTransportOrder** -Methode legt die Reihenfolge der Übermittlung der Transportanbieter in einem Profil. Der _LpUIDList_ -Parameter muss eine sortierte Liste der Adressbuchhierarchie Eintragsbezeichner abgerufen, die aus der Eigenschaft **PR_PROVIDER_UID** ([PidTagProviderUid](pidtagprovideruid-canonical-property.md)) aus der [IMsgServiceAdmin zurückgegebene Tabelle enthalten:: GetProviderTable](imsgserviceadmin-getprovidertable.md) Methode. Eine Clientanwendung muss die vollständige Liste _LpUIDList_übergeben.
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: c16c668e-2c8b-4759-bbca-d0c5662b62e9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: db23d1801bf32fd947a77dfd887c56f75ded5681
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f79e5eaa3155bbe3373f5ad9c5182a4a65c62648
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792388"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572039"
 ---
 # <a name="imapisupportnotify"></a>IMAPISupport::Notify
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sendet eine Benachrichtigung über ein bestimmtes Ereignis mit einer Advise-Datenquelle, die ursprünglich für die Benachrichtigung über die [IMAPISupport::Subscribe](imapisupport-subscribe.md) -Methode registriert. 
   
@@ -68,7 +68,7 @@ S_OK
   
 > Die Benachrichtigungen wurden erfolgreich generiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::Notify** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter anrufen **Benachrichtigen** , um anzufordern, dass MAPI generieren eine Benachrichtigung für eine Advise-Empfänger, die für die Benachrichtigung über die **IMAPISupport::Subscribe** -Methode zuvor registriert hat. 
   

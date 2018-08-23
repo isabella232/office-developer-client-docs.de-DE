@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4dd58b0b-dc39-4782-a9ec-05e353c90927
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0d8d1b8509f699b20f6e436d8af2c1d0d97cf4ba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 09c6540f2a224b7dc89a62c34cfb0c867cef4632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791671"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570849"
 ---
 # <a name="fequalnames"></a>FEqualNames
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt, ob zwei MAPI benannte Eigenschaften sind identisch. 
   
@@ -60,7 +60,7 @@ FALSE
   
 > Die zwei Eigenschaftennamen sind nicht gleich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **FEqualNames** -Funktion ist nützlich, da die **MAPINAMEID** Struktur eine [GUID enthält](guid.md) und der Name der Eigenschaft selbst in mehr als eine Möglichkeit darstellen kann. Dies bedeutet, dass die zwei Strukturen nicht durch einfache binäre Methoden verglichen werden können. 
   

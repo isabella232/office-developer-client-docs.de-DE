@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 6511e1b5-697e-4ed1-80af-aa8ca56fd045
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3f1cab24ef6bbd632ee3dc204e93f59e6f9ac846
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1f931382e790da13e7d4a746e286d9dc176b7b6b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793089"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571906"
 ---
 # <a name="mapi-service-providers"></a>MAPI-Dienstanbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es gibt drei gängige Typen der Dienstanbieter:
   
@@ -60,5 +60,5 @@ Adressbuch, Nachrichtenspeicher und Transportanbieter führen die folgenden Aufg
 
 
 
-[MAPI-Konzepte (engl.)](mapi-concepts.md)
+[MAPI-Konzepte](mapi-concepts.md)
 

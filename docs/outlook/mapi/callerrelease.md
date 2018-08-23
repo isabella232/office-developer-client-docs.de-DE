@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 80ba893d-3380-4db1-9175-f5b84cb57def
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 69ee06ef8c8f5499dec41232d3dc7b374b15a744
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e97e1d5302d8247cb09ce7cb1b581582405300a5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791370"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568128"
 ---
 # <a name="callerrelease"></a>CALLERRELEASE
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Rückruffunktion, die ein Table-Datenobjekt freigeben kann, wenn eine Tabellenansicht freigegeben wird. 
   

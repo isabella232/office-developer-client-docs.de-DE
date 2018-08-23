@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4daeddd7-3f0c-4178-ae8d-f74814090d40
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a230e8b69a64646dffb23147345d5960fdd38581
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 30f55044327eecee3ab0d8ee2509d7132ab6e8ee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792165"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570128"
 ---
 # <a name="imapiforminfomakeiconfrombinary"></a>IMAPIFormInfo::MakeIconFromBinary
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt ein Symbol aus der Symboleigenschaften eines Formulars an.
   

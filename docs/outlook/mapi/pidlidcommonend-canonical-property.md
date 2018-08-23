@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: c89f388a-1585-4bed-91b4-1b0c268292f3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4aaa8f1c0bb2d9eb43cd1850ea2148151a0f02fa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fc3849ac972ce7e3efbfa981ff950ee3615cb533
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793470"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571465"
 ---
 # <a name="pidlidcommonend-canonical-property"></a>PidLidCommonEnd (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt das Enddatum und die Uhrzeit einer Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidCommonEnd  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidCommonEnd  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008517  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt die Endzeit für ein Element an. Es muss größer als oder gleich dem Wert der Eigenschaft **DispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) sein.
   

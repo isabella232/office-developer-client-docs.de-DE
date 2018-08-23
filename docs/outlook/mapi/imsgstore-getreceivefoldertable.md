@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d115ab58-07d2-4b49-8e08-2881c2924102
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8146b5c2b9c9fb5429a9c1d46bca687c32bcf3dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 681fd68fc068633912df1cb7f060b8c4111b5de8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792641"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566537"
 ---
 # <a name="imsgstoregetreceivefoldertable"></a>IMsgStore::GetReceiveFolderTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf die empfangen Ordnertabelle Tabelle Informationen zu allen der Ordner für den Nachrichtenspeicher empfangen enthält.
   
@@ -57,7 +57,7 @@ S_OK
   
 > Die Ordner-Tabelle empfangen wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::GetReceiveFolderTable** -Methode ermöglicht den Zugriff auf eine Tabelle, die anzeigt, dass die Einstellungen für alle des Nachrichtenspeicher Ordner erhalten. 
   

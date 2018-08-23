@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f7182631-7f0e-4f4a-995d-22c0bedd7b6a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a6a6febb82368aee78506f7864f178f1f5dfedf9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c976375d428e477de688f42eaa3ff8396fcfd4fc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791393"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571353"
 ---
 # <a name="cbnewflatentrylist"></a>CbNewFLATENTRYLIST
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes, die für eine neue [FLATENTRYLIST](flatentrylist.md) -Struktur zugeordnet werden sollen, die mehrere [FLATENTRY](flatentry.md) Strukturen einer angegebenen Größe enthält. 
   

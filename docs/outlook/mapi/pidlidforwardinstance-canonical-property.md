@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 055bdcaf-5002-44a6-b2b6-87244b2bea93
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0c32a60c7655f4e468a03013cb3979bde228ea3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 47dd6f10d1dbd25ea275ea96a2eddb6e9c6dfacb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793608"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571773"
 ---
 # <a name="pidlidforwardinstance-canonical-property"></a>PidLidForwardInstance (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass die Besprechungsanfrage eine Ausnahme in einer Terminserie stellt, und er (selbst wenn Sie vom Organisator weitergeleitet) weitergeleitet wurde, statt eine Einladung vom Organisator gesendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFwrdInstance  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFwrdInstance  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000820A  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert für diese Eigenschaft FALSE gibt an, dass die Besprechungsanfrage keine weitergeleitete Instanz ist. Diese Eigenschaft ist nicht erforderlich.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7c3e5a71-7b78-4328-b8ee-265cc4da4be5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c221f98d6551ea63971dd378d522c1f2bebb312b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eeeff110e5de592d491865079adfa187e5dfa194
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795699"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570877"
 ---
 # <a name="szfindlastch"></a>SzFindLastCh
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sucht das letzte Vorkommen eines Zeichens in eine mit Null endende Zeichenfolge. 
   
@@ -54,7 +54,7 @@ LPSTR SzFindLastCh(
 
  **SzFindLastCh** gibt einen Zeiger auf das letzte Vorkommen des Zeichens in der Zeichenfolge. Wenn das Zeichen nicht an einer beliebigen Stelle in der Zeichenfolge auftritt oder wenn der Parameter _Lpsz_ NULL ist, wird der Wert NULL zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion **SzFindLastCh** sucht nach einer genauen Übereinstimmung nur; Es ist Beachtung von Groß-/Kleinschreibung und diakritische Unterschiede. Sucht in den Formaten Unicode und DBCS werden unterstützt. 
   

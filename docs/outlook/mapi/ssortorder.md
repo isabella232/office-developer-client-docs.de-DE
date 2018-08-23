@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: fe181b9a-5903-4cc0-bcd5-2061b440b5b1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7cb511c7a021c4e65214acc7efa785be0e02ffc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 331dc05b30390bb803d186f157e0fe9edb779ab0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795622"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571668"
 ---
 # <a name="ssortorder"></a>SSortOrder
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert, wie die Zeilen einer Tabelle, nach welcher Spalte die Sortierschlüssel und die Richtung der Sortierung als verwendet zu sortieren. 
   
@@ -60,7 +60,7 @@ typedef struct _SSortOrder
       
   - TABLE_SORT_CATEG_MIN: Die Tabelle sollten auf den minimalen Wert des Elements **UlPropTag** für Datenzeilen in den durch die vorherigen Sortierreihenfolge in der Struktur der in **SSortOrderSet** angegebenen Kategorien sortiert werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine **SSortOrder** -Struktur wird verwendet, um wird beschrieben, wie Sie einen standard Sortiervorgang oder ein kategorisierten Sortiervorgang durchführen. **SSortOrder** Strukturen werden in eine **SSortOrderSet** -Struktur, die mehrere Sortierschlüsseln und erfahren Sie, wie beschrieben in der Regel zusammengefasst. **SSortOrderSet** Strukturen werden in die folgenden Funktionen und Interface-Methoden verwendet: 
   

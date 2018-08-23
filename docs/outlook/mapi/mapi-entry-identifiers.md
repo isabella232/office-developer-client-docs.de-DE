@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 84c37696-da7a-42e0-b8c0-29658a6c9a48
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b8212f4a055125858b77ee615a5d929a4a62bb82
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d8c9fb0b24d8954fae75274bfbedca9d7c62de93
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792976"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567860"
 ---
 # <a name="mapi-entry-identifiers"></a>MAPI-Eintragsbezeichner
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eintragsbezeichner sind Binärdaten in ein [ENTRYID](entryid.md) -Struktur gespeichert, mit denen eindeutig zu identifizieren, und öffnen Sie ein MAPI-Objekt. Die meisten MAPI-Objekte weisen Eintragsbezeichner. Eintragsbezeichner für Objekte sind analog zu Dateinamen für Dateien. Allerdings sind nicht Übertragungseinehit und kann nicht verwendet werden, auf anderen Systemen als das System, dem sie auf stammen. 
   

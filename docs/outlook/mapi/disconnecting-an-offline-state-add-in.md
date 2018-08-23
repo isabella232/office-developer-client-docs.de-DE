@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6922cb38-a9e3-e4a9-d4a3-e11b81fc77e2
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 82f529f58a62f412ed8b25d1ceaf508463491612
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ce25c6777c8a71da0fe11e0bbf34eefafe2ca50d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19791542"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564136"
 ---
 # <a name="disconnecting-an-offline-state-add-in"></a>Trennen eines Offlinestatus-Add-Ins
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn das Add-in offline-Status getrennt ist, müssen Sie implementieren Funktionen zum ordnungsgemäß beendet und bereinigen Sie das Add-in. Weitere Informationen zum Einrichten und im Offlinemodus state-add-in zum Überwachen von Änderungen am Status von Verbindung finden Sie unter [Einstellung von einer Offline-Status-Add-in](setting-up-an-offline-state-add-in.md) und [Monitoring Verbindung Zustand Änderungen mithilfe einer Offline-Status-Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md).
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 10c7cb9d-2e9d-72eb-6b07-31eed892e646
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 54843339c6843e075ec769da5751ae2fe753f302
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: a84114a3363f9cbcd9455bce12d3171843bd18a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792267"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571115"
 ---
 # <a name="imapiofflinenotifynotify"></a>IMAPIOfflineNotify::Notify
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sendet Benachrichtigungen an den Client zu den geänderten in Verbindungsstatus.
   
@@ -39,7 +39,7 @@ void STDMETHODCALLTYPE Notify(
   
 > [in] Benachrichtigung, die Outlook an den Client sendet. Die Benachrichtigung gibt den Teil des Verbindungsstatus, der geändert wurde, den alten Verbindungsstatus und den neuen Verbindungsstatus.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Outlook verwendet diese Methode, um die Benachrichtigung Rückrufe an einen Client gesendet. Microsoft Outlook 2010 oder Microsoft Outlook 2013 diese Schnittstelle zur Verfügung zu stellen, muss der Client diese Schnittstelle implementieren, und übergeben einen Zeiger als Mitglied in **[MAPIOFFLINE_ADVISEINFO](mapioffline_adviseinfo.md)** beim Einrichten von Rückrufe mit **[IMAPIOfflineMgr::Advise ](imapiofflinemgr-advise.md)**. 
   

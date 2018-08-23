@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 57db0314-1df0-4fd2-b443-223b0512f1ad
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9e75143cb59e782993b9a7f9937432f0b4894d5f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 9f975ed1b9036bce5ed225b2a9020262260f4f57
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795611"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572144"
 ---
 # <a name="sorting-tables-after-setting-columns-and-restrictions"></a>Sortieren von Tabellen nach dem Festlegen der Spalten und Einschränkungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn Sie die Ansicht einer sortierten Tabelle einschränken müssen, stellen Sie die folgenden **IMAPITable** Anrufe immer in der folgenden Reihenfolge: 
   

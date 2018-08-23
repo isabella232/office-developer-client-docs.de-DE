@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6e42163-494d-4787-ad83-54452d26b815
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f4a33402ecccb055c2c932f71f744fba7cb9aa45
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ba26ee19e4bd6efb49f867092c971cb433bfc745
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793989"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571430"
 ---
 # <a name="pidnamesecurity-canonical-property"></a>PidNameSecurity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Sicherheitsstufe an der Datei, die an das Dokument angefügt ist.
   

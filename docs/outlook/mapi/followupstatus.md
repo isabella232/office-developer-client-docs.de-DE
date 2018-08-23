@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: c3d0f6c4-4597-784f-8d44-6e5d905895b4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e59c0ba7810741943883b9e86e84c6fe141f3050
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6b57ed45e067ce2debd40e033d386ad2b5ae895a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791707"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568518"
 ---
 # <a name="followupstatus"></a>FollowUpStatus
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die verschiedenen weiteren Statusarten für eine Nachricht an.
   

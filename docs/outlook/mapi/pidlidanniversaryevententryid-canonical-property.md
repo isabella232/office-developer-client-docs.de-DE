@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 177b2b87-7a06-4d53-8f03-5bec5632c2dd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 78096affce8fa03cc3efc8f0ca0c7048c2f9aae9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3e146fea9332cde5751fa12d7f8ebb1e1bb763e7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793347"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572354"
 ---
 # <a name="pidlidanniversaryevententryid-canonical-property"></a>PidLidAnniversaryEventEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Eintrags-ID des Termins, die das Jahrestag des Kontakts darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidAnniversaryEventEID  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidAnniversaryEventEID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000804E  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Termin durch die **DispidAnniversaryEventEID** -Eigenschaft angegebenen muss mit diesen Kontakt verknüpft werden, mithilfe der **DispidContactLinkEntry** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)) **DispidContactLinkSearchKey** ([ PidLidContactLinkSearchKey](pidlidcontactlinksearchkey-canonical-property.md)), und die Eigenschaften der **DispidContactLinkName** ([PidLidContactLinkName](pidlidcontactlinkname-canonical-property.md)), die detaillierte in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx).
   

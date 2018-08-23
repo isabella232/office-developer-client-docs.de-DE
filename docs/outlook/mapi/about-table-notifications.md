@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 00c9c6c2-fc21-4b9c-91fa-629450a22d37
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3dfc67c8bcd899396da5371c614fd221cd9b2251
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d6fd49e1a004202e0de02e262f6977ca8a07019d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791229"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571941"
 ---
 # <a name="about-table-notifications"></a>Informationen zu Tabellenbenachrichtigungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients nutzen häufig Tabelle Benachrichtigungen von Änderungen an Objekten anstelle von Erhalt von Benachrichtigungen direkt über die Objekte registrieren erfahren. Typische Änderungen, die dazu führen, dass Benachrichtigungen gesendet werden umfassen die hinzufügen, löschen oder Änderung einer Zeile und keinen kritischen Fehler. Wenn Benachrichtigungen eingehen, können Clients bestimmen, ob stellen Sie einen weiteren Anruf die Tabelle erneut geladen werden soll. 
   

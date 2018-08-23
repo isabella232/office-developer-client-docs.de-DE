@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6da9d6b6-a016-ccef-77da-3e037c30450d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f25b3fb967f4ed93ac38487f21145f35413764da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 34d6eb0653c3eb550bf03242a2c1b2acc3330a13
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795799"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572291"
 ---
 # <a name="upfld"></a>UPFLD
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen zum Hochladen eines Ordners während der [Zustand Ordner hochladen](upload-folder-state.md).
   

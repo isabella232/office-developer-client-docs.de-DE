@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d3cc6658-e46d-42dd-b1ac-65c88cfef8ca
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ad2014d1d003a4d80646ed1b679f0d3827341c1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 968be38e794793405aac15340a92ccd6d680498d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792181"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571696"
 ---
 # <a name="imapiformmgrresolvemultiplemessageclasses"></a>IMAPIFormMgr::ResolveMultipleMessageClasses
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Gruppe von Nachrichtenklassen in ihre Formulare in einem Formular Container aufgelöst wird, und gibt ein Array von Formular Informationen Objekte für diese Formulare.
   

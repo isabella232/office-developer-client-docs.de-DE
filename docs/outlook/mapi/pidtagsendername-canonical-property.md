@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33fb53a8-4c7b-4418-8849-b6f9a1580172
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6dd3f07ae4c854d3ee87206adf4a3090fe050971
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7098c4eee28442a4a47e70f6a9df9d4ddb9fade6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795131"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568406"
 ---
 # <a name="pidtagsendername-canonical-property"></a>PidTagSenderName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Anzeigename des Absenders der Nachricht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENDER_NAME, PR_SENDER_NAME_A, PR_SENDER_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x0C1A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENDER_NAME, PR_SENDER_NAME_A, PR_SENDER_NAME_W  <br/> |
+|Kennung:  <br/> |0x0C1A  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6800fd3a-aa43-45fe-9cc2-102d0ef43edf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 51cd838164e3de28ab33d6ab8a08a021360f3183
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d54487928abcc889441ec9bf89ab6a10e5290062
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792360"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570835"
 ---
 # <a name="imapisupportgetoneofftable"></a>IMAPISupport::GetOneOffTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Zeiger auf die einmaligen MAPI-Tabelle (eine Liste der Vorlagen, dass alle Anbieter für die Unterstützung für das Erstellen von neuen Empfänger Adressbuch).
   
@@ -54,7 +54,7 @@ S_OK
   
 > Die einmalige Tabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::GetOneOffTable** -Methode wird für Address Book Anbieter Unterstützungsobjekte implementiert. Von adressbuchanbietern implementierte Aufrufen **GetOneOffTable** , um die vollständige Liste der Vorlagen zum Erstellen von neuen Empfänger abzurufen. Die folgende Tabelle enthält Vorlagen, die Unterstützung von adressbuchanbietern implementierte, die in der Sitzung aktiv sind, sowie Formularvorlagen, die MAPI unterstützt. 
   

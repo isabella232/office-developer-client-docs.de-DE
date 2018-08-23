@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 08bc256c-9706-4f3e-9a12-3e9cca5e4caa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 979415f1d792f92e593a7073cc84cfd6ba832b6c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eb3b3b3c9c2e9cffb77febf9c96baed40ce3f9e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795437"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566222"
 ---
 # <a name="sccopyprops"></a>ScCopyProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert die Eigenschaften, die durch ein Array von [SPropValue](spropvalue.md) Strukturen zu einem neuen Ziel definiert. 
   
@@ -70,7 +70,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Unbekannte Eigenschaft vom Typ aufgetreten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das neue Array und ihre Daten befinden sich in einem Puffer mit einer einzelnen Reservierung erstellt, und die [ScRelocProps](screlocprops.md) -Funktion kann zum Anpassen der Zeiger in den einzelnen [SPropValue](spropvalue.md) Strukturen verwendet werden. Bevor Sie diese Anpassung sind der Zeiger gültig. 
   

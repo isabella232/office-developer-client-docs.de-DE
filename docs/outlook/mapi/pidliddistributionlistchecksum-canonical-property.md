@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd50ab34-caae-4258-8afc-769e3cbc5220
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bba1e78d79800b1c8e56ad50ce1abb144d4c9aae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 44752e147569619589b23a380b2fefa511724ca7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793496"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571731"
 ---
 # <a name="pidliddistributionlistchecksum-canonical-property"></a>PidLidDistributionListChecksum (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die 32-Bit-CRC polynomial Prüfsumme für eine persönliche Verteilerliste Kontrollkästchen (CRC-32).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidDLChecksum  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidDLChecksum  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000804C  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft kann verwendet werden, zu erkennen, wann die **DispidDLMembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md))-Eigenschaft aktualisiert wurde, ohne die Aktualisierung der anderen persönlichen Verteilerliste Liste Elementeigenschaften durch den CRC-32 auf dem vorhandenen computing der Wert der **DispidDLMembers** und diese mit dem Wert der Eigenschaft **DispidDLChecksum** zu vergleichen. 
   

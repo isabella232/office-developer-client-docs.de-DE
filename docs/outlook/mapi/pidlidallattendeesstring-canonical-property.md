@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2ffc0609-341d-4e35-8f53-ed3096c6fa7f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a9580428cd985902d3af6320dd754947565b74e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 11b4ea96283bbef2dcb9afb109a6a81102727efc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793345"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570457"
 ---
 # <a name="pidlidallattendeesstring-canonical-property"></a>PidLidAllAttendeesString (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Liste aller Teilnehmer außer dem Organisator, einschließlich Ressourcen und Teilnehmer zu senden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidAllAttendeesString  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidAllAttendeesString  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008238  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert für jeden Teilnehmer ist Anzeigename den Namen des Teilnehmers. Separate Einträge müssen durch ein Semikolon, gefolgt von einem Leerzeichen getrennt sein. Diese Eigenschaft ist nicht erforderlich.
   

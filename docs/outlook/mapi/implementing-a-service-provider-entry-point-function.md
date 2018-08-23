@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 83ff54c4-86ce-4529-ae45-260dfb763b30
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 632aff9c0f6fc60ee9730b5e43667b5b610ae8df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 40bbe110c7453cf2360fc103710fbc3bcb7f1c67
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792543"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572053"
 ---
 # <a name="implementing-a-service-provider-entry-point-function"></a>Implementieren einer Dienstanbieter-Einstiegspunktfunktion
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Jeder Dienstanbieter DLL hat einen Eintrag Funktion verweist, die MAPI-aufrufen, um sie zu laden. Beachten Sie, dass dieser Eintrag Point-Funktion nicht [DllMain](http://msdn.microsoft.com/en-us/library/ms682583.aspx), die Win32-DLL-Einstiegspunktfunktion identisch ist.
   

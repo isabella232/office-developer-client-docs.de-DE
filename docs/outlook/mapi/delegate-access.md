@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a863494f-0071-4d97-a6c4-26707ee00e04
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d969fd806e5038e6c918da45041402a981554a49
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 69945bc03d9183ea18a436186523741ce534b71e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791526"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568490"
 ---
 # <a name="delegate-access"></a>Stellvertretungszugriff
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Delegieren des Zugriffs bezieht sich auf die M�glichkeit des Benutzers als anderer Benutzer eine Nachricht senden oder Empfangen einer Nachricht an einen anderen Benutzer. Delegieren des Zugriffs ist ein Service Provider unabh�ngigen Feature von MAPI, das Transportanbieter unterst�tzt werden k�nnen, falls gew�nscht. Jedoch ist kein Anbieter dazu erforderlich. Delegieren des Zugriffs ist hilfreich, wenn es f�r einen Benutzer als Nachrichten senden oder Filtern eingehende Nachrichten auf, wenn ein Benutzer Nachrichtenspeicher eines anderen Benutzers zugreifen muss oder eines anderen Benutzers erforderlich ist. Bevor Sie eine Verbindung mit einem anderen Benutzerspeicher Stellvertretungsbenutzers zulassen, muss der Nachricht Speicheranbieter �berpr�fen, ob Stellvertretungsbenutzers die entsprechende Autorit�t verf�gt. 
   

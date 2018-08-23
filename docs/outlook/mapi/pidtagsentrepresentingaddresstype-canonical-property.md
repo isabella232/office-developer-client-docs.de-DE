@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ecbf653-1faf-47bd-81a4-20157859fdfd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a58ae878ba13415823e61db3b1717e3cf07f29c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 86b4b4056c86baacc63ea88d00ba81195eef762a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795141"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572277"
 ---
 # <a name="pidtagsentrepresentingaddresstype-canonical-property"></a>PidTagSentRepresentingAddressType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Adresstyp für den messaging-Benutzer, die vom Absender dargestellt wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENT_REPRESENTING_ADDRTYPE, PR_SENT_REPRESENTING_ADDRTYPE_A, PR_SENT_REPRESENTING_ADDRTYPE_W  <br/> |
-|Bezeichner:  <br/> |0x0064  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENT_REPRESENTING_ADDRTYPE, PR_SENT_REPRESENTING_ADDRTYPE_A, PR_SENT_REPRESENTING_ADDRTYPE_W  <br/> |
+|Kennung:  <br/> |0x0064  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für die messaging-Benutzer, die vom Absender angezeigt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag einer anderen Client sendet, sollten sie alle Absender dargestellte Eigenschaften auf die Werte für diesen Client festgelegt. Ein messaging-Benutzer in der Regel in einem eigenen Auftrag senden bewirkt, dass die dargestellte Absender Eigenschaften nicht festgelegt ist.
   

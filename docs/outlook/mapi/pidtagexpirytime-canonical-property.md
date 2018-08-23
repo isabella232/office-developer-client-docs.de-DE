@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6e4d4ee9-c6b1-4987-b02e-684c2af3d21c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4666a5837c9f9f2ceb209088929aa3d343eb02f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 21e052545c9c5e68bf1bc2f8c1ead054163f3b8d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794374"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566145"
 ---
 # <a name="pidtagexpirytime-canonical-property"></a>PidTagExpiryTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Uhrzeit, wann das messaging-System den Inhalt einer Nachricht ungültig machen können. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EXPIRY_TIME  <br/> |
-|Bezeichner:  <br/> |0x0015  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EXPIRY_TIME  <br/> |
+|Kennung:  <br/> |0x0015  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird verwendet, um die direkte Nachrichtensystem in Behandlung Nachrichten zwischen Personen übermittelt. 
   

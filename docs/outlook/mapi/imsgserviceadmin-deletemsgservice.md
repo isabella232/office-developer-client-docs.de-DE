@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3a6b34eb-9d46-488f-8d02-91b27c35de67
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0a3021ed386aa00777694452a755693fc4078093
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e0d3d669982bee309901f913612ac1fb1622e60a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792590"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571143"
 ---
 # <a name="imsgserviceadmindeletemsgservice"></a>IMsgServiceAdmin::DeleteMsgService
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Löscht eine Message Service aus einem Profil.
   
@@ -49,7 +49,7 @@ MAPI_E_NOT_FOUND
   
 > Die auf den _Lpuid_ **MAPIUID** stimmt nicht mit einer vorhandenen Messagingdiensts überein. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin::DeleteMsgService** -Methode löscht eine Message Service aus einem Profil. **DeleteMsgService** entfernt alle Profil Abschnitte im Zusammenhang mit den Dienst. 
   

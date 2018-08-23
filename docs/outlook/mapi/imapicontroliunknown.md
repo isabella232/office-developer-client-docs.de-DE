@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5a647e15-ba22-4a7c-b235-75cd76b77c1a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 395e44c2ea54816fab9f29dbedfe5e165e98c7b7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 80acb1a1e4663a68efc4692ab67ec27bc369f4b0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792076"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566516"
 ---
 # <a name="imapicontrol--iunknown"></a>IMAPIControl : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aktiviert und ein Button-Steuerelement deaktiviert und führt Aufgaben aus, wenn ein Benutzer von einer Clientanwendung aktivierte Steuerelement klickt. Dienstanbieter implementieren Control-Objekte zum Erstellen von benutzerdefinierter Schaltflächen auf Dialogfelder wie Konfiguration Property Sheets, die mithilfe der Anzeige Tabellen definiert sind. 
   
@@ -32,7 +32,7 @@ Weitere Informationen zum Arbeiten mit Tabellen anzeigen und Objekte zu steuern 
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Control-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Control-Objekte  <br/> |
 |Implementiert von:  <br/> |Dienstanbieter  <br/> |
 |Aufgerufen von:  <br/> |MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIControl  <br/> |

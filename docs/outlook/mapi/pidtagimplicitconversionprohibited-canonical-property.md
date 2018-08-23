@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c6cb5a86-0105-4743-9f8e-b832e898da52
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dcfaf9f4e71a13a8697da0cac98f7ea9cc3d8708
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7635dd24f4fbc5128d3d96556802ab2e3fe56e35
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794478"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571843"
 ---
 # <a name="pidtagimplicitconversionprohibited-canonical-property"></a>PidTagImplicitConversionProhibited (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Message Transfer Agent (MTA) tätigen implizite Nachricht Text Konvertierungen verboten wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IMPLICIT_CONVERSION_PROHIBITED  <br/> |
-|Bezeichner:  <br/> |0x0016  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IMPLICIT_CONVERSION_PROHIBITED  <br/> |
+|Kennung:  <br/> |0x0016  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft auf true festgelegt ist, muss das messaging-System keine inhaltskonvertierung für die Nachricht ausführen, wenn es für eine einzelne pro Empfänger mit der **PR_EXPLICIT_CONVERSION** ([PidTagExplicitConversion](pidtagexplicitconversion-canonical-property.md))-Eigenschaft explizit angefordert wird.
   

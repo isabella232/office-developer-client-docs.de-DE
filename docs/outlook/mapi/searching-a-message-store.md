@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9e8d4639-7507-4d98-b56f-a65be369dc40
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 90ed7da43d7f9e5e8b5f3024f1eee99a2d7a2b5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 74b63719f6d72e3c92cbcef6fdb26ee106d4b9aa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795471"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571836"
 ---
 # <a name="searching-a-message-store"></a>Suchen eines Nachrichtenspeichers
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clientanwendungen können Suchen über einen oder mehrere Ordner suchen Sie nach Nachrichten, die den Suchkriterien entsprechen. Die einfachste Suchverfahren umfasst das Anwenden einer Einschränkung zum Definieren von Kriterien und platzieren die Ergebnisse in einem Ordner-Ergebnisse für diese Suche oder bei einer vorherigen Suche explizit erstellt. Nicht alle Nachrichtenspeicher unterstützt diese Technik. 
 

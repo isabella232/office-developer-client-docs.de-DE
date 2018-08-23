@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 3a1f0aa2-813f-222c-f871-0501de5d9dec
 description: Enthält ein Codebeispiel in C++, das zeigt, wie Sie IID_IMessageRaw in IMsgStore::OpenEntry verwenden, um eine IMessage-Schnittstelle zu erhalten, die eine Nachricht in einer offline-Ordner-Datei (OST) verwaltet, ohne einen Download der gesamten Nachricht erzwingen, wenn der Client im Exchange-Cache ist Modus.
-ms.openlocfilehash: e32bf4f64bfb91979133ee983e45481b3d5b9732
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f094f5a7deae705ed64b912483726aeb409fb107
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791871"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22568105"
 ---
 # <a name="manage-messages-in-ost-without-invoking-a-synchronization-in-cached-exchange-mode"></a>Verwalten von Nachrichten in OST-Dateien ohne Aufrufen eine Synchronisierung im Exchange-Cache-Modus
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält ein Codebeispiel, das zeigt, wie Sie mit c++ `IID_IMessageRaw` in **[IMsgStore::OpenEntry](imsgstore-openentry.md)** abrufen, eine **[IMessage](imessageimapiprop.md)** -Schnittstelle, die eine Nachricht in einer offline-Ordner-Datei (OST) verwaltet ohne zu erzwingen einen Download des gesamten Meldung an, wenn der Client befindet sich in der Exchange-Cache-Modus. 
   

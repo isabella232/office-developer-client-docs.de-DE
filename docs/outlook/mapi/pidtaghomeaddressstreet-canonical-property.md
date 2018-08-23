@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 557fd222-8513-4e8a-b605-3def955107dc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bbff39fa100892a74b36d2ca51bab7788ae7ab0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0f22f9fef661f611adb9e47272d18f0a69d63f51
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794437"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572123"
 ---
 # <a name="pidtaghomeaddressstreet-canonical-property"></a>PidTagHomeAddressStreet (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Straße der Adresse eines Benutzers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOME_ADDRESS_STREET, PR_HOME_ADDRESS_STREET_A, PR_HOME_ADDRESS_STREET_W  <br/> |
-|Bezeichner:  <br/> |0x3A5D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOME_ADDRESS_STREET, PR_HOME_ADDRESS_STREET_A, PR_HOME_ADDRESS_STREET_W  <br/> |
+|Kennung:  <br/> |0x3A5D  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c9470496-fb37-4019-ae1b-b4f93ac55048
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f9c09e963ecbb5ddeecff1ad43e021d8718e0729
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 14d51b0af4828dc22127322f3f41f28b419e5ea8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794281"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22569918"
 ---
 # <a name="pidtagcountry-canonical-property"></a>PidTagCountry (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen des Landes/der Region des Empfängers. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_COUNTRY, PR_COUNTRY_A, PR_COUNTRY_W, PR_BUSINESS_ADDRESS_COUNTRY, PR_BUSINESS_ADDRESS_COUNTRY_A, PR_BUSINESS_ADDRESS_COUNTRY_W  <br/> |
-|Bezeichner:  <br/> |0x3A26  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_COUNTRY, PR_COUNTRY_A, PR_COUNTRY_W, PR_BUSINESS_ADDRESS_COUNTRY, PR_BUSINESS_ADDRESS_COUNTRY_A, PR_BUSINESS_ADDRESS_COUNTRY_W  <br/> |
+|Kennung:  <br/> |0x3A26  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert.
   

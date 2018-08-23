@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b1176ec-4126-43f5-856d-cbab8d622825
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a4e924489f2ec656f473f28407d528e9c2ddda5c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2efee531e277b6295b7d4bc299eefc789a805d34
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792628"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571087"
 ---
 # <a name="imsgstoresetlockstate"></a>IMsgStore::SetLockState
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sperrt oder entsperrt eine Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
@@ -58,7 +58,7 @@ S_OK
   
 > Der Sperrstatus der Nachricht wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::SetLockState** -Methode sperrt oder entsperrt eine Nachricht. **SetLockState** kann nur durch die MAPI-Warteschlange aufgerufen werden, während sie die Nachricht gesendet hat. 
   

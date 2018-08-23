@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6efe9dc3-e988-4042-ab02-2863b5e0f294
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 66a150cf3f83465840aa0e79a9ef921b1534f814
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 55da942e59c619dd384bef58349aa3a00d4a6d8c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794152"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22571472"
 ---
 # <a name="pidtagbodycrc-canonical-property"></a>PidTagBodyCrc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen CRC CRC-Prüfung Wert auf den Nachrichtentext an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_BODY_CRC  <br/> |
-|Bezeichner:  <br/> |0x0E1C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_BODY_CRC  <br/> |
+|Kennung:  <br/> |0x0E1C  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Nachrichtenspeicher können jeder CRC-Algorithmus, der einen PT_LONG Wert generiert. Es muss diese Eigenschaft als Teil der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode berechnen, wenn die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft festgelegt wurde, zum ersten Mal und wenn es später geändert wurde.
   

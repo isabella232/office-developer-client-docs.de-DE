@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 50cf1cac-c376-4bcd-9ede-8219b74ba200
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f94a0f9c7e4ec4a5c567a96e5ddb0dda25a318c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: aa57c042291b5ab71eb48c3f9f9b67fc1686b0a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794390"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570464"
 ---
 # <a name="pidtagformcontactname-canonical-property"></a>PidTagFormContactName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen eines Kontakts Informationen zu einem Formular. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FORM_CONTACT_NAME, PR_FORM_CONTACT_NAME_A, PR_FORM_CONTACT_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3303  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FORM_CONTACT_NAME, PR_FORM_CONTACT_NAME_A, PR_FORM_CONTACT_NAME_W  <br/> |
+|Kennung:  <br/> |0x3303  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Kontakt enthält normalerweise den Namen einer Person oder ein Alias, der für die Verwaltung des Formulars zuständig ist. 
   

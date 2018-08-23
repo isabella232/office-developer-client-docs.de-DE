@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2ee78458-7b51-4092-9c30-22ecafb5ce37
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 053a4cc0dca313ae1e72691383ffb2e1c80e8f88
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 620ca83396817de7acd0ce82b70c55c77da9d5ec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793536"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22570268"
 ---
 # <a name="pidlidfax1richtextformat-canonical-property"></a>PidLidFax1RichTextFormat (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das rich-Text-Format der Business Fax-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax1RTF  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax1RTF  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080B6  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
