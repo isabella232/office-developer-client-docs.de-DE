@@ -5,21 +5,21 @@ ms.date: 12/07/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 672fc380-a29b-4e99-9211-949fd5065723
-description: 'Letzte Änderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 15729f8d2c618f16fb5bebab885eaf610c09da77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte �nderung: Montag, 7. Dezember 2015'
+ms.openlocfilehash: 6369ea8948ae1996b6f88bcacd218b8dcf397306
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791862"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574692"
 ---
-# <a name="check-the-version-of-outlook"></a><span data-ttu-id="df352-103">Überprüfen Sie die Version von Outlook</span><span class="sxs-lookup"><span data-stu-id="df352-103">Check the version of Outlook</span></span>
+# <a name="check-the-version-of-outlook"></a><span data-ttu-id="89059-103">Überprüfen Sie die Version von Outlook</span><span class="sxs-lookup"><span data-stu-id="89059-103">Check the version of Outlook</span></span>
 
-<span data-ttu-id="df352-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="df352-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="89059-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="89059-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="df352-p101">Dieses Thema enthält ein Codebeispiel, in dem Informationen zur Version der installierten Versionen von Microsoft Outlook überpr�ft, ob die installierte Version Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007 oder Microsoft Outlook 2003 ist. überpr�fen der Version der Outlook ist manchmal erforderlich sind, um sicherzustellen, dass bei einem MAPI-Anwendung Aufrufe API-Elemente, die durch die aktuell ausgeführte Version von Outlook unterstützt werden.</span><span class="sxs-lookup"><span data-stu-id="df352-p101">This topic provides a code sample that checks version information of installed versions of Microsoft Outlook if the installed version is Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007, or Microsoft Outlook 2003. Checking the version of Outlook is sometimes necessary to ensure that a MAPI application calls API elements that are supported by the currently running version of Outlook.</span></span>
+<span data-ttu-id="89059-p101">Dieses Thema enth�lt ein Codebeispiel, in dem Informationen zur Version der installierten Versionen von Microsoft Outlook �berpr�ft, ob die installierte Version Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007 oder Microsoft Outlook 2003 ist. �berpr�fen der Version der Outlook ist manchmal erforderlich sind, um sicherzustellen, dass bei einem MAPI-Anwendung Aufrufe API-Elemente, die durch die aktuell ausgef�hrte Version von Outlook unterst�tzt werden.</span><span class="sxs-lookup"><span data-stu-id="89059-p101">This topic provides a code sample that checks version information of installed versions of Microsoft Outlook if the installed version is Microsoft Outlook 2013, Microsoft Outlook 2010, Microsoft Office Outlook 2007, or Microsoft Outlook 2003. Checking the version of Outlook is sometimes necessary to ensure that a MAPI application calls API elements that are supported by the currently running version of Outlook.</span></span>
 
-<span data-ttu-id="df352-p102">Im folgenden Codebeispiel  `PrintOutlookVersionString`, ruft Vollversion Zeichenfolgen mithilfe der **MsiProvideQualifiedComponent** und **MsiGetFileVersion** -Funktionen, wie in der Datei Msi.h im Microsoft Windows Software Development Kit (SDK) deklariert.  `PrintOutlookVersionString` gibt auch einen Zeiger auf eine Boolean-Variable, die angibt, ob eine 64-Bit-Version von Outlook installiert ist. Informationen zu den erwarteten Werten für die verschiedenen Teile einer Zeichenfolge Version für einige veröffentlichten Versionen von Outlook finden Sie unter [Gewusst wie: Bestimmen der Outlook-Versionsinformationen](http://support.microsoft.com/kb/870929).</span><span class="sxs-lookup"><span data-stu-id="df352-p102">The following code sample,  `PrintOutlookVersionString`, obtains full version strings by using the **MsiProvideQualifiedComponent** and **MsiGetFileVersion** functions, as declared in the Msi.h file in the Microsoft Windows Software Development Kit (SDK).  `PrintOutlookVersionString` also returns a pointer to a Boolean variable that indicates whether a 64-bit version of Outlook is installed. For information about the expected values for the different parts of a version string for some released versions of Outlook, see [How to determine Outlook version information](http://support.microsoft.com/kb/870929).</span></span>
+<span data-ttu-id="89059-p102">Im folgenden Codebeispiel  `PrintOutlookVersionString`, ruft Vollversion Zeichenfolgen mithilfe der **MsiProvideQualifiedComponent** und **MsiGetFileVersion** -Funktionen, wie in der Datei Msi.h im Microsoft Windows Software Development Kit (SDK) deklariert.  `PrintOutlookVersionString` gibt auch einen Zeiger auf eine Boolean-Variable, die angibt, ob eine 64-Bit-Version von Outlook installiert ist. Informationen zu den erwarteten Werten f�r die verschiedenen Teile einer Zeichenfolge Version f�r einige ver�ffentlichten Versionen von Outlook finden Sie unter [Gewusst wie: Bestimmen der Outlook-Versionsinformationen](http://support.microsoft.com/kb/870929).</span><span class="sxs-lookup"><span data-stu-id="89059-p102">The following code sample,  `PrintOutlookVersionString`, obtains full version strings by using the **MsiProvideQualifiedComponent** and **MsiGetFileVersion** functions, as declared in the Msi.h file in the Microsoft Windows Software Development Kit (SDK).  `PrintOutlookVersionString` also returns a pointer to a Boolean variable that indicates whether a 64-bit version of Outlook is installed. For information about the expected values for the different parts of a version string for some released versions of Outlook, see [How to determine Outlook version information](http://support.microsoft.com/kb/870929).</span></span>
   
 ```cpp
 void PrintOutlookVersionString()
@@ -172,7 +172,7 @@ Error:
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="df352-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="df352-110">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="89059-110">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="89059-110">See also</span></span>
 
-- [<span data-ttu-id="df352-111">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="df352-111">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
+- [<span data-ttu-id="89059-111">Übersicht über die MAPI-Programmierung</span><span class="sxs-lookup"><span data-stu-id="89059-111">MAPI Programming Overview</span></span>](mapi-programming-overview.md)
 
