@@ -1,5 +1,5 @@
 ---
-title: Unterstützung von mehrwertigen Eigenschaften in Nachrichtenspeicher
+title: Unterst�tzung von mehrwertigen Eigenschaften in Nachrichtenspeicher
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1e951ef6-899d-4277-8450-eb222a3d0ebf
-description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 13681a4ad0627ba5808c59e38db219e9f930e450
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7be7d3e13a9cae8628a3d6a6856c3a7ceef32c89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795683"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595216"
 ---
-# <a name="supporting-multivalued-properties-in-message-stores"></a><span data-ttu-id="af167-103">Unterstützung von mehrwertigen Eigenschaften in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="af167-103">Supporting Multivalued Properties in Message Stores</span></span>
+# <a name="supporting-multivalued-properties-in-message-stores"></a><span data-ttu-id="88cc4-103">Unterst�tzung von mehrwertigen Eigenschaften in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="88cc4-103">Supporting Multivalued Properties in Message Stores</span></span>
 
   
   
-<span data-ttu-id="af167-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="af167-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="88cc4-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="88cc4-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="af167-p101">The requirements for supporting properties that have multiple values are documented in [übersicht über die MAPI-Eigenschaft](mapi-property-overview.md). Multiple-value property support is not required for message store providers, but it is recommended, particularly for default message store providers. Some other features, such as folder form libraries, do require multiple-value property support.</span><span class="sxs-lookup"><span data-stu-id="af167-p101">The requirements for supporting properties that have multiple values are documented in [MAPI Property Overview](mapi-property-overview.md). Multiple-value property support is not required for message store providers, but it is recommended, particularly for default message store providers. Some other features, such as folder form libraries, do require multiple-value property support.</span></span>
+<span data-ttu-id="88cc4-p101">The requirements for supporting properties that have multiple values are documented in [�bersicht �ber die MAPI-Eigenschaft](mapi-property-overview.md). Multiple-value property support is not required for message store providers, but it is recommended, particularly for default message store providers. Some other features, such as folder form libraries, do require multiple-value property support.</span><span class="sxs-lookup"><span data-stu-id="88cc4-p101">The requirements for supporting properties that have multiple values are documented in [MAPI Property Overview](mapi-property-overview.md). Multiple-value property support is not required for message store providers, but it is recommended, particularly for default message store providers. Some other features, such as folder form libraries, do require multiple-value property support.</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="af167-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="af167-108">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88cc4-108">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="88cc4-108">See also</span></span>
 
 
 
-[<span data-ttu-id="af167-109">Implementieren von Nachrichten in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="af167-109">Implementing Messages in Message Stores</span></span>](implementing-messages-in-message-stores.md)
+[<span data-ttu-id="88cc4-109">Implementieren von Nachrichten in Nachrichtenspeicher</span><span class="sxs-lookup"><span data-stu-id="88cc4-109">Implementing Messages in Message Stores</span></span>](implementing-messages-in-message-stores.md)
 

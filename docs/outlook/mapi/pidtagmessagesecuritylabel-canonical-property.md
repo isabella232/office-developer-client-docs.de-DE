@@ -12,53 +12,53 @@ api_type:
 - HeaderDef
 ms.assetid: aae41f1b-19bb-40c7-8564-0c87a5a4e47c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 24cf7d8d7b025e5a013ce3a5c1bb03da5ae8a6a3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a6caa322e1d266be1fe56aecd89736e757067758
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794612"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594369"
 ---
-# <a name="pidtagmessagesecuritylabel-canonical-property"></a><span data-ttu-id="5f70b-103">PidTagMessageSecurityLabel (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="5f70b-103">PidTagMessageSecurityLabel Canonical Property</span></span>
+# <a name="pidtagmessagesecuritylabel-canonical-property"></a><span data-ttu-id="9ac88-103">PidTagMessageSecurityLabel (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="9ac88-103">PidTagMessageSecurityLabel Canonical Property</span></span>
 
   
   
-<span data-ttu-id="5f70b-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="5f70b-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="9ac88-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9ac88-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="5f70b-105">Enthält ein Sicherheitskennzeichen für eine Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="5f70b-105">Contains a security label for a message.</span></span>
+<span data-ttu-id="9ac88-105">Enthält ein Sicherheitskennzeichen für eine Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="9ac88-105">Contains a security label for a message.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="5f70b-106">Zugeordneten Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="5f70b-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="5f70b-107">PR_MESSAGE_SECURITY_LABEL</span><span class="sxs-lookup"><span data-stu-id="5f70b-107">PR_MESSAGE_SECURITY_LABEL</span></span>  <br/> |
-|<span data-ttu-id="5f70b-108">Bezeichner:</span><span class="sxs-lookup"><span data-stu-id="5f70b-108">Identifier:</span></span>  <br/> |<span data-ttu-id="5f70b-109">0x001E</span><span class="sxs-lookup"><span data-stu-id="5f70b-109">0x001E</span></span>  <br/> |
-|<span data-ttu-id="5f70b-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="5f70b-110">Data type:</span></span>  <br/> |<span data-ttu-id="5f70b-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="5f70b-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="5f70b-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="5f70b-112">Area:</span></span>  <br/> |<span data-ttu-id="5f70b-113">Server</span><span class="sxs-lookup"><span data-stu-id="5f70b-113">Server</span></span>  <br/> |
+|<span data-ttu-id="9ac88-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="9ac88-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="9ac88-107">PR_MESSAGE_SECURITY_LABEL</span><span class="sxs-lookup"><span data-stu-id="9ac88-107">PR_MESSAGE_SECURITY_LABEL</span></span>  <br/> |
+|<span data-ttu-id="9ac88-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="9ac88-108">Identifier:</span></span>  <br/> |<span data-ttu-id="9ac88-109">0x001E</span><span class="sxs-lookup"><span data-stu-id="9ac88-109">0x001E</span></span>  <br/> |
+|<span data-ttu-id="9ac88-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="9ac88-110">Data type:</span></span>  <br/> |<span data-ttu-id="9ac88-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="9ac88-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="9ac88-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="9ac88-112">Area:</span></span>  <br/> |<span data-ttu-id="9ac88-113">Server</span><span class="sxs-lookup"><span data-stu-id="9ac88-113">Server</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="5f70b-114">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5f70b-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9ac88-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="9ac88-114">Remarks</span></span>
 
-<span data-ttu-id="5f70b-115">Diese Eigenschaft bietet die Grundlage, auf der die **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md))-Eigenschaft eine Nachricht schützt.</span><span class="sxs-lookup"><span data-stu-id="5f70b-115">This property provides the basis on which the **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) property protects a message.</span></span> <span data-ttu-id="5f70b-116">Die Verknüpfung mit den Nachrichteninhalt wird durch das Token garantiert.</span><span class="sxs-lookup"><span data-stu-id="5f70b-116">Its association with the message content is guaranteed by the token.</span></span>
+<span data-ttu-id="9ac88-115">Diese Eigenschaft bietet die Grundlage, auf der die **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md))-Eigenschaft eine Nachricht schützt.</span><span class="sxs-lookup"><span data-stu-id="9ac88-115">This property provides the basis on which the **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) property protects a message.</span></span> <span data-ttu-id="9ac88-116">Die Verknüpfung mit den Nachrichteninhalt wird durch das Token garantiert.</span><span class="sxs-lookup"><span data-stu-id="9ac88-116">Its association with the message content is guaranteed by the token.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="5f70b-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="5f70b-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="9ac88-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="9ac88-117">Related resources</span></span>
 
-### <a name="header-files"></a><span data-ttu-id="5f70b-118">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="5f70b-118">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="9ac88-118">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="9ac88-118">Header files</span></span>
 
-<span data-ttu-id="5f70b-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="5f70b-119">Mapidefs.h</span></span>
+<span data-ttu-id="9ac88-119">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="9ac88-119">Mapidefs.h</span></span>
   
-> <span data-ttu-id="5f70b-120">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="5f70b-120">Provides data type definitions.</span></span>
+> <span data-ttu-id="9ac88-120">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="9ac88-120">Provides data type definitions.</span></span>
     
-<span data-ttu-id="5f70b-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="5f70b-121">Mapitags.h</span></span>
+<span data-ttu-id="9ac88-121">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="9ac88-121">Mapitags.h</span></span>
   
-> <span data-ttu-id="5f70b-122">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="5f70b-122">Contains definitions of properties listed as associated properties.</span></span>
+> <span data-ttu-id="9ac88-122">Enthält Definitionen von Eigenschaften, die als zugeordneten Eigenschaften aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="9ac88-122">Contains definitions of properties listed as associated properties.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="5f70b-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="5f70b-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ac88-123">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9ac88-123">See also</span></span>
 
 
 
-[<span data-ttu-id="5f70b-124">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="5f70b-124">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="9ac88-124">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9ac88-124">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="5f70b-125">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="5f70b-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="9ac88-125">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9ac88-125">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="5f70b-126">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="5f70b-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="9ac88-126">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="9ac88-126">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="5f70b-127">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="5f70b-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="9ac88-127">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="9ac88-127">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 
