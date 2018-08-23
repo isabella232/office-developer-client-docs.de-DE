@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2651759d-914b-4376-92b2-6d5d4ffb5530
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 97ecd7f6b94c9b57efeff5ba0e7e306d2129000f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ae13eea7ee2579254eb4aa057647e20cfa61f389
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794788"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566355"
 ---
 # <a name="pidtagphysicalforwardingprohibited-canonical-property"></a>PidTagPhysicalForwardingProhibited (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn eine Nachrichtenabsender physische Nachricht-Weiterleitung für einen bestimmten Empfänger verhindert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PHYSICAL_FORWARDING_PROHIBITED  <br/> |
-|Bezeichner:  <br/> |0x0C0F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PHYSICAL_FORWARDING_PROHIBITED  <br/> |
+|Kennung:  <br/> |0x0C0F  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

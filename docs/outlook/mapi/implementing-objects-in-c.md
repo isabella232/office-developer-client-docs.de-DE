@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 24fc4d78-726d-40ff-bad2-25dc298bd51a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 71a8dc6472051e72d990a5c5d6f026ae63f1df25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d07d756abded137d3268daf7dd0998f0c953cb1d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792570"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563947"
 ---
 # <a name="implementing-objects-in-c"></a>Implementieren von Objekten in C#
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clientanwendungen und Dienstanbieter in C# geschriebenen definieren MAPI-Objekten, indem Sie erstellen eine Datenstruktur und ein Array von geordnete Funktionszeiger als virtuelle Funktion Tabellen oder Vtable bezeichnet. Ein Zeiger auf die Vtable muss das erste Element der Datenstruktur.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6511368c-9777-497e-9eea-cf390c04b92e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cb777074d1657a3ee5c2f1e9f70d2b304858c1b2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2a50a5f536e337e5ca37e61f17d4dfd40aa9c51e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792455"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565333"
 ---
 # <a name="imapitablefindrow"></a>IMAPITable::FindRow
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Findet die nächste Zeile in einer Tabelle, die bestimmte Suchkriterien entspricht, und verschiebt den Cursor auf diese Zeile.
   
@@ -83,7 +83,7 @@ MAPI_W_POSITION_CHANGED
   
 > Der Aufruf war erfolgreich, aber die Textmarke, die in den Vorgang verwendet wird nicht mehr in der gleichen Zeile als bei der letzten Verwendung festgelegt; Wenn die Textmarke nicht verwendet wurden, ist es nicht mehr in derselben Position wie bei der es erstellt wurde. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Finden Sie unter [Verwendung von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable** -Methode sucht nach der ersten Zeile in der Tabelle auf eine Gruppe von in der auf das durch den Parameter _LpRestriction_ **SRestriction** -Struktur beschriebenen Suchkriterien erfüllen. 
   

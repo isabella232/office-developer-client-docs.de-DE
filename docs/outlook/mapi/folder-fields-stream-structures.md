@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: edbc9e6c-008c-4c13-9a0c-cb47ac0f3686
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d6724914896fe7c40e9a456785aa5c92b84532fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1ba4be04e7241a9c58138ec6b4ef72f7e0f14105
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791704"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22567160"
 ---
 # <a name="folder-fields-stream-structures"></a>Ordnerfelder-Streamstrukturen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Nachricht [PidTagUserFields](pidtaguserfields-canonical-property.md) -Eigenschaft enthält einen binären Datenstrom, FolderUserFields, die die benutzerdefinierte Felddefinitionen Ordner enthält. In diesem Thema werden die Stream-Strukturen für benutzerdefinierte Felddefinitionen Ordner. 
 
@@ -94,7 +94,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
 
 **FldType** Enumeration-Werte werden in der folgenden Tabelle aufgeführt. 
   
-|Name|Wert  |Bedeutung|
+|Name|Wert|Bedeutung|
 |:-----|:-----|:-----|
 |ftNull  <br/> |0 x 0  <br/> |In diesem Feldtyp wird verwendet, um ein Array von Felddefinitionen Null beenden.  <br/> |
 |ftString  <br/> |0 x 1  <br/> |Text  <br/> |
@@ -130,7 +130,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     |FCAPM_MULTILINE_TEXT  <br/> |0 x 00000100  <br/> |Das Feld kann mehrere Textzeilen enthalten.  <br/> |
     |FCAPM_PERCENT  <br/> |0 x 01000000  <br/> |In diesem Feld der der Typ FtFloat ist ein Prozentsatz-Feld.  <br/> |
     |FCAPM_DATEONLY  <br/> |0 x 01000000  <br/> |Dieses Feld von der FtTime Typ ist nur Date-Time-Feld ein.  <br/> |
-    |FCAPM_UNITLESS  <br/> |0 x 01000000  <br/> |Für dieses Feld die FtInteger Typ ist keine Einheit in Anzeigeformat zulässig ist; beispielsweise Formate wie "Computer - 640 k..." sind nicht zulässig.  <br/> |
+    |FCAPM_UNITLESS  <br/> |0 x 01000000  <br/> |Für dieses Feld die FtInteger Typ ist keine Einheit in Anzeigeformat zulässig ist; beispielsweise Formate wie "Computer - 640 k.." sind nicht zulässig.  <br/> |
     |FCAPM_CAN_EDIT_IN_ITEM  <br/> |0 x 80000000  <br/> |Das Feld kann im Element bearbeitet werden: Dies ist insbesondere für benutzerdefinierte Formulare.  <br/> |
    
 - **DwString**: DWORD-Wert (4 Bytes). Finden Sie im ersten folgenden Hinweis.

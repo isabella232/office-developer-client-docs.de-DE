@@ -14,18 +14,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: db78a09c-ebef-47cc-8623-40abe117aa08
 description: Dieses Thema enthält Tabellen mit Fehlercodes für Project Server Interface (PSI) in Project Server 2013. In den Tabellen werden nach Funktionsbereich und fehlercodebereich angeordnet.
-ms.openlocfilehash: 9d63ed0dde638d123098ec4ffb8de083ddbb4fc6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4d4960c0452c90e267c48ee06de014b9e04b038f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796346"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22564143"
 ---
 # <a name="project-server-error-codes"></a>Project Server-Fehlercodes
 
 Dieses Thema enthält Tabellen mit Fehlercodes für Project Server Interface (PSI) in Project Server 2013. In den Tabellen werden nach Funktionsbereich und fehlercodebereich angeordnet.
    
-Project Server 2013-Prozesse und PSI-Methoden haben Code Fehlernummern, die in der Regel von Funktionsbereich angeordnet sind. Die [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSErrorID.aspx) -Aufzählung wird in [WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/WebSvcProject.PSErrorID.aspx)dupliziert. Sie können die Fehlercodes in alphabetischer Reihenfolge nach Name aufgelistet. In diesem Thema werden die Fehlercodes in Tabellen, die von der PSI-Klasse oder Funktionsbereich und von einer Fehlernummer Bezeichner (ID) angeordnet werden. 
+Project Server 2013-Prozesse und PSI-Methoden haben Code Fehlernummern, die in der Regel von Funktionsbereich angeordnet sind. Die [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/en-us/library/microsoft.office.project.server.library.pserrorid_di_pj14mref(v=office.14).aspx) -Aufzählung wird in [WebSvcProject.PSErrorID](https://msdn.microsoft.com/en-us/library/office/websvcproject.pserrorid_di_pj14mref.aspx)dupliziert. Sie können die Fehlercodes in alphabetischer Reihenfolge nach Name aufgelistet. In diesem Thema werden die Fehlercodes in Tabellen, die von der PSI-Klasse oder Funktionsbereich und von einer Fehlernummer Bezeichner (ID) angeordnet werden. 
   
 > [!NOTE]
 >  Viele der Fehlercodes haben allgemeingültigen Charakter und können auf mehrere Ursachen verweisen. Gehen Sie wir folgt vor, um weitere Informationen zu Fehlern abzurufen: 
@@ -1610,8 +1610,6 @@ CustomFieldRequiredValueNotProvided
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Microsoft.Office.Project.Server.Library.PSErrorID](https://msdn.microsoft.com/library/Microsoft.Office.Project.Server.Library.PSErrorID.aspx)
-- [WebSvcProject.PSErrorID](https://msdn.microsoft.com/library/WebSvcProject.PSErrorID.aspx)
 - [Projekt Konzept- und Anleitungsthemen Artikel](project-conceptual-and-how-to-articles.md)
 - [SQL Server Profiler](http://msdn.microsoft.com/library/3ad5f33d-559e-41a4-bde6-bb98792f7f1a.aspx)
 - [Project Server 2010: Was Sie erwartet, wenn Sie die unerwarteten abrufen](http://blogs.msdn.com/b/brismith/archive/2010/03/24/project-server-2010-what-to-expect-when-you-get-the-unexpected.aspx)

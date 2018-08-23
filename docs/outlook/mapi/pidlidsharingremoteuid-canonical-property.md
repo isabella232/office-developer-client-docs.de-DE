@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: cfe3b728-317b-4871-adea-e2fdf8441da7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cb8b4a7c71f3ad81949f3eac6cab230f40c6d487
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cd42711fc5647f16b33677a330e71d141f1962d7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793793"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22566866"
 ---
 # <a name="pidlidsharingremoteuid-canonical-property"></a>PidLidSharingRemoteUid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Eintrags-ID des remote-Ordners freigegeben. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSharingRemoteUid  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSharingRemoteUid  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Sharing  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008A06  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf die hexadezimale Zeichenfolgendarstellung des Werts der Eigenschaft PR_ENTRYID ([PidTagEntryId](pidtagentryid-canonical-property.md)) für den freigegebenen Ordner festgelegt werden. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   

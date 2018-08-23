@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1ba40cc2-ba27-4d75-9682-c536cf3a0d58
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8303a60ee0d61a56c79fadf471bc6111fcbde7d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 49e5e3f84d747210ba42870be5fc328c83bae883
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794133"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22565900"
 ---
 # <a name="pidtagautoforwarded-canonical-property"></a>PidTagAutoForwarded (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Client eine X-MS-Exchange-Organisation-AutoForwarded Kopfzeilenfeld anfordert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AUTO_FORWARDED  <br/> |
-|Bezeichner:  <br/> |0 x 0005  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AUTO_FORWARDED  <br/> |
+|Kennung:  <br/> |0 x 0005  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Berichterstattung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft FALSE oder nicht verwendeten gesetzt ist, werden keine X-MS-Exchange-Organisation-AutoForwarded Kopfzeilenfeld erstellt.
   

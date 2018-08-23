@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: c42f2539-f7d6-464a-a82c-f0ac51823168
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 29579f91a85e74b568610c749d9408f813f157f6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7f36562ba189cd8f547056b93c0f0373ee9a3360
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795065"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563492"
 ---
 # <a name="pidtagrulesequence-canonical-property"></a>PidTagRuleSequence (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Wert verwendet, um die Reihenfolge zu bestimmen, in der Regeln ausgewertet und ausgeführt werden. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_SEQUENCE  <br/> |
-|Bezeichner:  <br/> |0x6676  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_SEQUENCE  <br/> |
+|Kennung:  <br/> |0x6676  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Regeln werden in der Reihenfolge ihrer aufsteigender Reihenfolge der dieser Wert ausgewertet. Die Auswertungsreihenfolge für Regeln mit den gleichen Wert in dieser Eigenschaft ist nicht definiert.
   
