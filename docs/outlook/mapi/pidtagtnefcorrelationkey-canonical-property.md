@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7f05c8c-59b4-4d5b-8e70-ebcde5f2ed45
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5a0216616d9a35ef5ad4509bc377044c1d217d79
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 760196668ffb3c486803f27b50ff809177e8e6f3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795256"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588615"
 ---
 # <a name="pidtagtnefcorrelationkey-canonical-property"></a>PidTagTnefCorrelationKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der eine Anlage Transport Neutral Encapsulation Format (TNEF) mit einer Nachricht verknüpft.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TNEF_CORRELATION_KEY  <br/> |
-|Bezeichner:  <br/> |0x007F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TNEF_CORRELATION_KEY  <br/> |
+|Kennung:  <br/> |0x007F  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es wird empfohlen, dass TNEF-Anlage Unterobjekte diese Eigenschaft verfügbar machen. Diese Eigenschaft bestimmt, ob eine eingehende TNEF-Datei an die Nachricht gehört, für die Sie verbunden ist. Es wird hauptsächlich von Transportanbieter und Gateways verwendet.
   

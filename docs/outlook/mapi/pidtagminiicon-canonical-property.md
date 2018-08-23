@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a436b590-63f3-413c-a9c2-7664567e0ff0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 04d78bddc7bae27ba23cccf676eb6e7412ffc0db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5514e0553f719e2e875aad7001bb38a6a52e8e08
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794629"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589777"
 ---
 # <a name="pidtagminiicon-canonical-property"></a>PidTagMiniIcon (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Bitmap eines Symbols halber Größe für ein Formular enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MINI_ICON  <br/> |
-|Bezeichner:  <br/> |0x0FFC  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MINI_ICON  <br/> |
+|Kennung:  <br/> |0x0FFC  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält ein Bild mit 32 x 32 Pixeln eines Symbols, identisch mit den Inhalt ein. Gelten erhebliche ICO-Datei, aber nur der oberen linken Ecke 16 x 16 Pixel. Diese Eigenschaft wird normalerweise übernommen aus der. ICO-Datei in der SmallIcon-Zeile der entsprechenden Abschnitt der Konfigurationsdatei Formular [Beschreibung] angegeben.
   

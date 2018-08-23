@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8ebb21ca-5ad1-4dcc-97b6-2390664b5d8d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1b55703c9ad12e3645e6e9cb3dcfcbdf21b90d25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8540176b7675917dde7c618c40142605e9622282
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791631"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586221"
 ---
 # <a name="entryid"></a>ENTRYID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Eintrag Bezeichner für ein MAPI-Objekt. 
   
@@ -71,7 +71,7 @@ MAPI_THISSESSION
   
 > Gibt ein Array von binären Daten, die vom Dienstanbieter verwendet werden. Die Client-Anwendung kann nicht in Array verwenden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **ENTRYID** -Struktur wird von der Nachricht speichern und Beheben von adressbuchanbietern implementierte zum Erstellen von eindeutiger Bezeichnern für Objekte. Eintragsbezeichner werden verwendet, um die folgenden Typen von Objekten zu identifizieren: 
   

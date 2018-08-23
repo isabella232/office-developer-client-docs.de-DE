@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: f3fa392a-c3b1-46dd-bf9b-5ce310719542
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3ac90910e143d05c17b73aa6a1062cd0999b0d3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0c85656c7e618a2329470f8326f434031726d1a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793529"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590932"
 ---
 # <a name="pidlidemail3originaldisplayname-canonical-property"></a>PidLidEmail3OriginalDisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den dritten Anzeigenamen, der die die e-Mail-Adresse entspricht, die für den Kontakt angegeben ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail3OriginalDisplayName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail3OriginalDisplayName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080A4  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn der Wert der Eigenschaft **dispidEmail3AddrType** ([PidLidEmail3AddressType](pidlidemail3addresstype-canonical-property.md)) "SMTP" ist, sollte der Wert der jeweiligen **dispidEmail3OriginalDisplayName** -Eigenschaft den Wert der jeweiligen **entsprechen. dispidEmail3EmailAddress** ([PidLidEmail3EmailAddress](pidlidemail3emailaddress-canonical-property.md)). Der Zweck dieser Eigenschaft wird eine alternative benutzerfreundliche Adresse angezeigt, die in der **dispidEmail3EmailAddress**entspricht.
   

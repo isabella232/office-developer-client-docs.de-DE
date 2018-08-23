@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93ac63ae-f254-45e1-a9b1-347d69d2ed9f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 143ca03a5e98d638d29394f5c0803e349ab4de25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: aead09eb10a3015a54867f14011c56b686bc8624
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792471"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586480"
 ---
 # <a name="imapitableseekrow"></a>IMAPITable::SeekRow
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Verschiebt den Cursor an eine bestimmte Position in der Tabelle an.
   
@@ -79,7 +79,7 @@ MAPI_W_POSITION_CHANGED
   
 > Der Aufruf war erfolgreich, aber im _BkOrigin_ -Parameter angegebene Textmarke wird nicht mehr in der gleichen Zeile festgelegt, wie bei der es zuletzt verwendet wurde. Wenn die Textmarke nicht verwendet wurden, ist es nicht mehr an derselben Position wie bei der es erstellt wurde. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::SeekRow** -Methode stellt eine neue BOOKMARK_CURRENT Position für den Cursor her. Der Parameter _lRowCount_ gibt die Anzahl der Zeilen, die der Cursor bewegt wird und die Richtung der Bewegung an. 
   

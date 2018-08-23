@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: a0c2014a-6112-4c90-9be0-babb2e377402
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c8e4edd41d05d6825dd2032b0e0fee7205139e9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 09b7c137d9d6af66421a93557c2669557482117b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793664"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587159"
 ---
 # <a name="pidlidmileage-canonical-property"></a>PidLidMileage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Mileage-Informationen, die einem Element zugeordnet ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidMileage  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidMileage  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008534  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

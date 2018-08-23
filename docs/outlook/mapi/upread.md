@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 568f2336-cb4d-3f2c-a304-d29cdb0bcbcc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fa3c0b90a64c90a7c854cb22ac75438fa5fca23f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 887c66277b54e2e14c7f67c76b8e9dd4fa8bc719
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795811"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589231"
 ---
 # <a name="upread"></a>UPREAD
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen zum Hochladen von Elementen Zustand "gelesen" während der [Upload lesen Status Zustand](upload-read-status-state.md).
   

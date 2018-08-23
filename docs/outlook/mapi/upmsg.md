@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5fe3956b-819a-3edf-0e49-7a44bcfbabcd
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e281907931a493e82c44913a7c26f6df55876e70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: fa8b84e7baed74bda25ec1b20bd79fb121a838fd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795816"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587572"
 ---
 # <a name="upmsg"></a>UPMSG
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen zum Hochladen eines Outlook-Elements während der [Nachrichtenstatus hochladen](upload-message-state.md).
   

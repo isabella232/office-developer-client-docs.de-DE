@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ec8b7486-b547-4a4e-96e5-1fc825b23f3d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aa1c4979ce66a0e32aea7b04ef4412679545b3de
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cc4a8757586da8ec3a3d51f132fcc583ece748f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794535"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588951"
 ---
 # <a name="pidtagipmtaskentryid-canonical-property"></a>PidTagIpmTaskEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook-Aufgaben enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IPM_TASK_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x36D4  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IPM_TASK_ENTRYID  <br/> |
+|Kennung:  <br/> |0x36D4  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft lesen oder mithilfe des Protokolls-Eigenschaft und Stream-Objekt geschrieben. Es ist lesen und Schreiben in den Ordner Posteingang oder Root. Die Implementierung muss den Ordner Posteingang verwenden, wenn der Informationsspeicher, die von der primären messaging-Benutzer ist und den Stammordner verwendet werden muss, wenn der Informationsspeicher, ein Stellvertreter ist.
   

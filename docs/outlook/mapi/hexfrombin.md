@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12b95657-1926-4a24-be63-40305ea6f990
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c1d333c7c019c30c3f6c6b3567453f2f022d4b5d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8f68de5e18d84c728241c188b932f99456f5be8c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791859"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584835"
 ---
 # <a name="hexfrombin"></a>HexFromBin
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konvertiert eine binäre Zahl in eine String-Darstellung eine hexadezimale Zahl. 
   
@@ -59,7 +59,7 @@ void HexFromBin(
 
 None.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **HexFromBin** -Funktion verwendet einen Zeiger auf einer Einheit von binären Daten, deren Größe von der _Cb_ -Parameter angegeben ist. Es gibt in der Zeichenfolge _su_ innerhalb (2 * _Cb_) + 1 Byte an Arbeitsspeicher, eine Darstellung dieses Binärdaten in Hexadezimalzahlen. Wenn der Bytewert Dezimalzahl 10 ist, beispielsweise werden die hexadezimale Zeichenfolge 0A, dies der Fall ist ein Byte in die beiden Bytes in der Zeichenfolge konvertiert. 
   

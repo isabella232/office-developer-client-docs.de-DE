@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a3c5d937-642b-463b-b5a0-5d099e651895
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 87be00bce55fabda6271b472a9e5c446aaf8054a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9cd0442a715fb5441ab8efefb9574f09f2e2c1ff
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792656"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587859"
 ---
 # <a name="imslogonadvise"></a>IMSLogon::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert ein Objekt mit einem Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher Nachricht. Nachrichtenspeicher sendet dann Benachrichtigungen zu Änderungen an das registrierte Objekt.
   
@@ -81,7 +81,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Vorgang wird durch MAPI oder durch eine oder mehrere Dienstanbieter nicht unterstützt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nachricht-Anbieter implementiert die **IMSLogon::Advise** -Methode, um ein Objekt für Benachrichtigung Rückrufe registrieren. Wenn eine Änderung für das angegebene Objekt auftritt, überprüft der Anbieter finden Sie unter welche Ereignis Maskenbit im Parameter _UlEventMask_ gesetzt wurde und somit die Art der Änderung. Wenn ein bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfängerobjekt durch den Parameter _LpAdviseSink_ Sie das Ereignis melden angegeben. Daten, die in der Benachrichtigungsstruktur der **OnNotify** Routine übergeben wird das Ereignis beschrieben. 
   

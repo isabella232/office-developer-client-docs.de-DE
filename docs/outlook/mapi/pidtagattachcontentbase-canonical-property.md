@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 35c10264-6998-4c46-8cef-82708c96d9c7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cff0e2a5ffdb3b85e73b24ec8a30b7d88637ce48
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 40e2efbf512265dffeee43d09e85879e8c3a0e56
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794082"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582420"
 ---
 # <a name="pidtagattachcontentbase-canonical-property"></a>PidTagAttachContentBase (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Inhalte base Kopfzeile der e-Mail-Anlagen Multipurpose Internet Mail Extensions (MIME) enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_CONTENT_BASE, PR_ATTACH_CONTENT_BASE_A, PR_ATTACH_CONTENT_BASE_W  <br/> |
-|Bezeichner:  <br/> |0x3711  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_CONTENT_BASE, PR_ATTACH_CONTENT_BASE_A, PR_ATTACH_CONTENT_BASE_W  <br/> |
+|Kennung:  <br/> |0x3711  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen die base Content Kopfzeile für den entsprechenden MIME Textteil dar. 
   

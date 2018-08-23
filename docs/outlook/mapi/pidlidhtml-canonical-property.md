@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5598cbaf-cb9a-4d3a-b123-9108a7aa7c1c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d05d34c18152c397df04bcf5a82a79d9f1fdd55e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 636aa4d7f20dbd33676bbe65f38f6a9fab25a347
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793622"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587523"
 ---
 # <a name="pidlidhtml-canonical-property"></a>PidLidHtml (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Kontakt Business Webseiten-URL an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidHTML  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidHTML  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000802B  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft sollte falls vorhanden, die den Wert der Eigenschaft **PR_BUSINESS_HOME_PAGE** ([PidTagBusinessHomePage](pidtagbusinesshomepage-canonical-property.md)) identisch.
   

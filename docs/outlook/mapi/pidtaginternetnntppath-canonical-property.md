@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8673bb7d-d6dc-4087-95d6-9479b0a59fc4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 05799e5bf9f987c28035d07bcd218e75651e5ae0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e265b646aa9942efafe8de352cc1d7939dec87a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794500"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592752"
 ---
 # <a name="pidtaginternetnntppath-canonical-property"></a>PidTagInternetNntpPath (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wird der Pfad des MIME-Header.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INTERNET_NNTP_PATH, PR_INTERNET_NNTP_PATH_A, PR_INTERNET_NNTP_PATH_W  <br/> |
-|Bezeichner:  <br/> |0x1038  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INTERNET_NNTP_PATH, PR_INTERNET_NNTP_PATH_A, PR_INTERNET_NNTP_PATH_W  <br/> |
+|Kennung:  <br/> |0x1038  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    

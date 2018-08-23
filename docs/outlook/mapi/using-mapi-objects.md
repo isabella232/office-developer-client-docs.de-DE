@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e342c1bd-8bee-4b02-a93f-e3941f4716c1
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a355faf85a44f6257b77b7171aa965faabf57fe9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2b66b450318c802e773c2f2c47e4a39500c582d6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795833"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592771"
 ---
 # <a name="using-mapi-objects"></a>Verwenden von MAPI-Objekten
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Clients und -Dienstanbieter verwenden MAPI-Objekten durch Aufrufen der Methoden in ihren schnittstellenimplementierungen. Dies ist die einzige Möglichkeit, MAPI-Objekten verwendet werden können. Methoden, die von einem Objekt außerhalb einer MAPI-Schnittstelle implementiert sind werden nicht öffentlich zugegriffen. Da ein Objekt Schnittstellen über Vererbung verknüpft sind, kann Benutzer ein Objekt Methoden in der Basis-Schnittstelle oder eines der geerbten Schnittstellen aufrufen, als ob sie die gleiche Benutzeroberfläche angehören. 
   

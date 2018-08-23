@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9ed166b4-6b7b-478f-bbe5-4115bb818ac0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c8d46ac6f47eb4dc68aebfa4562403ef1b738213
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: ad891a9884e72aa352dc114232cd5951c590272f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791518"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585101"
 ---
 # <a name="deleting-a-message"></a>Löschen einer Nachricht
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Client kann eine Nachricht löschen, wenn es geöffnet ist und der Benutzer ist es lesen oder wenn es geschlossen wird, und der Benutzer wird die Inhaltstabelle anzeigen. Um ein Benutzer eine Nachricht versehentlich entfernen zu schützen, definiert MAPI Löschen von Nachrichten als zwei Schritten zusammen:
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: caceddf1-0f7c-47b5-97bf-17ffe3440a6c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ab92aee6a8254a16c48352e371b711932bbe7427
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cff866ce73eb6ada45a2b629a6c95c69ad189045
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792259"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587824"
 ---
 # <a name="imapiprogressgetmin"></a>IMAPIProgress::GetMin
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den kleinsten Wert in der [IMAPIProgress::SetLimits](imapiprogress-setlimits.md) -Methode für die Fortschritt Informationen angezeigt werden. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die minimale Anzahl von Elementen in der Vorgang wurde abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Mindestwert stellt den Anfang des Vorgangs in numerische Form dar. Der Wert kann einen globalen Höchstwert zur Darstellung des Bereichs der gesamte Fortschrittsanzeige oder ein lokaler Wert, der zum Darstellen eines Teils der Anzeige sein. 
   
@@ -78,7 +78,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md)
   

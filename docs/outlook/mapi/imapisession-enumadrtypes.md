@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a3702a4-8a6b-4c0c-a90f-02be3a2bfa05
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6bd13eb7180302a5ab770586cf36856ca5a22676
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 050068b542616d1ad4d133b289aba46db2888519
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792302"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587817"
 ---
 # <a name="imapisessionenumadrtypes"></a>IMAPISession::EnumAdrTypes
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Veraltet. Gibt die behandelt werden können Adresstypen aller Anbieter für den Transport in der Sitzung zurück. 
   
@@ -59,7 +59,7 @@ S_OK
   
 > Die Adresstypen wurden erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::EnumAdrTypes** -Methode gibt eine Liste der durch alle aktiven Transportanbieter behandelt werden kann Adresstypen in der Sitzung zurück. Die Adresstypen für Transportanbieter, die derzeit nicht geladen werden, sind nicht in der Liste enthalten. Transportanbieter registrieren, um eine oder mehrere Adresstypen behandeln, wenn MAPI ihre [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode aufruft. 
   

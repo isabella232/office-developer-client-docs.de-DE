@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f60c65e3-b55f-cb68-746e-d0a8cd862d4d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7abc62938b3c33e42adedfe8ccd66e072314e333
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a74a6639023ae6ffddeabd03970b609e7b7babe1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791777"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588454"
 ---
 # <a name="gender"></a>Geschlecht
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die möglichen Werte für das Geschlecht der messaging-Benutzer an.
   

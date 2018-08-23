@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: edac715c-6edb-4b05-82e5-c08c3c7cb6d4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a00a9b2200f76dfd600f72bf387467b5792599c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 135db8d690d4d4bd610bd15893c358fedddb4605
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795430"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589280"
 ---
 # <a name="scbinfromhexbounded"></a>ScBinFromHexBounded
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konvertiert den angegebenen Teil einer Zeichenfolgendarstellung eine hexadezimale Zahl in eine binäre Zahl. 
   

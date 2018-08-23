@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f2b2aca7-757f-4260-96a5-d0af55189711
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: afbef333af46051284fa51d52c2e3f77607b0b13
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ee7d729000fbda895918458993437fd4fe72e370
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795639"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591611"
 ---
 # <a name="status-tables"></a>Statustabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Statustabelle enthält Informationen, die sich auf den Status der aktuellen Sitzung beziehen. Es wird eine Statustabelle für jede MAPI-Sitzung, die durch MAPI und Dienstanbieter bereitgestellten Informationen enthält. MAPI stellt Daten für drei Zeilen: eine Zeile für das MAPI-Subsystem, eine Zeile für die MAPI-Warteschlange und eine Zeile für die integrierte Adressbuch. Da Transportanbieter Statusinformationen an die Statustabelle bereitstellen erforderlich sind, ist eine Zeile für jedes Adressbuchhierarchie aktiv. Address Book und Message-Anbieter können auswählen, ob die Statustabelle zu unterstützen. 
   

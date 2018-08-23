@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 480ec0dc-6c04-4284-99da-aa4b26f5d7d0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0e393170601c52f04c20fddd3362462bc2d14f9b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e65e6032eea158bf358fc91dcb0fdf3032d7b3c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794771"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588545"
 ---
 # <a name="pidtagotheraddresscity-canonical-property"></a>PidTagOtherAddressCity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält dem Namen der die e-Mail-Nachrichten des Benutzers anderen Ort wie die Stadt oder Ort.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OTHER_ADDRESS_CITY, PR_OTHER_ADDRESS_CITY_A, PR_OTHER_ADDRESS_CITY_W  <br/> |
-|Bezeichner:  <br/> |0x3A5F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OTHER_ADDRESS_CITY, PR_OTHER_ADDRESS_CITY_A, PR_OTHER_ADDRESS_CITY_W  <br/> |
+|Kennung:  <br/> |0x3A5F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

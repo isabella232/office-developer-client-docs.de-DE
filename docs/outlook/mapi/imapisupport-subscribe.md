@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e6baaff1-446e-431a-a09b-9b529153382b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6658f1c4bcfaf7557d9b53c5e70d87e124475580
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: beeca6ba958c38e12fba7dbc2884c81e58bdf3c4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792448"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590120"
 ---
 # <a name="imapisupportsubscribe"></a>IMAPISupport::Subscribe
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert ein Advise-Empfänger Erhalt von Benachrichtigungen über MAPI an.
   
@@ -105,7 +105,7 @@ S_OK
   
 > Die benachrichtigungsregistrierung war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::Subscribe** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **Abonnieren** von einem ihrer **Advise** -Methoden, um MAPI, um die Benachrichtigungen verwalten zu ermöglichen. 
   

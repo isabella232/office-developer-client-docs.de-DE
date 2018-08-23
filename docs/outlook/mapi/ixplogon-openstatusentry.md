@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 261d5f7c-bb61-4e1d-aa41-cca224c63f8e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0e96c0b99f0a5f7511ed59b483ab9409eafad882
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7cb77308ebc7229adcab290fc8e1f9e11ce45065
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792872"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587019"
 ---
 # <a name="ixplogonopenstatusentry"></a>IXPLogon::OpenStatusEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet die Adressbuchhierarchie Status-Objekt.
   
@@ -64,7 +64,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::OpenStatusEntry** -Methode auf, wenn eine Clientanwendung für die Eintrags-ID in der Adressbuchhierarchie Status Tabellenzeile eine **OpenEntry** -Methode aufruft. **OpenStatusEntry** öffnet ein Objekt mit der **IMAPIStatus** -Schnittstelle in bestimmten Transport Anbieter Anmeldung zugeordnet. Dieses Objekt wird dann verwendet, um die Clientanwendungen zum Aufrufen von Methoden (z. B. so konfigurieren Sie die Sitzung neu mithilfe [der SettingsDialog](imapistatus-settingsdialog.md) oder Überprüfen Sie den Status der die Sitzung mithilfe der [ **IMAPIStatus** aktivieren IMAPIStatus::ValidateState](imapistatus-validatestate.md) Methode). 
   

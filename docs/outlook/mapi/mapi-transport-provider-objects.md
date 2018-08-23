@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4f28fab8-2ce1-4398-a941-6d718c9bbd6a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2d7311857ff54ef253fd00634671f4a510443f19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: de0334ee9a90da38e472571314136195c84a7866
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793099"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592703"
 ---
 # <a name="mapi-transport-provider-objects"></a>MAPI-Transport-Anbieter-Objekte
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zusätzlich zu den standardmäßigen Provider und Logon-Objekten, die von allen Dienstanbietern implementiert werden Transportanbieter erforderlich, um einem Statusobjekt implementiert werden. Implementieren ein Statusobjekt ist für die anderen Anbieter Diensttypen optional. Muss allerdings MAPI für Transportanbieter. Transportanbieter, die das Herunterladen von Nachrichtenkopfzeilen von einem Remoteserver unterstützen, implementieren auch einen Ordner und eine Tabelle. 
   

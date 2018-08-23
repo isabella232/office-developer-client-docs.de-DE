@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c32493fa-aa42-485b-9ea4-f93b835906df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9da9a13f87eac097fba078da1f1d6c3f78f69c0e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8b15f12c9a7ac2041c895b935098f9681e4b3a3c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792637"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589952"
 ---
 # <a name="imsgstorefinishedmsg"></a>IMsgStore::FinishedMsg
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aktiviert den Nachricht-Speicher-Anbieter für die Verarbeitung für eine gesendete Nachricht. Diese Methode ist nur durch die MAPI-Warteschlange aufgerufen.
   
@@ -59,7 +59,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Nachrichtenanbieter unterstützt keine Verarbeitung von gesendeten Nachrichten. Dieser Fehlerwert wird zurückgegeben, wenn der Aufrufer nicht die MAPI-Warteschlange befindet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::FinishedMsg** -Methode führt die Verarbeitung für eine gesendete Nachricht. Löschen der Nachricht in einem anderen Ordner oder beide Aktionen verschieben betreffen diese Verarbeitung. Die Art der Verarbeitung hängt davon ab, ob die **PR_DELETE_AFTER_SUBMIT** ([PidTagDeleteAfterSubmit](pidtagdeleteaftersubmit-canonical-property.md)) und **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md)) Eigenschaften festgelegt werden. 
   

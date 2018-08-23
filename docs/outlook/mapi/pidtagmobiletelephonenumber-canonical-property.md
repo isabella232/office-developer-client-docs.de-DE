@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d5f7bd94-6696-474a-a3f3-40928fd3086c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 86c71145d74b7ead536d83f2a6be71cd298931e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bd9490304ac90ebc2cabebd78ab9f54ce45d6863
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794628"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587320"
 ---
 # <a name="pidtagmobiletelephonenumber-canonical-property"></a>PidTagMobileTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Funktelefonnummer des Empfängers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MOBILE_TELEPHONE_NUMBER, PR_MOBILE_TELEPHONE_NUMBER_A, PR_MOBILE_TELEPHONE_NUMBER_W, PR_CELLULAR_TELEPHONE_NUMBER, PR_CELLULAR_TELEPHONE_NUMBER_A, PR_CELLULAR_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A1C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MOBILE_TELEPHONE_NUMBER, PR_MOBILE_TELEPHONE_NUMBER_A, PR_MOBILE_TELEPHONE_NUMBER_W, PR_CELLULAR_TELEPHONE_NUMBER, PR_CELLULAR_TELEPHONE_NUMBER_A, PR_CELLULAR_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A1C  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

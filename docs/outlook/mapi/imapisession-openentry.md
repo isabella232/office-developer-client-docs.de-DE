@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a4df4860-cf4f-4e97-97c4-fcd89b7f1f91
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f23b4855b7e2faeb599868f8c2db52ae9cbfbfd8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6234fc737857a7e35f562703802f81ff154b3ee6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792310"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591015"
 ---
 # <a name="imapisessionopenentry"></a>IMAPISession::OpenEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet ein Objekt und gibt einen Schnittstellenzeiger für zusätzliche Zugriff.
   
@@ -110,7 +110,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter übergeben wird in einem Format nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn der Dienstanbieter, der das Objekt enthält nicht geöffnet ist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Zugriff auf das Objekt, können die **IMAPISession::OpenEntry** -Methode wird geöffnet, eine Nachricht speichern oder address Book-Objekt zurückgeben einem Zeiger auf eine Schnittstelle, die, verwendet werden. 
   

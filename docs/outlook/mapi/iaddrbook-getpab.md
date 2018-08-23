@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9830e09c-700f-469b-a54d-4e4e0583aa84
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3d67d71effde87711e3be9aca1b979627acda37d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1f93ee653c9365488432c4e797b171a199c30107
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792012"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583715"
 ---
 # <a name="iaddrbookgetpab"></a>IAddrBook::GetPAB
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Eintrags-ID des Containers, die als das persönliche Adressbuch (PAB) festgelegt ist.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Die Eintrags-ID des PAB wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clients rufen Sie die **GetPAB** -Methode, um die Eintrags-ID des Containers als PAB abzurufen. Wenn ein PAB nicht im Profil eingerichtet wurde, wählt MAPI als PAB den ersten Container in der Adressbuchhierarchie, die Änderungen ermöglicht. 
   

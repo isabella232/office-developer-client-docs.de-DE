@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ab77f25-ad11-4501-8d35-ef560c07e2f2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a31e2862aa3a6265f1dd9f8036abe329cf556276
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 38bcf40f24cc7901ebcbb60a099dc0e797d8e4b8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793868"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588034"
 ---
 # <a name="pidlidtaskversion-canonical-property"></a>PidLidTaskVersion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welche Kopie eines Vorgangs das neueste Update ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskVersion  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskVersion  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008112  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Updates mit niedrigeren Versionen als die Aufgabe werden ignoriert. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 80867adf-6786-47a9-9d3f-4aef4a7d7c66
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a9a2dd35e9fdce1adfa10d2cf6704b0a1124af94
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5c6a16b62987a5338e1f14d362ba9d0ba9836e8e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791496"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585157"
 ---
 # <a name="creating-a-profile"></a>Erstellen eines Profils
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Client kann ein Profil in einem der folgenden beiden Methoden, mit dem Profil-Assistenten oder durch Schreiben von benutzerdefiniertem Code erstellen.
   

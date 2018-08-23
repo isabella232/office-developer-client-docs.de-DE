@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5837facf-acd3-48fe-9610-f88085d99aef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 28f6471f74fb0fcc4f7e2f4114f0790e1564e17e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 09f0d7988f85a6d6018c45cb64245ab331cda052
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791610"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582812"
 ---
 # <a name="dtbllabel"></a>DTBLLABEL
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Beschriftung, die in einem Dialogfeld verwendet werden, die aus einer Tabelle anzeigen erstellt wird.
   
@@ -55,7 +55,7 @@ PARAMETER MAPI_UNICODE
   
 > Die Beschriftung wird im Unicode-Format. Wenn die Option MAPI_UNICODE nicht festgelegt ist, ist die Bezeichnung im ANSI-Format.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **DTBLLABEL** beschreibt einen Text im Bezeichnungsfeld-Steuerelement, der mit einer anderen Art von Steuerelement, das das Steuerelement Bedeutung hinzugefügt angezeigt wird. Beispielsweise sind die meisten Bearbeitungssteuerelemente neben Etiketten informiert den Benutzer über den Typ der Informationen eingegeben werden positioniert. Einige Steuerelemente, wie zum Beispiel Gruppenfelder und Optionsfelder, halten Sie ihre eigenen Beschriftungen. 
   

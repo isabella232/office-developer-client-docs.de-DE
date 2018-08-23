@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b5e896e7-c0c6-4ad1-bf91-9daba3a1e4d4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d3a8dc45bb131f5d2e7ff370617a10e3096a99f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fcea014ca4c1b1629505127484c44ae990eed855
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794054"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590806"
 ---
 # <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ordner mit Sonderfunktion Eintrags-IDs für ein Store-Objekt enthält. Jeder Eintrag in dieser mehrwertige Eigenschaft kann eine oder mehrere EntryIDs zugeordnet werden, d. h., eine 1: n-Beziehung zwischen dem Eintrag und die zugeordneten Eintrags-IDs vorhanden ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS_EX  <br/> |
-|Bezeichner:  <br/> |0x36D9  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ADDITIONAL_REN_ENTRYIDS_EX  <br/> |
+|Kennung:  <br/> |0x36D9  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft verwendet wird, enthält sie ein Array von Blöcken, die Eintrags-IDs für die Ordner angibt. Die Blöcke führen Sie das Format durch die folgenden vier Tabellen angegeben.
   

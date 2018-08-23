@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 33bef4ea-d6c0-4455-b95d-4b29edb9c0bc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 98e6331d5a9e52d5ae73ed12d8c045bdf226c2c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b16730681b5414f28ae45be7195b4fa551bf0e82
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792373"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591989"
 ---
 # <a name="imapisupportmodifyprofile"></a>IMAPISupport::ModifyProfile
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ändert eine Nachricht Profilabschnitt permanent gespeichert.
   
@@ -49,7 +49,7 @@ S_OK
   
 > Die Änderungen in den Profilabschnitt waren erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::ModifyProfile** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. E-Mail-Speicher-Anbieter Aufruf **ModifyProfile** auffordern, MAPI, um ihre Profilinformationen zu ändern. 
   

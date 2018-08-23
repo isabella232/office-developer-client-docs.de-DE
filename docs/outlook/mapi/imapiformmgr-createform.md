@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7d4d50f8-3904-4e93-a535-ac7decceb1a3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ed3f793e4353cf78949a9df3a17dd3997a573f58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e86c3d9678739c09024c0655cbbbb702749a53f0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792175"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586165"
 ---
 # <a name="imapiformmgrcreateform"></a>IMAPIFormMgr::CreateForm
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet ein Formular zum Erstellen einer neuen Nachricht basierend auf der Nachrichtenklasse des Formulars.
   
@@ -73,7 +73,7 @@ MAPI_E_NO_INTERFACE
   
 > Die angeforderte Schnittstelle wird von der Form-Objekt nicht unterstützt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::CreateForm** -Methode zum Öffnen eines Formulars zum Erstellen einer neuen Nachricht basierend auf der Nachrichtenklasse des Formulars. **CreateForm** Öffnet das Formular durch das Erstellen einer Instanz des Formular-Servers für das Formular in der angegebenen Form Informationen-Objekt beschrieben. Falls erforderlich, ruft **CreateForm** die [IMAPIFormMgr::PrepareForm](imapiformmgr-prepareform.md) -Methode, um die Formularcode Server auf der Festplatte des Benutzers herunterladen. 
   
@@ -100,7 +100,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIFormMgr : IUnknown](imapiformmgriunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Starten eines Formularservers](launching-a-form-server.md)
 

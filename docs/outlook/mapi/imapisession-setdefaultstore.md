@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 456c207f-5d41-4d0c-94b6-0c58893a6bed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e3c4125bf4fcf1881a0cba9b04a8bb6aa71f527d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c7eda7089515942cb38a941bab863b3adf971bdc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792323"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587845"
 ---
 # <a name="imapisessionsetdefaultstore"></a>IMAPISession::SetDefaultStore
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt einen Nachrichtenspeicher als Standard-Informationsspeicher für die Sitzung her.
   
@@ -75,7 +75,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::SetDefaultStore** -Methode legt einen Nachrichtenspeicher als eine der folgenden: 
   

@@ -7,25 +7,25 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3c5182a7-7d7a-48e8-b9cb-5abd7739f0fd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 70d621a386465d28e84e4841c14d212e1d2e4d34
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ab96d4412729e8673f0c1ae088277b9929e4d079
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795175"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586816"
 ---
 # <a name="pidtagspamjunksenders-canonical-property"></a>PidTagSpamJunkSenders (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine durch Semikolons getrennte Liste der e-Mail-Adressen und Domänen, die blockierte Absendern umfassen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SPAM_JUNK_SENDERS_W  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SPAM_JUNK_SENDERS_W  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x041A  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Spam  <br/> |

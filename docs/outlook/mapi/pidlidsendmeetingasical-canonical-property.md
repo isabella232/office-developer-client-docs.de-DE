@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: d643bf62-62e5-41c7-ab88-5c4c358e5460
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d567a4d3a759976ac73c24b26963a8286a0be484
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 50807f65cf280764289b8a29aebdb1e8e8ed8aa6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793768"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582623"
 ---
 # <a name="pidlidsendmeetingasical-canonical-property"></a>PidLidSendMeetingAsIcal (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Besprechungsanfrage als iCal-Nachricht gesendet werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSendMtgAsICAL  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSendMtgAsICAL  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008200  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d02ebf6-bb8b-42bb-9bd0-870dbae9aeb4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0ae35166f01f597c2c3ab399a1b66e5760ab0dc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 40815f1df597a8fb1fd8adef3dcc09323e946d30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792519"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592962"
 ---
 # <a name="imessagesetreadflag"></a>IMessage::SetReadFlag
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Festgelegt oder löscht das Flag MSGFLAG_READ in der Eigenschaft **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) der Nachricht und das Senden von lesen Berichte verwaltet.
   
@@ -69,7 +69,7 @@ MAPI_E_INVALID_PARAMETER
     
    - CLEAR_READ_FLAG | GENERATE_RECEIPT_ONLY
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMessage::SetReadFlag** -Methode legt oder löscht die Nachricht MSGFLAG_READ Flag in der **PR_MESSAGE_FLAGS** -Eigenschaft und ruft [IMAPIProp::SaveChanges](imapiprop-savechanges.md) die Nachricht zu speichern. Festlegen des MSGFLAG_READ-Flags markiert eine Nachricht als gelesen, die nicht unbedingt darauf hinweist, dass der Empfänger die Nachricht tatsächlich gelesen hat. 
   

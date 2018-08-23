@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 82d21d38-a6c6-4e12-85b1-8158b2f5cce7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 65a54475afe526cce40030cbfd1cdb9e86126554
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 11e1bd22da480669f72768e5d75b637e1257b6d1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793475"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589350"
 ---
 # <a name="pidlidcontactlinksearchkey-canonical-property"></a>PidLidContactLinkSearchKey (kanonische Eigenschaft)
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Liste der **SearchKeys** für den Kontakt mit verknüpften durch dieses Objekt "Message". 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidContactLinkSearchKey  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidContactLinkSearchKey  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008584  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
-|**Länge in bytes**|**Beschreibung**|**Anmerkungen**|
+|**Länge in bytes**|**Beschreibung**|**Hinweise**|
 |:-----|:-----|:-----|
 |2  <br/> |ContactEntryCount  <br/> |Keine  <br/> |
 |Variable  <br/> |SearchKey Daten  <br/> |ContactEntryCount-Mal wiederholt  <br/> |

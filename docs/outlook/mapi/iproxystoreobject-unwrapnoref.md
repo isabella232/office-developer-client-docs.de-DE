@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1122b6e0-e7e1-e68a-e090-435777343d04
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7c6c763e918947c423c5dae283b0d4ab2f880616
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8539f81ed1741063d878da492d925b63c488d1a9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792774"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586431"
 ---
 # <a name="iproxystoreobjectunwrapnoref"></a>IProxyStoreObject::UnwrapNoRef
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft einen Zeiger auf ein allein stehenden Internet Message Access Protocol (IMAP) Store-Objekt, das Zugriff auf die zugrunde liegende Persönliche Ordner-Datei (PST) bietet ohne Synchronisation aufrufen und die Elemente herunterladen.
   
@@ -43,7 +43,7 @@ S_OK
   
 - Der Aufruf war erfolgreich, und ein Zeiger auf eine allein stehenden-Schnittstelle in _PpvObject_zurückgegeben wurden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ohne den ersten Entpacken einen IMAP-Speicher, kann den Zugriff auf eine Nachricht im Speicher eine Synchronisierung erzwingen, die versucht, laden Sie die gesamte Nachricht. Ermöglicht den Zugriff auf die Nachricht im aktuellen Zustand ohne Auslösen der Download mit den allein stehenden Speicher.
   

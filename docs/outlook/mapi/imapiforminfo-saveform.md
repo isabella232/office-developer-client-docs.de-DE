@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 18a10f14-0795-4d4d-b590-f4cef4f2902a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5e2d757fe329f9a57447723d72a859c7d82fc2b3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7fec6b6236d26789a3ec9abee7d2ae1c620f89b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792168"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593473"
 ---
 # <a name="imapiforminfosaveform"></a>IMAPIFormInfo::SaveForm
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Speichert eine Beschreibung eines bestimmten Formulars in einer Konfigurationsdatei.
   
@@ -53,7 +53,7 @@ MAPI_E_NO_SUPPORT
   
 > **SaveForm** wurde wahrscheinlich aufgerufen, um ein Formular im Container lokale Formular zu speichern. **SaveForm** wird für den Container lokale Formular nicht unterstützt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clientanwendungen rufen Sie die **IMAPIFormInfo::SaveForm** -Methode, um eine Beschreibung des aktuellen Formulars in der Datei zu speichern, die den angegebenen Dateinamen hat. **SaveForm** erstellt eine Konfigurationsdatei. 
   

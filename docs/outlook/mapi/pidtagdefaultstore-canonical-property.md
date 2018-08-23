@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6314d91c-4948-4fd1-bacc-932d4bb2c22f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 573ac849bba026ec6a5988220a7e49688393440d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d544c741685d401aaf36fe19be50ab402c9e5604
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794285"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592682"
 ---
 # <a name="pidtagdefaultstore-canonical-property"></a>PidTagDefaultStore (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Nachrichtenspeicher Standard-Informationsspeicher in der Nachricht Store-Tabelle ist. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEFAULT_STORE  <br/> |
-|Bezeichner:  <br/> |0x3400  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEFAULT_STORE  <br/> |
+|Kennung:  <br/> |0x3400  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird als eine Spalte in der Nachricht Store Tabelle angezeigt. Der Wert basiert auf **PR_RESOURCE_FLAGS** ([PidTagResourceFlags](pidtagresourceflags-canonical-property.md)). 
   

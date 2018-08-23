@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 319f10e9-db8d-4d16-aa1f-6cf5fef493eb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: df6347298aab5404ec69bd9ac876863e31b741d0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 745c1b10cbbb24389cace7911d7c5fd37fe09472
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792321"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586851"
 ---
 # <a name="imapisessioncompareentryids"></a>IMAPISession::CompareEntryIDs
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Vergleicht zwei Eintragsbezeichner, um zu bestimmen, ob sie sich auf dasselbe Objekt verweisen. 
   
@@ -74,7 +74,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Eine oder beide der als Parameter angegebenen Eintrags-IDs verweisen für Objekte, möglicherweise nicht, da diese Objekte derzeit nicht geöffneten und nicht verfügbar sind.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::CompareEntryIDs** -Methode vergleicht zwei Eintragsbezeichner, die mit einem einzelnen Dienstanbieter zu bestimmen, ob sie sich auf dasselbe Objekt verweisen gehören. MAPI extrahiert den [MAPIUID](mapiuid.md) Teil aus der Eintragsbezeichner bestimmen den Dienstanbieter verantwortlich für die Objekte und ruft dann **die Anmeldung des Objekts-Eintragsbezeichner zum Durchführen des Vergleichs** . 
   

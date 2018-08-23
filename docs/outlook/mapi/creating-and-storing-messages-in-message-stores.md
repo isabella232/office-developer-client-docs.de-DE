@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: cc74b31c-d7ed-4fcf-9535-a2f9222901b7
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 32cfae36fb519654c1fb92d2f3b688c966f9288f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: be718ea3ef4da91d2f85a0229f5a506198a2527f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791485"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589175"
 ---
 # <a name="creating-and-storing-messages-in-message-stores"></a>Erstellen und Speichern von Nachrichten in Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wie Ihre Nachricht Speicheranbieter erstellt und speichert Nachrichten in der zugrunde liegende Speichermechanismus h�ngt stark von der zugrunde liegende Speichermechanismus selbst. Im Allgemeinen m�ssen Sie nur Code schreiben, um die Eigenschaften einer Nachricht und deren Werte beibehalten.
   

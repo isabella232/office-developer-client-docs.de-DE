@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: f6da69ff-a913-4a65-bb07-8ad3c5685e5e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a95fc30de7511672cb27c9dd6fbc37b96e822e77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e16c1b46b5a8181b1225c706dbed6cd1bb3f486f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793863"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583176"
 ---
 # <a name="pidlidtaskresetreminder-canonical-property"></a>PidLidTaskResetReminder (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob zukünftige Instanzen von Aufgabenserien Erinnerungen, benötigen, obwohl **DispidReminderSet** ([PidLidReminderSet](pidlidreminderset-canonical-property.md)) auf false festgelegt ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskResetReminder  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskResetReminder  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008107  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Dieser Wert wird auf TRUE festgelegt, wenn die Aufgabe Erinnerung geschlossen ist, und andernfalls auf FALSE festgelegt. Wenn nicht festgelegt, wird davon ausgegangen, dass Standardwert ist FALSE.
   

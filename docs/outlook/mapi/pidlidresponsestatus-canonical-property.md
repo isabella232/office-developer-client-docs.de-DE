@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e56142fd-204b-497e-83b9-59f9acda6cb4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0bfa3a01613c49b122e92e4ac281e5b20b5f07ae
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2e6aa8407459fef5fd9657e9d2887f0ae78ff9c9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793762"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585465"
 ---
 # <a name="pidlidresponsestatus-canonical-property"></a>PidLidResponseStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Antwortstatus eines Teilnehmers.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidResponseStatus  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidResponseStatus  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008218  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Antwortstatus muss einen der Werte in der folgenden Tabelle.
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 98597495-7761-4eda-ae75-1ccefa6abb81
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5d0e95fafb8530f64280aff61dab27d24fba0ba1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a19c67d7b83c4890c998cd2e53a36bfc34d11386
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794776"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583890"
 ---
 # <a name="pidtagphysicaldeliverymode-canonical-property"></a>PidTagPhysicalDeliveryMode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske aus Flags, die definieren, den physische Bereitstellung-Modus (beispielsweise Spezial) für eine Nachricht für einen bestimmten Empfänger bestimmt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PHYSICAL_DELIVERY_MODE  <br/> |
-|Bezeichner:  <br/> |0x0C0B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PHYSICAL_DELIVERY_MODE  <br/> |
+|Kennung:  <br/> |0x0C0B  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

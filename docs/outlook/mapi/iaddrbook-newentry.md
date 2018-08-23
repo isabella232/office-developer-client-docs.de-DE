@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8d2d786b-e621-456d-b087-3373df6f8ac5
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e9b9ae316749659c6fc6a043bfb72c49010ccc9a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: eaf472a380acd62cddb2c20c35335ccb1e2ce07f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792020"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585857"
 ---
 # <a name="iaddrbooknewentry"></a>IAddrBook::NewEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fügt einen neuen Empfänger um eine Adressbuchcontainer oder die Empfängerliste von ausgehenden Nachrichten.
   
@@ -84,7 +84,7 @@ S_OK
   
 > Der neuen Adresseintrag Adressbuch wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **NewEntry** -Methode erstellt einen neuen Address Book Eintrag direkt in einem Container hinzugefügt werden soll oder verwendet werden, um eine ausgehende Nachricht zu adressieren. 
   

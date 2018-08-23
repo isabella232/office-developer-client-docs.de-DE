@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fa03d819-2621-4990-80ae-4140b83a8a85
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fe175cda1c968b5efc99adc98ebc54e1b8f4a898
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3b0332fb81dadb0f10ab6f55fae317349ab9b8d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794515"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584877"
 ---
 # <a name="pidtagipmoutboxentryid-canonical-property"></a>PidTagIpmOutboxEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID des Ordners Postausgang standard zwischen Personen Nachricht (IPM). 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_IPM_OUTBOX_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x35E2  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_IPM_OUTBOX_ENTRYID  <br/> |
+|Kennung:  <br/> |0x35E2  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ausgehende Nachrichten werden in der Regel im Ordner Postausgang erstellt. In diesem Ordner für die Übermittlung sollte Nachrichten zwischen Personen platziert werden. 
   

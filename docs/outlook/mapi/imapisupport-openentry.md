@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 84662230-6a25-4403-b87e-871427a40c6e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 04bf7f2ddda7377df72417df2472246a2cf329bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8b122c98715bd2f6916fe6302fc0b7a01d2cc936
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792403"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584611"
 ---
 # <a name="imapisupportopenentry"></a>IMAPISupport::OpenEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet ein Objekt und gibt einen Schnittstellenzeiger für den weiteren Zugriff. 
   
@@ -94,7 +94,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Eintrags-ID in der _LpEntryID_ -Parameter übergeben wird in einem Format nicht erkannt. Dieser Wert wird in der Regel zurückgegeben, wenn die Adressbuchanbieter, die das Objekt enthält nicht geöffnet ist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::OpenEntry** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter anrufen **IMAPISupport::OpenEntry** um einen Zeiger auf eine Schnittstelle abzurufen, die verwendet werden kann, um auf ein bestimmtes Objekt zuzugreifen. 
   

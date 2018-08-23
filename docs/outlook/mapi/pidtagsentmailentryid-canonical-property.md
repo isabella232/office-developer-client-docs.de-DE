@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8f14dc15-d7d7-4894-b6a8-0d589f576c42
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 869f7f0bb4ea5e7222201083cb6d41754d241396
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b53275d3bf26aa8bee3aeaef2148f5ead961e471
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795143"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591653"
 ---
 # <a name="pidtagsentmailentryid-canonical-property"></a>PidTagSentMailEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID des Ordners, in dem die Nachricht nach dem Absenden verschoben werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENTMAIL_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x0E0A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENTMAIL_ENTRYID  <br/> |
+|Kennung:  <br/> |0x0E0A  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird häufig von der **PR_IPM_SENTMAIL_ENTRYID** ([PidTagIpmSentMailEntryId](pidtagipmsentmailentryid-canonical-property.md))-Eigenschaft, die Clientanwendung Standardordner gesendete Elemente kopiert.
   

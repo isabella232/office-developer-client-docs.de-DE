@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1b7dfe87-f87f-43e3-8332-a0d9c3f70d16
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1437130caecd57344fc171d234c5391ea92e1d4b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9f8da0902ea4c4a862d279ee80ba566c0473c44e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795435"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592325"
 ---
 # <a name="sandrestriction"></a>SAndRestriction
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Einschränkung **und** , die zur Teilnahme an einer Gruppe von Einschränkungen, die mit einer logischen **AND** -Operation verwendet wird. 
   
@@ -50,7 +50,7 @@ typedef struct _SAndRestriction
   
 > Zeiger auf ein Array von [SRestriction](srestriction.md) -Strukturen, die mit **eine Operation** kombiniert werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Ergebnis der **SAndRestriction** ist TRUE, wenn alle seine untergeordneten Einschränkungen zu TRUE ausgewertet werden. Es ist FALSE, wenn alle untergeordneten Beschränkung auf "false" ausgewertet wird. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 008cadb1-4c8e-4ef7-a072-aa1d75a448cf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b297a81a6a6fa2e328b0c747eaf269c038288b1b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e903e717342f1efd346d31c591dfbec516cb6c31
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2018
-ms.locfileid: "19793954"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582567"
 ---
 # <a name="pidnamecontenttransferencoding-canonical-property"></a>PidNameContentTransferEncoding (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen Wert für [RFC3282] Content-Transfer-Encoding-Header Feld enthält.
   

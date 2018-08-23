@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5036638-8350-464f-ab44-19c4a1bf50b3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c00626480c536e9dda7f4a74bf0a3b7469e95c55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 08dadc1de8e827d997dd8a00c56466c0109e79ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794829"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585871"
 ---
 # <a name="pidtagproofofdelivery-canonical-property"></a>PidTagProofOfDelivery (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält einen einen Identitätsnachweis ASN. 1 Delivery-Wert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROOF_OF_DELIVERY  <br/> |
-|Bezeichner:  <br/> |0x0C11  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROOF_OF_DELIVERY  <br/> |
+|Kennung:  <br/> |0x0C11  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

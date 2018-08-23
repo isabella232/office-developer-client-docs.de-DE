@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c0e1cdba-ceb6-4a3f-8449-79d1a0ad1adf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3abb4ba67ff5f0cf2284fa9286b6968698877b84
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3722893ae57a108b338725e46c975e92c0f8ff72
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795333"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587509"
 ---
 # <a name="providing-notifications-for-message-store-providers"></a>Bereitstellen von Benachrichtigungen für Nachrichtenspeicheranbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Während Benachrichtigungen optional sind, werden sie ein sehr wichtiger Bestandteil der Anbieter eine gute Nachricht. Clientanwendungen und die MAPI-Warteschlange basieren auf Benachrichtigungen vom Anbieter für die Nachricht an eine gute Leistung beim Senden von ausgehenden Nachrichten oder Empfangen von eingehenden Nachrichten zu erhalten. Clients und die MAPI-Warteschlange können ohne Empfang von Benachrichtigungen aus der Nachricht Informationsdienst funktionieren, aber sie sind nicht in der Lage, Benutzer über Änderungen an den Nachrichtenspeicher, ohne sie zu informieren. Dies bedeutet, die Benutzer werden nicht angezeigt, dass eine neue Nachrichten eingegangen sind, bis deren Clients als Nächstes des Nachrichtenspeicher wird geöffnet wird meistens Ordner.
   

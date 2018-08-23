@@ -9,26 +9,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 429811c4-73fe-4a05-9c42-e5ac8e974f29
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c2763e49f530371101b59f4067ab6110503df2c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1ad6d6047a021683d658a8ad9ab28ff2d1ec31f7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794972"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589154"
 ---
 # <a name="pidtagreportoriginalsender-canonical-property"></a>PidTagReportOriginalSender (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den ursprünglichen Absender der Nachricht für Nachrichten, die Empfangsbestätigungen anfordern.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_ORIGINAL_SENDER, PR_REPORT_ORIGINAL_SENDER_A, PR_REPORT_ORIGINAL_SENDER_W  <br/> |
-|Bezeichner:  <br/> |0x0082  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_ORIGINAL_SENDER, PR_REPORT_ORIGINAL_SENDER_A, PR_REPORT_ORIGINAL_SENDER_W  <br/> |
+|Kennung:  <br/> |0x0082  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    

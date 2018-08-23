@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb161d7b-ae5b-4f8e-a506-8346ac5e583d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 250074b28b98269df58fecfcb2d178f73e26c571
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 65bf7debcae1367ccad9e109242fd4a72839a94e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792749"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584926"
 ---
 # <a name="iprofadmingetlasterror"></a>IProfAdmin::GetLastError
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen über den vorherigen Fehler enthält, die auf ein Profil Administration-Objekt aufgetreten sind. 
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IProfAdmin::GetLastError** -Methode ruft Informationen über den letzten Fehler, die von einem Methodenaufruf für das Profil Administration-Objekt zurückgegeben. 
   

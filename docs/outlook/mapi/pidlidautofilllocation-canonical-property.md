@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e4db6cae-4730-45d0-8b8a-9bd484c8bd3f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 55922f49d33abfed67b11ceade6d2762e8edacde
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 31cabf50602f9e0f7a70118ddc794387990862ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793439"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591268"
 ---
 # <a name="pidlidautofilllocation-canonical-property"></a>PidLidAutoFillLocation (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass der Wert der Eigenschaft **DispidLocation** ([PidLidLocation](pidlidlocation-canonical-property.md)) auf die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) aus der RecipientRow festgelegt ist, die eine Ressource darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidAutoFillLocation  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidAutoFillLocation  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000823A  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen zu RecipientRow finden Sie unter das Protokoll Nachrichten- und Attachment-Objekt wie in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)angegeben.
   

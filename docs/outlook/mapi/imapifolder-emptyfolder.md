@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4cfcb498-9182-4906-bd6f-d9bc387bc88b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7d8653b8f0cb2196319c4a9c2b4bca89c8be5a24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 287577babc9a40b771aa9917211ba5dcbf8190ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792122"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584940"
 ---
 # <a name="imapifolderemptyfolder"></a>IMAPIFolder::EmptyFolder
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Löscht alle Nachrichten und Unterordner aus einem Ordner, ohne den Ordner selbst löschen.
   
@@ -71,7 +71,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, aber der Ordner wurde nicht vollständig geleert. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::EmptyFolder** -Methode löscht alle eines Ordners ohne den Ordner selbst löschen. 
   
@@ -112,7 +112,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Verwenden von Makros zur Fehlerbehandlung](using-macros-for-error-handling.md)
 

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 87bc5753-ef39-4275-a850-cfeb340a4a8b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9ac212172658445a1bb5be2fa21a7b21effb7ea0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e68acf07232d86ef4bd76086d0ae25fd927b74fe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794181"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589882"
 ---
 # <a name="pidtagcompanyname-canonical-property"></a>PidTagCompanyName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen des Empfängers Unternehmen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_COMPANY_NAME, PR_COMPANY_NAME_A, PR_COMPANY_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A16  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_COMPANY_NAME, PR_COMPANY_NAME_A, PR_COMPANY_NAME_W  <br/> |
+|Kennung:  <br/> |0x3A16  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

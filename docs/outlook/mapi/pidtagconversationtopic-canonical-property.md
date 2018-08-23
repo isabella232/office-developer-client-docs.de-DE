@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: db852b99-ce04-49bf-a714-7549571502e2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2e656679fcf76992ec0b648274bd5ffa673b4007
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ce9d13b6ecd560798cee4f79d8d62b966dc427f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794259"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586473"
 ---
 # <a name="pidtagconversationtopic-canonical-property"></a>PidTagConversationTopic (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das Thema der ersten Nachricht in einer Unterhaltung Thread enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONVERSATION_TOPIC, PR_CONVERSATION_TOPIC_A, PR_CONVERSATION_TOPIC_W  <br/> |
-|Bezeichner:  <br/> |0x0070  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONVERSATION_TOPIC, PR_CONVERSATION_TOPIC_A, PR_CONVERSATION_TOPIC_W  <br/> |
+|Kennung:  <br/> |0x0070  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Unterhaltungsthreads stellt eine Reihe von Nachrichten und Antworten. Diese Eigenschaften werden für die erste Nachricht in einem Thread, in der Regel an die **PR_NORMALIZED_SUBJECT** ([PidTagNormalizedSubject](pidtagnormalizedsubject-canonical-property.md))-Eigenschaft festgelegt. Nachfolgende Nachrichten im Thread sollte im gleiche Thema ohne Änderung verwendet werden. 
   

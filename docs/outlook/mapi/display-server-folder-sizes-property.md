@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 38429fdb-be93-213a-a780-80f9837f55fa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1ddf4501918d598169a3a74fd1c8d2ac38499cd2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f1ec10bde39f853a80540b48216478edc4e41f12
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791552"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584310"
 ---
 # <a name="display-server-folder-sizes-property"></a>Eigenschaft zum Anzeigen von Serverordnergrößen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt die Größe der angegebenen Ordner auf dem Server im Dialogfeld Outlook- **Ordner-Größe** . 
   
@@ -37,7 +37,7 @@ Zeigt die Größe der angegebenen Ordner auf dem Server im Dialogfeld Outlook- *
 |Der Eigenschaftentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Zugriffstyp:  <br/> |Lese-/Schreibzugriff  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um die Store-Funktionalität bereitzustellen, Speicheranbieter implementieren muss [IMAPIProp: IUnknown](imapipropiunknown.md) und ein Tag valid-Eigenschaft für alle diese Eigenschaften übergeben Sie einen Anruf [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) zurückzukehren. Wenn das Eigenschafts-Tag für alle diese Eigenschaften an [IMAPIProp::GetProps](imapiprop-getprops.md)übergeben wird, muss Speicheranbieter auch den richtige Wert zurückgeben. [HrGetOneProp](hrgetoneprop.md) und [HrSetOneProp](hrsetoneprop.md) , zum Abrufen oder Festlegen dieser Eigenschaften Anbieter aufgerufen. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: f5c6ba8f-4ef5-4d60-b4e6-5b9160ec4e99
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6e917991e109ac04a14ea7d93eebcf9cce835845
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d90f502e2cd7f97ac273ebecedbd0363097b1d60
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792417"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584954"
 ---
 # <a name="imapisupportspooleryield"></a>IMAPISupport::SpoolerYield
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Kontrolle über die CPU auf die MAPI-Warteschlange, damit sie alle Aufgaben ausführen kann, notwendig hält.
   
@@ -49,7 +49,7 @@ MAPI_W_CANCEL_MESSAGE
   
 > Weist der Adressbuchhierarchie So beenden Sie die Zustellung der Nachricht an alle Empfänger, die noch nicht erhalten haben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::SpoolerYield** -Methode wird für Transport Anbieter Unterstützungsobjekte implementiert. Transportanbieter Aufrufen **SpoolerYield** , um die MAPI-Warteschlange, die erforderliche Verarbeitung bezwecken zu ermöglichen. 
   

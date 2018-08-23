@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e568917e-6085-4094-8728-89ba90a78c40
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 275dc17a141f1c002f62a43824174458e591d4de
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: bf100ed916080a91366062f45b9e3349516bdb98
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792512"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588517"
 ---
 # <a name="imessagegetattachmenttable"></a>IMessage::GetAttachmentTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Nachricht Anlagentabelle zurück.
   
@@ -58,7 +58,7 @@ S_OK
   
 > Die Anlagentabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMessage::GetAttachmentTable** -Methode gibt einen Zeiger auf die Nachricht Anlagentabelle, die Informationen zu allen Anlagen in der Nachricht enthält. Clients erhalten Zugriff auf eine Anlage nur über die Anlagentabelle. Durch Abrufen einer Anlage Anzahl seiner **PR_ATTACH_NUM** ([PidTagAttachNumber](pidtagattachnumber-canonical-property.md))-Eigenschaft ein Client verschiedenen **IMessage** -Methoden können Sie die Anlage entwickelt. 
   

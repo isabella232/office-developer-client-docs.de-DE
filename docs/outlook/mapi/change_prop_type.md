@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 95513b5a-fd3b-46f2-a6c0-094500ae4ca7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 26dfd40ed8b4cd2b2261abff4d2692de46acb6fd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3d9db53dd752367570fc10aaabe3143b3b3ea917
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791409"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588377"
 ---
 # <a name="changeproptype"></a>CHANGE_PROP_TYPE
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aktualisiert den Eigenschaftentyp eines Eigenschaft-Tags mit einem angegebenen Wert. Der Bezeichner für die bleibt unverändert. 
   

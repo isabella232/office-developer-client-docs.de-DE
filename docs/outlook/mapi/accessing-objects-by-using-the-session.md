@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ecada707-2960-41ec-be7e-619cad257c57
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ee20e73e5bc7bb6854b956da541d3a318a267d0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f0696ad4d15274e4af18d2246dd124c1bfee1a2c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791263"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589406"
 ---
 # <a name="accessing-objects-by-using-the-session"></a>Zugreifen auf Objekte durch eine Sitzung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Sitzung Zeiger, den Sie aus den Anruf auf [MAPILogonEx](mapilogonex.md) erhalten kann verwendet werden, um eine Vielzahl von Objekten zuzugreifen. Die folgende Tabelle enthält die Methoden, die verwendet werden, um verschiedene Objekte zuzugreifen: 
   
@@ -38,7 +38,7 @@ Mit der Methode **OpenEntry** und eine gültige Eintrags-ID können Sie alle Add
 |--Adressbuchanbieter Anmeldung-Objekt  <br/> |[IABLogon::OpenEntry](iablogon-openentry.md) <br/> |
 |Adressbuch  <br/> |[IAddrBook::OpenEntry](iaddrbook-openentry.md) <br/> |
 |Adressbuchcontainer  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |
-|Session  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
+|Sitzung  <br/> |[IMAPISession::OpenEntry](imapisession-openentry.md) <br/> |
 |Nachrichtenspeicher  <br/> |[IMsgStore::OpenEntry](imsgstore-openentry.md) <br/> |
 |Nachricht-Speicheranbieter Anmeldung-Objekt  <br/> |[IMSLogon::OpenEntry](imslogon-openentry.md) <br/> |
 |Ordner  <br/> |[IMAPIContainer::OpenEntry](imapicontainer-openentry.md) <br/> |

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee69f0c4-b552-4cfd-8a39-a822d414549e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 34f50766c2c45d85bbb0bd9e12d32c5dd87e3cac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7d9f8cf4fbdeab70e40447411ed8efd35ef7899e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793684"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588776"
 ---
 # <a name="pidlidofflinestatus-canonical-property"></a>PidLidOfflineStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt den Status einer Dokumentdatei auf einem Server, der [MS-LISTSWS] implementiert wird.
   
@@ -35,7 +35,7 @@ Bestimmt den Status einer Dokumentdatei auf einem Server, der [MS-LISTSWS] imple
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 In der folgenden Tabelle sind die möglichen Werte dieser Eigenschaft.
   

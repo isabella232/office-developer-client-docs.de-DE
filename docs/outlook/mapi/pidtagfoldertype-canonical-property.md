@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2ab4681e-0013-4ba0-ba26-50517bbf3f5b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2520a7544eb4ba39cd83a7a0aa65b98bd8a67deb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8d6167a7a3c983171f2ff9cb2a54c879a14dca0e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794381"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591415"
 ---
 # <a name="pidtagfoldertype-canonical-property"></a>PidTagFolderType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Konstante, die den Ordner angibt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FOLDER_TYPE  <br/> |
-|Bezeichner:  <br/> |0x3601  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FOLDER_TYPE  <br/> |
+|Kennung:  <br/> |0x3601  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   

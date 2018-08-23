@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a75ca0dd-9c50-2a9f-6c59-1f8020833a01
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 041ae867ff3a9cc9636ff1d93f9360576e455420
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a1ec71d7120eab220ee3b11d2a751fba51cee48e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795801"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592094"
 ---
 # <a name="uphier"></a>UPHIER
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Informationen zum Synchronisieren von einer Ordnerhierarchie während der [Hierarchie Zustand hochladen](upload-hierarchy-state.md).
   

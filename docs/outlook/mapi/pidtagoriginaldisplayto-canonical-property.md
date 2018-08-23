@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c1cf14c-0339-4ced-8f68-4bfaa1e4d3e9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 68bb9a25131a07cf482a39cef70eb08a2b5a1756
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5adeec9a8f7092a2a32008a189918892ca50a952
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794687"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589196"
 ---
 # <a name="pidtagoriginaldisplayto-canonical-property"></a>PidTagOriginalDisplayTo (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Anzeigenamen der primären (Empfänger der ursprünglichen Nachricht To).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_DISPLAY_TO, PR_ORIGINAL_DISPLAY_TO_A, PR_ORIGINAL_DISPLAY_TO_W  <br/> |
-|Bezeichner:  <br/> |0x0074  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_DISPLAY_TO, PR_ORIGINAL_DISPLAY_TO_A, PR_ORIGINAL_DISPLAY_TO_W  <br/> |
+|Kennung:  <br/> |0x0074  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften enthalten eine durch Semikolons getrennte ASCII-Liste. Es MAPI bereitgestellten und wird direkt aus **PR_DISPLAY_TO** ([PidTagDisplayTo](pidtagdisplayto-canonical-property.md)) bei einer Übermittlung kopiert oder Unzustellbarkeitsbericht oder einem Lese- oder nonread Bericht wird generiert. Diese Eigenschaft kann auf andere Nachrichten durch ihre Nachrichtenklassen definierten vorhanden sein.
   

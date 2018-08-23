@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f86f7c59-42ab-4ac0-80fe-c985103e6bd6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b4aaf05cdd8c85736215bd0d0f3a8c5c9dafecf0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9db28f282baf18ec983f6f51c989bacea4cf76f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794242"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586592"
 ---
 # <a name="pidtagcontentreturnrequested-canonical-property"></a>PidTagContentReturnRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn eine Nachricht mit einem Unzustellbarkeitsbericht zurückgegeben werden sollen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTENT_RETURN_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0x000a  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTENT_RETURN_REQUESTED  <br/> |
+|Kennung:  <br/> |0x000a  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Report (Bericht)  <br/> |
    

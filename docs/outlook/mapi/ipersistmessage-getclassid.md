@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 77eeb468-3432-4ccd-9c1e-1df9ce605193
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e0937eed2e8ca61bc18ee45ff20337267808ea70
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c9d769e6a32fad22750a965debbbdce83e4de539
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792732"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586458"
 ---
 # <a name="ipersistmessagegetclassid"></a>IPersistMessage::GetClassID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Bezeichner, der den Formular Server darstellt, der das Formular verwaltet werden können. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die Klassen-ID wurde erfolgreich zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IPersistMessge::GetClassID** -Methode wird die Inhalte des Parameters _LpClassID_ auf dem Formular Server Klassen-ID und gibt S_OK zurück. Wenn ein Formular Viewer **GetClassID** aufruft und erfolgreich zurückgegeben, wird das Formular in den Status [nicht initialisiert](uninitialized-state.md) platziert. 
   

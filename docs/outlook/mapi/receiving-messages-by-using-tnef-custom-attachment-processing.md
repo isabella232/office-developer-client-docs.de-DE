@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: bb5082fa-8fe3-46fe-b2de-b6dd1af79ea7
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 18fc0983554284355dcdfb301fd41a0161a860fe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 67c202e5130bd35e1277c5260bc1702043eadd95
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795367"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588027"
 ---
 # <a name="receiving-messages-by-using-tnef-custom-attachment-processing"></a>Empfangen von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um eine TNEF-Nachricht mit Anlage benutzerdefinierte Verarbeitung zu erhalten:
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 44884f60-7e36-45b2-9712-4f9821a0dc1f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0918f079769a70aa11e4f26551ec232308e5eef0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 099a744940ffae49f49e9ca25f49dc54414b25dd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794810"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590008"
 ---
 # <a name="pidtagprocessed-canonical-property"></a>PidTagProcessed (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Auf TRUE festgelegt, wenn die Besprechungsanfrage verarbeitet wurden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROCESSED  <br/> |
-|Bezeichner:  <br/> |0x7D01  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROCESSED  <br/> |
+|Kennung:  <br/> |0x7D01  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird sichergestellt, dass Besprechungsanfragen einmal verarbeitet. Der Ersteller der Anforderung sollte diese Eigenschaft auf FALSE festgelegt, und der Empfänger sollte es auf TRUE festgelegt, nachdem die Anforderung im Kalender ist.
   

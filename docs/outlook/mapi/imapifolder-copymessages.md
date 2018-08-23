@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4c7d2110-3fcb-4b9f-bf20-1dc1a611161d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e6e9e9cefc75ffc78ee7beb47e89063ea1a66ce7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e253aa6a701d565fbc61e8a0e0a6388f7199c000
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792099"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593263"
 ---
 # <a name="imapifoldercopymessages"></a>IMAPIFolder::CopyMessages
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert oder verschiebt eine oder mehrere Nachrichten.
   
@@ -90,7 +90,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, aber nicht alle Einträge erfolgreich kopiert oder verschoben wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::CopyMessages** -Methode kopiert oder verschiebt Nachrichten in einen anderen Ordner. 
   

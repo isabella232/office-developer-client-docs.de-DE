@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 51f0eb8a-0a16-4b45-9380-28caddecf955
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1a865b571de9e471bcc1942ab54b02f658b4c158
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0c3b200c416a21dab00e1ad31e70b58fbdbf845e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794938"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590610"
 ---
 # <a name="pidtagrelatedmessageids-canonical-property"></a>PidTagRelatedMessageIds (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste mit Bezeichnern für Nachrichten, die mit denen eine Nachricht verbunden ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RELATED_IPMS  <br/> |
-|Bezeichner:  <br/> |0x002D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RELATED_IPMS  <br/> |
+|Kennung:  <br/> |0x002D  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Bezeichner verwenden bestimmte Konstruktion dieselben Regeln wie für die **PR_SEARCH_KEY** ([PidTagSearchKey](pidtagsearchkey-canonical-property.md))-Eigenschaft verwendet werden.
   

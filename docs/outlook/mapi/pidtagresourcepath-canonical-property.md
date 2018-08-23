@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac49538e-6ee8-4ab4-9d79-88a83c7d0149
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d7385ea403e7ea45c97f6fd98e422ad7eb762c4c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a00abec7627eb12e23e7b76f5d0900514d710ffb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794981"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593095"
 ---
 # <a name="pidtagresourcepath-canonical-property"></a>PidTagResourcePath (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen Pfad zu den Dienstanbieter Server enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RESOURCE_PATH, PR_RESOURCE_PATH_A, PR_RESOURCE_PATH_W  <br/> |
-|Bezeichner:  <br/> |0x3E07  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RESOURCE_PATH, PR_RESOURCE_PATH_A, PR_RESOURCE_PATH_W  <br/> |
+|Kennung:  <br/> |0x3E07  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Pfad in diesen Eigenschaften enthalten stellt den vorgeschlagenen Pfad, in dem der Benutzer Ressourcen suchen kann. Die Definition dieser Eigenschaften ist anbieterspezifisch. Beispielsweise verwendet eine Anwendung zur terminplanung diese Eigenschaften, um den vorgeschlagenen Speicherort für die Planung Anwendungsdateien anzugeben.
   

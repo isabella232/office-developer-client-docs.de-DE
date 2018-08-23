@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 27347302-bd52-4f62-98f1-6c37f9a66463
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4598ca5e654308f7701b1dd66adb227599773b7d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 08527f3325742eb7c48f11c2ed7d08f71fa3e972
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795232"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592710"
 ---
 # <a name="pidtagstorerecordkey-canonical-property"></a>PidTagStoreRecordKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den eindeutigen binär vergleichbaren Bezeichner (Datensatzschlüssel) des Nachrichtenspeichers in der sich ein Objekt befindet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_STORE_RECORD_KEY  <br/> |
-|Bezeichner:  <br/> |0x0FFA  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_STORE_RECORD_KEY  <br/> |
+|Kennung:  <br/> |0x0FFA  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Für einen Nachrichtenspeicher ist diese Eigenschaft mit der **PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))-Eigenschaft des Speichers identisch.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1394039b-d509-49a5-8421-b7362d906879
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 516de39d721c532c003775bd366a52ed8144ab88
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 72a26875802b2b7f94261f11e78fe560e9cc49d3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792664"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583428"
 ---
 # <a name="imsgstoreunadvise"></a>IMsgStore::Unadvise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bricht ab, das Senden von Benachrichtigungen, die zuvor mit einem Aufruf der Methode [IMsgStore::Advise](imsgstore-advise.md) eingerichtet. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Die Registrierung wurde erfolgreich abgebrochen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgStore::Unadvise** -Methode hebt die Registrierung ein für die Benachrichtigung. **Unadvise** -Versionen der Zeiger auf des Anrufers advise-Empfänger, die sie in der **Advise** -Aufruf für die Registrierung verwendet erhalten. 
   

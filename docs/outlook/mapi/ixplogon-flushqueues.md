@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1f630c6-9e95-49c0-9757-4685c98184dc
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 116e3cfaace9c0965001021575b76ec371667877
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 961ac2d26cd58e625c35d00bd1216cdee2ce57a0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792877"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584730"
 ---
 # <a name="ixplogonflushqueues"></a>IXPLogon::FlushQueues
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fordert, dass der Adressbuchhierarchie sofort alle ausstehende eingehende oder ausgehende Nachrichten übermitteln.
   
@@ -76,7 +76,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::FlushQueues** -Methode, um der Adressbuchhierarchie darauf hinzuweisen, dass die MAPI-Warteschlange ist dabei, die Verarbeitung von Nachrichten zu beginnen. Der Transportdienst sollte die [IMAPISupport::ModifyStatusRow](imapisupport-modifystatusrow.md) -Methode zum Festlegen einer entsprechenden Bit für den Zustand in die **PR_STATUS_CODE** ([PidTagStatusCode](pidtagstatuscode-canonical-property.md))-Eigenschaft des seine Statuszeile aufrufen. Nach dem Aktualisieren der Statuszeile, sollte der Adressbuchhierarchie für den Anruf **FlushQueues** S_OK zurückgegeben. Die MAPI-Warteschlange startet das Senden von Nachrichten, mit dem Vorgang synchron an die Warteschlange MAPI. 
   

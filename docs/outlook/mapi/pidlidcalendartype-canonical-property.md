@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 06e066f1-2b7d-4a6b-b88c-85a9bfa83bd3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8e3017d18491fde6b66c3173c43b8b9d0ee37ea8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 815a0475c678f30c520d2d7847571f4ddb31cac4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793457"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591961"
 ---
 # <a name="pidlidcalendartype-canonical-property"></a>PidLidCalendarType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Wert des Felds CalendarType aus der Eigenschaft **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md)).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |LID_CALENDAR_TYPE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |LID_CALENDAR_TYPE  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000001C  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die Besprechungsanfrage eine Terminserie oder eine Ausnahme darstellt, ist dies der Wert des Felds CalendarType aus der **DispidApptRecur** -Eigenschaft. Anderenfalls diese Eigenschaft nicht festlegen und davon ausgegangen, dass 0 sein. 
   

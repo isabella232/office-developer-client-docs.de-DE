@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 66ce8f36-2b2b-4a8e-b9b2-43782d8357a1
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 92540159386e6f37d93684aff037b235071010f7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: ef0dc212a6a6f761cd8dd0cae5312c548c02ae50
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792854"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583820"
 ---
 # <a name="itabledatahrqueryrow"></a>ITableData::HrQueryRow
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft eine Tabellenzeile.
   
@@ -59,7 +59,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Die [SPropValue](spropvalue.md) -Struktur, _LpSPropValue_ verweist, enthält nicht die Index-Spalte-Eigenschaft. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **ITableData::HrQueryRow** -Methode ruft alle Eigenschaften für die Zeile, die eine Indexspalte vorhanden ist, die den Wert der Indexspalte in der Eigenschaft Struktur auf den _LpSPropValue_enthalten entspricht. **HrQueryRow** gibt auch die Nummer der Zeile zurück, wenn der Anrufer, anfordert, auf dem die Zeilenposition in der Tabelle identifiziert. 
   

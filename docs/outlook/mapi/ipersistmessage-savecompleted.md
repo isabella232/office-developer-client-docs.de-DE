@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 83161011-90b4-49cb-9bcd-153a21a10977
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7a82ce9a46017993adfc6c4c755b6c97b847e579
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7813636abc1c4d6ad756c7cf670e21d4acb7f540
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792748"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592745"
 ---
 # <a name="ipersistmessagesavecompleted"></a>IPersistMessage::SaveCompleted
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das Formular benachrichtigt, einen Vorgang abgeschlossen wurde. 
   
@@ -57,7 +57,7 @@ E_UNEXPECTED
     
    - [NoScribble](noscribble-state.md)
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IPersistMessage::SaveCompleted** -Methode wird aufgerufen, von einem Formular-Viewer, um das Formular zu benachrichtigen, das alle ausstehende Änderungen gespeichert wurden. **SaveCompleted** sollte aufgerufen werden, nur, wenn das Formular in einem der folgenden Zustände befindet: 
   
@@ -83,19 +83,9 @@ In der folgenden Tabelle werden die Bedingungen, die die Aktionen betreffen, die
 |Das Formular befindet sich in einem der Zustände HandsOff und der _pMessage_ -Parameter auf NULL festgelegt ist.  <br/> |E_INVALIDARG zurück.  <br/> |
 |Das Formular befindet sich in eine andere als die HandsOff Zustände oder der NoScribble Zustand.  <br/> |E_UNEXPECTED zurückgeben.  <br/> |
    
-Weitere Informationen zum Speichern von Speicherobjekte finden Sie unter Dokumentation für die [IPersistStorage::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersiststorage_savecompleted%28Office.15%29.aspx) oder [:: SaveCompleted](http://msdn.microsoft.com/library/_com_ipersistfile_savecompleted%28Office.15%29.aspx) -Methoden. 
+Weitere Informationen zum Speichern von Speicherobjekte finden Sie unter Dokumentation für die [IPersistStorage::SaveCompleted](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nf-objidl-ipersiststorage-savecompleted) oder [:: SaveCompleted](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nf-objidl-ipersistfile-savecompleted) -Methoden. 
   
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[IPersistMessage : IUnknown](ipersistmessageiunknown.md)
-
-
-[Formularstatus](form-states.md)
-
-
-[IPersistStorage::SaveCompleted](http://msdn.microsoft.com/library/_com_ipersiststorage_savecompleted%28Office.15%29.aspx)
-  
-[:: SaveCompleted](http://msdn.microsoft.com/library/_com_ipersistfile_savecompleted%28Office.15%29.aspx)
-
+- [IPersistMessage : IUnknown](ipersistmessageiunknown.md)
+- [Formularstatus](form-states.md)

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7db0645b-f3ab-4fc4-b865-68c952aeb359
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1d4d4404d175458d5b708948b11c93b734a8bd1f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c0263b905e01a8937e2472d6e8c165287e7ebc5d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794865"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588048"
 ---
 # <a name="pidtagreadreceiptrequested-canonical-property"></a>PidTagReadReceiptRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Absender eine Nachricht möchte Nachrichtensystem einen lesen Bericht aus, wenn der Empfänger eine Nachricht gelesen hat.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_READ_RECEIPT_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0x0029  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_READ_RECEIPT_REQUESTED  <br/> |
+|Kennung:  <br/> |0x0029  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf TRUE festgelegt sein, um die Werte in der **PR_READ_RECEIPT_ENTRYID** ([PidTagReadReceiptEntryId](pidtagreadreceiptentryid-canonical-property.md)) und **PR_READ_RECEIPT_SEARCH_KEY** ([PidTagReadReceiptSearchKey](pidtagreadreceiptsearchkey-canonical-property.md)) Eigenschaften zu überprüfen.
   

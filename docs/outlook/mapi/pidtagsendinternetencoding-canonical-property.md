@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: ae408b4f-dee3-484b-a19c-f472cfa95996
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b6814df2b28961be7e8c07a2d19932988605dc87
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 33b9931a269eb4b5ee0429287d60fa1962b0e4f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795138"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584233"
 ---
 # <a name="pidtagsendinternetencoding-canonical-property"></a>PidTagSendInternetEncoding (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske der Voreinstellungen-Codierung. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SEND_INTERNET_ENCODING  <br/> |
-|Bezeichner:  <br/> |0x3A71  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SEND_INTERNET_ENCODING  <br/> |
+|Kennung:  <br/> |0x3A71  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Legen Sie diese Eigenschaft an, dass die Codierungsoptionen verwendet. 
   

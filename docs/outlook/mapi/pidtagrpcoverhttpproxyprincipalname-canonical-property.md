@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f9dd58c7-4119-90db-54f3-e1dd8e48451e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 68a45e0bfedf01b846fd77a638587fa4fb35fe7e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ad677b789065f2364d545eb86f5e6bbe56e20181
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794996"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585850"
 ---
 # <a name="pidtagrpcoverhttpproxyprincipalname-canonical-property"></a>PidTagRpcOverHttpProxyPrincipalName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Prinzipalnamen des Proxyservers an, die von Microsoft Outlook verwendet wird, auf Microsoft Exchange Server eine Verbindung über einen Remoteprozeduraufruf (RPC) über Hypertext Transfer Protocol (HTTP).
   
@@ -27,8 +27,8 @@ Enthält den Prinzipalnamen des Proxyservers an, die von Microsoft Outlook verwe
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROH_PROXY_PRINCIPAL_NAME  <br/> |
-|Bezeichner:  <br/> |0x6625  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROH_PROXY_PRINCIPAL_NAME  <br/> |
+|Kennung:  <br/> |0x6625  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    

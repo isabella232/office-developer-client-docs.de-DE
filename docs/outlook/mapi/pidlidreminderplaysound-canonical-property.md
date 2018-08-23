@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8a25719d-7799-4f11-9550-e4cc42be483a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 52dc4f0a11c480c08b5ea66a7f987e968287d490
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e3ab726d6b1d00db20a4d0dac05f4f0d1fa3259c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793751"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591296"
 ---
 # <a name="pidlidreminderplaysound-canonical-property"></a>PidLidReminderPlaySound (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob der Client ein akustisches Signal wiedergegeben werden soll, wenn die Erinnerung überfällig wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidReminderPlaySound  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidReminderPlaySound  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000851E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

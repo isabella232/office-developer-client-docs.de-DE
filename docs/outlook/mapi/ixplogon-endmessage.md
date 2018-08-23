@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb29e6a0-7a92-46eb-bbeb-6f2df6ac6d21
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7f81a0c3c9a9ad0a9bcef5c5685aa5b343237f19
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f727d68e0e193e8f2e148d881968993f836f8ab0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792868"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582469"
 ---
 # <a name="ixplogonendmessage"></a>IXPLogon::EndMessage
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Transportdienst informiert werden, dass die MAPI-Warteschlange die Verarbeitung für eine ausgehende Nachricht abgeschlossen.
   
@@ -62,7 +62,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange Ruft die **IXPLogon::EndMessage** -Methode nach dem Abschluss der Verarbeitung von erweiterten Übermittlung oder Nondelivery Informationen bereitstellen. 
   

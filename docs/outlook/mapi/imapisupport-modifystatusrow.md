@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a304ca8f-e404-4535-be76-0b673f2061a0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 24718c50d02da5d60a6594f56ea6100650fe9f1a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 06a5c9de5c0ce4c0f936791086a731a55510a124
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792371"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592143"
 ---
 # <a name="imapisupportmodifystatusrow"></a>IMAPISupport::ModifyStatusRow
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ändert die Statustabelle durch eine neue Zeile hinzufügen oder Ändern einer vorhandenen Zeile.
   
@@ -59,7 +59,7 @@ S_OK
   
 > Die Statustabelle wurde erfolgreich aktualisiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::ModifyStatusRow** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter rufen **ModifyStatusRow** Sie bei der Anmeldung, um die Statustabelle eine Zeile hinzuzufügen und zu anderen Zeiten während der Sitzung auf die Zeile zu aktualisieren. **ModifyStatusRow** bietet MAPI die erforderlichen Informationen für die Statustabelle zu erstellen. 
   

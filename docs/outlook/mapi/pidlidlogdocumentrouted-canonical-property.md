@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 604f8859-469f-4745-b4b5-8f69737867a3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e88c240b4219ac66bc9a1d4b8fa11ffc47682dd9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 076ad08cb1ea743a796ce77f401089444de5c824
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793649"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590379"
 ---
 # <a name="pidlidlogdocumentrouted-canonical-property"></a>PidLidLogDocumentRouted (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob das Dokument während Journaling an einen Empfänger gesendet wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogDocRouted  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogDocRouted  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008710  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

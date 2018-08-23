@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0170bb9b-f43b-4089-9144-b8652c38f43d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dc4658d57a127cf2cf7cd8794cf7bc8c745c0e3f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a36728fc3db2506e7c8d929842de6916b55409c8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793438"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588258"
 ---
 # <a name="pidlidappointmentsequencetime-canonical-property"></a>PidLidAppointmentSequenceTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Datum und die Uhrzeit der letzten dieser Eigenschaft Änderung an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptSeqTime  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptSeqTime  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008202  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   

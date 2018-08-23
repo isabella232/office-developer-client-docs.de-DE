@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: fc3c0ab3-6920-4e82-bc69-6c083159628f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0ea3e2f88b3e0df2f358894cdf604dda651821b3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e014128da9045bb71089a9b73118d6f962025778
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793908"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590981"
 ---
 # <a name="pidlidworkaddress-canonical-property"></a>PidLidWorkAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Adresse des Kontakts die Arbeit abgeschlossen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidWorkAddress  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidWorkAddress  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000801B  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenschaften und basiert auf dem Gebietsschema des Clients.
   

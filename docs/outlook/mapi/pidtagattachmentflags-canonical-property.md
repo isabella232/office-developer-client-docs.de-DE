@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 42981aac-f9e7-45dd-91a2-15d9784f30aa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 825f6f1eff94635ca2d0f5226cfc3f421d41bcce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0701bb2cf08c79a69c9cd21e9acf1ce4e8ac4ee1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794118"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593074"
 ---
 # <a name="pidtagattachmentflags-canonical-property"></a>PidTagAttachmentFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Besondere Behandlung für diese Attachment-Objekt angibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACHMENT_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x7FFD  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACHMENT_FLAGS  <br/> |
+|Kennung:  <br/> |0x7FFD  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 0 x 00000000, muss es sei denn, die durch andere Protokolle, die die Nachricht erweitern und Attachment-Objektprotokoll wie bereits erwähnt in [[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx) außer Kraft gesetzt
   

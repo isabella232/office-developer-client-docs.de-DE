@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a1929ab8-4813-468b-9768-cdf7f848cfce
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 31dcef0c096847a78569c46313c9ede4222d8e36
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1f51d14160c5fd80c3e65f5e4c38d3347748136b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795101"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593256"
 ---
 # <a name="pidtagsearch-canonical-property"></a>PidTagSearch (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Container-Objekt, das für die erweiterte Suche verwendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SEARCH  <br/> |
-|Bezeichner:  <br/> |0x3607  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SEARCH  <br/> |
+|Kennung:  <br/> |0x3607  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Adressbuchcontainer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Container, der Funktionen für die erweiterte Suche nicht unterstützt hat keinen die-Eigenschaft angeben.
   

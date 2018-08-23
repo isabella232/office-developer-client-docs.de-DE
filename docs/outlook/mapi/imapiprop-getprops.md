@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1c7a9cd2-d765-4218-9aee-52df1a2aae6c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 33351235db2a9a3f9d9b67f59e8356a0fa8abfa8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 462d42d68bddba72fd81b97e2aeb9eb5ee8c9c20
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792279"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588006"
 ---
 # <a name="imapipropgetprops"></a>IMAPIProp::GetProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft den Wert der Eigenschaft um, der eine oder mehrere Eigenschaften eines Objekts an.
   
@@ -72,7 +72,7 @@ MAPI_E_INVALID_PARAMETER
   
 > 0 (null) wurde im **cValues** -Member der **SPropTagArray** -Struktur, die auf den _LpPropTagArray_übergeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIProp::GetProps** -Methode ruft die Eigenschaftswerte der eine oder mehrere Eigenschaften eines Objekts. 
   
@@ -193,7 +193,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIProp : IUnknown](imapipropiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Abrufen von MAPI-Eigenschaften](retrieving-mapi-properties.md)
   

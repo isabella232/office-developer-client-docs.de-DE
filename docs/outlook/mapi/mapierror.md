@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e04c2228-aa0a-4958-b5b2-6467e93ab613
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d0ddff638e26940ea74932a8a491455f67cc8dd8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bbf8e2eb2961a3d149010b876d2b4cb3d0c8abc1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793112"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592528"
 ---
 # <a name="mapierror"></a>MAPIERROR
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ausführliche Informationen zu einem Fehler, die in der Regel durch das Betriebssystem, MAPI- oder einem Dienstanbieter generiert. 
   
@@ -65,7 +65,7 @@ typedef struct _MAPIERROR
   
 > Wert, der die Position in der Komponente darstellt, auf die der **LpszComponent** -Member, der angibt, in dem der Fehler aufgetreten ist. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur **MAPIERROR** wird verwendet, um die Fehlerinformationen zu beschreiben. Clients und Dienstanbieter übergeben einen Zeiger auf eine **MAPIERROR** -Struktur in der _LppMAPIError_ -Parameter der [IMAPIProp::GetLastError](imapiprop-getlasterror.md) -Methode. **GetLastError** gibt Informationen zu den vorherigen auf ein Objekt aufgetretenen Fehler zurück. **GetLastError** Aufrufer freigeben den Speicher für die Struktur **MAPIERROR** durch Aufrufen von [MAPIFreeBuffer](mapifreebuffer.md).
   

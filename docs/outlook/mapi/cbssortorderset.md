@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0131b4b-9b25-47d3-8eeb-abe29c353ebc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: eca43833fb286dbb73b6da0a278196d43aa86426
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1f3a4444829da69f67ea8b3e833c34aa8bdc9163
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791434"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585409"
 ---
 # <a name="cbssortorderset"></a>CbSSortOrderSet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes in einer vorhandenen [SSortOrderSet](ssortorderset.md) Struktur. 
   

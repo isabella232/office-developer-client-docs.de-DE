@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 84019475-5176-4fc5-a3ee-871095077498
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1040a0730c4b26b51d3c2b7763488502b2c5323c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5ce5aa8c43e284b493a0709808a196c6c6889f88
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792377"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592108"
 ---
 # <a name="imapisupportdocopyto"></a>IMAPISupport::DoCopyTo
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert oder verschiebt alle Eigenschaften eines Objekts, mit Ausnahme von speziell Ausgeschlossene Eigenschaften in ein anderes Objekt.
   
@@ -145,7 +145,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > Der Eigenschaftentyp ist nicht vom Anrufer erwartet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::DoCopyTo** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht Anbieter können **DoCopyTo** zum Implementieren der [IMAPIProp::CopyTo](imapiprop-copyto.md) -Methode für ihre Ordner und Nachrichten aufrufen. 
   

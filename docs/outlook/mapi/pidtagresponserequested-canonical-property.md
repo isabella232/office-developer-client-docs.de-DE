@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: e52bb48c-7107-4ac4-b030-885409759ee7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b099bf5df657b5516fbf0948e742d1d1b36af2e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 02ab7f88edda39fcb1c66eaf643a8263e9d509c8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794978"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591730"
 ---
 # <a name="pidtagresponserequested-canonical-property"></a>PidTagResponseRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Absender der Nachricht eine Antwort auf eine Besprechungsanfrage möchte.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RESPONSE_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0x0063  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RESPONSE_REQUESTED  <br/> |
+|Kennung:  <br/> |0x0063  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird für Besprechungsanfragen verwendet. Die empfangenden Clientanwendung sollte der Benutzer aufgefordert, akzeptieren oder Ablehnen der Anforderung und senden Sie diese Antwort an den Absender zurückgesendet.
   

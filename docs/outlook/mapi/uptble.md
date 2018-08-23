@@ -7,17 +7,17 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f7fcb385-186d-d5fe-7104-fe0af09d5768
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 62c18ac609547563ad0e98cbd914866e05888ac8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b2523c149d98dacf9ad321a4a443382a39753fd5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795823"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592339"
 ---
 # <a name="uptble"></a>UPTBLE
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ausführliche Informationen zum Hochladen der Inhalt eines Ordners während der [Tabelle Zustand hochladen](upload-table-state.md)enthält.
   

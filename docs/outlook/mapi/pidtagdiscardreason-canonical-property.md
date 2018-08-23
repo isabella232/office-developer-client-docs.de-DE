@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5004dc1f-6bd3-4764-b83c-d04d83161dba
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4799cd14000b46053d1e571a7ab1c2c0c394a014
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a8835b7234a209d5cb80a19593632380f6d83826
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794308"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593158"
 ---
 # <a name="pidtagdiscardreason-canonical-property"></a>PidTagDiscardReason (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Grund, warum ein Message Transfer Agent (MTA) eine Nachricht gelöscht wurde. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DISCARD_REASON  <br/> |
-|Bezeichner:  <br/> |0x0011  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DISCARD_REASON  <br/> |
+|Kennung:  <br/> |0x0011  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Grund dafür, die in dieser Eigenschaft enthalten sind, wird in einen Unzustellbarkeitsbericht für die Nachricht verwendet.
   

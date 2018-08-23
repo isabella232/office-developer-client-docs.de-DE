@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5680fed2-b2e7-4c4b-9ba8-2c497b9c433c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 456ef036b26fd8b9840d33f0f699474c3a6ce127
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0ff8d9f1ae25c55d66847b8c0e5e66c406dfdfba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791419"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586151"
 ---
 # <a name="choosing-a-forms-property-set"></a>Auswählen eines Formulars Eigenschaftensatz
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn Sie Ihr Formular Server implementieren, müssen Sie eine Eigenschaft für jede Informationseinheit befinden, die die Nachrichtenklasse muss. Diese Eigenschaften vordefinierten MAPI-Eigenschaften werden können, oder sie können benutzerdefinierte Eigenschaften, mit denen Sie definiert werden. Weitere Informationen über das Arbeiten mit Eigenschaften finden Sie unter [Übersicht über die MAPI-Eigenschaft](mapi-property-overview.md).
   

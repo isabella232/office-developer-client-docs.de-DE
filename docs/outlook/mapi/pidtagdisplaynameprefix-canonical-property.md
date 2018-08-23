@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 014ce1aa-30b9-4106-82a1-447c370853cf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6dc487f0076c795b986976bcbd9ebe146f24b224
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: aa309a15cf25b3b57bc916eff0bbf18c1f786475
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794321"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586683"
 ---
 # <a name="pidtagdisplaynameprefix-canonical-property"></a>PidTagDisplayNamePrefix (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das Präfix für den Namen Anzeige (beispielsweise verpassen, Mr, Frau) für die messaging-Benutzer. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DISPLAY_NAME_PREFIX, PR_DISPLAY_NAME_PREFIX_A, PR_DISPLAY_NAME_PREFIX_W  <br/> |
-|Bezeichner:  <br/> |0x3A45  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DISPLAY_NAME_PREFIX, PR_DISPLAY_NAME_PREFIX_A, PR_DISPLAY_NAME_PREFIX_W  <br/> |
+|Kennung:  <br/> |0x3A45  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einer messaging-Benutzer. Der Inhalt wird durch die messaging-Benutzer und Organisation messaging-Benutzer definiert.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8c22547e-ddf5-47f7-aed3-76e3854688df
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cb683178a8e258f571cbc3d05a3b030481905433
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 524bbfe5f40a66585fb4ed4463b057ca6a0c881a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792345"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586802"
 ---
 # <a name="imapisupportaddress"></a>IMAPISupport::Address
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt das Dialogfeld allgemeine Adresse an. 
   
@@ -55,7 +55,7 @@ S_OK
   
 > Das Dialogfeld Adresse wurde erfolgreich angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::Address** -Methode wird für Address Book Anbieter Unterstützungsobjekte implementiert. Von adressbuchanbietern implementierte Aufrufen **Adresse** zum Erstellen oder aktualisieren eine Liste der Empfänger der Nachricht. 
   

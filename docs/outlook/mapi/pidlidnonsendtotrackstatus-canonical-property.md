@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 50fec332-e7df-4bc6-8c50-59b9ca545f89
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 45d8512d48a1908d81e78b87c5975ab2da8c6c80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cf9d11b7a53ee0b9911e32cb3c3e2a0a490e4729
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793680"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592787"
 ---
 # <a name="pidlidnonsendtotrackstatus-canonical-property"></a>PidLidNonSendToTrackStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert für jeden Teilnehmer in der Eigenschaft **DispidNonSendableTo** ([PidLidNonSendableTo](pidlidnonsendableto-canonical-property.md)) aufgeführt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidNonSendToTrackStatus  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidNonSendToTrackStatus  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008543  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist erforderlich, nur, wenn die **DispidNonSendableTo** -Eigenschaft festgelegt wird. Die Anzahl von Werten in dieser Eigenschaft muss die Anzahl von Werten in **DispidNonSendableTo**entsprechen. Jeder PT_LONG Wert in dieser Eigenschaft entspricht der Teilnehmer in der **DispidNonSendableTo** -Eigenschaft im selben Index. 
   

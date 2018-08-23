@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 655774a6-588c-44c7-903b-4497b7eccbc2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9af170f3445757eb96b9fe78c7cbea2c29ef4612
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 954609cbc62039c0d60874bde83fde50d1d11c30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793296"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591667"
 ---
 # <a name="msgserviceentry"></a>MSGSERVICEENTRY
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert einen Prototyp für eine Nachricht Service-Einstiegspunkt zu Nachricht Dienstkonfiguration zu unterstützen. 
   
@@ -160,7 +160,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und die Implementierung unterstützt keine Unicode oder Parameter MAPI_UNICODE nicht festgelegt wurde und die Implementierung unterstützt nur Unicode.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Funktion, mit dem **MSGSERVICEENTRY** Funktionsprototyp definiert ermöglicht Message Dienste so konfigurieren Sie selbst oder andere dienstspezifische Aktionen auszuführen. Die Funktion stellt bereit in erster Linie ein Dialogfeld, in dem der Benutzer den Dienst spezifischen Einstellungen ändern kann. Sie können auch programmgesteuerte Konfiguration unterstützt werden mithilfe des im _LpProps_ -Parameter übergebenen Wertearrays-Eigenschaft. Programmgesteuerte Konfiguration ist optional, es sei denn, der Dienst der Profil-Assistent unterstützt, ist es erforderlich. 
   

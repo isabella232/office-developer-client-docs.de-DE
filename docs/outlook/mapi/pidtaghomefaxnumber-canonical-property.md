@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 80208900-94b8-4215-8bb8-66017856d4c3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 652860a30fd1645ffd3b5fb836489f9d8ae7e578
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 681e2a461f0ebeefcc7dba85dadf324aab9eb1b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794443"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587005"
 ---
 # <a name="pidtaghomefaxnumber-canonical-property"></a>PidTagHomeFaxNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Telefonnummer des Empfängers Fax privat Computers. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOME_FAX_NUMBER, PR_HOME_FAX_NUMBER_A, PR_HOME_FAX_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A25  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOME_FAX_NUMBER, PR_HOME_FAX_NUMBER_A, PR_HOME_FAX_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A25  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

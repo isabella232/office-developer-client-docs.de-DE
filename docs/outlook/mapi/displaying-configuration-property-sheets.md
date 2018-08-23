@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c9386b98-615f-488c-8212-11d9abebbdcf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: aa3ddecbd5af56eef16f5ae3a349a027e689fc8e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: fa48e97ed25fe1175ffd3a92ac961dcf5bde50b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791562"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588356"
 ---
 # <a name="displaying-configuration-property-sheets"></a>Anzeigen der Konfiguration Eigenschaftenseiten
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Transportanbieter für verwenden Sie die Methode [IMAPISupport::DoConfigPropsheet](imapisupport-doconfigpropsheet.md) Konfiguration Eigenschaftenseiten zu implementieren. Beim Aufruf von **DoConfigPropSheet**übergibt der Adressbuchhierarchie einen Zeiger auf ein Array von Eigenschaften sowie Informationen dazu, wie sie angezeigt. MAPI stellt dann die Eigenschaften für den Benutzer über ein standard-Dialogfeld. Es wird dringend empfohlen, diese Eigenschaft Blatt-Mechanismus verwenden, wenn Ihre Adressbuchhierarchie aufgrund der Vorteil für den Benutzer über eine konsistente Schnittstelle implementieren.
   

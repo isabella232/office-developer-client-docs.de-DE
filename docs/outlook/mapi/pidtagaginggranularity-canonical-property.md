@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b79ec87d-d97c-4e6c-899b-78ebf1b485a7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 09a79a68d7619ded9edf3ec4ac67733bdec1e32c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c1b5b36c3a05ef17e319ef236b032b7d07ce8fa8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794071"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589420"
 ---
 # <a name="pidtagaginggranularity-canonical-property"></a>PidTagAgingGranularity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt die Zeiteinheit, die verwendet wird, bei der Bestimmung der Zeitdauer, die ein Element in einem Ordner bleibt, bevor das Element archiviert wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AGING_GRANULARITY  <br/> |
-|Bezeichner:  <br/> |0x36EE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AGING_GRANULARITY  <br/> |
+|Kennung:  <br/> |0x36EE  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die möglichen Werte für **PR_AGING_GRANULARITY** können eine der folgenden sein. 
   

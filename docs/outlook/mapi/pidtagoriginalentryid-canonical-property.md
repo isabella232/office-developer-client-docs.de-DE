@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8197d2c7-8665-41b8-bd3a-e9c1c2e642e9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d60531b087d00ca63a060a4dbfac559ba3b01788
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eab72c5b49ba501d8ab5516bf5a5eae9ea82abe0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794698"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588706"
 ---
 # <a name="pidtagoriginalentryid-canonical-property"></a>PidTagOriginalEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die ursprünglichen Eintrags-ID für einen Eintrag aus einem Adressbuch an ein persönliches Adressbuch oder anderen beschreibbaren Adressbuch kopiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x3A12  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_ENTRYID  <br/> |
+|Kennung:  <br/> |0x3A12  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Eigenschaften, die der ursprünglichen Quelle eines Eintrags kopierten Informationen enthalten.
   

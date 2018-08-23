@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c0bbbd06-d47d-45ad-8179-2372d1d023d0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d12d879ea5a82c5e0e3978d90694b3851aaac5cc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f78c25285c7ac3f8736006e4a45079a7d9a6d867
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792983"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592297"
 ---
 # <a name="mapi-form-manager"></a>MAPI-Formular-Manager
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Formular-Manager ist ein Objekt, das die [IMAPIFormMgr](imapiformmgriunknown.md) -Schnittstelle implementiert wird. Die meisten Organisationen verwenden den Formular-Manager Lieferumfang MAPI, als der Standard-Formular-Manager bezeichnet. Jedoch kann eine Organisation den Standard-Formular-Manager mit einem benutzerdefinierten Formular-Manager ersetzen, falls gewünscht. Der Formular-Manager kümmert Auffinden von Formularen in Formularbibliotheken, Laden von Formularen in Reaktion auf Benutzeranfragen und Formulare in lokalen Formularbibliothek, Ordner-Formularbibliothek oder persönliche Formularbibliothek des Benutzers installieren. 
   

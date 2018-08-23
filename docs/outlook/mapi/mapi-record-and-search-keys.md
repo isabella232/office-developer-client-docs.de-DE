@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: caa7b7f3-a5a1-4f07-98c9-22652ecd5d21
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 1e1b05be64029f80ec8a7379ed7b313b9cf645fd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4aa641ad0a41ff8015d2ece717d5a4cb3a7c4edf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793054"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587313"
 ---
 # <a name="mapi-record-and-search-keys"></a>MAPI-Datensatz und Suche Schlüssel
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aufzeichnen Tasten und die Suche Tasten sind binäre IDs, die viele MAPI-Objekten zugewiesen sind. Im Gegensatz zu Eintrags-ID für ein Objekt ist seine Datensatz oder in den Schlüssel direkt vergleichbare sowie Übertragungseinehit. 
   

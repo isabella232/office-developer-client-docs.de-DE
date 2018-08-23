@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 011d73d0-8b38-4a4e-a56f-92dec451946a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e2caccf3cf6ca7e6f15bed1c901d4dfbb198f19b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 91cad169157b2dd0ff279e88b69db149c4c7df89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793726"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590750"
 ---
 # <a name="pidlidreminderdelta-canonical-property"></a>PidLidReminderDelta (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Intervall in Minuten zwischen dem Zeitpunkt, wann die Erinnerung zuerst überfällig wird, und die Anfangszeit des Calendar-Objekt an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidReminderDelta  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidReminderDelta  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008501  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf Kalender-Objekte festgelegt werden. Für alle Objekte, nicht-Kalender wird diese Eigenschaft auf "0 x 00000000" festgelegt werden und wird ignoriert. Wenn eine Erinnerung für eine Instanz von sich wiederholenden Calendar-Objekt geschlossen ist, wird der Wert dieser Eigenschaft in der Berechnung der Zeit Signal an die nächste Instanz verwendet. Einzelheiten über das Erstellen von Calendar-Objekt finden Sie unter [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx) . 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 99dffcd9-83dc-462e-b0ce-e2101e546cc6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 03082536902ead880ba88343cd1991e518ed5665
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5ef88992cefda851742bb332c643136603a4d6a0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794578"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584590"
 ---
 # <a name="pidtaglocation-canonical-property"></a>PidTagLocation (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Speicherort des Empfängers in einem Format, die in der Aufgabenliste des Empfängers Organisation eignet. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_LOCATION, PR_LOCATION_A, PR_LOCATION_W  <br/> |
-|Bezeichner:  <br/> |0x3A0D  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_LOCATION, PR_LOCATION_A, PR_LOCATION_W  <br/> |
+|Kennung:  <br/> |0x3A0D  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

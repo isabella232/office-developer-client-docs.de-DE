@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a63d647-7504-42fc-b317-6b02b89070eb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 260a35af11b76b1867c693723c1a7fa8133082fd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d950ee21c0c4c41e84c0fe1f8104219e63f84cec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795159"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592675"
 ---
 # <a name="pidtagservicename-canonical-property"></a>PidTagServiceName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen eines Diensts Nachricht als vom Benutzer in der Datei "MapiSvc.inf" festgelegt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SERVICE_NAME, PR_SERVICE_NAME_A, PR_SERVICE_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3D09  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SERVICE_NAME, PR_SERVICE_NAME_A, PR_SERVICE_NAME_W  <br/> |
+|Kennung:  <br/> |0x3D09  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Name dieser Eigenschaften enthalten ist speziell für den Dienst. Es geht in MapiSvc.inf aktivieren Sie im Abschnitt [Services].
   

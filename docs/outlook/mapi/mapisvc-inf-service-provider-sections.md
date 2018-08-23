@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ab17dcf2-409b-4a57-9cc4-5794f995cd3e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ad6a4661025dfd8cbd39d8f58a36d94ab997ada2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 05666d8d6b7279588b4b442151640fa1696aedda
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793160"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586781"
 ---
 # <a name="mapisvcinf-service-provider-sections"></a>Dienstanbieterabschnitte in MapiSvc.inf
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPISVC.inf enthält einen Dienst Anbieterabschnitt für jeden der Einträge in der **Anbieter** -Eintrag im vorherigen Abschnitt der Nachricht Dienste aufgeführt. **Service** Provider Abschnitte ähneln Nachricht Service Abschnitte, dass beide Arten von Abschnitten Einträge in diesem Format enthalten: 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 76e4cc52-e1a0-4e0b-a2a6-a17644f6b2e7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 97dad50fed4179526e46381c4d9ea9d12d568377
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ee004bdfb8d13537fd8823225f155223ebc76ca7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795469"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583351"
 ---
 # <a name="sccountprops"></a>ScCountProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt fest, der ein Array der Eigenschaft Wert in Byte, und das Array zugeordneten Arbeitsspeicher überprüft. 
   
@@ -65,7 +65,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Mindestens eine Eigenschaft im Array-Wert Eigenschaft ist einen Bezeichner vom PROP_ID_NULL oder PROP_ID_INVALID, oder das Array-Eigenschaft enthält eine mehrwertige Eigenschaft keine-Eigenschaft Werte.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn NULL in der _pcb_ -Parameter übergeben wird, wird die Funktion **ScCountProps** überprüft das Array von Benachrichtigungen, aber keine zählen erfolgt. Wenn Sie ein nicht-Nullwert _pcb_übergeben wird, wird die **ScCountNotifications** -Funktion bestimmt die Größe des Arrays und speichert die Ursache _pcb_. Der Parameter _pcb_ muss groß genug für das gesamte Array sein. 
   

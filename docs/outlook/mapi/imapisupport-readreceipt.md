@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ef31b61a-93b6-4ae8-bc71-f5ef5caf43f4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5e56fd8c053ff32bdeb7b243701c0330b378cdc0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e785d42639d51dab154a0bde239f858a92ddd143
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792423"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588622"
 ---
 # <a name="imapisupportreadreceipt"></a>IMAPISupport::ReadReceipt
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Generiert einen Lese- oder nonread Bericht für eine Nachricht.
   
@@ -59,7 +59,7 @@ S_OK
   
 > Der Bericht wurde erfolgreich generiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::ReadReceipt** -Methode ist nur für Nachricht Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter anrufen **ReadReceipt** um anzuweisen, MAPI, um eine Lese- oder nonread Bericht für die Meldung über den Parameter _LpReadMessage_ generieren. 
   

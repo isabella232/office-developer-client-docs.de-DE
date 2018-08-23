@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 120749ca-a740-4a57-bc70-529e238f4415
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 382dd9ba422f2d8a07f4656fba87cdc0b65512f9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2411b105f685b31d8158dfc20f368ba1bdbb5792
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792984"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584646"
 ---
 # <a name="mapi-form-libraries"></a>MAPI-Formularbibliotheken
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um besser zu organisieren Formular-Servern und -Clientanwendungen auf einfache Weise verfügbar machen, enthält die Architektur des MAPI-Formular Formularbibliotheken, die die Installation, Verwaltung, Replikation und Verwendung des Formulars Server unterstützen.
   

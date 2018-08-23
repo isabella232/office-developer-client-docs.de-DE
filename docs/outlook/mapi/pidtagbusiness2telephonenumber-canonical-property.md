@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 53d94bdb-b95b-48de-bbad-1263ff53e379
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 28d82bf34b0eb8f3c3066f2b88c9ee1c7fb40102
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c90b0c665d83bf11f5133d4904a129e0f2f709f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794147"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593060"
 ---
 # <a name="pidtagbusiness2telephonenumber-canonical-property"></a>PidTagBusiness2TelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine sekundäre Telefonnummer des Empfängers an Business an. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_BUSINESS2_TELEPHONE_NUMBER, PR_BUSINESS2_TELEPHONE_NUMBER_A, PR_BUSINESS2_TELEPHONE_NUMBER_W, PR_OFFICE2_TELEPHONE_NUMBER, PR_OFFICE2_TELEPHONE_NUMBER_A, PR_OFFICE2_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A1B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_BUSINESS2_TELEPHONE_NUMBER, PR_BUSINESS2_TELEPHONE_NUMBER_A, PR_BUSINESS2_TELEPHONE_NUMBER_W, PR_OFFICE2_TELEPHONE_NUMBER, PR_OFFICE2_TELEPHONE_NUMBER_A, PR_OFFICE2_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A1B  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger bereitstellen. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert. 
   

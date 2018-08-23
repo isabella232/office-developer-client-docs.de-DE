@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: adb4d589-7e03-4222-8717-898ef397c6b6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 451bab57d4e2e8669a25d119f9ce28a8f78e628f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d9b4d6a469904058b0484428dbf20a90119e96bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795722"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586137"
 ---
 # <a name="tips-for-working-with-tables"></a>Tipps zum Arbeiten mit Tabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Arbeiten mit einem MAPI ist Tabelle etwas like arbeiten mit einer relationalen Datenbank-Tabelle. Ein Benutzer kann die Anzahl der Zeilen und Spalten in der Ansicht und ihre Reihenfolge angeben. Zeilen können abgerufenen jeweils einzeln oder in Gruppen werden. Ein Cursor, das verfolgt die aktuelle Position kann zu einer bestimmten Stelle in der Tabelle verschoben werden. 
   

@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 90ce0ea3-ba73-cb57-0fa9-8898bc4ac9de
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: 29aabc7a2e8513bf24bd3b56ff3e4a126e3d7437
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5b16da68a5cc5ab9e005a262bf1518ea90aac570
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792696"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587537"
 ---
 # <a name="installing-the-sample-wrapped-pst-store-provider"></a>Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema führt Sie durch die Schritte zum Herunterladen und Installieren der umbrochen PST Store Beispielanbieter. Die umfließendem PST-Datei speichern Beispielanbieter, WrapPST, implementiert einen gepackten PST-Anbieter, der in Verbindung mit der API für die Replikation verwendet werden soll. Weitere Informationen zur Replikation-API finden Sie unter [Über die Replikation-API](about-the-replication-api.md).
   

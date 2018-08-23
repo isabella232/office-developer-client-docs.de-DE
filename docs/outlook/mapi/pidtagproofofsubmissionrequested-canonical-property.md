@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: c7b21c90-7fdc-48e4-8197-7675978c5d3b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 35e7df1d6c2d9c65af6597d22519a41cecc2ff47
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 427eed260dbe56e2a83d7ddccff3eb2cebe8c27c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794841"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589987"
 ---
 # <a name="pidtagproofofsubmissionrequested-canonical-property"></a>PidTagProofOfSubmissionRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein ASN. 1-Nachweis der Übermittlung Wert enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROOF_OF_SUBMISSION_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0 x 0028  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROOF_OF_SUBMISSION_REQUESTED  <br/> |
+|Kennung:  <br/> |0 x 0028  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft entspricht einem x. 400-Übermittlung Umschlag-Message-Attribut.
   

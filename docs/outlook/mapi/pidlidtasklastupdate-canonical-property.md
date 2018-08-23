@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 65b73d0f-f1f1-4c11-8834-f7c736a30ffc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: acd06027f1f9aa051a36192f07efa3ca0671a82e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c97ca1ff27eab1a935317b99cfbf4016d18fa7c5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793838"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587488"
 ---
 # <a name="pidlidtasklastupdate-canonical-property"></a>PidLidTaskLastUpdate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die koordinierte Weltzeit (UTC) und das Datum der letzten Änderung, die versucht, den Vorgang und von der **DispidTaskHistory** ([PidLidTaskHistory](pidlidtasklastupdate-canonical-property.md))-Eigenschaft angegeben wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskLastUpdate  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskLastUpdate  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008115  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |

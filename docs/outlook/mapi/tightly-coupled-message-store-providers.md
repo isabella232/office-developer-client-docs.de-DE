@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2eb493d7-bbd1-45b2-bd82-2bc452b2deab
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 83ebb739302ca0e12604b9eaf854f273554826ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4b8aa7f05c20eb3b100e9e04424dc752f064a61b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795724"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590295"
 ---
 # <a name="tightly-coupled-message-store-providers"></a>Eng verknüpfte Nachrichtenspeicheranbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Anbieter können eng mit eines Transportdienstes verknüpft sein. Wodurch eng MAPI Service Provider bedeutet, dass zwei Anbieter implementieren, beispielsweise, dass der Anbieter und Adressbuchhierarchie kommunizieren können, um das Senden und Empfangen von Nachrichten effizienter zu machen. Der Vorteil dabei ist, dass Leistungssteigerungen führen können, wenn zwei Dienstanbieter miteinander direkt und nicht über MAPI-Warteschlange interagieren können. Um eine Nachrichtenanbieter eng mit eines Transportdienstes gekoppelt, muss der Adressbuchhierarchie der Nachricht Informationsdienst Eintrags-ID in der Eigenschaft **PR_OWN_STORE_ENTRYID** ([PidTagOwnStoreEntryId](pidtagownstoreentryid-canonical-property.md)) in der Adressbuchhierarchie platziert. Zeile in der Tabelle MAPI-Status. Auf diese Weise MAPI-Warteschlange zum der Adressbuchhierarchie Speicheranbieter herstellen können.
   

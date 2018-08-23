@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 17c8db96-80dd-4a7a-9a1b-ab1b37ba616c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1353289da2b428fb58adecc6f7830a2eea4b519a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b1b18db072cb7c62c10c8ee4ab79dd1d8754388f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793471"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588020"
 ---
 # <a name="pidlidclipend-canonical-property"></a>PidLidClipEnd (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Enddatum und die Uhrzeit des Ereignisses in koordinierter Weltzeit (UTC) für Einzelinstanz Calendar-Objekten. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidClipEnd  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidClipEnd  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008236  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Für einzelne Instanz Calendar-Objekten gibt es das Enddatum und die Uhrzeit des Ereignisses in UTC. Für eine Besprechungsserie diese Eigenschaft gibt Mitternacht auf das Datum der letzten Instanz von der Terminserie in UTC, es sei denn, der sich wiederholenden Reihe kein Ende der Wert in dem 31. August muss 4500, 23:59 Uhr
   

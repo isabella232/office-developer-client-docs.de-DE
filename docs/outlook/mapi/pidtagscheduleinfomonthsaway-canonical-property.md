@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 282a8ba1-b786-4d17-b6c5-17e935e59a6b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6301cd86a81dfbf38666b6fb3ea326bc1f801490
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b8caf16bad26eef10d7686d66c5a17320de5e3bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795102"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588104"
 ---
 # <a name="pidtagscheduleinfomonthsaway-canonical-property"></a>PidTagScheduleInfoMonthsAway (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Monate, für die Frei/Gebucht-Daten vom Typ abwesend (ABWESEND) in der Nachricht Frei/Gebucht-Informationen vorhanden ist. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_MONTHS_OOF  <br/> |
-|Bezeichner:  <br/> |0x6855  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_MONTHS_OOF  <br/> |
+|Kennung:  <br/> |0x6855  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Format, Berechnung und Einschränkungen dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_FREEBUSY_TENTATIVE** ([PidTagScheduleInfoFreeBusyTentative](pidtagscheduleinfofreebusytentative-canonical-property.md)), aber finden Sie unter Termine, die nicht im Büro (OOF) für das zugeordnete gekennzeichnet sind Calendar-Objekt.
   

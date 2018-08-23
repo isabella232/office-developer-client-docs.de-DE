@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ee206c2d-8371-4d19-b42b-78f6479e13ca
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3912c429f1aa932b4956d943579a4ed99634dca2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f636c0a49d6ad96ab157d00780fa6ffc5c8f3236
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794280"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588272"
 ---
 # <a name="pidtagdeferredsendtime-canonical-property"></a>PidTagDeferredSendTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Zeitpunkt, wenn ein Client Senden einer Nachricht zurückstellen möchten, an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEFERRED_SEND_TIME  <br/> |
-|Bezeichner:  <br/> |0x3FEF  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEFERRED_SEND_TIME  <br/> |
+|Kennung:  <br/> |0x3FEF  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die **PR_DEFERRED_SEND_UNITS** ([PidTagDeferredSendUnits](pidtagdeferredsendunits-canonical-property.md)) und **PR_DEFERRED_SEND_NUMBER** ([PidTagDeferredSendNumber](pidtagdeferredsendnumber-canonical-property.md)) Eigenschaften vorhanden sind, der Wert dieser Eigenschaft wird neu berechnet mithilfe der folgenden Formel und der alte Wert wird ignoriert.
   

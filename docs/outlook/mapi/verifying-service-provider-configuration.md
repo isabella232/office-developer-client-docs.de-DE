@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: dc23dc61-7b51-43ab-a184-ce0bdac91d03
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 047a3b99b2d615984252071a1264521a4b2240f8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f6190b2860e227b24b34e31a4ee9741468383460
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795838"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589637"
 ---
 # <a name="verifying-service-provider-configuration"></a>Überprüfen der Konfiguration für Service provider
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Logon-Methode ([IABProvider::Logon](iabprovider-logon.md), [IMSProvider::Logon](imsprovider-logon.md)oder [IXPProvider::TransportLogon](ixpprovider-transportlogon.md)) muss vom Dienstanbieter Konfiguration überprüfen. Dieser Schritt umfasst, überprüfen, dass alle Eigenschaften für die vollständige Vorgänge benötigt richtig eingestellt sind. Jeder Anbieter erfordert eine unterschiedliche Anzahl von Eigenschaften. Konfiguration abhängig von Ihren Anbieter und den Grad der Benutzerinteraktion, für die Sie zulassen. Einige Dienstanbieter lassen Sie alle erforderlichen Eigenschaften im Benutzerprofil. 
 

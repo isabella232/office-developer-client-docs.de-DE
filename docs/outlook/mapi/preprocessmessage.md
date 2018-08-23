@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: dda50325-74b3-445e-986e-115f6536561f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 22562e1177c9a649bc66b25b5e8e9e6ecc8e397c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 878c3aaf22a6cf8a08c8234df41b671088c435c7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795310"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584989"
 ---
 # <a name="preprocessmessage"></a>PreprocessMessage
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Funktion, die vorverarbeitet Nachrichteninhalt oder das Format einer Nachricht.
   
@@ -96,7 +96,7 @@ S_OK
   
 > Nachrichteninhalt wurden erfolgreich vorverarbeitet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Adressbuchhierarchie Nachricht Präprozessor kann eine Statusanzeige während der vorverarbeitung Nachricht darstellen. Sie sollten jedoch noch nie ein Dialogfeld Benutzereingriff während der vorverarbeitung Nachricht dar. 
   

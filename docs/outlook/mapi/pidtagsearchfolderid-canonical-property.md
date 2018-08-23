@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2a587d8c-f28b-45a6-a3da-cc33052988dc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8cf221d83601f62de2dd5e2ad13a5764ff2adfce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c822600bf9090151fe18d3bf7cab0515fc360a4e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795117"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583505"
 ---
 # <a name="pidtagsearchfolderid-canonical-property"></a>PidTagSearchFolderId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen global eindeutigen Bezeichner (GUID), der den Suchordner identifiziert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_ID  <br/> |
-|Bezeichner:  <br/> |0x6842  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_WB_SF_ID  <br/> |
+|Kennung:  <br/> |0x6842  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    

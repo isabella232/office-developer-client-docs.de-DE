@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ca1ea5ec-20d5-4b70-95de-c2246a10beae
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 409fc2e01b103378eb0df1bdd06ee8b5647148bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: efedeb54decf1feae7b31f8af299a154606d7afc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793593"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582903"
 ---
 # <a name="pidlidfinvited-canonical-property"></a>PidLidFInvited (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob Einladungen für die Besprechung gesendet wurden, die diese Besprechung darstellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFInvited  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFInvited  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008229  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Den Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass eine Besprechungsanfrage nie gesendet wurde. Der Wert TRUE gibt an, dass eine Besprechungsanfrage gesendet wurde. Dieser Wert auf eine Besprechung auf TRUE festgelegt ist, muss es nicht geändert werden.
   

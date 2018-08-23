@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb671826-8c60-4c30-9a9e-ad3184e8a50f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e40f394160a8c8c1dd0032b9101da8c0d194e409
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f54a120b9df21f88e908bd75f7e840fd0202cfb3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793843"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586571"
 ---
 # <a name="pidlidtaskowner-canonical-property"></a>PidLidTaskOwner (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen der Besitzer der Aufgabe an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskOwner  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskOwner  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000811F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

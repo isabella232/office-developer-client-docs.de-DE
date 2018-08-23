@@ -25,12 +25,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: a93d2153-5132-4289-af51-69350471e248
 description: Informationen Sie zu den wichtigsten Programmierbarkeitsfeatures in Project Server 2013. Dieser Artikel enthält Informationen zum Portieren von Anwendungen, die für frühere Versionen von Project Server erstellt wurden.
-ms.openlocfilehash: c2c03da1e0b7c010d4cad8801f98c0c0cf0b1883
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f3901fe97f1c8291d0b35709f2350fc4358044b4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796310"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592983"
 ---
 # <a name="project-server-programmability"></a>Project Server-Programmierbarkeit
 
@@ -235,7 +235,7 @@ Im folgenden werden Probleme, und Einschränkungen der PSI-Programmierung mit ä
   
 - **Ändern des aktiven Status eines Vorgangs** Ältere Planungsmodul Project Server kann inkonsistente Start anzeigen oder Endzeiten Wenn [QueueUpdateProject](https://msdn.microsoft.com/library/WebSvcProject.Project.QueueUpdateProject.aspx) Sie zum Ändern des aktiven Status eines Vorgangs, gehen Wenn mehrere Änderungen in das **ProjectDataSet** -Objekt für die _vorhanden sind DataSet_ Parameter. Wenn die **TASK_IS_ACTIVE** -Eigenschaft die einzige Änderung im _Dataset_ -Parameter der **QueueUpdateProject**ist, können Sie das Projekt aktualisieren.
     
-    Weitere Informationen zu inaktive Vorgänge und ältere Planungsmodul, finden Sie im Blog-Artikel [Introducing inaktive Vorgänge in Project 2010](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx) und [Project Server 2010: Planen von Websites, die PSI und Project Professional](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0). Einen Vergleich der in Project Professional 2010 und Project Web App in Project Server 2010 planen finden Sie unter [Zeitplan webbasierte Verwaltung Comparison](http://www.microsoft.com/project/en/us/project-server-2010-editions.aspx).
+    Weitere Informationen zu inaktive Vorgänge und ältere Planungsmodul, finden Sie im Blog-Artikel [Introducing inaktive Vorgänge in Project 2010](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx) und [Project Server 2010: Planen von Websites, die PSI und Project Professional](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0). Einen Vergleich der in Project Professional 2010 und Project Web App in Project Server 2010 planen finden Sie unter [Zeitplan webbasierte Verwaltung Comparison](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/).
     
 - **Ertragswert nicht berechnet.** Ältere Planungsmodul Ertragswert-Felder nicht berechnet: IKAA, PK, SKAA, SKBA, KLI, KA, KA %, Exchange-Verwaltungskonsole, SPI, PA, PA %, ALI, ANA, Abweichung Dauer, Abweichung Anfang, Abweichung, Abweichung Kosten, und Abweichung Arbeit. Wenn ein Projekt Werte für diese Felder hat und das Projekt mithilfe der **QueueUpdateProject** -Methode aktualisiert wird, ändern Sie die Feldwerte nicht. Verwenden Sie die **QueueUpdateProject2** -Methode, um das Problem zu vermeiden. 
     
@@ -289,7 +289,5 @@ Die Schemas für den Entwurf, veröffentlicht, und Archivtabellen sind nicht dok
 - [Project-PSI-Referenz – Übersicht](project-psi-reference-overview.md)    
 - [Erstellen Sie benutzerdefinierter Aktionen zur Bereitstellung mit apps für SharePoint](http://msdn.microsoft.com/en-us/library/office/apps/jj163954%28v=office.15%29.aspx)    
 - [Einführung in die inaktive Vorgänge in Project 2010](http://blogs.msdn.com/b/project/archive/2010/06/10/introducing-inactive-tasks-in-project-2010.aspx)    
-- [Project Server 2010: Planen auf den Webservern, die PSI und Project Professional](http://blogs.msdn.com/b/brismith/archive/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional.aspx?wa=wsignin1.0)
-- [Zeitplan webbasierte Management-Vergleich](http://www.microsoft.com/project/en/us/project-server-2010-editions.aspx)
-    
+- [Project Server 2010: Planen auf den Webservern, die PSI und Project Professional](https://blogs.msdn.microsoft.com/brismith/2010/09/10/project-server-2010-scheduling-on-the-web-the-psi-and-project-professional/)
 

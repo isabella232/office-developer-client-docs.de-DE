@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f176308d-efb9-460c-8379-8a12d4f8e017
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 81d154d3044ecb5fb2e920874058f1c5136bc7ec
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 879960a8f61973b160c86eb4a473bf05bcd918fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795291"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586711"
 ---
 # <a name="pidtagycoordinate-canonical-property"></a>PidTagYCoordinate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die y-Koordinate der Startposition (die linke obere Ecke) von einem Dialogfeld-Steuerelement, in Standardeinheiten für Windows-Dialogfeld enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_YPOS  <br/> |
-|Bezeichner:  <br/> |0x3F06  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_YPOS  <br/> |
+|Kennung:  <br/> |0x3F06  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Zeigt die MAPI-Tabelle  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 **PR_XPOS** ([PidTagXCoordinate](pidtagxcoordinate-canonical-property.md)), diese Eigenschaft, **PR_DELTAX** ([PidTagDeltaX](pidtagdeltax-canonical-property.md)) und **PR_DELTAY** ([PidTagDeltaY](pidtagdeltay-canonical-property.md)) Eigenschaften position und Größe des Steuerelements.
   

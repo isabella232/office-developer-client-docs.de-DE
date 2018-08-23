@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: fec5d5ac-bca6-4fff-b264-45cdb6b37f55
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3f04c5be240f63d35ea8dba0f7abbf1085f2a41d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 96dddc438df67b76f854827eab4dc3e210523243
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791657"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588146"
 ---
 # <a name="fbadrglpnameid"></a>FBadRglpNameID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Array von Strukturen, die beschreiben, benannte Eigenschaften überprüft und deren Zuordnung überprüft. 
   
@@ -60,7 +60,7 @@ FALSE
   
 > Die angegebene Eigenschaft Name Strukturen sind gültig.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **FBadRglpNameID** -Funktion kann verwendet werden, wenn für einen Anruf an [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) oder [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)einrichten. 
   

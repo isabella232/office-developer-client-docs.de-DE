@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1dd460e6-ce95-4fef-bb5e-8d778c9716d5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5a5e736e8be1120f5fb90048f01fdc8a44479060
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d5cb43bfa3acd912e397644657223c177d6afb30
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791895"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589322"
 ---
 # <a name="hrallocadvisesink"></a>HrAllocAdviseSink
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine Advise-Empfängerobjekt, wenn ein Kontext die aufrufende Implementierung und eine Rückruffunktion, die ausgelöst werden, indem eine Benachrichtigung angegeben wird. 
   
@@ -59,7 +59,7 @@ STDAPI HrAllocAdviseSink(
 
 None.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um die **HrAllocAdviseSink** -Funktion verwenden, können Sie eine Clientanwendung oder Dienstanbieter erstellt ein Objekt Erhalt von Benachrichtigungen, erstellt eine Benachrichtigung Callback-Funktion basierend auf den [NOTIFCALLBACK](notifcallback.md) Funktionsprototyp, der mit diesem Objekt wechselt, auf und übergibt einen Zeiger auf das Objekt in der **HrAllocAdviseSink** -Funktion als _LpvContext_ Wert. Auf diese Weise führt eine Benachrichtigung. und als Teil der Benachrichtigung, MAPI-Aufrufen die Callback-Funktion mit dem Mauszeiger Objekt als Kontext aus. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 80f1c2e0-3567-4b16-86cb-d5e6ac95c2ee
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 73475c5ee4e715796e06642756c05746b271d128
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4e8e2474d2adb882dd0ba43aeb0d8b05044a6ce6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795569"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592059"
 ---
 # <a name="smapiformprop"></a>SMAPIFormProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine benannte Eigenschaft mit einem Formular verwendet. 
   
@@ -102,7 +102,7 @@ FPST_ENUM_PROP
   
 > Zeiger auf ein Array von **SMAPIFormPropEnumVal** -Strukturen, von denen jeder einen Wert für die benannte Eigenschaft enthält. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **SMAPIFormProp** -Datenstruktur enthält Informationen zu einer Formulareigenschaft als Teil der Definitionen der [IMAPIFormInfo](imapiforminfoimapiprop.md) Schnittstelle verwendet; **nSpecialType** enthält einen Tag, der für die Vereinigung **u** gilt, die Teil der **SMAPIFormProp**ist.
   

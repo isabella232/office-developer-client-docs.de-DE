@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d858e4fe-822e-4330-9ed3-4b7d22fa51dc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 63b8224ad56e2b9985c9d733e2a3c27c67eb2f7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2ac4a30d6afc7e5245441bfe2d501169dd3a9447
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793309"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586123"
 ---
 # <a name="opening-a-message-store-folder"></a>Öffnen einen Speicherordner Nachricht
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bevor ein beliebiger Ordner geöffnet werden kann, muss die Eintrags-ID verfügbar sein. Für die meisten Ordner bedeutet dies, deren Eigenschaften **PR_ENTRYID** abrufen. Für spezielle Ordner wie einiger der IPM Unterstruktur Ordnern und anderen Stammordner definiert MAPI spezieller Eintrag Bezeichnereigenschaften, die zugegriffen werden durch Aufrufen der Nachrichtenspeicher **IMAPIProp::GetProps** -Methode. Diese Eintragsbezeichner sind immer langfristige und heißen wie folgt: 
   

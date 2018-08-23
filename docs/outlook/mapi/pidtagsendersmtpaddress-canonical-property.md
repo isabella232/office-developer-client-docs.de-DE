@@ -7,30 +7,30 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 321cde5a-05db-498b-a9b8-cb54c8a14e34
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d69fb4423fca12134b4401907a16636562557cfe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 10444131248edea2de712429d7c70a8490eb31ff
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795132"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584723"
 ---
 # <a name="pidtagsendersmtpaddress-canonical-property"></a>PidTagSenderSmtpAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das Format Simple Mail Transport Protocol (SMTP) e-Mail-Adresse des Postfachbesitzers senden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENDER_SMTP_ADDRESS, PR_SENDER_SMTP_ADDRESS_A, PR_SENDER_SMTP_ADDRESS_W  <br/> |
-|Bezeichner:  <br/> |0x5D01  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENDER_SMTP_ADDRESS, PR_SENDER_SMTP_ADDRESS_A, PR_SENDER_SMTP_ADDRESS_W  <br/> |
+|Kennung:  <br/> |0x5D01  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist ein Beispiel für die Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

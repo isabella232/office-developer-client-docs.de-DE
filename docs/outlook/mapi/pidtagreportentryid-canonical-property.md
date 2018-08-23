@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: ea2bcc06-0089-4999-b115-06a14de4a0f1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a1d81581afa3bb9df8bd7aded5c265dfa8f04676
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 558a2235f7cb617bf37ccff77ebeec6e4ba77604
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794961"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582616"
 ---
 # <a name="pidtagreportentryid-canonical-property"></a>PidTagReportEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID für den Empfänger, der Berichte für diese Nachricht empfangen sollen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x0045  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_ENTRYID  <br/> |
+|Kennung:  <br/> |0x0045  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Empfänger, Absender delegiert alle für diese Nachricht generierten Berichte empfangen hat.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1b4e82ed-c207-4828-8a5b-0ef312962355
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0db245efdd8aad73b0c094c35079f50925ca4478
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2c941ea43a19b51e46c00b37aa89f504c55f180a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794292"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587208"
 ---
 # <a name="pidtagdefaultviewentryid-canonical-property"></a>PidTagDefaultViewEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID der Standardansicht für einen Ordner.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEFAULT_VIEW_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x3616  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEFAULT_VIEW_ENTRYID  <br/> |
+|Kennung:  <br/> |0x3616  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist die Eintrags-ID der Ordneransicht, die als Standardansicht festgelegt werden soll. Die Eigenschaft muss nicht festgelegt werden, wenn die Ansicht "Normal" als Standardansicht verwendet werden.
   

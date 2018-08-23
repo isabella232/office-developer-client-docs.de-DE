@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 08239670-3211-420c-99d7-0056ed967cb8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f6d0c7c6f6f34330c143781fbac976392ee1c9a1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6ca53633f0c1e5b226f7e03c8ee702d4cda7d115
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793449"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586795"
 ---
 # <a name="pidlidappointmenttimezonedefinitionstartdisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionStartDisplay (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn die Anfangszeit der eine Einzelinstanz-Termin oder eine Besprechungsanfrage ausgewählt ist. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptTZDefStartDisplay  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptTZDefStartDisplay  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000825E  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Microsoft Office Outlook 2003 oder früher und Lösungen, basieren auf Collaboration Data Objects (CDO) 1.2.1 und, die das Calendar Update-Tool nicht für Microsoft Outlook und Microsoft Exchange Server ausgeführt haben, Speichern der Start- und Endzeit der Einzel-Instanz Termine und Besprechungsanfragen in koordinierter Weltzeit (UTC). Diese Clients speichern keine Informationen für die Zeitzone in denen die Termin- oder Besprechungsanfragen erstellt wird.
   

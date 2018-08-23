@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3174d931-e045-44db-a203-a27c9c00f4fc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7b2dd30511927f8df8a8bc587a6b1fedd5854810
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f85fdc701a29f5865700c6519d589212a06fd0af
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793654"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585780"
 ---
 # <a name="pidlidlogflags-canonical-property"></a>PidLidLogFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Metadaten zur Erfassung.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogFlags  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogFlags  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000870C  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Bit dar, das Metadaten für die Erfassung enthält muss entweder 0 (null) oder "0 x 40000000".
   

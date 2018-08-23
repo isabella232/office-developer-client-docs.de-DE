@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 10cda14a-8f93-41e0-b1fb-500098bdc392
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a15561a6f3af35c1c7c2285bb6252e6400e0e8df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 92d5dcdf3e5e3fbdb7490d777a24976c9ae4af1a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792751"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582791"
 ---
 # <a name="iprofadmincreateprofile"></a>IProfAdmin::CreateProfile
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt ein neues Profil.
   
@@ -72,7 +72,7 @@ MAPI_E_NO_ACCESS
   
 > Das angegebene neue Profil ist bereits vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IProfAdmin::CreateProfile** -Methode erstellt ein neues Profil. 
   

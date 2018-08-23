@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2bbf13e9-05b3-4498-8e08-d9e07505190d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f59b0041f271010e56dda2f73d2248f133bc1325
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7d588380ccc84f51fe58bb0f092d5287b12b4270
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795601"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586536"
 ---
 # <a name="spropertyrestriction"></a>SPropertyRestriction
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine eigenschaftseinschränkung, die verwendet wird, eine Konstante mit dem Wert einer Eigenschaft zuordnen.
   
@@ -67,7 +67,7 @@ typedef struct _SPropertyRestriction
   
 > Zeiger auf eine [SPropValue](spropvalue.md) -Struktur, die den konstanten Wert enthält, der im Vergleich verwendet werden. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es sind zwei Eigenschaftentags in eine **SPropertyRestriction** -Struktur. Eine im **UlPropTag** -Member ist und der andere im **UlPropTag** -Member der **SPropValue** Struktur auf **LpProp**zeigt. MAPI erfordert das Feld für den Bezeichner und die Eigenschaft Typ dar. Die **UlPropTag** in **SPropertyRestriction** ist der Eigenschaft abgeglichen wird und der Zeiger **LpProp** der **SPropertyRestriction** der **UlPropTag**Art der **SPropValue** gibt an, wie der Member-Wert, der die **LpProp** Union interpretiert werden. Die beiden Eigenschaftstypen müssen übereinstimmen, sonst den Fehlerwert MAPI_E_TOO_COMPLEX wird zurückgegeben, wenn die Einschränkung wieder in einem Aufruf von [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md)verwendet wird. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 1cf277d4-76ec-4902-9e54-f1780cee49bf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5425496a5b7845daabf736978e6ed24518451fe0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9b6af0c7fae85a2ea6cbd53159674fdcd32c642c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794378"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592769"
 ---
 # <a name="pidtagextendedrulemessageactions-canonical-property"></a>PidTagExtendedRuleMessageActions (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält zusätzliche Informationen zu den benannten Eigenschaften in einer Nachricht Ordner verknüpften Informationen (FAI) verwendet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EXTENDED_RULE_MSG_ACTIONS  <br/> |
-|Bezeichner:  <br/> |0x0E99  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EXTENDED_RULE_MSG_ACTIONS  <br/> |
+|Kennung:  <br/> |0x0E99  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf eine Nachricht FAI festgelegt werden. Diese Eigenschaft dient dem gleichen Zweck als **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)), jedoch enthält zusätzliche Informationen zur Version der benannten Eigenschaften in die Regelaktion gespeichert und die Regel sowie Informationen zu den Aktionen werden Durch diese Regel ausgeführt. Alle String-Werten, die in einem beliebigen Teil des Puffers Aktion verwendet, um Aktionen enthalten enthalten sind, muss im Unicode-Format.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 58f50535-b0ed-4097-bda8-fd3ccc2d4b49
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cf5060ba2113032fe1e13e5417590006808a53e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: af695d55cdd5f8d7e24d7e60e6eebaf03868b03f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792760"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587705"
 ---
 # <a name="iprofadminsetdefaultprofile"></a>IProfAdmin::SetDefaultProfile
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aktiviert oder deaktiviert eine Client-Standardprofil.
   
@@ -58,7 +58,7 @@ MAPI_E_NOT_FOUND
   
 > Das angegebene Profil ist nicht vorhanden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IProfAdmin::SetDefaultProfile** -Methode stellt ein bestimmtes Profil als Standardprofil für den Client her, oder löscht den aktuellen Standardprofils. Das Standardprofil ist das Profil, das automatisch verwendet wird, wenn der Client eine MAPI-Sitzung beginnt. **SetDefaultProfile** wird auch neues Standardprofil **PR_DEFAULT_PROFILE** ([PidTagDefaultProfile](pidtagdefaultprofile-canonical-property.md))-Eigenschaft auf true festgelegt.
   

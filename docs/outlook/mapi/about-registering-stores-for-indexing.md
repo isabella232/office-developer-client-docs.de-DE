@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dd2aa06a-96e8-1291-18b5-fc3c40b74e4d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b16446644c360185908e7f4e58463257fe17f403
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 195812f53c4c0aaf20e4ed6e215d15b0295c9a07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791241"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584184"
 ---
 # <a name="about-registering-stores-for-indexing"></a>Informationen zum Registrieren von Stores für die Indizierung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema wird speziell für die Sofortsuche in Microsoft Office Outlook 2007.
   
@@ -58,7 +58,7 @@ Die MAPI-Eigenschaft **[PR_MDB_PROVIDER](pidtagstoreprovider-canonical-property.
   
 ||||
 |:-----|:-----|:-----|
-|**Typ des Anbieters** <br/> |**GUID** <br/> |**Anmerkungen** <br/> |
+|**Typ des Anbieters** <br/> |**GUID** <br/> |**Hinweise** <br/> |
 |Persönliche Ordner-Dateien (. PST)  <br/> |{4154494E-BFF9-01B8-00AA-0037D96E0000}  <br/> |GUID wird in der öffentlichen Header Datei mspst.h als **MSPST_UID_PROVIDER** dokumentiert. <br/> |
 |Exchange  <br/> |{C0A19454-7F29-1B10-A587-08002B2A2517}  <br/> |GUID wird in der öffentlichen Header Datei edkmdb.h als **PbExchangeProviderPrimaryUserGuid** dokumentiert. <br/> |
 |Öffentliche Ordner  <br/> |{70fab278-f7af-cd11-9bc8-00aa002fc45a}  <br/> |GUID wird in der öffentlichen Header Datei edkmdb.h als **PbExchangeProviderPublicGuid** dokumentiert. <br/> |

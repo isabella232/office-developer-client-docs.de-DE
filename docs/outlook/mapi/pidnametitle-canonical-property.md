@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c429f9d8-19f4-4c67-a93f-a55ebf6a148f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3ebf6a5ee7499f8d77f9577e69dc82311c224283
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 79ba36d08128a3073e1fd4b6af501c19200db38d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793992"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583610"
 ---
 # <a name="pidnametitle-canonical-property"></a>PidNameTitle (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Titel der Datei, die an das Dokument angefügt ist.
   

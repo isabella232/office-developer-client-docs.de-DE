@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a2cdda90-5457-49a7-b98c-7273ffe5cbbc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c8f05707d63f922c9ce22e6e520c6c57e686f884
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6b64653aa87ff7ac983409978a69f59148251d7d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792328"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583414"
 ---
 # <a name="imapisessionqueryidentity"></a>IMAPISession::QueryIdentity
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Eintrags-ID des Objekts, das die primäre Identität für die Sitzung bereitstellt.
   
@@ -54,7 +54,7 @@ MAPI_W_NO_SERVICE
   
 > Der Aufruf war erfolgreich, es gibt aber keine primäre Identität für die Sitzung. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::QueryIdentity** -Methode die primäre Identität für die aktuelle Sitzung abgerufen und gibt den Wert über den Parameter _LppEntryID_ zurück. Die primäre Identität ist ein Objekt, in der Regel ein messaging-Benutzer, die den Benutzer einer Sitzung darstellt.  _LppEntryID_ gibt die primäre Identität bei einem [IMailUser](imailuserimapiprop.md) -Objekt, das auch als-Eigenschaft [PidTagEntryID](pidtagentryid-canonical-property.md) gespeichert ist. Den Rückgabewert in _LppEntryID_ können Sie um ein **IMailUser** -Objekt mit [IMAPISession::OpenEntry](imapisession-openentry.md)zu öffnen.
   
@@ -107,7 +107,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Primäre MAPI-Identität](mapi-primary-identity.md)
   

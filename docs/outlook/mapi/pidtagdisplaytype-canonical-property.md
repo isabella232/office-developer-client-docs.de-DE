@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ee2bc6ca-3769-4b56-a77d-81418d28f768
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3fd5a8d92621dcefce66fb42e843f78755fa84df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5b067b3bc38df978cd0f4c52beb37579619edc24
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794330"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583512"
 ---
 # <a name="pidtagdisplaytype-canonical-property"></a>PidTagDisplayType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert zum Verknüpfen eines Symbols mit einer bestimmten Zeile einer Tabelle verwendet. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DISPLAY_TYPE  <br/> |
-|Bezeichner:  <br/> |0x3900  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DISPLAY_TYPE  <br/> |
+|Kennung:  <br/> |0x3900  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält eine lange Ganzzahl, die eine besondere Behandlung des Eintrags Tabelle basierend auf dieses Typs vereinfacht. Diese besondere Behandlung umfasst in der Regel ein Symbol oder andere Display-Element, den Anzeigetyp zugeordnete anzeigen. 
   

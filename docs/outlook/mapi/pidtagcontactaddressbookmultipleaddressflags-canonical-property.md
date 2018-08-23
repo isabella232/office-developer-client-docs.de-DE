@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ed3bc585-13f6-46a5-9e71-9c8513ddfc0a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fbe955d3e7a509edf6ba10678e1e2538c9185193
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b783a624ef5358a69d65dd52785b285db1a70df7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794185"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588671"
 ---
 # <a name="pidtagcontactaddressbookmultipleaddressflags-canonical-property"></a>PidTagContactAddressBookMultipleAddressFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Flags, die pro Kontaktelement zurück, der angibt, ob der Anbieter mehrere e-Mail unterstützt-Adressen enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAB_MULTI_ADDR_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x6625  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_MULTI_ADDR_FLAGS  <br/> |
+|Kennung:  <br/> |0x6625  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die Kennzeichen in dieser Eigenschaft TRUE sind, ist der Anbieter nicht Kontakte ohne e-Mail-Adressen enthalten. Nur die primäre e-Mail-Adresse wird berücksichtigt. Dies ist eine Eigenschaft für einen Kontakt Adressbuch Profil.
   

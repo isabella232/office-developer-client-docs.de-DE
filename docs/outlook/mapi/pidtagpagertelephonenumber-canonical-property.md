@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4206b003-2304-4215-9844-8ff4305cc2f4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0c9b3419147fec76d065e187adf76a2481d614c4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e27ca666ca07675369eca310da8ad2acb6c37a4f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794777"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584254"
 ---
 # <a name="pidtagpagertelephonenumber-canonical-property"></a>PidTagPagerTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Pagertelefonnummer des Empfängers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PAGER_TELEPHONE_NUMBER, PR_PAGER_TELEPHONE_NUMBER_A, PR_PAGER_TELEPHONE_NUMBER_W, PR_BEEPER_TELEPHONE_NUMBER, PR_BEEPER_TELEPHONE_NUMBER_A, PR_BEEPER_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A21  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PAGER_TELEPHONE_NUMBER, PR_PAGER_TELEPHONE_NUMBER_A, PR_PAGER_TELEPHONE_NUMBER_W, PR_BEEPER_TELEPHONE_NUMBER, PR_BEEPER_TELEPHONE_NUMBER_A, PR_BEEPER_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A21  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

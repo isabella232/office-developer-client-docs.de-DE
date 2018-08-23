@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0aebf536-dcfb-406d-86ac-65db98c78139
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0efc111523ad285d54fc40e37fe83a1130f1d291
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7ba58cc87b0eefe6c6ff70994d887d7f83e713b3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793030"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592402"
 ---
 # <a name="mapi-objects-and-properties"></a>MAPI-Objekten und Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einige Eigenschaften werden von vielen verschiedenen Arten von Objekten unterstützt. Die folgenden Eigenschaften sind Beispiele für Eigenschaften, die von mehreren Objekten verwendet werden:
   

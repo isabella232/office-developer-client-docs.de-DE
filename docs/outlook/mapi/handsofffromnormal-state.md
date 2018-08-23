@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1afe6a2e-a5e6-4844-9f82-908894fc6759
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d0b7baf4ab17d12145170961a43ca4be252146a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 92c604c621e2837b76e9e49fd182524ad17fbcac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791831"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588342"
 ---
 # <a name="handsofffromnormal-state"></a>Status „HandsOffFromNormal“
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Zustand HandsOffFromNormal ist auf den Status [HandsOffAfterSave](handsoffaftersave-state.md) sehr ähnlich. Es ist Teil des Prozesses zum Speichern des Inhalts eines Formulars dauerhaft. In diesem Status sollte das Form-Objekt sehen davon ab, die speicherinterne Kopien der Werte der Eigenschaften für die Nachricht, ändern, da es möglicherweise nicht eine weitere Möglichkeit, um die Änderungen zu speichern. In der folgenden Tabelle werden die zulässigen Übergänge aus dem Status HandsOffFromNormal beschrieben. 
   

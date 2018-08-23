@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6da78f1a-6423-460c-b3a9-fd6441df9cef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b8c68c2cd34ba037dc725a7d15575159466d8123
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 33dc327b9e8609a5a1a8a24e131ce4ea1d1e55bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794987"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583904"
 ---
 # <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a>PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt das Authentifizierungsprotokoll für dieses Profil verwendet werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROH_PROXY_AUTH_SCHEME  <br/> |
-|Bezeichner:  <br/> |0x6627  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROH_PROXY_AUTH_SCHEME  <br/> |
+|Kennung:  <br/> |0x6627  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann für Standardauthentifizierung oder NT LAN Manager (NTLM) Authentifizierung festgelegt werden. Die möglichen Werte für diese Eigenschaft sind wie folgt.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7663c640-396e-4720-9345-370d0856bd49
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c7859e033924786e415f9faa9f75021ea47968c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a3343381709b7ce3370ba481ad8dbb935c7d4165
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792477"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586949"
 ---
 # <a name="imapitablewaitforcompletion"></a>IMAPITable::WaitForCompletion
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Unterbricht die Verarbeitung, bis eine oder mehrere asynchrone Vorgänge in Bearbeitung in der Tabelle abgeschlossen haben.
   
@@ -63,7 +63,7 @@ MAPI_E_TIMEOUT
   
 > Die asynchrone Operation oder Vorgänge wurde nicht in der angegebenen Zeit abgeschlossen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Methode **IMAPITable::WaitForCompletion** hält die Verarbeitung, bis alle derzeit asynchrone Vorgänge für die Tabelle abgeschlossen haben. **WaitForCompletion** können die asynchrone Vorgänge entweder vollständig abgeschlossen oder für eine bestimmte Anzahl von Millisekunden auszuführen, wie _UlTimeout_, abgebrochen wird angegeben. Zum Erkennen von asynchrone Vorgänge in Bearbeitung rufen Sie die [IMAPITable::GetStatus](imapitable-getstatus.md) -Methode auf. 
   

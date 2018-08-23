@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: c2bf94d9-0524-4a9d-8e30-1adbecd8f3dd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f61de288d0feaff580278c96f69d4dcf41aae4db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d83788d25ec7a8a1559d3454f5ffd079de9e7275
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793506"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593046"
 ---
 # <a name="pidlidemail3addresstype-canonical-property"></a>PidLidEmail3AddressType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Adresstyp für den dritten e-Mail-Adresse.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail3AddrType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail3AddrType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080A2  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Falls vorhanden, muss Wert dieser Eigenschaft eine gültige Adresse.
   

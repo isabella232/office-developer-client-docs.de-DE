@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d009f6b6-d151-4d52-b7cc-a15127142354
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ab582b869fb5a53d7ac4e97e039d9bde4a4f0430
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: ef20cf8460aa7d3d160208109e42b2de66658d54
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792927"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589728"
 ---
 # <a name="managing-memory-for-adrlist-and-srowset-structures"></a>Verwalten des Arbeitsspeichers für ADRLIST und SRowSet Strukturen"
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Anforderung für einen Puffer mit einem einzigen Aufruf **MAPIAllocateBuffer** möglichst alle Speicher wird bei Verwendung der Adressliste oder **ADRLIST**, und die Zeile Set oder **SRowSet**, Strukturen nicht angewendet. 
   

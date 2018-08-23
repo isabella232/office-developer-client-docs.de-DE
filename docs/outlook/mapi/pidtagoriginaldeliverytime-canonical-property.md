@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 700ccfc9-493a-483b-aca0-aa2d7f6bb229
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cd8c44923e64fcea4464f758389db05bb6b7e374
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0fee808a02262ef47bff0279c929824becc23912
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794676"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589399"
 ---
 # <a name="pidtagoriginaldeliverytime-canonical-property"></a>PidTagOriginalDeliveryTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Kopie der Originalnachricht Übermittlung Datum und Uhrzeit in einem Thread enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_DELIVERY_TIME  <br/> |
-|Bezeichner:  <br/> |0x0055  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_DELIVERY_TIME  <br/> |
+|Kennung:  <br/> |0x0055  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von der ursprünglichen **PR_MESSAGE_DELIVERY_TIME** ([PidTagMessageDeliveryTime](pidtagmessagedeliverytime-canonical-property.md))-Eigenschaft in den nachfolgenden Antworten oder Weiterleiten Vorgänge kopiert und in Lese- und nonread Berichten verwendet. Übermittlungsberichte verwenden Sie die Eigenschaft **PR_DELIVER_TIME** ([PidTagDeliverTime](pidtagdelivertime-canonical-property.md)).
   

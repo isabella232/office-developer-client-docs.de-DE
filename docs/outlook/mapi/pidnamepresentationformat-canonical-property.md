@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: dcc7c79a-5036-4e62-bb54-6fe952acbddb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cf9da041155561f08beebcfd1ce6293be31fde38
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f71f19db1983045c2f31b3bf1980f1780c666955
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793987"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590729"
 ---
 # <a name="pidnamepresentationformat-canonical-property"></a>PidNamePresentationFormat (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das Präsentationsformat der Datei, die an das Dokument angefügt ist.
   

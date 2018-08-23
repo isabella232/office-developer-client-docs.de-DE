@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29151beb-7436-401a-8072-58d4facd8458
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2a080b9e6a824e50648a6df0757826f45b5da1f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 82c44f2292400c449ee0f82600c5b596728af7c0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792959"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590435"
 ---
 # <a name="mapi-canonical-properties"></a>Kanonische MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine kanonische-Eigenschaft ist eine virtuelle Eigenschaft, die ein MAPI-Eigenschaft oder mehrere MAPI-Eigenschaften definiert, mit der gleichen Eigenschaftenbezeichner darstellt. Kanonische Eigenschaften sind nur zur Erleichterung der konsistente Identifizierung der MAPI-Eigenschaften in Diskussionen oder Dokumentation außerhalb Code vorgesehen. Im Gegensatz zu MAPI-defined markierte Eigenschaftennamen sind kanonische Eigenschaftennamen als globale Konstanten in MAPI-Headerdateien nicht definiert.
   

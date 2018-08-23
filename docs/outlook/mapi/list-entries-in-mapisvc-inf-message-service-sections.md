@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f4f052d6-ef63-421a-9d8c-4f3c6df83863
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cfb06e8dd305add6049d035c44685be047dc744f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c5b5c468b56e5b34d265e7f00bbee96142a88e1c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792894"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591121"
 ---
 # <a name="list-entries-in-mapisvcinf-message-service-sections"></a>Listeneinträge in den Nachrichtendienstabschnitten von MapiSvc.inf
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Es gibt zwei Arten der Abschnitt Listeneinträge: eine, die auflistet Service Provider Abschnitte und eine, die verschiedene Nachricht dienstspezifische Abschnitte auflistet. Diese zwei Arten von Einträgen in mapisvc.inf über die folgenden Formate angezeigt:
   

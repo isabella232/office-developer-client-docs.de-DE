@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12c07302-472f-4e4f-8087-1bdf0dc09a5a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 744d9a7588bff89e9d306e516a24da2db3038d4d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3df5e012867623d1c5e8fb5c3c93103548ab97be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791967"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588384"
 ---
 # <a name="hrthisthreadadvisesink"></a>HrThisThreadAdviseSink
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine Advise-Empfänger, der eine vorhandene Advise-Empfänger für Threadsicherheit umbrochen wird. 
   
@@ -54,7 +54,7 @@ HrThisThreadAdviseSink(
 
 None.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Zweck des Wrappers ist dafür sorgen, dass die Benachrichtigung auf dem gleichen Thread aufgerufen wird, die die **HrThisThreadAdviseSink** -Funktion aufgerufen. Diese Funktion wird verwendet, um Benachrichtigung Rückrufe zu schützen, die für einen bestimmten Thread ausgeführt werden muss. 
   

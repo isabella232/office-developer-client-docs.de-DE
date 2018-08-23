@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a36465e2-7be9-4bd6-8091-685f0a045aa9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e441e84e0bddff2e5a989849dbcf593320340d2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a20fdd45c39cc2147f8fdc7b1998ff6d1b0797bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791973"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586207"
 ---
 # <a name="iablogonlogoff"></a>IABLogon::Logoff
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Initiiert den Prozess abmelden.
   
@@ -45,7 +45,7 @@ S_OK
   
 > Der Prozess für die Abmeldung wurde erfolgreich initiiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Prozess für die Abmeldung wird in der Regel gestartet, wenn ein Client beenden eine Sitzung die [IMAPISession::Logoff](imapisession-logoff.md) Methode aufruft. MAPI ruft dann jede Adressbuchanbieter **IABLogon::Logoff** -Methode, um den Abmeldung zu starten. 
   

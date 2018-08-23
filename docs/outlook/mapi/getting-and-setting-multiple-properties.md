@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 29b7f5f1-afc1-45d9-8867-9312c072e74b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 150f2a55bff4188c1f692de8276ed869bcf66c3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 88c3e0bdb3cc6660e35faf62c5bb63ec2f6352bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791789"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590372"
 ---
 # <a name="getting-and-setting-multiple-properties"></a>Abrufen und Festlegen mehrerer Eigenschaften
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Durch Abrufen und Festlegen von so viele Eigenschaften wie möglich mit der geringsten Anzahl Anrufe, remote Aktivität Falle wird und mit jeder Eigenschaft Verwaltungsaufwand reduziert. Zwar Dienstanbieter versuchen, vor der Durchführung eines Remoteprozeduraufrufs für abrufen oder Ändern von Eigenschaften erfasst werden sollen, können Sie Maßnahme optimieren, indem Sie mehrere Eigenschaften zunächst anfordern.
   

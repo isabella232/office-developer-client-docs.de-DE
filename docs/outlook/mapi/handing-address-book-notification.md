@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 0dc4bb48-c8a1-447f-9e38-1c234a358fca
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f198be78dd36a6d0c9439da68ab322cd8cfa4172
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b5428ccde0e16bd32408b2ea908f5c5522992fc9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791791"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582917"
 ---
 # <a name="handing-address-book-notification"></a>Zuzuteilen Address Book-Benachrichtigung
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Address Book Benachrichtigungen ermöglichen einen Client Hier erfahren, die Adressbuch Adresseintrag oder zu einem bestimmten Eintrag Auftreten von Ereignissen. Sie können für diese Benachrichtigungen über das MAPI-Adressbuch durch Aufrufen von [IAddrBook::Advise](iaddrbook-advise.md) oder über ein Adressbuchcontainer Hierarchie oder Inhaltstabelle durch Aufrufen von [IMAPITable::Advise](imapitable-advise.md)registrieren. 
   

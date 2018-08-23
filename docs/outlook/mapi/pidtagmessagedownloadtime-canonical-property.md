@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: f0d34dd6-7ddb-4843-b848-c89923ff80cc
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b47d104ade6a7d23f5630d15697b330360d027b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 43916f540ca324059d53f0413105146985835ffe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794603"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588699"
 ---
 # <a name="pidtagmessagedownloadtime-canonical-property"></a>PidTagMessageDownloadTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die geschätzte Zeit bis zum Laden Sie einer Nachricht von einem Remoteserver zu einem lokalen Nachrichtenspeicher. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_DOWNLOAD_TIME  <br/> |
-|Bezeichner:  <br/> |0x0E18  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_DOWNLOAD_TIME  <br/> |
+|Kennung:  <br/> |0x0E18  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in Sekunden ausgedrückt und stellt die bestmögliche Schätzung der Zeit an einen remote-Transport-Anbieter zu eine bestimmte Nachricht von seinem aktuellen Speicherort auf einen Nachrichtenspeicher herunterladen lokalen an dem Client, die das Anzeigen des Ordners Kopfzeile dauert. Der remote Adressbuchhierarchie berechnet den Wert für diese Eigenschaft in der Regel durch Dividieren des Werts der Eigenschaft **PR_MESSAGE_SIZE** ([PidTagMessageSize](pidtagmessagesize-canonical-property.md)) durch die Geschwindigkeit der Communications-Verknüpfung in Byte pro Sekunde. Wenn der Anbieter die Downloadzeit, z. B., wenn er die Übertragungsrate nicht kennt berechnen kann nicht sollte einen **PT_ERROR** -Wert wie **MAPI_E_NO_SUPPORT** für diese Spalte in der Kopfzeile Ordner Inhaltstabelle Büroplan. 
   

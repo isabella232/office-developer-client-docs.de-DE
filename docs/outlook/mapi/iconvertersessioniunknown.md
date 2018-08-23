@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 24f7a14a-aa6f-4045-054b-4a7aefef25e4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a89b1a93b2b03f97426a3988739e9b0d8411f113
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 316e17e7804e754eed4ee4fef27211fb5173d4bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792049"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589644"
 ---
 # <a name="iconvertersession--iunknown"></a>IConverterSession : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht die Konvertierung zwischen MIME-Objekten und MAPI-Nachrichten. Dies kann insbesondere für die Übermittlung von Nachrichten über das Internet sein.
   
@@ -49,7 +49,7 @@ Ermöglicht die Konvertierung zwischen MIME-Objekten und MAPI-Nachrichten. Dies 
 | *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
 |**[SetCharSet](iconvertersession-setcharset.md)** <br/> |Gibt an, dass ein optionales Zeichen festgelegt, dass die MAPI zu MIME-Konverter, beim Konvertieren einer MAPI-Nachricht in eine MIME-Stream verwendet.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Rufen Sie **SetEncoding** vor der Nutzung **MAPIToMIMEStm** Konvertierung ausführen. 
   

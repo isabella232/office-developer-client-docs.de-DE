@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: aeb0fa71-f471-46c5-ad9c-f8afb3fed533
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 42aec7a8d617bdf1abd385add30d903efa2b73d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 51a8f1768f9b4ed859989058c66044c807068386
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794621"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583932"
 ---
 # <a name="pidtagmessagetome-canonical-property"></a>PidTagMessageToMe (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn dieser Benutzer messaging speziell als primäre (Empfänger dieser Nachricht To heißt) und nicht Bestandteil einer Verteilerliste ist. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_TO_ME  <br/> |
-|Bezeichner:  <br/> |0x0057  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_TO_ME  <br/> |
+|Kennung:  <br/> |0x0057  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bietet eine bequeme Möglichkeit zum bestimmen, ob der Benutzername in der primären Empfängerliste explizit angezeigt wird, ohne alle Einträge in der Liste untersuchen. 
   

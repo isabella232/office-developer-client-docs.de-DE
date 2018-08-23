@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e2d6b6bf-f96d-460c-859a-21961ac9237c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d5ba7e7bc52ba041e9fe6c9a01b35dc91d3b947b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e6de4be29811dafaf5288b2ccb39c0342a314bad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795786"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584625"
 ---
 # <a name="ulfromszhex"></a>UlFromSzHex
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konvertiert eine mit Null endende Zeichenfolge von Hexadezimalzahlen in eine lange Ganzzahl ohne Vorzeichen. 
   
@@ -49,7 +49,7 @@ LPCSTR lpsz
 
  **UlFromSzHex** gibt eine lange Ganzzahl ohne Vorzeichen zurück. Wenn die Zeichenfolge nicht mit mindestens eine hexadezimale Ziffer beginnt, wird 0 (null) zurückgegeben. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Funktion **UlFromSzHex** beendet konvertieren, wenn das erste Zeichen in der Zeichenfolge, die keine hexadezimale Ziffer ist erreicht. Beispielsweise gibt **UlFromSzHex** die Zeichenfolge "5a" wird angegeben, den Ganzzahlwert 90. Die Zeichenfolge "5g5h" angegeben, gibt die Funktion den ganzzahligen Wert 5 zurück. Wenn die Zeichenfolge "g5h5", gibt **UlFromSzHex** 0 (null) zurück. 
   

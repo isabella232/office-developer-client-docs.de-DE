@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac31cf65-a2bc-4c8e-91a4-d2903aa98776
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 28a802ffc43b08d3e2ec2be26dd98fa78f474d91
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7d4877c81a52b529aa183ea552430b481c6617f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795434"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593354"
 ---
 # <a name="sccopynotifications"></a>ScCopyNotifications
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert eine Gruppe von ereignisbenachrichtigungen in einen einzelnen Block Arbeitsspeicher. 
   
@@ -70,7 +70,7 @@ E_INVALIDARG
   
 > Eine ungültige Benachrichtigung aufgetreten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn NULL in der _pcb_ -Parameter übergeben wird, wird keine kopieren ausgeführt. Wenn Sie ein nicht-Nullwert _pcb_übergeben wird, kopiert die **ScCopyNotifications** -Funktion die Größe des Arrays und das Array selbst in einen einzelnen Block Arbeitsspeicher. Wenn _pcb_ ungleich NULL ist, wird es auf die Anzahl von Bytes, die im Parameter _PvDst_ gespeichert festgelegt. Der Parameter _PvDst_ muss groß genug für das gesamte Array sein. 
   

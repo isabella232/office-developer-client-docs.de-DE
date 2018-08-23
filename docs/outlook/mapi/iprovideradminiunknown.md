@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: bdb4cdca-8dfd-4f90-9467-ec31cea3f518
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 41195a49d1bf3566c81fe6e97697012209cbc5ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 559680b9ca4ea5be85718d8f9692df93f77b0edf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792776"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585752"
 ---
 # <a name="iprovideradmin--iunknown"></a>IProviderAdmin : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Funktioniert mit-Dienstanbieter in einem Message-Dienst. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Verwaltungsobjekte Anbieter  <br/> |
+|Verfügbar gemacht von:  <br/> |Verwaltungsobjekte Anbieter  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IProviderAdmin  <br/> |
@@ -46,7 +46,7 @@ Funktioniert mit-Dienstanbieter in einem Message-Dienst.
 |[DeleteProvider](iprovideradmin-deleteprovider.md) <br/> |Löscht einen Dienstanbieter aus der Nachrichtendienst.  <br/> |
 |["OpenProfileSection"](iprovideradmin-openprofilesection.md) <br/> |Öffnet einen Profilabschnitt aus dem aktuellen Profil, und gibt einen [IProfSect](iprofsectimapiprop.md) Zeiger für den weiteren Zugriff.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clients können einen Zeiger auf eine **IProviderAdmin** -Schnittstelle abrufen, indem Sie die [IMsgServiceAdmin::AdminProviders](imsgserviceadmin-adminproviders.md) -Methode aufrufen; Dienstanbieter sind ein **IProviderAdmin** -Zeiger übergeben, wenn ihre Messagingdiensts Entry Point-Funktion aufgerufen wird. 
   

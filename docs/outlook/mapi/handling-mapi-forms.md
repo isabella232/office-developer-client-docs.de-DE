@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c1589d49-2ebe-48ce-85c7-b70fb7c1bb67
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b0e54f78257eb6890e8afbb7941dc625dc79be0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c6cdb07e1cbe68d90c6dcd9d5418f700ea5abc3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791818"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589651"
 ---
 # <a name="handling-mapi-forms"></a>Behandeln von MAPI-Formulare
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein MAPI-Formular ist ein Viewer für eine Nachricht einer bestimmten Klasse. Clients, mit denen die Benutzer zum Arbeiten mit Nachrichten, die mit einer Vielzahl von Nachrichtenklassen gehören müssen, eine Vielzahl von MAPI-Formulare behandeln geschrieben werden. Behandeln von mehreren Formularen implementieren Clients eine Komponente bekannt als Formular Viewer, der die folgenden drei Objekte enthält:
   

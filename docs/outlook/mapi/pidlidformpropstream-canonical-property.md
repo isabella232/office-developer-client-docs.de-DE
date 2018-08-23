@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9c4590b2-631e-4a57-a779-eed8268233da
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e72ec613860d6f4ff0f523bb858308f1605c8a00
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3833409871b3fd5b454447f16915d2f9f1162399
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793603"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587404"
 ---
 # <a name="pidlidformpropstream-canonical-property"></a>PidLidFormPropStream (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt Daten in benutzerdefinierten Eigenschaften, die mit der Nachricht gespeichert sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFormPropStream  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFormPropStream  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000851B  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |

@@ -9,30 +9,30 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1f0f13e2-7554-41fc-a7a9-a90c34181c96
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8624821d264500a440b5988ffa30a5c31dc8a91f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 38d357fa87a8781173be118fdd2cd26f57e814df
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794992"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583624"
 ---
 # <a name="pidtagreturnedmessageid-canonical-property"></a>PidTagReturnedMessageid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn die ursprüngliche Nachricht mit einem Bericht nonread zurückgegeben werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RETURNED_IPM  <br/> |
-|Bezeichner:  <br/> |0x0033  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RETURNED_IPM  <br/> |
+|Kennung:  <br/> |0x0033  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein x. 400-Transportdienst wird diese Eigenschaft im ungelesene-Bericht.
   

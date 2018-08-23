@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: bde195cd-ca24-4715-8db7-04ab83ba8a3c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aad2509a8960ac7d371346afc61d235a5817c5ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f63af98eac8d777e164400acc97043ac1ccc69a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794453"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584996"
 ---
 # <a name="pidtaghtml-canonical-property"></a>PidTagHtml (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Textkörper der Nachricht im HTML-Format.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |HTTP://SCHEMAS.MICROSOFT.COM/MAPI/PROPTAG/0X10130102  <br/> |
-|Bezeichner:  <br/> |0x1013  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |HTTP://SCHEMAS.MICROSOFT.COM/MAPI/PROPTAG/0X10130102  <br/> |
+|Kennung:  <br/> |0x1013  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    

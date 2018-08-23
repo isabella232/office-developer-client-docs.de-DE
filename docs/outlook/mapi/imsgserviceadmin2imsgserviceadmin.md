@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 14654259-e884-46bf-84ff-9e3c1a8cd60d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8938f4f237f5d566b13c86e33fc721ab49e2081b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f501ffc9fdb708604e3e64769de16081f87a2450
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792616"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590561"
 ---
 # <a name="imsgserviceadmin2--imsgserviceadmin"></a>IMsgServiceAdmin2 : IMsgServiceAdmin
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ändert eine Message Service in einem Profil.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiaux.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Message Service Administration-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Message Service Administration-Objekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMsgServiceAdmin2  <br/> |
@@ -42,7 +42,7 @@ ms.locfileid: "19792616"
 |:-----|:-----|
 |[CreateMsgServiceEx](imsgserviceadmin2-createmsgserviceex.md) <br/> |Fügt einen Nachrichtendienst gibt, die Dienst-UID neu hinzugefügt und der aktuellen Profil hinzu.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMsgServiceAdmin2** -Schnittstelle von dieselben Objekte, die die [IMsgServiceAdmin](imsgserviceadminiunknown.md) -Schnittstelle verfügbar machen verfügbar gemacht wird, und wurde mithilfe des Outlook-Implementierung des MAPI-Subsystems seit Microsoft Outlook 2003 zur Verfügung. 
   

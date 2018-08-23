@@ -7,30 +7,30 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 52c97d6c-7f4b-4522-aeac-0c1ed8475952
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4aec52497e02e99423fa50f378cd35dbf366c37c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b4c8c6cf3bee0575a42bc42a1ebf5e185ef78ab4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794256"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591632"
 ---
 # <a name="pidtagconversationkey-canonical-property"></a>PidTagConversationKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Unterhaltung Schlüssel in Microsoft Outlook verwendet nur, wenn **IPM suchen. Nachrichten-Managers** Nachrichten wie die Nachricht, Downloadverlauf für ein Konto Post Office Protocol (POP3) enthält. Diese Eigenschaft ist in Microsoft Exchange Server veraltet. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONVERSATION_KEY  <br/> |
-|Bezeichner:  <br/> |0x000b  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONVERSATION_KEY  <br/> |
+|Kennung:  <br/> |0x000b  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie e-Mail-Nachrichten als Unterhaltungen und Konvertieren von Nachrichteneigenschaften in [Transport-Neutral Encapsulation Format (TNEF)](transport-neutral-encapsulation-format-tnef.md)zugreifen möchten, verwenden Sie diese Eigenschaft nicht. Verwenden Sie stattdessen die kanonischen Eigenschaften [PidTagConversationIndex](pidtagconversationindex-canonical-property.md) und [Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md) . 
   

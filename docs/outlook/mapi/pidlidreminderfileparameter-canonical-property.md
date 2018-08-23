@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1009f0ea-6f35-484d-b04d-5b6e844c14dd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1cfb8f7070a8001e94fa70e90c52635c9b8be122
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 07653bea747e6e697cb1edb5669ae106c9e213fe
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793745"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591478"
 ---
 # <a name="pidlidreminderfileparameter-canonical-property"></a>PidLidReminderFileParameter (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Dateinamen des Sounds, die ein Client wiedergegeben werden soll, wenn die Erinnerung für dieses Objekt überfällig wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidReminderFileParam  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidReminderFileParam  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000851F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft nicht vorhanden ist, kann der Client einen Standardwert verwenden.
   

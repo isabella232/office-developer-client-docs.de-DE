@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 30b8ae9e-0c0c-4468-b286-29e083696fed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d6a53d112e4c12cd9092ac627e99cf3c13d901f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c320b2c42b9a14c6dc428fc3df59991528cdbe36
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792770"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592570"
 ---
 # <a name="ipropdata--imapiprop"></a>IPropData : IMAPIProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet die Möglichkeit zum Abrufen und ändern Sie den Zugriff für die Eigenschaften eines Objekts. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiutil.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Property-Daten-Objekt  <br/> |
+|Verfügbar gemacht von:  <br/> |Property-Daten-Objekt  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter und -Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIPropData  <br/> |
@@ -46,7 +46,7 @@ Bietet die Möglichkeit zum Abrufen und ändern Sie den Zugriff für die Eigensc
 |[HrGetPropAccess](ipropdata-hrgetpropaccess.md) <br/> |Ruft die Zugriffsebene und den Status f�r eine oder mehrere der Eigenschaften des Objekts an.  <br/> |
 |[HrAddObjProps](ipropdata-hraddobjprops.md) <br/> |Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IPropData::IMAPIProp** -Schnittstelle wird von MAPI implementierte und in erster Linie vom Dienstanbieter, die dieser Implementierung zugreifen, indem die [CreateIProp](createiprop.md) -Funktion verwendet. 
   

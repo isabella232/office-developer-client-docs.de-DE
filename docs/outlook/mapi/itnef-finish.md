@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01a868f4-afda-43ba-bc17-c33ae56b7b7d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2b95e0dd62d83dd83a064ee4627811fcb24af921
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: aff805f7868ec0c2adc55ece94c45b76368ba6eb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792867"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583764"
 ---
 # <a name="itneffinish"></a>ITnef::Finish
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beendet Verarbeitung für alle Transport-Neutral Encapsulation Format (TNEF) Vorgänge, die sich in der Warteschlange und wartet. 
   
@@ -55,7 +55,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Transport-Provider, Anbieter Nachricht und Gateways Aufruf die **ITnef::Finish** -Methode zum Ausführen der Codierung aller Eigenschaften für die Codierung Aufrufe der Methoden [ITnef::AddProps](itnef-addprops.md) und [ITnef::SetProps](itnef-setprops.md) angefordert wurde. Wenn das TNEF-Objekt mit dem TNEF_ENCODE-Flag für die [OpenTNEFStream nicht ausgeführt werden](opentnefstream.md) oder [OpenTnefStreamEx](opentnefstreamex.md) -Funktion geöffnet wurde, codiert die Methode **Fertig stellen** die angeforderten Eigenschaften in der an dieses Objekt übergebene Encapsulation Stream. Wenn das TNEF-Objekt mit dem TNEF_DECODE-Flag geöffnet wurde, wird die Methode **Fertig stellen** decodiert die Eigenschaften aus dem TNEF-Stream und schreibt sie zurück in die Nachricht, der sie angehören. 
   

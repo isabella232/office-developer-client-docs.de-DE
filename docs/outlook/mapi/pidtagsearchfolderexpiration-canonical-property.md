@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: e5746090-c850-4e95-b1e7-a07e42c87179
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bd70d18242fadee964ad96305728e63617a0276f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a2f72f68926665087ee8e3a0c9e8394042a8f955
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795113"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590771"
 ---
 # <a name="pidtagsearchfolderexpiration-canonical-property"></a>PidTagSearchFolderExpiration (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Uhrzeit, an dem der Suche Ordnercontainer veraltete werden, und aktualisiert oder neu erstellt werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_WB_SF_EXPIRATION  <br/> |
-|Bezeichner:  <br/> |0x683A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_WB_SF_EXPIRATION  <br/> |
+|Kennung:  <br/> |0x683A  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss als die Anzahl der Minuten seit Mitternacht (Coordinated Universal Time, UTC) 1. Januar 1601 formatiert werden.
   

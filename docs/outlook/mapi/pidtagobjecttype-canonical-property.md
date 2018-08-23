@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 37da4ff5-300d-479f-a8b4-6fc36df997d9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2830da6aad561045a7ecdd953286c90edea88ca2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8b2d435e132bf453cf41ec141d5a946bf54f9c66
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794653"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591051"
 ---
 # <a name="pidtagobjecttype-canonical-property"></a>PidTagObjectType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Typ eines Objekts. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OBJECT_TYPE  <br/> |
-|Bezeichner:  <br/> |0x0FFE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OBJECT_TYPE  <br/> |
+|Kennung:  <br/> |0x0FFE  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der in dieser Eigenschaft enthaltenen Objekttyp entspricht die primäre Schnittstelle für ein Objekt kann über die Schnittstelle **OpenEntry** zugegriffen werden. Es wird in der Regel durch consulting des _LpulObjType_ -Parameters der entsprechenden **OpenEntry** -Methode zurückgegebene abgerufen. Wenn die Schnittstelle auf andere Weise abgerufen wird, rufen Sie [IMAPIProp::GetProps](imapiprop-getprops.md) , um den Wert für diese Eigenschaft zu erhalten. 
   

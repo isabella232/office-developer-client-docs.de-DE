@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 645fe61d-414a-455e-b034-db3cfd003b9d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4558fcdba11aed92eb21972ed62320209ade77ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b0e01d3f56ef01984f281e7fae5990ccb0eade88
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794508"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593333"
 ---
 # <a name="pidtaginternetreferences-canonical-property"></a>PidTagInternetReferences (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert der Verweise Header ein Feld einer Nachricht Multipurpose Internet Mail Extensions (MIME).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INTERNET_REFERENCES, PR_INTERNET_REFERENCES_A, PR_INTERNET_REFERENCES_W  <br/> |
-|Bezeichner:  <br/> |0x1039  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INTERNET_REFERENCES, PR_INTERNET_REFERENCES_A, PR_INTERNET_REFERENCES_W  <br/> |
+|Kennung:  <br/> |0x1039  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um ein Kopfzeilenfeld Verweise generiert werden soll, müssen die Clients diese Eigenschaften auf den gewünschten Wert festlegen. MIME-Writer müssen den Wert dieser Eigenschaften in die Verweise Kopfzeilenfeld kopieren.
   

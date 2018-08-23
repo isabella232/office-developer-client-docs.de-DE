@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a4374728-e2bc-47d9-8b03-ba09545a38d8
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4730fb04d530fce516fe1ca4fd572c58fc1f1ffa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7148383c92b59adb9d3783e079e7c5f28c038eac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795483"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588993"
 ---
 # <a name="sending-and-receiving-form-notifications"></a>Senden und Empfangen von Formularbenachrichtigungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Formular Benachrichtigungen werden in MAPI verwendet, um Kommunikation sowohl aus dem Formular an die Anzeige sowie aus Ihrer Viewer auf das Formular zu vereinfachen.
   

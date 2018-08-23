@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9a0bc2b5-d0c9-405b-97ad-b43839f908da
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 80d135da7f49d12d2d33f7cafe01295673a56902
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5ec99eba9759588ff69fc141de8e499ee87d69ea
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793512"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586326"
 ---
 # <a name="pidlidemail1addresstype-canonical-property"></a>PidLidEmail1AddressType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Adresstyp der ersten e-Mail-Adresse.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail1AddrType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail1AddrType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008082  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Falls vorhanden, muss Wert dieser Eigenschaft eine gültige Adresse.
   

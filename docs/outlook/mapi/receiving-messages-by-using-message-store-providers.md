@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4763951e-ccfd-453e-b99c-5c7d5efb90c2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 94ea0fe7fba4e49c1f646d889f3727cf5ef4739d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8a5df2e8f50d8de05ec43b03ae5b56887e76d505
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795346"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590190"
 ---
 # <a name="receiving-messages-by-using-message-store-providers"></a>Empfangen von Nachrichten durch Nachrichtenspeicheranbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht-Anbieter müssen keine eingehenden Nachrichtenübermittlungen unterstützen (d. h., unterstützen die Möglichkeit zu Nachrichten Transportanbieter und die Warteschlange MAPI-Anbieter als Ausgangspunkt Übermittlung von Nachrichten Filiale). Jedoch, wenn Ihre Nachricht Speicheranbieter eingehende Nachrichtenübermittlungen nicht unterstützt, kann es als Standard-Informationsspeicher verwendet werden.
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8759d873-d141-4b4a-9302-0dd11aa45de8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d294fc50e24afe523b53d3da3373d44c88c2d82d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b3972e66676bf426b3ea94624ac6c9f7cf48062e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794518"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593361"
 ---
 # <a name="pidtaginternetorganization-canonical-property"></a>PidTagInternetOrganization (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wird die Kopfzeile MIME-Organisation.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INTERNET_ORGANIZATION, PR_INTERNET_ORGANIZATION_A, PR_INTERNET_ORGANIZATION_W  <br/> |
-|Bezeichner:  <br/> |0x1037  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INTERNET_ORGANIZATION, PR_INTERNET_ORGANIZATION_A, PR_INTERNET_ORGANIZATION_W  <br/> |
+|Kennung:  <br/> |0x1037  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    

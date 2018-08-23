@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 37075cfc-461d-4983-9045-d9f1da6739be
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a5d2244270463fcc2fe0a9786112590e741a8a66
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1c225712e354d72b79313ee4c3f36da55f11b0a3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795748"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587516"
 ---
 # <a name="transmitting-and-copying-named-properties"></a>Übertragen und Kopieren von benannten Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn eine benannte Eigenschaft gesendet wird, verschoben oder kopiert haben, der Namen bleibt konstant, aber der Bezeichner muss ändern, um die Zuordnung der Zielobjekt entsprechen. Die einzige Ausnahme zu dieser Regel ist, wenn die Quell- und die gleiche Zuordnung Signatur haben Neuzuordnen unnötige vornehmen.
   

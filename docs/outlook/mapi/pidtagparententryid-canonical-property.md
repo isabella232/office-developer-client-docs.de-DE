@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 55e08ace-493c-4246-8ebf-c304f4abc56a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ba30514df028805135e9e31e7214ca336b1b3f85
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 48627c6d6eb2100e7dfcab832c86c1ec2e4ec8bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794787"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582805"
 ---
 # <a name="pidtagparententryid-canonical-property"></a>PidTagParentEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID des Ordners, der einen Ordner oder eine Nachricht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PARENT_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x0E09  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PARENT_ENTRYID  <br/> |
+|Kennung:  <br/> |0x0E09  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird durch Nachrichtenspeicher für alle Ordner und Nachrichten berechnet.
   

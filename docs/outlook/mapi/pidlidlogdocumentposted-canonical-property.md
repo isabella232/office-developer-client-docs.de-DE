@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 27e43acf-8a5e-4ba5-8af0-36d11f071892
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b4f2537a31dbdbd4d05d24891751b2129efa8bc0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8cbc7cd64988b894e923ea59b89b643945b85933
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793647"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585717"
 ---
 # <a name="pidlidlogdocumentposted-canonical-property"></a>PidLidLogDocumentPosted (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob das Dokument in einen Serverordner während der Journalfunktion gebucht oder per e-Mail gesendet wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogDocPosted  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogDocPosted  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008711  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

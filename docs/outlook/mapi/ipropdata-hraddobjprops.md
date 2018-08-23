@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 683cf476-3c02-4b3b-939f-6fff6611f9aa
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 985b763ade9670c064c6c338953debf7beaa2783
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: ae0d6d58f96738a9686dbdda86336c040c2e2f68
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792771"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591683"
 ---
 # <a name="ipropdatahraddobjprops"></a>IPropData::HrAddObjProps
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt.
   
@@ -62,7 +62,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Einige, jedoch nicht alle Eigenschaften wurden hinzugefügt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IPropData::HrAddObjProps** -Methode fügt eine oder mehrere Eigenschaften vom Typ PT_OBJECT auf das Objekt. **HrAddObjProps** stellt eine Alternative zur die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode für Objekteigenschaften, da Objekteigenschaften durch Aufrufen von **SetProps**nicht erstellt werden können. Hinzufügen einer Object-Eigenschaft führt das Eigenschafts-Tag eingeschlossen werden, in der Liste der Eigenschaftentags, die die [IMAPIProp::GetPropList](imapiprop-getproplist.md) -Methode zurückgibt. 
   

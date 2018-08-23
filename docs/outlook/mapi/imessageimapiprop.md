@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7e244d40-595e-432c-aa8c-f9f62ca3c138
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9ed02e19a2934f785b03bb8553a08e16c7bb30e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b594297d364ba4f5a3ff7da603d2fe7c2fe8cf07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792517"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588531"
 ---
 # <a name="imessage--imapiprop"></a>IMessage : IMAPIProp
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Verwaltet werden Nachrichten, die Anlagen und Empfänger.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Objekt Message  <br/> |
+|Verfügbar gemacht von:  <br/> |Objekt Message  <br/> |
 |Implementiert von:  <br/> |Nachricht-Anbieter  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMessage  <br/> |
@@ -52,7 +52,7 @@ Verwaltet werden Nachrichten, die Anlagen und Empfänger.
    
 Die folgenden Eigenschaften sind für Nachrichten zu einem bestimmten Zeitpunkt während ihres Lebenszyklus erforderlich. Die meisten Eigenschaften schreibgeschützt werden vom Anbieter Store Nachricht festgelegt, wenn ein Client eine Nachricht [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode aufruft. Andere schreibgeschützte Eigenschaften werden von der Adressbuchhierarchie festgelegt. 
   
-|**Erforderliche Eigenschaften für Nachrichten von allen Klassen**|**Zugriff**|
+|**Erforderliche Eigenschaften für Nachrichten von allen Klassen**|**Access**|
 |:-----|:-----|
 |**PR_CREATION_TIME** ([PidTagCreationTime](pidtagcreationtime-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_DISPLAY_BCC** ([PidTagDisplayBcc](pidtagdisplaybcc-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
@@ -102,7 +102,7 @@ Die folgenden Eigenschaften werden alle schreibgeschützt für Clients, mit Ausn
 |**PR_SENDER** -Eigenschaften  <br/> |
 |**PR_SUBJECT** ([PidTagSubject](pidtagsubject-canonical-property.md))  <br/> |
    
-|**Eigenschaften für Empfänger der Nachricht**|**Zugriff**|**Erforderlich oder optional**|
+|**Eigenschaften für Empfänger der Nachricht**|**Access**|**Erforderlich oder optional**|
 |:-----|:-----|:-----|
 |**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |Erforderlich  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |Erforderlich  <br/> |

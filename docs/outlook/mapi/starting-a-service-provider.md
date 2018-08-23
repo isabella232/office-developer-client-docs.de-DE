@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: c4b61cc3-d9fe-4616-a05c-d1e4096b5abd
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 99f47ee4fe990b0e77fcf868977b72d83bfdbac7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d14a9961002d63733423af474e147ec5001051fb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795628"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586333"
 ---
 # <a name="starting-a-service-provider"></a>Starten eines Dienstanbieters
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zu einem bestimmten Zeitpunkt nach dem Starten eines Clients einer Sitzung mit MAPI, wird Ihr Dienstanbieter gestartet werden. Transportanbieter gestartet wurden, wenn ein Client für ihre Dienste anfordert. Address Book und Message-Anbieter werden während der Client Anmeldevorgang gestartet.
   

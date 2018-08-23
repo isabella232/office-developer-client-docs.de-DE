@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d342a956-1164-4c9c-b0bb-7a0b72dc97fc
 description: 'Zuletzt geändert: 21 Februar 2012'
-ms.openlocfilehash: 70c15970ce69e4bc075da6bf55320cb23116b7a4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1135a8e07bf94a200d06db8b692ee39dfdb78272
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793297"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588888"
 ---
 # <a name="mnlslstrlenw"></a>MNLS_lstrlenW
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt die Länge der angegebenen Unicode-Zeichenfolge, ausgenommen abschließende Null-Zeichen.
   
@@ -41,7 +41,7 @@ int MNLS_lstrlen(
 
 Die Funktion gibt eine ganze Zahl mit der Länge der Zeichenfolge zurück. Es ist die Anzahl der Zeichen in der Zeichenfolge, ausgenommen abschließende Null-Zeichen. Wenn _Lpsz_ NULL ist, gibt die Funktion 0 (null) zurück. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Funktion umschließt die **Lstrlen** -Funktion. Weitere Informationen finden Sie unter [Lstrlen](http://msdn.microsoft.com/en-us/library/ms647492%28VS.85%29.aspx).
   

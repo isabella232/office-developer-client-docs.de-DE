@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 35bb0d6d-41d4-47d6-b161-be3721894201
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 83ab01363d478d197286bfa8f7b5b092a7ffd5a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 03465df65498643ce02598fdc26ab78b44e1135a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794457"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588678"
 ---
 # <a name="pidtagiconindex-canonical-property"></a>PidTagIconIndex (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Zahl, die angibt, welches Symbol verwenden, wenn Sie eine Gruppe von e-Mail-Objekten anzeigen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ICON_INDEX  <br/> |
-|Bezeichner:  <br/> |0x1080  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ICON_INDEX  <br/> |
+|Kennung:  <br/> |0x1080  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft, ist wenn es vorhanden ist, ein Hinweis an den Client. Der Client kann den Wert dieser Eigenschaft ignoriert. 
   
@@ -73,7 +73,7 @@ Diese Eigenschaft, ist wenn es vorhanden ist, ein Hinweis an den Client. Der Cli
 |Einzelinstanz-Besprechung  <br/> |0x00000402  <br/> |
 |Wiederkehrende Besprechung  <br/> |0x00000403  <br/> |
 |Besprechungsanfrage  <br/> |0 x 00000404  <br/> |
-|Annehmen  <br/> |0x00000405  <br/> |
+|Accept  <br/> |0x00000405  <br/> |
 |Ablehnen  <br/> |0x00000406  <br/> |
 |Tentativly  <br/> |0 x 00000407  <br/> |
 |Stornierung  <br/> |0x00000408  <br/> |

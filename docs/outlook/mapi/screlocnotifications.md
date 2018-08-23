@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 22de5d38-7be6-48b3-90a7-bc553dcdb042
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bb4ff6a128b9fed29ff0be5325c21e5600389740
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4117558d27d64444cdac62651584fe6cfe8ff061
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795486"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583967"
 ---
 # <a name="screlocnotifications"></a>ScRelocNotifications
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen Zeiger in ein bestimmtes Ereignis Benachrichtigung Array passt. 
   
@@ -75,7 +75,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Eine ungültige Benachrichtigung aufgetreten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Parameter _pcb_ an die Funktion **ScRelocNotifications** ist optional. 
   

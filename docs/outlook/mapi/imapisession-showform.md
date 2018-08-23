@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 233cf936-34db-42d4-b5e3-17a93acb2009
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d20c8e7432903ef9334f066df31694752384d034
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e9e0ad958acc40dd28f3d9aab9996c1b7a36f38a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792333"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591485"
 ---
 # <a name="imapisessionshowform"></a>IMAPISession::ShowForm
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt ein Formular an.
   
@@ -107,7 +107,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::ShowForm** -Methode zeigt ein Formular für Nachrichten, die von der **IMAPISession::PrepareForm** -Methode vorbereitet wurden. 
   

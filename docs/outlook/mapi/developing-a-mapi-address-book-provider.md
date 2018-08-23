@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 821cc42d-eebb-4327-b2d4-594421a5c22c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 03f53dbfbe57db76ee8ceefda3f6938301f70da8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 731ebf6f61db8e9f425d48ab63cb7b81035a41c1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791531"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584282"
 ---
 # <a name="developing-a-mapi-address-book-provider"></a>Entwicklung eines MAPI-Adressbuchanbieters
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Adressbuch-Dienstanbieter liefert Empfängerinformationen Clientanwendungen Nachrichtenspeicher und transport-Anbieter und MAPI. Empfängerinformationen ist in Storage Kästchen bekannt als Container hierarchisch organisiert. Jedes Adressbuch im Profil trägt eine oder mehr auf oberster Ebene oder übergeordneten Inhaltstyps, Bücher zu MAPI-Adressbuch, eine integrierte Ansicht der Empfängerinformationen aus allen Adresse Container Anbieter in einer Sitzung. Es ist über das MAPI-Adressbuch, dass Clients und andere Telefoniedienstanbieter Zugriff auf die Daten der Adressbuch-Dienstanbieter erhalten.
   

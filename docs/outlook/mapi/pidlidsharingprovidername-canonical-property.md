@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 67e6497c-e053-4b2d-a81c-c6cf6017f8bd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a184207463e1f6139df2baa064101e8d2d8dc896
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 53dd5b0a808ca818a6086c09a9e59220a6d6d654
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793809"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593459"
 ---
 # <a name="pidlidsharingprovidername-canonical-property"></a>PidLidSharingProviderName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Benutzer angezeigten Namen von den Freigabedienstanbieter, der durch **DispidSharingProviderGuid** ([PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md)) bezeichnet wird. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSharingProviderName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSharingProviderName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Sharing  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008A02  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft sollte ignoriert werden.
   

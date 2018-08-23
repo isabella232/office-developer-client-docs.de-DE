@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 74b7bdd0-89d1-4013-a6f1-8ea102974f19
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 924231ba59ff7d8587f049e9adb650a988591177
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a91d565774806b0c25c4088fdee0a3811f639b6a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794545"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583645"
 ---
 # <a name="pidtaglanguage-canonical-property"></a>PidTagLanguage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der die Sprache angibt, in der der messaging-Benutzer Nachrichten geschrieben werden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_LANGUAGE, PR_LANGUAGE_A, PR_LANGUAGE_W  <br/> |
-|Bezeichner:  <br/> |0x3A0C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_LANGUAGE, PR_LANGUAGE_A, PR_LANGUAGE_W  <br/> |
+|Kennung:  <br/> |0x3A0C  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Zeichenfolge enthält einen einzelne zweistelligen Länder-/Regionscode. 
   

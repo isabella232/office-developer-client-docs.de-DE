@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 41d35370-495d-40fe-80bc-6c3bfc995b85
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e3f35126f3887bc1f2979721deb90891b97c9322
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b53cdb4fe379405018555f1cca9fa40ddc5d0fa8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792998"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592486"
 ---
 # <a name="mapi-forms"></a>MAPI-Formulare
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nach dem Lesen dieses Übersicht über die Architektur der MAPI-Formulars, müssen Sie einen Überblick über was MAPI-Formulare sind und Interaktion mit anderen Komponenten des MAPI-Subsystems. Der Zweck dieses Abschnitts ist die grundlegende Kenntnisse zum Implementieren Ihrer eigenen MAPI Formular Server benötigten zur Verfügung.
   

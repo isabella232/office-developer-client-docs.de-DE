@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70f67614-af0d-43f6-99f6-391a2f5673cb
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 64b2c147acb02b6c29cf080076b6fe2e3eefb717
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0d3f540a14c833e0ee0ed212f6f3b3b709d72ec0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792346"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591037"
 ---
 # <a name="imapisupportcopymessages"></a>IMAPISupport::CopyMessages
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Kopiert oder verschiebt Nachrichten aus einem Ordner in einen anderen Ordner.
   
@@ -92,7 +92,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche " **Abbrechen** " in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::CopyMessages** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht-Anbieter können in ihrer Durchführung des [IMAPIFolder::CopyMessages](imapifolder-copymessages.md) zu kopieren oder verschieben eine oder mehrere Nachrichten aus einem Ordner in einen anderen **IMAPISupport::CopyMessages** aufrufen. Teil des Aufrufs **IMAPISupport::CopyMessages** kann der Nachricht Speicheranbieter angeben, dass MAPI eine Statusanzeige angezeigt werden sollen. 
   

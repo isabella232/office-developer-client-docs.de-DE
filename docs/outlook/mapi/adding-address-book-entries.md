@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 63444a65-d56a-4dbd-9aa6-e60f18ba8104
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: adbfbb73ac0f5f1e1cba547fa7a91393891fdb1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d5b2aa2830e2721b9f895b22df12c9d712188625
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791251"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590134"
 ---
 # <a name="adding-address-book-entries"></a>Hinzufügen von Adressbucheinträgen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aufrufe [IMAPISupport::NewEntry](imapisupport-newentry.md) mit der Eintrags-ID des Zielcontainers in der _LpEIDContainer_ -Parameter einen Container, eine Client-Anrufe [IAddrBook::NewEntry](iaddrbook-newentry.md) oder einen Anbieter einen messaging Benutzer oder eine Verteilerliste hinzugefügt. MAPI-Aufrufen wiederum den Container [IABContainer::CreateEntry](iabcontainer-createentry.md) -Methode, um den Eintrag mithilfe einer einmaligen Vorlage aus einer einmaligen Tabelle zu erstellen. Eine einmalige Vorlage ermöglicht dem Client einen neuen Empfänger eines bestimmten Typs zu erstellen. Die meisten Felder können bearbeitet werden. Die Vorlage, auf das durch den Parameter _LpEntryID_ möglicherweise eine, die vom Dienstanbieter bereitstellt oder einer Vorlage von einem fremden Anbieter, wäre, wenn der Anbieter fremde Vorlagen unterstützt. Die Implementierung von **CreateEntry** für Anbieter, die Empfänger aus einer fremden Vorlage erstellen können sind immer komplexer als Implementierungen für Anbieter, die nicht möglich. 
   

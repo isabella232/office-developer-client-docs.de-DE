@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 12abbd8c-f825-493e-af42-344371d9658e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3b40c8433f93237db2ae4fd5449fe8a0da486539
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 46c77ce0f14e3b7719256d8b305cb3dad767b3f5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791368"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590099"
 ---
 # <a name="building-a-restriction"></a>Erstellen eine Einschränkung
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zum Erstellen einer Einschränkung einer Clientanwendung erstellt eine Hierarchie von mindestens Einschränkung Strukturen der verschiedenen Typen und übergibt einen Zeiger auf der Hierarchie, um die [Methode IMAPITable:: Restrict](imapitable-restrict.md) oder [IMAPITable](imapitable-findrow.md) -Methode. Die Abbildung, die folgt und das Codebeispiel in [Einschränkung Beispielcode](sample-restriction-code.md) veranschaulichen, wie eine normale Einschränkung mit verknüpften Einschränkung Strukturen mit unterschiedlichen Typen implementiert wird. 
 

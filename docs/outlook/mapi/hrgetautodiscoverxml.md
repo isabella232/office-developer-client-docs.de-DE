@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: da466fc9add8cbc385014782f31749d3b6522da9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 490c834ee63c158b3f9c0e34f8de7f582c650bc4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791912"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584065"
 ---
 # <a name="hrgetautodiscoverxml"></a>HrGetAutoDiscoverXML
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Stream Extensible Markup Language (XML), der Informationen aus den Auto-Discovery-Dienst eines Microsoft Exchange 2007-Servers abgerufen darstellt zurück.
   

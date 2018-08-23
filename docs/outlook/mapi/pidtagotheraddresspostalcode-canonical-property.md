@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8f6f0491-2a77-4faf-aa8f-303ebf0ea411
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 959c09072e4c0aeeb54b790cdbead90ef1263d85
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6b88e32b87c4da243ad6d7531a8ae093631657d1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794759"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583708"
 ---
 # <a name="pidtagotheraddresspostalcode-canonical-property"></a>PidTagOtherAddressPostalCode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält der Postleitzahl für die e-Mail-Nachrichten des Benutzers andere Postadresse.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OTHER_ADDRESS_POSTAL_CODE, PR_OTHER_ADDRESS_POSTAL_CODE_A, PR_OTHER_ADDRESS_POSTAL_CODE_W  <br/> |
-|Bezeichner:  <br/> |0x3A61  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OTHER_ADDRESS_POSTAL_CODE, PR_OTHER_ADDRESS_POSTAL_CODE_A, PR_OTHER_ADDRESS_POSTAL_CODE_W  <br/> |
+|Kennung:  <br/> |0x3A61  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

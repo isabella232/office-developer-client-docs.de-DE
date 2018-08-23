@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1fafc810-7cf3-4c8c-bf21-055ae34da690
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bd42fcd34042c2f9579497f164c4a67f6ba97e35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d6f5a0bd5da851c5107b8d3d40d683a7e3c1b26b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791961"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586011"
 ---
 # <a name="hropenabentrywithprovideruidsupport"></a>HrOpenABEntryWithProviderUIDSupport
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Führt die gleiche Funktion wie die [HrOpenABEntryWithProviderUID](hropenabentrywithprovideruid.md) -Funktion, mit der Ausnahme, dass die **HrOpenABEntryWithProviderUIDSupport** -Funktion den Eintrag mithilfe des angegebenen Support-Objekts statt der Sitzung und das Adressbuch wird geöffnet. 
   

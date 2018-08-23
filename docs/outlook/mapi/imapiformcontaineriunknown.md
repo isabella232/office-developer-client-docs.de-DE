@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 437c8a75-1121-4919-8bd4-d57c0d6f4b9a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 39f255a277403073132dfd3cd21c995eefe904c9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3f03412c9ab639678c68016ec1a8eff937b6c1a0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792154"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590988"
 ---
 # <a name="imapiformcontainer--iunknown"></a>IMAPIFormContainer : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Formulare in Formularbibliotheken verwaltet. Diese Schnittstelle wird verwendet, um anwendungsspezifische Formularbibliotheken erstellen. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Formular Container-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Formular Container-Objekte  <br/> |
 |Implementiert von:  <br/> |Anbieter für Formular-Bibliothek  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFormContainer  <br/> |

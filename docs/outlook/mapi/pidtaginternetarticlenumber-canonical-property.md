@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a9eaacc9-bade-472a-9932-4dccec2471ae
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 560106e98f446529a68eded88a8f8283dd3f531d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c27e320341f2e2072fa45828263e2cb3873f6ad0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794485"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584212"
 ---
 # <a name="pidtaginternetarticlenumber-canonical-property"></a>PidTagInternetArticleNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Zahl, die einem Element in einem Nachrichtenspeicher zugeordnet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INTERNET_ARTICLE_NUMBER  <br/> |
-|Bezeichner:  <br/> |0x0E23  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INTERNET_ARTICLE_NUMBER  <br/> |
+|Kennung:  <br/> |0x0E23  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft entspricht in IMAPI Nachrichtenspeicher die IMAPI UID.
   

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9cb35f0a-267e-2d85-1701-02d52578a0b8
 description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 27ad80b9eca8332beeda147a8b2b4204f9f1cd38
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 57868996f95cfb135298378d2638bc57b2e69977
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791216"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583673"
 ---
 # <a name="about-mapi-urls-for-notification-based-indexing"></a>Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn ein Informationsdienst Indexer, den ein Objekt benachrichtigt für die Indizierung bereit ist, generiert er MAPI-URL, die das Objekt, das den MAPI-Protokollhandler eindeutig identifiziert. MAPI-URLs in Unicode codiert sind, und Sie haben das folgende Format: 
   

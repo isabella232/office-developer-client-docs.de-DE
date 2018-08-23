@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 853e8d91-b599-45bb-8ac7-f7a85e8a8419
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a4c019b98ebf106cc6e8c81d5ba69edf5dacb53c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ca2f1c1dba52127808468ffaa505d0ef71c10d89
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793778"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589413"
 ---
 # <a name="pidlidremotetransfersize-canonical-property"></a>PidLidRemoteTransferSize (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Größe weiterleiten für ein Remoteelement in Bytes.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidRemoteXferSize  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidRemoteXferSize  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Remote  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008F05  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |

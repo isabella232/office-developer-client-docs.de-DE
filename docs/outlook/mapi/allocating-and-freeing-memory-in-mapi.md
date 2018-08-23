@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e238f6bc-e9f6-4ea4-a2e4-ff5da2a04bd5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dc97abcb4b316b696032f2788f4e653717e1396b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2ec5c2604c72d41078aa467764463e2659c62e65
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791287"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587943"
 ---
 # <a name="allocating-and-freeing-memory-in-mapi"></a>Reservieren und Freigeben von Arbeitsspeicher in MAPI
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zusätzlich zum angeben, wie zuordnen und Freigeben von Arbeitsspeicher, definiert MAPI ein Modell zu wissen, wenn Speicher übergeben zwischen öffentliche Schnittstelle-Methode und die API-Funktion, die Anrufe freigegeben werden soll. Das Modell gilt nur für Arbeitsspeichers für Parameter, die nicht Zeigern auf Schnittstellen, wie Zeichenfolgen und Zeiger auf Strukturen sind. Schnittstellenzeiger verwenden Sie die Referenz zählen Mechanismus über **IUnknown**implementiert. Verwenden Sie beim Zuordnen und Freigeben von nicht-MAPI-Speicher intern innerhalb einer Clientanwendung oder -Dienstanbieter verbunden, geeigneter Mechanismus sinnvoll ist. 
   

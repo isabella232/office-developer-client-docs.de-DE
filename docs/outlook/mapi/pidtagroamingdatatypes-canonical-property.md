@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: a3336b61-01b6-47a7-9498-0a03878e91cb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d8b4df2dbb0d7fd2edeb82222f333c11c5f71987
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2b29f47191bc1f12653ddcc4e78dd8b3401f0480
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794990"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587642"
 ---
 # <a name="pidtagroamingdatatypes-canonical-property"></a>PidTagRoamingDatatypes (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske dar, die angibt, welche Stream Eigenschaften für die Nachricht vorhanden sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ROAMING_DATATYPES  <br/> |
-|Bezeichner:  <br/> |0x7C06  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ROAMING_DATATYPES  <br/> |
+|Kennung:  <br/> |0x7C06  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss auf eine oder mehrere der folgenden Werte festgelegt werden:
   

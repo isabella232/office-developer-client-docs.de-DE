@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b3ce4b0e-4f48-4a7e-a30c-c4754bccb12c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: edabb9a0f55cb34b4e144672e91ea50b8e9193b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6324dcc567aee48f190f8568c6c94b5ee87c731f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792851"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584566"
 ---
 # <a name="itnefencoderecips"></a>ITnef::EncodeRecips
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Codiert eine Ansicht für die Empfänger einer Nachricht-Tabelle in der Datenstrom Transport-Neutral Encapsulation Format (TNEF) für die Nachricht an.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Transport-Anbieter, Nachricht-Anbieter und Gateways Aufruf der **ITnef::EncodeRecips** -Methode zum Ausführen von TNEF-Codierung für eine bestimmte Empfänger Tabelle-Ansicht. TNEF-Codierung ist nützlich, beispielsweise wenn für einen Anbieter oder ein Gateway einer bestimmten Spalte festlegen, die Sortierreihenfolge oder die Einschränkung für die Empfänger Tabelle erforderlich sind. 
   

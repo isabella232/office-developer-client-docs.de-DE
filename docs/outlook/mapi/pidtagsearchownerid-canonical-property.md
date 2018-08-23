@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 01ac66b3-1868-6b1e-7026-ab61380c8cc5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 40409edf80bfe937819f85f10e849c3d49526ebf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: da7d757516ac47fbe74b9fec23ade41579e04e60
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795118"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592633"
 ---
 # <a name="pidtagsearchownerid-canonical-property"></a>PidTagSearchOwnerId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Prozess-ID des Prozesses, der Benachrichtigungen an die Indizierung zu Objekten bereit für die Indizierung sendet.
   
@@ -27,9 +27,9 @@ Enthält die Prozess-ID des Prozesses, der Benachrichtigungen an die Indizierung
 
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SEARCH_OWNER_ID  <br/> |
-|Verf�gbar gemacht von:  <br/> |Objekt "Message" store  <br/> |
-|Bezeichner:  <br/> |0x3419  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SEARCH_OWNER_ID  <br/> |
+|Verfügbar gemacht von:  <br/> |Objekt "Message" store  <br/> |
+|Kennung:  <br/> |0x3419  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_LONG  <br/> |
 |Eigenschafts-Tag:  <br/> |0x34190003  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |

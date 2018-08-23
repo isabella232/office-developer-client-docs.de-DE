@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4d1837f1-494f-481b-9e09-ab8249f1488c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9dba148646678f0740c5b2c338ae345ecd76dfac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2d74c9d5632e81e5b98cd1a4a02d5646cf3f6300
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793262"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592311"
 ---
 # <a name="message-text"></a>Nachrichtentext
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Für ausgehende Nachrichten in MIME-Modus, der Inhaltstyp davon abhängig, ob Anlagen und der Nachrichtentext aussieht vorhanden sind. Wenn Anlagen vorhanden sind, der Inhaltstyp _Multipart/mixed;_ den Nachrichtentext und jede Anlage werden separate Teil des den Nachrichteninhalt, jeweils mit einem eigenen Inhaltstyp. Wenn keine Anhänge vorhanden sind, der Inhaltstyp der Nachricht ist _Text/Plain_ , und es ist nur ein Teil. 
   

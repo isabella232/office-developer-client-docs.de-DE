@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 346608d7-f7de-497e-9852-4d4d7696177e
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 34d9d6d428f39765e739ce856f3666d07b457d52
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f39f721d434f4e54cbfa5d25a3ba626858f2b13e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791523"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583568"
 ---
 # <a name="deleting-a-message-service"></a>Löschen eines Nachrichtendiensts
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
  **So löschen Sie eine Message Service aus einem Profil**
   

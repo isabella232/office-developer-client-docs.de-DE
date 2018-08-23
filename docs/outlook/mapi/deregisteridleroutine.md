@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a8ada6fe-9963-4c25-b4b4-db77f9517368
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 85161fb87e798bbb03b267f9760870da1246e48d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 78d499dabe60a8051c6a2a77abad4b7d6f2ed159
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791532"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591954"
 ---
 # <a name="deregisteridleroutine"></a>DeregisterIdleRoutine
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Entfernt eine [FNIDLE](fnidle.md) basierend im Leerlauf Routine aus dem MAPI-System. 
   
@@ -49,7 +49,7 @@ VOID DeregisterIdleRoutine(
 
 None.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jede Aufgabe in einer Clientanwendung oder Dienstanbieter kann eine beliebige im Leerlauf Routine Aufheben der Registrierung für den sie einen gültigen _Ftg_ Parameter verfügt. Insbesondere kann eine im Leerlauf Routine selbst Aufheben der Registrierung. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 39fd9df4-4fb8-412e-a610-d450051516ed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a5ddc10aa068a7d0a18ae4b648959f258e89d132
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9d441f10a41b2f29f29d6d22a45f3c6f52270a1a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794651"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590239"
 ---
 # <a name="pidtagnonreceiptreason-canonical-property"></a>PidTagNonReceiptReason (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Gründe warum eine Nachricht nicht empfangen wurde, die Teil der non-Delivery Report bildet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_NON_RECEIPT_REASON  <br/> |
-|Bezeichner:  <br/> |0x003E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_NON_RECEIPT_REASON  <br/> |
+|Kennung:  <br/> |0x003E  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Können beispielsweise Gründe, dass die Nachricht gelöscht wurde.
   

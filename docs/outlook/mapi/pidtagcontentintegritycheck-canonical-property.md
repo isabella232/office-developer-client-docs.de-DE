@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: c7f10b8a-6b20-44cf-bde6-8d2b711c1c14
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2082db4ccd107fcd02e37882707e4e3ee697695d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 53226daafd1c0a53f96db5af3432d6f34738fd93
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794235"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585809"
 ---
 # <a name="pidtagcontentintegritycheck-canonical-property"></a>PidTagContentIntegrityCheck (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen ASN. 1 Content-Integrität Kontrollkästchen Wert, der einem Absender der Nachricht um Nachrichteninhalt Offenlegung an nicht autorisierte Empfänger schützen kann.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTENT_INTEGRITY_CHECK  <br/> |
-|Bezeichner:  <br/> |0x0c00  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTENT_INTEGRITY_CHECK  <br/> |
+|Kennung:  <br/> |0x0c00  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bietet Nichtabstreitbarkeit des Nachrichteninhalts. In Verbindung mit **PR_MESSAGE_TOKEN** ([PidTagMessageToken](pidtagmessagetoken-canonical-property.md)) wird sichergestellt, dass der Inhalt einer Nachricht ihr Ziel unverändert erreicht.
   

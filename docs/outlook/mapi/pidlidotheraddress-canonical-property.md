@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b8acb69-4c84-4075-8457-d7aadce26c73
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b8b490242d6c0260fb4ba4335846da06a0e73d4c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eaf6c8706b6f51a297fda3015b9ce9c5277760bc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793704"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585962"
 ---
 # <a name="pidlidotheraddress-canonical-property"></a>PidLidOtherAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass die vollständige Adresse des Kontakts die Adresse's.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidOtherAddress  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidOtherAddress  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000801C  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft sollte eine Kombination von anderen physischen Adresseigenschaften und basiert auf dem Gebietsschema des Clients.
   

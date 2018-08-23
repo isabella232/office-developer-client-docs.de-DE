@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 4ad2f417-be8f-4fc8-9321-82097289074b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 37a318df01101487fe0e8970251201c2515d1e8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3c90284671d6087c74d4541b1a4774cc13b3ada5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794345"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583190"
 ---
 # <a name="pidtagexchangeprofilesectionid-canonical-property"></a>PidTagExchangeProfileSectionId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine dynamisch generierte GUID verwendet, um ein Konto zu bestimmen, wann Sie mehrere Microsoft Exchange Server-Konten verwenden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_EMSMDB_SECTION_UID  <br/> |
-|Bezeichner:  <br/> |0x3d150102  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_EMSMDB_SECTION_UID  <br/> |
+|Kennung:  <br/> |0x3d150102  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Mehrere Exchange-Konten  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen mehrerer Exchange-Konten anstelle von einem einzelnen Exchange-Konto. Um mehrere Exchange-Konten zu unterstützen, wurde das MAPI-Profil Layout geändert. In Microsoft Office Outlook 2007 und früheren Versionen enthalten Profile feste Profile-Abschnitt für Exchange-Einstellungen wie Servernamen, Benutzernamen und Offlineordnerdatei (OST). Speicherort. Diese Einstellungen wurden über einen eindeutigen Bezeichner, der **PbGlobalProfileSectionGuid** -Eigenschaft identifiziert. Im Abschnitt für die Exchange-Einstellungen verwendet wird Abschnitts Profile globale Exchange aufgerufen. Weitere Informationen über die globale Exchange-Profil in Outlook 2007 finden Sie unter [globale Abschnitt Profile zu öffnen](http://support.microsoft.com/kb/188482).
   

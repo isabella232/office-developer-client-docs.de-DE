@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 369d8c78-3cf6-4a55-ba14-9da0377d6ccf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 33f3b8e7d3d0e0d4461c947aa8e9b3ee66373d2e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4f91b4cdeb301eba6eb9753fc5e7dc3e3d5d892c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793826"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592619"
 ---
 # <a name="pidlidtaskglobalid-canonical-property"></a>PidLidTaskGlobalId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Sucht nach einer vorhandenen Aufgabe anhand einer GUID, beim Empfang einer Aufgabenantwort oder Vorgang aktualisiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskGlobalObjId  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskGlobalObjId  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008519  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft bleibt für nicht zugewiesene Aufgaben nicht festgelegt ist.
   

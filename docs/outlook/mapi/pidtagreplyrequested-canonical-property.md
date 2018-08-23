@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 204f8ef2-c7ec-41c5-ab7d-6ef7a864dcb9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 34862cf40f38d3baaac304e77c82081974d28585
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8a967aa9e69c4939c376266087b8fa3f227cb277
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794949"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589203"
 ---
 # <a name="pidtagreplyrequested-canonical-property"></a>PidTagReplyRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn den Absender einer Nachricht eine Antwort von einem Empfänger anfordert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPLY_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0x0C17  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPLY_REQUESTED  <br/> |
+|Kennung:  <br/> |0x0C17  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

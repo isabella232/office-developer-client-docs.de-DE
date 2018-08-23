@@ -7,18 +7,18 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2e7e5dcc-f667-a08c-caa0-4b81e3126ef9
 description: Gibt eine Auflistung von verwandten Eigenschaften an.
-ms.openlocfilehash: 7cb5e1c30960e69b252abc7af38e021607fd3502
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c729ddd18da7b19499be72a71a9d0666791da207
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797988"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593522"
 ---
 # <a name="section-element-sheettype-complextype-visio-xml"></a>Section-Element (Sheet_Type ComplexType) ("Visio XML")
 
 Gibt eine Auflistung von verwandten Eigenschaften an.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
@@ -53,7 +53,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
-|[Cell](http://msdn.microsoft.com/library/70a9d6d6-a4ff-2b0d-febc-789a04a2f5b0%28Office.15%29.aspx) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |Gibt eine einzelne Eigenschaft an.  <br/> |
+|[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |Gibt eine einzelne Eigenschaft an.  <br/> |
 |[Row](http://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von **Cell_Type** -Elementen.  <br/> |
    
 ### <a name="attributes"></a>Attribute
@@ -64,7 +64,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |IX  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Gibt den nullbasierten Index des Elements an. Es muss für alle Elemente mit dem gleichen **N** -Attribut des der enthaltenden **Sheet_Type** **Section_Type** eindeutig sein. Es muss größer als das **IX** -Attribut des keinem vorstehenden **Section_Type** -Element mit dem gleichen **N** -Attribut des der enthaltenden **Sheet_Type**sein.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |N  <br/> |XSD: String  <br/> |erforderlich  <br/> |Der sprachenunabhängige Name der Properties-Auflistung gibt. Es muss angemessen aller Elemente **Section_Type** des enthaltenden **Sheet_Type** -Elements eindeutig sein, es sei denn, "Geometrie" entspricht. Es muss eine Unterüberschrift in **Abschnitten**gleich sein.  <br/> |Werte des Typs xsd: String.  <br/> |
    
-### <a name="remarks"></a>Bemerkungen
+### <a name="remarks"></a>HinwBemerkungeneise
 
 **N** -Attribut dieses Elements **im Abschnitt** muss einer der eine begrenzte Auswahl von Werten entsprechen, die **ShapeSheet-** Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für dieses Element **im Abschnitt** zulässig sind. 
   
@@ -90,8 +90,8 @@ Das Attribut **IX** dieses Elements **im Abschnitt** muss eine der eine begrenzt
 |Geometrie  <br/> |Eine Auflistung von verwandten Eigenschaften, die die Geometrie Visualisierung anzugeben. Sie benötigen ein **ShapeSheet_Type** übergeordnetes Element. Das erste **Row_Type** untergeordnete Element dieses Elements muss vom Typ MoveTo, RelMoveTo, eine Ellipse oder InfiniteLine sein.  <br/> |[Abschnitt "Geometrie"](geometry-section.md) <br/> |
 |Layers  <br/> |Eine Auflistung von Eigenschaften, die auf einem Zeichenblatt definierte alle Ebenen anzuzeigen. Es muss ein **PageSheet_Type** -Element untergeordnet sein.  <br/> |[Abschnitt "Layers"](layers-section.md) <br/> |
 |Zeile Farbverlauf  <br/> |Eine Auflistung von verwandten Eigenschaften, mit denen Farbverlauf Zeile eines Shapes. Sie benötigen ein **ShapeSheet_Type** oder **StyleSheet_Type** übergeordnetes Element.  <br/> |[Line Gradient Section](line-gradient-section.md) <br/> |
-|Paragraph  <br/> |Eine Auflistung von verwandten Eigenschaften, mit denen die Absatzeigenschaften des Texts eines Shapes. Sie benötigen ein **ShapeSheet_Type** übergeordnetes Element oder ein **StyleSheet_Type** übergeordnetes Element.  <br/> |[Abschnitt "Paragraph"](paragraph-section.md) <br/> |
-|Prüfer  <br/> |Eine Auflistung von Eigenschaften, die für formelauswertung verwendet werden. Sie benötigen ein **DocumentSheet_Type** übergeordnetes Element.  <br/> |[Abschnitt "Reviewer"](reviewer-section.md) <br/> |
+|Absatz  <br/> |Eine Auflistung von verwandten Eigenschaften, mit denen die Absatzeigenschaften des Texts eines Shapes. Sie benötigen ein **ShapeSheet_Type** übergeordnetes Element oder ein **StyleSheet_Type** übergeordnetes Element.  <br/> |[Abschnitt "Paragraph"](paragraph-section.md) <br/> |
+|Reviewer  <br/> |Eine Auflistung von Eigenschaften, die für formelauswertung verwendet werden. Sie benötigen ein **DocumentSheet_Type** übergeordnetes Element.  <br/> |[Abschnitt "Reviewer"](reviewer-section.md) <br/> |
 |"Scratch"  <br/> |Eine Auflistung von Eigenschaften, die für formelauswertung verwendet werden. Sie benötigen eine **DocumentSheet_Type**, **PageSheet_Type**oder **ShapeSheet_Type** übergeordnetes Element.  <br/> |[Abschnitt "Scratch"](scratch-section.md) <br/> |
 |Registerkarten  <br/> |Eine Auflistung von verwandten Eigenschaften, mit denen die Registerkarten Eigenschaften des Texts eines Shapes. Sie benötigen ein **ShapeSheet_Type** übergeordnetes Element oder ein **StyleSheet_Type** übergeordnetes Element.  <br/> |[Abschnitt "Tabs"](tabs-section.md) <br/> |
    

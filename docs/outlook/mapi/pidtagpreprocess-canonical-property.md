@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: c59a6ce9-6b1f-4395-961e-c3af2945f05e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 61cdb8f0e1bcdcab56bc85a288baff47c8fd1fcb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cfbeb6c60069d57d9a42082e80b2a45fd3410767
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794795"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587376"
 ---
 # <a name="pidtagpreprocess-canonical-property"></a>PidTagPreprocess (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn die Nachricht vorverarbeitung erforderlich sind.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PREPROCESS  <br/> |
-|Bezeichner:  <br/> |0x0E22  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PREPROCESS  <br/> |
+|Kennung:  <br/> |0x0E22  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 > [!IMPORTANT]
 > Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert. 

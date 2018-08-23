@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 68f5aac1-714c-48fc-a0cf-a0c0401a6070
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 29e842584e5145f747aa0ef0c7796e5f7b3a8e0b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a15830d1b673b44e9058e33a1499744f631d8e32
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794190"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587656"
 ---
 # <a name="pidtagcontactaddressbookstoresupportmasks-canonical-property"></a>PidTagContactAddressBookStoreSupportMasks (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Flags, die angibt, die Store unterstützten Funktionen enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAB_STORE_SUPPORT_MASKS  <br/> |
-|Bezeichner:  <br/> |0x6621  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_SUPPORT_MASKS  <br/> |
+|Kennung:  <br/> |0x6621  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird von den speichern, die die Kontakteordner enthält abgerufen. Der Kontakt-Adressbuchanbieter wird verwendet, um die Eignung der unterstützten Features für den Speicher ausgewertet werden soll. Es ist eine Eigenschaft für einen Kontakt Adressbuch Profil. 
   

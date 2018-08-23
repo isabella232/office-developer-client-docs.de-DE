@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 752ff2d6-ca64-4507-adf1-4c054c321203
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f82c213b6e0737c27c4e979fc90109b38b0746f0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e0a66443194a3f89b47218ed9dc0ed9ad9c2df83
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795353"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584513"
 ---
 # <a name="read-only-message-stores"></a>Read-Only Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Nachrichtenspeicher schreibgesch�tzt ist eine in die weder der MAPI-Client noch die MAPI-Warteschlange kann erstellen, �ndern oder l�schen Sie die Objekte im Nachrichtenspeicher. Es gibt viele Gr�nde, warum Sie m�glicherweise einen schreibgesch�tzten Nachrichtenspeicher implementieren m�chten. Beispielsweise konnte Credit reporting Firma einen nur-Lese-Speicher verwenden, um die Kunden oder Mitarbeiter finden Sie unter aber nicht �ndern einzelne Credit Berichte zu erm�glichen. Stellen Sie einen schreibgesch�tzten Nachrichtenspeicher Auswahl hat Auswirkungen auf f�r die Struktur des Anbieters und der Store selbst abzurufen. Beispielsweise ein Nachrichtenspeicher schreibgesch�tzt sind keinen Ordner Postausgang, da dann MAPI-Clients w�rde anfordern, dass neue ausgehende Nachrichten in diesem Ordner erstellt werden. In �hnlicher Weise ist es vom Informationsdienst daf�r verantwortlich, die Integrit�t der zugrunde liegende Speichermechanismus sicherzustellen.
   

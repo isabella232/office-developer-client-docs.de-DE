@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: cd1fa994-9531-46c4-94e5-505e7f90b884
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2f45028219f0f5f4cc881db3bc512626b3ad2f4c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2e1f546d33d4781f60df56b12fce437d1e7bd675
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792395"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588223"
 ---
 # <a name="imapisupportopenprofilesection"></a>IMAPISupport::OpenProfileSection
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Abschnitt des aktuellen Profils und gibt einen Zeiger [IProfSect](iprofsectimapiprop.md) für den weiteren Zugriff. 
   
@@ -75,7 +75,7 @@ MAPI_E_UNKNOWN_FLAGS
   
 > Reservierte oder nicht unterstützte Flags verwendet wurden und daher der Vorgang konnte nicht abgeschlossen werden.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::OpenProfileSection** -Methode wird für alle Unterstützungsobjekte implementiert. Rufen **"OpenProfileSection"** zum Öffnen eines Abschnitts Profil und Abrufen eines Zeigers auf seine Implementierung **IProfSect** Dienstanbieter und Message-Dienste. 
   

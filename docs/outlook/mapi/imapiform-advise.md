@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 961318d6-bebe-4f4b-98ff-921cafc68d24
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b5347205e10b44d62a7e11cbe2f4179970f1bd64
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f0717dad6c32906995938c2b00d59f9ee96ff6e6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792121"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591072"
 ---
 # <a name="imapiformadvise"></a>IMAPIForm::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert einen Formular-Viewer für Benachrichtigungen über Ereignisse, die Einfluss auf das Formular.
   
@@ -54,7 +54,7 @@ E_OUTOFMEMORY
   
 > Die Registrierung war nicht erfolgreich, da nicht genügend Arbeitsspeicher.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer Aufrufen eines Formulars **IMAPIForm::Advise** -Methode, um für die Benachrichtigung zu registrieren, falls sich das Formular. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 77db2dff-4534-440f-a05c-635711cbc2c3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ba540b0fd3371b3e12be9eeeb102a9bd9d7e8d22
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cc0039cf2210446704d25b2156bd4ff50041a524
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792299"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586277"
 ---
 # <a name="imapisessiongetmsgstorestable"></a>IMAPISession::GetMsgStoresTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf die Nachricht Store Tabelle mit Informationen zu allen Nachrichtenspeichern im Profil der Sitzung.
   
@@ -58,7 +58,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Die Option MAPI_UNICODE wurde festgelegt, und die Sitzung Unicode nicht unterstützt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::GetMsgStoresTable** -Methode ruft einen Zeiger auf die Nachricht Store-Tabelle, eine Tabelle von MAPI verwaltet wird, enthält Informationen zu jeder geöffneten Nachrichtenspeicher im Profil. 
   
@@ -99,7 +99,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Nachrichtenspeichertabellen](message-store-tables.md)
 

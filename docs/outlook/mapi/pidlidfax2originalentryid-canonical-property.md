@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: da80d72f-9389-463f-8665-f26bb30c0ed2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d8a7082f76af761cd04a9c190324b7e6cf6e54fb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f6b8a00070cba755eb043e90586528674e461514
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793562"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592612"
 ---
 # <a name="pidlidfax2originalentryid-canonical-property"></a>PidLidFax2OriginalEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die ursprüngliche EntryID des Fax privat-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax2OriginalEntryID  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax2OriginalEntryID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080C5  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss falls vorhanden, die einmalige EntryId angeben, die an diese Faxadresse entspricht.
   

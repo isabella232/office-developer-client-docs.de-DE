@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 7561112b-ca72-4c49-a8a0-cc1879a4e151
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f2e565dc8137edee441643a5d02a154f78737099
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8082b0b6d47a16a79f5e426375e20b17d22298d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794613"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586620"
 ---
 # <a name="pidtagmessageflags-canonical-property"></a>PidTagMessageFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske aus Flags, die angeben, den Ursprung und den aktuellen Status einer Nachricht. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MESSAGE_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x0E07  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MESSAGE_FLAGS  <br/> |
+|Kennung:  <br/> |0x0E07  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine Eigenschaft eines Nontransmittable zur das Senden und Empfangen von Enden einer Übertragung mit unterschiedlichen Werten abhängig von der Client-Anwendung oder Store Anbieter beteiligten verfügbar gemacht werden. Diese Eigenschaft wird durch den Speicheranbieter Client oder einer Nachricht, wenn eine Nachricht erstellt und zum ersten Mal gespeichert und dann aktualisiert in regelmäßigen Abständen durch den Anbieter für die Nachricht anmelden, eines Transportdienstes und die MAPI-Warteschlange wie die Nachricht verarbeitet wird und den Zustand initialisiert ändert. 
   

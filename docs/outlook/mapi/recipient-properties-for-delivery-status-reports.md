@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9b2e287e-1cf8-4b8f-b92c-a065ed264d02
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a6ff82fa3cc4a7ad243285e9eb93b0ec880a3bd4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 58711a18fa6dc512cca10644437bee2ecd4d2143
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795335"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592997"
 ---
 # <a name="recipient-properties-for-delivery-status-reports"></a>Empfängereigenschaften für Übermittlungsstatusberichte
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die folgenden Eigenschaften sind für die Übermittlung von Statusberichten für Empfänger vorhanden. **PR_DELIVER_TIME** ([PidTagDeliverTime](pidtagdelivertime-canonical-property.md)) wird nicht auf Unzustellbarkeitsberichte verwendet. **PR_NDR_DIAG_CODE** ([PidTagNonDeliveryReportDiagCode](pidtagnondeliveryreportdiagcode-canonical-property.md)) und **PR_NDR_REASON_CODE** ([PidTagNonDeliveryReportReasonCode](pidtagnondeliveryreportreasoncode-canonical-property.md)) werden nur für Unzustellbarkeitsberichte verwendet.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8350a37c-6f42-4bef-82e0-35aa12b09fcf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1980e3bd815b370f125f4449dd7b7f340a7dcb9a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 73ed7213ea2bd5079458ccc237b65590f06e8d53
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795280"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586263"
 ---
 # <a name="pidtagviewsentryid-canonical-property"></a>PidTagViewsEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Eintrags-ID des Ordners benutzerdefinierte Ansichten enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_VIEWS_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x35E5  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_VIEWS_ENTRYID  <br/> |
+|Kennung:  <br/> |0x35E5  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Nachrichtenspeicher  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der gemeinsamen Ordner anzeigen enthält ein vordefiniertes Satzes von Standardansicht Bezeichner, während der Ansichtordner Bezeichner definiert durch ein messaging-Benutzer enthält. Diese Ordner, die nicht in der Hierarchie zwischen Personen Nachricht (IPM) sichtbar sind, können enthalten viele Ansicht Bezeichner, die jeweils als eine Nachricht gespeichert. Die Client-Anwendung kann wahlweise Zusammenführen von zwei Sätze der Bezeichner und diese beiden zur Verfügung stellen.
   

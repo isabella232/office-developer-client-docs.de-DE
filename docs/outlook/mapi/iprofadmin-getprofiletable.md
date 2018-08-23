@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: cebccd2d-8215-486e-9964-7fc42412cec6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c942bdbf27590dde04b84970e345f265bc645045
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8b1b037cf24c1bb5a0c84da3d59892ab15763f37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792762"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588244"
 ---
 # <a name="iprofadmingetprofiletable"></a>IProfAdmin::GetProfileTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf die Benutzerprofildienst-Tabelle eine Tabelle mit Informationen zu allen verfügbaren Profilen.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Die Profiltabelle wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IProfAdmin::GetProfileTable** -Methode ermöglicht den Zugriff auf die Benutzerprofildienst-Tabelle, die enthält eine Zeile für jedes verfügbaren Profil. Es gibt nur zwei Spalten in jeder Zeile: Anzeigename den Namen des Profils und ein Flag, das angibt, ob das Profil der Standardwert ist. 
   

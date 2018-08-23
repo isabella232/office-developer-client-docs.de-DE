@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: ad6a7dc2-506e-4e22-b2a6-9dd6d0a5dd9f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 31ae5959585742e206da7e1e0d9fb3b231a5be12
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ecba56bc2cbc5c9f4eb31898f76c1d7ee1dfd275
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793683"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591373"
 ---
 # <a name="pidlidnotey-canonical-property"></a>PidLidNoteY (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Abstand in Pixel vom oberen Rand des Bildschirms, in dem eine Benutzeroberfläche für eine Notiz angezeigt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidNoteY  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidNoteY  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Note  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008B05  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |

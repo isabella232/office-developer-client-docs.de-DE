@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: d566ff39-92c1-4a14-85e5-1c406825f805
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a7d62253baaaae7955e722874a15d05ed16e566e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ae2729ec5620b6b408a5c999d4b6ede7143bed2f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792504"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584565"
 ---
 # <a name="imapiviewcontext--iunknown"></a>IMAPIViewContext : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Formular in einer Clientanwendung Formular Viewer verwaltet. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Kontext-Objekte anzeigen  <br/> |
+|Verfügbar gemacht von:  <br/> |Kontext-Objekte anzeigen  <br/> |
 |Implementiert von:  <br/> |Formular-Viewer  <br/> |
 |Aufgerufen von:  <br/> |Formular-Objekte  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIViewContext  <br/> |

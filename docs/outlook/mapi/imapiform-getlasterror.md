@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 81af8a0b-4ec2-459c-8ab2-29d28a8b680f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8b29298ab97518c2e346c2cdc5dee6baec28f8e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a83af0766c907f2868f7d5e116454e648d6f4463
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792126"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583771"
 ---
 # <a name="imapiformgetlasterror"></a>IMAPIForm::GetLastError
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine [MAPIERROR](mapierror.md) -Struktur, die Informationen zu den vorherigen von das Formularobjekt generierten Fehler enthält. 
   
@@ -63,7 +63,7 @@ MAPI_E_BAD_CHARWIDTH
   
 > Entweder die Option MAPI_UNICODE festgelegt wurde und **GetLastError** unterstützt keine Unicode oder Parameter MAPI_UNICODE wurde nicht festgelegt und **GetLastError** nur Unicode unterstützt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIForm::GetLastError** -Methode stellt Informationen zu einem Aufruf der vorherigen-Methode, die nicht zur Verfügung. Anrufer können die Benutzer einschließlich der Daten aus der **MAPIERROR** -Struktur in einem Dialogfeld mit ausführlichen Informationen zu dem Fehler bereitstellen. 
   

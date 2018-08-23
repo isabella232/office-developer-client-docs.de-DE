@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6b82e2ee-992f-4cbe-bdcb-e7465e556640
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 37a6d101f6ee9c04236253e143aff3a51a9208d3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e554a496dd1869dd7c07b315d92a136676e05006
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795083"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590043"
 ---
 # <a name="pidtagscheduleinfoappointmenttombstone-canonical-property"></a>PidTagScheduleInfoAppointmentTombstone (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Datenblöcke, die Besprechungen darstellen, die abgelehnt wurden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_APPT_TOMBSTONE  <br/> |
-|Bezeichner:  <br/> |0x686A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_APPT_TOMBSTONE  <br/> |
+|Kennung:  <br/> |0x686A  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Datenblöcke beginnen mit einer Kopfzeile der 32-Bit-Werte als definiert:
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1351ec3c-984d-4b3e-8009-7c39f18d71a5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 85c14f635872aab2e4c9cc648939bc352cf4a015
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 41c95147a0bc5a62a4f3a103fccaf0751f89c731
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795274"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592807"
 ---
 # <a name="pidtagtypeofx400user-canonical-property"></a>PidTagTypeOfX400User (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält den Typ der Empfänger einer Nachricht für die Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TYPE_OF_MTS_USER  <br/> |
-|Bezeichner:  <br/> |0x0C1C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TYPE_OF_MTS_USER  <br/> |
+|Kennung:  <br/> |0x0C1C  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

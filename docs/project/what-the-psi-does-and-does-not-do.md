@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: eac6be6a-9a20-4bc0-8da2-b2fd93aab04f
 description: Project Server Interface (PSI) kann zum Automatisieren viele serverseitigen Prozessen in lokale Installationen von Project Server 2013 helfen. Aber einige Funktionen erfordern die Verwendung von Microsoft Project Professional 2013.
-ms.openlocfilehash: 0afdcdf43c4748fff42f7b5bc74af6c4b59b0b07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e926e970c5e8dd382370fbe4d7c34c4136502cbf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796317"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588111"
 ---
 # <a name="what-the-psi-does-and-does-not-do"></a>Was die PSI durchführen kann und was nicht
 
@@ -143,7 +143,7 @@ In der folgenden Liste sind die Aufgaben, die PSI weder das CSOM erledigen kann.
 
 - Definieren eine Codemaske für Arbeit des Ressourcenstrukturplans (Projektstrukturplan). 
     
-#### <a name="tasks"></a>Aufgaben
+#### <a name="tasks"></a>Tasks
 
 - Ändern den Aufgabentyp (Feste Arbeit, Dauer und Einheiten).
     
@@ -231,14 +231,10 @@ Für den Projektsammelvorgang sind die PSI-Einschränkungen die gleichen wie fü
   - [PROJ_OPT_TASK_UPDATES_RES](https://msdn.microsoft.com/library/WebSvcProject.ProjectDataSet.ProjectRow.PROJ_OPT_TASK_UPDATES_RES.aspx)
     
 ## <a name="see-also"></a>Siehe auch
-<a name="pj14_WhatPSIDoes_AR"> </a>
 
-- [Was das CSOM durchführen kann und was nicht](what-the-csom-does-and-does-not-do.md)
-    
-- [Project Server-Programmierbarkeit](project-server-programmability.md)
-    
-- [Anspruchsbasierte Remoteauthentifizierung in SharePoint Online](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)
-    
-- [Office-Add-Ins](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)
+- [Was das CSOM durchführen kann und was nicht](what-the-csom-does-and-does-not-do.md)  
+- [Project Server-Programmierbarkeit](project-server-programmability.md)   
+- [Anspruchsbasierte Remoteauthentifizierung in SharePoint Online](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)  
+- [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) 
     
 

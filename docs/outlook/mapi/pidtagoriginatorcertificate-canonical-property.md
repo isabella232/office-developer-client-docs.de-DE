@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 65f890d8-9d25-408e-ab29-89991278b92d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 871ce5f594a75b9441d0434c3be47b2718540576
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 966af9b3b3cbe52031402450be324ab6821d53ac
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794736"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586578"
 ---
 # <a name="pidtagoriginatorcertificate-canonical-property"></a>PidTagOriginatorCertificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein ASN. 1-Zertifikat für den Absender der Nachricht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINATOR_CERTIFICATE  <br/> |
-|Bezeichner:  <br/> |0 x 0022  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINATOR_CERTIFICATE  <br/> |
+|Kennung:  <br/> |0 x 0022  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine Kopie der Absender **PR_USER_CERTIFICATE** ([PidTagUserCertificate](pidtagusercertificate-canonical-property.md))-Eigenschaft.
   

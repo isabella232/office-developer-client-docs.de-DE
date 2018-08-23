@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8c65339e-240c-412d-9b71-69c746468bfb
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bedfc0457b0de8287a4e7bc8bdf8fb57404e4fa8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1d514dc8b50183e5d07d71b421a441487e933580
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795739"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588860"
 ---
 # <a name="tnef-tagged-message-text"></a>TNEF-markierter Nachrichtentext
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Markierte des Nachrichtentexts wird von TNEF zum Anlage Positionen in der übergeordneten Nachricht zu beheben. Dies erfolgt durch ein Platzhalter im Nachrichtentext an der Position der Anlage hinzufügen. Dieser Platzhalter oder ein Attachment-Tag beschreibt die Anlage in einer Weise, dass TNEF weiß, wie Sie das Attachment-Objekt und seine Position auflösen können. Die Tags sind wie folgt formatiert:
   

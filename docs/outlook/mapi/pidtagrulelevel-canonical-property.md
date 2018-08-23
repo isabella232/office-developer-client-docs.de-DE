@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b1a30543-250d-4afb-87f2-448d90ee7cf9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 55627161010996d59cf495845e73515da2a75fcf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fb62c7dac13e422c52e70a223f3942e1b3bf2c78
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795035"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591807"
 ---
 # <a name="pidtagrulelevel-canonical-property"></a>PidTagRuleLevel (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Exit-Ebene einer Regel enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_LEVEL  <br/> |
-|Bezeichner:  <br/> |0x6683  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_LEVEL  <br/> |
+|Kennung:  <br/> |0x6683  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft festlegen, muss der Client 0 x 00000000 übergeben. 
   

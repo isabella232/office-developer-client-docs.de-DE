@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: f9652a6f-5081-4472-830b-9f611bbbb1fa
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2abe14ac60058cd3f56855104ba2340c4c553753
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 15a24a96b7696c757d2d77d4c4ebd6a6d0763dab
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793478"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584268"
 ---
 # <a name="pidlidcontactuserfield1-canonical-property"></a>PidLidContactUserField1 (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt das erste Feld auf den Kontakt, der für verschiedene Zwecke für den Kontakt vorgesehen ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidContactUserField1  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidContactUserField1  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000804F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält Text, der mit einer anderen Kontakt-spezifische Eigenschaft zusammenhängt.
   

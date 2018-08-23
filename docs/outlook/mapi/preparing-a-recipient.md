@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 9573f10c-66e1-4e87-93f0-89687e906b8b
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 51241009262471bf30f7d71e3108b896bbce8df7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: b4ccfb8cf8201a17993932acc4c0104ace80b94d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795306"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588720"
 ---
 # <a name="preparing-a-recipient"></a>Vorbereiten eines Empfängers
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Clientanwendung vorbereitet Empfänger ihre kurzfristige-Eintragsbezeichner in langfristige-Eintragsbezeichner konvertieren und möglicherweise hinzufügen, ändern oder Neuanordnen von Eigenschaften. Sie können die Empfänger an, die sind Bestandteil einer Empfängerliste für eine Nachricht oder Empfänger, die nicht im Zusammenhang mit einer Nachricht sind vorbereiten. In der Regel rufen Clients [IAddrBook::PrepareRecips](iaddrbook-preparerecips.md) direkt um kurzfristige-Eintragsbezeichner in langfristige-Eintragsbezeichner für Empfänger zu übersetzen, die im Dialogfeld allgemeine Adresse enthalten sind. Für den Empfänger an, die eine ausgehende Nachricht zugeordnet sind, wird die Empfänger zur Vorbereitung von Vorgang der Lösung behandelt. 
   

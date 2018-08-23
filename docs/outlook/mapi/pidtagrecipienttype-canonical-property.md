@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 67e31027-6bc2-4a40-9b00-d61baef4ab0f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0218ff558e9dfca2f73bbad2dc42cdb7bd7121fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3ddde5d206eb4be56ce6a7bae77eb00237f12a0f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794940"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584296"
 ---
 # <a name="pidtagrecipienttype-canonical-property"></a>PidTagRecipientType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Empfängertyp für einen Nachrichtenempfänger.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECIPIENT_TYPE  <br/> |
-|Bezeichner:  <br/> |0x0C15  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECIPIENT_TYPE  <br/> |
+|Kennung:  <br/> |0x0C15  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der in dieser Eigenschaft enthaltenen Empfängertyp besteht aus ein erforderlicher Wert und eine optionale Kennzeichnung.
   

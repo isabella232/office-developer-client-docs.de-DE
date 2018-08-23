@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 52fd57a0-9e34-4452-9ecd-2acb454446c9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5cff6ec7b39c26eec098d250688d98bf1e4799ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 06f086b84650c6719c49cabda418f4e2553e4e43
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793460"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589602"
 ---
 # <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn eine Terminserie oder eine Besprechungsanfrage erstellt wird. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptTZDefRecur  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptTZDefRecur  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008260  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Versionen von Microsoft Outlook seit Microsoft Office Outlook 2007 und Lösungen basierend auf Collaboration Data Objects (CDO) 1.2.1 (engl.), die im Kalender von Outlook oder Exchange Server ausgeführt haben aktualisieren Tool verwendet die **DispidApptTZDefRecur** und ** DispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md))-Eigenschaften, um festzustellen, ob die Besprechungsserie angepasst werden soll, wenn die Regeln der Zeitzone ändern. Diese Eigenschaften müssen synchronisiert werden, weil ältere Clients die **DispidTimeZoneStruct** -Eigenschaft immer noch bearbeiten können. Um zu ermitteln, ob die beiden Eigenschaften synchronisiert werden, sollte der **wFlags** Member für die Regel, **die dispidtimezonestruct** entspricht, die TZRULE_FLAG_RECUR_CURRENT_TZREG gekennzeichnet sind. Wenn dieses Flag nicht festgelegt ist, oder es wird festgelegt, und die Regel in der **DispidTimeZoneStruct** -Eigenschaft nicht der markierten Regel entspricht, die **DispidApptTZDefRecur** -Eigenschaft verworfen werden muss und **DispidTimeZoneStruct** stattdessen verwendet werden soll. 
   

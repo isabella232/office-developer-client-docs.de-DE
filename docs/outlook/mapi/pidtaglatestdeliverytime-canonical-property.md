@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 6c2e64bc-786e-4867-a504-46f4d1214337
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0cf25dc5a1182d019ea183f2c0714925f220aeb8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3640ec4471b72dea81d56cc2c462ef145095480f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794556"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590925"
 ---
 # <a name="pidtaglatestdeliverytime-canonical-property"></a>PidTagLatestDeliveryTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das späteste Datum und Uhrzeit, wann ein Message Transfer Agent (MTA) eine Nachricht übermitteln soll. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_LATEST_DELIVERY_TIME  <br/> |
-|Bezeichner:  <br/> |0x0019  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_LATEST_DELIVERY_TIME  <br/> |
+|Kennung:  <br/> |0x0019  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn ein MTA jeweils Zustellungsversuche ist nicht möglich, den diese Eigenschaft gibt an, abbricht die Nachricht ohne Übermittlung. 
   

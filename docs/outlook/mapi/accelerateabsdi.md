@@ -11,17 +11,17 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: da67dcf4-1411-4fc9-992c-115485019bd3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b7d4d758f7031c55aa3a23b662ec8727ea1e0719
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 101e74f3e35e3664dd29e59f166b2f0af6e1dcba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791247"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592038"
 ---
 # <a name="accelerateabsdi"></a>ACCELERATEABSDI
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Callback-Funktion zum Prozess Zugriffstasten in ein Dialogfeld ohne Modus Address Book. 
   
@@ -52,7 +52,7 @@ BOOL (STDMETHODCALLTYPE ACCELERATEABSDI)(
 
 Eine Funktion mit dem Prototyp **ACCELERATEABSDI** gibt TRUE zurück, wenn die Meldung behandelt. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Funktion basierend auf den **ACCELERATEABSDI** Prototyp ist nur mit einem modalen Dialogfeld, d. h., nur verwendet, wenn die Clientanwendung das Flag DIALOG_SDI im _UlFlags_ -Member der [ADRPARM](adrparm.md) -Struktur eingerichtet hat. 
   

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a03df7e-9ce9-4720-8e58-bc7fa61eb932
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2b1398de87e7c08ddfbd6c30eb10ac71fcae3c8f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c1dcbc18a624ec209d86ad46c8ac7a3f16754fa0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793904"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583638"
 ---
 # <a name="pidlidworkaddresspostalcode-canonical-property"></a>PidLidWorkAddressPostalCode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Postleitzahl (PLZ) der Geschäftsadresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidWorkAddressPostalCode  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidWorkAddressPostalCode  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008048  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

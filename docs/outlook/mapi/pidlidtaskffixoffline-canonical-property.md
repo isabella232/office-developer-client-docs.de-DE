@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: bbaf7df4-2de0-4da3-9125-eb24dfa94cd8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b8da927fe0080a83748bbb2941979dcb246222fa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 716d8b5b09ee0e29d1946042cae2631561d74df5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793839"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584653"
 ---
 # <a name="pidlidtaskffixoffline-canonical-property"></a>PidLidTaskFFixOffline (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Genauigkeit der **DispidTaskOwner** ([PidLidTaskOwner](pidlidtaskowner-canonical-property.md))-Eigenschaft an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskFFixOffline  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskFFixOffline  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000812C  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die **DispidTaskFFixOffline** -Eigenschaft auf FALSE festgelegt ist oder nicht festgelegt ist, ist der Wert der Eigenschaft **DispidTaskOwner** korrekt. Wenn **DispidTaskFFixOffline** auf TRUE festgelegt ist, kann der Client einen genauen Wert für **DispidTaskOwner**nicht ermitteln. In diesem Fall kann der Client **DispidTaskOwner** auf einen generischen Besitzername, beispielsweise "Unknown" festgelegt. Wenn ein Client einen **DispidTaskFFixOffline** Wert "true trifft" und den Namen eines Besitzers genau bestimmen kann, sollte der Client jedoch **DispidTaskOwner** aktualisieren und **DispidTaskFFixOffline** auf FALSE festgelegt. 
   

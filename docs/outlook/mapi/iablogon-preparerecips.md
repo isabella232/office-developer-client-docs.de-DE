@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3c1845ea-e291-4855-9afd-51d2c64d7e85
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 82a7ecc8fbad0baf67b49c80c5a62cb8df94dfd1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c42077528a4f7227321d8f987cc5dd0ccd4c966c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791976"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589742"
 ---
 # <a name="iablogonpreparerecips"></a>IABLogon::PrepareRecips
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bereitet eine Empfängerliste zur späteren Verwendung von messaging-System.
   

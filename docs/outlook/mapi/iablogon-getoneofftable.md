@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7ac2a8d4-6890-4346-a6b6-34deca9dab50
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b8a6d74df3749a5445d95ad392f7f88d27190bfc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3732d8cbfaf9a6a10c62eae9e7a12b04de8a80ee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791968"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583680"
 ---
 # <a name="iablogongetoneofftable"></a>IABLogon::GetOneOffTable
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Tabelle mit einmaligen Vorlagen zum Erstellen von Empfängern, die Empfängerliste von ausgehenden Nachrichten hinzugefügt werden soll.
   
@@ -62,7 +62,7 @@ MAPI_E_NO_SUPPORT
   
 > Der Adressbuchanbieter nicht einmal-Vorlagen zur Verfügung.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI-Aufrufen die **GetOneOffTable** -Methode, um die verfügbare einmalige Vorlagen zum Erstellen von Empfängern tätigen. Die Empfängerliste von ausgehenden Nachrichten werden die neuen Empfänger hinzugefügt. Von adressbuchanbietern implementierte sollte Benachrichtigung auf ihre einmaligen Tabelle um MAPI Vorlage Änderungen informieren zu unterstützen. MAPI bleibt die einmalige Tabelle geöffnet, um dynamische Aktualisieren zu aktivieren. 
   

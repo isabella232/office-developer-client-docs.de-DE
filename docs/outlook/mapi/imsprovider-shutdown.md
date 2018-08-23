@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9ca1861d-9bc9-485a-9807-a598b869e5a2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 334ec8dd0c683cf9b765f387281c624b20520098
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 342b87a3a8f0349631e64600e294d4f19ab1099c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792675"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589091"
 ---
 # <a name="imsprovidershutdown"></a>IMSProvider::Shutdown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Schließt einen Anbieter für Nachricht Anmelden in einer bestimmten Reihenfolge.
   
@@ -45,7 +45,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI-Aufrufen die **IMSProvider::Shutdown** -Methode unmittelbar vor der Freigabe des Message-Speicher-Anbieter-Objekts. MAPI-Freigaben für alle Logon-Objekten für einen Anbieter vor dem **Herunterfahren** für diesen Anbieter aufrufen. 
   

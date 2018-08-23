@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 383906b9-4471-456e-9de1-c3d898051627
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 256e6eb76a9155af5f466249d762f16ff32a6e6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 405a8685b325ddf13e60e639aba0625f016ed7bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793949"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591443"
 ---
 # <a name="pidlidyomifirstname-canonical-property"></a>PidLidYomiFirstName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die phonetische Aussprache des angegebenen Namen des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidYomiFirstName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidYomiFirstName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000802C  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

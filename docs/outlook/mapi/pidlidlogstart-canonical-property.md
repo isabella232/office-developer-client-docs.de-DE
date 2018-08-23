@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: b8c0c871-51d8-4752-ad4b-607463a9f837
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 55ba18a1dcbce5e3f7996184dae45a638f9531e5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 359eb4ea4cbbcf6244bf3cca2f3a66b369bce6e0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793657"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586676"
 ---
 # <a name="pidlidlogstart-canonical-property"></a>PidLidLogStart (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt das Startdatum und die Uhrzeit für die Journalnachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLogStart  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLogStart  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Log  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008706  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Zeit in koordinierter Weltzeit (UTC), wenn die Aktivität begann muss die Eigenschaft **DispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) entsprechen.
   

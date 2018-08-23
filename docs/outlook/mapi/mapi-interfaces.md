@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: 34a66cf0-b4e0-4fd5-b937-cd157888961d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e485079de800c63b02d71b3c3ccb90d66101c64b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ca3752e8f7e910994811dec85cc2f1b00e184661
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793015"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584808"
 ---
 # <a name="mapi-interfaces"></a>MAPI-Schnittstellen
 
   
   
-**Gilt für**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Dokumentation für jede Schnittstelle besteht aus einem einleitenden Abschnitt, der eine kurze Beschreibung des Zwecks der Schnittstelle enthält, , gefolgt von einer Tabelle, die die folgenden Informationen enthält.
   

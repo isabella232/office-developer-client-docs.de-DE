@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 93e38f6c-4b67-4f2d-bc94-631efec86852
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7d6ccd64fea0af30e81a2db0bcb9630062b4b64d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9dfc3b3381139b6b7fe47fb369d1cd69ee5e9677
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792305"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587838"
 ---
 # <a name="imapisessionlogoff"></a>IMAPISession::Logoff
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI-Sitzung beendet.
   
@@ -63,7 +63,7 @@ S_OK
   
 > Der Vorgang zum Abmelden war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::Logoff** -Methode wird eine MAPI-Sitzung beendet. Wenn **Abmelden** zurückgegeben wird, kann keine der Methoden außer [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) aufgerufen werden. 
   
@@ -91,7 +91,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPISession: IUnknown](imapisessioniunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Beenden einer MAPI-Sitzung](ending-a-mapi-session.md)
 

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 270f86dd-2c1f-47eb-80f7-9d0d63936d61
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fa23377a8b080ae9dac3e31dfa137ca03a242c74
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 6de805da2aadd8ac40ca984c5f336d5ca7906248
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791501"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590127"
 ---
 # <a name="creating-a-recipient-list"></a>Erstellen einer Empfängerliste
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Empfängerliste ist eine [ADRLIST](adrlist.md) -Struktur, die ein Array der Eigenschaft Wert Strukturen für jeden Empfänger der Nachricht enthält – Ziel für die Nachricht. Ein Empfänger kann ein human Benutzer, einen Computer oder einen Ordner dar. Alle Nachrichten gesendet werden erfordern mindestens einen Empfänger, die durch den Namen Lösung Prozess wurde – ein Prozess zum sicherstellen, dass die Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) Wert Array-Eigenschaft gehören des Empfängers enthalten ist. 
   

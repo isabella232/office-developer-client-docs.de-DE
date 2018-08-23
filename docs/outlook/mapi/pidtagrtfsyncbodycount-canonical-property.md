@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b7267be4-8d5c-4dc7-86b2-651e03e84f9b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 09274c21df3a93abc19aa8158da976e2d16f3e7c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b88c036b3bc9b29962204ea0b90bd460ee1cf90f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795030"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585171"
 ---
 # <a name="pidtagrtfsyncbodycount-canonical-property"></a>PidTagRtfSyncBodyCount (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Anzahl der signifikanten Zeichen des Nachrichtentexts enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_COUNT  <br/> |
-|Bezeichner:  <br/> |0 x 1007  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RTF_SYNC_BODY_COUNT  <br/> |
+|Kennung:  <br/> |0 x 1007  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die [RTFSync](rtfsync.md) -Funktion berechnet die Anzahl der Zeichen im Text nur diejenigen, die sie für die Nachricht erzielt werden hält verwenden. Beispielsweise sind einige Leerzeichen und Sonderzeichen ignoriert die Anzahl der ausgelassen. 
   

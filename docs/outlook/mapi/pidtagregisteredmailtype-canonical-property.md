@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: f75f2a21-a17c-4d8b-9055-c51d4c1888d0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6b68bb078b9b40a857182b224603355a1974a11a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5ceb02fcf94a04b045a8ef387fc87b161a5515a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794931"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583302"
 ---
 # <a name="pidtagregisteredmailtype-canonical-property"></a>PidTagRegisteredMailType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält den Typ der Registrierung für physische Übermittlung einer Nachricht verwendet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REGISTERED_MAIL_TYPE  <br/> |
-|Bezeichner:  <br/> |0x0C16  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REGISTERED_MAIL_TYPE  <br/> |
+|Kennung:  <br/> |0x0C16  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

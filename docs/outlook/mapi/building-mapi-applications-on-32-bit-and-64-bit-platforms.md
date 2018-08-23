@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dce3f4b5bfdcb34148c25c880d8d2d8173755b37
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e4e5986de3cdc4da3ac1e4fa2ec6da95da6e8e44
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791377"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22563576"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>Erstellen von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
 
-**Gilt für**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema werden die Aktionen beschrieben, die MAPI-Entwickler zum Ändern und Neuerstellen von 32-Bit-MAPI-Anwendungen für die Ausführung auf 64-Bit-Plattformen und von 64-Bit-Anwendungen für die Ausführung auf 32-Bit-Plattformen durchführen müssen. In diesem Thema stellt die 64-Bit-Plattform ein Computer mit der 64-Bit-Version von Microsoft Outlook und Windows dar, und die 32-Bit-Plattform ein Computer mit der 32-Bit-Version von Outlook und der 32-Bit- oder 64-Bit-Version von Windows dar. 
   
@@ -36,7 +36,7 @@ Beginnend mit Microsoft Office 2010 steht Outlook als 32-Bit- und 64-Bit-Anwendu
     
 ## <a name="preparing-mapi-applications-for-32-bit-and-64-bit-platforms"></a>Vorbereiten von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
 
-Zu den MAPI-Anwendungen gehören eigenständige Anwendungen wie beispielsweise Microsoft Communicator und MFCMAPI sowie Dienstanbieter wie beispielsweise Adressbuch-, Speicher- und Transportanbieter. Damit MAPI-Methoden und -Funktionsaufrufe in einer MAPI-Anwendung verwendet werden können (mit Ausnahme der einfachen MAPI-Funktion MAPISendMail), muss die Bitanzahl der MAPI-Anwendung der Bitanzahl des MAPI-Subsystems auf dem Computer entsprechen, auf dem die Anwendung ausgeführt werden soll. Die Bitanzahl des MAPI-Subsystems wiederum wird durch die Bitanzahl der installierten Version von Outlook bestimmt und muss dieser immer entsprechen. In der folgenden Tabelle werden die erforderlichen Aktionen zur Vorbereitung von MAPI-Anwendungen für die Ausführung auf Zielcomputern mit Office- und Windows-Versionen mit unterschiedlicher Bitanzahl aufgeführt.
+Zu den MAPI-Anwendungen geh�ren eigenst�ndige Anwendungen wie beispielsweise Microsoft�Communicator und MFCMAPI sowie Dienstanbieter wie beispielsweise Adressbuch-, Speicher- und Transportanbieter. Damit MAPI-Methoden und -Funktionsaufrufe in einer MAPI-Anwendung verwendet werden k�nnen (mit Ausnahme der einfachen MAPI-Funktion MAPISendMail), muss die Bitanzahl der MAPI-Anwendung der Bitanzahl des MAPI-Subsystems auf dem Computer entsprechen, auf dem die Anwendung ausgef�hrt werden soll. Die Bitanzahl des MAPI-Subsystems wiederum wird durch die Bitanzahl der installierten Version von Outlook bestimmt und muss dieser immer entsprechen. In der folgenden Tabelle werden die erforderlichen Aktionen zur Vorbereitung von MAPI-Anwendungen f�r die Ausf�hrung auf Zielcomputern mit Office- und Windows-Versionen mit unterschiedlicher Bitanzahl aufgef�hrt.
   
 |Bitanzahl der MAPI-Anwendung|Bitanzahl der Outlook-Version auf dem Zielcomputer|Bitanzahl der Windows-Version auf dem Zielcomputer|Erforderlichen Aktion, damit die Anwendung auf dem Zielcomputer ausgeführt werden kann|
 |:-----|:-----|:-----|:-----|

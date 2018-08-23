@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: b762f5fb-7c2c-4303-96f7-0b6e657146c9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ce3cd37247f37c4e70adb07769f00b2df07307a3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2de51e1cf0f29c91e39eb3c6dbaab065fd7d5972
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793051"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590526"
 ---
 # <a name="mapi-property-type-overview"></a>Übersicht über Typ von MAPI-Eigenschaft
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eigenschaftentypen sind Konstanten, die von MAPI in der MAPIDEFS definiert. H-Headerdatei, die den zugrunde liegenden Daten eines Eigenschaftswerts anzugeben. Alle Eigenschaften verwenden, ob sie, MAPI, Clientanwendungen oder Dienstanbieter definiert sind, Sie eine der folgenden Typen. 
   

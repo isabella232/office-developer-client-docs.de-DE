@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2cc57464-5b33-4b65-a1bf-abd0ccac209f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9e5bae7f6d64c056dccaf7bac571e10d5b874b7c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7074d539518d017ad6ec00f8c6c362f096728e74
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794433"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586844"
 ---
 # <a name="pidtaghobbies-canonical-property"></a>PidTagHobbies (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Namen der Hobbys der messaging-Benutzer.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOBBIES, PR_HOBBIES_A, PR_HOBBIES_W  <br/> |
-|Bezeichner:  <br/> |0x3A43  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOBBIES, PR_HOBBIES_A, PR_HOBBIES_W  <br/> |
+|Kennung:  <br/> |0x3A43  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften geben Sie Kennung und Zugriff auf Informationen über ein messaging-Benutzer, und der Inhalt wird von der Organisation des Benutzers definiert. 
   

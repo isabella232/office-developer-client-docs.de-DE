@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: e67b0690-a3f4-4523-94a6-c0e4005bcb69
 description: In diesem Abschnitt werden die Schnittstellen in der Konto-Management-API beschrieben.
-ms.openlocfilehash: 5d17250b90efd89e75688ad72337a5cf583c47c0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 884857724622b01eb3d4eef975c27e354b13ff7b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791019"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590177"
 ---
 # <a name="interfaces-account-management-api"></a>Schnittstellen (Konto Management-API)
 
@@ -24,7 +24,7 @@ In diesem Abschnitt werden die Schnittstellen in der Konto-Management-API beschr
 |[IOlkAccountHelper](iolkaccounthelper.md) <br/> |Enthält Hilfsfunktionen in der aktuellen MAPI-Sitzung zum Verwalten von Benutzerkonten.  <br/> |
 |[IOlkAccountManager](iolkaccountmanager.md) <br/> |Verwaltet den Zugriff auf Konten und -Benachrichtigungen bezüglich kontoänderungen richtet.  <br/> |
 |[IOlkAccountNotify](iolkaccountnotify.md) <br/> |Stellt einen Rückruf an dem Client für Änderungen an einem Konto an.  <br/> |
-|[IOlkEnum](iolkenum.md) <br/> |Aufzählen von Konten als [IUnknown](http://msdn.microsoft.com/library/com.iunknown%28Office.15%29.aspx) -Objekte unterstützt.  <br/> |
+|[IOlkEnum](iolkenum.md) <br/> |Aufzählen von Konten als [IUnknown](https://docs.microsoft.com/en-us/windows/desktop/api/unknwn/nn-unknwn-iunknown) -Objekte unterstützt.  <br/> |
 |[IOlkErrorUnknown](iolkerrorunknown.md) <br/> |Zusätzliche Informationen zu den letzten Fehler.  <br/> |
    
 

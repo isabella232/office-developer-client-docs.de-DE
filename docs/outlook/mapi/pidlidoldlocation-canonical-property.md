@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5d31791b-c30d-4a97-b2d3-18cbe0e98792
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 96bfa9df94af8c4b8b7691027ad6de309206f3fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 50cfe5031987fa2a51aef0d02afe94cc46422112
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793703"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585507"
 ---
 # <a name="pidlidoldlocation-canonical-property"></a>PidLidOldLocation (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den ursprünglichen Wert der Eigenschaft **DispidLocation** ([PidLidLocation](pidlidlocation-canonical-property.md)) vor einer Besprechungsanfrage an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidOldLocation  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidOldLocation  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00000028  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist nicht erforderlich.
   

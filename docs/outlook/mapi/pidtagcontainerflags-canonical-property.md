@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 66b8d333-227e-464d-8cf9-cd8a5ff15efb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c13acd1c3b759602a5fbe07c21ca8b784e0fe4d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b62fc62bb9232b7106019fca82f502221e50bad0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794215"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583561"
 ---
 # <a name="pidtagcontainerflags-canonical-property"></a>PidTagContainerFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske der Flags, die ein Adressbuchcontainer Funktionen beschreiben. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAINER_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x3600  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAINER_FLAGS  <br/> |
+|Kennung:  <br/> |0x3600  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Für die Bitmaske kann eine oder mehrere der folgenden Werte festgelegt werden:
   

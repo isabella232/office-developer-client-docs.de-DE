@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: c1cfe71b-01f3-429a-8b4c-73191a2ffea0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b481eaf00b7568da5f02ffa3301e8f2698a98e1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3c6242c9a926341908cb86645a8ea8586a9ca598
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792190"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586354"
 ---
 # <a name="imapiformmgrselectform"></a>IMAPIFormMgr::SelectForm
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt ein Dialogfeld, mit dem den Benutzer ein Formular auswählen an und gibt ein Form-Informationen-Objekt, das dieses Formular beschreibt.
   
@@ -77,7 +77,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::SelectForm** -Methode zum ersten Gegenwart ein Dialogfeld, mit dem den Benutzer ein Formular auswählen, und klicken Sie dann zum Abrufen eines Formulars Informationen-Objekts, die das ausgewählte Formular beschreibt. Das Dialogfeld schränkt des Benutzers ein einzelnes Formular auswählen. 
   

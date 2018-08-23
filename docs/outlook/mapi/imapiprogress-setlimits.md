@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 63c9e316-ee53-4065-8154-449639643ff7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 14abfaadcdb1710a7cb8275c8f82d502aea8300e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 010f69b70324d4280a34d2fe06d670e07d922d86
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792264"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586774"
 ---
 # <a name="imapiprogresssetlimits"></a>IMAPIProgress::SetLimits
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Legt die oberen und unteren Grenzwerten für die Anzahl der Elemente in den Vorgang und die Kennzeichen, die steuern, wie die Statusinformationen für den Vorgang berechnet wird.
   
@@ -90,7 +90,7 @@ Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
 [IMAPIProgress : IUnknown](imapiprogressiunknown.md)
 
 
-[MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
+[MFCMAPI als ein Codebeispiel](mfcmapi-as-a-code-sample.md)
   
 [Anzeigen einer Statusanzeige](how-to-display-a-progress-indicator.md)
   

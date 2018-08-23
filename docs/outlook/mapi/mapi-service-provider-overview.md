@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e7cbc79f-3d60-4f21-a378-7b0088ee8ad3
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 15a53a0bb16db3683e4c1320ac2e54648c8c697b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 14536755c304ede0139b6b1026bb1539a261942f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793081"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586410"
 ---
 # <a name="mapi-service-provider-overview"></a>Übersicht über den MAPI-Anbieter
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zwischen den MAPI-Subsystems und die messaging-Systemen sind die verschiedenen-Dienstanbieter. Dienstanbieter sind wie Treibern, die MAPI-Clientanwendungen mit einem zugrunde liegenden messaging-System eine Verbindung herstellen. Es gibt drei Arten von Anbietern: e-Mail-Anbieter, Adressbuch oder Verzeichnis, und Nachricht Transportanbieter. MAPI unterstützt jede Art von Dienst unabhängig voneinander, aktivieren einen Hersteller, um eine oder mehrere benutzerdefinierte Dienstanbieter anbieten. Beispielsweise könnten ein Hersteller Adressbuch-Dienstanbieter zu erstellen, ein Verzeichnis corporate Telefonbuch der Mitarbeiter verwendet, oder einen Nachrichtenanbieter erstellen, der eine vorhandene Datenbank verwendet wird.
   
@@ -35,5 +35,5 @@ Wenn die Client-Anwendung die Nachricht sendet, der Nachricht Speicheranbieter �
 
 
 
-[MAPI-Features und die Architektur](mapi-features-and-architecture.md)
+[MAPI-Features und -Architektur](mapi-features-and-architecture.md)
 

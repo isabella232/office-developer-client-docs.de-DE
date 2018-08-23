@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4b0f1830-a7d3-430a-9a2c-dad3431af744
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 86d29c0d8630fe674a6ca6116a51ed1465a89e0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 793034cfaa97d24eb293fe403ac002650d888956
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793477"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589994"
 ---
 # <a name="pidlidclassification-canonical-property"></a>PidLidClassification (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Namen des die Nachrichtenklassifikation an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidClassification  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidClassification  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000085B6  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

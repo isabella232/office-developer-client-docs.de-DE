@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ffc71a7-d281-4f17-87ec-4d7ea53be77f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aae3bca0200d9fbc7dc64c339718140fb5ad522f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 265c12daa539a60e4d37951821ca4fb042f57113
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794926"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587236"
 ---
 # <a name="pidtagreferredbyname-canonical-property"></a>PidTagReferredByName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen des e-Mail-Benutzers Weiterleitung an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REFERRED_BY_NAME, PR_REFERRED_BY_NAME_A, PR_REFERRED_BY_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A47  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REFERRED_BY_NAME, PR_REFERRED_BY_NAME_A, PR_REFERRED_BY_NAME_W  <br/> |
+|Kennung:  <br/> |0x3A47  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    

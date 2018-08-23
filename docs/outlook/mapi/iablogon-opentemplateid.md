@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 751c36d3-c39e-4357-a60a-88685a378de0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f2fedd98fe84d7359aebaca8d03a20f392dae2b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a120fb1710bf2bd351d956e4d05eb0af346ef4c5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791980"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583386"
 ---
 # <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Empfänger-Eintrag, der Daten in einer Host-Adressbuchanbieter hat.
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Vorlage-ID in der _LpTemplateID_ -Parameter übergeben wird von der Adressbuchanbieter nicht erkannt. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **OpenTemplateID** -Methode ist nur von adressbuchanbietern implementierte implementiert, die Kontrolle über Kopien der darin enthaltenen Einträge beibehalten werden, die in der Hostanbieter den Containern befinden. Anbieter, **die OpenTemplateID** implementieren, werden als fremden adressbuchanbietern implementierte bezeichnet. Hostanbieter [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) um kopierten Eintrag erstellen oder öffnen Sie den kopierten Eintrag aufrufen und MAPI für den Aufruf von **OpenTemplateID**übergibt. **OpenTemplateID** öffnet den Eintrag und bindet den Code, der mit Daten in Hostanbieter gesteuert. 
   

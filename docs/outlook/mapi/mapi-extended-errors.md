@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b0a9fc55-f4ab-45d8-98cc-b040f9ef6aa4
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 38e9418d5d9559b67bd79536635359ffaa3f724d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5a9499e2a980cbc00eb11c5199bb7329b255c7b2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792968"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592661"
 ---
 # <a name="mapi-extended-errors"></a>Fehler Extended MAPI
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bei der Implementierung von Schnittstellenmethoden k�nnen einfach zur�ckgeben (S_OK) Erfolgs- und (MAPI_E_CALL_FAILED) oder unterscheiden zwischen Fehlerbedingungen, beliebig viele Fehlerwerte f�r die Situation sinnvoll zur�ckgeben. Die meisten Situationen k�nnen einen der Fehlerwerte durch MAPI in der MAPICODE definiert. H-Headerdatei. Jedoch f�r Situationen, die nicht durch einen vordefinierten Wert den Wert fallen MAPI_E_EXTENDED_ERROR verwendet werden kann. MAPI_E_EXTENDED_ERROR gibt den Anrufer, dass weitere Informationen zu dem Fehler verf�gbar ist. Der Aufrufer ruft die zus�tzliche Informationen durch Aufrufen der **GetLastError** -Methode f�r das gleiche Objekt, das MAPI_E_EXTENDED_ERROR zur�ckgegeben. 
   

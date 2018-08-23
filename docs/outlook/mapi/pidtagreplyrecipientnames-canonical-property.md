@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: f5ae6124-3e44-400f-95c2-24b19f3085b5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5abbe14576bec9f03f0b1bf5578b68032f95f8a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fc9a64abefb9a4acaa9a1da396fb27f897f04ec2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794954"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585605"
 ---
 # <a name="pidtagreplyrecipientnames-canonical-property"></a>PidTagReplyRecipientNames (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste von Anzeigenamen für Empfänger, die eine Antwort erhalten.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPLY_RECIPIENT_NAMES, PR_REPLY_RECIPIENT_NAMES_A, PR_REPLY_RECIPIENT_NAMES_W  <br/> |
-|Bezeichner:  <br/> |0x0050  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPLY_RECIPIENT_NAMES, PR_REPLY_RECIPIENT_NAMES_A, PR_REPLY_RECIPIENT_NAMES_W  <br/> |
+|Kennung:  <br/> |0x0050  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften enthalten die angezeigten Namen durch Semikolons voneinander getrennt sind.
   

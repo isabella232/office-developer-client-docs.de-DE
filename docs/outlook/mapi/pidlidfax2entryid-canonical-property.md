@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: c0a67151-769b-4034-a182-3e4a5a86deb0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e944e77fac510d309add32d927c381843b7d86ff
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d320716586bc50c4c666b95335c6dcaa4a083424
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793550"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586060"
 ---
 # <a name="pidlidfax2entryid-canonical-property"></a>PidLidFax2EntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die EntryID des Fax privat-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax2EntryID  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax2EntryID  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080C1  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |

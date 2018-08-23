@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: da9e8fdc-dfc5-4ecc-9f9b-b76921b92d7c
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a73c87f172b4c97379bb9cd117679d3947c188af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f1c27f87cb113ebe30a42211035f6f50475a1be3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792376"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588181"
 ---
 # <a name="imapisupportistoragefromstream"></a>IMAPISupport::IStorageFromStream
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zugriff auf einen Datenstrom ein Speicherobjekt implementiert.
   
@@ -76,7 +76,7 @@ S_OK
   
 > Das Objekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::IStorageFromStream** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **IStorageFromStream** zum Erstellen eines Speicherobjekts für bestimmte Eigenschaften zu öffnen. Dienstanbieter, die ihre eigene Implementierung der Schnittstelle [IStorage](http://msdn.microsoft.com/en-us/library/aa380015%28VS.85%29.aspx) haben, müssen nicht **IStorageFromStream**aufrufen. 
   

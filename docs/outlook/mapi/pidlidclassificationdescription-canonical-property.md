@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e4b85b92-abf7-4e4f-b612-2e20af3c1611
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0f1bf9e2692e60ec3bea053b3321d253694bb0e0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e3f452c234c3050906d3c5c7c29e9ea7715c574e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793480"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590792"
 ---
 # <a name="pidlidclassificationdescription-canonical-property"></a>PidLidClassificationDescription (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt, was die Nachrichtenklassifikation beabsichtigt, um zu erzielen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidClassDesc  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidClassDesc  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000085B7  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Weitere Informationen finden Sie unter [Bereitstellen von Nachrichtenklassifikation für Outlook 2007](http://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
   

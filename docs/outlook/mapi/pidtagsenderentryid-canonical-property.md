@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f311dd2-853e-46f7-966a-c2ab7a1fb6c5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 46ccc3c7e07e6920508fea630c96700d39366a35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f2e8ecba7c92dcbcb719591464e10fb4af2d2344
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795142"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591765"
 ---
 # <a name="pidtagsenderentryid-canonical-property"></a>PidTagSenderEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eintrags-ID des Absenders der Nachricht enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENDER_ENTRYID  <br/> |
-|Bezeichner:  <br/> |0x0C19  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENDER_ENTRYID  <br/> |
+|Kennung:  <br/> |0x0C19  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Absender der Nachricht. Es muss von der ausgehenden Adressbuchhierarchie festgelegt werden nie alle zuvor vorhandenen Werte weitergegeben werden sollen.
   

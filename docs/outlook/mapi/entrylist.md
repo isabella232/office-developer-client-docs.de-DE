@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b2b5d6e6-201b-4ad7-8de2-e40f09165e62
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b44cf25bafb83e9510d254eb29d35306f3e69051
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: df3a872aedcba79613a8f2ca2b970069d372eb07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791630"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582630"
 ---
 # <a name="entrylist"></a>ENTRYLIST
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein Array von Eintragsbezeichner, die dieselbe Implementierung als [SBinaryArray](sbinaryarray.md) -Struktur verwendet MAPI-Objekt darstellt. 
   

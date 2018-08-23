@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 56c406fb-8778-4f85-bbdc-4cabfa140248
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 19c11c4e49eff9156a928dfa3d2a8b51d8873984
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7fae59d23d2d335513cbbddc22638ed623d894b7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794688"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583792"
 ---
 # <a name="pidtagoriginallyintendedrecipientname-canonical-property"></a>PidTagOriginallyIntendedRecipientName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den codierten Namen von der ursprünglich beabsichtigten Empfänger einer Nachricht Autoforwarded.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINALLY_INTENDED_RECIPIENT_NAME  <br/> |
-|Bezeichner:  <br/> |0 x 0020  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINALLY_INTENDED_RECIPIENT_NAME  <br/> |
+|Kennung:  <br/> |0 x 0020  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Server  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **PR_ORIGINALLY_INTENDED_RECIPIENT_NAME** -Eigenschaft muss vom automatische Agent festgelegt werden, die die Nachricht weitergeleitet hat. 
   

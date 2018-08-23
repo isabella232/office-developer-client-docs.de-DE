@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4cbded5d-5aa6-47c5-aa25-416ed9bd3bbe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7e9ba8eb8aee6ffd2e1b867e0df404837a78adcc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 584b358fa8aec473568f5ef63a31124aba367824
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793900"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583141"
 ---
 # <a name="pidlidworkaddresscity-canonical-property"></a>PidLidWorkAddressCity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Stadt oder Ort Teil Geschäftsadresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidWorkAddressCity  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidWorkAddressCity  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008046  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

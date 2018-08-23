@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4eee4382-98c3-4714-8920-8d72edef00b8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fbe7f02555f76532896c951f50648c528c250a58
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e240ec4e7a61b9e7484f467926501f8c5f5a59f8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792013"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592346"
 ---
 # <a name="iaddrbookdetails"></a>IAddrBook::Details
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt ein Dialogfeld, das Details zu einem bestimmten Buch Adresseintrag anzeigt.
   
@@ -101,7 +101,7 @@ S_OK
   
 > Im Dialogfeld Details der wurde erfolgreich für den Adresseintrag Adressbuch angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clientanwendungen rufen Sie die **Details** -Methode, um ein Dialogfeld angezeigt, das Details zu einem bestimmten Eintrag im Adressbuch bereitstellt. Der Parameter _LpfButtonCallback_, _LpvButtonContext_und _LpszButtonText_ können, um das Dialogfeld eine Schaltfläche Client definiert hinzuzufügen. Wenn auf die Schaltfläche geklickt wird, ruft MAPI die Callback-Funktion, die auf den _LpfButtonCallback_, sowohl die Eintrags-ID für die Schaltfläche und die Daten in _LpvButtonContext_übergeben. Wenn Sie eine extensible Schaltfläche nicht erforderlich ist, sollte _LpszButtonText_ NULL sein. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4af8e79a-697e-44a1-8576-fdc57726e9ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a5f950907e2b14cb4101a094715c24b25beb2016
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d58a216a41ff8fe93387ce6d9d1d6aa16f36f224
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791686"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583253"
 ---
 # <a name="filetime"></a>FILETIME
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine nicht signierte 64-Bit-Datums- und Uhrzeitwert für eine Datei. Dieser Wert gibt die Anzahl der Einheiten von 100 Nanosekunden seit dem Start der 1. Januar 1601. 
   
@@ -50,7 +50,7 @@ typedef struct _FILETIME
   
 > Obere 32 Bit der Datei Time-Wert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Eigenschaft vom Typ PT_SYSTIME hat eine **FILETIME** -Struktur für ihren Wert. Eine solche Eigenschaft hat einen **FILETIME** -Datentyp für den **Wert** Member in der Definition in eine [SPropValue](spropvalue.md) -Struktur. 
   

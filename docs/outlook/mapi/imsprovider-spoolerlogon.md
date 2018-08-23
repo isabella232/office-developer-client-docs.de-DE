@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 79d5af23-efad-4013-a330-56babfb2bb0f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: eaf84e1b2a747b313f1534eb66b190d86cf89df9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 56c025713b0cc2b41a4bf4463f48f8d7c3d2124b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792689"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586417"
 ---
 # <a name="imsproviderspoolerlogon"></a>IMSProvider::SpoolerLogon
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die MAPI-Warteschlange an einen Nachrichtenspeicher protokolliert.
   
@@ -124,7 +124,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber der Nachricht Speicheranbieter hat Fehlerinformationen verfügbar. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md). Wenn Sie die Fehlerinformationen vom Anbieter erhalten möchten, rufen Sie die [IMAPISession::GetLastError](imapisession-getlasterror.md) -Methode. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange Ruft die **IMSProvider::SpoolerLogon** -Methode zur Anmeldung bei einem Nachrichtenspeicher. Die MAPI-Warteschlange sollten das Nachricht Store-Objekt von der Nachricht Informationsdienst im _LppMDB_ -Parameter zurückgegeben werden, während und nach der Anmeldung verwenden. 
   

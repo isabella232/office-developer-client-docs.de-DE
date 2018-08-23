@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 611213c9-e758-4366-b193-fc62181d3d1f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8452a6e49059dd0912f1efffef7e749afd6cdf6a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f37d398167e8210a2fd67ff08e63572eb6c9db9c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792981"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585724"
 ---
 # <a name="mapi-form-interfaces"></a>MAPI-Formularoberflächen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI definiert die folgenden Schnittstellen, die sich auf die Formulare beziehen.
   

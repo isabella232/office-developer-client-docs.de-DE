@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 12069912-4b87-4945-9123-51106e0d2d54
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d9f08c13f68c7d3d9f41b9a67ac1888d6c507c34
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4301fb504439cf0ebd70b5ece589c812cb74844e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792324"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585297"
 ---
 # <a name="imapiprovidershutdownqueryfastshutdown"></a>IMAPIProviderShutdown::QueryFastShutdown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Abfragen der MAPI-Anbieter für Schnelles Herunterfahren unterstützen. 
   
@@ -41,7 +41,7 @@ MAPI_E_NO_SUPPORT
   
 > MAPI-Anbieter unterstützt keine den MAPI-Client zum Herunterfahren schnelle.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 MAPI-Anbieter, die keine schnelle Herunterfahren von Clients unterstützen müssen sollten weiterhin die [IMAPIProviderShutdown](imapiprovidershutdowniunknown.md) -Schnittstelle implementieren, und haben die **IMAPIProviderShutdown::QueryFastShutdown** -Methode MAPI_E_NO_SUPPORT zurückgeben. Für Outlook als MAPI-Client bewirkt, dass dieser Outlook warten, dass alle externen Verweise freigegeben werden muss, bevor sie beendet wird. 
   

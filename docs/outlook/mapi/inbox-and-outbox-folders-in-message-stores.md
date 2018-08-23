@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 8e4ce129-137d-4618-80a6-88781a578d01
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2bd71ee4fca53fbf3d309cbaf9d33835b84c0c2d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 6781209cd1bf87f4becf1893b7cba5618549fbce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792684"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582889"
 ---
 # <a name="inbox-and-outbox-folders-in-message-stores"></a>Posteingang und Postausgang-Ordner in Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um Standard-Informationsspeicher, muss ein Anbieter f�r Nachricht anmelden Posteingang zu implementieren und Ordner Postausgang. Sie werden in der Regel in der IPM-Unterstruktur eines Speichers Nachricht gespeichert. Diese Ordner sind spezielle darin, dass sie, dass Nachrichten an und von gesendet werden, aber keine besondere Funktionalit�t Ihnen ist als die Ordner eingesetzt werden. Senden und Empfangen von Nachrichten geschieht �ber definierten Aufrufsequenzen zwischen Clientanwendungen, die MAPI-Warteschlange und die Nachricht Speicheranbieter. Der Ordner Posteingang und Postausgang sind einfach Ordner, die verwendet werden, um Nachrichten zu speichern, w�hrend die Sequenzen aufrufen. Wichtig ist nicht, dass die Ordner sind spezielle oder sogar, dass sie den Posteingang und Postausgang benannt werden. die wichtig ist, dass der Nachricht Speicheranbieter im Rahmen des Supports verwendet zum Senden und Empfangen von Nachrichten.
   

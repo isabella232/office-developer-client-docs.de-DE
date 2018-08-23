@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9b897cbc-90b2-4c60-b5f1-dc78e7e7952d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fc6c12d914e581c3f975e94809f0bdea73020099
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: baf45fa33ca085f51a6f9c20f72ec1fd1545ad79
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795769"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592373"
 ---
 # <a name="uladdref"></a>UlAddRef
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet eine alternative Möglichkeit, die OLE-Methode **IUnknown:: AddRef**aufgerufen werden soll. 
   
@@ -55,7 +55,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
  **UlAddRef** gibt den Wert von der **IUnknown:: AddRef** -Methode zurückgegeben, die der neue Wert für den Referenzzähler für die Schnittstelle ist. Der Wert ist ungleich NULL. 
   

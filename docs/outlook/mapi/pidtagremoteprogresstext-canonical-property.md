@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: b74d4350-4ad6-4c3f-8326-bd28537dfa0f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c4b4093fd51d781b7226e5d6239a5d894ffe1107
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0a9d6bbe6807c2893c1bb208976dae9e695aa125
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794941"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592802"
 ---
 # <a name="pidtagremoteprogresstext-canonical-property"></a>PidTagRemoteProgressText (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft enthält eine Zeichenfolge, die den Status einer remote Übertragungstyp angibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REMOTE_PROGRESS_TEXT, PR_REMOTE_PROGRESS_TEXT_A, PR_REMOTE_PROGRESS_TEXT_W  <br/> |
-|Bezeichner:  <br/> |0x3E0C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REMOTE_PROGRESS_TEXT, PR_REMOTE_PROGRESS_TEXT_A, PR_REMOTE_PROGRESS_TEXT_W  <br/> |
+|Kennung:  <br/> |0x3E0C  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein numerischer Code zugeordnet dieser Text wird in der Eigenschaft **PR_REMOTE_PROGRESS** ([PidTagRemoteProgress](pidtagremoteprogress-canonical-property.md)) übergeben.
   

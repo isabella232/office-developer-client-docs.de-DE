@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2c0e010b-0432-4ef7-a243-3a4b46f0a19d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cb0f8d5077b4851a50ceb8523943ae760a8ee5ce
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c81da7673d6c0c59de6992bc46362069daf71b42
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792721"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592626"
 ---
 # <a name="interaction-of-mapi-providers-and-components"></a>Interaktion von MAPI-Anbietern und Komponenten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI-Dienstanbieter jeglicher Art müssen bestimmte Richtlinien andere MAPI-Komponenten entwickelt. Jeder Dienstanbieter muss:
   

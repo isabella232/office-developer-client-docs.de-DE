@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 25ce90ac-526e-48a0-9edb-bd266375d4f4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 150a0c6eb7efa83f5ff1d12d915351bf5ca9d45a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6613e4168fea6536b1df873da12f2c215be515bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792511"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588503"
 ---
 # <a name="imapiviewcontextactivatenext"></a>IMAPIViewContext::ActivateNext
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Aktiviert die nächste oder vorherige Nachricht in der Anzeigereihenfolge. 
   
@@ -70,7 +70,7 @@ S_FALSE
   
 > Die Nachricht wurde erfolgreich aktiviert, aber ein anderen Typ des Formulars im Prozess geöffnet wurde.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formularobjekte Aufrufen die **IMAPIViewContext::ActivateNext** -Methode zum Ändern, welche Meldung für den Benutzer angezeigt wird. Der im _UlDir_ -Parameter übergebene Wert gibt an, welche Meldung sein sollte aktiviert und in einigen Fällen, warum. Die Flags VCDIR_NEXT und VCDIR_PREVIOUS entsprechen den Benutzer, die Sie den **nächsten** oder **vorherigen** Befehl in einer Ansicht auswählen. Diese Vorgänge entsprechen in der Regel nach oben oder nach unten eine Nachricht in der Liste der Nachrichten der Formular-Viewer verschieben. 
   

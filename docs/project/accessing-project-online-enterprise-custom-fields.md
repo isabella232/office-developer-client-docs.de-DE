@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 25509631-fa14-49d8-b594-cfacf5355c38
 description: 'Project Online ist ein Office 365-Dienst, den geschäftlichen Anforderungen Unternehmen erweitern können. Eine Erweiterung Bereich ist benutzerdefinierte Enterprise-Felder (ECFs). ECFs sind typisierten Wertfelder, die Projekte, Aufgaben und Ressourcen hinzugefügt werden können. In der folgenden Tabelle sind ECFs, die mit Projekten, Ressourcen und Aufgaben zuordnen, und enthält ein Beispiel für einen Wert für eine Instanz dieser ECF:'
-ms.openlocfilehash: d6c8f97ffc887b33e5d81af8e463cf10502845dd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d560b258f2c9873844009cb6bc6e698abec029a6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796175"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584604"
 ---
 # <a name="accessing-project-online-enterprise-custom-fields"></a>Zugriff auf benutzerdefinierte Project Online-Unternehmensfelder
 
@@ -205,7 +205,7 @@ Die Methode wird nicht überprüft, um festzustellen, ob ein Projekt mit einer b
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Project-Entwicklung-Portal](http://dev.office.com/project.aspx)
+- [Project-Entwicklung-Portal](https://developer.microsoft.com/en-us/project)
 - [Übersicht: Benutzerdefinierte Enterprise-Felder und Nachschlagetabellen](https://support.office.com/en-us/article/overview-enterprise-custom-fields-and-lookup-tables-f99db553-0b33-4648-93c0-f6a74637d790?ui=en-us&rs=en-us&ad=us)
 - [Lokale und benutzerdefinierte Enterprise-Felder](https://msdn.microsoft.com/en-us/library/office/ms447495(v=office.14).aspx)
 - [Hinzufügen oder Bearbeiten von benutzerdefinierten Enterprise-Felder in Project Server 2013](https://docs.microsoft.com/en-us/project/add-or-edit-enterprise-custom-fields-in-project-server)

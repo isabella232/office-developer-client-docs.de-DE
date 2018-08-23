@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 413d302b-e973-4cb8-acc9-47da8959881c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 131535f0afafbdb91e7868a6868a6a6a33bc00ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ccbd718c009381046d36d81ea2fee9d8251782be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793539"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593102"
 ---
 # <a name="pidlidfax2displayname-canonical-property"></a>PidLidFax2DisplayName  (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Anzeigenamen des Fax privat-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax2DisplayName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax2DisplayName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080C0  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

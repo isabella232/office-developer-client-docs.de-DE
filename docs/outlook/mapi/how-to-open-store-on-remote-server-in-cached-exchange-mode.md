@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf01eab7-164d-c3b3-8bb0-9281e2119bc5
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 25f896038e25823f1fe49d3cafbd5835a0a43f68
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
+ms.openlocfilehash: 7c1b3d3d5eed6bc991f8e4fd702fa197d610c104
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791878"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584800"
 ---
 # <a name="open-a-store-on-the-remote-server-when-outlook-is-in-cached-exchange-mode"></a>Öffnen Sie einen Speicher auf dem Remoteserver, wenn Outlook im Exchange-Cache-Modus befindet
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält ein Codebeispiel in C++, die zeigt, wie das Flag **MDB_ONLINE** verwenden, um einen Nachrichtenspeicher auf dem Remoteserver zu öffnen, wenn Microsoft Outlook 2010 oder Microsoft Outlook 2013 im Exchange-Cache-Modus befindet. 
   

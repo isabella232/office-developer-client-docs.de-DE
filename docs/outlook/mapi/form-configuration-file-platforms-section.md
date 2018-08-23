@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3b9b3dc0-4f82-468b-8e77-0374c5b196f4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ddc6db2303d9d5f114fdb27b6e15e699a04e73f4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d86edfb6fcc72c5968a8ff5d9cd739e20e5dec43
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791722"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589896"
 ---
 # <a name="form-configuration-file-platforms-section"></a>Abschnitt [Platforms] in der Formularkonfigurationsdatei
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Im Abschnitt **[Plattformen]** der vollständigen Satz von Plattformen, die von diesem Formular aufgelistet. Jeder Eintrag Plattform besteht aus dem Präfix **Plattform.** _Zeichenfolge_in der _Zeichenfolge_ eine beliebige Zeichenfolge Code für die Plattform ist. Jede Zeichenfolge entspricht dem Eintrag **CPU** , der eine einzelne Abschnitte **[Plattformen]** . Jeder Eintrag in einem Abschnitt **[Plattformen]** definiert eine _Plattformzeichenfolge_ , die eine nachfolgende verweist auf **[Plattform.** _Plattformzeichenfolge_ **]** Abschnitt wie hier gezeigt. 
   

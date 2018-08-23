@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 4c327336-4ce0-490d-9016-945305f18b16
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6378eeef770a059150bb1f4b3d82b9c4a312c4c9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 40341f3ed796945157f13a26a8377bc328da1494
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794487"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586907"
 ---
 # <a name="pidtaginternetcodepage-canonical-property"></a>PidTagInternetCodepage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Codepage für **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) oder **PR_BODY_HTML** ([PidTagBodyHtml](pidtagbodyhtml-canonical-property.md)) Eigenschaften an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INTERNET_CPID  <br/> |
-|Bezeichner:  <br/> |0x3FDE  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INTERNET_CPID  <br/> |
+|Kennung:  <br/> |0x3FDE  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    

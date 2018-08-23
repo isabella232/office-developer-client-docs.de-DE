@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c32ee53c-b063-4a00-a6bf-75ce5e07f56a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f2b8f87987f93ec152d4986131a6b7990273c28d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 39d195f3cea6acbd5d5ab80cbba9d041ce9f7137
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793072"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589147"
 ---
 # <a name="mapi-return-value-documentation"></a>MAPI-Rückgabewert Dokumentation
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Der Verweis Einträge in dieser Referenz des Dokuments nur diese Werte zurückgeben, die einige Behandlung von Clientanwendungen erfordern. Rückgabewerte, die allgemeine fehlerbedingungen anzugeben und Mobilgeräts auf eventuelle Fehler abgeleitet werden können, sind nicht in der Dokumentation enthalten. Beispielsweise können viele Schnittstellenmethoden MAPI_E_INVALID_PARAMETER zurück, wenn ein Anrufer gibt den falschen Wert für einen Eingabeparameter an. Dieser Wert wird in der Regel nicht in den erwarteten Rückgabewerte aufgeführt, weil es muss speziell für MAPI_E_INVALID_PARAMETER und müssen nicht anders aus einem anderen Fehler die Verarbeitung. Andererseits, einige Dienstanbieter unterstützen keine Benachrichtigung und MAPI_E_NO_SUPPORT an die Clients über **IMAPISession**vorgenommene **Advise** -Methode zurückgegeben werden. Da Clients müssen explizit für diesen Wert überprüfen und bereitstellen, sollten Code für die Behandlung der Bedingung, die es darstellt es tritt auf, MAPI_E_NO_SUPPORT ist in der Liste der Rückgabewerte für [IMAPISession::Advise](imapisession-advise.md)enthalten.
   

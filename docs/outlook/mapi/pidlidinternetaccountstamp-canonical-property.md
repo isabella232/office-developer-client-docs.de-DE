@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 819179fe-e58e-415c-abc7-1949036745ee
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 49732f30461e05e83c130f9cc24129cc86baa75f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 6edbf4e9c1300a7e2e67b1f4226c8e2d05e453c8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793636"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585220"
 ---
 # <a name="pidlidinternetaccountstamp-canonical-property"></a>PidLidInternetAccountStamp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die e-Mail-Konto-ID, die über die die e-Mail-Nachricht gesendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidInetAcctStamp  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidInetAcctStamp  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008581  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Format dieser Zeichenfolge lautet Implementierung ab. Diese Eigenschaft kann zum Ermitteln des Servers, leiten Sie die Mail-vom Client verwendet werden, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   

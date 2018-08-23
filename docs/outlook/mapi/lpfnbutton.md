@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: cb91ae1d-1ea8-4f02-a1f1-f2a356a71477
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e1f15a5f031f5c5a9568b8a36722eaac011b814c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3b302de68f27e85c67430f82bd3e2c33009600e9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792902"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591352"
 ---
 # <a name="lpfnbutton"></a>LPFNBUTTON
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Rückruffunktion, die MAPI-aufrufen, um ein optional Schaltflächensteuerelement im Dialogfeld Adressbuch eine Adresse zu aktivieren. Diese Schaltfläche ist in der Regel eine Schaltfläche **Details** . 
   

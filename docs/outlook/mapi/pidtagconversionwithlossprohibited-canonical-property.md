@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: a18b560a-e054-45b3-946d-6504465db5b7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: eee70d97c35c7f115e424905b9e36f3dfa392c02
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e5d9261a9f33d77d52cfd6e448e69a2c1e8df415
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794277"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585234"
 ---
 # <a name="pidtagconversionwithlossprohibited-canonical-property"></a>PidTagConversionWithLossProhibited (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Message Transfer Agent (MTA) verboten wird tätigen Nachricht Text Konvertierungen, die Informationen verloren gehen. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONVERSION_WITH_LOSS_PROHIBITED  <br/> |
-|Bezeichner:  <br/> |0x000d  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONVERSION_WITH_LOSS_PROHIBITED  <br/> |
+|Kennung:  <br/> |0x000d  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Beispiel für die Art der Konvertierung wird nicht zulässig ist die "Verlust" Zuordnung von Unicode (zwei Bytes pro Zeichen) in einer Einzel-Byte-Zeichensatz. 
   

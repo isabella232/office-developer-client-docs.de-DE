@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2b6a4c6a-bb71-4ea1-a3b6-90a2722880fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: dcde242f5f2e956d1926d6914431008383f5aa55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0902aeb71ed66381772a808d21d77edb7e0e2da8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792309"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589875"
 ---
 # <a name="imapisessionopenaddressbook"></a>IMAPISession::OpenAddressBook
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet das MAPI-integrierte Adressbuch, einen [IAddrBook](iaddrbookimapiprop.md) Zeiger für den weiteren Zugriff zurückgibt. 
   
@@ -68,7 +68,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber die Container für eine oder mehrere adressbuchanbietern implementierte konnte nicht geöffnet werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISession::OpenAddressBook** -Methode öffnet das integrierte Adressbuch MAPI, eine Auflistung von Container der obersten Ebene aller von der adressbuchanbietern implementierte im Profil. Der Zeiger, der im Parameter _LppAdrBook_ zurückgegeben wird, bietet weitere Zugriff auf den Inhalt des Adressbuchs. Dadurch wird den Anrufer für Aufgaben wie öffnen einzelne Container, messaging Benutzer suchen und Anzeigen von Dialogfeldern für allgemeine Adresse. 
   

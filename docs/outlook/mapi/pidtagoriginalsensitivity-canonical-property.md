@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70a87cf8-2011-4669-90fd-2711c3352e30
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6d461c88e96a3f749595b3e071737107480472aa
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3c921d2c9eee69148713408ec2e2a5510a27011a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794722"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582707"
 ---
 # <a name="pidtagoriginalsensitivity-canonical-property"></a>PidTagOriginalSensitivity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die vom Absender der ersten Version einer Nachricht zugewiesen Vertraulichkeitsstufe d. h., die Nachricht vor dem weitergeleitet oder darauf geantwortet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_SENSITIVITY  <br/> |
-|Bezeichner:  <br/> |0x002E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_SENSITIVITY  <br/> |
+|Kennung:  <br/> |0x002E  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Clientanwendung sollte diese Eigenschaft auf denselben Wert festgelegt wie die **PR_SENSITIVITY** ([PidTagSensitivity](pidtagsensitivity-canonical-property.md))-Eigenschaft, wenn die Nachricht wird gesendet. Es sollte niemals später geändert werden.
   

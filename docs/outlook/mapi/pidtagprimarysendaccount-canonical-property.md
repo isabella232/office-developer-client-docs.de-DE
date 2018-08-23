@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2f268b3b-2e4c-4aea-8879-bdd0ac1df35c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 222ca10e58b50fa06876718658d1a6f3843da2f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a0f4ae75117dff3610175b785ab3f982cc7e7552
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794804"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590407"
 ---
 # <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Zeichenfolge, die den Namen des ersten Servers, der zum Senden der Nachricht verwendet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PRIMARY_SEND_ACCOUNT  <br/> |
-|Bezeichner:  <br/> |0x0E28  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PRIMARY_SEND_ACCOUNT  <br/> |
+|Kennung:  <br/> |0x0E28  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Konto  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Gibt den ersten Server, den ein Client verwenden sollten, um die e-Mail-Nachrichten senden. Das Format dieser Eigenschaften ist die Implementierung ab. Diese Eigenschaften zum Ermitteln des Servers, der e-Mail-Nachrichten über direkte vom Client verwendet werden können, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 276f9fa8-c333-4381-b20f-22fe9d2f27cd
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a7b603504956be9ec3066e5ff5e1d5db7d59852a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 00d1063310aaf1a8948e04d725d7e11418cf986c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791584"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592423"
 ---
 # <a name="displaying-the-common-address-dialog-box"></a>Anzeigen des Standarddialogfelds für Adressen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI-Adresse im allgemeinen Dialogfeld kann für eine Vielzahl von Adressierung Aufgaben wie das Erstellen einer Empfängerliste verwendet werden. Rufen Sie **IAddrBook::Address**, um das Dialogfeld anzuzeigen. Je nachdem, welches der viele Parameter, die Sie festlegen und wie Sie festlegen, können Sie die Anzeige von einem bestimmten Container den Einträgen eines bestimmten Typs einschränken.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 2cf1f651-31dd-4f92-8c23-cc83e1989bc2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 91f027176fc3dac35cb951e2ae7a109c5044cb08
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e770939f00896d8ec12ce990811c444f2a25f244
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794176"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593487"
 ---
 # <a name="pidtagcartelephonenumber-canonical-property"></a>PidTagCarTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Autotelefonnummer des Empfängers enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CAR_TELEPHONE_NUMBER, PR_CAR_TELEPHONE_NUMBER_A, PR_CAR_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A1E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CAR_TELEPHONE_NUMBER, PR_CAR_TELEPHONE_NUMBER_A, PR_CAR_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A1E  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: b465d015-9b62-4986-b0df-118121f60602
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a8f17c3cf3d3d00930f87acd004b24f683a3fc8c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 371d0305f8f00e66704bae03f93857c7275b6a10
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791694"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589819"
 ---
 # <a name="flatentrylist"></a>FLATENTRYLIST
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Array von [FLATENTRY](flatentry.md) -Strukturen. 
   
@@ -54,7 +54,7 @@ typedef struct
   
 > Byte-Array, das ein oder mehrere **FLATENTRY** Strukturen enthält angeordnete Ende zu Ende. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Im Array **AbEntries** wird jede **FLATENTRY** Struktur auf einer vertrauten ausgerichtete Grenze ausgerichtet. Zusätzliche Bytes sind als Abstand, stellen Sie sicher, dass natürlichen Ausrichtung alle zweier **FLATENTRY** Strukturen enthalten. Die erste **FLATENTRY** Struktur im Array ist immer ordnungsgemäß ausgerichtet werden, da der Versatz des Elements **AbEntries** 8 ist. Berechnen Sie den Offset der nächsten Struktur, verwenden Sie die Größe des ersten Eintrags aufgerundet auf das nächste Vielfache von 4. Verwenden Sie das Makro [CbFLATENTRY](cbflatentry.md) , um die Größe einer **FLATENTRY** -Struktur zu berechnen. 
   

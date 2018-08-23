@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 709e701f-b24e-4cd5-8c55-3f9e67f67a4a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6182c9dfc0c4de24bd587e626fe74d02ed23968b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2a097b8e8071c08b82a05f3c8e0b021db8ec5107
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793479"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585395"
 ---
 # <a name="pidlidcontacts-canonical-property"></a>PidLidContacts (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Namen der Kontakte, die mit dem Element verknüpft ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidContacts  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidContacts  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000853A  <br/> |
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft enthält die **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))-Eigenschaft der einzelnen Adressbuch **EntryID** , die den Wert der Eigenschaft **DispidContactLinkEntry** ([PidLidContactLinkEntry](pidlidcontactlinkentry-canonical-property.md)) verwiesen wird. Es kann keine Verweise in **DispidContactLinkEntry**enthalten.
   

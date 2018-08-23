@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d4f153b2-939f-4153-85fb-dc510193848c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 21ea5faaccb81e763d6d062b6ff567db509d9d35
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a2837e5470729ae3cdd0b83e17d0342620c986e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792418"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592115"
 ---
 # <a name="imapisupportspoolernotify"></a>IMAPISupport::SpoolerNotify
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benachrichtigt die MAPI-Warteschlange von einer Änderung im Status oder eine Anforderung für den Dienst an. 
   
@@ -88,7 +88,7 @@ S_OK
   
 > Die Benachrichtigung war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::SpoolerNotify** -Methode wird für die Nachricht implementiert speichern und transport-Provider Unterstützungsobjekte. Diese Anbieter rufen Sie **SpoolerNotify** , um die MAPI-Warteschlange von einer Änderung im Status oder eine Anforderung für den Dienst zu benachrichtigen. **SpoolerNotify** wird hauptsächlich von Transportanbieter aufgerufen und können jederzeit während der Sitzung aufgerufen werden. 
   

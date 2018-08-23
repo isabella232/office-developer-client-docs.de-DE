@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: 419e2c6d-ac3b-46c6-9a12-33f51f6d7f12
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8b7a93a9abb9a1c589ac7fdab3723c9c924eea0d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b8c70c8b13025f196fdebb2956939bec840a96f5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795552"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583939"
 ---
 # <a name="sizedsrowset"></a>SizedSRowSet
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine benannte [SRowSet](srowset.md) -Struktur, die eine angegebene Anzahl von Zeilen enthält. 
   
@@ -44,7 +44,7 @@ __Namen_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um die neue Struktur verwenden, die als Zeiger auf eine **SRowSet** -Struktur aus dem Makro **SizedSRowSet** erzeugt, führen Sie die folgende Umwandlung: 
   

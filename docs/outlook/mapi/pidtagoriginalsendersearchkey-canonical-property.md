@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 164eb9dd-e553-459e-99c1-3da0284bb01f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2aa0a8601a72b6d4c40167ac55d3d643bf946708
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d4a49af0585058c2203807bf091c34808376a7dc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794704"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591744"
 ---
 # <a name="pidtagoriginalsendersearchkey-canonical-property"></a>PidTagOriginalSenderSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Search-Schlüssel für den Absender der ersten Version einer Nachricht, d. h., die Nachricht vor dem weitergeleitet oder darauf geantwortet wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ORIGINAL_SENDER_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x005C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ORIGINAL_SENDER_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x005C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den ursprünglichen Absender einer Nachricht. Am ersten Übermittlung der Nachricht sollte die Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_SENDER_SEARCH_KEY** ([PidTagSenderSearchKey](pidtagsendersearchkey-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   

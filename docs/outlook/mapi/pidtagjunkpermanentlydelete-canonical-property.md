@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 5f06ad00-7205-48d8-a9ff-f5c6b5e38c5e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7ca24cc0db307715f71be1c030d200c9ca973360
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9265aab47bdc78fb74fa2652ab4a7b60ea275d7a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794527"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587446"
 ---
 # <a name="pidtagjunkpermanentlydelete-canonical-property"></a>PidTagJunkPermanentlyDelete (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, wenn 1, mit der Nachrichten festgelegt ist, identifiziert, als Spam endgültig gelöscht werden kann.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_JUNK_PERMANENTLY_DELETE  <br/> |
-|Bezeichner:  <br/> |0x6102  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_JUNK_PERMANENTLY_DELETE  <br/> |
+|Kennung:  <br/> |0x6102  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    

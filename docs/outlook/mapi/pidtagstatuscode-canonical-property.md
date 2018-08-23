@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: e29190c5-52c3-4ef7-98db-699487c54325
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: efd0dcc8fc01fa433cbbf30936244e4818f8b14a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a60bc55686e883cabd144af3a9badfb55f835472
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795207"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593123"
 ---
 # <a name="pidtagstatuscode-canonical-property"></a>PidTagStatusCode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske der Flags, die den aktuellen Status einer Sitzung Ressource angeben. Alle-Dienstanbieter festzulegen Statuscodes, wie MAPI, um den Bericht über den Status des Teilsystems, die MAPI-Warteschlange und das integrierte-Adressbuch.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_STATUS_CODE  <br/> |
-|Bezeichner:  <br/> |0x3E04  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_STATUS_CODE  <br/> |
+|Kennung:  <br/> |0x3E04  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Statuscode muss für alle Anbieter in der Datei "Mapisvc.inf" angezeigt werden. 
   

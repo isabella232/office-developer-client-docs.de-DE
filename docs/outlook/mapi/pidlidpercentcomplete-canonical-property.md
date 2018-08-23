@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: e63792b1-9580-4702-a6d7-dd3ae5007a4a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f4675362de1e9efe4ef16285723cddeface9c403
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cf4edcc22deafe47fccb4fa44782b33aa18b8cec
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793714"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587180"
 ---
 # <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass der Fortschritt der Benutzer für einen Vorgang vorgenommen hat. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidPercentComplete  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidPercentComplete  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008102  <br/> |
 |Datentyp:  <br/> |PT_R8  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss eine Zahl größer oder gleich 0,0 und kleiner als oder gleich 1,0, in dem 1.0 gibt an, dass Arbeit abgeschlossen ist und 0,0 gibt an, dass Arbeit nicht begonnen hat.
   

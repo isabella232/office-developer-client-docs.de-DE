@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5ca500c3-c737-45a5-b0fc-473b75c1d68d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1f3a876269868c30df48e0a0b62036cfdc199955
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3e758acfa1cf0c11be666dd730d9bf589d2e9d77
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792172"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586214"
 ---
 # <a name="imapiformmgrloadform"></a>IMAPIFormMgr::LoadForm
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Startet ein Formular, um eine vorhandene Nachricht zu öffnen.
   
@@ -111,7 +111,7 @@ MAPI_E_NOT_FOUND
   
 > Die Nachrichtenklasse übergebenen _LpszMessageClass_ stimmt nicht mit die Nachrichtenklasse für jedes Formular in der Formularbibliothek überein. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIFormMgr::LoadForm** -Methode zum Öffnen eines Formulars für eine vorhandene Nachricht. **LoadForm** Öffnet das Form-Objekt, wird die Nachricht in das Form-Objekt geladen, richtet die entsprechenden Ansichtskontext bei Bedarf und die angeforderte Schnittstelle für das Form-Objekt zurückgibt. 
   

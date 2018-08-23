@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 9755c342-87ba-47bb-9970-91f7eb796b4d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 45afcbc05aab5fae00b51708e1aae6bc21e91b36
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: de5204ee6c1a7c22b730a1063ca90dfa9b47c4f5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794436"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582448"
 ---
 # <a name="pidtaghome2telephonenumber-canonical-property"></a>PidTagHome2TelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine zweite Rufnummer zu Hause des Empfängers an. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOME2_TELEPHONE_NUMBER, PR_HOME2_TELEPHONE_NUMBER_A, PR_HOME2_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A2F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOME2_TELEPHONE_NUMBER, PR_HOME2_TELEPHONE_NUMBER_A, PR_HOME2_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A2F  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert. 
   

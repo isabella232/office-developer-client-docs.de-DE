@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b25c9288-b391-6303-3643-5a5b66b75c48
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 69853dbec46b08c4dc402012fb7f1074f30ebf52
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 78ae0f78e154c17f774817238b2083d98a8fb809
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792699"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584681"
 ---
 # <a name="iostxgetlasterror"></a>IOSTX::GetLastError
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft Informationen über den letzten Fehler erweitert.
   

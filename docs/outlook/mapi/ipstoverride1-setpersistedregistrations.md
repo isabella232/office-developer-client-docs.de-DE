@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: 5f4b62db-a759-41a2-9bea-29fc04b2962b
 description: 'Zuletzt geändert: 08 November 2011'
-ms.openlocfilehash: 9895c558af94eebebe2dacdb6f9bf674e3de6263
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3592584a08bf14725c0289831740e91fb8f1a5b2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792810"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587621"
 ---
 # <a name="ipstoverride1setpersistedregistrations"></a>IPSTOVERRIDE1::SetPersistedRegistrations
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert persönlichen Ordner (PST)-Dateien für die automatische Entsperren Weitere Anrufe an die HrTrustedPSTOverrideHandlerCallback zu vermeiden.
   
@@ -50,7 +50,7 @@ S_OK
   
 > Der Funktionsaufruf war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Beibehaltene Registrierungen können die Leistung der Anwendung, wie Outlook und Windows-Desktopsuche beeinträchtigen, die PST-Dateien öffnen. Berücksichtigen Sie die Auswirkung auf die Leistung bei der Verwendung oder die Verwendung der permanenten Registrierungen erweitern.
   

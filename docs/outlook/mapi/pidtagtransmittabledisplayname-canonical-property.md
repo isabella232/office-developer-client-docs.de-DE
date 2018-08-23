@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: aadd9086-b936-4067-bf7d-f54fc50e3c83
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 96eaf6c3f9ddc9d4bf6bc16ddc28a6f38bc311f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cc2704b69994cb80b15de82edad6c65423c6b5a6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795257"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591849"
 ---
 # <a name="pidtagtransmittabledisplayname-canonical-property"></a>PidTagTransmittableDisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen eines Empfängers Anzeige in einem sicheren Formular, das nicht geändert werden kann.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TRANSMITABLE_DISPLAY_NAME, PR_TRANSMITABLE_DISPLAY_NAME_A, PR_TRANSMITABLE_DISPLAY_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A20  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TRANSMITABLE_DISPLAY_NAME, PR_TRANSMITABLE_DISPLAY_NAME_A, PR_TRANSMITABLE_DISPLAY_NAME_W  <br/> |
+|Kennung:  <br/> |0x3A20  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sollte von allen adressbuchanbietern implementierte implementiert werden. Sie enthalten die Version der Anzeigename den Namen des Empfängers, der mit der Meldung übertragen wird. Für die meisten adressbuchanbietern implementierte müssen diese Eigenschaften denselben Wert wie die Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)). Anbieter, die nicht über einen sicheren Anzeigenamen PT_ERROR und MAPI-Änderungen der angezeigte Name zurückgegeben, durch den Namen in Anführungszeichen hinzufügen verfügen.
   

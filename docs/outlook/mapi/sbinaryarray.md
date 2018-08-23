@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2d5b7302-cad2-4522-beb1-7c6c711f42e6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fd9a8d731d141dbb71a204a2d20b268951bef42f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e601a59a68a3a7d248165d4e573c5abc34d27e2a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795425"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586466"
 ---
 # <a name="sbinaryarray"></a>SBinaryArray
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Array von binären Werten. 
   
@@ -50,7 +50,7 @@ typedef struct _SBinaryArray
   
 > Zeiger auf ein Array von [SBinary](sbinary.md) -Strukturen, die binäre Werte enthält. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur **SBinaryArray** wird verwendet, um Eigenschaften vom Typ PT_MV_BINARY beschreiben. 
   

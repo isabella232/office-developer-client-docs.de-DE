@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: ca2bbfab-6f4f-4a9a-b3ef-61d7c41e4767
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ca12d7384589549156d0b96248e321ca212f0faf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9c3260e51d9a52de13a187110eb50334c601fc86
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794383"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593403"
 ---
 # <a name="pidtagformclassid-canonical-property"></a>PidTagFormClassId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den 128-Bit-Object Linking and Embedding (OLE) global eindeutigen Bezeichner (GUID) eines Formulars an. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FORM_CLSID  <br/> |
-|Bezeichner:  <br/> |0x3302  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FORM_CLSID  <br/> |
+|Kennung:  <br/> |0x3302  <br/> |
 |Datentyp:  <br/> |PT_CLSID  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die [MAPIUID](mapiuid.md) -Datenstruktur enthält die Definition des eindeutigen Bezeichners. 
   

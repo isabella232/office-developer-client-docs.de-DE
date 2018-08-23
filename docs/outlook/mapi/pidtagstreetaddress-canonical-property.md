@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 41262e7a-5f5f-4830-b80c-f1be3e9a3276
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 39a83868548990ec89bdb9e8cf0733a822650a42
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dd4f2f26d92207954f823b03d804e8bbda5e7144
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795224"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591968"
 ---
 # <a name="pidtagstreetaddress-canonical-property"></a>PidTagStreetAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Straße des Empfängers an. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_STREET_ADDRESS, PR_STREET_ADDRESS_A, PR_STREET_ADDRESS_W, PR_BUSINESS_ADDRESS_STREET, PR_BUSINESS_ADDRESS_STREET_A, PR_BUSINESS_ADDRESS_STREET_W  <br/> |
-|Bezeichner:  <br/> |0x3A29  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_STREET_ADDRESS, PR_STREET_ADDRESS_A, PR_STREET_ADDRESS_W, PR_BUSINESS_ADDRESS_STREET, PR_BUSINESS_ADDRESS_STREET_A, PR_BUSINESS_ADDRESS_STREET_W  <br/> |
+|Kennung:  <br/> |0x3A29  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

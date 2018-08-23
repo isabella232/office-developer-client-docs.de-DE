@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 183d3b86-4506-44da-bbfc-d6242ad89e57
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 26c329323eebff6cfdf4f4be4dffe9a62f8745e6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a2f9d1623c3733292ebf5c65452ac0d65f577c4d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791834"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592717"
 ---
 # <a name="add-a-definition-for-a-new-user-defined-field"></a>Fügen Sie eine Definition für ein neues benutzerdefiniertes Feld hinzu
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Wenn Sie ein benutzerdefiniertes Feld mit einem Microsoft Outlook-Element hinzufügen, fügen Sie eine Definition für ein Feld in der entsprechenden [PropertyDefinition](propertydefinition-stream-structure.md) Stream-Struktur. Verwenden Sie das folgende Verfahren so eine PropertyDefinition Stream-Struktur einer neuen Definition für ein Feld hinzu. 
   

@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5ada6363-2406-4c0a-8326-a299a8bbefe1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b5902c25197c2ae5790e654a8f29227e107b4a72
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 85cfd219eb83592a4e01263caf5d6923db39e0cc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793289"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583785"
 ---
 # <a name="nstserviceentry"></a>NSTServiceEntry
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Nachricht Service Entry Point-Funktion für MAPI-Speicheranbieter umfließt einen PST-basierten lokalen Speicher als NST Speicher. 
   
@@ -53,7 +53,7 @@ HRESULT NSTServiceEntry(
 
 Informationen zu Rückgabewerte finden Sie unter **[MSGSERVICEENTRY](msgserviceentry.md)**. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn **[GetProcAddress](http://msdn.microsoft.com/en-us/library/ms683212.aspx)** für die Adresse des dieser Funktion in msmapi32.dll suchen, geben Sie "NSTServiceEntry" als den Namen der Prozedur. 
   

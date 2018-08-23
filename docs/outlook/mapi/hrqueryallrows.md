@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b08fadcf-cdf3-48b7-9489-d7f745266482
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5c62e5919c6e605aa4b60f48072996ed1fd4c355
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c165bcaedfc3dbab0c950d0674228b15dfeee958
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791940"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592276"
 ---
 # <a name="hrqueryallrows"></a>HrQueryAllRows
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft alle Zeilen einer Tabelle ab. 
   
@@ -80,7 +80,7 @@ KEINE
   
 > Die Anzahl der Zeilen in der Tabelle ist größer als die Anzahl für den _CrowsMax_ -Parameter übergeben. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Clientanwendung oder Dienstanbieter hat keine Kontrolle über die Anzahl der Zeilen, die **HrQueryAllRows** versucht, abrufen, außer durch die Festlegung einer Einschränkung mit durch den Parameter _Pres_ gezeigt. Der Parameter _CrowsMax_ schränkt nicht das Abrufen auf eine bestimmte Anzahl von Zeilen der Tabelle, aber vielmehr definiert eine maximale Größe des Arbeitsspeichers zur Verfügung, die alle abgerufene Zeilen enthalten soll. Der einzige Schutz gegen Speicher Überlauf ist die stetig Funktion _CrowsMax_festlegen. Die Rendite der Fehler, die bedeutet, die Tabelle dass enthält zu viele Zeilen, die alle gleichzeitig im Speicher aufbewahrt werden. 
   

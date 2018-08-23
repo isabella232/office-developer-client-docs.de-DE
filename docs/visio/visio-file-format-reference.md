@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 38aedff8-e7b5-0758-c573-0ffa6a244c9c
 description: Diese Referenz enthält eine konzeptionelle Übersicht und Referenzthemen, einschließlich Beispiele, um bei der Entwicklung von Lösungen mit dem Visio-Dateiformat.
-ms.openlocfilehash: e79ee31ed4ffb0096baa72eccda10b99a17390a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0f5147e70febc0883f0de0dbd23eb5a7f6f1660d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798397"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593431"
 ---
 # <a name="visio-file-format-reference"></a>Visio-Dateiformatreferenz
 
@@ -22,7 +22,7 @@ Wir freuen uns Ihre Kommentare oder Fragen zu dieser Inhalt. Sie können an [doc
   
  **Initial Publikation**: Oktober 2012 | **Aktualisiert**: März 2013
   
-In dieser Dokumentation werden die folgenden Informationen bereitgestellt:
+Diese Dokumentation enthält die folgenden Informationen:
   
 - [Einführung in das Visio-Dateiformat (.vsdx)](introduction-to-the-visio-file-formatvsdx.md)
     
@@ -36,14 +36,10 @@ In dieser Dokumentation werden die folgenden Informationen bereitgestellt:
     
 ## <a name="see-also"></a>Siehe auch
 
-- [Visio für Entwickler](http://msdn.microsoft.com/en-us/office/aa905478.aspx)
-    
-- [Accessibility in Microsoft Products (Barrierefreiheit in Microsoft-Produkten, in englischer Sprache)](http://www.microsoft.com/enable/products/default.aspx)
-    
-- [Konventionen für Office Developer-Dokumente](http://msdn.microsoft.com/en-us/office/aa905365.aspx)
-    
+- [Visio für Entwickler](http://msdn.microsoft.com/en-us/office/aa905478.aspx) 
+- [Barrierefreiheit in Microsoft-Produkten](http://www.microsoft.com/enable/products/default.aspx)
+- [Konventionen in diesem Dokument](http://msdn.microsoft.com/en-us/office/aa905365.aspx) 
 - [Visio SDK copyright-Hinweis](visio-sdk-copyright-notice.md)
-    
-- [Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft](http://privacy.microsoft.com/en-us/default.mspx)
+
     
 

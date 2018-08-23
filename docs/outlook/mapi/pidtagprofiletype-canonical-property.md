@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9cc1a1fa-62a7-411b-9b2b-c49d24a38a61
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8f490223e56798b962232f0cf2bb4c585ce47c77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f87ac0be4d4fcbb1c1a3dd9d407de5461eb556bb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794837"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584275"
 ---
 # <a name="pidtagprofiletype-canonical-property"></a>PidTagProfileType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Typ des Informationsspeichers.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PROFILE_TYPE  <br/> |
-|Bezeichner:  <br/> |0x660A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PROFILE_TYPE  <br/> |
+|Kennung:  <br/> |0x660A  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Profil-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die möglichen Werte für diese Eigenschaft sind:
   

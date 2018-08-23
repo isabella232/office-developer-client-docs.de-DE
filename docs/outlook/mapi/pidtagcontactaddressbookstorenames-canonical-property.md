@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: d1c3b6d9-75aa-4bc2-9a10-4b9664a8d42e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0637e1a974f9a380cbc91b0a5ecaa9a1ada42ef3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 395803d48082cc53ffd89d18c3a82110e6d9aa62
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794183"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585248"
 ---
 # <a name="pidtagcontactaddressbookstorenames-canonical-property"></a>PidTagContactAddressBookStoreNames (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Anzeigenamen der Speicher des Adressbuchs zugeordnet.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CONTAB_STORE_NAMES, PR_CONTAB_STORE_NAMES_A, PR_CONTAB_STORE_NAMES_W  <br/> |
-|Bezeichner:  <br/> |0x6622  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CONTAB_STORE_NAMES, PR_CONTAB_STORE_NAMES_A, PR_CONTAB_STORE_NAMES_W  <br/> |
+|Kennung:  <br/> |0x6622  <br/> |
 |Datentyp:  <br/> |PT_MV_UNICODE PT_MV_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind für einen Kontakt Adressbuch Profil.
   

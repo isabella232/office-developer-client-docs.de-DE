@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9d4b8f5f-1789-497c-8010-f83da9ba5966
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7ff0bb5ec1eb56724bee7be7dec13f0474711083
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7fd41f46adf9b7d9aa3b48779b03cd6936a5fb5f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793673"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583134"
 ---
 # <a name="pidlidnotecolor-canonical-property"></a>PidLidNoteColor (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die vorgeschlagenen Hintergrundfarbe der Notiz. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidNoteColor  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidNoteColor  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Note  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008B00  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kurznotizen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft muss einer der Einträge in der folgenden Tabelle werden:
   

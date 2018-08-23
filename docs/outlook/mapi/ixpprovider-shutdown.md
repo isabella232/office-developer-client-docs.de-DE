@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e2d8a025-c2a3-4edb-b6e4-022e07e854dd
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f5d253d0306e55699fbe5b9c9decf8c3242867fd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2d9a58ff05bb0da07762b9eafddef7303e8b9bc5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792887"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592605"
 ---
 # <a name="ixpprovidershutdown"></a>IXPProvider::Shutdown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 In einer bestimmten Reihenfolge eines Transportdienstes wird geschlossen.
   
@@ -45,7 +45,7 @@ S_OK
   
 > Der Anruf in der Adressbuchhierarchie heruntergefahren war erfolgreich.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange Ruft die **IXPProvider::Shutdown** -Methode unmittelbar vor der Freigabe ein Transport-Anbieter-Objekts. Vor dem **Herunterfahren**aufrufen, gibt MAPI alle Logon-Objekten für einen Anbieter frei.
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 500f60ed-fdec-4d70-8cf5-664c46643956
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a187245b2594282bc9908b3075852440f418af2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 769ae984e4b6e8610ca7909ea2ac714d9d04d698
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791629"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589672"
 ---
 # <a name="dtpage"></a>DTPAGE
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt das Dialogfeld, die aus einer Tabelle anzeigen von der Funktion [BuildDisplayTable](builddisplaytable.md) erstellt wird. 
   
@@ -68,7 +68,7 @@ typedef struct DTPAGE
   
 > Zeiger auf ein Array von [DTCTL](dtctl.md) -Strukturen, einen für jedes Steuerelements auf der Seite. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Legen Sie die Hilfedatei für die Seite um zu ermitteln, **LpszComponent** Mitglieds eine hartcodierte Zeichenfolge oder der **UlItemID** Member zu einem ganzzahligen Ressourcenbezeichner. 
   

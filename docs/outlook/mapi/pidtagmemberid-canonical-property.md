@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 64faef3c-27b2-49d2-9d0c-8b9d33f1cb71
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ce6925f40e09261494e4edbcbd7314728debbe2b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: caf1cb2e16c298af452e638631293379fdd68b10
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794608"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589784"
 ---
 # <a name="pidtagmemberid-canonical-property"></a>PidTagMemberId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die ID eines Elements Tabelle, das die beschriebenen Rechte auf einem Microsoft Exchange Server-Ordner oder einem Postfach verfügt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_MEMBER_ID  <br/> |
-|Bezeichner:  <br/> |0x6671  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_MEMBER_ID  <br/> |
+|Kennung:  <br/> |0x6671  <br/> |
 |Datentyp:  <br/> |PT_I8  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt einen Bezeichner in der Tabelle eindeutig. Eine Directory-Benutzer-ID jedes Element-ID zugeordnet ist und von dieser Eigenschaft angegeben ist. Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, die Directory Eintrags-ID eines Elements mit expliziten Berechtigungen für einen Ordner abrufen. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 42015740-a94f-4628-bf32-b7fc2fdb9ff6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9bc77e3226066dc88bbaf4f4efc324825add8919
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 655d48d1ea937659f85e0ef7379425759ea7e256
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795593"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591359"
 ---
 # <a name="smtp-addresses"></a>SMTP-Adressen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Das Format der SMTP-e-Mail-Adressen ist in RFC 822 definiert. MAPI-Komponenten sollte eine beliebige Adresse behandeln, die mit diesem Standard entspricht. Es ist jedoch eine bestimmte Form des RFC 822-Adresse, die am besten MAPI-Adressen codiert:
   

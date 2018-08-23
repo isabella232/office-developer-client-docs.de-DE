@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5905b9e9-c462-451d-a49f-1f3a8aa506a6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 21889bf626d7f9128d1e01b3e6a15b5fa0d2e696
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cf275c66a60ed977c442b468b7c9951325db5120
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792643"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593515"
 ---
 # <a name="imsgserviceadmin--iunknown"></a>IMsgServiceAdmin : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ändert eine Message Service in einem Profil.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |MapiX.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Message Service Administration-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Message Service Administration-Objekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMsgServiceAdmin  <br/> |
@@ -53,7 +53,7 @@ ms.locfileid: "19792643"
 |[SetPrimaryIdentity](imsgserviceadmin-setprimaryidentity.md) <br/> |Legt eine Message Service hat der Hersteller der primäre Identität für das Profil sein.  <br/> |
 |[GetProviderTable](imsgserviceadmin-getprovidertable.md) <br/> |Bietet Zugriff auf die Tabelle Dienstanbieter, eine Liste der Dienstanbieter im Profil.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Implementierung kann einen Zeiger auf eine **IMsgServiceAdmin** -Schnittstelle auf zwei Arten erhalten: durch Aufrufen der [IMAPISession::AdminServices](imapisession-adminservices.md) -Methode oder durch Aufrufen der [IProfAdmin::AdminServices](iprofadmin-adminservices.md) -Methode. Für Clients hauptsächlich Profilkonfiguration ist **IProfAdmin::AdminServices** die bevorzugte Methode zum Abrufen der **IMsgServiceAdmin** -Schnittstelle, weil es nicht auf den Anbieter für die MAPI-Sitzung anmelden ist. Benötigt ein Client die Möglichkeit, das aktive Profil ändern, sollte **IMAPISession::AdminServices** aufgerufen werden, wenn den Mauszeiger **IMsgServiceAdmin** erhalten möchten. Beachten Sie, dass zwar MAPI nicht mit einem Profil zulässt, die zu löschenden verwendet wird, keine Sicherheitsmaßnahmen werden, um zu verhindern, dass einen Client die Message-Dienste im Profil entfernen. 
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fc1e0162-d655-4761-92e7-b469579c270b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3989532388d9c88c293427a4ce7109579a832ad1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0ba27e1eefa85e1651dbd24fa0540f8b1108588a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794335"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588468"
 ---
 # <a name="pidtagdistributionlistexpansionhistory-canonical-property"></a>PidTagDistributionListExpansionHistory (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Verlauf zeigt, wie eine Verteilerliste während der Übertragung erweitert wurde. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DL_EXPANSION_HISTORY  <br/> |
-|Bezeichner:  <br/> |0x0013  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DL_EXPANSION_HISTORY  <br/> |
+|Kennung:  <br/> |0x0013  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft steht Clientanwendungen empfangen, wenn der Adressbuchhierarchie sie festgelegt hat. Es ist außerdem die sendende Client zur Verfügung, wenn der Inhalt der Nachricht mit einem Bericht zurückgegeben wird. 
   

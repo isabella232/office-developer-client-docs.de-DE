@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 352a95cb-e8ba-4c79-81d8-b22723ec71fb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e07d39ba364fd7da72fe9f923fed2d8b93bd2f8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cfe3eaa7a1d849fa5b192c83af0eb153b3f90ca7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794486"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588979"
 ---
 # <a name="pidtagincompletecopy-canonical-property"></a>PidTagIncompleteCopy (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn diese Meldung ein unvollständiger Kopie von eine andere Nachricht handelt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INCOMPLETE_COPY  <br/> |
-|Bezeichner:  <br/> |0x0035  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INCOMPLETE_COPY  <br/> |
+|Kennung:  <br/> |0x0035  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Allgemeine Nachrichteneigenschaften  <br/> |
    

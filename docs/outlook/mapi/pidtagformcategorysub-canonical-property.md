@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 0e654152-c850-417a-8877-29d47cf85db5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 30c52ca50ed3d04c570bf0a25f98bdd027e411af
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 679e19b5c791125fee10454dcec457d6776d7736
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794402"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593088"
 ---
 # <a name="pidtagformcategorysub-canonical-property"></a>PidTagFormCategorySub (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Unterkategorie eines Formulars, gemäß von einer Clientanwendung. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_FORM_CATEGORY_SUB, PR_FORM_CATEGORY_SUB_A, PR_FORM_CATEGORY_SUB_W  <br/> |
-|Bezeichner:  <br/> |0x3305  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_FORM_CATEGORY_SUB, PR_FORM_CATEGORY_SUB_A, PR_FORM_CATEGORY_SUB_W  <br/> |
+|Kennung:  <br/> |0x3305  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine MAPI  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind untergeordnet Hauptformular Kategorie, die in der Eigenschaft **PR_FORM_CATEGORY** ([PidTagFormCategory](pidtagformcategory-canonical-property.md)) bereitgestellt wird. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 28ba9997-72dd-465f-94a7-35a317a361ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1e1cba3d927072cb03dbd34eee518c9b0a9e0383
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f20c3e988c0a0461a966a109a8d345c22e1fccee
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793847"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585738"
 ---
 # <a name="pidlidtaskmultiplerecipients-canonical-property"></a>PidLidTaskMultipleRecipients (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält Tipps zum die Empfänger eines Vorgangs Optimierung.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskMultRecips  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskMultRecips  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008120  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn Sie festlegen möchten, muss diese Eigenschaft auf eine bitweise **OR** -Operation 0 (null) oder mehreren der folgenden Werte festgelegt werden. 
   

@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac21ba98-f16b-4365-9134-bca7748189ee
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 94656a1444149efeb6e2e9cd3a239ff14fa46937
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 12a55ec4dfe0fb53a07aef73cb4e96771379e483
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793718"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589224"
 ---
 # <a name="pidlidrecurrencepattern-canonical-property"></a>PidLidRecurrencePattern (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Beschreibung des Serienmusters des Calendar-Objekts.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidRecurPattern  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidRecurPattern  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008232  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn diese Eigenschaft festgelegt ist, muss er auf eine Beschreibung für die Serie festgelegt sein, die von der **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft angegeben wird.
   

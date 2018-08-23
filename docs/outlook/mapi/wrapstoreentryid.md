@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b20107e3-5e23-4cde-9cd6-670c914ea70a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aff46cca7a7d530b2eede1790176058e3b91abc8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 45263396e69852a9ae17ff6fce284663bdf2fb07
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795852"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585136"
 ---
 # <a name="wrapstoreentryid"></a>WrapStoreEntryID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Konvertiert einen Nachrichtenspeicher interne Eintrags-ID auf einen Eintrag Bezeichner Verwendbarkeit von messaging-System. 
   
@@ -78,7 +78,7 @@ PARAMETER MAPI_UNICODE
 
 None.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein Meldungsobjekt Store behält eine interne Eintrags-ID der nur für Service Provider Coresident mit diesem Nachrichtenspeicher von Bedeutung ist. Für andere Messagingkomponenten stellt MAPI eine gepackten Version von der internen Eintrags-ID, mit die Hilfe erkennbar wie, mit dem Nachrichtenspeicher gehören. Coresident-Dienstanbieter müssen immer die ursprünglichen allein stehenden Store Eintrags-ID angegeben werden; Clientanwendungen sollte immer die gepackten Version angegeben werden, die dann verwendbar an einer beliebigen Stelle in der messaging-Domäne und in anderen Domänen. 
   

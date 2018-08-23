@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 783f08aa-fb5a-432d-b8bd-48d69f0e5c38
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0d75616aaa6599709828d32393a316c642bc613b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3988596cc0b9c01d526354dabef3a6e7fdefc3b6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795150"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583225"
 ---
 # <a name="pidtagserviceentryname-canonical-property"></a>PidTagServiceEntryName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen der Funktion Punkt Eintrag für die Konfiguration eines Diensts Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SERVICE_ENTRY_NAME  <br/> |
-|Bezeichner:  <br/> |0x3D0B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SERVICE_ENTRY_NAME  <br/> |
+|Kennung:  <br/> |0x3D0B  <br/> |
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Es wird empfohlen, dass Message Service Implementierer einen Nachricht Service Einstiegspunkt bereitstellen, aber der Einstiegspunkt nicht erforderlich ist. Der Einstiegspunkt sollten jedoch bereitgestellt werden, nur, wenn die zugehörigen Konfigurationseigenschaften vorhanden. Wenn diese Eigenschaften nicht vorhanden sind, wird MAPI davon ausgegangen, dass kein Einstiegspunkt bereitgestellt wird.
   

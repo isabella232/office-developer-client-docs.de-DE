@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 8ada5c9b-bec5-42d8-bc58-f0411ec4e88b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f2ccd004415bcbd42b56b1269fbdb4622ef1f8c5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 30ee7c1a7eb86fd4cdfe90fb6711bd1b295fd5e6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794322"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591086"
 ---
 # <a name="pidtagdeferredsendnumber-canonical-property"></a>PidTagDeferredSendNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Zahl, die zum Berechnen der Aufgeschobene Senden einer Nachricht verwendet werden kann.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEFERRED_SEND_NUMBER  <br/> |
-|Bezeichner:  <br/> |0x3FEB  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEFERRED_SEND_NUMBER  <br/> |
+|Kennung:  <br/> |0x3FEB  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird verwendet, für die Eigenschaft **PR_DEFERRED_SEND_TIME** ([PidTagDeferredSendTime](pidtagdeferredsendtime-canonical-property.md)) computing, wenn er nicht vorhanden ist. Beim Senden einer Nachricht verzögert ist, sollte die **PR_DEFERRED_SEND_NUMBER** -Eigenschaft zusammen mit der Eigenschaft **PR_DEFERRED_SEND_UNITS** ([PidTagDeferredSendUnits](pidtagdeferredsendunits-canonical-property.md)) festgelegt werden, wenn die **PR_DEFERRED_SEND_TIME** -Eigenschaft nicht vorhanden ist. 
   

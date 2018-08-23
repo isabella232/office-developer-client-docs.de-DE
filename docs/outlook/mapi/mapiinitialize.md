@@ -11,19 +11,19 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: b9584226-79d2-4d83-8f31-dbfbc50f16c5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d22c24088960debcd18ccd818dad23656f6a01f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 5fcebd1fefa0d077acbe62a45a19a622e13b35fc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793136"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587369"
 ---
 # <a name="mapiinitialize"></a>MAPIInitialize
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Inkrementiert den Referenzzähler des MAPI-Subsystems und globale-Daten für die MAPI-DLL initialisiert. 
   
@@ -51,7 +51,7 @@ S_OK
   
 > MAPI-Subsystems wurde erfolgreich initialisiert.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Referenz für das MAPI-Subsystem und die [MAPIUninitialize](mapiuninitialize.md) Funktion dekrementiert zählen **"MAPIInitialize"** Funktion Schritten für die interne verweiszählung. Die Anzahl der Anrufe an eine Funktion muss daher die Anzahl der Aufrufe der anderen entsprechen. **"MAPIInitialize"** gibt S_OK zurück, wenn MAPI zuvor nicht initialisiert wurde. 
   

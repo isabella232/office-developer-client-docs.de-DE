@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: fa265d37-a1ea-4812-8fe9-21dac374cd7c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cdc96b076d63eae264eaba2672e7615bc85ed442
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ab2c4caf74da8bce143e6b1f4fa6fd2946e37de3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794434"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593207"
 ---
 # <a name="pidtaggovernmentidnumber-canonical-property"></a>PidTagGovernmentIdNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Behörden Bezeichner für den Empfänger an. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_GOVERNMENT_ID_NUMBER, PR_GOVERNMENT_ID_NUMBER_A, PR_GOVERNMENT_ID_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A07  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_GOVERNMENT_ID_NUMBER, PR_GOVERNMENT_ID_NUMBER_A, PR_GOVERNMENT_ID_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A07  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen zu einem Empfänger. Sie sind durch den Empfänger und des Empfängers Organisation definiert. 
   

@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 9e055269-f3bf-4b64-8384-3cbc372c0b34
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2af9d529cb92e1040427eba69270908dcf4a5d9f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9ef3f37ab266469e83434d5d9bd0bc7e2ef897fa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791557"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583344"
 ---
 # <a name="direntryid"></a>DIR_ENTRYID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Beschreibt die Eigenschaften einer Directory-Eintrags-ID an.
   
@@ -68,7 +68,7 @@ typedef struct _dir_entryid
   
 > Eine GUID, die das Anmeldung-Objekt identifiziert wird.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Strukturen **DIR_ENTRYID** und [CONTAB_ENTRYID](contab_entryid.md) sind identisch, mit Ausnahme der **UlType** Member. Der Inhalt des Elements **UlType** bestimmt, welche Struktur für die übrigen Felder geeignet ist. 
   

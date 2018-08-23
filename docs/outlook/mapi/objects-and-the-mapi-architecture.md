@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c3bcbda5-820d-4ef5-bffd-c254eea9dff6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0e89c2ad37b700a977962e5e0ff0ca30b9d910e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 29a61ff8f7894c5582d31895bacd74e1ebcaa49c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793311"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583876"
 ---
 # <a name="objects-and-the-mapi-architecture"></a>Objekte und die MAPI-Architektur
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Alle Objekte, die MAPI definiert fallen in eine oder mehrere Ebenen in der MAPI-Architektur. Die Ebene der Client-Schnittstelle enthält alle Objekte, die eine Clientanwendung, Formular Viewer oder Formular Server implementieren können. Die Service Provider-Schnittstellenebene enthält die Objekte, die ein Dienstanbieter eines beliebigen Typs implementieren können. Diese Schicht umfasst Objekte, die von Adressbüchern, Nachrichtenspeicher, Transportanbieter und Formularbibliotheken implementiert. Die Ebene, die das MAPI-Subsystem steht, wird zwischen dem Client und Dienst Anbieter Benutzeroberflächenebenen positioniert. Die MAPI-Ebene enthält alle Objekte, die MAPI-Clients oder-Dienstanbieter verwenden implementiert wird. 
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 90dafeae-6b61-40e3-8341-d6a11799d0f2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d83fce761afb4673b71df9d620ac3fd794d6009f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4d8c995f5fbca322fca44cdcbb0de224af6b2fbf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795466"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590288"
 ---
 # <a name="sending-a-reply"></a>Senden eine Antwort
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 -Clientanwendungen unterstützt zwei Arten von Antworten in der Regel: eine, die gesendet wird, nur für den Absender der ursprünglichen Nachricht, die an alle Empfänger, die in der ursprünglichen Nachricht zusätzlich zu den Absender der Empfängerliste enthalten gesendet wird. In diesem zweiten Art von Antwort wird häufig eine Antwort genannt, die alle Nachrichten.
   

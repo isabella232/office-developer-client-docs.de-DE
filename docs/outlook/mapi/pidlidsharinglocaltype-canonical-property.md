@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6ac438a1-d36f-424f-b4b4-d6f2d26fd350
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ab9bad51efc4aa9b113bc8d215426c642fc60b9d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f24486270f5f20596e76781c7ddf4cbc90e17a11
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793799"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583953"
 ---
 # <a name="pidlidsharinglocaltype-canonical-property"></a>PidLidSharingLocalType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den Wert der Eigenschaft **PR_CONTAINER_CLASS** ([PidTagContainerClass](pidtagcontainerclass-canonical-property.md)) des Ordners, der gemeinsam genutzt wird. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSharingLocalType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSharingLocalType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Sharing  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008A14  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss eine der folgenden sein:
   

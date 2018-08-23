@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: ab197ace-6e7d-4ec5-9f6d-4a63a1eda11c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 21469b944bb2ce5db0576e40012335d89d48cb49
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 91eb93c9cf3afcecef698e27791c06831c13624d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793982"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589098"
 ---
 # <a name="pidnamecontentbase-canonical-property"></a>PidNameContentBase (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einen Wert für [RFC3282] Content-Base Kopfzeile Feld enthält.
   
@@ -35,7 +35,7 @@ Einen Wert für [RFC3282] Content-Base Kopfzeile Feld enthält.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Um den Wert dieser Eigenschaft festzulegen, müssen Multipurpose Internet Message Extensions (MIME) Clients den gewünschten Wert in ein Kopfzeilenfeld Content-Base auf eine Entität MIME geschrieben werden, die Textkörper einer Nachricht zugeordnet ist. MIME-Leser müssen auf den Wert dieser Eigenschaft den Wert eines Felds Header Content-Base für solche eine MIME-Entität kopieren.
   

@@ -5,19 +5,19 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: cf36c6cb-57b4-7b2b-e23d-e0bc8696de96
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9ea18f8e5c7eb758780727829fb1e18d2a19ec92
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 30dd43a3ac9a315cd41919872b918bee639ca259
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791234"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593053"
 ---
 # <a name="about-the-replication-state-machine"></a>Informationen über den Replikationszustandsautomaten
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält eine Übersicht über die Zustandsautomat für die Datenreplikation für Microsoft Outlook 2013 und Microsoft Outlook 2010.
   
@@ -91,5 +91,5 @@ Das folgende Diagramm zeigt die Statusübergänge, die beim Hochladen oder das A
   
 [MAPI-Konstanten](mapi-constants.md)
   
-[SYNCSTATE](syncstate.md)
+[SYNCHRONISIERUNGSSTATUS](syncstate.md)
 

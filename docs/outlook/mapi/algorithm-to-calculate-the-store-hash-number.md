@@ -5,17 +5,17 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 489e0d74-8ecd-23ba-c874-18fd8c50fd12
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: de4fa7cb24cd486e506f5d747319c44ce9c15a77
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 84065c1441008732380e68d9786d7844dbb64cb7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791277"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592101"
 ---
 # <a name="algorithm-to-calculate-the-store-hash-number"></a>Algorithmus zum Berechnen der Store-Hashnummer
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Im Rahmen einer MAPI-Uniform Resource Locator (URL) sendet ein Anbieter anmelden eine Store Hash Zahl an der MAPI-Protokollhandler, um ein Objekt zu identifizieren, die für die Indizierung bereit ist. Der MAPI-Protokollhandler verwendet diese Store Hash-Nummer zum Identifizieren eines Speichers an. Im Allgemeinen berechnet ein Anbieter anmelden die Store Hash-Nummer auf der Grundlage der Store Zuordnung Signatur, wenn der Informationsspeicher die **[PR_MAPPING_SIGNATURE](pidtagmappingsignature-canonical-property.md)** -Eigenschaft im Abschnitt globale Profile definiert wurde. Andernfalls wird die Store-Eintrags-ID verwendet Speicheranbieter Der Algorithmus zum Berechnen der Anzahl der Store Hash muss Mehrdeutigkeiten identifizieren Speicher minimieren. 
   

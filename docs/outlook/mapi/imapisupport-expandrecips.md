@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 78edd549-d557-489a-85f5-adfb5c44a7d4
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2e41701d3a739864b1eafc8001833b7df5c8908b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 379fdc47f35fb183dd0bf551e421422abb106c0e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792368"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591010"
 ---
 # <a name="imapisupportexpandrecips"></a>IMAPISupport::ExpandRecips
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Schließt eine Nachricht Empfängerliste bestimmten Verteilerlisten erweitern.
   
@@ -58,7 +58,7 @@ S_OK
   
 > Liste der Empfänger die Nachricht wurde erfolgreich verarbeitet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::ExpandRecips** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht Anbieter Aufrufen **ExpandRecips** um auffordern, MAPI, um die folgenden Aufgaben ausführen: 
   

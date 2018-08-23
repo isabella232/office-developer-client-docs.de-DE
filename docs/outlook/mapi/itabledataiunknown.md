@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: ac7ae09f-ce19-45cf-8963-fad5bba75452
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 968768fe75286b93bf12e349a4845fdfaa1923e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: bec68568b30bdc3112493a656de591f222801e46
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792855"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586242"
 ---
 # <a name="itabledata--iunknown"></a>ITableData : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Methoden zum Arbeiten mit Tabellen. MAPI bietet Datenobjekte Tabelle oder Objekte, die **ITableData** , mit denen Dienstanbieter Tabelle Wartungen implementieren. Um ein Table-Datenobjekt zu erhalten, rufen Sie Dienstanbieter [CreateTable](createtable.md) -Funktion. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiutil.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Tabelle Datenobjekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Tabelle Datenobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPITableData  <br/> |
@@ -50,7 +50,7 @@ Bietet Methoden zum Arbeiten mit Tabellen. MAPI bietet Datenobjekte Tabelle oder
 |[HrModifyRows](itabledata-hrmodifyrows.md) <br/> |Mehrere Tabellenzeilen, möglicherweise Ersetzen der vorhandene Zeilen eingefügt.  <br/> |
 |[HrDeleteRows](itabledata-hrdeleterows.md) <br/> |Löscht mehrere Tabellenzeilen.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Implementierung der **ITableData** arbeitet mit Tabellen halten Sie alle Daten und zugehörigen Einschränkungen im Arbeitsspeicher, leicht für die Verwendung mit sehr große Tabellen nicht geeignet. Große Einschränkungen und komplexe Vorgänge wie Kategorisierung werden nicht unterstützt. 
   

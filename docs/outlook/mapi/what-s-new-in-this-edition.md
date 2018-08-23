@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a24cad75-1237-469f-b7f3-cbbb88f80d44
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 4ffd92f44f1fe88b840e8f8119a92d2048f4f526
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7325c42fe7e9c1e043609d5503a3782522f76188
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795836"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590057"
 ---
 # <a name="whats-new-in-this-edition"></a>Neuigkeiten in dieser Edition
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Microsoft Outlook 2013 MAPI-Referenz wurde aktualisiert, um die Dokumentation für verschiedene neue Features enthalten. 
   
@@ -31,7 +31,7 @@ Inhalt wurde für die folgenden Features hinzugefügt:
     
   - [MAPI-Referenz für Outlook](outlook-mapi-reference.md)
     
-  - [�bersicht �ber Outlook-MAPI-Referenz](outlook-mapi-reference-overview.md)
+  - [Übersicht über die Outlook-MAPI-Referenz](outlook-mapi-reference-overview.md)
     
 - **Nachricht Store Provider Example**– der Code [Sample umfließendem PST Store Provider](message-store-provider-sample.md) wurde erkannt und Outlook 2013 aufzunehmen jetzt überarbeitet. Weitere Informationen finden Sie unter zuvor überarbeitet Inhalt in diesem Thema. 
     
@@ -113,5 +113,5 @@ Inhalt wurde in früheren Versionen von Outlook-MAPI-Referenz für die folgenden
 
 [Erste Schritte mit der Outlook-MAPI-Referenz](getting-started-with-the-outlook-mapi-reference.md)
   
-[CodePlex (engl.)](http://mapistublibrary.codeplex.com/)
+[CodePlex](http://mapistublibrary.codeplex.com/)
 

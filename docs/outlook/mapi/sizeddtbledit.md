@@ -11,17 +11,17 @@ api_name:
 api_type:
 - COM
 ms.assetid: a658d027-03a2-4cde-bf99-563e8521cb31
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4ea77023bdc9442325f4af46d23c107e7172ceaf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7e50589b52f3e99bf2569a55bb7d3ca4f8247fd6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795543"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591660"
 ---
 # <a name="sizeddtbledit"></a>SizedDtblEdit
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine benannte Struktur, die enthält eine [DTBLEDIT](dtbledit.md) -Struktur für die Beschreibung ein Edit-Steuerelement und die maximale Anzahl von Zeichen, die im Steuerelement eingegeben werden können. 
   
@@ -44,7 +44,7 @@ _u_
   
 > Der Name für die neue Struktur.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Makro **SizedDtblEdit** können Sie ein Edit-Steuerelement zu definieren, wenn die Anzahl der aktivierten Zeichen bekannt ist. Die neue Struktur wird mit der folgenden Elemente erstellt: 
   

@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3a51ee7e-d030-4f04-915b-ff8bd351207d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b637f4921165d70ddeda914b4299c35aabe8218f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 07c215511f010741e69c08c184df0ca3ce461e13
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791767"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583617"
 ---
 # <a name="gateway-mappable-properties"></a>Sämtliche Gateway-Eigenschaften
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gateway-sämtliche Eigenschaften sind, die Übersetzung beim Senden von einer messaging-Domäne in eine andere erforderlich sind. Zum Zuordnen geeignete Gateway des MAPI-Eigenschaften aktivieren Nachrichten an Informationen enthalten, die ein Gateway aus, um sicherzustellen, dass das Ziel messaging-System verwendet ordnungsgemäß erfordert. Obwohl Entwickler Gateway nicht erforderlich sind, diese Übersetzungsfunktion bereitstellen, sollten sie Gateway sämtliche Eigenschaften als Gelegenheit zur Behandlung von Inhalt zu verbessern.
   

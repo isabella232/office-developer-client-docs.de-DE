@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: a514275e-40c2-48db-8072-1dfc392a7ac6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 589420db48edb348a22f34ce72b948f4d8207ae9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e624ab4f39ef5a5385119779b0780ee7173a3ee7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792912"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586921"
 ---
 # <a name="long-term-entry-identifiers"></a>Langfristige Eintragsbezeichner
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Langfristige Eintrags-ID wird von einem Dienstanbieter zu einem Objekt zugewiesen, wenn ein Objekt einen Bezeichner mit längerer Lebensdauer erfordert. Langfristige-Eintragsbezeichner sind immer für Wochen oder Monate gültig und können auf anderen Arbeitsstationen, je nach den Anbieter gültig sein. Die langfristige Bezeichner von adressbuchanbietern implementierte für benutzerdefinierte Empfänger erstellt sind universell gültig. 
   

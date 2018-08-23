@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e119fa20-08b8-4c8d-93fc-56037220890d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d7294527fcd557ae2d4824b9a3215ff464f62c2a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 003655354ecac8e2910b3e6851da32c28ce31cfc
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791230"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586454"
 ---
 # <a name="about-restrictions"></a>Informationen zu Einschränkungen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Einschränkung ist eine Möglichkeit zur Begrenzung der Anzahl der Zeilen in einer Ansicht, um nur die Zeilen mit Werten für Spalten, die bestimmte Kriterien erfüllen. Es gibt viele verschiedene Möglichkeiten für die Verwendung von Einschränkungen mit Tabellen. Clientanwendungen können Einschränkungen, beispielsweise zum Filtern einer Inhaltstabelle für Nachrichten, die von einer bestimmten Person, Zeilen suchen, die entweder eine Eigenschaft nicht unterstützt, oder eine Eigenschaft auf einen bestimmten Wert festgelegt haben, oder für doppelte Empfänger innerhalb einer Nachricht. 
   

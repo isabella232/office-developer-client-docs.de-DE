@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e92db38a-9ae9-4d75-b768-674453c19fe3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 19af62b0163468d1a3b6fdb64848b1bd5b2112bf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: db53a5e0565ba19475a4f07e655b909faa4561a9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794441"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586487"
 ---
 # <a name="pidtaghomeaddressstateorprovince-canonical-property"></a>PidTagHomeAddressStateOrProvince (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bundesland/Kanton Teil Adresse eines Benutzers enthält.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_HOME_ADDRESS_STATE_OR_PROVINCE, PR_HOME_ADDRESS_STATE_OR_PROVINCE_A, PR_HOME_ADDRESS_STATE_OR_PROVINCE_W  <br/> |
-|Bezeichner:  <br/> |0x3A5C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_HOME_ADDRESS_STATE_OR_PROVINCE, PR_HOME_ADDRESS_STATE_OR_PROVINCE_A, PR_HOME_ADDRESS_STATE_OR_PROVINCE_W  <br/> |
+|Kennung:  <br/> |0x3A5C  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 4178fdf6-af0e-4833-9751-402f86d18206
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9ac847403aea37412069aee51b545b2257404612
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3f8d1e21ad3f591c8176728084ec74831eb9f5cf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794748"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587663"
 ---
 # <a name="pidtagotheraddresscountry-canonical-property"></a>PidTagOtherAddressCountry (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält der e-Mail-Nachrichten des Benutzers anderen Land/Region.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_OTHER_ADDRESS_COUNTRY, PR_OTHER_ADDRESS_COUNTRY_A, PR_OTHER_ADDRESS_COUNTRY_W  <br/> |
-|Bezeichner:  <br/> |0x3A60  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_OTHER_ADDRESS_COUNTRY, PR_OTHER_ADDRESS_COUNTRY_A, PR_OTHER_ADDRESS_COUNTRY_W  <br/> |
+|Kennung:  <br/> |0x3A60  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden durch den Benutzer oder die Organisation des Benutzers definiert.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3a504594-204c-472c-8be7-dca154c94ea2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 160ddc53edf3d9681adf6f9d536a488c0c345a07
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d43ec0bd2978c64e3a5ceb635f0dcda57de01cfd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794288"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590736"
 ---
 # <a name="pidtagdelegateflags-canonical-property"></a>PidTagDelegateFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Stellvertretung den Delegator privaten Message Objekte anzeigen kann.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DELEGATE_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x686B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DELEGATE_FLAGS  <br/> |
+|Kennung:  <br/> |0x686B  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Jeder Eintrag in dieser Eigenschaft muss auf einen der folgenden Werte festgelegt werden.
   

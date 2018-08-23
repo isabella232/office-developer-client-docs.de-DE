@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e8293dc9-f2f1-4065-89f4-e734a8db63df
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 33c62b81982aaac3659ad4d41ea2cf5298b42287
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 21fdff2aa713905a27a3d0cc5545ceb59f030378
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794290"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586858"
 ---
 # <a name="pidtagdefcreatemailuser-canonical-property"></a>PidTagDefCreateMailuser (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die Vorlage Eintrags-ID für eine standardmäßige messaging User-Objekt enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DEF_CREATE_MAILUSER  <br/> |
-|Bezeichner:  <br/> |0x3612  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DEF_CREATE_MAILUSER  <br/> |
+|Kennung:  <br/> |0x3612  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Clientanwendungen mit dieser Eigenschaft können Sie um ein messaging User-Objekt in einem Container zu erstellen. Unterstützung von Eintrag Creation ist optional für Address Book Container. die, die nicht unterstützen sind nicht erforderlich, diese Eigenschaft verfügbar machen. 
   

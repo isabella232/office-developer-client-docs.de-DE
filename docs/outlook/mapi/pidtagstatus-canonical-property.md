@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8b947660-eafe-47e1-9595-bd3ab7d455bf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 01a65306e5e0d34ed6f1ce7231227224868ff5cb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eb04983015e8557541e69981ec130ebf07598655
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795208"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588370"
 ---
 # <a name="pidtagstatus-canonical-property"></a>PidTagStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine 32-Bit-Bitmaske aus Flags, die Ordner Status definieren.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_STATUS  <br/> |
-|Bezeichner:  <br/> |0x360B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_STATUS  <br/> |
+|Kennung:  <br/> |0x360B  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft für Ordner entspricht der **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft für Nachrichten. Ihre Flags werden für die Client-Anwendung bereitgestellt und wirken sich nicht auf den Nachrichtenspeicher. Clients verwenden oder ignorieren diese Einstellungen. Der Client kann auch eine eigene Werte für die Client-definierbare Bit dieser Eigenschaft definieren.
   

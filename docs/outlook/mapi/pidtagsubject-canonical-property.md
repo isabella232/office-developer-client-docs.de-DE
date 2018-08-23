@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: aa7ba4d9-c5e0-4ce7-a34e-65f675223bc9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 63bb5534756f44aebd9e6ca21c336534b279909d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9d37e4ee32cb5db623cece3061012ae4df0173a8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795234"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586942"
 ---
 # <a name="pidtagsubject-canonical-property"></a>PidTagSubject (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den vollständigen Betreff einer Nachricht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SUBJECT, PR_SUBJECT_A, PR_SUBJECT_W  <br/> |
-|Bezeichner:  <br/> |0 x 0037  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SUBJECT, PR_SUBJECT_A, PR_SUBJECT_W  <br/> |
+|Kennung:  <br/> |0 x 0037  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften werden für alle Objekte, die Meldung empfohlen. 
   

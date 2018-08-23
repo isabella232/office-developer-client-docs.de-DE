@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d8da8be1-3efe-410a-bcce-49e522602d80
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e9cd1c7ce0983a47311b2626cc3b40b47748b951
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 26550691ef959fa7cefa83827dd1391538bd2d38
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792397"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588174"
 ---
 # <a name="imapisupportopenaddressbook"></a>IMAPISupport::OpenAddressBook
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf das Adressbuch.
   
@@ -59,7 +59,7 @@ MAPI_W_ERRORS_RETURNED
   
 > Der Aufruf war erfolgreich, aber eine oder mehrere adressbuchanbietern implementierte konnte nicht geladen werden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::OpenAddressBook** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter, die in der Regel eng gekoppelten Nachricht speichern und transport-Anbieter, rufen Sie **OpenAddressBook** , um auf das Adressbuch zuzugreifen. Der zurückgegebene **IAddrBook** Zeiger kann für eine Vielzahl von Address Book Aufgaben, einschließlich Adresse Adressbuch-Containern und Suchen von messaging-Benutzer und Anzeige von Adresse Dialogfelder Öffnen verwendet werden. 
   

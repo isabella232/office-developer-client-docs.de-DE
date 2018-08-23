@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3f6ce4ba-aebe-4b89-87ba-35568a4414d4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 070fa55b5116f6e5adad8f3e33bf5629583bec3a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0726ceae42fecdf39512c9095295ea643b138c64
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794029"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590582"
 ---
 # <a name="pidtagabdefaultpab-canonical-property"></a>PidTagAbDefaultPab (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID der Adressbuchcontainer als das persönliche Adressbuch (PAB) verwenden. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_AB_DEFAULT_PAB  <br/> |
-|Bezeichner:  <br/> |0x3D07  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_AB_DEFAULT_PAB  <br/> |
+|Kennung:  <br/> |0x3D07  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie diese Eigenschaft nicht. Es ist für die Verwendung von MAPI reserviert.
   

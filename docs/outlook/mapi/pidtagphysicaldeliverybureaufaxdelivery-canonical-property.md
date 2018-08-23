@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: c20e4ff2-ef55-4455-86ab-3bd47ddfefb2
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 549acbb5e8f593144edffffb097ac7cdc2f0b271
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c77792c1e33f9b0aed1bb0e5d109a0339fa0fe6e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794782"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587173"
 ---
 # <a name="pidtagphysicaldeliverybureaufaxdelivery-canonical-property"></a>PidTagPhysicalDeliveryBureauFaxDelivery (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn das messaging-System ein Fax Büro physische Bereitstellung dieser Nachricht verwenden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PHYSICAL_DELIVERY_BUREAU_FAX_DELIVERY  <br/> |
-|Bezeichner:  <br/> |0x0C0A  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PHYSICAL_DELIVERY_BUREAU_FAX_DELIVERY  <br/> |
+|Kennung:  <br/> |0x0C0A  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

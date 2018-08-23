@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d16219a0-268c-428d-9f02-4f06eb5b6d7d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bf3eee43a70fbc4abf32b60379fc7b191bd9d513
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 202d461d4acefe18e69b47db9319cb328c61406e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792481"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592318"
 ---
 # <a name="imapiviewadvisesinkonprint"></a>IMAPIViewAdviseSink::OnPrint
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Benachrichtigt den Formular-Viewer des Status eines Formulars drucken.
   
@@ -66,7 +66,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche zum Abbrechen in einem Dialogfeld abgebrochen. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formularobjekte Aufrufen die **IMAPIViewAdviseSink::OnPrint** -Methode beim Drucken um den Viewer drucken Fortschritt zu informieren. 
   

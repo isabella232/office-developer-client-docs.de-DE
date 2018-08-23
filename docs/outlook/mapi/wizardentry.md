@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e807c6b5-06cd-4ade-9d9e-69ba6abd1614
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2c307d18c5b62e5190aa10632a47a3f16b80e81f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 3d78b4e6a4a0cc3363edefc84e7ae80dbe72c510
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795849"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590358"
 ---
 # <a name="wizardentry"></a>WIZARDENTRY
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Definiert eine Funktion Service Provider Eintrag Punkt, der der Profil-Assistent zurückruft ausreichend Informationen zum Anzeigen des Anbieters Konfiguration-Eigenschaftenblätter abgerufen. 
   
@@ -75,7 +75,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Profil-Assistent Ruft die **WIZARDENTRY** Basis-Funktion, wenn der Dienstanbieter Konfigurationsbenutzeroberfläche anzeigen kann. Nach Abschluss der Profil-Assistent alle Anbieter konfigurieren, werden die Konfigurationseigenschaften auf das Profil durch Aufrufen von [IMsgServiceAdmin::ConfigureMsgService](imsgserviceadmin-configuremsgservice.md)schreibt. 
   

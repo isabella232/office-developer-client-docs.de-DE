@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d4ece3af-cb54-4727-8072-0c055381ec11
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8882457ff99f4150f2c9b086b92af32de29d60a7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4f69985f9cdaaba0681b823e6fe448d009ee9dfa
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793018"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585710"
 ---
 # <a name="mapi-object-and-interface-overview"></a>MAPI-Objekt und Übersicht über die Benutzeroberfläche
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ein MAPI-Objekt ist eine C++-Objektklassen oder C-Datenstruktur, die von einer oder mehreren MAPI-Schnittstellen oder Sammlungen verwandter Funktionen geerbt wird. Diese Sammlungen verwandter Funktionen werden als reinen virtuellen Funktionen für C++-Entwickler bezeichnet. Bei einer reinen virtuellen Funktion liefert MAPI nur Funktionsprototyp keine Implementierung. Es wird erwartet, dass eine Clientanwendung, einem Dienstanbieter oder MAPI dieser Implementierung leistet durch Erstellen einer Objektklassen, die von der Schnittstelle erbt und die Funktion Beschreibungen der Messaging-API entspricht. Eine MAPI-Schnittstelle kann nur über eine geerbte Klasse instanziiert werden.
   
@@ -38,5 +38,5 @@ MAPI definiert viele andere Arten von Objekten, die jeweils durch eine oder mehr
 [IMAPIContainer : IMAPIProp](imapicontainerimapiprop.md)
 
 
-[MAPI-Konzepte (engl.)](mapi-concepts.md)
+[MAPI-Konzepte](mapi-concepts.md)
 

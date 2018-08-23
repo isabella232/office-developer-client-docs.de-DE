@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d6b01a91-b452-4b2c-9802-698e7b0f4169
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d6c221ae307edb9d84cfcc0026660ea4bce7fadd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 30aaaaa250155215149a941da7f7e528d65b8dc3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792336"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22592199"
 ---
 # <a name="imapistatusflushqueues"></a>IMAPIStatus::FlushQueues
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Erzwingt, dass alle Nachrichten gesendet oder empfangen, um sofort hoch- oder heruntergeladen werden. Die MAPI-Warteschlange Statusobjekt und die Status-Objekte, mit denen Transportanbieter implementiert unterstützt diese Methode auf.
   
@@ -88,7 +88,7 @@ MAPI_E_NO_SUPPORT
   
 > Das Statusobjekt unterstützt keine dieser Vorgang, wie durch die Abwesenheit des STATUS_FLUSH_QUEUES-Flags in den Status des Objekts **PR_RESOURCE_METHODS** ([PidTagResourceMethods](pidtagresourcemethods-canonical-property.md))-Eigenschaft angegeben.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Methode **IMAPIStatus::FlushQueues** fordert an, dass die MAPI-Warteschlange oder eines Transportdienstes sofort alle Nachrichten in der Warteschlange für ausgehende Nachrichten senden oder empfangen alle aus der Warteschlange für eingehende. **FlushQueues** ist nur durch das MAPI-Warteschlange Status-Objekt und von Status-Objekten, die transport-Anbieter Kooperation implementiert. 
   

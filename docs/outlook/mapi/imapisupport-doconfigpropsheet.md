@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3899c49c-a0ec-4dca-92e8-e801cd4908cf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 06341f897a7865c09a565db67bb409fc9f49f8da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 3b3499de9446c83cfc3b97b4d6b02e7c430b65f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792367"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586396"
 ---
 # <a name="imapisupportdoconfigpropsheet"></a>IMAPISupport::DoConfigPropsheet
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Zeigt eine Konfiguration Eigenschaftenblatt.
   
@@ -70,7 +70,7 @@ S_OK
   
 > Das Eigenschaftenblatt Konfiguration wurde angezeigt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPISupport::DoConfigPropsheet** -Methode wird für alle Unterstützungsobjekte implementiert. **DoConfigPropSheet** stellt eine Standardbenutzeroberfläche zum Anzeigen der Eigenschaften der Dienstanbieter und Message-Dienste. Sie sollten dieses Dialogfeld standard für alle Konfiguration-Eigenschaft zeigt verwenden, damit Benutzer eine konsistente Schnittstelle Windows nutzen. 
   

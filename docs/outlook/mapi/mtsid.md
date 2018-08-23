@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3d9bc643-332f-4c8e-83e6-ce9b15711945
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e42bbf23ea8cf4e6196017a962329366e168420d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 59e9cf23aed2a389384318468c3853cd41c9ec1e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793288"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585682"
 ---
 # <a name="mtsid"></a>MTSID
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Eintrag Bezeichner für x. 400-Nachricht Transport System (MTS). 
   
@@ -51,7 +51,7 @@ typedef struct
   
 > Byte-Array, das MTS Eintrags-ID-Daten enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die Struktur **MTSID** wird nur für x. 400-Zuordnungen der MAPI-Eintragsbezeichner verwendet. Es entspricht der MAPI- [FLATENTRY](flatentry.md) -Struktur. 
   

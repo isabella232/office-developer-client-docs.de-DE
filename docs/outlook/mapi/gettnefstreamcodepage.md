@@ -7,19 +7,19 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c4859fa4f8f55af7913c884e25c96727c063ba79
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d00a2ce3ebec24ca69875bdcb83066d8b891137a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791788"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585955"
 ---
 # <a name="gettnefstreamcodepage"></a>GetTnefStreamCodepage
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt die Codepage eines Streams Transport-Neutral Encapsulation Format (TNEF).
   
@@ -65,7 +65,7 @@ HRESULT GetTnefStreamCodepage(
   
 > Entweder der Stream war nicht TNEF-Stream, oder es wurde ein Fehler beim Lesen des AttOemCodepage-Attributs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Verwenden Sie die **GetTnefStreamCodepage** -Funktion, um das **AttOemCodepage** -Attribut des Datenstroms TNEF zum Bestimmen der Codepage und Subcode Seite lesen. Wenn **AttOemCodepage** nicht gefunden wird, gibt **GetTnefStreamCodepage** Codepage 437 und einer Seite Subcode 0 zurück. 
   

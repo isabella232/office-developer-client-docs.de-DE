@@ -11,23 +11,23 @@ keywords:
 - Excel4-Funktion [excel 2007], Excel12-Funktion [Excel 2007]
 localization_priority: Normal
 ms.assetid: 2404f10d-8641-4ee6-a909-1c5a26610f80
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 1c2c775cc7c5b051e4a1381df09ef29e79e2aca4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: c7caf4923e336020928006f6838de5eaeba814a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790490"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586809"
 ---
 # <a name="excel4excel12"></a>Excel4/Excel12
 
- **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
+**Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
 Ruft einen internen Microsoft Excel-Arbeitsblatt-Funktion, Blatt Makrofunktion oder Befehls, oder XLL-only Sonderfunktion bzw., aus innerhalb einer DLL/XLL oder Code-Ressource.
   
 Alle aktuelle Versionen von Excel unterstützen **Excel4**. Ab Excel 2007 wird **Excel12** unterstützt. 
   
-Nur, wenn Excel Steuerelement an die DLL oder XLL übergeben wurde, können diese Funktionen aufgerufen werden. Sie können auch aufgerufen werden, wenn Excel Steuerelement indirekt über einen Aufruf zu Visual Basic für Applikationen (VBA) übergeben wurde. Sie können nicht zu einem anderen Zeitpunkt aufgerufen werden. Beispielsweise können nicht sie während des Aufrufs der [DllMain](http://msdn.microsoft.com/library/base.dllmain%28Office.15%29.aspx) -Funktion oder in anderen Fällen aufgerufen werden, wenn das Betriebssystem die DLL aufgerufen hat, oder aus einem Thread erstellt, die von der DLL. 
+Nur, wenn Excel Steuerelement an die DLL oder XLL übergeben wurde, können diese Funktionen aufgerufen werden. Sie können auch aufgerufen werden, wenn Excel Steuerelement indirekt über einen Aufruf zu Visual Basic für Applikationen (VBA) übergeben wurde. Sie können nicht zu einem anderen Zeitpunkt aufgerufen werden. Beispielsweise können nicht sie während des Aufrufs der [DllMain](https://docs.microsoft.com/windows/desktop/dlls/dllmain) -Funktion oder in anderen Fällen aufgerufen werden, wenn das Betriebssystem die DLL aufgerufen hat, oder aus einem Thread erstellt, die von der DLL. 
   
 Die Funktionen [Excel4v und Excel12v](excel4v-excel12v.md) annehmen deren Argumente als ein Array, während die Funktionen **Excel4** und **Excel12** deren Argumente als Liste variabler Länge auf dem Stapel annehmen. In jeder anderen Hinsicht **Excel4** verhält sich wie **Excel4v**und **Excel12** verhält sich **Excel12v**identisch.
   
@@ -66,13 +66,13 @@ Gibt die folgenden Werte für ganze Zahl (**Int**).
 |4  <br/> |**xlretInvCount** <br/> |Eine ungültige Anzahl von Argumenten eingegeben wurde. In Versionen bis zu Excel 2003 ist die maximale Anzahl von Argumenten, mit denen jede Funktion 30. Ab Excel 2007 ist die maximale Anzahl 255. Einige erfordern einer festen oder minimalen Anzahl von Argumenten.  <br/> |
 |8  <br/> |**xlretInvXloper** <br/> |Eine unzulässige **XLOPER** oder **XLOPER12** an die Funktion übergeben wurde, oder ein Argument vom falschen Typ verwendet wurde.  <br/> |
 |16  <br/> |**xlretStackOvfl** <br/> |Stapelüberlauf. Verwenden Sie **XlStack** , um die Größe des Raums links auf den Stapel überwachen. Vermeiden Sie sehr große lokale (automatische) Arrays und Strukturen auf dem Stapel zuordnen, sofern möglich; Stellen sie statische. (Beachten Sie, dass ein Stapelüberlauf auftreten kann, ohne dass.)  <br/> |
-|32  <br/> |**xlretFailed zurück** <br/> |Eine Funktion Befehl äquivalent ist fehlgeschlagen. Dies ist gleichbedeutend mit einer Makrobefehl das Dialogfeld Makro Fehler Warnung angezeigt.  <br/> |
+|32  <br/> |**xlretFailed** <br/> |Eine Funktion Befehl äquivalent ist fehlgeschlagen. Dies ist gleichbedeutend mit einer Makrobefehl das Dialogfeld Makro Fehler Warnung angezeigt.  <br/> |
 |64  <br/> |**xlretUncalced** <br/> |Es wurde versucht, auf eine Zelle, die noch nicht berechnet Dereferenzierung, da es geplant ist, nach der aktuellen Zelle berechnet werden soll. In diesem Fall muss die DLL Steuerelement nach Excel sofort zurückgeben. Die DLL kann nur vor dem Beenden **XlFree** aufrufen. Alle anderen Aufrufe der C-API sind nicht zulässig. Weitere Informationen zu den Funktionen können und die Werte von Zellen, die nicht neu berechnet wurde, finden Sie unter [Excel-Befehle, Funktionen und-Zustände](excel-commands-functions-and-states.md)können nicht zugegriffen werden.  <br/> |
 |128  <br/> |**xlretNotThreadSafe** <br/> |Es wurde versucht, eine Funktion aufgerufen, die nicht oder möglicherweise nicht, während eine Multithread-neuberechnung der Arbeitsmappe threadsicheren.  <br/> Ab Excel 2007 dieser Wert wird zurückgegeben, und nur innerhalb der XLL Arbeitsblattfunktionen deklariert thread als Safe.  <br/> |
 |256  <br/> |**xlRetInvAsynchronousContext** <br/> |Das Handle asynchronen Funktion ist ungültig.  <br/> Dieser Wert wird nur von Excel 2010 verwendet.  <br/> |
 |512  <br/> |**xlRetNotClusterSafe** <br/> |Der Anruf wird auf Clustern nicht unterstützt.  <br/> Dieser Wert wird nur von Excel 2010 verwendet.  <br/> |
    
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>HinwBemerkungeneise
 
 ### <a name="valid-ifunction-values"></a>Gültige iFunction Werte
 
@@ -80,9 +80,9 @@ Gültige **iFunction** Werte sind in der Headerdatei Xlcall.h oder eine der folg
   
 |||||
 |:-----|:-----|:-----|:-----|
-|**Bereichsgröße** <br/> |**xlEnableXLMsgs** <br/> |**xlGetInst** <br/> |**xlSheetNm** <br/> |
+|**xlAbort** <br/> |**xlEnableXLMsgs** <br/> |**xlGetInst** <br/> |**xlSheetNm** <br/> |
 |**xlCoerce** <br/> |**xlFree** <br/> |**xlGetName** <br/> |**xlStack** <br/> |
-|**xlDefineBinaryName** <br/> |**xlGetBinaryName** <br/> |**gleich xlSet** <br/> |**xlUDF** <br/> |
+|**xlDefineBinaryName** <br/> |**xlGetBinaryName** <br/> |**xlSet** <br/> |**xlUDF** <br/> |
 |**xlDisableXLMsgs** <br/> |**xlGetHwnd** <br/> |**xlSheetId** <br/> ||
    
 ### <a name="different-types-of-functions"></a>Unterschiedliche Typen von Funktionen

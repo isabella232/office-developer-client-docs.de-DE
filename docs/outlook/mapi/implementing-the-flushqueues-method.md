@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 8719f8aa-a537-4253-b67d-c4d38c40472b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: baafd8b6437f4febaee9420b274c20ba3242cae6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 01296995adbca2640c8da42b4d06c1c749be3266
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792586"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582413"
 ---
 # <a name="implementing-the-flushqueues-method"></a>Implementieren der FlushQueues-Methode
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die MAPI-Warteschlange verwendet die [IXPLogon::FlushQueues](ixplogon-flushqueues.md) Methode herunterladen und Hochladen von ausstehenden Nachrichten zu und von eines Transportdienstes. In der Regel wird die MAPI-Warteschlange leeren Warteschlangen für alle Transportanbieter, die an der Sitzung angemeldeten beginnend mit der ersten Adressbuchhierarchie wie im Abschnitt Reihenfolge Transport Profil des Benutzers festgelegt. Das leeren Warteschlangen ist fast immer das Ergebnis einer direkten Anforderung durch den Benutzer, damit das Senden und Empfangen von Nachrichten, während das Warteschlangen leeren werden an die Warteschlange MAPI synchron ist. Da diese Aufrufe synchron sind, sollte der Adressbuchhierarchie sie so schnell wie möglich verarbeiten. 
   

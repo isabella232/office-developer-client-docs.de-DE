@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 70739711-ff43-407d-bc8b-6baf7a476fef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 31b2353b76bbac5cd58cd791f4a289c7dbabdb78
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1eb4d7ac8d0287388a1bb76185f23636eddcf809
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793109"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591674"
 ---
 # <a name="mapiinit0"></a>MAPIINIT_0
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Optionen für die Funktion ["MAPIInitialize"](mapiinitialize.md) übermittelt. 
   
@@ -62,7 +62,7 @@ MAPI_NO_COINIT
   
 > Das Flag MAPI_NO_COINT so festgelegt, dass **"MAPIInitialize"** nicht versucht, mit einem Aufruf von [CoInitialize](http://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)COM initialisieren. Wenn eine **MAPIINIT_0** -Struktur mit _UlFlags_ auf MAPI_NO_COINIT festgelegt in **"MAPIInitialize"** übergeben wird, wird MAPI wird vorausgesetzt, dass COM bereits initialisiert wurde, und den Aufruf von **CoInitialize**umgangen wird.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Multithread-Clients sollte das MAPI_MULTITHREAD_NOTIFICATIONS Flag festgelegt. Wenn das Flag nicht festgelegt ist, werden Benachrichtigungen auf dem Thread verwendet, um den ersten Aufrufen **"MAPIInitialize"** generiert. 
   

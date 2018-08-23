@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: a7b10007-42d8-4755-8362-f8ad9a8dad68
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c1ba49ba1b4deacb684da1411d86ebd4dd19e63f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 26ca126603ac1e695bd14a10cd8d9e637382b2e9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792136"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584303"
 ---
 # <a name="imapiformsetviewcontext"></a>IMAPIForm::SetViewContext
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Stellt ein Ansichtskontext für das Formular her. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Der Ansichtskontext wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Formular Viewer rufen Sie die **IMAPIForm::SetViewContext** -Methode, um ein bestimmtes Formular Ansichtskontext als aktuelle einzurichten. Ein Formular kann jeweils nur ein Ansichtskontext haben. 
   

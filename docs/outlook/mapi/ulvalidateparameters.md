@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: fb9050c9-5797-44f0-8bf5-6264f4e6d7c3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 42b2f8e9695b1dbdc5ea02db5a4e8a0eaba6099c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 297b5a516f8275b236092f9f385afcb673c95de0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795800"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585241"
 ---
 # <a name="ulvalidateparameters"></a>UlValidateParameters
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft eine interne Funktion, um zu überprüfen, dass die Parameter-Clientanwendungen zu Dienstanbietern und MAPI-vergangen sind. 
   
@@ -60,7 +60,7 @@ MAPI_E_CALL_FAILED
   
 > Ein Fehler unerwartete oder unbekannten Ursprungs verhindert den Abschluss des Vorgangs.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Das Makro **UlValidateParameters** wurde durch das Makro [UlValidateParms](ulvalidateparms.md) ersetzt. **UlValidateParameters** funktioniert nicht ordnungsgemäß auf RISC-Plattformen und wird nun auf diese zu kompilieren verhindert. Immer noch kompiliert und auf Intel-Plattformen ordnungsgemäß funktioniert, aber **UlValidateParms** wird auf allen Plattformen empfohlen. 
   

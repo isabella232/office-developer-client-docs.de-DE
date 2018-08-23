@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6c3e883c-80c0-4eda-8f81-8277d933a74b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 15cf8ff7e282035ddff53565aa92e81e3886729c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 02815c60b6bfc9809871af19e922913622588fc9
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792093"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584317"
 ---
 # <a name="imapifolderdeletefolder"></a>IMAPIFolder::DeleteFolder
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Löscht einen Unterordner.
   
@@ -89,7 +89,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Aufruf war erfolgreich, aber nicht alle Einträge erfolgreich gelöscht wurden. Wenn diese Warnung zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diese Warnung zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::DeleteFolder** -Methode löscht einen Unterordner. In der Standardeinstellung **DeleteFolder** funktioniert nur bei leeren Ordnern, jedoch können Sie sie erfolgreich für nicht leeren Ordner durch zwei Werte festlegen: DEL_FOLDERS und DEL_MESSAGES. Nur leere Ordner oder die Ordner, in denen die DEL_FOLDERS und die DEL_MESSAGES Kennzeichen für den Aufruf **DeleteFolder** festlegen können gelöscht werden. DEL_FOLDERS können alle Unterordner des Ordners entfernt werden soll. DEL_MESSAGES können alle Nachrichten von den Ordner entfernt werden soll. 
   

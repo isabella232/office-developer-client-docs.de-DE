@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2c7af147-f7eb-41ef-8403-93584a2041ba
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8e241022504291ad70f45a3318a7901bbbba213f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1b83316b599ea9ee62bde78cbd734dfb6b2d8b80
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793458"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588496"
 ---
 # <a name="pidlidbusinesscardcardpicture-canonical-property"></a>PidLidBusinessCardCardPicture (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält das Bild, das auf einer Visitenkarte verwenden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidBCCardPicture  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidBCCardPicture  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008041  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft muss entweder ein portable Network Graphics (PNG) oder JPEG-Stream. Diese Eigenschaft sollte in Verbindung mit der **DispidBCDisplayDefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md))-Eigenschaft wie folgt verwendet werden: **DispidBCCardPicture** sollte nicht vorhanden sein, auf einen Kontakt If ** DispidBCDisplayDefinition** ist nicht vorhanden. Diese Eigenschaft sollte auch nicht vorhanden sein, wenn die Daten in **DispidBCCardPicture** Bild einer Karte nicht erforderlich sind. 
   

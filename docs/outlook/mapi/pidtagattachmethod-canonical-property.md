@@ -12,29 +12,29 @@ api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
 description: 'Zuletzt geändert: 07 September 2016'
-ms.openlocfilehash: 1720e9a2eeb54daed1e559f99b0c63ce09585419
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 697f7e8045ca198c2c10b9396f19cb2d7ce8346e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794119"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583652"
 ---
 # <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod (kanonische Eigenschaft)
 
  
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine benutzerdefinierte MAPI-Konstante darstellt, die den Inhalt einer Anlage zugegriffen werden können wie. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_METHOD  <br/> |
-|Bezeichner:  <br/> |0x3705  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_METHOD  <br/> |
+|Kennung:  <br/> |0x3705  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   
@@ -86,7 +86,7 @@ Wenn das OLE-Objekt im OLE 2.0 **IStorage** Format ist, sind die Daten über **P
   
 Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter der *OLE Programmer's Reference* . 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE**ist, ist gescannt nicht in der Nachricht. Stattdessen enthält die **PR_ATTACH_LONG_FILENAME** -Eigenschaft eine absolute URL zu gescannt, der online gespeichert wird. 
   

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b2b368ce-4486-4f90-985f-59e50ca95229
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 195f2d718428eb8bb618fc982488c276d8a536da
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 761228a01e0dc778b962c62436e872ff20d72088
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792891"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586312"
 ---
 # <a name="ixplogontransportlogoff"></a>IXPLogon::TransportLogoff
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Initiiert den Prozess abmelden. 
   
@@ -45,7 +45,7 @@ S_OK
   
 > Der Aufruf erfolgreich ausgeführt und der erwartete Wert oder Werte zurückgegeben. Wenn alles andere als S_OK zurückgegeben wird, wird der Anbieter abgemeldet.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die MAPI-Warteschlange die **IXPLogon::TransportLogoff** -Methode aufgerufen, um eine Sitzung Transport Anbieter für einen bestimmten Benutzer zu beenden. Vor dem Aufruf von **TransportLogoff**, verwirft die MAPI-Warteschlange von Daten zu unterstützten messaging-Adresstypen für diese Sitzung in der [IXPLogon::AddressTypes](ixplogon-addresstypes.md) -Methode übergeben. 
   

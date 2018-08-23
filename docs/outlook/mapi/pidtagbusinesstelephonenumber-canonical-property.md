@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: e691f428-fdb2-4ec5-b6e6-33fe01725c5c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 690b2c45a8a6226c006a714133e75f48528b5b87
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 176c42f26a8c318c05d82c6fa8a81c794b23628a
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794155"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590904"
 ---
 # <a name="pidtagbusinesstelephonenumber-canonical-property"></a>PidTagBusinessTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält die primäre Telefonnummer des Empfängers Sitz des Business. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_BUSINESS_TELEPHONE_NUMBER, PR_BUSINESS_TELEPHONE_NUMBER_A, PR_BUSINESS_TELEPHONE_NUMBER_W, PR_OFFICE_TELEPHONE_NUMBER, PR_OFFICE_TELEPHONE_NUMBER_A, PR_OFFICE_TELEPHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A08  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_BUSINESS_TELEPHONE_NUMBER, PR_BUSINESS_TELEPHONE_NUMBER_A, PR_BUSINESS_TELEPHONE_NUMBER_W, PR_OFFICE_TELEPHONE_NUMBER, PR_OFFICE_TELEPHONE_NUMBER_A, PR_OFFICE_TELEPHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A08  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaften sind Beispiele für Eigenschaften, die Identifikation und Zugriff auf Informationen über einen Empfänger enthält. Diese Eigenschaften werden durch den Empfänger und des Empfängers Organisation definiert. 
   

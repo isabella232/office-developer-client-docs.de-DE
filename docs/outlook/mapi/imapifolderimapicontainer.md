@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: bc2e8d17-7687-43c2-8f01-b677703f7288
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 64a64029c3507d9ac4b520076a44e23170dd9bd4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1886987515f3cafe38418960baa4b6fd89e3b6f2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792131"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590799"
 ---
 # <a name="imapifolder--imapicontainer"></a>IMAPIFolder : IMAPIContainer
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Führt Vorgänge für die Nachrichten und Unterordner in einem Ordner.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Folder-Objekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Folder-Objekten  <br/> |
 |Implementiert von:  <br/> |Nachricht-Anbieter  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen und MAPI  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIFolder  <br/> |
@@ -53,7 +53,7 @@ Führt Vorgänge für die Nachrichten und Unterordner in einem Ordner.
 |[SaveContentsSort](imapifolder-savecontentssort.md) <br/> |Legt die Standard-Sortierreihenfolge für einen Ordner Inhaltstabelle fest.  <br/> |
 |[EmptyFolder](imapifolder-emptyfolder.md) <br/> |Löscht alle Nachrichten und Unterordner aus einem Ordner, ohne den Ordner selbst löschen.  <br/> |
    
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_DISPLAY_NAME** ([PidTagDisplayNamePrefix](pidtagdisplaynameprefix-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
 |**PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |

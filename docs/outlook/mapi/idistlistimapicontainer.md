@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: bd8e1ddb-3027-428b-8964-81614f80282d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7fee3c84d6a4d4a94397f5197f45637b0c7dd2be
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d5b9fb9bf8c84433ee5000cc8832c2f09bfc5fe3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792056"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590624"
 ---
 # <a name="idistlist--imapicontainer"></a>IDistList : IMAPIContainer
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht den Zugriff auf Verteilerlisten änderbare Adresse Adressbuch-Container. **IDistList** können erstellen, kopieren und Löschen von Verteilerlisten, neben dem namensauflösung ausgeführt. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Verteilung List-Objekten  <br/> |
+|Verfügbar gemacht von:  <br/> |Verteilung List-Objekten  <br/> |
 |Implementiert von:  <br/> |Von adressbuchanbietern implementierte  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IDistList  <br/> |
@@ -41,7 +41,7 @@ Ermöglicht den Zugriff auf Verteilerlisten änderbare Adresse Adressbuch-Contai
 
 Diese Schnittstelle hat keinen eindeutigen Methoden.
   
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_ADDRTYPE** ([PidTagAddressType](pidtagaddresstype-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
@@ -49,7 +49,7 @@ Diese Schnittstelle hat keinen eindeutigen Methoden.
 |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IDistList** -Schnittstelle erbt von [IMAPIContainer](imapicontainerimapiprop.md) und enthält die gleichen Methoden als Address Book Container. Aus diesem Grund, da die Methoden der Schnittstelle **IDistList** identisch mit denen der [IABContainer](iabcontainerimapicontainer.md) Schnittstelle sind, sind sie nicht hier nicht dupliziert. 
   

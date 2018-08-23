@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4ce91a65-17db-4ee2-ad59-01fd5b1f1ea7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d3673c3b10afb55121339e335163ce9b2e5937e3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8ad5fd9cf437afc3999697792850548e4e5a1435
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791709"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582896"
 ---
 # <a name="form-configuration-file-description-section"></a>Abschnitt [Description] in der Formularkonfigurationsdatei
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Im Abschnitt **[Beschreibung]** enthält alle Eigenschaften des Formulars, die Steuerelemente in des Formulars die Benutzeroberfläche und Attribute, die verwendet werden, bei der Suche nach dem Formular zugeordnet sind. Die **MessageClass**, **Clsid**und **DisplayName** -Einträge, die den Namen der Nachrichtenklasse des Formulars, dessen GUID und die Nachrichtenklasse Anzeigename, jeweils zu identifizieren, sind erforderliche Einträge verwendet, um das Formular in der Formularbibliothek gesucht werden soll. . Die verbleibenden Einträge sind optional. Das Format des Abschnitts **[Beschreibung]** lautet: 
   

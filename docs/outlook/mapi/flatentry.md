@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 03e53e08-9113-4101-84c9-ccf6d43127f6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2f5f4d50b085c437d1caab5f70dcb741afe090bb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cf84c7d94e67da0ce7453829042e7be0d4e313f1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791692"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585549"
 ---
 # <a name="flatentry"></a>FLATENTRY
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Struktur [ENTRYID](entryid.md) plus eine Byteanzahl angegeben, die die Größe der Struktur **ENTRYID** angibt. 
   
@@ -51,7 +51,7 @@ typedef struct
   
 > Die vollständige Eintrag-Bezeichner, der das Array von Flags und binäre Daten enthält.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Eine Struktur **FLATENTRY** ähnelt eine [ENTRYID](entryid.md) -Struktur. Es gibt jedoch einige Unterschiede: 
   

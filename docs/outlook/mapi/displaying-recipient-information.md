@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7ffec274-ee90-44c7-ab2e-7dfb502517a6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7071c05f6f59740163f97f840c7fa48d83bea815
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4610d9e643541e39144f2af86a2d64928b8e9ca7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791575"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591289"
 ---
 # <a name="displaying-recipient-information"></a>Anzeigen von Empfängerinformationen
 
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 MAPI bietet ein Standarddialogfeld für Empfänger-Details anzeigen. Im Dialogfeld Details der wird aus einer Tabelle anzeigen und eine Implementierung **IMAPIProp** erstellt. Zeigt die Tabelle erläutert, wie unter "Details" und die Implementierung **IMAPIProp** steuert die Daten für den Empfänger. Der Anbieter ist verantwortlich für die Angabe der Tabelle anzeigen und die Implementierung **IMAPIProp** für jeden Empfänger. 
   

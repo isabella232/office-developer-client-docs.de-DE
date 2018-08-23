@@ -16,12 +16,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
 description: Hier finden Sie Dokumentation, Codebeispiele, Artikel mit Anleitungen und Programmierreferenzen zum Entwickeln von apps für den Office Store oder privaten app-Katalog und zum Anpassen und Integrieren von Project Server und Project-Clients mit einer Vielzahl von anderen Desktop- und business Anwendungen für Enterprise Projektmanagement.
-ms.openlocfilehash: 490b5bd2fcbe2f92653b6ebc84d36e5c28cdc8c6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 23c1229769a08f78b9ad35eab7403876cbe294d4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796303"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590757"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013-Entwicklerdokumentation
 
@@ -30,7 +30,7 @@ Hier finden Sie Dokumentation, Codebeispiele, Artikel mit Anleitungen und Progra
 Willkommen Sie bei der Microsoft Project 2013 Software Development Kit (SDK). Das SDK enthält Dokumentation, Codebeispiele, Artikel mit Anleitungen und Programmierreferenzen zum Entwickeln von apps für einen öffentlichen oder privaten app-Katalog und zum Anpassen und Integrieren von Project Server und den Project-Clients mit einer Vielzahl von anderen Desktop und Geschäftsanwendungen für Enterprise Projektmanagement.
   
 > [!NOTE]
-> Projektserver 2013 basiert auf der Plattform für SharePoint Server 2013 und Project 2013 enthält einen Großteil der gleichen Infrastruktur als andere Office 2013-Anwendungen. Eine Dokumentation der einzelnen Details des Modells für SharePoint-Add-ins, SharePoint-basierten Workflows finden Sie unter Webparts, Entwicklung mit anderen SharePoint-Features und eine Dokumentation der Office-Add-ins, [Apps für Office und SharePoint](http://msdn.microsoft.com/en-us/library/fp161507%28office.15%29.aspx). 
+> Projektserver 2013 basiert auf der Plattform für SharePoint Server 2013 und Project 2013 enthält einen Großteil der gleichen Infrastruktur als andere Office 2013-Anwendungen. Eine Dokumentation der einzelnen Details des Modells für SharePoint-Add-ins, SharePoint-basierten Workflows finden Sie unter Webparts, Entwicklung mit anderen SharePoint-Features und eine Dokumentation der Office-Add-ins, [SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins) und [Office-Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins). 
   
 ## <a name="introduction-to-the-project-sdk"></a>Einführung in das Project-SDK
 <a name="pj15_Welcome_IntroToSDK"> </a>

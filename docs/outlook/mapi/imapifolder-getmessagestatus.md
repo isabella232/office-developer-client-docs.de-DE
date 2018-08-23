@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3ddbb129-5d6b-4eca-aba0-3620609ed0c1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bac363183c15a2d53c15b46724266b6cb5744075
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 8e5ccadbd6df664b6650487f340508ae4548a1c2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792113"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583267"
 ---
 # <a name="imapifoldergetmessagestatus"></a>IMAPIFolder::GetMessageStatus
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Ruft den Status einer Nachricht in einem bestimmten Ordner zugeordnet, (z. B., ob die Nachricht zum Löschen markiert ist).
   
@@ -84,7 +84,7 @@ S_OK
   
 > Die Nachricht den Status wurde erfolgreich abgerufen.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPIFolder::GetMessageStatus** -Methode gibt den Status einer Nachricht. Nachrichtenstatus wird in der Nachricht **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft gespeichert. 
   

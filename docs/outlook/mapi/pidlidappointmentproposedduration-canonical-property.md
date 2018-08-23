@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 37806778-a19a-4905-a845-525d3912bf9e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 56891591871831ba9496f50b69bf4b94ef012c3c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e3983a110ee9a72f3c82eaf1bbebc810d07f3c4b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793352"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591303"
 ---
 # <a name="pidlidappointmentproposedduration-canonical-property"></a>PidLidAppointmentProposedDuration (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt den vorgeschlagenen Wert für die Eigenschaft **DispidApptDuration** ([PidLidAppointmentDuration](pidlidappointmentduration-canonical-property.md)) für einen Leistungsindikator Vorschlag.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidApptProposedDuration  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidApptProposedDuration  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008256  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Wenn festgelegt, es gleich der Anzahl der Minuten zwischen den **DispidApptProposedStartWhole** ([PidLidAppointmentProposedStartWhole](pidlidappointmentproposedstartwhole-canonical-property.md)) und **DispidApptProposedEndWhole** ([PidLidAppointmentProposedEndWhole](pidlidappointmentproposedendwhole-canonical-property.md)) Eigenschaften sein muss.
   

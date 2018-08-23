@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 070377ca-ba9e-42ef-ac6b-ff7548b5ccf5
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 10890c1fe430ddbc45c16908df3ac340284c9f18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: c5f136a0d26b7519bc1b7b3d8f448f5f382767ad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793321"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591254"
 ---
 # <a name="outgoing-queue-tables"></a>Tabellen für ausgehende Warteschlange
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine ausgehende Warteschlangentabelle enthält Informationen zu allen ausgehenden Nachrichten für einen Nachrichtenspeicher. Nachricht Anbieter implementieren ausgehende Warteschlange Tabellen für die MAPI-Warteschlange verwendet. Speicher, die nicht das Senden oder Empfangen von Nachrichten muss in dieser Tabelle nicht implementieren. 
   

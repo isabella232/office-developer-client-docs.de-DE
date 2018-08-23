@@ -9,26 +9,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 322b915f-d5b8-40cb-b41a-62d08f3d08f9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 451a8bd0ffd887212ce5c95579755fb8214bc1d7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: dafa251403740aca806efbb52962cc7323e55239
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794968"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590442"
 ---
 # <a name="pidtagreportdispositiontonames-canonical-property"></a>PidTagReportDispositionToNames (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Namen der Berichtempfänger für Nachrichten, die Empfangsbestätigungen anfordern.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_TO_NAMES, PR_REPORT_DISPOSITION_TO_NAMES_A, PR_REPORT_DISPOSITION_TO_NAMES_W  <br/> |
-|Bezeichner:  <br/> |0x0083  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_REPORT_DISPOSITION_TO_NAMES, PR_REPORT_DISPOSITION_TO_NAMES_A, PR_REPORT_DISPOSITION_TO_NAMES_W  <br/> |
+|Kennung:  <br/> |0x0083  <br/> |
 |Datentyp:  <br/> |PT_MV_STRING8 PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7525eee1-4016-49b8-9509-5ebbe1db819f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9f80feecda219e3bcebbf8ceb346b5034e821470
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 4d4f7ed75bb1144b7cd4a813b0d093246a30cca5
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791538"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588349"
 ---
 # <a name="developing-a-tnef-enabled-transport-provider"></a>Entwickeln eines TNEF-fähigen Transportanbieters
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Um Interoperabilität zwischen Messagingsystemen zu fördern, die unterschiedliche Gruppen von MAPI-Funktionen zu unterstützen, stellt MAPI Transport Neutral Encapsulation Format (TNEF) als standard Möglichkeit zum Übertragen von Daten an. Dieses Format kapselt MAPI-Eigenschaften, die von einem zugrunde liegenden Messagingsystem in einen binären Datenstrom, der beim Senden eines Transportdienstes zusammen mit der Nachricht übertragen werden nicht unterstützt. Der Adressbuchhierarchie, die die Nachricht empfängt kann dann decodieren den binären Stream zum Abrufen aller Eigenschaften der ursprünglichen Nachricht und deren Clientanwendungen zur Verfügung zu stellen. Das betriebliche Modell für TNEF wird:
   

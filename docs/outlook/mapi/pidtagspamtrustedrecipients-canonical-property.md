@@ -7,23 +7,23 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 59f43316-3ff6-4ed0-bc29-b31039192b08
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3a852ff8b4e3ff0df59c4c84f53802fa29d63a80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 11999ef954ba3a35fa380f9ad2cf9f1fdffdea38
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795168"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587551"
 ---
 # <a name="pidtagspamtrustedrecipients-canonical-property"></a>PidTagSpamTrustedRecipients (kanonische Eigenschaft)
  
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine durch Semikolons getrennte Liste der e-Mail-Adressen und Domänen, die die vertrauenswürdigen Empfänger darstellen.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SPAM_TRUSTED_RECIPIENTS_W  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SPAM_TRUSTED_RECIPIENTS_W  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0419  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Spam  <br/> |

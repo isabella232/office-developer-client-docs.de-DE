@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: c9a156e6-3472-4409-a4ba-3a1a65b7bdcd
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 3c27b859f6d056d3b9a98bd4d71db8e500dff696
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 581607e184d67413e735c4cbfb874643b3222a80
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795824"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588769"
 ---
 # <a name="using-an-advanced-search-dialog-box"></a>Verwenden eines Dialogfelds für die erweiterte Suche.
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Einige Address Book Container unterstützt eine erweiterte Suchfunktionen, mit der Clients auf andere Eigenschaften als **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) durchsuchen kann. Address Book Container, die erweiterte Suchvorgänge unterstützen, verfügen über die Container-Objekteigenschaft **PR_SEARCH** ([PidTagSearch](pidtagsearch-canonical-property.md)). Diese Container-Objekt ermöglicht den Zugriff auf eine zeigt die Tabelle, die das Dialogfeld Suchen beschreibt – ein Dialogfeld zum eingeben und bearbeiten die Kriterien für die erweiterte Suche verwendet.
   

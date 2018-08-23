@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 633e71e6-fdab-4453-8921-9bc0d5752b26
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4205c946eb92c05e5ff1ec3616dad174034cc893
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e6d0d95351ab2b82f00a7a5758e3f30637ef2cbb
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794791"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591401"
 ---
 # <a name="pidtagphysicalforwardingaddressrequested-canonical-property"></a>PidTagPhysicalForwardingAddressRequested (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn Message Transfer Agent So fügen Sie eine physische Weiterleitungsadresse für einen Nachrichtenempfänger an den Absender einer Nachricht angefordert wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PHYSICAL_FORWARDING_ADDRESS_REQUESTED  <br/> |
-|Bezeichner:  <br/> |0x0C0E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PHYSICAL_FORWARDING_ADDRESS_REQUESTED  <br/> |
+|Kennung:  <br/> |0x0C0E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

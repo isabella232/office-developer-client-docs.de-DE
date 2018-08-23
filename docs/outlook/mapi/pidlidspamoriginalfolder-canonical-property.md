@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: 45846fe3-7ab3-4019-98bb-fe615889c31c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 4cb0243f38137afa820c3499a8b95954098bd6fc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 639d5e96eb56fb543d6a6026b1c9400631cee819
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793812"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593340"
 ---
 # <a name="pidlidspamoriginalfolder-canonical-property"></a>PidLidSpamOriginalFolder (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welcher Ordner eine Nachricht in vorher in den junk-e-Mail-Ordner gefiltert wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidSpamOriginalFolder  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidSpamOriginalFolder  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000859C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Wert dieser Eigenschaft ist die **EntryID** des Ordners, der die Nachricht enthalten, bevor sie verschoben wurde. Diese Eigenschaft muss festgelegt werden, wenn eine Nachricht als Spam gekennzeichnet ist. 
   

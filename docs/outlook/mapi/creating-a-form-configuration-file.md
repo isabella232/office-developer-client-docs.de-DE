@@ -7,25 +7,25 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: aaf3b33d-ad2d-4ef8-847f-1ab1eaf08706
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 9ceb7ad347e73f69eca3463ed2edc4438a45a21f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d8159d93aef020d7c9c1b56be4cf6256f80b8aa3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791483"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584168"
 ---
 # <a name="creating-a-form-configuration-file"></a>Erstellen einer Formularkonfigurationsdatei
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Konfigurationsdatei Formular enthält Informationen zu einem Formular, an den Formular-Manager verwendeten und Clientanwendungen. Eine Konfigurationsdatei Formular enthält eine umfassende Spezifikation für ein Formular, einschließlich der Eigenschaften, die vom Formular für die Verwendung von messaging-Clients, die vom Formular implementierte Verben und die Plattformen, die vom Formular veröffentlicht.
   
 Eine Konfigurationsdatei Formular ist eine Datei mit der Erweiterung cfg und weist das Format einer Windows-Initialisierungsdatei ähnelt. Es handelt sich um eine nur-Text-Datei mit einer Anzahl von Abschnitten. Jeder Abschnitt beginnt mit einem Abschnittsnamen, die in Klammern eingeschlossen. Jeder Abschnitt enthält eine oder mehrere Zeilen, die Werte und Einstellungen für diesen Abschnitt relevant definieren. Werte haben einen der folgenden Typen:
   
-- Zeichenfolge
+- String
     
 - Zeichenfolge angezeigt
     

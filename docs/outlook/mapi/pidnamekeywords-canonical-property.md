@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bcc0cda0-02bc-49a5-9fb9-850b4c2867c1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b71579a4652df62e696cd0dc6113dde44fad4287
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: caa337541b45c2cb602f0848769b3b07028ea0fd
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793961"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590540"
 ---
 # <a name="pidnamekeywords-canonical-property"></a>PidNameKeywords (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Schlüsselwörter oder Kategorien für die Message-Objekt enthält.
   
@@ -35,7 +35,7 @@ Schlüsselwörter oder Kategorien für die Message-Objekt enthält.
 |Datentyp:  <br/> |PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Ein mit mehreren String-Wert, der angibt, die Kategorien für ein Meldungsobjekt, die Länge einer Zeichenfolge in dieser Eigenschaft mehrwertige Zeichenfolge muss kleiner als 256 sein.
   

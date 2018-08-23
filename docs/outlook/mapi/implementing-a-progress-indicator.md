@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3a062a88-e87e-4c0c-944e-544a8f080930
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 767b8723d9a544a31ee5c4bbc1d6186a15387b44
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1a359ec413da91b3e2819978e80ea0a921f6b245
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792538"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587124"
 ---
 # <a name="implementing-a-progress-indicator"></a>Implementieren eines Statusindikators
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Viele Vorgänge, die von Clients initiiert beanspruchen sehr viel Zeit. Einer der Eingabeparameter für diese Vorgänge potenziell langen ist ein Zeiger auf ein Objekt Fortschritt – ein Objekt, das implementiert die [IMAPIProgress: IUnknown](imapiprogressiunknown.md) Schnittstelle. Fortschritt Objekte Steuern der Darstellung und Anzeige von Statusanzeigen und von Clients und von MAPI implementiert werden. Sie können auswählen, ob einem Fortschritt-Objekt implementiert werden soll oder nicht. Die MAPI-Implementierung ist verfügbar für Dienstanbieter zu verwenden, wenn Sie festlegen, dass keine Implementierung bereitstellen. 
   

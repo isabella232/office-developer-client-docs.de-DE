@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 5b624954-d975-4d5e-84d7-74e096ac30af
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 592bd2c88c8eea17d80fe7cb725b075235c51763
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2ed71b5eef0c25a78d7c8ec695a756a02e796dbf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793128"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586032"
 ---
 # <a name="mapiopenformmgr"></a>MAPIOpenFormMgr
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Öffnet eine [IMAPIFormMgr](imapiformmgriunknown.md) -Schnittstelle in einem Formular Bibliothek Anbieter-Objekt im Zusammenhang mit einer vorhandenen Sitzung an. 
   
@@ -54,7 +54,7 @@ MAPIOpenFormMgr(
 
 None.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Nach eine Clientanwendung an die **MAPIOpenFormMgr** -Funktion aufruft, erfolgen die meisten nachfolgende Forms-bezogene Interaktionen über den Formular-Bibliothek-Anbieter oder eine Schnittstelle, die vom Formular Bibliotheksanbieter zurückgegeben. Die **IMAPIFormMgr** -Schnittstelle ermöglicht dem Client zum Arbeiten mit Message Handler und Ausführen von Lösungen zwischen Nachrichtenklassen und Formularbibliotheken. 
   

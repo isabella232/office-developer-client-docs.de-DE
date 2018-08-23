@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1904cc68-adf2-4543-8210-043a72b90887
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 60a9058b5e604c480597c4bb245353522e41d1e1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ca8fd1dc8dde69cd9f2e8932cc0c50ea03c86a24
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793485"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587250"
 ---
 # <a name="pidlidcurrentversionname-canonical-property"></a>PidLidCurrentVersionName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Zeichenfolge, der die Versionsnummer der Haupt- und Hilfsintervalle der Outlook-Anwendung für ein Element angibt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidCurrentVersionName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidCurrentVersionName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008554  <br/> |
 |Datentyp:  <br/> |Noch nicht festgelegt  <br/> |

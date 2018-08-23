@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 784b6218-548d-817a-caaa-cf9be6bc3d2f
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 53fa6bd49190bb88daeb0438dc0112e34322383e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e0c8c4c6251581506c7bdd78c009bb12e8291c81
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792248"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22586935"
 ---
 # <a name="imapiofflinemgradvise"></a>IMAPIOfflineMgr::Advise
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Registriert einen Client für Rückrufe für eine offline-Objekt zu erhalten.
   
@@ -63,7 +63,7 @@ E_NOINTERFACE
   
 > Die Callback-Schnittstelle in *pAdviseInfo* angegebenen ist ungültig. 
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Beim Öffnen einer offline-Objekts mithilfe von **[HrOpenOfflineObj](hropenofflineobj.md)**, erhält ein Client eine offline-Objekt, das **IMAPIOfflineMgr**unterstützt. Der Client kann für die Arten von mithilfe von **[IMAPIOffline::GetCapabilities](imapioffline-getcapabilities.md)** durch das Objekt unterstützt Rückrufe überprüfen. Der Client kann bestimmen, den Typ sowie andere Details zu den Rückruf es möchte, und rufen Sie dann **IMAPIOfflineMgr::Advise** registrieren, um eine solche Rückrufe zum Objekt empfangen. 
   

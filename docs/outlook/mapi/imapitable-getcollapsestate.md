@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: fd4ea496-4c83-49cd-854e-f373cc1ed2af
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2c1246c46e9723cd3f6d92f0a44fc1419eef4a2e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 46d993060d03b8c22c2d6c083c05f023648e6642
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792452"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589665"
 ---
 # <a name="imapitablegetcollapsestate"></a>IMAPITable::GetCollapseState
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Daten, die benötigt werden, um die aktuelle neu erstellen erweitert oder reduziert Zustand einer kategorisierten Tabelle.
   
@@ -73,7 +73,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Tabelle unterstützt keine Kategorisierung und erweiterte und reduzierte Ansichten.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Die **IMAPITable::GetCollapseState** -Methode funktioniert mit der [IMAPITable::SetCollapseState](imapitable-setcollapsestate.md) -Methode zum Ändern des Benutzers Ansicht einer kategorisierten Tabelle. **GetCollapseState** speichert die Daten, die für **SetCollapseState** zu verwenden, um die entsprechenden Ansichten der Kategorien von einer kategorisierten Tabelle neu erstellen erforderlich ist. Dienstanbieter bestimmen die Daten gespeichert werden soll. Die meisten Dienstanbieter implementieren **GetCollapseState** speichern jedoch die folgenden: 
   

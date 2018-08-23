@@ -11,31 +11,31 @@ api_name:
 api_type:
 - COM
 ms.assetid: bb88750b-4773-4241-aa38-462a2634dbcb
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 458a20e238d6023520ede3416ece239f2d553891
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9cbd237e80f4862683c1fa914f8261f8351b148e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793834"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589021"
 ---
 # <a name="pidlidtaskfcreator-canonical-property"></a>PidLidTaskFCreator (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass die Aufgabe durch den aktuellen Benutzer oder die Benutzer-Agent anstelle von ursprünglich erstellt wurde, durch die Verarbeitung einer Aufgabenanfrage.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidTaskFCreator  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidTaskFCreator  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Task  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000811E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Client wird diese Eigenschaft auf true fest, wenn der Benutzer die Aufgabe erstellt und auf false festgelegt, wenn die Aufgabe von einem anderen Benutzer zugewiesen ist. Wenn Sie diese Eigenschaft nicht festgelegt lassen, wird der Wert TRUE angenommen.
   

@@ -9,26 +9,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 2f8eff88-848c-4ad4-a6be-b1744a0ce4ce
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 28e3522e51a5ec98c8ed7efed878aa436d06ed68
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: e747034d64d83105de6413fe7546235cabb5d491
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794855"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585472"
 ---
 # <a name="pidtagpstrememberpassword-canonical-property"></a>PidTagPstRememberPassword (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Bestimmt, ob das Kennwort im Profil gespeichert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PST_REMEMBER_PW  <br/> |
-|Bezeichner:  <br/> |0x6701  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PST_REMEMBER_PW  <br/> |
+|Kennung:  <br/> |0x6701  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
    

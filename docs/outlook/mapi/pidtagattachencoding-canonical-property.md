@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 3b30cec6-da1e-4ef1-8c17-24b66f31cf0a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: cdeb432e20f2779bbb625566108551748b48a01f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 7475eef15398081a30307e7b4a077a0700a6ba8c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794103"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584198"
 ---
 # <a name="pidtagattachencoding-canonical-property"></a>PidTagAttachEncoding (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 ASN. 1 Objektbezeichner, der angibt, die Codierung für eine Anlage enthält. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_ENCODING  <br/> |
-|Bezeichner:  <br/> |0x3702  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_ENCODING  <br/> |
+|Kennung:  <br/> |0x3702  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt den Algorithmus zum Transformieren der Daten in einer Anlage.
   

@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 23074402-6ac1-47f1-8a49-b8909f98a26e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a21eecfb1bf3bc4f09fc5becb9a4a99a97193330
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 30482f7d6acef7377a1b63bc3de4e43be48d8608
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794338"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583358"
 ---
 # <a name="pidtagdisplaytypeex-canonical-property"></a>PidTagDisplayTypeEx (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Typ eines Eintrags im Hinblick auf wie der Eintrag für die globale Adressliste in einer Zeile in einer Tabelle angezeigt werden soll. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DISPLAY_TYPE_EX  <br/> |
-|Bezeichner:  <br/> |0x3905  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DISPLAY_TYPE_EX  <br/> |
+|Kennung:  <br/> |0x3905  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Adressbuch  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft gibt den Typ eines Eintrags im Hinblick auf, wie er in der globalen Adressliste angezeigt werden soll. Bietet zusätzliche Informationen, die im **PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md)) dargestellt werden kann.
   

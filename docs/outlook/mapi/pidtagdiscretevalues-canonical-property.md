@@ -11,30 +11,30 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 958f3cf7-953a-43f4-9102-ad35edf5e813
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 9911d6cee40637a69dfaf432be0e6d42bf38bccd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f1aa54c3364185d322137ef41f6aface31c5c556
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794331"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587418"
 ---
 # <a name="pidtagdiscretevalues-canonical-property"></a>PidTagDiscreteValues (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Unzustellbarkeitsbericht zu nur einzelne Mitglieder einer Verteilerliste, anstatt die gesamte Liste angewendet wird. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_DISCRETE_VALUES  <br/> |
-|Bezeichner:  <br/> |0x0E0E  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_DISCRETE_VALUES  <br/> |
+|Kennung:  <br/> |0x0E0E  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird in einen Unzustellbarkeitsbericht verwendet, wenn die Nachricht an einen oder mehrere Mitglieder von Verteilerlisten nicht übermittelt werden konnte. Dient zur erneuten Begrenzung nur die einzelnen Elemente und nicht die Verteilerliste als Ganzes versucht, ein. 
   

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 1a2325ea-ddfa-480f-b65f-f5b20471fb40
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 68e877568565cfcc30b60e9b21f55b7dc1600b28
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: f922ee95cda84311d840aa9de339883c57efba56
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791525"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590323"
 ---
 # <a name="defining-new-mapi-properties"></a>Definieren von neuen MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Trotz der Fülle von Eigenschaften von MAPI für die Verwendung durch Clients und -Dienstanbieter bereitgestellt ermöglicht MAPI neue Eigenschaften bei Bedarf erstellt werden soll. Die gültigen Szenarien für die neue öffentliche Eigenschaften definieren gehören einen Client Erstellen von Eigenschaften zur Unterstützung einer neuen Nachrichtenklasse und einem Dienstanbieter Erstellung neuer Eigenschaften einzigartigen Merkmale von messaging System verfügbar machen.
   

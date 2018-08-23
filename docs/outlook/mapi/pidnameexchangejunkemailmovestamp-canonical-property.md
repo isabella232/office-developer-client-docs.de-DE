@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a52f46c-371c-46d0-8d66-e154482e8269
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 41e1113faec18625f57b24f9fc165e2cb029724d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 1312f590dfc0e8388495351dd4870fcf8b9e22f0
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793957"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591366"
 ---
 # <a name="pidnameexchangejunkemailmovestamp-canonical-property"></a>PidNameExchangeJunkEmailMoveStamp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den beibehaltenen Nachrichtenwert, der angibt, dass die Nachricht nicht durch einen Spamfilter verarbeitet werden soll, da die Nachricht wurde entweder bereits verarbeitet oder sicher ist.
   
@@ -35,7 +35,7 @@ Enthält den beibehaltenen Nachrichtenwert, der angibt, dass die Nachricht nicht
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sichere Nachrichten  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft wird auf versehen jede Nachricht, die die Regel für Junk-e-Mail verschoben wird, oder anderweitig vertrauenswürdige Inhalte.
   

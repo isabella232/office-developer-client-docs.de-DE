@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7a49b944-cef1-4642-9208-b137fd61171a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d18a595a1019c3bd583ef0c38ee5cbe0d497bf93
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 954e63e5b669ffdd15bbc2548d75c4d420eaf88d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795139"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22591044"
 ---
 # <a name="pidtagsentrepresentingsearchkey-canonical-property"></a>PidTagSentRepresentingSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Enthält den Search-Schlüssel für die messaging-Benutzer vom Absender dargestellt.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SENT_REPRESENTING_SEARCH_KEY  <br/> |
-|Bezeichner:  <br/> |0x003B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SENT_REPRESENTING_SEARCH_KEY  <br/> |
+|Kennung:  <br/> |0x003B  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den messaging-Benutzer, die vom Absender dargestellt wird. Wenn eine Clientanwendung eine Nachricht im Auftrag einer anderen Client sendet, sollten sie alle Absender dargestellte Eigenschaften auf die Werte für diesen Client festgelegt. Ein messaging-Benutzer in der Regel in einem eigenen Auftrag senden bewirkt, dass die dargestellte Absender Eigenschaften nicht festgelegt ist.
   

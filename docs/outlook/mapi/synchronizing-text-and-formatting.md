@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: d7e166f0-1214-4571-b9a8-366960772a7a
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 40d7a45ab97e0d2f8e9d3db1e1d38eb3bdb75158
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d797932a9fd22944f1cfd78e7fb67cd3ddbf8632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795710"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588818"
 ---
 # <a name="synchronizing-text-and-formatting"></a>Synchronisieren von Text und Formatierung
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Die größte Herausforderung beim Senden von Nachrichten Rich Text Format (RTF) wird den Text mit der Formatierung synchronisiert halten. Um sicherzustellen, dass beim Empfang von Nachrichten an ihrem Ziel wie für ihre Ersteller für die direkte Verwendung und sind die Text und Formatierung werden synchronisiert, MAPI bietet die [RTFSync](rtfsync.md) -Funktion. **RTFSync** wird beim Download von Nachrichten mit einem Dienstanbieter Transport in der Regel durch RTF-fähigen Clients vor dem eingehende Nachrichten anzeigen und die MAPI-Warteschlange aufgerufen. Anrufer Geben Sie den Bereich der möglichen Abweichung, indem Sie ein oder zwei Flags zu **RTFSync**übergeben:
   

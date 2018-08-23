@@ -11,30 +11,30 @@ api_name:
 api_type:
 - COM
 ms.assetid: c5dfb21f-b35e-4521-bf2b-e3d03d98d75d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 8a44c88cbc971d9d5358fc6b24093e56e9565eb1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d2fb648de0c974c9b54ad925c271dd5eb7276b71
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795059"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585514"
 ---
 # <a name="pidtagruleuserflags-canonical-property"></a>PidTagRuleUserFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Diese Eigenschaft wird vom Client für die ausschließliche Verwendung des Clients festgelegt. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_USER_FLAGS  <br/> |
-|Bezeichner:  <br/> |0x6678  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_USER_FLAGS  <br/> |
+|Kennung:  <br/> |0x6678  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>HinwBemerkungeneise
 
 Der Server muss den Wert dieser Eigenschaft beibehalten, wenn er vom Client festgelegt wurde. Der Server muss während Rule Evaluation und Verarbeitung ignorieren.
   

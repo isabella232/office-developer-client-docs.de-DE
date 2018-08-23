@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7b8efb4e-b5be-41b8-81bb-9aa1da421433
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0dd79d9630837b5ec8a709d386ccc0db987dfb5b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 923fd527eb7d04b31f15e6d8673e2e964fa0d1ed
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791435"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585640"
 ---
 # <a name="contents-tables"></a>Inhaltstabellen
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Eine Inhaltstabelle enthält Informationen zu Objekten in einem MAPI-Container. Von adressbuchanbietern implementierte implementieren Sie Inhalt Tabellen für jeden ihrer Container und Nachrichtenspeicher und remote-Transport-Anbieter Inhalt Tabellen für ihre Ordner. Die Inhaltstabelle ein Adressbuchcontainer enthält Informationen zu den messaging Listenobjekten Benutzer- und Verteilung, während der Inhalt eines Ordners Informationen zu eigenen Nachrichten in der Tabelle ist. Inhalt Tabellen werden hauptsächlich von Clientanwendungen verwendet. 
   

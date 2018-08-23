@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 19b0b8a5-4907-4d3d-8301-d45591f582c3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b7c40fee0f1d8391166979836da2fce872019743
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f8ba0fbb0808afde1bc7cbfd62c770e4829c03a6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793360"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588741"
 ---
 # <a name="pidlidaddresscountrycode-canonical-property"></a>PidLidAddressCountryCode (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Betrifft**: Outlook 2013 | Outlook 2016 
   
 Gibt die Landesvorwahl der e-Mail-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidAddressCountryCode  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidAddressCountryCode  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080DD  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
