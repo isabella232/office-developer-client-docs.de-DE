@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9f7e91f5-63a8-4529-9fb4-6275027af145
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 195cc6454dd5d29839d36e3cf206b0354d5761a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d5f696fcbb65a4210160c8e14a31f3db1b2c220b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793922"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576812"
 ---
 # <a name="pidnameapplicationname-canonical-property"></a>PidNameApplicationName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Anwendung, die die Datei geöffnet werden kann, die an das Dokument angefügt ist.
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9d99a3b6-d0b4-4e8a-8f08-f46fdeb6b3e7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 304efc3f4ea903f9ed0e9fcf95c7100fa6ebfc95
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: eabcaaf1db6149ef200e640f5af152758261581b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795176"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582252"
 ---
 # <a name="pidtagserviceuid-canonical-property"></a>PidTagServiceUid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die [MAPIUID](mapiuid.md) -Struktur für einen Nachrichtendienst. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SERVICE_UID  <br/> |
-|Bezeichner:  <br/> |0x3D0C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SERVICE_UID  <br/> |
+|Kennung:  <br/> |0x3D0C  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Profil  <br/> |
    

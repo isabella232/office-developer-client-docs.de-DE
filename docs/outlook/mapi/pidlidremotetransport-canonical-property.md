@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: b3b30d6a-05cd-4dd1-a162-20768f12e680
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b0f86b2260299d2d0294598628f2895c50ed9452
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 124a0d8f23fcff9d1bca9d5debe4a9aa6fb6146c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793770"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587117"
 ---
 # <a name="pidlidremotetransport-canonical-property"></a>PidLidRemoteTransport (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welches Konto das Headerelement zugeordnet wird, in erster Linie auf POP belassen auf Serverfunktionen implementieren. 
   

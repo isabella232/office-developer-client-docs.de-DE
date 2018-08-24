@@ -5,19 +5,19 @@ ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 605fab0f-c045-4d2b-a2da-447a111f66a9
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 71c67c37cc4f9cd3ddd7a55c37c4ebd6ddd35cfd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: caa231842c5fd51deb80144f12fdf53e51ccc980
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793329"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582875"
 ---
 # <a name="outlook-items-and-fields"></a>Elemente und Felder in Outlook
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Microsoft Outlook bietet Elementtypen, die speziell auf ihre Funktionalität (beispielsweise e-Mail-Elementen, Termine, Kontakte, Aufgaben und Notizen) sind. Outlook bietet Standardfelder für jede Art von Element als integrierte Felder bezeichnet. Outlook kann der Benutzer zum Erstellen von benutzerdefinierter Feldern, als benutzerdefinierte Felder bezeichnet. Jedes Feld ist einen Datentyp und einen Wert zugeordnet. Beispiele für Datentypen sind **Währung**, **Datum/Uhrzeit**, **Dauer**, **ganze Zahl**, **Schlüsselwörter**und **Text**. Benutzer können benutzerdefinierte Felder im Formular-Designer in Outlook mit definieren.
   

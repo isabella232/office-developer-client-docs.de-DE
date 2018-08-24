@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: e22244a2-ac5f-910a-501f-4483ea0667c2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 07305f712fd925b206ce18a32f8f5a24f199ccbf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5a0632ffd892c08fdf19de2c9b34607c27534f19
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792707"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594040"
 ---
 # <a name="iostxinitsync"></a>IOSTX::InitSync
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Informiert dem lokalen Nachrichtenspeicher, dass Synchronisierung gestartet.
   

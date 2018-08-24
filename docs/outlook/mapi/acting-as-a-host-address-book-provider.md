@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f06a1034-ee49-4a09-831e-9752713228a8
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cf52062eacbd13b45087df9d8558bffd43ccd744
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: de0acb88eee6addc0347f5281e5fbe5070bad0a4
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791257"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22595408"
 ---
 # <a name="acting-as-a-host-address-book-provider"></a>Fungieren als Host-Adressbuchanbieter
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ein Hostanbieter ist Adressbuch-Dienstanbieter, die von anderen Anbietern Empfänger in den Containern enthält und setzt die Implementierung der Empfänger der anderen Anbieter ihre Wartung teilweise steuern. Ein Hostanbieter verwendet die Vorlage Bezeichner dieser fremden Empfänger, um die Daten für diese Empfänger Code im fremden Anbieter zu binden. Diese Bindungsprozess wird initiiert, wenn der Anbieter die Eigenschaft **PR_TEMPLATEID** ([PidTagTemplateid](pidtagtemplateid-canonical-property.md)) eines Empfängers abgerufen und in einem Aufruf von [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md)übergeben werden. 
   

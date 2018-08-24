@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1cfb82f7-5215-4faa-af25-5b1da7e31209
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 53dfb62bb33a4941e2b5627e729763101e24319d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: bf6386ae3a7d835c8748e332235d8737c7a502e8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791965"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589469"
 ---
 # <a name="iablogonopenentry"></a>IABLogon::OpenEntry
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Container, messaging-Benutzer oder eine Verteilerliste, und gibt einen Zeiger auf eine Implementierung Zugriff zu ermöglichen.
   

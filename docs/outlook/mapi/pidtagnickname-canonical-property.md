@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 088ffc58-d456-471b-af2f-7961e9c701f3
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 5e0aea21d48692c354c77750a8cb2d6e0b39b715
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 410a92c38c6eb4e8ee9b8ffce47f0cd00904e1be
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794637"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594047"
 ---
 # <a name="pidtagnickname-canonical-property"></a>PidTagNickname (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Spitzname des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_NICKNAME, PR_NICKNAME_A, PR_NICKNAME_W  <br/> |
-|Bezeichner:  <br/> |0x3A4F  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_NICKNAME, PR_NICKNAME_A, PR_NICKNAME_W  <br/> |
+|Kennung:  <br/> |0x3A4F  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    

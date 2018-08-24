@@ -13,12 +13,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0ad49ff6-8dff-4379-a52c-d292c53c2bc0
 description: Die Project 2013-desktop-Clientanwendungen – Project Standard 2013 und Project Professional 2013 – angepasst und mithilfe von VBA Makros schreiben erweitert werden kann. Visual Studio 2012 können zum Anpassen der Menüband-Benutzeroberfläche und Erstellen komplexer-add-ins Office-Add-ins ermöglicht eine neue Erweiterbarkeit modellieren für Aufgabenbereichen in Project, die auf einer gemeinsamen Plattform für Office 2013 integriert sind. Project Standard 2013 und Project Professional 2013 können allgemeine Office-Add-ins ausführen und Verwenden des Task Pane-add-ins, die speziell für das Projekt für die Integration von SharePoint, andere Websites und Webanwendungen und externe Daten entwickelt werden.
-ms.openlocfilehash: e8604b4d479d0c64f8d45ad2363d7391d57408ed
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9e89c5a1f6486ce49ad8b95bcd7a92497b7a2436
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796302"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594740"
 ---
 # <a name="project-client-programming"></a>Project-Clientprogrammierung
 
@@ -43,15 +43,9 @@ Task Pane-add-ins und andere add-ins für Office und SharePoint im Office Store 
   
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[Project für Entwickler](http://msdn.microsoft.com/en-us/office/aa905469)
-  
-[Office Developercenter](https://dev.office.com)
-  
-[Visual Studio Developer center](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx)
-  
-[ClickOnce-Sicherheit und Bereitstellung](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)
-  
-[Verfügbare Felder](http://office.microsoft.com/en-us/project-help/available-fields-reference-HA102749299.aspx?CTT=1)
+- [Project für Entwickler](http://msdn.microsoft.com/en-us/office/aa905469)
+- [Office Developercenter](https://dev.office.com)
+- [Visual Studio Developer center](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx)
+- [ClickOnce-Sicherheit und Bereitstellung](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)
+- [Verfügbare Felder](https://support.office.com/en-us/article/available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
 

@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 991c2969-0180-4c7d-95ee-e62fd24d67ef
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7d09830f471fbaa0e8ed6ae70420dfea6428b9df
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a29cfca2112bf7ae75844a2e87f4e134a7016aba
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793513"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582308"
 ---
 # <a name="pidlidemail1originaldisplayname-canonical-property"></a>PidLidEmail1OriginalDisplayName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den ersten Anzeigenamen, der die die e-Mail-Adresse entspricht, die für den Kontakt angegeben ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail1OriginalDisplayName  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail1OriginalDisplayName  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008084  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

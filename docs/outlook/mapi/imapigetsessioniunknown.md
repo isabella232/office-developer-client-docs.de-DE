@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: d1b662e2-1516-46b2-ba94-4092d79b5a39
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 17c9a7ba54d7dd0b4d97c06f6343e563223f8100
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 90fe316bfd11d712f02187b6a569450b747a6409
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792218"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587929"
 ---
 # <a name="imapigetsession--iunknown"></a>IMAPIGetSession : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf die aktuellen MAPI-Sitzung mit dem Support-Objekt verknüpft ist. MAPI-Anbieter können ihre MAPI-Support-Objekt für diese Schnittstelle Abfragen. Weitere Informationen zu Support-Objekten finden Sie unter [Unterstützung-(Übersicht)](support-object-overview.md).
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: e9059739-51b4-4574-bd0f-709eb5144ae7
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fce8bc45d5cc87c238288653ab989b62076ad451
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ce0e109aad52bfc4d7f4f55abfe1001d76276f64
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792176"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587131"
 ---
 # <a name="imapiform--iunknown"></a>IMAPIForm : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht das Formular Viewer Formular anzeigen Kontexten und Formular-Benachrichtigung zum Formular Verben ausführen und Herunterfahren Formulare entwickelt.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapiform.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Formular-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Formular-Objekte  <br/> |
 |Implementiert von:  <br/> |Formular-Servern  <br/> |
 |Aufgerufen von:  <br/> |Formular-Viewer  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPIForm  <br/> |

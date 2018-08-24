@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 711b6765-7763-41ae-9ff8-61ca6ddd459d
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: eef42a8c7d19af313316bea68624ac67fb1ab4e8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 34d8dbeaf101d5ebb687403a2200bd0ad73b9998
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791489"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577100"
 ---
 # <a name="creating-a-message-attachment"></a>Erstellen von e-Mail-Anlagen
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 E-Mail-Anlagen ist einige zusätzlichen Daten enthält, wie eine Datei, eine andere Nachricht oder ein OLE-Objekt, die zusammen mit einer Nachricht speichern oder senden können. Jede Anlage ist eine Auflistung von Eigenschaften, die diese identifiziert und beschreibt dieses Typs und wie es gerendert wird. Wie Empfänger können e-Mail-Anlagen nur über die Nachricht zugegriffen werden, die sie angehören. Aus diesem Grund muss für die Anlage verwendet werden, dessen Nachricht geöffnet sein.
   

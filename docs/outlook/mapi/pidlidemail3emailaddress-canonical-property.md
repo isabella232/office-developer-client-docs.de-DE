@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3a468bb6-c4c2-42ee-8283-492196872ca0
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: a4015937dd2f3dc77cb3f549a0a70027b4fcea55
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 82328e285d0bf77ced074ba19aed306a27cea574
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793517"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594775"
 ---
 # <a name="pidlidemail3emailaddress-canonical-property"></a>PidLidEmail3EmailAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den dritten e-Mail-Adresse des Kontakts an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidEmail3EmailAddress  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidEmail3EmailAddress  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080A3  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

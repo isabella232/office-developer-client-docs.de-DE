@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: ee735ae8-e527-4538-a633-c3f57a36f0a1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d91e7ceb877a4f1a7ce10d33e1a25a8773db0547
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f1d7174d6af73b74be7dbba6065ad799a728ae41
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793646"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594516"
 ---
 # <a name="pidlidlinkedtaskitems-canonical-property"></a>PidLidLinkedTaskItems (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Liste der Aufgaben, die im Zusammenhang mit dem Kalender-Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)). 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidLinkedTaskItems  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidLinkedTaskItems  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000820C  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |

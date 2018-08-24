@@ -5,17 +5,17 @@ ms.date: 03/09/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 775dc1b5fdcf40867f67fbab25879bd97de24f4a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a43d4f12aa28de29116d7d074b743d6c0d61d964
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791669"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594509"
 ---
 # <a name="fielddefinition-stream-structure"></a>FieldDefinition Stream-Struktur
 
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine FieldDefinition Stream-Datenstruktur enthält entweder die Felddefinition eines benutzerdefinierten Felds oder einer Gruppe von Einstellungen für ein Feld integrierten Datenbindung.
   
@@ -63,7 +63,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     |**Interne Typnamen**|**Wert**|**Entsprechende Typ im Dialogfeld **Neues Feld****|
     |:-----|:-----|:-----|
     |iTypeString  <br/> |0  <br/> |**Text** <br/> |
-    |iTypeNumber  <br/> |1  <br/> |**Nummer** <br/> |
+    |iTypeNumber  <br/> |1  <br/> |**Number** <br/> |
     |iTypePercent  <br/> |2  <br/> |**Percent** <br/> |
     |Währung  <br/> |3  <br/> |**Currency** <br/> |
     |iTypeBool  <br/> |4  <br/> |**Ja/Nein** <br/> |

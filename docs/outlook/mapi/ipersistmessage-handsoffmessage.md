@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0e56b21d-0a2e-4fe6-83f4-c9daab2f3055
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fd7e3b1d1284cdf4451330aabcce8fd0279ad5ba
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 2cd4c86dc45bca85632a3fadc9023c9ad25cfa37
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792731"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583029"
 ---
 # <a name="ipersistmessagehandsoffmessage"></a>IPersistMessage::HandsOffMessage
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bewirkt, dass das Formular, um die aktuelle Nachricht freigeben.
   

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 2dcd9ff3-f380-48c7-ae9e-d4c717a9e41f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 48b79765f64f8c75ee0e0c95302c98641b919c6d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 35d67721537a241426afc17ec162b58edc638051
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794899"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588433"
 ---
 # <a name="pidtagread-canonical-property"></a>PidTagRead (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Tabellenzeile gelesen wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_READ  <br/> |
-|Bezeichner:  <br/> |0x0E69  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_READ  <br/> |
+|Kennung:  <br/> |0x0E69  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: ed0c14f9-3dcf-49ad-928e-ba872d4d6b5a
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6135dfae915a1e70743f9224352390c4b56ea02e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5125fc8f3e36087a05802c38127a8402ae67d468
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795418"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576302"
 ---
 # <a name="saving-mapi-properties"></a>Speichern von MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Viele Objekte unterstützen eine Transaktionsmodell der Verarbeitung bei dem Eigenschaften nicht permanent geändert werden, bis sie zu einem späteren Zeitpunkt übernommen werden. Während die Änderungen an Eigenschaften von den Methoden [IMAPIProp::SetProps](imapiprop-setprops.md) und [IMAPIProp::DeleteProps](imapiprop-deleteprops.md) behandelt werden, wird der Schritt Commit von [IMAPIProp::SaveChanges](imapiprop-savechanges.md)behandelt. Es ist nicht erst nach einem erfolgreichen Aufruf von **SaveChanges** , dass die aktuellste Version von Eigenschaften eines Objekts zugegriffen werden kann. 
   

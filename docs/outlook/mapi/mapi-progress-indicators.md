@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 73a99e52-97fe-40f5-af90-52cfd858ab22
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d8af2ba3067dabe759056313eb278b9901510980
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 8fc39c6d7da0970ee15cdd9dd67bfeef0997d7d1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793043"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582868"
 ---
 # <a name="mapi-progress-indicators"></a>MAPI-Statusanzeigen
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Viele Vorgänge, die Sie für Clients ausführen dauert sehr lange Zeit in Anspruch. Um den Fortschritt eines längeren Vorgangs-Clients zu informieren, können Sie ein Symbol anzeigen, das den Teil eines Vorgangs nach Abschluss des Vorgangs zu einem bestimmten Zeitpunkt vom Anfang des Vorgangs zu ihrem Abschluss grafisch dargestellt werden. Die Statusanzeige zeigt einen prozentualen Anteil der gesamte Vorgang ausgeführt werden.
   

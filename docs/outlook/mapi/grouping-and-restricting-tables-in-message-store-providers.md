@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 01df4be4-98a1-4159-a06d-9ccf4337198f
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 33c76cdd0e7850f82949349ac2e5bb0dd4e056ef
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ec1c07a8d2c88680ebd94cf8ecd6901ed86ad100
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791795"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22578787"
 ---
 # <a name="grouping-and-restricting-tables-in-message-store-providers"></a>Gruppieren und Einschränken von Tabellen in Nachrichtenspeicheranbietern
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Clientanwendungen können Benutzer häufig besser steuern, wie der Inhalt eines Ordners angezeigt wird. In der Regel ein Benutzer kann auswählen, dass Nachrichten entsprechend dem Wert der Nachrichteneigenschaften für eine oder mehrere gruppiert oder kann verhindern, dass Nachrichten auszuschließen, die bestimmte Kriterien erfüllen. Dies erfolgt mithilfe der [IMAPITable: IUnknown](imapitableiunknown.md) Schnittstelle. Clientanwendungen können einschränken, die Zeilen aus der Tabelle an beliebige erforderliche Kriterien gibt an, der Benutzer zurückgegeben. Speichern Sie daher, eine Nachricht Anbieter muss die folgenden **IMAPITable** -Methoden implementieren. 
   

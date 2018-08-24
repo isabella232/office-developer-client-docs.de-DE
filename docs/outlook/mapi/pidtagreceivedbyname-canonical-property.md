@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: edd29217-74bb-4321-82fd-65f0fbfd05f8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7b564b1dda1d72a28e16fad40f0ef90451aaaf0f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: d5afe0cfff03feafeb8299780b9402cef3282632
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794877"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577072"
 ---
 # <a name="pidtagreceivedbyname-canonical-property"></a>PidTagReceivedByName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Anzeigenamen des Benutzers, der die Nachricht empfängt messaging.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECEIVED_BY_NAME, PR_RECEIVED_BY_NAME_A, PR_RECEIVED_BY_NAME_W  <br/> |
-|Bezeichner:  <br/> |0x0040  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECEIVED_BY_NAME, PR_RECEIVED_BY_NAME_A, PR_RECEIVED_BY_NAME_W  <br/> |
+|Kennung:  <br/> |0x0040  <br/> |
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    

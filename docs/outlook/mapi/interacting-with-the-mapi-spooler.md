@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 5cc1d0a8-ad23-4173-b220-b7c0169073fa
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: faf3d48b63d1858a2b91f66c83d9ce08e9daa02b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: c8032172ef19fbb01af68058b2e0255e269183a8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792692"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587894"
 ---
 # <a name="interacting-with-the-mapi-spooler"></a>Interaktion mit dem MAPI-Spooler
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Methoden in der [IXPLogon: IUnknown](ixplogoniunknown.md) Schnittstelle werden beim Aufrufen der Adressbuchhierarchie durch die MAPI-Warteschlange verwendet. Es sollte für die meisten Arten von Transportanbieter für die meisten dieser Methoden implementieren, sodass diese schnell zurückgeben möglich sein. Dies ist wünschenswert, da, wenn eine Methode zum Zurückgeben lange dauert dann es mit Aufrufen an die Warteschlange MAPI-Version die CPU für andere Aufgaben aufgeteilt werden sollte. 
   

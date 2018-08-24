@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 92bfe604-18dd-46a1-9ae8-0b04167606bd
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 7daa8ec536a81abc196bbb23a0e1a48e826579e2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4843a52d7441de1e1ab545e80346db8dd308c4bf
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792437"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590204"
 ---
 # <a name="imapisupport--iunknown"></a>IMAPISupport : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bietet Implementierungen für Aufgaben vorgestellt, die in der Regel vom Dienstanbieter und Nachricht Webdienstfunktionen Entry Point ausgeführt werden. -Dienstanbieter erhalten einen Zeiger auf ihre Support-Objekt, wenn MAPI-ihre Anbieterobjekt Logon-Methode aufrufen. Message-Dienste erhalten den Anruf an ihre Funktion Eintrag Zeiger Objekt Unterstützung.
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapispi.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Unterstützungsobjekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Unterstützungsobjekte  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Dienstanbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IMAPISup  <br/> |

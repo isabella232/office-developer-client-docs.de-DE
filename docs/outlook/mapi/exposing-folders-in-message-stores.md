@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d9309e47-2a92-4576-9921-c89cc48472c2
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0e7b479931b6b2b00dd3927133187fe058b4c6e4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 62f50ed7925305eca7432da17130d2be0365ef03
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791642"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582595"
 ---
 # <a name="exposing-folders-in-message-stores"></a>Verf�gbarmachen von Ordnern in Nachrichtenspeicher
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Jede Nachricht Speicheranbieter muss eine der obersten Ebene [IMAPIFolder](imapifolderimapicontainer.md) Benutzeroberfl�che f�r Client-Anwendungen darstellen. Ordner der obersten Ebene entspricht der gesamten Nachrichtenspeicher. Es erm�glicht den Zugriff auf die Ordner, die Benutzern als den Inhalt des Nachrichtenspeichers angezeigt. Dar�ber hinaus Ordner der obersten Ebene wird h�ufig verwendet, wie die Standardeinstellung Empfangsordner f�r IPK Nachrichten und wie der Ordner von denen lesen Berichte gesendet werden. Nachricht-Anbieter m�ssen auch eine IPM-Unterstruktur pr�sentieren � eine Reihe von Ordnern f�r IPM-Nachrichten enthalten � Clientanwendungen. 
   

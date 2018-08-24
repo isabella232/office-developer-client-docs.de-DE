@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 23b6ad1a-0b50-429f-8819-ab72c56581c2
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 85de8dd7211fa19b7cdbda9f5ced1f00a736ca9e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7d2f5fc2f26019902b27750613f7c360a751cd51
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792536"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582931"
 ---
 # <a name="implementing-a-sample-object"></a>Implementieren ein Beispielobjekt
 
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beraten der Empfängerobjekten – Objekte, die das unterstützen die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) Schnittstelle – MAPI-Objekten, die Clientanwendungen für die Verarbeitung von Benachrichtigungen implementiert werden. **IMAPIAdviseSink** erbt direkt von [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) und enthält nur eine Methode, **OnNotify**. Aus diesem Grund wird ein Client zum Implementieren einer Advise-Empfängerobjekt Code für die drei Methoden in **IUnknown** und [OnNotify](imapiadvisesink-onnotify.md)erstellt.
   

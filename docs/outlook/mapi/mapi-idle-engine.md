@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 755d096a-2a61-44d2-a765-5d464a857756
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c535da245be09f930a70c5fae2a892f33087ebf9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 9fdc254053c2d35c83866bd8a076279fd383db02
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793007"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22583036"
 ---
 # <a name="mapi-idle-engine"></a>Im Leerlauf MAPI-Modul
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI bietet verschiedene Funktionen, die allgemein als im Leerlauf Engine bezeichnet werden. Diese Funktionen ermöglichen Clients, adressbuchanbietern implementierte und Message-Anbieter für verschiedene Aufgaben langsame Zeiten in der Sitzung oder als Reaktion auf einen Zeitpunkt langsam. Beispielsweise können Clients und Dienstanbieter langsame Vorgänge zurückgestellt oder schließen Sie Dateien, die für einen längeren Zeitraum nicht verwendete befunden hat. Transportanbieter in der Regel verwenden das Modul im Leerlauf Sie nicht, da die **IXPLogon::Idle** -Methode die stattfindet. Weitere Informationen finden Sie unter [IXPLogon::Idle](ixplogon-idle.md).
   

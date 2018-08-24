@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 6fee29ce-9a34-4e0c-bb71-03120c3f1117
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 06b9b6a046aaa0f16418f75d402cc5be44f845a3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 054625601b496a8ec8f7745aa4cbc4715eed81a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795597"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585059"
 ---
 # <a name="sorrestriction"></a>SOrRestriction
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beschreibt eine Einschränkung **oder** die verwendet wird, um eine logische **OR** -Operation, die eine Einschränkung anzuwenden. 
   

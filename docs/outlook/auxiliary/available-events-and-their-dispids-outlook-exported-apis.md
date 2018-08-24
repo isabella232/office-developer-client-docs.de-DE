@@ -7,18 +7,18 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 1fd848c7-038e-4e2f-8997-c8509b31df79
 description: Dieser Abschnitt beschreibt die Versendung Bezeichner für die Ereignisse, die Outlook verfügbar gemacht werden.
-ms.openlocfilehash: 1542ff85579346a3674593e9ea38115170df2237
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a94787063e0fd5be30de1ef772813979d3cb2f21
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790935"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22582973"
 ---
 # <a name="available-events-and-their-dispids-outlook-exported-apis"></a>Verfügbaren Ereignisse und ihrer Dispids (Outlook exportierter APIs)
 
 Dieser Abschnitt beschreibt die Versendung Bezeichner für die Ereignisse, die Outlook verfügbar gemacht werden.
   
-Outlook macht die folgenden Versendung-IDs (Dispids) um C++-add-ins zum Abhören von und behandeln die entsprechenden Ereignisse aus der [IDispatch:: Invoke](http://msdn.microsoft.com/library/automat.idispatch_invoke%28Office.15%29.aspx) -Funktion zu ermöglichen. 
+Outlook macht die folgenden Versendung-IDs (Dispids) um C++-add-ins zum Abhören von und behandeln die entsprechenden Ereignisse aus der [IDispatch:: Invoke](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) -Funktion zu ermöglichen. 
   
 |**Konstante**|**DISPID für-Ereignis**|**Beschreibung**|**Parameter**|**Hinweise**|
 |:-----|:-----|:-----|:-----|:-----|

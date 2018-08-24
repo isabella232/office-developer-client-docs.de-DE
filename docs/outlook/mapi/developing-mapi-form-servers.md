@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 30672a2d-2d39-4292-b21a-97a38485d1de
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 83d652f313e139b1c6bb628d1119edda03a70e23
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: d55134cf5181ebbba0108c228d9afc3a494e75ce
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791543"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576239"
 ---
 # <a name="developing-mapi-form-servers"></a>Entwickeln von MAPI-Formularservern
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Dieser Abschnitt beschreibt den Prozess beim Erstellen von Forms Server ausführbare und Konfigurationsdateien für das Erstellen von benutzerdefinierter Formularen für MAPI-Formular. Vor dem Lesen dieses Abschnitts, sollten Sie sich mit den Informationen im [MAPI-Formulare](mapi-forms.md)vertraut machen.
   
@@ -45,5 +45,5 @@ Ausführen der Schritte 1 bis 5 wahrscheinlich gleichzeitig, anstatt sie in der 
 
 
 
-[MAPI-Konzepte (engl.)](mapi-concepts.md)
+[MAPI-Konzepte](mapi-concepts.md)
 

@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9b1bea60-1946-48ea-8312-c85fcbe944a8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: aa6510e74030407015330ed6f0259d50559c09d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 81e3fca956fcfb8aa5285a30aa2254b721847850
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795252"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584758"
 ---
 # <a name="pidtagtelecommunicationsdevicefordeaftelephonenumber-canonical-property"></a>PidTagTelecommunicationsDeviceForDeafTelephoneNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält des messaging-Benutzers Telekommunikation Gerät für die Telefonnummer Gehörlose (TTYTDD).
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_TTYTDD_PHONE_NUMBER, PR_TTYTDD_PHONE_NUMBER_A, PR_TTYTDD_PHONE_NUMBER_W  <br/> |
-|Bezeichner:  <br/> |0x3A4B  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_TTYTDD_PHONE_NUMBER, PR_TTYTDD_PHONE_NUMBER_A, PR_TTYTDD_PHONE_NUMBER_W  <br/> |
+|Kennung:  <br/> |0x3A4B  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-e-Mail-Benutzer  <br/> |
    

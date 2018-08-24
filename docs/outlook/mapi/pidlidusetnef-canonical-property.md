@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 954048d6-e2eb-43e7-b52c-c2f047bb84a4
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 73fa4311a61be9259d8c45aca79d719785c213a6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: b0d5588218fd74f005de19daba002cd622c13a17
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793906"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587187"
 ---
 # <a name="pidlidusetnef-canonical-property"></a>PidLidUseTnef (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob Transport Neutral Encapsulation Format (TNEF) für eine Nachricht eingeschlossen werden soll, wenn die Nachricht von MAPI (MULTIPURPOSE Internet Mail Extensions) oder Simple Mail Transfer Protocol (SMTP)-Format konvertiert wird.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidUseTNEF  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidUseTNEF  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Common  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008582  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |

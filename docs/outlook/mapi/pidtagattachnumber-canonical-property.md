@@ -11,28 +11,28 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 507e0f2c-383c-4e2f-917b-159913f7234d
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: c4a46710311f2c4d26ec3d667c7bf535df69f595
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f6de157864bff5be41b6e030d555be7b60dcda5e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794111"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594754"
 ---
 # <a name="pidtagattachnumber-canonical-property"></a>PidTagAttachNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Zahl, die die Anlage innerhalb der übergeordneten Nachricht eindeutig identifiziert. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_NUM  <br/> |
-|Bezeichner:  <br/> |0x0E21  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_NUM  <br/> |
+|Kennung:  <br/> |0x0E21  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

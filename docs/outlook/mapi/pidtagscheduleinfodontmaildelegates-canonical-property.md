@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: e932966e-cb7a-4d8b-8f06-6406fce1b3e6
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 6bcda9c6281e25f3bae2f9c1dda2f8defb024b57
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: a88f05bab3f3effc60c0bcca24910106e6849903
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795093"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576808"
 ---
 # <a name="pidtagscheduleinfodontmaildelegates-canonical-property"></a>PidTagScheduleInfoDontMailDelegates (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn die Stellvertretung nicht Updates erhalten möchten.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_DONT_MAIL_DELEGATES  <br/> |
-|Bezeichner:  <br/> |0x6843  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_DONT_MAIL_DELEGATES  <br/> |
+|Kennung:  <br/> |0x6843  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    

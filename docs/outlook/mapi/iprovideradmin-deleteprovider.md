@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 0065b50f-95f6-4af1-81c2-a73e5111eecf
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e0f8dc1beeb669532e3731b38a4f03966403f76c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: db09b44bd8eeeb3ab56513b1b9c2cab69f776002
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792765"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22590085"
 ---
 # <a name="iprovideradmindeleteprovider"></a>IProviderAdmin::DeleteProvider
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Löscht einen Dienstanbieter aus der Nachrichtendienst.
   

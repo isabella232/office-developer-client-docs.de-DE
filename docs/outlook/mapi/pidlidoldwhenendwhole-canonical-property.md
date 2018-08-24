@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 788227e9-9bcf-465c-886c-746dbc665230
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: b84de421b73fd328467dab8ea1f5888b9a37ecf1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f1b98b12ac573165495de6938dd4bcd7e22a084b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793702"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22588461"
 ---
 # <a name="pidlidoldwhenendwhole-canonical-property"></a>PidLidOldWhenEndWhole (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den ursprünglichen Wert der Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) vor einer Besprechungsanfrage an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidOldWhenEndWhole  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidOldWhenEndWhole  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x0000002A  <br/> |
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |

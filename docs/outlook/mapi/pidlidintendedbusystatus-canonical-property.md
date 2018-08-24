@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 84221dd3-de71-4c10-abd7-9f15aefd02ed
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 30f1e2389698f5ec96874f46a685a7e087dbb773
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 58642cd84c9f9b784a8a9d7246bfed0dab58e119
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793633"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22577051"
 ---
 # <a name="pidlidintendedbusystatus-canonical-property"></a>PidLidIntendedBusyStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Wert der Eigenschaft **DispidBusyStatus** ([PidLidBusyStatus](pidlidbusystatus-canonical-property.md)) auf die Besprechung im Kalender des Organisierer vorhanden, wenn die Besprechungsanfrage oder eine besprechungsaktualisierung gesendet wurde.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidIntendedBusyStatus  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidIntendedBusyStatus  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Appointment  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00008224  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |

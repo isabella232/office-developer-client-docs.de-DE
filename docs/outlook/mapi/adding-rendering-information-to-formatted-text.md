@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 790180f9-8864-47d4-97fb-35fe16b957c0
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b912d81c1413fb40b6ddccc2f54bc393a6b67857
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a6018c05d1191211242066425e4ae546c1618094
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791265"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594558"
 ---
 # <a name="adding-rendering-information-to-formatted-text"></a>Hinzufügen von Renderinformationen zu formatiertem Text
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Um den Speicherort in formatierten Text anzugeben, in dem eine Anlage gerendert wird, müssen Sie in der Nachricht **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft eine Abfolge von Platzhalterzeichen einfügen. Die Platzhalter Sequenz besteht aus der folgenden Zeichen: `\objattph`.
   

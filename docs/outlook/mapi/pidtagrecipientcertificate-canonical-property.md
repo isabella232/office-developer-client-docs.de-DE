@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7c5c749e-5463-4935-85b5-32219d06f782
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: bb51e9a602bd5c2e59bb56fdbf44fddc39651de6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 464db3d360f6e872ac28f8d7cbec842d8b521f7e
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794909"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585115"
 ---
 # <a name="pidtagrecipientcertificate-canonical-property"></a>PidTagRecipientCertificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Nachrichtenempfänger ASN. 1-Zertifikat für die Verwendung in einem Bericht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RECIPIENT_CERTIFICATE  <br/> |
-|Bezeichner:  <br/> |0x0C13  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RECIPIENT_CERTIFICATE  <br/> |
+|Kennung:  <br/> |0x0C13  <br/> |
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Empfänger  <br/> |
    

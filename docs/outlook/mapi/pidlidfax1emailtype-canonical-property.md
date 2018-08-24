@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 54436af4-b851-49ab-875a-c52f5da6b776
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 1c82ef5d6a4d50e643a6b0a156622e9429290618
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 286f86bddc7f938f9401de1041d1574113670f52
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793531"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576827"
 ---
 # <a name="pidlidfax1emailtype-canonical-property"></a>PidLidFax1EmailType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den e-Mail-Typ, der die Adresse des Kontakts Business Fax an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidFax1EmailType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidFax1EmailType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Address  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x000080B7  <br/> |
 |Datentyp:  <br/> |PT_UNICODE  <br/> |

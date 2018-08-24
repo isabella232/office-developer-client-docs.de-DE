@@ -9,26 +9,26 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e4c5ca77-328c-4f5a-bf94-b9e90e837557
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 79ac68e7e24524c7667b0a37622956fd041eb9d4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: cbaaed9069c9f8e9a26d739e614038033d136669
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794850"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576218"
 ---
 # <a name="pidtagpstpasswordsznew-canonical-property"></a>PidTagPstPasswordSzNew (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält das neue Kennwort für den zukünftigen Zugriff auf den Speicher für Persönliche Ordner verwenden.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_PST_PW_SZ_NEW, PR_PST_PW_SZ_NEW_A, PR_PST_PW_SZ_NEW_W  <br/> |
-|Bezeichner:  <br/> |0x6704  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_PST_PW_SZ_NEW, PR_PST_PW_SZ_NEW_A, PR_PST_PW_SZ_NEW_W  <br/> |
+|Kennung:  <br/> |0x6704  <br/> |
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Persönlicher Speicher-Tabelle (. pst) interne  <br/> |
    

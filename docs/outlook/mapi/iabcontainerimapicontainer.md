@@ -11,24 +11,24 @@ api_name:
 api_type:
 - COM
 ms.assetid: 1f5ce6e0-b79a-4da2-b014-8c00cd72912e
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 0eb6d62b64595474957415e94275d0ac52cc2b6b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 519093b3c538037b5a42bc19cc65ed31ae19f07b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791954"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580705"
 ---
 # <a name="iabcontainer--imapicontainer"></a>IABContainer : IMAPIContainer
 
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bietet Zugriff auf Address Book Container. MAPI-und Clientanwendungen rufen Sie die Methoden des **IABContainer** namensauflösung ausführen, und kopieren Sie Sie zum Erstellen und Löschen von Empfängern. 
   
 |||
 |:-----|:-----|
 |Headerdatei  <br/> |Mapidefs.h  <br/> |
-|Verf�gbar gemacht von:  <br/> |Address Book Container-Objekte  <br/> |
+|Verfügbar gemacht von:  <br/> |Address Book Container-Objekte  <br/> |
 |Implementiert von:  <br/> |Von adressbuchanbietern implementierte  <br/> |
 |Aufgerufen von:  <br/> |MAPI-und Clientanwendungen  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IABContainer  <br/> |
@@ -44,7 +44,7 @@ Bietet Zugriff auf Address Book Container. MAPI-und Clientanwendungen rufen Sie 
 |[DeleteEntries](iabcontainer-deleteentries.md) <br/> |Entfernt einen oder mehrere Einträge in der Regel messaging Benutzern, Verteilerlisten oder andere Container.  <br/> |
 |[ResolveNames](iabcontainer-resolvenames.md) <br/> |Führt die Auflösung für einen oder mehrere Empfänger Einträge.  <br/> |
    
-|**Erforderliche Eigenschaften**|**Zugriff**|
+|**Erforderliche Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_CONTAINER_FLAGS** ([PidTagContainerFlags](pidtagcontainerflags-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
 |**PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md))  <br/> |Lese-/Schreibzugriff  <br/> |
@@ -52,7 +52,7 @@ Bietet Zugriff auf Address Book Container. MAPI-und Clientanwendungen rufen Sie 
 |**PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_RECORD_KEY** ([PidTagRecordKey](pidtagrecordkey-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-|**Optionale Eigenschaften**|**Zugriff**|
+|**Optionale Eigenschaften**|**Access**|
 |:-----|:-----|
 |**PR_CONTAINER_CONTENTS** ([PidTagContainerContents](pidtagcontainercontents-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_CONTAINER_HIERARCHY** ([PidTagContainerHierarchy](pidtagcontainerhierarchy-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |

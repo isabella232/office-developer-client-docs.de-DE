@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 341e8db0-52b7-4ba7-aaa6-eedf2783b4e8
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 52a6132dcd6aa2c3a2951f3d1a6458808364dccb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 2831e31e8139dd2348c2deffa6da41793d0a3f4b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795026"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576246"
 ---
 # <a name="pidtagruleid-canonical-property"></a>PidTagRuleId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt einen eindeutigen Bezeichner, den der messaging-Server für jede Regel generiert wird, wenn die Regel erstellt wird. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_ID  <br/> |
-|Bezeichner:  <br/> |0x6674  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_ID  <br/> |
+|Kennung:  <br/> |0x6674  <br/> |
 |Datentyp:  <br/> |PT_I8  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    

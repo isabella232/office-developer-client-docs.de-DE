@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 3d3c309f-fe60-43a9-beda-16b09ec769db
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: eb64f2780530fd30784bf9a9b197bcde205b4a5a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1baa987961eecc6ee08b3ceb039062c8f1090ff7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792572"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22589553"
 ---
 # <a name="implementing-service-provider-logon"></a>Implementieren einer Dienstanbieteranmeldung
 
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI-Aufrufen eine Methode in Ihrem Anbieterobjekt Beginn des Anmeldevorgangs mithilfe des Mauszeigers, mit dem Sie von Ihrem Eintrag Point-Funktion zurückgegeben. Die Methode hängt wie folgt auf den Typ des vom-Dienstanbieter:
   

@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a326e93-fe8c-e3a5-1e92-30b75b6cb1d2
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: 7b3d0eed6039552813798d4ceb30158444902b36
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c94e625fc97207e1bc1a2e0797a1ba82ee41fca3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795522"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576253"
 ---
 # <a name="setting-up-an-offline-state-add-in"></a>Einrichten von einem Add-in auf offline-Status
 
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Um ein Add-in-offline-Status zu implementieren, müssen Sie die Verbindung, Initialisierung und andere Setup-Funktionen implementieren. In diesem Thema, diese Verbindung, Initialisierung und Setup werden Funktionen mithilfe von Offline-Status Beispiel-Add-in Codebeispielen veranschaulicht. Das Beispiel Offline Zustand-Add-in ist ein COM-add-in, Outlook eine **Offline-Status** -Menü hinzugefügt und State-API verwendet. Über das Menü **Offline-Status** können Sie aktivieren oder Deaktivieren der Status der Überwachung, überprüfen Sie den aktuellen Status und ändern den aktuellen Status. Weitere Informationen zum Herunterladen und Installieren der Offline-Status Beispiel-Add-Ins finden Sie unter [Installieren der Offline-Status Beispiel-Add-Ins](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Status-API finden Sie unter [Über die Offline Zustand-API](about-the-offline-state-api.md).
   

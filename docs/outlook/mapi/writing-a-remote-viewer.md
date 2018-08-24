@@ -7,17 +7,17 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: f4d7d42f-688a-4199-b972-dd42528c0cdf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 554f98f7bda8c6616ce06b86142213c18bff1f69
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 0125bd57f0f2958c112fb03e7bf4166a7017cd03
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795865"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22584765"
 ---
 # <a name="writing-a-remote-viewer"></a>Schreiben eines remote-Viewers
 
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ein remote-Viewer ist ein Fenster in einer anderen Clientanwendung den gesteuerten Zugriff auf Nachrichten, die auf einem anderen Computer gespeichert. Diese gesteuerte Zugriff kann auf eine langsame Verbindung ausgeführt werden. Statt eine umfassende Auswahl an verfügbaren Nachrichten abzurufen, jedes Mal, wenn ein Benutzer einen Ordner öffnet, wird im remote Viewer zunächst nur die Kopfzeilen. Der Benutzer wählt dann aus die Kopfzeilen der Nachrichten vollständig angezeigt. Remote-Viewer-Clients können ihre Benutzer Nachrichten löschen, bevor sie jemals heruntergeladen werden dürfen. 
   

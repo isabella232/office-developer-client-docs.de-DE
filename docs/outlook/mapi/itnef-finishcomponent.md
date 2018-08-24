@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: bcdd0688-0897-47d7-9601-f592ba453b39
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7008549111f1b914cf2025c8d61ebc07196706fb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 0242015680f11e5be6ae8ea9987e5778dc7cdf05
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792858"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22594362"
 ---
 # <a name="itneffinishcomponent"></a>ITnef::FinishComponent
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Verarbeitet aus einer Nachricht an eine einzelne Komponenten zu einem Zeitpunkt in einem Stream Transport-Neutral Encapsulation Format (TNEF).
   

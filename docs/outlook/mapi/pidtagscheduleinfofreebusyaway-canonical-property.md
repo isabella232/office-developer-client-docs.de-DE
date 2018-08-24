@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 7b5d013a-15ac-469a-98c8-3ed1e80f6faf
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3535e8969ceff975077285aed89f979c24821bdf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 717f934c0dadc46935b72c409469633e0779fb3d
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795089"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22576337"
 ---
 # <a name="pidtagscheduleinfofreebusyaway-canonical-property"></a>PidTagScheduleInfoFreeBusyAway (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Zeiten, die der Frei/Gebucht-Status auf ABWESEND festgelegt ist.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_FREEBUSY_OOF  <br/> |
-|Bezeichner:  <br/> |0x6856  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_FREEBUSY_OOF  <br/> |
+|Kennung:  <br/> |0x6856  <br/> |
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    

@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 43b51a66-71fa-4e10-93e4-d533b48af4de
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c20cd7f82df2fb7f878db177fdc940022e1da351
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 7bf69e560142ab282d6545389e02766389e4d018
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792005"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22580698"
 ---
 # <a name="iaddrbookgetsearchpath"></a>IAddrBook::GetSearchPath
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt eine geordnete Liste von Eintrags-IDs der Container in der [IAddrBook::ResolveName](iaddrbook-resolvename.md) -Methode initiiert Vorgang der Lösung enthalten sein. 
   
