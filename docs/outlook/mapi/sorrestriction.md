@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 6fee29ce-9a34-4e0c-bb71-03120c3f1117
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 06b9b6a046aaa0f16418f75d402cc5be44f845a3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 054625601b496a8ec8f7745aa4cbc4715eed81a7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795597"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22585059"
 ---
-# <a name="sorrestriction"></a><span data-ttu-id="a7372-103">SOrRestriction</span><span class="sxs-lookup"><span data-stu-id="a7372-103">SOrRestriction</span></span>
+# <a name="sorrestriction"></a><span data-ttu-id="07817-103">SOrRestriction</span><span class="sxs-lookup"><span data-stu-id="07817-103">SOrRestriction</span></span>
 
   
   
-<span data-ttu-id="a7372-104">**Betrifft**: Outlook</span><span class="sxs-lookup"><span data-stu-id="a7372-104">**Applies to**: Outlook</span></span> 
+<span data-ttu-id="07817-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="07817-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a7372-105">Beschreibt eine Einschränkung **oder** die verwendet wird, um eine logische **OR** -Operation, die eine Einschränkung anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="a7372-105">Describes an **OR** restriction which is used to apply a logical **OR** operation to a restriction.</span></span> 
+<span data-ttu-id="07817-105">Beschreibt eine Einschränkung **oder** die verwendet wird, um eine logische **OR** -Operation, die eine Einschränkung anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="07817-105">Describes an **OR** restriction which is used to apply a logical **OR** operation to a restriction.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a7372-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="a7372-106">Header file:</span></span>  <br/> |<span data-ttu-id="a7372-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="a7372-107">Mapidefs.h</span></span>  <br/> |
+|<span data-ttu-id="07817-106">Headerdatei</span><span class="sxs-lookup"><span data-stu-id="07817-106">Header file:</span></span>  <br/> |<span data-ttu-id="07817-107">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="07817-107">Mapidefs.h</span></span>  <br/> |
    
 ```cpp
 typedef struct _SOrRestriction
@@ -40,26 +40,26 @@ typedef struct _SOrRestriction
 
 ```
 
-## <a name="members"></a><span data-ttu-id="a7372-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="a7372-108">Members</span></span>
+## <a name="members"></a><span data-ttu-id="07817-108">Elemente</span><span class="sxs-lookup"><span data-stu-id="07817-108">Members</span></span>
 
- <span data-ttu-id="a7372-109">**cRes**</span><span class="sxs-lookup"><span data-stu-id="a7372-109">**cRes**</span></span>
+ <span data-ttu-id="07817-109">**cRes**</span><span class="sxs-lookup"><span data-stu-id="07817-109">**cRes**</span></span>
   
-> <span data-ttu-id="a7372-110">Anzahl der im Array Strukturen auf der **LpRes** Member zeigt.</span><span class="sxs-lookup"><span data-stu-id="a7372-110">Count of structures in the array pointed to by the **lpRes** member.</span></span> 
+> <span data-ttu-id="07817-110">Anzahl der im Array Strukturen auf der **LpRes** Member zeigt.</span><span class="sxs-lookup"><span data-stu-id="07817-110">Count of structures in the array pointed to by the **lpRes** member.</span></span> 
     
- <span data-ttu-id="a7372-111">**lpRes**</span><span class="sxs-lookup"><span data-stu-id="a7372-111">**lpRes**</span></span>
+ <span data-ttu-id="07817-111">**lpRes**</span><span class="sxs-lookup"><span data-stu-id="07817-111">**lpRes**</span></span>
   
-> <span data-ttu-id="a7372-112">Zeiger auf die [SRestriction](srestriction.md) -Struktur, beschreibt die Einschränkung mithilfe des logischen Operators **OR** verknüpft werden.</span><span class="sxs-lookup"><span data-stu-id="a7372-112">Pointer to the [SRestriction](srestriction.md) structure describing the restriction to be joined using the logical **OR** operation.</span></span> 
+> <span data-ttu-id="07817-112">Zeiger auf die [SRestriction](srestriction.md) -Struktur, beschreibt die Einschränkung mithilfe des logischen Operators **OR** verknüpft werden.</span><span class="sxs-lookup"><span data-stu-id="07817-112">Pointer to the [SRestriction](srestriction.md) structure describing the restriction to be joined using the logical **OR** operation.</span></span> 
     
-## <a name="remarks"></a><span data-ttu-id="a7372-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a7372-113">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="07817-113">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="07817-113">Remarks</span></span>
 
-<span data-ttu-id="a7372-114">Weitere Informationen zur Struktur **SOrRestriction** finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).</span><span class="sxs-lookup"><span data-stu-id="a7372-114">For more information about the **SOrRestriction** structure, see [About Restrictions](about-restrictions.md).</span></span> 
+<span data-ttu-id="07817-114">Weitere Informationen zur Struktur **SOrRestriction** finden Sie unter [Informationen zu Einschränkungen](about-restrictions.md).</span><span class="sxs-lookup"><span data-stu-id="07817-114">For more information about the **SOrRestriction** structure, see [About Restrictions](about-restrictions.md).</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="a7372-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a7372-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="07817-115">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="07817-115">See also</span></span>
 
 
 
-[<span data-ttu-id="a7372-116">SRestriction</span><span class="sxs-lookup"><span data-stu-id="a7372-116">SRestriction</span></span>](srestriction.md)
+[<span data-ttu-id="07817-116">SRestriction</span><span class="sxs-lookup"><span data-stu-id="07817-116">SRestriction</span></span>](srestriction.md)
 
 
-[<span data-ttu-id="a7372-117">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="a7372-117">MAPI Structures</span></span>](mapi-structures.md)
+[<span data-ttu-id="07817-117">MAPI-Strukturen</span><span class="sxs-lookup"><span data-stu-id="07817-117">MAPI Structures</span></span>](mapi-structures.md)
 
