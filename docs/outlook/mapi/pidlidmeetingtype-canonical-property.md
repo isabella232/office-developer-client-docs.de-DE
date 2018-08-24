@@ -11,25 +11,25 @@ api_name:
 api_type:
 - COM
 ms.assetid: 290b290c-7836-4a7e-bf1a-8d0225a07e56
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: e61ce7798c9e41dbb707d0d5773b116f7cce02d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: ebc7ed4563040e16c71e1df1094667f87a4c09b2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793662"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572368"
 ---
 # <a name="pidlidmeetingtype-canonical-property"></a>PidLidMeetingType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Typ des einer Besprechungsanfrage oder meeting-Update an.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |dispidMeetingType  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |dispidMeetingType  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PSETID_Meeting  <br/> |
 |Long-ID (Abdeckung):  <br/> |0x00000026  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |

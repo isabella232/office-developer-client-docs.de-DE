@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 144c7179-b390-479f-a2aa-324974f04eba
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 87f8b4f4011e405d9848f12b5cae56f27fff1ab8
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: a4245b5dd1b70d4cf695190c65b447cf92566ef7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795468"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574482"
 ---
 # <a name="selecting-a-receive-folder"></a>Auswählen eines Empfangsordners
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine Empfangsordner ist in der eingehende Nachrichten von einer bestimmten Klasse platziert werden. IPM und verwandte Berichtnachrichten weist MAPI Standard Empfangsordner im Posteingang. IPK und verwandte Berichtnachrichten weist MAPI Standard Empfangsordner im Stammordner des Nachrichtenspeichers. Sie können diese Zuordnungen ändern oder zusätzliche Aufgaben für andere Nachrichtenklassen machen. Explizites Ordner Aufgaben empfangen, für der Client des unterstützten Nachricht Klassen ist optional.
   

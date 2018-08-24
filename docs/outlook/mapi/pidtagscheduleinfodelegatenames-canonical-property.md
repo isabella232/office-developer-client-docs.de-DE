@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 592d9c78-4487-4c68-8ae7-4cd3d6265685
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: fed2b23680cd2654bbb6960e3c6be07074307a98
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 06462f992ec640992b95b89a618e7d82290eeeef
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795069"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574503"
 ---
 # <a name="pidtagscheduleinfodelegatenames-canonical-property"></a>PidTagScheduleInfoDelegateNames (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Namen der-Delegaten.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_DELEGATE_NAMES, PR_SCHDINFO_DELEGATE_NAMES_A, PR_SCHDINFO_DELEGATE_NAMES_W  <br/> |
-|Bezeichner:  <br/> |0x6844  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_DELEGATE_NAMES, PR_SCHDINFO_DELEGATE_NAMES_A, PR_SCHDINFO_DELEGATE_NAMES_W  <br/> |
+|Kennung:  <br/> |0x6844  <br/> |
 |Datentyp:  <br/> |PT_MV_STRING8 PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    

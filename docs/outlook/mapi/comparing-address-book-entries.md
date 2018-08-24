@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e375367b-d107-4768-95de-00b8b9dc3511
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 808d5f4bfca15cae4ca7aab6758d3b5361813bd4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: e5c46aed7a15ae4f48c8e4f1fe308fcb20ab3fe7
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791420"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575357"
 ---
 # <a name="comparing-address-book-entries"></a>Vergleichen von Adressbucheinträgen
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Der Implementierung des Anbieters [IABLogon::CompareEntryIDs](iablogon-compareentryids.md) vergleicht den Eintrag-IDs für zwei Objekte des Anbieters. MAPI ruft diese Methode auf, nachdem festgestellt wurde, dass die zwei-Eintragsbezeichner des Anbieters enthalten [MAPIUID](mapiuid.md)registriert. Aus diesem Grund muss **CompareEntryIDs** -Methode nicht überprüfen, ob die für die Parameter _lpEntryID1_ und _lpEntryID2_ übergebenen Eintragsbezeichner an Ihren Anbieter gehören. 
   

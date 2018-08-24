@@ -11,28 +11,28 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 768b3215-dd9f-4aa0-b52c-178ca81a7b07
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2d6b585c00ffb3d9dd5fb0864d98b0a221c7d8c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: fd98044868bbec36ed14fcf90deb2990039244b8
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794122"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573740"
 ---
 # <a name="pidtagattachsize-canonical-property"></a>PidTagAttachSize (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Summe der Größen aller Eigenschaften auf eine Anlage in Bytes. 
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ATTACH_SIZE  <br/> |
-|Bezeichner:  <br/> |0x0E20  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ATTACH_SIZE  <br/> |
+|Kennung:  <br/> |0x0E20  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
-|Bereich:  <br/> |E-Mail-Anlage  <br/> |
+|Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
 ## <a name="remarks"></a>Bemerkungen
 

@@ -7,19 +7,19 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: e38219db-f867-4c1d-9973-0e025779e8b6
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b5c9874ca465bb0ebed62f218d1512feb1a2f9ea
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 1c7ae4ab6de20d69581a98323c14a2c15f436cad
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795540"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572823"
 ---
 # <a name="shutting-down-a-message-store-provider"></a>Herunterfahren eines Nachrichtenspeicheranbieters
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Wenn der Anbieter einen Anbieter für die Nachricht Anmelden ist, kann es in einem der folgenden Methoden heruntergefahren werden:
   

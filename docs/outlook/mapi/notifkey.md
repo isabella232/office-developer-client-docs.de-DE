@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 031b7e18-59b2-445c-a747-348fda92f458
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 3c480c420753b2da6c57b3961589d5c2e2e8022a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 36b8381e2bf98f5ddcb88a54b56f2b5c91b3b668
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793298"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572599"
 ---
 # <a name="notifkey"></a>NOTIFKEY
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Identifiziert eindeutig eine Verbindung zwischen einer Advise-Empfänger, eine Advise-Quelle und MAPI.
   

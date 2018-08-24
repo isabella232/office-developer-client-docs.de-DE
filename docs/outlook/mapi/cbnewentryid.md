@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 69cb8e0b-4da0-46ef-b1c0-df5e3a791b08
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d9b782be440e1af50cb5994691268aa098a1a7cd
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 4397315ef5ebc8009805f911f7d7b549a698b955
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791383"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574454"
 ---
 # <a name="cbnewentryid"></a>CbNewENTRYID
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Berechnet die Anzahl von Bytes, die für eine neue [ENTRYID](entryid.md) -Struktur einer angegebenen Größe zugeordnet werden sollen. 
   

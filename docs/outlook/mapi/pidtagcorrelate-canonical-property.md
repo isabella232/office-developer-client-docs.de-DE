@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: be34993e-ffcc-47f5-b2d4-95ffa707bc5c
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: ce8573310e17e26b4e2deb4c0a0f835a6569151e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 063e41bf9fe306b3862e302abb4495ca56e3087b
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794284"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575455"
 ---
 # <a name="pidtagcorrelate-canonical-property"></a>PidTagCorrelate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Absender einer Nachricht die Korrelations-Funktion von messaging-System anfordert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_CORRELATE  <br/> |
-|Bezeichner:  <br/> |0x0E0C  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_CORRELATE  <br/> |
+|Kennung:  <br/> |0x0E0C  <br/> |
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Exchange  <br/> |
    

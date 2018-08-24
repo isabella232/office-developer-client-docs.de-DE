@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 8a11e846-c62f-4c06-876f-94623d50cc3b
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: f4eae388d51b0428d508a675681fa4cd1d94e46f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 81dbd097523f4cb5016a3e846f63cfbe1c643de2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795028"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22575861"
 ---
 # <a name="pidtagrulecondition-canonical-property"></a>PidTagRuleCondition (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Bedingung verwendet, wenn Sie die Regel ausgewertet werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_RULE_CONDITION  <br/> |
-|Bezeichner:  <br/> |0x6679  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_RULE_CONDITION  <br/> |
+|Kennung:  <br/> |0x6679  <br/> |
 |Datentyp:  <br/> |PT_SRESTRICTION  <br/> |
 |Bereich:  <br/> |Serverseitige Regeln  <br/> |
    

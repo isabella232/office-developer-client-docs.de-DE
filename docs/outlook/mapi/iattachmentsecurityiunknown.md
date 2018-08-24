@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 69609f73-5884-9e2b-ab78-a2e0ece3a1d1
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 040be6cea64dd58e23d79c20a9ae9dddf02fa87d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: f182610f9cf4874cc18c409960e1f8b23f853d4f
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792014"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574826"
 ---
 # <a name="iattachmentsecurity--iunknown"></a>IAttachmentSecurity : IUnknown
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Können Microsoft Outlook 2010 und Microsoft Outlook 2013-Lösungen zu ermitteln, ob die Anlage unsichere und zum Anzeigen und Indizierung blockierte betrachtet wird.
   

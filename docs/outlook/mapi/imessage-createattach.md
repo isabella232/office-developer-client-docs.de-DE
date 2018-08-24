@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 01711aca-c598-438c-88d7-0719b6691e34
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6351be353100649e38a14543a44df5e115c9408b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 9cc2f5f3880466c0a70febedbc7aaec987b62bb3
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792521"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572089"
 ---
 # <a name="imessagecreateattach"></a>IMessage::CreateAttach
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Erstellt eine neue Anlage.
   

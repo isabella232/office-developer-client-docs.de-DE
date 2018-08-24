@@ -11,26 +11,26 @@ api_name:
 api_type:
 - COM
 ms.assetid: 3179442c-6499-464a-93af-eb0a7a5b0d30
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 20620a5835e627eb7543a03037f9be75db6739ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 78bb5114b78142ce18d3f83c34795b72910c87a2
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795100"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22573712"
 ---
 # <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>PidTagScheduleInfoMonthsTentative (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Monate in der Nachricht Frei/Gebucht-Informationen mit Vorbehalt markiert.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_SCHDINFO_MONTHS_TENTATIVE  <br/> |
-|Bezeichner:  <br/> |0x6851  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_SCHDINFO_MONTHS_TENTATIVE  <br/> |
+|Kennung:  <br/> |0x6851  <br/> |
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    

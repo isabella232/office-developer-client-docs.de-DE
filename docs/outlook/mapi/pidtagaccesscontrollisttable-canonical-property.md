@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 48667fda-ddc4-42ac-9231-761db0a4c1a9
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: d992c7ac43c736e01184e1f12b3ad366587c9b06
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 40a2bc8a27ec3ce3df610b9c7364719c2b5ee750
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794021"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22572788"
 ---
 # <a name="pidtagaccesscontrollisttable-canonical-property"></a>PidTagAccessControlListTable (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Tabelle, die alle System Access Control Lists (SACL) in einen Ordner angewendet besteht.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_ACL_TABLE  <br/> |
-|Bezeichner:  <br/> |0x3FE0  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_ACL_TABLE  <br/> |
+|Kennung:  <br/> |0x3FE0  <br/> |
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    

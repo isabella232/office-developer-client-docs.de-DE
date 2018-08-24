@@ -11,19 +11,19 @@ api_name:
 api_type:
 - COM
 ms.assetid: 9e255b3e-dd17-4528-ba4e-c3a1aef32b04
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a1388545597cf0000f270bf693c93f9349fb6426
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
+ms.openlocfilehash: 5ef210aedc884e5c09eca6335199e2ef284b901c
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19792862"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574832"
 ---
 # <a name="itabledatahrmodifyrow"></a>ITableData::HrModifyRow
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Fügt eine neue Tabellenzeile, die möglicherweise eine vorhandene Zeile ersetzen.
   

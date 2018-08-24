@@ -11,26 +11,26 @@ api_name:
 api_type:
 - HeaderDef
 ms.assetid: 4b57dbad-19b8-4357-b8b1-11f735eafcca
-description: 'Letzte �nderung: Montag, 9. M�rz 2015'
-ms.openlocfilehash: 2c77393b44df1a3b21f20dbc0f6d8090299f9eda
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Letzte Änderung: Montag, 9. März 2015'
+ms.openlocfilehash: 73fa720b4285524d12a9dac468785f6ce211a2b1
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19794497"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22574664"
 ---
 # <a name="pidtaginternetmailoverrideformat-canonical-property"></a>PidTagInternetMailOverrideFormat (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Kodierungsmethode und HTML-Inklusion für Anlagen, die für ausgehende e-Mail-Nachrichten festgelegt werden soll.
   
 |||
 |:-----|:-----|
-|Zugeordneten Eigenschaften:  <br/> |PR_INETMAIL_OVERRIDE_FORMAT  <br/> |
-|Bezeichner:  <br/> |0x5902  <br/> |
+|Zugeordnete Eigenschaften:  <br/> |PR_INETMAIL_OVERRIDE_FORMAT  <br/> |
+|Kennung:  <br/> |0x5902  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
