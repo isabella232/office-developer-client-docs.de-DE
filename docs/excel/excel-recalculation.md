@@ -1,7 +1,7 @@
 ---
 title: Excel-Neuberechnung
 manager: kelbow
-ms.date: 03/09/2018
+ms.date: 08/22/2018
 ms.audience: Developer
 ms.topic: overview
 keywords:
@@ -9,16 +9,16 @@ keywords:
 localization_priority: Normal
 ms.assetid: b4c38442-42e6-4fd2-a1b0-97cfa3300379
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 9964f2c4282158e83891d82ba43fa19f23ab1eb6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 70ca322173fb76eb1871d841b6246b62b3a5000a
+ms.sourcegitcommit: 539bc9a767ede52cb17c1b11ef7fac2fecd96fef
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790467"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "22554169"
 ---
 # <a name="excel-recalculation"></a>Excel-Neuberechnung
 
- **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
+**Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
 Eine Neuberechnung kann in Microsoft Excel auf verschiedene Weisen ausgelöst werden, beispielsweise durch folgende Aktionen:
   
@@ -131,6 +131,8 @@ Die Neuberechnung von Datentabellen wird etwas anders gehandhabt:
 - Die Neuberechnung erfolgt asynchron zur normalen Neuberechnung der Arbeitsmappe, sodass die Neuberechnung großer Tabellen länger dauern kann der Vorgang für den Rest der Arbeitsmappe.
     
 - Zirkelbezüge sind zulässig. Wenn die zur Ermittlung des Ergebnisses verwendete Berechnung von einem oder mehreren Werten aus der Datentabelle abhängt, gibt Excel keinen Fehler für den Zirkelbezug zurück. 
+
+- Datentabellen verwenden keine Multithreadberechnung.
     
 Da Excel die Neuberechnung von Datentabellen anders handhabt und die Berechnung großer Tabellen, die komplexe oder langwierige Berechnungen erfordern, sehr lange dauern kann, haben Sie in Excel die Möglichkeit, die automatische Berechnung von Datentabellen zu deaktivieren. Legen Sie hierzu den Berechnungsmodus auf "Automatisch außer bei Datentabellen" fest. Wenn dieser Berechnungsmodus aktiv ist, drückt der Benutzer F9 oder führt einen entsprechenden Programmiervorgang aus, um die Datentabellen neu zu berechnen.
   

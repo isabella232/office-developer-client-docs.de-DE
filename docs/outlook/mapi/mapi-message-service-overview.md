@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 58f36a6b-bcc5-4ebb-9761-6f420a718d97
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: fc444725aae20e7321fa287a90cf7d3e13b7ffb4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 56f124d7d42ac41e8b5cdb7cf61c9867bbf69837
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19793010"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22587530"
 ---
 # <a name="mapi-message-service-overview"></a>Übersicht über den MAPI-Nachrichtendienst
   
-**Gilt für**: Outlook 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ein Nachrichtendienst definiert eine Gruppe von verwandten Dienstanbietern, in der Regel Dienstanbieter, die mit dem gleichen Messagingsystem arbeiten. Während Dienstanbieter die Kommunikation zwischen Messagingsystemen und dem MAPI-Subsystem ausführen, stellen Nachrichtendienste die Schnittstelle zwischen dem Benutzer und Dienstanbietern dar, die ein gemeinsames Messagingsystem verwenden.  
   

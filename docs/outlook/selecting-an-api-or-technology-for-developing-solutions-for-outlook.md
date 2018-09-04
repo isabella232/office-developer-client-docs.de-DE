@@ -5,17 +5,17 @@ ms.date: 10/21/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 01a46083-03d0-4333-920c-01a9f17f68cb
-description: In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
-ms.openlocfilehash: 267ddcd69354664254755dc45ef0b0ca90f7da32
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 und Outlook 2016 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
+ms.openlocfilehash: e78e96f776b8f7c584dbd82163f41d0f5d8c80f6
+ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795974"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "22593424"
 ---
 # <a name="selecting-an-api-or-technology-for-developing-solutions-for-outlook"></a>Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
 
-In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
+In diesem Artikel werden die APIs und Technologien beschrieben, mit denen Sie Outlook 2013 und Outlook 2016 erweitern können, und Sie erhalten Entscheidungshilfen bei der Auswahl der geeigneten API oder Technologie für Ihr Szenario.
   
 Microsoft unterstützt mehrere API‘s und Technologien, die Outlook erweitern: 
   
@@ -65,7 +65,7 @@ In den Tabellen in diesem Abschnitt werden Bewertungskriterien beschrieben, die 
 
 Ab Office 2013 können Entwickler die Office-Add-Ins-Plattform verwenden, um Webdienste und Inhalte in den Kontext von Rich-Office- und Webclients zu erweitern. Eine Office-Add-In ist eine Webseite, die mit gängigen Webtechnologien entwickelt wurde, in einer Office-Clientanwendung (wie Outlook) gehostet wird und lokal oder in der Cloud ausgeführt werden kann. Von den wenigen Typen von Office-Add-Ins wird der Typ, der Outlook unterstützt, als Mail-App bezeichnet. Das Objektmodell, die PIA und die MAPI werden zwar häufig zur Automatisierung von Outlook auf Anwendungsebene verwendet, doch Sie können die JavaScript-API für Office verwenden, um mit den Inhalten und Eigenschaften einer E-Mail-Nachricht, einer Besprechungsanfrage oder eines Termins auf Elementebene zu interagieren. Sie können Mail-Apps im Office Store oder einem internen Exchange-Katalog veröffentlichen. 
   
-Endbenutzer und Administratoren können Mail-Apps in einem Exchange-Postfach installieren und im Rich-Outlook-Client sowie in Outlook Web App verwenden. Als Entwickler haben Sie die Wahl, Ihre Mail-App nur auf dem Desktop oder auch auf dem Tablet-PC oder dem Smartphone verfügbar zu machen. In Abbildung 1 ist ein Beispiel für eine YouTube-Mail-App dargestellt, die in [Beispiel: Erstellen einer Mail-App in Outlook zum Wiedergeben von YouTube-Videos](http://msdn.microsoft.com/library/bfde1d24-2c13-4798-9b13-5f307d49370f%28Office.15%29.aspx) ausführlich beschrieben wird. Mithilfe der YouTube-Mail-App können Endbenutzer eine URL für ein YouTube-Video auswählen und das Video in Outlook oder Outlook Web App, auf dem Desktop oder auf dem Tablet-PC anzeigen.
+Endbenutzer und Administratoren können Mail-Apps in einem Exchange-Postfach installieren und im Rich-Outlook-Client sowie in Outlook Web App verwenden. Als Entwickler haben Sie die Wahl, Ihre Mail-App nur auf dem Desktop oder auch auf dem Tablet-PC oder dem Smartphone verfügbar zu machen. In Abbildung 1 ist ein Beispiel für eine YouTube-Mail-App dargestellt, die in [Beispiel: Erstellen einer Mail-App in Outlook zum Wiedergeben von YouTube-Videos](https://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-01c9248f) ausführlich beschrieben wird. Mithilfe der YouTube-Mail-App können Endbenutzer eine URL für ein YouTube-Video auswählen und das Video in Outlook oder Outlook Web App, auf dem Desktop oder auf dem Tablet-PC anzeigen.
   
 **Abbildung 1: YouTube-Mail-App ist für die ausgewählte Nachricht aktiv, die eine URL zu einem Video auf YouTube.com enthält**
 
@@ -95,7 +95,7 @@ Die folgenden Tabellen enthalten die Bewertungskriterien für die Office-Add-Ins
 |Sprachen und Tools  <br/> |Sie können Mail-Apps mit jeder gängigen Webtechnologie, z. B. HTML5, JavaScript, CSS3, XML und REST-APIs, implementieren. Sie können Ihr bevorzugtes Webentwicklungstool verwenden. Alternativ können Sie Napa, Visual Studio 2012 oder eine spätere Version dieser Tools verwenden und so Zeit bei der Entwicklung sparen.  <br/> |
 |Verwaltete Implementierung  <br/> |Sofern in Ihrem Szenario geeignet, können Sie verwaltete .aspx-Seiten verwenden, um für Ihre Mail-Apps serverseitigen Code zu implementieren.  <br/> |
 |Skriptfähigkeit  <br/> |Die JavaScript-API für Office wird direkt in Skripts verwendet.  <br/> |
-|Test- und Debuggingtools  <br/> |Sie können ein beliebiges Webentwicklungstool verwenden. Napa und Visual Studio bieten eine integrierte Entwicklungsumgebung, die das Testen und Debugging von Apps erleichtert. Unter [Problembehandlung für die Aktivierung von Outlook-Add-Ins](http://msdn.microsoft.com/library/da5b56c9-7fd1-4556-8c0e-f489c4c9e9b6%28Office.15%29.aspx) und [Beispiel: Debug-Eigenschaften von Outlook-Elementen](http://msdn.microsoft.com/library/e3f14f07-cf35-4896-aab0-cb7625ca09b5%28Office.15%29.aspx) finden Sie nähere Informationen zur Problembehandlung und zum Debugging bei Mail-Apps.  <br/> |
+|Test- und Debuggingtools  <br/> |Sie können ein beliebiges Webentwicklungstool verwenden. Napa und Visual Studio bieten eine integrierte Entwicklungsumgebung, die das Testen und Debugging von Apps erleichtert. Unter [Problembehandlung für die Aktivierung von Outlook-Add-Ins](http://msdn.microsoft.com/library/da5b56c9-7fd1-4556-8c0e-f489c4c9e9b6%28Office.15%29.aspx) und [Beispiel: Debug-Eigenschaften von Outlook-Elementen](https://code.msdn.microsoft.com/office/Mail-apps-for-Outlook-faca78cd) finden Sie nähere Informationen zur Problembehandlung und zum Debugging bei Mail-Apps.  <br/> |
 |Verfügbarkeit von Experten  <br/> |Entwickler, die erfolgreich Office-Add-Ins entwickeln können, sind relativ leicht zu finden. Die Plattform ist für die Entwicklung sowohl im professionellen als auch im privaten Bereich gedacht.  <br/> |
 |Verfügbare Informationen  <br/> |Informationen zur Entwicklung und Veröffentlichung von Office-Add-Ins finden Sie unter [Erstellen von Apps für Office und SharePoint](http://msdn.microsoft.com/de-DE/office/apps/fp160950.aspx). Eine spezielle Dokumentation für Mail-Apps finden Sie unter [Outlook-Add-Ins](http://msdn.microsoft.com/library/71e64bc9-e347-4f5d-8948-0a47b5dd93e6%28Office.15%29.aspx).  <br/> |
 |Lizenzbestimmungen für Entwicklung und Bereitstellung  <br/> |Unter [Lizenzieren von Office- und SharePoint-Add-Ins](http://msdn.microsoft.com/library/3e0e8ff6-66d6-44ff-b0c2-59108ebd9181%28Office.15%29.aspx) finden Sie Informationen zum App-Lizenzframework für Office-Add-Ins.  <br/> |
@@ -883,40 +883,25 @@ In den folgenden Ressourcen finden Sie weitere Informationen zu den wichtigsten 
   
 ### <a name="major-references-and-resources"></a>Wichtige Referenzen und Ressourcen
 
-- [Office-Add-Ins](http://msdn.microsoft.com/library/1e123201-6e70-45c1-a48c-d5b955896ddb%28Office.15%29.aspx)
-    
-- [Outlook 2013-Entwicklerreferenz](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)
-    
-- [Referenz zur primären Interopassembly von Outlook 2010](http://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx)
-    
-- [MAPI-Referenz für Outlook](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)
-    
-- [Zusätzliche Referenz für Outlook 2013](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)
-    
-- [Outlook Connector für soziale Netzwerke – Anbieterverweis](social-connector/outlook-social-connector-provider-reference.md)
-    
-- [Erweiterung der Wetterleiste in Outlook](weather/extending-the-weather-bar-in-outlook.md)
-    
-- [Outlook Weather Information XML Schema](weather/outlook-weather-information-xml-schema.md)
-    
-- [Outlook Weather Location XML Schema](weather/outlook-weather-location-xml-schema.md)
-    
-- [Neuerungen bei XML-Schemas für Outlook 2010](http://msdn.microsoft.com/library/52f91e6f-a774-488c-8e55-111ae8f68f8a%28Office.15%29.aspx)
-    
-- [Outlook 2010: XML-Schemareferenz](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=10ca414a-6cff-46a1-a521-e42c25f079d3&amp;displaylang=en)
-    
+- [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)   
+- [Outlook 2013-Entwicklerreferenz](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx)   
+- [Referenz zur primären Interopassembly von Outlook 2010](http://msdn.microsoft.com/library/54bdde85-8dc9-4498-a1ac-f72eaf8f0cd3%28Office.15%29.aspx)   
+- [MAPI-Referenz für Outlook](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx)   
+- [Zusätzliche Referenz für Outlook 2013](auxiliary/welcome-to-the-outlook-auxiliary-reference.md)   
+- [Outlook Connector für soziale Netzwerke – Anbieterverweis](social-connector/outlook-social-connector-provider-reference.md)   
+- [Erweiterung der Wetterleiste in Outlook](weather/extending-the-weather-bar-in-outlook.md)   
+- [Outlook Weather Information XML Schema](weather/outlook-weather-information-xml-schema.md)   
+- [Outlook Weather Location XML Schema](weather/outlook-weather-location-xml-schema.md)   
+- [Neuerungen bei XML-Schemas für Outlook 2010](http://msdn.microsoft.com/library/52f91e6f-a774-488c-8e55-111ae8f68f8a%28Office.15%29.aspx)   
+- [Outlook 2010: XML-Schemareferenz](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=10ca414a-6cff-46a1-a521-e42c25f079d3&amp;displaylang=en)   
 - [Entwickeln von Outlook 2010-Lösungen für 32-Bit- und 64-Bit-Systeme](http://msdn.microsoft.com/library/076753e1-6252-4189-843c-7b1be1967176%28Office.15%29.aspx)
     
 ### <a name="code-samples"></a>Codebeispiele
 
-- [Beispiele für Mail-Apps](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=Outlook%202013)
-    
-- Codebeispiele für das Objektmodell: [Gewusst wie... (Outlook 2013-Entwicklerreferenz)](http://msdn.microsoft.com/library/3c33646d-e5c2-3103-b219-487ffe23357f%28Office.15%29.aspx)
-    
-- Codebeispiele für die PIA: [Gewusst wie... (Outlook 2013 PIA-Referenz)](http://msdn.microsoft.com/library/ff647d52-bd32-4945-afa4-5b97d9a0d7dd%28Office.15%29.aspx)
-    
+- [Beispiele für Mail-Apps](http://code.msdn.microsoft.com/officeapps/site/search?f%5B0%5D.Type=Technology&amp;f%5B0%5D.Value=Outlook%202013)   
+- Codebeispiele für das Objektmodell: [Gewusst wie... (Outlook 2013-Entwicklerreferenz)](http://msdn.microsoft.com/library/3c33646d-e5c2-3103-b219-487ffe23357f%28Office.15%29.aspx)  
+- Codebeispiele für die PIA: [Gewusst wie... (Outlook 2013 PIA-Referenz)](http://msdn.microsoft.com/library/ff647d52-bd32-4945-afa4-5b97d9a0d7dd%28Office.15%29.aspx)  
 - [MAPI-Beispiele](http://msdn.microsoft.com/library/641659f2-3c0a-43af-96f1-2521b4b06680%28Office.15%29.aspx)
-    
 - Codebeispiele für Hilfs-APIs: [Beispielaufgaben (engl.)](auxiliary/sample-tasks.md)
     
 
