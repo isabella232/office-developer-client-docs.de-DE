@@ -8,23 +8,23 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 1127956a-37aa-c39e-60b4-343dcc4ead82
 description: Gibt den Speicherort für den Bericht Wetter auf.
-ms.openlocfilehash: a95e207845a9e54f5cac58b64ce85ec17b59fa22
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f6642b3f477b9fe45ed0e6a43efcd40e21559b7e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796172"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398297"
 ---
 # <a name="weather-element-weatherdata-element-outlook-weather-location-schema"></a>Wetter-Element (Weatherdata-Element) (Outlook Wetter Speicherort-Schema)
 
 Gibt den Speicherort für den Bericht Wetter auf.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[weatherType](weathertype-complextype-outlook-weather-location-schema.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**Schemadatei** <br/> |getweatherlocation.xsd  <br/> |
    
 ## <a name="definition"></a>Definition

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: ef88e30e-7537-488e-bc72-8da29810f7aa
 description: Verwenden Sie das Telemetrieprotokoll für Office 2013, um Kompatibilitätsprobleme zwischen Office 2013 und Lösungen zu ermitteln, die für vorherige Versionen von Office entwickelt wurden.
-ms.openlocfilehash: 95b23bfbb45a492147ec4d56849a08e0ec14e4a9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ebcf7908fb9f7e1558b0f0576fbbf9a6f0b07568
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796354"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393278"
 ---
 # <a name="troubleshooting-office-files-and-custom-solutions-with-the-telemetry-log"></a>Problembehandlung bei Office-Dateien und benutzerdefinierte Lösungen mit dem Telemetrieprotokoll
 
@@ -25,7 +25,7 @@ Bei einer solchen Vielfalt an Office-Lösungen können Upgrades von Office-Versi
   
 Telemetrieprotokoll für Office 2013 ist ein auf Excel 2013 basierendes Tool und hilft Entwicklern und erfahrenen Benutzern bei der Diagnose von Kompatibilitätsproblemen durch die Anzeige von Ereignissen, die innerhalb ausgewählter Office 2013-Anwendungen auftreten. Anhand dieses Tools können Benutzer potenzielle Probleme mit Add-Ins ermitteln, die sie in ihrer Arbeitsumgebung verwenden. Die Entscheidungsträger im Unternehmen erhalten so die Informationen, die sie benötigen, um für oder gegen ein Upgrade auf Office 2013 zu entscheiden. Telemetrieprotokoll liefert zudem detailliertes Feedback zu bestimmten Änderungen oder veralteten Features in den Objektmodellen für die Office 2013-Anwendungen, damit Entwickler problematischen Code oder problematische Steuerelemente schneller identifizieren und umgestalten können. IT-Experten können mit Telemetriedashboard für Office 2013, einem ergänzenden Tool zu Telemetrieprotokoll, Trends in der Funktionsweise der Lösung über mehrere Clients anzeigen.
   
-Weitere Informationen finden Sie im Artikel [Bereitstellen des Office-Telemetriedashboards](http://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717).
+Weitere Informationen finden Sie im Artikel [Bereitstellen des Office-Telemetriedashboards](https://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717).
   
 ## <a name="how-the-telemetry-log-works"></a>So funktioniert Telemetrieprotokoll
 <a name="OEV_Types"> </a>
@@ -126,11 +126,11 @@ Interpretieren Sie die in Telemetrieprotokoll angezeigten Datensätze anhand der
 |**Ereignis-ID**|**Titel**|**Schweregrad**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |Das Dokument wurde erfolgreich geladen  <br/> ||Die in der Spalte **File** angegebene Datei wurde in der Office-Anwendung ohne Probleme geöffnet.  <br/> |
-|2  <br/> |Das Dokument konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Datei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](http://office.microsoft.com/de-DE/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](http://office.microsoft.com/de-DE/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
+|2  <br/> |Das Dokument konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Datei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
 |3  <br/> |Die Vorlage wurde erfolgreich geladen.  <br/> ||Die in der Spalte **File** angegebene Vorlagendatei wurde in der Office-Anwendung ohne Probleme geöffnet.  <br/> |
-|4  <br/> |Die Vorlage konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Vorlagendatei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache, oder die Vorlagenverfügbarkeit hat sich geändert.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](http://office.microsoft.com/de-DE/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](http://office.microsoft.com/de-DE/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
+|4  <br/> |Die Vorlage konnte nicht geladen werden.  <br/> |Warnung  <br/> | Die Anwendung konnte die Vorlagendatei nicht laden. Möglicherweise ist ein zugrunde liegendes Kompatibilitätsproblem die Ursache, oder die Vorlagenverfügbarkeit hat sich geändert.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx).<br/><br/>Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
 |5  <br/> |Das Add-In wurde erfolgreich geladen.  <br/> ||Das in der Spalte **File** angegebene Add-In wurde erfolgreich in die Office-Anwendung geladen. Es wurden keine Kompatibilitätsprobleme ermittelt.  <br/> |
-|6  <br/> |Fehler beim Laden von Add-In  <br/> |Kritisch  <br/> | Die Anwendung konnte das in der Spalte **File** angegebene Add-In nicht laden.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](http://office.microsoft.com/de-DE/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx). <br/><br/>  Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](http://office.microsoft.com/de-DE/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
+|6  <br/> |Fehler beim Laden von Add-In  <br/> |Kritisch  <br/> | Die Anwendung konnte das in der Spalte **File** angegebene Add-In nicht laden.  <br/><br/>Weitere Informationen dazu, wie Sie eine beschädigte Arbeitsmappe in Excel 2013 reparieren, finden Sie unter [Reparieren einer beschädigten Arbeitsmappe](https://office.microsoft.com/en-us/excel-help/repairing-a-corrupted-workbook-HA102749554.aspx). <br/><br/>  Weitere Informationen zur Reparatur eines beschädigten Dokuments in Word 2013 finden Sie unter [Speichern und Wiederherstellen einer Sicherungskopie eines Dokuments](https://office.microsoft.com/en-us/word-help/save-and-recover-a-backup-copy-of-a-document-HA010121250.aspx). <br/> |
 |7  <br/> |Das Add-In-Manifest wurde erfolgreich heruntergeladen.  <br/> ||Die Host-Anwendung hat das Manifest für die Office-Add-In erfolgreich heruntergeladen.  <br/> |
 |8  <br/> |Das Add-In-Manifest konnte nicht heruntergeladen werden.  <br/> |Kritisch  <br/> |Die Hostanwendung konnte die Manifestdatei für die Office-Add-In nicht aus dem SharePoint-Katalog, dem Unternehmenskatalog oder aus dem Office Store laden.  <br/> |
 |9  <br/> |Das Add-In-Manifest konnte nicht analysiert werden.  <br/> |Kritisch  <br/> |Die Hostanwendung hat das Office-Add-In-Manifest für das Add-In geladen, konnte jedoch das XML-Markup nicht lesen.  <br/> |
@@ -158,9 +158,9 @@ Telemetrieprotokoll bietet großen Unternehmen, einzelnen Benutzern und Entwickl
 ## <a name="see-also"></a>Siehe auch
 <a name="OEV_Additional"> </a>
 
-- [Office Developer Center](http://msdn.microsoft.com/de-DE/office/aa905340.aspx)
+- [Office Developer Center](https://msdn.microsoft.com/office/aa905340.aspx)
 - [Kompatibilitätsprobleme in Office](compatibility-issues-in-office.md)
-- [Bereitstellen des Office-Telemetriedashboards](http://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717)
-- [Office Developer Center](http://msdn.microsoft.com/de-DE/office/aa905340)
+- [Bereitstellen des Office-Telemetriedashboards](https://technet.microsoft.com/library/f69cde72-689d-421f-99b8-c51676c77717)
+- [Office Developer Center](https://msdn.microsoft.com/office/aa905340)
     
 

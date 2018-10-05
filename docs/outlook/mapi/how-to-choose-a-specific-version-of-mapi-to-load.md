@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 85539a7f-74b6-4267-86ea-00da2c900c34
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c5a7ba301d61468c0ff43a7e99d05976d55d239d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d353eba55e33b8ab48b3c47d2f31f1b5e0973b58
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576670"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399732"
 ---
 # <a name="choose-a-specific-version-of-mapi-to-load"></a>Wählen Sie eine bestimmte Version von MAPI geladen werden
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beim explizit auf eine Implementierung der MAPI zu verknüpfen, müssen Sie die Implementierung zum Laden sorgfältig auswählen. 
   
@@ -27,7 +27,7 @@ Es gibt zwei Methoden zum expliziten eine Implementierung von MAPI verknüpfen.
     
 2. Sie können implementieren den MAPI-Client-Lookup-Algorithmus zum Nachschlagen von der Version von MAPI, die von der standardmäßige e-Mail-Client verwendet und Laden es.
     
-Da die [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx) , um die Anwendung für jede Implementierung von MAPI zu leiten nicht geändert werden kann, wird empfohlen, Sie leiten die Anwendung eine Implementierung von MAPI verwendet, die Sie mit getestet haben. Im folgenden werden beide Methoden explizit verknüpfen beschrieben. 
+Da die [Mapi32.dll Stub Registrierungseinstellungen](https://msdn.microsoft.com/library/ms531218%28EXCHG.10%29.aspx) , um die Anwendung für jede Implementierung von MAPI zu leiten nicht geändert werden kann, wird empfohlen, Sie leiten die Anwendung eine Implementierung von MAPI verwendet, die Sie mit getestet haben. Im folgenden werden beide Methoden explizit verknüpfen beschrieben. 
   
 ## <a name="reading-from-the-registry"></a>Lesen aus der Registrierung
 
@@ -99,16 +99,16 @@ Da MFCMAPI (engl.) die standardmäßige Implementierung von MAPI standardmäßig
 10.  `GetMAPIPath`Klicken Sie dann gibt dieser Pfad an den Anrufer, die anschließend geladen MAPI und explizit darauf verknüpft, wie in [Verbindung zu MAPI-Funktionen](how-to-link-to-mapi-functions.md)beschrieben.
     
 > [!NOTE] 
-> - Zur Unterstützung von lokalisierter Kopien der MAPI für Englisch und nicht-englischen Gebietsschemas `GetMAPIPath` liest die Werte für die Unterschlüssel **MSIApplicationLCID** und **MSIOfficeLCID** .  `GetMAPIPath`Ruft dann **FGetComponentPath**, zuerst **MSIApplicationLCID** als **SzQualifier**angeben und erneut **MSIOfficeLCID** als **SzQualifier**angeben. Weitere Informationen zu Registrierungsschlüsseln für e-Mail-Clients, die nicht-englischen Sprachen unterstützen, finden Sie unter [Einstellung der MSI-Schlüssel für Ihr MAPI-DLL](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx).   
+> - Zur Unterstützung von lokalisierter Kopien der MAPI für Englisch und nicht-englischen Gebietsschemas `GetMAPIPath` liest die Werte für die Unterschlüssel **MSIApplicationLCID** und **MSIOfficeLCID** .  `GetMAPIPath`Ruft dann **FGetComponentPath**, zuerst **MSIApplicationLCID** als **SzQualifier**angeben und erneut **MSIOfficeLCID** als **SzQualifier**angeben. Weitere Informationen zu Registrierungsschlüsseln für e-Mail-Clients, die nicht-englischen Sprachen unterstützen, finden Sie unter [Einstellung der MSI-Schlüssel für Ihr MAPI-DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx).   
 > - Wenn keine MFCMAPI (engl.) einen Pfad für die Verwendung von MAPI empfängt `GetMAPIPath`, es lädt die MAPI-Stub-Bibliothek aus dem Verzeichnis des Systems.
-> - Der **MSMapiApps** Registrierungswert in [Explizit Zuordnen von MAPI-Aufrufe zu MAPI-DLLs](http://msdn.microsoft.com/en-us/library/ee909490%28VS.85%29.aspx) erläuterten gilt nur, wenn die MAPI-Stub-Bibliothek verwendet wird. Anwendungen, die eine bestimmte Implementierung der MAPI laden oder laden die standardmäßige Implementierung müssen nicht den **MSMapiApps** Registrierungsschlüssel festgelegt. 
+> - Der **MSMapiApps** Registrierungswert in [Explizit Zuordnen von MAPI-Aufrufe zu MAPI-DLLs](https://msdn.microsoft.com/library/ee909490%28VS.85%29.aspx) erläuterten gilt nur, wenn die MAPI-Stub-Bibliothek verwendet wird. Anwendungen, die eine bestimmte Implementierung der MAPI laden oder laden die standardmäßige Implementierung müssen nicht den **MSMapiApps** Registrierungsschlüssel festgelegt. 
     
 ## <a name="see-also"></a>Siehe auch
 
 - [FGetComponentPath](fgetcomponentpath.md)
 - [Übersicht über die MAPI-Programmierung](mapi-programming-overview.md)
 - [Verweisen auf MAPI-Funktionen](how-to-link-to-mapi-functions.md)
-- [Mapi32.dll Stub Registrierungseinstellungen](http://msdn.microsoft.com/en-us/library/ms531218%28EXCHG.10%29.aspx)
-- [Einrichten der MSI-Keys für die MAPI-DLL](http://msdn.microsoft.com/en-us/library/ee909494%28VS.85%29.aspx)
-- [Zuordnen von explizit MAPI-Aufrufe zu MAPI-DLLs](http://msdn.microsoft.com/en-us/library/ee909490%28VS.85%29.aspx)
+- [Mapi32.dll Stub Registrierungseinstellungen](https://msdn.microsoft.com/library/ms531218%28EXCHG.10%29.aspx)
+- [Einrichten der MSI-Keys für die MAPI-DLL](https://msdn.microsoft.com/library/ee909494%28VS.85%29.aspx)
+- [Zuordnen von explizit MAPI-Aufrufe zu MAPI-DLLs](https://msdn.microsoft.com/library/ee909490%28VS.85%29.aspx)
 

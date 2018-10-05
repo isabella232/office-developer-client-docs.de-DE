@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e78287ff-f8cc-45ea-8da8-e7a7359e651c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5fca47055d0c88293156483a53118667c1c72276
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0b740368aae43549e81cf3f4f6de40526c505b6b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574098"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401514"
 ---
 # <a name="pidlidtaskdeadoccurrence-canonical-property"></a>PidLidTaskDeadOccurrence (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob neue Vorkommen generiert werden müssen.
   
@@ -35,7 +35,7 @@ Gibt an, ob neue Vorkommen generiert werden müssen.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Ein Serienmuster ist nicht mehr gültig, wenn die letzte Instanz befindet sich in der Vergangenheit oder die angegebene Anzahl von Instanzen generiert wurde. Der Client wird diese Eigenschaft auf FALSE für eine neue Aufgabe oder auf true fest, wenn die letzte Instanz einer Aufgabenserie generiert wird. Beim Kopieren eines Vorgangs, um eine neue Instanz generieren, wird diese Eigenschaft für die Kopie auf TRUE festgelegt, das die Instanz abgeschlossen ist.
   
@@ -43,11 +43,11 @@ Ein Serienmuster ist nicht mehr gültig, wenn die letzte Instanz befindet sich i
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert. 
     

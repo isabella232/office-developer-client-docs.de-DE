@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 08239670-3211-420c-99d7-0056ed967cb8
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6ca53633f0c1e5b226f7e03c8ee702d4cda7d115
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 504dc4b1cecb9798590e4a15968acc3aa98fe4a6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586795"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399900"
 ---
 # <a name="pidlidappointmenttimezonedefinitionstartdisplay-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionStartDisplay (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn die Anfangszeit der eine Einzelinstanz-Termin oder eine Besprechungsanfrage ausgewählt ist. 
+Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn die Anfangszeit der eine Einzelinstanz-Termin oder eine Besprechungsanfrage ausgewählt ist. 
   
 |||
 |:-----|:-----|
@@ -35,13 +35,13 @@ Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINI
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Microsoft Office Outlook 2003 oder früher und Lösungen, basieren auf Collaboration Data Objects (CDO) 1.2.1 und, die das Calendar Update-Tool nicht für Microsoft Outlook und Microsoft Exchange Server ausgeführt haben, Speichern der Start- und Endzeit der Einzel-Instanz Termine und Besprechungsanfragen in koordinierter Weltzeit (UTC). Diese Clients speichern keine Informationen für die Zeitzone in denen die Termin- oder Besprechungsanfragen erstellt wird.
   
 Versionen von Outlook im Vergleich zu Microsoft Office Outlook 2007 und CDO 1.2.1-basierter Lösungen, die Outlook oder Exchange Server-Update Kalendertools ausgeführt haben mit dieser Eigenschaft können Sie um die Zeitzone für die Startzeit zu speichern. Die **DispidApptTZDefStartDisplay** -Eigenschaft zeigt, dass es geplant wurde Termin oder eine Besprechung in der ursprünglichen Zeitzone. Bestimmt, ob die Startzeit angepasst werden sollten, wenn die Regeln der Zeitzone ändern. Wenn diese Eigenschaft nicht vorhanden ist, wird davon ausgegangen, dass die aktuelle lokale Zeitzone. Diese Eigenschaft wird nur für die Anzeige verwendet und ist nicht in Serie Erweiterung verwendet. 
   
-Ein Parser wird beim Lesen eines Streams von dieser Eigenschaft abgerufen oder wenn er in ein Stream-Objekt für eine binäre Eigenschaft wie **DispidApptTZDefStartDisplay**Engagement **TZDEFINITION** beibehalten. Weitere Informationen finden Sie unter [Speichern von TZDEFINITION in ein Stream-Objekt an eine binäre Eigenschaft übermittelt werden](http://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
+Ein Parser wird beim Lesen eines Streams von dieser Eigenschaft abgerufen oder wenn er in ein Stream-Objekt für eine binäre Eigenschaft wie **DispidApptTZDefStartDisplay**Engagement **TZDEFINITION** beibehalten. Weitere Informationen finden Sie unter [Speichern von TZDEFINITION in ein Stream-Objekt an eine binäre Eigenschaft übermittelt werden](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
   
 Diese Eigenschaft gibt die Informationen zur Zeitzone für die Eigenschaft **DispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)). Der Wert der **DispidApptTZDefStartDisplay** wird verwendet, um das Startdatum und die Uhrzeit aus UTC in die lokale Zeitzone für die Anzeige zu konvertieren. Für jede **TZRULE** von dieser Eigenschaft angegeben wird muss das Flag TZRULE_FLAG_RECUR_CURRENT_TZREG nicht festgelegt werden. Beispielsweise ist der **TZRULE** die effektive Regel, muss der Wert des Felds, **TZRULE** "0 x 0002"; werden Andernfalls müssen sie "0 x 0000" sein. 
   
@@ -49,11 +49,11 @@ Diese Eigenschaft gibt die Informationen zur Zeitzone für die Eigenschaft **Dis
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

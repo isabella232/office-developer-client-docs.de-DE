@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 40ec6dd4-2206-4e59-aafe-53aaf693f973
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 346a2bce6d5709490ad11da842ed4f3e794b1996
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7eb65bbae2fca6648c3a701dfa5c83c5bf297ec5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569190"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396183"
 ---
 # <a name="ipersistmessage--iunknown"></a>IPersistMessage : IUnknown
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht das Formular Leser von Berichten, die Speicherung eines Formulars und zum Wechseln zwischen den verschiedenen Zuständen zu behandeln.
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapiform.h  <br/> |
+|Headerdatei:  <br/> |Mapiform.h  <br/> |
 |Verfügbar gemacht von:  <br/> |Beibehalten von Message-Objekten  <br/> |
 |Implementiert von:  <br/> |Formular-Objekte  <br/> |
 |Aufgerufen von:  <br/> |Formular-Viewer  <br/> |
@@ -49,11 +49,11 @@ Ermöglicht das Formular Leser von Berichten, die Speicherung eines Formulars un
 |[SaveCompleted](ipersistmessage-savecompleted.md) <br/> |Das Formular benachrichtigt, einen Vorgang abgeschlossen wurde.  <br/> |
 |[HandsOffMessage](ipersistmessage-handsoffmessage.md) <br/> |Bewirkt, dass das Formular, um die aktuelle Nachricht freigeben.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Alle Formulare sind erforderlich, um die **IPersistMessage** -Schnittstelle implementieren. 
   
- **IPersistMessage** funktioniert ähnlich wie die OLE [IPersistStorage](http://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx) -Schnittstelle. Weitere Informationen finden Sie unter die **IPersistStorage** -Methoden. 
+ **IPersistMessage** funktioniert ähnlich wie die OLE [IPersistStorage](https://msdn.microsoft.com/library/1c1a20fc-c101-4cbc-a7a6-30613aa387d7%28Office.15%29.aspx) -Schnittstelle. Weitere Informationen finden Sie unter die **IPersistStorage** -Methoden. 
   
 ## <a name="see-also"></a>Siehe auch
 

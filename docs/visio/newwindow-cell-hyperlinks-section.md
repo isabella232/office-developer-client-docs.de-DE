@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 44995137-d241-937a-c097-0f9d79203cdf
 description: Gibt an, ob der Hyperlink in einem neuen Fenster geöffnet werden soll.
-ms.openlocfilehash: b4d927e1970e994047df3cb89afa7799a825511d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0f9d1e4b1294dea3f211c8d0d69ffc49b6180066
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797542"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396337"
 ---
 # <a name="newwindow-cell-hyperlinks-section"></a>NewWindow Cell (Hyperlinks Section)
 
@@ -22,7 +22,7 @@ Gibt an, ob der Hyperlink in einem neuen Fenster geöffnet werden soll.
   
 |**Wert**|**Beschreibung**|
 |:-----|:-----|
-| TRUE  <br/> | Verknüpfte Seite, Dokument oder Website in einem neuen Fenster öffnen.  <br/> |
+| TRUE  <br/> | Öffnen Sie die verknüpfte Seite, Dokument oder Website in einem neuen Fenster.  <br/> |
 | FALSE  <br/> | Standard. Hyperlink nicht in einem neuen Fenster öffnen.  <br/> |
    
 ## <a name="remarks"></a>Hinweise

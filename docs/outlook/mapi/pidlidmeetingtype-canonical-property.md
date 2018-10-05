@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 290b290c-7836-4a7e-bf1a-8d0225a07e56
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ebc7ed4563040e16c71e1df1094667f87a4c09b2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d2b00c67984d090274a17028ee74e46bee482e2b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572368"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399634"
 ---
 # <a name="pidlidmeetingtype-canonical-property"></a>PidLidMeetingType (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Gibt den Typ des einer Besprechungsanfrage oder meeting-Update an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss auf einen der folgenden festgelegt werden:
   
@@ -52,11 +52,11 @@ Der Wert dieser Eigenschaft muss auf einen der folgenden festgelegt werden:
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

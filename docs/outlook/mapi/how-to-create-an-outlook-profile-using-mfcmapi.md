@@ -5,18 +5,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 85581bc7-2d81-46af-8836-adef39c933fc
 description: MFCMAPI (engl.) bietet Zugriff auf MAPI-Speicher um Untersuchung von Exchange und Outlook Probleme zu vereinfachen und Entwickler mit Unterstützung für die Entwicklung von MAPI bereitzustellen.
-ms.openlocfilehash: 8df9a4c2783829b7f3540046daecb12ce0b6b86a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8a300ad53918b22cc3de5554a1e3c29289cd9365
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791848"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397877"
 ---
 # <a name="create-an-outlook-profile-using-mfcmapi"></a>Erstellen eines Outlook-Profils mit MFCMAPI
 
 MFCMAPI (engl.) bietet Zugriff auf MAPI-Speicher um Untersuchung von Exchange und Outlook Probleme zu vereinfachen und Entwickler mit Unterstützung für die Entwicklung von MAPI bereitzustellen.
 
-**Betrifft**: Office 365 | Outlook | Outlook 2016 
+**Gilt für**: Office 365 | Outlook | Outlook 2016 
   
 Für nicht-Entwickler empfiehlt es sich für die Verwendung der Benutzeroberfläche von Outlook zum Erstellen von Profilen für Exchange 2013.
   
@@ -103,7 +103,7 @@ Tipps zur Problembehandlung finden Sie unter [konfigurieren ein Outlook-Profils 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [MAPI-Referenz für Outlook](https://msdn.microsoft.com/en-us/library/office/cc765775.aspx)  
-- [Programmgesteuertes Erstellen eines Profils in Outlook](https://msdn.microsoft.com/en-us/library/office/mt707568.aspx)
+- [MAPI-Referenz für Outlook](https://msdn.microsoft.com/library/office/cc765775.aspx)  
+- [Programmgesteuertes Erstellen eines Profils in Outlook](https://msdn.microsoft.com/library/office/mt707568.aspx)
     
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bce46687-17dc-4a3f-96be-303d8755158e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 649490f18bb1a14a7056b49fd846e893fba304bd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d463be4a14ecf478bdcbddc50b4ad9360829befc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575210"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396197"
 ---
 # <a name="pidtagrenderingposition-canonical-property"></a>PidTagRenderingPosition (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Offset in Zeichen, die beim Rendern einer Anlage im Hauptfenster Nachrichtentext verwenden.
   
@@ -34,7 +34,7 @@ Enthält einen Offset in Zeichen, die beim Rendern einer Anlage im Hauptfenster 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Anlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn der angegebene Offset-1 (0xFFFFFFFF) ist, wird die Anlage unter Verwendung dieser Eigenschaft nicht gerendert. Alle Werte, die als-1 Geben Sie an der Position innerhalb der **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft, an der die Anlage ist gerendert werden soll.
   
@@ -48,11 +48,11 @@ Diese Eigenschaft sollte nicht mit Rich Text Format (RTF) Text verwendet werden.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

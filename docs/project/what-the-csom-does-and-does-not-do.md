@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6828485c-040b-4278-923f-4cc7c8fe0fb1
 description: Das Client-seitigen Objektmodell (CSOM) ist ein Satz von APIs für Project Server 2013, die für beide entworfen wurden, online und lokalen verwenden in apps, die für PCs, Tablets und mobilen Geräten entwickelt werden können. Dieser Artikel enthält einige Standardszenarien für die Verwendung des CSOM und führt außerdem Einschränkungen des CSOM.
-ms.openlocfilehash: 232152d3d2ee902b438bc1fe3ece06acca713175
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad9f9e0404cb0063a1c58c8e66a022372881a24f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796316"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399291"
 ---
 # <a name="what-the-csom-does-and-does-not-do"></a>Was das CSOM durchführen kann und was nicht
 
@@ -65,11 +65,11 @@ Eine Liste der Aktionen, die die PSI weder das CSOM behandelt, finden Sie im Abs
 
 Das CSOM umfasst keine Funktionalität von der folgenden PSI-Dienste:
   
-- **Verwaltungsdienst** Verwenden Sie zum Verwalten von administrativen Einstellungen und Vorgänge in Project Server und verwandte Projektwebsites, z. B. Geschäftszeiträume erstellen und das Arbeitszeittabellen-Einstellungen PSI-Methoden in der [WebSvcAdmin.Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx) -Klasse. Project Web App selbst verwendet **Admin** Methoden in vielen Seiten, die mit der Seite servereinstellungen verknüpft sind (http:// *ServerName*  /  *ProjectServerName* /_layouts/15/pwa/Admin/Admin.aspx). 
+- **Verwaltungsdienst** Verwenden Sie zum Verwalten von administrativen Einstellungen und Vorgänge in Project Server und verwandte Projektwebsites, z. B. Geschäftszeiträume erstellen und das Arbeitszeittabellen-Einstellungen PSI-Methoden in der [WebSvcAdmin.Admin](https://msdn.microsoft.com/library/WebSvcAdmin.Admin.aspx) -Klasse. Project Web App selbst verwendet **Admin** Methoden in vielen Seiten, die mit der Seite servereinstellungen verknüpft sind (https:// *ServerName*  /  *ProjectServerName* /_layouts/15/pwa/Admin/Admin.aspx). 
     
 - **Archivierungsdienst** Verwenden Sie zum Speichern und Verwalten von Entitäten wie Projekten, Ressourcen und benutzerdefinierte Felder in die Archivtabellen, PSI-Methoden in das [Archiv](https://msdn.microsoft.com/library/WebSvcArchive.Archive.aspx) -Klasse. 
     
-- **CubeAdmin-Dienst** Zum Erstellen und Verwalten von OLAP-Cubes für lokale Installationen, PSI-Methoden in der [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx) -Klasse verwenden, oder verwenden Sie die Seite OLAP-Datenbankverwaltung (http:// *ServerName*  /  ** ProjectServerName/_layouts/15/pwa / CubeAdmin/CubeAnalysisAdmin.aspx) in Project Web App. 
+- **CubeAdmin-Dienst** Zum Erstellen und Verwalten von OLAP-Cubes für lokale Installationen, PSI-Methoden in der [WebSvcCubeAdmin.CubeAdmin](https://msdn.microsoft.com/library/WebSvcCubeAdmin.CubeAdmin.aspx) -Klasse verwenden, oder verwenden Sie die Seite OLAP-Datenbankverwaltung (https:// *ServerName*  /  *ProjectServerName* /_layouts/15/pwa / CubeAdmin/CubeAnalysisAdmin.aspx) in Project Web App. 
     
     > [!NOTE]
     > Project Online unterstützt keine OLAP-Cubes. 
@@ -110,7 +110,7 @@ Das CSOM in Project Server 2013 basiert auf die CSOM-Implementierung in SharePoi
   
 Beispielsweise, wenn Sie des CSOM mithilfe erstellen Sie ein Projekt, und klicken Sie dann Bearbeiten des Projekts, um 252 Aufgaben mit einem Mindestmaß an Informationen wie einen kurzen Namen, die Vorgangs-GUID und eine Dauer von 1D hinzufügen, der die Gesamtmenge der Daten in der Anforderung **DraftProject.Update** ist kleiner als 2 MB. Aber, wenn Sie versuchen, ein leeres Projekt 253 Aufgaben hinzuzufügen, die 2 MB überschritten ist, und erhalten Sie die folgende Ausnahme: **Microsoft.SharePoint.Client.ServerException: die Anforderung verwendet zu viele Ressourcen**
   
-Zum Erfassen der Datenteils in eine CSOM-Anforderung über HTTP oder HTTPS, können Sie eine Tool wie [Fiddler](http://www.fiddler2.com) Debuggen Web (http://www.fiddler2.com). Ein Codebeispiel, das einen Test für Anforderungsgröße implementiert und umfasst eine Lösung, die eine große Anforderung in kleinere Gruppen aufgehoben, finden Sie unter [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx) . 
+Zum Erfassen der Datenteils in eine CSOM-Anforderung über HTTP oder HTTPS, können Sie eine Tool wie [Fiddler](https://www.fiddler2.com) Debuggen Web (https://www.fiddler2.com). Ein Codebeispiel, das einen Test für Anforderungsgröße implementiert und umfasst eine Lösung, die eine große Anforderung in kleinere Gruppen aufgehoben, finden Sie unter [DraftProject.Update](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.DraftProject.Update.aspx) . 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="pj15_WhatTheCSOM_AR"> </a>

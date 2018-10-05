@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: e9356257-4581-44fe-8efa-172964e4c8d4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 375a98477fe45d60a7aa39ef0bfb8fad8fe0e8d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cd1b54601c55e44ad2b9e1d2cea3d3fdd9e76017
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575420"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397947"
 ---
 # <a name="pidtaginferenceenabled-canonical-property"></a>PidTagInferenceEnabled (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Speichern Sie die Eigenschaft zur Steuerung der Ableitung Protokollierung.
   
@@ -27,18 +27,18 @@ Speichern Sie die Eigenschaft zur Steuerung der Ableitung Protokollierung.
 |:-----|:-----|
 |Zugeordnete Eigenschaften:  <br/> |PR_INFERENCES_ENABLED  <br/> |
 |Kennung:  <br/> |0x3439000  <br/> |
-|Datentyp:  <br/> |Boolesch  <br/> |
+|Datentyp:  <br/> |Boolean  <br/> |
 |Bereich:  <br/> |Nachrichtenspeicher  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
+[[MS-OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
 > Gibt die zulässige Vorgänge für die Hauptobjekte der Nachricht Store.
     

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 46712e1f-4e02-974f-c224-85db47666ae1
 description: Enthält Elemente, die dokumenteinstellungen angeben.
-ms.openlocfilehash: 8cd10e43b95918ccd2ceaa75a47c9e93de2acc14
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e86dc5a0875006cb8bd1bbaffd36037a07fd5c0f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796879"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396470"
 ---
 # <a name="documentsettings-element-visiodocumenttype-complextype-visio-xml"></a>DocumentSettings-Element (VisioDocument_Type ComplexType) ("Visio XML")
 
 Enthält Elemente, die dokumenteinstellungen angeben.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[DocumentSettings_Type](documentsettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

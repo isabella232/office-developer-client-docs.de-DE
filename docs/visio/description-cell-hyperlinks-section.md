@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 2f571c65-6b7a-5a3a-c075-3c52d3ab989b
 description: Stellt eine beschreibende Textzeichenfolge für einen Hyperlink dar.
-ms.openlocfilehash: 567a90b3162c109582c3149c156a994392980577
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b58e6dc3ec2fc3b64db00e0f19e0718fe897aaa3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796859"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396624"
 ---
 # <a name="description-cell-hyperlinks-section"></a>Description Cell (Hyperlinks Section)
 
@@ -22,7 +22,7 @@ Stellt eine beschreibende Textzeichenfolge für einen Hyperlink dar.
   
 ## <a name="remarks"></a>Bemerkungen
 
-Verwenden Sie diese Zelle, um Kommentare zum Hyperlink zu speichern, beispielsweise "Link zu unserer Website mit den Preisinformationen".
+Verwenden Sie diese Zelle, um Kommentare zum Hyperlink zu speichern. beispielsweise "Link zu unserer Website pricing."
   
 Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie dazu auf der Registerkarte **Einfügen** auf **Hyperlink**). 
   

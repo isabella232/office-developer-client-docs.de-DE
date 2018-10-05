@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c8e7acb7-7596-4710-85ba-1feeac464703
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c074067039ed1d3ef064ddba0b6717b302f652e6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 762d60123de86b7d18d634cf39d79a4652a5ffec
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595440"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398752"
 ---
 # <a name="pidtagmailboxownername-canonical-property"></a>PidTagMailboxOwnerName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Zeigt den Namen des Besitzers des Postfachs an.
   
@@ -38,11 +38,11 @@ Zeigt den Namen des Besitzers des Postfachs an.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
+[[MS-OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
 > Gibt die zulässige Vorgänge für die Hauptobjekte der Nachricht Store.
     

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 306d62b1-d541-4039-9759-3903f62e0f26
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 96266b948d80b07d7aefefbf29225d2f85089094
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4c1c04e5b04be9bb67b050f5cf498be89d380410
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566698"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396323"
 ---
 # <a name="mapi-custom-form-objects"></a>MAPI-benutzerdefiniertes Formularobjekte
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Objekte für benutzerdefinierte Formulare werden durch drei Komponenten implementiert:
   
@@ -47,7 +47,7 @@ Die folgende Tabelle beschreibt alle benutzerdefinierten Formularobjekte.
 |Ansichtskontext  <br/> |Unterstützt bilden Befehle für die Aktivierung von vorherigen und nächsten Nachrichten und zum Speichern oder drucken.  <br/> |
 |Ansicht advise-Empfänger  <br/> |Benachrichtigungen aus dem Formular Server behandelt.  <br/> |
    
-Die folgende Abbildung zeigt die Beziehung zwischen benutzerdefinierte Formularkomponenten, die Objekte und Schnittstellen, die sie implementieren und die Komponenten, die Benutzer der Objekte sind. Beachten Sie, dass im Gegensatz zu den meisten anderen MAPI-Objekten, das Form-Objekt zwei Schnittstellen implementiert, die nicht über die direkte Vererbung verknüpft sind. Ein Objekt mehrere unabhängige Schnittstellen verfügbar macht, kann ein Benutzer, der das Objekt, das einen Zeiger auf eine der Schnittstellen hat einen Zeiger auf einer anderen Schnittstelle abrufen. Diese Möglichkeit zum Navigieren zwischen schnittstellenimplementierungen ein Objekt ist ein Feature von die [QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode. 
+Die folgende Abbildung zeigt die Beziehung zwischen benutzerdefinierte Formularkomponenten, die Objekte und Schnittstellen, die sie implementieren und die Komponenten, die Benutzer der Objekte sind. Beachten Sie, dass im Gegensatz zu den meisten anderen MAPI-Objekten, das Form-Objekt zwei Schnittstellen implementiert, die nicht über die direkte Vererbung verknüpft sind. Ein Objekt mehrere unabhängige Schnittstellen verfügbar macht, kann ein Benutzer, der das Objekt, das einen Zeiger auf eine der Schnittstellen hat einen Zeiger auf einer anderen Schnittstelle abrufen. Diese Möglichkeit zum Navigieren zwischen schnittstellenimplementierungen ein Objekt ist ein Feature von die [QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode. 
   
 **Benutzerdefinierte Formularkomponenten**
   

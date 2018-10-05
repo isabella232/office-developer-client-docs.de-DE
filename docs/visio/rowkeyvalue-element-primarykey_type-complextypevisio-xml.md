@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9077ad4b-c539-c0c8-d268-9a009990abdd
 description: Gibt den Wert des einen Primärschlüssel für eine einzelne Zeile eines Recordset-Objekts.
-ms.openlocfilehash: 3b91997b5fe8184eb89f8c53197a512d809171b9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 12d60bb0ccccdcd8c1790678cae4ad1e887e73b6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797940"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396723"
 ---
 # <a name="rowkeyvalue-element-primarykeytype-complextype-visio-xml"></a>RowKeyValue-Element (PrimaryKey_Type ComplexType) ("Visio XML")
 
 Gibt den Wert des einen Primärschlüssel für eine einzelne Zeile eines Recordset-Objekts.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RowKeyValue_Type](rowkeyvalue_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
    

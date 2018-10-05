@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 42e7c3ac-1a04-4e3f-bf99-ef3f8fc45892
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7846a1661b688ac5af2c5446e7a200302e7fdaeb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f5bad81f6317522430b92324ff497754376e0f19
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588132"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393761"
 ---
 # <a name="pidlidreferenceentryid-canonical-property"></a>PidLidReferenceEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Verweis [ENTRYID](entryid.md) für den Kontakt. 
   
@@ -35,7 +35,7 @@ Gibt den Verweis [ENTRYID](entryid.md) für den Kontakt.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Falls vorhanden, sollte diese Eigenschaft auf den Wert der **EntryId** des Kontakts entsprechen. 
   
@@ -43,11 +43,11 @@ Falls vorhanden, sollte diese Eigenschaft auf den Wert der **EntryId** des Konta
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

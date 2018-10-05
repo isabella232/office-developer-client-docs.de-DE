@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: af0b0bc9-20ef-4503-8b3b-8f2a97b671a2
 description: Microsoft InfoPath unterstützt COM-Add-ins zur Erweiterung des Formulars Benutzererlebnis bearbeiten. Obwohl die Unterstützung für COM-Add-ins in InfoPath, andere Office-Clientanwendungen zuerst hinzugefügt wurde, wie Microsoft Office Word und Microsoft Office Excel COM-add-ins seit Office 2000 unterstützt haben.
-ms.openlocfilehash: 4c70dfb71cf7b15a0978b4567ffac02a8ba524c3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f8dd16b161c4ea862cf3b15e56e26a2547c1fc4c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790636"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395483"
 ---
 # <a name="create-a-com-add-in-to-add-custom-features-to-infopath"></a>Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Funktionen in InfoPath
 
@@ -129,11 +129,11 @@ Zum Kompilieren des verwalteten COM-Add-Ins zu Testzwecken auf dem Computer, auf
     
 Um die verwalteten COM-add-in für die Verwendung auf einem anderen Computer als dem Computer zu kompilieren auf dem das gemeinsames Add-In-Projekt entwickelt wurde, müssen Sie zusätzliche Schritte zum Sichern des Codes ausführen. Informationen zum Sichern von gemeinsames Add-in-Projekte für die Verwendung auf anderen Computern finden Sie unter den folgenden drei Artikeln:
   
-- [Bereitstellung von verwalteten COM-Add-Ins in Office XP](http://go.microsoft.com/fwlink/?LinkID=73473)
+- [Bereitstellung von verwalteten COM-Add-Ins in Office XP](https://go.microsoft.com/fwlink/?LinkID=73473)
   
-- [Verwenden die COM-Add-in-Shim-Lösung zum Bereitstellen von verwalteten COM-Add-ins in Office XP](http://go.microsoft.com/fwlink/?LinkID=73474)
+- [Verwenden die COM-Add-in-Shim-Lösung zum Bereitstellen von verwalteten COM-Add-ins in Office XP](https://go.microsoft.com/fwlink/?LinkID=73474)
   
-- [Isolieren von Office-Erweiterungen mit COM Shim-Assistenten](http://go.microsoft.com/fwlink/?LinkID=73475)
+- [Isolieren von Office-Erweiterungen mit COM Shim-Assistenten](https://go.microsoft.com/fwlink/?LinkID=73475)
   
 > [!IMPORTANT]
 > Isolieren von nicht das COM-Add-in kann Speicherverluste und Anwendung instabil führen. 
@@ -200,10 +200,10 @@ Eines der Ereignisse des **ApplicationEvents** -Objekts kann mithilfe der COM-Ad
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen eine Microsoft Office 2000 COM-Add-in](http://go.microsoft.com/fwlink/?LinkID=73468) 
-- [Erstellen von Office verwalteten COM-Add-Ins mit Visual Studio .NET](http://go.microsoft.com/fwlink/?LinkID=73470)
-- [Arbeiten mit der IDTExtensibility2-Ereignisprozeduren](http://go.microsoft.com/fwlink/?LinkID=73471)
-- [Erstellen eines Office COM-Add-Ins mit Visual Basic .NET](http://go.microsoft.com/fwlink/?LinkID=73469)
-- [Erstellen eines Office COM-Add-Ins mit Visual c#](http://go.microsoft.com/fwlink/?LinkID=73472)
-- [Erstellen von InfoPath 2007-Add-Ins mithilfe von Visual Studio 2005-Tools für Office System SE (engl.)](http://msdn.microsoft.com/en-us/library/bb968857%28office.12%29.aspx)
+- [Erstellen eine Microsoft Office 2000 COM-Add-in](https://go.microsoft.com/fwlink/?LinkID=73468) 
+- [Erstellen von Office verwalteten COM-Add-Ins mit Visual Studio .NET](https://go.microsoft.com/fwlink/?LinkID=73470)
+- [Arbeiten mit der IDTExtensibility2-Ereignisprozeduren](https://go.microsoft.com/fwlink/?LinkID=73471)
+- [Erstellen eines Office COM-Add-Ins mit Visual Basic .NET](https://go.microsoft.com/fwlink/?LinkID=73469)
+- [Erstellen eines Office COM-add-Ins mithilfe von Visual c#](https://support.microsoft.com/en-us/help/302901/how-to-build-an-office-com-add-in-by-using-visual-c-net)
+- [Erstellen von InfoPath 2007-Add-Ins mithilfe von Visual Studio 2005-Tools für Office System SE (engl.)](https://msdn.microsoft.com/library/bb968857%28office.12%29.aspx)
 

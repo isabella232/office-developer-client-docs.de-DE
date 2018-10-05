@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b8c0c871-51d8-4752-ad4b-607463a9f837
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 359eb4ea4cbbcf6244bf3cca2f3a66b369bce6e0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dd5805cb0ee6b172506a532a513d06f57c583eee
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586676"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396267"
 ---
 # <a name="pidlidlogstart-canonical-property"></a>PidLidLogStart (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt das Startdatum und die Uhrzeit für die Journalnachricht.
   
@@ -35,7 +35,7 @@ Stellt das Startdatum und die Uhrzeit für die Journalnachricht.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Journal  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die Zeit in koordinierter Weltzeit (UTC), wenn die Aktivität begann muss die Eigenschaft **DispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) entsprechen.
   
@@ -43,11 +43,11 @@ Die Zeit in koordinierter Weltzeit (UTC), wenn die Aktivität begann muss die Ei
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
+[[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Journale zulässig sind.
     

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 1f5ce6e0-b79a-4da2-b014-8c00cd72912e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 519093b3c538037b5a42bc19cc65ed31ae19f07b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0905fbe2ba584aef49c50152aaf448267d477c10
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580705"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392186"
 ---
 # <a name="iabcontainer--imapicontainer"></a>IABContainer : IMAPIContainer
 
@@ -27,7 +27,7 @@ Bietet Zugriff auf Address Book Container. MAPI-und Clientanwendungen rufen Sie 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |Mapidefs.h  <br/> |
+|Headerdatei:  <br/> |Mapidefs.h  <br/> |
 |Verfügbar gemacht von:  <br/> |Address Book Container-Objekte  <br/> |
 |Implementiert von:  <br/> |Von adressbuchanbietern implementierte  <br/> |
 |Aufgerufen von:  <br/> |MAPI-und Clientanwendungen  <br/> |
@@ -60,9 +60,9 @@ Bietet Zugriff auf Address Book Container. MAPI-und Clientanwendungen rufen Sie 
 |**PR_DEF_CREATE_MAILUSER** ([PidTagDefCreateMailuser](pidtagdefcreatemailuser-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
 |**PR_DISPLAY_TYPE** ([PidTagDisplayType](pidtagdisplaytype-canonical-property.md))  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die **IABContainer** -Schnittstelle erbt indirekt von [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28VS.85%29.aspx) -Schnittstelle, über die [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) und [IMAPIProp: IUnknown](imapipropiunknown.md) Schnittstellen. Von adressbuchanbietern implementierte implementieren die **IABContainer** -Schnittstelle. 
+Die **IABContainer** -Schnittstelle erbt indirekt von [IUnknown](https://msdn.microsoft.com/library/ms680509%28VS.85%29.aspx) -Schnittstelle, über die [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md) und [IMAPIProp: IUnknown](imapipropiunknown.md) Schnittstellen. Von adressbuchanbietern implementierte implementieren die **IABContainer** -Schnittstelle. 
   
 Eine beliebige Anzahl von messaging User-Objekte, Verteilerlisten und andere Address Book-Container kann in einer Adressbuchcontainer vorhanden sein. Wie bei einem beliebigen Container können Clients oder Dienstanbieter ein Adressbuchcontainer öffnen Sie eine der zugehörigen Einträge oder einer Hierarchietabelle oder Inhaltstabelle abrufen. Adressbuch Container auch eine namensauflösung und, abhängig von des Anbieters die Möglichkeit zum Hinzufügen, entfernen oder Ändern von Einträgen.
   

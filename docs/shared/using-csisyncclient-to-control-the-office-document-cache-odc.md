@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 394b8e6f-9132-4c98-8fd6-46ad3c871440
 description: Erfahren Sie, wie CSISyncClient verwenden, um die Office-Dokument-Cache (ODC) zu steuern.
-ms.openlocfilehash: 908442bdc4e02f8268b9af877921da45a64ab197
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ce33063f88492bcd6f9682a4a6431fb36f138d55
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565284"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399452"
 ---
 # <a name="using-csisyncclient-to-control-the-office-document-cache-odc"></a>Verwendung von CSISyncClient zum Steuern der Office-Dokument-Cache (ODC)
 
@@ -202,7 +202,7 @@ Identifiziert die Consumer und der cache verwendet. Muss nicht leeren mit bis zu
   
  _bstrProgID_
   
-Identifiziert die Consumer COM-Objekt für die bidirektionale Kommunikation. Muss nicht leeren mit maximal 39 Zeichen. Finden Sie unter [ \<ProgID\> Schlüssel](https://docs.microsoft.com/en-us/windows/desktop/com/-progid--key) Weitere Informationen zu ProgIDs. 
+Identifiziert die Consumer COM-Objekt für die bidirektionale Kommunikation. Muss nicht leeren mit maximal 39 Zeichen. Finden Sie unter [ \<ProgID\> Schlüssel](https://docs.microsoft.com/windows/desktop/com/-progid--key) Weitere Informationen zu ProgIDs. 
   
  _bstrFileSystemDirectoryHint_
   
@@ -248,7 +248,7 @@ Eine Zeichenfolge, die die ResourceID der Datei identifiziert. Dieser Wert muss 
   
  _bstrWebPath_
   
-Eine Zeichenfolge, die die Datei auf dem Server identifiziert. Dieser Wert muss nicht leeren, gültige URL, aber nicht mehr als INTERNET_MAX_URL_LENGTH, durch die definierten http://support.microsoft.com/kb/208427. 
+Eine Zeichenfolge, die die Datei auf dem Server identifiziert. Dieser Wert muss nicht leeren, gültige URL, aber nicht mehr als INTERNET_MAX_URL_LENGTH, durch die definierten https://support.microsoft.com/kb/208427. 
   
 ##### <a name="return-values"></a>Rückgabewerte
 
@@ -287,7 +287,7 @@ Eine Zeichenfolge, die den neuen lokalen Pfad für die Datei angibt. Dieser Wert
   
  _bstrNewWebPath_
   
-Eine Zeichenfolge, die die neue URL für die Datei angibt. Dieser Wert muss nicht leeren gültige URL, aber nicht mehr als INTERNET_MAX_URL_LENGTH, durch die definierten http://support.microsoft.com/kb/208427. 
+Eine Zeichenfolge, die die neue URL für die Datei angibt. Dieser Wert muss nicht leeren gültige URL, aber nicht mehr als INTERNET_MAX_URL_LENGTH, durch die definierten https://support.microsoft.com/kb/208427. 
   
  _fBlockUploads_
   
@@ -340,7 +340,7 @@ Diese Methode ermöglicht, Downloads, wenn er als markiert wurde downloads block
 |:-----|:-----|
 |bstrFileSystemPath  <br/> |Eine Zeichenfolge, die die Datei auf dem Client identifiziert. Dieser Wert muss eine nicht leere lokaler Pfad mit maximal 256 Zeichen sein. In diesem Pfad muss in der Verzeichnisstruktur durch die FileSystemDirectoryHint angegeben werden, wenn die Initialize aufgerufen wurde.  <br/> |
 |bstrResourceID  <br/> |Eine Zeichenfolge, die die ResourceID der Datei identifiziert. Dieser Wert muss eine nicht leere mit bis zu 128 Zeichen.  <br/> |
-|bstrWebPath  <br/> |Eine Zeichenfolge, die die Datei auf dem Server identifiziert. Dieser Wert muss eine gültige URL nicht leer, wird jedoch nicht mehr als INTERNET_MAX_URL_LENGTH, durch die definierten http://support.microsoft.com/kb/208427.  <br/> |
+|bstrWebPath  <br/> |Eine Zeichenfolge, die die Datei auf dem Server identifiziert. Dieser Wert muss eine gültige URL nicht leer, wird jedoch nicht mehr als INTERNET_MAX_URL_LENGTH, durch die definierten https://support.microsoft.com/kb/208427.  <br/> |
    
 ##### <a name="return-values"></a>Rückgabewerte
 

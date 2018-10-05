@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e618213a-fad1-4559-a1df-5cdf4ea1637b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 21c8e3822da124a2aa4d2f7ff33055307e711734
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dfbb5206d0b87ce994c8137afa8b90440ceae8cc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570555"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398913"
 ---
 # <a name="pidlidemail1originalentryid-canonical-property"></a>PidLidEmail1OriginalEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die **EntryId** des Objekts, das die erste e-Mail-Adresse entspricht. 
   
@@ -35,7 +35,7 @@ Gibt die **EntryId** des Objekts, das die erste e-Mail-Adresse entspricht.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss entweder eine einmalige **EntryId** für dieses e-Mail-Adresse oder ein gültiges Adressbuch Objekt **EntryId**.
   
@@ -43,11 +43,11 @@ Der Wert dieser Eigenschaft muss entweder eine einmalige **EntryId** für dieses
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

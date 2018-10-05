@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b5292f82-f299-ea96-6101-ebb799bbec9a
 description: Gibt die Objekte, denen Shapes verbunden werden, wenn die Klebefunktion im Dokument aktiviert ist.
-ms.openlocfilehash: 53cec76448d0779b3068822388d5b874f4754eb2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 46d1ec09729cd26cfa3fc2f78a39edb6e7b7b02f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797100"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396610"
 ---
 # <a name="gluesettings-element-windowtype-complextype-visio-xml"></a>GlueSettings-Element (Window_Type ComplexType) ("Visio XML")
 
 Gibt die Objekte, denen Shapes verbunden werden, wenn die Klebefunktion im Dokument aktiviert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[GlueSettings_Type](gluesettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Windows.XML, document.xml  <br/> |
    

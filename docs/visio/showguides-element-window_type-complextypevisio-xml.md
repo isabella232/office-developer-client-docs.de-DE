@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b81bc46b-6eff-c11f-f583-85959a47c313
 description: Gibt an, ob Führungslinien im Zeichnungsfenster angezeigt werden.
-ms.openlocfilehash: 41f070b6eae3380647840b7de2303b3beeb3561c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 25e630d1d6e48aef922d225924b872097e1a7aee
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798095"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396820"
 ---
 # <a name="showguides-element-windowtype-complextype-visio-xml"></a>ShowGuides-Element (Window_Type ComplexType) ("Visio XML")
 
 Gibt an, ob Führungslinien im Zeichnungsfenster angezeigt werden.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ShowGuides_Type](showguides_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Windows.Xml  <br/> |
    

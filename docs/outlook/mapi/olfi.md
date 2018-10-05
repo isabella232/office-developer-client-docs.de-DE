@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 44bfaadf-36f9-bd8e-6158-646533f6849e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7d01f07b5eb5ca34b4bd825b62b7d1520b853d6b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 027905721b5730b4c3d78f496022b88a8e6b84d6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564262"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397023"
 ---
 # <a name="olfi"></a>OLFI
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Warteschlange der langfristigen ID Strukturen verwendet durch den Anbieter für Persönliche Ordner-Datei (PST) anmelden, eine Eintrags-ID für eine neue Nachricht oder einen Ordner im Offlinemodus zuzuweisen.
   
@@ -67,9 +67,9 @@ typedef struct {
   
 - Struktur der langfristigen-ID, die den nächsten verfügbaren Eintrag identifiziert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Eine Eintrags-ID ist eine 4-Byte-MAPI-Eintrags-ID für einen Ordner oder eine Nachricht. Weitere Informationen finden Sie unter [ENTRYID](http://msdn.microsoft.com/en-us/library/ms836424).
+Eine Eintrags-ID ist eine 4-Byte-MAPI-Eintrags-ID für einen Ordner oder eine Nachricht. Weitere Informationen finden Sie unter [ENTRYID](https://msdn.microsoft.com/library/ms836424).
   
 Wenn ein neues Objekt durch eine PST-Speicheranbieter eine Eintrags-ID zugewiesen wird, benötigt es zunächst eine GUID, die den Server identifiziert und ein Index, der das Objekt im Speicher angibt. Obwohl die GUID über alle EntryIDs nicht eindeutig ist, geben Sie die GUID und der Index kombiniert einen eindeutigen Eintrag. Dieses Paar-GUID und der Index nachverfolgt wird durch eine langfristige ID-Struktur **LTID**, das Teil der Struktur **OLFI** ist. 
   

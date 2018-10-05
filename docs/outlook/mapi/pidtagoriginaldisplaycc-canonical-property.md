@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f48d723c-3ad8-4617-952a-ba5216b2129c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 933e48de74402b02426343353b3d1e0af2c41c19
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9eb90d353705434803ff617ff2b355c7c96359b7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569834"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401531"
 ---
 # <a name="pidtagoriginaldisplaycc-canonical-property"></a>PidTagOriginalDisplayCc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Anzeigenamen der Empfänger Carbon Copy, Kopie (CC) der ursprünglichen Nachricht.
   
@@ -34,7 +34,7 @@ Enthält die Anzeigenamen der Empfänger Carbon Copy, Kopie (CC) der ursprüngli
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften enthalten eine durch Semikolons getrennte Liste. Es MAPI bereitgestellten und wird direkt aus **PR_DISPLAY_CC** ([PidTagDisplayCc](pidtagdisplaycc-canonical-property.md)) bei einer Übermittlung kopiert oder Unzustellbarkeitsbericht oder einem Lese- oder nonread Bericht wird generiert. Diese Eigenschaft kann auf andere Nachrichten durch ihre Nachrichtenklassen definierten vorhanden sein.
   
@@ -42,11 +42,11 @@ Diese Eigenschaften enthalten eine durch Semikolons getrennte Liste. Es MAPI ber
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.
     

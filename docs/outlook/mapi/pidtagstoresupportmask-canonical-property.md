@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ada5694a-b5b1-471f-be33-906fc052681a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1936cb8e95e3faef8c92d6bf28f5b63b3ff72df5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 143e7f0d2cd89cd4e7956cdda05d1bd512db4027
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572704"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392333"
 ---
 # <a name="pidtagstoresupportmask-canonical-property"></a>PidTagStoreSupportMask (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einer Bitmaske aus Flags dieser Client Applications Abfrage aus, um die Eigenschaften eines Nachrichtenspeichers bestimmen. 
   
@@ -34,7 +34,7 @@ Enthält einer Bitmaske aus Flags dieser Client Applications Abfrage aus, um die
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft gibt die Funktionen des einen Nachrichtenspeicher für Clientanwendungen, die planen sie eine Nachricht senden. Die Kennzeichen unterstützen Entscheidungen durch einen Client oder einem anderen Speicher, z. B., ob **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md)) oder nur **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) gesendet. Ein Client sollte niemals **PR_STORE_SUPPORT_MASK**festgelegt. Beim Festlegen dieses Kennzeichen gibt MAPI_E_COMPUTED zurück. 
   
@@ -138,11 +138,11 @@ Eine RTF-Version einer Nachricht kann immer gespeichert werden, selbst wenn der 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXMSG]](http://msdn.microsoft.com/library/b046868c-9fbf-41ae-9ffb-8de2bd4eec82%28Office.15%29.aspx)
+[[MS-OXMSG]](https://msdn.microsoft.com/library/b046868c-9fbf-41ae-9ffb-8de2bd4eec82%28Office.15%29.aspx)
   
 > Beschreibt das Format von Nachrichten, die zum Senden von Informationen im Zusammenhang mit der Freigabe von Ordnern auf dem Client verwendet.
     

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b13b9328-c6a0-e282-257c-2de55901df6a
 description: Gibt den Anfang der Eigenschaften eines Registerkarten ausführen. Die Ausführung wird an das Ende des Texts oder bis zum nächsten Tag definiert.
-ms.openlocfilehash: 9b98374af4ffbf2eaeaea61dcb1dbb49214f01b4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3f27ea0babefa0ea69cbbc361031c57602649107
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798296"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397548"
 ---
 # <a name="tp-element-texttype-complextype-visio-xml"></a>TP-Element (Text_Type ComplexType) ("Visio XML")
 
 Gibt den Anfang der Eigenschaften eines Registerkarten ausführen. Die Ausführung wird an das Ende des Texts oder bis zum nächsten Tag definiert.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[tp_Type](tp_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8b582571-b448-4476-91d9-4cc94dbec710
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fe6270d82d227f52dfd5dfa5454c73e815ad9f42
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 60a8c89afe0d70a1737c6ce694c66359fd6aae4f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573817"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398094"
 ---
 # <a name="imapiformdoverb"></a>IMAPIForm::DoVerb
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Fordert, dass das Formular ausführen, was es Aufgaben ein bestimmtes Verb zugeordnet.
   
@@ -52,9 +52,9 @@ HRESULT DoVerb(
     
  _lprcPosRect_
   
-> [in] Ein Zeiger auf eine Win32- [Rechteck](http://msdn.microsoft.com/en-us/library/dd162897%28VS.85%29.aspx) -Struktur, die die Größe und Position des Fenster des Formulars enthält. 
+> [in] Ein Zeiger auf eine Win32- [Rechteck](https://msdn.microsoft.com/library/dd162897%28VS.85%29.aspx) -Struktur, die die Größe und Position des Fenster des Formulars enthält. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -64,7 +64,7 @@ OLEOBJ_S_CANNOT_DOVERB_NOW
   
 > Das Verb, dargestellt durch den Parameter _iVerb_ ist gültig, aber das Formular kann nicht ausgeführt werden die Vorgänge, die derzeit zugeordnet. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Formular Viewer rufen Sie die **IMAPIForm::DoVerb** -Methode, um anzufordern, dass das Formular der Aufgaben, bei denen es jedes Verb zugeordnet, die das Formular unterstützt. 
   
@@ -86,7 +86,7 @@ Führen Sie die folgenden Aufgaben in der Implementierung **DoVerb** :
     
 Einige Verben, wie beispielsweise drucken, sollte im Hinblick auf den Anruf **DoVerb** modal sein – d. h., die angegebene Operation muss gestartet werden, bevor der Aufruf **DoVerb** beendet. 
   
-Rufen Sie die [GetWindowRect](http://msdn.microsoft.com/en-us/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten. 
+Rufen Sie die [GetWindowRect](https://msdn.microsoft.com/library/ms633519) -Funktion, um die **Rechteck** -Struktur, die von einem Formular zugrunde Fenster verwendet zu erhalten. 
   
 Speichern Sie das Handle nicht im Parameter _HwndParent_ , da es in der Regel gültig bis zum Abschluss des **DoVerb**bleibt, es sofort bei der Rückgabe des Aufrufs gelöscht werden kann.
   
@@ -94,13 +94,13 @@ Speichern Sie das Handle nicht im Parameter _HwndParent_ , da es in der Regel g�
 
 Sie können festlegen, dass nicht gebundenes Verben fungieren als modales Verben zeigen Sie _LpViewContext_ an die Implementierung einer Ansicht Kontext, die die Kennzeichen VCSTATUS_MODAL von der [IMAPIViewContext::GetViewStatus](imapiviewcontext-getviewstatus.md) -Methode zurückgibt. 
   
-Weitere Informationen zu Verben in MAPI finden Sie unter [Formular Verben](form-verbs.md). Weitere Informationen dazu, wie Verben in OLE behandelt werden finden Sie unter [OLE und Daten übertragen](http://msdn.microsoft.com/en-us/library/ms693425%28VS.85%29.aspx).
+Weitere Informationen zu Verben in MAPI finden Sie unter [Formular Verben](form-verbs.md). Weitere Informationen dazu, wie Verben in OLE behandelt werden finden Sie unter [OLE und Daten übertragen](https://msdn.microsoft.com/library/ms693425%28VS.85%29.aspx).
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
 |MyMAPIFormViewer.cpp  <br/> |CMyMAPIFormViewer::CallDoVerb  <br/> |MFCMAPI (engl.) verwendet die **IMAPIForm::DoVerb** -Methode zum Aufrufen eines Verbs in einem Formular.  <br/> |
    

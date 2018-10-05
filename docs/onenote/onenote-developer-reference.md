@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: Diese Referenz enthält konzeptionelle Übersichten und programmatische Referenzen, die Sie beim Entwickeln von Lösungen für OneNote 2013-Desktopclientanwendungen unterstützen sollen.
-ms.openlocfilehash: 8af3f0b8623f0b457250ea11f185a25cadec7386
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b19e9957d1faed1bda150df34f61209d9f40fc5d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790914"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395707"
 ---
 # <a name="onenote-developer-reference"></a>OneNote-Entwicklerreferenz
 
@@ -30,20 +30,15 @@ Diese Dokumentation enthält die folgenden Informationen:
 - [Fehlercodes](error-codes-onenote.md): In diesem Thema werden die Fehlercodes im OneNote 2013-Objektmodell aufgelistet.
     
 > [!NOTE]
-> Die in dieser Dokumentation beschriebenen APIs sind nur für OneNote Win32-Desktopclientlösungen in nicht verbundenen Szenarios. Verwenden Sie für verbundene Szenarien die empfohlenen OneNote-Dienst-APIs. Weitere Informationen finden Sie unter [dev.onenote.com](http://go.microsoft.com/fwlink/?LinkID=390615). 
+> Die in dieser Dokumentation beschriebenen APIs sind nur für OneNote Win32-Desktopclientlösungen in nicht verbundenen Szenarios. Verwenden Sie für verbundene Szenarien die empfohlenen OneNote-Dienst-APIs. Weitere Informationen finden Sie unter [dev.onenote.com](https://go.microsoft.com/fwlink/?LinkID=390615). 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [OneNote für Entwickler](http://go.microsoft.com/fwlink/?LinkID=390615)
+- [OneNote für Entwickler](https://go.microsoft.com/fwlink/?LinkID=390615)   
+- [Beispiele auf GitHub](https://github.com/OneNoteDev/) (OneNote-Dienst-APIs)     
+- [Barrierefreiheit in Microsoft-Produkten](https://www.microsoft.com/enable/products/default.aspx)    
+- [Konventionen in diesem Dokument](https://msdn.microsoft.com/office/aa905365.aspx)    
+- [OneNote-Entwicklerreferenz – Copyrightinformationen](https://msdn.microsoft.com/library/office/jj680116.aspx)
     
-- [Beispiele auf GitHub](https://github.com/OneNoteDev/) (OneNote-Dienst-APIs) 
-    
-- [Barrierefreiheit in Microsoft-Produkten](http://www.microsoft.com/enable/products/default.aspx)
-    
-- [Konventionen in diesem Dokument](http://msdn.microsoft.com/de-DE/office/aa905365.aspx)
-    
-- [OneNote-Entwicklerreferenz – Copyrightinformationen](https://msdn.microsoft.com/de-DE/library/office/jj680116.aspx)
-    
-- [Microsoft Online-Datenschutzhinweis](http://privacy.microsoft.com/de-DE/default.mspx)
     
 

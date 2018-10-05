@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5d41a536-81ff-733c-2fd7-460798e057c8
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 79b6461ca4a796b292b86f0f3bdbd8a39ad65863
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 84ff229e9914ec9074d61023873279b110fb606a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575679"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397639"
 ---
 # <a name="pidtagprofileserverversion-canonical-property"></a>PidTagProfileServerVersion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt Informationen über die Version von Microsoft Exchange Server-Konten in einem Microsoft Outlook-Profil verbunden sind.
   
@@ -32,7 +32,7 @@ Gibt Informationen über die Version von Microsoft Exchange Server-Konten in ein
 |Der Eigenschaftentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Profil-Konfiguration  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Ein Profil kann eine oder mehrere Konten, die mit einem Exchange-Server verbunden angeben, jedoch müssen die gleichen Exchange-Server hergestellt werden.
   
@@ -48,7 +48,7 @@ Im Outlook-Objektmodell können Sie die **ExchangeMailboxServerVersion** -Eigens
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen an.
     

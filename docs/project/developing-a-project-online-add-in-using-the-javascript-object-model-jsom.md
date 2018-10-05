@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4a4b1ad2-de46-421d-a698-53c20c90b93a
 description: In diesem Artikel wird beschrieben, Microsoft Project Online-Add-in-Entwicklung, um Ihre Erfahrung mit Project Online zu verbessern. Das Entwicklungsprojekt wird als eine exemplarische Vorgehensweise implementiert. Das Add-In für diesen Artikel verwendet liest und zeigt den Projektnamen und die veröffentlichten Projekte von Ihrem Konto Project Online-IDs und ermöglicht es Ihnen, einen Drilldown abrufen Aufgaben im Zusammenhang mit den einzelnen Projekten.
-ms.openlocfilehash: ea5c7e3f3d20aa6bf5b6bb77a18eb87d06f549e1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0a472a6300f18aaa65649f44d944445642a59e1a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572543"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399305"
 ---
 # <a name="developing-a-project-online-add-in-using-the-javascript-object-model-jsom"></a>Entwickeln eines Project Online add-Ins mithilfe der JavaScript-Objektmodell (JSOM)
 
@@ -37,7 +37,7 @@ Project Online führt eine weitere Aktion zum Schutz von Informationen, die übe
 Die Einrichtung der Entwicklung für Project Online-add-ins verwendet den Projekttyp Visual Studio SharePoint-Add-in. Das Add-In wird in JavaScript geschrieben, und das Projekt JavaScript-Objektmodell (JSOM) für die Interaktion mit dem Project Online-Dienst verwendet. Die JSOM erbt Großteil der Funktionalität von der SharePoint JSOM.
   
 > [!NOTE]
-> -Add-ins können veröffentlicht und in den Office Store verkauft oder mit einem privaten app-Katalog in SharePoint bereitgestellt werden. Weitere Informationen finden Sie unter [Bereitstellen und veröffentlichen Sie Ihre Office-Add-in](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/publish).
+> -Add-ins können veröffentlicht und in den Office Store verkauft oder mit einem privaten app-Katalog in SharePoint bereitgestellt werden. Weitere Informationen finden Sie unter [Bereitstellen und veröffentlichen Sie Ihre Office-Add-in](https://docs.microsoft.com/office/dev/add-ins/publish/publish).
 > 
 > Das Add-in, das in diesem Artikel verwendeten ist ein Beispiel für Entwickler. Es ist nicht für die Verwendung in einer produktionsumgebung vorgesehen. Der primäre Zweck ist ein Beispiel für app-Entwicklung für Project Online angezeigt. 
   
@@ -45,7 +45,7 @@ Die Einrichtung der Entwicklung für Project Online-add-ins verwendet den Projek
 
 Fügen Sie die folgenden Elemente zu einer unterstützten Windows-Umgebung:
   
-- **.NET Framework 4.0 oder höher**: vollständige Framework Version 4.0-Versionen kompatibel sind. Die Download-Website ist https://msdn.microsoft.com/en-us/vstudio/aa496123.aspx.
+- **.NET Framework 4.0 oder höher**: vollständige Framework Version 4.0-Versionen kompatibel sind. Die Download-Website ist https://msdn.microsoft.com/vstudio/aa496123.aspx.
     
 - **Visual Studio 2013 oder höher**:  
     
@@ -92,7 +92,7 @@ Visual Studio-Assistenten stellt ein paar weitere Fragen zur Project Online Eins
     
 2. Wie möchten Sie Ihre SharePoint-Add-Ins hosten? Wählen Sie [X] **SharePoint gehostet**.
     
-   Weitere Informationen zu SharePoint-Add-ins einschließlich hosting-Optionen finden Sie unter [SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
+   Weitere Informationen zu SharePoint-Add-ins einschließlich hosting-Optionen finden Sie unter [SharePoint-Add-ins](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
     
 3. Klicken Sie auf **Weiter**. 
     
@@ -143,7 +143,7 @@ Das Add-In-Projekt umfasst viele Dateien. In diesem Beispiel benötigen Sie die 
     
 Wenn der Mandant Project Online ändert wie das Wechseln von einer Testversion zu einer Abonnement-Website können Sie die Projekteigenschaften, einschließlich der Server-Verbindung und die URL der Website aktualisieren, im Eigenschaftenfenster die **Ansicht**zur Verfügung > **Eigenschaften Fenster** Befehl. 
   
-Sie können auch Dateien zum Projekt hinzufügen. Ist dies der Fall ist, müssen Sie die Datei "Elements.xml" befindet sich in der gleichen Gruppe (Inhalt, Bilder, Seiten oder Skripts) umfassen die neuen Dateien zu aktualisieren. Weitere Informationen zu den Projektdateien finden Sie unter [Untersuchen der app-manifest-Struktur und des Pakets über ein SharePoint-Add-in](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in).
+Sie können auch Dateien zum Projekt hinzufügen. Ist dies der Fall ist, müssen Sie die Datei "Elements.xml" befindet sich in der gleichen Gruppe (Inhalt, Bilder, Seiten oder Skripts) umfassen die neuen Dateien zu aktualisieren. Weitere Informationen zu den Projektdateien finden Sie unter [Untersuchen der app-manifest-Struktur und des Pakets über ein SharePoint-Add-in](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/explore-the-app-manifest-structure-and-the-package-of-a-sharepoint-add-in).
   
 ### <a name="set-application-scope"></a>Set-Anwendungsbereich
 

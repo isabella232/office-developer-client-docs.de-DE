@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 1b3ae03c-6951-49e4-a489-4712d3f7ba72
 description: Um das Erstellen von InfoPath-Lösungen unterstützen, die Sprachen mit verwaltetem Code wie Visual c# und Visual Basic verwenden, wird die Option .NET Programmierbarkeit Support im InfoPath-Setupprogramm drei Interop-Assemblys installiert.
-ms.openlocfilehash: 95c42e4b4fce9d51a0cc97d456c7700a8022013a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 51773ad46b1371c410c4249e13a489f0c5550cd1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564129"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393355"
 ---
 # <a name="about-the-microsoft-office-infopath-primary-interop-assembly"></a>Informationen zur Microsoft Office InfoPath Primary Interop-Assembly
 
@@ -27,7 +27,7 @@ Die Dateien für die von InfoPath installierten drei Interop-Assemblys lauten:
     
 - Microsoft.Office.Interop.InfoPath.Xml.dll
     
-In diesem Thema wird das Objektmodell verfügbar gemacht werden, bis die Microsoft.Office.Interop.InfoPath Interop-Assembly, die ausschließlich für die externe Automatisierungscode verwendet wird. Informationen zu der Microsoft.Office.Interop.InfoPath.SemiTrust-Assembly, die verwendet wird, ausschließlich für Schreiben und Ausführen von verwaltetem Code, die von in InfoPath-Formularvorlagen (XSN) ausgeführt wird, finden Sie unter [InfoPath 2003 kompatible Objektmodelle](http://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx).
+In diesem Thema wird das Objektmodell verfügbar gemacht werden, bis die Microsoft.Office.Interop.InfoPath Interop-Assembly, die ausschließlich für die externe Automatisierungscode verwendet wird. Informationen zu der Microsoft.Office.Interop.InfoPath.SemiTrust-Assembly, die verwendet wird, ausschließlich für Schreiben und Ausführen von verwaltetem Code, die von in InfoPath-Formularvorlagen (XSN) ausgeführt wird, finden Sie unter [InfoPath 2003 kompatible Objektmodelle](https://msdn.microsoft.com/library/e4511af6-d7e7-44ad-a50d-1b7ee04f8215%28Office.15%29.aspx).
   
 ## <a name="important-installation-information"></a>Wichtige Informationen zur Installation
 

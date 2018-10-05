@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 7a52f46c-371c-46d0-8d66-e154482e8269
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1312f590dfc0e8388495351dd4870fcf8b9e22f0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07acfd8715dccad8833ee14ac8e573fb995539ba
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591366"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399704"
 ---
 # <a name="pidnameexchangejunkemailmovestamp-canonical-property"></a>PidNameExchangeJunkEmailMoveStamp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den beibehaltenen Nachrichtenwert, der angibt, dass die Nachricht nicht durch einen Spamfilter verarbeitet werden soll, da die Nachricht wurde entweder bereits verarbeitet oder sicher ist.
   
@@ -31,11 +31,11 @@ Enthält den beibehaltenen Nachrichtenwert, der angibt, dass die Nachricht nicht
 |:-----|:-----|
 |Anzeigenamen:  <br/> |Keine  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Name der Eigenschaft:  <br/> |http://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
+|Name der Eigenschaft:  <br/> |https://schemas.microsoft.com/exchange/junkemailmovestamp  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sichere Nachrichten  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird auf versehen jede Nachricht, die die Regel für Junk-e-Mail verschoben wird, oder anderweitig vertrauenswürdige Inhalte.
   
@@ -43,15 +43,15 @@ Diese Eigenschaft wird auf versehen jede Nachricht, die die Regel für Junk-e-Ma
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > Ermöglicht die Behandlung von zulassen/blockieren-Listen und die Bestimmung des junk-e-Mail-Nachrichten.
     
-[[MS-OXORSS]](http://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
+[[MS-OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die RSS-Elemente darstellen.
     

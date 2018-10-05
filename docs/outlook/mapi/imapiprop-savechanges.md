@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 864dbc3e-2039-435a-a279-385d79d1d13f
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c12750b7899403e62b9c1603615e9fd6caa95eca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c8244180a5cafedc887fa72f36f233fb5084f79
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569526"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398843"
 ---
 # <a name="imapipropsavechanges"></a>IMAPIProp::SaveChanges
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Macht dauerhaft entfernt alle Änderungen, die seit dem letzten Speichervorgang auf ein Objekt vorgenommen wurden. 
   
@@ -63,7 +63,7 @@ SPAMFILTER_ONSAVE
   
 > Ermöglicht die Spamfilterung für eine Nachricht ein, die gespeichert wird. Unterstützung der Spamfilterung steht nur, wenn der Absender e-Mail-Adresstyp Simple Mail Transfer Protocol (SMTP ist), und die Nachricht einen Speicher für Persönliche Ordner-Datei (PST) gespeichert werden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -81,13 +81,13 @@ MAPI_E_OBJECT_DELETED
   
 > Das Objekt wurde gelöscht, da es geöffnet wurde.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die **IMAPIProp::SaveChanges** -Methode ändert Eigenschaft permanente für Objekte, die Unterstützung für das Transaktionsmodell verarbeiten, wie Nachrichten, Anlagen, Address Book-Container und messaging User-Objekte. Objekte, die keine für Transaktionen im Ordner, Nachrichtenspeicher und Profil Abschnitte Unterstützung, nehmen Sie Änderungen permanente sofort. Kein Aufruf von **SaveChanges** ist erforderlich. 
   
 Da Dienstanbieter keine generieren einen Eintrag Bezeichner für Objekte, bis alle Eigenschaften gespeichert wurden, ein Objekt **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft möglicherweise nicht verfügbar erst nach seiner **SaveChanges** -Methode wurde aufgerufen. Einige Anbieter warten Sie, bis das Flag KEEP_OPEN_READONLY festgelegt ist auf der **SaveChanges** -Anruf. KEEP_OPEN_READONLY gibt an, dass die Änderungen in den aktuellen Anruf gespeichert werden die letzten Änderungen eingefügt werden, die auf dem Objekt vorgenommen wird. 
   
-Einige Nachricht Store Implementierungen führen keine Nachrichten in einem Ordner anzeigen, die neu erstellte bis zu einem Client speichert die Nachricht mithilfe von **SaveChanges** geändert und Nachrichtenobjekte mithilfe der [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode frei. Darüber hinaus können nicht einige Implementierungen Objekt eine **PR_ENTRYID** -Eigenschaft für ein neu erstelltes Objekt erst nach dem Erstellen **SaveChanges** aufgerufen wurde, und einige können dies tun, wenn **SaveChanges** mithilfe von KEEP_OPEN_READONLY aufgerufen wurde Legen Sie in _UlFlags_.
+Einige Nachricht Store Implementierungen führen keine Nachrichten in einem Ordner anzeigen, die neu erstellte bis zu einem Client speichert die Nachricht mithilfe von **SaveChanges** geändert und Nachrichtenobjekte mithilfe der [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode frei. Darüber hinaus können nicht einige Implementierungen Objekt eine **PR_ENTRYID** -Eigenschaft für ein neu erstelltes Objekt erst nach dem Erstellen **SaveChanges** aufgerufen wurde, und einige können dies tun, wenn **SaveChanges** mithilfe von KEEP_OPEN_READONLY aufgerufen wurde Legen Sie in _UlFlags_.
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 

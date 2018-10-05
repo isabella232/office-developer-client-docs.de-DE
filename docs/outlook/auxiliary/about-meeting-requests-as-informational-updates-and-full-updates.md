@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Besprechungsanfragen als Informationszwecken und vollständige updates
+title: Informationen zu Besprechungsanfragen als informative und vollständige Aktualisierungen
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,16 +7,16 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 084928ca-efc0-36da-fe4f-5cc45f226178
 description: Eine Besprechungsanfrage wird eine e-Mail-Nachricht, die IPM hat. Schedule.Meeting.Request als die Nachrichtenklasse. Standardmäßig antwortet Teilnehmerin annehmen einer Besprechungsanfrage von direkt hinzu.
-ms.openlocfilehash: 3565b2af03ef79d70fc9f2817c64a788f031c416
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8e7ab7a85d3f9f7c0a67245b8d8ad27442f5c5e4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790922"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400131"
 ---
-# <a name="about-meeting-requests-as-informational-updates-and-full-updates"></a>Informationen zu Besprechungsanfragen als Informationszwecken und vollständige updates
+# <a name="about-meeting-requests-as-informational-updates-and-full-updates"></a>Informationen zu Besprechungsanfragen als informative und vollständige Aktualisierungen
 
-Eine Besprechungsanfrage wird eine e-Mail-Nachricht, die **IPM hat. Schedule.Meeting.Request** als die Nachrichtenklasse. Standardmäßig antwortet Teilnehmerin annehmen einer Besprechungsanfrage von direkt hinzu. Outlook unterstützt einrichten Stellvertretungen, die auf Besprechungsanfragen im Namen der principal-Empfänger Antworten können. Programmgesteuertes, aktiviert Outlook die benannte Eigenschaft [PidLidMeetingType](http://msdn.microsoft.com/library/290b290c-7836-4a7e-bf1a-8d0225a07e56%28Office.15%29.aspx) einer Besprechungsanfrage, um den aktuellen Status zu identifizieren. 
+Eine Besprechungsanfrage wird eine e-Mail-Nachricht, die **IPM hat. Schedule.Meeting.Request** als die Nachrichtenklasse. Standardmäßig antwortet Teilnehmerin annehmen einer Besprechungsanfrage von direkt hinzu. Outlook unterstützt einrichten Stellvertretungen, die auf Besprechungsanfragen im Namen der principal-Empfänger Antworten können. Programmgesteuertes, aktiviert Outlook die benannte Eigenschaft [PidLidMeetingType](https://msdn.microsoft.com/library/290b290c-7836-4a7e-bf1a-8d0225a07e56%28Office.15%29.aspx) einer Besprechungsanfrage, um den aktuellen Status zu identifizieren. 
   
 ## <a name="recipients-without-delegates"></a>Empfänger, die nicht von Stellvertretungen
 

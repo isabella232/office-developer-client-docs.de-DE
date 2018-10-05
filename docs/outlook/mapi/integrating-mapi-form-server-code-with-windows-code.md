@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 47ec3e97-ad2b-43ea-842a-b2a0675eef48
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: b37ae47e40906342aeecf179848311556a7d4ba4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 33b205c0ac5caf5fc049a0732cd219aa2c321326
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573992"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397863"
 ---
 # <a name="integrating-mapi-form-server-code-with-windows-code"></a>Integrieren von MAPI-Formularservercode mit Windows-Code
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Denken Sie daran, dass Ihr Formular Server eine Win32-Anwendung ist. Es sind einige Aufgaben im Zusammenhang mit Ihrem Formular Server in den Arbeitsspeicher geladen und ordnungsgemäß beendet. Wie alle Windows-Anwendungen ist der Einstiegspunkt für Ihren Server Formular **WinMain** -Funktion. Diese Funktion ist der entsprechenden Stelle die folgenden Aufgaben ausführen: 
   
@@ -31,7 +31,7 @@ Denken Sie daran, dass Ihr Formular Server eine Win32-Anwendung ist. Es sind ein
     
 - Registrieren eine globale Atom mit zeichenfolgendendarstellung des dem Formular Server Klassen-ID (CLSID). Diese Atom sollte für die Lebensdauer des dem Formular Server vorhanden sein.
     
-- Aufrufen der OLE-Funktion [CoRegisterClassObject](http://msdn.microsoft.com/en-us/library/ms693407.aspx) Ihr Formular Konferenzserver Klasse mit OLE registriert. 
+- Aufrufen der OLE-Funktion [CoRegisterClassObject](https://msdn.microsoft.com/library/ms693407.aspx) Ihr Formular Konferenzserver Klasse mit OLE registriert. 
     
 - Erstellen ein Hauptfenster Empfang von Nachrichten an. In diesem Fenster muss wahrscheinlich nicht sichtbar sein, da die spezifischen Fenster einzelne Formularobjekten zugeordnet der Benutzer interagiert werden. Klicken Sie im Hauptfenster während der Entwicklung, kann jedoch eine bequeme Möglichkeit für das debugging Ausgabe oder Kontrolle über Ihre Server Formular sein.
     
@@ -39,7 +39,7 @@ Denken Sie daran, dass Ihr Formular Server eine Win32-Anwendung ist. Es sind ein
     
 Wenn Ihr Formular Server beendet wird, sollten sie die folgenden Aufgaben ausführen:
   
-- Rufen Sie die OLE-Funktion [CoRevokeClassObject für die Abmeldung](http://msdn.microsoft.com/en-us/library/ms688650%28VS.85%29.aspx) der Nachrichtenklasse OLE-Registrierung widerrufen werden sollen. 
+- Rufen Sie die OLE-Funktion [CoRevokeClassObject für die Abmeldung](https://msdn.microsoft.com/library/ms688650%28VS.85%29.aspx) der Nachrichtenklasse OLE-Registrierung widerrufen werden sollen. 
     
 - Rufen Sie **MAPIUninitialize** , um den Formular-Server-Verbindung MAPI ordnungsgemäß zu schließen. 
     

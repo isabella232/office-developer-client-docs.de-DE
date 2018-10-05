@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: bbf99c4b-3008-4475-a60a-648eaed59d01
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2f7e1c131bcdaa19fa4001c0ca566714cfffa456
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8b7afa8f3c04cb479906f721db8de90e8cf66f11
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571423"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401454"
 ---
 # <a name="create-a-simple-mail-item"></a>Erstellen Sie eine einfache e-Mail-Element
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI kann verwendet werden, erstellen und Senden einer Nachricht, die eine lesebestätigung anfordert. Wenn eine lesebestätigung angefordert wird, das messaging-System generiert und Lesen-Bericht an den Absender zurückgegeben, wenn der Empfänger die Nachricht öffnet.
   
@@ -139,5 +139,5 @@ HRESULT AddMail(LPMAPISESSION lpMAPISession,
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)
+- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

@@ -5,12 +5,12 @@ ms.date: 01/14/2016
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 1ea99a8f-b005-4b92-b313-923294d20fbf
-ms.openlocfilehash: 834c4d2c2f47c6cc3f35423a7dfe3c13caf3d209
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 71325af974e4778d65bea7d74561bde3c9c8bca2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790900"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394034"
 ---
 # <a name="office-uri-schemes"></a>Office-URI-Schemas
 
@@ -30,7 +30,7 @@ Dank dieser URI-Schemas können Office-Produktivitätsanwendungen mit verschiede
   
 Ein der Definition in diesem Dokument entsprechender URI kann ein oder mehrere Befehlsargumente aufweisen, die die Elemente < *Befehlsargumentdeskriptor*  > und <  *Befehlsargument*  > enthalten und durch den senkrechten Strich („|") getrennt sind. Wenn mehrere Befehlsargumente in einem URI enthalten sind, muss jedes Befehlsargument durch einen senkrechten Strich („|") vom nächsten Befehlsargument getrennt sein. 
   
-Diese Schemas enthalten keine Autoritätskomponente, wie in RFC 3986, Abschnitt 3.2 definiert. Der Aufruf der in diesem Dokument angegebenen Befehle erfolgt im Kontext des Systems, das den Befehl aufruft. Wenn z. B. der URI „ms-excel:ofv|u|http://contoso/Q4/budget.xls" von einem Personalcomputer unter Microsoft Windows mit Microsoft Office 2013 aufgerufen wird, wird als Ergebnis erwartet, dass die lokale Installation von Microsoft Excel gestartet wird und Argumente zum Öffnen der Datei unter  *http://contoso/Q4/budget.xls*  im schreibgeschützten Modus an sie übergeben werden. Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. 
+Diese Schemas enthalten keine Autoritätskomponente, wie in RFC 3986, Abschnitt 3.2 definiert. Der Aufruf der in diesem Dokument angegebenen Befehle erfolgt im Kontext des Systems, das den Befehl aufruft. Wenn z. B. der URI „ms-excel:ofv|u|https://contoso/Q4/budget.xls" von einem Personalcomputer unter Microsoft Windows mit Microsoft Office 2013 aufgerufen wird, wird als Ergebnis erwartet, dass die lokale Installation von Microsoft Excel gestartet wird und Argumente zum Öffnen der Datei unter  *https://contoso/Q4/budget.xls*  im schreibgeschützten Modus an sie übergeben werden. Beachten Sie, dass der senkrechte Strich, der in dieser Spezifikation als Trennzeichen verwendet wird, nicht unter den im Abschnitt 2.2 von RFC 3986 zur potenziellen Verwendung als Trennzeichen reservierten Zeichen genannt ist. Dies geschieht absichtlich, um die Menge der Zeichen zu maximieren, die ohne Codierung mit Prozentzeichen im URI-Befehlsargument verwendet werden können. 
   
 Die Schemasyntax enthält Folgendes:
   
@@ -92,7 +92,7 @@ Der folgende Befehl bewirkt das Öffnen des vom URI referenzierten Dokuments in 
     
 > Befehlsargument: ein URI zum Dokument auf Basis des HTTP- oder HTTPS-Schemas
     
-> Beispiel:  *ms-excel:ofv|u|http://contoso/Q4/budget.xls* 
+> Beispiel:  *ms-excel:ofv|u|https://contoso/Q4/budget.xls* 
     
 ### <a name="edit-document"></a>Dokument bearbeiten
 
@@ -104,7 +104,7 @@ Der folgende Befehl bewirkt das Öffnen des vom URI referenzierten Dokuments in 
     
 > Befehlsargument: ein URI zum Dokument auf Basis des HTTP- oder HTTPS-Schemas
     
-> Beispiel:  *ms-powerpoint:ofe|u|http://www.fourthcoffee.com/AllHandsDeck.ppt* 
+> Beispiel:  *ms-powerpoint:ofe|u|https://www.fourthcoffee.com/AllHandsDeck.ppt* 
     
 ### <a name="new-document-from-template"></a>Neues Dokument aus Vorlage
 
@@ -120,7 +120,7 @@ Der folgende Befehl bewirkt das Erstellen und Öffnen eines neuen Dokuments in d
     
 > Optionales Befehlsargument 2: ein URI zur Angabe des Standardspeicherordners
     
-> Beispiel:  *ms-word:nft|u|http://cohowinery/templates/elegance.pot|s|http://cohowinery/presentations* 
+> Beispiel:  *ms-word:nft|u|https://cohowinery/templates/elegance.pot|s|https://cohowinery/presentations* 
     
 Hinweis: Wenn der optionale Standardspeicherort angegeben wird, muss er auf denselben Hostnamen verweisen wie die Vorlage.
   

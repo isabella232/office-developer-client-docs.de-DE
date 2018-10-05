@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a66d1c64-5c5a-4980-9acd-72448108fd2c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4b10daf3bdc11d406b6f7248fd6aaa9e3c6c2a68
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 90a873174b5b990f165d0b2173efa38fc7df2d9d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584716"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394917"
 ---
 # <a name="pidtagbodycontentlocation-canonical-property"></a>PidTagBodyContentLocation (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert eines Felds der MIME-Content-Location-Header.
   
@@ -34,7 +34,7 @@ Enthält den Wert eines Felds der MIME-Content-Location-Header.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MIME  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn den Wert dieser Eigenschaften festlegen möchten, sollte MIME-Clients den gewünschten Wert in ein Kopfzeilenfeld Content-Location auf eine Entität MIME-geschrieben werden, die Textkörper einer Nachricht zugeordnet ist.
   
@@ -44,11 +44,11 @@ MIME-Leser sollten auf den Wert dieser Eigenschaften den Wert eines Felds Header
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
     

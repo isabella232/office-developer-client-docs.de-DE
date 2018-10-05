@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 231c288f-547b-4463-9442-1499661b925e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2b4013b311289816f778d7559ee3bcc7dc061538
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0ab904625d3a23462a4fedf3b64f49c54b34ad28
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574335"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401727"
 ---
 # <a name="pidtagdefaultpostmessageclass-canonical-property"></a>PidTagDefaultPostMessageClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen eines benutzerdefinierten Formulars Nachrichtenklasse.
   
@@ -34,7 +34,7 @@ Enthält den Namen eines benutzerdefinierten Formulars Nachrichtenklasse.
 |Datentyp:  <br/> |PT_STRING8  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn diese Eigenschaft auf einen Ordner festgelegt ist, muss der Wert enthalten entweder genau Basisnachrichtenklasse (z. B. "IPM. Kontakt"für einen Ordner" Kontakte "oder"IPM. Termin"für einen Kalenderordner), oder Sie zunächst die Basisnachrichtenklasse (z. B." IPM. Contact.MyContact").
   
@@ -42,11 +42,11 @@ Wenn diese Eigenschaft auf einen Ordner festgelegt ist, muss der Wert enthalten 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

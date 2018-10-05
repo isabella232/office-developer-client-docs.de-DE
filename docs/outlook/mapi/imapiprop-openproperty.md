@@ -12,16 +12,16 @@ api_type:
 - COM
 ms.assetid: e400e6cc-4e36-43fc-9304-b688a0a7fd77
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e5f35474910f2257e18bcdc3b6b1dc661e2dc63a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7bf1d6912e44319c36e288cd3870218e8c4e45ff
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563975"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395805"
 ---
 # <a name="imapipropopenproperty"></a>IMAPIProp::OpenProperty
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Zeiger auf eine Schnittstelle, die Zugriff auf eine Eigenschaft verwendet werden können.
   
@@ -73,7 +73,7 @@ MAPI_MODIFY
   
 > [out] Ein Zeiger auf die angeforderte Schnittstelle für den Zugriff auf Eigenschaften verwendet werden soll.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -99,7 +99,7 @@ MAPI_E_INVALID_PARAMETER
   
 > Der Eigenschaftentyp im Tag wird auf PT_UNSPECIFIED festgelegt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die **IMAPIProp::OpenProperty** -Methode ermöglicht den Zugriff auf eine Eigenschaft über eine bestimmte Schnittstelle. **OpenProperty** ist eine Alternative an die Methoden [IMAPIProp::GetProps](imapiprop-getprops.md) und [IMAPIProp::SetProps](imapiprop-setprops.md) . Rufen Sie **GetProps** oder **SetProps** fehlschlägt, weil die Eigenschaft zu groß oder zu komplex ist, **OpenProperty**. **OpenProperty** wird in der Regel vom Typ PT_OBJECT Eigenschaften zugreifen. 
   
@@ -110,15 +110,15 @@ Die **IMAPIProp::OpenProperty** -Methode ermöglicht den Zugriff auf eine Eigens
 |**Typ der Anlage**|**Schnittstellenbezeichner, der verwendet**|
 |:-----|:-----|
 |Binär  <br/> |IID_IStream  <br/> |
-|String  <br/> |IID_IStream  <br/> |
+|Zeichenfolge  <br/> |IID_IStream  <br/> |
 |Nachricht  <br/> |IID_IMessage  <br/> |
 |OLE 2.0  <br/> |IID_IStreamDocfile  <br/> |
    
-**IStreamDocfile** ist eine Ableitung von der [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Schnittstelle, die auf eine Verbunddatei OLE 2.0 basiert. **IStreamDocfile** ist die beste Wahl für den Zugriff auf OLE 2.0-Anlagen, da er den geringsten Aufwand erfordert. Sie können IID_IStreamDocFile für diese Eigenschaften verwenden, die in strukturierten Speicher verfügbar über die Schnittstelle [IStorage](http://msdn.microsoft.com/en-us/library/aa380015%28VS.85%29.aspx) gespeicherte Daten enthalten. 
+**IStreamDocfile** ist eine Ableitung von der [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle, die auf eine Verbunddatei OLE 2.0 basiert. **IStreamDocfile** ist die beste Wahl für den Zugriff auf OLE 2.0-Anlagen, da er den geringsten Aufwand erfordert. Sie können IID_IStreamDocFile für diese Eigenschaften verwenden, die in strukturierten Speicher verfügbar über die Schnittstelle [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx) gespeicherte Daten enthalten. 
   
 Weitere Informationen zur Verwendung von **OpenProperty** mit Anlagen finden Sie unter der **PR_ATTACH_DATA_OBJ** -Eigenschaft und [eine Anlage zu öffnen](opening-an-attachment.md).
   
-Verwenden Sie nicht den **IStream** Zeiger, den Sie erhalten, um entweder die [Seek](http://msdn.microsoft.com/en-us/library/aa380043%28v=VS.85%29.aspx) oder [SetSize](http://msdn.microsoft.com/en-us/library/aa380044%28v=VS.85%29.aspx) -Methode aufrufen, es sei denn, Sie eine NULL Variable Größe oder Position verwenden. Darüber hinaus verlassen Sie sich nicht auf dem Wert der _PlibNewPosition_ Output-Parameter des Aufrufs **Seek** . 
+Verwenden Sie nicht den **IStream** Zeiger, den Sie erhalten, um entweder die [Seek](https://msdn.microsoft.com/library/aa380043%28v=VS.85%29.aspx) oder [SetSize](https://msdn.microsoft.com/library/aa380044%28v=VS.85%29.aspx) -Methode aufrufen, es sei denn, Sie eine NULL Variable Größe oder Position verwenden. Darüber hinaus verlassen Sie sich nicht auf dem Wert der _PlibNewPosition_ Output-Parameter des Aufrufs **Seek** . 
   
 Wenn Sie **OpenProperty** Zugriff auf eine Eigenschaft mit der **IStream** -Schnittstelle aufrufen, verwenden Sie nur die Schnittstelle, es zu ändern. Versuchen Sie nicht so aktualisieren Sie die Eigenschaft mit den anderen [IMAPIProp: IUnknown](imapipropiunknown.md) Methoden, wie **SetProps** oder [IMAPIProp::DeleteProps](imapiprop-deleteprops.md). 
   
@@ -126,15 +126,15 @@ Versuchen Sie nicht mehr als einmal eine Eigenschaft mit **OpenProperty** geöff
   
 Wenn Sie so ändern Sie die Eigenschaft geöffnet werden soll müssen, legen Sie das MAPI_MODIFY-Flag. Wenn Sie nicht sicher sind, ob das Objekt die Eigenschaft unterstützt, aber es sollte Ihrer Meinung, legen Sie die Kennzeichen MAPI_CREATE ist und MAPI_MODIFY. Bei jedem MAPI_CREATE ist festgelegt ist, muss auch MAPI_MODIFY festgelegt werden.
   
-Sie sind verantwortlich für recasting Zeiger der Schnittstelle, die für die Schnittstelle im _Lpiid_ -Parameter angegebene geeignet ist im Parameter _LppUnk_ zurückgegeben. Sie müssen außerdem den zurückgegebenen Zeiger verwenden, seine [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, wenn Sie mit ihm fertig sind. 
+Sie sind verantwortlich für recasting Zeiger der Schnittstelle, die für die Schnittstelle im _Lpiid_ -Parameter angegebene geeignet ist im Parameter _LppUnk_ zurückgegeben. Sie müssen außerdem den zurückgegebenen Zeiger verwenden, seine [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufrufen, wenn Sie mit ihm fertig sind. 
   
 In einigen Fällen festlegen die Kennzeichen in der _UlFlags_ -Parameter ist nicht genug sind, um den Zugriff auf die Eigenschaft anzugeben, der erforderlich ist. Sie können zusätzliche Daten enthält, wie Flags, die im Parameter _UlInterfaceOptions_ abgelegt. Diese Daten werden abhängige Schnittstelle. Einige Schnittstellen (wie **IStream**) verwenden, und andere nicht. Legen Sie die Kennzeichen STGM_WRITE im Parameter _UlInterfaceOptions_ neben MAPI_MODIFY beispielsweise beim Öffnen einer Eigenschaft mit **IStream**geändert werden soll. Beim Öffnen einer Tabelle mithilfe der [IMAPITable](imapitableiunknown.md) -Schnittstelle können Sie _UlInterfaceOptions_ festlegen, um Parameter MAPI_UNICODE, um anzugeben, ob die Spalten in der Tabelle, die Zeichenfolgeneigenschaften enthalten, im Unicode-Format sein soll. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
 |StreamEditor.cpp  <br/> |CStreamEditor::ReadTextStreamFromProperty  <br/> |MFCMAPI (engl.) wird die **IMAPIProp::OpenProperty** -Methode verwendet, um eine Stream-Schnittstelle für große Text- und binäre Eigenschaften abzurufen.  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d92a01e3-9bc4-4985-aeb6-c23636cb8b2e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b1604ae36bc20dc799fb21dec4c8742df4670ea1
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 90900b2af87f06928f22eb321c7c0f620a9a2844
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581629"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401388"
 ---
 # <a name="pidtagattachmenthidden-canonical-property"></a>PidTagAttachmentHidden (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Anlage aus der Endbenutzer ausgeblendet ist.
   
@@ -38,11 +38,11 @@ Gibt an, ob eine Anlage aus der Endbenutzer ausgeblendet ist.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.
     

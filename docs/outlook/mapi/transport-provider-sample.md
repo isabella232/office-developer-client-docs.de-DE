@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: ec6eb6c0-bfe3-4989-9071-89a14c0e7bdd
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3b3ae4170cab109ae96a51eae6e70c674895eeae
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: def51a752abcb79a35980ed12eb73011c26d2597
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575784"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401405"
 ---
 # <a name="transport-provider-sample"></a>Beispiel für einen Transportanbieter
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 In diesem Beispiel werden Dateien und Verzeichnisse senden und Empfangen von Nachrichten verwendet. Es implementiert und einen sehr einfachen Präprozessor, der eine Textzeile auf jede ausgehende Nachricht anfügt registriert. Im Beispiel veranschaulicht, wie Nachrichteninhalt zwischen Transport Neutral Encapsulation Format (TNEF) und Text teilen. Außerdem werden alle Konfigurationsoptionen (Eigenschaftenseiten, Assistenten und programmgesteuerte Konfiguration) und Nachrichtenoptionen unterstützt. Es wird nicht die remote-Transport-Schnittstellen unterstützt. 
   
-Sie können dieses Beispiel aus [Outlook Messaging-API (MAPI)-Codebeispiele](http://go.microsoft.com/fwlink/?LinkId=129740)herunterladen.
+Sie können dieses Beispiel aus [Outlook Messaging-API (MAPI)-Codebeispiele](https://go.microsoft.com/fwlink/?LinkId=129740)herunterladen.
   
 |||
 |:-----|:-----|

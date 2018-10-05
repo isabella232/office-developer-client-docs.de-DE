@@ -7,16 +7,16 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: ba1b9425-6c16-cab2-da0a-a21734118098
 description: In diesem Thema wird eine Funktion, ReadTimeZones, die die beiden Funktionen, BinToTZDEFINITION und BinToTZREG, lesen die Zeitzone Eigenschaften, PidLidAppointmentTimeZoneDefinitionStartDisplay und PidLidTimeZoneStruct, ausgehend von einem Termin aufruft.
-ms.openlocfilehash: a344f44a1f195ec6dc5f80677f08f52be490e6b1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 67755ba49c5572005c6138e34329491148a199a1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790940"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396036"
 ---
 # <a name="read-time-zone-properties-from-an-appointment"></a>Lesen von Zeitzoneneigenschaften aus einem Termin
 
-In diesem Thema wird eine Funktion `ReadTimeZones`, die zwei Funktionen aufruft `BinToTZDEFINITION` und `BinToTZREG`, um die Eigenschaften Zeitzone, [PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) und [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx), ausgehend von einem Termin zu lesen.
+In diesem Thema wird eine Funktion `ReadTimeZones`, die zwei Funktionen aufruft `BinToTZDEFINITION` und `BinToTZREG`, um die Eigenschaften Zeitzone, [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx) und [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx), ausgehend von einem Termin zu lesen.
   
 **PidLidAppointmentTimeZoneDefinitionStartDisplay** enthält einen Datenstrom, der die beibehaltenen Format einer [TZDEFINITION](tzdefinition.md) Struktur zugeordnet ist, und **PidLidTimeZoneStruct** enthält einen Datenstrom, der permanente Format einer [TZREG](tzreg.md) zugeordnet ist Struktur. Die genauen Strukturen **TZDEFINITION** und **TZREG** abrufen `BinToTZDEFINITION` und `BinToTZREG` werden verwendet, um die Stream-Werte dieser Eigenschaften entsprechend zu analysieren. Diese beiden Funktionen werden in [einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZDEFINITION-Struktur zu analysieren](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md) und [einen Datenstrom aus eine binäre Eigenschaft zum Lesen der TZREG-Struktur zu analysieren](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md), definiert. 
   

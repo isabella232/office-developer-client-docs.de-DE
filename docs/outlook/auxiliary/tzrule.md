@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 75ed353c-7d3e-e148-4057-715e82a0f32c
 description: Gibt Informationen für eine Regel zur Zeitzone Sommerzeit beim Starten und das Jahr, in dem diese Regel Time-Zone zuerst wirksam wird.
-ms.openlocfilehash: 77d56d238d959992bfadd2d8c143391ca6fa4d5b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 71ede7c0061a058c2dd85c7b9b36c42583a6bb84
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791215"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392697"
 ---
 # <a name="tzrule"></a>TZRULE
 
@@ -36,7 +36,7 @@ _wFlags_
     
    - **TZRULE_FLAG_EFFECTIVE_TZREG** – identifiziert die Regel als diejenige, die derzeit verwendet werden soll. Als die effektive Regel kann nur eine Regel gekennzeichnet werden. Allen anderen Regeln sind nur aus Gründen der Vergleich. 
     
-   - **TZRULE_FLAG_RECUR_CURRENT_TZREG** – auf Besprechungsserien, wird die Regel als Entsprechung die Regel in [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx). Dies kann verwendet werden, um festzustellen, ob **PidLidTimeZoneStruct** erheblich durch ein Legacyclient geändert wurde, die andernfalls erkennt die neue, genauere-Eigenschaft. 
+   - **TZRULE_FLAG_RECUR_CURRENT_TZREG** – auf Besprechungsserien, wird die Regel als Entsprechung die Regel in [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx). Dies kann verwendet werden, um festzustellen, ob **PidLidTimeZoneStruct** erheblich durch ein Legacyclient geändert wurde, die andernfalls erkennt die neue, genauere-Eigenschaft. 
     
 _stStart_
   
@@ -46,7 +46,7 @@ _TZReg_
   
 > Die Informationen zur Zeitzone für die Zeitzone an.
     
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Struktur erweitert [TZREG](tzreg.md) durch mit zusätzlichen Informationen angezeigt werden, wann Zeitzonenregeln wirksam werden. 
   

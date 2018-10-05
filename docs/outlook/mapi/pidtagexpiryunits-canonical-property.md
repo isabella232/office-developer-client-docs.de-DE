@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: f6a1ca22-cf4c-4e59-8846-6bd937fa8f6e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c6aab4228af0f584d96a2a8cc02c5f36e05a01e8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8e8deb67990ce25b10a3b0fc1d373f635f958013
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569603"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392298"
 ---
 # <a name="pidtagexpiryunits-canonical-property"></a>PidTagExpiryUnits (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Beschreibt die Zeiteinheit, wenn die Eigenschaft **PR_EXPIRY_NUMBER** ([PidTagExpiryNumber](pidtagexpirynumber-canonical-property.md)) multipliziert.
   
@@ -34,7 +34,7 @@ Beschreibt die Zeiteinheit, wenn die Eigenschaft **PR_EXPIRY_NUMBER** ([PidTagEx
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft, wenn festgelegt ist, muss einer der folgenden Werte sein:
   
@@ -50,7 +50,7 @@ Diese Eigenschaft, wenn festgelegt ist, muss einer der folgenden Werte sein:
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

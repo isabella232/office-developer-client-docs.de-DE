@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ac14d132-bc91-194b-4a0b-8a4b72acdbfd
 description: Gibt an, ob das dynamische Gitter-Feature für ein Fenster aktiviert ist.
-ms.openlocfilehash: bcdc266c7dcdb1722a7aefcf25bb7b8eb01c00eb
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b0fe38f85a69a9d4274b7e4535005d1a1f214029
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796909"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396946"
 ---
 # <a name="dynamicgridenabled-element-windowtype-complextype-visio-xml"></a>DynamicGridEnabled-Element (Window_Type ComplexType) ("Visio XML")
 
 Gibt an, ob das dynamische Gitter-Feature für ein Fenster aktiviert ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[DynamicGridEnabled_Type](dynamicgridenabled_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Windows.XML, document.xml  <br/> |
    

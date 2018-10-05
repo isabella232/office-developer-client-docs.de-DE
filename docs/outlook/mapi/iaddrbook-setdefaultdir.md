@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d5d60150-15e4-41ff-bfb0-0c67e2abcacc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 68cca0b483aca91001f8ee71289f4b1673fb2888
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3ab01f189734ac30b4c027f4e5596c88031b5f99
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564654"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392711"
 ---
 # <a name="iaddrbooksetdefaultdir"></a>IAddrBook::SetDefaultDir
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt den angegebenen Container als Standard Adressbuchcontainer her.
   
@@ -44,24 +44,24 @@ HRESULT SetDefaultDir(
   
 > [in] Ein Zeiger auf die Eintrags-ID der Standard-Adressbuchcontainer.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die Standard-Adressbuchcontainer wurde erfolgreich festgelegt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Clients und Dienstanbieter rufen Sie die **SetDefaultDir** -Methode, um eine neue Standard Adressbuchcontainer herzustellen. Der standardmäßige Container ist der Container, den der Benutzer erhält im Adressbuch angezeigt wird, wenn das Adressbuch zum ersten Mal geöffnet wird. **SetDefaultDir** speichert den Standardcontainer als Eintrag im Profil. Der Container bleibt unverändert bis einen weiteren Anruf zu **SetDefaultDir** in der gleichen Sitzung oder in einer anderen Sitzung erfolgt oder der Container wird entfernt. 
   
 > [!NOTE]
-> Die [PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md) -Eigenschaft entspricht der Einstellung **automatisch wählen Sie** im Dialogfeld Optionen für das Adressbuch. Wenn diese Eigenschaft im Abschnitt [IID_CAPONE_PROF](http://msdn.microsoft.com/library/281aabc3-9656-299c-4c78-7733dc71050a%28Office.15%29.aspx) Profile vorhanden ist und auf **true**festgelegt ist, im Adressbuch-Dialogfeld nicht mehr standardmäßig durch **SetDefaultDir**angegebene Container, jedoch wählt ein Adressbuch, von denen Microsoft Outlook annimmt. geeignet für den Kontext, in dem das Dialogfeld angezeigt wurde. Beachten Sie, dass dies eine schlechte Erfahrung für Drittanbieter-adressbuchanbietern implementierte führen kann. 
+> Die [PR_AB_CHOOSE_DIRECTORY_AUTOMATICALLY](pidtagaddressbookchoosedirectoryautomatically-canonical-property.md) -Eigenschaft entspricht der Einstellung **automatisch wählen Sie** im Dialogfeld Optionen für das Adressbuch. Wenn diese Eigenschaft im Abschnitt [IID_CAPONE_PROF](https://msdn.microsoft.com/library/281aabc3-9656-299c-4c78-7733dc71050a%28Office.15%29.aspx) Profile vorhanden ist und auf **true**festgelegt ist, im Adressbuch-Dialogfeld nicht mehr standardmäßig durch **SetDefaultDir**angegebene Container, jedoch wählt ein Adressbuch, von denen Microsoft Outlook annimmt. geeignet für den Kontext, in dem das Dialogfeld angezeigt wurde. Beachten Sie, dass dies eine schlechte Erfahrung für Drittanbieter-adressbuchanbietern implementierte führen kann. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
 |Abcontdlg.cpp  <br/> |CAbContDlg::OnSetDefaultDir  <br/> |MFCMAPI (engl.) verwendet die **SetDefaultDir** -Methode zum angegebenen Adressbuchcontainer eines machen.  <br/> |
    

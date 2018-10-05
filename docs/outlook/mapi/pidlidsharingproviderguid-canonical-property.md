@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 103c9cf2-42fb-4fa5-b9c2-8a92725d3097
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ce69d563a0d797298a6d708bcf70f1b2e1ad950f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 68a1fef672b4f32c6ff0ebfea56bf240b7281f0f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565942"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396365"
 ---
 # <a name="pidlidsharingproviderguid-canonical-property"></a>PidLidSharingProviderGuid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Freigabefunktionen Dienstanbieter global eindeutigen Bezeichner (GUID) an. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
@@ -35,7 +35,7 @@ Gibt die Freigabefunktionen Dienstanbieter global eindeutigen Bezeichner (GUID) 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss auf "% xAE.F0.06.00.00.00.00.00.C0.00.00.00.00.00.00.46" festgelegt werden. 
   
@@ -43,11 +43,11 @@ Der Wert dieser Eigenschaft muss auf "% xAE.F0.06.00.00.00.00.00.C0.00.00.00.00.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS-OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > Teilt Postfachordner zwischen Clients.
     

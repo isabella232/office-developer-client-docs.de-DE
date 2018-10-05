@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9fbe537f-b5fe-48a2-803c-653c50c82efd
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0e84f1361e9ca3d95b4297c01801e649a9f86ced
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7b791d75c2a76ea1a504c0d8862dd20f5365b475
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569232"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394041"
 ---
 # <a name="pidtagrecipientflags-canonical-property"></a>PidTagRecipientFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt ein Bitfeld, das der Empfängerstatus beschreibt.
   
@@ -34,7 +34,7 @@ Gibt ein Bitfeld, das der Empfängerstatus beschreibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist nicht erforderlich. Im folgenden werden die einzelnen Flags, die festgelegt werden können.
   
@@ -53,11 +53,11 @@ Diese Eigenschaft ist nicht erforderlich. Im folgenden werden die einzelnen Flag
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

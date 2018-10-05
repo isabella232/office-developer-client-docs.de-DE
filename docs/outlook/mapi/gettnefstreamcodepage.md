@@ -8,24 +8,24 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 0f22ccf2-1004-4731-9d68-f66c01b4588b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d00a2ce3ebec24ca69875bdcb83066d8b891137a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1e3d384f35726ff28bb47f3d537c8a7a1dda6dce
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585955"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399655"
 ---
 # <a name="gettnefstreamcodepage"></a>GetTnefStreamCodepage
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bestimmt die Codepage eines Streams Transport-Neutral Encapsulation Format (TNEF).
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |TNEF.h  <br/> |
+|Headerdatei:  <br/> |TNEF.h  <br/> |
 |Implementiert von:  <br/> |MAPI  <br/> |
 |Aufgerufen von:  <br/> |Clientanwendungen und -Dienstanbieter.  <br/> |
    
@@ -51,7 +51,7 @@ HRESULT GetTnefStreamCodepage(
   
 > [out] Zeiger auf der Seite Subcode des Stream-Objekts.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
  **S_OK**
   
@@ -65,7 +65,7 @@ HRESULT GetTnefStreamCodepage(
   
 > Entweder der Stream war nicht TNEF-Stream, oder es wurde ein Fehler beim Lesen des AttOemCodepage-Attributs.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Verwenden Sie die **GetTnefStreamCodepage** -Funktion, um das **AttOemCodepage** -Attribut des Datenstroms TNEF zum Bestimmen der Codepage und Subcode Seite lesen. Wenn **AttOemCodepage** nicht gefunden wird, gibt **GetTnefStreamCodepage** Codepage 437 und einer Seite Subcode 0 zurück. 
   
@@ -73,5 +73,5 @@ Verwenden Sie die **GetTnefStreamCodepage** -Funktion, um das **AttOemCodepage**
 
 
 
-[attOemCodepage](http://msdn.microsoft.com/en-us/library/ee158667%28EXCHG.80%29.aspx)
+[attOemCodepage](https://msdn.microsoft.com/library/ee158667%28EXCHG.80%29.aspx)
 

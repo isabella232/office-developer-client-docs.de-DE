@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 92c07a81-9dec-4118-af1f-02ecad340f07
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cfe5ad9a088fb4c02842e8be9d11a3623be749e3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8ce9df6290fe6e50e52c632f0a14f226c4d715d7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574908"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395406"
 ---
 # <a name="pidlidappointmentduration-canonical-property"></a>PidLidAppointmentDuration (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt die Zeitdauer in Minuten ein, wenn ein Termin geplant ist.
   
@@ -35,7 +35,7 @@ Stellt die Zeitdauer in Minuten ein, wenn ein Termin geplant ist.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert muss die Anzahl der Minuten zwischen Eigenschaften **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)) und der Wert der **DispidApptStartWhole** ([PidLidAppointmentStartWhole](pidlidappointmentstartwhole-canonical-property.md)).
   
@@ -43,11 +43,11 @@ Der Wert muss die Anzahl der Minuten zwischen Eigenschaften **DispidApptEndWhole
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

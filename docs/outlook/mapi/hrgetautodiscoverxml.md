@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 03691187-7c65-620b-576f-6ebe62a80830
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 490c834ee63c158b3f9c0e34f8de7f582c650bc4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 77f28654ffe0f6f459fde229bb7428f2c39e96c0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584065"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400719"
 ---
 # <a name="hrgetautodiscoverxml"></a>HrGetAutoDiscoverXML
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt einen Stream Extensible Markup Language (XML), der Informationen aus den Auto-Discovery-Dienst eines Microsoft Exchange 2007-Servers abgerufen darstellt zurück.
   
@@ -65,7 +65,7 @@ HRESULT HrGetAutoDiscoverXML(
     
  _ppXmlStream_
   
-> [out] Ein Zeiger auf ein [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Objekt, das die AutoErmittlung XML enthält. Gibt **null** zurück, wenn der AutoErmittlung-Vorgang fehlschlägt. Wenn Sie mit ihm fertig sind, müssen Sie [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Objekt freigeben. 
+> [out] Ein Zeiger auf ein [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt, das die AutoErmittlung XML enthält. Gibt **null** zurück, wenn der AutoErmittlung-Vorgang fehlschlägt. Wenn Sie mit ihm fertig sind, müssen Sie [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt freigeben. 
     
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -75,7 +75,7 @@ S_OK
     
 E_INVALIDARG 
   
--  _PwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _PpXmlStream_ ist ein **null** -Zeiger auf eine [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Objekt. 
+-  _PwzAddress_ ist **null** oder ist keine gültige SMTP-Adresse, oder _PpXmlStream_ ist ein **null** -Zeiger auf eine [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Objekt. 
     
 MAPI_E_NOT_FOUND 
   

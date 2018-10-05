@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4bf37c35-4f72-438a-912c-402f3711a5ea
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: efeac5a54c576d8b76d94ea7af8949e64dbccab6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9f70b178e7c30e1cdf94b485c77f80374113211c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588510"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394881"
 ---
 # <a name="ipersistmessageinitnew"></a>IPersistMessage::InitNew
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Initialisiert eine neue Nachricht an.
   
@@ -44,13 +44,13 @@ HRESULT InitNew(
   
 > [in] Ein Zeiger auf die neue Nachricht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Die neue Nachricht wurde erfolgreich initialisiert.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Formular Viewer rufen die **IPersistMessage::InitNew** -Methode auf, wenn der Benutzer eine neue Nachricht verfasst, zu der eine Nachrichtenklasse gehört, der das Formular behandelt. Wenn das Form-Objekt einen gültigen Benutzernamen Schnittstellenzeiger aufweist, sollte die Benutzeroberfläche für das Objekt "Message" angezeigt. 
   
@@ -62,7 +62,7 @@ In der Regel werden Nachrichten, die Eigenschaften nicht gespeicherte haben als 
   
 Jedoch wenn Verarbeitung für Ihre neu initialisierten Nachrichten umfasst eine festlegen oder Eigenschaften berechnete, und es ist wichtig für diese Eigenschaften gespeichert werden soll, führen Sie nicht die Nachrichten als geändert zu markieren. Da berechnete Eigenschaften für Benutzer nicht sichtbar sein soll, sollte das Dialogfeld nicht angezeigt werden.
   
-Wenn Ihr Formular einen Verweis auf eine aktive Nachricht Website als derjenigen, die in **InitNew**übergeben wird, lassen Sie die ursprüngliche Website, da sie nicht mehr verwendet werden. Der Zeiger auf die Nachricht-Website und die Nachricht der Parameter _pMessageSite_ und _pMessage_ gespeichert, und rufen beide Objekte [IUnknown:: AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) Methoden, um ihre Referenzzähler erhöhen. 
+Wenn Ihr Formular einen Verweis auf eine aktive Nachricht Website als derjenigen, die in **InitNew**übergeben wird, lassen Sie die ursprüngliche Website, da sie nicht mehr verwendet werden. Der Zeiger auf die Nachricht-Website und die Nachricht der Parameter _pMessageSite_ und _pMessage_ gespeichert, und rufen beide Objekte [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) Methoden, um ihre Referenzzähler erhöhen. 
   
 Legen Sie die **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) und **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaften für die neue Nachricht in einen passenden für Ihre Nachrichtenklasse ein. Viele Nachrichtenklassen, legen Sie beispielsweise **PR_MESSAGE_FLAGS** auf MSGFLAG_UNSENT für neue Nachrichten. 
   
@@ -86,7 +86,7 @@ Nachdem Sie einen erfolgreichen Aufruf von **InitNew**vorgenommen haben, können
   
  **PR_SENTMAIL_ENTRYID** ([PidTagSentMailEntryId](pidtagsentmailentryid-canonical-property.md))
   
-Weitere Informationen über die Zustände von Formularen finden Sie unter [Formular Zustände](form-states.md). Weitere Informationen dazu, wie Speicherobjekte initialisiert werden finden Sie unter der [IPersistStorage::InitNew](http://msdn.microsoft.com/library/79caf1f6-d974-4aee-8563-eda4876a0a90%28Office.15%29.aspx) -Methode. 
+Weitere Informationen über die Zustände von Formularen finden Sie unter [Formular Zustände](form-states.md). Weitere Informationen dazu, wie Speicherobjekte initialisiert werden finden Sie unter der [IPersistStorage::InitNew](https://msdn.microsoft.com/library/79caf1f6-d974-4aee-8563-eda4876a0a90%28Office.15%29.aspx) -Methode. 
   
 ## <a name="see-also"></a>Siehe auch
 

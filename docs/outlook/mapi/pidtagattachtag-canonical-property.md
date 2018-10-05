@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 3d223809-b697-47c6-bc3c-2206aff7ad33
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: af5d05ee6d3592694952002c16e16188c3e458a4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5a908b3543dff5cf011c9bd4d5d05b3a07004ead
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565620"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400453"
 ---
 # <a name="pidtagattachtag-canonical-property"></a>PidTagAttachTag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen ASN. 1 Objektbezeichner angeben die Anwendung, die eine Anlage bereitstellt. 
   
@@ -34,7 +34,7 @@ Enthält einen ASN. 1 Objektbezeichner angeben die Anwendung, die eine Anlage be
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft identifiziert die Anwendung, die die Anlage ursprünglich erzeugt hat.
   
@@ -48,7 +48,7 @@ Umfassende Informationen zu diesen Objektbezeichner finden Sie in der Dokumentat
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

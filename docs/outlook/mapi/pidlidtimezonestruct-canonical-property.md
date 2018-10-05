@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 2acf0036-2f3e-4f90-8614-7aa667860f74
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c9c55aa308072db08e6103418be01f91d0d31a82
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b9c2a1bbf519379c1735c489c2dcd3fcfb395a60
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566313"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401615"
 ---
 # <a name="pidlidtimezonestruct-canonical-property"></a>PidLidTimeZoneStruct (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZREG](http://msdn.microsoft.com/en-us/library/bb820983%28v=office.12%29.aspx) ist die beschreibt die Zeitzone für die Start- und Endzeit Tageszeit in einer Terminserie für einen Termin oder eine Besprechungsanfrage verwendet werden soll. 
+Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZREG](https://msdn.microsoft.com/library/bb820983%28v=office.12%29.aspx) ist die beschreibt die Zeitzone für die Start- und Endzeit Tageszeit in einer Terminserie für einen Termin oder eine Besprechungsanfrage verwendet werden soll. 
   
 |||
 |:-----|:-----|
@@ -35,9 +35,9 @@ Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZREG](h
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Microsoft Office Outlook 2003 der Start- und Endzeit der frühere Versionen von Outlook und Anwendungen, die Collaboration Data Objects (CDO) 1.21 basieren, dessen Benutzer das Tool Kalender Update von Outlook oder Exchange Server nicht ausgeführt haben, Speichern einer wiederkehrende Termin oder eine Besprechungsanfrage als relative Zeit, und speichern Sie die Zeitzone, in dem die Termin- oder Besprechungsanfragen in **DispidTimeZoneStruct**erstellt wird. Im Laufe der Zeit Zeitzonenregeln ändern können, was in einigen Termine und Besprechungen geplant wurden, bevor die Regeln geändert und falsche Zeiten auftreten, die Benutzer ignoriert dieses Schema jedoch. Verwenden den Kalender, Neuzuordnen von Tools, die von Outlook oder Exchange Server, um die Zeit solcher Termine und Besprechungsanfragen anzupassen bereitgestellt werden sollten Benutzern und Administratoren, die nicht mit Windows Vista oder besitzen keine automatische Updates aktiviert ist. Weitere Informationen zu diesen Kalender Basisadressen Tools und APIs, die einer Kalender, finden Sie unter [About Basisadressen Kalender für Sommerzeit programmgesteuert](http://msdn.microsoft.com/library/38b342d9-ab10-04b6-5490-9a45f847a60f%28Office.15%29.aspx)
+Microsoft Office Outlook 2003 der Start- und Endzeit der frühere Versionen von Outlook und Anwendungen, die Collaboration Data Objects (CDO) 1.21 basieren, dessen Benutzer das Tool Kalender Update von Outlook oder Exchange Server nicht ausgeführt haben, Speichern einer wiederkehrende Termin oder eine Besprechungsanfrage als relative Zeit, und speichern Sie die Zeitzone, in dem die Termin- oder Besprechungsanfragen in **DispidTimeZoneStruct**erstellt wird. Im Laufe der Zeit Zeitzonenregeln ändern können, was in einigen Termine und Besprechungen geplant wurden, bevor die Regeln geändert und falsche Zeiten auftreten, die Benutzer ignoriert dieses Schema jedoch. Verwenden den Kalender, Neuzuordnen von Tools, die von Outlook oder Exchange Server, um die Zeit solcher Termine und Besprechungsanfragen anzupassen bereitgestellt werden sollten Benutzern und Administratoren, die nicht mit Windows Vista oder besitzen keine automatische Updates aktiviert ist. Weitere Informationen zu diesen Kalender Basisadressen Tools und APIs, die einer Kalender, finden Sie unter [About Basisadressen Kalender für Sommerzeit programmgesteuert](https://msdn.microsoft.com/library/38b342d9-ab10-04b6-5490-9a45f847a60f%28Office.15%29.aspx)
   
 Verwenden Sie das folgende little-Endian-Format bei der Analyse eines Stream-Objekts abgerufen aus **DispidTimeZoneStruct**oder, wenn die **TZREG** -Struktur in einem Stream-Objekt gespeichert, an die binäre Eigenschaft **DispidTimeZoneStruct** übermittelt werden. 
   
@@ -57,11 +57,11 @@ Diese Eigenschaft ist für eine Terminserie festgelegt, Zeitzone Informationen a
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

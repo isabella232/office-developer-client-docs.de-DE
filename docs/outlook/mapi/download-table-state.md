@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5bcc8b0a-0ab7-6c3e-8334-9e83cf2882a7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e75407f62a7e6440f6c8dca8c1d2c76843048da4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7451d159ef97ef9d8160b386ec5bf88fb388706e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595398"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395070"
 ---
 # <a name="download-table-state"></a>Status „Downloadtabelle“
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, während der Tabelle Downloadstatus von der Replikation Zustandsautomat erläutert. 
   
@@ -35,7 +35,7 @@ ms.locfileid: "22595398"
   
 ## <a name="description"></a>Beschreibung
 
-Dieser Status wird initiiert, einen Ordner herunterladen. Während dieser Zustand initialisiert Outlook die zugeordnete **DNTBL** -Datenstruktur mit Informationen zu den Ordner. Der Client den Ordnerinhalt downloads und aktualisiert den Ordner auf dem lokalen Speicher mit neuen Inhalt, geändert oder vom Server gelöscht. Der Downloadvorgang nimmt Microsoft Exchange inkrementelle Änderung Synchronisierung (ICS). Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).
+Dieser Status wird initiiert, einen Ordner herunterladen. Während dieser Zustand initialisiert Outlook die zugeordnete **DNTBL** -Datenstruktur mit Informationen zu den Ordner. Der Client den Ordnerinhalt downloads und aktualisiert den Ordner auf dem lokalen Speicher mit neuen Inhalt, geändert oder vom Server gelöscht. Der Downloadvorgang nimmt Microsoft Exchange inkrementelle Änderung Synchronisierung (ICS). Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
   
 Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status der Synchronize-Inhalt zurück.
   
@@ -49,5 +49,5 @@ Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status der Sync
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

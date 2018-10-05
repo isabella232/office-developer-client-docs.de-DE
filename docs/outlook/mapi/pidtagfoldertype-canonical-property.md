@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 2ab4681e-0013-4ba0-ba26-50517bbf3f5b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8d6167a7a3c983171f2ff9cb2a54c879a14dca0e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7cca884eae2111a94d87cc24a6d30542148ab845
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591415"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394874"
 ---
 # <a name="pidtagfoldertype-canonical-property"></a>PidTagFolderType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Konstante, die den Ordner angibt. 
   
@@ -34,7 +34,7 @@ Enthält eine Konstante, die den Ordner angibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   
@@ -60,11 +60,11 @@ Die Informationen in einem Suchergebnisse Ordner in seiner Inhaltstabelle, die e
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > Ordner Vorgänge behandelt.
     

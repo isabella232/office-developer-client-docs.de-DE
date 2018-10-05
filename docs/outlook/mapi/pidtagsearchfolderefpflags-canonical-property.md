@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: ef82a75f-a09f-4880-ba6a-e739b16422a3
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1bdd8a283fead891261bbb05c38d398132870a50
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d670aa91cc60c051f8464f9d83536b888b44ca9e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582259"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400663"
 ---
 # <a name="pidtagsearchfolderefpflags-canonical-property"></a>PidTagSearchFolderEfpFlags (kanonische Eigenschaft)
 
@@ -34,23 +34,23 @@ Enthält erweiterte Ordner Flags, die für die Suche Ordnercontainer für den Su
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft sollten insbesondere die Kennzeichen in der **PR_EXTENDED_FOLDER_FLAGS** ([PidTagExtendedFolderFlags](pidtagextendedfolderflags-canonical-property.md))-Eigenschaft und die untergeordnete Eigenschaft **ExtendedFlags** im Feld b für den Ordner enthalten. Informationen zum Ordner Flags finden Sie in der [[MS-OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx).
+Diese Eigenschaft sollten insbesondere die Kennzeichen in der **PR_EXTENDED_FOLDER_FLAGS** ([PidTagExtendedFolderFlags](pidtagextendedfolderflags-canonical-property.md))-Eigenschaft und die untergeordnete Eigenschaft **ExtendedFlags** im Feld b für den Ordner enthalten. Informationen zum Ordner Flags finden Sie in der [[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.
     
-[[MS-OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
 > Gibt den Speicherort und die Eigenschaften von Client- und Konfigurationsdaten, wie etwa freigegebene Kategorielisten und Arbeitszeiten.
     

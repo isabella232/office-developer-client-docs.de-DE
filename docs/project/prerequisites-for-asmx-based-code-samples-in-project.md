@@ -14,18 +14,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: df584b25-4460-46c8-89a8-3b2c94d20bba
 description: Hier erfahren Sie Informationen zum Erstellen von Projekten in Visual Studio mithilfe von die ASMX-basierte Codebeispiele, die in den Referenzthemen für Project Server Interface (PSI) enthalten sind.
-ms.openlocfilehash: 73d097211dc3c68e1066c2ea1ad8d51a616184d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 26ad2e388b7e7f6f19e028b47c7f6d1a3fbd020c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796312"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399326"
 ---
 # <a name="prerequisites-for-asmx-based-code-samples-in-project"></a>Voraussetzungen für ASMX-basierte Codebeispiele in Project
 
 Hier erfahren Sie Informationen zum Erstellen von Projekten in Visual Studio mithilfe von die ASMX-basierte Codebeispiele, die in den Referenzthemen für Project Server Interface (PSI) enthalten sind.
   
-Die folgenden Codebeispiele in der [Project Server 2013 Class Library und Web-Dienst verweisen](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) enthalten viele ursprünglich für Office Project 2007 SDK erstellt wurden, und verwenden ein Standardformat für ASMX-Webdienste. Die Beispiele weiterhin Arbeit in Project Server 2013 und in eine Konsolenanwendung kopiert und als eine vollständige Einheit ausgeführt werden sollen. Ausnahmen sind in der Stichprobe notiert haben. 
+Die folgenden Codebeispiele in der [Project Server 2013 Class Library und Web-Dienst verweisen](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) enthalten viele ursprünglich für Office Project 2007 SDK erstellt wurden, und verwenden ein Standardformat für ASMX-Webdienste. Die Beispiele weiterhin Arbeit in Project Server 2013 und in eine Konsolenanwendung kopiert und als eine vollständige Einheit ausgeführt werden sollen. Ausnahmen sind in der Stichprobe notiert haben. 
   
 Neue PSI-Beispiele in Project 2013 SDK entsprechen in ein Format, die die Windows Communication Foundation (WCF)-Dienste verwendet. Die ASMX-basierte Codebeispiele können auch mithilfe der WCF-Dienste angepasst werden. In diesem Artikel veranschaulicht, wie die Beispiele mit ASMX-Webdiensten. Informationen zur Verwendung der Beispiele mit WCF-Diensten finden Sie unter [Voraussetzungen für WCF-basierte Codebeispiele im Projekt](prerequisites-for-wcf-based-code-samples-in-project.md).
   
@@ -120,7 +120,7 @@ Es folgt das GenASMXProxyAssembly.cmd-Skript, das Ausgabedateien für die PSI-We
 @ECHO ---------------------------------------------------
 REM Replace ServerName with the name of the server and 
 REM the instance name of Project Web App. Do not use localhost.
-(set VDIR=http://ServerName/pwa/_vti_bin/psi)
+(set VDIR=https://ServerName/pwa/_vti_bin/psi)
 (set OUTDIR=.\Source)
 REM ** Wsdl.exe is the same version in the v6.0A and v7.0A subdirectories. 
 (set WSDL="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\wsdl.exe")
@@ -184,7 +184,7 @@ Nachteile der Verwendung der Proxyassembly sind, dass die Lösung größer ist, 
 Der Project 2013-SDK-Download enthält die Quelldateien für die Proxyassembly mit dem Befehl Wsdl.exe generiert. Die Quelldateien befinden sich in der Datei Source.zip herunter, in der `Documentation\IntelliSense\ASMX` Unterverzeichnis. Anstatt einen Verweis auf die Proxyassembly, können Sie eine oder mehrere der Quelldateien für Visual Studio-Projektmappe hinzufügen. Fügen Sie beispielsweise die WSDL-Datei nach der Ausführung des Skripts GenASMXProxyAssembly.cmd hinzu. Project.cs-Datei, die die Lösung. Anstelle des Skripts ausführen, können Sie eine einzelne Quelldatei, zum Beispiel generiert die folgenden Befehle ausführen: 
   
 ```MS-DOS
-set VDIR=http://ServerName/ProjectServerName/_vti_bin/psi
+set VDIR=https://ServerName/ProjectServerName/_vti_bin/psi
 set WSDL="C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\wsdl.exe"
 %WSDL% /nologo /l:cs /namespace:SvcProject /out:wsdl.Project.cs %VDIR%/Project.asmx?wsdl
 ```
@@ -199,7 +199,7 @@ private static SvcLoginForms.LoginForms loginForms =
 public void AddContextInfo()
 {
     // Add the Url property.
-    project.Url = "http://ServerName /ProjectServerName /_vti_bin/psi/project.asmx";
+    project.Url = "https://ServerName /ProjectServerName /_vti_bin/psi/project.asmx";
     // Add Windows credentials.
     project.Credentials = CredentialCache.DefaultCredentials;
     // If Forms authentication is used, add the Project Server cookie.
@@ -221,11 +221,11 @@ Wenn Sie nicht die ASMX-basierte Proxyassembly verwenden und eine Ausgabe WSDL-D
     
 3. Wählen Sie im Dialogfeld **Dienstverweiseinstellungen** **Webverweis hinzufügen**.
     
-4. Geben Sie in das Textfeld **URL** `http:// _ServerName_/ _ProjectServerName_/_vti_bin/psi/ _ServiceName_.asmx?wsdl`, und drücken Sie die **EINGABETASTE** , oder wählen Sie das Symbol **wechseln** . Wenn Sie Secure Sockets Layer (SSL) installiert haben, sollten Sie das HTTPS-Protokoll anstelle des HTTP-Protokolls verwenden. 
+4. Geben Sie in das Textfeld **URL** `https:// _ServerName_/ _ProjectServerName_/_vti_bin/psi/ _ServiceName_.asmx?wsdl`, und drücken Sie die **EINGABETASTE** , oder wählen Sie das Symbol **wechseln** . Wenn Sie Secure Sockets Layer (SSL) installiert haben, sollten Sie das HTTPS-Protokoll anstelle des HTTP-Protokolls verwenden. 
 
-   Verwenden Sie beispielsweise die folgende URL für den Project-Dienst auf die `http://MyServer/pwa` Website für die Project Web App:`http://MyServer/pwa/_vti_bin/psi/project.asmx?wsdl`
+   Verwenden Sie beispielsweise die folgende URL für den Project-Dienst auf die `https://MyServer/pwa` Website für die Project Web App:`https://MyServer/pwa/_vti_bin/psi/project.asmx?wsdl`
     
-   Oder, öffnen Sie Ihren Webbrowser, und navigieren Sie zu `http://ServerName/ProjectServerName/_vti_bin/psi/ServiceName.asmx?wsdl`. Speichern Sie die Datei in ein lokales Verzeichnis, z. B. `C:\Project\WebServices\ServiceName.wsdl`. Geben Sie im Dialogfeld **Webverweis hinzufügen** für die **URL**, das Dateiprotokoll und den Pfad zu der Datei ein. Geben Sie zum Beispiel `file://C:\Project\WebServices\Project.wsdl`. 
+   Oder, öffnen Sie Ihren Webbrowser, und navigieren Sie zu `https://ServerName/ProjectServerName/_vti_bin/psi/ServiceName.asmx?wsdl`. Speichern Sie die Datei in ein lokales Verzeichnis, z. B. `C:\Project\WebServices\ServiceName.wsdl`. Geben Sie im Dialogfeld **Webverweis hinzufügen** für die **URL**, das Dateiprotokoll und den Pfad zu der Datei ein. Geben Sie zum Beispiel `file://C:\Project\WebServices\Project.wsdl`. 
     
 5. Nachdem Sie der Verweis aufgelöst wird, geben Sie den Verweisnamen in das Textfeld **Webverweisname** . Codebeispiele in der Project 2013-Entwicklerdokumentation verwenden Sie den Namen beliebige Standardverweis **Svc _ServiceName_**. Beispielsweise heißt der Project-Webdienst **SvcProject** (siehe Abbildung 3). 
     
@@ -272,7 +272,7 @@ namespace ASMXLogon_MultiAuth
     class Program
     {
         private const string PROJECT_SERVER_URL = 
-            "http://ServerName/ProjectServerName/_vti_bin/psi/";
+            "https://ServerName/ProjectServerName/_vti_bin/psi/";
         static void Main(string[] args)
         {
             bool isWindowsUser = true;
@@ -371,7 +371,7 @@ Die Fehlerbehebung für einen WCF-basierte Anwendung ist unterschiedlich. Weiter
 Die meisten Beispiele haben eine oder mehrere Variablen, die Sie für das Beispiel funktioniert ordnungsgemäß in Ihrer Umgebung aktualisieren müssen. Im folgenden Beispiel wenn Sie SSL installiert haben, verwenden Sie das HTTPS-Protokoll anstelle des HTTP-Protokolls. Ersetzen Sie _ServerName_ mit dem Namen des Servers, den Sie verwenden. Ersetzen Sie _ProjectServerName_ durch den Namen des virtuellen Verzeichnisses Ihrer Project Server-Website, wie etwa PWA. 
   
 ```cs
-const string PROJECT_SERVER_URI = "http://ServerName/ProjectServerName/";
+const string PROJECT_SERVER_URI = "https://ServerName/ProjectServerName/";
 ```
 
 Alle anderen Variablen, die Sie ändern müssen oder andere erforderliche Komponenten werden am Anfang des Codebeispiels aufgeführt.
@@ -385,11 +385,11 @@ Sie können beispielsweise Code Beispielergebnisse auf verschiedene Weise überp
   
 - Verwenden Sie den Project Professional 2013 Client, um das Projekt vom Project Server-Computer zu öffnen, und zeigen Sie die gewünschten Elemente.
     
-- Veröffentlichte Projekte anzuzeigen, die auf der Seite Projektcenter von Project Web App ( `http://ServerName/ProjectServerName/projects.aspx`).
+- Veröffentlichte Projekte anzuzeigen, die auf der Seite Projektcenter von Project Web App ( `https://ServerName/ProjectServerName/projects.aspx`).
     
-- Anzeigen des Protokolls Warteschlange in Project Web App. Öffnen Sie die Seite servereinstellungen (Wählen Sie das Symbol **Einstellungen** in der oberen rechten Ecke), und wählen Sie dann im Abschnitt **Persönliche Einstellungen** **Eigene Warteschlangenaufträge** ( `http://ServerName/ProjectServerName/MyJobs.aspx`). In der Dropdown-Liste **Ansicht** können Sie nach der Auftragsstatus sortiert werden. Die Standardstatus ist **In Bearbeitung und Fehler bei der Aufträge in der letzten Woche**. 
+- Anzeigen des Protokolls Warteschlange in Project Web App. Öffnen Sie die Seite servereinstellungen (Wählen Sie das Symbol **Einstellungen** in der oberen rechten Ecke), und wählen Sie dann im Abschnitt **Persönliche Einstellungen** **Eigene Warteschlangenaufträge** ( `https://ServerName/ProjectServerName/MyJobs.aspx`). In der Dropdown-Liste **Ansicht** können Sie nach der Auftragsstatus sortiert werden. Die Standardstatus ist **In Bearbeitung und Fehler bei der Aufträge in der letzten Woche**. 
     
-- Verwenden die Seite servereinstellungen in Project Web App ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) alle Warteschlangenaufträge verwalten und löschen oder Erzwingen des Eincheckens von Enterprise-Objekten. Sie benötigen Administratorberechtigungen auf diese Links auf der Seite servereinstellungen zugreifen.
+- Verwenden die Seite servereinstellungen in Project Web App ( `https://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`) alle Warteschlangenaufträge verwalten und löschen oder Erzwingen des Eincheckens von Enterprise-Objekten. Sie benötigen Administratorberechtigungen auf diese Links auf der Seite servereinstellungen zugreifen.
     
 - Verwenden Sie zum Ausführen einer Abfrage für eine Tabelle in der Project-Datenbank **Microsoft SQL Server Management Studio** . Verwenden Sie beispielsweise die folgende Abfrage aus, um die obersten 200 Zeilen von der Pub auszuwählen. MSP_WORKFLOW_STAGE_PDPS Tabelle Informationen über das Projekt in Workflowstufen Projektdetailseiten (PDPs) angezeigt. 
     
@@ -407,7 +407,7 @@ Sie können beispielsweise Code Beispielergebnisse auf verschiedene Weise überp
 ## <a name="cleaning-up"></a>Bereinigen
 <a name="pj15_PrerequisitesASMX_Cleanup"> </a>
 
-Nachdem Sie einige Codebeispiele testen, gibt es Enterprise-Objekte und Einstellungen, die gelöscht oder zurückgesetzt werden sollte. Sie können die Seite servereinstellungen in Project Web App verwenden, zum Verwalten von Enterprise-Daten ( `http://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`). Links auf der Seite servereinstellungen können Sie alte Elemente löschen, Projekte Einchecken erzwingen, Verwalten der Auftragswarteschlange für alle Benutzer und andere administrativen Aufgaben ausführen.
+Nachdem Sie einige Codebeispiele testen, gibt es Enterprise-Objekte und Einstellungen, die gelöscht oder zurückgesetzt werden sollte. Sie können die Seite servereinstellungen in Project Web App verwenden, zum Verwalten von Enterprise-Daten ( `https://ServerName/ProjectServerName/_layouts/15/pwa/admin/admin.aspx`). Links auf der Seite servereinstellungen können Sie alte Elemente löschen, Projekte Einchecken erzwingen, Verwalten der Auftragswarteschlange für alle Benutzer und andere administrativen Aufgaben ausführen.
   
 Es folgen einige der Links auf der Seite servereinstellungen, die Sie nach dem Ausführen der Codebeispiele für typische Bereinigungen verwenden können:
   
@@ -439,8 +439,8 @@ Zusätzliche Einstellungen werden von SharePoint Server 2013 für jede Project W
 <a name="pj15_PrerequisitesASMX_AR"> </a>
 
 - [Voraussetzungen für WCF-basierte Codebeispiele in Project](prerequisites-for-wcf-based-code-samples-in-project.md)
-- [Verwenden des Identitätswechsels mit WCF](http://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)
+- [Verwenden des Identitätswechsels mit WCF](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx)
 - [Project-PSI-Referenz – Übersicht](project-psi-reference-overview.md)
-- [SharePoint Developer Center](http://msdn.microsoft.com/en-us/sharepoint/default.aspx)
+- [SharePoint Developer Center](https://msdn.microsoft.com/sharepoint/default.aspx)
     
 

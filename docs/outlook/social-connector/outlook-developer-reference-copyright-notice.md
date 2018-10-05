@@ -7,13 +7,13 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3d692894-a0c1-b9dc-1196-07ecaa72afee
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.
-ms.openlocfilehash: 6e1b9ee36f541550a9643dd5b7eca3acbdd946e6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. In diesem Dokument, einschließlich URLs und anderer Verweise auf Internetwebsites, enthaltenen Informationen und Sichten können ohne vorherige Ankündigung geändert werden. Die Verwendung erfolgt auf eigenes Risiko.
+ms.openlocfilehash: e9b6b00609d4a3dda2a389957614ac93f9f7bacd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796073"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401685"
 ---
 # <a name="outlook-developer-reference-copyright-notice"></a>Urheberrechtshinweis im Outlook-Entwickler-Verweis
 

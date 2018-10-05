@@ -6,14 +6,14 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a0d62047-bf08-9f70-de00-7f81ef1331f1
 description: Sie können ActiveX-Steuerelementen in InfoPath-Formulare hosten, die in der InfoPath-Editor geöffnet werden soll. Diese Steuerelemente können (mit einigen Einschränkungen) bereits vorhandene werden oder speziell für InfoPath geschrieben werden können.
-ms.openlocfilehash: 90378533a7c3cde4a1927753c0325fdd8d0b3ce5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 70ac6a16b305403ffa99d8fe840a165913642f57
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790725"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392795"
 ---
-# <a name="create-an-activex-control-that-can-bind-to-infopath-form-data"></a>Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten gebunden werden kann
+# <a name="create-an-activex-control-that-can-bind-to-infopath-form-data"></a>Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten anbinden kann
 
 Sie können ActiveX-Steuerelementen in InfoPath-Formulare hosten, die in der InfoPath-Editor geöffnet werden soll. Diese Steuerelemente können (mit einigen Einschränkungen) bereits vorhandene werden oder speziell für InfoPath geschrieben werden können.
   
@@ -51,9 +51,9 @@ Damit InfoPath Eigenschaften in das Modell DOM (Document Object) zum Zeitpunkt a
     
 Es gibt auch zwei InfoPath-spezifische COM-Schnittstellen, die eine engere Integration von Steuerelementen ermöglichen:
   
-- [IInfoPathControl](http://msdn.microsoft.com/en-us/library/bb264625.aspx)
+- [IInfoPathControl](https://msdn.microsoft.com/library/bb264625.aspx)
     
-- [IInfoPathControlSite](http://msdn.microsoft.com/en-us/library/bb264627.aspx)
+- [IInfoPathControlSite](https://msdn.microsoft.com/library/bb264627.aspx)
     
 ## <a name="add-an-activex-control-to-the-infopath-design-environment"></a>Hinzufügen eines ActiveX-Steuerelements zur InfoPath-Entwicklungsumgebung
 
@@ -76,9 +76,7 @@ Um ein ActiveX-Steuerelement zu verteilen, können Sie ein Installationsprogramm
   
 ## <a name="see-also"></a>Siehe auch
 
-
-
 Übung 6: Hinzufügen von ActiveX-Steuerelementen in InfoPath 2003
   
-[Erstellen von benutzerdefinierten InfoPath-Steuerelements mit c# und .NET (Blog des InfoPath-Teams)](http://blogs.msdn.com/infopath/archive/2005/04/15/creating-an-infopath-custom-control-using-c-and-net.aspx)
+[Erstellen von benutzerdefinierten InfoPath-Steuerelements mit c# und .NET (Blog des InfoPath-Teams)](https://blogs.msdn.microsoft.com/infopath/2005/04/15/creating-an-infopath-custom-control-using-c-and-net/)
 

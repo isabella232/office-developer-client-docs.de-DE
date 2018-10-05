@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: ee3a65ec-c776-4aa1-a772-de56fc33a8d1
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7fb1e20d35e756dc0681f4927d9f542628482cb6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6b41d9cbd6ec74167dce74e97bb0923817dc6f84
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583260"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395966"
 ---
 # <a name="downloading-the-outlook-mapi-samples"></a>Herunterladen der MAPI-Beispiele f�r Outlook
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Microsoft Outlook-MAPI-Beispiele enthalten Adressbuch-Dienstanbieter, eine Nachricht Speicheranbieter und einen Transportanbieter.
   
  **Zum Herunterladen der Beispiel-Adressbuchanbieter**
   
-1. Wenn die Outlook-MAPI-Beispiele (engl.) herunterladen m�chten, klicken Sie auf der Registerkarte **Start** auf der Seite [Outlook Messaging-API (MAPI)-Codebeispiele](http://ol2010mapisamples.codeplex.com/) . 
+1. Wenn die Outlook-MAPI-Beispiele (engl.) herunterladen m�chten, klicken Sie auf der Registerkarte **Start** auf der Seite [Outlook Messaging-API (MAPI)-Codebeispiele](https://ol2010mapisamples.codeplex.com/) . 
     
 2. Klicken Sie auf der Registerkarte **Start** auf **Klicken Sie hier, um die Quelle f�r Outlook 2010 MAPI-Beispiele herunterzuladen**.
     

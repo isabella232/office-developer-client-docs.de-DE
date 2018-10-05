@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 95db4837-400f-476f-b313-60e8baa1c6d1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7c72b87eec6d0a14b0ebba10529ef5d898747028
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 85ac61d968243283e5ad9283730941adcd87cd5e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572977"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400971"
 ---
 # <a name="pidtagrtfsyncbodycrc-canonical-property"></a>PidTagRtfSyncBodyCrc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält das Kontrollkästchen zyklischer Redundanz (CRC) für den Nachrichtentext berechnet.
   
@@ -34,7 +34,7 @@ Enthält das Kontrollkästchen zyklischer Redundanz (CRC) für den Nachrichtente
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die Funktion [RTFSync](rtfsync.md) berechnet das CRC mithilfe von nur die Zeichen, die sie für die Nachricht erzielt werden hält. Beispielsweise sind einige Leerzeichen und Sonderzeichen ignoriert CRC ausgelassen. 
   
@@ -44,11 +44,11 @@ Diese Eigenschaft ist eine zusätzliche Rich Text Format (RTF)-Eigenschaft. Dies
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
 > Codiert und decodiert Nachrichten- und Objekte, die auf eine effiziente Streamdarstellung.
     

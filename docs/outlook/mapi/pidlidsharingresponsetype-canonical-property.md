@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c27b1239-3612-4bb3-9f22-4b89ee9900cd
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: beb2c46b43ae77de08900aeb987d875e85575aba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 34e8a3c73715a75b8007646e5ba3b0dc3e1ae919
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563184"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395532"
 ---
 # <a name="pidlidsharingresponsetype-canonical-property"></a>PidLidSharingResponseType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Typ der Antwort mit dem der Empfänger die Freigabeanfrage geantwortet. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
@@ -35,7 +35,7 @@ Gibt den Typ der Antwort mit dem der Empfänger die Freigabeanfrage geantwortet.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss auf einen der folgenden Werte festgelegt werden:
   
@@ -49,11 +49,11 @@ Der Wert dieser Eigenschaft muss auf einen der folgenden Werte festgelegt werden
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS-OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > Teilt Postfachordner zwischen Clients.
     

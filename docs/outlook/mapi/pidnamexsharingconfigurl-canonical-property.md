@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b5c833de-db5d-4b3d-ad9a-6a64d046618e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 54965a73e5d523a8c586791ed26692cd49485181
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f29f6f8bbc54ea00f3e5fa8f6ff88b4140079174
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570856"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400572"
 ---
 # <a name="pidnamexsharingconfigurl-canonical-property"></a>PidNameXSharingConfigUrl (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt den Wert der Eigenschaft **DispidSharingConfigUrl** ([PidLidSharingConfigurationUrl](pidlidsharingconfigurationurl-canonical-property.md)).
   
@@ -39,11 +39,11 @@ Stellt den Wert der Eigenschaft **DispidSharingConfigUrl** ([PidLidSharingConfig
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS-OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > Teilt Postfachordner zwischen Clients.
     

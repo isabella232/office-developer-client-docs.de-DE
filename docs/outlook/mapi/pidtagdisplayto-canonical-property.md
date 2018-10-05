@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 700cc03b-5d98-40ce-adb5-a11fdac8aa28
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 79a0307aaf8b91a50485234acc2e1cbdd2314b47
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0c7ae8951b02f099161871b17ff59ea23f8fbcc4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574167"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396043"
 ---
 # <a name="pidtagdisplayto-canonical-property"></a>PidTagDisplayTo (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der den Anzeigenamen der primären (Empfänger der Nachricht, durch Semikolons (;) voneinander getrennt sind To). 
   
@@ -34,7 +34,7 @@ Enthält eine Liste der den Anzeigenamen der primären (Empfänger der Nachricht
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachricht  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Nachrichtenspeicher berechnet diese Eigenschaften für Nachrichtenobjekte, die mit der [IMessage::ModifyRecipients](imessage-modifyrecipients.md) -Methode. Der Nachrichtenspeicher verwaltet auch diese Eigenschaften, sodass es immer den letzten gespeicherten Zustand einer Nachricht widerspiegelt. Zeitpunkt der jeder Aufruf der [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode wird der Wert synchronisiert. 
   
@@ -54,7 +54,7 @@ Aufgrund der möglichen Notwendigkeit Lokalisierung bietet MAPI diese Richtlinie
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

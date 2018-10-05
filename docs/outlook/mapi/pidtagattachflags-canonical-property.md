@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 47e01131-f399-43cb-9815-aba69638c3fb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bf92e62dc572a81b6e0aab4cb1b0fc8afe97800d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: efccd75cce04e4e392a7fbd9feecc7c8b49ab57e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573096"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394328"
 ---
 # <a name="pidtagattachflags-canonical-property"></a>PidTagAttachFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine Bitmaske aus Flags für eine Anlage enthält. 
   
@@ -34,7 +34,7 @@ Eine Bitmaske aus Flags für eine Anlage enthält.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird verwendet, für die MHTML-Unterstützung. 
   
@@ -54,7 +54,7 @@ Wenn die **PR_ATTACH_FLAGS** -Eigenschaft gleich NULL ist oder nicht vorhanden i
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 47533e6e-0a48-af61-a0c2-b2cec140ae4b
 description: Eine oder mehrere Primärschlüsselspalten im Datenrecordset identifiziert.
-ms.openlocfilehash: f720636bbdf2c55baca6d98aa7d0761607e53ffc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c001c343c33e65c3990744b885f1c345575b1ab3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797742"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396358"
 ---
 # <a name="primarykey-element-datarecordsettype-complextype-visio-xml"></a>PrimaryKey-Element (DataRecordSet_Type ComplexType) ("Visio XML")
 
 Eine oder mehrere Primärschlüsselspalten im Datenrecordset identifiziert.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[PrimaryKey_Type](primarykey_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
    

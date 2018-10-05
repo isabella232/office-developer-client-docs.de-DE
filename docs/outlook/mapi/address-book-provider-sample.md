@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 2ccf1643-5604-4fee-92cc-3d6af00e7f98
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ebbed00fb920994f40b7ae139c7eddd658984b95
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa2a447d0757e75c95d7dc3d9b1dd16b8c7a8084
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566859"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394720"
 ---
 # <a name="address-book-provider-sample"></a>Adressbuchanbieter-Beispiel
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 In diesem Beispiel unterstützt einen einzelnen schreibgeschützten Container für Anzeigenamen und e-Mail-Adressen, die aus einer flachen Binärdatei gelesen werden. Im Beispiel werden einmal-Vorlagen und alle Konfigurationsoptionen, mit Ausnahme der Profil-Assistent unterstützt.
   
-Sie können dieses Beispiel aus [Outlook Messaging-API (MAPI)-Codebeispiele](http://go.microsoft.com/fwlink/?LinkId=129740
+Sie können dieses Beispiel aus [Outlook Messaging-API (MAPI)-Codebeispiele](https://go.microsoft.com/fwlink/?LinkId=129740
 )herunterladen.
   
 |||

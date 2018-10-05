@@ -13,12 +13,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0ad49ff6-8dff-4379-a52c-d292c53c2bc0
 description: Die Project 2013-desktop-Clientanwendungen – Project Standard 2013 und Project Professional 2013 – angepasst und mithilfe von VBA Makros schreiben erweitert werden kann. Visual Studio 2012 können zum Anpassen der Menüband-Benutzeroberfläche und Erstellen komplexer-add-ins Office-Add-ins ermöglicht eine neue Erweiterbarkeit modellieren für Aufgabenbereichen in Project, die auf einer gemeinsamen Plattform für Office 2013 integriert sind. Project Standard 2013 und Project Professional 2013 können allgemeine Office-Add-ins ausführen und Verwenden des Task Pane-add-ins, die speziell für das Projekt für die Integration von SharePoint, andere Websites und Webanwendungen und externe Daten entwickelt werden.
-ms.openlocfilehash: 9e89c5a1f6486ce49ad8b95bcd7a92497b7a2436
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cc345f0ff91dfb573dd86c256e89df478edd4924
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594740"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394825"
 ---
 # <a name="project-client-programming"></a>Project-Clientprogrammierung
 
@@ -31,11 +31,11 @@ Die Project 2013-desktop-Clientanwendungen – Project Standard 2013 und Project
   
 Das **MSProject** -Objektmodell für VBA in Project 2013 ist im Wesentlichen identisch mit **Microsoft.Office.Interop.MSProject** -Objektmodell für verwalteten Code-Lösungen mit Office Developer Tools für Visual Studio 2013 (auch bekannt als VSTO). Visual Studio 2012 enthält Vorlagen für die Entwicklung von auf Anwendungsebene-add-ins für Project 2010 und Project 2013 (Project Standard oder Project Professional-Versionen). Entwickeln, testen und Bereitstellen von erweiterten Integration-Lösungen, die mit dem Project-desktop-Client und andere Office 2013-Anwendungen und Integration mit SharePoint-Websites, Listen, VSTO und Office Developer Tools für Visual Studio 2012 zu vereinfachen und Workflows. 
   
-Task Pane-add-ins und andere add-ins für Office und SharePoint im Office Store verkauft werden (siehe [http://office.microsoft.com/store/](http://office.microsoft.com/en-us/store/)) für die Verwendung mit Project Online und lokale Installationen. VBA-Makros und VSTO-add-ins können nicht im Office Store verteilt werden sollen; Sie dienen zur lokalen Verwendung mit Project Standard und Project Professional. Sie können VBA-Makros innerhalb eines Projekts verteilen. MPP-Datei, in der Datei Global.MPT auf Ihrem Computer zu installieren, oder in der Enterprise-global-Projektvorlage in Project Server 2013 zu verteilen. VSTO-add-ins können sicherer über [ClickOnce](http://msdn.microsoft.com/en-us/library/t71a733d.aspx) -Bereitstellung verteilt werden, wodurch einfache Updates. 
+Task Pane-add-ins und andere add-ins für Office und SharePoint im Office Store verkauft werden (siehe [https://office.microsoft.com/store/](https://office.microsoft.com/en-us/store/)) für die Verwendung mit Project Online und lokale Installationen. VBA-Makros und VSTO-add-ins können nicht im Office Store verteilt werden sollen; Sie dienen zur lokalen Verwendung mit Project Standard und Project Professional. Sie können VBA-Makros innerhalb eines Projekts verteilen. MPP-Datei, in der Datei Global.MPT auf Ihrem Computer zu installieren, oder in der Enterprise-global-Projektvorlage in Project Server 2013 zu verteilen. VSTO-add-ins können sicherer über [ClickOnce](https://msdn.microsoft.com/library/t71a733d.aspx) -Bereitstellung verteilt werden, wodurch einfache Updates. 
   
 ## <a name="reference"></a>Referenz
 
-[Project-VBA-Entwicklerreferenz (engl.)](http://msdn.microsoft.com/en-us/library/ee861523%28office.15%29.aspx) Enthält einführende und VBA-Hilfe-Artikel. 
+[Project-VBA-Entwicklerreferenz (engl.)](https://msdn.microsoft.com/library/ee861523%28office.15%29.aspx) Enthält einführende und VBA-Hilfe-Artikel. 
   
 ## <a name="related-sections"></a>Verwandte Abschnitte
 
@@ -43,9 +43,9 @@ Task Pane-add-ins und andere add-ins für Office und SharePoint im Office Store 
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Project für Entwickler](http://msdn.microsoft.com/en-us/office/aa905469)
+- [Project für Entwickler](https://msdn.microsoft.com/office/aa905469)
 - [Office Developercenter](https://dev.office.com)
-- [Visual Studio Developer center](http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx)
-- [ClickOnce-Sicherheit und Bereitstellung](http://msdn.microsoft.com/en-us/library/t71a733d.aspx)
+- [Visual Studio Developer center](https://msdn.microsoft.com/vstudio/aa718325.aspx)
+- [ClickOnce-Sicherheit und Bereitstellung](https://msdn.microsoft.com/library/t71a733d.aspx)
 - [Verfügbare Felder](https://support.office.com/en-us/article/available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460)
 

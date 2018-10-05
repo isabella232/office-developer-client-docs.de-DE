@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: da9e8fdc-dfc5-4ecc-9f9b-b76921b92d7c
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f1c27f87cb113ebe30a42211035f6f50475a1be3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7200e7d226eb148fef094ab8540990644d2d4c99
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588181"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392830"
 ---
 # <a name="imapisupportistoragefromstream"></a>IMAPISupport::IStorageFromStream
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Zugriff auf einen Datenstrom ein Speicherobjekt implementiert.
   
@@ -44,7 +44,7 @@ HRESULT IStorageFromStream(
     
  _lpInterface_
   
-> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle verwendet werden, für den Zugriff auf das _LpUnkIn_Streams auf darstellt. Eines der folgenden Werte sind gültig: IID_IStream, IID_ILockBytes, oder **null**, gibt an, dass die [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Schnittstelle zum Zugriff auf den Stream verwendet werden soll. 
+> [in] Ein Zeiger auf die Schnittstelle-ID (IID), die die Schnittstelle verwendet werden, für den Zugriff auf das _LpUnkIn_Streams auf darstellt. Eines der folgenden Werte sind gültig: IID_IStream, IID_ILockBytes, oder **null**, gibt an, dass die [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Schnittstelle zum Zugriff auf den Stream verwendet werden soll. 
     
  _ulFlags_
   
@@ -70,17 +70,17 @@ STGSTRM_RESET
   
 > [out] Ein Zeiger auf einen Zeiger auf das Objekt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Das Objekt wurde erfolgreich erstellt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Die **IMAPISupport::IStorageFromStream** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **IStorageFromStream** zum Erstellen eines Speicherobjekts für bestimmte Eigenschaften zu öffnen. Dienstanbieter, die ihre eigene Implementierung der Schnittstelle [IStorage](http://msdn.microsoft.com/en-us/library/aa380015%28VS.85%29.aspx) haben, müssen nicht **IStorageFromStream**aufrufen. 
+Die **IMAPISupport::IStorageFromStream** -Methode wird für alle dienstanbieterobjekten Unterstützung implementiert. Dienstanbieter Aufrufen **IStorageFromStream** zum Erstellen eines Speicherobjekts für bestimmte Eigenschaften zu öffnen. Dienstanbieter, die ihre eigene Implementierung der Schnittstelle [IStorage](https://msdn.microsoft.com/library/aa380015%28VS.85%29.aspx) haben, müssen nicht **IStorageFromStream**aufrufen. 
   
-Erstelltes **IStorageFromStream** Speicherobjekt ruft der Stream [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) -Methode, um erhöht den Referenzzähler und dann die dekrementiert die Anzahl der, wenn der Speicher freigegeben wird. 
+Erstelltes **IStorageFromStream** Speicherobjekt ruft der Stream [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode, um erhöht den Referenzzähler und dann die dekrementiert die Anzahl der, wenn der Speicher freigegeben wird. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 
@@ -94,7 +94,7 @@ Wenn die [IMAPIProp::OpenProperty](imapiprop-openproperty.md) -Methode der Objek
     
 4. Ein Zeiger auf dieses Speicherobjekt zurückgegeben.
     
-Wenn Sie zusätzliche Schnittstellen, die das Objekt verwenden implementieren, erstellen Sie ein Objekt, das das Speicherobjekt umbrochen wird, und Implementieren einer höheren Ebene [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) -Methode. 
+Wenn Sie zusätzliche Schnittstellen, die das Objekt verwenden implementieren, erstellen Sie ein Objekt, das das Speicherobjekt umbrochen wird, und Implementieren einer höheren Ebene [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) -Methode. 
   
 Lassen Sie keine Eigenschaft mit der **IStream** -Schnittstelle geöffnet werden soll, wenn sie mit **IStorage**erstellt wurde. Lassen Sie eine Eigenschaft mit der **IStorage** -Schnittstelle geöffnet werden soll, wenn sie mit **IStream**erstellt wurde dagegen nicht zu. 
   

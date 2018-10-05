@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 411e8f81-c2b9-440a-9e9a-d6add5e4be63
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f363b0a756a2cf4c7e37854cab0ddc4a46a0754d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 031e5483539ce17c8b9b994690985c2349573e27
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582658"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400807"
 ---
 # <a name="pidlidcontactitemdata-canonical-property"></a>PidLidContactItemData (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Verwendet, um die Kontaktinformationen anzuzeigen.
   
@@ -35,7 +35,7 @@ Verwendet, um die Kontaktinformationen anzuzeigen.
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn dieser Parameter angegeben wurde, muss die Eigenschaft sechs Einträge, die jeweils entsprechen einer eingeblendeten Felder in der Benutzeroberfläche der Anwendung verfügen.
   
@@ -47,17 +47,17 @@ Wenn dieser Parameter angegeben wurde, muss die Eigenschaft sechs Einträge, die
 |2  <br/> |0x00008080  <br/> |Die Anwendung sollte Email1 angezeigt werden.  <br/> |
 |2  <br/> |0x00008090  <br/> |Die Anwendung sollte Email2 angezeigt werden.  <br/> |
 |2  <br/> |0x000080A0  <br/> |Die Anwendung sollte Email3 angezeigt werden.  <br/> |
-|3,4,5,6  <br/> |PropertyID Telefon Eigenschaften oder eine der Fax-Zahlen, die in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sind.  <br/> |Die Anwendung sollte die entsprechende Eigenschaft angezeigt werden.  <br/> |
+|3,4,5,6  <br/> |PropertyID Telefon Eigenschaften oder eine der Fax-Zahlen, die in [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)angegeben sind.  <br/> |Die Anwendung sollte die entsprechende Eigenschaft angezeigt werden.  <br/> |
    
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

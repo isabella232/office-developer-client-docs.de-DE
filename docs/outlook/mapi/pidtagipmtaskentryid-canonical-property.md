@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: ec8b7486-b547-4a4e-96e5-1fc825b23f3d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cc4a8757586da8ec3a3d51f132fcc583ece748f6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c3845c745dcd2c18525f147308233b94fbce70d4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588951"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400250"
 ---
 # <a name="pidtagipmtaskentryid-canonical-property"></a>PidTagIpmTaskEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook-Aufgaben enthält. 
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook-Aufgaben enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft lesen oder mithilfe des Protokolls-Eigenschaft und Stream-Objekt geschrieben. Es ist lesen und Schreiben in den Ordner Posteingang oder Root. Die Implementierung muss den Ordner Posteingang verwenden, wenn der Informationsspeicher, die von der primären messaging-Benutzer ist und den Stammordner verwendet werden muss, wenn der Informationsspeicher, ein Stellvertreter ist.
   
@@ -42,15 +42,15 @@ Diese Eigenschaft lesen oder mithilfe des Protokolls-Eigenschaft und Stream-Obje
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Erstellen und Ordner mit Sonderfunktion in einem Postfach suchen.
     
-[[MS-OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[MS-OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
 > Gibt die Methoden zum Herstellen einer Verbindung mit und Konfiguration von Postfächer als Stellvertretungen und Interaktionen mit Nachricht und Kalender-Objekte, wenn sie im Auftrag eines anderen Benutzers agieren.
     

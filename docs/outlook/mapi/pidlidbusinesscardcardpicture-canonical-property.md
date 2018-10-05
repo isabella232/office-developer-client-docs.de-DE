@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2c7af147-f7eb-41ef-8403-93584a2041ba
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1b83316b599ea9ee62bde78cbd734dfb6b2d8b80
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fd1ad923acca5a75d06e6b15ae7ae7411edefb92
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588496"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400397"
 ---
 # <a name="pidlidbusinesscardcardpicture-canonical-property"></a>PidLidBusinessCardCardPicture (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält das Bild, das auf einer Visitenkarte verwenden.
   
@@ -35,7 +35,7 @@ Enthält das Bild, das auf einer Visitenkarte verwenden.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss entweder ein portable Network Graphics (PNG) oder JPEG-Stream. Diese Eigenschaft sollte in Verbindung mit der **DispidBCDisplayDefinition** ([PidLidBusinessCardDisplayDefinition](pidlidbusinesscarddisplaydefinition-canonical-property.md))-Eigenschaft wie folgt verwendet werden: **DispidBCCardPicture** sollte nicht vorhanden sein, auf einen Kontakt If ** DispidBCDisplayDefinition** ist nicht vorhanden. Diese Eigenschaft sollte auch nicht vorhanden sein, wenn die Daten in **DispidBCCardPicture** Bild einer Karte nicht erforderlich sind. 
   
@@ -43,11 +43,11 @@ Der Wert dieser Eigenschaft muss entweder ein portable Network Graphics (PNG) od
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

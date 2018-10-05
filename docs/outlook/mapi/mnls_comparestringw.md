@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f8d0b7b9-2798-4d29-99e4-17da99039361
 description: 'Zuletzt geändert: 20 Februar 2012'
-ms.openlocfilehash: 3e23fa9fcb074fabacf1a2dd9ac3f632cdce5b5c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dbb18ce712d7900106f2c8dd18404e47d8bdbdb7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576176"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396211"
 ---
 # <a name="mnlscomparestringw"></a>MNLS_CompareStringW
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Vergleicht zwei Unicode-Zeichenfolgen.
   
@@ -37,11 +37,11 @@ int MNLS_CompareStringW (
 
  _lcid_
   
-> [in] Gebietsschema-ID. Ausführliche Definitionen finden Sie unter der Parameter _Locale_ der [CompareString](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx).
+> [in] Gebietsschema-ID. Ausführliche Definitionen finden Sie unter der Parameter _Locale_ der [CompareString](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx).
     
  _dwFlags_
   
-> [in] Kennzeichen, die Groß-/Kleinschreibung und diakritische Zeichen ignorieren. Ausführliche Definitionen finden Sie unter den _DwCmpFlags_ -Parameter der [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx).
+> [in] Kennzeichen, die Groß-/Kleinschreibung und diakritische Zeichen ignorieren. Ausführliche Definitionen finden Sie unter den _DwCmpFlags_ -Parameter der [CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx).
     
  _pstr1_
   
@@ -59,19 +59,19 @@ int MNLS_CompareStringW (
   
 > [in] Die Länge des zweiten Unicode-Zeichenfolge, ausgenommen abschließende Null-Zeichen in Zeichen. Die Anwendung kann einen negativen Wert bereitstellen, wenn die Zeichenfolge Null endende ist. In diesem Fall bestimmt die Funktion die Länge automatisch.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
-Gibt die Werte für [CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)beschrieben.
+Gibt die Werte für [CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)beschrieben.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion umschließt [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx). **MNLS_CompareStringW** weist die gleichen Parameter und hat die gleiche Wirkung wie [CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx).
+Diese Funktion umschließt [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx). **MNLS_CompareStringW** weist die gleichen Parameter und hat die gleiche Wirkung wie [CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[CompareStringW](http://msdn.microsoft.com/en-us/library/dd317759%28VS.85%29.aspx)
+[CompareStringW](https://msdn.microsoft.com/library/dd317759%28VS.85%29.aspx)
   
-[CompareStringEx](http://msdn.microsoft.com/en-us/library/dd317761%28VS.85%29.aspx)
+[CompareStringEx](https://msdn.microsoft.com/library/dd317761%28VS.85%29.aspx)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 38981f07-14b8-47c2-93df-e6aed91896e4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4a2bcfbbc06427e5bf7e06f1c4060a29689fce3a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ddcf32df716fe2b0a02655278ff0cd8d821de1f4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575392"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397366"
 ---
 # <a name="pidlidflagrequest-canonical-property"></a>PidLidFlagRequest (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Den Status der einer Besprechungsanfrage darstellt.
   
@@ -35,7 +35,7 @@ Den Status der einer Besprechungsanfrage darstellt.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kennzeichnen von  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 In Microsoft Office Outlook ist eine Besprechungsanfrage ein Terminelement.
   
@@ -45,11 +45,11 @@ Diese Eigenschaft enthält Benutzer festzulegen Text ein, um das Flag zugeordnet
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOFLAG]](http://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge im Zusammenhang mit kennzeichnen.
     

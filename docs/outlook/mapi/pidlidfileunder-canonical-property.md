@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 55afc4bb-c5fc-4162-a293-7d82644b1965
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 58037aa74cbccb67ebd480650fd0ae967a12cbf3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 02aa1766421f7c116eabac4c9661be1b5b1adee1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575693"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393569"
 ---
 # <a name="pidlidfileunder-canonical-property"></a>PidLidFileUnder (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Namen an, unter dem die Kontakts beim Anzeigen einer Liste von Kontakten.
   
@@ -35,7 +35,7 @@ Gibt den Namen an, unter dem die Kontakts beim Anzeigen einer Liste von Kontakte
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die Anwendung sollten diese Eigenschaft als eine leere PT_UNICODE behandeln, wenn sie von der Kontakt nicht vorhanden ist.
   
@@ -43,11 +43,11 @@ Die Anwendung sollten diese Eigenschaft als eine leere PT_UNICODE behandeln, wen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e85641fb-6d3c-494a-981c-01781c7bf5bb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e9d6b2b738ec16000612f41023f0fd46ceabf56f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6a7bb7265d29d2acfce17a1a09c95f7f7b539064
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589518"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396316"
 ---
 # <a name="itnefaddprops"></a>ITnef::AddProps
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ermöglicht die aufrufende Dienstanbieter oder Gateway Eigenschaften, die Kapselung einer Nachricht oder eine Anlage hinzuzufügen. 
   
@@ -52,7 +52,7 @@ TNEF_PROP_CONTAINED
     
 TNEF_PROP_CONTAINED_TNEF 
   
-> Nur Eigenschaften aus der Nachricht oder einer Anlage, die durch den _UlElemID_ -Parameter angegebenen codiert. Wenn dieses Flag festgelegt ist, muss der Wert in _LpvData_ ein [IStream](https://docs.microsoft.com/en-us/windows/desktop/api/objidl/nn-objidl-istream) Zeiger sein. 
+> Nur Eigenschaften aus der Nachricht oder einer Anlage, die durch den _UlElemID_ -Parameter angegebenen codiert. Wenn dieses Flag festgelegt ist, muss der Wert in _LpvData_ ein [IStream](https://docs.microsoft.com/windows/desktop/api/objidl/nn-objidl-istream) Zeiger sein. 
     
 TNEF_PROP_EXCLUDE 
   
@@ -78,7 +78,7 @@ TNEF_PROP_MESSAGE_ONLY
   
 > [in] Ein Zeiger auf die Liste der Eigenschaften ein-oder Ausschließen von Kapselung.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -92,11 +92,11 @@ Transport-Provider, Anbieter Nachricht und Gateways rufen Sie die **ITnef::AddPr
   
 Beachten Sie, dass keine tatsächliche TNEF-Codierung geschieht für **AddProps** , bis die [ITnef::Finish](itnef-finish.md) -Methode aufgerufen wird. Dies bedeutet, dass Zeiger in **AddProps** übergeben gültig bis bleiben müssen nach dem Anruf auf **Fertig stellen** . An dieser Stelle können alle Objekte und Daten mit **AddProps** Anrufe übergebene freigegeben oder freigegeben werden. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
 |File.cpp  <br/> |SaveToTNEF  <br/> |MFCMAPI (engl.) verwendet die **ITnef::AddProps** -Methode, um Eigenschaften aus einer Nachricht in einem Stream TNEF zu kopieren.  <br/> |
    

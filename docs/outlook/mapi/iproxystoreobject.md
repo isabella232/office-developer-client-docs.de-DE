@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 567bede4-39a3-bfb4-af85-ba678e2cf4a5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b842bee8d9e243aa38bafe39d786a31b5527b054
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 485d3f3cd4b6be4748a2ebf2ba0d0b71f691478f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567944"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395308"
 ---
 # <a name="iproxystoreobject"></a>IProxyStoreObject
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt ein Internet Message Access Protocol (IMAP) Store-Objekt, das seit allein stehenden und, die ermöglicht den Zugriff auf Elemente in der Persönliche Ordner-Datei (PST) ohne Synchronisation aufrufen und die Elemente herunterladen.
   
@@ -31,7 +31,7 @@ Stellt ein Internet Message Access Protocol (IMAP) Store-Objekt, das seit allein
 
 |||
 |:-----|:-----|
-|Vererbte Berechtigungen aus:  <br/> |[IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) <br/> |
+|Vererbte Berechtigungen aus:  <br/> |[IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) <br/> |
 |Bereitgestellt von:  <br/> |Nachricht Speicheranbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |**IID_IProxyStoreObject** <br/> |
    
@@ -43,10 +43,10 @@ Stellt ein Internet Message Access Protocol (IMAP) Store-Objekt, das seit allein
 |[IProxyStoreObject::UnwrapNoRef](iproxystoreobject-unwrapnoref.md) <br/> |Ruft einen Zeiger auf ein allein stehenden IMAP-Speicher ab.  <br/> |
 | *Platzhalter-member*  <br/> | *Nicht unterstützte oder dokumentiert.*  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Rufen Sie [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) in der Quelle Nachrichtenspeicher die **IProxyStoreObject** -Schnittstelle abzurufen. Rufen Sie dann **IProxyStoreObject::UnwrapNoRef** , um das allein stehenden Store-Objekt zu erhalten. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED**zurückgibt, wurde der Store nicht umgebrochen. 
+Rufen Sie [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) in der Quelle Nachrichtenspeicher die **IProxyStoreObject** -Schnittstelle abzurufen. Rufen Sie dann **IProxyStoreObject::UnwrapNoRef** , um das allein stehenden Store-Objekt zu erhalten. Wenn **QueryInterface** den Fehler **MAPI_E_INTERFACE_NOT_SUPPORTED**zurückgibt, wurde der Store nicht umgebrochen. 
   
-Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen. 
+Da **UnwrapNoRef** nicht den Referenzzähler für diese neuen Zeiger auf das allein stehenden Store-Objekt, nach dem erfolgreichen Aufruf von **UnwrapNoRef**erhöht, sollten Sie [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) zum Verwalten von des Referenzzähler aufrufen. 
   
 

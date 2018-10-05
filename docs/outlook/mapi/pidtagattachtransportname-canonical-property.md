@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 701fca52-0f96-4019-80cd-c0ccd059ff9b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3899f7000bfa1365228864d97b4410833b774bed
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bd3a22bf55d03f3a9f06bf5c19650407bcc5627d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570784"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400516"
 ---
 # <a name="pidtagattachtransportname-canonical-property"></a>PidTagAttachTransportName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Namen einer Anlage-Datei geändert, sodass es TNEF-Nachrichten zugeordnet werden kann. 
   
@@ -34,7 +34,7 @@ Enthält den Namen einer Anlage-Datei geändert, sodass es TNEF-Nachrichten zuge
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 TNEF und der Adressbuchhierarchie verwenden diese Eigenschaften. Sie sind in der Regel nicht Clientanwendungen zur Verfügung. 
   
@@ -44,7 +44,7 @@ Diese Eigenschaften werden häufig von TNEF verwendet, wenn das zugrunde liegend
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

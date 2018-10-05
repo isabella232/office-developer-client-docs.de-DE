@@ -6,20 +6,20 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f9559afb-8db1-ce72-3e11-9b3d47bb80b6
 description: 'Zuletzt geändert: 06 Juli 2012'
-ms.openlocfilehash: aa1981c365e2a8e81dcd688a32fca25178c7fe52
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4ca3e9d11a3133236d38ef31b01ecded932e8013
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577324"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392918"
 ---
 # <a name="programmatically-set-the-resolution-order-for-address-lists"></a>Die Reihenfolge der Lösung für Adresslisten programmgesteuert festlegen
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Dieses Thema enthält ein Codebeispiel in C++, die die Reihenfolge der Adresslisten programmgesteuert festlegt, durch welche Empfänger in e-Mail-Nachrichten und Teilnehmer in Besprechungsanfragen aufgelöst werden.
   
-In MAPI jedes Profil kann mehrere Adresslisten unterstützen, und jede Adressliste befindet sich in einem eigenen Container. MAPI unterstützt die **[SetSearchPath](http://support.microsoft.com/kb/292590)** -Methode auf der Benutzeroberfläche, mit dem Sie einen neuen Pfad für die Suche im Profil festlegen, die für die namensauflösung verwendet wird. Um die **IAddrBook::SetSearchPath** -Methode verwenden, müssen Sie die gewünschte Auflösung Reihenfolge in einem Array **[SRowSet](srowset.md)** definieren, die die Container der relevanten Adressbücher in der gewünschten Reihenfolge enthält, und legen Sie das Array als die *lpSearchPath*  der Parameter. Die erste Eigenschaft für jeden Eintrag im Array **SRowSet** muss die **[PR_ENTRYID](pidtagentryid-canonical-property.md)** -Eigenschaft des entsprechenden Adressbuch. 
+In MAPI jedes Profil kann mehrere Adresslisten unterstützen, und jede Adressliste befindet sich in einem eigenen Container. MAPI unterstützt die **[SetSearchPath](https://support.microsoft.com/kb/292590)** -Methode auf der Benutzeroberfläche, mit dem Sie einen neuen Pfad für die Suche im Profil festlegen, die für die namensauflösung verwendet wird. Um die **IAddrBook::SetSearchPath** -Methode verwenden, müssen Sie die gewünschte Auflösung Reihenfolge in einem Array **[SRowSet](srowset.md)** definieren, die die Container der relevanten Adressbücher in der gewünschten Reihenfolge enthält, und legen Sie das Array als die *lpSearchPath*  der Parameter. Die erste Eigenschaft für jeden Eintrag im Array **SRowSet** muss die **[PR_ENTRYID](pidtagentryid-canonical-property.md)** -Eigenschaft des entsprechenden Adressbuch. 
   
 Im Codebeispiel wird die Lösung in den folgenden Schritten:
   

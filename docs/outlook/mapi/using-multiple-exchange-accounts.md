@@ -6,22 +6,22 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 4e1804bf-4c50-4942-a7ab-9a8caf1be7e5
 description: 'Letzte �nderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 3fa32b680f5016d4417efdcf62e9bb1f04a51845
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3c0392cd6a885900c1a305cd1cd816a5925745a7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581384"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398591"
 ---
 # <a name="using-multiple-exchange-accounts"></a>Verwenden mehrerer Exchange-Konten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Microsoft Outlook 2010 und Microsoft Outlook 2013 unterstützen die Integration mit mehreren Exchange-e-Mail-Konten. In Outlook 2010 oder Outlook 2013 kann ein Benutzer zwei Exchange-Konten hinzuf�gen, um das gleiche Profil und genie�en Sie trotzdem umfassende Exchange-Funktionen wie die ver�ffentlichte globale Adressliste (GAL), Exchange Out-of-Office-Konfiguration und Freigabeeinstellungen.
   
-Diese mit den MAPI-Profil Abschnitten für Microsoft Office Outlook 2007 vertraut und früher wissen, dass Exchange-Einstellungen, wie die e-Mail-Benutzernamen und den Servernamen, klicken Sie im festen globale Exchange-Profil **PbGlobalProfileSectionGuid**gespeichert sind. Weitere Informationen �ber die globale Exchange-Profils finden Sie unter [Gewusst wie: �ffnen Sie den globalen Profilabschnitt](http://support.microsoft.com/kb/188482). Outlook 2010 und Outlook 2013 ben�tigt jede Exchange-Konto eine eigene Profilabschnitt zum Speichern von Einstellungen, die **pbGlobalProfileSectionGuid** veraltet vornehmen. 
+Diese mit den MAPI-Profil Abschnitten für Microsoft Office Outlook 2007 vertraut und früher wissen, dass Exchange-Einstellungen, wie die e-Mail-Benutzernamen und den Servernamen, klicken Sie im festen globale Exchange-Profil **PbGlobalProfileSectionGuid**gespeichert sind. Weitere Informationen �ber die globale Exchange-Profils finden Sie unter [Gewusst wie: �ffnen Sie den globalen Profilabschnitt](https://support.microsoft.com/kb/188482). Outlook 2010 und Outlook 2013 ben�tigt jede Exchange-Konto eine eigene Profilabschnitt zum Speichern von Einstellungen, die **pbGlobalProfileSectionGuid** veraltet vornehmen. 
   
 Outlook 2010 and Outlook 2013 Exchange settings are still stored in the profile, but a unique identifier for the profile section that contains their settings is dynamically allocated per profile. The location of the Exchange settings in the profile is stored in the [Kanonische PidTagExchangeProfileSectionId-Eigenschaft](pidtagexchangeprofilesectionid-canonical-property.md), which can be found in the message service profile section of the Exchange account. This property can also be found in the profile section for each provider in this message service of the account. The unique identifier is not stored on the server and will be different across profiles.
   
@@ -111,5 +111,5 @@ Eine einfache Beschreibung des Prozesses f�r die Beilegung von mehreren Exchan
 [Kanonische PidTagExchangeProfileSectionId-Eigenschaft](pidtagexchangeprofilesectionid-canonical-property.md)
 
 
-[How To Open the Global Profile Section](http://support.microsoft.com/kb/188482)
+[How To Open the Global Profile Section](https://support.microsoft.com/kb/188482)
 

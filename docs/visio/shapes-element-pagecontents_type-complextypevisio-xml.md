@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2f9d51d7-e2b7-bc68-dede-c79fb9dbcf60
 description: Enthält eine Auflistung von Shape-Elementen.
-ms.openlocfilehash: eae86d230c19f1db8c7ed43cca8682460c3f7af1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7abece2a9fc8d88817f22c654567272becce981e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798045"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397569"
 ---
 # <a name="shapes-element-pagecontentstype-complextype-visio-xml"></a>Shapes-Element (PageContents_Type ComplexType) ("Visio XML")
 
 Enthält eine Auflistung von Shape-Elementen.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Shapes_Type](shapes_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
    

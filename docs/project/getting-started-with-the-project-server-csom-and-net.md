@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5ce73baa-dfb6-41d0-918d-b0c3a498815f
 description: Sie können das Project Server 2013 mithilfe der clientseitigen Objektmodell (CSOM) zum Entwickeln von Project Online und lokale Lösungen mit .NET Framework 4 verwenden. Dieser Artikel beschreibt, wie Sie eine Konsolenanwendung erstellen, die das CSOM zum Erstellen und Veröffentlichen von Projekten verwendet. Nach der Veröffentlichung eines Projekts, die Anwendung wartet darauf, dass der Project Server-Warteschlangendienst auf Fertig stellen, mit der Veröffentlichungsaktion und zeigt dann die veröffentlichten Projekte.
-ms.openlocfilehash: 1815122ce824fcd2f9b8c9119346ca02c720ae89
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f4e40cb3165bb2b3caf05b01736d90c21b6ac881
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796196"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401741"
 ---
 # <a name="getting-started-with-the-project-server-csom-and-net"></a>Erste Schritte mit dem Project Server-CSOM und .NET
 
@@ -137,7 +137,7 @@ CSOM Entwicklung erfordert das **ProjectContext** -Objekt, das mit der Project W
 1. Hinzufügen von **Programm** -Klasse Konstanten und Variablen, die die **QueueCreateProject** -Anwendung verwendet wird. Zusätzlich zu den Project Web App-URL verwendet die Anwendung den Namen der standardmäßige Enterprise-Projekttyp (EPT), den Namen des Projekts zu erstellen und eine maximale Warteschlangentimeout in Sekunden an. In diesem Fall kann die Variable **TimeoutSeconds** Sie testen, wie verschiedene Werte für das Timeout die Anwendung auswirken. Das **ProjectContext** -Objekt ist das primäre Objekt für den Zugriff auf die CSOM. 
     
    ```cs
-    private const string pwaPath = "http://ServerName /pwa/"; // Change the path to your Project Web App instance.
+    private const string pwaPath = "https://ServerName /pwa/"; // Change the path to your Project Web App instance.
     private static string basicEpt = "Enterprise Project";   // Basic enterprise project type.
     private static string projName = string.Empty;
     private static int timeoutSeconds = 10;  // The maximum wait time for a queue job, in seconds.
@@ -386,7 +386,7 @@ Wenn Sie zuerst die **QueueCreateProject** -Anwendung auf einer Testinstanz von 
     Press any key to exit...
    ```
 
-Aktualisieren Sie die Seite Projektcenter in Project Web App (`http://ServerName/ProjectServerName/Projects.aspx`), um die veröffentlichten Projekte anzeigen. Die folgende Abbildung zeigt, dass die Testprojekte veröffentlicht werden.
+Aktualisieren Sie die Seite Projektcenter in Project Web App (`https://ServerName/ProjectServerName/Projects.aspx`), um die veröffentlichten Projekte anzeigen. Die folgende Abbildung zeigt, dass die Testprojekte veröffentlicht werden.
 
 **Überprüfen der veröffentlichten Projekte in Project Web App**
 
@@ -409,7 +409,7 @@ namespace QueueCreateProject
 {
     class Program
     {
-        private const string pwaPath = "http://ServerName /pwa/"; // Change the path to your Project Web App instance.
+        private const string pwaPath = "https://ServerName /pwa/"; // Change the path to your Project Web App instance.
         private static string basicEpt = "Enterprise Project";   // Basic enterprise project type.
         private static string projName = string.Empty;
         private static int timeoutSeconds = 10;  // The maximum wait time for a queue job, in seconds.

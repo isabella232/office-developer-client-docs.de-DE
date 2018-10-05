@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 047f42cf-4202-50bd-40b4-a71052e2dfb3
 description: Gibt den Rand der Fußzeile eines Dokuments an.
-ms.openlocfilehash: d9fa5361c05639d39df5e26c08ca9395bdbe49c7
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f0c2b8ab1cc7bd1465af3281dfb51766ecba5d8c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797044"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401419"
 ---
 # <a name="footermargin-element-headerfootertype-complextype-visio-xml"></a>FooterMargin-Element (HeaderFooter_Type ComplexType) ("Visio XML")
 
 Gibt den Rand der Fußzeile eines Dokuments an.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[FooterMargin_Type](footermargin_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

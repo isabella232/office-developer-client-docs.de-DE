@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: fd236d74-2868-46a8-bb3d-17f8365931b6
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 505f9bb80c86b956cd920348f2120f7fc8494d8b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: aca9c9f9c22fc4057f1650d1342492d2ed34653c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587502"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397604"
 ---
 # <a name="pidtaghasattachments-canonical-property"></a>PidTagHasAttachments (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn eine Nachricht mindestens eine Anlage enthält. 
   
@@ -34,7 +34,7 @@ Enthält True, wenn eine Nachricht mindestens eine Anlage enthält.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Nachrichtenspeicher kopiert diese Eigenschaft aus der **MSGFLAG_HASATTACH** Kennzeichnung der **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft. Eine Clientanwendung können dann **PR_HASATTACH** auf e-Mail-Anlagen in einem Viewer Nachricht sortiert. 
   
@@ -44,7 +44,7 @@ Der Wert, den diese Eigenschaft mit der [IMAPIProp::SaveChanges](imapiprop-savec
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

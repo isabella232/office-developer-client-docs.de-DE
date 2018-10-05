@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 991c2969-0180-4c7d-95ee-e62fd24d67ef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a29cfca2112bf7ae75844a2e87f4e134a7016aba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a20ae8e3f19073bfb88d58db516a0e5f93d91445
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582308"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399865"
 ---
 # <a name="pidlidemail1originaldisplayname-canonical-property"></a>PidLidEmail1OriginalDisplayName (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Gibt den ersten Anzeigenamen, der die die e-Mail-Adresse entspricht, die für de
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Wenn der Wert der Eigenschaft **dispidEmail1AddrType** ([PidLidEmail1AddressType](pidlidemail1addresstype-canonical-property.md)) "SMTP" ist, sollte der Wert der jeweiligen **dispidEmail1OriginalDisplayName** -Eigenschaft den Wert der jeweiligen **entsprechen. dispidEmail1EmailAddress** -Eigenschaft ([PidLidEmail1EmailAddress](pidlidemail1emailaddress-canonical-property.md)). Diese Eigenschaft zeigt eine alternative benutzerfreundliche Adresse, die in der **dispidEmail1EmailAddress** -Eigenschaft entspricht. 
   
@@ -43,11 +43,11 @@ Wenn der Wert der Eigenschaft **dispidEmail1AddrType** ([PidLidEmail1AddressType
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

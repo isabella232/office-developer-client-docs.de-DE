@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 13661393-adf6-4870-86c4-303262317675
 description: Der Outlook Connector für soziale Netzwerke 2013 bietet einen Hub für die private und berufliche Kommunikation.
-ms.openlocfilehash: 32a9eb88b7724f8735d0eb8623bb3716ad836a7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e570fe69cbbe0e8d472e712fb3b8592c97fe43c0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796077"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396698"
 ---
 # <a name="outlook-social-connector-provider-reference"></a>Outlook Connector für soziale Netzwerke – Anbieterverweis
 
@@ -48,8 +48,8 @@ Wenn Sie gerade erst mit dem Entwickeln von Lösungen für Outlook begonnen habe
 ## <a name="see-also"></a>Siehe auch
 
 - [Urheberrechtshinweis für Outlook Connector für soziale Netzwerke 2013 – Anbieterverweis](outlook-social-connector-2013-provider-reference-copyright-notice.md) 
-- [Konventionen für Office Developer-Dokumente](http://msdn.microsoft.com/de-DE/office/aa905365.aspx)   
-- [Barrierefreiheit in Microsoft-Produkten](http://www.microsoft.com/enable/products/default.aspx)  
-- [Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft](https://privacy.microsoft.com/de-DE/privacystatement)
+- [Konventionen für Office Developer-Dokumente](https://msdn.microsoft.com/office/aa905365.aspx)   
+- [Barrierefreiheit in Microsoft-Produkten](https://www.microsoft.com/enable/products/default.aspx)  
+- [Auszüge aus den Onlinedatenschutzbestimmungen von Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
     
 

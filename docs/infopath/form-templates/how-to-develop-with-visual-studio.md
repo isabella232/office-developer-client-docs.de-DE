@@ -1,25 +1,25 @@
 ---
-title: Entwickeln mit Visual Studio
+title: Entwicklung mit Visual Studio
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e39d633d-d8fb-4e2f-a396-6cb50beb8c3e
 description: Sie können die Funktionalität von InfoPath-Formularen erheblich verbessern, indem Sie sie mit verwaltetem Code in Visual Studio 2012 entwickelt erweitern. Sie können von Formularen mit Code klicken Sie dann auf SharePoint Server 2013 in Formularbibliotheken veröffentlichen.
-ms.openlocfilehash: d6a2cfa1847b4b59b6978b8f4a0775aedf07a72d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1c67b85823fe567b494366a505be5dad51d20b32
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790756"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401097"
 ---
-# <a name="develop-with-visual-studio"></a>Entwickeln mit Visual Studio
+# <a name="develop-with-visual-studio"></a>Entwicklung mit Visual Studio
 
 Sie können die Funktionalität von InfoPath-Formularen erheblich verbessern, indem Sie sie mit verwaltetem Code in Visual Studio 2012 entwickelt erweitern. Sie können von Formularen mit Code klicken Sie dann auf SharePoint Server 2013 in Formularbibliotheken veröffentlichen.
   
 Wenn Sie InfoPath-Formulare mit verwaltetem Code programmieren und bereitstellen möchten, müssen Sie zunächst drei allgemeine Schritte ausführen:
   
-1. Installieren Sie Visual Studio 2012, mit dem [Microsoft Visual Studio Tools for Applications 2012](http://www.microsoft.com/en-us/download/details.aspx?id=38807) Add-on. 
+1. Installieren Sie Visual Studio 2012, mit dem [Microsoft Visual Studio Tools for Applications 2012](https://www.microsoft.com/en-us/download/details.aspx?id=38807) Add-on. 
     
 2. Die Programmiersprache festlegen und Schreiben und Debuggen von Code im Code-Editor von Visual Studio 2012.
     
@@ -58,7 +58,7 @@ InfoPath finden Sie die Optionen zum Programmieren mit vier Versionen von InfoPa
     
 2. Klicken Sie im Abschnitt **Allgemein** des Dialogfelds **InfoPath-Optionen** auf **Weitere Optionen**.
     
-3. Wählen Sie auf der Registerkarte **Entwurf** des Dialogfelds **Optionen** im Abschnitt **Standardeinstellungen für Programmierung** die Standardprogrammiersprache aus. 
+3. Wählen Sie auf der Registerkarte **Entwurf** des Dialogfelds **Optionen** im Abschnitt **Standardeinstellungen für Programmierung** die Standardprogrammiersprache aus.  
     
 ### <a name="writing-code"></a>Schreiben von Code
 
@@ -68,7 +68,7 @@ Nun können Sie mit InfoPath 2013 und Visual Studio 2012 entwickeln.
 
 1. Öffnen Sie eine Formularvorlage im InfoPath-Designer.
     
-2. Klicken Sie auf der Registerkarte **Entwicklertools** auf **Code-Editor** . 
+2. Klicken Sie auf der Registerkarte **Entwickler** auf **Code-Editor**. 
     
 > [!TIP]
 > Sie können auch im Code-Editor zu starten und automatisch hinzufügen Ereignishandler für Formular- und Ereignisse, die mithilfe der Befehle auf der Registerkarte **Entwicklertools** , Kontextmenüs und andere User Interface-Methoden. Weitere Informationen finden Sie unter [Hinzufügen eines Ereignishandlers](how-to-add-an-event-handler.md)

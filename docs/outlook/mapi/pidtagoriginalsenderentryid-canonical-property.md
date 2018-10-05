@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bd182589-afea-4967-92f5-ba1914e4db3f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0b30a61d3bce6d1e6295edb1e93e27b9f7fc8363
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bd32ef6540e0deec1b793bd49bab651d864754c6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574444"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393831"
 ---
 # <a name="pidtagoriginalsenderentryid-canonical-property"></a>PidTagOriginalSenderEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID des Absenders einer Nachricht, d. h., die Nachricht vor dem weitergeleitet oder darauf geantwortet wird die erste Version.
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID des Absenders einer Nachricht, d. h., die Nachricht vor
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den ursprünglichen Absender einer Nachricht. Am ersten-Übermittlung der Nachricht sollte eine Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_SENDER_ENTRYID** ([PidTagSenderEntryId](pidtagsenderentryid-canonical-property.md)) festgelegt. Es wird nie geändert, wenn die Nachricht weitergeleitet oder darauf geantwortet wird.
   
@@ -42,11 +42,11 @@ Diese Eigenschaft ist eine der Adresseigenschaften für den ursprünglichen Abse
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.
     

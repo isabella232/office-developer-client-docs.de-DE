@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 7b251308-70ff-a1ec-e968-9d5993909505
 description: Outlook exportiert die folgenden Definitionen, Datenstrukturen, Funktionen und Schnittstellen, die Waren ursprünglich für die interne Verwendung konzipiert, aber nun für die Öffentlichkeit verfügbar gemacht werden.
-ms.openlocfilehash: 888a1d7f828b463dc17c03353d693d3df3544e53
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0ed68b6c1b8082ee5cc22deb96333a0bd4d29390
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790912"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399368"
 ---
 # <a name="about-apis-exported-by-outlook"></a>Über die APIs von Outlook exportiert
 
@@ -50,8 +50,8 @@ Outlook exportiert die folgenden Definitionen, Datenstrukturen, Funktionen und S
     
 Darüber hinaus erreichen verwenden die Dispatch-IDs, **dispidFDirty** und **dispidShowSenderPhoto**, die folgenden Aufgaben Sie:
   
-- [Bestimmen Sie, ob ein Outlook-Element geändert, jedoch nicht gespeichert (Outlook-Zusatzreferenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
+- [Bestimmen Sie, ob ein Outlook-Element geändert, aber nicht gespeichert (Outlook 2013 Hilfs-Referenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
-- [Gibt an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) anzeigen](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Geben Sie an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) angezeigt werden soll](https://msdn.microsoft.com/library/office/gg262879.aspx)
     
 

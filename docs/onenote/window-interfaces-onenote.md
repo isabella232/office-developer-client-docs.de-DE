@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: e6900ad7-c147-4816-93a9-5773170b115a
 description: Die Schnittstellen Window und Windows sind OneNote 2013-API-Objekte, die Benutzern die Arbeit mit OneNote-Fenster ermöglicht. Diese Objekte ermöglichen Benutzern bestimmte Fenstereigenschaften zu durchlaufen, den Satz von OneNote-Fenster.
-ms.openlocfilehash: 83a3742419a4c8faf11c22c4766744d675151c1c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: efc34312def588ecff54c63b3db84f8bf909352b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790925"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399949"
 ---
 # <a name="window-interfaces-onenote"></a>Fenster-Schnittstellen (OneNote 2013)
 
@@ -87,7 +87,7 @@ Die folgenden Methoden der **Window** -Schnittstelle können Sie angegebenen Obj
 
 |||
 |:-----|:-----|
-|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn der Link eine externe Verknüpfung, beispielsweise http:// oder file:///, ist wird jedoch ein Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, um den Link zu öffnen, und ein HResult.hrObjectDoesNotExist-Fehler zurückgegeben.  <br/> |
+|**Beschreibung** <br/> |Wenn einen Link OneNote übergeben (Onenote: / /), wird das OneNote-Fenster auf den entsprechenden Speicherort in OneNote geöffnet. Wenn der Link eine externe Verknüpfung, wie https:// oder file:///, ist wird jedoch ein Sicherheitsdialogfeld angezeigt. Bei Kündigung OneNote versucht, um den Link zu öffnen, und ein HResult.hrObjectDoesNotExist-Fehler zurückgegeben.  <br/> |
 |**Syntax** <br/> | `HRESULT NavigateToUrl (`           ` [in]BSTR bstrUrl); ` <br/> |
 |**Parameter** <br/> | _bstrUrl_- die URL zu navigieren.  <br/> |
    

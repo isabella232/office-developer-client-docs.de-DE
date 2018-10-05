@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 80a2608b-fc44-455a-86be-d6235caba99e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 755342da4bc280241e313fbb7efb818ab29b829f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ba79498569c544d1b0ee22e968477d5b68812c09
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571626"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398276"
 ---
 # <a name="pidlidappointmentreplytime-canonical-property"></a>PidLidAppointmentReplyTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt das Datum und Uhrzeit, als der Teilnehmer zu einer empfangenen einer Besprechungsanfrage oder Update meeting geantwortet hat.
   
@@ -35,7 +35,7 @@ Gibt das Datum und Uhrzeit, als der Teilnehmer zu einer empfangenen einer Bespre
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
   
@@ -43,11 +43,11 @@ Der Wert muss in koordinierter Weltzeit (UTC) angegeben werden.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

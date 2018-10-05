@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 0500dee8-a39d-45ce-87b1-c515e92e083d
 description: 'Letzte �nderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: ae8b5a474675c0afd771f4e8dfd060d0b379c8f4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7f1dd7a23bbd643b496b7634b6ad0230c806585f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572221"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398605"
 ---
 # <a name="tracking-conversations"></a>Nachverfolgen von Unterhaltungen
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Nachverfolgen der Unterhaltung sammelt Antworten auf eine Nachricht. Clients sollte zwei Eigenschaften, mit denen in Unterhaltungen nachverfolgen festgelegt:
   
@@ -47,7 +47,7 @@ Jeder untergeordneten Block besteht aus 5 Bytes wie folgt unterteilt:
     
 - Drei�ig One Bits mit den Unterschied zwischen der aktuellen Zeit und dem Zeitpunkt, der im **FILETIME** Einheiten Kopfzeilen-Baustein. In diesem Teil des untergeordneten Blocks wird erzeugt, mit einer der beiden Strategien, abh�ngig vom Wert des ersten Bits. Wenn dieses Bit 0 (null) ist, verwirft **ScCreateConversationIndex** die 15 Bits und die unteren 18 Bits. Wenn dieses Bit ist, verwirft die Funktion die hohe 10 Bits und die unteren Bits 23. 
     
-- Vier Bits mit einer Zufallszahl durch Aufrufen von Win32-Funktion, [z. B.](http://msdn.microsoft.com/en-us/library/ms724408%28VS.85%29.aspx)generiert.
+- Vier Bits mit einer Zufallszahl durch Aufrufen von Win32-Funktion, [z. B.](https://msdn.microsoft.com/library/ms724408%28VS.85%29.aspx)generiert.
     
 - Vier Bits mit einer Sequenz gez�hlt werden, die Teil einer Zufallszahl entnommen wird.
     

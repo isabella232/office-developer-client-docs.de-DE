@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 293a0700-b950-4fc2-a2e5-148d6c846384
 description: 'Zuletzt geändert: 20 Februar 2012'
-ms.openlocfilehash: 0052d0bd6b485340a92cca9f22ca65c9e2442df6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0e64df38afdb8ecce35eb0151d36dde3da35f0a4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589567"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398738"
 ---
 # <a name="mnlsisbadstringptrw"></a>MNLS_IsBadStringPtrW
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Überprüft, ob ein Zeiger auf eine Breite Zeichenfolge gültig ist.
   
@@ -39,12 +39,12 @@ BOOL MNLS_IsBadStringPtrW(
   
 > [in] Die maximale Länge der Zeichenfolge in Zeichen einschließlich.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Gibt einen booleschen Wert, der True, wenn die Zeichenfolge beschädigt ist.
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion umschließt [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx). Weitere Informationen finden Sie unter [IsBadStringPtr](http://msdn.microsoft.com/en-us/library/aa366714%28VS.85%29.aspx).
+Diese Funktion umschließt [IsBadStringPtr](https://msdn.microsoft.com/library/aa366714%28VS.85%29.aspx). Weitere Informationen finden Sie unter [IsBadStringPtr](https://msdn.microsoft.com/library/aa366714%28VS.85%29.aspx).
   
 

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 84221dd3-de71-4c10-abd7-9f15aefd02ed
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 58642cd84c9f9b784a8a9d7246bfed0dab58e119
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f64ff019212065efd651fd2562c48519b0c7c2d0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577051"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393568"
 ---
 # <a name="pidlidintendedbusystatus-canonical-property"></a>PidLidIntendedBusyStatus (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Gibt den Wert der Eigenschaft **DispidBusyStatus** ([PidLidBusyStatus](pidlidbus
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die zulässigen Werte dieser Eigenschaft sind die gleichen, die für die Eigenschaft **DispidBusyStatus**.
   
@@ -43,11 +43,11 @@ Die zulässigen Werte dieser Eigenschaft sind die gleichen, die für die Eigensc
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

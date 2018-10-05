@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bd4646d2-8229-499d-91aa-3cbec72b9445
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 6c7942d16cabc61eab55ab145b9c26a1799bbcc4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5024c2f8b88b54051e4b8400f4b3f14374b10c23
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565172"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395938"
 ---
 # <a name="ipersistmessageload"></a>IPersistMessage::Load
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Lädt das Formular für eine angegebene Nachricht.
   
@@ -54,13 +54,13 @@ HRESULT Load(
   
 > [in] Eine Bitmaske aus Flags, die aus der Nachricht **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md))-Eigenschaft kopiert, die bieten weitere Informationen zum Status der Nachricht.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
 > Das Formular wurde erfolgreich geladen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Formular Viewer rufen Sie die **IPersistMessage::Load** -Methode, um ein Formular für eine vorhandene Nachricht zu laden. 
   
@@ -76,7 +76,7 @@ Formular Viewer rufen Sie die **IPersistMessage::Load** -Methode, um ein Formula
     
 Wenn ein Formular Viewer **Load** anruft, während das Formular in jedem anderen Zustand befindet, gibt die Methode E_UNEXPECTED zurück. 
   
-Wenn Ihr Formular einen Verweis auf eine aktive Nachricht Website als derjenigen, die in **Load**übergeben wird, lassen Sie die ursprüngliche Website, da sie nicht mehr verwendet werden. Der Zeiger auf die Nachricht-Website und die Nachricht der Parameter _pMessageSite_ und _pMessage_ gespeichert, und rufen beide Objekte [IUnknown:: AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) Methoden, um ihre Referenzzähler erhöhen. 
+Wenn Ihr Formular einen Verweis auf eine aktive Nachricht Website als derjenigen, die in **Load**übergeben wird, lassen Sie die ursprüngliche Website, da sie nicht mehr verwendet werden. Der Zeiger auf die Nachricht-Website und die Nachricht der Parameter _pMessageSite_ und _pMessage_ gespeichert, und rufen beide Objekte [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) Methoden, um ihre Referenzzähler erhöhen. 
   
 Nachdem **AddRef** abgeschlossen ist, speichern Sie die Eigenschaften der Parameter _UlMessageStatus_ und _UlMessageFlags_ in das Formular. Übergang zu seinem [normalen](normal-state.md) Zustand Formulars vor dem anzeigen, und Benachrichtigen der registrierten Viewer durch ihre [IMAPIViewAdviseSink::OnNewMessage](imapiviewadvisesink-onnewmessage.md) -Methoden aufrufen. 
   
@@ -102,9 +102,9 @@ Wenn keine Fehler auftreten, geben Sie S_OK zurück.
 [Formularstatus](form-states.md)
 
 
-[IPersistStorage](http://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)
+[IPersistStorage](https://msdn.microsoft.com/library/34379b8d-4e00-49cd-9fd1-65f88746c61a.aspx)
   
-[IPersistStream:: Load](http://msdn.microsoft.com/library/351e1187-9959-4542-8778-925457c3b8e3.aspx)
+[IPersistStream:: Load](https://msdn.microsoft.com/library/351e1187-9959-4542-8778-925457c3b8e3.aspx)
   
-[IPersistFile:: Load](http://msdn.microsoft.com/library/8391aa5c-fe6e-4b03-9eef-7958f75910a5.aspx)
+[IPersistFile:: Load](https://msdn.microsoft.com/library/8391aa5c-fe6e-4b03-9eef-7958f75910a5.aspx)
 

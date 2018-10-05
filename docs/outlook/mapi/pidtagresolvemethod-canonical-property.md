@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 30d23c19-e0da-4511-9361-761153259216
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e67cbb113899487f489ef7235d92d1adfcb76163
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 14bb31ae9aebbb6441948b5756b426508107c9f0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563639"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394902"
 ---
 # <a name="pidtagresolvemethod-canonical-property"></a>PidTagResolveMethod (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Ordner Konflikt Lösung Wert.
   
@@ -34,7 +34,7 @@ Enthält einen Ordner Konflikt Lösung Wert.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft auf den Ordner mit den Konflikt Lösung Nachricht wird anzugeben, wie den Konflikt zu lösen. Diese Eigenschaft ist nicht erforderlich. Jedoch ist festgelegt, müssen als den folgenden Kennzeichen nicht vorhanden sein:
   
@@ -50,11 +50,11 @@ Ein Client oder Server muss eine Nachricht an Konflikt auflösen zugeordneten Na
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCSYNC]](http://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)
+[[MS-OXCSYNC]](https://msdn.microsoft.com/library/fd3e23ef-341a-4a8c-a0e9-6afecbb11c40%28Office.15%29.aspx)
   
 > Synchronisieren von messaging Objektdaten zwischen einem Server und einem Client behandelt.
     
-[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.
     

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 46f31089-3b66-41a2-8094-e3db52464b9f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 78b157dfb11eb7e97d90142a148e3741e3d818d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5fc7360e3070ed4d20be7ac0155ebdcb04cf2048
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572648"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396953"
 ---
 # <a name="pidtagattachcontentid-canonical-property"></a>PidTagAttachContentId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Header Content Identification Multipurpose Internet Mail Extensions (MIME) e-Mail-Anlagen enthält. 
   
@@ -34,7 +34,7 @@ Header Content Identification Multipurpose Internet Mail Extensions (MIME) e-Mai
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen die Kopfzeile Content Kennung für die entsprechenden MIME-Textkörper dar. 
   
@@ -42,7 +42,7 @@ Diese Eigenschaften werden verwendet für MHTML-Unterstützung. Sie stellen die 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

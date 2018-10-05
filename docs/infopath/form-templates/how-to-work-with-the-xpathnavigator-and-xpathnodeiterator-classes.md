@@ -1,5 +1,5 @@
 ---
-title: Arbeiten Sie mit der "XPathNavigator" und "XPathNodeIterator"-Klasse
+title: Arbeiten mit den Klassen "XPathNavigator" und "XPathNodeIterator"
 manager: soliver
 ms.date: 12/07/2015
 ms.audience: Developer
@@ -8,21 +8,21 @@ keywords:
 localization_priority: Normal
 ms.assetid: 72fb3ee5-f18e-4f9c-adc6-698ac037b79d
 description: Zugriff und zum Bearbeiten der XML-Datenteils im Formular Vorlage Datenquellen, viele Mitglieder der vom Microsoft.Office.InfoPath-Namespace bereitgestellten Objektmodell für verwalteten Code erstellen oder eine Instanz der XPathNavigator-Klasse von der Auswertungsmodul übergeben werden kann Namespace. Nachdem Sie den Zugriff auf ein XPathNavigator-Objekt zurückgegeben, die durch ein InfoPath-Objektmodellmember haben, können Sie die Eigenschaften und Methoden der XPathNavigator-Klasse zum Arbeiten mit den Daten verwenden.
-ms.openlocfilehash: a672ea2733d971c829b77e0c18a74f26c7050b34
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f34f2e1a1cbdb8d9e389c864a9b979be20726e6b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790779"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393040"
 ---
-# <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>Arbeiten Sie mit der "XPathNavigator" und "XPathNodeIterator"-Klasse
+# <a name="work-with-the-xpathnavigator-and-xpathnodeiterator-classes"></a>Arbeiten mit den Klassen "XPathNavigator" und "XPathNodeIterator"
 
 Zugriff und zum Bearbeiten der XML-Datenteils im Formular Vorlage Datenquellen, viele Mitglieder der vom [Microsoft.Office.InfoPath](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.aspx) -Namespace bereitgestellten Objektmodell für verwalteten Code erstellen oder eine Instanz der **XPathNavigator** -Klasse übergeben werden kann die **Auswertungsmodul** -Namespace. Nachdem Sie den Zugriff auf ein **XPathNavigator** -Objekt zurückgegeben, die durch ein InfoPath-Objektmodellmember haben, können Sie die Eigenschaften und Methoden der **XPathNavigator** -Klasse zum Arbeiten mit den Daten verwenden. 
   
 Der am häufigsten verwendete Member des **Microsoft.Office.InfoPath** -Namespace, der die **XPathNavigator** -Klasse verwendet wird, die [CreateNavigator](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.CreateNavigator.aspx) -Methode der [DataSource](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.DataSource.aspx) -Klasse, die Sie mit den gespeicherten Daten arbeiten können durch ein **DataSource** -Objekt dargestellt. Die **CreateNavigator** -Methode erstellt ein am Stamm der durch das **DataSource** -Objekt dargestellte Datenquelle positioniertes **XPathNavigator** -Objekt. 
   
 > [!TIP]
-> Wenn Sie mit der Verwendung von MSXML5 aus Skript zum Arbeiten mit Daten in Microsoft InfoPath 2003 vertraut sind, können Sie die **CreateNavigator** -Methode als Ersatz für die **DOM** -Eigenschaft des **DataObject**vorstellen. 
+> Wenn Sie mit der Verwendung von MSXML5 aus Skript zum Arbeiten mit Daten in Microsoft InfoPath 2003 vertraut sind, können Sie sich die **CreateNavigator**-Methode als Ersatz für die **DOM**-Eigenschaft von **DataObject** vorstellen. 
   
 ## <a name="using-the-xpathnavigator-class-to-access-the-main-data-source-of-the-form"></a>Verwenden der "XPathNavigator"-Klasse für den Zugriff auf die Hauptdatenquelle des Formulars
 
@@ -55,7 +55,7 @@ Um die einzelnen XML-Knoten für ein Feld in einer Datenquelle auswählen möcht
 Die überladene **SelectSingleNode** -Methode, die Sie verwenden müssen verfügt über einen _Xpath_ -Parameter, der einen XPath-Ausdruck als Zeichenfolge annimmt, und einen _Auflösung_ -Parameter, der ein **XmlNamespaceManager** -Objekt für die Beilegung von Namespace akzeptiert Präfixe. Um einen einzelnen Knoten in der Hauptdatenquelle des Formulars auszuwählen, übergeben Sie einen XPath-Ausdruck, der angibt, das Feld oder Gruppe, die Sie für den _Xpath_ -Parameter zusammen mit dem **XmlNamespaceManager** -Objekt auswählen möchten, die von der [zurückgegeben wird NamespaceManager](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.NamespaceManager.aspx) -Eigenschaft der **XmlForm** -Objekt. Das zurückgegebene **XmlNamespaceManager** -Objekt wird zur Ladezeit mit allen Namespaces initialisiert, die von der Formulardefinitionsdatei (XSF) der Formularvorlage definiert sind. 
   
 > [!TIP]
-> Die einfachste Möglichkeit zum Erstellen eines XPath-Ausdrucks zum Auswählen eines Knotens in der Datenquelle des Formulars wird mit der rechten Maustaste Felds oder der Gruppe im Aufgabenbereich **Felder** , und klicken Sie dann auf **Kopie XPath**. Erstellen und Testen manuell bearbeitet werden, XPath-Ausdrücke für den Zugriff auf die Knoten in einem komplexen oder stark geschachtelte XML-Schema, dem Formular ein **Ausdrucksfeld** -Steuerelement hinzuzufügen, geben Sie den XPath-Ausdruck für das Steuerelement, und klicken Sie dann eine Vorschau des Formulars zum Anzeigen der Ergebnisse. 
+> Die einfachste Möglichkeit zum Erstellen eines XPath-Ausdrucks zum Auswählen eines Knotens in der Datenquelle des Formulars ist das Klicken mit der rechten Maustaste im Aufgabenbereich **Felder** auf das Feld oder die Gruppe und anschließende Klicken auf **XPath kopieren**. Fügen Sie zum Erstellen und Testen manuell bearbeiteter XPath-Ausdrücke für den Zugriff auf Knoten in einem komplexen oder überaus geschachtelten XML-Schema dem Formular ein Steuerelement vom Typ **Ausdrucksfeld** hinzu. Geben Sie dann den XPath-Ausdruck für das Steuerelement an, und zeigen Sie anschließend eine Vorschau des Formulars an, um die Ergebnisse anzuzeigen. 
   
 Das folgende Beispiel verwendet die **SelectSingleNode** -Methode für den einzelnen Knoten aus der `EmailAlias` dar. Anschließend werden die **SetValue** -Methode der **XPathNavigator** -Klasse und die [UserName](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.UserName.aspx) -Eigenschaft der [Benutzer](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.User.aspx) -Klasse für den Wert des Felds festzulegen, den Alias des aktuellen Benutzers verwendet. 
   
@@ -73,11 +73,11 @@ Dim emailAlias As XPathNavigator = _
 emailAlias.SetValue(Me.Application.User.UserName.ToString())
 ```
 
-Informationen zum Erstellen von XPath-Ausdrücken finden Sie unter der XPath-Referenz auf MSDN und die [Empfehlung für XML Path Language (XPath) Version 1.0 W3C](http://www.w3.org/TR/xpath).
+Informationen zum Erstellen von XPath-Ausdrücken finden Sie unter der XPath-Referenz auf MSDN und die [Empfehlung für XML Path Language (XPath) Version 1.0 W3C](https://www.w3.org/TR/xpath).
   
 ### <a name="setting-the-value-of-a-node-that-has-the-xsinil-attribute"></a>Festlegen des Werts eines Knotens mit dem Attribut "xsi:nil"
 
-Für bestimmte Datentypen wird versucht, den Wert eines leeren Feldes programmgesteuert festlegen der Fehler "schemavalidierung wurden nicht vom Datentyp Fehler gefunden." In der Regel ist die Ursache für diesen Fehler an, dass das Element das [xsi: nil](http://www.w3.org/TR/2001/REC-xmlschema-1-20010502/#xsi_nil) -Attribut auf **true**festgelegt wurde. Wenn Sie das zugrunde liegende XML-Element für das leere Feld in der Form untersuchen, können Sie diese Einstellung finden Sie unter. Das XML-Fragment für die folgenden leeren Datumsfeld verfügt beispielsweise über das **xsi: nil** -Attribut auf **true**festgelegt.
+Für bestimmte Datentypen wird versucht, den Wert eines leeren Feldes programmgesteuert festlegen der Fehler "schemavalidierung wurden nicht vom Datentyp Fehler gefunden." In der Regel ist die Ursache für diesen Fehler an, dass das Element das [xsi: nil](https://www.w3.org/TR/2001/REC-xmlschema-1-20010502/#xsi_nil) -Attribut auf **true**festgelegt wurde. Wenn Sie das zugrunde liegende XML-Element für das leere Feld in der Form untersuchen, können Sie diese Einstellung finden Sie unter. Das XML-Fragment für die folgenden leeren Datumsfeld verfügt beispielsweise über das **xsi: nil** -Attribut auf **true**festgelegt.
   
 ```XML
 <my:myDate xsi:nil="true"></my:myDate>
@@ -95,13 +95,13 @@ Wenn das **xsi: nil** -Attribut auf **true**festgelegt ist, bedeutet dies, dass 
     
 - **Datum und Uhrzeit (DateTime)**
     
-Um diesen Fehler zu vermeiden, muss Ihr Code für das **xsi: nil** -Attribut testen, und wenn es vorhanden ist, entfernen, bevor Sie den Wert des Knotens festlegen. Die folgende Subroutine wird ein **XpathNavigator** -Objekt, das auf dem Knoten positioniert, die Sie festlegen möchten, für das **nil** -Attribut überprüft und dann gelöscht, die, wenn sie vorhanden ist. 
+Zum Vermeiden dieses Fehlers muss Ihr Code prüfen, ob das **xsi:nil**-Attribut vorhanden ist, und falls ja, es entfernen, bevor der Wert des Knotens festgelegt wird. Die folgende Unterroutine verwendet ein **XpathNavigator**-Objekt am Knoten, den Sie festlegen möchten, sucht nach dem **nil**-Attribut und löscht es, sofern vorhanden. 
   
 ```cs
 public void DeleteNil(XPathNavigator node)
 {
    if (node.MoveToAttribute(
-      "nil", "http://www.w3.org/2001/XMLSchema-instance"))
+      "nil", "https://www.w3.org/2001/XMLSchema-instance"))
       node.DeleteSelf();
 }
 ```
@@ -109,13 +109,13 @@ public void DeleteNil(XPathNavigator node)
 ```vb
 Public Sub DeleteNil(ByVal node As XPathNavigator)
    If (node.MoveToAttribute( _
-      "nil", "http://www.w3.org/2001/XMLSchema-instance")) Then
+      "nil", "https://www.w3.org/2001/XMLSchema-instance")) Then
       node.DeleteSelf()
    End If
 End Sub
 ```
 
-Sie können diese Unterroutine aufrufen, bevor Sie versuchen, ein Feld eines Datentyps, die möglicherweise das **xsi: nil** -Attribut muss festlegen, wie im folgenden Beispiel dargestellt, die ein Date-Feld festlegt. 
+Sie können diese Unterroutine aufrufen, bevor Sie versuchen, ein Feld eines Datentyps festzulegen, das ggf. das **xsi:nil**-Attribut aufweist (siehe das folgende Beispiel, das ein "Date"-Feld festlegt). 
   
 ```cs
 // Access the main data source.
@@ -180,7 +180,7 @@ MessageBox.Show(message)
 
 Das vorherige Beispiel funktioniert mit Zeichenfolgenwerten im angegebenen wiederholten Feld. Wenn das Feld jedoch numerische Werte enthält, können Sie ähnlichen Code verwenden, um die Werte im Feld für Berechnungen, z. B. der Summe der Werte oder ihres Durchschnitts, zu durchlaufen.
   
-Auf ähnliche Weise statt der **Value** -Eigenschaft zum Abrufen des Werts jeder Instanz von Feld wiederholten können Sie die **SetValue** -Methode die Felder durchlaufen und ihre Werte festlegen wie im folgenden Beispiel dargestellt. 
+Anstatt die **Value**-Eigenschaft zum Abrufen des Werts jeder Instanz des wiederholten Felds zu verwenden, können Sie auch mithilfe der**SetValue**-Methode die Felder durchlaufen und ihre Werte festlegen (siehe das folgende Beispiel). 
   
 ```cs
 XPathNavigator root = this.CreateNavigator();
@@ -210,7 +210,7 @@ Loop
 
 Zugriff auf eine externe Datenquelle, die dem Formular zugeordneten übergeben Sie den Namen der Datenquelle an die [DataSources](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.DataSources.aspx) -Eigenschaft der [XmlForm](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlForm.aspx) -Klasse. Zum Erstellen einer Verbindung mit einer neuen externen Datenquelle oder um eine Liste mit den Namen der vorhandenen externen datenquellenverbindungen anzuzeigen, klicken Sie auf der Registerkarte **Daten** des Menübands auf **Datenverbindungen** . 
   
-Im folgenden Codebeispiel veranschaulicht das Erstellen eines **XPathNavigator** -Objekts am Stamm einer externen Datenquelle mit dem Namen "CityList" mithilfe der **CreateNavigator** -Methode, und klicken Sie dann verwendet die **OuterXml** -Eigenschaft der ** XPathNavigator** Klasse zum Anzeigen des XML-Code in einem Meldungsfeld zurückgegeben. In diesem Codebeispiel wird davon ausgegangen, dass Sie eine Datenverbindung mit einer Liste der Namen der Stadt erstellt, die in einer externen Datenquelle, wie ein XML-Dokument oder einer SharePoint-Liste gespeichert werden und mit dem Namen diese Datenverbindung "CityList". 
+Im folgenden Codebeispiel wird gezeigt, wie ein **XPathNavigator**-Objekt am Stamm einer externen Datenquelle mit dem Namen "CityList" mithilfe der **CreateNavigator**-Methode erstellt wird und dann die **OuterXml**-Eigenschaft der **XPathNavigator**-Klasse verwendet wird, um den zurückgegebenen XML-Code in einem Meldungsfeld anzuzeigen. Dieses Codebeispiel geht davon aus, dass Sie eine Datenverbindung mit einer Liste von Ortsnamen erstellt haben, die in einer externen Datenquelle gespeichert sind, z. B. in einem XML-Dokument oder einer SharePoint-Liste, und die Datenverbindung "CityList" genannt haben. 
   
 ```cs
 XPathNavigator myNavigator = 
@@ -226,14 +226,14 @@ MessageBox.Show("External data source XML: " &amp; _
    myNavigator.OuterXml.ToString())
 ```
 
-Nachdem Sie Zugriff auf ein am Stamm einer externen Datenquelle positioniertes **XPathNavigator** -Objekt haben, können Sie Membern der **XPathNavigator** -Klasse wie die **SelectSingleNode** und **SetValue** -Methoden verwenden, arbeiten sie mit den Daten enthält. 
+Wenn Sie Zugriff auf ein **XPathNavigator**-Objekt am Stamm der externen Datenquelle erhalten haben, können Sie mithilfe von Members der **XPathNavigator**-Klasse wie den Methoden **SelectSingleNode** und **SetValue** mit den enthaltenen Daten arbeiten. 
   
 ## <a name="infopath-object-model-members-that-use-the-xpathnavigator-and-xpathnodeiterator-classes"></a>InfoPath-Objektmodellmember, von denen die Klassen "XPathNavigator" und "XPathNodeIterator" verwendet werden
 <a name="InfoPath2007XPathNavigatorClassFormTemplates_SelectingXMLNodes"> </a>
 
-Die folgende Tabelle enthält eine Übersicht aller Member des **Microsoft.Office.InfoPath** -Namespace, mit denen die **XPathNavigator** -Klasse zugreifen, bearbeiten oder zu XML-Daten senden. 
+Die folgende Tabelle enthält eine Übersicht aller Member des **Microsoft.Office.InfoPath**-Namespace, von denen die **XPathNavigator**-Klasse verwendet wird, um auf XML-Daten zuzugreifen, sie zu bearbeiten oder zu senden. 
   
-|**Übergeordnete Klasse**|**Member**|
+|**Übergeordnete Klasse**|**Element**|
 |:-----|:-----|
 |[AdoQueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoQueryConnection.aspx) <br/> |[BuildSqlFromXmlNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoQueryConnection.BuildSqlFromXmlNodes.aspx) -Methode  <br/> |
 |[AdoSubmitConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoSubmitConnection.aspx) <br/> |[BuildSqlFromXmlNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.AdoSubmitConnection.BuildSqlFromXmlNodes.aspx) -Methode  <br/> |
@@ -250,7 +250,7 @@ Die folgende Tabelle enthält eine Übersicht aller Member des **Microsoft.Offic
 |[Formularvorlage](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormTemplate.aspx) <br/> |[Manifest](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.FormTemplate.Manifest.aspx) -Eigenschaft  <br/> |
 |[MergeEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.aspx) <br/> |[XML](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.MergeEventArgs.Xml.aspx) -Eigenschaft  <br/> |
 |[SharepointListQueryConnection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SharepointListQueryConnection.aspx) <br/> |[Execute](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SharepointListQueryConnection.Execute.aspx) -Methode  <br/> |
-|[Signatur](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) <br/> |[SignatureBlockXmlNode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.SignatureBlockXmlNode.aspx) (Eigenschaft)  <br/> |
+|[Signature](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.aspx) <br/> |[SignatureBlockXmlNode](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.Signature.SignatureBlockXmlNode.aspx) (Eigenschaft)  <br/> |
 |[SignedDataBlock-Objekt](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.aspx) <br/> |[SignatureContainer](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.SignedDataBlock.SignatureContainer.aspx) (Eigenschaft)  <br/> |
 |[View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) <br/> |[GetContextNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetContextNodes.aspx) -Methoden  <br/> |
 ||[SelectNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.SelectNodes.aspx) -Methoden  <br/> |
@@ -264,9 +264,9 @@ Die folgende Tabelle enthält eine Übersicht aller Member des **Microsoft.Offic
 |[XmlFormCollection](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.aspx) <br/> |[NewFromFormTemplate](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlFormCollection.NewFromFormTemplate.aspx) -Methode  <br/> |
 |[XmlValidatingEventArgs](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.aspx) <br/> |[ReportError](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.XmlValidatingEventArgs.ReportError.aspx) -Methoden  <br/> |
    
-Zusätzlich zu den InfoPath-Objektmodellmember, die zurückzugeben, oder übernehmen Sie ein **XPathNavigator** -Objekt, zurückzugeben die in der folgenden Methoden eine Instanz der **XPathNodeIterator** -Klasse des **Auswertungsmodul** -Namespace zum Durchlaufen des XML-Codes der Knoten der Elemente, die angegebene oder in einer Ansicht ausgewählt werden. 
+Neben den InfoPath-Objektmodellmembern, die ein **XPathNavigator**-Objekt zurückgeben oder annehmen, geben die folgenden Methoden eine Instanz der **XPathNodeIterator**-Klasse des **System.Xml.XPath**-Namespace zum Durchlaufen der XML-Knoten von Elementen zurück, die in einer Ansicht angegeben oder ausgewählt werden. 
   
-|**Übergeordnete Klasse**|**Member**|
+|**Übergeordnete Klasse**|**Element**|
 |:-----|:-----|
 |[View](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.aspx) <br/> |[GetContextNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetContextNodes.aspx) -Methoden  <br/> |
 ||[GetSelectedNodes](https://msdn.microsoft.com/library/Microsoft.Office.InfoPath.View.GetSelectedNodes.aspx) -Methode  <br/> |
@@ -274,19 +274,19 @@ Zusätzlich zu den InfoPath-Objektmodellmember, die zurückzugeben, oder überne
 ## <a name="using-the-xpathnavigator-and-xpathnodeiterator-classes-to-work-with-data-selected-in-a-view"></a>Verwenden der Klassen "XPathNavigator" und "XPathNodeIterator" für in einer Ansicht ausgewählte Daten
 <a name="InfoPath2007XPathNavigatorClassFormTemplates_SelectingXMLNodes"> </a>
 
-Im folgende Beispiel werden Member der Klassen **XPathNavigator** und **XPathNodeIterator** zum Arbeiten mit Formulardaten in der folgenden Reihenfolge verwendet: 
+Im folgenden Beispiel werden Member der Klassen **XPathNavigator** und **XPathNodeIterator** für Formulardaten in der folgenden Reihenfolge verwendet: 
   
 1. Die **CreateNavigator** -Methode der **DataSource** -Klasse dient zum Erstellen einer **XPathNavigator** -Objektvariable mit dem Namen repeatingTableRow1, die standardmäßig im Stammverzeichnis des zugrunde liegenden XML-Dokument des Formulars (die Hauptdaten positioniert ist Quelle).
     
-2. Die **SelectSingleNode** -Methode der **XPathNavigator** -Klasse wird verwendet, um die Position des **XPathNavigator** -Objekts auf die erste Zeile des Steuerelements **Wiederholte Tabelle** an group2 in der Datenquelle gebunden zu verschieben. 
+2. Die **SelectSingleNode**-Methode der **XPathNavigator**-Klasse dient zum Verschieben der Position des **XPathNavigator**-Objekts in die erste Zeile des Steuerelements **Wiederholte Tabelle**, das an group2 in der Datenquelle gebunden ist. 
     
-3. Die repeatingTableRow1-Objektvariable wird an die **SelectNodes** -Methode der **View** -Klasse, um die Knoten in dieser Zeile auszuwählen übergeben. 
+3. Die repeatingTableRow1-Objektvariable wird an die **SelectNodes**-Methode der **View**-Klasse übergeben, um die Knoten in dieser Zeile auszuwählen. 
     
-4. Eine **XPathNodeIterator** -Objektvariable mit dem Namen SelectedNodes wird deklariert und die **GetSelectedNodes** -Methode der **View** -Klasse wird das **XPathNodeIterator** -Objekt mit den ausgewählten Knoten aufzufüllen. 
+4. Eine **XPathNodeIterator**-Objektvariable mit dem Namen selectedNodes wird deklariert, und die **GetSelectedNodes**-Methode der **View**-Klasse wird verwendet, um das **XPathNodeIterator**-Objekt mit den ausgewählten Knoten aufzufüllen.  
     
-5. Die **Count** -Eigenschaft der **XPathNodeIterator** -Klasse dient zum Anzeigen der Anzahl der Knoten in der SelectedNodes-Objektvariablen enthalten sind. 
+5. Die **Count**-Eigenschaft der **XPathNodeIterator**-Klasse dient zum Anzeigen der Anzahl der Knoten, die in der selectedNodes-Objektvariablen enthalten sind. 
     
-6. Eine For/Each-Schleife zum Durchlaufen der Knoten in der SelectedNodes-Objektvariablen und zum Anzeigen von Informationen zu den einzelnen Knoten mithilfe der Eigenschaften **Name**, **InnerXml**und **Value** der **XPathNavigator** -Klasse verwendet wird. 
+6. Eine For/Each-Schleife dient zum Durchlaufen der Knoten in der selectedNodes-Objektvariablen und zum Anzeigen von Informationen zu den einzelnen Knoten mithilfe der Eigenschaften **Name**, **InnerXml** und **Value** der **XPathNavigator**-Klasse. 
     
 ```cs
 // Create XPathNavigator and specify XPath for nodes.

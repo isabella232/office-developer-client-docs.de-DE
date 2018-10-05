@@ -16,12 +16,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: f66adbf1-5cb5-4dd0-be08-45e1c88c010c
 description: Hier finden Sie Dokumentation, Codebeispiele, Artikel mit Anleitungen und Programmierreferenzen zum Entwickeln von apps für den Office Store oder privaten app-Katalog und zum Anpassen und Integrieren von Project Server und Project-Clients mit einer Vielzahl von anderen Desktop- und business Anwendungen für Enterprise Projektmanagement.
-ms.openlocfilehash: 23c1229769a08f78b9ad35eab7403876cbe294d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 887b5964d6fa0e4845156e13c7f49a399543c133
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590757"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398227"
 ---
 # <a name="project-2013-developer-documentation"></a>Project 2013-Entwicklerdokumentation
 
@@ -30,16 +30,16 @@ Hier finden Sie Dokumentation, Codebeispiele, Artikel mit Anleitungen und Progra
 Willkommen Sie bei der Microsoft Project 2013 Software Development Kit (SDK). Das SDK enthält Dokumentation, Codebeispiele, Artikel mit Anleitungen und Programmierreferenzen zum Entwickeln von apps für einen öffentlichen oder privaten app-Katalog und zum Anpassen und Integrieren von Project Server und den Project-Clients mit einer Vielzahl von anderen Desktop und Geschäftsanwendungen für Enterprise Projektmanagement.
   
 > [!NOTE]
-> Projektserver 2013 basiert auf der Plattform für SharePoint Server 2013 und Project 2013 enthält einen Großteil der gleichen Infrastruktur als andere Office 2013-Anwendungen. Eine Dokumentation der einzelnen Details des Modells für SharePoint-Add-ins, SharePoint-basierten Workflows finden Sie unter Webparts, Entwicklung mit anderen SharePoint-Features und eine Dokumentation der Office-Add-ins, [SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/sharepoint-add-ins) und [Office-Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins). 
+> Projektserver 2013 basiert auf der Plattform für SharePoint Server 2013 und Project 2013 enthält einen Großteil der gleichen Infrastruktur als andere Office 2013-Anwendungen. Eine Dokumentation der einzelnen Details des Modells für SharePoint-Add-ins, SharePoint-basierten Workflows finden Sie unter Webparts, Entwicklung mit anderen SharePoint-Features und eine Dokumentation der Office-Add-ins, [SharePoint-Add-ins](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins) und [Office-Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins). 
   
 ## <a name="introduction-to-the-project-sdk"></a>Einführung in das Project-SDK
 <a name="pj15_Welcome_IntroToSDK"> </a>
 
 Projektserver 2013 ist eine Plattform für die Erstellung von lokalen oder cloudbasierten Enterprise Project Management-Lösungen und zum Erstellen von apps, die Endbenutzer erkennen und über einen öffentlichen oder privaten app-Katalog erwerben kann. Die Project Server 2013-Architektur basiert auf der Plattform mit vielen Erweiterungen und Verbesserungen in Microsoft Office Project Server 2007 eingeführt. Die neuen Features umfassen ein Client-seitigen Objektmodell (CSOM) zum Aktivieren des Zugriffs auf Project Online, einen OData-Dienst für online-Zugriff auf Project Server-Daten, remote-Ereignisempfänger, Workflowarchitektur, die auf Version 4 der Windows-Workflow basiert reporting Foundation (WF4) und Office-Add-ins, die eine allgemeine Architektur für die Aufgabe Bereich Erweiterungen in Microsoft Office 2013-Clientanwendungen ist.
   
-Eine wichtige Änderung in Project Server 2013 ist die Verwendung einer einzigen Datenbank anstelle der Datenbanken Entwurf, veröffentlicht, Archiv und Berichterstellung in Project Server 2010. Weitere Informationen zu neuen Features und veralteten Features finden Sie unter [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md). Informationen zu Änderungen in der Project Server-Plattform finden Sie unter [Architektur von Project Server 2013](project-server-2013-architecture.md). Eine Übersicht über die Entwicklungsplattform, vorhanden ist, in Project Server 2010 und Project Server 2013 ist auf der Grundlage finden Sie unter [Erste Schritte bei der Entwicklung für Project 2010](http://msdn.microsoft.com/en-us/library/gg607685.aspx) bei MSDN. 
+Eine wichtige Änderung in Project Server 2013 ist die Verwendung einer einzigen Datenbank anstelle der Datenbanken Entwurf, veröffentlicht, Archiv und Berichterstellung in Project Server 2010. Weitere Informationen zu neuen Features und veralteten Features finden Sie unter [Updates für Entwickler in Project 2013](updates-for-developers-in-project-2013.md). Informationen zu Änderungen in der Project Server-Plattform finden Sie unter [Architektur von Project Server 2013](project-server-2013-architecture.md). Eine Übersicht über die Entwicklungsplattform, vorhanden ist, in Project Server 2010 und Project Server 2013 ist auf der Grundlage finden Sie unter [Erste Schritte bei der Entwicklung für Project 2010](https://msdn.microsoft.com/library/gg607685.aspx) bei MSDN. 
   
-Projektserver 2013 baut auf der Microsoft .NET Framework 4 und Microsoft SharePoint Server 2013. Die Artikel und die Beispiele in diesem SDK bieten einen Ausgangspunkt für die Entwicklung von benutzerdefinierten Lösungen und apps; Sie führen Sie alle Programmierbarkeit Features von Project Server oder Project Professional nicht behandelt. Das [Project Developer Center](http://msdn.microsoft.com/library/4e5245c3-4891-455b-b321-1819cdd77247.aspx) enthält Links zu Project Artikeln, Blogs, Videos, Webcasts, Artikel mit visuellen Anleitungen und andere Ressourcen. 
+Projektserver 2013 baut auf der Microsoft .NET Framework 4 und Microsoft SharePoint Server 2013. Die Artikel und die Beispiele in diesem SDK bieten einen Ausgangspunkt für die Entwicklung von benutzerdefinierten Lösungen und apps; Sie führen Sie alle Programmierbarkeit Features von Project Server oder Project Professional nicht behandelt. Das [Project Developer Center](https://msdn.microsoft.com/library/4e5245c3-4891-455b-b321-1819cdd77247.aspx) enthält Links zu Project Artikeln, Blogs, Videos, Webcasts, Artikel mit visuellen Anleitungen und andere Ressourcen. 
   
 Project 2013-SDK umfasst Entwicklerinformationen für Project Server 2013, Project Web App, Project Professional 2013 und Project Standard 2013 für. SDK-Artikel dienen zur Hilfe für Entwickler und Administratoren Project und Project Server für die Erweiterbarkeit und Planen von benutzerdefinierten Lösungen bewerten.
   
@@ -58,12 +58,12 @@ Download des Project 2013 SDK steht im [Microsoft Download Center](https://www.m
 
 Die Hauptaufgabe des Project 2013 SDK ist eine Übersicht der Programmierbarkeit und eine Dokumentation der CSOM und verwandte Features für das Erstellen von apps, die Project Server Interface (PSI)-Diensten und Aufgabenbereich-apps für Project Professional 2013 bereitstellen. Project 2013 SDK enthält schrittweise Beispiele für wichtige Bereiche für die Anpassung von Project Server 2013 und die Project-Clients (Project Standard 2013, Project Professional 2013 und Project Web App). Die Dokumentation ist unvollständig. Weitere Inhalte zu wird in zukünftigen Versionen hinzugefügt. 
   
-Die zugrunde liegende Technologie für die Kommunikation ist Windows Communication Foundation (WCF) in Project Server 2013, einschließlich Szenarien für die Cloud, die Project Server-CSOM und lokale-Entwicklung mithilfe der PSI verwenden. Der Vorversion ASMX Webdienstverweise basieren auch auf der WCF-Architektur. Festlegen eines Verweises auf einen Webdienst PSI (ASMX-Datei) in Project Server 2013 Anhängen erfordert die `?wsdl` URL-Option, um den Pfad. Beispielsweise `http://ServerName/ProjectServerName/_vti_bin/PSI/Resource.asmx?wsdl`.
+Die zugrunde liegende Technologie für die Kommunikation ist Windows Communication Foundation (WCF) in Project Server 2013, einschließlich Szenarien für die Cloud, die Project Server-CSOM und lokale-Entwicklung mithilfe der PSI verwenden. Der Vorversion ASMX Webdienstverweise basieren auch auf der WCF-Architektur. Festlegen eines Verweises auf einen Webdienst PSI (ASMX-Datei) in Project Server 2013 Anhängen erfordert die `?wsdl` URL-Option, um den Pfad. Beispielsweise `https://ServerName/ProjectServerName/_vti_bin/PSI/Resource.asmx?wsdl`.
   
 > [!NOTE]
 > Obwohl nur die am häufigsten verwendeten Project Server-Features behandelt, es wird empfohlen, dass Sie das CSOM nach Möglichkeit für Applikationen verwenden lokal und in der Cloud. Obwohl es in Project Server 2013 weiterhin verfügbar ist, ist die ASMX-Schnittstelle für die PSI veraltet. Für lokale-Anwendungen, die uneingeschränkten Zugriff auf die PSI erfordern, sollten Sie die WCF-Schnittstelle für die PSI, statt die ASMX-Schnittstelle verwenden. 
   
-Kopieren die CSOM-Assemblys für Project Server 2013 und SharePoint Server 2013 auf dem Entwicklungscomputer wird Entwicklung auf einem Windows 7-Computer unterstützt. Der SDK-Download enthält die CSOM-Assemblys für Project Server und eine Lizenz Redistribution. Wenn Sie die SharePoint-CSOM Assemblys erhalten möchten, finden Sie unter [Client Components SDK für SharePoint Server 2013](http://www.microsoft.com/en-us/download/details.aspx?id=35585).
+Kopieren die CSOM-Assemblys für Project Server 2013 und SharePoint Server 2013 auf dem Entwicklungscomputer wird Entwicklung auf einem Windows 7-Computer unterstützt. Der SDK-Download enthält die CSOM-Assemblys für Project Server und eine Lizenz Redistribution. Wenn Sie die SharePoint-CSOM Assemblys erhalten möchten, finden Sie unter [Client Components SDK für SharePoint Server 2013](https://www.microsoft.com/en-us/download/details.aspx?id=35585).
   
 Für die Entwicklung mit den WCF-Diensten können Sie einen Verweis auf eine PSI-Proxyassembly festlegen oder der Lösung PSI-Proxydateien hinzufügen. Sie können über einen Remotecomputer in derselben Domäne direkte Verweise auf die Project Server-Front-End-ASMX-Webdienste festlegen, oder eine Proxyassembly oder Proxydateien verwenden. Der SDK-Download enthält Proxydateien für die WCF-Dienste und die ASMX-Webdienste sowie Skripts für das Erstellen der Proxyassemblys und für das Generieren der aktualisierten Proxydateien.
   
@@ -85,7 +85,7 @@ Die neuen Themen umfassen Folgendes:
     
 - [Erstellen eines Project Server-Workflows für das Bedarfsmanagement](create-a-project-server-workflow-for-demand-management.md) zeigt, wie SharePoint Designer 2013 zum Erstellen von Project Server-Workflows verwendet werden können. 
     
-- [ProjectData - Projekt OData-Dienstverweises](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx) enthält eine Übersicht über den OData-Interface für Project Server-Berichtsdatenbank plus XML Referenzthemen für den **ProjectData** -Dienst. 
+- [ProjectData - Projekt OData-Dienstverweises](https://msdn.microsoft.com/library/office/jj163015.aspx) enthält eine Übersicht über den OData-Interface für Project Server-Berichtsdatenbank plus XML Referenzthemen für den **ProjectData** -Dienst. 
     
 Themen im **Microsoft.ProjectServer.Client** -Namespace und neue Methoden in der PSI-Dienste haben nur minimale Dokumentation. Die meisten den Referenzthemen für die PSI-Dienste sind unverändert aus der Juli 2011 Version von Project 2010-SDK. 
   
@@ -101,20 +101,20 @@ Es gibt zwei Abschnitte auf oberster Ebene in Project 2013 SDK:
   
 - Im Abschnitt [Project Konzept- und Anleitungsthemen Artikel](project-conceptual-and-how-to-articles.md) enthält eine Übersicht der wichtigsten Features und Artikel mit schrittweise Verfahren für die Entwicklung. 
     
-- Im Abschnitt [Project Server 2013 Class Library und Web-Dienstverweises](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) dokumentiert das Objektmodell der öffentlichen Assemblys, die Microsoft.ProjectServer.Client.dll-Assembly für das CSOM und der PSI-Dienste. 
+- Im Abschnitt [Project Server 2013 Class Library und Web-Dienstverweises](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) dokumentiert das Objektmodell der öffentlichen Assemblys, die Microsoft.ProjectServer.Client.dll-Assembly für das CSOM und der PSI-Dienste. 
     
 Der Abschnitt **Konzept und Anleitungen** enthält Folgendes: 
   
 - [Neuigkeiten und was nicht mehr vorhandene für Entwickler (engl.)](updates-for-developers-in-project-2013.md) beschreibt die wichtigsten Features für neue Programmierbarkeit und veraltete Features in Project 2013. 
     
-- [Übersicht über Project für Entwickler](http://msdn.microsoft.com/library/8da91ab0-af4f-429f-8241-490600e3f7bd%28Office.15%29.aspx) enthält Artikel zur Project Server-Architektur, Artikeln, in denen gezeigt, wie die ersten Schritte beim Entwickeln mit dem Clientobjektmodell, Informationen zu neuen Features in VBA für Projekt und einen Verweis auf das Office 2013 SDK enthält Themen zum Entwickeln von apps für den Aufgabenbereich für Project Professional 2013. 
+- [Übersicht über Project für Entwickler](https://msdn.microsoft.com/library/8da91ab0-af4f-429f-8241-490600e3f7bd%28Office.15%29.aspx) enthält Artikel zur Project Server-Architektur, Artikeln, in denen gezeigt, wie die ersten Schritte beim Entwickeln mit dem Clientobjektmodell, Informationen zu neuen Features in VBA für Projekt und einen Verweis auf das Office 2013 SDK enthält Themen zum Entwickeln von apps für den Aufgabenbereich für Project Professional 2013. 
     
 - [Projekt Programmieraufgaben](project-programming-tasks.md) enthält Artikel mit Anleitungen zum Erstellen von apps für Project Server mithilfe von JavaScript mit dem CSOM, und Erstellen von Projektvorschlägen und Workflows für das bedarfsmanagement. 
     
 - [Project 2013 programming Verweise](project-2013-programming-references.md) enthält eine Einführung in die PSI-Referenz für Project Server 2013, Informationen zu Project Server-Fehlercodes und der OData-Schemareferenz für den **ProjectData** -Dienst. 
     
 > [!NOTE]
->  Im folgenden sind die Anforderungen zum Entwickeln und Bereitstellen der EPM-Lösungen und apps aus dem öffentlichen Office Store, die in Project Server 2013 integriert: > Sie müssen .NET Framework 4 oder .NET Framework 4.5 installieren, auf dem Entwicklungscomputer installiert und für die Bereitstellung Computer. Um zu bestimmen, ob die richtige Version installiert ist, öffnen Sie **Programme und Funktionen** in der Windows-Systemsteuerung. > Visual Studio 2012 installiert und .NET Framework 4.5 verwendet. Wenn Sie ein Visual Studio-Projekt erstellen, können Sie **.NET Framework 4.0** oder **NET Framework 4.5** in der Dropdown-Liste im Dialogfeld **Neues Projekt** auswählen. Sie können auch das **Zielframework** auf der Registerkarte **Anwendung** des Fensters **Eigenschaften** Projekt auswählen. > Können Visual Studio 2010 für Anwendungen, die die CSOM oder die PSI verwenden und für Project Aufgabenbereichs-apps. Visual Studio 2010 enthält jedoch nicht die Office-Add-ins Vorlagen, Office-Entwicklungstools oder SharePoint-Entwicklungstools für Office 2013. Informationen zum Herunterladen von Visual Studio 2012 und dem Webplattform-Installer (WebPI), die den Office und SharePoint-Entwicklungstools enthält, finden Sie [Downloads für Apps für Office und SharePoint](http://msdn.microsoft.com/en-us/office/apps/fp123627). > Es wird empfohlen, dass beim Entwickeln benutzerdefinierter Lösungen in einer testumgebung. Bei der Entwicklung von Lösungen für die aktuelle builds von Project Server 2013 und Project 2013, sie sollten mit aktualisierten Verweise erneut kompiliert werden, und möglicherweise zusätzliche Änderungen, spätere Versionen entwickelt. Lösungen für jede Vorabversion entwickelt wurden, funktionieren möglicherweise nicht mit die endgültige Produktversion. 
+>  Im folgenden sind die Anforderungen zum Entwickeln und Bereitstellen der EPM-Lösungen und apps aus dem öffentlichen Office Store, die in Project Server 2013 integriert: > Sie müssen .NET Framework 4 oder .NET Framework 4.5 installieren, auf dem Entwicklungscomputer installiert und für die Bereitstellung Computer. Um zu bestimmen, ob die richtige Version installiert ist, öffnen Sie **Programme und Funktionen** in der Windows-Systemsteuerung. > Visual Studio 2012 installiert und .NET Framework 4.5 verwendet. Wenn Sie ein Visual Studio-Projekt erstellen, können Sie **.NET Framework 4.0** oder **NET Framework 4.5** in der Dropdown-Liste im Dialogfeld **Neues Projekt** auswählen. Sie können auch das **Zielframework** auf der Registerkarte **Anwendung** des Fensters **Eigenschaften** Projekt auswählen. > Können Visual Studio 2010 für Anwendungen, die die CSOM oder die PSI verwenden und für Project Aufgabenbereichs-apps. Visual Studio 2010 enthält jedoch nicht die Office-Add-ins Vorlagen, Office-Entwicklungstools oder SharePoint-Entwicklungstools für Office 2013. Informationen zum Herunterladen von Visual Studio 2012 und dem Webplattform-Installer (WebPI), die den Office und SharePoint-Entwicklungstools enthält, finden Sie [Downloads für Apps für Office und SharePoint](https://msdn.microsoft.com/office/apps/fp123627). > Es wird empfohlen, dass beim Entwickeln benutzerdefinierter Lösungen in einer testumgebung. Bei der Entwicklung von Lösungen für die aktuelle builds von Project Server 2013 und Project 2013, sie sollten mit aktualisierten Verweise erneut kompiliert werden, und möglicherweise zusätzliche Änderungen, spätere Versionen entwickelt. Lösungen für jede Vorabversion entwickelt wurden, funktionieren möglicherweise nicht mit die endgültige Produktversion. 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="pj15_Welcome_AR"> </a>
@@ -125,19 +125,19 @@ Der Abschnitt **Konzept und Anleitungen** enthält Folgendes:
     
 - [Project 2013 SDK-Download](https://www.microsoft.com/en-us/download/details.aspx?id=30435%20)
     
-- [SharePoint Server 2013-Clientkomponenten – SDK](http://www.microsoft.com/en-us/download/details.aspx?id=35585)
+- [SharePoint Server 2013-Clientkomponenten – SDK](https://www.microsoft.com/en-us/download/details.aspx?id=35585)
     
-- [Project für Entwickler](http://msdn.microsoft.com/project)
+- [Project für Entwickler](https://msdn.microsoft.com/project)
     
-- [Office-Entwicklerdokumentation](http://msdn.microsoft.com/office)
+- [Office-Entwicklerdokumentation](https://msdn.microsoft.com/office)
     
-- [Erste Schritte bei der Entwicklung für Project 2010](http://msdn.microsoft.com/en-us/library/gg607685.aspx)
+- [Erste Schritte bei der Entwicklung für Project 2010](https://msdn.microsoft.com/library/gg607685.aspx)
     
-- [Dokumentkonventionen](http://msdn.microsoft.com/library/6b38829f-1a9d-4fb6-ad3b-01182628080a.aspx)
+- [Dokumentkonventionen](https://msdn.microsoft.com/library/6b38829f-1a9d-4fb6-ad3b-01182628080a.aspx)
     
-- [Barrierefreiheit in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj841103.aspx)
+- [Barrierefreiheit in SharePoint 2013](https://msdn.microsoft.com/library/jj841103.aspx)
     
-- [Eingabehilfen in Microsoft Office 365](http://www.microsoft.com/enable/products/office365/)
+- [Eingabehilfen in Microsoft Office 365](https://www.microsoft.com/enable/products/office365/)
     
 - [Anmerkung zur Microsoft online-Datenschutz](https://privacy.microsoft.com/en-us/privacystatement)
     

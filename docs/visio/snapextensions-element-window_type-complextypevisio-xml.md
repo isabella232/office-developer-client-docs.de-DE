@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7a12ae10-6aa4-c845-5ede-1c14c6dac80f
 description: Gibt an, ob eine Einstellung für bestimmte Snap-In-Erweiterung aktiviert oder für das aktive Fenster deaktiviert ist. Der Wert kann die Summe der Werte in der folgenden Tabelle entsprechen.
-ms.openlocfilehash: 0fe9ce4060fbd6366a188e17ed716cb74034f375
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 57fde520d3dc8e0582c0062a599d5f38a73169b4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798144"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394405"
 ---
 # <a name="snapextensions-element-windowtype-complextype-visio-xml"></a>SnapExtensions-Element (Window_Type ComplexType) ("Visio XML")
 
 Gibt an, ob eine Einstellung für bestimmte Snap-In-Erweiterung aktiviert oder für das aktive Fenster deaktiviert ist. Der Wert kann die Summe der Werte in der folgenden Tabelle entsprechen.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapExtensions_Type](snapextensions_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Windows.Xml  <br/> |
    
@@ -52,7 +52,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert des **SnapExtensions** -Elements kann die Summe der Werte in der folgenden Tabelle werden. 
   

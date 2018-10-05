@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 949448fd-0f85-b56a-945e-1da0e48609e8
 description: Gibt eine Position im Zieldokument an, mit der eine Verknüpfung hergestellt werden kann.
-ms.openlocfilehash: 0509b9b6a708924b5aeb69f16f3f4cd99573cc0c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 092a53bd7c9d5adb77ed35f3e2ef53888bd6ebea
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798218"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395266"
 ---
 # <a name="subaddress-cell-hyperlinks-section"></a>SubAddress Cell (Hyperlinks Section)
 
@@ -22,7 +22,7 @@ Gibt eine Position im Zieldokument an, mit der eine Verknüpfung hergestellt wer
   
 ## <a name="remarks"></a>Bemerkungen
 
-Angenommen, wenn die Zelle Address "Drawing1.vsdx" ist, kann die Zelle SubAddress ein Seitenname wie "Seite 3" angeben. Wenn die Zelle Address der Microsoft Excel-Datei "Samples.xlsx" ist, kann der Wert dieser Zelle ein Arbeitsblatt oder einen Bereich in einem Arbeitsblatt, z. B. "Microsoft Excel-Arbeitsblattfunktionen" oder "Sheet1! sein A1: D10 ". Wenn die Zelle Address "http://www.microsoft.com/office/", kann der Wert dieser Zelle einen benannten Anker innerhalb des Dokuments, z. B. "Solutions" sein.
+Angenommen, wenn die Zelle Address "Drawing1.vsdx" ist, kann die Zelle SubAddress ein Seitenname wie "Seite 3" angeben. Wenn die Zelle Address der Microsoft Excel-Datei "Samples.xlsx" ist, kann der Wert dieser Zelle ein Arbeitsblatt oder einen Bereich in einem Arbeitsblatt, z. B. "Microsoft Excel-Arbeitsblattfunktionen" oder "Sheet1! sein A1: D10 ". Wenn die Zelle Address "https://www.microsoft.com/office/", kann der Wert dieser Zelle einen benannten Anker innerhalb des Dokuments, z. B. "Solutions" sein.
   
 Sie können den Wert dieser Zelle auch im Dialogfeld **Hyperlinks** festlegen (klicken Sie dazu auf der Registerkarte **Einfügen** in der Gruppe **Hyperlinks** auf **Hyperlink**).
   

@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: a04acf17-4b2d-458e-9852-b6074acac096
 description: 'Zuletzt geändert: 18 Juli 2013'
-ms.openlocfilehash: c74257b84636952b26c5a624f4f7f76f66be9149
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: edb67fde04a3aa27713c3de47a9a0e7f01eb4b97
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566922"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399553"
 ---
 # <a name="registering-services-and-service-providers-in-mapisvcinf"></a>Registrieren von Diensten und Dienstanbietern in MapiSvc.inf
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Installieren einen neuen Anbieter auf einem System erfordert die Aktualisierung der Datei "MapiSvc.inf" So zeigen Sie auf den neuen Anbieter. Standardeigenschaften festlegen während der Konfiguration, die Folgendes enthalten, MAPI zu informieren, wo der Anbieter Dynamic Link Library (DLL) zu finden:
   
@@ -43,11 +43,11 @@ In einigen Fällen in einem Speicheranbieter generieren Sie mithilfe der **WrapS
 > [!IMPORTANT]
 > Wenn Sie vollständige Pfade in MapiSvc.inf verwenden, müssen Sie denselben Pfad in etwaigen Aufrufen **WrapStoreEntryID**verwenden. 
   
-Darüber hinaus kann der Pfad, den Sie verwenden in und aus Unicode mithilfe der von der Funktion [GetACP](http://msdn.microsoft.com/en-us/library/windows/desktop/dd318070%28v=vs.85%29.aspx/) bereitgestellte Codepage konvertiert werden soll. 
+Darüber hinaus kann der Pfad, den Sie verwenden in und aus Unicode mithilfe der von der Funktion [GetACP](https://msdn.microsoft.com/library/windows/desktop/dd318070%28v=vs.85%29.aspx/) bereitgestellte Codepage konvertiert werden soll. 
   
 > [!CAUTION]
-> Sie werden Fehler bemerken, wenn Sie einen Pfad auswählen, der Zeichen enthält, die eine solche eine Schleife durch die Funktionen [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/windows/desktop/dd319072%28v=vs.85%29.aspx/) und [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/windows/desktop/dd374130%28v=vs.85%29.aspx/) überstehen kann nicht. 
+> Sie werden Fehler bemerken, wenn Sie einen Pfad auswählen, der Zeichen enthält, die eine solche eine Schleife durch die Funktionen [MultiByteToWideChar](https://msdn.microsoft.com/library/windows/desktop/dd319072%28v=vs.85%29.aspx/) und [WideCharToMultiByte](https://msdn.microsoft.com/library/windows/desktop/dd374130%28v=vs.85%29.aspx/) überstehen kann nicht. 
   
-Für diese Funktionalität veranschaulicht im [Beispiel umgebrochen PST](http://ol2010mapisamples.codeplex.com/) auf CodePlex wurde überarbeitet – die relevante Funktionalität in **MergeWithMapiSvc** und **GenerateProviderPath**ist.
+Für diese Funktionalität veranschaulicht im [Beispiel umgebrochen PST](https://ol2010mapisamples.codeplex.com/) auf CodePlex wurde überarbeitet – die relevante Funktionalität in **MergeWithMapiSvc** und **GenerateProviderPath**ist.
   
 

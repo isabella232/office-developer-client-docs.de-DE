@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: b1ee2533-8077-4976-846b-d42d148bf8c6
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: d65ccec0ab270a59252c8a3ae94bdeca839fa807
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c0d67d10d54591de926724cbf594a44f17e9ea14
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582364"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397100"
 ---
 # <a name="implementing-mapi-objects"></a>Implementieren von MAPI-Objekten
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI-Objekten mithilfe von C++-Klassen oder C-Datenstrukturen, abhängig von der Sprache implementiert werden können und die API Einrichten eines Clients oder -Dienstanbieter verwendet. Dienstanbieter können mit der MAPI-Dienst in C oder C++ geschrieben werden. Clientanwendungen können auch C oder C++ verwenden. Wenn möglich, sollten Clients und -Dienstanbieter, die die objektorientierte Programmierschnittstelle verwenden C++ verwenden. 
   
@@ -29,7 +29,7 @@ Entwickler können Microsoft Visual Studio und Drittanbieter-Entwicklungstools z
   
 Wenn ein MAPI-Objekt implementiert wird, wird ein Client oder Dienstanbieter Code für alle Schnittstellenmethoden, Code für privaten Methoden, die speziell für die Implementierung und Code zur Unterstützung von private Datenmember zur Aufrechterhaltung von Statusinformationen erstellt. Der Code für die Schnittstellenmethoden muss die Spezifikationen von MAPI befolgen, die Erwartetes Verhalten zu dokumentieren. 
   
-Es gibt viele Makros in die Headerdatei Mapidefs.h und OLE-Headerdateien, mit denen Clients und -Dienstanbieter in beiden Sprachen können sie deren Definitionen von MAPI-Objekten zu unterstützen. Beispielsweise ist ein Makro so definieren Sie die Methoden des jeweils die MAPI-Schnittstellen. Das Makro so definieren Sie die Methoden für die [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle in Mapidefs.h wird wie folgt angezeigt: 
+Es gibt viele Makros in die Headerdatei Mapidefs.h und OLE-Headerdateien, mit denen Clients und -Dienstanbieter in beiden Sprachen können sie deren Definitionen von MAPI-Objekten zu unterstützen. Beispielsweise ist ein Makro so definieren Sie die Methoden des jeweils die MAPI-Schnittstellen. Das Makro so definieren Sie die Methoden für die [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle in Mapidefs.h wird wie folgt angezeigt: 
   
 ```cpp
 #define MAPI_IUNKNOWN_METHODS(IPURE)          \

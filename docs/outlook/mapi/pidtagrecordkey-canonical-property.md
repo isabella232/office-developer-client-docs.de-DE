@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a12fb9a2-799d-4112-b26c-4b2854c47cc2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9add9246cdfb22f7c5ad579f425932f49d4a9ecd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7a3ae7db1fb97e97f7d0939b67f139af62477bf7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581244"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401699"
 ---
 # <a name="pidtagrecordkey-canonical-property"></a>PidTagRecordKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen binären vergleichbaren eindeutigen Bezeichner für ein bestimmtes Objekt an.
   
@@ -34,7 +34,7 @@ Enthält einen binären vergleichbaren eindeutigen Bezeichner für ein bestimmte
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |ID-Eigenschaften  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft erleichtert das Auffinden Verweise auf ein Objekt, wie eine Zeile in einer Inhaltstabelle suchen. Diese Eigenschaft kann nicht zum Öffnen eines Objekts verwendet werden. Verwenden Sie die Eintrags-ID für diesen Zweck.
   
@@ -71,15 +71,15 @@ In der folgenden Tabelle werden die wichtigen Unterschiede zwischen **PR_ENTRYID
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
     

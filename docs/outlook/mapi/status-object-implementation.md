@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 48fd3e28-c2d2-474d-9487-5e2f08ca7319
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e019ad8d0063514cd41017b459cc701c45c22a2e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e97efb70716ffbd7fa98f980ce8520cfcb988532
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569596"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392403"
 ---
 # <a name="status-object-implementation"></a>Implementierung der Status-Objekts
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Alle-Dienstanbieter müssen ein Statusobjekt implementieren und übermitteln Sie Eigenschaften aus der Sitzung Status-Tabelle. Sie können eine oder mehrere Zeilen in der Statustabelle, abhängig von der Anzahl der Ressourcen einschließen, die Sie steuern. Ein Transportdienstes sollte beispielsweise eine Zeile in der Statustabelle "für jeden Nachrichtenwarteschlange erstellen, die er verwaltet. Wenn Änderungen auftreten, muss die Tabellenzeile geeigneten Status aktualisiert werden. Status-Objekte werden implementiert, um Zugriff auf Informationen in der Tabelle "Status" sowie zu weiteren Informationen, die nicht in der Tabelle enthalten zu ermöglichen.
   
@@ -31,7 +31,7 @@ Alle-Dienstanbieter müssen ein Statusobjekt implementieren und übermitteln Sie
           
       2. Erstellen eines neuen Status-Objekts.
           
-      3. Speichern Sie einen Verweis auf das Profilabschnitt in Ihres Anbieters Status-Objekt, und rufen Sie Profilabschnitt [IUnknown:: AddRef](http://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) -Methode, um erhöht den Referenzzähler. 
+      3. Speichern Sie einen Verweis auf das Profilabschnitt in Ihres Anbieters Status-Objekt, und rufen Sie Profilabschnitt [IUnknown:: AddRef](https://msdn.microsoft.com/library/b4316efd-73d4-4995-b898-8025a316ba63%28Office.15%29.aspx) -Methode, um erhöht den Referenzzähler. 
           
       4. Speichern Sie einen Verweis auf das Anmeldeobjekt in Ihres Anbieters Status-Objekt, und rufen Sie das Anmeldeobjekt **IUnknown:: AddRef** -Methode, um den Referenzzähler zu erhöhen. 
           

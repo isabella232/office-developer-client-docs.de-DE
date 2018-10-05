@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e518830b-0aaa-4ce4-a85a-07e4f00750a9
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 70db0b0a62568cc499cf915634756bb422ae82ca
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4e25dad1e04927e10af38cdfbf8f30c9bd04234b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567195"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395175"
 ---
 # <a name="shutting-down-a-service-provider"></a>Herunterfahren eines Dienstanbieters
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Wenn ein Client die [IMAPISession::Logoff](imapisession-logoff.md) -Methode ruft, um die Sitzung zu beenden und alle aktiven-Dienstanbieter heruntergefahren, ruft MAPI wiederum die folgenden Methoden: 
   
@@ -33,7 +33,7 @@ Diese Methoden haben ähnliche Implementierungen. Die wichtigsten Aufgaben, die 
   
 - Veröffentlichen alle geöffneten Objekte, einschließlich Unterobjekte und Status-Objekte.
     
-- Aufrufen das Support-Objekt [IUnknown](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode, um die Anzahl der Verweise zu verringern. 
+- Aufrufen das Support-Objekt [IUnknown](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode, um die Anzahl der Verweise zu verringern. 
     
 - Entfernen alle registrierten [MAPIUID](mapiuid.md) -Strukturen Ihres Anbieters. 
     

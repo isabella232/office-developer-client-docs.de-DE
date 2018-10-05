@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 265028b7-a583-f6ba-0214-5a4322f98f35
 description: Initialisiert ein IOlkApptRebaser-Objekt für die Verwendung in Neuzuordnen Termine im Outlook-Kalender.
-ms.openlocfilehash: fec0407c3f129290d03f9b26b0b3f072a229b003
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 33ad47d59ee2ca1b2461f730494f3466b9f8b54a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790953"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397541"
 ---
 # <a name="hrcreateapptrebaser"></a>HrCreateApptRebaser
 
@@ -22,7 +22,7 @@ Initialisiert ein [IOlkApptRebaser](iolkapptrebaser.md) -Objekt für die Verwend
 
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |tzmovelib.h  <br/> |
+|Headerdatei:  <br/> |tzmovelib.h  <br/> |
 |Implementiert von:  <br/> |tzmovelib.dll  <br/> |
 |Aufgerufen von:  <br/> |MAPI-Clientanwendungen  <br/> |
 |Zeigertyp:  <br/> |**LPHRCREATEAPPTREBASER** <br/> |
@@ -106,7 +106,7 @@ pTZMissing
     
 _ppError_
   
-> [out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält. NULL, wenn keine erweiterten Fehlerinformationen erwünscht ist. Mit [MAPIFreeBuffer](http://msdn.microsoft.com/library/9412594f-8acc-4c7e-a668-4ec1da0ad9cf%28Office.15%29.aspx)frei. 
+> [out] Ein Zeiger auf einen Zeiger auf eine **MAPIERROR** -Struktur, die Angaben zu Version, Komponente und Kontext für den Fehler enthält. NULL, wenn keine erweiterten Fehlerinformationen erwünscht ist. Mit [MAPIFreeBuffer](https://msdn.microsoft.com/library/9412594f-8acc-4c7e-a668-4ec1da0ad9cf%28Office.15%29.aspx)frei. 
     
 _ppApptRebase_
   
@@ -118,9 +118,9 @@ S_OK zurück, wenn der Aufruf erfolgreich war; andernfalls einen Fehlercode.
   
 ## <a name="remarks"></a>Anmerkungen
 
-Wenn [GetProcAddress](http://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx) für die Adresse des dieser Funktion in tzmovelib.dll suchen, geben Sie **HrCreateApptRebaser@44** als den Namen der Prozedur. Nicht alle der Werte sind gültig in Kombination mit anderen. 
+Wenn [GetProcAddress](https://msdn.microsoft.com/library/a0d7fc09-f888-4f46-a571-d3719a627597%28Office.15%29.aspx) für die Adresse des dieser Funktion in tzmovelib.dll suchen, geben Sie **HrCreateApptRebaser@44** als den Namen der Prozedur. Nicht alle der Werte sind gültig in Kombination mit anderen. 
   
-Weitere Informationen zu den verschiedenen Optionen finden Sie im Abschnitt "Glossar mit Befehlszeilenoptionen für die Outlook-Zeitzone Aktualisierungstool" in [KB 931667: wie Adresse, Zeitzone Änderungen mithilfe der Zeit Zeitzonendaten für Microsoft Office Outlook](http://support.microsoft.com/kb/931667/en-us).
+Weitere Informationen zu den verschiedenen Optionen finden Sie im Abschnitt "Glossar mit Befehlszeilenoptionen für die Outlook-Zeitzone Aktualisierungstool" in [KB 931667: wie Adresse, Zeitzone Änderungen mithilfe der Zeit Zeitzonendaten für Microsoft Office Outlook](https://support.microsoft.com/kb/931667/en-us).
   
 ## <a name="see-also"></a>Siehe auch
 

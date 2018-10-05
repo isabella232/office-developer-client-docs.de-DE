@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 09bd3bdf-28d6-432c-9213-562a9a271adc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8ef6117557b504678012b79e2b89c13bdaf6b787
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7173caa7a31bc3ad11a4785b6a1498aba139de7c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571486"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396022"
 ---
 # <a name="pidtagreporttext-canonical-property"></a>PidTagReportText (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Optionalen Text für einen Bericht generiert, die für die messaging-System enthält.
   
@@ -34,7 +34,7 @@ Optionalen Text für einen Bericht generiert, die für die messaging-System enth
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Nachricht  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 In der Regel der Text in diese Eigenschaften wird als Antwort auf eine Übermittlung oder Unzustellbarkeitsbericht oder eine Lese- oder nonread aus dem zugrunde liegenden messaging-System empfangen Bericht generiert, ist jedoch nicht selbst Text, der mit diesem System übertragen worden ist. 
   
@@ -42,11 +42,11 @@ In der Regel der Text in diese Eigenschaften wird als Antwort auf eine Übermitt
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
     

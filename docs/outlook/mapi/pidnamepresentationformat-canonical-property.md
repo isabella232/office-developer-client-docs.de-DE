@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: dcc7c79a-5036-4e62-bb54-6fe952acbddb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f71f19db1983045c2f31b3bf1980f1780c666955
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b15ab39bac23a659626175b1bdae11a85ef02861
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590729"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399221"
 ---
 # <a name="pidnamepresentationformat-canonical-property"></a>PidNamePresentationFormat (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt das Präsentationsformat der Datei, die an das Dokument angefügt ist.
   
@@ -39,11 +39,11 @@ Gibt das Präsentationsformat der Datei, die an das Dokument angefügt ist.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXODOC]](http://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
+[[MS-OXODOC]](https://msdn.microsoft.com/library/103007c8-5066-4bed-84e3-4465907af098%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die in Dokumenten zulässig sind.
     

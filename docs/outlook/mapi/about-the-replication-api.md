@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 5133045a-b1e2-7728-5cd5-6d85eb940cf9
 description: 'Letzte Änderung: Montag, 25. Juni 2012'
-ms.openlocfilehash: 272d4147d60df53ef30a668faa8abe89f96cd654
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 532c01d6885e72753067b2d30bf2bd5f88207176
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582322"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396057"
 ---
 # <a name="about-the-replication-api"></a>Informationen über die Replikations-API
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Replikation-API bietet die Funktionalität für einen Anbieter für MAPI-Nachricht anmelden zum Synchronisieren von Microsoft Outlook 2013 oder Microsoft Outlook 2010 Elemente zwischen einem Server und einem privaten PST-basierten lokalen Speicher, der für diesen Anbieter erstellt wird. 
   
@@ -30,7 +30,7 @@ Um die Replikation-API verwenden, muss ein Anbieter für MAPI-Nachricht Anmelden
 
 Die **IOSTX** -Schnittstelle ist die primäre Schnittstelle, die in der Replikation API Synchronisierung ausgeführt wird. **IOSTX** verschiebt den lokalen Speicher durch eine Reihe von Staaten, Abrufen von Informationen zum Änderungen im lokalen Speicher in jedem Status als auch darüber informiert den lokalen Speicher von Änderungen auf dem Server. Die Replikation-API gibt auch viele Datenstrukturen, die die Synchronisierung unterstützen. 
   
-Ein Anbieter verwendet als Client für diese API die Replikation-API zur Text fließt um die lokalen Speicher und die Zustände, Navigation, pushen von Änderungen an den Server auf dem lokalen Speicher (beispielsweise Änderungen an der Ordnerhierarchie oder das Hinzufügen neuer Elemente), und das auch abrufen Informationen zu Änderungen auf dem Server und diese Informationen an die **IOSTX** -Schnittstelle bereitstellen. Die Schnittstelle **IOSTX** nimmt inkrementelle Änderung Synchronisierung (ICS) von Microsoft Exchange Server bereitgestellt. Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx). Über **IOSTX**verwendet der Client ICS überwachen und synchronisieren inkrementelle Änderungen an der Hierarchie oder Inhalt in einem lokalen Speicher. 
+Ein Anbieter verwendet als Client für diese API die Replikation-API zur Text fließt um die lokalen Speicher und die Zustände, Navigation, pushen von Änderungen an den Server auf dem lokalen Speicher (beispielsweise Änderungen an der Ordnerhierarchie oder das Hinzufügen neuer Elemente), und das auch abrufen Informationen zu Änderungen auf dem Server und diese Informationen an die **IOSTX** -Schnittstelle bereitstellen. Die Schnittstelle **IOSTX** nimmt inkrementelle Änderung Synchronisierung (ICS) von Microsoft Exchange Server bereitgestellt. Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx). Über **IOSTX**verwendet der Client ICS überwachen und synchronisieren inkrementelle Änderungen an der Hierarchie oder Inhalt in einem lokalen Speicher. 
   
 ## <a name="the-ipstx-interface"></a>Die IPSTX-Schnittstelle
 
@@ -74,7 +74,7 @@ Datentypen:
     
 - **[SYNCCONT](synccont.md)**
     
-- **[SYNCHRONISIERUNGSSTATUS](syncstate.md)**
+- **[SYNCSTATE](syncstate.md)**
     
 - **[UPDEL](updel.md)**
     

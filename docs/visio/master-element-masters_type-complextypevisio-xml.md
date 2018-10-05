@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c102fd71-c621-2bde-9fbb-8e9203fdf31e
 description: Enthält Elemente, die ein Master-Shape für das Dokument zu definieren.
-ms.openlocfilehash: 51c5f0ad8bee5000e981fcfd4d15e2e49f2bda3b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f6effa521b7c5ea69d41b6770ee2dbef61af097c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797452"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400488"
 ---
 # <a name="master-element-masterstype-complextype-visio-xml"></a>Master-Element (Masters_Type ComplexType) ("Visio XML")
 
 Enthält Elemente, die ein Master-Shape für das Dokument zu definieren.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Master_Type](master_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Masters.Xml  <br/> |
    
@@ -67,7 +67,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |Name  <br/> |XSD: String  <br/> |Optional  <br/> |Der Name des Elements.  <br/> |Werte des Typs xsd: String.  <br/> |
 |NameU  <br/> |XSD: String  <br/> |Optional  <br/> |Der universelle Name des Elements.  <br/> |Werte des Typs xsd: String.  <br/> |
 |PatternFlags  <br/> |XSD:unsignedShort  <br/> |Optional  <br/> |Bestimmt, ob ein Master-Shape als benutzerdefiniertes Muster verhält.  <br/> |Werte des Typs Xsd:unsignedShort.  <br/> |
-|Prompt  <br/> |XSD: String  <br/> |Optional  <br/> |Das Tool und die Statusleiste Tipp Aufforderung für das Element.  <br/> |Werte des Typs xsd: String.  <br/> |
+|Eingabeaufforderung  <br/> |XSD: String  <br/> |Optional  <br/> |Das Tool und die Statusleiste Tipp Aufforderung für das Element.  <br/> |Werte des Typs xsd: String.  <br/> |
 |UniqueID  <br/> |XSD: String  <br/> |Optional  <br/> |Eine GUID, die das Master-Shape innerhalb des Dokuments identifiziert.  <br/> |Werte des Typs xsd: String.  <br/> |
    
 

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 891851e1-e4a4-4c20-a26c-7223bcca35f7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 92008a387bb0130207af012df209a3aa6881d40e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7c444485c3a443694e2902343a02da5605bde39f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593172"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401657"
 ---
 # <a name="pidtagextendedrulemessagecondition-canonical-property"></a>PidTagExtendedRuleMessageCondition (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält Informationen über keine benannten Eigenschaften auf, die in erweiterten regelbedingungen enthalten sind.
   
@@ -34,21 +34,21 @@ Enthält Informationen über keine benannten Eigenschaften auf, die in erweitert
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Regeln  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft muss auf eine Nachricht FAI festgelegt werden. Es dient als **PR_RULE_CONDITION** ([PidTagRuleCondition](pidtagrulecondition-canonical-property.md)), aber enthält zusätzliche Informationen zu den benannten Eigenschaften verwendet. Alle String-Werten, die in einem beliebigen Teil des dieser Bedingung-Eigenschaftenwert enthalten sind, muss im Unicode-Format.
   
-Informationen zum Format dieser binäre Eigenschaft finden Sie unter [[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx).
+Informationen zum Format dieser binäre Eigenschaft finden Sie unter [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
+[[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)
   
 > Eingehende e-Mail-Nachrichten auf einem Server bearbeitet.
     

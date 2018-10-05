@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6e91b765-a207-4d8c-8763-5d643ca4d0c0
 description: Outlook Social Connector (OSC) unterstützt die Anzeige von Informationen aus einem sozialen Netzwerk zu einer Person auf der Visitenkarte oder im Bereich Personen Outlook. SharePoint Server, SharePoint-Arbeitsbereich Lync-Clients und alle Office-Clientanwendungen, die Anwesenheitsinformationen unterstützen-Unterstützung der Visitenkarte.
-ms.openlocfilehash: 9e843d8013b329a88de88232f16740edae77c1d1
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0d6881c5d596519422d01ca61a00b1a68e610f2c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796088"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399158"
 ---
 # <a name="synchronizing-friends-and-activities"></a>Synchronisieren von Freunden und Aktivitäten
 
@@ -25,7 +25,7 @@ Bereich Personen Outlook zeigt Informationen über eine Person, die ein Absender
   
 Die Visitenkarte oder ein Bereich Personen aktuelle Informationen für die ausgewählte Person anzuzeigen synchronisiert die OSC solche Informationen über den OSC-Anbieter und eine andere Form des Zwischenspeicherns. Diese Synchronisierung hängt die OSC-Anbieter, die auf dem Clientcomputer installiert sind, die für Kommunikation über soziale Netzwerke, dass Sie sich angemeldet haben, über die OSC-Anbieter und der Synchronisierungsmodus, dass aller die OSC-Anbieter für diese sozialen Netzwerken unterstützt.
   
-Die OSC unterstützt Synchronisieren von Freunden, nicht Freunde und Aktivitäten für Freunde und nicht Freunde auf unterschiedliche Weise: Synchronisierung, bedarfsgesteuerten Synchronisierung und hybride Synchronisierung zwischengespeichert. Der Hauptunterschied zwischen diesen Modi der Synchronisierung ist, wo das osc bilden die Daten gespeichert werden, ob sie in einem Ordner in Outlook-Standardspeicher des Benutzers oder im Arbeitsspeicher auf dem Computer des Benutzers ist. In jedem Fall wie in diesem Thema erwähnt besteht eine Standard-Zeit, die die Daten in den Arbeitsspeicher bleiben, bevor die Daten aktualisiert werden. In einigen Fällen kann die minimale Zeitspanne mithilfe von Gruppenrichtlinien angepasst werden. Weitere Informationen zu Gruppenrichtlinien, die das Verhalten der die OSC steuern, finden Sie unter [Gewusst wie: Verwalten der Outlook Connector für soziale Netzwerke mithilfe von Gruppenrichtlinien](http://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103).
+Die OSC unterstützt Synchronisieren von Freunden, nicht Freunde und Aktivitäten für Freunde und nicht Freunde auf unterschiedliche Weise: Synchronisierung, bedarfsgesteuerten Synchronisierung und hybride Synchronisierung zwischengespeichert. Der Hauptunterschied zwischen diesen Modi der Synchronisierung ist, wo das osc bilden die Daten gespeichert werden, ob sie in einem Ordner in Outlook-Standardspeicher des Benutzers oder im Arbeitsspeicher auf dem Computer des Benutzers ist. In jedem Fall wie in diesem Thema erwähnt besteht eine Standard-Zeit, die die Daten in den Arbeitsspeicher bleiben, bevor die Daten aktualisiert werden. In einigen Fällen kann die minimale Zeitspanne mithilfe von Gruppenrichtlinien angepasst werden. Weitere Informationen zu Gruppenrichtlinien, die das Verhalten der die OSC steuern, finden Sie unter [Gewusst wie: Verwalten der Outlook Connector für soziale Netzwerke mithilfe von Gruppenrichtlinien](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103).
   
 Beachten Sie, dass ist die ausgewählte Person nicht Mitglied für soziale Netzwerke, die OSC keine Person oder neue Aktivität Informationen für diese Person in der Visitenkarte oder Bereich Personen angezeigt wird.
   
@@ -140,5 +140,5 @@ Die folgenden Informationen gelten für die Windows-Registrierungswerte, die in 
 - [Funktionen XML-Beispiel](capabilities-xml-example.md)  
 - [XML-Code für Funktionen](xml-for-capabilities.md)
 - [Entwickeln eines Providers mit dem OSC-XML-Schema](developing-a-provider-with-the-osc-xml-schema.md)  
-- [Gewusst wie: Verwalten von Outlook Social Connector mithilfe von Gruppenrichtlinien](http://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
+- [Gewusst wie: Verwalten von Outlook Social Connector mithilfe von Gruppenrichtlinien](https://support.microsoft.com/default.aspx?scid=kb%3Ben-US%3B2020103)
 

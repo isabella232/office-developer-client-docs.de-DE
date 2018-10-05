@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 192cdab8-c615-47b9-9f04-a1414eaf0c77
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: efb0812a88ad435c2456a729a6e950b371cc0250
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7e9c3340dfad47a811b56c86e8e6104fb6aac7c2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595349"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400796"
 ---
 # <a name="pidtagnull-canonical-property"></a>PidTagNull (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt einen null-Wert oder die Einstellung einer Eigenschaft oder Array-Speicherplatz reserviert.
   
@@ -34,7 +34,7 @@ Stellt einen null-Wert oder die Einstellung einer Eigenschaft oder Array-Speiche
 |Datentyp:  <br/> |PT_NULL  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird verwendet, um Speicherplatz in Arrays von [SPropValue](spropvalue.md) Strukturen zu reservieren. Es wird in ein Array von [SPropTagArray](sproptagarray.md) Strukturen verwendet, anzuweisen, die Methode, um Speicherplatz im zurückgegebenen Array der **SPropValue** Strukturen zu reservieren. Dies ermöglicht berechnete Eigenschaften in eine kostengünstige Möglichkeit gefüllt werden soll. 
   
@@ -44,7 +44,7 @@ Weitere Informationen finden Sie unter [MAPI-Eigenschaft Type Overview](mapi-pro
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die auf Kontakte und persönliche Verteilerlisten zulässig sind.
     

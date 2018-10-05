@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 348555d3-3cd4-4e4a-b5ad-436571c25251
 description: Integrieren Sie Ihre Drittanbieter-Win32-Synchronisierungsclients mit Excel Mobile-, PowerPoint Mobile- und Word Mobile-Office-Anwendungen.
-ms.openlocfilehash: 9f520ad36583a9aa7cd73638fe92158f70d13daf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 83bc6e4cddc17e539b371999fff620c72c595534
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790858"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401167"
 ---
 # <a name="integrate-with-office-from-win32-sync-clients"></a>Integration in Office von Win32-Synchronisierungsclients aus
 
@@ -23,15 +23,15 @@ Für diese Integration muss der Win32-Synchronisierungsclient über ein Synchron
   
 ## <a name="register-as-a-sync-root-provider"></a>Registrieren als Synchronisierungsstammanbieter
 
-Wenn Ihr Synchronisierungsclient nicht als Synchronisierungsstammanbieter registriert ist, behandelt Office Dateien im Synchronisierungsordner wie normale lokale Dateien. Dies bedeutet, dass Office Benutzern Optionen wie "Zu OneDrive verschieben" anbietet, wenn sie versuchen, das Dokument freizugeben. Um dies für Dateien zu vermeiden, die Sie synchronisieren, müssen Sie die Registrierung als Synchronisierungsstammanbieter ausführen. Informationen über das Registrieren finden Sie unter [Integrieren eines Cloud-Speicheranbieters](https://msdn.microsoft.com/de-DE/library/windows/desktop/dn889934%28v=vs.85%29.aspx).
+Wenn Ihr Synchronisierungsclient nicht als Synchronisierungsstammanbieter registriert ist, behandelt Office Dateien im Synchronisierungsordner wie normale lokale Dateien. Dies bedeutet, dass Office Benutzern Optionen wie "Zu OneDrive verschieben" anbietet, wenn sie versuchen, das Dokument freizugeben. Um dies für Dateien zu vermeiden, die Sie synchronisieren, müssen Sie die Registrierung als Synchronisierungsstammanbieter ausführen. Informationen über das Registrieren finden Sie unter [Integrieren eines Cloud-Speicheranbieters](https://msdn.microsoft.com/library/windows/desktop/dn889934%28v=vs.85%29.aspx).
   
 ## <a name="integrate-your-app-into-the-root-node-of-the-navigation-pane"></a>Integrieren der App in den Stammknoten des Navigationsbereichs
 
-Damit Ihr Win32-Synchronisierungsclient im Datei-Explorer und der Windows-Dateiauswahl als Stammknoten im Navigationsbereich angezeigt wird, müssen Sie Ihre App in die Stammebene integrieren. Weitere Informationen dazu finden Sie unter [Integrieren eines Cloud-Speicheranbieters](https://msdn.microsoft.com/de-DE/library/windows/desktop/dn889934%28v=vs.85%29.aspx). 
+Damit Ihr Win32-Synchronisierungsclient im Datei-Explorer und der Windows-Dateiauswahl als Stammknoten im Navigationsbereich angezeigt wird, müssen Sie Ihre App in die Stammebene integrieren. Weitere Informationen dazu finden Sie unter [Integrieren eines Cloud-Speicheranbieters](https://msdn.microsoft.com/library/windows/desktop/dn889934%28v=vs.85%29.aspx). 
   
 ## <a name="add-your-sync-folder-as-a-document-library-optional"></a>Hinzufügen des Synchronisierungsordners als Dokumentbibliothek (optional)
 
-In Office können Benutzer mit einer einzelnen Aktion Dokumente in ihren Dokumentbibliotheken erstellen. Um Ihren Synchronisierungsspeicherort der Dokumentbibliothek hinzuzufügen, verwenden Sie die [SHAddFolderPathToLibrary-Funktion](https://msdn.microsoft.com/de-DE/library/windows/desktop/dd378432%28v=vs.85%29.aspx). 
+In Office können Benutzer mit einer einzelnen Aktion Dokumente in ihren Dokumentbibliotheken erstellen. Um Ihren Synchronisierungsspeicherort der Dokumentbibliothek hinzuzufügen, verwenden Sie die [SHAddFolderPathToLibrary-Funktion](https://msdn.microsoft.com/library/windows/desktop/dd378432%28v=vs.85%29.aspx). 
   
 ## <a name="see-also"></a>Siehe auch
 <a name="bk_addresources"> </a>

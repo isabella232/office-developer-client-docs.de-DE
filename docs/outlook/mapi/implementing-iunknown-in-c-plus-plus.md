@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 68519f6c-fba8-47f5-9401-316e276f770e
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: cd5a14b07888c7a17d550941909b345eff3b0276
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 08f3f3f937320d8a986b2002c761a37f0f749227
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585458"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397835"
 ---
 # <a name="implementing-iunknown-in-c"></a>Implementieren von IUnknown in C++
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementieren die [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx), [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx)und [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methoden des die [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle in C++ ist relativ einfach. Nach einigen standard Überprüfung der Parameter, die übergeben werden, wird eine Implementierung von **QueryInterface** den Bezeichner der angeforderten Schnittstelle anhand der Liste der unterstützten Schnittstellen überprüft. Ist der Bezeichner der angeforderte unterstützt, **AddRef** aufgerufen wird, und der **diesem** Zeiger wird zurückgegeben. Ist der Bezeichner der angeforderte nicht auf die Liste der unterstützten, der Ausgabezeiger auf NULL festgelegt ist, und der Wert des MAPI_E_INTERFACE_NOT_SUPPORTED zurückgegeben. 
+Implementieren die [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx), [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx)und [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methoden des die [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle in C++ ist relativ einfach. Nach einigen standard Überprüfung der Parameter, die übergeben werden, wird eine Implementierung von **QueryInterface** den Bezeichner der angeforderten Schnittstelle anhand der Liste der unterstützten Schnittstellen überprüft. Ist der Bezeichner der angeforderte unterstützt, **AddRef** aufgerufen wird, und der **diesem** Zeiger wird zurückgegeben. Ist der Bezeichner der angeforderte nicht auf die Liste der unterstützten, der Ausgabezeiger auf NULL festgelegt ist, und der Wert des MAPI_E_INTERFACE_NOT_SUPPORTED zurückgegeben. 
   
 Im folgenden Codebeispiel wird veranschaulicht, wie **QueryInterface** in C++ für ein Objekt ein Statusobjekt implementiert werden kann, die eine Unterklasse der ist die [IMAPIStatus: IMAPIProp](imapistatusimapiprop.md) Schnittstelle. **IMAPIStatus** erbt von **IUnknown** über [IMAPIProp: IUnknown](imapipropiunknown.md). Aus diesem Grund, wenn ein Anrufer für alle diese Schnittstellen gefragt werden, kann **diese** der Zeiger zurückgegeben werden, da die Schnittstellen über Vererbung verknüpft sind. 
   

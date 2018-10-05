@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c3bea11c-3197-4060-8672-f1b4bf352112
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 30046bd7982d08d99c5581c27d1616162d904dee
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3aef2fc1038751c9ad6fb97cf347c2dcab114fda
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577107"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399172"
 ---
 # <a name="pidlidhaspicture-canonical-property"></a>PidLidHasPicture (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Anlage Foto für einen Kontakt vorhanden ist.
   
@@ -35,7 +35,7 @@ Gibt an, ob eine Anlage Foto für einen Kontakt vorhanden ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn diese Eigenschaft vorhanden ist und auf TRUE festgelegt ist, enthält der Kontakt Anlagentabelle eine Anlage mit der **PR_ATTACHMENT_CONTACTPHOTO** ([PidTagAttachmentContactPhoto](pidtagattachmentcontactphoto-canonical-property.md))-Eigenschaft auf TRUE festgelegt.
   
@@ -43,11 +43,11 @@ Wenn diese Eigenschaft vorhanden ist und auf TRUE festgelegt ist, enthält der K
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

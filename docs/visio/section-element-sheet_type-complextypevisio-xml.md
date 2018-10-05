@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 2e7e5dcc-f667-a08c-caa0-4b81e3126ef9
 description: Gibt eine Auflistung von verwandten Eigenschaften an.
-ms.openlocfilehash: c729ddd18da7b19499be72a71a9d0666791da207
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e20d076d4e1958cce29554d728b64385c2f8adef
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593522"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394336"
 ---
 # <a name="section-element-sheettype-complextype-visio-xml"></a>Section-Element (Sheet_Type ComplexType) ("Visio XML")
 
@@ -23,7 +23,7 @@ Gibt eine Auflistung von verwandten Eigenschaften an.
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Section_Type](section_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.XML, masters.xml, Master-Shape # .xml, pages.xml, Seite # .xml  <br/> |
    
@@ -54,7 +54,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |**Element**|**Typ**|**Beschreibung**|
 |:-----|:-----|:-----|
 |[Cell](cell-elementvisio-xml.md) <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |Gibt eine einzelne Eigenschaft an.  <br/> |
-|[Row](http://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von **Cell_Type** -Elementen.  <br/> |
+|[Row](https://msdn.microsoft.com/library/c978e3eb-b895-8fb7-e2ba-88c50e57b3db%28Office.15%29.aspx) <br/> |[Row_Type](row_type-complextypevisio-xml.md) <br/> |Gibt eine Auflistung von **Cell_Type** -Elementen.  <br/> |
    
 ### <a name="attributes"></a>Attribute
 
@@ -64,7 +64,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |IX  <br/> |XSD:unsignedInt  <br/> |Optional  <br/> |Gibt den nullbasierten Index des Elements an. Es muss für alle Elemente mit dem gleichen **N** -Attribut des der enthaltenden **Sheet_Type** **Section_Type** eindeutig sein. Es muss größer als das **IX** -Attribut des keinem vorstehenden **Section_Type** -Element mit dem gleichen **N** -Attribut des der enthaltenden **Sheet_Type**sein.  <br/> |Werte des Typs Xsd:unsignedInt.  <br/> |
 |N  <br/> |XSD: String  <br/> |erforderlich  <br/> |Der sprachenunabhängige Name der Properties-Auflistung gibt. Es muss angemessen aller Elemente **Section_Type** des enthaltenden **Sheet_Type** -Elements eindeutig sein, es sei denn, "Geometrie" entspricht. Es muss eine Unterüberschrift in **Abschnitten**gleich sein.  <br/> |Werte des Typs xsd: String.  <br/> |
    
-### <a name="remarks"></a>HinwBemerkungeneise
+### <a name="remarks"></a>Hinweise
 
 **N** -Attribut dieses Elements **im Abschnitt** muss einer der eine begrenzte Auswahl von Werten entsprechen, die **ShapeSheet-** Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für dieses Element **im Abschnitt** zulässig sind. 
   

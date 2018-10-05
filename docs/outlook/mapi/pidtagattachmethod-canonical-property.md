@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 32089213-ef7b-4152-84ab-b44e9911332b
 description: 'Zuletzt geändert: 07 September 2016'
-ms.openlocfilehash: 697f7e8045ca198c2c10b9396f19cb2d7ce8346e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b84549ab31c939b4e6115795916ebd3520a96dbd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583652"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400726"
 ---
 # <a name="pidtagattachmethod-canonical-property"></a>PidTagAttachMethod (kanonische Eigenschaft)
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine benutzerdefinierte MAPI-Konstante darstellt, die den Inhalt einer Anlage zugegriffen werden können wie. 
   
@@ -34,7 +34,7 @@ Enthält eine benutzerdefinierte MAPI-Konstante darstellt, die den Inhalt einer 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft kann genau einen der folgenden Werte aufweisen:
   
@@ -86,7 +86,7 @@ Wenn das OLE-Objekt im OLE 2.0 **IStorage** Format ist, sind die Daten über **P
   
 Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter der *OLE Programmer's Reference* . 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE**ist, ist gescannt nicht in der Nachricht. Stattdessen enthält die **PR_ATTACH_LONG_FILENAME** -Eigenschaft eine absolute URL zu gescannt, der online gespeichert wird. 
   
@@ -94,7 +94,7 @@ Wenn die **PR_ATTACH_METHOD** **ATTACH_BY_WEBREFERENCE**ist, ist gescannt nicht 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

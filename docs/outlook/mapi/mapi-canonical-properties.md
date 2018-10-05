@@ -8,24 +8,24 @@ api_type:
 - COM
 ms.assetid: 29151beb-7436-401a-8072-58d4facd8458
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 82c44f2292400c449ee0f82600c5b596728af7c0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4b017089a675727703de9e2ed4d584e7f77a778a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590435"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401566"
 ---
 # <a name="mapi-canonical-properties"></a>Kanonische MAPI-Eigenschaften
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine kanonische-Eigenschaft ist eine virtuelle Eigenschaft, die ein MAPI-Eigenschaft oder mehrere MAPI-Eigenschaften definiert, mit der gleichen Eigenschaftenbezeichner darstellt. Kanonische Eigenschaften sind nur zur Erleichterung der konsistente Identifizierung der MAPI-Eigenschaften in Diskussionen oder Dokumentation außerhalb Code vorgesehen. Im Gegensatz zu MAPI-defined markierte Eigenschaftennamen sind kanonische Eigenschaftennamen als globale Konstanten in MAPI-Headerdateien nicht definiert.
   
 ## <a name="naming-conventions"></a>Benennungskonventionen
 
-Kanonische Eigenschaftennamen beginnen mit dem Präfix, "Pid", womit "Eigenschaftenbezeichner." Je nachdem, ob die Eigenschaft eine bereichsspezifische-Eigenschaft, eine benannte Eigenschaft durch eine numerische Kennung oder eine benannte Eigenschaft mit einem Zeichenfolgennamen ist, wird das Präfix weiter als "PidTag," qualifiziert "PidLid" und "PidName" fest. Beispielsweise stellt [PidTagAccount](pidtagaccount-canonical-property.md) die markierten Eigenschaften, **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)), **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) und **PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)), die eines Empfängers angeben Kontoname. Die **DispidContacts** -Eigenschaft, eine benannte Eigenschaft an, die einen numerischen Bezeichner hat und den Namen der Kontakte im Zusammenhang mit einer Meldung festlegt, stellt [PidLidContacts](pidlidcontacts-canonical-property.md) dar. und [PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md) stellt "http://schemas.microsoft.com/outlook/phishingstamp," eine benannte Eigenschaft an, die ein Name vom Typ String hat und die Zeichenfolge Markieren von Nachrichten, die wahrscheinlich Phishing sind angibt. 
+Kanonische Eigenschaftennamen beginnen mit dem Präfix, "Pid", womit "Eigenschaftenbezeichner." Je nachdem, ob die Eigenschaft eine bereichsspezifische-Eigenschaft, eine benannte Eigenschaft durch eine numerische Kennung oder eine benannte Eigenschaft mit einem Zeichenfolgennamen ist, wird das Präfix weiter als "PidTag," qualifiziert "PidLid" und "PidName" fest. Beispielsweise stellt [PidTagAccount](pidtagaccount-canonical-property.md) die markierten Eigenschaften, **PR_ACCOUNT** ([PidTagAccount](pidtagaccount-canonical-property.md)), **PR_ACCOUNT_A** ([PidTagAccount](pidtagaccount-canonical-property.md)) und **PR_ACCOUNT_W** ([PidTagAccount](pidtagaccount-canonical-property.md)), die eines Empfängers angeben Kontoname. Die **DispidContacts** -Eigenschaft, eine benannte Eigenschaft an, die einen numerischen Bezeichner hat und den Namen der Kontakte im Zusammenhang mit einer Meldung festlegt, stellt [PidLidContacts](pidlidcontacts-canonical-property.md) dar. und [PidNamePhishingStamp](pidnamephishingstamp-canonical-property.md) stellt "https://schemas.microsoft.com/outlook/phishingstamp," eine benannte Eigenschaft an, die ein Name vom Typ String hat und die Zeichenfolge Markieren von Nachrichten, die wahrscheinlich Phishing sind angibt. 
   
 ## <a name="representing-similar-properties-using-one-canonical-property"></a>Ähnliche Eigenschaften, die mithilfe einer Kanonischer-Eigenschaft darstellt
 
@@ -71,7 +71,7 @@ Wenn Sie kanonische Eigenschaftennamen in Ihrem Code verwenden müssen, müssen 
   
 ## <a name="canonical-property-names-and-exchange-protocol-specifications"></a>Kanonische Eigenschaftsnamen und Exchange-Spezifikationen
 
-Kanonische Namen werden in Microsoft Exchange Server-Spezifikationen verwiesen, die vom Exchange-Server für die Kommunikation mit anderen Microsoft-Produkten verwendet werden. Weitere Informationen zu Nachrichteneigenschaften-Objekt auf die Exchange-Spezifikationen verweist finden Sie unter [[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx).
+Kanonische Namen werden in Microsoft Exchange Server-Spezifikationen verwiesen, die vom Exchange-Server für die Kommunikation mit anderen Microsoft-Produkten verwendet werden. Weitere Informationen zu Nachrichteneigenschaften-Objekt auf die Exchange-Spezifikationen verweist finden Sie unter [[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 

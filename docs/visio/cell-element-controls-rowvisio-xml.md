@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3c04d243-002c-bb00-a4be-0bcb8e156402
 description: Enthält eine Eigenschaft für ein bestimmtes Steuerpunkt eines Shapes definiert.
-ms.openlocfilehash: ff9bd2111b0f5a6544638fb7b33a1a9b797ede7f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ea54865a645486dfba53688278cb380142899d77
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796586"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401272"
 ---
 # <a name="cell-element-controls-row-visio-xml"></a>Zellenelement (Zeile mit Steuerelementen) ("Visio XML")
 
 Enthält eine Eigenschaft für ein bestimmtes Steuerpunkt eines Shapes definiert.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    
@@ -60,14 +60,14 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
 |**Wert**|**Beschreibung**|**Weitere Informationen**|
 |:-----|:-----|:-----|
 |CanGlue  <br/> |Legt fest, ob ein Steuerpunkt an andere Shapes geklebt werden kann.  <br/> |[Zelle "Can Glue" (Abschnitt "Controls")](can-glue-cell-controls-section.md) <br/> |
-|Prompt  <br/> |Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn der Mauszeiger über dem Steuerpunkt eines Shapes platziert wird.  <br/> |[Zelle "Tip" (Abschnitt "Controls")](tip-cell-controls-section.md) <br/> |
+|Eingabeaufforderung  <br/> |Enthält einen beschreibenden Text, der als QuickInfo angezeigt wird, wenn der Mauszeiger über dem Steuerpunkt eines Shapes platziert wird.  <br/> |[Zelle "Tip" (Abschnitt "Controls")](tip-cell-controls-section.md) <br/> |
 |X  <br/> |Stellt die X-Koordinate dar, die die Position des Steuerpunkts eines Shapes in lokalen Koordinaten anzeigt.  <br/> |[Zelle "X" (Abschnitt "Controls")](x-cell-controls-section.md) <br/> |
 |xCon  <br/> |Gibt den Typ des Verhaltens die X-Koordinate des der Steuerpunkt aufweist, wenn dieser verschoben wird.  <br/> |Keine.  <br/> |
 |xDyn  <br/> |Stellt die x-Koordinate für den Verankerungspunkt eines Steuerpunkts in lokalen Koordinaten dar.  <br/> |[Zelle "X Dynamics" (Abschnitt "Controls")](x-dynamics-cell-controls-section.md) <br/> |

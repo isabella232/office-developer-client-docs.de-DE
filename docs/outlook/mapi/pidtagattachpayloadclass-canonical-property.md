@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: bc4de217-8241-45e7-9e97-8f0c1b16691a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d00c1823ba152c20be213f16fe4e3ea3c771a83a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6a84e51325fcb60c54c2f6b42af0c26a0efd3382
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574321"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396617"
 ---
 # <a name="pidtagattachpayloadclass-canonical-property"></a>PidTagAttachPayloadClass (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert eines Felds Kopfzeile MIME-X-Nutzlast-Klasse.
   
@@ -34,7 +34,7 @@ Enthält den Wert eines Felds Kopfzeile MIME-X-Nutzlast-Klasse.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Um den Wert dieser Eigenschaften festzulegen, sollte MIME-Clients ein Kopfzeilenfeld X-Nutzlast-Klasse in eine MIME-Entität geschrieben werden, die als Anlage analysiert werden.
   
@@ -44,11 +44,11 @@ MIME-Leser müssen diese Kopfzeile Feldwert auf den Wert der entsprechenden Eige
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
     

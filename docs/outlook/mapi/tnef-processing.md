@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 4d324fb3-d917-4502-b3a4-179c479deb79
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: e6b3ef7c7eb469a5de909d440e22e522218a41f8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 066ad3dfb64161e326b92fef7774d5b3b9461d8a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569491"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399569"
 ---
 # <a name="tnef-processing"></a>TNEF-Verarbeitung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die folgende Reihe von Aktionen wird beschrieben, wie Transporten TNEF-Methoden zum Verarbeiten von eingehender und ausgehender Nachrichten verwenden.
   
@@ -35,7 +35,7 @@ Die folgende Reihe von Aktionen wird beschrieben, wie Transporten TNEF-Methoden 
     
 5. Verwendung [ITnef: IUnknown](itnefiunknown.md) Schnittstellenmethoden, beschreibt die Positionen der e-Mail-Anlagen im Nachrichtentext Tags einfügen. 
     
-6. Greifen Sie auf den markierten Nachrichtentext über [IStream](http://msdn.microsoft.com/en-us/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System. 
+6. Greifen Sie auf den markierten Nachrichtentext über [IStream](https://msdn.microsoft.com/library/aa380034%28VS.85%29.aspx) -Methoden, und senden Sie sie an die messaging-System. 
     
  **Zum Abrufen von gekapselte Eigenschaften**
   

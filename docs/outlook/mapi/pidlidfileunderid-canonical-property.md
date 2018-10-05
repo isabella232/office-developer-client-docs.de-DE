@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 917431a9-fd90-4b4d-b042-886e3dbf47c0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0a4fdb94877fb9491005fc650c206ffefd3f8b94
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7af30866a5fd2846327223b7a58c6de91f5fef7a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578416"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25397191"
 ---
 # <a name="pidlidfileunderid-canonical-property"></a>PidLidFileUnderId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, wie generieren und den Wert der Eigenschaft **DispidFileUnder** ([PidLidFileUnder](pidlidfileunder-canonical-property.md)) neu berechnen, wenn andere Kontakt benennen Eigenschaften ändern.
   
@@ -35,9 +35,9 @@ Gibt an, wie generieren und den Wert der Eigenschaft **DispidFileUnder** ([PidLi
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Wenn diese Eigenschaft nicht vorhanden ist oder auf einen anderen Wert nicht um einen detaillierten in der folgenden Tabelle oder in [[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)festlegen, können die Anwendung seine eigene Logik für den Wert der **DispidFileUnder** als andere Kontaktnamen Eigenschaften Änderung neu zu berechnen. 
+Wenn diese Eigenschaft nicht vorhanden ist oder auf einen anderen Wert nicht um einen detaillierten in der folgenden Tabelle oder in [[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)festlegen, können die Anwendung seine eigene Logik für den Wert der **DispidFileUnder** als andere Kontaktnamen Eigenschaften Änderung neu zu berechnen. 
   
 In der folgenden Tabelle, die Notation <PropertyName> wird verwendet, um "den Wert von PropertyName" angeben. Wenn der Wert der Eigenschaft **PR_SURNAME** ([PidTagSurname](pidtagsurname-canonical-property.md)) ist "Smith", und der Wert der Eigenschaft **PR_GIVEN_NAME** ([PidTagGivenName](pidtaggivenname-canonical-property.md)) "Peter", dann beträgt beispielsweise "<PidTagGivenName> <PidTagSurname>" gibt die Zeichenfolge "Ben Smith". In der Tabelle "\r" gibt ein Wagenrücklaufzeichen, "\n" gibt ein Zeichen Zeilenvorschub und <space> ein Leerzeichen dar.
   
@@ -68,11 +68,11 @@ In der folgenden Tabelle, die Notation <PropertyName> wird verwendet, um "den We
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

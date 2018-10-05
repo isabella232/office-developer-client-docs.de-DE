@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ec0aac33-624e-48f7-8177-8f7b8db6af7d
 description: Ruft den eindeutigen Bezeichner (UID) für den Benutzerprofildienst-Abschnitt, in dem die Vorgaben Konto gespeichert.
-ms.openlocfilehash: 70e61264e5525f26e9f52e402bc785b544a0b90e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 97f1a858c8f58e13b72b8d5f052b35359581b718
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791195"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25395293"
 ---
 # <a name="propacctpreferencesuid"></a>PROP_ACCT_PREFERENCES_UID
 
@@ -24,14 +24,14 @@ Finden Sie unter [IOlkAccount](iolkaccount.md).
   
 |||
 |:-----|:-----|
-|Bezeichner:  <br/> |0 x 0022  <br/> |
+|Kennung:  <br/> |0 x 0022  <br/> |
 |Der Eigenschaftentyp:  <br/> |PT_BINARY  <br/> |
 |Eigenschafts-Tag:  <br/> |0x00220102  <br/> |
 |Access:  <br/> |Schreibgeschützt.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Mit der **PROP_ACCT_PREFERENCES_UID** Aufrufe [IMAPISupport::OpenProfileSection](http://msdn.microsoft.com/library/cd1fa994-9531-46c4-94e5-505e7f90b884%28Office.15%29.aspx) Profilabschnitt abgerufen, der Konto Voreinstellungen enthält. 
+Mit der **PROP_ACCT_PREFERENCES_UID** Aufrufe [IMAPISupport::OpenProfileSection](https://msdn.microsoft.com/library/cd1fa994-9531-46c4-94e5-505e7f90b884%28Office.15%29.aspx) Profilabschnitt abgerufen, der Konto Voreinstellungen enthält. 
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 7fc438ad-ae26-3632-3444-371537eaecb3
 description: Microsoft InfoPath unterstützt Verschieben von Formularvorlagen von einer Position an eine andere, sie als Anlage einer e-Mail-Nachricht gesendet werden und das Erstellen voll vertrauenswürdiger Formularvorlagen, die digital signiert oder installiert werden.
-ms.openlocfilehash: ea0145eb45f6a03dc8637ba5ec1dc1c80d240006
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 799f2b19bfc4daa4a177d789a811d20ca09e7153
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790838"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396876"
 ---
 # <a name="security-levels-email-deployment-and-remote-form-templates"></a>Sicherheitsstufen, e-Mail-Bereitstellung und Remoteformularvorlagen
 
@@ -82,7 +82,7 @@ In der folgenden Tabelle werden die Bedingungen, die zum Öffnen eines Formulars
   
 |Editor wird geöffnet/meldet einen Fehler|Voll vertrauenswürdig (requireFullTrust="yes")|Domänenvertrauensstellung (trustLevel="Domain" oder leer)|Eingeschränkt (trustLevel="Restricted")|
 |:-----|:-----|:-----|:-----|
-|**Vertrauenswürdig (installiertes oder vertrauenswürdiges Zertifikat)** <br/> |Editor wird mit der Sicherheitsstufe "Voll vertrauenswürdig" geöffnet  <br/> |N/v  <br/> |n/v  <br/> |
+|**Vertrauenswürdig (installiertes oder vertrauenswürdiges Zertifikat)** <br/> |Editor wird mit der Sicherheitsstufe "Voll vertrauenswürdig" geöffnet  <br/> |N/v  <br/> |–  <br/> |
 |**Domänenvertrauensstellung: Clientcomputer** <br/> |Kann nicht geöffnet werden  <br/> |Editor wird geöffnet, auf Domänenebene  <br/> |Editor wird mit der eingeschränkten Sicherheitsstufe geöffnet  <br/> |
 |**Domänenvertrauensstellung: Intranet** <br/> |Kann nicht geöffnet werden  <br/> |Editor wird geöffnet, auf Domänenebene  <br/> |Editor wird mit der eingeschränkten Sicherheitsstufe geöffnet  <br/> |
 |**Domänenvertrauensstellung: Internet** <br/> |Kann nicht geöffnet werden  <br/> |Editor wird geöffnet, auf Domänenebene  <br/> |Editor wird mit der eingeschränkten Sicherheitsstufe geöffnet  <br/> |
@@ -186,7 +186,7 @@ Das folgende Beispiel zeigt, wie eine aktualisierten, signierten Formularvorlage
     
 ### <a name="example-deploying-restricted-form-templates-on-an-extranet"></a>Beispiel: Bereitstellen von eingeschränkt Formularvorlagen in einem extranet
   
-1. Speichern Sie die Domänenformularvorlage auf einer Website, auf dem Microsoft SharePoint Foundation 2010 ausgeführt wird.
+1. Speichern Sie die Domäne-Formularvorlage auf einer Website, auf dem Microsoft SharePoint Foundation 2010 ausgeführt wird.
     
 2. Ändern Sie die Sicherheitsstufe der Formularvorlage in Eingeschränkt.
     
@@ -228,7 +228,7 @@ Die Namenswerte entsprechen den Domäneneinstellungen von Internet Explorer. Die
   
 |**Namenswert**|**Block**|**User Interface**|**Zulassen**|
 |:-----|:-----|:-----|:-----|
-|**<ui>Internet</ui>** <br/> |X  <br/> |||
+|**Internet** <br/> |X  <br/> |||
 |**Intranet** <br/> ||X  <br/> ||
 |**Clientcomputer** <br/> |||X  <br/> |
 |**Vertrauenswürdige Site** <br/> |||X  <br/> |

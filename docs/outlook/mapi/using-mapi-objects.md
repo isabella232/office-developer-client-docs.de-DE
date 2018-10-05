@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: e342c1bd-8bee-4b02-a93f-e3941f4716c1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 2b66b450318c802e773c2f2c47e4a39500c582d6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d732efe5276f4756f43b4aca46e1c33d6f103844
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592771"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392844"
 ---
 # <a name="using-mapi-objects"></a>Verwenden von MAPI-Objekten
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Clients und -Dienstanbieter verwenden MAPI-Objekten durch Aufrufen der Methoden in ihren schnittstellenimplementierungen. Dies ist die einzige Möglichkeit, MAPI-Objekten verwendet werden können. Methoden, die von einem Objekt außerhalb einer MAPI-Schnittstelle implementiert sind werden nicht öffentlich zugegriffen. Da ein Objekt Schnittstellen über Vererbung verknüpft sind, kann Benutzer ein Objekt Methoden in der Basis-Schnittstelle oder eines der geerbten Schnittstellen aufrufen, als ob sie die gleiche Benutzeroberfläche angehören. 
   
-Wenn ein Objekt einzeln tätigen einen Anruf an eine Methode, und dieses Objekt durch Vererbung bezogene mehrere Schnittstellen implementiert, muss der Benutzer nicht wissen, welche Schnittstelle die Methode gehört. Der Benutzer kann eine der Methoden auf einer Schnittstelle mit einem einzelnen Zeiger auf das Objekt aufrufen. Die folgende Abbildung zeigt, wie eine Clientanwendung ein Folder-Objekt verwendet. Folder-Objekten Implementieren der [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) -Schnittstelle, die von [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) indirekt über erbt [IMAPIProp: IUnknown](imapipropiunknown.md) und [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md). Ein Client kann eine der Methoden **IMAPIProp** wie [IMAPIProp::GetProps](imapiprop-getprops.md), und eine der Aufrufen der [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) Methoden, wie [IMAPIFolder::CreateMessage](imapifolder-createmessage.md), auf die gleiche Weise mit dem gleichen Objektzeiger. Ein Client ist nicht kennen oder betroffenen durch die Tatsache, dass diese Anrufe zu verschiedenen Schnittstellen gehören.
+Wenn ein Objekt einzeln tätigen einen Anruf an eine Methode, und dieses Objekt durch Vererbung bezogene mehrere Schnittstellen implementiert, muss der Benutzer nicht wissen, welche Schnittstelle die Methode gehört. Der Benutzer kann eine der Methoden auf einer Schnittstelle mit einem einzelnen Zeiger auf das Objekt aufrufen. Die folgende Abbildung zeigt, wie eine Clientanwendung ein Folder-Objekt verwendet. Folder-Objekten Implementieren der [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) -Schnittstelle, die von [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) indirekt über erbt [IMAPIProp: IUnknown](imapipropiunknown.md) und [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md). Ein Client kann eine der Methoden **IMAPIProp** wie [IMAPIProp::GetProps](imapiprop-getprops.md), und eine der Aufrufen der [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) Methoden, wie [IMAPIFolder::CreateMessage](imapifolder-createmessage.md), auf die gleiche Weise mit dem gleichen Objektzeiger. Ein Client ist nicht kennen oder betroffenen durch die Tatsache, dass diese Anrufe zu verschiedenen Schnittstellen gehören.
   
 **Kundenverwendung eines Ordnerobjekts**
   
@@ -33,7 +33,7 @@ Bei diesen anrufen übersetzen in Code unterschiedlich, je nachdem, ob der Clien
     
 - Aufrufen einer API-Funktion.
     
-- Aufrufen der [QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode für das Zielobjekt. 
+- Aufrufen der [QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode für das Zielobjekt. 
     
 MAPI bietet mehrere Methoden und API-Funktionen, die Zeiger auf schnittstellenimplementierungen zurückgeben. Clients können beispielsweise die [IMAPISession::GetMsgStoresTable](imapisession-getmsgstorestable.md) -Methode, um einen Zeiger auf ein Table-Objekt abzurufen, das Zugriff auf Nachricht Store Anbieterinformationen über bietet Aufrufen der [IMAPITable: IUnknown](imapitableiunknown.md) Schnittstelle. Dienstanbieter können die API-Funktion [CreateTable](createtable.md) einen Zeiger auf ein Table-Datenobjekt abrufen aufrufen. Wenn es keine Funktion oder Methode verfügbar ist und -Clients oder Dienstanbieter bereits einen Zeiger auf ein Objekt ist, können sie das Objekt **QueryInterface** -Methode zum Abrufen eines Zeigers auf ein anderes schnittstellenimplementierungen das Objekt aufrufen. 
   

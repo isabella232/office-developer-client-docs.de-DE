@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f216afb5-4393-6e1c-54c2-3c184a26d934
 description: Enthält die Farbe, Transparenz und Position des einen Farbverlaufstopp für einen Farbverlauf.
-ms.openlocfilehash: 54c2d9d7833e6434c19dc863ded994f5c3539a1e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55ec3b58f57d1fb008825c1a5a4156e5aec59552
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797919"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393775"
 ---
 # <a name="row-element-fill-gradient-section-visio-xml"></a>Row-Element (füllen Farbverlauf Abschnitt) ("Visio XML")
 
 Enthält die Farbe, Transparenz und Position des einen Farbverlaufstopp für einen Farbverlauf.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[FillGradientRow_Type](fillgradientrow_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.XML, master # .xml, Seite # .xml  <br/> |
    

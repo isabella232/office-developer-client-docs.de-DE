@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: da7f2b16-cbd6-4a98-b577-31841e60a656
 description: Hier finden Sie Links zu Informationen in diesem Abschnitt über die Hauptteile der Project 2013-Plattform, erste Schritte mit CSOM-Entwicklung mithilfe von JavaScript und .NET Framework Task Pane-add-ins in Project Professional 2013, Project Server-Schnittstelle und die Reporting OData-Dienst.
-ms.openlocfilehash: e19fae2a187a9a4f809eaec4d8dade128b9529bb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e09df20f435816444b656927d4f6f0ebf6c38731
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570303"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401594"
 ---
 # <a name="project-conceptual-and-how-to-articles"></a>Projekt Konzept- und Anleitungsthemen Artikel
 
@@ -27,7 +27,7 @@ Projektserver 2013 basiert auf der Project Server Interface (PSI) Webdienst-Fram
   
 - [Mithilfe der clientseitigen Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md) enthält Themen für die ersten Schritte bei der Entwicklung von CSOM mithilfe von JavaScript und .NET Framework. 
   
-- [Project-Clientprogrammierung](project-client-programming.md) enthält eine Einführung in die Task Pane-add-ins in Project Professional 2013. Eine separate SDK enthält Artikel und Referenzen für add-ins in Project und den anderen Office 2013-Clients. Weitere Informationen finden Sie unter der Entwicklerdokumentation für [Office-Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins) . 
+- [Project-Clientprogrammierung](project-client-programming.md) enthält eine Einführung in die Task Pane-add-ins in Project Professional 2013. Eine separate SDK enthält Artikel und Referenzen für add-ins in Project und den anderen Office 2013-Clients. Weitere Informationen finden Sie unter der Entwicklerdokumentation für [Office-Add-ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) . 
   
 - [Project-Programmieraufgaben](project-programming-tasks.md) veranschaulicht-add-ins für Project 2013 zu entwickeln, Erstellen von Workflows für das bedarfsmanagement, das Project Web App-Menüband anpassen, Erstellen von Webparts und vieles mehr. 
   
@@ -35,6 +35,6 @@ Projektserver 2013 basiert auf der Project Server Interface (PSI) Webdienst-Fram
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Project Server 2013-Klassenbibliothek und Web-Referenz (engl.)](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)
+- [Project Server 2013-Klassenbibliothek und Web-Referenz (engl.)](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)
   
 

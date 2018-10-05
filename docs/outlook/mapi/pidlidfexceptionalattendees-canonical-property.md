@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f1f489a3-e83a-4e96-bf9a-d98bc17d29f5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 68ad6bd888594d09ab8e1dac050f8181341f7ee4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 544b5b5ac945eeedf787af0e311491da1f9d0217
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570781"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394363"
 ---
 # <a name="pidlidfexceptionalattendees-canonical-property"></a>PidLidFExceptionalAttendees (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob diese Eigenschaft ein wiederkehrendes Calendar-Objekt mit eine oder mehrere Ausnahmen ist und mindestens eines der Ausnahme eingebettete Nachrichten mindestens eine RecipientRow hat.
   
@@ -35,7 +35,7 @@ Gibt an, ob diese Eigenschaft ein wiederkehrendes Calendar-Objekt mit eine oder 
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass das Calendar-Objekt entweder keine Ausnahmen hat oder keine Ausnahme eingebettete Nachrichten RecipientRows hat.
   
@@ -43,11 +43,11 @@ Der Wert FALSE oder das fehlen diese Eigenschaft gibt an, dass das Calendar-Obje
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

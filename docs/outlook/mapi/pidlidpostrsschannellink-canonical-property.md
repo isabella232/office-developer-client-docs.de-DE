@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2ec95ed9-4848-43ac-9b17-8092a37055e9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 09f2ed6f71108fdb0edcc1990c488926b41dd8c8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 06ceac59dc41461c1ee60b012f4bb4470a591e77
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579613"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401398"
 ---
 # <a name="pidlidpostrsschannellink-canonical-property"></a>PidLidPostRssChannelLink (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die URL des RSS oder Atom-feed aus dem XML-Datei stammt.
   
@@ -39,11 +39,11 @@ Enthält die URL des RSS oder Atom-feed aus dem XML-Datei stammt.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXORSS]](http://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
+[[MS-OXORSS]](https://msdn.microsoft.com/library/53bc9634-0040-4b5a-aecd-29781d826009%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die RSS-Elemente darstellen.
     

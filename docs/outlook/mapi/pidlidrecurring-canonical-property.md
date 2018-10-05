@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3d39a053-277f-4d59-ab2e-cee81710f2ab
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c1b8c55a019ee3243de18d5e20ee4084bf6ca11f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 85e78695a7c4fca5a1e5cd28b0254d4559be0c13
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581251"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399480"
 ---
 # <a name="pidlidrecurring-canonical-property"></a>PidLidRecurring (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Nachricht Termin eine Serie ist.
   
@@ -35,7 +35,7 @@ Gibt an, ob eine Nachricht Termin eine Serie ist.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist TRUE, wenn der Termin einer Terminserie ist, und ist FALSE, wenn es nicht wiederholt wird.
   
@@ -45,11 +45,11 @@ Diese Eigenschaft gibt an, ob das Objekt einer Terminserie darstellt. Der Wert T
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

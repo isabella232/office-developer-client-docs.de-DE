@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a88adf0-9265-4d49-976d-de0d93269aa9
 description: Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurückgegeben wird, muss mit dem folgenden XML-Schema für die OSC-Anbieter entsprechen. Das OSC-Schema wird hier in seiner Gesamtheit reproduziert.
-ms.openlocfilehash: 0cf46d2a995fe9362777e853b0f13a9aceacfb99
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b1ec7888f5b6d9a7264f597e0c1ef3855d27b011
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796086"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394104"
 ---
 # <a name="outlook-social-connector-provider-xml-schema"></a>Outlook Connector für soziale Netzwerke Anbieter XML-schema
 
-Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurückgegeben wird, muss mit dem folgenden XML-Schema für die OSC-Anbieter entsprechen. Das OSC-Schema wird hier in seiner Gesamtheit reproduziert. Die aktuellen Schemadefinitionsdatei OutlookSocialProvider1_1.xsd, wird auch im Download für die Anbietervorlagen vom bereitgestellt, die in diesem Artikel begleitet. Weitere Informationen finden Sie unter [Outlook Social Connector 2013: Anbietervorlagen](http://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c). 
+Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurückgegeben wird, muss mit dem folgenden XML-Schema für die OSC-Anbieter entsprechen. Das OSC-Schema wird hier in seiner Gesamtheit reproduziert. Die aktuellen Schemadefinitionsdatei OutlookSocialProvider1_1.xsd, wird auch im Download für die Anbietervorlagen vom bereitgestellt, die in diesem Artikel begleitet. Weitere Informationen finden Sie unter [Outlook Social Connector 2013: Anbietervorlagen](https://code.msdn.microsoft.com/Outlook-Social-Connector-73fd8d2c). 
   
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
@@ -27,9 +27,9 @@ Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurüc
     All Rights Reserved
 -->
 <xs:schema
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    targetNamespace="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
-    xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
+    xmlns:xs="https://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
+    xmlns="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd"
     elementFormDefault="qualified">
   <!-- Root element for the activity feed -->
   <xs:element name="activityFeed" type="activityFeedType" />

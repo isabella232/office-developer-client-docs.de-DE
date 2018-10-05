@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1b0d1b52-6651-4de3-9381-86772d9d52a1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e72c947a6e0d4052d3335c3e3cfaf5ffb94da669
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 66ba27d1d333be3217f2a22ca5d53449372c1f31
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593004"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399235"
 ---
 # <a name="imslogonlogoff"></a>IMSLogon::Logoff
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine Nachricht Abmeldung Speicheranbieter. 
   
@@ -39,7 +39,7 @@ HRESULT Logoff(
   
 > [in] Reserviert. Ein Zeiger auf 0 (null) muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -51,7 +51,7 @@ Nachricht Anbieter implementieren Sie die **IMSLogon::Logoff** -Methode eine Nac
   
 - Während MAPI deaktiviert Clientidentität nach einem Aufruf der Methode [IMAPISession::Logoff](imapisession-logoff.md) protokolliert wird. 
     
-- Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird. In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt. 
+- Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird. In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt. 
     
 ## <a name="see-also"></a>Siehe auch
 

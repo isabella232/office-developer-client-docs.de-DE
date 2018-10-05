@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: b76312c6-7682-4ded-be25-55e21b0b091b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d2926b09dd3dfd89ab771206e0c8848415238eba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3961330476cad8947f94152e49c90adb1e8f8b21
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585479"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398073"
 ---
 # <a name="pidtagattachdataobject-canonical-property"></a>PidTagAttachDataObject (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Attachment-Objekt in der Regel über die Schnittstelle Object Linking and Embedding (OLE) **IStorage** zugegriffen. 
   
@@ -34,7 +34,7 @@ Enthält ein Attachment-Objekt in der Regel über die Schnittstelle Object Linki
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft enthält das Attachment-Objekt, wenn der Wert der Eigenschaft **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) **ATTACH_EMBEDDED_MSG** oder **ATTACH_OLE**ist. Das Codierungstyp OLE kann aus **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md)) bestimmt werden. 
   
@@ -48,13 +48,13 @@ Für ein Speicherobjekt können beispielsweise eine Verbunddatei in OLE 2.0-Doku
   
 Wenn der Clientanwendung oder Dienstanbieter ein Unterobjekt Anlage nicht öffnen kann mithilfe von **PR_ATTACH_DATA_OBJ** mit Hilfe von **PR_ATTACH_METHOD**, sollte **PR_ATTACH_DATA_BIN**verwendet werden. 
   
-Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter [OLE und Daten übertragen](http://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx).
+Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter [OLE und Daten übertragen](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

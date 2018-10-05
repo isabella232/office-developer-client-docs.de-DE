@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 6cc0357e-f1d5-4387-b30f-432ba7ee42b4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1eac8831b144053ff364208404dbac3925b51c4a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 73089431569cce3480967b05910df0b7bcf187eb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572935"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25392942"
 ---
 # <a name="pidnamephishingstamp-canonical-property"></a>PidNamePhishingStamp (kanonische Eigenschaft)
 
@@ -31,7 +31,7 @@ Enthält die Nachrichtenwert, der identifiziert und markiert Nachrichten, die ve
 |:-----|:-----|
 |Anzeigenamen:  <br/> |Keine  <br/> |
 |-Eigenschaft festgelegt:  <br/> |PS_PUBLIC_STRINGS  <br/> |
-|Name der Eigenschaft:  <br/> |http://schemas.microsoft.com/outlook/phishingstamp  <br/> |
+|Name der Eigenschaft:  <br/> |https://schemas.microsoft.com/outlook/phishingstamp  <br/> |
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Sichere Nachrichten  <br/> |
    
@@ -39,11 +39,11 @@ Enthält die Nachrichtenwert, der identifiziert und markiert Nachrichten, die ve
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXPHISH]](http://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
+[[MS-OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
   
 > Identifiziert und e-Mail-Nachrichten, die an Empfänger Preisgabe von vertraulichen Informationen (wie Kennwörter und andere persönliche Informationen) zu einer nicht vertrauenswürdigen Quelle markiert.
     

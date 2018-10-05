@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: be72a893-a3bc-4dea-8234-47f3e1db4515
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5cb791d0d350a04864191a0a9d35a2f1c8b165d7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 71108da8bb9914bb7ed0ad0b3adacc24e1d69e63
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577716"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400145"
 ---
 # <a name="link-to-mapi-functions"></a>Link zu MAPI-Funktionen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Es gibt drei Methoden verknüpfen: implizite Verknüpfung, explizite Verknüpfung und die MAPI-Stub-Bibliothek mit neuen Hybridmodell bereitgestellt.
   
@@ -121,7 +121,7 @@ Einige der neuen Funktionen aus dieser Bibliothek verknüpft, die in Mapi32.lib 
     
 Einbinden der MAPI-Stub-Bibliothek eine alternative Methode ist die Quelldateien, MapiStubLibrary.cpp und StubUtils.cpp, direkt in Ihr Projekt kopieren und entfernen jegliche Verknüpfung zu Mapi32.lib und Code, der explizit MAPI verknüpft.
   
-MAPI-Stub-Bibliothek Computerdateien und Informationen zum Erstellen und integrieren sie in Ihrem Projekt als auch Fragen zu dieser Bibliothek wie wann und warum verwenden, finden Sie unter der [MAPI-Stub-Bibliothek](http://mapistublibrary.codeplex.com/documentation) auf der CodePlex-Website. 
+MAPI-Stub-Bibliothek Computerdateien und Informationen zum Erstellen und integrieren sie in Ihrem Projekt als auch Fragen zu dieser Bibliothek wie wann und warum verwenden, finden Sie unter der [MAPI-Stub-Bibliothek](https://mapistublibrary.codeplex.com/documentation) auf der CodePlex-Website. 
   
 ## <a name="see-also"></a>Siehe auch
 
@@ -129,7 +129,7 @@ MAPI-Stub-Bibliothek Computerdateien und Informationen zum Erstellen und integri
 - [Installieren des MAPI-Subsystems](installing-the-mapi-subsystem.md)
 - [Installieren der MAPI-Headerdateien](how-to-install-mapi-header-files.md)
 - [Auswählen einer bestimmten zu ladenden MAPI-Version](how-to-choose-a-specific-version-of-mapi-to-load.md)
-- [Bestimmen der zu verwendenden verknüpfen Methode](http://msdn.microsoft.com/en-us/library/253b8k2c.aspx)
-- [Verknüpfen einer ausführbaren Datei mit einer DLL](http://msdn.microsoft.com/en-us/library/9yd93633.aspx)
-- [Einrichten der MSI-Keys für die MAPI-DLL](http://msdn.microsoft.com/en-us/library/ee909494%28v=VS.85%29.aspx)
+- [Bestimmen der zu verwendenden verknüpfen Methode](https://msdn.microsoft.com/library/253b8k2c.aspx)
+- [Verknüpfen einer ausführbaren Datei mit einer DLL](https://msdn.microsoft.com/library/9yd93633.aspx)
+- [Einrichten der MSI-Keys für die MAPI-DLL](https://msdn.microsoft.com/library/ee909494%28v=VS.85%29.aspx)
 

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: e9ee8865-0983-439e-8405-7946c5ec8762
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 68d7472f993bcc35abbd4b733bae9f137b948608
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: be765915b729824b8c8b4209f125f354b02bad2b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576841"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394342"
 ---
 # <a name="create-a-simple-recurrent-task-item"></a>Erstellen eines einfachen wiederkehrenden Aufgabe-Elements
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI kann verwendet werden, zum Erstellen von Aufgabenelementen erstellen. In diesem Thema wird das Erstellen eines einfachen wiederkehrenden Aufgabe-Elements beschrieben.
   
@@ -42,7 +42,7 @@ Die `AddTask` Funktion in der Quelldatei Tasks.cpp des Projekts CreateOutlookIte
   
 Die `AddTask` Funktion ist unten aufgeführt. Der _LpFolder_ -Parameter übergeben, um die `AddTask` Funktion ist ein Zeiger auf eine [IMAPIFolder](imapifolderimapicontainer.md) -Schnittstelle, die den Ordner darstellt, in dem die neue Aufgabe erstellt wird. Die _LpFolder_ , die eine **IMAPIFolder** -Schnittstelle stellt angegeben, ruft der Code die [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) -Methode. Die **CreateMessage** -Methode gibt einen Erfolgscode und einen Zeiger auf einen Zeiger auf eine **IMessage** -Schnittstelle zurück. Die meisten der `AddTask` Funktionscodes übernimmt die Aufgabe angeben von Eigenschaften in Vorbereitung auf die [IMAPIProp::SetProps](imapiprop-setprops.md) -Methode aufrufen. Wenn der Aufruf der **SetProps** -Methode erfolgreich ist, wird die [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode aufgerufen, um einen commit der Änderungen an den Speicher und ein neues Aufgabenelement erstellen. 
   
-Die `AddTask` Funktion wird eine Reihe von benannten Eigenschaften. Informationen zu benannten Eigenschaften und wie sie erstellt werden finden Sie unter [Verwenden von MAPI in Outlook 2007-Einträge erstellen](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx). Da die benannten Eigenschaften für Aufgabenelemente mehrere Eigenschaftensätze belegen, muss darauf geachtet werden beim Erstellen von Parametern an die [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode übergeben. 
+Die `AddTask` Funktion wird eine Reihe von benannten Eigenschaften. Informationen zu benannten Eigenschaften und wie sie erstellt werden finden Sie unter [Verwenden von MAPI in Outlook 2007-Einträge erstellen](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx). Da die benannten Eigenschaften für Aufgabenelemente mehrere Eigenschaftensätze belegen, muss darauf geachtet werden beim Erstellen von Parametern an die [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode übergeben. 
   
 Die `AddTask` Funktion verwendet die `BuildWeeklyTaskRecurrencePattern` Hilfsfunktion erstellen Sie eine Struktur, die eine Aufgabenserie zum Festlegen der **DispidTaskRecur** -Eigenschaft darstellt. Informationen über die Aufgabe Serie Struktur der `BuildWeeklyTaskRecurrencePattern` Builds funktioniert, finden Sie unter [PidLidTaskRecurrence kanonische-Eigenschaft](pidlidtaskrecurrence-canonical-property.md) und [PidLidRecurrencePattern kanonische-Eigenschaft](pidlidrecurrencepattern-canonical-property.md). 
 
@@ -178,5 +178,5 @@ HRESULT AddTask(LPMAPIFOLDER lpFolder,
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)
+- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

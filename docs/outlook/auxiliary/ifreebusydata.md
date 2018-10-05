@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: c9a80ad3-6311-fe07-b6f7-9fd63424753b
-ms.openlocfilehash: aa42561277d5fc4de93eeedec8ceb6f36530fb80
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cd9d4dffd83e1995319b0f0d661435fedb78f28c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790966"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25393208"
 ---
 # <a name="ifreebusydata"></a>IFreeBusyData
 
@@ -21,7 +21,7 @@ Für einen bestimmten Benutzer ruft ab und legt einen Zeitraum fest und gibt ein
 
 |||
 |:-----|:-----|
-|Erbt:  <br/> |[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
+|Erbt:  <br/> |[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
 |Bereitgestellt von:  <br/> |Frei/Gebucht-Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IFreeBusyData  <br/> |
    
@@ -39,12 +39,12 @@ Für einen bestimmten Benutzer ruft ab und legt einen Zeitraum fest und gibt ein
 |[Placeholder6](ifreebusydata-placeholder6.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 |[GetFBPublishRange](ifreebusydata-getfbpublishrange.md) <br/> |Dient zum Abrufen eines vordefinierten Zeitraums für eine Enumeration der Datenblöcke Frei/Gebucht-Informationen für einen Benutzer.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die meisten der Elemente in dieser Schnittstelle sind Platzhalter für die interne Verwendung von Outlook reserviert und kann geändert werden. Frei/Gebucht-Anbieter müssen implementieren sie nur als angegebenen, zurückgeben, dass nur die angegebenen Werte zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)
+- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)
 - [Konstanten (Frei/Gebucht-API)](constants-free-busy-api.md)
 
