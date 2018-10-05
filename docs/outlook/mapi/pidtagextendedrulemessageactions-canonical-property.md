@@ -12,65 +12,65 @@ api_type:
 - HeaderDef
 ms.assetid: 1cf277d4-76ec-4902-9e54-f1780cee49bf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9b6af0c7fae85a2ea6cbd53159674fdcd32c642c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 70f09d6db5940fcb9b980cc839988113bd3a3e2e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592769"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399187"
 ---
-# <a name="pidtagextendedrulemessageactions-canonical-property"></a><span data-ttu-id="6cabe-103">PidTagExtendedRuleMessageActions (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="6cabe-103">PidTagExtendedRuleMessageActions Canonical Property</span></span>
+# <a name="pidtagextendedrulemessageactions-canonical-property"></a><span data-ttu-id="f86f7-103">PidTagExtendedRuleMessageActions (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="f86f7-103">PidTagExtendedRuleMessageActions Canonical Property</span></span>
 
   
   
-<span data-ttu-id="6cabe-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="6cabe-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="f86f7-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="f86f7-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="6cabe-105">Enthält zusätzliche Informationen zu den benannten Eigenschaften in einer Nachricht Ordner verknüpften Informationen (FAI) verwendet.</span><span class="sxs-lookup"><span data-stu-id="6cabe-105">Contains additional information about the named properties used in a Folder Associated Information (FAI) message.</span></span>
+<span data-ttu-id="f86f7-105">Enthält zusätzliche Informationen zu den benannten Eigenschaften in einer Nachricht Ordner verknüpften Informationen (FAI) verwendet.</span><span class="sxs-lookup"><span data-stu-id="f86f7-105">Contains additional information about the named properties used in a Folder Associated Information (FAI) message.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="6cabe-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="6cabe-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="6cabe-107">PR_EXTENDED_RULE_MSG_ACTIONS</span><span class="sxs-lookup"><span data-stu-id="6cabe-107">PR_EXTENDED_RULE_MSG_ACTIONS</span></span>  <br/> |
-|<span data-ttu-id="6cabe-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="6cabe-108">Identifier:</span></span>  <br/> |<span data-ttu-id="6cabe-109">0x0E99</span><span class="sxs-lookup"><span data-stu-id="6cabe-109">0x0E99</span></span>  <br/> |
-|<span data-ttu-id="6cabe-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="6cabe-110">Data type:</span></span>  <br/> |<span data-ttu-id="6cabe-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="6cabe-111">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="6cabe-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="6cabe-112">Area:</span></span>  <br/> |<span data-ttu-id="6cabe-113">Regeln</span><span class="sxs-lookup"><span data-stu-id="6cabe-113">Rules</span></span>  <br/> |
+|<span data-ttu-id="f86f7-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="f86f7-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="f86f7-107">PR_EXTENDED_RULE_MSG_ACTIONS</span><span class="sxs-lookup"><span data-stu-id="f86f7-107">PR_EXTENDED_RULE_MSG_ACTIONS</span></span>  <br/> |
+|<span data-ttu-id="f86f7-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="f86f7-108">Identifier:</span></span>  <br/> |<span data-ttu-id="f86f7-109">0x0E99</span><span class="sxs-lookup"><span data-stu-id="f86f7-109">0x0E99</span></span>  <br/> |
+|<span data-ttu-id="f86f7-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="f86f7-110">Data type:</span></span>  <br/> |<span data-ttu-id="f86f7-111">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="f86f7-111">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="f86f7-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="f86f7-112">Area:</span></span>  <br/> |<span data-ttu-id="f86f7-113">Regeln</span><span class="sxs-lookup"><span data-stu-id="f86f7-113">Rules</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="6cabe-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="6cabe-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f86f7-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f86f7-114">Remarks</span></span>
 
-<span data-ttu-id="6cabe-115">Diese Eigenschaft muss auf eine Nachricht FAI festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="6cabe-115">This property must be set on an FAI message.</span></span> <span data-ttu-id="6cabe-116">Diese Eigenschaft dient dem gleichen Zweck als **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)), jedoch enthält zusätzliche Informationen zur Version der benannten Eigenschaften in die Regelaktion gespeichert und die Regel sowie Informationen zu den Aktionen werden Durch diese Regel ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="6cabe-116">This property serves the same purpose as **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)), but contains additional information about the version of the rule and the named properties stored in the rule action, as well as information about the actions to be performed by this rule.</span></span> <span data-ttu-id="6cabe-117">Alle String-Werten, die in einem beliebigen Teil des Puffers Aktion verwendet, um Aktionen enthalten enthalten sind, muss im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="6cabe-117">All string values contained in any part of the action buffer used to contain actions must be in Unicode format.</span></span>
+<span data-ttu-id="f86f7-115">Diese Eigenschaft muss auf eine Nachricht FAI festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="f86f7-115">This property must be set on an FAI message.</span></span> <span data-ttu-id="f86f7-116">Diese Eigenschaft dient dem gleichen Zweck als **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)), jedoch enthält zusätzliche Informationen zur Version der benannten Eigenschaften in die Regelaktion gespeichert und die Regel sowie Informationen zu den Aktionen werden Durch diese Regel ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="f86f7-116">This property serves the same purpose as **PR_RULE_ACTIONS** ([PidTagRuleActions](pidtagruleactions-canonical-property.md)), but contains additional information about the version of the rule and the named properties stored in the rule action, as well as information about the actions to be performed by this rule.</span></span> <span data-ttu-id="f86f7-117">Alle String-Werten, die in einem beliebigen Teil des Puffers Aktion verwendet, um Aktionen enthalten enthalten sind, muss im Unicode-Format.</span><span class="sxs-lookup"><span data-stu-id="f86f7-117">All string values contained in any part of the action buffer used to contain actions must be in Unicode format.</span></span>
   
-<span data-ttu-id="6cabe-118">Informationen zum Format dieser binäre Eigenschaft finden Sie unter [[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="6cabe-118">For information about the format of this binary property, see [[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx).</span></span>
+<span data-ttu-id="f86f7-118">Informationen zum Format dieser binäre Eigenschaft finden Sie unter [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="f86f7-118">For information about the format of this binary property, see [[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx).</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="6cabe-119">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="6cabe-119">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="f86f7-119">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="f86f7-119">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="6cabe-120">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="6cabe-120">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="f86f7-120">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="f86f7-120">Protocol specifications</span></span>
 
-<span data-ttu-id="6cabe-121">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6cabe-121">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="f86f7-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="f86f7-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="6cabe-122">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="6cabe-122">Provides references to related Exchange Server protocol specifications..</span></span>
+> <span data-ttu-id="f86f7-122">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="f86f7-122">Provides references to related Exchange Server protocol specifications..</span></span>
     
-<span data-ttu-id="6cabe-123">[[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="6cabe-123">[[MS-OXORULE]](http://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="f86f7-123">[[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="f86f7-123">[[MS-OXORULE]](https://msdn.microsoft.com/library/70ac9436-501e-43e2-9163-20d2b546b886%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="6cabe-124">Eingehende e-Mail-Nachrichten auf einem Server bearbeitet.</span><span class="sxs-lookup"><span data-stu-id="6cabe-124">Manipulates incoming email messages on a server.</span></span>
+> <span data-ttu-id="f86f7-124">Eingehende e-Mail-Nachrichten auf einem Server bearbeitet.</span><span class="sxs-lookup"><span data-stu-id="f86f7-124">Manipulates incoming email messages on a server.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="6cabe-125">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="6cabe-125">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="f86f7-125">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="f86f7-125">Header files</span></span>
 
-<span data-ttu-id="6cabe-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="6cabe-126">Mapidefs.h</span></span>
+<span data-ttu-id="f86f7-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="f86f7-126">Mapidefs.h</span></span>
   
-> <span data-ttu-id="6cabe-127">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6cabe-127">Provides data type definitions.</span></span>
+> <span data-ttu-id="f86f7-127">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="f86f7-127">Provides data type definitions.</span></span>
     
-<span data-ttu-id="6cabe-128">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="6cabe-128">Mapitags.h</span></span>
+<span data-ttu-id="f86f7-128">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="f86f7-128">Mapitags.h</span></span>
   
-> <span data-ttu-id="6cabe-129">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="6cabe-129">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="f86f7-129">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="f86f7-129">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="6cabe-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6cabe-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f86f7-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="f86f7-130">See also</span></span>
 
 
 
-[<span data-ttu-id="6cabe-131">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6cabe-131">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="f86f7-131">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f86f7-131">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="6cabe-132">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6cabe-132">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="f86f7-132">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f86f7-132">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="6cabe-133">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="6cabe-133">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="f86f7-133">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="f86f7-133">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="6cabe-134">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="6cabe-134">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="f86f7-134">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="f86f7-134">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

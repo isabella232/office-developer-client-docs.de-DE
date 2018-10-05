@@ -7,51 +7,51 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c18d3a84-2088-13f7-7b14-1f4c129537b4
 description: Gibt Regelsatz-Eigenschaften.
-ms.openlocfilehash: f656e8ace045d45460ab353444c39c760448aa7b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4a8ba44e2c77281f3d68fb3f5a7a2c58884ce66b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797950"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400098"
 ---
-# <a name="rulesetflags-element-rulesettype-complextype-visio-xml"></a><span data-ttu-id="e04f1-103">RuleSetFlags-Element (RuleSet_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="e04f1-103">RuleSetFlags element (RuleSet_Type complexType) ('Visio XML')</span></span>
+# <a name="rulesetflags-element-rulesettype-complextype-visio-xml"></a><span data-ttu-id="03f2a-103">RuleSetFlags-Element (RuleSet_Type ComplexType) ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="03f2a-103">RuleSetFlags element (RuleSet_Type complexType) ('Visio XML')</span></span>
 
-<span data-ttu-id="e04f1-104">Gibt Regelsatz-Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="e04f1-104">Specifies rule-set properties.</span></span>
+<span data-ttu-id="03f2a-104">Gibt Regelsatz-Eigenschaften.</span><span class="sxs-lookup"><span data-stu-id="03f2a-104">Specifies rule-set properties.</span></span>
   
-## <a name="element-information"></a><span data-ttu-id="e04f1-105">Informationen zum Element</span><span class="sxs-lookup"><span data-stu-id="e04f1-105">Element information</span></span>
+## <a name="element-information"></a><span data-ttu-id="03f2a-105">Informationen zu Elementen</span><span class="sxs-lookup"><span data-stu-id="03f2a-105">Element information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="e04f1-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="e04f1-106">**Element type**</span></span> <br/> |[<span data-ttu-id="e04f1-107">RuleSetFlags_Type</span><span class="sxs-lookup"><span data-stu-id="e04f1-107">RuleSetFlags_Type</span></span>](rulesetflags_type-complextypevisio-xml.md) <br/> |
-|<span data-ttu-id="e04f1-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="e04f1-108">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
-|<span data-ttu-id="e04f1-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="e04f1-109">**Schema file**</span></span> <br/> |<span data-ttu-id="e04f1-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="e04f1-110">VisioSchema15.xsd</span></span>  <br/> |
-|<span data-ttu-id="e04f1-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="e04f1-111">**Document parts**</span></span> <br/> |<span data-ttu-id="e04f1-112">Validation.Xml</span><span class="sxs-lookup"><span data-stu-id="e04f1-112">validation.xml</span></span>  <br/> |
+|<span data-ttu-id="03f2a-106">**Elementtyp**</span><span class="sxs-lookup"><span data-stu-id="03f2a-106">**Element type**</span></span> <br/> |[<span data-ttu-id="03f2a-107">RuleSetFlags_Type</span><span class="sxs-lookup"><span data-stu-id="03f2a-107">RuleSetFlags_Type</span></span>](rulesetflags_type-complextypevisio-xml.md) <br/> |
+|<span data-ttu-id="03f2a-108">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="03f2a-108">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|<span data-ttu-id="03f2a-109">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="03f2a-109">**Schema file**</span></span> <br/> |<span data-ttu-id="03f2a-110">VisioSchema15.xsd</span><span class="sxs-lookup"><span data-stu-id="03f2a-110">VisioSchema15.xsd</span></span>  <br/> |
+|<span data-ttu-id="03f2a-111">**Dokumentbausteine**</span><span class="sxs-lookup"><span data-stu-id="03f2a-111">**Document parts**</span></span> <br/> |<span data-ttu-id="03f2a-112">Validation.Xml</span><span class="sxs-lookup"><span data-stu-id="03f2a-112">validation.xml</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="e04f1-113">Definition</span><span class="sxs-lookup"><span data-stu-id="e04f1-113">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="03f2a-113">Definition</span><span class="sxs-lookup"><span data-stu-id="03f2a-113">Definition</span></span>
 
 ```XML
 < xs:element name="RuleSetFlags" type="RuleSetFlags_Type" minOccurs="0" maxOccurs="1" >
 </xs:element >
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="e04f1-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="e04f1-114">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="03f2a-114">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="03f2a-114">Elements and attributes</span></span>
 
-<span data-ttu-id="e04f1-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="e04f1-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="03f2a-115">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="03f2a-115">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="parent-elements"></a><span data-ttu-id="e04f1-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e04f1-116">Parent elements</span></span>
+### <a name="parent-elements"></a><span data-ttu-id="03f2a-116">Übergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="03f2a-116">Parent elements</span></span>
 
-|<span data-ttu-id="e04f1-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="e04f1-117">**Element**</span></span>|<span data-ttu-id="e04f1-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="e04f1-118">**Type**</span></span>|<span data-ttu-id="e04f1-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e04f1-119">**Description**</span></span>|
+|<span data-ttu-id="03f2a-117">**Element**</span><span class="sxs-lookup"><span data-stu-id="03f2a-117">**Element**</span></span>|<span data-ttu-id="03f2a-118">**Typ**</span><span class="sxs-lookup"><span data-stu-id="03f2a-118">**Type**</span></span>|<span data-ttu-id="03f2a-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="03f2a-119">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="e04f1-120">Regelsatz</span><span class="sxs-lookup"><span data-stu-id="e04f1-120">RuleSet</span></span>](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="e04f1-121">RuleSet_Type</span><span class="sxs-lookup"><span data-stu-id="e04f1-121">RuleSet_Type</span></span>](ruleset_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="e04f1-122">Stellt eine Reihe von Diagramm-Validierungsregeln dar.</span><span class="sxs-lookup"><span data-stu-id="e04f1-122">Represents one set of diagram-validation rules.</span></span>  <br/> |
+|[<span data-ttu-id="03f2a-120">Regelsatz</span><span class="sxs-lookup"><span data-stu-id="03f2a-120">RuleSet</span></span>](ruleset-element-rulesets_type-complextypevisio-xml.md) <br/> |[<span data-ttu-id="03f2a-121">RuleSet_Type</span><span class="sxs-lookup"><span data-stu-id="03f2a-121">RuleSet_Type</span></span>](ruleset_type-complextypevisio-xml.md) <br/> |<span data-ttu-id="03f2a-122">Stellt eine Reihe von Diagramm-Validierungsregeln dar.</span><span class="sxs-lookup"><span data-stu-id="03f2a-122">Represents one set of diagram-validation rules.</span></span>  <br/> |
    
-### <a name="child-elements"></a><span data-ttu-id="e04f1-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="e04f1-123">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="03f2a-123">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="03f2a-123">Child elements</span></span>
 
-<span data-ttu-id="e04f1-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="e04f1-124">None.</span></span>
+<span data-ttu-id="03f2a-124">Keine.</span><span class="sxs-lookup"><span data-stu-id="03f2a-124">None.</span></span>
   
-### <a name="attributes"></a><span data-ttu-id="e04f1-125">Attribute</span><span class="sxs-lookup"><span data-stu-id="e04f1-125">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="03f2a-125">Attribute</span><span class="sxs-lookup"><span data-stu-id="03f2a-125">Attributes</span></span>
 
-|<span data-ttu-id="e04f1-126">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="e04f1-126">**Attribute**</span></span>|<span data-ttu-id="e04f1-127">**Typ**</span><span class="sxs-lookup"><span data-stu-id="e04f1-127">**Type**</span></span>|<span data-ttu-id="e04f1-128">**Erforderlich**</span><span class="sxs-lookup"><span data-stu-id="e04f1-128">**Required**</span></span>|<span data-ttu-id="e04f1-129">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="e04f1-129">**Description**</span></span>|<span data-ttu-id="e04f1-130">**Mögliche Werte**</span><span class="sxs-lookup"><span data-stu-id="e04f1-130">**Possible values**</span></span>|
+|<span data-ttu-id="03f2a-126">**Attribut**</span><span class="sxs-lookup"><span data-stu-id="03f2a-126">**Attribute**</span></span>|<span data-ttu-id="03f2a-127">**Typ**</span><span class="sxs-lookup"><span data-stu-id="03f2a-127">**Type**</span></span>|<span data-ttu-id="03f2a-128">**Erforderlich**</span><span class="sxs-lookup"><span data-stu-id="03f2a-128">**Required**</span></span>|<span data-ttu-id="03f2a-129">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="03f2a-129">**Description**</span></span>|<span data-ttu-id="03f2a-130">**Mögliche Werte**</span><span class="sxs-lookup"><span data-stu-id="03f2a-130">**Possible values**</span></span>|
 |:-----|:-----|:-----|:-----|:-----|
-|<span data-ttu-id="e04f1-131">Ausgeblendet</span><span class="sxs-lookup"><span data-stu-id="e04f1-131">Hidden</span></span>  <br/> |<span data-ttu-id="e04f1-132">XSD: Boolean</span><span class="sxs-lookup"><span data-stu-id="e04f1-132">xsd:boolean</span></span>  <br/> |<span data-ttu-id="e04f1-133">Optional</span><span class="sxs-lookup"><span data-stu-id="e04f1-133">optional</span></span>  <br/> |<span data-ttu-id="e04f1-134">Gibt an, ob der Regelsatz in der Liste zu überprüfende Regeln angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="e04f1-134">Specifies whether the rule set appears in the Rules to Check list.</span></span>  <br/> |<span data-ttu-id="e04f1-135">Werte des Typs xsd: Boolean.</span><span class="sxs-lookup"><span data-stu-id="e04f1-135">Values of the xsd:boolean type.</span></span>  <br/> |
+|<span data-ttu-id="03f2a-131">Ausgeblendet</span><span class="sxs-lookup"><span data-stu-id="03f2a-131">Hidden</span></span>  <br/> |<span data-ttu-id="03f2a-132">XSD: Boolean</span><span class="sxs-lookup"><span data-stu-id="03f2a-132">xsd:boolean</span></span>  <br/> |<span data-ttu-id="03f2a-133">Optional</span><span class="sxs-lookup"><span data-stu-id="03f2a-133">optional</span></span>  <br/> |<span data-ttu-id="03f2a-134">Gibt an, ob der Regelsatz in der Liste zu überprüfende Regeln angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="03f2a-134">Specifies whether the rule set appears in the Rules to Check list.</span></span>  <br/> |<span data-ttu-id="03f2a-135">Werte des Typs xsd: Boolean.</span><span class="sxs-lookup"><span data-stu-id="03f2a-135">Values of the xsd:boolean type.</span></span>  <br/> |
    
 

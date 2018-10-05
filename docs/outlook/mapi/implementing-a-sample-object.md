@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 23b6ad1a-0b50-429f-8819-ab72c56581c2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 7d2f5fc2f26019902b27750613f7c360a751cd51
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a681e68c0718e49da331946d75ecb7b4fab7afe2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582931"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25396792"
 ---
-# <a name="implementing-a-sample-object"></a><span data-ttu-id="ae5ba-103">Implementieren ein Beispielobjekt</span><span class="sxs-lookup"><span data-stu-id="ae5ba-103">Implementing a sample object</span></span>
+# <a name="implementing-a-sample-object"></a><span data-ttu-id="fe6a6-103">Implementieren ein Beispielobjekt</span><span class="sxs-lookup"><span data-stu-id="fe6a6-103">Implementing a sample object</span></span>
 
-<span data-ttu-id="ae5ba-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ae5ba-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="fe6a6-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fe6a6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ae5ba-105">Beraten der Empfängerobjekten – Objekte, die das unterstützen die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) Schnittstelle – MAPI-Objekten, die Clientanwendungen für die Verarbeitung von Benachrichtigungen implementiert werden.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-105">Advise sink objects — objects that support the [IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md) interface — are MAPI objects that client applications implement for processing notifications.</span></span> <span data-ttu-id="ae5ba-106">**IMAPIAdviseSink** erbt direkt von [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) und enthält nur eine Methode, **OnNotify**.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-106">**IMAPIAdviseSink** inherits directly from [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) and contains only one method, **OnNotify**.</span></span> <span data-ttu-id="ae5ba-107">Aus diesem Grund wird ein Client zum Implementieren einer Advise-Empfängerobjekt Code für die drei Methoden in **IUnknown** und [OnNotify](imapiadvisesink-onnotify.md)erstellt.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-107">Therefore, to implement an advise sink object, a client creates code for the three methods in **IUnknown** and for [OnNotify](imapiadvisesink-onnotify.md).</span></span>
+<span data-ttu-id="fe6a6-105">Beraten der Empfängerobjekten – Objekte, die das unterstützen die [IMAPIAdviseSink: IUnknown](imapiadvisesinkiunknown.md) Schnittstelle – MAPI-Objekten, die Clientanwendungen für die Verarbeitung von Benachrichtigungen implementiert werden.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-105">Advise sink objects — objects that support the [IMAPIAdviseSink : IUnknown](imapiadvisesinkiunknown.md) interface — are MAPI objects that client applications implement for processing notifications.</span></span> <span data-ttu-id="fe6a6-106">**IMAPIAdviseSink** erbt direkt von [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) und enthält nur eine Methode, **OnNotify**.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-106">**IMAPIAdviseSink** inherits directly from [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) and contains only one method, **OnNotify**.</span></span> <span data-ttu-id="fe6a6-107">Aus diesem Grund wird ein Client zum Implementieren einer Advise-Empfängerobjekt Code für die drei Methoden in **IUnknown** und [OnNotify](imapiadvisesink-onnotify.md)erstellt.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-107">Therefore, to implement an advise sink object, a client creates code for the three methods in **IUnknown** and for [OnNotify](imapiadvisesink-onnotify.md).</span></span>
   
-<span data-ttu-id="ae5ba-108">Die Headerdatei Mapidefs.h definiert eine **IMAPIAdviseSink** Implementierung mit **DECLARE_MAPI_INTERFACE**, wie folgt:</span><span class="sxs-lookup"><span data-stu-id="ae5ba-108">The Mapidefs.h header file defines an **IMAPIAdviseSink** interface implementation by using **DECLARE_MAPI_INTERFACE**, as follows:</span></span>
+<span data-ttu-id="fe6a6-108">Die Headerdatei Mapidefs.h definiert eine **IMAPIAdviseSink** Implementierung mit **DECLARE_MAPI_INTERFACE**, wie folgt:</span><span class="sxs-lookup"><span data-stu-id="fe6a6-108">The Mapidefs.h header file defines an **IMAPIAdviseSink** interface implementation by using **DECLARE_MAPI_INTERFACE**, as follows:</span></span>
   
 ```cpp
 #define      INTERFACE  IMAPIAdviseSink
@@ -34,9 +34,9 @@ DECLARE_MAPI_INTERFACE_(IMAPIAdviseSink, IUnknown)
  
 ```
 
-<span data-ttu-id="ae5ba-109">Clients, die implementiert werden ausschließlich Empfängerobjekten ihre Schnittstellen in ihre Objekte manuell oder mit den Makros **MAPI_IUNKNOWN_METHODS** und **MAPI_IMAPIADVISESINK_METHODS** definieren können.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-109">Clients that implement advise sink objects can define their interfaces in their objects manually or with the **MAPI_IUNKNOWN_METHODS** and **MAPI_IMAPIADVISESINK_METHODS** macros.</span></span> <span data-ttu-id="ae5ba-110">Objekt Implementierer sollten die Schnittstelle Makros immer möglich, Objekte Konsistenz sicherzustellen und die Zeit und Mühe sparen verwenden.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-110">Object implementers should use the interface macros whenever possible to ensure consistency across objects and to save time and effort.</span></span> 
+<span data-ttu-id="fe6a6-109">Clients, die implementiert werden ausschließlich Empfängerobjekten ihre Schnittstellen in ihre Objekte manuell oder mit den Makros **MAPI_IUNKNOWN_METHODS** und **MAPI_IMAPIADVISESINK_METHODS** definieren können.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-109">Clients that implement advise sink objects can define their interfaces in their objects manually or with the **MAPI_IUNKNOWN_METHODS** and **MAPI_IMAPIADVISESINK_METHODS** macros.</span></span> <span data-ttu-id="fe6a6-110">Objekt Implementierer sollten die Schnittstelle Makros immer möglich, Objekte Konsistenz sicherzustellen und die Zeit und Mühe sparen verwenden.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-110">Object implementers should use the interface macros whenever possible to ensure consistency across objects and to save time and effort.</span></span> 
   
-<span data-ttu-id="ae5ba-111">Die [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) und [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methoden implementieren ist relativ einfach, da nur ein paar Codezeilen in der Regel benötigt werden.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-111">Implementing the [IUnknown::AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) and [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) methods is relatively simple because typically only a few lines of code are needed.</span></span> <span data-ttu-id="ae5ba-112">Aus diesem Grund können Clients und Dienstanbieter, die Objekte implementieren ihrer **AddRef** und **Release** Implementierungen Inline tätigen.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-112">Therefore, clients and service providers that implement objects can make their **AddRef** and **Release** implementations inline.</span></span> <span data-ttu-id="ae5ba-113">Der folgende Code zeigt, wie Sie eine C++ definieren advise-Empfängerobjekt mit Inline Implementierungen von **AddRef** und **Release**.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-113">The following code shows how to define a C++ advise sink object with inline implementations of **AddRef** and **Release**.</span></span>
+<span data-ttu-id="fe6a6-111">Die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) und [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methoden implementieren ist relativ einfach, da nur ein paar Codezeilen in der Regel benötigt werden.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-111">Implementing the [IUnknown::AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) and [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) methods is relatively simple because typically only a few lines of code are needed.</span></span> <span data-ttu-id="fe6a6-112">Aus diesem Grund können Clients und Dienstanbieter, die Objekte implementieren ihrer **AddRef** und **Release** Implementierungen Inline tätigen.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-112">Therefore, clients and service providers that implement objects can make their **AddRef** and **Release** implementations inline.</span></span> <span data-ttu-id="fe6a6-113">Der folgende Code zeigt, wie Sie eine C++ definieren advise-Empfängerobjekt mit Inline Implementierungen von **AddRef** und **Release**.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-113">The following code shows how to define a C++ advise sink object with inline implementations of **AddRef** and **Release**.</span></span>
   
 ```cpp
 class  CMAPIAdviseSink : public IMAPIAdviseSink
@@ -75,13 +75,13 @@ private :
  
 ```
 
-<span data-ttu-id="ae5ba-114">In C besteht das Advise-Empfängerobjekt die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="ae5ba-114">In C, the advise sink object is composed of the following elements:</span></span>
+<span data-ttu-id="fe6a6-114">In C besteht das Advise-Empfängerobjekt die folgenden Elemente:</span><span class="sxs-lookup"><span data-stu-id="fe6a6-114">In C, the advise sink object is composed of the following elements:</span></span>
   
-- <span data-ttu-id="ae5ba-115">Ein Zeiger auf eine virtuelle Tabelle, die Zeiger auf die Implementierung von Methoden in **IUnknown** und **IMAPIAdviseSink**enthält.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-115">A pointer to a vtable that contains pointers to implementations of each of the methods in **IUnknown** and **IMAPIAdviseSink**.</span></span>
+- <span data-ttu-id="fe6a6-115">Ein Zeiger auf eine virtuelle Tabelle, die Zeiger auf die Implementierung von Methoden in **IUnknown** und **IMAPIAdviseSink**enthält.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-115">A pointer to a vtable that contains pointers to implementations of each of the methods in **IUnknown** and **IMAPIAdviseSink**.</span></span>
     
-- <span data-ttu-id="ae5ba-116">Datenelemente.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-116">Data members.</span></span>
+- <span data-ttu-id="fe6a6-116">Datenelemente.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-116">Data members.</span></span>
     
-<span data-ttu-id="ae5ba-117">Im folgenden Codebeispiel wird veranschaulicht, wie ein Advise-Empfängerobjekt in C# definieren und erstellen die vtable des Objekts.</span><span class="sxs-lookup"><span data-stu-id="ae5ba-117">The following code example shows how to define an advise sink object in C and construct its vtable.</span></span> 
+<span data-ttu-id="fe6a6-117">Im folgenden Codebeispiel wird veranschaulicht, wie ein Advise-Empfängerobjekt in C# definieren und erstellen die vtable des Objekts.</span><span class="sxs-lookup"><span data-stu-id="fe6a6-117">The following code example shows how to define an advise sink object in C and construct its vtable.</span></span> 
   
 ```cpp
 // Object definition.
@@ -103,7 +103,7 @@ static const ADVISE_Vtbl vtblADVISE =
  
 ```
 
-<span data-ttu-id="ae5ba-118">Nachdem Sie ein Objekt im C deklarieren, müssen Sie es initialisieren durch Festlegen des Vtable-Zeigers auf die Adresse des organisierten Vtable wie im folgenden Code dargestellt:</span><span class="sxs-lookup"><span data-stu-id="ae5ba-118">After you declare an object in C, you must initialize it by setting the vtable pointer to the address of the constructed vtable, as shown in the following code:</span></span>
+<span data-ttu-id="fe6a6-118">Nachdem Sie ein Objekt im C deklarieren, müssen Sie es initialisieren durch Festlegen des Vtable-Zeigers auf die Adresse des organisierten Vtable wie im folgenden Code dargestellt:</span><span class="sxs-lookup"><span data-stu-id="fe6a6-118">After you declare an object in C, you must initialize it by setting the vtable pointer to the address of the constructed vtable, as shown in the following code:</span></span>
   
 ```cpp
 LPADVISESINK lpMyObj = NULL;
@@ -113,8 +113,8 @@ lpMyObj->lpVtbl = &vtblADVISE;
  
 ```
 
-## <a name="see-also"></a><span data-ttu-id="ae5ba-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ae5ba-119">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="fe6a6-119">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fe6a6-119">See also</span></span>
 
-- [<span data-ttu-id="ae5ba-120">Übersicht über die MAPI-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="ae5ba-120">MAPI Property Overview</span></span>](mapi-property-overview.md)
-- [<span data-ttu-id="ae5ba-121">Implementieren von MAPI-Objekten</span><span class="sxs-lookup"><span data-stu-id="ae5ba-121">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
+- [<span data-ttu-id="fe6a6-120">Übersicht über die MAPI-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="fe6a6-120">MAPI Property Overview</span></span>](mapi-property-overview.md)
+- [<span data-ttu-id="fe6a6-121">Implementieren von MAPI-Objekten</span><span class="sxs-lookup"><span data-stu-id="fe6a6-121">Implementing MAPI Objects</span></span>](implementing-mapi-objects.md)
 

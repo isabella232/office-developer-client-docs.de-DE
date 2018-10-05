@@ -8,20 +8,20 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 77835b48-43aa-8518-9712-754e84f1e713
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: 72dd2a27e89f00885710125f4ecb68be65f2185e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4716a6f42968d7451a5db36173c4e6a9e843c08e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567699"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25398122"
 ---
-# <a name="dntbl"></a><span data-ttu-id="08f85-103">DNTBL</span><span class="sxs-lookup"><span data-stu-id="08f85-103">DNTBL</span></span>
+# <a name="dntbl"></a><span data-ttu-id="b06e8-103">DNTBL</span><span class="sxs-lookup"><span data-stu-id="b06e8-103">DNTBL</span></span>
  
-<span data-ttu-id="08f85-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="08f85-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="b06e8-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b06e8-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="08f85-105">Informationen für das Herunterladen von den Inhalt eines Ordners auf dem Server während der [Tabelle Downloadstatus](download-table-state.md), als Teil einer vollständigen Synchronisierung für Inhalt in einem Speicher.</span><span class="sxs-lookup"><span data-stu-id="08f85-105">Information for downloading the contents of a folder from the server during the [download table state](download-table-state.md), as part of a full synchronization for contents on a store.</span></span>
+<span data-ttu-id="b06e8-105">Informationen für das Herunterladen von den Inhalt eines Ordners auf dem Server während der [Tabelle Downloadstatus](download-table-state.md), als Teil einer vollständigen Synchronisierung für Inhalt in einem Speicher.</span><span class="sxs-lookup"><span data-stu-id="b06e8-105">Information for downloading the contents of a folder from the server during the [download table state](download-table-state.md), as part of a full synchronization for contents on a store.</span></span>
   
-## <a name="quick-info"></a><span data-ttu-id="08f85-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="08f85-106">Quick info</span></span>
+## <a name="quick-info"></a><span data-ttu-id="b06e8-106">QuickInfo</span><span class="sxs-lookup"><span data-stu-id="b06e8-106">Quick info</span></span>
 
 ```cpp
 struct DNTBL 
@@ -47,83 +47,83 @@ struct DNTBL
 
 ```
 
-## <a name="members"></a><span data-ttu-id="08f85-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="08f85-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="b06e8-107">Elemente</span><span class="sxs-lookup"><span data-stu-id="b06e8-107">Members</span></span>
 
-<span data-ttu-id="08f85-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="08f85-108">_ulFlags_</span></span>
+<span data-ttu-id="b06e8-108">_ulFlags_</span><span class="sxs-lookup"><span data-stu-id="b06e8-108">_ulFlags_</span></span>
   
-> <span data-ttu-id="08f85-109">[in] Flags Ändern des Verhaltens</span><span class="sxs-lookup"><span data-stu-id="08f85-109">[in] Flags to modify behavior</span></span> 
+> <span data-ttu-id="b06e8-109">[in] Flags Ändern des Verhaltens</span><span class="sxs-lookup"><span data-stu-id="b06e8-109">[in] Flags to modify behavior</span></span> 
     
-  - <span data-ttu-id="08f85-110">DNT_OK</span><span class="sxs-lookup"><span data-stu-id="08f85-110">DNT_OK</span></span>
+  - <span data-ttu-id="b06e8-110">DNT_OK</span><span class="sxs-lookup"><span data-stu-id="b06e8-110">DNT_OK</span></span>
     
-    - <span data-ttu-id="08f85-111">[in] Download war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="08f85-111">[in] Download was successful.</span></span> <span data-ttu-id="08f85-112">Der Client legt dies nach dem Herunterladen von Informationen vom Server.</span><span class="sxs-lookup"><span data-stu-id="08f85-112">The client sets this after downloading information from the server.</span></span>
+    - <span data-ttu-id="b06e8-111">[in] Download war erfolgreich.</span><span class="sxs-lookup"><span data-stu-id="b06e8-111">[in] Download was successful.</span></span> <span data-ttu-id="b06e8-112">Der Client legt dies nach dem Herunterladen von Informationen vom Server.</span><span class="sxs-lookup"><span data-stu-id="b06e8-112">The client sets this after downloading information from the server.</span></span>
     
-<span data-ttu-id="08f85-113">_pstmReserved1_</span><span class="sxs-lookup"><span data-stu-id="08f85-113">_pstmReserved1_</span></span>
+<span data-ttu-id="b06e8-113">_pstmReserved1_</span><span class="sxs-lookup"><span data-stu-id="b06e8-113">_pstmReserved1_</span></span>
   
-> <span data-ttu-id="08f85-114">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-114">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="b06e8-114">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-114">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-115">_pstmReserved2_</span><span class="sxs-lookup"><span data-stu-id="08f85-115">_pstmReserved2_</span></span>
+<span data-ttu-id="b06e8-115">_pstmReserved2_</span><span class="sxs-lookup"><span data-stu-id="b06e8-115">_pstmReserved2_</span></span>
   
-> <span data-ttu-id="08f85-116">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-116">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="b06e8-116">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-116">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-117">_pstmReserved3_</span><span class="sxs-lookup"><span data-stu-id="08f85-117">_pstmReserved3_</span></span>
+<span data-ttu-id="b06e8-117">_pstmReserved3_</span><span class="sxs-lookup"><span data-stu-id="b06e8-117">_pstmReserved3_</span></span>
   
-> <span data-ttu-id="08f85-118">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-118">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="b06e8-118">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-118">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-119">_pstmReserved4_</span><span class="sxs-lookup"><span data-stu-id="08f85-119">_pstmReserved4_</span></span>
+<span data-ttu-id="b06e8-119">_pstmReserved4_</span><span class="sxs-lookup"><span data-stu-id="b06e8-119">_pstmReserved4_</span></span>
   
-> <span data-ttu-id="08f85-120">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-120">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+> <span data-ttu-id="b06e8-120">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-120">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-121">_pxicc_</span><span class="sxs-lookup"><span data-stu-id="08f85-121">_pxicc_</span></span>
+<span data-ttu-id="b06e8-121">_pxicc_</span><span class="sxs-lookup"><span data-stu-id="b06e8-121">_pxicc_</span></span>
   
->  <span data-ttu-id="08f85-122">[out] Zeiger auf die **IExchangeImportContentsChanges** Inhalt-Schnittstelle unterstützt, Herunterladen von Änderungen.</span><span class="sxs-lookup"><span data-stu-id="08f85-122">[out] Pointer to the **IExchangeImportContentsChanges** contents interface that supports downloading content changes.</span></span> <span data-ttu-id="08f85-123">Weitere Informationen zu **IExchangeImportContentsChanges**finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="08f85-123">For more information on **IExchangeImportContentsChanges**, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+>  <span data-ttu-id="b06e8-122">[out] Zeiger auf die **IExchangeImportContentsChanges** Inhalt-Schnittstelle unterstützt, Herunterladen von Änderungen.</span><span class="sxs-lookup"><span data-stu-id="b06e8-122">[out] Pointer to the **IExchangeImportContentsChanges** contents interface that supports downloading content changes.</span></span> <span data-ttu-id="b06e8-123">Weitere Informationen zu **IExchangeImportContentsChanges**finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="b06e8-123">For more information on **IExchangeImportContentsChanges**, see [ICS Evaluation Criteria](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
-<span data-ttu-id="08f85-124">_pxihc_</span><span class="sxs-lookup"><span data-stu-id="08f85-124">_pxihc_</span></span>
+<span data-ttu-id="b06e8-124">_pxihc_</span><span class="sxs-lookup"><span data-stu-id="b06e8-124">_pxihc_</span></span>
   
->  <span data-ttu-id="08f85-125">[out] Zeiger auf die **IExchangeImportHierarchyChanges** Hierarchie-Schnittstelle unterstützt, die Hierarchie inkrementelle Änderungen herunterladen.</span><span class="sxs-lookup"><span data-stu-id="08f85-125">[out] Pointer to the **IExchangeImportHierarchyChanges** hierarchy interface that supports downloading incremental hierarchy changes.</span></span> <span data-ttu-id="08f85-126">Weitere Informationen zu **IExchangeImportHierarchyChanges**finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="08f85-126">For more information on **IExchangeImportHierarchyChanges**, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+>  <span data-ttu-id="b06e8-125">[out] Zeiger auf die **IExchangeImportHierarchyChanges** Hierarchie-Schnittstelle unterstützt, die Hierarchie inkrementelle Änderungen herunterladen.</span><span class="sxs-lookup"><span data-stu-id="b06e8-125">[out] Pointer to the **IExchangeImportHierarchyChanges** hierarchy interface that supports downloading incremental hierarchy changes.</span></span> <span data-ttu-id="b06e8-126">Weitere Informationen zu **IExchangeImportHierarchyChanges**finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="b06e8-126">For more information on **IExchangeImportHierarchyChanges**, see [ICS Evaluation Criteria](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
-<span data-ttu-id="08f85-127">_pszName_</span><span class="sxs-lookup"><span data-stu-id="08f85-127">_pszName_</span></span>
+<span data-ttu-id="b06e8-127">_pszName_</span><span class="sxs-lookup"><span data-stu-id="b06e8-127">_pszName_</span></span>
   
->  <span data-ttu-id="08f85-128">[out] Name des Ordners.</span><span class="sxs-lookup"><span data-stu-id="08f85-128">[out] Name of the folder.</span></span> 
+>  <span data-ttu-id="b06e8-128">[out] Name des Ordners.</span><span class="sxs-lookup"><span data-stu-id="b06e8-128">[out] Name of the folder.</span></span> 
     
-<span data-ttu-id="08f85-129">_ftLastMod_</span><span class="sxs-lookup"><span data-stu-id="08f85-129">_ftLastMod_</span></span>
+<span data-ttu-id="b06e8-129">_ftLastMod_</span><span class="sxs-lookup"><span data-stu-id="b06e8-129">_ftLastMod_</span></span>
   
->  <span data-ttu-id="08f85-130">[out] Zeitpunkt der letzten Änderung des Ordners.</span><span class="sxs-lookup"><span data-stu-id="08f85-130">[out] Last modification time of the folder.</span></span> 
+>  <span data-ttu-id="b06e8-130">[out] Zeitpunkt der letzten Änderung des Ordners.</span><span class="sxs-lookup"><span data-stu-id="b06e8-130">[out] Last modification time of the folder.</span></span> 
     
-<span data-ttu-id="08f85-131">_ulRights_</span><span class="sxs-lookup"><span data-stu-id="08f85-131">_ulRights_</span></span>
+<span data-ttu-id="b06e8-131">_ulRights_</span><span class="sxs-lookup"><span data-stu-id="b06e8-131">_ulRights_</span></span>
   
->  <span data-ttu-id="08f85-132">[out] Der Wert der Eigenschaft **[PR_RIGHTS](http://msdn.microsoft.com/en-us/library/ee238052%28v=EXCHG.80%29.aspx)** des Ordners.</span><span class="sxs-lookup"><span data-stu-id="08f85-132">[out] Value of the **[PR_RIGHTS](http://msdn.microsoft.com/en-us/library/ee238052%28v=EXCHG.80%29.aspx)** property of the folder.</span></span> 
+>  <span data-ttu-id="b06e8-132">[out] Der Wert der Eigenschaft **[PR_RIGHTS](https://msdn.microsoft.com/library/ee238052%28v=EXCHG.80%29.aspx)** des Ordners.</span><span class="sxs-lookup"><span data-stu-id="b06e8-132">[out] Value of the **[PR_RIGHTS](https://msdn.microsoft.com/library/ee238052%28v=EXCHG.80%29.aspx)** property of the folder.</span></span> 
     
-<span data-ttu-id="08f85-133">_feid_</span><span class="sxs-lookup"><span data-stu-id="08f85-133">_feid_</span></span>
+<span data-ttu-id="b06e8-133">_feid_</span><span class="sxs-lookup"><span data-stu-id="b06e8-133">_feid_</span></span>
   
->  <span data-ttu-id="08f85-134">[out] Die EntryID des Ordners.</span><span class="sxs-lookup"><span data-stu-id="08f85-134">[out] Entry ID of the folder.</span></span> 
+>  <span data-ttu-id="b06e8-134">[out] Die EntryID des Ordners.</span><span class="sxs-lookup"><span data-stu-id="b06e8-134">[out] Entry ID of the folder.</span></span> 
     
-<span data-ttu-id="08f85-135">_uintReserved_</span><span class="sxs-lookup"><span data-stu-id="08f85-135">_uintReserved_</span></span>
+<span data-ttu-id="b06e8-135">_uintReserved_</span><span class="sxs-lookup"><span data-stu-id="b06e8-135">_uintReserved_</span></span>
   
->  <span data-ttu-id="08f85-136">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-136">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+>  <span data-ttu-id="b06e8-136">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-136">[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-137">_rgte_</span><span class="sxs-lookup"><span data-stu-id="08f85-137">_rgte_</span></span>
+<span data-ttu-id="b06e8-137">_rgte_</span><span class="sxs-lookup"><span data-stu-id="b06e8-137">_rgte_</span></span>
   
-> <span data-ttu-id="08f85-138">[out] Änderungen für normalen (oder nicht ausgeblendeten) und zugeordneten (oder ausgeblendet) Elemente.</span><span class="sxs-lookup"><span data-stu-id="08f85-138">[out] Changes for normal (or non-hidden) and associated (or hidden) items.</span></span>  <span data-ttu-id="08f85-139">*Rgte [0]* ist für normale Elemente und *Rgte [1]* ist für verknüpfte Objekte.</span><span class="sxs-lookup"><span data-stu-id="08f85-139">*rgte[0]*  is for normal items, and  *rgte[1]*  is for associated items.</span></span> <span data-ttu-id="08f85-140">Outlook wird dieser Member während des Herunterladens, wenn Sie inkrementelle Änderung Synchronisierung (ICS) verwenden.</span><span class="sxs-lookup"><span data-stu-id="08f85-140">Outlook populates this member during the downloading when using Incremental Change Synchronization (ICS).</span></span> <span data-ttu-id="08f85-141">Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="08f85-141">For more information on ICS, see [ICS Evaluation Criteria](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).</span></span>
+> <span data-ttu-id="b06e8-138">[out] Änderungen für normalen (oder nicht ausgeblendeten) und zugeordneten (oder ausgeblendet) Elemente.</span><span class="sxs-lookup"><span data-stu-id="b06e8-138">[out] Changes for normal (or non-hidden) and associated (or hidden) items.</span></span>  <span data-ttu-id="b06e8-139">*Rgte [0]* ist für normale Elemente und *Rgte [1]* ist für verknüpfte Objekte.</span><span class="sxs-lookup"><span data-stu-id="b06e8-139">*rgte[0]*  is for normal items, and  *rgte[1]*  is for associated items.</span></span> <span data-ttu-id="b06e8-140">Outlook wird dieser Member während des Herunterladens, wenn Sie inkrementelle Änderung Synchronisierung (ICS) verwenden.</span><span class="sxs-lookup"><span data-stu-id="b06e8-140">Outlook populates this member during the downloading when using Incremental Change Synchronization (ICS).</span></span> <span data-ttu-id="b06e8-141">Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).</span><span class="sxs-lookup"><span data-stu-id="b06e8-141">For more information on ICS, see [ICS Evaluation Criteria](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).</span></span>
     
-<span data-ttu-id="08f85-142">_lpsrReserved_</span><span class="sxs-lookup"><span data-stu-id="08f85-142">_lpsrReserved_</span></span>
+<span data-ttu-id="b06e8-142">_lpsrReserved_</span><span class="sxs-lookup"><span data-stu-id="b06e8-142">_lpsrReserved_</span></span>
   
->  <span data-ttu-id="08f85-143">[in] / [out] dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-143">[in]/[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+>  <span data-ttu-id="b06e8-143">[in] / [out] dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-143">[in]/[out] This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-144">_boReserved_</span><span class="sxs-lookup"><span data-stu-id="08f85-144">_boReserved_</span></span>
+<span data-ttu-id="b06e8-144">_boReserved_</span><span class="sxs-lookup"><span data-stu-id="b06e8-144">_boReserved_</span></span>
   
->  <span data-ttu-id="08f85-145">[in] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-145">[in]This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+>  <span data-ttu-id="b06e8-145">[in] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-145">[in]This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-146">_pReserved1_</span><span class="sxs-lookup"><span data-stu-id="08f85-146">_pReserved1_</span></span>
+<span data-ttu-id="b06e8-146">_pReserved1_</span><span class="sxs-lookup"><span data-stu-id="b06e8-146">_pReserved1_</span></span>
   
->  <span data-ttu-id="08f85-147">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-147">[out]This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+>  <span data-ttu-id="b06e8-147">[out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-147">[out]This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-<span data-ttu-id="08f85-148">_pReserved2_</span><span class="sxs-lookup"><span data-stu-id="08f85-148">_pReserved2_</span></span>
+<span data-ttu-id="b06e8-148">_pReserved2_</span><span class="sxs-lookup"><span data-stu-id="b06e8-148">_pReserved2_</span></span>
   
->  <span data-ttu-id="08f85-149">[in] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="08f85-149">[in]This member is reserved for the internal use of Outlook and is not supported.</span></span> 
+>  <span data-ttu-id="b06e8-149">[in] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="b06e8-149">[in]This member is reserved for the internal use of Outlook and is not supported.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="08f85-150">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="08f85-150">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b06e8-150">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b06e8-150">See also</span></span>
 
-- [<span data-ttu-id="08f85-151">Informationen über den Replikationszustandsautomaten</span><span class="sxs-lookup"><span data-stu-id="08f85-151">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)  
-- [<span data-ttu-id="08f85-152">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="08f85-152">MAPI Constants</span></span>](mapi-constants.md) 
-- [<span data-ttu-id="08f85-153">DNTBLE</span><span class="sxs-lookup"><span data-stu-id="08f85-153">DNTBLE</span></span>](dntble.md)
+- [<span data-ttu-id="b06e8-151">Informationen über den Replikationszustandsautomaten</span><span class="sxs-lookup"><span data-stu-id="b06e8-151">About the Replication State Machine</span></span>](about-the-replication-state-machine.md)  
+- [<span data-ttu-id="b06e8-152">MAPI-Konstanten</span><span class="sxs-lookup"><span data-stu-id="b06e8-152">MAPI Constants</span></span>](mapi-constants.md) 
+- [<span data-ttu-id="b06e8-153">DNTBLE</span><span class="sxs-lookup"><span data-stu-id="b06e8-153">DNTBLE</span></span>](dntble.md)
 

@@ -6,24 +6,24 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: f8ded1a6-3bbd-0d59-c9f0-ab84341888cd
-ms.openlocfilehash: 6ad91ef527383fba91c1d26460baaa4da97a0069
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0056c87f4926f440ffcfd85619fd5ab7cba308db
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797178"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25401650"
 ---
-# <a name="hyperlinkrowtype-complextype-visio-xml"></a><span data-ttu-id="b010d-102">HyperlinkRow_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="b010d-102">HyperlinkRow_Type complexType ('Visio XML')</span></span>
+# <a name="hyperlinkrowtype-complextype-visio-xml"></a><span data-ttu-id="75bc6-102">HyperlinkRow_Type ComplexType ("Visio XML")</span><span class="sxs-lookup"><span data-stu-id="75bc6-102">HyperlinkRow_Type complexType ('Visio XML')</span></span>
 
-## <a name="type-information"></a><span data-ttu-id="b010d-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="b010d-103">Type information</span></span>
+## <a name="type-information"></a><span data-ttu-id="75bc6-103">Informationen zum Typ</span><span class="sxs-lookup"><span data-stu-id="75bc6-103">Type information</span></span>
 
 |||
 |:-----|:-----|
-|<span data-ttu-id="b010d-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="b010d-104">**Namespace**</span></span> <br/> |http://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
-|<span data-ttu-id="b010d-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="b010d-105">**Schema file**</span></span> <br/> |<span data-ttu-id="b010d-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="b010d-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
-|<span data-ttu-id="b010d-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="b010d-107">**Extension base**</span></span> <br/> |<span data-ttu-id="b010d-108">NamedRow_Type</span><span class="sxs-lookup"><span data-stu-id="b010d-108">NamedRow_Type</span></span>  <br/> |
+|<span data-ttu-id="75bc6-104">**Namespace**</span><span class="sxs-lookup"><span data-stu-id="75bc6-104">**Namespace**</span></span> <br/> |https://schemas.microsoft.com/office/visio/2011/1/core  <br/> |
+|<span data-ttu-id="75bc6-105">**Schemadatei**</span><span class="sxs-lookup"><span data-stu-id="75bc6-105">**Schema file**</span></span> <br/> |<span data-ttu-id="75bc6-106">VisioSchema15-2012-06-05.xsd</span><span class="sxs-lookup"><span data-stu-id="75bc6-106">VisioSchema15-2012-06-05.xsd</span></span>  <br/> |
+|<span data-ttu-id="75bc6-107">**Erweiterungsbasis**</span><span class="sxs-lookup"><span data-stu-id="75bc6-107">**Extension base**</span></span> <br/> |<span data-ttu-id="75bc6-108">NamedRow_Type</span><span class="sxs-lookup"><span data-stu-id="75bc6-108">NamedRow_Type</span></span>  <br/> |
    
-## <a name="definition"></a><span data-ttu-id="b010d-109">Definition</span><span class="sxs-lookup"><span data-stu-id="b010d-109">Definition</span></span>
+## <a name="definition"></a><span data-ttu-id="75bc6-109">Definition</span><span class="sxs-lookup"><span data-stu-id="75bc6-109">Definition</span></span>
 
 ```XML
           <xs:complexType name="HyperlinkRow_Type">
@@ -44,18 +44,18 @@ ms.locfileid: "19797178"
       
 ```
 
-## <a name="elements-and-attributes"></a><span data-ttu-id="b010d-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="b010d-110">Elements and attributes</span></span>
+## <a name="elements-and-attributes"></a><span data-ttu-id="75bc6-110">Elemente und Attribute</span><span class="sxs-lookup"><span data-stu-id="75bc6-110">Elements and attributes</span></span>
 
-<span data-ttu-id="b010d-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="b010d-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
+<span data-ttu-id="75bc6-111">Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccurs**, **MaxOccurs**und **Wahl**, definiert finden Sie im Definitionsabschnitt.</span><span class="sxs-lookup"><span data-stu-id="75bc6-111">If the schema defines specific requirements, such as **sequence**, **minOccurs**, **maxOccurs**, and **choice**, see the definition section.</span></span> 
   
-### <a name="child-elements"></a><span data-ttu-id="b010d-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="b010d-112">Child elements</span></span>
+### <a name="child-elements"></a><span data-ttu-id="75bc6-112">Untergeordnete Elemente</span><span class="sxs-lookup"><span data-stu-id="75bc6-112">Child elements</span></span>
 
-|<span data-ttu-id="b010d-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="b010d-113">**Element**</span></span>|<span data-ttu-id="b010d-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="b010d-114">**Type**</span></span>|<span data-ttu-id="b010d-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b010d-115">**Description**</span></span>|
+|<span data-ttu-id="75bc6-113">**Element**</span><span class="sxs-lookup"><span data-stu-id="75bc6-113">**Element**</span></span>|<span data-ttu-id="75bc6-114">**Typ**</span><span class="sxs-lookup"><span data-stu-id="75bc6-114">**Type**</span></span>|<span data-ttu-id="75bc6-115">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="75bc6-115">**Description**</span></span>|
 |:-----|:-----|:-----|
-|[<span data-ttu-id="b010d-116">Cell</span><span class="sxs-lookup"><span data-stu-id="b010d-116">Cell</span></span>](cell-element-hyperlink-rowvisio-xml.md) <br/> |[<span data-ttu-id="b010d-117">Cell_Type</span><span class="sxs-lookup"><span data-stu-id="b010d-117">Cell_Type</span></span>](cell_type-complextypevisio-xml.md) <br/> ||
+|[<span data-ttu-id="75bc6-116">Cell</span><span class="sxs-lookup"><span data-stu-id="75bc6-116">Cell</span></span>](cell-element-hyperlink-rowvisio-xml.md) <br/> |[<span data-ttu-id="75bc6-117">Cell_Type</span><span class="sxs-lookup"><span data-stu-id="75bc6-117">Cell_Type</span></span>](cell_type-complextypevisio-xml.md) <br/> ||
    
-### <a name="attributes"></a><span data-ttu-id="b010d-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="b010d-118">Attributes</span></span>
+### <a name="attributes"></a><span data-ttu-id="75bc6-118">Attribute</span><span class="sxs-lookup"><span data-stu-id="75bc6-118">Attributes</span></span>
 
-<span data-ttu-id="b010d-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="b010d-119">None.</span></span>
+<span data-ttu-id="75bc6-119">Keine.</span><span class="sxs-lookup"><span data-stu-id="75bc6-119">None.</span></span>
   
 

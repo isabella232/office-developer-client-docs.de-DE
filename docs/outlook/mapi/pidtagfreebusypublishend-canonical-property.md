@@ -12,63 +12,63 @@ api_type:
 - HeaderDef
 ms.assetid: df239741-6a63-4cd4-9bbb-42c0f5c668a5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b539de9793c45e4b393452c264d72dda6fa58c4e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3b4a8cb7136eee914dc697d24e0374ccb4b6f8b1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568798"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25394727"
 ---
-# <a name="pidtagfreebusypublishend-canonical-property"></a><span data-ttu-id="ffa34-103">PidTagFreeBusyPublishEnd (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="ffa34-103">PidTagFreeBusyPublishEnd Canonical Property</span></span>
+# <a name="pidtagfreebusypublishend-canonical-property"></a><span data-ttu-id="813d2-103">PidTagFreeBusyPublishEnd (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="813d2-103">PidTagFreeBusyPublishEnd Canonical Property</span></span>
 
   
   
-<span data-ttu-id="ffa34-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="ffa34-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="813d2-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="813d2-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="ffa34-105">Die Endzeit des publishing Bereichs enthält.</span><span class="sxs-lookup"><span data-stu-id="ffa34-105">Contains the end time of the publishing range.</span></span>
+<span data-ttu-id="813d2-105">Die Endzeit des publishing Bereichs enthält.</span><span class="sxs-lookup"><span data-stu-id="813d2-105">Contains the end time of the publishing range.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="ffa34-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="ffa34-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="ffa34-107">PR_FREEBUSY_PUBLISH_END</span><span class="sxs-lookup"><span data-stu-id="ffa34-107">PR_FREEBUSY_PUBLISH_END</span></span>  <br/> |
-|<span data-ttu-id="ffa34-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="ffa34-108">Identifier:</span></span>  <br/> |<span data-ttu-id="ffa34-109">0x6848</span><span class="sxs-lookup"><span data-stu-id="ffa34-109">0x6848</span></span>  <br/> |
-|<span data-ttu-id="ffa34-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="ffa34-110">Data type:</span></span>  <br/> |<span data-ttu-id="ffa34-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="ffa34-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="ffa34-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="ffa34-112">Area:</span></span>  <br/> |<span data-ttu-id="ffa34-113">Frei/Gebucht-Informationen</span><span class="sxs-lookup"><span data-stu-id="ffa34-113">Free/Busy</span></span>  <br/> |
+|<span data-ttu-id="813d2-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="813d2-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="813d2-107">PR_FREEBUSY_PUBLISH_END</span><span class="sxs-lookup"><span data-stu-id="813d2-107">PR_FREEBUSY_PUBLISH_END</span></span>  <br/> |
+|<span data-ttu-id="813d2-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="813d2-108">Identifier:</span></span>  <br/> |<span data-ttu-id="813d2-109">0x6848</span><span class="sxs-lookup"><span data-stu-id="813d2-109">0x6848</span></span>  <br/> |
+|<span data-ttu-id="813d2-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="813d2-110">Data type:</span></span>  <br/> |<span data-ttu-id="813d2-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="813d2-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="813d2-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="813d2-112">Area:</span></span>  <br/> |<span data-ttu-id="813d2-113">Frei/Gebucht-Informationen</span><span class="sxs-lookup"><span data-stu-id="813d2-113">Free/Busy</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="ffa34-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="ffa34-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="813d2-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="813d2-114">Remarks</span></span>
 
-<span data-ttu-id="ffa34-115">Der Wert für diese Eigenschaft wird auf den Anfangstermin des publishing Bereichs durch Hinzufügen des Werts der **PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) berechnet.</span><span class="sxs-lookup"><span data-stu-id="ffa34-115">The value for this property is computed by adding the value of **PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) to the start date of the publishing range.</span></span> <span data-ttu-id="ffa34-116">Dieser Wert wird als die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC) ausgedrückt.</span><span class="sxs-lookup"><span data-stu-id="ffa34-116">This value is expressed as the number of minutes since midnight, January 1, 1601 in Coordinated Universal Time (UTC).</span></span>
+<span data-ttu-id="813d2-115">Der Wert für diese Eigenschaft wird auf den Anfangstermin des publishing Bereichs durch Hinzufügen des Werts der **PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) berechnet.</span><span class="sxs-lookup"><span data-stu-id="813d2-115">The value for this property is computed by adding the value of **PR_FREEBUSY_COUNT_MONTHS** ([PidTagFreeBusyCountMonths](pidtagfreebusycountmonths-canonical-property.md)) to the start date of the publishing range.</span></span> <span data-ttu-id="813d2-116">Dieser Wert wird als die Anzahl der Minuten seit Mitternacht, 1. Januar 1601 in koordinierter Weltzeit (UTC) ausgedrückt.</span><span class="sxs-lookup"><span data-stu-id="813d2-116">This value is expressed as the number of minutes since midnight, January 1, 1601 in Coordinated Universal Time (UTC).</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="ffa34-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="ffa34-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="813d2-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="813d2-117">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="ffa34-118">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="ffa34-118">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="813d2-118">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="813d2-118">Protocol specifications</span></span>
 
-<span data-ttu-id="ffa34-119">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ffa34-119">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="813d2-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="813d2-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ffa34-120">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="ffa34-120">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="813d2-120">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="813d2-120">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="ffa34-121">[[MS-OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="ffa34-121">[[MS-OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="813d2-121">[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="813d2-121">[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="ffa34-122">Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.</span><span class="sxs-lookup"><span data-stu-id="ffa34-122">Publishes the availability of a user or resource.</span></span>
+> <span data-ttu-id="813d2-122">Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.</span><span class="sxs-lookup"><span data-stu-id="813d2-122">Publishes the availability of a user or resource.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="ffa34-123">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="ffa34-123">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="813d2-123">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="813d2-123">Header files</span></span>
 
-<span data-ttu-id="ffa34-124">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="ffa34-124">Mapidefs.h</span></span>
+<span data-ttu-id="813d2-124">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="813d2-124">Mapidefs.h</span></span>
   
-> <span data-ttu-id="ffa34-125">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="ffa34-125">Provides data type definitions.</span></span>
+> <span data-ttu-id="813d2-125">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="813d2-125">Provides data type definitions.</span></span>
     
-<span data-ttu-id="ffa34-126">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="ffa34-126">Mapitags.h</span></span>
+<span data-ttu-id="813d2-126">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="813d2-126">Mapitags.h</span></span>
   
-> <span data-ttu-id="ffa34-127">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="ffa34-127">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="813d2-127">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="813d2-127">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="ffa34-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="ffa34-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="813d2-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="813d2-128">See also</span></span>
 
 
 
-[<span data-ttu-id="ffa34-129">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ffa34-129">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="813d2-129">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="813d2-129">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="ffa34-130">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="ffa34-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="813d2-130">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="813d2-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="ffa34-131">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="ffa34-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="813d2-131">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="813d2-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="ffa34-132">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="ffa34-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="813d2-132">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="813d2-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

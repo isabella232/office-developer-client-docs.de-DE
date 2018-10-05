@@ -12,69 +12,69 @@ api_type:
 - HeaderDef
 ms.assetid: aeb0fa71-f471-46c5-ad9c-f8afb3fed533
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 51a8f1768f9b4ed859989058c66044c807068386
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96a0b010a8ba26a0c1b0cb409f1aaabb308a1c01
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583932"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25400642"
 ---
-# <a name="pidtagmessagetome-canonical-property"></a><span data-ttu-id="7e4b0-103">PidTagMessageToMe (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="7e4b0-103">PidTagMessageToMe Canonical Property</span></span>
+# <a name="pidtagmessagetome-canonical-property"></a><span data-ttu-id="7e66c-103">PidTagMessageToMe (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="7e66c-103">PidTagMessageToMe Canonical Property</span></span>
 
   
   
-<span data-ttu-id="7e4b0-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7e4b0-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="7e66c-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="7e66c-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="7e4b0-105">Enthält True, wenn dieser Benutzer messaging speziell als primäre (Empfänger dieser Nachricht To heißt) und nicht Bestandteil einer Verteilerliste ist.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-105">Contains TRUE if this messaging user is specifically named as a primary (To) recipient of this message and is not part of a distribution list.</span></span> 
+<span data-ttu-id="7e66c-105">Enthält True, wenn dieser Benutzer messaging speziell als primäre (Empfänger dieser Nachricht To heißt) und nicht Bestandteil einer Verteilerliste ist.</span><span class="sxs-lookup"><span data-stu-id="7e66c-105">Contains TRUE if this messaging user is specifically named as a primary (To) recipient of this message and is not part of a distribution list.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="7e4b0-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="7e4b0-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="7e4b0-107">PR_MESSAGE_TO_ME</span><span class="sxs-lookup"><span data-stu-id="7e4b0-107">PR_MESSAGE_TO_ME</span></span>  <br/> |
-|<span data-ttu-id="7e4b0-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="7e4b0-108">Identifier:</span></span>  <br/> |<span data-ttu-id="7e4b0-109">0x0057</span><span class="sxs-lookup"><span data-stu-id="7e4b0-109">0x0057</span></span>  <br/> |
-|<span data-ttu-id="7e4b0-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="7e4b0-110">Data type:</span></span>  <br/> |<span data-ttu-id="7e4b0-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="7e4b0-111">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="7e4b0-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="7e4b0-112">Area:</span></span>  <br/> |<span data-ttu-id="7e4b0-113">Allgemeine messaging</span><span class="sxs-lookup"><span data-stu-id="7e4b0-113">General messaging</span></span>  <br/> |
+|<span data-ttu-id="7e66c-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="7e66c-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="7e66c-107">PR_MESSAGE_TO_ME</span><span class="sxs-lookup"><span data-stu-id="7e66c-107">PR_MESSAGE_TO_ME</span></span>  <br/> |
+|<span data-ttu-id="7e66c-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="7e66c-108">Identifier:</span></span>  <br/> |<span data-ttu-id="7e66c-109">0x0057</span><span class="sxs-lookup"><span data-stu-id="7e66c-109">0x0057</span></span>  <br/> |
+|<span data-ttu-id="7e66c-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="7e66c-110">Data type:</span></span>  <br/> |<span data-ttu-id="7e66c-111">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="7e66c-111">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="7e66c-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="7e66c-112">Area:</span></span>  <br/> |<span data-ttu-id="7e66c-113">Allgemeine messaging</span><span class="sxs-lookup"><span data-stu-id="7e66c-113">General messaging</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="7e4b0-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="7e4b0-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7e66c-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7e66c-114">Remarks</span></span>
 
-<span data-ttu-id="7e4b0-115">Diese Eigenschaft bietet eine bequeme Möglichkeit zum bestimmen, ob der Benutzername in der primären Empfängerliste explizit angezeigt wird, ohne alle Einträge in der Liste untersuchen.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-115">This property provides a convenient way to determine whether the user name appears explicitly in the primary recipient list, without examining all entries in the list.</span></span> 
+<span data-ttu-id="7e66c-115">Diese Eigenschaft bietet eine bequeme Möglichkeit zum bestimmen, ob der Benutzername in der primären Empfängerliste explizit angezeigt wird, ohne alle Einträge in der Liste untersuchen.</span><span class="sxs-lookup"><span data-stu-id="7e66c-115">This property provides a convenient way to determine whether the user name appears explicitly in the primary recipient list, without examining all entries in the list.</span></span> 
   
-<span data-ttu-id="7e4b0-116">Diese Eigenschaft unterstützt Sie auch automatisierte Verarbeitung von erhaltenen Nachrichten zum Zeitpunkt des Eingangs.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-116">This property also assists automated handling of received messages at the time of receipt.</span></span> <span data-ttu-id="7e4b0-117">Unter der Adressbuchhierarchie verwenden wird, diese Eigenschaft enthält FALSE oder nicht einbezogen wird, wenn der messaging-Benutzer nicht direkt in der Empfänger Tabelle aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-117">At the transport provider's option, this property either contains FALSE or is not included if the messaging user is not listed directly in the recipient table.</span></span> 
+<span data-ttu-id="7e66c-116">Diese Eigenschaft unterstützt Sie auch automatisierte Verarbeitung von erhaltenen Nachrichten zum Zeitpunkt des Eingangs.</span><span class="sxs-lookup"><span data-stu-id="7e66c-116">This property also assists automated handling of received messages at the time of receipt.</span></span> <span data-ttu-id="7e66c-117">Unter der Adressbuchhierarchie verwenden wird, diese Eigenschaft enthält FALSE oder nicht einbezogen wird, wenn der messaging-Benutzer nicht direkt in der Empfänger Tabelle aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="7e66c-117">At the transport provider's option, this property either contains FALSE or is not included if the messaging user is not listed directly in the recipient table.</span></span> 
   
-<span data-ttu-id="7e4b0-118">Nachrichtenübermittlung entsteht Verteilerlistenerweiterung oder eine Bezeichnung blind Carbon Copy, Blindkopie bewirkt keine diese Eigenschaft festgelegt werden soll.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-118">Message delivery resulting from distribution list expansion or a blind carbon copy designation does not cause this property to be set.</span></span> <span data-ttu-id="7e4b0-119">Der Empfänger muss explizit heißen.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-119">The recipient must be explicitly named.</span></span> 
+<span data-ttu-id="7e66c-118">Nachrichtenübermittlung entsteht Verteilerlistenerweiterung oder eine Bezeichnung blind Carbon Copy, Blindkopie bewirkt keine diese Eigenschaft festgelegt werden soll.</span><span class="sxs-lookup"><span data-stu-id="7e66c-118">Message delivery resulting from distribution list expansion or a blind carbon copy designation does not cause this property to be set.</span></span> <span data-ttu-id="7e66c-119">Der Empfänger muss explizit heißen.</span><span class="sxs-lookup"><span data-stu-id="7e66c-119">The recipient must be explicitly named.</span></span> 
   
-<span data-ttu-id="7e4b0-120">Nicht gesendete Nachrichten werden im Allgemeinen nicht **PR_MESSAGE_CC_ME** ([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md)), **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md)) oder diese Eigenschaft festgelegt.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-120">Unsent messages generally do not set the **PR_MESSAGE_CC_ME** ([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md)), **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md)), or this property.</span></span> <span data-ttu-id="7e4b0-121">Wenn sie in der Benutzer kann in öffentliche Nachrichtenspeichern, in der anderen Benutzer privaten Speicher, in den Dateien auf dem Datenträger, zugreifen oder in anderen empfangenen Nachrichten eingebettet, sie in der Regel die Werte, die festgelegt wurden, enthalten Nachrichten vorhanden sind der letzten Ausführung ein Transportdienstes übermittelt die Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-121">If they are present in messages the user can access in public message stores, in other users' private stores, in files on disk, or embedded inside other received messages, they generally contain the values to which they were set the last time a transport provider delivered the message.</span></span> 
+<span data-ttu-id="7e66c-120">Nicht gesendete Nachrichten werden im Allgemeinen nicht **PR_MESSAGE_CC_ME** ([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md)), **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md)) oder diese Eigenschaft festgelegt.</span><span class="sxs-lookup"><span data-stu-id="7e66c-120">Unsent messages generally do not set the **PR_MESSAGE_CC_ME** ([PidTagMessageCcMe](pidtagmessageccme-canonical-property.md)), **PR_MESSAGE_RECIP_ME** ([PidTagMessageRecipientMe](pidtagmessagerecipientme-canonical-property.md)), or this property.</span></span> <span data-ttu-id="7e66c-121">Wenn sie in der Benutzer kann in öffentliche Nachrichtenspeichern, in der anderen Benutzer privaten Speicher, in den Dateien auf dem Datenträger, zugreifen oder in anderen empfangenen Nachrichten eingebettet, sie in der Regel die Werte, die festgelegt wurden, enthalten Nachrichten vorhanden sind der letzten Ausführung ein Transportdienstes übermittelt die Nachricht an.</span><span class="sxs-lookup"><span data-stu-id="7e66c-121">If they are present in messages the user can access in public message stores, in other users' private stores, in files on disk, or embedded inside other received messages, they generally contain the values to which they were set the last time a transport provider delivered the message.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="7e4b0-122">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7e4b0-122">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="7e66c-122">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="7e66c-122">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="7e4b0-123">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="7e4b0-123">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="7e66c-123">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="7e66c-123">Protocol specifications</span></span>
 
-<span data-ttu-id="7e4b0-124">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7e4b0-124">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="7e66c-124">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7e66c-124">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="7e4b0-125">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-125">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="7e66c-125">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="7e66c-125">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="7e4b0-126">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7e4b0-126">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="7e66c-126">[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="7e66c-126">[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="7e4b0-127">Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-127">Specifies the properties and operations that are permissible on email message objects.</span></span>
+> <span data-ttu-id="7e66c-127">Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="7e66c-127">Specifies the properties and operations that are permissible on email message objects.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="7e4b0-128">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="7e4b0-128">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="7e66c-128">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="7e66c-128">Header files</span></span>
 
-<span data-ttu-id="7e4b0-129">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="7e4b0-129">Mapidefs.h</span></span>
+<span data-ttu-id="7e66c-129">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="7e66c-129">Mapidefs.h</span></span>
   
-> <span data-ttu-id="7e4b0-130">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-130">Provides data type definitions.</span></span>
+> <span data-ttu-id="7e66c-130">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="7e66c-130">Provides data type definitions.</span></span>
     
-<span data-ttu-id="7e4b0-131">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="7e4b0-131">Mapitags.h</span></span>
+<span data-ttu-id="7e66c-131">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="7e66c-131">Mapitags.h</span></span>
   
-> <span data-ttu-id="7e4b0-132">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="7e4b0-132">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="7e66c-132">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="7e66c-132">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="7e4b0-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7e4b0-133">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7e66c-133">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="7e66c-133">See also</span></span>
 
 
 
-[<span data-ttu-id="7e4b0-134">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7e4b0-134">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="7e66c-134">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7e66c-134">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="7e4b0-135">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7e4b0-135">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="7e66c-135">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="7e66c-135">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="7e4b0-136">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="7e4b0-136">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="7e66c-136">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="7e66c-136">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="7e4b0-137">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="7e4b0-137">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="7e66c-137">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="7e66c-137">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

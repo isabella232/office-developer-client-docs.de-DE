@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 1b0d1b52-6651-4de3-9381-86772d9d52a1
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e72c947a6e0d4052d3335c3e3cfaf5ffb94da669
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 66ba27d1d333be3217f2a22ca5d53449372c1f31
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593004"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25399235"
 ---
-# <a name="imslogonlogoff"></a><span data-ttu-id="fc87d-103">IMSLogon::Logoff</span><span class="sxs-lookup"><span data-stu-id="fc87d-103">IMSLogon::Logoff</span></span>
+# <a name="imslogonlogoff"></a><span data-ttu-id="66fb3-103">IMSLogon::Logoff</span><span class="sxs-lookup"><span data-stu-id="66fb3-103">IMSLogon::Logoff</span></span>
 
   
   
-<span data-ttu-id="fc87d-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="fc87d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="66fb3-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="66fb3-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="fc87d-105">Eine Nachricht Abmeldung Speicheranbieter.</span><span class="sxs-lookup"><span data-stu-id="fc87d-105">Logs off a message store provider.</span></span> 
+<span data-ttu-id="66fb3-105">Eine Nachricht Abmeldung Speicheranbieter.</span><span class="sxs-lookup"><span data-stu-id="66fb3-105">Logs off a message store provider.</span></span> 
   
 ```cpp
 HRESULT Logoff(
@@ -33,39 +33,39 @@ HRESULT Logoff(
 );
 ```
 
-## <a name="parameters"></a><span data-ttu-id="fc87d-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="fc87d-106">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="66fb3-106">Parameter</span><span class="sxs-lookup"><span data-stu-id="66fb3-106">Parameters</span></span>
 
- <span data-ttu-id="fc87d-107">_lpulFlags_</span><span class="sxs-lookup"><span data-stu-id="fc87d-107">_lpulFlags_</span></span>
+ <span data-ttu-id="66fb3-107">_lpulFlags_</span><span class="sxs-lookup"><span data-stu-id="66fb3-107">_lpulFlags_</span></span>
   
-> <span data-ttu-id="fc87d-108">[in] Reserviert. Ein Zeiger auf 0 (null) muss sein.</span><span class="sxs-lookup"><span data-stu-id="fc87d-108">[in] Reserved; must be a pointer to zero.</span></span>
+> <span data-ttu-id="66fb3-108">[in] Reserviert. Ein Zeiger auf 0 (null) muss sein.</span><span class="sxs-lookup"><span data-stu-id="66fb3-108">[in] Reserved; must be a pointer to zero.</span></span>
     
-## <a name="return-value"></a><span data-ttu-id="fc87d-109">R�ckgabewert</span><span class="sxs-lookup"><span data-stu-id="fc87d-109">Return value</span></span>
+## <a name="return-value"></a><span data-ttu-id="66fb3-109">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="66fb3-109">Return value</span></span>
 
-<span data-ttu-id="fc87d-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="fc87d-110">S_OK</span></span> 
+<span data-ttu-id="66fb3-110">S_OK</span><span class="sxs-lookup"><span data-stu-id="66fb3-110">S_OK</span></span> 
   
-> <span data-ttu-id="fc87d-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="fc87d-111">The call succeeded and has returned the expected value or values.</span></span>
+> <span data-ttu-id="66fb3-111">Der Aufruf erfolgreich ausgef�hrt und der erwartete Wert oder Werte zur�ckgegeben hat.</span><span class="sxs-lookup"><span data-stu-id="66fb3-111">The call succeeded and has returned the expected value or values.</span></span>
     
-## <a name="remarks"></a><span data-ttu-id="fc87d-112">Hinweise</span><span class="sxs-lookup"><span data-stu-id="fc87d-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="66fb3-112">Hinweise</span><span class="sxs-lookup"><span data-stu-id="66fb3-112">Remarks</span></span>
 
-<span data-ttu-id="fc87d-113">Nachricht Anbieter implementieren Sie die **IMSLogon::Logoff** -Methode eine Nachricht Speicheranbieter zwangsweise Herunterfahren.</span><span class="sxs-lookup"><span data-stu-id="fc87d-113">Message store providers implement the **IMSLogon::Logoff** method to forcibly shut down a message store provider.</span></span> <span data-ttu-id="fc87d-114">**IMSLogon::Logoff** wird in den folgenden Situationen aufgerufen:</span><span class="sxs-lookup"><span data-stu-id="fc87d-114">**IMSLogon::Logoff** is called in the following situations:</span></span> 
+<span data-ttu-id="66fb3-113">Nachricht Anbieter implementieren Sie die **IMSLogon::Logoff** -Methode eine Nachricht Speicheranbieter zwangsweise Herunterfahren.</span><span class="sxs-lookup"><span data-stu-id="66fb3-113">Message store providers implement the **IMSLogon::Logoff** method to forcibly shut down a message store provider.</span></span> <span data-ttu-id="66fb3-114">**IMSLogon::Logoff** wird in den folgenden Situationen aufgerufen:</span><span class="sxs-lookup"><span data-stu-id="66fb3-114">**IMSLogon::Logoff** is called in the following situations:</span></span> 
   
-- <span data-ttu-id="fc87d-115">Während MAPI deaktiviert Clientidentität nach einem Aufruf der Methode [IMAPISession::Logoff](imapisession-logoff.md) protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="fc87d-115">While MAPI is logging off a client after a call to the [IMAPISession::Logoff](imapisession-logoff.md) method.</span></span> 
+- <span data-ttu-id="66fb3-115">Während MAPI deaktiviert Clientidentität nach einem Aufruf der Methode [IMAPISession::Logoff](imapisession-logoff.md) protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="66fb3-115">While MAPI is logging off a client after a call to the [IMAPISession::Logoff](imapisession-logoff.md) method.</span></span> 
     
-- <span data-ttu-id="fc87d-116">Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="fc87d-116">While MAPI is logging off a message store provider.</span></span> <span data-ttu-id="fc87d-117">In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt.</span><span class="sxs-lookup"><span data-stu-id="fc87d-117">In this case, **IMSLogon::Logoff** is called as part of MAPI processing the [IUnknown::Release](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) method of the support object that the message store provider creates while it is processing an [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) or **IUnknown::Release** method call on a message store object.</span></span> 
+- <span data-ttu-id="66fb3-116">Während MAPI aus einer Nachricht Speicheranbieter protokolliert wird.</span><span class="sxs-lookup"><span data-stu-id="66fb3-116">While MAPI is logging off a message store provider.</span></span> <span data-ttu-id="66fb3-117">In diesem Fall **IMSLogon::Logoff** im Rahmen der Verarbeitung der [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode des Support-Objekts, mit dem Anbieter der Nachricht erstellt, während ein [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) oder **IUnknown verarbeitet wird MAPI aufgerufen wird: Version** Methodenaufruf für eine Nachricht Store-Objekt.</span><span class="sxs-lookup"><span data-stu-id="66fb3-117">In this case, **IMSLogon::Logoff** is called as part of MAPI processing the [IUnknown::Release](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) method of the support object that the message store provider creates while it is processing an [IMsgStore::StoreLogoff](imsgstore-storelogoff.md) or **IUnknown::Release** method call on a message store object.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="fc87d-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="fc87d-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="66fb3-118">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="66fb3-118">See also</span></span>
 
 
 
-[<span data-ttu-id="fc87d-119">IMAPISession::Logoff</span><span class="sxs-lookup"><span data-stu-id="fc87d-119">IMAPISession::Logoff</span></span>](imapisession-logoff.md)
+[<span data-ttu-id="66fb3-119">IMAPISession::Logoff</span><span class="sxs-lookup"><span data-stu-id="66fb3-119">IMAPISession::Logoff</span></span>](imapisession-logoff.md)
   
-[<span data-ttu-id="fc87d-120">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="fc87d-120">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
+[<span data-ttu-id="66fb3-120">IMAPISupport: IUnknown</span><span class="sxs-lookup"><span data-stu-id="66fb3-120">IMAPISupport : IUnknown</span></span>](imapisupportiunknown.md)
   
-[<span data-ttu-id="fc87d-121">IMsgStore::StoreLogoff</span><span class="sxs-lookup"><span data-stu-id="fc87d-121">IMsgStore::StoreLogoff</span></span>](imsgstore-storelogoff.md)
+[<span data-ttu-id="66fb3-121">IMsgStore::StoreLogoff</span><span class="sxs-lookup"><span data-stu-id="66fb3-121">IMsgStore::StoreLogoff</span></span>](imsgstore-storelogoff.md)
   
-[<span data-ttu-id="fc87d-122">IMSProvider::Logon</span><span class="sxs-lookup"><span data-stu-id="fc87d-122">IMSProvider::Logon</span></span>](imsprovider-logon.md)
+[<span data-ttu-id="66fb3-122">IMSProvider::Logon</span><span class="sxs-lookup"><span data-stu-id="66fb3-122">IMSProvider::Logon</span></span>](imsprovider-logon.md)
   
-[<span data-ttu-id="fc87d-123">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="fc87d-123">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
+[<span data-ttu-id="66fb3-123">MAPIFreeBuffer</span><span class="sxs-lookup"><span data-stu-id="66fb3-123">MAPIFreeBuffer</span></span>](mapifreebuffer.md)
   
-[<span data-ttu-id="fc87d-124">IMSLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="fc87d-124">IMSLogon : IUnknown</span></span>](imslogoniunknown.md)
+[<span data-ttu-id="66fb3-124">IMSLogon : IUnknown</span><span class="sxs-lookup"><span data-stu-id="66fb3-124">IMSLogon : IUnknown</span></span>](imslogoniunknown.md)
 
