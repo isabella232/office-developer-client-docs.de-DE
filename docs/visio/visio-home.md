@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: f5310aa0-75f5-4c33-897e-8cae5de2100a
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Visio.
-ms.openlocfilehash: e55c5ab195cf8f17eae98dbe61154b6a8fa7651e
-ms.sourcegitcommit: 539bc9a767ede52cb17c1b11ef7fac2fecd96fef
+ms.openlocfilehash: 7dbb12b76835641f9bf45bf78876fd667bacb19a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "22554162"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391192"
 ---
 # <a name="visio"></a>Visio
 
@@ -37,9 +37,9 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="downloads"></a>Downloads
   
-- [Visio 2013-SDK-Download](http://www.microsoft.com/download/details.aspx?id=36825)
+- [Visio 2013-SDK-Download](https://www.microsoft.com/download/details.aspx?id=36825)
 
-- [Visio 2016-SDK-Download](http://www.microsoft.com/download/details.aspx?id=51221)  
+- [Visio 2016-SDK-Download](https://www.microsoft.com/download/details.aspx?id=51221)  
 
 ### <a name="other-resources"></a>Sonstige Ressourcen
   

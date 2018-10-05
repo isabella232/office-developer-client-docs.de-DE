@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: bd50ab34-caae-4258-8afc-769e3cbc5220
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 44752e147569619589b23a380b2fefa511724ca7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ac1f0d839b1ea059ec2b8d94556808bea3850862
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571731"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383906"
 ---
 # <a name="pidliddistributionlistchecksum-canonical-property"></a>PidLidDistributionListChecksum (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die 32-Bit-CRC polynomial Prüfsumme für eine persönliche Verteilerliste Kontrollkästchen (CRC-32).
   
@@ -35,7 +35,7 @@ Gibt die 32-Bit-CRC polynomial Prüfsumme für eine persönliche Verteilerliste 
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft kann verwendet werden, zu erkennen, wann die **DispidDLMembers** ([PidLidDistributionListMembers](pidliddistributionlistmembers-canonical-property.md))-Eigenschaft aktualisiert wurde, ohne die Aktualisierung der anderen persönlichen Verteilerliste Liste Elementeigenschaften durch den CRC-32 auf dem vorhandenen computing der Wert der **DispidDLMembers** und diese mit dem Wert der Eigenschaft **DispidDLChecksum** zu vergleichen. 
   
@@ -43,11 +43,11 @@ Der Wert dieser Eigenschaft kann verwendet werden, zu erkennen, wann die **Dispi
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

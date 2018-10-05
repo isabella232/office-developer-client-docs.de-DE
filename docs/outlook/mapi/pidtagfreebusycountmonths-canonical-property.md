@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 278a77f2-65ec-4281-b406-942cc416a476
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e7dc8c06fca48c5f7c124a1fdf2228ebeb9da450
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 610e9d396442f981b7bcbf126e3086e6885399d6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22569981"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388938"
 ---
 # <a name="pidtagfreebusycountmonths-canonical-property"></a>PidTagFreeBusyCountMonths (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert für die Berechnung der Start- und Enddatum des Bereichs der Frei/Gebucht-Daten auf Öffentliche Ordner veröffentlicht werden soll.
   
@@ -34,7 +34,7 @@ Enthält den Wert für die Berechnung der Start- und Enddatum des Bereichs der F
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss größer als oder gleich 0 und kleiner oder gleich 36. Dies ist keine erforderliche Eigenschaft.
   
@@ -42,11 +42,11 @@ Der Wert dieser Eigenschaft muss größer als oder gleich 0 und kleiner oder gle
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

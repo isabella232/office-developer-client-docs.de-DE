@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 7b3b625b-6dea-4b12-99a9-152935bdfe39
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 18ce10ad73ba769f0ecc0bd9e4f12096f4227e42
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 30d4ad5e0fc1ecdc4c8eb06f75d39e38dd481269
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594544"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389974"
 ---
 # <a name="event-notification-in-mapi"></a>Ereignisbenachrichtigung in MAPI
 
@@ -59,6 +59,6 @@ Die folgende Abbildung zeigt der Kommunikation zwischen Empfängerobjekten darau
   
 ![Ereignisbenachrichtigungsaufrufe] (media/amapi_51.gif "Ereignisbenachrichtigungsaufrufe")
   
-(Bei Verwendung der AdviseSink.h und AdviseSink.cpp-Dateien) MFCMAPI (engl.) **CAdviseSink** -Klasse implementiert das Advise-Empfängerobjekt für alle Anrufe **Advise**. Weitere Informationen zu MFCMAPI (engl.) finden Sie unter [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md) und [MFCMAPI (engl.)](http://go.microsoft.com/fwlink/?LinkId=124154).
+(Bei Verwendung der AdviseSink.h und AdviseSink.cpp-Dateien) MFCMAPI (engl.) **CAdviseSink** -Klasse implementiert das Advise-Empfängerobjekt für alle Anrufe **Advise**. Weitere Informationen zu MFCMAPI (engl.) finden Sie unter [MFCMAPI (engl.) als ein Codebeispiel](mfcmapi-as-a-code-sample.md) und [MFCMAPI (engl.)](https://go.microsoft.com/fwlink/?LinkId=124154).
   
 

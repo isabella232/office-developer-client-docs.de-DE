@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 90d601d9-5eeb-40b6-885d-ccd8a95ae322
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fa29a55a5fc2ce89e125909d13a2c14a347ef831
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2d57e6a195036ead9eb42666876e91a72f65eb8b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594026"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385697"
 ---
 # <a name="pidlidsideeffects-canonical-property"></a>PidLidSideEffects (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Steuert, wie ein Meldungsobjekt vom Client verarbeitet wird, wenn bei der Eingabe der Endbenutzer fungiert.
   
@@ -35,7 +35,7 @@ Steuert, wie ein Meldungsobjekt vom Client verarbeitet wird, wenn bei der Eingab
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Muss auf eine bitweise oder 0 (null) oder mehrere der folgenden Werte festgelegt werden.
   
@@ -57,15 +57,15 @@ Muss auf eine bitweise oder 0 (null) oder mehrere der folgenden Werte festgelegt
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

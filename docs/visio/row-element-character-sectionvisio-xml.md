@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 764a8e77-5308-e6ce-8763-dc6e6090da9d
 description: Zeigt die Formatattribute für einen Text des Shapes, wie etwa Schriftart, Farbe, Textformat, Groß-/Kleinschreibung, Ausführung position relativ zur Grundlinie und die Schriftgröße.
-ms.openlocfilehash: 11194506a593a445656852b107f6fd780a39b9b0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 3d8aa3e508b2f045a2cf38faaa795922dcc14803
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797888"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387489"
 ---
 # <a name="row-element-character-section-visio-xml"></a>Row-Element (Abschnitt "Character") ("Visio XML")
 
 Zeigt die Formatattribute für einen Text des Shapes, wie etwa Schriftart, Farbe, Textformat, Groß-/Kleinschreibung, Ausführung position relativ zur Grundlinie und die Schriftgröße.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[CharacterRow_Type](characterrow_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.XML, master # .xml, Seite # .xml  <br/> |
    

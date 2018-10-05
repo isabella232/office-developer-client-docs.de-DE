@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e63792b1-9580-4702-a6d7-dd3ae5007a4a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cf4edcc22deafe47fccb4fa44782b33aa18b8cec
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 870b4e0edb360ac36525f94b0605af930eee8fa3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587180"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382596"
 ---
 # <a name="pidlidpercentcomplete-canonical-property"></a>PidLidPercentComplete (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, dass der Fortschritt der Benutzer für einen Vorgang vorgenommen hat. 
   
@@ -35,7 +35,7 @@ Gibt an, dass der Fortschritt der Benutzer für einen Vorgang vorgenommen hat.
 |Datentyp:  <br/> |PT_R8  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss eine Zahl größer oder gleich 0,0 und kleiner als oder gleich 1,0, in dem 1.0 gibt an, dass Arbeit abgeschlossen ist und 0,0 gibt an, dass Arbeit nicht begonnen hat.
   
@@ -45,27 +45,27 @@ Für ein Objekt Zeit gekennzeichnete Nachricht der Wert dieser Eigenschaft muss 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.
     
-[[MS-OXOFLAG]](http://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge im Zusammenhang mit kennzeichnen.
     
-[[MS-OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
     
-[[MS-OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und meeting-Objekte.
     
-[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > Verarbeitet die Reihenfolge und den Fluss für Datenübertragungen zwischen einem Client und Server.
     

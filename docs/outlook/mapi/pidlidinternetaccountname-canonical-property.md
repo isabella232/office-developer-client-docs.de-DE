@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 29bedadf-903d-419d-804d-dc8bd92b745d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ac47f150ebdd39ed5f2abe4b30a2cac5768fd229
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2da826fe7ab9e4d7ca3eaaf0f9806193c47100d1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565130"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386677"
 ---
 # <a name="pidlidinternetaccountname-canonical-property"></a>PidLidInternetAccountName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Benutzer sichtbar-e-Mail-Kontonamen über dem e-Mail-Nachricht gesendet wird.
   
@@ -35,7 +35,7 @@ Gibt den Benutzer sichtbar-e-Mail-Kontonamen über dem e-Mail-Nachricht gesendet
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Das Format dieser Zeichenfolge lautet Implementierung ab. Diese Eigenschaft kann zum Ermitteln des Servers, leiten Sie die Mail-vom Client verwendet werden, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   
@@ -43,11 +43,11 @@ Das Format dieser Zeichenfolge lautet Implementierung ab. Diese Eigenschaft kann
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

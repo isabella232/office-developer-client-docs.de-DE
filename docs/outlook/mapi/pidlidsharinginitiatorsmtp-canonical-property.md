@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4fb7d91d-4c51-41c1-9cb6-7b837dd12f11
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: be033af220135175003a6304c5429a5bdee6658e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: eb699b2312064f8ed330238962dd86992c046139
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566523"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391451"
 ---
 # <a name="pidlidsharinginitiatorsmtp-canonical-property"></a>PidLidSharingInitiatorSmtp (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die SMTP-Adresse des Benutzers, der die Freigabenachricht initiiert hat. Dies ist eine Eigenschaft eines eine Freigabenachricht. 
   
@@ -35,7 +35,7 @@ Gibt die SMTP-Adresse des Benutzers, der die Freigabenachricht initiiert hat. Di
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft muss auf den Wert der Eigenschaft **PR_SMTP_ADDRESS** ([PidTagSmtpAddress](pidtagsmtpaddress-canonical-property.md)) aus dem Adressbuch identifiziert durch die **DispidSharingInitiatorEid** ([PidLidSharingInitiatorEntryId](pidlidsharinginitiatorentryid-canonical-property.md))-Eigenschaft festgelegt und werden sollten ignoriert.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft muss auf den Wert der Eigenschaft **PR_SMTP_ADDRESS** ([PidTag
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS-OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > Teilt Postfachordner zwischen Clients.
     

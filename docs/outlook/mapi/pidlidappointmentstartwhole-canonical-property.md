@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: e5e8ed98-57af-40d0-85c4-9d9832626e6b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 05cd1428966f6c61e2f5e13e574a0bbcb253f7ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6f9fb9c3f02e66fd01e89742edcfba7391c36e3e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582602"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389134"
 ---
 # <a name="pidlidappointmentstartwhole-canonical-property"></a>PidLidAppointmentStartWhole (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Stellt das Datum und die Uhrzeit ein Termins beginnt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft gibt das Startdatum und die Uhrzeit des Ereignisses. Diese Eigenschaft muss in koordinierter Weltzeit (UTC) und muss kleiner als der Wert der Eigenschaft **DispidApptEndWhole** ([PidLidAppointmentEndWhole](pidlidappointmentendwhole-canonical-property.md)). Für eine Besprechungsserie wird diese Eigenschaft das Startdatum und die Uhrzeit der ersten Instanz entsprechend das Serienmuster.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft gibt das Startdatum und die Uhrzeit des Ereignisses. Diese Eig
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

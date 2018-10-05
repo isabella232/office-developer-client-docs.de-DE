@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6b690938-05bc-46a3-a40e-30f081403767
 description: Abrufen der aktuellen Instanz ProjectContext; Rufen Sie ab und durchlaufen Sie die Auflistung der veröffentlichten Projekte auf dem Server. Erstellen, abrufen, Auschecken und Löschen eines Projekts mithilfe der Project Server-JavaScript-Objektmodells; und ändern Sie die Eigenschaften des Projekts.
-ms.openlocfilehash: 966c1298d210cb608001e4ce2b390611a75bdb24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 10dac7edfa3e84cebfd0585bc8c4bff1ea22ea44
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796168"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382911"
 ---
 # <a name="create-retrieve-update-and-delete-projects-using-project-server-javascript"></a>Erstellen, abrufen, aktualisieren und Löschen von Projekten mit Project Server JavaScript
 
@@ -53,7 +53,7 @@ Die folgenden Schritte erstellen Sie eine Visual Studio 2012-Lösung, die ein Sh
     
 6. Klicken Sie im **Assistenten zum Anpassen von SharePoint**-Dialogfeld Wählen Sie **als Farmlösung bereitstellen**, und wählen Sie dann auf die Schaltfläche **Fertig stellen**. 
     
-7. Bearbeiten Sie den Wert der Eigenschaft **Website-URL** für das Projekt **ProjectsJSOM** entsprechend die URL der Project Web App-Instanz (z. B. `http://ServerName/PWA`).
+7. Bearbeiten Sie den Wert der Eigenschaft **Website-URL** für das Projekt **ProjectsJSOM** entsprechend die URL der Project Web App-Instanz (z. B. `https://ServerName/PWA`).
     
 ### <a name="to-create-the-application-page-in-visual-studio"></a>Zum Erstellen der Anwendungsseite in Visual Studio
 

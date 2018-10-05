@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: b1783f05-ced1-917f-8298-eca4ecfa3912
 description: Enthält Informationen zu einer Schriftart.
-ms.openlocfilehash: 8a66d5294e239e4540939cc7053e1f67a777144d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4c8f047d655be167dc058b3e29ac62161887ce99
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796955"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389778"
 ---
 # <a name="facename-element-facenamestype-complextype-visio-xml"></a>FaceName-Element (FaceNames_Type ComplexType) ("Visio XML")
 
 Enthält Informationen zu einer Schriftart.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[FaceName_Type](facename_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

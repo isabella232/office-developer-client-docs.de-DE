@@ -8,22 +8,22 @@ api_type:
 - COM
 ms.assetid: 807b6dc4-cdb7-40a4-87d7-ebc1ad5fab76
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: bdc81d78927e530037c65ca7fd61d722cd96bab7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3c634defcad76755fc6604a23d2091bb21e15111
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581440"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391444"
 ---
 # <a name="implementing-iunknown-in-c"></a>Implementieren von IUnknown in C
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Implementierungen von [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx) -Methode in C# sind C++ Implementierungen sehr ähnlich. Es gibt zwei grundlegende Schritte an der Implementierung: 
+Implementierungen von [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx) -Methode in C# sind C++ Implementierungen sehr ähnlich. Es gibt zwei grundlegende Schritte an der Implementierung: 
   
 1. Überprüfen die Parameter.
     
-2. Überprüfen den Bezeichner des mit der Liste der Schnittstellen, die durch das Objekt unterstützt die angeforderte Schnittstelle und Zurückgeben der E_NO_INTERFACE-Wert oder einen Zeiger gültige Schnittstelle. Wenn ein Schnittstellenzeiger zurückgegeben wird, sollte die Implementierung die [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) -Methode, um den Referenzzähler erhöhen auch aufrufen. 
+2. Überprüfen den Bezeichner des mit der Liste der Schnittstellen, die durch das Objekt unterstützt die angeforderte Schnittstelle und Zurückgeben der E_NO_INTERFACE-Wert oder einen Zeiger gültige Schnittstelle. Wenn ein Schnittstellenzeiger zurückgegeben wird, sollte die Implementierung die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode, um den Referenzzähler erhöhen auch aufrufen. 
     
 Der Hauptunterschied zwischen einer Implementierung von **QueryInterface** in C# und C++ ist der erste zusätzliche Parameter in der C-Version. Da der Parameterliste der Objektzeiger hinzugefügt wird, benötigen eine C#-Implementierung von **QueryInterface** Weitere Parameter Überprüfung als eine C++-Implementierung. Die Logik für die Überprüfung der Identifier, erhöht den Referenzzähler und Zurückgeben eines Objektzeigers muss in beiden Sprachen identisch sein. 
   
@@ -64,7 +64,7 @@ STDMETHODIMP STATUS_QueryInterface(LPMYSTATUSOBJ lpMyObj, REFIID riid,
 
 ```
 
-Während die Implementierung der **AddRef** -Methode in C# eine C++-Implementierung ähnlich ist, kann eine C#-Implementierung der [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methode aufwendigeres als eine C++-Version abrufen. Dies ist, da der Großteil der Funktionalität Zusammenhang mit der Freigabe eines Objekts in C++ Konstruktor und Destruktor integriert werden kann und C hat kein entsprechender Mechanismus. Alle diese Funktionalität muss in der **Version** -Methode enthalten sein. Darüber hinaus ist aufgrund der zusätzliche Parameter und dessen explizite Vtable, weitere Validierung erforderlich. 
+Während die Implementierung der **AddRef** -Methode in C# eine C++-Implementierung ähnlich ist, kann eine C#-Implementierung der [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methode aufwendigeres als eine C++-Version abrufen. Dies ist, da der Großteil der Funktionalität Zusammenhang mit der Freigabe eines Objekts in C++ Konstruktor und Destruktor integriert werden kann und C hat kein entsprechender Mechanismus. Alle diese Funktionalität muss in der **Version** -Methode enthalten sein. Darüber hinaus ist aufgrund der zusätzliche Parameter und dessen explizite Vtable, weitere Validierung erforderlich. 
   
 Der folgende Aufruf von **AddRef** -Methode veranschaulicht eine typische C-Implementierung für ein Statusobjekt. 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b13b5d7b-413e-4405-8a35-0422477a9e86
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6de470a284b91126854a0c1324f5665fd72868ef
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 53bc27b4ddd05b4a52328c605a6d4f673c91afd2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577352"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383821"
 ---
 # <a name="pidtagscheduleinfomonthsmerged-canonical-property"></a>PidTagScheduleInfoMonthsMerged (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der, die Monate, für welche Frei/Gebucht-Daten vom Typ beschäftigt oder einen außerhalb von Office (OOF) Nachricht in der Frei/Gebucht-Nachricht vorhanden ist. 
   
@@ -34,7 +34,7 @@ Enthält eine Liste der, die Monate, für welche Frei/Gebucht-Daten vom Typ besc
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Ereignisse vom Typ mit Vorbehalt Frei/Gebucht-Informationen sind nicht in dieser Eigenschaft enthalten. Die Syntax der-Format und Integritätsregeln dieser Eigenschaft werden die gleichen, die von **PR_SCHDINFO_MONTHS_TENTATIVE** ([PidTagScheduleInfoMonthsTentative](pidtagscheduleinfomonthstentative-canonical-property.md)), aber finden Sie unter Termine, die auf das zugehörige Calendar-Objekt ABWESEND oder beschäftigt gekennzeichnet sind. 
   
@@ -42,11 +42,11 @@ Ereignisse vom Typ mit Vorbehalt Frei/Gebucht-Informationen sind nicht in dieser
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.
     

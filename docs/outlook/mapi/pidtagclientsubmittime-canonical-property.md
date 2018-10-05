@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d46e1063-6421-410d-a445-7477fea42089
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8c7ca5b2b6f5f3131c2fcb70ff0043825a68a91f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 851441e419c17d8f5fef27c785ea4b829a4ae443
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580124"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385837"
 ---
 # <a name="pidtagclientsubmittime-canonical-property"></a>PidTagClientSubmitTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Zeit für der Absender eine Nachricht gesendet. 
   
@@ -34,7 +34,7 @@ Enthält Datum und Zeit für der Absender eine Nachricht gesendet.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachrichtzeit  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Anbieter wird **PR_CLIENT_SUBMIT_TIME** auf die Zeit, die die Clientanwendung [IMessage::SubmitMessage](imessage-submitmessage.md)aufgerufen. 
   
@@ -42,7 +42,7 @@ Der Anbieter wird **PR_CLIENT_SUBMIT_TIME** auf die Zeit, die die Clientanwendun
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

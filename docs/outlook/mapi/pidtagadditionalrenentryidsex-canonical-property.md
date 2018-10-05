@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: b5e896e7-c0c6-4ad1-bf91-9daba3a1e4d4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: fcea014ca4c1b1629505127484c44ae990eed855
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 57ab68d4c53693c769a4aadf8737f57ef5e73fcd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590806"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390415"
 ---
 # <a name="pidtagadditionalrenentryidsex-canonical-property"></a>PidTagAdditionalRenEntryIdsEx (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ordner mit Sonderfunktion Eintrags-IDs für ein Store-Objekt enthält. Jeder Eintrag in dieser mehrwertige Eigenschaft kann eine oder mehrere EntryIDs zugeordnet werden, d. h., eine 1: n-Beziehung zwischen dem Eintrag und die zugeordneten Eintrags-IDs vorhanden ist.
   
@@ -34,7 +34,7 @@ Ordner mit Sonderfunktion Eintrags-IDs für ein Store-Objekt enthält. Jeder Ein
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn diese Eigenschaft verwendet wird, enthält sie ein Array von Blöcken, die Eintrags-IDs für die Ordner angibt. Die Blöcke führen Sie das Format durch die folgenden vier Tabellen angegeben.
   
@@ -75,7 +75,7 @@ Wenn der Wert der **PersistBlockType** nicht der hier definiert ist, der **Persi
 
 |**Name**|**Wert**|**Wert der ElementDataSize**|**Beschreibung**|
 |:-----|:-----|:-----|:-----|
-|RSF_ELID_HEADER  <br/> |0x0002  <br/> |0x0004  <br/> |Gibt an, dass dieser Block **ElementData** Feld einen Header DWORD-Wert enthält. Wie dieser Wert interpretiert wird, hängt von den Block **wobei Sie PersistID** Typ ab.  <br/> Für alle **wobei Sie PersistID** Typen in [[MS-OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb.aspx)angegeben beträgt dieser Wert 0 (null).  <br/> |
+|RSF_ELID_HEADER  <br/> |0x0002  <br/> |0x0004  <br/> |Gibt an, dass dieser Block **ElementData** Feld einen Header DWORD-Wert enthält. Wie dieser Wert interpretiert wird, hängt von den Block **wobei Sie PersistID** Typ ab.  <br/> Für alle **wobei Sie PersistID** Typen in [[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb.aspx)angegeben beträgt dieser Wert 0 (null).  <br/> |
 |RSF_ELID_ENTRYID  <br/> |0x0001  <br/> |Variable  <br/> |Gibt an, dass dieser Block die **EntryID** des Ordners ein, **wobei Sie PersistID**gemäß enthält.  <br/> |
 |ELEMENT_SENTINEL  <br/> |0x0000  <br/> |0x0000  <br/> |Gibt an, dass keine weitere **PersistElement** Blöcke verarbeitet werden.  <br/> |
    
@@ -85,19 +85,19 @@ Wenn der Wert der **PersistElementType** nicht der hier definiert ist, der **Per
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > Ermöglicht die Behandlung von zulassen/blockieren-Listen und die Bestimmung des junk-e-Mail-Nachrichten.
     
-[[MS-OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Erstellen und Ordner mit Sonderfunktion in einem Postfach suchen.
     
-[[MS-OXPHISH]](http://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
+[[MS-OXPHISH]](https://msdn.microsoft.com/library/ed49ab26-ba13-4d4c-8a94-98d4ceecd4b7%28Office.15%29.aspx)
   
 > Identifiziert und e-Mail-Nachrichten, die an Empfänger Preisgabe von vertraulichen Informationen (wie Kennwörter und andere persönliche Informationen) zu einer nicht vertrauenswürdigen Quelle markiert.
     

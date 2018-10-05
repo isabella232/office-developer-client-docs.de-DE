@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: e0f37485-55c9-40f0-bc8c-48f7297f9f50
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: ea9656f9571777478d3db9a2613fbff5ddef0ee6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 41d953db8e00ff52cd09a27e2f7550f9f1879321
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592290"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386222"
 ---
 # <a name="releasing-the-transport-provider"></a>Freigeben des Transportanbieters
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Wenn MAPI oder die MAPI-Warteschlange beendet eine Anmeldung Transportobjekt verwenden ist:
   
@@ -27,7 +27,7 @@ Wenn MAPI oder die MAPI-Warteschlange beendet eine Anmeldung Transportobjekt ver
     
 2. Der Transportdienst wird das Statusobjekt durch Aufrufen der Methode [IMAPISupport::MakeInvalid](imapisupport-makeinvalid.md) ungültig. Ob der Adressbuchhierarchie Nachrichtenobjekte ungültig, die hängt gesendet oder empfangen zum Zeitpunkt des Anrufs **TransportLogoff** der Kennzeichen, die an **TransportLogoff**übergeben wurden.
     
-3. Der Transportdienst Ruft die des Unterstützungsobjekts [IUnknown](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode zum Entfernen der Adressbuchhierarchie Zeile aus der Statustabelle und aus internen Tabellen eine beliebige eindeutige Bezeichner (UIDs), die mit der [IMAPISupport festgelegt wurden: SetProviderUID](imapisupport-setprovideruid.md) Methode. Es verringert die Anzahl der bekannten Logon-Objekten, die auf dieses Anbieterobjekt aktiv. Wenn die Anzahl 0 (null) erreicht, ruft MAPI die [IXPProvider::Shutdown](ixpprovider-shutdown.md) -Methode und die **Freigabe** für das Provider-Objekt. Wenn dies das letzte bekannte Anbieterobjekt verwenden diese DLL für diesen Prozess war, ruft MAPI **FreeLibrary** -Funktion der DLL zu einem späteren Zeitpunkt. Speicher für das MAPI-Support-Objekt wird freigegeben und **Release** -Methode das Support-Objekt zurückgibt. 
+3. Der Transportdienst Ruft die des Unterstützungsobjekts [IUnknown](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode zum Entfernen der Adressbuchhierarchie Zeile aus der Statustabelle und aus internen Tabellen eine beliebige eindeutige Bezeichner (UIDs), die mit der [IMAPISupport festgelegt wurden: SetProviderUID](imapisupport-setprovideruid.md) Methode. Es verringert die Anzahl der bekannten Logon-Objekten, die auf dieses Anbieterobjekt aktiv. Wenn die Anzahl 0 (null) erreicht, ruft MAPI die [IXPProvider::Shutdown](ixpprovider-shutdown.md) -Methode und die **Freigabe** für das Provider-Objekt. Wenn dies das letzte bekannte Anbieterobjekt verwenden diese DLL für diesen Prozess war, ruft MAPI **FreeLibrary** -Funktion der DLL zu einem späteren Zeitpunkt. Speicher für das MAPI-Support-Objekt wird freigegeben und **Release** -Methode das Support-Objekt zurückgibt. 
     
 4. Die **TransportLogoff** -Methode gibt S_OK zurück. 
     

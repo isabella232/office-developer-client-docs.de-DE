@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 56288f55-b3ba-42df-9c90-f9b5857f19a1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7077210504614d7d95a7f545ea6f37ce02c92fdf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bee22a7a435b99f4b94473a3f6eb4b7f32517128
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563247"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387202"
 ---
 # <a name="pidtagsearchfoldertemplateid-canonical-property"></a>PidTagSearchFolderTemplateId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die ID der Vorlage, die für die Suche verwendet wird.
   
@@ -34,21 +34,21 @@ Enthält die ID der Vorlage, die für die Suche verwendet wird.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Ordner Suchkriterien wird durch eine Vorlage angegeben. Diese Eigenschaft für die Nachricht, die den Suchordner definiert identifiziert die zugehörige Vorlage. Zusätzlich zu den Suchkriterien definieren, eine Vorlage auch Ordner, die von der Suche ausschließen definiert, Elemente aus der Suche ausschließen definiert und gibt den Wert des **PR_WB_SF_STORAGE_TYPE** ([PidTagSearchFolderStorageType](pidtagsearchfolderstoragetype-canonical-property.md)).
   
-Weitere Informationen zu Search Ordnervorlagen finden Sie unter [[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx) . 
+Weitere Informationen zu Search Ordnervorlagen finden Sie unter [[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx) . 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.
     

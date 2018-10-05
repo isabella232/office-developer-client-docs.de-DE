@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 1f31f7f4-fbda-4337-95e5-5474dd1bf84a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 45d4b0bfe7f902ee2cfe1d735c990d80f8fbb60d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 22d3e649641dbe688912ecece7fde73a555f4a88
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588944"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383191"
 ---
 # <a name="pidtagattachrendering-canonical-property"></a>PidTagAttachRendering (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine Microsoft Windows-Metadatei mit Informationen für eine Anlage enthält. 
   
@@ -34,7 +34,7 @@ Eine Microsoft Windows-Metadatei mit Informationen für eine Anlage enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Zweck dieser Eigenschaft ist ein Symbol oder andere bildliche Darstellung, die innerhalb der übergeordneten Nachricht zum Zeitpunkt der Anlage angezeigt werden kann. Diese Darstellung umfasst in der Regel den Namen der Anlage, falls vorhanden, und die Art der Anlage, wie beispielsweise Microsoft Office Word-Dokument. Eine Clientanwendung können diese Darstellung in der Anzeige der Nachricht. 
   
@@ -52,7 +52,7 @@ In allen Fällen beachten die Clientanwendung Sie, dass diese Eigenschaft in der
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

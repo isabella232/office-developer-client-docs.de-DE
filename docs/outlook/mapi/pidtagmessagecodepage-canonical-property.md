@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: eef73e34-470c-4c37-94ce-ea95fe83bc10
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f75a5e10a59d7c6db4e43d2552a38d523b537790
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 49f2c1c0b8af21f837582698763c17b9c41e1923
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580201"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387230"
 ---
 # <a name="pidtagmessagecodepage-canonical-property"></a>PidTagMessageCodepage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Codepage, die für die Nachricht verwendet wird.
   
@@ -34,7 +34,7 @@ Enthält die Codepage, die für die Nachricht verwendet wird.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die Ordner-Objekt auf der Seite Code wird verwendet, wenn diese Eigenschaft auf 0 (null) festgelegt ist.
   
@@ -42,15 +42,15 @@ Die Ordner-Objekt auf der Seite Code wird verwendet, wenn diese Eigenschaft auf 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXPFOAB]](http://msdn.microsoft.com/library/258a07a7-34a7-4373-87c1-cddf51447d00%28Office.15%29.aspx)
+[[MS-OXPFOAB]](https://msdn.microsoft.com/library/258a07a7-34a7-4373-87c1-cddf51447d00%28Office.15%29.aspx)
   
 > Gibt die Methode spielt Offlineadressbuch (OAB) Adressbuchdaten vom Server an den Client.
     

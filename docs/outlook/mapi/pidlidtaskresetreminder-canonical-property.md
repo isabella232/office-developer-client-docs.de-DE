@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f6da69ff-a913-4a65-bb07-8ad3c5685e5e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e16c1b46b5a8181b1225c706dbed6cd1bb3f486f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9a438fb2b1862d44905a63fda3e5f68b7878cd99
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583176"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384955"
 ---
 # <a name="pidlidtaskresetreminder-canonical-property"></a>PidLidTaskResetReminder (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob zukünftige Instanzen von Aufgabenserien Erinnerungen, benötigen, obwohl **DispidReminderSet** ([PidLidReminderSet](pidlidreminderset-canonical-property.md)) auf false festgelegt ist.
   
@@ -35,25 +35,25 @@ Gibt an, ob zukünftige Instanzen von Aufgabenserien Erinnerungen, benötigen, o
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Dieser Wert wird auf TRUE festgelegt, wenn die Aufgabe Erinnerung geschlossen ist, und andernfalls auf FALSE festgelegt. Wenn nicht festgelegt, wird davon ausgegangen, dass Standardwert ist FALSE.
   
-Wie in [[MS-OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)angegeben gibt die **DispidReminderSet** -Eigenschaft, ob eine Erinnerung für den Vorgang festgelegt ist. Diese Eigenschaft gibt jedoch nur das Vorhandensein einer Erinnerung für eine einzelne Aufgabe an. Es kann nicht verwendet werden, als eigenständige Anwendung, um festzustellen, ob eine zukünftige Instanz einer Aufgabenserie eine Erinnerung benötigt. 
+Wie in [[MS-OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)angegeben gibt die **DispidReminderSet** -Eigenschaft, ob eine Erinnerung für den Vorgang festgelegt ist. Diese Eigenschaft gibt jedoch nur das Vorhandensein einer Erinnerung für eine einzelne Aufgabe an. Es kann nicht verwendet werden, als eigenständige Anwendung, um festzustellen, ob eine zukünftige Instanz einer Aufgabenserie eine Erinnerung benötigt. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.
     
-[[MS-OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS-OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und das Interaktionsmodell für e-Mail und anderen Objekt Erinnerungen.
     

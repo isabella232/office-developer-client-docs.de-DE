@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4b202bc1-f718-446a-950f-634ffee47baf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f66a570273d78f63ced110a4bdc8a12a49c531b6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 855610c43cfaa64fa69e6987743b137b188d84a4
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22595244"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387244"
 ---
 # <a name="pidnameacceptlanguage-canonical-property"></a>PidNameAcceptLanguage (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Einen Wert für [RFC3282] Accept-Language-Header Feld enthält.
   
@@ -35,7 +35,7 @@ Einen Wert für [RFC3282] Accept-Language-Header Feld enthält.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |E-Mail  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Um den Wert dieser Eigenschaft festzulegen, sollte ein Accept-Language-Header-Feld mit den gewünschten Wert Multipurpose Internet Message Extensions (MIME) Clients geschrieben werden. MIME-Clients können stattdessen ein Kopfzeilenfeld X akzeptieren Sprache schreiben. MIME-Leser sollten auf den Wert dieser Eigenschaft den Wert der entweder Kopfzeilenfeld kopieren. Wenn beide Kopffelder vorhanden sind, sollten MIME-Leser das Accept-Language-Header-Feld verwenden.
   
@@ -43,11 +43,11 @@ Um den Wert dieser Eigenschaft festzulegen, sollte ein Accept-Language-Header-Fe
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
     

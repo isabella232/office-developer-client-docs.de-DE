@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b5eea554-6bca-42d1-b943-1327f0d70584
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 954e6fdf2f306f5a49e2d32e191c41f146ef5997
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7ad68a8ba527879871e79dd85e79d577291d32a8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573019"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386047"
 ---
 # <a name="pidtagownerappointmentid-canonical-property"></a>PidTagOwnerAppointmentId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Bezeichner für einen Termin in den Besitzer Zeitplan.
   
@@ -34,7 +34,7 @@ Enthält einen Bezeichner für einen Termin in den Besitzer Zeitplan.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Termin  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird in Besprechungsanfragen verwendet. Es stellt keine dar, eine Eintrags-ID, aber eine lange Ganzzahl, die den Termin in der Adresse des Absenders Zeitplan eindeutig identifiziert.
   
@@ -42,19 +42,19 @@ Diese Eigenschaft wird in Besprechungsanfragen verwendet. Es stellt keine dar, e
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     
-[[MS-OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und meeting-Objekte.
     
-[[MS-OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
 > Codiert und decodiert Nachrichten- und Objekte, die auf eine effiziente Streamdarstellung.
     

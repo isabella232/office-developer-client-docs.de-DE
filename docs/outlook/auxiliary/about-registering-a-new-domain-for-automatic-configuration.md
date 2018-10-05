@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: a7ab8a50-dd30-4ba5-b6d8-e6d1f482e6f1
 description: Outlook bietet eine Möglichkeit zum Angeben einer neuen Nachricht Service-Domäne für die automatische Konfiguration und ermöglichen die Nachricht-Dienstanbieters für das Dienstkonto konfiguriert.
-ms.openlocfilehash: c1daea81fe18e5d1088a233a3fcdff076419d6bc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bf06ff8d145ed6173e3545f784f8b5b7b5f433be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790924"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388602"
 ---
 # <a name="about-registering-a-new-domain-for-automatic-configuration"></a>Informationen zum Registrieren einer neuen Domäne für die automatische Konfiguration
 
@@ -35,9 +35,9 @@ Wenn Outlook die automatische Konfiguration für ein e-Mail-Konto beginnt, über
   
 Wenn Sie der angegebenen Dienst ist derzeit nicht in Mapisvc.inf, registriert oder der Nachricht-Dienstanbieter installiert ist, aber die DLL-Datei verfügt über eine Version vor dem angegebenen Mindestwert, Outlook verwendet den angegebenen Anzeigenamen und fordert den Benutzer zum Installieren der Anbieter. Wenn der Benutzer annimmt, leitet Outlook den Benutzer zum angegebenen Installationsspeicherort, damit der Benutzer den Anbieter installieren kann. Installieren den Anbieter registriert den Dienst in Mapisvc.inf.
   
-Wenn der Nachrichtendienst ist derzeit in Mapisvc.inf registriert, und die Service Provider DLL-Datei eine geeignete Version ist, Outlook Message-Dienst mithilfe von [IMsgServiceAdmin:: CreateMsgService](http://msdn.microsoft.com/library/0135f049-0311-45e5-9685-78597d599a4e%28Office.15%29.aspx)erstellt und konfiguriert es anschließend mithilfe von [ IMsgServiceAdmin::ConfigureMsgService](http://msdn.microsoft.com/library/a08f5905-2585-49ca-abb7-a77f2736f604%28Office.15%29.aspx). Automatische Konfiguration von Outlook verwendet die folgenden drei Eigenschaften zum Zulassen des Dienstanbieters für das Konto eingerichtet: [PidTagAutoConfigurationUserName](http://msdn.microsoft.com/library/05dfa0e2-4ab1-4f57-9009-6a815aca87bd%28Office.15%29.aspx), [PidTagAutoConfigurationUserEmail](http://msdn.microsoft.com/library/845140c8-5454-4b47-acec-ab5aff00b768%28Office.15%29.aspx)und [PidTagAutoConfigurationUserPassword ](http://msdn.microsoft.com/library/d33e7c45-55d8-4dc1-ade9-605542d87e61%28Office.15%29.aspx).
+Wenn der Nachrichtendienst ist derzeit in Mapisvc.inf registriert, und die Service Provider DLL-Datei eine geeignete Version ist, Outlook Message-Dienst mithilfe von [IMsgServiceAdmin:: CreateMsgService](https://msdn.microsoft.com/library/0135f049-0311-45e5-9685-78597d599a4e%28Office.15%29.aspx)erstellt und konfiguriert es anschließend mithilfe von [ IMsgServiceAdmin::ConfigureMsgService](https://msdn.microsoft.com/library/a08f5905-2585-49ca-abb7-a77f2736f604%28Office.15%29.aspx). Automatische Konfiguration von Outlook verwendet die folgenden drei Eigenschaften zum Zulassen des Dienstanbieters für das Konto eingerichtet: [PidTagAutoConfigurationUserName](https://msdn.microsoft.com/library/05dfa0e2-4ab1-4f57-9009-6a815aca87bd%28Office.15%29.aspx), [PidTagAutoConfigurationUserEmail](https://msdn.microsoft.com/library/845140c8-5454-4b47-acec-ab5aff00b768%28Office.15%29.aspx)und [PidTagAutoConfigurationUserPassword ](https://msdn.microsoft.com/library/d33e7c45-55d8-4dc1-ade9-605542d87e61%28Office.15%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Dateiformat von MapiSvc.inf](http://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
+- [Dateiformat von MapiSvc.inf](https://msdn.microsoft.com/library/b48eda17-83a8-4dc4-85c8-4ca827d13d25%28Office.15%29.aspx)
 

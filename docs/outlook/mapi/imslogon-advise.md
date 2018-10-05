@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a3c5d937-642b-463b-b5a0-5d099e651895
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9cd0442a715fb5441ab8efefb9574f09f2e2c1ff
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: abe4867b965f05e781f931d2e72920474d007d78
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587859"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382757"
 ---
 # <a name="imslogonadvise"></a>IMSLogon::Advise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Registriert ein Objekt mit einem Anbieter für Benachrichtigungen zu Änderungen im Nachrichtenspeicher Nachricht. Nachrichtenspeicher sendet dann Benachrichtigungen zu Änderungen an das registrierte Objekt.
   
@@ -71,7 +71,7 @@ HRESULT Advise(
   
 > [out] Ein Zeiger auf eine Variable, die bei einer erfolgreichen Rückgabe die Anzahl der Verbindung für die benachrichtigungsregistrierung enthält. Die Nummer muss ungleich NULL sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -81,13 +81,13 @@ MAPI_E_NO_SUPPORT
   
 > Der Vorgang wird durch MAPI oder durch eine oder mehrere Dienstanbieter nicht unterstützt.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Nachricht-Anbieter implementiert die **IMSLogon::Advise** -Methode, um ein Objekt für Benachrichtigung Rückrufe registrieren. Wenn eine Änderung für das angegebene Objekt auftritt, überprüft der Anbieter finden Sie unter welche Ereignis Maskenbit im Parameter _UlEventMask_ gesetzt wurde und somit die Art der Änderung. Wenn ein bit festgelegt ist, ruft der Anbieter die [IMAPIAdviseSink::OnNotify](imapiadvisesink-onnotify.md) -Methode für die Advise-Empfängerobjekt durch den Parameter _LpAdviseSink_ Sie das Ereignis melden angegeben. Daten, die in der Benachrichtigungsstruktur der **OnNotify** Routine übergeben wird das Ereignis beschrieben. 
   
 Der Aufruf von **OnNotify** kann auftreten, während des Anrufs, der das Objekt geändert wird, oder zu einem späteren Zeitpunkt. Auf Systemen, die mehreren Threads der Ausführung zu unterstützen, kann der Aufruf von **OnNotify** auf einem beliebigen Thread auftreten. Um einen Anruf an **OnNotify** sicher zu behandeln, die zu einem ungünstigen Zeitpunkt auftreten, sollte eine Clientanwendung die [HrThisThreadAdviseSink](hrthisthreadadvisesink.md) -Funktion verwenden. 
   
-Um Benachrichtigungen zu ermöglichen, der Nachricht Speicher-Anbieter, der **Advise** muss eine Kopie des Zeigers auf das _LpAdviseSink_ implementiert advise-Empfängerobjekt; Hierzu ruft der Anbieter die [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) -Methode für die Advise-Empfänger, dessen Objektzeiger verwalten, bis benachrichtigungsregistrierung mit einem Aufruf der Methode [IMSLogon::Unadvise](imslogon-unadvise.md) abgebrochen wird. Die **Advise** -Implementierung sollte weisen eine Verbindungsnummer zu der benachrichtigungsregistrierung und rufen **AddRef** für diese Verbindungsnummer vor der Rückgabe im _LpulConnection_ -Parameter. Dienstanbieter können das Empfängerobjekt Advise freigeben, müssen sie die Nummer nicht freigeben, bis **Unadvise** aufgerufen wurde, bevor die Registrierung wird abgebrochen. 
+Um Benachrichtigungen zu ermöglichen, der Nachricht Speicher-Anbieter, der **Advise** muss eine Kopie des Zeigers auf das _LpAdviseSink_ implementiert advise-Empfängerobjekt; Hierzu ruft der Anbieter die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode für die Advise-Empfänger, dessen Objektzeiger verwalten, bis benachrichtigungsregistrierung mit einem Aufruf der Methode [IMSLogon::Unadvise](imslogon-unadvise.md) abgebrochen wird. Die **Advise** -Implementierung sollte weisen eine Verbindungsnummer zu der benachrichtigungsregistrierung und rufen **AddRef** für diese Verbindungsnummer vor der Rückgabe im _LpulConnection_ -Parameter. Dienstanbieter können das Empfängerobjekt Advise freigeben, müssen sie die Nummer nicht freigeben, bis **Unadvise** aufgerufen wurde, bevor die Registrierung wird abgebrochen. 
   
 Nachdem ein Aufruf von **Advise** erfolgreich abgeschlossen wurde und bevor **Unadvise** aufgerufen wurde, müssen für das Empfängerobjekt Advise freigegeben werden muss Anbieter vorbereitet werden. Daher sollte ein Anbieter seine Advise-Empfängerobjekt freigeben, nachdem **Advise** zurückgegeben wird, sofern eine bestimmte langfristige Verwendung dafür ist. 
   

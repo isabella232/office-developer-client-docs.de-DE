@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e4fc8bd9-2ec4-462e-b6cb-e533b323bd05
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 309d2ee5310f4e329b3f08eabe98bdf834a4fd92
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 253b14d6b8dd0fa7e41d0dcbd4c6db89c47be720
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563093"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387090"
 ---
 # <a name="pidtaglastverbexecutiontime-canonical-property"></a>PidTagLastVerbExecutionTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Uhrzeit, wann das letzte Verb ausgeführt wurde.
   
@@ -38,11 +38,11 @@ Enthält die Uhrzeit, wann das letzte Verb ausgeführt wurde.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und meeting-Objekte.
     

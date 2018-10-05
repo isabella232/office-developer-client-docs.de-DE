@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ffbab371-1a1d-4aa4-ad31-17549a74513c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 90dc35e72fc863ab12d9d6df9c54def7af788efd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b62779567a7dbd298fdd313e90b13fb223e4e47e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568889"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389925"
 ---
 # <a name="pidlidtimezone-canonical-property"></a>PidLidTimeZone (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt Informationen über die Zeitzone einer Besprechungsserie.
   
@@ -35,19 +35,19 @@ Gibt Informationen über die Zeitzone einer Besprechungsserie.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft ist schreibgeschützt, wenn die **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft nicht festgelegt ist, aber die **LID_IS_RECURRING** ([PidLidIsRecurring](pidlidisrecurring-canonical-property.md))-Eigenschaft ist TRUE und **LID_IS_EXCEPTION** ([ PidLidIsException](pidlidisexception-canonical-property.md))-Eigenschaft lautet FALSE. Das untere Wort gibt einen Index in einer Tabelle, die Informationen zur Zeitzone enthält. Die obere Wort ist nur das höchste Bit gelesen werden. Wenn dieses Bit gesetzt ist, klicken Sie dann berücksichtigt die Zeitzone auf die verwiesen wird nicht, dass Sommerzeit (Ziel), andernfalls die neuen Sommerzeitregeln Datumsangaben in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx) beschrieben ausgeführt wird. 
+Diese Eigenschaft ist schreibgeschützt, wenn die **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft nicht festgelegt ist, aber die **LID_IS_RECURRING** ([PidLidIsRecurring](pidlidisrecurring-canonical-property.md))-Eigenschaft ist TRUE und **LID_IS_EXCEPTION** ([ PidLidIsException](pidlidisexception-canonical-property.md))-Eigenschaft lautet FALSE. Das untere Wort gibt einen Index in einer Tabelle, die Informationen zur Zeitzone enthält. Die obere Wort ist nur das höchste Bit gelesen werden. Wenn dieses Bit gesetzt ist, klicken Sie dann berücksichtigt die Zeitzone auf die verwiesen wird nicht, dass Sommerzeit (Ziel), andernfalls die neuen Sommerzeitregeln Datumsangaben in [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx) beschrieben ausgeführt wird. 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 59db25bc-0283-6f56-0aa9-9be98a3e9041
 description: MIME (Multipurpose Internet Mail Extensions) codierten BLOB von Bilddaten wie Windows-Metadatei, Bitmap oder OLE-Daten enthält.
-ms.openlocfilehash: d548ce8a6b05f8a9a104aee96c0982c6dbccc417
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: cce7665230fb9e68bf37002e1953944a5b8f8082
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797068"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382681"
 ---
 # <a name="foreigndata-element-shapesheettype-complextype-visio-xml"></a>ForeignData-Element (ShapeSheet_Type ComplexType) ("Visio XML")
 
 MIME (Multipurpose Internet Mail Extensions) codierten BLOB von Bilddaten wie Windows-Metadatei, Bitmap oder OLE-Daten enthält.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ForeignData_Type](foreigndata_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
    

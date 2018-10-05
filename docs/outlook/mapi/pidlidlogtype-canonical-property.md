@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 6cfcc048-03b9-4e34-bb92-480fe808e910
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 7e8a624090181ae35e4bf2828f72b645e5011728
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b4e8ef3f38a373cd3bab7af6f01d42113fe5fdc3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570051"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391423"
 ---
 # <a name="pidlidlogtype-canonical-property"></a>PidLidLogType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Anzeigenamen der Anwendung Journaling (beispielsweise "MSWord"), und ist in der Regel ein formfreies-Attribut einer Journal-Nachricht, in der Regel eine Zeichenfolge.
   
@@ -39,11 +39,11 @@ Enthält den Anzeigenamen der Anwendung Journaling (beispielsweise "MSWord"), un
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOJRNL]](http://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
+[[MS-OXOJRNL]](https://msdn.microsoft.com/library/2aa04fd2-0f36-4ce4-9178-c0fc70aa8d43%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Journale zulässig sind.
     

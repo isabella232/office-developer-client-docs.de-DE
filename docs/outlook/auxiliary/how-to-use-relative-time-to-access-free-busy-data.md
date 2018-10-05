@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 13aa6ae2-47b9-2cf4-a6ef-651f1338dd49
 description: Die IFreeBusyData-Schnittstelle in der Frei/Gebucht-API verwendet ein Konzept der relative Zeit, die die Anzahl der Minuten seit dem 1. Januar 1601, ausgedrückt als Weltzeit (UTC) ist und einen Wert vom Typ LONG ist.
-ms.openlocfilehash: b83cd46cfcc4d84d4fc3bf000dd8b0acdda545dc
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1b977fc3aebd1f2b20e51f24caa36d6bbf2862ba
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790946"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386936"
 ---
 # <a name="use-relative-time-to-access-freebusy-data"></a>Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten
 
@@ -26,7 +26,7 @@ Im folgenden sind einige häufig verwendete relativen Zeitwerte:
     
 Verwenden Sie die vorherigen Mindest- und relative Zeitwerte zu überprüfen, dass Ihre relativen Zeitwerte gültig sind.
   
-Da NTFS Dateizeiten systemintern im [FILETIME](http://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx) -Format aufzeichnet, kann es im folgenden Codebeispiel wird mit der relative Zeit und **FILETIME**konvertieren praktisch sein. 
+Da NTFS Dateizeiten systemintern im [FILETIME](https://msdn.microsoft.com/library/9baf8a0e-59e3-4fbd-9616-2ec9161520d1%28Office.15%29.aspx) -Format aufzeichnet, kann es im folgenden Codebeispiel wird mit der relative Zeit und **FILETIME**konvertieren praktisch sein. 
   
 ```cpp
 static const LONGLONG UnitsPerMinute = 600000000; 
@@ -54,6 +54,6 @@ void FileTimeToRTime(FILETIME *pft, LONG* prtime)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)
+- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)
 - [IFreeBusyData](ifreebusydata.md)
 

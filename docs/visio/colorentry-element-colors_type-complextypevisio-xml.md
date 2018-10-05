@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f325ad8-bbc7-28bf-9e48-1fde4fbdbdc0
 description: Enthält einen Eintrag Farbe an.
-ms.openlocfilehash: 934680b36428dd272d383ce421e86ae6d5c707cf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 14ef92069ce8d963ce4a0770324843321804c5cd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796660"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385340"
 ---
 # <a name="colorentry-element-colorstype-complextype-visio-xml"></a>ColorEntry-Element (Colors_Type ComplexType) ("Visio XML")
 
 Enthält einen Eintrag Farbe an.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ColorEntry_Type](colorentry_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

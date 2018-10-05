@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e56042e9-5bb7-4a99-b6de-1546d4ca07f0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bbc9dcf2218907b5d31ce1fc9f904e6ae1da47d9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f76b0a5482647fe3e181a36d7dcd8cb60ffc8985
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594012"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388581"
 ---
 # <a name="imapipropcopyto"></a>IMAPIProp::CopyTo
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Kopiert oder verschiebt alle Eigenschaften, mit Ausnahme von speziell Ausgeschlossene Eigenschaften.
   
@@ -95,7 +95,7 @@ MAPI_NOREPLACE
   
 > [in, out] Bei Eingabe einen Zeiger auf einen Zeiger auf eine **SPropProblemArray** -Struktur. andernfalls **null**, gibt an, keine Notwendigkeit zur Fehlerinformationen. Wenn _LppProblems_ einen gültigen Zeiger für die Eingabe ist, gibt **CopyTo** detaillierte Informationen zu Fehlern in eine oder mehrere Eigenschaften kopieren. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -139,7 +139,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > Der Eigenschaftentyp ist nicht vom Anrufer erwartet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Standardmäßig wird die **IMAPIProp::CopyTo** -Methode kopiert oder verschiebt alle Eigenschaften des aktuellen Objekts ein Zielobjekt. **CopyTo** wird verwendet, wenn ein Objekt kopiert oder genau mit der gesamten oder die meisten ihrer Eigenschaften intakt verschoben werden soll. 
   
@@ -173,7 +173,7 @@ Wenn **CopyTo** S_OK zurückgibt, frei die zurückgegebene Struktur **SPropProbl
   
 Wenn Sie Eigenschaften, die für den Objekttyp Quelle eindeutig sind kopieren, müssen Sie sicherstellen, dass Zielobjekt des gleichen Typs ist. **CopyTo** verhindert nicht, dass Sie Eigenschaften, die um einen Objekttyp mit einem anderen Typ des Objekts in der Regel gehören, zuordnen. Zum Schluss kommen zum Kopieren von Eigenschaften, die für Zielobjekt sinnvoll ist. Beispielsweise sollten Sie eine Adressbuchcontainer nicht Nachrichteneigenschaften kopieren. 
   
-Um sicherzustellen, dass Sie zwischen Objekten des gleichen Typs kopieren, prüfen Sie, ob das Quell- und Ziel-Objekt den gleichen Typ, entweder durch Vergleichen Objektzeigern oder den Aufruf von [QueryInterface](http://msdn.microsoft.com/en-us/library/ms682521%28v=VS.85%29.aspx). Legen Sie die Schnittstelle-ID auf den _LpInterface_ der standard-Benutzeroberfläche für das Quellobjekt. Darüber hinaus werden Sie sicher, dass der Objekttyp oder **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))-Eigenschaft für die beiden Objekte identisch ist. Wenn Sie aus einer Nachricht kopieren, legen Sie _LpInterface_ IID_IMessage und die **PR_OBJECT_TYPE** für beide Objekte MAPI_MESSAGE fest. 
+Um sicherzustellen, dass Sie zwischen Objekten des gleichen Typs kopieren, prüfen Sie, ob das Quell- und Ziel-Objekt den gleichen Typ, entweder durch Vergleichen Objektzeigern oder den Aufruf von [QueryInterface](https://msdn.microsoft.com/library/ms682521%28v=VS.85%29.aspx). Legen Sie die Schnittstelle-ID auf den _LpInterface_ der standard-Benutzeroberfläche für das Quellobjekt. Darüber hinaus werden Sie sicher, dass der Objekttyp oder **PR_OBJECT_TYPE** ([PidTagObjectType](pidtagobjecttype-canonical-property.md))-Eigenschaft für die beiden Objekte identisch ist. Wenn Sie aus einer Nachricht kopieren, legen Sie _LpInterface_ IID_IMessage und die **PR_OBJECT_TYPE** für beide Objekte MAPI_MESSAGE fest. 
   
 Wenn ein ungültiger Zeiger im _LpDestObj_ -Parameter übergeben wird, sind die Ergebnisse unvorhersehbar. 
   
@@ -189,15 +189,15 @@ Das **PR_NULL** ([PidTagNull](pidtagnull-canonical-property.md))-Tag-Eigenschaft
   
 Die Nützlichkeit des **CopyTo** Features zum Ausschließen von Schnittstellen ist möglicherweise nicht offensichtlich die Nützlichkeit von Eigenschaften ausschließen. Wenn Sie auf ein Objekt kopieren, die keiner Gruppe von Eigenschaften vorhanden sind, können Sie eine Schnittstelle ausschließen. Wenn Sie Eigenschaften aus einem Ordner in einer Anlage kopieren, sind die einzigen Eigenschaften, mit denen die Anlage zusammenarbeiten kann beispielsweise die generischen Eigenschaften [IMAPIProp](imapipropiunknown.md) Implementierung verfügbar sind. Der Kopiervorgang [IMAPIFolder](imapifolderimapicontainer.md) ausgeschlossen, erhalten die Anlage nicht bestimmte Ordner Eigenschaften. 
   
-Wenn Sie den Parameter _RgiidExclude_ verwenden, um eine Schnittstelle auszuschließen, werden auch alle Schnittstellen, die von dieser Schnittstelle abgeleitet ausgeschlossen. Ausschließen von [IMAPIContainer](imapicontainerimapiprop.md) bewirkt beispielsweise, dass Ordner oder Adresse Adressbuch-Container, je nach den Typ des Anbieters ausgeschlossen werden sollen. Schließen Sie keine **IMAPIProp** oder [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) , da so viele Schnittstellen, die von ihnen abgeleitet werden. 
+Wenn Sie den Parameter _RgiidExclude_ verwenden, um eine Schnittstelle auszuschließen, werden auch alle Schnittstellen, die von dieser Schnittstelle abgeleitet ausgeschlossen. Ausschließen von [IMAPIContainer](imapicontainerimapiprop.md) bewirkt beispielsweise, dass Ordner oder Adresse Adressbuch-Container, je nach den Typ des Anbieters ausgeschlossen werden sollen. Schließen Sie keine **IMAPIProp** oder [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) , da so viele Schnittstellen, die von ihnen abgeleitet werden. 
   
 Ignorieren Sie MAPI_E_COMPUTED Fehler in der Struktur **SPropProblemArray** im _LppProblems_ -Parameter zurückgegeben. 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
 |File.cpp  <br/> |LoadFromMSG  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProp::CopyTo** -Methode, um Eigenschaften aus einer MSG-Datei in ein [IMAPIMessageSite](imapimessagesiteiunknown.md) -Objekt zu kopieren.  <br/> |
 |FolderDlg.cpp  <br/> |CFolderDlg::HandlePaste  <br/> |MFCMAPI (engl.) verwendet die **IMAPIProp::CopyTo** -Methode, um Eigenschaften aus einer Datenquelle Nachricht in einer Zielnachricht während eines Einfügevorgangs zu kopieren.  <br/> |

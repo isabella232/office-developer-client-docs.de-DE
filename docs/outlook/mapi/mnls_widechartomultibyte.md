@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f64cde12-7ed1-444f-8ca4-51cb3ea514cf
 description: 'Zuletzt geändert: 21 Februar 2012'
-ms.openlocfilehash: 6957888f6727175d73d277cf4f5b84dc234d22ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ad41f9b6060e5cfbabecfd9bb29a47815929d6b5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22570037"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385515"
 ---
 # <a name="mnlswidechartomultibyte"></a>MNLS_WideCharToMultiByte
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Diese Funktion ähnelt **WideCharToMultiByte**, der eine Zeichenfolge mit UTF-16 (Breitzeichen) in eine neue Zeichenfolge zugeordnet ist. Die neue Zeichenfolge ist nicht unbedingt aus einem multibyte-Zeichen festgelegt.
   
@@ -69,17 +69,17 @@ int MNLS_WideCharToMultiByte(
   
 > [out] Optional. Zeiger auf ein Flag, das angibt, ob die Funktion einer Standardwerte für die Zeichen in der Konvertierung verwendet hat.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Gibt die Anzahl der in den Puffer auf den _LpMultiByteStr_ bei erfolgreicher geschriebenen Bytes zurück. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen. Weitere Informationen finden Sie unter [WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx).
+Diese Funktion wird die Funktion **WideCharToMultiByte** umbrochen. Weitere Informationen finden Sie unter [WideCharToMultiByte](https://msdn.microsoft.com/library/dd374130%28VS.85%29.aspx).
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[WideCharToMultiByte](http://msdn.microsoft.com/en-us/library/dd374130%28VS.85%29.aspx)
+[WideCharToMultiByte](https://msdn.microsoft.com/library/dd374130%28VS.85%29.aspx)
 

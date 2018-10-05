@@ -8,23 +8,23 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 84b16927-964e-24be-feaa-e0c11cf062f3
 description: Definiert das Wetter-Element.
-ms.openlocfilehash: 689c390f621d18f680de9635c3d82711300f8030
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 2273f7ce6c6a04464ea3da430661c3d6f410cc9f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796199"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388441"
 ---
 # <a name="weatherdata-element-outlook-weather-information-schema"></a>WeatherData-Element (Outlook Wetter Informationen-Schema)
 
 Definiert das Wetter-Element.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> ||
-|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherinfo.xsd  <br/> |
 |**Schemadatei** <br/> |GetWeatherInfo.xsd  <br/> |
    
 ## <a name="definition"></a>Definition

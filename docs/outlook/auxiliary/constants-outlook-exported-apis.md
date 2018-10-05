@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 7590a30e-3fd8-7ae3-f077-c80f6cc21d7b
 description: Dieses Thema enthält Konstantendefinitionen für APIs, die Outlook exportiert.
-ms.openlocfilehash: 8b7a9d70b2fc5d26c52a8729797221a44526360c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 65181932b858da1b32c3fbe5fd0bd7e92ca8dc9f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564465"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386075"
 ---
 # <a name="constants-outlook-exported-apis"></a>Konstanten (Outlook exportierter APIs)
 
@@ -37,7 +37,7 @@ const WORD  TZDEFINITION_FLAG_VALID_KEYNAME = 0x0002;
    
 ## <a name="miscellaneous-dispatch-identifiers"></a>Sonstige Versendung-IDs
 
-Outlook macht die folgenden Versendung-IDs (Dispids) verfügbar, sodass Entwickler [IDispatch:: Invoke](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) verwenden können, um Zugriff auf die entsprechende Eigenschaft oder Methode oder die entsprechenden Ereignis überwachen. 
+Outlook macht die folgenden Versendung-IDs (Dispids) verfügbar, sodass Entwickler [IDispatch:: Invoke](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) verwenden können, um Zugriff auf die entsprechende Eigenschaft oder Methode oder die entsprechenden Ereignis überwachen. 
   
 |**Zugehörige Konstante**|**DISPID-Wert**|**Beschreibung**|**Zutreffend-Schnittstelle**|
 |:-----|:-----|:-----|:-----|
@@ -51,6 +51,6 @@ Outlook macht die folgenden Versendung-IDs (Dispids) verfügbar, sodass Entwickl
 - [Aus Outlook exportierte APIs](outlook-exported-apis.md)
 - [Informationen zu von Outlook exportierten APIs](about-apis-exported-by-outlook.md)
 - [Bestimmen Sie, ob ein Outlook-Element geändert, aber nicht gespeichert (Outlook 2013 Hilfs-Referenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
-- [Geben Sie an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) angezeigt werden soll](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Geben Sie an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) angezeigt werden soll](https://msdn.microsoft.com/library/office/gg262879.aspx)
 - [Verfügbaren Ereignisse und ihrer Dispids (Outlook exportierter APIs)](available-events-and-their-dispids-outlook-exported-apis.md)
 

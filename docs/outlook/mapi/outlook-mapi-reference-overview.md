@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: 4c126d0c-d7c0-45c0-801c-c9f1e44c9db6
 description: 'Letzte Änderung: Freitag, 1. Februar 2013'
-ms.openlocfilehash: bb7831ab79512eb8ca0018905e359654d7177cac
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a5c1daf44f89d1ef8aa7472d69dfd7e86bbb92f6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564780"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388000"
 ---
 # <a name="outlook-mapi-reference-overview"></a>Übersicht über die Outlook-MAPI-Referenz
 
@@ -32,7 +32,7 @@ Vor Microsoft Office Outlook 2007 war die MAPI-Programmiererreferenz Teil der Mi
   
 Die Outlook-Implementierung von MAPI unterscheidet sich von der Microsoft Exchange-Implementierung. Die Outlook-Implementierung ist für eine Ausführung auf Clientcomputern optimiert und legt Wert auf geringe Wartezeit. Die Exchange-Implementierung ist für Server gedacht, bei denen hohe Verfügbarkeit und besseres Multithreading wichtig sind.
   
-Verwenden Sie diese Dokumentation für Anwendungen auf Endbenutzersystemen. Verwenden Sie für Serveranwendungen die Exchange-Implementierung von MAPI, sofern zutreffend, oder verwenden Sie aktuelle Exchange-APIs, wie z. B. Exchange-Webdienste. Weitere Informationen zu Exchange-Webdiensten finden Sie in der [Exchange-Webdienstereferenz](http://msdn.microsoft.com/de-DE/library/bb204119.aspx).
+Verwenden Sie diese Dokumentation für Anwendungen auf Endbenutzersystemen. Verwenden Sie für Serveranwendungen die Exchange-Implementierung von MAPI, sofern zutreffend, oder verwenden Sie aktuelle Exchange-APIs, wie z. B. Exchange-Webdienste. Weitere Informationen zu Exchange-Webdiensten finden Sie in der [Exchange-Webdienstereferenz](https://msdn.microsoft.com/library/bb204119.aspx).
   
 Es können möglicherweise Anwendungen geschrieben werden, die mit der Outlook- oder der Exchange-Implementierung von MAPI funktionieren. Beispielsweise funktioniert MFCMAPI gut auf beiden Plattformen. Die Implementierungen haben viele gemeinsame Funktionen, es gibt jedoch offensichtliche und subtile Unterschiede. Sie müssen sorgfältig auf beiden Plattformen testen, wenn Sie möchten, dass Ihre Anwendung in allen Umgebungen funktioniert. Diese Tests erfordern zwei Systeme, da das Ausführen beider Implementierungen auf demselben Betriebssystem nicht unterstützt wird.
   
@@ -46,7 +46,7 @@ Weitere Informationen zu Neuigkeiten in dieser Version finden Sie unter den folg
     
 Wenn Sie noch nicht mit der Entwicklung von MAPI-Anwendungen für Outlook lesen Sie die folgenden Themen:
   
-- [Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook 2013](http://msdn.microsoft.com/de-DE/library/jj900714.aspx)
+- [Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook 2013](https://msdn.microsoft.com/library/jj900714.aspx)
     
 - [Häufig verwendete Headerdateien](commonly-used-header-files.md)
     

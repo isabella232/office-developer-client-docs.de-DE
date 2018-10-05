@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: c84167d8-f726-45c6-9b21-bcde64473148
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 987188db4a3aceb4b065f59cdf449f943f68e70d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5700ab6baaab2a5e73448582a855e6f243d5361d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565319"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382799"
 ---
 # <a name="pidlidtaskestimatedeffort-canonical-property"></a>PidLidTaskEstimatedEffort (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Zeitspanne in Minuten, die der Benutzer zum Ausführen einer Aufgabe erwartet an.
   
@@ -35,7 +35,7 @@ Gibt die Zeitspanne in Minuten, die der Benutzer zum Ausführen einer Aufgabe er
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert muss größer als oder gleich 0 und kleiner als 0x5AE980DF (1,525,252,319), wobei gleich 480 Minuten eine Tag und 2400 Minuten gleich eine Woche (acht Stunden in einen Arbeitstag und fünf Tage in einer Arbeitswoche).
   
@@ -43,11 +43,11 @@ Der Wert muss größer als oder gleich 0 und kleiner als 0x5AE980DF (1,525,252,3
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert. 
     

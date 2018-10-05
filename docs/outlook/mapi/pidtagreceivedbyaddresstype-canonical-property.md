@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0eef299d-6923-4dae-9a18-91ea82ea0f3e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cd7a287a2240d372edf6cca6bac522266c0ca620
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 00c07069ed174fe55556dfe48398d65b4e64100e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581167"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382666"
 ---
 # <a name="pidtagreceivedbyaddresstype-canonical-property"></a>PidTagReceivedByAddressType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den e-Mail-Adresse ein, beispielsweise SMTP, für den messaging-Benutzer, der tatsächlich die Nachricht empfängt.
   
@@ -34,7 +34,7 @@ Enthält den e-Mail-Adresse ein, beispielsweise SMTP, für den messaging-Benutze
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den messaging-Benutzer, der tatsächlich die Nachricht empfängt. Sie müssen von der eingehenden Adressbuchhierarchie festgelegt werden.
   
@@ -44,11 +44,11 @@ Die Typ Adresszeichenfolge kann nur Großbuchstaben A bis Z und die Zahlen null 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
     

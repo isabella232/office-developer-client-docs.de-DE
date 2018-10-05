@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 21d9fbcc-67b3-4475-b5c1-ff6af92404da
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 280319f0a3cff19bae529eb398a22774eee1ecf0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dc477422ef60f84a74057f2934fa38f4095dd83a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572781"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382689"
 ---
 # <a name="pidlidtaskupdates-canonical-property"></a>PidLidTaskUpdates (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob ein Update Aufgabe senden eine Änderung die Aufgabe Beauftragte für die Aufgabe angefordert wurde.
   
@@ -39,11 +39,11 @@ Gibt an, ob ein Update Aufgabe senden eine Änderung die Aufgabe Beauftragte fü
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.
     

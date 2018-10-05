@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8c57e743-a798-4e39-a61a-46dff8b1ac7c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ddd9d3c0a61a3a2a585edd6c370285b2f6d424e3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3b4abef731541e308b2c2ebc6f4aaddf4458e257
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593718"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388245"
 ---
 # <a name="imsgstoreadvise"></a>IMsgStore::Advise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Um die Benachrichtigung der angegebenen Ereignisse, die Einfluss auf die Nachrichtenspeicher registriert.
   
@@ -103,7 +103,7 @@ HRESULT Advise(
   
 > [out] Ein Zeiger auf eine ungleich NULL Verbindung Zahl, die die Verbindung zwischen des Anrufers stellt advise-Empfängerobjekt und des Nachrichtenspeichers.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -113,7 +113,7 @@ MAPI_E_NO_SUPPORT
   
 > Die Nachrichtenanbieter unterstützt keine Registrierung für die Benachrichtigung über den Nachrichtenspeicher.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die **IMsgStore::Advise** -Methode richtet eine Verbindung zwischen dem Anrufer der advise-Empfängerobjekt und der Nachrichtenspeicher oder ein Objekt im Nachrichtenspeicher. Diese Verbindung wird verwendet, um das Senden von Benachrichtigungen an der Advise-Empfänger, wenn sich ein oder mehr Ereignisse, wie in den _UlEventMask_ -Parameter angegeben an das Quellobjekt Advise auftreten. Wenn der _LpEntryID_ -Parameter verweist auf eine gültige Eingabe Bezeichner, hat die Advise-Quelle das Objekt durch dieses Eintrags-ID identifiziert. Wenn _LpEntryID_ NULL ist, ist die Advise-Quelle des Nachrichtenspeichers. 
   
@@ -123,7 +123,7 @@ Um eine Benachrichtigung zu senden, die Nachricht Speicheranbieter oder MAPI der
 
 Sie können die Benachrichtigung mit oder ohne Hilfe von MAPI unterstützen. MAPI hat drei Methoden von Support-Objekt zur Verfügung stehen-Dienstanbieter Benachrichtigung implementieren: [IMAPISupport::Subscribe](imapisupport-subscribe.md), [IMAPISupport::Unsubscribe](imapisupport-unsubscribe.md)und [IMAPISupport::Notify](imapisupport-notify.md). Wenn Sie sich entscheiden, die MAPI-Support-Methoden verwenden, rufen Sie **Abonnieren** die **Advise** -Methode aufgerufen wird, und heben Sie den Zeiger _LpAdviseSink_ . 
   
-Wenn Sie sich entscheiden, die Benachrichtigung zu unterstützen, rufen Sie die [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28v=VS.85%29.aspx) -Methode der Advise-Empfänger, die durch den Parameter _LpAdviseSink_ dargestellt, um eine Kopie dieses Zeigers beizubehalten. Verwalten Sie diese Kopie, bis die [IMsgStore::Unadvise](imsgstore-unadvise.md) -Methode aufgerufen wird, um die Registrierung abzubrechen. 
+Wenn Sie sich entscheiden, die Benachrichtigung zu unterstützen, rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28v=VS.85%29.aspx) -Methode der Advise-Empfänger, die durch den Parameter _LpAdviseSink_ dargestellt, um eine Kopie dieses Zeigers beizubehalten. Verwalten Sie diese Kopie, bis die [IMsgStore::Unadvise](imsgstore-unadvise.md) -Methode aufgerufen wird, um die Registrierung abzubrechen. 
   
 Unabhängig davon, wie Sie Benachrichtigung zu unterstützen weisen Sie eine Zahl ungleich NULL Verbindung die benachrichtigungsregistrierung, und im Parameter _LpulConnection_ zurückzugeben. Freigegeben Sie diese Verbindungsnummer nicht, bis **Unadvise** aufgerufen wurde und dass die Benutzerreplikation abgeschlossen ist. 
   
@@ -137,11 +137,11 @@ Weitere Informationen zu den Benachrichtigungsprozess finden Sie unter [Event No
   
 Weitere Informationen zum Behandeln von Benachrichtigungen finden Sie unter [Behandeln von Benachrichtigungen](handling-notifications.md). 
   
-## <a name="mfcmapi-reference"></a>MFCMAPI (engl.) (engl.)
+## <a name="mfcmapi-reference"></a>MFCMAPI-Referenz
 
-Beispielcode MFCMAPI (engl.) finden Sie in der folgenden Tabelle.
+Einen MFCMAP-Beispielcode finden Sie in der folgenden Tabelle.
   
-|**Datei**|**Funktion**|**Comment**|
+|**Datei**|**Funktion**|**Kommentar**|
 |:-----|:-----|:-----|
 |BaseDialog.cpp  <br/> |CBaseDialog::OnNotificationsOn  <br/> |MFCMAPI (engl.) verwendet die **IMsgStore::Advise** -Methode, um für Benachrichtigungen auf dem gesamten Nachrichtenspeicher registrieren.  <br/> |
    

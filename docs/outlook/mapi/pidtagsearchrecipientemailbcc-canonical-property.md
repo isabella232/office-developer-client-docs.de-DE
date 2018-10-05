@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d9561d13-8d52-500c-5369-15a2cf5c92c3
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0f65c197999f23d959657cbfee9c6fbb0aaf439f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5b0db4b3bc7903aae74fa7275d3e27e22d628514
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566285"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387748"
 ---
 # <a name="pidtagsearchrecipientemailbcc-canonical-property"></a>PidTagSearchRecipientEmailBcc (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Unicodezeichenfolge, die in der Liste der e-Mail-Adressen oder Anzeigenamen der Empfänger in der **BCC** -Zeile von nicht gesendeten Nachrichten im Store abgefragt wird. 
   
@@ -32,7 +32,7 @@ Enthält eine Unicodezeichenfolge, die in der Liste der e-Mail-Adressen oder Anz
 |Der Eigenschaftentyp:  <br/> |PT_UNICODE  <br/> |
 |Access:  <br/> |Suche  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist nur relevant, die Nachrichten auf den Speicher, die nicht gesendet wurden, da Nachrichten, die gesendet oder empfangen wurde keine BCC-Informationen enthalten.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft ist nur relevant, die Nachrichten auf den Speicher, die nicht 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.
     
-[[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.
     

@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 9eee6925-ab91-413e-8907-c747ab4a4bb5
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c30aa631e70f8f4be52c2fd42dd6bfad900f379e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 66489c09be641d8fe9ae5f3ffff46a6d5004f473
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566159"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388070"
 ---
 # <a name="managing-memory-in-mapi"></a>Verwalten von Arbeitsspeicher in MAPI
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Wissen, wie und wann zum Zuordnen und Freigeben von Arbeitsspeicher ist ein wichtiger Teil der Programmierung mit MAPI. MAPI bietet sowohl Funktionen und Makros, mit denen der Client oder Dienstanbieter kann Speicher einheitlich zu verwalten. Die drei Funktionen sind wie folgt:
   
@@ -43,6 +43,6 @@ Die Arbeitsspeicher-Makros werden verwendet, um die Strukturen oder Arrays von S
 |[SizedDtblGroupBox](sizeddtblgroupbox.md) <br/> |[SizedSSortOrderSet](sizedssortorderset.md) <br/> |
 |[SizedDtblLabel](sizeddtbllabel.md) <br/> | <br/> |
    
-MAPI unterstützt die Verwendung der COM-Schnittstelle [IMalloc](http://msdn.microsoft.com/en-us/library/ms678425%28VS.85%29.aspx) auch für die Speicherverwaltung. -Dienstanbieter erhalten einen **IMalloc** -Schnittstelle auf MAPI bei der Initialisierung und können auch über die Funktion [MAPIGetDefaultMalloc](mapigetdefaultmalloc.md) abrufen. Der wichtigste Vorteil für die Verwendung der **IMalloc** -Methoden zum Verwalten von Arbeitsspeicher über die MAPI-Funktionen besteht darin, dass mit den Methoden COM möglich, einen vorhandenen Puffer neu zuordnen. Neubelegung unterstützt die Funktionen des MAPI-Speicher nicht. 
+MAPI unterstützt die Verwendung der COM-Schnittstelle [IMalloc](https://msdn.microsoft.com/library/ms678425%28VS.85%29.aspx) auch für die Speicherverwaltung. -Dienstanbieter erhalten einen **IMalloc** -Schnittstelle auf MAPI bei der Initialisierung und können auch über die Funktion [MAPIGetDefaultMalloc](mapigetdefaultmalloc.md) abrufen. Der wichtigste Vorteil für die Verwendung der **IMalloc** -Methoden zum Verwalten von Arbeitsspeicher über die MAPI-Funktionen besteht darin, dass mit den Methoden COM möglich, einen vorhandenen Puffer neu zuordnen. Neubelegung unterstützt die Funktionen des MAPI-Speicher nicht. 
   
 

@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: 96ea23df-aa4f-4b3e-9663-e7db39f668c1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eec8ea4b4ddee8b6c399bbb4871c286fea4fae3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 70932e703511235e9f5e32efd95b18d1b66494e2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588405"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389960"
 ---
 # <a name="pidtagfolderwebviewinfo-cannonical-property"></a>PidTagFolderWebViewInfo (kanonische Eigenschaft)
 
@@ -34,7 +34,7 @@ Enthält die URL für die Homepage eines Ordners in Microsoft Outlook. Diese Eig
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Ordner  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 URL der Startseite kann für alle Outlook-Ordner angegeben werden. Diese Informationen kann über die Registerkarte " **Homepage** " im Dialogfeld Eigenschaften für einen Ordner in Outlook zugegriffen werden. 
   
@@ -91,7 +91,7 @@ cbData
     
 ### <a name="webviewpersistenceobject-stream-sample"></a>WebViewPersistenceObject Stream-Beispiel
 
-Dieser Abschnitt beschreibt ein Beispiel eines **WebViewPersistenceObject** Stream-Objekts. Das Stream-Objekt gibt die URL der Startseite "http://www.microsoft.com". 
+Dieser Abschnitt beschreibt ein Beispiel eines **WebViewPersistenceObject** Stream-Objekts. Das Stream-Objekt gibt die URL der Startseite "https://www.microsoft.com". 
   
  **Daten dump**
   
@@ -130,6 +130,6 @@ Es folgt eine Analyse der Beispieldaten für den **WebViewPersistenceObject** -S
     
  _wzURL_
   
-> Offset 0x2C, 0 x 32 Bytes: Array von 25 WCHARs so lang wie. Unicode-Wert NULL endende Zeichenfolge: "http://www.microsoft.com".
+> Offset 0x2C, 0 x 32 Bytes: Array von 25 WCHARs so lang wie. Unicode-Wert NULL endende Zeichenfolge: "https://www.microsoft.com".
     
 

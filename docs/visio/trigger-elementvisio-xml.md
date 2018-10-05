@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d897d2d1-25ba-48d7-b87e-d3c533d88c15
 description: Ermöglicht den Anweisungen auf Microsoft Visio eine Beziehung zwischen Dokumentteile in einer Visio-Datei neu berechnet.
-ms.openlocfilehash: 909fff3ccec176cd3ce327fc208c176a68764fe3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a590ec1f9c19270f75d4d9e77804c0a7b45157b6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798321"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385438"
 ---
 # <a name="trigger-element-visio-xml"></a>Trigger-Element ("Visio XML")
 
 Ermöglicht den Anweisungen auf Microsoft Visio eine Beziehung zwischen Dokumentteile in einer Visio-Datei neu berechnet.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Trigger_Type](trigger_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |:-----|:-----|:-----|:-----|:-----|
 |N  <br/> |XSD: String  <br/> |erforderlich  <br/> |Der Name der die Formel, die aufgerufen werden, wenn der Trigger aktiviert ist.  <br/> Finden Sie unter "Hinweise".  <br/> |Werte des Typs xsd: String.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das **N** -Attribut des dieser **Trigger** -Element muss eine der eine begrenzte Auswahl von Werten sein, die Trigger Anweisungen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Trigger** -Element zulässig sind. 
   

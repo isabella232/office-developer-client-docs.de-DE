@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d217ab33-d697-4d27-a962-08d551d301f0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1b906ce83e26326755b483382eec8e494cbe7875
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 82ef37e6c41c88cdd58cb05c97ff2e4e41537a64
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577366"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388371"
 ---
 # <a name="pidlidsharingproviderurl-canonical-property"></a>PidLidSharingProviderUrl (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die URL, die im Zusammenhang mit den Freigabedienstanbieter und von der **DispidSharingProviderGuid** ([PidLidSharingProviderGuid](pidlidsharingproviderguid-canonical-property.md))-Eigenschaft identifiziert wird. Dies ist eine Eigenschaft eines eine Freigabenachricht.
   
@@ -35,7 +35,7 @@ Gibt die URL, die im Zusammenhang mit den Freigabedienstanbieter und von der **D
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Freigabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird in der Regel verwendet, um weitere Informationen zu den Freigabedienstanbieter bereitzustellen, aber ignoriert werden soll.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft wird in der Regel verwendet, um weitere Informationen zu den F
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXSHARE]](http://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
+[[MS-OXSHARE]](https://msdn.microsoft.com/library/e4e5bd27-d5e0-43f9-a6ea-550876724f3d%28Office.15%29.aspx)
   
 > Teilt Postfachordner zwischen Clients.
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 961318d6-bebe-4f4b-98ff-921cafc68d24
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: f0717dad6c32906995938c2b00d59f9ee96ff6e6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2ed8bace97dee3842243ed835769e80e8aaf6b03
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591072"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387531"
 ---
 # <a name="imapiformadvise"></a>IMAPIForm::Advise
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Registriert einen Formular-Viewer für Benachrichtigungen über Ereignisse, die Einfluss auf das Formular.
   
@@ -44,7 +44,7 @@ HRESULT Advise(
   
 > [out] Ein Zeiger auf einen Wert ungleich NULL, der eine erfolgreiche benachrichtigungsregistrierung darstellt.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -54,13 +54,13 @@ E_OUTOFMEMORY
   
 > Die Registrierung war nicht erfolgreich, da nicht genügend Arbeitsspeicher.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Formular Viewer Aufrufen eines Formulars **IMAPIForm::Advise** -Methode, um für die Benachrichtigung zu registrieren, falls sich das Formular. 
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Beibehalten einer Kopie der Ansicht advise-Empfängerzeiger im _pAdvise_ -Parameter übergeben werden, sodass Sie sie verwenden können, die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufrufen, wenn ein Ereignis auftritt. Aufruf der Ansicht Teilen des Empfängers [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode, die den Zeiger beibehalten werden, bis benachrichtigungsregistrierung abgebrochen wird. Legen Sie den Inhalt des Parameters _PulConnection_ auf eine Zahl ungleich NULL. 
+Beibehalten einer Kopie der Ansicht advise-Empfängerzeiger im _pAdvise_ -Parameter übergeben werden, sodass Sie sie verwenden können, die entsprechende [IMAPIViewAdviseSink](imapiviewadvisesinkiunknown.md) -Methode aufrufen, wenn ein Ereignis auftritt. Aufruf der Ansicht Teilen des Empfängers [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode, die den Zeiger beibehalten werden, bis benachrichtigungsregistrierung abgebrochen wird. Legen Sie den Inhalt des Parameters _PulConnection_ auf eine Zahl ungleich NULL. 
   
 Viele Formulare implementieren Sie ein Objekt, um die Registrierung und nachfolgende Benachrichtigung über Ereignisse behandelt werden sollen. 
   

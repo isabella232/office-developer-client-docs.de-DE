@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: a51a60c9-479b-7d7b-860f-bb46fc8b4d63
 description: Die Eigenschaften, die im Zusammenhang mit dem Dokument Validierung kapselt.
-ms.openlocfilehash: 4f91160969cfb162f18440019ced23ea62061879
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9eccb85bd7463411d81c867eda3216d6c9a207f2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798370"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385221"
 ---
 # <a name="validationproperties-element-validationtype-complextype-visio-xml"></a>ValidationProperties-Element (Validation_Type ComplexType) ("Visio XML")
 
 Die Eigenschaften, die im Zusammenhang mit dem Dokument Validierung kapselt.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ValidationProperties_Type](validationproperties_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Validation.Xml  <br/> |
    

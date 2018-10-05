@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9cfbf12c-a71c-092b-d86a-c5585b0f1edb
-ms.openlocfilehash: 311d055e0a319ec26cdc4eba5ac3b50dc9e63d9d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dc2fe6bbaf4515d5c5f5be694b15040bf03ef374
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565179"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384640"
 ---
 # <a name="iolkerrorunknown"></a>IOlkErrorUnknown
 
@@ -21,7 +21,7 @@ Zusätzliche Informationen zu den letzten Fehler.
 
 |||
 |:-----|:-----|
-|Erbt:  <br/> |[IUnknown](https://docs.microsoft.com/en-us/windows/desktop/api/unknwn/nn-unknwn-iunknown) <br/> |
+|Erbt:  <br/> |[IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) <br/> |
 |Bereitgestellt von:  <br/> |Client  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IOlkErrorUnknown  <br/> |
    
@@ -31,7 +31,7 @@ Zusätzliche Informationen zu den letzten Fehler.
 |:-----|:-----|
 |[GetLastError](iolkerrorunknown-getlasterror.md) <br/> |Ruft eine Meldungszeichenfolge für den angegebenen Fehler.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Schnittstelle stellt zusätzliche Informationen zu einem Fehler in [IOlkAccountManager](iolkaccountmanager.md), [IOlkAccountNotify](iolkaccountnotify.md)und [IOlkAccount](iolkaccount.md). Es ist außerdem die Basis-Schnittstelle für **IOlkAccountManager**, **IOlkAccountNotify**und **IOlkAccount**. 
   

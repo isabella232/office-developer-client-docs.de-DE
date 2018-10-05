@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 34e25349-d0fa-b3a0-425b-778184e9f58f
 description: Enthält alle DataColumn-Elemente in einem Datenrecordset.
-ms.openlocfilehash: b90b6cb18fc2bd1edc393d58a9d761cfb36ea220
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a7a0a8faefdb965384e435ee3a9b059a3acbc3f0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796783"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382519"
 ---
 # <a name="datacolumns-element-datarecordsettype-complextype-visio-xml"></a>DataColumns-Element (DataRecordSet_Type ComplexType) ("Visio XML")
 
 Enthält alle **DataColumn** -Elemente in einem Datenrecordset. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[DataColumns_Type](datacolumns_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
    

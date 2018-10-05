@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: eac6be6a-9a20-4bc0-8da2-b2fd93aab04f
 description: Project Server Interface (PSI) kann zum Automatisieren viele serverseitigen Prozessen in lokale Installationen von Project Server 2013 helfen. Aber einige Funktionen erfordern die Verwendung von Microsoft Project Professional 2013.
-ms.openlocfilehash: e926e970c5e8dd382370fbe4d7c34c4136502cbf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b93c3535ca6693a84d11370de17bc18375f168ab
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588111"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386341"
 ---
 # <a name="what-the-psi-does-and-does-not-do"></a>Was die PSI durchführen kann und was nicht
 
@@ -49,12 +49,12 @@ Im folgenden sind Beispiele für einige Anwendungen, die die PSI für serverseit
     
 - **Erstellen benutzerdefinierter Workflowaktivitäten für das bedarfsmanagement** Verwenden Sie die PSI in lokale, voll vertrauenswürdige Workflowaktivitäten zum Ändern und Aktualisieren von Projektvorschlägen wird basierend auf Enterprise-Projektvorlagen. Verwenden Sie benutzerdefinierte Projektfelder, markieren Sie das Projekt mit den Informationen, die für die Initiierung und Genehmigung Prozess benötigt. Hinzufügen von Aufgaben aus, um das Projektphasen für wichtige Meilensteine oder Lieferumfang zu identifizieren. Wenn Projektvorschlägen genehmigt werden, kann ein Workflow ändern, Vorschläge in umfassende Projekte, die verwaltet werden mit Project Professional. 
     
-- **Erstellen von PSI-Erweiterungen** (**Veraltet.** Erweiterungen in Project Server 2013 veraltet sind, und werden in zukünftigen Versionen nicht unterstützt.) Die PSI kann mit benutzerdefinierte Dienste mithilfe der Windows Communication Foundation (WCF)-Schnittstelle erweitert werden. PSI-Erweiterungen führen Sie auf der Project Server-Computer, und verwenden Sie die gleichen Sicherheitsinfrastruktur, die der integrierten PSI-Dienste verwenden können. Extensions können reporting Abfragetabellen, verwenden Sie separate Datenbanktabellen, konsolidieren PSI-Aufrufe Bandbreite zu speichern, und drittanbieteranwendungen und andere serverseitige Komponenten integriert. Weitere Informationen finden Sie unter [Entwickeln von PSI-Erweiterungen](http://msdn.microsoft.com/library/1b484623-94fb-47c9-84c1-3e68a9133042%28Office.15%29.aspx).
+- **Erstellen von PSI-Erweiterungen** (**Veraltet.** Erweiterungen in Project Server 2013 veraltet sind, und werden in zukünftigen Versionen nicht unterstützt.) Die PSI kann mit benutzerdefinierte Dienste mithilfe der Windows Communication Foundation (WCF)-Schnittstelle erweitert werden. PSI-Erweiterungen führen Sie auf der Project Server-Computer, und verwenden Sie die gleichen Sicherheitsinfrastruktur, die der integrierten PSI-Dienste verwenden können. Extensions können reporting Abfragetabellen, verwenden Sie separate Datenbanktabellen, konsolidieren PSI-Aufrufe Bandbreite zu speichern, und drittanbieteranwendungen und andere serverseitige Komponenten integriert. Weitere Informationen finden Sie unter [Entwickeln von PSI-Erweiterungen](https://msdn.microsoft.com/library/1b484623-94fb-47c9-84c1-3e68a9133042%28Office.15%29.aspx).
     
-- **Verwenden des Identitätswechsels in lokalen, voll vertrauenswürdige Anwendungen** Aufrufe der WCF-Schnittstelle von der PSI können nicht imitiert werden, damit eine Anwendung die Sicherheitsberechtigungen des Benutzers, dessen Identität verwendet wird davon ausgegangen. Identitätswechsel sollte sparsame und sorgfältig verwendet werden. Lesen und Aktualisieren von Statusinformationen für andere Benutzer ist kein Identitätswechsel erforderlich. Neue Anwendungen, die ein Identitätswechsel erforderlich sein sollte das CSOM und OAuth-Protokolls anstelle der PSI verwenden. Weitere Informationen zum Identitätswechsel mit der PSI finden Sie unter [Verwenden des Identitätswechsels mit WCF](http://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx).
+- **Verwenden des Identitätswechsels in lokalen, voll vertrauenswürdige Anwendungen** Aufrufe der WCF-Schnittstelle von der PSI können nicht imitiert werden, damit eine Anwendung die Sicherheitsberechtigungen des Benutzers, dessen Identität verwendet wird davon ausgegangen. Identitätswechsel sollte sparsame und sorgfältig verwendet werden. Lesen und Aktualisieren von Statusinformationen für andere Benutzer ist kein Identitätswechsel erforderlich. Neue Anwendungen, die ein Identitätswechsel erforderlich sein sollte das CSOM und OAuth-Protokolls anstelle der PSI verwenden. Weitere Informationen zum Identitätswechsel mit der PSI finden Sie unter [Verwenden des Identitätswechsels mit WCF](https://msdn.microsoft.com/library/e3597901-2f02-44a2-8076-d32aae540b38%28Office.15%29.aspx).
     
 > [!NOTE]
-> In einigen Fällen kann die PSI in Clientanwendungen mit dem CSOM und Project Online verwendet werden. Wenn Sie einen ASMX-basierte PSI-Webdienst verwenden, muss die Anwendung eine Methode zum Authentifizieren des [Microsoft.ProjectServer.Client.ProjectContext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx) -Objekts in der CSOM und eine Methode zum Authentifizieren der **enthalten System.Web.Services.Protocols.SoapHttpClientProtocol** Clientobjekt. Ein Beispiel, die einen Webdienst mit der SharePoint-CSOM verwendet, finden Sie unter [Remoteauthentifizierung in SharePoint Online Using Claims-Based Authentifizierung](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx). > Die PSI aufgrund von eingeschränkten app-Berechtigungen kann nicht verwendet werden in apps, die entworfen wurden, für die Verteilung in den öffentlichen Office Store. In diesem Fall können Sie nur das CSOM verwenden. 
+> In einigen Fällen kann die PSI in Clientanwendungen mit dem CSOM und Project Online verwendet werden. Wenn Sie einen ASMX-basierte PSI-Webdienst verwenden, muss die Anwendung eine Methode zum Authentifizieren des [Microsoft.ProjectServer.Client.ProjectContext](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.ProjectContext.aspx) -Objekts in der CSOM und eine Methode zum Authentifizieren der **enthalten System.Web.Services.Protocols.SoapHttpClientProtocol** Clientobjekt. Ein Beispiel, die einen Webdienst mit der SharePoint-CSOM verwendet, finden Sie unter [Remoteauthentifizierung in SharePoint Online Using Claims-Based Authentifizierung](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx). > Die PSI aufgrund von eingeschränkten app-Berechtigungen kann nicht verwendet werden in apps, die entworfen wurden, für die Verteilung in den öffentlichen Office Store. In diesem Fall können Sie nur das CSOM verwenden. 
   
 ## <a name="what-the-psi-does-not-do"></a>Was die PSI nicht zu
 <a name="pj14_WhatPSIDoes_DoesNotDo"> </a>
@@ -143,7 +143,7 @@ In der folgenden Liste sind die Aufgaben, die PSI weder das CSOM erledigen kann.
 
 - Definieren eine Codemaske für Arbeit des Ressourcenstrukturplans (Projektstrukturplan). 
     
-#### <a name="tasks"></a>Tasks
+#### <a name="tasks"></a>Aufgaben
 
 - Ändern den Aufgabentyp (Feste Arbeit, Dauer und Einheiten).
     
@@ -234,7 +234,7 @@ Für den Projektsammelvorgang sind die PSI-Einschränkungen die gleichen wie fü
 
 - [Was das CSOM durchführen kann und was nicht](what-the-csom-does-and-does-not-do.md)  
 - [Project Server-Programmierbarkeit](project-server-programmability.md)   
-- [Anspruchsbasierte Remoteauthentifizierung in SharePoint Online](http://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)  
+- [Anspruchsbasierte Remoteauthentifizierung in SharePoint Online](https://msdn.microsoft.com/library/49067f7a-3020-478f-ba97-4b7ce3ea9b87%28Office.15%29.aspx)  
 - [Office-Add-Ins](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) 
     
 

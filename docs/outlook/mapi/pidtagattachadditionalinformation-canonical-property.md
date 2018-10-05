@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 75f092f2-ee3f-45c2-a46f-e1dff2e22b2e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8df81920b9d2e88b23438fd398bde7d8e426b248
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e0a8f49f96bf4c4f8518dddbe52e8692f7b6645a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587691"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389631"
 ---
 # <a name="pidtagattachadditionalinformation-canonical-property"></a>PidTagAttachAdditionalInformation (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Dateitypinformationen für eine nicht-Windows-Anlage enthält.
   
@@ -34,7 +34,7 @@ Dateitypinformationen für eine nicht-Windows-Anlage enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft stellt die Metadaten für eine bestimmte Anlage basierend auf der Anlage-Codierung. Wenn die Eigenschaft **PR_ATTACH_ENCODING** ([PidTagAttachEncoding](pidtagattachencoding-canonical-property.md)) MacBinary enthält, enthält **PR_ATTACH_ADDITIONAL_INFO** beispielsweise eine Zeichenfolge, die der Ersteller der Macintosh-Datei und der Dateityp, formatiert als ":CREA:TYPE" darstellt für die codierte Macintosh-Datei. 
   
@@ -42,7 +42,7 @@ Diese Eigenschaft stellt die Metadaten für eine bestimmte Anlage basierend auf 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

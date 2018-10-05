@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8e9a9432-bf50-4333-82ec-fba19dff8006
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a145a103620d23dae4f6a48c225251e8aecc278e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7eb51396f4575a8f8f9ce15aff84eb894773e979
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593669"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382582"
 ---
 # <a name="pidlidtaskactualeffort-canonical-property"></a>PidLidTaskActualEffort (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Anzahl von Minuten an, dass der Benutzer eine Aufgabe ausgeführt.
   
@@ -35,7 +35,7 @@ Gibt die Anzahl von Minuten an, dass der Benutzer eine Aufgabe ausgeführt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert muss größer als oder gleich 0 und kleiner als 0x5AE980DF (1,525,252,319), wobei gleich 480 Minuten eine Tag und 2400 Minuten gleich eine Woche (acht Stunden in einen Arbeitstag und fünf Tage in einer Arbeitswoche).
   
@@ -43,11 +43,11 @@ Der Wert muss größer als oder gleich 0 und kleiner als 0x5AE980DF (1,525,252,3
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakt- und Objekte in der persönlichen Verteilerliste Liste zulässig sind.
     

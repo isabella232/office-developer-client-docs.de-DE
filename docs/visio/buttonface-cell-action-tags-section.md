@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 26f370e1-5193-f47d-7b60-3597975be650
 description: Enthält die ID der Schaltflächenoberseite, die auf der Schaltfläche Aktionstag angezeigt wird.
-ms.openlocfilehash: ca6be0a95b33e173219f4bdc1ba042c7162941b3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e74b3281d894cebd8491112181198d427f0d337f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796561"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385480"
 ---
 # <a name="buttonface-cell-action-tags-section"></a>ButtonFace Cell (Action Tags Section)
 
@@ -23,9 +23,9 @@ Enthält die ID der Schaltflächenoberseite, die auf der Schaltfläche Aktionsta
 > [!NOTE]
 > In früheren Versionen von Microsoft Visio werden Aktionstags als Smarttags bezeichnet. 
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
-Die Zeichenfolge in die Zelle ButtonFace stellt die ID einer Microsoft Office-Schaltflächenoberseite dar. Der Wert 0 (null) oder kein Eintrag ergibt die standard "i" Infoschaltfläche Aktionstag ![](media/InfoPS_ZA10180114.gif).
+Die Zeichenfolge in einer ButtonFace-Zelle stellt die ID einer Microsoft Office-Schaltflächenoberseite dar. Der Wert 0 (Null) oder kein Eintrag ergibt die Standardaktionstag-Infoschaltfläche "i" ![Standard Aktionstag "i" Info-Schaltfläche](media/InfoPS_ZA10180114.gif).
   
 Die IDs, die in die Zelle ButtonFace verwendet werden können, sind identisch mit den IDs, die mit der **FaceID** -Eigenschaft eines **CommandBarButton** -Objekts. Weitere Informationen zu diesen IDs auf MSDN nach "Working with Schaltflächensymbolen an Leiste Befehl" suchen. 
   

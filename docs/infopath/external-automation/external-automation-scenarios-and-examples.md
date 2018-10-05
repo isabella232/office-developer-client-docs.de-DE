@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: dfa880e6-de23-41c4-b80b-6935e0c8563d
 description: Die Member bereitgestellt von Microsoft Office InfoPath-primären interop-Assembly (Microsoft.Office.Interop.InfoPath.dll) und der InfoPath XML-Interopassembly (Microsoft.Office.Interop.InfoPath.Xml.dll) Schreiben von verwaltetem Code für die Automatisierung von Support InfoPath.
-ms.openlocfilehash: 1c76e5cb659c9d3f39eec4a7e517ab57c98c858a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: af8bfbb0322b9d70fb85ba21a757a581ba423a44
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790630"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383163"
 ---
 # <a name="external-automation-scenarios-and-examples"></a>Szenarios für die externe Automatisierung und Beispiele
 
@@ -21,7 +21,7 @@ Die Member bereitgestellt von Microsoft Office InfoPath-primären interop-Assemb
   
 ## <a name="establishing-references-to-the-microsoft-office-infopath-primary-interop-and-infopath-xml-interop-assemblies"></a>Einrichten von Verweisen auf die primäre Interopassembly für Microsoft Office InfoPath und InfoPath-XML-Interop-Assemblys
 
-Zum Schreiben von verwalteten Codes für die Automatisierung von InfoPath müssen Sie Verweise auf die primären Interop-Microsoft InfoPath und InfoPath XML-interop-Assemblys einrichten. Die primäre Interopassembly für Microsoft InfoPath bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell von IPEDITOR verfügbar gemacht werden. DLL-Datei mithilfe der Member des [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) -Namespace. InfoPath XML-interop-Assembly bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell verfügbar gemacht werden von Microsoft XML Core Services (MSXML) mithilfe der Member des Namespaces [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.infopath.xml) . 
+Zum Schreiben von verwalteten Codes für die Automatisierung von InfoPath müssen Sie Verweise auf die primären Interop-Microsoft InfoPath und InfoPath XML-interop-Assemblys einrichten. Die primäre Interopassembly für Microsoft InfoPath bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell von IPEDITOR verfügbar gemacht werden. DLL-Datei mithilfe der Member des [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) -Namespace. InfoPath XML-interop-Assembly bietet Unterstützung für die Interoperabilität mit dem COM-Objektmodell verfügbar gemacht werden von Microsoft XML Core Services (MSXML) mithilfe der Member des Namespaces [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) . 
   
 > [!IMPORTANT]
 > Benutzer von verwaltetem Code Anwendungen, die Automatisierung von InfoPath müssen InfoPath, die primäre Interopassembly für Microsoft Office InfoPath und InfoPath XML Interop-Assembly auf ihren Computern installiert haben. Die Option **.NET-Programmierunterstützung für** im InfoPath-Setupprogramm wird für eine Standardinstallation von InfoPath auf **vom Arbeitsplatz starten** festgelegt.
@@ -109,7 +109,7 @@ Angenommen Sie, einen Kunden des Benutzers von einer InfoPath-Formularvorlage Um
             // namespace of the form. IMPORTANT:Replace the namespace 
             // value below with that of your sample form.
             myXMLDoc.setProperty("SelectionNamespaces",
-    "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
+    "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
             // Select all instances of customerName that contain 
             //'Company A'.
             IXMLDOMNodeList myNames = 
@@ -161,7 +161,7 @@ Angenommen Sie, einen Kunden des Benutzers von einer InfoPath-Formularvorlage Um
           ' namespace of the form. IMPORTANT:Replace the namespace 
           ' value below with that of your sample form.
           myXMLDoc.setProperty("SelectionNamespaces", _
-    "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
+    "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
           ' Select all instances of customerName that contain 
           ''Company A'.
           Dim myNames As IXMLDOMNodeList = _
@@ -247,7 +247,7 @@ Im folgenden Beispiel wird ein leeres Formular öffnen, und füllen den Vornamen
             // Set the MSXML SelectionNamespaces property to the my
             // namespace of the form. IMPORTANT:Replace the namespace
             // value below with that of your sample form.
-            doc.setProperty("SelectionNamespaces","xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
+            doc.setProperty("SelectionNamespaces","xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'");
             // Pre-populate the fields with specified values.
             doc.selectSingleNode("//my:FirstName").text="My Name";
             doc.selectSingleNode("//my:LastName").text="My LastName";
@@ -280,7 +280,7 @@ Im folgenden Beispiel wird ein leeres Formular öffnen, und füllen den Vornamen
           ' Set the MSXML SelectionNamespaces property to the my
           ' namespace of the form. IMPORTANT:Replace the namespace
           ' value below with that of your sample form.
-          doc.setProperty("SelectionNamespaces", "xmlns:my='http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
+          doc.setProperty("SelectionNamespaces", "xmlns:my='https://schemas.microsoft.com/office/infopath/2003/myXSD/2006-09-06T23:17:34'")
           ' Pre-populate the fields with specified values.
           doc.selectSingleNode("//my:FirstName").text = "My Name"
           doc.selectSingleNode("//my:LastName").text = "My LastName"

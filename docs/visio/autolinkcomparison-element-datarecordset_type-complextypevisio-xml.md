@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: af5eb7fd-89c6-49bf-4e45-431b63d6cd6a
 description: Definiert eine Regel, die eine Spalte in der übergeordneten DataRecordset-Element mit eines Shape-Datenelements aus der letzten erfolgreichen automatische Verknüpfen Aktion auf der Benutzeroberfläche vergleicht.
-ms.openlocfilehash: 38970a84676f769c36c9bdc3f8334652f7d9ec21
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 474acc4c1d259621881ea498decfeaf18b69809e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796423"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385718"
 ---
 # <a name="autolinkcomparison-element-datarecordsettype-complextype-visio-xml"></a>AutoLinkComparison-Element (DataRecordSet_Type ComplexType) ("Visio XML")
 
 Definiert eine Regel, die eine Spalte in der übergeordneten **DataRecordset** -Element mit eines Shape-Datenelements aus der letzten erfolgreichen automatische Verknüpfen Aktion auf der Benutzeroberfläche vergleicht. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[AutoLinkComparison_Type](autolinkcomparison_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Recordsets.Xml  <br/> |
    

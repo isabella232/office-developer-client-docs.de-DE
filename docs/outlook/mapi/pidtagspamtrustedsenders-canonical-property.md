@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8e3f0094-e64b-4828-ba8f-5eed35f85366
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 34ed865e97452ee45d229640b2dadf38faffd537
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 50230a742b093e59e335466d9ab03aa9022e2e61
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593312"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388728"
 ---
 # <a name="pidtagspamtrustedsenders-canonical-property"></a>PidTagSpamTrustedSenders (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine durch Semikolons getrennte Liste der e-Mail-Adressen und Domänen, die aus vertrauenswürdigen Absender bestehen.
   
@@ -34,11 +34,11 @@ Enthält eine durch Semikolons getrennte Liste der e-Mail-Adressen und Domänen,
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.
     
-[[MS-OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > Ermöglicht die Behandlung von zulassen/blockieren-Listen und die Bestimmung des junk-e-Mail-Nachrichten.
     

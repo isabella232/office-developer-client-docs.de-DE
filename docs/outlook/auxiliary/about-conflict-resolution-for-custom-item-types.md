@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 3f0853fc-f9f2-4314-ac55-47fe1e52d019
 description: In diesem Thema wird beschrieben, wie zum Lösen von Konflikten für benutzerdefinierte Elementtypen, die Sie in Outlook erstellen.
-ms.openlocfilehash: d85c2022d909901c71c20214f91b316cce81c596
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 357dd9182f26c4e9e1e264afdee296859e7b3483
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790911"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382988"
 ---
 # <a name="about-conflict-resolution-for-custom-item-types"></a>Informationen zur Konfliktbehebung für benutzerdefinierte Typen
 
@@ -33,7 +33,7 @@ In solchen Fällen können Benutzer wechseln zu dem Ordner Konflikte, um zu übe
 
 ### <a name="item-types-and-message-classes"></a>Elementtypen und Nachrichtenklassen
   
-Alle Elemente in Outlook sind eine Nachrichtenklasse zugeordnet. In der Standardeinstellung ist beispielsweise ein e-Mail-Element zugeordnet, mit der Nachrichtenklasse IPM **. Hinweis**. Die Nachrichtenklasse wird hauptsächlich verwendet, um das Formular zu identifizieren, das zum Anzeigen des Elements in Outlook verwendet werden soll. Outlook unterstützt eine Liste der Nachrichtenklassen, die die Typen von Elementen in Outlook integriert zugeordnet sind. Weitere Informationen zu Nachrichtenklassen finden Sie unter [Elementtypen und Meldungsklassen](http://msdn.microsoft.com/library/15b709cc-7486-b6c7-88a3-4a4d8e0ab292%28Office.15%29.aspx). 
+Alle Elemente in Outlook sind eine Nachrichtenklasse zugeordnet. In der Standardeinstellung ist beispielsweise ein e-Mail-Element zugeordnet, mit der Nachrichtenklasse IPM **. Hinweis**. Die Nachrichtenklasse wird hauptsächlich verwendet, um das Formular zu identifizieren, das zum Anzeigen des Elements in Outlook verwendet werden soll. Outlook unterstützt eine Liste der Nachrichtenklassen, die die Typen von Elementen in Outlook integriert zugeordnet sind. Weitere Informationen zu Nachrichtenklassen finden Sie unter [Elementtypen und Meldungsklassen](https://msdn.microsoft.com/library/15b709cc-7486-b6c7-88a3-4a4d8e0ab292%28Office.15%29.aspx). 
   
 Benutzer können benutzerdefinierte Elementtypen erstellen, weisen Sie die benutzerdefinierten Elementtypen benutzerdefinierte Nachrichtenklassen und lassen Sie Outlook, die ein benutzerdefiniertes Formular verwenden, um die benutzerdefinierten Elementtypen anzuzeigen. Beispielsweise sollten Sie Outlook zum Anzeigen eines benutzerdefinierten Kontaktformulars für Kontakten. Dazu können Sie eine benutzerdefinierte Nachrichtenklasse IPM **erstellen. Contact.Business**, erstellen Sie ein benutzerdefiniertes Formular für diese Nachrichtenklasse und Geschäftskontakten mit dieser Nachrichtenklasse zuweisen. 
   
@@ -72,5 +72,5 @@ Unter Verwendung derselben Business Kontakte obigen Beispiel, wenn Sie den Konta
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Outlook-Elementobjekte](http://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
+- [Outlook-Elementobjekte](https://msdn.microsoft.com/library/6ea4babf-facf-4018-ef5a-4a484e55153a%28Office.15%29.aspx)
 

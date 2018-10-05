@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f9468715-1674-4d14-81c8-2f24dbaa0453
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 8cb7934919722139622b6caf3aac741c9b2e54c5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 59c6d4a05c91511ad8c481fd4ddbe42396442190
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582462"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384108"
 ---
 # <a name="iabproviderlogon"></a>IABProvider::Logon
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt eine Verbindung mit einer aktiven Sitzung her.
   
@@ -86,7 +86,7 @@ PARAMETER MAPI_UNICODE
   
 > [out] Ein Zeiger auf einen Zeiger auf das Objekt für den Anbieter anmelden.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -112,7 +112,7 @@ MAPI_E_USER_CANCEL
   
 > Der Benutzer hat den Vorgang in der Regel durch Klicken auf die Schaltfläche **Abbrechen** im Dialogfeld Anmeldung abgebrochen. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Verbindungen sind mit jedem Adressbuchanbieter im Profil der Sitzung eingerichtet, wenn ein Client die [IMAPISession::OpenAddressBook](imapisession-openaddressbook.md) -Methode aufruft. **OpenAddressBook** ruft dann des Anbieters **Logon** (Methode). 
   
@@ -126,7 +126,7 @@ Wenn ein Client an Ihren Anbieter nur einmal anmeldet, möchten Sie möglicherwe
   
 Das Support-Objekt, das MAPI an Ihre **Logon** -Methode im Parameter _LpMAPISup_ übergibt ermöglicht den Zugriff auf viele der Methoden in enthalten die [IMAPISupport: IUnknown](imapisupportiunknown.md) Schnittstelle. MAPI erstellt ein Support-Objekt, das in den Typ des Anbieters angepasst ist. Wenn Sie müssen zur Anmeldung an einer zugrunde liegenden messaging-System oder Verzeichnisdienst, wenn Sie die Verbindung hergestellt wird, können Sie beispielsweise die [IMAPISupport::OpenProfileSection](imapisupport-openprofilesection.md) -Methode zum Abrufen von Anmeldeinformationen für diese Sitzung bestimmte Anmeldung anrufen. 
   
-Wenn die **Anmeldung** erfolgreich ist, müssen Sie unbedingt, dass Sie die des Unterstützungsobjekts [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode, um erhöht den Referenzzähler aufrufen. Auf diese Weise können vom Dienstanbieter, die auf den Support-Objektzeiger für den Rest der Sitzung enthalten soll. Wenn Sie diese **AddRef** -Methode nicht aufrufen, wird MAPI vom Dienstanbieter entfernen. 
+Wenn die **Anmeldung** erfolgreich ist, müssen Sie unbedingt, dass Sie die des Unterstützungsobjekts [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode, um erhöht den Referenzzähler aufrufen. Auf diese Weise können vom Dienstanbieter, die auf den Support-Objektzeiger für den Rest der Sitzung enthalten soll. Wenn Sie diese **AddRef** -Methode nicht aufrufen, wird MAPI vom Dienstanbieter entfernen. 
   
 Sie können den Namen des Profils im Parameter _LpszProfileName_ Fehlerdialogfelder, Anmeldefenster oder andere Elemente der Benutzeroberfläche übergeben einschließen. Um den Profilnamen zu verwenden, kopieren Sie sie in einen Speicher, die Sie bereitgestellt haben. 
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 029767ab-de72-4402-9cc3-31b006591042
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9bfb94b2929f780a428fb932efb3538f94f5aaea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f04d1593e2a13a2bfc23412340d7eb9f38f5d9ef
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591464"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389967"
 ---
 # <a name="pidliddistributionlistmembers-canonical-property"></a>PidLidDistributionListMembers (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Liste der EntryIds-Objekte, die die Elemente der persönlichen Verteilerliste entsprechen.
   
@@ -35,9 +35,9 @@ Gibt die Liste der EntryIds-Objekte, die die Elemente der persönlichen Verteile
 |Datentyp:  <br/> |PT_MV_BINARY  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Mitglieder der persönlichen Verteilerliste möglicherweise andere persönlichen Verteilerlisten, elektronische Adressen, die in einem Kontakt, Global Address List Benutzer oder Verteilerlisten oder einmaligen e-Mail-Adressen enthalten sind. Das Format der einzelnen EntryId muss es sich um einen einmaligen Eintrags-ID, wie in [[MS-OXCDATA]](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx) angegeben oder eine gepackten EntryId sein. 
+Mitglieder der persönlichen Verteilerliste möglicherweise andere persönlichen Verteilerlisten, elektronische Adressen, die in einem Kontakt, Global Address List Benutzer oder Verteilerlisten oder einmaligen e-Mail-Adressen enthalten sind. Das Format der einzelnen EntryId muss es sich um einen einmaligen Eintrags-ID, wie in [[MS-OXCDATA]](https://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx) angegeben oder eine gepackten EntryId sein. 
   
 Beim Festlegen dieser Eigenschaft muss der Client oder der Server sicher, dass die Gesamtgröße der kleiner als 15.000 Bytes.
   
@@ -49,11 +49,11 @@ Wenn der Client oder der Server wird diese Eigenschaft festzulegen, müssen Sie 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

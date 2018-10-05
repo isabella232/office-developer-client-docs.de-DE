@@ -6,17 +6,17 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 628745f4-82e9-4838-9726-6f3e506a654f
-ms.openlocfilehash: 7a41bc4c9509f1d9cec49003fb775a3be2768703
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d837a83ea8773018033a27ec894375a22c15c8a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790229"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391122"
 ---
 # <a name="create-and-customize-a-web-app-in-access"></a>Erstellen und Anpassen einer Web-App in Access
 
 > [!IMPORTANT]
-> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/de-DE/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
+> Das Erstellen und Verwenden von Access-Web-Apps in SharePoint wird von Microsoft nicht mehr empfohlen. Alternativ sollten Sie die Verwendung von [Microsoft PowerApps](https://powerapps.microsoft.com/en-us/) für das Erstellen von Business Solutions ohne Code für das Web und für mobile Geräte in Betracht ziehen. 
   
 Access 2013 umfasst ein neues Anwendungsmodell, das Experten das schnelle Erstellen webbasierter Anwendungen ermöglicht. In Access sind eine Reihe an Vorlagen enthalten, die Sie für den schnellen Einstieg beim Erstellen Ihrer Anwendung verwenden können.
 
@@ -30,9 +30,9 @@ Um die Schritte in diesem Beispiel auszuführen, benötigen Sie Folgendes:
     
 - Eine SharePoint-Entwicklungsumgebung
     
-Weitere Informationen über das Einrichten Ihrer SharePoint-Entwicklungsumgebung finden Sie unter [Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint](https://docs.microsoft.com/de-DE/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint). 
+Weitere Informationen über das Einrichten Ihrer SharePoint-Entwicklungsumgebung finden Sie unter [Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint](https://docs.microsoft.com/sharepoint/dev/general-development/set-up-a-general-development-environment-for-sharepoint). 
   
-Weitere Informationen über das Abrufen von Access und SharePoint finden Sie unter [Downloads](http://msdn.microsoft.com/de-DE/office/apps/fp123627).
+Weitere Informationen über das Abrufen von Access und SharePoint finden Sie unter [Downloads](https://msdn.microsoft.com/office/apps/fp123627).
 
 <a name="ac15_CreateAndCustomizeWebApp_CreateTheApp"> </a>
 
@@ -67,7 +67,7 @@ Die durch Auswahl des Schemas für Probleme erstellten Tabellen werden im Kachel
   
 In einer Access-Desktop-PC-Datenbank (.accdb) werden die Beziehungen zwischen Tabellen im Fenster **Beziehungen** verwaltet. Access 2013-Apps verwalten Beziehungen durch die Verwendung von Feldern, die auf den Datentyp **Nachschlagen** festgelegt sind. Im Folgenden überprüfen wir die Beziehungen für die Tabelle „Probleme", indem wir mit der rechten Maustaste auf die Kachel **Probleme** klicken und **Tabelle bearbeiten** auswählen.
   
-Das Feld **Kunden** bezieht sich auf die Tabelle **Kunden**. Um die Beziehung zu untersuchen, wählen Sie das Feld **Kunde** und dann **Nachschlagevorgänge ändern**. Der **Nachschlage-Assistent** wird angezeigt, wie in Abbildung 2 dargestellt. 
+Das Feld **Kunde** steht im Zusammenhang mit der Tabelle **Kunden**. Wählen Sie zum Überprüfen der Beziehung das Feld **Kunde** und dann die Option zum Ändern der Nachschlagefunktion**** aus. Der**** Nachschlage-Assistent wird analog zur Darstellung in Abbildung 2 angezeigt. 
   
 **Abbildung 2. Der die Beziehung zur Tabelle „Kunden“ anzeigende Nachschlage-Assistent**
 
@@ -241,7 +241,7 @@ Die Verwendung einer der in enthaltenen Schemavorlagen ist eine gute Einstiegsm�
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuigkeiten für Access 2013-Entwickler](http://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
+- [Neuigkeiten für Access 2013-Entwickler](https://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx) 
 - [Benutzerdefinierte Web-App-Referenz für Access](access-custom-web-app-reference.md)
   
 

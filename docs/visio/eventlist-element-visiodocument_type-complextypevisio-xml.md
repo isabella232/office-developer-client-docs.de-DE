@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 40bb8c7c-89ef-22e1-5edf-e2423fc89660
 description: Enthält ein Element EventItem für jedes Ereignis, der ein Objekt Antworten sollen.
-ms.openlocfilehash: e1033ae93ca272b8ea1d9855d08ad13a444612db
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5331f1b4a510b05b862f8c7c6306c89c6be4d9f0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796945"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383975"
 ---
 # <a name="eventlist-element-visiodocumenttype-complextype-visio-xml"></a>EventList-Element (VisioDocument_Type ComplexType) ("Visio XML")
 
 Enthält ein Element **EventItem** für jedes Ereignis, der ein Objekt Antworten sollen. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[EventList_Type](eventlist_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

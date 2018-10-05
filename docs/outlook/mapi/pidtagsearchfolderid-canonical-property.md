@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2a587d8c-f28b-45a6-a3da-cc33052988dc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c822600bf9090151fe18d3bf7cab0515fc360a4e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1a8de27358e0987e8f686cc11ab4b02a0bd07f6c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583505"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382533"
 ---
 # <a name="pidtagsearchfolderid-canonical-property"></a>PidTagSearchFolderId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen global eindeutigen Bezeichner (GUID), der den Suchordner identifiziert.
   
@@ -38,11 +38,11 @@ Enthält einen global eindeutigen Bezeichner (GUID), der den Suchordner identifi
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.
     

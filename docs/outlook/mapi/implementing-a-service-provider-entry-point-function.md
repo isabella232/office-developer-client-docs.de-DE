@@ -8,20 +8,20 @@ api_type:
 - COM
 ms.assetid: 83ff54c4-86ce-4529-ae45-260dfb763b30
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 40bbe110c7453cf2360fc103710fbc3bcb7f1c67
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 14dd11f873493e32b83dbd1960cac8ff8ef8e436
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572053"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387048"
 ---
 # <a name="implementing-a-service-provider-entry-point-function"></a>Implementieren einer Dienstanbieter-Einstiegspunktfunktion
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Jeder Dienstanbieter DLL hat einen Eintrag Funktion verweist, die MAPI-aufrufen, um sie zu laden. Beachten Sie, dass dieser Eintrag Point-Funktion nicht [DllMain](http://msdn.microsoft.com/en-us/library/ms682583.aspx), die Win32-DLL-Einstiegspunktfunktion identisch ist.
+Jeder Dienstanbieter DLL hat einen Eintrag Funktion verweist, die MAPI-aufrufen, um sie zu laden. Beachten Sie, dass dieser Eintrag Point-Funktion nicht [DllMain](https://msdn.microsoft.com/library/ms682583.aspx), die Win32-DLL-Einstiegspunktfunktion identisch ist.
   
 Je nach Typ des vom Dienstanbieter entspricht anderer Prototyp Ihrem Anbieter Eintrag Point-Funktion. MAPI definiert anderen Eintrag Punkt Prototypen für Dienstanbieter.
   

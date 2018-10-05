@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2813c102-6778-4443-ab4b-b573f3568705
 description: 'Zuletzt geändert: 30 Januar 2013'
-ms.openlocfilehash: 547733f815c7d8c8762e79febce40ee9fec07d3a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 841b01ae8dfcf841b0a1d64113ce7258c4c61583
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574531"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389260"
 ---
 # <a name="nickname-cache"></a>Cache für Spitznamen
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Microsoft Office Outlook 2007, Microsoft Outlook 2010 und Microsoft Outlook 2013 interagieren mit der Nickname-Cache, auch bekannt als "AutoVervollständigen Datenstroms." Der AutoVervollständigen-Stream ist, in denen Outlook weiterhin auftritt, der AutoVervollständigen-Liste wird die Liste der Namen, die in der **an**, **Cc**, anzeigt und **Bcc** Bearbeitungsfelder während ein Benutzer eine e-Mail-Nachricht erstellt wird. In diesem Thema wird beschrieben, wie Outlook 2007, Outlook 2010 und Outlook 2013 mit dem AutoVervollständigen-Stream interagieren und erörtert das binäre Format der Datei und die empfohlenen Maßnahmen für die Interaktion mit dem AutoVervollständigen-Stream. 
   
@@ -37,7 +37,7 @@ Die Mittel zur Speicherung der Daten AutoVervollständigen unterscheidet zwische
   
  **Outlook 2007**
   
-Für Outlook 2007 wird der Stream AutoVervollständigen in einer Datei mit dem gleichen Namen wie das Profil und der Erweiterung nk2 gespeichert. Angenommen, wenn das Standardprofil für "Outlook" verwendet wird, wird die Datei "outlook.nk2" aufgerufen. Die NK2-Datei wird in % APPDATA%\Microsoft\Outlook gespeichert. Weitere Informationen zu der Nickname-Cache-Binärdateiformat finden Sie unter [Outlook 2003/2007 NK2-Dateiformat und Richtlinien für Entwickler](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf).
+Für Outlook 2007 wird der Stream AutoVervollständigen in einer Datei mit dem gleichen Namen wie das Profil und der Erweiterung nk2 gespeichert. Angenommen, wenn das Standardprofil für "Outlook" verwendet wird, wird die Datei "outlook.nk2" aufgerufen. Die NK2-Datei wird in % APPDATA%\Microsoft\Outlook gespeichert. Weitere Informationen zu der Nickname-Cache-Binärdateiformat finden Sie unter [Outlook 2003/2007 NK2-Dateiformat und Richtlinien für Entwickler](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf).
   
  **Outlook 2010 und Outlook 2013**
   
@@ -84,5 +84,5 @@ Speichern von Änderungen an den AutoVervollständigen-Daten umfasst das Zurück
 [MAPI-Profile](mapi-profiles.md)
 
 
-[Outlook 2003/2007 NK2 Dateiformat und Richtlinien für Entwickler](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+[Outlook 2003/2007 NK2 Dateiformat und Richtlinien für Entwickler](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
 

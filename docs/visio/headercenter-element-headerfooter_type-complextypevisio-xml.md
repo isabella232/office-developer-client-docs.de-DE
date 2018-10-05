@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd026cb1-6d35-f9dc-e9dc-f95c0a6f2ff0
 description: Enthält die Textzeichenfolge, die im mittleren Bereich der Kopfzeile eines Dokuments angezeigt wird.
-ms.openlocfilehash: a0da30ba9aeb55efce85746bb749d1cea7be1c7a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ff9a35d3377ad0392580df0e397ac48ff1395950
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797118"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385431"
 ---
 # <a name="headercenter-element-headerfootertype-complextype-visio-xml"></a>HeaderCenter-Element (HeaderFooter_Type ComplexType) ("Visio XML")
 
 Enthält die Textzeichenfolge, die im mittleren Bereich der Kopfzeile eines Dokuments angezeigt wird.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[HeaderCenter_Type](headercenter_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

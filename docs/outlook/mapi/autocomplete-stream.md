@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: d4f380fa-2ed9-4c7c-9ef3-b32f8409f657
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: caa93fcc1675531f2d128170c81904e0e286e0f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8b5c5fee71db0fc7bdd6e01c58e9c9a9c3d9fa22
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591079"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384647"
 ---
 # <a name="autocomplete-stream"></a>Stream für automatisches Vervollständigen
 
@@ -71,7 +71,7 @@ Zusätzliche Informationen (EI-Bytes)
   
 Metadaten (8 Bytes)
   
-Ein Beispiel für eine binäre Struktur finden Sie im Binärbeispiel in den [Outlook 2003/2007 NK2-Dateiformat- und Entwicklerrichtlinien.](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+Ein Beispiel für eine binäre Struktur finden Sie im Binärbeispiel in den [Outlook 2003/2007 NK2-Dateiformat- und Entwicklerrichtlinien.](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
   
 ## <a name="high-level-layout"></a>Allgemeines Layout
 
@@ -198,7 +198,7 @@ PT_MV_UNICODE (Outlook 2007, Outlook 2010, Outlook 2013)
    
 ## <a name="significant-properties"></a>Wesentliche Eigenschaften
 
-Wie zuvor in diesem Artikel erwähnt, besitzen die binären Blöcke, die Eigenschaften darstellen, Eigenschafts-Tags, die Eigenschaften von Adressbuchempfängern entsprechen. Eine Beschreibung der Eigenschaften, die hier nicht aufgeführt sind, finden Sie unter http://msdn.microsoft.com/en-us/library/cc433490(EXCHG.80).aspx.
+Wie zuvor in diesem Artikel erwähnt, besitzen die binären Blöcke, die Eigenschaften darstellen, Eigenschafts-Tags, die Eigenschaften von Adressbuchempfängern entsprechen. Eine Beschreibung der Eigenschaften, die hier nicht aufgeführt sind, finden Sie unter https://msdn.microsoft.com/library/cc433490(EXCHG.80).aspx.
   
 |**Eigenschaftsname**|**Eigenschafts-Tag**|**Beschreibung (weitere Informationen finden Sie unter MSDN)**|
 |:-----|:-----|:-----|

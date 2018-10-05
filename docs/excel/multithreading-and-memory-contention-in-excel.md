@@ -1,5 +1,5 @@
 ---
-title: Multithreading und Arbeitsspeicher Konflikte in Excel
+title: Multithreading und Speicherkonflikte in Excel
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,15 +8,15 @@ keywords:
 - Multithreading in excel, Arbeitsspeicher Konflikte in Excel, Funktionen [Excel 2007], threadsicheren, threadsicheren Funktionen [Excel 2007], lokalen Speicher [Excel 2007]
 localization_priority: Normal
 ms.assetid: 86e1e842-f433-4ea9-8b13-ad2515fc50d8
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: fb0eddfff2f34307143bb896fd451de357f2b639
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: a385728450fc6519d7f5211c186a9d74e623bf7b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790563"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384423"
 ---
-# <a name="multithreading-and-memory-contention-in-excel"></a>Multithreading und Arbeitsspeicher Konflikte in Excel
+# <a name="multithreading-and-memory-contention-in-excel"></a>Multithreading und Speicherkonflikte in Excel
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
@@ -142,7 +142,7 @@ BOOL TLS_Action(DWORD DllMainCallReason)
 }
 ```
 
-Nachdem Sie den Index abgerufen haben, besteht der nächste Schritt für jeden Thread einen Block von Arbeitsspeicher zugewiesen werden. In der [Dokumentation zur Entwicklung von Windows](http://msdn.microsoft.com/en-us/library/ms682583%28VS.85%29.aspx) empfiehlt auf diese Weise jedes Mal, wenn die **DllMain** Callback-Funktion mit einem **DLL_THREAD_ATTACH** -Ereignis aufgerufen wird, und den Speicher bei jedem **DLL_THREAD_DETACH**. Jedoch würde diese Empfehlung folgen die DLL für nicht für die neuberechnung verwendeten Threads unnötige Arbeit leisten. 
+Nachdem Sie den Index abgerufen haben, besteht der nächste Schritt für jeden Thread einen Block von Arbeitsspeicher zugewiesen werden. In der [Dokumentation zur Entwicklung von Windows](https://msdn.microsoft.com/library/ms682583%28VS.85%29.aspx) empfiehlt auf diese Weise jedes Mal, wenn die **DllMain** Callback-Funktion mit einem **DLL_THREAD_ATTACH** -Ereignis aufgerufen wird, und den Speicher bei jedem **DLL_THREAD_DETACH**. Jedoch würde diese Empfehlung folgen die DLL für nicht für die neuberechnung verwendeten Threads unnötige Arbeit leisten. 
   
 In diesem Fall ist es besser mithilfe eine Strategie für das zuordnen auf erste verwenden. Zunächst müssen Sie eine Struktur definieren, die Sie für jeden Thread zuordnen möchten. Für den vorherigen Beispielen, die **XLOPERs** oder **XLOPER12s**zurückgeben, die folgenden reicht, aber Sie können eine beliebige Struktur, die Ihren Anforderungen erfüllt erstellen.
   
@@ -310,5 +310,5 @@ Besteht die Konkurrenz für eine freigegebene Ressource, wie häufige zugriffsan
   
 [Multithread-Neuberechnung in Excel](multithreaded-recalculation-in-excel.md)
   
-[Add-In-Manager und Funktionen von XLL-Schnittstelle](add-in-manager-and-xll-interface-functions.md)
+[Add-In-Manager und XLL-Benutzeroberflächenfunktionen](add-in-manager-and-xll-interface-functions.md)
 

@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 2e48a625-b3f7-9fd0-253e-fe12a1aca446
 description: Die Outlook-Zusatzreferenz enthält konzeptionelle Inhalte und Referenzdokumentation für vier Gruppen von APIs, Codebeispiele und ein verteilbares Installationsprogramm, mit denen Entwickler zur Erweiterung und integrieren in Outlook. APIs in dieser Referenz werden von Outlook für die Erweiterbarkeit, außerhalb der Outlook-Objektmodell verfügbar gemacht.
-ms.openlocfilehash: 5f289a1be8fe5d10ddac37394c940f2627415136
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 445d35c12e4c8984d47adcef3ecf50ebd881875b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791214"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384556"
 ---
 # <a name="welcome-to-the-outlook-auxiliary-reference"></a>Willkommen bei der Outlook-Zusatzreferenz
 
@@ -20,9 +20,9 @@ Die Outlook-Zusatzreferenz enthält konzeptionelle Inhalte und Referenzdokumenta
   
 Wenn Sie gerade erst mit dem Entwickeln von Lösungen für Outlook begonnen haben, finden Sie im Artikel [Auswählen einer API oder Technologie zum Entwickeln von Lösungen für Outlook](../selecting-an-api-or-technology-for-developing-solutions-for-outlook.md) weitere Informationen zu den APIs und Technologien, die am besten zu Ihren Anforderungen passen. 
 
-Bestimmte Informationen über das Outlook-Objektmodell finden Sie unter der [Outlook-VBA-Referenz](http://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx). 
+Bestimmte Informationen über das Outlook-Objektmodell finden Sie unter der [Outlook-VBA-Referenz](https://msdn.microsoft.com/library/75e4ad96-62a2-49d2-bc51-48ceab50634c%28Office.15%29.aspx). 
 
-Spezifische Informationen zu MAPI (Messaging API) von Outlook unterstützt werden finden Sie unter der [Outlook-MAPI-Referenz](http://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx).
+Spezifische Informationen zu MAPI (Messaging API) von Outlook unterstützt werden finden Sie unter der [Outlook-MAPI-Referenz](https://msdn.microsoft.com/library/3d980b86-7001-4869-9780-121c6bfc7275%28Office.15%29.aspx).
 
 ## <a name="conceptual"></a>Konzeptionelle 
 
@@ -44,9 +44,9 @@ Die grundlegende Diskussion umfasst die folgenden Themen:
     
 - [Über Besprechungsanfragen als aktualisierte Informationen und vollständige Aktualisierungen](about-meeting-requests-as-informational-updates-and-full-updates.md)
     
-- [Informationen zu Basisadressen Kalendern programmgesteuert für Sommerzeit](about-rebasing-calendars-programmatically-for-daylight-saving-time.md) (Es ist auch ein verteilbares Installationsprogramm für Drittanbieter-Kalender Basisadressen Tools, die für frühere Versionen von Outlook auch, ab Outlook 2010 funktioniert. Wenn das Installationsprogramm herunterladen möchten, finden Sie unter [Outlook 2010: Hilfs-Referenz Redistributable Installer und Headerdatei zum Neuzuordnen von Kalendern](http://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b).)
+- [Informationen zu Basisadressen Kalendern programmgesteuert für Sommerzeit](about-rebasing-calendars-programmatically-for-daylight-saving-time.md) (Es ist auch ein verteilbares Installationsprogramm für Drittanbieter-Kalender Basisadressen Tools, die für frühere Versionen von Outlook auch, ab Outlook 2010 funktioniert. Wenn das Installationsprogramm herunterladen möchten, finden Sie unter [Outlook 2010: Hilfs-Referenz Redistributable Installer und Headerdatei zum Neuzuordnen von Kalendern](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b).)
     
-- [Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [Informationen zum Beibehalten von TZDEFINITION in einem Stream, um eine binäre Eigenschaft zu übernehmen](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
 
 ## <a name="reference"></a>Referenz
 
@@ -64,7 +64,7 @@ Der Verweis Inhalt umfasst Folgendes:
 
 Die folgenden: Vorgehensweise Beispielaufgaben in der Outlook-Zusatzreferenz
     
-- [Bestimmen Sie, ob ein Outlook-Element geändert, jedoch nicht gespeichert (Outlook-Zusatzreferenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
+- [Bestimmen Sie, ob ein Outlook-Element geändert, aber nicht gespeichert (Outlook 2013 Hilfs-Referenz) wurde](how-to-determine-if-outlook-item-has-been-modified-but-not-saved.md)
     
 - [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
     
@@ -72,7 +72,7 @@ Die folgenden: Vorgehensweise Beispielaufgaben in der Outlook-Zusatzreferenz
     
 - [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
     
-- [Gibt an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) anzeigen](https://msdn.microsoft.com/en-us/library/office/gg262879.aspx)
+- [Geben Sie an, ob das Bild eines Kontakts in Outlook (Outlook-Zusatzreferenz) angezeigt werden soll](https://msdn.microsoft.com/library/office/gg262879.aspx)
     
 - [Verwenden von relativer Zeit zum Zugriff auf Frei/Gebucht-Daten](how-to-use-relative-time-to-access-free-busy-data.md)
     

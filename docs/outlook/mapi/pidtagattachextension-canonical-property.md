@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 667da30b-e11c-4040-aecf-bb35eed23722
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 71ad53880c400d924d73c903bd77f7b447a69d8b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 26efa868de29bc8a6a180b717230951b76da26a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577723"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388428"
 ---
 # <a name="pidtagattachextension-canonical-property"></a>PidTagAttachExtension (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Erweiterung, die den Dokumenttyp einer Anlage angibt. 
   
@@ -34,7 +34,7 @@ Enthält eine Erweiterung, die den Dokumenttyp einer Anlage angibt.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften werden von der Clientanwendung Zeitpunkt der Übermittlung festgelegt. 
   
@@ -44,7 +44,7 @@ Der messaging-System verwendeten **PR_ATTACH_EXTENSION** beim Konvertieren von N
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

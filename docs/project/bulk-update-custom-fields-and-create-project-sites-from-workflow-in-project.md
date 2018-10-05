@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 815131c6-190c-4f29-83bf-c853eee72821
 description: Damit werden Kunden optimal Project Online und unsere Service Erweiterbarkeit und Flexibilität zu verbessern, haben wir zwei Methoden das clientseitige Objektmodell hinzugefügt, die Sie in Project Online apps und Workflows verwenden können.
-ms.openlocfilehash: 4f8fee5de5efb69f410b78e9ce93b9dc9bb133f3
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 4de42471cd8c2f12a982447ccffc27ec8104fa31
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796188"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386159"
 ---
 # <a name="bulk-update-custom-fields-and-create-project-sites-from-a-workflow-in-project-online"></a>Massenaktualisierung von benutzerdefinierten Feldern und Erstellen von Projektwebsites aus einem Workflow in Project Online
 
@@ -25,7 +25,7 @@ Damit werden Kunden optimal Project Online und unsere Service Erweiterbarkeit un
 Neben der Bereitstellung von mehr Flexibilität, bieten diese Methoden auch beträchtliche Leistungssteigerungen beim Speichern und Veröffentlichen von Projekten in einem Workflow. In diesem Artikel wird beschrieben, wie die Methoden in der REST-API verwendet und enthält Anweisungen zum Erstellen eines Workflows, Bulk Updates benutzerdefinierte Felder und ein Workflow, der eine Projektwebsite erstellt.
   
 > [!NOTE]
-> Weitere Informationen zum Aufrufen von REST-APIs in SharePoint 2013-Workflows, finden Sie unter [Verwenden von SharePoint-REST-Dienste von Workflows mit einem POST-Methode](http://mysharepointinsight.blogspot.com/2013/05/using-sharepoint-rest-services-from.mdl) und [der SharePoint 2013 Rest-API in einem SharePoint Designer-Workflow aufrufen](https://sergeluca.wordpress.com/2013/04/09/calling-the-sharepoint-2013-rest-api-from-a-sharepoint-designer-workflow/). 
+> Weitere Informationen zum Aufrufen von REST-APIs in SharePoint 2013-Workflows, finden Sie unter [Verwenden von SharePoint-REST-Dienste von Workflows mit einem POST-Methode](https://mysharepointinsight.blogspot.com/2013/05/using-sharepoint-rest-services-from.mdl) und [der SharePoint 2013 Rest-API in einem SharePoint Designer-Workflow aufrufen](https://sergeluca.wordpress.com/2013/04/09/calling-the-sharepoint-2013-rest-api-from-a-sharepoint-designer-workflow/). 
   
 ## <a name="bulk-update-project-custom-fields-from-a-workflow"></a>BULK Update benutzerdefinierte Projektfelder mithilfe eines Workflows
 <a name="BulkUpdateCustomFields"> </a>
@@ -77,7 +77,7 @@ Der endgültige, End-to-End-Workflow sieht folgendermaßen aus:
     
     |Name|Typ|Wert|
     |:-----|:-----|:-----|
-    |Annehmen  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
+    |Accept  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
     |Content-Type  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
    
     ![Hinzufügen eines Accept-Headers] (media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Hinzufügen eines Accept-Headers")
@@ -198,7 +198,7 @@ Wir haben die **CreateProjectSite** -Methode hinzugefügt, damit Sie beim Erstel
     
     |Name|Typ|Wert|
     |:-----|:-----|:-----|
-    |Annehmen  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
+    |Accept  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
     |Content-Type  <br/> |Zeichenfolge  <br/> |Application/Json; OData = verbose  <br/> |
    
     ![Hinzufügen eines Accept-Headers] (media/2f2e2016-3c49-4cac-b1e7-f2b8118b840c.png "Hinzufügen eines Accept-Headers")
@@ -219,6 +219,6 @@ Wir haben die **CreateProjectSite** -Methode hinzugefügt, damit Sie beim Erstel
 
 - [Project-Programmieraufgaben](project-programming-tasks.md)
 - [Clientseitiges Objektmodell (CSOM) für Project 2013](client-side-object-model-csom-for-project-2013.md)
-- [Workflows in SharePoint 2013](http://msdn.microsoft.com/library/e0602371-ae22-44be-8a7e-9e47e9f046d6%28Office.15%29.aspx)
+- [Workflows in SharePoint 2013](https://msdn.microsoft.com/library/e0602371-ae22-44be-8a7e-9e47e9f046d6%28Office.15%29.aspx)
     
 

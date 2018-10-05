@@ -8,16 +8,16 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 45abee1c-d7fb-b0f9-522d-8ba34caf1094
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4b7e59c9ffccb2e063962b2cc4947b4fa54757bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: af176c0ce327e6498a5d07f6d902c50f7323f813
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22572718"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391731"
 ---
 # <a name="wrapcompressedrtfstreamex"></a>WrapCompressedRTFStreamEx
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Dekomprimiert die der Textkörper einer e-Mail-Nachricht, die im komprimierten Rich Text Format (RTF), gibt das Format an den dekomprimierten Stream-Objekts, optional konvertiert den dekomprimierten Datenstrom in seinem nativen Format und gibt entweder den dekomprimierten Stream oder die systemeigene Datenstrom konvertiert.
   
@@ -68,11 +68,11 @@ MAPI_E_INVALID_PARAMETER
   
 - Dies wird zurückgegeben, wenn das Flag **MAPI_NATIVE_BODY** mit dem **MAPI_MODIFY** -Flag im Feld **UlFlags** der Struktur **RTF_WCSINFO** an, auf das *pWCSInfo* zeigt kombiniert ist. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 **WrapCompressedRTFStreamEx** ermöglicht den Zugriff auf den Textkörper einer e-Mail-Nachricht in komprimierten RTF Dekomprimieren des Streams gekapselten der dekomprimierten Stream und das Format und optional die systemeigene Textstream zurückgegeben. Die systemeigene Textstream kann in RTF, nur-Text oder HTML sein. 
   
-Microsoft Office Outlook-Objektmodell enthält eine **Body** -Eigenschaft für **MailItem** -Objekten und einer [Der MailItem.BodyFormat-Eigenschaft (Outlook)](http://msdn.microsoft.com/library/f635a0bc-20b7-206c-f558-a4ca2519670f%28Office.15%29.aspx) , der das Format des Textkörpers angibt. Entwurfsbedingt Ruft eine Lösung, die von Outlook nicht vertrauenswürdig ist Sicherheit Dialogfelder von Outlook-Sicherheitspersonals generiert. Verwenden der exportierten MAPI-Funktion **WrapCompressedRTFStreamEx** ermöglicht eine Lösung für MAPI anstelle von Outlook-Objektmodell verwenden und diese Sicherheitsdialogfelder zu vermeiden. 
+Microsoft Office Outlook-Objektmodell enthält eine **Body** -Eigenschaft für **MailItem** -Objekten und einer [Der MailItem.BodyFormat-Eigenschaft (Outlook)](https://msdn.microsoft.com/library/f635a0bc-20b7-206c-f558-a4ca2519670f%28Office.15%29.aspx) , der das Format des Textkörpers angibt. Entwurfsbedingt Ruft eine Lösung, die von Outlook nicht vertrauenswürdig ist Sicherheit Dialogfelder von Outlook-Sicherheitspersonals generiert. Verwenden der exportierten MAPI-Funktion **WrapCompressedRTFStreamEx** ermöglicht eine Lösung für MAPI anstelle von Outlook-Objektmodell verwenden und diese Sicherheitsdialogfelder zu vermeiden. 
   
 Da die **MAPI\_NATIVE_BODY** Flag kombiniert werden die **MAPI\_ändern** -Kennzeichen in das Feld **UlFlags** von der **RTF\_WCSINFO** Struktur an, auf zeigt *pWCSInfo*, Sie können nur zugreifen, die systemeigene Textkörper-Datenstrom im schreibgeschützten Modus. Um die systemeigene Textstream im Lese-/Schreibmodus zuzugreifen, sollten Sie die **WrapCompressedRTFStream** -Funktion verwenden. 
   

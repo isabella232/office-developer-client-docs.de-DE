@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: bd9a5d5f-16fe-29b4-5af0-913b14d2be16
 description: Je nach das Ziel des übergeordneten gibt Überprüfungsproblem, entweder die Seite oder die Seite und die Form, der übergeordnete Überprüfungsproblem zugeordnet. Wenn das Ziel des überprüfungsproblems der übergeordneten ein Dokument, eine Seite weder ein Shape der IssueTarget angibt.
-ms.openlocfilehash: 72789782a37b29daa48cd01adb0b8eda4ebf73ac
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 74005bfb6035e32b7b34fdd5a8a5737813a562a0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797273"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385361"
 ---
 # <a name="issuetarget-element-issuetype-complextype-visio-xml"></a>IssueTarget-Element (Issue_Type ComplexType) ("Visio XML")
 
 Je nach das Ziel des übergeordneten gibt Überprüfungsproblem, entweder die Seite oder die Seite und die Form, der übergeordnete Überprüfungsproblem zugeordnet. Wenn das Ziel des überprüfungsproblems der übergeordneten ein Dokument, eine Seite weder ein Shape der **IssueTarget** angibt. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[IssueTarget_Type](issuetarget_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Validation.Xml  <br/> |
    

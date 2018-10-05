@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: a439e75a-92b3-4830-9dfc-e723d046be7b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 87299ce4335492a744dd4ee965b4f8b85bcedc84
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dec8706ba00356660ec82c25e0213ef3e638691d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564892"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387727"
 ---
 # <a name="launching-a-form-server"></a>Starten eines Formularservers
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Reihe von Interaktionen, das auftritt, wenn ein Formular aus dem permanenten Speicher geladen wird (d. h., aus einer Formularbibliothek) zum Anzeigen einer Meldung lautet wie folgt:
   
@@ -29,7 +29,7 @@ Die Reihe von Interaktionen, das auftritt, wenn ein Formular aus dem permanenten
     
 3. Der Formular-Manager lädt der Formular-Server aus der entsprechenden Formularbibliothek. Wenn der Formular Server für die Zielnachricht nicht installiert ist, wird der Formular-Manager des Formulars ausführbare Dateien als auch installiert.
     
-4. Der Formular-Manager ruft [QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) für das Formularobjekt, des Form-Objekts abgerufen [IMAPIForm: IUnknown](imapiformiunknown.md) und [IPersistMessage: IUnknown](ipersistmessageiunknown.md) Schnittstellen. 
+4. Der Formular-Manager ruft [QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) für das Formularobjekt, des Form-Objekts abgerufen [IMAPIForm: IUnknown](imapiformiunknown.md) und [IPersistMessage: IUnknown](ipersistmessageiunknown.md) Schnittstellen. 
     
 5. Der Formular-Manager ruft [IPersistMessage::Load](ipersistmessage-load.md) mit der Nachrichten-Website und die Nachricht Schnittstellen aus dem Viewer-Objekt. 
     

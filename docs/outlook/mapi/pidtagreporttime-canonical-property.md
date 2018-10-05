@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b3646505-a9f0-4a72-8277-b238c909f66f
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4efe68745c10521de243677c10a9ca32debd7122
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 298c53e537819f800a3acc5cf07c01a7b9f978ec
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577800"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387601"
 ---
 # <a name="pidtagreporttime-canonical-property"></a>PidTagReportTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Uhrzeit, wann das messaging-System ein Bericht erstellt.
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wann das messaging-System ein Bericht erstellt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft stellt eine Eigenschaft pro Empfänger zur Übermittlung und Nondelivery Berichte und eine-Message-Eigenschaft für Berichte lesen und nonread dar. 
   
@@ -42,15 +42,15 @@ Diese Eigenschaft stellt eine Eigenschaft pro Empfänger zur Übermittlung und N
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
     
-[[MS-OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > Ermöglicht die Behandlung von zulassen/blockieren-Listen und die Bestimmung des junk-e-Mail-Nachrichten.
     

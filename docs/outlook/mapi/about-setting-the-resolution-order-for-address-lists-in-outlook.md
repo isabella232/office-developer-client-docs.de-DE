@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e1589568-cb49-86dd-5d16-b08c8117bd17
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: 22d56ffac5d9d628b04e364fa772ddc8de488a31
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07a4c3e90f686f291f95ff87f337b54d8bf35edc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578654"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391409"
 ---
 # <a name="about-setting-the-resolution-order-for-address-lists-in-outlook"></a>Informationen zum Festlegen der L�sung Reihenfolge f�r Adresslisten in Outlook
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Für jedes Profil Microsoft Office Outlook unterstützt mehrere Adresslisten, und Benutzer können die Reihenfolge der Adresslisten, die von der, die Empfänger in e-Mail-Nachrichten und Teilnehmer in Besprechungsanfragen aufgelöst werden manuell angeben. Beispielsweise k�nnen Sie die Reihenfolge der L�sung festlegen, sodass Namen aufgel�st zuerst gegen Ihr Outlook-Adressbuch, und klicken Sie dann der globalen Adressliste enthalten sind. Auf einem Computer ein Benutzer im Adressbuch �ffnen, klicken Sie auf **Extras** und dann auf **Optionen**, um diesen Auftrag L�sung anzugeben. Es ist jedoch in einer Unternehmensumgebung effizienter f�r IT-Administratoren die Reihenfolge der Adresslisten programmgesteuert festgelegt mit dem Namen aufgel�st werden. Diese Art von Code kann als Teil eines Skripts zum Starten Automation verwendet werden, die von ein Administrator innerhalb des Unternehmens bereitgestellt. 
   
@@ -27,6 +27,6 @@ Es folgen Beispiele daf�r, wie Sie eine benutzerdefinierte Suchpfad f�r Adre
   
 - [Programmgesteuertes Festlegen der Lösungsreihenfolge für Adresslisten](how-to-programmatically-set-the-resolution-order-for-address-lists.md)
     
-- [KB 292590: zum �ndern der Address Book Sortierreihenfolge mit SetSearchPath](http://support.microsoft.com/kb/292590)
+- [KB 292590: zum �ndern der Address Book Sortierreihenfolge mit SetSearchPath](https://support.microsoft.com/kb/292590)
     
 

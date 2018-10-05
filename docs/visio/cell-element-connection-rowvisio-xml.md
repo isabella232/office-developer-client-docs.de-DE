@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7cafaa31-c56b-ebb0-3bfb-c339cc93038e
 description: Enthält die x- oder y-Koordinaten, horizontaler oder vertikaler Richtung oder Typ für einen einzelnen Verbindungspunkt auf einem Shape.
-ms.openlocfilehash: 52328e50b185a96ebb06634248b93a4332ac35c2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 367d7e462c1eb5b8fa6ee0572346f45ad621fa15
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796574"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388959"
 ---
 # <a name="cell-element-connection-row-visio-xml"></a>Zellenelement (Verbindung Zeile) ("Visio XML")
 
 Enthält die x- oder y-Koordinaten, horizontaler oder vertikaler Richtung oder Typ für einen einzelnen Verbindungspunkt auf einem Shape.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -69,7 +69,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |AutoGen  <br/> |Gibt an, ob die Verbindung automatisch generiert wird. Der Wert 1 gibt an, dass der Verbindungspunkt automatisch generiert wird.  <br/> |Keine.  <br/> |
 |DirX  <br/> |Legt die X-Komponente für den erforderlichen Ausrichtungsvektor eines passenden Verbindungspunkts.  <br/> |[Zelle "DirX / A" (Abschnitt "Connection Points")](dirxa-cell-connection-points-section.md) <br/> |
 |DirY  <br/> |Die y-Komponente für den erforderlichen Ausrichtungsvektor eines passenden Verbindungspunkts bestimmt.  <br/> |[Zelle "DirY / B" (Abschnitt "Connection Points")](diryb-cell-connection-points-section.md) <br/> |
-|Prompt  <br/> |Dieses Attribut ist für die zukünftige Verwendung reserviert.  <br/> |Keine.  <br/> |
+|Eingabeaufforderung  <br/> |Dieses Attribut ist für die zukünftige Verwendung reserviert.  <br/> |Keine.  <br/> |
 |Typ  <br/> |Legt den Verbindungspunkttyp fest.  <br/> |[Zelle "Type / C" (Abschnitt "Connection Points")](typec-cell-connection-points-section.md) <br/> |
 |X  <br/> |Stellt die X-Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.  <br/> |[Zelle "X" (Abschnitt "Connection Points")](x-cell-connection-points-section.md) <br/> |
 |v  <br/> |Bestimmt die y-Koordinate für einen Verbindungspunkt in lokalen Koordinaten dar.  <br/> |[Zelle "Y" (Abschnitt "Connection Points")](y-cell-connection-points-section.md) <br/> |

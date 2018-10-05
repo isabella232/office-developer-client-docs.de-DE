@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 581bf372-8705-4617-aaa4-a1d761eb9b58
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a328d71aef57f85a5bd33db5cc219dff181dafc0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 870fbf2228206253261124907d6bd420f95fb7c1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593305"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384843"
 ---
 # <a name="pidtagreporttag-canonical-property"></a>PidTagReportTag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen binären Tagwert, den das messaging-System auf einen Bericht für die Nachricht generierte kopieren soll. 
   
@@ -34,7 +34,7 @@ Enthält einen binären Tagwert, den das messaging-System auf einen Bericht für
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft, wie die Eigenschaft **PR_SUBJECT_IPM** ([PidTagSubjectMessageId](pidtagsubjectmessageid-canonical-property.md)) wird verwendet, um einen Bericht mit der ursprünglichen Nachricht zu korrelieren. 
   
@@ -42,11 +42,11 @@ Diese Eigenschaft, wie die Eigenschaft **PR_SUBJECT_IPM** ([PidTagSubjectMessage
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
     

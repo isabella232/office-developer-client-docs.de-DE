@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: f403890d-4a3a-bacc-53d7-1b9920b23639
 description: Jedem Objekt in Microsoft Visio (Dokument, Zeichenblatt, Formatvorlage, Shape, Gruppe, Shape oder Objekt in einer Gruppe, Master-Shape, Objekt aus einem anderen Programm, Führungslinie und Führungspunkt) ist eine ShapeSheet-Kalkulationstabelle zugeordnet, in der wichtige objektspezifische Informationen aufgeführt sind. Diese Kalkulationstabelle enthält Informationen wie Höhe, Breite, Winkel, Farbe sowie andere Attribute, die das Erscheinungsbild und das Verhalten des Shapes definieren.
-ms.openlocfilehash: f443a596174ac4a555d53a271372e73367197da0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 37b2ae10b1f511197af5ccf739de91edb74e7819
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796359"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389351"
 ---
 # <a name="about-the-shapesheet-spreadsheet"></a>Informationen zur ShapeSheet-Kalkulationstabelle
 
@@ -36,13 +36,13 @@ Sie können ein ShapeSheet-Fenster und ein Zeichnungsfenster gleichzeitig anzeig
 
 Ein ShapeSheet ist unterteilt in *Abschnitte* , die einen bestimmten Aspekt der Verhalten eines Shapes oder die Darstellungsweise, steuern beispielsweise Geometrie oder Formatierung. Jeder Abschnitt enthält eine oder mehrere *Zeilen* , die *Zellen* enthalten. Jede Zelle kann eine Formel, dessen Ergebnis (häufig als der Wert der Zelle bezeichnet) und optionale Fehlerinformationen enthalten. Eine Formel, die möglicherweise erforderlich oder optional, je nach der jeweiligen Zelle. Eine Zelle Daten (beispielsweise die Formel oder Wert) können lokal definiert oder häufiger aus der entsprechenden Zelle in der Form Master oder einer Formatvorlage geerbt. 
   
-Im folgenden Beispiel werden die Formelleiste ![Nummer 1](media/callout1_ZA01036259.gif), ein Abschnitt ![Nummer 2](media/callout2_ZA01036260.gif), eine Zelle ![Nummer 3](media/callout3_ZA01036261.gif)und eine Zeile ![Nummer 4](media/callout4_ZA01036262.gif) im ShapeSheet-Fenster veranschaulicht. 
+Im folgenden Beispiel werden die Formelleiste ![Bearbeitungsleiste](media/callout1_ZA01036259.gif), ein Abschnitt ![Bereich](media/callout2_ZA01036260.gif), eine Zelle ![Zelle](media/callout3_ZA01036261.gif)und eine Zeile ![row](media/callout4_ZA01036262.gif) im ShapeSheet-Fenster veranschaulicht. 
   
-![](media/ShpSheetRef_CA_02a_ZA07645861.gif)
+![ShapeSheet-Fenster](media/ShpSheetRef_CA_02a_ZA07645861.gif)
   
 Wenn Sie ein Shape zeichnen, zeichnet Visio das Shape als eine Auflistung der horizontalen und vertikalen Speicherorte mit Liniensegmenten verbunden. Diese Positionen (auch Scheitelpunkte genannt) werden in die Zellen X und Y die Shape- **Geometrie** -Abschnitt gespeichert. Wie im folgenden Beispiel angezeigt, wenn Sie die Zellen X und Y im Abschnitt **Geometry** des ShapeSheet-Fenster für ein Shape klicken, wird ein Schwarz versehen Feld Hervorhebung des Scheitelpunkts auf dem Shape im Zeichnungsfenster angezeigt. 
   
-![](media/ShpSheetRef_CA_01_ZA07645860.gif)
+![Schwarz versehen Feld der Scheitelpunkt auf dem Shape im Zeichnungsfenster hervorgehoben](media/ShpSheetRef_CA_01_ZA07645860.gif)
   
 ## <a name="editing-an-object-in-the-shapesheet-window"></a>Bearbeiten eines Objekts im ShapeSheet-Fenster
 

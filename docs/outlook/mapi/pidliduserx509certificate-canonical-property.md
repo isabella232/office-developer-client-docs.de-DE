@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f40cd807-7aac-49f4-8e82-b0e5e1634b08
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d388ab81be33689612872795d690a26efca064f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5dea0639ffec8fb44316eb5aa4c92d2bbfb361da
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563065"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390884"
 ---
 # <a name="pidliduserx509certificate-canonical-property"></a>PidLidUserX509Certificate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 X. 509 Version 3 Sicherheitszertifikate für ein messaging-Benutzer enthält.
   
@@ -39,11 +39,11 @@ X. 509 Version 3 Sicherheitszertifikate für ein messaging-Benutzer enthält.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

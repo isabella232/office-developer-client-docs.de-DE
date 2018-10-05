@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3f44fc18-4757-7aba-8778-a474ab93a78d
 description: Enthält die x- oder y-Koordinaten, die horizontalen und vertikalen Richtung und den Typ für einen einzelnen Verbindungspunkt auf einem Shape.
-ms.openlocfilehash: d06a51e52f2b5273171d068f6fc2a6bf5227eed5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9f8f5f0735f7eeff2f1b2ec4562b79e6550d1716
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797897"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389918"
 ---
 # <a name="row-element-connection-section-visio-xml"></a>Row-Element (im Abschnitt Verbindung) ("Visio XML")
 
 Enthält die x- oder y-Koordinaten, die horizontalen und vertikalen Richtung und den Typ für einen einzelnen Verbindungspunkt auf einem Shape.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ConnectionRow_Type](connectionrow_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    

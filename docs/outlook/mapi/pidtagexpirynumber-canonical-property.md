@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 644e8d3d-1792-4417-95a1-e978d0e6cd8e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b9659beac383ab5da206e5184a3501036da2cd80
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: da90347f5aacdb2fcac8547eddd5b89a0a44820d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564528"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385823"
 ---
 # <a name="pidtagexpirynumber-canonical-property"></a>PidTagExpiryNumber (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Definiert die Ablaufzeit senden in Verbindung mit der **PR_EXPIRY_UNITS** ([PidTagExpiryUnits](pidtagexpiryunits-canonical-property.md))-Eigenschaft.
   
@@ -34,7 +34,7 @@ Definiert die Ablaufzeit senden in Verbindung mit der **PR_EXPIRY_UNITS** ([PidT
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss zwischen 0 und 999, der festgelegt werden, wenn es vorhanden ist.
   
@@ -42,7 +42,7 @@ Der Wert dieser Eigenschaft muss zwischen 0 und 999, der festgelegt werden, wenn
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: f98eb842-fe76-4f60-b5e2-d2217d1a66ad
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b4d46dc8a84b52605d09a694e6873cb3813ae5b4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d72c224db8b3ae4bb6fee3d34f73d9949cda6b8d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578115"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391661"
 ---
 # <a name="mfcmapi-as-a-code-sample"></a>MFCMAPI (engl.) als ein Codebeispiel
  
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Das MFCMAPI (engl.) Beispiel verwendet der Messaging-API, Zugriff auf MAPI-Speicher über eine grafische Benutzeroberfläche ermöglicht. Nachdem Sie dieses Beispiel herunterladen, können Sie die Quelldateien, um Beispiel Usage Fälle für viele der MAPI-Schnittstellen und Verweise zu überprüfen. Weitere Informationen finden Sie unter [MAPI-Schnittstellen](mapi-interfaces.md).
   
@@ -27,7 +27,7 @@ Das MFCMAPI (engl.) Beispiel verwendet der Messaging-API, Zugriff auf MAPI-Speic
    
 ### <a name="to-download-mfcmapi"></a>MFCMAPI (engl.) herunterladen
   
-1. Klicken Sie auf der Seite [MFCMAPI (engl.)](http://codeplex.com/MFCMAPI) auf der Registerkarte **Quellcode** . 
+1. Klicken Sie auf der Seite [MFCMAPI (engl.)](https://codeplex.com/MFCMAPI) auf der Registerkarte **Quellcode** . 
     
 2. Klicken Sie unter **Zuletzt verwendete Eincheckvorgänge**auf **Download** für den aktuellen Build. 
     

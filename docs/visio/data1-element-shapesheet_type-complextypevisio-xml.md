@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: d72dc0e4-4e0f-dd3f-a51a-8486f9ec548e
 description: Enthält einen beliebiger Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einem Shape bereitzustellen.
-ms.openlocfilehash: 5ac527e07e1150f8cac38457f3e6f7525f795d7d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a203f915e9a5ff86e7cf75d96639157f76d3c151
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796760"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390968"
 ---
 # <a name="data1-element-shapesheettype-complextype-visio-xml"></a>Data1-Element (ShapeSheet_Type ComplexType) ("Visio XML")
 
 Enthält einen beliebiger Zeichenfolgenwert, der verwendet wird, um zusätzliche Informationen zu einem Shape bereitzustellen.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Datentyp](data_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
    

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: cbc4585d-f970-4b22-ac08-d7fc91bff3d3
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: bc61fb1ac3fce317be283b7f05813ad485791cea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f05fa0816db3b412329372ad392c673c240eb59e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563534"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389099"
 ---
 # <a name="pidtagattachmimetag-canonical-property"></a>PidTagAttachMimeTag (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält Formatierung Informationen über eine Anlage Multipurpose Internet Mail Extensions (MIME). 
   
@@ -34,7 +34,7 @@ Enthält Formatierung Informationen über eine Anlage Multipurpose Internet Mail
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn die **PR_ATTACH_TAG** ([PidTagAttachTag](pidtagattachtag-canonical-property.md))-Eigenschaft den Wert **OID_MIMETAG**enthält, sollte der Adressbuchhierarchie sehen Sie sich diese Eigenschaften, um zu bestimmen, wie die Anlage formatiert ist. 
   
@@ -44,11 +44,11 @@ Diese Eigenschaften werden aus dem Content-Type-Parameter des eingehenden MIME-H
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXORMMS]](http://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften der codierten Nachrichten, deren Rechte verwaltet werden.
     

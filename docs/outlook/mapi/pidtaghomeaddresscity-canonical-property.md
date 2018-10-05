@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 9b94b8f6-4a40-4467-a115-4467daf782b9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e0be0cd923a3685a1573b1414260446281902998
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 40c9b37474391c58b1089694f07ea9e99b418daa
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573530"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383016"
 ---
 # <a name="pidtaghomeaddresscity-canonical-property"></a>PidTagHomeAddressCity (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Ort für die Adresse des Empfängers privat.
   
@@ -38,11 +38,11 @@ Enthält den Ort für die Adresse des Empfängers privat.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

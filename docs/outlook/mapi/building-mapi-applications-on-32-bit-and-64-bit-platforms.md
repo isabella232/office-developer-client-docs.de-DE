@@ -8,12 +8,12 @@ api_type:
 - COM
 ms.assetid: d218ba2d-7a2e-4c33-a09b-a8c7e27f9726
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e4e5986de3cdc4da3ac1e4fa2ec6da95da6e8e44
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bc98b201b31048e22e093d92c9cf2d5ff1fb0257
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563576"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383149"
 ---
 # <a name="building-mapi-applications-on-32-bit-and-64-bit-platforms"></a>Erstellen von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
 
@@ -53,7 +53,7 @@ MAPI-Anwendungen, die für ein 32-Bit-MAPI-Subsystem kompiliert wurden, das in 3
   
 ### <a name="32-bit-mapi-application-and-64-bit-outlook"></a>32-Bit-MAPI-Anwendung und 64-Bit-Version von Outlook
 
-32-Bit-MAPI-Anwendungen werden nicht auf einem Computer mit der 64-Bit-Version von Outlook und der 64-Bit-Version von Windows unterstützt. Anwendungsentwickler müssen die Anwendung als 64-Bit-Anwendung für die 64-Bit-Plattform neu erstellen. Grund dafür ist, dass eine 32-Bit-Anwendung die 64-Bit-Datei „Msmapi32.dll“ nicht laden kann Es gibt eine kleine Anzahl von API-Änderungen, die Anwendungsentwickler vornehmen müssen, damit Ihr Code erfolgreich in einer 64-Bit-Umgebung ausgeführt werden kann. Diese Änderungen wurden an den MAPI-Headerdateien vorgenommen, damit 64-Bit-Plattformen unterstützt werden. Sie können diese Headerdateien unter [Outlook 2010: MAPI-Headerdateien](http://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1) herunterladen. Entwickler können denselben Satz von MAPI-Headerdateien zum Erstellen von 32-Bit- und 64-Bit-MAPI-Anwendungen verwenden.
+32-Bit-MAPI-Anwendungen werden nicht auf einem Computer mit der 64-Bit-Version von Outlook und der 64-Bit-Version von Windows unterstützt. Anwendungsentwickler müssen die Anwendung als 64-Bit-Anwendung für die 64-Bit-Plattform neu erstellen. Grund dafür ist, dass eine 32-Bit-Anwendung die 64-Bit-Datei „Msmapi32.dll“ nicht laden kann Es gibt eine kleine Anzahl von API-Änderungen, die Anwendungsentwickler vornehmen müssen, damit Ihr Code erfolgreich in einer 64-Bit-Umgebung ausgeführt werden kann. Diese Änderungen wurden an den MAPI-Headerdateien vorgenommen, damit 64-Bit-Plattformen unterstützt werden. Sie können diese Headerdateien unter [Outlook 2010: MAPI-Headerdateien](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1) herunterladen. Entwickler können denselben Satz von MAPI-Headerdateien zum Erstellen von 32-Bit- und 64-Bit-MAPI-Anwendungen verwenden.
   
 ### <a name="64-bit-mapi-application-and-64-bit-outlook"></a>64-Bit-MAPI-Anwendung und 64-Bit-Version von Outlook
 
@@ -61,7 +61,7 @@ MAPI-Anwendungen, die für ein 32-Bit-MAPI-Subsystem kompiliert wurden, das in 3
   
 ### <a name="64-bit-mapi-application-and-32-bit-outlook"></a>64-Bit-MAPI-Anwendung und 32-Bit-Version von Outlook
 
-64-Bit-MAPI-Anwendungen werden nicht auf einem Computer mit der 32-Bit-Version von Outlook und der 32-Bit- oder 64-Bit-Version von Windows unterstützt. Anwendungsentwickler müssen die Anwendung als 32-Bit-Anwendung für die Verwendung mit der 32-Bit-Version von Outlook neu erstellen. Verwenden Sie die aktualisierten MAPI-Headerdateien, die unter [Outlook 2010: MAPI-Headerdateien](http://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1) heruntergeladen werden können. Entwickler können denselben Satz von MAPI-Headerdateien zum Erstellen von 32-Bit- und 64-Bit-MAPI-Anwendungen verwenden.
+64-Bit-MAPI-Anwendungen werden nicht auf einem Computer mit der 32-Bit-Version von Outlook und der 32-Bit- oder 64-Bit-Version von Windows unterstützt. Anwendungsentwickler müssen die Anwendung als 32-Bit-Anwendung für die Verwendung mit der 32-Bit-Version von Outlook neu erstellen. Verwenden Sie die aktualisierten MAPI-Headerdateien, die unter [Outlook 2010: MAPI-Headerdateien](https://www.microsoft.com/downloads/details.aspx?FamilyID=f8d01fc8-f7b5-4228-baa3-817488a66db1) heruntergeladen werden können. Entwickler können denselben Satz von MAPI-Headerdateien zum Erstellen von 32-Bit- und 64-Bit-MAPI-Anwendungen verwenden.
   
 ### <a name="exception-mapisendmail"></a>Ausnahme: MAPISendMail
 

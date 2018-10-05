@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: ca153737-75dc-426a-a410-7a7ab3264f23
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: e8fa8df4e1439db3f1bc688d282e5ebdd3503024
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 74c2a7247df02570761247a9e4a6fae378f37312
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575504"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385200"
 ---
 # <a name="ending-a-mapi-session"></a>Beenden einer MAPI-Sitzung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Clients können beenden, deren Sitzung als Antwort auf Anforderung eines Benutzers, entweder sofort oder erst, nachdem alle ausgehende Nachrichten verarbeitet wurden, und wenn ein schwerwiegender Fehler auftritt. Einige Clients müssen bleiben angemeldet damit ausstehende ausgehende Nachrichten der Adressbuchhierarchie erreicht werden kann und das Ziel messaging-System. Wenn solche ein Client eine Nachricht sendet und sofort abmeldet, bleiben die Nachricht in der ausgehenden Warteschlange, bis ein Benutzer Back anmeldet und bleibt angemeldet sind lange genug für die Nachricht zu übermitteln.
   
@@ -27,7 +27,7 @@ Clients können beenden, deren Sitzung als Antwort auf Anforderung eines Benutze
   
 1. Brechen Sie für alle Benachrichtigungen für Registrierungen durch Aufrufen der **Unadvise** -Methode jedes registrierten Objekts ab. 
     
-2. Lassen Sie alle geöffneten Objekte durch ihre [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28VS.85%29.aspx) -Methoden aufrufen. Die open-Objekte können Typen advise-senken, die Statustabelle, der Ordner Postausgang, eine oder mehrere Nachrichtenspeicher und im Adressbuch. 
+2. Lassen Sie alle geöffneten Objekte durch ihre [IUnknown](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx) -Methoden aufrufen. Die open-Objekte können Typen advise-senken, die Statustabelle, der Ordner Postausgang, eine oder mehrere Nachrichtenspeicher und im Adressbuch. 
     
 3. Rufen Sie [MAPIFreeBuffer](mapifreebuffer.md) , um den Speicherplatz für alle zwischengespeicherten Eintragsbezeichner wie **PR_IPM_SUBTREE_ENTRYID** ([PidTagIpmSubtreeEntryId](pidtagipmsubtreeentryid-canonical-property.md)) freizugeben.
     
@@ -35,7 +35,7 @@ Clients können beenden, deren Sitzung als Antwort auf Anforderung eines Benutze
     
 5. Version der Sitzung Zeiger durch Aufrufen der Sitzung **IUnknown** -Methode. 
     
-6. Wenn Sie während der Sitzung zum Starten des OLE-Bibliotheken initialisieren [OleInitialize](http://msdn.microsoft.com/en-us/library/ms690134%28v=VS.85%29.aspx) aufgerufen, initialisieren sie nun durch Aufrufen von [OleUninitialize](http://msdn.microsoft.com/en-us/library/ms691326%28VS.85%29.aspx). Nur Clients, die **OleInitialize** aufgerufen haben, müssen **OleUninitialize**aufrufen. 
+6. Wenn Sie während der Sitzung zum Starten des OLE-Bibliotheken initialisieren [OleInitialize](https://msdn.microsoft.com/library/ms690134%28v=VS.85%29.aspx) aufgerufen, initialisieren sie nun durch Aufrufen von [OleUninitialize](https://msdn.microsoft.com/library/ms691326%28VS.85%29.aspx). Nur Clients, die **OleInitialize** aufgerufen haben, müssen **OleUninitialize**aufrufen. 
     
 7. Aufhebung der Initialisierung der MAPI-Bibliotheken durch Aufrufen von [MAPIUninitialize](mapiuninitialize.md). Wenn Sie zu einem bestimmten Zeitpunkt **OleInitialize** aufgerufen wird, stellen Sie sicher, dass ein Aufruf von **OleUninitialize** vor dieser Aufruf **MAPIUninitialize**auftritt. Der Zeitpunkt ist entscheidend. Wenn der Aufruf von **OleUninitialize** den Anruf an **MAPIUninitialize**folgt, möglicherweise Netzwerkkkabel Ihrer Client beenden. 
     

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: f5954685-3a2d-7848-388f-5dd7e536551c
 description: Das Stammelement eines Microsoft Visio-Dokuments.
-ms.openlocfilehash: 5a325b78ec64708246f0c8a6f5396c2ce1569121
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9829fa8960d78777e0fff4306b96978da90a647d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798410"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391304"
 ---
 # <a name="visiodocument-element-visio-xml"></a>VisioDocument-Element ("Visio XML")
 
 Das Stammelement eines Microsoft Visio-Dokuments.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[VisioDocument_Type](visiodocument_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

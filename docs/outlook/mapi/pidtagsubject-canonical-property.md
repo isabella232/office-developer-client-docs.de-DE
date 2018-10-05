@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: aa7ba4d9-c5e0-4ce7-a34e-65f675223bc9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9d37e4ee32cb5db623cece3061012ae4df0173a8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 0cf9e9f8c10f8d27bd174b8b6f2bf19812dc269d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586942"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386306"
 ---
 # <a name="pidtagsubject-canonical-property"></a>PidTagSubject (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den vollständigen Betreff einer Nachricht.
   
@@ -34,7 +34,7 @@ Enthält den vollständigen Betreff einer Nachricht.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften werden für alle Objekte, die Meldung empfohlen. 
   
@@ -48,11 +48,11 @@ Für einen Bericht enthält diese Eigenschaft die ursprüngliche Nachricht Betre
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

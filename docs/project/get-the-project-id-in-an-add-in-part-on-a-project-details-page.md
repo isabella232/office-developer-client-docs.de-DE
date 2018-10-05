@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 009cd997-c7e5-4078-b495-c40caa29a5fb
 description: Add-in-Komponenten gehostet werden in Iframe-Elemente, die von der Hostingseite vollständig isoliert sind. Um Informationen über das aktuelle Projekt aus einer Webpart-Add-in auf Projekt Details Seite (PDP) erhalten, können Sie die window.postMessage-Methode, einen Ereignislistener und einen Ereignishandler, der analysiert wird, die Projekt-ID aus der Nachricht.
-ms.openlocfilehash: d9f6d02f328860f46784f86c049581fa28bb4749
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ffaf9cb7dac783a754b2d56b5ece4d5a7a0319be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594425"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389883"
 ---
 # <a name="get-the-project-id-in-an-add-in-part-on-a-project-details-page"></a>Abrufen der Projekt-ID in einem Add-In-Webpart auf einer Project-Detailseite
 
@@ -38,7 +38,7 @@ Um das Codebeispiel in diesem Artikel zu verwenden, benötigen Sie eine der folg
             
         - Sie müssen als eine andere Person als das Systemkonto angemeldet sein. Das Systemkonto verfügt nicht über die Berechtigung um ein Add-in zu installieren.
     
-Weitere Informationen zur-Add-ins für Project finden Sie unter [Voraussetzungen für die Erstellung einer Add-in für Project Server 2013](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites) . Hinweise zum lokalen Setup (einschließlich wie das Kontrollkästchen Loopback deaktivieren, falls erforderlich) finden Sie unter [Einrichten einer lokalen Entwicklungsumgebung für SharePoint-Add-ins](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins) . Wenn Sie einen Remote entwickeln, finden Sie unter [Developing apps für SharePoint auf einem Remotesystem](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins).
+Weitere Informationen zur-Add-ins für Project finden Sie unter [Voraussetzungen für die Erstellung einer Add-in für Project Server 2013](create-a-sharepoint-hosted-project-server-add-in.md#pj15_StatusingApp_Prerequisites) . Hinweise zum lokalen Setup (einschließlich wie das Kontrollkästchen Loopback deaktivieren, falls erforderlich) finden Sie unter [Einrichten einer lokalen Entwicklungsumgebung für SharePoint-Add-ins](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/set-up-an-on-premises-development-environment-for-sharepoint-add-ins) . Wenn Sie einen Remote entwickeln, finden Sie unter [Developing apps für SharePoint auf einem Remotesystem](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/develop-sharepoint-add-ins).
   
 ## <a name="create-the-sharepoint-hosted-add-in-and-client-web-part"></a>Erstellen Sie das SharePoint-Hosting-add-in und Client-Webpart
 <a name="CreateApp"> </a>
@@ -157,7 +157,7 @@ In diesem Beispiel wird das Teil-Add-in zugreifen nicht Project Server-Daten ode
   
 Geben Sie in der Datei AppManifest.XML die Berechtigungen, die Ihr Add-in benötigt Zugriff auf Project Server-Daten oder SharePoint-Daten. 
   
-Finden Sie unter [Create-Add-in Webparts mit Ihrer SharePoint-Add-in installieren](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx) , erfahren, wie benutzerdefinierte Eigenschaften für ein Webpart-Add-in festgelegt. 
+Finden Sie unter [Create-Add-in Webparts mit Ihrer SharePoint-Add-in installieren](https://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx) , erfahren, wie benutzerdefinierte Eigenschaften für ein Webpart-Add-in festgelegt. 
   
 ## <a name="example-getting-the-project-id-in-an-add-in-part-on-a-pdp-page"></a>Beispiel: Abrufen der Project-ID in einem Webpart-Add-in auf einem Zeichenblatt PDP
 <a name="CodeExample"> </a>
@@ -252,6 +252,6 @@ Im folgende Beispiel wird der vollständige Code in die Clientwebpart GetProject
 
 - [Project-Programmieraufgaben](project-programming-tasks.md)
 - [Erstellen eines auf SharePoint gehosteten Project Server-Add-Ins](create-a-sharepoint-hosted-project-server-add-in.md)
-- [Erstellen von Add-In-Webparts zur Installation mit Ihrem SharePoint-Add-In](http://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
+- [Erstellen von Add-In-Webparts zur Installation mit Ihrem SharePoint-Add-In](https://msdn.microsoft.com/library/a2664289-6c56-4cb1-987a-22367fad55eb%28Office.15%29.aspx)
     
 

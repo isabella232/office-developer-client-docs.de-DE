@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 8dbfb22d-93db-468c-b2a4-eaa2b545bd61
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 190135f64ad02a2b6c560dd819f1749286f329a6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c1d03ab8a1381609784862e7c7cf3576bc90527e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591317"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389932"
 ---
 # <a name="pidtagkeyword-canonical-property"></a>PidTagKeyword (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält ein Schlüsselwort, das den Empfänger an den Empfänger Systemadministrator identifiziert.
   
@@ -34,7 +34,7 @@ Enthält ein Schlüsselwort, das den Empfänger an den Empfänger Systemadminist
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Adresse  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen Empfänger. Sie sind durch den Empfänger und ihre Organisation definiert.
   
@@ -42,11 +42,11 @@ Diese Eigenschaften Identitätsnachweis und Zugriff auf Informationen für einen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
     

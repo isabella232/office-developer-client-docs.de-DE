@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 17d64211-6265-41f4-b016-3677d75af966
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: be09b0f21017c81484fe538839e3bdd6137ff663
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e259c86803147d782469c8d86b23694d8b54e69d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582133"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386397"
 ---
 # <a name="pidtagipmdraftsentryid-canonical-property"></a>PidTagIpmDraftsEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook Entwürfe enthält. 
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook Entwürfe enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf einen bestimmten Nachrichtenspeicher folgendermaßen Sie vor: 
   
@@ -52,11 +52,11 @@ Diese Eigenschaft wird in den Ordner Posteingang als auch im Stammordner des Nac
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Erstellen und Ordner mit Sonderfunktion in einem Postfach suchen.
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f1e2a526-40ad-4a93-908f-8ab9a65928a8
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 49ed8669a5496524917c15ac86e4a13060931057
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 073a76766a296d86e7a23809921b832d494a8f1b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578570"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384836"
 ---
 # <a name="imapiformshutdownform"></a>IMAPIForm::ShutdownForm
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Schließt das Formular.
   
@@ -51,7 +51,7 @@ SAVEOPTS_SAVEIFDIRTY
   
 > Formulardaten sollte gespeichert werden, wenn es seit die letzten Speichern geändert wurde. Wenn keine Benutzeroberfläche angezeigt wird, kann das Formular optional wechseln Sie zur Verwendung der Funktionen für die Option SAVEOPTS_NOSAVE.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -61,7 +61,7 @@ E_UNEXPECTED
   
 > Das Formular wurde bereits von einem vorherigen Aufruf von **ShutdownForm**geschlossen.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Formular Viewer rufen Sie die **IMAPIForm::ShutdownForm** -Methode, um ein Formular zu schließen. 
   
@@ -71,13 +71,13 @@ Führen Sie die folgenden Aufgaben in der Implementierung der **ShutdownForm**:
   
 1. Überprüfen Sie, dass ein Viewer nicht bereits **ShutdownForm**aufgerufen wurde, und zurückgeben Sie E_UNEXPECTED, falls zutreffend. Obgleich dies unwahrscheinlich ist, sollten Sie überprüfen.
     
-2. Rufen Sie das Formular [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode, sodass Speicher für das Formular und alle internen Datenstrukturen verfügbar bleiben, bis die Verarbeitung beendet wird. 
+2. Rufen Sie das Formular [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode, sodass Speicher für das Formular und alle internen Datenstrukturen verfügbar bleiben, bis die Verarbeitung beendet wird. 
     
 3. Überprüfen Sie, ob alle nicht gespeicherten Änderungen an die Daten des Formulars. Speichern Sie nicht gespeicherte Daten entsprechend wie der Parameter _UlSaveOptions_ durch Aufrufen des Viewers [IMAPIMessageSite::SaveMessage](imapimessagesite-savemessage.md) -Methode festgelegt wird. 
     
 4. Zerstören Sie Fenster auf der Benutzeroberfläche des Formulars.
     
-5. Freigeben des Formulars Nachricht und Standortobjekten Nachricht durch ihre [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28v=VS.85%29.aspx) -Methoden aufrufen. 
+5. Freigeben des Formulars Nachricht und Standortobjekten Nachricht durch ihre [IUnknown](https://msdn.microsoft.com/library/ms682317%28v=VS.85%29.aspx) -Methoden aufrufen. 
     
 6. Benachrichtigt werden alle registrierte Leser von Berichten für die ausstehende beenden, indem Sie ihre [IMAPIViewAdviseSink::OnShutdown](imapiviewadvisesink-onshutdown.md) -Methoden aufrufen. 
     
@@ -90,7 +90,7 @@ Führen Sie die folgenden Aufgaben in der Implementierung der **ShutdownForm**:
 10. Geben Sie S_OK zur�ck.
     
 > [!NOTE]
-> Nachdem diese Aktionen abgeschlossen wurden, umfassen die einzige gültigen Methoden für das Form-Objekt, das aufgerufen werden kann, die die [IUnknown](http://msdn.microsoft.com/en-us/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle. 
+> Nachdem diese Aktionen abgeschlossen wurden, umfassen die einzige gültigen Methoden für das Form-Objekt, das aufgerufen werden kann, die die [IUnknown](https://msdn.microsoft.com/library/ms680509%28v=VS.85%29.aspx) -Schnittstelle. 
   
 ## <a name="notes-to-callers"></a>Hinweise für Aufrufer
 

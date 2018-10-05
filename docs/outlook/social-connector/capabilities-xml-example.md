@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: ae1abafe-160c-47c0-b4d5-4a689c8c4cb1
 description: Das XML-Beispiel in diesem Thema wird eine XML-Zeichenfolge an Outlook Social Connector (OSC) zurückgegeben, nachdem sie die ISocialProvider::GetCapabilities-Methode für ein social Network ruft. Der XML-Code zeigt, wie ein OSC-Anbieter die Funktionen und Anforderungen für das osc bilden angibt.
-ms.openlocfilehash: 5cafd6d29de8b4357e9e0ce6dab30b125f53b8ca
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 53bd250432e7b27d984a846d206adc812c47898f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795958"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389547"
 ---
 # <a name="capabilities-xml-example"></a>XML-Beispiel für „capabilities“
 
@@ -65,7 +65,7 @@ Das folgende Beispiel zeigt die **Funktionen** der XML-Daten des einem OSC-Anbie
   
 ```XML
 <?xml version="1.0" encoding="utf-8" ?>
-<capabilities xmlns="http://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd">
+<capabilities xmlns="https://schemas.microsoft.com/office/outlook/2010/06/socialprovider.xsd">
   <getFriends>true</getFriends>
   <cacheFriends>true</cacheFriends>
   <followPerson>true</followPerson>
@@ -81,8 +81,8 @@ Das folgende Beispiel zeigt die **Funktionen** der XML-Daten des einem OSC-Anbie
   <dynamicContactsLookup>false</dynamicContactsLookup>
   <useLogonCached>false</useLogonCached>
   <hideRememberMyPassword>false</hideRememberMyPassword>
-  <createAccountUrl>http://contoso.com/createAccount</createAccountUrl>
-  <forgotPasswordUrl>http://contoso.com/forgotPassword</forgotPasswordUrl>
+  <createAccountUrl>https://contoso.com/createAccount</createAccountUrl>
+  <forgotPasswordUrl>https://contoso.com/forgotPassword</forgotPasswordUrl>
 </capabilities>
 
 ```

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: fe87eb3d-21d1-45bb-b848-e141ce1be6a0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b17a5791db4ccb840224785dd71a2ed52143cbaf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3bc475292e47a9ad8dd9565e17640ef95e7b3c76
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565445"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383527"
 ---
 # <a name="pidlidtaskstartdate-canonical-property"></a>PidLidTaskStartDate (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Das Datum, wenn der Benutzer für den Task erwartet.
   
@@ -35,21 +35,21 @@ Das Datum, wenn der Benutzer für den Task erwartet.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn der Wert dieser Eigenschaft nicht festgelegt lassen, hat die Aufgabe ein Startdatum keinen. Der Wert "0x5AE980E0" (1,525,252,320) bedeutet auch, dass die Aufgabe ein Startdatum nicht vorhanden ist. Wenn der Vorgang ein Startdatum hat, der Wert muss eine Zeitkomponente Mitternacht haben, und die **DispidTaskDueDate** ([PidLidTaskDueDate](pidlidtaskduedate-canonical-property.md)) und **DispidCommonStart** ([PidLidCommonStart](pidlidcommonstart-canonical-property.md)) Eigenschaften müssen ebenfalls festgelegt werden.
   
-Diese Eigenschaft wird von der Informationszwecken kennzeichnen Protokollspezifikation gemeinsam genutzt und Task-Related Object Protokoll Specification befindet sich in [[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx).
+Diese Eigenschaft wird von der Informationszwecken kennzeichnen Protokollspezifikation gemeinsam genutzt und Task-Related Object Protokoll Specification befindet sich in [[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx).
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die auf Kontakte und persönliche Verteilerlisten zulässig sind.
     

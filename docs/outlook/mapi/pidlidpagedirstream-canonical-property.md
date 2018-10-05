@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e94f0daf-fccb-41b6-b38b-5ef4167a6e9d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cc2bacb85da810333fb9c1741fd1a414396f2f74
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 831c7a200eb1f9bf7db647eeb9b6b778269baea6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578997"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383037"
 ---
 # <a name="pidlidpagedirstream-canonical-property"></a>PidLidPageDirStream (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt Informationen zu den Seiten des benutzerdefinierten Formulars mit der Meldung verbunden ist.
   
@@ -39,7 +39,7 @@ Stellt Informationen zu den Seiten des benutzerdefinierten Formulars mit der Mel
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     

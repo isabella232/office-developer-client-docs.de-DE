@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2e027c0c-2370-437a-ad98-2bbb5e41e525
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 31324dff3c5780f693b1dc055fc2067436496cd3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 07aea33f54a29d497646b62f1f8bd96a383cbd7b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573649"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385732"
 ---
 # <a name="pidtagoriginalsubmittime-canonical-property"></a>PidTagOriginalSubmitTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die ursprünglichen Übermittlung-Datum und Uhrzeit der Nachricht in den Bericht enthält.
   
@@ -34,7 +34,7 @@ Die ursprünglichen Übermittlung-Datum und Uhrzeit der Nachricht in den Bericht
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Am ersten Übermittlung einer Nachricht sollte eine Clientanwendung diese Eigenschaft auf den Wert der Eigenschaft **PR_CLIENT_SUBMIT_TIME** ([PidTagClientSubmitTime](pidtagclientsubmittime-canonical-property.md)) festgelegt. Er wird nicht geändert, wenn die Nachricht weitergeleitet wird. In nur-Berichten wird verwendet.
   
@@ -42,11 +42,11 @@ Am ersten Übermittlung einer Nachricht sollte eine Clientanwendung diese Eigens
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.
     

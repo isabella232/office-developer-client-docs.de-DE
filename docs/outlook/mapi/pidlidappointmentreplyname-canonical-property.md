@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2f3a44d1-600f-412e-bc89-078841db5308
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 54b1f0f3bf837ad21e1b271111d4be2ad2c2b3f9
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f6707c49c70804aeb757119aa411ca4059e378eb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573985"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387979"
 ---
 # <a name="pidlidappointmentreplyname-canonical-property"></a>PidLidAppointmentReplyName (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Benutzer, die zuletzt auf die Besprechungsanfrage darauf geantwortet oder Besprechung aktualisieren-Objekt.
   
@@ -35,23 +35,23 @@ Gibt den Benutzer, die zuletzt auf die Besprechungsanfrage darauf geantwortet od
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft wird nur für eine Delegator festgelegt, wenn eine Stellvertretung geantwortet. Der Wert ist gleich der **PR_MAILBOX_OWNER_NAME** ([PidTagMailboxOwnerName](pidtagmailboxownername-canonical-property.md))-Eigenschaft für den Delegaten Speicher. Diese Eigenschaft hat keine Bedeutung für den Organisator. Ausführliche Informationen zum **PR_MAILBOX_OWNER_NAME**finden Sie unter Speichern in [[MS-OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)angegebene Objektprotokoll.
+Diese Eigenschaft wird nur für eine Delegator festgelegt, wenn eine Stellvertretung geantwortet. Der Wert ist gleich der **PR_MAILBOX_OWNER_NAME** ([PidTagMailboxOwnerName](pidtagmailboxownername-canonical-property.md))-Eigenschaft für den Delegaten Speicher. Diese Eigenschaft hat keine Bedeutung für den Organisator. Ausführliche Informationen zum **PR_MAILBOX_OWNER_NAME**finden Sie unter Speichern in [[MS-OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)angegebene Objektprotokoll.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCDATA]](http://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
+[[MS-OXCDATA]](https://msdn.microsoft.com/library/1afa0cd9-b1a0-4520-b623-bf15030af5d8%28Office.15%29.aspx)
   
 > Enthält die Datentypdefinitionen.
     
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

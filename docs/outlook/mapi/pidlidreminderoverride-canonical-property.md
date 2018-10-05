@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ad7e37e1-bd12-409f-87e5-ebc0c298a072
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 55aa8e47dda82995ca1d246f36c271ef06e66954
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4956ce33d00135c34193dec3df832c6878b2c6db
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580180"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385963"
 ---
 # <a name="pidlidreminderoverride-canonical-property"></a>PidLidReminderOverride (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob der Client die Werte der **DispidReminderPlaySound** ([PidLidReminderPlaySound](pidlidreminderplaysound-canonical-property.md)) und **DispidReminderFileParam** ( [PidLidReminderFileParameter ](pidlidreminderfileparameter-canonical-property.md)) Eigenschaften berücksichtigen sollten.
   
@@ -35,7 +35,7 @@ Gibt an, ob der Client die Werte der **DispidReminderPlaySound** ([PidLidReminde
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Ein Client kann Standardwerte anstelle der Werte der Eigenschaften **DispidReminderPlaySound** und **DispidReminderFileParam** verwenden. 
   
@@ -43,11 +43,11 @@ Ein Client kann Standardwerte anstelle der Werte der Eigenschaften **DispidRemin
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS-OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und das Interaktionsmodell für e-Mail und anderen Objekt Erinnerungen.
     

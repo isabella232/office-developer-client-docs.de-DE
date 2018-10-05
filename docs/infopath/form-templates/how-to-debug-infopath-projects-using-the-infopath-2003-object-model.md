@@ -7,13 +7,13 @@ keywords:
 - Debuggen [Infopath 2007], Projekte mit Infopath 2003 Object Model, InfoPath 2007, Debuggen [InfoPath 2007], Debuggen
 localization_priority: Normal
 ms.assetid: bcf4cda0-2377-4924-ad26-5c2d9f98d594
-description: 'Informationen zum Debuggen von verwaltetem Code InfoPath-Formular, einschließlich derjenigen, die mit dem InfoPath 2003-Objektmodells codiert sind finden Sie unter Vorgehensweise: Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code.'
-ms.openlocfilehash: 92019af20eada3fda4d9691461e0ea5d2fda0b5a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Informationen zum Debuggen von verwaltetem Code InfoPath-Formular, einschließlich derjenigen, die mit dem InfoPath 2003-Objektmodells codiert sind finden Sie unter Vorschau und Debuggen von InfoPath-Formularvorlagen mit Code.
+ms.openlocfilehash: b2ca646037a42dcbe50b5e2b65b4dee3c81adaf5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790729"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385689"
 ---
 # <a name="debug-infopath-projects-using-the-infopath-2003-object-model"></a>Debuggen von InfoPath-Projekten mit dem InfoPath 2003-Objektmodell
 

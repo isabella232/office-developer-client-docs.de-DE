@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 9c0527ea-e922-4514-b913-d3520350c452
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9f73720860aa0ec54289f25a553bb00bfbe76b6a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 053ec531f69ff7734872466b7a661beff3177b2c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22581048"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390359"
 ---
 # <a name="pidlidaddressbookprovideremaillist-canonical-property"></a>PidLidAddressBookProviderEmailList (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welche Eigenschaften für e-Mail-Adresse auf den Kontakt festgelegt sind. 
   
@@ -35,7 +35,7 @@ Gibt an, welche Eigenschaften für e-Mail-Adresse auf den Kontakt festgelegt sin
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Jeder PT_LONG Wert in dieser Eigenschaft muss in der Eigenschaft eindeutig sein und muss auf einen der Werte in der folgenden Tabelle festgelegt werden. Wenn diese Eigenschaft festgelegt ist, muss auch die **DispidABPArrayType** ([PidLidAddressBookProviderArrayType](pidlidaddressbookproviderarraytype-canonical-property.md))-Eigenschaft festgelegt werden. Diese beiden Eigenschaften müssen miteinander synchronisiert werden. Angenommen, wenn einer der Werte in **DispidABPEmailList** "0 x 00000000" **DispidABPArrayType** ist, muss das Bit "0 x 00000001" festgelegt haben. 
   
@@ -52,11 +52,11 @@ Jeder PT_LONG Wert in dieser Eigenschaft muss in der Eigenschaft eindeutig sein 
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

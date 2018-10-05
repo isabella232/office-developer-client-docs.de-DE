@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b9bd389a-6975-41a2-a2f4-e501312e434b
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: c4d7273b7393d421092bb06377aece0842b5fb67
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ab51b939651bc3c121f357545969d26832a19d19
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590820"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389057"
 ---
 # <a name="imapiformfactorylockserver"></a>IMAPIFormFactory::LockServer
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Wird einen geöffnete Formular Server im Arbeitsspeicher gespeichert.
   
@@ -44,7 +44,7 @@ HRESULT LockServer(
   
 > [in] **true,** um die Anzahl der Sperren zu erhöhen. anderenfalls **false**.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -56,7 +56,7 @@ Formular Viewer rufen Sie die **IMAPIFormFactory::LockServer** -Methode, um eine
   
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 
-Die **IMAPIFormFactory::LockServer** -Methode ähnelt der [IClassFactory::LockServer](http://msdn.microsoft.com/en-us/library/ms682332%28v=VS.85%29.aspx) -Methode. Im Wesentlichen verwaltet die **IMAPIFormFactory::LockServer** -Methode an, dass die Anzahl, wie oft aufgerufen wurde. als diese Anzahl größer als 0 ist, verhindert, dass die-Methode den Formular-Server, die aus dem Speicher entladen wird. Die [CoLockObjectExternal](http://msdn.microsoft.com/en-us/library/ms680592%28VS.85%29.aspx) -Funktion können Sie um dies zu implementieren. 
+Die **IMAPIFormFactory::LockServer** -Methode ähnelt der [IClassFactory::LockServer](https://msdn.microsoft.com/library/ms682332%28v=VS.85%29.aspx) -Methode. Im Wesentlichen verwaltet die **IMAPIFormFactory::LockServer** -Methode an, dass die Anzahl, wie oft aufgerufen wurde. als diese Anzahl größer als 0 ist, verhindert, dass die-Methode den Formular-Server, die aus dem Speicher entladen wird. Die [CoLockObjectExternal](https://msdn.microsoft.com/library/ms680592%28VS.85%29.aspx) -Funktion können Sie um dies zu implementieren. 
   
 ## <a name="see-also"></a>Siehe auch
 

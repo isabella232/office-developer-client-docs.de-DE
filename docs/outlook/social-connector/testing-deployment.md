@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 8b585200-33e7-4607-a603-0c7e52a6b09d
 description: In diesem Thema werden einige Szenarien, die zur Installation und Deinstallation von einem Anbieter Outlook Social Connector (OSC) für getestet werden soll.
-ms.openlocfilehash: 0494d2ecab446b7da091f80df02267e281987d8d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 9c811683097a08b9f6e575d4ea2fee29cdd545d6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796099"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383934"
 ---
 # <a name="testing-deployment"></a>Testen der Bereitstellung
 
@@ -27,7 +27,7 @@ Faktoren beeinflussen Installieren eines OSC-Anbieters enthält die Bitness der 
   
 Ein OSC-Anbieter kann für eine 32-Bit oder 64-Bit-Version von der OSC geschrieben werden. Outlook 2010 und Outlook 2013 32-Bit- und 64-Bit-Versionen verfügbar sind, und Office Outlook 2003 und Office Outlook 2007 sind nur 32-Bit-Versionen verfügbar. Auf einem 64-Bit-Windows-Betriebssystem können Sie die 32-Bit oder 64-Bit-Outlook installieren. Auf einem 32-Bit-Betriebssystem, können Sie aber nicht nur 32-Bit, installieren 64-Bit, Outlook. Je nach der Bitness der installierten Version von Outlook und die OSC-Anbieter selbst sollte der Benutzer das entsprechende Installationsprogramm verwenden, um ein OSC-Anbieter von der entsprechenden Bitness zu installieren. Beispielsweise wenn 64-Bit-Outlook installiert ist, und der OSC-Anbieter eine systemeigene COM-Komponente ist, ein 32-Bit-OSC-Anbieter funktionieren nicht, und der Benutzer muss das entsprechende Installationsprogramm verwenden, um einen 64-Bit-OSC-Anbieter zu installieren.
   
-Der Bereitstellungscode Ihres OSC-Anbieters kann davon ausgehen, dass der Benutzer eine unterstützte Version von Outlook auf dem Computer verfügt. Jedoch ist die aktuelle Version von OSC nicht auf dem Clientcomputer, Ihre Bereitstellungscode herunterladen und installieren kann eine geeignete Version von der OSC mithilfe von speziell gestalteten g-Link URLs auf http://g.live.com. Diese g-Links hängen von der Version und Bitness von Outlook und das Gebietsschema des Clientcomputers ab. Weitere Informationen zur Verwendung von g Links zum Installieren oder aktualisieren das osc bilden finden Sie unter [Installationsprüfliste](installation-checklist.md).
+Der Bereitstellungscode Ihres OSC-Anbieters kann davon ausgehen, dass der Benutzer eine unterstützte Version von Outlook auf dem Computer verfügt. Jedoch ist die aktuelle Version von OSC nicht auf dem Clientcomputer, Ihre Bereitstellungscode herunterladen und installieren kann eine geeignete Version von der OSC mithilfe von speziell gestalteten g-Link URLs auf https://g.live.com. Diese g-Links hängen von der Version und Bitness von Outlook und das Gebietsschema des Clientcomputers ab. Weitere Informationen zur Verwendung von g Links zum Installieren oder aktualisieren das osc bilden finden Sie unter [Installationsprüfliste](installation-checklist.md).
   
 Vor der Installation von einem OSC-Anbieter, sollten der Outlook-Benutzer des OSC-add-Ins in Outlook aktiviert ist.
   

@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 2a326e93-fe8c-e3a5-1e92-30b75b6cb1d2
 description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
-ms.openlocfilehash: c94e625fc97207e1bc1a2e0797a1ba82ee41fca3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa3cee9e6b25a9bcb951fbcbfa4435890341a872
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576253"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390961"
 ---
 # <a name="setting-up-an-offline-state-add-in"></a>Einrichten von einem Add-in auf offline-Status
 
@@ -23,7 +23,7 @@ Nachdem Sie ein Add-in-offline-Status eingerichtet, müssen Sie implementieren F
   
 ## <a name="on-connection-routine"></a>Klicken Sie auf Verbindung routine
 
-Jedes Mal, wenn ein Add-In geladen wird, wird die **[IDTExtensibility2.OnConnection-Methode](http://msdn.microsoft.com/en-us/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** aufgerufen. Es ist der Einstiegspunkt für das Add-in, und den Code in eingefügt die `OnConnection` Funktion wird aufgerufen, wenn das Add-In gestartet wird. Im folgenden Beispiel die `OnConnection` Funktionsaufrufe der `HrInitAddin` Funktion. 
+Jedes Mal, wenn ein Add-In geladen wird, wird die **[IDTExtensibility2.OnConnection-Methode](https://msdn.microsoft.com/library/extensibility.idtextensibility2.onconnection%28v=VS.80%29.aspx)** aufgerufen. Es ist der Einstiegspunkt für das Add-in, und den Code in eingefügt die `OnConnection` Funktion wird aufgerufen, wenn das Add-In gestartet wird. Im folgenden Beispiel die `OnConnection` Funktionsaufrufe der `HrInitAddin` Funktion. 
   
 ### <a name="cmyaddinonconnection-example"></a>CMyAddin::OnConnection()-Beispiel
 

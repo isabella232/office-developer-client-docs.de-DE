@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: e4511af6-d7e7-44ad-a50d-1b7ee04f8215
 description: Microsoft InfoPath wird als Anwendung Component Object Model (COM) geschrieben und stellt die Programmierbarkeit Schnittstellen für externe Automatisierung und Formular Vorlage Skript als COM-Schnittstellen.
-ms.openlocfilehash: 09ba36b39e520629764bd57a623e8fb490a63a89
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f3351a0fee6e23de0785aa28b0970c6a90361f16
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790782"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389029"
 ---
 # <a name="infopath-2003-compatible-object-models"></a>InfoPath 2003-kompatible Objektmodelle
 
@@ -29,15 +29,15 @@ Die Dateien für die von InfoPath installierten drei Interop-Assemblys lauten:
     
 In diesem Thema wird das Objektmodell erläutert, das über die Microsoft.Office.Interop.InfoPath.SemiTrust-Interop-Assembly offen gelegt wird, die ausschließlich zum Schreiben und Ausführen von Geschäftslogik mit verwaltetem Code innerhalb von InfoPath-Formularvorlagen (XSN) verwendet wird.  
   
-Informationen zu den Assemblys Microsoft.Office.Interop.InfoPath und Microsoft.Office.Interop.InfoPath.Xml finden Sie in der Dokumentation für die [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.infopath.aspx) und [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/en-us/library/microsoft.office.interop.infopath.xml) Namespaces. 
+Informationen zu den Assemblys Microsoft.Office.Interop.InfoPath und Microsoft.Office.Interop.InfoPath.Xml finden Sie in der Dokumentation für die [Microsoft.Office.Interop.InfoPath](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.aspx) und [Microsoft.Office.Interop.InfoPath.Xml](https://msdn.microsoft.com/library/microsoft.office.interop.infopath.xml) Namespaces. 
   
 ## <a name="important-installation-information"></a>Wichtige Informationen zur installation
 
-Standardmäßig installiert die Installationsoption **Standard** des InfoPath-Setup-Programms in der C:\Program Files\Microsoft Office\ Kopien der Assemblys Microsoft.Office.Interop.InfoPath.SemiTrust und Microsoft.Office.Interop.InfoPath.Xml Office14-Ordner. Die Assemblys Microsoft.Office.Interop.InfoPath und Microsoft.Office.Interop.InfoPath.Xml werden auch in den globalen Assemblycache (GAC), installiert, deren, die Inhalt sich von den Ordner C:\Windows\Assembly angezeigt werden können. 
+Standardmäßig werden mit der Installationsoption Standard des InfoPath-Setupprogramms Kopien der Assemblys Microsoft.Office.Interop.InfoPath.SemiTrust und Microsoft.Office.Interop.InfoPath.Xml im Ordner C:\Programme\Microsoft Office\Office14 installiert. Die Assemblys Microsoft.Office.Interop.InfoPath und Microsoft.Office.Interop.InfoPath.Xml werden außerdem im globalen Assemblycache (Global Assembly Cache, GAC) installiert, dessen Inhalt im Ordner C:\Windows\Assembly angezeigt werden kann. 
   
 Wenn diese Assemblys nicht installiert sind, sollten Sie sicherstellen, dass Microsoft InfoPath ordnungsgemäß installiert wurde. Wie lange als .NET Framework 2.0 oder höher installiert ist, bevor Sie Setup ausführen, wird die Option **.NET-Programmierunterstützung für** im InfoPath-Setupprogramm auf **vom Arbeitsplatz starten** für eine **Typische** Installation von InfoPath festgelegt. Wenn diese Interop-Assemblys nicht auf Ihrem Computer verfügbar sind, müssen Sie bestätigen, dass .NET Framework 2.0 oder höher installiert haben, und klicken Sie dann **Software hinzufügen oder entfernen** aus der **Systemsteuerung** ausgeführt und die **.NET-Programmierunterstützung für** festgelegt ist die Option auf **vom Arbeitsplatz starten**.
   
-Informationen zum Herunterladen von .NET Framework 2.0 Redistributable finden Sie unter [.NET Framework 2.0 Redistributable.](http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5)
+Informationen zum Herunterladen von .NET Framework 2.0 Redistributable finden Sie unter [.NET Framework 2.0 Redistributable.](https://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5)
   
 ## <a name="the-microsoftofficeinteropinfopathsemitrust-namespace"></a>Microsoft.Office.Interop.InfoPath.SemiTrust-namespace
 
@@ -49,13 +49,13 @@ Obwohl der Prozess der schreiben verwalteten ähnelt Code für eine bestimmte Au
   
 ### <a name="how-com-objects-are-exposed-to-the-infopath-2003-compatible-object-model"></a>COM-Objekte werden wie für das InfoPath 2003 kompatible Objektmodell verfügbar gemacht.
 
-Beim systemintern mit einem COM-Server als allgemeine Sprachen wie JScript, VBScript oder Visual Basic (aber nicht die .NET Version von Visual Basic und Visual c#) arbeiten, ist das Objektmodell, das verfügbar gemacht, ist einfacher als die zugrunde liegenden COM-Klassen und Schnittstellen. Beispielsweise, wenn aus diesen Sprachen, die InfoPath- **Benutzeroberfläche** arbeiten Objekt macht eine Reihe von sieben Methoden, wie die **Alert** -Methode zum Anzeigen einer Nachricht für Benutzer im Feld. 
+Bei der systemeigenen Arbeit mit einem COM-Server mit Programmiersprachen hoher Ebene, beispielsweise JScript, VBScript oder Visual Basic (jedoch nicht die .NET-Versionen von Visual Basic und Visual C#), ist das offen gelegte Objektmodell einfacher als die zugrunde liegenden COM-Klassen und Schnittstellen. So legt das **UI**-Objekt von InfoPath bei der Arbeit mit diesen Sprachen eine Gruppe mit sieben Methoden offen, beispielsweise die **Alert**-Methode, um ein Meldungsfeld für Benutzer anzuzeigen. 
   
-Die zugrunde liegende COM-Konstrukte, die das **UI** -Objekt unterstützt werden jedoch besteht aus drei Entitäten: zwei Schnittstellen mit der **Benutzeroberfläche** und **Anwenderschnittstelle: 2**und eine COM-Co-Klasse, die Mitglieder der folgenden zwei Schnittstellen implementiert. Es gibt zwei Versionen der **UI** -Schnittstelle, da das COM-Framework erfordert die Definition einer Schnittstelle festen zum Aufrechterhalten der Abwärtskompatibilität für Programme und Komponenten, die eine Implementierung dieser Schnittstelle aufrufen beibehalten. 
+Die zugrunde liegenden COM-Konstrukte, die das **UI**-Objekt unterstützen, bestehen jedoch aus drei Entitäten: Zwei Schnittstellen mit Namen **UI** und **UI2** sowie einer COM-Coklasse, die die Member dieser beiden Schnittstellen implementiert. Es gibt zwei Versionen der **UI**-Schnittstelle, da das COM-Framework die Definition einer fest bestehenden Schnittstelle benötigt, um Rückwärtskompatibilität für Programme und Komponenten beizubehalten, die eine Implementierung dieser Schnittstelle aufrufen.  
   
 In diesem Fall enthält **die Benutzeroberfläche, die für die erste Version von InfoPath definiert wurde,** vier Methoden, einschließlich der **Alert** -Methode. Die Schnittstelle **Anwenderschnittstelle: 2** eine zweite Version der **Benutzeroberfläche** Schnittstelle betrachtet werden kann, und es definiert wurde für die InfoPath Service Pack 1-Version. Die **Anwenderschnittstelle: 2** -Schnittstelle erbt die vier Methoden der ursprünglichen **UI** -Schnittstelle und drei neue Methoden, wie die **Confirm** -Methode hinzugefügt. Obwohl Sie können einer Codezeile entweder im Skript oder verwalteten Code zum Aufrufen der **Confirm** -Methode mit `XDocument.UI.Confirm`, wird die zugrunde liegende Code ist tatsächlich die **Confirm** -Methode der **Anwenderschnittstelle: 2** -Schnittstelle von der Implementierung dieser Methode aufrufen in der COM-Co-Klasse. 
   
-Das Objektmodell für Skripts verfügbar gemacht wird diese Details verbirgt, aber die Interop-Assembly erforderlich, mit einem COM-Server aus verwaltetem Code macht die Co-Klasse und beide Schnittstellen öffentlich funktionsfähig ist. Für die einzelnen **UI** -Objekt in der Skripting MSE-Umgebung verwendet stellt der **Microsoft.Office.Interop.InfoPath.SemiTrust** -Namespace die folgenden drei Elemente zur Verfügung: 
+Wenn das Objektmodell für das Scripting offen gelegt wird, blendet es diese Details zwar aus, die Interop-Assembly, die für die Arbeit mit einem COM-Server für den verwalteten Code erforderlich ist, legt die Coklasse und beide Schnittstellen jedoch öffentlich offen. Für das einzelne, in der MSE-Scriptingumgebung verwendete **UI**-Objekt legt der **Microsoft.Office.Interop.InfoPath.SemiTrust**-Namespace die folgenden drei Elemente offen: 
   
 - [UI](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust.UI.aspx) -Schnittstelle 
     
@@ -93,9 +93,9 @@ thisXDocument.UI.Alert(thisApplication.Version)
 
 ### <a name="using-the-class-library-reference-documentation"></a>Verwenden von der Referenzdokumentation der Klassenbibliothek
 
-Die Organisation der **Microsoft.Office.Interop.InfoPath.SemiTrust** -Namespace Referenzdokumentation der Klassenbibliothek gilt für die Beziehungen zwischen Co-Klasse und der geerbten Schnittstellen, die sie implementieren. Dies wird im Abschnitt "Wie COM-Objekte sind verfügbar gemacht zu verwaltetem Code" weiter oben in diesem Thema beschrieben. 
+Die Organisation der Referenzdokumentation des **Microsoft.Office.Interop.InfoPath.SemiTrust**-Namespace spiegelt die Beziehungen zwischen Coklassen-Schnittstellen und den geerbten Schnittstellen wider, die sie implementieren. Dies wird weiter oben in diesem Thema im Abschnitt "Verfügbarmachen von COM-Objekten für verwalteten Code" erläutert.  
   
-Obwohl der Organisation sowie der **Microsoft.Office.Interop.InfoPath.SemiTrust** -Namespace naming Referenzdokumentation verwirrend wird zunächst in den Themen im Wesentlichen auf die gleiche Weise wie der InfoPath-Objektmodellreferenz, die organisiert werden Teil der InfoPath Referenz für Entwickler, die in InfoPath enthalten ist. Mit Ausnahme der Themen für die **Anwendung** und die **XDocument** -Schnittstellen ordnen Sie alle Themen COM-Co-Schnittstelle auf die entsprechende "Object" und "Collection" Themen aus der InfoPath scripting Verweis. Beispielsweise entsprechen ähnliche Inhalte in der "UI-Objekt" und "Windows-Auflistung" "UIObject-Schnittstelle" und in den Themen "WindowsCollection-Schnittstelle" von der Referenzdokumentation **Microsoft.Office.Interop.InfoPath.SemiTrust** -namespace Die Themen der InfoPath-Objektmodellreferenz scripting Verweis. 
+Auch wenn die Organisation und Benennung der Referenzdokumentation des **Microsoft.Office.Interop.InfoPath.SemiTrust**-Namespace zunächst etwas verwirrend erscheinen mag, sind die Themen grundsätzlich genau so organisiert wie die Referenz zum InfoPath-Objektmodell, die Bestandteil der InfoPath Developer-Referenz ist und in InfoPath enthalten ist. Mit Ausnahme der Themen für die Schnittstellen **Application** und **XDocument** sind alle Themen zur COM-Coklassen-Schnittstelle den entsprechenden Themen "Object" und "Collection" der InfoPath-Skriptreferenz zugeordnet. So entsprechen beispielsweise die Themen "UIObject-Schnittstelle" und "WindowsCollection-Schnittstelle" der Referenzdokumentation für den **Microsoft.Office.Interop.InfoPath.SemiTrust**-Namespace demselben Inhalt der Themen "UI-Objekt" und "Windows-Auflistung" der Skriptreferenz zur Referenz für das InfoPath-Objektmodell.  
   
 Der Link zu den Membern der Coklassen-Schnittstelle nach der Beschreibung der Schnittstelle am Anfang des Themas verweist allerdings auf ein leeres Thema. Sie müssen zum Anzeigen der Liste mit Membern, die von der Coklassen-Schnittstelle implementiert werden, das Thema für die aktuellste Schnittstelle öffnen, die von der Coklasse geerbt wird, und dann die Tabelle ihrer Member öffnen. Sie finden einen Link zu der geerbten Schnittstelle am Anfang des Themas zur Coklassen-Schnittstelle im Abschnitt "Hinweise".
   
@@ -123,8 +123,8 @@ Jede Schnittstelle und Member in der Assembly Microsoft.Office.Interop.InfoPath.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Allgemeine Aufgaben zum Entwickeln von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells](common-tasks-for-developing-form-templates-using-infopath-object-model.md)
+- [Häufige Aufgaben beim Entwickeln von Formularvorlagen mit dem InfoPath 2003-Objektmodell](common-tasks-for-developing-form-templates-using-infopath-object-model.md)
 - [Informationen zum Sicherheitsmodell für Formularvorlagen mit Code](about-the-security-model-for-form-templates-with-code.md)
-- [Erstellen von Formularvorlagen mithilfe des InfoPath 2003-Objektmodells](creating-form-templates-using-the-infopath-2003-object-model.md)
-- [Grundlegendes zum InfoPath 2003-Objektmodells](understanding-the-infopath-2003-object-model.md)
+- [Erstellen von Formularvorlagen mit dem InfoPath 2003-Objektmodell](creating-form-templates-using-the-infopath-2003-object-model.md)
+- [Grundlegendes zum InfoPath 2003-Objektmodell](understanding-the-infopath-2003-object-model.md)
 

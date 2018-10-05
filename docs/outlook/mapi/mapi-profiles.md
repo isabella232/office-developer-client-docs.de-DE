@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 493c87a4-317d-47ec-850b-342cac59594b
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3c6701f5b7f63fdc7d21b219a5588feb0580db48
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 9db1f8e163e44a44df1e798cebccb3639325275e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579858"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391430"
 ---
 # <a name="mapi-profiles"></a>MAPI-Profile
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ein Profil speichert Informationen zu Dienstanbietern und Message-Dienste, die auf einem Computer installiert sind. Für jede Sitzung wählt ein Client bei der Anmeldung ein Profil, das den Anbieter und die Dienste zu verwendende beschreibt. Ein Client kann eine als Standard auswählen aus einer Auflistung von Benutzerprofilen und, bei Bedarf einrichten. Das Standardprofil ist das Profil, das automatisch ausgewählt wird, wenn ein Client eine Sitzung startet und ein Profil nicht explizit angegeben wurde.
   
@@ -29,7 +29,7 @@ Auch in diesen Themen finden eine Erläuterung der Nickname-Cache Sie die in ein
     
 - [Stream für automatisches Vervollständigen](autocomplete-stream.md)
     
-- [Analysieren der Binärdatei](http://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
+- [Analysieren der Binärdatei](https://portalvhds6gyn3khqwmgzd.blob.core.windows.net/files/NK2/NK2WithBinaryExample.pdf)
     
 ## <a name="profile-sections"></a>Profil Abschnitte
 

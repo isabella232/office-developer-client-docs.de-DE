@@ -8,16 +8,16 @@ api_type:
 - COM
 ms.assetid: 75113097-b3ae-4d20-9796-85c62a592ef0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5127f5aef50b1040b3e6f4bc644395f2af7555cb
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c226fe79fd002cda3c557fc8416c25f98ad33626
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563541"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382876"
 ---
 # <a name="read-and-parse-a-recurrence-pattern"></a>Lesen und Analysieren eines Serienmusters
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 MAPI kann zum Lesen und Analysieren eines Serienmusters, das für einen Termin verwendet werden.
   
@@ -29,7 +29,7 @@ Informationen zum Herunterladen, anzeigen, und führen Sie den Code aus dem MFCM
     
 2. Rufen Sie die benannte Eigenschaft **DispidApptRecur** ([PidLidAppointmentRecur kanonische-Eigenschaft](pidlidappointmentrecur-canonical-property.md)) ab. Informationen zum Abrufen von benannten Eigenschaften finden Sie unter [MAPI-Eigenschaften mit dem Namen](mapi-named-properties.md).
     
-3. Führen Sie die Anweisungen in [[MS-OXOCAL]](http://msdn.microsoft.com/en-us/library/cc425490%28EXCHG.80%29.aspx) die Termin Serie Muster-Struktur zu lesen. 
+3. Führen Sie die Anweisungen in [[MS-OXOCAL]](https://msdn.microsoft.com/library/cc425490%28EXCHG.80%29.aspx) die Termin Serie Muster-Struktur zu lesen. 
     
 Die MFCMAPI (engl.)-Referenz-Anwendung veranschaulicht den letzten Schritt mit der `BinToAppointmentRecurrencePatternStruct` Funktion in der Quelldatei InterpretProp2.cpp des Projekts MFCMAPI (engl.). Die `BinToAppointmentRecurrencePatternStruct` Funktion einen Zeiger auf einem Puffer im Arbeitsspeicher als Parameter akzeptiert. Die Anwendung MFCMAPI (engl.) abruft dieses Puffers durch Zuordnen von der **DispidApptRecur** -Eigenschaft auf ein Eigenschaftentag klicken Sie dann mit der durch den Wert der Eigenschaft mithilfe der Methode [IMAPIProp::GetProps](imapiprop-getprops.md) anfordern. Wenn die Eigenschaft rufen Sie mithilfe der Methode **GetProps** zu groß ist, wird MFCMAPI (engl.) eine Stream-Schnittstelle zum Abrufen der Eigenschaft mithilfe der Methode [IMAPIProp::OpenProperty](imapiprop-openproperty.md) geöffnet. Klicken Sie dann die MFCMAPI (engl.) Anwendung liest die Daten aus dem Datenstrom Puffer zu erstellen. 
   
@@ -212,5 +212,5 @@ AppointmentRecurrencePatternStruct* BinToAppointmentRecurrencePatternStruct(ULON
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](http://msdn.microsoft.com/en-us/library/cc678348%28office.12%29.aspx)
+- [Erstellen von Outlook 2007-Elementen mithilfe von MAPI](https://msdn.microsoft.com/library/cc678348%28office.12%29.aspx)
 

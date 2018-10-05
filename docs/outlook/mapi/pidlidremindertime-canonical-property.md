@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f4068ff0-2aa2-4332-be7d-ecebda30dfff
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: dd1daddbdf4e953dac53d44181fedf371ce3beb3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8371418aabc557f48c74039320305df59624d7ac
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573880"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382470"
 ---
 # <a name="pidlidremindertime-canonical-property"></a>PidLidReminderTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die anfängliche Signal Zeit für eine Erinnerung.
   
@@ -35,7 +35,7 @@ Gibt die anfängliche Signal Zeit für eine Erinnerung.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Erinnerung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Für Calendar-Objekten stellt diese Eigenschaft der Zeit, wenn der Benutzer spät werden, also die Anfangszeit des Termins. Clients müssen der Wert in koordinierter Weltzeit (UTC) festgelegt.
   
@@ -43,11 +43,11 @@ Für Calendar-Objekten stellt diese Eigenschaft der Zeit, wenn der Benutzer spä
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXORMDR]](http://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
+[[MS-OXORMDR]](https://msdn.microsoft.com/library/5454ebcc-e5d1-4da8-a598-d393b101caab%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und das Interaktionsmodell für e-Mail und anderen Objekt Erinnerungen.
     

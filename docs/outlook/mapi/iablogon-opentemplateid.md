@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 751c36d3-c39e-4357-a60a-88685a378de0
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a120fb1710bf2bd351d956e4d05eb0af346ef4c5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bc68878a25873533162df7e1671e483c3bb77865
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583386"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384633"
 ---
 # <a name="iablogonopentemplateid"></a>IABLogon::OpenTemplateID
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Öffnet einen Empfänger-Eintrag, der Daten in einer Host-Adressbuchanbieter hat.
   
@@ -73,7 +73,7 @@ FILL_ENTRY
   
 > [out] Reserviert. **null**muss sein.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -87,7 +87,7 @@ MAPI_E_UNKNOWN_ENTRYID
   
 > Die Vorlage-ID in der _LpTemplateID_ -Parameter übergeben wird von der Adressbuchanbieter nicht erkannt. 
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die **OpenTemplateID** -Methode ist nur von adressbuchanbietern implementierte implementiert, die Kontrolle über Kopien der darin enthaltenen Einträge beibehalten werden, die in der Hostanbieter den Containern befinden. Anbieter, **die OpenTemplateID** implementieren, werden als fremden adressbuchanbietern implementierte bezeichnet. Hostanbieter [IMAPISupport::OpenTemplateID](imapisupport-opentemplateid.md) um kopierten Eintrag erstellen oder öffnen Sie den kopierten Eintrag aufrufen und MAPI für den Aufruf von **OpenTemplateID**übergibt. **OpenTemplateID** öffnet den Eintrag und bindet den Code, der mit Daten in Hostanbieter gesteuert. 
   
@@ -117,7 +117,7 @@ Sie sollten die folgenden Richtlinien in Ihrer Eigenschaft Objekt Implementierun
     
 Im Allgemeinen nehmen Sie die Implementierung des Eintrags, der Sie übergeben wieder Hostanbieter intercept alle Methoden zum Ausführen der kontextbezogenen Bearbeitung der relevanten Eigenschaften. Wenn das Flag FILL_ENTRY im _UlTemplateFlags_ -Parameter übergeben wird, legen Sie alle Eigenschaften für den Eintrag. 
   
-Wenn Sie ein neues Property-Objekt in der _LppMAPIPropNew_ -Parameter zurückgeben möchten, rufen Sie die [IUnknown:: AddRef](http://msdn.microsoft.com/en-us/library/ms691379%28VS.85%29.aspx) -Methode der Hostanbieter Property-Objekts einen Verweis zu verwalten. Nachdem sie von der gebundenen Objekt behandelt werden, müssen alle Anrufe über das gebundenen-Objekt, das die Implementierung **IMAPIProp** in _LppMAPIPropNew_ zurückgegeben, die entsprechende Methode in der Host Property-Objekt weitergeleitet werden. 
+Wenn Sie ein neues Property-Objekt in der _LppMAPIPropNew_ -Parameter zurückgeben möchten, rufen Sie die [IUnknown:: AddRef](https://msdn.microsoft.com/library/ms691379%28VS.85%29.aspx) -Methode der Hostanbieter Property-Objekts einen Verweis zu verwalten. Nachdem sie von der gebundenen Objekt behandelt werden, müssen alle Anrufe über das gebundenen-Objekt, das die Implementierung **IMAPIProp** in _LppMAPIPropNew_ zurückgegeben, die entsprechende Methode in der Host Property-Objekt weitergeleitet werden. 
   
 Die Eigenschaftenbezeichner der keine benannten Eigenschaften auf, die über Ihre gebundenen Property-Objekt übergeben werden befinden sich im Ihres Anbieters Bezeichner Namespace. Die Implementierung der [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) -Methode sollte die Namen der Eigenschaften festlegen, so, dass es Vorlage-spezifischen Aufgaben ausführen kann. Eigenschaften, die vom Dienstanbieter für dem Hostanbieter übergibt müssen auf ähnliche Weise auch in Ihren Namespace sein. Beispielsweise wenn Sie eine benannte Eigenschaft in **OpenTemplateID**festlegen, verwenden Sie Ihre-Bezeichner für den Namen – es, falls erforderlich, durch Aufrufen der [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) -Methode erstellen. 
   

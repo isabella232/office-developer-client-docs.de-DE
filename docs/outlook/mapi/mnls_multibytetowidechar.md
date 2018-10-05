@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 065d78bf-4c9c-48dd-b1f1-b4e59f3f1243
 description: 'Zuletzt geändert: 21 Februar 2012'
-ms.openlocfilehash: 66e8c3b61caac6fb8d8b57d74ade6fa8aac3a9dd
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1f137aba40703fe84e5753ee6e370262f780f0a3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571705"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389554"
 ---
 # <a name="mnlsmultibytetowidechar"></a>MNLS_MultiByteToWideChar
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Vergleichbar mit der **MultiByteToWideChar**, der eine Zeichenfolge in einen String UTF-16 (Breitzeichen) zugeordnet ist. Die Zeichenfolge ist nicht unbedingt aus einem multibyte-Zeichen festgelegt.
   
@@ -59,12 +59,12 @@ int MNLS_MultiByteToWideChar(
   
 > [in] Größe des Puffers durch _LpWideCharStr_in Zeichen.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Gibt die Anzahl der Zeichen in den Puffer angegeben durch _LpWideCharStr_ bei erfolgreicher geschriebenen zurück. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Funktion wird die Funktion **MultiByteToWideChar** umbrochen. Weitere Informationen finden Sie unter [MultiByteToWideChar](http://msdn.microsoft.com/en-us/library/dd319072%28VS.85%29.aspx).
+Diese Funktion wird die Funktion **MultiByteToWideChar** umbrochen. Weitere Informationen finden Sie unter [MultiByteToWideChar](https://msdn.microsoft.com/library/dd319072%28VS.85%29.aspx).
   
 

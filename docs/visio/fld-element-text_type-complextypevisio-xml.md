@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 92d90240-012b-9598-c893-6e7085813aa5
 description: Gibt ein Text-Feld Einfügemarke für die entsprechenden Field-Element an.
-ms.openlocfilehash: 9ff1a81c8ceba83adc110596de86831b58db0167
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: a7303697a9471dab68f5b1cf851f60d51650a84e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797022"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383324"
 ---
 # <a name="fld-element-texttype-complextype-visio-xml"></a>Fld-Element (Text_Type ComplexType) ("Visio XML")
 
 Gibt ein Text-Feld Einfügemarke für die entsprechenden **Field** -Element an. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[fld_Type](fld_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Seite # .xml, Gestaltungsvorlagen # .xml  <br/> |
    

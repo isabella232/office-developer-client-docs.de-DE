@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: ea2a63d3-d319-4420-1929-013dc832b308
 description: Gibt einen Verweis auf eine Seite in der Zeichnung.
-ms.openlocfilehash: 4d3f131ba5fc106c886d30d8561e095972b05a21
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1731bd20a5ba4358c72370dfcdc6d8a6fc791e2f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797777"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385858"
 ---
 # <a name="refby-element-celltype-complextype-visio-xml"></a>RefBy-Element (Cell_Type ComplexType) ("Visio XML")
 
 Gibt einen Verweis auf eine Seite in der Zeichnung.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RefBy_Type](refby_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.XML, masters.xml, Master-Shape # .xml, pages.xml, Seite # .xml  <br/> |
    

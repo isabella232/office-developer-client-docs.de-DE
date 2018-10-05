@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: dd2aa06a-96e8-1291-18b5-fc3c40b74e4d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 195812f53c4c0aaf20e4ed6e215d15b0295c9a07
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96322d12b3b7b334b5f78f81910dcf34c3fc78e1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584184"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386530"
 ---
 # <a name="about-registering-stores-for-indexing"></a>Informationen zum Registrieren von Stores für die Indizierung
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema wird speziell für die Sofortsuche in Microsoft Office Outlook 2007.
   
@@ -38,7 +38,7 @@ Standardmäßig wird der Windows-Registrierung zu indizieren mit Windows-Desktop
  Drittanbieter-Anbieter, die indiziert werden möchten, müssen sich selbst in der Windows-Registrierung registrieren. 
   
 > [!NOTE]
-> Administratoren und Benutzer können eine Gruppenrichtlinie verwenden, um zu verhindern, dass Windows-Desktopsuche Indizieren von Outlook-Elementen. Weitere Informationen finden Sie unter [Windows-Desktopsuche erweitern](http://msdn.microsoft.com/library/2eab146a-8516-4b95-b73c-ca7f980ba233%28Office.15%29.aspx). 
+> Administratoren und Benutzer können eine Gruppenrichtlinie verwenden, um zu verhindern, dass Windows-Desktopsuche Indizieren von Outlook-Elementen. Weitere Informationen finden Sie unter [Windows-Desktopsuche erweitern](https://msdn.microsoft.com/library/2eab146a-8516-4b95-b73c-ca7f980ba233%28Office.15%29.aspx). 
   
 ## <a name="registry-keys"></a>Registrierungsschlüssel
 

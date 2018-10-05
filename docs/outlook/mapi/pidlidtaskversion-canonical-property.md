@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 3ab77f25-ad11-4501-8d35-ef560c07e2f2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 38bcf40f24cc7901ebcbb60a099dc0e797d8e4b8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3daf8a04afc9cf47d808b46f2cee010e15a33cf9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588034"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386040"
 ---
 # <a name="pidlidtaskversion-canonical-property"></a>PidLidTaskVersion (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welche Kopie eines Vorgangs das neueste Update ist.
   
@@ -35,7 +35,7 @@ Gibt an, welche Kopie eines Vorgangs das neueste Update ist.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Updates mit niedrigeren Versionen als die Aufgabe werden ignoriert. 
   
@@ -45,11 +45,11 @@ Wenn eine Aufgabe in einer Aufgabe Mitteilung einbetten, wird der Client die akt
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.
     

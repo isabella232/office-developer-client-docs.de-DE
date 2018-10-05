@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d348988d-a84e-4318-8d48-62e4982ebaf1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 3a2bbaaee9325a7d2c110ff4082e14a249e4dc16
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4a466b31b5411b1c0467896c031c6560d6c5c880
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577702"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386516"
 ---
 # <a name="pidlidclipstart-canonical-property"></a>PidLidClipStart (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt das Startdatum und die Uhrzeit des Ereignisses in Zeiten Coordinated Universal (Time) für Einzelinstanz Calendar-Objekten, und gibt das Datum der ersten Instanz in UTC für eine Besprechungsserie Mitternacht.
   
@@ -39,11 +39,11 @@ Gibt das Startdatum und die Uhrzeit des Ereignisses in Zeiten Coordinated Univer
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

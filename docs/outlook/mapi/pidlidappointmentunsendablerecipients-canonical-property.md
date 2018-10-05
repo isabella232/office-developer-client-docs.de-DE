@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ba154612-1b0f-4ef3-8d9f-7981b1c61a2c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1e2f09779a4f2bfa1a41810841dc16f44ff80119
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 24cc6e90d5fbdfafc127e100a13c3e5cfe372083
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578269"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382386"
 ---
 # <a name="pidlidappointmentunsendablerecipients-canonical-property"></a>PidLidAppointmentUnsendableRecipients (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Liste der Teilnehmer zu senden.
   
@@ -35,19 +35,19 @@ Enthält eine Liste der Teilnehmer zu senden.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft ist nicht erforderlich, aber festgelegt werden sollte. Das Format wird in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)ausführlich beschrieben.
+Diese Eigenschaft ist nicht erforderlich, aber festgelegt werden sollte. Das Format wird in [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)ausführlich beschrieben.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

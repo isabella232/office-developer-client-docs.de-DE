@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 98643832-7861-385d-3a52-0060ea413e2e
 description: Gibt eine Eigenschaft eines Shape-Daten an.
-ms.openlocfilehash: 899b518f86979c831c0c05913420c7a62f0ea717
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 5e0c79d9439fb3800a277e039143060eec708b11
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796627"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390644"
 ---
 # <a name="cell-element-shape-data-section-visio-xml"></a>Zellenelement (Abschnitt "Shape Data") ("Visio XML")
 
 Gibt eine Eigenschaft eines Shape-Daten an.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   
@@ -72,7 +72,7 @@ Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswa
 |Nicht sichtbare  <br/> |Gibt an, ob das Shape-Datenelement im Fenster Shape-Daten angezeigt wird.  <br/> |[Zelle "Invisible" (Abschnitt "Shape Data")](invisible-cell-shape-data-section.md) <br/> |
 |Beschriftung  <br/> |Legt die Beschriftung fest, die Benutzern im Fenster Shape-Daten angezeigt wird. Eine Beschriftung besteht aus alphanumerischen Zeichen, einschließlich dem Unterstrich (_).  <br/> |[Zelle "Label" (Abschnitt "Shape Data")](label-cell-shape-data-section.md) <br/> |
 |LangID  <br/> |Gibt die Sprache an, in der der Wert für die Shape-Daten eingegeben wurde.  <br/> |[Zelle "LangID" (Abschnitt "Shape Data")](langid-cell-shape-data-section.md) <br/> |
-|Prompt  <br/> |Spezifiziert den Text der Beschreibung oder Anweisung, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster Shape-Daten platziert wird.  <br/> |[Zelle "Prompt" (Abschnitt "Shape Data")](prompt-cell-shape-data-section.md) <br/> |
+|Eingabeaufforderung  <br/> |Spezifiziert den Text der Beschreibung oder Anweisung, der als Tipp angezeigt wird, wenn der Mauszeiger über einem Wert im Fenster Shape-Daten platziert wird.  <br/> |[Zelle "Prompt" (Abschnitt "Shape Data")](prompt-cell-shape-data-section.md) <br/> |
 |SortKey  <br/> |Enthält eine Zeichenfolge, die die Reihenfolge beeinflusst, in der Elemente im Fenster Shape-Daten aufgelistet werden.  <br/> |[Zelle "SortKey" (Abschnitt "Shape Data")](sortkey-cell-shape-data-section.md) <br/> |
 |Typ  <br/> |Gibt einen Datentyp für den Shape-Datenwert an.  <br/> |[Zelle "Type" (Abschnitt "Shape Data")](type-cell-shape-data-section.md) <br/> |
 |Wert  <br/> |Enthält den Wert des Shape-Datenelements, der in das Dialogfeld Shape-Daten definieren eingegeben wurde.  <br/> |[Zelle "Value" (Abschnitt "Shape Data")](value-cell-shape-data-section.md) <br/> |

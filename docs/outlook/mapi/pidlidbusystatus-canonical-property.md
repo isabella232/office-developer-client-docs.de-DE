@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 50c91fe6-2a61-4348-a16d-fd5c501b0715
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1ea252f8333bf39d391b8d99b768c9c3fa8e57ba
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: cb73a0e09436177b8b53a05588508886ee28a0a5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568735"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383303"
 ---
 # <a name="pidlidbusystatus-canonical-property"></a>PidLidBusyStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die Verfügbarkeit des Benutzers für einen Termin darstellt.
   
@@ -35,7 +35,7 @@ Die Verfügbarkeit des Benutzers für einen Termin darstellt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft gibt die Verfügbarkeit eines Benutzers für das Ereignis, das durch das Objekt beschrieben und muss einer der unten angegebenen Werte.
   
@@ -50,11 +50,11 @@ Diese Eigenschaft gibt die Verfügbarkeit eines Benutzers für das Ereignis, das
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

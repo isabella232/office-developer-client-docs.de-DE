@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8cb0e46c-0937-482f-be78-1f2e5261b210
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2e00f121bf52f2c6fcbe797fb8f6126584444411
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1b09d8d7621121b3652ceb9824f6d36b53844206
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580691"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388056"
 ---
 # <a name="pidtagrecipientproposed-canonical-property"></a>PidTagRecipientProposed (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob ein Teilnehmer der Besprechung geantwortet hat.
   
@@ -34,7 +34,7 @@ Gibt an, ob ein Teilnehmer der Besprechung geantwortet hat.
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert TRUE für diese Eigenschaft gibt an, dass der Teilnehmer ein neues Datum und/oder eine Uhrzeit vorgeschlagen. Der Wert FALSE oder das Fehlen dieser Eigenschaft bedeutet, dass entweder noch, dass der Teilnehmer nicht hat geantwortet, oder die letzte Antwort vom Teilnehmer nicht enthalten ein neues Datum / Uhrzeit Vorschlag. Dieser Wert muss sich nicht auf "true" für die Teilnehmer in einer Terminserie.
   
@@ -42,11 +42,11 @@ Der Wert TRUE für diese Eigenschaft gibt an, dass der Teilnehmer ein neues Datu
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

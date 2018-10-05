@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: a3336b61-01b6-47a7-9498-0a03878e91cb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 2b29f47191bc1f12653ddcc4e78dd8b3401f0480
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fe5528f7605412d0cfd4b4b914e9b221c715e1b1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587642"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384262"
 ---
 # <a name="pidtagroamingdatatypes-canonical-property"></a>PidTagRoamingDatatypes (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske dar, die angibt, welche Stream Eigenschaften für die Nachricht vorhanden sind.
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske dar, die angibt, welche Stream Eigenschaften für die Nac
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Konfiguration  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft muss auf eine oder mehrere der folgenden Werte festgelegt werden:
   
@@ -47,11 +47,11 @@ Diese Eigenschaft muss auf eine oder mehrere der folgenden Werte festgelegt werd
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCFG]](http://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
+[[MS-OXOCFG]](https://msdn.microsoft.com/library/7d466dd5-c156-4da9-9a01-75c78e7e1a67%28Office.15%29.aspx)
   
 > Gibt den Speicherort und die Eigenschaften von Client- und Konfigurationsdaten, wie etwa freigegebene Kategorielisten und Arbeitszeiten.
     

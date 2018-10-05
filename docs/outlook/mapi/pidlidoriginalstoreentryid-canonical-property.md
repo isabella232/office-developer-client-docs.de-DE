@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1b1fc008-9cd5-49f6-9f91-b59e305a1e82
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d7af1168bf5808523e1500ed2156779386f8d84a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 83ca47d0b7e10bff4b2274ef8a8c7dd7b5421d54
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591751"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386929"
 ---
 # <a name="pidlidoriginalstoreentryid-canonical-property"></a>PidLidOriginalStoreEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Eintrags-ID des Stellvertreters des Speichers an.
   
@@ -35,7 +35,7 @@ Gibt die Eintrags-ID des Stellvertreters des Speichers an.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft sollte für Objekte, die Besprechung festgelegt werden, die erstellt oder von einer Stellvertretung aktualisiert wurden.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft sollte für Objekte, die Besprechung festgelegt werden, die er
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

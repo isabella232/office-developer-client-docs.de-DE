@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 954048d6-e2eb-43e7-b52c-c2f047bb84a4
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b0d5588218fd74f005de19daba002cd622c13a17
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 56f6e2355ee2e64cc766bafe27cd59454e210ab6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587187"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384982"
 ---
 # <a name="pidlidusetnef-canonical-property"></a>PidLidUseTnef (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Gibt an, ob Transport Neutral Encapsulation Format (TNEF) für eine Nachricht ei
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Laufzeit-Konfiguration  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft gibt an, ob TNEF für eine Nachricht eingeschlossen werden soll, wenn dieser Nachricht von TNEF in MIME- oder SMTP-Format konvertiert wird. Diese Eigenschaft ist nicht vorhanden, und gegebenenfalls TNEF darf nicht enthalten sein für die Nachricht.
   
@@ -51,15 +51,15 @@ Verwenden Sie das Kennzeichen **CCSF_USE_TNEF** beim Aufruf von [IConverterSessi
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     
-[[MS-OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
+[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)
   
 > Codiert und decodiert Nachrichten- und Objekte, die auf eine effiziente Streamdarstellung.
     

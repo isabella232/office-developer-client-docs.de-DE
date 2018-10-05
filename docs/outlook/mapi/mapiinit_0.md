@@ -12,24 +12,24 @@ api_type:
 - COM
 ms.assetid: 70739711-ff43-407d-bc8b-6baf7a476fef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1eb4d7ac8d0287388a1bb76185f23636eddcf809
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: de31fe7d472b143ed8f3c108dca84a019b5ce103
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591674"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391150"
 ---
 # <a name="mapiinit0"></a>MAPIINIT_0
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Optionen für die Funktion ["MAPIInitialize"](mapiinitialize.md) übermittelt. 
   
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |MAPIX. H  <br/> |
+|Headerdatei:  <br/> |MAPIX. H  <br/> |
    
 ```cpp
 typedef struct
@@ -60,9 +60,9 @@ MAPI_NT_SERVICE
     
 MAPI_NO_COINIT
   
-> Das Flag MAPI_NO_COINT so festgelegt, dass **"MAPIInitialize"** nicht versucht, mit einem Aufruf von [CoInitialize](http://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)COM initialisieren. Wenn eine **MAPIINIT_0** -Struktur mit _UlFlags_ auf MAPI_NO_COINIT festgelegt in **"MAPIInitialize"** übergeben wird, wird MAPI wird vorausgesetzt, dass COM bereits initialisiert wurde, und den Aufruf von **CoInitialize**umgangen wird.
+> Das Flag MAPI_NO_COINT so festgelegt, dass **"MAPIInitialize"** nicht versucht, mit einem Aufruf von [CoInitialize](https://msdn.microsoft.com/library/0f171cf4-87b9-43a6-97f2-80ed344fe376%28Office.15%29.aspx)COM initialisieren. Wenn eine **MAPIINIT_0** -Struktur mit _UlFlags_ auf MAPI_NO_COINIT festgelegt in **"MAPIInitialize"** übergeben wird, wird MAPI wird vorausgesetzt, dass COM bereits initialisiert wurde, und den Aufruf von **CoInitialize**umgangen wird.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Multithread-Clients sollte das MAPI_MULTITHREAD_NOTIFICATIONS Flag festgelegt. Wenn das Flag nicht festgelegt ist, werden Benachrichtigungen auf dem Thread verwendet, um den ersten Aufrufen **"MAPIInitialize"** generiert. 
   

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: eff6d5d6-8855-4e54-a781-9deab8cc0aca
 description: In diesem Thema werden die unterstützten Programmiersprachen, Typ Anforderungen und Details zu den Outlook Social Connector (OSC)-Erweiterbarkeit des Providers DLL COM-Sichtbarkeit und -Methode zurück.
-ms.openlocfilehash: 94b57e20957f3d8d779c4d3324ecbb8ccd37f60a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 14dfcf52d714177775c5610b5da91d174f81a132
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796083"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383114"
 ---
 # <a name="technical-requirements"></a>Technische Anforderungen
 
@@ -33,7 +33,7 @@ Ein OSC-Anbieter muss COM-sichtbar sein, wie folgt definiert:
     
 - Ein in einer verwalteten Sprache entwickelt OSC-Anbieter ist COM-sichtbar.
     
-- Ein OSC-Anbieter sollten Werte hinzufügen, der Windows-Registrierung, die angeben, dass der Provider-DLL des Apartmentthreading Single-Threading (Station) und multithreaded Apartmentthreading (MTA) Modelle unterstützt. Weitere Informationen zu COM Threadmodelle finden Sie unter [Beschreibung und Funktionsweise von OLE Threading-Modelle](http://support.microsoft.com/kb/150777).
+- Ein OSC-Anbieter sollten Werte hinzufügen, der Windows-Registrierung, die angeben, dass der Provider-DLL des Apartmentthreading Single-Threading (Station) und multithreaded Apartmentthreading (MTA) Modelle unterstützt. Weitere Informationen zu COM Threadmodelle finden Sie unter [Beschreibung und Funktionsweise von OLE Threading-Modelle](https://support.microsoft.com/kb/150777).
     
 Methoden bei der Erweiterbarkeit der OSC-Anbieter müssen Grundtypen wie **Zeichenfolge** oder **Bool**zurückgeben. Bestimmte **Zeichenfolge** zurück, dass die Werte der Schemadefinition für die Erweiterbarkeit des OSC-Providers einhalten müssen. Nur XML-Zeichenfolge wird als Rückgabewert unterstützt. 
   

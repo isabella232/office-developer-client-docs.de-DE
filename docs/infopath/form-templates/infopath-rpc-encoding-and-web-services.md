@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f8d7b944-a8fd-9c5f-8f66-0f1b628b7c6e
 description: 'Webdienste können eine der zwei Formaten für das Binden der Webmethoden im Web Service Description Language (WSDL) Vertrag, die sie beschreibt verfügbar gemacht: Dokument oder RPC.'
-ms.openlocfilehash: 01b75df42bce97d62ebb5e273588cb522e5e2a09
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 0eacf013c9cdf74f18f3de1d4412ca4ca165a960
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790760"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387678"
 ---
 # <a name="infopath-rpc-encoding-and-web-services"></a>InfoPath, RPC-Codierung und Webdienste
 
@@ -31,11 +31,11 @@ Die Voraussetzungen zum Erstellen eines solchen Microsoft .NET-Proxywebdiensts s
   
 ## <a name="creating-a-proxy-web-service-using-visual-studio"></a>Erstellen eines Proxywebdiensts mithilfe von Visual Studio
 
-1. Erstellen Sie ein neues Projekt **ASP.NET-Webdienstanwendung** . 
+1. Erstellen Sie ein neues Projekt **ASP.NET-Webdienstanwendung**. 
     
 2. Klicken Sie im **Projektmappen-Explorer**mit der rechten Maustaste in des Ordners **Verweise** Ihres neuen Projekts, und klicken Sie dann auf **Webverweis hinzufügen**. 
     
-3. Geben Sie im Dialogfeld **Webverweis hinzufügen** in der URL des RPC/encoded-Webdiensts, dem Sie arbeiten mit, und klicken Sie dann auf **wechseln**möchten.
+3. Geben Sie im Dialogfeld **Webverweis hinzufügen** die URL des Webdiensts vom Typ "RPC/encoded" ein, den Sie verwenden möchten, und klicken Sie dann auf **Weiter**.
     
 4. Klicken Sie auf **Verweis hinzufügen**. 
     
@@ -62,13 +62,14 @@ Die Voraussetzungen zum Erstellen eines solchen Microsoft .NET-Proxywebdiensts s
     
    ```
 
-Weitere Informationen finden Sie im Microsoft Knowledge Base-Artikel "Wie an: übergeben aktuellen Anmeldeinformationen an einen ASP.NET-Webdienst""auf http://support.microsoft.com/.
+Weitere Informationen finden Sie im Microsoft Knowledge Base-Artikel "Wie an: übergeben aktuellen Anmeldeinformationen an einen ASP.NET-Webdienst""auf https://support.microsoft.com/.
     
 ## <a name="creating-a-proxy-web-service-without-visual-studio-net"></a>Erstellen eines Proxywebdiensts ohne Visual Studio .NET
 
 Alternativ können Sie einen Proxywebdienst mithilfe der Tools im .NET Framework Software Development Kit (SDK) erstellen, das Sie von MSDN herunterladen können.
   
-Verwenden Sie Web Services Description Language-Tool (Wsdl.exe), um die Codedatei für Ihren Webdienst-Proxy zu erstellen. Mithilfe von C#-Command-Line Compiler (csc.exe) oder Visual Basic .NET Command-Line Compiler (vbc.exe), die auch in .NET Framework SDK enthalten sind, kann dieser Codedatei kompiliert werden. Nachdem das Web Services Description Language-Tool die Codedatei generiert wurde, benennen Sie die Erweiterung in asmx, und öffnen Sie die Datei in einem beliebigen Texteditor. Klicken Sie auf die erste Zeile des Dokuments fügen Sie die folgende Seitendirektive hinzu:
+Erstellen Sie die Codedatei für Ihren Proxywebdienst mithilfe des WSDL-Tools (Wsdl.exe). Diese Codedatei kann mit dem C#-Befehlszeilencompiler (csc.exe) oder dem Visual Basic .NET-Befehlszeilencompiler (vbc.exe) kompiliert werden, die auch im .NET Framework SDK enthalten sind. Nachdem die Codedatei vom WSDL-Tool generiert wurde, benennen Sie die Dateinamenerweiterung in ASMX um, und öffnen Sie die Datei in einem beliebigen Text-Editor. Fügen Sie in der ersten Zeile des Dokuments die folgende Seitendirektive hinzu:   
+
   
 ```cs
 <%@ WebService Language="C#" class="GoogleSearchServiceWrapper" %> 

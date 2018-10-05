@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 1021860e-4c40-4c22-aa68-b568d046aaf7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c3b7c37c800230749f841ba64f4d52cfc9877af0
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a64008da93584529916a9303176bba0aa08d3fac
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563653"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387734"
 ---
 # <a name="pidlidtaskordinal-canonical-property"></a>PidLidTaskOrdinal (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Bietet Hilfe benutzerdefinierten Sortierung Aufgaben.
   
@@ -35,7 +35,7 @@ Bietet Hilfe benutzerdefinierten Sortierung Aufgaben.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Aufgabe  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft kann nicht festgelegt bleiben. Wenn festgelegt, dessen Wert größer als "0x800186A0" (-2,147,383,648) sein muss und weniger als "0x7FFE7960" (2,147,383,648) und unter Aufgaben im selben Ordner eindeutig sein müssen.
   
@@ -47,11 +47,11 @@ Die **PR_ORDINAL_MOST** -Eigenschaft des Ordners bietet eine effiziente Möglich
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
+[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)
   
 > Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert. 
     

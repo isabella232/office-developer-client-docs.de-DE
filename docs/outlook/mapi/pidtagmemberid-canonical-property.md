@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 64faef3c-27b2-49d2-9d0c-8b9d33f1cb71
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: caf1cb2e16c298af452e638631293379fdd68b10
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b5d1d4456856f1640bbed8589fc0583060cd2520
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589784"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391745"
 ---
 # <a name="pidtagmemberid-canonical-property"></a>PidTagMemberId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die ID eines Elements Tabelle, das die beschriebenen Rechte auf einem Microsoft Exchange Server-Ordner oder einem Postfach verfügt.
   
@@ -34,7 +34,7 @@ Enthält die ID eines Elements Tabelle, das die beschriebenen Rechte auf einem M
 |Datentyp:  <br/> |PT_I8  <br/> |
 |Bereich:  <br/> |Steuerung des Zugriffs  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft gibt einen Bezeichner in der Tabelle eindeutig. Eine Directory-Benutzer-ID jedes Element-ID zugeordnet ist und von dieser Eigenschaft angegeben ist. Diese Eigenschaft wird von der [IExchangeModifyTable](iexchangemodifytableiunknown.md) -Schnittstelle verwendet, die Directory Eintrags-ID eines Elements mit expliziten Berechtigungen für einen Ordner abrufen. 
   
@@ -42,11 +42,11 @@ Diese Eigenschaft gibt einen Bezeichner in der Tabelle eindeutig. Eine Directory
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCPERM]](http://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
+[[MS-OXCPERM]](https://msdn.microsoft.com/library/944ddb65-6249-4c34-a46e-363fcd37195e%28Office.15%29.aspx)
   
 > Behandelt das Abrufen von Ordner Berechtigungslisten, die auf dem Server gespeichert sind.
     

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5141589b-10f3-f908-56d2-206244f449fb
 description: Enthält Zeilen, die Menüelemente in einem Kontext- oder Aktionstagmenü eines Shapes oder Zeichenblatts beschreiben.
-ms.openlocfilehash: 67ddbf633a93a8295667d10d8957828ff4c76bfe
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 509fd06a77419bf684b214ff5a5d16f24a1f4a84
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797887"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388910"
 ---
 # <a name="row-element-actions-section-visio-xml"></a>Row-Element (Abschnitt "Actions") ("Visio XML")
 
 Enthält Zeilen, die Menüelemente in einem Kontext- oder Aktionstagmenü eines Shapes oder Zeichenblatts beschreiben.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[ActionsRow_Type](actionsrow_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Masters.XML, Master-Shape # .xml, pages.xml, Seite # .xml  <br/> |
    

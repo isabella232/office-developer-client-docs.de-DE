@@ -6,12 +6,12 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 17df868b-d329-cefa-bd16-84960cbf5921
-ms.openlocfilehash: 3d51c8a2d3fe8fddaf245cd0a6fcdf44305fdef4
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: f688f02c90e4341fe9cb0a1294b9f0f278bb7065
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791005"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386495"
 ---
 # <a name="ifreebusysupport"></a>IFreeBusySupport
 
@@ -21,7 +21,7 @@ Angabe der Schnittstellen, die Zugriff auf Frei/Gebucht-Daten für bestimmte Ben
 
 |||
 |:-----|:-----|
-|Erbt:  <br/> |[IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
+|Erbt:  <br/> |[IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) <br/> |
 |Bereitgestellt von:  <br/> |Frei/Gebucht-Anbieter  <br/> |
 |Schnittstellenbezeichner:  <br/> |IID_IFreeBusySupport  <br/> |
    
@@ -54,12 +54,12 @@ Angabe der Schnittstellen, die Zugriff auf Frei/Gebucht-Daten für bestimmte Ben
 |[Placeholder21](ifreebusysupport-placeholder21.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
 |[Placeholder22](ifreebusysupport-placeholder22.md) <br/> | *Dieser Member ist ein Platzhalter und wird nicht unterstützt.*  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die meisten der Elemente in dieser Schnittstelle sind Platzhalter für die interne Verwendung von Outlook reserviert und kann geändert werden. Frei/Gebucht-Anbieter müssen implementieren sie nur als angegebenen, zurückgeben, dass nur die angegebenen Werte zurückgeben.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Über die Frei/Gebucht-API](about-the-free-busy-api.md)
+- [Informationen zur Frei/Gebucht-API](about-the-free-busy-api.md)
 - [FBUser](fbuser.md)
 

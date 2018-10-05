@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 79505b29-2706-472b-b084-ab74be7b3405
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 15feea923c31bd7f88fcb3b346905e37af106d84
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6fe724d70ac86b1c51e72f243ef9255dd452be9c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564073"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386887"
 ---
 # <a name="pidtagscheduleinfoautoacceptappointments-canonical-property"></a>PidTagScheduleInfoAutoAcceptAppointments (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn ein Client oder Server automatisch alle Besprechungsanfragen für die Teilnehmer oder eine Ressource beantworten sollten.
   
@@ -34,7 +34,7 @@ Enthält True, wenn ein Client oder Server automatisch alle Besprechungsanfragen
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die Antwort, muss die Antwort Annahme, wenn für eine zusätzliche Einschränkung, die durch das **PR_SCHDINFO_DISALLOW_RECURRING_APPTS** ([PidTagScheduleInfoDisallowRecurringAppts](pidtagscheduleinfodisallowrecurringappts-canonical-property.md)) oder **PR_SCHDINFO_DISALLOW_ angegeben wird OVERLAPPING_APPTS** ([PidTagScheduleInfoDisallowOverlappingAppts](pidtagscheduleinfodisallowoverlappingappts-canonical-property.md)) Eigenschaften erfüllt ist. Den Wert FALSE oder Abwesenheit dieser Eigenschaft wird angegeben, dass ein Client oder Server nicht automatisch annehmen von Besprechungsanfragen muss. Dies ist keine erforderliche Eigenschaft.
   
@@ -42,15 +42,15 @@ Die Antwort, muss die Antwort Annahme, wenn für eine zusätzliche Einschränkun
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     
-[[MS-OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.
     

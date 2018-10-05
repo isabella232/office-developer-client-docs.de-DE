@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.assetid: bd3e4568-9730-4648-ba31-28813b5bb471
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 279ffc19efd36af311b05b05a3175088877e3288
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 827e797377f07e4de5ace069c4783a0b9d7d687a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575105"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386236"
 ---
 # <a name="pidtagbusinesshomepage-canonical-property"></a>PidTagBusinessHomePage (kanonische Eigenschaft)
 
@@ -34,7 +34,7 @@ Enthält die URL der Startseite für das Unternehmen.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften werden als ein Link zur Homepage für den Kontakt Business verwendet.
   
@@ -42,15 +42,15 @@ Diese Eigenschaften werden als ein Link zur Homepage für den Kontakt Business v
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakt- und Objekte in der persönlichen Verteilerliste Liste zulässig sind.
     
-[[MS-OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
     

@@ -6,22 +6,22 @@ ms.audience: Developer
 ms.topic: reference
 localization_priority: Normal
 ms.assetid: 33cb89cb-c967-760c-6bc4-94118a4f872c
-ms.openlocfilehash: 19ec67bf033859073e7685912196369b664f4a36
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 59f43e8b3b0819b0178d60fa357e01937ae19d81
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592689"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389736"
 ---
 # <a name="iolkenum"></a>IOlkEnum
 
-Aufzählen von Konten als [IUnknown](https://docs.microsoft.com/en-us/windows/desktop/api/unknwn/nn-unknwn-iunknown) -Objekte unterstützt. 
+Aufzählen von Konten als [IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) -Objekte unterstützt. 
   
 ## <a name="quick-info"></a>QuickInfo
 
 |||
 |:-----|:-----|
-|Erbt:  <br/> |[IUnknown](https://docs.microsoft.com/en-us/windows/desktop/api/unknwn/nn-unknwn-iunknown) <br/> |
+|Erbt:  <br/> |[IUnknown](https://docs.microsoft.com/windows/desktop/api/unknwn/nn-unknwn-iunknown) <br/> |
 |Implementiert von:  <br/> |Outlook  <br/> |
 |Bereitgestellt von:  <br/> |[IOlkAccountManager::EnumerateAccounts](iolkaccountmanager-enumerateaccounts.md) <br/> |
 |Aufgerufen von:  <br/> |Client  <br/> |
@@ -36,7 +36,7 @@ Aufzählen von Konten als [IUnknown](https://docs.microsoft.com/en-us/windows/de
 |[GetNext](iolkenum-getnext.md) <br/> |Ruft das nächste Konto in den Enumerator ab.  <br/> |
 |[Überspringen](iolkenum-skip.md) <br/> |Überspringt eine angegebene Anzahl von Konten in den Enumerator.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Schnittstelle wird von **IOlkAccountManager::EnumerateAccounts** zurückgegeben, wenn einen Enumerator von Konten zu erhalten. 
   

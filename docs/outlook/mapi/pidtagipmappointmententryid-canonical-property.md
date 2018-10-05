@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: a6e8c8fb-b76a-4a73-b112-6399e4d94233
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 64945d678051d2e3ae486395fb8ec6630de6a59e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d27506edf6eb40f6b244733336b8b381ea941442
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571157"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384759"
 ---
 # <a name="pidtagipmappointmententryid-canonical-property"></a>PidTagIpmAppointmentEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Die **EntryID** des Ordners Outlook-Kalender enthält. 
   
@@ -34,7 +34,7 @@ Die **EntryID** des Ordners Outlook-Kalender enthält.
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Ordner  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtenspeichers gespeichert. Zugriff auf die Eigenschaft auf eine bestimmte Nachricht Store die folgenden Schritte aus. 
   
@@ -52,11 +52,11 @@ Diese Eigenschaft wird im Ordner Posteingang und im Stammordner des Nachrichtens
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOSFLD]](http://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
+[[MS-OXOSFLD]](https://msdn.microsoft.com/library/a60e9c16-2ba8-424b-b60c-385a8a2837cb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Erstellen und Ordner mit Sonderfunktion in einem Postfach suchen.
     

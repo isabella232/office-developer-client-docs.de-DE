@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 9cfed295-f499-44dc-bac5-9e266df1b5b3
 description: Office für Android lässt sich in Android Storage Access Framework integrieren, mit dem Office Dateien öffnen kann, die von einem anderen Dokumentanbieter gespeichert werden.
-ms.openlocfilehash: c217eb2aa6c0974c32e60f5015449de7b157d39d
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 24d7e48106aeb5e58a668b94cbde00eaa9175230
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790894"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384549"
 ---
 # <a name="office-for-android-support-for-the-android-storage-access-framework"></a>Office für Android-Unterstützung für Android Storage Access Framework
 
@@ -31,7 +31,7 @@ Benutzer können sich mit einem kostenlosen Microsoft-Konto bei Office-Apps anme
 |:-----|:-----|:-----|
 |Dokumenttyp  <br/> |com_microsoft_office_doctype  <br/> |\<Benutzer\>  <br/> |
 |Anzeigename des Dienstes  <br/> |com_microsoft_office_servicename  <br/> |Ein beliebiger benutzerfreundlicher Name für den Dienst, der zum Identifizieren eines Dokuments in der Liste der zuletzt geöffneten Dokumente in Office-Apps verwendet wird. Beachten Sie, dass die Eigenschaft für Lizenzbedingungen angegeben werden muss, bevor der Anzeigename für den Dienst angezeigt werden kann.  <br/> |
-|Nutzungsbedingungen  <br/> |com_microsoft_office_termsofuse  <br/> |\<Ich stimme den Nutzungsbedingungen unter http://go.microsoft.com/fwlink/p/?LinkId=528381\> zu.  <br/> |
+|Nutzungsbedingungen  <br/> |com_microsoft_office_termsofuse  <br/> |\<Ich stimme den Nutzungsbedingungen unter https://go.microsoft.com/fwlink/p/?LinkId=528381\> zu.  <br/> |
    
 ## <a name="see-also"></a>Siehe auch
 <a name="bk_addresources"> </a>

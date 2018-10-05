@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: cb216f5c-c965-4372-a15b-82090a410266
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 0272464d9a397f169b27aa15c80a17b49a3e9977
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: fa9d6afcaf1b360f37e8c8873c9d1a823fcd4888
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22571829"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391655"
 ---
 # <a name="property-names-and-property-sets"></a>Eigenschaftennamen und Eigenschaftensätze
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Der Name jeder benannten Eigenschaft besteht aus zwei Teilen:
   
@@ -27,7 +27,7 @@ Der Name jeder benannten Eigenschaft besteht aus zwei Teilen:
     
 - Eine Unicode-Zeichenfolge oder eine 32-Bit-numerischen Wert. 
     
-Namen der benannten Eigenschaften werden durch eine [MAPINAMEID](mapinameid.md) Struktur beschrieben. Diese Struktur enthält ein Eigenschaft Set-Element, ein Element zum Angeben des Namens im Format numerischen oder Zeichenfolgenwerten und Mitglied zum Identifizieren, welches Format verwendet wird. Da Eigenschaftensatzes Teil der Name der Eigenschaft ist, ist nicht optional. MAPI hat mehrere Eigenschaftensätze für die Verwendung durch Clients und Dienstanbieter definiert, aber wenn ein vorhandene Eigenschaftensatz nicht geeignet ist, kann ein neuen Eigenschaftensatz definiert werden. Clients und Dienstanbieter können ihre eigenen Eigenschaftensätze definieren, indem [CoCreateGUID](http://msdn.microsoft.com/en-us/library/ms688568.aspx) -Funktion aufgerufen. In der Regel werden die folgenden Eigenschaftensätze für benutzerdefinierter Clientanwendungen erstellt. 
+Namen der benannten Eigenschaften werden durch eine [MAPINAMEID](mapinameid.md) Struktur beschrieben. Diese Struktur enthält ein Eigenschaft Set-Element, ein Element zum Angeben des Namens im Format numerischen oder Zeichenfolgenwerten und Mitglied zum Identifizieren, welches Format verwendet wird. Da Eigenschaftensatzes Teil der Name der Eigenschaft ist, ist nicht optional. MAPI hat mehrere Eigenschaftensätze für die Verwendung durch Clients und Dienstanbieter definiert, aber wenn ein vorhandene Eigenschaftensatz nicht geeignet ist, kann ein neuen Eigenschaftensatz definiert werden. Clients und Dienstanbieter können ihre eigenen Eigenschaftensätze definieren, indem [CoCreateGUID](https://msdn.microsoft.com/library/ms688568.aspx) -Funktion aufgerufen. In der Regel werden die folgenden Eigenschaftensätze für benutzerdefinierter Clientanwendungen erstellt. 
   
 MAPI Eigenschaftensätze werden durch die folgenden Konstanten dargestellt:
   

@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: c2a720cc-544b-f923-5bec-67da31507444
 description: Enthält die Textzeichenfolge, die in der Mitte der Fußzeile eines Dokuments angezeigt wird.
-ms.openlocfilehash: d164263c93775dcb8baea80781a876fb1caec39a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 931dcd60604adb033fb5334e6fc7fdffe3a8193c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797043"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387426"
 ---
 # <a name="footercenter-element-headerfootertype-complextype-visio-xml"></a>FooterCenter-Element (HeaderFooter_Type ComplexType) ("Visio XML")
 
 Enthält die Textzeichenfolge, die in der Mitte der Fußzeile eines Dokuments angezeigt wird.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[FooterCenter_Type](footercenter_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.Xml  <br/> |
    

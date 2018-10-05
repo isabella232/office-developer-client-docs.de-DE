@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c9d4b561-53b3-492b-9324-9376dd7abddf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1313ac62bd2ee6c1db27bd1c583f56dadc1bff1e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5051784ea08316477f3c8888ada9170e3d99c2b5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574300"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389043"
 ---
 # <a name="pidtagattachpayloadproviderguidstring-canonical-property"></a>PidTagAttachPayloadProviderGuidString (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält den Wert eines Felds Kopfzeile MIME-X-Nutzlast-Anbieter-Guid.
   
@@ -34,7 +34,7 @@ Enthält den Wert eines Felds Kopfzeile MIME-X-Nutzlast-Anbieter-Guid.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Outlook-Anwendung  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Um den Wert dieser Eigenschaften festzulegen, sollte MIME-Clients ein Kopfzeilenfeld X-Nutzlast-Anbieter-Guid in eine MIME-Entität geschrieben werden, die als Anlage analysiert werden.
   
@@ -44,11 +44,11 @@ MIME-Leser müssen diese Kopfzeile Feldwert auf den Wert der entsprechenden Eige
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
     

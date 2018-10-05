@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6da78f1a-6423-460c-b3a9-fd6441df9cef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 33dc327b9e8609a5a1a8a24e131ce4ea1d1e55bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ea4b90bf1190fd71701f82d43aaee384c7987ed0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583904"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387195"
 ---
 # <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a>PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Stellt das Authentifizierungsprotokoll für dieses Profil verwendet werden soll.
   
@@ -30,7 +30,7 @@ Stellt das Authentifizierungsprotokoll für dieses Profil verwendet werden soll.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Verschiedenes  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft kann für Standardauthentifizierung oder NT LAN Manager (NTLM) Authentifizierung festgelegt werden. Die möglichen Werte für diese Eigenschaft sind wie folgt.
   
@@ -43,15 +43,15 @@ Diese Eigenschaft kann für Standardauthentifizierung oder NT LAN Manager (NTLM)
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

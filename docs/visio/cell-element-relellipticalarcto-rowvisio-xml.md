@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: beaa8860-807e-c8dd-8a59-29cd0f91ba45
 description: Enthält x- oder y-Koordinaten des Endpunkts der eines elliptischen Bogens relativ zur Höhe und Breite des Shapes x- oder y-Koordinaten des Steuerelements Kontrollpunkte des Bogens relativ zur Breite und Höhe, Winkel zwischen der x-Achse großen Achse der Ellipse oder das Verhältnis zwischen des Shapes die Haupt- und Hilfsintervalle Achse der Ellipse
-ms.openlocfilehash: 661f6971ca4c03c68950ead45065bd12160918d2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 55e7f664aaab34aa079bafe8f11c57e99fd8a935
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796608"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383156"
 ---
 # <a name="cell-element-relellipticalarcto-row-visio-xml"></a>Zellenelement (RelEllipticalArcTo Zeile) ("Visio XML")
 
 Enthält x- oder y-Koordinaten des Endpunkts der eines elliptischen Bogens relativ zur Höhe und Breite des Shapes x- oder y-Koordinaten des Steuerelements Kontrollpunkte des Bogens relativ zur Breite und Höhe, Winkel zwischen der x-Achse großen Achse der Ellipse oder das Verhältnis zwischen des Shapes die Haupt- und Hilfsintervalle Achse der Ellipse
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    
@@ -60,7 +60,7 @@ Wenn das Schema spezifische Anforderungen, beispielsweise **Abfolge**, **MinOccu
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der ShapeSheet-Zelle.  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   

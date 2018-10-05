@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 7b87a244-b331-7e93-d304-239f8ca77061
 description: Gibt die Objekte, die Shapes einrasten, um beim Ausrichten aktiv in das Fenster ist.
-ms.openlocfilehash: 55558301b1f85f70f723d4282b438e4883d90c25
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: b4793c6d9c13a922db4d3ed9504a3a08e933230a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798149"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385207"
 ---
 # <a name="snapsettings-element-windowtype-complextype-visio-xml"></a>SnapSettings-Element (Window_Type ComplexType) ("Visio XML")
 
 Gibt die Objekte, die Shapes einrasten, um beim Ausrichten aktiv in das Fenster ist.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapSettings_Type](snapsettings_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Windows.Xml  <br/> |
    
@@ -53,7 +53,7 @@ Keine.
 
 Keine.
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert kann die Summe der Werte in der folgenden Tabelle sein.
   

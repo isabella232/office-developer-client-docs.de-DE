@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 3aa4f9d7-8105-435d-af68-424a079e1a84
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a8de1a90c0dde029cc6880fe46b0c4d4af9b50ad
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2ed498295de6748dfa50f1f4a8ba2710c8be64f7
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579060"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383779"
 ---
 # <a name="pidtagexceptionstarttime-canonical-property"></a>PidTagExceptionStartTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt das Startdatum und die Uhrzeit der Ausnahme in der lokalen Zeitzone des Computers an, wenn die Ausnahme erstellt wird.
   
@@ -34,7 +34,7 @@ Gibt das Startdatum und die Uhrzeit der Ausnahme in der lokalen Zeitzone des Com
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Nachricht-Klasse definiert-Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 > [!NOTE]
 > Diese Eigenschaft ist Informationszwecken und muss nicht auf wichtige Informationen verlassen. 
@@ -43,7 +43,7 @@ Gibt das Startdatum und die Uhrzeit der Ausnahme in der lokalen Zeitzone des Com
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

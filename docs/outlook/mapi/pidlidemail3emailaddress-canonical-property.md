@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 3a468bb6-c4c2-42ee-8283-492196872ca0
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 82328e285d0bf77ced074ba19aed306a27cea574
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4e7e80582bcc951539dbf6b4ca856a56e63d9abc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594775"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383226"
 ---
 # <a name="pidlidemail3emailaddress-canonical-property"></a>PidLidEmail3EmailAddress (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Gibt den dritten e-Mail-Adresse des Kontakts an.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft muss entsprechenden für den Adresstyp für diese e-Mail-Adresse angegeben.
   
@@ -43,11 +43,11 @@ Der Wert dieser Eigenschaft muss entsprechenden für den Adresstyp für diese e-
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

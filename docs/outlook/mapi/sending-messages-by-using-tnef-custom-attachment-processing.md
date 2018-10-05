@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: da318b6f-128a-44b5-8357-a130022030a1
 description: 'Letzte �nderung: Montag, 7. Dezember 2015'
-ms.openlocfilehash: 0c7cdf754b2a4b38516b1ac06074fdba9d2227f2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: f9d154b26319f5ed72b1abd6aeef307d07a63bda
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577744"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388567"
 ---
 # <a name="sending-messages-by-using-tnef-custom-attachment-processing"></a>Senden von Nachrichten mit der benutzerdefinierten TNEF-Anlagenverarbeitung
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 So passen Sie Anlage Verarbeitung beim Senden einer Nachricht an
   
@@ -41,7 +41,7 @@ So passen Sie Anlage Verarbeitung beim Senden einer Nachricht an
     
 9. Aufrufen der [ITnef::OpenTaggedBody](itnef-opentaggedbody.md) -Methode den markierten Nachrichtentext zu erhalten. Dieser markierte Text wird mithilfe der Methoden aus der **IStream** -Schnittstelle, mit der messaging-System Anlage Modell codiert und in die messaging-System geschrieben gelesen. 
     
-10. Rufen Sie die [IUnknown](http://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode, um das Objekt [ITnef](itnefiunknown.md) freizugeben. 
+10. Rufen Sie die [IUnknown](https://msdn.microsoft.com/library/4b494c6f-f0ee-4c35-ae45-ed956f40dc7a%28Office.15%29.aspx) -Methode, um das Objekt [ITnef](itnefiunknown.md) freizugeben. 
     
 11. Schreiben Sie die verbleibenden Anlagen auf die messaging-System über die messaging-System Anlage Objektmodell.
     

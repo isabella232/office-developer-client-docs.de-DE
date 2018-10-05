@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 3b0a8b28-863e-4b96-a4c0-fdb8f40555b9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 629746cedf8c6f4a8c960912a9ab1bcdc7a09e9e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 1a5f8688b8ea747590cf2a2d6d5efb271aa488f8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574146"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390926"
 ---
 # <a name="pidtagattachdatabinary-canonical-property"></a>PidTagAttachDataBinary (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die binären Anlagedaten in der Regel über die Schnittstelle Object Linking and Embedding (OLE) **IStream** zugegriffen. 
   
@@ -34,7 +34,7 @@ Enthält die binären Anlagedaten in der Regel über die Schnittstelle Object Li
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft enthält das Attachment-Objekt, wenn der Wert der Eigenschaft **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) ATTACH_BY_VALUE, ist die übliche Anlage-Methode und die einzige unterstützt werden müssen. **PR_ATTACH_DATA_BIN** enthält auch Anlage OLE 1.0 **OLESTREAM** , wenn der Wert der **PR_ATTACH_METHOD** ATTACH_OLE ist. 
   
@@ -44,13 +44,13 @@ Für ein OLE-Dokument-Dateianlage Anbieter die Nachricht muss auf einen Aufruf [
   
 Für ein Speicherobjekt können beispielsweise eine Verbunddatei in OLE 2.0-Dokumentdatei-Format, einige Dienstanbieter mit der MAPI- **IStreamDocfile** -Schnittstelle für verbesserte Leistung geöffnet werden. Ein Anbieter, der **IStreamDocfile** unterstützt muss es auf **PR_ATTACH_DATA_OBJ** verfügbar machen und kann optional auf **PR_ATTACH_DATA_BIN**machen. 
   
-Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter [OLE und Daten übertragen](http://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx). 
+Weitere Informationen zu OLE-Schnittstellen und Formate finden Sie unter [OLE und Daten übertragen](https://msdn.microsoft.com/library/d4a57956-37ba-44ca-8efc-bf617ad5e77b.aspx). 
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

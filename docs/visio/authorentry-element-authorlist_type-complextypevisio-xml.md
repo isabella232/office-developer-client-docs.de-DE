@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 21ca601b-27f0-b30b-a99e-56359bdf594c
 description: Gibt Eigenschaften verwendet, um den Autor eines Kommentars in einer Zeichnung zu ermitteln.
-ms.openlocfilehash: 905dbc5d08cfb2010c9d749e59584cc294e54e86
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 81e5121a953102c7d2e3a5383ae9bc775af4ba41
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796412"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386331"
 ---
 # <a name="authorentry-element-authorlisttype-complextype-visio-xml"></a>AuthorEntry-Element (AuthorList_Type ComplexType) ("Visio XML")
 
 Gibt Eigenschaften verwendet, um den Autor eines Kommentars in einer Zeichnung zu ermitteln.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[AuthorEntry_Type](authorentry_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Comments.Xml  <br/> |
    

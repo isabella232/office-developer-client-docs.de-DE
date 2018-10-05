@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 6e4d4ee9-c6b1-4987-b02e-684c2af3d21c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 21e052545c9c5e68bf1bc2f8c1ead054163f3b8d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 8d6fa58e61dde30292487c95fb8a74d568a3bbeb
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566145"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388469"
 ---
 # <a name="pidtagexpirytime-canonical-property"></a>PidTagExpiryTime (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält Datum und Uhrzeit, wann das messaging-System den Inhalt einer Nachricht ungültig machen können. 
   
@@ -34,7 +34,7 @@ Enthält Datum und Uhrzeit, wann das messaging-System den Inhalt einer Nachricht
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird verwendet, um die direkte Nachrichtensystem in Behandlung Nachrichten zwischen Personen übermittelt. 
   
@@ -42,11 +42,11 @@ Diese Eigenschaft wird verwendet, um die direkte Nachrichtensystem in Behandlung
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
     

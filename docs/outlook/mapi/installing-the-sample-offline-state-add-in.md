@@ -6,24 +6,24 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: e1b6ae6c-dcf2-a07f-c417-3a1049b758ad
 description: 'Zuletzt geändert: 06 Juli 2012'
-ms.openlocfilehash: 7616c3a6077b9354cda7046c0949e7c5553f6551
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: b7b9ce539537e0759020ef7e3b4f6541a940d6fd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586837"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389197"
 ---
 # <a name="installing-the-sample-offline-state-add-in"></a>Installieren des Offlinestatus-Add-In-Beispiels
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 In diesem Thema führt Sie durch die Schritte zum Herunterladen und Offline-Status Beispiel-Add-in installieren. Das Offline-Status Beispiel-Add-in ist ein COM-add-in, die ein Menü **Status als offline anzeigen** zu Outlook hinzugefügt und State-API verwendet. Überprüfen Sie über das Menü Offline-Status, das können Sie aktivieren oder deaktivieren, Status der Überwachung den aktuellen Status, und ändern Sie den aktuellen Status. Weitere Informationen dazu, wie das Offline-Status-Add-in implementiert wird finden Sie unter [Einstellung Up eine Offline-Status-Add-in](setting-up-an-offline-state-add-in.md).
   
 ## <a name="install-the-sample-offline-state-add-in"></a>Installieren Sie das Beispiel Offline State-Add-in
 
-1. Das Beispiel Offline Zustand Add-in hier herunterladen: [Outlook 2007: zusätzliche Referenzcodebeispiele und verteilbares Installationsprogramm](http://www.microsoft.com/en-us/download/details.aspx?id=24102).
+1. Das Beispiel Offline Zustand Add-in hier herunterladen: [Outlook 2007: zusätzliche Referenzcodebeispiele und verteilbares Installationsprogramm](https://www.microsoft.com/en-us/download/details.aspx?id=24102).
     
 2. Visual Studio 2005 als Administrator ausführen.
     

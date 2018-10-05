@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 374cef41-141a-491b-8dd1-eaf1a2044204
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8fa96736b5404d84c6ab48851b916c5ab987ae2a
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 205b6ddc2b65297d69a2223aab7b745b223ee553
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593921"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383520"
 ---
 # <a name="pidtagfollowupicon-canonical-property"></a>PidTagFollowupIcon (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Kennzeichnungsfarbe des Message-Objekts.
   
@@ -34,7 +34,7 @@ Gibt die Kennzeichnungsfarbe des Message-Objekts.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Benennen Sie Nachrichtenordner  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft darf nicht vorhanden sein, es sei denn, der Wert der **PR_FLAG_STATUS** ([PidTagFlagStatus](pidtagflagstatus-canonical-property.md))-Eigenschaft auf "FollowupFlagged" festgelegt ist, oder Message-Objekts ein bezüglich Besprechungen-Objekt ist. Diese Eigenschaft sollte auf ein Task-Objekt nicht vorhanden. Bei Festlegung auf andere Nachrichtenobjekte, muss diese Eigenschaft auf einen der folgenden Werte festgelegt sein.
   
@@ -52,11 +52,11 @@ Diese Eigenschaft darf nicht vorhanden sein, es sei denn, der Wert der **PR_FLAG
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOFLAG]](http://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
+[[MS-OXOFLAG]](https://msdn.microsoft.com/library/f1e50be4-ed30-4c2a-b5cb-8ff3aaaf9b91%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge im Zusammenhang mit kennzeichnen.
     

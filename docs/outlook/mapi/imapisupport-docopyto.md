@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 84019475-5176-4fc5-a3ee-871095077498
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 5ce5aa8c43e284b493a0709808a196c6c6889f88
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6f6c802f1d5ead1750c05fafc54533487fe3732a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22592108"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390632"
 ---
 # <a name="imapisupportdocopyto"></a>IMAPISupport::DoCopyTo
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Kopiert oder verschiebt alle Eigenschaften eines Objekts, mit Ausnahme von speziell Ausgeschlossene Eigenschaften in ein anderes Objekt.
   
@@ -101,7 +101,7 @@ MAPI_NOREPLACE
   
 > [out] Bei Eingabe einen Zeiger auf einen Zeiger auf eine [SPropProblemArray](spropproblemarray.md) -Struktur. andernfalls NULL, gibt keine Notwendigkeit zur Fehlerinformationen an. Wenn _LppProblems_ einen gültigen Zeiger für die Eingabe ist, gibt **DoCopyTo** ausführliche Informationen zu Fehlern in eine oder mehrere Eigenschaften kopieren. 
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -145,7 +145,7 @@ MAPI_E_UNEXPECTED_TYPE
   
 > Der Eigenschaftentyp ist nicht vom Anrufer erwartet.
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die **IMAPISupport::DoCopyTo** -Methode wird für Message Store Anbieter Unterstützungsobjekte implementiert. Nachricht Anbieter können **DoCopyTo** zum Implementieren der [IMAPIProp::CopyTo](imapiprop-copyto.md) -Methode für ihre Ordner und Nachrichten aufrufen. 
   
@@ -171,7 +171,7 @@ Wenn Sie einen Schnittstellenbezeichner akzeptable in _LpDestInterface_ , aber e
   
 Umgekehrt, wenn Sie zusätzliche Informationen, die nicht kopiert oder verschoben werden soll kennen, fügen Sie die als Schnittstellenbezeichner für die Schnittstellen, die in der _RgiidExclude_ -Parameter übergebenen Arrays ausgeschlossen werden hinzu. Wenn Sie Nachrichten, aber keine ihrer e-Mail-Anlagen kopieren, übergeben Sie IID_IMessage im Array _RgiidExclude_ fest. **DoCopyTo** ignoriert Schnittstellen, die in _RgiidExclude_ , die es nicht erkennt aufgelistet. 
   
-Wenn Sie den Parameter _RgiidExclude_ verwenden, um eine Schnittstelle auszuschließen, werden auch alle Schnittstellen, die von dieser Schnittstelle abgeleitet ausgeschlossen. Die Schnittstelle [IMAPIContainer](imapicontainerimapiprop.md) ausschließen bewirkt beispielsweise, dass Ordner oder Adresse Adressbuch-Container, je nach den Typ des Anbieters ausgeschlossen werden sollen. Schließen Sie keine [IMAPIProp](imapipropiunknown.md) oder [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) , da so viele Schnittstellen, die von ihnen abgeleitet werden. 
+Wenn Sie den Parameter _RgiidExclude_ verwenden, um eine Schnittstelle auszuschließen, werden auch alle Schnittstellen, die von dieser Schnittstelle abgeleitet ausgeschlossen. Die Schnittstelle [IMAPIContainer](imapicontainerimapiprop.md) ausschließen bewirkt beispielsweise, dass Ordner oder Adresse Adressbuch-Container, je nach den Typ des Anbieters ausgeschlossen werden sollen. Schließen Sie keine [IMAPIProp](imapipropiunknown.md) oder [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx) , da so viele Schnittstellen, die von ihnen abgeleitet werden. 
   
  **DoCopyTo** meldet globale Fehlern, die für den Vorgang als Ganzes gelten und einzelnen Fehler, die für die einzelnen Eigenschaften gelten. Diese einzelnen Fehler werden in einer **SPropProblemArray** eingefügt. Sie können die Fehlerberichterstattung Ebene der Eigenschaft, indem Sie NULL, statt dass ein gültiger Zeiger, für den Parameter Property Problem Array Struktur übergeben unterdrücken. 
   

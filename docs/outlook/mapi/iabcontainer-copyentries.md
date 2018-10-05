@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 4e775228-5ceb-4002-9b68-999fb5889b86
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 36e0db77097178d2db7a11b1339d19ebb8c91f2c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ddb730ed92db4c8d281e7c8d5d9b18bc44505598
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22565326"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382946"
 ---
 # <a name="iabcontainercopyentries"></a>IABContainer::CopyEntries
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Kopiert eine oder mehrere Einträge, in der Regel messaging Benutzer oder Verteilerlisten.
   
@@ -70,7 +70,7 @@ CREATE_REPLACE
   
 > Gibt an, dass ein neuer Eintrag eine vorhandene ersetzen soll, wenn festgestellt wird, dass die beiden Duplikate sind.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 S_OK 
   
@@ -80,7 +80,7 @@ MAPI_W_PARTIAL_COMPLETION
   
 > Der Kopiervorgang insgesamt erfolgreich, aber eine oder mehrere Einträge konnte nicht kopiert werden. Wenn dieser Wert zurückgegeben wird, sollte der Anruf als erfolgreich verarbeitet. Verwenden Sie das Makro **HR_FAILED** , um für diesen Wert zu testen. Weitere Informationen finden Sie unter [Verwendung von Makros Fehlerbehandlung](using-macros-for-error-handling.md).
     
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Die **IABContainer::CopyEntries** -Methode kopiert die Einträge aus der gleichen Container oder einen anderen Container. Ein Aufruf von **CopyEntries** entspricht der folgenden Aufrufe für jeden Eintrag kopiert werden: 
   
@@ -92,7 +92,7 @@ Die **IABContainer::CopyEntries** -Methode kopiert die Einträge aus der gleiche
     
 4. Den neuen Eintrag [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode zu speichern. 
     
-5. Den neuen Eintrag [IUnknown](http://msdn.microsoft.com/en-us/library/ms682317%28VS.85%29.aspx) -Methode, die den Container Verweis freigeben. 
+5. Den neuen Eintrag [IUnknown](https://msdn.microsoft.com/library/ms682317%28VS.85%29.aspx) -Methode, die den Container Verweis freigeben. 
     
 ## <a name="notes-to-implementers"></a>Hinweise für Implementierer
 

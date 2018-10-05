@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: eeecd957-dd50-4849-9698-8bc7106301e9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: d376a5219125866f467be01709a6a611ed8d47f7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 17343a721cbcc642c8cffe95112f25710c0c130c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22576421"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383457"
 ---
 # <a name="pidtagselectable-canonical-property"></a>PidTagSelectable (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält True, wenn der Eintrag in der einmaligen Tabelle ausgewählt werden kann. 
   
@@ -34,7 +34,7 @@ Enthält True, wenn der Eintrag in der einmaligen Tabelle ausgewählt werden kan
 |Datentyp:  <br/> |PT_BOOLEAN  <br/> |
 |Bereich:  <br/> |Adressbuchcontainer  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird in erster Linie für die visuelle Formatierung einer einmaligen Tabelle verwendet. Vorlagen können, indem Sie einen Eintrag, der angibt, die Überschrift für die Gruppe erstellen gruppiert werden. Durch Festlegen dieser Eigenschaft auf false festgelegt, für die Überschrift wird sichergestellt, dass der Benutzer nur die eigentlichen Vorlagen in der Gruppe und nicht bei diesem Eintrag Überschrift auswählen kann. 
   
@@ -52,11 +52,11 @@ FAX-Vorlagen (Tiefe 0, nicht ausgewählt werden kann)
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOABKT]](http://msdn.microsoft.com/library/cd5a3e78-1eeb-4a75-88eb-e82c8c96ff31%28Office.15%29.aspx)
+[[MS-OXOABKT]](https://msdn.microsoft.com/library/cd5a3e78-1eeb-4a75-88eb-e82c8c96ff31%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Address Book Vorlagen zulässig sind.
     

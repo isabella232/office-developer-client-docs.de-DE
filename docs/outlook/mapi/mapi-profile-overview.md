@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: d6c57be6-2397-4ab1-a912-028454dffc44
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: a34c21e20fa45cd3265ec42c9d992eb828203f66
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e196800b717ce2528da4b9871bad7425f3a2c326
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22563912"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385627"
 ---
 # <a name="mapi-profile-overview"></a>Übersicht über die MAPI-Profil
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Ein Profil ist eine Auflistung von Informationen zu den Message-Dienste und Dienstanbieter, die ein Benutzer von einer Clientanwendung möchte während einer bestimmten MAPI-Sitzung verfügbar sein soll. Jeder Benutzer verfügt über mindestens ein Profil; viele Benutzer behalten mehrere. Ein Benutzer möglicherweise beispielsweise ein Profil entwickelt eine serverbasierte Message Store Service und ein anderes Profil ein Informationsspeicher-Dienst auf dem lokalen Computer entwickelt. Ein Benutzer kann auf eine Gruppe von messaging-Systeme mithilfe der entsprechenden Transportdienste für einen Teil der Tag und eine andere für den Rest des Tages zugreifen möchten. Profile bieten eine flexible Möglichkeit zum Kombinationen von messaging-Systemdienste auswählen. 
   
@@ -39,7 +39,7 @@ Die Einträge in einem Profil enthalten unterscheiden sich von Messagingdiensts 
     
 Profile können bei der Installation, wenn MAPI oder einer Nachrichtendienst auf einem Computer geladen wird, oder zu einem späteren Zeitpunkt erstellt werden. MAPI bietet der Profil-Assistent für die Benutzerprofildienst-Verwaltung. 
   
-Der Profil-Assistent ist eine Anwendung, die mit einem minimum an der Arbeit neue Profile erstellt. Der Assistent verwendet Standardwerte für Einstellungen möglichst Benutzer Zeit und Mühe speichern. Nur bei Bedarf Werte geben die Benutzer ein. Weitere Informationen finden Sie unter [Erstellen eines Profils mithilfe der Profil-Assistent](creating-a-profile-by-using-the-profile-wizard.md). Sie können auch Office-Anpassungstool verwenden, um ein neues Profil zu erstellen. Weitere Informationen finden Sie unter [Office Customization Tool](http://go.microsoft.com/fwlink/?LinkId=123000).
+Der Profil-Assistent ist eine Anwendung, die mit einem minimum an der Arbeit neue Profile erstellt. Der Assistent verwendet Standardwerte für Einstellungen möglichst Benutzer Zeit und Mühe speichern. Nur bei Bedarf Werte geben die Benutzer ein. Weitere Informationen finden Sie unter [Erstellen eines Profils mithilfe der Profil-Assistent](creating-a-profile-by-using-the-profile-wizard.md). Sie können auch Office-Anpassungstool verwenden, um ein neues Profil zu erstellen. Weitere Informationen finden Sie unter [Office Customization Tool](https://go.microsoft.com/fwlink/?LinkId=123000).
   
 ## <a name="see-also"></a>Siehe auch
 

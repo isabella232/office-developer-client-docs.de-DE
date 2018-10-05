@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: cd57a5be-5550-4492-acb9-52255fac9014
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c38d1de1f2631277645ed10eb960ffc1956dfb6f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: bbac700c2bf5a0e17967cbf94b68b03627a47256
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594712"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383829"
 ---
 # <a name="pidlidchangehighlight-canonical-property"></a>PidLidChangeHighlight (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt ein Bitfeld, das angibt, wie das Objekt Besprechung geändert.
   
@@ -35,19 +35,19 @@ Gibt ein Bitfeld, das angibt, wie das Objekt Besprechung geändert.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Diese Eigenschaft ist nicht erforderlich. Die einzelnen Flags, die festgelegt werden können, sind in [[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)aufgeführt.
+Diese Eigenschaft ist nicht erforderlich. Die einzelnen Flags, die festgelegt werden können, sind in [[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)aufgeführt.
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

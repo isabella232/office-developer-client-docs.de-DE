@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: b8a4f87c-1d7c-46be-88e6-f09aa1525423
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1c8e98883e58070cdee233387dc5b7161a9ecb1d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e4cf317cadcb1ef6fa6cf42fe1cf88735b01cf66
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589931"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383996"
 ---
 # <a name="pidlidnotex-canonical-property"></a>PidLidNoteX (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Abstand in Pixel vom linken Rand des Bildschirms, in dem eine Benutzeroberfläche für eine Notiz angezeigt.
   
@@ -39,11 +39,11 @@ Gibt den Abstand in Pixel vom linken Rand des Bildschirms, in dem eine Benutzero
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXONOTE]](http://msdn.microsoft.com/library/6bf4ed7e-316c-4a3c-be27-5ec93e7ab39f%28Office.15%29.aspx)
+[[MS-OXONOTE]](https://msdn.microsoft.com/library/6bf4ed7e-316c-4a3c-be27-5ec93e7ab39f%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die auf Notizen zulässig sind.
     

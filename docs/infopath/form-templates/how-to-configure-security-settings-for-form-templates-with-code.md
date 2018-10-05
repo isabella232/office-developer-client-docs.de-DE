@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code
+title: Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit verwaltetem Code
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,18 +8,18 @@ keywords:
 localization_priority: Normal
 ms.assetid: 24d1a322-581f-497e-b97b-bd02c4516551
 description: Sie können den Berechtigungssatz anpassen, der mit dem .NET Configuration-Snap-in auf einer InfoPath-Formularvorlage verwaltetem Code angewendet wird.
-ms.openlocfilehash: f04ce71875eac7695d2900131ca7c9cd333fa90f
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 77f3546d976bb5ea353aa3fbe58ba7af6cd92a6d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790751"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391416"
 ---
-# <a name="configure-security-settings-for-form-templates-with-code"></a>Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code
+# <a name="configure-security-settings-for-form-templates-with-code"></a>Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit verwaltetem Code
 
 Sie können den Berechtigungssatz anpassen, der mit dem .NET Configuration-Snap-in auf einer InfoPath-Formularvorlage verwaltetem Code angewendet wird.
   
-Die von InfoPath gehosteten common Language Runtime (CLR) sucht nach einer vordefinierten Codegruppe mit dem Namen *InfoPath-Formularvorlagen* auf Computerebene Richtlinie unter der Gruppe All_Code. Die CLR gelten die Berechtigungssätze, die unter dieser Gruppe sein, um die Anwendungsdomäne (AppDomain) definiert sind, wo die Formularcode ausgeführt wird. So können Sie die Berechtigungssätze anpassen, die verwalteten InfoPath-Formularvorlagen Code erteilt werden. Sie können beispielsweise eine Formularvorlage heruntergeladen erteilen http://MySite Berechtigung, um das Active Directory zugreifen. 
+Die von InfoPath gehosteten common Language Runtime (CLR) sucht nach einer vordefinierten Codegruppe mit dem Namen *InfoPath-Formularvorlagen* auf Computerebene Richtlinie unter der Gruppe All_Code. Die CLR gelten die Berechtigungssätze, die unter dieser Gruppe sein, um die Anwendungsdomäne (AppDomain) definiert sind, wo die Formularcode ausgeführt wird. So können Sie die Berechtigungssätze anpassen, die verwalteten InfoPath-Formularvorlagen Code erteilt werden. Sie können beispielsweise eine Formularvorlage heruntergeladen erteilen https://MySite Berechtigung, um das Active Directory zugreifen. 
   
 Zur Anwendung benutzerdefinierter Sicherheitsrichtlinien, die mithilfe des Snap-Ins .NET-Konfiguration definiert wurden, müssen diese auf allen Clientcomputern bereitgestellt werden, auf denen die Formularvorlage ausgeführt werden soll.
   
@@ -34,7 +34,7 @@ Das folgende Verfahren wird eine Codegruppe, dass gewährt keine Berechtigungen 
   
 ### <a name="to-create-a-custom-security-code-group-for-infopath-managed-code-forms"></a>So erstellen Sie eine benutzerdefinierte Sicherheitscodegruppe für InfoPath-Formulare mit verwaltetem Code
 
-1. Klicken Sie im Menü **Start** auf **Verwaltung**zeigen Sie, und klicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
+1. Zeigen Sie im Menü **Start** auf **Verwaltung**, und klicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
     
     Wenn Sie im **Startmenü** auf **Verwaltung** nicht verfügen, aus der **Control Panel** öffnen Sie **Verwaltung**, und doppelklicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
     
@@ -42,9 +42,9 @@ Das folgende Verfahren wird eine Codegruppe, dass gewährt keine Berechtigungen 
     
 3. Nennen Sie die neue Codegruppe `InfoPath Form Templates` (dieser Text muss genauen), und klicken Sie dann auf **Weiter**.
     
-4. Legen Sie den Bedingungstyp für die Codegruppe **Gesamter**Code, und klicken Sie dann auf **Weiter**.
+4. Legen Sie den Bedingungstyp für die Codegruppe **Gesamter Code** fest, und klicken Sie dann auf **Weiter**.
     
-5. Klicken Sie auf **vorhandenen Berechtigungssatz verwenden**, weisen Sie den Berechtigungssatz **Nothing** der Codegruppe, klicken Sie auf **Weiter**, und klicken Sie dann auf **Fertig stellen**.
+5. Klicken Sie auf **Vorhandenen Berechtigungssatz verwenden**, weisen Sie den Berechtigungssatz **Nothing** der Codegruppe zu, klicken Sie auf **Weiter** und anschließend auf **Fertig stellen**.
     
 6. Um die neuen Einstellungen anzuwenden, schließen Sie, und starten Sie InfoPath.
     
@@ -54,20 +54,20 @@ Wenn Sie es vorziehen, können Sie den Berechtigungssatz für alle Formularvorla
   
 ## <a name="assigning-fulltrust-to-forms-at-a-specific-url-or-unc"></a>Zuweisen von "Voll vertrauenswürdig" an Formulare unter einem bestimmten URL oder UNC
 
-Sie können Codegruppen unter der **InfoPath-Formularvorlagen** Gruppe erteilen den Berechtigungssatz voll vertrauenswürdig auf Formularvorlagen aus einer bestimmten URL oder UNC-Speicherort erstellen. Nach dem auf diese Weise wird jede Formularvorlage veröffentlicht am angegebenen Speicherort voll vertrauenswürdig ausgeführt. 
+Sie können Codegruppen unter der Gruppe InfoPath-Formularvorlagen erstellen, die Formularvorlagen unter einer bestimmten URL- oder UNC-Adresse den Berechtigungssatz Voll vertrauenswürdig erteilen. Jede unter der angegebenen Adresse veröffentlichte Formularvorlage wird dann als voll vertrauenswürdig ausgeführt. 
   
 > [!NOTE]
 > Eine Formularvorlage, die aus dem lokalen Computer (Mein Computer Zone Codegruppe) geladen wird, wird von InfoPath mithilfe einer zufällig ausgewählten URL geladen. Aus diesem Grund können Sie das folgende Verfahren zum Erteilen Sie der Berechtigungssatzes "voll vertrauenswürdig" zu einer solchen Formularvorlage verwenden. Erteilen einer lokal installierte Formularvorlage die Berechtigung "voll vertrauenswürdig" festgelegt ist, verwenden Sie eine der der beschriebenen Verfahren im Abschnitt "Bereitstellen von Formularvorlagen, die erfordern voll vertrauenswürdig" neben dem Thema [Bereitstellen von InfoPath-Formularvorlagen mit Code](how-to-deploy-infopath-form-templates-with-code.md) . 
   
 ### <a name="to-assign-fulltrust-to-infopath-forms-at-a-specific-url-or-unc-location"></a>So weisen Sie InfoPath-Formularen unter einer bestimmten URL oder UNC die Berechtigung "Voll vertrauenswürdig" zu
 
-1. Klicken Sie im Menü **Start** auf **Verwaltung**zeigen Sie, und klicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
+1. Zeigen Sie im Menü **Start** auf **Verwaltung**, und klicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
     
     Wenn Sie im **Startmenü** auf **Verwaltung** nicht verfügen, aus der **Control Panel** öffnen Sie **Verwaltung**, und doppelklicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
     
 2. Klicken Sie unter **Arbeitsplatz**erweitern Sie den Knoten **Laufzeitsicherheitsrichtlinie** , den Knoten **Computer** , Knoten **Codegruppen** , den Knoten **All_Code** , und klicken Sie dann auf den Knoten **InfoPath-Formularvorlagen** . 
     
-3. Klicken Sie in der Liste der **Aufgaben** im rechten Bereich auf **eine untergeordnete Codegruppe hinzufügen**, Name der Codegruppe, und klicken Sie dann auf **Weiter**.
+3. Klicken Sie in der Liste **Aufgaben** im rechten Bereich auf **Untergeordnete Codegruppe hinzufügen**, benennen Sie die Codegruppe, und klicken Sie dann auf **Weiter**.
     
 4. Wählen Sie in der Liste **Wählen Sie den Bedingungstyp für die Codegruppe aus** **URL**aus, und geben Sie die URL oder UNC für den Speicherort der InfoPath managed Code Form Templates, die Sie den Berechtigungssatz **voll vertrauenswürdig** gewähren möchten. 
     
@@ -75,22 +75,22 @@ Sie können Codegruppen unter der **InfoPath-Formularvorlagen** Gruppe erteilen 
     
      `\\MyServer\MyShare\MyFormTemplate.xsn`
     
-     `http://MySite/MySubsite/MyFormTempate.xsn`
+     `https://MySite/MySubsite/MyFormTempate.xsn`
     
     Wenn der Berechtigungssatz allen Formularvorlagen unter dieser URL oder UNC erteilt werden soll, lassen Sie den Namen der Vorlage weg, und fügen Sie ein Sternchen am Ende der URL oder UNC hinzu. Beispiel:
     
      `\\MyServer\MyShare\*`
     
-     `http://MySite/MySubsite/*`
+     `https://MySite/MySubsite/*`
     
-5. Klicken Sie auf **Weiter**, und klicken Sie auf **vorhandenen Berechtigungssatz verwenden** , und weisen Sie der Codegruppe der Berechtigungssatzes **"voll vertrauenswürdig"** . 
+5. Klicken Sie auf **Weiter**, dann auf **Vorhandenen Berechtigungssatz verwenden**, und weisen Sie der Codegruppe den Berechtigungssatz **Voll vertrauenswürdig** zu. 
     
-6. Klicken Sie auf **Weiter**, und klicken Sie dann auf **Fertig stellen**.
+6. Klicken Sie auf  **Weiter ** und anschließend auf  **Fertig stellen **.
     
 7. Um die neuen Einstellungen anzuwenden, schließen Sie, und starten Sie InfoPath.
     
 > [!NOTE]
-> Wenn Sie einen restriktiveren oder benutzerdefinierten Berechtigungssatz anwenden möchten, wählen Sie die entsprechende Option anstelle von **voll vertrauenswürdig** in Schritt 4. 
+> Wenn Sie einen restriktiveren oder benutzerdefinierten Berechtigungssatz anwenden möchten, wählen Sie anstelle von **Voll vertrauenswürdig** in Schritt 4 die geeignete Option aus. 
   
 ## <a name="creating-a-deployment-package-for-infopath-security-policy"></a>Erstellen eines Bereitstellungspakets für InfoPath-Sicherheitsrichtlinien
 
@@ -98,17 +98,17 @@ Nach dem Definieren benutzerdefinierter Sicherheitsrichtlinien für InfoPath man
   
 ### <a name="to-create-a-deployment-package-for-custom-infopath-security-policy"></a>So erstellen Sie ein Bereitstellungspaket für benutzerdefinierte InfoPath-Sicherheitsrichtlinien
 
-1. Klicken Sie im Menü **Start** auf **Verwaltung**zeigen Sie, und klicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
+1. Zeigen Sie im Menü **Start** auf **Verwaltung**, und klicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
     
     Wenn Sie im **Startmenü** auf **Verwaltung** nicht verfügen, aus der **Control Panel** öffnen Sie **Verwaltung**, und doppelklicken Sie dann auf **Microsoft .NET Framework 2.0-Konfiguration**.
     
-2. Maustaste auf **Laufzeitsicherheitsrichtlinie**, und klicken Sie dann auf **Bereitstellungspaket erstellen**.
+2. Klicken Sie mit der rechten Maustaste auf **Laufzeitsicherheitsrichtlinie**, und klicken Sie dann auf **Bereitstellungspaket erstellen**.
     
-3. Wählen Sie unter **Wählen Sie die Codezugriffssicherheits-Richtlinie zum Bereitstellen von**klicken Sie auf **Computer**, geben Sie den Ordner und den Dateinamen für das Windows Installer-Paket, und klicken Sie dann auf **Weiter**.
+3. Klicken Sie unter **Wählen Sie die weiterzugebende Sicherheitsrichtlinienebene aus** auf **Computer**, geben Sie den Ordner und den Dateinamen für das Windows Installer-Paket an, und klicken Sie dann auf **Weiter**.
     
-4. Klicken Sie auf **Fertig stellen** , um das Bereitstellungspaket zu erstellen. 
+4. Klicken Sie auf **Fertig stellen**, um das Bereitstellungspaket zu erstellen. 
     
-5. Informationen zur Verwendung von .NET Framework-Konfigurationstools suchen Sie Hilfe zu Visual Studio oder die MSDN-Website nach ".NET Framework Configuration Tool (Mscorcfg.msc)".
+5. Informationen zur Verwendung von .NET Framework-Konfigurationstools suchen Sie Hilfe zu Visual Studio oder der MSDN-Website nach ".NET Framework Configuration Tool (Mscorcfg.msc)".
     
 ## <a name="see-also"></a>Siehe auch
 

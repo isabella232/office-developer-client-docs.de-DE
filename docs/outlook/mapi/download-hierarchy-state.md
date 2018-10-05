@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8e0400ba-8530-e6ac-5de8-a62aeec5e10a
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f9c334bc86bdff4abb2762642a37e3f0933a0b29
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 45535eef75c6fc091c02ec35b669675a51e4cf48
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589028"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384857"
 ---
 # <a name="download-hierarchy-state"></a>Status „Downloadhierarchie“
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
  In diesem Thema wird beschrieben, während den Downloadstatus Hierarchie, von der Replikation Zustandsautomat erläutert. 
   
@@ -37,7 +37,7 @@ ms.locfileid: "22589028"
 
 Dieser Status initiiert eine Strukturhierarchie von Ordnern auf einem Server auf den lokalen Speicher herunterladen. 
   
-Outlook initialisiert die zugeordnete **DNHIER** -Datenstruktur mit einem Zeiger auf der Hierarchie. Der Client downloads die Hierarchie und fügt neue Ordner oder Änderungen an Ordnern im lokalen Speicher. Der Downloadvorgang nimmt Microsoft Exchange inkrementelle Änderung Synchronisierung (ICS). Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](http://msdn.microsoft.com/en-us/library/aa579252%28EXCHG.80%29.aspx).
+Outlook initialisiert die zugeordnete **DNHIER** -Datenstruktur mit einem Zeiger auf der Hierarchie. Der Client downloads die Hierarchie und fügt neue Ordner oder Änderungen an Ordnern im lokalen Speicher. Der Downloadvorgang nimmt Microsoft Exchange inkrementelle Änderung Synchronisierung (ICS). Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
   
 Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status synchronisieren zurück.
   
@@ -49,5 +49,5 @@ Wenn dieser Status beendet ist, gibt der lokale Speicher auf den Status synchron
   
 [Informationen über den Replikationszustandsautomaten](about-the-replication-state-machine.md)
   
-[SYNCHRONISIERUNGSSTATUS](syncstate.md)
+[SYNCSTATE](syncstate.md)
 

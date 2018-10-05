@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 8b8368d2-b04b-42a5-fdc3-955fc873c2f5
 description: Meldet den Status Enumeration und Neuzuordnen von Terminen.
-ms.openlocfilehash: 4219ab1d59b596bebbe3ced03651716b04b51f81
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: e5df0cd6df10ab86b1a125b9807637438976726f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791208"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384353"
 ---
 # <a name="rebasetaskprogress"></a>RebaseTaskProgress
 
@@ -22,7 +22,7 @@ Meldet den Status Enumeration und Neuzuordnen von Terminen.
 
 |||
 |:-----|:-----|
-|Headerdatei  <br/> |tzmovelib.h  <br/> |
+|Headerdatei:  <br/> |tzmovelib.h  <br/> |
 |Implementiert von:  <br/> |MAPI-Clientanwendungen  <br/> |
 |Aufgerufen von:  <br/> |Basisadressen Outlook-Objekt  <br/> |
 |Zeigertyp:  <br/> |**PFNREBASETASKPROGRESS** gemäß Definition im tzmovelib.h  <br/> |
@@ -69,7 +69,7 @@ _State_
     
 _pRowCur_
   
-> [in] Ein Zeiger auf eine **[SRow](http://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** -Struktur, die das Element überprüften oder feste beschreibt. 
+> [in] Ein Zeiger auf eine **[SRow](https://msdn.microsoft.com/library/369c2d5c-8c2b-4314-9cb2-aaa89580aa2b%28Office.15%29.aspx)** -Struktur, die das Element überprüften oder feste beschreibt. 
     
 ## <a name="return-values"></a>Rückgabewerte
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: f6fd33d6-04fb-4801-a004-fb80a14ca79d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 21d1ee071aa5df24d0ddf641ff6f458a7de1cb3d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: eaff90de919c1bdc04983bce32a2aa808ae56013
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594278"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389610"
 ---
 # <a name="pidlidappointmentendwhole-canonical-property"></a>PidLidAppointmentEndWhole (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Das Datum und die Zeit, die am Ende des Termins darstellt.
   
@@ -35,7 +35,7 @@ Das Datum und die Zeit, die am Ende des Termins darstellt.
 |Datentyp:  <br/> |PT_SYSTIME  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft entspricht der **DispidApptEndWhole** -Eigenschaft des Termins in Microsoft Office Outlook-Objektmodell. 
   
@@ -45,11 +45,11 @@ Dies gibt an, das Enddatum und die Uhrzeit für das Ereignis. Es muss in koordin
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

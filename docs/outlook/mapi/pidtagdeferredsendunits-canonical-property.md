@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 2386be9f-18c9-4949-a2aa-efc8e212801c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: f8260b5b7c1dd3fd6608c2fd17471d21ad362ece
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: becc076efe0f4f805eb2a8db071b70ad731ee256
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568994"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385685"
 ---
 # <a name="pidtagdeferredsendunits-canonical-property"></a>PidTagDeferredSendUnits (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Zeiteinheit, von denen der Eigenschaftswert **PR_DEFERRED_SEND_NUMBER** ([PidTagDeferredSendNumber](pidtagdeferredsendnumber-canonical-property.md)) multipliziert werden soll.
   
@@ -34,7 +34,7 @@ Gibt die Zeiteinheit, von denen der Eigenschaftswert **PR_DEFERRED_SEND_NUMBER**
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-status  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn festgelegt, diese Eigenschaft einen der folgenden Werte aufweisen muss:
   
@@ -50,7 +50,7 @@ Wenn festgelegt, diese Eigenschaft einen der folgenden Werte aufweisen muss:
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

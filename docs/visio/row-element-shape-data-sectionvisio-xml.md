@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 9eb74ae8-ff42-6e34-30e2-2080bf8b5754
 description: Gibt ein Shape-Dateneingabe zum Zuordnen von Daten mit einer Form an.
-ms.openlocfilehash: 19dc4fe4759e7546f56160e41100d73721f9f6e9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7857ad8a28e11d6ed3ba34145ffc0606f306120f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797917"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385508"
 ---
 # <a name="row-element-shape-data-section-visio-xml"></a>Row-Element (Abschnitt "Shape Data") ("Visio XML")
 
 Gibt ein Shape-Dateneingabe zum Zuordnen von Daten mit einer Form an.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Shape-Datentyp](propertyrow_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |# .xml Master, Seite # .xml  <br/> |
    

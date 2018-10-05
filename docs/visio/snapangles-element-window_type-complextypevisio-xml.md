@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5997f374-303a-92b6-6dd3-87ef81104af4
 description: Enthält eine Auflistung von SnapAngle-Elementen.
-ms.openlocfilehash: 6ef0339a979999e0fcaaa66406c9ef076849ba24
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 09a975b280a99fdc2535503b587efdd2143cf18b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798135"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383100"
 ---
 # <a name="snapangles-element-windowtype-complextype-visio-xml"></a>SnapAngles-Element (Window_Type ComplexType) ("Visio XML")
 
 Enthält eine Auflistung von **SnapAngle** -Elementen. 
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[SnapAngles_Type](snapangles_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Windows.Xml  <br/> |
    

@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f8054fd9-85ba-fcf6-c96d-a54095d5238c
 description: Definiert die Parameter Wetter Bedingungen von einem Speicherort an.
-ms.openlocfilehash: 39dcc63dfc9b7a97b9643e804329fd1795d39201
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: c3d640789cb68891878c3dca5210ab9dea280180
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796181"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387713"
 ---
 # <a name="weathertype-complextype-outlook-weather-location-schema"></a>WeatherType ComplexType (Outlook Wetter Speicherort-Schema)
 
@@ -23,7 +23,7 @@ Definiert die Parameter Wetter Bedingungen von einem Speicherort an.
 
 |||
 |:-----|:-----|
-|**Namespace** <br/> |http://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/outlook/15/getweatherlocation.xsd  <br/> |
 |**Schemadatei** <br/> |getweatherlocation.xsd  <br/> |
 |**Erweiterungsbasis** <br/> |Keine  <br/> |
    

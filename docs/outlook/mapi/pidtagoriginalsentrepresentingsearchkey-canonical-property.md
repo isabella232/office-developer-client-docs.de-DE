@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 0fb1b803-f8b4-4d6d-8e2a-836daa98ac63
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 5c3c8f121423cdd15d7f8e8beee80b667b29a09b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ee23e2f25370a253b914779b3bfd0ab82fd08c7e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22585521"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388497"
 ---
 # <a name="pidtagoriginalsentrepresentingsearchkey-canonical-property"></a>PidTagOriginalSentRepresentingSearchKey (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die suchen-Taste die messaging-Benutzer in den Namen die ursprüngliche Nachricht gesendet wurde.
   
@@ -34,7 +34,7 @@ Enthält die suchen-Taste die messaging-Benutzer in den Namen die ursprüngliche
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Absender einer Nachricht dargestellt. Es wird in einem Thread Unterhaltung verwendet.
   
@@ -44,11 +44,11 @@ Senden einer Nachricht im Auftrag einer anderen Client-Clientanwendung sollte di
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.
     

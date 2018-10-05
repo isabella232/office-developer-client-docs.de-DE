@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: e3c7ae27-2e54-a174-4fb3-d16093faf759
 description: Enthält die Informationen für einen einzelnen Hyperlink, der einem Shape zugeordnet ist. Ein Shape enthält für jeden Hyperlink eine Hyperlink-Zeile.
-ms.openlocfilehash: 99295838f5d1860e3c34cf4e37866eb477fe81ad
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 36b9b62f248e4f5b9407156a79fa674dc2e8f14d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797173"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390254"
 ---
 # <a name="hyperlink-row-hyperlinks-section"></a>Hyperlink Row (Hyperlinks Section)
 
@@ -30,7 +30,7 @@ Hyperlink Zeilen heißen Hyperlink. *Name* und enthält folgenden Zellen. Weiter
 |[ExtraInfo](extrainfo-cell-hyperlinks-section.md) <br/> |Eine Zeichenfolge, die Informationen für die Auflösung der URL übergibt.  <br/> |
 |[Frame](frame-cell-hyperlinks-section.md) <br/> |Der Name eines Rahmens, der als Ziel dienen soll, wenn Microsoft Office Visio als ActiveX-Dokument in einem ActiveX-Container geöffnet ist. Der Standardwert ist eine leere Zeichenfolge.  <br/> |
 |[SortKey](sortkey-cell-hyperlinks-section.md) <br/> |Bestimmt die Reihenfolge der Hyperlinks, in der sie im Kontextmenü angezeigt werden.  <br/> |
-|[NewWindow](newwindow-cell-hyperlinks-section.md) <br/> |Gibt an, ob der Hyperlink in einem neuen Fenster geöffnet werden soll. Wenn dieser Wert auf TRUE festgelegt ist, wird das verknüpfte Zeichenblatt, das verknüpfte Dokument oder die verknüpfte Website in einem neuen Fenster geöffnet. Die Standardeinstellung ist FALSE.  <br/> |
+|[NewWindow](newwindow-cell-hyperlinks-section.md) <br/> |Gibt an, ob der Hyperlink in einem neuen Fenster geöffnet werden soll. Bei TRUE wird die verknüpfte Seite, Dokument oder Website in einem neuen Fenster geöffnet. Der Standardwert ist FALSE.  <br/> |
 |[Standard](default-cell-hyperlinks-section.md) <br/> |Der Standardhyperlink für ein Shape oder ein Zeichenblatt.  <br/> |
 |[Nicht sichtbare](invisible-cell-hyperlinks-section.md) <br/> |Gibt an, ob der Hyperlink im Kontextmenü angezeigt wird.  <br/> |
    

@@ -1,5 +1,5 @@
 ---
-title: XlfRegister (Formular 1)
+title: xlfRegister (Formular 1)
 manager: soliver
 ms.date: 03/09/2015
 ms.audience: Developer
@@ -10,15 +10,15 @@ keywords:
 - XlfRegister-Funktion [excel 2007]
 localization_priority: Normal
 ms.assetid: c730124c-1886-4a0f-8f06-79763025537d
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 4fb4e8656b4f27105a30764cdda020849a07645e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: 3cd2e5072c8602fe301028e69592220a8345c211
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790603"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385081"
 ---
-# <a name="xlfregister-form-1"></a>XlfRegister (Formular 1)
+# <a name="xlfregister-form-1"></a>xlfRegister (Formular 1)
 
 **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
@@ -32,7 +32,7 @@ Kann aus einem Befehl DLL oder XLL aufgerufen werden, die selbst von Microsoft E
     
 In Form 1 aufgerufen, diese Funktion stellt eine DLL-Funktion oder einen Befehl nach Excel zur Verfügung, dessen Verwendungszähler auf 1 festgelegt, und gibt seine Registrierung-ID, die an die Funktion später erneut anzurufen, mithilfe der [XlUDF](xludf.md) oder die **XlfCall** -Funktion verwendet werden kann. Die ID der Registrierung wird auch zum Aufheben der Registrierung der Funktion mit [XlfUnregister (Formular 1)](xlfunregister-form-1.md)verwendet. Wenn die Funktion registriert wurde, inkrementiert **XlfRegister** erneut aufrufen seiner Verwendung. 
   
-Diese Form der Funktion definiert ausgeblendeten Name das Argument Funktion Text _PxFunctionText_, also und der Ausdruck ergibt auch auf die Registrierung-ID der Funktion oder Befehl. Wenn Sie die Funktion aufgehoben, löschen Sie dieser Name mit dem [XlfSetName](xlfsetname.md). Weitere Informationen finden Sie unter [Bekannte Probleme bei der Entwicklung von Excel XLL](known-issues-in-excel-xll-development.md).
+Diese Form der Funktion definiert ausgeblendeten Name das Argument Funktion Text _PxFunctionText_, also und der Ausdruck ergibt auch auf die Registrierung-ID der Funktion oder Befehl. Wenn Sie die Funktion aufgehoben, löschen Sie dieser Name mit dem [XlfSetName](xlfsetname.md). Weitere Informationen finden Sie unter [Bekannte Probleme bei der Excel-XLL-Entwicklung](known-issues-in-excel-xll-development.md).
   
 ```cs
 Excel12(xlfRegister, LPXLOPER12 pxRes, int iCount,
@@ -101,7 +101,7 @@ Eine Zeichenfolge einem Zeichen, Groß-/Kleinschreibung beachtet, die angibt, di
   
 _pxHelpTopic_ (**XltypeStr**)
   
-Einen optionalen Verweis auf die Hilfedatei (chm oder hlp) angezeigt wird, wenn der Benutzer die Schaltfläche Hilfe klickt (wenn die benutzerdefinierte Funktion angezeigt wird). Kann im Format `filepath!HelpContextID` oder `http://address/path_to_file_in_site!0`. Beide Webparts vor und nach der "!" sind erforderlich.  *HelpContextID* darf keine Apostrophe enthalten und wird von Excel in eine Ganzzahl ohne Vorzeichen 4 Bytes lang, im Dezimalformat konvertiert werden. Wenn Sie das URL-Formular zu verwenden, wird Excel nur die referenzierten Hilfedatei geöffnet. 
+Einen optionalen Verweis auf die Hilfedatei (chm oder hlp) angezeigt wird, wenn der Benutzer die Schaltfläche Hilfe klickt (wenn die benutzerdefinierte Funktion angezeigt wird). Kann im Format `filepath!HelpContextID` oder `https://address/path_to_file_in_site!0`. Beide Webparts vor und nach der "!" sind erforderlich.  *HelpContextID* darf keine Apostrophe enthalten und wird von Excel in eine Ganzzahl ohne Vorzeichen 4 Bytes lang, im Dezimalformat konvertiert werden. Wenn Sie das URL-Formular zu verwenden, wird Excel nur die referenzierten Hilfedatei geöffnet. 
   
 _pxFunctionHelp_ (**XltypeStr**)
   
@@ -111,7 +111,7 @@ _pxArgumentHelp1_ (**XltypeStr**)
   
 Optional. Die erste der Zeichenfolgen, die die benutzerdefinierten Argumente der Funktion beschreiben, wenn die Funktion im Funktions-Assistenten ausgewählt wird. In Excel 2003 und früheren Versionen können **XlfRegister** , maximal 30 Argumente, damit Sie diese Hilfe für die ersten 20 nur Ihre Funktionsargumente bereitstellen können. Ab Excel 2007 können **XlfRegister** bis zu 255 Argumente, damit Sie diese Hilfe für bis zu 245 Funktionsparameter bereitstellen können. 
   
-## <a name="property-valuereturn-value"></a>Eigenschaft Eigenschaftswert/Rückgabewert
+## <a name="property-valuereturn-value"></a>Eigenschaftswert/Rückgabewert
 
 Wenn die Registrierung erfolgreich war, gibt diese Funktion die Register-ID der Funktion (**XltypeNum**), die in Aufrufen von **XlUDF** und **XlfUnregister** in einer DLL oder mit **ANRUFEN** und **Registrierung** in einer XLM-Makrovorlage verwendet werden kann. Andernfalls gibt es eine #VALUE! Fehler. 
   
@@ -275,28 +275,28 @@ Die Kategorie ist mit dem Parameter _PxCategory_ auf **XlfRegister**angegeben. D
   
 Die folgende Tabelle enthält die Standardkategorien, die angezeigt werden, wenn Sie das Dialogfeld **Funktion einfügen** von in einem Arbeitsblatt anzeigen. 
   
-|**Nummer**|**Text**|
+|**Number**|**Text**|
 |:-----|:-----|
 |1  <br/> |Finanzmathematik  <br/> |
 |2  <br/> |Datum &amp; Zeit  <br/> |
-|3  <br/> |Math &amp; Trig  <br/> |
+|3  <br/> |Math. &amp; Trigonom.  <br/> |
 |4  <br/> |Text  <br/> |
 |5  <br/> |Logisch  <br/> |
 |6  <br/> |Lookup &amp; Verweis  <br/> |
 |7  <br/> |Datenbank  <br/> |
-|8  <br/> |Statistische  <br/> |
+|8  <br/> |Statistik  <br/> |
 |9  <br/> |Information  <br/> |
-|14  <br/> |Benutzerdefinierte  <br/> |
+|14  <br/> |Benutzerdefiniert  <br/> |
 ||Engineering (beginnend in Excel 2007)  <br/> |
 ||Cube (beginnend in Excel 2007)  <br/> |
    
 Darüber hinaus werden diese Kategorien auch angezeigt, wenn Sie das Dialogfeld **Funktion einfügen** aus in eine Makrovorlage anzeigen. 
   
-|**Nummer**|**Text**|
+|**Number**|**Text**|
 |:-----|:-----|
 |10  <br/> |Befehle  <br/> |
-|11  <br/> |DDE/externer  <br/> |
-|12  <br/> |Anpassen  <br/> |
+|11  <br/> |DDE/Extern  <br/> |
+|12  <br/> |Benutzerorientiert  <br/> |
 |13  <br/> |Makrosteuerung  <br/> |
    
 ### <a name="example"></a>Beispiel
@@ -307,5 +307,5 @@ Finden Sie im Code die Funktion **XlAutoOpen** in `\SAMPLES\GENERIC\GENERIC.C`.
 
 - [REGISTER.](xlfregisterid.md)
 - [AUFHEBEN DER REGISTRIERUNG](xlfunregister-form-1.md)
-- [Wichtige und n�tzliche C-API XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
+- [Wichtige und nützliche C-API-XLM-Funktionen](essential-and-useful-c-api-xlm-functions.md)
 

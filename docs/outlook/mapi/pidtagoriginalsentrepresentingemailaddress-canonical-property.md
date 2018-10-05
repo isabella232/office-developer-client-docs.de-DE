@@ -10,18 +10,18 @@ api_type:
 - COM
 ms.assetid: e2c3d2c3-5451-45cb-b0ec-bdbf5b39a0ba
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 79ddbe322534a3e98b6b2cea37f86bc25b7f5f2f
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2530e27993163505b28fa7d08fd5caf4cc9b03be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579088"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385354"
 ---
 # <a name="pidtagoriginalsentrepresentingemailaddress-canonical-property"></a>PidTagOriginalSentRepresentingEmailAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die e-Mail-Adresse des messaging Benutzers in dessen Namen die ursprüngliche Nachricht gesendet wurde.
   
@@ -32,7 +32,7 @@ Enthält die e-Mail-Adresse des messaging Benutzers in dessen Namen die ursprün
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften sind Beispiele für die Adresseigenschaften für den Absender einer Nachricht dargestellt. Es wird in einem Thread Unterhaltung verwendet.
   
@@ -42,11 +42,11 @@ Eine Clientanwendung Senden einer Nachricht im Auftrag einer anderen Client soll
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.
     

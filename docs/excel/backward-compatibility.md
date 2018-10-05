@@ -8,13 +8,13 @@ keywords:
 - Versionskompatibilität [excel 2007], XLL-Kompatibilität [Excel 2007], Abwärtskompatibilität [Excel 2007]
 localization_priority: Normal
 ms.assetid: ac200824-0620-4f03-8bd2-59226c1e79d7
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 095961fa909a67b354ed43a7e093b79a9ebb4f18
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: 3e1368ef55b96be947527456e0f01918afec6663
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790394"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387972"
 ---
 # <a name="backward-compatibility"></a>Abwärtskompatibilität
 
@@ -63,7 +63,7 @@ Aus diesen Gründen idealerweise starten in Excel 2007 sollten exportieren eine 
   
 Ein weiterer Grund, warum sollten Sie die Registrierung einer anderen Funktion ab Excel 2007, ist, dass genehmigt XLL-Funktionen bis zu 255 Argumente, anstatt den 30 Grenzwert von früheren Versionen verwendet werden.
   
-Zum Glück haben Sie die Vorteile beider durch beide Versionen aus Ihrem Projekt exportieren. Können Sie erkennen klicken Sie dann die Excel-Version ausgeführt wird und die am besten geeignete Funktion bedingt registrieren. Weitere Informationen und ein Beispiel für eine Implementierung finden Sie unter [Developing-Add-ins (XLLs) in Excel 2007](http://msdn.microsoft.com/en-us/library/aa730920.aspx).
+Zum Glück haben Sie die Vorteile beider durch beide Versionen aus Ihrem Projekt exportieren. Können Sie erkennen klicken Sie dann die Excel-Version ausgeführt wird und die am besten geeignete Funktion bedingt registrieren. Weitere Informationen und ein Beispiel für eine Implementierung finden Sie unter [Developing-Add-ins (XLLs) in Excel 2007](https://msdn.microsoft.com/library/aa730920.aspx).
   
 Diese Methode führt zu die Möglichkeit, dass unterschiedliche Ergebnisse als ab Excel 2007 mit demselben Blatt ein Arbeitsblatt in Excel 2003 ausgeführt angezeigt werden konnte. Beispielsweise würde für Excel 2003 ordnen Sie eine Unicode-Zeichenfolge in einer Arbeitsblattzelle Excel 2003 ASCII-Byte-Zeichenfolge und kürzen sie vor der Übergabe an eine XLL-Funktion. Ab Excel 2007, übergibt Excel eine nicht konvertierten Unicode-Zeichenfolge eine bequeme Weise registrierte XLL-Funktion an. Dies kann zu einem anderen Ergebnis führen. Sie sollten diese Möglichkeit und die Konsequenzen für die Benutzer, nicht nur bei der Aktualisierung beachten. Beispielsweise wurden einige integrierten numerischen Funktionen zwischen Excel 2000 und Excel 2003 verbessert.
   
@@ -73,7 +73,7 @@ Analysis Toolpak (ATP) Funktionen sind Teil der Excel ab Excel 2007. Bisher konn
   
 ## <a name="see-also"></a>Siehe auch
 
-- [C-API-R�ckruf funktioniert Excel4 Excel12](c-api-callback-functions-excel4-excel12.md) 
+- [C-API-Rückruffunktionen Excel4, Excel12](c-api-callback-functions-excel4-excel12.md) 
 - [Programmieren mit der C-API in Excel](programming-with-the-c-api-in-excel.md)
-- [Was ist neu in der C-API f�r Excel 2013](what-s-new-in-the-c-api-for-excel.md)
+- [Was ist neu in der C-API für Excel](what-s-new-in-the-c-api-for-excel.md)
 

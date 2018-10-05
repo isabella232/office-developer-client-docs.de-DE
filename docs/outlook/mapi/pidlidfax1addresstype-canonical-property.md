@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 57b59e5c-fae7-48da-bb4d-90e4482a6e70
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 0ab80bde8aa6cbcdb6960e7b9becdb51a4b351a7
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4bbc30600a77a15510d04a43755a4cdba7cc2fb8
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578750"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388931"
 ---
 # <a name="pidlidfax1addresstype-canonical-property"></a>PidLidFax1AddressType (kanonische Eigenschaft)
 
@@ -35,7 +35,7 @@ Gibt den Adresstyp für Fax Geschäftsadresse für einen Kontakt.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft muss auf "FAX" Falls vorhanden, festgelegt werden.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft muss auf "FAX" Falls vorhanden, festgelegt werden.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 119c00cf-b7df-4354-aef8-575429e5ab3c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 4dc5d1aee7a0e712853c9686c59dea724904b6f8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4d8a13653c2fcc4d165b37685eff850ec6d60295
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578388"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383723"
 ---
 # <a name="pidlidfax2emailaddress-canonical-property"></a>PidLidFax2EmailAddress (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die e-Mail-Adresse die Adresse des Kontakts Fax privat.
   
@@ -35,7 +35,7 @@ Gibt die e-Mail-Adresse die Adresse des Kontakts Fax privat.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kontakt  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft, falls vorhanden, sollte enthalten einen Benutzer lesbaren Anzeigenamen, gefolgt von der "@" Zeichen, gefolgt von einer Faxnummer.
   
@@ -43,11 +43,11 @@ Diese Eigenschaft, falls vorhanden, sollte enthalten einen Benutzer lesbaren Anz
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCNTC]](http://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
+[[MS-OXOCNTC]](https://msdn.microsoft.com/library/9b636532-9150-4836-9635-9c9b756c9ccf%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Kontakte und persönliche Verteilerlisten zulässig sind.
     

@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: c65cdda7-9515-4da9-be75-43ebf45a02df
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 77fee834108a603c1cd10e8e47776cc34fd75a2b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c6fa0d8f1323e8562a78080f50dbf448b8019ec2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22584167"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383625"
 ---
 # <a name="pidtagconversationindex-canonical-property"></a>PidTagConversationIndex (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen binären Wert, der die relative Position dieser Nachricht innerhalb einer Unterhaltungsthreads angibt. 
   
@@ -34,7 +34,7 @@ Enthält einen binären Wert, der die relative Position dieser Nachricht innerha
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Eine Unterhaltungsthreads stellt eine Reihe von Nachrichten und Antworten. Diese Eigenschaft wird normalerweise mithilfe von verketteten Zeitstempelwerten implementiert. Die Verwendung ist optional, selbst wenn **PR_CONVERSATION_TOPIC** ([Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md)) festgelegt ist. 
   
@@ -48,11 +48,11 @@ Alle Nachrichten, die den gleichen Wert für **PR_CONVERSATION_TOPIC** aufweisen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.
     

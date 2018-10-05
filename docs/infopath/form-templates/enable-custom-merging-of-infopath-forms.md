@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: f08f9212-af10-1287-477d-adde7674f523
 description: Das Feature Formulare zusammenführen von Microsoft InfoPath-Editor ist darauf ausgelegt, um die Daten aus mehreren Formularen in ein einziges Formular zu kombinieren.
-ms.openlocfilehash: e0e6bfc074829f262d7eef3cf7bf6a86c3b2253b
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 598c44bfe63a31237bf82ceb2212b001fbe7cc1f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790728"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386915"
 ---
 # <a name="enable-custom-merging-of-infopath-forms"></a>Aktivieren der benutzerdefinierten Zusammenführung von InfoPath-Formularen
 
@@ -19,19 +19,19 @@ Das Feature **Formulare zusammenführen** von Microsoft InfoPath-Editor ist dara
   
 Die Aggregation der Daten, die sich aus dem Zusammenführen von Formularen ergibt, kann alle Daten in den Quell- und Zielformularen oder nur einen Teil der Originaldaten einschließen. Nachstehend werden die Standardvorgänge beschrieben.
   
-- Für sich wiederholende Elemente werden Daten an einer passenden Stelle im Zieldokument eingefügt. Dies geschieht, wenn das **MaxOccurs** -Attribut des Zielelements größer als 1 ist. 
+- Bei wiederholten Elementen werden die Daten an einer entsprechenden Position im Zieldokument eingefügt. Dies geschieht, wenn das **MaxOccurs**-Attribut des Zielelements größer als 1 ist. 
     
-- Bei nicht wiederholten Elementen (d. h., für Elemente, bei denen **MaxOccurs** "1"), werden die Attribute der Quellelemente den vorhandenen Attributen des Zielelements hinzugefügt. 
+- Bei nicht wiederholten Elementen (das heißt bei Elementen, bei denen **MaxOccurs** gleich "1" ist), werden die Attribute der Quellelemente den vorhandenen Attributen des Zielelements hinzugefügt. 
     
 ## <a name="creating-a-custom-transform"></a>Erstellen einer benutzerdefinierten Transformation
 
-Der Standardvorgang beim Zusammenführen von Formularen eignet sich gut für Formulare, die auf das gleiche XML-Schema basieren. In einigen Fällen jedoch sollten Sie Formulare, die auf verschiedenen Schemas basieren zusammengeführt oder durch Überschreiben der standardmäßigen Zusammenführungsvorgang für Formulare, die auf das gleiche Schema basieren. Für diese Szenarien können Sie eine XSL-Transformation (XSLT), erstellen, die Aggregation von Anweisungen für den Zusammenführungsvorgang enthält. Die Transformation Merge Zeitpunkt zum Erstellen eines DOM-Dokuments mit den Informationen, die zusammen mit Anmerkungen angeben, wie diese Informationen in das Zieldokument integrieren importiert werden. Diese Anmerkungen sind XML-Attribute im Namespace `http://schemas.microsoft.com/office/InfoPath/2003/aggregation`.
+Der Standardvorgang beim Zusammenführen von Formularen eignet sich gut für Formulare, die auf das gleiche XML-Schema basieren. In einigen Fällen jedoch sollten Sie Formulare, die auf verschiedenen Schemas basieren zusammengeführt oder durch Überschreiben der standardmäßigen Zusammenführungsvorgang für Formulare, die auf das gleiche Schema basieren. Für diese Szenarien können Sie eine XSL-Transformation (XSLT), erstellen, die Aggregation von Anweisungen für den Zusammenführungsvorgang enthält. Die Transformation Merge Zeitpunkt zum Erstellen eines DOM-Dokuments mit den Informationen, die zusammen mit Anmerkungen angeben, wie diese Informationen in das Zieldokument integrieren importiert werden. Diese Anmerkungen sind XML-Attribute im Namespace `https://schemas.microsoft.com/office/InfoPath/2003/aggregation`.
   
 Die XML-Attribute und die entsprechenden Werte dienen als Aggregationsanweisungen für die Zusammenführung der einzelnen Knoten mit dem XML-Zieldokument. Diese Attribute werden in den folgenden Abschnitten beschrieben.
   
 ### <a name="select"></a>select
 
-Das **agg: Select** -Attribut enthält einen absoluten XPath-Ausdruck, der das Zielelement identifiziert wird. 
+Das **agg:select**-Attribut enthält einen absoluten XPath-Ausdruck, durch den das Zielelement identifiziert wird. 
   
 ### <a name="insert"></a>insert
 
@@ -54,7 +54,7 @@ Der Wert "ersetzen" für das **agg: Action** -Attribut weist InfoPath aller Ziel
 
 ### <a name="mergeattributes"></a>mergeAttributes
 
-Wenn der Wert des **agg: Action** -Attributs "MergeAttributes" ist, werden die Attribute des Quellelements mit den Attributen aller Zielelemente, auf die durch das Attribut **auswählen** zusammengeführt. 
+Wenn der Wert des agg:action-Attributs mergeAttributes entspricht, werden die Attribute des Quellelements mit den Attributen aller Zielelemente, auf die mit dem select-Attribut verwiesen wird, zusammengeführt. 
   
 ```XML
 <my:PMAwS agg:action="mergeAttributes"
@@ -63,18 +63,20 @@ Wenn der Wert des **agg: Action** -Attributs "MergeAttributes" ist, werden die A
 
 ### <a name="delete"></a>Löschen
 
-Wenn der Wert des **agg: Action** -Attributs ist "löschen", aller Zielelemente, auf die durch das Attribut **auswählen** werden gelöscht aus dem Zieldokument. 
+Wenn der Wert des agg:action-Attributs delete entspricht, werden alle Zielelemente, auf die mit dem select-Attribut verwiesen wird, aus dem Zieldokument gelöscht.  
   
 ```XML
 <my:field1 agg:select="/my:myFields/my:field1"
  agg:action="delete"/>
 ```
 
-In Verbindung mit den Attributen angegeben, der `http://schemas.microsoft.com/office/InfoPath/2003/aggregation` -Namespace, verwenden Sie die `http://schemas.microsoft.com/office/infopath/2003/aggregation-target` Namespace zu versehen sind, wird ein XSL-Objekt, das die **IXMLDOMDocument**-Schnittstelle implementiert. Eine der nützlichsten Elemente dieser Schnittstelle ist die Methode **Get-DocumentElement**.
+In Verbindung mit den Attributen angegeben, der `https://schemas.microsoft.com/office/InfoPath/2003/aggregation` -Namespace, verwenden Sie die `https://schemas.microsoft.com/office/infopath/2003/aggregation-target` Namespace zu versehen sind, wird ein XSL-Objekt, das die **IXMLDOMDocument**-Schnittstelle implementiert. Eine der nützlichsten Elemente dieser Schnittstelle ist die Methode **Get-DocumentElement**.
   
 ### <a name="get-documentelement"></a>get-documentElement
 
-Die **Ziel: Get-DocumentElement** Funktion ermöglicht den Zugriff auf das Dokumentobjektmodell des Zieldokuments. Sie können zum Ändern der Funktionsweise der Zusammenführungsvorgang basierend auf den aktuellen Inhalt des Zieldokuments verwendet werden. 
+Die **target:get-documentElement**-Funktion ermöglicht den Zugriff auf das DOM (Document Object Model) des Zieldokuments. Damit kann die Funktionsweise des Zusammenführungsvorgangs basierend auf dem aktuellen Inhalt des Zieldokuments geändert werden.   
+ 
+ 
   
 ```XML
 <xsl:when test="function-available('target:get-documentElement')">
@@ -98,14 +100,14 @@ Die **Ziel: Get-DocumentElement** Funktion ermöglicht den Zugriff auf das Dokum
     
     Visual Studio ist ein praktisches Tool zum Erstellen von XSL-Transformationen. Visual Studio bietet Syntax Codefarben und ein Dokument Gliederung an. Es bietet auch automatisch schließenden Tags für XSL-Elemente, die Abnahme redundante Eingaben und schwer zu suchenden Rechtschreibfehler helfen können. Sie können auch die XSL-Transformationen mit einem Text-Editor wie Editor erstellen.
     
-    Beginnen Sie mit der Identitätstransformation, bei dem es sich einfach eine XSL-Transformation handelt, die die gleiche XML-Datei ausgibt, die eingegeben wird:
+    Beginnen Sie mit der Identitätstransformation, bei der es sich einfach um eine XSL-Transformation handelt, mit der die eingegebene XML-Datei ausgegeben wird:
     
     ```XML
         <?xml version="1.0"?> 
-        <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-        xmlns:agg="http://schemas.microsoft.com/office/infopath/2003/aggregation" 
-        xmlns:target="http://schemas.microsoft.com/office/infopath/2003/aggregation-target" 
-        xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2003-05-29T20:30:47"> 
+        <xsl:stylesheet version="1.0" xmlns:xsl="https://www.w3.org/1999/XSL/Transform" 
+        xmlns:agg="https://schemas.microsoft.com/office/infopath/2003/aggregation" 
+        xmlns:target="https://schemas.microsoft.com/office/infopath/2003/aggregation-target" 
+        xmlns:my="https://schemas.microsoft.com/office/infopath/2003/myXSD/2003-05-29T20:30:47"> 
             <xsl:template match="/"> 
                 <xsl:copy> 
                 <xsl:apply-templates select="@* | node()" /> 

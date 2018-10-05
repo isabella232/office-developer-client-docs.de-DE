@@ -6,18 +6,18 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b0e4a3b3-d1df-454d-b74c-b980b0b456f6
 description: In diesem Artikel wird beschrieben, wie zum Erstellen eines einfachen Workflows mithilfe von SharePoint Designer 2013.
-ms.openlocfilehash: d548cbc47585add2648396f4736e6ad36a00bcb5
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: bbefc5d30ccb508a24c32fe41e733e6e8187ecd9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796193"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388301"
 ---
 # <a name="create-a-project-server-workflow-for-demand-management"></a>Erstellen eines Project Server-Workflows für das bedarfsmanagement
 
-In diesem Artikel wird beschrieben, wie zum Erstellen eines einfachen Workflows mithilfe von SharePoint Designer 2013. Exportieren von Workflows in Visio 2013 für Visualisierung und zum Bearbeiten, oder Verwenden von Visio 2013 Design Project Server 2013-Workflows, und den Entwurf für die Veröffentlichung zu Project Web App in SharePoint Designer 2013 importieren. Weitere Informationen zu der SharePoint-Workflow-Plattform und Erstellen von Workflows mit Visio 2013 und SharePoint Designer 2013 finden Sie unter [Workflows in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx) Artikel in der SharePoint 2013-Entwicklerdokumentation. 
+In diesem Artikel wird beschrieben, wie zum Erstellen eines einfachen Workflows mithilfe von SharePoint Designer 2013. Exportieren von Workflows in Visio 2013 für Visualisierung und zum Bearbeiten, oder Verwenden von Visio 2013 Design Project Server 2013-Workflows, und den Entwurf für die Veröffentlichung zu Project Web App in SharePoint Designer 2013 importieren. Weitere Informationen zu der SharePoint-Workflow-Plattform und Erstellen von Workflows mit Visio 2013 und SharePoint Designer 2013 finden Sie unter [Workflows in SharePoint 2013](https://msdn.microsoft.com/library/jj163986%28office.15%29.aspx) Artikel in der SharePoint 2013-Entwicklerdokumentation. 
   
-Informationen zur Vorbereitung von Project Server für Workflows finden Sie unter [starten: Legen Sie einrichten und Konfigurieren von SharePoint 2013-Workflow-Manager](http://msdn.microsoft.com/en-us/library/jj163276%28office.15%29.aspx).
+Informationen zur Vorbereitung von Project Server für Workflows finden Sie unter [starten: Legen Sie einrichten und Konfigurieren von SharePoint 2013-Workflow-Manager](https://msdn.microsoft.com/library/jj163276%28office.15%29.aspx).
 
 <a name="pj15_CreateWorkflowSPD_General"> </a>
 
@@ -67,7 +67,7 @@ Ausführliche Schritte finden Sie im Abschnitt [Erstellen eines verzweigungswork
 
 ## <a name="creating-a-branching-workflow"></a>Erstellen eines Verzweigungsworkflows
 
-Bevor Sie SharePoint Designer 2013 zum Erstellen eines Project Server-Workflows verwenden können, muss der Workflow-Manager-Client 1.0-Dienst für die Project Server 2013-Workflow-Aktivitäten verwenden konfiguriert werden. Informationen zur Konfiguration von Workflow-Manager-Client 1.0 finden Sie unter [Workflows in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx) Artikel in der Entwicklerdokumentation für SharePoint Server 2013. 
+Bevor Sie SharePoint Designer 2013 zum Erstellen eines Project Server-Workflows verwenden können, muss der Workflow-Manager-Client 1.0-Dienst für die Project Server 2013-Workflow-Aktivitäten verwenden konfiguriert werden. Informationen zur Konfiguration von Workflow-Manager-Client 1.0 finden Sie unter [Workflows in SharePoint 2013](https://msdn.microsoft.com/library/jj163986%28office.15%29.aspx) Artikel in der Entwicklerdokumentation für SharePoint Server 2013. 
   
 Das folgende detaillierte Verfahren umfasst die gleichen Schritte wie im Abschnitt [Erstellen eines allgemeinen Workflows](#pj15_CreateWorkflowSPD_General) . 
   
@@ -77,7 +77,7 @@ Das folgende detaillierte Verfahren umfasst die gleichen Schritte wie im Abschni
 
 Project Server-Workflows mit mehreren integrieren kann Stufen und Phasen in einem projektbedarfsmanagement Prozess. Da Workflows komplex sein können, müssen Sie verstehen die geschäftlichen Anforderungen und Planen Sie einen Workflow sorgfältig. Entwerfen Sie für ein einfaches Beispiel einen verzweigungsworkflow, der die geschätzte Kosten für einen Projektvorschlag verwendet, um zu bestimmen, ob das Angebot akzeptiert wird. Wenn die geschätzte Kosten größer ist als 25.000 USD, Ablehnen des Vorschlags; Sie andernfalls annehmen Sie den Vorschlag, und erstellen Sie ein Projekt.
     
-Da Sie können Visio 2013 und SharePoint Designer 2013 zum Entwerfen und Erstellen von Workflows für Project Server 2013, können Sie leichter mit Workflows experimentieren, als mit Project Server 2010 möglich ist. Der Workflow Beispielentwurf in diesem Artikel wird genauso wie in den Artikel [Erstellen eines verzweigungsworkflows Workflows](http://msdn.microsoft.com/library/a02cafdc-d881-4271-b446-d8b2cd456a52%28Office.15%29.aspx) in Project 2010-SDK. Beim Entwerfen und erstellen Sie einen Workflow Test auf einem Remotecomputer mit einer Testinstanz von Project Web App können – Sie müssen nicht direkt auf einem Computer Project Server 2013 Workflows erstellen. 
+Da Sie können Visio 2013 und SharePoint Designer 2013 zum Entwerfen und Erstellen von Workflows für Project Server 2013, können Sie leichter mit Workflows experimentieren, als mit Project Server 2010 möglich ist. Der Workflow Beispielentwurf in diesem Artikel wird genauso wie in den Artikel [Erstellen eines verzweigungsworkflows Workflows](https://msdn.microsoft.com/library/a02cafdc-d881-4271-b446-d8b2cd456a52%28Office.15%29.aspx) in Project 2010-SDK. Beim Entwerfen und erstellen Sie einen Workflow Test auf einem Remotecomputer mit einer Testinstanz von Project Web App können – Sie müssen nicht direkt auf einem Computer Project Server 2013 Workflows erstellen. 
     
 #### <a name="2-create-the-entities-that-your-workflow-requires"></a>2. Erstellen der Entitäten, die den Workflow erforderlich.
 
@@ -138,7 +138,7 @@ Da Sie können Visio 2013 und SharePoint Designer 2013 zum Entwerfen und Erstell
 
 Erstellen Sie den Workflow in SharePoint Designer 2013 mithilfe deklarative Anweisungen im textbasierten Designer. Starten Sie Sie an die orangefarbene Einfügelinie abzurufenden kontextbezogene AutoVervollständigen-Anweisungen für die Workflowlogik und Schritte eingeben, oder Sie können die Logik und die Schritte in der Gruppe **Einfügen** auf der Registerkarte **WORKFLOW** des Menübands mithilfe von Inhaltssteuerelementen einfügen. 
     
-1. Wählen Sie in der Backstage-Ansicht von SharePoint Designer 2013 **Website öffnen**. Öffnen Sie beispielsweise `http://ServerName/pwa`. Wählen Sie im **Navigationsbereich** **Workflows**aus. Wählen Sie dann auf der Registerkarte **WORKFLOWS** des Menübands in der Gruppe **neu** **Website-Workflow**. In diesem Beispiel nennen Sie den Workflow Verzweigung Workflow. Stellen Sie sicher, dass **SharePoint 2013-Workflow - Project Server** in der Dropdownliste **Plattformtyp** aktiviert ist (siehe Abbildung 5). 
+1. Wählen Sie in der Backstage-Ansicht von SharePoint Designer 2013 **Website öffnen**. Öffnen Sie beispielsweise `https://ServerName/pwa`. Wählen Sie im **Navigationsbereich** **Workflows**aus. Wählen Sie dann auf der Registerkarte **WORKFLOWS** des Menübands in der Gruppe **neu** **Website-Workflow**. In diesem Beispiel nennen Sie den Workflow Verzweigung Workflow. Stellen Sie sicher, dass **SharePoint 2013-Workflow - Project Server** in der Dropdownliste **Plattformtyp** aktiviert ist (siehe Abbildung 5). 
     
     **Abbildung 5. Erstellen eines Project Server-Websiteworkflows**
 
@@ -275,7 +275,7 @@ Das Projekt **Verzweigungsworkflow** ist ein einfaches Beispiel mit nur einem Ve
 
 Um den Workflow zu ändern, können Sie erstellen oder Ändern von Workflow gesteuerte, benutzerdefinierte Felder und erstellen oder ändern Workflowphasen und-Stufen. SharePoint Designer 2013 können Sie das Hinzufügen von Bedingungen, Aktionen, Schleifen und Phasen, und klicken Sie dann speichern und erneutes Veröffentlichen des Workflows. Um wiederverwenden, oder behalten Sie eine Sicherung eines Workflows, können Sie es in Visio 2013-Datei exportieren. 
   
-Sie können auch erstellen oder bearbeiten den Workflow in Visio 2013 und die Datei für die Verwendung von Project Web App in SharePoint Designer 2013 importieren. Um eine unveränderte Workflow zu verwenden, muss die Project Web App-Instanz Phase Workfloweigenschaften enthalten, die die gleichen, die in der ursprünglichen Project Web App-Instanz sind. Weitere Informationen zur Verwendung von Visio zum von Workflows erstellen können finden Sie unter [Entwickeln von Workflows in SharePoint Designer 2013 und Visio 2013](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx).
+Sie können auch erstellen oder bearbeiten den Workflow in Visio 2013 und die Datei für die Verwendung von Project Web App in SharePoint Designer 2013 importieren. Um eine unveränderte Workflow zu verwenden, muss die Project Web App-Instanz Phase Workfloweigenschaften enthalten, die die gleichen, die in der ursprünglichen Project Web App-Instanz sind. Weitere Informationen zur Verwendung von Visio zum von Workflows erstellen können finden Sie unter [Entwickeln von Workflows in SharePoint Designer 2013 und Visio 2013](https://msdn.microsoft.com/library/jj163272%28office.15%29.aspx).
   
 > [!NOTE]
 > Beim Importieren einer Visio 2013-Datei in eine andere Instanz von Project Web App haben die Phasen verschiedenen Phasen GUIDs, auch wenn die Phase Namen identisch sind. Nachdem Sie den Workflow importiert haben, müssen Sie die Eigenschaften Stufe und Aktion um Werte verwenden, die speziell für die Project Web App-Instanz konfigurieren. 
@@ -318,7 +318,7 @@ Sie können auch erstellen oder bearbeiten den Workflow in Visio 2013 und die Da
   
    8. Wählen Sie auf der Registerkarte **Vorgang** im Menüband in der Gruppe **Diagrammüberprüfungdiagramm** **Überprüfen**aus. Beheben Sie alle Fehler, und speichern Sie die Zeichnung. Nennen Sie beispielsweise die Datei Testen des Workflows aus Visio.vsdx.
     
-      Informationen zum Beheben von workflowfehlern finden Sie unter [Problembehandlung bei SharePoint Server 2013-workflowvalidierungsfehlern in Visio 2013](http://msdn.microsoft.com/en-us/library/jj163971%28v=office.15%29.aspx).
+      Informationen zum Beheben von workflowfehlern finden Sie unter [Problembehandlung bei SharePoint Server 2013-workflowvalidierungsfehlern in Visio 2013](https://msdn.microsoft.com/library/jj163971%28v=office.15%29.aspx).
     
 2. Öffnen Sie SharePoint Designer 2013, und öffnen Sie die gleiche Project Web App-Website, die Sie für das **Verzweigungsworkflow** -Beispiel verwendet. 
     
@@ -359,10 +359,10 @@ Visio 2013 und SharePoint Designer bieten zusammen komfortable Möglichkeiten f�
 ## <a name="see-also"></a>Siehe auch
 
 - [Project Server 2013-Architektur](project-server-2013-architecture.md)
-- [Start: Einrichten und Konfigurieren von SharePoint 2013-Workflow-Manager](http://msdn.microsoft.com/en-us/library/jj163276%28office.15%29.aspx)
-- [Grundlegendes zu packen und POST von Workflows in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj819316%28office.15%29.aspx)
-- [Workflows in SharePoint 2013](http://msdn.microsoft.com/en-us/library/jj163986%28office.15%29.aspx)
-- [Workflowentwicklung in SharePoint Designer 2013 und Visio 2013](http://msdn.microsoft.com/en-us/library/jj163272%28office.15%29.aspx)
-- [Problembehandlung bei SharePoint Server 2013-workflowvalidierungsfehlern in Visio 2013](http://msdn.microsoft.com/en-us/library/jj163971%28v=office.15%29.aspx)
-- [Workflow- und Projektbedarfsmanagement](http://msdn.microsoft.com/library/cf7433a3-a531-4467-ac0c-df0c5d6881ae%28Office.15%29.aspx)
+- [Start: Einrichten und Konfigurieren von SharePoint 2013-Workflow-Manager](https://msdn.microsoft.com/library/jj163276%28office.15%29.aspx)
+- [Grundlegendes zu packen und POST von Workflows in SharePoint 2013](https://msdn.microsoft.com/library/jj819316%28office.15%29.aspx)
+- [Workflows in SharePoint 2013](https://msdn.microsoft.com/library/jj163986%28office.15%29.aspx)
+- [Workflowentwicklung in SharePoint Designer 2013 und Visio 2013](https://msdn.microsoft.com/library/jj163272%28office.15%29.aspx)
+- [Problembehandlung bei SharePoint Server 2013-workflowvalidierungsfehlern in Visio 2013](https://msdn.microsoft.com/library/jj163971%28v=office.15%29.aspx)
+- [Workflow- und Projektbedarfsmanagement](https://msdn.microsoft.com/library/cf7433a3-a531-4467-ac0c-df0c5d6881ae%28Office.15%29.aspx)
 

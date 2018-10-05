@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d26c59d7-c839-426f-8693-727fc6bef67e
 description: 'Zuletzt geändert: 18 Juni 2012'
-ms.openlocfilehash: 36e22c60b32242425335b122b66c2c77e376848b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 03b0eb794b07bc56ec6dce4a567d89294b2c908a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22580117"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386348"
 ---
 # <a name="mnlslstrcmpw"></a>MNLS_lstrcmpW
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Vergleicht zwei Unicode-Zeichenfolgen.
   
@@ -39,11 +39,11 @@ int MNLS_lstrcmpW(
   
 > [in] Zeiger auf die zweite zu vergleichende Unicode-Zeichenfolge.
     
-## <a name="return-value"></a>R�ckgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Gibt die Werte für einen entsprechenden Aufruf **MNLS_CompareStringW** außer CSTR_EQUAL beschrieben. 
   
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
  _MNLS_lstrcmpW_ führt einen Vergleich durch Aufrufen von [MNLS_CompareStringW](mnls_comparestringw.md) mit der GetUserDefaultLCID, 0 für Flags, die ein Gebietsschema und-1 für cch1 und cch2. 
   
@@ -51,5 +51,5 @@ Gibt die Werte für einen entsprechenden Aufruf **MNLS_CompareStringW** außer C
 
 
 
-[GetUserDefaultLCID](http://msdn.microsoft.com/en-us/library/dd318135%28VS.85%29.aspx)
+[GetUserDefaultLCID](https://msdn.microsoft.com/library/dd318135%28VS.85%29.aspx)
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d619b5e7-2867-44fc-9b42-123bb1bf7bde
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 252a5f9cbb923728b78a232666a275ebbd2576c4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 074bcf7c051b78bc32caf66502747e7fb1ab6b79
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568707"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389890"
 ---
 # <a name="pidtagrecipienttrackstatus-canonical-property"></a>PidTagRecipientTrackStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Status der Antwort vom Teilnehmer zurückgegeben.
   
@@ -34,7 +34,7 @@ Gibt den Status der Antwort vom Teilnehmer zurückgegeben.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Transport-Empfänger  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn dieser Wert nicht festgelegt ist, muss angenommen werden RespNone werden. Anderenfalls müssen sie eine der folgenden sein:
   
@@ -49,15 +49,15 @@ Wenn dieser Wert nicht festgelegt ist, muss angenommen werden RespNone werden. A
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

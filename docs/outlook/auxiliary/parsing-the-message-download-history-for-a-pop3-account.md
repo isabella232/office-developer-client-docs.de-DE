@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 394e1430-04d6-4d61-be13-eb695309fa73
 description: In diesem Thema wird die Struktur des POP3-BLOBs, die den Nachricht Downloadverlauf von POP3-Konto zur Kennzeichnung der Nachrichten, die auf dieses Konto gelöscht oder heruntergeladen wurden darstellt.
-ms.openlocfilehash: ffed3178e4e8b45f17fc335575a7febd77d40902
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 44a799f6b6fbe2a2841522c18405149a470b0236
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19791172"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389008"
 ---
 # <a name="parsing-the-message-download-history-for-a-pop3-account"></a>Analysieren des Nachrichtendownloadverlaufs für ein POP3-Konto
 
@@ -26,7 +26,7 @@ Der Anbieter Post Office Protocol (POP) für Outlook ermöglicht Benutzern abger
   
 Um die Nachrichten Downloadverlauf für ein Posteingang zu erhalten:
   
-- Führen Sie die Schritte in [die Nachricht suchen Downloadverlauf für ein POP3-Konto](locating-the-message-download-history-for-a-pop3-account.md) , die Eigenschaft [PidTagAttachDataBinary](http://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) zu erhalten, die ein binary large Object (BLOB) enthält, die für ein POP3-Konto des Nachrichtenverlaufs darstellt. 
+- Führen Sie die Schritte in [die Nachricht suchen Downloadverlauf für ein POP3-Konto](locating-the-message-download-history-for-a-pop3-account.md) , die Eigenschaft [PidTagAttachDataBinary](https://msdn.microsoft.com/library/3b0a8b28-863e-4b96-a4c0-fdb8f40555b9%28Office.15%29.aspx) zu erhalten, die ein binary large Object (BLOB) enthält, die für ein POP3-Konto des Nachrichtenverlaufs darstellt. 
     
 - Lesen Sie dieses Thema, das beschreibt der Struktur des BLOB, und zeigt ein Beispiel für BLOB zur Identifikation von Nachrichten, die heruntergeladen oder für den Posteingang von POP3-Konto gelöscht wurden.
 
@@ -91,6 +91,6 @@ Sie können auf ähnliche Weise die verbleibenden 22 Ressource Tags für dieses 
 
 - [Verwalten des Nachrichtendownloads für POP3-Konten](managing-message-downloads-for-pop3-accounts.md)    
 - [Suchen den Nachrichten-Downloadverlauf für ein POP3-Konto](locating-the-message-download-history-for-a-pop3-account.md)    
-- [Analysieren des POP3 UIDL-Verlaufs](http://blogs.msdn.com/b/stephen_griffin/archive/2012/12/04/parsing-the-pop3-uidl-history.aspx)
+- [Analysieren des POP3 UIDL-Verlaufs](https://blogs.msdn.com/b/stephen_griffin/archive/2012/12/04/parsing-the-pop3-uidl-history.aspx)
     
 

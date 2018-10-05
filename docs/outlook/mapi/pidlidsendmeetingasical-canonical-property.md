@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d643bf62-62e5-41c7-ab88-5c4c358e5460
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 50807f65cf280764289b8a29aebdb1e8e8ed8aa6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2189275855b54d9e3cba40d27ee0684cf95e2241
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582623"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388315"
 ---
 # <a name="pidlidsendmeetingasical-canonical-property"></a>PidLidSendMeetingAsIcal (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, ob eine Besprechungsanfrage als iCal-Nachricht gesendet werden soll.
   
@@ -39,11 +39,11 @@ Gibt an, ob eine Besprechungsanfrage als iCal-Nachricht gesendet werden soll.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen an.
     
-[[MS-OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und meeting-Objekte.
     

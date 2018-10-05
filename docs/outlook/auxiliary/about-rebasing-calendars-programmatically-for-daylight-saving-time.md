@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 38b342d9-ab10-04b6-5490-9a45f847a60f
 description: 'In diesem Thema wird in diesem Zeitraum zwischen dem: Spirale und werden, die als die sommerzeitperiode bezeichnet.'
-ms.openlocfilehash: 4787b2143b3f5d1f0400524f0da82e19e2cbed8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8d9a0ffda89ee9d8847cde59181747588a50e947
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790918"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389022"
 ---
 # <a name="about-rebasing-calendars-programmatically-for-daylight-saving-time"></a>Informationen zum Ausführen eines programmgesteuerten Kalender-Rebase für Sommerzeit
 
@@ -38,13 +38,13 @@ In der folgenden Liste werden die APIs Neuzuordnen:
     
 - [IOlkApptRebaser::EndRebaseAppointments](iolkapptrebaser-endrebaseappointments.md)
     
-- [PidLidAppointmentTimeZoneDefinitionEndDisplay](http://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)
+- [PidLidAppointmentTimeZoneDefinitionEndDisplay](https://msdn.microsoft.com/library/7b6193cb-612b-408e-b9bc-285df313e2cc%28Office.15%29.aspx)
     
-- [PidLidAppointmentTimeZoneDefinitionRecur](http://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)
+- [PidLidAppointmentTimeZoneDefinitionRecur](https://msdn.microsoft.com/library/52fd57a0-9e34-4452-9ecd-2acb454446c9%28Office.15%29.aspx)
     
-- [PidLidAppointmentTimeZoneDefinitionStartDisplay](http://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)
+- [PidLidAppointmentTimeZoneDefinitionStartDisplay](https://msdn.microsoft.com/library/08239670-3211-420c-99d7-0056ed967cb8%28Office.15%29.aspx)
     
-- [PidLidTimeZoneStruct](http://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)
+- [PidLidTimeZoneStruct](https://msdn.microsoft.com/library/2acf0036-2f3e-4f90-8614-7aa667860f74%28Office.15%29.aspx)
     
 - [RebaseTaskComplete](rebasetaskcomplete.md)
     
@@ -62,15 +62,15 @@ Um einen Termin zurücksetzungstool mithilfe des Kalenders Neuzuordnen von APIs 
     
 2. Verwenden Sie **HrCreateApptRebaser**, **IOlkApptRebaser::BeginRebaseAppointments**und **IOlkApptRebaser::EndRebaseAppointments** auf Basis des Termins. 
     
-Die Assembly Tzmovelib.dll Herunterladen der OutlookTimeZoneMoveLibRedist.exe redistributable Installer und Headerdatei Tzmovelib.h am [Outlook 2010: Hilfs-Referenz Redistributable Installer und Headerdatei zum Neuzuordnen von Kalendern](http://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b) . Dieser Download kann für Outlook 2010 und höheren Versionen von Outlook. OutlookTimeZoneMoveLibRedist.exe installiert die Assemblydatei Tzmovelib.dll in c:\Programme\Microsoft Files\MsExTmz. Beachten Sie diesen Neuzuordnen von Anwendungen von Drittanbietern Kalender kann nur das Installationsprogramm OutlookTimeZoneMoveLibRedist.exe, verteilen und muss nicht die Assembly, Tzmovelib.dll oder andere extrahierten Komponenten separat vom Installer verteilen.
+Die Assembly Tzmovelib.dll Herunterladen der OutlookTimeZoneMoveLibRedist.exe redistributable Installer und Headerdatei Tzmovelib.h am [Outlook 2010: Hilfs-Referenz Redistributable Installer und Headerdatei zum Neuzuordnen von Kalendern](https://www.microsoft.com/downloads/details.aspx?FamilyID=77748863-4352-4b99-ae57-1d4ae803983b) . Dieser Download kann für Outlook 2010 und höheren Versionen von Outlook. OutlookTimeZoneMoveLibRedist.exe installiert die Assemblydatei Tzmovelib.dll in c:\Programme\Microsoft Files\MsExTmz. Beachten Sie diesen Neuzuordnen von Anwendungen von Drittanbietern Kalender kann nur das Installationsprogramm OutlookTimeZoneMoveLibRedist.exe, verteilen und muss nicht die Assembly, Tzmovelib.dll oder andere extrahierten Komponenten separat vom Installer verteilen.
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Zum Speichern von TZDEFINITION in einen Stream zu einer binären Eigenschaft anvertrauen](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
+- [Informationen zum Beibehalten von TZDEFINITION in einem Stream, um eine binäre Eigenschaft zu übernehmen](about-persisting-tzdefinition-to-a-stream-to-commit-to-a-binary-property.md)
 - [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZDEFINITION-Struktur](how-to-parse-stream-from-binary-property-to-read-tzdefinition-structure.md)
 - [Analysieren eines Streams aus einer binären Eigenschaft zum Lesen der TZREG-Struktur](how-to-parse-a-stream-from-a-binary-property-to-read-the-tzreg-structure.md)
 - [Lesen von Zeitzoneneigenschaften aus einem Termin](how-to-read-time-zone-properties-from-an-appointment.md)
-- [Sommerzeit Hilfe- und Supportcenter](http://support.microsoft.com/gp/cp_dst)
-- [Gewusst wie: Sommerzeit mithilfe des Exchange Calendar Update-Tools](http://support.microsoft.com/kb/941018)
-- [Wie Adresse, Zeitzone Änderungen mithilfe der Zeit Zeitzonendaten für Microsoft Office Outlook](http://support.microsoft.com/kb/931667)
+- [Sommerzeit Hilfe- und Supportcenter](https://support.microsoft.com/gp/cp_dst)
+- [Gewusst wie: Sommerzeit mithilfe des Exchange Calendar Update-Tools](https://support.microsoft.com/kb/941018)
+- [Wie Adresse, Zeitzone Änderungen mithilfe der Zeit Zeitzonendaten für Microsoft Office Outlook](https://support.microsoft.com/kb/931667)
 

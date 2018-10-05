@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 7561112b-ca72-4c49-a8a0-cc1879a4e151
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8082b0b6d47a16a79f5e426375e20b17d22298d4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 5b660b592e77279a4d60f3a036724341352c9b6a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22586620"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390919"
 ---
 # <a name="pidtagmessageflags-canonical-property"></a>PidTagMessageFlags (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Bitmaske aus Flags, die angeben, den Ursprung und den aktuellen Status einer Nachricht. 
   
@@ -34,7 +34,7 @@ Enthält eine Bitmaske aus Flags, die angeben, den Ursprung und den aktuellen St
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist eine Eigenschaft eines Nontransmittable zur das Senden und Empfangen von Enden einer Übertragung mit unterschiedlichen Werten abhängig von der Client-Anwendung oder Store Anbieter beteiligten verfügbar gemacht werden. Diese Eigenschaft wird durch den Speicheranbieter Client oder einer Nachricht, wenn eine Nachricht erstellt und zum ersten Mal gespeichert und dann aktualisiert in regelmäßigen Abständen durch den Anbieter für die Nachricht anmelden, eines Transportdienstes und die MAPI-Warteschlange wie die Nachricht verarbeitet wird und den Zustand initialisiert ändert. 
   
@@ -114,11 +114,11 @@ Nachricht Anbieter festlegen MSGFLAG_UNMODIFIED Flag für eingehende Nachrichten
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

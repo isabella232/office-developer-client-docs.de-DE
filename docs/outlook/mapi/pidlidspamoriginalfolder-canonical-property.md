@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 45846fe3-7ab3-4019-98bb-fe615889c31c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 639d5e96eb56fb543d6a6026b1c9400631cee819
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 561008782e7c1ffb8bc71cf4e3bc17befe69bbca
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22593340"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387846"
 ---
 # <a name="pidlidspamoriginalfolder-canonical-property"></a>PidLidSpamOriginalFolder (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt an, welcher Ordner eine Nachricht in vorher in den junk-e-Mail-Ordner gefiltert wurde.
   
@@ -35,7 +35,7 @@ Gibt an, welcher Ordner eine Nachricht in vorher in den junk-e-Mail-Ordner gefil
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Spam  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Wert dieser Eigenschaft ist die **EntryID** des Ordners, der die Nachricht enthalten, bevor sie verschoben wurde. Diese Eigenschaft muss festgelegt werden, wenn eine Nachricht als Spam gekennzeichnet ist. 
   
@@ -43,11 +43,11 @@ Der Wert dieser Eigenschaft ist die **EntryID** des Ordners, der die Nachricht e
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCSPAM]](http://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
+[[MS-OXCSPAM]](https://msdn.microsoft.com/library/522f8587-4aed-4cd6-831b-40bd87862189%28Office.15%29.aspx)
   
 > Ermöglicht die Behandlung von zulassen/blockieren-Listen und die Bestimmung des junk-e-Mail-Nachrichten.
     

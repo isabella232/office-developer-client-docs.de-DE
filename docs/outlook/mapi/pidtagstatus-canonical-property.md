@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 8b947660-eafe-47e1-9595-bd3ab7d455bf
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: eb04983015e8557541e69981ec130ebf07598655
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: de2342ef4d3e9d06f198e06dc19c65b7b144624f
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588370"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387909"
 ---
 # <a name="pidtagstatus-canonical-property"></a>PidTagStatus (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine 32-Bit-Bitmaske aus Flags, die Ordner Status definieren.
   
@@ -34,7 +34,7 @@ Enthält eine 32-Bit-Bitmaske aus Flags, die Ordner Status definieren.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft für Ordner entspricht der **PR_MSG_STATUS** ([PidTagMessageStatus](pidtagmessagestatus-canonical-property.md))-Eigenschaft für Nachrichten. Ihre Flags werden für die Client-Anwendung bereitgestellt und wirken sich nicht auf den Nachrichtenspeicher. Clients verwenden oder ignorieren diese Einstellungen. Der Client kann auch eine eigene Werte für die Client-definierbare Bit dieser Eigenschaft definieren.
   
@@ -64,11 +64,11 @@ Bits 16 bis 31 ("0 x 10000" durch "0 x 80000000") dieser Eigenschaft stehen für
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     

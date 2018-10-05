@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: d1f3f589-dc2d-4538-a13f-278dad29bcc7
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ae09488b99cd55e5cfca23f504d81ac5919633d3
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: c85c5d7c3e80508c4d328f69ac4ad15f0f2c355a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574153"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391061"
 ---
 # <a name="pidtagfolderassociatedcontents-canonical-property"></a>PidTagFolderAssociatedContents (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine eingebettete Inhalt Table-Objekt, das Informationen über die Inhaltstabelle zugeordneten bereitstellt. 
   
@@ -34,7 +34,7 @@ Enthält eine eingebettete Inhalt Table-Objekt, das Informationen über die Inha
 |Datentyp:  <br/> |PT_OBJECT  <br/> |
 |Bereich:  <br/> |MAPI-container  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der zugehörige Inhaltstabelle stellt einen Unterordner, der nicht in der Inhaltstabelle standard angezeigt wird. Sie enthält den Ordner verknüpft oder ausgeblendet, Nachrichten. 
   
@@ -56,15 +56,15 @@ Zum Abrufen von Inhaltsverzeichnisses sollte Clientanwendungen die [IMAPIContain
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
+[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)
   
 > Verarbeitet die Reihenfolge und den Fluss für Datenübertragungen zwischen einem Client und Server.
     
-[[MS-OXCICAL]](http://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
+[[MS-OXCICAL]](https://msdn.microsoft.com/library/a685a040-5b69-4c84-b084-795113fb4012%28Office.15%29.aspx)
   
 > Konvertiert zwischen IETF RFC2445, RFC2446, RFC2447, und Termine und Besprechungsanfragen.
     

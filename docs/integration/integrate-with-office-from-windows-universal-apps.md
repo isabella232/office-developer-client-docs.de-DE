@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 60b4fa23-0075-4f6a-8bd0-9e53e99432d5
 description: Sie können Ihre Drittanbieter-Apps für die universelle Windows-App-Plattform in Excel Mobile, PowerPoint Mobile und Word Mobile integrieren. Universelle Apps lassen sich in Office-Apps über Windows-Verträge für die Dateiauswahl, Expando-Eigenschaften und Contracts für die Aktualisierung zwischengespeicherter Dateien integrieren.
-ms.openlocfilehash: 2c170fd55c9c6f10d348610ffbc75ffa86447529
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: ad04ccc3ceb6e0f1d53e4aebc12cf9724ab8ab66
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790852"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388224"
 ---
 # <a name="integrate-with-office-from-windows-universal-apps"></a>Integration in Office von universellen Windows-Apps aus
 
-Sie können Ihre Drittanbieter-Apps für die universelle Windows-App-Plattform in Excel Mobile, PowerPoint Mobile und Word Mobile integrieren. Universelle Apps lassen sich in Office-Apps über Windows-[Verträge für die Dateiauswahl](https://msdn.microsoft.com/de-DE/library/windows/apps/hh465174.aspx), [Expando-Eigenschaften](https://msdn.microsoft.com/de-DE/library/windows/apps/xaml/hh770655.aspx) und [Contracts für die Aktualisierung zwischengespeicherter Dateien](https://msdn.microsoft.com/de-DE/library/windows/apps/windows.storage.provider.cachedfileupdater.aspx) integrieren.
+Sie können Ihre Drittanbieter-Apps für die universelle Windows-App-Plattform in Excel Mobile, PowerPoint Mobile und Word Mobile integrieren. Universelle Apps lassen sich in Office-Apps über Windows-[Verträge für die Dateiauswahl](https://msdn.microsoft.com/library/windows/apps/hh465174.aspx), [Expando-Eigenschaften](https://msdn.microsoft.com/library/windows/apps/xaml/hh770655.aspx) und [Contracts für die Aktualisierung zwischengespeicherter Dateien](https://msdn.microsoft.com/library/windows/apps/windows.storage.provider.cachedfileupdater.aspx) integrieren.
   
 Wenn Sie Ihre universelle App in Excel, PowerPoint oder Word Mobile integrieren, können Benutzer von der App bereitgestellte Office-Dokumente öffnen, wenn sie innerhalb von Office suchen oder mit Windows Dateien in Ihrer App öffnen. Benutzer können die Datei auch wieder in der universellen App speichern, wodurch die Datei wieder zu Ihrem Dienst hochgeladen wird.
   
@@ -23,13 +23,13 @@ Auf diese Weise geöffnete Dateien werden in der Liste der zuletzt verwendeten D
   
 Für diese Integration muss die universelle App folgende Bedingungen erfüllen:
     
-- Sie implementiert die Windows-[Verträge für die Dateiauswahl](https://msdn.microsoft.com/de-DE/library/windows/apps/hh465174.aspx).
+- Sie implementiert die Windows-[Verträge für die Dateiauswahl](https://msdn.microsoft.com/library/windows/apps/hh465174.aspx).
     
 - Sie stellt einen Dateispeicher dar (z. B. eine App, die Zugriff auf Cloud-Speicher ermöglicht).
     
 ## <a name="expando-properties"></a>Expando-Eigenschaften
 
-Universelle Windows-Apps können über Expando-Eigenschaften weitere Informationen kommunizieren, die mit Dateien verknüpft sind. Informationen dazu, wie dies in Windows funktioniert, finden Sie unter „System.ExpandoProperties" in [StorageItemContentProperties.SavePropertiesAsync](https://msdn.microsoft.com/de-DE/library/windows/apps/xaml/hh770655.aspx).
+Universelle Windows-Apps können über Expando-Eigenschaften weitere Informationen kommunizieren, die mit Dateien verknüpft sind. Informationen dazu, wie dies in Windows funktioniert, finden Sie unter „System.ExpandoProperties" in [StorageItemContentProperties.SavePropertiesAsync](https://msdn.microsoft.com/library/windows/apps/xaml/hh770655.aspx).
   
 In der folgenden Tabelle sind die Eigenschaften beschrieben, die Ihre App Office zur Verfügung stellen muss, um Dateiöffnungsszenarien zu unterstützen. Werden diese Informationen nicht bereitgestellt, werden alle Dateien aus Ihrer App schreibgeschützt geöffnet. Ob Benutzer Dateien zum Bearbeiten öffnen können, hängt vom Typ der Office-Lizenz ab, die sie besitzen, und vom Typ des Dokuments, das sie öffnen möchten.
   
@@ -63,7 +63,7 @@ public static async Task SetExpandoProperties(StorageFile file,... other params 
 
 ## <a name="cached-file-updater-contracts"></a>Contracts für die Aktualisierung zwischengespeicherter Dateien
 
-Wenn Ihre universelle App an Contracts für die Aktualisierung zwischengespeicherter Dateien beteiligt ist, wird sie benachrichtigt, wenn eine andere universelle App (z. B. Office) Änderungen an der Datei vornimmt. Informationen dazu, wie dies in Windows funktioniert, finden Sie unter [CachedFileUpdater-Klasse](https://msdn.microsoft.com/de-DE/library/windows/apps/windows.storage.provider.cachedfileupdater.aspx).
+Wenn Ihre universelle App an Contracts für die Aktualisierung zwischengespeicherter Dateien beteiligt ist, wird sie benachrichtigt, wenn eine andere universelle App (z. B. Office) Änderungen an der Datei vornimmt. Informationen dazu, wie dies in Windows funktioniert, finden Sie unter [CachedFileUpdater-Klasse](https://msdn.microsoft.com/library/windows/apps/windows.storage.provider.cachedfileupdater.aspx).
   
 Office verwendet die Option **AllowOnlyReaders** zum Öffnen der Dateien mit Lese-/Schreibzugriff, die Ihre universelle App über die Dateiauswahlverträge bietet. Das bedeutet, dass die Datei nicht von einer anderen App, auch nicht Ihrer eigenen, verschoben, gelöscht, umbenannt oder beschrieben werden kann, während sie in Office geöffnet ist. Office speichert die Datei automatisch, legt aber "CachedFileManager.DeferUpdates" fest, um die Aktivierung der App zu verhindern, bis Office das Dokument schließt oder Office von Windows angehalten wird (wenn der Benutzer zu einer anderen App wechselt). Wenn Office die Datei schließt, kann Ihre App in die Datei schreiben. 
   
@@ -73,9 +73,9 @@ In den folgenden Tabellen sind die Parameter aufgelistet, die zum Verarbeiten vo
   
 |**Parameter**|**Beschreibung**|
 |:-----|:-----|
-|[ReadActivationMode](https://msdn.microsoft.com/de-DE/library/windows/apps/windows.storage.provider.readactivationmode.aspx) <br/> |Legen Sie **BeforeAccess** fest, damit Ihre App die Datei aktualisieren kann, bevor sie sie an Office sendet.  <br/> |
-|[WriteActivationMode](https://msdn.microsoft.com/de-DE/library/windows/apps/windows.storage.provider.writeactivationmode.aspx) <br/> |Legen Sie **ReadOnly** fest, um Schreibschutz für die Datei anzugeben. Legen Sie **AfterWrite** fest, um sicherzustellen, dass Ihre App durch den CacheFileUpdater ausgelöst wird, wenn Office die Bearbeitung der Datei abgeschlossen hat.  <br/><br/>**HINWEIS**: Wenn Sie **AfterWrite** nicht festlegen, wird Ihre App nicht benachrichtigt, die Änderungen hochzuladen. Änderungen des Benutzers erfolgen dann nur lokal.           |
-|[CachedFileOptions.RequireUpdateOnAccess](https://msdn.microsoft.com/de-DE/library/windows/apps/windows.storage.provider.cachedfileoptions.aspx) <br/> |Legen Sie diese Eigenschaft fest, um sicherzustellen, dass Ihre App die Datei aktualisieren kann, wenn ein Benutzer über die Liste der zuletzt verwendeten Dokumente darauf zugreift.  <br/> |
+|[ReadActivationMode](https://msdn.microsoft.com/library/windows/apps/windows.storage.provider.readactivationmode.aspx) <br/> |Legen Sie **BeforeAccess** fest, damit Ihre App die Datei aktualisieren kann, bevor sie sie an Office sendet.  <br/> |
+|[WriteActivationMode](https://msdn.microsoft.com/library/windows/apps/windows.storage.provider.writeactivationmode.aspx) <br/> |Legen Sie **ReadOnly** fest, um Schreibschutz für die Datei anzugeben. Legen Sie **AfterWrite** fest, um sicherzustellen, dass Ihre App durch den CacheFileUpdater ausgelöst wird, wenn Office die Bearbeitung der Datei abgeschlossen hat.  <br/><br/>**HINWEIS**: Wenn Sie **AfterWrite** nicht festlegen, wird Ihre App nicht benachrichtigt, die Änderungen hochzuladen. Änderungen des Benutzers erfolgen dann nur lokal.           |
+|[CachedFileOptions.RequireUpdateOnAccess](https://msdn.microsoft.com/library/windows/apps/windows.storage.provider.cachedfileoptions.aspx) <br/> |Legen Sie diese Eigenschaft fest, um sicherzustellen, dass Ihre App die Datei aktualisieren kann, wenn ein Benutzer über die Liste der zuletzt verwendeten Dokumente darauf zugreift.  <br/> |
    
 ## <a name="invoking-office-from-your-app"></a>Aufrufen von Office aus Ihrer App
 
@@ -83,7 +83,7 @@ Wenn ein Benutzer ein Office-Dokument von der App aus öffnet, kann das Dokument
   
 Zum Öffnen einer Datei aus Ihrer App in Office empfehlen wir die Verwendung von **LaunchFileAsync()**. Es wird nicht empfohlen, die Datei mit **LaunchUriAsync()** zu starten, da dann die für das URI-Schema registrierte Anwendung (der Browser) anstelle von Office gestartet wird. Zwar kann **LaunchUriAsync()** mit der Option **LauncherOptions.ContentType()** Office aufrufen, in diesem Fall wird aber die geöffnete Datei als temporär markiert und ist in Office schreibgeschützt. 
   
-Weitere Informationen finden Sie unter [Launcher-Klasse](https://msdn.microsoft.com/de-DE/library/windows/apps/windows.system.launcher.aspx).
+Weitere Informationen finden Sie unter [Launcher-Klasse](https://msdn.microsoft.com/library/windows/apps/windows.system.launcher.aspx).
   
 ## <a name="temporary-and-read-only-files"></a>Temporäre und schreibgeschützte Dateien
 
@@ -91,7 +91,7 @@ Legen Sie das **FILE_ATTRIBUTE_TEMPORARY**-Attribut für temporäre Dateien und 
   
 Dateien, deren Attribute **FILE_ATTRIBUTE_TEMPORARY** oder **FILE_ATTRIBUTE_READONLY** festgelegt sind, werden schreibgeschützt in Office geöffnet. **FILE_ATTRIBUTE_TEMPORARY** verhindert außerdem, dass die Datei in der Liste der zuletzt verwendeten Dokumente aufgeführt wird. 
   
-Weitere Informationen zu Dateiattributen finden Sie unter [SetFileAttributes-Funktion](https://msdn.microsoft.com/de-DE/library/windows/desktop/aa365535%28v=vs.85%29.aspx).
+Weitere Informationen zu Dateiattributen finden Sie unter [SetFileAttributes-Funktion](https://msdn.microsoft.com/library/windows/desktop/aa365535%28v=vs.85%29.aspx).
   
 ## <a name="other-best-practices"></a>Andere bewährte Methoden
 

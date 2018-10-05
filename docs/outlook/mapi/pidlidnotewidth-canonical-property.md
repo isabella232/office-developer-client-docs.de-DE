@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 20788f40-a7a4-44f7-8e43-efd3a34e6b10
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: cd5eb15a635f87741ad4ef6c837bbe540c2b7242
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e217a7f8ced3438908974cfaf11c0454d9856976
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574020"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386761"
 ---
 # <a name="pidlidnotewidth-canonical-property"></a>PidLidNoteWidth (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt die Breite des Fensters sichtbar Nachricht in Pixeln an. 
   
@@ -35,7 +35,7 @@ Gibt die Breite des Fensters sichtbar Nachricht in Pixeln an.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kurznotizen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Dieser Wert muss größer als NULL sein.
   
@@ -43,11 +43,11 @@ Dieser Wert muss größer als NULL sein.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXONOTE]](http://msdn.microsoft.com/library/6bf4ed7e-316c-4a3c-be27-5ec93e7ab39f%28Office.15%29.aspx)
+[[MS-OXONOTE]](https://msdn.microsoft.com/library/6bf4ed7e-316c-4a3c-be27-5ec93e7ab39f%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die auf Notizen zulässig sind.
     

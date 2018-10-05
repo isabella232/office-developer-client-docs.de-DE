@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 2f268b3b-2e4c-4aea-8879-bdd0ac1df35c
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a0f4ae75117dff3610175b785ab3f982cc7e7552
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 2c32cc61fea63cd38215c30e04e8a467d4901cc9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22590407"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387314"
 ---
 # <a name="pidtagprimarysendaccount-canonical-property"></a>PidTagPrimarySendAccount (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Zeichenfolge, die den Namen des ersten Servers, der zum Senden der Nachricht verwendet wird.
   
@@ -34,7 +34,7 @@ Enthält eine Zeichenfolge, die den Namen des ersten Servers, der zum Senden der
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Konto  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Gibt den ersten Server, den ein Client verwenden sollten, um die e-Mail-Nachrichten senden. Das Format dieser Eigenschaften ist die Implementierung ab. Diese Eigenschaften zum Ermitteln des Servers, der e-Mail-Nachrichten über direkte vom Client verwendet werden können, jedoch ist optional, und der Wert hat keine Bedeutung für den Server.
   
@@ -42,11 +42,11 @@ Gibt den ersten Server, den ein Client verwenden sollten, um die e-Mail-Nachrich
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.
     

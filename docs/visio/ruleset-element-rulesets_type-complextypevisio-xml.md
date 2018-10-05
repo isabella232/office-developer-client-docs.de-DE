@@ -7,23 +7,23 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 5ca63b8a-782e-211f-be7a-8e177b61d8fc
 description: Stellt eine Reihe von Diagramm-Validierungsregeln dar.
-ms.openlocfilehash: ae8fc52dd665e51f38c7eeae2f12ff778937d565
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 1231e8cdb3c8781dc47f470c0477b4585b1331c6
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19797954"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387391"
 ---
 # <a name="ruleset-element-rulesetstype-complextype-visio-xml"></a>RuleSet-Element (RuleSets_Type ComplexType) ("Visio XML")
 
 Stellt eine Reihe von Diagramm-Validierungsregeln dar.
   
-## <a name="element-information"></a>Informationen zum Element
+## <a name="element-information"></a>Informationen zu Elementen
 
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[RuleSet_Type](ruleset_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Validation.Xml  <br/> |
    

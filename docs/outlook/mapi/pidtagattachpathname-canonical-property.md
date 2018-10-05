@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: e19c7cd1-7c56-4f63-8736-d6971c7c5f4d
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: add85bbf9c7608434be045bc30a11b8a28ccaa1e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 05df7fe04f511de9310edc7a8ef09130e6354ad2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22578409"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389169"
 ---
 # <a name="pidtagattachpathname-canonical-property"></a>PidTagAttachPathname (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einer Anlage vollqualifizierten Pfad und Dateinamen.
   
@@ -34,7 +34,7 @@ Enthält einer Anlage vollqualifizierten Pfad und Dateinamen.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Es wird empfohlen, dass Anlage Unterobjekte diese Eigenschaften verfügbar machen. Das Festlegen dieser gibt an, dass die Anlagedaten nicht mit der Nachrichten enthalten ist, aber auf einem gemeinsamen Dateiserver verfügbar ist. Diese Eigenschaften sind in Verbindung mit einem der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md)) Flags, die angeben, Anlage per Verweis erforderlich: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE**oder **ATTACH_BY_REF_ NUR**. 
   
@@ -48,11 +48,11 @@ MAPI-funktioniert nur mit Pfaden und Dateinamen des ANSI-Zeichensatz. Clients, d
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXORMMS]](http://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften der codierten Nachrichten, deren Rechte verwaltet werden.
     

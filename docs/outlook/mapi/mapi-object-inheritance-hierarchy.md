@@ -8,18 +8,18 @@ api_type:
 - COM
 ms.assetid: 3dc0b79f-e346-416d-ac81-42eba6b6d3b2
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 4b2b9971677312dbea297c9fe2d29ba65174904d
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 4b610415089ff19165ffcabc9e13901ed63c907d
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22588790"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391787"
 ---
 # <a name="mapi-object-inheritance-hierarchy"></a>MAPI-Objektvererbungshierarchie
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Alle von MAPI-Objekten implementiert Schnittstellen erben letztlich von [IUnknown](http://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx), die OLE-Schnittstelle, mit dem Objekte kommunizieren kann. Die meisten Schnittstellen erben direkt von **IUnknown**, aber einige von einer von zwei anderen Basiskalender Schnittstellen erbt: [IMAPIProp: IUnknown](imapipropiunknown.md) oder [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md). Die folgende Abbildung zeigt die vollständige Vererbungshierarchie in MAPI.
+Alle von MAPI-Objekten implementiert Schnittstellen erben letztlich von [IUnknown](https://msdn.microsoft.com/library/33f1d79a-33fc-4ce5-a372-e08bda378332%28Office.15%29.aspx), die OLE-Schnittstelle, mit dem Objekte kommunizieren kann. Die meisten Schnittstellen erben direkt von **IUnknown**, aber einige von einer von zwei anderen Basiskalender Schnittstellen erbt: [IMAPIProp: IUnknown](imapipropiunknown.md) oder [IMAPIContainer: IMAPIProp](imapicontainerimapiprop.md). Die folgende Abbildung zeigt die vollständige Vererbungshierarchie in MAPI.
   
 **MAPI-Vererbungshierarchie**
   

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 37806778-a19a-4905-a845-525d3912bf9e
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e3983a110ee9a72f3c82eaf1bbebc810d07f3c4b
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 56a652e630af70d4cfde12995951a352a1aa97e3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591303"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390618"
 ---
 # <a name="pidlidappointmentproposedduration-canonical-property"></a>PidLidAppointmentProposedDuration (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den vorgeschlagenen Wert für die Eigenschaft **DispidApptDuration** ([PidLidAppointmentDuration](pidlidappointmentduration-canonical-property.md)) für einen Leistungsindikator Vorschlag.
   
@@ -35,7 +35,7 @@ Gibt den vorgeschlagenen Wert für die Eigenschaft **DispidApptDuration** ([PidL
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Besprechungen  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn festgelegt, es gleich der Anzahl der Minuten zwischen den **DispidApptProposedStartWhole** ([PidLidAppointmentProposedStartWhole](pidlidappointmentproposedstartwhole-canonical-property.md)) und **DispidApptProposedEndWhole** ([PidLidAppointmentProposedEndWhole](pidlidappointmentproposedendwhole-canonical-property.md)) Eigenschaften sein muss.
   
@@ -43,11 +43,11 @@ Wenn festgelegt, es gleich der Anzahl der Minuten zwischen den **DispidApptPropo
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

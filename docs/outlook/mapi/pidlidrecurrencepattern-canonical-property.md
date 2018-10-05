@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ac21ba98-f16b-4365-9134-bca7748189ee
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 12a55ec4dfe0fb53a07aef73cb4e96771379e483
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d94ac430df54fc03d96ac761c53ca20201d899c2
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589224"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386299"
 ---
 # <a name="pidlidrecurrencepattern-canonical-property"></a>PidLidRecurrencePattern (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt eine Beschreibung des Serienmusters des Calendar-Objekts.
   
@@ -35,7 +35,7 @@ Gibt eine Beschreibung des Serienmusters des Calendar-Objekts.
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Wenn diese Eigenschaft festgelegt ist, muss er auf eine Beschreibung für die Serie festgelegt sein, die von der **DispidApptRecur** ([PidLidAppointmentRecur](pidlidappointmentrecur-canonical-property.md))-Eigenschaft angegeben wird.
   
@@ -43,11 +43,11 @@ Wenn diese Eigenschaft festgelegt ist, muss er auf eine Beschreibung für die Se
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

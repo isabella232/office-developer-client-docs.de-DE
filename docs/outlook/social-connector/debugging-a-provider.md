@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: d2dfaeed-7635-4c6b-9c35-b955ca1a85e9
 description: 'Sie haben verschiedene Möglichkeiten, die Sie einen Anbieter für Outlook Social Connector (OSC) debuggen können:'
-ms.openlocfilehash: ada439ca3b038ca9a0e849b47ff6a5f54e5016f2
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 39deb7b6c0b11460826bdbf1957ffd8404d926e5
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19795960"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386852"
 ---
 # <a name="debugging-a-provider"></a>Debuggen eines Providers
 
@@ -47,7 +47,7 @@ Die folgende Tabelle beschreibt die Debug-Schaltflächen.
    
 ## <a name="fiddler"></a>Fiddler
 
-Fiddler ist ein Tool zum Debuggen von über das Netzwerk, die API-Aufrufe, die von Ihrem Dienstanbieter in sozialen Netzwerken gesendet und dem sozialen Netzwerk an Ihren Anbieter gesendeten XML überprüfen. Fiddler steht unter [Fiddler Web Debugging Proxy](http://www.fiddler2.com/fiddler2/version.asp)zum Download zur Verfügung.
+Fiddler ist ein Tool zum Debuggen von über das Netzwerk, die API-Aufrufe, die von Ihrem Dienstanbieter in sozialen Netzwerken gesendet und dem sozialen Netzwerk an Ihren Anbieter gesendeten XML überprüfen. Fiddler steht unter [Fiddler Web Debugging Proxy](https://www.fiddler2.com/fiddler2/version.asp)zum Download zur Verfügung.
   
 ## <a name="see-also"></a>Siehe auch
 

@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: d57ce5c8-1f60-4709-b86a-4468c4208dfe
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 6e856cc8dc131c1b6266181a954a8da9cfb1d1ea
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 962e8c92ae61e8b60862a3ae26a7cdfbf5034e89
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22566103"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383065"
 ---
 # <a name="pidtagrowtype-canonical-property"></a>PidTagRowType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Wert, der den Typ einer Zeile in einer Tabelle angibt.
   
@@ -34,7 +34,7 @@ Enthält einen Wert, der den Typ einer Zeile in einer Tabelle angibt.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |MAPI Übertragungseinehit  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft wird nur für Tabellen Inhalt angezeigt. Eine Kategorie ist nur vorhanden, wenn er Elemente verfügt.
   
@@ -60,7 +60,7 @@ TBL_COLLAPSED_CATEGORY
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCTABL]](http://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
+[[MS-OXCTABL]](https://msdn.microsoft.com/library/d33612dc-36a8-4623-8a26-c156cf8aae4b%28Office.15%29.aspx)
   
 > Zulässige Vorgänge für die Hauptobjekte-Tabelle enthält.
     

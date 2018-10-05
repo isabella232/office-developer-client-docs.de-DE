@@ -8,12 +8,12 @@ keywords:
 localization_priority: Normal
 ms.assetid: 0520df55-2d91-4cc5-be31-82144a2db4f6
 description: Die Befehle für das Hinzufügen von Ereignishandler-Funktionen in ein Formularvorlagenprojekt, die mit dem InfoPath 2003-Objektmodell kompatibel ist, sind im Wesentlichen die gleichen, die für andere Arten von Formularvorlagen.
-ms.openlocfilehash: 9f037c59180b9c8d858ec73d79ef892974efe483
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 8533b6bc11dccdad9d0f05de35406ad3cf68eacd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790749"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25386705"
 ---
 # <a name="add-an-event-handler-using-the-infopath-object-model"></a>Hinzufügen eines ereignishandlers mit dem InfoPath-Objektmodell
 
@@ -27,7 +27,7 @@ Alle der folgenden Verfahren wird davon ausgegangen, dass Sie ein Formularvorlag
   
 ### <a name="add-an-event-handler-for-the-onclick-event-of-a-command-button"></a>Hinzufügen eines Ereignishandlers für das OnClick-Ereignis einer Befehlsschaltfläche
 
-1. Klicken Sie im Bereich **Steuerelemente** auf **Schaltfläche** , um das Formular eine Schaltfläche hinzufügen. 
+1. Klicken Sie im Bereich **Steuerelemente** auf **Schaltfläche**, um dem Formular eine Schaltfläche hinzuzufügen. 
     
 2. Klicken Sie auf der Registerkarte **Eigenschaften** auf **Benutzerdefinierter Code**.
     
@@ -35,15 +35,15 @@ Alle der folgenden Verfahren wird davon ausgegangen, dass Sie ein Formularvorlag
     
 ### <a name="add-an-event-handler-for-the-onbeforechange-onvalidate-or-onafterchange-event-of-a-field-or-group"></a>Hinzufügen eines Ereignishandlers für die Ereignisse "OnBeforeChange", "OnValidate" oder "OnAfterChange" eines Feldes oder einer Gruppe
 
-1. Mit der rechten Maustaste in ein Steuerelement zur Eingabe von Daten an das Feld oder Gruppe, wie ein **Textfeld** -Steuerelement gebunden. 
+1. Klicken Sie mit der rechten Maustaste auf ein an das Feld oder die Gruppe gebundenes Dateneingabe-Steuerelement, wie z. B. ein Steuerelement vom Typ **Textfeld**. 
     
-2. Zeigen Sie auf **Programmierung**, und klicken Sie dann auf einen der Befehle, wie beispielsweise **On Validate-Ereignis**.
+2. Zeigen Sie auf **Programmierung**, und klicken Sie dann auf einen der Befehle, z. B. **On Validate-Ereignis**.
     
    Der Fokus wechselt zum Stub für den Ereignishandler für eins der folgenden Ereignisse im Code-Editor: [Ereignisse "OnBeforeChange"](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnBeforeChange.aspx), ["OnValidate"](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnValidate.aspx)oder ["OnAfterChange"](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._DataDOMEventSink_Event.OnAfterChange.aspx). 
     
 ### <a name="add-an-event-handler-for-the-onload-onswitchview-oncontextchange-or-onsign-event-of-a-form"></a>Hinzufügen eines Ereignishandlers für die Ereignisse "OnLoad", "OnSwitchView", "OnContextChange" oder "OnSign" eines Formulars
 
-- Klicken Sie im Menü **Extras** auf **Programmierung**zeigen Sie, und klicken Sie dann auf das Formularereignis, dem Sie für einen Ereignishandler schreiben möchten.
+- Zeigen Sie im Menü **Extras** auf **Programmierung**, und klicken Sie dann auf das Formularereignis, für das ein Ereignishandler hinzugefügt werden soll.
     
     Der Fokus wechselt zum Stub für den Ereignishandler für eins der folgenden im Code-Editor: [OnLoad](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnLoad.aspx)"," [OnSwitchView](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSwitchView.aspx)"," [OnContextChange](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnContextChange.aspx)"oder" [OnSign](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSign.aspx). 
     
@@ -51,33 +51,33 @@ Alle der folgenden Verfahren wird davon ausgegangen, dass Sie ein Formularvorlag
 
 1. Klicken Sie auf der Registerkarte **Daten** auf **Absendeoptionen**.
     
-2. Aktivieren Sie das Kontrollkästchen **Übermitteln dieses Formulars durch Benutzer zulassen** , und klicken Sie dann auf **benutzerdefinierte Aktion mithilfe von Code ausführen**.
+2. Aktivieren Sie das Kontrollkästchen **Übermitteln dieses Formulars durch Benutzer zulassen**, und klicken Sie dann auf **Benutzerdefinierte Aktion mithilfe von Code ausführen**.
     
-3. Klicken Sie auf **Code bearbeiten**, und klicken Sie dann auf **OK**.
+3. Klicken Sie auf **Code bearbeiten** und dann auf **OK**.
     
    Der Fokus wechselt zum Stub für den Ereignishandler für das [OnSubmitRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSubmitRequest.aspx) -Ereignis im Code-Editor. 
     
 ### <a name="add-an-event-handler-for-the-onsaverequest-event-of-a-form"></a>Hinzufügen eines Ereignishandlers für das OnSaveRequest-Ereignis eines Formulars
 
-1. Klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Formularoptionen**.
+1. Klicken Sie auf die Registerkarte **Datei** und dann auf **Formularoptionen**.
     
-2. Klicken Sie auf **Speichern erfolgt mittels benutzerdefinierten Code**in der Kategorie **Speichern** , klicken Sie auf **Bearbeiten**, und klicken Sie dann auf **OK**.
+2. Klicken Sie in der Kategorie **Speichern** auf **Speichern erfolgt mittels benutzerdefiniertem Code**, dann auf **Bearbeiten** und anschließen auf **OK**.
     
    Der Fokus wechselt zum Stub für den Ereignishandler für das [OnSaveRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnSaveRequest.aspx) -Ereignis im Code-Editor. 
     
 ### <a name="add-an-event-handler-for-the-onversionupgrade-event-of-a-form"></a>Hinzufügen eines Ereignishandlers für das OnVersionUpgrade-Ereignis eines Formulars
 
-1. Klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Formularoptionen**.
+1. Klicken Sie auf die Registerkarte **Datei** und dann auf **Formularoptionen**.
     
-2. Wählen Sie in der Kategorie **Versionsverwaltung** aus der Liste **vorhandene Formulare aktualisieren** **benutzerdefiniertes Ereignis verwenden** aus, klicken Sie auf **Bearbeiten**, und klicken Sie dann auf **OK**.
+2. Wählen Sie in der Kategorie **Versionsverwaltung** in der Liste **Vorhandene Formulare aktualisieren** den Eintrag **Benutzerdefiniertes Ereignis verwenden**, klicken Sie auf **Bearbeiten**, und klicken Sie dann auf **OK**.
     
     Der Fokus wechselt zum Stub für den Ereignishandler für das [OnVersionUpgrade](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnVersionUpgrade.aspx) -Ereignis im Code-Editor. 
     
 ### <a name="add-an-event-handler-for-the-onmergerequest-event-of-a-form"></a>Hinzufügen eines Ereignishandlers für das OnMergeRequest-Ereignis eines Formulars
 
-1. Klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf **Formularoptionen**.
+1. Klicken Sie auf die Registerkarte **Datei** und dann auf **Formularoptionen**.
     
-2. Wählen Sie in der Kategorie **Erweitert** das **Zusammenführen von Formularen aktivieren** und die Kontrollkästchen **Mithilfe benutzerdefiniertem Code Zusammenführen** , klicken Sie auf **Bearbeiten**, und klicken Sie dann auf **OK**.
+2. Aktivieren Sie in der Kategorie **Erweitert** die Kontrollkästchen **Zusammenführen von Formularen aktivieren** und **Mithilfe von benutzerdefiniertem Code zusammenführen**, klicken Sie auf **Bearbeiten**, und klicken Sie dann auf **OK**.
     
     Der Fokus wechselt zum Stub für den Ereignishandler für das [OnMergeRequest](https://msdn.microsoft.com/library/Microsoft.Office.Interop.InfoPath.SemiTrust._XDocumentEventSink2_Event.OnMergeRequest.aspx) -Ereignis im Code-Editor. 
     
@@ -91,7 +91,7 @@ Im folgenden Beispiel wird gezeigt, wie ein Ereignishandler für eine sekundäre
   
 ```xml
 <?xml version="1.0"?>
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:schema xmlns:xsd="https://www.w3.org/2001/XMLSchema">
     <xsd:element name="catalog">
         <xsd:complexType>
             <xsd:sequence>
@@ -222,10 +222,10 @@ namespace AuxDom
 
 ## <a name="how-the-class-that-contains-event-handlers-is-identified"></a>Wie wird die Klasse enthält Ereignishandler identifiziert.
 
-Wenn Sie ein neues InfoPath-Formularvorlagenprojekt erstellen, die mit dem InfoPath 2003 verwaltetem Code-Objektmodell ein Assembly-Ebene **System.ComponentModel.Description** Attribut kompatibel ist wird der Klasse am Anfang des formularcodemoduls zu angewendet Identifizieren Sie die Klasse, die alle Ereignishandler für die Formularvorlage enthält. 
+Wenn Sie ein neues InfoPath-Formularvorlagenprojekt erstellen, das mit dem InfoPath 2003-Objektmodell mit verwaltetem Code kompatibel ist, wird ein **System.ComponentModel.Description**-Attribut auf Assemblyebene am Anfang des Formularcodemoduls auf die Klasse angewendet, um die Klasse zu identifizieren, die alle Ereignishandler für die Formularvorlage enthält. 
   
 > [!IMPORTANT]
-> Ändern Sie das Attribut **System.ComponentModel.Description** in dieser Klasse nicht. Wenn Sie dies tun, wird die Formularvorlage werden nicht identifiziert, auf dem Ereignishandler befinden, und die Ereignishandler werden nicht ausgeführt. 
+> Ändern Sie das **System.ComponentModel.Description**-Attribut in dieser Klasse nicht. Bei einer Änderung kann von der Formularvorlage die Position der Ereignishandler nicht identifiziert werden, und die Ereignishandler werden nicht ausgeführt. 
   
 ```cs
 using System;
@@ -283,5 +283,5 @@ Wenn Sie eine beim Verbergen Dienstprogramm ausführen, klicken Sie auf die Asse
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Reagieren auf Formularereignisse mithilfe des InfoPath 2003-Objektmodells](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
+- [Reagieren auf Formularereignisse mit dem InfoPath 2003-Objektmodell](how-to-respond-to-form-events-using-the-infopath-2003-object-model.md)
 

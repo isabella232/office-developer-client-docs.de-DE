@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 3262cf95-48b5-4764-a96e-d752ce35b2dc
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: c0a3a96c3d8835550c4b0fda233183214cb4a786
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d8fe8525cf4fc11ac17ed6d73fb5d97e4f2d003e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22587425"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383107"
 ---
 # <a name="pidtagattachlongpathname-canonical-property"></a>PidTagAttachLongPathname (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einer Anlage voll qualifizierte lange Pfad- und Dateiname. 
   
@@ -34,7 +34,7 @@ Enthält einer Anlage voll qualifizierte lange Pfad- und Dateiname.
 |Datentyp:  <br/> |PT_STRING8, PT_UNICODE  <br/> |
 |Bereich:  <br/> |Nachrichtenanlage  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaften sind anwendbar, wenn Sie einen der Werte der **PR_ATTACH_METHOD** ([PidTagAttachMethod](pidtagattachmethod-canonical-property.md))-Eigenschaft verwenden, die Anlage per Verweis angeben: **ATTACH_BY_REFERENCE**, **ATTACH_BY_REF_RESOLVE**oder **ATTACH_BY _REF_ONLY**. Plattformen, die Unterstützung von langen Dateinamen fest **PR_ATTACH_LONG_PATHNAME** oder zugeordnete Eigenschaften und **PR_ATTACH_PATHNAME** ([PidTagAttachPathname](pidtagattachpathname-canonical-property.md)) Eigenschaften beim Senden und **PR_ATTACH_LONG_PATHNAME sollten überprüfen **oder Eigenschaften zuerst beim empfangen. 
   
@@ -50,11 +50,11 @@ MAPI-funktioniert nur mit Pfaden und Dateinamen des ANSI-Zeichensatz. Clientanwe
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXCMSG]](http://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
+[[MS-OXCMSG]](https://msdn.microsoft.com/library/7fd7ec40-deec-4c06-9493-1bc06b349682%28Office.15%29.aspx)
   
 > Nachrichten und Anlagen Objekte behandelt.
     
-[[MS-OXORMMS]](http://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
+[[MS-OXORMMS]](https://msdn.microsoft.com/library/a121dda4-48f3-41f8-b12f-170f533038bb%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften der codierten Nachrichten, deren Rechte verwaltet werden.
     

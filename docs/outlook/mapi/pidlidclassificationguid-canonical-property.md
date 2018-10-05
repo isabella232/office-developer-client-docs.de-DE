@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: e95c2445-7711-4683-8c39-3979b64fe100
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8b24b76b311c169f9e8d6e6fc8443a064047a3e6
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 08b1d012c4e2b545d1477abebc8090607b6a3225
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594320"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25384514"
 ---
 # <a name="pidlidclassificationguid-canonical-property"></a>PidLidClassificationGuid (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt einen global eindeutigen Bezeichner (GUID) von einer vorhandenen Nachrichtenklassifikation an.
   
@@ -35,19 +35,19 @@ Gibt einen global eindeutigen Bezeichner (GUID) von einer vorhandenen Nachrichte
 |Datentyp:  <br/> |PT_UNICODE  <br/> |
 |Bereich:  <br/> |Allgemeine messaging  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen finden Sie unter [Bereitstellen von Nachrichtenklassifikation für Outlook 2007](http://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
+Weitere Informationen finden Sie unter [Bereitstellen von Nachrichtenklassifikation für Outlook 2007](https://msdn.microsoft.com/library/5a220424-edd5-4a21-b7fd-8106c23c3b39.aspx)
   
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Set Eigenschaftendefinition und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCMAIL]](http://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
+[[MS-OXCMAIL]](https://msdn.microsoft.com/library/b60d48db-183f-4bf5-a908-f584e62cb2d4%28Office.15%29.aspx)
   
 > Konvertiert von Internet-standard-e-Mail-Konventionen in Message-Objekten.
     

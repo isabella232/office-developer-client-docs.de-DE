@@ -7,12 +7,12 @@ ms.topic: reference
 localization_priority: Normal
 ms.assetid: 3131bfbb-9bf6-d15d-c6ca-2f15bd038f39
 description: Gibt die Zellenelemente, die innerhalb einer DocumentSheet, StyleSheet, PageSheet oder ShapeSheet enthalten sein können.
-ms.openlocfilehash: 68ea20f3b2a9bebae3d8f6d12e0d818e30685710
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a48e440e40659209fe3a9fd30587204e3ad724ff
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22575630"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391472"
 ---
 # <a name="cell-element-visio-xml"></a>Zellenelement ("Visio XML")
 
@@ -23,7 +23,7 @@ Gibt die Zellenelemente, die innerhalb einer DocumentSheet, StyleSheet, PageShee
 |||
 |:-----|:-----|
 |**Elementtyp** <br/> |[Cell_Type](cell_type-complextypevisio-xml.md) <br/> |
-|**Namespace** <br/> |http://schemas.microsoft.com/office/visio/2012/main  <br/> |
+|**Namespace** <br/> |https://schemas.microsoft.com/office/visio/2012/main  <br/> |
 |**Schemadatei** <br/> |VisioSchema15.xsd  <br/> |
 |**Dokumentbausteine** <br/> |Document.XML, pages.xml, masters.xml, Master-Shape # .xml, Seite # .xml  <br/> |
    
@@ -62,7 +62,7 @@ Gibt die Zellenelemente, die innerhalb einer DocumentSheet, StyleSheet, PageShee
 |U  <br/> |XSD: String  <br/> |Optional  <br/> |Stellt eine Einheit der Messung der Standardwert ist DL.  <br/> |Die Einheiten der Zelle.  <br/> |
 |V  <br/> |XSD: String  <br/> |Optional  <br/> |Den Wert der Zelle darstellt.  <br/> |Der Wert der **ShapeSheet** -Zelle.  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Das **N** -Attribut dieses Elements **Zelle** muss eine der eine begrenzte Auswahl von Werten sein, die ShapeSheet-Zellen entsprechen. Finden Sie in der Tabelle unten, um die Werte der **N** -Attribut zu bestimmen, die für diese **Zelle** Element zulässig sind. 
   

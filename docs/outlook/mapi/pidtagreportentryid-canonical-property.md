@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: ea2bcc06-0089-4999-b115-06a14de4a0f1
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 558a2235f7cb617bf37ccff77ebeec6e4ba77604
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 3b4432650d5c9fc77c4db0bc9aed4234d85e7fdf
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22582616"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387041"
 ---
 # <a name="pidtagreportentryid-canonical-property"></a>PidTagReportEntryId (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält die Eintrags-ID für den Empfänger, der Berichte für diese Nachricht empfangen sollen.
   
@@ -34,7 +34,7 @@ Enthält die Eintrags-ID für den Empfänger, der Berichte für diese Nachricht 
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |MAPI-Umschlag  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft ist eine der Adresseigenschaften für den Empfänger, Absender delegiert alle für diese Nachricht generierten Berichte empfangen hat.
   
@@ -44,11 +44,11 @@ Eine Clientanwendung, die Berichte an einen anderen Benutzer weitergeleitet werd
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
+[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichten zulässig sind.
     

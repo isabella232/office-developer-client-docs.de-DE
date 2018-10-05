@@ -12,18 +12,18 @@ api_type:
 - HeaderDef
 ms.assetid: 5750cf95-8581-43a7-a465-f4114b2939f2
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: e3ba97a9538b6c773c041eb7b890e834da6f0d83
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7226996d85a1f919cfa54d588c04116dd2d24375
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22579116"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391157"
 ---
 # <a name="pidtagcomment-canonical-property"></a>PidTagComment (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält einen Kommentar zum Zweck oder Inhalt eines Objekts. 
   
@@ -34,7 +34,7 @@ Enthält einen Kommentar zum Zweck oder Inhalt eines Objekts.
 |Datentyp:  <br/> |PT_UNICODE PT_STRING8  <br/> |
 |Bereich:  <br/> |Common  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Der Inhalt der Zeichenfolge wird durch die messaging-Benutzer definiert. 
   
@@ -42,19 +42,19 @@ Der Inhalt der Zeichenfolge wird durch die messaging-Benutzer definiert.
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXCFOLD]](http://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
+[[MS-OXCFOLD]](https://msdn.microsoft.com/library/c0f31b95-c07f-486c-98d9-535ed9705fbf%28Office.15%29.aspx)
   
 > Ordner Vorgänge behandelt.
     
-[[MS-OXCSTOR]](http://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
+[[MS-OXCSTOR]](https://msdn.microsoft.com/library/d42ed1e0-3e77-4264-bd59-7afc583510e2%28Office.15%29.aspx)
   
 > Gibt die zulässige Vorgänge für die Hauptobjekte der Nachricht Store.
     
-[[MS-OXOABK]](http://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
+[[MS-OXOABK]](https://msdn.microsoft.com/library/f4cf9b4c-9232-4506-9e71-2270de217614%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für Listen der Benutzer, Kontakte, Gruppen und Ressourcen.
     

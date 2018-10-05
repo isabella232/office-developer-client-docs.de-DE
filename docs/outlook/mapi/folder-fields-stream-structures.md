@@ -6,16 +6,16 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: edbc9e6c-008c-4c13-9a0c-cb47ac0f3686
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 1ba4be04e7241a9c58138ec6b4ef72f7e0f14105
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 96051bd2b62fd7c0e908a1018aac0225e44986be
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22567160"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25385088"
 ---
 # <a name="folder-fields-stream-structures"></a>Ordnerfelder-Streamstrukturen
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Eine Nachricht [PidTagUserFields](pidtaguserfields-canonical-property.md) -Eigenschaft enthält einen binären Datenstrom, FolderUserFields, die die benutzerdefinierte Felddefinitionen Ordner enthält. In diesem Thema werden die Stream-Strukturen für benutzerdefinierte Felddefinitionen Ordner. 
 
@@ -66,7 +66,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     
 - **FieldNameLength**: WORD (2 Bytes), die Anzahl der Elemente im Array **FieldName** .
     
-- **FieldName**: ein Array von CHAR. Dies ist die Codepage ANSI CP_ACP Darstellung der Name des Felds. Die Anzahl der dieses Array ist gleich **FieldNameLength**. Der Name des Felds erfüllen muss, auf dem Name-Parameter in der [UserProperties.Add](http://msdn.microsoft.com/en-us/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode gemäß die Einschränkungen. 
+- **FieldName**: ein Array von CHAR. Dies ist die Codepage ANSI CP_ACP Darstellung der Name des Felds. Die Anzahl der dieses Array ist gleich **FieldNameLength**. Der Name des Felds erfüllen muss, auf dem Name-Parameter in der [UserProperties.Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode gemäß die Einschränkungen. 
     
    > [!NOTE]
    > Aus Gründen der Kompatibilität mit Vorversionen Outlook möglicherweise einige **FieldName** -Werte, die diese Einschränkung nicht erfüllen, jedoch solchen Fällen fallen nicht unter in diesem Thema behandelt. 
@@ -83,7 +83,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     
 - **FieldNameLength**: WORD (2 Bytes), die Anzahl der Elemente im Array **FieldName** .
     
-- **FieldName**: ein Array von WCHAR. Dies ist der Name des Felds die Darstellung Unicode (UTF-16). Die Anzahl der dieses Array ist gleich **FieldNameLength**. Der Name des Felds erfüllen muss, auf dem Name-Parameter in der [UserProperties.Add](http://msdn.microsoft.com/en-us/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode gemäß die Einschränkungen. 
+- **FieldName**: ein Array von WCHAR. Dies ist der Name des Felds die Darstellung Unicode (UTF-16). Die Anzahl der dieses Array ist gleich **FieldNameLength**. Der Name des Felds erfüllen muss, auf dem Name-Parameter in der [UserProperties.Add](https://msdn.microsoft.com/library/microsoft.office.interop.outlook.userproperties.add.aspx) -Methode gemäß die Einschränkungen. 
     
    > [!NOTE]
    > Aus Gründen der Kompatibilität mit Vorversionen Outlook möglicherweise einige **FieldName** -Werte, die nicht den Eigenschaften dieser Beschränkungen verarbeiten, jedoch solchen Fällen unterliegen nicht in diesem Thema. 

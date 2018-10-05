@@ -8,18 +8,18 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: f5de77c3-5912-f7bc-8e8c-3a053545c359
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: ad96b448018ec43cda85aab1245afb1ca22552f8
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: d254df132db5542ce5235c1c3ab42ea768399f0a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583211"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25382617"
 ---
 # <a name="pidtagsearchrecipientemailto-canonical-property"></a>PidTagSearchRecipientEmailTo (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Enthält eine Unicode-Zeichenfolge, die in der Liste der e-Mail-Adressen oder Anzeigenamen der Empfänger an, die in der Zeile **an** der Nachrichten im Store behandelt werden abgefragt wird. 
   
@@ -39,11 +39,11 @@ Enthält eine Unicode-Zeichenfolge, die in der Liste der e-Mail-Adressen oder An
   
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.
     
-[[MS-OXOSRCH]](http://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
+[[MS-OXOSRCH]](https://msdn.microsoft.com/library/c72e49b8-78c7-4483-ad65-e46e9133673b%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Operationen für das Bearbeiten der Liste einer Suchkonfiguration-Ordner.
     

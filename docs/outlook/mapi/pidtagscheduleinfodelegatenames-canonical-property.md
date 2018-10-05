@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 592d9c78-4487-4c68-8ae7-4cd3d6265685
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 06462f992ec640992b95b89a618e7d82290eeeef
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: a257934411bb11a30378ee46317d323156f53e31
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22574503"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387293"
 ---
 # <a name="pidtagscheduleinfodelegatenames-canonical-property"></a>PidTagScheduleInfoDelegateNames (kanonische Eigenschaft)
 
@@ -34,7 +34,7 @@ Enthält die Namen der-Delegaten.
 |Datentyp:  <br/> |PT_MV_STRING8 PT_MV_UNICODE  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Jeder Eintrag in diese Eigenschaften muss den Wert der Eigenschaft **PR_DISPLAY_NAME** ([PidTagDisplayName](pidtagdisplayname-canonical-property.md)) der einzelnen Delegaten Adressbuch enthalten.
   
@@ -42,11 +42,11 @@ Jeder Eintrag in diese Eigenschaften muss den Wert der Eigenschaft **PR_DISPLAY_
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXODLGT]](http://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
+[[MS-OXODLGT]](https://msdn.microsoft.com/library/01a89b11-9c43-4c40-b147-8f6a1ef5a44f%28Office.15%29.aspx)
   
 > Gibt die Methoden zum Herstellen einer Verbindung mit und Konfiguration von Postfächer als Stellvertretungen und Interaktionen mit Nachricht und Kalender-Objekte, wenn sie im Auftrag eines anderen Benutzers agieren.
     

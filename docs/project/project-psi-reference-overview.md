@@ -42,22 +42,22 @@ keywords:
 localization_priority: Normal
 ms.assetid: d3c33089-0cbe-48c3-bfc0-0be819ca4d73
 description: Project Server Interface (PSI) ist die API verwenden, für die Entwicklung von Anwendungen, die Project Server 2013 lokal zu integrieren.
-ms.openlocfilehash: 14ab540fd8a66cf18c576572fc0eff4df7c7d61c
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 58235e16afd208d0d4415e28ad200cc7ff62ac8b
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796311"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390121"
 ---
 # <a name="project-psi-reference-overview"></a>Project-PSI-Referenz – Übersicht
 
 Project Server Interface (PSI) ist die API verwenden, für die Entwicklung von Anwendungen, die Project Server 2013 lokal zu integrieren.
   
-Dieser Artikel bietet eine Übersicht über die dokumentierte Assemblys, Namespaces und Dienste in die PSI. Die [Project Server 2013 Class Library und Web-Dienst verweisen](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) im SDK enthält alle Dokumentation verwaltetem Code für die PSI und den [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) -Namespace im Project Server 2013. Informationen zum Entwickeln von Anwendungen für Project Online, müssen Sie den Namespace **Microsoft.ProjectServer.Client** anstelle der PSI verwenden. 
+Dieser Artikel bietet eine Übersicht über die dokumentierte Assemblys, Namespaces und Dienste in die PSI. Die [Project Server 2013 Class Library und Web-Dienst verweisen](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) im SDK enthält alle Dokumentation verwaltetem Code für die PSI und den [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) -Namespace im Project Server 2013. Informationen zum Entwickeln von Anwendungen für Project Online, müssen Sie den Namespace **Microsoft.ProjectServer.Client** anstelle der PSI verwenden. 
 
-Die PSI in Project Server 2013 verfügt über eine duale Schnittstelle. Die ASMX-Interface für Webdienste durch Ermittlung definiert wird und Web Service Description Language (Disco und WSDL) Dateien in die `http://ServerName/ProjectServerName/_vti_bin/psi/` virtuelles Verzeichnis (z. B. Projectdisco.aspx und Projectwsdl.aspx). Sie können die ASMX-Schnittstelle zugreifen, nur über die URL einer lokalen Installation von Project Web App (z. B. `http://ServerName/ProjectServerName/_vti_bin/psi/project.asmx?wsdl)`. Um den Webdienst in einem Browser anzuzeigen, müssen Sie enthalten die `?wsdl` URL-Option. Da die ASMX-Schnittstelle mit Windows Communication Foundation (WCF)-Infrastruktur erstellt wird, sind die ASMX-Dateien für Project Server-Webdienste nicht tatsächlich in das virtuelle Verzeichnis der PSI vorhanden. 
+Die PSI in Project Server 2013 verfügt über eine duale Schnittstelle. Die ASMX-Interface für Webdienste durch Ermittlung definiert wird und Web Service Description Language (Disco und WSDL) Dateien in die `https://ServerName/ProjectServerName/_vti_bin/psi/` virtuelles Verzeichnis (z. B. Projectdisco.aspx und Projectwsdl.aspx). Sie können die ASMX-Schnittstelle zugreifen, nur über die URL einer lokalen Installation von Project Web App (z. B. `https://ServerName/ProjectServerName/_vti_bin/psi/project.asmx?wsdl)`. Um den Webdienst in einem Browser anzuzeigen, müssen Sie enthalten die `?wsdl` URL-Option. Da die ASMX-Schnittstelle mit Windows Communication Foundation (WCF)-Infrastruktur erstellt wird, sind die ASMX-Dateien für Project Server-Webdienste nicht tatsächlich in das virtuelle Verzeichnis der PSI vorhanden. 
   
-Die WCF-Dienste-Schnittstelle wird von SVC-Dateien in die Back-End definierten `http://ServerName:32843/GUID/PSI/` virtuelle Verzeichnis in der SharePoint-Webdienste-Anwendung. Die URL der PSI-Dienste in das virtuelle Verzeichnis für Project Service-Anwendung (z. B. `http://ServerName:32843/GUID/PSI/project.svc`) enthält die SVC-Dateien. Allerdings können nicht direkt verwenden Sie den Back-End-URL ein WCF-Dienstverweises festgelegt. Informationen zum Entwickeln einer Anwendung oder Komponente, die die WCF-Dienste die PSI verwendet, können Sie eine Proxyassembly oder eine Proxydatei verwenden. Der Project 2013-SDK-Download enthält die Proxydateien für die WCF-Dienste in Project Server 2013 und Skripts zum Abrufen von aktualisierter WCF-Proxy-Dateien und Kompilieren die Dateien in eine Proxyassembly für neueren Project Server erstellt.
+Die WCF-Dienste-Schnittstelle wird von SVC-Dateien in die Back-End definierten `https://ServerName:32843/GUID/PSI/` virtuelle Verzeichnis in der SharePoint-Webdienste-Anwendung. Die URL der PSI-Dienste in das virtuelle Verzeichnis für Project Service-Anwendung (z. B. `https://ServerName:32843/GUID/PSI/project.svc`) enthält die SVC-Dateien. Allerdings können nicht direkt verwenden Sie den Back-End-URL ein WCF-Dienstverweises festgelegt. Informationen zum Entwickeln einer Anwendung oder Komponente, die die WCF-Dienste die PSI verwendet, können Sie eine Proxyassembly oder eine Proxydatei verwenden. Der Project 2013-SDK-Download enthält die Proxydateien für die WCF-Dienste in Project Server 2013 und Skripts zum Abrufen von aktualisierter WCF-Proxy-Dateien und Kompilieren die Dateien in eine Proxyassembly für neueren Project Server erstellt.
   
 Der Verzeichnisname Project Service-Anwendung ist ein GUID-Wert, der die GUID der lokalen Project Web App-Instanz identisch ist. Klicken Sie im Fenster **Internetinformationsdienste (Internet Information Services, IIS)-Manager** den Knoten **SharePoint-Webdienste** , wählen Sie den Namen der GUID-Verzeichnis und wählen Sie dann auf **Erweiterte Einstellungen** , um den Wert für **Virtuelle Pfade** kopieren. 
   
@@ -73,13 +73,13 @@ Für die Entwicklung von Anwendungen, die das WCF-Interface verwenden, können S
 ### <a name="using-the-psi-reference"></a>Verwenden die PSI-Referenz
 <a name="pj15_PSIRefOverview_Using"> </a>
 
-Das PSI-Objektmodell groß ist und viele Klassen und Member sind nur zur internen Verwendung. Daher kann es sein, erhalten in den Themen, die Sie möchten in der [Project Server 2013 Class Library und Web-Dienstverweises](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)verwirrend. Die meisten den Referenzthemen, die Sie für die Entwicklung verwenden, sind in der folgenden Gruppen:
+Das PSI-Objektmodell groß ist und viele Klassen und Member sind nur zur internen Verwendung. Daher kann es sein, erhalten in den Themen, die Sie möchten in der [Project Server 2013 Class Library und Web-Dienstverweises](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx)verwirrend. Die meisten den Referenzthemen, die Sie für die Entwicklung verwenden, sind in der folgenden Gruppen:
   
 - **Primäre Klassenmethoden:** Jeder Dienst in die PSI enthält eine primäre Klasse mit dem Namen für den Namen des Diensts. Beispielsweise enthält der Dienst für die **Ressource** die [Ressource](https://msdn.microsoft.com/library/WebSvcResource.Resource.aspx) -Klasse, die im Namespace [WebSvcResource](https://msdn.microsoft.com/library/WebSvcResource.aspx) ist. Um eine Liste der Methoden anzuzeigen, die in der Klasse **Ressource** verfügbar sind, erweitern Sie den Klassenknoten in den Bereich Inhalte, und wählen Sie dann das **Ressourcenmethoden** Thema. 
     
 - **DataRow-Eigenschaften:** Viele der primäre Klassenmethoden verwenden oder eines **Datasets**zurück. Jedes **DataTable** -Objekt in einem **DataSet** enthält Daten in einem oder mehreren **DataRow** -Objekten. In den meisten Fällen müssen Sie nur die Eigenschaften der Zeile, nicht aller anderen Member der Klassen **DataSet**, **DataTable**oder **DataRow** finden Sie unter. Beispielsweise enthält die **ResourceAssignmentDataSet** -Klasse Unterklassen für die **ResourceAssignmentDataTable** und die [ResourceAssignmentDataSet.ResourceAssignmentRow](https://msdn.microsoft.com/library/WebSvcResource.ResourceAssignmentDataSet.ResourceAssignmentRow.aspx) -Klasse. Um eine Liste der Eigenschaften anzuzeigen, die in der **ResourceAssignmentRow** -Klasse sind, erweitern Sie den Klassenknoten in den Bereich Inhalte, und wählen Sie dann das Thema **ResourceAssignmentDataSet.ResourceAssignmentRow Eigenschaften** . 
     
-Zusätzlich zu den Namespaces Service lokaler [Project Server 2013 Class Library und Web-Dienst verweisen](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) Thema verweist auf die drei Project Server-Assemblys, die bei der Entwicklung von Lösungen für Drittanbieter-verwendet werden Installationen. Wir stellen nur minimale Dokumentation für diese Assemblys. Die PSI-Referenz wird die wichtigsten Klassen und Member in der 23 öffentlichen Diensten dokumentiert. Sechs PSI-Dienste sind nur zur internen Verwendung und sind nicht dokumentiert. 
+Zusätzlich zu den Namespaces Service lokaler [Project Server 2013 Class Library und Web-Dienst verweisen](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) Thema verweist auf die drei Project Server-Assemblys, die bei der Entwicklung von Lösungen für Drittanbieter-verwendet werden Installationen. Wir stellen nur minimale Dokumentation für diese Assemblys. Die PSI-Referenz wird die wichtigsten Klassen und Member in der 23 öffentlichen Diensten dokumentiert. Sechs PSI-Dienste sind nur zur internen Verwendung und sind nicht dokumentiert. 
   
 > [!NOTE]
 > Klassen im Client-seitigen Objektmodell (CSOM) können unabhängig von anderen Assemblys für Project Server und Dienste verwendet werden. Sie können den **Microsoft.ProjectServer.Client** -Namespace in einer remote-Entwicklungsumgebung aus der Project Server-Computer verwenden und Entwickeln von apps, die mit Project Online oder mit einer lokalen Installation von Project Server zu integrieren. Aber das CSOM enthält eine Teilmenge der Funktionalität von die vollständige PSI. Das CSOM ermöglicht die Entwicklung der gängigsten Szenarien für Project Server-Integration. Weitere Informationen finden Sie unter [Was das CSOM ist und nicht zu](what-the-csom-does-and-does-not-do.md) und [Microsoft.ProjectServer.Client](https://msdn.microsoft.com/library/Microsoft.ProjectServer.Client.aspx) . 
@@ -90,7 +90,7 @@ Für die Entwicklung von den meisten Clientanwendungen, die die PSI verwenden, m
 - Microsoft.Office.Project.Server.Library.dll
 - Microsoft.Office.Project.Server.Workflow.dll
     
-Namespaces für die PSI-Dienste sind beliebige Namen erstellt bei einer PSI-Proxyassembly ProjectServerServices.dll, die für die Dokumentation generiert wird. In der Referenz PSI hat jeder Dienstnamespace ein Platzhaltername (beispielsweise _[Project-Webdienst]_) und einen Webverweis (z. B. `http://ServerName/ProjectServerName/_vti_bin/psi/Project.asmx?wsdl`). 
+Namespaces für die PSI-Dienste sind beliebige Namen erstellt bei einer PSI-Proxyassembly ProjectServerServices.dll, die für die Dokumentation generiert wird. In der Referenz PSI hat jeder Dienstnamespace ein Platzhaltername (beispielsweise _[Project-Webdienst]_) und einen Webverweis (z. B. `https://ServerName/ProjectServerName/_vti_bin/psi/Project.asmx?wsdl`). 
   
 ## <a name="project-server-assemblies-and-namespaces"></a>Project Server-Assemblys und -Namespaces
 <a name="pj15_PSIRefOverview_Assemblies"> </a>
@@ -102,7 +102,7 @@ Viele Assemblys werden bei der Installation von Project Server installiert. der 
   
 Bei der Entwicklung für Project Online können Sie nur das CSOM, Zugriff auf Project Server-Funktionen. Sie können nicht auf der PSI-Dienste oder andere Assemblys Project Server zugreifen.
   
-Die [Project Server 2013 Class Library und Web-Dienst verweisen](http://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) für die PSI enthält Namespaces aus den folgenden Assemblys: 
+Die [Project Server 2013 Class Library und Web-Dienst verweisen](https://msdn.microsoft.com/library/ef1830e0-3c9a-4f98-aa0a-5556c298e7d1%28Office.15%29.aspx) für die PSI enthält Namespaces aus den folgenden Assemblys: 
   
 - **Microsoft.Office.Project.Server.Library.dll** diese Assembly enthält einen dokumentierten Namespace und drei Namespaces nicht dokumentiert, wie folgt: 
     
@@ -249,7 +249,7 @@ Im Folgenden finden Sie sämtliche Klassen, die Webmethoden in den PSI-Diensten 
   
 15. **OData** Enthält die interne **OData** -Schnittstelle für die reporting Tabellen und Ansichten. Zugriff auf den **OData** -Dienst ist nur über die Back-End- **ProjectServiceApplication** URL verfügbar. Private **OData** -Diensts in die PSI enthält eine Methode, **ODataClient.ProcessOdataMessage**, die Project Server intern verwendet, um Anforderungen für Berichtsdaten zu verarbeiten. Die HTTP-Anfragen Durchlaufen der Front-End- **ProjectData** -Dienst. 
     
-    Informationen zu den **ProjectData** -Dienst und dem OData-Protokoll zum Lesen von Berichtsdaten finden Sie unter [ProjectData - Projekt OData-Dienstverweises](https://msdn.microsoft.com/en-us/library/office/jj163015.aspx).
+    Informationen zu den **ProjectData** -Dienst und dem OData-Protokoll zum Lesen von Berichtsdaten finden Sie unter [ProjectData - Projekt OData-Dienstverweises](https://msdn.microsoft.com/library/office/jj163015.aspx).
     
 16. **P12Upgrade** Interne Methoden für das Project Server 2013-Installationsprogramm zum Aktualisieren einer Installation von Office Project Server 2007 bietet. Zugriff auf den **P12Upgrade** -Dienst ist nur über die **ProjectServiceApplication** -URL verfügbar. Die **P12Upgrade** -Methoden sind für die Entwicklung von Drittanbietern nicht unterstützt. 
     
@@ -308,6 +308,6 @@ Wenn Sie nach den Namespaces und Klassen des PSI-Verweises suchen, um beispielsw
 - [Was die PSI durchführen kann und was nicht](what-the-psi-does-and-does-not-do.md)   
 - [Voraussetzungen für ASMX-basierte Codebeispiele in Project](prerequisites-for-asmx-based-code-samples-in-project.md)   
 - [Voraussetzungen für WCF-basierte Codebeispiele in Project](prerequisites-for-wcf-based-code-samples-in-project.md)   
-- [.NET Framework Developer Center](http://msdn.microsoft.com/en-us/netframework/aa496123.aspx)
+- [.NET Framework Developer Center](https://msdn.microsoft.com/netframework/aa496123.aspx)
     
 

@@ -12,20 +12,20 @@ api_type:
 - COM
 ms.assetid: 52fd57a0-9e34-4452-9ecd-2acb454446c9
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 06f086b84650c6719c49cabda418f4e2553e4e43
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: e5e9b06178a1517fc1c8652b0d667faf1afc77cc
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589602"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389302"
 ---
 # <a name="pidlidappointmenttimezonedefinitionrecur-canonical-property"></a>PidLidAppointmentTimeZoneDefinitionRecur (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](http://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn eine Terminserie oder eine Besprechungsanfrage erstellt wird. 
+Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINITION](https://msdn.microsoft.com/library/0ae21571-2299-6407-807c-428668bb6798%28Office.15%29.aspx) ist der die Beschreibung für die Zeitzone gespeichert, die verwendet wird, wenn eine Terminserie oder eine Besprechungsanfrage erstellt wird. 
   
 |||
 |:-----|:-----|
@@ -35,13 +35,13 @@ Enthält einen Datenstrom, der mit beibehaltenen Format einer Struktur [TZDEFINI
 |Datentyp:  <br/> |PT_BINARY  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Versionen von Microsoft Outlook seit Microsoft Office Outlook 2007 und Lösungen basierend auf Collaboration Data Objects (CDO) 1.2.1 (engl.), die im Kalender von Outlook oder Exchange Server ausgeführt haben aktualisieren Tool verwendet die **DispidApptTZDefRecur** und ** DispidTimeZoneStruct** ([PidLidTimeZoneStruct](pidlidtimezonestruct-canonical-property.md))-Eigenschaften, um festzustellen, ob die Besprechungsserie angepasst werden soll, wenn die Regeln der Zeitzone ändern. Diese Eigenschaften müssen synchronisiert werden, weil ältere Clients die **DispidTimeZoneStruct** -Eigenschaft immer noch bearbeiten können. Um zu ermitteln, ob die beiden Eigenschaften synchronisiert werden, sollte der **wFlags** Member für die Regel, **die dispidtimezonestruct** entspricht, die TZRULE_FLAG_RECUR_CURRENT_TZREG gekennzeichnet sind. Wenn dieses Flag nicht festgelegt ist, oder es wird festgelegt, und die Regel in der **DispidTimeZoneStruct** -Eigenschaft nicht der markierten Regel entspricht, die **DispidApptTZDefRecur** -Eigenschaft verworfen werden muss und **DispidTimeZoneStruct** stattdessen verwendet werden soll. 
   
 Beim Schreiben der **DispidApptTZDefRecur** und die **DispidTimeZoneStruct** -Eigenschaft um eine neue Besprechungsserie oder, wenn Sie eine beliebige Auswahl mit der **DispidTimeZoneStruct** -Eigenschaft, die aktuelle Definition für die Zeitzone (treffen gemäß die Windows-Registrierung) sollte verwendet werden. 
   
-Ein Parser wird beim Lesen eines Stream-Objekts, das aus **DispidApptTZDefRecur**abgerufen wird, oder wenn er in ein Stream-Objekt für eine binäre Eigenschaft wie **DispidApptTZDefRecur**Engagement **TZDEFINITION** beibehalten. Weitere Informationen finden Sie unter [Speichern von TZDEFINITION in ein Stream-Objekt an eine binäre Eigenschaft übermittelt werden](http://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
+Ein Parser wird beim Lesen eines Stream-Objekts, das aus **DispidApptTZDefRecur**abgerufen wird, oder wenn er in ein Stream-Objekt für eine binäre Eigenschaft wie **DispidApptTZDefRecur**Engagement **TZDEFINITION** beibehalten. Weitere Informationen finden Sie unter [Speichern von TZDEFINITION in ein Stream-Objekt an eine binäre Eigenschaft übermittelt werden](https://msdn.microsoft.com/library/0dec535d-d48f-39a5-97d5-0bd109134b3b%28Office.15%29.aspx).
   
  **DispidApptTZDefRecur** gibt die Informationen zur Zeitzone, die Beschreibung der Vorgehensweise die Besprechungsdatum und Uhrzeit auf einer Terminserie und von koordinierte Weltzeit (UTC) zu konvertieren. Wenn diese Eigenschaft wird festgelegt, aber es die Daten, die mit den Daten dargestellt durch **DispidTimeZoneStruct**inkonsistente hat, muss der Client **DispidTimeZoneStruct** anstelle von **DispidApptTZDefRecur**verwenden. Wenn **DispidApptTZDefRecur** nicht festgelegt ist, wird stattdessen die **PidLidTimeZoneStruct** -Eigenschaft verwendet werden. Die Felder in dieser BLOB werden in little-Endian-Bytereihenfolge codiert. 
   
@@ -49,11 +49,11 @@ Ein Parser wird beim Lesen eines Stream-Objekts, das aus **DispidApptTZDefRecur*
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

@@ -12,12 +12,12 @@ api_type:
 - COM
 ms.assetid: 3179442c-6499-464a-93af-eb0a7a5b0d30
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 78bb5114b78142ce18d3f83c34795b72910c87a2
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 6fa0579dcd98a0d819e58e62d8a42cb2972a9d1e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22573712"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391556"
 ---
 # <a name="pidtagscheduleinfomonthstentative-canonical-property"></a>PidTagScheduleInfoMonthsTentative (kanonische Eigenschaft)
 
@@ -34,7 +34,7 @@ Enthält die Monate in der Nachricht Frei/Gebucht-Informationen mit Vorbehalt ma
 |Datentyp:  <br/> |PT_MV_LONG  <br/> |
 |Bereich:  <br/> |Frei/Gebucht-Informationen  <br/> |
    
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
 Die Anzahl von Werten in dieser Eigenschaft muss zwischen 0 (null) und die Anzahl der Monate nach der Veröffentlichung der Zeitraum zwischen dem **PR_FREEBUSY_PUBLISH_START** ([PidTagFreeBusyPublishStart](pidtagfreebusypublishstart-canonical-property.md)) und **PR_FREEBUSY_PUBLISH_END ist Bereich abgedeckt **([PidTagFreeBusyPublishEnd](pidtagfreebusypublishend-canonical-property.md))-Eigenschaften.
   
@@ -44,11 +44,11 @@ Jeder Wert in dieser Eigenschaft hat einen Monat und Jahr, die in dem er codiert
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOPFFB]](http://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
+[[MS-OXOPFFB]](https://msdn.microsoft.com/library/1a527299-7211-4d27-a74c-b69bd0746320%28Office.15%29.aspx)
   
 > Veröffentlicht die Verfügbarkeit eines Benutzers oder einer Ressource.
     

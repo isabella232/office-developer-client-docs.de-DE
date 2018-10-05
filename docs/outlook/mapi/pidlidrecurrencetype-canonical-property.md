@@ -12,18 +12,18 @@ api_type:
 - COM
 ms.assetid: 81ad2e8a-661f-4fc7-bee4-848db3285e31
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 8f3c385c29589638bc314cc15635a12bb157d949
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 7a0ea0dfe236341815fe94fb570908d7034fc83e
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22568742"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389176"
 ---
 # <a name="pidlidrecurrencetype-canonical-property"></a>PidLidRecurrenceType (kanonische Eigenschaft)
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
 Gibt den Serientyp von sich wiederholenden Reihe.
   
@@ -35,7 +35,7 @@ Gibt den Serientyp von sich wiederholenden Reihe.
 |Datentyp:  <br/> |PT_LONG  <br/> |
 |Bereich:  <br/> |Kalender  <br/> |
    
-## <a name="remarks"></a>HinwBemerkungeneise
+## <a name="remarks"></a>Hinweise
 
 Diese Eigenschaft gibt an, welche Serie von sich wiederholenden Reihe mithilfe der unten aufgeführten Werte.
   
@@ -51,11 +51,11 @@ Diese Eigenschaft gibt an, welche Serie von sich wiederholenden Reihe mithilfe d
 
 ### <a name="protocol-specifications"></a>Protokollspezifikationen
 
-[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
+[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)
   
 > Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.
     
-[[MS-OXOCAL]](http://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
+[[MS-OXOCAL]](https://msdn.microsoft.com/library/09861fde-c8e4-4028-9346-e7c214cfdba1%28Office.15%29.aspx)
   
 > Gibt die Eigenschaften und Vorgänge für den Termin, einer Besprechungsanfrage und Antwortnachrichten.
     

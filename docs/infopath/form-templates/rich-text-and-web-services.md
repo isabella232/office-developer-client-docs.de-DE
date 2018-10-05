@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 53fddc3f-e9d9-db76-6b84-11befdb23fb0
 description: 'Microsoft InfoPath unterstützt binden ein Feld für Rich-Text-Steuerelement in einem Formular an ein XML-Element, das von einem Webdienst empfangen wird, und Senden von Daten aus einem Feld rich-Text-Steuerelement an ein XML-Element über einen Webdienst. Das Element muss das Format Extensible HyperText Markup Language (XHTML) entsprechen. Beispielsweise würde das Schema für ein Element namens MyRichTextElement, die rich-Text enthält die folgenden XML-Schemadefinition haben:'
-ms.openlocfilehash: 07a7a3dbc0f054160adce54e316b01797feacd8a
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: d10f4a8cedcff43d1c351068859aee0edf607c81
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790833"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391815"
 ---
 # <a name="rich-text-and-web-services"></a>Rich-Text und Webdienste
 
@@ -21,18 +21,18 @@ Microsoft InfoPath unterstützt binden ein **Feld für Rich-Text** -Steuerelemen
 <xsd:element name="MyRichTextElement"> 
     <xsd:complexType mixed="true"> 
         <xsd:sequence> 
-            <xsd:any namespace="http://www.w3.org/1999/xhtml" processContents="lax" 
+            <xsd:any namespace="https://www.w3.org/1999/xhtml" processContents="lax" 
                 minOccurs="0" maxOccurs="unbounded"/> 
         </xsd:sequence> 
     </xsd:complexType> 
 </xsd:element>
 ```
 
-Bevor Sie mit dem XHTML-Element ein **Feld für Rich-Text** -Steuerelement gebunden werden kann, sollte das Element mit einem Wrapperknoten umbrochen werden; dieser Wrapperknoten kann zu einem beliebigen Namespace gehören. Der Wrapperknoten kann wie folgt aussehen: 
+Bevor ein **Feld für Rich-Text**-Steuerelement an das XHTML-Element gebunden werden kann, muss das Element mit einem Wrapperknoten gepackt werden; dieser Wrapperknoten kann zu einem beliebigen Namespace gehören. Der Wrapperknoten kann so aussehen: 
   
 ```xml
-<xhtmlNode xmlns="http:// someNamespace"> 
-    <div xmlns="http://www.w3.org/1999/xhtml">Your rich text here</div> 
+<xhtmlNode xmlns="https:// someNamespace"> 
+    <div xmlns="https://www.w3.org/1999/xhtml">Your rich text here</div> 
 </xhtmlNode>
 ```
 
@@ -55,9 +55,9 @@ public XmlNode getXhtml()
             XmlDocument document = new XmlDocument(); 
  
             // Create a wrapping node with the name of the rich text field. 
-            // The "http://someNameSpace" can be any arbitrary namespace 
+            // The "https://someNameSpace" can be any arbitrary namespace 
             XmlNode richNode = document.CreateNode 
-                        (XmlNodeType.Element, "MyRichTextElement", "http://someNameSpace"); 
+                        (XmlNodeType.Element, "MyRichTextElement", "https://someNameSpace"); 
  
             // Temporary XmlDocument 
             XmlDocument tempDocument = new XmlDocument(); 
@@ -69,7 +69,7 @@ public XmlNode getXhtml()
             catch (XmlException) 
             { 
                 // If the file does not exist or content is not valid XML 
-                tempDocument.LoadXml("<div xmlns=\"http://www.w3.org/1999/xhtml\"></div>"); 
+                tempDocument.LoadXml("<div xmlns=\"https://www.w3.org/1999/xhtml\"></div>"); 
             } 
  
             // Add the file content to the xml 
@@ -98,7 +98,7 @@ public void setXhtml(XmlNode xn)
             { 
                 // If nothing was submitted or the rich text field is empty, 
                 // create a DIV that references the XHTML namespace 
-                XmlElement div = document.CreateElement("div", "http://www.w3.org/1999/xhtml"); 
+                XmlElement div = document.CreateElement("div", "https://www.w3.org/1999/xhtml"); 
                 // Copy the node to our own XmlDocument 
                 document.AppendChild(div); 
             } 
@@ -106,7 +106,7 @@ public void setXhtml(XmlNode xn)
             { 
                 // If plain text is passed in, wrap it in a DIV 
                 // that references the XHTML namespace 
-                XmlElement div = document.CreateElement("div", "http://www.w3.org/1999/xhtml"); 
+                XmlElement div = document.CreateElement("div", "https://www.w3.org/1999/xhtml"); 
                 // Copy the text to the DIV. 
                 div.AppendChild(document.ImportNode(xn, true)); 
                 // Copy the node to our own XmlDocument 
@@ -132,34 +132,34 @@ Führen Sie die folgenden Schritte aus, um ein Formular zum Testen des Beispielw
 
 1. Öffnen Sie im InfoPath-Formular-Designer.
     
-2. Doppelklicken Sie auf der Registerkarte **neu** auf **Webdienst** unter **Erweiterte Formularvorlagen**.
+2. Doppelklicken Sie auf der Registerkarte **Neu** unter **Erweiterte Formularvorlagen** auf **Webdienst**.
     
-3. Klicken Sie im Dialogfeld **Datenverbindungs-Assistenten** wählen Sie **Daten empfangen**aus, und klicken Sie dann auf **Weiter**.
+3. Wählen Sie im Dialogfeld **Datenverbindungs-Assistent** die Option **Daten empfangen** aus, und klicken Sie dann auf **Weiter**.
     
-4. Geben Sie die Adresse des Webdiensts, die die Beispiel-Webdienstmethoden enthält, und klicken Sie dann auf **Weiter**. 
+4. Geben Sie die Adresse des Webdiensts ein, der die Beispiele für Webdienstmethoden enthält, und klicken Sie dann auf **Weiter**. 
     
-5. Wählen Sie für die Empfangsmethode **GetXhtml** als Vorgang aus, und klicken Sie dann auf **Weiter**.
+5. Wählen Sie **getXhtml** als Vorgang für die Empfangsmethode aus, und klicken Sie dann auf **Weiter**.
     
-6. **GetXHTML** Webdienstmethode akzeptiert keine Parameter, klicken Sie auf **Weiter**.
+6. Für die **getXHTML**-Webdienstmethode können keine Parameter verwendet werden. Klicken Sie daher auf **Weiter**.
     
 7. Klicken Sie auf **Fertig stellen**.
     
-8. Klicken Sie auf der Registerkarte **Daten** in der Gruppe **Übermittlungsaktionen** auf **An andere Speicherorte**und klicken Sie dann auf **Webdienst** , um den gleichen Webdienst zum Senden von Daten verwenden. 
+8. Klicken Sie auf der Registerkarte **Daten** in der Gruppe **Übermittlungsaktionen** auf **An andere Speicherorte** und dann auf **Webdienst**, um zum Senden der Daten den gleichen Webdienst zu verwenden. 
     
-9. Geben Sie die Adresse des Webdiensts, die die Beispiel-Webdienstmethoden enthält, und klicken Sie dann auf **Weiter**.
+9. Geben Sie die Adresse des Webdiensts ein, der die Beispiele für Webdienstmethoden enthält, und klicken Sie dann auf **Weiter**.
     
-10. Wählen Sie **SetXhtml** als Vorgang für die Submit-Methode, und klicken Sie dann auf **Weiter**.
+10. Wählen Sie **setXhtml** als Vorgang für die Sendemethode aus, und klicken Sie dann auf **Weiter**.
     
 11. Klicken Sie auf **Ändern**, erweitern Sie den Ordner **DataFields** , erweitern Sie den Ordner **S0: getXhtmlResponse** , erweitern Sie den Ordner **GetXhtmlResult** , wählen Sie das **MyRichTextElement** -Element, und klicken Sie dann auf **Weiter**.
     
 12. Klicken Sie auf **Fertig stellen**.
     
-13. Erweitern Sie im Aufgabenbereich **Felder** den Ordner **DataFields** . 
+13. Erweitern Sie im Aufgabenbereich **Felder** den Ordner **dataFields**. 
     
 14. Erweitern Sie den Ordner **S0: getXhtmlResponse** und **GetXhtmlResult** , und ziehen Sie das **MyRichTextElement** -Element in das Formular. InfoPath erkennt, dass das **MyRichTextElement** -Element ein Element der XHTML ist und ein rich-Text-Steuerelement verwendet gebunden. 
     
 15. Speichern oder veröffentlichen Sie das Formular.
     
-Zum Testen des Formulars beim Öffnen Sie des Formulars, geben Sie einige rich-Text-Inhalt wie Bilder, Tabellen und formatierten Text. Klicken Sie auf **Absenden** auf dem Menüband die rich-Text-Inhalte in der Datei out.xml auf dem Server zu speichern. Klicken Sie auf der Registerkarte **Ansicht** auf **Abfrage** , und klicken Sie dann auf die Schaltfläche **Abfrage ausführen** , auf dem Formular. Die XHTML-Inhalte aus der Datei out.xml sollte das **Feld für Rich-Text** -Steuerelement angezeigt werden. Wenn das rich-Text-Feld mehrere Zeilen enthält, der Webdienst nur die erste Zeile akzeptiert und ignoriert die anderen. 
+Zum Testen des Formulars öffnen Sie das Formular und geben Rich-Text-Inhalte ein, beispielsweise Bilder, Tabellen und formatierten Text. Klicken Sie auf dem Menüband auf Senden, um den Rich-Text-Inhalt in der Datei out.xml auf dem Server zu speichern. Klicken Sie auf der Registerkarte Ansicht auf Abfrage, und klicken Sie dann im Formular auf die Schaltfläche Abfrage ausführen. Im Feld für Rich-Text-Steuerelement sollte der XHTML-Inhalt aus der Datei out.xml angezeigt werden. Wenn das Rich-Text-Feld mehrere Zeilen enthält, wird vom Webdienst nur die erste Zeile akzeptiert, und der Rest wird ignoriert. 
   
 

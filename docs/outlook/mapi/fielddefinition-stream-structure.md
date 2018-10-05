@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 93acdbc8-381f-45d5-be6c-0cad066269fe
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: a43d4f12aa28de29116d7d074b743d6c0d61d964
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 98584e450bb820dbce05b0f8d2c6d15551586130
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22594509"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25383275"
 ---
 # <a name="fielddefinition-stream-structure"></a>FieldDefinition Stream-Struktur
 
@@ -40,7 +40,7 @@ Data-Elemente in diesem Datenstrom werden in little-Endian-Bytereihenfolge, unmi
     |PDO_FT_SWITCH  <br/> |0 x 00000020  <br/> |Dieses Feld ist vom Typ **Kombination aus** , und die Option zum **Anzeigen der ersten nicht leeren Feldes und Ignorieren nachfolgender Felder** im Dialogfeld **Formel Kombinationsfeld** ausgewählt.  <br/> |
     |PDO_PRINT_SAVEAS_DEF  <br/> |0 x 00000040  <br/> |Dieses Kennzeichen werden von Outlook nicht verwendet, aber es ist für alle benutzerdefinierten Felddefinitionen enthalten.  <br/> |
    
-- VT: Wort (2 Bytes) der Datentyp des Felds, eine Konstante aus der [VARENUM](http://msdn.microsoft.com/en-us/library/system.runtime.interopservices.varenum.aspx) -Aufzählung. 
+- VT: Wort (2 Bytes) der Datentyp des Felds, eine Konstante aus der [VARENUM](https://msdn.microsoft.com/library/system.runtime.interopservices.varenum.aspx) -Aufzählung. 
     
 - DispId: DWORD-Wert (4 Bytes) der Versendung Bezeichner des Felds. Für ein benutzerdefiniertes Feld ist der Wert 0.
     
