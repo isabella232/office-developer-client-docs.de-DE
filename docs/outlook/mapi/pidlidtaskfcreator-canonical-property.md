@@ -12,60 +12,60 @@ api_type:
 - COM
 ms.assetid: bb88750b-4773-4241-aa38-462a2634dbcb
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 9cbd237e80f4862683c1fa914f8261f8351b148e
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: dfb49fafcc2dc368e84786b526869e0447ccaf8c
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22589021"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387181"
 ---
-# <a name="pidlidtaskfcreator-canonical-property"></a><span data-ttu-id="a5fc9-103">PidLidTaskFCreator (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="a5fc9-103">PidLidTaskFCreator Canonical Property</span></span>
+# <a name="pidlidtaskfcreator-canonical-property"></a><span data-ttu-id="9823b-103">PidLidTaskFCreator (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="9823b-103">PidLidTaskFCreator Canonical Property</span></span>
 
   
   
-<span data-ttu-id="a5fc9-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="a5fc9-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="9823b-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="9823b-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="a5fc9-105">Gibt an, dass die Aufgabe durch den aktuellen Benutzer oder die Benutzer-Agent anstelle von ursprünglich erstellt wurde, durch die Verarbeitung einer Aufgabenanfrage.</span><span class="sxs-lookup"><span data-stu-id="a5fc9-105">Indicates the task was originally created by the current user or user agent instead of by processing a task request.</span></span>
+<span data-ttu-id="9823b-105">Gibt an, dass die Aufgabe durch den aktuellen Benutzer oder die Benutzer-Agent anstelle von ursprünglich erstellt wurde, durch die Verarbeitung einer Aufgabenanfrage.</span><span class="sxs-lookup"><span data-stu-id="9823b-105">Indicates the task was originally created by the current user or user agent instead of by processing a task request.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="a5fc9-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="a5fc9-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="a5fc9-107">dispidTaskFCreator</span><span class="sxs-lookup"><span data-stu-id="a5fc9-107">dispidTaskFCreator</span></span>  <br/> |
-|<span data-ttu-id="a5fc9-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="a5fc9-108">Property set:</span></span>  <br/> |<span data-ttu-id="a5fc9-109">PSETID_Task</span><span class="sxs-lookup"><span data-stu-id="a5fc9-109">PSETID_Task</span></span>  <br/> |
-|<span data-ttu-id="a5fc9-110">Long-ID (Abdeckung):</span><span class="sxs-lookup"><span data-stu-id="a5fc9-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="a5fc9-111">0x0000811E</span><span class="sxs-lookup"><span data-stu-id="a5fc9-111">0x0000811E</span></span>  <br/> |
-|<span data-ttu-id="a5fc9-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="a5fc9-112">Data type:</span></span>  <br/> |<span data-ttu-id="a5fc9-113">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="a5fc9-113">PT_BOOLEAN</span></span>  <br/> |
-|<span data-ttu-id="a5fc9-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="a5fc9-114">Area:</span></span>  <br/> |<span data-ttu-id="a5fc9-115">Aufgabe</span><span class="sxs-lookup"><span data-stu-id="a5fc9-115">Task</span></span>  <br/> |
+|<span data-ttu-id="9823b-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="9823b-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="9823b-107">dispidTaskFCreator</span><span class="sxs-lookup"><span data-stu-id="9823b-107">dispidTaskFCreator</span></span>  <br/> |
+|<span data-ttu-id="9823b-108">-Eigenschaft festgelegt:</span><span class="sxs-lookup"><span data-stu-id="9823b-108">Property set:</span></span>  <br/> |<span data-ttu-id="9823b-109">PSETID_Task</span><span class="sxs-lookup"><span data-stu-id="9823b-109">PSETID_Task</span></span>  <br/> |
+|<span data-ttu-id="9823b-110">Long-ID (Abdeckung):</span><span class="sxs-lookup"><span data-stu-id="9823b-110">Long ID (LID):</span></span>  <br/> |<span data-ttu-id="9823b-111">0x0000811E</span><span class="sxs-lookup"><span data-stu-id="9823b-111">0x0000811E</span></span>  <br/> |
+|<span data-ttu-id="9823b-112">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="9823b-112">Data type:</span></span>  <br/> |<span data-ttu-id="9823b-113">PT_BOOLEAN</span><span class="sxs-lookup"><span data-stu-id="9823b-113">PT_BOOLEAN</span></span>  <br/> |
+|<span data-ttu-id="9823b-114">Bereich:</span><span class="sxs-lookup"><span data-stu-id="9823b-114">Area:</span></span>  <br/> |<span data-ttu-id="9823b-115">Aufgabe</span><span class="sxs-lookup"><span data-stu-id="9823b-115">Task</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="a5fc9-116">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="a5fc9-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9823b-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9823b-116">Remarks</span></span>
 
-<span data-ttu-id="a5fc9-117">Der Client wird diese Eigenschaft auf true fest, wenn der Benutzer die Aufgabe erstellt und auf false festgelegt, wenn die Aufgabe von einem anderen Benutzer zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="a5fc9-117">The client sets this property to TRUE when the user creates the task and to FALSE when the task is assigned by another user.</span></span> <span data-ttu-id="a5fc9-118">Wenn Sie diese Eigenschaft nicht festgelegt lassen, wird der Wert TRUE angenommen.</span><span class="sxs-lookup"><span data-stu-id="a5fc9-118">If this property is left unset, a value of TRUE is assumed.</span></span>
+<span data-ttu-id="9823b-117">Der Client wird diese Eigenschaft auf true fest, wenn der Benutzer die Aufgabe erstellt und auf false festgelegt, wenn die Aufgabe von einem anderen Benutzer zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="9823b-117">The client sets this property to TRUE when the user creates the task and to FALSE when the task is assigned by another user.</span></span> <span data-ttu-id="9823b-118">Wenn Sie diese Eigenschaft nicht festgelegt lassen, wird der Wert TRUE angenommen.</span><span class="sxs-lookup"><span data-stu-id="9823b-118">If this property is left unset, a value of TRUE is assumed.</span></span>
   
-## <a name="related-resources"></a><span data-ttu-id="a5fc9-119">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="a5fc9-119">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="9823b-119">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="9823b-119">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="a5fc9-120">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="a5fc9-120">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="9823b-120">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="9823b-120">Protocol specifications</span></span>
 
-<span data-ttu-id="a5fc9-121">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="a5fc9-121">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="9823b-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="9823b-121">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="a5fc9-122">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="a5fc9-122">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="9823b-122">Enthält Eigenschaftendefinitionen und Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="9823b-122">Provides property set definitions and references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="a5fc9-123">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="a5fc9-123">[[MS-OXOTASK]](http://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="9823b-123">[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="9823b-123">[[MS-OXOTASK]](https://msdn.microsoft.com/library/55600ec0-6195-4730-8436-59c7931ef27e%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="a5fc9-124">Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.</span><span class="sxs-lookup"><span data-stu-id="a5fc9-124">Defines several objects that model the electronic equivalent of tasks, task assignments, and task updates.</span></span>
+> <span data-ttu-id="9823b-124">Mehrere Objekte, die das elektronische Äquivalent von Aufgaben, vorgangszuordnungen und vorgangsaktualisierungen Modell definiert.</span><span class="sxs-lookup"><span data-stu-id="9823b-124">Defines several objects that model the electronic equivalent of tasks, task assignments, and task updates.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="a5fc9-125">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="a5fc9-125">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="9823b-125">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="9823b-125">Header files</span></span>
 
-<span data-ttu-id="a5fc9-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="a5fc9-126">Mapidefs.h</span></span>
+<span data-ttu-id="9823b-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="9823b-126">Mapidefs.h</span></span>
   
-> <span data-ttu-id="a5fc9-127">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="a5fc9-127">Provides data type definitions.</span></span>
+> <span data-ttu-id="9823b-127">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="9823b-127">Provides data type definitions.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="a5fc9-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="a5fc9-128">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9823b-128">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="9823b-128">See also</span></span>
 
 
 
-[<span data-ttu-id="a5fc9-129">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a5fc9-129">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="9823b-129">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9823b-129">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="a5fc9-130">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a5fc9-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="9823b-130">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="9823b-130">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="a5fc9-131">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="a5fc9-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="9823b-131">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="9823b-131">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="a5fc9-132">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="a5fc9-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="9823b-132">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="9823b-132">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

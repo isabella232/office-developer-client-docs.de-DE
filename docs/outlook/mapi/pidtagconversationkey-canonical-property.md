@@ -8,71 +8,71 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 52c97d6c-7f4b-4522-aeac-0c1ed8475952
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: b4c8c6cf3bee0575a42bc42a1ebf5e185ef78ab4
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 00c65dae9bc29fe9cdb310b819ba99d6d46ebfe3
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22591632"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389764"
 ---
-# <a name="pidtagconversationkey-canonical-property"></a><span data-ttu-id="41191-103">PidTagConversationKey (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="41191-103">PidTagConversationKey Canonical Property</span></span>
+# <a name="pidtagconversationkey-canonical-property"></a><span data-ttu-id="1094d-103">PidTagConversationKey (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="1094d-103">PidTagConversationKey Canonical Property</span></span>
 
   
   
-<span data-ttu-id="41191-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="41191-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="1094d-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="1094d-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="41191-105">Enthält den Unterhaltung Schlüssel in Microsoft Outlook verwendet nur, wenn **IPM suchen. Nachrichten-Managers** Nachrichten wie die Nachricht, Downloadverlauf für ein Konto Post Office Protocol (POP3) enthält.</span><span class="sxs-lookup"><span data-stu-id="41191-105">Contains the conversation key used in Microsoft Outlook only when locating **IPM.MessageManager** messages, such as the message that contains download history for a Post Office Protocol (POP3) account.</span></span> <span data-ttu-id="41191-106">Diese Eigenschaft ist in Microsoft Exchange Server veraltet.</span><span class="sxs-lookup"><span data-stu-id="41191-106">This property has been deprecated in Microsoft Exchange Server.</span></span> 
+<span data-ttu-id="1094d-105">Enthält den Unterhaltung Schlüssel in Microsoft Outlook verwendet nur, wenn **IPM suchen. Nachrichten-Managers** Nachrichten wie die Nachricht, Downloadverlauf für ein Konto Post Office Protocol (POP3) enthält.</span><span class="sxs-lookup"><span data-stu-id="1094d-105">Contains the conversation key used in Microsoft Outlook only when locating **IPM.MessageManager** messages, such as the message that contains download history for a Post Office Protocol (POP3) account.</span></span> <span data-ttu-id="1094d-106">Diese Eigenschaft ist in Microsoft Exchange Server veraltet.</span><span class="sxs-lookup"><span data-stu-id="1094d-106">This property has been deprecated in Microsoft Exchange Server.</span></span> 
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="41191-107">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="41191-107">Associated properties:</span></span>  <br/> |<span data-ttu-id="41191-108">PR_CONVERSATION_KEY</span><span class="sxs-lookup"><span data-stu-id="41191-108">PR_CONVERSATION_KEY</span></span>  <br/> |
-|<span data-ttu-id="41191-109">Kennung:</span><span class="sxs-lookup"><span data-stu-id="41191-109">Identifier:</span></span>  <br/> |<span data-ttu-id="41191-110">0x000b</span><span class="sxs-lookup"><span data-stu-id="41191-110">0x000B</span></span>  <br/> |
-|<span data-ttu-id="41191-111">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="41191-111">Data type:</span></span>  <br/> |<span data-ttu-id="41191-112">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="41191-112">PT_BINARY</span></span>  <br/> |
-|<span data-ttu-id="41191-113">Bereich:</span><span class="sxs-lookup"><span data-stu-id="41191-113">Area:</span></span>  <br/> |<span data-ttu-id="41191-114">Allgemeine messaging</span><span class="sxs-lookup"><span data-stu-id="41191-114">General messaging</span></span>  <br/> |
+|<span data-ttu-id="1094d-107">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="1094d-107">Associated properties:</span></span>  <br/> |<span data-ttu-id="1094d-108">PR_CONVERSATION_KEY</span><span class="sxs-lookup"><span data-stu-id="1094d-108">PR_CONVERSATION_KEY</span></span>  <br/> |
+|<span data-ttu-id="1094d-109">Kennung:</span><span class="sxs-lookup"><span data-stu-id="1094d-109">Identifier:</span></span>  <br/> |<span data-ttu-id="1094d-110">0x000b</span><span class="sxs-lookup"><span data-stu-id="1094d-110">0x000B</span></span>  <br/> |
+|<span data-ttu-id="1094d-111">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="1094d-111">Data type:</span></span>  <br/> |<span data-ttu-id="1094d-112">PT_BINARY</span><span class="sxs-lookup"><span data-stu-id="1094d-112">PT_BINARY</span></span>  <br/> |
+|<span data-ttu-id="1094d-113">Bereich:</span><span class="sxs-lookup"><span data-stu-id="1094d-113">Area:</span></span>  <br/> |<span data-ttu-id="1094d-114">Allgemeine messaging</span><span class="sxs-lookup"><span data-stu-id="1094d-114">General messaging</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="41191-115">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="41191-115">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1094d-115">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1094d-115">Remarks</span></span>
 
-<span data-ttu-id="41191-116">Wenn Sie e-Mail-Nachrichten als Unterhaltungen und Konvertieren von Nachrichteneigenschaften in [Transport-Neutral Encapsulation Format (TNEF)](transport-neutral-encapsulation-format-tnef.md)zugreifen möchten, verwenden Sie diese Eigenschaft nicht. Verwenden Sie stattdessen die kanonischen Eigenschaften [PidTagConversationIndex](pidtagconversationindex-canonical-property.md) und [Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md) .</span><span class="sxs-lookup"><span data-stu-id="41191-116">When accessing email messages as conversations and converting message properties to [Transport-Neutral Encapsulation Format (TNEF)](transport-neutral-encapsulation-format-tnef.md), do not use this property; instead, use the [PidTagConversationIndex](pidtagconversationindex-canonical-property.md) and [PidTagConversationTopic](pidtagconversationtopic-canonical-property.md) canonical properties.</span></span> 
+<span data-ttu-id="1094d-116">Wenn Sie e-Mail-Nachrichten als Unterhaltungen und Konvertieren von Nachrichteneigenschaften in [Transport-Neutral Encapsulation Format (TNEF)](transport-neutral-encapsulation-format-tnef.md)zugreifen möchten, verwenden Sie diese Eigenschaft nicht. Verwenden Sie stattdessen die kanonischen Eigenschaften [PidTagConversationIndex](pidtagconversationindex-canonical-property.md) und [Eigenschaftpidtagconversationtopic](pidtagconversationtopic-canonical-property.md) .</span><span class="sxs-lookup"><span data-stu-id="1094d-116">When accessing email messages as conversations and converting message properties to [Transport-Neutral Encapsulation Format (TNEF)](transport-neutral-encapsulation-format-tnef.md), do not use this property; instead, use the [PidTagConversationIndex](pidtagconversationindex-canonical-property.md) and [PidTagConversationTopic](pidtagconversationtopic-canonical-property.md) canonical properties.</span></span> 
   
-## <a name="related-resources"></a><span data-ttu-id="41191-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="41191-117">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="1094d-117">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="1094d-117">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="41191-118">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="41191-118">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="1094d-118">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="1094d-118">Protocol specifications</span></span>
 
-<span data-ttu-id="41191-119">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="41191-119">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1094d-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1094d-119">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="41191-120">Bietet Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.</span><span class="sxs-lookup"><span data-stu-id="41191-120">Provides references to related Microsoft Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="1094d-120">Bietet Verweise auf Verwandte Spezifikationen von Microsoft Exchange Server-Protokoll.</span><span class="sxs-lookup"><span data-stu-id="1094d-120">Provides references to related Microsoft Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="41191-121">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="41191-121">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1094d-121">[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1094d-121">[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="41191-122">Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="41191-122">Specifies the properties and operations that are permissible on email message objects.</span></span>
+> <span data-ttu-id="1094d-122">Gibt die Eigenschaften und Operationen, die für Objekte, die e-Mail-Nachricht zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="1094d-122">Specifies the properties and operations that are permissible on email message objects.</span></span>
     
-<span data-ttu-id="41191-123">[[MS-OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="41191-123">[[MS-OXTNEF]](http://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="1094d-123">[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="1094d-123">[[MS-OXTNEF]](https://msdn.microsoft.com/library/1f0544d7-30b7-4194-b58f-adc82f3763bb%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="41191-124">Codiert und decodiert Nachrichten- und Objekte, die auf eine effiziente Streamdarstellung.</span><span class="sxs-lookup"><span data-stu-id="41191-124">Encodes and decodes message and attachment objects to an efficient stream representation.</span></span>
+> <span data-ttu-id="1094d-124">Codiert und decodiert Nachrichten- und Objekte, die auf eine effiziente Streamdarstellung.</span><span class="sxs-lookup"><span data-stu-id="1094d-124">Encodes and decodes message and attachment objects to an efficient stream representation.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="41191-125">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="41191-125">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="1094d-125">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="1094d-125">Header files</span></span>
 
-<span data-ttu-id="41191-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="41191-126">Mapidefs.h</span></span>
+<span data-ttu-id="1094d-126">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="1094d-126">Mapidefs.h</span></span>
   
-> <span data-ttu-id="41191-127">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="41191-127">Provides data type definitions.</span></span>
+> <span data-ttu-id="1094d-127">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="1094d-127">Provides data type definitions.</span></span>
     
-<span data-ttu-id="41191-128">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="41191-128">Mapitags.h</span></span>
+<span data-ttu-id="1094d-128">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="1094d-128">Mapitags.h</span></span>
   
-> <span data-ttu-id="41191-129">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="41191-129">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="1094d-129">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="1094d-129">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="41191-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="41191-130">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1094d-130">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="1094d-130">See also</span></span>
 
 
 
-[<span data-ttu-id="41191-131">IPM-Teilstruktur</span><span class="sxs-lookup"><span data-stu-id="41191-131">IPM Subtree</span></span>](ipm-subtree.md)
+[<span data-ttu-id="1094d-131">IPM-Teilstruktur</span><span class="sxs-lookup"><span data-stu-id="1094d-131">IPM Subtree</span></span>](ipm-subtree.md)
   
-[<span data-ttu-id="41191-132">MAPI-Spezialordner</span><span class="sxs-lookup"><span data-stu-id="41191-132">MAPI Special Folders</span></span>](mapi-special-folders.md)
+[<span data-ttu-id="1094d-132">MAPI-Spezialordner</span><span class="sxs-lookup"><span data-stu-id="1094d-132">MAPI Special Folders</span></span>](mapi-special-folders.md)
   
-[<span data-ttu-id="41191-133">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="41191-133">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="1094d-133">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1094d-133">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="41191-134">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="41191-134">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="1094d-134">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="1094d-134">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="41191-135">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="41191-135">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="1094d-135">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="1094d-135">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="41191-136">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="41191-136">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="1094d-136">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="1094d-136">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

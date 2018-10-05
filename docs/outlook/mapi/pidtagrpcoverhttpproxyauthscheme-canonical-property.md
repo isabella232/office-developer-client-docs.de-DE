@@ -8,72 +8,72 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 6da78f1a-6423-460c-b3a9-fd6441df9cef
 description: 'Letzte Änderung: Montag, 9. März 2015'
-ms.openlocfilehash: 33dc327b9e8609a5a1a8a24e131ce4ea1d1e55bf
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: ea4b90bf1190fd71701f82d43aaee384c7987ed0
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22583904"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387195"
 ---
-# <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a><span data-ttu-id="b0276-103">PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="b0276-103">PidTagRpcOverHttpProxyAuthScheme Canonical Property</span></span>
+# <a name="pidtagrpcoverhttpproxyauthscheme-canonical-property"></a><span data-ttu-id="027e1-103">PidTagRpcOverHttpProxyAuthScheme (kanonische Eigenschaft)</span><span class="sxs-lookup"><span data-stu-id="027e1-103">PidTagRpcOverHttpProxyAuthScheme Canonical Property</span></span>
 
   
   
-<span data-ttu-id="b0276-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="b0276-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="027e1-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="027e1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="b0276-105">Stellt das Authentifizierungsprotokoll für dieses Profil verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="b0276-105">Represents the authentication protocol to be used for this profile.</span></span>
+<span data-ttu-id="027e1-105">Stellt das Authentifizierungsprotokoll für dieses Profil verwendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="027e1-105">Represents the authentication protocol to be used for this profile.</span></span>
   
 |||
 |:-----|:-----|
-|<span data-ttu-id="b0276-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="b0276-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="b0276-107">PR_ROH_PROXY_AUTH_SCHEME</span><span class="sxs-lookup"><span data-stu-id="b0276-107">PR_ROH_PROXY_AUTH_SCHEME</span></span>  <br/> |
-|<span data-ttu-id="b0276-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="b0276-108">Identifier:</span></span>  <br/> |<span data-ttu-id="b0276-109">0x6627</span><span class="sxs-lookup"><span data-stu-id="b0276-109">0x6627</span></span>  <br/> |
-|<span data-ttu-id="b0276-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="b0276-110">Data type:</span></span>  <br/> |<span data-ttu-id="b0276-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="b0276-111">PT_LONG</span></span>  <br/> |
-|<span data-ttu-id="b0276-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="b0276-112">Area:</span></span>  <br/> |<span data-ttu-id="b0276-113">Verschiedenes</span><span class="sxs-lookup"><span data-stu-id="b0276-113">Miscellaneous</span></span>  <br/> |
+|<span data-ttu-id="027e1-106">Zugeordnete Eigenschaften:</span><span class="sxs-lookup"><span data-stu-id="027e1-106">Associated properties:</span></span>  <br/> |<span data-ttu-id="027e1-107">PR_ROH_PROXY_AUTH_SCHEME</span><span class="sxs-lookup"><span data-stu-id="027e1-107">PR_ROH_PROXY_AUTH_SCHEME</span></span>  <br/> |
+|<span data-ttu-id="027e1-108">Kennung:</span><span class="sxs-lookup"><span data-stu-id="027e1-108">Identifier:</span></span>  <br/> |<span data-ttu-id="027e1-109">0x6627</span><span class="sxs-lookup"><span data-stu-id="027e1-109">0x6627</span></span>  <br/> |
+|<span data-ttu-id="027e1-110">Datentyp:</span><span class="sxs-lookup"><span data-stu-id="027e1-110">Data type:</span></span>  <br/> |<span data-ttu-id="027e1-111">PT_LONG</span><span class="sxs-lookup"><span data-stu-id="027e1-111">PT_LONG</span></span>  <br/> |
+|<span data-ttu-id="027e1-112">Bereich:</span><span class="sxs-lookup"><span data-stu-id="027e1-112">Area:</span></span>  <br/> |<span data-ttu-id="027e1-113">Verschiedenes</span><span class="sxs-lookup"><span data-stu-id="027e1-113">Miscellaneous</span></span>  <br/> |
    
-## <a name="remarks"></a><span data-ttu-id="b0276-114">HinwBemerkungeneise</span><span class="sxs-lookup"><span data-stu-id="b0276-114">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="027e1-114">Hinweise</span><span class="sxs-lookup"><span data-stu-id="027e1-114">Remarks</span></span>
 
-<span data-ttu-id="b0276-115">Diese Eigenschaft kann für Standardauthentifizierung oder NT LAN Manager (NTLM) Authentifizierung festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="b0276-115">This property can be set for either basic authentication or NT LAN Manager (NTLM) authentication.</span></span> <span data-ttu-id="b0276-116">Die möglichen Werte für diese Eigenschaft sind wie folgt.</span><span class="sxs-lookup"><span data-stu-id="b0276-116">The possible values for this property are as follow.</span></span>
+<span data-ttu-id="027e1-115">Diese Eigenschaft kann für Standardauthentifizierung oder NT LAN Manager (NTLM) Authentifizierung festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="027e1-115">This property can be set for either basic authentication or NT LAN Manager (NTLM) authentication.</span></span> <span data-ttu-id="027e1-116">Die möglichen Werte für diese Eigenschaft sind wie folgt.</span><span class="sxs-lookup"><span data-stu-id="027e1-116">The possible values for this property are as follow.</span></span>
   
-|<span data-ttu-id="b0276-117">**Name**</span><span class="sxs-lookup"><span data-stu-id="b0276-117">**Name**</span></span>|<span data-ttu-id="b0276-118">**Wert**</span><span class="sxs-lookup"><span data-stu-id="b0276-118">**Value**</span></span>|<span data-ttu-id="b0276-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="b0276-119">**Description**</span></span>|
+|<span data-ttu-id="027e1-117">**Name**</span><span class="sxs-lookup"><span data-stu-id="027e1-117">**Name**</span></span>|<span data-ttu-id="027e1-118">**Wert**</span><span class="sxs-lookup"><span data-stu-id="027e1-118">**Value**</span></span>|<span data-ttu-id="027e1-119">**Beschreibung**</span><span class="sxs-lookup"><span data-stu-id="027e1-119">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="b0276-120">**ROHAUTH_BASIC**</span><span class="sxs-lookup"><span data-stu-id="b0276-120">**ROHAUTH_BASIC**</span></span> <br/> |<span data-ttu-id="b0276-121">0 x 1</span><span class="sxs-lookup"><span data-stu-id="b0276-121">0x1</span></span>  <br/> |<span data-ttu-id="b0276-122">Standardauthentifizierung</span><span class="sxs-lookup"><span data-stu-id="b0276-122">Basic authentication</span></span>  <br/> |
-|<span data-ttu-id="b0276-123">**ROHAUTH_NTLM**</span><span class="sxs-lookup"><span data-stu-id="b0276-123">**ROHAUTH_NTLM**</span></span> <br/> |<span data-ttu-id="b0276-124">0 x 2</span><span class="sxs-lookup"><span data-stu-id="b0276-124">0x2</span></span>  <br/> |<span data-ttu-id="b0276-125">NTLM-Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="b0276-125">NTLM authentication</span></span>  <br/> |
+|<span data-ttu-id="027e1-120">**ROHAUTH_BASIC**</span><span class="sxs-lookup"><span data-stu-id="027e1-120">**ROHAUTH_BASIC**</span></span> <br/> |<span data-ttu-id="027e1-121">0 x 1</span><span class="sxs-lookup"><span data-stu-id="027e1-121">0x1</span></span>  <br/> |<span data-ttu-id="027e1-122">Standardauthentifizierung</span><span class="sxs-lookup"><span data-stu-id="027e1-122">Basic authentication</span></span>  <br/> |
+|<span data-ttu-id="027e1-123">**ROHAUTH_NTLM**</span><span class="sxs-lookup"><span data-stu-id="027e1-123">**ROHAUTH_NTLM**</span></span> <br/> |<span data-ttu-id="027e1-124">0 x 2</span><span class="sxs-lookup"><span data-stu-id="027e1-124">0x2</span></span>  <br/> |<span data-ttu-id="027e1-125">NTLM-Authentifizierung</span><span class="sxs-lookup"><span data-stu-id="027e1-125">NTLM authentication</span></span>  <br/> |
    
-## <a name="related-resources"></a><span data-ttu-id="b0276-126">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="b0276-126">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="027e1-126">Verwandte Ressourcen</span><span class="sxs-lookup"><span data-stu-id="027e1-126">Related resources</span></span>
 
-### <a name="protocol-specifications"></a><span data-ttu-id="b0276-127">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="b0276-127">Protocol specifications</span></span>
+### <a name="protocol-specifications"></a><span data-ttu-id="027e1-127">Protokollspezifikationen</span><span class="sxs-lookup"><span data-stu-id="027e1-127">Protocol specifications</span></span>
 
-<span data-ttu-id="b0276-128">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0276-128">[[MS-OXPROPS]](http://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="027e1-128">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="027e1-128">[[MS-OXPROPS]](https://msdn.microsoft.com/library/f6ab1613-aefe-447d-a49c-18217230b148%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="b0276-129">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="b0276-129">Provides references to related Exchange Server protocol specifications.</span></span>
+> <span data-ttu-id="027e1-129">Bietet Verweise auf Verwandte Exchange Server-Spezifikationen.</span><span class="sxs-lookup"><span data-stu-id="027e1-129">Provides references to related Exchange Server protocol specifications.</span></span>
     
-<span data-ttu-id="b0276-130">[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0276-130">[[MS-OXCFXICS]](http://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="027e1-130">[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="027e1-130">[[MS-OXCFXICS]](https://msdn.microsoft.com/library/b9752f3d-d50d-44b8-9e6b-608a117c8532%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="b0276-131">Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.</span><span class="sxs-lookup"><span data-stu-id="b0276-131">Defines the basic data structures that are used in remote operations.</span></span>
+> <span data-ttu-id="027e1-131">Definiert die grundlegende Datenstrukturen, die verwendet werden remote-Vorgängen.</span><span class="sxs-lookup"><span data-stu-id="027e1-131">Defines the basic data structures that are used in remote operations.</span></span>
     
-<span data-ttu-id="b0276-132">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="b0276-132">[[MS-OXOMSG]](http://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
+<span data-ttu-id="027e1-132">[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span><span class="sxs-lookup"><span data-stu-id="027e1-132">[[MS-OXOMSG]](https://msdn.microsoft.com/library/daa9120f-f325-4afb-a738-28f91049ab3c%28Office.15%29.aspx)</span></span>
   
-> <span data-ttu-id="b0276-133">Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="b0276-133">Specifies the properties and operations that are permissible for email message objects.</span></span>
+> <span data-ttu-id="027e1-133">Gibt die Eigenschaften und Operationen, die für e-Mail-Nachrichtenobjekte zulässig sind.</span><span class="sxs-lookup"><span data-stu-id="027e1-133">Specifies the properties and operations that are permissible for email message objects.</span></span>
     
-### <a name="header-files"></a><span data-ttu-id="b0276-134">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="b0276-134">Header files</span></span>
+### <a name="header-files"></a><span data-ttu-id="027e1-134">Header-Dateien</span><span class="sxs-lookup"><span data-stu-id="027e1-134">Header files</span></span>
 
-<span data-ttu-id="b0276-135">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="b0276-135">Mapidefs.h</span></span>
+<span data-ttu-id="027e1-135">Mapidefs.h</span><span class="sxs-lookup"><span data-stu-id="027e1-135">Mapidefs.h</span></span>
   
-> <span data-ttu-id="b0276-136">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="b0276-136">Provides data type definitions.</span></span>
+> <span data-ttu-id="027e1-136">Enthält die Datentypdefinitionen.</span><span class="sxs-lookup"><span data-stu-id="027e1-136">Provides data type definitions.</span></span>
     
-<span data-ttu-id="b0276-137">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="b0276-137">Mapitags.h</span></span>
+<span data-ttu-id="027e1-137">Mapitags.h</span><span class="sxs-lookup"><span data-stu-id="027e1-137">Mapitags.h</span></span>
   
-> <span data-ttu-id="b0276-138">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="b0276-138">Contains definitions of properties listed as alternate names.</span></span>
+> <span data-ttu-id="027e1-138">Enthält Definitionen von Eigenschaften, die als Alternative Namen aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="027e1-138">Contains definitions of properties listed as alternate names.</span></span>
     
-## <a name="see-also"></a><span data-ttu-id="b0276-139">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="b0276-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="027e1-139">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="027e1-139">See also</span></span>
 
 
 
-[<span data-ttu-id="b0276-140">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b0276-140">MAPI Properties</span></span>](mapi-properties.md)
+[<span data-ttu-id="027e1-140">MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="027e1-140">MAPI Properties</span></span>](mapi-properties.md)
   
-[<span data-ttu-id="b0276-141">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b0276-141">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
+[<span data-ttu-id="027e1-141">Kanonische MAPI-Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="027e1-141">MAPI Canonical Properties</span></span>](mapi-canonical-properties.md)
   
-[<span data-ttu-id="b0276-142">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="b0276-142">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
+[<span data-ttu-id="027e1-142">Zuordnen von kanonischen Eigenschaftennamen zu MAPI-Namen</span><span class="sxs-lookup"><span data-stu-id="027e1-142">Mapping Canonical Property Names to MAPI Names</span></span>](mapping-canonical-property-names-to-mapi-names.md)
   
-[<span data-ttu-id="b0276-143">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="b0276-143">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
+[<span data-ttu-id="027e1-143">Zuordnen von MAPI-Namen zu kanonische Eigenschaftennamen</span><span class="sxs-lookup"><span data-stu-id="027e1-143">Mapping MAPI Names to Canonical Property Names</span></span>](mapping-mapi-names-to-canonical-property-names.md)
 

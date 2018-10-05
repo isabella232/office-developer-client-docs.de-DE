@@ -7,26 +7,26 @@ ms.topic: overview
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: a9c2f3d9-cea2-49a3-b709-40dc614b9f86
-description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.
-ms.openlocfilehash: 0365538d96f779d0c4b61d636dad3c09bcb05611
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. In diesem Dokument, einschließlich URLs und anderer Verweise auf Internetwebsites, enthaltenen Informationen und Sichten können ohne vorherige Ankündigung geändert werden. Die Verwendung erfolgt auf eigenes Risiko.
+ms.openlocfilehash: 75aff5503f4caf0c8455a58bcda481e0c5e803fd
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19796070"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25388616"
 ---
-# <a name="office-2013-documentation-copyright-notice"></a><span data-ttu-id="99e39-105">Office-2013 Dokumentation copyright-Hinweis</span><span class="sxs-lookup"><span data-stu-id="99e39-105">Office 2013 documentation copyright notice</span></span>
+# <a name="office-2013-documentation-copyright-notice"></a><span data-ttu-id="2d12c-105">Office-2013 Dokumentation copyright-Hinweis</span><span class="sxs-lookup"><span data-stu-id="2d12c-105">Office 2013 documentation copyright notice</span></span>
 
-<span data-ttu-id="99e39-p102">Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.</span><span class="sxs-lookup"><span data-stu-id="99e39-p102">This document is provided "as-is". Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it.</span></span> 
+<span data-ttu-id="2d12c-p102">Dieses Dokument wird in der vorliegenden Version zur Verfügung gestellt. Die Informationen und Ansichten in diesem Dokument, einschließlich URLs und anderer Verweise auf Internet-Websites, können sich ohne Ankündigung ändern. Die Verwendung erfolgt auf eigenes Risiko.</span><span class="sxs-lookup"><span data-stu-id="2d12c-p102">This document is provided "as-is". Information and views expressed in this document, including URL and other Internet website references, may change without notice. You bear the risk of using it.</span></span> 
   
-<span data-ttu-id="99e39-p103">Einige der hier dargestellten Beispiele dienen nur zu Illustrationszwecken und sind fiktional. Jegliche Ähnlichkeiten mit oder Verbindungen zur Realität sind rein zufällig.</span><span class="sxs-lookup"><span data-stu-id="99e39-p103">Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.</span></span>
+<span data-ttu-id="2d12c-p103">Einige der hier dargestellten Beispiele dienen nur zu Illustrationszwecken und sind fiktional. Jegliche Ähnlichkeiten mit oder Verbindungen zur Realität sind rein zufällig.</span><span class="sxs-lookup"><span data-stu-id="2d12c-p103">Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.</span></span>
   
-<span data-ttu-id="99e39-p104">Dieses Dokument überträgt Ihnen keinerlei Rechte an geistigem Eigentum an jeglichen Microsoft-Produkten. Sie dürfen dieses Dokument für Ihre internen Zwecke und Verweise nutzen und kopieren.</span><span class="sxs-lookup"><span data-stu-id="99e39-p104">This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.</span></span> 
+<span data-ttu-id="2d12c-p104">Dieses Dokument überträgt Ihnen keinerlei Rechte an geistigem Eigentum an jeglichen Microsoft-Produkten. Sie dürfen dieses Dokument für Ihre internen Zwecke und Verweise nutzen und kopieren.</span><span class="sxs-lookup"><span data-stu-id="2d12c-p104">This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.</span></span> 
   
-<span data-ttu-id="99e39-113">© 2013 Microsoft Corporation.</span><span class="sxs-lookup"><span data-stu-id="99e39-113">© 2013 Microsoft Corporation.</span></span> <span data-ttu-id="99e39-114">Alle Rechte vorbehalten.</span><span class="sxs-lookup"><span data-stu-id="99e39-114">All rights reserved.</span></span>
+<span data-ttu-id="2d12c-113">© 2013 Microsoft Corporation.</span><span class="sxs-lookup"><span data-stu-id="2d12c-113">© 2013 Microsoft Corporation.</span></span> <span data-ttu-id="2d12c-114">Alle Rechte vorbehalten.</span><span class="sxs-lookup"><span data-stu-id="2d12c-114">All rights reserved.</span></span>
   
-<span data-ttu-id="99e39-115">Microsoft, Access, ActiveX, ClearType, Excel, FrontPage, InfoPath, IntelliSense, JScript, MSDN, MS-DOS, MSN, OneNote, Outlook, PowerPoint, SharePoint, Silverlight, SmartArt, SQL Server, Visio, Visual Basic, Visual C#, Visual C++, Visual Studio, Win32, Windows, Windows PowerShell, Windows Server und Windows Vista sind Marken der Microsoft-Unternehmensgruppe.</span><span class="sxs-lookup"><span data-stu-id="99e39-115">Microsoft, Access, ActiveX, ClearType, Excel, FrontPage, InfoPath, IntelliSense, JScript, MSDN, MS-DOS, MSN, OneNote, Outlook, PowerPoint, SharePoint, Silverlight, SmartArt, SQL Server, Visio, Visual Basic, Visual C#, Visual C++, Visual Studio, Win32, Windows, Windows PowerShell, Windows Server, and Windows Vista are trademarks of the Microsoft group of companies.</span></span>
+<span data-ttu-id="2d12c-115">Microsoft, Access, ActiveX, ClearType, Excel, FrontPage, InfoPath, IntelliSense, JScript, MSDN, MS-DOS, MSN, OneNote, Outlook, PowerPoint, SharePoint, Silverlight, SmartArt, SQL Server, Visio, Visual Basic, Visual C#, Visual C++, Visual Studio, Win32, Windows, Windows PowerShell, Windows Server und Windows Vista sind Marken der Microsoft-Unternehmensgruppe.</span><span class="sxs-lookup"><span data-stu-id="2d12c-115">Microsoft, Access, ActiveX, ClearType, Excel, FrontPage, InfoPath, IntelliSense, JScript, MSDN, MS-DOS, MSN, OneNote, Outlook, PowerPoint, SharePoint, Silverlight, SmartArt, SQL Server, Visio, Visual Basic, Visual C#, Visual C++, Visual Studio, Win32, Windows, Windows PowerShell, Windows Server, and Windows Vista are trademarks of the Microsoft group of companies.</span></span>
   
-<span data-ttu-id="99e39-116">Alle anderen Marken sind Eigentum ihrer jeweiligen Inhaber.</span><span class="sxs-lookup"><span data-stu-id="99e39-116">All other trademarks are property of their respective owners.</span></span>
+<span data-ttu-id="2d12c-116">Alle anderen Marken sind Eigentum ihrer jeweiligen Inhaber.</span><span class="sxs-lookup"><span data-stu-id="2d12c-116">All other trademarks are property of their respective owners.</span></span>
   
 

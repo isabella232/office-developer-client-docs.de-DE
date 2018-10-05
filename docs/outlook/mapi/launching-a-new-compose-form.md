@@ -8,36 +8,36 @@ api_type:
 - COM
 ms.assetid: ffceaa03-76f2-42e0-b28d-226f1f9cc889
 description: 'Letzte Änderung: Samstag, 23. Juli 2011'
-ms.openlocfilehash: 66aa5fe08b1c0be3906fa9a0483bbdec37c095c5
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+ms.openlocfilehash: 29d53ba1242014a501a01d161c19dade164f393a
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22564500"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25391773"
 ---
-# <a name="launching-a-new-compose-form"></a><span data-ttu-id="613a1-103">Starten eines neuen Formulars zum Verfassen</span><span class="sxs-lookup"><span data-stu-id="613a1-103">Launching a New Compose Form</span></span>
+# <a name="launching-a-new-compose-form"></a><span data-ttu-id="279d6-103">Starten eines neuen Formulars zum Verfassen</span><span class="sxs-lookup"><span data-stu-id="279d6-103">Launching a New Compose Form</span></span>
 
   
   
-<span data-ttu-id="613a1-104">**Betrifft**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="613a1-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
+<span data-ttu-id="279d6-104">**Gilt für**: Outlook 2013 | Outlook 2016</span><span class="sxs-lookup"><span data-stu-id="279d6-104">**Applies to**: Outlook 2013 | Outlook 2016</span></span> 
   
-<span data-ttu-id="613a1-105">Formular Server Implementierer erwarten, dass die folgende Sequenz von Methode von Anrufen an ihre Server Formular und Formularobjekte, wenn eine Clientanwendung öffnet eine neue Nachricht zum Verfassen:</span><span class="sxs-lookup"><span data-stu-id="613a1-105">Form server implementers should expect the following sequence of method calls to their form server and form objects when a client application opens a new message for composing:</span></span>
+<span data-ttu-id="279d6-105">Formular Server Implementierer erwarten, dass die folgende Sequenz von Methode von Anrufen an ihre Server Formular und Formularobjekte, wenn eine Clientanwendung öffnet eine neue Nachricht zum Verfassen:</span><span class="sxs-lookup"><span data-stu-id="279d6-105">Form server implementers should expect the following sequence of method calls to their form server and form objects when a client application opens a new message for composing:</span></span>
   
-1. <span data-ttu-id="613a1-106">Die Clientanwendung ruft die [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) -Methode, um die Klasseninformationen zu dem Formular Server Nachrichtenklasse zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="613a1-106">The client application calls the [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) method to get class information about the form server's message class.</span></span> 
+1. <span data-ttu-id="279d6-106">Die Clientanwendung ruft die [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) -Methode, um die Klasseninformationen zu dem Formular Server Nachrichtenklasse zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="279d6-106">The client application calls the [IMAPIFormMgr::ResolveMessageClass](imapiformmgr-resolvemessageclass.md) method to get class information about the form server's message class.</span></span> 
     
-2. <span data-ttu-id="613a1-107">Die Clientanwendung ruft [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) zum Abrufen eines neuen Formulars-Objekts.</span><span class="sxs-lookup"><span data-stu-id="613a1-107">The client application calls [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) to get a new form object.</span></span> 
+2. <span data-ttu-id="279d6-107">Die Clientanwendung ruft [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) zum Abrufen eines neuen Formulars-Objekts.</span><span class="sxs-lookup"><span data-stu-id="279d6-107">The client application calls [IMAPIFormMgr::CreateForm](imapiformmgr-createform.md) to get a new form object.</span></span> 
     
-3. <span data-ttu-id="613a1-108">MAPI-Formular-Manager lädt der Formular-Server, wenn es nicht bereits im Arbeitsspeicher, und eine [IMAPIForm](imapiformiunknown.md) Schnittstelle aus dem Formular Server ruft.</span><span class="sxs-lookup"><span data-stu-id="613a1-108">The MAPI form manager loads the form server, if it is not already in memory, and gets an [IMAPIForm](imapiformiunknown.md) interface from the form server.</span></span> 
+3. <span data-ttu-id="279d6-108">MAPI-Formular-Manager lädt der Formular-Server, wenn es nicht bereits im Arbeitsspeicher, und eine [IMAPIForm](imapiformiunknown.md) Schnittstelle aus dem Formular Server ruft.</span><span class="sxs-lookup"><span data-stu-id="279d6-108">The MAPI form manager loads the form server, if it is not already in memory, and gets an [IMAPIForm](imapiformiunknown.md) interface from the form server.</span></span> 
     
-4. <span data-ttu-id="613a1-109">Die Client-Anwendung die resultierende **IMAPIForm** -Schnittstelle und ruft die [QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode, um das Objekt [IPersistMessage](ipersistmessageiunknown.md) Schnittstelle abrufen.</span><span class="sxs-lookup"><span data-stu-id="613a1-109">The client application takes the resulting **IMAPIForm** interface and calls the [IUnknown::QueryInterface](http://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) method to get the object's [IPersistMessage](ipersistmessageiunknown.md) interface.</span></span> 
+4. <span data-ttu-id="279d6-109">Die Client-Anwendung die resultierende **IMAPIForm** -Schnittstelle und ruft die [QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) -Methode, um das Objekt [IPersistMessage](ipersistmessageiunknown.md) Schnittstelle abrufen.</span><span class="sxs-lookup"><span data-stu-id="279d6-109">The client application takes the resulting **IMAPIForm** interface and calls the [IUnknown::QueryInterface](https://msdn.microsoft.com/library/54d5ff80-18db-43f2-b636-f93ac053146d%28Office.15%29.aspx) method to get the object's [IPersistMessage](ipersistmessageiunknown.md) interface.</span></span> 
     
-5. <span data-ttu-id="613a1-110">Die Clientanwendung ruft die [IPersistMessage::InitNew](ipersistmessage-initnew.md) -Methode, um das Formularobjekt [IMessage](imessageimapiprop.md), Ansichtskontext, zuordnen und beraten der Empfängerobjekten.</span><span class="sxs-lookup"><span data-stu-id="613a1-110">The client application calls the [IPersistMessage::InitNew](ipersistmessage-initnew.md) method to associate the form object with [IMessage](imessageimapiprop.md), view context, and advise sink objects.</span></span>
+5. <span data-ttu-id="279d6-110">Die Clientanwendung ruft die [IPersistMessage::InitNew](ipersistmessage-initnew.md) -Methode, um das Formularobjekt [IMessage](imessageimapiprop.md), Ansichtskontext, zuordnen und beraten der Empfängerobjekten.</span><span class="sxs-lookup"><span data-stu-id="279d6-110">The client application calls the [IPersistMessage::InitNew](ipersistmessage-initnew.md) method to associate the form object with [IMessage](imessageimapiprop.md), view context, and advise sink objects.</span></span>
     
-6. <span data-ttu-id="613a1-111">Die Clientanwendung ruft die [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode, um das Öffnen Verb aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="613a1-111">The client application calls the [IMAPIForm::DoVerb](imapiform-doverb.md) method to invoke the open verb.</span></span> 
+6. <span data-ttu-id="279d6-111">Die Clientanwendung ruft die [IMAPIForm::DoVerb](imapiform-doverb.md) -Methode, um das Öffnen Verb aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="279d6-111">The client application calls the [IMAPIForm::DoVerb](imapiform-doverb.md) method to invoke the open verb.</span></span> 
     
-## <a name="see-also"></a><span data-ttu-id="613a1-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="613a1-112">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="279d6-112">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="279d6-112">See also</span></span>
 
 
 
-[<span data-ttu-id="613a1-113">Formularserverinteraktionen</span><span class="sxs-lookup"><span data-stu-id="613a1-113">Form Server Interactions</span></span>](form-server-interactions.md)
+[<span data-ttu-id="279d6-113">Formularserverinteraktionen</span><span class="sxs-lookup"><span data-stu-id="279d6-113">Form Server Interactions</span></span>](form-server-interactions.md)
 
