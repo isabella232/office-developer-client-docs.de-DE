@@ -1,0 +1,52 @@
+---
+title: ActiveConnection-Eigenschaft (ADO MD)
+TOCTitle: ActiveConnection Property (ADO MD)
+ms:assetid: d09f0f91-5e1d-01ed-4d83-eaf58ff718a2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250043(v=office.15)
+ms:contentKeyID: 48547845
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 0743771ee9cee096f8de3d91d793ea8cf81af2ea
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25475225"
+---
+# <a name="activeconnection-property-ado-md"></a><span data-ttu-id="35467-102">ActiveConnection-Eigenschaft (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="35467-102">ActiveConnection Property (ADO MD)</span></span>
+
+
+<span data-ttu-id="35467-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="35467-103">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="35467-104">Gibt an, zu welchem ADO-[Connection](connection-object-ado.md)-Objekt die aktuelle Zellmenge oder der Katalog derzeit gehört.</span><span class="sxs-lookup"><span data-stu-id="35467-104">Indicates to which ADO [Connection](connection-object-ado.md) object the current cellset or catalog currently belongs.</span></span>
+
+## <a name="settings-and-return-values"></a><span data-ttu-id="35467-105">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="35467-105">Settings and Return Values</span></span>
+
+<span data-ttu-id="35467-p101">Legt einen **Variant** -Wert fest oder gibt diesen zurück. Der Wert enthält eine Zeichenfolge, die eine Verbindung oder ein **Connection** -Objekt definiert. Die Standardeinstellung ist eine leere Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="35467-p101">Sets or returns a **Variant** that contains a string defining a connection or **Connection** object. The default is empty.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="35467-108">Hinweise</span><span class="sxs-lookup"><span data-stu-id="35467-108">Remarks</span></span>
+
+<span data-ttu-id="35467-p102">Sie können diese Eigenschaft auf ein gültiges ADO- **Connection** -Objekt oder eine gültige Verbindungszeichenfolge festlegen. Wenn diese Eigenschaft auf eine Verbindungszeichenfolge festgelegt wird, erstellt der Anbieter mithilfe dieser Definition ein neues **Connection** -Objekt und öffnet die Verbindung.</span><span class="sxs-lookup"><span data-stu-id="35467-p102">You can set this property to a valid ADO **Connection** object or to a valid connection string. When this property is set to a connection string, the provider creates a new **Connection** object using this definition and opens the connection.</span></span>
+
+<span data-ttu-id="35467-111">Wenn Sie das **ActiveConnection** -Argument der [Open](open-method-ado-md.md)-Methode verwenden, um ein [Cellset](cellset-object-ado-md.md)-Objekt zu öffnen, erbt die **ActiveConnection** -Eigenschaft den Wert des Arguments.</span><span class="sxs-lookup"><span data-stu-id="35467-111">If you use the **ActiveConnection** argument of the [Open](open-method-ado-md.md) method to open a [Cellset](cellset-object-ado-md.md) object, the **ActiveConnection** property will inherit the value of the argument.</span></span>
+
+<span data-ttu-id="35467-p103">Beim Festlegen der **ActiveConnection** -Eigenschaft eines [Catalog](catalog-object-ado-md.md)-Objekts auf **Nothing** werden die verbundenen Daten freigegeben, einschließlich der Daten in der [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung und der verbundenen [Dimension](dimension-object-ado-md.md)-, [Hierarchy](hierarchy-object-ado-md.md)-, [Level](level-object-ado-md.md)- und [Member](member-object-ado-md.md)-Objekte. Beim Schließen eines **Connection** -Objekts, das verwendet wurde, um ein **Catalog** -Objekt zu öffnen, wird dieselbe Wirkung wie beim Festlegen der **ActiveConnection** -Eigenschaft auf **Nothing** erzielt.</span><span class="sxs-lookup"><span data-stu-id="35467-p103">Setting the **ActiveConnection** property of a [Catalog](catalog-object-ado-md.md) object to **Nothing** releases the associated data, including data in the [CubeDefs](cubedefs-collection-ado-md.md) collection and any related [Dimension](dimension-object-ado-md.md), [Hierarchy](hierarchy-object-ado-md.md), [Level](level-object-ado-md.md), and [Member](member-object-ado-md.md) objects. Closing a **Connection** object that was used to open a **Catalog** has the same effect as setting the **ActiveConnection** property to **Nothing**.</span></span>
+
+<span data-ttu-id="35467-114">Durch Ändern der Standarddatenbank der Verbindung, auf die durch die **ActiveConnection** -Eigenschaft eines **Catalog** -Objekts verwiesen wurde, wird der Inhalt des **Catalog** -Objekts ungültig.</span><span class="sxs-lookup"><span data-stu-id="35467-114">Changing the default database of the connection referenced by the **ActiveConnection** property of a **Catalog** object invalidates the contents of the **Catalog**.</span></span>
+
+<span data-ttu-id="35467-115">Wenn Sie versuchen, die **ActiveConnection** -Eigenschaft für ein geöffnetes **Cellset** -Objekt zu ändern, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="35467-115">An error will occur if you attempt to change the **ActiveConnection** property for an open **Cellset** object.</span></span>
+
+
+> [!NOTE]
+> <P><span data-ttu-id="35467-p104">[!HINWEIS] Achten Sie in Visual Basic darauf, das <STRONG>Set</STRONG> -Schlüsselwort zu verwenden, wenn Sie die <STRONG>ActiveConnection</STRONG> -Eigenschaft auf ein <STRONG>Connection</STRONG> -Objekt festlegen. Wenn Sie das <STRONG>Set</STRONG> -Schlüsselwort nicht verwenden, legen Sie die <STRONG>ActiveConnection</STRONG> -Eigenschaft gleich der Standardeigenschaft des <STRONG>Connection</STRONG> -Objekts , <STRONG>ConnectionString</STRONG>, fest. Der Code ist funktionsfähig; Sie erstellen jedoch eine zusätzliche Verbindung mit der Datenquelle, was sich negativ auf die Leistung auswirken kann.</span><span class="sxs-lookup"><span data-stu-id="35467-p104">In Visual Basic, remember to use the <STRONG>Set</STRONG> keyword when setting the <STRONG>ActiveConnection</STRONG> property to a <STRONG>Connection</STRONG> object. If you omit the <STRONG>Set</STRONG> keyword, you will actually be setting the <STRONG>ActiveConnection</STRONG> property equal to the <STRONG>Connection</STRONG> object's default property, <STRONG>ConnectionString</STRONG>. The code will work; however, you will create an additional connection to the data source, which may have negative performance implications.</span></span></P>
+
+
+
+<span data-ttu-id="35467-p105">Wenn Sie den MSOLAP-Datenanbieter verwenden, legen Sie die Datenquelle in einer Verbindungszeichenfolge auf einen Servernamen fest, und legen Sie für den ursprünglichen Katalog den Namen eines Katalogs aus der Datenquelle fest. Legen Sie als Speicherort den vollständigen Dateipfad der CUB-Datei fest, um eine Verbindung mit einer Cubedatei herzustellen, die von einen Server getrennt ist. Legen Sie in jedem Fall für den Anbieter den Anbieternamen fest. Mit der folgenden Zeichenfolge wird z. B. eine Verbindung mit dem Katalog Bobs Video Store auf dem Server Servername mit dem MSOLAP-Anbieter hergestellt:</span><span class="sxs-lookup"><span data-stu-id="35467-p105">When using the MSOLAP data provider, set the data source in a connection string to a server name and set the initial catalog to the name of a catalog from the data source. To connect to a cube file that is disconnected from a server, set the location to the full path to the .CUB file. In either case, set the provider to the provider name. For example, the following string connects to a catalog named Bobs Video Store on a server named Servername with the MSOLAP Provider:</span></span>
+
+`"Data Source=Servername;Initial Catalog=Bobs Video Store;Provider=msolap"`
+
+<span data-ttu-id="35467-123">Die folgende Zeichenfolge stellt eine Verbindung mit einer lokalen Cubedatei am Speicherort C:\\MSDASDK\\Beispiele\\Oledb\\Olap\\Daten\\bobsvid.cub:</span><span class="sxs-lookup"><span data-stu-id="35467-123">The following string connects to a local cube file at the location C:\\MSDASDK\\samples\\oledb\\olap\\data\\bobsvid.cub:</span></span>
+
+`"Location=C:\MSDASDK\samples\oledb\olap\data\bobsvid.cub;Provider=msolap"`
+

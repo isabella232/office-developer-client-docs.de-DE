@@ -1,0 +1,34 @@
+---
+title: QueryDefs.Count Property (DAO)
+TOCTitle: Count Property
+ms:assetid: 8caa01c5-692f-95e4-4b11-6e6c591f5872
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff197340(v=office.15)
+ms:contentKeyID: 48546240
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: be630e54ef55fae335347dabd61440dfe457c5ed
+ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25474645"
+---
+# <a name="querydefscount-property-dao"></a><span data-ttu-id="1475b-102">QueryDefs.Count Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="1475b-102">QueryDefs.Count Property (DAO)</span></span>
+
+
+<span data-ttu-id="1475b-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="1475b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="1475b-p101">Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="1475b-p101">Returns the number of objects in the specified collection. Read-only.</span></span>
+
+## <a name="syntax"></a><span data-ttu-id="1475b-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="1475b-106">Syntax</span></span>
+
+<span data-ttu-id="1475b-107">*Ausdruck* . Count</span><span class="sxs-lookup"><span data-stu-id="1475b-107">*expression* .Count</span></span>
+
+<span data-ttu-id="1475b-108">*Ausdruck* Eine Variable, die ein **QueryDefs** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="1475b-108">*expression* A variable that represents a **QueryDefs** object.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="1475b-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1475b-109">Remarks</span></span>
+
+<span data-ttu-id="1475b-p102">Da die Elemente einer Auflistung mit 0 beginnen, müssen Schleifen immer mit dem Element 0 starten und mit dem Wert der **Count**-Eigenschaft minus 1 enden. Wenn eine Schleife die Elemente einer Auflistung durchsucht, ohne die **Count**-Eigenschaft zu überprüfen, können Sie einen **For Each...Next**-Befehl verwenden.</span><span class="sxs-lookup"><span data-stu-id="1475b-p102">Because members of a collection begin with 0, you should always code loops starting with the 0 member and ending with the value of the **Count** property minus 1. If you want to loop through the members of a collection without checking the **Count** property, you can use a **For Each...Next** command.</span></span>
+
+<span data-ttu-id="1475b-p103">Der Wert der **Count**-Eigenschaft ist nie Null. Wenn ihr Wert 0 ist, sind keine Objekte in der Auflistung enthalten.</span><span class="sxs-lookup"><span data-stu-id="1475b-p103">The **Count** property setting is never Null. If its value is 0, there are no objects in the collection.</span></span>
+
