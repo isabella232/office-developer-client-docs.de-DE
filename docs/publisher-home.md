@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: b0f11822-d45e-48e6-bf59-990164e3d6d9
 description: Hier finden Sie praktische Inhalte, technische Artikel, Referenzen und Blogbeiträge zum Entwickeln von Lösungen und zum Anpassen von Publisher.
-ms.openlocfilehash: 0beb7085648a81cf835d1aed6c7f33c011532f14
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 16e250b1b04a2c5c63e19aa3a6b7e0ad0cd1caef
+ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25397240"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454544"
 ---
 # <a name="publisher"></a>Publisher
 
@@ -22,10 +22,10 @@ Hier finden Sie praktische Inhalte, technische Artikel, Referenzen und Blogbeitr
 
 ### <a name="viewed-most"></a>Am häufigsten angezeigt
 
-- [VBA-Referenz für Publisher](https://msdn.microsoft.com/VBA/VBA-Publisher)
+- [VBA-Referenz für Publisher](https://docs.microsoft.com/office/vba/api/overview/publisher)
 
 - 
-  [Publisher 2010](https://msdn.microsoft.com/library/office/ff604963(v=office.14).aspx)
+  [Publisher 2010](https://docs.microsoft.com/previous-versions/office/developer/office-2010/ff604963(v=office.14))
 
 
 ### <a name="office-add-ins"></a>Office-Add-Ins 
@@ -37,10 +37,10 @@ Hier finden Sie praktische Inhalte, technische Artikel, Referenzen und Blogbeitr
 
 ### <a name="other-resources"></a>Sonstige Ressourcen
 
-- [Office VBA-Objektbibliothekreferenz](https://msdn.microsoft.com/VBA/Office-Shared-VBA/articles/office-vba-object-library-reference)
+- [Office VBA-Objektbibliothekreferenz](https://docs.microsoft.com/office/vba/api/overview/library-reference)
 
-- [VBA-Sprachreferenz für Office](https://msdn.microsoft.com/VBA/VBA-Language-Reference) 
+- [VBA-Sprachreferenz für Office](https://docs.microsoft.com/office/vba/api/overview/language-reference) 
 
-- [Open XML-SDK](https://msdn.microsoft.com/library/bb448854.aspx)
+- [Open XML-SDK](https://docs.microsoft.com/office/open-xml/open-xml-sdk)
 
-- [VSTO-Add-Ins für Office](https://msdn.microsoft.com/library/jj620922.aspx)
+- [VSTO-Add-Ins für Office](https://docs.microsoft.com/visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio?view=vs-2017)
