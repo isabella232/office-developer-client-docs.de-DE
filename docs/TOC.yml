@@ -20,7 +20,7 @@ items:
   - name: Office Online Server
     href: excel/configure-udfs-in-excel-online-in-office-online-server-preview.md
   - name: Office für Mac
-    href: https://msdn.microsoft.com/en-us/library/office/mt654019.aspx
+    href: https://docs.microsoft.com/office/vba/api/overview/office-mac
   - name: Office gemeinsam genutzt
     href: shared/office-shared.md
     items:
@@ -38,20 +38,20 @@ items:
       - name: Kompatibilitätsprobleme in Office
         href: shared/compatibility-issues-in-office.md
     - name: Office VBA-Objektbibliothekreferenz
-      href: https://msdn.microsoft.com/en-us/VBA/Office-Shared-VBA/articles/office-vba-object-library-reference
+      href: https://docs.microsoft.com/office/vba/Library-Reference/Concepts/office-vba-object-library-reference
     - name: VBA-Sprachreferenz für Office
-      href: https://msdn.microsoft.com/en-us/VBA/VBA-Language-Reference
+      href: https://docs.microsoft.com/office/vba/api/overview/language-reference
     - name: Referenz zur primären Interopassembly für Office
-      href: https://msdn.microsoft.com/en-us/library/office/ff597925.aspx
+      href: https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017
     - name: Open XML SDK 2.5
-      href: https://msdn.microsoft.com/en-us/library/office/bb448854.aspx
+      href: https://docs.microsoft.com/office/open-xml/open-xml-sdk
     - name: Verwenden von CSISyncClient zum Steuern des ODC
       href: shared/using-csisyncclient-to-control-the-office-document-cache-odc.md
   - name: Access
     href: access/access-home.md
     items:
     - name: VBA-Referenz für Access
-      href: https://msdn.microsoft.com/en-us/library/mt346046.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/access
     - name: Benutzerdefinierte Web-App-Referenz für Access
       href: access/access-custom-web-app-reference.md
       items:
@@ -253,7 +253,7 @@ items:
           - name: Zeichenfolgenoperatoren
             href: access/string-operators-access-custom-web-app.md
             items:
-            - name: Zeichenfolgenverkettungsoperator
+            - name: Zeichenfolgenverknüpfung
               href: access/plusstring-concatenation-operatoraccess-custom-web-app.md
       - name: Makrofunktionenreferenz
         href: access/macro-function-reference-access-custom-web-app.md
@@ -345,14 +345,14 @@ items:
           - name: OpenPopup
             href: access/openpopup-macro-action-access-custom-web-app.md
     - name: Access-Desktopdatenbankreferenz
-      href: https://msdn.microsoft.com/en-us/library/dn142571.aspx
+      href: https://msdn.microsoft.com/library/dn142571.aspx
   - name: Excel
     href: excel/excel-home.md
     items:
     - name: VBA-Referenz für Excel
-      href: https://msdn.microsoft.com/en-us/library/office/ee861528.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/excel
     - name: Referenz zur primären Interopassembly für Excel
-      href: https://msdn.microsoft.com/en-us/library/office/ff597926.aspx
+      href: https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017
     - name: Excel XLL SDK
       href: excel/welcome-to-the-excel-software-development-kit.md
       items:
@@ -584,7 +584,7 @@ items:
             href: excel/funcsum.md
           - name: FuncFib
             href: excel/funcfib.md
-        - name: Funktionen von Excel-Clusterconnectors
+        - name: Excel-Clusterconnector-Funktionen
           href: excel/excel-cluster-connector-functions.md
           items:
           - name: CallUDF
@@ -600,7 +600,7 @@ items:
           - name: ShowOptions
             href: excel/showoptions.md
     - name: Tipps für das Entfernen von Leistungshindernissen
-      href: https://msdn.microsoft.com/en-us/library/office/mt709003.aspx
+      href: https://docs.microsoft.com/office/vba/excel/concepts/excel-performance/excel-tips-for-optimizing-performance-obstructions
   - name: Infopath
     href: infopath/infopath-home.md
     items:
@@ -645,7 +645,7 @@ items:
             href: infopath/form-templates/publishing-forms-with-code.md
           - name: Beispiel-Sandkastenlösungen
             href: infopath/form-templates/sample-sandboxed-solutions.md
-          - name: Weitere Ressourcen für Entwickler von InfoPath Formularvorlagen
+          - name: Weitere Ressourcen für Entwickler von InfoPath-Formularvorlagen
             href: infopath/form-templates/additional-resources-for-infopath-form-template-developers.md
         - name: Grundlegendes zum InfoPath-Objektmodell und allgemeine Entwickleraufgaben
           href: infopath/form-templates/understanding-the-infopath-object-model-and-common-developer-tasks.md
@@ -668,7 +668,7 @@ items:
             href: infopath/form-templates/how-to-work-with-offline-solutions.md
           - name: Arbeiten mit digitalen Signaturen
             href: infopath/form-templates/how-to-work-with-digital-signatures.md
-          - name: Fehlerbehandlung
+          - name: Behandeln von Fehlern
             href: infopath/form-templates/how-to-handle-errors.md
           - name: Arbeiten mit IRM-Einstellungen
             href: infopath/form-templates/how-to-work-with-information-rights-management-settings.md
@@ -683,7 +683,7 @@ items:
             href: infopath/form-templates/additional-infopath-form-security-concepts.md
           - name: Sicherheitsrichtlinien für die Entwicklung von InfoPath-Formularen
             href: infopath/form-templates/security-guidelines-for-developing-infopath-forms.md
-          - name: Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit verwaltetem Code
+          - name: Konfigurieren von Sicherheitseinstellungen für Formularvorlagen mit Code
             href: infopath/form-templates/how-to-configure-security-settings-for-form-templates-with-code.md
           - name: Sicherheitsstufen, E-Mail-Bereitstellung und Remote-Formularvorlagen
             href: infopath/form-templates/security-levels-email-deployment-and-remote-form-templates.md
@@ -696,7 +696,7 @@ items:
         - name: Arbeiten mit SharePoint- und InfoPath-Formulardiensten
           href: infopath/form-templates/working-with-sharepoint-and-infopath-forms-services.md
           items:
-          - name: Erstellen von InfoPath-Formularvorlagen, die zusammen mit InfoPath-Formulardiensten verwendet werden können
+          - name: Erstellen von InfoPath-Formularvorlagen, die zusammen mit InfoPath Forms Services verwendet werden können
             href: infopath/form-templates/creating-infopath-form-templates-that-work-with-infopath-forms-services.md
           - name: Unterstützung des SharePoint-Workflows in InfoPath-Formularen
             href: infopath/form-templates/sharepoint-workflow-support-in-infopath-forms.md
@@ -711,7 +711,7 @@ items:
             href: infopath/form-templates/guidelines-for-improving-the-performance-of-infopath-forms.md
           - name: Arbeiten mit XML-Schemas in InfoPath
             href: infopath/form-templates/working-with-xml-schemas-in-infopath.md
-          - name: Verwenden von benutzerdefiniertem XSLT in InfoPath Formularvorlagen
+          - name: Verwenden von benutzerdefiniertem XSLT in InfoPath-Formularvorlagen
             href: infopath/form-templates/using-custom-xslt-in-infopath-form-templates.md
           - name: Hosten von InfoPath als XML-Editor in einer anderen Anwendung
             href: infopath/form-templates/hosting-infopath-as-an-xml-editor-in-another-application.md
@@ -721,75 +721,75 @@ items:
             href: infopath/form-templates/infopath-rpc-encoding-and-web-services.md
           - name: Integrieren eines InfoPath-Formulars in einer Microsoft Access-Datenbank
             href: infopath/form-templates/integrate-an-infopath-form-with-a-microsoft-access-database.md
-          - name: Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten anbinden kann
+          - name: Erstellen eines ActiveX-Steuerelements, das an InfoPath-Formulardaten gebunden werden kann
             href: infopath/form-templates/create-an-activex-control-that-can-bind-to-infopath-form-data.md
           - name: Aktivieren der benutzerdefinierten Zusammenführung von InfoPath-Formularen
             href: infopath/form-templates/enable-custom-merging-of-infopath-forms.md
-      - name: Entwickeln von Formularvorlagen, die mit dem InfoPath 2003-Objektmodell
+      - name: Entwickeln von Formularvorlagen mit dem InfoPath 2003-Objektmodell
         href: infopath/form-templates/developing-form-templates-using-the-infopath-2003-object-model.md
         items:
         - name: Erste Schritte beim Entwickeln von Formularvorlagen mit dem InfoPath 2003-Objektmodell
           href: infopath/form-templates/get-started-developing-form-templates-using-infopath-object-model.md
           items:
-          - name: Erstellen einer Formularvorlage mit dem InfoPath 2003-Objektmodell
+          - name: Erstellen einer Formularvorlage
             href: infopath/form-templates/how-to-create-a-form-template-using-the-infopath-2003-object-model.md
-          - name: Exemplarische Vorgehensweise':' Erstellen und Debuggen einer einfachen Formularvorlage mit dem InfoPath 2003-Objektmodell
+          - name: Erstellen und Debuggen einer einfachen Formularvorlage
             href: infopath/form-templates/walkthrough-create-and-debug-basic-form-template-using-infopath-object-model.md
-          - name: Häufige Aufgaben beim Entwickeln von Formularvorlagen mit dem InfoPath 2003-Objektmodell
+          - name: Häufige Aufgaben beim Entwickeln von Formularvorlagen
             href: infopath/form-templates/common-tasks-for-developing-form-templates-using-infopath-object-model.md
-          - name: Verwenden von Microsoft.Office.Interop.InfoPath.SemiTrust-Members, die nicht mitInfoPath 2003 kompatibel sind
+          - name: Verwenden von Microsoft.Office.Interop.InfoPath.SemiTrust-Members, die nicht mit InfoPath 2003 kompatibel sind
             href: infopath/form-templates/how-to-use-microsoft-office-interop-infopath-semitrust-members.md
         - name: Erstellen von Formularvorlagen mit dem InfoPath 2003-Objektmodell
           href: infopath/form-templates/creating-form-templates-using-the-infopath-2003-object-model.md
           items:
-          - name: Initialisieren und Bereinigen von Code mit dem InfoPath 2003-Objektmodell
+          - name: Initialisierungs- und Bereinigungscode
             href: infopath/form-templates/initialization-and-clean-up-code-using-infopath-2003-object-model.md
-          - name: Debuggen von InfoPath-Projekten mit dem InfoPath 2003-Objektmodell
+          - name: Debuggen von InfoPath-Projekten
             href: infopath/form-templates/how-to-debug-infopath-projects-using-the-infopath-2003-object-model.md
-          - name: Hinzufügen eines Ereignishandlers mit dem InfoPath 2003-Objektmodell
+          - name: Hinzufügen von Ereignishandlern
             href: infopath/form-templates/how-to-add-an-event-handler-using-the-infopath-2003-object-model.md
-          - name: Threading-Unterstützung in InfoPath-Projekten mit dem InfoPath 2003-Objektmodell
+          - name: Threading-Unterstützung in InfoPath-Projekten
             href: infopath/form-templates/threading-support-in-infopath-projects-using-the-infopath-2003-object-model.md
-          - name: Arbeiten mit MSXML und System.Xml mithilfe des InfoPath 2003-Objektmodells
+          - name: Arbeiten mit MSXML und System.Xml
             href: infopath/form-templates/working-with-msxml-and-system-xml-using-the-infopath-2003-object-model.md
         - name: Grundlegendes zum InfoPath 2003-Objektmodell
           href: infopath/form-templates/understanding-the-infopath-2003-object-model.md
           items:
           - name: Mit InfoPath 2003 kompatible Objektmodelle
             href: infopath/form-templates/infopath-2003-compatible-object-models.md
-          - name: Zugreifen auf Anwendungsdaten mit dem InfoPath 2003-Objektmodell
+          - name: Zugreifen auf Anwendungsdaten
             href: infopath/form-templates/how-to-access-application-data-using-the-infopath-2003-object-model.md
-          - name: Zugreifen auf externe Datenquellen mit dem InfoPath 2003-Objektmodell
+          - name: Zugreifen auf externe Datenquellen
             href: infopath/form-templates/how-to-access-external-data-sources-using-the-infopath-2003-object-model.md
-          - name: Zugreifen auf Formulardaten mit dem InfoPath 2003-Objektmodell
+          - name: Zugreifen auf Formulardaten
             href: infopath/form-templates/how-to-access-form-data-using-the-infopath-2003-object-model.md
-          - name: Anzeigen von Warnungen und Dialogfeldern mit dem InfoPath 2003-Objektmodell
+          - name: Anzeigen von Warnungen und Dialogfeldern
             href: infopath/form-templates/how-to-display-alerts-and-dialog-boxes-using-the-infopath-2003-object-model.md
-          - name: Behandeln von Fehlern mit dem InfoPath 2003-Objektmodell
+          - name: Behandeln von Fehlern
             href: infopath/form-templates/how-to-handle-errors-using-the-infopath-2003-object-model.md
-          - name: Reagieren auf Formularereignisse mit dem InfoPath 2003-Objektmodell
+          - name: Reagieren auf Formularereignisse
             href: infopath/form-templates/how-to-respond-to-form-events-using-the-infopath-2003-object-model.md
-          - name: Arbeiten mit Formularfenstern mithilfe des InfoPath 2003-Objektmodells
+          - name: Arbeiten mit Formularfenstern
             href: infopath/form-templates/how-to-work-with-form-windows-using-the-infopath-2003-object-model.md
-          - name: Arbeiten mit Ansichten mithilfe des InfoPath 2003-Objektmodells
+          - name: Arbeiten mit Ansichten
             href: infopath/form-templates/how-to-work-with-views-using-the-infopath-2003-object-model.md
-          - name: Arbeiten mit digitalen Signaturen mithilfe des InfoPath 2003-Objektmodells
+          - name: Arbeiten mit digitalen Signaturen
             href: infopath/form-templates/how-to-work-with-digital-signatures-using-the-infopath-2003-object-model.md
-          - name: Arbeiten mit Offlinelösungen mithilfe des InfoPath 2003-Objektmodells
+          - name: Arbeiten mit Offlinelösungen
             href: infopath/form-templates/how-to-work-with-offline-solutions-using-the-infopath-2003-object-model.md
         - name: Problembehandlung bei Formularvorlagen, die das InfoPath 2003-Objektmodell verwenden
           href: infopath/form-templates/troubleshoot-form-templates-that-use-infopath-object-model.md
           items:
-          - name: Problembehandlung bei Formularvorlagen, die das InfoPath 2003-Objektmodell zur Laufzeit verwenden
+          - name: Problembehandlung bei Formularvorlagen zur Laufzeit
             href: infopath/form-templates/troubleshoot-form-templates-that-use-infopath-object-model-at-runtime.md
-          - name: Problembehandlung bei Formularvorlagen, die das InfoPath 2003-Objektmodell zur Entwurfszeit verwenden
+          - name: Problembehandlung bei Formularvorlagen zur Entwurfszeit
             href: infopath/form-templates/troubleshoot-form-templates-that-use-infopath-object-model-at-design-time.md
       - name: Klassenbibliotheksreferenz für InfoPath-Formularvorlagen
-        href: https://msdn.microsoft.com/en-us/library/office/ee526341.aspx
+        href: https://msdn.microsoft.com/library/office/ee526341.aspx
     - name: InfoPath-Entwicklerreferenz für die externe Automatisierung
       href: infopath/external-automation/infopath-developer-reference-for-external-automation.md
       items:
-      - name: Erstellen von Projekten in Visual Studio
+      - name: Erstellen von InfoPath-Projekten in Visual Studio
         href: infopath/external-automation/creating-infopath-projects-in-visual-studio.md
         items:
         - name: Erstellen eines COM-Add-Ins zum Hinzufügen von benutzerdefinierten Funktionen in InfoPath
@@ -806,7 +806,7 @@ items:
         - name: Automatisieren von InfoPath aus einer externen Anwendung
           href: infopath/external-automation/automating-infopath-from-an-external-application.md
       - name: Klassenbibliothekreferenz für InfoPath (externe Automatisierung)
-        href: https://msdn.microsoft.com/en-us/library/office/ff663147.aspx
+        href: https://msdn.microsoft.com/library/office/ff663147.aspx
   - name: OneNote
     href: onenote/onenote-home.md
     items:
@@ -829,9 +829,336 @@ items:
     - name: Auswählen einer API oder Technologie für die Entwicklung von Lösungen für Outlook
       href: outlook/selecting-an-api-or-technology-for-developing-solutions-for-outlook.md
     - name: VBA-Referenz für Outlook
-      href: https://msdn.microsoft.com/EN-US/library/office/ee861520.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/outlook
     - name: Referenz zur primären Interopassembly für Outlook
-      href: https://msdn.microsoft.com/EN-US/library/office/bb652780.aspx
+      href: outlook/pia/welcome-to-the-outlook-primary-interop-assembly-reference.md
+      items:
+      - name: Was ist neu in der Outlook-PIA-Referenz
+        href: outlook/pia/what-s-new-in-the-outlook-pia-reference.md
+      - name: Einrichten der Outlook-PIA
+        href: outlook/pia/setting-up-to-use-the-outlook-pia.md
+        items:
+        - name: Einführung in die Interoperabilität zwischen COM und .NET
+          href: outlook/pia/introduction-to-interoperability-between-com-and-net.md
+        - name: Gründe für die Verwendung der Outlook-PIA
+          href: outlook/pia/why-use-the-outlook-pia.md
+        - name: Installieren der Outlook-PIA und Verweisen auf diese
+          href: outlook/pia/installing-and-referencing-the-outlook-pia.md
+      - name: Architektur der Outlook-PIA
+        href: outlook/pia/architecture-of-the-outlook-pia.md
+        items:
+        - name: Zuordnen der Outlook-PIA zum Objektmodell
+          href: outlook/pia/relating-the-outlook-pia-with-the-object-model.md
+        - name: Objekte in der Outlook-PIA
+          href: outlook/pia/objects-in-the-outlook-pia.md
+        - name: Methoden und Eigenschaften in der Outlook PIA
+          href: outlook/pia/methods-and-properties-in-the-outlook-pia.md
+        - name: Ereignisse in der Outlook-PIA
+          href: outlook/pia/events-in-the-outlook-pia.md
+      - name: Entwickeln von verwalteten Outlook-Add-Ins mithilfe der Outlook-PIA
+        href: outlook/pia/developing-managed-outlook-add-ins-using-the-outlook-pia.md
+        items:
+        - name: Verbinden mit benutzerdefinierten Ereignishandlern
+          href: outlook/pia/connecting-to-custom-event-handlers.md
+        - name: Bewährte Methoden beim Entwickeln von verwalteten Outlook-Add-Ins
+          href: outlook/pia/best-practices-in-developing-managed-outlook-add-ins.md
+          items:
+          - name: Systematisches Freigeben von Objekten
+            href: outlook/pia/systematically-releasing-objects.md
+          - name: Verwenden einer separaten Anwendungsdomäne zur Vermeidung von Abstürzen
+            href: outlook/pia/using-a-separate-application-domain-to-avoid-crashing.md
+          - name: Verwenden eines vertrauenswürdigen, von den Office Developer Tools für Visual Studio bereitgestellten Anwendungsobjekts
+            href: outlook/pia/using-a-trusted-application-object-provided-by-office-developer-tools-for-visual-studio.md
+          - name: Geeignetes Festlegen von Bereichen für Variablen in Ereignishandlern
+            href: outlook/pia/scoping-variables-appropriately-in-event-handlers.md
+          - name: Vermeiden von nicht unterstützten Technologien in verwalteten Outlook-Add-Ins
+            href: outlook/pia/avoiding-unsupported-technologies-in-managed-outlook-add-ins.md
+          - name: Verwenden von spätem Binden bei mehreren Version von Outlook
+            href: outlook/pia/using-late-binding-if-depending-on-multiple-versions-of-outlook.md
+      - name: Gewusst wie...
+        href: outlook/pia/how-do-i-outlook-2013-pia-reference.md
+        items:
+        - name: Konten
+          href: outlook/pia/accounts.md
+          items:
+          - name: Abrufen von Kontoinformationen
+            href: outlook/pia/how-to-get-account-information.md
+          - name: Erstellen eines sendbaren Elements für ein bestimmtes Konto auf der Basis des aktuellen Ordners
+            href: outlook/pia/how-to-create-a-sendable-item-for-a-specific-account-based-on-the-current-folder.md
+          - name: Abrufen des Kontos für einen Ordner
+            href: outlook/pia/how-to-get-the-account-for-a-folder.md
+          - name: Abrufen von Informationen über mehrere Konten
+            href: outlook/pia/how-to-get-information-about-multiple-accounts.md
+          - name: Senden eines E-Mail-Elements mithilfe eines Hotmail-Kontos
+            href: outlook/pia/how-to-send-a-mail-item-by-using-a-hotmail-account.md
+        - name: Add-In-Verwaltung
+          href: outlook/pia/add-in-administration.md
+          items:
+          - name: Bestimmen, ob Outlook eine Klick-und-Los-Anwendung auf einem Computer ist
+            href: outlook/pia/how-to-determine-whether-outlook-is-a-click-to-run-application-on-a-computer.md
+        - name: Adressbuch
+          href: outlook/pia/address-book.md
+          items:
+          - name: Anzeigen Sie des Adressbuchs, das einem Ordner „Kontakte“ entspricht, im Dialogfeld „Namen auswählen“
+            href: outlook/pia/how-to-display-in-the-select-names-dialog-box-the-address-book-corresponding-to-a-contacts-folder.md
+          - name: Abrufen der globalen Adressliste oder eines Satzes von Adresslisten für einen Speicher
+            href: outlook/pia/how-to-get-the-global-address-list-or-a-set-of-address-lists-for-a-store.md
+          - name: Aufzählen der Einträge in der globalen Adressliste
+            href: outlook/pia/how-to-enumerate-the-entries-in-the-global-address-list.md
+          - name: Anzeigen der Adresslisten für ein Profil
+            href: outlook/pia/how-to-display-the-address-lists-for-a-profile.md
+        - name: Termine
+          href: outlook/pia/appointments.md
+          items:
+          - name: Erstellen eines Termins, der ein ganztägiges Ereignis darstellt
+            href: outlook/pia/how-to-create-an-appointment-that-is-an-all-day-event.md
+          - name: Erstellen eines Termins mit Startzeit in der Pacific Time-Zone und Endzeit in der Eastern Time-Zone
+            href: outlook/pia/how-to-create-an-appointment-that-starts-in-the-pacific-time-zone-and-ends-in-the-eastern-time-zone.md
+          - name: Angeben verschiedener Empfängertypen für ein Terminelement
+            href: outlook/pia/how-to-specify-different-recipient-types-for-an-appointment-item.md
+          - name: Erstellen einer Terminserie mithilfe des Standardserienmusters
+            href: outlook/pia/how-to-create-a-recurring-appointment-by-using-the-default-recurrence-pattern.md
+          - name: Erstellen einer Terminserie mit einem wöchentlichen Muster
+            href: outlook/pia/how-to-create-a-recurring-appointment-that-has-a-weekly-pattern.md
+          - name: Erstellen einer jährlichen Terminserie mit einem jährlichen Muster
+            href: outlook/pia/how-to-create-an-annual-recurring-appointment-that-uses-a-yearnth-pattern.md
+          - name: Suchen nach einem bestimmten Termin in einer Terminserie
+            href: outlook/pia/how-to-find-a-specific-appointment-in-a-recurring-appointment-series.md
+          - name: Erstellen eines Ausnahmetermins in einer Terminserie
+            href: outlook/pia/how-to-create-an-exception-appointment-in-a-recurring-appointment-series.md
+          - name: Erstellen einer Erinnerung für ein Terminelement
+            href: outlook/pia/how-to-create-a-reminder-for-an-appointment-item.md
+          - name: Importieren von Termin-XML-Daten in Outlook-Terminobjekte
+            href: outlook/pia/how-to-import-appointment-xml-data-into-outlook-appointment-objects.md
+        - name: Anlagen
+          href: outlook/pia/attachments.md
+          items:
+          - name: Programmgesteuertes Entfernen von Anlagen der Sicherheitsstufe 2 aus Nachrichten und Speichern der Anlagen auf einem Datenträger
+            href: outlook/pia/how-to-programmatically-remove-security-level-2-attachments-from-messages-and-save-them-to-disk.md
+        - name: Kalender
+          href: outlook/pia/calendar.md
+          items:
+          - name: Freigeben eines Frei-/Gebucht-Zeitplans innerhalb eines bestimmten Zeitraums in einem Kalender
+            href: outlook/pia/how-to-share-free-busy-schedule-within-a-specified-period-in-a-calendar.md
+          - name: Freigeben von Kalenderinformationen per E-Mail
+            href: outlook/pia/how-to-share-calendar-information-through-e-mail.md
+          - name: Anzeigen eines freigegebenen Kalenders eines Empfängers
+            href: outlook/pia/how-to-display-a-shared-calendar-of-a-recipient.md
+          - name: Speichern eines Kalenders auf einem Datenträger
+            href: outlook/pia/how-to-save-a-calendar-to-disk.md
+          - name: Öffnen und Anzeigen des Inhalts einer iCalendar-Datei
+            href: outlook/pia/how-to-open-and-display-the-contents-of-an-icalendar-file.md
+        - name: Farbkategorien
+          href: outlook/pia/color-categories.md
+          items:
+          - name: Aufzählen und Hinzufügen von Kategorien
+            href: outlook/pia/how-to-enumerate-and-add-categories.md
+          - name: Zuweisen von Kategorien zu einem Element
+            href: outlook/pia/how-to-assign-categories-to-an-item.md
+        - name: Kontakte
+          href: outlook/pia/contacts.md
+          items:
+          - name: Erstellen eines Kontaktelements
+            href: outlook/pia/how-to-create-a-contact-item.md
+          - name: Erstellen eines benutzerdefinierten Kontaktelements
+            href: outlook/pia/how-to-create-a-custom-contact-item.md
+          - name: Erstellen eines Kontaktelements aus einer vCard-Datei und Speichern des Elements in einem Ordner
+            href: outlook/pia/how-to-create-a-contact-item-from-a-vcard-file-and-save-the-item-in-a-folder.md
+        - name: Unterhaltungen
+          href: outlook/pia/conversations.md
+          items:
+          - name: Abrufen und Anzeigen von Elementen in einer Unterhaltung
+            href: outlook/pia/how-to-get-and-display-items-in-a-conversation.md
+          - name: Abrufen und Aufzählen von ausgewählten Unterhaltungen
+            href: outlook/pia/how-to-get-and-enumerate-selected-conversations.md
+        - name: Elektronische Visitenkarten
+          href: outlook/pia/electronic-business-cards.md
+          items:
+          - name: Ändern des Layouts einer elektronischen Visitenkarte
+            href: outlook/pia/how-to-modify-the-layout-of-an-electronic-business-card.md
+          - name: Senden eines E-Mail-Elements mit einer elektronischen Visitenkarte
+            href: outlook/pia/how-to-send-a-mail-item-with-an-electronic-business-card.md
+        - name: Exchange-Benutzer
+          href: outlook/pia/exchange-users.md
+          items:
+          - name: Abrufen von Informationen über den aktuellen Benutzer
+            href: outlook/pia/how-to-get-information-about-the-current-user.md
+          - name: Abrufen von Informationen über alle Verteilerlisten, in denen der aktuelle Benutzer Mitglied ist
+            href: outlook/pia/how-to-get-information-about-all-distribution-lists-of-which-the-current-user-is-a-member.md
+          - name: Erstellen einer Verteilerliste
+            href: outlook/pia/how-to-create-a-distribution-list.md
+          - name: Abrufen der Mitglieder einer Exchange-Verteilerliste
+            href: outlook/pia/how-to-get-members-of-an-exchange-distribution-list.md
+          - name: Abrufen von Informationen zum Vorgesetzten des aktuellen Benutzers
+            href: outlook/pia/how-to-get-information-about-the-current-user-s-manager.md
+          - name: Abrufen von Verfügbarkeitsinformationen für den Vorgesetzten eines Exchange-Benutzers
+            href: outlook/pia/how-to-get-availability-information-for-an-exchange-user-s-manager.md
+          - name: Überprüfen der Antwort eines Vorgesetzten auf eine Besprechungsanfrage
+            href: outlook/pia/how-to-check-a-manager-s-response-to-a-meeting-request.md
+          - name: Abrufen von Informationen zu direkten Mitarbeitern des Vorgesetzten des aktuellen Benutzers
+            href: outlook/pia/how-to-get-information-about-direct-reports-of-the-current-user-s-manager.md
+        - name: Ordner
+          href: outlook/pia/folders.md
+          items:
+          - name: Hinzufügen eines Ordners zur Ordnerliste
+            href: outlook/pia/how-to-add-a-folder-to-the-folder-list.md
+          - name: Aufzählen von Ordnern
+            href: outlook/pia/how-to-enumerate-folders.md
+          - name: Abrufen eines Standardordners und Auflisten seiner Unterordner
+            href: outlook/pia/how-to-get-a-default-folder-and-enumerate-its-subfolders.md
+          - name: Abrufen eines Ordners basierend auf seinem Ordnerpfad
+            href: outlook/pia/how-to-get-a-folder-based-on-its-folder-path.md
+          - name: Auswählen eines Ordners und Anzeigen von Ordnerinformationen
+            href: outlook/pia/how-to-select-a-folder-and-display-folder-information.md
+          - name: Abrufen der Standardnachrichtenklasse eines Ordners
+            href: outlook/pia/how-to-get-the-default-message-class-of-a-folder.md
+          - name: Zugreifen auf lösungsspezifische Daten, die als ausgeblendete Nachricht in einem Ordner gespeichert sind
+            href: outlook/pia/how-to-access-solution-specific-data-stored-as-a-hidden-message-in-a-folder.md
+          - name: Sicherstellen, dass benutzerdefinierte Elementeigenschaften in Abfragen auf Ordnerebene unterstützt werden
+            href: outlook/pia/how-to-ensure-that-custom-item-properties-are-supported-in-folder-level-queries.md
+        - name: Allgemeine Outlook-Elemente
+          href: outlook/pia/general-outlook-items.md
+          items:
+          - name: Erstellen einer Hilfsklasse zum Zugriff auf allgemeine Member von Outlook-Elementen
+            href: outlook/pia/how-to-create-a-helper-class-to-access-common-outlook-item-members.md
+          - name: Anzeigen von ausgewählten Elementen im aktiven Explorer
+            href: outlook/pia/how-to-display-selected-items-in-the-active-explorer.md
+        - name: Gruppenfreigabe
+          href: outlook/pia/group-sharing.md
+          items:
+          - name: Abonnieren eines RSS-Feeds
+            href: outlook/pia/how-to-subscribe-to-an-rss-feed.md
+          - name: Synchronisieren von Outlook mit einem SharePoint-Ordner
+            href: outlook/pia/how-to-synchronize-outlook-with-a-sharepoint-folder.md
+        - name: Mail
+          href: outlook/pia/mail.md
+          items:
+          - name: Erstellen eines E-Mail-Elements mithilfe einer Nachrichtenvorlage
+            href: outlook/pia/how-to-create-a-mail-item-by-using-a-message-template.md
+          - name: Erstellen eines E-Mail-Elements, Anfügen eines Berichts und Senden des E-Mail-Elements an den Vorgesetzten des Benutzers
+            href: outlook/pia/how-to-create-a-mail-item-attach-a-report-and-send-the-mail-item-to-the-user-s-manager.md
+          - name: Senden einer E-Mail-Nachricht mithilfe der SMTP-Adresse eines Kontos
+            href: outlook/pia/how-to-send-an-e-mail-given-the-smtp-address-of-an-account.md
+          - name: Hinzufügen von Abstimmungsoptionen zu einem E-Mail-Element
+            href: outlook/pia/how-to-add-voting-options-to-a-mail-item.md
+          - name: Hinzufügen einer benutzerdefinierten Aktion als Antwort auf ein E-Mail-Element
+            href: outlook/pia/how-to-add-a-custom-action-as-a-response-to-a-mail-item.md
+          - name: Abrufen der SMTP-Adresse des Absenders eines E-Mail-Elements
+            href: outlook/pia/how-to-get-the-smtp-address-of-the-sender-of-a-mail-item.md
+          - name: Angeben verschiedener Empfängertypen für ein E-Mail-Element
+            href: outlook/pia/how-to-specify-different-recipient-types-for-a-mail-item.md
+        - name: Besprechungsanfragen
+          href: outlook/pia/meeting-requests.md
+          items:
+          - name: Erstellen einer Besprechungsanfrage, Hinzufügen von Empfängern und Angeben eines Orts
+            href: outlook/pia/how-to-create-a-meeting-request-add-recipients-and-specify-a-location.md
+          - name: Abrufen des Organisators einer Besprechung
+            href: outlook/pia/how-to-get-the-organizer-of-a-meeting.md
+          - name: Überprüfen aller Antworten auf eine Besprechungsanfrage
+            href: outlook/pia/how-to-check-all-responses-to-a-meeting-request.md
+          - name: Suchen des einer Besprechungsanfrage zugeordneten Terminelements
+            href: outlook/pia/how-to-find-the-appointment-item-associated-with-a-meeting-request.md
+          - name: Automatisches Annehmen einer Besprechungsanfrage
+            href: outlook/pia/how-to-automatically-accept-a-meeting-request.md
+          - name: Auffordern eines Benutzers zum Antworten auf eine Besprechungsanfrage
+            href: outlook/pia/how-to-prompt-a-user-to-respond-to-a-meeting-request.md
+        - name: Empfänger
+          href: outlook/pia/recipients.md
+          items:
+          - name: Anzeigen des Dialogfelds „Namen auswählen“ zum Auflösen von Empfängern
+            href: outlook/pia/how-to-display-the-select-names-dialog-box-to-resolve-recipients.md
+          - name: Verwenden des Dialogfelds „Namen auswählen“ zum Abrufen und Zuweisen von Empfängern zu einem Termin
+            href: outlook/pia/how-to-use-the-select-names-dialog-box-to-obtain-and-assign-recipients-to-an-appointment.md
+          - name: Abrufen der E-Mail-Adresse eines Empfängers
+            href: outlook/pia/how-to-get-the-e-mail-address-of-a-recipient.md
+        - name: Regeln
+          href: outlook/pia/rules.md
+          items:
+          - name: Erstellen einer Regel zum Ablegen von E-Mail-Elementen von einem Vorgesetzten und Kennzeichnen dieser Elemente für die Nachverfolgung
+            href: outlook/pia/how-to-create-a-rule-to-file-mail-items-from-a-manager-and-flag-them-for-follow-up.md
+          - name: Sofortiges Ausführen einer Regel
+            href: outlook/pia/how-to-execute-a-rule-instantly.md
+          - name: Ausführen einer Regel auf einem lokalen Computer
+            href: outlook/pia/how-to-execute-a-rule-on-a-local-computer.md
+          - name: Erstellen einer Regel zum Zuweisen von Kategorien zu E-Mail-Elementen basierend auf mehreren Wörtern im Betreff
+            href: outlook/pia/how-to-create-a-rule-to-assign-categories-to-mail-items-based-on-multiple-words-in-the-subject.md
+        - name: Beispielaufgaben mit Outlook-Ereignissen
+          href: outlook/pia/sample-tasks-using-outlook-events.md
+          items:
+          - name: Implementieren eines Wrappers für Prüfungen und Nachverfolgung von Ereignissen auf Elementebene in jedem Inspektor
+            href: outlook/pia/how-to-implement-a-wrapper-for-inspectors-and-track-item-level-events-in-each-inspector.md
+        - name: Suchen und Filtern
+          href: outlook/pia/search-and-filter.md
+          items:
+          - name: Filtern und effizientes Aufzählen von Elementen in einem Ordner
+            href: outlook/pia/how-to-filter-and-efficiently-enumerate-items-in-a-folder.md
+          - name: Verwenden von SetColumns zum effizienten Aufzählen von Elementen in einem Ordner
+            href: outlook/pia/how-to-use-setcolumns-to-efficiently-enumerate-items-in-a-folder.md
+          - name: Verwenden von Arrays zum effizienten Aufzählen von Elementen in einem Ordner
+            href: outlook/pia/how-to-use-arrays-to-efficiently-enumerate-items-in-a-folder.md
+          - name: Aufzählen der Elemente im Posteingang basierend auf dem Zeitpunkt der letzten Änderung
+            href: outlook/pia/how-to-enumerate-items-in-the-inbox-based-on-the-last-modification-time.md
+          - name: Filtern und Anzeigen der im letzten Monat geänderten Posteingangselemente
+            href: outlook/pia/how-to-filter-and-display-inbox-items-modified-in-the-last-month.md
+          - name: Filtern und Anzeigen von mehrwertigen Eigenschaften beim Aufzählen von Elementen in einem Ordner
+            href: outlook/pia/how-to-filter-and-display-multivalued-properties-when-enumerating-items-in-a-folder.md
+          - name: Filtern und Anzeigen von berechneten Eigenschaften beim Aufzählen von Elementen in einem Ordner
+            href: outlook/pia/how-to-filter-and-display-computed-properties-when-enumerating-items-in-a-folder.md
+          - name: Aufzählen von ausgeblendeten Elementen in einem Ordner
+            href: outlook/pia/how-to-enumerate-hidden-items-in-a-folder.md
+          - name: Verwenden der Sofortsuche zum Durchsuchen aller Ordner und aller Stores nach einem Ausdruck im Betreff
+            href: outlook/pia/how-to-use-instant-search-to-search-all-folders-and-all-stores-for-a-phrase-in-the-subject.md
+          - name: Suchen nach einem Ausdruck im Textkörper von Elementen in einem Ordner
+            href: outlook/pia/how-to-search-for-a-phrase-in-the-body-of-items-in-a-folder.md
+          - name: Durchsuchen der Anlagen von Elementen in einem Ordner nach einem exakten Ausdruck
+            href: outlook/pia/how-to-search-attachments-of-items-in-a-folder-for-an-exact-phrase.md
+          - name: Suchen und Abrufen von Terminen in einem Zeitbereich
+            href: outlook/pia/how-to-search-and-obtain-appointments-in-a-time-range.md
+          - name: Filtern von Terminserien und Suchen nach einer Zeichenfolge im Betreff
+            href: outlook/pia/how-to-filter-recurring-appointments-and-search-for-a-string-in-the-subject.md
+          - name: Suchen und Abrufen von Elementen in einer aggregierten Ansicht
+            href: outlook/pia/how-to-search-and-obtain-items-in-an-aggregated-view.md
+        - name: Sitzungen
+          href: outlook/pia/sessions.md
+          items:
+          - name: Abrufen einer Instanz von Outlook und Anmelden bei dieser
+            href: outlook/pia/how-to-get-and-log-on-to-an-instance-of-outlook.md
+        - name: Speicher
+          href: outlook/pia/stores.md
+          items:
+          - name: Abrufen von Informationen zu Speichern in einem Profil
+            href: outlook/pia/how-to-get-information-about-stores-in-a-profile.md
+          - name: Hinzufügen oder Entfernen eines Speichers
+            href: outlook/pia/how-to-add-or-remove-a-store.md
+        - name: Aufgaben
+          href: outlook/pia/tasks.md
+          items:
+          - name: Erstellen eines Aufgabenelements
+            href: outlook/pia/how-to-create-a-task-item.md
+          - name: Zuordnen einer Aufgabe zu einem Empfänger
+            href: outlook/pia/how-to-assign-a-task-to-a-recipient.md
+          - name: Anzeigen der an einen Empfänger gesendeten Aufgabeanfragenelemente
+            href: outlook/pia/how-to-display-the-task-request-items-sent-to-a-recipient.md
+          - name: Antworten auf ein Aufgabenanfragenelement
+            href: outlook/pia/how-to-respond-to-a-task-request-item.md
+          - name: Erstellen eines periodischen Vorgangs
+            href: outlook/pia/how-to-create-a-recurring-task.md
+          - name: Kennzeichnen von E-Mail-Elementen von einem Vorgesetzten zur Nachverfolgung
+            href: outlook/pia/how-to-flag-mail-items-from-a-manager-for-follow-up.md
+        - name: Ansichten
+          href: outlook/pia/views.md
+          items:
+          - name: Erstellen einer Ansicht
+            href: outlook/pia/how-to-create-a-view.md
+          - name: Hinzufügen von Feldern zu einer Ansicht
+            href: outlook/pia/how-to-add-fields-to-a-view.md
+          - name: Auflisten der Elemente in einer Tabellenansicht
+            href: outlook/pia/how-to-enumerate-items-in-a-table-view.md
+      - name: Klassenbibliothek
+        href: outlook/pia/outlook-2013-interop-assembly-class-library.md
+        items:
+        - name: Microsoft.Office.Interop.Outlook-Namespace
+          href: https://docs.microsoft.com/dotnet/api/microsoft.office.interop.outlook?view=outlook-pia
     - name: Outlook Connector für soziale Netzwerke – Anbieterverweis
       href: outlook/social-connector/outlook-social-connector-provider-reference.md
       items:
@@ -892,11 +1219,11 @@ items:
         - name: XML für „activities“
           href: outlook/social-connector/xml-for-activities.md
           items:
-          - name: Überblick über XML für eine Aktivitätsfeedelement
+          - name: Überblick über XML für ein Aktivitätsfeedelement
             href: outlook/social-connector/overview-of-xml-for-an-activity-feed-item.md
-          - name: activityDetails-Element
+          - name: ActivityDetails-Element
             href: outlook/social-connector/activitydetails-element.md
-          - name: activityTemplateContainer-Element
+          - name: ActivityTemplateContainer-Element
             href: outlook/social-connector/activitytemplatecontainer-element.md
           - name: Vorlagenvariablen
             href: outlook/social-connector/template-variables.md
@@ -1438,7 +1765,7 @@ items:
                 href: outlook/auxiliary/iolkapptrebaser-endenumerateappointments.md
               - name: IOlkApptRebaser::EndRebaseAppointments
                 href: outlook/auxiliary/iolkapptrebaser-endrebaseappointments.md
-          - name: Events
+          - name: Ereignisse
             href: outlook/auxiliary/available-events-and-their-dispids-outlook-exported-apis.md
     - name: MAPI-Referenz für Outlook
       href: outlook/mapi/outlook-mapi-reference.md
@@ -1446,7 +1773,7 @@ items:
       - name: Erste Schritte
         href: outlook/mapi/getting-started-with-the-outlook-mapi-reference.md
         items:
-        - name: Übersicht über Outlook-MAPI-Referenz
+        - name: Übersicht über die Outlook-MAPI-Referenz
           href: outlook/mapi/outlook-mapi-reference-overview.md
         - name: Neuigkeiten in dieser Edition
           href: outlook/mapi/what-s-new-in-this-edition.md
@@ -1463,7 +1790,7 @@ items:
         items:
         - name: MFCMAPI als ein Codebeispiel
           href: outlook/mapi/mfcmapi-as-a-code-sample.md
-        - name: MAPI-Dienstanbieter-Beispiel
+        - name: MAPI-Dienstanbieter-Beispiele
           href: outlook/mapi/mapi-service-provider-samples.md
           items:
           - name: Herunterladen der Outlook-MAPI-Beispiele
@@ -1473,7 +1800,7 @@ items:
           - name: Beispiel für einen Nachrichtenspeicher
             href: outlook/mapi/message-store-provider-sample.md
             items:
-            - name: Installieren des Beispiel für einen Anbieter von umschlossenem PST-Speicher
+            - name: Installieren des Beispiels für einen Anbieter von umschlossenem PST-Speicher
               href: outlook/mapi/installing-the-sample-wrapped-pst-store-provider.md
             - name: Initialisieren eines Anbieters von umschlossenem PST-Speicher
               href: outlook/mapi/initializing-a-wrapped-pst-store-provider.md
@@ -1526,7 +1853,7 @@ items:
             href: outlook/mapi/mapi-profile-overview.md
           - name: Formularübersicht
             href: outlook/mapi/mapi-forms-overview.md
-          - name: Informationen zu der Offlinestatus-API
+          - name: Informationen zur Offlinestatus-API
             href: outlook/mapi/about-the-offline-state-api.md
             items:
             - name: Informationen zum Offlinestatus-Add-In-Beispiel
@@ -1551,40 +1878,40 @@ items:
           - name: Informationen über den Replikationszustandsautomaten
             href: outlook/mapi/about-the-replication-state-machine.md
             items:
-            - name: Status „Downloadhierarchie“
+            - name: Zustand „Downloadhierarchie“
               href: outlook/mapi/download-hierarchy-state.md
-            - name: Status „Downloadnachrichtenkopf“
+            - name: Zustand „Downloadnachrichtenkopf“
               href: outlook/mapi/download-message-header-state.md
-            - name: Status „Downloadtabelle“
+            - name: Zustand „Downloadtabelle“
               href: outlook/mapi/download-table-state.md
-            - name: Status „Leerlauf“
+            - name: Zustand „Leerlauf“
               href: outlook/mapi/idle-state.md
-            - name: Status „Inhalts synchronisieren“
+            - name: Zustand „Inhalte synchronisieren“
               href: outlook/mapi/synchronize-contents-state.md
-            - name: Status „Synchronisieren“
+            - name: Zustand „Synchronisieren“
               href: outlook/mapi/synchronize-state.md
-            - name: Status „Status der Upload-Löschung“
+            - name: Zustand „Status der Löschung hochladen“
               href: outlook/mapi/upload-delete-status-state.md
-            - name: Status „Uploadordner“
+            - name: Zustand „Ordner hochladen“
               href: outlook/mapi/upload-folder-state.md
-            - name: Status „Uploadhierarchie“
+            - name: Zustand „Hierarchie hochladen“
               href: outlook/mapi/upload-hierarchy-state.md
-            - name: Status „Uploadnachricht“
+            - name: Zustand „Nachricht hochladen“
               href: outlook/mapi/upload-message-state.md
-            - name: Status „Status des Upload-Lesevorgangs“
+            - name: Zustand „Status des Lesevorgangs hochladen“
               href: outlook/mapi/upload-read-status-state.md
-            - name: Status „Uploadtabelle“
+            - name: Zustand „Tabelle hochladen“
               href: outlook/mapi/upload-table-state.md
-          - name: Informationen zur Store-API
+          - name: Informationen zur Speicher-API
             href: outlook/mapi/about-the-store-api.md
             items:
-            - name: Informationen zum Registrieren von Stores für die Indizierung
+            - name: Informationen zum Registrieren von Speichern für die Indizierung
               href: outlook/mapi/about-registering-stores-for-indexing.md
-            - name: Informationen zum benachrichtigungsbasierten Indizieren von Stores
+            - name: Informationen zum benachrichtigungsbasierten Indizieren von Speichern
               href: outlook/mapi/about-notification-based-store-indexing.md
             - name: Informationen zu MAPI-URLs für das benachrichtigungsbasierte Indizieren
               href: outlook/mapi/about-mapi-urls-for-notification-based-indexing.md
-            - name: Algorithmus zum Berechnen der Store-Hashnummer
+            - name: Algorithmus zum Berechnen der Speicher-Hashnummer
               href: outlook/mapi/algorithm-to-calculate-the-store-hash-number.md
             - name: Algorithmus zum Codieren von Eintrags-IDs und Anlage-IDs
               href: outlook/mapi/algorithm-to-encode-entry-ids-and-attachment-ids.md
@@ -1623,9 +1950,9 @@ items:
               items:
               - name: Erstellen von MAPI-Anwendungen für 32- und 64-Bit-Plattformen
                 href: outlook/mapi/building-mapi-applications-on-32-bit-and-64-bit-platforms.md
-              - name: Aufrufen von MAPI-Anruf über Windows-Dienste
+              - name: Aufrufen von MAPI über Windows-Dienste
                 href: outlook/mapi/calling-mapi-from-windows-services.md
-            - name: Zugreifen auf einen Store auf dem Remote-Server, wenn Outlook sich Exchange-Cache-Modus befindet
+            - name: Zugreifen auf einen Speicher auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet
               href: outlook/mapi/how-to-access-store-on-remote-server-in-cached-exchange-mode.md
             - name: Erstellen eines Outlook-Profils mit MFCMAPI
               href: outlook/mapi/how-to-create-an-outlook-profile-using-mfcmapi.md
@@ -1643,9 +1970,9 @@ items:
               href: outlook/mapi/how-to-obtain-a-contact-message-given-a-contacts-address-book-entry.md
             - name: Zugreifen auf eine Nachricht in einem IMAP-Speicher, ohne die gesamte Nachricht herunterzuladen
               href: outlook/mapi/how-to-access-message-on-imap-store-without-downloading-entire-message.md
-            - name: Öffnen eines Speichers auf dem Remote-Server, wenn Outlook sich im Exchange-Cache-Modus befindet
+            - name: Öffnen eines Speichers auf dem Remoteserver, wenn Outlook sich im Exchange-Cache-Modus befindet
               href: outlook/mapi/how-to-open-store-on-remote-server-in-cached-exchange-mode.md
-            - name: Programmgesteuertes Festlegen der Lösungsreihenfolge für Adresslisten
+            - name: Programmgesteuertes Festlegen der Auflösungsreihenfolge für Adresslisten
               href: outlook/mapi/how-to-programmatically-set-the-resolution-order-for-address-lists.md
             - name: Programmgesteuertes Erstellen eines Profils in Outlook
               href: outlook/mapi/how-to-programmatically-create-a-profile-in-outlook.md
@@ -1727,7 +2054,7 @@ items:
                   href: outlook/mapi/sample-restriction-code.md
               - name: Informationen zu Tabellenbenachrichtigungen
                 href: outlook/mapi/about-table-notifications.md
-              - name: Informationen zu Anzeigen von Tabellenbenachrichtigungen
+              - name: Informationen zu Benachrichtigungen für Anzeigetabellen
                 href: outlook/mapi/about-display-table-notifications.md
               - name: Informationen zu asynchronen Tabellenvorgängen
                 href: outlook/mapi/about-asynchronous-table-operations.md
@@ -1763,7 +2090,7 @@ items:
                 href: outlook/mapi/personal-form-libraries.md
             - name: Formulare und MAPI-Clientanwendungen
               href: outlook/mapi/forms-and-mapi-client-applications.md
-            - name: MAPI-Formularoberflächen
+            - name: MAPI-Formularschnittstellen
               href: outlook/mapi/mapi-form-interfaces.md
           - name: Entwickeln einer MAPI-Clientanwendung
             href: outlook/mapi/developing-a-mapi-client-application.md
@@ -1775,7 +2102,7 @@ items:
             - name: Sitzungsverarbeitung
               href: outlook/mapi/mapi-session-handling.md
               items:
-              - name: Staren einer MAPI-Sitzung
+              - name: Starten einer MAPI-Sitzung
                 href: outlook/mapi/starting-a-mapi-session.md
                 items:
                 - name: Initialisieren von MAPI
@@ -1874,7 +2201,7 @@ items:
                 href: outlook/mapi/opening-the-address-book.md
               - name: Anzeigen des Standarddialogfelds für Adressen
                 href: outlook/mapi/displaying-the-common-address-dialog-box.md
-              - name: Öffnen des Adressbuchcontainers
+              - name: Öffnen eines Adressbuchcontainers
                 href: outlook/mapi/opening-an-address-book-container.md
               - name: Festlegen von Adressbuchoptionen
                 href: outlook/mapi/setting-address-book-options.md
@@ -1894,7 +2221,7 @@ items:
                 href: outlook/mapi/retrieving-recipient-properties.md
               - name: Durchsuchen des Adressbuchs
                 href: outlook/mapi/searching-the-address-book.md
-              - name: Verwenden eines Dialogfelds für die erweiterte Suche.
+              - name: Verwenden eines Dialogfelds für die erweiterte Suche
                 href: outlook/mapi/using-an-advanced-search-dialog-box.md
               - name: Auflösen eines Empfängernamens
                 href: outlook/mapi/resolving-a-recipient-name.md
@@ -1916,7 +2243,7 @@ items:
                 href: outlook/mapi/registering-for-a-notification.md
               - name: Stornieren einer Benachrichtigung
                 href: outlook/mapi/canceling-a-notification.md
-              - name: Behandeln von Nachrichtenspeicherbenachrichtigung
+              - name: Behandeln von Nachrichtenspeicherbenachrichtigungen
                 href: outlook/mapi/handling-message-store-notification.md
               - name: Behandeln von Adressbuchbenachrichtigungen
                 href: outlook/mapi/handing-address-book-notification.md
@@ -1924,7 +2251,7 @@ items:
                 href: outlook/mapi/handling-table-notification.md
               - name: Implementieren einer Benachrichtigungssenke
                 href: outlook/mapi/implementing-an-advise-sink-object.md
-              - name: Zeitliches steuern einer Benachrichtigung
+              - name: Zeitliches Steuern einer Benachrichtigung
                 href: outlook/mapi/timing-a-notification.md
               - name: Sicherstellen einer threadsicheren Benachrichtigung
                 href: outlook/mapi/ensuring-a-thread-safe-notification.md
@@ -1941,7 +2268,7 @@ items:
                 href: outlook/mapi/sending-and-receiving-form-notifications.md
               - name: Pflegen einer Formularbibliothek
                 href: outlook/mapi/maintaining-a-form-library.md
-              - name: Laden eine Nachricht in ein Formular
+              - name: Laden einer Nachricht in ein Formular
                 href: outlook/mapi/loading-a-message-into-a-form.md
               - name: Schreiben einer neuen Nachricht mit einem Formular
                 href: outlook/mapi/composing-a-new-message-by-using-a-form.md
@@ -1955,7 +2282,7 @@ items:
                 items:
                 - name: Erstellen eines Profils mit dem Profilassistenten
                   href: outlook/mapi/creating-a-profile-by-using-the-profile-wizard.md
-                - name: Erstellen ein Profil mit benutzerdefiniertem Code
+                - name: Erstellen eines Profils mit benutzerdefiniertem Code
                   href: outlook/mapi/creating-a-profile-by-using-custom-code.md
               - name: Kopieren eines Profils
                 href: outlook/mapi/copying-a-profile.md
@@ -1982,7 +2309,7 @@ items:
                 href: outlook/mapi/writing-an-automated-client.md
               - name: Schreiben eines Remote-Viewers
                 href: outlook/mapi/writing-a-remote-viewer.md
-              - name: Schreiben eines Hierarchie Viewers
+              - name: Schreiben eines Hierarchie-Viewers
                 href: outlook/mapi/writing-a-hierarchy-viewer.md
               - name: Verwenden der MAPI-Dienstprogramme
                 href: outlook/mapi/using-the-mapi-utilities.md
@@ -1990,7 +2317,7 @@ items:
                 href: outlook/mapi/implementing-a-progress-indicator.md
               - name: Zentralisieren des Empfangs von NDRs
                 href: outlook/mapi/centralizing-the-receipt-of-ndrs.md
-            - name: Verbessern der Client-Leistung
+            - name: Verbessern der Clientleistung
               href: outlook/mapi/improving-client-performance.md
               items:
               - name: Vermeiden bestimmter Methoden beim Start
@@ -2005,7 +2332,7 @@ items:
                 href: outlook/mapi/saving-frequently-used-properties.md
               - name: Zurückstellen der Verarbeitung
                 href: outlook/mapi/deferring-processing.md
-              - name: Schreiben von nicht komprimiertem formatierten Text
+              - name: Schreiben von nicht komprimiertem formatiertem Text
                 href: outlook/mapi/writing-uncompressed-formatted-text.md
               - name: Vermeiden der Verwendung von IStream::SetSize zum Erweitern eines Streams
                 href: outlook/mapi/avoiding-using-istream-setsize-to-extend-a-stream.md
@@ -2040,7 +2367,7 @@ items:
             - name: Schreiben von Formularservercode
               href: outlook/mapi/writing-form-server-code.md
               items:
-              - name: Deklarieren von Formularoberflächen
+              - name: Deklarieren von Formularschnittstellen
                 href: outlook/mapi/declaring-form-interfaces.md
               - name: Integrieren von MAPI-Formularservercode mit Windows-Code
                 href: outlook/mapi/integrating-mapi-form-server-code-with-windows-code.md
@@ -2099,7 +2426,7 @@ items:
               items:
               - name: Erforderliche Eigenschaften für alle Nachrichten
                 href: outlook/mapi/required-properties-for-all-messages.md
-              - name: Erforderliche Eigenschaften  für Berichtsnachrichten
+              - name: Erforderliche Eigenschaften für Berichtsnachrichten
                 href: outlook/mapi/required-report-message-properties.md
               - name: Optionale Eigenschaften für Berichtsnachrichten
                 href: outlook/mapi/optional-report-message-properties.md
@@ -2142,7 +2469,7 @@ items:
             items:
             - name: Adresstypen
               href: outlook/mapi/mapi-address-types.md
-            - name: Einmal-Adressen
+            - name: Einmaladressen
               href: outlook/mapi/one-off-addresses.md
             - name: Adressbuchbezeichner
               href: outlook/mapi/address-book-identifiers.md
@@ -2332,7 +2659,7 @@ items:
         - name: Elemente der Programmierung
           href: outlook/mapi/mapi-programming-elements.md
           items:
-          - name: Übersicht über Objekte und Oberfläche
+          - name: Übersicht über Objekte und Schnittstellen
             href: outlook/mapi/mapi-object-and-interface-overview.md
             items:
             - name: COM (Component Object Model) und MAPI
@@ -2489,7 +2816,7 @@ items:
                 href: outlook/mapi/supporting-message-service-configuration.md
             - name: Implementierung von Eigenschaftenblättern
               href: outlook/mapi/property-sheet-implementation.md
-            - name: Anzeigen der Tabellenimplementierung
+            - name: Implementierung von Anzeigetabellen
               href: outlook/mapi/display-table-implementation.md
               items:
               - name: Erstellen von Anzeigetabellen und verwandten Strukturen
@@ -2498,9 +2825,9 @@ items:
                 href: outlook/mapi/displaying-table-controls.md
               - name: Anzeigen von Tabellenzeilen und-spalten
                 href: outlook/mapi/displaying-table-rows-and-columns.md
-            - name: Steuern der Objektimplementierung
+            - name: Implementierung von Steuerobjekten
               href: outlook/mapi/control-object-implementation.md
-            - name: Status der Objektimplementierung
+            - name: Implementierung von Statusobjekten
               href: outlook/mapi/status-object-implementation.md
             - name: Statusanzeigen
               href: outlook/mapi/mapi-progress-indicators.md
@@ -2616,7 +2943,7 @@ items:
             items:
             - name: Struktur eines Nachrichtenspeicheranbieters
               href: outlook/mapi/structure-of-message-store-providers.md
-            - name: Erforderliche und optionale Schnittstellen Nachrichtenspeicheranbieter
+            - name: Erforderliche und optionale Schnittstellen für Nachrichtenspeicheranbieter
               href: outlook/mapi/required-and-optional-interfaces-for-message-store-providers.md
             - name: Nachrichtenspeicherfunktionen
               href: outlook/mapi/message-store-features.md
@@ -2663,7 +2990,7 @@ items:
                 href: outlook/mapi/supporting-searches-in-message-store-providers.md
               - name: Generieren und Verwenden von Eintragsbezeichnern für Nachrichtenspeicheranbieter
                 href: outlook/mapi/generating-and-using-entry-identifiers-in-message-store-providers.md
-            - name: Standardnachrichtentspeicher
+            - name: Standardnachrichtenspeicher
               href: outlook/mapi/default-message-stores.md
             - name: Schreibgeschützte Nachrichtentspeicher
               href: outlook/mapi/read-only-message-stores.md
@@ -3909,7 +4236,7 @@ items:
             href: outlook/mapi/display-server-folder-sizes-property.md
           - name: Eigenschaft zum Ausblenden der Besprechungsaktualisierungsoption
             href: outlook/mapi/hide-meeting-update-option-property.md
-          - name: Eingenschaft zum Markieren des Store-Typs als privat
+          - name: Eingenschaft zum Markieren des Speichertyps als privat
             href: outlook/mapi/make-store-type-private-property.md
           - name: NoFolderScan
             href: outlook/mapi/nofolderscan.md
@@ -4105,7 +4432,7 @@ items:
             href: outlook/mapi/pidlidfax1richtextformat-canonical-property.md
           - name: PidLidFax2AddressType (kanonische Eigenschaft)
             href: outlook/mapi/pidlidfax2addresstype-canonical-property.md
-          - name: PidLidFax2DisplayName  (kanonische Eigenschaft)
+          - name: PidLidFax2DisplayName (kanonische Eigenschaft)
             href: outlook/mapi/pidlidfax2displayname-canonical-property.md
           - name: PidLidFax2EmailAddress (kanonische Eigenschaft)
             href: outlook/mapi/pidlidfax2emailaddress-canonical-property.md
@@ -6034,7 +6361,7 @@ items:
             href: outlook/mapi/swstringarray.md
           - name: TABLE_NOTIFICATION
             href: outlook/mapi/table_notification.md
-        - name: Mit Strukturen zusammenhängende Makros
+        - name: Makros im Zusammenhang mit Strukturen
           href: outlook/mapi/macros-related-to-structures.md
           items:
           - name: CbADRLIST
@@ -6204,12 +6531,12 @@ items:
     href: powerpoint-home.md
     items:
     - name: VBA-Referenz für PowerPoint
-      href: https://msdn.microsoft.com/en-us/library/office/ee861525.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/powerpoint
   - name: Project
     href: project/project-home.md
     items:
     - name: Project-VBA-Referenz
-      href: https://msdn.microsoft.com/en-us/library/office/ee861523.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/project
     - name: Dokumentation für Entwickler
       href: project/project-2013-developer-documentation.md
       items:
@@ -6274,25 +6601,25 @@ items:
           - name: Project Server-Fehlercodes
             href: project/project-server-error-codes.md
           - name: ProjectData – OData-Dienstreferenz
-            href: https://msdn.microsoft.com/en-us/library/office/jj163015.aspx
+            href: https://docs.microsoft.com/previous-versions/office/project-odata/jj163015(v=office.15)
       - name: Klassenbibliotheks- und Webdienstreferenz
-        href: https://docs.microsoft.com/en-us/dotnet/api/index?view=office-project-server
+        href: https://docs.microsoft.com/dotnet/api/index?view=office-project-server
       - name: JavaScript-API-Referenz
-        href: https://msdn.microsoft.com/en-us/library/office/jj712612.aspx
+        href: https://msdn.microsoft.com/library/office/jj712612.aspx
   - name: Publisher
     href: publisher-home.md
     items:
     - name: VBA-Referenz für Publisher
-      href: https://msdn.microsoft.com/en-us/library/office/ee861522.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/publisher
   - name: Visio
     href: visio/visio-home.md
     items:
     - name: VBA-Referenz für Visio
-      href: https://msdn.microsoft.com/EN-US/library/office/ee861526.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/visio
     - name: Visio – Speichern als Webverweis
-      href: https://msdn.microsoft.com/EN-US/library/office/ff767184.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/Visio/visio-save-as-web-reference
     - name: Referenz für Visio Viewer
-      href: https://msdn.microsoft.com/EN-US/library/office/ff766866.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/Visio/visio-viewer-reference
     - name: Visio-ShapeSheet-Referenz
       href: visio/visio-shapesheet-reference.md
       items:
@@ -6321,7 +6648,7 @@ items:
           href: visio/about-security-settings-and-running-code-in-visio-shapesheet.md
         - name: Informationen zu Zeichenfolgen
           href: visio/about-strings.md
-        - name: Informationen zur zum Formelablauffenster
+        - name: Informationen zum Formelablauffenster
           href: visio/about-the-formula-tracing-window.md
         - name: Informationen zur ShapeSheet-Kalkulationstabelle
           href: visio/about-the-shapesheet-spreadsheet.md
@@ -6350,11 +6677,11 @@ items:
           href: visio/move-around-a-shapesheet-window.md
         - name: Öffnen jedes ShapeSheets im demselben Fenster
           href: visio/open-each-shapesheet-in-the-same-window.md
-        - name: Öffnen des ShapeSheet für eine Form, Seite oder ein Dokument
+        - name: Öffnen des ShapeSheets für eine Form, Seite oder ein Dokument
           href: visio/open-the-shapesheet-for-a-shape-page-or-document.md
         - name: Verweisen auf eine Zelle in einer Formel
           href: visio/reference-a-cell-in-a-formula.md
-        - name: Ausführen des Entwicklermodus (Registerkarte „Entwicklertools“ anzeigen)
+        - name: Ausführen im Entwicklermodus (Registerkarte „Entwickler“ anzeigen)
           href: visio/run-in-developer-mode-display-the-developer-tab.md
         - name: Anzeigen eines Objekts im ShapeSheet-Fenster
           href: visio/show-an-object-in-the-shapesheet-window.md
@@ -6366,7 +6693,7 @@ items:
         - name: Zellen
           href: visio/cells-visio-shapesheet-reference.md
           items:
-          - name: Eine Zelle (Abschnitt „Geometry“)
+          - name: A Cell (Geometry section)
             href: visio/a-cell-geometry-section.md
           - name: Action Cell (Actions Section)
             href: visio/action-cell-actions-section.md
@@ -6458,7 +6785,7 @@ items:
             href: visio/bulletfont-cell-paragraph-section.md
           - name: BulletSize Cell (Paragraph Section)
             href: visio/bulletsize-cell-paragraph-section.md
-          - name: BulletString Cell (Paragraph Section)
+          - name: BulletString Cell (Paragraph section)
             href: visio/bulletstring-cell-paragraph-section.md
           - name: ButtonFace Cell (Action Tags Section)
             href: visio/buttonface-cell-action-tags-section.md
@@ -6522,7 +6849,7 @@ items:
             href: visio/ctrlasinput-cell-page-layout-section.md
           - name: D Cell (Connection Points Section)
             href: visio/d-cell-connection-points-section.md
-          - name: Zelle "D" (Abschnitt "Geometry")
+          - name: D Cell (Geometry section)
             href: visio/d-cell-geometry-section.md
           - name: Date Cell (Annotation Section)
             href: visio/date-cell-annotation-section.md
@@ -6638,7 +6965,7 @@ items:
             href: visio/flyoutchild-cell-actions-section.md
           - name: Font Cell (Character Section)
             href: visio/font-cell-character-section.md
-          - name: FontSchemeIndex Cell (Theme Properties Section
+          - name: FontSchemeIndex Cell (Theme Properties Section)
             href: visio/fontschemeindex-cell-theme-properties-section.md
           - name: Format Cell (Shape Data Section)
             href: visio/format-cell-shape-data-section.md
@@ -6658,7 +6985,7 @@ items:
             href: visio/glue-cell-layers-section.md
           - name: GlueType Cell (Glue Info Section)
             href: visio/gluetype-cell-glue-info-section.md
-          - name: Zelle "HAlign" (Abschnitt "Paragraph")
+          - name: HAlign Cell (Paragraph section)
             href: visio/halign-cell-paragraph-section.md
           - name: Height Cell (Shape Transform Section)
             href: visio/height-cell-shape-transform-section.md
@@ -6694,7 +7021,7 @@ items:
             href: visio/isdropsource-cell-miscellaneous-section.md
           - name: IsDropTarget Cell (Group Properties Section)
             href: visio/isdroptarget-cell-group-properties-section.md
-          - name: IsSnapTarget Cell (Group Properties Section)
+          - name: IsSnapTarget Cell (Group Properties section)
             href: visio/issnaptarget-cell-group-properties-section.md
           - name: IsTextEditTarget Cell (Group Properties Section)
             href: visio/istextedittarget-cell-group-properties-section.md
@@ -6706,7 +7033,7 @@ items:
             href: visio/langid-cell-shape-data-section.md
           - name: LangID Cell (Miscellaneous Section)
             href: visio/langid-cell-miscellaneous-section.md
-          - name: Zelle "LangID" (Abschnitt "Character")
+          - name: LangID Cell (Character section)
             href: visio/langid-cell-character-section.md
           - name: LangID Cell (Annotation Section)
             href: visio/langid-cell-annotation-section.md
@@ -6898,7 +7225,7 @@ items:
             href: visio/plowcode-cell-page-layout-section.md
           - name: Pos Cell (Character Section)
             href: visio/pos-cell-character-section.md
-          - name: Zelle "Position" (Abschnitt "Tabs")
+          - name: Position Cell (Tabs section)
             href: visio/position-cell-tabs-section.md
           - name: PreviewQuality Cell (Document Properties Section)
             href: visio/previewquality-cell-document-properties-section.md
@@ -7058,7 +7385,7 @@ items:
             href: visio/sortkey-cell-actions-section.md
           - name: SortKey Cell (Hyperlinks Section)
             href: visio/sortkey-cell-hyperlinks-section.md
-          - name: Zelle "SortKey" (Abschnitt "Shape Data")
+          - name: SortKey Cell (Shape Data section)
             href: visio/sortkey-cell-shape-data-section.md
           - name: Spacing Cell (Character Section)
             href: visio/spacing-cell-character-section.md
@@ -7632,7 +7959,7 @@ items:
         - name: Zeilen
           href: visio/rows-visio-shapesheet-reference.md
           items:
-          - name: Zeile "Actions" (Abschnitt "Actions")
+          - name: Actions Row (Actions section)
             href: visio/actions-row-actions-section.md
           - name: ArcTo Row (Geometry Section)
             href: visio/arcto-row-geometry-section.md
@@ -7670,7 +7997,7 @@ items:
             href: visio/relmoveto-row-geometry-section.md
           - name: RelQuadBezTo Row (Geometry Section)
             href: visio/relquadbezto-row-geometry-section.md
-          - name: Zeile "Shape Data" (Abschnitt "Shape Data")
+          - name: Shape Data Row (Shape Data section)
             href: visio/shape-data-row-shape-data-section.md
           - name: Smart Tags Row (Action Tags Section)
             href: visio/smart-tags-row-action-tags-section.md
@@ -7678,102 +8005,102 @@ items:
             href: visio/splineknot-row-geometry-section.md
           - name: SplineStart Row (Geometry Section)
             href: visio/splinestart-row-geometry-section.md
-          - name: Zeile "User-defined Cells" (Abschnitt "User-defined Cells")
+          - name: User-defined Cells Row (User-defined Cells section)
             href: visio/user-defined-cells-row-user-defined-cells-section.md
         - name: Abschnitte
           href: visio/sections-visio-shapesheet-reference.md
           items:
-          - name: 1-D-Endpunktabschnitt
+          - name: 1-D Endpoints section
             href: visio/1-d-endpoints-section.md
-          - name: 3-D Rotation Properties Section
+          - name: 3-D Rotation Properties section
             href: visio/3-d-rotation-properties-section.md
-          - name: Action Tag Section
+          - name: Action Tag section
             href: visio/action-tag-section.md
-          - name: Actions Section
+          - name: Actions section
             href: visio/actions-section.md
-          - name: Additional Effect Properties Section
+          - name: Additional Effect Properties section
             href: visio/additional-effect-properties-section.md
-          - name: Alignment Section
+          - name: Alignment section
             href: visio/alignment-section.md
-          - name: Annotation Section
+          - name: Annotation section
             href: visio/annotation-section.md
-          - name: Bevel Properties Section
+          - name: Bevel Properties section
             href: visio/bevel-properties-section.md
-          - name: Change Shape Behavior Section
+          - name: Change Shape Behavior section
             href: visio/change-shape-behavior-section.md
-          - name: Character Section
+          - name: Character section
             href: visio/character-section.md
-          - name: Connection Points Section
+          - name: Connection Points section
             href: visio/connection-points-section.md
-          - name: Controls Section
+          - name: Controls section
             href: visio/controls-section.md
-          - name: Document Properties Section
+          - name: Document Properties section
             href: visio/document-properties-section.md
-          - name: Events Section
+          - name: Events section
             href: visio/events-section.md
-          - name: Fill Format Section
+          - name: Fill Format section
             href: visio/fill-format-section.md
-          - name: Fill Gradient Section
+          - name: Fill Gradient section
             href: visio/fill-gradient-section.md
-          - name: Foreign Image Info Section
+          - name: Foreign Image Info section
             href: visio/foreign-image-info-section.md
-          - name: Geometry Section
+          - name: Geometry section
             href: visio/geometry-section.md
-          - name: Glue Info Section
+          - name: Glue Info section
             href: visio/glue-info-section.md
-          - name: Gradient Properties Section
+          - name: Gradient Properties section
             href: visio/gradient-properties-section.md
-          - name: Group Properties Section
+          - name: Group Properties section
             href: visio/group-properties-section.md
-          - name: Hyperlinks Section
+          - name: Hyperlinks section
             href: visio/hyperlinks-section.md
-          - name: Image Properties Section
+          - name: Image Properties section
             href: visio/image-properties-section.md
-          - name: Layer Membership Section
+          - name: Layer membership section
             href: visio/layer-membership-section.md
-          - name: Layers Section
+          - name: Layers section
             href: visio/layers-section.md
-          - name: Line Format Section
+          - name: Line Format section
             href: visio/line-format-section.md
-          - name: Line Gradient Section
+          - name: Line Gradient section
             href: visio/line-gradient-section.md
-          - name: Miscellaneous Section
+          - name: Miscellaneous section
             href: visio/miscellaneous-section.md
-          - name: Page Layout Section
+          - name: Page Layout section
             href: visio/page-layout-section.md
-          - name: Page Properties Section
+          - name: Page Properties section
             href: visio/page-properties-section.md
-          - name: Paragraph Section
+          - name: Paragraph section
             href: visio/paragraph-section.md
-          - name: Print Properties Section
+          - name: Print Properties section
             href: visio/print-properties-section.md
-          - name: Protection Section
+          - name: Protection section
             href: visio/protection-section.md
-          - name: Quick Style Section
+          - name: Quick Style section
             href: visio/quick-style-section.md
-          - name: Prüferabschnitt
+          - name: Reviewer section
             href: visio/reviewer-section.md
           - name: Lineal &amp; Raster-Abschnitt
             href: visio/rulergrid-section.md
-          - name: Scratch-Abschnitt
+          - name: Scratch section
             href: visio/scratch-section.md
-          - name: Shape Data Section
+          - name: Shape Data section
             href: visio/shape-data-section.md
-          - name: Shape Layout Section
+          - name: Shape Layout section
             href: visio/shape-layout-section.md
-          - name: Shape Transform Section
+          - name: Shape Transform section
             href: visio/shape-transform-section.md
-          - name: Style Properties Section
+          - name: Style Properties section
             href: visio/style-properties-section.md
-          - name: Tabs Section
+          - name: Tabs section
             href: visio/tabs-section.md
-          - name: Text Block Format Section
+          - name: Text Block Format section
             href: visio/text-block-format-section.md
-          - name: Text Fields Section
+          - name: Text Fields section
             href: visio/text-fields-section.md
-          - name: Text Transform Section
+          - name: Text Transform section
             href: visio/text-transform-section.md
-          - name: Theme Properties Section
+          - name: Theme Properties section
             href: visio/theme-properties-section.md
           - name: Abschnitt zu benutzerdefinierten Zellen
             href: visio/user-defined-cells-section.md
@@ -7835,7 +8162,7 @@ items:
           href: visio/cell-element-moveto-rowvisio-xml.md
         - name: Zellenelement (NURBSTo-Zeile)
           href: visio/cell-element-nurbsto-rowvisio-xml.md
-        - name: Zellenelement (Abschnitt-Abschnitt)
+        - name: Zellenelement (Paragraph-Abschnitt)
           href: visio/cell-element-paragraph-sectionvisio-xml.md
         - name: Zellenelement (PolyLineTo-Zeile)
           href: visio/cell-element-polylineto-rowvisio-xml.md
@@ -8434,16 +8761,16 @@ items:
     - name: Inhaltssteuerelemente in Word
       href: word/content-controls-in-word.md
     - name: VBA-Referenz für Word
-      href: https://msdn.microsoft.com/en-us/library/ee861527.aspx
+      href: https://docs.microsoft.com/office/vba/api/overview/word
     - name: Referenz zur primären Interopassembly für Word
-      href: https://msdn.microsoft.com/en-us/library/ff597928.aspx
+      href: https://docs.microsoft.com/visualstudio/vsto/office-primary-interop-assemblies?view=vs-2017
   - name: Sway-URI-Schema
     href: swayuri.md
   - name: Office-URI-Schemas
     href: office-uri-schemes.md
-ms.openlocfilehash: 2f3460ac612fea7fb558ed841fa9e21a0e97a4ac
-ms.sourcegitcommit: c55eec212ae794592c83bbf06b01eab5ca6bff6d
+ms.openlocfilehash: 7033a4730c3cc661ff44f20f44bdaaba629a7aaa
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2018
-ms.locfileid: "20389581"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25389372"
