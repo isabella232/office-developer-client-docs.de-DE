@@ -6,12 +6,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: 597f7b81-3baf-4bf2-9ef0-f7fedad8c36e
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Excel.
-ms.openlocfilehash: cf486b3bab5133de75cf59f8999ade1b8cca8aad
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: b12ee0ca7fa97e008767f3c207ea7fd54e914e6d
+ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394706"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454523"
 ---
 # <a name="excel"></a>Excel
 
@@ -34,8 +34,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="code-samples"></a>Codebeispiele
   
-- 
-  [Excel-Codebeispiele im Office Dev Center](https://developer.microsoft.com/en-us/excel/gallery/?filterBy=Samples)
+- [Excel-Codebeispiele im Office Dev Center](https://developer.microsoft.com/excel/gallery/?filterBy=Samples)
   
 ### <a name="other-resources"></a>Sonstige Ressourcen
   
@@ -51,6 +50,6 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="support"></a>Support
   
-- [Office Dev Center](https://developer.microsoft.com/de-DE/office)
+- [Office Dev Center](https://developer.microsoft.com/office)
   
 - [Office-Unterstützung](https://support.office.com/)
