@@ -1,0 +1,89 @@
+---
+title: Abrufen der SMTP-Adresse des Absenders eines E-Mail-Elements
+TOCTitle: Get the SMTP address of the sender of a mail item
+ms:assetid: 86e0c0aa-1696-4415-b25f-f9c1c29d88a9
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff184624(v=office.15)
+ms:contentKeyID: 55119869
+ms.date: 07/24/2014
+mtps_version: v=office.15
+ms.openlocfilehash: 2346257dd2c23f09b77a72b08e17ba51f3f514d1
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25405553"
+---
+# <a name="get-the-smtp-address-of-the-sender-of-a-mail-item"></a><span data-ttu-id="68d19-102">Abrufen der SMTP-Adresse des Absenders eines E-Mail-Elements</span><span class="sxs-lookup"><span data-stu-id="68d19-102">Get the SMTP address of the sender of a mail item</span></span>
+
+<span data-ttu-id="68d19-103">In diesem Beispiel wird die SMTP-Adresse (Simple Mail Transfer Protocol) des Absenders für ein E-Mail-Element abgerufen.</span><span class="sxs-lookup"><span data-stu-id="68d19-103">This example gets the sender’s Simple Mail Transfer Protocol (SMTP) address for a mail item.</span></span>
+
+## <a name="example"></a><span data-ttu-id="68d19-104">Beispiel</span><span class="sxs-lookup"><span data-stu-id="68d19-104">Example</span></span>
+
+<span data-ttu-id="68d19-105">Zum Ermitteln der SMTP-Adresse für ein empfangenes E-Mail-Element verwenden Sie die [SenderEmailAddress](https://msdn.microsoft.com/library/bb622746\(v=office.15\))-Eigenschaft des [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\))-Objekts.</span><span class="sxs-lookup"><span data-stu-id="68d19-105">To determine the SMTP address for a received mail item, use the [SenderEmailAddress](https://msdn.microsoft.com/library/bb622746\(v=office.15\)) property of the [MailItem](https://msdn.microsoft.com/library/bb643865\(v=office.15\)) object.</span></span> <span data-ttu-id="68d19-106">Befindet sich der Absender jedoch innerhalb Ihrer Organisation, gibt **SenderEmailAddress** keine SMTP-Adresse zurück, d. h. Sie müssen das [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\))-Objekt verwenden, damit die SMTP-Adresse des Absenders zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="68d19-106">To determine the SMTP address for a received mail item, use the SenderEmailAddress property of the MailItem object. However, if the sender is internal to your organization, **SenderEmailAddress** does not return an SMTP address, and you must use the [PropertyAccessor](https://msdn.microsoft.com/library/bb646034\(v=office.15\)) object to return the sender's SMTP address.</span></span>
+
+<span data-ttu-id="68d19-107">Im folgenden Codebeispiel ruft GetSenderSMTPAddress mithilfe des **PropertyAccessor**-Objekts Werte ab, die im Outlook-Objektmodell nicht direkt verfügbar gemacht werden.</span><span class="sxs-lookup"><span data-stu-id="68d19-107">In the following code example,   uses the PropertyAccessor object to obtain values that are not exposed directly in the Outlook object model.</span></span> <span data-ttu-id="68d19-108">GetSenderSMTPAddress verwendet ein **MailItem**.</span><span class="sxs-lookup"><span data-stu-id="68d19-108"> takes in a MailItem.</span></span> <span data-ttu-id="68d19-109">Ist der Wert der [SenderEmailType](https://msdn.microsoft.com/library/bb624136\(v=office.15\)) -Eigenschaft des empfangenen **MailItem**-Elements "EX", befindet sich der Absender der Nachricht auf einem Exchange-Server innerhalb Ihrer Organisation.</span><span class="sxs-lookup"><span data-stu-id="68d19-109">If the value of the [SenderEmailType](https://msdn.microsoft.com/library/bb624136\(v=office.15\)) property of the received **MailItem** is "EX", the sender of the message resides on an Exchange server in your organization.</span></span> <span data-ttu-id="68d19-110">GetSenderSMTPAddress ruft mithilfe der [Sender](https://msdn.microsoft.com/library/ff184720\(v=office.15\))-Eigenschaft des **MailItem**-Objekts den Absender ab, der durch das [AddressEntry](https://msdn.microsoft.com/library/bb609728\(v=office.15\))-Objekt dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="68d19-110"> uses the Sender property of the MailItem object to get the sender, represented by the AddressEntry object.</span></span> <span data-ttu-id="68d19-111">Stellt das **AddressEntry**-Objekt einen Exchange-Benutzer dar, wird im Beispielcode die [GetExchangeUser()](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) -Methode aufgerufen, damit das [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) -Objekt des **AddressEntry**-Objekts zurückgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="68d19-111">If the **AddressEntry** object represents an Exchange user, the example calls the [GetExchangeUser()](https://msdn.microsoft.com/library/bb611808\(v=office.15\)) method to return the [ExchangeUser](https://msdn.microsoft.com/library/bb609574\(v=office.15\)) object of the **AddressEntry** object.</span></span> <span data-ttu-id="68d19-112">Anschließend verwendet GetSenderSMTPAddress die [PrimarySmtpAddress](https://msdn.microsoft.com/library/bb645506\(v=office.15\))-Eigenschaft des **ExchangeUser**-Objekts, um die SMTP-Adresse des Absenders zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="68d19-112"> then uses the PrimarySmtpAddress property of the ExchangeUser object to return the SMTP address of the sender.</span></span> <span data-ttu-id="68d19-113">Stellt das **AddressEntry**-Objekt für den Absender kein **ExchangeUser**-Objekt dar, wird die [GetProperty(String)](https://msdn.microsoft.com/library/bb645726\(v=office.15\))-Methode des **PropertyAccessor**-Objekts mit **PR\_SMTP\_ADDRESS** ([PidTagSmtpAddress](https://msdn.microsoft.com/library/cc842421\(v=office.15\))) als Argument verwendet, um die SMTP-Adresse des Absenders zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="68d19-113">If the AddressEntry object for the sender does not represent an ExchangeUser object, the GetProperty(String) method of the PropertyAccessor object is used, with PR_SMTP_ADDRESS ( PidTagSmtpAddress) as the argument, to return the sender's SMTP address.</span></span>
+
+<span data-ttu-id="68d19-114">Wenn Sie Visual Studio verwenden, um dieses Codebeispiel zu testen, müssen Sie der Microsoft Outlook 15.0-Objektbibliothekkomponente zuerst einen Verweis hinzufügen und die Outlook-Variable angeben, wenn Sie den **Microsoft.Office.Interop.Outlook**-Namespace importieren.</span><span class="sxs-lookup"><span data-stu-id="68d19-114">If you use Visual Studio to test this code example, you must first add a reference to the Microsoft Outlook 15.0 Object Library component and specify the   variable when you import the Microsoft.Office.Interop.Outlook namespace.</span></span> <span data-ttu-id="68d19-115">Die **using**-Anweisung darf im Codebeispiel nicht direkt vor den Funktionen stehen, sondern muss vor der öffentlichen Class-Deklaration hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="68d19-115">The using statement must not occur directly before the functions in the code example but must be added before the public   declaration.</span></span> <span data-ttu-id="68d19-116">Die folgende Codezeile zeigt, wie Sie den Import und die Zuweisung in C\# vornehmen.</span><span class="sxs-lookup"><span data-stu-id="68d19-116">The following line of code shows how to do the import and assignment in C#.</span></span>
+
+```csharp
+using Outlook = Microsoft.Office.Interop.Outlook;
+```
+
+
+```csharp
+private string GetSenderSMTPAddress(Outlook.MailItem mail)
+{
+    string PR_SMTP_ADDRESS =
+        @"https://schemas.microsoft.com/mapi/proptag/0x39FE001E";
+    if (mail == null)
+    {
+        throw new ArgumentNullException();
+    }
+    if (mail.SenderEmailType == "EX")
+    {
+        Outlook.AddressEntry sender =
+            mail.Sender;
+        if (sender != null)
+        {
+            //Now we have an AddressEntry representing the Sender
+            if (sender.AddressEntryUserType ==
+                Outlook.OlAddressEntryUserType.
+                olExchangeUserAddressEntry
+                || sender.AddressEntryUserType ==
+                Outlook.OlAddressEntryUserType.
+                olExchangeRemoteUserAddressEntry)
+            {
+                //Use the ExchangeUser object PrimarySMTPAddress
+                Outlook.ExchangeUser exchUser =
+                    sender.GetExchangeUser();
+                if (exchUser != null)
+                {
+                    return exchUser.PrimarySmtpAddress;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            else
+            {
+                return sender.PropertyAccessor.GetProperty(
+                    PR_SMTP_ADDRESS) as string;
+            }
+        }
+        else
+        {
+            return null;
+        }
+    }
+    else
+    {
+        return mail.SenderEmailAddress;
+    }
+}
+```
+
+## <a name="see-also"></a><span data-ttu-id="68d19-117">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="68d19-117">See also</span></span>
+
+- [<span data-ttu-id="68d19-118">Mail</span><span class="sxs-lookup"><span data-stu-id="68d19-118">Mail</span></span>](mail.md)
+
