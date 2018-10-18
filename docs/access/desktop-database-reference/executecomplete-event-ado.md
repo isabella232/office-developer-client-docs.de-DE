@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249219(v=office.15)
 ms:contentKeyID: 48544589
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c24b6c681c857dfa66f424d174bd7ce4a2cbd772
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 231cfcf42cead3074996870971488dadb60583ae
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472689"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605421"
 ---
 # <a name="executecomplete-event-ado"></a>ExecuteComplete-Ereignis (ADO)
 
@@ -56,5 +56,7 @@ ExecuteComplete*RecordsAffected*, *pError*, *AdStatus*, *pCommand*, *pCommand*, 
 
 ## <a name="remarks"></a>Hinweise
 
-Ein **ExecuteComplete** -Ereignis kann aufgrund der Methoden **Connection.**[Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\)), **Command.**[Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)), **Recordset.**[Open](open-method-ado-recordset.md), **Recordset.**[Requery](requery-method-ado.md) oder **Recordset.**[NextRecordset](nextrecordset-method-ado.md) auftreten.
+<<<<<<< HEAD ein **ExecuteComplete** -Ereignis kann aufgrund von auftreten der **Verbindung.** [Führen Sie](https://msdn.microsoft.com/library/jj249832\(v=office.15\)) **Befehl.** [Führen Sie](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) **Recordset.** [Öffnen](open-method-ado-recordset.md), **Recordset.** [Requery](requery-method-ado.md)oder **Recordset.** [NextRecordset](nextrecordset-method-ado.md) -Methode.
+=== Ein **ExecuteComplete** -Ereignis kann aufgrund von auftreten der **Verbindung.** [Führen Sie](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) **Befehl.** [Führen Sie](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) **Recordset.** [Öffnen](open-method-ado-recordset.md), **Recordset.** [Requery](requery-method-ado.md)oder **Recordset.** [NextRecordset](nextrecordset-method-ado.md) -Methode.
+>>>>>>> master
 

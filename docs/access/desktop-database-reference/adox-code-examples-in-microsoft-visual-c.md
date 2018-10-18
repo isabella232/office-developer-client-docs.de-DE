@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250033(v=office.15)
 ms:contentKeyID: 48547814
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d75e60ec4dff90767a28a71da8f9e75af2344de3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: dd2ebb1a6baa30912594db8e2e9ff9ebc9e374c5
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473570"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606010"
 ---
 # <a name="adox-code-examples-in-microsoft-visual-c"></a>ADOX-Codebeispiele in Microsoft Visual C++
 
@@ -28,9 +28,15 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
 
 **Methoden**
 
+<<<<<<< Kopf
   - [Append-Methode (Columns und Tables) (VC++-Beispiel)](columns-and-tables-append-methods-name-property-example-vc.md)
 
-  - [Connection Close-Methode, Type-Eigenschaft (Table) (VC++-Beispiel)](connection-close-method-table-type-property-example-vc.md)
+  - [Connection Close-Methode, Tabelle Type-Eigenschaft (VC++-Beispiel)](connection-close-method-table-type-property-example-vc.md)
+=======
+  - [Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel)](columns-and-tables-append-methods-name-property-example-vc.md)
+
+  - [Connection Close-Methode vom Tabellentyp-Eigenschaft (VC++-Beispiel)](connection-close-method-table-type-property-example-vc.md)
+>>>>>>> master
 
   - [Create-Methode (VC++-Beispiel)](create-method-example-vc.md)
 
@@ -42,6 +48,7 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
 
   - [Append-Methode (Indexes) (VC++-Beispiel)](indexes-append-method-example-vc.md)
 
+<<<<<<< Kopf
   - [Append-Methode (Keys), Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft (VC++-Beispiel)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc.md)
 
 **Eigenschaften**
@@ -63,20 +70,55 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
   - [DeleteRule-Eigenschaft (VC++-Beispiel)](deleterule-property-example-vc.md)
 
   - [IndexNulls-Eigenschaft (VC++-Beispiel)](indexnulls-property-example-vc.md)
+=======
+  - [Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (VC++-Beispiel)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc.md)
+
+**Eigenschaften**
+
+  - [Attributes-Eigenschaft (VC++-Beispiel)](attributes-property-example-vc.md)
+
+  - [Katalog ActiveConnection-Eigenschaft (VC++-Beispiel)](catalog-activeconnection-property-example-vc.md)
+
+  - [Clustered-Eigenschaft (VC++-Beispiel)](clustered-property-example-vc.md)
+
+  - [Command und CommandText-Eigenschaften (VC++-Beispiel)](command-and-commandtext-properties-example-vc.md)
+
+  - [Command-Eigenschaft, Parameters-Auflistung (VC++-Beispiel)](parameters-collection-command-property-example-vc.md)
+
+  - [DateCreated- und DateModified-Eigenschaften (VC++-Beispiel)](datecreated-and-datemodified-properties-example-vc.md)
+
+  - [DefinedSize-Eigenschaft (VC++-Beispiel)](definedsize-property-example-vc.md)
+
+  - [DeleteRule-Eigenschaft (VC++-Beispiel)](deleterule-property-example-vc.md)
+
+  - [IndexNulls-Eigenschaft (VC++-Beispiel)](indexnulls-property-example-vc.md)
+>>>>>>> master
 
   - [Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft, Append-Methode (Keys) (VC++-Beispiel)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc.md)
 
   - [Name-Eigenschaft, Append-Methode (Columns und Tables) (VC++-Beispiel)](columns-and-tables-append-methods-name-property-example-vc.md)
 
+<<<<<<< Kopf
   - [NumericScale- und Precision-Eigenschaft (VC++-Beispiel)](numericscale-and-precision-properties-example-vc.md)
 
   - [ParentCatalog-Eigenschaft (VC++-Beispiel)](parentcatalog-property-example-vc.md)
 
   - [PrimaryKey- und Unique-Eigenschaft (VC++-Beispiel)](primarykey-and-unique-properties-example-vc.md)
+=======
+  - [NumericScale- und Precision-Eigenschaften (VC++-Beispiel)](numericscale-and-precision-properties-example-vc.md)
+
+  - [ParentCatalog-Eigenschaft (VC++-Beispiel)](parentcatalog-property-example-vc.md)
+
+  - [PrimaryKey- und Unique Eigenschaft (VC++-Beispiel)](primarykey-and-unique-properties-example-vc.md)
+>>>>>>> master
 
   - [Type-Eigenschaft (Table), Connection Close-Methode (VC++-Beispiel)](connection-close-method-table-type-property-example-vc.md)
 
 **Auflistungen**
 
+<<<<<<< Kopf
   - [Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel)](parameters-collection-command-property-example-vc.md)
+=======
+  - [Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel)](parameters-collection-command-property-example-vc.md)
+>>>>>>> master
 

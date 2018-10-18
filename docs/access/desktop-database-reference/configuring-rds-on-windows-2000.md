@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250193(v=office.15)
 ms:contentKeyID: 48548482
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c1f3227e7ae60d1b656b1a7e82b4a2d41bc36844
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0aed6889f16d55ee3ba7778bf9acc6134b744c5d
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474960"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602573"
 ---
 # <a name="configuring-rds-on-windows-2000"></a>Konfigurieren von RDS unter Windows 2000
 
@@ -34,7 +34,11 @@ Wenn es sich für Sie schwierig erweist, die Funktionsfähigkeit von RDS (Remote
 
 4.  Navigieren Sie mithilfe des Dienstprogramms RegEdit in der Registrierung auf "HKEY\_lokale\_Computer\\SYSTEM\\CurrentControlSet\\Services\\W3SVC\\Parameter\\ADCLaunch" und stellen Sie sicher, dass eine wichtige gewählte **vorhanden ist RDSServer.Datafactory**. Wenn dies nicht der Fall ist, erstellen Sie ihn.
 
-5.  Wechseln Sie mit Internetdienste-Manager zur Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stamms MSADC an. Überprüfen Sie die Einschränkungen für Verzeichnissicherheit, IP-Adressen und Domänennamen. Wenn Zugriff verweigert aktiviert ist, aktivieren Gewährt.
+<<<<<<< Kopf
+5.  Mithilfe des Internetdienste-Managers, wechseln Sie auf der Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stammverzeichnisses MSADC. Untersuchen Sie die Directory Security-IP-Adresse und der Domäne Name Einschränkungen. Wenn die "Zugriff verweigert" überprüft wird wählen Sie dann "Gewährt" aus.
+=======
+5.  Internetdienste-Manager verwenden, wechseln Sie zu der Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stammverzeichnisses MSADC. Untersuchen Sie die Directory Security-IP-Adresse und der Domäne Name Einschränkungen. Wenn die "Zugriff verweigert" überprüft wird wählen Sie dann "Gewährt" aus.
+>>>>>>> master
 
 Sie sollten den Server neu starten, wenn es zunächst den Anschein hat, dass das Problem durch die Änderungen nicht gelöst wurde.
 

@@ -1,19 +1,13 @@
 ---
-title: Source-Eigenschaft (Beispiel) (VJ++)
-TOCTitle: Source Property Example (VJ++)
-ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15)
-ms:contentKeyID: 48547821
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: aef4ad0bf1146236ba2df7ab51dd28005656c012
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474213"
+<<<<<<< HEAD-Titel: Source-Eigenschaft Beispiel) (VJ++) TOCTitle: Source-Eigenschaft Beispiel) (VJ++) === Titel: Source-Eigenschaft Beispiel) (VJ++) TOCTitle: Source-Eigenschaft Beispiel) (VJ++)
+>>>>>>> Master Ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15) Ms:contentKeyID: 48547821 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="source-property-example-vj"></a>Source-Eigenschaft (Beispiel) (VJ++)
+=======
+# <a name="source-property-example-vj"></a>Source-Eigenschaft Beispiel) (VJ++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

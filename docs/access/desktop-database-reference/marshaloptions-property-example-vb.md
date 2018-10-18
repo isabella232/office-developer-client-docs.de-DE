@@ -1,19 +1,13 @@
 ---
-title: MarshalOptions-Eigenschaft (Beispiel) (VB)
-TOCTitle: MarshalOptions Property Example (VB)
-ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15)
-ms:contentKeyID: 48548691
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6da1e748f9cbf350b880f77ec18f1368a99eaa63
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473436"
+<<<<<<< HEAD-Titel: MarshalOptions-Eigenschaft Beispiel) (VB) TOCTitle: MarshalOptions-Eigenschaft Beispiel) (VB) === Titel: MarshalOptions-Eigenschaft (Beispiel) (VB) TOCTitle: MarshalOptions-Eigenschaft (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15) Ms:contentKeyID: 48548691 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="marshaloptions-property-example-vb"></a>MarshalOptions-Eigenschaft (Beispiel) (VB)
+=======
+# <a name="marshaloptions-property-example-vb"></a>MarshalOptions-Eigenschaft (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

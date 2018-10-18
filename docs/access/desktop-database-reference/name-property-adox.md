@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249979(v=office.15)
 ms:contentKeyID: 48547674
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 51ea68718c7605df03ed8e4d44d4cb48011649fd
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4ea92fcca60d0c2877bf89359aac4532356a9874
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472927"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604050"
 ---
 # <a name="name-property-adox"></a>Name-Eigenschaft (ADOX)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25472927"
 
 Gibt den Namen des Objekts an.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** festgelegt oder zurückgegeben.
 

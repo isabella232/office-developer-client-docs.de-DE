@@ -1,26 +1,24 @@
 ---
-title: CursorType-Eigenschaft (ADO)
-TOCTitle: CursorType Property (ADO)
-ms:assetid: f42ded8f-9f92-ef03-a198-ffb892324611
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15)
-ms:contentKeyID: 48548682
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0628edda3c85af08ecd815e550aecbd864955814
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473112"
+<<<<<<< HEAD-Titel: CursorType-Eigenschaft (ADO) TOCTitle: CursorType-Eigenschaft (ADO) === Titel: CursorType-Eigenschaft (ADO) TOCTitle: CursorType-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: f42ded8f-9f92-ef03-a198-ffb892324611 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15) Ms:contentKeyID: 48548682 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="cursortype-property-ado"></a>CursorType-Eigenschaft (ADO)
+=======
+# <a name="cursortype-property-ado"></a>CursorType-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt den Typ des Cursors an, der in einem [Recordset](recordset-object-ado.md)-Objekt verwendet wird.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Mit dieser Eigenschaft wird ein [CursorTypeEnum](cursortypeenum.md)-Wert festgelegt oder zurückgegeben. Der Standardwert ist **adOpenForwardOnly**.
 

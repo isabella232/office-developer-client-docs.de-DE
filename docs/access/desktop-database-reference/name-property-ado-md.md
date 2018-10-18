@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249093(v=office.15)
 ms:contentKeyID: 48544065
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0cc7a89e0d6b9cdaed2c54d3269b61280ce3306c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 90a77ae9d8c32ff8d0a13eacb146fc0e3ab3f397
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473438"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602468"
 ---
 # <a name="name-property-ado-md"></a>Name-Eigenschaft (ADO MD)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25473438"
 
 Gibt den Namen eines Objekts an.
 
+<<<<<<< Kopf
+## <a name="return-values"></a>Rückgabewert
+=======
 ## <a name="return-values"></a>Rückgabewerte
+>>>>>>> master
 
 Gibt einen schreibgeschützten **String** -Wert zurück.
 

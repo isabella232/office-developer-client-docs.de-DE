@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fd7496efe7c38fcd78800ad087730bb21a19c32e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d6955bca1bf693386d1f5edb4bac04cee311d78e
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474233"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606962"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord-Methode (ADO)
 
@@ -51,7 +51,11 @@ Verschiebt die durch einen [Record](record-object-ado.md) dargestellte Entität 
 
   - Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.
 
+<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
+=======
+## <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 Ein **String** -Wert. In der Regel wird der Wert des *Ziels* zurückgegeben. Der genaue Wert, der zurückgegeben wird, ist jedoch vom Anbieter abhängig.
 
@@ -73,6 +77,10 @@ Wurde dieser **Record** aus einem [Recordset](recordset-object-ado.md)-Objekt ab
 
 
 > [!NOTE]
+<<<<<<< Kopf
 > <P>[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der <A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider für Internet Publishing</A> automatisch aufgerufen. Weitere Informationen erhalten Sie unter <A href="absolute-and-relative-urls.md">Absolute und relative URLs</A>.</P>
+=======
+> [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).
+>>>>>>> master
 
 

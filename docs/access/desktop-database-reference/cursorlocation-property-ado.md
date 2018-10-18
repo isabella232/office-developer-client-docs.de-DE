@@ -1,19 +1,13 @@
 ---
-title: CursorLocation-Eigenschaft (ADO)
-TOCTitle: CursorLocation Property (ADO)
-ms:assetid: 8a048bd4-ae25-a555-1c07-14364b7e6560
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249606(v=office.15)
-ms:contentKeyID: 48546182
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9805b032a0e1a203d2a4057fb74757826a2a47b4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474446"
+<<<<<<< HEAD-Titel: CursorLocation-Eigenschaft (ADO) TOCTitle: CursorLocation-Eigenschaft (ADO) === Titel: CursorLocation-Eigenschaft (ADO) TOCTitle: CursorLocation-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: 8a048bd4-ae25-a555-1c07-14364b7e6560 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249606(v=office.15) Ms:contentKeyID: 48546182 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="cursorlocation-property-ado"></a>CursorLocation-Eigenschaft (ADO)
+=======
+# <a name="cursorlocation-property-ado"></a>CursorLocation-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

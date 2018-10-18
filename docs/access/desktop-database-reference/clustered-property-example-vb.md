@@ -1,19 +1,13 @@
 ---
-title: Clustered-Eigenschaft (VB-Beispiel)
-TOCTitle: Clustered Property Example (VB)
-ms:assetid: 1065622d-9473-209a-95be-c4b0ab5b687a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15)
-ms:contentKeyID: 48543293
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: f4cf09b0e8393eca74b1ed8fbaca8591a99103b2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474996"
+<<<<<<< HEAD-Titel: gruppierte Eigenschaft Beispiel) (VB) TOCTitle: gruppierte Eigenschaft Beispiel) (VB) === Titel: Clustered-Eigenschaft (Beispiel) (VB) TOCTitle: Clustered-Eigenschaft (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: 1065622d-9473-209a-95be-c4b0ab5b687a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15) Ms:contentKeyID: 48543293 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="clustered-property-example-vb"></a>Clustered-Eigenschaft (VB-Beispiel)
+=======
+# <a name="clustered-property-example-vb"></a>Clustered-Eigenschaft (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

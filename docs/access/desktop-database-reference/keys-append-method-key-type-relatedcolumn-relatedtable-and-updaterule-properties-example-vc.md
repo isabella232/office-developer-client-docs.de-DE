@@ -1,19 +1,13 @@
 ---
-title: Append Keys-Methode, Schlüsseltyp RelatedColumn-Eigenschaften (Beispiel) (VC++)
-TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VC++)
-ms:assetid: d0784eb5-94aa-ef62-c26f-3d0980485990
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250041(v=office.15)
-ms:contentKeyID: 48547840
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0181f93beee3546690ea2a4a806563b2cc220bc7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473303"
+<<<<<<< HEAD-Titel: Keys-Methode Append, Schlüsseltyp, RelatedColumn-Eigenschaft (Beispiel) (VC++) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft-Beispiel) (VC++) === Titel: Schlüssel Append-Methode Key-Typ, RelatedColumn-Eigenschaft (Beispiel) (VC++) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: d0784eb5-94aa-ef62-c26f-3d0980485990 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250041(v=office.15) Ms:contentKeyID: 48547840 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>Append-Methode (Keys), Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft (VC++-Beispiel)
+=======
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>Keys-Methode Append, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

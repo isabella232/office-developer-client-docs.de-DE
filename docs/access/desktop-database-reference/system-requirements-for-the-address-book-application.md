@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249251(v=office.15)
 ms:contentKeyID: 48544757
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8890e9dba072e2c35d9773ea389701bb7d631ee7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e1536b1a03ed0e7c873b2db06e76ee9b505ee00c
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475613"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604428"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>Systemanforderungen für die Adressbuchanwendung
 
@@ -22,13 +22,15 @@ Die folgenden Software- und Datenbankanforderungen müssen erfüllt werden, um d
 
 **Softwareanforderungen**
 
-Zum Ausführen dieser Webanwendung muss der Servercomputer u. a. folgende Softwareanforderungen erfüllen:
+<<<<<<< HEAD die Server Computer die softwareanforderungen für die Ausführung dieser Webanwendung umfassen: === die Server Computer die softwareanforderungen für die Ausführung dieser Webanwendung umfassen:
+>>>>>>> master
 
   - Microsoft Windows NT® Server 4.0 mit Service Pack 3 oder höher oder Microsoft Windows® 2000 Server.
 
   - Microsoft Internetinformationsdienste (Internet Information Services, IIS), Version 3.0 oder höher, mit Active Server Pages.
 
-Zum Ausführen dieser Webanwendung muss der Clientcomputer u. a. folgende Softwareanforderungen erfüllen:
+<<<<<<< HEAD der Software Anforderungen für Clientcomputer für die Ausführung dieser Webanwendung enthalten: === der Software Anforderungen für Clientcomputer für die Ausführung dieser Webanwendung enthalten:
+>>>>>>> master
 
   - Microsoft Internet Explorer 4.0 oder höher.
 

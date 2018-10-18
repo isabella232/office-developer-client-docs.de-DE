@@ -1,19 +1,13 @@
 ---
-title: MarshalOptions-Eigenschaft (Beispiel) (VC++)
-TOCTitle: MarshalOptions Property Example (VC++)
-ms:assetid: 8c47eb55-f86d-e4c0-9617-d2ac3c91199f
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249617(v=office.15)
-ms:contentKeyID: 48546236
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: fe6b86ba3049304f248b2b914d16d67092573c8c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473768"
+<<<<<<< HEAD-Titel: MarshalOptions-Eigenschaft (VC++-Beispiel) TOCTitle: MarshalOptions-Eigenschaft (VC++-Beispiel) === Titel: MarshalOptions-Eigenschaft (VC++-Beispiel) TOCTitle: MarshalOptions-Eigenschaft (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: 8c47eb55-f86d-e4c0-9617-d2ac3c91199f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249617(v=office.15) Ms:contentKeyID: 48546236 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="marshaloptions-property-example-vc"></a>MarshalOptions-Eigenschaft (Beispiel) (VC++)
+=======
+# <a name="marshaloptions-property-example-vc"></a>MarshalOptions-Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

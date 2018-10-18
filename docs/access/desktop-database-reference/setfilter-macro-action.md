@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm122943
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fad18c6e7a9ca185e15598b532bbc6de4e5b4f9a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4fe2bceb53b835d4c8adab1a1550185c3a7a122a
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475448"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606395"
 ---
 # <a name="setfilter-macro-action"></a>FestlegenFilter-Makroaktion
 
@@ -40,12 +40,20 @@ Die **FestlegenFilter** -Aktion kann mit den folgenden Argumenten verwendet werd
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Filter Name</p></td>
+<td><p>Filtername</p></td>
+<<<<<<< Kopf
 <td><p>Wenn angegeben, der Name einer Abfrage oder eines Filters, der als Abfrage gespeichert wurde. Dieses Argument oder das Argument WhereCondition ist in einer Clientdatenbank erforderlich. In Webdatenbanken ist dieses Argument nicht verfügbar.</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition</p></td>
 <td><p>Wenn angegeben, eine SQL-WHERE-Klausel, mit der die Datensätze im Datenblatt, Formular, Bericht oder in der Tabelle eingeschränkt werden. In Webdatenbanken ist dieses Argument erforderlich.</p></td>
+=======
+<td><p>Wenn angegeben, der Name einer Abfrage oder eines Filters, der als Abfrage gespeichert wurde. Dieses Argument oder das Argument WhereCondition ist in einer Clientdatenbank erforderlich. In einer Webdatenbank ist dieses Argument nicht verfügbar.</p></td>
+</tr>
+<tr class="even">
+<td><p>Where Condition</p></td>
+<td><p>Wenn angegeben, eine SQL-WHERE-Klausel, mit der die Datensätze im Datenblatt, Formular, Bericht oder in der Tabelle eingeschränkt werden. In einer Webdatenbank ist dieses Argument erforderlich.</p></td>
+>>>>>>>Master-Shape
 </tr>
 <tr class="odd">
 <td><p>Control Name</p></td>

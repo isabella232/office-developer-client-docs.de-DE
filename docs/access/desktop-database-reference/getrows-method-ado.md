@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249292(v=office.15)
 ms:contentKeyID: 48544963
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fc82a753adb5e9bd7a5a5d46b6ae8ce284a94375
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b0f7f38e44e26238e5a55feaaad302bbf427d678
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472883"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606150"
 ---
 # <a name="getrows-method-ado"></a>GetRows-Methode (ADO)
 
@@ -25,7 +25,11 @@ Ruft mehrere Datensätze eines [Recordset](recordset-object-ado.md)-Objekts in e
 
 *Array* = *Recordset-Objekt*. GetRows (*Zeilen*, *Starten*, *Felder* )
 
+<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
+=======
+## <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 Gibt einen **Variant** -Wert zurück, deren dessen Wert es sich um ein zweidimensionales Array handelt.
 

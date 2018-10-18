@@ -1,19 +1,13 @@
 ---
-title: Sort-Eigenschaft (Beispiel) (VC++)
-TOCTitle: Sort Property Example (VC++)
-ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15)
-ms:contentKeyID: 48543259
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 33f8134320192ad22b0ddc743c1e445cfad46d58
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475470"
+<<<<<<< HEAD-Titel: Sort-Eigenschaft (VC++-Beispiel) TOCTitle: Sort-Eigenschaft (VC++-Beispiel) === Titel: Sort-Eigenschaft (VC++-Beispiel) TOCTitle: Sort-Eigenschaft (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15) Ms:contentKeyID: 48543259 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="sort-property-example-vc"></a>Sort-Eigenschaft (Beispiel) (VC++)
+=======
+# <a name="sort-property-example-vc"></a>Sort-Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

@@ -1,26 +1,24 @@
 ---
-title: ConnectionString-Eigenschaft (ADO)
-TOCTitle: ConnectionString Property (ADO)
-ms:assetid: c67a7daf-258f-d99d-6475-a4aa98d1e99d
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249968(v=office.15)
-ms:contentKeyID: 48547627
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 90e884f821c3ca7667020ffe041b4e064555c02b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475239"
+<<<<<<< HEAD-Titel: ConnectionString-Eigenschaft (ADO) TOCTitle: ConnectionString-Eigenschaft (ADO) === Titel: ConnectionString-Eigenschaft (ADO) TOCTitle: ConnectionString-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: c67a7daf-258f-d99d-6475-a4aa98d1e99d Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249968(v=office.15) Ms:contentKeyID: 48547627 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="connectionstring-property-ado"></a>ConnectionString-Eigenschaft (ADO)
+=======
+# <a name="connectionstring-property-ado"></a>ConnectionString-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die Informationen an, mit denen eine Verbindung mit einer Datenquelle hergestellt wird.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** festgelegt oder zurückgegeben.
 

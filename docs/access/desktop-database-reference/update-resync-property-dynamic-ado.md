@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248842(v=office.15)
 ms:contentKeyID: 48543166
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 16600f22084718a6b32656ebfc56d6a9be06c676
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f4eea391e99202eeb075d73daa1034dff2042e49
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474210"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604421"
 ---
 # <a name="update-resync-property--dynamic-ado"></a>Update Resync (dynamische Eigenschaft) (ADO)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25474210"
 
 Gibt an, ob auf die [UpdateBatch](updatebatch-method-ado.md)-Methode ein impliziter Vorgang mit einer [Resync](resync-method-ado.md)-Methode folgt. Wenn dies der Fall ist, wird der Bereich des Vorgangs angegeben.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Legt fest oder gibt mindestens eines der [ADCPROP\_UPDATERESYNC\_ENUM](adcprop-updateresync-enum.md) Werte.
 

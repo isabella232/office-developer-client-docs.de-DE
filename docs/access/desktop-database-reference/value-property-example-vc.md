@@ -1,19 +1,13 @@
 ---
-title: Value-Eigenschaft (Beispiel) (VC++)
-TOCTitle: Value Property Example (VC++)
-ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15)
-ms:contentKeyID: 48548040
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 91be0b756d8eb91deacb3971ecf0448dcf068308
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473577"
+<<<<<<< HEAD-Titel: Wert-Eigenschaft (VC++-Beispiel) TOCTitle: Wert-Eigenschaft (VC++-Beispiel) === Titel: Wert-Eigenschaft (VC++-Beispiel) TOCTitle: Wert-Eigenschaft (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) Ms:contentKeyID: 48548040 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="value-property-example-vc"></a>Value-Eigenschaft (Beispiel) (VC++)
+=======
+# <a name="value-property-example-vc"></a>Wert-Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

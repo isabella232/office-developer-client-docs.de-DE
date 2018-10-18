@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053067
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1d3bcea9c2a3d64533d4187a90fd4a43be24d04d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 35bf71742133b65c2e55583e1c62922cb5bc91e8
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473464"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606038"
 ---
 # <a name="connectioncreatequerydef-method-dao"></a>Connection.CreateQueryDef Method (DAO)
 
@@ -64,7 +64,11 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 </table>
 
 
+<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
+=======
+### <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 QueryDef-Objekt
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249506(v=office.15)
 ms:contentKeyID: 48545792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8d8bc6d0bb2b2f5402a10a690bb0003170357b21
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d87dc84217b716505302464825a1857fecf67669
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474443"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606822"
 ---
 # <a name="rds-tutorial-vbscript"></a>RDS-Lernprogramm (VBScript)
 
@@ -43,7 +43,8 @@ In diesem Lernprogramm [RDS. DataControl](datacontrol-object-rds.md) und [RDS. D
 
 **Schritt 1- Angeben eines Serverprogramms**
 
-Der Name des IIS-Webservers, auf dem VBScript ausgeführt wird, kann von VBScript erkannt werden, indem auf die für Active Server Pages (ASP) verfügbare VBScript-Methode **Request.ServerVariables** zugegriffen wird:
+<<<<<<< HEAD VBScript können den Namen des IIS-Webservers es auf ausgeführt wird, durch Zugreifen auf die Active Server Pages verfügbare VBScript **Request.ServerVariables** -Methode erkennen: === VBScript kann ermitteln, die den Namen der IIS-Website Server, die es ausgeführt wird, durch Zugreifen auf die VBScript **Request.ServerVariables** -Methode Active Server Pages zur Verfügung:
+>>>>>>> master
 
 ```vb 
  

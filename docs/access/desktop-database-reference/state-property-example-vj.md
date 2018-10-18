@@ -1,19 +1,13 @@
 ---
-title: State-Eigenschaft (Beispiel) (VJ++)
-TOCTitle: State Property Example (VJ++)
-ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15)
-ms:contentKeyID: 48545869
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 125a8caa3afc210c08d8ea1a4a8cea27e22a67a8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473037"
+<<<<<<< HEAD-Titel: State-Eigenschaft Beispiel) (VJ++) TOCTitle: State-Eigenschaft Beispiel) (VJ++) === Titel: State-Eigenschaft Beispiel) (VJ++) TOCTitle: State-Eigenschaft Beispiel) (VJ++)
+>>>>>>> Master Ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15) Ms:contentKeyID: 48545869 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="state-property-example-vj"></a>State-Eigenschaft (Beispiel) (VJ++)
+=======
+# <a name="state-property-example-vj"></a>State-Eigenschaft Beispiel) (VJ++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

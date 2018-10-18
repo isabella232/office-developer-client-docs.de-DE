@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba0cdb22ee9234e935635038b86ac792dd5753cc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ddd823baf153ebc78fc34ca838184f415edd29ef
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475907"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605919"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema-Methode (ADO)
 
@@ -25,7 +25,11 @@ Ruft Datenbank-Schemainformationen vom Anbieter ab.
 
 **Legen Sie *** Recordset* = *Verbindung*. OpenSchema (* QueryType * *Kriterien*, *SchemaID*)
 
+<<<<<<< Kopf
 ## <a name="return-values"></a>Rückgabewert
+=======
+## <a name="return-values"></a>Rückgabewerte
+>>>>>>> master
 
 Gibt ein [Recordset](recordset-object-ado.md)-Objekt zurück, das Schemainformationen enthält. Das **Recordset** -Objekt wird schreibgeschützt als statischer Cursor geöffnet. Die *QueryType* bestimmt, welche Spalten im **Recordset-Objekt**angezeigt werden.
 

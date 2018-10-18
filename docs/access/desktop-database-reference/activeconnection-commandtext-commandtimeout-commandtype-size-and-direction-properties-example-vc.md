@@ -1,20 +1,14 @@
 ---
-title: ActiveConnection, CommandText, CommandTimeout Eigenschaft (Beispiel) (VC++)
-TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction Properties Example (VC++)
-ms:assetid: 254e6d48-fc07-1df0-215c-a91141238985
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15)
-ms:contentKeyID: 48543780
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 3a1017428f473ee48882ba808c0905c6874d2d4d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473418"
+<<<<<<< HEAD-Titel: ActiveConnection, CommandText, CommandTimeout Eigenschaft (Beispiel) (VC++) TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaft (Beispiel) (VC++) Ms:assetid: 254e6d48-fc07-1df0-215c-a91141238985 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15) Ms:contentKeyID: 48543780 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc"></a>ActiveConnection-, CommandText-, CommandTimeout-, CommandType-, Size- und Direction-Eigenschaft (Beispiel) (VC++)
 
+=== Titel: ActiveConnection-, CommandText-, CommandTimeout-Eigenschaft (Beispiel) (VC++) TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction-Eigenschaften (VC++-Beispiel) Ms:assetid: 254e6d48-fc07-1df0-215c-a91141238985 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249021(v=office.15) Ms:contentKeyID: 48543780 ms.date: 10/17/2018 Mtps_version: Office. 15
+---
+
+# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc"></a>ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 **Betrifft**: Access 2013 | Office 2013
 

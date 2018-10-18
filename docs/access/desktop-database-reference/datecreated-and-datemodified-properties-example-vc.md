@@ -1,19 +1,13 @@
 ---
-title: DateCreated- und DateModified-Eigenschaft (VC++-Beispiel)
-TOCTitle: DateCreated and DateModified Properties Example (VC++)
-ms:assetid: 1c92e8f5-2fed-55dc-2cdd-51dfa16ecd84
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248962(v=office.15)
-ms:contentKeyID: 48543573
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: ee16d229d5fcc2a11ee19f05f597d5f9a6caf251
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474665"
+<<<<<<< HEAD-Titel: DateCreated- und DateModified-Eigenschaft-Beispiel) (VC++) TOCTitle: DateCreated- und DateModified-Eigenschaft-Beispiel) (VC++) === Titel: DateCreated- und DateModified-Eigenschaften (VC++-Beispiel) TOCTitle: DateCreated- und DateModified-Eigenschaften (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: 1c92e8f5-2fed-55dc-2cdd-51dfa16ecd84 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248962(v=office.15) Ms:contentKeyID: 48543573 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="datecreated-and-datemodified-properties-example-vc"></a>DateCreated- und DateModified-Eigenschaft (VC++-Beispiel)
+=======
+# <a name="datecreated-and-datemodified-properties-example-vc"></a>DateCreated- und DateModified-Eigenschaften (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

@@ -1,19 +1,13 @@
 ---
-title: Count-Eigenschaft (Beispiel) (VJ++)
-TOCTitle: Count Property Example (VJ++)
-ms:assetid: 749de00a-7530-ea04-558c-34277c4d2f61
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249478(v=office.15)
-ms:contentKeyID: 48545666
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 4dbe3120b1204525fceca2162fc3a102fe8caeb4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474712"
+<<<<<<< HEAD-Titel: Count-Eigenschaft Beispiel) (VJ++) TOCTitle: Count-Eigenschaft Beispiel) (VJ++) === Titel: Count-Eigenschaft Beispiel) (VJ++) TOCTitle: Count-Eigenschaft Beispiel) (VJ++)
+>>>>>>> Master Ms:assetid: 749de00a-7530-ea04-558c-34277c4d2f61 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249478(v=office.15) Ms:contentKeyID: 48545666 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="count-property-example-vj"></a>Count Property Example (VJ++)
+=======
+# <a name="count-property-example-vj"></a>Count-Eigenschaft Beispiel) (VJ++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

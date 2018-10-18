@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249732(v=office.15)
 ms:contentKeyID: 48546686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8a5c739ffd408a1f53539c88a3bdc4169eb4cebe
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f3cdf4764cca2b40cee62f9d66ea748a4e627a5f
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472981"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606843"
 ---
 # <a name="willexecute-event-ado"></a>WillExecute-Ereignis (ADO)
 
@@ -63,7 +63,9 @@ WillExecute*Source*, *CursorType*, *LockType*, *Optionen*, *AdStatus*, *pCommand
 
 ## <a name="remarks"></a>Hinweise
 
-**WillExecute** -Ereignis kann aufgrund von Auftreten einer **Verbindung.** [Führen Sie](https://msdn.microsoft.com/library/jj249832\(v=office.15\)) **Befehl.** Wird [ausgeführt](https://msdn.microsoft.com/library/jj248785\(v=office.15\)), oder **Recordset.** [Open](open-method-ado-recordset.md) -Methode *eintreten* sollte immer einen gültigen Verweis auf ein **Connection** -Objekt enthalten. Wenn das Ereignis aufgrund der **Methoden Connection.Execute**, werden die Parameter *pCommand* und *pCommand* auf **Nothing**festgelegt. Ist das Ereignis aufgrund **Recordset.Open**, der *pCommand* -Parameter wird das **Recordset** -Objekt verweisen, und der Parameter *pCommand* auf **Nothing**festgelegt ist. Ist das Ereignis aufgrund von **Command.Execute**, Parameters *pCommand* verweist auf das **Command** -Objekt, und der Parameter *pCommand* auf **Nothing**festgelegt ist.
+<<<<<<< HEAD **WillExecute** -Ereignis kann aufgrund von Auftreten einer **Verbindung.** [Führen Sie](https://msdn.microsoft.com/library/jj249832\(v=office.15\)) **Befehl.** Wird [ausgeführt](https://msdn.microsoft.com/library/jj248785\(v=office.15\)), oder **Recordset.** [Open](open-method-ado-recordset.md) -Methode *eintreten* sollte immer einen gültigen Verweis auf ein **Connection** -Objekt enthalten. Wenn das Ereignis aufgrund der **Methoden Connection.Execute**, werden die Parameter *pCommand* und *pCommand* auf **Nothing**festgelegt. Ist das Ereignis aufgrund **Recordset.Open**, der *pCommand* -Parameter wird das **Recordset** -Objekt verweisen, und der Parameter *pCommand* auf **Nothing**festgelegt ist. Ist das Ereignis aufgrund von **Command.Execute**, Parameters *pCommand* verweist auf das **Command** -Objekt, und der Parameter *pCommand* auf **Nothing**festgelegt ist.
+=== Ein **WillExecute** -Ereignis kann aufgrund von Auftreten einer **Verbindung.** [Führen Sie](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) **Befehl.** Wird [ausgeführt](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command), oder **Recordset.** [Open](open-method-ado-recordset.md) -Methode *eintreten* sollte immer einen gültigen Verweis auf ein **Connection** -Objekt enthalten. Wenn das Ereignis aufgrund der **Methoden Connection.Execute**, werden die Parameter *pCommand* und *pCommand* auf **Nothing**festgelegt. Ist das Ereignis aufgrund **Recordset.Open**, der *pCommand* -Parameter wird das **Recordset** -Objekt verweisen, und der Parameter *pCommand* auf **Nothing**festgelegt ist. Ist das Ereignis aufgrund von **Command.Execute**, Parameters *pCommand* verweist auf das **Command** -Objekt, und der Parameter *pCommand* auf **Nothing**festgelegt ist.
+>>>>>>> master
 
 Mit **WillExecute** können Sie die ausstehenden Ausführungsparameter untersuchen und ändern. Dieses Ereignis kann eine Anforderung zurückgeben, dass der ausstehende Befehl abgebrochen wird.
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249814(v=office.15)
 ms:contentKeyID: 48547039
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 33570bec65de4ff88667ad90b591c4f288c86d96
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 34e691edd429b5d7f00da0c8eb994ffd999c6305
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474507"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603952"
 ---
 # <a name="shape-commands-in-general"></a>Shape-Befehle im Allgemeinen
 
@@ -62,7 +62,9 @@ Ein Shape-Befehl kann eine Klausel enthalten, durch die ein Abfragebefehl an ein
 
 Sie können eine SQL JOIN-Klausel verwenden, um zwei Tabellen miteinander in Beziehung zu setzen. Durch ein hierarchisches **Recordset** -Objekt werden die Informationen jedoch möglicherweise effizienter dargestellt. In jeder Zeile eines durch JOIN erstellten **Recordset** -Objekts werden Informationen aus einer der Tabellen redundant wiederholt. Ein hierarchisches **Recordset** -Objekt hat nur ein übergeordnetes **Recordset** -Objekt für jedes einzelne mehrerer untergeordneter **Recordset** -Objekte.
 
-Shape-Befehle können durch Recordset-Objekte oder durch Festlegen der CommandText-Eigenschaft des Command-Objekts und anschließendes Aufrufen der Execute-Methode ausgegeben werden.
+<<<<<<< HEAD-Shape-Befehle können durch **Recordset** -Objekte oder durch Festlegen der [CommandText](commandtext-property-ado.md) -Eigenschaft des [Command](command-object-ado.md) -Objekts und anschließendes Aufrufen der [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) -Methode ausgegeben werden.
+=== Shape-Befehle können durch **Recordset** -Objekte oder durch Festlegen der [CommandText](commandtext-property-ado.md) -Eigenschaft des [Command](command-object-ado.md) -Objekts und anschließendes Aufrufen der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode ausgegeben werden.
+>>>>>>> master
 
 Shape-Befehle können geschachtelt werden. Das heißt, der übergeordnete Befehl oder der untergeordnete Befehl kann selbst ein weiterer Shape-Befehl sein.
 

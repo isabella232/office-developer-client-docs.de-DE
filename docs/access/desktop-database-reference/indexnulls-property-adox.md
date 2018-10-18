@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249326(v=office.15)
 ms:contentKeyID: 48545089
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f1b49872800285a29f66339a9559560ae3cc356e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4b30b8b56fe8dd82627f99690594f72288f561aa
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476116"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603896"
 ---
 # <a name="indexnulls-property-adox"></a>IndexNulls-Eigenschaft (ADOX)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25476116"
 
 Gibt an, ob Datensätze mit nullwertigen Indexfeldern über Indexeinträge verfügen.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Legt einen [AllowNullsEnum](allownullsenum.md)-Wert fest und gibt diesen zurück. Der Standardwert lautet **adIndexNullsDisallow**.
 

@@ -1,19 +1,13 @@
 ---
-title: Schlüssel Append-Methode, Schlüsseltyp RelatedColumn Eigenschaften Beispiel) (VB)
-TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB)
-ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15)
-ms:contentKeyID: 48547871
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 4a81c457187d53abac6aedbf382605a349c3c812
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474494"
+<<<<<<< HEAD-Titel: Keys-Methode Append, Schlüsseltyp, RelatedColumn-Eigenschaften Beispiel) (VB) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule Eigenschaften Beispiel) (VB) === Titel: Schlüssel Append-Methode, Schlüssel Typ, RelatedColumn-Eigenschaft (Beispiel) (VB) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) Ms:contentKeyID: 48547871 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Append-Methode (Keys), Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft (VB-Beispiel)
+=======
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Keys-Methode Append, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

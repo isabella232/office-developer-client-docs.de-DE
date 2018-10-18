@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249825(v=office.15)
 ms:contentKeyID: 48547072
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a6e9bf0cfd27e478b66ccc046412c0e874a4ebd6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 45164401bbab5cc9134fa7a354fde54bbb02fa37
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476139"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604785"
 ---
 # <a name="solutions-for-remote-data-access"></a>Lösungen für Remotedatenzugriff
 
@@ -24,7 +24,9 @@ Mit ADO ist es möglich, über die Anwendung direkt auf Datenquellen zuzugreifen
 
 Möglicherweise möchten Sie jedoch indirekt über einen Vermittler wie Microsoft® Internetinformationsdienste (Internet Information Services, IIS) auf Datenquellen zugreifen. Diese Anordnung wird manchmal als dreistufiges System bezeichnet. IIS ist ein Client-/Server-System, durch das eine effiziente Möglichkeit bereitgestellt wird, mit einer lokalen Anwendung oder Clientanwendung ein Remoteprogramm oder Serverprogramm über das Internet oder ein Intranet aufzurufen. Durch das Serverprogramm wird auf die Datenquelle zugegriffen, und optional werden die erfassten Daten verarbeitet.
 
-Beispielsweise enthält die Intranetwebseite eine in Microsoft® Visual Basic Scripting Edition (VBScript) geschriebene Anwendung, durch die eine Verbindung mit IIS hergestellt wird. Von IIS wiederum wird eine Verbindung mit der eigentlichen Datenquelle hergestellt, die Daten werden abgerufen und auf eine bestimmte Weise verarbeitet. Dann werden die verarbeiteten Informationen an die Anwendung zurückgegeben.
+<<<<<<< Beispielsweise HEAD für Ihre Intranet-Website enthält eine Anwendung, die in Microsoft® Visual Basic Scripting Edition (VBScript), das mit IIS verbindet geschrieben. IIS wiederum eine Verbindung mit der tatsächlichen Datenquelle, ruft die Daten, auf irgendeine Weise verarbeitet und gibt dann die verarbeitete Informationen zu Ihrer Anwendung zurück.
+=== Ihr Intranet-Webseite enthält beispielsweise eine Anwendung, die in Microsoft® Visual Basic Scripting Edition (VBScript), das mit IIS verbindet geschrieben. IIS wiederum eine Verbindung mit der tatsächlichen Datenquelle, ruft die Daten, auf irgendeine Weise verarbeitet und gibt dann die verarbeitete Informationen zu Ihrer Anwendung zurück.
+>>>>>>> master
 
 In diesem Beispiel wurde durch die Anwendung nie direkt eine Verbindung mit der Datenquelle hergestellt; dies erfolgte über IIS. Und durch IIS wurde mithilfe von ADO auf die Daten zugegriffen.
 

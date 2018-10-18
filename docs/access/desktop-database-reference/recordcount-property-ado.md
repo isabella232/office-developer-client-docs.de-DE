@@ -1,26 +1,24 @@
 ---
-title: RecordCount-Eigenschaft (ADO)
-TOCTitle: RecordCount Property (ADO)
-ms:assetid: e3072d10-5bf7-02a8-027e-a9d9a34e3f27
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250155(v=office.15)
-ms:contentKeyID: 48548304
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a619570264973fc70b7cc5bd581437a4002b00be
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475481"
+<<<<<<< HEAD-Titel: RecordCount-Eigenschaft (ADO) TOCTitle: RecordCount-Eigenschaft (ADO) === Titel: RecordCount-Eigenschaft (ADO) TOCTitle: RecordCount-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: e3072d10-5bf7-02a8-027e-a9d9a34e3f27 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250155(v=office.15) Ms:contentKeyID: 48548304 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="recordcount-property-ado"></a>RecordCount-Eigenschaft (ADO)
+=======
+# <a name="recordcount-property-ado"></a>RecordCount-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die Anzahl von Datensätzen in einem [Recordset](recordset-object-ado.md)-Objekt an.
 
+<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
+=======
+## <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 Gibt einen **Long** -Wert zurück, der die Anzahl von Datensätzen im **Recordset** -Objekt angibt.
 

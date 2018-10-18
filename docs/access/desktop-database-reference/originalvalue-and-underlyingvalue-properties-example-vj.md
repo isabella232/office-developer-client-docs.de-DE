@@ -1,19 +1,13 @@
 ---
-title: OriginalValue- und UnderlyingValue-Eigenschaft (Beispiel) (VJ++)
-TOCTitle: OriginalValue and UnderlyingValue Properties Example (VJ++)
-ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15)
-ms:contentKeyID: 48545233
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6aaaa219fad82290a9e135edbf56998201d908d3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473946"
+<<<<<<< HEAD-Titel: OriginalValue- und UnderlyingValue Eigenschaft (Beispiel) (VJ++) TOCTitle: OriginalValue- und UnderlyingValue Eigenschaft (Beispiel) (VJ++) === Titel: OriginalValue- und UnderlyingValue Eigenschaften) (Beispiel) (VJ++) TOCTitle: OriginalValue- und UnderlyingValue Eigenschaft (Beispiel) (VJ++)
+>>>>>>> Master Ms:assetid: 622d0356-e33d-4378-df5e-8f15fa91d260 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249368(v=office.15) Ms:contentKeyID: 48545233 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a>OriginalValue- und UnderlyingValue-Eigenschaft (Beispiel) (VJ++)
+=======
+# <a name="originalvalue-and-underlyingvalue-properties-example-vj"></a>OriginalValue- und UnderlyingValue Eigenschaften) (Beispiel) (VJ++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

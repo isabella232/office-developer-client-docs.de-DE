@@ -1,19 +1,13 @@
 ---
-title: Description, HelpContext, HelpFile Eigenschaft (Beispiel) (VJ++)
-TOCTitle: Description, HelpContext, HelpFile, NativeError, Number, Source, and SQLState Properties Example (VJ++)
-ms:assetid: daa3ff89-9f7f-f832-479e-bbb51c918ae8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250100(v=office.15)
-ms:contentKeyID: 48548085
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 16b43b26cc9109461142a3b121d2db9bf399772a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474108"
+<<<<<<< HEAD-Titel: Description, HelpContext, HelpFile Eigenschaft (Beispiel) (VJ++) TOCTitle: Description, HelpContext, HelpFile, NativeError, Anzahl, Source und SQLState Eigenschaft (Beispiel) (VJ++) === Titel: Beschreibung, HelpContext-und HelpFile Eigenschaft (Beispiel) (VJ++) TOCTitle: Description, HelpContext, HelpFile, NativeError, Anzahl, Source- und SQLState Eigenschaften) (Beispiel) (VJ++)
+>>>>>>> Master Ms:assetid: daa3ff89-9f7f-f832-479e-bbb51c918ae8 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250100(v=office.15) Ms:contentKeyID: 48548085 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vj"></a>Description-, HelpContext-, HelpFile-, NativeError-, Number-, Source- und SQLState-Eigenschaft (Beispiel) (VJ++)
+=======
+# <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vj"></a>Description, HelpContext, HelpFile, NativeError, Anzahl, Source- und SQLState Eigenschaften) (Beispiel) (VJ++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

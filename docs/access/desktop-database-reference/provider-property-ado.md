@@ -1,26 +1,24 @@
 ---
-title: Provider-Eigenschaft (ADO)
-TOCTitle: Provider Property (ADO)
-ms:assetid: 1b795f51-93d7-431c-b1fe-0db95f69a56a
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248953(v=office.15)
-ms:contentKeyID: 48543543
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 890f80534ff47c4dea67b34f345bce0f90328c60
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472623"
+<<<<<<< HEAD-Titel: Provider-Eigenschaft (ADO) TOCTitle: Provider-Eigenschaft (ADO) === Titel: Provider-Eigenschaft (ADO) TOCTitle: Provider-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: 1b795f51-93d7-431c-b1fe-0db95f69a56a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248953(v=office.15) Ms:contentKeyID: 48543543 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="provider-property-ado"></a>Provider-Eigenschaft (ADO)
+=======
+# <a name="provider-property-ado"></a>Provider-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt den Namen des Anbieters für ein [Connection](connection-object-ado.md)-Objekt an.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Legt einen **String** -Wert fest, der den Namen des Anbieters angibt, oder gibt den Wert zurück.
 

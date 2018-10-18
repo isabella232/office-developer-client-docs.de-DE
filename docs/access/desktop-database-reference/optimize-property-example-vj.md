@@ -1,19 +1,13 @@
 ---
-title: Optimize-Eigenschaft (Beispiel) (VJ++)
-TOCTitle: Optimize Property Example (VJ++)
-ms:assetid: d4ac9ae3-3304-addf-0292-7af4ed4fdbc2
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250067(v=office.15)
-ms:contentKeyID: 48547949
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 67b587fb7a0e4a87bafab83ba21cebc6c33a16ec
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474016"
+<<<<<<< HEAD-Titel: optimieren-Eigenschaft Beispiel) (VJ++) TOCTitle: optimieren-Eigenschaft Beispiel) (VJ++) === Titel: Optimize-Eigenschaft-Beispiel) (VJ++) TOCTitle: Optimize-Eigenschaft-Beispiel) (VJ++)
+>>>>>>> Master Ms:assetid: d4ac9ae3-3304-addf-0292-7af4ed4fdbc2 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250067(v=office.15) Ms:contentKeyID: 48547949 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="optimize-property-example-vj"></a>Optimize-Eigenschaft (Beispiel) (VJ++)
+=======
+# <a name="optimize-property-example-vj"></a>Optimize-Eigenschaft-Beispiel) (VJ++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

@@ -1,19 +1,13 @@
 ---
-title: Attributes-Eigenschaft (VC++-Beispiel)
-TOCTitle: Attributes Property Example (VC++)
-ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15)
-ms:contentKeyID: 48542976
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 5c10c098cf6764489acf77b7d56df6b514df46c7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475704"
+<<<<<<< HEAD-Titel: Attributes-Eigenschaft (VC++-Beispiel) TOCTitle: Attributes-Eigenschaft (VC++-Beispiel) === Titel: Attributes-Eigenschaft (VC++-Beispiel) TOCTitle: Attributes-Eigenschaft (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15) Ms:contentKeyID: 48542976 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="attributes-property-example-vc"></a>Attributes-Eigenschaft (VC++-Beispiel)
+=======
+# <a name="attributes-property-example-vc"></a>Attributes-Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

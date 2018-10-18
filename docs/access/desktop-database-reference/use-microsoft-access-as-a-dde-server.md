@@ -1,22 +1,11 @@
 ---
-title: Verwenden von Microsoft Access als DDE-server
-TOCTitle: Use Microsoft Access as a DDE Server
-ms:assetid: a3e82bf7-94b5-8eec-86bc-2d5387d66738
-ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15)
-ms:contentKeyID: 48546801
-ms.date: 09/18/2015
-mtps_version: v=office.15
-f1_keywords:
-- vbaac10.chm5186349
-f1_categories:
+Titel: Verwenden von Microsoft Access als DDE-Server TOCTitle: Verwenden von Microsoft Access als DDE-Server <<<<<<< HEAD Ms:assetid: a3e82bf7-94b5-8eec-86bc-2d5387d66738 Ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15) Ms:contentKeyID: 48546801 ms.date: 09/18/2015 === Beschreibung: Microsoft Access unterstützt dynamischem Datenaustausch (DDE) als eine Anwendung Ziel (Client) oder quellanwendung (Server).  
+MS:AssetId: a3e82bf7-94b5-8eec-86bc-2d5387d66738 Ms:mtpsurl: https://msdn.microsoft.com/library/Ff821067(v=office.15) Ms:contentKeyID: 48546801 ms.date: 10/16/2018
+>>>>>>> Master-Shape Mtps_version: Office. 15 f1_keywords:
+- vbaac10.chm5186349 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 84b4e30877488d84e03839764c1996053e76a2e7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475184"
 ---
+
 # <a name="use-microsoft-access-as-a-dde-server"></a>Verwenden von Microsoft Access als DDE-server
 
 **Betrifft**: Access 2013 | Office 2013 
@@ -26,12 +15,15 @@ Microsoft Access unterstützt dynamischem Datenaustausch (DDE) als eine Anwendun
 > [!TIP]
 > Wenn Sie Microsoft Access-Objekte aus einer anderen Anwendung bearbeiten müssen, können Sie Automatisierung verwenden möchten.
 
-Eine DDE-Verbindung zwischen einem Client und Server wird zu einem bestimmten Thema eingerichtet. Ein Thema kann entweder eine Datendatei im Format von der Serveranwendung unterstützt werden, oder es kann sein, das Thema "System", die Informationen über die Serveranwendung selbst bereitstellt. Nachdem eine Unterhaltung zu einem bestimmten Thema begonnen hat, kann nur ein mit diesem Thema verbundenes Datenelement übertragen werden.
+<<<<<<< HEAD eine DDE-Verbindung zwischen einem Client und Server wird zu einem bestimmten Thema eingerichtet. Ein Thema kann entweder eine Datendatei im Format von der Serveranwendung unterstützt werden, oder es kann sein, das Thema "System", die Informationen über die Serveranwendung selbst bereitstellt. Nachdem eine Unterhaltung zu einem bestimmten Thema begonnen hat, kann nur ein mit diesem Thema verbundenes Datenelement übertragen werden.
+=== Einer DDE-Verbindung zwischen einem Client und Server wird zu einem bestimmten Thema eingerichtet. Ein Thema kann entweder eine Datendatei im Format von der Serveranwendung unterstützt werden, oder es kann sein, das Thema "System", die Informationen über die Serveranwendung selbst bereitstellt. Nachdem Sie eine Unterhaltung zu einem bestimmten Thema begonnen hat, kann nur ein mit diesem Thema verbundenes Datenelement übertragen werden.
+>>>>>>> master
 
 Nehmen wir beispielsweise bei Microsoft Word ausgeführt werden und Daten aus einer bestimmten Microsoft Access-Datenbank in ein Dokument einfügen möchten. Sie zunächst eine DDE-Verbindung mit Microsoft Access öffnen einen DDE-Kanal mit der **DDEInitiate** -Funktion und der Name der Datenbankdatei als Thema angeben. Sie können dann Daten aus dieser Datenbank an Microsoft Word über den Kanal übertragen.
 
 Als DDE-Server unterstützt Microsoft Access die folgenden Themen:
 
+<<<<<<< Kopf
   - Das Thema "System"
 
   - Der Name einer Datenbank (Thema*Datenbank* )
@@ -63,6 +55,33 @@ Die Client-Anwendung können Sie die **DDERequest** -Funktion Textdaten aus der 
 > <P>Wenn die Clientanwendung empfangen von Daten über einen DDE-Kanal beendet wurde, sollte es den Kanal um Speicherressourcen zu sparen schließen.</P>
 
 
+=======
+- Das Thema "System"
+
+- Der Name einer Datenbank (Thema*Datenbank* )
+
+- Der Name einer Tabelle (Thema*Tabellenname* )
+
+- Der Name einer Abfrage (Thema*Abfragename* )
+
+- Eine Microsoft Access SQL-Zeichenfolge (Thema*SQLZeichenfolge* )
+
+Nachdem Sie eine DDE-Verbindung hergestellt haben, können Sie die Anweisung **DDEExecute** , einen Befehl vom Client an die Server-Anwendung zu senden. Wenn als DDE-Server verwendet wird, erkennt Microsoft Access die folgenden Befehle als gültig:
+
+- Der Name eines Makros in der aktuellen Datenbank.
+
+- Alle Aktionen, die Sie in Visual Basic können mithilfe der Methoden des **DoCmd** -Objekts.
+
+- Die OpenDatabase und SchließenDatenbank-Aktionen, die nur für DDE-Vorgänge verwendet werden. (Ein Beispiel dafür, wie Sie diese Aktionen verwenden, finden Sie weiter unten in diesem Thema.)
+
+> [!NOTE]
+> Wenn Sie eine Makroaktion als Anweisung **DDEExecute** angeben, die Aktion und Argumenten führen Sie die Syntax der **DoCmd** -Objekt und müssen in Klammern ([]) eingeschlossen werden. Allerdings erkennen, die DDE unterstützen keine systeminterne Konstanten in DDE-Vorgänge. Darüber hinaus Zeichenfolgenargumente müssen in Anführungszeichen eingeschlossen werden (""), wenn die Zeichenfolge ein Komma enthält. Anderenfalls sind Anführungszeichen nicht erforderlich.
+
+Die Client-Anwendung können Sie die **DDERequest** -Funktion Textdaten aus der Serveranwendung über einen geöffneten DDE-Kanal verwenden. Oder der Client kann die Anweisung **DDEPoke** zum Senden von Daten an die Serveranwendung verwenden. Nachdem die Datenübertragung abgeschlossen ist, kann der Client die Anweisung **DDETerminate** zum Schließen des DDE-Kanals oder der **DDETerminateAll** -Anweisung zum Schließen aller offenen Kanäle verwenden.
+
+> [!NOTE]
+> Wenn die Clientanwendung empfangen von Daten über einen DDE-Kanal beendet wurde, sollte es den Kanal um Speicherressourcen zu sparen schließen.
+>>>>>>> master
 
 Im folgenden Beispiel wird veranschaulicht, wie Sie eine Microsoft Word-Prozedur mit Visual Basic erstellen, die Microsoft Access als DDE-Server verwendet. (Für das Beispiel funktioniert, muss Microsoft Access ausgeführt werden.)
 
@@ -93,11 +112,17 @@ Im folgenden Beispiel wird veranschaulicht, wie Sie eine Microsoft Word-Prozedur
     End Sub
 ```
 
-Die folgenden Abschnitte enthalten Informationen zu den gültigen DDE-Themen, die von Microsoft Access unterstützt.
+<a name="-head"></a><<<<<<< Kopf
+=======
+<br/>
+
+>>>>>>> Master-Shape, in den folgenden Abschnitten finden Sie Informationen zu den gültigen DDE-Themen, die von Microsoft Access unterstützt.
 
 ## <a name="the-system-topic"></a>Das Thema "System"
 
-Das Systemthema befindet sich standard für alle Microsoft Windows-basierten Anwendungen. Es liefert Informationen zu den anderen Themen, die von der Anwendung unterstützt. Zugriff auf diese Informationen muss Code rufen Sie zunächst die **DDEInitiate** -Funktion mit als Argument *Thema* , und klicken Sie dann die **DDERequest** -Anweisung mit einer der folgenden Angaben für das Argument *Element* ausführen.
+<<<<<<< Das HEAD-System Thema befindet sich standard für alle Microsoft Windows-basierten Anwendungen. Es liefert Informationen zu den anderen Themen, die von der Anwendung unterstützt. Zugriff auf diese Informationen muss Code rufen Sie zunächst die **DDEInitiate** -Funktion mit als Argument *Thema* , und klicken Sie dann die **DDERequest** -Anweisung mit einer der folgenden Angaben für das Argument *Element* ausführen.
+=== Das Systemthema befindet sich standard für alle Microsoft Windows-basierten Anwendungen. Es liefert Informationen zu den anderen Themen, die von der Anwendung unterstützt. Zugriff auf diese Informationen muss Code rufen Sie zunächst die **DDEInitiate** -Funktion mit dem Argument *Thema* , und klicken Sie dann die **DDERequest** -Anweisung mit einer der folgenden Angaben für das Argument *Element* ausführen.
+>>>>>>> master
 
 <table>
 <colgroup>
@@ -130,6 +155,10 @@ Das Systemthema befindet sich standard für alle Microsoft Windows-basierten Anw
 </tbody>
 </table>
 
+<a name="-head"></a><<<<<<< Kopf
+=======
+<br/>
+>>>>>>> master
 
 Das folgende Beispiel veranschaulicht die Verwendung der Funktionen **DDEInitiate** und **DDERequest** mit dem Thema System:
 
@@ -149,11 +178,16 @@ Das folgende Beispiel veranschaulicht die Verwendung der Funktionen **DDEInitiat
 
 Das Thema *Datenbank* ist der Dateiname einer vorhandenen Datenbank. Sie können entweder nur den Namen der (Nordwind) oder den Pfad der Erweiterung eingeben (C:\\Access\\Beispiele\\Nordwind.mdb). Nach dem start einer DDE-Verbindung mit der Datenbank können Sie eine Liste der Objekte in der Datenbank anfordern.
 
+<<<<<<< Kopf
 
 > [!NOTE]
 > <P>Sie können keine DDE verwenden, um Microsoft Access-Arbeitsgruppen-Informationsdatei abzufragen.</P>
 
 
+=======
+> [!NOTE]
+> Sie können keine DDE verwenden, um Microsoft Access-Arbeitsgruppen-Informationsdatei abzufragen.
+>>>>>>> master
 
 Das Thema *Datenbank* unterstützt die folgenden Elemente.
 
@@ -171,6 +205,7 @@ Das Thema *Datenbank* unterstützt die folgenden Elemente.
 <tbody>
 <tr class="odd">
 <td><p>TableList</p></td>
+<<<<<<< Kopf
 <td><p>Eine Liste der Tabellen.</p></td>
 </tr>
 <tr class="even">
@@ -192,6 +227,29 @@ Das Thema *Datenbank* unterstützt die folgenden Elemente.
 <tr class="even">
 <td><p>ModuleList</p></td>
 <td><p>Eine Liste von Modulen.</p></td>
+=======
+<td><p>Eine Liste der Tabellen</p></td>
+</tr>
+<tr class="even">
+<td><p>QueryList</p></td>
+<td><p>Eine Liste von Abfragen</p></td>
+</tr>
+<tr class="odd">
+<td><p>FormList</p></td>
+<td><p>Eine Liste von Formularen</p></td>
+</tr>
+<tr class="even">
+<td><p>ReportList</p></td>
+<td><p>Eine Liste der Berichte</p></td>
+</tr>
+<tr class="odd">
+<td><p>MacroList</p></td>
+<td><p>Eine Liste mit Makros</p></td>
+</tr>
+<tr class="even">
+<td><p>ModuleList</p></td>
+<td><p>Eine Liste der Module</p></td>
+>>>>>>>Master-Shape
 </tr>
 <tr class="odd">
 <td><p>ViewList</p></td>
@@ -208,6 +266,10 @@ Das Thema *Datenbank* unterstützt die folgenden Elemente.
 </tbody>
 </table>
 
+<a name="-head"></a><<<<<<< Kopf
+=======
+<br/>
+>>>>>>> master
 
 Das folgende Beispiel zeigt, wie Sie das Formular Personal in der Northwind-Beispieldatenbank aus einer Visual Basic-Prozedur öffnen können:
 
@@ -295,6 +357,7 @@ In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenn
 </tr>
 <tr class="even">
 <td><p>FieldNames; T</p></td>
+<<<<<<< Kopf
 <td><p>Eine zwei Zeilen Liste von Feldnamen (erste Zeile) und deren Datentypen (zweite Zeile).</p></td>
 </tr>
 <tr class="odd">
@@ -356,6 +419,28 @@ In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenn
 <tr class="odd">
 <td><p></p></td>
 <td><p>12</p></td>
+=======
+<td><p>Eine zwei Zeilen Liste von Feldnamen (erste Zeile) und deren Datentypen (zweite Zeile).</p>
+<p>Dies sind die zurückgegebenen Werte:</p>
+<p>Wert</p>
+<p><ul>
+<li>0</li>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+<li>8</li>
+<li>9</li>
+<li>10</li>
+<li>11</li>
+<li>12</li>
+</ul>
+</p>
+</td>
+>>>>>>>Master-Shape
 </tr>
 <tr class="even">
 <td><p>NextRow</p></td>
@@ -388,6 +473,10 @@ In der folgenden Tabelle sind die gültigen Elemente für die Tabelle *Tabellenn
 </tbody>
 </table>
 
+<a name="-head"></a><<<<<<< Kopf
+=======
+<br/>
+>>>>>>> master
 
 Das folgende Beispiel zeigt, wie Sie DDE in einer Visual Basic-Prozedur das Abrufen von Daten aus einer Tabelle in der Northwind-Beispieldatenbank verwenden und diese Daten in eine Textdatei einfügen:
 

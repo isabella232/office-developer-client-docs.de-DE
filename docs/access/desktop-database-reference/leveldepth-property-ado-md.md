@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249894(v=office.15)
 ms:contentKeyID: 48547366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ea828aed8712aba704a605d76e46d25a6ed18ad2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 80712421cc146e482f848a997fe5f2d95cd951b1
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473228"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604274"
 ---
 # <a name="leveldepth-property-ado-md"></a>LevelDepth-Eigenschaft (ADO MD)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25473228"
 
 Gibt die Anzahl von Ebenen zwischen der Hierarchiewurzel und einem Element an.
 
+<<<<<<< Kopf
+## <a name="return-values"></a>Rückgabewert
+=======
 ## <a name="return-values"></a>Rückgabewerte
+>>>>>>> master
 
 Gibt einen schreibgeschützten, ganzzahligen **Long** -Wert zurück.
 

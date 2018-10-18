@@ -1,19 +1,13 @@
 ---
-title: Type-Eigenschaft (Beispiel) (VC++)
-TOCTitle: Type Property Example (Property) (VC++)
-ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15)
-ms:contentKeyID: 48548168
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 31708d28134b42915b6c8e0ccef1b65b7f06fabb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474901"
+<<<<<<< HEAD-Titel: Type-Eigenschaft (Beispiel) (VC++) TOCTitle: Type-Eigenschaft (Beispiel) (VC++) === Titel: Type-Eigenschaft (Beispiel) (VC++) TOCTitle: Type-Eigenschaft (Beispiel) (VC++)
+>>>>>>> Master Ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15) Ms:contentKeyID: 48548168 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="type-property-example-property-vc"></a>Type-Eigenschaft (Beispiel) (VC++)
+=======
+# <a name="type-property-example-property-vc"></a>Type-Eigenschaft (Beispiel) (VC++)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

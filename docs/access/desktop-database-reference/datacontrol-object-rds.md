@@ -6,18 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249801(v=office.15)
 ms:contentKeyID: 48547001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ca699fcfb850f00789fab632a9cae28a5e1e5a98
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3382b86ad14b484cb0fb9a8f6ecbd95018c25835
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475044"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25607011"
 ---
 # <a name="datacontrol-object-rds"></a>DataControl-Objekt (RDS)
 
 **Betrifft**: Access 2013 | Office 2013
 
-Ein Datenabfrage-[Recordset](recordset-object-ado.md) wird an mindestens ein Steuerelement (z. B. ein Textfeld, ein Rastersteuerelement oder ein Kombinationsfeld) gebunden, um die **Recordset** -Daten auf einer Webseite anzuzeigen.
+<<<<<<< HEAD bindet ein [Recordset-Objekt](recordset-object-ado.md) abgefragt werden an einen oder mehrere Steuerelemente (beispielsweise ein Textfeld, Grid-Steuerelement oder Kombinationsfeld) um die **Recordset** -Daten auf einer Webseite anzuzeigen.
+=== Bindet eine Datenabfrage [Recordset-Objekt](recordset-object-ado.md) an ein oder mehrere Steuerelemente (beispielsweise ein Textfeld, Grid-Steuerelement oder Kombinationsfeld) **die Recordsetdaten** auf einer Webseite angezeigt.
+>>>>>>> master
 
 ## <a name="syntax"></a>Syntax
 
@@ -80,15 +82,24 @@ Verwenden Sie ein **RDS.DataControl** -Objekt, um die Ergebnisse einer einzelnen
 
 Verwenden Sie unterschiedliche **RDS.DataControl**-Objekte, um die Ergebnisse von Mehrfachabfragen mit verschiedenen visuellen Steuerelementen zu verknüpfen. Sie verwenden z. B. eine Abfrage, um Informationen über einen Kunden zu erhalten, und eine zweite Abfrage, um Informationen über Waren zu erhalten, die der Kunde gekauft hat. Sie möchten die Ergebnisse der ersten Abfrage in drei Textfeldern und einem Kontrollkästchen anzeigen und die Ergebnisse der zweiten Abfrage in einem Rastersteuerelement. Wenn Sie das Standardgeschäftsobjekt verwenden (**RDSServer.DataFactory**), müssen Sie folgendermaßen vorgehen:
 
+<<<<<<< Kopf
   - Fügen Sie auf Ihrer Webseite zwei **RDS.DataControl** -Objekte hinzu.
+=======
+  - Hinzufügen von zwei **RDS. DataControl** Objekte auf Ihrer Webseite.
+>>>>>>> master
 
   - Erstellen Sie zwei Abfragen, jeweils eine für die SQL-Eigenschaft der beiden RDS.DataControl-Objekte. Ein RDS.DataControl-Objekt enthält eine SQL-Abfrage, die Kundeninformationen abfragt. Das zweite RDS.DataControl-Objekt enthält eine Abfrage, mit der eine Liste der vom Kunden gekauften Waren abgefragt wird.
 
   - Geben Sie im OBJECT-Tag der beiden gebundenen Steuerelemente den DATAFLD-Wert an, um die Werte für die Daten festzulegen, die in den einzelnen visuellen Steuerelementen angezeigt werden sollen.
 
-Es gibt keine Beschränkung für die Anzahl der **RDS.DataControl** -Objekte, die über OBJECT-Tags auf einer einzelnen Webseite eingebettet werden können.
+<<<<<<< HEAD es gibt keine Beschränkung für die Anzahl der **RDS. DataControl** -Objekten, die über OBJECT-Tags auf einer einzelnen Webseite eingebettet werden können.
 
-Verwenden Sie beim Definieren des **RDS.DataControl** -Objekts auf einer Webseite für **Height** und **Width** jeweils Werte ungleich Null, wie etwa 1 (um leeren Platz zu vermeiden).
+<a name="when-you-define-the-rdsdatacontrol-object-on-a-web-page-use-nonzero-height-and-width-values-such-as-1-to-avoid-the-inclusion-of-extra-space"></a>Verwenden Sie beim Definieren des **RDS.DataControl** -Objekts auf einer Webseite für **Height** und **Width** jeweils Werte ungleich Null, wie etwa 1 (um leeren Platz zu vermeiden).
+=======
+Es gibt keine Beschränkung für die Anzahl der **RDS. DataControl** -Objekten, die über OBJECT-Tags auf einer einzelnen Webseite eingebettet werden können.
+
+Beim Definieren der **RDS. DataControl** -Objekts auf einer Webseite, verwenden Sie die Werte ungleich NULL **Höhe** und **Breite** wie etwa 1 (um die Aufnahme der leeren Platz zu vermeiden).
+>>>>>>> master
 
 Clientkomponenten von Remote Data Service sind bereits in Internet Explorer 4.0 enthalten. Aus diesem Grund ist es nicht erforderlich, einen CODEBASE-Parameter in das **RDS.DataControl** -Objekttag einzubeziehen.
 

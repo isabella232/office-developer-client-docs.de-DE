@@ -1,26 +1,24 @@
 ---
-title: DefaultDatabase-Eigenschaft (ADO)
-TOCTitle: DefaultDatabase Property (ADO)
-ms:assetid: a35c5631-f9d9-e51f-950b-e52169830d94
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249757(v=office.15)
-ms:contentKeyID: 48546784
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 136e6bc0d68aac987a331ce20b8fca36a72afa73
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474654"
+<<<<<<< HEAD-Titel: DefaultDatabase-Eigenschaft (ADO) TOCTitle: DefaultDatabase-Eigenschaft (ADO) === Titel: DefaultDatabase-Eigenschaft (ADO) TOCTitle: DefaultDatabase-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: a35c5631-f9d9-e51f-950b-e52169830d94 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249757(v=office.15) Ms:contentKeyID: 48546784 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="defaultdatabase-property-ado"></a>DefaultDatabase-Eigenschaft (ADO)
+=======
+# <a name="defaultdatabase-property-ado"></a>DefaultDatabase-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die Standarddatenbank für ein [Connection](connection-object-ado.md)-Objekt an.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Mit dieser Eigenschaft wird ein **String** -Wert festgelegt oder zurückgegeben, der den Namen einer Datenbank angibt, die über den Anbieter verfügbar ist.
 

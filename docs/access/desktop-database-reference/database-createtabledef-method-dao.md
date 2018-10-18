@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052968
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e85c9f22ecfa6efa11a3d916e0bb374948df6104
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 99bccffb11dfb9813d52fed721a51b5417ef6be0
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473899"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602818"
 ---
 # <a name="databasecreatetabledef-method-dao"></a>Database.CreateTableDef-Methode (DAO)
 
@@ -75,7 +75,11 @@ Erstellt ein neues **[TableDef](tabledef-object-dao.md)** -Objekt (nur Microsoft
 </table>
 
 
+<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
+=======
+### <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 TableDef
 

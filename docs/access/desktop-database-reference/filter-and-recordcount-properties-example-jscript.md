@@ -1,19 +1,13 @@
 ---
-title: Filter- und RecordCount-Eigenschaft (Beispiel) (JScript)
-TOCTitle: Filter and RecordCount Properties Example (JScript)
-ms:assetid: a33e3d13-4184-69f9-4ff2-111106e653cf
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249755(v=office.15)
-ms:contentKeyID: 48546780
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0f6b33ce6824144626a9219fa2d218d90b38ed89
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474725"
+<<<<<<< HEAD-Titel: Filter- und RecordCount-Eigenschaften (Beispiel) (JScript) TOCTitle: Filter- und RecordCount-Eigenschaften (Beispiel) (JScript) === Titel: Eigenschaften Filter und RecordCount (Beispiel) (JScript) TOCTitle: Filter und RecordCount-Eigenschaft (Beispiel) (JScript)
+>>>>>>> Master Ms:assetid: a33e3d13-4184-69f9-4ff2-111106e653cf Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249755(v=office.15) Ms:contentKeyID: 48546780 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="filter-and-recordcount-properties-example-jscript"></a>Filter- und RecordCount-Eigenschaft (Beispiel) (JScript)
+=======
+# <a name="filter-and-recordcount-properties-example-jscript"></a>Filter- und RecordCount-Eigenschaften (Beispiel) (JScript)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

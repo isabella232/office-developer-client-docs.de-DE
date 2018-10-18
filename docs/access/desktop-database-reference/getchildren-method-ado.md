@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249687(v=office.15)
 ms:contentKeyID: 48546515
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a11f3e34f8dcb45bab88d8ff87e69067103e4640
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 06474b6c4ecb29388367f8ceac7c7676002e1384
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473171"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602658"
 ---
 # <a name="getchildren-method-ado"></a>GetChildren-Methode (ADO)
 
@@ -25,7 +25,11 @@ Gibt ein [Recordset](recordset-object-ado.md)-Objekt zurück, dessen Zeilen die 
 
 **Festlegen** *Recordset-Objekt*  =  *Datensatz*. GetChildren
 
+<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
+=======
+## <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 Ein **Recordset** -Objekt, bei dem jede Zeile ein untergeordnetes Element des aktuellen **Record** -Objekts darstellt. Das untergeordnete Element eines **Record**, der ein Verzeichnis darstellt, sind beispielsweise die Dateien und Unterverzeichnisse innerhalb des übergeordneten Verzeichnisses.
 

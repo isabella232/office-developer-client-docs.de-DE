@@ -1,19 +1,13 @@
 ---
-title: Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VB)
-TOCTitle: Provider and DefaultDatabase Properties Example (VB)
-ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15)
-ms:contentKeyID: 48544107
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 445315a3d5271d5566667916180a05de74d44980
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473309"
+<<<<<<< HEAD-Titel: Provider- und DefaultDatabase Eigenschaften Beispiel) (VB) TOCTitle: Provider- und DefaultDatabase Eigenschaften Beispiel) (VB) === Titel: Provider- und DefaultDatabase-Eigenschaften (Beispiel) (VB) TOCTitle: Anbieter und DefaultDatabase-Eigenschaften (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15) Ms:contentKeyID: 48544107 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="provider-and-defaultdatabase-properties-example-vb"></a>Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VB)
+=======
+# <a name="provider-and-defaultdatabase-properties-example-vb"></a>Provider- und DefaultDatabase-Eigenschaften (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

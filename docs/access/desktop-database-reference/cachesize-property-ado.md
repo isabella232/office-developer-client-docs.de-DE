@@ -1,26 +1,24 @@
 ---
-title: CacheSize-Eigenschaft (ADO)
-TOCTitle: CacheSize Property (ADO)
-ms:assetid: 42f86cc0-30dc-669b-9e65-5e7ecd52c4d7
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249200(v=office.15)
-ms:contentKeyID: 48544491
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: ed4d104dcd6d0b90e6011a305cd3502cf671175b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475293"
+<<<<<<< HEAD-Titel: CacheSize-Eigenschaft (ADO) TOCTitle: CacheSize-Eigenschaft (ADO) === Titel: CacheSize-Eigenschaft (ADO) TOCTitle: CacheSize-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: 42f86cc0-30dc-669b-9e65-5e7ecd52c4d7 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249200(v=office.15) Ms:contentKeyID: 48544491 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="cachesize-property-ado"></a>CacheSize-Eigenschaft (ADO)
+=======
+# <a name="cachesize-property-ado"></a>CacheSize-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die Anzahl von Datensätzen aus einem [Recordset](recordset-object-ado.md)-Objekt an, die lokal im Arbeitsspeicher zwischengespeichert werden.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp Long festgelegt oder zurückgegeben, der größer als 0 sein muss. Der Standard ist 1.
 

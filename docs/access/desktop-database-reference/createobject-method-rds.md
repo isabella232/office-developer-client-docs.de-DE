@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a2d1e3cc0128f4490105b24d7181119f6fece9b4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d2ff2381626e8cf81aa95ee9d49f9396bd4b0316
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473565"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25602720"
 ---
 # <a name="createobject-method-rds"></a>CreateObject-Methode (RDS)
 
@@ -73,9 +73,17 @@ Von Remote Data Service werden die folgenden Protokolle unterstützt: HTTP, HTTP
 
   - *Awebsrvr* oder *computername*
 
+<<<<<<< Kopf
   - Ein **String** -Wert, der eine URL darstellt, die den Webserver der Internetinformationsdienste angibt, auf denen eine Instanz des Servergeschäftsobjekts erstellt wird.
 
 ## <a name="remarks"></a>Hinweise
 
-Das *http-Protokoll* ist das Standardprotokoll Web; *HTTPS* ist eine sichere Webprotokoll. Verwenden Sie das *DCOM-Protokoll* , wenn ein LAN ohne HTTP ausführen. Das *in-Process* -Protokoll ist einer lokalen Dynamic-Link Library (DLL); Es wird ein Netzwerk nicht verwendet.
+<a name="the-http-protocol-is-the-standard-web-protocol-https-is-a-secure-web-protocol-use-the-dcom-protocol-when-running-a-local-area-network-without-http-the-in-process-protocol-is-a-local-dynamic-link-library-dll-it-does-not-use-a-network"></a>Das *http-Protokoll* ist das Standardprotokoll Web; *HTTPS* ist eine sichere Webprotokoll. Verwenden Sie das *DCOM-Protokoll* , wenn ein LAN ohne HTTP ausführen. Das *in-Process* -Protokoll ist einer lokalen Dynamic-Link Library (DLL); Es wird ein Netzwerk nicht verwendet.
+=======
+  - Ein **String** -Wert, der eine URL, die den Webserver der Internetinformationsdienste (Internet Information Services, IIS) identifiziert, auf denen eine Instanz des Objekts Business Server darstellt, wird erstellt.
+
+## <a name="remarks"></a>Hinweise
+
+Das *http-Protokoll* ist ein standard-Web-Protokoll. *HTTPS* ist eine sichere Web-Protokoll. Verwenden Sie das *DCOM-Protokoll* , wenn ein LAN ohne HTTP ausführen. Das *in-Process* -Protokoll ist einer lokalen Dynamic-Link Library (DLL); Es wird ein Netzwerk nicht verwendet.
+>>>>>>> master
 

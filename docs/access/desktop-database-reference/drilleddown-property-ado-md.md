@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248972(v=office.15)
 ms:contentKeyID: 48543610
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8d203513ce88998143d3043e76ce6ffb6a64741
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 96edfa035937a201891f0dca2aeaf036a5061cfe
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472678"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605492"
 ---
 # <a name="drilleddown-property-ado-md"></a>DrilledDown-Eigenschaft (ADO MD)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25472678"
 
 Gibt an, ob dem Element auf der Achse direkt untergeordnete Elemente folgen.
 
+<<<<<<< Kopf
+## <a name="return-values"></a>Rückgabewert
+=======
 ## <a name="return-values"></a>Rückgabewerte
+>>>>>>> master
 
 Gibt einen schreibgeschützten **Boolean** -Wert zurück. **DrilledDown** gibt **True** zurück, wenn sich keine untergeordneten Elemente des aktuellen Elements auf der Achse befinden. **DrilledDown** gibt **False** zurück, wenn sich ein oder mehrere untergeordnete Elemente des aktuellen Elements auf der Achse befinden.
 

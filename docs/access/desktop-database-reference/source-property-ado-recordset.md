@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249269(v=office.15)
 ms:contentKeyID: 48544843
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a3caeef4bb13ac4b68f3d3d5a62e0ce624d9d515
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: db44459bf3629f6cedfbee023b0be9161ed3bb14
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473087"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605261"
 ---
 # <a name="source-property-ado-recordset"></a>Source-Eigenschaft (ADO-Recordset)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25473087"
 
 Gibt die Datenquelle für ein [Recordset](recordset-object-ado.md)-Objekt an.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Legt einen **String** -Wert oder einen [Command](command-object-ado.md)-Objektverweis fest; gibt nur einen **String** -Wert zurück, der die Quelle des **Recordset** -Objekts angibt.
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249342(v=office.15)
 ms:contentKeyID: 48545145
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eba2881e4a892f32c70875f80cb8db7c71fb5d34
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 17414560b3aafb51285de0fa6f2beb6d2f0b7b85
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473271"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25604610"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic"></a>ADO-Codebeispiele in Microsoft Visual Basic
 
@@ -60,7 +60,11 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - [GetString-Methode (Beispiel)](getstring-method-example-vb.md)
 
-  - ["SkipLine Method", EOS und "LineSeparator" (Eigenschaften) (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
+<<<<<<< Kopf
+  - [SkipLine-Methode, EOS und LineSeparator-Eigenschaft (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
+=======
+  - [SkipLine-Methode, EOS und LineSeparator Eigenschaft (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
+>>>>>>> master
 
   - [Move-Methode (Beispiel)](move-method-example-vb.md)
 
@@ -80,7 +84,11 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - ["Save" und "Open" (Methoden) (Beispiel)](save-and-open-methods-example-vb.md)
 
-  - [Seek-Methode und Index-Eigenschaft (Beispiel)](seek-method-and-index-property-example-vb.md)
+<<<<<<< Kopf
+  - [Seek-Methode und Index-Eigenschaft Beispiel](seek-method-and-index-property-example-vb.md)
+=======
+  - [Seek-Methode und Index-Eigenschaft-Beispiel](seek-method-and-index-property-example-vb.md)
+>>>>>>> master
 
   - [Supports-Methode (Beispiel)](supports-method-example-vb.md)
 
@@ -90,6 +98,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
 **Eigenschaften**
 
+<<<<<<< Kopf
   - ["AbsolutePage", "PageCount" und "PageSize" (Eigenschaften) (Beispiel)](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
 
   - ["AbsolutePosition" und "CursorLocation" (Eigenschaften) (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vb.md)
@@ -152,5 +161,70 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - [Value-Eigenschaft (Beispiel)](value-property-example-vb.md)
 
-  - [Version-Eigenschaft (Beispiel)](version-property-example-vb.md)
+  - [Beispiel der Version-Eigenschaft](version-property-example-vb.md)
+=======
+  - [AbsolutePage-, PageCount- und PageSize-Eigenschaften-Beispiel](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
+
+  - [AbsolutePosition- und CursorLocation Eigenschaft (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vb.md)
+
+  - [ActiveCommand-Eigenschaft (Beispiel)](activecommand-property-example-vb.md)
+
+  - [ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaft (Beispiel)](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vb.md)
+
+  - [ActualSize- und DefinedSize Eigenschaft (Beispiel)](actualsize-and-definedsize-properties-example-vb.md)
+
+  - [Attributes- und Name-Eigenschaft (Beispiel)](attributes-and-name-properties-example-vb.md)
+
+  - [BOF-, EOF- und Bookmark Eigenschaft (Beispiel)](bof-eof-and-bookmark-properties-example-vb.md)
+
+  - [CacheSize-Eigenschaft (Beispiel)](cachesize-property-example-vb.md)
+
+  - [ConnectionString-, ConnectionTimeout- und State Eigenschaft (Beispiel)](connectionstring-connectiontimeout-and-state-properties-example-vb.md)
+
+  - [Beispiel der Count-Eigenschaft](count-property-example-vb.md)
+
+  - [CursorType-, LockType- und EditMode Eigenschaft (Beispiel)](cursortype-locktype-and-editmode-properties-example-vb.md)
+
+  - [Description, HelpContext, HelpFile, NativeError, Anzahl, Source- und SQLState Eigenschaft (Beispiel)](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb.md)
+
+  - [EOS und "LineSeparator" (Eigenschaften), SkipLine-Methode (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
+
+  - [Filter- und RecordCount Eigenschaft (Beispiel)](filter-and-recordcount-properties-example-vb.md)
+
+  - [IsolationLevel- und Mode Eigenschaft (Beispiel)](isolationlevel-and-mode-properties-example-vb.md)
+
+  - [Beispiel für Item-Eigenschaft](item-property-example-vb.md)
+
+  - [MarshalOptions-Eigenschaft (Beispiel)](marshaloptions-property-example-vb.md)
+
+  - [MaxRecords-Eigenschaft (Beispiel)](maxrecords-property-example-vb.md)
+
+  - [NumericScale- und Precision Eigenschaft (Beispiel)](ado-numericscale-and-precision-properties-example-vb.md)
+
+  - [Optimieren der Leistung von Beispiel-Eigenschaft](optimize-property-example-vb.md)
+
+  - [OriginalValue- und UnderlyingValue Eigenschaft (Beispiel)](originalvalue-and-underlyingvalue-properties-example-vb.md)
+
+  - [Prepared-Eigenschaft (Beispiel)](prepared-property-example-vb.md)
+
+  - [Provider- und DefaultDatabase Eigenschaft (Beispiel)](provider-and-defaultdatabase-properties-example-vb.md)
+
+  - [Sort-Eigenschaft Beispiel](sort-property-example-vb.md)
+
+  - [Beispiel der Source-Eigenschaft](source-property-example-vb.md)
+
+  - [State-Eigenschaft (Beispiel)](state-property-example-vb.md)
+
+  - [Beispiel der Status-Eigenschaft](status-property-example-recordset-vb.md)
+
+  - [StayInSync-Eigenschaft (Beispiel)](stayinsync-property-example-vb.md)
+
+  - [Type-Eigenschaft (Beispiel) (Field)](type-property-example-field-vb.md)
+
+  - [Type-Eigenschaft (Beispiel)](type-property-example-property-vb.md)
+
+  - [Beispielwert-Eigenschaft](value-property-example-vb.md)
+
+  - [Beispiel der Version-Eigenschaft](version-property-example-vb.md)
+>>>>>>> master
 

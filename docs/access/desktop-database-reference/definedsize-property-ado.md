@@ -1,26 +1,24 @@
 ---
-title: DefinedSize-Eigenschaft (ADO)
-TOCTitle: DefinedSize Property (ADO)
-ms:assetid: 8d6db4c9-fbdc-9fcd-63f0-bd677c5ebcf6
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249619(v=office.15)
-ms:contentKeyID: 48546257
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a8ffd8bb24abcab737ebc4bb23a0af717c02d486
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473214"
+<<<<<<< HEAD-Titel: DefinedSize-Eigenschaft (ADO) TOCTitle: DefinedSize-Eigenschaft (ADO) === Titel: DefinedSize-Eigenschaft (ADO) TOCTitle: DefinedSize-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: 8d6db4c9-fbdc-9fcd-63f0-bd677c5ebcf6 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249619(v=office.15) Ms:contentKeyID: 48546257 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="definedsize-property-ado"></a>DefinedSize-Eigenschaft (ADO)
+=======
+# <a name="definedsize-property-ado"></a>DefinedSize-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die Datenkapazität eines [Field](field-object-ado.md)-Objekts an.
 
+<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
+=======
+## <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 Gibt einen Wert vom Datentyp **Long** zurück, der die definierte Größe eines Felds als eine Anzahl von Bytes wiedergibt.
 

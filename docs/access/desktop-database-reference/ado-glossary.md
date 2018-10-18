@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249184(v=office.15)
 ms:contentKeyID: 48544438
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 93f60d38ba68e18b427af3d907a3a41e655c7a32
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d991da62a8820db3506059e81d136208cca73db3
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472964"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25607060"
 ---
 # <a name="ado-glossary"></a>ADO Glossary
 
@@ -259,13 +259,17 @@ Der Prozess der Verpackung, senden und Entpackens-Methodenparameter für die Ben
 
 **mittlere Ebene**
 
-Die logische Ebene in einem verteilten System zwischen einer Benutzeroberfläche oder einem Webclient und der Datenbank. Dies ist üblicherweise, in dem Geschäftsobjekte instanziiert werden. Die mittlere Ebene ist eine Auflistung von Geschäftsregeln und Funktionen, die beim Abrufen von Daten ausgeführt werden. Das erreichen sie mithilfe von Geschäftsregeln, die häufig ändern können, und sind somit in Komponenten, die von der Anwendungslogik selbst physisch getrennt sind eingeschlossen. Auch bekannt als *Anwendungsserverebene*. Siehe auch **verteilte Anwendung**, **Clientebene**, **Datenquelle Tier**.
+<<<<<<< HEAD-logische Ebene in einem verteilten System zwischen einer Benutzeroberfläche oder einem Webclient und der Datenbank. Dies ist üblicherweise, in dem Geschäftsobjekte instanziiert werden. Die mittlere Ebene ist eine Auflistung von Geschäftsregeln und Funktionen, die beim Abrufen von Daten ausgeführt werden. Das erreichen sie mithilfe von Geschäftsregeln, die häufig ändern können, und sind somit in Komponenten, die von der Anwendungslogik selbst physisch getrennt sind eingeschlossen. Auch bekannt als *Anwendungsserverebene*. Siehe auch **verteilte Anwendung**, **Clientebene**, **Datenquelle Tier**.
+=== Die logische Ebene in einem verteilten System zwischen einer Schnittstelle oder Web-Client des Benutzers und der Datenbank. Dies ist üblicherweise, in dem Geschäftsobjekte instanziiert werden. Die mittlere Ebene ist eine Auflistung von Geschäftsregeln und Funktionen, die beim Abrufen von Daten ausgeführt werden. Das erreichen sie mithilfe von Geschäftsregeln, die häufig ändern können, und sind somit in Komponenten, die von der Anwendungslogik selbst physisch getrennt sind eingeschlossen. Auch bekannt als *Anwendungsserverebene*. Siehe auch **verteilte Anwendung**, **Clientebene**, **Datenquelle Tier**.
+>>>>>>> master
 
 **MIME (Multi-Purpose Internet Mail Extension)**
 
 Ein Internetprotokoll entwickelt ursprünglich zum Austausch von e-Mail-Nachrichten mit umfangreichen Inhalt über heterogene Netzwerk, Computer und e-Mail-Umgebungen zu ermöglichen. In der Praxis wurde MIME auch eine Form und durch nicht e-Mail Programmen, die erweitert.
 
-MIME ist ein Standard, der binäre Daten veröffentlicht und im Internet gelesen werden kann. Die Kopfzeile einer Datei mit Binärdaten enthält den MIME-Typ der Daten. Dieser informiert Clientprogramme (Web-beispielsweise Browser und e-Mail-Pakete), mit die Daten auf andere Weise behandelt, als einfachen Text benötigt wird. Beispielsweise enthält die Kopfzeile der einem Webdokument, die eine JPEG-Grafik enthält den MIME-Typ, der speziell für das JPEG-Dateiformat. Dadurch wird einen Browser zum Anzeigen der Datei mit seinem JPEG-Viewer, sofern vorhanden.
+<<<<<<< HEAD MIME ist ein Standard, binäre Daten zu veröffentlichen und Lesen Sie im Internet ermöglicht. Die Kopfzeile einer Datei mit Binärdaten enthält den MIME-Typ der Daten. Dieser informiert Clientprogramme (Web-beispielsweise Browser und e-Mail-Pakete), mit die Daten auf andere Weise behandelt, als einfachen Text benötigt wird. Beispielsweise enthält die Kopfzeile der einem Webdokument, die eine JPEG-Grafik enthält den MIME-Typ, der speziell für das JPEG-Dateiformat. Dadurch wird einen Browser zum Anzeigen der Datei mit seinem JPEG-Viewer, sofern vorhanden.
+=== MIME ist ein Standard, der binäre Daten veröffentlicht und im Internet gelesen werden kann. Die Kopfzeile einer Datei mit Binärdaten enthält den MIME-Typ der Daten. Dieser informiert Clientprogramme (web-beispielsweise Browser und e-Mail-Pakete), mit die Daten auf andere Weise behandelt, als einfachen Text benötigt wird. Beispielsweise enthält die Kopfzeile der einem Webdokument, die eine JPEG-Grafik enthält den MIME-Typ, der speziell für das JPEG-Dateiformat. Dadurch wird einen Browser zum Anzeigen der Datei mit seinem JPEG-Viewer, sofern vorhanden.
+>>>>>>> master
 
 Nach oben
 
@@ -427,9 +431,14 @@ file://Server/Share/File.doc
 
 Siehe auch **absolute URL** und **relative URL**.
 
+<<<<<<< HEAD **-End-Webservers**
+
+<a name="a-computer-that-provides-web-services-and-pages-to-intranet-and-internet-users"></a>Ein Computer, der Webdienste und Seiten für Intranet- und Internetbenutzer bereitstellt.
+=======
 **Webserver**
 
 Ein Computer, der Webdienste und Seiten für Intranet- und Internetbenutzer bereitstellt.
+>>>>>>> master
 
 Nach oben
 

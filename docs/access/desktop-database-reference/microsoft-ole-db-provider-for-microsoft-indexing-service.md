@@ -6,19 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248786(v=office.15)
 ms:contentKeyID: 48542942
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 10af40231fc10e222f818896b3d65f44ac3d6d71
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e41633ddb2730af66ddeee400ad035d5a17ed90d
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473901"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25607053"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service"></a>Microsoft OLE DB-Anbieter für Microsoft Indexdienst
 
 
 **Betrifft**: Access 2013 | Office 2013
 
-Der Microsoft OLE DB-Anbieter für Microsoft Indexdienst ermöglicht den programmatischen schreibgeschützten Zugriff auf das Dateisystem sowie auf Webdaten, die vom Microsoft Indexdienst indiziert wurden. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
+<<<<<<< HEAD Microsoft OLE DB-Anbieter für Microsoft Indexdienst ermöglicht den programmgesteuerten schreibgeschützten Zugriff auf Dateisystem und Web-Daten von Microsoft Indexdienst indiziert. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
+=== Der Microsoft OLE DB-Anbieter für Microsoft Indexdienst bietet programmgesteuerten schreibgeschützten Zugriff auf System- und Daten von Microsoft Indexdienst indiziert. ADO-Anwendungen können SQL-Abfragen ausgeben, um Informationen zu Inhalts- und Dateieigenschaften abzurufen.
+>>>>>>> master
 
 Der Anbieter ist ein Freethreadanbieter, der Unicode verwendet.
 

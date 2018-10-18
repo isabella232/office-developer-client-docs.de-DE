@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249964(v=office.15)
 ms:contentKeyID: 48547602
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 168799b517598211ca9de680730490a0a41d1dde
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0098e646ea48656f44bd3ccd380ae41efc94ffba
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476021"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25606939"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc"></a>Microsoft OLE DB-Anbieter für ODBC
 
@@ -79,7 +79,11 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 </tr>
 <tr class="odd">
 <td><p><strong>URL</strong></p></td>
+<<<<<<< Kopf
 <td><p>Gibt die URL einer Datei oder eines Verzeichnisses an, die oder das in einem Webordner veröffentlicht ist.</p></td>
+=======
+<td><p>Gibt die URL einer Datei oder das Verzeichnis in einem Webordner veröffentlicht.</p></td>
+>>>>>>>Master-Shape
 </tr>
 </tbody>
 </table>

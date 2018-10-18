@@ -1,19 +1,13 @@
 ---
-title: DeleteRule-Eigenschaft (VB-Beispiel)
-TOCTitle: DeleteRule Property Example (VB)
-ms:assetid: 354e00b6-cecb-1132-6923-fc9e8853fa0e
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249114(v=office.15)
-ms:contentKeyID: 48544142
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: bdfcbd581c39faf4344701d322e47999c77b7bca
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475095"
+<<<<<<< HEAD-Titel: DeleteRule-Eigenschaft Beispiel) (VB) TOCTitle: DeleteRule-Eigenschaft Beispiel) (VB) === Titel: DeleteRule-Eigenschaft (Beispiel) (VB) TOCTitle: DeleteRule-Eigenschaft (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: 354e00b6-cecb-1132-6923-fc9e8853fa0e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249114(v=office.15) Ms:contentKeyID: 48544142 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="deleterule-property-example-vb"></a>DeleteRule-Eigenschaft (VB-Beispiel)
+=======
+# <a name="deleterule-property-example-vb"></a>DeleteRule-Eigenschaft (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

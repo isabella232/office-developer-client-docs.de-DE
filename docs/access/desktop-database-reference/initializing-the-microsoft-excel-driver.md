@@ -10,21 +10,25 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c79d859b122eb3595c31b2ffcec192e2d69ed7b4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7c9a3282f3bb508a4c68ecbd3f2c0465cfee9bac
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475719"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603098"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Initialisieren des Microsoft Excel-Treibers
 
 
 **Betrifft**: Access 2013 | Office 2013
 
-Beim Installieren des Microsoft® Excel-Treibers schreibt das Setupprogramm Standardwerte in die Unterschlüssel Engines und ISAM Formats der Microsoft Windows®-Registrierung. Diese Einstellungen dürfen nicht direkt geändert werden. Verwenden Sie stattdessen das Setupprogramm, um diese Einstellungen hinzuzufügen, zu entfernen oder zu ändern. In den folgenden Abschnitten werden die Einstellungen für die Initialisierung und das ISAM-Format für den Microsoft Excel-Datenbanktreiber beschrieben.
+<<<<<<< HEAD bei der Installation des Microsoft® Excel-Treibers, das Setup-Programm schreibt einen Satz von Standardwerten in der Microsoft Windows®-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Microsoft Excel-Datenbanktreibers beschrieben.
 
 ## <a name="microsoft-excel-initialization-settings"></a>Initialisierungseinstellungen für Microsoft Excel
+=== Bei der Installation des Excel-Treibers schreibt das Setupprogramm Standardwerte der Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Microsoft Excel-Datenbanktreibers beschrieben.
+
+## <a name="excel-initialization-settings"></a>Initialisierungseinstellungen für Excel
+>>>>>>> master
 
 Die **Konnektivitätsmodul für Access\\Module\\Excel** Ordner enthält initialisierungseinstellungen für Aceexcl.dll-Treiber für den externen Zugriff zu Microsoft Excel-Arbeitsblättern verwendet. Standardeinstellungen für die Einträge in diesem Ordner sind im folgenden Beispiel dargestellt.
 
@@ -147,4 +151,10 @@ Die **Konnektivitätsmodul für Access\\Module\\Excel 8.0** Ordner enthält die 
 > [!NOTE]
 > Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
 
+<<<<<<< Kopf
 
+=======
+## <a name="see-also"></a>Siehe auch
+
+[Verwenden die Einstellung TypeGuessRows für Excel-Treibers](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)
+>>>>>>> master

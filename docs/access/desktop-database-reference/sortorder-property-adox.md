@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249951(v=office.15)
 ms:contentKeyID: 48547557
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 56898fc20d1d06a7be6e237d5054d0b9f0907ea6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: aba706dc7a82bd40eefc5e9ddd7c942ee5c64d81
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473495"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25605615"
 ---
 # <a name="sortorder-property-adox"></a>SortOrder-Eigenschaft (ADOX)
 
@@ -20,7 +20,11 @@ ms.locfileid: "25473495"
 
 Gibt die Sortierfolge für die Spalte (nur Indexspalten) an.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Legt einen **Long** -Wert fest bzw. gibt diesen zurück. Der Wert kann eine der [SortOrderEnum](sortorderenum.md)-Konstanten sein. Der Standardwert lautet **adSortAscending**.
 

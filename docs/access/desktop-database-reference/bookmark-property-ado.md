@@ -1,26 +1,24 @@
 ---
-title: Bookmark-Eigenschaft (ADO)
-TOCTitle: Bookmark Property (ADO)
-ms:assetid: 101b2ce1-21d8-aa79-e530-20f9d1c73fc8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248870(v=office.15)
-ms:contentKeyID: 48543287
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: a89be0ad75ea84faa9fe17834260832070dd7578
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474319"
+<<<<<<< HEAD-Titel: Bookmark-Eigenschaft (ADO) TOCTitle: Bookmark-Eigenschaft (ADO) === Titel: Bookmark-Eigenschaft (ADO) TOCTitle: Bookmark-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: 101b2ce1-21d8-aa79-e530-20f9d1c73fc8 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248870(v=office.15) Ms:contentKeyID: 48543287 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="bookmark-property-ado"></a>Bookmark-Eigenschaft (ADO)
+=======
+# <a name="bookmark-property-ado"></a>Bookmark-Eigenschaft (ADO)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt ein Lesezeichen an, das den aktuellen Datensatz in einem [Recordset](recordset-object-ado.md)-Objekt eindeutig identifiziert oder den aktuellen Datensatz in einem **Recordset** -Objekt auf den durch ein gültiges Lesezeichen identifizierten Datensatz festlegt.
 
+<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+=======
+## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
+>>>>>>> master
 
 Mit dieser Eigenschaft wird ein Ausdruck vom Datentyp **Variant** festgelegt oder zurückgegeben, der in ein gültiges Lesezeichen ausgewertet wird.
 

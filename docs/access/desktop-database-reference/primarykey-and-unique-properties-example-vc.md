@@ -1,19 +1,13 @@
 ---
-title: PrimaryKey- und Unique-Eigenschaft (VC++-Beispiel)
-TOCTitle: PrimaryKey and Unique Properties Example (VC++)
-ms:assetid: 0aa3faf6-5165-911a-8167-4a7bdd1c7ceb
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248838(v=office.15)
-ms:contentKeyID: 48543158
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 9cb0cdfa68ac3437e368e245a70a7743ac0b7724
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474085"
+<<<<<<< HEAD-Titel: PrimaryKey- und eindeutige Eigenschaft (Beispiel) (VC++) TOCTitle: PrimaryKey- und Unique Eigenschaft (Beispiel) (VC++) === Titel: PrimaryKey- und Unique Eigenschaft (VC++-Beispiel) TOCTitle: PrimaryKey- und Unique-Eigenschaft Beispiel) (VC++)
+>>>>>>> Master Ms:assetid: 0aa3faf6-5165-911a-8167-4a7bdd1c7ceb Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248838(v=office.15) Ms:contentKeyID: 48543158 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="primarykey-and-unique-properties-example-vc"></a>PrimaryKey- und Unique-Eigenschaft (VC++-Beispiel)
+=======
+# <a name="primarykey-and-unique-properties-example-vc"></a>PrimaryKey- und Unique Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

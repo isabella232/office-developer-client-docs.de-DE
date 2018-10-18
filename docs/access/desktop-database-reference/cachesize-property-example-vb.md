@@ -1,19 +1,13 @@
 ---
-title: CacheSize-Eigenschaft (Beispiel) (VB)
-TOCTitle: CacheSize Property Example (VB)
-ms:assetid: 558b7718-d32d-45ea-554d-fce0e27d9504
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249287(v=office.15)
-ms:contentKeyID: 48544934
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 2770ff65745deacfbed7df48c74952e5afa943c8
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474427"
+<<<<<<< HEAD-Titel: CacheSize-Eigenschaft Beispiel) (VB) TOCTitle: CacheSize-Eigenschaft Beispiel) (VB) === Titel: CacheSize-Eigenschaft (Beispiel) (VB) TOCTitle: CacheSize-Eigenschaft (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: 558b7718-d32d-45ea-554d-fce0e27d9504 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249287(v=office.15) Ms:contentKeyID: 48544934 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="cachesize-property-example-vb"></a>CacheSize-Eigenschaft (Beispiel) (VB)
+=======
+# <a name="cachesize-property-example-vb"></a>CacheSize-Eigenschaft (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

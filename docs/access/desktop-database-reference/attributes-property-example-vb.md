@@ -1,19 +1,13 @@
 ---
-title: Attributes-Eigenschaft (VB-Beispiel)
-TOCTitle: Attributes Property Example (VB)
-ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15)
-ms:contentKeyID: 48547442
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 6041c142d8ba097478877a37f1412eb3a0901366
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472652"
+<<<<<<< HEAD-Titel: Attribute Eigenschaft Beispiel) (VB) TOCTitle: Attribute Eigenschaft Beispiel) (VB) === Titel: Attribute-Eigenschaft (Beispiel) (VB) TOCTitle: Attribute-Eigenschaft (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15) Ms:contentKeyID: 48547442 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="attributes-property-example-vb"></a>Attributes-Eigenschaft (VB-Beispiel)
+=======
+# <a name="attributes-property-example-vb"></a>Attributes-Eigenschaft (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

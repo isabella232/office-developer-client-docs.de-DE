@@ -1,19 +1,13 @@
 ---
-title: MaxRecords-Eigenschaft (Beispiel) (VC++)
-TOCTitle: MaxRecords Property Example (VC++)
-ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15)
-ms:contentKeyID: 48542910
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 09419dab570e05427ac5f30c002c596d5dc862c0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472636"
+<<<<<<< HEAD-Titel: MaxRecords-Eigenschaft (VC++-Beispiel) TOCTitle: MaxRecords-Eigenschaft (VC++-Beispiel) === Titel: MaxRecords-Eigenschaft (VC++-Beispiel) TOCTitle: MaxRecords-Eigenschaft (VC++-Beispiel)
+>>>>>>> Master Ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15) Ms:contentKeyID: 48542910 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="maxrecords-property-example-vc"></a>MaxRecords-Eigenschaft (Beispiel) (VC++)
+=======
+# <a name="maxrecords-property-example-vc"></a>MaxRecords-Eigenschaft (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

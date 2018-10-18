@@ -1,19 +1,13 @@
 ---
-title: Command und CommandText-Eigenschaft (VC++-Beispiel)
-TOCTitle: Command and CommandText Properties Example (VC++)
-ms:assetid: 99eac61e-22fe-0e2c-542a-7f6ad14f3d60
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249692(v=office.15)
-ms:contentKeyID: 48546525
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 19e2cc962f92812b250ac48b8ee7fec6221b72c1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475964"
+<<<<<<< HEAD-Titel: Command und CommandText-Eigenschaft-Beispiel) (VC++) TOCTitle: Command und CommandText-Eigenschaft-Beispiel) (VC++) === Titel: Command und CommandText-Eigenschaften (VC++-Beispiel) TOCTitle: Command und CommandText Eigenschaft (Beispiel) (VC++)
+>>>>>>> Master Ms:assetid: 99eac61e-22fe-0e2c-542a-7f6ad14f3d60 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249692(v=office.15) Ms:contentKeyID: 48546525 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="command-and-commandtext-properties-example-vc"></a>Command und CommandText-Eigenschaft (VC++-Beispiel)
+=======
+# <a name="command-and-commandtext-properties-example-vc"></a>Command und CommandText-Eigenschaften (VC++-Beispiel)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

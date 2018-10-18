@@ -1,19 +1,13 @@
 ---
-title: ParentCatalog-Eigenschaft (VB-Beispiel)
-TOCTitle: ParentCatalog Property Example (VB)
-ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15)
-ms:contentKeyID: 48544295
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: d8ea3b28b6b6d6dff7de630beeb8929b050a7609
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474650"
+<<<<<<< HEAD-Titel: ParentCatalog-Eigenschaft Beispiel) (VB) TOCTitle: ParentCatalog-Eigenschaft Beispiel) (VB) === Titel: ParentCatalog-Eigenschaft (Beispiel) (VB) TOCTitle: ParentCatalog-Eigenschaft (Beispiel) (VB)
+>>>>>>> Master Ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15) Ms:contentKeyID: 48544295 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="parentcatalog-property-example-vb"></a>ParentCatalog-Eigenschaft (VB-Beispiel)
+=======
+# <a name="parentcatalog-property-example-vb"></a>ParentCatalog-Eigenschaft (Beispiel) (VB)
+>>>>>>> master
 
 
 **Betrifft**: Access 2013 | Office 2013

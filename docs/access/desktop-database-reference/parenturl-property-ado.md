@@ -1,25 +1,23 @@
 ---
-title: ParentURL-Eigenschaft (ADO)
-TOCTitle: ParentURL Property (ADO)
-ms:assetid: ec7ec476-6f9e-8486-fe02-74995975df5c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250200(v=office.15)
-ms:contentKeyID: 48548517
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 0fb5e8683bcf7ebe0905b21f169f71834ed424e4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476038"
+<<<<<<< HEAD-Titel: ParentURL-Eigenschaft (ADO) TOCTitle: ParentURL-Eigenschaft (ADO) === Titel: ParentURL-Eigenschaft (ADO) TOCTitle: ParentURL-Eigenschaft (ADO)
+>>>>>>> Master Ms:assetid: ec7ec476-6f9e-8486-fe02-74995975df5c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250200(v=office.15) Ms:contentKeyID: 48548517 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
+
+<<<<<<< Kopf
 # <a name="parenturl-property-ado"></a>ParentURL-Eigenschaft (ADO)
+=======
+# <a name="parenturl-property-ado"></a>ParentURL-Eigenschaft (ADO)
+>>>>>>> master
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die Zeichenfolge einer absoluten URL an, die auf das übergeordnete [Record](record-object-ado.md)-Objekt des aktuellen **Record** -Objekts verweist.
 
+<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
+=======
+## <a name="return-value"></a>Rückgabewert
+>>>>>>> master
 
 Gibt einen **String** -Wert zurück, der die URL des übergeordneten **Record** -Objekts angibt.
 
