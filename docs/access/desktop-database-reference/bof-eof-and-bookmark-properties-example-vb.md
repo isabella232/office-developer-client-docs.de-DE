@@ -1,24 +1,18 @@
 ---
-title: BOF-, EOF- und Bookmark-Eigenschaft (Beispiel) (VB)
-TOCTitle: BOF, EOF, and Bookmark Properties Example (VB)
-ms:assetid: 30d4b424-b3d8-292f-7553-bb15b094eef8
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249085(v=office.15)
-ms:contentKeyID: 48544037
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 88c0cecb83e83f3572e0e78c2bcc4fb4e4235c17
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474382"
+<span data-ttu-id="669f9-101"><<<<<<< HEAD-Titel: BOF-, EOF- und Bookmark Eigenschaften Beispiel) (VB) TOCTitle: BOF-, EOF- und Bookmark Eigenschaften Beispiel) (VB) === Titel: BOF-, EOF- und Bookmark-Eigenschaften (Beispiel) (VB) TOCTitle: BOF-, EOF- und Bookmark Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="669f9-101"><<<<<<< HEAD title: BOF, EOF, and Bookmark Properties Example (VB) TOCTitle: BOF, EOF, and Bookmark Properties Example (VB) ======= title: BOF, EOF, and Bookmark properties example (VB) TOCTitle: BOF, EOF, and Bookmark properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="669f9-102">Master Ms:assetid: 30d4b424-b3d8-292f-7553-bb15b094eef8 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249085(v=office.15) Ms:contentKeyID: 48544037 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="669f9-102">master ms:assetid: 30d4b424-b3d8-292f-7553-bb15b094eef8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249085(v=office.15) ms:contentKeyID: 48544037 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="bof-eof-and-bookmark-properties-example-vb"></a><span data-ttu-id="8834a-102">BOF-, EOF- und Bookmark-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="8834a-102">BOF, EOF, and Bookmark Properties Example (VB)</span></span>
+
+<span data-ttu-id="669f9-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="669f9-103"><<<<<<< HEAD</span></span>
+# <a name="bof-eof-and-bookmark-properties-example-vb"></a><span data-ttu-id="669f9-104">BOF-, EOF- und Bookmark-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="669f9-104">BOF, EOF, and Bookmark Properties Example (VB)</span></span>
+=======
+# <a name="bof-eof-and-bookmark-properties-example-vb"></a><span data-ttu-id="669f9-105">BOF-, EOF- und Bookmark-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="669f9-105">BOF, EOF, and Bookmark properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="669f9-106">master</span><span class="sxs-lookup"><span data-stu-id="669f9-106">master</span></span>
 
 
-<span data-ttu-id="8834a-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8834a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="669f9-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="669f9-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="8834a-p101">In diesem Beispiel wird mithilfe der Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) eine Nachricht angezeigt, falls ein Benutzer versucht, über den ersten oder letzten Datensatz eines [Recordset](recordset-object-ado.md)-Objekts hinaus zu navigieren. Mit der [Bookmark](bookmark-property-ado.md)-Eigenschaft kann der Benutzer einen Datensatz in einem **Recordset** -Objekt kennzeichnen und später zu diesem zurückkehren.</span><span class="sxs-lookup"><span data-stu-id="8834a-p101">This example uses the [BOF](bof-eof-properties-ado.md) and [EOF](bof-eof-properties-ado.md) properties to display a message if a user tries to move past the first or last record of a [Recordset](recordset-object-ado.md). It uses the [Bookmark](bookmark-property-ado.md) property to let the user flag a record in a **Recordset** and return to it later.</span></span>
+<span data-ttu-id="669f9-p101">In diesem Beispiel wird mithilfe der Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) eine Nachricht angezeigt, falls ein Benutzer versucht, über den ersten oder letzten Datensatz eines [Recordset](recordset-object-ado.md)-Objekts hinaus zu navigieren. Mit der [Bookmark](bookmark-property-ado.md)-Eigenschaft kann der Benutzer einen Datensatz in einem **Recordset** -Objekt kennzeichnen und später zu diesem zurückkehren.</span><span class="sxs-lookup"><span data-stu-id="669f9-p101">This example uses the [BOF](bof-eof-properties-ado.md) and [EOF](bof-eof-properties-ado.md) properties to display a message if a user tries to move past the first or last record of a [Recordset](recordset-object-ado.md). It uses the [Bookmark](bookmark-property-ado.md) property to let the user flag a record in a **Recordset** and return to it later.</span></span>
 
 ```vb 
  
@@ -124,7 +118,7 @@ End Sub
 'EndBOFVB 
 ```
 
-<span data-ttu-id="8834a-p102">In diesem Beispiel wird mithilfe der Eigenschaften **Bookmark** und [Filter](filter-property-ado.md) eine begrenzte Ansicht des **Recordset** -Objekts erstellt. Der Zugriff ist nur auf Datensätze möglich, auf die vom Lesezeichenarray verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="8834a-p102">This example uses the **Bookmark** and [Filter](filter-property-ado.md) properties to create a limited view of the **Recordset**. Only records referenced by the array of bookmarks are accessible.</span></span>
+<span data-ttu-id="669f9-p102">In diesem Beispiel wird mithilfe der Eigenschaften **Bookmark** und [Filter](filter-property-ado.md) eine begrenzte Ansicht des **Recordset** -Objekts erstellt. Der Zugriff ist nur auf Datensätze möglich, auf die vom Lesezeichenarray verwiesen wird.</span><span class="sxs-lookup"><span data-stu-id="669f9-p102">This example uses the **Bookmark** and [Filter](filter-property-ado.md) properties to create a limited view of the **Recordset**. Only records referenced by the array of bookmarks are accessible.</span></span>
 
 ```vb 
  

@@ -1,24 +1,18 @@
 ---
-title: ActualSize- und DefinedSize-Eigenschaft (Beispiel) (JScript)
-TOCTitle: ActualSize and DefinedSize Properties Example (JScript)
-ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15)
-ms:contentKeyID: 48547811
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c1411030bc5f936d4c0d8e7ee841a90c915cfcb9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474835"
+<span data-ttu-id="20f75-101"><<<<<<< HEAD-Titel: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) TOCTitle: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) Ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) ms: ContentKeyID: 48547811 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="20f75-101"><<<<<<< HEAD title: ActualSize and DefinedSize Properties Example (JScript) TOCTitle: ActualSize and DefinedSize Properties Example (JScript) ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) ms:contentKeyID: 48547811 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="actualsize-and-definedsize-properties-example-jscript"></a><span data-ttu-id="8e140-102">ActualSize- und DefinedSize-Eigenschaft (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="8e140-102">ActualSize and DefinedSize Properties Example (JScript)</span></span>
 
+# <a name="actualsize-and-definedsize-properties-example-jscript"></a><span data-ttu-id="20f75-102">ActualSize- und DefinedSize-Eigenschaft (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="20f75-102">ActualSize and DefinedSize Properties Example (JScript)</span></span>
 
-<span data-ttu-id="8e140-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8e140-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="20f75-103">=== Titel: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) TOCTitle: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) Ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) Ms:contentKeyID: 48547811 ms.date: 10 / 16/2018 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="20f75-103">======= title: ActualSize and DefinedSize properties example (JScript) TOCTitle: ActualSize and DefinedSize properties example (JScript) ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) ms:contentKeyID: 48547811 ms.date: 10/16/2018 mtps_version: v=office.15</span></span>
+---
 
-<span data-ttu-id="8e140-p101">In diesem Beispiel werden mit den Eigenschaften [ActualSize](actualsize-property-ado.md) und [DefinedSize](definedsize-property-ado.md) die definierte Größe und die tatsächliche Größe eines Felds angezeigt. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie ihn unter dem Dateinamen **ActualSizeJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="8e140-p101">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field. Cut and paste the following code to Notepad or another text editor, and save it as **ActualSizeJS.asp**.</span></span>
+# <a name="actualsize-and-definedsize-properties-example-jscript"></a><span data-ttu-id="20f75-104">ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript)</span><span class="sxs-lookup"><span data-stu-id="20f75-104">ActualSize and DefinedSize properties example (JScript)</span></span>
+>>>>>>> <span data-ttu-id="20f75-105">master</span><span class="sxs-lookup"><span data-stu-id="20f75-105">master</span></span>
+
+<span data-ttu-id="20f75-106">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="20f75-106">**Applies to**: Access 2013 | Office 2013</span></span>
+
+<span data-ttu-id="20f75-p101">In diesem Beispiel werden mit den Eigenschaften [ActualSize](actualsize-property-ado.md) und [DefinedSize](definedsize-property-ado.md) die definierte Größe und die tatsächliche Größe eines Felds angezeigt. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie ihn unter dem Dateinamen **ActualSizeJS.asp**.</span><span class="sxs-lookup"><span data-stu-id="20f75-p101">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field. Cut and paste the following code to Notepad or another text editor, and save it as **ActualSizeJS.asp**.</span></span>
 
 ```javascript
 <!-- BeginActualSizeJS --> 
@@ -28,7 +22,11 @@ ms.locfileid: "25474835"
 <html> 
  
 <head> 
+<<<<<<< HEAD
  <title>ActualSize and DefinedSize Properties Example (JScript)</title> 
+=======
+ <title>ActualSize and DefinedSize properties example (JScript)</title> 
+>>>>>>> master
 <style> 
 <!-- 
 body { 

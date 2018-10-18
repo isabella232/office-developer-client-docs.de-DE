@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198249(v=office.15)
 ms:contentKeyID: 48546628
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bc92153df224f9779097590308bb387c7ea74ecb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9ffa0f2ee4f1b4c1e02f5d8a94e98f9da09c1cc6
+ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474803"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25603672"
 ---
-# <a name="workspaceopenconnection-method-dao"></a><span data-ttu-id="3639a-102">Workspace.OpenConnection Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="3639a-102">Workspace.OpenConnection Method (DAO)</span></span>
+# <a name="workspaceopenconnection-method-dao"></a><span data-ttu-id="5d1bb-102">Workspace.OpenConnection Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5d1bb-102">Workspace.OpenConnection Method (DAO)</span></span>
 
 
-<span data-ttu-id="3639a-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="3639a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5d1bb-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="5d1bb-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3639a-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="3639a-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5d1bb-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="5d1bb-104">Syntax</span></span>
 
-<span data-ttu-id="3639a-105">*Ausdruck* . OpenConnection (***Name***, ***Optionen***, ***ReadOnly***, ***Verbinden***)</span><span class="sxs-lookup"><span data-stu-id="3639a-105">*expression* .OpenConnection(***Name***, ***Options***, ***ReadOnly***, ***Connect***)</span></span>
+<span data-ttu-id="5d1bb-105">*Ausdruck* . OpenConnection (***Name***, ***Optionen***, ***ReadOnly***, ***Verbinden***)</span><span class="sxs-lookup"><span data-stu-id="5d1bb-105">*expression* .OpenConnection(***Name***, ***Options***, ***ReadOnly***, ***Connect***)</span></span>
 
-<span data-ttu-id="3639a-106">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="3639a-106">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="5d1bb-106">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-106">*expression* A variable that represents a **Workspace** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="3639a-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="3639a-107">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="5d1bb-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="5d1bb-107">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -35,52 +35,56 @@ ms.locfileid: "25474803"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="3639a-108">Name</span><span class="sxs-lookup"><span data-stu-id="3639a-108">Name</span></span></p></th>
-<th><p><span data-ttu-id="3639a-109">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="3639a-109">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="3639a-110">Datentyp</span><span class="sxs-lookup"><span data-stu-id="3639a-110">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="3639a-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3639a-111">Description</span></span></p></th>
+<th><p><span data-ttu-id="5d1bb-108">Name</span><span class="sxs-lookup"><span data-stu-id="5d1bb-108">Name</span></span></p></th>
+<th><p><span data-ttu-id="5d1bb-109">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="5d1bb-109">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="5d1bb-110">Datentyp</span><span class="sxs-lookup"><span data-stu-id="5d1bb-110">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="5d1bb-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5d1bb-111">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="3639a-112">Name</span><span class="sxs-lookup"><span data-stu-id="3639a-112">Name</span></span></p></td>
-<td><p><span data-ttu-id="3639a-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="3639a-113">Required</span></span></p></td>
-<td><p><span data-ttu-id="3639a-114"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-114"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-p101">Ein Zeichenfolgenausdruck. Weitere Informationen erhalten Sie im Abschnitt "Hinweise".</span><span class="sxs-lookup"><span data-stu-id="3639a-p101">A string expression. See the discussion under Remarks.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-112">Name</span><span class="sxs-lookup"><span data-stu-id="5d1bb-112">Name</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-113">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="5d1bb-113">Required</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-114"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-114"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-p101">Ein Zeichenfolgenausdruck. Weitere Informationen erhalten Sie im Abschnitt "Hinweise".</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p101">A string expression. See the discussion under Remarks.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="3639a-117">Options</span><span class="sxs-lookup"><span data-stu-id="3639a-117">Options</span></span></p></td>
-<td><p><span data-ttu-id="3639a-118">Optional</span><span class="sxs-lookup"><span data-stu-id="3639a-118">Optional</span></span></p></td>
-<td><p><span data-ttu-id="3639a-119"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-119"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-p102">Legt verschiedene Optionen für die Verbindung fest, wie unter "Hinweise" beschrieben. Basierend auf diesem Wert fordert der ODBC-Treibermanager den Benutzer auf, Verbindungsdaten einzugeben, z. B. den Datenquellennamen (Data Source Name, DSN), den Benutzernamen oder das Kennwort.</span><span class="sxs-lookup"><span data-stu-id="3639a-p102">sets various options for the connection, as specified in Remarks. Based on this value, the ODBC driver manager prompts the user for connection information such as data source name (DSN), user name, and password.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-117">Options</span><span class="sxs-lookup"><span data-stu-id="5d1bb-117">Options</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-118">Optional</span><span class="sxs-lookup"><span data-stu-id="5d1bb-118">Optional</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-119"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-119"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-p102">Legt verschiedene Optionen für die Verbindung fest, wie unter "Hinweise" beschrieben. Basierend auf diesem Wert fordert der ODBC-Treibermanager den Benutzer auf, Verbindungsdaten einzugeben, z. B. den Datenquellennamen (Data Source Name, DSN), den Benutzernamen oder das Kennwort.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p102">sets various options for the connection, as specified in Remarks. Based on this value, the ODBC driver manager prompts the user for connection information such as data source name (DSN), user name, and password.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="3639a-122">ReadOnly</span><span class="sxs-lookup"><span data-stu-id="3639a-122">ReadOnly</span></span></p></td>
-<td><p><span data-ttu-id="3639a-123">Optional</span><span class="sxs-lookup"><span data-stu-id="3639a-123">Optional</span></span></p></td>
-<td><p><span data-ttu-id="3639a-124"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-124"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-125"><strong>True</strong>, um die Verbindung nur mit Lesezugriff zu öffnen, und <strong>False</strong>, wenn die Verbindung mit Lese-/Schreibzugriff geöffnet werden soll (Standard).</span><span class="sxs-lookup"><span data-stu-id="3639a-125"><strong>True</strong> if the connection is to be opened for read-only access and <strong>False</strong> if the connection is to be opened for read/write access (default).</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-122">ReadOnly</span><span class="sxs-lookup"><span data-stu-id="5d1bb-122">ReadOnly</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-123">Optional</span><span class="sxs-lookup"><span data-stu-id="5d1bb-123">Optional</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-124"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-124"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-125"><strong>True</strong>, um die Verbindung nur mit Lesezugriff zu öffnen, und <strong>False</strong>, wenn die Verbindung mit Lese-/Schreibzugriff geöffnet werden soll (Standard).</span><span class="sxs-lookup"><span data-stu-id="5d1bb-125"><strong>True</strong> if the connection is to be opened for read-only access and <strong>False</strong> if the connection is to be opened for read/write access (default).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="3639a-126">Verbinden</span><span class="sxs-lookup"><span data-stu-id="3639a-126">Connect</span></span></p></td>
-<td><p><span data-ttu-id="3639a-127">Optional</span><span class="sxs-lookup"><span data-stu-id="3639a-127">Optional</span></span></p></td>
-<td><p><span data-ttu-id="3639a-128"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-128"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-129">Eine ODBC-Verbindungszeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="3639a-129">An ODBC connection string.</span></span> <span data-ttu-id="3639a-130">Finden Sie unter der <strong><a href="connection-connect-property-dao.md">Connect</a></strong> -Eigenschaft für die bestimmte Elemente und die Syntax dieser Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="3639a-130">See the <strong><a href="connection-connect-property-dao.md">Connect</a></strong> property for the specific elements and syntax of this string.</span></span> <span data-ttu-id="3639a-131">Eine vorangestellt &quot;ODBC; &quot; ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3639a-131">A prepended &quot;ODBC;&quot; is required.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-126">Verbinden</span><span class="sxs-lookup"><span data-stu-id="5d1bb-126">Connect</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-127">Optional</span><span class="sxs-lookup"><span data-stu-id="5d1bb-127">Optional</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-128"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-128"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-129">Eine ODBC-Verbindungszeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-129">An ODBC connection string.</span></span> <span data-ttu-id="5d1bb-130">Finden Sie unter der <strong><a href="connection-connect-property-dao.md">Connect</a></strong> -Eigenschaft für die bestimmte Elemente und die Syntax dieser Zeichenfolge.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-130">See the <strong><a href="connection-connect-property-dao.md">Connect</a></strong> property for the specific elements and syntax of this string.</span></span> <span data-ttu-id="5d1bb-131">Eine vorangestellt &quot;ODBC; &quot; ist erforderlich.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-131">A prepended &quot;ODBC;&quot; is required.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="return-value"></a><span data-ttu-id="3639a-132">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="3639a-132">Return Value</span></span>
+<span data-ttu-id="5d1bb-132"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="5d1bb-132"><<<<<<< HEAD</span></span>
+### <a name="return-value"></a><span data-ttu-id="5d1bb-133">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5d1bb-133">Return Value</span></span>
+=======
+### <a name="return-value"></a><span data-ttu-id="5d1bb-134">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5d1bb-134">Return value</span></span>
+>>>>>>> <span data-ttu-id="5d1bb-135">master</span><span class="sxs-lookup"><span data-stu-id="5d1bb-135">master</span></span>
 
-<span data-ttu-id="3639a-133">Connection</span><span class="sxs-lookup"><span data-stu-id="3639a-133">Connection</span></span>
+<span data-ttu-id="5d1bb-136">Connection</span><span class="sxs-lookup"><span data-stu-id="5d1bb-136">Connection</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="3639a-134">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3639a-134">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5d1bb-137">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="5d1bb-137">Remarks</span></span>
 
-<span data-ttu-id="3639a-p104">Mit der **OpenConnection**-Methode können Sie aus einem ODBC-Arbeitsbereich eine Verbindung zu einer ODBC-Datenquelle herstellen. Die **OpenConnection**-Methode ähnelt der **OpenDatabase**-Methode. Der wichtigste Unterschied besteht darin, dass **OpenConnection** nur in einem ODBCDirect-Arbeitsbereich verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="3639a-p104">Use the **OpenConnection** method to establish a connection to an ODBC data source from an ODBCDirect workspace. The **OpenConnection** method is similar but not equivalent to **OpenDatabase**. The main difference is that **OpenConnection** is available only in an ODBCDirect workspace.</span></span>
+<span data-ttu-id="5d1bb-p104">Mit der **OpenConnection**-Methode können Sie aus einem ODBC-Arbeitsbereich eine Verbindung zu einer ODBC-Datenquelle herstellen. Die **OpenConnection**-Methode ähnelt der **OpenDatabase**-Methode. Der wichtigste Unterschied besteht darin, dass **OpenConnection** nur in einem ODBCDirect-Arbeitsbereich verfügbar ist.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p104">Use the **OpenConnection** method to establish a connection to an ODBC data source from an ODBCDirect workspace. The **OpenConnection** method is similar but not equivalent to **OpenDatabase**. The main difference is that **OpenConnection** is available only in an ODBCDirect workspace.</span></span>
 
-<span data-ttu-id="3639a-138">Wenn Sie einen registrierten ODBC-Datenquellennamen (DSN) in der Connect-Argument angeben, klicken Sie dann im Name-Argument kann eine beliebige gültige Zeichenfolge sein, und stellt auch die **Name** -Eigenschaft für das **Connection** -Objekt bereit.</span><span class="sxs-lookup"><span data-stu-id="3639a-138">If you specify a registered ODBC data source name (DSN) in the connect argument, then the name argument can be any valid string, and will also provide the **Name** property for the **Connection** object.</span></span> <span data-ttu-id="3639a-139">Wenn Sie ein gültiger DSN in der Connect-Argument nicht enthalten ist, muss Name auf einen gültigen ODBC DSN verweisen, die auch die **Name** -Eigenschaft verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="3639a-139">If a valid DSN is not included in the connect argument, then name must refer to a valid ODBC DSN, which will also be the **Name** property.</span></span> <span data-ttu-id="3639a-140">Wenn weder name noch connect enthält keinen gültigen DSN, kann der ODBC-Treiber-Manager auf der Benutzer für die erforderlichen Verbindungsinformationen aufgefordert (über das Argument Options) festgelegt.</span><span class="sxs-lookup"><span data-stu-id="3639a-140">If neither name nor connect contains a valid DSN, the ODBC driver manager can be set (via the options argument) to prompt the user for the required connection information.</span></span> <span data-ttu-id="3639a-141">Der durch die Eingabeaufforderung bereitgestellte DSN gibt dann die **Name**-Eigenschaft an.</span><span class="sxs-lookup"><span data-stu-id="3639a-141">The DSN supplied through the prompt then provides the **Name** property.</span></span>
+<span data-ttu-id="5d1bb-141">Wenn Sie einen registrierten ODBC-Datenquellennamen (DSN) in der Connect-Argument angeben, klicken Sie dann im Name-Argument kann eine beliebige gültige Zeichenfolge sein, und stellt auch die **Name** -Eigenschaft für das **Connection** -Objekt bereit.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-141">If you specify a registered ODBC data source name (DSN) in the connect argument, then the name argument can be any valid string, and will also provide the **Name** property for the **Connection** object.</span></span> <span data-ttu-id="5d1bb-142">Wenn Sie ein gültiger DSN in der Connect-Argument nicht enthalten ist, muss Name auf einen gültigen ODBC DSN verweisen, die auch die **Name** -Eigenschaft verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-142">If a valid DSN is not included in the connect argument, then name must refer to a valid ODBC DSN, which will also be the **Name** property.</span></span> <span data-ttu-id="5d1bb-143">Wenn weder name noch connect enthält keinen gültigen DSN, kann der ODBC-Treiber-Manager auf der Benutzer für die erforderlichen Verbindungsinformationen aufgefordert (über das Argument Options) festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-143">If neither name nor connect contains a valid DSN, the ODBC driver manager can be set (via the options argument) to prompt the user for the required connection information.</span></span> <span data-ttu-id="5d1bb-144">Der durch die Eingabeaufforderung bereitgestellte DSN gibt dann die **Name**-Eigenschaft an.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-144">The DSN supplied through the prompt then provides the **Name** property.</span></span>
 
-<span data-ttu-id="3639a-p106">Durch das Argument options ist festgelegt, ob und zu welchem Zeitpunkt der Benutzer aufgefordert wird, die Verbindung herzustellen, und ob die Verbindung asynchron geöffnet werden soll. Sie können eine der folgenden Konstanten verwenden.</span><span class="sxs-lookup"><span data-stu-id="3639a-p106">The options argument determines if and when to prompt the user to establish the connection, and whether or not to open the connection asynchronously. You can use one of the following constants.</span></span>
+<span data-ttu-id="5d1bb-p106">Durch das Argument options ist festgelegt, ob und zu welchem Zeitpunkt der Benutzer aufgefordert wird, die Verbindung herzustellen, und ob die Verbindung asynchron geöffnet werden soll. Sie können eine der folgenden Konstanten verwenden.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p106">The options argument determines if and when to prompt the user to establish the connection, and whether or not to open the connection asynchronously. You can use one of the following constants.</span></span>
 
 <table>
 <colgroup>
@@ -89,40 +93,40 @@ ms.locfileid: "25474803"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="3639a-144">Konstante</span><span class="sxs-lookup"><span data-stu-id="3639a-144">Constant</span></span></p></th>
-<th><p><span data-ttu-id="3639a-145">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3639a-145">Description</span></span></p></th>
+<th><p><span data-ttu-id="5d1bb-147">Konstante</span><span class="sxs-lookup"><span data-stu-id="5d1bb-147">Constant</span></span></p></th>
+<th><p><span data-ttu-id="5d1bb-148">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5d1bb-148">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="3639a-146"><strong>dbDriverNoPrompt</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-146"><strong>dbDriverNoPrompt</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-p107">Der ODBC-Treibermanager verwendet die in <em>dbname</em> und <em>connect</em> angegebene Verbindungszeichenfolge. Es tritt ein Laufzeitfehler auf, wenn Sie nicht genügend Informationen bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="3639a-p107">The ODBC Driver Manager uses the connection string provided in <em>dbname</em> and <em>connect</em>. If you don't provide sufficient information, a run-time error occurs.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-149"><strong>dbDriverNoPrompt</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-149"><strong>dbDriverNoPrompt</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-p107">Der ODBC-Treibermanager verwendet die in <em>dbname</em> und <em>connect</em> angegebene Verbindungszeichenfolge. Es tritt ein Laufzeitfehler auf, wenn Sie nicht genügend Informationen bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p107">The ODBC Driver Manager uses the connection string provided in <em>dbname</em> and <em>connect</em>. If you don't provide sufficient information, a run-time error occurs.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="3639a-149"><strong>dbDriverPrompt</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-149"><strong>dbDriverPrompt</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-p108">Der ODBC-Treibermanager zeigt das Dialogfeld <strong>ODBC-Datenquelle</strong> an, das alle relevanten Informationen enthält, die in <em>dbname</em> oder <em>connect</em> angegeben wurden. Die Verbindungszeichenfolge entspricht dem DSN, den der Benutzer über Dialogfelder auswählt. Wenn der Benutzer keinen DSN angegeben hat, wird der standardmäßige DSN verwendet.</span><span class="sxs-lookup"><span data-stu-id="3639a-p108">The ODBC Driver Manager displays the <strong>ODBC Data Sources</strong> dialog box, which displays any relevant information supplied in <em>dbname</em> or <em>connect</em>. The connection string is made up of the DSN that the user selects via the dialog boxes, or, if the user doesn't specify a DSN, the default DSN is used.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-152"><strong>dbDriverPrompt</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-152"><strong>dbDriverPrompt</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-p108">Der ODBC-Treibermanager zeigt das Dialogfeld <strong>ODBC-Datenquelle</strong> an, das alle relevanten Informationen enthält, die in <em>dbname</em> oder <em>connect</em> angegeben wurden. Die Verbindungszeichenfolge entspricht dem DSN, den der Benutzer über Dialogfelder auswählt. Wenn der Benutzer keinen DSN angegeben hat, wird der standardmäßige DSN verwendet.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p108">The ODBC Driver Manager displays the <strong>ODBC Data Sources</strong> dialog box, which displays any relevant information supplied in <em>dbname</em> or <em>connect</em>. The connection string is made up of the DSN that the user selects via the dialog boxes, or, if the user doesn't specify a DSN, the default DSN is used.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="3639a-152"><strong>dbDriverComplete</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-152"><strong>dbDriverComplete</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-p109">Standard. Enthält das Argument <em>connect</em> alle für die Verbindung erforderlichen Informationen, verwendet der ODBC-Treibermanager die Zeichenfolge in <em>connect</em>. Andernfalls verhält er sich so, als hätten Sie <strong>dbDriverPrompt</strong> angegeben.</span><span class="sxs-lookup"><span data-stu-id="3639a-p109">Default. If the <em>connect</em> argument includes all the necessary information to complete a connection, the ODBC Driver Manager uses the string in <em>connect</em>. Otherwise it behaves as it does when you specify <strong>dbDriverPrompt</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-155"><strong>dbDriverComplete</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-155"><strong>dbDriverComplete</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-p109">Standard. Enthält das Argument <em>connect</em> alle für die Verbindung erforderlichen Informationen, verwendet der ODBC-Treibermanager die Zeichenfolge in <em>connect</em>. Andernfalls verhält er sich so, als hätten Sie <strong>dbDriverPrompt</strong> angegeben.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p109">Default. If the <em>connect</em> argument includes all the necessary information to complete a connection, the ODBC Driver Manager uses the string in <em>connect</em>. Otherwise it behaves as it does when you specify <strong>dbDriverPrompt</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="3639a-156"><strong>dbDriverCompleteRequired</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-156"><strong>dbDriverCompleteRequired</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-157">Das Verhalten dieser Option entspricht dem von <strong>dbDriverComplete</strong>, mit der Ausnahme, dass der ODBC-Treiber die Eingabeaufforderungen für alle Informationen deaktiviert, die nicht für die Verbindung erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="3639a-157">This option behaves like <strong>dbDriverComplete</strong> except the ODBC driver disables the prompts for any information not required to complete the connection.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-159"><strong>dbDriverCompleteRequired</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-159"><strong>dbDriverCompleteRequired</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-160">Das Verhalten dieser Option entspricht dem von <strong>dbDriverComplete</strong>, mit der Ausnahme, dass der ODBC-Treiber die Eingabeaufforderungen für alle Informationen deaktiviert, die nicht für die Verbindung erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-160">This option behaves like <strong>dbDriverComplete</strong> except the ODBC driver disables the prompts for any information not required to complete the connection.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="3639a-158"><strong>dbRunAsync</strong></span><span class="sxs-lookup"><span data-stu-id="3639a-158"><strong>dbRunAsync</strong></span></span></p></td>
-<td><p><span data-ttu-id="3639a-p110">Die Methode wird asynchron ausgeführt. Diese Konstante kann mit jeder anderen <em>options</em>-Konstante verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="3639a-p110">Execute the method asynchronously. This constant may be used with any of the other <em>options</em> constants.</span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-161"><strong>dbRunAsync</strong></span><span class="sxs-lookup"><span data-stu-id="5d1bb-161"><strong>dbRunAsync</strong></span></span></p></td>
+<td><p><span data-ttu-id="5d1bb-p110">Die Methode wird asynchron ausgeführt. Diese Konstante kann mit jeder anderen <em>options</em>-Konstante verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p110">Execute the method asynchronously. This constant may be used with any of the other <em>options</em> constants.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="3639a-p111">**OpenConnection** gibt ein **Connection**-Objekt zurück, das Informationen zur Verbindung enthält. Das **Connection**-Objekt ähnelt einem **[Database](database-object-dao.md)** -Objekt. Der Hauptunterschied liegt darin, dass ein **Database**-Objekt in der Regel eine Datenbank repräsentiert, aber auch verwendet werden kann, um eine Verbindung zu einer ODBC-Datenquelle aus einem Microsoft Access-Arbeitsbereich darzustellen.</span><span class="sxs-lookup"><span data-stu-id="3639a-p111">**OpenConnection** returns a **Connection** object which contains information about the connection. The **Connection** object is similar to a **[Database](database-object-dao.md)** object. The principal difference is that a **Database** object usually represents a database, although it can be used to represent a connection to an ODBC data source from a Microsoft Access workspace.</span></span>
+<span data-ttu-id="5d1bb-p111">**OpenConnection** gibt ein **Connection**-Objekt zurück, das Informationen zur Verbindung enthält. Das **Connection**-Objekt ähnelt einem **[Database](database-object-dao.md)** -Objekt. Der Hauptunterschied liegt darin, dass ein **Database**-Objekt in der Regel eine Datenbank repräsentiert, aber auch verwendet werden kann, um eine Verbindung zu einer ODBC-Datenquelle aus einem Microsoft Access-Arbeitsbereich darzustellen.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-p111">**OpenConnection** returns a **Connection** object which contains information about the connection. The **Connection** object is similar to a **[Database](database-object-dao.md)** object. The principal difference is that a **Database** object usually represents a database, although it can be used to represent a connection to an ODBC data source from a Microsoft Access workspace.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3639a-164">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3639a-164">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5d1bb-167">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5d1bb-167">Example</span></span>
 
-<span data-ttu-id="3639a-165">In diesem Beispiel wird die **OpenConnection**-Methode mit verschiedenen Parametern verwendet, um drei verschiedene **Connection**-Objekte zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="3639a-165">This example uses the **OpenConnection** method with different parameters to open three different **Connection** objects.</span></span>
+<span data-ttu-id="5d1bb-168">In diesem Beispiel wird die **OpenConnection**-Methode mit verschiedenen Parametern verwendet, um drei verschiedene **Connection**-Objekte zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-168">This example uses the **OpenConnection** method with different parameters to open three different **Connection** objects.</span></span>
 
 ```vb 
 Sub OpenConnectionX() 
@@ -200,7 +204,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="3639a-166">In diesem Beispiel werden das **Connection**-Objekt und die **Connections**-Auflistung veranschaulicht. Dazu werden ein **Database**-Objekt von Microsoft Access und zwei **Connection**-Objekte von ODBCDirect geöffnet, und die für die einzelnen Objekte verfügbaren Eigenschaften werden aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="3639a-166">This example demonstrates the **Connection** object and **Connections** collection by opening a Microsoft Access **Database** object and two ODBCDirect **Connection** objects and listing the properties available to each object.</span></span>
+<span data-ttu-id="5d1bb-169">In diesem Beispiel werden das **Connection**-Objekt und die **Connections**-Auflistung veranschaulicht. Dazu werden ein **Database**-Objekt von Microsoft Access und zwei **Connection**-Objekte von ODBCDirect geöffnet, und die für die einzelnen Objekte verfügbaren Eigenschaften werden aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="5d1bb-169">This example demonstrates the **Connection** object and **Connections** collection by opening a Microsoft Access **Database** object and two ODBCDirect **Connection** objects and listing the properties available to each object.</span></span>
 
 ```vb 
 Sub ConnectionObjectX() 

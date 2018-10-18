@@ -1,24 +1,18 @@
 ---
-title: Sort-Eigenschaft (Beispiel) (VB)
-TOCTitle: Sort Property Example (VB)
-ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15)
-ms:contentKeyID: 48545539
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c537595c20253aba92224bceb6f46ae538f02f08
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473696"
+<span data-ttu-id="00756-101"><<<<<<< HEAD-Titel: Sortieren Eigenschaft Beispiel) (VB) TOCTitle: Sortieren Eigenschaft Beispiel) (VB) === Titel: Sort-Eigenschaft (Beispiel) (VB) TOCTitle: Sort-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="00756-101"><<<<<<< HEAD title: Sort Property Example (VB) TOCTitle: Sort Property Example (VB) ======= title: Sort property example (VB) TOCTitle: Sort property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="00756-102">Master Ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) Ms:contentKeyID: 48545539 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="00756-102">master ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) ms:contentKeyID: 48545539 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="sort-property-example-vb"></a><span data-ttu-id="8168e-102">Sort-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="8168e-102">Sort Property Example (VB)</span></span>
+
+<span data-ttu-id="00756-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="00756-103"><<<<<<< HEAD</span></span>
+# <a name="sort-property-example-vb"></a><span data-ttu-id="00756-104">Sort-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="00756-104">Sort Property Example (VB)</span></span>
+=======
+# <a name="sort-property-example-vb"></a><span data-ttu-id="00756-105">Sort-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="00756-105">Sort property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="00756-106">master</span><span class="sxs-lookup"><span data-stu-id="00756-106">master</span></span>
 
 
-<span data-ttu-id="8168e-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8168e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="00756-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="00756-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="8168e-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="8168e-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="00756-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="00756-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
 
 ```vb 
  
@@ -100,7 +94,7 @@ End Sub
 'EndSortVB 
 ```
 
-<span data-ttu-id="8168e-106">Das ist die sekundäre Hilfsprogrammroutine, die den angegebenen Titel und den Inhalt des angegebenen **Recordset** -Objekts druckt.</span><span class="sxs-lookup"><span data-stu-id="8168e-106">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
+<span data-ttu-id="00756-110">Das ist die sekundäre Hilfsprogrammroutine, die den angegebenen Titel und den Inhalt des angegebenen **Recordset** -Objekts druckt.</span><span class="sxs-lookup"><span data-stu-id="00756-110">This is the secondary utility routine that prints the given title, and the contents of the specified **Recordset**.</span></span>
 
 ```vb 
  

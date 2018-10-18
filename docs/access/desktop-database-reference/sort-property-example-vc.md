@@ -1,24 +1,18 @@
 ---
-title: Sort-Eigenschaft (Beispiel) (VC++)
-TOCTitle: Sort Property Example (VC++)
-ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15)
-ms:contentKeyID: 48543259
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 33f8134320192ad22b0ddc743c1e445cfad46d58
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475470"
+<span data-ttu-id="4da1d-101"><<<<<<< HEAD-Titel: Sort-Eigenschaft (VC++-Beispiel) TOCTitle: Sort-Eigenschaft (VC++-Beispiel) === Titel: Sort-Eigenschaft (VC++-Beispiel) TOCTitle: Sort-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="4da1d-101"><<<<<<< HEAD title: Sort Property Example (VC++) TOCTitle: Sort Property Example (VC++) ======= title: Sort property example (VC++) TOCTitle: Sort property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="4da1d-102">Master Ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15) Ms:contentKeyID: 48543259 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="4da1d-102">master ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15) ms:contentKeyID: 48543259 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="sort-property-example-vc"></a><span data-ttu-id="480f9-102">Sort-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="480f9-102">Sort Property Example (VC++)</span></span>
+
+<span data-ttu-id="4da1d-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="4da1d-103"><<<<<<< HEAD</span></span>
+# <a name="sort-property-example-vc"></a><span data-ttu-id="4da1d-104">Sort-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="4da1d-104">Sort Property Example (VC++)</span></span>
+=======
+# <a name="sort-property-example-vc"></a><span data-ttu-id="4da1d-105">Sort-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="4da1d-105">Sort property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="4da1d-106">master</span><span class="sxs-lookup"><span data-stu-id="4da1d-106">master</span></span>
 
 
-<span data-ttu-id="480f9-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="480f9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="4da1d-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="4da1d-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="480f9-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der **Pubs**-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="480f9-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the **Pubs** database. A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="4da1d-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der **Pubs**-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="4da1d-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the **Pubs** database. A secondary utility routine prints each row.</span></span>
 
 ```cpp 
  

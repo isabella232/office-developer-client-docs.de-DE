@@ -1,24 +1,18 @@
 ---
-title: Connection Close-Methode, Table Type-Eigenschaft (VC++-Beispiel)
-TOCTitle: Connection Close Method, Table Type Property Example (VC++)
-ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15)
-ms:contentKeyID: 48548006
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: cbe17bfd18f601d9fb84be81a4962dc702a40db0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474170"
+<span data-ttu-id="0e015-101"><<<<<<< HEAD-Titel: Connection Close-Methode, TOCTitle Tabelle Type-Eigenschaft (VC++-Beispiel): Connection Close-Methode, Tabelle Type-Eigenschaft (VC++-Beispiel) === Titel: Connection Close-Methode vom Tabellentyp-Eigenschaft (VC++-Beispiel) TOCTitle: Connection Close-Methode vom Tabellentyp-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="0e015-101"><<<<<<< HEAD title: Connection Close Method, Table Type Property Example (VC++) TOCTitle: Connection Close Method, Table Type Property Example (VC++) ======= title: Connection Close Method, Table Type property example (VC++) TOCTitle: Connection Close Method, Table Type property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="0e015-102">Master Ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15) Ms:contentKeyID: 48548006 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="0e015-102">master ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15) ms:contentKeyID: 48548006 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="1501a-102">Connection Close-Methode, Table Type-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="1501a-102">Connection Close Method, Table Type Property Example (VC++)</span></span>
+
+<span data-ttu-id="0e015-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="0e015-103"><<<<<<< HEAD</span></span>
+# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="0e015-104">Connection Close-Methode, Table Type-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="0e015-104">Connection Close Method, Table Type Property Example (VC++)</span></span>
+=======
+# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="0e015-105">Connection Close-Methode vom Tabellentyp-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="0e015-105">Connection Close Method, Table Type property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="0e015-106">master</span><span class="sxs-lookup"><span data-stu-id="0e015-106">master</span></span>
 
 
-<span data-ttu-id="1501a-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="1501a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0e015-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="0e015-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="1501a-p101">Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Beim Lesen von Eigenschaften, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="1501a-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
+<span data-ttu-id="0e015-p101">Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Beim Lesen von Eigenschaften, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="0e015-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
 
 ```cpp 
  

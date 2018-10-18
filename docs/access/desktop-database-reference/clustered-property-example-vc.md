@@ -1,24 +1,18 @@
 ---
-title: Clustered-Eigenschaft (VC++-Beispiel)
-TOCTitle: Clustered Property Example (VC++)
-ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15)
-ms:contentKeyID: 48546761
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 5be7f193c339c2c002e5b1806103fbcca5306666
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475854"
+<span data-ttu-id="3ce19-101"><<<<<<< HEAD-Titel: Clustered-Eigenschaft (VC++-Beispiel) TOCTitle: Clustered-Eigenschaft (VC++-Beispiel) === Titel: Clustered-Eigenschaft (VC++-Beispiel) TOCTitle: Clustered-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="3ce19-101"><<<<<<< HEAD title: Clustered Property Example (VC++) TOCTitle: Clustered Property Example (VC++) ======= title: Clustered property example (VC++) TOCTitle: Clustered property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="3ce19-102">Master Ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15) Ms:contentKeyID: 48546761 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="3ce19-102">master ms:assetid: a262e38e-ce44-66cb-1adf-fad8e6b840d1 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249748(v=office.15) ms:contentKeyID: 48546761 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="clustered-property-example-vc"></a><span data-ttu-id="a9bdd-102">Clustered-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="a9bdd-102">Clustered Property Example (VC++)</span></span>
+
+<span data-ttu-id="3ce19-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="3ce19-103"><<<<<<< HEAD</span></span>
+# <a name="clustered-property-example-vc"></a><span data-ttu-id="3ce19-104">Clustered-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="3ce19-104">Clustered Property Example (VC++)</span></span>
+=======
+# <a name="clustered-property-example-vc"></a><span data-ttu-id="3ce19-105">Clustered-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="3ce19-105">Clustered property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="3ce19-106">master</span><span class="sxs-lookup"><span data-stu-id="3ce19-106">master</span></span>
 
 
-<span data-ttu-id="a9bdd-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="a9bdd-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3ce19-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="3ce19-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="a9bdd-104">Dieses Beispiel veranschaulicht die [Clustered](clustered-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md).</span><span class="sxs-lookup"><span data-stu-id="a9bdd-104">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="a9bdd-105">Beachten Sie, dass Microsoft Jet-Datenbanken gruppierte Indizes nicht unterstützen, sodass in diesem Beispiel wird für alle Indizes in der *Nordwind* -Datenbank die **Clustered** -Eigenschaft **False** zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="a9bdd-105">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
+<span data-ttu-id="3ce19-108">Dieses Beispiel veranschaulicht die [Clustered](clustered-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md).</span><span class="sxs-lookup"><span data-stu-id="3ce19-108">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="3ce19-109">Beachten Sie, dass Microsoft Jet-Datenbanken gruppierte Indizes nicht unterstützen, sodass in diesem Beispiel wird für alle Indizes in der *Nordwind* -Datenbank die **Clustered** -Eigenschaft **False** zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="3ce19-109">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
 
 ```cpp 
  

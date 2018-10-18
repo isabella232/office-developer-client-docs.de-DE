@@ -1,24 +1,18 @@
 ---
-title: Seek-Methode und Index-Eigenschaft (Beispiel) (VC++)
-TOCTitle: Seek Method and Index Property Example (VC++)
-ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15)
-ms:contentKeyID: 48548820
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 1abd8ece2e9e8057a9f886f892bc6b5fdf2a828f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474983"
+<span data-ttu-id="99f49-101"><<<<<<< HEAD-Titel: Seek-Methode und Index-Eigenschaft (VC++-Beispiel) TOCTitle: Seek-Methode und Index-Eigenschaft (VC++-Beispiel) === Titel: Seek-Methode und Index-Eigenschaft (VC++-Beispiel) TOCTitle: Seek-Methode und Index-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="99f49-101"><<<<<<< HEAD title: Seek Method and Index Property Example (VC++) TOCTitle: Seek Method and Index Property Example (VC++) ======= title: Seek Method and Index property example (VC++) TOCTitle: Seek Method and Index property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="99f49-102">Master Ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15) Ms:contentKeyID: 48548820 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="99f49-102">master ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15) ms:contentKeyID: 48548820 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="a12f7-102">Seek-Methode und Index-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="a12f7-102">Seek Method and Index Property Example (VC++)</span></span>
+
+<span data-ttu-id="99f49-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="99f49-103"><<<<<<< HEAD</span></span>
+# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="99f49-104">Seek-Methode und Index-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="99f49-104">Seek Method and Index Property Example (VC++)</span></span>
+=======
+# <a name="seek-method-and-index-property-example-vc"></a><span data-ttu-id="99f49-105">Seek-Methode und Index-Eigenschaft-Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="99f49-105">Seek Method and Index property example (VC++)</span></span>
+>>>>>>> <span data-ttu-id="99f49-106">master</span><span class="sxs-lookup"><span data-stu-id="99f49-106">master</span></span>
 
 
-<span data-ttu-id="a12f7-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="a12f7-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="99f49-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="99f49-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="a12f7-104">In diesem Beispiel werden die Seek-Methode und die Index-Eigenschaft des Recordset-Objekts gemeinsam mit einer angegebenen Employee ID verwendet, um den Namen des Mitarbeiters in der Employees-Tabelle der Datenbank Nwind.mdb zu suchen.</span><span class="sxs-lookup"><span data-stu-id="a12f7-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
+<span data-ttu-id="99f49-108">In diesem Beispiel werden die Seek-Methode und die Index-Eigenschaft des Recordset-Objekts gemeinsam mit einer angegebenen Employee ID verwendet, um den Namen des Mitarbeiters in der Employees-Tabelle der Datenbank Nwind.mdb zu suchen.</span><span class="sxs-lookup"><span data-stu-id="99f49-108">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
 
 ```cpp 
  
@@ -242,7 +236,7 @@ void PrintComError(_com_error &e)
 // EndSeekCpp 
 ```
 
-<span data-ttu-id="a12f7-105">**SeekX.h**</span><span class="sxs-lookup"><span data-stu-id="a12f7-105">**SeekX.h**</span></span>
+<span data-ttu-id="99f49-109">**SeekX.h**</span><span class="sxs-lookup"><span data-stu-id="99f49-109">**SeekX.h**</span></span>
 
 ```cpp 
  

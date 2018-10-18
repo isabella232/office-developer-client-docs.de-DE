@@ -1,42 +1,40 @@
 ---
-title: CommandType-Eigenschaft (ADO)
-TOCTitle: CommandType Property (ADO)
-ms:assetid: c8d4fc1c-502b-11f3-af9d-605a03b6f056
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249976(v=office.15)
-ms:contentKeyID: 48547663
-ms.date: 09/18/2015
-mtps_version: v=office.15
-f1_keywords:
-- ado210.chm1231125
-f1_categories:
-- Office.Version=v15
-ms.openlocfilehash: 3cff3c3540208b142fc13cd79eb83bd218814873
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476115"
+<span data-ttu-id="f05f9-101"><<<<<<< HEAD-Titel: CommandType-Eigenschaft (ADO) TOCTitle: CommandType-Eigenschaft (ADO) === Titel: CommandType-Eigenschaft (ADO) TOCTitle: CommandType-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="f05f9-101"><<<<<<< HEAD title: CommandType Property (ADO) TOCTitle: CommandType Property (ADO) ======= title: CommandType property (ADO) TOCTitle: CommandType property (ADO)</span></span>
+>>>>>>> <span data-ttu-id="f05f9-102">Master Ms:assetid: c8d4fc1c-502b-11f3-af9d-605a03b6f056 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249976(v=office.15) Ms:contentKeyID: 48547663 ms.date: 09/18/2015 Mtps_version: Office. 15 f1_keywords:</span><span class="sxs-lookup"><span data-stu-id="f05f9-102">master ms:assetid: c8d4fc1c-502b-11f3-af9d-605a03b6f056 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249976(v=office.15) ms:contentKeyID: 48547663 ms.date: 09/18/2015 mtps_version: v=office.15 f1_keywords:</span></span>
+- <span data-ttu-id="f05f9-103">ado210.chm1231125 f1_categories:</span><span class="sxs-lookup"><span data-stu-id="f05f9-103">ado210.chm1231125 f1_categories:</span></span>
+- <span data-ttu-id="f05f9-104">Office.Version=v15</span><span class="sxs-lookup"><span data-stu-id="f05f9-104">Office.Version=v15</span></span>
 ---
-# <a name="commandtype-property-ado"></a><span data-ttu-id="6967d-102">CommandType-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="6967d-102">CommandType Property (ADO)</span></span>
+
+<span data-ttu-id="f05f9-105"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="f05f9-105"><<<<<<< HEAD</span></span>
+# <a name="commandtype-property-ado"></a><span data-ttu-id="f05f9-106">CommandType-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="f05f9-106">CommandType Property (ADO)</span></span>
+=======
+# <a name="commandtype-property-ado"></a><span data-ttu-id="f05f9-107">CommandType-Eigenschaft (ADO)</span><span class="sxs-lookup"><span data-stu-id="f05f9-107">CommandType property (ADO)</span></span>
+>>>>>>> <span data-ttu-id="f05f9-108">master</span><span class="sxs-lookup"><span data-stu-id="f05f9-108">master</span></span>
 
 
-<span data-ttu-id="6967d-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="6967d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f05f9-109">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="f05f9-109">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="6967d-104">Gibt den Typ eines [Command](command-object-ado.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="6967d-104">Indicates the type of a [Command](command-object-ado.md) object.</span></span>
+<span data-ttu-id="f05f9-110">Gibt den Typ eines [Command](command-object-ado.md)-Objekts an.</span><span class="sxs-lookup"><span data-stu-id="f05f9-110">Indicates the type of a [Command](command-object-ado.md) object.</span></span>
 
-## <a name="settings-and-return-values"></a><span data-ttu-id="6967d-105">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="6967d-105">Settings and Return Values</span></span>
+<span data-ttu-id="f05f9-111"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="f05f9-111"><<<<<<< HEAD</span></span>
+## <a name="settings-and-return-values"></a><span data-ttu-id="f05f9-112">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="f05f9-112">Settings and Return Values</span></span>
+=======
+## <a name="settings-and-return-values"></a><span data-ttu-id="f05f9-113">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="f05f9-113">Settings and return values</span></span>
+>>>>>>> <span data-ttu-id="f05f9-114">master</span><span class="sxs-lookup"><span data-stu-id="f05f9-114">master</span></span>
 
-<span data-ttu-id="6967d-106">Mit dieser Eigenschaft wird mindestens ein [CommandTypeEnum](commandtypeenum.md)-Wert festgelegt oder zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6967d-106">Sets or returns one or more [CommandTypeEnum](commandtypeenum.md) values.</span></span>
+<span data-ttu-id="f05f9-115">Mit dieser Eigenschaft wird mindestens ein [CommandTypeEnum](commandtypeenum.md)-Wert festgelegt oder zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="f05f9-115">Sets or returns one or more [CommandTypeEnum](commandtypeenum.md) values.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="6967d-p101">[!HINWEIS] Verwenden Sie die <STRONG>CommandTypeEnum</STRONG> -Werte von <STRONG>adCmdFile</STRONG> oder <STRONG>adCmdTableDirect</STRONG> nicht zusammen mit <STRONG>CommandType</STRONG>. Diese Werte können nur als Optionen für die Methoden <A href="open-method-ado-recordset.md">Open</A> und <A href="requery-method-ado.md">Requery</A> eines <A href="recordset-object-ado.md">Recordset</A>-Objekts verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="6967d-p101">Do not use the <STRONG>CommandTypeEnum</STRONG> values of <STRONG>adCmdFile</STRONG> or <STRONG>adCmdTableDirect</STRONG> with <STRONG>CommandType</STRONG>. These values can only be used as options with the <A href="open-method-ado-recordset.md">Open</A> and <A href="requery-method-ado.md">Requery</A> methods of a <A href="recordset-object-ado.md">Recordset</A>.</span></span></P>
+> <P><span data-ttu-id="f05f9-p101">[!HINWEIS] Verwenden Sie die <STRONG>CommandTypeEnum</STRONG> -Werte von <STRONG>adCmdFile</STRONG> oder <STRONG>adCmdTableDirect</STRONG> nicht zusammen mit <STRONG>CommandType</STRONG>. Diese Werte können nur als Optionen für die Methoden <A href="open-method-ado-recordset.md">Open</A> und <A href="requery-method-ado.md">Requery</A> eines <A href="recordset-object-ado.md">Recordset</A>-Objekts verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="f05f9-p101">Do not use the <STRONG>CommandTypeEnum</STRONG> values of <STRONG>adCmdFile</STRONG> or <STRONG>adCmdTableDirect</STRONG> with <STRONG>CommandType</STRONG>. These values can only be used as options with the <A href="open-method-ado-recordset.md">Open</A> and <A href="requery-method-ado.md">Requery</A> methods of a <A href="recordset-object-ado.md">Recordset</A>.</span></span></P>
 
 
 
-## <a name="remarks"></a><span data-ttu-id="6967d-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="6967d-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f05f9-118">Hinweise</span><span class="sxs-lookup"><span data-stu-id="f05f9-118">Remarks</span></span>
 
-<span data-ttu-id="6967d-110">Verwenden Sie die **CommandType** -Eigenschaft zum Optimieren der Evaluierung der [CommandText](commandtext-property-ado.md)-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="6967d-110">Use the **CommandType** property to optimize evaluation of the [CommandText](commandtext-property-ado.md) property.</span></span>
+<span data-ttu-id="f05f9-119">Verwenden Sie die **CommandType** -Eigenschaft zum Optimieren der Evaluierung der [CommandText](commandtext-property-ado.md)-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="f05f9-119">Use the **CommandType** property to optimize evaluation of the [CommandText](commandtext-property-ado.md) property.</span></span>
 
-<span data-ttu-id="6967d-p102">Wenn der Wert der **CommandType** -Eigenschaft gleich **adCmdUnknown** ist (Standardwert), kann die Leistung beeinträchtigt sein. ADO muss dann nämlich den Anbieter aufrufen, um zu ermitteln, ob es sich bei der **CommandText** -Eigenschaft um eine SQL-Anweisung, eine gespeicherte Prozedur oder einen Tabellennamen handelt. Falls Sie wissen, welchen Befehlstyp Sie verwenden, wird ADO durch Festlegen der **CommandType** -Eigenschaft angewiesen, direkt zum entsprechenden Code zu wechseln. Wenn die **CommandType** -Eigenschaft nicht mit dem Befehlstyp in der **CommandText** -Eigenschaft übereinstimmt, tritt beim Aufrufen der [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))-Methode ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="6967d-p102">If the **CommandType** property value equals **adCmdUnknown** (the default value), you may experience diminished performance because ADO must make calls to the provider to determine if the **CommandText** property is an SQL statement, a stored procedure, or a table name. If you know what type of command you're using, setting the **CommandType** property instructs ADO to go directly to the relevant code. If the **CommandType** property does not match the type of command in the **CommandText** property, an error occurs when you call the [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) method.</span></span>
+<span data-ttu-id="f05f9-120"><<<<<<< HEAD, wenn der Wert der **CommandType** -Eigenschaft gleich **AdCmdUnknown** (Standardwert), treten möglicherweise Leistung beeinträchtigt, da ADO Aufrufe an den Anbieter, um festzustellen, ob erfolgen muss die **CommandText** -Eigenschaft ist eine SQL-Anweisung, eine gespeicherte Prozedur oder einen Tabellennamen.</span><span class="sxs-lookup"><span data-stu-id="f05f9-120"><<<<<<< HEAD If the **CommandType** property value equals **adCmdUnknown** (the default value), you may experience diminished performance because ADO must make calls to the provider to determine if the **CommandText** property is an SQL statement, a stored procedure, or a table name.</span></span> <span data-ttu-id="f05f9-121">Wenn Sie, die Sie verwenden die **CommandType** -Eigenschaft festlegen wissen, die welche Art des Befehls, weist ADO fahren Sie direkt mit der relevante Code.</span><span class="sxs-lookup"><span data-stu-id="f05f9-121">If you know what type of command you're using, setting the **CommandType** property instructs ADO to go directly to the relevant code.</span></span> <span data-ttu-id="f05f9-122">Wenn die **CommandType** -Eigenschaft den Typ des Befehls in der **CommandText** -Eigenschaft nicht übereinstimmt, tritt ein Fehler beim Aufrufen der [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) -Methode.</span><span class="sxs-lookup"><span data-stu-id="f05f9-122">If the **CommandType** property does not match the type of command in the **CommandText** property, an error occurs when you call the [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) method.</span></span>
+<span data-ttu-id="f05f9-123">===, Wenn der Wert der **CommandType** -Eigenschaft **AdCmdUnknown** (Standardwert) ist, treten möglicherweise Leistung beeinträchtigt, da ADO Aufrufe an den Anbieter treffen muss zu ermitteln, ob die **CommandText** -Eigenschaft eine SQL-Anweisung ist ein gespeicherte Prozedur oder einen Tabellennamen.</span><span class="sxs-lookup"><span data-stu-id="f05f9-123">======= If the **CommandType** property value equals **adCmdUnknown** (the default value), you may experience diminished performance because ADO must make calls to the provider to determine if the **CommandText** property is an SQL statement, a stored procedure, or a table name.</span></span> <span data-ttu-id="f05f9-124">Wenn Sie, die Sie verwenden die **CommandType** -Eigenschaft festlegen wissen, die welche Art des Befehls, weist ADO fahren Sie direkt mit der relevante Code.</span><span class="sxs-lookup"><span data-stu-id="f05f9-124">If you know what type of command you're using, setting the **CommandType** property instructs ADO to go directly to the relevant code.</span></span> <span data-ttu-id="f05f9-125">Wenn die **CommandType** -Eigenschaft den Typ des Befehls in der **CommandText** -Eigenschaft nicht übereinstimmt, tritt ein Fehler beim Aufrufen der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode.</span><span class="sxs-lookup"><span data-stu-id="f05f9-125">If the **CommandType** property does not match the type of command in the **CommandText** property, an error occurs when you call the [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) method.</span></span>
+>>>>>>> <span data-ttu-id="f05f9-126">master</span><span class="sxs-lookup"><span data-stu-id="f05f9-126">master</span></span>
 

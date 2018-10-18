@@ -1,24 +1,18 @@
 ---
-title: Seek-Methode und Index-Eigenschaft (Beispiel) (VB)
-TOCTitle: Seek Method and Index Property Example (VB)
-ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15)
-ms:contentKeyID: 48547577
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: c5a3c50a94202b170534fbac23b035bec2b98c0d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472825"
+<span data-ttu-id="94710-101"><<<<<<< HEAD-Titel: Seek-Methode und Index-Eigenschaft Beispiel) (VB) TOCTitle: Seek-Methode und Index-Eigenschaft Beispiel) (VB) === Titel: Seek-Methode und Index-Eigenschaft (Beispiel) (VB) TOCTitle: Seek-Methode und Index-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="94710-101"><<<<<<< HEAD title: Seek Method and Index Property Example (VB) TOCTitle: Seek Method and Index Property Example (VB) ======= title: Seek Method and Index property example (VB) TOCTitle: Seek Method and Index property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="94710-102">Master Ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15) Ms:contentKeyID: 48547577 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="94710-102">master ms:assetid: c3ddb72c-2b19-53c8-9779-2c503486e44e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249957(v=office.15) ms:contentKeyID: 48547577 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="e598b-102">Seek-Methode und Index-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="e598b-102">Seek Method and Index Property Example (VB)</span></span>
+
+<span data-ttu-id="94710-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="94710-103"><<<<<<< HEAD</span></span>
+# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="94710-104">Seek-Methode und Index-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="94710-104">Seek Method and Index Property Example (VB)</span></span>
+=======
+# <a name="seek-method-and-index-property-example-vb"></a><span data-ttu-id="94710-105">Seek-Methode und Index Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="94710-105">Seek Method and Index property example (VB)</span></span>
+>>>>>>> <span data-ttu-id="94710-106">master</span><span class="sxs-lookup"><span data-stu-id="94710-106">master</span></span>
 
 
-<span data-ttu-id="e598b-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="e598b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="94710-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="94710-107">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="e598b-104">In diesem Beispiel werden die Seek-Methode und die Index-Eigenschaft des Recordset-Objekts gemeinsam mit einer angegebenen Employee ID verwendet, um den Namen des Mitarbeiters in der Employees-Tabelle der Datenbank Nwind.mdb zu suchen.</span><span class="sxs-lookup"><span data-stu-id="e598b-104">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
+<span data-ttu-id="94710-108">In diesem Beispiel werden die Seek-Methode und die Index-Eigenschaft des Recordset-Objekts gemeinsam mit einer angegebenen Employee ID verwendet, um den Namen des Mitarbeiters in der Employees-Tabelle der Datenbank Nwind.mdb zu suchen.</span><span class="sxs-lookup"><span data-stu-id="94710-108">This example uses the [Recordset](recordset-object-ado.md) object's [Seek](seek-method-ado.md) method and [Index](index-property-ado.md) property in conjunction with a given ***Employee ID***, to locate the employee's name in the ***Employees*** table of the Nwind.mdb database.</span></span>
 
 ```vb 
  

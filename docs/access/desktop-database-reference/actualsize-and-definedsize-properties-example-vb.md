@@ -1,24 +1,18 @@
 ---
-title: ActualSize- und DefinedSize-Eigenschaft (Beispiel) (VB)
-TOCTitle: ActualSize and DefinedSize Properties Example (VB)
-ms:assetid: fc268c63-c4b3-f633-1efb-aaf88354efd4
-ms:mtpsurl: https://msdn.microsoft.com/library/JJ250291(v=office.15)
-ms:contentKeyID: 48548884
-ms.date: 09/18/2015
-mtps_version: v=office.15
-ms.openlocfilehash: 4c3d06a5937ed58843271aa2787d5a6f861f981c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
-ms.translationtype: MT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474779"
+<span data-ttu-id="e5f86-101"><<<<<<< HEAD-Titel: ActualSize- und DefinedSize Eigenschaften Beispiel) (VB) TOCTitle: ActualSize- und DefinedSize Eigenschaften Beispiel) (VB) Ms:assetid: fc268c63-c4b3-f633-1efb-aaf88354efd4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250291(v=office.15) Ms:contentKeyID: 48548884 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="e5f86-101"><<<<<<< HEAD title: ActualSize and DefinedSize Properties Example (VB) TOCTitle: ActualSize and DefinedSize Properties Example (VB) ms:assetid: fc268c63-c4b3-f633-1efb-aaf88354efd4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250291(v=office.15) ms:contentKeyID: 48548884 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
 ---
-# <a name="actualsize-and-definedsize-properties-example-vb"></a><span data-ttu-id="fe7cb-102">ActualSize- und DefinedSize-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="fe7cb-102">ActualSize and DefinedSize Properties Example (VB)</span></span>
+
+# <a name="actualsize-and-definedsize-properties-example-vb"></a><span data-ttu-id="e5f86-102">ActualSize- und DefinedSize-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="e5f86-102">ActualSize and DefinedSize Properties Example (VB)</span></span>
+<span data-ttu-id="e5f86-103">=== Titel: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (VB) TOCTitle: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (VB) Ms:assetid: fc268c63-c4b3-f633-1efb-aaf88354efd4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250291(v=office.15) Ms:contentKeyID: 48548884 ms.date: 10/16/2018 Mtps _version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="e5f86-103">======= title: ActualSize and DefinedSize properties example (VB) TOCTitle: ActualSize and DefinedSize properties example (VB) ms:assetid: fc268c63-c4b3-f633-1efb-aaf88354efd4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250291(v=office.15) ms:contentKeyID: 48548884 ms.date: 10/16/2018 mtps_version: v=office.15</span></span>
+---
+
+# <a name="actualsize-and-definedsize-properties-example-vb"></a><span data-ttu-id="e5f86-104">ActualSize- und DefinedSize-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="e5f86-104">ActualSize and DefinedSize properties example (VB)</span></span>
+>>>>>>> <span data-ttu-id="e5f86-105">master</span><span class="sxs-lookup"><span data-stu-id="e5f86-105">master</span></span>
 
 
-<span data-ttu-id="fe7cb-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="fe7cb-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="e5f86-106">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="e5f86-106">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="fe7cb-104">In diesem Beispiel werden mit den Eigenschaften [ActualSize](actualsize-property-ado.md) und [DefinedSize](definedsize-property-ado.md) die definierte Größe und die tatsächliche Größe eines Felds angezeigt.</span><span class="sxs-lookup"><span data-stu-id="fe7cb-104">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
+<span data-ttu-id="e5f86-107">In diesem Beispiel werden mit den Eigenschaften [ActualSize](actualsize-property-ado.md) und [DefinedSize](definedsize-property-ado.md) die definierte Größe und die tatsächliche Größe eines Felds angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e5f86-107">This example uses the [ActualSize](actualsize-property-ado.md) and [DefinedSize](definedsize-property-ado.md) properties to display the defined size and actual size of a field.</span></span>
 
 ```vb 
  
