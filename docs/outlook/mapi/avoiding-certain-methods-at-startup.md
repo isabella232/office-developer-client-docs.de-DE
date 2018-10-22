@@ -7,10 +7,10 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 7bb86fc8-d1ae-4937-9919-86c3a0f5651d
-description: 'Letzte �nderung: Montag, 7. Dezember 2015'
+description: 'Zuletzt geändert: 07. Dezember 2015'
 ms.openlocfilehash: 5d26583ad7ad3b4a200daf321a8994e302b75a79
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22580635"
@@ -19,9 +19,9 @@ ms.locfileid: "22580635"
 
  
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Zum Verbessern der Leistung beim Starten von vermeiden Sie die folgenden Anrufe:
+Zur Verbesserung der Leistung beim Starte vermeiden Sie die folgenden Aufrufe:
   
 - [IMAPISession::EnumAdrTypes](imapisession-enumadrtypes.md)
     
@@ -33,8 +33,8 @@ Zum Verbessern der Leistung beim Starten von vermeiden Sie die folgenden Anrufe:
     
 - [IMAPIStatus::ValidateState](imapistatus-validatestate.md)
     
-Der Aufruf von **IMAPIStatus::ValidateState** wirkt sich auf die Leistung nur, wenn für die MAPI-Warteschlange oder des MAPI-Subsystems vorgenommen. Der Grund dafür, dass diese Methoden zum Starten des Verarbeitung verlangsamen besteht, da sie nicht erfüllen können, bis die MAPI-Warteschlange ihrer Aufgaben zum Starten des beendet wurde. 
+Der Aufruf von **IMAPIStatus::ValidateState** wirkt sich nur dann auf die Leistung aus, wenn er entweder im MAPI-Spooler oder im MAPI-Untersystem vorgenommen wird. Der Grund dafür, warum diese Methoden den Systemstartvorgang verlangsamen, liegt darin, dass sie erst abgeschlossen werden können, wenn der MAPI-Spooler seine Startaufgaben abgeschlossen hat. 
   
-Zudem sollten Sie Suchen des Nachrichtenspeichers beim Starten. Stellen Sie den Anruf [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md) beim Start Verarbeitung beendet wurde. 
+Sie sollten beim Systemstart auch nicht den Nachrichtenspeicher durchsuchen. Tätigen Sie den [IMAPIContainer::SetSearchCriteria](imapicontainer-setsearchcriteria.md)-Aufruf, wenn der Startvorgang abgeschlossen ist. 
   
 
