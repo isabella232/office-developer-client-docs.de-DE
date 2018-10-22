@@ -6,12 +6,12 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 77425a61-bf33-b3d8-442a-caee48e54a48
 description: Das Sicherheitsmodell von Microsoft InfoPath basiert auf dem von Internet Explorer implementierten Sicherheitsmodell. Das Sicherheitsmodell von Internet Explorer schützt Ihren Computer mithilfe von Sicherheitszonen und -stufen vor unsicheren Vorgängen. Zusammen mit dem Sicherheitsmodell von Internet Explorer bietet InfoPath zwei Formularbereitstellungsarten, die die Funktionsweise eines InfoPath-Formulars innerhalb dieses Sicherheitsmodells beeinflussen.
-ms.openlocfilehash: dc155e2c2962e2cca2b4465e5a9632f92488cef9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 00b0e306507db19f55059fba91277af1ad1714b9
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790715"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25387419"
 ---
 # <a name="additional-infopath-form-security-concepts"></a>Weitere Konzepte zur InfoPath-Formularsicherheit
 
@@ -25,7 +25,7 @@ In Verbindung mit diesen beiden Methoden der Formularbereitstellung weist jede M
   
 ## <a name="understanding-infopath-integration-with-the-internet-explorer-security-model"></a>Grundlegendes zur InfoPath-Integration in das Sicherheitsmodell von Internet Explorer
 
-Internet Explorer implementiert Sicherheitszonen, mit denen Sie die Zugriffsebene steuern, die Ihrem Computer von Webseiten gewährt wird, die Sie öffnen. InfoPath verwendet einige dieser Zonen, um die Zugriffsebene zu bestimmen, die Formulare auf die Ressourcen auf Ihrem Computer erhalten. Standardmäßig werden InfoPath-Formulare an einem zwischengespeicherten Speicherort ausgeführt, dem der Zugriff auf kritische Systemressourcen verweigert wird. Formulare, denen Vollzugriff auf Systemressourcen gewährt wird, werden als voll vertrauenswürdige Formulare bezeichnet. Voll vertrauenswürdige Formulare werden in der Regel über ein Installationsprogramm oder Skript installiert und registriert, oder sie sind digital signiert, damit ihnen eine höhere Berechtigungsstufe erteilt werden kann.
+Internet Explorer implementiert Sicherheitszonen, mit denen Sie die Zugriffsebene für Ihren Computer durch die von Ihnen geöffneten Webseiten steuern können. InfoPath bestimmt mithilfe einiger dieser Zonen die Zugriffsebene, die Formulare für die Ressourcen auf Ihrem Computer erhalten. Standardmäßig werden InfoPath-Formulare in einem zwischengespeicherten Speicherort ausgeführt, dem der Zugriff auf wichtige Systemressourcen verweigert wird. Formulare mit Vollzugriff auf Systemressourcen werden als voll vertrauenswürdige Formulare bezeichnet. Voll vertrauenswürdige Formulare werden gewöhnlich mithilfe eines Installationsprogramms oder Skripts installiert und registriert, oder sie sind digital signiert, sodass ihnen eine höhere Berechtigungsstufe erteilt werden kann.
   
 Zwischengespeicherte InfoPath-Formulare werden durch die URL oder den URN identifiziert, die in der Formulardefinitionsdatei (XSF) des Formulars angegeben sind. Die Art der verwendeten Identifikation und die Domäne (Standort), von der aus die Formularvorlage geöffnet wird, bestimmen die Internet Explorer-Sicherheitszonenberechtigungen, die das Formular erbt. Durch eine URL identifizierte Formulare werden auf dem Computer des Benutzers zwischengespeichert, was die Offlineverwendung des Formulars ermöglicht. Diese URL-basierten Formulare erben Sicherheitsberechtigungen und spezielle Zugriffsrechte, z. B. domänenübergreifenden Zugriff, aus den Internet Explorer-Sicherheitseinstellungen für den ursprünglichen Speicherort der Formularvorlage. Auf einem Webserver oder einem Server mit SharePoint Foundation gespeicherte Formularvorlagen werden, abhängig von der Domäne des Servers, in der Internetzone oder der lokalen Intranetzone ausgeführt. Dagegen erben installierte Formulare, die durch einen URN identifiziert werden, die Berechtigungen von der Zone „Lokaler Computer“, die eine Berechtigungsstufe ähnlich der für HTML-Anwendungsdateien (.hta) gewährt.
   
@@ -90,9 +90,9 @@ Das Sicherheitsmodell von Internet Explorer, auf dem Microsoft InfoPath basiert,
   
 Für den Schutz vor der Verwendung von InfoPath-Objektmodellmembern mit böswilligen Absichten implementiert das InfoPath-Objektmodell drei Sicherheitsstufen, die bestimmen, wie und wo ein bestimmtes Objektmodellmember verwendet werden kann. Im InfoPath-Objektmodell gibt es drei Sicherheitsstufen:
   
-- **0** Objektmodellmember, auf die ohne Einschränkungen zugegriffen werden kann. Diese Objektmodellmember sind sicher, weshalb uneingeschränkt darauf zugegriffen werden kann. 
+- **0** Objektmodellmember, auf die uneingeschränkt zugegriffen werden kann. Diese Objektmodellmember sind sicher, weshalb uneingeschränkt darauf zugegriffen werden kann. 
     
-- **2** Objektmodellmember, auf die nur über Formulare zugegriffen werden kann, die in derselben Domäne wie das aktuell geöffnete Formular ausgeführt werden, oder über Formulare, denen Berechtigungen für den domänenübergreifenden Datenzugriff erteilt wurden. Eingeschränkte Formularvorlagen, die Objektmodellmethoden der Sicherheitsstufe 2 aufrufen, sind nur erfolgreich, wenn sie auf in der Formularvorlage selbst enthaltene Ressourcen zugreifen. 
+- 2 Objektmodellmember, auf die nur über Formulare zugegriffen werden kann, die in derselben Domäne wie das zurzeit geöffnete Formular ausgeführt werden, oder über Formulare, denen Berechtigungen für den domänenübergreifende Datenzugriff erteilt wurden. Eingeschränkte Formularvorlagen, die Objektmodellmethoden der Sicherheitsstufe 2 aufrufen, sind nur erfolgreich, wenn auf in der Formularvorlage selbst enthaltene Ressourcen zugegriffen wird. 
     
 - **3** Objektmodellmember, auf die nur über voll vertrauenswürdige Formulare zugegriffen werden kann. 
     
@@ -138,7 +138,7 @@ Sie konfigurieren die Verwendung digitaler Signaturen in einem Formular, indem S
     
 - Mit dem InfoPath-Objektmodell können Sie dem Signaturblock in einem voll vertrauenswürdigen Formular programmgesteuert benutzerdefinierte Informationen hinzufügen.
     
-- Sie können die Sicherheit digitaler Signaturen durch Erfassen und Einbinden zusätzlicher Informationen, z. B. eines Zeitstempels, als Nichtabstreitbarkeitsnachweis verbessern. Da der zusätzliche Nachweis Bestandteil der Signatur ist, kann er nicht entfernt werden, ohne dass die Signatur ungültig wird. Diese Daten können jederzeit erneut aufgerufen oder analysiert werden, indem Sie im Formular auf eine digitale Signatur klicken, oder indem Sie in der im Dialogfeld **Digitale Signatur** angezeigten Liste der digitalen Signaturen eine digitale Signatur auswählen. 
+- Die Sicherheit digitaler Signaturen können Sie durch die Erfassung und Einbindung zusätzlicher Informationen (wie z. B. einen Zeitstempel) als Nichtabstreitbarkeitsnachweis optimieren. Da der zusätzliche Nachweis Bestandteil der Signatur ist, kann er nicht entfernt werden, ohne dass die Signatur ungültig wird. Diese Daten können jederzeit erneut aufgerufen oder analysiert werden, indem Sie im Formular auf eine digitale Signatur klicken, oder indem Sie in der im Dialogfeld **Digitale Signatur** angezeigten Liste der digitalen Signaturen eine digitale Signatur auswählen. 
     
 -  Sie können eine Signatur im Dokument einfügen und anzeigen sowie das Formular so anzeigen, wie es jeder signierenden Person vorgelegt wurde. 
     
@@ -179,6 +179,6 @@ Sie aktivieren oder deaktivieren das Zusammenführen von Formularen mithilfe des
 
 Sie können das Feature zum Senden von Formularen deaktivieren, um Benutzer am Senden von Formularen zu hindern.
   
-Sie aktivieren oder deaktivieren das Senden von Formularen mithilfe des Dialogfelds **Absendeoptionen**, das durch Klicken auf **Absendeoptionen** im Registerkartenmenü **Daten** im Entwurfsmodus verfügbar ist. Wenn das Senden von Formularen deaktiviert ist, können Benutzer beim Ausfüllen eines Formulars nicht auf der Registerkarte **Start** auf **Absenden** klicken. 
+Das Senden von Formularen können Sie im Dialogfeld **Absendeoptionen ** aktivieren bzw. deaktivieren. Dieses Dialogfeld wird angezeigt, wenn Sie im Entwurfsmodus auf der Registerkarte **Daten** auf **Absendeoptionen** klicken. Wenn das Senden von Formularen deaktiviert ist, können Benutzer beim Ausfüllen eines Formulars nicht auf der Registerkarte **Start** auf **Absenden** klicken. 
   
 

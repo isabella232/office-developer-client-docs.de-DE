@@ -7,12 +7,12 @@ ms.topic: overview
 localization_priority: Normal
 ms.assetid: db4dbb71-1b22-4dfd-bc07-5f7d694fc038
 description: Informationen zum Filtern einer Ansicht in einer Access-App mithilfe der Makroaktion „ErneutAbfragenDatensätze“ und eines Datenmakros.
-ms.openlocfilehash: 9cd8c74b3949a0bb496798df663b1b42fb2868d9
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 7ce65ef0c04fe91334d00649810c608cdab2f310
+ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790244"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "25390408"
 ---
 # <a name="filter-a-view-by-using-a-macro-in-an-access-app"></a>Filtern einer Ansicht mithilfe eines Makros in einer Access-App
 
@@ -32,7 +32,7 @@ Zum Ausführen der Schritte in diesem Beispiel benötigen Sie Folgendes:
 - Eine SharePoint 2013-Entwicklungsumgebung
     
 > [!NOTE]
-> Weitere Informationen über das Einrichten Ihrer SharePoint-Entwicklungsumgebung finden Sie unter [Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint 2013](http://msdn.microsoft.com/library/08e4e4e1-d960-43fa-85df-f3c279ed6927%28Office.15%29.aspx). >  Weitere Informationen über das Abrufen von Access 2013 und SharePoint 2013 finden Sie unter [Downloads](http://msdn.microsoft.com/de-DE/office/apps/fp123627). 
+> Weitere Informationen über das Einrichten Ihrer SharePoint-Entwicklungsumgebung finden Sie unter [Einrichten einer allgemeinen Entwicklungsumgebung für SharePoint 2013](https://msdn.microsoft.com/library/08e4e4e1-d960-43fa-85df-f3c279ed6927%28Office.15%29.aspx). Weitere Informationen über das Abrufen von Access 2013 und SharePoint 2013 finden Sie unter [Downloads](https://msdn.microsoft.com/office/apps/fp123627). 
   
 ## <a name="create-the-app"></a>Erstellen der App
 <a name="Access2013FilterViewByUsingMacro_CreateApp"> </a>
@@ -269,6 +269,6 @@ Sie können die Makroaktion **ErneutAbfragenDatensätze** in einem Benutzeroberf
   
 ## <a name="see-also"></a>Siehe auch
 
-- [Neuigkeiten für Access 2013-Entwickler](http://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx)
+- [Neuigkeiten für Access 2013-Entwickler](https://msdn.microsoft.com/library/df778f51-d65e-4c30-b618-65003ceb39b3%28Office.15%29.aspx)
     
 
