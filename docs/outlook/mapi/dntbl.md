@@ -7,10 +7,10 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 77835b48-43aa-8518-9712-754e84f1e713
-description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
+description: 'Letzte Änderung: 05. Juli 2012'
 ms.openlocfilehash: 4716a6f42968d7451a5db36173c4e6a9e843c08e
 ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/04/2018
 ms.locfileid: "25398122"
@@ -19,7 +19,7 @@ ms.locfileid: "25398122"
  
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen für das Herunterladen von den Inhalt eines Ordners auf dem Server während der [Tabelle Downloadstatus](download-table-state.md), als Teil einer vollständigen Synchronisierung für Inhalt in einem Speicher.
+Informationen zum Herunterladen der Inhalte eines Ordners vom Server während des [Download-Tabellenzustands](download-table-state.md) als Teil einer vollständigen Synchronisierung für Inhalte in einem Speicher.
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -51,75 +51,75 @@ struct DNTBL
 
 _ulFlags_
   
-> [in] Flags Ändern des Verhaltens 
+> [in] Flags, die Verhalten ändern. 
     
   - DNT_OK
     
-    - [in] Download war erfolgreich. Der Client legt dies nach dem Herunterladen von Informationen vom Server.
+    - [in] Download war erfolgreich. Der Client legt dies nach dem Herunterladen von Informationen vom Server fest.
     
 _pstmReserved1_
   
-> [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pstmReserved2_
   
-> [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pstmReserved3_
   
-> [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pstmReserved4_
   
-> [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pxicc_
   
->  [out] Zeiger auf die **IExchangeImportContentsChanges** Inhalt-Schnittstelle unterstützt, Herunterladen von Änderungen. Weitere Informationen zu **IExchangeImportContentsChanges**finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+>  [out] Verweis auf die **IExchangeImportContentsChanges**-Inhaltsschnittstelle, die das Herunterladen von Änderungen unterstützt. Weitere Informationen zu **IExchangeImportContentsChanges** finden Sie unter [ICS-Auswertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
     
 _pxihc_
   
->  [out] Zeiger auf die **IExchangeImportHierarchyChanges** Hierarchie-Schnittstelle unterstützt, die Hierarchie inkrementelle Änderungen herunterladen. Weitere Informationen zu **IExchangeImportHierarchyChanges**finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+>  [out] Verweis auf die **IExchangeImportHierarchyChanges**-Hierarchieschnittstelle, die das Herunterladen von inkrementellen Hierarchieänderungen unterstützt. Weitere Informationen zu **IExchangeImportHierarchyChanges** finden Sie unter [ICS-Auswertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
     
 _pszName_
   
->  [out] Name des Ordners. 
+>  [out] Der Name des Ordners. 
     
 _ftLastMod_
   
->  [out] Zeitpunkt der letzten Änderung des Ordners. 
+>  [out] Uhrzeit der letzten Änderung des Ordners. 
     
 _ulRights_
   
->  [out] Der Wert der Eigenschaft **[PR_RIGHTS](https://msdn.microsoft.com/library/ee238052%28v=EXCHG.80%29.aspx)** des Ordners. 
+>  [out] Der Wert der **[PR_RIGHTS](https://msdn.microsoft.com/library/ee238052%28v=EXCHG.80%29.aspx)**-Eigenschaft des Ordners. 
     
 _feid_
   
->  [out] Die EntryID des Ordners. 
+>  [out] Eintrags-ID des Ordners. 
     
 _uintReserved_
   
->  [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _rgte_
   
-> [out] Änderungen für normalen (oder nicht ausgeblendeten) und zugeordneten (oder ausgeblendet) Elemente.  *Rgte [0]* ist für normale Elemente und *Rgte [1]* ist für verknüpfte Objekte. Outlook wird dieser Member während des Herunterladens, wenn Sie inkrementelle Änderung Synchronisierung (ICS) verwenden. Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+> [out] Änderungen für normale (oder nicht ausgeblendet) und verknüpfte (oder ausgeblendeten) Elemente.  *rgte[0]*  ist für normale Elemente, *rgte[1]* ist für verknüpfte Elemente. Outlook füllt dieses Element während des Herunterladens bei Verwendung von Incremental Change Synchronization (ICS) auf. Weitere Informationen zu ICS finden Sie unter [ICS-Auswertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
     
 _lpsrReserved_
   
->  [in] / [out] dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [in]/[out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _boReserved_
   
->  [in] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [in] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pReserved1_
   
->  [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pReserved2_
   
->  [in] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+>  [in] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 ## <a name="see-also"></a>Siehe auch
 

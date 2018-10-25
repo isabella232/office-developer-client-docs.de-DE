@@ -7,10 +7,10 @@ ms.topic: reference
 ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 3953dc9d-0146-3689-63f0-c6ba78566b8b
-description: 'Letzte �nderung: Donnerstag, 5. Juli 2012'
+description: 'Letzte Änderung: 05. Juli 2012'
 ms.openlocfilehash: 06f30b4856fc10127aec99975652e28a5e8dda30
 ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/04/2018
 ms.locfileid: "25389085"
@@ -19,7 +19,7 @@ ms.locfileid: "25389085"
 
 **Gilt für**: Outlook 2013 | Outlook 2016 
   
-Informationen für das Herunterladen einer Hierarchie vom Server während der [Hierarchie Zustand herunterladen](download-hierarchy-state.md), die Teil einer vollständigen hierarchiesynchronisierung ist. Dieser Download Prozess verwendet Microsoft Exchange inkrementelle Änderung Synchronisierung (ICS). Weitere Informationen zu ICS finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+Informationen zum Herunterladen einer Hierarchie vom Server während des [Zustands „Downloadhierarchie](download-hierarchy-state.md), der Teil einer vollständigen Hierarchiesynchronisierung ist. Bei diesem Downloadvorgang wird Microsoft Exchange Incremental Change Synchronization (ICS) verwendet. Weitere Informationen zu ICS finden Sie unter [ICS-Auswertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
   
 ## <a name="quick-info"></a>QuickInfo
 
@@ -39,31 +39,31 @@ struct DNHIER
 
 _ulFlags_
   
->  [in] Kennzeichen, die um das entsprechende Verhalten während des Downloads zu bestimmen. 
+>  [in] Flags, um das entsprechende Verhalten während des Downloads zu ermitteln. 
     
    - DNH_OK
     
-   - [in] Download war erfolgreich. Der Client legt dies nach dem Herunterladen von Informationen vom Server.
+   - [in] Download war erfolgreich. Der Client legt dies nach dem Herunterladen von Informationen vom Server fest.
     
 _pstmReserved_
   
-> [out] Dieser Member wird für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
+> [out] Dieses Element ist für die interne Verwendung von Outlook reserviert und wird nicht unterstützt. 
     
 _pxihc_
   
->  [out] Zeiger auf die **IExchangeImportHierarchyChanges** Hierarchie-Schnittstelle unterstützt, die Hierarchie inkrementelle Änderungen herunterladen. Weitere Informationen zu **IExchangeImportHierarchyChanges**finden Sie unter [ICS Bewertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
+>  [out] Verweis auf die **IExchangeImportHierarchyChanges**-Hierarchieschnittstelle, die das Herunterladen von inkrementelle Hierarchieänderungen unterstützt. Weitere Informationen zu **IExchangeImportHierarchyChanges** finden Sie unter [ICS-Auswertungskriterien](https://msdn.microsoft.com/library/aa579252%28EXCHG.80%29.aspx).
     
 _cEntNew_
   
-> [out] Anzahl der Ordner auf dem lokalen Speicher hinzugefügt. Outlook wird dieser Wert während des Herunterladens, bei Verwendung von ICS aufgefüllt.
+> [out] Die Anzahl von Ordnern, die dem lokalen Speicher hinzugefügt wurden. Outlook füllt diesen Wert während des Herunterladens bei Verwendung von ICS aus.
     
 _cEntMod_
   
-> [out] Anzahl der Ordner auf dem lokalen Speicher geändert werden. Outlook wird dieser Wert während des Herunterladens, bei Verwendung von ICS aufgefüllt.
+> [out] Die Anzahl von Ordnern, die dem lokalen Speicher geändert werden sollen. Outlook füllt diesen Wert während des Herunterladens bei Verwendung von ICS aus.
     
 _cEntDel_
   
-> [out] Anzahl der Ordner auf dem lokalen Speicher gelöscht werden soll. Outlook wird dieser Wert während des Herunterladens, bei Verwendung von ICS aufgefüllt.
+> [out] Die Anzahl von Ordnern, die im lokalen Speicher gelöscht werden sollen. Outlook füllt diesen Wert während des Herunterladens bei Verwendung von ICS aus.
     
 ## <a name="see-also"></a>Siehe auch
 

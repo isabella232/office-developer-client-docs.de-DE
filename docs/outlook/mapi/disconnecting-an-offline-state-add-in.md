@@ -5,27 +5,27 @@ ms.date: 12/07/2015
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 6922cb38-a9e3-e4a9-d4a3-e11b81fc77e2
-description: 'Letzte �nderung: Montag, 7. Dezember 2015'
+description: 'Zuletzt geändert: 07. Dezember 2015'
 ms.openlocfilehash: ce25c6777c8a71da0fe11e0bbf34eefafe2ca50d
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22564136"
 ---
 # <a name="disconnecting-an-offline-state-add-in"></a>Trennen eines Offlinestatus-Add-Ins
 
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wenn das Add-in offline-Status getrennt ist, müssen Sie implementieren Funktionen zum ordnungsgemäß beendet und bereinigen Sie das Add-in. Weitere Informationen zum Einrichten und im Offlinemodus state-add-in zum Überwachen von Änderungen am Status von Verbindung finden Sie unter [Einstellung von einer Offline-Status-Add-in](setting-up-an-offline-state-add-in.md) und [Monitoring Verbindung Zustand Änderungen mithilfe einer Offline-Status-Add-in](monitoring-connection-state-changes-using-an-offline-state-add-in.md).
+Wenn das Offlinestatus-Add-In getrennt wird, müssen Sie Funktionen implementieren, um das Add-In ordnungsgemäß zu beenden und zu bereinigen. Weitere Informationen zum Einrichten und Verwenden des Offlinestatus-Add-Ins finden Sie unter [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md) und [Überwachen von Verbindungsstatusänderungen mit einem Offlinestatus-Add-In](monitoring-connection-state-changes-using-an-offline-state-add-in.md).
   
-In diesem Thema, diese Trennung beenden und Bereinigungscode Funktionen werden mithilfe von Offline-Status Beispiel-Add-in Codebeispielen veranschaulicht. Das Beispiel Offline Zustand-Add-in ist ein COM-add-in, Outlook eine **Offline-Status** -Menü hinzugefügt und State-API verwendet. Über das Menü Offline-Status können Sie aktivieren oder Deaktivieren der Status der Überwachung, überprüfen Sie den aktuellen Status und ändern den aktuellen Status. Weitere Informationen zum Herunterladen und Installieren der Offline-Status Beispiel-Add-Ins finden Sie unter [Installieren der Offline-Status Beispiel-Add-Ins](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Status-API finden Sie unter [Über die Offline Zustand-API](about-the-offline-state-api.md).
+In diesem Thema werden diese Funktionen zum Trennen, Beenden und Bereinigen anhand von Codebeispielen aus dem Offlinestatus-Add-In-Beispiel veranschaulicht. Das Offlinestatus-Add-In-Beispiel ist ein COM-Add-In, das ein **Offlinestatus**-Menü zu Outlook hinzufügt und die Offlinestatus-API verwendet. Über das Menü „Offlinestatus“ können Sie die Statusüberwachung aktivieren oder deaktivieren, den aktuellen Status überprüfen und den aktuellen Status ändern. Weitere Informationen zum Herunterladen und Installieren des Offlinestatus-Add-In-Beispiels finden Sie unter [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md). Weitere Informationen zur Offlinestatus-API finden Sie unter [Informationen zur Offlinestatus-API](about-the-offline-state-api.md).
   
-## <a name="on-disconnection-routine"></a>Klicken Sie auf Trennen von Routine
+## <a name="on-disconnection-routine"></a>Informationen zur Trennungsroutine
 
-Die **IDTExtensibility2.OnDisconnection** -Methode wird aufgerufen, wenn das Add-in Offline-Status entladen wird. Implementieren Sie Bereinigung von Code in dieser Funktion. Im folgenden Beispiel wird die Funktion **IDTExtensibility2.OnDisconnection** Ruft die `HrTermAddin` Funktion. 
+Die **IDTExtensibility2.OnDisconnection**-Methode wird aufgerufen, wenn das Offlinestatus-Add-In entladen wird. In diese Funktion sollte ein Bereinigungscode implementiert werden. Im folgenden Beispiel ruft die **IDTExtensibility2.OnDisconnection**-Funktion die `HrTermAddin`-Funktion auf. 
   
-### <a name="cmyaddinondisconnection-example"></a>CMyAddin::OnDisconnection()-Beispiel
+### <a name="cmyaddinondisconnection-example"></a>Beispiel für CMyAddin::OnDisconnection()
 
 ```cpp
 STDMETHODIMP CMyAddin::OnDisconnection(ext_DisconnectMode /*RemoveMode*/, SAFEARRAY * * /*custom*/) 
@@ -37,11 +37,11 @@ STDMETHODIMP CMyAddin::OnDisconnection(ext_DisconnectMode /*RemoveMode*/, SAFEAR
 }
 ```
 
-## <a name="terminate-add-in-function"></a>Beenden Sie die Add-in-Funktion
+## <a name="terminate-add-in-function"></a>Add-In-Funktion zum Beenden
 
-Die `HrTermAddin` Funktionsaufrufe der `inDeInitMonitor`, `HrRemoveMenuItems`, und `UnloadLibraries` Funktionen zum Bereinigen des Status Offline-Add-Ins Fertig stellen. 
+Die `HrTermAddin`-Funktion ruft die Funktionen `inDeInitMonitor`, `HrRemoveMenuItems` und `UnloadLibraries` auf, um das Bereinigen des Offlinestatus-Add-Ins zu beenden. 
   
-### <a name="cmyaddinhrtermaddin-example"></a>CMyAddin::HrTermAddin()-Beispiel
+### <a name="cmyaddinhrtermaddin-example"></a>Beispiel für CMyAddin::HrTermAddin()
 
 ```cpp
 HRESULT CMyAddin::HrTermAddin() 
@@ -54,11 +54,11 @@ HRESULT CMyAddin::HrTermAddin()
 }
 ```
 
-## <a name="deinitialize-monitor-routine"></a>Monitor Routine deinitialize
+## <a name="deinitialize-monitor-routine"></a>Routine zum Aufheben der Initialisierung der Überwachung
 
-Die `inDeInitMonitor` Funktion ruft die [IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md) -Funktion, um die Rückrufe für das offline-Objekt abzubrechen. 
+Die `inDeInitMonitor`-Funktion ruft die [IMAPIOfflineMgr::Unadvise](imapiofflinemgr-unadvise.md)-Funktion auf, um die Rückrufe für das Offlineprojekt abzubrechen. 
   
-### <a name="deinitmonitor-example"></a>DeInitMonitor()-Beispiel
+### <a name="deinitmonitor-example"></a>Beispiel für DeInitMonitor()
 
 ```cpp
 void DeInitMonitor() 
@@ -75,11 +75,11 @@ g_ulAdviseToken = NULL;
 }
 ```
 
-## <a name="remove-menu-items-routine"></a>Entfernen Sie im Menü Elemente Routine
+## <a name="remove-menu-items-routine"></a>Routine zum Entfernen von Menüelementen
 
-Die `HrRemoveMenuItems` Funktionsaufrufe `DispEventUnadvise` für jedes Menüelement im, zeigen Sie im Menü **Offline-Status** und löscht dann das Menü **Status als offline anzeigen** . 
+Die `HrRemoveMenuItems`-Funktion ruft `DispEventUnadvise` für jedes Menüelement im Menü **Offlinestatus** auf und löscht dann das Menü **Offlinestatus**. 
   
-### <a name="cmyaddinhrremovemenuitems-example"></a>CMyAddin::HrRemoveMenuItems()-Beispiel
+### <a name="cmyaddinhrremovemenuitems-example"></a>Beispiel für CMyAddin::HrRemoveMenuItems()
 
 ```cpp
 HRESULT CMyAddin::HrRemoveMenuItems() 
@@ -122,11 +122,11 @@ HRESULT CMyAddin::HrRemoveMenuItems()
 }
 ```
 
-## <a name="unload-libraries-routine"></a>Unload Bibliotheken Routine
+## <a name="unload-libraries-routine"></a>Routine zum Entladen von Bibliotheken
 
-Wenn das Add-In entladen aus Outlook, wird die `UnloadLibraries` Funktion entlädt das Dynamic Link Libraries (DLLs), die für das Add-in erforderlich. 
+Wenn das Add-in von Outlook entladen wird, entlädt die `UnloadLibraries`-Funktion entfernt die DLL-Dateien (Dynamic Link Libraries), die für das Add-In erforderlich sind. 
   
-### <a name="unloadlibraries-example"></a>UnloadLibraries()-Beispiel
+### <a name="unloadlibraries-example"></a>Beispiel für UnloadLibraries()
 
 ```cpp
 void UnloadLibraries() 
@@ -145,7 +145,7 @@ void UnloadLibraries()
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Informationen zu der Offlinestatus-API](about-the-offline-state-api.md)
+- [Informationen zur Offlinestatus-API](about-the-offline-state-api.md)
 - [Installieren des Offlinestatus-Add-In-Beispiels](installing-the-sample-offline-state-add-in.md)
 - [Informationen zum Offlinestatus-Add-In-Beispiel](about-the-sample-offline-state-add-in.md)
 - [Einrichten eines Offlinestatus-Add-Ins](setting-up-an-offline-state-add-in.md)
