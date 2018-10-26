@@ -1,33 +1,33 @@
 ---
-title: Informationen zu benannten von Outlook verwendete Eigenschaften
+title: Informationen zu benannten Eigenschaften in Outlook
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 8c245ec2-bb18-ecf0-b4ad-8c164c5924cf
-description: 'Letzte �nderung: Montag, 25. Juni 2012'
+description: 'Letzte Änderung: Montag, 25. Juni 2012'
 ms.openlocfilehash: aa4d52d25f120e8b3e2a4c0dcaa4845ad576127a
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22566229"
 ---
-# <a name="about-named-properties-used-by-outlook"></a>Informationen zu benannten von Outlook verwendete Eigenschaften
+# <a name="about-named-properties-used-by-outlook"></a>Informationen zu benannten Eigenschaften in Outlook
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-MAPI bietet die M�glichkeit zum Zuweisen von Namen auf bestimmte Eigenschaften f�r die Zuordnung Managementsystems zu eindeutigen IDs und zum Beschleunigen des best�ndigen dieser Name-zu-Bezeichner zuordnen in allen Sitzungen. Benannte Eigenschaften werden durch einen Namen und einen global eindeutigen Bezeichner (GUID) f�r einen Eigenschaftensatz identifiziert. Der Name kann eine Zahl oder eine Zeichenfolge sein. F�r Microsoft Outlook 2013 oder Microsoft Outlook 2010 ist der Eigenschaftensatz oft einen Namespace definiert durch Outlook 2013 oder Outlook 2010 wie **PSETID_Appointment**. 
+MAPI bietet die Möglichkeit, Namen bestimmten Eigenschaften zuzuweisen, diese Namen eindeutigen IDs zuzuordnen und diese Namen-zu-ID-Zuordnung über Sitzungen hinweg Sitzungen dauerhaft zu machen. Benannte Eigenschaften werden durch einen Namen und einen global eindeutigen Bezeichner (GUID) für einen Eigenschaftensatz identifiziert. Der Name kann eine Zahl oder eine Zeichenfolge sein. Für Microsoft Outlook 2013 oder Microsoft Outlook 2010 ist der Eigenschaftensatz häufig ein Namespace, der von Outlook 2013 oder Outlook 2010 definiert wird, z. B. **PSETID_Appointment**. 
   
-Named properties are manipulated by using the [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) function and the [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md) function. The name and the property set GUID are passed to the [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md) function to obtain a property identifier that is valid for the current MAPI session. Because this property identifier can vary from computer to computer, the only consistent way to access a named property is to know its name and property set GUID. The range for identifiers is always in the 0x8000 and 0xFFFE range. 
+Benannte Eigenschaften werden mithilfe der [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)-Funktion und der [IMAPIProp::GetNamesFromIDs](imapiprop-getnamesfromids.md)-Funktion bearbeitet. Der Name und die GUID des Eigenschaftensatzes werden an die [IMAPIProp::GetIDsFromNames](imapiprop-getidsfromnames.md)-Funktion übergeben, um eine Eigenschaften-ID abzurufen, die für die aktuelle MAPI-Sitzung gültig ist. Da die Eigenschaften-ID von Computer zu Computer variieren kann, besteht die einzige konsistente Möglichkeit zum Zugreifen auf eine benannte Eigenschaft darin, dass sie deren Namen und GUID des Eigenschaftensatzes kennen. Der Bereich von IDs liegt immer zwischen 0x8000 and 0xFFFE. 
   
-Any object that implements the [IMAPIProp: IUnknown](imapipropiunknown.md) interface can support named properties. Specifically, a MAPI service provider or a MAPI client must implement [IMAPIProp::GetProps](imapiprop-getprops.md) to get values of named properties. Setting named properties used by Outlook 2013 or Outlook 2010 is not supported because of the risk of corrupting data that is shared with other MAPI providers or clients. 
+Jedes Objekt, das die [IMAPIProp : IUnknown](imapipropiunknown.md)-Schnittstelle implementiert, kann benannte Eigenschaften unterstützen. Insbesondere ein MAPI-Dienstanbieter oder ein MAPI-Client muss [IMAPIProp::GetProps](imapiprop-getprops.md) implementieren, um Werte von benannten Eigenschaften abzurufen. Das Festlegen von benannten Eigenschaften, die von Outlook 2013 oder Outlook 2010 verwendet werden, wird aufgrund des Risikos einer Beschädigung von Daten nicht unterstützt, die gemeinsam mit anderen MAPI-Anbietern oder -Clients verwendet werden. 
   
-Outlook 2013 and Outlook 2010 use MAPI named properties to implement many of their features, for example, attachment security and meeting counter-proposals. Above this underlying data, Outlook 2013 and Outlook 2010 expose some of these properties as item properties in their Outlook 2013 and Outlook 2010 object models. For example, the **Email1Address** property of the **ContactItem** object in the object model corresponds to the named [Kanonische PidLidEmail1EmailAddress-Eigenschaft](pidlidemail1emailaddress-canonical-property.md) in the **PSETID_Address** namespace. But in general, due to concerns for compatibility and data integrity, many of the MAPI properties that are used by Outlook 2013 and Outlook 2010 are not exposed in the object model. 
+Outlook 2013 und Outlook 2010 verwenden benannte Eigenschaften von MAPI, um viele ihrer Features zu implementieren, z. B. Anlagensicherheit und Gegenvorschläge zu Besprechungen. Auf diesen zugrunde liegenden Daten machen Outlook 2013 und Outlook 2010 einige dieser Eigenschaften als Elementeigenschaften in ihren Outlook 2013- und Outlook 2010-Objektmodellen verfügbar. Die **Email1Address**-Eigenschaft des **ContactItem**-Objekts im Objektmodell entspricht beispielsweise der benannten kanonischen Eigenschaft [PidLidEmail1EmailAddress](pidlidemail1emailaddress-canonical-property.md) im **PSETID_Address**-Namespace. Im Allgemeinen werden aber aufgrund von Bedenken bezüglich Kompatibilität und Datenintegrität viele der MAPI-Eigenschaften, die von Outlook 2013 und Outlook 2010 verwendet werden, nicht im Objektmodell verfügbar gemacht. 
   
-In dieser Referenz werden eine Reihe von benannten Eigenschaften die unten aufgef�hrten beschrieben.
+In dieser Referenz wird eine Reihe von benannten Eigenschaften beschrieben, die nachfolgend aufgeführt sind.
   
 Benannte Eigenschaften im Namespace **PSETID_Address** lauten wie folgt: 
   

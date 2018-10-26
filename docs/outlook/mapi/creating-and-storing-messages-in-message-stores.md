@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Speichern von Nachrichten in Nachrichtenspeicher
+title: Erstellen und Speichern von Nachrichten in Nachrichtenspeichern
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -7,45 +7,45 @@ localization_priority: Normal
 api_type:
 - COM
 ms.assetid: cc74b31c-d7ed-4fcf-9535-a2f9222901b7
-description: 'Letzte �nderung: Samstag, 23. Juli 2011'
+description: 'Letzte Änderung: Samstag, 23. Juli 2011'
 ms.openlocfilehash: be718ea3ef4da91d2f85a0229f5a506198a2527f
 ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 08/23/2018
 ms.locfileid: "22589175"
 ---
-# <a name="creating-and-storing-messages-in-message-stores"></a>Erstellen und Speichern von Nachrichten in Nachrichtenspeicher
+# <a name="creating-and-storing-messages-in-message-stores"></a>Erstellen und Speichern von Nachrichten in Nachrichtenspeichern
 
   
   
-**Betrifft**: Outlook 2013 | Outlook 2016 
+**Gilt für**: Outlook 2013 | Outlook 2016 
   
-Wie Ihre Nachricht Speicheranbieter erstellt und speichert Nachrichten in der zugrunde liegende Speichermechanismus h�ngt stark von der zugrunde liegende Speichermechanismus selbst. Im Allgemeinen m�ssen Sie nur Code schreiben, um die Eigenschaften einer Nachricht und deren Werte beibehalten.
+Wie Ihr Nachrichtenspeicheranbieter Nachrichten in dem zugrunde liegenden Speichermechanismus erstellt und speichert, ist im Wesentlichen von dem zugrunde liegenden Speichermechanismus selbst abhängig. Im Allgemeinen müssen Sie nur Code schreiben, um die Eigenschaften einer Nachricht und deren Werte zu speichern.
   
-Wenn die Nachricht speichern Anbieter erstellt eine neue Nachricht, muss des Anbieters die Nachricht mit den erforderlichen Eigenschaften f�r Nachrichten zu erstellen. Eine Liste dieser Eigenschaften finden Sie in der Dokumentation f�r die [IMAPIFolder: IMAPIContainer](imapifolderimapicontainer.md) Schnittstelle. Anschlie�end hinzuf�gen-Clientanwendungen alle zus�tzlichen Eigenschaften mit [IMAPIProp](imapipropiunknown.md) Methoden. 
+Wenn der Nachrichtenspeicheranbieter eine neue Nachricht erstellt, muss der Anbieter die Nachricht mit den erforderlichen Eigenschaften für Nachrichten erstellen. Eine Liste dieser Eigenschaften ist in der Dokumentation für die [IMAPIFolder : IMAPIContainer](imapifolderimapicontainer.md)-Schnittstelle zu finden. Danach fügen Clientanwendungen weitere Eigenschaften mit [IMAPIProp](imapipropiunknown.md)-Methoden hinzu. 
   
-Wenn die Nachricht speichern Anbieter speichert eine Nachricht an die zugrunde liegende Speichermechanismus, muss der Anbieter Eigenschaften der Meldung durchlaufen, und speichern Sie sie in der zugrunde liegende Speichermechanismus, so, dass sie vollst�ndig wiederhergestellt werden k�nnen, wenn die Nachricht sp�ter ge�ffnet wird.
+Wenn der Nachrichtenspeicheranbieter eine Nachricht im zugrunde liegenden Speichermechanismus speichert, muss der Anbieter die Eigenschaften der Nachricht durchlaufen und diese im zugrunde liegenden Speichermechanismus speichern, damit diese vollständig wiederhergestellt werden können, wenn die Nachricht später geöffnet wird.
   
-MAPI erfordert, dass die Eigenschaften f�r [IMessage](imessageimapiprop.md) Schnittstellen durchgef�hrt werden, was bedeutet, dass �nderungen vorgenommen werden, bis die [IMAPIProp::SaveChanges](imapiprop-savechanges.md) -Methode, auf das Objekt "Message aufgerufen wird" nicht dauerhaft entfernt werden. Der Nachricht Speicheranbieter ist verantwortlich f�r die Implementierung dieses Verhalten. Dies ist in der Regel nicht schwierig. Es bedeutet ganz einfach Eigenschaften im Arbeitsspeicher gedr�ckt halten, w�hrend sie ge�ndert werden und deren Aufnahme in der zugrunde liegende Speichermechanismus, wenn **SaveChanges** aufgerufen wird. 
+MAPI erfordert, dass die Eigenschaften in [IMessage](imessageimapiprop.md)-Schnittstellen abgewickelt werden, was bedeutet, dass daran vorgenommene Änderungen erst dauerhaft sind, wenn die [IMAPIProp::SaveChanges](imapiprop-savechanges.md)-Methode im Nachrichtenobjekt aufgerufen wird. Der Nachrichtenspeicheranbieter ist für das Implementieren dieses Verhaltens verantwortlich. Dies ist in der Regel nicht schwierig. Es bedeutet einfach, dass Eigenschaften im Arbeitsspeicher gehalten werden, während sie geändert werden, und dass sie im zugrunde liegenden Speichermechanismus gespeichert werden, wenn **SaveChanges** aufgerufen wird. 
   
-Einige Eigenschaften f�r Nachrichtenobjekte, die haben spezielle Semantik f�r Clientanwendungen in Bezug auf die **SaveChanges** -Methode, wie folgt: 
+Einige Eigenschaften in Nachrichtenobjekten haben bezüglich der **SaveChanges**-Methode eine besondere Semantik für Clientanwendungen: 
   
-- Einige Eigenschaften sollte Lese-/Schreibzugriff, bevor **SaveChanges**, aber schreibgesch�tzt danach aufgerufen wird. Beispielsweise **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) zunächst von der Clientanwendung, die die Nachricht erstellt (und somit besteht Lese-/Schreibzugriff) festgelegt ist, aber nicht nach dem ersten Aufruf von **SaveChanges**geändert werden.
+- Einige Eigenschaften sollten Lese-/Schreibzugriff haben, bevor **SaveChanges** aufgerufen wird, danach aber schreibgeschützt sein. **PR_MESSAGE_FLAGS** ([PidTagMessageFlags](pidtagmessageflags-canonical-property.md)) wird beispielsweise von der Clientanwendung festgelegt, die die Nachricht erstellt ( und verfügt daher über Lese-/Schreibzugriff), kann aber nach dem ersten Aufruf von **SaveChanges** nicht geändert werden.
     
-- Einige Eigenschaften haben spezielle Beziehungen zu Eigenschaften f�r den Ordner, den sie in oder **IMAPIFolder** Methoden sind. Beispielsweise bezieht sich die **PR_MESSAGE_FLAGS** -Eigenschaft auf die Kennzeichen f�r den Anruf [IMAPIFolder::CreateMessage](imapifolder-createmessage.md) verwendet. 
+- Einige Eigenschaften haben spezielle Beziehungen zu Eigenschaften in dem Ordner, in dem sie sich befinden, oder zu **IMAPIFolder**-Methoden. Die **PR_MESSAGE_FLAGS**-Eigenschaft weist beispielsweise eine Beziehung zu den Flags auf, die im [IMAPIFolder::CreateMessage](imapifolder-createmessage.md)-Aufruf verwendet werden. 
     
-- Einige Eigenschaften m�glicherweise nicht verf�gbar, bis **SaveChanges** zum ersten Mal aufgerufen wird. Zum Beispiel die Eigenschaft **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md)) möglicherweise nicht zur Verfügung, bis **SaveChanges** aufgerufen wird. 
+- Einige Eigenschaften sind möglicherweise erst verfügbar, wenn **SaveChanges** zum ersten Mal aufgerufen wird. Die **PR_ENTRYID** ([PidTagEntryId](pidtagentryid-canonical-property.md))-Eigenschaft ist beispielsweise erst verfügbar, wenn **SaveChanges** aufgerufen wird. 
     
-- Einige Eigenschaften haben besondere Beziehungen mit anderen Eigenschaften auf Message-Objekts. Beispielsweise wird die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft in der Regel aus der Eigenschaft **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md)) in der Nachricht Anbieter abgeleitet, die Nachrichten im Rich Text Format unterstützen.
+- Einige Eigenschaften können spezielle Beziehungen zu anderen Eigenschaften des Nachrichtenobjekts haben. Beispielsweise wird die **PR_BODY** ([PidTagBody](pidtagbody-canonical-property.md))-Eigenschaft in der Regel von der **PR_RTF_COMPRESSED** ([PidTagRtfCompressed](pidtagrtfcompressed-canonical-property.md))-Eigenschaft in Nachrichtenspeicheranbietern abgeleitet, die Nachrichten im Rich Text Format unterstützen.
     
-- Einige Eigenschaften werden von mehr als eine Objekttyp im Zusammenhang mit e-Mail-Speicher verwendet. Beispielsweise ist die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft auf den Ordner und die Nachricht, dass Objekte sowie Nachricht Speichern von Objekten erforderlich.
+- Einige Eigenschaften werden von mehr als einem Objekttyp im Zusammenhang mit Nachrichtenspeicheranbietern verwendet. Beispielsweise ist die **PR_STORE_SUPPORT_MASK** ([PidTagStoreSupportMask](pidtagstoresupportmask-canonical-property.md))-Eigenschaft in Ordner- und Nachrichtenobjekten sowie in Nachrichtenspeicheranbietern erforderlich.
     
-Es ist Aufgabe des Anbieters Nachricht an die richtige Semantik f�r solche Eigenschaften implementieren.
+Es liegt in der Verantwortung des Nachrichtenspeicheranbieters, die korrekte Semantik für derartige Eigenschaften zu implementieren.
   
 ## <a name="see-also"></a>Siehe auch
 
 
 
-[Implementieren von Nachrichten in Nachrichtenspeicher](implementing-messages-in-message-stores.md)
+[Implementieren von Nachrichten in Nachrichtenspeichern](implementing-messages-in-message-stores.md)
 
