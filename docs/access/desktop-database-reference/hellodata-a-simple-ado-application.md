@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249950(v=office.15)
 ms:contentKeyID: 48547554
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f7a3ef1f8b1a183bcef760af28d6eb8a849b17aa
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9e70d611f351cf3ff073a1ad91e359a08e026295
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472934"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863297"
 ---
 # <a name="hellodata-a-simple-ado-application"></a>HelloData: Eine einfache ADO-Anwendung
 
@@ -32,7 +32,7 @@ Die Anwendung fragt die Northwind-Beispieldatenbank ab, die mit Microsoft SQL Se
 
 4.  Erstellen Sie ein **TextBox** -Objekt auf dem Formular unterhalb des Rasters, und legen Sie seine Eigenschaften auf die in der folgenden Tabelle angegebenen Werte fest. Das Formular sollte bei seiner Fertigstellung ähnlich der folgenden Abbildung aussehen.
 
-5.  Kopieren Sie den unter "[HelloData-Code](hellodata-code.md)" aufgelisteten Text, und fügen Sie ihn auf dem Formular in das Fenster des Code-Editors ein. Drücken Sie **F5**, um den Code auszuführen.
+5.  Schließlich, kopieren Sie den Code in [HelloData-Code](hellodata-code.md) , und fügen Sie ihn in das Code-Editor-Fenster des Formulars. Drücken Sie **F5**, um den Code auszuführen.
 
 
 > [!NOTE]
@@ -40,7 +40,7 @@ Die Anwendung fragt die Northwind-Beispieldatenbank ab, die mit Microsoft SQL Se
 
 
 
-Eine detaillierte Beschreibung des Codes finden Sie unter "[Informationen zu HelloData](hellodata-details.md)."
+Eine ausführliche Beschreibung des Codes finden Sie unter [Informationen zu HelloData](hellodata-details.md).
 
 <table>
 <colgroup>
@@ -135,4 +135,6 @@ Eine detaillierte Beschreibung des Codes finden Sie unter "[Informationen zu Hel
 </tr>
 </tbody>
 </table>
+
+
 

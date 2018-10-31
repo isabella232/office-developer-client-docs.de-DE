@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823048(v=office.15)
 ms:contentKeyID: 48547578
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3ccc238940ec75b04cf900fbc6604df7b41d2ca4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b497e2859b265f5bb939fdd2b4913a54fdf2d170
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473404"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864200"
 ---
 # <a name="databaseconnect-property-dao"></a>Database.Connect Property (DAO)
 
@@ -159,10 +159,7 @@ Sie können die **Connect** -Eigenschaft für ein **Database** -Objekt festlegen
 
 
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Sie müssen die <STRONG>Connect</STRONG>-Eigenschaft vor der <STRONG>ReturnsRecords</STRONG>-Eigenschaft festlegen.</P>
-> <LI>
-> <P>Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.</P></LI></UL>
+> - Sie müssen die **Connect**-Eigenschaft vor der **ReturnsRecords**-Eigenschaft festlegen.
+> - Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.
 
 

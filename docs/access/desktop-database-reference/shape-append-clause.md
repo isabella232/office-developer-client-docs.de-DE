@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249633(v=office.15)
 ms:contentKeyID: 48546301
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6460572f44e79fe4bdb30d1ca33810d610da9721
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: cb8e60c52ded359350adff737807c3e0f92cb7c4
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862125"
 ---
-# <a name="shape-append-clause"></a>Append-Klausel für Formen
+# <a name="shape-append-clause"></a>Shape Append-Klausel
 
 
 **Betrifft**: Access 2013 | Office 2013
@@ -122,3 +122,12 @@ SHAPE {select * from t1; drop table t1} APPEND ({select * from t2} RELATE k1 TO 
 
 SHAPE führt SELECT- \* von t1; Drop t1-Tabelle und (Wählen Sie \* aus t2 verknüpfen k1 TO K2), ohne zu realisieren Drop Tabelle t1 ist eine Separate und in diesem Anbieterbefehl Groß-/Kleinschreibung, gefährlicher,. Die Benutzereingabe muss von Anwendungen immer überprüft werden, um derartige potenzielle Hackerangriffe zu verhindern.
 
+Dieser Abschnitt enthält die folgenden Themen:
+
+- [Operation of Non-Parameterized Commands](operation-of-non-parameterized-commands.md)
+
+- [Operation of Parameterized Commands](operation-of-parameterized-commands.md)
+
+- [Hybrid Commands](hybrid-commands.md)
+
+- [Einfügen von COMPUTE-Klauseln in SHAPE-Befehlen](intervening-shape-compute-clauses.md)

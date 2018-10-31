@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250177(v=office.15)
 ms:contentKeyID: 48548423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cd3e691258fe5950f40c36a1efcaed8e79810c7a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8f601567c2f975a26fb914906930305c0fc4fae0
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473845"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860203"
 ---
 # <a name="using-the-connection-object-access"></a>Using the Connection Object (Access)
 
@@ -22,8 +22,11 @@ Ein **Connection** -Objekt stellt eine eindeutige Sitzung mit einer Datenquelle 
 
 Vor dem Öffnen eines **Connection** -Objekts müssen Sie bestimmte Informationen zur Datenquelle und zum Verbindungstyp definieren. Der Parameter *ConnectionString* der **Open** -Methode des **Connection** -Objekts – oder der **ConnectionString** -Eigenschaft auf das **Connection** -Objekt – in der Regel enthält die meisten dieser Informationen. Eine Verbindungszeichenfolge ist eine Abfolge von Buchstaben, mit der eine variable Anzahl von Argumenten definiert wird. Die Argumente - einige sind für ADO erforderlich, andere wiederum anbieterspezifisch - enthalten Informationen, die das **Connection** -Objekt zum Ausführen seiner Aufgaben benötigt. Die Argumente, die der *ConnectionString* -Parameter bilden werden mit Semikolons (;) voneinander getrennt.
 
-
 > [!NOTE]
-> <P>Sie können auch eine ODBC-Datenquellennamen (DSN) oder eine Datei Daten Link (UDL) in eine Verbindungszeichenfolge angeben. Weitere Informationen zu dem DSNs finden Sie unter Datenquellen in Teil 1 von der <EM>ODBC-Programmer's Reference</EM>. Weitere Informationen zu UDLs finden Sie unter Data Link API Overview in der <EM>OLE DB Programmer's Reference</EM>.</P>
+> Sie können auch eine ODBC-Datenquellennamen (DSN) oder eine Datei Daten Link (UDL) in eine Verbindungszeichenfolge angeben. Weitere Informationen zu dem DSNs finden Sie unter Datenquellen in Teil 1 von der *ODBC-Programmer's Reference*. Weitere Informationen zu UDLs finden Sie unter Data Link API Overview in der *OLE DB Programmer's Reference*.
 
+Dieser Abschnitt enthält die folgenden Themen:
 
+- [Erstellen der Verbindungszeichenfolge](creating-the-connection-string.md)
+
+- [Steuern von Transaktionen](controlling-transactions.md)

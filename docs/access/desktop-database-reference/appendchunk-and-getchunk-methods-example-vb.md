@@ -1,19 +1,19 @@
 ---
-title: Methoden 'AppendChunk' und 'GetChunk' (Beispiel) (VB)
-TOCTitle: AppendChunk and GetChunk Methods Example (VB)
+title: AppendChunk- und GetChunk-Methode (Beispiel) (VB)
+TOCTitle: AppendChunk and GetChunk methods example (VB)
 ms:assetid: 42b3ee69-f4c4-3533-59b1-d14cb3cc88d8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249196(v=office.15)
 ms:contentKeyID: 48544482
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 913509ed0189c786ae7fb50f51e614eaf1ae0fc4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e97e1bf04a78253d02b413c93b4487ea48d803bb
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472924"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860301"
 ---
-# <a name="appendchunk-and-getchunk-methods-example-vb"></a>Methoden "AppendChunk" und "GetChunk" (Beispiel) (VB)
+# <a name="appendchunk-and-getchunk-methods-example-vb"></a>AppendChunk- und GetChunk-Methode (Beispiel) (VB)
 
 
 **Betrifft**: Access 2013 | Office 2013

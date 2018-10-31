@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249179(v=office.15)
 ms:contentKeyID: 48544405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5a565430cf81eed5cbc1ebfe135ce80ee6f0177e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6b1e04c3ce9f450d2168c9f607bfa1d135951bb9
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475542"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862303"
 ---
 # <a name="appendchunk-method-ado"></a>AppendChunk-Methode (ADO)
 
@@ -49,7 +49,7 @@ Wenn beim Aufrufen von **AppendChunk** für ein **Field** -Objekt kein aktueller
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>AppendChunk</STRONG> -Methode eignet sich nicht für <STRONG>Field</STRONG> -Objekte eines <A href="record-object-ado.md">Record</A>-Objekts. Es werden keine Operationen ausgeführt, und es wird ein Laufzeitfehler erzeugt.</P>
+> [!HINWEIS] Die **AppendChunk** -Methode eignet sich nicht für **Field** -Objekte eines [Record](record-object-ado.md)-Objekts. Es werden keine Operationen ausgeführt, und es wird ein Laufzeitfehler erzeugt.
 
 
 

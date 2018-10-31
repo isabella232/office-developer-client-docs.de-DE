@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm78430
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 52822d45b30c631dcabe3c38b6722398e96f489f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f907cee27511f782a3d766761ae716bc3cef4c0b
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475202"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862961"
 ---
 # <a name="cancelevent-macro-action"></a>AbbrechenEreignis-Makroaktion
 
@@ -80,19 +80,14 @@ Die folgenden Ereignisse können von der **AbbrechenEreignis** -Aktion abgebroch
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Sie können die <STRONG>AbbrechenEreignis</STRONG> -Aktion mit dem <STRONG>MouseDown</STRONG> -Ereignis nur dazu verwenden, das Ereignis abzubrechen, das beim Klicken mit der rechten Maustaste auftritt.</P>
-
-
+> [!HINWEIS] Sie können die **AbbrechenEreignis** -Aktion mit dem **MouseDown** -Ereignis nur dazu verwenden, das Ereignis abzubrechen, das beim Klicken mit der rechten Maustaste auftritt.
 
 Wenn die **BeimDoppelklicken** -Ereigniseigenschaft ein Makro angibt, das die **AbbrechenEreignis** -Aktion enthält, wird durch diese Aktion das **DblClick** -Ereignis abgebrochen.
 
 Nachdem das Makro für das Ereignis ausgeführt wurde, tritt für Ereignisse, die abgebrochen werden können, das Standardverhalten für das Ereignis ein (d. h. das Verhalten, das Access normalerweise zeigt, wenn das Ereignis eintritt). Auf diese Weise können Sie das Standardverhalten abbrechen. Wenn Sie beispielsweise auf ein Wort doppelklicken, auf dem sich die Einfügemarke in einem Textfeld befindet, wird das Wort normalerweise in Access markiert. Sie können dieses Standardverhalten in dem Makro für das **DblClick** -Ereignis abbrechen und eine andere Aktion ausführen, z. B. das Öffnen eines Formulars, das Information zu den Daten in dem Textfeld enthält. Für Ereignisse, die nicht abgebrochen werden können, tritt das Standardverhalten ein, bevor das Makro ausgeführt wird.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Wenn die <STRONG>BeiEntladen</STRONG> -Ereigniseigenschaft eines Formulars ein Makro angibt, das eine <STRONG>AbbrechenEreignis</STRONG> -Aktion ausführt, können Sie das Formular nicht schließen. Sie müssen entweder die Bedingung berichtigen, die das Ausführen der <STRONG>AbbrechenEreignis</STRONG> -Aktion verursacht hat, oder das Makro öffnen und die <STRONG>AbbrechenEreignis</STRONG> -Aktion löschen. Wenn es sich bei dem Formular um ein modales Formular handelt, können Sie das Makro nicht öffnen.</P>
-
-
+> [!HINWEIS] Wenn die **BeiEntladen** -Ereigniseigenschaft eines Formulars ein Makro angibt, das eine **AbbrechenEreignis** -Aktion ausführt, können Sie das Formular nicht schließen. Sie müssen entweder die Bedingung berichtigen, die das Ausführen der **AbbrechenEreignis** -Aktion verursacht hat, oder das Makro öffnen und die **AbbrechenEreignis** -Aktion löschen. Wenn es sich bei dem Formular um ein modales Formular handelt, können Sie das Makro nicht öffnen.
 
 Verwenden Sie die **CancelEvent** -Methode des **DoCmd** -Objekts, um die **AbbrechenEreignis** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 

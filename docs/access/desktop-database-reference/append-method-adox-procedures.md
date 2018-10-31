@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249783(v=office.15)
 ms:contentKeyID: 48546919
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5c1afc7aeea90fc152df7d8f7b1601bf3753b3a3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 195cb08fb0b195b63cdddaa848554f24d028b498
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861876"
 ---
 # <a name="append-method-adox-procedures"></a>Append-Methode (ADOX Procedures)
 
@@ -43,6 +43,6 @@ Wenn der vom Benutzer angegebene Befehlstext eine Sicht statt einer Prozedur dar
 
 
 > [!NOTE]
-> <P>Wenn Sie den OLE DB-Anbieter für Microsoft Jet verwenden, kann die <STRONG>Append</STRONG> -Methode der <STRONG>Procedures</STRONG> -Auflistung angeben einer <STRONG>Ansicht</STRONG> , sondern eine <STRONG>Prozedur</STRONG> in <EM>der Befehlsparameter</EM> ansetzt. Das <STRONG>View</STRONG> -Objekt wird der Datenquelle und der <STRONG>Procedures</STRONG> -Auflistung hinzugefügt. Wenn die <STRONG>Procedures</STRONG> - und die <STRONG>Views</STRONG> -Auflistung nach Ausführung von <STRONG>Append</STRONG> aktualisiert wurden, wird das <STRONG>View</STRONG> -Objekt nicht mehr in der <STRONG>Procedures</STRONG> -Auflistung, sondern in der <STRONG>Views</STRONG> -Auflistung angezeigt.</P>
+> Wenn Sie den OLE DB-Anbieter für Microsoft Jet verwenden, kann die **Append** -Methode der **Procedures** -Auflistung angeben einer **Ansicht** , sondern eine **Prozedur** in *der Befehlsparameter* ansetzt. Das **View** -Objekt wird der Datenquelle und der **Procedures** -Auflistung hinzugefügt. Wenn die **Procedures** - und die **Views** -Auflistung nach Ausführung von **Append** aktualisiert wurden, wird das **View** -Objekt nicht mehr in der **Procedures** -Auflistung, sondern in der **Views** -Auflistung angezeigt.
 
 

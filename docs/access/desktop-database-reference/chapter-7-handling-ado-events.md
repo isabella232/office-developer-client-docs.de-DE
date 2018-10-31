@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249004(v=office.15)
 ms:contentKeyID: 48543709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4d85532c93c6d175b90f957d7831b71a460ba5b6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 816dd98e5e4c21f3159edf18b5687b2b0578e399
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860840"
 ---
 # <a name="chapter-7-handling-ado-events"></a>Kapitel 7: Behandeln von ADO-Ereignissen
 
@@ -26,3 +26,14 @@ Die Gruppe der nach Abschluss einer Operation auftretenden Ereignisse ist besond
 
 Durch das Verwenden des ADO-Ereignismodells entsteht mehr Aufwand für die Anwendung, jedoch wird auch erheblich mehr Flexibilität bereitgestellt als bei anderen Methoden für den Umgang mit asynchronen Operationen, z. B. beim Überwachen der [State](state-property-ado.md)-Eigenschaft eines Objekts mit einer Schleife.
 
+In diesem Kapitel werden die folgenden Themen behandelt:
+
+- [ADO-Ereignishandler (Zusammenfassung)](ado-event-handler-summary.md)
+
+- [Arten von Ereignissen](types-of-events.md)
+
+- [Ereignisparameter](event-parameters.md)
+
+- [Zusammenspiel von Ereignishandlern](how-event-handlers-work-together.md)
+
+- [ADO Event Instantiation by Language (ADO)](ado-event-instantiation-by-language-ado.md)

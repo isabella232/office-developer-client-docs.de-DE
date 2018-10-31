@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248893(v=office.15)
 ms:contentKeyID: 48543328
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 41424fd62e915ecb2d54fdb49c939b788f458804
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0eb70a615f49ff351ec31a826abc9775558218dd
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473857"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862555"
 ---
 # <a name="running-business-objects-in-component-services"></a>Ausführen von Geschäftsobjekten in Komponentendiensten
 
@@ -26,6 +26,11 @@ Bei Geschäftsobjekten kann es sich um ausführbare Dateien (EXE) oder um Dynami
 
 
 > [!NOTE]
-> <P>Wenn von Geschäftsobjekten auf der mittleren Ebene als Komponenten der Komponentendienste (mit <STRONG>GetObjectContext</STRONG>, <STRONG>SetComplete</STRONG>und <STRONG>SetAbort</STRONG>) implementiert werden, können sie Komponentendienste (oder MTS, bei Verwendung der Windows NT)-Objekte Kontext Verwalten von deren Status über mehrere Client-Anrufe. Dieses Szenario ist mit DCOM möglich, das üblicherweise zwischen vertrauenswürdigen Clients und Servern (ein Intranet) implementiert wird. In diesem Fall werden das <A href="dataspace-object-rds.md">RDS.DataSpace</A>-Objekt und die <A href="createobject-method-rds.md">CreateObject</A>-Methode auf dem Client durch das Transaktionskontextobjekt und die <STRONG>CreateInstance</STRONG> -Methode ersetzt (bereitgestellt von der <STRONG>ITransactionContext</STRONG> -Schnittstelle), die von den Komponentendiensten implementiert wird.</P>
+> Wenn von Geschäftsobjekten auf der mittleren Ebene als Komponenten der Komponentendienste (mit **GetObjectContext**, **SetComplete**und **SetAbort**) implementiert werden, können sie Komponentendienste (oder MTS, bei Verwendung der Windows NT)-Objekte Kontext Verwalten von deren Status über mehrere Client-Anrufe. Dieses Szenario ist mit DCOM möglich, das üblicherweise zwischen vertrauenswürdigen Clients und Servern (ein Intranet) implementiert wird. 
+>
+> In diesem Fall werden das [RDS.DataSpace](dataspace-object-rds.md)-Objekt und die [CreateObject](createobject-method-rds.md)-Methode auf dem Client durch das Transaktionskontextobjekt und die **CreateInstance** -Methode ersetzt (bereitgestellt von der **ITransactionContext** -Schnittstelle), die von den Komponentendiensten implementiert wird.
 
 
+## <a name="see-also"></a>Siehe auch
+
+- [Ausführen von Geschäftsobjekten in Komponentendiensten (SQLServer)](https://docs.microsoft.com/sql/ado/guide/remote-data-service/running-business-objects-in-component-services?view=sql-server-2017)

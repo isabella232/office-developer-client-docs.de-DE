@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249024(v=office.15)
 ms:contentKeyID: 48543790
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7220505f5d2fe4354ad904df3c5b1d79e9e6768d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ea03ee787c344865154ab04a82d3702e121dbc2c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474967"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862659"
 ---
-# <a name="internet-publishing-scenario"></a>Internet Publishing-Szenario
+# <a name="internet-publishing-scenario"></a>Szenario für Veröffentlichungen im Internet
 
 
 **Betrifft**: Access 2013 | Office 2013
@@ -22,11 +22,11 @@ Mit diesem Code wird die Verwendung von ADO (ActiveX Data Objects) mit dem Micro
 
 Für die Erstellung dieses Szenarios sind die folgenden Schritte erforderlich:
 
-  - [Schritt 1: Einrichten des Visual Basic-Projekts](step-1-set-up-the-visual-basic-project.md)
+- [Schritt 1: Einrichten des Visual Basic-Projekts](step-1-set-up-the-visual-basic-project.md)
 
-  - [Schritt 2: Initialisieren des Hauptlistenfelds](step-2-initialize-the-main-list-box.md)
+- [Schritt 2: Initialisieren des Hauptlistenfelds](step-2-initialize-the-main-list-box.md)
 
-  - [Schritt 3: Auffüllen des Listenfelds "Fields"](step-3-populate-the-fields-list-box.md)
+- [Schritt 3: Auffüllen des Listenfelds "Fields"](step-3-populate-the-fields-list-box.md)
 
-  - [Schritt 4: Auffüllen des Textfelds "Details"](step-4-populate-the-details-text-box.md)
+- [Schritt 4: Auffüllen des Textfelds "Details"](step-4-populate-the-details-text-box.md)
 

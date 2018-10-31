@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052979
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 54078705c67e892b80a08ce2bd31db191c7fc70c
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 311481a83c25df29a26610a979a67ceb38124470
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606158"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860420"
 ---
 # <a name="dbengineopendatabase-method-dao"></a>DBEngine.OpenDatabase-Methode (DAO)
 
@@ -76,7 +76,7 @@ ms.locfileid: "25606158"
 </table>
 
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ### <a name="return-value"></a>Rückgabewert
 =======
 ### <a name="return-value"></a>Rückgabewert
@@ -126,6 +126,6 @@ Um eine Datenbank zu schließen und so das **Database** -Objekt aus der **Databa
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie auf eine ODBC-Datenquelle zugreifen, die mit einem Microsoft Access-Datenbankmodul verbunden ist, können Sie die Leistung der Anwendung verbessern, indem Sie ein <STRONG>Database</STRONG> -Objekt öffnen, das mit der ODBC-Datenquelle verbunden ist, anstatt einzelne <STRONG><A href="tabledef-object-dao.md">TableDef</A></STRONG> -Objekte mit bestimmten Tabellen in der ODBC-Datenquelle zu verknüpfen.</P>
+> [!HINWEIS] Wenn Sie auf eine ODBC-Datenquelle zugreifen, die mit einem Microsoft Access-Datenbankmodul verbunden ist, können Sie die Leistung der Anwendung verbessern, indem Sie ein **Database** -Objekt öffnen, das mit der ODBC-Datenquelle verbunden ist, anstatt einzelne [TableDef](tabledef-object-dao.md) -Objekte mit bestimmten Tabellen in der ODBC-Datenquelle zu verknüpfen.
 
 

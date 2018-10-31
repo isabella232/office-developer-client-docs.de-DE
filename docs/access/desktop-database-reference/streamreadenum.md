@@ -4,21 +4,22 @@ TOCTitle: StreamReadEnum
 ms:assetid: 12432c0d-dc2e-10ea-13db-0c07b6ba29bc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248895(v=office.15)
 ms:contentKeyID: 48543336
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 1255f691f2cd0bde1e3ed83ebffc1f0d31fb3119
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 69a8c49fd9d07c1e0d67a91e131be76ad9803ad0
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474693"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861050"
 ---
 # <a name="streamreadenum"></a>StreamReadEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt an, ob der gesamte Datenstrom oder die nächste Zeile aus einem [Stream](stream-object-ado.md)-Objekt gelesen werden sollte.
+
+<br/>
 
 <table>
 <colgroup>
@@ -48,7 +49,7 @@ Gibt an, ob der gesamte Datenstrom oder die nächste Zeile aus einem [Stream](st
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

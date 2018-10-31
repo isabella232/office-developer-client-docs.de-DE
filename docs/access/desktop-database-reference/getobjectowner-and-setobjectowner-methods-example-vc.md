@@ -1,24 +1,24 @@
 ---
 title: GetObjectOwner- und SetObjectOwner-Methode (VC++-Beispiel)
-TOCTitle: GetObjectOwner and SetObjectOwner Methods Example (VC++)
+TOCTitle: GetObjectOwner and SetObjectOwner methods example (VC++)
 ms:assetid: af38cc5c-4475-20fa-edcd-a439e1ffbf99
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249835(v=office.15)
 ms:contentKeyID: 48547096
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f1efe20d78c6be737ee32b5b8156a9d311ad654e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 488e4f966bb37dd151eca8ab7231769373cc06e8
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474910"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864193"
 ---
 # <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a>GetObjectOwner- und SetObjectOwner-Methode (VC++-Beispiel)
 
 
 **Betrifft**: Access 2013 | Office 2013
 
-In diesem Beispiel wird die Verwendung der GetObjectOwner- und der SetObjectOwner-Methode veranschaulicht. Der Code setzt voraus, dass die Accounting-Gruppe vorhanden ist. (Informationen zum Hinzufügen dieser Gruppe zum System finden Sie unter Append-Methode (Groups und Users), ChangePassword-Methode (VC++-Beispiel).) Der Besitzer der Categories-Tabelle wird auf Accounting festgelegt.
+Dieses Beispiel veranschaulicht die Methoden [GetObjectOwner](getobjectowner-method-adox.md) und [SetObjectOwner verwenden](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) . Dieser Code wird vorausgesetzt, dass die Gruppe Accounting (siehe die [Gruppen und Benutzer anzufügen, ChangePassword-Methoden (VC++-Beispiel)](groups-and-users-append-changepassword-methods-example-vc.md) wie das System dieser Gruppe hinzugefügt angezeigt). Der Besitzer der Kategorientabelle wird auf Buchhaltung festgelegt.
 
 ```cpp 
  

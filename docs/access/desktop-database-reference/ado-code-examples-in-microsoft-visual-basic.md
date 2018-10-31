@@ -1,17 +1,17 @@
 ---
 title: ADO-Codebeispiele in Microsoft Visual Basic
-TOCTitle: ADO Code Examples in Microsoft Visual Basic
+TOCTitle: ADO code examples in Microsoft Visual Basic
 ms:assetid: 5eb855d4-e5e1-2626-3a21-891d195fb193
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249342(v=office.15)
 ms:contentKeyID: 48545145
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17414560b3aafb51285de0fa6f2beb6d2f0b7b85
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: a1ceec153a1717485bac87cbf5fdb764f546cab7
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604610"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862114"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic"></a>ADO-Codebeispiele in Microsoft Visual Basic
 
@@ -20,9 +20,8 @@ ms.locfileid: "25604610"
 
 Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Methoden, -Eigenschaften und -Ereignisse beim Schreiben in Visual Basic verwenden.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Fügen Sie das gesamte Codebeispiel, von "Sub" bis "End Sub", in den Code-Editor ein. Möglicherweise wird das Beispiel nicht richtig ausgeführt, wenn Teilbeispiele verwendet werden oder die Absatzformatierung verloren geht.</P>
+> [!HINWEIS] Fügen Sie das gesamte Codebeispiel, von Anfang bis Ende, in den Code-Editor ein. Möglicherweise wird das Beispiel nicht richtig ausgeführt, wenn Teilbeispiele verwendet werden oder die Absatzformatierung verloren geht.
 
 
 
@@ -60,7 +59,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - [GetString-Methode (Beispiel)](getstring-method-example-vb.md)
 
-<<<<<<< Kopf
+<<<<<<< HEAD
   - [SkipLine-Methode, EOS und LineSeparator-Eigenschaft (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
 =======
   - [SkipLine-Methode, EOS und LineSeparator Eigenschaft (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
@@ -84,7 +83,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - ["Save" und "Open" (Methoden) (Beispiel)](save-and-open-methods-example-vb.md)
 
-<<<<<<< Kopf
+<<<<<<< HEAD
   - [Seek-Methode und Index-Eigenschaft Beispiel](seek-method-and-index-property-example-vb.md)
 =======
   - [Seek-Methode und Index-Eigenschaft-Beispiel](seek-method-and-index-property-example-vb.md)
@@ -98,7 +97,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
 **Eigenschaften**
 
-<<<<<<< Kopf
+<<<<<<< HEAD
   - ["AbsolutePage", "PageCount" und "PageSize" (Eigenschaften) (Beispiel)](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
 
   - ["AbsolutePosition" und "CursorLocation" (Eigenschaften) (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vb.md)

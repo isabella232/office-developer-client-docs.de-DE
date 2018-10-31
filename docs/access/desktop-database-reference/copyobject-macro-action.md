@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm12836
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d48869d42d44a6440a1cc971ec9497320758ef16
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 60c0204bd374feaa950d3158873f68127debaf0f
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474325"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862548"
 ---
 # <a name="copyobject-macro-action"></a>KopierenObjekt-Makroaktion
 
@@ -26,7 +26,7 @@ Sie können die **KopierenObjekt** -Aktion verwenden, um das angegebene Datenban
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
 
 
 
@@ -53,7 +53,7 @@ Die **KopierenObjekt** -Aktion hat die folgenden Argumente.
 </p>
 
 > [!NOTE]
-> <P>Dieses Argument ist nur in der Access-Datenbankumgebung verfügbar. Wenn diese Aktion in einer Access-Projektumgebung (ADP) verwendet wird, muss das Argument Zieldatenbank leer sein.</P>
+> Dieses Argument ist nur in der Access-Datenbankumgebung verfügbar. Wenn diese Aktion in einer Access-Projektumgebung (ADP) verwendet wird, muss das Argument Zieldatenbank leer sein.
 
 
 <p>Wenn Sie ein Makro, das die <strong>KopierenObjekt</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen und dieses Argument leer lassen, wird dieses Objekt von Microsoft Office Access 2007 in die Bibliotheksdatenbank kopiert.</p></td>
@@ -90,7 +90,7 @@ Die **KopierenObjekt** -Aktion ist mit dem manuellen Ausführen der folgenden Sc
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Beim Kopieren von Datenzugriffsseiten kopiert die <STRONG>KopierenObjekt</STRONG> -Aktion nur die Verknüpfung zur zugeordneten HTM-Datei und nicht die Datei selbst.</P>
+> [!HINWEIS] Beim Kopieren von Datenzugriffsseiten kopiert die **KopierenObjekt** -Aktion nur die Verknüpfung zur zugeordneten HTM-Datei und nicht die Datei selbst.
 
 
 

@@ -6,27 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249394(v=office.15)
 ms:contentKeyID: 48545332
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 490cec7ee5e75b9f5a61a130481308f8fa341912
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c0bf72cd44d6fa6bb5ec74e339e161ba77eea766
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474096"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860483"
 ---
-# <a name="navigating-through-the-data"></a>Navigieren in den Daten
+# <a name="navigating-through-the-data"></a>Navigieren durch die Daten
 
 
 **Betrifft**: Access 2013 | Office 2013
 
-Nachdem Sie einen Befehl für die Datenquelle ausgeführt und bestimmt haben, dass das Resultset Daten enthält, können Sie mithilfe der Navigationsmethoden und Eigenschaften des **Recordset** -Objekts in den Ergebnissen navigieren. In den folgenden Themen wird die Verwendung dieser Methoden und Eigenschaften im **Recordset** -Beispielobjekt beschrieben:
+Nachdem Sie einen Befehl für die Datenquelle ausgeführt und bestimmt haben, dass das Resultset Daten enthält, können Sie mithilfe der Navigationsmethoden und Eigenschaften des **Recordset** -Objekts in den Ergebnissen navigieren. 
 
-  - [Springen zu einem Datensatz](jumping-to-a-record.md)
+In den folgenden Themen wird die Verwendung dieser Methoden und Eigenschaften im **Recordset** -Beispielobjekt beschrieben:
 
-  - [Weitere Möglichkeiten zum Navigieren in einem Recordset](more-ways-to-move-in-a-recordset.md)
+- [Springen zu einem Datensatz](jumping-to-a-record.md)
 
-  - [Verwenden von Lesezeichen](using-bookmarks.md)
+- [Weitere Möglichkeiten zum Navigieren in einem Recordset](more-ways-to-move-in-a-recordset.md)
 
-  - [Verwenden von Seiten](using-pages.md)
+- [Verwenden von Lesezeichen](using-bookmarks.md)
 
-  - [Recordsetpositionierung](recordset-positioning.md)
+- [Verwenden von Seiten](using-pages.md)
+
+- [Recordsetpositionierung](recordset-positioning.md)
 

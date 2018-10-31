@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249074(v=office.15)
 ms:contentKeyID: 48543985
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 196366987e89f52a3c498a769fa501a3faca9dae
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 4d357fe07a93548419fd03745541435d94d59a8c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604435"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861036"
 ---
 # <a name="using-ado-with-scripting-languages"></a>Verwenden von ADO mit Skriptsprachen
 
@@ -36,7 +36,6 @@ Bei Skriptsprachen nicht verfügbar.
 
 Die folgenden Themen enthalten konkretere Informationen zum Verwenden von ADO mit Skriptsprachen:
 
-  - [VBScript-ADO-Programmierung](vbscript-ado-programming.md)
+- [JScript ADO Programming](jscript-ado-programming.md)
 
-  - [JScript-ADO-Programmierung](jscript-ado-programming.md)
-
+- [VBScript-ADO-Programmierung](vbscript-ado-programming.md)

@@ -4,21 +4,22 @@ TOCTitle: ExecuteOptionEnum
 ms:assetid: bd6d44a3-e471-7aa0-3e65-6775334de2ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249915(v=office.15)
 ms:contentKeyID: 48547438
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: aeb1083c693e0848e30a0b9217ae709994daddb5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 51c5ab78c4ea49ade7fd2b6972aa3753b0c6df09
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474186"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862310"
 ---
-# <a name="executeoptionenum"></a>ExecuteOptionEnum-Wert
-
+# <a name="executeoptionenum"></a>ExecuteOptionEnum
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
+
+<br/>
 
 <table>
 <colgroup>
@@ -48,7 +49,8 @@ Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 <tr class="odd">
 <td><p><strong>adAsyncFetchNonBlocking</strong></p></td>
 <td><p>0 x 40</p></td>
-<td><p>Gibt an, dass der Hauptthread beim Abrufen nie blockiert. Wenn die angeforderte Zeile nicht abgerufen wurde, wird die aktuelle Zeile automatisch an das Ende der Datei verschoben. Wenn Sie ein <a href="recordset-object-ado.md">Recordset-Objekt</a> aus einem <a href="stream-object-ado.md">Stream</a> , der ein dauerhaft gespeichertes <strong>Recordset</strong>enthält öffnen, wird <strong>AdAsyncFetchNonBlocking</strong> keinen Einfluss; der Vorgang wird synchron und blockiert werden. <strong>AdAsynchFetchNonBlocking</strong> hat keine Auswirkung, wenn die <a href="commandtypeenum.md">AdCmdTableDirect</a> -Option zum Öffnen des <strong>Recordset-Objekt</strong>verwendet wird.</p></td>
+<td><p>Gibt an, dass der Hauptthread beim Abrufen nie blockiert. Wenn die angeforderte Zeile nicht abgerufen worden ist, wird die aktuelle Zeile automatisch an das Ende der Datei verschoben.
+</p><p>Wenn Sie ein <a href="recordset-object-ado.md">Recordset-Objekt</a> aus einem <a href="stream-object-ado.md">Stream</a> , der ein dauerhaft gespeichertes <strong>Recordset</strong>enthält öffnen, wird <strong>AdAsyncFetchNonBlocking</strong> keinen Einfluss; der Vorgang wird synchron und blockiert werden. <strong>AdAsynchFetchNonBlocking</strong> hat keine Auswirkung, wenn die <a href="commandtypeenum.md">AdCmdTableDirect</a> -Option zum Öffnen des <strong>Recordset-Objekt</strong>verwendet wird.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adExecuteNoRecords</strong></p></td>
@@ -76,7 +78,7 @@ Gibt an, wie ein Anbieter einen Befehl ausführen sollte.
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

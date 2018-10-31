@@ -4,17 +4,16 @@ TOCTitle: ErrorValueEnum
 ms:assetid: 2af99f32-6004-1225-367c-45d693f447b8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249058(v=office.15)
 ms:contentKeyID: 48543921
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: de7f19c119c3161ece57344b911fcca36a1a8a3d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5e9da9b9c197bb9917d2184e07a76bdfb25bd031
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474559"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860862"
 ---
 # <a name="errorvalueenum"></a>ErrorValueEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
@@ -22,17 +21,16 @@ Gibt den Typ des ADO-Laufzeitfehlers an.
 
 Es werden drei Fehlernummerntypen aufgeführt:
 
-  - Positive Dezimalzahl - die niedrigen zwei Bytes der vollständigen Zahl im Dezimalstellenformat. Diese Nummer wird im Standard-Fehlermeldungsdialogfeld von Visual Basic angezeigt. Zum Beispiel Laufzeitfehler "3707".
+- Positive Dezimalzahl - die niedrigen zwei Bytes der vollständigen Zahl im Dezimalstellenformat. Diese Nummer wird im Standard-Fehlermeldungsdialogfeld von Visual Basic angezeigt. Zum Beispiel Laufzeitfehler "3707".
 
-  - Negative Dezimalzahl - die Dezimalübersetzung der vollständigen Fehlernummer.
+- Negative Dezimalzahl - die Dezimalübersetzung der vollständigen Fehlernummer.
 
-  - Hexadezimal – die hexadezimale Darstellung der vollständigen Fehlernummer. Der Windows-Einrichtungscode befindet sich in der vierten Ziffer. *A* ist der Einrichtungscode für ADO-Fehlernummern. Beispielsweise: 0x800 ***A*** 0E7B.
-
+- Hexadezimal – die hexadezimale Darstellung der vollständigen Fehlernummer. Der Windows-Einrichtungscode befindet sich in der vierten Ziffer. *A* ist der Einrichtungscode für ADO-Fehlernummern. Beispielsweise: 0x800 ***A*** 0E7B.
 
 > [!NOTE]
-> <P>OLE DB-Fehler können an Ihre ADO-Anwendung übergeben werden. Diese können in der Regel von einem Windows-Einrichtungscode von <EM>4</EM> identifiziert werden. Beispielsweise 0x800 <STRONG><EM>4</EM></STRONG>.... Weitere Informationen zu diesen Nummern finden Sie in Kapitel 16 der <EM>OLE DB Programmer's Reference</EM>.</P>
+> OLE DB-Fehler können an Ihre ADO-Anwendung übergeben werden. Diese können in der Regel durch einen Windows Facility Code von *4*identifiziert werden. Beispielsweise 0x800_**4**_... Weitere Informationen zu diesen Nummern finden Sie in Kapitel 16 von der *OLE DB-Programmierreferenz.*
 
-
+<br/>
 
 <table>
 <colgroup>
@@ -430,7 +428,7 @@ Es werden drei Fehlernummerntypen aufgeführt:
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

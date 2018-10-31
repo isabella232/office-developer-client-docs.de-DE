@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248899(v=office.15)
 ms:contentKeyID: 48543346
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5d595136c229234dfa0cb04a44fbe45f58cd79fe
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b8576d2a1d579de306b438f7b0fb04a1eb2d46cc
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473558"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863646"
 ---
 # <a name="chapter-14-ado-md-fundamentals"></a>Kapitel 14: Grundlegendes zu ADO MD
 
@@ -22,13 +22,14 @@ Microsoft ActiveX Data Objects (Multidimensional) (ADO MD) bietet einfachen Zugr
 
 ADO MD verwendet wie ADO einen zugrunde liegenden OLE DB-Anbieter für den Zugriff auf Daten. Der Anbieter muss gemäß der OLE DB für OLAP-Spezifikation ein multidimensionaler Datenanbieter (Datenprovider, MDP) sein, um mit ADO MD arbeiten zu können. MDPs stellen Daten in multidimensionalen Ansichten dar. Tabellenorientierte Datenanbieter (Datenprovider, TDP) stellen Daten dagegen in Tabellenansichten dar. In der Dokumentation zu Ihrem OLE DB für OLAP-Anbieter finden Sie ausführlichere Information zur Syntax und zu den Funktionen, die von Ihrem Anbieter unterstützt werden.
 
-Dieses Dokument setzt Erfahrung in der Verwendung der Programmiersprache Visual Basic und grundlegende ADO- und OLAP-Kenntnisse voraus. Weitere Informationen zu ADO finden Sie im [ADO-Programmierhandbuch](ado-programmer-s-guide.md) und der OLE DB für OLAP-Programmierreferenz. Weitere grundlegende Informationen zu ADO MD finden Sie in den folgenden Themen:
+Dieses Dokument setzt Erfahrung in der Verwendung der Programmiersprache Visual Basic und grundlegende ADO- und OLAP-Kenntnisse voraus. Weitere Informationen zu ADO finden Sie im [ADO-Programmierhandbuch](ado-programmer-s-guide.md) und der OLE DB für OLAP-Programmierreferenz. 
 
-  - [Übersicht über Multidimensionale Schemas und Daten](overview-of-multidimensional-schemas-and-data.md)
+In diesem Kapitel werden die folgenden Themen behandelt:
 
-  - [Verwenden von multidimensionalen Daten ](working-with-multidimensional-data.md)
+- [Übersicht über Multidimensionale Schemas und Daten](overview-of-multidimensional-schemas-and-data.md)
 
-  - [Verwenden von ADO mit ADO MD ](using-ado-with-ado-md.md)
+- [Verwenden von multidimensionalen Daten ](working-with-multidimensional-data.md)
 
-  - [Programmieren mit ADO MD ](programming-with-ado-md.md)
+- [Verwenden von ADO mit ADO MD ](using-ado-with-ado-md.md)
 
+- [Programmieren mit ADO MD ](programming-with-ado-md.md)

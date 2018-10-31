@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845002(v=office.15)
 ms:contentKeyID: 48543088
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7151ed1a03c0ce0cf0204716d19bb7cfd2b4f607
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1218dd1cc6b1b309c5513a9b0f67a66d06d9c499
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863637"
 ---
 # <a name="fieldordinalposition-property-dao"></a>Field.OrdinalPosition Property (DAO)
 
@@ -48,23 +48,23 @@ Verfügbarkeit von OrdinalPosition</p></th>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Index</strong>-Objekt</p></td>
+<td><p><strong>Index</strong> -Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p><strong>QueryDef</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p><strong>Recordset</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong>-Objekt</p></td>
+<td><p><strong>Relation</strong> -Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p><strong>TableDef</strong> -Objekt</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 </tbody>
@@ -81,11 +81,8 @@ Zwei oder mehr Field-Objekte in derselben Auflistung können denselben OrdinalPo
 
 Sie können einen Wert angeben, der größer als die Anzahl der Felder minus 1 ist. Das Feld wird in einer Reihenfolge relativ zum größten Wert zurückgegeben. Wenn Sie z. B. die **OrdinalPosition**-Eigenschaft eines Felds auf 20 festlegen (und nur 5 Felder vorhanden sind) und Sie die **OrdinalPosition**-Eigenschaft für zwei anderen Felder auf 10 und 30 gesetzt haben, wird das Feld mit dem Wert 20 zwischen den Feldern mit den Werten 10 und 30 zurückgegeben.
 
-
 > [!NOTE]
-> <P>Selbst wenn die Fields-Auflistung eines TableDef-Objekts nicht aktualisiert wurde, gibt die Reihenfolge der Felder in einem Recordset-Objekt, das vom TableDef-Objekt aus geöffnet wird, die OrdinalPosition-Daten des TableDef-Objekts wieder. Ein Recordset-Objekt vom Typ Tabelle besitzt dieselben OrdinalPosition-Daten wie die zugrunde liegende Tabelle, jeder andere Recordset-Objekttyp weist jedoch neue OrdinalPosition-Daten auf (beginnend bei 0), die der durch die OrdinalPosition-Daten des TableDef-Objekts bestimmten Reihenfolge entsprechen.</P>
-
-
+> Selbst wenn die Fields-Auflistung eines TableDef-Objekts nicht aktualisiert wurde, gibt die Reihenfolge der Felder in einem Recordset-Objekt, das vom TableDef-Objekt aus geöffnet wird, die OrdinalPosition-Daten des TableDef-Objekts wieder. Ein Recordset-Objekt vom Typ Tabelle besitzt dieselben OrdinalPosition-Daten wie die zugrunde liegende Tabelle, jeder andere Recordset-Objekttyp weist jedoch neue OrdinalPosition-Daten auf (beginnend bei 0), die der durch die OrdinalPosition-Daten des TableDef-Objekts bestimmten Reihenfolge entsprechen.
 
 ## <a name="example"></a>Beispiel
 

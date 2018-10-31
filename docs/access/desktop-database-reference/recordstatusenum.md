@@ -4,21 +4,22 @@ TOCTitle: RecordStatusEnum
 ms:assetid: 302915b8-494d-0be2-6dce-eaf91a0ea8ae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249080(v=office.15)
 ms:contentKeyID: 48544022
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 88929ced56583316c42f2d5195054e51e98a1d5b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 06c7674734a044bdc242ec7548685a5faf915be2
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860595"
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere Mengenoperationen an.
+
+<br/>
 
 <table>
 <colgroup>
@@ -61,7 +62,7 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="even">
 <td><p><strong>adRecIntegrityViolation</strong></p></td>
-<td><p>0 x 1000</p></td>
+<td><p>0x1000</p></td>
 <td><p>Gibt an, dass der Datensatz nicht gespeichert wurde, da der Benutzer Integritätseinschränkungen verletzte.</p></td>
 </tr>
 <tr class="odd">
@@ -76,7 +77,7 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="odd">
 <td><p><strong>adRecModified</strong></p></td>
-<td><p>0 x 2</p></td>
+<td><p>0x2</p></td>
 <td><p>Gibt an, dass der Datensatz geändert wurde.</p></td>
 </tr>
 <tr class="even">
@@ -86,12 +87,12 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </tr>
 <tr class="odd">
 <td><p><strong>adRecNew</strong></p></td>
-<td><p>0 x 1</p></td>
+<td><p>0x1</p></td>
 <td><p>Gibt an, dass der Datensatz neu ist.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adRecObjectOpen</strong></p></td>
-<td><p>0 x 4000</p></td>
+<td><p>0x4000</p></td>
 <td><p>Gibt an, dass der Datensatz aufgrund eines Konflikts mit einem geöffneten Speicherobjekt nicht gespeichert wurde.</p></td>
 </tr>
 <tr class="odd">
@@ -128,7 +129,7 @@ Gibt den Status eines Datensatzes in Bezug auf Batchaktualisierungen und andere 
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 AdoEnums.RecordStatus.
 

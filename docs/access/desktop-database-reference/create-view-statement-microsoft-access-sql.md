@@ -1,30 +1,26 @@
 ---
 title: CREATE VIEW-Anweisung (Microsoft Access SQL)
-TOCTitle: CREATE VIEW Statement (Microsoft Access SQL)
+TOCTitle: CREATE VIEW statement (Microsoft Access SQL)
 ms:assetid: ecaabd75-3081-fd35-830d-5a59b0a51922
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836312(v=office.15)
 ms:contentKeyID: 48548519
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 292dddeab15c71fb188a928ac0e491063930214d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f1d13cef4551975dc316b2fbedf2388028956fb3
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473810"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862905"
 ---
 # <a name="create-view-statement-microsoft-access-sql"></a>CREATE VIEW-Anweisung (Microsoft Access SQL)
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Erstellt eine neue Sicht.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der CREATE VIEW-Anweisung oder anderer DDL-Anweisungen in Kombination mit Datenbanken, die nicht aus dem Microsoft Access-Datenbankmodul stammen.</P>
-
-
+> [!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der CREATE VIEW-Anweisung oder anderer DDL-Anweisungen in Kombination mit Datenbanken, die nicht aus dem Microsoft Access-Datenbankmodul stammen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -54,7 +50,7 @@ Die CREATE VIEW-Anweisung besteht aus folgenden Komponenten:
 </tr>
 <tr class="odd">
 <td><p><em>SelectAnweisung</em></p></td>
-<td><p>Eine SQL-SELECT-Anweisung. Weitere Informationen finden Sie unter <a href="select-statement-microsoft-access-sql.md">SELECT-Anweisung</a>.</p></td>
+<td><p>Eine SQL SELECT-Anweisung. Weitere Informationen finden Sie in der <a href="select-statement-microsoft-access-sql.md">SELECT-Anweisung</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -68,7 +64,7 @@ Die SELECT-Anweisung zur Definition einer Sicht kann keine Parameter enthalten.
 
 Der Name der Sicht darf nicht mit dem Namen einer vorhandenen Tabelle identisch sein.
 
-Handelt es sich bei der über die SELECT-Anweisung definierten Abfrage, um eine Abfrage, die aktualisiert werden kann, ist die Aktualisierung der Sicht ebenfalls möglich. Andernfalls ist die Sicht schreibgeschützt.
+Wenn die durch die SELECT-Anweisung definierte Abfrage aktualisiert werden kann, wird die Ansicht auch aktualisiert. Andernfalls ist die Sicht schreibgeschützt.
 
 Verfügen zwei Felder in der über die SELECT-Anweisung definierten Abfrage über den gleichen Namen, muss die Definition der Sicht eine Feldliste einschließen, die für jedes der Felder in der Abfrage einen eindeutigen Namen angibt.
 

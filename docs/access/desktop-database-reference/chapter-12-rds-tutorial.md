@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250277(v=office.15)
 ms:contentKeyID: 48548837
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a482da49bb78a74cc68f589c928ffe13dd4a54ad
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: aec7c9a89ea078bfad9b05d664d373831491edc4
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475515"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860224"
 ---
 # <a name="chapter-12-rds-tutorial"></a>Kapitel 12: RDS-Lernprogramm
 
@@ -48,3 +48,20 @@ Das RDS-Programmiermodell wird unten aufgeführt. Verwenden Sie es als Leitfaden
 
   - Änderungen am **Recordset** -Objekt werden zurück an den Server gesendet und zur Aktualisierung der Datenquelle verwendet.
 
+Dies sind die Schritte in diesem Lernprogramm:
+
+- [Step 1: Specify a Server Program (RDS Tutorial)](step-1-specify-a-server-program-rds-tutorial.md)
+
+- [Step 2: Invoke the Server Program (RDS Tutorial)](step-2-invoke-the-server-program-rds-tutorial.md)
+
+- [Step 3: Server Obtains a Recordset (RDS Tutorial)](step-3-server-obtains-a-recordset-rds-tutorial.md)
+
+- [Step 4: Server Returns the Recordset (RDS Tutorial)](step-4-server-returns-the-recordset-rds-tutorial.md)
+
+- [Step 5: DataControl is Made Usable (RDS Tutorial)](step-5-datacontrol-is-made-usable-rds-tutorial.md)
+
+- [Step 6: Changes are Sent to the Server (RDS Tutorial)](step-6-changes-are-sent-to-the-server-rds-tutorial.md)
+
+- [RDS Tutorial (VBScript)](rds-tutorial-vbscript.md)
+
+- [RDS-Lernprogramm (Visual J++)](rds-tutorial-visual-j.md)

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d61d298da0e3b44895c8fce3ee1adc3b55d9a491
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c03811716e776663601fb9c2f9590e644417e3c1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475666"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860850"
 ---
 # <a name="importexportdata-macro-action"></a>ImportierenExportierenDaten-Makroaktion
 
@@ -66,7 +66,7 @@ Die **ImportierenExportierenDaten** -Aktion hat die folgenden Argumente.
 <li><p>Wählen Sie im Dialogfeld <strong>Tabellen verknüpfen</strong> eine Tabelle aus, und klicken Sie auf <strong>OK</strong>.</p></li>
 </ol>
 <p>Öffnen Sie die neu verknüpfte Tabelle in der Entwurfsansicht. Zeigen Sie die Tabelleneigenschaften an, indem Sie auf der Registerkarte <strong>Entwurf</strong> unter <strong>Tools</strong> auf <strong>Eigenschaftenblatt</strong> klicken. Der Text in der Eigenschafteneinstellung <strong>Beschreibung</strong> ist die Verbindungszeichenfolge für diese Tabelle.</p>
-<p>Weitere Informationen zu ODBC-Verbindungszeichenfolgen finden Sie in der Hilfedatei oder der Dokumentation zum ODBC-Treiber für dieses Format der ODBC-Datenbank.</p></td>
+<p>Weitere Informationen zu ODBC-Verbindungszeichenfolgen finden Sie unter der Hilfedatei oder der Dokumentation zum ODBC-Treiber für diese Art von ODBC-Datenbank.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Objekttyp</strong></p></td>

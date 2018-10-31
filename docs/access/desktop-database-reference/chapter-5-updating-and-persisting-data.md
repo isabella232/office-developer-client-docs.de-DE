@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249493(v=office.15)
 ms:contentKeyID: 48545732
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 91c747c970988a9ca853f0be66f5c0b485f5c3f6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 487fd11112375fb0f5788505d049a4fc71e245ba
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472941"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861974"
 ---
 # <a name="chapter-5-updating-and-persisting-data"></a>Kapitel 5: Aktualisieren und Speichern von Daten
 
@@ -28,3 +28,8 @@ Das zweite Konzept besteht darin, dass Änderungen handelt es sich entweder auf 
 
 Im sofortigen Aktualisierungsmodus werden durch jeden Aufruf der **Update** -Methode die Änderungen an die Datenquelle weitergegeben. Im Batchmodus werden durch jeden Aufruf der **Update** -Methode oder die Verschiebung der aktuellen Zeilenposition die Änderungen im Kopierpuffer gespeichert, aber nur mit der **UpdateBatch** -Methode werden die Änderungen an die Datenquelle weitergegeben.
 
+In diesem Kapitel werden die folgenden Themen behandelt:
+
+- [Updating Data (ADO)](updating-data.md)
+
+- [Persisting Data (ADO)](persisting-data.md)

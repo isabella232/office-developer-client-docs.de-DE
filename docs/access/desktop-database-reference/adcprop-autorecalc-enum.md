@@ -4,14 +4,14 @@ TOCTitle: ADCPROP_AUTORECALC_ENUM
 ms:assetid: 79ed16c1-964d-bf88-22c9-aa0a51303da6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249502(v=office.15)
 ms:contentKeyID: 48545779
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: fc02e8cde556a70ca6b2c72f056d218904c31ec2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b9c1aff21b62eff061a3f68ef3ad56e07e46388d
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475686"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860084"
 ---
 # <a name="adcpropautorecalcenum"></a>ADCPROP\_AUTORECALC\_ENUM
 
@@ -20,6 +20,8 @@ ms.locfileid: "25475686"
 Gibt an, wann der [MSDataShape](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)-Anbieter aggregierte und berechnete Spalten eines hierarchischen Recordsets erneut berechnet.
 
 Diese Konstanten werden nur mit dem **MSDataShape** -Anbieter und das **Recordset-Objekt** "**Auto Recalc**" dynamische-Eigenschaft, die im [Index für dynamische ADO-Eigenschaften](ado-dynamic-property-index.md) verwiesen wird und die in der Microsoft Cursor Service [dokumentiert für OLE verwendet DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) oder [Microsoft Data Shaping Dienst für OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) -Dokumentation.
+
+<br/>
 
 <table>
 <colgroup>
@@ -49,7 +51,7 @@ Diese Konstanten werden nur mit dem **MSDataShape** -Anbieter und das **Recordse
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

@@ -1,21 +1,21 @@
 ---
 title: INSERT INTO-Anweisung (Microsoft Access SQL)
-TOCTitle: INSERT INTO Statement (Microsoft Access SQL)
+TOCTitle: INSERT INTO statement (Microsoft Access SQL)
 ms:assetid: d3e44258-79f2-caba-8629-bde03f898f2d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834799(v=office.15)
 ms:contentKeyID: 48547918
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 751d2e2747a2d3b9aac4a0d36b8fac11a60c418f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ae2aaffc7361588a55cc17cc33169a9b8b840e1f
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474664"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860462"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO-Anweisung (Microsoft Access SQL)
 
@@ -25,11 +25,11 @@ Fügt einen Datensatz oder mehrere Datensätze einer Tabelle hinzu. Dies wird al
 
 ## <a name="syntax"></a>Syntax
 
-Anfügeabfrage mit mehreren Datensätzen:
+**Anfügeabfrage mit mehreren Datensätzen**:
 
 INSERT INTO *Ziel* \[(*Feld1*\[, *Feld2*\[,... \] \])\] \[IN *externe Datenbank* \] auswählen \[ *Quelle*. \] *Feld1*\[, *Feld2*\[,... \] FROM *Tabellenausdruck]*
 
-Anfügeabfrage mit einem Datensatz:
+**Anfügeabfrage mit einem Datensatz**:
 
 INSERT INTO *Ziel* \[(*Feld1*\[, *Feld2*\[,... \] \])\] Werte (*Wert1*\[, *Wert2*\[,... \])
 
@@ -57,7 +57,7 @@ Die INSERT INTO-Anweisung besteht aus folgenden Teilen:
 </tr>
 <tr class="odd">
 <td><p><em>externeDatenbank</em></p></td>
-<td><p>Der Pfad zu einer externen Datenbank. Eine Beschreibung des Pfads finden Sie unter der <a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">IN</a>-Klausel.  </p></td>
+<td><p>Der Pfad zu einer externen Datenbank. Eine Beschreibung des Pfads finden Sie unter der <a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN</a>-Klausel.  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>Quelle</em></p></td>
@@ -101,9 +101,9 @@ Anstatt vorhandene Datensätze aus einer anderen Tabelle anzufügen, können Sie
 
 **Links bereitgestellt werden, von** der Community [UtterAccess](https://www.utteraccess.com) . UtterAccess ist das führende Microsoft Access-Wiki und -Hilfeforum.
 
-  - [Generieren fortlaufender Nummern für INSERT/UPDATE-Anweisungen](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
+- [Generieren fortlaufender Nummern für INSERT/UPDATE-Anweisungen](https://www.utteraccess.com/forum/generating-sequential-num-t446039.html)
 
-  - [SQL-zu-VBA-Formatierungsprogramm](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
+- [SQL-zu-VBA-Formatierungsprogramm](https://www.utteraccess.com/forum/sql-vba-formatter-t1165308.html)
 
 ## <a name="example"></a>Beispiel
 
@@ -128,6 +128,8 @@ Dieses Beispiel wählt alle Datensätze in einer hypothetischen Tabelle "New Cus
      
     End Sub
 ```
+
+<br/>
 
 Dieses Beispiel erstellt einen neuen Datensatz in der Tabelle "Employees".
 

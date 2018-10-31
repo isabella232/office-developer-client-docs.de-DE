@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249673(v=office.15)
 ms:contentKeyID: 48546464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3869f23b93df78fd207812a85f91dd3272bd255f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 362fd0784ee596852af7b16fae5636330a52ed59
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863745"
 ---
 # <a name="chapter-15-adox-fundamentals"></a>Kapitel 15: Grundlegendes zu ADOX
 
@@ -26,15 +26,21 @@ Zur Verwendung von ADOX mit einem Entwicklungstool sollten Sie einen Verweis zur
 
 Der Microsoft OLE DB-Anbieter für das Microsoft Jet-Datenbankmodul unterstützt ADOX vollständig. Abhängig vom jeweiligen Datenprovider werden bestimmte Features von ADOX möglicherweise nicht unterstützt. Weitere Informationen zu unterstützten Features mit dem Microsoft OLE DB-Anbieter für ODBC, dem Microsoft OLE DB-Anbieter für Oracle oder dem Microsoft SQL Server OLE DB-Anbieter finden Sie in der MDAC-Infodatei.
 
-Dieses Dokument setzt Erfahrung in der Verwendung der Programmiersprache Microsoft® Visual Basic® und grundlegende ADO-Kenntnisse voraus. Weitere Informationen zu ADO finden Sie im [ADO-Programmierhandbuch](ado-programmer-s-guide.md). Weitere grundlegende Informationen zu ADOX finden Sie in den folgenden Themen:
+Dieses Dokument setzt Erfahrung in der Verwendung der Programmiersprache Microsoft® Visual Basic® und grundlegende ADO-Kenntnisse voraus. Weitere Informationen zu ADO finden Sie im [ADO-Programmierhandbuch](ado-programmer-s-guide.md).
 
-  - [ADOX-Objekte ](adox-objects.md)
+In diesem Kapitel werden die folgenden Themen behandelt:
 
-  - [ADOX-Auflistungen](adox-collections.md)
+- [Anbieterunterstützung für ADOX](provider-support-for-adox.md)
 
-  - [ADOX-Eigenschaften ](adox-properties.md)
+Weitere grundlegende Informationen zu ADOX finden Sie in den folgenden Themen:
 
-  - [ADOX-Methoden ](adox-methods.md)
+- [ADOX-Objekte ](adox-objects.md)
 
-  - [ADOX-Beispiele ](adox-code-examples.md)
+- [ADOX-Auflistungen](adox-collections.md)
+
+- [ADOX-Eigenschaften ](adox-properties.md)
+
+- [ADOX-Methoden ](adox-methods.md)
+
+- [ADOX-Beispiele ](adox-code-examples.md)
 

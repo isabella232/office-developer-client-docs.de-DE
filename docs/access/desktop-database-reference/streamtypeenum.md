@@ -4,21 +4,22 @@ TOCTitle: StreamTypeEnum
 ms:assetid: 3e84c728-0c71-55fb-06f2-7f4e644689ce
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249172(v=office.15)
 ms:contentKeyID: 48544377
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 138958b0566bba67e617977c1dd8c9b632ea194f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 53fa55b4fbda5232dd1b0d349a70970495ef0b0c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472965"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860851"
 ---
 # <a name="streamtypeenum"></a>StreamTypeEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt den Typ von Daten an, die in einem [Stream](stream-object-ado.md)-Objekt gespeichert sind.
+
+<br/>
 
 <table>
 <colgroup>
@@ -48,7 +49,7 @@ Gibt den Typ von Daten an, die in einem [Stream](stream-object-ado.md)-Objekt ge
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

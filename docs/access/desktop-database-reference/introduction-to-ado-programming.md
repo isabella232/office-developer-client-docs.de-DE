@@ -6,69 +6,37 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249181(v=office.15)
 ms:contentKeyID: 48544423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7d9227b8133d6816750d20847d8a4a1f9ddbd7b2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6e500a71c223ab4951fed90455c192362ea4e2a6
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862124"
 ---
 # <a name="introduction-to-ado-programming"></a>Introduction to ADO Programming
 
-
 **Betrifft**: Access 2013 | Office 2013
 
-Das ADO-Programmierhandbuch soll Entwickler unterstützen, die noch nicht mit ADO vertraut sind, und ihnen eine umfassende Einführung in die Technologie vermitteln. In diesem Handbuch werden die Bibliotheken der ADO-Familie beschrieben, und anhand von Beispielcode in verschiedenen Sprachen wird die Verwendung der Bibliotheken erläutert. Dieses Handbuch enthält außerdem Best Practices für die Verwendung der Bibliotheken sowie Tipps und Tricks zur Optimierung der Leistung Ihrer ADO-Anwendung.
+Eine Einführung in das Programmierhandbuch zu Microsoft ActiveX Data Objects (ADO) finden Sie unter folgenden Themen:
 
-Das ADO-Programmierhandbuch enthält die folgenden Abschnitte und Kapitel:
+- [Neuigkeiten in ADO](what-s-new-in-ado.md)
 
-  - [Abschnitt I: ActiveX Data Objects (ADO)](section-i-activex-data-objects.md)
-    
-      - [Kapitel 1: ADO-Grundlagen](chapter-1-ado-fundamentals.md)
-    
-      - [Kapitel 2: Abrufen von Daten](chapter-2-getting-data.md)
-    
-      - [Kapitel 3: Untersuchen von Daten](chapter-3-examining-data.md)
-    
-      - [Kapitel 4: Bearbeiten von Daten](chapter-4-editing-data.md)
-    
-      - [Kapitel 5: Aktualisieren und Speichern von Daten](chapter-5-updating-and-persisting-data.md)
-    
-      - [Kapitel 6: Fehlerbehandlung](chapter-6-error-handling.md)
-    
-      - [Kapitel 7: Behandeln von ADO-Ereignissen](chapter-7-handling-ado-events.md)
-    
-      - [Kapitel 8: Grundlegendes zu Cursorn und Sperren](chapter-8-understanding-cursors-and-locks.md)
-    
-      - [Kapitel 9: Datenstrukturierung](chapter-9-data-shaping.md)
-    
-      - [Kapitel 10: Datensätze und Datenströme](chapter-10-records-and-streams.md)
+- [Prerequisites (ADO Introduction)](prerequisites-ado-introduction.md)
 
-  - [Abschnitt II: Remote Data Service (RDS)](section-ii-remote-data-service.md)
-    
-      - [Kapitel 11: RDS-Grundlagen](chapter-11-rds-fundamentals.md)
-    
-      - [Kapitel 12: RDS-Lernprogramm](chapter-12-rds-tutorial.md)
-    
-      - [Kapitel 13: RDS-Verwendung und -Sicherheit](chapter-13-rds-usage-and-security.md)
+- [ADO-Bibliotheksfamilie](the-ado-family-of-libraries.md)
 
-  - [Abschnitt III: ActiveX Data Objects (Multidimensional) (ADOMD)](section-iii-ado-multidimensional-ado-md.md)
-    
-      - [Kapitel 14: Grundlegendes zu ADO MD](chapter-14-ado-md-fundamentals.md)
+- [Rolle von ADO in Microsoft Data Access](the-role-of-ado-in-microsoft-data-access.md)
 
-  - [Abschnitt IV: ADO-Erweiterungen für die Datendefinitionssprache (DDL) und Sicherheit (ADOX)](section-iv-ado-extensions-for-data-definition-language-and-security-adox.md)
-    
-      - [Kapitel 15: Grundlegendes zu ADOX](chapter-15-adox-fundamentals.md)
+- [ADO-Aufgabentabelle](ado-task-table.md)
 
-  - [Abschnitt V: Anhänge](section-v-appendixes.md)
-    
-      - [Anhang A: Anbieter](appendix-a-providers.md)
-    
-      - [Anhang B: ADO-Fehler](appendix-b-ado-errors.md)
-    
-      - [Anhang C: Programmieren mit ADO](appendix-c-programming-with-ado.md)
-    
-      - [Anhang D: ADO-Beispiele](appendix-d-ado-samples.md)
+- [ADO-Technologietabelle](ado-technology-table.md)
 
-  - [ADO-Glossar](ado-glossary.md)
+- [ADO-Glossar](ado-glossary.md)
 
+## <a name="next-steps"></a>Nächste Schritte
+
+Fahren Sie mit [Abschnitt I: ActiveX Data Objects](section-i-activex-data-objects.md).
+
+## <a name="see-also"></a>Siehe auch
+
+- [ADO-Programmierhandbuch](ado-programmer-s-guide.md)

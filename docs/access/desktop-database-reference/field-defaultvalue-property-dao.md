@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197092(v=office.15)
 ms:contentKeyID: 48546185
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b5e479739177fa869bb2e96329c47c5f5889b64
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d23e088ca93474ac928875730580a693abe9648c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472819"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862226"
 ---
 # <a name="fielddefaultvalue-property-dao"></a>Field.DefaultValue Property (DAO)
 
@@ -33,8 +33,7 @@ Die Einstellung oder der Rückgabewert ist vom Datentyp **String** und kann maxi
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Sie können die <STRONG>DefaultValue</STRONG>-Eigenschaft eines <STRONG>Field</STRONG>-Objekts für ein <STRONG><A href="tabledef-object-dao.md">TableDef</A></STRONG> -Objekt auch auf einen speziellen Wert, "GenUniqueID( )" genannt, festlegen. Dabei wird diesem Feld eine Zufallszahl zugewiesen, sobald ein neuer Datensatz hinzugefügt oder erstellt wird, wodurch jeder Datensatz einen eindeutigen Bezeichner erhält. Die <STRONG><A href="field-type-property-dao.md">Type</A></STRONG> -Eigenschaft des Felds muss ein <STRONG>Long</STRONG>-Wert sein.</P>
-
+> [!HINWEIS] Sie können die **DefaultValue**-Eigenschaft eines **Field**-Objekts für ein [TableDef](tabledef-object-dao.md) -Objekt auch auf einen speziellen Wert, "GenUniqueID( )" genannt, festlegen. Dabei wird diesem Feld eine Zufallszahl zugewiesen, sobald ein neuer Datensatz hinzugefügt oder erstellt wird, wodurch jeder Datensatz einen eindeutigen Bezeichner erhält. Die [Type](field-type-property-dao.md) -Eigenschaft des Felds muss ein **Long**-Wert sein.
 
 
 Die Verfügbarkeit der **DefaultValue**-Eigenschaft hängt vom Objekt ab, in dem die **Fields**-Auflistung enthalten ist (siehe folgende Tabelle).

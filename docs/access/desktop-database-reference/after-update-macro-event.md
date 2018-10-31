@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm85126
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2927a3ede26487cabf9986b301cfc0617ba155c6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6c4e854e13527f0c20551950aa49dde30cdae9ab
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475991"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862261"
 ---
 # <a name="after-update-macro-event"></a>Makroereignis "Nach Aktualisierung"
 
@@ -26,7 +26,7 @@ Das Ereignis **Nach Aktualisierung** tritt auf, wenn ein Datensatz geändert wur
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Das Ereignis <STRONG>Nach Aktualisierung</STRONG> ist nur in Datenmakros verfügbar.</P>
+> [!HINWEIS] Das Ereignis **Nach Aktualisierung** ist nur in Datenmakros verfügbar.
 
 
 
@@ -80,7 +80,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="odd">
 <td><p>Programmablauf</p></td>
-<td><p><a href="if-then-else-macro-block.md">Wenn...Dann...Sonst-Makroblock</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Makroblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -96,15 +96,15 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Datenblock</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="cancelrecordchange-macro-action.md">AbbrechenDatensatzänderung-Makroaktion</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">Abbrechendatensatzänderung-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="clearmacroerror-macro-action.md">LöschenMakroFehler-Makroaktion</a></p></td>
+<td><p><a href="clearmacroerror-macro-action.md">Löschenmakrofehler-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -116,7 +116,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="logevent-macro-action.md">ProtokollierenEreignis-Makroaktion</a></p></td>
+<td><p><a href="logevent-macro-action.md">Protokollierenereignis-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -124,7 +124,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="raiseerror-macro-action.md">AuslösenFehler-Makroaktion</a></p></td>
+<td><p><a href="raiseerror-macro-action.md">Auslösenfehler-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -136,7 +136,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="setfield-macro-action.md">FestlegenFeld-Makroaktion</a></p></td>
+<td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -148,7 +148,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Aktuali
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="stopmacro-macro-action.md">StopMacro Macro Action</a></p></td>
+<td><p><a href="stopmacro-macro-action.md">StoppMakro-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

@@ -4,21 +4,22 @@ TOCTitle: AffectEnum
 ms:assetid: 15393398-d7eb-a685-1bfa-d6712d8e5015
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248916(v=office.15)
 ms:contentKeyID: 48543404
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 3ffb2ab2abbd24a19ddc433b5fd315dd535fd2a0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9e1bd4d86e6e269c9363daca0ffa7b8df6303326
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473880"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863668"
 ---
 # <a name="affectenum"></a>AffectEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt an, welche Datensätze von einer Operation betroffen sind.
+
+<br/>
 
 <table>
 <colgroup>
@@ -37,12 +38,8 @@ Gibt an, welche Datensätze von einer Operation betroffen sind.
 <tr class="odd">
 <td><p><strong>adAffectAll</strong></p></td>
 <td><p>3</p></td>
-<td><p>Wenn Sie nicht, dass ein <a href="filter-property-ado.md">Filter</a> für das <strong>Recordset-Objekt</strong>angewendet wird, wirkt sich auf alle Datensätze. Wenn die <strong>Filter</strong> -Eigenschaft auf ein zeichenfolgenkriterium festgelegt ist (wie &quot;Author = 'Smith'&quot;), und klicken Sie dann der Vorgang sichtbaren Datensätze im aktuellen Kapitel auswirkt. Wenn die <strong>Filter</strong> -Eigenschaft auf ein Element von <a href="filtergroupenum.md">FilterGroupEnum</a> oder ein Array von Lesezeichen festgelegt ist, wird der Vorgang alle Zeilen des <strong>Recordsets</strong>beeinflusst.</p>
-
-> [!NOTE]
-> <P>AdAffectAll ist im Objektbrowser von Visual Basic ausgeblendet.</P>
-
-
+<td><p>Wenn Sie nicht, dass ein <a href="filter-property-ado.md">Filter</a> für das <strong>Recordset-Objekt</strong>angewendet wird, wirkt sich auf alle Datensätze. Wenn die <strong>Filter</strong> -Eigenschaft auf ein zeichenfolgenkriterium festgelegt ist (wie &quot;Author = 'Smith'&quot;), der Vorgang wirkt sich auf die sichtbaren Datensätze im aktuellen Kapitel. Wenn die <strong>Filter</strong> -Eigenschaft auf ein Element von <a href="filtergroupenum.md">FilterGroupEnum</a> oder ein Array von Lesezeichen festgelegt ist, wirkt sich die Operation alle Zeilen des <strong>Recordset-Objekts</strong>.</p>
+<p><strong>Hinweis</strong>: AdAffectAll ist im Objektbrowser von Visual Basic ausgeblendet.</p>
 </td>
 </tr>
 <tr class="even">
@@ -64,7 +61,7 @@ Gibt an, welche Datensätze von einer Operation betroffen sind.
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

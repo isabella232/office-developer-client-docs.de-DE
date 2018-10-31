@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249721(v=office.15)
 ms:contentKeyID: 48546636
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f852901be41060568bdbad539906e9166d080fad
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 52d37d5b618db5e2de698fc4250afde7c4ca5fb5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474499"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862184"
 ---
 # <a name="what-is-a-lock"></a>Was ist eine Sperre?
 
@@ -30,5 +30,9 @@ Anbieter unterstützen möglicherweise nicht alle Sperrtypen. Wenn ein Anbieter 
 
 Die Einstellung **adLockPessimistic** wird nicht unterstützt, wenn die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft auf **adUseClient** festgelegt ist. Falls ein nicht unterstützter Wert festgelegt wird, wird kein Fehler gemeldet. Stattdessen wird die ähnlichste unterstützte **LockType** -Eigenschaft verwendet.
 
-Die LockType-Eigenschaft hat Lese-/Schreibzugriff, wenn das Recordset-Objekt geschlossen ist. Wenn das Recordset-Objekt geöffnet ist, ist sie schreibgeschützt.
+Die **LockType** -Eigenschaft besteht Lese-/Schreibzugriff, wenn das **Recordset-Objekt** ist geschlossen, und schreibgeschützt, wenn es geöffnet ist.
+
+Dieser Abschnitt enthält die folgenden Themen:
+
+- [Sperrtypen](types-of-locks.md)
 

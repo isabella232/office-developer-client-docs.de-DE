@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 422d33e65f2ca3148276759a8c973295db8bc447
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 787375117566673b745cf819694a8d2d77e13779
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475141"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861568"
 ---
 # <a name="ado-task-table"></a>ADO-Aufgabentabelle
 
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind Programmieraufgaben aus dem *ADO-Programmierhandbu
 </tr>
 <tr class="odd">
 <td><p>Navigieren zu einem bestimmten Datensatz</p></td>
-<td><p><a href="navigating-through-the-data.md">Navigieren in den Daten</a></p></td>
+<td><p><a href="navigating-through-the-data.md">Navigieren durch die Daten</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Zugreifen auf Spaltenwerte</p></td>
@@ -62,7 +62,7 @@ In der folgenden Tabelle sind Programmieraufgaben aus dem *ADO-Programmierhandbu
 </tr>
 <tr class="even">
 <td><p>Ändern von Daten und Werten</p></td>
-<td><p><a href="editing-existing-records.md">Bearbeiten vorhandener Datensätze</a></p></td>
+<td><p><a href="editing-existing-records.md">Editing Existing Records</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Hinzufügen neuer Daten</p></td>
@@ -78,7 +78,7 @@ In der folgenden Tabelle sind Programmieraufgaben aus dem *ADO-Programmierhandbu
 </tr>
 <tr class="even">
 <td><p>Beginnen von Transaktionen und Ausführen eines Commits bzw. Rollbacks</p></td>
-<td><p><a href="transaction-processing.md">Transaktionsverarbeitung</a></p></td>
+<td><p><a href="transaction-processing.md">Die Verarbeitung von Transaktionen</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Speichern von Datensätzen in einer Datei (XML-Datei oder Binärdatei)</p></td>
@@ -98,11 +98,11 @@ In der folgenden Tabelle sind Programmieraufgaben aus dem *ADO-Programmierhandbu
 </tr>
 <tr class="odd">
 <td><p>Auswählen von Sperrtypen</p></td>
-<td><p><a href="types-of-locks.md">Sperrtypen</a></p></td>
+<td><p><a href="types-of-locks.md">Typen von Sperren</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Zurückgeben verknüpfter Datensätze in einem <strong>Recordset</strong>-Objekt</p></td>
-<td><p><a href="data-shaping-summary.md">Datenstrukturierung (Zusammenfassung)</a></p></td>
+<td><p><a href="data-shaping.md">Datenstrukturierung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Zugreifen auf halbstrukturierte Daten</p></td>

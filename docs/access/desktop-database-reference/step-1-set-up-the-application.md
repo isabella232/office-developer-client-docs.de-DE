@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249742(v=office.15)
 ms:contentKeyID: 48546727
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e841dccca2069530f46c644e9af034de1ebddf7f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: bfbe3bd087c34c6bbd026742fd1a8c609621c002
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475778"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25859867"
 ---
 # <a name="step-1-set-up-the-application"></a>Schritt 1: Einrichten der Anwendung
 
@@ -22,5 +22,7 @@ ms.locfileid: "25475778"
 
 Erstellen Sie ein virtuelles IIS-Verzeichnis mit dem Namen "XMLPersist", das Skriptberechtigungen besitzt. Erstellen Sie in dem Ordner, auf den das virtuelle Verzeichnis verweist, zwei neue Textdateien. Nennen Sie eine der Dateien "XMLResponse.asp" und die andere "Default.htm".
 
-**Nächste** [Schritt 2: Abrufen der Daten](step-2-get-the-data.md)
+### <a name="next-step"></a>Nächster Schritt
+
+[Schritt 2: Abrufen der Daten](step-2-get-the-data.md)
 

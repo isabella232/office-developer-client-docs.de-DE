@@ -10,12 +10,12 @@ f1_keywords:
 - ado210.chm1231106
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5199037f44e75bddf697197bca992a95b8432420
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 153f59ebbcfae89f6358fe0d707791aab8a8cdd7
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605744"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864074"
 ---
 # <a name="command-object-ado"></a>Command-Objekt (ADO)
 
@@ -34,7 +34,7 @@ Die Auflistungen, Methoden und Eigenschaften eines **Command** -Objekts ermögli
 
   - Festlegen von parametrisierten Abfragen oder von Argumenten für gespeicherte Prozeduren mit [Parameter](parameter-object-ado.md)-Objekten und der [Parameters](parameters-collection-ado.md)-Auflistung.
 
-<<<<<<< Kopf
+<<<<<<< HEAD
   - Ausführen eines Befehls und Rückgabe eines **Recordset** -Objekts, falls zutreffend, mit der [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))-Methode.
 =======
   - Ausführen eines Befehls und Rückgabe eines **Recordset** -Objekts, falls zutreffend, mit der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)-Methode.
@@ -54,11 +54,8 @@ Die Auflistungen, Methoden und Eigenschaften eines **Command** -Objekts ermögli
 
   - Zugreifen auf anbieterspezifische Attribute für die [Properties](properties-collection-ado.md)-Auflistung.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Sie können eine Abfrage ausführen, ohne ein <STRONG>Command</STRONG> -Objekt zu verwenden, indem Sie eine Abfragezeichenfolge an die <A href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Execute</A>-Methode eines <STRONG>Connection</STRONG> -Objekts oder an die <A href="open-method-ado-recordset.md">Open</A>-Methode eines <STRONG>Recordset</STRONG> -Objekts übergeben. Es ist jedoch ein <STRONG>Command</STRONG> -Objekt erforderlich, wenn der Befehlstext gespeichert und erneut ausgeführt werden soll. Sie können aber auch Abfrageparameter verwenden.</P>
-
-
+> [!HINWEIS] Sie können eine Abfrage ausführen, ohne ein **Command** -Objekt zu verwenden, indem Sie eine Abfragezeichenfolge an die [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)-Methode eines **Connection** -Objekts oder an die [Open](open-method-ado-recordset.md)-Methode eines **Recordset** -Objekts übergeben. Es ist jedoch ein **Command** -Objekt erforderlich, wenn der Befehlstext gespeichert und erneut ausgeführt werden soll. Sie können aber auch Abfrageparameter verwenden.
 
 Wenn Sie ein **Command** -Objekt unabhängig von einem zuvor definierten **Connection** -Objekt erstellen möchten, geben Sie für seine **ActiveConnection** -Eigenschaft eine gültige Verbindungszeichenfolge an. ADO erstellt auch in diesem Fall ein **Connection** -Objekt, weist das Objekt aber keiner Objektvariablen zu. Wenn Sie jedoch derselben Verbindung mehrere **Command** -Objekte zuordnen, müssen Sie ein **Connection** -Objekt explizit erstellen und öffnen. Auf diese Weise wird dem **Connection** -Objekt eine Objektvariable zugeordnet. Wenn Sie die **ActiveConnection** -Eigenschaft des **Command** -Objekts nicht auf diese Objektvariable festlegen, erstellt ADO für jedes **Command** -Objekt ein neues **Connection** -Objekt, selbst wenn Sie dieselbe Verbindungszeichenfolge verwenden.
 

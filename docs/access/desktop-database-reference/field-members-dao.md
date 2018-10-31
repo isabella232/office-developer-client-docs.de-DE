@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193511(v=office.15)
 ms:contentKeyID: 48544689
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5270acfe22d4b19447290be7f626185b5375cdbf
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ccfb0239cda03ec8a89722d0669cd66acfa74922
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475746"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860896"
 ---
 # <a name="field-members-dao"></a>Field Members (DAO)
 
@@ -105,7 +105,7 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 <td><p></p>
 
 > [!NOTE]
-> <P>[!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</P>
+> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
 
 
 <p>Gibt den Wert eines <strong>Field</strong>-Objekts in der Datenbank zurück, das vorhanden war, als die letzte Batchaktualisierung begann (nur ODBCDirect-Arbeitsbereiche).</p></td>
@@ -155,7 +155,7 @@ Ein Field-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte und
 <td><p></p>
 
 > [!NOTE]
-> <P>[!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</P>
+> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
 
 
 <p>Gibt einen Wert zurück, der aktuell in der Datenbank vorhanden und neuer ist als die <strong>OriginalValue</strong>-Eigenschaft, wie von einem Konflikt der Batchaktualisierung festgestellt wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>

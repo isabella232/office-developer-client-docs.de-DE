@@ -1,19 +1,19 @@
 ---
-title: MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VJ++)
-TOCTitle: MoveFirst, MoveLast, MoveNext, and MovePrevious Methods Example (VJ++)
+title: MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methode (Beispiel) (VJ++)
+TOCTitle: MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VJ++)
 ms:assetid: 6dffcfa5-9a63-e289-28c6-9d9ff2a7b2ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249435(v=office.15)
 ms:contentKeyID: 48545507
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 22ba56656a34f6a7920503df427568afa40f2c13
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 418f5ccd65422f087da761b4485ce73cb55a2e90
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860231"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vj"></a>MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VJ++)
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vj"></a>MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methode (Beispiel) (VJ++)
 
 
 **Betrifft**: Access 2013 | Office 2013

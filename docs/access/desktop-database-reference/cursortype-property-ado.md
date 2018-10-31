@@ -3,7 +3,7 @@
 >>>>>>> Master Ms:assetid: f42ded8f-9f92-ef03-a198-ffb892324611 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250239(v=office.15) Ms:contentKeyID: 48548682 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 # <a name="cursortype-property-ado"></a>CursorType-Eigenschaft (ADO)
 =======
 # <a name="cursortype-property-ado"></a>CursorType-Eigenschaft (ADO)
@@ -14,7 +14,7 @@
 
 Gibt den Typ des Cursors an, der in einem [Recordset](recordset-object-ado.md)-Objekt verwendet wird.
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 =======
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
@@ -64,11 +64,8 @@ Im folgenden Diagramm ist die für jeden Cursortyp erforderliche Anbieterfunktio
 </table>
 
 
-
 > [!NOTE]
-> <P>Supports(adUpdateBatch) gibt zwar für dynamische Cursor und Vorwärtscursor True zurück, aber für Batchaktualisierungen sollten Sie einen Keysetcursor oder einen statischen Cursor verwenden. Legen Sie die LockType-Eigenschaft auf adLockBatchOptimistic sowie die CursorLocation-Eigenschaft auf adUseClient fest, um den für Batchaktualisierungen erforderlichen Cursordienst für OLE DB zu aktivieren.</P>
-
-
+> Supports(adUpdateBatch) gibt zwar für dynamische Cursor und Vorwärtscursor True zurück, aber für Batchaktualisierungen sollten Sie einen Keysetcursor oder einen statischen Cursor verwenden. Legen Sie die LockType-Eigenschaft auf adLockBatchOptimistic sowie die CursorLocation-Eigenschaft auf adUseClient fest, um den für Batchaktualisierungen erforderlichen Cursordienst für OLE DB zu aktivieren.
 
 Die CursorType-Eigenschaft hat Lese-/Schreibzugriff, wenn das Recordset-Objekt geschlossen ist. Wenn das Recordset-Objekt geöffnet ist, ist sie schreibgeschützt.
 

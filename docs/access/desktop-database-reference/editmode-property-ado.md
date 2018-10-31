@@ -3,7 +3,7 @@
 >>>>>>> Master Ms:assetid: 28ca8f14-abee-ad20-9c16-11bb36b487e4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249045(v=office.15) Ms:contentKeyID: 48543867 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 # <a name="editmode-property-ado"></a>EditMode-Eigenschaft (ADO)
 =======
 # <a name="editmode-property-ado"></a>EditMode-Eigenschaft (ADO)
@@ -14,7 +14,7 @@
 
 Gibt den Bearbeitungsstatus des aktuellen Datensatzes an.
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ## <a name="return-value"></a>Rückgabewert
 =======
 ## <a name="return-value"></a>Rückgabewert
@@ -32,6 +32,6 @@ Wenn ein Anruf an [Löschen](delete-method-ado-recordset.md) löscht den Datensa
 
 
 > [!NOTE]
-> <P><STRONG>EditMode</STRONG> kann nur einen gültigen Wert zurückgeben, wenn ein aktueller Datensatz vorhanden ist. <STRONG>EditMode</STRONG> gibt einen Fehler zurück, wenn <A href="bof-eof-properties-ado.md">BOF oder EOF</A> true ist, oder wenn der aktuelle Datensatz gelöscht wurde.</P>
+> **EditMode** kann nur einen gültigen Wert zurückgeben, wenn ein aktueller Datensatz vorhanden ist. **EditMode** gibt einen Fehler zurück, wenn [BOF oder EOF](bof-eof-properties-ado.md) true ist, oder wenn der aktuelle Datensatz gelöscht wurde.
 
 

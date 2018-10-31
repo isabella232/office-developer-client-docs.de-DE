@@ -1,10 +1,10 @@
 ---
 title: UPDATE-Anweisung (Microsoft Access SQL)
-TOCTitle: UPDATE Statement (Microsoft Access SQL)
+TOCTitle: UPDATE statement (Microsoft Access SQL)
 ms:assetid: 08f9c3d6-c020-ecf1-5748-43b93a76dfbb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845036(v=office.15)
 ms:contentKeyID: 48543111
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277583
@@ -12,15 +12,14 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 3affce9346e9e322bc588ca1c3be24867a1469d6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7a761fbc6404cf72818271b956bfc63516942d25
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473875"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863283"
 ---
 # <a name="update-statement-microsoft-access-sql"></a>UPDATE-Anweisung (Microsoft Access SQL)
-
 
 **Betrifft**: Access 2013 | Office 2013
 
@@ -75,11 +74,8 @@ WHERE ShipCountry = 'UK';
 
 
 > [!IMPORTANT]
-> <UL>
-> <LI>
-> <P>UPDATE generiert kein Resultset. Nach dem Aktualisieren von Datensätzen mit einer Aktualisierungsabfrage können Sie den Vorgang außerdem nicht rückgängig machen. Wenn Sie wissen möchten, welche Datensätze aktualisiert wurden, untersuchen Sie zunächst die Ergebnisse einer Auswahlabfrage, die die gleichen Kriterien verwendet, und führen Sie dann die Aktualisierungsabfrage aus.</P>
-> <LI>
-> <P>Behalten Sie immer Sicherungskopien Ihrer Daten. Wenn Sie die falschen Datensätze aktualisieren, können Sie sie aus den Sicherungskopien abrufen.</P></LI></UL>
+- UPDATE generiert kein Resultset. Nach dem Aktualisieren von Datensätzen mit einer Aktualisierungsabfrage können Sie den Vorgang außerdem nicht rückgängig machen. Wenn Sie wissen möchten, welche Datensätze aktualisiert wurden, untersuchen Sie zunächst die Ergebnisse einer Auswahlabfrage, die die gleichen Kriterien verwendet, und führen Sie dann die Aktualisierungsabfrage aus.
+- Behalten Sie immer Sicherungskopien Ihrer Daten. Wenn Sie die falschen Datensätze aktualisieren, können Sie sie aus den Sicherungskopien abrufen.
 
 
 

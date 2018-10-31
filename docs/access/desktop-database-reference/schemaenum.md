@@ -4,31 +4,32 @@ TOCTitle: SchemaEnum
 ms:assetid: 6147b682-3c4f-ea91-fff6-ac73107d206d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249359(v=office.15)
 ms:contentKeyID: 48545208
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: e928271d61cf38232014db1c67482ca6d47fd863
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a6f1e174253904adf7392aa7ae19786103e55843
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475691"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863353"
 ---
 # <a name="schemaenum"></a>SchemaEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Der Typ des **Recordset** -Schemaobjekts wird angegeben, das von der [OpenSchema](openschema-method-ado.md)-Methode abgerufen wird.
 
-**Hinweise**
+## <a name="remarks"></a>Hinweise
 
-Weitere Informationen zu der Funktion und den Spalten, die für jede ADO-Konstante zurückgegeben werden, finden Sie in den Themen von Anhang B der *OLE DB Programmer's Reference*. Die Namen der einzelnen Themen sind im Abschnitt "Beschreibung" der nachfolgenden Tabelle in Klammern aufgelistet.
+Weitere Informationen über die Funktion und den Spalten, die für jede ADO-Konstante zurückgegeben finden Sie in den Themen von Anhang B der *OLE DB Programmer's Reference*. Die Namen der einzelnen Themen wird in Klammern im Abschnitt Beschreibung in der folgenden Tabelle aufgeführt.
 
-Weitere Informationen über die Funktion und den Spalten, die für jede ADO MD-Konstante zurückgegeben finden Sie in Kapitel 23 der Dokumentation zu *OLE DB für OLAP* . Die Namen der einzelnen Themen, die in Klammern aufgelistet und mit einem Sternchen gekennzeichnet ist (\*) in der Spalte Beschreibung der in der folgenden Tabelle.
+Weitere Informationen über die Funktion und den Spalten, die für jede ADO MD-Konstante zurückgegeben finden Sie in Kapitel 23 der Dokumentation zu *OLE DB für OLAP* . Die Namen der einzelnen Themen, die in Klammern aufgelistet und mit einem Sternchen gekennzeichnet ist (\*) in der Spalte Beschreibung in der folgenden Tabelle.
 
 Übersetzen Sie die Datentypen der Spalten in der Dokumentation zu OLE DB in ADO-Datentypen anhand der Spalte Beschreibung des Themas ADO [DataTypeEnum-Wert](datatypeenum.md) . Angenommen, ein OLE DB-Datentyp des **DATENBANKTYP\_WSTR** ein ADO-Datentyp des **AdWChar**entspricht.
 
-ADO generiert Schema-ähnliche Ergebnisse für die Konstanten, die **AdSchemaDBInfoKeywords** und **AdSchemaDBInfoLiterals**. ADO ein **Recordset-Objekt**erstellt und dann füllt jede Zeile mit den Werten, die von den Methoden **IDBInfo:: GetKeywords** und **:: GetLiteralInfo** zurückgegeben. Weitere Informationen zu diesen Methoden finden Sie im Abschnitt IDBInfo der *OLE DB-Programmierreferenz.*
+ADO generiert Schema-ähnliche Ergebnisse für die Konstanten, die **AdSchemaDBInfoKeywords** und **AdSchemaDBInfoLiterals**. ADO ein **Recordset-Objekt**erstellt, und füllt dann jede Zeile mit den Werten, die von den Methoden **IDBInfo:: GetKeywords** und **:: GetLiteralInfo** zurückgegeben. Weitere Informationen zu diesen Methoden finden Sie im Abschnitt "IDBInfo" der *OLE DB Programmer's Reference*.
+
+<br/>
 
 <table>
 <colgroup>
@@ -458,7 +459,7 @@ ANSICHTSNAME</p></td>
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248917(v=office.15)
 ms:contentKeyID: 48543405
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b3315fc0b6d72689e36530b7e7daf7b94732459f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ff4b05f364b400c3741f690eae58d926aa9d2bad
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474449"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861514"
 ---
 # <a name="recordcreateoptionsenum"></a>RecordCreateOptionsEnum
 
@@ -51,7 +51,7 @@ Gibt an, ob ein vorhandener **Datensatz** geöffnet werden soll, oder ein neuer 
 </tr>
 <tr class="even">
 <td><p><strong>adCreateStructDoc</strong></p></td>
-<td><p>0 x 80000000</p></td>
+<td><p>0x80000000</p></td>
 <td><p>Erstellt einen neuen <strong>Datensatz</strong> vom Typ <a href="recordtypeenum.md">AdStructDoc</a>statt einen bereits vorhandenen <strong>Datensatz</strong>zu öffnen.</p></td>
 </tr>
 <tr class="odd">
@@ -68,7 +68,7 @@ Gibt an, ob ein vorhandener **Datensatz** geöffnet werden soll, oder ein neuer 
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Diese Konstanten haben keine ADO/WFC-Entsprechungen.
 

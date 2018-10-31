@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248958(v=office.15)
 ms:contentKeyID: 48543558
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6bd949b92068619b76ac78d5e62cde0e247ed7b6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 178254006216a71ae34c437da86cb8381d82125e
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474065"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861582"
 ---
 # <a name="copyto-method-ado"></a>CopyTo-Methode (ADO)
 
@@ -31,13 +31,10 @@ Kopiert die angegebene Anzahl von Zeichen oder Bytes (in Abhängigkeit vom [Type
 
   - Der Wert einer Objektvariable, der einen Verweis auf ein geöffnetes **Stream**-Objekt enthält. Das aktuelle **Stream**-Objekt wird in das durch *DestStream* angegebene **Stream**-Zielobjekt kopiert. Das **Stream**-Zielobjekt muss bereits geöffnet sein. Ist dies nicht der Fall, tritt ein Laufzeitfehler auf.
 
-
-    
+   
 
     > [!NOTE]
-    > <P>Der Parameter <EM>DestStream</EM> möglicherweise nicht, da dies erfordert Zugriff auf eine private Schnittstelle am <STRONG>Stream</STRONG> -Objekt, das an den Client nicht remotefähig einen Proxy des <STRONG>Stream</STRONG> -Objekt.</P>
-
-
+    > Der *DestStream* -Parameter möglicherweise nicht, da dies erfordert Zugriff auf eine private Schnittstelle am **Stream** -Objekt, das an den Client nicht remotefähig einen Proxy des **Stream** -Objekts.
 
   - *NumChars*
 

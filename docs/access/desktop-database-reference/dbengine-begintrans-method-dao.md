@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837255(v=office.15)
 ms:contentKeyID: 48548925
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 114f5c1cfd08098b8dc0a2731709965e2c3f2ea4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 281b319de123049cfe96d9dc8cf35d6bca9bf37a
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474064"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860602"
 ---
 # <a name="dbenginebegintrans-method-dao"></a>DBEngine.BeginTrans Method (DAO)
 
@@ -34,7 +34,7 @@ In der Regel verwenden Sie Transaktionen zur Wahrung der Integrität Ihrer Daten
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Innerhalb eines <STRONG>Workspace</STRONG>-Objekts sind Transaktionen für <STRONG>Workspace</STRONG> immer global und nicht auf ein <STRONG>Connection</STRONG>- oder <STRONG>Database</STRONG>-Objekt beschränkt. Wenn Sie Operationen für mehrere Verbindungen oder Datenbanken innerhalb einer <STRONG>Workspace</STRONG>-Transaktion durchführen, wirkt sich das Auflösen der Transaktion (d. h. die Verwendung der <STRONG>CommitTrans</STRONG>- oder <STRONG>Rollback</STRONG>-Methode) auf alle Operationen für sämtliche Verbindungen und Datenbanken innerhalb dieses Arbeitsbereichs aus.</P>
+> [!HINWEIS] Innerhalb eines **Workspace**-Objekts sind Transaktionen für **Workspace** immer global und nicht auf ein **Connection**- oder **Database**-Objekt beschränkt. Wenn Sie Operationen für mehrere Verbindungen oder Datenbanken innerhalb einer **Workspace**-Transaktion durchführen, wirkt sich das Auflösen der Transaktion (d. h. die Verwendung der **CommitTrans**- oder **Rollback**-Methode) auf alle Operationen für sämtliche Verbindungen und Datenbanken innerhalb dieses Arbeitsbereichs aus.
 
 
 
@@ -54,12 +54,8 @@ Wenn Sie in ODBC-Arbeitsbereichen **CommitTrans** verwenden, ist der Cursor mög
 
 
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Die Leistung der Anwendung lässt sich oftmals dadurch verbessern, dass Operationen unterbrochen werden, die Datenträgerzugriff auf Transaktionsblöcke erfordern. So werden die Operationen zwischengespeichert, und die Zugriffe auf den Datenträger können deutlich verringert werden.</P>
-> <LI>
-> <P>In einem Microsoft Access-Arbeitsbereich werden Transaktionen in einer Datei protokolliert, die in dem Verzeichnis gespeichert ist, das durch die Umgebungsvariable TEMP auf der Arbeitsstation festgelegt ist. Wenn der Speicherplatz des TEMP-Laufwerks für die Protokolldatei nicht ausreicht, löst das Datenbankmodul einen Laufzeitfehler aus. Wenn Sie nun <STRONG>CommitTrans</STRONG> verwenden, wird ein Commit für eine unbestimmte Anzahl von Operationen ausgeführt. Die übrigen Operationen gehen verloren, und die Operation muss neu gestartet werden. Bei Verwendung einer <STRONG>Rollback</STRONG>-Methode wird das Transaktionsprotokoll freigegeben, und für sämtliche Operationen in der Transaktion wird ein Rollback ausgeführt.</P>
-> <LI>
-> <P>Wenn Sie den Klon eines <STRONG>Recordset</STRONG>-Objekts in einer ausstehenden Transaktion schließen, wird eine implizite <STRONG>Rollback</STRONG>-Operation verursacht.</P></LI></UL>
+> - Die Leistung der Anwendung lässt sich oftmals dadurch verbessern, dass Operationen unterbrochen werden, die Datenträgerzugriff auf Transaktionsblöcke erfordern. So werden die Operationen zwischengespeichert, und die Zugriffe auf den Datenträger können deutlich verringert werden.
+> - In einem Microsoft Access-Arbeitsbereich werden Transaktionen in einer Datei protokolliert, die in dem Verzeichnis gespeichert ist, das durch die Umgebungsvariable TEMP auf der Arbeitsstation festgelegt ist. Wenn der Speicherplatz des TEMP-Laufwerks für die Protokolldatei nicht ausreicht, löst das Datenbankmodul einen Laufzeitfehler aus. Wenn Sie nun **CommitTrans** verwenden, wird ein Commit für eine unbestimmte Anzahl von Operationen ausgeführt. Die übrigen Operationen gehen verloren, und die Operation muss neu gestartet werden. Bei Verwendung einer **Rollback**-Methode wird das Transaktionsprotokoll freigegeben, und für sämtliche Operationen in der Transaktion wird ein Rollback ausgeführt.
+> - Wenn Sie den Klon eines **Recordset**-Objekts in einer ausstehenden Transaktion schließen, wird eine implizite **Rollback**-Operation verursacht.
 
 

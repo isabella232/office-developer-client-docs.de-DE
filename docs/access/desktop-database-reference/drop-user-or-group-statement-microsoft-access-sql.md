@@ -1,32 +1,31 @@
 ---
 title: DROP USER- oder GROUP-Anweisung (Microsoft Access SQL)
-TOCTitle: DROP USER or GROUP Statement (Microsoft Access SQL)
+TOCTitle: DROP USER or GROUP statement (Microsoft Access SQL)
 ms:assetid: 46bc5916-556b-17df-2f4c-8fd7bbd21ef7
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193192(v=office.15)
 ms:contentKeyID: 48544575
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 3a5cf75de06c13e2452e5f33b8355b7fb480d8a3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a7988a2124af13dc84cefe678342da969e349a06
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473165"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864029"
 ---
 # <a name="drop-user-or-group-statement-microsoft-access-sql"></a>DROP USER- oder GROUP-Anweisung (Microsoft Access SQL)
 
-
 **Betrifft**: Access 2013 | Office 2013
 
-Löscht, sofern vorhanden, einen oder mehrere *Benutzer* bzw. eine oder mehrere *Gruppe*(n) oder entfernt, sofern vorhanden, einen oder mehrere *Benutzer* aus einer vorhandenen *Gruppe*.
+Löscht eine oder mehrere vorhandene *Benutzer* oder *Gruppen*, oder einen oder mehrere vorhandene *Benutzer* aus einer vorhandenen *Gruppe*entfernt.
 
 ## <a name="syntax"></a>Syntax
 
-Zum Löschen eines oder mehrerer *Benutzer*(s) bzw. zum Entfernen eines oder mehrerer *Benutzer*(s) aus einer *Gruppe*:
+**Löschen Sie einen oder mehrere _Benutzer_ oder eine oder mehrere _Benutzer_ aus einer _Gruppe_entfernen**:
 
 DROP USER *Benutzer*\[, *Benutzer*,... \] \[Aus *Gruppe*\]
 
-Zum Löschen einer oder mehrerer *Gruppe*(n):
+**Löschen einer oder mehrerer _Gruppen_**:
 
 DROP GROUP *Gruppe*\[, *Gruppe*,...\]
 
@@ -58,7 +57,7 @@ Die DROP USER- oder GROUP-Anweisung besteht aus folgenden Komponenten:
 
 ## <a name="remarks"></a>Hinweise
 
-Wenn das FROM-Schlüsselwort in der DROP USER-Anweisung verwendet wird, werden alle in der Anweisung aufgelisteten *Benutzer* aus der *Gruppe* entfernt, die im Anschluss an das FROM-Schlüsselwort angegeben wird. Die *Benutzer* selbst werden jedoch nicht gelöscht.
+Wenn das FROM-Schlüsselwort in der DROP USER-Anweisung verwendet wird, wird jeder in der Anweisung aufgeführte *Benutzer* aus der *Gruppe* angegeben nach der FROM-Schlüsselwort entfernt werden. Jedoch die *Benutzer* selbst nicht gelöscht werden.
 
-Die DROP GROUP-Anweisung dient zum Löschen der angegebenen *Grupppe*(n). Dieser Löschvorgang hat keine Auswirkung auf die *Benutzer*, die Mitglieder der *Gruppe*(n) sind, sie sind lediglich keine Mitglieder der gelöschten *Gruppe*(n) mehr.
+Die DROP GROUP-Anweisung löscht die angegebene *Gruppe*(s). Der *Benutzer* , die Mitglieder der *Gruppe*(s) sind nicht betroffen sind, aber sie werden nicht mehr Mitglieder der gelöschten *Gruppe*(s).
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250014(v=office.15)
 ms:contentKeyID: 48547742
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b47b7b0514b78a89425e47962c36b092e35677ea
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 03d3b7ac215c8b5328148b33e2e966c4e574c98e
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25864005"
 ---
 # <a name="append-method-ado"></a>Append-Methode (ADO)
 
@@ -78,8 +78,7 @@ Der *FieldValue* -Parameter ist nur gültig, wenn ein **Field** -Objekt eines [R
 
 
 > [!NOTE]
-> <P>Bei neuen <STRONG>Field</STRONG> -Objekten, die der <STRONG>Fields</STRONG>-Auflistung eines <STRONG>Record</STRONG>-Objekts angefügt wurden, muss die <A href="value-property-ado.md">Value</A> -Eigenschaft festgelegt werden, bevor andere <STRONG>Field</STRONG> -Eigenschaften angegeben werden. Zuerst müssen ein angegebener Wert für die <STRONG>Value</STRONG> -Eigenschaft zugewiesen und die <A href="update-method-ado.md">Update</A>-Methode für die <STRONG>Fields</STRONG> -Auflistung aufgerufen worden sein. Anschließend kann auf weitere Eigenschaften, wie z. B. <A href="type-property-ado.md">Type</A> oder <A href="attributes-property-ado.md">Attributes</A>, zugegriffen werden.</P>
-
+> Bei neuen **Field** -Objekten, die der **Fields**-Auflistung eines **Record**-Objekts angefügt wurden, muss die [Value](value-property-ado.md) -Eigenschaft festgelegt werden, bevor andere **Field** -Eigenschaften angegeben werden. Zuerst müssen ein angegebener Wert für die **Value** -Eigenschaft zugewiesen und die [Update](update-method-ado.md)-Methode für die **Fields** -Auflistung aufgerufen worden sein. Anschließend kann auf weitere Eigenschaften, wie z. B. [Type](type-property-ado.md) oder [Attributes](attributes-property-ado.md), zugegriffen werden.
 
 
 **Field**-Objekte der folgenden Datentypen (**DataTypeEnum**) können nicht der **Fields**-Auflistung angefügt werden und verursachen das Auftreten eines Fehlers: **adArray**, **adChapter**, **adEmpty**, **adPropVariant** und **adUserDefined**. Außerdem werden die folgenden Datentypen von ADO nicht unterstützt: **adIDispatch**, **adIUnknown** und **adIVariant**. Für diese Typen tritt beim Anfügen kein Fehler auf, aber die Verwendung kann zu unvorhersehbaren Ergebnissen, wie z. B. Speicherverlusten, führen.

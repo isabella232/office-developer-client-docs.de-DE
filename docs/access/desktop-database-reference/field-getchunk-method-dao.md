@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d896036bfcf1fcf8c9f152924dfeb0c61621daa9
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 691b4d0b18b31c4c4a40f73e232a1829101913f1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603072"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863276"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk Method (DAO)
 
@@ -64,7 +64,7 @@ Gibt den gesamten Inhalt oder einen Teil des Inhalts eines ****Field**** -Objekt
 </table>
 
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ### <a name="return-value"></a>Rückgabewert
 =======
 ### <a name="return-value"></a>Rückgabewert
@@ -82,7 +82,7 @@ Wenn Numbytes größer als die Anzahl von Bytes im Feld ist, gibt **GetChunk** d
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Verwenden Sie ein <STRONG>Memo</STRONG>-Feld für Text, und schreiben Sie binäre Daten nur in Felder des Typs <STRONG>Long Binary</STRONG>. Andernfalls erzielen Sie unerwünschte Ergebnisse.</P>
+> [!HINWEIS] Verwenden Sie ein **Memo**-Feld für Text, und schreiben Sie binäre Daten nur in Felder des Typs **Long Binary**. Andernfalls erzielen Sie unerwünschte Ergebnisse.
 
 
 

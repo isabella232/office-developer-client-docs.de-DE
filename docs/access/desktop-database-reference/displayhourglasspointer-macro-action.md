@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm117200
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 003fb36fc876aa573419b963a9eca6f54332190a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 725bb4530bffe9aeead327caa74cdba0798c181d
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862657"
 ---
 # <a name="displayhourglasspointer-macro-action"></a>AnzeigenSanduhrzeiger-Makroaktion
 
@@ -54,15 +54,9 @@ Sie verwenden diese Aktion häufig, wenn Sie das Echo mithilfe der **Echo** -Akt
 
 Access setzt das Argument **Sanduhr** automatisch auf **Nein** zurück, wenn die Makroausführung beendet ist.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>In Microsoft Windows handelt es sich um das Symbol, das Sie für <STRONG>Ausgelastet</STRONG> im Dialogfeld <STRONG>Eigenschaften von Maus</STRONG> der Windows-Systemsteuerung festgelegt haben. Die Standardeinstellung für alle Windows-Betriebssysteme ist ein animiertes Sanduhrsymbol.</P>
-> <LI>
-> <P>Wenn Sie möchten, können Sie ein anderes Symbol auswählen.</P></LI></UL>
-
-
+> - In Microsoft Windows handelt es sich um das Symbol, das Sie für **Ausgelastet** im Dialogfeld **Eigenschaften von Maus** der Windows-Systemsteuerung festgelegt haben. Die Standardeinstellung für alle Windows-Betriebssysteme ist ein animiertes Sanduhrsymbol.
+> - Wenn Sie möchten, können Sie ein anderes Symbol auswählen.
 
 Verwenden Sie die **Hourglass** -Methode des **DoCmd** -Objekts, um die **AnzeigenSanduhrzeiger** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 

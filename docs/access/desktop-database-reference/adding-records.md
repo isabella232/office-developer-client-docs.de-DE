@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249505(v=office.15)
 ms:contentKeyID: 48545791
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bfa1503e7f7b874136ab5aee70721a3b9cf3463b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f235d7535f15eea7bd5d4c2abb88abb1a30935c7
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475599"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862506"
 ---
 # <a name="adding-records"></a>Hinzufügen von Datensätzen
 
@@ -23,4 +23,12 @@ Verwenden Sie die **AddNew** -Methode, um einen neuen Datensatz in einem vorhand
 Nachdem Sie die **AddNew** -Methode aufgerufen haben, wird der neue Datensatz der aktuelle Datensatz und bleibt der aktuelle Datensatz, nachdem Sie die **Update** -Methode aufgerufen haben. Wenn das **Recordset** -Objekt keine Lesezeichen unterstützt, können Sie möglicherweise nicht auf den neuen Datensatz zugreifen, sobald Sie zu einem anderen Datensatz wechseln. Deshalb müssen Sie in Abhängigkeit vom Cursortyp die **Requery** -Methode aufrufen, damit auf den neuen Datensatz zugegriffen werden kann.
 
 Wenn Sie **AddNew** während des Bearbeitens des aktuellen Datensatzes oder des Hinzufügens eines neuen Datensatzes aufrufen, ruft ADO die **Update** -Methode auf, um alle Änderungen zu speichern, und ADO erstellt dann den neuen Datensatz.
+
+Dieser Abschnitt enthält die folgenden Themen:
+
+- [Adding Multiple Fields](adding-multiple-fields.md)
+
+- [Determining Edit Mode](determining-edit-mode.md)
+
+- [Verwenden der AddNew-Methode im sofortigen Aktualisierungsmodus und im Batchmodus](using-addnew-in-immediate-and-batch-modes.md)
 

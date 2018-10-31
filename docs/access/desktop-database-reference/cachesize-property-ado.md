@@ -3,7 +3,7 @@
 >>>>>>> Master Ms:assetid: 42f86cc0-30dc-669b-9e65-5e7ecd52c4d7 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249200(v=office.15) Ms:contentKeyID: 48544491 ms.date: 09/18/2015 Mtps_version: Office. 15
 ---
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 # <a name="cachesize-property-ado"></a>CacheSize-Eigenschaft (ADO)
 =======
 # <a name="cachesize-property-ado"></a>CacheSize-Eigenschaft (ADO)
@@ -14,7 +14,7 @@
 
 Gibt die Anzahl von Datensätzen aus einem [Recordset](recordset-object-ado.md)-Objekt an, die lokal im Arbeitsspeicher zwischengespeichert werden.
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
 =======
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
@@ -26,11 +26,8 @@ Mit dieser Eigenschaft wird ein Wert vom Datentyp Long festgelegt oder zurückge
 
 Verwenden Sie die **CacheSize** -Eigenschaft, um zu steuern, wie viele Datensätze gleichzeitig vom Anbieter in den lokalen Arbeitsspeicher abgerufen werden. Wenn z. B. **CacheSize** den Wert 10 hat, ruft der Anbieter, nachdem er zunächst das **Recordset** -Objekt geöffnet hat, die ersten 10 Datensätze in den lokalen Arbeitsspeicher ab. Beim Durchlaufen des **Recordset** -Objekts gibt der Anbieter die Daten aus dem lokalen Arbeitsspeicherpuffer zurück. Sobald Sie hinter den letzten Datensatz im Cache gelangt sind, ruft der Anbieter die nächsten 10 Datensätze von der Datenquelle in den Cache ab.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] <STRONG>CacheSize</STRONG> basiert auf der anbieterspezifischen Eigenschaft <STRONG>Maximale Anzahl geöffneter Zeilen</STRONG> (in der <STRONG>Properties</STRONG> -Auflistung des <STRONG>Recordset</STRONG> -Objekts). <STRONG>CacheSize</STRONG> kann nicht auf einen höheren Wert als <STRONG>Maximale Anzahl geöffneter Zeilen</STRONG> festgelegt werden. Legen Sie <STRONG>Maximale Anzahl geöffneter Zeilen</STRONG> fest, um die Anzahl von Zeilen zu ändern, die vom Anbieter geöffnet werden können.</P>
-
-
+> [!HINWEIS] **CacheSize** basiert auf der anbieterspezifischen Eigenschaft **Maximale Anzahl geöffneter Zeilen** (in der **Properties** -Auflistung des **Recordset** -Objekts). **CacheSize** kann nicht auf einen höheren Wert als **Maximale Anzahl geöffneter Zeilen** festgelegt werden. Legen Sie **Maximale Anzahl geöffneter Zeilen** fest, um die Anzahl von Zeilen zu ändern, die vom Anbieter geöffnet werden können.
 
 Der Wert von **CacheSize** kann während des Lebenszyklus des **Recordset** -Objekts angepasst werden, aber die Änderung dieses Werts wirkt sich nur auf die Anzahl von Datensätzen im Cache nach nachfolgendem Abrufen von der Datenquelle aus. Durch das Ändern des Eigenschaftswerts allein werden die aktuellen Inhalte des Caches nicht geändert.
 

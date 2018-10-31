@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249857(v=office.15)
 ms:contentKeyID: 48547207
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dbd9536edd15f923af85f2fadad8b696077af4a4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f18af92724ff87263808cba2e8799bca2a558541
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475172"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861442"
 ---
 # <a name="appendix-a-providers"></a>Anhang A: Anbieter
 
@@ -49,31 +49,31 @@ Ausführliche Informationen zu den derzeit von Microsoft erhältlichen Datenprov
 <tbody>
 <tr class="odd">
 <td><p>ODBC-Datenbanken</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB-Anbieter für ODBC</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-odbc.md">Microsoft OLE DB Provider for ODBC</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Indexdienst</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB-Anbieter für Microsoft Indexdienst</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-microsoft-indexing-service.md">Microsoft OLE DB Provider for Microsoft Indexing Service</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft Active Directory-Dienst</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB-Anbieter für Microsoft Active Directory-Dienst</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-microsoft-active-directory-service.md">Microsoft OLE DB Provider for Microsoft Active Directory Service</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Microsoft Jet-Datenbanken</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-microsoft-jet.md">OLE DB-Anbieter für Microsoft Jet</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-microsoft-jet.md">Microsoft OLE DB-Anbieter für Microsoft Jet</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Microsoft SQL Server</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB-Anbieter für SQL Server</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Oracle-Datenbanken</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB-Anbieter für Oracle</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-oracle.md">Microsoft OLE DB Provider for Oracle</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Internet Publishing</p></td>
-<td><p><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB-Anbieter für Internet Publishing</a></p></td>
+<td><p><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a></p></td>
 </tr>
 </tbody>
 </table>

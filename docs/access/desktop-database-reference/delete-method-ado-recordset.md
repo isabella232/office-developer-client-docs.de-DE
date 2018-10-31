@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249374(v=office.15)
 ms:contentKeyID: 48545246
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 118cc56bf33812819dd34089ac97c72259228f4c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0ce20bad72dfc74879093cd3445830f6087ad7e3
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475033"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860966"
 ---
 # <a name="delete-method-ado-recordset"></a>Delete-Methode (ADO-Recordset)
 
@@ -34,9 +34,7 @@ Löscht den aktuellen Datensatz oder eine Gruppe von Datensätzen.
 
 
 > [!NOTE]
-> <P>[!HINWEIS] <STRONG>adAffectAll</STRONG> und <STRONG>adAffectAllChapters</STRONG> sind keine gültigen Argumente für <STRONG>Delete</STRONG>.</P>
-
-
+> [!HINWEIS] **adAffectAll** und **adAffectAllChapters** sind keine gültigen Argumente für **Delete**.
 
 ## <a name="remarks"></a>Hinweise
 

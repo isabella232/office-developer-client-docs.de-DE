@@ -4,21 +4,22 @@ TOCTitle: CursorLocationEnum
 ms:assetid: 520cc738-998b-ce80-6362-0df310c40c39
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249268(v=office.15)
 ms:contentKeyID: 48544836
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 90226413579a8fac7586cbd5ef08510a36a42959
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7f8eedd1245be16d87a2d3b2cd2b9121853529c5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474012"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863631"
 ---
 # <a name="cursorlocationenum"></a>CursorLocationEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt den Speicherort des Cursordiensts an.
+
+<br/>
 
 <table>
 <colgroup>
@@ -47,13 +48,13 @@ Gibt den Speicherort des Cursordiensts an.
 <tr class="odd">
 <td><p><strong>adUseServer</strong></p></td>
 <td><p>2</p></td>
-<td><p>Standardwert. Verwendet Datenanbieter- oder treiberbasierte Cursor. Diese Cursor sind manchmal sehr flexibel und ermöglichen eine zusätzliche Unterscheidung von Änderungen, die andere Personen an der Datenquelle vornehmen. Andere Features des <a href="microsoft-cursor-service-for-ole-db-ado-service-component.md">Microsoft Cursor Service für OLE DB</a> (wie z. B. entkoppelte <a href="recordset-object-ado.md">Recordset</a>-Objekte) können nicht mit serverseitigen Cursorn simuliert werden. Diese Features stehen mit dieser Einstellung nicht zur Verfügung.</p></td>
+<td><p>Standard. Verwendet vom Datenanbieter oder Treiber bereitgestellte Cursor. Diese Cursor sind in einigen Fällen sehr flexibel und zusätzliche Empfindlichkeit gegenüber Änderungen, die andere Personen an der Datenquelle ermöglichen. Jedoch einige Features des <a href="microsoft-cursor-service-for-ole-db-ado-service-component.md">Microsoft Cursor Service für OLE DB</a> (beispielsweise nicht verbundenes <a href="recordset-object-ado.md">Recordset</a> -Objekte) können nicht mit serverseitigen Cursorn simuliert werden, und diese Funktionen werden mit dieser Einstellung nicht verfügbar sein.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

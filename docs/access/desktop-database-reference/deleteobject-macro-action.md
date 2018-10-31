@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm152112
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 85e9fc888e06a69be6f458ed03ad92b8253b30a2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f9ac791ffd0f11c11358298570db833f8d561d11
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474148"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860938"
 ---
 # <a name="deleteobject-macro-action"></a>LöschenObjekt-Makroaktion
 
@@ -26,9 +26,7 @@ Sie können die **LöschenObjekt** -Aktion verwenden, um ein angegebenes Datenba
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
 
 ## <a name="setting"></a>Einstellung
 
@@ -60,7 +58,7 @@ Die **LöschenObjekt** -Aktion hat die folgenden Argumente.
 
 
 > [!WARNING]
-> <P>[!VORSICHT] Wenn Sie die Felder <STRONG>Objekttyp</STRONG> und <STRONG>Objektname</STRONG> leer lassen, löscht Access beim Auftreten der <STRONG>LöschenObjekt</STRONG> -Aktion das im Navigationsbereich ausgewählte Objekt, ohne eine Warnmeldung anzuzeigen.</P>
+> [!VORSICHT] Wenn Sie die Felder **Objekttyp** und **Objektname** leer lassen, löscht Access beim Auftreten der **LöschenObjekt** -Aktion das im Navigationsbereich ausgewählte Objekt, ohne eine Warnmeldung anzuzeigen.
 
 
 

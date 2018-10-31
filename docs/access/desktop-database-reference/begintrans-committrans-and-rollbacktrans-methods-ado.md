@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e3de31156f9c06d3a14e7dbef2748543a3e6c4fd
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 719c495e18fb769a2d3f994542ab8d9e93a469f1
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605758"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860378"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>Methoden "BeginTrans", "CommitTrans" und "RollbackTrans" (ADO)
 
@@ -37,7 +37,7 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 
 - *Objekt*. RollbackTrans
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ## <a name="return-value"></a>Rückgabewert
 =======
 ## <a name="return-value"></a>Rückgabewert
@@ -57,9 +57,7 @@ Verwenden Sie diese Methoden mit einem **Connection** -Objekt, wenn Sie eine Rei
 
 
 > [!NOTE]
-> <P>Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "<STRONG>Transaction DDL</STRONG>"-Eigenschaft in der <A href="properties-collection-ado.md">Properties</A>-Auflistung des <STRONG>Connection</STRONG>-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.</P>
-
-
+> Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "**Transaction DDL**"-Eigenschaft in der [Properties](properties-collection-ado.md)-Auflistung des **Connection**-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
 
 Nach dem Aufrufen der **BeginTrans** -Methode wird vom Anbieter erst wieder sofort ein Commit für vorgenommene Änderungen ausgeführt, wenn Sie **CommitTrans** oder **RollbackTrans** aufrufen, um die Transaktion zu beenden.
 

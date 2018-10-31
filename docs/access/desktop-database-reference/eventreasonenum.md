@@ -4,21 +4,22 @@ TOCTitle: EventReasonEnum
 ms:assetid: 0639928e-d0ef-3db3-887e-f3da03913bc7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248815(v=office.15)
 ms:contentKeyID: 48543047
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: ec32b47d8e69c065d167fe86553aafdec906bc24
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a243e3aa71248fe61f7b73f163e706c8ceb22457
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861967"
 ---
 # <a name="eventreasonenum"></a>EventReasonEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt den Grund an, der zu einem Ereignis führte.
+
+<br/>
 
 <table>
 <colgroup>
@@ -113,7 +114,7 @@ Gibt den Grund an, der zu einem Ereignis führte.
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

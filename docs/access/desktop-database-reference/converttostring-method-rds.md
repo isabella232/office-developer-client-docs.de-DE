@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250113(v=office.15)
 ms:contentKeyID: 48548136
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fa1a4326cf318a9cbcddf8ebcdf584543ac8ebfb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7483144ff3ab9b93ae35bdebff951c5b4415786c
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475405"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860511"
 ---
 # <a name="converttostring-method-rds"></a>ConvertToString-Methode (RDS)
 
@@ -44,6 +44,6 @@ Mit Remote Data Service kann die MIME-Zeichenfolge auf dem Client erneut in ein 
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Beachten Sie, dass die Größe der Zeichenfolge bei früheren Versionen von VBScript als Version 2.0 auf 32 KB beschränkt ist, wenn Sie Active Server Pages-Dateien verwenden, um die resultierende MIME-Zeichenfolge in den Client einer HTML-Seite einzubetten. Wenn diese Beschränkung überschritten wird, wird ein Fehler ausgegeben. Halten Sie den Abfrageumfang bei der MIME-Einbettung mithilfe von ASP-Dateien relativ gering. Laden Sie die aktuellste Version von VBScript von der <A href="https://www.microsoft.com/downloads/en/default.aspx">Microsoft Windows Script Technologies-Website</A> herunter, um dieses Problem zu beheben.</P>
+> [!HINWEIS] Beachten Sie, dass die Größe der Zeichenfolge bei früheren Versionen von VBScript als Version 2.0 auf 32 KB beschränkt ist, wenn Sie Active Server Pages-Dateien verwenden, um die resultierende MIME-Zeichenfolge in den Client einer HTML-Seite einzubetten. Wenn diese Beschränkung überschritten wird, wird ein Fehler ausgegeben. Halten Sie den Abfrageumfang bei der MIME-Einbettung mithilfe von ASP-Dateien relativ gering. Laden Sie die aktuellste Version von VBScript von der [Microsoft Windows Script Technologies-Website](https://www.microsoft.com/downloads/en/default.aspx) herunter, um dieses Problem zu beheben.
 
 

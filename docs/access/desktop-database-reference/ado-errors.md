@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248796(v=office.15)
 ms:contentKeyID: 48542972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ee87da91086a010066ba94b294955eebdff7b636
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a8b6b794daf7c03df26c186ac58b9a02ed4a7419
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473066"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861232"
 ---
 # <a name="ado-errors"></a>ADO-Fehler
 
@@ -89,9 +89,7 @@ Die Fehlermeldung enthält alle Informationselemente, die vom **Err** -Objekt vo
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Das <STRONG>Err</STRONG> -Objekt von Visual Basic enthält nur Informationen zum letzten Fehler. Die <STRONG>Errors</STRONG> -Auflistung von ADO des <STRONG>Connection</STRONG> -Objekts enthält ein <STRONG>Error</STRONG> -Objekt pro Fehler, der vom letzten ADO-Vorgang ausgelöst wurde. Verwenden Sie die <STRONG>Errors</STRONG> -Auflistung anstelle des <STRONG>Err</STRONG> -Objekts, um mehrere Fehler zu behandeln. Weitere Informationen zur <STRONG>Errors</STRONG> -Auflistung finden Sie unter <A href="provider-errors.md">Anbieterfehler</A>. Wenn jedoch kein gültiges <STRONG>Connection</STRONG> -Objekt vorhanden ist, stellt das <STRONG>Err</STRONG> -Objekt die einzige Informationsquelle für ADO-Fehler dar.</P>
-
-
+> [!HINWEIS] Das **Err** -Objekt von Visual Basic enthält nur Informationen zum letzten Fehler. Die **Errors** -Auflistung von ADO des **Connection** -Objekts enthält ein **Error** -Objekt pro Fehler, der vom letzten ADO-Vorgang ausgelöst wurde. Verwenden Sie die **Errors** -Auflistung anstelle des **Err** -Objekts, um mehrere Fehler zu behandeln. Weitere Informationen zur **Errors** -Auflistung finden Sie unter <A href="provider-errors.md">Anbieterfehler</A>. Wenn jedoch kein gültiges **Connection** -Objekt vorhanden ist, stellt das **Err** -Objekt die einzige Informationsquelle für ADO-Fehler dar.
 
 Durch welche Vorgänge werden wahrscheinlich ADO-Fehler verursacht? Zu häufigen ADO-Fehlern zählt das Öffnen eines Objekts wie z. B. eines **Connection** - oder **Recordset** -Objekts, das Aktualisieren von Daten oder das Aufrufen einer Methode oder Eigenschaft, die von Ihrem Anbieter nicht unterstützt wird.
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250102(v=office.15)
 ms:contentKeyID: 48548088
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 36d7bf1b39186eca841e417473e31e2bfd3a2dfc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1779f2c7e16e2f39a3912f271296c6a7bd0fd550
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473110"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861946"
 ---
 # <a name="using-the-command-object-access"></a>Using the Command Object (Access)
 
@@ -24,8 +24,17 @@ Mit dem Command-Objekt können Sie jede Art von Vorgang vom Anbieter anfordern, 
 
 Es ist nicht immer erforderlich ein **Command** -Objekt zu erstellen, um einen Befehl für eine Datenquelle auszuführen. Sie können die **Execute** -Methode im **Connection** -Objekt oder die **Open** -Methode im **Recordset** -Objekt verwenden. Allerdings sollten Sie ein **Command** -Objekt verwenden, wenn Sie einen Befehl im Code wiederverwenden oder wenn Sie detaillierte Parameterinformationen mit dem Befehl übergeben müssen. Diese Szenarien werden weiter unten in diesem Kapitel ausführlicher behandelt.
 
-
 > [!NOTE]
-> <P>Bestimmte <STRONG>Command</STRONG>-Objekte können ein Resultset als binären Datenstrom oder als einzelnes <STRONG>Record</STRONG>-Objekt zurückgeben, und nicht als <STRONG>Recordset</STRONG>-Objekt, falls dies vom Anbieter unterstützt wird. Außerdem sind manche <STRONG>Command</STRONG>-Objekte nicht für das Zurückgeben von Resultsets vorgesehen (z. B. eine UPDATE-SQL-Abfrage). In diesem Kapitel wird jedoch das typischste Szenario behandelt, nämlich das Ausführen von <STRONG>Command</STRONG>-Objekten, die Ergebnisse in einem <STRONG>Recordset</STRONG>-Objekt zurückgeben. Weitere Informationen zum Zurückgeben von Ergebnissen in <STRONG>Record</STRONG>- oder <STRONG>Stream</STRONG>-Objekten finden Sie in <A href="chapter-10-records-and-streams.md">Kapitel 10: Datensätze und Datenströme</A>.</P>
+> Bestimmte Befehle können ein Resultset als binären Datenstrom oder als einen einzigen Datensatz und nicht als ein Recordset-Objekt zurück, wenn dies vom Anbieter unterstützt wird. Darüber hinaus einige Befehle nicht für die Verwendung von Resultsets überhaupt (beispielsweise eine SQL-Update-Abfrage) zurückgegeben. In diesem Kapitel werden das häufigste Szenario jedoch behandelt: Ausführen von Befehlen, die Ergebnisse in einem Recordset-Objekt zurückgeben. Weitere Informationen zum Zurückgeben von Ergebnissen in Datensätze oder Streams finden Sie unter [Kapitel 10: Datensätze und Datenströme](chapter-10-records-and-streams.md).
 
+Dieser Abschnitt enthält die folgenden Themen:
 
+- [Übersicht über die Command-Objekts](command-object-overview.md)
+
+- [Erstellen und Ausführen eines einfachen Befehls](creating-and-executing-a-simple-command.md)
+
+- [Parameter des Command-Objekts](command-object-parameters.md)
+
+- [Aufrufen einer gespeicherten Prozedur mit einem Befehl](calling-a-stored-procedure-with-a-command.md)
+
+- [Benannte Befehle](named-commands.md)

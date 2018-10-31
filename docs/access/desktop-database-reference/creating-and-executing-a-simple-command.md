@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 91355c8b24fcd6e797a6610524076b8850b16f57
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 88463cf79ace0007cac8e5ebd1694ee7a080f329
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472852"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860350"
 ---
 # <a name="creating-and-executing-a-simple-command"></a>Erstellen und Ausführen eines einfachen Befehls
 
@@ -82,9 +82,7 @@ Der auszuführende Befehl wird mit der **CommandText** -Eigenschaft angegeben.
 
 
 > [!NOTE]
-> <P>Mehrere Beispiele in diesem Abschnitt rufen die GetNewConnection-Hilfsprogrammfunktion auf, um eine Verbindung mit dem Datenprovider einzurichten. Sie ist in diesem Beispiel nur einmal aufgeführt, um Redundanz zu vermeiden:</P>
-
-
+> Einige Beispiele in diesem Abschnitt rufen Sie eine Hilfsfunktion **GetNewConnection**herstellen eine Verbindung mit dem Datenanbieter. Um Redundanz zu vermeiden, wird sie nur einmal aufgeführt:
 
 ```vb 
  

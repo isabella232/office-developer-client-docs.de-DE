@@ -1,24 +1,24 @@
 ---
-title: GetObjectOwner- und SetObjectOwner-Methode (VB-Beispiel)
-TOCTitle: GetObjectOwner and SetObjectOwner Methods Example (VB)
+title: GetObjectOwner- und SetObjectOwner-Methode (Beispiel) (VB)
+TOCTitle: GetObjectOwner and SetObjectOwner methods example (VB)
 ms:assetid: 0a30cce1-7626-8db3-4af4-84098c284db0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248833(v=office.15)
 ms:contentKeyID: 48543146
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 720eaf7d4ba4a73a85f392d33244369ae96a75b6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e1e79e57cc88e85c9533201ca791fba13c9e3c65
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474369"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862926"
 ---
-# <a name="getobjectowner-and-setobjectowner-methods-example-vb"></a>GetObjectOwner- und SetObjectOwner-Methode (VB-Beispiel)
+# <a name="getobjectowner-and-setobjectowner-methods-example-vb"></a>GetObjectOwner- und SetObjectOwner-Methode (Beispiel) (VB)
 
 
 **Betrifft**: Access 2013 | Office 2013
 
-In diesem Beispiel wird die Verwendung der GetObjectOwner- und der SetObjectOwner-Methode veranschaulicht. Der Code setzt voraus, dass die Accounting-Gruppe vorhanden ist. (Informationen zum Hinzufügen dieser Gruppe zum System finden Sie unter Append-Methode (Groups und Users), ChangePassword-Methode (VB-Beispiel).) Der Besitzer der Categories-Tabelle wird auf Accounting festgelegt.
+Dieses Beispiel veranschaulicht die Methoden [GetObjectOwner](getobjectowner-method-adox.md) und [SetObjectOwner verwenden](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) . Dieser Code wird vorausgesetzt, dass die Gruppe Accounting (siehe die [Gruppen und Benutzer anzufügen, ChangePassword-Methoden (Beispiel) (VB)](groups-and-users-append-changepassword-methods-example-vb.md) wie das System dieser Gruppe hinzugefügt angezeigt). Der Besitzer der Kategorientabelle wird auf Buchhaltung festgelegt.
 
 ```vb 
  

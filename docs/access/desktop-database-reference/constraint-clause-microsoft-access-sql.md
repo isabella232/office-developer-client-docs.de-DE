@@ -1,10 +1,10 @@
 ---
 title: CONSTRAINT-Klausel (Microsoft Access SQL)
-TOCTitle: CONSTRAINT Clause (Microsoft Access SQL)
+TOCTitle: CONSTRAINT clause (Microsoft Access SQL)
 ms:assetid: f8e89a91-a69e-1811-42a7-921692110bcb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836971(v=office.15)
 ms:contentKeyID: 48548797
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277561
@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7b26033c8026591c87e4d0f9e077380862e39f16
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 87870d824f9e26f601529bc60b737f1e46b12960
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472886"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863003"
 ---
 # <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT-Klausel (Microsoft Access SQL)
 
@@ -27,17 +27,16 @@ Eine Einschränkung ähnelt einem Index, obwohl sie auch zur Verknüpfung mit ei
 
 Verwenden Sie die CONSTRAINT-Klausel in den [ALTER TABLE](alter-table-statement-microsoft-access-sql.md)- und [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisungen, um Einschränkungen zu erstellen oder zu löschen. Es gibt zwei Arten von CONSTRAINT-Klauseln: eine zum Erstellen einer Einschränkung für ein einzelnes Feld oder zum Erstellen einer Einschränkung für mehrere Felder.
 
-
 > [!NOTE]
-> [!HINWEIS] Die Datenbank-Engine von Microsoft Access unterstützt CONSTRAINT-Klauseln nicht, genauso wie DDL-Anweisungen mit Datenbank-Engine-Datenbanken, die nicht auf Microsoft Access basieren. Verwenden Sie stattdessen die DAO Create-Methode.
+> [!HINWEIS] Die Datenbank-Engine von Microsoft Access unterstützt CONSTRAINT-Klauseln nicht, genauso wie DDL-Anweisungen mit Datenbank-Engine-Datenbanken, die nicht auf Microsoft Access basieren. Verwenden Sie stattdessen Methoden DAO **Erstellen** .
 
 ## <a name="syntax"></a>Syntax
 
-Beschränkung für ein Feld:
+**Beschränkung für ein Feld**:
 
 CONSTRAINT *Name* {PRIMARY KEY | EINDEUTIGE | NOT NULL | REFERENCES *Fremdtabelle* \[(*fremdfeld1, fremdfeld2*)\] \[ON UPDATE CASCADE | Legen Sie NULL\] \[ON DELETE CASCADE | Legen Sie NULL\]}
 
-Einschränkung für mehrere Felder:
+**Beschränkung für mehrere Felder**:
 
 CONSTRAINT *Name* {PRIMARY KEY (*primär1*\[, *primär2* \[,... \]\]) | EINDEUTIGE (*eindeutig1*\[, *eindeutig2* \[,... \]\]) | NOT NULL (*nichtnull1*\[, *nichtnull2* \[,... \]\]) | FREMDSCHLÜSSEL \[kein INDEX\] (*Bezug1*\[, *Bezug2* \[,... \] \]) Verweise *Foreigntable* \[(*fremdfeld1* \[, *fremdfeld2* \[,... \] \])\] \[ON UPDATE CASCADE | Legen Sie NULL\] \[ON DELETE CASCADE | Legen Sie NULL\]}
 

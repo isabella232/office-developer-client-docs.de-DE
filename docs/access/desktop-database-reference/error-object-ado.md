@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249678(v=office.15)
 ms:contentKeyID: 48546477
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e5fbefa5d857e7c239cbbcfc4502d60aabce347e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 38fa73120ed868c7b7a0e086cdcbe822e4c16730
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475209"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860987"
 ---
 # <a name="error-object-ado"></a>Error-Objekt (ADO)
 
@@ -24,21 +24,18 @@ Enthält Details zu Datenzugriffsfehlern, die sich auf eine einzelne Operation b
 
 Jeder Vorgang, an dem ADO-Objekte beteiligt sind, kann mindestens einen Anbieterfehler generieren. Sobald ein Fehler auftritt, wird mindestens ein **Error** -Objekt in der [Errors](errors-collection-ado.md)-Auflistung des [Connection](connection-object-ado.md)-Objekts eingefügt. Wenn ein anderer ADO-Vorgang einen Fehler erzeugt, wird die **Errors** -Auflistung gelöscht, und die neue Gruppe der **Error** -Objekte wird in die **Errors** -Auflistung übernommen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Jedes <STRONG>Error</STRONG> -Objekt stellt einen bestimmten Anbieterfehler dar und nicht einen ADO-Fehler. ADO-Fehler unterliegen dem Laufzeit-Fehlerbehandlungsmechanismus. In Microsoft Visual Basic löst das Auftreten eines ADO-spezifischen Fehlers z. B. ein <STRONG>On Error</STRONG> -Ereignis aus, und der Fehler wird im <STRONG>Error</STRONG> -Objekt angezeigt. Eine vollständige Liste der ADO-Fehler finden Sie unter dem Thema <A href="errorvalueenum.md">ErrorValueEnum</A>.</P>
-
-
+> [!HINWEIS] Jedes **Error** -Objekt stellt einen bestimmten Anbieterfehler dar und nicht einen ADO-Fehler. ADO-Fehler unterliegen dem Laufzeit-Fehlerbehandlungsmechanismus. In Microsoft Visual Basic löst das Auftreten eines ADO-spezifischen Fehlers z. B. ein **On Error** -Ereignis aus, und der Fehler wird im **Error** -Objekt angezeigt. Eine vollständige Liste der ADO-Fehler finden Sie unter dem Thema [ErrorValueEnum](errorvalueenum.md).
 
 Sie können die Eigenschaften eines **Error** -Objekts lesen, um die folgenden Details über die einzelnen Fehler zu erhalten:
 
-  - Die [Description](description-property-ado.md)-Eigenschaft, die den Fehlertext enthält. Dies ist die Standardeigenschaft.
+- Die [Description](description-property-ado.md)-Eigenschaft, die den Fehlertext enthält. Dies ist die Standardeigenschaft.
 
-  - Die [Number](number-property-ado.md)-Eigenschaft, die den **Long** -Ganzzahlwert der Fehlerkonstanten enthält.
+- Die [Number](number-property-ado.md)-Eigenschaft, die den **Long** -Ganzzahlwert der Fehlerkonstanten enthält.
 
-  - Die [Source](source-property-ado-error.md)-Eigenschaft, die das Objekt identifiziert, das den Fehler ausgelöst hat. Diese Eigenschaft ist besonders nützlich, wenn nach einer Abfrage einer Datenquelle mehrere **Error** -Objekte in der **Errors** -Auflistung enthalten sind.
+- Die [Source](source-property-ado-error.md)-Eigenschaft, die das Objekt identifiziert, das den Fehler ausgelöst hat. Diese Eigenschaft ist besonders nützlich, wenn nach einer Abfrage einer Datenquelle mehrere **Error** -Objekte in der **Errors** -Auflistung enthalten sind.
 
-  - Die Eigenschaften [SQLState](sqlstate-property-ado.md) und [NativeError](nativeerror-property-ado.md), die Informationen über SQL-Datenquellen bereitstellen.
+- Die Eigenschaften [SQLState](sqlstate-property-ado.md) und [NativeError](nativeerror-property-ado.md), die Informationen über SQL-Datenquellen bereitstellen.
 
 Wenn ein Anbieterfehler auftritt, wird er in die **Errors** -Auflistung des **Connection** -Objekts aufgenommen. ADO unterstützt die Rückgabe mehrerer Fehler durch einen einzelnen ADO-Vorgang, um anbieterspezifische Fehlerinformationen zu gestatten. Verwenden Sie die zutreffenden Fehlerbehandlungsfeatures der Sprache oder Umgebung, und durchlaufen Sie dann die Eigenschaften der einzelnen **Error** -Objekte in der **Errors** -Auflistung in geschachtelten Schleifen, um diese ausführlichen Fehlerinformationen in einer Fehlerbehandlungsroutine zu erhalten.
 

@@ -6,29 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249938(v=office.15)
 ms:contentKeyID: 48547518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d95af128b9b0d44c69399fd8b15180b70207c6bc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1767f3569cb9b58936e01bcd8b0350f374899f2d
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474384"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862279"
 ---
-# <a name="troubleshooting-rds"></a>Problembehandlung in RDS
+# <a name="troubleshooting-rds"></a>Problembehandlung von RDS
 
 
 **Betrifft**: Access 2013 | Office 2013
 
-In diesem Abschnitt finden Sie Lösungen zu bestimmten Fehlern oder Problemen mit RDS. Die folgenden Themen werden in diesem Abschnitt behandelt:
+Finden Sie in diesem Abschnitt für bestimmte Fehler oder Probleme mit RDS-Lösungen:
 
-  - [Konfigurieren von RDS unter Windows 2000](configuring-rds-on-windows-2000.md)
+- [Konfigurieren von RDS unter Windows 2000](configuring-rds-on-windows-2000.md)
 
-  - ["Internetserverfehler: Zugriff verweigert"](internet-server-error-access-denied.md)
+- [Internetserverfehler: Zugriff verweigert](internet-server-error-access-denied.md)
 
-  - [Zurückgeben des Fehlers "Stream Not Read" durch RDS](rds-returns-stream-not-read-error.md)
+- [Zurückgeben des Fehlers "Stream Not Read" durch RDS](rds-returns-stream-not-read-error.md)
 
-  - [Deadlocks bei der Isolationsstufe "Repeatable Read"](deadlocks-with-read-repeatable-isolation-level.md)
+- [Deadlocks bei der Isolationsstufe "Repeatable Read"](deadlocks-with-read-repeatable-isolation-level.md)
 
-  - [Sicherstellen von ausreichend Speicherplatz für TempDB](ensuring-sufficient-tempdb-space.md)
+- [Sicherstellen von ausreichend Speicherplatz für TempDB](ensuring-sufficient-tempdb-space.md)
 
-  - [Minimieren der Speicherplatznutzung von Protokolldateien](minimizing-log-file-space-usage.md)
+- [Minimieren der Speicherplatznutzung von Protokolldateien](minimizing-log-file-space-usage.md)
 

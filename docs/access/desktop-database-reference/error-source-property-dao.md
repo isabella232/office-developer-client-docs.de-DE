@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053360
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b9aafe1b16b3d989a81ff21f97bd4b6d10f79de3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 51acfc5f349d6096028ef86aac480ce81c9b26bf
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474914"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860497"
 ---
 # <a name="errorsource-property-dao"></a>Error.Source Property (DAO)
 
@@ -41,9 +41,7 @@ Basierend auf der gesamten Fehlerdokumentation können Sie Code schreiben, der d
 
 
 > [!NOTE]
-> <P>Das <STRONG>On Error Resume Next</STRONG>-Konstrukt ist möglicherweise <STRONG>On Error GoTo</STRONG> vorzuziehen, wenn Fehler behandelt werden, die während des Zugriffs auf andere Objekte erzeugt wurden. Wenn das <STRONG>Error</STRONG>-Objekt nach jeder Interaktion mit einem Objekt überprüft wird, kann jeder Zweifel darüber aus dem Weg geräumt werden, auf welches Objekt der Code beim Auftreten des Fehlers zugegriffen hat. Auf diese Weise wissen Sie, welches Objekt den Fehlercode in <STRONG>Error.Number</STRONG> geschrieben und welches Objekt den Fehler ursprünglich erzeugt hat (<STRONG>Error.Source</STRONG>).</P>
-
-
+> Das **On Error Resume Next**-Konstrukt ist möglicherweise **On Error GoTo** vorzuziehen, wenn Fehler behandelt werden, die während des Zugriffs auf andere Objekte erzeugt wurden. Wenn das **Error**-Objekt nach jeder Interaktion mit einem Objekt überprüft wird, kann jeder Zweifel darüber aus dem Weg geräumt werden, auf welches Objekt der Code beim Auftreten des Fehlers zugegriffen hat. Auf diese Weise wissen Sie, welches Objekt den Fehlercode in **Error.Number** geschrieben und welches Objekt den Fehler ursprünglich erzeugt hat (**Error.Source**).
 
 ## <a name="example"></a>Beispiel
 

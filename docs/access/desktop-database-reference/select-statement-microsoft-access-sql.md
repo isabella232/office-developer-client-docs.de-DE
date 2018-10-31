@@ -1,19 +1,19 @@
 ---
 title: SELECT-Anweisung (Microsoft Access SQL)
-TOCTitle: SELECT Statement (Microsoft Access SQL)
+TOCTitle: SELECT statement (Microsoft Access SQL)
 ms:assetid: a5c9da94-5f9e-0fc0-767a-4117f38a5ef3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821148(v=office.15)
 ms:contentKeyID: 48546837
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: ae7a63a3fe7647dde117db80a52e2322b9af75b9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2b03834914c352a0e9c462c50bee48ac992276e3
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473352"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860581"
 ---
 # <a name="select-statement-microsoft-access-sql"></a>SELECT-Anweisung (Microsoft Access SQL)
 
@@ -41,7 +41,7 @@ Die SELECT-Anweisung besteht aus folgenden Teilen:
 <tbody>
 <tr class="odd">
 <td><p><em>Prädikat</em></p></td>
-<td><p>Eines der folgenden Prädikate: <a href="https://msdn.microsoft.com/library/ff195711(v=office.15)">ALL, DISTINCT, DISTINCTROW, or TOP</a>. Sie verwenden das Prädikat, um die Anzahl der zurückgegebenen Datensätze zu beschränken. Wenn keine Angabe erfolgt, ist die Standardeinstellung ALL.  </p></td>
+<td><p>Eines der folgenden Prädikate: <a href="https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql">ALL, DISTINCT, DISTINCTROW, or TOP</a>. Sie verwenden das Prädikat, um die Anzahl der zurückgegebenen Datensätze zu beschränken. Wenn keine Angabe erfolgt, ist die Standardeinstellung ALL.  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>*</em></p></td>
@@ -73,7 +73,7 @@ Die SELECT-Anweisung besteht aus folgenden Teilen:
 
 ## <a name="remarks"></a>Hinweise
 
-Um diesen Vorgang durchzuführen, sucht das Microsoft® Jet-Datenbankmodul die angegebene(n) Tabelle(n), extrahiert die ausgewählten Spalten, wählt Zeilen aus, die dem Krtierium entsprechen, und sortiert oder gruppiert die resultierenden Zeilen in der angegebenen Reihenfolge.
+Zum Ausführen dieses Vorgangs Microsoft Jet-Datenbankmodul sucht nach der angegebenen Tabelle oder Tabellen extrahiert die ausgewählten Spalten, wählt Zeilen, die die Kriterien, und sortiert oder gruppiert die Zeilen in der angegebenen Reihenfolge zu erfüllen.
 
 SELECT-Anweisungen ändern keine Daten in der Datenbank.
 
@@ -151,6 +151,8 @@ Dieses Beispiel erstellt ein **Recordset** vom Typ "Dynaset" basierend auf einer
     End Sub
 ```
 
+<br/>
+
 Dieses Beispiel zählt die Anzahl der Datensätze, die einen Eintrag im Feld "PostalCode" haben, und benennt das zurückgegebene Feld "Tally".
 
 ```sql
@@ -178,6 +180,8 @@ Dieses Beispiel zählt die Anzahl der Datensätze, die einen Eintrag im Feld "Po
      
     End Sub 
 ```
+
+<br/>
 
 Dieses Beispiel zeigt die Anzahl der Mitarbeiter und die durchschnittlichen und maximalen Gehälter.
 
@@ -209,6 +213,8 @@ Dieses Beispiel zeigt die Anzahl der Mitarbeiter und die durchschnittlichen und 
      
     End Sub 
 ```
+
+<br/>
 
 Die **Sub** -Prozedur "EnumFields" wird an ein **Recordset** -Objekt von der aufrufenden Prozedur übergeben. Die Prozedur formatiert und zeigt dann die Felder des **Recordset** im Fenster **Debug**. Die Variable ist die gewünschte Breite des ausgegebenen Felds. Einige Felder können abgeschnitten sein.
 

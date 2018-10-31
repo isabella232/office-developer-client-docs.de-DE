@@ -1,10 +1,10 @@
 ---
 title: ALTER TABLE-Anweisung (Microsoft Access SQL)
-TOCTitle: ALTER TABLE Statement (Microsoft Access SQL)
+TOCTitle: ALTER TABLE statement (Microsoft Access SQL)
 ms:assetid: 78e6c92c-e88c-e55f-6b89-435360c166a6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196148(v=office.15)
 ms:contentKeyID: 48545763
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
 f1_keywords:
 - jetsql40.chm5277560
@@ -12,27 +12,21 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b8fc826d438973b4d079e9b90d3663ab755821cc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 83ba764fa23c972c93156d418bffcde6f3239145
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475629"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863696"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE-Anweisung (Microsoft Access SQL)
 
-
 **Betrifft**: Access 2013 | Office 2013
-
-
 
 Ändert den Entwurf einer Tabelle, nachdem diese mit der [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisung erstellt wurde.
 
-
 > [!NOTE]
-> [!HINWEIS] Vom Microsoft Access-Datenbankmodul wird die Verwendung von ALTER TABLE- oder anderen DDL-Anweisungen (Data Definition Language, Datendefinitionssprache) in Nicht-Microsoft Access-Datenbanken nicht unterstützt. Verwenden Sie stattdessen die Create-Methoden von DAO.
-
-
+> [!HINWEIS] Vom Microsoft Access-Datenbankmodul wird die Verwendung von ALTER TABLE- oder anderen DDL-Anweisungen (Data Definition Language, Datendefinitionssprache) in Nicht-Microsoft Access-Datenbanken nicht unterstützt. Verwenden Sie stattdessen Methoden **DAO erstellen** .
 
 ## <a name="syntax"></a>Syntax
 
@@ -70,11 +64,11 @@ Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 </tr>
 <tr class="odd">
 <td><p><em>Index</em></p></td>
-<td><p>Der Index für das <em>Feld</em>. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
+<td><p>Der Index für <em>dar</em>. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>IndexMitMehrerenFeldern</em></p></td>
-<td><p>Die Definition eines aus mehreren Feldern bestehenden Indexes, der der <em>Tabelle</em> hinzugefügt werden soll. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
+<td><p>Die Definition eines mehreren Feldern bestehenden Indexes, <em>Tabelle</em>hinzugefügt werden soll. Weitere Informationen zum Aufbau des Indexes finden Sie unter <a href="constraint-clause-microsoft-access-sql.md">CONSTRAINT-Klausel</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>Indexname</em></p></td>
@@ -86,41 +80,34 @@ Die ALTER TABLE-Anweisung verfügt über drei Komponenten:
 
 ## <a name="remarks"></a>Hinweise
 
-Mithilfe der ALTER TABLE-Anweisung können Sie eine bestehende Tabelle auf verschiedene Arten ändern. Folgende Möglichkeiten stehen zur Verfügung:
+Mithilfe der ALTER TABLE-Anweisung können Sie eine vorhandene Tabelle auf verschiedene Weise ändern. Folgende Möglichkeiten stehen zur Verfügung:
 
-  - Verwenden Sie ADD COLUMN, um der Tabelle ein neues Feld hinzuzufügen. Sie geben den Feldnamen, den Datentyp und (für Text- und binäre Felder) optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Employees-Tabelle (Personal) ein 25 Zeichen langes Textfeld namens Notes (Bemerkungen) hinzugefügt:
+- Verwenden Sie ADD COLUMN, um der Tabelle ein neues Feld hinzuzufügen. Sie geben den Feldnamen, den Datentyp und (für Text- und binäre Felder) optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Employees-Tabelle (Personal) ein 25 Zeichen langes Textfeld namens Notes (Bemerkungen) hinzugefügt:
     
-    ```sql
+  ```sql
     ALTER TABLE Employees ADD COLUMN Notes TEXT(25)
-    ```
+  ```
     
-    Sie können auch einen Index für das Feld definieren. Weitere Informationen zu Einzelfeldindizes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
+  Sie können auch einen Index für das Feld definieren. Weitere Informationen zu einem einzigen Feld Indizes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
     
-    Wenn Sie für ein Feld NICHT NULL angeben, sind neue Datensätze erforderlich, damit gültige Daten für das Feld vorhanden sind.
+  Wenn Sie NOT NULL für ein Feld angeben, sind neue Datensätze erforderlich, damit in diesem Feld gültige Daten vorhanden sind.
 
-  - Verwenden Sie ALTER COLUMN, um den Datentyp eines bestehenden Felds zu ändern. Sie geben den Feldnamen, den Datentyp und für Text- und binäre Felder optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Datentyp des ZipCode-Felds (PLZ) in der Employees-Tabelle (ursprünglich Integer) in ein 10 Zeichen langes Textfeld geändert:
+- Verwenden Sie ALTER COLUMN, um den Datentyp eines bestehenden Felds zu ändern. Sie geben den Feldnamen, den Datentyp und für Text- und binäre Felder optional eine Größe an. In der Anweisung im folgenden Beispiel wird der Datentyp des ZipCode-Felds (PLZ) in der Employees-Tabelle (ursprünglich Integer) in ein 10 Zeichen langes Textfeld geändert:
     
-    ```sql
+  ```sql
     ALTER TABLE Employees ALTER COLUMN ZipCode TEXT(10)
-    ```
+  ```
+  
+- Verwenden Sie ADD CONSTRAINT, um einen aus mehreren Feldern bestehenden Index hinzuzufügen. Weitere Informationen zu mehreren Feldern bestehenden Indexes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
 
-  - Verwenden Sie ADD CONSTRAINT, um einen aus mehreren Feldern bestehenden Index hinzuzufügen. Weitere Informationen zu Indizes mit mehreren Feldern finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
+- Verwenden Sie DROP COLUMN, um ein Feld zu löschen. Sie geben lediglich den Namen des Felds an.
 
-  - Verwenden Sie DROP COLUMN, um ein Feld zu löschen. Sie geben lediglich den Namen des Felds an.
+- Verwenden Sie DROP CONSTRAINT, um einen aus mehreren Feldern bestehenden Index zu löschen. Sie geben lediglich den Namen des Indexes, gefolgt vom reservierten Wort CONSTRAINT, an.
 
-  - Verwenden Sie DROP CONSTRAINT, um einen aus mehreren Feldern bestehenden Index zu löschen. Sie geben lediglich den Namen des Indexes, gefolgt vom reservierten Wort CONSTRAINT, an.
-
-
-> [!NOTE]
-> <UL>
-> <LI>
-> <P>Sie können immer nur ein Feld bzw. einen Index gleichzeitig hinzufügen oder löschen.</P>
-> <LI>
-> <P>Mithilfe der <A href="create-index-statement-microsoft-access-sql.md">CREATE INDEX</A>-Anweisung können Sie einer Tabelle einen Index mit einem oder mehreren Feldern hinzufügen, und Sie können ALTER TABLE oder die <A href="drop-statement-microsoft-access-sql.md">DROP</A>-Anweisung zum Löschen eines mit ALTER TABLE oder CREATE INDEX erstellten Indexes verwenden.</P>
-> <LI>
-> <P>Sie können NOT NULL für ein einzelnes Feld oder innerhalb einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes oder mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Beschränkung nur einmal auf ein Feld anwenden. Andernfalls tritt ein Laufzeitfehler auf. 
-</P></LI></UL>
-
+> [!NOTE] 
+> - Sie können immer nur ein Feld bzw. einen Index gleichzeitig hinzufügen oder löschen.
+> - Mithilfe der [CREATE INDEX](create-index-statement-microsoft-access-sql.md)-Anweisung können Sie einer Tabelle einen Index mit einem oder mehreren Feldern hinzufügen, und Sie können ALTER TABLE oder die [DROP](drop-statement-microsoft-access-sql.md)-Anweisung zum Löschen eines mit ALTER TABLE oder CREATE INDEX erstellten Indexes verwenden.
+> - Sie können NOT NULL für ein einzelnes Feld oder innerhalb einer benannten CONSTRAINT-Klausel verwenden, die entweder für ein einzelnes oder mehrere Felder mit dem Namen CONSTRAINT gilt. Sie können die NOT NULL-Beschränkung nur einmal auf ein Feld anwenden. Andernfalls tritt ein Laufzeitfehler auf. 
 
 
 ## <a name="example"></a>Beispiel

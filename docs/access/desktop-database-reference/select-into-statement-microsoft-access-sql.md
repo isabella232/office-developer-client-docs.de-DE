@@ -1,20 +1,19 @@
 ---
-title: SELECT.INTO-Anweisung (Microsoft Access SQL)
-TOCTitle: SELECT.INTO Statement (Microsoft Access SQL)
+title: WÄHLEN SIE AUS. INTO-Anweisung (Microsoft Access SQL)
+TOCTitle: SELECT.INTO statement (Microsoft Access SQL)
 ms:assetid: 29f3bd55-52f5-a36e-4e33-4b3499c6ce8d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192059(v=office.15)
 ms:contentKeyID: 48543897
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 4122421642b9746b5832984bf784faf65c603fda
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1c05679994cfd98fdc5d6ffb389df00c2f5c9b94
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473216"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861995"
 ---
-# <a name="selectinto-statement-microsoft-access-sql"></a>SELECT.INTO-Anweisung (Microsoft Access SQL)
-
+# <a name="selectinto-statement-microsoft-access-sql"></a>WÄHLEN SIE AUS. INTO-Anweisung (Microsoft Access SQL)
 
 **Betrifft**: Access 2013 | Office 2013
 
@@ -48,7 +47,7 @@ Die Anweisung SELECT…INTO besteht aus den folgenden Teilen:
 </tr>
 <tr class="odd">
 <td><p><em>externeDatenbank</em></p></td>
-<td><p>Der Pfad zu einer externen Datenbank. Eine Beschreibung des Pfads finden Sie unter der <a href="https://msdn.microsoft.com/library/ff194542(v=office.15)">IN</a>-Klausel.  </p></td>
+<td><p>Der Pfad zu einer externen Datenbank. Eine Beschreibung des Pfads finden Sie unter der <a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/in-clause-microsoft-access-sql">IN</a>-Klausel.  </p></td>
 </tr>
 <tr class="even">
 <td><p><em>Quelle</em></p></td>
@@ -62,15 +61,10 @@ Die Anweisung SELECT…INTO besteht aus den folgenden Teilen:
 
 Sie können make-table-Abfragen zur Archivierung von Datensätzen, Sicherung Ihrer Tabellen, Anlage von Kopien zum Export in eine andere Datenbank oder als Grundlage für Berichte auf Basis der Daten aus einem bestimmten Zeitraum verwenden. Beispielsweise könnten Sie  mithilfe derselben make-table-Abfrage monatlich einen Bericht über die Verkäufe in diesem Monat nach Region erstellen.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Möglicherweise sollten Sie einen Primärschlüssel für die neue Tabelle festlegen. Bei der Erstellung der Tabelle werden die Datentypen und Feldgrößen aller Felder der der Abfrage zugrunde liegenden Tabellen an die Felder der neuen Tabelle vererbt. Es werden jedoch keine weiteren Feld- oder Tabelleneigenschaften übertragen.</P>
-> <LI>
-> <P>Um einer bereits bestehenden Tabelle Daten hinzuzufügen, verwenden Sie die <A href="insert-into-statement-microsoft-access-sql.md">INSERT INTO</A>-Anweisung anstelle einer Anfügeabfrage.</P>
-> <LI>
-> <P>Um herauszufinden, welche Datensätze ausgewählt werden, bevor Sie die make-table-Abfrage ausführen, führen Sie erst einmal eine <A href="select-statement-microsoft-access-sql.md">SELECT</A>-Anweisung mit denselben Auswahlkriterien aus.</P></LI></UL>
+> - Möglicherweise sollten Sie einen Primärschlüssel für die neue Tabelle festlegen. Bei der Erstellung der Tabelle werden die Datentypen und Feldgrößen aller Felder der der Abfrage zugrunde liegenden Tabellen an die Felder der neuen Tabelle vererbt. Es werden jedoch keine weiteren Feld- oder Tabelleneigenschaften übertragen.
+> - Um einer bereits bestehenden Tabelle Daten hinzuzufügen, verwenden Sie die [INSERT INTO](insert-into-statement-microsoft-access-sql.md)-Anweisung anstelle einer Anfügeabfrage.
+> - Um herauszufinden, welche Datensätze ausgewählt werden, bevor Sie die make-table-Abfrage ausführen, führen Sie erst einmal eine [SELECT](select-statement-microsoft-access-sql.md)-Anweisung mit denselben Auswahlkriterien aus.
 
 
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250193(v=office.15)
 ms:contentKeyID: 48548482
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0aed6889f16d55ee3ba7778bf9acc6134b744c5d
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 80ce29ed129035dcb6799844a4b78509b976f0ee
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862940"
 ---
 # <a name="configuring-rds-on-windows-2000"></a>Konfigurieren von RDS unter Windows 2000
 
@@ -26,15 +26,12 @@ Wenn es sich für Sie schwierig erweist, die Funktionsfähigkeit von RDS (Remote
 
 3.  Navigieren Sie mithilfe des Dienstprogramms RegEdit zu "HKEY\_lokale\_Computer\\SOFTWARE\\Microsoft\\DataFactory\\HandlerInfo", und stellen Sie sicher, dass **DefaultHandler** auf 0 festgelegt ist und **HandlerRequired** "" (Null String).
     
-
     > [!NOTE]
-    > <P>Wenn Sie diesen Abschnitt der Registrierung ändern, müssen Sie den WWW-Publishingdienst beenden und neu starten, indem Sie die folgenden Befehle an der Eingabeaufforderung eingeben: NET STOP W3SVC und NET START W3SVC.</P>
-
-
+    > Wenn Sie diesen Abschnitt der Registrierung ändern, müssen Sie den WWW-Publishingdienst beenden und neu starten, indem Sie die folgenden Befehle an der Eingabeaufforderung eingeben: NET STOP W3SVC und NET START W3SVC.
 
 4.  Navigieren Sie mithilfe des Dienstprogramms RegEdit in der Registrierung auf "HKEY\_lokale\_Computer\\SYSTEM\\CurrentControlSet\\Services\\W3SVC\\Parameter\\ADCLaunch" und stellen Sie sicher, dass eine wichtige gewählte **vorhanden ist RDSServer.Datafactory**. Wenn dies nicht der Fall ist, erstellen Sie ihn.
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 5.  Mithilfe des Internetdienste-Managers, wechseln Sie auf der Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stammverzeichnisses MSADC. Untersuchen Sie die Directory Security-IP-Adresse und der Domäne Name Einschränkungen. Wenn die "Zugriff verweigert" überprüft wird wählen Sie dann "Gewährt" aus.
 =======
 5.  Internetdienste-Manager verwenden, wechseln Sie zu der Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stammverzeichnisses MSADC. Untersuchen Sie die Directory Security-IP-Adresse und der Domäne Name Einschränkungen. Wenn die "Zugriff verweigert" überprüft wird wählen Sie dann "Gewährt" aus.

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822050(v=office.15)
 ms:contentKeyID: 48547202
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a5b911e9e02380e9ea6aa85100e2a60b3b086a49
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: fa8868d457100ea74eeb76b67fcfc535c2e859b3
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603000"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861911"
 ---
 # <a name="fieldcreateproperty-method-dao"></a>Field.CreateProperty Method (DAO)
 
@@ -72,7 +72,7 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 </table>
 
 
-<<<<<<< Kopf
+<<<<<<< HEAD
 ### <a name="return-value"></a>Rückgabewert
 =======
 ### <a name="return-value"></a>Rückgabewert
@@ -92,6 +92,6 @@ Verwenden Sie die [**Delete**](fields-delete-method-dao.md) -Methode für die **
 
 
 > [!NOTE]
-> <P>Wenn Sie das Argument DDL weglassen, wird standardmäßig auf False (nicht-DDL). Da keine entsprechende DDL-Eigenschaft verfügbar gemacht wurde, müssen Sie ein <STRONG>Property</STRONG>-Objekt, das von DLL in Nicht-DLL geändert werden soll, löschen und erneut erstellen.</P>
+> Wenn Sie das Argument DDL weglassen, wird standardmäßig auf False (nicht-DDL). Da keine entsprechende DDL-Eigenschaft verfügbar gemacht wurde, müssen Sie ein **Property**-Objekt, das von DLL in Nicht-DLL geändert werden soll, löschen und erneut erstellen.
 
 

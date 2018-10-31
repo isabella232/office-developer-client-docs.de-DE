@@ -4,21 +4,22 @@ TOCTitle: ConnectModeEnum
 ms:assetid: a15aa733-f899-5fe9-e705-67a4301706d1
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249743(v=office.15)
 ms:contentKeyID: 48546728
-ms.date: 09/18/2015
+ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 5b39fc42259a1906891b82bf9b9ef252997e6240
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 91d1ad892557ad944dca175a3589a74e7205ad01
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475545"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862576"
 ---
 # <a name="connectmodeenum"></a>ConnectModeEnum
-
 
 **Betrifft**: Access 2013 | Office 2013
 
 Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung](connection-object-ado.md) an, wobei ein [Datensatz](record-object-ado.md) geöffnet wird oder Werte für die [Mode](mode-property-ado.md)-Eigenschaft der **Record** - und [Stream](stream-object-ado.md)-Objekte angegeben werden.
+
+<br/>
 
 <table>
 <colgroup>
@@ -47,7 +48,7 @@ Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung]
 <tr class="odd">
 <td><p><strong>adModeRecursive</strong></p></td>
 <td><p>0 x 400000</p></td>
-<td><p>In Verbindung mit anderen <em>*ShareDeny*</em> Werte (<strong>AdModeShareDenyNone</strong>, <strong>AdModeShareDenyWrite</strong>oder <strong>AdModeShareDenyRead</strong>) weitergegeben sharing Einschränkungen auf alle untergeordneten Datensätze des aktuellen <strong>Datensatzes</strong>verwendet. Es hat keine Auswirkung, wenn der <strong>Datensatz</strong> keine untergeordneten Elemente verfügt. Ein Laufzeitfehler wird generiert, wenn sie nur <strong>AdModeShareDenyNone</strong> verwendet wird. Sie können jedoch mit <strong>AdModeShareDenyNone</strong> in Kombination mit anderen Werte verwendet werden. Sie können beispielsweise verwenden &quot; <strong>AdModeRead</strong> oder <strong>AdModeShareDenyNone</strong> oder <strong>AdModeRecursive</strong>&quot;.</p></td>
+<td><p>In Verbindung mit anderen <em>*ShareDeny*</em> Werte (<strong>AdModeShareDenyNone</strong>, <strong>AdModeShareDenyWrite</strong>oder <strong>AdModeShareDenyRead</strong>) weitergegeben sharing Einschränkungen auf alle untergeordneten Datensätze des aktuellen <strong>Datensatzes</strong>verwendet. Es hat keine Auswirkung, wenn der <strong>Datensatz</strong> keine untergeordneten Elemente verfügt.</p><p>Ein Laufzeitfehler wird generiert, wenn sie nur <strong>AdModeShareDenyNone</strong> verwendet wird. Sie können jedoch mit <strong>AdModeShareDenyNone</strong> in Kombination mit anderen Werte verwendet werden. Sie können beispielsweise verwenden &quot; <strong>AdModeRead</strong> oder <strong>AdModeShareDenyNone</strong> oder <strong>AdModeRecursive</strong>&quot;.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>adModeShareDenyNone</strong></p></td>
@@ -83,7 +84,7 @@ Gibt die verfügbaren Berechtigungen zum Ändern von Daten in einer [Verbindung]
 </table>
 
 
-**ADO/WFC-Entsprechung**
+### <a name="adowfc-equivalent"></a>ADO/WFC-Entsprechung
 
 Paket: **com.ms.wfc.data**
 

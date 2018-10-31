@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250152(v=office.15)
 ms:contentKeyID: 48548285
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1f64f3b04df989348173ad2fc975dcefbd1114b2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 727634356a08646b1e2757996cc6bf071de07353
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473114"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861575"
 ---
 # <a name="append-method-adox-columns"></a>Append-Methode (ADOX Columns)
 
@@ -40,6 +40,6 @@ Fügt der [Columns](column-object-adox.md)-Auflistung ein neues [Column](columns
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Es tritt ein Fehler auf, wenn ein <STRONG>Column</STRONG> -Objekt an die <STRONG>Columns</STRONG> -Auflistung eines <A href="index-object-adox.md">Index</A>-Objekts angefügt wird und das <STRONG>Column</STRONG> -Objekt nicht in einem <A href="table-object-adox.md">Table</A>-Objekt vorhanden ist, das bereits an die <A href="tables-collection-adox.md">Tables</A>-Auflistung angefügt wurde.</P>
+> [!HINWEIS] Es tritt ein Fehler auf, wenn ein **Column** -Objekt an die **Columns** -Auflistung eines [Index](index-object-adox.md)-Objekts angefügt wird und das **Column** -Objekt nicht in einem [Table](table-object-adox.md)-Objekt vorhanden ist, das bereits an die [Tables](tables-collection-adox.md)-Auflistung angefügt wurde.
 
 
