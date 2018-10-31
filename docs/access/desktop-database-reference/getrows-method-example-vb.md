@@ -1,24 +1,24 @@
 ---
 title: GetRows-Methode (Beispiel) (VB)
-TOCTitle: GetRows Method Example (VB)
+TOCTitle: GetRows method example (VB)
 ms:assetid: 5a4e03de-0c89-ed93-7fe8-685906878e60
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249311(v=office.15)
 ms:contentKeyID: 48545041
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b23bcff998745eff8895d1ce666e18efe1293d58
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 10ea58f34b89e01770889e49265ef7bd399b546e
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863871"
 ---
-# <a name="getrows-method-example-vb"></a><span data-ttu-id="216d5-102">GetRows-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="216d5-102">GetRows Method Example (VB)</span></span>
+# <a name="getrows-method-example-vb"></a><span data-ttu-id="bbc24-102">GetRows-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="bbc24-102">GetRows method example (VB)</span></span>
 
 
-<span data-ttu-id="216d5-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="216d5-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="bbc24-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="bbc24-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="216d5-p101">Dieses Beispiel verwendet die [GetRows](getrows-method-ado.md) -Methode, um eine angegebene Anzahl Zeilen aus einem [Recordset](recordset-object-ado.md) abzurufen und ein Array mit den daraus resultierenden Daten zu füllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Für das Ausführen dieser Prozedur ist die "GetRowsOK"-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="216d5-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
+<span data-ttu-id="bbc24-p101">Dieses Beispiel verwendet die [GetRows](getrows-method-ado.md) -Methode, um eine angegebene Anzahl Zeilen aus einem [Recordset](recordset-object-ado.md) abzurufen und ein Array mit den daraus resultierenden Daten zu füllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Für das Ausführen dieser Prozedur ist die "GetRowsOK"-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="bbc24-p101">This example uses the [GetRows](getrows-method-ado.md) method to retrieve a specified number of rows from a [Recordset](recordset-object-ado.md) and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if [EOF](bof-eof-properties-ado.md) has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
 
 ```vb 
  

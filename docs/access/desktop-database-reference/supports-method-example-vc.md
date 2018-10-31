@@ -1,24 +1,24 @@
 ---
 title: Supports-Methode (Beispiel) (VC++)
-TOCTitle: Supports Method Example (VC++)
+TOCTitle: Supports method example (VC++)
 ms:assetid: a258cf70-ecd4-20eb-efb2-21c1ca79f180
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249747(v=office.15)
 ms:contentKeyID: 48546756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa05faed443cbca3cadf746b9abb140fdf0f2c16
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ff519bbd41e9353f558cc2155a4641a82091ac41
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472651"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861897"
 ---
-# <a name="supports-method-example-vc"></a><span data-ttu-id="305e4-102">Supports-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="305e4-102">Supports Method Example (VC++)</span></span>
+# <a name="supports-method-example-vc"></a><span data-ttu-id="6976c-102">Supports-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="6976c-102">Supports method example (VC++)</span></span>
 
 
-<span data-ttu-id="305e4-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="305e4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="6976c-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="6976c-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="305e4-104">In diesem Beispiel wird die [Supports](supports-method-ado.md) -Methode, die durch ein Recordset geöffnet, die mit verschiedenen Cursortypen unterstützt Anzeigeoptionen.</span><span class="sxs-lookup"><span data-stu-id="305e4-104">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types.</span></span> <span data-ttu-id="305e4-105">Die Funktion DisplaySupport ist erforderlich, damit dieses Beispiel ausführen.</span><span class="sxs-lookup"><span data-stu-id="305e4-105">The DisplaySupport function is required for this example to run.</span></span>
+<span data-ttu-id="6976c-104">In diesem Beispiel wird die [Supports](supports-method-ado.md) -Methode, die durch ein Recordset geöffnet, die mit verschiedenen Cursortypen unterstützt Anzeigeoptionen.</span><span class="sxs-lookup"><span data-stu-id="6976c-104">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types.</span></span> <span data-ttu-id="6976c-105">Die Funktion DisplaySupport ist erforderlich, damit dieses Beispiel ausführen.</span><span class="sxs-lookup"><span data-stu-id="6976c-105">The DisplaySupport function is required for this example to run.</span></span>
 
 ```cpp 
  

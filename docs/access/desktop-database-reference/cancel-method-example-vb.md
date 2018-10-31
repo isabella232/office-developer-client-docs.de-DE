@@ -1,24 +1,24 @@
 ---
 title: Cancel-Methode (Beispiel) (VB)
-TOCTitle: Cancel Method Example (VB)
+TOCTitle: Cancel method example (VB)
 ms:assetid: 80851036-3627-87c2-60ca-65629136bf28
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249547(v=office.15)
 ms:contentKeyID: 48545926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 218095f361d315c4922639ee88c106ca2776ba33
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e449c6b94dfb20bacdb75efb821818a3f0c3a485
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473690"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860119"
 ---
-# <a name="cancel-method-example-vb"></a><span data-ttu-id="d3cca-102">Cancel-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="d3cca-102">Cancel Method Example (VB)</span></span>
+# <a name="cancel-method-example-vb"></a><span data-ttu-id="6937d-102">Cancel-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="6937d-102">Cancel method example (VB)</span></span>
 
 
-<span data-ttu-id="d3cca-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="d3cca-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="6937d-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="6937d-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="d3cca-104">In diesem Beispiel wird die [Cancel](cancel-method-ado.md)-Methode verwendet, um einen für ein [Connection](connection-object-ado.md)-Objekt ausgeführten Befehl abzubrechen, wenn die Verbindung ausgelastet ist.</span><span class="sxs-lookup"><span data-stu-id="d3cca-104">This example uses the [Cancel](cancel-method-ado.md) method to cancel a command executing on a [Connection](connection-object-ado.md) object if the connection is busy.</span></span>
+<span data-ttu-id="6937d-104">In diesem Beispiel wird die [Cancel](cancel-method-ado.md)-Methode verwendet, um einen für ein [Connection](connection-object-ado.md)-Objekt ausgeführten Befehl abzubrechen, wenn die Verbindung ausgelastet ist.</span><span class="sxs-lookup"><span data-stu-id="6937d-104">This example uses the [Cancel](cancel-method-ado.md) method to cancel a command executing on a [Connection](connection-object-ado.md) object if the connection is busy.</span></span>
 
 ```vb 
  

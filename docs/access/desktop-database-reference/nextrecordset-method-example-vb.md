@@ -1,24 +1,24 @@
 ---
 title: NextRecordset-Methode (Beispiel) (VB)
-TOCTitle: NextRecordset Method Example (VB)
+TOCTitle: NextRecordset method example (VB)
 ms:assetid: f8d99670-3c28-1704-0ec1-34b06e7cd1b0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250265(v=office.15)
 ms:contentKeyID: 48548795
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: adde158f073c991e4c6aadea8e2a39dbc89e0d6e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2438bb841fcdb1eb9d4dc6d7671b03db55dd3ed5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862204"
 ---
-# <a name="nextrecordset-method-example-vb"></a><span data-ttu-id="0419c-102">NextRecordset-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="0419c-102">NextRecordset Method Example (VB)</span></span>
+# <a name="nextrecordset-method-example-vb"></a><span data-ttu-id="fe215-102">NextRecordset-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="fe215-102">NextRecordset method example (VB)</span></span>
 
 
-<span data-ttu-id="0419c-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="0419c-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="fe215-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="fe215-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="0419c-104">In diesem Beispiel wird die [NextRecordset](nextrecordset-method-ado.md)-Methode verwendet, um die Daten in einer Datensatzgruppe anzuzeigen, die eine Verbundbefehlsanweisung aus drei separaten **SELECT** -Anweisungen verwendet.</span><span class="sxs-lookup"><span data-stu-id="0419c-104">This example uses the [NextRecordset](nextrecordset-method-ado.md) method to view the data in a recordset that uses a compound command statement made up of three separate **SELECT** statements.</span></span>
+<span data-ttu-id="fe215-104">In diesem Beispiel wird die [NextRecordset](nextrecordset-method-ado.md)-Methode verwendet, um die Daten in einer Datensatzgruppe anzuzeigen, die eine Verbundbefehlsanweisung aus drei separaten **SELECT** -Anweisungen verwendet.</span><span class="sxs-lookup"><span data-stu-id="fe215-104">This example uses the [NextRecordset](nextrecordset-method-ado.md) method to view the data in a recordset that uses a compound command statement made up of three separate **SELECT** statements.</span></span>
 
 ```vb 
  

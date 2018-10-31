@@ -1,24 +1,24 @@
 ---
 title: Supports-Methode (Beispiel) (VB)
-TOCTitle: Supports Method Example (VB)
+TOCTitle: Supports method example (VB)
 ms:assetid: 6ebeac50-59d1-41d0-b5ef-2be868182cc2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249438(v=office.15)
 ms:contentKeyID: 48545518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 959dcac3509720597cf7678a7c9cff44cd313d86
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d3ea5bf64eb4897dab60a8f80e0691a1d1538126
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472634"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860357"
 ---
-# <a name="supports-method-example-vb"></a><span data-ttu-id="97099-102">Supports-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="97099-102">Supports Method Example (VB)</span></span>
+# <a name="supports-method-example-vb"></a><span data-ttu-id="0fcdc-102">Supports-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="0fcdc-102">Supports method example (VB)</span></span>
 
 
-<span data-ttu-id="97099-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="97099-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0fcdc-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="0fcdc-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="97099-104">In diesem Beispiel wird die [Supports](supports-method-ado.md) -Methode, die durch ein Recordset geöffnet, die mit verschiedenen Cursortypen unterstützt Anzeigeoptionen.</span><span class="sxs-lookup"><span data-stu-id="97099-104">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types.</span></span> <span data-ttu-id="97099-105">Das Verfahren DisplaySupport ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="97099-105">The DisplaySupport procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="0fcdc-104">In diesem Beispiel wird die [Supports](supports-method-ado.md) -Methode, die durch ein Recordset geöffnet, die mit verschiedenen Cursortypen unterstützt Anzeigeoptionen.</span><span class="sxs-lookup"><span data-stu-id="0fcdc-104">This example uses the [Supports](supports-method-ado.md) method to display the options supported by a recordset opened with different cursor types.</span></span> <span data-ttu-id="0fcdc-105">Das Verfahren DisplaySupport ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="0fcdc-105">The DisplaySupport procedure is required for this procedure to run.</span></span>
 
 ```vb 
  

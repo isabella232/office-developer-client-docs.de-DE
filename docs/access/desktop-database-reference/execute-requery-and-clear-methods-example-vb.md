@@ -1,24 +1,24 @@
 ---
 title: Execute-, Requery- und Clear-Methoden (Beispiel) (VB)
-TOCTitle: Execute, Requery, and Clear Methods Example (VB)
+TOCTitle: Execute, Requery, and Clear methods example (VB)
 ms:assetid: 6d700971-6b77-bd41-dd22-df53f902c0f2
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249432(v=office.15)
 ms:contentKeyID: 48545491
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d32d4e0c56ea4b6a03474562410255bbc5952f4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c8d6c1a24bd20835ed96842d995a3c1568ae7139
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475017"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863024"
 ---
-# <a name="execute-requery-and-clear-methods-example-vb"></a><span data-ttu-id="20a78-102">Execute-, Requery- und Clear-Methoden (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="20a78-102">Execute, Requery, and Clear Methods Example (VB)</span></span>
+# <a name="execute-requery-and-clear-methods-example-vb"></a><span data-ttu-id="23ad9-102">Execute-, Requery- und Clear-Methoden (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="23ad9-102">Execute, Requery, and Clear methods example (VB)</span></span>
 
 
-<span data-ttu-id="20a78-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="20a78-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="23ad9-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="23ad9-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="20a78-p101">In diesem Beispiel wird die Ausführung der Execute-Methode aus einem Command-Objekt und einem Connection-Objekt dargestellt. Außerdem wird die Requery-Methode zum Abrufen von aktuellen Daten in einem Recordset-Objekt und die Clear-Methode zum Löschen des Inhalts der Errors-Auflistung verwendet. (Auf die Errors-Auflistung wird mithilfe des Connection-Objekts der ActiveConnection-Eigenschaft des Recordset-Objekts zugegriffen.) Die Prozeduren ExecuteCommand und PrintOutput sind erforderlich, damit dieser Vorgang ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="20a78-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
+<span data-ttu-id="23ad9-p101">In diesem Beispiel wird die Ausführung der Execute-Methode aus einem Command-Objekt und einem Connection-Objekt dargestellt. Außerdem wird die Requery-Methode zum Abrufen von aktuellen Daten in einem Recordset-Objekt und die Clear-Methode zum Löschen des Inhalts der Errors-Auflistung verwendet. (Auf die Errors-Auflistung wird mithilfe des Connection-Objekts der ActiveConnection-Eigenschaft des Recordset-Objekts zugegriffen.) Die Prozeduren ExecuteCommand und PrintOutput sind erforderlich, damit dieser Vorgang ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="23ad9-p101">This example demonstrates the **Execute** method when run from both a [Command](command-object-ado.md) object and a [Connection](connection-object-ado.md) object. It also uses the [Requery](requery-method-ado.md) method to retrieve current data in a [Recordset](recordset-object-ado.md), and the [Clear](clear-method-ado.md) method to clear the contents of the [Errors](errors-collection-ado.md) collection. (The **Errors** collection is accessed via the **Connection** object of the [ActiveConnection](activeconnection-property-ado.md) property of the [Recordset](recordset-object-ado.md).) The ExecuteCommand and PrintOutput procedures are required for this procedure to run.</span></span>
 
 ```vb 
  

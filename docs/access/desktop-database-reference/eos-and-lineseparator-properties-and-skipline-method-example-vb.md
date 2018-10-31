@@ -1,24 +1,24 @@
 ---
-title: EOS- und LineSeparator-Eigenschaft und SkipLine-Methode (Beispiel) (VB)
-TOCTitle: EOS and LineSeparator Properties and SkipLine Method Example (VB)
+title: EOS und LineSeparator-Eigenschaft und SkipLine-Methode (Beispiel) (VB)
+TOCTitle: EOS and LineSeparator Properties and SkipLine method example (VB)
 ms:assetid: 66508541-cc65-e16a-0f8d-2c0b20342b05
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249396(v=office.15)
 ms:contentKeyID: 48545340
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc2a46342b78bdf71b57830e5db92bf265640c2e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: cf46c6aa2adcf49fa1e51580c83a92611b25111e
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476149"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25862177"
 ---
-# <a name="eos-and-lineseparator-properties-and-skipline-method-example-vb"></a><span data-ttu-id="c95fe-102">EOS- und LineSeparator-Eigenschaft und SkipLine-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="c95fe-102">EOS and LineSeparator Properties and SkipLine Method Example (VB)</span></span>
+# <a name="eos-and-lineseparator-properties-and-skipline-method-example-vb"></a><span data-ttu-id="0bfeb-102">EOS und LineSeparator-Eigenschaft und SkipLine-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="0bfeb-102">EOS and LineSeparator Properties and SkipLine method example (VB)</span></span>
 
 
-<span data-ttu-id="c95fe-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="c95fe-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0bfeb-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="0bfeb-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="c95fe-p101">Dieses Beispiel veranschaulicht, wie Textdatenströme zeilenweise bearbeitet werden. Es werden die Auswirkungen des Änderns des Zeilentrennzeichens vom standardmäßigen Wagenrücklauf/Zeilenvorschub (**adCRLF**) in lediglich einen Zeilenvorschub (**adLF**) oder einen Wagenrücklauf (**adCR**) aufgezeigt.</span><span class="sxs-lookup"><span data-stu-id="c95fe-p101">This example demonstrates how to manipulate text streams one line at a time. The effect of changing the line separator from the default carriage return/linefeed (**adCRLF**) to simply linefeed (**adLF**) or carriage return (**adCR**) is shown.</span></span>
+<span data-ttu-id="0bfeb-p101">Dieses Beispiel veranschaulicht, wie Textdatenströme zeilenweise bearbeitet werden. Es werden die Auswirkungen des Änderns des Zeilentrennzeichens vom standardmäßigen Wagenrücklauf/Zeilenvorschub (**adCRLF**) in lediglich einen Zeilenvorschub (**adLF**) oder einen Wagenrücklauf (**adCR**) aufgezeigt.</span><span class="sxs-lookup"><span data-stu-id="0bfeb-p101">This example demonstrates how to manipulate text streams one line at a time. The effect of changing the line separator from the default carriage return/linefeed (**adCRLF**) to simply linefeed (**adLF**) or carriage return (**adCR**) is shown.</span></span>
 
 ```vb 
  

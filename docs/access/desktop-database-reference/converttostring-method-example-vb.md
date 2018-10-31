@@ -1,22 +1,22 @@
 ---
 title: ConvertToString-Methode (Beispiel) (VB)
-TOCTitle: ConvertToString Method Example (VB)
+TOCTitle: ConvertToString method example (VB)
 ms:assetid: a75f9d56-7043-34b0-ab78-e146c4a69e15
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249772(v=office.15)
 ms:contentKeyID: 48546875
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 16e955e95a29c64499f983f02ee345de02db0192
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 79fc03b88d1a3fa3e625b24e038eefcefffe55c5
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860091"
 ---
-# <a name="converttostring-method-example-vb"></a><span data-ttu-id="a6263-102">ConvertToString-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="a6263-102">ConvertToString Method Example (VB)</span></span>
+# <a name="converttostring-method-example-vb"></a><span data-ttu-id="3d2e5-102">ConvertToString-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="3d2e5-102">ConvertToString method example (VB)</span></span>
 
 
-<span data-ttu-id="a6263-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="a6263-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3d2e5-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="3d2e5-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
 ```vb 
  

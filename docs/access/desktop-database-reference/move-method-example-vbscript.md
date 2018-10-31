@@ -1,30 +1,30 @@
 ---
 title: Move-Methode (Beispiel) (VBScript)
-TOCTitle: Move Method Example (VBScript)
+TOCTitle: Move method example (VBScript)
 ms:assetid: 42f2eb08-47cf-f422-6176-badd414d0bfc
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249198(v=office.15)
 ms:contentKeyID: 48544489
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ff5ff45c78100cfb623c687bc5c17d743dd66a50
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: eccec24c2e0fa110e0266cbab610c4e7d5c16c84
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475684"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863962"
 ---
-# <a name="move-method-example-vbscript"></a><span data-ttu-id="aa33c-102">Move-Methode (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="aa33c-102">Move Method Example (VBScript)</span></span>
+# <a name="move-method-example-vbscript"></a><span data-ttu-id="fd20e-102">Move-Methode (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="fd20e-102">Move method example (VBScript)</span></span>
 
 
-<span data-ttu-id="aa33c-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="aa33c-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="fd20e-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="fd20e-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="aa33c-104">In diesem Beispiel wird [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="aa33c-104">This example uses the [Move](move-method-ado.md) method to position the record pointer, based on user input.</span></span>
+<span data-ttu-id="fd20e-104">In diesem Beispiel wird [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="fd20e-104">This example uses the [Move](move-method-ado.md) method to position the record pointer, based on user input.</span></span>
 
-<span data-ttu-id="aa33c-105">Verwenden Sie das folgende Beispiel in einer Active Server Page-Datei (ASP).</span><span class="sxs-lookup"><span data-stu-id="aa33c-105">Use the following example in an Active Server Page (ASP).</span></span>
+<span data-ttu-id="fd20e-105">Verwenden Sie das folgende Beispiel in einer Active Server Page-Datei (ASP).</span><span class="sxs-lookup"><span data-stu-id="fd20e-105">Use the following example in an Active Server Page (ASP).</span></span>
 
-<span data-ttu-id="aa33c-p101">Verwenden Sie Find, um die Datei Adovbs.inc zu suchen, und speichern Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie die Datei unter dem Namen MoveVBS.asp. Sie können das Ergebnis in einem beliebigen Browser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="aa33c-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span></span>
+<span data-ttu-id="fd20e-p101">Verwenden Sie Find, um die Datei Adovbs.inc zu suchen, und speichern Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie die Datei unter dem Namen MoveVBS.asp. Sie können das Ergebnis in einem beliebigen Browser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="fd20e-p101">Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **MoveVBS.asp**. You can view the result in any browser.</span></span>
 
-<span data-ttu-id="aa33c-109">Versuchen Sie, einen Buchstaben oder einen Nicht-Ganzzahl-Wert ein, um die Behebung des Fehlers anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="aa33c-109">Try entering a letter or noninteger to see the error handling work.</span></span>
+<span data-ttu-id="fd20e-109">Versuchen Sie, einen Buchstaben oder einen Nicht-Ganzzahl-Wert ein, um die Behebung des Fehlers anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="fd20e-109">Try entering a letter or noninteger to see the error handling work.</span></span>
 
 ```vb 
  

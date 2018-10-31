@@ -1,24 +1,24 @@
 ---
 title: OpenSchema-Methode (Beispiel) (VC++)
-TOCTitle: OpenSchema Method Example (VC++)
+TOCTitle: OpenSchema method example (VC++)
 ms:assetid: 8654d003-2c6d-f8dc-5680-5e195ca5f9bd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249584(v=office.15)
 ms:contentKeyID: 48546083
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 05880b64275a5ac2addb75f8284f3bda4fd34f45
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 77d50f07aa3b98f93280105776b433a7c7302b57
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25861400"
 ---
-# <a name="openschema-method-example-vc"></a><span data-ttu-id="e5975-102">OpenSchema-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="e5975-102">OpenSchema Method Example (VC++)</span></span>
+# <a name="openschema-method-example-vc"></a><span data-ttu-id="facf7-102">OpenSchema-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="facf7-102">OpenSchema method example (VC++)</span></span>
 
 
-<span data-ttu-id="e5975-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="e5975-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="facf7-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="facf7-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="e5975-104">In diesem Beispiel wird die [OpenSchema](openschema-method-ado.md)-Methode verwendet, um den Namen und den Typ jeder Tabelle in der ***Pubs***-Datenbank anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="e5975-104">This example uses the [OpenSchema](openschema-method-ado.md) method to display the name and type of each table in the ***Pubs*** database.</span></span>
+<span data-ttu-id="facf7-104">In diesem Beispiel wird die [OpenSchema](openschema-method-ado.md)-Methode verwendet, um den Namen und den Typ jeder Tabelle in der ***Pubs***-Datenbank anzuzeigen.</span><span class="sxs-lookup"><span data-stu-id="facf7-104">This example uses the [OpenSchema](openschema-method-ado.md) method to display the name and type of each table in the ***Pubs*** database.</span></span>
 
 ```cpp 
  

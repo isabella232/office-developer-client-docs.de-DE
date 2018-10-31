@@ -1,24 +1,24 @@
 ---
 title: Refresh-Methode (Beispiel) (VC++)
-TOCTitle: Refresh Method Example (VC++)
+TOCTitle: Refresh method example (VC++)
 ms:assetid: fd40488f-2af5-574a-0717-7bfb5c3f1094
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250298(v=office.15)
 ms:contentKeyID: 48548906
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: abbabaf494903ad4b2cdd06e5f40b24d994d6cbd
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c8a1be8cc8745f3fcff4186a0f66693dcc668b50
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473089"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860637"
 ---
-# <a name="refresh-method-example-vc"></a><span data-ttu-id="14db2-102">Refresh-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="14db2-102">Refresh Method Example (VC++)</span></span>
+# <a name="refresh-method-example-vc"></a><span data-ttu-id="695da-102">Refresh-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="695da-102">Refresh method example (VC++)</span></span>
 
 
-<span data-ttu-id="14db2-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="14db2-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="695da-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="695da-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="14db2-104">In diesem Beispiel wird die Verwendung der [Refresh](refresh-method-ado.md)-Methode zum Aktualisieren der [Parameters](parameters-collection-ado.md)-Auflistung für das [Command](command-object-ado.md)-Objekt einer gespeicherten Prozedur veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="14db2-104">This example demonstrates using the [Refresh](refresh-method-ado.md) method to refresh the [Parameters](parameters-collection-ado.md) collection for a stored procedure [Command](command-object-ado.md) object.</span></span>
+<span data-ttu-id="695da-104">In diesem Beispiel wird die Verwendung der [Refresh](refresh-method-ado.md)-Methode zum Aktualisieren der [Parameters](parameters-collection-ado.md)-Auflistung für das [Command](command-object-ado.md)-Objekt einer gespeicherten Prozedur veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="695da-104">This example demonstrates using the [Refresh](refresh-method-ado.md) method to refresh the [Parameters](parameters-collection-ado.md) collection for a stored procedure [Command](command-object-ado.md) object.</span></span>
 
 ```cpp 
  
@@ -238,7 +238,7 @@ void PrintComError(_com_error &e)
 // EndRefreshCpp 
 ```
 
-<span data-ttu-id="14db2-105">**RefreshX.h**</span><span class="sxs-lookup"><span data-stu-id="14db2-105">**RefreshX.h**</span></span>
+<span data-ttu-id="695da-105">**RefreshX.h**</span><span class="sxs-lookup"><span data-stu-id="695da-105">**RefreshX.h**</span></span>
 
 ```cpp 
  

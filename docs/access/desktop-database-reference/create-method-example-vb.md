@@ -1,24 +1,24 @@
 ---
-title: Create-Methode (VB-Beispiel)
-TOCTitle: Create Method Example (VB)
+title: Create-Methode (Beispiel) (VB)
+TOCTitle: Create method example (VB)
 ms:assetid: 3e6a4f3d-3b25-2dfb-5ef3-6a4c5326b78f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249171(v=office.15)
 ms:contentKeyID: 48544372
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: df55297ecc4ebd6875b4b28cc7bc45038789d83c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3eea826ae452576e02ab6f98bd75369ff079f7de
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475190"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860063"
 ---
-# <a name="create-method-example-vb"></a><span data-ttu-id="047c1-102">Create-Methode (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="047c1-102">Create Method Example (VB)</span></span>
+# <a name="create-method-example-vb"></a><span data-ttu-id="621bc-102">Create-Methode (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="621bc-102">Create method example (VB)</span></span>
 
 
-<span data-ttu-id="047c1-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="047c1-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="621bc-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="621bc-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="047c1-104">Im folgenden Code wird das Erstellen einer neuen Microsoft Jet-Datenbank mithilfe der [Create](create-method-adox.md)-Methode gezeigt.</span><span class="sxs-lookup"><span data-stu-id="047c1-104">The following code shows how to create a new Microsoft Jet database with the [Create](create-method-adox.md) method.</span></span>
+<span data-ttu-id="621bc-104">Im folgenden Code wird das Erstellen einer neuen Microsoft Jet-Datenbank mithilfe der [Create](create-method-adox.md)-Methode gezeigt.</span><span class="sxs-lookup"><span data-stu-id="621bc-104">The following code shows how to create a new Microsoft Jet database with the [Create](create-method-adox.md) method.</span></span>
 
 ```vb 
  

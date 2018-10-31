@@ -6,27 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250048(v=office.15)
 ms:contentKeyID: 48547876
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 942aa73a6939d4601e77c1517edb96207aa7925e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d190ad5d99c35c78f1045c3ae026c6f3a58e1370
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475244"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25863381"
 ---
-# <a name="ado-event-instantiation-by-language-ado"></a><span data-ttu-id="49d54-102">ADO Event Instantiation by Language (ADO)</span><span class="sxs-lookup"><span data-stu-id="49d54-102">ADO Event Instantiation by Language (ADO)</span></span>
+# <a name="ado-event-instantiation-by-language-ado"></a><span data-ttu-id="ae3ce-102">ADO Event Instantiation by Language (ADO)</span><span class="sxs-lookup"><span data-stu-id="ae3ce-102">ADO Event Instantiation by Language (ADO)</span></span>
 
 
-<span data-ttu-id="49d54-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="49d54-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ae3ce-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="ae3ce-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-  - [<span data-ttu-id="49d54-104">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="49d54-104">Visual Basic</span></span>](visual-basic.md)
+<span data-ttu-id="ae3ce-104">Dieser Abschnitt enthält die folgenden Themen:</span><span class="sxs-lookup"><span data-stu-id="ae3ce-104">This section includes the following topics:</span></span>
 
-  - [<span data-ttu-id="49d54-105">Visual C++</span><span class="sxs-lookup"><span data-stu-id="49d54-105">Visual C++</span></span>](visual-c.md)
+- [<span data-ttu-id="ae3ce-105">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="ae3ce-105">Visual Basic</span></span>](visual-basic.md)
 
-  - [<span data-ttu-id="49d54-106">Visual J++</span><span class="sxs-lookup"><span data-stu-id="49d54-106">Visual J++</span></span>](visual-j.md)
+- [<span data-ttu-id="ae3ce-106">Visual C++</span><span class="sxs-lookup"><span data-stu-id="ae3ce-106">Visual C++</span></span>](visual-c.md)
 
-  - [<span data-ttu-id="49d54-107">VBScript</span><span class="sxs-lookup"><span data-stu-id="49d54-107">VBScript</span></span>](vbscript.md)
+- [<span data-ttu-id="ae3ce-107">Visual J++</span><span class="sxs-lookup"><span data-stu-id="ae3ce-107">Visual J++</span></span>](visual-j.md)
 
-  - [<span data-ttu-id="49d54-108">JScript</span><span class="sxs-lookup"><span data-stu-id="49d54-108">JScript</span></span>](jscript.md)
+- [<span data-ttu-id="ae3ce-108">VBScript</span><span class="sxs-lookup"><span data-stu-id="ae3ce-108">VBScript</span></span>](vbscript.md)
 
-  - [<span data-ttu-id="49d54-109">ADO/WFC</span><span class="sxs-lookup"><span data-stu-id="49d54-109">ADO/WFC</span></span>](ado-wfc.md)
+- [<span data-ttu-id="ae3ce-109">JScript</span><span class="sxs-lookup"><span data-stu-id="ae3ce-109">JScript</span></span>](jscript.md)
+
+- [<span data-ttu-id="ae3ce-110">ADO/WFC</span><span class="sxs-lookup"><span data-stu-id="ae3ce-110">ADO/WFC</span></span>](ado-wfc.md)
 

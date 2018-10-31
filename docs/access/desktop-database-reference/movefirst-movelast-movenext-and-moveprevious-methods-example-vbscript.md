@@ -1,26 +1,26 @@
 ---
 title: MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VBScript)
-TOCTitle: MoveFirst, MoveLast, MoveNext, and MovePrevious Methods Example (VBScript)
+TOCTitle: MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VBScript)
 ms:assetid: e1780013-5e11-aa8a-1be5-4d6d4273e72a
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250148(v=office.15)
 ms:contentKeyID: 48548261
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 934be9801a1c73c737e32623a7fe9d2792dca9ed
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e54c7d13a34cf8577fcfa601a39c4332a8002442
+ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473047"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25860504"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a><span data-ttu-id="57050-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="57050-102">MoveFirst, MoveLast, MoveNext, and MovePrevious Methods Example (VBScript)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a><span data-ttu-id="8f23c-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="8f23c-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VBScript)</span></span>
 
 
-<span data-ttu-id="57050-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="57050-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8f23c-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8f23c-103">**Applies to**: Access 2013 | Office 2013</span></span>
 
-<span data-ttu-id="57050-104">In diesem Beispiel werden die Methoden [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) und [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) verwendet, um den Zeiger für den Datensatz eines [Recordset](recordset-object-ado.md)-Objekts auf der Grundlage des angegebenen Befehls zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="57050-104">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command.</span></span>
+<span data-ttu-id="8f23c-104">In diesem Beispiel werden die Methoden [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) und [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) verwendet, um den Zeiger für den Datensatz eines [Recordset](recordset-object-ado.md)-Objekts auf der Grundlage des angegebenen Befehls zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="8f23c-104">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command.</span></span>
 
-<span data-ttu-id="57050-p101">Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder in einen anderen Browser ein, und speichern Sie die Datei unter dem Namen **MoveFirstVBS.asp**. Sie können die Ergebnisse in einem beliebigen Browser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="57050-p101">Cut and paste the following code into Notepad or another text editor, and save it as **MoveFirstVBS.asp**. You can view the result in any browser.</span></span>
+<span data-ttu-id="8f23c-p101">Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder in einen anderen Browser ein, und speichern Sie die Datei unter dem Namen **MoveFirstVBS.asp**. Sie können die Ergebnisse in einem beliebigen Browser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="8f23c-p101">Cut and paste the following code into Notepad or another text editor, and save it as **MoveFirstVBS.asp**. You can view the result in any browser.</span></span>
 
 ```vb 
  
