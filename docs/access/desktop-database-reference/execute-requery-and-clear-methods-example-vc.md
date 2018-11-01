@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249803(v=office.15)
 ms:contentKeyID: 48547008
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 037e6f8754d9ff133f55361273089f09c971b4b2
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 1d66038840a2566e90f34fc5e58d1c85267cc3c5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860189"
+ms.locfileid: "25879718"
 ---
 # <a name="execute-requery-and-clear-methods-example-vc"></a>Execute-, Requery- und Clear-Methoden (Beispiel) (VC++)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Ausführung der Execute-Methode aus einem Command-Objekt und einem Connection-Objekt dargestellt. Außerdem wird die Requery-Methode zum Abrufen von aktuellen Daten in einem Recordset-Objekt und die Clear-Methode zum Löschen des Inhalts der Errors-Auflistung verwendet. Die Funktionen ExecuteCommand und PrintOutput sind erforderlich, damit dieses Beispiel ausgeführt werden kann.
 

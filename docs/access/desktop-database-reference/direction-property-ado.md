@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Direction-Eigenschaft (ADO) TOCTitle: Direction-Eigenschaft (ADO) === Titel: Direction-Eigenschaft (ADO) TOCTitle: Direction-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 51a94abb-7ce9-9adb-2b76-5391eb9f6863 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249262(v=office.15) Ms:contentKeyID: 48544823 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Direction-Eigenschaft (ADO)
+TOCTitle: Direction property (ADO)
+ms:assetid: 51a94abb-7ce9-9adb-2b76-5391eb9f6863
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249262(v=office.15)
+ms:contentKeyID: 48544823
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: b9e34522a69b2e79f8ef44b912e2c0648c5b813d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881293"
 ---
-
-<<<<<<< Kopf
 # <a name="direction-property-ado"></a>Direction-Eigenschaft (ADO)
-=======
-# <a name="direction-property-ado"></a>Direction-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt an, ob der [Parameter](parameter-object-ado.md) einen Eingabeparameter, einen Ausgabeparameter oder einen Ein- und Ausgabeparameter darstellt, oder ob der Parameter der Rückgabewert aus einer gespeicherten Prozedur ist.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Mit dieser Eigenschaft wird ein [ParameterDirectionEnum](parameterdirectionenum.md)-Wert festgelegt oder zurückgegeben.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Provider- und DefaultDatabase Eigenschaften Beispiel) (VB) TOCTitle: Provider- und DefaultDatabase Eigenschaften Beispiel) (VB) === Titel: Provider- und DefaultDatabase-Eigenschaften (Beispiel) (VB) TOCTitle: Anbieter und DefaultDatabase-Eigenschaften (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15) Ms:contentKeyID: 48544107 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VB)
+TOCTitle: Provider and DefaultDatabase properties example (VB)
+ms:assetid: 337b90e6-851d-2101-0671-50c4173aec13
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249104(v=office.15)
+ms:contentKeyID: 48544107
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: c213347532407b96c13fc009fa05740dabc4658d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891009"
 ---
-
-<<<<<<< Kopf
 # <a name="provider-and-defaultdatabase-properties-example-vb"></a>Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="provider-and-defaultdatabase-properties-example-vb"></a>Provider- und DefaultDatabase-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.
 

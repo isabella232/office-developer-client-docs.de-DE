@@ -1,16 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) TOCTitle: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) Ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) ms: ContentKeyID: 48547811 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ActualSize- und DefinedSize-Eigenschaft (Beispiel) (JScript)
+TOCTitle: ActualSize and DefinedSize properties example (JScript)
+ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15)
+ms:contentKeyID: 48547811
+ms.date: 10/16/2018
+mtps_version: v=office.15
+ms.openlocfilehash: ce9c50039566511a4f22f3ab613e5dce36c3931d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878696"
 ---
-
 # <a name="actualsize-and-definedsize-properties-example-jscript"></a>ActualSize- und DefinedSize-Eigenschaft (Beispiel) (JScript)
 
-=== Titel: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) TOCTitle: ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript) Ms:assetid: cf8d6cb6-3446-c193-8774-db41c4d14a2b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250032(v=office.15) Ms:contentKeyID: 48547811 ms.date: 10 / 16/2018 Mtps_version: Office. 15
----
-
-# <a name="actualsize-and-definedsize-properties-example-jscript"></a>ActualSize- und DefinedSize-Eigenschaften (Beispiel) (JScript)
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel werden mit den Eigenschaften [ActualSize](actualsize-property-ado.md) und [DefinedSize](definedsize-property-ado.md) die definierte Größe und die tatsächliche Größe eines Felds angezeigt. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie ihn unter dem Dateinamen **ActualSizeJS.asp**.
 
@@ -22,11 +27,7 @@ In diesem Beispiel werden mit den Eigenschaften [ActualSize](actualsize-property
 <html> 
  
 <head> 
-<<<<<<< HEAD
- <title>ActualSize and DefinedSize Properties Example (JScript)</title> 
-=======
  <title>ActualSize and DefinedSize properties example (JScript)</title> 
->>>>>>> master
 <style> 
 <!-- 
 body { 

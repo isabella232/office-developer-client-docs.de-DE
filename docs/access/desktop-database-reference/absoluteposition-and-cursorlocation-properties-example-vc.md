@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: AbsolutePosition- und CursorLocation Eigenschaft (Beispiel) (VC++) TOCTitle: AbsolutePosition- und CursorLocation Eigenschaft (Beispiel) (VC++) Ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15) MS:contentKeyID: 48546739 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (VC++)
+TOCTitle: AbsolutePosition and CursorLocation properties example (VC++)
+ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15)
+ms:contentKeyID: 48546739
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 4928fe6bc24dc3192809dd6ebfd3b106c0ca9572
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891051"
 ---
-
 # <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a>AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (VC++)
-=== Titel: AbsolutePosition- und CursorLocation-Eigenschaften (VC++-Beispiel) TOCTitle: AbsolutePosition- und CursorLocation-Eigenschaften (VC++-Beispiel) Ms:assetid: a1ae63dd-296b-09b0-a898-091b855e3141 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249745(v=office.15) Ms:contentKeyID: 48546739 MS.Date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a>AbsolutePosition- und CursorLocation-Eigenschaften (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird veranschaulicht, wie über die [AbsolutePosition](absoluteposition-property-ado.md)-Eigenschaft der Status einer Schleife nachverfolgt werden kann, in der alle Datensätze eines [Recordset](recordset-object-ado.md)-Objekts aufgezählt werden. Mithilfe der [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft wird die **AbsolutePosition** -Eigenschaft aktiviert, indem als Cursor ein Clientcursor festgelegt wird.
 

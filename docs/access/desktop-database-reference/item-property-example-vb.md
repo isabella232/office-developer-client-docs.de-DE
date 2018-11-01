@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Element Eigenschaft Beispiel) (VB) TOCTitle: Element Eigenschaft Beispiel) (VB) === Titel: Item-Eigenschaft (Beispiel) (VB) TOCTitle: Item-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: e8d17560-8a0d-7045-d8dc-728a85037c0d Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250179(v=office.15) Ms:contentKeyID: 48548430 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Item-Eigenschaft (Beispiel) (VB)
+TOCTitle: Item property example (VB)
+ms:assetid: e8d17560-8a0d-7045-d8dc-728a85037c0d
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250179(v=office.15)
+ms:contentKeyID: 48548430
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 5601363e072585e731af58d117c219b363271f0e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881552"
 ---
-
-<<<<<<< Kopf
 # <a name="item-property-example-vb"></a>Item-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="item-property-example-vb"></a>Item-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.
 

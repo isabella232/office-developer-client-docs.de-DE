@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250229(v=office.15)
 ms:contentKeyID: 48548645
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f062eb86b45778cc7f25fb2d0d0588b82bdd78b3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2ea388f44dbe9bdc572d439f5f0d00d6de7a06b1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475259"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876568"
 ---
 # <a name="anticipating-errors"></a>Vorhersehen von Fehlern
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Die Fehlervermeidung ist mindestens so wichtig wie die Fehlerbehandlung. Dieser letzte Abschnitt enthält eine kurze Aufstellung der Vorsichtsmaßnahmen für Ihre Anwendung, um die Wahrscheinlichkeit von Fehlern zu reduzieren.
 

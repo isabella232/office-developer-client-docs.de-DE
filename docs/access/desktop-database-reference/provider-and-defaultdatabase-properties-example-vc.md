@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel) TOCTitle: Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel) === Titel: Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel) TOCTitle: Anbieter und DefaultDatabase-Eigenschaften (Beispiel) (VC++)
->>>>>>> Master Ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15) Ms:contentKeyID: 48543687 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Provider and DefaultDatabase properties example (VC++)
+ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15)
+ms:contentKeyID: 48543687
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: d7f94f0eef4821fcc1dc778d8772926e6af70e5a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889833"
 ---
-
-<<<<<<< Kopf
 # <a name="provider-and-defaultdatabase-properties-example-vc"></a>Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="provider-and-defaultdatabase-properties-example-vc"></a>Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.
 

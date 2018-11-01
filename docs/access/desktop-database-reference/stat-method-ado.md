@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250056(v=office.15)
 ms:contentKeyID: 48547916
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6bc4ff8076ec07d065ba932ef0e0017edb97e703
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 6e620c3b2f824f7c49abb576ea46a51b04598463
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606955"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891157"
 ---
 # <a name="stat-method-ado"></a>Stat-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Ruft Informationen zu einem **Stream** -Objekt ab.
 
@@ -24,11 +24,7 @@ Ruft Informationen zu einem **Stream** -Objekt ab.
 
 Lange *Stream*. STAT (*StatStg*, *StatFlag*)
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Ein langer Wert, der den Status des Vorgangs angibt.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Typ--Eigenschaft (Beispiel) (Field) (VB) TOCTitle: Typ--Eigenschaft (Beispiel) (Field) (VB) === Titel: Typ--Eigenschaft (Beispiel) (Field) (VB) TOCTitle: Typ--Eigenschaft (Beispiel) (Field) (VB)
->>>>>>> Master Ms:assetid: ff9e26a8-898d-ec89-5093-69c66dbb05ba Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15) Ms:contentKeyID: 48548966 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Type-Eigenschaft (Beispiel) (Field) (VB)
+TOCTitle: Type property example (Field) (VB)
+ms:assetid: ff9e26a8-898d-ec89-5093-69c66dbb05ba
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250314(v=office.15)
+ms:contentKeyID: 48548966
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: b7478dd3ab4574b3315f5d57bf2f3680b8777e22
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889441"
 ---
-
-<<<<<<< Kopf
 # <a name="type-property-example-field-vb"></a>Type-Eigenschaft (Beispiel) (Field) (VB)
-=======
-# <a name="type-property-example-field-vb"></a>Geben Sie die Eigenschaft (Beispiel) (Field) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die Type-Eigenschaft. Dazu wird de Name der Konstante angezeigt, die dem Wert der Type-Eigenschaft aller Field-Objekte der Employees-Tabelle entspricht. Die FieldType-Funktion ist erforderlich, damit diese Prozedur ausgeführt werden kann.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248807(v=office.15)
 ms:contentKeyID: 48543012
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a01cfd682de37d8b1c14d3af6e5c7b15e0cc22b
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: aac8038e83d24afe3080e2846fe2e6f057171961
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864130"
+ms.locfileid: "25874832"
 ---
 # <a name="comparebookmarks-method-example-vb"></a>CompareBookmarks-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [CompareBookmarks](comparebookmarks-method-ado.md)-Methode dargestellt. Der relative Wert von Textmarken wird in der Regel nur bei bestimmten Textmarken verwendet, die einen Sonderfall darstellen.
 

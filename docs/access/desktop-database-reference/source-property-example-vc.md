@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Source-Eigenschaft (VC++-Beispiel) TOCTitle: Source-Eigenschaft (VC++-Beispiel) === Titel: Source-Eigenschaft (VC++-Beispiel) TOCTitle: Source-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15) Ms:contentKeyID: 48543949 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Source-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Source property example (VC++)
+ms:assetid: 2c539e8b-04a8-2fc3-052e-a0776682e16c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249067(v=office.15)
+ms:contentKeyID: 48543949
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: d977f962e08ba8497392582fb26cfbf1d8691a28
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881202"
 ---
-
-<<<<<<< Kopf
 # <a name="source-property-example-vc"></a>Source-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="source-property-example-vc"></a>Source-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Source](source-property-ado-recordset.md)-Eigenschaft, indem drei [Recordset](recordset-object-ado.md)-Objekte geöffnet werden, die auf unterschiedlichen Datenquellen basieren.
 

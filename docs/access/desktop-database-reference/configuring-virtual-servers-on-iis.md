@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248837(v=office.15)
 ms:contentKeyID: 48543154
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1212a5c7e0761cf9c52a21b5abd67b7dd9841aa0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7408e2dc10a5e47b298b77a9244477b16bca3ff1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473052"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879242"
 ---
 # <a name="configuring-virtual-servers-on-iis"></a>Konfigurieren virtueller Server in IIS
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Beim Erstellen virtueller Server in Internetinformationsdienste (IIS) 4.0 müssen Sie zusätzlich die folgenden beiden Schritte ausführen, damit die virtuellen Server für eine Verwendung mit RDS konfiguriert werden können.
 

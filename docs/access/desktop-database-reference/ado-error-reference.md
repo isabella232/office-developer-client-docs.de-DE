@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248997(v=office.15)
 ms:contentKeyID: 48543690
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 53dfb03616b0610ed580f4e576f4c48ef3be8525
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8c1308b084efbf68233e9647cfed26d905d56400
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475588"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878773"
 ---
 # <a name="ado-error-reference"></a>ADO-Fehlerreferenz
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Die **ErrorValueEnum** -Konstante beschreibt die ADO-Fehlerwerte. Eine vollständige Aufstellung dieser aufgezählten Konstanten, einschließlich Werten, finden Sie in [Anhang B: ADO-Fehler](appendix-b-ado-errors.md). In diesem Abschnitt werden einige der interessanteren Fehler betrachtet. Außerdem werden Situationen, in denen diese ausgelöst werden können, oder Lösungen zum Beheben des Problems erläutert. Die **ErrorValueEnum** -Konstante und die Kurzform als positive Dezimalzahl werden aufgelistet.
 

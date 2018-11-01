@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835959(v=office.15)
 ms:contentKeyID: 48548367
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 25c52cf132cdc2c85671a4589e45c5989e504b8b
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: df28aaba3c10104f0b0f03970e9c414ba401e02b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25607032"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25890995"
 ---
 # <a name="recordset2getrows-method-dao"></a>Recordset2.GetRows Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt ab.
 
@@ -54,11 +54,7 @@ Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt a
 </table>
 
 
-<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Variant
 

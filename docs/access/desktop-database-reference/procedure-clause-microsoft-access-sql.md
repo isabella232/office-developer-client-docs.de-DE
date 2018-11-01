@@ -12,16 +12,16 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5ea21939115f31d760cd528a07922deeeaaef499
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 63b38a469c5de60588783381c24c61296b177bdd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473462"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877989"
 ---
 # <a name="procedure-clause-microsoft-access-sql"></a>PROCEDURE-Klausel (Microsoft Access SQL)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Definiert einen Namen und optionale Parameter für eine Abfrage.
 
