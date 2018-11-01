@@ -10,27 +10,27 @@ f1_keywords:
 - dao360.chm1053362
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1ec084dce260d3371df9928c8cb65f1e8f6027e1
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 8f048ec72abb0037e04dd65cd85c8a1219530297
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602706"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889756"
 ---
-# <a name="recordsetgetrows-method-dao"></a><span data-ttu-id="82588-102">Recordset.GetRows-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="82588-102">Recordset.GetRows Method (DAO)</span></span>
+# <a name="recordsetgetrows-method-dao"></a><span data-ttu-id="38e0f-102">Recordset.GetRows-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="38e0f-102">Recordset.GetRows Method (DAO)</span></span>
 
 
-<span data-ttu-id="82588-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="82588-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="38e0f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="38e0f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="82588-104">Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt ab.</span><span class="sxs-lookup"><span data-stu-id="82588-104">Retrieves multiple rows from a **[Recordset](recordset-object-dao.md)** object.</span></span>
+<span data-ttu-id="38e0f-104">Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt ab.</span><span class="sxs-lookup"><span data-stu-id="38e0f-104">Retrieves multiple rows from a **[Recordset](recordset-object-dao.md)** object.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="82588-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="82588-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="38e0f-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="38e0f-105">Syntax</span></span>
 
-<span data-ttu-id="82588-106">*Ausdruck* . GetRows (***NumRows***)</span><span class="sxs-lookup"><span data-stu-id="82588-106">*expression* .GetRows(***NumRows***)</span></span>
+<span data-ttu-id="38e0f-106">*Ausdruck* . GetRows (***NumRows***)</span><span class="sxs-lookup"><span data-stu-id="38e0f-106">*expression* .GetRows(***NumRows***)</span></span>
 
-<span data-ttu-id="82588-107">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="82588-107">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="38e0f-107">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="38e0f-107">*expression* A variable that represents a **Recordset** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="82588-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="82588-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="38e0f-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="38e0f-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -41,62 +41,58 @@ ms.locfileid: "25602706"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="82588-109">Name</span><span class="sxs-lookup"><span data-stu-id="82588-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="82588-110">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="82588-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="82588-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="82588-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="82588-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="82588-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="38e0f-109">Name</span><span class="sxs-lookup"><span data-stu-id="38e0f-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="38e0f-110">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="38e0f-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="38e0f-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="38e0f-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="38e0f-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="38e0f-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="82588-113">NumRows</span><span class="sxs-lookup"><span data-stu-id="82588-113">NumRows</span></span></p></td>
-<td><p><span data-ttu-id="82588-114">Optional</span><span class="sxs-lookup"><span data-stu-id="82588-114">Optional</span></span></p></td>
-<td><p><span data-ttu-id="82588-115"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="82588-115"><strong>Variant</strong></span></span></p></td>
-<td><p><span data-ttu-id="82588-116">Die Anzahl der abzurufenden Zeilen.</span><span class="sxs-lookup"><span data-stu-id="82588-116">The number of rows to retrieve.</span></span></p></td>
+<td><p><span data-ttu-id="38e0f-113">NumRows</span><span class="sxs-lookup"><span data-stu-id="38e0f-113">NumRows</span></span></p></td>
+<td><p><span data-ttu-id="38e0f-114">Optional</span><span class="sxs-lookup"><span data-stu-id="38e0f-114">Optional</span></span></p></td>
+<td><p><span data-ttu-id="38e0f-115"><strong>Variant</strong></span><span class="sxs-lookup"><span data-stu-id="38e0f-115"><strong>Variant</strong></span></span></p></td>
+<td><p><span data-ttu-id="38e0f-116">Die Anzahl der abzurufenden Zeilen.</span><span class="sxs-lookup"><span data-stu-id="38e0f-116">The number of rows to retrieve.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="82588-117"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="82588-117"><<<<<<< HEAD</span></span>
-### <a name="return-value"></a><span data-ttu-id="82588-118">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="82588-118">Return Value</span></span>
-=======
-### <a name="return-value"></a><span data-ttu-id="82588-119">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="82588-119">Return value</span></span>
->>>>>>> <span data-ttu-id="82588-120">master</span><span class="sxs-lookup"><span data-stu-id="82588-120">master</span></span>
+### <a name="return-value"></a><span data-ttu-id="38e0f-117">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="38e0f-117">Return value</span></span>
 
-<span data-ttu-id="82588-121">Variant</span><span class="sxs-lookup"><span data-stu-id="82588-121">Variant</span></span>
+<span data-ttu-id="38e0f-118">Variant</span><span class="sxs-lookup"><span data-stu-id="38e0f-118">Variant</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="82588-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="82588-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="38e0f-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="38e0f-119">Remarks</span></span>
 
-<span data-ttu-id="82588-p101">Mit der **GetRows**-Methode kopieren Sie Datensätze aus einem **Recordset**. **GetRows** gibt ein zweidimensionales Array zurück. Der erste Index identifiziert das Feld und der zweite die Nummer der Zeile. Beispielsweise stellt intField das Feld dar, und intRecord identifiziert die Zeilennummer:</span><span class="sxs-lookup"><span data-stu-id="82588-p101">Use the **GetRows** method to copy records from a **Recordset**. **GetRows** returns a two-dimensional array. The first subscript identifies the field and the second identifies the row number. For example, intField represents the field, and intRecord identifies the row number:</span></span>
+<span data-ttu-id="38e0f-p101">Mit der **GetRows**-Methode kopieren Sie Datensätze aus einem **Recordset**. **GetRows** gibt ein zweidimensionales Array zurück. Der erste Index identifiziert das Feld und der zweite die Nummer der Zeile. Beispielsweise stellt intField das Feld dar, und intRecord identifiziert die Zeilennummer:</span><span class="sxs-lookup"><span data-stu-id="38e0f-p101">Use the **GetRows** method to copy records from a **Recordset**. **GetRows** returns a two-dimensional array. The first subscript identifies the field and the second identifies the row number. For example, intField represents the field, and intRecord identifies the row number:</span></span>
 
-<span data-ttu-id="82588-127">AvarRecords (IntField, IntRecord)</span><span class="sxs-lookup"><span data-stu-id="82588-127">avarRecords(intField, intRecord)</span></span>
+<span data-ttu-id="38e0f-124">AvarRecords (IntField, IntRecord)</span><span class="sxs-lookup"><span data-stu-id="38e0f-124">avarRecords(intField, intRecord)</span></span>
 
-<span data-ttu-id="82588-128">Um den ersten Feldwert in der zweiten zurückgegebenen Zeile zu erhalten, verwenden Sie folgenden Code:</span><span class="sxs-lookup"><span data-stu-id="82588-128">To get the first field value in the second row returned, use code like the following:</span></span>
+<span data-ttu-id="38e0f-125">Um den ersten Feldwert in der zweiten zurückgegebenen Zeile zu erhalten, verwenden Sie folgenden Code:</span><span class="sxs-lookup"><span data-stu-id="38e0f-125">To get the first field value in the second row returned, use code like the following:</span></span>
 
-<span data-ttu-id="82588-129">Feld1 = avarRecords(0,1)</span><span class="sxs-lookup"><span data-stu-id="82588-129">field1 = avarRecords(0,1)</span></span>
+<span data-ttu-id="38e0f-126">Feld1 = avarRecords(0,1)</span><span class="sxs-lookup"><span data-stu-id="38e0f-126">field1 = avarRecords(0,1)</span></span>
 
-<span data-ttu-id="82588-130">Um den zweiten Feldwert in der ersten Zeile zu erhalten, verwenden Sie folgenden Code:</span><span class="sxs-lookup"><span data-stu-id="82588-130">To get the second field value in the first row, use code like the following:</span></span>
+<span data-ttu-id="38e0f-127">Um den zweiten Feldwert in der ersten Zeile zu erhalten, verwenden Sie folgenden Code:</span><span class="sxs-lookup"><span data-stu-id="38e0f-127">To get the second field value in the first row, use code like the following:</span></span>
 
-<span data-ttu-id="82588-131">Field2 = avarRecords(1,0)</span><span class="sxs-lookup"><span data-stu-id="82588-131">field2 = avarRecords(1,0)</span></span>
+<span data-ttu-id="38e0f-128">Field2 = avarRecords(1,0)</span><span class="sxs-lookup"><span data-stu-id="38e0f-128">field2 = avarRecords(1,0)</span></span>
 
-<span data-ttu-id="82588-132">Die avarRecords-Variable wird automatisch zu einem zweidimensionalen Array, wenn **GetRows** Daten zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="82588-132">The avarRecords variable automatically becomes a two-dimensional array when **GetRows** returns data.</span></span>
+<span data-ttu-id="38e0f-129">Die avarRecords-Variable wird automatisch zu einem zweidimensionalen Array, wenn **GetRows** Daten zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="38e0f-129">The avarRecords variable automatically becomes a two-dimensional array when **GetRows** returns data.</span></span>
 
-<span data-ttu-id="82588-133">Wenn Sie mehr Zeilen anfordern, als verfügbar sind, gibt **GetRows** nur die verfügbaren Zeilen zurück.</span><span class="sxs-lookup"><span data-stu-id="82588-133">If you request more rows than are available, then **GetRows** returns only the number of available rows.</span></span> <span data-ttu-id="82588-134">Sie können mithilfe der Visual Basic für Applikationen-Funktion **UBound** feststellen, wie viele Zeilen durch **GetRows** abgerufen wurden, denn die Größe des Arrays entspricht der Anzahl zurückgegebener Zeilen.</span><span class="sxs-lookup"><span data-stu-id="82588-134">You can use the Visual Basic for Applications **UBound** function to determine how many rows **GetRows** actually retrieved, because the array is sized to fit the number of returned rows.</span></span> <span data-ttu-id="82588-135">Wenn Sie die Ergebnisse in einer **Variant** aufgerufen VARIANZA zurückgegeben, konnte Sie beispielsweise den folgenden Code verwenden, um zu bestimmen, wie viele Zeilen tatsächlich zurückgegeben wurden:</span><span class="sxs-lookup"><span data-stu-id="82588-135">For example, if you returned the results into a **Variant** called varA, you could use the following code to determine how many rows were actually returned:</span></span>
+<span data-ttu-id="38e0f-130">Wenn Sie mehr Zeilen anfordern, als verfügbar sind, gibt **GetRows** nur die verfügbaren Zeilen zurück.</span><span class="sxs-lookup"><span data-stu-id="38e0f-130">If you request more rows than are available, then **GetRows** returns only the number of available rows.</span></span> <span data-ttu-id="38e0f-131">Sie können mithilfe der Visual Basic für Applikationen-Funktion **UBound** feststellen, wie viele Zeilen durch **GetRows** abgerufen wurden, denn die Größe des Arrays entspricht der Anzahl zurückgegebener Zeilen.</span><span class="sxs-lookup"><span data-stu-id="38e0f-131">You can use the Visual Basic for Applications **UBound** function to determine how many rows **GetRows** actually retrieved, because the array is sized to fit the number of returned rows.</span></span> <span data-ttu-id="38e0f-132">Wenn Sie die Ergebnisse in einer **Variant** aufgerufen VARIANZA zurückgegeben, konnte Sie beispielsweise den folgenden Code verwenden, um zu bestimmen, wie viele Zeilen tatsächlich zurückgegeben wurden:</span><span class="sxs-lookup"><span data-stu-id="38e0f-132">For example, if you returned the results into a **Variant** called varA, you could use the following code to determine how many rows were actually returned:</span></span>
 
-<span data-ttu-id="82588-136">NumReturned = UBound(varA,2) + 1</span><span class="sxs-lookup"><span data-stu-id="82588-136">numReturned = UBound(varA,2) + 1</span></span>
+<span data-ttu-id="38e0f-133">NumReturned = UBound(varA,2) + 1</span><span class="sxs-lookup"><span data-stu-id="38e0f-133">numReturned = UBound(varA,2) + 1</span></span>
 
-<span data-ttu-id="82588-p103">Sie müssen "+ 1" verwenden, da sich die erste zurückgegebene Zeile im Element 0 des Arrays befindet. Wie viele Zeilen abgerufen werden können, hängt von dem verfügbaren Speicher ab. Verwenden Sie GetRows nicht zum Abrufen einer ganzen Tabelle in ein Array, wenn sie groß ist.</span><span class="sxs-lookup"><span data-stu-id="82588-p103">You need to use "+ 1" because the first row returned is in the 0 element of the array. The number of rows that you can retrieve is constrained by the amount of available memory. You shouldn't use **GetRows** to retrieve an entire table into an array if it is large.</span></span>
+<span data-ttu-id="38e0f-p103">Sie müssen "+ 1" verwenden, da sich die erste zurückgegebene Zeile im Element 0 des Arrays befindet. Wie viele Zeilen abgerufen werden können, hängt von dem verfügbaren Speicher ab. Verwenden Sie GetRows nicht zum Abrufen einer ganzen Tabelle in ein Array, wenn sie groß ist.</span><span class="sxs-lookup"><span data-stu-id="38e0f-p103">You need to use "+ 1" because the first row returned is in the 0 element of the array. The number of rows that you can retrieve is constrained by the amount of available memory. You shouldn't use **GetRows** to retrieve an entire table into an array if it is large.</span></span>
 
-<span data-ttu-id="82588-140">Da **GetRows** alle Felder des **Recordsets** in das Array zurückgibt, einschließlich "Memo"- und "Long Binary"-Felder, sollten Sie eine Abfrage verwenden, die die zurückgegebenen Felder beschränkt.</span><span class="sxs-lookup"><span data-stu-id="82588-140">Because **GetRows** returns all fields of the **Recordset** into the array, including Memo and Long Binary fields, you might want to use a query that restricts the fields returned.</span></span>
+<span data-ttu-id="38e0f-137">Da **GetRows** alle Felder des **Recordsets** in das Array zurückgibt, einschließlich "Memo"- und "Long Binary"-Felder, sollten Sie eine Abfrage verwenden, die die zurückgegebenen Felder beschränkt.</span><span class="sxs-lookup"><span data-stu-id="38e0f-137">Because **GetRows** returns all fields of the **Recordset** into the array, including Memo and Long Binary fields, you might want to use a query that restricts the fields returned.</span></span>
 
-<span data-ttu-id="82588-141">Nach dem Aufruf von **GetRows** wird der aktuelle Datensatz in der nächsten ungelesenen Zeile positioniert.</span><span class="sxs-lookup"><span data-stu-id="82588-141">After you call **GetRows**, the current record is positioned at the next unread row.</span></span> <span data-ttu-id="82588-142">**GetRows** hat d. h., die gleiche Auswirkung auf den aktuellen Datensatz als Numrows **Verschieben** .</span><span class="sxs-lookup"><span data-stu-id="82588-142">That is, **GetRows** has the same effect on the current record as **Move** numrows.</span></span>
+<span data-ttu-id="38e0f-138">Nach dem Aufruf von **GetRows** wird der aktuelle Datensatz in der nächsten ungelesenen Zeile positioniert.</span><span class="sxs-lookup"><span data-stu-id="38e0f-138">After you call **GetRows**, the current record is positioned at the next unread row.</span></span> <span data-ttu-id="38e0f-139">**GetRows** hat d. h., die gleiche Auswirkung auf den aktuellen Datensatz als Numrows **Verschieben** .</span><span class="sxs-lookup"><span data-stu-id="38e0f-139">That is, **GetRows** has the same effect on the current record as **Move** numrows.</span></span>
 
-<span data-ttu-id="82588-p105">Wenn Sie versuchen, alle Zeilen mithilfe mehrerer **GetRows** -Aufrufe abzurufen, verwenden Sie die **[EOF](recordset-eof-property-dao.md)** -Eigenschaft, um sicherzustellen, dass Sie sich am Ende des **Recordsets** befinden. **GetRows** gibt weniger als die angeforderte Anzahl zurück, wenn es sich am Ende des **Recordsets** befindet oder wenn es im angeforderten Bereich keine Zeile abrufen kann. Wenn Sie zum Beispiel versuchen, zehn Datensätze abzurufen, den fünften aber nicht abrufen können, gibt **GetRows** vier Datensätze zurück und nacht den fünften Datensatz zum aktuellen Datensatz. Es wird kein Laufzeitfehler generiert. Das kann auftreten, wenn ein anderer Benutzer einen Datensatz in einem **Recordset** vom "dynaset"-Typ löscht. Das Beispiel demonstriert das Vorgehen in einem solchen Fall.</span><span class="sxs-lookup"><span data-stu-id="82588-p105">If you are trying to retrieve all the rows by using multiple **GetRows** calls, use the **[EOF](recordset-eof-property-dao.md)** property to be sure that you're at the end of the **Recordset**. **GetRows** returns less than the number requested if it's at the end of the **Recordset**, or if it can't retrieve a row in the range requested. For example, if you're trying to retrieve 10 records, but you can't retrieve the fifth record, **GetRows** returns four records and makes the fifth record the current record. This will not generate a run-time error. This might occur if another user deletes a record in a dynaset-type **Recordset**. See the example for a demonstration of how to handle this.</span></span>
+<span data-ttu-id="38e0f-p105">Wenn Sie versuchen, alle Zeilen mithilfe mehrerer **GetRows** -Aufrufe abzurufen, verwenden Sie die **[EOF](recordset-eof-property-dao.md)** -Eigenschaft, um sicherzustellen, dass Sie sich am Ende des **Recordsets** befinden. **GetRows** gibt weniger als die angeforderte Anzahl zurück, wenn es sich am Ende des **Recordsets** befindet oder wenn es im angeforderten Bereich keine Zeile abrufen kann. Wenn Sie zum Beispiel versuchen, zehn Datensätze abzurufen, den fünften aber nicht abrufen können, gibt **GetRows** vier Datensätze zurück und nacht den fünften Datensatz zum aktuellen Datensatz. Es wird kein Laufzeitfehler generiert. Das kann auftreten, wenn ein anderer Benutzer einen Datensatz in einem **Recordset** vom "dynaset"-Typ löscht. Das Beispiel demonstriert das Vorgehen in einem solchen Fall.</span><span class="sxs-lookup"><span data-stu-id="38e0f-p105">If you are trying to retrieve all the rows by using multiple **GetRows** calls, use the **[EOF](recordset-eof-property-dao.md)** property to be sure that you're at the end of the **Recordset**. **GetRows** returns less than the number requested if it's at the end of the **Recordset**, or if it can't retrieve a row in the range requested. For example, if you're trying to retrieve 10 records, but you can't retrieve the fifth record, **GetRows** returns four records and makes the fifth record the current record. This will not generate a run-time error. This might occur if another user deletes a record in a dynaset-type **Recordset**. See the example for a demonstration of how to handle this.</span></span>
 
-## <a name="example"></a><span data-ttu-id="82588-149">Beispiel</span><span class="sxs-lookup"><span data-stu-id="82588-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="38e0f-146">Beispiel</span><span class="sxs-lookup"><span data-stu-id="38e0f-146">Example</span></span>
 
-<span data-ttu-id="82588-p106">Dieses Beispiel verwendet die **GetRows** -Methode, um eine angegebene Anzahl Zeilen aus einem **Recordset** abzurufen und ein Array mit den daraus resultierenden Daten zu füllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn **EOF** erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Für das Ausführen dieser Prozedur ist die "GetRowsOK"-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="82588-p106">This example uses the **GetRows** method to retrieve a specified number of rows from a **Recordset** and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if **EOF** has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
+<span data-ttu-id="38e0f-p106">Dieses Beispiel verwendet die **GetRows** -Methode, um eine angegebene Anzahl Zeilen aus einem **Recordset** abzurufen und ein Array mit den daraus resultierenden Daten zu füllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn **EOF** erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Für das Ausführen dieser Prozedur ist die "GetRowsOK"-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="38e0f-p106">This example uses the **GetRows** method to retrieve a specified number of rows from a **Recordset** and to fill an array with the resulting data. The **GetRows** method will return fewer than the desired number of rows in two cases: either if **EOF** has been reached, or if **GetRows** tried to retrieve a record that was deleted by another user. The function returns **False** only if the second case occurs. The GetRowsOK function is required for this procedure to run.</span></span>
 
 ```vb
     Sub GetRowsX() 

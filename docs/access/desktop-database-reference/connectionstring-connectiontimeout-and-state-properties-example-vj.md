@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="8eb31-101"><<<<<<< HEAD-Titel: ConnectionString-, ConnectionTimeout- und State Eigenschaft (Beispiel) (VJ++) TOCTitle: ConnectionString-, ConnectionTimeout- und State Eigenschaft (Beispiel) (VJ++) === Titel: ConnectionString, ConnectionTimeout, und Zustand Eigenschaft (Beispiel) (VJ++) TOCTitle: ConnectionString-, ConnectionTimeout- und State Eigenschaften) (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="8eb31-101"><<<<<<< HEAD title: ConnectionString, ConnectionTimeout, and State Properties Example (VJ++) TOCTitle: ConnectionString, ConnectionTimeout, and State Properties Example (VJ++) ======= title: ConnectionString, ConnectionTimeout, and State properties example (VJ++) TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="8eb31-102">Master Ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15) Ms:contentKeyID: 48546141 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="8eb31-102">master ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15) ms:contentKeyID: 48546141 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: ConnectionString-, ConnectionTimeout- und State-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VJ++)
+ms:assetid: 88b3f95e-0e46-7cbb-8086-d583319a6628
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249599(v=office.15)
+ms:contentKeyID: 48546141
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6ad29def518f86eaee14ca3fd901e881223753d2
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887838"
 ---
-
-<span data-ttu-id="8eb31-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="8eb31-103"><<<<<<< HEAD</span></span>
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a><span data-ttu-id="8eb31-104">ConnectionString-, ConnectionTimeout- und State-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="8eb31-104">ConnectionString, ConnectionTimeout, and State Properties Example (VJ++)</span></span>
-=======
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a><span data-ttu-id="8eb31-105">ConnectionString-, ConnectionTimeout- und State Eigenschaften) (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="8eb31-105">ConnectionString, ConnectionTimeout, and State properties example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="8eb31-106">master</span><span class="sxs-lookup"><span data-stu-id="8eb31-106">master</span></span>
+# <a name="connectionstring-connectiontimeout-and-state-properties-example-vj"></a><span data-ttu-id="c6c2e-102">ConnectionString-, ConnectionTimeout- und State-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="c6c2e-102">ConnectionString, ConnectionTimeout, and State properties example (VJ++)</span></span>
 
 
-<span data-ttu-id="8eb31-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8eb31-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="c6c2e-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c6c2e-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8eb31-p101">Dieses Beispiel veranschaulicht verschiedene Verwendungsmöglichkeiten der ConnectionString-Eigenschaft, um ein Connection-Objekt zu öffnen. Außerdem wird mithilfe der ConnectionTimeout-Eigenschaft ein Verbindungstimeout festgelegt, und mithilfe der State-Eigenschaft wird der Status der Verbindungen überprüft. Zum Ausführen dieser Prozedur ist die GetState-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="8eb31-p101">This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.</span></span>
+<span data-ttu-id="c6c2e-p101">Dieses Beispiel veranschaulicht verschiedene Verwendungsmöglichkeiten der ConnectionString-Eigenschaft, um ein Connection-Objekt zu öffnen. Außerdem wird mithilfe der ConnectionTimeout-Eigenschaft ein Verbindungstimeout festgelegt, und mithilfe der State-Eigenschaft wird der Status der Verbindungen überprüft. Zum Ausführen dieser Prozedur ist die GetState-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="c6c2e-p101">This example demonstrates different ways of using the [ConnectionString](connectionstring-property-ado.md) property to open a [Connection](connection-object-ado.md) object. It also uses the [ConnectionTimeout](connectiontimeout-property-ado.md) property to set a connection timeout period, and the [State](state-property-ado.md) property to check the state of the connections. The GetState function is required for this procedure to run.</span></span>
 
 ```java 
  

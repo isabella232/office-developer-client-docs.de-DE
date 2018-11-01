@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="625c1-101"><<<<<<< HEAD-Titel: Status-Eigenschaft (VC++-Beispiel) TOCTitle: Status-Eigenschaft (VC++-Beispiel) === Titel: Status-Eigenschaft (VC++-Beispiel) TOCTitle: State-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="625c1-101"><<<<<<< HEAD title: State Property Example (VC++) TOCTitle: State Property Example (VC++) ======= title: State property example (VC++) TOCTitle: State property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="625c1-102">Master Ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15) Ms:contentKeyID: 48547085 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="625c1-102">master ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15) ms:contentKeyID: 48547085 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: State-Eigenschaft (Beispiel) (VC++)
+TOCTitle: State property example (VC++)
+ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15)
+ms:contentKeyID: 48547085
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 06d91a9e2103fa56025230ae5326cda2d0bfb85f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886914"
 ---
-
-<span data-ttu-id="625c1-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="625c1-103"><<<<<<< HEAD</span></span>
-# <a name="state-property-example-vc"></a><span data-ttu-id="625c1-104">State-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="625c1-104">State Property Example (VC++)</span></span>
-=======
-# <a name="state-property-example-vc"></a><span data-ttu-id="625c1-105">State-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="625c1-105">State property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="625c1-106">master</span><span class="sxs-lookup"><span data-stu-id="625c1-106">master</span></span>
+# <a name="state-property-example-vc"></a><span data-ttu-id="ef497-102">State-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="ef497-102">State property example (VC++)</span></span>
 
 
-<span data-ttu-id="625c1-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="625c1-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ef497-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ef497-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="625c1-108">In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="625c1-108">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
+<span data-ttu-id="ef497-104">In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="ef497-104">This example uses the [State](state-property-ado.md) property to display a message while asynchronous connections are opening and asynchronous commands are executing.</span></span>
 
 ```cpp 
  

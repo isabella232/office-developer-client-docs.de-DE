@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="cf587-101"><<<<<<< HEAD-Titel: ParentCatalog-Eigenschaft (VC++-Beispiel) TOCTitle: ParentCatalog-Eigenschaft (VC++-Beispiel) === Titel: ParentCatalog-Eigenschaft (VC++-Beispiel) TOCTitle: ParentCatalog-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="cf587-101"><<<<<<< HEAD title: ParentCatalog Property Example (VC++) TOCTitle: ParentCatalog Property Example (VC++) ======= title: ParentCatalog property example (VC++) TOCTitle: ParentCatalog property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="cf587-102">Master Ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15) Ms:contentKeyID: 48548855 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="cf587-102">master ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15) ms:contentKeyID: 48548855 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: ParentCatalog-Eigenschaft (VC++-Beispiel)
+TOCTitle: ParentCatalog property example (VC++)
+ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15)
+ms:contentKeyID: 48548855
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 80a550a65601ee86d34f7e8acf6a88f75f738501
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876050"
 ---
-
-<span data-ttu-id="cf587-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="cf587-103"><<<<<<< HEAD</span></span>
-# <a name="parentcatalog-property-example-vc"></a><span data-ttu-id="cf587-104">ParentCatalog-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="cf587-104">ParentCatalog Property Example (VC++)</span></span>
-=======
-# <a name="parentcatalog-property-example-vc"></a><span data-ttu-id="cf587-105">ParentCatalog-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="cf587-105">ParentCatalog property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="cf587-106">master</span><span class="sxs-lookup"><span data-stu-id="cf587-106">master</span></span>
+# <a name="parentcatalog-property-example-vc"></a><span data-ttu-id="32f9b-102">ParentCatalog-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="32f9b-102">ParentCatalog property example (VC++)</span></span>
 
 
-<span data-ttu-id="cf587-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="cf587-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="32f9b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="32f9b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="cf587-p101">Im folgenden Codebeispiel wird die Verwendung der ParentCatalog-Eigenschaft veranschaulicht, um vor dem Anfügen einer Tabelle an einen Katalog auf eine anbieterspezifische Eigenschaft zuzugreifen. Die Eigenschaft ist die AutoIncrement-Eigenschaft, die ein AutoIncrement-Feld in einer Microsoft Jet-Datenbank erstellt.</span><span class="sxs-lookup"><span data-stu-id="cf587-p101">The following code demonstrates how to use the [ParentCatalog](parentcatalog-property-adox.md) property to access a provider-specific property prior to appending a table to a catalog. The property is AutoIncrement, which creates an AutoIncrement field in a Microsoft Jet database.</span></span>
+<span data-ttu-id="32f9b-p101">Im folgenden Codebeispiel wird die Verwendung der ParentCatalog-Eigenschaft veranschaulicht, um vor dem Anfügen einer Tabelle an einen Katalog auf eine anbieterspezifische Eigenschaft zuzugreifen. Die Eigenschaft ist die AutoIncrement-Eigenschaft, die ein AutoIncrement-Feld in einer Microsoft Jet-Datenbank erstellt.</span><span class="sxs-lookup"><span data-stu-id="32f9b-p101">The following code demonstrates how to use the [ParentCatalog](parentcatalog-property-adox.md) property to access a provider-specific property prior to appending a table to a catalog. The property is AutoIncrement, which creates an AutoIncrement field in a Microsoft Jet database.</span></span>
 
 ```cpp 
  

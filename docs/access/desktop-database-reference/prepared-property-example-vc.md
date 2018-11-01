@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="7f552-101"><<<<<<< HEAD-Titel: TOCTitle vorbereitet-Eigenschaft (VC++-Beispiel): vorbereitet-Eigenschaft (VC++-Beispiel) === Titel: Prepared-Eigenschaft (VC++-Beispiel) TOCTitle: Prepared-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="7f552-101"><<<<<<< HEAD title: Prepared Property Example (VC++) TOCTitle: Prepared Property Example (VC++) ======= title: Prepared property example (VC++) TOCTitle: Prepared property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="7f552-102">Master Ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15) Ms:contentKeyID: 48546562 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="7f552-102">master ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15) ms:contentKeyID: 48546562 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Prepared-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Prepared property example (VC++)
+ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15)
+ms:contentKeyID: 48546562
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f0c3f6f48418b6b8df95b423b9baba3a9c84c21b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885815"
 ---
-
-<span data-ttu-id="7f552-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="7f552-103"><<<<<<< HEAD</span></span>
-# <a name="prepared-property-example-vc"></a><span data-ttu-id="7f552-104">Prepared-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="7f552-104">Prepared Property Example (VC++)</span></span>
-=======
-# <a name="prepared-property-example-vc"></a><span data-ttu-id="7f552-105">Prepared-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="7f552-105">Prepared property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="7f552-106">master</span><span class="sxs-lookup"><span data-stu-id="7f552-106">master</span></span>
+# <a name="prepared-property-example-vc"></a><span data-ttu-id="3937f-102">Prepared-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="3937f-102">Prepared property example (VC++)</span></span>
 
 
-<span data-ttu-id="7f552-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="7f552-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="3937f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3937f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7f552-108">Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.</span><span class="sxs-lookup"><span data-stu-id="7f552-108">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
+<span data-ttu-id="3937f-104">Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.</span><span class="sxs-lookup"><span data-stu-id="3937f-104">This example demonstrates the [Prepared](prepared-property-ado.md) property by opening two [Command](command-object-ado.md) objects — one prepared and one not prepared.</span></span>
 
 ```cpp 
  

@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249835(v=office.15)
 ms:contentKeyID: 48547096
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 488e4f966bb37dd151eca8ab7231769373cc06e8
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 991d4957b803ff0fe55ab54c4a00b9a0409b94f0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864193"
+ms.locfileid: "25877366"
 ---
-# <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a><span data-ttu-id="5b978-102">GetObjectOwner- und SetObjectOwner-Methode (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="5b978-102">GetObjectOwner and SetObjectOwner methods example (VC++)</span></span>
+# <a name="getobjectowner-and-setobjectowner-methods-example-vc"></a><span data-ttu-id="98c28-102">GetObjectOwner- und SetObjectOwner-Methode (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="98c28-102">GetObjectOwner and SetObjectOwner methods example (VC++)</span></span>
 
 
-<span data-ttu-id="5b978-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="5b978-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="98c28-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="98c28-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="5b978-104">Dieses Beispiel veranschaulicht die Methoden [GetObjectOwner](getobjectowner-method-adox.md) und [SetObjectOwner verwenden](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) .</span><span class="sxs-lookup"><span data-stu-id="5b978-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) methods.</span></span> <span data-ttu-id="5b978-105">Dieser Code wird vorausgesetzt, dass die Gruppe Accounting (siehe die [Gruppen und Benutzer anzufügen, ChangePassword-Methoden (VC++-Beispiel)](groups-and-users-append-changepassword-methods-example-vc.md) wie das System dieser Gruppe hinzugefügt angezeigt).</span><span class="sxs-lookup"><span data-stu-id="5b978-105">This code assumes the existence of the group Accounting (see the [Groups and Users Append, ChangePassword methods example (VC++)](groups-and-users-append-changepassword-methods-example-vc.md) to see how to add this group to the system).</span></span> <span data-ttu-id="5b978-106">Der Besitzer der Kategorientabelle wird auf Buchhaltung festgelegt.</span><span class="sxs-lookup"><span data-stu-id="5b978-106">The owner of the Categories table is set to Accounting.</span></span>
+<span data-ttu-id="98c28-104">Dieses Beispiel veranschaulicht die Methoden [GetObjectOwner](getobjectowner-method-adox.md) und [SetObjectOwner verwenden](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) .</span><span class="sxs-lookup"><span data-stu-id="98c28-104">This example demonstrates the [GetObjectOwner](getobjectowner-method-adox.md) and [SetObjectOwner](https://msdn.microsoft.com/library/jj249006\(v=office.15\)) methods.</span></span> <span data-ttu-id="98c28-105">Dieser Code wird vorausgesetzt, dass die Gruppe Accounting (siehe die [Gruppen und Benutzer anzufügen, ChangePassword-Methoden (VC++-Beispiel)](groups-and-users-append-changepassword-methods-example-vc.md) wie das System dieser Gruppe hinzugefügt angezeigt).</span><span class="sxs-lookup"><span data-stu-id="98c28-105">This code assumes the existence of the group Accounting (see the [Groups and Users Append, ChangePassword methods example (VC++)](groups-and-users-append-changepassword-methods-example-vc.md) to see how to add this group to the system).</span></span> <span data-ttu-id="98c28-106">Der Besitzer der Kategorientabelle wird auf Buchhaltung festgelegt.</span><span class="sxs-lookup"><span data-stu-id="98c28-106">The owner of the Categories table is set to Accounting.</span></span>
 
 ```cpp 
  

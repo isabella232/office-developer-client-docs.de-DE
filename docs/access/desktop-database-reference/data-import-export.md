@@ -6,31 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn124236(v=office.15)
 ms:contentKeyID: 52071871
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 12525e212b29c02c891fb5524b89771467cb326e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f3b4770cb480ff5c99722d84758df2c638264bcc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876750"
 ---
-# <a name="data-importexport"></a><span data-ttu-id="98ed8-102">Data Import/Export</span><span class="sxs-lookup"><span data-stu-id="98ed8-102">Data Import/Export</span></span>
+# <a name="data-importexport"></a><span data-ttu-id="ee656-102">Importieren/Exportieren von Daten</span><span class="sxs-lookup"><span data-stu-id="ee656-102">Data Import/Export</span></span>
 
 
-<span data-ttu-id="98ed8-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="98ed8-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ee656-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ee656-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="98ed8-104">RunSavedImportExport-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-104">RunSavedImportExport Macro Action</span></span>](runsavedimportexport-macro-action.md)
+  - [<span data-ttu-id="ee656-104">AusführenGespeichertImportExport-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-104">RunSavedImportExport Macro Action</span></span>](runsavedimportexport-macro-action.md)
 
-  - [<span data-ttu-id="98ed8-105">EMailDatenbankobjekt-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-105">EMailDatabaseObject Macro Action</span></span>](emaildatabaseobject-macro-action.md)
+  - [<span data-ttu-id="ee656-105">Emaildatenbankobjekt-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-105">EMailDatabaseObject Macro Action</span></span>](emaildatabaseobject-macro-action.md)
 
-  - [<span data-ttu-id="98ed8-106">ExportWithFormatting-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-106">ExportWithFormatting Macro Action</span></span>](exportwithformatting-macro-action.md)
+  - [<span data-ttu-id="ee656-106">Exportierenmitformatierung-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-106">ExportWithFormatting Macro Action</span></span>](exportwithformatting-macro-action.md)
 
-  - [<span data-ttu-id="98ed8-107">ImportierenExportierenDaten-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-107">ImportExportData Macro Action</span></span>](importexportdata-macro-action.md)
+  - [<span data-ttu-id="ee656-107">Importierenexportierendaten-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-107">ImportExportData Macro Action</span></span>](importexportdata-macro-action.md)
 
-  - [<span data-ttu-id="98ed8-108">ImportExportSpreadsheet-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-108">ImportExportSpreadsheet Macro Action</span></span>](importexportspreadsheet-macro-action.md)
+  - [<span data-ttu-id="ee656-108">Importierenexportierentabellenblatt-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-108">ImportExportSpreadsheet Macro Action</span></span>](importexportspreadsheet-macro-action.md)
 
-  - [<span data-ttu-id="98ed8-109">ImportExportText-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-109">ImportExportText Macro Action</span></span>](importexporttext-macro-action.md)
+  - [<span data-ttu-id="ee656-109">Importierenexportierentext-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-109">ImportExportText Macro Action</span></span>](importexporttext-macro-action.md)
 
-  - [<span data-ttu-id="98ed8-110">ImportierenSharePointListe-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="98ed8-110">ImportSharePointList Macro Action</span></span>](importsharepointlist-macro-action.md)
+  - [<span data-ttu-id="ee656-110">ImportierenSharePointListe-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="ee656-110">ImportSharePointList Macro Action</span></span>](importsharepointlist-macro-action.md)
 

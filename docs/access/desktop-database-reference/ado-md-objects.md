@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0bde8dfebd4351275ede6e08cbeec7d8e3d710c3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e09676b222e7199b7f2f9f7520ebf3d5436f9a3c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474681"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875133"
 ---
-# <a name="ado-md-objects"></a><span data-ttu-id="b7c0c-102">ADO MD-Objekte</span><span class="sxs-lookup"><span data-stu-id="b7c0c-102">ADO MD Objects</span></span>
+# <a name="ado-md-objects"></a><span data-ttu-id="dda2f-102">ADO MD-Objekte</span><span class="sxs-lookup"><span data-stu-id="dda2f-102">ADO MD Objects</span></span>
 
 
-<span data-ttu-id="b7c0c-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="b7c0c-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="dda2f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dda2f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 <table>
 <colgroup>
@@ -25,50 +25,50 @@ ms.locfileid: "25474681"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b7c0c-104"><a href="axis-object-ado-md.md">Achse</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-104"><a href="axis-object-ado-md.md">Axis</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-105">Stellt eine Positions- oder Filterachse einer Zellmenge dar, die ausgewählte Elemente einer oder mehrerer Dimensionen enthält.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-105">Represents a positional or filter axis of a cellset, containing selected members of one or more dimensions.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-104"><a href="axis-object-ado-md.md">Achse</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-104"><a href="axis-object-ado-md.md">Axis</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-105">Stellt eine Positions- oder Filterachse einer Zellmenge dar, die ausgewählte Elemente einer oder mehrerer Dimensionen enthält.</span><span class="sxs-lookup"><span data-stu-id="dda2f-105">Represents a positional or filter axis of a cellset, containing selected members of one or more dimensions.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7c0c-106"><a href="catalog-object-ado-md.md">Katalog</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-106"><a href="catalog-object-ado-md.md">Catalog</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-107">Enthält multidimensionale Schemainformationen (Cubes und zugrunde liegende Dimensionen, Hierarchien, Ebenen und Elemente), die für einen multidimensionalen Datenanbieter (Datenprovider, MDP) spezifisch sind.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-107">Contains multidimensional schema information (that is, cubes and underlying dimensions, hierarchies, levels, and members) specific to a multidimensional data provider (MDP).</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-106"><a href="catalog-object-ado-md.md">Katalog</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-106"><a href="catalog-object-ado-md.md">Catalog</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-107">Enthält multidimensionale Schemainformationen (Cubes und zugrunde liegende Dimensionen, Hierarchien, Ebenen und Elemente), die für einen multidimensionalen Datenanbieter (Datenprovider, MDP) spezifisch sind.</span><span class="sxs-lookup"><span data-stu-id="dda2f-107">Contains multidimensional schema information (that is, cubes and underlying dimensions, hierarchies, levels, and members) specific to a multidimensional data provider (MDP).</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b7c0c-108"><a href="cell-object-ado-md.md">Cell</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-108"><a href="cell-object-ado-md.md">Cell</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-109">Stellt die Daten am Kreuzungspunkt von Achsenkoordinaten dar, die in einer Zellmenge enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-109">Represents the data at the intersection of axis coordinates, contained in a cellset.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-108"><a href="cell-object-ado-md.md">Cell</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-108"><a href="cell-object-ado-md.md">Cell</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-109">Stellt die Daten am Kreuzungspunkt von Achsenkoordinaten dar, die in einer Zellmenge enthalten sind.</span><span class="sxs-lookup"><span data-stu-id="dda2f-109">Represents the data at the intersection of axis coordinates, contained in a cellset.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7c0c-110"><a href="cellset-object-ado-md.md">Cellset</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-110"><a href="cellset-object-ado-md.md">Cellset</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-p101">Stellt die Ergebnisse einer multidimensionalen Abfrage dar. Es ist eine Auflistung von Zellen, die aus Cubes oder anderen Zellmengen ausgewählt wurden.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-p101">Represents the results of a multidimensional query. It is a collection of cells selected from cubes or other cellsets.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-110"><a href="cellset-object-ado-md.md">Cellset</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-110"><a href="cellset-object-ado-md.md">Cellset</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-p101">Stellt die Ergebnisse einer multidimensionalen Abfrage dar. Es ist eine Auflistung von Zellen, die aus Cubes oder anderen Zellmengen ausgewählt wurden.</span><span class="sxs-lookup"><span data-stu-id="dda2f-p101">Represents the results of a multidimensional query. It is a collection of cells selected from cubes or other cellsets.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b7c0c-113"><a href="cubedef-object-ado-md.md">CubeDef-Objekts</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-113"><a href="cubedef-object-ado-md.md">CubeDef</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-114">Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-114">Represents a cube from a multidimensional schema, containing a set of related dimensions.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-113"><a href="cubedef-object-ado-md.md">CubeDef-Objekts</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-113"><a href="cubedef-object-ado-md.md">CubeDef</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-114">Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.</span><span class="sxs-lookup"><span data-stu-id="dda2f-114">Represents a cube from a multidimensional schema, containing a set of related dimensions.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7c0c-115"><a href="dimension-object-ado-md.md">Dimension</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-115"><a href="dimension-object-ado-md.md">Dimension</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-116">Stellt eine der Dimensionen eines multidimensionalen Cubes dar, der eine oder mehrere Elementhierarchien enthält.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-116">Represents one of the dimensions of a multidimensional cube, containing one or more hierarchies of members.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-115"><a href="dimension-object-ado-md.md">Dimension</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-115"><a href="dimension-object-ado-md.md">Dimension</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-116">Stellt eine der Dimensionen eines multidimensionalen Cubes dar, der eine oder mehrere Elementhierarchien enthält.</span><span class="sxs-lookup"><span data-stu-id="dda2f-116">Represents one of the dimensions of a multidimensional cube, containing one or more hierarchies of members.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b7c0c-117"><a href="hierarchy-object-ado-md.md">Hierarchie</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-117"><a href="hierarchy-object-ado-md.md">Hierarchy</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-118">Stellt ein Verfahren, die die Elemente einer Dimension aggregiert werden können oder &quot;zusammengefasst. &quot; Eine Dimension entlang einer oder mehrerer Hierarchien aggregiert werden kann.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-118">Represents one way in which the members of a dimension can be aggregated or &quot;rolled up.&quot; A dimension can be aggregated along one or more hierarchies.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-117"><a href="hierarchy-object-ado-md.md">Hierarchie</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-117"><a href="hierarchy-object-ado-md.md">Hierarchy</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-118">Stellt ein Verfahren, die die Elemente einer Dimension aggregiert werden können oder &quot;zusammengefasst. &quot; Eine Dimension entlang einer oder mehrerer Hierarchien aggregiert werden kann.</span><span class="sxs-lookup"><span data-stu-id="dda2f-118">Represents one way in which the members of a dimension can be aggregated or &quot;rolled up.&quot; A dimension can be aggregated along one or more hierarchies.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7c0c-119"><a href="level-object-ado-md.md">Level</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-119"><a href="level-object-ado-md.md">Level</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-120">Enthält eine Gruppe von Elementen, von denen jedes denselben Rang innerhalb einer Hierarchie hat.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-120">Contains a set of members, each of which has the same rank within a hierarchy.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-119"><a href="level-object-ado-md.md">Level</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-119"><a href="level-object-ado-md.md">Level</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-120">Enthält eine Gruppe von Elementen, von denen jedes denselben Rang innerhalb einer Hierarchie hat.</span><span class="sxs-lookup"><span data-stu-id="dda2f-120">Contains a set of members, each of which has the same rank within a hierarchy.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="b7c0c-121"><a href="member-object-ado-md.md">Element</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-121"><a href="member-object-ado-md.md">Member</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-122">Stellt ein Element einer Ebene in einem Cube, die untergeordneten Elemente eines Elements einer Ebene oder ein Element einer Position auf der Achse einer Zellmenge dar.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-122">Represents a member of a level in a cube, the children of a member of a level, or a member of a position along an axis of a cellset.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-121"><a href="member-object-ado-md.md">Element</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-121"><a href="member-object-ado-md.md">Member</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-122">Stellt ein Element einer Ebene in einem Cube, die untergeordneten Elemente eines Elements einer Ebene oder ein Element einer Position auf der Achse einer Zellmenge dar.</span><span class="sxs-lookup"><span data-stu-id="dda2f-122">Represents a member of a level in a cube, the children of a member of a level, or a member of a position along an axis of a cellset.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="b7c0c-123"><a href="position-object-ado-md.md">Position</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-123"><a href="position-object-ado-md.md">Position</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-124">Stellt eine Gruppe von einem oder mehreren Elementen unterschiedlicher Dimensionen dar, die einen Punkt auf einer Achse definiert.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-124">Represents a set of one or more members of different dimensions that defines a point along an axis.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-123"><a href="position-object-ado-md.md">Position</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-123"><a href="position-object-ado-md.md">Position</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-124">Stellt eine Gruppe von einem oder mehreren Elementen unterschiedlicher Dimensionen dar, die einen Punkt auf einer Achse definiert.</span><span class="sxs-lookup"><span data-stu-id="dda2f-124">Represents a set of one or more members of different dimensions that defines a point along an axis.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="b7c0c-125">Das **Catalog** -Objekt ist außerdem mit einem ADO- **Connection** -Objekt verbunden, das in der Standard-ADO-Bibliothek enthalten ist:</span><span class="sxs-lookup"><span data-stu-id="b7c0c-125">Also, the **Catalog** object is connected to an ADO **Connection** object, which is included with the standard ADO library:</span></span>
+<span data-ttu-id="dda2f-125">Das **Catalog** -Objekt ist außerdem mit einem ADO- **Connection** -Objekt verbunden, das in der Standard-ADO-Bibliothek enthalten ist:</span><span class="sxs-lookup"><span data-stu-id="dda2f-125">Also, the **Catalog** object is connected to an ADO **Connection** object, which is included with the standard ADO library:</span></span>
 
 <table>
 <colgroup>
@@ -77,18 +77,18 @@ ms.locfileid: "25474681"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="b7c0c-126">Objekt</span><span class="sxs-lookup"><span data-stu-id="b7c0c-126">Object</span></span></p></th>
-<th><p><span data-ttu-id="b7c0c-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b7c0c-127">Description</span></span></p></th>
+<th><p><span data-ttu-id="dda2f-126">Objekt</span><span class="sxs-lookup"><span data-stu-id="dda2f-126">Object</span></span></p></th>
+<th><p><span data-ttu-id="dda2f-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dda2f-127">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="b7c0c-128"><a href="connection-object-ado.md">Connection</a></span><span class="sxs-lookup"><span data-stu-id="b7c0c-128"><a href="connection-object-ado.md">Connection</a></span></span></p></td>
-<td><p><span data-ttu-id="b7c0c-129">Stellt eine offene Verbindung zu einer Datenquelle dar.</span><span class="sxs-lookup"><span data-stu-id="b7c0c-129">Represents an open connection to a data source.</span></span></p></td>
+<td><p><span data-ttu-id="dda2f-128"><a href="connection-object-ado.md">Connection</a></span><span class="sxs-lookup"><span data-stu-id="dda2f-128"><a href="connection-object-ado.md">Connection</a></span></span></p></td>
+<td><p><span data-ttu-id="dda2f-129">Stellt eine offene Verbindung zu einer Datenquelle dar.</span><span class="sxs-lookup"><span data-stu-id="dda2f-129">Represents an open connection to a data source.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="b7c0c-p102">Es können viele ADO MD-Objekte in einer entsprechenden Auflistung enthalten sein. Ein [CubeDef](cubedef-object-ado-md.md)-Objekt kann beispielsweise in einer [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung eines **Catalog** -Objekts enthalten sein. Weitere Informationen hierzu finden Sie unter [ADO MD-Auflistungen](ado-md-collections.md).</span><span class="sxs-lookup"><span data-stu-id="b7c0c-p102">Many ADO MD objects can be contained in a corresponding collection. For example, a [CubeDef](cubedef-object-ado-md.md) object can be contained in a [CubeDefs](cubedefs-collection-ado-md.md) collection of a **Catalog**. For more information, see [ADO MD Collections](ado-md-collections.md).</span></span>
+<span data-ttu-id="dda2f-p102">Es können viele ADO MD-Objekte in einer entsprechenden Auflistung enthalten sein. Ein [CubeDef](cubedef-object-ado-md.md)-Objekt kann beispielsweise in einer [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung eines **Catalog** -Objekts enthalten sein. Weitere Informationen hierzu finden Sie unter [ADO MD-Auflistungen](ado-md-collections.md).</span><span class="sxs-lookup"><span data-stu-id="dda2f-p102">Many ADO MD objects can be contained in a corresponding collection. For example, a [CubeDef](cubedef-object-ado-md.md) object can be contained in a [CubeDefs](cubedefs-collection-ado-md.md) collection of a **Catalog**. For more information, see [ADO MD Collections](ado-md-collections.md).</span></span>
 

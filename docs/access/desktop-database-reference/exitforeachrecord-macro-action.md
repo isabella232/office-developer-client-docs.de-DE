@@ -6,22 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191716(v=office.15)
 ms:contentKeyID: 48543712
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 221e14668d87b5aa342dfa007220d7a5e1b755f5
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 0e3ae4157fdfc91cad3068addfc1383b7e641402
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860371"
+ms.locfileid: "25867433"
 ---
-# <a name="exitforeachrecord-macro-action"></a><span data-ttu-id="455fa-102">BeendenFürJedenDatensatz-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="455fa-102">ExitForEachRecord Macro Action</span></span>
+# <a name="exitforeachrecord-macro-action"></a><span data-ttu-id="09322-102">BeendenFürJedenDatensatz-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="09322-102">ExitForEachRecord Macro Action</span></span>
 
 
-<span data-ttu-id="455fa-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="455fa-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="09322-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="09322-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="455fa-104">Mit der **BeendenFürJedenDatensatz** -Aktion beenden Sie einen **[FürJedenDatensatz](foreachrecord-data-block.md)** -Datenblock sofort.</span><span class="sxs-lookup"><span data-stu-id="455fa-104">Use the **ExitForEachRecord** action to immediately exit a **[ForEachRecord](foreachrecord-data-block.md)** data block.</span></span>
+<span data-ttu-id="09322-104">Mit der **BeendenFürJedenDatensatz** -Aktion beenden Sie einen **[FürJedenDatensatz](foreachrecord-data-block.md)** -Datenblock sofort.</span><span class="sxs-lookup"><span data-stu-id="09322-104">Use the **ExitForEachRecord** action to immediately exit a **[ForEachRecord](foreachrecord-data-block.md)** data block.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="455fa-105">[!HINWEIS] Die **BeendenFürJedenDatensatz** -Aktion ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="455fa-105">The **ExitForEachRecord** action is available only in Data Macros.</span></span>
+> <span data-ttu-id="09322-105">[!HINWEIS] Die **BeendenFürJedenDatensatz** -Aktion ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="09322-105">The **ExitForEachRecord** action is available only in Data Macros.</span></span>
 
 

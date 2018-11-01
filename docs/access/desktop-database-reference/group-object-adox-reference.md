@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249511(v=office.15)
 ms:contentKeyID: 48545813
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eaa1de504436b0dff7afb8bdbb75aa94068037cc
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: fdcacb1d936835f9add4706eab8e36417d2a82ca
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475839"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887670"
 ---
-# <a name="group-object-adox-reference"></a><span data-ttu-id="35fa9-102">Group Object (ADOX) Reference</span><span class="sxs-lookup"><span data-stu-id="35fa9-102">Group Object (ADOX) Reference</span></span>
+# <a name="group-object-adox-reference"></a><span data-ttu-id="408b6-102">Group Object (ADOX) Reference</span><span class="sxs-lookup"><span data-stu-id="408b6-102">Group Object (ADOX) Reference</span></span>
 
 
-<span data-ttu-id="35fa9-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="35fa9-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="408b6-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="408b6-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="35fa9-104">Group-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="35fa9-104">Group Object (ADOX)</span></span>](group-object-adox.md)
+  - [<span data-ttu-id="408b6-104">Group-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="408b6-104">Group Object (ADOX)</span></span>](group-object-adox.md)
 
-  - [<span data-ttu-id="35fa9-105">Group Properties, Methods, and Events (ADOX)</span><span class="sxs-lookup"><span data-stu-id="35fa9-105">Group Properties, Methods, and Events (ADOX)</span></span>](group-properties-methods-and-events-adox.md)
+  - [<span data-ttu-id="408b6-105">Group Properties, Methods, and Events (ADOX)</span><span class="sxs-lookup"><span data-stu-id="408b6-105">Group Properties, Methods, and Events (ADOX)</span></span>](group-properties-methods-and-events-adox.md)
 

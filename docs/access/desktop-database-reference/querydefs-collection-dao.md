@@ -6,36 +6,36 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194892(v=office.15)
 ms:contentKeyID: 48545215
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a8e42e11fa2fd9fe3d1b7c09ada65869d609a7df
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f210497a541efa40d8ddf2e5bfd43637706efce8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474193"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867447"
 ---
-# <a name="querydefs-collection-dao"></a><span data-ttu-id="808e3-102">QueryDefs-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="808e3-102">QueryDefs Collection (DAO)</span></span>
+# <a name="querydefs-collection-dao"></a><span data-ttu-id="d225e-102">QueryDefs-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="d225e-102">QueryDefs Collection (DAO)</span></span>
 
-<span data-ttu-id="808e3-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="808e3-103">**Applies to**: Access 2013 | Office 2013</span></span> 
+<span data-ttu-id="d225e-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d225e-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="808e3-104">Eine **QueryDefs** -Auflistung enthält alle **QueryDef** -Objekte eines **Database** -Objekts in einer Datenbank eines Microsoft Access-Datenbankmoduls.</span><span class="sxs-lookup"><span data-stu-id="808e3-104">A **QueryDefs** collection contains all **QueryDef** objects of a **Database** object in a Microsoft Access database engine database.</span></span>
+<span data-ttu-id="d225e-104">Eine **QueryDefs** -Auflistung enthält alle **QueryDef** -Objekte eines **Database** -Objekts in einer Datenbank eines Microsoft Access-Datenbankmoduls.</span><span class="sxs-lookup"><span data-stu-id="d225e-104">A **QueryDefs** collection contains all **QueryDef** objects of a **Database** object in a Microsoft Access database engine database.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="808e3-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="808e3-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="d225e-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="d225e-105">Remarks</span></span>
 
-<span data-ttu-id="808e3-106">Verwenden Sie zum Erstellen eines neuen **QueryDef** -Objekts die **CreateQueryDef** -Methode.</span><span class="sxs-lookup"><span data-stu-id="808e3-106">To create a new **QueryDef** object, use the **CreateQueryDef** method.</span></span> <span data-ttu-id="808e3-107">In Microsoft Access-Arbeitsbereich erstellen Wenn Sie eine Zeichenfolge für das Namenargument bereitstellen oder wenn Sie die **Name** -Eigenschaft das neue **QueryDef** -Objekt explizit auf eine nicht – leere Zeichenfolge festgelegt Sie eine permanente **QueryDef-Objekt** , das automatisch an die **QueryDefs** -Auflistung angefügt und auf dem Datenträger gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="808e3-107">In a Microsoft Access workspace, if you supply a string for the name argument or if you explicitly set the **Name** property of the new **QueryDef** object to a non–zero-length string, you will create a permanent **QueryDef** that will automatically be appended to the **QueryDefs** collection and saved to disk.</span></span> <span data-ttu-id="808e3-108">Bereitstellung eine leere Zeichenfolge als Argument für den Namen oder die **Name** -Eigenschaft auf eine leere Zeichenfolge explizit festlegen führt zu einem temporäre **QueryDef** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="808e3-108">Supplying a zero-length string as the name argument or explicitly setting the **Name** property to a zero-length string will result in a temporary **QueryDef** object.</span></span>
+<span data-ttu-id="d225e-106">Verwenden Sie zum Erstellen eines neuen **QueryDef** -Objekts die **CreateQueryDef** -Methode.</span><span class="sxs-lookup"><span data-stu-id="d225e-106">To create a new **QueryDef** object, use the **CreateQueryDef** method.</span></span> <span data-ttu-id="d225e-107">In Microsoft Access-Arbeitsbereich erstellen Wenn Sie eine Zeichenfolge für das Namenargument bereitstellen oder wenn Sie die **Name** -Eigenschaft das neue **QueryDef** -Objekt explizit auf eine nicht – leere Zeichenfolge festgelegt Sie eine permanente **QueryDef-Objekt** , das automatisch an die **QueryDefs** -Auflistung angefügt und auf dem Datenträger gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="d225e-107">In a Microsoft Access workspace, if you supply a string for the name argument or if you explicitly set the **Name** property of the new **QueryDef** object to a non–zero-length string, you will create a permanent **QueryDef** that will automatically be appended to the **QueryDefs** collection and saved to disk.</span></span> <span data-ttu-id="d225e-108">Bereitstellung eine leere Zeichenfolge als Argument für den Namen oder die **Name** -Eigenschaft auf eine leere Zeichenfolge explizit festlegen führt zu einem temporäre **QueryDef** -Objekt.</span><span class="sxs-lookup"><span data-stu-id="d225e-108">Supplying a zero-length string as the name argument or explicitly setting the **Name** property to a zero-length string will result in a temporary **QueryDef** object.</span></span>
 
-<span data-ttu-id="808e3-109">Verwenden Sie eine der folgenden Syntaxformen, um auf ein **QueryDef** -Objekt in einer Auflistung anhand seiner Ordnungszahl oder seiner Einstellung der **Name** -Eigenschaft zu verweisen:</span><span class="sxs-lookup"><span data-stu-id="808e3-109">To refer to a **QueryDef** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="d225e-109">Verwenden Sie eine der folgenden Syntaxformen, um auf ein **QueryDef** -Objekt in einer Auflistung anhand seiner Ordnungszahl oder seiner Einstellung der **Name** -Eigenschaft zu verweisen:</span><span class="sxs-lookup"><span data-stu-id="d225e-109">To refer to a **QueryDef** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="808e3-110">**QueryDefs** (0)</span><span class="sxs-lookup"><span data-stu-id="808e3-110">**QueryDefs**(0)</span></span>
+<span data-ttu-id="d225e-110">**QueryDefs** (0)</span><span class="sxs-lookup"><span data-stu-id="d225e-110">**QueryDefs**(0)</span></span>
 
-<span data-ttu-id="808e3-111">**QueryDefs** ("Name")</span><span class="sxs-lookup"><span data-stu-id="808e3-111">**QueryDefs**("name")</span></span>
+<span data-ttu-id="d225e-111">**QueryDefs** ("Name")</span><span class="sxs-lookup"><span data-stu-id="d225e-111">**QueryDefs**("name")</span></span>
 
-<span data-ttu-id="808e3-112">**QueryDefs**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="808e3-112">**QueryDefs**\!\[name\]</span></span>
+<span data-ttu-id="d225e-112">**QueryDefs**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="d225e-112">**QueryDefs**\!\[name\]</span></span>
 
-<span data-ttu-id="808e3-113">Auf temporäre **QueryDef** -Objekte können Sie nur anhand der Objektvariablen verweisen, die Sie diesen zugewiesen haben.</span><span class="sxs-lookup"><span data-stu-id="808e3-113">You can refer to temporary **QueryDef** objects only by the object variables that you have assigned to them.</span></span>
+<span data-ttu-id="d225e-113">Auf temporäre **QueryDef** -Objekte können Sie nur anhand der Objektvariablen verweisen, die Sie diesen zugewiesen haben.</span><span class="sxs-lookup"><span data-stu-id="d225e-113">You can refer to temporary **QueryDef** objects only by the object variables that you have assigned to them.</span></span>
 
-## <a name="example"></a><span data-ttu-id="808e3-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="808e3-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d225e-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d225e-114">Example</span></span>
 
-<span data-ttu-id="808e3-p102">Mit diesem Beispiel wird ein neues **QueryDef** -Objekt erstellt, das an die **QueryDefs** -Auflistung des **Database** -Objekts der Northwind-Datenbank angehängt wird. Anschließend werden die **QueryDefs** -Auflistung und die **Properties** -Auflistung des neuen **QueryDef** -Objekts aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="808e3-p102">This example creates a new **QueryDef** object and appends it to the **QueryDefs** collection of the Northwind **Database** object. It then enumerates the **QueryDefs** collection and the **Properties** collection of the new **QueryDef**.</span></span>
+<span data-ttu-id="d225e-p102">Mit diesem Beispiel wird ein neues **QueryDef** -Objekt erstellt, das an die **QueryDefs** -Auflistung des **Database** -Objekts der Northwind-Datenbank angehängt wird. Anschließend werden die **QueryDefs** -Auflistung und die **Properties** -Auflistung des neuen **QueryDef** -Objekts aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="d225e-p102">This example creates a new **QueryDef** object and appends it to the **QueryDefs** collection of the Northwind **Database** object. It then enumerates the **QueryDefs** collection and the **Properties** collection of the new **QueryDef**.</span></span>
 
 ```vb
     Sub QueryDefX() 
@@ -86,7 +86,7 @@ ms.locfileid: "25474193"
 
 <br/>
 
-<span data-ttu-id="808e3-p103">This example uses the **CreateQueryDef** method to create and execute both a temporary and a permanent **QueryDef**. The GetrstTemp function is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="808e3-p103">This example uses the **CreateQueryDef** method to create and execute both a temporary and a permanent **QueryDef**. The GetrstTemp function is required for this procedure to run.</span></span>
+<span data-ttu-id="d225e-p103">This example uses the **CreateQueryDef** method to create and execute both a temporary and a permanent **QueryDef**. The GetrstTemp function is required for this procedure to run.</span><span class="sxs-lookup"><span data-stu-id="d225e-p103">This example uses the **CreateQueryDef** method to create and execute both a temporary and a permanent **QueryDef**. The GetrstTemp function is required for this procedure to run.</span></span>
 
 ```vb
     Sub CreateQueryDefX() 
@@ -141,9 +141,9 @@ ms.locfileid: "25474193"
 
 <br/>
 
-<span data-ttu-id="808e3-p104">The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.</span><span class="sxs-lookup"><span data-stu-id="808e3-p104">The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.</span></span>
+<span data-ttu-id="d225e-p104">The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.</span><span class="sxs-lookup"><span data-stu-id="d225e-p104">The following example shows how to execute a parameter query. The Parameters collection is used to set the Organization parameter of the myActionQuery query before the query is executed.</span></span>
 
-<span data-ttu-id="808e3-121">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="808e3-121">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="d225e-121">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="d225e-121">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Public Sub ExecParameterQuery()
@@ -170,7 +170,7 @@ ms.locfileid: "25474193"
 
 <br/>
 
-<span data-ttu-id="808e3-122">The following example shows how to open a Recordset that is based on a parameter query.</span><span class="sxs-lookup"><span data-stu-id="808e3-122">The following example shows how to open a Recordset that is based on a parameter query.</span></span>
+<span data-ttu-id="d225e-122">The following example shows how to open a Recordset that is based on a parameter query.</span><span class="sxs-lookup"><span data-stu-id="d225e-122">The following example shows how to open a Recordset that is based on a parameter query.</span></span>
 
 ```vb
     Dim dbs As DAO.Database

@@ -6,34 +6,34 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249433(v=office.15)
 ms:contentKeyID: 48545498
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ec728b58e08fdf51eefa46071927ac142eca07be
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d3dc8de0a91a11886119873fa633a603524530fc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887635"
 ---
-# <a name="axis-properties-methods-and-events-ado-md"></a><span data-ttu-id="3a244-102">Axis Properties, Methods, and Events (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="3a244-102">Axis Properties, Methods, and Events (ADO MD)</span></span>
+# <a name="axis-properties-methods-and-events-ado-md"></a><span data-ttu-id="42d61-102">Axis Properties, Methods, and Events (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="42d61-102">Axis Properties, Methods, and Events (ADO MD)</span></span>
 
 
-<span data-ttu-id="3a244-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="3a244-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="42d61-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="42d61-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="propertiescollections"></a><span data-ttu-id="3a244-104">Eigenschaften/Auflistungen</span><span class="sxs-lookup"><span data-stu-id="3a244-104">Properties/Collections</span></span>
+## <a name="propertiescollections"></a><span data-ttu-id="42d61-104">Eigenschaften/Auflistungen</span><span class="sxs-lookup"><span data-stu-id="42d61-104">Properties/Collections</span></span>
 
-- [<span data-ttu-id="3a244-105">DimensionCount-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="3a244-105">DimensionCount Property</span></span>](dimensioncount-property-ado-md.md)
+- [<span data-ttu-id="42d61-105">DimensionCount-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="42d61-105">DimensionCount Property</span></span>](dimensioncount-property-ado-md.md)
 
-- [<span data-ttu-id="3a244-106">Name-Eigenschaft (Name)</span><span class="sxs-lookup"><span data-stu-id="3a244-106">Name Property</span></span>](name-property-ado-md.md)
+- [<span data-ttu-id="42d61-106">Name-Eigenschaft (Name)</span><span class="sxs-lookup"><span data-stu-id="42d61-106">Name Property</span></span>](name-property-ado-md.md)
 
-- [<span data-ttu-id="3a244-107">Positions-Auflistung</span><span class="sxs-lookup"><span data-stu-id="3a244-107">Positions Collection</span></span>](positions-collection-ado-md.md)
+- [<span data-ttu-id="42d61-107">Positions-Auflistung</span><span class="sxs-lookup"><span data-stu-id="42d61-107">Positions Collection</span></span>](positions-collection-ado-md.md)
 
-- [<span data-ttu-id="3a244-108">Properties-Auflistung</span><span class="sxs-lookup"><span data-stu-id="3a244-108">Properties Collection</span></span>](properties-collection-ado.md)
+- [<span data-ttu-id="42d61-108">Properties-Auflistung</span><span class="sxs-lookup"><span data-stu-id="42d61-108">Properties Collection</span></span>](properties-collection-ado.md)
 
-## <a name="methods"></a><span data-ttu-id="3a244-109">Methoden</span><span class="sxs-lookup"><span data-stu-id="3a244-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="42d61-109">Methoden</span><span class="sxs-lookup"><span data-stu-id="42d61-109">Methods</span></span>
 
-<span data-ttu-id="3a244-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="3a244-110">None.</span></span>
+<span data-ttu-id="42d61-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="42d61-110">None.</span></span>
 
-## <a name="events"></a><span data-ttu-id="3a244-111">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="3a244-111">Events</span></span>
+## <a name="events"></a><span data-ttu-id="42d61-111">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="42d61-111">Events</span></span>
 
-<span data-ttu-id="3a244-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="3a244-112">None.</span></span>
+<span data-ttu-id="42d61-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="42d61-112">None.</span></span>
 

@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249669(v=office.15)
 ms:contentKeyID: 48546451
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 80b5123f8ba025bc94d607c3a9bb0017fbda4dc7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: d377fe7a2fec2579b8ac1a5a5a71690fbe571e71
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25859979"
+ms.locfileid: "25886214"
 ---
-# <a name="move-method-example-vc"></a><span data-ttu-id="f15ea-102">Move-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="f15ea-102">Move method example (VC++)</span></span>
+# <a name="move-method-example-vc"></a><span data-ttu-id="f024f-102">Move-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="f024f-102">Move method example (VC++)</span></span>
 
-<span data-ttu-id="f15ea-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="f15ea-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f024f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f024f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f15ea-104">In diesem Beispiel wird die [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="f15ea-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
+<span data-ttu-id="f024f-104">In diesem Beispiel wird die [Move](move-method-ado.md)-Methode verwendet, um den Zeiger für den Datensatz auf der Grundlage der Benutzereingabe zu positionieren.</span><span class="sxs-lookup"><span data-stu-id="f024f-104">This example uses the [Move](move-method-ado.md) method to position the record pointer based on user input.</span></span>
 
 ```cpp 
  
@@ -256,7 +256,7 @@ void PrintComError(_com_error &e)
 
 <br/>
 
-<span data-ttu-id="f15ea-105">**MoveX.h**</span><span class="sxs-lookup"><span data-stu-id="f15ea-105">**MoveX.h**</span></span>
+<span data-ttu-id="f024f-105">**MoveX.h**</span><span class="sxs-lookup"><span data-stu-id="f024f-105">**MoveX.h**</span></span>
 
 ```cpp
 // BeginMoveH 

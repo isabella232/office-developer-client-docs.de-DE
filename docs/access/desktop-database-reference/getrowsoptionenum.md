@@ -6,18 +6,18 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249323(v=office.15)
 ms:contentKeyID: 48545082
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 74e7f2fcc8e0cbc068d08b3fdc59619fadfd1756
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: edaf1bbaa0b88c250c87cf5ec07b29b3dd77e45f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860175"
+ms.locfileid: "25877912"
 ---
-# <a name="getrowsoptionenum"></a><span data-ttu-id="8f34a-102">GetRowsOptionEnum</span><span class="sxs-lookup"><span data-stu-id="8f34a-102">GetRowsOptionEnum</span></span>
+# <a name="getrowsoptionenum"></a><span data-ttu-id="f6a98-102">GetRowsOptionEnum</span><span class="sxs-lookup"><span data-stu-id="f6a98-102">GetRowsOptionEnum</span></span>
 
-<span data-ttu-id="8f34a-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8f34a-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f6a98-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f6a98-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8f34a-104">Gibt an, wie viele Datensätze aus einem [Recordset](recordset-object-ado.md) abgerufen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="8f34a-104">Specifies how many records to retrieve from a [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="f6a98-104">Gibt an, wie viele Datensätze aus einem [Recordset](recordset-object-ado.md) abgerufen werden sollen.</span><span class="sxs-lookup"><span data-stu-id="f6a98-104">Specifies how many records to retrieve from a [Recordset](recordset-object-ado.md).</span></span>
 
 <br/>
 
@@ -29,24 +29,24 @@ ms.locfileid: "25860175"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="8f34a-105">Konstante</span><span class="sxs-lookup"><span data-stu-id="8f34a-105">Constant</span></span></p></th>
-<th><p><span data-ttu-id="8f34a-106">Wert</span><span class="sxs-lookup"><span data-stu-id="8f34a-106">Value</span></span></p></th>
-<th><p><span data-ttu-id="8f34a-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8f34a-107">Description</span></span></p></th>
+<th><p><span data-ttu-id="f6a98-105">Konstante</span><span class="sxs-lookup"><span data-stu-id="f6a98-105">Constant</span></span></p></th>
+<th><p><span data-ttu-id="f6a98-106">Wert</span><span class="sxs-lookup"><span data-stu-id="f6a98-106">Value</span></span></p></th>
+<th><p><span data-ttu-id="f6a98-107">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f6a98-107">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8f34a-108"><strong>adGetRowsRest</strong></span><span class="sxs-lookup"><span data-stu-id="8f34a-108"><strong>adGetRowsRest</strong></span></span></p></td>
-<td><p><span data-ttu-id="8f34a-109">-1</span><span class="sxs-lookup"><span data-stu-id="8f34a-109">-1</span></span></p></td>
-<td><p><span data-ttu-id="8f34a-110">Ruft die restlichen Datensätze im <strong>Recordset-Objekt</strong>aus der aktuellen Position oder einer vom <em>Start</em> -Parameter der <a href="getrows-method-ado.md">GetRows</a> -Methode angegebenen Textmarke ab.</span><span class="sxs-lookup"><span data-stu-id="8f34a-110">Retrieves the rest of the records in the <strong>Recordset</strong>, from either the current position or a bookmark specified by the <em>Start</em> parameter of the <a href="getrows-method-ado.md">GetRows</a> method.</span></span></p></td>
+<td><p><span data-ttu-id="f6a98-108"><strong>adGetRowsRest</strong></span><span class="sxs-lookup"><span data-stu-id="f6a98-108"><strong>adGetRowsRest</strong></span></span></p></td>
+<td><p><span data-ttu-id="f6a98-109">-1</span><span class="sxs-lookup"><span data-stu-id="f6a98-109">-1</span></span></p></td>
+<td><p><span data-ttu-id="f6a98-110">Ruft die restlichen Datensätze im <strong>Recordset-Objekt</strong>aus der aktuellen Position oder einer vom <em>Start</em> -Parameter der <a href="getrows-method-ado.md">GetRows</a> -Methode angegebenen Textmarke ab.</span><span class="sxs-lookup"><span data-stu-id="f6a98-110">Retrieves the rest of the records in the <strong>Recordset</strong>, from either the current position or a bookmark specified by the <em>Start</em> parameter of the <a href="getrows-method-ado.md">GetRows</a> method.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="adowfc-equivalent"></a><span data-ttu-id="8f34a-111">ADO/WFC-Entsprechung</span><span class="sxs-lookup"><span data-stu-id="8f34a-111">ADO/WFC equivalent</span></span>
+### <a name="adowfc-equivalent"></a><span data-ttu-id="f6a98-111">ADO/WFC-Entsprechung</span><span class="sxs-lookup"><span data-stu-id="f6a98-111">ADO/WFC equivalent</span></span>
 
-<span data-ttu-id="8f34a-112">Paket: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="8f34a-112">Package: **com.ms.wfc.data**</span></span>
+<span data-ttu-id="f6a98-112">Paket: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="f6a98-112">Package: **com.ms.wfc.data**</span></span>
 
 <table>
 <colgroup>
@@ -54,12 +54,12 @@ ms.locfileid: "25860175"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="8f34a-113">Konstante</span><span class="sxs-lookup"><span data-stu-id="8f34a-113">Constant</span></span></p></th>
+<th><p><span data-ttu-id="f6a98-113">Konstante</span><span class="sxs-lookup"><span data-stu-id="f6a98-113">Constant</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8f34a-114">AdoEnums.GetRowsOption.REST</span><span class="sxs-lookup"><span data-stu-id="8f34a-114">AdoEnums.GetRowsOption.REST</span></span></p></td>
+<td><p><span data-ttu-id="f6a98-114">AdoEnums.GetRowsOption.REST</span><span class="sxs-lookup"><span data-stu-id="f6a98-114">AdoEnums.GetRowsOption.REST</span></span></p></td>
 </tr>
 </tbody>
 </table>

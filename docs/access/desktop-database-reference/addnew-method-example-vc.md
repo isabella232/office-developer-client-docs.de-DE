@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248909(v=office.15)
 ms:contentKeyID: 48543370
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 15fe1071771c0eccbbf16eb2e186e323bd0255eb
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 36bc908cc2594465f890c5e5ff177c6d29868cf8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862492"
+ms.locfileid: "25889805"
 ---
-# <a name="addnew-method-example-vc"></a><span data-ttu-id="8ff9c-102">AddNew-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="8ff9c-102">AddNew method example (VC++)</span></span>
+# <a name="addnew-method-example-vc"></a><span data-ttu-id="4ef69-102">AddNew-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="4ef69-102">AddNew method example (VC++)</span></span>
 
 
-<span data-ttu-id="8ff9c-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8ff9c-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="4ef69-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4ef69-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8ff9c-104">In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet.</span><span class="sxs-lookup"><span data-stu-id="8ff9c-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
+<span data-ttu-id="4ef69-104">In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet.</span><span class="sxs-lookup"><span data-stu-id="4ef69-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
 
 ```cpp 
  
@@ -237,7 +237,7 @@ VOID PrintProviderError(_ConnectionPtr pConnection)
 
 <br/>
 
-<span data-ttu-id="8ff9c-105">**AddNewX.h**</span><span class="sxs-lookup"><span data-stu-id="8ff9c-105">**AddNewX.h**</span></span>
+<span data-ttu-id="4ef69-105">**AddNewX.h**</span><span class="sxs-lookup"><span data-stu-id="4ef69-105">**AddNewX.h**</span></span>
 
 ```cpp 
  

@@ -6,34 +6,34 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250083(v=office.15)
 ms:contentKeyID: 48548009
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c5aed047ce9ef886d88e76b40ff3f101e5006970
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c1c97a6646641a633a3e8f041672db772262a7f7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474437"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874909"
 ---
-# <a name="procedure-properties-methods-and-events-adox"></a><span data-ttu-id="20175-102">Procedure Properties, Methods, and Events (ADOX)</span><span class="sxs-lookup"><span data-stu-id="20175-102">Procedure Properties, Methods, and Events (ADOX)</span></span>
+# <a name="procedure-properties-methods-and-events-adox"></a><span data-ttu-id="f67ac-102">Procedure Properties, Methods, and Events (ADOX)</span><span class="sxs-lookup"><span data-stu-id="f67ac-102">Procedure Properties, Methods, and Events (ADOX)</span></span>
 
 
-<span data-ttu-id="20175-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="20175-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="f67ac-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f67ac-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="20175-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="20175-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f67ac-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="f67ac-104">Properties</span></span>
 
-- [<span data-ttu-id="20175-105">Command-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="20175-105">Command Property</span></span>](command-property-adox.md)
+- [<span data-ttu-id="f67ac-105">Command-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f67ac-105">Command Property</span></span>](command-property-adox.md)
 
-- [<span data-ttu-id="20175-106">DateCreated-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="20175-106">DateCreated Property</span></span>](datecreated-property-adox.md)
+- [<span data-ttu-id="f67ac-106">DateCreated-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f67ac-106">DateCreated Property</span></span>](datecreated-property-adox.md)
 
-- [<span data-ttu-id="20175-107">DateModified-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="20175-107">DateModified Property</span></span>](datemodified-property-adox.md)
+- [<span data-ttu-id="f67ac-107">DateModified-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="f67ac-107">DateModified Property</span></span>](datemodified-property-adox.md)
 
-- [<span data-ttu-id="20175-108">Name-Eigenschaft (Name)</span><span class="sxs-lookup"><span data-stu-id="20175-108">Name Property</span></span>](name-property-adox.md)
+- [<span data-ttu-id="f67ac-108">Name-Eigenschaft (Name)</span><span class="sxs-lookup"><span data-stu-id="f67ac-108">Name Property</span></span>](name-property-adox.md)
 
-## <a name="methods"></a><span data-ttu-id="20175-109">Methoden</span><span class="sxs-lookup"><span data-stu-id="20175-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="f67ac-109">Methoden</span><span class="sxs-lookup"><span data-stu-id="f67ac-109">Methods</span></span>
 
-<span data-ttu-id="20175-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="20175-110">None.</span></span>
+<span data-ttu-id="f67ac-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="f67ac-110">None.</span></span>
 
-## <a name="events"></a><span data-ttu-id="20175-111">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="20175-111">Events</span></span>
+## <a name="events"></a><span data-ttu-id="f67ac-111">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="f67ac-111">Events</span></span>
 
-<span data-ttu-id="20175-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="20175-112">None.</span></span>
+<span data-ttu-id="f67ac-112">Keine.</span><span class="sxs-lookup"><span data-stu-id="f67ac-112">None.</span></span>
 

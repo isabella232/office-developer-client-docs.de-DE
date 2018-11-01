@@ -6,39 +6,39 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249084(v=office.15)
 ms:contentKeyID: 48544032
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0344a7f9452160276f2d134bbdc18a4237dd9b57
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6d709d514d01f8810b7fcb098b4fa1599d2930c9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475711"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887726"
 ---
-# <a name="ado-objects-and-interfaces-reference"></a><span data-ttu-id="c6622-102">ADO Objects and Interfaces Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-102">ADO Objects and Interfaces Reference</span></span>
+# <a name="ado-objects-and-interfaces-reference"></a><span data-ttu-id="55d57-102">ADO Objects and Interfaces Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-102">ADO Objects and Interfaces Reference</span></span>
 
 
-<span data-ttu-id="c6622-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="c6622-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="55d57-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="55d57-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-  - [<span data-ttu-id="c6622-104">ADO-Objekte und -Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="c6622-104">ADO Objects and Interfaces</span></span>](ado-objects-and-interfaces.md)
+  - [<span data-ttu-id="55d57-104">ADO-Objekte und-Schnittstellen</span><span class="sxs-lookup"><span data-stu-id="55d57-104">ADO Objects and Interfaces</span></span>](ado-objects-and-interfaces.md)
 
-  - [<span data-ttu-id="c6622-105">ADORecordConstruction-Schnittstelle (ADO)</span><span class="sxs-lookup"><span data-stu-id="c6622-105">ADORecordConstruction Interface (ADO)</span></span>](adorecordconstruction-interface-ado.md)
+  - [<span data-ttu-id="55d57-105">ADORecordConstruction-Schnittstelle (ADO)</span><span class="sxs-lookup"><span data-stu-id="55d57-105">ADORecordConstruction Interface (ADO)</span></span>](adorecordconstruction-interface-ado.md)
 
-  - [<span data-ttu-id="c6622-106">ADORecordsetConstruction-Schnittstelle (ADO)</span><span class="sxs-lookup"><span data-stu-id="c6622-106">ADORecordsetConstruction Interface (ADO)</span></span>](adorecordsetconstruction-interface-ado.md)
+  - [<span data-ttu-id="55d57-106">ADORecordsetConstruction-Schnittstelle (ADO)</span><span class="sxs-lookup"><span data-stu-id="55d57-106">ADORecordsetConstruction Interface (ADO)</span></span>](adorecordsetconstruction-interface-ado.md)
 
-  - [<span data-ttu-id="c6622-107">Command Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-107">Command Object (ADO) Reference</span></span>](command-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-107">Command Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-107">Command Object (ADO) Reference</span></span>](command-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-108">Connection Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-108">Connection Object (ADO) Reference</span></span>](connection-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-108">Connection Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-108">Connection Object (ADO) Reference</span></span>](connection-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-109">Error Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-109">Error Object (ADO) Reference</span></span>](error-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-109">Error Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-109">Error Object (ADO) Reference</span></span>](error-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-110">Field Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-110">Field Object (ADO) Reference</span></span>](field-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-110">Field Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-110">Field Object (ADO) Reference</span></span>](field-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-111">Parameter Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-111">Parameter Object (ADO) Reference</span></span>](parameter-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-111">Parameter Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-111">Parameter Object (ADO) Reference</span></span>](parameter-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-112">Property Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-112">Property Object (ADO) Reference</span></span>](property-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-112">Property Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-112">Property Object (ADO) Reference</span></span>](property-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-113">Record Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-113">Record Object (ADO) Reference</span></span>](record-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-113">Record Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-113">Record Object (ADO) Reference</span></span>](record-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-114">Recordset Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-114">Recordset Object (ADO) Reference</span></span>](recordset-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-114">Recordset Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-114">Recordset Object (ADO) Reference</span></span>](recordset-object-ado-reference.md)
 
-  - [<span data-ttu-id="c6622-115">Stream Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="c6622-115">Stream Object (ADO) Reference</span></span>](stream-object-ado-reference.md)
+  - [<span data-ttu-id="55d57-115">Stream Object (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="55d57-115">Stream Object (ADO) Reference</span></span>](stream-object-ado-reference.md)
 

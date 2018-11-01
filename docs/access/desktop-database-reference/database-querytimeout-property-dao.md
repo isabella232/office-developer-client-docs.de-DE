@@ -6,38 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823170(v=office.15)
 ms:contentKeyID: 48547648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 247109d4f71fe153b639c9efa0e6944fb09448b6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e924dfb89cb67ffa4bc8ec29d0c24a7c61fcb5b5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474882"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887964"
 ---
-# <a name="databasequerytimeout-property-dao"></a><span data-ttu-id="a9297-102">Database.QueryTimeout Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="a9297-102">Database.QueryTimeout Property (DAO)</span></span>
+# <a name="databasequerytimeout-property-dao"></a><span data-ttu-id="c860c-102">Database.QueryTimeout Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="c860c-102">Database.QueryTimeout Property (DAO)</span></span>
 
 
-<span data-ttu-id="a9297-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="a9297-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="c860c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c860c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="a9297-104">Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, wie viele Sekunden beim Ausführen einer Abfrage zu einer ODBC-Datenquelle gewartet wird, bevor ein Timeoutfehler auftritt.</span><span class="sxs-lookup"><span data-stu-id="a9297-104">Sets or returns a value that specifies the number of seconds to wait before a timeout error occurs when a query is executed on an ODBC data source.</span></span>
+<span data-ttu-id="c860c-104">Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, wie viele Sekunden beim Ausführen einer Abfrage zu einer ODBC-Datenquelle gewartet wird, bevor ein Timeoutfehler auftritt.</span><span class="sxs-lookup"><span data-stu-id="c860c-104">Sets or returns a value that specifies the number of seconds to wait before a timeout error occurs when a query is executed on an ODBC data source.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a9297-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="a9297-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c860c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="c860c-105">Syntax</span></span>
 
-<span data-ttu-id="a9297-106">*Ausdruck* . QueryTimeout</span><span class="sxs-lookup"><span data-stu-id="a9297-106">*expression* .QueryTimeout</span></span>
+<span data-ttu-id="c860c-106">*Ausdruck* . QueryTimeout</span><span class="sxs-lookup"><span data-stu-id="c860c-106">*expression* .QueryTimeout</span></span>
 
-<span data-ttu-id="a9297-107">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="a9297-107">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="c860c-107">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="c860c-107">*expression* A variable that represents a **Database** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a9297-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="a9297-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c860c-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c860c-108">Remarks</span></span>
 
-<span data-ttu-id="a9297-109">Der Standardwert beträgt 60.</span><span class="sxs-lookup"><span data-stu-id="a9297-109">The default value is 60.</span></span>
+<span data-ttu-id="c860c-109">Der Standardwert beträgt 60.</span><span class="sxs-lookup"><span data-stu-id="c860c-109">The default value is 60.</span></span>
 
-<span data-ttu-id="a9297-p101">Bei einer ODBC-Datenbank, wie z. B. Microsoft SQL Server, können aufgrund des Netzwerkverkehrs oder einer hohen Belastung des ODBC-Servers Verzögerungen auftreten. Um eine unbegrenzte Wartezeit zu vermeiden, können Sie die Zeit festlegen.</span><span class="sxs-lookup"><span data-stu-id="a9297-p101">When you're using an ODBC database, such as Microsoft SQL Server, there may be delays due to network traffic or heavy use of the ODBC server. Rather than waiting indefinitely, you can specify how long to wait.</span></span>
+<span data-ttu-id="c860c-p101">Bei einer ODBC-Datenbank, wie z. B. Microsoft SQL Server, können aufgrund des Netzwerkverkehrs oder einer hohen Belastung des ODBC-Servers Verzögerungen auftreten. Um eine unbegrenzte Wartezeit zu vermeiden, können Sie die Zeit festlegen.</span><span class="sxs-lookup"><span data-stu-id="c860c-p101">When you're using an ODBC database, such as Microsoft SQL Server, there may be delays due to network traffic or heavy use of the ODBC server. Rather than waiting indefinitely, you can specify how long to wait.</span></span>
 
-<span data-ttu-id="a9297-p102">Wenn Sie die **QueryTimeout**-Eigenschaft bei einem **[Connection](connection-object-dao.md)** - oder **[Database](database-object-dao.md)** -Objekt verwenden, gibt sie den globalen Wert für alle Abfragen an, die der Datenbank zugeordnet sind. Sie können diesen Wert für eine bestimmte Abfrage außer Kraft setzen, indem Sie die **ODBCTimeout**-Eigenschaft des speziellen **[QueryDef](querydef-object-dao.md)** -Objekts festlegen.</span><span class="sxs-lookup"><span data-stu-id="a9297-p102">When you use **QueryTimeout** with a **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object, it specifies a global value for all queries associated with the database. You can override this value for a specific query by setting the **ODBCTimeout** property of the particular **[QueryDef](querydef-object-dao.md)** object.</span></span>
+<span data-ttu-id="c860c-p102">Wenn Sie die **QueryTimeout**-Eigenschaft bei einem **[Connection](connection-object-dao.md)** - oder **[Database](database-object-dao.md)** -Objekt verwenden, gibt sie den globalen Wert für alle Abfragen an, die der Datenbank zugeordnet sind. Sie können diesen Wert für eine bestimmte Abfrage außer Kraft setzen, indem Sie die **ODBCTimeout**-Eigenschaft des speziellen **[QueryDef](querydef-object-dao.md)** -Objekts festlegen.</span><span class="sxs-lookup"><span data-stu-id="c860c-p102">When you use **QueryTimeout** with a **[Connection](connection-object-dao.md)** or **[Database](database-object-dao.md)** object, it specifies a global value for all queries associated with the database. You can override this value for a specific query by setting the **ODBCTimeout** property of the particular **[QueryDef](querydef-object-dao.md)** object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a9297-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="a9297-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c860c-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c860c-114">Example</span></span>
 
-<span data-ttu-id="a9297-115">In diesem Beispiel werden die Eigenschaften **ODBCTimeout** und **QueryTimeout** verwendet, um zu zeigen, wie die **QueryTimeout**-Einstellung eines **Database**-Objekts die Standardeinstellung von **ODBCTimeout** für ein beliebiges **QueryDef**-Objekt festlegt, das anhand des **Database**-Objekts erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="a9297-115">This example uses the **ODBCTimeout** and **QueryTimeout** properties to show how the **QueryTimeout** setting on a **Database** object sets the default **ODBCTimeout** setting on any **QueryDef** objects created from the **Database** object.</span></span>
+<span data-ttu-id="c860c-115">In diesem Beispiel werden die Eigenschaften **ODBCTimeout** und **QueryTimeout** verwendet, um zu zeigen, wie die **QueryTimeout**-Einstellung eines **Database**-Objekts die Standardeinstellung von **ODBCTimeout** für ein beliebiges **QueryDef**-Objekt festlegt, das anhand des **Database**-Objekts erstellt wurde.</span><span class="sxs-lookup"><span data-stu-id="c860c-115">This example uses the **ODBCTimeout** and **QueryTimeout** properties to show how the **QueryTimeout** setting on a **Database** object sets the default **ODBCTimeout** setting on any **QueryDef** objects created from the **Database** object.</span></span>
 
 ```vb 
 Sub ODBCTimeoutX() 

@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="c2726-101"><<<<<<< HEAD-Titel: Wert-Eigenschaft (VC++-Beispiel) TOCTitle: Wert-Eigenschaft (VC++-Beispiel) === Titel: Wert-Eigenschaft (VC++-Beispiel) TOCTitle: Wert-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="c2726-101"><<<<<<< HEAD title: Value Property Example (VC++) TOCTitle: Value Property Example (VC++) ======= title: Value property example (VC++) TOCTitle: Value property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="c2726-102">Master Ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) Ms:contentKeyID: 48548040 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="c2726-102">master ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) ms:contentKeyID: 48548040 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Value-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Value property example (VC++)
+ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15)
+ms:contentKeyID: 48548040
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: cd9d674db1763ca5cd78310e8ce593ba81ad3146
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868966"
 ---
-
-<span data-ttu-id="c2726-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="c2726-103"><<<<<<< HEAD</span></span>
-# <a name="value-property-example-vc"></a><span data-ttu-id="c2726-104">Value-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="c2726-104">Value Property Example (VC++)</span></span>
-=======
-# <a name="value-property-example-vc"></a><span data-ttu-id="c2726-105">Wert-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="c2726-105">Value property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="c2726-106">master</span><span class="sxs-lookup"><span data-stu-id="c2726-106">master</span></span>
+# <a name="value-property-example-vc"></a><span data-ttu-id="265ef-102">Value-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="265ef-102">Value property example (VC++)</span></span>
 
 
-<span data-ttu-id="c2726-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="c2726-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="265ef-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="265ef-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c2726-108">Diese Beispiel veranschaulicht die [Value](value-property-ado.md)-Eigenschaft bei [Field](field-object-ado.md)- und [Property](property-object-ado.md)-Objekten, indem Feld- und Eigenschaftswerte für die ***Employees***-Tabelle angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="c2726-108">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
+<span data-ttu-id="265ef-104">Diese Beispiel veranschaulicht die [Value](value-property-ado.md)-Eigenschaft bei [Field](field-object-ado.md)- und [Property](property-object-ado.md)-Objekten, indem Feld- und Eigenschaftswerte für die ***Employees***-Tabelle angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="265ef-104">This example demonstrates the [Value](value-property-ado.md) property with [Field](field-object-ado.md) and [Property](property-object-ado.md) objects by displaying field and property values for the ***Employees*** table.</span></span>
 
 ```cpp 
  

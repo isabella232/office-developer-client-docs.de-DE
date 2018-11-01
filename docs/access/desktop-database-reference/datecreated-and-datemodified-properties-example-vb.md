@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="4d6a4-101"><<<<<<< HEAD-Titel: DateCreated- und DateModified Eigenschaften Beispiel) (VB) TOCTitle: DateCreated- und DateModified Eigenschaften Beispiel) (VB) === Titel: DateCreated- und DateModified-Eigenschaften (Beispiel) (VB) TOCTitle: DateCreated und DateModified-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="4d6a4-101"><<<<<<< HEAD title: DateCreated and DateModified Properties Example (VB) TOCTitle: DateCreated and DateModified Properties Example (VB) ======= title: DateCreated and DateModified properties example (VB) TOCTitle: DateCreated and DateModified properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="4d6a4-102">Master Ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15) Ms:contentKeyID: 48545063 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="4d6a4-102">master ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15) ms:contentKeyID: 48545063 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: DateCreated- und DateModified-Eigenschaft (Beispiel) (VB)
+TOCTitle: DateCreated and DateModified properties example (VB)
+ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15)
+ms:contentKeyID: 48545063
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: a8bdeb3c0e703485d5862332a41819503900b3c6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874447"
 ---
-
-<span data-ttu-id="4d6a4-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="4d6a4-103"><<<<<<< HEAD</span></span>
-# <a name="datecreated-and-datemodified-properties-example-vb"></a><span data-ttu-id="4d6a4-104">DateCreated- und DateModified-Eigenschaft (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="4d6a4-104">DateCreated and DateModified Properties Example (VB)</span></span>
-=======
-# <a name="datecreated-and-datemodified-properties-example-vb"></a><span data-ttu-id="4d6a4-105">DateCreated- und DateModified-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="4d6a4-105">DateCreated and DateModified properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="4d6a4-106">master</span><span class="sxs-lookup"><span data-stu-id="4d6a4-106">master</span></span>
+# <a name="datecreated-and-datemodified-properties-example-vb"></a><span data-ttu-id="7a2ec-102">DateCreated- und DateModified-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="7a2ec-102">DateCreated and DateModified properties example (VB)</span></span>
 
 
-<span data-ttu-id="4d6a4-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="4d6a4-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="7a2ec-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7a2ec-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4d6a4-p101">In diesem Beispiel wird die Verwendung der [DateCreated](datecreated-property-adox.md)- und der [DateModified](datemodified-property-adox.md)-Eigenschaft veranschaulicht, indem ein neues [Column](column-object-adox.md)-Objekt zu einem vorhandenen [Table](table-object-adox.md)-Objekt hinzugefügt wird und ein neues **Table** -Objekt erstellt wird. Zur Ausführung dieses Beispiels ist die DateOutput-Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="4d6a4-p101">This example demonstrates the [DateCreated](datecreated-property-adox.md) and [DateModified](datemodified-property-adox.md) properties by adding a new [Column](column-object-adox.md) to an existing [Table](table-object-adox.md) and by creating a new **Table**. The DateOutput procedure is required for this example to run.</span></span>
+<span data-ttu-id="7a2ec-p101">In diesem Beispiel wird die Verwendung der [DateCreated](datecreated-property-adox.md)- und der [DateModified](datemodified-property-adox.md)-Eigenschaft veranschaulicht, indem ein neues [Column](column-object-adox.md)-Objekt zu einem vorhandenen [Table](table-object-adox.md)-Objekt hinzugefügt wird und ein neues **Table** -Objekt erstellt wird. Zur Ausführung dieses Beispiels ist die DateOutput-Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="7a2ec-p101">This example demonstrates the [DateCreated](datecreated-property-adox.md) and [DateModified](datemodified-property-adox.md) properties by adding a new [Column](column-object-adox.md) to an existing [Table](table-object-adox.md) and by creating a new **Table**. The DateOutput procedure is required for this example to run.</span></span>
 
 ```vb 
  

@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249714(v=office.15)
 ms:contentKeyID: 48546616
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eeac988a85f9ef1551d740940d326b67355c478c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f496b39c3b06832cab9f60d2e560c9748f12c0d1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880558"
 ---
-# <a name="visual-basic"></a><span data-ttu-id="63032-102">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="63032-102">Visual Basic</span></span>
+# <a name="visual-basic"></a><span data-ttu-id="11883-102">Visual Basic</span><span class="sxs-lookup"><span data-stu-id="11883-102">Visual Basic</span></span>
 
 
-<span data-ttu-id="63032-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="63032-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="11883-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="11883-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="63032-p101">Um ADO-Ereignisse in Microsoft Visual Basic zu behandeln, müssen Sie mithilfe des **WithEvents** -Schlüsselworts eine Variable auf Modulebene deklarieren. Die Variable kann nur als Teil eines Klassenmoduls deklariert werden und muss auf der Modulebene deklariert werden. Dies ist jedoch weniger restriktiv als es den Anschein hat, weil **Form** -Objekte von Visual Basic ebenfalls Klassen sind. Die einfachste Methode zum Behandeln von ADO-Ereignissen ist das Deklarieren einer Variablen mithilfe von **WithEvents**. Im folgenden Beispiel wird das **ConnectComplete** -Ereignis für ein **Connection** -Objekt behandelt:</span><span class="sxs-lookup"><span data-stu-id="63032-p101">In order to handle ADO events in Microsoft Visual Basic, you must declare a module-level variable using the **WithEvents** keyword. The variable can be declared only as part of a class module and must be declared at the module level. This is not as restrictive as it seems, however, because Visual Basic **Form** objects are also classes. The simplest way to handle ADO events is to declare a variable using **WithEvents**. The following example handles the **ConnectComplete** event for a **Connection** object:</span></span>
+<span data-ttu-id="11883-p101">Um ADO-Ereignisse in Microsoft Visual Basic zu behandeln, müssen Sie mithilfe des **WithEvents** -Schlüsselworts eine Variable auf Modulebene deklarieren. Die Variable kann nur als Teil eines Klassenmoduls deklariert werden und muss auf der Modulebene deklariert werden. Dies ist jedoch weniger restriktiv als es den Anschein hat, weil **Form** -Objekte von Visual Basic ebenfalls Klassen sind. Die einfachste Methode zum Behandeln von ADO-Ereignissen ist das Deklarieren einer Variablen mithilfe von **WithEvents**. Im folgenden Beispiel wird das **ConnectComplete** -Ereignis für ein **Connection** -Objekt behandelt:</span><span class="sxs-lookup"><span data-stu-id="11883-p101">In order to handle ADO events in Microsoft Visual Basic, you must declare a module-level variable using the **WithEvents** keyword. The variable can be declared only as part of a class module and must be declared at the module level. This is not as restrictive as it seems, however, because Visual Basic **Form** objects are also classes. The simplest way to handle ADO events is to declare a variable using **WithEvents**. The following example handles the **ConnectComplete** event for a **Connection** object:</span></span>
 
 ```vb 
  
@@ -76,5 +76,5 @@ End Sub
 ' EndEventExampleVB02 
 ```
 
-<span data-ttu-id="63032-109">Das **Connection** -Objekt wird auf **Formularebene verwenden das Schlüsselwort **WithEvents** zum ermöglichen des Ereignisbehandlung** deklariert.</span><span class="sxs-lookup"><span data-stu-id="63032-109">The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling.</span></span> <span data-ttu-id="63032-110">Das Formular\_Load-Ereignishandler erstellt das Objekt, indem Sie **ein neues Verbindungsobjekt** *ConnEvent* zuweisen, und klicken Sie dann die Verbindung wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="63032-110">The Form\_Load event handler actually creates the object by assigning a new **Connection** object to *connEvent* and then opens the connection.</span></span> <span data-ttu-id="63032-111">Natürlich eine echte Anwendung würden führen Sie weitere Verarbeitung in der Form\_Load-Ereignishandler als hier dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="63032-111">Of course, a real application would do more processing in the Form\_Load event handler than is shown here.</span></span>
+<span data-ttu-id="11883-109">Das **Connection** -Objekt wird auf **Formularebene verwenden das Schlüsselwort **WithEvents** zum ermöglichen des Ereignisbehandlung** deklariert.</span><span class="sxs-lookup"><span data-stu-id="11883-109">The **Connection** object is declared at the **Form** level using the **WithEvents** keyword to enable event handling.</span></span> <span data-ttu-id="11883-110">Das Formular\_Load-Ereignishandler erstellt das Objekt, indem Sie **ein neues Verbindungsobjekt** *ConnEvent* zuweisen, und klicken Sie dann die Verbindung wird geöffnet.</span><span class="sxs-lookup"><span data-stu-id="11883-110">The Form\_Load event handler actually creates the object by assigning a new **Connection** object to *connEvent* and then opens the connection.</span></span> <span data-ttu-id="11883-111">Natürlich eine echte Anwendung würden führen Sie weitere Verarbeitung in der Form\_Load-Ereignishandler als hier dargestellt wird.</span><span class="sxs-lookup"><span data-stu-id="11883-111">Of course, a real application would do more processing in the Form\_Load event handler than is shown here.</span></span>
 

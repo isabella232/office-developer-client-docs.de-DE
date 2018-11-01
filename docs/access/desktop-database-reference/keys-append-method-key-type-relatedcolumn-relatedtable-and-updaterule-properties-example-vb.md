@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="e3844-101"><<<<<<< HEAD-Titel: Keys-Methode Append, Schlüsseltyp, RelatedColumn-Eigenschaften Beispiel) (VB) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule Eigenschaften Beispiel) (VB) === Titel: Schlüssel Append-Methode, Schlüssel Typ, RelatedColumn-Eigenschaft (Beispiel) (VB) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="e3844-101"><<<<<<< HEAD title: Keys Append Method, Key Type, RelatedColumn Properties Example (VB) TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB) ======= title: Keys Append Method, Key Type, RelatedColumn properties example (VB) TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="e3844-102">Master Ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) Ms:contentKeyID: 48547871 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="e3844-102">master ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) ms:contentKeyID: 48547871 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Keys-Methode Append, Key-Typ RelatedColumn-Eigenschaft (Beispiel) (VB)
+TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)
+ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15)
+ms:contentKeyID: 48547871
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7cec32ff7229540344d471e6c66b96270bb5a197
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878031"
 ---
-
-<span data-ttu-id="e3844-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="e3844-103"><<<<<<< HEAD</span></span>
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a><span data-ttu-id="e3844-104">Append-Methode (Keys), Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="e3844-104">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule Properties Example (VB)</span></span>
-=======
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a><span data-ttu-id="e3844-105">Keys-Methode Append, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="e3844-105">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)</span></span>
->>>>>>> <span data-ttu-id="e3844-106">master</span><span class="sxs-lookup"><span data-stu-id="e3844-106">master</span></span>
+# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a><span data-ttu-id="722f5-102">Keys-Methode Append, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="722f5-102">Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)</span></span>
 
 
-<span data-ttu-id="e3844-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="e3844-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="722f5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="722f5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e3844-108">Im folgenden Code wird das Erstellen eines neuen Fremdschlüssels veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="e3844-108">The following code demonstrates how to create a new foreign key.</span></span> <span data-ttu-id="e3844-109">Es wird davon ausgegangen, dass zwei Tabellen (**Customers** und **Orders**) vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="e3844-109">It assumes two tables (**Customers** and **Orders**) exist.</span></span>
+<span data-ttu-id="722f5-104">Im folgenden Code wird das Erstellen eines neuen Fremdschlüssels veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="722f5-104">The following code demonstrates how to create a new foreign key.</span></span> <span data-ttu-id="722f5-105">Es wird davon ausgegangen, dass zwei Tabellen (**Customers** und **Orders**) vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="722f5-105">It assumes two tables (**Customers** and **Orders**) exist.</span></span>
 
 ```vb 
  

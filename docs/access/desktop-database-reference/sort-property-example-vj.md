@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="dae8b-101"><<<<<<< HEAD-Titel: Sort-Eigenschaft Beispiel) (VJ++) TOCTitle: Sort-Eigenschaft Beispiel) (VJ++) === Titel: Sort-Eigenschaft Beispiel) (VJ++) TOCTitle: Sort-Eigenschaft Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="dae8b-101"><<<<<<< HEAD title: Sort Property Example (VJ++) TOCTitle: Sort Property Example (VJ++) ======= title: Sort property example (VJ++) TOCTitle: Sort property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="dae8b-102">Master Ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15) Ms:contentKeyID: 48543896 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="dae8b-102">master ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15) ms:contentKeyID: 48543896 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Sort-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Sort property example (VJ++)
+ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15)
+ms:contentKeyID: 48543896
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 9ea7dd3ee87b3e7ff2d06a6f6cf14d9195216f42
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872081"
 ---
-
-<span data-ttu-id="dae8b-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="dae8b-103"><<<<<<< HEAD</span></span>
-# <a name="sort-property-example-vj"></a><span data-ttu-id="dae8b-104">Sort-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="dae8b-104">Sort Property Example (VJ++)</span></span>
-=======
-# <a name="sort-property-example-vj"></a><span data-ttu-id="dae8b-105">Sort-Eigenschaft Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="dae8b-105">Sort property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="dae8b-106">master</span><span class="sxs-lookup"><span data-stu-id="dae8b-106">master</span></span>
+# <a name="sort-property-example-vj"></a><span data-ttu-id="15797-102">Sort-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="15797-102">Sort property example (VJ++)</span></span>
 
 
-<span data-ttu-id="dae8b-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="dae8b-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="15797-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="15797-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="dae8b-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="dae8b-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
+<span data-ttu-id="15797-p101">In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.</span><span class="sxs-lookup"><span data-stu-id="15797-p101">This example uses the [Recordset](recordset-object-ado.md) object's [Sort](sort-property-ado.md) property to reorder the rows of a **Recordset** derived from the ***Authors*** table of the ***Pubs*** database. A secondary utility routine prints each row.</span></span>
 
 ```java 
  

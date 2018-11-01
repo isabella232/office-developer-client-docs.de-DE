@@ -6,33 +6,33 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192110(v=office.15)
 ms:contentKeyID: 48543968
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 77f3c7331e42d0f9a63a0f87330f8acbc49a646b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 392864fa2b6d72249de0c0d75e3c1bc3ecbc3a11
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473092"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878521"
 ---
-# <a name="recordsetupdatable-property-dao"></a><span data-ttu-id="1789f-102">Recordset.Updatable Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="1789f-102">Recordset.Updatable Property (DAO)</span></span>
+# <a name="recordsetupdatable-property-dao"></a><span data-ttu-id="9f246-102">Recordset.Updatable Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="9f246-102">Recordset.Updatable Property (DAO)</span></span>
 
 
-<span data-ttu-id="1789f-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="1789f-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="9f246-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9f246-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1789f-p101">Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter **Boolean**-Wert.</span><span class="sxs-lookup"><span data-stu-id="1789f-p101">Returns a value that indicates whether you can change a DAO object. Read-only **Boolean**.</span></span>
+<span data-ttu-id="9f246-p101">Gibt einen Wert zurück, der anzeigt, ob ein DAO-Objekt geändert werden kann. Schreibgeschützter **Boolean**-Wert.</span><span class="sxs-lookup"><span data-stu-id="9f246-p101">Returns a value that indicates whether you can change a DAO object. Read-only **Boolean**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="1789f-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="1789f-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9f246-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="9f246-106">Syntax</span></span>
 
-<span data-ttu-id="1789f-107">*Ausdruck* . Aktualisierbar</span><span class="sxs-lookup"><span data-stu-id="1789f-107">*expression* .Updatable</span></span>
+<span data-ttu-id="9f246-107">*Ausdruck* . Aktualisierbar</span><span class="sxs-lookup"><span data-stu-id="9f246-107">*expression* .Updatable</span></span>
 
-<span data-ttu-id="1789f-108">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="1789f-108">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="9f246-108">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="9f246-108">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="1789f-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="1789f-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9f246-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9f246-109">Remarks</span></span>
 
-<span data-ttu-id="1789f-110">Recordset-Objekte vom Typ Momentaufnahme und vorwärtsgerichtet geben immer False zurück.</span><span class="sxs-lookup"><span data-stu-id="1789f-110">Snapshot- and forward-only–type Recordset objects always return **False**.</span></span>
+<span data-ttu-id="9f246-110">Recordset-Objekte vom Typ Momentaufnahme und vorwärtsgerichtet geben immer False zurück.</span><span class="sxs-lookup"><span data-stu-id="9f246-110">Snapshot- and forward-only–type Recordset objects always return **False**.</span></span>
 
-<span data-ttu-id="1789f-p102">Zahlreiche Typen von Objekten können Felder enthalten, die nicht aktualisiert werden können. Sie können z. B. ein Recordset-Objekt vom Typ Dynaset erstellen, in dem nur bestimmte Felder geändert werden können. Diese Felder können feste Daten enthalten oder auch Werte, die automatisch erhöht werden. Das Dynaset kann auch das Ergebnis einer Abfrage sein, in der aktualisierbare und nicht-aktualisierbare Tabellen kombiniert werden.</span><span class="sxs-lookup"><span data-stu-id="1789f-p102">Many types of objects can contain fields that can't be updated. For example, you can create a dynaset-type **Recordset** object in which only some fields can be changed. These fields can be fixed or contain data that increments automatically, or the dynaset can result from a query that combines updatable and nonupdatable tables.</span></span>
+<span data-ttu-id="9f246-p102">Zahlreiche Typen von Objekten können Felder enthalten, die nicht aktualisiert werden können. Sie können z. B. ein Recordset-Objekt vom Typ Dynaset erstellen, in dem nur bestimmte Felder geändert werden können. Diese Felder können feste Daten enthalten oder auch Werte, die automatisch erhöht werden. Das Dynaset kann auch das Ergebnis einer Abfrage sein, in der aktualisierbare und nicht-aktualisierbare Tabellen kombiniert werden.</span><span class="sxs-lookup"><span data-stu-id="9f246-p102">Many types of objects can contain fields that can't be updated. For example, you can create a dynaset-type **Recordset** object in which only some fields can be changed. These fields can be fixed or contain data that increments automatically, or the dynaset can result from a query that combines updatable and nonupdatable tables.</span></span>
 
-<span data-ttu-id="1789f-p103">Wenn das Objekt nur schreibgeschützte Felder enthält, ist der Wert der **Updatable**-Eigenschaft **False**. Wenn mindestens ein Feld aktualisierbar ist, ist der Wert der Eigenschaft **True**. Sie können nur die aktualisierbaren Felder bearbeiten. Wenn Sie versuchen, einem schreibgeschützten Feld einen neuen Wert zuzuweisen, tritt ein auffangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="1789f-p103">If the object contains only read-only fields, the value of the **Updatable** property is **False**. When one or more fields are updatable, the property's value is **True**. You can edit only the updatable fields. A trappable error occurs if you try to assign a new value to a read-only field.</span></span>
+<span data-ttu-id="9f246-p103">Wenn das Objekt nur schreibgeschützte Felder enthält, ist der Wert der **Updatable**-Eigenschaft **False**. Wenn mindestens ein Feld aktualisierbar ist, ist der Wert der Eigenschaft **True**. Sie können nur die aktualisierbaren Felder bearbeiten. Wenn Sie versuchen, einem schreibgeschützten Feld einen neuen Wert zuzuweisen, tritt ein auffangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="9f246-p103">If the object contains only read-only fields, the value of the **Updatable** property is **False**. When one or more fields are updatable, the property's value is **True**. You can edit only the updatable fields. A trappable error occurs if you try to assign a new value to a read-only field.</span></span>
 
-<span data-ttu-id="1789f-118">Da ein aktualisierbares Objekt schreibgeschützte Felder enthalten kann, müssen Sie die **DataUpdatable**-Eigenschaft der einzelnen Felder der **Fields**-Auflistung eines **Recordset**-Objekts überprüfen, bevor Sie einen Datensatz bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="1789f-118">Because an updatable object can contain read-only fields, check the **DataUpdatable** property of each field in the **Fields** collection of a **Recordset** object before you edit a record.</span></span>
+<span data-ttu-id="9f246-118">Da ein aktualisierbares Objekt schreibgeschützte Felder enthalten kann, müssen Sie die **DataUpdatable**-Eigenschaft der einzelnen Felder der **Fields**-Auflistung eines **Recordset**-Objekts überprüfen, bevor Sie einen Datensatz bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="9f246-118">Because an updatable object can contain read-only fields, check the **DataUpdatable** property of each field in the **Fields** collection of a **Recordset** object before you edit a record.</span></span>
 

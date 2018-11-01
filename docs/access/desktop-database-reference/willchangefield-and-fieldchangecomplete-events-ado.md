@@ -6,59 +6,59 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249904(v=office.15)
 ms:contentKeyID: 48547407
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 40e9572988ca3335ef93ecf46d00a716ba29c595
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: aa26ff85bfb3a2b5666b98ea6ab6b30e689b5c2b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474837"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872690"
 ---
-# <a name="willchangefield-and-fieldchangecomplete-events-ado"></a><span data-ttu-id="bebe1-102">WillChangeField- und FieldChangeComplete-Ereignisse (ADO)</span><span class="sxs-lookup"><span data-stu-id="bebe1-102">WillChangeField and FieldChangeComplete Events (ADO)</span></span>
+# <a name="willchangefield-and-fieldchangecomplete-events-ado"></a><span data-ttu-id="21da0-102">WillChangeField- und FieldChangeComplete-Ereignisse (ADO)</span><span class="sxs-lookup"><span data-stu-id="21da0-102">WillChangeField and FieldChangeComplete Events (ADO)</span></span>
 
 
-<span data-ttu-id="bebe1-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="bebe1-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="21da0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="21da0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="bebe1-p101">Das **WillChangeField** -Ereignis wird aufgerufen, bevor der Wert eines oder mehrerer [Field](field-object-ado.md)-Objekte im [Recordset](recordset-object-ado.md)-Objekt durch einen ausstehenden Vorgang geändert wird. Das **FieldChangeComplete** -Ereignis wird aufgerufen, nachdem der Wert eines oder mehrerer **Field** -Objekte geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="bebe1-p101">The **WillChangeField** event is called before a pending operation changes the value of one or more [Field](field-object-ado.md) objects in the [Recordset](recordset-object-ado.md). The **FieldChangeComplete** event is called after the value of one or more **Field** objects has changed.</span></span>
+<span data-ttu-id="21da0-p101">Das **WillChangeField** -Ereignis wird aufgerufen, bevor der Wert eines oder mehrerer [Field](field-object-ado.md)-Objekte im [Recordset](recordset-object-ado.md)-Objekt durch einen ausstehenden Vorgang geändert wird. Das **FieldChangeComplete** -Ereignis wird aufgerufen, nachdem der Wert eines oder mehrerer **Field** -Objekte geändert wurde.</span><span class="sxs-lookup"><span data-stu-id="21da0-p101">The **WillChangeField** event is called before a pending operation changes the value of one or more [Field](field-object-ado.md) objects in the [Recordset](recordset-object-ado.md). The **FieldChangeComplete** event is called after the value of one or more **Field** objects has changed.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="bebe1-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="bebe1-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="21da0-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="21da0-106">Syntax</span></span>
 
-<span data-ttu-id="bebe1-107">WillChangeField-*cFields*, *Felder*, *AdStatus*, *pCommand*</span><span class="sxs-lookup"><span data-stu-id="bebe1-107">WillChangeField*cFields*, *Fields*, *adStatus*, *pRecordset*</span></span>
+<span data-ttu-id="21da0-107">WillChangeField-*cFields*, *Felder*, *AdStatus*, *pCommand*</span><span class="sxs-lookup"><span data-stu-id="21da0-107">WillChangeField*cFields*, *Fields*, *adStatus*, *pRecordset*</span></span>
 
-<span data-ttu-id="bebe1-108">FieldChangeComplete*cFields*, *Felder*, *pError*, *AdStatus*, *pCommand*</span><span class="sxs-lookup"><span data-stu-id="bebe1-108">FieldChangeComplete*cFields*, *Fields*, *pError*, *adStatus*, *pRecordset*</span></span>
+<span data-ttu-id="21da0-108">FieldChangeComplete*cFields*, *Felder*, *pError*, *AdStatus*, *pCommand*</span><span class="sxs-lookup"><span data-stu-id="21da0-108">FieldChangeComplete*cFields*, *Fields*, *pError*, *adStatus*, *pRecordset*</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="bebe1-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="bebe1-109">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="21da0-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="21da0-109">Parameters</span></span>
 
-  - <span data-ttu-id="bebe1-110">*cFields*</span><span class="sxs-lookup"><span data-stu-id="bebe1-110">*cFields*</span></span>
+  - <span data-ttu-id="21da0-110">*cFields*</span><span class="sxs-lookup"><span data-stu-id="21da0-110">*cFields*</span></span>
 
-  - <span data-ttu-id="bebe1-111">Ein **Long**-Wert, der die Anzahl der **Field**-Objekte von *Fields* angibt.</span><span class="sxs-lookup"><span data-stu-id="bebe1-111">A **Long** that indicates the number of **Field** objects in *Fields*.</span></span>
+  - <span data-ttu-id="21da0-111">Ein **Long**-Wert, der die Anzahl der **Field**-Objekte von *Fields* angibt.</span><span class="sxs-lookup"><span data-stu-id="21da0-111">A **Long** that indicates the number of **Field** objects in *Fields*.</span></span>
 
-  - <span data-ttu-id="bebe1-112">*Fields*</span><span class="sxs-lookup"><span data-stu-id="bebe1-112">*Fields*</span></span>
+  - <span data-ttu-id="21da0-112">*Fields*</span><span class="sxs-lookup"><span data-stu-id="21da0-112">*Fields*</span></span>
 
-  - <span data-ttu-id="bebe1-113">Für **WillChangeField**ist der Parameter *Felder* Arrays von **Varianten** , die mit den ursprünglichen Werten **Field** -Objekte enthält.</span><span class="sxs-lookup"><span data-stu-id="bebe1-113">For **WillChangeField**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the original values.</span></span>  
+  - <span data-ttu-id="21da0-113">Für **WillChangeField**ist der Parameter *Felder* Arrays von **Varianten** , die mit den ursprünglichen Werten **Field** -Objekte enthält.</span><span class="sxs-lookup"><span data-stu-id="21da0-113">For **WillChangeField**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the original values.</span></span>  
       
-    <span data-ttu-id="bebe1-114">Für **FieldChangeComplete**ist der Parameter *Felder* Arrays von **Varianten** , die mit den geänderten Werten **Field** -Objekte enthält.</span><span class="sxs-lookup"><span data-stu-id="bebe1-114">For **FieldChangeComplete**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the changed values.</span></span>
+    <span data-ttu-id="21da0-114">Für **FieldChangeComplete**ist der Parameter *Felder* Arrays von **Varianten** , die mit den geänderten Werten **Field** -Objekte enthält.</span><span class="sxs-lookup"><span data-stu-id="21da0-114">For **FieldChangeComplete**, the *Fields* parameter is an array of **Variants** that contains **Field** objects with the changed values.</span></span>
 
-  - <span data-ttu-id="bebe1-115">*pError*</span><span class="sxs-lookup"><span data-stu-id="bebe1-115">*pError*</span></span>
+  - <span data-ttu-id="21da0-115">*pError*</span><span class="sxs-lookup"><span data-stu-id="21da0-115">*pError*</span></span>
 
-  - <span data-ttu-id="bebe1-p102">Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der auftritt, wenn der *adStatus* -Wert **adStatusErrorsOccurred** lautet. Andernfalls wird er nicht festgelegt.</span><span class="sxs-lookup"><span data-stu-id="bebe1-p102">An [Error](error-object-ado.md) object. It describes the error that occurred if the value of *adStatus* is **adStatusErrorsOccurred**; otherwise it is not set.</span></span>
+  - <span data-ttu-id="21da0-p102">Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der auftritt, wenn der *adStatus* -Wert **adStatusErrorsOccurred** lautet. Andernfalls wird er nicht festgelegt.</span><span class="sxs-lookup"><span data-stu-id="21da0-p102">An [Error](error-object-ado.md) object. It describes the error that occurred if the value of *adStatus* is **adStatusErrorsOccurred**; otherwise it is not set.</span></span>
 
-  - <span data-ttu-id="bebe1-118">*adStatus*</span><span class="sxs-lookup"><span data-stu-id="bebe1-118">*adStatus*</span></span>
+  - <span data-ttu-id="21da0-118">*adStatus*</span><span class="sxs-lookup"><span data-stu-id="21da0-118">*adStatus*</span></span>
 
-  - [<span data-ttu-id="bebe1-119">EventStatusEnum</span><span class="sxs-lookup"><span data-stu-id="bebe1-119">EventStatusEnum</span></span>](eventstatusenum.md)
+  - [<span data-ttu-id="21da0-119">EventStatusEnum</span><span class="sxs-lookup"><span data-stu-id="21da0-119">EventStatusEnum</span></span>](eventstatusenum.md)
     
-    <span data-ttu-id="bebe1-p103">Wird **WillChangeField** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Der Parameter wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch des ausstehenden Vorgangs nicht anfordern kann.</span><span class="sxs-lookup"><span data-stu-id="bebe1-p103">When **WillChangeField** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful. It is set to **adStatusCantDeny** if this event cannot request cancellation of the pending operation.</span></span>
+    <span data-ttu-id="21da0-p103">Wird **WillChangeField** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Der Parameter wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch des ausstehenden Vorgangs nicht anfordern kann.</span><span class="sxs-lookup"><span data-stu-id="21da0-p103">When **WillChangeField** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful. It is set to **adStatusCantDeny** if this event cannot request cancellation of the pending operation.</span></span>
     
-    <span data-ttu-id="bebe1-122">Wird **FieldChangeComplete** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Er wird auf **adStatusErrorsOccurred** festgelegt, wenn der Vorgang fehlgeschlagen ist.</span><span class="sxs-lookup"><span data-stu-id="bebe1-122">When **FieldChangeComplete** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful, or to **adStatusErrorsOccurred** if the operation failed.</span></span>
+    <span data-ttu-id="21da0-122">Wird **FieldChangeComplete** aufgerufen, wird dieser Parameter auf **adStatusOK** festgelegt, wenn der das Ereignis verursachende Vorgang erfolgreich war. Er wird auf **adStatusErrorsOccurred** festgelegt, wenn der Vorgang fehlgeschlagen ist.</span><span class="sxs-lookup"><span data-stu-id="21da0-122">When **FieldChangeComplete** is called, this parameter is set to **adStatusOK** if the operation that caused the event was successful, or to **adStatusErrorsOccurred** if the operation failed.</span></span>
     
-    <span data-ttu-id="bebe1-123">Legen Sie diesen Parameter vor der Rückgabe von **WillChangeField** auf **AdStatusCancel** fest, um den Abbruch des ausstehenden Vorgangs anzufordern.</span><span class="sxs-lookup"><span data-stu-id="bebe1-123">Before **WillChangeField** returns, set this parameter to **adStatusCancel** to request cancellation of the pending operation.</span></span>
+    <span data-ttu-id="21da0-123">Legen Sie diesen Parameter vor der Rückgabe von **WillChangeField** auf **AdStatusCancel** fest, um den Abbruch des ausstehenden Vorgangs anzufordern.</span><span class="sxs-lookup"><span data-stu-id="21da0-123">Before **WillChangeField** returns, set this parameter to **adStatusCancel** to request cancellation of the pending operation.</span></span>
     
-    <span data-ttu-id="bebe1-124">Legen Sie diesen Parameter vor der Rückgabe von **FieldChangeComplete** auf **AdStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.</span><span class="sxs-lookup"><span data-stu-id="bebe1-124">Before **FieldChangeComplete** returns, set this parameter to **adStatusUnwantedEvent** to prevent subsequent notifications.</span></span>
+    <span data-ttu-id="21da0-124">Legen Sie diesen Parameter vor der Rückgabe von **FieldChangeComplete** auf **AdStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.</span><span class="sxs-lookup"><span data-stu-id="21da0-124">Before **FieldChangeComplete** returns, set this parameter to **adStatusUnwantedEvent** to prevent subsequent notifications.</span></span>
 
-  - <span data-ttu-id="bebe1-125">*pCommand*</span><span class="sxs-lookup"><span data-stu-id="bebe1-125">*pRecordset*</span></span>
+  - <span data-ttu-id="21da0-125">*pCommand*</span><span class="sxs-lookup"><span data-stu-id="21da0-125">*pRecordset*</span></span>
 
-  - <span data-ttu-id="bebe1-p104">Ein **Recordset**-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.</span><span class="sxs-lookup"><span data-stu-id="bebe1-p104">A **Recordset** object. The **Recordset** for which this event occurred.</span></span>
+  - <span data-ttu-id="21da0-p104">Ein **Recordset**-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.</span><span class="sxs-lookup"><span data-stu-id="21da0-p104">A **Recordset** object. The **Recordset** for which this event occurred.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="bebe1-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bebe1-128">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="21da0-128">Hinweise</span><span class="sxs-lookup"><span data-stu-id="21da0-128">Remarks</span></span>
 
-<span data-ttu-id="bebe1-129">Ein **WillChangeField** - oder ein **FieldChangeComplete** -Ereignis kann eintreten, wenn die [Value](value-property-ado.md)-Eigenschaft festgelegt und die [Update](update-method-ado.md)-Methode mit Feld- und Wertarrayparametern aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="bebe1-129">A **WillChangeField** or **FieldChangeComplete** event may occur when setting the [Value](value-property-ado.md) property and calling the [Update](update-method-ado.md) method with field and value array parameters.</span></span>
+<span data-ttu-id="21da0-129">Ein **WillChangeField** - oder ein **FieldChangeComplete** -Ereignis kann eintreten, wenn die [Value](value-property-ado.md)-Eigenschaft festgelegt und die [Update](update-method-ado.md)-Methode mit Feld- und Wertarrayparametern aufgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="21da0-129">A **WillChangeField** or **FieldChangeComplete** event may occur when setting the [Value](value-property-ado.md) property and calling the [Update](update-method-ado.md) method with field and value array parameters.</span></span>
 
