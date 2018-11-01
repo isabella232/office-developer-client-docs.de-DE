@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: LockType-Eigenschaft (ADO) TOCTitle: LockType-Eigenschaft (ADO) === Titel: LockType-Eigenschaft (ADO) TOCTitle: LockType-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 1d2622dc-6cab-1b7f-98a8-97a41d5c047f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248965(v=office.15) Ms:contentKeyID: 48543589 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: LockType-Eigenschaft (ADO)
+TOCTitle: LockType property (ADO)
+ms:assetid: 1d2622dc-6cab-1b7f-98a8-97a41d5c047f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248965(v=office.15)
+ms:contentKeyID: 48543589
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 88657361d6ce5ac168f21f5709bdaf68eeb23b6d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879057"
 ---
-
-<<<<<<< Kopf
 # <a name="locktype-property-ado"></a>LockType-Eigenschaft (ADO)
-=======
-# <a name="locktype-property-ado"></a>LockType-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Typ der Sperren an, die bei der Bearbeitung auf Datensätze angewendet werden.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen [LockTypeEnum](locktypeenum.md)-Wert fest oder gibt den Wert zurück. Der Standardwert ist **adLockReadOnly**.
 

@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249148(v=office.15)
 ms:contentKeyID: 48544277
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 897e4664addee75a69190fa3e10fc23fb5f714e7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 27f94e0e9923b9adf0bba31de62e7a339ea2f28e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860321"
+ms.locfileid: "25871479"
 ---
 # <a name="lineseparatorsenum"></a>LineSeparatorsEnum
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt das Zeichen an, das als Zeilentrennzeichen in [Stream](stream-object-ado.md)-Textobjekten verwendet wird.
 

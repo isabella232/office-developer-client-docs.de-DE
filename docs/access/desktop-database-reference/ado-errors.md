@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248796(v=office.15)
 ms:contentKeyID: 48542972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a8b6b794daf7c03df26c186ac58b9a02ed4a7419
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 66b0d7ca54723755bcdb6e24726f75836cd9716f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861232"
+ms.locfileid: "25885640"
 ---
 # <a name="ado-errors"></a>ADO-Fehler
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 ADO-Fehler werden dem Programm als Laufzeitfehler gemeldet. Sie können den Fehlerbehandlung Mechanismus für die Programmiersprache abzufangen und zu behandeln. Verwenden Sie in Visual Basic beispielsweise die **On Error** -Anweisung. Verwenden Sie in Visual J++ einen **Try-Catch** -Block. In Visual C++ hängt von der Methode, die Sie verwenden, um die ADO-Bibliotheken zugreifen. Mit \#importieren, verwenden Sie einen **Try-Catch** -Block. Andernfalls müssen C++-Programmierer explizit das Error-Objekt abrufen, indem **GetErrorInfo**aufrufen. Das folgende Visual Basic Sub-Prozedur veranschaulicht das Beheben eines ADO-Fehlers:
 

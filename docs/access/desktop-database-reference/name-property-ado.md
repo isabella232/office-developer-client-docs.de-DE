@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Name-Eigenschaft (ADO) TOCTitle: Name-Eigenschaft (ADO) === Titel: Name-Eigenschaft (ADO) TOCTitle: Name-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 4b19bd08-ac3c-86f0-471d-06a37a0d4f89 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249234(v=office.15) Ms:contentKeyID: 48544683 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Name-Eigenschaft (ADO)
+TOCTitle: Name property (ADO)
+ms:assetid: 4b19bd08-ac3c-86f0-471d-06a37a0d4f89
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249234(v=office.15)
+ms:contentKeyID: 48544683
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8be8e1dcb2defacffda92e4a6f60e0c7f7a8f52d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882553"
 ---
-
-<<<<<<< Kopf
 # <a name="name-property-ado"></a>Name-Eigenschaft (ADO)
-=======
-# <a name="name-property-ado"></a>Name-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Namen eines Objekts an.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen **String** -Wert fest, der den Namen eines Objekts oder einer Anwendung angibt, oder gibt den Wert zurück.
 

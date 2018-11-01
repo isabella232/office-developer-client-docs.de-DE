@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248867(v=office.15)
 ms:contentKeyID: 48543275
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 13ac7bc90620b8b6e795842796a7a641d3d8ac20
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 27f0032cc92105a2cc88dd23e18311ee892b105c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473357"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885549"
 ---
 # <a name="ado-api-reference"></a>ADO-API-Referenz
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieser Abschnitt der ADO-Dokumentation enthält Themen für die einzelnen ADO-Objekte, ADO-Auflistungen, ADO-Eigenschaften, dynamischen ADO-Eigenschaften, ADO-Methoden, ADO-Ereignisse und ADO-Aufzählungen. Außerdem ist eine Liste der ADO-Syntaxindizes enthalten, die mit Microsoft Visual C++ und Windows Foundation Classes (WFC) verwenden werden.
 

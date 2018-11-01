@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: StayInSync-Eigenschaft Beispiel) (VB) TOCTitle: StayInSync-Eigenschaft Beispiel) (VB) === Titel: StayInSync-Eigenschaft (Beispiel) (VB) TOCTitle: StayInSync-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 1b35f19a-0104-efd5-5222-55f92e08473b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248952(v=office.15) Ms:contentKeyID: 48543535 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: StayInSync-Eigenschaft (Beispiel) (VB)
+TOCTitle: StayInSync property example (VB)
+ms:assetid: 1b35f19a-0104-efd5-5222-55f92e08473b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248952(v=office.15)
+ms:contentKeyID: 48543535
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 63066000e5e5d8ff9ff1f52ea71cb76beaa2dff8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885430"
 ---
-
-<<<<<<< Kopf
 # <a name="stayinsync-property-example-vb"></a>StayInSync-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="stayinsync-property-example-vb"></a>StayInSync-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht, wie die [StayInSync](stayinsync-property-ado.md)-Eigenschaft den Zugriff auf Zeilen in einem hierarchischen [Recordset](recordset-object-ado.md) vereinfacht.
 

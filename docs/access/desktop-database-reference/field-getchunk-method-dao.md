@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 691b4d0b18b31c4c4a40f73e232a1829101913f1
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: c2a308fc5cf33c4d94e4ee2911596ea80c4ec494
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863276"
+ms.locfileid: "25886529"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den gesamten Inhalt oder einen Teil des Inhalts eines ****Field**** -Objekts vom Typ [Memo](field-object-dao.md) oder **Long Binary** in der **[Fields](fields-collection-dao.md)** -Auflistung eines **[Recordset](recordset-object-dao.md)** -Objekts zurück.
 
@@ -64,11 +64,7 @@ Gibt den gesamten Inhalt oder einen Teil des Inhalts eines ****Field**** -Objekt
 </table>
 
 
-<<<<<<< HEAD
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Variant
 

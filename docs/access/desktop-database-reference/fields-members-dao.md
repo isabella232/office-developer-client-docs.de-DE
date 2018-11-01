@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822428(v=office.15)
 ms:contentKeyID: 48547307
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4bbedd70955b5dfc40645158a8f9df88f24b8dbd
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b03af279c108e78dff5556cf1c78d45496329119
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889882"
 ---
 # <a name="fields-members-dao"></a>Fields Members (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Eine Fields-Auflistung enthält alle Field-Objekte eines Index-, QueryDef-, Recordset-, Relation- oder TableDef-Objekts.
 

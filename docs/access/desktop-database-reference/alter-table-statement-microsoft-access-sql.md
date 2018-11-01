@@ -12,16 +12,16 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 83ba764fa23c972c93156d418bffcde6f3239145
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: f7dfaa7a8c3d6b3e41b2443bcca621d083c3a167
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863696"
+ms.locfileid: "25889630"
 ---
 # <a name="alter-table-statement-microsoft-access-sql"></a>ALTER TABLE-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Ändert den Entwurf einer Tabelle, nachdem diese mit der [CREATE TABLE](create-table-statement-microsoft-access-sql.md)-Anweisung erstellt wurde.
 
@@ -97,12 +97,13 @@ Mithilfe der ALTER TABLE-Anweisung können Sie eine vorhandene Tabelle auf versc
   ```sql
     ALTER TABLE Employees ALTER COLUMN ZipCode TEXT(10)
   ```
-  
+
 - Verwenden Sie ADD CONSTRAINT, um einen aus mehreren Feldern bestehenden Index hinzuzufügen. Weitere Informationen zu mehreren Feldern bestehenden Indexes finden Sie unter [CONSTRAINT-Klausel](constraint-clause-microsoft-access-sql.md).
 
 - Verwenden Sie DROP COLUMN, um ein Feld zu löschen. Sie geben lediglich den Namen des Felds an.
 
 - Verwenden Sie DROP CONSTRAINT, um einen aus mehreren Feldern bestehenden Index zu löschen. Sie geben lediglich den Namen des Indexes, gefolgt vom reservierten Wort CONSTRAINT, an.
+
 
 > [!NOTE] 
 > - Sie können immer nur ein Feld bzw. einen Index gleichzeitig hinzufügen oder löschen.
