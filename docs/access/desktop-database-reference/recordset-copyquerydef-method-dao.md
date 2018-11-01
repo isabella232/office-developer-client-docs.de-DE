@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837296(v=office.15)
 ms:contentKeyID: 48548950
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8c9342a58e70587e60236d8cb5410d9eb2709f0
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 73bc9bb5063068dc3f29345b3828db4f7729110f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606171"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885325"
 ---
 # <a name="recordsetcopyquerydef-method-dao"></a>Recordset.CopyQueryDef Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt ein **[QueryDef](querydef-object-dao.md)** -Objekt, das eine Kopie des **QueryDef-Objekt** ist verwendeten zum Erstellen des **[Recordset](recordset-object-dao.md)** -Objekts, dargestellt durch das Recordset-Objekt-Platzhalter (nur Microsoft Access-Arbeitsbereiche). .
 
@@ -26,11 +26,7 @@ Gibt ein **[QueryDef](querydef-object-dao.md)** -Objekt, das eine Kopie des **Qu
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 QueryDef-Objekt
 

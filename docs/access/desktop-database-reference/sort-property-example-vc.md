@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Sort-Eigenschaft (VC++-Beispiel) TOCTitle: Sort-Eigenschaft (VC++-Beispiel) === Titel: Sort-Eigenschaft (VC++-Beispiel) TOCTitle: Sort-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15) Ms:contentKeyID: 48543259 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Sort-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Sort property example (VC++)
+ms:assetid: 0f32b7ac-1902-1753-0c03-b38ba8c10c9c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248862(v=office.15)
+ms:contentKeyID: 48543259
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 37b5d08ab9c4e42e0f1c4097c5d905c4e45ff547
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881216"
 ---
-
-<<<<<<< Kopf
 # <a name="sort-property-example-vc"></a>Sort-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="sort-property-example-vc"></a>Sort-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der **Pubs**-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.
 

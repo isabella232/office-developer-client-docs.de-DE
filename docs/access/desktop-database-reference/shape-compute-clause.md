@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250245(v=office.15)
 ms:contentKeyID: 48548699
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 634a0ea648646d95995054ce7458cea492c40e47
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8e35cfc7bc5df144fa1938f794cb705bf2f1448c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889931"
 ---
 # <a name="shape-compute-clause"></a>Compute-Klausel für Formen
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Durch eine COMPUTE-Klausel für Formen wird ein übergeordnetes **Recordset** -Objekt generiert, dessen Spalten aus Folgendem bestehen: aus einem Verweis auf das untergeordnete **Recordset** -Objekt; aus optionalen Spalten, deren Inhalt ein Kapitel, neue oder berechnete Spalten oder das Ergebnis der Ausführung von Aggregatfunktionen für das untergeordnete **Recordset** -Objekt oder ein vorher geformtes **Recordset** -Objekt sein kann; und aus allen Spalten des untergeordneten **Recordset** -Objekts, die in der optionalen BY-Klausel aufgelistet sind.
 

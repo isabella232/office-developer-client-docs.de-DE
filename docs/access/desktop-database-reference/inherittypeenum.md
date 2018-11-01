@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249787(v=office.15)
 ms:contentKeyID: 48546944
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: bf7d7ceac1e4822344ce4f7ad8a05e09c0429dff
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: df631319abc1eba06d7ac804b6d8dbdaf5fc9b18
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860567"
+ms.locfileid: "25888050"
 ---
 # <a name="inherittypeenum"></a>InheritTypeEnum
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt an, wie Objekte Berechtigungen erben, die mit [SetPermissions](setpermissions-method-adox.md) festgelegt sind.
 

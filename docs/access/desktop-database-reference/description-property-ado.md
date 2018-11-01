@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Description-Eigenschaft (ADO) TOCTitle: Description-Eigenschaft (ADO) === Titel: Description-Eigenschaft (ADO) TOCTitle: Description-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15) Ms:contentKeyID: 48544064 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Description-Eigenschaft (ADO)
+TOCTitle: Description property (ADO)
+ms:assetid: 31df5e36-641c-d213-31fc-6244e2983327
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249092(v=office.15)
+ms:contentKeyID: 48544064
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fc2a7706afbf69d9949e8b04122b144c6826ec40
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882938"
 ---
-
-<<<<<<< Kopf
 # <a name="description-property-ado"></a>Description-Eigenschaft (ADO)
-=======
-# <a name="description-property-ado"></a>Description-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Beschreibt ein [Error](error-object-ado.md)-Objekt.
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Gibt einen Wert vom Datentyp **String** zurück, der eine Beschreibung des Fehlers enthält.
 

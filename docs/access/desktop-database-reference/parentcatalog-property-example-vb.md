@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: ParentCatalog-Eigenschaft Beispiel) (VB) TOCTitle: ParentCatalog-Eigenschaft Beispiel) (VB) === Titel: ParentCatalog-Eigenschaft (Beispiel) (VB) TOCTitle: ParentCatalog-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15) Ms:contentKeyID: 48544295 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ParentCatalog-Eigenschaft (VB-Beispiel)
+TOCTitle: ParentCatalog property example (VB)
+ms:assetid: 3bd01153-40b5-1a45-67e2-eb8154c3fe33
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249152(v=office.15)
+ms:contentKeyID: 48544295
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6e76d40a02aa70bcf977a34f1db378e8d83e5d1e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867762"
 ---
-
-<<<<<<< Kopf
 # <a name="parentcatalog-property-example-vb"></a>ParentCatalog-Eigenschaft (VB-Beispiel)
-=======
-# <a name="parentcatalog-property-example-vb"></a>ParentCatalog-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Codebeispiel wird die Verwendung der ParentCatalog-Eigenschaft veranschaulicht, um vor dem Anfügen einer Tabelle an einen Katalog auf eine anbieterspezifische Eigenschaft zuzugreifen. Die Eigenschaft ist die AutoIncrement-Eigenschaft, die ein AutoIncrement-Feld in einer Microsoft Jet-Datenbank erstellt.
 

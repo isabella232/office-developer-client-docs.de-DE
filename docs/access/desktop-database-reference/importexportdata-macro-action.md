@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c03811716e776663601fb9c2f9590e644417e3c1
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 62a496867852afb89d5b556f6be793f3f8c3739e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860850"
+ms.locfileid: "25887782"
 ---
 # <a name="importexportdata-macro-action"></a>ImportierenExportierenDaten-Makroaktion
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Verwenden Sie die **ImportierenExportierenDaten** -Aktion zum Importieren oder Exportieren von Daten zwischen der aktuellen Access-Datenbank (MDB oder ACCDB) oder dem aktuellen Access-Projekt (ADP) und anderen Datenbanken. Microsoft Access-Datenbanken lassen auch das Verknüpfen einer Tabelle mit der aktuellen Access-Datenbank aus anderen Datenbanken zu. Bei einer verknüpften Tabelle können Sie auf die Daten der Tabelle zugreifen, während die Tabelle selbst in der anderen Datenbank verbleibt.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: optimieren-Eigenschaft (VC++-Beispiel) TOCTitle: optimieren-Eigenschaft (VC++-Beispiel) === Titel: optimieren-Eigenschaft (VC++-Beispiel) TOCTitle: optimieren-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15) Ms:contentKeyID: 48548825 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Optimize-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Optimize property example (VC++)
+ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15)
+ms:contentKeyID: 48548825
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7e4e595aea68b35ec6fec1515c5d80e5b721b891
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885066"
 ---
-
-<<<<<<< Kopf
 # <a name="optimize-property-example-vc"></a>Optimize-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="optimize-property-example-vc"></a>Optimieren der Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Field](field-object-ado.md) -Objekt dynamische Optimize-Eigenschaft. Das ***Zip*** -Feld der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank wird nicht indiziert. [Optimize](optimize-property-dynamic-ado.md) -Eigenschaft auf **True** festlegen, im Feld ***Zip*** autorisiert ADO einen Index zu erstellen, der die [Find](find-method-ado.md) -Methode die Leistung verbessert.
 

@@ -12,16 +12,16 @@ dev_langs:
 - xml
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f54a1e7619022fc08b96066e85ccf49a298bae88
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 09188378ff75944f6dc8acccc64b621ea2bca1f6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475841"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887859"
 ---
 # <a name="before-change-macro-event"></a>Makroereignis "Vor Änderung"
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Das Ereignis **Vor Änderung** tritt ein, wenn ein Datensatz geändert wird, jedoch bevor der Commit für die Änderung erfolgt ist.
 
@@ -98,7 +98,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="odd">
 <td><p>Programmablauf</p></td>
-<td><p><a href="if-then-else-macro-block.md">Wenn...Dann...Sonst-Makroblock</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Makroblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -106,7 +106,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="clearmacroerror-macro-action.md">LöschenMakroFehler-Makroaktion</a></p></td>
+<td><p><a href="clearmacroerror-macro-action.md">Löschenmakrofehler-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -114,11 +114,11 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="raiseerror-macro-action.md">AuslösenFehler-Makroaktion</a></p></td>
+<td><p><a href="raiseerror-macro-action.md">Auslösenfehler-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="setfield-macro-action.md">FestlegenFeld-Makroaktion</a></p></td>
+<td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -126,7 +126,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="stopmacro-macro-action.md">StopMacro Macro Action</a></p></td>
+<td><p><a href="stopmacro-macro-action.md">StoppMakro-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

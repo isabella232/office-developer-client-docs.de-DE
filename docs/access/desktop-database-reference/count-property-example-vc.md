@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Count-Eigenschaft (VC++-Beispiel) TOCTitle: Count-Eigenschaft (VC++-Beispiel) === Titel: Count-Eigenschaft (VC++-Beispiel) TOCTitle: Count-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 5e3d817b-05bf-c96e-67ba-c41f06c367af Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249340(v=office.15) Ms:contentKeyID: 48545134 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Count-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Count property example (VC++)
+ms:assetid: 5e3d817b-05bf-c96e-67ba-c41f06c367af
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249340(v=office.15)
+ms:contentKeyID: 48545134
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7a2761c34e71664d97118766ddfd8121542b67c5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867223"
 ---
-
-<<<<<<< Kopf
-# <a name="count-property-example-vc"></a>Count Property Example (VC++)
-=======
-# <a name="count-property-example-vc"></a>Count-Eigenschaft (VC++-Beispiel)
->>>>>>> master
+# <a name="count-property-example-vc"></a>Count-Eigenschaft (Beispiel) (VC++)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Count](count-property-ado.md) -Eigenschaft mit zwei Sammlungen in der ***Employee*** -Datenbank. Die Eigenschaft ruft die Anzahl der Objekte in der Auflistung ab und legt den oberen Grenzwert für Schleifen, die diese Auflistungen aufgezählt werden. Eine andere Möglichkeit, diese Auflistungen aufgezählt werden ohne Verwendung der **Count** -Eigenschaft wäre Anweisungen verwenden.
 

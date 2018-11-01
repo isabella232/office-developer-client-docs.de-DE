@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: SQLState-Eigenschaft (ADO) TOCTitle: SQLState-Eigenschaft (ADO) === Titel: SQLState-Eigenschaft (ADO) TOCTitle: SQLState-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: cf3b078a-849e-1ad2-cba4-a26160080868 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250029(v=office.15) Ms:contentKeyID: 48547806 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: SQLState-Eigenschaft (ADO)
+TOCTitle: SQLState property (ADO)
+ms:assetid: cf3b078a-849e-1ad2-cba4-a26160080868
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250029(v=office.15)
+ms:contentKeyID: 48547806
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f6fb45342a56a003856192a353270778b44654de
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872179"
 ---
-
-<<<<<<< Kopf
 # <a name="sqlstate-property-ado"></a>SQLState-Eigenschaft (ADO)
-=======
-# <a name="sqlstate-property-ado"></a>SQLState-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den SQL-Status für ein bestimmtes [Error](error-object-ado.md)-Objekt an.
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Gibt einen aus fünf Zeichen bestehenden **String** -Wert zurück, der dem ANSI SQL-Standard entspricht und einen Fehlercode angibt.
 

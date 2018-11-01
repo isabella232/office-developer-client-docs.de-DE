@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm195788
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4371ce5482b775ad9c022eeda8202c4b2e0f800d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 431baa0e98d0ae3a636cb93fd799c3bdf4450816
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882609"
 ---
 # <a name="repaintobject-macro-action"></a>AktualisierenObjekt-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie können die **AktualisierenObjekt** -Aktion verwenden, um alle ausstehenden Bildschirmaktualisierungen für ein angegebenes Datenbankobjekt oder für das aktive Datenbankobjekt durchzuführen, falls keines angegeben ist. Zu solchen Aktualisierungen gehören alle ausstehenden Neuberechnungen für die Steuerelemente des Objekts.
 

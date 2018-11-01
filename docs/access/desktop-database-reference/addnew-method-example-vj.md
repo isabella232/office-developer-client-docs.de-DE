@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249023(v=office.15)
 ms:contentKeyID: 48543786
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c2d373e22445a064dc467c30e6ba9eb0c45a547d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: da4d1e32c4193fc75fcceb032dc11f4ab7de60de
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862583"
+ms.locfileid: "25888629"
 ---
 # <a name="addnew-method-example-vj"></a>AddNew-Methode (Beispiel) (VJ++)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel verwendet die [AddNew](addnew-method-ado.md) -Methode, um einen neuen Datensatz mit dem angegebenen Namen zu erstellen.
 

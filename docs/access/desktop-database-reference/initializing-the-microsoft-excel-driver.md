@@ -10,14 +10,15 @@ f1_keywords:
 - acmain11.chm1032159
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 85961b761255583738026113a025d6ca84b61f83
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: f039378c619cb5c9ebe6a70ccae718f5abfdd306
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861988"
+ms.locfileid: "25873901"
 ---
 # <a name="initializing-the-microsoft-excel-driver"></a>Initialisieren des Microsoft Excel-Treibers
+
 
 **Betrifft**: Access 2013 | Office 2013
 
@@ -142,9 +143,10 @@ Die **Konnektivitätsmodul für Access\\Module\\Excel 8.0** Ordner enthält die 
 </table>
 
 
+
 > [!NOTE]
 > Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
 
 ## <a name="see-also"></a>Siehe auch
 
-[Verwenden die Einstellung TypeGuessRows für Excel-Treibers](https://support.office.com/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b)
+[Verwenden die Einstellung TypeGuessRows für Excel-Treibers](https://support.office.com/en-us/article/using-the-typeguessrows-setting-for-excel-driver-6aa3e101-2a90-47ac-bf0f-7d4109a5708b?ui=en-US&rs=en-US&ad=US)

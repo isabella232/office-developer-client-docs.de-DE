@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249327(v=office.15)
 ms:contentKeyID: 48545100
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7221c6bd0a6e8576237fdf4cbfcabe70620f6af8
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: bb0bb40d0f12bd9d5a6c8b29af1d4e27d806db87
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603994"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882084"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB-Anbieter für Internet Publishing
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Der Microsoft OLE DB-Anbieter für Internet Publishing ermöglicht ADO den Zugriff auf Ressourcen, die von Microsoft FrontPage oder Microsoft Internet Information Server bedient werden. Zu den Ressourcen zählen Webquelldateien wie HTML-Dateien oder Windows 2000-Webordner.
 
@@ -66,11 +66,7 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 </tr>
 <tr class="even">
 <td><p><strong>Data Source</strong> -oder- <strong>URL</strong></p></td>
-<<<<<<< Kopf
-<td><p>Gibt die URL einer Datei oder eines Verzeichnisses an, die oder das in einem Webordner veröffentlicht ist.</p></td>
-=======
 <td><p>Gibt die URL einer Datei oder das Verzeichnis in einem Webordner veröffentlicht.</p></td>
->>>>>>>Master-Shape
 </tr>
 <tr class="odd">
 <td><p><strong>User ID</strong></p></td>

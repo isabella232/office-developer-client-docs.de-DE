@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052897
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 82dddbb7c9e73d602b9217a46df085e55795c996
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3258e19c7e167927cf341089ed99e5525ebb0f8d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473057"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868133"
 ---
 # <a name="fieldcollatingorder-property-dao"></a>Field.CollatingOrder Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der die Sequenz der Sortierreihenfolge im Text für den Zeichenfolgenvergleich oder die Sortierung angibt (gilt nur für Microsoft Access-Arbeitsbereiche). Schreibgeschützter **Long**-Wert.
 
@@ -169,15 +169,15 @@ Die Verfügbarkeit der **CollatingOrder**-Eigenschaft hängt vom Objekt ab, in d
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p><strong>QueryDef</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p><strong>Recordset</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong>-Objekt</p></td>
+<td><p><strong>Relation</strong> -Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">

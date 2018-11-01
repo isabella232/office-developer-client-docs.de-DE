@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn142215(v=office.15)
 ms:contentKeyID: 52072703
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17a966a1f6dc042a5f7410d30bad769cf289e593
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1b74d905c4598c1d70268f50082b328d0a6c450c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475242"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872396"
 ---
 # <a name="containers-object-reference-dao"></a>Containers Object Reference (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 

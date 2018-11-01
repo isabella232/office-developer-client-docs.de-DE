@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: CacheSize-Eigenschaft Beispiel) (VJ++) TOCTitle: CacheSize-Eigenschaft Beispiel) (VJ++) === Titel: CacheSize-Eigenschaft Beispiel) (VJ++) TOCTitle: CacheSize-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: f51cbf17-2944-91ea-b233-18a897ab8f1f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250248(v=office.15) Ms:contentKeyID: 48548704 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: CacheSize-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: CacheSize property example (VJ++)
+ms:assetid: f51cbf17-2944-91ea-b233-18a897ab8f1f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250248(v=office.15)
+ms:contentKeyID: 48548704
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 714b20aad4c03e5e5735d38dd6e4202a4c732844
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881811"
 ---
-
-<<<<<<< Kopf
 # <a name="cachesize-property-example-vj"></a>CacheSize-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="cachesize-property-example-vj"></a>CacheSize-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mithilfe der [CacheSize](cachesize-property-ado.md)-Eigenschaft der Unterschied im Hinblick auf die Leistung für einen Vorgang aufgezeigt, der mit und ohne einen Cache für 30 Datensätze ausgeführt wird.
 

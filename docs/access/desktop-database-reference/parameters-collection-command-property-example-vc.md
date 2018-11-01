@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel) TOCTitle: Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel) === Titel: Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel) TOCTitle: Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15) Ms:contentKeyID: 48545237 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel)
+TOCTitle: Parameters Collection, Command property example (VC++)
+ms:assetid: 625a83d5-5b73-f945-7e01-bf412fed0827
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249369(v=office.15)
+ms:contentKeyID: 48545237
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 302f329e09123a92fa008f031fde713393ad7a77
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888300"
 ---
-
-<<<<<<< Kopf
 # <a name="parameters-collection-command-property-example-vc"></a>Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel)
-=======
-# <a name="parameters-collection-command-property-example-vc"></a>Parameters-Auflistung, Command-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Codebeispiel wird die Verwendung der [Command](command-property-adox.md)-Eigenschaft mit dem [Command](command-object-ado.md)-Objekt veranschaulicht, um Parameterinformationen für die Prozedur abzurufen.
 

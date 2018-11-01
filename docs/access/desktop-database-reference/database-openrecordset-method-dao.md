@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052939
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0dd33e24914d7e45d8678379df5825a42ef0b6fd
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 0bc6cc78d932b6735b231d86347512d1c0a4b25d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605835"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868287"
 ---
 # <a name="databaseopenrecordset-method-dao"></a>Database.OpenRecordset-Methode (DAO)
 
@@ -93,11 +93,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 </table>
 
 
-<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Recordset
 

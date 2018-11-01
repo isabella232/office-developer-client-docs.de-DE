@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250169(v=office.15)
 ms:contentKeyID: 48548374
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 71701d605a9a9b156de7b2c6a23100e30932aaea
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 7d358cf87160d8ddbf0b7354bd36375b5b8d41e9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25602090"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884527"
 ---
 # <a name="unique-table-unique-schema-unique-catalog-properties--dynamic-ado"></a>Unique Table, Unique Schema, Unique Catalog (dynamische Eigenschaften) (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Hiermit können Sie Änderungen an einer bestimmten Basistabelle in einem [Recordset](recordset-object-ado.md)-Objekt, das mit einer JOIN-Operation für mehrere Basistabellen erstellt wurde, lückenlos überwachen.
 
@@ -26,11 +26,7 @@ Hiermit können Sie Änderungen an einer bestimmten Basistabelle in einem [Recor
 
   - **Unique Catalog** gibt den *Katalog* oder aber den Namen der Datenbank an, die die Tabelle enthält.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Mit diesen Eigenschaften wird ein Wert vom Datentyp **String** festgelegt oder zurückgegeben, der den Namen einer Tabelle, eines Schemas oder eines Katalogs darstellt.
 

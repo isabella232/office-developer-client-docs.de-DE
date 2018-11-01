@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249788(v=office.15)
 ms:contentKeyID: 48546947
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 77859e4800a9a14935e56a906a2a99393b7c4169
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: d6b7c98df9e241d7136901223e8d427b84687f18
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860440"
+ms.locfileid: "25885773"
 ---
 # <a name="delete-method-example-vbscript"></a>Delete-Methode (Beispiel) (VBScript)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Delete](delete-method-ado-recordset.md)-Methode verwendet, um einen angegebenen Datensatz aus einem [Recordset](recordset-object-ado.md)-Objekt zu entfernen.
 

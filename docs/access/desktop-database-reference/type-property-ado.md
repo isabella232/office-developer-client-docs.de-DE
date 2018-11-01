@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Type-Eigenschaft (ADO) TOCTitle: Type-Eigenschaft (ADO) === Titel: Type-Eigenschaft (ADO) TOCTitle: Type-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 14d99172-2145-05ae-620b-459ba097f05c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248914(v=office.15) Ms:contentKeyID: 48543397 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Type-Eigenschaft (ADO)
+TOCTitle: Type property (ADO)
+ms:assetid: 14d99172-2145-05ae-620b-459ba097f05c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248914(v=office.15)
+ms:contentKeyID: 48543397
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 646284877722baf9aec6bb591b071667fdf9cc1a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867727"
 ---
-
-<<<<<<< Kopf
 # <a name="type-property-ado"></a>Type-Eigenschaft (ADO)
-=======
-# <a name="type-property-ado"></a>Type-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Funktions- oder Datentyp eines [Parameter](parameter-object-ado.md)-, [Field](field-object-ado.md)- oder [Property](property-object-ado.md)-Objekts an.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen [DataTypeEnum](datatypeenum.md)-Wert fest oder gibt den Wert zurück.
 

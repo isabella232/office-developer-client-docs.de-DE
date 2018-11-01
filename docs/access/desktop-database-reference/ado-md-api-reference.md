@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249602(v=office.15)
 ms:contentKeyID: 48546163
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 134ef1131c85c12a34a8328934520d46776b1e82
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: fdcee7bee97d51e9d2f946ba7933022cbc3c1c15
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871514"
 ---
 # <a name="ado-md-api-reference"></a>ADO MD-API-Referenz
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieser Abschnitt der ADO MD-Dokumentation enthält Themen für alle ADO MD-Objekte, -Auflistungen, -Methoden und -Eigenschaften sowie gegebenenfalls Beispielcode. Weitere Informationen finden Sie im Index durch Suchen eines bestimmten Themas oder in folgenden Themen:
 

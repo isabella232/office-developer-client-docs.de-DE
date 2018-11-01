@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: gruppierte Eigenschaft Beispiel) (VB) TOCTitle: gruppierte Eigenschaft Beispiel) (VB) === Titel: Clustered-Eigenschaft (Beispiel) (VB) TOCTitle: Clustered-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 1065622d-9473-209a-95be-c4b0ab5b687a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15) Ms:contentKeyID: 48543293 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Clustered-Eigenschaft (Beispiel) (VB)
+TOCTitle: Clustered property example (VB)
+ms:assetid: 1065622d-9473-209a-95be-c4b0ab5b687a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15)
+ms:contentKeyID: 48543293
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 3f1ebd893418cde5b499be9d34c7d50aadff78f3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872760"
 ---
-
-<<<<<<< Kopf
-# <a name="clustered-property-example-vb"></a>Clustered-Eigenschaft (VB-Beispiel)
-=======
 # <a name="clustered-property-example-vb"></a>Clustered-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Clustered](clustered-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md). Beachten Sie, dass Microsoft Jet-Datenbanken gruppierte Indizes nicht unterstützen, sodass in diesem Beispiel wird für alle Indizes in der *Nordwind* -Datenbank die **Clustered** -Eigenschaft **False** zurückgibt.
 

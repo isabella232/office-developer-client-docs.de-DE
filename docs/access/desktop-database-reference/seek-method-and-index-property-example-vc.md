@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Seek-Methode und Index-Eigenschaft (VC++-Beispiel) TOCTitle: Seek-Methode und Index-Eigenschaft (VC++-Beispiel) === Titel: Seek-Methode und Index-Eigenschaft (VC++-Beispiel) TOCTitle: Seek-Methode und Index-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15) Ms:contentKeyID: 48548820 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Seek-Methode und Index-Eigenschaft-Beispiel) (VC++)
+TOCTitle: Seek Method and Index property example (VC++)
+ms:assetid: f99fb4e5-2ddb-ae0c-6d10-c095b3de1909
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250270(v=office.15)
+ms:contentKeyID: 48548820
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 721f3fdbd69265cf5786aec43059d86f8a86bfa8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889609"
 ---
-
-<<<<<<< Kopf
-# <a name="seek-method-and-index-property-example-vc"></a>Seek-Methode und Index-Eigenschaft (Beispiel) (VC++)
-=======
 # <a name="seek-method-and-index-property-example-vc"></a>Seek-Methode und Index-Eigenschaft-Beispiel) (VC++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel werden die Seek-Methode und die Index-Eigenschaft des Recordset-Objekts gemeinsam mit einer angegebenen Employee ID verwendet, um den Namen des Mitarbeiters in der Employees-Tabelle der Datenbank Nwind.mdb zu suchen.
 

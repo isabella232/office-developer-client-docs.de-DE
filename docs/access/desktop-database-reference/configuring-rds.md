@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249838(v=office.15)
 ms:contentKeyID: 48547106
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 554cb3eee0eb7019cef13758e4d9382bcdb5a5f3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f1afd4c3f627b6860fa2954496f5818a6b458ab4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475452"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888797"
 ---
-# <a name="configuring-rds"></a>Konfigurieren von RDS
+# <a name="configuring-rds"></a>Configuring RDS
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Für eine effiziente Implementierung von RDS (Remote Data Service) sollten Sie mit den verschiedenen zur Verfügung stehenden Konfigurationen vertraut sein. Dieser Abschnitt enthält wichtige Informationen zur Sicherheit und Skalierbarkeit Ihrer Implementierung von RDS. In den folgenden Themen finden Sie Information zum Konfigurieren von Computern für RDS.
 

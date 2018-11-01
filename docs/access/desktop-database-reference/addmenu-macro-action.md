@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm37891
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 984b10638ab7f01aeb4dc9656bc70aa1e44d56a7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d14005bffa1374e7d8256938824876d6a577f317
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474953"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880047"
 ---
 # <a name="addmenu-macro-action"></a>HinzufügenMenü-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Thema dieses Artikels ist die Makroaktion **HinzufügenMenü**.
 

@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053424
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 3b893ca7d380525cfab8a467f2032e254633268f
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: b4d7e8496aefc40047c813c844a989580f8202e9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861526"
+ms.locfileid: "25880957"
 ---
 # <a name="dbenginerollback-method-dao"></a>DBEngine.Rollback Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Beendet die aktuelle Transaktion und setzt die Datenbanken im **Workspace**-Objekt in den Zustand zurück, in dem sie sich befanden, als die aktuelle Transaktion gestartet wurde.
 

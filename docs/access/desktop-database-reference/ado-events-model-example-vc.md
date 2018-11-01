@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1794e3e13bc2c8fe7c3acc9bbd1413daf4938d2c
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 972a367d18613fd8c8935ded60223e78ee0dc4d7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25859993"
+ms.locfileid: "25887432"
 ---
 # <a name="ado-events-model-example-vc"></a>ADO-Ereignisse (Beispiel) (VC++)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Der Visual C++-Abschnitt der [ADO-Ereignisinstanziierung nach Sprache](https://msdn.microsoft.com/library/jj250244\(v=office.15\)) bietet eine allgemeine Beschreibung der Instanziierung des ADO-Ereignismodells. Im folgenden ist ein bestimmtes Beispiel der Instanziierung des Ereignismodells innerhalb der Umgebung erstellt werden, indem die ** \#importieren** Richtlinie.
 

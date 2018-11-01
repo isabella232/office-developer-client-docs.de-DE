@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192282(v=office.15)
 ms:contentKeyID: 48544043
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6c6646c79739a6094507cb6774a2d3af0d0718d7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f20f189498233dd1a9621ba3010795bb5afa2c39
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472616"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872389"
 ---
 # <a name="recordsetdelete-method-dao"></a>Recordset.Delete Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Wird für dieses Objekt nicht unterstützt.
 

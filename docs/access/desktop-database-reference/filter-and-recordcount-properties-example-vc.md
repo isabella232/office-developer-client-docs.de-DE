@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Filter und RecordCount Eigenschaft (Beispiel) (VC++) TOCTitle: Filter- und RecordCount-Eigenschaften-Beispiel) (VC++) === Titel: Filter und RecordCount Eigenschaft (VC++-Beispiel) TOCTitle: Filter und RecordCount Eigenschaft (Beispiel) (VC++)
->>>>>>> Master Ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15) Ms:contentKeyID: 48544161 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Filter- und RecordCount-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Filter and RecordCount properties example (VC++)
+ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15)
+ms:contentKeyID: 48544161
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 4ca6e56110110086f9b608eb87228ebf17462bce
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889819"
 ---
-
-<<<<<<< Kopf
 # <a name="filter-and-recordcount-properties-example-vc"></a>Filter- und RecordCount-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="filter-and-recordcount-properties-example-vc"></a>Filter- und RecordCount Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Filter-Eigenschaft verwendet, um anhand einer bestimmten Bedingung, die auf ein vorhandenes Recordset-Objekt angewendet wird, ein neues Recordset zu öffnen. Mithilfe der RecordCount-Eigenschaft wird die Anzahl von Datensätzen in beiden Recordset-Objekten angezeigt. Die FilterField-Funktion ist erforderlich, damit diese Prozedur ausgeführt werden kann.
 

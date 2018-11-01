@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 719c495e18fb769a2d3f994542ab8d9e93a469f1
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 68e827f6177c0ea90d4dd8d74c9782d552b3fdd2
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860378"
+ms.locfileid: "25884667"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>Methoden "BeginTrans", "CommitTrans" und "RollbackTrans" (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Connection](connection-object-ado.md)-Objekt wie folgt verwaltet:
@@ -37,11 +37,7 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 
 - *Objekt*. RollbackTrans
 
-<<<<<<< HEAD
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 **BeginTrans** kann als Funktion aufgerufen werden, von der eine **Long** -Variable zurückgegeben wird, durch die die Schachtelungsebene der Transaktion angegeben wird.
 

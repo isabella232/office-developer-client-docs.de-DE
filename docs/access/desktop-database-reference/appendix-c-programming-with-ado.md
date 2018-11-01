@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249808(v=office.15)
 ms:contentKeyID: 48547024
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0932ca9d05ab8adac59efb2bb4bfec65796e7340
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: a807abde57212d894cd8bc96b51d28ddb8ac7095
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862541"
+ms.locfileid: "25886956"
 ---
 # <a name="appendix-c-programming-with-ado"></a>Anhang C: Programmierung mit ADO
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 ADO ist eine COM-Automatisierungs-Schnittstellenkomponente, die für viele Programmiersprachen, einschließlich Microsoft Visual Basic, VBScript, JScript, Visual C++ und Visual J++, verwendet wird. Eine Version von ADO wird mit jedem dieser Tools sowie mit anderen Anwendungen, wie z. B. Microsoft Office und Microsoft SQL Server, installiert. Die neueste Version von ADO ist separat mit Microsoft Data Access Components erhältlich. Weitere Informationen finden Sie auf der [Microsoft Data Access-Website](https://msdn.microsoft.com/data/default.aspx).
 

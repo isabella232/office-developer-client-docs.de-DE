@@ -1,15 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: Connection Close-Methode, Tabelle Typ Eigenschaft Beispiel) (VB) TOCTitle: Connection Close-Methode, Tabelle Type-Eigenschaft Beispiel) (VB) === Titel: Connection Close-Methode vom Tabellentyp-Eigenschaft (Beispiel) (VB) TOCTitle: Connection Close-Methode vom Tabellentyp-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15) Ms:contentKeyID: 48547754 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Connection Close-Methode vom Tabellentyp-Eigenschaft (Beispiel) (VB)
+TOCTitle: Connection Close Method, Table Type property example (VB)
+ms:assetid: cd0bb6ad-af7b-fb9c-d45c-5d4b62459c03
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15)
+ms:contentKeyID: 48547754
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 388e601d7267eabd01843640ab795fd0ea914a05
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868314"
 ---
-
-<<<<<<< Kopf
-# <a name="connection-close-method-table-type-property-example-vb"></a>Connection Close-Methode, Type-Eigenschaft (Table) (VB-Beispiel)
-=======
 # <a name="connection-close-method-table-type-property-example-vb"></a>Connection Close-Methode vom Tabellentyp-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Bei dem Versuch, Eigenschaften zu lesen, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.
 
