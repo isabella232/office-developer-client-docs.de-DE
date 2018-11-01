@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Attributes-Eigenschaft (VC++-Beispiel) TOCTitle: Attributes-Eigenschaft (VC++-Beispiel) === Titel: Attributes-Eigenschaft (VC++-Beispiel) TOCTitle: Attributes-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15) Ms:contentKeyID: 48542976 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Attributes-Eigenschaft (VC++-Beispiel)
+TOCTitle: Attributes property example (VC++)
+ms:assetid: 031e063b-8fe6-85d8-05a7-e801ceeffa04
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248799(v=office.15)
+ms:contentKeyID: 48542976
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6c68c163b08c3d7b2be66e072daa2f3895ffef0e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891262"
 ---
-
-<<<<<<< Kopf
 # <a name="attributes-property-example-vc"></a>Attributes-Eigenschaft (VC++-Beispiel)
-=======
-# <a name="attributes-property-example-vc"></a>Attributes-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [Attributes](attributes-property-adox.md)-Eigenschaft eines [Column](column-object-adox.md)-Objekts veranschaulicht. Durch Festlegen der Eigenschaft auf **adColNullable** kann der Benutzer als Wert eines [Recordset](recordset-object-ado.md)-[Felds](field-object-ado.md) eine leere Zeichenfolge festlegen. Hierdurch können Benutzer zwischen einem Datensatz unterscheiden, für den keine Daten bekannt sind und einem Datensatz, für den die Daten nicht angewendet werden können.
 

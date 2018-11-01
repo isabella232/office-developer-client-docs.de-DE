@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1052906
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 01a19fd621d8124616872bebc54c6ac9482ffe08
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1a1799a87ba640ec90253bd262972b068fc01e03
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475584"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891212"
 ---
 # <a name="recordsetindex-property-dao"></a>Recordset.Index-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Legt einen Wert fest, der den Namen des aktuellen **[Index](index-object-dao.md)** -Objekts in einem **[Recordset](recordset-object-dao.md)** -Objekt vom Typ "Tabelle" angibt, oder gibt einen solchen Wert zurück (nur Microsoft Access-Arbeitsbereiche).
 

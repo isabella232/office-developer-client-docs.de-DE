@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249710(v=office.15)
 ms:contentKeyID: 48546592
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 74d5381298f58c00c66ee4fb72504ce44f5dd7b5
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 18d226ff8ff270705d8e30425f83eabc289383b1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475341"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883246"
 ---
 # <a name="provider-errors"></a>Anbieterfehler
 
 
-**Betrifft**: Access 2013 | Office 2013 
+**Betrifft**: Access 2013, Office 2013 
 
 Wenn ein Anbieterfehler auftritt, wird der Laufzeitfehler -2147467259 zurückgegeben. Wenn dieser Fehler angezeigt wird, überprüfen Sie die **Errors** -Auflistung des aktiven **Connection** -Objekts, die mindestens einen Fehler mit einer Beschreibung enthält.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248970(v=office.15)
 ms:contentKeyID: 48543602
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b37acc1819d12acc1e659be85361c3c09b84ebdb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a6cfe882c8ad1c07aabfae323a1467be753b462b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473681"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25890960"
 ---
 # <a name="using-addnew-in-immediate-and-batch-modes"></a>Verwenden der AddNew-Methode im sofortigen Aktualisierungsmodus und im Batchmodus
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Das Verhalten der **AddNew** -Methode hängt vom Aktualisierungsmodus des **Recordset** -Objekts und gibt an, ob Sie die Argumente *FieldList* und *Values* übergeben.
 

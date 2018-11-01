@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc7777535fdba5bcb1f6ace167e23e1294f13960
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b183b7815769c1eed8c3ee0826167b93453ca19d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473592"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891310"
 ---
 # <a name="gotopage-macro-action"></a>GeheZuSeite-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der **GeheZuSeite** -Aktion können Sie den Fokus im aktiven Formular auf das erste Steuerelement auf einer angegebenen Seite verschieben. Sie können diese Aktion verwenden, wenn Sie ein Formular mit Seitenumbrüchen erstellt haben, das Gruppen verwandter Informationen enthält. Sie könnten Sie z. B. ein Mitarbeiterformular verwenden, das persönliche Informationen auf der einen Seite, firmenbezogene Informationen auf einer weiteren Seite und Umsatzinformationen auf einer dritten Seite enthält. Mit der **GeheZuSeite** -Aktion können Sie den Fokus auf die gewünschte Seite verschieben. Sie können auch Registersteuerelemente verwenden, um mehrere Seiten mit Informationen auf einem einzigen Formular darzustellen.
 

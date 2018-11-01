@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: MaxRecords-Eigenschaft (VC++-Beispiel) TOCTitle: MaxRecords-Eigenschaft (VC++-Beispiel) === Titel: MaxRecords-Eigenschaft (VC++-Beispiel) TOCTitle: MaxRecords-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15) Ms:contentKeyID: 48542910 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: MaxRecords-Eigenschaft (Beispiel) (VC++)
+TOCTitle: MaxRecords property example (VC++)
+ms:assetid: 007936cf-a91c-c447-69f2-8286f3f868e6
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248778(v=office.15)
+ms:contentKeyID: 48542910
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: dfd310d635f347bf3ad49b2cc8332c2bde84322e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891219"
 ---
-
-<<<<<<< Kopf
 # <a name="maxrecords-property-example-vc"></a>MaxRecords-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="maxrecords-property-example-vc"></a>MaxRecords-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mit der [MaxRecord](maxrecords-property-ado.md)-Eigenschaft ein [Recordset](recordset-object-ado.md) geöffnet, das die 10 teuersten Titel in der ***Titles***-Tabelle enthält.
 

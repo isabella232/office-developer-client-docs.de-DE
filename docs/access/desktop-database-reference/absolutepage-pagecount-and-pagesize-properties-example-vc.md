@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: AbsolutePage-, PageCount- und PageSize-Eigenschaften (VC++-Beispiel) TOCTitle: AbsolutePage-, PageCount- und PageSize-Eigenschaften (VC++-Beispiel) Ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15) MS:contentKeyID: 48546133 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VC++)
+TOCTitle: AbsolutePage, PageCount, and PageSize properties example (VC++)
+ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15)
+ms:contentKeyID: 48546133
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 70415069254edf731734dcd742d8d7bfd36f74d0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891268"
 ---
-
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vc"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VC++)
-=== Titel: AbsolutePage-, PageCount- und PageSize-Eigenschaften (VC++-Beispiel) TOCTitle: AbsolutePage-, PageCount- und PageSize-Eigenschaften (VC++-Beispiel) Ms:assetid: 884d9405-646c-6ab1-14c1-3c0fe64e2ebe Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249595(v=office.15) Ms:contentKeyID: 48546133 ms.date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vc"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaften (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt.
 

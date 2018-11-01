@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff844969(v=office.15)
 ms:contentKeyID: 48543075
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b3ee8e4393b1c99bae60b034833f7fa57198296
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5637abc3fc956bd6e562b4200257da8f787a5dab
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475717"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25890967"
 ---
 # <a name="field2validateonset-property-dao"></a>Field2.ValidateOnSet Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, ob der Wert eines **Field2**-Objekts sofort beim Festlegen der **Value**-Eigenschaft überprüft wird (gilt nur für Microsoft Access-Arbeitsbereiche).

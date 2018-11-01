@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Sortieren Eigenschaft Beispiel) (VB) TOCTitle: Sortieren Eigenschaft Beispiel) (VB) === Titel: Sort-Eigenschaft (Beispiel) (VB) TOCTitle: Sort-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15) Ms:contentKeyID: 48545539 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Sort-Eigenschaft (Beispiel) (VB)
+TOCTitle: Sort property example (VB)
+ms:assetid: 6f981e5e-7ee8-e1e7-bea9-7c2081400391
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249440(v=office.15)
+ms:contentKeyID: 48545539
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6bd5f0f894928032e975e8eebe33b18427c5dae1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891254"
 ---
-
-<<<<<<< Kopf
 # <a name="sort-property-example-vb"></a>Sort-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="sort-property-example-vb"></a>Sort-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.
 

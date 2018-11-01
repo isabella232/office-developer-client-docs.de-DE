@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821452(v=office.15)
 ms:contentKeyID: 48546941
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: eb3d73cc236821d56e2151d80cf0e0aba241b8c9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ecaddcb30428b167811ab1eafcec149deb4da3ba
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473748"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891303"
 ---
 # <a name="recordsetrecordcount-property-dao"></a>Recordset.RecordCount-Eigenschaft (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt die Anzahl der Datensätze zurück, auf die in einem **[Recordset](recordset-object-dao.md)** -Objekt zugegriffen wird, oder die Gesamtzahl der Datensätze in einem **Recordset** -Objekt vom "table"-Typ oder in einem **[TableDef](tabledef-object-dao.md)** -Objekt zurück. Schreibgeschütztes **Long** -Objekt.
 

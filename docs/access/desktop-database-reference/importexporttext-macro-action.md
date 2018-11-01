@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm168097
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c4ea6feeec4c8d4189b80354e41a01de61da4e30
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5ded11512def101bc27dfb843d2315f9f4105fb5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475046"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891226"
 ---
 # <a name="importexporttext-macro-action"></a>ImportExportText-Makroaktion
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie können die **Importierenexportierentext** -Aktion verwenden, um Text zwischen der aktuellen Microsoft Access-Datenbank (MDB oder ACCDB) oder Access-Projekt (ADP) und einer Textdatei importieren oder exportieren. Sie können auch die Daten in eine Textdatei mit der aktuellen Access-Datenbank verknüpfen. Mit einer verknüpften Textdatei können Sie die Textdaten mit Access anzeigen, wobei weiterhin uneingeschränkten Zugriff auf die Daten aus dem Programm Textverarbeitung. Sie können auch importieren aus zu exportieren und link zu einer Tabelle oder Liste in einer HTML-Datei (\*.html).
 
