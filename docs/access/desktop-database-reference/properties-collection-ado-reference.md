@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249684(v=office.15)
 ms:contentKeyID: 48546497
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 93ea34ffcda68e71512c91dab2d3744fd85e1e7d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 918e532cb97391b92828a6955479cbc8f77b6546
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885171"
 ---
-# <a name="properties-collection-ado-reference"></a><span data-ttu-id="53e26-102">Properties Collection (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="53e26-102">Properties Collection (ADO) Reference</span></span>
+# <a name="properties-collection-ado-reference"></a><span data-ttu-id="34d53-102">Properties Collection (ADO) Reference</span><span class="sxs-lookup"><span data-stu-id="34d53-102">Properties Collection (ADO) Reference</span></span>
 
 
-<span data-ttu-id="53e26-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="53e26-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="34d53-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="34d53-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="53e26-104">Properties-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="53e26-104">Properties Collection (ADO)</span></span>](properties-collection-ado.md)
+  - [<span data-ttu-id="34d53-104">Properties-Auflistung (ADO)</span><span class="sxs-lookup"><span data-stu-id="34d53-104">Properties Collection (ADO)</span></span>](properties-collection-ado.md)
 
-  - [<span data-ttu-id="53e26-105">Eigenschaften, Methoden und Ereignisse der Properties-Auflistung</span><span class="sxs-lookup"><span data-stu-id="53e26-105">Properties Collection Properties, Methods, and Events</span></span>](properties-collection-properties-methods-and-events.md)
+  - [<span data-ttu-id="34d53-105">Eigenschaften, Methoden und Ereignisse der Properties-Auflistung</span><span class="sxs-lookup"><span data-stu-id="34d53-105">Properties Collection Properties, Methods, and Events</span></span>](properties-collection-properties-methods-and-events.md)
 

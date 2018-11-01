@@ -10,23 +10,23 @@ f1_keywords:
 - dao360.chm1052902
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: feb2bffa7dc29dac35aef92aef5b32c289024e06
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c3abf15e4e89e4f9493cdd4183797223f37df3b6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886032"
 ---
-# <a name="tabledeffields-property-dao"></a><span data-ttu-id="8b4a6-102">TableDef.Fields Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="8b4a6-102">TableDef.Fields Property (DAO)</span></span>
+# <a name="tabledeffields-property-dao"></a><span data-ttu-id="ce515-102">TableDef.Fields Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="ce515-102">TableDef.Fields Property (DAO)</span></span>
 
 
-<span data-ttu-id="8b4a6-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8b4a6-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="ce515-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ce515-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8b4a6-p101">Gibt eine **Fields**-Auflistung zurück, die alle gespeicherten **Field**-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="8b4a6-p101">Returns a **Fields** collection that represents all stored **Field** objects for the specified object. Read-only.</span></span>
+<span data-ttu-id="ce515-p101">Gibt eine **Fields**-Auflistung zurück, die alle gespeicherten **Field**-Objekte für das angegebene Objekt enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="ce515-p101">Returns a **Fields** collection that represents all stored **Field** objects for the specified object. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8b4a6-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="8b4a6-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="ce515-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="ce515-106">Syntax</span></span>
 
-<span data-ttu-id="8b4a6-107">*Ausdruck* . Felder</span><span class="sxs-lookup"><span data-stu-id="8b4a6-107">*expression* .Fields</span></span>
+<span data-ttu-id="ce515-107">*Ausdruck* . Felder</span><span class="sxs-lookup"><span data-stu-id="ce515-107">*expression* .Fields</span></span>
 
-<span data-ttu-id="8b4a6-108">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8b4a6-108">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="ce515-108">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="ce515-108">*expression* A variable that represents a **TableDef** object.</span></span>
 
