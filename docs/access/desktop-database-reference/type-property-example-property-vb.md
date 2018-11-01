@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Type-Eigenschaft (Beispiel) (VB) TOCTitle: Type-Eigenschaft (Beispiel) (VB) === Titel: Type-Eigenschaft (Beispiel) (VB) TOCTitle: Type-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: b3fecd24-e15a-3216-e2c8-0f4ce5655b9c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249858(v=office.15) Ms:contentKeyID: 48547209 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Type-Eigenschaft (Beispiel) (VB)
+TOCTitle: Type property example (Property) (VB)
+ms:assetid: b3fecd24-e15a-3216-e2c8-0f4ce5655b9c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249858(v=office.15)
+ms:contentKeyID: 48547209
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 870b68bd43ed12e4d74a9d9f1c1c0887fdb22f85
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885696"
 ---
-
-<<<<<<< Kopf
 # <a name="type-property-example-property-vb"></a>Type-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="type-property-example-property-vb"></a>Type-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Type](type-property-ado.md)-Eigenschaft. Dabei handelt es sich um ein Modell eines Hilfsprogramms, mit dem die Namen und Typen einer Auflistung aufgeführt werden, wie z. B. [Properties](properties-collection-ado.md), [Fields](fields-collection-ado.md) usw.
 

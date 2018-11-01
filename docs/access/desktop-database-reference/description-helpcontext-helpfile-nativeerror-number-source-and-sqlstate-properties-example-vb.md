@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Description, HelpContext, HelpFile Eigenschaften Beispiel) (VB) TOCTitle: Description, HelpContext, HelpFile, NativeError, Anzahl, Source- und SQLState Eigenschaften Beispiel) (VB) === Titel: Beschreibung, HelpContext-und HelpFile-Eigenschaft (Beispiel) (VB) TOCTitle: Eigenschaften Description, HelpContext, HelpFile, NativeError, Anzahl, Source- und SQLState (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 3c129aec-cd69-5822-4dad-ebef226538e1 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249156(v=office.15) Ms:contentKeyID: 48544304 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Description, HelpContext, HelpFile Eigenschaften (Beispiel) (VB)
+TOCTitle: Description, HelpContext, HelpFile, NativeError, Number, Source, and SQLState properties example (VB)
+ms:assetid: 3c129aec-cd69-5822-4dad-ebef226538e1
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249156(v=office.15)
+ms:contentKeyID: 48544304
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1e1aeb7166a52e46951025adbbb2532e0dfa5a9b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882364"
 ---
-
-<<<<<<< Kopf
 # <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb"></a>Description-, HelpContext-, HelpFile-, NativeError-, Number-, Source- und SQLState-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb"></a>Eigenschaften Description, HelpContext, HelpFile, NativeError, Anzahl, Source- und SQLState (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel löst einen Fehler aus, fängt ihn auf und zeigt die Eigenschaften [Description](description-property-ado.md), [HelpContext](helpcontext-helpfile-properties-ado.md), [HelpFile](helpcontext-helpfile-properties-ado.md), [NativeError](nativeerror-property-ado.md), [Number](number-property-ado.md), [Source](source-property-ado-error.md) und [SQLState](sqlstate-property-ado.md) des resultierenden [Error](error-object-ado.md)-Objekts an.
 

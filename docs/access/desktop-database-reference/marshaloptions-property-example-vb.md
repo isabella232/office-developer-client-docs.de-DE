@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: MarshalOptions-Eigenschaft Beispiel) (VB) TOCTitle: MarshalOptions-Eigenschaft Beispiel) (VB) === Titel: MarshalOptions-Eigenschaft (Beispiel) (VB) TOCTitle: MarshalOptions-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15) Ms:contentKeyID: 48548691 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: MarshalOptions-Eigenschaft (Beispiel) (VB)
+TOCTitle: MarshalOptions property example (VB)
+ms:assetid: f48ad901-7ce8-af6c-e312-51777466cd35
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250241(v=office.15)
+ms:contentKeyID: 48548691
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: efb33fbcccaac26f6a169761235a88a49ec0cfa8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869869"
 ---
-
-<<<<<<< Kopf
 # <a name="marshaloptions-property-example-vb"></a>MarshalOptions-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="marshaloptions-property-example-vb"></a>MarshalOptions-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [MarshalOptions](marshaloptions-property-ado.md)-Eigenschaft verwendet, um die Zeilen anzugeben, die an den Server zurückgesendet werden: alle Zeilen oder nur geänderte Zeilen.
 

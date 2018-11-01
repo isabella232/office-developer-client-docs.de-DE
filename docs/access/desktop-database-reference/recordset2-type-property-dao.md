@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052880
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ee9afcd5367135da2d39fe889d17d089ae6f4c25
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7d35f4acb97871f9d7499b67817c6c88ae56f441
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871899"
 ---
 # <a name="recordset2type-property-dao"></a>Recordset2.Type Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Legt einen Wert fest, der den Funktions- oder Datentyp eines Objekts angibt, oder gibt diesen Wert zurück. Schreibgeschützter **Integer**-Wert.
 

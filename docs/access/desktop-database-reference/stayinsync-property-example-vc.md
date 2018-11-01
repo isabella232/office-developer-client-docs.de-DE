@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: StayInSync-Eigenschaft (VC++-Beispiel) TOCTitle: StayInSync-Eigenschaft (VC++-Beispiel) === Titel: StayInSync-Eigenschaft (VC++-Beispiel) TOCTitle: StayInSync-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 42c389a8-e6d5-45f4-0442-1b2a2422dcbe Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249197(v=office.15) Ms:contentKeyID: 48544485 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: StayInSync-Eigenschaft (Beispiel) (VC++)
+TOCTitle: StayInSync property example (VC++)
+ms:assetid: 42c389a8-e6d5-45f4-0442-1b2a2422dcbe
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249197(v=office.15)
+ms:contentKeyID: 48544485
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1c8816e7883cbccb23425ddb057e0c811338b2bc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867419"
 ---
-
-<<<<<<< Kopf
 # <a name="stayinsync-property-example-vc"></a>StayInSync-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="stayinsync-property-example-vc"></a>StayInSync-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht, wie die [StayInSync](stayinsync-property-ado.md)-Eigenschaft den Zugriff auf Zeilen in einem hierarchischen [Recordset](recordset-object-ado.md) vereinfacht.
 

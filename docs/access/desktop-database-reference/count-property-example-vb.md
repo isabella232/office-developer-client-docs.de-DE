@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Count-Eigenschaft Beispiel) (VB) TOCTitle: Count-Eigenschaft Beispiel) (VB) === Titel: Count-Eigenschaft (Beispiel) (VB) TOCTitle: Count-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15) Ms:contentKeyID: 48546695 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Count-Eigenschaft (Beispiel) (VB)
+TOCTitle: Count property example (VB)
+ms:assetid: 9fea66f7-a4ed-fe2e-c199-672b910fef47
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249734(v=office.15)
+ms:contentKeyID: 48546695
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: c47436a5c701abb9bff29fea718fa7119594cd1a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873621"
 ---
-
-<<<<<<< Kopf
-# <a name="count-property-example-vb"></a>Count Property Example (VB)
-=======
 # <a name="count-property-example-vb"></a>Count-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Count](count-property-ado.md) -Eigenschaft mit zwei Sammlungen in der ***Employee*** -Datenbank. Die Eigenschaft ruft die Anzahl der Objekte in der Auflistung ab und legt den oberen Grenzwert für Schleifen, die diese Auflistungen aufgezählt werden. Eine andere Möglichkeit, diese Auflistungen aufgezählt werden ohne Verwendung der **Count** -Eigenschaft wäre Anweisungen verwenden.
 

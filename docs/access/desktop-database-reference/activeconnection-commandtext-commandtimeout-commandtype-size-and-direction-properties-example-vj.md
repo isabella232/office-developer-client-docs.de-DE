@@ -1,16 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: ActiveConnection, CommandText, CommandTimeout Eigenschaft (Beispiel) (VJ++) TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaft (Beispiel) (VJ++) Ms:assetid: 80e69c20-4bad-c036-3b41-cec9d19e37dd Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249550(v=office.15) Ms:contentKeyID: 48545936 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ActiveConnection, CommandText, CommandTimeout Eigenschaft (Beispiel) (VJ++)
+TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction properties example (VJ++)
+ms:assetid: 80e69c20-4bad-c036-3b41-cec9d19e37dd
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249550(v=office.15)
+ms:contentKeyID: 48545936
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 8199c278b6552a40735f17f5f9f3a05e70e3f075
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879200"
 ---
-
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vj"></a>ActiveConnection-, CommandText-, CommandTimeout-, CommandType-, Size- und Direction-Eigenschaft (Beispiel) (VJ++)
 
-=== Titel: ActiveConnection-, CommandText-, CommandTimeout-Eigenschaft (Beispiel) (VJ++) TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaften Beispiel) (VJ++) Ms:assetid: 80e69c20-4bad-c036-3b41-cec9d19e37dd Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249550(v=office.15) Ms:contentKeyID: 48545936 ms.date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vj"></a>ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaften) (Beispiel) (VJ++)
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mithilfe der Eigenschaften [ActiveConnection](activeconnection-property-ado.md), [CommandText](commandtext-property-ado.md), [CommandTimeout](commandtimeout-property-ado.md), [CommandType](commandtype-property-ado.md), [Size](size-property-ado.md) und [Direction](direction-property-ado.md) eine gespeicherte Prozedur ausgeführt.
 

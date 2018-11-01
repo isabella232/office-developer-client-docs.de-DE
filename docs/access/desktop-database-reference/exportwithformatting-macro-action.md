@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm159503
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 89c29d18e21a28448e03fee763b4087bf623d5a3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8a0ca9d2dde2ae5d39fb9159655f37b5140eee3e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868019"
 ---
 # <a name="exportwithformatting-macro-action"></a>ExportWithFormatting-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der **ExportierenMitFormatierung** -Aktion können Sie Daten aus einem bestimmten Microsoft Access-Datenbankobjekt (Datenblatt, Formular, Bericht, Modul, Datenzugriffsseite) in verschiedene Formate ausgeben.
 

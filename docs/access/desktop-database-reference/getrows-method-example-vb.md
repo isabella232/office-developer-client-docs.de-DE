@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249311(v=office.15)
 ms:contentKeyID: 48545041
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 10ea58f34b89e01770889e49265ef7bd399b546e
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2a5594c1de258401b7567ff383558a397578f4e9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863871"
+ms.locfileid: "25889168"
 ---
 # <a name="getrows-method-example-vb"></a>GetRows-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel verwendet die [GetRows](getrows-method-ado.md) -Methode, um eine angegebene Anzahl Zeilen aus einem [Recordset](recordset-object-ado.md) abzurufen und ein Array mit den daraus resultierenden Daten zu füllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Für das Ausführen dieser Prozedur ist die "GetRowsOK"-Funktion erforderlich.
 

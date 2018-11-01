@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1053417
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0bb2e369f886ba60fb425b9f1f2d10fdea0c1463
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: da9619102a955c9a7945d05e89a1e132371d2461
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474379"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868406"
 ---
 # <a name="databasedesignmasterid-property-dao"></a>Database.DesignMasterID Property (DAO)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit dieser Eigenschaft wird ein 16-Byte-Wert festgelegt oder zurückgegeben, der den Designmaster in einer Replikatgruppe eindeutig identifiziert (gilt nur für Microsoft Access-Arbeitsbereiche).
 

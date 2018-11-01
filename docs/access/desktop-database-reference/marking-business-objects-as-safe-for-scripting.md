@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249630(v=office.15)
 ms:contentKeyID: 48546295
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7ac928f7e61cf633aac6963565cf3aae441a2ac6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 195e9fc25e3aa8871233ebe60441d29909b31a48
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475453"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878311"
 ---
 # <a name="marking-business-objects-as-safe-for-scripting"></a>Kennzeichnen von Geschäftsobjekten als sicher für die Verwendung von Skript
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie müssen jedes Geschäftsobjekt, das mit der [CreateObject](dataspace-object-rds.md)-Methode des [RDS.DataSpace](createobject-method-rds.md)-Objekts instanziiert wird, als "Sicher für Skripts" kennzeichnen, um eine möglichst sichere Internetumgebung zu erreichen. Vergewissern Sie sich, dass die Objekte im Lizenzbereich der Systemregistrierung entsprechend gekennzeichnet sind, damit sie in DCOM verwendet werden können.
 

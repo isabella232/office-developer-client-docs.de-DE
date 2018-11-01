@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn123635(v=office.15)
 ms:contentKeyID: 52071277
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fb23156ec26ac4302e77b2abe6127605c7fcf204
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 52c60e3ad564307985e9322bbf470d5113a595bf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474292"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884590"
 ---
 # <a name="adp-objects"></a>ADP Objects
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
   - [KopierenDatenbankdatei-Makroaktion](copydatabasefile-macro-action.md)

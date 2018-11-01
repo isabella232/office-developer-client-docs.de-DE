@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193192(v=office.15)
 ms:contentKeyID: 48544575
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: a7988a2124af13dc84cefe678342da969e349a06
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 43c9d5ba4cd07e4ca388863fd79fb9b198a841af
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864029"
+ms.locfileid: "25874104"
 ---
 # <a name="drop-user-or-group-statement-microsoft-access-sql"></a>DROP USER- oder GROUP-Anweisung (Microsoft Access SQL)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Löscht eine oder mehrere vorhandene *Benutzer* oder *Gruppen*, oder einen oder mehrere vorhandene *Benutzer* aus einer vorhandenen *Gruppe*entfernt.
 

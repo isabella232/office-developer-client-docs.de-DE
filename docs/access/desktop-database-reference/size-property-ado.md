@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Size-Eigenschaft (ADO) TOCTitle: Size-Eigenschaft (ADO) === Titel: Größe-Eigenschaft (ADO) TOCTitle: Größe-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 24596b5c-b1cc-e97e-68b6-8ff53baf150b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249017(v=office.15) Ms:contentKeyID: 48543753 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Size-Eigenschaft (ADO)
+TOCTitle: Size property (ADO)
+ms:assetid: 24596b5c-b1cc-e97e-68b6-8ff53baf150b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249017(v=office.15)
+ms:contentKeyID: 48543753
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 03434b0227c5110ac3a1f36512aaaebd5c23c97a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876407"
 ---
-
-<<<<<<< Kopf
 # <a name="size-property-ado"></a>Size-Eigenschaft (ADO)
-=======
-# <a name="size-property-ado"></a>Size-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt die maximale Größe eines [Parameter](parameter-object-ado.md)-Objekts in Bytes oder Zeichen an.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen **Long** -Wert fest, der die maximale Größe eines Werts in einem **Parameter** -Objekt in Bytes oder Zeichen angibt, oder gibt den Wert zurück.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249609(v=office.15)
 ms:contentKeyID: 48546195
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 50fb678cb9346641b38acc3ca4f3a9553fd2a1c2
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 205c727b140ac8d9bd5b0aa096b7650e12e78e2e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862933"
+ms.locfileid: "25873418"
 ---
 # <a name="create-method-example-vc"></a>Create-Methode (VC++-Beispiel)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Code wird das Erstellen einer neuen Microsoft Jet-Datenbank mithilfe der [Create](create-method-adox.md)-Methode gezeigt.
 

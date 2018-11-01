@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Typ--Eigenschaft (Beispiel) (Field) (VC++) TOCTitle: Typ--Eigenschaft (Beispiel) (Field) (VC++) === Titel: Typ--Eigenschaft (Beispiel) (Field) (VC++) TOCTitle: Typ--Eigenschaft (Beispiel) (Field) (VC++)
->>>>>>> Master Ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15) Ms:contentKeyID: 48547858 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Type-Eigenschaft (Beispiel) (Field) (VC++)
+TOCTitle: Type property example (Field) (VC++)
+ms:assetid: d157407d-e7c9-897e-a0d1-e6396fb78690
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250045(v=office.15)
+ms:contentKeyID: 48547858
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bf9a00e4fafeccf5e284599ec55f9252e8bde568
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884508"
 ---
-
-<<<<<<< Kopf
 # <a name="type-property-example-field-vc"></a>Type-Eigenschaft (Beispiel) (Field) (VC++)
-=======
-# <a name="type-property-example-field-vc"></a>Geben Sie die Eigenschaft (Beispiel) (Field) (VC++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die Type-Eigenschaft. Dazu wird de Name der Konstante angezeigt, die dem Wert der Type-Eigenschaft aller Field-Objekte der Employees-Tabelle entspricht. Die FieldType-Funktion ist erforderlich, damit diese Prozedur ausgeführt werden kann.
 

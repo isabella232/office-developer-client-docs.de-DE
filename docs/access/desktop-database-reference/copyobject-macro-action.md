@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm12836
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 60c0204bd374feaa950d3158873f68127debaf0f
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 09edfd37edb5a0cb237bd94f7f13449690cf18bb
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862548"
+ms.locfileid: "25868224"
 ---
 # <a name="copyobject-macro-action"></a>KopierenObjekt-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie können die **KopierenObjekt** -Aktion verwenden, um das angegebene Datenbankobjekt in eine andere Access-Datenbank oder innerhalb derselben Datenbank oder desselben Access-Projekts unter einem neuen Namen zu kopieren. Sie können ein vorhandenes Objekt beispielsweise in eine andere Datenbank kopieren oder dort sichern oder schnell durch einige Änderungen ein ähnliches Objekt erstellen.
 

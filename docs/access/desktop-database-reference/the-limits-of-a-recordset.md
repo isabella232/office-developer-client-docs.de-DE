@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249266(v=office.15)
 ms:contentKeyID: 48544833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e13e907c27fa6f764aae6ee499f0bd2854f9640b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 953e6c030c8ca4155b17603c03921e97fe3748e0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472928"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887285"
 ---
 # <a name="the-limits-of-a-recordset"></a>Grenzen eines Recordset-Objekts
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Bestimmen Sie mithilfe der Eigenschaften **BOF** und **EOF**, ob ein **Recordset** -Objekt Datensätze enthält oder ob Sie beim Navigieren in den Datensätzen die Grenzen eines **Recordset** -Objekts überschritten haben. Stellen Sie sich **BOF** und **EOF** als "Phantomdatensätze" vor, die am Anfang und am Ende des **Recordset** -Objekts positioniert sind. Basierend auf dem **Recordset** -Beispielobjekt unter [Untersuchen von Daten](chapter-3-examining-data.md) würde dies nun wie folgt aussehen:
 

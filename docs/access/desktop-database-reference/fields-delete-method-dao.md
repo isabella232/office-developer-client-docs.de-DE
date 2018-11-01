@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052868
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9ab4c9d37e051c0bc676d5689daeab88a42f7fa9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: b9d25b9ccb0c6d3a167e33768d893abdaa8d41a7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472656"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874650"
 ---
 # <a name="fieldsdelete-method-dao"></a>Fields.Delete-Methode (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Löscht ein **[Field](field-object-dao.md)** -Objekt aus der **[Fields](fields-collection-dao.md)** -Auflistung.
 

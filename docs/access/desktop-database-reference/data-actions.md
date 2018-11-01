@@ -6,37 +6,37 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn180129(v=office.15)
 ms:contentKeyID: 52075078
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 31aec34d6626973f798b998433f35b632055b0c1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 28ce8f84138d0f6eda4fce5e916f6722a3d7385f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475191"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882791"
 ---
 # <a name="data-actions"></a>Data Actions
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 
-  - [AbbrechenDatensatzänderung-Makroaktion](cancelrecordchange-macro-action.md)
+  - [Abbrechendatensatzänderung-Makroaktion](cancelrecordchange-macro-action.md)
 
-  - [LöschenMakroFehler-Makroaktion](clearmacroerror-macro-action.md)
+  - [Löschenmakrofehler-Makroaktion](clearmacroerror-macro-action.md)
 
   - [BeendenFürJedenDatensatz-Makroaktion](exitforeachrecord-macro-action.md)
 
-  - [ProtokollierenEreignis-Makroaktion](logevent-macro-action.md)
+  - [Protokollierenereignis-Makroaktion](logevent-macro-action.md)
 
   - [BeiFehler-Makroaktion](onerror-macro-action.md)
 
-  - [AuslösenFehler-Makroaktion](raiseerror-macro-action.md)
+  - [Auslösenfehler-Makroaktion](raiseerror-macro-action.md)
 
   - [SendenEMail-Makroaktion](sendemail-macro-action.md)
 
-  - [FestlegenFeld-Makroaktion](setfield-macro-action.md)
+  - [SetField-Makroaktion](setfield-macro-action.md)
 
   - [FestlegenLokaleVar-Makroaktion](setlocalvar-macro-action.md)
 
-  - [SetReturnVar Macro Action](setreturnvar-macro-action.md)
+  - [SetReturnVar-Makroaktion](setreturnvar-macro-action.md)
 

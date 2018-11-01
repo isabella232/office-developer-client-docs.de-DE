@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250258(v=office.15)
 ms:contentKeyID: 48548752
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d3af3026052954ec74b10026e0cf288a6aa5249
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: ca4d8d2fd8797ffb5ae0861e86dfa02faf7bb62c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473032"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875777"
 ---
 # <a name="dealing-with-failed-updates"></a>Umgehen mit fehlgeschlagenen Aktualisierungen
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
-## <a name="dealing-with-failed-updates"></a>Umgehen mit fehlgeschlagenen Aktualisierungen
+## <a name="dealing-with-failed-updates"></a>Dealing with Failed Updates
 
 Wenn eine Aktualisierung mit Fehlern endet, hängt es von der Art und dem Schweregrad der Fehler sowie der Logik Ihrer Anwendung ab, wie Sie die Fehler lösen. Wenn jedoch die Datenbank gemeinsam mit anderen Benutzern verwendet wird, gibt es den typischen Fehler, dass ein anderer Benutzer ein Feld vor Ihnen ändert. Diese Art von Fehler wird als *Konflikt* bezeichnet. ADO erkennt diese Situation und meldet einen Fehler.
 

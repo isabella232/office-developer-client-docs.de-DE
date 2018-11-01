@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195490(v=office.15)
 ms:contentKeyID: 48545464
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4b9cee87eefc4b28ef47942fde6f67f15657cdeb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: cda13f1a377a7e730839df854124d05a4d93ea92
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472930"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881160"
 ---
 # <a name="workspacename-property-dao"></a>Workspace.Name Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest. **String**-Wert mit Lese-/Schreibzugriff, wenn das Objekt noch keiner Auflistung angefügt wurde. Schreibgeschützter **String**-Wert, wenn das Objekt einer Auflistung angefügt wurde.
 

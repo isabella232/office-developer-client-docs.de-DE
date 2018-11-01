@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250193(v=office.15)
 ms:contentKeyID: 48548482
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 80ce29ed129035dcb6799844a4b78509b976f0ee
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2a02db4af012bb7eb0b297d93ef35ba3fc0bd90c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862940"
+ms.locfileid: "25883596"
 ---
 # <a name="configuring-rds-on-windows-2000"></a>Konfigurieren von RDS unter Windows 2000
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Wenn es sich für Sie schwierig erweist, die Funktionsfähigkeit von RDS (Remote Data Service) nach eine Update auf Windows 2000 herzustellen, befolgen Sie die unten aufgeführten Schritte, um das Problem zu behandeln.
 
@@ -31,11 +31,7 @@ Wenn es sich für Sie schwierig erweist, die Funktionsfähigkeit von RDS (Remote
 
 4.  Navigieren Sie mithilfe des Dienstprogramms RegEdit in der Registrierung auf "HKEY\_lokale\_Computer\\SYSTEM\\CurrentControlSet\\Services\\W3SVC\\Parameter\\ADCLaunch" und stellen Sie sicher, dass eine wichtige gewählte **vorhanden ist RDSServer.Datafactory**. Wenn dies nicht der Fall ist, erstellen Sie ihn.
 
-<<<<<<< HEAD
-5.  Mithilfe des Internetdienste-Managers, wechseln Sie auf der Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stammverzeichnisses MSADC. Untersuchen Sie die Directory Security-IP-Adresse und der Domäne Name Einschränkungen. Wenn die "Zugriff verweigert" überprüft wird wählen Sie dann "Gewährt" aus.
-=======
 5.  Internetdienste-Manager verwenden, wechseln Sie zu der Standardwebsite, und zeigen Sie die Eigenschaften des virtuellen Stammverzeichnisses MSADC. Untersuchen Sie die Directory Security-IP-Adresse und der Domäne Name Einschränkungen. Wenn die "Zugriff verweigert" überprüft wird wählen Sie dann "Gewährt" aus.
->>>>>>> master
 
 Sie sollten den Server neu starten, wenn es zunächst den Anschein hat, dass das Problem durch die Änderungen nicht gelöst wurde.
 

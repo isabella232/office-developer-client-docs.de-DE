@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Source-Eigenschaft Beispiel) (VJ++) TOCTitle: Source-Eigenschaft Beispiel) (VJ++) === Titel: Source-Eigenschaft Beispiel) (VJ++) TOCTitle: Source-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15) Ms:contentKeyID: 48547821 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Source-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Source property example (VJ++)
+ms:assetid: cfe6293f-19b7-cc57-c53a-611f841273a5
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250036(v=office.15)
+ms:contentKeyID: 48547821
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 032a6804d2976ac6eca1c4fc24cff0555aa949cf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875712"
 ---
-
-<<<<<<< Kopf
 # <a name="source-property-example-vj"></a>Source-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="source-property-example-vj"></a>Source-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Source](source-property-ado-recordset.md)-Eigenschaft, indem drei [Recordset](recordset-object-ado.md)-Objekte geöffnet werden, die auf unterschiedlichen Datenquellen basieren.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Zustand Eigenschaft Beispiel) (VB) TOCTitle: Zustand Eigenschaft Beispiel) (VB) === Titel: Status-Eigenschaft (Beispiel) (VB) TOCTitle: Status-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15) Ms:contentKeyID: 48548366 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Status-Eigenschaft (Beispiel) (VB)
+TOCTitle: State property example (VB)
+ms:assetid: e5a9abc6-9be7-5b70-a2da-9b678b3a8421
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250166(v=office.15)
+ms:contentKeyID: 48548366
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 6d4aed1d2cbefaa8a43017b7a8ae216ddc0610d9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871269"
 ---
-
-<<<<<<< Kopf
 # <a name="state-property-example-vb"></a>Status-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="state-property-example-vb"></a>State-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.
 

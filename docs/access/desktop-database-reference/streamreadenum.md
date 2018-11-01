@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248895(v=office.15)
 ms:contentKeyID: 48543336
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 69a8c49fd9d07c1e0d67a91e131be76ad9803ad0
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 665819da2a2d31068e50e91eafdddc083645f443
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861050"
+ms.locfileid: "25872711"
 ---
 # <a name="streamreadenum"></a>StreamReadEnum
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt an, ob der gesamte Datenstrom oder die nächste Zeile aus einem [Stream](stream-object-ado.md)-Objekt gelesen werden sollte.
 

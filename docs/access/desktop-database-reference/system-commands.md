@@ -6,31 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn179887(v=office.15)
 ms:contentKeyID: 52074096
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5925cabf5eaa0acb5cabcb7a598b8f8344c3174f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c37d97121948f3f119056fb678cbd6b59a0140b5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474833"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872625"
 ---
 # <a name="system-commands"></a>System Commands
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 
   - [Signalton-Makroaktion](beep-macro-action.md)
 
-  - [SchließenDatenbank-Makroaktion](closedatabase-macro-action.md)
+  - [CloseDatabase-Makroaktion](closedatabase-macro-action.md)
 
-  - [AnzeigenSanduhrzeiger-Makroaktion](displayhourglasspointer-macro-action.md)
+  - [Anzeigensanduhrzeiger-Makroaktion](displayhourglasspointer-macro-action.md)
 
   - [Drucken-Makroaktion](printout-macro-action.md)
 
-  - [BeendenAccess-Makroaktion](quitaccess-macro-action.md)
+  - [Beendenaccess-Makroaktion](quitaccess-macro-action.md)
 
-  - [AusführenAnwendung-Makroaktion](runapplication-macro-action.md)
+  - [Ausführenanwendung-Makroaktion](runapplication-macro-action.md)
 
   - [Tastaturbefehle-Makroaktion](sendkeys-macro-action.md)
 

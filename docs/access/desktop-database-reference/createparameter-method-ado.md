@@ -10,17 +10,17 @@ f1_keywords:
 - ado210.chm1231042
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 00a2c5e2eb8613434b80c80e2a51cbf5d1deb644
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: d851b60500ae3847afb47c574fba83e8399e45d3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605485"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868560"
 ---
 # <a name="createparameter-method-ado"></a>CreateParameter-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Erstellt ein neues [Parameter](parameter-object-ado.md)-Objekt mit den angegebenen Eigenschaften.
@@ -29,11 +29,7 @@ Erstellt ein neues [Parameter](parameter-object-ado.md)-Objekt mit den angegeben
 
 **Festlegen** *Parameter*  =  *Befehl*. "CreateParameter" (*Name*, *Typ*, *Richtung*, *Größe*, *Wert*)
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Gibt ein **Parameter** -Objekt zurück.
 

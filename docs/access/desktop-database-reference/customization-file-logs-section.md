@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250124(v=office.15)
 ms:contentKeyID: 48548178
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 479bac0c61718f12af8fcb1b176b91d3fc57841b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 28132ee681d941eda3f7c1a9b072135a2d47b12b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882833"
 ---
 # <a name="customization-file-logs-section"></a>Logs-Abschnitt der Anpassungsdatei
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Der **logs** -Abschnitt enthält einen Protokolldateieintrag, durch den der Name einer Datei angegeben wird, in der Fehler während der Operation des **DataFactory** -Objekts aufgezeichnet werden.
 

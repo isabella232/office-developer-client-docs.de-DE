@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194324(v=office.15)
 ms:contentKeyID: 48544993
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7f0e8fa499a21bb231131b968c1456af9cb86a45
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 9fec0e2717c39ea2aeb4a41d7630998c79ce9c52
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862954"
+ms.locfileid: "25872718"
 ---
 # <a name="connectionopenrecordset-method-dao"></a>Connection.OpenRecordset Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es an die **Recordsets**-Auflistung an.
 
@@ -90,11 +90,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 </table>
 
 
-<<<<<<< HEAD
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Recordset
 

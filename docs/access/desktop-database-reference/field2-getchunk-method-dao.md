@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194600(v=office.15)
 ms:contentKeyID: 48545101
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f9d5b226b7e513002fd4782f4d622479e67c25f3
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 33f5c3a88cb604236be64dc0771b4d1e78b7eb37
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880950"
 ---
 # <a name="field2getchunk-method-dao"></a>Field2.GetChunk Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den gesamten oder einen Teil des Inhalts eines Objekts **vom Typ Memo** oder **Long Field2** in der **[Fields](fields-collection-dao.md)** -Auflistung eines **[Recordset](recordset-object-dao.md)** -Objekts.
 
@@ -60,11 +60,7 @@ Gibt den gesamten oder einen Teil des Inhalts eines Objekts **vom Typ Memo** ode
 </table>
 
 
-<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Variant
 

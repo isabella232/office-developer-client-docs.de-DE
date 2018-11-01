@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052976
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e17936286a4bd661d0a210c905cf0b63b70cf936
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 874e4148bc23130a7b7cd952f8ea008c41f26ca5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474482"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868574"
 ---
 # <a name="querydefclose-method-dao"></a>QueryDef.Close Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Schließt ein geöffnetes **QueryDef**-Objekt.
 

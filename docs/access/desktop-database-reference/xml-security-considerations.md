@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250214(v=office.15)
 ms:contentKeyID: 48548575
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3120db77ba89aee1036de4d6fa85df73c21d26d9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 69672b2993cb91ace5bd447b762f33fcbd66c1bc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475307"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868490"
 ---
 # <a name="xml-security-considerations"></a>Hinweise zur XML-Sicherheit
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
-## <a name="xml-security-considerations"></a>Hinweise zur XML-Sicherheit
+## <a name="xml-security-considerations"></a>Überlegungen zur Sicherheit bei XML
 
 Die Methoden **Save** und **Open** von ADO im **Recordset** -Objekt gelten für die Ausführung in Internet Explorer als nicht sicher. Wenn deshalb diese Methoden in Skriptcode verwendet werden, der in einer Anwendung oder einem Steuerelement ausgeführt wird, die bzw. das in einem Browser bereitgestellt wird, wirkt sich die Sicherheitskonfiguration des Browsers auf das Verhalten aus.
 

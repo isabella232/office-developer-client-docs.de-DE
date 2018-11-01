@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248863(v=office.15)
 ms:contentKeyID: 48543263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d63c31dfd7309144813c979ad34f0d27593e4d9
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: d8d3680c0ef5bc6ebd2f951820fdff9aa00c489c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605716"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884940"
 ---
 # <a name="parentsameasprev-property-ado-md"></a>ParentSameAsPrev-Eigenschaft (ADO MD)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt an, ob das übergeordnete Element dieses Positionselements mit dem übergeordneten Element des direkt vorhergehenden Elements identisch ist.
 
-<<<<<<< Kopf
-## <a name="return-values"></a>Rückgabewert
-=======
 ## <a name="return-values"></a>Rückgabewerte
->>>>>>> master
 
 Gibt einen schreibgeschützten **Boolean** -Wert zurück.
 

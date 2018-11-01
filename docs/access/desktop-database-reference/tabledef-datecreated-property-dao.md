@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837292(v=office.15)
 ms:contentKeyID: 48548947
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6ffad5b1bee5756c969f03a920f453f1d3abf9e3
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2cf97df5d5861a3bb0fdac34ceabc8f732a87d5c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473311"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885598"
 ---
 # <a name="tabledefdatecreated-property-dao"></a>TableDef.DateCreated Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt das Datum und die Uhrzeit der Objekterstellung zurück (nur Microsoft Access-Arbeitsbereiche). Schreibgeschützter **Variant**-Wert.
 

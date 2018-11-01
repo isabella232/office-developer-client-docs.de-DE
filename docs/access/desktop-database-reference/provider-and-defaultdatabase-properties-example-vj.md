@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Provider- und DefaultDatabase Eigenschaft (Beispiel) (VJ++) TOCTitle: Provider- und DefaultDatabase-Eigenschaften-Beispiel) (VJ++) === Titel: Provider- und DefaultDatabase Eigenschaften) (Beispiel) (VJ++) TOCTitle: Anbieter und DefaultDatabase-Eigenschaften (Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: babd3c3c-bb6e-46ce-88f2-ef2810d798fd Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249898(v=office.15) Ms:contentKeyID: 48547380 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Provider and DefaultDatabase properties example (VJ++)
+ms:assetid: babd3c3c-bb6e-46ce-88f2-ef2810d798fd
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249898(v=office.15)
+ms:contentKeyID: 48547380
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f0833a21b0b666beb291c67280a383b3ae5af51d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872522"
 ---
-
-<<<<<<< Kopf
 # <a name="provider-and-defaultdatabase-properties-example-vj"></a>Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="provider-and-defaultdatabase-properties-example-vj"></a>Provider- und DefaultDatabase Eigenschaften) (Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.
 

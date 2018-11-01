@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: DeleteRule-Eigenschaft (VC++-Beispiel) TOCTitle: DeleteRule-Eigenschaft (VC++-Beispiel) === Titel: DeleteRule-Eigenschaft (VC++-Beispiel) TOCTitle: DeleteRule-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15) Ms:contentKeyID: 48544164 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: DeleteRule-Eigenschaft (VC++-Beispiel)
+TOCTitle: DeleteRule property example (VC++)
+ms:assetid: 364efee7-d579-57df-aeb0-fa352a72d704
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249122(v=office.15)
+ms:contentKeyID: 48544164
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 97e2e1d9a9c801fc7982ec9bdd84e060a03ceccf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875483"
 ---
-
-<<<<<<< Kopf
 # <a name="deleterule-property-example-vc"></a>DeleteRule-Eigenschaft (VC++-Beispiel)
-=======
-# <a name="deleterule-property-example-vc"></a>DeleteRule-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [DeleteRule](deleterule-property-adox.md)-Eigenschaft eines [Key](key-object-adox.md)-Objekts veranschaulicht. Der Code fügt ein neues [Table](table-object-adox.md)-Objekt an und definiert dann einen neuen Primärschlüssel, indem **DeleteRule** auf **adRICascade** festgelegt wird.
 

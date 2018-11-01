@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250247(v=office.15)
 ms:contentKeyID: 48548701
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9042bdbf3271f5aed65f44d8c7f76f1dcbee1d9c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5e47cf076c213707857285757d936d58bd153e7c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474291"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880600"
 ---
 # <a name="ado-event-handler-summary"></a>ADO-Ereignishandler (Zusammenfassung)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Ereignisse können von zwei ADO-Objekten ausgelöst werden: [Connection](connection-object-ado.md) und [Recordset](recordset-object-ado.md). Die **ConnectionEvent** -Familie bezieht sich auf Operationen für das **Connection** -Objekt, und die **RecordsetEvent** -Familie bezieht sich auf Operationen für das **Recordset** -Objekt.
 

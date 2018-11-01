@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249466(v=office.15)
 ms:contentKeyID: 48545620
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c8da290cc259f9be165e069c8a62e61fa8b748b3
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 538ee7d2ba39e6a4da0661901076a296bb063d14
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864116"
+ms.locfileid: "25877758"
 ---
 # <a name="getrows-method-example-jscript"></a>GetRows-Methode (Beispiel) (JScript)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [GetRows](getrows-method-ado.md) -Methode alle Zeilen der Tabelle *Custiomers* aus einem [Recordset-Objekt](recordset-object-ado.md) abgerufen und um ein Array mit den resultierenden Daten aufzufüllen. Die **GetRows** -Methode gibt in zwei Fällen weniger als die gewünschte Anzahl von Zeilen zurück: wenn [EOF](bof-eof-properties-ado.md) erreicht wurde oder wenn **GetRows** versucht hat, einen Datensatz abzurufen, der von einem anderen Benutzer gelöscht wurde. Die Funktion gibt nur im zweiten Fall **False** zurück. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einen anderen Texteditor ein, und speichern Sie die Datei unter dem Namen **GetRowsJS.asp**.
 

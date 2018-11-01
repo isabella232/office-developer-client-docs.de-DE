@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249633(v=office.15)
 ms:contentKeyID: 48546301
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cb8e60c52ded359350adff737807c3e0f92cb7c4
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ca7d84e0a0fe1eda9237a4743a3296de7f192053
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862125"
+ms.locfileid: "25879116"
 ---
 # <a name="shape-append-clause"></a>Shape Append-Klausel
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der APPEND-Klausel des Shape-Befehls werden einem Recordset-Objekt Spalten angefügt. Bei diesen Spalten handelt es sich oft um Kapitelspalten, die auf ein untergeordnetes Recordset-Objekt verweisen.
 

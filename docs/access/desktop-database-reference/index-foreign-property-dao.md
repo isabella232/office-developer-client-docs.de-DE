@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1052974
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 410629c3e5ebec47dd8acefd852379ee74568832
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9eaf15cda7819ec6b98608cdad052a112229906b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474377"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881559"
 ---
 # <a name="indexforeign-property-dao"></a>Index.Foreign Property (DAO)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle angibt (gilt nur für Microsoft Access-Arbeitsbereiche).
 

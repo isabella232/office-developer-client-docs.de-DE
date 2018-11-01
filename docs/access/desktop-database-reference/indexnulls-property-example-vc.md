@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: IndexNulls-Eigenschaft (VC++-Beispiel) TOCTitle: IndexNulls-Eigenschaft (VC++-Beispiel) === Titel: IndexNulls-Eigenschaft (VC++-Beispiel) TOCTitle: IndexNulls-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15) Ms:contentKeyID: 48543039 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: IndexNulls-Eigenschaft (VC++-Beispiel)
+TOCTitle: IndexNulls property example (VC++)
+ms:assetid: 05d1f8b3-ae70-cca5-d60d-af55f5f7c13a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248813(v=office.15)
+ms:contentKeyID: 48543039
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8f91883349a39a5674459328d5335cc892e0bb79
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877240"
 ---
-
-<<<<<<< Kopf
-# <a name="indexnulls-property-example-vc"></a>IndexNulls Property Example (VC++)
-=======
 # <a name="indexnulls-property-example-vc"></a>IndexNulls-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [IndexNulls](indexnulls-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md). Der Code erstellt einen neuen Index und legt den Wert der **IndexNulls** basierend auf Benutzereingaben. Anschließend wird der **Index** der **Employees** - [Tabelle](table-object-adox.md) in der *Northwind* - [Katalog](catalog-object-adox.md)angefügt. Der neue **Index** auf ein [Recordset-Objekt](recordset-object-ado.md) basierend auf der **Employees** -Tabelle angewendet wird, und das **Recordset-Objekt** wird geöffnet. Ein neuer Datensatz wird der **Employees** -Tabelle mit dem Wert **Null** im indizierten Feld hinzugefügt. Gibt an, ob dieser neue Datensatz angezeigt wird, hängt von der Einstellung der **IndexNulls** -Eigenschaft ab.
 

@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249307(v=office.15)
 ms:contentKeyID: 48545030
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bebdec8bdc68724522331714052a0079f75b28e3
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 1b2797d5e77e30a9e92639920960796a9d6cae52
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603168"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872144"
 ---
 # <a name="reshape-name-property--dynamic-ado"></a>Reshape Name (dynamische Eigenschaft) (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt einen Namen für das [Recordset](recordset-object-ado.md)-Objekt an.
 
-<<<<<<< Kopf
-## <a name="return-values"></a>Rückgabewert
-=======
 ## <a name="return-values"></a>Rückgabewerte
->>>>>>> master
 
 Gibt einen Wert vom Datentyp **String** zurück, der den Namen des **Recordset** -Objekts darstellt.
 

@@ -10,16 +10,16 @@ f1_keywords:
 - acmain11.chm1032667
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f711e9814e32742c89c37ae3357111143ca18b6e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c1ba74f754ef0c998a14f7421914bd4bcd7c9cf9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472739"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870198"
 ---
 # <a name="initializing-the-microsoft-exchange-data-source-driver"></a>Initialisieren des Microsoft Exchange-Datenquellentreibers
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Beim Installieren des Microsoft® Exchange-Datenquellentreibers schreibt das Setupprogramm Standardwerte in die Unterschlüssel Engines und ISAM Formats der Microsoft Windows®-Registrierung. Diese Einstellungen dürfen nicht direkt geändert werden. Verwenden Sie stattdessen das Setupprogramm, um diese Einstellungen hinzuzufügen, zu entfernen oder zu ändern. In den folgenden Abschnitten werden die Einstellungen für die Initialisierung und das ISAM-Format für den Microsoft Exchange-Datenquellentreiber beschrieben.
 

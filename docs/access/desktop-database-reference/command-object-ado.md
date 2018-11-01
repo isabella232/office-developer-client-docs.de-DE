@@ -10,17 +10,17 @@ f1_keywords:
 - ado210.chm1231106
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 153f59ebbcfae89f6358fe0d707791aab8a8cdd7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 557eafe6e8c8ea2265fdaf8a5c4bae8856bb4476
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25864074"
+ms.locfileid: "25867531"
 ---
 # <a name="command-object-ado"></a>Command-Objekt (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Definiert einen spezifischen Befehl, den Sie in einer Datenquelle ausführen wollen.
 
@@ -34,11 +34,7 @@ Die Auflistungen, Methoden und Eigenschaften eines **Command** -Objekts ermögli
 
   - Festlegen von parametrisierten Abfragen oder von Argumenten für gespeicherte Prozeduren mit [Parameter](parameter-object-ado.md)-Objekten und der [Parameters](parameters-collection-ado.md)-Auflistung.
 
-<<<<<<< HEAD
-  - Ausführen eines Befehls und Rückgabe eines **Recordset** -Objekts, falls zutreffend, mit der [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\))-Methode.
-=======
   - Ausführen eines Befehls und Rückgabe eines **Recordset** -Objekts, falls zutreffend, mit der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command)-Methode.
->>>>>>> master
 
   - Festlegen des Befehlstyps mit der [CommandType](commandtype-property-ado.md)-Eigenschaft vor dem Ausführen des Befehls, um die Leistung zu optimieren.
 

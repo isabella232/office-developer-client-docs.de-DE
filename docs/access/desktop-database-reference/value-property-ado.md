@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Wert-Eigenschaft (ADO) TOCTitle: Wert-Eigenschaft (ADO) === Titel: Value-Eigenschaft (ADO) TOCTitle: Value-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: ff21d122-98e3-2b48-d92f-e696b8079fc5 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250310(v=office.15) Ms:contentKeyID: 48548958 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Value-Eigenschaft (ADO)
+TOCTitle: Value property (ADO)
+ms:assetid: ff21d122-98e3-2b48-d92f-e696b8079fc5
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250310(v=office.15)
+ms:contentKeyID: 48548958
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 856f145c195c189775355fef662ea082ec629fd0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883939"
 ---
-
-<<<<<<< Kopf
 # <a name="value-property-ado"></a>Value-Eigenschaft (ADO)
-=======
-# <a name="value-property-ado"></a>Value-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Wert an, der einem [Field](field-object-ado.md)-, [Parameter](parameter-object-ado.md)- oder [Property](property-object-ado.md)-Objekt zugewiesen ist.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen **Variant** -Wert fest, der den Wert eines Objekts angibt, oder gibt den Wert zurück. Der Standardwert hängt von der [Type](type-property-ado.md)-Eigenschaft ab.
 

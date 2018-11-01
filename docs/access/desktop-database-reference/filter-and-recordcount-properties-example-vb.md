@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Filter und RecordCount Eigenschaften Beispiel) (VB) TOCTitle: Filter und RecordCount Eigenschaften Beispiel) (VB) === Titel: Eigenschaften Filter und RecordCount (Beispiel) (VB) TOCTitle: Filter und RecordCount-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15) Ms:contentKeyID: 48544354 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Filter- und RecordCount-Eigenschaft (Beispiel) (VB)
+TOCTitle: Filter and RecordCount properties example (VB)
+ms:assetid: 3da4623e-03e7-27ac-7351-3b22415be0b9
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
+ms:contentKeyID: 48544354
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 3fe5065c75408e7093fbd2b39e7a84400d648e99
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873166"
 ---
-
-<<<<<<< Kopf
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter- und RecordCount-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="filter-and-recordcount-properties-example-vb"></a>Filter- und RecordCount-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird ein **Recordset-Objekt** in der Tabelle Publishers in der ***Pubs*** -Datenbank zu öffnen. Anschließend wird die [Filter](filter-property-ado.md) -Eigenschaft zur Begrenzung der Anzahl von sichtbaren Datensätze auf die Verleger in einem bestimmten Land/Region. Die **RecordCount** -Eigenschaft wird verwendet, um die Differenz zwischen der gefilterten und ungefilterten Recordsets anzeigen.
 

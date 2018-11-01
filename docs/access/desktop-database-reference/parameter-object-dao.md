@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845640(v=office.15)
 ms:contentKeyID: 48543495
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 69388834d5469c9fa66d70d397d63be4376db218
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3ba1744d1cd740c61c7b80d1a08a73fec317c3a3
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475836"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888566"
 ---
 # <a name="parameter-object-dao"></a>Parameter Object (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Ein **Parameter**-Objekt stellt einen Wert für eine Abfrage dar. Der Parameter wird einem **QueryDef**-Objekt zugeordnet, das aus einer Parameterabfrage erstellt wird.
 

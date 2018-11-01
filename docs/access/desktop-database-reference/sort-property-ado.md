@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: Sort-Eigenschaft (ADO) TOCTitle: Sort-Eigenschaft (ADO) === Titel: Sortieren-Eigenschaft (ADO) TOCTitle: Sortieren-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: f2a39b7f-8b96-cd1a-8248-71f8b867454a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250230(v=office.15) Ms:contentKeyID: 48548652 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Sort-Eigenschaft (ADO)
+TOCTitle: Sort property (ADO)
+ms:assetid: f2a39b7f-8b96-cd1a-8248-71f8b867454a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250230(v=office.15)
+ms:contentKeyID: 48548652
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ebd515d2812ce453711c2b6519b1875250911d1a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886606"
 ---
-
-<<<<<<< Kopf
 # <a name="sort-property-ado"></a>Sort-Eigenschaft (ADO)
-=======
-# <a name="sort-property-ado"></a>Sort-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt einen oder mehrere Feldnamen an, nach denen das [Recordset](recordset-object-ado.md) sortiert wird, und gibt an, ob die einzelnen Felder aufsteigend oder absteigend sortiert werden.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen **String** -Wert fest, der die Feldnamen im **Recordset** -Objekt angibt, nach denen sortiert wird, oder gibt den Wert zurück. Jeder Name wird durch ein Komma getrennt, ggf. gefolgt von einer Leerstelle und dem Schlüsselwort. **ASC** sortiert das Feld in aufsteigender, **DESC** in absteigender Reihenfolge. Wenn Sie kein Schlüsselwort angeben, wird das Feld standardmäßig in aufsteigender Reihenfolge sortiert.
 

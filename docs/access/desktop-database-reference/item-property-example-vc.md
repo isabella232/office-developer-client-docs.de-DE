@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Item-Eigenschaft (VC++-Beispiel) TOCTitle: Item-Eigenschaft (VC++-Beispiel) === Titel: Item-Eigenschaft (VC++-Beispiel) TOCTitle: Item-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15) Ms:contentKeyID: 48543452 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Item-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Item property example (VC++)
+ms:assetid: 17bfcb84-e0f7-7a24-6fc4-ab1dacd2766a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248928(v=office.15)
+ms:contentKeyID: 48543452
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ae4ffe7f1d600fe89788c3084a9e9dc409fc00f1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882497"
 ---
-
-<<<<<<< Kopf
 # <a name="item-property-example-vc"></a>Item-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="item-property-example-vc"></a>Item-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.
 

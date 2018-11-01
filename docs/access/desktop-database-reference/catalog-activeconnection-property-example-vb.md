@@ -1,15 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: Katalog ActiveConnection-Eigenschaft Beispiel) (VB) TOCTitle: Katalog ActiveConnection-Eigenschaft Beispiel) (VB) === Titel: Katalog ActiveConnection-Eigenschaft (Beispiel) (VB) TOCTitle: Katalog ActiveConnection Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 12a34091-e451-dbd1-e7f3-f794b84ee5b0 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248901(v=office.15) Ms:contentKeyID: 48543348 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ActiveConnection-Eigenschaft (Catalog) (Beispiel) (VB)
+TOCTitle: Catalog ActiveConnection property example (VB)
+ms:assetid: 12a34091-e451-dbd1-e7f3-f794b84ee5b0
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248901(v=office.15)
+ms:contentKeyID: 48543348
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 36dc7ce169bcfbfc341968db9f571532dae24970
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884646"
 ---
+# <a name="catalog-activeconnection-property-example-vb"></a>ActiveConnection-Eigenschaft (Catalog) (Beispiel) (VB)
 
-<<<<<<< Kopf
-# <a name="catalog-activeconnection-property-example-vb"></a>ActiveConnection-Eigenschaft (Catalog) (VB-Beispiel)
-=======
-# <a name="catalog-activeconnection-property-example-vb"></a>Katalog ActiveConnection-Eigenschaft (Beispiel) (VB)
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Durch das Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Einstellung auf eine gültige, offene Verbindung wird der Katalog geöffnet. Über einen geöffneten Katalog können Sie auf die Schemaobjekte zugreifen, die in dem jeweiligen Katalog enthalten sind.
 

@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d62c80c18ffd091d71c88fc64c9bd5c60c580101
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 60f0b30574bd97572739664ca37c44e69258d544
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476098"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881349"
 ---
 # <a name="findrecord-macro-action"></a>SuchenDatensatz-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der **SuchenDatensatz** -Aktion suchen Sie die erste Instanz der Daten, die den in den Argumenten von **SuchenDatensatz** angegebenen Kriterien entsprechen. Diese Daten können sich in dem aktuellen Datensatz, einem nachfolgenden oder früheren Datensatz oder dem ersten Datensatz befinden. Sie können Datensätze in dem aktiven Datenblatt, dem Abfragedatenblatt, dem Formulardatenblatt oder dem Formular suchen.
 

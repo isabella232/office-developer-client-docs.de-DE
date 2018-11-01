@@ -1,15 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: SortOrder-Eigenschaft Beispiel) (VB) TOCTitle: SortOrder-Eigenschaft Beispiel) (VB) === Titel: SortOrder-Eigenschaft (Beispiel) (VB) TOCTitle: SortOrder-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15) Ms:contentKeyID: 48546472 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: SortOrder-Eigenschaft (VB-Beispiel)
+TOCTitle: SortOrder property example (VB)
+ms:assetid: 97937644-e3ef-06dc-d8ba-55ecaf7ac1ad
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249675(v=office.15)
+ms:contentKeyID: 48546472
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 051f0ce18cf12ef2d3450dbf9ecc27ebb36134a0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874237"
 ---
-
-<<<<<<< Kopf
 # <a name="sortorder-property-example-vb"></a>SortOrder-Eigenschaft (VB-Beispiel)
-=======
-# <a name="sortorder-property-example-vb"></a>SortOrder-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der SortOrder-Eigenschaft eines Column-Objekts veranschaulicht, das an die Columns-Auflistung eines Index-Objekts angefügt wurde. Der Code fügt einen aufsteigenden Index an die Country-Spalte in der Employees-Tabelle an und zeigt dann die Datensätze an. Dann fügt der Code einen absteigenden Index an die Country-Spalte der Employees-Tabelle an und zeigt die Datensätze erneut an. Hierdurch wird der Unterschied zwischen aufsteigenden und absteigenden Indizes veranschaulicht.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248774(v=office.15)
 ms:contentKeyID: 48542897
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4701e390a26fa8a29bf7e7fa490f188f80820876
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 01e2f0ab0ad4a623a7f8cab44877d27e18f45c54
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862526"
+ms.locfileid: "25867265"
 ---
 # <a name="execute-requery-and-clear-methods-example-vj"></a>Execute-, Requery- und Clear-Methode (Beispiel) (VJ++)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Ausführung der **Execute** -Methode aus einem [Command](command-object-ado.md)-Objekt und einem [Connection](connection-object-ado.md)-Objekt dargestellt. Anschließend wird auch die [Requery](requery-method-ado.md) -Methode zum Abrufen von aktuellen Datenteils in einem Recordset-Objekt und die [Clear](clear-method-ado.md) -Methode, um den Inhalt der [Errors](errors-collection-ado.md) -Auflistung löschen. Die Verfahrensweise ExecuteCommand und PrintOutput ist zum Ausführen dieser Prozedur erforderlich.
 

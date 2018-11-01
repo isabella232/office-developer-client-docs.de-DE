@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249545(v=office.15)
 ms:contentKeyID: 48545924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f06954b25c798dab7fe80ba5ba7cf91bb0efc292
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 77a8f14cf76e87060d73d0b3a6a6939c292c422e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860994"
+ms.locfileid: "25868056"
 ---
 # <a name="persisting-records-in-xml-format"></a>Speichern von Datensätzen im XML-Format
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Das Speichern von Recordset-Objekten im XML-Format wird wie beim ADTG-Format mit dem Microsoft OLE DB-Anbieter für Persistenz implementiert. Dieser Provider generiert ein schreibgeschütztes Vorwärtsrowset von einer gespeicherten XML-Datei oder einem gespeicherten XML-Datenstrom, die bzw. der die von ADO generierten Schemainformationen enthält. Entsprechend kann damit ein Recordset-Objekt von ADO verwendet, XML generiert sowie in einer Datei oder einem beliebigen Objekt gespeichert werden, das die COM-Schnittstelle IStream implementiert. (Eine Datei ist lediglich ein weiteres Beispiel für ein Objekt, das IStream unterstützt.) Für die Versionen 2.5 und höher verwendet ADO den Microsoft XML Parser (MSXML), um den XML-Code in das Recordset-Objekt zu laden. Deshalb ist msxml.dll erforderlich. Für Version 2.5 wurde MSXML mit Internet Explorer 5 ausgeliefert. Für Version 2.6 wurde MSXML mit SQL Server 2000 ausgeliefert.
 

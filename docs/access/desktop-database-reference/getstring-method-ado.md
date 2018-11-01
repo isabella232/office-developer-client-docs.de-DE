@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250242(v=office.15)
 ms:contentKeyID: 48548693
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ba235094aa7f491cbd86bf753713d50f01009d47
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: b6c4de1278a093a1b0d4493c5dd994afe6a5d1b8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25605401"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879872"
 ---
 # <a name="getstring-method-ado"></a>GetString-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Gibt das [Recordset](recordset-object-ado.md)-Objekt als eine Zeichenfolge zurück.
@@ -25,11 +25,7 @@ Gibt das [Recordset](recordset-object-ado.md)-Objekt als eine Zeichenfolge zurü
 
 *Variant* = *Recordset-Objekt*. GetString (*StringFormat*, *NumRows*, *ColumnDelimiter*, *RowDelimiter*, *NullExpr*)
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Gibt das **Recordset** -Objekt als eine **Variant** -Variable (BSTR) mit Zeichenfolgenwerten zurück.
 

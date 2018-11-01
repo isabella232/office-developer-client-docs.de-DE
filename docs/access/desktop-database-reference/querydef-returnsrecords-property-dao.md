@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053005
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f1d10a8e348021d88510519c61825714ca434b3b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5d3b0c159d259d96ea135a8ed014af268a57cd77
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880320"
 ---
 # <a name="querydefreturnsrecords-property-dao"></a>QueryDef.ReturnsRecords Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine externe Datenbank Datensätze zurückgibt (nur Microsoft Access-Arbeitsbereiche).

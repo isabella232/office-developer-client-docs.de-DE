@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Status-Eigenschaft (VC++-Beispiel) TOCTitle: Status-Eigenschaft (VC++-Beispiel) === Titel: Status-Eigenschaft (VC++-Beispiel) TOCTitle: Status-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15) Ms:contentKeyID: 48545618 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Status-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Status property example (VC++)
+ms:assetid: 72cb738d-8404-f9f3-3d79-9eb2541a608b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249464(v=office.15)
+ms:contentKeyID: 48545618
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 06758dd435389ba0abfbd1a1c8dda8c5a492ab8f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886858"
 ---
-
-<<<<<<< Kopf
 # <a name="status-property-example-vc"></a>Status-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="status-property-example-vc"></a>Status-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Status](status-property-ado-recordset.md)-Eigenschaft verwendet, um die Datensätze anzuzeigen, die in einem Batchvorgang geändert wurden, bevor eine Batchaktualisierung ausgeführt wurde.
 

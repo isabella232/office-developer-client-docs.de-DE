@@ -10,16 +10,16 @@ f1_keywords:
 - vbaac10.chm152234
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 246602826986af84bdfcff82ad3787eebb687060
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 57c6630b1e9145c158a32a331ae91157e8e5e8f6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475346"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883071"
 ---
 # <a name="importsharepointlist-macro-action"></a>ImportierenSharePointListe-Makroaktion
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der **ImportierenSharePointListe** -Aktion können Sie Daten von einer Microsoft SharePoint Foundation-Website importieren oder verknüpfen.
 

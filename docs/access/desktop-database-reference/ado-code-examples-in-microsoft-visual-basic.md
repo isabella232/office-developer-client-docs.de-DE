@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249342(v=office.15)
 ms:contentKeyID: 48545145
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a1ceec153a1717485bac87cbf5fdb764f546cab7
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 405e866d87d296869536ca952f45782080809853
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862114"
+ms.locfileid: "25873894"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-basic"></a>ADO-Codebeispiele in Microsoft Visual Basic
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Methoden, -Eigenschaften und -Ereignisse beim Schreiben in Visual Basic verwenden.
 
@@ -59,11 +59,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - [GetString-Methode (Beispiel)](getstring-method-example-vb.md)
 
-<<<<<<< HEAD
-  - [SkipLine-Methode, EOS und LineSeparator-Eigenschaft (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
-=======
   - [SkipLine-Methode, EOS und LineSeparator Eigenschaft (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
->>>>>>> master
 
   - [Move-Methode (Beispiel)](move-method-example-vb.md)
 
@@ -83,11 +79,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - ["Save" und "Open" (Methoden) (Beispiel)](save-and-open-methods-example-vb.md)
 
-<<<<<<< HEAD
-  - [Seek-Methode und Index-Eigenschaft Beispiel](seek-method-and-index-property-example-vb.md)
-=======
   - [Seek-Methode und Index-Eigenschaft-Beispiel](seek-method-and-index-property-example-vb.md)
->>>>>>> master
 
   - [Supports-Methode (Beispiel)](supports-method-example-vb.md)
 
@@ -97,71 +89,6 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
 **Eigenschaften**
 
-<<<<<<< HEAD
-  - ["AbsolutePage", "PageCount" und "PageSize" (Eigenschaften) (Beispiel)](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
-
-  - ["AbsolutePosition" und "CursorLocation" (Eigenschaften) (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vb.md)
-
-  - [ActiveCommand-Eigenschaft (Beispiel)](activecommand-property-example-vb.md)
-
-  - ["ActiveConnection", "CommandText", "CommandTimeout", "CommandType", "Size" und "Direction" (Eigenschaften) (Beispiel)](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vb.md)
-
-  - ["ActualSize" und "DefinedSize" (Eigenschaften) (Beispiel)](actualsize-and-definedsize-properties-example-vb.md)
-
-  - ["Attributes" und "Name" (Eigenschaften) (Beispiel)](attributes-and-name-properties-example-vb.md)
-
-  - [BOF, EOF und Bookmark (Eigenschaften) (Beispiel)](bof-eof-and-bookmark-properties-example-vb.md)
-
-  - [CacheSize-Eigenschaft (Beispiel)](cachesize-property-example-vb.md)
-
-  - ["ConnectionString", "ConnectionTimeout" und "State" (Eigenschaften) (Beispiel)](connectionstring-connectiontimeout-and-state-properties-example-vb.md)
-
-  - [Count-Eigenschaft (Beispiel)](count-property-example-vb.md)
-
-  - ["CursorType", "LockType" und "EditMode" (Eigenschaften) (Beispiel)](cursortype-locktype-and-editmode-properties-example-vb.md)
-
-  - ["Description", "HelpContext", "HelpFile", "NativeError", "Number", "Source" und "SQLState" (Eigenschaften) (Beispiel)](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb.md)
-
-  - [EOS und "LineSeparator" (Eigenschaften), SkipLine-Methode (Beispiel)](eos-and-lineseparator-properties-and-skipline-method-example-vb.md)
-
-  - ["Filter" und "RecordCount" (Eigenschaften) (Beispiel)](filter-and-recordcount-properties-example-vb.md)
-
-  - ["IsolationLevel" und "Mode" (Eigenschaften) (Beispiel)](isolationlevel-and-mode-properties-example-vb.md)
-
-  - [Item-Eigenschaft (Beispiel)](item-property-example-vb.md)
-
-  - [MarshalOptions-Eigenschaft (Beispiel)](marshaloptions-property-example-vb.md)
-
-  - [MaxRecords-Eigenschaft (Beispiel)](maxrecords-property-example-vb.md)
-
-  - ["NumericScale" und "Precision" (Eigenschaften) (Beispiel)](ado-numericscale-and-precision-properties-example-vb.md)
-
-  - [Optimize-Eigenschaft (Beispiel)](optimize-property-example-vb.md)
-
-  - ["OriginalValue" und "UnderlyingValue" (Eigenschaften (Beispiel)](originalvalue-and-underlyingvalue-properties-example-vb.md)
-
-  - [Prepared-Eigenschaft (Beispiel)](prepared-property-example-vb.md)
-
-  - ["Provider" und "DefaultDatabase" (Eigenschaften) (Beispiel)](provider-and-defaultdatabase-properties-example-vb.md)
-
-  - [Sort-Eigenschaft (Beispiel)](sort-property-example-vb.md)
-
-  - [Source-Eigenschaft (Beispiel)](source-property-example-vb.md)
-
-  - [State-Eigenschaft (Beispiel)](state-property-example-vb.md)
-
-  - [Status-Eigenschaft (Beispiel)](status-property-example-recordset-vb.md)
-
-  - [StayInSync-Eigenschaft (Beispiel)](stayinsync-property-example-vb.md)
-
-  - [Type-Eigenschaft (Beispiel) (Feld)](type-property-example-field-vb.md)
-
-  - [Type-Eigenschaft (Beispiel) (Eigenschaft)](type-property-example-property-vb.md)
-
-  - [Value-Eigenschaft (Beispiel)](value-property-example-vb.md)
-
-  - [Beispiel der Version-Eigenschaft](version-property-example-vb.md)
-=======
   - [AbsolutePage-, PageCount- und PageSize-Eigenschaften-Beispiel](absolutepage-pagecount-and-pagesize-properties-example-vb.md)
 
   - [AbsolutePosition- und CursorLocation Eigenschaft (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vb.md)
@@ -225,5 +152,4 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
   - [Beispielwert-Eigenschaft](value-property-example-vb.md)
 
   - [Beispiel der Version-Eigenschaft](version-property-example-vb.md)
->>>>>>> master
 

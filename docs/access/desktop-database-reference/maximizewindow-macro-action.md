@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm196948
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b612d050d6c523ae836b21aa27826ff180e8f977
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 110262c9aee48fc24858150714194953136fa835
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474127"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867272"
 ---
 # <a name="maximizewindow-macro-action"></a>MaximierenFenster-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Wenn überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden Zugriff konfiguriert ist, können Sie die **Maximierenfenster** -Aktion verwenden, um das aktive Fenster zu vergrößern, damit es das Access-Fenster ausfüllt. Diese Aktion ermöglicht es Ihnen, so viel wie möglich vom Objekt im aktiven Fenster anzuzeigen.
 

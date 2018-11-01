@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d6955bca1bf693386d1f5edb4bac04cee311d78e
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 56c5b77d09ce568175b992391c8f3e7dcf3e9e15
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606962"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872053"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
  
 
 Verschiebt die durch einen [Record](record-object-ado.md) dargestellte Entität an einen anderen Speicherort.
@@ -51,11 +51,7 @@ Verschiebt die durch einen [Record](record-object-ado.md) dargestellte Entität 
 
   - Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Ein **String** -Wert. In der Regel wird der Wert des *Ziels* zurückgegeben. Der genaue Wert, der zurückgegeben wird, ist jedoch vom Anbieter abhängig.
 
@@ -77,10 +73,6 @@ Wurde dieser **Record** aus einem [Recordset](recordset-object-ado.md)-Objekt ab
 
 
 > [!NOTE]
-<<<<<<< Kopf
-> <P>[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der <A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider für Internet Publishing</A> automatisch aufgerufen. Weitere Informationen erhalten Sie unter <A href="absolute-and-relative-urls.md">Absolute und relative URLs</A>.</P>
-=======
 > [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).
->>>>>>> master
 
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249678(v=office.15)
 ms:contentKeyID: 48546477
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 38fa73120ed868c7b7a0e086cdcbe822e4c16730
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ae89c4d2300b167a8e7b993ad8830838d91f0617
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860987"
+ms.locfileid: "25877023"
 ---
 # <a name="error-object-ado"></a>Error-Objekt (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Enthält Details zu Datenzugriffsfehlern, die sich auf eine einzelne Operation beziehen, die den Anbieter betrifft.
 

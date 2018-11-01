@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Item-Eigenschaft Beispiel) (VJ++) TOCTitle: Item-Eigenschaft Beispiel) (VJ++) === Titel: Item-Eigenschaft Beispiel) (VJ++) TOCTitle: Item-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15) Ms:contentKeyID: 48547461 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Item-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Item property example (VJ++)
+ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15)
+ms:contentKeyID: 48547461
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 672eb8582f5e412a026be68cd9c56ddd603d2ac0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889658"
 ---
-
-<<<<<<< Kopf
 # <a name="item-property-example-vj"></a>Item-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="item-property-example-vj"></a>Item-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.
 

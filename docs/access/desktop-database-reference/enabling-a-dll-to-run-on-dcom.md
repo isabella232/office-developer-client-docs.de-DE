@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249859(v=office.15)
 ms:contentKeyID: 48547211
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 26c83c9770ce7372338a054090025c67c32a9c36
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 750848ce0e787506085899f4717730e1ca0a8f13
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473215"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868693"
 ---
 # <a name="enabling-a-dll-to-run-on-dcom"></a>Aktivieren einer DLL für die Ausführung mit DCOM
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In den folgenden Schritten wird skizziert, wie für Geschäftsobjekt-DLLs (Dynamic Link Libraries) ermöglicht wird, dass sie sowohl DCOM als auch Microsoft® Internetinformationsdienste (Internet Information Services, IIS) (HTTP) über Komponentendienste verwenden können.
 

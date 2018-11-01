@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Kapitel-Eigenschaft (ADO) TOCTitle: Kapitel-Eigenschaft (ADO) === Titel: Chapter-Eigenschaft (ADO) TOCTitle: Chapter-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: d7c9478e-487f-7023-1dd8-5313433dbc5e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15) Ms:contentKeyID: 48548014 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Chapter-Eigenschaft (ADO)
+TOCTitle: Chapter property (ADO)
+ms:assetid: d7c9478e-487f-7023-1dd8-5313433dbc5e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250085(v=office.15)
+ms:contentKeyID: 48548014
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 5eeb3c6e2e8c7b7f1c0f6e733c1b86545a5e954f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887824"
 ---
-
-<<<<<<< Kopf
 # <a name="chapter-property-ado"></a>Chapter-Eigenschaft (ADO)
-=======
-# <a name="chapter-property-ado"></a>Chapter-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
  
 
 Ein **Chapter**-OLE DB-Objekt wird aus einem **ADORecordsetConstruction**-Objekt abgerufen oder für dieses festgelegt. Bei Verwendung **platzieren\_Kapitel** , um das **Kapitel** -Objekt festzulegen, eine Teilmenge von Zeilen in ein ADO- **Recordset** -Objekt aktiviert ist. Hierdurch wird das aktuelle Kapitel des **Rowset** -Objekt. Lese-/Schreibzugriff.
@@ -31,11 +37,7 @@ Platzieren Sie HRESULT\_Kapitel (\[in\] lang lChapter);
 
   - Handle eines Kapitels.
 
-<<<<<<< Kopf
-## <a name="return-values"></a>Rückgabewert
-=======
 ## <a name="return-values"></a>Rückgabewerte
->>>>>>> master
 
 Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte, einschließlich S\_OK und E\_fehl.
 

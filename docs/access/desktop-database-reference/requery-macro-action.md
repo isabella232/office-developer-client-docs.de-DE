@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm30402
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9eea9445912b1a784d9926b2c044c4385a17ee69
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e8e5a25b8770f3542fade53d206ff20400ebf350
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885941"
 ---
 # <a name="requery-macro-action"></a>AktualisierenDaten-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie können die **AktualisierenDaten** -Aktion verwenden, um die Daten in einem angegebenen Steuerelement des aktiven Objekts durch erneutes Abfragen der Steuerelementquelle zu aktualisieren. Wenn kein Steuerelement angegeben ist, fragt diese Aktion die Objektquelle selbst erneut ab. Verwenden Sie diese Aktion, um sicherzustellen, dass das aktive Objekt oder eines seiner Steuerelemente die neuesten Daten anzeigt.
 

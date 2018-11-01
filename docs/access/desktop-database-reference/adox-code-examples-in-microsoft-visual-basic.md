@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249407(v=office.15)
 ms:contentKeyID: 48545383
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f810da6a4f979dac8d974fe50a6f615022d1cdaa
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ef7e2aaa4a16f7d2d93d2983cbc7865a321839ca
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862968"
+ms.locfileid: "25884611"
 ---
 # <a name="adox-code-examples-in-microsoft-visual-basic"></a>ADOX-Codebeispiele in Microsoft Visual Basic
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend zu erläutern. Alle Codebeispiele wurden mithilfe von Microsoft Visual Basic erstellt.
 
@@ -28,15 +28,9 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
 
 **Methoden**
 
-<<<<<<< HEAD
-  - [ Append-Methode (Columns und Tables) (VB-Beispiel) ](columns-and-tables-append-methods-name-property-example-vb.md)
-
-  - [Connection Close-Methode, Tabelle Typ-Eigenschaft (Beispiel) (VB)](connection-close-method-table-type-property-example-vb.md)
-=======
   - [Spalten und Tabellen Append Methoden, Name-Eigenschaft (Beispiel) (VB)](columns-and-tables-append-methods-name-property-example-vb.md)
 
   - [Connection Close-Methode vom Tabellentyp-Eigenschaft (Beispiel) (VB)](connection-close-method-table-type-property-example-vb.md)
->>>>>>> master
 
   - [Create-Methode (Beispiel) (VB)](create-method-example-vb.md)
 
@@ -48,11 +42,7 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
 
   - [Append-Methode (Indexes) (VB-Beispiel)](indexes-append-method-example-vb.md)
 
-<<<<<<< HEAD
-  - [Append-Keys-Methode, Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft-Beispiel) (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
-=======
   - [Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
->>>>>>> master
 
   - [Append-Methode (Procedures) (VB-Beispiel)](procedures-append-method-example-vb.md)
 
@@ -68,15 +58,6 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
 
 **Eigenschaften**
 
-<<<<<<< HEAD
-  - [Attributes-Eigenschaft (VB-Beispiel)](attributes-property-example-vb.md)
-
-  - [ActiveConnection-Eigenschaft (Catalog) (VB-Beispiel)](catalog-activeconnection-property-example-vb.md)
-
-  - [Clustered-Eigenschaft (VB-Beispiel)](clustered-property-example-vb.md)
-
-  - [Command und CommandText-Eigenschaften (Beispiel) (VB)](command-and-commandtext-properties-example-vb.md)
-=======
   - [Attributes-Eigenschaft (Beispiel) (VB)](attributes-property-example-vb.md)
 
   - [ActiveConnection-Eigenschaft (Catalog) (Beispiel) (VB)](catalog-activeconnection-property-example-vb.md)
@@ -84,21 +65,11 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
   - [Clustered-Eigenschaft (Beispiel) (VB)](clustered-property-example-vb.md)
 
   - [Command- und CommandText-Eigenschaft (Beispiel) (VB)](command-and-commandtext-properties-example-vb.md)
->>>>>>> master
 
   - [Command-Eigenschaft, Parameters-Auflistung (Beispiel) (VB)](parameters-collection-command-property-example-vb.md)
 
   - [CommandText-Eigenschaft, Views-Auflistung (Beispiel) (VB)](views-collection-commandtext-property-example-vb.md)
 
-<<<<<<< HEAD
-  - [DateCreated- und DateModified-Eigenschaft (VB-Beispiel)](datecreated-and-datemodified-properties-example-vb.md)
-
-  - [DefinedSize-Eigenschaft (VB-Beispiel)](definedsize-property-example-vb.md)
-
-  - [DeleteRule-Eigenschaft (VB-Beispiel)](deleterule-property-example-vb.md)
-
-  - [IndexNulls-Eigenschaft (Beispiel) (VB)](indexnulls-property-example-vb.md)
-=======
   - [DateCreated- und DateModified-Eigenschaft (Beispiel) (VB)](datecreated-and-datemodified-properties-example-vb.md)
 
   - [DefinedSize-Eigenschaft (Beispiel) (VB)](definedsize-property-example-vb.md)
@@ -106,21 +77,11 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
   - [DeleteRule-Eigenschaft (Beispiel) (VB)](deleterule-property-example-vb.md)
 
   - [IndexNulls-Eigenschaft (VB-Beispiel)](indexnulls-property-example-vb.md)
->>>>>>> master
 
   - [Key-Typ, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft, Schlüssel Append-Methode (VB-Beispiel)](keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb.md)
 
   - [Name-Eigenschaft, Spalten und Tabellen Append-Methoden (Beispiel) (VB)](columns-and-tables-append-methods-name-property-example-vb.md)
 
-<<<<<<< HEAD
-  - [NumericScale- und Precision-Eigenschaft (VB-Beispiel)](numericscale-and-precision-properties-example-vb.md)
-
-  - [ParentCatalog-Eigenschaft (VB-Beispiel)](parentcatalog-property-example-vb.md)
-
-  - [PrimaryKey- und Unique-Eigenschaft (VB-Beispiel)](primarykey-and-unique-properties-example-vb.md)
-
-  - [SortOrder-Eigenschaft (Beispiel) (VB)](sortorder-property-example-vb.md)
-=======
   - [NumericScale- und Precision-Eigenschaft (VB-Beispiel)](numericscale-and-precision-properties-example-vb.md)
 
   - [ParentCatalog-Eigenschaft (VB-Beispiel)](parentcatalog-property-example-vb.md)
@@ -128,23 +89,14 @@ Diese Themen stellen Beispielcode bereit, um die Verwendung von ADOX grundlegend
   - [PrimaryKey- und Unique-Eigenschaft (VB-Beispiel)](primarykey-and-unique-properties-example-vb.md)
 
   - [SortOrder-Eigenschaft (VB-Beispiel)](sortorder-property-example-vb.md)
->>>>>>> master
 
   - [Tabelle der Type-Eigenschaft, Connection Close-Methode (Beispiel) (VB)](connection-close-method-table-type-property-example-vb.md)
 
 **Auflistungen**
 
-<<<<<<< HEAD
-  - [Parameters-Auflistung, Command-Eigenschaft (VB-Beispiel)](parameters-collection-command-property-example-vb.md)
-
-  - [Views- und Fields-Auflistung (VB-Beispiel)](views-and-fields-collections-example-vb.md)
-
-  - [Views-Auflistung, CommandText-Eigenschaft (Beispiel) (VB)](views-collection-commandtext-property-example-vb.md)
-=======
   - [Parameters-Auflistung, Command-Eigenschaft (Beispiel) (VB)](parameters-collection-command-property-example-vb.md)
 
   - [Ansichten und Fields-Auflistungen Beispiel) (VB)](views-and-fields-collections-example-vb.md)
 
   - [Views-Auflistung, CommandText-Eigenschaft (Beispiel) (VB)](views-collection-commandtext-property-example-vb.md)
->>>>>>> master
 

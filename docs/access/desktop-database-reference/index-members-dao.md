@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835712(v=office.15)
 ms:contentKeyID: 48548290
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 18f885dadb5ef86f78ed0a19ca9b2a5feb424b34
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5389b4c3d297e5d820955f2586faafc31811b034
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476053"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883757"
 ---
 # <a name="index-members-dao"></a>Index Members (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Index-Objekte geben die Reihenfolge an, in der auf Datensätze aus Datenbanktabellen zugegriffen wird, und sie geben an, ob doppelte Datensätze akzeptiert werden. Dadurch stellen sie einen effizienten Zugriff auf Daten sicher. Bei externen Datenbanken beschreiben Index-Objekte die für externe Tabellen eingerichteten Indizes (gilt nur für Microsoft Access-Arbeitsbereiche).
 

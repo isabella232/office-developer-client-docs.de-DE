@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249716(v=office.15)
 ms:contentKeyID: 48546626
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5083f339860e0b28b43e2ceefeaf2cdd1de4b660
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f0379d38b6c38145a72d5ab41b7ee0e7ec45531b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889077"
 ---
 # <a name="issuing-commands-to-the-underlying-data-provider"></a>Ausstellen von Befehlen für den zugrunde liegenden Datenprovider
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Jeder Befehl, der nicht mit SHAPE beginnt, wird an den Datenprovider übergeben. Dies entspricht dem Ausstellen eines SHAPE-Befehls im Format "SHAPE {Providerbefehl}". Führen Sie diese Befehle *nicht* haben, um ein **Recordset-Objekt**zu erstellen. Beispielsweise ist "SHAPE {DROP TABLE MyTable}" ein absolut gültiger SHAPE-Befehl, vorausgesetzt der Datenprovider unterstützt DROP TABLE.
 

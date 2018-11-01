@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250232(v=office.15)
 ms:contentKeyID: 48548666
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 05287befde90319ad2844effef8ef2d47e1241b7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: baf1e4976b9669deed0a80f6405127afc88d521e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878291"
 ---
 # <a name="more-about-recordset-persistence"></a>Weitere Informationen zur Permanenz von Recordsets
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Das ADO-Recordset-Objekt unterstützt das Speichern von Inhalt für ein **Recordset** -Objekt mithilfe der [Save](save-method-ado.md) -Methode in einer Datei. Die permanent gespeicherte Datei kann auf einem lokalen Laufwerk, Netzwerkserver oder als URL auf einer Website vorhanden. Die Datei kann später mit der [Open](open-method-ado-recordset.md) -Methode entweder des **Recordset** -Objekts oder die [Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\)) -Methode des [Connection](connection-object-ado.md) -Objekts wiederhergestellt werden.
 

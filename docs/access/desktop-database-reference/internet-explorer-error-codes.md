@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249489(v=office.15)
 ms:contentKeyID: 48545726
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d5f4dca3854712b16faa4cd11305cd55497fc03f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2818fb05d5842c7f465bd47d1ce7eaa28ea00365
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473621"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882014"
 ---
 # <a name="internet-explorer-error-codes"></a>Internet Explorer-Fehlercodes
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In der folgenden Tabelle sind Microsoft Internet Explorer-Fehlercodes aufgeführt, die sich auf die Verwendung von Remote Data Service beziehen. Die positive Dezimalübersetzung der niederwertigen zwei Byte, die negative Dezimalübersetzung des gesamten Fehlercodes sowie die Hexadezimalwerte sind dargestellt.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249683(v=office.15)
 ms:contentKeyID: 48546496
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 388cbc5a69f57778d8a9a46db8d1dbec5ddf09d6
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: f53298d56f09b3df94c1b9e20158b3549317af6b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604963"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886536"
 ---
 # <a name="getpermissions-method-adox"></a>GetPermissions-Methode (ADOX)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt oder einen Objektcontainers zurück.
@@ -25,11 +25,7 @@ Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt oder e
 
 *ReturnValue* = *Gruppe_oder_benutzer*. GetPermissions (*Name*, *ObjectType* \[,*ObjectTypeId*\])
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Gibt einen **Long** -Wert zurück, der eine Bitmaske angibt, die die Berechtigungen enthält, über die die Gruppe oder der Benutzer für das Objekt verfügen. Dieser Wert kann eine bzw. mehrere der [RightsEnum](rightsenum.md)-Konstanten sein.
 

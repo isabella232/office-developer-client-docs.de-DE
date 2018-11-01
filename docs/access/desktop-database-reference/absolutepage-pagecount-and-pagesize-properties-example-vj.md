@@ -1,16 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: AbsolutePage-, PageCount- und PageSize Eigenschaft (Beispiel) (VJ++) TOCTitle: AbsolutePage-, PageCount- und PageSize Eigenschaft (Beispiel) (VJ++) Ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15) MS:contentKeyID: 48545480 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: AbsolutePage, PageCount, and PageSize properties example (VJ++)
+ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15)
+ms:contentKeyID: 48545480
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 6de53b8f0fc44b4aaf85f84f0a646e1eb80539f1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882147"
 ---
-
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VJ++)
 
-=== Titel: AbsolutePage-, PageCount- und PageSize-Eigenschaften-Beispiel) (VJ++) TOCTitle: AbsolutePage-, PageCount- und PageSize Eigenschaften Beispiel) (VJ++) Ms:assetid: 6cdf3880-1d77-5826-1d7b-7bf61a886d1b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249431(v=office.15) Ms:contentKeyID: 48545480 ms.date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vj"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaften-Beispiel) (VJ++)
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt.
 

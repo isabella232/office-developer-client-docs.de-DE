@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197340(v=office.15)
 ms:contentKeyID: 48546240
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: be630e54ef55fae335347dabd61440dfe457c5ed
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0092d3ad717b0f671273ca150698de005e7fe27f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474645"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881125"
 ---
 # <a name="querydefscount-property-dao"></a>QueryDefs.Count Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt die Anzahl der Objekte in der angegebenen Auflistung zurück. Schreibgeschützt.
 

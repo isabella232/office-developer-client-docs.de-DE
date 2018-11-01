@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: MarshalOptions-Eigenschaft (VC++-Beispiel) TOCTitle: MarshalOptions-Eigenschaft (VC++-Beispiel) === Titel: MarshalOptions-Eigenschaft (VC++-Beispiel) TOCTitle: MarshalOptions-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 8c47eb55-f86d-e4c0-9617-d2ac3c91199f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249617(v=office.15) Ms:contentKeyID: 48546236 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: MarshalOptions-Eigenschaft (Beispiel) (VC++)
+TOCTitle: MarshalOptions property example (VC++)
+ms:assetid: 8c47eb55-f86d-e4c0-9617-d2ac3c91199f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249617(v=office.15)
+ms:contentKeyID: 48546236
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 3d5043e104b9fd424cd1c13b641dc69cc32b6c91
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881524"
 ---
-
-<<<<<<< Kopf
 # <a name="marshaloptions-property-example-vc"></a>MarshalOptions-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="marshaloptions-property-example-vc"></a>MarshalOptions-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [MarshalOptions](marshaloptions-property-ado.md)-Eigenschaft verwendet, um die Zeilen anzugeben, die an den Server zurückgesendet werden: alle Zeilen oder nur geänderte Zeilen.
 

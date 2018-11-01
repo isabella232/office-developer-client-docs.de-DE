@@ -6,31 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249251(v=office.15)
 ms:contentKeyID: 48544757
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e1536b1a03ed0e7c873b2db06e76ee9b505ee00c
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: edfdd66ea1651f71e74e5f98c6f2a3ac2bf36207
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25604428"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885962"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>Systemanforderungen für die Adressbuchanwendung
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Die folgenden Software- und Datenbankanforderungen müssen erfüllt werden, um die Adressbuchanwendung einzurichten:
 
 **Softwareanforderungen**
 
-<<<<<<< HEAD die Server Computer die softwareanforderungen für die Ausführung dieser Webanwendung umfassen: === die Server Computer die softwareanforderungen für die Ausführung dieser Webanwendung umfassen:
->>>>>>> master
+Die Server-Computer-softwareanforderungen für die Ausführung dieser Webanwendung umfassen Folgendes:
 
   - Microsoft Windows NT® Server 4.0 mit Service Pack 3 oder höher oder Microsoft Windows® 2000 Server.
 
   - Microsoft Internetinformationsdienste (Internet Information Services, IIS), Version 3.0 oder höher, mit Active Server Pages.
 
-<<<<<<< HEAD der Software Anforderungen für Clientcomputer für die Ausführung dieser Webanwendung enthalten: === der Software Anforderungen für Clientcomputer für die Ausführung dieser Webanwendung enthalten:
->>>>>>> master
+Die Software Anforderungen für Clientcomputer für die Ausführung dieser Webanwendung umfassen:
 
   - Microsoft Internet Explorer 4.0 oder höher.
 

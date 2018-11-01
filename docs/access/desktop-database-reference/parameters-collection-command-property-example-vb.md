@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Parameters-Auflistung, Command-Eigenschaft Beispiel) (VB) TOCTitle: Parameters-Auflistung, Command-Eigenschaft Beispiel) (VB) === Titel: Parameters-Auflistung, Command-Eigenschaft (Beispiel) (VB) TOCTitle: Parameter Auflistung, Command-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 3bb3e6e1-0ee5-70bb-7f2c-beb461d3914a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249151(v=office.15) Ms:contentKeyID: 48544290 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Parameters-Auflistung, Command-Eigenschaft (Beispiel) (VB)
+TOCTitle: Parameters Collection, Command property example (VB)
+ms:assetid: 3bb3e6e1-0ee5-70bb-7f2c-beb461d3914a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249151(v=office.15)
+ms:contentKeyID: 48544290
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 2b7b34d06acd2e58950d238cefccbc2ba0a24974
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878451"
 ---
-
-<<<<<<< Kopf
-# <a name="parameters-collection-command-property-example-vb"></a>Parameters-Auflistung, Command-Eigenschaft (VB-Beispiel)
-=======
 # <a name="parameters-collection-command-property-example-vb"></a>Parameters-Auflistung, Command-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Codebeispiel wird die Verwendung der [Command](command-property-adox.md)-Eigenschaft mit dem [Command](command-object-ado.md)-Objekt veranschaulicht, um Parameterinformationen für die Prozedur abzurufen.
 

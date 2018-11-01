@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249371(v=office.15)
 ms:contentKeyID: 48545239
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 00258406ec48b6a4d2a3cf2691e7d54776d30fc9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 023109586d13dc25846c8c145746aaf97fc22c15
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472734"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888370"
 ---
 # <a name="event-parameters"></a>Ereignisparameter
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Jeder Ereignishandler hat einen Statusparameter, durch den der Ereignishandler gesteuert wird. Für Complete-Ereignisse wird dieser Parameter auch verwendet, um den Erfolg oder das Fehlschlagen der Operation, durch die das Ereignis generiert wurde, anzugeben. Die meisten Complete-Ereignisse haben auch einen Fehlerparameter zum Bereitstellen von Informationen zu möglicherweise aufgetretenen Fehlern sowie mindestens einen Objektparameter, durch den auf die zum Ausführen der Operation verwendeten ADO-Objekte verwiesen wird. Beispielsweise enthält das ExecuteComplete-Ereignis Objektparameter für die dem Ereignis zugeordneten Objekte Command, Recordset und Connection. Im folgenden Beispiel für Microsoft Visual Basic sehen Sie die Objekte pCommand, pRecordset und pConnection, die die von der Execute-Methode verwendeten Objekte Command, Recordset und Connection darstellen.

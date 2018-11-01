@@ -1,21 +1,21 @@
 ---
-title: Microsoft ActiveX Data Objects reference
+title: Referenz zu Microsoft ActiveX Data Objects
 TOCTitle: Microsoft ActiveX Data Objects Reference
 ms:assetid: 235fc575-8a2e-913c-fa3d-bb86256733f9
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249010(v=office.15)
 ms:contentKeyID: 48543728
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a774dc4ee20e1f97e2b77d8835abb0524881e465
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 54d605beb0f6653695dafcd4a9ffffeb2f097d5b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606759"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871430"
 ---
-# <a name="microsoft-activex-data-objects-reference"></a>Microsoft ActiveX Data Objects reference
+# <a name="microsoft-activex-data-objects-reference"></a>Referenz zu Microsoft ActiveX Data Objects
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 ## <a name="purpose"></a>Zweck
 
@@ -23,9 +23,7 @@ Mit Microsoft ActiveX Data Objects (ADO) können Clientanwendungen über einen O
 
 ## <a name="rds"></a>RDS
 
-<<<<<<< HEAD ADO bietet auch Remote Data Service (RDS), mit dem Sie Daten von einem Server in einer Clientanwendung oder eine Webseite, die Daten auf dem Client manipulieren und Updates auf dem Server in einer einzelnen Roundtrip wieder verschieben können.
-=== ADO bietet außerdem Remote Data Service (RDS), mit dem Sie Daten von einem Server zu einer Clientanwendung oder eine Webseite, die Daten auf dem Client manipulieren und Updates auf dem Server in einer einzelnen Roundtrip wieder verschieben können.
->>>>>>> master
+ADO bietet außerdem Remote Data Service (RDS), mit dem Sie Daten von einem Server zu einer Clientanwendung oder eine Webseite, die Daten auf dem Client manipulieren und Updates auf dem Server in einer einzelnen Roundtrip wieder verschieben können.
 
 ## <a name="ado-md"></a>ADO MD
 

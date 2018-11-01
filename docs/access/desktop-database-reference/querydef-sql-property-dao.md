@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1053054
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dfe5581e863dbb83cbb46514b247c51721698671
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a8e33f1a22e1ffd6dffbb67b8bafd5fae78f39c6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472939"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881615"
 ---
 # <a name="querydefsql-property-dao"></a>QueryDef.SQL-Eigenschaft (DAO)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Legt die SQL-Anweisung fest, die die Abfrage definiert, die von einem **[QueryDef](querydef-object-dao.md)** -Objekt ausgeführt wird, oder gibt sie zurück.
 

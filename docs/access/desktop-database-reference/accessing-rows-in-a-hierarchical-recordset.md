@@ -1,30 +1,24 @@
 ---
-<<<<<<< HEAD-Titel: Zugreifen auf Zeilen in einem hierarchischen Recordset TOCTitle: Zugreifen auf Zeilen in einem hierarchischen Recordset Ms:assetid: db59b152-b780-539c-17ef-462e8adfb26e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250106(v=office.15) Ms:contentKeyID: 48548104 ms.date: 09/18 / 2015 Mtps_version: Office. 15
+title: Zugreifen auf Zeilen in einem hierarchischen Recordset
+TOCTitle: Accessing rows in a hierarchical Recordset
+ms:assetid: db59b152-b780-539c-17ef-462e8adfb26e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250106(v=office.15)
+ms:contentKeyID: 48548104
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 3041aa1486f9630a36383dde4ad675c50c799339
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870030"
 ---
-
 # <a name="accessing-rows-in-a-hierarchical-recordset"></a>Zugreifen auf Zeilen in einem hierarchischen Recordset
 
-=== Titel: Zugreifen auf Zeilen in einem hierarchischen Recordset TOCTitle: Zugreifen auf Zeilen in einem hierarchischen Recordset Ms:assetid: db59b152-b780-539c-17ef-462e8adfb26e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250106(v=office.15) Ms:contentKeyID: 48548104 ms.date: 10/17/2018 Mtps_version: V = Office.15
----
-
-# <a name="accessing-rows-in-a-hierarchical-recordset"></a>Zugreifen auf Zeilen in einem hierarchischen Recordset
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Das folgende Beispiel zeigt die notwendigen Schritte zum Zugreifen auf Zeilen in einem hierarchischen [Recordset](recordset-object-ado.md):
 
-<<<<<<< Kopf
-1.  Recordset-Objekte aus den Tabellen authors und titleauthor werden nach Autor-Nr. miteinander in Beziehung gesetzt.
-
-2.  In der äußeren Schleife werden der Vor- und Nachname, der Status und die Identifikation jedes Autors angezeigt.
-
-3.  Das angefügte **Recordset** für jede Zeile wird aus der **Fields**-Auflistung abgerufen und *rstTitleAuthor* zugewiesen.
-
-4.  In der inneren Schleife werden vier Felder aus jeder Zeile im angefügten **Recordset** angezeigt.
-
-<a name="the-stayinsyncstayinsync-property-adomd-property-is-set-to-false-for-purposes-of-illustration--so-you-can-see-the-chapter-change-explicitly-in-each-iteration-of-the-outer-loop-however-the-example-will-be-more-efficient-if-the-assignment-in-step-3-is-moved-before-the-first-line-in-step-2-so-that-the-assignment-is-performed-only-once-then-set-the-stayinsync-property-to-true-so-that-rsttitleauthor-will-implicitly-and-automatically-change-to-the-corresponding-chapter-whenever-rst-moves-to-a-new-row"></a>(Die [StayInSync](stayinsync-property-ado.md)-Eigenschaft wird zu Veranschaulichungszwecken auf FALSE festgelegt - so können Sie die Kapiteländerung in den einzelnen Iterationen der äußeren Schleife explizit sehen. Das Beispiel ist jedoch effizienter, wenn die Zuweisung in Schritt 3 vor die erste Zeile in Schritt 2 verschoben wird, sodass die Zuweisung nur ein Mal ausgeführt wird. Klicken Sie dann die **StayInSync** -Eigenschaft auf TRUE festgelegt, sodass *RstTitleAuthor* implizit und automatisch in das entsprechende Kapitel geändert wird, wenn *Rst* an eine neue Zeile verschoben wird.)
-=======
 1. Recordset-Objekte aus den Tabellen authors und titleauthor werden nach Autor-Nr. miteinander in Beziehung gesetzt.
 
 2. In der äußeren Schleife werden der Vor- und Nachname, der Status und die Identifikation jedes Autors angezeigt.
@@ -35,7 +29,6 @@ Das folgende Beispiel zeigt die notwendigen Schritte zum Zugreifen auf Zeilen in
 
 > [!NOTE] 
 > [StayInSync](stayinsync-property-ado.md) -Eigenschaft wird zur Veranschaulichung, auf FALSE festgelegt, damit Sie sehen können, das Kapitel in jeder Iteration der äußeren Schleife explizit ändern. Das Beispiel ist jedoch effizienter, wenn die Zuweisung in Schritt 3 vor die erste Zeile in Schritt 2 verschoben wird, sodass die Zuweisung nur ein Mal ausgeführt wird. **StayInSync** -Eigenschaft auf TRUE festgelegt, sodass *RstTitleAuthor* implizit und automatisch in das entsprechende Kapitel geändert wird, wenn *Rst* an eine neue Zeile verschoben wird.
->>>>>>> master
 
 **Beispiel**
 

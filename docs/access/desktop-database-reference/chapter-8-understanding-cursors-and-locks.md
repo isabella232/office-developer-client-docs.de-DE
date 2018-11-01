@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249598(v=office.15)
 ms:contentKeyID: 48546139
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6ff5f62bfaeb182e3399eaa82865fb492853ef30
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 4b98952e64eac3c35ed67f50e50776c08e594474
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861099"
+ms.locfileid: "25869085"
 ---
 # <a name="chapter-8-understanding-cursors-and-locks"></a>Kapitel 8: Grundlegendes zu Cursorn und Sperren
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie sollten unbedingt die Funktionsweise von Cursorn kennen, damit Sie den optimalen und effizientesten Cursortyp für die Datenzugriffsanforderungen einer Anwendung auswählen können. Durch eine nicht optimale Cursorkonfiguration können Datenzugriffsvorgänge extrem langsam werden.
 

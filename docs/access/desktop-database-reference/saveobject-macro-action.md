@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm116962
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 107b9b97b22f01b1caaf09ae10936abd8484684f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f5cbb47c8c4b1ecc4990ca53835f8ae9f7ed4d1b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474597"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886571"
 ---
 # <a name="saveobject-macro-action"></a>SpeichernObjekt-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Die **Speichernobjekt** -Aktion können Sie eine angegebene Access-Objekt oder das aktive Objekt speichern, wenn keines angegeben ist. Sie können auch das aktive Objekt unter einem neuen Namen in einigen Fällen speichern (diese Funktion identisch mit dem Befehl **Speichern unter** auf der **Symbolleiste für den Schnellzugriff**).
 

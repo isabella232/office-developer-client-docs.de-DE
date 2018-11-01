@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249647(v=office.15)
 ms:contentKeyID: 48546385
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5ad3b3163a2169d90072335d5bc827700b99c73f
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c1555883ef8305225d6ddd1969d98de082288a6b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473538"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887537"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB-Anbieter für Microsoft Active Directory-Dienst
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mithilfe des Microsoft ADSI-Anbieters (Active Directory Service Interfaces) kann ADO über ADSI eine Verbindung mit heterogenen Verzeichnisdiensten herstellen. Dadurch erlangen ADO-Anwendungen schreibgeschützten Zugriff auf die Verzeichnisdienste von Microsoft Windows NT 4.0 und Microsoft Windows 2000 sowie auf sämtliche LDAP-kompatible Verzeichnisdienste und Novell Directory Services. ADSI selbst basiert auf einem Anbietermodell. Wenn also ein neuer Anbieter Zugriff auf ein anderes Verzeichnis gewährt, kann die ADO-Anwendung problemlos auf dieses Verzeichnis zugreifen. Der ADSI-Anbieter ist ein Freethreadanbieter, der Unicode verwendet.
 

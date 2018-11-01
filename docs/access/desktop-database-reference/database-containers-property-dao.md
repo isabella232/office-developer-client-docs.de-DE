@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1053173
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fe835aaf2f970dfa79da71727a8502319ecf7576
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 70c6041746daf21d8f8ff603da22e5ad2c7956d0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887404"
 ---
 # <a name="databasecontainers-property-dao"></a>Database.Containers Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt eine **Containers**-Auflistung zurück, die alle **Container**-Objekte in der angegebenen Datenbank darstellt. Schreibgeschützt.
 

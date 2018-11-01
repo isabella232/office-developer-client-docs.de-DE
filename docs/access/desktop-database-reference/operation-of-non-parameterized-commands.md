@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249651(v=office.15)
 ms:contentKeyID: 48546395
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6f45bb8e148fe2ba252b2620d41685006302cfdb
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a3e1799e5e40ffa3ffcd6698900b8678b309696e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473458"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885157"
 ---
 # <a name="operation-of-non-parameterized-commands"></a>Verwenden von nicht parametrisierten Befehlen
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Für nicht parametrisierte Befehle werden alle Providerbefehle ausgeführt, und die **Recordset** -Objekte werden während der Befehlsausführung erstellt. Wenn der Befehl synchron ausgeführt wird, werden alle **Recordset** -Objekte vollständig aufgefüllt. Wenn ein asynchroner Auffüllungsmodus ausgewählt wurde, hängt der Auffüllungsstatus der **Recordset** -Objekte vom Auffüllungsmodus und der Größe der **Recordset** -Objekte ab.
 
