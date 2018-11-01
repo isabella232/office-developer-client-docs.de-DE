@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248810(v=office.15)
 ms:contentKeyID: 48543026
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1bc7fb068a4b170955d005aa1e94ec08dabd4b5d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ef436d1df1aa659f3fb942eb93852a932f9676c6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862569"
+ms.locfileid: "25886179"
 ---
-# <a name="delete-method-example-vj"></a><span data-ttu-id="1dbda-102">Delete-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="1dbda-102">Delete method example (VJ++)</span></span>
+# <a name="delete-method-example-vj"></a><span data-ttu-id="bd479-102">Delete-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="bd479-102">Delete method example (VJ++)</span></span>
 
 
-<span data-ttu-id="1dbda-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="1dbda-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="bd479-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bd479-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1dbda-104">In diesem Beispiel wird die [Delete](delete-method-ado-recordset.md)-Methode verwendet, um einen angegebenen Datensatz aus einem [Recordset](recordset-object-ado.md)-Objekt zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="1dbda-104">This example uses the [Delete](delete-method-ado-recordset.md) method to remove a specified record from a [Recordset](recordset-object-ado.md).</span></span>
+<span data-ttu-id="bd479-104">In diesem Beispiel wird die [Delete](delete-method-ado-recordset.md)-Methode verwendet, um einen angegebenen Datensatz aus einem [Recordset](recordset-object-ado.md)-Objekt zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="bd479-104">This example uses the [Delete](delete-method-ado-recordset.md) method to remove a specified record from a [Recordset](recordset-object-ado.md).</span></span>
 
 ```java 
  

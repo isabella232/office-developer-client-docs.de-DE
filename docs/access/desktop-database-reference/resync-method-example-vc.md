@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249229(v=office.15)
 ms:contentKeyID: 48544665
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 021b7d92c97a343e74068c41cae29acbb059855b
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: e87035c751bf5542a13ab7e750415a990a14adf7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862505"
+ms.locfileid: "25885367"
 ---
-# <a name="resync-method-example-vc"></a><span data-ttu-id="d5e73-102">Resync-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="d5e73-102">Resync method example (VC++)</span></span>
+# <a name="resync-method-example-vc"></a><span data-ttu-id="fd7a5-102">Resync-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="fd7a5-102">Resync method example (VC++)</span></span>
 
 
-<span data-ttu-id="d5e73-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="d5e73-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="fd7a5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="fd7a5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d5e73-104">In diesem Beispiel wird die Verwendung der [Resync](resync-method-ado.md)-Methode zum Aktualisieren von Daten in einer statischen Datensatzgruppe veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="d5e73-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
+<span data-ttu-id="fd7a5-104">In diesem Beispiel wird die Verwendung der [Resync](resync-method-ado.md)-Methode zum Aktualisieren von Daten in einer statischen Datensatzgruppe veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="fd7a5-104">This example demonstrates using the [Resync](resync-method-ado.md) method to refresh data in a static recordset.</span></span>
 
 ```cpp 
  

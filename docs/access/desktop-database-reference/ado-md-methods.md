@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248929(v=office.15)
 ms:contentKeyID: 48543456
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f4ae7a7997f7bbdd56eebbb9e93b9f54f6327d3c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7543509c9d53edef3e734f5c54de1efa6c9d80ce
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874118"
 ---
-# <a name="ado-md-methods"></a><span data-ttu-id="7a76b-102">ADO MD-Methoden</span><span class="sxs-lookup"><span data-stu-id="7a76b-102">ADO MD Methods</span></span>
+# <a name="ado-md-methods"></a><span data-ttu-id="a2c75-102">ADO MD-Methoden</span><span class="sxs-lookup"><span data-stu-id="a2c75-102">ADO MD Methods</span></span>
 
 
-<span data-ttu-id="7a76b-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="7a76b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="a2c75-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a2c75-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 <table>
 <colgroup>
@@ -25,12 +25,12 @@ ms.locfileid: "25474326"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="7a76b-104"><a href="close-method-ado-md.md">Close</a></span><span class="sxs-lookup"><span data-stu-id="7a76b-104"><a href="close-method-ado-md.md">Close</a></span></span></p></td>
-<td><p><span data-ttu-id="7a76b-105">Schließt eine geöffnete Zellmenge.</span><span class="sxs-lookup"><span data-stu-id="7a76b-105">Closes an open cellset.</span></span></p></td>
+<td><p><span data-ttu-id="a2c75-104"><a href="close-method-ado-md.md">Close</a></span><span class="sxs-lookup"><span data-stu-id="a2c75-104"><a href="close-method-ado-md.md">Close</a></span></span></p></td>
+<td><p><span data-ttu-id="a2c75-105">Schließt eine geöffnete Zellmenge.</span><span class="sxs-lookup"><span data-stu-id="a2c75-105">Closes an open cellset.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="7a76b-106"><a href="open-method-ado-md.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="7a76b-106"><a href="open-method-ado-md.md">Open</a></span></span></p></td>
-<td><p><span data-ttu-id="7a76b-107">Ruft die Ergebnisse einer multidimensionalen Abfrage ab, und gibt die Ergebnisse an eine Zellmenge zurück.</span><span class="sxs-lookup"><span data-stu-id="7a76b-107">Retrieves the results of a multidimensional query and returns the results to a cellset.</span></span></p></td>
+<td><p><span data-ttu-id="a2c75-106"><a href="open-method-ado-md.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="a2c75-106"><a href="open-method-ado-md.md">Open</a></span></span></p></td>
+<td><p><span data-ttu-id="a2c75-107">Ruft die Ergebnisse einer multidimensionalen Abfrage ab, und gibt die Ergebnisse an eine Zellmenge zurück.</span><span class="sxs-lookup"><span data-stu-id="a2c75-107">Retrieves the results of a multidimensional query and returns the results to a cellset.</span></span></p></td>
 </tr>
 </tbody>
 </table>

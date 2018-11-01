@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249778(v=office.15)
 ms:contentKeyID: 48546898
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: df52f5bf2dbada1176a76cda3b77dcbc9966b313
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 432c54c16984135bb5492854e2a9e9ac1ca94336
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473388"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883365"
 ---
-# <a name="sending-the-updates-updatebatch"></a><span data-ttu-id="846e3-102">Senden der Aktualisierungen: UpdateBatch</span><span class="sxs-lookup"><span data-stu-id="846e3-102">Sending the Updates: UpdateBatch</span></span>
+# <a name="sending-the-updates-updatebatch"></a><span data-ttu-id="86167-102">Sending the Updates: UpdateBatch</span><span class="sxs-lookup"><span data-stu-id="86167-102">Sending the Updates: UpdateBatch</span></span>
 
 
-<span data-ttu-id="846e3-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="846e3-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="86167-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="86167-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="sending-the-updates-updatebatch-method"></a><span data-ttu-id="846e3-104">Senden der Aktualisierungen: UpdateBatch-Methode</span><span class="sxs-lookup"><span data-stu-id="846e3-104">Sending the Updates: UpdateBatch Method</span></span>
+## <a name="sending-the-updates-updatebatch-method"></a><span data-ttu-id="86167-104">Senden der Aktualisierungen: UpdateBatch-Methode</span><span class="sxs-lookup"><span data-stu-id="86167-104">Sending the Updates: UpdateBatch Method</span></span>
 
-<span data-ttu-id="846e3-p101">Mit dem folgenden Code wird ein **Recordset** -Objekt im Batchmodus geöffnet, indem die **LockType** -Eigenschaft auf **adLockBatchOptimistic** und die **CursorLocation** auf **adUseClient** festgelegt wird. Zwei neue Datensätze werden hinzugefügt, und der Wert eines Felds in einem vorhandenen Datensatz wird geändert, wobei die ursprünglichen Werte gespeichert werden. Anschließend wird **UpdateBatch** aufgerufen, um die Änderungen an die Datenquelle zurückzusenden.</span><span class="sxs-lookup"><span data-stu-id="846e3-p101">The following code opens a **Recordset** in batch mode by setting the **LockType** property to **adLockBatchOptimistic** and the **CursorLocation** to **adUseClient**. It adds two new records and changes the value of a field in an existing record, saving the original values, and then calls **UpdateBatch** to send the changes back to the data source.</span></span>
+<span data-ttu-id="86167-p101">Mit dem folgenden Code wird ein **Recordset** -Objekt im Batchmodus geöffnet, indem die **LockType** -Eigenschaft auf **adLockBatchOptimistic** und die **CursorLocation** auf **adUseClient** festgelegt wird. Zwei neue Datensätze werden hinzugefügt, und der Wert eines Felds in einem vorhandenen Datensatz wird geändert, wobei die ursprünglichen Werte gespeichert werden. Anschließend wird **UpdateBatch** aufgerufen, um die Änderungen an die Datenquelle zurückzusenden.</span><span class="sxs-lookup"><span data-stu-id="86167-p101">The following code opens a **Recordset** in batch mode by setting the **LockType** property to **adLockBatchOptimistic** and the **CursorLocation** to **adUseClient**. It adds two new records and changes the value of a field in an existing record, saving the original values, and then calls **UpdateBatch** to send the changes back to the data source.</span></span>
 
 ```vb 
  
@@ -49,5 +49,5 @@ ms.locfileid: "25473388"
 'EndBatchUpdate 
 ```
 
-<span data-ttu-id="846e3-107">Wenn Sie den aktuellen Datensatz bearbeiten oder beim Aufrufen der **UpdateBatch** -Methode einen neuen Datensatz hinzufügen, ruft ADO automatisch die **Update** -Methode auf, um ausstehende Änderungen am aktuellen Datensatz zu speichern, bevor die Batchänderungen an den Anbieter übertragen werden.</span><span class="sxs-lookup"><span data-stu-id="846e3-107">If you are editing the current record or adding a new record when you call the **UpdateBatch** method, ADO will automatically call the **Update** method to save any pending changes to the current record before transmitting the batched changes to the provider.</span></span>
+<span data-ttu-id="86167-107">Wenn Sie den aktuellen Datensatz bearbeiten oder beim Aufrufen der **UpdateBatch** -Methode einen neuen Datensatz hinzufügen, ruft ADO automatisch die **Update** -Methode auf, um ausstehende Änderungen am aktuellen Datensatz zu speichern, bevor die Batchänderungen an den Anbieter übertragen werden.</span><span class="sxs-lookup"><span data-stu-id="86167-107">If you are editing the current record or adding a new record when you call the **UpdateBatch** method, ADO will automatically call the **Update** method to save any pending changes to the current record before transmitting the batched changes to the provider.</span></span>
 

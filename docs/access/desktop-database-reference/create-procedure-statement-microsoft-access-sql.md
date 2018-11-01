@@ -8,46 +8,46 @@ ms.date: 10/18/2018
 mtps_version: v=office.15
 dev_langs:
 - sql
-ms.openlocfilehash: 573ec86a573697ebe52886535f8544bbaab61d7d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 2cd84f6e84d35cb24b2fd9b74146f3d401bbaba6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861464"
+ms.locfileid: "25869442"
 ---
-# <a name="create-procedure-statement-microsoft-access-sql"></a><span data-ttu-id="e512a-102">CREATE PROCEDURE-Anweisung (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="e512a-102">CREATE PROCEDURE statement (Microsoft Access SQL)</span></span>
+# <a name="create-procedure-statement-microsoft-access-sql"></a><span data-ttu-id="85f81-102">CREATE PROCEDURE-Anweisung (Microsoft Access SQL)</span><span class="sxs-lookup"><span data-stu-id="85f81-102">CREATE PROCEDURE statement (Microsoft Access SQL)</span></span>
 
-<span data-ttu-id="e512a-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="e512a-103">**Applies to**: Access 2013 | Office 2013</span></span> 
+<span data-ttu-id="85f81-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="85f81-103">**Applies to**: Access 2013, Office 2013</span></span> 
 
-<span data-ttu-id="e512a-104">Erstellt eine gespeicherte Prozedur.</span><span class="sxs-lookup"><span data-stu-id="e512a-104">Creates a stored procedure.</span></span>
+<span data-ttu-id="85f81-104">Erstellt eine gespeicherte Prozedur.</span><span class="sxs-lookup"><span data-stu-id="85f81-104">Creates a stored procedure.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e512a-105">[!HINWEIS] Vom Microsoft Access-Datenbankmodul wird die Verwendung der CREATE PROCEDURE- oder anderer DDL-Anweisungen in Datenbanken, die nicht aus dem Microsoft Jet-Datenbankmodul stammen, nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="e512a-105">The Microsoft Access database engine does not support the use of CREATE PROCEDURE, or any of the DDL statements, with non-Microsoft Jet database engine databases.</span></span>
+> <span data-ttu-id="85f81-105">[!HINWEIS] Vom Microsoft Access-Datenbankmodul wird die Verwendung der CREATE PROCEDURE- oder anderer DDL-Anweisungen in Datenbanken, die nicht aus dem Microsoft Jet-Datenbankmodul stammen, nicht unterstützt.</span><span class="sxs-lookup"><span data-stu-id="85f81-105">The Microsoft Access database engine does not support the use of CREATE PROCEDURE, or any of the DDL statements, with non-Microsoft Jet database engine databases.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e512a-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="e512a-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="85f81-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="85f81-106">Syntax</span></span>
 
-<span data-ttu-id="e512a-107">CREATE PROCEDURE *Prozedur* \[ *param1 Datentyp*\[, *param2 Datentyp*\[,... \] \] Als SQL-Anweisung</span><span class="sxs-lookup"><span data-stu-id="e512a-107">CREATE PROCEDURE *procedure* \[*param1 datatype*\[, *param2 datatype*\[, …\]\] AS sqlstatement</span></span>
+<span data-ttu-id="85f81-107">CREATE PROCEDURE *Prozedur* \[ *param1 Datentyp*\[, *param2 Datentyp*\[,... \] \] Als SQL-Anweisung</span><span class="sxs-lookup"><span data-stu-id="85f81-107">CREATE PROCEDURE *procedure* \[*param1 datatype*\[, *param2 datatype*\[, …\]\] AS sqlstatement</span></span>
 
-<span data-ttu-id="e512a-108">Die CREATE PROCEDURE-Anweisung besteht aus drei Komponenten:</span><span class="sxs-lookup"><span data-stu-id="e512a-108">The CREATE PROCEDURE statement has these parts:</span></span>
+<span data-ttu-id="85f81-108">Die CREATE PROCEDURE-Anweisung besteht aus drei Komponenten:</span><span class="sxs-lookup"><span data-stu-id="85f81-108">The CREATE PROCEDURE statement has these parts:</span></span>
 
-|<span data-ttu-id="e512a-109">Komponente</span><span class="sxs-lookup"><span data-stu-id="e512a-109">Part</span></span>|<span data-ttu-id="e512a-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e512a-110">Description</span></span>|
+|<span data-ttu-id="85f81-109">Komponente</span><span class="sxs-lookup"><span data-stu-id="85f81-109">Part</span></span>|<span data-ttu-id="85f81-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="85f81-110">Description</span></span>|
 |:---|:----------|
-|<span data-ttu-id="e512a-111">*Prozedur*</span><span class="sxs-lookup"><span data-stu-id="e512a-111">*procedure*</span></span>|<span data-ttu-id="e512a-p101">Ein Name für die Prozedur. Bei der Namensgebung müssen die Standardbenennungsregeln beachtet werden.</span><span class="sxs-lookup"><span data-stu-id="e512a-p101">A name for the procedure. It must follow standard naming conventions.</span></span>|
-|<span data-ttu-id="e512a-114">*Param1*, *Param2*</span><span class="sxs-lookup"><span data-stu-id="e512a-114">*param1*, *param2*</span></span>|<span data-ttu-id="e512a-p102">Einer von 255 Feldnamen oder Parametern. Beispiel:
-</span><span class="sxs-lookup"><span data-stu-id="e512a-p102">From one to 255 field names or parameters. For example:</span></span><br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/><span data-ttu-id="e512a-117">Weitere Informationen zu Parametern finden Sie unter [Parameter](parameters-declaration-microsoft-access-sql.md).</span><span class="sxs-lookup"><span data-stu-id="e512a-117">For more information about parameters, see [PARAMETERS](parameters-declaration-microsoft-access-sql.md).</span></span>|
-|<span data-ttu-id="e512a-118">*Datentyp*</span><span class="sxs-lookup"><span data-stu-id="e512a-118">*datatype*</span></span>|<span data-ttu-id="e512a-119">Einer der wichtigsten [Microsoft Access SQL-Datentypen](sql-data-types.md) oder eines der Synonyme.</span><span class="sxs-lookup"><span data-stu-id="e512a-119">One of the primary [Microsoft Access SQL data types](sql-data-types.md) or their synonyms.</span></span>|
-|<span data-ttu-id="e512a-120">*SQL-Anweisung*</span><span class="sxs-lookup"><span data-stu-id="e512a-120">*sqlstatement*</span></span>|<span data-ttu-id="e512a-121">Eine SQL-Anweisung wie SELECT, UPDATE, DELETE, INSERT, CREATE TABLE, DROP TABLE usw.</span><span class="sxs-lookup"><span data-stu-id="e512a-121">An SQL statement such as SELECT, UPDATE, DELETE, INSERT, CREATE TABLE, DROP TABLE, and so on.</span></span>|
+|<span data-ttu-id="85f81-111">*Prozedur*</span><span class="sxs-lookup"><span data-stu-id="85f81-111">*procedure*</span></span>|<span data-ttu-id="85f81-p101">Ein Name für die Prozedur. Bei der Namensgebung müssen die Standardbenennungsregeln beachtet werden.</span><span class="sxs-lookup"><span data-stu-id="85f81-p101">A name for the procedure. It must follow standard naming conventions.</span></span>|
+|<span data-ttu-id="85f81-114">*Param1*, *Param2*</span><span class="sxs-lookup"><span data-stu-id="85f81-114">*param1*, *param2*</span></span>|<span data-ttu-id="85f81-p102">Einer von 255 Feldnamen oder Parametern. Beispiel:
+</span><span class="sxs-lookup"><span data-stu-id="85f81-p102">From one to 255 field names or parameters. For example:</span></span><br/><br/>`CREATE PROCEDURE Sales_By_Country [Beginning Date] DateTime, [Ending Date] DateTime;`<br/><br/><span data-ttu-id="85f81-117">Weitere Informationen zu Parametern finden Sie unter [Parameter](parameters-declaration-microsoft-access-sql.md).</span><span class="sxs-lookup"><span data-stu-id="85f81-117">For more information about parameters, see [PARAMETERS](parameters-declaration-microsoft-access-sql.md).</span></span>|
+|<span data-ttu-id="85f81-118">*Datentyp*</span><span class="sxs-lookup"><span data-stu-id="85f81-118">*datatype*</span></span>|<span data-ttu-id="85f81-119">Einer der wichtigsten [Microsoft Access SQL-Datentypen](sql-data-types.md) oder eines der Synonyme.</span><span class="sxs-lookup"><span data-stu-id="85f81-119">One of the primary [Microsoft Access SQL data types](sql-data-types.md) or their synonyms.</span></span>|
+|<span data-ttu-id="85f81-120">*SQL-Anweisung*</span><span class="sxs-lookup"><span data-stu-id="85f81-120">*sqlstatement*</span></span>|<span data-ttu-id="85f81-121">Eine SQL-Anweisung wie SELECT, UPDATE, DELETE, INSERT, CREATE TABLE, DROP TABLE usw.</span><span class="sxs-lookup"><span data-stu-id="85f81-121">An SQL statement such as SELECT, UPDATE, DELETE, INSERT, CREATE TABLE, DROP TABLE, and so on.</span></span>|
 
 
-## <a name="remarks"></a><span data-ttu-id="e512a-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e512a-122">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="85f81-122">Hinweise</span><span class="sxs-lookup"><span data-stu-id="85f81-122">Remarks</span></span>
 
-<span data-ttu-id="e512a-123">Eine SQL-Prozedur besteht aus einer PROCEDURE-Klausel, die den Namen der Prozedur angibt, einer optionalen Liste mit Parameterdefinitionen und einer einzelnen SQL-Anweisung.</span><span class="sxs-lookup"><span data-stu-id="e512a-123">An SQL procedure consists of a PROCEDURE clause that specifies the name of the procedure, an optional list of parameter definitions, and a single SQL statement.</span></span>
+<span data-ttu-id="85f81-123">Eine SQL-Prozedur besteht aus einer PROCEDURE-Klausel, die den Namen der Prozedur angibt, einer optionalen Liste mit Parameterdefinitionen und einer einzelnen SQL-Anweisung.</span><span class="sxs-lookup"><span data-stu-id="85f81-123">An SQL procedure consists of a PROCEDURE clause that specifies the name of the procedure, an optional list of parameter definitions, and a single SQL statement.</span></span>
 
-<span data-ttu-id="e512a-124">Ein Prodezurname darf nicht mit dem Namen einer bestehenden Tabelle übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="e512a-124">A procedure name cannot be the same as the name of an existing table.</span></span>
+<span data-ttu-id="85f81-124">Ein Prodezurname darf nicht mit dem Namen einer bestehenden Tabelle übereinstimmen.</span><span class="sxs-lookup"><span data-stu-id="85f81-124">A procedure name cannot be the same as the name of an existing table.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e512a-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e512a-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85f81-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="85f81-125">Example</span></span>
 
-<span data-ttu-id="e512a-126">In diesem Beispiel wird die Abfrage categoryList verwendet, und es wird die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.</span><span class="sxs-lookup"><span data-stu-id="e512a-126">This example names the query CategoryList, and calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
+<span data-ttu-id="85f81-126">In diesem Beispiel wird die Abfrage categoryList verwendet, und es wird die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.</span><span class="sxs-lookup"><span data-stu-id="85f81-126">This example names the query CategoryList, and calls the EnumFields procedure, which you can find in the SELECT statement example.</span></span>
 
 ```vb
     Sub ProcedureX() 

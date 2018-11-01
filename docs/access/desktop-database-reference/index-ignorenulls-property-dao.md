@@ -10,33 +10,33 @@ f1_keywords:
 - dao360.chm1052931
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b6c190b7a61e26ff6e4abedc1a19bde26a1de426
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e7fd7b98b246f4fda24426d9376cc5edc2553b8e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474509"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870310"
 ---
-# <a name="indexignorenulls-property-dao"></a><span data-ttu-id="9aaae-102">Index.IgnoreNulls Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="9aaae-102">Index.IgnoreNulls Property (DAO)</span></span>
+# <a name="indexignorenulls-property-dao"></a><span data-ttu-id="77c49-102">Index.IgnoreNulls Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="77c49-102">Index.IgnoreNulls Property (DAO)</span></span>
 
 
-<span data-ttu-id="9aaae-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="9aaae-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="77c49-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="77c49-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9aaae-104">Legt einen Wert fest, der angibt, ob Datensätze, deren Indexfelder Nullwerte enthalten, über Indexeinträge verfügen (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="9aaae-104">Sets or returns a value that indicates whether records that have Null values in their index fields have index entries (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="77c49-104">Legt einen Wert fest, der angibt, ob Datensätze, deren Indexfelder Nullwerte enthalten, über Indexeinträge verfügen (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="77c49-104">Sets or returns a value that indicates whether records that have Null values in their index fields have index entries (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="9aaae-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="9aaae-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="77c49-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="77c49-105">Syntax</span></span>
 
-<span data-ttu-id="9aaae-106">*Ausdruck* . IgnoreNulls</span><span class="sxs-lookup"><span data-stu-id="9aaae-106">*expression* .IgnoreNulls</span></span>
+<span data-ttu-id="77c49-106">*Ausdruck* . IgnoreNulls</span><span class="sxs-lookup"><span data-stu-id="77c49-106">*expression* .IgnoreNulls</span></span>
 
-<span data-ttu-id="9aaae-107">*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="9aaae-107">*expression* A variable that represents an **Index** object.</span></span>
+<span data-ttu-id="77c49-107">*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="77c49-107">*expression* A variable that represents an **Index** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9aaae-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="9aaae-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="77c49-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="77c49-108">Remarks</span></span>
 
-<span data-ttu-id="9aaae-109">Ein neues **[Index](index-object-dao.md)** objekt, das noch nicht an eine Auflistung angehängt wurde, hat Lese-/Schreibzugriff auf diese Eigenschaft. Ein vorhandenes **Index**objekt in einer **[Indexes](indexes-collection-dao.md)** -Auflistung hat nur Lesezugriff auf die Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="9aaae-109">This property is read/write for a new **[Index](index-object-dao.md)** object not yet appended to a collection and read-only for an existing **Index** object in an **[Indexes](indexes-collection-dao.md)** collection.</span></span>
+<span data-ttu-id="77c49-109">Ein neues **[Index](index-object-dao.md)** objekt, das noch nicht an eine Auflistung angehängt wurde, hat Lese-/Schreibzugriff auf diese Eigenschaft. Ein vorhandenes **Index**objekt in einer **[Indexes](indexes-collection-dao.md)** -Auflistung hat nur Lesezugriff auf die Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="77c49-109">This property is read/write for a new **[Index](index-object-dao.md)** object not yet appended to a collection and read-only for an existing **Index** object in an **[Indexes](indexes-collection-dao.md)** collection.</span></span>
 
-<span data-ttu-id="9aaae-p101">Sie können einen Index für ein Feld definieren, um die Suche nach Datensätzen zu beschleunigen. Wenn Sie in einem indizierten Feld **null**-Einträge zulassen und erwarten, dass viele Einträge den Wert **null** haben, können Sie die **IgnoreNulls**-Eigenschaft für das **Index**-Objekt auf den Wert **True** festlegen, um den vom Index verwendeten Speicherplatz zu reduzieren.</span><span class="sxs-lookup"><span data-stu-id="9aaae-p101">To speed up the process of searching for records, you can define an index for a field. If you allow **null** entries in an indexed field and expect many of the entries to be **null**, you can set the **IgnoreNulls** property for the **Index** object to **True** to reduce the amount of storage space that the index uses.</span></span>
+<span data-ttu-id="77c49-p101">Sie können einen Index für ein Feld definieren, um die Suche nach Datensätzen zu beschleunigen. Wenn Sie in einem indizierten Feld **null**-Einträge zulassen und erwarten, dass viele Einträge den Wert **null** haben, können Sie die **IgnoreNulls**-Eigenschaft für das **Index**-Objekt auf den Wert **True** festlegen, um den vom Index verwendeten Speicherplatz zu reduzieren.</span><span class="sxs-lookup"><span data-stu-id="77c49-p101">To speed up the process of searching for records, you can define an index for a field. If you allow **null** entries in an indexed field and expect many of the entries to be **null**, you can set the **IgnoreNulls** property for the **Index** object to **True** to reduce the amount of storage space that the index uses.</span></span>
 
-<span data-ttu-id="9aaae-112">Die Einstellungen der **IgnoreNulls**-Eigenschaft und der **[Required](field-required-property-dao.md)** -Eigenschaft legen gemeinsam fest, ob ein Datensatz mit einem **null**-Indexwert einen Indexeintrag hat.</span><span class="sxs-lookup"><span data-stu-id="9aaae-112">The **IgnoreNulls** property setting and the **[Required](field-required-property-dao.md)** property setting together determine whether a record with a **null** index value has an index entry.</span></span>
+<span data-ttu-id="77c49-112">Die Einstellungen der **IgnoreNulls**-Eigenschaft und der **[Required](field-required-property-dao.md)** -Eigenschaft legen gemeinsam fest, ob ein Datensatz mit einem **null**-Indexwert einen Indexeintrag hat.</span><span class="sxs-lookup"><span data-stu-id="77c49-112">The **IgnoreNulls** property setting and the **[Required](field-required-property-dao.md)** property setting together determine whether a record with a **null** index value has an index entry.</span></span>
 
 <table>
 <colgroup>
@@ -46,34 +46,34 @@ ms.locfileid: "25474509"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="9aaae-113">IgnoreNulls-Wert</span><span class="sxs-lookup"><span data-stu-id="9aaae-113">If IgnoreNulls is</span></span></p></th>
-<th><p><span data-ttu-id="9aaae-114">Required-Wert</span><span class="sxs-lookup"><span data-stu-id="9aaae-114">And Required is</span></span></p></th>
-<th><p><span data-ttu-id="9aaae-115">Dann</span><span class="sxs-lookup"><span data-stu-id="9aaae-115">Then</span></span></p></th>
+<th><p><span data-ttu-id="77c49-113">IgnoreNulls-Wert</span><span class="sxs-lookup"><span data-stu-id="77c49-113">If IgnoreNulls is</span></span></p></th>
+<th><p><span data-ttu-id="77c49-114">Required-Wert</span><span class="sxs-lookup"><span data-stu-id="77c49-114">And Required is</span></span></p></th>
+<th><p><span data-ttu-id="77c49-115">Dann</span><span class="sxs-lookup"><span data-stu-id="77c49-115">Then</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="9aaae-116">True</span><span class="sxs-lookup"><span data-stu-id="9aaae-116">True</span></span></p></td>
-<td><p><span data-ttu-id="9aaae-117">False</span><span class="sxs-lookup"><span data-stu-id="9aaae-117">False</span></span></p></td>
-<td><p><span data-ttu-id="9aaae-118">Im Indexfeld ist ein Nullwert erlaubt. Es wird kein Indexeintrag hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="9aaae-118">A null value is allowed in the index field; no index entry added.</span></span></p></td>
+<td><p><span data-ttu-id="77c49-116">True</span><span class="sxs-lookup"><span data-stu-id="77c49-116">True</span></span></p></td>
+<td><p><span data-ttu-id="77c49-117">False</span><span class="sxs-lookup"><span data-stu-id="77c49-117">False</span></span></p></td>
+<td><p><span data-ttu-id="77c49-118">Im Indexfeld ist ein Nullwert erlaubt. Es wird kein Indexeintrag hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="77c49-118">A null value is allowed in the index field; no index entry added.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="9aaae-119">False</span><span class="sxs-lookup"><span data-stu-id="9aaae-119">False</span></span></p></td>
-<td><p><span data-ttu-id="9aaae-120">False</span><span class="sxs-lookup"><span data-stu-id="9aaae-120">False</span></span></p></td>
-<td><p><span data-ttu-id="9aaae-121">Im Indexfeld ist ein Nullwert erlaubt. Es wird ein Indexeintrag hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="9aaae-121">A null value is allowed in the index field; index entry added.</span></span></p></td>
+<td><p><span data-ttu-id="77c49-119">False</span><span class="sxs-lookup"><span data-stu-id="77c49-119">False</span></span></p></td>
+<td><p><span data-ttu-id="77c49-120">False</span><span class="sxs-lookup"><span data-stu-id="77c49-120">False</span></span></p></td>
+<td><p><span data-ttu-id="77c49-121">Im Indexfeld ist ein Nullwert erlaubt. Es wird ein Indexeintrag hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="77c49-121">A null value is allowed in the index field; index entry added.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="9aaae-122">True oder False</span><span class="sxs-lookup"><span data-stu-id="9aaae-122">True or False</span></span></p></td>
-<td><p><span data-ttu-id="9aaae-123">True</span><span class="sxs-lookup"><span data-stu-id="9aaae-123">True</span></span></p></td>
-<td><p><span data-ttu-id="9aaae-124">Im Indexfeld ist kein Nullwert erlaubt. Es wird kein Indexeintrag hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="9aaae-124">A null value isn't allowed in the index field; no index entry added.</span></span></p></td>
+<td><p><span data-ttu-id="77c49-122">True oder False</span><span class="sxs-lookup"><span data-stu-id="77c49-122">True or False</span></span></p></td>
+<td><p><span data-ttu-id="77c49-123">True</span><span class="sxs-lookup"><span data-stu-id="77c49-123">True</span></span></p></td>
+<td><p><span data-ttu-id="77c49-124">Im Indexfeld ist kein Nullwert erlaubt. Es wird kein Indexeintrag hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="77c49-124">A null value isn't allowed in the index field; no index entry added.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="9aaae-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9aaae-125">Example</span></span>
+## <a name="example"></a><span data-ttu-id="77c49-125">Beispiel</span><span class="sxs-lookup"><span data-stu-id="77c49-125">Example</span></span>
 
-<span data-ttu-id="9aaae-126">In diesem Beispiel wird die **IgnoreNulls**-Eigenschaft eines neuen **Index**-Objekts basierend auf der Benutzereingabe auf **True** oder **False** gesetzt. Anschließend werden die Auswirkungen auf ein **Recordset**-Objekt mit einem Datensatz gezeigt, dessen Schlüsselfeld einen **Null**-Wert enthält.</span><span class="sxs-lookup"><span data-stu-id="9aaae-126">This example sets the **IgnoreNulls** property of a new **Index** to **True** or **False** based on user input, and then demonstrates the effect on a **Recordset** with a record whose key field contains a **Null** value.</span></span>
+<span data-ttu-id="77c49-126">In diesem Beispiel wird die **IgnoreNulls**-Eigenschaft eines neuen **Index**-Objekts basierend auf der Benutzereingabe auf **True** oder **False** gesetzt. Anschließend werden die Auswirkungen auf ein **Recordset**-Objekt mit einem Datensatz gezeigt, dessen Schlüsselfeld einen **Null**-Wert enthält.</span><span class="sxs-lookup"><span data-stu-id="77c49-126">This example sets the **IgnoreNulls** property of a new **Index** to **True** or **False** based on user input, and then demonstrates the effect on a **Recordset** with a record whose key field contains a **Null** value.</span></span>
 
 ```vb
     Sub IgnoreNullsX() 

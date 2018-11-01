@@ -6,39 +6,39 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249002(v=office.15)
 ms:contentKeyID: 48543706
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 167033c58b163ffcef7934b6f38b79323c6b58b1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: dd470482c8e4a2e9228247c5eea4512367ca6483
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473765"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867237"
 ---
-# <a name="jscript-ado-programming"></a><span data-ttu-id="52bc5-102">JScript-ADO-Programmierung</span><span class="sxs-lookup"><span data-stu-id="52bc5-102">JScript ADO Programming</span></span>
+# <a name="jscript-ado-programming"></a><span data-ttu-id="25f91-102">JScript-ADO-Programmierung</span><span class="sxs-lookup"><span data-stu-id="25f91-102">JScript ADO Programming</span></span>
 
 
-<span data-ttu-id="52bc5-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="52bc5-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="25f91-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="25f91-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="creating-an-ado-project"></a><span data-ttu-id="52bc5-104">Erstellen eines ADO-Projekts</span><span class="sxs-lookup"><span data-stu-id="52bc5-104">Creating an ADO Project</span></span>
+## <a name="creating-an-ado-project"></a><span data-ttu-id="25f91-104">Erstellen eines ADO-Projekts</span><span class="sxs-lookup"><span data-stu-id="25f91-104">Creating an ADO Project</span></span>
 
-<span data-ttu-id="52bc5-p101">Da von Microsoft JScript keine Typbibliotheken unterstützt werden, müssen Sie im Projekt nicht auf ADO verweisen. Daher werden keine zugehörigen Features wie die Vervollständigung der Befehlszeile unterstützt. Außerdem sind ADO-Aufzählungskonstanten standardmäßig in JScript nicht definiert.</span><span class="sxs-lookup"><span data-stu-id="52bc5-p101">Microsoft JScript does not support type libraries, so you do not need to reference ADO in your project. Consequently, no associated features such as command line completion are supported. Also, by default, ADO enumerated constants are not defined in JScript.</span></span>
+<span data-ttu-id="25f91-p101">Da von Microsoft JScript keine Typbibliotheken unterstützt werden, müssen Sie im Projekt nicht auf ADO verweisen. Daher werden keine zugehörigen Features wie die Vervollständigung der Befehlszeile unterstützt. Außerdem sind ADO-Aufzählungskonstanten standardmäßig in JScript nicht definiert.</span><span class="sxs-lookup"><span data-stu-id="25f91-p101">Microsoft JScript does not support type libraries, so you do not need to reference ADO in your project. Consequently, no associated features such as command line completion are supported. Also, by default, ADO enumerated constants are not defined in JScript.</span></span>
 
-<span data-ttu-id="52bc5-108">In ADO werden jedoch zwei Includedateien bereitgestellt, die die folgenden Definitionen enthalten, die mit JScript verwendet werden können:</span><span class="sxs-lookup"><span data-stu-id="52bc5-108">However, ADO provides you with two include files containing the following definitions to be used with JScript:</span></span>
+<span data-ttu-id="25f91-108">In ADO werden jedoch zwei Includedateien bereitgestellt, die die folgenden Definitionen enthalten, die mit JScript verwendet werden können:</span><span class="sxs-lookup"><span data-stu-id="25f91-108">However, ADO provides you with two include files containing the following definitions to be used with JScript:</span></span>
 
-- <span data-ttu-id="52bc5-109">Verwenden, Sie für serverseitiges Skripting Datei Adojavas.inc ist das Laufwerk c: installiert\\Program Files\\gemeinsame Dateien\\System\\Ado\\ Ordner standardmäßig.</span><span class="sxs-lookup"><span data-stu-id="52bc5-109">For server-side scripting use Adojavas.inc, which is installed in the c:\\Program Files\\Common Files\\System\\ado\\ folder by default.</span></span>
+- <span data-ttu-id="25f91-109">Verwenden, Sie für serverseitiges Skripting Datei Adojavas.inc ist das Laufwerk c: installiert\\Program Files\\gemeinsame Dateien\\System\\Ado\\ Ordner standardmäßig.</span><span class="sxs-lookup"><span data-stu-id="25f91-109">For server-side scripting use Adojavas.inc, which is installed in the c:\\Program Files\\Common Files\\System\\ado\\ folder by default.</span></span>
 
-- <span data-ttu-id="52bc5-110">Verwenden, Sie für clientseitiges Skripting Datei Adcjavas.inc ist das Laufwerk c: installiert\\Program Files\\gemeinsame Dateien\\System\\Msdac\\ Ordner standardmäßig.</span><span class="sxs-lookup"><span data-stu-id="52bc5-110">For client-side scripting use Adcjavas.inc, which is installed in the c:\\Program Files\\Common Files\\System\\msdac\\ folder by default.</span></span>
+- <span data-ttu-id="25f91-110">Verwenden, Sie für clientseitiges Skripting Datei Adcjavas.inc ist das Laufwerk c: installiert\\Program Files\\gemeinsame Dateien\\System\\Msdac\\ Ordner standardmäßig.</span><span class="sxs-lookup"><span data-stu-id="25f91-110">For client-side scripting use Adcjavas.inc, which is installed in the c:\\Program Files\\Common Files\\System\\msdac\\ folder by default.</span></span>
 
-<span data-ttu-id="52bc5-111">Sie können entweder kopieren und Konstantendefinitionen aus diesen Dateien in ASP-Seiten einfügen, oder, wenn Sie serverseitiges Skripting, kopieren Sie die Datei Adojavas.inc-Datei in einen Ordner auf Ihrer Website, und es von der ASP verweist:</span><span class="sxs-lookup"><span data-stu-id="52bc5-111">You can either copy and paste constant definitions from these files into your ASP pages, or, if you are doing server-side scripting, copy Adojavas.inc file to a folder on your website and references it from your ASP page like this:</span></span>
+<span data-ttu-id="25f91-111">Sie können entweder kopieren und Konstantendefinitionen aus diesen Dateien in ASP-Seiten einfügen, oder, wenn Sie serverseitiges Skripting, kopieren Sie die Datei Adojavas.inc-Datei in einen Ordner auf Ihrer Website, und es von der ASP verweist:</span><span class="sxs-lookup"><span data-stu-id="25f91-111">You can either copy and paste constant definitions from these files into your ASP pages, or, if you are doing server-side scripting, copy Adojavas.inc file to a folder on your website and references it from your ASP page like this:</span></span>
 
 ```javascript  
  
 <!--#include File="adojavas.inc"--> 
 ```
 
-## <a name="creating-ado-objects-in-jscript"></a><span data-ttu-id="52bc5-112">Erstellen von ADO-Objekten in JScript</span><span class="sxs-lookup"><span data-stu-id="52bc5-112">Creating ADO Objects in JScript</span></span>
+## <a name="creating-ado-objects-in-jscript"></a><span data-ttu-id="25f91-112">Erstellen von ADO-Objekten in JScript</span><span class="sxs-lookup"><span data-stu-id="25f91-112">Creating ADO Objects in JScript</span></span>
 
-<span data-ttu-id="52bc5-113">Sie müssen stattdessen den **CreateObject** -Funktionsaufruf verwenden:</span><span class="sxs-lookup"><span data-stu-id="52bc5-113">You must instead use the **CreateObject** function call:</span></span>
+<span data-ttu-id="25f91-113">Sie müssen stattdessen den **CreateObject** -Funktionsaufruf verwenden:</span><span class="sxs-lookup"><span data-stu-id="25f91-113">You must instead use the **CreateObject** function call:</span></span>
 
 ```javascript  
  
@@ -46,9 +46,9 @@ var Rs1;
 Rs1 = Server.CreateObject("ADODB.Recordset"); 
 ```
 
-## <a name="jscript-example"></a><span data-ttu-id="52bc5-114">JScript (Beispiel)</span><span class="sxs-lookup"><span data-stu-id="52bc5-114">JScript Example</span></span>
+## <a name="jscript-example"></a><span data-ttu-id="25f91-114">JScript (Beispiel)</span><span class="sxs-lookup"><span data-stu-id="25f91-114">JScript Example</span></span>
 
-<span data-ttu-id="52bc5-115">Der folgende Code ist ein allgemeines Beispiel für die serverseitige JScript-Programmierung in einer ASP-Datei (Active Server Page), durch die ein **Recordset** -Objekt geöffnet wird:</span><span class="sxs-lookup"><span data-stu-id="52bc5-115">The following code is a generic example of JScript server-side programming in an Active Server Page (ASP) file that opens a **Recordset** object:</span></span>
+<span data-ttu-id="25f91-115">Der folgende Code ist ein allgemeines Beispiel für die serverseitige JScript-Programmierung in einer ASP-Datei (Active Server Page), durch die ein **Recordset** -Objekt geöffnet wird:</span><span class="sxs-lookup"><span data-stu-id="25f91-115">The following code is a generic example of JScript server-side programming in an Active Server Page (ASP) file that opens a **Recordset** object:</span></span>
 
 ```javascript 
  

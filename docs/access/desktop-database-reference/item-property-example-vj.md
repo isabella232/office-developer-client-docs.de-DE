@@ -1,20 +1,26 @@
 ---
-<span data-ttu-id="a9372-101"><<<<<<< HEAD-Titel: Item-Eigenschaft Beispiel) (VJ++) TOCTitle: Item-Eigenschaft Beispiel) (VJ++) === Titel: Item-Eigenschaft Beispiel) (VJ++) TOCTitle: Item-Eigenschaft Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="a9372-101"><<<<<<< HEAD title: Item Property Example (VJ++) TOCTitle: Item Property Example (VJ++) ======= title: Item property example (VJ++) TOCTitle: Item property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="a9372-102">Master Ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15) Ms:contentKeyID: 48547461 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="a9372-102">master ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15) ms:contentKeyID: 48547461 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Item-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Item property example (VJ++)
+ms:assetid: be6f14f1-5d3e-6b13-00fc-cfea12e89dcf
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249923(v=office.15)
+ms:contentKeyID: 48547461
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 672eb8582f5e412a026be68cd9c56ddd603d2ac0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889658"
 ---
-
-<span data-ttu-id="a9372-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="a9372-103"><<<<<<< HEAD</span></span>
-# <a name="item-property-example-vj"></a><span data-ttu-id="a9372-104">Item-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="a9372-104">Item Property Example (VJ++)</span></span>
-=======
-# <a name="item-property-example-vj"></a><span data-ttu-id="a9372-105">Item-Eigenschaft Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="a9372-105">Item property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="a9372-106">master</span><span class="sxs-lookup"><span data-stu-id="a9372-106">master</span></span>
+# <a name="item-property-example-vj"></a><span data-ttu-id="38132-102">Item-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="38132-102">Item property example (VJ++)</span></span>
 
 
-<span data-ttu-id="a9372-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="a9372-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="38132-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="38132-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a9372-p101">In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.</span><span class="sxs-lookup"><span data-stu-id="a9372-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
+<span data-ttu-id="38132-p101">In diesem Beispiel wird dargestellt, wie die [Item](item-property-ado.md)-Eigenschaft auf Member einer Auflistung zugreift. In dem Beispiel wird die ***Authors***-Tabelle der ***Pubs***-Datenbank mit einem parametrisierten Befehl geöffnet.</span><span class="sxs-lookup"><span data-stu-id="38132-p101">This example demonstrates how the [Item](item-property-ado.md) property accesses members of a collection. The example opens the ***Authors*** table of the ***Pubs*** database with a parameterized command.</span></span>
 
-<span data-ttu-id="a9372-p102">Auf den Parameter, der sich in dem an die Datenbank ausgegebenen Befehl befindet, wird von der [Parameters](command-object-ado.md)-Auflistung des [Command](parameters-collection-ado.md)-Objekts aus anhand von Index und Name zugegriffen. Auf die Felder des zurückgegebenen [Recordset](recordset-object-ado.md)-Objekts wird anschließend von der [Fields](fields-collection-ado.md)-Auflistung dieses Objekts aus anhand von Index und Name zugegriffen.</span><span class="sxs-lookup"><span data-stu-id="a9372-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
+<span data-ttu-id="38132-p102">Auf den Parameter, der sich in dem an die Datenbank ausgegebenen Befehl befindet, wird von der [Parameters](command-object-ado.md)-Auflistung des [Command](parameters-collection-ado.md)-Objekts aus anhand von Index und Name zugegriffen. Auf die Felder des zurückgegebenen [Recordset](recordset-object-ado.md)-Objekts wird anschließend von der [Fields](fields-collection-ado.md)-Auflistung dieses Objekts aus anhand von Index und Name zugegriffen.</span><span class="sxs-lookup"><span data-stu-id="38132-p102">The parameter in the command issued against the database is accessed from the [Command](command-object-ado.md) object's [Parameters](parameters-collection-ado.md) collection by index and name. Then the fields of the returned [Recordset](recordset-object-ado.md) are accessed from that object's [Fields](fields-collection-ado.md) collection by index and name.</span></span>
 
 ```java 
  

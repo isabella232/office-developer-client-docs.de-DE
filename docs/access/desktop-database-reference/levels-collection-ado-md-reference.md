@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249872(v=office.15)
 ms:contentKeyID: 48547262
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f7b7906204920aa5f1791ddf82787b4543ed0294
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d1552d827ec9b6a6d0c833ffb8e6cfc997c4d3c7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475592"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880964"
 ---
-# <a name="levels-collection-ado-md-reference"></a><span data-ttu-id="9098d-102">Levels Collection (ADO MD Reference)</span><span class="sxs-lookup"><span data-stu-id="9098d-102">Levels Collection (ADO MD Reference)</span></span>
+# <a name="levels-collection-ado-md-reference"></a><span data-ttu-id="dfc96-102">Levels Collection (ADO MD Reference)</span><span class="sxs-lookup"><span data-stu-id="dfc96-102">Levels Collection (ADO MD Reference)</span></span>
 
 
-<span data-ttu-id="9098d-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="9098d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="dfc96-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dfc96-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="9098d-104">Levels-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="9098d-104">Levels Collection (ADO MD)</span></span>](levels-collection-ado-md.md)
+  - [<span data-ttu-id="dfc96-104">Levels-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="dfc96-104">Levels Collection (ADO MD)</span></span>](levels-collection-ado-md.md)
 
-  - [<span data-ttu-id="9098d-105">Levels Collection Properties, Methods, and Events (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="9098d-105">Levels Collection Properties, Methods, and Events (ADO MD)</span></span>](levels-collection-properties-methods-and-events-ado-md.md)
+  - [<span data-ttu-id="dfc96-105">Levels Collection Properties, Methods, and Events (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="dfc96-105">Levels Collection Properties, Methods, and Events (ADO MD)</span></span>](levels-collection-properties-methods-and-events-ado-md.md)
 

@@ -6,29 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250076(v=office.15)
 ms:contentKeyID: 48547972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5363bd435a4950b833e110fdda4f14a9c1bc2bc2
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: afc4eae76395e7a15573ad5343955b0ab46df3db
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475884"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883351"
 ---
-# <a name="procedure-object-adox"></a><span data-ttu-id="45ad2-102">Procedure-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="45ad2-102">Procedure Object (ADOX)</span></span>
+# <a name="procedure-object-adox"></a><span data-ttu-id="240e4-102">Procedure-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="240e4-102">Procedure Object (ADOX)</span></span>
 
 
-<span data-ttu-id="45ad2-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="45ad2-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="240e4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="240e4-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="45ad2-p101">Stellt eine gespeicherte Prozedur dar. Wenn es in Verbindung mit dem ADO-Objekt [Command](command-object-ado.md) verwendet wird, kann das **Procedure** -Objekt zum Hinzufügen, Löschen oder Ändern von gespeicherten Prozeduren verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="45ad2-p101">Represents a stored procedure. When used in conjunction with the ADO [Command](command-object-ado.md) object, the **Procedure** object can be used for adding, deleting, or modifying stored procedures.</span></span>
+<span data-ttu-id="240e4-p101">Stellt eine gespeicherte Prozedur dar. Wenn es in Verbindung mit dem ADO-Objekt [Command](command-object-ado.md) verwendet wird, kann das **Procedure** -Objekt zum Hinzufügen, Löschen oder Ändern von gespeicherten Prozeduren verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="240e4-p101">Represents a stored procedure. When used in conjunction with the ADO [Command](command-object-ado.md) object, the **Procedure** object can be used for adding, deleting, or modifying stored procedures.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="45ad2-106">Hinweise</span><span class="sxs-lookup"><span data-stu-id="45ad2-106">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="240e4-106">Hinweise</span><span class="sxs-lookup"><span data-stu-id="240e4-106">Remarks</span></span>
 
-<span data-ttu-id="45ad2-107">Mit dem **Procedure** -Objekt können Sie eine gespeicherte Prozedur erstellen, ohne die CREATE PROCEDURE-Syntax des Anbieters zu kennen oder zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="45ad2-107">The **Procedure** object allows you to create a stored procedure without having to know or use the provider's "CREATE PROCEDURE" syntax.</span></span>
+<span data-ttu-id="240e4-107">Mit dem **Procedure** -Objekt können Sie eine gespeicherte Prozedur erstellen, ohne die CREATE PROCEDURE-Syntax des Anbieters zu kennen oder zu verwenden.</span><span class="sxs-lookup"><span data-stu-id="240e4-107">The **Procedure** object allows you to create a stored procedure without having to know or use the provider's "CREATE PROCEDURE" syntax.</span></span>
 
-<span data-ttu-id="45ad2-108">Die Eigenschaften eines **Procedure** -Objekts ermöglichen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="45ad2-108">With the properties of a **Procedure** object, you can:</span></span>
+<span data-ttu-id="240e4-108">Die Eigenschaften eines **Procedure** -Objekts ermöglichen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="240e4-108">With the properties of a **Procedure** object, you can:</span></span>
 
-  - <span data-ttu-id="45ad2-109">Identifizieren der Prozedur, indem Sie die [Name](name-property-adox.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="45ad2-109">Identify the procedure with the [Name](name-property-adox.md) property.</span></span>
+  - <span data-ttu-id="240e4-109">Identifizieren der Prozedur, indem Sie die [Name](name-property-adox.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="240e4-109">Identify the procedure with the [Name](name-property-adox.md) property.</span></span>
 
-  - <span data-ttu-id="45ad2-110">Angeben des ADO-Objekts **Command**, das zum Erstellen oder Ausführen der Prozedur verwendet werden kann, indem Sie die [Command](command-property-adox.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="45ad2-110">Specify the ADO **Command** object that can be used to create or execute the procedure with the [Command](command-property-adox.md) property.</span></span>
+  - <span data-ttu-id="240e4-110">Angeben des ADO-Objekts **Command**, das zum Erstellen oder Ausführen der Prozedur verwendet werden kann, indem Sie die [Command](command-property-adox.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="240e4-110">Specify the ADO **Command** object that can be used to create or execute the procedure with the [Command](command-property-adox.md) property.</span></span>
 
-  - <span data-ttu-id="45ad2-111">Zurückgeben von Datumsinformationen, indem Sie die Eigenschaften [DateCreated](datecreated-property-adox.md) und [DateModified](datemodified-property-adox.md) verwenden.</span><span class="sxs-lookup"><span data-stu-id="45ad2-111">Return date information with the [DateCreated](datecreated-property-adox.md) and [DateModified](datemodified-property-adox.md) properties.</span></span>
+  - <span data-ttu-id="240e4-111">Zurückgeben von Datumsinformationen, indem Sie die Eigenschaften [DateCreated](datecreated-property-adox.md) und [DateModified](datemodified-property-adox.md) verwenden.</span><span class="sxs-lookup"><span data-stu-id="240e4-111">Return date information with the [DateCreated](datecreated-property-adox.md) and [DateModified](datemodified-property-adox.md) properties.</span></span>
 

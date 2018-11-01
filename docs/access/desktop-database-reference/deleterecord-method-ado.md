@@ -6,48 +6,44 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249895(v=office.15)
 ms:contentKeyID: 48547370
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4a91da1304d399a34f247eb251c2dadf0f1fa94d
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 9dd9c5b6681732ec50442f7a4bcd9874ecf4e493
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603007"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878995"
 ---
-# <a name="deleterecord-method-ado"></a><span data-ttu-id="8fd8b-102">DeleteRecord-Methode (ADO)</span><span class="sxs-lookup"><span data-stu-id="8fd8b-102">DeleteRecord Method (ADO)</span></span>
+# <a name="deleterecord-method-ado"></a><span data-ttu-id="7ba6d-102">DeleteRecord-Methode (ADO)</span><span class="sxs-lookup"><span data-stu-id="7ba6d-102">DeleteRecord Method (ADO)</span></span>
 
 
-<span data-ttu-id="8fd8b-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8fd8b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="7ba6d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7ba6d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-<span data-ttu-id="8fd8b-104">Löscht eine durch [Record](record-object-ado.md) dargestellte Entität.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-104">Deletes a the entity represented by a [Record](record-object-ado.md).</span></span>
+<span data-ttu-id="7ba6d-104">Löscht eine durch [Record](record-object-ado.md) dargestellte Entität.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-104">Deletes a the entity represented by a [Record](record-object-ado.md).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8fd8b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8fd8b-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7ba6d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="7ba6d-105">Syntax</span></span>
 
-<span data-ttu-id="8fd8b-106">*Datensatz*. \**DeleteRecord \*\*\* Quelle*, *Async*</span><span class="sxs-lookup"><span data-stu-id="8fd8b-106">*Record*.\**DeleteRecord\*\*\*Source*, *Async*</span></span>
+<span data-ttu-id="7ba6d-106">*Datensatz*. \**DeleteRecord \*\*\* Quelle*, *Async*</span><span class="sxs-lookup"><span data-stu-id="7ba6d-106">*Record*.\**DeleteRecord\*\*\*Source*, *Async*</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="8fd8b-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="8fd8b-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="7ba6d-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="7ba6d-107">Parameters</span></span>
 
-  - <span data-ttu-id="8fd8b-108">*Source*</span><span class="sxs-lookup"><span data-stu-id="8fd8b-108">*Source*</span></span>
+  - <span data-ttu-id="7ba6d-108">*Source*</span><span class="sxs-lookup"><span data-stu-id="7ba6d-108">*Source*</span></span>
 
-  - <span data-ttu-id="8fd8b-p101">Optional. Ein String-Wert mit einer URL, die die zu löschende Entität (z. B. eine Datei oder ein Verzeichnis) identifiziert. Wenn Source nicht angeben ist oder eine leere Zeichenfolge angibt, wird die durch den aktuellen Record dargestellte Entität gelöscht. Wenn es sich bei Record um einen Datensatz einer Auflistung (RecordType von adCollectionRecord, z. B. einem Verzeichnis) handelt, werden alle untergeordneten Ebenen (z. B. Unterverzeichnisse) ebenso gelöscht.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-p101">Optional. A **String** value that contains a URL identifying the entity (for example, the file or directory) to be deleted. If *Source* is omitted or specifies an empty string, the entity represented by the current [Record](record-object-ado.md) is deleted. If the Record is a collection record ([RecordType](recordtype-property-ado.md) of **adCollectionRecord**, such as a directory) all children (for example, subdirectories) will also be deleted.</span></span>
+  - <span data-ttu-id="7ba6d-p101">Optional. Ein String-Wert mit einer URL, die die zu löschende Entität (z. B. eine Datei oder ein Verzeichnis) identifiziert. Wenn Source nicht angeben ist oder eine leere Zeichenfolge angibt, wird die durch den aktuellen Record dargestellte Entität gelöscht. Wenn es sich bei Record um einen Datensatz einer Auflistung (RecordType von adCollectionRecord, z. B. einem Verzeichnis) handelt, werden alle untergeordneten Ebenen (z. B. Unterverzeichnisse) ebenso gelöscht.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-p101">Optional. A **String** value that contains a URL identifying the entity (for example, the file or directory) to be deleted. If *Source* is omitted or specifies an empty string, the entity represented by the current [Record](record-object-ado.md) is deleted. If the Record is a collection record ([RecordType](recordtype-property-ado.md) of **adCollectionRecord**, such as a directory) all children (for example, subdirectories) will also be deleted.</span></span>
 
-  - <span data-ttu-id="8fd8b-113">*Async*</span><span class="sxs-lookup"><span data-stu-id="8fd8b-113">*Async*</span></span>
+  - <span data-ttu-id="7ba6d-113">*Async*</span><span class="sxs-lookup"><span data-stu-id="7ba6d-113">*Async*</span></span>
 
-  - <span data-ttu-id="8fd8b-p102">Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass der Löschvorgang asynchron ist.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-p102">Optional. A **Boolean** value that, when **True**, specifies that the delete operation is asynchronous.</span></span>
+  - <span data-ttu-id="7ba6d-p102">Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass der Löschvorgang asynchron ist.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-p102">Optional. A **Boolean** value that, when **True**, specifies that the delete operation is asynchronous.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8fd8b-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8fd8b-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7ba6d-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="7ba6d-116">Remarks</span></span>
 
-<span data-ttu-id="8fd8b-p103">Vorgänge in Bezug auf das durch diesen **Record** dargestellte Objekt schlagen möglicherweise fehl, nachdem das Ausführen dieser Methode beendet wurde. Nach dem Aufrufen von **DeleteRecord** sollte **Record** geschlossen werden, da das Verhalten von **Record** in Abhängigkeit davon, wann der Anbieter den **Record** mit der Datenquelle aktualisiert, möglicherweise unvorhersehbar wird.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-p103">Operations on the object represented by this **Record** may fail after this method completes. After calling **DeleteRecord**, the **Record** should be closed because the behavior of the **Record** may become unpredictable depending upon when the provider updates the **Record** with the data source.</span></span>
+<span data-ttu-id="7ba6d-p103">Vorgänge in Bezug auf das durch diesen **Record** dargestellte Objekt schlagen möglicherweise fehl, nachdem das Ausführen dieser Methode beendet wurde. Nach dem Aufrufen von **DeleteRecord** sollte **Record** geschlossen werden, da das Verhalten von **Record** in Abhängigkeit davon, wann der Anbieter den **Record** mit der Datenquelle aktualisiert, möglicherweise unvorhersehbar wird.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-p103">Operations on the object represented by this **Record** may fail after this method completes. After calling **DeleteRecord**, the **Record** should be closed because the behavior of the **Record** may become unpredictable depending upon when the provider updates the **Record** with the data source.</span></span>
 
-<span data-ttu-id="8fd8b-119">Wurde dieser **Record** aus einem [Recordset](recordset-object-ado.md)-Objekt abgerufen, werden die Ergebnisse dieses Vorgangs nicht unmittelbar im **Recordset** -Objekt wiedergegeben.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-119">If this **Record** was obtained from a [Recordset](recordset-object-ado.md), then the results of this operation will not be reflected immediately in the **Recordset**.</span></span> <span data-ttu-id="8fd8b-120">Aktualisieren Sie das **Recordset** , indem schließen und erneut öffnen, oder durch Ausführen der **Recordset** [erneut abzufragen](requery-method-ado.md), oder [Update](update-method-ado.md) und [Resync](resync-method-ado.md) -Methode.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-120">Refresh the **Recordset** by closing and re-opening it, or by executing the **Recordset** [Requery](requery-method-ado.md), or [Update](update-method-ado.md) and [Resync](resync-method-ado.md) methods.</span></span>
+<span data-ttu-id="7ba6d-119">Wurde dieser **Record** aus einem [Recordset](recordset-object-ado.md)-Objekt abgerufen, werden die Ergebnisse dieses Vorgangs nicht unmittelbar im **Recordset** -Objekt wiedergegeben.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-119">If this **Record** was obtained from a [Recordset](recordset-object-ado.md), then the results of this operation will not be reflected immediately in the **Recordset**.</span></span> <span data-ttu-id="7ba6d-120">Aktualisieren Sie das **Recordset** , indem schließen und erneut öffnen, oder durch Ausführen der **Recordset** [erneut abzufragen](requery-method-ado.md), oder [Update](update-method-ado.md) und [Resync](resync-method-ado.md) -Methode.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-120">Refresh the **Recordset** by closing and re-opening it, or by executing the **Recordset** [Requery](requery-method-ado.md), or [Update](update-method-ado.md) and [Resync](resync-method-ado.md) methods.</span></span>
 
 
 > [!NOTE]
-<span data-ttu-id="8fd8b-121"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="8fd8b-121"><<<<<<< HEAD</span></span>
-> <P><span data-ttu-id="8fd8b-p105">[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der <A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider für Internet Publishing</A> automatisch aufgerufen. Weitere Informationen erhalten Sie unter <A href="absolute-and-relative-urls.md">Absolute und relative URLs</A>.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-p105">URLs using the http scheme will automatically invoke the <A href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</A>. For more information, see <A href="absolute-and-relative-urls.md">Absolute and Relative URLs</A>.</span></span></P>
-=======
-> <span data-ttu-id="8fd8b-124">[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="8fd8b-124">URLs using the http scheme will automatically invoke the [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md).</span></span> <span data-ttu-id="8fd8b-125">Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).</span><span class="sxs-lookup"><span data-stu-id="8fd8b-125">For more information, see [Absolute and relative URLs](absolute-and-relative-urls.md).</span></span>
->>>>>>> <span data-ttu-id="8fd8b-126">master</span><span class="sxs-lookup"><span data-stu-id="8fd8b-126">master</span></span>
+> <span data-ttu-id="7ba6d-121">[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="7ba6d-121">URLs using the http scheme will automatically invoke the [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md).</span></span> <span data-ttu-id="7ba6d-122">Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).</span><span class="sxs-lookup"><span data-stu-id="7ba6d-122">For more information, see [Absolute and relative URLs](absolute-and-relative-urls.md).</span></span>
 
 

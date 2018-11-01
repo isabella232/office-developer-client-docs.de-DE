@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn123920(v=office.15)
 ms:contentKeyID: 52071559
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0499fc6c1bb0941f279ef18d603668c0953f2e5d
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0fef2d7de8864d50e7260bf2c712e67b1f857c92
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475076"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25877723"
 ---
-# <a name="program-flow"></a><span data-ttu-id="415aa-102">Programmablauf</span><span class="sxs-lookup"><span data-stu-id="415aa-102">Program Flow</span></span>
+# <a name="program-flow"></a><span data-ttu-id="11eb3-102">Programmablauf</span><span class="sxs-lookup"><span data-stu-id="11eb3-102">Program Flow</span></span>
 
 
-<span data-ttu-id="415aa-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="415aa-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="11eb3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="11eb3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="415aa-104">Wenn...Dann...Sonst-Makroblock</span><span class="sxs-lookup"><span data-stu-id="415aa-104">If...Then...Else Macro Block</span></span>](if-then-else-macro-block.md)
+  - [<span data-ttu-id="11eb3-104">If... Im Anschluss: Makroblock</span><span class="sxs-lookup"><span data-stu-id="11eb3-104">If...Then...Else Macro Block</span></span>](if-then-else-macro-block.md)
 
-  - [<span data-ttu-id="415aa-105">Kommentar-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="415aa-105">Comment Macro Statement</span></span>](comment-macro-statement.md)
+  - [<span data-ttu-id="11eb3-105">Kommentar-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="11eb3-105">Comment Macro Statement</span></span>](comment-macro-statement.md)
 
-  - [<span data-ttu-id="415aa-106">Gruppieren-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="415aa-106">Group Macro Statement</span></span>](group-macro-statement.md)
+  - [<span data-ttu-id="11eb3-106">Gruppieren-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="11eb3-106">Group Macro Statement</span></span>](group-macro-statement.md)
 
-  - [<span data-ttu-id="415aa-107">Untermakro-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="415aa-107">Submacro Macro Statement</span></span>](submacro-macro-statement.md)
+  - [<span data-ttu-id="11eb3-107">Untermakro-Makroanweisung</span><span class="sxs-lookup"><span data-stu-id="11eb3-107">Submacro Macro Statement</span></span>](submacro-macro-statement.md)
 

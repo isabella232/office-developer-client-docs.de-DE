@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197365(v=office.15)
 ms:contentKeyID: 48546270
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: acbae7603615af8d0171715799963ad4d54e6342
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 2ae19e30aa2a2f60f606f2380712815732eac932
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475203"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871367"
 ---
-# <a name="document-members-dao"></a><span data-ttu-id="4a99b-102">Document Members (DAO)</span><span class="sxs-lookup"><span data-stu-id="4a99b-102">Document Members (DAO)</span></span>
+# <a name="document-members-dao"></a><span data-ttu-id="8f772-102">Document Members (DAO)</span><span class="sxs-lookup"><span data-stu-id="8f772-102">Document Members (DAO)</span></span>
 
 
-<span data-ttu-id="4a99b-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="4a99b-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8f772-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8f772-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4a99b-p101">Ein Document-Objekt schließt Informationen zu einer Objektinstanz ein. Bei dem Objekt kann es sich um eine Datenbank, gespeicherte Tabelle, Abfrage oder Beziehung handeln (gilt nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="4a99b-p101">A Document object includes information about one instance of an object. The object can be a database, saved table, query, or relationship (Microsoft Access database engine databases only).</span></span>
+<span data-ttu-id="8f772-p101">Ein Document-Objekt schließt Informationen zu einer Objektinstanz ein. Bei dem Objekt kann es sich um eine Datenbank, gespeicherte Tabelle, Abfrage oder Beziehung handeln (gilt nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="8f772-p101">A Document object includes information about one instance of an object. The object can be a database, saved table, query, or relationship (Microsoft Access database engine databases only).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="4a99b-106">Methoden</span><span class="sxs-lookup"><span data-stu-id="4a99b-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="8f772-106">Methoden</span><span class="sxs-lookup"><span data-stu-id="8f772-106">Methods</span></span>
 
 <table>
 <colgroup>
@@ -29,20 +29,20 @@ ms.locfileid: "25475203"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="4a99b-107">Name</span><span class="sxs-lookup"><span data-stu-id="4a99b-107">Name</span></span></p></th>
-<th><p><span data-ttu-id="4a99b-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4a99b-108">Description</span></span></p></th>
+<th><p><span data-ttu-id="8f772-107">Name</span><span class="sxs-lookup"><span data-stu-id="8f772-107">Name</span></span></p></th>
+<th><p><span data-ttu-id="8f772-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8f772-108">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="4a99b-109"><strong><a href="document-createproperty-method-dao.md">CreateProperty</a></strong></span><span class="sxs-lookup"><span data-stu-id="4a99b-109"><strong><a href="document-createproperty-method-dao.md">CreateProperty</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="4a99b-110">Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="4a99b-110">Creates a new user-defined <strong><a href="property-object-dao.md">Property</a></strong> object (Microsoft Access workspaces only).</span></span></p></td>
+<td><p><span data-ttu-id="8f772-109"><strong><a href="document-createproperty-method-dao.md">CreateProperty</a></strong></span><span class="sxs-lookup"><span data-stu-id="8f772-109"><strong><a href="document-createproperty-method-dao.md">CreateProperty</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="8f772-110">Erstellt ein neues, benutzerdefiniertes <strong><a href="property-object-dao.md">Property</a></strong> -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="8f772-110">Creates a new user-defined <strong><a href="property-object-dao.md">Property</a></strong> object (Microsoft Access workspaces only).</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="properties"></a><span data-ttu-id="4a99b-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4a99b-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8f772-111">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8f772-111">Properties</span></span>
 
 <table>
 <colgroup>
@@ -51,30 +51,30 @@ ms.locfileid: "25475203"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="4a99b-112">Name</span><span class="sxs-lookup"><span data-stu-id="4a99b-112">Name</span></span></p></th>
-<th><p><span data-ttu-id="4a99b-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4a99b-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="8f772-112">Name</span><span class="sxs-lookup"><span data-stu-id="8f772-112">Name</span></span></p></th>
+<th><p><span data-ttu-id="8f772-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8f772-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="4a99b-114"><strong><a href="document-container-property-dao.md">Container</a></strong></span><span class="sxs-lookup"><span data-stu-id="4a99b-114"><strong><a href="document-container-property-dao.md">Container</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="4a99b-p102">Gibt den Namen des <strong><a href="container-object-dao.md">Container</a></strong> -Objekts zurück, zu dem ein <strong>Document</strong>-Objekt gehört (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="4a99b-p102">Returns the name of the <strong><a href="container-object-dao.md">Container</a></strong> object to which a <strong>Document</strong> object belongs (Microsoft Access workspaces only). .</span></span></p></td>
+<td><p><span data-ttu-id="8f772-114"><strong><a href="document-container-property-dao.md">Container</a></strong></span><span class="sxs-lookup"><span data-stu-id="8f772-114"><strong><a href="document-container-property-dao.md">Container</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="8f772-p102">Gibt den Namen des <strong><a href="container-object-dao.md">Container</a></strong> -Objekts zurück, zu dem ein <strong>Document</strong>-Objekt gehört (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="8f772-p102">Returns the name of the <strong><a href="container-object-dao.md">Container</a></strong> object to which a <strong>Document</strong> object belongs (Microsoft Access workspaces only). .</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="4a99b-117"><strong><a href="document-datecreated-property-dao.md">DateCreated</a></strong></span><span class="sxs-lookup"><span data-stu-id="4a99b-117"><strong><a href="document-datecreated-property-dao.md">DateCreated</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="4a99b-p103">Gibt das Datum und die Uhrzeit zurück, zu der ein Objekt erstellt wurde. Schreibgeschützter <strong>Variant</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="4a99b-p103">Returns the date and time that an object was created. Read-only <strong>Variant</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="8f772-117"><strong><a href="document-datecreated-property-dao.md">DateCreated</a></strong></span><span class="sxs-lookup"><span data-stu-id="8f772-117"><strong><a href="document-datecreated-property-dao.md">DateCreated</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="8f772-p103">Gibt das Datum und die Uhrzeit zurück, zu der ein Objekt erstellt wurde. Schreibgeschützter <strong>Variant</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="8f772-p103">Returns the date and time that an object was created. Read-only <strong>Variant</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="4a99b-120"><strong><a href="document-lastupdated-property-dao.md">LastUpdated</a></strong></span><span class="sxs-lookup"><span data-stu-id="4a99b-120"><strong><a href="document-lastupdated-property-dao.md">LastUpdated</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="4a99b-p104">Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Schreibgeschützter <strong>Variant</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="4a99b-p104">Returns the date and time of the most recent change made to an object. Read-only <strong>Variant</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="8f772-120"><strong><a href="document-lastupdated-property-dao.md">LastUpdated</a></strong></span><span class="sxs-lookup"><span data-stu-id="8f772-120"><strong><a href="document-lastupdated-property-dao.md">LastUpdated</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="8f772-p104">Gibt das Datum und die Uhrzeit der letzten Änderung eines Objekts zurück. Schreibgeschützter <strong>Variant</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="8f772-p104">Returns the date and time of the most recent change made to an object. Read-only <strong>Variant</strong>.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="4a99b-123"><strong><a href="document-name-property-dao.md">Name</a></strong></span><span class="sxs-lookup"><span data-stu-id="4a99b-123"><strong><a href="document-name-property-dao.md">Name</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="4a99b-p105">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="4a99b-p105">Returns the name of the specified object. Read-only <strong>String</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="8f772-123"><strong><a href="document-name-property-dao.md">Name</a></strong></span><span class="sxs-lookup"><span data-stu-id="8f772-123"><strong><a href="document-name-property-dao.md">Name</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="8f772-p105">Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter <strong>String</strong>-Wert.</span><span class="sxs-lookup"><span data-stu-id="8f772-p105">Returns the name of the specified object. Read-only <strong>String</strong>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="4a99b-126"><strong><a href="document-properties-property-dao.md">Eigenschaften</a></strong></span><span class="sxs-lookup"><span data-stu-id="4a99b-126"><strong><a href="document-properties-property-dao.md">Properties</a></strong></span></span></p></td>
-<td><p><span data-ttu-id="4a99b-p106">Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="4a99b-p106">Returns the <strong><a href="properties-collection-dao.md">Properties</a></strong> collection of the specified object. Read-only.</span></span></p></td>
+<td><p><span data-ttu-id="8f772-126"><strong><a href="document-properties-property-dao.md">Eigenschaften</a></strong></span><span class="sxs-lookup"><span data-stu-id="8f772-126"><strong><a href="document-properties-property-dao.md">Properties</a></strong></span></span></p></td>
+<td><p><span data-ttu-id="8f772-p106">Gibt die <strong><a href="properties-collection-dao.md">Properties</a></strong> -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="8f772-p106">Returns the <strong><a href="properties-collection-dao.md">Properties</a></strong> collection of the specified object. Read-only.</span></span></p></td>
 </tr>
 </tbody>
 </table>

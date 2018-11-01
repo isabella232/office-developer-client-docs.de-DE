@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193147(v=office.15)
 ms:contentKeyID: 48544518
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e2e5ba0cce03d54a0ede501ecb7aac8f24a46ba1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0ac063447280909e93bba7cb51dddf842577a76d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473095"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881314"
 ---
-# <a name="fieldproperties-property-dao"></a><span data-ttu-id="b1f67-102">Field.Properties Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="b1f67-102">Field.Properties Property (DAO)</span></span>
+# <a name="fieldproperties-property-dao"></a><span data-ttu-id="d33b2-102">Field.Properties Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="d33b2-102">Field.Properties Property (DAO)</span></span>
 
 
-<span data-ttu-id="b1f67-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="b1f67-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="d33b2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d33b2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="b1f67-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="b1f67-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
+<span data-ttu-id="d33b2-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="d33b2-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="b1f67-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="b1f67-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d33b2-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="d33b2-106">Syntax</span></span>
 
-<span data-ttu-id="b1f67-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="b1f67-107">*expression* .Properties</span></span>
+<span data-ttu-id="d33b2-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d33b2-107">*expression* .Properties</span></span>
 
-<span data-ttu-id="b1f67-108">*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="b1f67-108">*expression* A variable that represents a **Field** object.</span></span>
+<span data-ttu-id="d33b2-108">*Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="d33b2-108">*expression* A variable that represents a **Field** object.</span></span>
 

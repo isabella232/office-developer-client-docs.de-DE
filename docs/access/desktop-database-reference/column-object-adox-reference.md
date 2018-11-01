@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250234(v=office.15)
 ms:contentKeyID: 48548669
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d2f0f39fca2e5b17744a200fbc04b589bc370033
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3c9dbcd19735e2494217991040b715efe8765887
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474552"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881944"
 ---
-# <a name="column-object-adox-reference"></a><span data-ttu-id="67b5d-102">Column Object (ADOX) Reference</span><span class="sxs-lookup"><span data-stu-id="67b5d-102">Column Object (ADOX) Reference</span></span>
+# <a name="column-object-adox-reference"></a><span data-ttu-id="97f29-102">Column Object (ADOX) Reference</span><span class="sxs-lookup"><span data-stu-id="97f29-102">Column Object (ADOX) Reference</span></span>
 
 
-<span data-ttu-id="67b5d-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="67b5d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="97f29-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="97f29-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="67b5d-104">Column-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="67b5d-104">Column Object (ADOX)</span></span>](column-object-adox.md)
+  - [<span data-ttu-id="97f29-104">Column-Objekt (ADOX)</span><span class="sxs-lookup"><span data-stu-id="97f29-104">Column Object (ADOX)</span></span>](column-object-adox.md)
 
-  - [<span data-ttu-id="67b5d-105">Column Properties, Methods, and Events (ADOX)</span><span class="sxs-lookup"><span data-stu-id="67b5d-105">Column Properties, Methods, and Events (ADOX)</span></span>](column-properties-methods-and-events-adox.md)
+  - [<span data-ttu-id="97f29-105">Column Properties, Methods, and Events (ADOX)</span><span class="sxs-lookup"><span data-stu-id="97f29-105">Column Properties, Methods, and Events (ADOX)</span></span>](column-properties-methods-and-events-adox.md)
 

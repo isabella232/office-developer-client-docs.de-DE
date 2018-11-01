@@ -10,40 +10,40 @@ f1_keywords:
 - dao360.chm1053005
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f1d10a8e348021d88510519c61825714ca434b3b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5d3b0c159d259d96ea135a8ed014af268a57cd77
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474433"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880320"
 ---
-# <a name="querydefreturnsrecords-property-dao"></a><span data-ttu-id="3f3ae-102">QueryDef.ReturnsRecords Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="3f3ae-102">QueryDef.ReturnsRecords Property (DAO)</span></span>
+# <a name="querydefreturnsrecords-property-dao"></a><span data-ttu-id="8014c-102">QueryDef.ReturnsRecords Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="8014c-102">QueryDef.ReturnsRecords Property (DAO)</span></span>
 
 
-<span data-ttu-id="3f3ae-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="3f3ae-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8014c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8014c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="3f3ae-104">Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine externe Datenbank Datensätze zurückgibt (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="3f3ae-104">Sets or returns a value that indicates whether an SQL pass-through query to an external database returns records (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="8014c-104">Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine externe Datenbank Datensätze zurückgibt (nur Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="8014c-104">Sets or returns a value that indicates whether an SQL pass-through query to an external database returns records (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="3f3ae-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="3f3ae-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8014c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8014c-105">Syntax</span></span>
 
-<span data-ttu-id="3f3ae-106">*Ausdruck* . ReturnsRecords</span><span class="sxs-lookup"><span data-stu-id="3f3ae-106">*expression* .ReturnsRecords</span></span>
+<span data-ttu-id="8014c-106">*Ausdruck* . ReturnsRecords</span><span class="sxs-lookup"><span data-stu-id="8014c-106">*expression* .ReturnsRecords</span></span>
 
-<span data-ttu-id="3f3ae-107">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="3f3ae-107">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="8014c-107">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8014c-107">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="3f3ae-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="3f3ae-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8014c-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8014c-108">Remarks</span></span>
 
-<span data-ttu-id="3f3ae-p101">Nicht alle SQL Pass-Through-Abfragen an externe Datenbanken geben Datensätze zurück. Eine SQL UPDATE-Anweisung aktualisiert z. B. Datensätze, ohne Datensätze zurückzugeben, während eine SQL SELECT-Anweisung Datensätze zurückgibt. Wenn die Abfrage Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **True** fest. Wenn die Abfrage keine Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **False** fest.</span><span class="sxs-lookup"><span data-stu-id="3f3ae-p101">Not all SQL pass-through queries to external databases return records. For example, an SQL UPDATE statement updates records without returning records, while an SQL SELECT statement does return records. If the query returns records, set the **ReturnsRecords** property to **True**; if the query doesn't return records, set the **ReturnsRecords** property to **False**.</span></span>
+<span data-ttu-id="8014c-p101">Nicht alle SQL Pass-Through-Abfragen an externe Datenbanken geben Datensätze zurück. Eine SQL UPDATE-Anweisung aktualisiert z. B. Datensätze, ohne Datensätze zurückzugeben, während eine SQL SELECT-Anweisung Datensätze zurückgibt. Wenn die Abfrage Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **True** fest. Wenn die Abfrage keine Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **False** fest.</span><span class="sxs-lookup"><span data-stu-id="8014c-p101">Not all SQL pass-through queries to external databases return records. For example, an SQL UPDATE statement updates records without returning records, while an SQL SELECT statement does return records. If the query returns records, set the **ReturnsRecords** property to **True**; if the query doesn't return records, set the **ReturnsRecords** property to **False**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="3f3ae-112">[!HINWEIS] Vor dem Festlegen der <A href="querydef-connect-property-dao.md">ReturnsRecords</A>-Eigenschaft müssen Sie die <STRONG><STRONG>Connect</STRONG></STRONG> -Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="3f3ae-112">You must set the <STRONG><A href="querydef-connect-property-dao.md">Connect</A></STRONG> property before you set the <STRONG>ReturnsRecords</STRONG> property.</span></span></P>
+> <P><span data-ttu-id="8014c-112">[!HINWEIS] Vor dem Festlegen der <A href="querydef-connect-property-dao.md">ReturnsRecords</A>-Eigenschaft müssen Sie die <STRONG><STRONG>Connect</STRONG></STRONG> -Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="8014c-112">You must set the <STRONG><A href="querydef-connect-property-dao.md">Connect</A></STRONG> property before you set the <STRONG>ReturnsRecords</STRONG> property.</span></span></P>
 
 
 
-## <a name="example"></a><span data-ttu-id="3f3ae-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3f3ae-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8014c-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8014c-113">Example</span></span>
 
-<span data-ttu-id="3f3ae-p102">In diesem Beispiel werden die Eigenschaften **Connect** und **ReturnsRecords** verwendet, um die 5 stärksten Buchtitel aus einer Microsoft SQL Server-Datenbank basierend auf den Verkaufszahlen eines Jahres auszuwählen. Bei einer genauen Übereinstimmung der Verkaufszahlen wird in diesem Beispiel die Größe der Liste erweitert, die die Ergebnisse der Abfrage anzeigt, und eine entsprechende Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="3f3ae-p102">This example uses the **Connect** and **ReturnsRecords** properties to select the top five book titles from a Microsoft SQL Server database based on year-to-date sales amounts. In the event of an exact match in sales amounts, the example increases the size of the list displaying the results of the query and prints a message explaining why this occurred.</span></span>
+<span data-ttu-id="8014c-p102">In diesem Beispiel werden die Eigenschaften **Connect** und **ReturnsRecords** verwendet, um die 5 stärksten Buchtitel aus einer Microsoft SQL Server-Datenbank basierend auf den Verkaufszahlen eines Jahres auszuwählen. Bei einer genauen Übereinstimmung der Verkaufszahlen wird in diesem Beispiel die Größe der Liste erweitert, die die Ergebnisse der Abfrage anzeigt, und eine entsprechende Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="8014c-p102">This example uses the **Connect** and **ReturnsRecords** properties to select the top five book titles from a Microsoft SQL Server database based on year-to-date sales amounts. In the event of an exact match in sales amounts, the example increases the size of the list displaying the results of the query and prints a message explaining why this occurred.</span></span>
 
 ```vb 
 Sub ClientServerX1() 
@@ -107,7 +107,7 @@ Sub ClientServerX1()
  
 ```
 
-<span data-ttu-id="3f3ae-116">In diesem Beispiel wird mit der Eigenschaft **ReturnsRecords** und der benutzerdefinierten Eigenschaft **LogMessages** eine Pass-Through-Abfrage erstellt, die Daten und alle vom Remoteserver erstellten Meldungen zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="3f3ae-116">This example uses the **ReturnsRecords** property and the custom **LogMessages** property to create a pass-through query that will return data and any messages generated by the remote server.</span></span>
+<span data-ttu-id="8014c-116">In diesem Beispiel wird mit der Eigenschaft **ReturnsRecords** und der benutzerdefinierten Eigenschaft **LogMessages** eine Pass-Through-Abfrage erstellt, die Daten und alle vom Remoteserver erstellten Meldungen zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="8014c-116">This example uses the **ReturnsRecords** property and the custom **LogMessages** property to create a pass-through query that will return data and any messages generated by the remote server.</span></span>
 
 ```vb 
 Sub LogMessagesX() 
