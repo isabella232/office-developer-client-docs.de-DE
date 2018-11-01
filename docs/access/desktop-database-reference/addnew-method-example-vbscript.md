@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249735(v=office.15)
 ms:contentKeyID: 48546699
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4f45f9743659e6a0f82d86b1662c178344bf428d
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 6f33b9f594404a96553825b04f86e94f2aa6c150
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860112"
+ms.locfileid: "25870072"
 ---
-# <a name="addnew-method-example-vbscript"></a><span data-ttu-id="d60dd-102">AddNew-Methode (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="d60dd-102">AddNew method example (VBScript)</span></span>
+# <a name="addnew-method-example-vbscript"></a><span data-ttu-id="a13c3-102">AddNew-Methode (Beispiel) (VBScript)</span><span class="sxs-lookup"><span data-stu-id="a13c3-102">AddNew method example (VBScript)</span></span>
 
 
-<span data-ttu-id="d60dd-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="d60dd-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="a13c3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a13c3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="d60dd-104">In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet.</span><span class="sxs-lookup"><span data-stu-id="d60dd-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
+<span data-ttu-id="a13c3-104">In diesem Beispiel wird die [AddNew](addnew-method-ado.md)-Methode zum Erstellen eines neuen Datensatzes mit dem angegebenen Namen verwendet.</span><span class="sxs-lookup"><span data-stu-id="a13c3-104">This example uses the [AddNew](addnew-method-ado.md) method to create a new record with the specified name.</span></span>
 
-<span data-ttu-id="d60dd-p101">Verwenden Sie das folgende Beispiel auf einer Active Server Page (ASP). Verwenden Sie Suchen, um nach der Datei Adovbs.inc zu suchen, und platzieren Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, und fügen Sie ihn in Editor oder einen anderen Text-Editor ein, und speichern Sie ihn unter AddNewVBS.asp. Sie können das Ergebnis in jedem Clientbrowser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="d60dd-p101">Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewVBS.asp**. You can view the result in any client browser.</span></span>
+<span data-ttu-id="a13c3-p101">Verwenden Sie das folgende Beispiel auf einer Active Server Page (ASP). Verwenden Sie Suchen, um nach der Datei Adovbs.inc zu suchen, und platzieren Sie sie in dem Verzeichnis, das Sie verwenden möchten. Schneiden Sie den folgenden Code aus, und fügen Sie ihn in Editor oder einen anderen Text-Editor ein, und speichern Sie ihn unter AddNewVBS.asp. Sie können das Ergebnis in jedem Clientbrowser anzeigen.</span><span class="sxs-lookup"><span data-stu-id="a13c3-p101">Use the following example in an Active Server Page (ASP). Use **Find** to locate the file Adovbs.inc and place it in the directory you plan to use. Cut and paste the following code to Notepad or another text editor, and save it as **AddNewVBS.asp**. You can view the result in any client browser.</span></span>
 
-<span data-ttu-id="d60dd-p102">Zum Üben mit dem Beispiel fügen Sie einen neuen Datensatz im HTML-Formular hinzu. Klicken Sie auf **Hinzufügen**. Weitere Informationen zum Entfernen unerwünschter Datensätze finden Sie unter [Delete-Methode (Beispiel) (VBScript)](delete-method-example-vbscript.md).</span><span class="sxs-lookup"><span data-stu-id="d60dd-p102">To exercise the example, add a new record in the HTML form. Click **Add New**. See the [Delete Method Example](delete-method-example-vbscript.md) to remove unwanted records.</span></span>
+<span data-ttu-id="a13c3-p102">Zum Üben mit dem Beispiel fügen Sie einen neuen Datensatz im HTML-Formular hinzu. Klicken Sie auf **Hinzufügen**. Weitere Informationen zum Entfernen unerwünschter Datensätze finden Sie unter [Delete-Methode (Beispiel) (VBScript)](delete-method-example-vbscript.md).</span><span class="sxs-lookup"><span data-stu-id="a13c3-p102">To exercise the example, add a new record in the HTML form. Click **Add New**. See the [Delete Method Example](delete-method-example-vbscript.md) to remove unwanted records.</span></span>
 
 ```vb
  

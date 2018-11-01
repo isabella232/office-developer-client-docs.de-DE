@@ -6,23 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125933(v=office.15)
 ms:contentKeyID: 52074804
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 21637715c970a1673aa3741ebc16aaa0f418c9de
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: afc74fb40b23f49a779706c3f2fe3523dbc47113
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474692"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869757"
 ---
-# <a name="indexes-methods-dao"></a><span data-ttu-id="8efff-102">Indexes Methods (DAO)</span><span class="sxs-lookup"><span data-stu-id="8efff-102">Indexes Methods (DAO)</span></span>
+# <a name="indexes-methods-dao"></a><span data-ttu-id="2d97d-102">Indexes Methods (DAO)</span><span class="sxs-lookup"><span data-stu-id="2d97d-102">Indexes Methods (DAO)</span></span>
 
 
-<span data-ttu-id="8efff-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8efff-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="2d97d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2d97d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="8efff-104">Indexes.Append Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="8efff-104">Indexes.Append Method (DAO)</span></span>](indexes-append-method-dao.md)
+  - [<span data-ttu-id="2d97d-104">Indexes.Append Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="2d97d-104">Indexes.Append Method (DAO)</span></span>](indexes-append-method-dao.md)
 
-  - [<span data-ttu-id="8efff-105">Indexes.Delete Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="8efff-105">Indexes.Delete Method (DAO)</span></span>](indexes-delete-method-dao.md)
+  - [<span data-ttu-id="2d97d-105">Indexes.Delete Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="2d97d-105">Indexes.Delete Method (DAO)</span></span>](indexes-delete-method-dao.md)
 
-  - [<span data-ttu-id="8efff-106">Indexes.Refresh Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="8efff-106">Indexes.Refresh Method (DAO)</span></span>](indexes-refresh-method-dao.md)
+  - [<span data-ttu-id="2d97d-106">Indexes.Refresh Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="2d97d-106">Indexes.Refresh Method (DAO)</span></span>](indexes-refresh-method-dao.md)
 

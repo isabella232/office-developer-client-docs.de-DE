@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="97bf0-101"><<<<<<< HEAD-Titel: Filter und RecordCount Eigenschaft (Beispiel) (VC++) TOCTitle: Filter- und RecordCount-Eigenschaften-Beispiel) (VC++) === Titel: Filter und RecordCount Eigenschaft (VC++-Beispiel) TOCTitle: Filter und RecordCount Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="97bf0-101"><<<<<<< HEAD title: Filter and RecordCount Properties Example (VC++) TOCTitle: Filter and RecordCount Properties Example (VC++) ======= title: Filter and RecordCount properties example (VC++) TOCTitle: Filter and RecordCount properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="97bf0-102">Master Ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15) Ms:contentKeyID: 48544161 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="97bf0-102">master ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15) ms:contentKeyID: 48544161 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Filter- und RecordCount-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Filter and RecordCount properties example (VC++)
+ms:assetid: 361499c3-cfb4-a26b-5ed7-5c880ae7d631
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249119(v=office.15)
+ms:contentKeyID: 48544161
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 4ca6e56110110086f9b608eb87228ebf17462bce
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889819"
 ---
-
-<span data-ttu-id="97bf0-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="97bf0-103"><<<<<<< HEAD</span></span>
-# <a name="filter-and-recordcount-properties-example-vc"></a><span data-ttu-id="97bf0-104">Filter- und RecordCount-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="97bf0-104">Filter and RecordCount Properties Example (VC++)</span></span>
-=======
-# <a name="filter-and-recordcount-properties-example-vc"></a><span data-ttu-id="97bf0-105">Filter- und RecordCount Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="97bf0-105">Filter and RecordCount properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="97bf0-106">master</span><span class="sxs-lookup"><span data-stu-id="97bf0-106">master</span></span>
+# <a name="filter-and-recordcount-properties-example-vc"></a><span data-ttu-id="8573d-102">Filter- und RecordCount-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="8573d-102">Filter and RecordCount properties example (VC++)</span></span>
 
 
-<span data-ttu-id="97bf0-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="97bf0-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8573d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8573d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="97bf0-p101">In diesem Beispiel wird die Filter-Eigenschaft verwendet, um anhand einer bestimmten Bedingung, die auf ein vorhandenes Recordset-Objekt angewendet wird, ein neues Recordset zu öffnen. Mithilfe der RecordCount-Eigenschaft wird die Anzahl von Datensätzen in beiden Recordset-Objekten angezeigt. Die FilterField-Funktion ist erforderlich, damit diese Prozedur ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="97bf0-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
+<span data-ttu-id="8573d-p101">In diesem Beispiel wird die Filter-Eigenschaft verwendet, um anhand einer bestimmten Bedingung, die auf ein vorhandenes Recordset-Objekt angewendet wird, ein neues Recordset zu öffnen. Mithilfe der RecordCount-Eigenschaft wird die Anzahl von Datensätzen in beiden Recordset-Objekten angezeigt. Die FilterField-Funktion ist erforderlich, damit diese Prozedur ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="8573d-p101">This example uses the [Filter](filter-property-ado.md) property to open a new [Recordset](recordset-object-ado.md) based on a specified condition applied to an existing **Recordset**. It uses the [RecordCount](recordcount-property-ado.md) property to show the number of records in the two **Recordsets**. The FilterField function is required for this procedure to run.</span></span>
 
 ```cpp 
  
@@ -313,7 +319,7 @@ void PrintComError(_com_error &e)
 // EndFilterCpp 
 ```
 
-<span data-ttu-id="97bf0-111">**FilterX.h**</span><span class="sxs-lookup"><span data-stu-id="97bf0-111">**FilterX.h**</span></span>
+<span data-ttu-id="8573d-107">**FilterX.h**</span><span class="sxs-lookup"><span data-stu-id="8573d-107">**FilterX.h**</span></span>
 
 ```cpp 
  

@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="290f3-101"><<<<<<< HEAD-Titel: MarshalOptions-Eigenschaft Beispiel) (VJ++) TOCTitle: MarshalOptions-Eigenschaft Beispiel) (VJ++) === Titel: MarshalOptions-Eigenschaft Beispiel) (VJ++) TOCTitle: MarshalOptions-Eigenschaft Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="290f3-101"><<<<<<< HEAD title: MarshalOptions Property Example (VJ++) TOCTitle: MarshalOptions Property Example (VJ++) ======= title: MarshalOptions property example (VJ++) TOCTitle: MarshalOptions property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="290f3-102">Master Ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15) Ms:contentKeyID: 48544313 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="290f3-102">master ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15) ms:contentKeyID: 48544313 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: MarshalOptions-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: MarshalOptions property example (VJ++)
+ms:assetid: 3c565ed1-1a60-77f5-7c69-ceb28027cb40
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249158(v=office.15)
+ms:contentKeyID: 48544313
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: dfb62f996bc09446445d8ef2cc49644fa99c1a2c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883190"
 ---
-
-<span data-ttu-id="290f3-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="290f3-103"><<<<<<< HEAD</span></span>
-# <a name="marshaloptions-property-example-vj"></a><span data-ttu-id="290f3-104">MarshalOptions-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="290f3-104">MarshalOptions Property Example (VJ++)</span></span>
-=======
-# <a name="marshaloptions-property-example-vj"></a><span data-ttu-id="290f3-105">MarshalOptions-Eigenschaft Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="290f3-105">MarshalOptions property example (VJ++)</span></span>
->>>>>>> <span data-ttu-id="290f3-106">master</span><span class="sxs-lookup"><span data-stu-id="290f3-106">master</span></span>
+# <a name="marshaloptions-property-example-vj"></a><span data-ttu-id="477ef-102">MarshalOptions-Eigenschaft (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="477ef-102">MarshalOptions property example (VJ++)</span></span>
 
 
-<span data-ttu-id="290f3-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="290f3-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="477ef-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="477ef-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="290f3-108">In diesem Beispiel wird die [MarshalOptions](marshaloptions-property-ado.md)-Eigenschaft verwendet, um die Zeilen anzugeben, die an den Server zurückgesendet werden: alle Zeilen oder nur geänderte Zeilen.</span><span class="sxs-lookup"><span data-stu-id="290f3-108">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
+<span data-ttu-id="477ef-104">In diesem Beispiel wird die [MarshalOptions](marshaloptions-property-ado.md)-Eigenschaft verwendet, um die Zeilen anzugeben, die an den Server zurückgesendet werden: alle Zeilen oder nur geänderte Zeilen.</span><span class="sxs-lookup"><span data-stu-id="477ef-104">This example uses the [MarshalOptions](marshaloptions-property-ado.md) property to specify what rows are sent back to the server — All Rows or only Modified Rows.</span></span>
 
 ```java 
  

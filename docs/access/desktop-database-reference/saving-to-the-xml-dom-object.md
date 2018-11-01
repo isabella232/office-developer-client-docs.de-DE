@@ -6,21 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249160(v=office.15)
 ms:contentKeyID: 48544318
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2bb85d34da052dda3e2bea5cead7ee4113ac2c12
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d0118eb277f8f1cc3332aeff1880b161d62f36cb
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885395"
 ---
-# <a name="saving-to-the-xml-dom-object"></a><span data-ttu-id="6db1e-102">Speichern im XML-DOM-Objekt</span><span class="sxs-lookup"><span data-stu-id="6db1e-102">Saving to the XML DOM Object</span></span>
+# <a name="saving-to-the-xml-dom-object"></a><span data-ttu-id="a75f1-102">Speichern im XML-DOM-Objekt</span><span class="sxs-lookup"><span data-stu-id="a75f1-102">Saving to the XML DOM Object</span></span>
 
 
-<span data-ttu-id="6db1e-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="6db1e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="a75f1-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a75f1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="saving-to-the-xml-dom-object"></a><span data-ttu-id="6db1e-104">Speichern im XML-DOM-Objekt</span><span class="sxs-lookup"><span data-stu-id="6db1e-104">Saving to the XML DOM Object</span></span>
+## <a name="saving-to-the-xml-dom-object"></a><span data-ttu-id="a75f1-104">Speichern im XML-DOM-Objekt</span><span class="sxs-lookup"><span data-stu-id="a75f1-104">Saving to the XML DOM Object</span></span>
 
-<span data-ttu-id="6db1e-105">Ein **Recordset** -Objekt können Sie, wie im folgenden Visual Basic-Code veranschaulicht, im XML-Format in einer Instanz eines MSXML-DOM-Objekts speichern:</span><span class="sxs-lookup"><span data-stu-id="6db1e-105">You can save a **Recordset** in XML format to an instance of an MSXML DOM object, as shown in the following Visual Basic code:</span></span>
+<span data-ttu-id="a75f1-105">Ein **Recordset** -Objekt können Sie, wie im folgenden Visual Basic-Code veranschaulicht, im XML-Format in einer Instanz eines MSXML-DOM-Objekts speichern:</span><span class="sxs-lookup"><span data-stu-id="a75f1-105">You can save a **Recordset** in XML format to an instance of an MSXML DOM object, as shown in the following Visual Basic code:</span></span>
 
 ```vb 
  

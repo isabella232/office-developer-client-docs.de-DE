@@ -6,53 +6,53 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250201(v=office.15)
 ms:contentKeyID: 48548521
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3227d6a8f7071ee4cdd95aa73c56d8bf61d9e26e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 521728af91967d673a1c69f4e4812b0aaa73ce59
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883883"
 ---
-# <a name="submitchanges-method-rds"></a><span data-ttu-id="8778d-102">SubmitChanges-Methode (RDS)</span><span class="sxs-lookup"><span data-stu-id="8778d-102">SubmitChanges Method (RDS)</span></span>
+# <a name="submitchanges-method-rds"></a><span data-ttu-id="bea93-102">SubmitChanges-Methode (RDS)</span><span class="sxs-lookup"><span data-stu-id="bea93-102">SubmitChanges Method (RDS)</span></span>
 
 
-<span data-ttu-id="8778d-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="8778d-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="bea93-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="bea93-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8778d-104">Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierbaren [Recordset](recordset-object-ado.md)-Objekts an die in der [Connect](connect-property-rds.md)-Eigenschaft oder der [URL](url-property-rds.md)-Eigenschaft angegebene Datenquelle.</span><span class="sxs-lookup"><span data-stu-id="8778d-104">Submits pending changes of the locally cached and updatable [Recordset](recordset-object-ado.md) to the data source specified in the [Connect](connect-property-rds.md) property or the [URL](url-property-rds.md) property.</span></span>
+<span data-ttu-id="bea93-104">Sendet ausstehende Änderungen des lokal zwischengespeicherten und aktualisierbaren [Recordset](recordset-object-ado.md)-Objekts an die in der [Connect](connect-property-rds.md)-Eigenschaft oder der [URL](url-property-rds.md)-Eigenschaft angegebene Datenquelle.</span><span class="sxs-lookup"><span data-stu-id="bea93-104">Submits pending changes of the locally cached and updatable [Recordset](recordset-object-ado.md) to the data source specified in the [Connect](connect-property-rds.md) property or the [URL](url-property-rds.md) property.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8778d-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8778d-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="bea93-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="bea93-105">Syntax</span></span>
 
-<span data-ttu-id="8778d-106">*DataControl*. SubmitChanges</span><span class="sxs-lookup"><span data-stu-id="8778d-106">*DataControl*.SubmitChanges</span></span>
+<span data-ttu-id="bea93-106">*DataControl*. SubmitChanges</span><span class="sxs-lookup"><span data-stu-id="bea93-106">*DataControl*.SubmitChanges</span></span>
 
-<span data-ttu-id="8778d-107">*DataFactory*. SubmitChanges*Connection*, *Recordset-Objekt*</span><span class="sxs-lookup"><span data-stu-id="8778d-107">*DataFactory*.SubmitChanges*Connection*, *Recordset*</span></span>
+<span data-ttu-id="bea93-107">*DataFactory*. SubmitChanges*Connection*, *Recordset-Objekt*</span><span class="sxs-lookup"><span data-stu-id="bea93-107">*DataFactory*.SubmitChanges*Connection*, *Recordset*</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="8778d-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="8778d-108">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="bea93-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="bea93-108">Parameters</span></span>
 
-  - <span data-ttu-id="8778d-109">*DataControl*</span><span class="sxs-lookup"><span data-stu-id="8778d-109">*DataControl*</span></span>
+  - <span data-ttu-id="bea93-109">*DataControl*</span><span class="sxs-lookup"><span data-stu-id="bea93-109">*DataControl*</span></span>
 
-  - <span data-ttu-id="8778d-110">Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8778d-110">An object variable that represents an [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
+  - <span data-ttu-id="bea93-110">Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="bea93-110">An object variable that represents an [RDS.DataControl](datacontrol-object-rds.md) object.</span></span>
 
-  - <span data-ttu-id="8778d-111">*DataFactory*</span><span class="sxs-lookup"><span data-stu-id="8778d-111">*DataFactory*</span></span>
+  - <span data-ttu-id="bea93-111">*DataFactory*</span><span class="sxs-lookup"><span data-stu-id="bea93-111">*DataFactory*</span></span>
 
-  - <span data-ttu-id="8778d-112">Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8778d-112">An object variable that represents an [RDSServer.DataFactory](datafactory-object-rdsserver.md) object.</span></span>
+  - <span data-ttu-id="bea93-112">Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="bea93-112">An object variable that represents an [RDSServer.DataFactory](datafactory-object-rdsserver.md) object.</span></span>
 
-  - <span data-ttu-id="8778d-113">*Connection*</span><span class="sxs-lookup"><span data-stu-id="8778d-113">*Connection*</span></span>
+  - <span data-ttu-id="bea93-113">*Connection*</span><span class="sxs-lookup"><span data-stu-id="bea93-113">*Connection*</span></span>
 
-  - <span data-ttu-id="8778d-114">Ein **String** -Wert, der die mit der **Connect** -Eigenschaft des **RDS.DataControl** -Objekts erstellte Verbindung darstellt.</span><span class="sxs-lookup"><span data-stu-id="8778d-114">A **String** value that represents the connection created with the **RDS.DataControl** object's **Connect** property.</span></span>
+  - <span data-ttu-id="bea93-114">Ein **String** -Wert, der die mit der **Connect** -Eigenschaft des **RDS.DataControl** -Objekts erstellte Verbindung darstellt.</span><span class="sxs-lookup"><span data-stu-id="bea93-114">A **String** value that represents the connection created with the **RDS.DataControl** object's **Connect** property.</span></span>
 
-  - <span data-ttu-id="8778d-115">*Recordset*</span><span class="sxs-lookup"><span data-stu-id="8778d-115">*Recordset*</span></span>
+  - <span data-ttu-id="bea93-115">*Recordset*</span><span class="sxs-lookup"><span data-stu-id="bea93-115">*Recordset*</span></span>
 
-  - <span data-ttu-id="8778d-116">Eine Objektvariable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8778d-116">An object variable that represents a **Recordset** object.</span></span>
+  - <span data-ttu-id="bea93-116">Eine Objektvariable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="bea93-116">An object variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8778d-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="8778d-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bea93-117">Hinweise</span><span class="sxs-lookup"><span data-stu-id="bea93-117">Remarks</span></span>
 
-<span data-ttu-id="8778d-118">Die Eigenschaften [Connect](connect-property-rds.md), [Server](server-property-rds.md) und [SQL](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) müssen festgelegt sein, bevor Sie die **SubmitChanges** -Methode für das **RDS.DataControl** -Objekt verwenden können.</span><span class="sxs-lookup"><span data-stu-id="8778d-118">The [Connect](connect-property-rds.md), [Server](server-property-rds.md), and [SQL](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) properties must be set before you can use the **SubmitChanges** method with the **RDS.DataControl** object.</span></span>
+<span data-ttu-id="bea93-118">Die Eigenschaften [Connect](connect-property-rds.md), [Server](server-property-rds.md) und [SQL](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) müssen festgelegt sein, bevor Sie die **SubmitChanges** -Methode für das **RDS.DataControl** -Objekt verwenden können.</span><span class="sxs-lookup"><span data-stu-id="bea93-118">The [Connect](connect-property-rds.md), [Server](server-property-rds.md), and [SQL](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) properties must be set before you can use the **SubmitChanges** method with the **RDS.DataControl** object.</span></span>
 
-<span data-ttu-id="8778d-119">Wenn Sie die [CancelUpdate](cancelupdate-method-rds.md)-Methode aufrufen, nachdem Sie die **SubmitChanges** -Methode für dasselbe **Recordset** -Objekt aufgerufen haben, schlägt der Aufruf von **CancelUpdate** fehl, da die Änderungen bereits übernommen wurden.</span><span class="sxs-lookup"><span data-stu-id="8778d-119">If you call the [CancelUpdate](cancelupdate-method-rds.md) method after you have called **SubmitChanges** for the same **Recordset** object, the **CancelUpdate** call fails because the changes have already been committed.</span></span>
+<span data-ttu-id="bea93-119">Wenn Sie die [CancelUpdate](cancelupdate-method-rds.md)-Methode aufrufen, nachdem Sie die **SubmitChanges** -Methode für dasselbe **Recordset** -Objekt aufgerufen haben, schlägt der Aufruf von **CancelUpdate** fehl, da die Änderungen bereits übernommen wurden.</span><span class="sxs-lookup"><span data-stu-id="bea93-119">If you call the [CancelUpdate](cancelupdate-method-rds.md) method after you have called **SubmitChanges** for the same **Recordset** object, the **CancelUpdate** call fails because the changes have already been committed.</span></span>
 
-<span data-ttu-id="8778d-120">Es werden nur die geänderten Objekte zur Änderung gesendet. Die Änderungen werden entweder alle erfolgreich vorgenommen oder sie schlagen alle fehl.</span><span class="sxs-lookup"><span data-stu-id="8778d-120">Only the changed records are sent for modification, and either all of the changes succeed or all of them fail together.</span></span>
+<span data-ttu-id="bea93-120">Es werden nur die geänderten Objekte zur Änderung gesendet. Die Änderungen werden entweder alle erfolgreich vorgenommen oder sie schlagen alle fehl.</span><span class="sxs-lookup"><span data-stu-id="bea93-120">Only the changed records are sent for modification, and either all of the changes succeed or all of them fail together.</span></span>
 
-<span data-ttu-id="8778d-121">Sie können nur mit dem *standardmäßigen* **RDSServer.DataFactory** -Objekt **SubmitChanges** verwenden.</span><span class="sxs-lookup"><span data-stu-id="8778d-121">You can use **SubmitChanges** only with the *default* **RDSServer.DataFactory** object.</span></span> <span data-ttu-id="8778d-122">Diese Methode kann nicht für benutzerdefinierte Geschäftsobjekte verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="8778d-122">Custom business objects can't use this method.</span></span>
+<span data-ttu-id="bea93-121">Sie können nur mit dem *standardmäßigen* **RDSServer.DataFactory** -Objekt **SubmitChanges** verwenden.</span><span class="sxs-lookup"><span data-stu-id="bea93-121">You can use **SubmitChanges** only with the *default* **RDSServer.DataFactory** object.</span></span> <span data-ttu-id="bea93-122">Diese Methode kann nicht für benutzerdefinierte Geschäftsobjekte verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="bea93-122">Custom business objects can't use this method.</span></span>
 
-<span data-ttu-id="8778d-123">Wenn die **URL** -Eigenschaft festgelegt wurde, sendet **SubmitChanges** Änderungen an den durch die URL angegebenen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="8778d-123">If the **URL** property has been set, **SubmitChanges** will submit changes to the location specified by the URL.</span></span>
+<span data-ttu-id="bea93-123">Wenn die **URL** -Eigenschaft festgelegt wurde, sendet **SubmitChanges** Änderungen an den durch die URL angegebenen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="bea93-123">If the **URL** property has been set, **SubmitChanges** will submit changes to the location specified by the URL.</span></span>
 

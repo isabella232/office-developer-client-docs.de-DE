@@ -6,28 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249833(v=office.15)
 ms:contentKeyID: 48547094
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c55089a0fd77004a268b922b17e5c73d082df24e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 8f095c8c863ad858e6f0268f8e034aa1973a4285
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474657"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885570"
 ---
-# <a name="ado-md-api-reference-topics"></a><span data-ttu-id="f6a71-102">ADO MD API Reference Topics</span><span class="sxs-lookup"><span data-stu-id="f6a71-102">ADO MD API Reference Topics</span></span>
+# <a name="ado-md-api-reference-topics"></a><span data-ttu-id="5f3c3-102">ADO MD API Reference Topics</span><span class="sxs-lookup"><span data-stu-id="5f3c3-102">ADO MD API Reference Topics</span></span>
 
 
-<span data-ttu-id="f6a71-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="f6a71-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="5f3c3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5f3c3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-  - [<span data-ttu-id="f6a71-104">ADO MD-API-Referenz</span><span class="sxs-lookup"><span data-stu-id="f6a71-104">ADO MD API Reference</span></span>](ado-md-api-reference.md)
+  - [<span data-ttu-id="5f3c3-104">ADO MD-API-Referenz</span><span class="sxs-lookup"><span data-stu-id="5f3c3-104">ADO MD API Reference</span></span>](ado-md-api-reference.md)
 
-  - [<span data-ttu-id="f6a71-105">ADO MD Objects Reference</span><span class="sxs-lookup"><span data-stu-id="f6a71-105">ADO MD Objects Reference</span></span>](ado-md-objects-reference.md)
+  - [<span data-ttu-id="5f3c3-105">ADO MD Objects Reference</span><span class="sxs-lookup"><span data-stu-id="5f3c3-105">ADO MD Objects Reference</span></span>](ado-md-objects-reference.md)
 
-  - [<span data-ttu-id="f6a71-106">ADO MD Collections Reference</span><span class="sxs-lookup"><span data-stu-id="f6a71-106">ADO MD Collections Reference</span></span>](ado-md-collections-reference.md)
+  - [<span data-ttu-id="5f3c3-106">ADO MD Collections Reference</span><span class="sxs-lookup"><span data-stu-id="5f3c3-106">ADO MD Collections Reference</span></span>](ado-md-collections-reference.md)
 
-  - [<span data-ttu-id="f6a71-107">ADO MD Properties Reference</span><span class="sxs-lookup"><span data-stu-id="f6a71-107">ADO MD Properties Reference</span></span>](ado-md-properties-reference.md)
+  - [<span data-ttu-id="5f3c3-107">ADO MD Properties Reference</span><span class="sxs-lookup"><span data-stu-id="5f3c3-107">ADO MD Properties Reference</span></span>](ado-md-properties-reference.md)
 
-  - [<span data-ttu-id="f6a71-108">ADO MD Methods Reference</span><span class="sxs-lookup"><span data-stu-id="f6a71-108">ADO MD Methods Reference</span></span>](ado-md-methods-reference.md)
+  - [<span data-ttu-id="5f3c3-108">ADO MD Methods Reference</span><span class="sxs-lookup"><span data-stu-id="5f3c3-108">ADO MD Methods Reference</span></span>](ado-md-methods-reference.md)
 
-  - [<span data-ttu-id="f6a71-109">ADO MD Enumerated Constants Reference</span><span class="sxs-lookup"><span data-stu-id="f6a71-109">ADO MD Enumerated Constants Reference</span></span>](ado-md-enumerated-constants-reference.md)
+  - [<span data-ttu-id="5f3c3-109">ADO MD Enumerated Constants Reference</span><span class="sxs-lookup"><span data-stu-id="5f3c3-109">ADO MD Enumerated Constants Reference</span></span>](ado-md-enumerated-constants-reference.md)
 

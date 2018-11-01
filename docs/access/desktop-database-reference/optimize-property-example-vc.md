@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="a229b-101"><<<<<<< HEAD-Titel: optimieren-Eigenschaft (VC++-Beispiel) TOCTitle: optimieren-Eigenschaft (VC++-Beispiel) === Titel: optimieren-Eigenschaft (VC++-Beispiel) TOCTitle: optimieren-Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="a229b-101"><<<<<<< HEAD title: Optimize Property Example (VC++) TOCTitle: Optimize Property Example (VC++) ======= title: Optimize property example (VC++) TOCTitle: Optimize property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="a229b-102">Master Ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15) Ms:contentKeyID: 48548825 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="a229b-102">master ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15) ms:contentKeyID: 48548825 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Optimize-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Optimize property example (VC++)
+ms:assetid: f9e83365-93b2-3eb6-0347-8f8aec703d6f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250273(v=office.15)
+ms:contentKeyID: 48548825
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7e4e595aea68b35ec6fec1515c5d80e5b721b891
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885066"
 ---
-
-<span data-ttu-id="a229b-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="a229b-103"><<<<<<< HEAD</span></span>
-# <a name="optimize-property-example-vc"></a><span data-ttu-id="a229b-104">Optimize-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="a229b-104">Optimize Property Example (VC++)</span></span>
-=======
-# <a name="optimize-property-example-vc"></a><span data-ttu-id="a229b-105">Optimieren der Eigenschaft (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="a229b-105">Optimize property example (VC++)</span></span>
->>>>>>> <span data-ttu-id="a229b-106">master</span><span class="sxs-lookup"><span data-stu-id="a229b-106">master</span></span>
+# <a name="optimize-property-example-vc"></a><span data-ttu-id="7ae55-102">Optimize-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="7ae55-102">Optimize property example (VC++)</span></span>
 
 
-<span data-ttu-id="a229b-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="a229b-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="7ae55-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7ae55-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a229b-108">Dieses Beispiel veranschaulicht die [Field](field-object-ado.md) -Objekt dynamische Optimize-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="a229b-108">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="a229b-109">Das ***Zip*** -Feld der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank wird nicht indiziert.</span><span class="sxs-lookup"><span data-stu-id="a229b-109">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="a229b-110">[Optimize](optimize-property-dynamic-ado.md) -Eigenschaft auf **True** festlegen, im Feld ***Zip*** autorisiert ADO einen Index zu erstellen, der die [Find](find-method-ado.md) -Methode die Leistung verbessert.</span><span class="sxs-lookup"><span data-stu-id="a229b-110">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
+<span data-ttu-id="7ae55-104">Dieses Beispiel veranschaulicht die [Field](field-object-ado.md) -Objekt dynamische Optimize-Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="7ae55-104">This example demonstrates the [Field](field-object-ado.md) object dynamic Optimize property.</span></span> <span data-ttu-id="7ae55-105">Das ***Zip*** -Feld der ***Authors*** -Tabelle in der ***Pubs*** -Datenbank wird nicht indiziert.</span><span class="sxs-lookup"><span data-stu-id="7ae55-105">The ***zip*** field of the ***Authors*** table in the ***Pubs*** database is not indexed.</span></span> <span data-ttu-id="7ae55-106">[Optimize](optimize-property-dynamic-ado.md) -Eigenschaft auf **True** festlegen, im Feld ***Zip*** autorisiert ADO einen Index zu erstellen, der die [Find](find-method-ado.md) -Methode die Leistung verbessert.</span><span class="sxs-lookup"><span data-stu-id="7ae55-106">Setting the [Optimize](optimize-property-dynamic-ado.md) property to **True** on the ***zip*** field authorizes ADO to build an index that improves the performance of the [Find](find-method-ado.md) method.</span></span>
 
 ```cpp 
  
