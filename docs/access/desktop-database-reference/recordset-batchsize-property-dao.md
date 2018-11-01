@@ -10,31 +10,31 @@ f1_keywords:
 - dao360.chm1101179
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d67c87be0a3ffb7bc9d7b349746e397bb19a9c63
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e07a948a22a8101db2b2bffce3e6cde94c852668
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475317"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25891233"
 ---
-# <a name="recordsetbatchsize-property-dao"></a><span data-ttu-id="827e7-102">Recordset.BatchSize Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="827e7-102">Recordset.BatchSize Property (DAO)</span></span>
+# <a name="recordsetbatchsize-property-dao"></a><span data-ttu-id="1733c-102">Recordset.BatchSize Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="1733c-102">Recordset.BatchSize Property (DAO)</span></span>
 
 
-<span data-ttu-id="827e7-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="827e7-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="1733c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1733c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="827e7-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="827e7-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="1733c-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="1733c-104">Syntax</span></span>
 
-<span data-ttu-id="827e7-105">*Ausdruck* . BatchSize</span><span class="sxs-lookup"><span data-stu-id="827e7-105">*expression* .BatchSize</span></span>
+<span data-ttu-id="1733c-105">*Ausdruck* . BatchSize</span><span class="sxs-lookup"><span data-stu-id="1733c-105">*expression* .BatchSize</span></span>
 
-<span data-ttu-id="827e7-106">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="827e7-106">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="1733c-106">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="1733c-106">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="827e7-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="827e7-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="1733c-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="1733c-107">Remarks</span></span>
 
-<span data-ttu-id="827e7-p101">Die **BatchSize**-Eigenschaft stellt die Batchgröße fest, die beim Senden von Anweisungen an den Server bei einer Batchaktualisierung verwendet wurde. Der Wert der Eigenschaft gibt die Anzahl der Anweisungen an, die in einem Befehlspuffer an den Server gesendet wurden. Standardmäßig werden in jedem Batch 15 Anweisungen an den Server gesendet. Diese Eigenschaft kann jederzeit geändert werden. Wenn ein Datenbankserver die Batchverarbeitung von Anweisungen nicht unterstützt, können Sie diese Eigenschaft auf 1 setzen, sodass jede Anweisung einzeln gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="827e7-p101">The **BatchSize** property determines the batch size used when sending statements to the server in a batch update. The value of the property determines the number of statements sent to the server in one command buffer. By default, 15 statements are sent to the server in each batch. This property can be changed at any time. If a database server doesn't support statement batching, you can set this property to 1, causing each statement to be sent separately.</span></span>
+<span data-ttu-id="1733c-p101">Die **BatchSize**-Eigenschaft stellt die Batchgröße fest, die beim Senden von Anweisungen an den Server bei einer Batchaktualisierung verwendet wurde. Der Wert der Eigenschaft gibt die Anzahl der Anweisungen an, die in einem Befehlspuffer an den Server gesendet wurden. Standardmäßig werden in jedem Batch 15 Anweisungen an den Server gesendet. Diese Eigenschaft kann jederzeit geändert werden. Wenn ein Datenbankserver die Batchverarbeitung von Anweisungen nicht unterstützt, können Sie diese Eigenschaft auf 1 setzen, sodass jede Anweisung einzeln gesendet wird.</span><span class="sxs-lookup"><span data-stu-id="1733c-p101">The **BatchSize** property determines the batch size used when sending statements to the server in a batch update. The value of the property determines the number of statements sent to the server in one command buffer. By default, 15 statements are sent to the server in each batch. This property can be changed at any time. If a database server doesn't support statement batching, you can set this property to 1, causing each statement to be sent separately.</span></span>
 
-## <a name="example"></a><span data-ttu-id="827e7-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="827e7-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1733c-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="1733c-113">Example</span></span>
 
-<span data-ttu-id="827e7-114">In diesem Beispiel werden die Eigenschaften **BatchSize** und **UpdateOptions** verwendet, um Aspekte von Batchaktualisierungen für das angegebene Recordset-Objekt zu steuern.</span><span class="sxs-lookup"><span data-stu-id="827e7-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span></span>
+<span data-ttu-id="1733c-114">In diesem Beispiel werden die Eigenschaften **BatchSize** und **UpdateOptions** verwendet, um Aspekte von Batchaktualisierungen für das angegebene Recordset-Objekt zu steuern.</span><span class="sxs-lookup"><span data-stu-id="1733c-114">This example uses the **BatchSize** and **UpdateOptions** properties to control aspects of any batch updating for the specified Recordset object.</span></span>
 
 ```vb 
 Sub BatchSizeX() 
