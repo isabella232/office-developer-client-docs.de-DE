@@ -1,18 +1,24 @@
 ---
-<span data-ttu-id="3c002-101"><<<<<<< HEAD-Titel: Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel) TOCTitle: Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel) === Titel: Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel) TOCTitle: Anbieter und DefaultDatabase-Eigenschaften (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="3c002-101"><<<<<<< HEAD title: Provider and DefaultDatabase Properties Example (VC++) TOCTitle: Provider and DefaultDatabase Properties Example (VC++) ======= title: Provider and DefaultDatabase properties example (VC++) TOCTitle: Provider and DefaultDatabase properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="3c002-102">Master Ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15) Ms:contentKeyID: 48543687 ms.date: 09/18/2015 Mtps_version: Office. 15</span><span class="sxs-lookup"><span data-stu-id="3c002-102">master ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15) ms:contentKeyID: 48543687 ms.date: 09/18/2015 mtps_version: v=office.15</span></span>
+title: Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Provider and DefaultDatabase properties example (VC++)
+ms:assetid: 21c38be4-3906-cee8-b77b-300f1226392a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248995(v=office.15)
+ms:contentKeyID: 48543687
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: d7f94f0eef4821fcc1dc778d8772926e6af70e5a
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889833"
 ---
-
-<span data-ttu-id="3c002-103"><<<<<<< Kopf</span><span class="sxs-lookup"><span data-stu-id="3c002-103"><<<<<<< HEAD</span></span>
-# <a name="provider-and-defaultdatabase-properties-example-vc"></a><span data-ttu-id="3c002-104">Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="3c002-104">Provider and DefaultDatabase Properties Example (VC++)</span></span>
-=======
-# <a name="provider-and-defaultdatabase-properties-example-vc"></a><span data-ttu-id="3c002-105">Provider- und DefaultDatabase-Eigenschaften (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="3c002-105">Provider and DefaultDatabase properties example (VC++)</span></span>
->>>>>>> <span data-ttu-id="3c002-106">master</span><span class="sxs-lookup"><span data-stu-id="3c002-106">master</span></span>
+# <a name="provider-and-defaultdatabase-properties-example-vc"></a><span data-ttu-id="0af1f-102">Provider- und DefaultDatabase-Eigenschaft (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="0af1f-102">Provider and DefaultDatabase properties example (VC++)</span></span>
 
 
-<span data-ttu-id="3c002-107">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="3c002-107">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="0af1f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0af1f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="3c002-p101">Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.</span><span class="sxs-lookup"><span data-stu-id="3c002-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
+<span data-ttu-id="0af1f-p101">Dieses Beispiel veranschaulicht die [Provider](provider-property-ado.md)-Eigenschaft, indem drei [Connection](connection-object-ado.md)-Objekte unter Verwendung verschiedener Anbieter geöffnet werden. Außerdem wird mit der [DefaultDatabase](defaultdatabase-property-ado.md)-Eigenschaft die Standarddatenbank für den Microsoft ODBC-Anbieter festgelegt.</span><span class="sxs-lookup"><span data-stu-id="0af1f-p101">This example demonstrates the [Provider](provider-property-ado.md) property by opening three [Connection](connection-object-ado.md) objects using different providers. It also uses the [DefaultDatabase](defaultdatabase-property-ado.md) property to set the default database for the Microsoft ODBC Provider.</span></span>
 
 ```cpp 
  

@@ -10,41 +10,41 @@ f1_keywords:
 - dao360.chm1101187
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: cec1fde6bc76438da2292ae30545337eaeea6cf4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 1328dbbfe37ac1876d2839e08295a98068f52384
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474109"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889973"
 ---
-# <a name="querydefprepare-property-dao"></a><span data-ttu-id="baff5-102">QueryDef.Prepare Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="baff5-102">QueryDef.Prepare Property (DAO)</span></span>
+# <a name="querydefprepare-property-dao"></a><span data-ttu-id="6a9a6-102">QueryDef.Prepare Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="6a9a6-102">QueryDef.Prepare Property (DAO)</span></span>
 
 
-<span data-ttu-id="baff5-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="baff5-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="6a9a6-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6a9a6-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="baff5-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="baff5-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="6a9a6-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="6a9a6-104">Syntax</span></span>
 
-<span data-ttu-id="baff5-105">*Ausdruck* . Vorbereiten</span><span class="sxs-lookup"><span data-stu-id="baff5-105">*expression* .Prepare</span></span>
+<span data-ttu-id="6a9a6-105">*Ausdruck* . Vorbereiten</span><span class="sxs-lookup"><span data-stu-id="6a9a6-105">*expression* .Prepare</span></span>
 
-<span data-ttu-id="baff5-106">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="baff5-106">*expression* A variable that represents a **QueryDef** object.</span></span>
+<span data-ttu-id="6a9a6-106">*Ausdruck* Eine Variable, die ein **QueryDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="6a9a6-106">*expression* A variable that represents a **QueryDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="baff5-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="baff5-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="6a9a6-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6a9a6-107">Remarks</span></span>
 
-<span data-ttu-id="baff5-p101">Sie können mit der **Prepare**-Eigenschaft festlegen, dass der Server anhand Ihrer Abfrage eine temporäre gespeicherte Prozedur erstellt und sie dann ausführt, oder die Abfrage direkt ausführen. Standardmäßig hat die **Prepare**-Eigenschaft den Wert **dbQPrepare**. Sie können für diese Eigenschaft jedoch **dbQUnprepare** festlegen, um zu verhindern, dass die Abfrage vorbereitet wird. In diesem Fall wird die Abfrage unter Verwendung der **SQLExecDirect**-API ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="baff5-p101">You can use the **Prepare** property to either have the server create a temporary stored procedure from your query and then execute it, or just have the query executed directly. By default the **Prepare** property is set to **dbQPrepare**. However, you can set this property to **dbQUnprepare** to prohibit preparing of the query. In this case, the query is executed using the **SQLExecDirect** API.</span></span>
+<span data-ttu-id="6a9a6-p101">Sie können mit der **Prepare**-Eigenschaft festlegen, dass der Server anhand Ihrer Abfrage eine temporäre gespeicherte Prozedur erstellt und sie dann ausführt, oder die Abfrage direkt ausführen. Standardmäßig hat die **Prepare**-Eigenschaft den Wert **dbQPrepare**. Sie können für diese Eigenschaft jedoch **dbQUnprepare** festlegen, um zu verhindern, dass die Abfrage vorbereitet wird. In diesem Fall wird die Abfrage unter Verwendung der **SQLExecDirect**-API ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="6a9a6-p101">You can use the **Prepare** property to either have the server create a temporary stored procedure from your query and then execute it, or just have the query executed directly. By default the **Prepare** property is set to **dbQPrepare**. However, you can set this property to **dbQUnprepare** to prohibit preparing of the query. In this case, the query is executed using the **SQLExecDirect** API.</span></span>
 
-<span data-ttu-id="baff5-p102">Das Erstellen einer gespeicherten Prozedur kann die erste Ausführung verlangsamen. Alle nachfolgenden Verweise auf die Abfrage werden dann jedoch schneller ausgeführt. Einige Abfragen können nicht in Form von gespeicherten Prozeduren ausgeführt werden. In diesen Fällen setzen Sie die **Prepare**-Eigenschaft auf **dbQUnprepare**.</span><span class="sxs-lookup"><span data-stu-id="baff5-p102">Creating a stored procedure can slow down the initial operation, but increases performance of all subsequent references to the query. However, some queries cannot be executed in the form of stored procedures. In these cases, you must set the **Prepare** property to **dbQUnprepare**.</span></span>
+<span data-ttu-id="6a9a6-p102">Das Erstellen einer gespeicherten Prozedur kann die erste Ausführung verlangsamen. Alle nachfolgenden Verweise auf die Abfrage werden dann jedoch schneller ausgeführt. Einige Abfragen können nicht in Form von gespeicherten Prozeduren ausgeführt werden. In diesen Fällen setzen Sie die **Prepare**-Eigenschaft auf **dbQUnprepare**.</span><span class="sxs-lookup"><span data-stu-id="6a9a6-p102">Creating a stored procedure can slow down the initial operation, but increases performance of all subsequent references to the query. However, some queries cannot be executed in the form of stored procedures. In these cases, you must set the **Prepare** property to **dbQUnprepare**.</span></span>
 
-<span data-ttu-id="baff5-115">Wenn **Vorbereiten** auf **dbExecDirect**festgelegt wird, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem Sie Options-Argument der **[Execute](querydef-execute-method-dao.md)** -Methode auf **DbExecDirect**festlegen.</span><span class="sxs-lookup"><span data-stu-id="baff5-115">If **Prepare** is set to **dbQPrepare**, this can be overridden when the query is executed by setting the **[Execute](querydef-execute-method-dao.md)** method's options argument to **dbExecDirect**.</span></span>
+<span data-ttu-id="6a9a6-115">Wenn **Vorbereiten** auf **dbExecDirect**festgelegt wird, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem Sie Options-Argument der **[Execute](querydef-execute-method-dao.md)** -Methode auf **DbExecDirect**festlegen.</span><span class="sxs-lookup"><span data-stu-id="6a9a6-115">If **Prepare** is set to **dbQPrepare**, this can be overridden when the query is executed by setting the **[Execute](querydef-execute-method-dao.md)** method's options argument to **dbExecDirect**.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="baff5-p103">[!HINWEIS] Die ODBC-API <STRONG>SQLPrepare</STRONG> wird aufgerufen, sobald die DAO- <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> -Eigenschaft festgelegt wird. Sie müssen daher zur Steigerung der Leistung mithilfe der <STRONG>dbQUnprepare</STRONG>-Option die <STRONG>Prepare</STRONG>-Eigenschaft festlegen, bevor Sie die <STRONG>SQL</STRONG>-Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="baff5-p103">The ODBC <STRONG>SQLPrepare</STRONG> API is called as soon as the DAO <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> property is set. Therefore, if you want to improve performance using the <STRONG>dbQUnprepare</STRONG> option, you must set the <STRONG>Prepare</STRONG> property before setting the <STRONG>SQL</STRONG> property.</span></span></P>
+> <P><span data-ttu-id="6a9a6-p103">[!HINWEIS] Die ODBC-API <STRONG>SQLPrepare</STRONG> wird aufgerufen, sobald die DAO- <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> -Eigenschaft festgelegt wird. Sie müssen daher zur Steigerung der Leistung mithilfe der <STRONG>dbQUnprepare</STRONG>-Option die <STRONG>Prepare</STRONG>-Eigenschaft festlegen, bevor Sie die <STRONG>SQL</STRONG>-Eigenschaft festlegen.</span><span class="sxs-lookup"><span data-stu-id="6a9a6-p103">The ODBC <STRONG>SQLPrepare</STRONG> API is called as soon as the DAO <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> property is set. Therefore, if you want to improve performance using the <STRONG>dbQUnprepare</STRONG> option, you must set the <STRONG>Prepare</STRONG> property before setting the <STRONG>SQL</STRONG> property.</span></span></P>
 
 
 
-## <a name="example"></a><span data-ttu-id="baff5-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="baff5-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6a9a6-118">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6a9a6-118">Example</span></span>
 
-<span data-ttu-id="baff5-119">In diesem Beispiel wird mit der **Prepare**-Eigenschaft festgelegt, dass eine Abfrage direkt ausgeführt wird, anstatt zuvor eine temporäre gespeicherte Prozedur auf dem Server zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="baff5-119">This example uses the **Prepare** property to specify that a query should be executed directly rather than first creating a temporary stored procedure on the server.</span></span>
+<span data-ttu-id="6a9a6-119">In diesem Beispiel wird mit der **Prepare**-Eigenschaft festgelegt, dass eine Abfrage direkt ausgeführt wird, anstatt zuvor eine temporäre gespeicherte Prozedur auf dem Server zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="6a9a6-119">This example uses the **Prepare** property to specify that a query should be executed directly rather than first creating a temporary stored procedure on the server.</span></span>
 
 ```vb 
 Sub PrepareX() 

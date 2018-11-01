@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249435(v=office.15)
 ms:contentKeyID: 48545507
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 418f5ccd65422f087da761b4485ce73cb55a2e90
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 6d192378b4c36a61ace57c37f011eaef0b774455
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860231"
+ms.locfileid: "25877905"
 ---
-# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vj"></a><span data-ttu-id="7e4ec-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="7e4ec-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VJ++)</span></span>
+# <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vj"></a><span data-ttu-id="95330-102">MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methode (Beispiel) (VJ++)</span><span class="sxs-lookup"><span data-stu-id="95330-102">MoveFirst, MoveLast, MoveNext, and MovePrevious methods example (VJ++)</span></span>
 
 
-<span data-ttu-id="7e4ec-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="7e4ec-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="95330-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="95330-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="7e4ec-p101">In diesem Beispiel werden die Methoden MoveFirst, MoveLast, MoveNext und MovePrevious verwendet, um den Zeiger für den Datensatz eines Recordset-Objekts auf der Grundlage des angegebenen Befehls zu verschieben. Die The MoveAny-Prozedur ist erforderlich, damit dieser Vorgang ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="7e4ec-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="95330-p101">In diesem Beispiel werden die Methoden MoveFirst, MoveLast, MoveNext und MovePrevious verwendet, um den Zeiger für den Datensatz eines Recordset-Objekts auf der Grundlage des angegebenen Befehls zu verschieben. Die The MoveAny-Prozedur ist erforderlich, damit dieser Vorgang ausgeführt werden kann.</span><span class="sxs-lookup"><span data-stu-id="95330-p101">This example uses the [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), and [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) methods to move the record pointer of a [Recordset](recordset-object-ado.md) based on the supplied command. The MoveAny procedure is required for this procedure to run.</span></span>
 
 ```java 
  

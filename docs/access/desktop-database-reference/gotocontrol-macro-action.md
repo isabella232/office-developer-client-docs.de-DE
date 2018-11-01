@@ -6,31 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834370(v=office.15)
 ms:contentKeyID: 48547705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2617544bf04aa0b26ccbb9d7ce8d7329d42ed1e9
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: d068f6e0087d93d4a7dec3c5a7b2ed0f11c36be7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474164"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874860"
 ---
-# <a name="gotocontrol-macro-action"></a><span data-ttu-id="2e2c4-102">GoToControl Macro Action</span><span class="sxs-lookup"><span data-stu-id="2e2c4-102">GoToControl Macro Action</span></span>
+# <a name="gotocontrol-macro-action"></a><span data-ttu-id="c45e8-102">GoToControl Macro Action</span><span class="sxs-lookup"><span data-stu-id="c45e8-102">GoToControl Macro Action</span></span>
 
 
-<span data-ttu-id="2e2c4-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="2e2c4-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="c45e8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c45e8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-<span data-ttu-id="2e2c4-104">Sie können die **GeheZuSteuerelement** -Aktion verwenden, um den Fokus auf das angegebene Feld oder Steuerelement im aktuellen Datensatz des geöffneten Formulars, Datenblattes, Tabellendatenblatt oder Datenblatt Abfragen.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-104">You can use the **GoToControl** action to move the focus to the specified field or control in the current record of the open form, form datasheet, table datasheet, or query datasheet.</span></span> <span data-ttu-id="2e2c4-105">Sie können diese Aktion verwenden, wenn ein bestimmtes Feld oder Steuerelement den Fokus haben soll.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-105">You can use this action when you want a particular field or control to have the focus.</span></span> <span data-ttu-id="2e2c4-106">Dieses Feld oder Steuerelement kann dann für Vergleiche oder **SuchenDatensatz** -Aktionen verwendet.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-106">This field or control can then be used for comparisons or **FindRecord** actions.</span></span> <span data-ttu-id="2e2c4-107">Sie können die Aktion auch zum Navigieren in einem Formular basierend auf bestimmten Bedingungen verwenden.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-107">You can also use this action to navigate in a form according to certain conditions.</span></span> <span data-ttu-id="2e2c4-108">Wenn der Benutzer z. B. im Steuerelement „Verheiratet“ auf einem Versicherungsformular „Nein“ angibt, kann der Fokus automatisch das Steuerelement „Name des Partners/der Partnerin“ überspringen und zum nächsten Steuerelement wechseln.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-108">For example, if the user enters No in a Married control on a health insurance form, the focus can automatically skip the Spouse/partner Name control and move to the next control.</span></span>
+<span data-ttu-id="c45e8-104">Sie können die **GeheZuSteuerelement** -Aktion verwenden, um den Fokus auf das angegebene Feld oder Steuerelement im aktuellen Datensatz des geöffneten Formulars, Datenblattes, Tabellendatenblatt oder Datenblatt Abfragen.</span><span class="sxs-lookup"><span data-stu-id="c45e8-104">You can use the **GoToControl** action to move the focus to the specified field or control in the current record of the open form, form datasheet, table datasheet, or query datasheet.</span></span> <span data-ttu-id="c45e8-105">Sie können diese Aktion verwenden, wenn ein bestimmtes Feld oder Steuerelement den Fokus haben soll.</span><span class="sxs-lookup"><span data-stu-id="c45e8-105">You can use this action when you want a particular field or control to have the focus.</span></span> <span data-ttu-id="c45e8-106">Dieses Feld oder Steuerelement kann dann für Vergleiche oder **SuchenDatensatz** -Aktionen verwendet.</span><span class="sxs-lookup"><span data-stu-id="c45e8-106">This field or control can then be used for comparisons or **FindRecord** actions.</span></span> <span data-ttu-id="c45e8-107">Sie können die Aktion auch zum Navigieren in einem Formular basierend auf bestimmten Bedingungen verwenden.</span><span class="sxs-lookup"><span data-stu-id="c45e8-107">You can also use this action to navigate in a form according to certain conditions.</span></span> <span data-ttu-id="c45e8-108">Wenn der Benutzer z. B. im Steuerelement „Verheiratet“ auf einem Versicherungsformular „Nein“ angibt, kann der Fokus automatisch das Steuerelement „Name des Partners/der Partnerin“ überspringen und zum nächsten Steuerelement wechseln.</span><span class="sxs-lookup"><span data-stu-id="c45e8-108">For example, if the user enters No in a Married control on a health insurance form, the focus can automatically skip the Spouse/partner Name control and move to the next control.</span></span>
 
-## <a name="setting"></a><span data-ttu-id="2e2c4-109">Einstellung</span><span class="sxs-lookup"><span data-stu-id="2e2c4-109">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="c45e8-109">Einstellung</span><span class="sxs-lookup"><span data-stu-id="c45e8-109">Setting</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="2e2c4-110">Diese Aktion ist nicht für die Verwendung mit Datenzugriffsseiten verfügbar.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-110">This action is not available for use with data access pages.</span></span></P>
+> <P><span data-ttu-id="c45e8-110">Diese Aktion ist nicht für die Verwendung mit Datenzugriffsseiten verfügbar.</span><span class="sxs-lookup"><span data-stu-id="c45e8-110">This action is not available for use with data access pages.</span></span></P>
 
 
 
-<span data-ttu-id="2e2c4-111">Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-111">The **GoToControl** action has the following argument.</span></span>
+<span data-ttu-id="c45e8-111">Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="c45e8-111">The **GoToControl** action has the following argument.</span></span>
 
 <table>
 <colgroup>
@@ -39,17 +39,17 @@ ms.locfileid: "25474164"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="2e2c4-112">Aktionsargument</span><span class="sxs-lookup"><span data-stu-id="2e2c4-112">Action argument</span></span></p></th>
-<th><p><span data-ttu-id="2e2c4-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="2e2c4-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-112">Aktionsargument</span><span class="sxs-lookup"><span data-stu-id="c45e8-112">Action argument</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c45e8-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-114"><strong>Steuerelementname</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-114"><strong>Control Name</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-115">Der Name des Felds oder Steuerelements, das den Fokus erhalten soll.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-115">The name of the field or control where you want the focus.</span></span> <span data-ttu-id="2e2c4-116">Geben Sie den Namen Feld oder Steuerelement in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators ein.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-116">Enter the field or control name in the <strong>Control Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane.</span></span> <span data-ttu-id="2e2c4-117">Dies ist ein erforderliches Argument.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-117">This is a required argument.</span></span></p>
+<td><p><span data-ttu-id="c45e8-114"><strong>Steuerelementname</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-114"><strong>Control Name</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-115">Der Name des Felds oder Steuerelements, das den Fokus erhalten soll.</span><span class="sxs-lookup"><span data-stu-id="c45e8-115">The name of the field or control where you want the focus.</span></span> <span data-ttu-id="c45e8-116">Geben Sie den Namen Feld oder Steuerelement in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators ein.</span><span class="sxs-lookup"><span data-stu-id="c45e8-116">Enter the field or control name in the <strong>Control Name</strong> box in the <strong>Action Arguments</strong> section of the Macro Builder pane.</span></span> <span data-ttu-id="c45e8-117">Dies ist ein erforderliches Argument.</span><span class="sxs-lookup"><span data-stu-id="c45e8-117">This is a required argument.</span></span></p>
 
 > [!NOTE]
-> <P><span data-ttu-id="2e2c4-118">Geben Sie nur den Namen des Felds oder Steuerelements in das Argument <STRONG>Steuerelementname</STRONG> nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].</span><span class="sxs-lookup"><span data-stu-id="2e2c4-118">Enter only the name of the field or control in the <STRONG>Control Name</STRONG> argument, not the fully qualified identifier, such as Forms!Products![Product ID].</span></span></P>
+> <P><span data-ttu-id="c45e8-118">Geben Sie nur den Namen des Felds oder Steuerelements in das Argument <STRONG>Steuerelementname</STRONG> nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].</span><span class="sxs-lookup"><span data-stu-id="c45e8-118">Enter only the name of the field or control in the <STRONG>Control Name</STRONG> argument, not the fully qualified identifier, such as Forms!Products![Product ID].</span></span></P>
 
 
 <p></p></td>
@@ -58,23 +58,23 @@ ms.locfileid: "25474164"
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="2e2c4-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="2e2c4-119">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c45e8-119">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c45e8-119">Remarks</span></span>
 
-<span data-ttu-id="2e2c4-120">Sie können die **GeheZuSteuerelement** -Aktion um den Fokus auf ein Steuerelement in einem ausgeblendeten Formular zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-120">You cannot use the **GoToControl** action to move the focus to a control on a hidden form.</span></span>
+<span data-ttu-id="c45e8-120">Sie können die **GeheZuSteuerelement** -Aktion um den Fokus auf ein Steuerelement in einem ausgeblendeten Formular zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="c45e8-120">You cannot use the **GoToControl** action to move the focus to a control on a hidden form.</span></span>
 
 
 > [!TIP]
-> <P><span data-ttu-id="2e2c4-121">Die <STRONG>GeheZuSteuerelement</STRONG> -Aktion können Sie auf ein Unterformular setzen, das eine Art von Steuerelement ist.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-121">You can use the <STRONG>GoToControl</STRONG> action to move to a subform, which is a type of control.</span></span> <span data-ttu-id="2e2c4-122">Die <STRONG>GeheZuDatensatz</STRONG> -Aktion können dann um auf einen bestimmten Datensatz im Unterformular zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-122">You can then use the <STRONG>GoToRecord</STRONG> action to move to a particular record in the subform.</span></span> <span data-ttu-id="2e2c4-123">Sie können auch auf ein Steuerelement eines Unterformulars verschieben, mit die <STRONG>GeheZuSteuerelement</STRONG> -Aktion um auf das Unterformular, und klicken Sie dann auf das Steuerelement des Unterformulars zuerst zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-123">You can also move to a control on a subform by using the <STRONG>GoToControl</STRONG> action to move first to the subform and then to the control on the subform.</span></span></P>
+> <P><span data-ttu-id="c45e8-121">Die <STRONG>GeheZuSteuerelement</STRONG> -Aktion können Sie auf ein Unterformular setzen, das eine Art von Steuerelement ist.</span><span class="sxs-lookup"><span data-stu-id="c45e8-121">You can use the <STRONG>GoToControl</STRONG> action to move to a subform, which is a type of control.</span></span> <span data-ttu-id="c45e8-122">Die <STRONG>GeheZuDatensatz</STRONG> -Aktion können dann um auf einen bestimmten Datensatz im Unterformular zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="c45e8-122">You can then use the <STRONG>GoToRecord</STRONG> action to move to a particular record in the subform.</span></span> <span data-ttu-id="c45e8-123">Sie können auch auf ein Steuerelement eines Unterformulars verschieben, mit die <STRONG>GeheZuSteuerelement</STRONG> -Aktion um auf das Unterformular, und klicken Sie dann auf das Steuerelement des Unterformulars zuerst zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="c45e8-123">You can also move to a control on a subform by using the <STRONG>GoToControl</STRONG> action to move first to the subform and then to the control on the subform.</span></span></P>
 
 
 
-<span data-ttu-id="2e2c4-124">Führen Sie die **GeheZuSteuerelement** -Aktion in einem Visual Basic für Applikationen (VBA) Modul mit **der GoToControl** -Methode des **DoCmd** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-124">To run the **GoToControl** action in a Visual Basic for Applications (VBA) module, use the **GoToControl** method of the **DoCmd** object.</span></span> <span data-ttu-id="2e2c4-125">Sie können auch die **SetFocus** -Methode verwenden, um den Fokus auf ein Steuerelement eines Formulars oder eines seiner Unterformulare oder an ein Feld in einer geöffneten Tabelle, Abfrage oder Formulardatenblatt.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-125">You can also use the **SetFocus** method to move the focus to a control on a form or any of its subforms, or to a field in an open table, query, or form datasheet.</span></span>
+<span data-ttu-id="c45e8-124">Führen Sie die **GeheZuSteuerelement** -Aktion in einem Visual Basic für Applikationen (VBA) Modul mit **der GoToControl** -Methode des **DoCmd** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="c45e8-124">To run the **GoToControl** action in a Visual Basic for Applications (VBA) module, use the **GoToControl** method of the **DoCmd** object.</span></span> <span data-ttu-id="c45e8-125">Sie können auch die **SetFocus** -Methode verwenden, um den Fokus auf ein Steuerelement eines Formulars oder eines seiner Unterformulare oder an ein Feld in einer geöffneten Tabelle, Abfrage oder Formulardatenblatt.</span><span class="sxs-lookup"><span data-stu-id="c45e8-125">You can also use the **SetFocus** method to move the focus to a control on a form or any of its subforms, or to a field in an open table, query, or form datasheet.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2e2c4-126">Beispiele</span><span class="sxs-lookup"><span data-stu-id="2e2c4-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="c45e8-126">Beispiele</span><span class="sxs-lookup"><span data-stu-id="c45e8-126">Examples</span></span>
 
-<span data-ttu-id="2e2c4-127">**Festlegen des Werts eines Steuerelements mithilfe eines Makros**</span><span class="sxs-lookup"><span data-stu-id="2e2c4-127">**Set the value of a control by using a macro**</span></span>
+<span data-ttu-id="c45e8-127">**Festlegen des Werts eines Steuerelements mithilfe eines Makros**</span><span class="sxs-lookup"><span data-stu-id="c45e8-127">**Set the value of a control by using a macro**</span></span>
 
-<span data-ttu-id="2e2c4-128">Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche auf dem Formular Lieferanten geöffnet.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-128">The following macro opens the Add Products form from a button on the Suppliers form.</span></span> <span data-ttu-id="2e2c4-129">Es wird die Verwendung der **Echo**, **CloseWindow**, **ÖffnenFormular**, **SetzenWert**und **GeheZuSteuerelement** -Aktionen.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-129">It shows the use of the **Echo**, **CloseWindow**, **OpenForm**, **SetValue**, and **GoToControl** actions.</span></span> <span data-ttu-id="2e2c4-130">Die **SetzenWert** -Aktion wird das Steuerelement Lieferanten-ID auf dem Formular auf den aktuellen Lieferanten im Formular Suppliers angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-130">The **SetValue** action sets the Supplier ID control on the Products form to the current supplier on the Suppliers form.</span></span> <span data-ttu-id="2e2c4-131">Klicken Sie dann die **GeheZuSteuerelement** -Aktion verschiebt den Fokus auf das Feld Kategorie-ID, beginnen Sie können Daten für das neue Produkt eingeben.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-131">The **GoToControl** action then moves the focus to the Category ID field, where you can begin to enter data for the new product.</span></span> <span data-ttu-id="2e2c4-132">Dieses Makro sollte der Schaltfläche Artikel hinzufügen im Formular Lieferanten zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-132">This macro should be attached to the Add Products button on the Suppliers form.</span></span>
+<span data-ttu-id="c45e8-128">Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche auf dem Formular Lieferanten geöffnet.</span><span class="sxs-lookup"><span data-stu-id="c45e8-128">The following macro opens the Add Products form from a button on the Suppliers form.</span></span> <span data-ttu-id="c45e8-129">Es wird die Verwendung der **Echo**, **CloseWindow**, **ÖffnenFormular**, **SetzenWert**und **GeheZuSteuerelement** -Aktionen.</span><span class="sxs-lookup"><span data-stu-id="c45e8-129">It shows the use of the **Echo**, **CloseWindow**, **OpenForm**, **SetValue**, and **GoToControl** actions.</span></span> <span data-ttu-id="c45e8-130">Die **SetzenWert** -Aktion wird das Steuerelement Lieferanten-ID auf dem Formular auf den aktuellen Lieferanten im Formular Suppliers angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c45e8-130">The **SetValue** action sets the Supplier ID control on the Products form to the current supplier on the Suppliers form.</span></span> <span data-ttu-id="c45e8-131">Klicken Sie dann die **GeheZuSteuerelement** -Aktion verschiebt den Fokus auf das Feld Kategorie-ID, beginnen Sie können Daten für das neue Produkt eingeben.</span><span class="sxs-lookup"><span data-stu-id="c45e8-131">The **GoToControl** action then moves the focus to the Category ID field, where you can begin to enter data for the new product.</span></span> <span data-ttu-id="c45e8-132">Dieses Makro sollte der Schaltfläche Artikel hinzufügen im Formular Lieferanten zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="c45e8-132">This macro should be attached to the Add Products button on the Suppliers form.</span></span>
 
 <table>
 <colgroup>
@@ -84,44 +84,44 @@ ms.locfileid: "25474164"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="2e2c4-133">Aktion</span><span class="sxs-lookup"><span data-stu-id="2e2c4-133">Action</span></span></p></th>
-<th><p><span data-ttu-id="2e2c4-134">Argumente: Einstellung</span><span class="sxs-lookup"><span data-stu-id="2e2c4-134">Arguments: Setting</span></span></p></th>
-<th><p><span data-ttu-id="2e2c4-135">Kommentar</span><span class="sxs-lookup"><span data-stu-id="2e2c4-135">Comment</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-133">Aktion</span><span class="sxs-lookup"><span data-stu-id="c45e8-133">Action</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-134">Argumente: Einstellung</span><span class="sxs-lookup"><span data-stu-id="c45e8-134">Arguments: Setting</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-135">Kommentar</span><span class="sxs-lookup"><span data-stu-id="c45e8-135">Comment</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-136"><strong>Echo</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-136"><strong>Echo</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-137"><strong>Echo</strong>: <strong>Nein</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-137"><strong>Echo On</strong>: <strong>No</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-138">Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</span><span class="sxs-lookup"><span data-stu-id="2e2c4-138">Stop screen updating while the macro is running.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-136"><strong>Echo</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-136"><strong>Echo</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-137"><strong>Echo</strong>: <strong>Nein</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-137"><strong>Echo On</strong>: <strong>No</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-138">Beenden der Bildschirmaktualisierung, während das Makro ausgeführt wird</span><span class="sxs-lookup"><span data-stu-id="c45e8-138">Stop screen updating while the macro is running.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2e2c4-139"><strong>FensterSchließen</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-139"><strong>CloseWindow</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-140"><strong>Objekttyp</strong>: <strong>FormObject Name</strong>: Produkt Liste <strong>Speichern</strong>: <strong>Nein</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-140"><strong>Object Type</strong>: <strong>FormObject Name</strong>: Product List <strong>Save</strong>: <strong>No</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-141">Produktliste Formular zu schließen.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-141">Close Product List form.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-139"><strong>FensterSchließen</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-139"><strong>CloseWindow</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-140"><strong>Objekttyp</strong>: <strong>FormObject Name</strong>: Produkt Liste <strong>Speichern</strong>: <strong>Nein</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-140"><strong>Object Type</strong>: <strong>FormObject Name</strong>: Product List <strong>Save</strong>: <strong>No</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-141">Produktliste Formular zu schließen.</span><span class="sxs-lookup"><span data-stu-id="c45e8-141">Close Product List form.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-142"><strong>ÖffnenFormular</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-142"><strong>OpenForm</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-143"><strong>Formularname</strong>: Produkte <strong>Anzeigen</strong>: <strong>FormData Modus</strong>: <strong>Fenster hinzufügen Modus</strong>: <strong>Normal</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-143"><strong>Form Name</strong>: Products <strong>View</strong>: <strong>FormData Mode</strong>: <strong>AddWindow Mode</strong>: <strong>Normal</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-144">Öffnen des Produktformulars</span><span class="sxs-lookup"><span data-stu-id="2e2c4-144">Open the Products form.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-142"><strong>ÖffnenFormular</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-142"><strong>OpenForm</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-143"><strong>Formularname</strong>: Produkte <strong>Anzeigen</strong>: <strong>FormData Modus</strong>: <strong>Fenster hinzufügen Modus</strong>: <strong>Normal</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-143"><strong>Form Name</strong>: Products <strong>View</strong>: <strong>FormData Mode</strong>: <strong>AddWindow Mode</strong>: <strong>Normal</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-144">Öffnen des Produktformulars</span><span class="sxs-lookup"><span data-stu-id="c45e8-144">Open the Products form.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2e2c4-145"><strong>SetzenWert</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-145"><strong>SetValue</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-146"><strong>Artikel</strong>: [Formulare]! [Artikel]! [Lieferanten-Nr] <strong>Ausdruck</strong>: SupplierID</span><span class="sxs-lookup"><span data-stu-id="2e2c4-146"><strong>Item</strong>: [Forms]![Products]![SupplierID] <strong>Expression</strong>: SupplierID</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-147">Legen Sie das Steuerelement auf den aktuellen Lieferanten im Formular Suppliers angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-147">Set the Supplier ID control to the current supplier on the Suppliers form.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-145"><strong>SetzenWert</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-145"><strong>SetValue</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-146"><strong>Artikel</strong>: [Formulare]! [Artikel]! [Lieferanten-Nr] <strong>Ausdruck</strong>: SupplierID</span><span class="sxs-lookup"><span data-stu-id="c45e8-146"><strong>Item</strong>: [Forms]![Products]![SupplierID] <strong>Expression</strong>: SupplierID</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-147">Legen Sie das Steuerelement auf den aktuellen Lieferanten im Formular Suppliers angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c45e8-147">Set the Supplier ID control to the current supplier on the Suppliers form.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-148"><strong>GoToControl</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-148"><strong>GoToControl</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-149"><strong>Steuerelementname</strong>: CategoryID</span><span class="sxs-lookup"><span data-stu-id="2e2c4-149"><strong>Control Name</strong>: CategoryID</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-150">Wechseln Sie auf die Kategorie-ID-Steuerelement.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-150">Go to the Category ID control.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-148"><strong>GoToControl</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-148"><strong>GoToControl</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-149"><strong>Steuerelementname</strong>: CategoryID</span><span class="sxs-lookup"><span data-stu-id="c45e8-149"><strong>Control Name</strong>: CategoryID</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-150">Wechseln Sie auf die Kategorie-ID-Steuerelement.</span><span class="sxs-lookup"><span data-stu-id="c45e8-150">Go to the Category ID control.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="2e2c4-151">\*\* Überprüfen der Gültigkeit von Daten mithilfe eines Makros\*\*</span><span class="sxs-lookup"><span data-stu-id="2e2c4-151">**Validate data by using a macro**</span></span>
+<span data-ttu-id="c45e8-151">\*\* Überprüfen der Gültigkeit von Daten mithilfe eines Makros\*\*</span><span class="sxs-lookup"><span data-stu-id="c45e8-151">**Validate data by using a macro**</span></span>
 
-<span data-ttu-id="2e2c4-152">Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprüft, die im Lieferantenformular eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-152">The following validation macro checks the postal codes entered in a Suppliers form.</span></span> <span data-ttu-id="2e2c4-153">Es zeigt die Verwendung der Aktionen **StopMacro**, **MessageBox**, **CancelEvent** und **GoToControl**.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-153">It shows the use of the **StopMacro**, **MessageBox**, **CancelEvent**, and **GoToControl** actions.</span></span> <span data-ttu-id="2e2c4-154">Mit einem Bedingungsausdruck werden das Land, die Region und die Postleitzahl überprüft, die im Formular in einem Datensatz eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-154">A conditional expression checks the country/region and postal code entered in a record on the form.</span></span> <span data-ttu-id="2e2c4-155">Wenn die Postleitzahl nicht das richtige Format für das Land/Region ist, wird das Makro ein Meldungsfeld angezeigt und Speichern des Datensatzes wird abgebrochen.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-155">If the postal code is not in the right format for the country/region, the macro displays a message box and cancels saving the record.</span></span> <span data-ttu-id="2e2c4-156">Das Makro gibt dann Sie auf das Steuerelement Postleitzahl, in dem Sie den Fehler korrigieren.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-156">The macro then returns you to the Postal Code control, where you can correct the error.</span></span> <span data-ttu-id="2e2c4-157">Dieses Makro sollte mit der **BeforeUpdate** -Eigenschaft des Lieferantenformulars verbunden sein.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-157">This macro should be attached to the **BeforeUpdate** property of the Suppliers form.</span></span>
+<span data-ttu-id="c45e8-152">Mit dem folgenden Gültigkeitsprüfungsmakro werden die Postleitzahlen überprüft, die im Lieferantenformular eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="c45e8-152">The following validation macro checks the postal codes entered in a Suppliers form.</span></span> <span data-ttu-id="c45e8-153">Es zeigt die Verwendung der Aktionen **StopMacro**, **MessageBox**, **CancelEvent** und **GoToControl**.</span><span class="sxs-lookup"><span data-stu-id="c45e8-153">It shows the use of the **StopMacro**, **MessageBox**, **CancelEvent**, and **GoToControl** actions.</span></span> <span data-ttu-id="c45e8-154">Mit einem Bedingungsausdruck werden das Land, die Region und die Postleitzahl überprüft, die im Formular in einem Datensatz eingegeben werden.</span><span class="sxs-lookup"><span data-stu-id="c45e8-154">A conditional expression checks the country/region and postal code entered in a record on the form.</span></span> <span data-ttu-id="c45e8-155">Wenn die Postleitzahl nicht das richtige Format für das Land/Region ist, wird das Makro ein Meldungsfeld angezeigt und Speichern des Datensatzes wird abgebrochen.</span><span class="sxs-lookup"><span data-stu-id="c45e8-155">If the postal code is not in the right format for the country/region, the macro displays a message box and cancels saving the record.</span></span> <span data-ttu-id="c45e8-156">Das Makro gibt dann Sie auf das Steuerelement Postleitzahl, in dem Sie den Fehler korrigieren.</span><span class="sxs-lookup"><span data-stu-id="c45e8-156">The macro then returns you to the Postal Code control, where you can correct the error.</span></span> <span data-ttu-id="c45e8-157">Dieses Makro sollte mit der **BeforeUpdate** -Eigenschaft des Lieferantenformulars verbunden sein.</span><span class="sxs-lookup"><span data-stu-id="c45e8-157">This macro should be attached to the **BeforeUpdate** property of the Suppliers form.</span></span>
 
 <table>
 <colgroup>
@@ -132,66 +132,66 @@ ms.locfileid: "25474164"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="2e2c4-158">Bedingung</span><span class="sxs-lookup"><span data-stu-id="2e2c4-158">Condition</span></span></p></th>
-<th><p><span data-ttu-id="2e2c4-159">Aktion</span><span class="sxs-lookup"><span data-stu-id="2e2c4-159">Action</span></span></p></th>
-<th><p><span data-ttu-id="2e2c4-160">Argumente: Einstellung</span><span class="sxs-lookup"><span data-stu-id="2e2c4-160">Arguments: Setting</span></span></p></th>
-<th><p><span data-ttu-id="2e2c4-161">Kommentar</span><span class="sxs-lookup"><span data-stu-id="2e2c4-161">Comment</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-158">Bedingung</span><span class="sxs-lookup"><span data-stu-id="c45e8-158">Condition</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-159">Aktion</span><span class="sxs-lookup"><span data-stu-id="c45e8-159">Action</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-160">Argumente: Einstellung</span><span class="sxs-lookup"><span data-stu-id="c45e8-160">Arguments: Setting</span></span></p></th>
+<th><p><span data-ttu-id="c45e8-161">Kommentar</span><span class="sxs-lookup"><span data-stu-id="c45e8-161">Comment</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-162">IsNull([CountryRegion])</span><span class="sxs-lookup"><span data-stu-id="2e2c4-162">IsNull([CountryRegion])</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-163"><strong>StopMacro</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-163"><strong>StopMacro</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-162">IsNull([CountryRegion])</span><span class="sxs-lookup"><span data-stu-id="c45e8-162">IsNull([CountryRegion])</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-163"><strong>StopMacro</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-163"><strong>StopMacro</strong></span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="2e2c4-164">Wenn Land/Region <strong>Null</strong>ist, kann die Postleitzahl nicht überprüft werden.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-164">If CountryRegion is <strong>Null</strong>, postal code cannot be validated.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-164">Wenn Land/Region <strong>Null</strong>ist, kann die Postleitzahl nicht überprüft werden.</span><span class="sxs-lookup"><span data-stu-id="c45e8-164">If CountryRegion is <strong>Null</strong>, postal code cannot be validated.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2e2c4-165">[Land/Region] In (&quot;Frankreich&quot;,&quot;Italien&quot;,&quot;Spanien&quot;) und Len ([Postleitzahl]) &lt; &gt; 5</span><span class="sxs-lookup"><span data-stu-id="2e2c4-165">[CountryRegion] In (&quot;France&quot;,&quot;Italy&quot;,&quot;Spain&quot;) And Len([Postal Code]) &lt;&gt; 5</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-166"><strong>MessageBox</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-166"><strong>MessageBox</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-167"><strong>Message</strong>: Die Postleitzahl muss 5 Zeichen lang sein.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-167"><strong>Message</strong>: The postal code must be 5 characters.</span></span> <span data-ttu-id="2e2c4-168"><strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl fehlerhaft</span><span class="sxs-lookup"><span data-stu-id="2e2c4-168"><strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-169">Wenn die Postleitzahl nicht 5 Zeichen lang ist, wird eine Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-169">If the postal code is not 5 characters, display a message.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-165">[Land/Region] In (&quot;Frankreich&quot;,&quot;Italien&quot;,&quot;Spanien&quot;) und Len ([Postleitzahl]) &lt; &gt; 5</span><span class="sxs-lookup"><span data-stu-id="c45e8-165">[CountryRegion] In (&quot;France&quot;,&quot;Italy&quot;,&quot;Spain&quot;) And Len([Postal Code]) &lt;&gt; 5</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-166"><strong>MessageBox</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-166"><strong>MessageBox</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-167"><strong>Message</strong>: Die Postleitzahl muss 5 Zeichen lang sein.</span><span class="sxs-lookup"><span data-stu-id="c45e8-167"><strong>Message</strong>: The postal code must be 5 characters.</span></span> <span data-ttu-id="c45e8-168"><strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl fehlerhaft</span><span class="sxs-lookup"><span data-stu-id="c45e8-168"><strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-169">Wenn die Postleitzahl nicht 5 Zeichen lang ist, wird eine Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c45e8-169">If the postal code is not 5 characters, display a message.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-170">...</span><span class="sxs-lookup"><span data-stu-id="2e2c4-170"></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-171"><strong>CancelEvent</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-171"><strong>CancelEvent</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-170">...</span><span class="sxs-lookup"><span data-stu-id="c45e8-170"></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-171"><strong>CancelEvent</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-171"><strong>CancelEvent</strong></span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="2e2c4-172">Bricht das Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-172">Cancel the event.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-172">Bricht das Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="c45e8-172">Cancel the event.</span></span></p></td>
 </tr>
 <tr class="even">
 <td><p></p></td>
-<td><p><span data-ttu-id="2e2c4-173"><strong>GoToControl</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-173"><strong>GoToControl</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-174"><strong>Steuerelementname</strong>: PostalCode</span><span class="sxs-lookup"><span data-stu-id="2e2c4-174"><strong>Control Name</strong>: PostalCode</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-173"><strong>GoToControl</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-173"><strong>GoToControl</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-174"><strong>Steuerelementname</strong>: PostalCode</span><span class="sxs-lookup"><span data-stu-id="c45e8-174"><strong>Control Name</strong>: PostalCode</span></span></p></td>
 <td><p></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-175">[Land/Region] In (&quot;Australien&quot;,&quot;Singapur&quot;) und Len ([Postleitzahl]) &lt; &gt; 4</span><span class="sxs-lookup"><span data-stu-id="2e2c4-175">[CountryRegion] In (&quot;Australia&quot;,&quot;Singapore&quot;) And Len([Postal Code]) &lt;&gt; 4</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-176"><strong>MessageBox</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-176"><strong>MessageBox</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-177">Message: Die Postleitzahl muss 4 Zeichen lang sein.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-177">Message: The postal code must be 4 characters.</span></span> <span data-ttu-id="2e2c4-178"><strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl fehlerhaft</span><span class="sxs-lookup"><span data-stu-id="2e2c4-178"><strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-179">Wenn die Postleitzahl nicht 4 Zeichen lang ist, wird eine Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-179">If the postal code is not 4 characters, display a message.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-175">[Land/Region] In (&quot;Australien&quot;,&quot;Singapur&quot;) und Len ([Postleitzahl]) &lt; &gt; 4</span><span class="sxs-lookup"><span data-stu-id="c45e8-175">[CountryRegion] In (&quot;Australia&quot;,&quot;Singapore&quot;) And Len([Postal Code]) &lt;&gt; 4</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-176"><strong>MessageBox</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-176"><strong>MessageBox</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-177">Message: Die Postleitzahl muss 4 Zeichen lang sein.</span><span class="sxs-lookup"><span data-stu-id="c45e8-177">Message: The postal code must be 4 characters.</span></span> <span data-ttu-id="c45e8-178"><strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postleitzahl fehlerhaft</span><span class="sxs-lookup"><span data-stu-id="c45e8-178"><strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-179">Wenn die Postleitzahl nicht 4 Zeichen lang ist, wird eine Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c45e8-179">If the postal code is not 4 characters, display a message.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2e2c4-180">...</span><span class="sxs-lookup"><span data-stu-id="2e2c4-180"></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-181"><strong>CancelEvent</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-181"><strong>CancelEvent</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-180">...</span><span class="sxs-lookup"><span data-stu-id="c45e8-180"></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-181"><strong>CancelEvent</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-181"><strong>CancelEvent</strong></span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="2e2c4-182">Bricht das Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-182">Cancel the event.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-182">Bricht das Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="c45e8-182">Cancel the event.</span></span></p></td>
 </tr>
 <tr class="odd">
 <td><p></p></td>
-<td><p><span data-ttu-id="2e2c4-183"><strong>GoToControl</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-183"><strong>GoToControl</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-184"><strong>Steuerelementname</strong>: PostalCode</span><span class="sxs-lookup"><span data-stu-id="2e2c4-184"><strong>Control Name</strong>: PostalCode</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-183"><strong>GoToControl</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-183"><strong>GoToControl</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-184"><strong>Steuerelementname</strong>: PostalCode</span><span class="sxs-lookup"><span data-stu-id="c45e8-184"><strong>Control Name</strong>: PostalCode</span></span></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2e2c4-185">([Land/Region] = &quot;Kanada&quot;) Und ([Postleitzahl] nicht wie&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</span><span class="sxs-lookup"><span data-stu-id="2e2c4-185">([CountryRegion] = &quot;Canada&quot;) And ([Postal Code] Not Like&quot;[A-Z][0-9][A-Z] [0-9][A-Z][0-9]&quot;)</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-186"><strong>MessageBox</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-186"><strong>MessageBox</strong></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-187"><strong>Meldung</strong>: Die Postleitzahl ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-187"><strong>Message</strong>: The postal code is not valid.</span></span> <span data-ttu-id="2e2c4-188">Beispiel für kanadische Postleitzahl: H1J 1 c 3 <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: PLZ Codefehler</span><span class="sxs-lookup"><span data-stu-id="2e2c4-188">Example of Canadian code: H1J 1C3 <strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-189">Wenn die Postleitzahl nicht korrekt für Kanada ist, wird eine Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-189">If the postal code is not correct for Canada, display a message.</span></span> <span data-ttu-id="2e2c4-190">(Beispiel für eine kanadische Postleitzahl: H1J 1C3).</span><span class="sxs-lookup"><span data-stu-id="2e2c4-190">(Example of Canadian code: H1J 1C3)</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-185">([Land/Region] = &quot;Kanada&quot;) Und ([Postleitzahl] nicht wie&quot;[A-Z] [0-9] [A-Z] [0-9] [A-Z] [0-9]&quot;)</span><span class="sxs-lookup"><span data-stu-id="c45e8-185">([CountryRegion] = &quot;Canada&quot;) And ([Postal Code] Not Like&quot;[A-Z][0-9][A-Z] [0-9][A-Z][0-9]&quot;)</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-186"><strong>MessageBox</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-186"><strong>MessageBox</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-187"><strong>Meldung</strong>: Die Postleitzahl ist ungültig.</span><span class="sxs-lookup"><span data-stu-id="c45e8-187"><strong>Message</strong>: The postal code is not valid.</span></span> <span data-ttu-id="c45e8-188">Beispiel für kanadische Postleitzahl: H1J 1 c 3 <strong>Signalton</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: PLZ Codefehler</span><span class="sxs-lookup"><span data-stu-id="c45e8-188">Example of Canadian code: H1J 1C3 <strong>Beep</strong>: <strong>YesType</strong>: <strong>InformationTitle</strong>: Postal Code Error</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-189">Wenn die Postleitzahl nicht korrekt für Kanada ist, wird eine Meldung angezeigt.</span><span class="sxs-lookup"><span data-stu-id="c45e8-189">If the postal code is not correct for Canada, display a message.</span></span> <span data-ttu-id="c45e8-190">(Beispiel für eine kanadische Postleitzahl: H1J 1C3).</span><span class="sxs-lookup"><span data-stu-id="c45e8-190">(Example of Canadian code: H1J 1C3)</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2e2c4-191">...</span><span class="sxs-lookup"><span data-stu-id="2e2c4-191"></span></span></p></td>
-<td><p><span data-ttu-id="2e2c4-192"><strong>CancelEvent</strong></span><span class="sxs-lookup"><span data-stu-id="2e2c4-192"><strong>CancelEvent</strong></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-191">...</span><span class="sxs-lookup"><span data-stu-id="c45e8-191"></span></span></p></td>
+<td><p><span data-ttu-id="c45e8-192"><strong>CancelEvent</strong></span><span class="sxs-lookup"><span data-stu-id="c45e8-192"><strong>CancelEvent</strong></span></span></p></td>
 <td><p></p></td>
-<td><p><span data-ttu-id="2e2c4-193">Bricht das Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="2e2c4-193">Cancel the event.</span></span></p></td>
+<td><p><span data-ttu-id="c45e8-193">Bricht das Ereignis ab.</span><span class="sxs-lookup"><span data-stu-id="c45e8-193">Cancel the event.</span></span></p></td>
 </tr>
 </tbody>
 </table>

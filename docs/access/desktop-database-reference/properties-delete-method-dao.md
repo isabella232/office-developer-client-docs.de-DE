@@ -6,27 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835356(v=office.15)
 ms:contentKeyID: 48548123
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 16846f6922638279b47135a4b0ca16ce7a845b2c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 31c43d079eb91be33df94745b65431ed6fd975cb
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875322"
 ---
-# <a name="propertiesdelete-method-dao"></a><span data-ttu-id="f4b6e-102">Properties.Delete Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="f4b6e-102">Properties.Delete Method (DAO)</span></span>
+# <a name="propertiesdelete-method-dao"></a><span data-ttu-id="a30f1-102">Properties.Delete Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="a30f1-102">Properties.Delete Method (DAO)</span></span>
 
 
-<span data-ttu-id="f4b6e-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="f4b6e-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="a30f1-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a30f1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f4b6e-104">Löscht das angegebene **Property**-Objekt aus der **Properties**-Auflistung.</span><span class="sxs-lookup"><span data-stu-id="f4b6e-104">Deletes the specified **Property** object from the **Properties** collection.</span></span>
+<span data-ttu-id="a30f1-104">Löscht das angegebene **Property**-Objekt aus der **Properties**-Auflistung.</span><span class="sxs-lookup"><span data-stu-id="a30f1-104">Deletes the specified **Property** object from the **Properties** collection.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="f4b6e-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f4b6e-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a30f1-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="a30f1-105">Syntax</span></span>
 
-<span data-ttu-id="f4b6e-106">*Ausdruck* . Löschen Sie die (***Name***)</span><span class="sxs-lookup"><span data-stu-id="f4b6e-106">*expression* .Delete(***Name***)</span></span>
+<span data-ttu-id="a30f1-106">*Ausdruck* . Löschen Sie die (***Name***)</span><span class="sxs-lookup"><span data-stu-id="a30f1-106">*expression* .Delete(***Name***)</span></span>
 
-<span data-ttu-id="f4b6e-107">*Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f4b6e-107">*expression* A variable that represents a **Properties** object.</span></span>
+<span data-ttu-id="a30f1-107">*Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="a30f1-107">*expression* A variable that represents a **Properties** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="f4b6e-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="f4b6e-108">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="a30f1-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="a30f1-108">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -37,18 +37,18 @@ ms.locfileid: "25475396"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="f4b6e-109">Name</span><span class="sxs-lookup"><span data-stu-id="f4b6e-109">Name</span></span></p></th>
-<th><p><span data-ttu-id="f4b6e-110">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="f4b6e-110">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="f4b6e-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="f4b6e-111">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="f4b6e-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="f4b6e-112">Description</span></span></p></th>
+<th><p><span data-ttu-id="a30f1-109">Name</span><span class="sxs-lookup"><span data-stu-id="a30f1-109">Name</span></span></p></th>
+<th><p><span data-ttu-id="a30f1-110">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="a30f1-110">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="a30f1-111">Datentyp</span><span class="sxs-lookup"><span data-stu-id="a30f1-111">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="a30f1-112">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a30f1-112">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f4b6e-113">Name</span><span class="sxs-lookup"><span data-stu-id="f4b6e-113">Name</span></span></p></td>
-<td><p><span data-ttu-id="f4b6e-114">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="f4b6e-114">Required</span></span></p></td>
-<td><p><span data-ttu-id="f4b6e-115"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="f4b6e-115"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="f4b6e-116">Der Name der zu löschenden Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="f4b6e-116">The name of the property to delete.</span></span></p></td>
+<td><p><span data-ttu-id="a30f1-113">Name</span><span class="sxs-lookup"><span data-stu-id="a30f1-113">Name</span></span></p></td>
+<td><p><span data-ttu-id="a30f1-114">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="a30f1-114">Required</span></span></p></td>
+<td><p><span data-ttu-id="a30f1-115"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="a30f1-115"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="a30f1-116">Der Name der zu löschenden Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="a30f1-116">The name of the property to delete.</span></span></p></td>
 </tr>
 </tbody>
 </table>

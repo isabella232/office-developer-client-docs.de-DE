@@ -10,30 +10,30 @@ f1_keywords:
 - dao360.chm1101191
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 3b9da4d42b1b2cece2c829988d3d8906b9f1383b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: bdcd5f0d4d131533846eb4c05d2579f0703d408d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473874"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875710"
 ---
-# <a name="field2savetofile-method-dao"></a><span data-ttu-id="be843-102">Field2.SaveToFile Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="be843-102">Field2.SaveToFile Method (DAO)</span></span>
+# <a name="field2savetofile-method-dao"></a><span data-ttu-id="47ef8-102">Field2.SaveToFile Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="47ef8-102">Field2.SaveToFile Method (DAO)</span></span>
 
-<span data-ttu-id="be843-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="be843-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="47ef8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="47ef8-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="be843-104">Speichert eine Anlage auf einem Datenträger.</span><span class="sxs-lookup"><span data-stu-id="be843-104">Saves an attachment to disk.</span></span>
+<span data-ttu-id="47ef8-104">Speichert eine Anlage auf einem Datenträger.</span><span class="sxs-lookup"><span data-stu-id="47ef8-104">Saves an attachment to disk.</span></span>
 
-## <a name="version-information"></a><span data-ttu-id="be843-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="be843-105">Version Information</span></span>
+## <a name="version-information"></a><span data-ttu-id="47ef8-105">Versionsinformationen</span><span class="sxs-lookup"><span data-stu-id="47ef8-105">Version Information</span></span>
 
-<span data-ttu-id="be843-106">Hinzugefügte Version: Access 2007</span><span class="sxs-lookup"><span data-stu-id="be843-106">Version Added: Access 2007</span></span>
+<span data-ttu-id="47ef8-106">Hinzugefügte Version: Access 2007</span><span class="sxs-lookup"><span data-stu-id="47ef8-106">Version Added: Access 2007</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="be843-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="be843-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="47ef8-107">Syntax</span><span class="sxs-lookup"><span data-stu-id="47ef8-107">Syntax</span></span>
 
-<span data-ttu-id="be843-108">*Ausdruck* . SaveToFile (***FileName***)</span><span class="sxs-lookup"><span data-stu-id="be843-108">*expression* .SaveToFile(***FileName***)</span></span>
+<span data-ttu-id="47ef8-108">*Ausdruck* . SaveToFile (***FileName***)</span><span class="sxs-lookup"><span data-stu-id="47ef8-108">*expression* .SaveToFile(***FileName***)</span></span>
 
-<span data-ttu-id="be843-109">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="be843-109">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="47ef8-109">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="47ef8-109">*expression* A variable that represents a **Field2** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="be843-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="be843-110">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="47ef8-110">Parameter</span><span class="sxs-lookup"><span data-stu-id="47ef8-110">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -44,26 +44,26 @@ ms.locfileid: "25473874"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="be843-111">Name</span><span class="sxs-lookup"><span data-stu-id="be843-111">Name</span></span></p></th>
-<th><p><span data-ttu-id="be843-112">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="be843-112">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="be843-113">Datentyp</span><span class="sxs-lookup"><span data-stu-id="be843-113">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="be843-114">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="be843-114">Description</span></span></p></th>
+<th><p><span data-ttu-id="47ef8-111">Name</span><span class="sxs-lookup"><span data-stu-id="47ef8-111">Name</span></span></p></th>
+<th><p><span data-ttu-id="47ef8-112">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="47ef8-112">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="47ef8-113">Datentyp</span><span class="sxs-lookup"><span data-stu-id="47ef8-113">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="47ef8-114">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="47ef8-114">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="be843-115">FileName</span><span class="sxs-lookup"><span data-stu-id="be843-115">FileName</span></span></p></td>
-<td><p><span data-ttu-id="be843-116">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="be843-116">Required</span></span></p></td>
-<td><p><span data-ttu-id="be843-117"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="be843-117"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="be843-118">Der vollständig qualifizierte Pfad der Datei, in der Sie die Anlage speichern möchten.</span><span class="sxs-lookup"><span data-stu-id="be843-118">The fully qualified path of the file to which you want to save the attachment.</span></span></p></td>
+<td><p><span data-ttu-id="47ef8-115">FileName</span><span class="sxs-lookup"><span data-stu-id="47ef8-115">FileName</span></span></p></td>
+<td><p><span data-ttu-id="47ef8-116">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="47ef8-116">Required</span></span></p></td>
+<td><p><span data-ttu-id="47ef8-117"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="47ef8-117"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="47ef8-118">Der vollständig qualifizierte Pfad der Datei, in der Sie die Anlage speichern möchten.</span><span class="sxs-lookup"><span data-stu-id="47ef8-118">The fully qualified path of the file to which you want to save the attachment.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="example"></a><span data-ttu-id="be843-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="be843-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="47ef8-119">Beispiel</span><span class="sxs-lookup"><span data-stu-id="47ef8-119">Example</span></span>
 
-<span data-ttu-id="be843-120">Im folgenden Codeausschnitt ist dargestellt, wie mithilfe der **SaveToFile**-Methode alle Anlagen für einen bestimmten Mitarbeiter auf dem Datenträger gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="be843-120">The following code snippet illustrates how to use the **SaveToFile** method to save all of the attachments for a specific employee to disk.</span></span>
+<span data-ttu-id="47ef8-120">Im folgenden Codeausschnitt ist dargestellt, wie mithilfe der **SaveToFile**-Methode alle Anlagen für einen bestimmten Mitarbeiter auf dem Datenträger gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="47ef8-120">The following code snippet illustrates how to use the **SaveToFile** method to save all of the attachments for a specific employee to disk.</span></span>
 
 ```vb
     '  Instantiate the parent recordset.  
@@ -86,9 +86,9 @@ ms.locfileid: "25473874"
 
 <br/>
 
-<span data-ttu-id="be843-121">Das folgende Beispiel zeigt, wie Sie die in einem Anlagenfeld gespeicherten Dateien im angegebenen Ordnerpfad speichern.</span><span class="sxs-lookup"><span data-stu-id="be843-121">The following example shows how to save the files stored in an attachment field to the specified folder path.</span></span>
+<span data-ttu-id="47ef8-121">Das folgende Beispiel zeigt, wie Sie die in einem Anlagenfeld gespeicherten Dateien im angegebenen Ordnerpfad speichern.</span><span class="sxs-lookup"><span data-stu-id="47ef8-121">The following example shows how to save the files stored in an attachment field to the specified folder path.</span></span>
 
-<span data-ttu-id="be843-122">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="be843-122">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="47ef8-122">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="47ef8-122">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     Public Function SaveAttachments(strPath As String, Optional strPattern As String = "*.*") As Long

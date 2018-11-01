@@ -6,32 +6,32 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834791(v=office.15)
 ms:contentKeyID: 48547908
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b64a7312c2c7ce336e877823f6dedd76fccd4017
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f1ec717cdeda58ef8eabcb1cd62c2629018313db
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882525"
 ---
-# <a name="field2allowzerolength-property-dao"></a><span data-ttu-id="e1692-102">Field2.AllowZeroLength Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="e1692-102">Field2.AllowZeroLength Property (DAO)</span></span>
+# <a name="field2allowzerolength-property-dao"></a><span data-ttu-id="483ac-102">Field2.AllowZeroLength Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="483ac-102">Field2.AllowZeroLength Property (DAO)</span></span>
 
 
-<span data-ttu-id="e1692-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="e1692-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="483ac-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="483ac-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="e1692-104">Gibt einen Wert zurück oder legt einen Wert fest, der angibt, ob eine leere Zeichenfolge ("") eine gültige Einstellung für die Value-Eigenschaft des Field2-Objekts mit einem Datentyp Text oder Memo ist (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="e1692-104">Sets or returns a value that indicates whether a zero-length string ("") is a valid setting for the **[Value](field-value-property-dao.md)** property of the **Field2** object with a Text or Memo data type (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="483ac-104">Gibt einen Wert zurück oder legt einen Wert fest, der angibt, ob eine leere Zeichenfolge ("") eine gültige Einstellung für die Value-Eigenschaft des Field2-Objekts mit einem Datentyp Text oder Memo ist (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="483ac-104">Sets or returns a value that indicates whether a zero-length string ("") is a valid setting for the **[Value](field-value-property-dao.md)** property of the **Field2** object with a Text or Memo data type (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e1692-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e1692-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="483ac-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="483ac-105">Syntax</span></span>
 
-<span data-ttu-id="e1692-106">*Ausdruck* . AllowZeroLength</span><span class="sxs-lookup"><span data-stu-id="e1692-106">*expression* .AllowZeroLength</span></span>
+<span data-ttu-id="483ac-106">*Ausdruck* . AllowZeroLength</span><span class="sxs-lookup"><span data-stu-id="483ac-106">*expression* .AllowZeroLength</span></span>
 
-<span data-ttu-id="e1692-107">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="e1692-107">*expression* A variable that represents a **Field2** object.</span></span>
+<span data-ttu-id="483ac-107">*Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="483ac-107">*expression* A variable that represents a **Field2** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e1692-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e1692-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="483ac-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="483ac-108">Remarks</span></span>
 
-<span data-ttu-id="e1692-109">Bei einem Objekt, das noch nicht der **Fields**-Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="e1692-109">For an object not yet appended to the **Fields** collection, this property is read/write.</span></span>
+<span data-ttu-id="483ac-109">Bei einem Objekt, das noch nicht der **Fields**-Auflistung angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="483ac-109">For an object not yet appended to the **Fields** collection, this property is read/write.</span></span>
 
-<span data-ttu-id="e1692-110">Nachdem die **AllowZeroLength**-Eigenschaft der **Fields**-Auflistung hinzugefügt wurde, hängt ihre Verfügbarkeit vom Objekt ab, in dem die **Fields**-Auflistung enthalten ist (siehe folgende Tabelle).</span><span class="sxs-lookup"><span data-stu-id="e1692-110">Once appended to a **Fields** collection, the availability of the **AllowZeroLength** property depends on the object that contains the **Fields** collection, as shown in the following table.</span></span>
+<span data-ttu-id="483ac-110">Nachdem die **AllowZeroLength**-Eigenschaft der **Fields**-Auflistung hinzugefügt wurde, hängt ihre Verfügbarkeit vom Objekt ab, in dem die **Fields**-Auflistung enthalten ist (siehe folgende Tabelle).</span><span class="sxs-lookup"><span data-stu-id="483ac-110">Once appended to a **Fields** collection, the availability of the **AllowZeroLength** property depends on the object that contains the **Fields** collection, as shown in the following table.</span></span>
 
 <table>
 <colgroup>
@@ -40,40 +40,40 @@ ms.locfileid: "25475543"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="e1692-111">Zugehörigkeit der Fields-Auflistung</span><span class="sxs-lookup"><span data-stu-id="e1692-111">If the Fields collection belongs to an</span></span></p></th>
-<th><p><span data-ttu-id="e1692-112">Verfügbarkeit von AllowZeroLength</span><span class="sxs-lookup"><span data-stu-id="e1692-112">Then AllowZeroLength is</span></span></p></th>
+<th><p><span data-ttu-id="483ac-111">Zugehörigkeit der Fields-Auflistung</span><span class="sxs-lookup"><span data-stu-id="483ac-111">If the Fields collection belongs to an</span></span></p></th>
+<th><p><span data-ttu-id="483ac-112">Verfügbarkeit von AllowZeroLength</span><span class="sxs-lookup"><span data-stu-id="483ac-112">Then AllowZeroLength is</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="e1692-113"><strong>Index</strong>-Objekt</span><span class="sxs-lookup"><span data-stu-id="e1692-113"><strong>Index</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="e1692-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e1692-114">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="483ac-113"><strong>Index</strong>-Objekt</span><span class="sxs-lookup"><span data-stu-id="483ac-113"><strong>Index</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="483ac-114">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="483ac-114">Not supported</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e1692-115"><strong>QueryDef</strong>-Objekt</span><span class="sxs-lookup"><span data-stu-id="e1692-115"><strong>QueryDef</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="e1692-116">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e1692-116">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="483ac-115"><strong>QueryDef</strong> -Objekt</span><span class="sxs-lookup"><span data-stu-id="483ac-115"><strong>QueryDef</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="483ac-116">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="483ac-116">Read-only</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e1692-117"><strong>Recordset</strong>-Objekt</span><span class="sxs-lookup"><span data-stu-id="e1692-117"><strong>Recordset</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="e1692-118">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="e1692-118">Read-only</span></span></p></td>
+<td><p><span data-ttu-id="483ac-117"><strong>Recordset</strong> -Objekt</span><span class="sxs-lookup"><span data-stu-id="483ac-117"><strong>Recordset</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="483ac-118">Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="483ac-118">Read-only</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="e1692-119"><strong>Relation</strong>-Objekt</span><span class="sxs-lookup"><span data-stu-id="e1692-119"><strong>Relation</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="e1692-120">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="e1692-120">Not supported</span></span></p></td>
+<td><p><span data-ttu-id="483ac-119"><strong>Relation</strong> -Objekt</span><span class="sxs-lookup"><span data-stu-id="483ac-119"><strong>Relation</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="483ac-120">Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="483ac-120">Not supported</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="e1692-121"><strong>TableDef</strong>-Objekt</span><span class="sxs-lookup"><span data-stu-id="e1692-121"><strong>TableDef</strong> object</span></span></p></td>
-<td><p><span data-ttu-id="e1692-122">Lese-/Schreibzugriff</span><span class="sxs-lookup"><span data-stu-id="e1692-122">Read/write</span></span></p></td>
+<td><p><span data-ttu-id="483ac-121"><strong>TableDef</strong> -Objekt</span><span class="sxs-lookup"><span data-stu-id="483ac-121"><strong>TableDef</strong> object</span></span></p></td>
+<td><p><span data-ttu-id="483ac-122">Lese-/Schreibzugriff</span><span class="sxs-lookup"><span data-stu-id="483ac-122">Read/write</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="e1692-123">Sie können diese Eigenschaft zusammen mit der Eigenschaft **[Required](field-required-property-dao.md)**, **[ValidateOnSet](field-validateonset-property-dao.md)** oder **[ValidationRule](field-validationrule-property-dao.md)** verwenden, um einen Wert in einem Feld zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="e1692-123">You can use this property along with the **[Required](field-required-property-dao.md)**, **[ValidateOnSet](field-validateonset-property-dao.md)**, or **[ValidationRule](field-validationrule-property-dao.md)** property to validate a value in a field.</span></span>
+<span data-ttu-id="483ac-123">Sie können diese Eigenschaft zusammen mit der Eigenschaft **[Required](field-required-property-dao.md)**, **[ValidateOnSet](field-validateonset-property-dao.md)** oder **[ValidationRule](field-validationrule-property-dao.md)** verwenden, um einen Wert in einem Feld zu überprüfen.</span><span class="sxs-lookup"><span data-stu-id="483ac-123">You can use this property along with the **[Required](field-required-property-dao.md)**, **[ValidateOnSet](field-validateonset-property-dao.md)**, or **[ValidationRule](field-validationrule-property-dao.md)** property to validate a value in a field.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e1692-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e1692-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="483ac-124">Beispiel</span><span class="sxs-lookup"><span data-stu-id="483ac-124">Example</span></span>
 
-<span data-ttu-id="e1692-p101">In diesem Beispiel ermöglicht die **AllowZeroLength**-Eigenschaft dem Benutzer, den Wert eines **Field2**-Objekts auf eine leere Zeichenfolge festzulegen. Hierdurch können Benutzer zwischen einem Datensatz unterscheiden, für den keine Daten bekannt sind, und einem Datensatz, für den die Daten nicht angewendet werden können.</span><span class="sxs-lookup"><span data-stu-id="e1692-p101">In this example, the **AllowZeroLength** property allows the user to set the value of a **Field2** to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
+<span data-ttu-id="483ac-p101">In diesem Beispiel ermöglicht die **AllowZeroLength**-Eigenschaft dem Benutzer, den Wert eines **Field2**-Objekts auf eine leere Zeichenfolge festzulegen. Hierdurch können Benutzer zwischen einem Datensatz unterscheiden, für den keine Daten bekannt sind, und einem Datensatz, für den die Daten nicht angewendet werden können.</span><span class="sxs-lookup"><span data-stu-id="483ac-p101">In this example, the **AllowZeroLength** property allows the user to set the value of a **Field2** to an empty string. In this situation, the user can distinguish between a record where data is not known and a record where the data does not apply.</span></span>
 
 ```vb
     Sub AllowZeroLengthX() 

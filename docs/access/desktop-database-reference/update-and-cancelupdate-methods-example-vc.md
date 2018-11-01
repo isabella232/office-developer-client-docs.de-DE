@@ -6,19 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249123(v=office.15)
 ms:contentKeyID: 48544167
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7e35529f95997014e611f132b58157e10580a8f1
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: e799e5559d05170fab9713d214488bcea5d69306
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863815"
+ms.locfileid: "25875525"
 ---
-# <a name="update-and-cancelupdate-methods-example-vc"></a><span data-ttu-id="ba02f-102">Update- und CancelUpdate-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="ba02f-102">Update and CancelUpdate methods example (VC++)</span></span>
+# <a name="update-and-cancelupdate-methods-example-vc"></a><span data-ttu-id="8e89d-102">Update- und CancelUpdate-Methode (Beispiel) (VC++)</span><span class="sxs-lookup"><span data-stu-id="8e89d-102">Update and CancelUpdate methods example (VC++)</span></span>
 
 
-<span data-ttu-id="ba02f-103">**Betrifft**: Access 2013 | Office 2013</span><span class="sxs-lookup"><span data-stu-id="ba02f-103">**Applies to**: Access 2013 | Office 2013</span></span>
+<span data-ttu-id="8e89d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8e89d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ba02f-104">Dieses Beispiel veranschaulicht die [Update](update-method-ado.md)-Methode in Verbindung mit der [CancelUpdate](cancelupdate-method-ado.md)-Methode.</span><span class="sxs-lookup"><span data-stu-id="ba02f-104">This example demonstrates the [Update](update-method-ado.md) method in conjunction with the [CancelUpdate](cancelupdate-method-ado.md) method.</span></span>
+<span data-ttu-id="8e89d-104">Dieses Beispiel veranschaulicht die [Update](update-method-ado.md)-Methode in Verbindung mit der [CancelUpdate](cancelupdate-method-ado.md)-Methode.</span><span class="sxs-lookup"><span data-stu-id="8e89d-104">This example demonstrates the [Update](update-method-ado.md) method in conjunction with the [CancelUpdate](cancelupdate-method-ado.md) method.</span></span>
 
 ```cpp 
  
@@ -337,7 +337,7 @@ void PrintComError(_com_error &e)
 // EndUpdateCpp 
 ```
 
-<span data-ttu-id="ba02f-105">**UpdateX.h**</span><span class="sxs-lookup"><span data-stu-id="ba02f-105">**UpdateX.h**</span></span>
+<span data-ttu-id="8e89d-105">**UpdateX.h**</span><span class="sxs-lookup"><span data-stu-id="8e89d-105">**UpdateX.h**</span></span>
 
 ```cpp 
  
