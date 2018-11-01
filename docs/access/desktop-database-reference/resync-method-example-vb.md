@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249571(v=office.15)
 ms:contentKeyID: 48546001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 49c41a2d6f7e90f4e40da5ba932f66fc9976eba8
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 22eafe559757c6d4b7a9f03d17e89a20d87c97a4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863409"
+ms.locfileid: "25868987"
 ---
 # <a name="resync-method-example-vb"></a>Resync-Methode (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [Resync](resync-method-ado.md)-Methode zum Aktualisieren von Daten in einer statischen Datensatzgruppe veranschaulicht.
 

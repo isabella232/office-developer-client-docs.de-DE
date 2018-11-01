@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Attribute Eigenschaft Beispiel) (VB) TOCTitle: Attribute Eigenschaft Beispiel) (VB) === Titel: Attribute-Eigenschaft (Beispiel) (VB) TOCTitle: Attribute-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15) Ms:contentKeyID: 48547442 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Attributes-Eigenschaft (Beispiel) (VB)
+TOCTitle: Attributes property example (VB)
+ms:assetid: bda5e445-6425-5daf-b182-b6f5ea044b04
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249918(v=office.15)
+ms:contentKeyID: 48547442
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1abdb333551e80a8c2b0e8a440aee9c35ca69120
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879256"
 ---
-
-<<<<<<< Kopf
-# <a name="attributes-property-example-vb"></a>Attributes-Eigenschaft (VB-Beispiel)
-=======
 # <a name="attributes-property-example-vb"></a>Attributes-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [Attributes](attributes-property-adox.md)-Eigenschaft eines [Column](column-object-adox.md)-Objekts veranschaulicht. Durch Festlegen der Eigenschaft auf **adColNullable** kann der Benutzer als Wert eines [Recordset](recordset-object-ado.md)-[Felds](field-object-ado.md) eine leere Zeichenfolge festlegen. Hierdurch können Benutzer zwischen einem Datensatz unterscheiden, für den keine Daten bekannt sind und einem Datensatz, für den die Daten nicht angewendet werden können.
 

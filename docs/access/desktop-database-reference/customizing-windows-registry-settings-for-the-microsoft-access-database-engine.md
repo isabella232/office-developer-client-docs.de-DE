@@ -10,17 +10,17 @@ f1_keywords:
 - acmain11.chm1032168
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4a90981c936c933d2eadb191bbf0d2639cd8e641
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a44226e8ea90a8be96de35cdc923349eded17cb4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475248"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886998"
 ---
 # <a name="customizing-windows-registry-settings-for-the-microsoft-access-database-engine"></a>Anpassen der Einstellungen in der Windows-Registrierung für das Microsoft Access-Datenbankmodul
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Wenn Ihre Anwendung mit den Standardfunktionen des Microsoft Access-Datenbankmoduls nicht ordnungsgemäß ausgeführt wird, müssen Sie möglicherweise die Einstellungen in der Microsoft® Windows®-Registrierung an Ihre Bedürfnisse anpassen. Mithilfe der Windows-Registrierung können Sie auch die Arbeitsweise der installierbaren ISAM- nd ODBC-Treiber optimieren.
 

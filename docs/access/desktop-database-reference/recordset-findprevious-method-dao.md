@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052885
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7f264695830d33dfebccf0324f50515d9da30a7e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f55cacf0c22130ede5025fcbd1bc55c76150bc95
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473273"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867959"
 ---
 # <a name="recordsetfindprevious-method-dao"></a>Recordset.FindPrevious-Methode (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sucht den vorherigen Datensatz in einem **[Recordset](recordset-object-dao.md)** -Objekt vom Typ "Dynaset" oder "Snapshot", der die angegebenen Kriterien erfüllt, und macht diesen Datensatz zum aktuellen Datensatz (nur Microsoft Access-Arbeitsbereiche).
 

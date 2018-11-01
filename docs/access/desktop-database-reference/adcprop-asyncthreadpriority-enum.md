@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249844(v=office.15)
 ms:contentKeyID: 48547143
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: b84a06efde252ca6c128e0bcc0baccaf3676e06e
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ef191813e72ade80a7944f09d76f27c2b2f2738c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862947"
+ms.locfileid: "25874923"
 ---
 # <a name="adcpropasyncthreadpriorityenum"></a>ADCPROP\_ASYNCTHREADPRIORITY\_ENUM
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt für ein RDS-[Recordset](recordset-object-ado.md)-Objekt die Ausführungspriorität des asynchronen Threads an, der Daten abruft.
 

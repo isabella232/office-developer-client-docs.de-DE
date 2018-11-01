@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249416(v=office.15)
 ms:contentKeyID: 48545420
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 522cfe50ac160074f7199a8364326d7debd5b780
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 73400abe1298520aadb3f82a242a2e50872be0ca
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475075"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875749"
 ---
 # <a name="updatebatch-method-ado"></a>UpdateBatch-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Schreibt alle ausstehenden Batchaktualisierungen auf einen Datenträger.
 

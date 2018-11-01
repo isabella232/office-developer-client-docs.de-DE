@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Wert-Eigenschaft (VC++-Beispiel) TOCTitle: Wert-Eigenschaft (VC++-Beispiel) === Titel: Wert-Eigenschaft (VC++-Beispiel) TOCTitle: Wert-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15) Ms:contentKeyID: 48548040 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Value-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Value property example (VC++)
+ms:assetid: d8a496f9-5864-ffd8-ca99-5a2f10dcdcb4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250092(v=office.15)
+ms:contentKeyID: 48548040
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: cd9d674db1763ca5cd78310e8ce593ba81ad3146
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868966"
 ---
-
-<<<<<<< Kopf
 # <a name="value-property-example-vc"></a>Value-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="value-property-example-vc"></a>Wert-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Diese Beispiel veranschaulicht die [Value](value-property-ado.md)-Eigenschaft bei [Field](field-object-ado.md)- und [Property](property-object-ado.md)-Objekten, indem Feld- und Eigenschaftswerte für die ***Employees***-Tabelle angezeigt werden.
 

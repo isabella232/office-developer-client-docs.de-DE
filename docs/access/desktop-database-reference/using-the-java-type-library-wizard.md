@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249670(v=office.15)
 ms:contentKeyID: 48546455
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 931434288cbc14da5d3d9d9d53cd250555c7a767
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 233e1a9e6237500b3d13e3234e7c6ddf4d556abc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475782"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884135"
 ---
 # <a name="using-the-java-type-library-wizard"></a>Verwenden des Java-Typbibliotheks-Assistenten
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Der Java-Typbibliotheks-Assistent ist ein Feature von Visual J++ 1.x, das in das Menü **Extras** der Entwicklungsumgebung integriert ist. Er dient zum Durchsuchen einer Typbibliothek und zum Erstellen einer Java-Schnittstelle, die den Zugriff auf COM-Objekte ermöglicht. Für Visual J++ 6.0 wurde der Java-Typbibliotheks-Assistent ersetzt durch [ADO für Windows Foundation Classes](ado-wfc-programming.md).
 

@@ -10,16 +10,16 @@ f1_keywords:
 - dao360.chm1052962
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: cba5790ae557f7e5b29e8068d09d6fa7451cfb27
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 7d5e6ecf7683a41ddb057467f892155143c33144
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474317"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882434"
 ---
 # <a name="fieldallowzerolength-property-dao"></a>Field.AllowZeroLength Property (DAO)
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt einen Wert zurück oder legt einen Wert fest, der angibt, ob eine leere Zeichenfolge ("") eine gültige Einstellung für die Value-Eigenschaft des Field-Objekts mit einem Datentyp Text oder Memo ist (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -52,19 +52,19 @@ Nachdem die **AllowZeroLength**-Eigenschaft der **Fields**-Auflistung hinzugefü
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p><strong>QueryDef</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p><strong>Recordset</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong>-Objekt</p></td>
+<td><p><strong>Relation</strong> -Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p><strong>TableDef</strong> -Objekt</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 </tbody>

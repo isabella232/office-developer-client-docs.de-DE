@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249212(v=office.15)
 ms:contentKeyID: 48544550
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 241a70b73f87dcb2b67d0a6d0d364dc8507892cc
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 99396a6b712c248fd0d22893d9bd10ee5e4e93c4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861561"
+ms.locfileid: "25887684"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-c"></a>ADO-Codebeispiele in Microsoft Visual C++
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Methoden, -Eigenschaften und -Ereignisse beim Schreiben in Microsoft Visual C++ verwenden.
 
@@ -66,11 +66,7 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
   - ["Save" und "Open" (Methoden) (Beispiel)](save-and-open-methods-example-vc.md)
 
-<<<<<<< HEAD
-  - [Seek-Methode und Index-Eigenschaft Beispiel](seek-method-and-index-property-example-vc.md)
-=======
   - [Seek-Methode und Index-Eigenschaft-Beispiel](seek-method-and-index-property-example-vc.md)
->>>>>>> master
 
   - [Supports-Methode (Beispiel)](supports-method-example-vc.md)
 
@@ -80,71 +76,6 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 
 **Eigenschaften**
 
-<<<<<<< HEAD
-  - ["AbsolutePage", "PageCount" und "PageSize" (Eigenschaften) (Beispiel)](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
-
-  - ["AbsolutePosition" und "CursorLocation" (Eigenschaften) (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vc.md)
-
-  - [ActiveCommand-Eigenschaft (Beispiel)](activecommand-property-example-vc.md)
-
-  - ["ActiveConnection", "CommandText", "CommandTimeout", "CommandType", "Size" und "Direction" (Eigenschaften) (Beispiel)](activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vc.md)
-
-  - ["ActualSize" und "DefinedSize" (Eigenschaften) (Beispiel)](actualsize-and-definedsize-properties-example-vc.md)
-
-  - ["Attributes" und "Name" (Eigenschaften) (Beispiel)](attributes-and-name-properties-example-vc.md)
-
-  - [BOF, EOF und Bookmark (Eigenschaften) (Beispiel)](bof-eof-and-bookmark-properties-example-vc.md)
-
-  - [CacheSize-Eigenschaft (Beispiel)](cachesize-property-example-vc.md)
-
-  - ["ConnectionString", "ConnectionTimeout" und "State" (Eigenschaften) (Beispiel)](connectionstring-connectiontimeout-and-state-properties-example-vc.md)
-
-  - [Count-Eigenschaft (Beispiel)](count-property-example-vc.md)
-
-  - ["CursorType", "LockType" und "EditMode" (Eigenschaften) (Beispiel)](cursortype-locktype-and-editmode-properties-example-vc.md)
-
-  - ["Description", "HelpContext", "HelpFile", "NativeError", "Number", "Source" und "SQLState" (Eigenschaften) (Beispiel)](description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vc.md)
-
-  - ["Filter" und "RecordCount" (Eigenschaften) (Beispiel)](filter-and-recordcount-properties-example-vc.md)
-
-  - [Index-Eigenschaft und Seek-Methode (Beispiel)](seek-method-and-index-property-example-vc.md)
-
-  - ["IsolationLevel" und "Mode" (Eigenschaften) (Beispiel)](isolationlevel-and-mode-properties-example-vc.md)
-
-  - [Item-Eigenschaft (Beispiel)](item-property-example-vc.md)
-
-  - [MarshalOptions-Eigenschaft (Beispiel)](marshaloptions-property-example-vc.md)
-
-  - [MaxRecords-Eigenschaft (Beispiel)](maxrecords-property-example-vc.md)
-
-  - ["NumericScale" und "Precision" (Eigenschaften) (Beispiel)](ado-numericscale-and-precision-properties-example-vc.md)
-
-  - [Optimize-Eigenschaft (Beispiel)](optimize-property-example-vc.md)
-
-  - ["OriginalValue" und "UnderlyingValue" (Eigenschaften (Beispiel)](originalvalue-and-underlyingvalue-properties-example-vc.md)
-
-  - [Prepared-Eigenschaft (Beispiel)](prepared-property-example-vc.md)
-
-  - ["Provider" und "DefaultDatabase" (Eigenschaften) (Beispiel)](provider-and-defaultdatabase-properties-example-vc.md)
-
-  - [Sort-Eigenschaft (Beispiel)](sort-property-example-vc.md)
-
-  - [Source-Eigenschaft (Beispiel)](source-property-example-vc.md)
-
-  - [State-Eigenschaft (Beispiel)](state-property-example-vc.md)
-
-  - [Status-Eigenschaft (Beispiel)](status-property-example-vc.md)
-
-  - [StayInSync-Eigenschaft (Beispiel)](stayinsync-property-example-vc.md)
-
-  - [Type-Eigenschaft (Beispiel) (Felder)](type-property-example-field-vc.md)
-
-  - [Type-Eigenschaft (Beispiel) (Eigenschaft)](type-property-example-property-vc.md)
-
-  - [Value-Eigenschaft (Beispiel)](value-property-example-vc.md)
-
-  - [Beispiel der Version-Eigenschaft](version-property-example-vc.md)
-=======
   - [AbsolutePage-, PageCount- und PageSize-Eigenschaften-Beispiel](absolutepage-pagecount-and-pagesize-properties-example-vc.md)
 
   - [AbsolutePosition- und CursorLocation Eigenschaft (Beispiel)](absoluteposition-and-cursorlocation-properties-example-vc.md)
@@ -208,7 +139,6 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
   - [Beispielwert-Eigenschaft](value-property-example-vc.md)
 
   - [Beispiel der Version-Eigenschaft](version-property-example-vc.md)
->>>>>>> master
 
 **Sonstige**
 

@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052971
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1fd66910a3630d8968f75c5a59bb535520419994
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 8fa642eb5351129f1763a5b3f24424ae95df073f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25606983"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873929"
 ---
 # <a name="tabledefcreatefield-method-dao"></a>TableDef.CreateField-Methode (DAO)
 
@@ -69,11 +69,7 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 </table>
 
 
-<<<<<<< Kopf
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Feld
 

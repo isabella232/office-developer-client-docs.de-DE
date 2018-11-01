@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249495(v=office.15)
 ms:contentKeyID: 48545756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 439225d1307e37ea367f0ac5121fdd138f54e2ec
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 4250235d433572944d311611c909c060d2e69da9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860316"
+ms.locfileid: "25876106"
 ---
 # <a name="chapter-13-rds-usage-and-security"></a>Kapitel 13: RDS-Auslastung und -Sicherheit
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mithilfe der Informationen in diesem Kapitel können Sie Ihren Server schnell einrichten und RDS (Remote Data Service) schnell verwenden. Dieses Kapitel umfasst spezielle Konfigurationsschritte, die Sie beim Implementieren von RDS durchführen müssen. Außerdem werden wichtige Beziehungen zwischen RDS und anderen Technologien erläutert und Lösungen für Probleme genannt, die während der Einrichtung einer RDS-Lösung auftreten können.
 

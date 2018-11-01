@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: MarshalOptions-Eigenschaft (ADO) TOCTitle: MarshalOptions-Eigenschaft (ADO) === Titel: MarshalOptions-Eigenschaft (ADO) TOCTitle: MarshalOptions-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: dc9c4e94-0725-210d-8251-079054541142 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250118(v=office.15) Ms:contentKeyID: 48548143 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: MarshalOptions-Eigenschaft (ADO)
+TOCTitle: MarshalOptions property (ADO)
+ms:assetid: dc9c4e94-0725-210d-8251-079054541142
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250118(v=office.15)
+ms:contentKeyID: 48548143
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f5983b7794677b5cc584c541289069acf282d9f9
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25883211"
 ---
-
-<<<<<<< Kopf
 # <a name="marshaloptions-property-ado"></a>MarshalOptions-Eigenschaft (ADO)
-=======
-# <a name="marshaloptions-property-ado"></a>MarshalOptions-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt die Datensätze an, die wieder zurück zum Server gemarshallt werden sollen.
 
@@ -20,9 +26,7 @@ Legt einen [MarshalOptionsEnum](marshaloptionsenum.md)-Wert fest oder gibt den W
 
 ## <a name="remarks"></a>Hinweise
 
-<<<<<<< HEAD bei mit einem clientseitigen [Recordset](recordset-object-ado.md), Datensätze, die auf dem Client geändert wurden in der mittleren Ebene oder Webserver über genanntes Marshalling, das Packen und Senden von Schnittstelle zurück geschrieben werden Methodenparameter über Prozess oder Thread hinweg. Festlegen der **MarshalOptions** -Eigenschaft kann die Leistung verbessern, wenn geänderte Remotedaten zum Aktualisieren der wieder auf der mittleren Ebene oder Webserver gemarshallt werden kann.
-=== Bei einem clientseitigen [Recordset-Objekt](recordset-object-ado.md)verwenden, werden Datensätze, die auf dem Client geändert wurden in der mittleren Ebene oder Webserver über genanntes Marshalling, das Packen und Senden von Schnittstellenmethodenparameter über zurückgeschrieben Prozess oder Thread Grenzen. Festlegen der **MarshalOptions** -Eigenschaft kann die Leistung verbessern, wenn geänderte Remotedaten zum Aktualisieren der wieder auf der mittleren Ebene oder Webserver gemarshallt werden kann.
->>>>>>> master
+Wenn Sie ein clientseitiges [Recordset-Objekt](recordset-object-ado.md)verwenden, Datensätze, die auf dem Client geändert wurden zurückgeschrieben in der mittleren Ebene oder Webserver durch eine Technik Marshalling, das Packen und Senden der Parameter für die Benutzeroberfläche über Thread aufgerufen oder Grenzen zu verarbeiten. Festlegen der **MarshalOptions** -Eigenschaft kann die Leistung verbessern, wenn geänderte Remotedaten zum Aktualisieren der wieder auf der mittleren Ebene oder Webserver gemarshallt werden kann.
 
 **Remote Data Service-Verwendung** Diese Eigenschaft wird nur auf einem clientseitigen **Recordset-Objekt**verwendet.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Attributes- und Name Eigenschaft (Beispiel) (VC++) TOCTitle: Attributes- und Name-Eigenschaften-Beispiel) (VC++) === Titel: Attribute und Namen Eigenschaft (Beispiel) (VC++) TOCTitle: Attribute und Namen Eigenschaften Beispiel ( VC++)
->>>>>>> Master Ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15) Ms:contentKeyID: 48545203 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Attributes- und Name-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Attributes and Name properties example (VC++)
+ms:assetid: 612b7d4a-b92d-5afd-eeaa-28d7ad1a880a
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249356(v=office.15)
+ms:contentKeyID: 48545203
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: df442df4378589ff82981858b021efe033b05ba6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25887418"
 ---
-
-<<<<<<< Kopf
 # <a name="attributes-and-name-properties-example-vc"></a>Attributes- und Name-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="attributes-and-name-properties-example-vc"></a>Attributes- und Name-Eigenschaften-Beispiel) (VC++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird der Wert der [Attributes](attributes-property-ado.md)-Eigenschaft für [Connection](connection-object-ado.md)-, [Field](field-object-ado.md)- und [Property](property-object-ado.md)-Objekte angezeigt. Mithilfe der [Name](name-property-ado.md)-Eigenschaft wird der Name jedes **Field** - und **Property** -Objekts angezeigt.
 

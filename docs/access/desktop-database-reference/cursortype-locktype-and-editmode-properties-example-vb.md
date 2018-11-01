@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: CursorType-, LockType- und EditMode Eigenschaften Beispiel) (VB) TOCTitle: CursorType-, LockType- und EditMode Eigenschaften Beispiel) (VB) === Titel: CursorType-, LockType- und EditMode-Eigenschaften (Beispiel) (VB) TOCTitle: CursorType-, LockType- und EditMode-Eigenschaften (Beispiel) (VB)
->>>>>>> Master Ms:assetid: efe3f976-b095-c0ce-376a-693b07ec8e9d Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250221(v=office.15) Ms:contentKeyID: 48548595 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: CursorType-, LockType- und EditMode-Eigenschaft (Beispiel) (VB)
+TOCTitle: CursorType, LockType, and EditMode properties example (VB)
+ms:assetid: efe3f976-b095-c0ce-376a-693b07ec8e9d
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250221(v=office.15)
+ms:contentKeyID: 48548595
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 1725c7b6c60df6151da6349f33de43319b912819
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868322"
 ---
-
-<<<<<<< Kopf
 # <a name="cursortype-locktype-and-editmode-properties-example-vb"></a>CursorType-, LockType- und EditMode-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="cursortype-locktype-and-editmode-properties-example-vb"></a>CursorType-, LockType- und EditMode-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht, wie Sie die Eigenschaften [CursorType](cursortype-property-ado.md) und [LockType](locktype-property-ado.md) vor dem Öffnen eines [Recordset](recordset-object-ado.md)-Objekts festlegen. Außerdem wird der Wert der [EditMode](editmode-property-ado.md)-Eigenschaft unter verschiedenen Bedingungen gezeigt. Zum Ausführen dieser Prozedur ist die **EditModeOutput** -Funktion erforderlich.
 

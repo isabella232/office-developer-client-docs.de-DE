@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249501(v=office.15)
 ms:contentKeyID: 48545774
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: e5ac9c60be702841a4e45628ba609bdc63e14477
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 39286a3b94712c15628e6163c12ee7c8d2d3e502
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862136"
+ms.locfileid: "25882735"
 ---
 # <a name="absolute-and-relative-urls"></a>Absolute und relative URLs
 
-**Betrifft**: Access 2013 | Office 2013 
+**Betrifft**: Access 2013, Office 2013    
 
 Eine URL gibt den Speicherort eines Ziels auf einem lokalen Computer oder Netzwerkcomputer, wie ein Datei-, Verzeichnis-, HTML-Seite, Bild, Programm, und So weiter gespeichert. In dieser Erläuterung hat eine *absolute URL* Folgendes Format:
 
@@ -81,5 +81,4 @@ recordset.Open "", "URL=https://YourServer/Winnt/",,,adCmdTableDirect
 Vorderer Teil der eine voll qualifizierte URL wird das *Schema* verwendet, um die durch den Rest der URL angegebene Ressource zugreifen. Beispiele sind HTTP (HyperText Transfer Protocol) und FTP (File Transfer Protocol).
 
 In ADO werden OLE DB-Anbieter unterstützt, von denen die eigenen URL-Schemas erkannt werden. Beispielsweise werden von der [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md), welche Zugriffe "Windows 2000-Dateien veröffentlicht", das vorhandene HTTP-Schema erkannt.
-
 

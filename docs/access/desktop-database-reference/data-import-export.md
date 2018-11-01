@@ -6,31 +6,31 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn124236(v=office.15)
 ms:contentKeyID: 52071871
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 12525e212b29c02c891fb5524b89771467cb326e
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: f3b4770cb480ff5c99722d84758df2c638264bcc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876750"
 ---
-# <a name="data-importexport"></a>Data Import/Export
+# <a name="data-importexport"></a>Importieren/Exportieren von Daten
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 
-  - [RunSavedImportExport-Makroaktion](runsavedimportexport-macro-action.md)
+  - [AusführenGespeichertImportExport-Makroaktion](runsavedimportexport-macro-action.md)
 
-  - [EMailDatenbankobjekt-Makroaktion](emaildatabaseobject-macro-action.md)
+  - [Emaildatenbankobjekt-Makroaktion](emaildatabaseobject-macro-action.md)
 
-  - [ExportWithFormatting-Makroaktion](exportwithformatting-macro-action.md)
+  - [Exportierenmitformatierung-Makroaktion](exportwithformatting-macro-action.md)
 
-  - [ImportierenExportierenDaten-Makroaktion](importexportdata-macro-action.md)
+  - [Importierenexportierendaten-Makroaktion](importexportdata-macro-action.md)
 
-  - [ImportExportSpreadsheet-Makroaktion](importexportspreadsheet-macro-action.md)
+  - [Importierenexportierentabellenblatt-Makroaktion](importexportspreadsheet-macro-action.md)
 
-  - [ImportExportText-Makroaktion](importexporttext-macro-action.md)
+  - [Importierenexportierentext-Makroaktion](importexporttext-macro-action.md)
 
   - [ImportierenSharePointListe-Makroaktion](importsharepointlist-macro-action.md)
 

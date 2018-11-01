@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: AbsolutePosition- und CursorLocation Eigenschaften Beispiel) (VB) TOCTitle: AbsolutePosition- und CursorLocation Eigenschaften Beispiel) (VB) Ms:assetid: 572c1a51-b7f4-5861-cfb9-960219e0a831 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249293(v=office.15) ms: ContentKeyID: 48544966 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (VB)
+TOCTitle: AbsolutePosition and CursorLocation properties example (VB)
+ms:assetid: 572c1a51-b7f4-5861-cfb9-960219e0a831
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249293(v=office.15)
+ms:contentKeyID: 48544966
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: b1fb72b167ad24d2d5ef7acd1472d435381428c8
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869645"
 ---
-
 # <a name="absoluteposition-and-cursorlocation-properties-example-vb"></a>AbsolutePosition- und CursorLocation-Eigenschaft (Beispiel) (VB)
-=== Titel: AbsolutePosition- und CursorLocation-Eigenschaften (Beispiel) (VB) TOCTitle: AbsolutePosition- und CursorLocation-Eigenschaften (Beispiel) (VB) Ms:assetid: 572c1a51-b7f4-5861-cfb9-960219e0a831 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249293(v=office.15) Ms:contentKeyID: 48544966 MS.Date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="absoluteposition-and-cursorlocation-properties-example-vb"></a>AbsolutePosition- und CursorLocation-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird veranschaulicht, wie über die [AbsolutePosition](absoluteposition-property-ado.md)-Eigenschaft der Status einer Schleife nachverfolgt werden kann, in der alle Datensätze eines [Recordset](recordset-object-ado.md)-Objekts aufgezählt werden. Mithilfe der [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft wird die **AbsolutePosition** -Eigenschaft aktiviert, indem als Cursor ein Clientcursor festgelegt wird.
 

@@ -1,26 +1,28 @@
 ---
-<<<<<<< HEAD-Titel: BOF- und EOF-Eigenschaften (ADO) TOCTitle: BOF- und EOF-Eigenschaften (ADO) === Titel: BOF-und EOF-Eigenschaft (ADO) TOCTitle: BOF-und EOF-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: f797e140-5572-1a4d-9afc-285f6a3868a8 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15) Ms:contentKeyID: 48548768 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: BOF- und EOF-Eigenschaft (ADO)
+TOCTitle: BOF, EOF properties (ADO)
+ms:assetid: f797e140-5572-1a4d-9afc-285f6a3868a8
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250260(v=office.15)
+ms:contentKeyID: 48548768
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 5b71e48f3fe0b596f085f02d371b0775695ffd5c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874244"
 ---
-
-<<<<<<< Kopf
 # <a name="bof-eof-properties-ado"></a>BOF- und EOF-Eigenschaft (ADO)
-=======
-# <a name="bof-eof-properties-ado"></a>BOF-und EOF-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
   - **BOF** - Gibt an, dass die aktuelle Datensatzposition vor dem ersten Datensatz in einem [Recordset](recordset-object-ado.md)-Objekt liegt.
 
   - **EOF** - Gibt an, dass die aktuelle Datensatzposition nach dem letzten Datensatz in einem **Recordset** -Objekt liegt.
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Die **BOF** - und die **EOF** -Eigenschaft geben Werte vom Datentyp **Boolean** zurück.
 

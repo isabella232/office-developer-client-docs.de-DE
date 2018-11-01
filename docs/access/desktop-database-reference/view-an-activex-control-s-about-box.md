@@ -1,26 +1,30 @@
 ---
-<<<<<<< HEAD-Titel: an ActiveX Control's Aboutbox TOCTitle anzeigen: Anzeigen eines ActiveX-Steuerelements Infofeld Ms:assetid: 72a855b4-dd1a-a531-6402-0321335d3bf5 Ms:mtpsurl: https://msdn.microsoft.com/library/Ff195825(v=office.15) Ms:contentKeyID: 48545612 ms.date: 09/18/2015 === Titel: ein ActiveX-Steuerelement zu Feld TOCTitle Ansicht: anzeigen ein ActiveX-Steuerelements zu im Feld Beschreibung: das Infofeld anzeigen.
-MS:AssetId: 72a855b4-dd1a-a531-6402-0321335d3bf5 Ms:mtpsurl: https://msdn.microsoft.com/library/Ff195825(v=office.15) Ms:contentKeyID: 48545612 ms.date: 10/16/2018
->>>>>>> Master-Shape Mtps_version: Office. 15 f1_keywords:
-- vbaac10.chm4039 f1_categories:
+title: Ein ActiveX-Steuerelement über das Feld anzeigen
+TOCTitle: View an ActiveX control About box
+description: Gehen Sie zum Anzeigen der Info-Feld.
+ms:assetid: 72a855b4-dd1a-a531-6402-0321335d3bf5
+ms:mtpsurl: https://msdn.microsoft.com/library/Ff195825(v=office.15)
+ms:contentKeyID: 48545612
+ms.date: 10/16/2018
+mtps_version: v=office.15
+f1_keywords:
+- vbaac10.chm4039
+f1_categories:
 - Office.Version=v15
+ms.openlocfilehash: 0ccd656669dc265170bd084efff595b97d428e0b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25884569"
 ---
-
-<<<<<<< Kopf
-# <a name="view-an-activex-controls-about-box"></a>Ein ActiveX-Steuerelement über das Feld anzeigen
-
-**Betrifft**: Access 2013 | Office 2013
-
-Zum Einblenden eines** **Infofelds, das Versions- und Copyrightinformationen für ein ActiveX-Steuerelement anzeigt, klicken Sie auf das Eigenschaftenfeld **Info** im Microsoft Access-Eigenschaftenfenster. Klicken Sie anschließend auf die Generator-Schaltfläche** **rechts neben dem Eigenschaftenfeld.
-=======
 # <a name="view-an-activex-control-about-box"></a>Ein ActiveX-Steuerelement über das Feld anzeigen
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 So zeigen Sie ein Feld **Info** mit Version und Copyright-Informationen für ein ActiveX-Steuerelement an:
 
 1. Wählen Sie die Eigenschaft **zum** Feld in der Microsoft Access-Eigenschaftenfenster.
 
 2. Wählen Sie die Schaltfläche **Erstellen** rechts neben dem Eigenschaftenfeld.
->>>>>>> master
 

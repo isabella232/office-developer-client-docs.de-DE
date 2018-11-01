@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249986(v=office.15)
 ms:contentKeyID: 48547697
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 98af810c9a24d38a6b2b32db31f9a650c2d6f70a
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5987b16c033b13be145e60317cdfdc821851be38
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867412"
 ---
 # <a name="write-method-ado"></a>Write-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Schreibt Binärdaten in ein [Stream](stream-object-ado.md)-Objekt.

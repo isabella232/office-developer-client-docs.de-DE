@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: DefinedSize-Eigenschaft (VC++-Beispiel) TOCTitle: DefinedSize-Eigenschaft (VC++-Beispiel) === Titel: DefinedSize-Eigenschaft (VC++-Beispiel) TOCTitle: DefinedSize-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: eac03770-4e6a-90fd-3e0e-89246b61d403 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15) Ms:contentKeyID: 48548474 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: DefinedSize-Eigenschaft (VC++-Beispiel)
+TOCTitle: DefinedSize property example (VC++)
+ms:assetid: eac03770-4e6a-90fd-3e0e-89246b61d403
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250192(v=office.15)
+ms:contentKeyID: 48548474
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: a87889c7cd742c02def55cb802981fd3e16b3f91
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867363"
 ---
-
-<<<<<<< Kopf
 # <a name="definedsize-property-example-vc"></a>DefinedSize-Eigenschaft (VC++-Beispiel)
-=======
-# <a name="definedsize-property-example-vc"></a>DefinedSize-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der DefinedSizeEigenschaft eines Column-Objekts veranschaulicht. Der Code legt die Größe der FirstName-Spalte der Employees-Tabelle in der Northwind-Datenbank neu fest. Dann wird die Änderung der Werte des FirstName-Felds eines Recordsets basierend auf der Employees-Tabelle angezeigt. Standardmäßig wird das FirstName-Feld durch Leerstellen aufgefüllt, nachdem die DefinedSize-Eigenschaft erneut festgelegt wurde.
 

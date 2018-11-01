@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: State-Eigenschaft Beispiel) (VJ++) TOCTitle: State-Eigenschaft Beispiel) (VJ++) === Titel: State-Eigenschaft Beispiel) (VJ++) TOCTitle: State-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15) Ms:contentKeyID: 48545869 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: State-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: State property example (VJ++)
+ms:assetid: 7de6b4c1-b761-4060-7d97-6207542c202d
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249529(v=office.15)
+ms:contentKeyID: 48545869
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: ac8e066e537f86095c31ee975fd27f0f38211c2c
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881685"
 ---
-
-<<<<<<< Kopf
 # <a name="state-property-example-vj"></a>State-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="state-property-example-vj"></a>State-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.
 

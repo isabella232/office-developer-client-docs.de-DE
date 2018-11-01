@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Type-Eigenschaft (Beispiel) (VC++) TOCTitle: Type-Eigenschaft (Beispiel) (VC++) === Titel: Type-Eigenschaft (Beispiel) (VC++) TOCTitle: Type-Eigenschaft (Beispiel) (VC++)
->>>>>>> Master Ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15) Ms:contentKeyID: 48548168 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Type-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Type property example (Property) (VC++)
+ms:assetid: ddf0233f-585e-6659-7fd6-f924f3a31f21
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250122(v=office.15)
+ms:contentKeyID: 48548168
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 21c0f6044b0c59949984a35e6f6d4b51c80b1801
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868427"
 ---
-
-<<<<<<< Kopf
 # <a name="type-property-example-property-vc"></a>Type-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="type-property-example-property-vc"></a>Type-Eigenschaft (Beispiel) (VC++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Type](type-property-ado.md)-Eigenschaft. Dabei handelt es sich um ein Modell eines Hilfsprogramms, mit dem die Namen und Typen einer Auflistung aufgeführt werden, wie z. B. [Properties](properties-collection-ado.md), [Fields](fields-collection-ado.md) usw.
 

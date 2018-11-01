@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Status-Eigenschaft (VC++-Beispiel) TOCTitle: Status-Eigenschaft (VC++-Beispiel) === Titel: Status-Eigenschaft (VC++-Beispiel) TOCTitle: State-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15) Ms:contentKeyID: 48547085 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: State-Eigenschaft (Beispiel) (VC++)
+TOCTitle: State property example (VC++)
+ms:assetid: aedc50d8-81cd-1acd-6d57-48af71369da8
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249830(v=office.15)
+ms:contentKeyID: 48547085
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 06d91a9e2103fa56025230ae5326cda2d0bfb85f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886914"
 ---
-
-<<<<<<< Kopf
 # <a name="state-property-example-vc"></a>State-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="state-property-example-vc"></a>State-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [State](state-property-ado.md)-Eigenschaft verwendet, um eine Meldung anzuzeigen, während die asynchronen Verbindungen geöffnet und asynchrone Befehle ausgeführt werden.
 

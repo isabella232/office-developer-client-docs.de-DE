@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff198019(v=office.15)
 ms:contentKeyID: 48546560
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3be986fce66342ec736ebfebcfbc3e615ae57a40
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: c85be857f7a7ed100e68f77f954b3d7513449fa5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474486"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870212"
 ---
 # <a name="recordset2restartable-property-dao"></a>Recordset2.Restartable Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt einen Wert zurück, der angibt, ob ein **[Recordset](recordset-object-dao.md)** -Objekt die **[Requery](recordset2-requery-method-dao.md)** -Methode unterstützt, die die Abfrage, auf der das **Recordset**-Objekt basiert, erneut ausführt.
 

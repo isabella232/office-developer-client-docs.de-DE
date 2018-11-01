@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: TOCTitle vorbereitet-Eigenschaft (VC++-Beispiel): vorbereitet-Eigenschaft (VC++-Beispiel) === Titel: Prepared-Eigenschaft (VC++-Beispiel) TOCTitle: Prepared-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15) Ms:contentKeyID: 48546562 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Prepared-Eigenschaft (Beispiel) (VC++)
+TOCTitle: Prepared property example (VC++)
+ms:assetid: 9b2d8037-e74d-5fbd-c56c-18187236b1b2
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249704(v=office.15)
+ms:contentKeyID: 48546562
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f0c3f6f48418b6b8df95b423b9baba3a9c84c21b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885815"
 ---
-
-<<<<<<< Kopf
 # <a name="prepared-property-example-vc"></a>Prepared-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="prepared-property-example-vc"></a>Prepared-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.
 

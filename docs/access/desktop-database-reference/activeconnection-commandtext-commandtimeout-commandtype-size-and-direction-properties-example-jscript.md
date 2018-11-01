@@ -1,16 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: ActiveConnection, CommandText, CommandTimeout-Eigenschaft (Beispiel) (JScript) TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction-Eigenschaften (Beispiel) (JScript) Ms:assetid : 2a79222c-4dba-9c5a-fff7-c8dd2711801f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249056(v=office.15) Ms:contentKeyID: 48543909 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ActiveConnection, CommandText, CommandTimeout-Eigenschaften (Beispiel) (JScript)
+TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size, and Direction properties example(JScript)
+ms:assetid: 2a79222c-4dba-9c5a-fff7-c8dd2711801f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249056(v=office.15)
+ms:contentKeyID: 48543909
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 71df0230e9f1ddd99f29c28c33260f43244f62e0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25880068"
 ---
-
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript"></a>ActiveConnection-, CommandText-, CommandTimeout-, CommandType-, Size- und Direction-Eigenschaft (Beispiel) (JScript)
 
-=== Titel: ActiveConnection, CommandText, CommandTimeout-Eigenschaft (Beispiel) (JScript) TOCTitle: ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction Eigenschaften example(JScript) Ms:assetid: 2a79222c-4dba-9C5A-fff7-c8dd2711801f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249056(v=office.15) Ms:contentKeyID: 48543909 ms.date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-jscript"></a>Eigenschaften ActiveConnection, CommandText, CommandTimeout, CommandType, Size und Direction (Beispiel) (JScript)
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mithilfe der Eigenschaften [ActiveConnection](activeconnection-property-ado.md), [CommandText](commandtext-property-ado.md), [CommandTimeout](commandtimeout-property-ado.md), [CommandType](commandtype-property-ado.md), [Size](size-property-ado.md) und [Direction](direction-property-ado.md) eine gespeicherte Prozedur ausgeführt. Schneiden Sie den folgenden Code aus, fügen Sie ihn in Editor oder einem anderen Texteditor ein, und speichern Sie ihn unter dem Dateinamen **ActiveConnectionJS.asp**.
 

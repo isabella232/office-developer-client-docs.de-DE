@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250148(v=office.15)
 ms:contentKeyID: 48548261
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e54c7d13a34cf8577fcfa601a39c4332a8002442
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 641413b850662e10d8dfc5179eadcf8573a83c77
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860504"
+ms.locfileid: "25886186"
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a>MoveFirst-, MoveLast-, MoveNext- und MovePrevious-Methoden (Beispiel) (VBScript)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel werden die Methoden [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) und [MovePrevious](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) verwendet, um den Zeiger für den Datensatz eines [Recordset](recordset-object-ado.md)-Objekts auf der Grundlage des angegebenen Befehls zu verschieben.
 

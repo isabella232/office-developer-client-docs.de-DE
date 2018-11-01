@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Sort-Eigenschaft Beispiel) (VJ++) TOCTitle: Sort-Eigenschaft Beispiel) (VJ++) === Titel: Sort-Eigenschaft Beispiel) (VJ++) TOCTitle: Sort-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15) Ms:contentKeyID: 48543896 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Sort-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Sort property example (VJ++)
+ms:assetid: 29f34b9d-a75a-baa3-2505-ebd70e71950f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249051(v=office.15)
+ms:contentKeyID: 48543896
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 9ea7dd3ee87b3e7ff2d06a6f6cf14d9195216f42
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872081"
 ---
-
-<<<<<<< Kopf
 # <a name="sort-property-example-vj"></a>Sort-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="sort-property-example-vj"></a>Sort-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Sort](sort-property-ado.md)-Eigenschaft des [Recordset](recordset-object-ado.md)-Objekts verwendet, um die Zeilen in einem **Recordset**-Objekt neu anzuordnen, das aus der ***Authors***-Tabelle der ***Pubs***-Datenbank stammt. Eine sekundäre Hilfsprogrammroutine druckt jede Zeile.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: DateCreated- und DateModified Eigenschaften Beispiel) (VB) TOCTitle: DateCreated- und DateModified Eigenschaften Beispiel) (VB) === Titel: DateCreated- und DateModified-Eigenschaften (Beispiel) (VB) TOCTitle: DateCreated und DateModified-Eigenschaften (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15) Ms:contentKeyID: 48545063 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: DateCreated- und DateModified-Eigenschaft (Beispiel) (VB)
+TOCTitle: DateCreated and DateModified properties example (VB)
+ms:assetid: 5afdb5a9-394f-c38f-83a4-ae7017673c5e
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249316(v=office.15)
+ms:contentKeyID: 48545063
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: a8bdeb3c0e703485d5862332a41819503900b3c6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25874447"
 ---
-
-<<<<<<< Kopf
-# <a name="datecreated-and-datemodified-properties-example-vb"></a>DateCreated- und DateModified-Eigenschaft (VB-Beispiel)
-=======
-# <a name="datecreated-and-datemodified-properties-example-vb"></a>DateCreated- und DateModified-Eigenschaften (Beispiel) (VB)
->>>>>>> master
+# <a name="datecreated-and-datemodified-properties-example-vb"></a>DateCreated- und DateModified-Eigenschaft (Beispiel) (VB)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [DateCreated](datecreated-property-adox.md)- und der [DateModified](datemodified-property-adox.md)-Eigenschaft veranschaulicht, indem ein neues [Column](column-object-adox.md)-Objekt zu einem vorhandenen [Table](table-object-adox.md)-Objekt hinzugefügt wird und ein neues **Table** -Objekt erstellt wird. Zur Ausführung dieses Beispiels ist die DateOutput-Prozedur erforderlich.
 

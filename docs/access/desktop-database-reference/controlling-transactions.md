@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248994(v=office.15)
 ms:contentKeyID: 48543685
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b70e6586e17286f4f7a13417d0901f1250635631
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 4acd03e387f50d9035c73dd2fef934f6fd6985a5
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889644"
 ---
 # <a name="controlling-transactions"></a>Steuern von Transaktionen
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Eine *Transaktion* begrenzt Anfang und Ende einer Reihe von Datenzugriffsvorgänge, die ablaufen über eine Verbindung müssen. Mit dem **Connection** -Objekt, das den Transaktionsfunktionen der Datenquelle unterliegt, können Sie auch Transaktionen erstellen und verwalten. Beispielsweise können Sie mit dem Microsoft OLE DB-Anbieter für SQL Server für den Zugriff auf eine Datenbank in Microsoft SQL Server 2000 mehrere geschachtelte Transaktionen für die von Ihnen ausgeführten Befehle erstellen.
 

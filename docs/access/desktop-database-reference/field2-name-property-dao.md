@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195585(v=office.15)
 ms:contentKeyID: 48545536
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 65467b657746b2882ae8706ccc638033f9bd863c
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 09e4f1ab1741f791d8ebd38be9e331d96f4776b7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871402"
 ---
 # <a name="field2name-property-dao"></a>Field2.Name Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Namen des angegebenen Objekts zurück oder legt diesen fest. **String**-Wert mit Lese-/Schreibzugriff, wenn das Objekt noch keiner Auflistung angefügt wurde. Schreibgeschützter **String**-Wert, wenn das Objekt einer Auflistung angefügt wurde.
 

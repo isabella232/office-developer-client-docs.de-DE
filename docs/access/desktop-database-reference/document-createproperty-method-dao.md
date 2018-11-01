@@ -10,17 +10,17 @@ f1_keywords:
 - dao360.chm1052967
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4bcd98c41fe6961112758a284aadb3806754bb77
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ca31f8cc192065abd09957e2585fdfaabe39ff49
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25863325"
+ms.locfileid: "25878192"
 ---
 # <a name="documentcreateproperty-method-dao"></a>Document.CreateProperty Method (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -Objekt (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -76,11 +76,7 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 </table>
 
 
-<<<<<<< HEAD
 ### <a name="return-value"></a>Rückgabewert
-=======
-### <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Eigenschaft
 

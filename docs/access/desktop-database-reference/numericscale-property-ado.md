@@ -1,24 +1,26 @@
 ---
-<<<<<<< HEAD-Titel: NumericScale-Eigenschaft (ADO) TOCTitle: NumericScale-Eigenschaft (ADO) === Titel: NumericScale-Eigenschaft (ADO) TOCTitle: NumericScale-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 51b232d2-5bfd-521c-f4e9-65655ecc7c70 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249263(v=office.15) Ms:contentKeyID: 48544824 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: NumericScale-Eigenschaft (ADO)
+TOCTitle: NumericScale property (ADO)
+ms:assetid: 51b232d2-5bfd-521c-f4e9-65655ecc7c70
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249263(v=office.15)
+ms:contentKeyID: 48544824
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: eb2c799fd7c9d1cc74c6081c10f7a8d356e79faf
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876015"
 ---
-
-<<<<<<< Kopf
 # <a name="numericscale-property-ado"></a>NumericScale-Eigenschaft (ADO)
-=======
-# <a name="numericscale-property-ado"></a>NumericScale-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt die Dezimalstellen numerischer Werte in einem [Parameter](parameter-object-ado.md)- oder [Field](field-object-ado.md)-Objekt an.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Legt einen **Byte** -Wert fest, der die Anzahl von Dezimalstellen angibt, in die numerische Werte aufgelöst werden, oder gibt den Wert zurück.
 

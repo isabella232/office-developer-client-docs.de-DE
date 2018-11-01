@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 88463cf79ace0007cac8e5ebd1694ee7a080f329
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 0446654a6ad39246289690c95f160bd77dcde19d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25860350"
+ms.locfileid: "25886263"
 ---
 # <a name="creating-and-executing-a-simple-command"></a>Erstellen und Ausführen eines einfachen Befehls
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Der folgende Code ist zwar nicht typisch für das **Command** -Objekt, veranschaulicht aber die grundlegende Verwendungsweise des **Command** -Objekts, um einen Befehl für eine Datenquelle auszuführen. In diesem Fall handelt es sich um einen Befehl zum Zurückgeben von Zeilen, mit dem das Ergebnis der Befehlsausführung in einem **Recordset** -Objekt ausgegeben wird.
 

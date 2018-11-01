@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: ParentCatalog-Eigenschaft (VC++-Beispiel) TOCTitle: ParentCatalog-Eigenschaft (VC++-Beispiel) === Titel: ParentCatalog-Eigenschaft (VC++-Beispiel) TOCTitle: ParentCatalog-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15) Ms:contentKeyID: 48548855 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ParentCatalog-Eigenschaft (VC++-Beispiel)
+TOCTitle: ParentCatalog property example (VC++)
+ms:assetid: fad6574f-698f-f48a-ba0b-59f048ae012c
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250281(v=office.15)
+ms:contentKeyID: 48548855
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 80a550a65601ee86d34f7e8acf6a88f75f738501
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25876050"
 ---
-
-<<<<<<< Kopf
 # <a name="parentcatalog-property-example-vc"></a>ParentCatalog-Eigenschaft (VC++-Beispiel)
-=======
-# <a name="parentcatalog-property-example-vc"></a>ParentCatalog-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Codebeispiel wird die Verwendung der ParentCatalog-Eigenschaft veranschaulicht, um vor dem Anfügen einer Tabelle an einen Katalog auf eine anbieterspezifische Eigenschaft zuzugreifen. Die Eigenschaft ist die AutoIncrement-Eigenschaft, die ein AutoIncrement-Feld in einer Microsoft Jet-Datenbank erstellt.
 

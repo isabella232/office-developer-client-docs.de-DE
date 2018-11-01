@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Status--Eigenschaft (Beispiel) (Field) (VB) TOCTitle: Status--Eigenschaft (Beispiel) (Field) (VB) === Titel: Status--Eigenschaft (Beispiel) (Field) (VB) TOCTitle: Status--Eigenschaft (Beispiel) (Field) (VB)
->>>>>>> Master Ms:assetid: 1dc2807f-f469-de97-1280-4b1984b271b4 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15) Ms:contentKeyID: 48543601 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Status-Eigenschaft (Beispiel) (Field) (VB)
+TOCTitle: Status property example (Field) (VB)
+ms:assetid: 1dc2807f-f469-de97-1280-4b1984b271b4
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248969(v=office.15)
+ms:contentKeyID: 48543601
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 680df8832bea713155435b6a315a008dae7e3309
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25873474"
 ---
-
-<<<<<<< Kopf
 # <a name="status-property-example-field-vb"></a>Status-Eigenschaft (Beispiel) (Field) (VB)
-=======
-# <a name="status-property-example-field-vb"></a>Status--Eigenschaft (Beispiel) (Field) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Beispiel wird unter Verwendung des [Internet Publishing-Anbieters](microsoft-ole-db-provider-for-internet-publishing.md) ein Dokument in einem Ordner mit Schreib-/Lesezugriff geöffnet. Die [Status](status-property-ado-field.md)-Eigenschaft eines [Field](field-object-ado.md)-Objekts des [Record](record-object-ado.md)-Objekts wird auf **adFieldPendingInsert** festgelegt und dann auf **adFieldOk** aktualisiert.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: CacheSize-Eigenschaft (VC++-Beispiel) TOCTitle: CacheSize-Eigenschaft (VC++-Beispiel) === Titel: CacheSize-Eigenschaft (VC++-Beispiel) TOCTitle: CacheSize-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15) Ms:contentKeyID: 48547435 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: CacheSize-Eigenschaft (Beispiel) (VC++)
+TOCTitle: CacheSize property example (VC++)
+ms:assetid: bd5bc7ae-c1fa-361b-9b26-a216655e3cbd
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249914(v=office.15)
+ms:contentKeyID: 48547435
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 944aaae506a8a7f3faba45e2220daf5caf46bed1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885710"
 ---
-
-<<<<<<< Kopf
 # <a name="cachesize-property-example-vc"></a>CacheSize-Eigenschaft (Beispiel) (VC++)
-=======
-# <a name="cachesize-property-example-vc"></a>CacheSize-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mithilfe der [CacheSize](cachesize-property-ado.md)-Eigenschaft der Unterschied im Hinblick auf die Leistung für einen Vorgang aufgezeigt, der mit und ohne einen Cache für 30 Datensätze ausgeführt wird.
 

@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Rowset-Eigenschaft (ADO) TOCTitle: Rowset-Eigenschaft (ADO) === Titel: Rowset-Eigenschaft (ADO) TOCTitle: Rowset-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: 1a1cb3ef-8f3c-30c1-3eb0-8618fdcacd53 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248946(v=office.15) Ms:contentKeyID: 48543515 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Rowset-Eigenschaft (ADO)
+TOCTitle: Rowset property (ADO)
+ms:assetid: 1a1cb3ef-8f3c-30c1-3eb0-8618fdcacd53
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248946(v=office.15)
+ms:contentKeyID: 48543515
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7be8abbce6828dd202e0c64eec342de9198f7a9b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878535"
 ---
-
-<<<<<<< Kopf
 # <a name="rowset-property-ado"></a>Rowset-Eigenschaft (ADO)
-=======
-# <a name="rowset-property-ado"></a>Rowset-Eigenschaft (ADO)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 
@@ -34,11 +40,7 @@ Platzieren Sie HRESULT\_Rowset (\[in\] IUnknown\* pRowset);
 
   - Ein OLE DB- **Rowset** -Objekt.
 
-<<<<<<< Kopf
-## <a name="return-values"></a>Rückgabewert
-=======
 ## <a name="return-values"></a>Rückgabewerte
->>>>>>> master
 
 Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte, einschließlich S\_OK und E\_fehl.
 

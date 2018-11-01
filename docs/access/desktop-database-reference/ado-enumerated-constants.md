@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249522(v=office.15)
 ms:contentKeyID: 48545841
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0ecefa3973d2995a69feb9abe82355aae7df63d1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 3e9944138dcdca49f33ca293a9bdf41d88d86e9e
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882308"
 ---
 # <a name="ado-enumerated-constants"></a>ADO-Aufzählungskonstanten
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Zur Unterstützung beim Debuggen wird in den ADO-Aufzählungen für jede Konstante ein Wert aufgelistet. Dieser Wert ist jedoch lediglich ein Hinweis und kann zwischen ADO-Versionen geändert werden. Der Code sollte nur vom Namen, nicht vom tatsächlichen Wert, der einzelnen aufgezählten Konstanten abhängen.
 
@@ -107,7 +107,7 @@ Zur Unterstützung beim Debuggen wird in den ADO-Aufzählungen für jede Konstan
 <td><p>Gibt den aktuellen Status der Ausführung eines Ereignisses an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="executeoptionenum.md">ExecuteOptionEnum-Wert</a></p></td>
+<td><p><a href="executeoptionenum.md">ExecuteOptionEnum</a></p></td>
 <td><p>Gibt an, wie ein Anbieter einen Befehl ausführen sollte.</p></td>
 </tr>
 <tr class="even">

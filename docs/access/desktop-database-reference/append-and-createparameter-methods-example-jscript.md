@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249494(v=office.15)
 ms:contentKeyID: 48545737
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bd397e13a74c68367d5be4256172d31a469ae509
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: 29f573d5faa84f965a83d750fa1f0a815263a2e0
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25862163"
+ms.locfileid: "25886620"
 ---
 # <a name="append-and-createparameter-methods-example-jscript"></a>Append- und CreateParameter-Methode (Beispiel) (JScript)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel werden die Methoden [Append](append-method-ado.md) und [CreateParameter](createparameter-method-ado.md) zum Ausführen einer gespeicherten Prozedur mit einem Eingabeparameter verwendet. Schneiden Sie den folgenden Code aus, und fügen Sie ihn in den Editor oder in einen anderen Text-Editor ein, und speichern Sie ihn als **AppendJS.asp**.
 

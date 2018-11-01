@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Status-Eigenschaft Beispiel) (VJ++) TOCTitle: Status-Eigenschaft Beispiel) (VJ++) === Titel: Status-Eigenschaft Beispiel) (VJ++) TOCTitle: Status-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15) Ms:contentKeyID: 48547452 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Status-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Status property example (VJ++)
+ms:assetid: bdfc1b26-b384-e7e5-ff4b-d63ed62f70ca
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249922(v=office.15)
+ms:contentKeyID: 48547452
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f903da131d94c72656a2b8d80febb20e01854b49
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872228"
 ---
-
-<<<<<<< Kopf
 # <a name="status-property-example-vj"></a>Status-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="status-property-example-vj"></a>Status-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Status](status-property-ado-recordset.md)-Eigenschaft verwendet, um die Datensätze anzuzeigen, die in einem Batchvorgang geändert wurden, bevor eine Batchaktualisierung ausgeführt wurde.
 

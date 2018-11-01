@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm64319
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d5ddd1a4b99ec301772690b2815d961676c5a058
-ms.sourcegitcommit: 801b1b54786f7b0e5b0d35466e7ae8d1e840b26f
+ms.openlocfilehash: ab6b3a265b6e63680add41ec051ba61a262819bd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25861855"
+ms.locfileid: "25876841"
 ---
 # <a name="closewindow-macro-action"></a>FensterSchließen-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Die **Fensterschließen** -Aktion können Sie um eine angegebene Access Dokumentregisterkarte oder die aktive Dokumentregisterkarte zu schließen, wenn keines angegeben ist.
 

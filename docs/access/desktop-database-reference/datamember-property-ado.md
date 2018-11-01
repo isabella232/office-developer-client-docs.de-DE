@@ -1,23 +1,25 @@
 ---
-<<<<<<< HEAD-Titel: DataMember-Eigenschaft (ADO) TOCTitle: DataMember-Eigenschaft (ADO) === Titel: DataMember-Eigenschaft (ADO) TOCTitle: DataMember-Eigenschaft (ADO)
->>>>>>> Master Ms:assetid: f89e1d42-7993-764b-4e8a-2f449903f792 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250263(v=office.15) Ms:contentKeyID: 48548787 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: DataMember-Eigenschaft (ADO)
+TOCTitle: DataMember property (ADO)
+ms:assetid: f89e1d42-7993-764b-4e8a-2f449903f792
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250263(v=office.15)
+ms:contentKeyID: 48548787
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: eebd4e485c358ed141e6bcb5dc84c82d41fd88ed
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870149"
 ---
-
-<<<<<<< Kopf
 # <a name="datamember-property-ado"></a>DataMember-Eigenschaft (ADO)
-=======
-# <a name="datamember-property-ado"></a>DataMember-Eigenschaft (ADO)
->>>>>>> master
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Namen des Datenelements an, das von dem durch die [DataSource](datasource-property-ado.md)-Eigenschaft angegebenen Objekt abgerufen wird.
 
-<<<<<<< Kopf
 ## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
-=======
-## <a name="settings-and-return-values"></a>Einstellungen und Rückgabewerte
->>>>>>> master
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** festgelegt oder zurückgegeben. Die Groß-/Kleinschreibung wird für den Namen ignoriert.
 

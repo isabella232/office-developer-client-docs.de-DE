@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm6446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9d853c99fad322e17e8bbfd49cef27c14be33ffe
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 372803779767ea6fdc12b4e10b5dde231ce101fc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875513"
 ---
 # <a name="runmenucommand-macro-action"></a>AusführenMenübefehl-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Sie können die **AusführenMenübefehl** -Aktion verwenden, um einen integrierten Microsoft Access-Befehl auszuführen.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250306(v=office.15)
 ms:contentKeyID: 48548935
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f3c5d05c958a30f1ec5782a5dce0dd66ccd5dad4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9c362e87f3e962586c2bd821bd6facb35966a77f
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25472990"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886837"
 ---
-# <a name="using-bookmarks"></a>Verwenden von Lesezeichen
+# <a name="using-bookmarks"></a>Using Bookmarks
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Beim Navigieren im **Recordset** -Objekt ist es oft hilfreich, wenn Sie direkt zu einem bestimmten Datensatz zurückkehren können, ohne dass Sie einen Bildlauf in allen Datensätzen ausführen und Werte vergleichen müssen. Wenn Sie z. B. mit der **Find** -Methode nach einem Datensatz suchen, die Suche aber keine Datensätze zurückgibt, wird automatisch das Ende des **Recordset** -Objekts angezeigt. Wenn Lesezeichen von Ihrem Anbieter unterstützt werden, können Sie mithilfe von Lesezeichen die Position markieren, bevor Sie die **Find** -Methode verwenden, damit Sie zu dieser Position zurückkehren können. Ein Lesezeichen ist ein Wert vom Datentyp **Variant**, mit dem ein Datensatz in einem **Recordset** -Objekt eindeutig identifiziert wird.
 

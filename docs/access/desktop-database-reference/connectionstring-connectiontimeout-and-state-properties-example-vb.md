@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: ConnectionString-, ConnectionTimeout- und State Eigenschaften Beispiel) (VB) TOCTitle: ConnectionString-, ConnectionTimeout- und State Eigenschaften Beispiel) (VB) === Titel: ConnectionString-, ConnectionTimeout-, und State-Eigenschaft (Beispiel) (VB) TOCTitle: ConnectionString-, ConnectionTimeout- und State-Eigenschaften (Beispiel) (VB)
->>>>>>> Master Ms:assetid: abdd0262-8647-d545-60e0-13f99337df06 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15) Ms:contentKeyID: 48546984 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ConnectionString-, ConnectionTimeout- und State-Eigenschaft (Beispiel) (VB)
+TOCTitle: ConnectionString, ConnectionTimeout, and State properties example (VB)
+ms:assetid: abdd0262-8647-d545-60e0-13f99337df06
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249796(v=office.15)
+ms:contentKeyID: 48546984
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bf919661410ae207295c6b400938a5a534e39978
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25888531"
 ---
-
-<<<<<<< Kopf
 # <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a>ConnectionString-, ConnectionTimeout- und State-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="connectionstring-connectiontimeout-and-state-properties-example-vb"></a>ConnectionString-, ConnectionTimeout- und State-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht verschiedene Verwendungsmöglichkeiten der ConnectionString-Eigenschaft, um ein Connection-Objekt zu öffnen. Außerdem wird mithilfe der ConnectionTimeout-Eigenschaft ein Verbindungstimeout festgelegt, und mithilfe der State-Eigenschaft wird der Status der Verbindungen überprüft. Zum Ausführen dieser Prozedur ist die GetState-Funktion erforderlich.
 

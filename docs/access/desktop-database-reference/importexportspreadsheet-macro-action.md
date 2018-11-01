@@ -10,17 +10,17 @@ f1_keywords:
 - vbaac10.chm31446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4693cbe643ab34431f7920564e704808c1b0f73b
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 78819ba2a82bf2fc9ab5c39300d06c1acdda80bc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875805"
 ---
 # <a name="importexportspreadsheet-macro-action"></a>ImportExportSpreadsheet-Makroaktion
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der **ImportExportSpreadsheet** -Aktion können Sie Daten zwischen der aktuellen Access-Datenbank (.mdb oder .accdb) oder einem Access-Projekt (.adp) und einer Tabellenkalkulationsdatei importieren oder exportieren. Sie können auch die Daten in einer Microsoft Excel-Tabellenkalkulation mit der aktuellen Microsoft Access-Datenbank verknüpfen. Bei einer verknüpften Tabellenkalkulation können Sie die Tabellenkalkulationsdaten mit Access anzeigen und bearbeiten, während trotzdem uneingeschränkter Zugriff auf die Daten aus Ihrem Excel-Tabellenkalkulationsprogramm möglich ist. Sie können auch eine Verknüpfung mit Daten in einer Lotus-1-2-3-Tabellenkalkulationsdatei herstellen, diese Daten sind jedoch in Access schreibgeschützt. .
 

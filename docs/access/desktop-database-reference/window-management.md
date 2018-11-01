@@ -6,27 +6,27 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn124489(v=office.15)
 ms:contentKeyID: 52072113
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7791af942f2079aa13a5afecdf95f71f3adaf666
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 44d12efee957fe6b89c0f34ab558db11e79c77f2
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25474430"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25886305"
 ---
 # <a name="window-management"></a>Window Management
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 
-  - [FensterSchließen-Makroaktion](closewindow-macro-action.md)
+  - [Fensterschließen-Makroaktion](closewindow-macro-action.md)
 
-  - [MaximierenFenster-Makroaktion](maximizewindow-macro-action.md)
+  - [Maximierenfenster-Makroaktion](maximizewindow-macro-action.md)
 
-  - [MoveAndSizeWindow Macro Action](moveandsizewindow-macro-action.md)
+  - [Verschiebenundgrößeändernfenster-Makroaktion](moveandsizewindow-macro-action.md)
 
-  - [MinimierenFenster-Makroaktion](minimizewindow-macro-action.md)
+  - [Minimierenfenster-Makroaktion](minimizewindow-macro-action.md)
 
   - [WiederherstellenFenster-Makroaktion](restorewindow-macro-action.md)
 

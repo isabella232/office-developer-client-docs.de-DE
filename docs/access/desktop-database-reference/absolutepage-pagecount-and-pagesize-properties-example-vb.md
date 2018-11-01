@@ -1,22 +1,25 @@
 ---
-<<<<<<< HEAD-Titel: AbsolutePage-, PageCount- und PageSize Eigenschaften Beispiel) (VB) TOCTitle: AbsolutePage-, PageCount- und PageSize Eigenschaften Beispiel) (VB) Ms:assetid: bd13fb6c-8ee4-7475-ef2d-9067e30918de Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249911(v=office.15) MS:contentKeyID: 48547426 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VB)
+TOCTitle: AbsolutePage, PageCount, and PageSize properties example (VB)
+ms:assetid: bd13fb6c-8ee4-7475-ef2d-9067e30918de
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249911(v=office.15)
+ms:contentKeyID: 48547426
+ms.date: 10/17/2018
+mtps_version: v=office.15
+ms.openlocfilehash: 0b98557f4c5906c5d1952f635c9967e3b280cbae
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25885073"
 ---
-
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vb"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VB)
-=== Titel: AbsolutePage-, PageCount- und PageSize-Eigenschaften (Beispiel) (VB) TOCTitle: AbsolutePage-, PageCount- und PageSize-Eigenschaften (Beispiel) (VB) Ms:assetid: bd13fb6c-8ee4-7475-ef2d-9067e30918de Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249911(v=office.15) Ms:contentKeyID: 48547426 MS.Date: 10/17/2018 Mtps_version: Office. 15
----
-
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vb"></a>AbsolutePage-, PageCount- und PageSize-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
-<a name="-head"></a><<<<<<< Kopf
-=======
 In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt.
 
->>>>>>> master
 ```vb 
  
 'BeginAbsolutePageVB 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192067(v=office.15)
 ms:contentKeyID: 48543910
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 308568676f4ccd929441f9b82ca3b928763ffdb7
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: e58b422165a1530a8ceb65298f0cac81d558c2a6
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475909"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870226"
 ---
 # <a name="recordsetname-property-dao"></a>Recordset.Name Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt den Namen des angegebenen Objekts zurück. Schreibgeschützter **String**-Wert.
 

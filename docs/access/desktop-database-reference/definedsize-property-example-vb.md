@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: DefinedSize Eigenschaft Beispiel) (VB) TOCTitle: DefinedSize Eigenschaft Beispiel) (VB) === Titel: DefinedSize-Eigenschaft (Beispiel) (VB) TOCTitle: DefinedSize-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 1bad5efa-dd23-b70d-c078-85a3be0729f1 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248957(v=office.15) Ms:contentKeyID: 48543551 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: DefinedSize-Eigenschaft (Beispiel) (VB)
+TOCTitle: DefinedSize property example (VB)
+ms:assetid: 1bad5efa-dd23-b70d-c078-85a3be0729f1
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248957(v=office.15)
+ms:contentKeyID: 48543551
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 365d9ec4328164798e0499bcd85555cd0d56d740
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25868371"
 ---
-
-<<<<<<< Kopf
-# <a name="definedsize-property-example-vb"></a>DefinedSize-Eigenschaft (VB-Beispiel)
-=======
 # <a name="definedsize-property-example-vb"></a>DefinedSize-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der DefinedSizeEigenschaft eines Column-Objekts veranschaulicht. Der Code legt die Größe der FirstName-Spalte der Employees-Tabelle in der Northwind-Datenbank neu fest. Dann wird die Änderung der Werte des FirstName-Felds eines Recordsets basierend auf der Employees-Tabelle angezeigt. Standardmäßig wird das FirstName-Feld durch Leerstellen aufgefüllt, nachdem die DefinedSize-Eigenschaft erneut festgelegt wurde.
 

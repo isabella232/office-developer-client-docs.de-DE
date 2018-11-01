@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248840(v=office.15)
 ms:contentKeyID: 48543163
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6849961c0428079227348e1bb68c6ceb8dfd73a1
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 0f8be72ea28d9814890bcaf193c1175725fcfe1d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869499"
 ---
 # <a name="adox-enumerated-constants"></a>ADOX-Aufzählungskonstanten
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Zur Unterstützung des Debugprozesses listen die ADOX-Aufzählungskonstanten einen Wert für jede Konstante auf. Dieser Wert ist jedoch nur eine Empfehlung und kann von einer ADOX­-Version zur anderen variieren. Der Code sollte ausschließlich auf dem Namen, nicht auf dem tatsächlichen Wert der Aufzählungskonstanten basieren.
 
@@ -43,7 +43,7 @@ Die folgenden Aufzählungskonstanten werden definiert.
 <td><p>Gibt an, ob Datensätze mit Nullwerten indiziert werden.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="columnattributesenum.md">Wird</a></p></td>
+<td><p><a href="columnattributesenum.md">ColumnAttributesEnum</a></p></td>
 <td><p>Gibt die Eigenschaften einer <strong>Spalte</strong> an.</p></td>
 </tr>
 <tr class="even">
@@ -55,7 +55,7 @@ Die folgenden Aufzählungskonstanten werden definiert.
 <td><p>Gibt an, wie Objekte Berechtigungen erben, die mit <strong>SetPermissions</strong> festgelegt sind.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="keytypeenum.md">Diesen zurück</a></p></td>
+<td><p><a href="keytypeenum.md">KeyTypeEnum</a></p></td>
 <td><p>Gibt den Typ des <strong>Schlüssel</strong>-Objekts an: primär, fremd oder eindeutig.</p></td>
 </tr>
 <tr class="odd">
@@ -67,11 +67,11 @@ Die folgenden Aufzählungskonstanten werden definiert.
 <td><p>Gibt die Rechte oder Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="ruleenum.md">Diesen zurück</a></p></td>
+<td><p><a href="ruleenum.md">RuleEnum</a></p></td>
 <td><p>Gibt die zu befolgende Regel beim Löschen eines <strong>Key</strong>-Objekts an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="sortorderenum.md">Diesen zurück</a></p></td>
+<td><p><a href="sortorderenum.md">SortOrderEnum</a></p></td>
 <td><p>Gibt die Sortierfolge für eine indizierte Spalte an.</p></td>
 </tr>
 </tbody>

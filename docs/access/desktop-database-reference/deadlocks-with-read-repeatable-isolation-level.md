@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249165(v=office.15)
 ms:contentKeyID: 48544342
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: de936da2772b809199d3890140683afd5ef01659
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 9a5fbf4686fc5b8bffc984b4b483f1ee506eb7dd
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25473237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882987"
 ---
 # <a name="deadlocks-with-read-repeatable-isolation-level"></a>Deadlocks bei der Isolationsstufe "Repeatable Read"
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Wenn ein benutzerdefiniertes Geschäftsobjekt die Isolationsstufe Repeatable Read für den Zugriff auf einen Computer mit SQL Server verwendet und das Geschäftsobjekt gleichzeitig von zwei Clients aufgerufen wird, die eine Abfrage senden und die gleiche Transaktion aktualisieren, ist ein Deadlock möglich. Mit RDS (Remote Data Service) kann zwar für einen der Vorgänge ein Timeout eintreten, um den Deadlock aufzulösen, aber für diesen Client schlägt die Aktualisierung fehl.
 

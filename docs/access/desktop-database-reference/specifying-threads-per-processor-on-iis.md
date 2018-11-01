@@ -6,21 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248898(v=office.15)
 ms:contentKeyID: 48543344
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5041eb32397fc9a234d0e4a0fff622f31b56a0a5
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 4212b1c2bcf89badedbc7a3b7d4dc72a879a95c7
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603357"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871983"
 ---
 # <a name="specifying-threads-per-processor-on-iis"></a>Angeben der Threads pro Prozessor in IIS
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
-<<<<<<< HEAD beim Verwenden von RDS mit Internetinformationsdienste (IIS) 4.0 oder höher, kann die Anzahl der Threads pro Prozessor durch Bearbeiten der Registrierung auf dem Webserver gesteuert werden. Die Anzahl von Threads pro Prozessor kann sich auf die Leistung bei hohem Datenverkehr oder bei niedrigem Datenverkehr mit umfangreichen Abfragen auswirken. Testen Sie verschiedene Werte, um die besten Ergebnisse zu erzielen.
-=== Beim Verwenden von RDS mit Internetinformationsdienste (IIS) 4.0 oder höher, kann die Anzahl der Threads pro Prozessor durch Bearbeiten der Registrierung auf dem Webserver gesteuert werden. Die Anzahl von Threads pro Prozessor kann sich auf die Leistung bei hohem Datenverkehr oder bei niedrigem Datenverkehr mit umfangreichen Abfragen auswirken. Testen Sie verschiedene Werte, um die besten Ergebnisse zu erzielen.
->>>>>>> master
+Wenn Sie RDS mit Internetinformationsdienste (IIS) 4.0 oder höher verwenden, kann die Anzahl der Threads pro Prozessor durch Bearbeiten der Registrierung auf dem Webserver gesteuert werden. Die Anzahl von Threads pro Prozessor kann sich auf die Leistung bei hohem Datenverkehr oder bei niedrigem Datenverkehr mit umfangreichen Abfragen auswirken. Testen Sie verschiedene Werte, um die besten Ergebnisse zu erzielen.
 
 Die zum Ermitteln und Ändern des Standardwerts dieser Einstellung verwendete Methode hängt von der Konfiguration des Servers mit IIS 4.0 ab.
 

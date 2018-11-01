@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Version-Eigenschaft Beispiel) (VJ++) TOCTitle: Version-Eigenschaft Beispiel) (VJ++) === Titel: Version-Eigenschaft Beispiel) (VJ++) TOCTitle: Version-Eigenschaft Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: c4f007b8-177d-967e-7f3b-a8945264099b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249963(v=office.15) Ms:contentKeyID: 48547600 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Version-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: Version property example (VJ++)
+ms:assetid: c4f007b8-177d-967e-7f3b-a8945264099b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249963(v=office.15)
+ms:contentKeyID: 48547600
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 185321327ed1718784fe6227f259347c0f8bb17d
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889777"
 ---
-
-<<<<<<< Kopf
 # <a name="version-property-example-vj"></a>Version-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="version-property-example-vj"></a>Version-Eigenschaft Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mit der [Version](version-property-ado.md)-Eigenschaft eines [Connection](connection-object-ado.md)-Objekts die aktuelle ADO-Version angezeigt. Außerdem werden verschiedene dynamische Eigenschaften verwendet, um Folgendes anzuzeigen:
 

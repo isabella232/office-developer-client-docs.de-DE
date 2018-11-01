@@ -6,16 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837318(v=office.15)
 ms:contentKeyID: 48548970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1b7e5634256a3f0acf7dc058f36c5a7d9d0581b0
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 5109b7f512782a8038cd197b74cc669dc5256569
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475339"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25871395"
 ---
 # <a name="field2iscomplex-property-dao"></a>Field2.IsComplex Property (DAO)
 
-**Betrifft**: Access 2013 | Office 2013 
+**Betrifft**: Access 2013, Office 2013 
 
 Gibt einen **Boolean**-Wert zurück, der angibt, ob das angegebene Feld ein mehrwertiger Datentyp ist. Schreibgeschützt.
 

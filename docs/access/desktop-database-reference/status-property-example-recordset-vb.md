@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Status--Eigenschaft (Beispiel) (Recordset) (VB) TOCTitle: Status--Eigenschaft (Beispiel) (Recordset) (VB) === Titel: Status--Eigenschaft (Beispiel) (Recordset) (VB) TOCTitle: Status--Eigenschaft (Beispiel) (Recordset) (VB)
->>>>>>> Master Ms:assetid: 97ddd465-88ed-81dd-3714-1841f1c87611 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249677(v=office.15) Ms:contentKeyID: 48546476 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Status-Eigenschaft (Beispiel) (Recordset) (VB)
+TOCTitle: Status property example (Recordset) (VB)
+ms:assetid: 97ddd465-88ed-81dd-3714-1841f1c87611
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249677(v=office.15)
+ms:contentKeyID: 48546476
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 23e444b2b10946c815cb25b0ed8aedb7533b89c1
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869064"
 ---
-
-<<<<<<< Kopf
 # <a name="status-property-example-recordset-vb"></a>Status-Eigenschaft (Beispiel) (Recordset) (VB)
-=======
-# <a name="status-property-example-recordset-vb"></a>Status--Eigenschaft (Beispiel) (Recordset) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die [Status](status-property-ado-recordset.md)-Eigenschaft verwendet, um die Datensätze anzuzeigen, die in einem Batchvorgang geändert wurden, bevor eine Batchaktualisierung ausgeführt wurde.
 

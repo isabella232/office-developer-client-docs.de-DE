@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: PrimaryKey- und Unique Eigenschaften Beispiel) (VB) TOCTitle: PrimaryKey- und Unique Eigenschaften Beispiel) (VB) === Titel: PrimaryKey- und Unique-Eigenschaften (Beispiel) (VB) TOCTitle: PrimaryKey- und Unique Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15) Ms:contentKeyID: 48546137 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: PrimaryKey- und Unique-Eigenschaft (VB-Beispiel)
+TOCTitle: PrimaryKey and Unique properties example (VB)
+ms:assetid: 888f1a35-b883-2449-3b70-103e5116b29f
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249597(v=office.15)
+ms:contentKeyID: 48546137
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: fa534aa53151361c194b68124b0386ab521f1f30
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878066"
 ---
-
-<<<<<<< Kopf
 # <a name="primarykey-and-unique-properties-example-vb"></a>PrimaryKey- und Unique-Eigenschaft (VB-Beispiel)
-=======
-# <a name="primarykey-and-unique-properties-example-vb"></a>PrimaryKey- und Unique-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird die Verwendung der [PrimaryKey](primarykey-property-adox.md)- und der [Unique](unique-property-adox.md)-Eigenschaft eines [Index](index-object-adox.md)-Objekts veranschaulicht. Der Code erstellt eine neue Tabelle mit zwei Spalten. Die **PrimaryKey** - und die **Unique** -Eigenschaft werden verwendet, um eine Spalte als Primärschlüssel festzulegen, für den keine doppelten Werte zulässig sind.
 

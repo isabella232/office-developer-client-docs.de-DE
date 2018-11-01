@@ -1,15 +1,21 @@
 ---
-<<<<<<< HEAD-Titel: IndexNulls-Eigenschaft Beispiel) (VB) TOCTitle: IndexNulls-Eigenschaft Beispiel) (VB) === Titel: IndexNulls-Eigenschaft (Beispiel) (VB) TOCTitle: IndexNulls-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: 69b5661c-931e-3a1c-d60e-96a0f93b9494 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249414(v=office.15) Ms:contentKeyID: 48545417 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: IndexNulls-Eigenschaft (VB-Beispiel)
+TOCTitle: IndexNulls property example (VB)
+ms:assetid: 69b5661c-931e-3a1c-d60e-96a0f93b9494
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249414(v=office.15)
+ms:contentKeyID: 48545417
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: c1baa2169b2d953f7a390dee44f9841a4c7ecfa4
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869848"
 ---
+# <a name="indexnulls-property-example-vb"></a>IndexNulls-Eigenschaft (VB-Beispiel)
 
-<<<<<<< Kopf
-# <a name="indexnulls-property-example-vb"></a>IndexNulls Property Example (VB)
-=======
-# <a name="indexnulls-property-example-vb"></a>IndexNulls-Eigenschaft (Beispiel) (VB)
->>>>>>> master
-
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [IndexNulls](indexnulls-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md). Der Code erstellt einen neuen Index und legt den Wert der **IndexNulls** basierend auf der Benutzereingabe (aus einem Listenfeld mit dem Namen List1). Anschließend wird der **Index** der **Employees** - [Tabelle](table-object-adox.md) in der *Northwind* - [Katalog](catalog-object-adox.md)angefügt. Der neue **Index** auf ein [Recordset-Objekt](recordset-object-ado.md) basierend auf der **Employees** -Tabelle angewendet wird, und das **Recordset-Objekt** wird geöffnet. Ein neuer Datensatz wird der **Employees** -Tabelle mit dem Wert **Null** im indizierten Feld hinzugefügt. Gibt an, ob dieser neue Datensatz angezeigt wird, hängt von der Einstellung der **IndexNulls** -Eigenschaft ab.
 

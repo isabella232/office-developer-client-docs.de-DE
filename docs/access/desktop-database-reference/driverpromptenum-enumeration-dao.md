@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197361(v=office.15)
 ms:contentKeyID: 48546266
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c20542c89537f16f20c9d3e30cbc14ce115bf4d6
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: a69594ff30b92a32cf9ba95424ea7616df922725
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25476036"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25867440"
 ---
 # <a name="driverpromptenum-enumeration-dao"></a>DriverPromptEnum Enumeration (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Gibt an, ob und zu welchem Zeitpunkt der Benutzer aufgefordert wird, eine Verbindung herzustellen.
 

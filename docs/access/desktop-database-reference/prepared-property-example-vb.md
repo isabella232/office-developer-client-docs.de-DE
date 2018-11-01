@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: vorbereitet Eigenschaft Beispiel) (VB) TOCTitle: vorbereitet Eigenschaft Beispiel) (VB) === Titel: Prepared-Eigenschaft (Beispiel) (VB) TOCTitle: Prepared-Eigenschaft (Beispiel) (VB)
->>>>>>> Master Ms:assetid: d7332052-bf2e-f7d4-eb06-59ff8d68f812 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250081(v=office.15) Ms:contentKeyID: 48548000 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Prepared-Eigenschaft (Beispiel) (VB)
+TOCTitle: Prepared property example (VB)
+ms:assetid: d7332052-bf2e-f7d4-eb06-59ff8d68f812
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250081(v=office.15)
+ms:contentKeyID: 48548000
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 8c5e139ddfae11a92ccc5cbcea4ca509c8cdeecc
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25875427"
 ---
-
-<<<<<<< Kopf
 # <a name="prepared-property-example-vb"></a>Prepared-Eigenschaft (Beispiel) (VB)
-=======
-# <a name="prepared-property-example-vb"></a>Prepared-Eigenschaft (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Dieses Beispiel veranschaulicht die [Prepared](prepared-property-ado.md)-Eigenschaft, indem zwei [Command](command-object-ado.md)-Objekte geöffnet werden: ein vorbereitetes und ein nicht vorbereitetes Objekt.
 

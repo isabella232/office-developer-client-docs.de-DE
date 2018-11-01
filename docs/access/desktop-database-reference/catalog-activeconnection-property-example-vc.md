@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Katalog ActiveConnection-Eigenschaft (VC++-Beispiel) TOCTitle: Katalog ActiveConnection-Eigenschaft (VC++-Beispiel) === Titel: Katalog ActiveConnection-Eigenschaft (VC++-Beispiel) TOCTitle: Katalog ActiveConnection Beispiel-Eigenschaft (VC++)
->>>>>>> Master Ms:assetid: 0e72ff1c-b894-a440-67cf-bba091e7cb8b Ms:mtpsurl: https://msdn.microsoft.com/library/JJ248861(v=office.15) Ms:contentKeyID: 48543246 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: ActiveConnection-Eigenschaft (Catalog) (VC++-Beispiel)
+TOCTitle: Catalog ActiveConnection property example (VC++)
+ms:assetid: 0e72ff1c-b894-a440-67cf-bba091e7cb8b
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ248861(v=office.15)
+ms:contentKeyID: 48543246
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 55faf280d56b90f6033aaba700d3b9fa7a7e2724
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25869190"
 ---
-
-<<<<<<< Kopf
 # <a name="catalog-activeconnection-property-example-vc"></a>ActiveConnection-Eigenschaft (Catalog) (VC++-Beispiel)
-=======
-# <a name="catalog-activeconnection-property-example-vc"></a>Katalog ActiveConnection-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Durch das Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Einstellung auf eine gültige, offene Verbindung wird der Katalog geöffnet. Über einen geöffneten Katalog können Sie auf die Schemaobjekte zugreifen, die in dem jeweiligen Katalog enthalten sind.
 

@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248836(v=office.15)
 ms:contentKeyID: 48543153
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 81302ba1c18645a51913cb92179f4b61f3c32ce4
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 10f2eb3d46bc0091f8ebadb5c6aea6efe4eb6758
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475196"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25881363"
 ---
 # <a name="fabricating-hierarchical-recordsets"></a>Erstellen hierarchischer Recordsets
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Beispiel wird veranschaulicht, wie ein hierarchisches Recordset ohne eine zugrunde liegende Datenquelle bereitzustellen, mit der Datenstrukturierungssyntax Spalten für übergeordnete und untergeordnete untergeordneten **Recordset-Objekte**definiert.
 

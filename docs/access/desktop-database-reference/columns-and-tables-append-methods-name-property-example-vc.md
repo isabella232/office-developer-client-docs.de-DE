@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel) TOCTitle: Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel) === Titel: Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel) TOCTitle: Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel)
->>>>>>> Master Ms:assetid: 6586aaed-2556-1d33-c1ab-135a598f7d13 Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15) Ms:contentKeyID: 48545322 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel)
+TOCTitle: Columns and Tables Append Methods, Name property example (VC++)
+ms:assetid: 6586aaed-2556-1d33-c1ab-135a598f7d13
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249392(v=office.15)
+ms:contentKeyID: 48545322
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: f592b4015d073c05fcd050350bec4ebafdb6eb54
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25882203"
 ---
-
-<<<<<<< Kopf
-# <a name="columns-and-tables-append-methods-name-property-example-vc"></a>Append-Methode (Columns und Tables), Name-Eigenschaft (VC++-Beispiel)
-=======
 # <a name="columns-and-tables-append-methods-name-property-example-vc"></a>Spalten und Tabellen Append Methoden, Name-Eigenschaft (VC++-Beispiel)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Code wird das Erstellen einer neuen Tabelle veranschaulicht.
 

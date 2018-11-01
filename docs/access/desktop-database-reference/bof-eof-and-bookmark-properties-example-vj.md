@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: BOF-, EOF- und Bookmark Eigenschaft (Beispiel) (VJ++) TOCTitle: BOF-, EOF- und Bookmark Eigenschaft (Beispiel) (VJ++) === Titel: BOF-, EOF- und Bookmark Eigenschaften) (Beispiel) (VJ++) TOCTitle: BOF-, EOF- und Bookmark-Eigenschaften Beispiel) (VJ++)
->>>>>>> Master Ms:assetid: 68e6fcc5-506a-9064-3e7c-9ce3d64371aa Ms:mtpsurl: https://msdn.microsoft.com/library/JJ249412(v=office.15) Ms:contentKeyID: 48545400 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: BOF-, EOF- und Bookmark-Eigenschaft (Beispiel) (VJ++)
+TOCTitle: BOF, EOF, and Bookmark properties example (VJ++)
+ms:assetid: 68e6fcc5-506a-9064-3e7c-9ce3d64371aa
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ249412(v=office.15)
+ms:contentKeyID: 48545400
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: bc00c8a4102287fb2488d8ffa99607521a91021b
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25870429"
 ---
-
-<<<<<<< Kopf
 # <a name="bof-eof-and-bookmark-properties-example-vj"></a>BOF-, EOF- und Bookmark-Eigenschaft (Beispiel) (VJ++)
-=======
-# <a name="bof-eof-and-bookmark-properties-example-vj"></a>BOF-, EOF- und Bookmark Eigenschaften) (Beispiel) (VJ++)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 In diesem Beispiel wird mithilfe der Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) eine Nachricht angezeigt, falls ein Benutzer versucht, über den ersten oder letzten Datensatz eines [Recordset](recordset-object-ado.md)-Objekts hinaus zu navigieren. Mit der [Bookmark](bookmark-property-ado.md)-Eigenschaft kann der Benutzer einen Datensatz in einem **Recordset** -Objekt kennzeichnen und später zu diesem zurückkehren.
 

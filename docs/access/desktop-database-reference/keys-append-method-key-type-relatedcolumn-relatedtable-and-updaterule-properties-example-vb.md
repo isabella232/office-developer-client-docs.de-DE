@@ -1,16 +1,22 @@
 ---
-<<<<<<< HEAD-Titel: Keys-Methode Append, Schlüsseltyp, RelatedColumn-Eigenschaften Beispiel) (VB) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule Eigenschaften Beispiel) (VB) === Titel: Schlüssel Append-Methode, Schlüssel Typ, RelatedColumn-Eigenschaft (Beispiel) (VB) TOCTitle: Schlüssel Append-Methode, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)
->>>>>>> Master Ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae Ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15) Ms:contentKeyID: 48547871 ms.date: 09/18/2015 Mtps_version: Office. 15
+title: Keys-Methode Append, Key-Typ RelatedColumn-Eigenschaft (Beispiel) (VB)
+TOCTitle: Keys Append Method, Key Type, RelatedColumn, RelatedTable and UpdateRule properties example (VB)
+ms:assetid: d1b0508d-ab2c-eece-061c-09c67ea9ecae
+ms:mtpsurl: https://msdn.microsoft.com/library/JJ250047(v=office.15)
+ms:contentKeyID: 48547871
+ms.date: 09/18/2015
+mtps_version: v=office.15
+ms.openlocfilehash: 7cec32ff7229540344d471e6c66b96270bb5a197
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25878031"
 ---
-
-<<<<<<< Kopf
-# <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Append-Methode (Keys), Key Type-, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaft (VB-Beispiel)
-=======
 # <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vb"></a>Keys-Methode Append, Schlüsseltyp, RelatedColumn-, RelatedTable- und UpdateRule-Eigenschaften (Beispiel) (VB)
->>>>>>> master
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Im folgenden Code wird das Erstellen eines neuen Fremdschlüssels veranschaulicht. Es wird davon ausgegangen, dass zwei Tabellen (**Customers** und **Orders**) vorhanden sind.
 

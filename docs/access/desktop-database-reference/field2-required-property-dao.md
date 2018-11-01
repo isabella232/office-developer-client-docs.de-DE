@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196390(v=office.15)
 ms:contentKeyID: 48545848
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 048c4dc46f03af213dee090b839dfcc67d4f48ac
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 6e6d4963ed10f2bf886a7445dfa05f1a3fcef460
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475216"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872942"
 ---
 # <a name="field2required-property-dao"></a>Field2.Required Property (DAO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
 Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, ob ein **Field2**-Objekt einen Nicht-Nullwert erfordert.
@@ -50,19 +50,19 @@ Die Verfügbarkeit der **Required**-Eigenschaft hängt vom Objekt ab, in dem die
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>QueryDef</strong>-Objekt</p></td>
+<td><p><strong>QueryDef</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Recordset</strong>-Objekt</p></td>
+<td><p><strong>Recordset</strong> -Objekt</p></td>
 <td><p>Schreibgeschützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Relation</strong>-Objekt</p></td>
+<td><p><strong>Relation</strong> -Objekt</p></td>
 <td><p>Nicht unterstützt</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TableDef</strong>-Objekt</p></td>
+<td><p><strong>TableDef</strong> -Objekt</p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 </tbody>

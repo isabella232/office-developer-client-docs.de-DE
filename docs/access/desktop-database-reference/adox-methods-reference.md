@@ -6,24 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249672(v=office.15)
 ms:contentKeyID: 48546461
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1e2870d26f6feae3c73bf267f675957816957642
-ms.sourcegitcommit: 19aca09c5812cfb98b68b5d4604dcaa814479df7
+ms.openlocfilehash: 54b001dfb97060972514d246c28d8ac6afe66d02
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25475559"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25879291"
 ---
 # <a name="adox-methods-reference"></a>ADOX Methods Reference
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 
   - [ADOX-Methoden ](adox-methods.md)
 
   - [Append-Methode (ADOX Columns)](append-method-adox-columns.md)
 
-  - [Append-Method (ADOX Groups)](append-method-adox-groups.md)
+  - [Append-Methode (ADOX Groups)](append-method-adox-groups.md)
 
   - [Append-Methode (ADOX Indexes)](append-method-adox-indexes.md)
 

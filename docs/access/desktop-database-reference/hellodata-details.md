@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250105(v=office.15)
 ms:contentKeyID: 48548103
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c25197f0a8a45487f93f56543f73a2beeea062ff
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: 2fb5171e8b0a0b23f46ff5b4667b4c2b0ff4df34
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603155"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25889840"
 ---
-# <a name="hellodata-details"></a>Informationen zu HelloData
+# <a name="hellodata-details"></a>HelloData Details
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
 
 Mit der Anwendung HelloData werden die grundlegenden Vorgänge einer typischen ADO-Anwendung ausgeführt: Abrufen, Überprüfen, Bearbeiten und Aktualisieren von Daten. Klicken Sie beim Starten der Anwendung auf die erste Schaltfläche (Daten abrufen). Damit wird die GetData()-Subroutine ausgeführt.
 
@@ -28,9 +28,7 @@ Weisen Sie eine Fehlerbehandlungsroutine mithilfe der Visual Basic-Anweisung **O
 
 Weisen Sie nach dem Öffnen der Verbindung einer Variablen (sSQL) eine SQL-Zeichenfolge zu. Instanziieren Sie ein neues **Recordset** -Objekt m\_oRecordset1. Öffnen Sie in der nächsten Codezeile das **Recordset-Objekt** über das vorhandene **Connection**, übergeben. Öffnen Sie in der nächsten Codezeile das **Recordset-Objekt** über das vorhandene **Connection**, sSQL als die Quelle des **Recordset-Objekts**übergeben. Unterstützen Sie ADO festlegen, dass die SQL-Zeichenfolge, die Sie als Quelle für das **Recordset-Objekt** übergeben haben Textdefinition eines Befehls, indem Sie **AdCmdText** im letzten Arguments an das **Recordset** **Open** -Methode übergeben wird. Diese Zeile auch die **LockType** und **CursorType** zugeordnete **Recordset-Objekt**.
 
-<<<<<<< HEAD die nächste Codezeile wird die **MarshalOptions** -Eigenschaft **AdMarshalModifiedOnly**gleich. **MarshalOptions** gibt an, welche Datensätze auf die mittlere Ebene (oder den Webserver) gemarshallt werden müssen. Weitere Informationen zum Marshalling finden Sie in der Dokumentation zu COM. Wenn eine clientseitige Cursor **AdMarshalModifiedOnly** mit ([CursorLocation](cursorlocation-property-ado.md) = **AdUseClient**), nur die Datensätze, die auf dem Client geändert wurden in der mittleren Ebene zurückgeschrieben werden. Wenn **MarshalOptions** auf **adMarshalModifiedOnly** festgelegt wird, wird möglicherweise die Leistung verbessert, da weniger Zeilen gemarshallt werden müssen.
-=== Die nächste Codezeile wird die **MarshalOptions** -Eigenschaft gleich **AdMarshalModifiedOnly**. **MarshalOptions** gibt an, welche Datensätze in der mittleren Ebene (oder Webserver) gemarshallt werden sollen. Weitere Informationen zum Marshalling finden Sie in der Dokumentation zu COM. Wenn eine clientseitige Cursor **AdMarshalModifiedOnly** mit ([CursorLocation](cursorlocation-property-ado.md) = **AdUseClient**), nur die Datensätze, die auf dem Client geändert wurden in der mittleren Ebene zurückgeschrieben werden. Wenn **MarshalOptions** auf **adMarshalModifiedOnly** festgelegt wird, wird möglicherweise die Leistung verbessert, da weniger Zeilen gemarshallt werden müssen.
->>>>>>> master
+Mit der nächsten Codezeile wird die **MarshalOptions** -Eigenschaft mit **adMarshalModifiedOnly** gleichgesetzt. **MarshalOptions** gibt an, welche Datensätze in der mittleren Ebene (oder Webserver) gemarshallt werden sollen. Weitere Informationen zum Marshalling finden Sie in der Dokumentation zu COM. Wenn eine clientseitige Cursor **AdMarshalModifiedOnly** mit ([CursorLocation](cursorlocation-property-ado.md) = **AdUseClient**), nur die Datensätze, die auf dem Client geändert wurden in der mittleren Ebene zurückgeschrieben werden. Wenn **MarshalOptions** auf **adMarshalModifiedOnly** festgelegt wird, wird möglicherweise die Leistung verbessert, da weniger Zeilen gemarshallt werden müssen.
 
 Trennen Sie anschließend das **Recordset** -Objekt, indem Sie die zugehörige **ActiveConnection** -Eigenschaft auf **Nothing** setzen. Weitere Informationen finden Sie unter [Trennen und Wiederherstellen der Verbindung für das Recordset-Objekt](disconnecting-and-reconnecting-the-recordset.md) in "Kapitel 5: Aktualisieren und Speichern von Daten".
 

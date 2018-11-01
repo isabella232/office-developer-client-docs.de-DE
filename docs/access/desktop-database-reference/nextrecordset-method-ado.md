@@ -6,17 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250051(v=office.15)
 ms:contentKeyID: 48547887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e412fbcb083e4cf5acae363ef05ce11ad9754215
-ms.sourcegitcommit: a49b77f4c8cec69f90656a86f0872cf34c35968e
+ms.openlocfilehash: ec6b6677e0de89b22f3c35009edcbc05684d10ce
+ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25603399"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25872599"
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset-Methode (ADO)
 
 
-**Betrifft**: Access 2013 | Office 2013
+**Betrifft**: Access 2013, Office 2013
  
 
 Löscht das aktuelle [Recordset](recordset-object-ado.md)-Objekt, und gibt das nächste **Recordset** -Objekt zurück, indem sie durch eine Reihe von Befehlen wechselt.
@@ -25,11 +25,7 @@ Löscht das aktuelle [Recordset](recordset-object-ado.md)-Objekt, und gibt das n
 
 Festlegen von *recordset2* = *recordset1*. NextRecordset (*RecordsAffected* )
 
-<<<<<<< Kopf
 ## <a name="return-value"></a>Rückgabewert
-=======
-## <a name="return-value"></a>Rückgabewert
->>>>>>> master
 
 Gibt ein **Recordset**-Objekt zurück. Im Syntaxmodell können Sie für *recordset1* und *recordset2* dasselbe **Recordset**-Objekt angeben oder separate Objekte verwenden. Wenn Sie separate **Recordset**-Objekte verwenden und die **ActiveConnection**-Eigenschaft auf das ursprüngliche **Recordset**-Objekt (*recordset1*) zurücksetzen, nachdem **NextRecordset** aufgerufen wurde, wird ein Fehler generiert.
 
@@ -47,9 +43,7 @@ Gibt ein **Recordset**-Objekt zurück. Im Syntaxmodell können Sie für *records
 
 ## <a name="remarks"></a>Hinweise
 
-<<<<<<< HEAD verwenden die **NextRecordset** -Methode, um die Ergebnisse des nächsten Befehls in einer zusammengesetzten befehlsanweisung oder einer gespeicherten Prozedur, die mehrere Ergebnisse zurückgibt zurückzugeben. Wenn Sie ein **Recordset** -Objekt basierend auf einer befehlsanweisung zusammengesetzter öffnen (beispielsweise "Wählen Sie \* FROM Tabelle1; SELECT \* aus Tabelle2 ") mithilfe der [Execute](https://msdn.microsoft.com/library/jj248785\(v=office.15\)) -Methode auf einen [Befehl](command-object-ado.md) oder die [Open](open-method-ado-recordset.md) -Methode für ein **Recordset-Objekt**, ADO führt nur den ersten Befehl und die Ergebnisse zu *Recordset-Objekt*zurückgibt. Rufen Sie den Zugriff auf die Ergebnisse der nachfolgenden Befehle in der Anweisung die **NextRecordset** -Methode.
-=== Verwenden Sie die **NextRecordset** -Methode, um die Ergebnisse des nächsten Befehls in einer zusammengesetzten befehlsanweisung oder einer gespeicherten Prozedur, die mehrere Ergebnisse zurückgibt zurückzugeben. Wenn Sie ein **Recordset** -Objekt basierend auf einer befehlsanweisung zusammengesetzter öffnen (beispielsweise "Wählen Sie \* FROM Tabelle1; SELECT \* aus Tabelle2 ") mithilfe der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode auf einen [Befehl](command-object-ado.md) oder die [Open](open-method-ado-recordset.md) -Methode für ein **Recordset-Objekt**, ADO führt nur den ersten Befehl und die Ergebnisse zu *Recordset-Objekt*zurückgibt. Rufen Sie den Zugriff auf die Ergebnisse der nachfolgenden Befehle in der Anweisung die **NextRecordset** -Methode.
->>>>>>> master
+Verwenden Sie die **NextRecordset** -Methode, um die Ergebnisse des nächsten Befehls in einer zusammengesetzten befehlsanweisung oder einer gespeicherten Prozedur, die mehrere Ergebnisse zurückgibt zurückzugeben. Wenn Sie ein **Recordset** -Objekt basierend auf einer befehlsanweisung zusammengesetzter öffnen (beispielsweise "Wählen Sie \* FROM Tabelle1; SELECT \* aus Tabelle2 ") mithilfe der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode auf einen [Befehl](command-object-ado.md) oder die [Open](open-method-ado-recordset.md) -Methode für ein **Recordset-Objekt**, ADO führt nur den ersten Befehl und die Ergebnisse zu *Recordset-Objekt*zurückgibt. Rufen Sie den Zugriff auf die Ergebnisse der nachfolgenden Befehle in der Anweisung die **NextRecordset** -Methode.
 
 Solange es weitere Ergebnisse sind und das **Recordset-Objekt** mit der zusammengesetzten Anweisungen nicht getrennt oder über Prozess hinweg gemarshallt, wird die **NextRecordset** -Methode weiterhin **Recordset** -Objekte zurück. Wenn ein Zeilen zurückgebende Befehl erfolgreich ausgeführt wird, aber keine Datensätze zurückgibt, wird das zurückgegebene **Recordset** -Objekt geöffnet, aber leer sein. In diesem Fall testen Sie, überprüfen Sie, dass die Eigenschaften [BOF](bof-eof-properties-ado.md) und [EOF](bof-eof-properties-ado.md) beide auf **"true"** sind. Wenn ein Zeilen zurückgebende Befehl erfolgreich ausgeführt wird, wird das zurückgegebene **Recordset** -Objekt geschlossen werden die können Sie überprüfen, ob Sie testen die [State](state-property-ado.md) -Eigenschaft für das **Recordset**. Wenn keine weitere Ergebnisse vorhanden sind, wird die *Recordset-Objekt* auf *Nothing*festgelegt.
 
