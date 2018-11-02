@@ -1,26 +1,27 @@
 ---
 title: ADOX-Aufzählungskonstanten
-TOCTitle: ADOX Enumerated Constants
+TOCTitle: ADOX enumerated constants
 ms:assetid: 0ad716a0-8801-50cb-024a-85c308c65c78
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248840(v=office.15)
 ms:contentKeyID: 48543163
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f8be72ea28d9814890bcaf193c1175725fcfe1d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 5ee99f8795dce4587d795b2cea4ac70a74c5eaa7
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869499"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910810"
 ---
 # <a name="adox-enumerated-constants"></a>ADOX-Aufzählungskonstanten
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Zur Unterstützung des Debugprozesses listen die ADOX-Aufzählungskonstanten einen Wert für jede Konstante auf. Dieser Wert ist jedoch nur eine Empfehlung und kann von einer ADOX­-Version zur anderen variieren. Der Code sollte ausschließlich auf dem Namen, nicht auf dem tatsächlichen Wert der Aufzählungskonstanten basieren.
 
 Die folgenden Aufzählungskonstanten werden definiert.
+
+<br/>
 
 <table>
 <colgroup>

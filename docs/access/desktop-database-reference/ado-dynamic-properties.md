@@ -1,20 +1,19 @@
 ---
 title: Dynamische ADO-Eigenschaften
-TOCTitle: ADO Dynamic Properties
+TOCTitle: ADO dynamic properties
 ms:assetid: a908bc52-2cb0-89c7-a997-2cde93477e4d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249782(v=office.15)
 ms:contentKeyID: 48546915
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a35bf0cd62db8f635540bfd1ccd65995b198b46
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ab0d84931389aecb5bd495c884baa9163c52d4a6
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877548"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910922"
 ---
 # <a name="ado-dynamic-properties"></a>Dynamische ADO-Eigenschaften
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -24,12 +23,18 @@ Der [Dynamische ADO-Eigenschaftenindex](ado-dynamic-property-index.md) stellt ei
 
 Die folgenden dynamischen Eigenschaften sind von besonderem Interesse und werden ebenfalls in den oben genannten Quellen dokumentiert. Die spezielle Funktionalität mit ADO ist in den unten aufgelisteten ADO-Hilfethemen dokumentiert.
 
+<br/>
+
 <table>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>Dynamische Eigenschaft</th>
+<th>Beschreibung</th>
+</tr>
 <tr class="odd">
 <td><p><a href="optimize-property-dynamic-ado.md">Optimieren der Leistung von</a></p></td>
 <td><p>Es wird angegeben, ob für dieses Feld ein Index erstellt werden soll.</p></td>
@@ -48,7 +53,7 @@ Die folgenden dynamischen Eigenschaften sind von besonderem Interesse und werden
 </tr>
 <tr class="odd">
 <td><p><a href="unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md">Unique Table, Unique Schema, Unique Catalog</a></p></td>
-<td><p><strong>Unique Table</strong> – gibt den Namen der Basistabelle, für das Aktualisierungen, einfügungen und Löschvorgänge zulässig sind. <strong>Unique Schema</strong> – gibt an, das Schema oder der Name des Besitzers der Tabelle. <strong>Unique Catalog</strong> – gibt den Katalog oder Name der Datenbank, die die Tabelle enthält.</p></td>
+<td><p><strong>Unique Table</strong> – gibt den Namen der Basistabelle, für das Aktualisierungen, einfügungen und Löschvorgänge zulässig sind.<br/><br/><strong>Unique Schema</strong> – gibt an, das Schema oder der Name des Besitzers der Tabelle.<br/><br/><strong>Unique Catalog</strong> – gibt den Katalog oder Name der Datenbank, die die Tabelle enthält.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="update-resync-property-dynamic-ado.md">Update Resync</a></p></td>
@@ -56,4 +61,6 @@ Die folgenden dynamischen Eigenschaften sind von besonderem Interesse und werden
 </tr>
 </tbody>
 </table>
+
+<br/>
 

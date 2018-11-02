@@ -1,24 +1,25 @@
 ---
 title: ADO-Aufzählungskonstanten
-TOCTitle: ADO Enumerated Constants
+TOCTitle: ADO enumerated constants
 ms:assetid: 7c983acd-8b38-dc3c-6704-46e649ebb7d6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249522(v=office.15)
 ms:contentKeyID: 48545841
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3e9944138dcdca49f33ca293a9bdf41d88d86e9e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 0e6a6dee6d2882b1d7d1c277584ca8ba46d6db28
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882308"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910950"
 ---
 # <a name="ado-enumerated-constants"></a>ADO-Aufzählungskonstanten
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Zur Unterstützung beim Debuggen wird in den ADO-Aufzählungen für jede Konstante ein Wert aufgelistet. Dieser Wert ist jedoch lediglich ein Hinweis und kann zwischen ADO-Versionen geändert werden. Der Code sollte nur vom Namen, nicht vom tatsächlichen Wert, der einzelnen aufgezählten Konstanten abhängen.
+
+<br/>
 
 <table>
 <colgroup>
@@ -26,6 +27,10 @@ Zur Unterstützung beim Debuggen wird in den ADO-Aufzählungen für jede Konstan
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>Enumerierte Konstante</th>
+<th>Beschreibung</th>
+</tr>
 <tr class="odd">
 <td><p><a href="adcprop-asyncthreadpriority-enum.md">ADCPROP_ASYNCTHREADPRIORITY_ENUM</a></p></td>
 <td><p>Gibt für ein RDS-<strong>Recordset</strong>-Objekt die Ausführungspriorität des asynchronen Threads an, der Daten abruft.</p></td>

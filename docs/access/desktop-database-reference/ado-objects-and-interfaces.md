@@ -1,26 +1,27 @@
 ---
 title: ADO-Objekte und -Schnittstellen
-TOCTitle: ADO Objects and Interfaces
+TOCTitle: ADO objects and interfaces
 ms:assetid: bebf4a80-8b6e-c43c-4138-897055cc60d3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249927(v=office.15)
 ms:contentKeyID: 48547471
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: efab7ce2980393282ee1f96295206e712fcbd15f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fa301974b4b417d09b0439b3970ee366eeb5d06e
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882182"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910727"
 ---
 # <a name="ado-objects-and-interfaces"></a>ADO-Objekte und -Schnittstellen
 
-
 **Betrifft**: Access 2013, Office 2013
 
-Die Beziehungen zwischen diesen Objekten werden im ADO-Objektmodell dargestellt.
+Die Beziehungen zwischen diesen Objekten werden im Objektmodell von ActiveX Data Objects (ADO) dargestellt.
 
-Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADO-Auflistungen](ado-collections.md) oder in einem auflistungsspezifischen Thema.
+Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweise kann ein [Error](error-object-ado.md)-Objekt in einer [Errors](errors-collection-ado.md)-Auflistung enthalten sein. Weitere Informationen finden Sie unter [ADO-Auflistungen](ado-collections.md) oder einer bestimmten Sammlung Thema.
+
+<br/>
 
 <table>
 <colgroup>
@@ -28,6 +29,10 @@ Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweis
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>Objekt</th>
+<th>Beschreibung</th>
+</tr>
 <tr class="odd">
 <td><p><a href="adorecordconstruction-interface-ado.md">ADORecordConstruction</a></p></td>
 <td><p>Ein <strong>Record</strong>-ADO-Objekt wird aus einem <strong>Row</strong>-OLE DB-Objekt in einer C/C++-Anwendung erstellt.</p></td>
@@ -35,6 +40,14 @@ Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweis
 <tr class="even">
 <td><p><a href="adorecordsetconstruction-interface-ado.md">ADORecordsetConstruction</a></p></td>
 <td><p>Ein <strong>Recordset</strong>-ADO-Objekt wird aus einem <strong>Rowset</strong>-OLE DB-Objekt in einer C/C++-Anwendung erstellt.</p></td>
+</tr>
+<tr class="odd">
+<td><p><a href="error-object-ado.md">Command</a></p></td>
+<td><p>Definiert einen spezifischen Befehl, den Sie in einer Datenquelle ausführen wollen.</p></td>
+</tr>
+<tr class="even">
+<td><p><a href="field-object-ado.md">Connection</a></p></td>
+<td><p>Stellt eine offene Verbindung zu einer Datenquelle dar.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="error-object-ado.md">Fehler</a></p></td>
@@ -66,4 +79,6 @@ Jedes Objekt kann in der entsprechenden Auflistung enthalten sein. Beispielsweis
 </tr>
 </tbody>
 </table>
+
+<br/>
 

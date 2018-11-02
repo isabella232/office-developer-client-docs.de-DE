@@ -1,38 +1,30 @@
 ---
-title: Codebeispiele für ActiveX Data Objects (ADO)
-TOCTitle: ADO Code Examples
+title: Codebeispiele ActiveX Data Objects (ADO)
+TOCTitle: ADO code examples
 ms:assetid: ef019dc7-bb60-a989-f0eb-2ba0644b3fde
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250213(v=office.15)
 ms:contentKeyID: 48548572
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e6f090712f997aafe4d412bc0dcd91073cb9ff72
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 73442cb461fcd44e7c2c87d81902ab4ef1836a1f
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874944"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910756"
 ---
 # <a name="ado-code-examples"></a>ADO-Codebeispiele
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Objekte, -Methoden, -Eigenschaften und -Ereignisse verwenden.
 
-
 > [!NOTE]
 > [!HINWEIS] Fügen Sie das gesamte Codebeispiel in den Code-Editor ein. Möglicherweise wird das Beispiel nicht richtig ausgeführt, wenn Teilbeispiele verwendet werden oder die Absatzformatierung verloren geht.
 
-
-
-  - [ADO-Codebeispiele in Microsoft Visual Basic](ado-code-examples-in-microsoft-visual-basic.md)
-
-  - [ADO-Codebeispiele in Microsoft Visual Basic Scripting Edition](ado-code-examples-in-microsoft-visual-basic-scripting-edition.md)
-
-  - [ADO-Codebeispiele in Microsoft Visual C++](ado-code-examples-in-microsoft-visual-c.md)
-
-  - [ADO-Codebeispiele in Microsoft Visual J++](ado-code-examples-in-microsoft-visual-j.md)
-
-  - [ADO-Codebeispiele in Microsoft JScript](ado-code-examples-in-microsoft-jscript.md)
+- [ADO-Codebeispiele in Microsoft Visual Basic](ado-code-examples-in-microsoft-visual-basic.md)
+- [ADO-Codebeispiele in Microsoft Visual Basic Scripting Edition](ado-code-examples-in-microsoft-visual-basic-scripting-edition.md)
+- [ADO-Codebeispiele in Microsoft Visual C++](ado-code-examples-in-microsoft-visual-c.md)
+- [ADO-Codebeispiele in Microsoft Visual J++](ado-code-examples-in-microsoft-visual-j.md)
+- [ADO-Codebeispiele in Microsoft JScript](ado-code-examples-in-microsoft-jscript.md)
 

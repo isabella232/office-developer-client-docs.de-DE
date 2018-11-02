@@ -1,22 +1,23 @@
 ---
 title: ADO MD-Objekte (Access PC-Datenbank-Referenz)
-TOCTitle: ADO MD Objects
+TOCTitle: ADO MD objects
 ms:assetid: 13501e44-70b6-1036-a8b7-c276f187e4f4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248907(v=office.15)
 ms:contentKeyID: 48543366
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e09676b222e7199b7f2f9f7520ebf3d5436f9a3c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fca73b9e8a77e102ad694dde8fd9759b20c1fcaf
+ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875133"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25910838"
 ---
 # <a name="ado-md-objects"></a>ADO MD-Objekte
 
-
 **Betrifft**: Access 2013, Office 2013
+
+<br/>
 
 <table>
 <colgroup>
@@ -24,6 +25,10 @@ ms.locfileid: "25875133"
 <col style="width: 50%" />
 </colgroup>
 <tbody>
+<tr class="even">
+<th>Objekt</th>
+<th>Beschreibung</th>
+</tr>
 <tr class="odd">
 <td><p><a href="axis-object-ado-md.md">Achse</a></p></td>
 <td><p>Stellt eine Positions- oder Filterachse einer Zellmenge dar, die ausgewählte Elemente einer oder mehrerer Dimensionen enthält.</p></td>
@@ -67,8 +72,11 @@ ms.locfileid: "25875133"
 </tbody>
 </table>
 
+<br/>
 
 Das **Catalog** -Objekt ist außerdem mit einem ADO- **Connection** -Objekt verbunden, das in der Standard-ADO-Bibliothek enthalten ist:
+
+<br/>
 
 <table>
 <colgroup>
@@ -89,6 +97,7 @@ Das **Catalog** -Objekt ist außerdem mit einem ADO- **Connection** -Objekt verb
 </tbody>
 </table>
 
+<br/>
 
 Es können viele ADO MD-Objekte in einer entsprechenden Auflistung enthalten sein. Ein [CubeDef](cubedef-object-ado-md.md)-Objekt kann beispielsweise in einer [CubeDefs](cubedefs-collection-ado-md.md)-Auflistung eines **Catalog** -Objekts enthalten sein. Weitere Informationen hierzu finden Sie unter [ADO MD-Auflistungen](ado-md-collections.md).
 
