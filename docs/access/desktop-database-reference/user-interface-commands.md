@@ -1,38 +1,28 @@
 ---
-title: User Interface Commands
-TOCTitle: User Interface Commands
+title: Benutzeroberflächenbefehle
+TOCTitle: User interface commands
 ms:assetid: e52bac01-4784-4c20-b387-d18228008104
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125921(v=office.15)
 ms:contentKeyID: 52074792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 588409ff32369a9733bb35ce3800461d116ba764
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 728f1b27632908006d7492f946b3172612dbc55c
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867398"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927641"
 ---
-# <a name="user-interface-commands"></a>User Interface Commands
-
+# <a name="user-interface-commands"></a>Benutzeroberflächenbefehle
 
 **Betrifft**: Access 2013, Office 2013
 
-
-
-  - [HinzufügenMenü-Makroaktion](addmenu-macro-action.md)
-
-  - [WechselnZu-Makroaktion](browseto-macro-action.md)
-
-  - [SperrenNavigationsbereich-Makroaktion](locknavigationpane-macro-action.md)
-
-  - [Abfrageergebnis-Makroaktion](messagebox-macro-action.md)
-
-  - [Navigierenzu-Makroaktion](navigateto-macro-action.md)
-
-  - [FestlegenAngezeigteKategorien-Makroaktion](setdisplayedcategories-macro-action.md)
-
-  - [SetzenMenüelement-Makroaktion](setmenuitem-macro-action.md)
-
-  - [EinblendenSymbolleiste-Makroaktion](showtoolbar-macro-action.md)
+- [AddMenu-Makroaktion](addmenu-macro-action.md)
+- [BrowseTo-Makroaktion](browseto-macro-action.md)
+- [LockNavigationPane-Makroaktion](locknavigationpane-macro-action.md)
+- [MessageBox-Makroaktion](messagebox-macro-action.md)
+- [NavigateTo-Makroaktion](navigateto-macro-action.md)
+- [SetDisplayedCategories-Makroaktion](setdisplayedcategories-macro-action.md)
+- [SetMenuItem-Makroaktion](setmenuitem-macro-action.md)
+- [EinblendenSymbolleiste-Makroaktion](showtoolbar-macro-action.md)
 

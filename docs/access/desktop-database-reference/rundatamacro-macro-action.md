@@ -1,6 +1,6 @@
 ---
-title: AusführenDatenmakro-Makroaktion
-TOCTitle: RunDataMacro Macro Action
+title: RunDataMacro-Makroaktion
+TOCTitle: RunDataMacro macro action
 ms:assetid: fe4ac2f4-7851-7797-ce91-5f2dd3ba4d22
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837269(v=office.15)
 ms:contentKeyID: 48548933
@@ -10,14 +10,14 @@ f1_keywords:
 - vbaac10.chm168493
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6777ae05d2ab7455016df834d17abb3406a2d710
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c1d540b909a2ac5741719470f5632e34205806ff
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889924"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927984"
 ---
-# <a name="rundatamacro-macro-action"></a>AusführenDatenmakro-Makroaktion
+# <a name="rundatamacro-macro-action"></a>RunDataMacro-Makroaktion
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -49,7 +49,7 @@ Die **AusführenDatenmakro** -Aktion kann mit dem folgenden Argument verwendet w
 
 ## <a name="remarks"></a>Hinweise
 
-Die **AusführenDatenmakro** -Aktion können Sie in Makros, benannten Datenmakros und den folgenden Makroereignissen verwenden: **[Makroereignis "Nach Löschvorgang"](after-delete-macro-event.md)**, **[Makroereignis "Nach Eingabe"](after-insert-macro-event.md)** und **[Makroereignis "Nach Aktualisierung"](after-update-macro-event.md)**.
+Sie können die **AusführenDatenmakro** -Aktion in Makros, benannten Datenmakros und den folgenden makroereignissen verwenden: **[makroereignis nach Löschvorgang](after-delete-macro-event.md)**, **[Makro-Ereignis nach Eingabe](after-insert-macro-event.md)** und **[Makro-Ereignis nach Aktualisierung](after-update-macro-event.md)**.
 
 Der Name des Datenmakros muss die Tabelle enthalten, mit der sie (beispielsweise **Comments.AddComment**, nicht nur **AddComment**) verbunden ist.
 

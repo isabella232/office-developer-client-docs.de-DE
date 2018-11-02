@@ -1,6 +1,6 @@
 ---
-title: Makroereignis 'Nach Löschvorgang'
-TOCTitle: After Delete Macro Event
+title: Makroereignis "Nach Löschvorgang"
+TOCTitle: After Delete macro event
 ms:assetid: ecf9e6d4-345f-9b78-eb36-bd526e5df09b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836323(v=office.15)
 ms:contentKeyID: 48548527
@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm15155
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b180acb99ab2ac406a7b60fdecf8aff5d63eb71f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 943f16c5bb1f1525c8da36938fa6beb2e6f71444
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869113"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25929797"
 ---
 # <a name="after-delete-macro-event"></a>Makroereignis "Nach Löschvorgang"
 
@@ -82,7 +82,7 @@ Die folgenden Makrobefehle verwenden, können das Ereignis **Nach Löschvorgang*
 </tr>
 <tr class="odd">
 <td><p>Programmablauf</p></td>
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Makroblock</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">Wenn...Dann...Sonst-Makroblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -98,43 +98,43 @@ Die folgenden Makrobefehle verwenden, können das Ereignis **Nach Löschvorgang*
 </tr>
 <tr class="odd">
 <td><p>Datenblock</p></td>
-<td><p><a href="lookuprecord-data-block.md">LookupRecord-Makroaktion</a></p></td>
+<td><p><a href="lookuprecord-data-block.md">NachschlagenDatensatz-Datenblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="cancelrecordchange-macro-action.md">Abbrechendatensatzänderung-Makroaktion</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="clearmacroerror-macro-action.md">Löschenmakrofehler-Makroaktion</a></p></td>
+<td><p><a href="clearmacroerror-macro-action.md">ClearMacroError-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="deleterecord-macro-action.md">DatensatzLöschen-Makroaktion</a></p></td>
+<td><p><a href="deleterecord-macro-action.md">DeleteRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="exitforeachrecord-macro-action.md">BeendenFürJedenDatensatz-Makroaktion</a></p></td>
+<td><p><a href="exitforeachrecord-macro-action.md">ExitForEachRecord-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="logevent-macro-action.md">Protokollierenereignis-Makroaktion</a></p></td>
+<td><p><a href="logevent-macro-action.md">LogEvent-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="onerror-macro-action.md">BeiFehler-Makroaktion</a></p></td>
+<td><p><a href="onerror-macro-action.md">OnError-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="raiseerror-macro-action.md">Auslösenfehler-Makroaktion</a></p></td>
+<td><p><a href="raiseerror-macro-action.md">RaiseError-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="rundatamacro-macro-action.md">AusführenDatenmakro-Makroaktion</a></p></td>
+<td><p><a href="rundatamacro-macro-action.md">RunDataMacro-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="sendemail-macro-action.md">SendenEMail-Makroaktion</a></p></td>
+<td><p><a href="sendemail-macro-action.md">SendEmail-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
@@ -142,15 +142,15 @@ Die folgenden Makrobefehle verwenden, können das Ereignis **Nach Löschvorgang*
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="setlocalvar-macro-action.md">FestlegenLokaleVar-Makroaktion</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="stopallmacros-macro-action.md">StoppAlleMakros-Makroaktion</a></p></td>
+<td><p><a href="stopallmacros-macro-action.md">StopAllMacros-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="stopmacro-macro-action.md">StoppMakro-Makroaktion</a></p></td>
+<td><p><a href="stopmacro-macro-action.md">StopMacro-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

@@ -1,17 +1,17 @@
 ---
 title: BearbeitenDatensatz-Datenblock
-TOCTitle: EditRecord Data Block
+TOCTitle: EditRecord data block
 ms:assetid: fe9f55eb-d7ed-1914-65a9-fa2fcb332b98
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837277(v=office.15)
 ms:contentKeyID: 48548940
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9c4d5a5a1565aeda41e5a52127e9f82b5304e686
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c2b3499d7b2a779739dc965e6f0ca35ebab369ea
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876883"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25930882"
 ---
 # <a name="editrecord-data-block"></a>BearbeitenDatensatz-Datenblock
 
@@ -56,7 +56,7 @@ Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="cancelrecordchange-macro-action.md">Abbrechendatensatzänderung-Makroaktion</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="comment-macro-statement.md">Kommentar-Makroanweisung</a></p></td>
@@ -65,13 +65,13 @@ Nach der **BearbeitenDatensatz** -Anweisung können Sie einen Block von Befehlen
 <td><p><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-Makroanweisung</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-makroanweisung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="setlocalvar-macro-action.md">FestlegenLokaleVar-Makroaktion</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

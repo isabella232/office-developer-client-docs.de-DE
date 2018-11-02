@@ -1,19 +1,19 @@
 ---
-title: Field2 Members (DAO)
+title: Field2-Member (DAO)
 TOCTitle: Field2 Members
 ms:assetid: 27829bbc-8b4e-c7eb-f29b-bcbef341f9fd
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191913(v=office.15)
 ms:contentKeyID: 48543839
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 915a733d59d938e77f32a051b267b5e26bddf6a0
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: cf4fb6b98782b3a3f5951a6f0aa42e300f0c2620
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877121"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25931337"
 ---
-# <a name="field2-members-dao"></a>Field2 Members (DAO)
+# <a name="field2-members-dao"></a>Field2-Member (DAO)
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -101,7 +101,7 @@ Ein Field2-Objekt stellt Daten mit einem gemeinsamen Datentyp in einer Spalte un
 <td><p>Legt den Standardwert eines <strong>Field2</strong>-Objekts fest oder gibt den Wert zurück. Bei einem <strong>Field2</strong>-Objekt, das der <strong><a href="fields-collection-dao.md">Fields</a></strong> -Auflistung noch nicht angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="field2-expression-property-dao.md">Expression</a></strong></p></td>
+<td><p><strong><a href="field2-expression-property-dao.md">Ausdruck</a></strong></p></td>
 <td><p>Lese-/Schreibzugriff</p></td>
 </tr>
 <tr class="odd">

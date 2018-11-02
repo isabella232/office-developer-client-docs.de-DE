@@ -1,6 +1,6 @@
 ---
-title: ÖffnenVisualBasicModul-Makroaktion
-TOCTitle: OpenVisualBasicModule Macro Action
+title: OpenVisualBasicModule-Makroaktion
+TOCTitle: OpenVisualBasicModule macro action
 ms:assetid: 26eb31c8-3c65-b17d-46cd-c8967434a7a0
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191906(v=office.15)
 ms:contentKeyID: 48543826
@@ -10,14 +10,14 @@ f1_keywords:
 - vbaac10.chm50916
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: bfb2238bf81215acef7026bb878dca9d1dbceb61
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 7d3d2d5f76e087e428bc9211805c524ebe5247d9
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869883"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25930448"
 ---
-# <a name="openvisualbasicmodule-macro-action"></a>ÖffnenVisualBasicModul-Makroaktion
+# <a name="openvisualbasicmodule-macro-action"></a>OpenVisualBasicModule-Makroaktion
 
 
 **Betrifft**: Access 2013, Office 2013
