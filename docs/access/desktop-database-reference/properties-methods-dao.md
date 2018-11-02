@@ -1,28 +1,28 @@
 ---
-title: Properties Methods (DAO)
+title: Eigenschaften, Methoden (DAO)
 TOCTitle: Methods
 ms:assetid: dc2e4609-7903-4c85-bc3a-7f2c7ee58ad1
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn125759(v=office.15)
 ms:contentKeyID: 52074632
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3fb596b353d3af1b8176ca4624e86286c7bcaa32
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 7ad63112583ec8eb29bb7aa21584c75a8b289492
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888888"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922524"
 ---
-# <a name="properties-methods-dao"></a>Properties Methods (DAO)
+# <a name="properties-methods-dao"></a>Eigenschaften, Methoden (DAO)
 
 
 **Betrifft**: Access 2013, Office 2013
 
 
 
-  - [Properties.Append Method (DAO)](properties-append-method-dao.md)
+  - [Properties.Append-Methode (DAO)](properties-append-method-dao.md)
 
-  - [Properties.Delete Method (DAO)](properties-delete-method-dao.md)
+  - [Properties.Delete-Methode (DAO)](properties-delete-method-dao.md)
 
-  - [Properties.Refresh Method (DAO)](properties-refresh-method-dao.md)
+  - [Properties.Refresh-Methode (DAO)](properties-refresh-method-dao.md)
 
