@@ -1,5 +1,5 @@
 ---
-title: Recordset.RecordsetType Property (DAO)
+title: Recordset.RecordsetType-Eigenschaft (DAO)
 TOCTitle: RecordsetType Property
 ms:assetid: a66d4043-08cc-ead1-f9ff-efc7d7ea21bf
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff821178(v=office.15)
@@ -10,69 +10,28 @@ f1_keywords:
 - vbaac10.chm13361
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ea371a29a37e4d8ffb235f08b1a7f9b2abb42418
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e521c4de48f45d080a3b201ac431b2d7da14bc22
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880334"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25923224"
 ---
-# <a name="recordsetrecordsettype-property-dao"></a><span data-ttu-id="91350-102">Recordset.RecordsetType Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="91350-102">Recordset.RecordsetType Property (DAO)</span></span>
+# <a name="recordsetrecordsettype-property-dao"></a><span data-ttu-id="85ad3-102">Recordset.RecordsetType-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="85ad3-102">Recordset.RecordsetType property (DAO)</span></span>
 
-<span data-ttu-id="91350-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="91350-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="85ad3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="85ad3-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="91350-p101">Sie können mit der **RecordsetType** -Eigenschaft angeben, welche Art von Recordset für ein Formular bereit gestellt wird. **Byte** -Wert mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="91350-p101">You can use the **RecordsetType** property to specify what kind of recordset is made available to a form. Read/write **Byte**.</span></span>
+<span data-ttu-id="85ad3-p101">Sie können mit der **RecordsetType** -Eigenschaft angeben, welche Art von Recordset für ein Formular bereit gestellt wird. **Byte** -Wert mit Lese-/Schreibzugriff.</span><span class="sxs-lookup"><span data-stu-id="85ad3-p101">You can use the **RecordsetType** property to specify what kind of recordset is made available to a form. Read/write **Byte**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="91350-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="91350-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="85ad3-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="85ad3-106">Syntax</span></span>
 
-<span data-ttu-id="91350-107">*Ausdruck* . RecordsetType</span><span class="sxs-lookup"><span data-stu-id="91350-107">*expression* .RecordsetType</span></span>
+<span data-ttu-id="85ad3-107">*Ausdruck* . RecordsetType</span><span class="sxs-lookup"><span data-stu-id="85ad3-107">*expression* .RecordsetType</span></span>
 
-<span data-ttu-id="91350-108">*expression*  Eine Variable, die ein **Form**-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="91350-108">*expression* A variable that represents a **Form** object.</span></span>
+<span data-ttu-id="85ad3-108">*expression*  Eine Variable, die ein **Form**-Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="85ad3-108">*expression* A variable that represents a **Form** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="91350-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="91350-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="85ad3-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="85ad3-109">Remarks</span></span>
 
-<span data-ttu-id="91350-110">Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einer Microsoft Access-Datenbank.</span><span class="sxs-lookup"><span data-stu-id="91350-110">The **RecordsetType** property uses the following settings in a Microsoft Access database.</span></span>
-
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p><span data-ttu-id="91350-111">Einstellung</span><span class="sxs-lookup"><span data-stu-id="91350-111">Setting</span></span></p></th>
-<th><p><span data-ttu-id="91350-112">Recordset-Typ</span><span class="sxs-lookup"><span data-stu-id="91350-112">Type of Recordset</span></span></p></th>
-<th><p><span data-ttu-id="91350-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="91350-113">Description</span></span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><span data-ttu-id="91350-114">0</span><span class="sxs-lookup"><span data-stu-id="91350-114">0</span></span></p></td>
-<td><p><span data-ttu-id="91350-115">Dynaset</span><span class="sxs-lookup"><span data-stu-id="91350-115">Dynaset</span></span></p></td>
-<td><p><span data-ttu-id="91350-116">(Standardeinstellung) Sie können gebundene Steuerelemente auf der Basis einer einzigen Tabelle oder von Tabellen mit einer 1:1-Beziehung bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="91350-116">(Default) You can edit bound controls based on a single table or tables with a one-to-one relationship.</span></span> <span data-ttu-id="91350-117">Für auf Grundlage von Tabellen mit einer 1: n-Beziehung Felder gebundenen Steuerelemente, können nicht Sie Daten aus dem Feld Join bearbeiten, klicken Sie auf die &quot;eine&quot; Seite der Beziehung, es sei denn, Aktualisierungsweitergabe zwischen den Tabellen aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="91350-117">For controls bound to fields based on tables with a one-to-many relationship, you can't edit data from the join field on the &quot;one&quot; side of the relationship unless cascade update is enabled between the tables.</span></span></p></td>
-</tr>
-<tr class="even">
-<td><p><span data-ttu-id="91350-118">1</span><span class="sxs-lookup"><span data-stu-id="91350-118">1</span></span></p></td>
-<td><p><span data-ttu-id="91350-119">Dynaset (Unregelmäßige Aktualisierungen)</span><span class="sxs-lookup"><span data-stu-id="91350-119">Dynaset (Inconsistent Updates)</span></span></p></td>
-<td><p><span data-ttu-id="91350-120">Alle Tabellen und an ihre Felder gebundenen Steuerelemente können bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="91350-120">All tables and controls bound to their fields can be edited.</span></span></p></td>
-</tr>
-<tr class="odd">
-<td><p><span data-ttu-id="91350-121">2</span><span class="sxs-lookup"><span data-stu-id="91350-121">2</span></span></p></td>
-<td><p><span data-ttu-id="91350-122">Snapshot</span><span class="sxs-lookup"><span data-stu-id="91350-122">Snapshot</span></span></p></td>
-<td><p><span data-ttu-id="91350-123">Es können keine Tabellen oder an ihre Felder gebundenen Steuerelemente bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="91350-123">No tables or the controls bound to their fields can be edited.</span></span></p></td>
-</tr>
-</tbody>
-</table>
-
-
-
-> [!NOTE]
-> <span data-ttu-id="91350-124">[!HINWEIS] Wenn Sie vermeiden möchten, dass Daten in gebundenen Steuerelementen bearbeitet werden, wenn das Formular in der Formularansicht oder Datenblattansicht angezeigt wird, können Sie die **RecordsetType** -Eigenschaft auf 2 festlegen.</span><span class="sxs-lookup"><span data-stu-id="91350-124">If you don't want data in bound controls to be edited when a form is in Form view or Datasheet view, you can set the **RecordsetType** property to 2.</span></span>
-
-
-
-<span data-ttu-id="91350-125">Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einem Microsoft Access-Projekt (ADP).</span><span class="sxs-lookup"><span data-stu-id="91350-125">The **RecordsetType** property uses the following settings in a Microsoft Access project (.adp).</span></span>
+<span data-ttu-id="85ad3-110">Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einer Microsoft Access-Datenbank.</span><span class="sxs-lookup"><span data-stu-id="85ad3-110">The **RecordsetType** property uses the following settings in a Microsoft Access database.</span></span>
 
 <table>
 <colgroup>
@@ -82,21 +41,26 @@ ms.locfileid: "25880334"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="91350-126">Einstellung</span><span class="sxs-lookup"><span data-stu-id="91350-126">Setting</span></span></p></th>
-<th><p><span data-ttu-id="91350-127">Recordset-Typ</span><span class="sxs-lookup"><span data-stu-id="91350-127">Type of Recordset</span></span></p></th>
-<th><p><span data-ttu-id="91350-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="91350-128">Description</span></span></p></th>
+<th><p><span data-ttu-id="85ad3-111">Einstellung</span><span class="sxs-lookup"><span data-stu-id="85ad3-111">Setting</span></span></p></th>
+<th><p><span data-ttu-id="85ad3-112">Recordset-Typ</span><span class="sxs-lookup"><span data-stu-id="85ad3-112">Type of Recordset</span></span></p></th>
+<th><p><span data-ttu-id="85ad3-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="85ad3-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="91350-129">3</span><span class="sxs-lookup"><span data-stu-id="91350-129">3</span></span></p></td>
-<td><p><span data-ttu-id="91350-130">Snapshot</span><span class="sxs-lookup"><span data-stu-id="91350-130">Snapshot</span></span></p></td>
-<td><p><span data-ttu-id="91350-131">Es können keine Tabellen oder an ihre Felder gebundenen Steuerelemente bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="91350-131">No tables or the controls bound to their fields can be edited.</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-114">0</span><span class="sxs-lookup"><span data-stu-id="85ad3-114">0</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-115">Dynaset</span><span class="sxs-lookup"><span data-stu-id="85ad3-115">Dynaset</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-116">(Standardeinstellung) Sie können gebundene Steuerelemente auf der Basis einer einzigen Tabelle oder von Tabellen mit einer 1:1-Beziehung bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="85ad3-116">(Default) You can edit bound controls based on a single table or tables with a one-to-one relationship.</span></span> <span data-ttu-id="85ad3-117">Für auf Grundlage von Tabellen mit einer 1: n-Beziehung Felder gebundenen Steuerelemente, können nicht Sie Daten aus dem Feld Join bearbeiten, klicken Sie auf die &quot;eine&quot; Seite der Beziehung, es sei denn, Aktualisierungsweitergabe zwischen den Tabellen aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="85ad3-117">For controls bound to fields based on tables with a one-to-many relationship, you can't edit data from the join field on the &quot;one&quot; side of the relationship unless cascade update is enabled between the tables.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="91350-132">4</span><span class="sxs-lookup"><span data-stu-id="91350-132">4</span></span></p></td>
-<td><p><span data-ttu-id="91350-133">Aktualisierbarer Snapshot</span><span class="sxs-lookup"><span data-stu-id="91350-133">Updatable Snapshot</span></span></p></td>
-<td><p><span data-ttu-id="91350-134">(Standardeinstellung) Alle Tabellen und an ihre Felder gebundenen Steuerelemente können bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="91350-134">(Default) All tables and controls bound to their fields can be edited.</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-118">1</span><span class="sxs-lookup"><span data-stu-id="85ad3-118">1</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-119">Dynaset (Unregelmäßige Aktualisierungen)</span><span class="sxs-lookup"><span data-stu-id="85ad3-119">Dynaset (Inconsistent Updates)</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-120">Alle Tabellen und an ihre Felder gebundenen Steuerelemente können bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="85ad3-120">All tables and controls bound to their fields can be edited.</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><p><span data-ttu-id="85ad3-121">2</span><span class="sxs-lookup"><span data-stu-id="85ad3-121">2</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-122">Snapshot</span><span class="sxs-lookup"><span data-stu-id="85ad3-122">Snapshot</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-123">Es können keine Tabellen oder an ihre Felder gebundenen Steuerelemente bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="85ad3-123">No tables or the controls bound to their fields can be edited.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -104,17 +68,53 @@ ms.locfileid: "25880334"
 
 
 > [!NOTE]
-> <span data-ttu-id="91350-135">[!HINWEIS] Wenn die **RecordsetType** -Eigenschaft eines geöffneten Formulars oder Berichts geändert wird, führt dies zu einer automatischen Neuerstellung der Datensatzgruppe.</span><span class="sxs-lookup"><span data-stu-id="91350-135">Changing the **RecordsetType** property of an open form or report causes an automatic recreation of the recordset.</span></span>
+> <span data-ttu-id="85ad3-124">[!HINWEIS] Wenn Sie vermeiden möchten, dass Daten in gebundenen Steuerelementen bearbeitet werden, wenn das Formular in der Formularansicht oder Datenblattansicht angezeigt wird, können Sie die **RecordsetType** -Eigenschaft auf 2 festlegen.</span><span class="sxs-lookup"><span data-stu-id="85ad3-124">If you don't want data in bound controls to be edited when a form is in Form view or Datasheet view, you can set the **RecordsetType** property to 2.</span></span>
 
 
 
-<span data-ttu-id="91350-p103">Sie können Formulare erstellen, die auf mehreren zugrunde liegenden Tabellen basieren, an deren Felder Steuerelemente in den Formularen gebunden sind. Abhängig von der Einstellung der **RecordsetType** -Eigenschaft können Sie einschränken, welche gebundenen Steuerelemente bearbeitet werden können.</span><span class="sxs-lookup"><span data-stu-id="91350-p103">You can create forms based on multiple underlying tables with fields bound to controls on the forms. Depending on the **RecordsetType** property setting, you can limit which of these bound controls can be edited.</span></span>
+<span data-ttu-id="85ad3-125">Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einem Microsoft Access-Projekt (ADP).</span><span class="sxs-lookup"><span data-stu-id="85ad3-125">The **RecordsetType** property uses the following settings in a Microsoft Access project (.adp).</span></span>
 
-<span data-ttu-id="91350-p104">Zusätzlich zu dem von der **RecordsetType** -Eigenschaft bereitgestellten Bearbeitungssteuerelement verfügt jedes Steuerelement in einem Formular über eine **Locked** -Eigenschaft, mit der Sie angeben können, ob das Steuerelement und die ihm zugrunde liegenden Daten bearbeitet werden können. Ist die **Locked** -Eigenschaft auf Ja festgelegt, können die Daten nicht bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="91350-p104">In addition to the editing control provided by **RecordsetType**, each control on a form has a **Locked** property that you can set to specify whether the control and its underlying data can be edited. If the **Locked** property is set to Yes, you can't edit the data.</span></span>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p><span data-ttu-id="85ad3-126">Einstellung</span><span class="sxs-lookup"><span data-stu-id="85ad3-126">Setting</span></span></p></th>
+<th><p><span data-ttu-id="85ad3-127">Recordset-Typ</span><span class="sxs-lookup"><span data-stu-id="85ad3-127">Type of Recordset</span></span></p></th>
+<th><p><span data-ttu-id="85ad3-128">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="85ad3-128">Description</span></span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p><span data-ttu-id="85ad3-129">3</span><span class="sxs-lookup"><span data-stu-id="85ad3-129">3</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-130">Snapshot</span><span class="sxs-lookup"><span data-stu-id="85ad3-130">Snapshot</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-131">Es können keine Tabellen oder an ihre Felder gebundenen Steuerelemente bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="85ad3-131">No tables or the controls bound to their fields can be edited.</span></span></p></td>
+</tr>
+<tr class="even">
+<td><p><span data-ttu-id="85ad3-132">4</span><span class="sxs-lookup"><span data-stu-id="85ad3-132">4</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-133">Aktualisierbarer Snapshot</span><span class="sxs-lookup"><span data-stu-id="85ad3-133">Updatable Snapshot</span></span></p></td>
+<td><p><span data-ttu-id="85ad3-134">(Standardeinstellung) Alle Tabellen und an ihre Felder gebundenen Steuerelemente können bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="85ad3-134">(Default) All tables and controls bound to their fields can be edited.</span></span></p></td>
+</tr>
+</tbody>
+</table>
 
-## <a name="example"></a><span data-ttu-id="91350-140">Beispiel</span><span class="sxs-lookup"><span data-stu-id="91350-140">Example</span></span>
 
-<span data-ttu-id="91350-p105">Im folgenden Beispiel können Datensätze nur dann aktualisiert werden, wenn die Benutzer-ID ADMIN lautet. In diesem Codebeispiel wird die **RecordsetType**-Eigenschaft auf Snapshot festgelegt, wenn die öffentliche Variable gstrUserID nicht den Wert ADMIN hat.</span><span class="sxs-lookup"><span data-stu-id="91350-p105">In the following example, only if the user ID is ADMIN can records be updated. This code sample sets the **RecordsetType** property to Snapshot if the public variable gstrUserID value is not ADMIN.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="85ad3-135">[!HINWEIS] Wenn die **RecordsetType** -Eigenschaft eines geöffneten Formulars oder Berichts geändert wird, führt dies zu einer automatischen Neuerstellung der Datensatzgruppe.</span><span class="sxs-lookup"><span data-stu-id="85ad3-135">Changing the **RecordsetType** property of an open form or report causes an automatic recreation of the recordset.</span></span>
+
+
+
+<span data-ttu-id="85ad3-p103">Sie können Formulare erstellen, die auf mehreren zugrunde liegenden Tabellen basieren, an deren Felder Steuerelemente in den Formularen gebunden sind. Abhängig von der Einstellung der **RecordsetType** -Eigenschaft können Sie einschränken, welche gebundenen Steuerelemente bearbeitet werden können.</span><span class="sxs-lookup"><span data-stu-id="85ad3-p103">You can create forms based on multiple underlying tables with fields bound to controls on the forms. Depending on the **RecordsetType** property setting, you can limit which of these bound controls can be edited.</span></span>
+
+<span data-ttu-id="85ad3-p104">Zusätzlich zu dem von der **RecordsetType** -Eigenschaft bereitgestellten Bearbeitungssteuerelement verfügt jedes Steuerelement in einem Formular über eine **Locked** -Eigenschaft, mit der Sie angeben können, ob das Steuerelement und die ihm zugrunde liegenden Daten bearbeitet werden können. Ist die **Locked** -Eigenschaft auf Ja festgelegt, können die Daten nicht bearbeitet werden.</span><span class="sxs-lookup"><span data-stu-id="85ad3-p104">In addition to the editing control provided by **RecordsetType**, each control on a form has a **Locked** property that you can set to specify whether the control and its underlying data can be edited. If the **Locked** property is set to Yes, you can't edit the data.</span></span>
+
+## <a name="example"></a><span data-ttu-id="85ad3-140">Beispiel</span><span class="sxs-lookup"><span data-stu-id="85ad3-140">Example</span></span>
+
+<span data-ttu-id="85ad3-p105">Im folgenden Beispiel können Datensätze nur dann aktualisiert werden, wenn die Benutzer-ID ADMIN lautet. In diesem Codebeispiel wird die **RecordsetType**-Eigenschaft auf Snapshot festgelegt, wenn die öffentliche Variable gstrUserID nicht den Wert ADMIN hat.</span><span class="sxs-lookup"><span data-stu-id="85ad3-p105">In the following example, only if the user ID is ADMIN can records be updated. This code sample sets the **RecordsetType** property to Snapshot if the public variable gstrUserID value is not ADMIN.</span></span>
 
 ```vb
     Sub Form_Open(Cancel As Integer) 
@@ -125,8 +125,8 @@ ms.locfileid: "25880334"
     End Sub
 ```
 
-## <a name="see-also"></a><span data-ttu-id="91350-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="91350-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="85ad3-143">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="85ad3-143">See also</span></span>
 
-- [<span data-ttu-id="91350-144">Form-Objekt</span><span class="sxs-lookup"><span data-stu-id="91350-144">Form Object</span></span>](https://docs.microsoft.com/office/vba/api/Access.Form)
+- [<span data-ttu-id="85ad3-144">Form-Objekt</span><span class="sxs-lookup"><span data-stu-id="85ad3-144">Form Object</span></span>](https://docs.microsoft.com/office/vba/api/Access.Form)
 
 

@@ -1,6 +1,6 @@
 ---
-title: MinimierenFenster-Makroaktion
-TOCTitle: MinimizeWindow Macro Action
+title: MinimizeWindow-Makroaktion
+TOCTitle: MinimizeWindow macro action
 ms:assetid: 3a92b654-15ce-1ed1-63e0-eed927dbe26c
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192648(v=office.15)
 ms:contentKeyID: 48544265
@@ -10,45 +10,45 @@ f1_keywords:
 - vbaac10.chm174420
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fd70c3fb41b65ae9c21b1651a6af64912b9c3c7c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 50716a32d0fa3837f87d9d2c5ecde0b59696480d
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25890890"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920368"
 ---
-# <a name="minimizewindow-macro-action"></a><span data-ttu-id="452e2-102">MinimierenFenster-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="452e2-102">MinimizeWindow Macro Action</span></span>
+# <a name="minimizewindow-macro-action"></a><span data-ttu-id="cb642-102">MinimizeWindow-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="cb642-102">MinimizeWindow macro action</span></span>
 
 
-<span data-ttu-id="452e2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="452e2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="cb642-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="cb642-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="452e2-104">Wenn überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden Zugriff konfiguriert ist, können Sie die **Minimierenfenster** -Aktion verwenden, um das aktive Fenster auf eine kleine Titelleiste am unteren Rand des Access-Fensters zu reduzieren.</span><span class="sxs-lookup"><span data-stu-id="452e2-104">If Access is configured to use overlapping windows instead of tabbed documents, you can use the **MinimizeWindow** action to reduce the active window to a small title bar at the bottom of the Access window.</span></span>
+<span data-ttu-id="cb642-104">Wenn überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden Zugriff konfiguriert ist, können Sie die **Minimierenfenster** -Aktion verwenden, um das aktive Fenster auf eine kleine Titelleiste am unteren Rand des Access-Fensters zu reduzieren.</span><span class="sxs-lookup"><span data-stu-id="cb642-104">If Access is configured to use overlapping windows instead of tabbed documents, you can use the **MinimizeWindow** action to reduce the active window to a small title bar at the bottom of the Access window.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="452e2-p101">[!HINWEIS] Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur <STRONG>WindowState</STRONG> -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="452e2-p101">This action can't be applied to code windows in the Visual Basic Editor. For information about how to affect code windows, see the <STRONG>WindowState</STRONG> property topic.</span></span></P>
+> <P><span data-ttu-id="cb642-p101">[!HINWEIS] Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur <STRONG>WindowState</STRONG> -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="cb642-p101">This action can't be applied to code windows in the Visual Basic Editor. For information about how to affect code windows, see the <STRONG>WindowState</STRONG> property topic.</span></span></P>
 
 
 
-## <a name="setting"></a><span data-ttu-id="452e2-107">Einstellung</span><span class="sxs-lookup"><span data-stu-id="452e2-107">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="cb642-107">Einstellung</span><span class="sxs-lookup"><span data-stu-id="cb642-107">Setting</span></span>
 
-<span data-ttu-id="452e2-108">Die **MinimierenFenster** -Aktion hat keine Argumente.</span><span class="sxs-lookup"><span data-stu-id="452e2-108">The **MinimizeWindow** action doesn't have any arguments.</span></span>
+<span data-ttu-id="cb642-108">Die **MinimierenFenster** -Aktion hat keine Argumente.</span><span class="sxs-lookup"><span data-stu-id="cb642-108">The **MinimizeWindow** action doesn't have any arguments.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="452e2-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="452e2-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cb642-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="cb642-109">Remarks</span></span>
 
-<span data-ttu-id="452e2-p102">Sie können diese Aktion verwenden, um ein Fenster vom Bildschirm zu entfernen, während das Objekt geöffnet bleibt. Sie können diese Aktion auch verwenden, um ein Objekt zu öffnen, ohne sein Fenster anzuzeigen. Zum Anzeigen des Objekts verwenden Sie die **AuswählenObjekt** -Aktion mit der Aktion **MaximierenFenster** oder **WiederherstellenFenster**. Durch die **WiederherstellenFenster** -Aktion wird ein minimiertes Fenster in seiner vorherigen Größe wiederhergestellt.</span><span class="sxs-lookup"><span data-stu-id="452e2-p102">You can use this action to remove a window from the screen while leaving the object open. You can also use this action to open an object without displaying its window. To display the object, use the **SelectObject** action with either the **MaximizeWindow** or **RestoreWindow** action. The **RestoreWindow** action restores a minimized window to its previous size.</span></span>
+<span data-ttu-id="cb642-p102">Sie können diese Aktion verwenden, um ein Fenster vom Bildschirm zu entfernen, während das Objekt geöffnet bleibt. Sie können diese Aktion auch verwenden, um ein Objekt zu öffnen, ohne sein Fenster anzuzeigen. Zum Anzeigen des Objekts verwenden Sie die **AuswählenObjekt** -Aktion mit der Aktion **MaximierenFenster** oder **WiederherstellenFenster**. Durch die **WiederherstellenFenster** -Aktion wird ein minimiertes Fenster in seiner vorherigen Größe wiederhergestellt.</span><span class="sxs-lookup"><span data-stu-id="cb642-p102">You can use this action to remove a window from the screen while leaving the object open. You can also use this action to open an object without displaying its window. To display the object, use the **SelectObject** action with either the **MaximizeWindow** or **RestoreWindow** action. The **RestoreWindow** action restores a minimized window to its previous size.</span></span>
 
-<span data-ttu-id="452e2-114">Die **Minimierenfenster** -Aktion hat dieselbe Wirkung wie das Klicken auf die Schaltfläche **Minimieren** in der oberen rechten Fensterecke oder klicken auf **Minimieren** im **Systemmenü des Fensters** .</span><span class="sxs-lookup"><span data-stu-id="452e2-114">The **MinimizeWindow** action has the same effect as clicking the **Minimize** button in the window's upper-right corner or clicking **Minimize** on the window's **Control** menu.</span></span>
+<span data-ttu-id="cb642-114">Die **Minimierenfenster** -Aktion hat dieselbe Wirkung wie das Klicken auf die Schaltfläche **Minimieren** in der oberen rechten Fensterecke oder klicken auf **Minimieren** im **Systemmenü des Fensters** .</span><span class="sxs-lookup"><span data-stu-id="cb642-114">The **MinimizeWindow** action has the same effect as clicking the **Minimize** button in the window's upper-right corner or clicking **Minimize** on the window's **Control** menu.</span></span>
 
-<span data-ttu-id="452e2-115">**Tipps**</span><span class="sxs-lookup"><span data-stu-id="452e2-115">**Tips**</span></span>
+<span data-ttu-id="cb642-115">**Tipps**</span><span class="sxs-lookup"><span data-stu-id="cb642-115">**Tips**</span></span>
 
-  - <span data-ttu-id="452e2-116">Wenn das Fenster, das Sie minimieren möchten, nicht das aktive Fenster ist, müssen Sie zuerst die **AuswählenObjekt** -Aktion verwenden.</span><span class="sxs-lookup"><span data-stu-id="452e2-116">You may first need to use the **SelectObject** action if the window you want to minimize isn't the active window.</span></span>
+  - <span data-ttu-id="cb642-116">Wenn das Fenster, das Sie minimieren möchten, nicht das aktive Fenster ist, müssen Sie zuerst die **AuswählenObjekt** -Aktion verwenden.</span><span class="sxs-lookup"><span data-stu-id="cb642-116">You may first need to use the **SelectObject** action if the window you want to minimize isn't the active window.</span></span>
 
-  - <span data-ttu-id="452e2-p103">Wenn Sie den Navigationsbereich ausblenden möchten, müssen Sie zuerst die AuswählenObjekt-Aktion mit der Einstellung Ja für das Argument Im Datenbankfenster und anschließend die MinimierenFenster-Aktion verwenden. Das Objekt, das Sie in der AuswählenObjekt-Aktion auswählen, kann ein beliebiges Objekt in der Datenbank sein.</span><span class="sxs-lookup"><span data-stu-id="452e2-p103">To hide the Navigation Pane, use the **SelectObject** action with the In Navigation Pane argument set to **Yes** and then use the **MinimizeWindow** action. The object you select in the **SelectObject** action can be any object in the database.</span></span>
+  - <span data-ttu-id="cb642-p103">Wenn Sie den Navigationsbereich ausblenden möchten, müssen Sie zuerst die AuswählenObjekt-Aktion mit der Einstellung Ja für das Argument Im Datenbankfenster und anschließend die MinimierenFenster-Aktion verwenden. Das Objekt, das Sie in der AuswählenObjekt-Aktion auswählen, kann ein beliebiges Objekt in der Datenbank sein.</span><span class="sxs-lookup"><span data-stu-id="cb642-p103">To hide the Navigation Pane, use the **SelectObject** action with the In Navigation Pane argument set to **Yes** and then use the **MinimizeWindow** action. The object you select in the **SelectObject** action can be any object in the database.</span></span>
 
-  - <span data-ttu-id="452e2-p104">Sie können das aktive Fenster ausblenden, indem Sie auf im Menü **Ansicht** auf **Dieses Fenster verwalten**und dann auf **Ausblenden** klicken. Anstatt auf die Größe eines Symbols verkleinert zu werden, wird das Fenster in diesem Fall unsichtbar. Verwenden Sie den Befehl **Einblenden** im gleichen Menü, damit das Fenster wieder angezeigt wird. Mithilfe der **AusführenMenübefehl** -Aktion können Sie jeden dieser Befehle auch in einem Makro ausführen.</span><span class="sxs-lookup"><span data-stu-id="452e2-p104">You can hide the active window by clicking **Manage This Window** on the **View** menu, and then clicking **Hide**. Instead of being reduced to an icon, the window becomes invisible. Use the **Unhide** command on the same menu to make the window reappear. You can use the **RunMenuCommand** action to carry out either of these commands from a macro.</span></span>
+  - <span data-ttu-id="cb642-p104">Sie können das aktive Fenster ausblenden, indem Sie auf im Menü **Ansicht** auf **Dieses Fenster verwalten**und dann auf **Ausblenden** klicken. Anstatt auf die Größe eines Symbols verkleinert zu werden, wird das Fenster in diesem Fall unsichtbar. Verwenden Sie den Befehl **Einblenden** im gleichen Menü, damit das Fenster wieder angezeigt wird. Mithilfe der **AusführenMenübefehl** -Aktion können Sie jeden dieser Befehle auch in einem Makro ausführen.</span><span class="sxs-lookup"><span data-stu-id="cb642-p104">You can hide the active window by clicking **Manage This Window** on the **View** menu, and then clicking **Hide**. Instead of being reduced to an icon, the window becomes invisible. Use the **Unhide** command on the same menu to make the window reappear. You can use the **RunMenuCommand** action to carry out either of these commands from a macro.</span></span>
 
-  - <span data-ttu-id="452e2-123">Sie können auch die **SetzenWert** -Aktion verwenden, um die **Sichtbar**-Eigenschaft eines Formulars so festzulegen, dass das Fenster des Formulars ausgeblendet oder angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="452e2-123">You can also use the **SetValue** action to set a form's **Visible** property to hide or show the form's window.</span></span>
+  - <span data-ttu-id="cb642-123">Sie können auch die **SetzenWert** -Aktion verwenden, um die **Sichtbar**-Eigenschaft eines Formulars so festzulegen, dass das Fenster des Formulars ausgeblendet oder angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="cb642-123">You can also use the **SetValue** action to set a form's **Visible** property to hide or show the form's window.</span></span>
 
-<span data-ttu-id="452e2-124">Verwenden Sie die **Minimize** -Methode des **DoCmd** -Objekts, um die **MinimierenFenster** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.</span><span class="sxs-lookup"><span data-stu-id="452e2-124">To run the **MinimizeWindow** action in a Visual Basic for Applications (VBA) module, use the **Minimize** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="cb642-124">Verwenden Sie die **Minimize** -Methode des **DoCmd** -Objekts, um die **MinimierenFenster** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.</span><span class="sxs-lookup"><span data-stu-id="cb642-124">To run the **MinimizeWindow** action in a Visual Basic for Applications (VBA) module, use the **Minimize** method of the **DoCmd** object.</span></span>
 

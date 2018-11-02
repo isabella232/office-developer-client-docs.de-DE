@@ -1,5 +1,5 @@
 ---
-title: Database.PopulatePartial Method (DAO)
+title: Database.PopulatePartial-Methode (DAO)
 TOCTitle: PopulatePartial Method
 ms:assetid: fa3227a2-c961-6a98-32b3-5b6e5329a21d
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff837034(v=office.15)
@@ -10,28 +10,28 @@ f1_keywords:
 - dao360.chm1101186
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ed8125d89691045a24ecc438d490146a8a3942b5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 2d90d82db89060894eda1e58442cb6f9d52f124e
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883015"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25919492"
 ---
-# <a name="databasepopulatepartial-method-dao"></a><span data-ttu-id="6cfdc-102">Database.PopulatePartial Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="6cfdc-102">Database.PopulatePartial Method (DAO)</span></span>
+# <a name="databasepopulatepartial-method-dao"></a><span data-ttu-id="dac29-102">Database.PopulatePartial-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="dac29-102">Database.PopulatePartial method (DAO)</span></span>
 
 
-<span data-ttu-id="6cfdc-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6cfdc-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="dac29-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dac29-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-<span data-ttu-id="6cfdc-p101">Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Repliktat, löscht alle Datensätze im Teilreplikat, und füllt dann das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf (gilt nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="6cfdc-p101">Synchronizes any changes in a partial replica with the full replica, clears all records in the partial replica, and then repopulates the partial replica based on the current replica filters. (Microsoft Access database engine databases only.).</span></span>
+<span data-ttu-id="dac29-p101">Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Repliktat, löscht alle Datensätze im Teilreplikat, und füllt dann das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf (gilt nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="dac29-p101">Synchronizes any changes in a partial replica with the full replica, clears all records in the partial replica, and then repopulates the partial replica based on the current replica filters. (Microsoft Access database engine databases only.).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="6cfdc-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="6cfdc-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="dac29-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="dac29-106">Syntax</span></span>
 
-<span data-ttu-id="6cfdc-107">*Ausdruck* . PopulatePartial (***DbPathName***)</span><span class="sxs-lookup"><span data-stu-id="6cfdc-107">*expression* .PopulatePartial(***DbPathName***)</span></span>
+<span data-ttu-id="dac29-107">*Ausdruck* . PopulatePartial (***DbPathName***)</span><span class="sxs-lookup"><span data-stu-id="dac29-107">*expression* .PopulatePartial(***DbPathName***)</span></span>
 
-<span data-ttu-id="6cfdc-108">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="dac29-108">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="dac29-108">*expression* A variable that represents a **Database** object.</span></span>
 
-### <a name="parameters"></a><span data-ttu-id="6cfdc-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="6cfdc-109">Parameters</span></span>
+### <a name="parameters"></a><span data-ttu-id="dac29-109">Parameter</span><span class="sxs-lookup"><span data-stu-id="dac29-109">Parameters</span></span>
 
 <table>
 <colgroup>
@@ -42,50 +42,50 @@ ms.locfileid: "25883015"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="6cfdc-110">Name</span><span class="sxs-lookup"><span data-stu-id="6cfdc-110">Name</span></span></p></th>
-<th><p><span data-ttu-id="6cfdc-111">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="6cfdc-111">Required/Optional</span></span></p></th>
-<th><p><span data-ttu-id="6cfdc-112">Datentyp</span><span class="sxs-lookup"><span data-stu-id="6cfdc-112">Data Type</span></span></p></th>
-<th><p><span data-ttu-id="6cfdc-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6cfdc-113">Description</span></span></p></th>
+<th><p><span data-ttu-id="dac29-110">Name</span><span class="sxs-lookup"><span data-stu-id="dac29-110">Name</span></span></p></th>
+<th><p><span data-ttu-id="dac29-111">Erforderlich/Optional</span><span class="sxs-lookup"><span data-stu-id="dac29-111">Required/Optional</span></span></p></th>
+<th><p><span data-ttu-id="dac29-112">Datentyp</span><span class="sxs-lookup"><span data-stu-id="dac29-112">Data Type</span></span></p></th>
+<th><p><span data-ttu-id="dac29-113">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="dac29-113">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="6cfdc-114">DbPathName</span><span class="sxs-lookup"><span data-stu-id="6cfdc-114">DbPathName</span></span></p></td>
-<td><p><span data-ttu-id="6cfdc-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="6cfdc-115">Required</span></span></p></td>
-<td><p><span data-ttu-id="6cfdc-116"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="6cfdc-116"><strong>String</strong></span></span></p></td>
-<td><p><span data-ttu-id="6cfdc-117">Der Pfad und Name des vollständigen Replikats, aus dem Datensätze aufgefüllt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-117">The path and name of the full replica from which to populate records.</span></span></p></td>
+<td><p><span data-ttu-id="dac29-114">DbPathName</span><span class="sxs-lookup"><span data-stu-id="dac29-114">DbPathName</span></span></p></td>
+<td><p><span data-ttu-id="dac29-115">Erforderlich</span><span class="sxs-lookup"><span data-stu-id="dac29-115">Required</span></span></p></td>
+<td><p><span data-ttu-id="dac29-116"><strong>String</strong></span><span class="sxs-lookup"><span data-stu-id="dac29-116"><strong>String</strong></span></span></p></td>
+<td><p><span data-ttu-id="dac29-117">Der Pfad und Name des vollständigen Replikats, aus dem Datensätze aufgefüllt werden sollen.</span><span class="sxs-lookup"><span data-stu-id="dac29-117">The path and name of the full replica from which to populate records.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="6cfdc-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="6cfdc-118">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="dac29-118">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="dac29-118">Remarks</span></span>
 
-<span data-ttu-id="6cfdc-119">Wenn Sie ein Teilreplikat mit einem vollständigen Replikat synchronisieren, ist es möglich, "verwaiste" Datensätze aus dem Teilreplikat zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-119">When you synchronize a partial replica with a full replica, it is possible to create "orphaned" records in the partial replica.</span></span> <span data-ttu-id="6cfdc-120">Angenommen, Sie haben eine Kundentabelle mit seiner **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** legen Sie auf "Region = 'CA'".</span><span class="sxs-lookup"><span data-stu-id="6cfdc-120">For example, suppose you have a Customers table with its **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** set to "Region = 'CA'".</span></span> <span data-ttu-id="6cfdc-121">Wenn ein Benutzer die Region eines Kunden von CA in NY in dem Teilreplikat ändert, und dann eine über die **[Synchronize](database-synchronize-method-dao.md)** -Methode Synchronisation, die Änderung an das vollständige Replikat weitergegeben, aber der Datensatz mit NY im Teilreplikat ist verwaist, da nun It nicht erfüllen die Replikatfilterkriterien.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-121">If a user changes a customer's region from CA to NY in the partial replica, and then a synchronization occurs via the **[Synchronize](database-synchronize-method-dao.md)** method, the change is propagated to the full replica but the record containing NY in the partial replica is orphaned because it now doesn't meet the replica filter criteria.</span></span>
+<span data-ttu-id="dac29-119">Wenn Sie ein Teilreplikat mit einem vollständigen Replikat synchronisieren, ist es möglich, "verwaiste" Datensätze aus dem Teilreplikat zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="dac29-119">When you synchronize a partial replica with a full replica, it is possible to create "orphaned" records in the partial replica.</span></span> <span data-ttu-id="dac29-120">Angenommen, Sie haben eine Kundentabelle mit seiner **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** legen Sie auf "Region = 'CA'".</span><span class="sxs-lookup"><span data-stu-id="dac29-120">For example, suppose you have a Customers table with its **[ReplicaFilter](tabledef-replicafilter-property-dao.md)** set to "Region = 'CA'".</span></span> <span data-ttu-id="dac29-121">Wenn ein Benutzer die Region eines Kunden von CA in NY in dem Teilreplikat ändert, und dann eine über die **[Synchronize](database-synchronize-method-dao.md)** -Methode Synchronisation, die Änderung an das vollständige Replikat weitergegeben, aber der Datensatz mit NY im Teilreplikat ist verwaist, da nun It nicht erfüllen die Replikatfilterkriterien.</span><span class="sxs-lookup"><span data-stu-id="dac29-121">If a user changes a customer's region from CA to NY in the partial replica, and then a synchronization occurs via the **[Synchronize](database-synchronize-method-dao.md)** method, the change is propagated to the full replica but the record containing NY in the partial replica is orphaned because it now doesn't meet the replica filter criteria.</span></span>
 
-<span data-ttu-id="6cfdc-p103">Mit der **PopulatePartial**-Methode lässt sich das Problem der verwaisten Datensätze vermeiden. Die **PopulatePartial**-Methode ähnelt der **Synchronize**-Methode, synchronisiert allerdings alle Änderungen mit dem vollständigen Repliktat, entfernt alle Datensätze im Teilreplikat, und füllt anschließend das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf. Auch wenn sich die Replikatfilter nicht geändert haben, werden mit **PopulatePartial** immer sämtliche Datensätze im Teilreplikat entfernt, und dann wird es auf Basis der aktuellen Filter neu aufgefüllt.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-p103">To solve the problem of orphaned records, you can use the **PopulatePartial** method. The **PopulatePartial** method is similar to the **Synchronize** method, but it synchronizes any changes with the full replica, removes all records in the partial replica, and then repopulates the partial replica based on the current replica filters. Even if your replica filters have not changed, **PopulatePartial** will always clear all records in the partial replica and repopulate it based on the current filters.</span></span>
+<span data-ttu-id="dac29-p103">Mit der **PopulatePartial**-Methode lässt sich das Problem der verwaisten Datensätze vermeiden. Die **PopulatePartial**-Methode ähnelt der **Synchronize**-Methode, synchronisiert allerdings alle Änderungen mit dem vollständigen Repliktat, entfernt alle Datensätze im Teilreplikat, und füllt anschließend das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf. Auch wenn sich die Replikatfilter nicht geändert haben, werden mit **PopulatePartial** immer sämtliche Datensätze im Teilreplikat entfernt, und dann wird es auf Basis der aktuellen Filter neu aufgefüllt.</span><span class="sxs-lookup"><span data-stu-id="dac29-p103">To solve the problem of orphaned records, you can use the **PopulatePartial** method. The **PopulatePartial** method is similar to the **Synchronize** method, but it synchronizes any changes with the full replica, removes all records in the partial replica, and then repopulates the partial replica based on the current replica filters. Even if your replica filters have not changed, **PopulatePartial** will always clear all records in the partial replica and repopulate it based on the current filters.</span></span>
 
-<span data-ttu-id="6cfdc-p104">Die **PopulatePartial**-Methode sollten Sie immer dann verwenden, wenn Sie ein Teilreplikat erstellen und wenn Sie die Replikatfilter ändern. Werden Replikatfilter durch die Anwendung geändert, sollten Sie wie folgt vorgehen:</span><span class="sxs-lookup"><span data-stu-id="6cfdc-p104">Generally, you should use the **PopulatePartial** method when you create a partial replica and whenever you change your replica filters. If your application changes replica filters, you should follow these steps:</span></span>
+<span data-ttu-id="dac29-p104">Die **PopulatePartial**-Methode sollten Sie immer dann verwenden, wenn Sie ein Teilreplikat erstellen und wenn Sie die Replikatfilter ändern. Werden Replikatfilter durch die Anwendung geändert, sollten Sie wie folgt vorgehen:</span><span class="sxs-lookup"><span data-stu-id="dac29-p104">Generally, you should use the **PopulatePartial** method when you create a partial replica and whenever you change your replica filters. If your application changes replica filters, you should follow these steps:</span></span>
 
-1.  <span data-ttu-id="6cfdc-127">Synchronisieren Sie das vollständige Repliktat mit dem Teilreplikat, in dem die Filter geändert werden.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-127">Synchronize your full replica with the partial replica in which the filters are being changed.</span></span>
+1.  <span data-ttu-id="dac29-127">Synchronisieren Sie das vollständige Repliktat mit dem Teilreplikat, in dem die Filter geändert werden.</span><span class="sxs-lookup"><span data-stu-id="dac29-127">Synchronize your full replica with the partial replica in which the filters are being changed.</span></span>
 
-2.  <span data-ttu-id="6cfdc-128">Verwenden Sie die Eigenschaften **ReplicaFilter** und **[PartialReplica](relation-partialreplica-property-dao.md)**, um die gewünschten Änderungen an den Replikatfiltern vorzunehmen.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-128">Use the **ReplicaFilter** and **[PartialReplica](relation-partialreplica-property-dao.md)** properties to make the desired changes to the replica filter.</span></span>
+2.  <span data-ttu-id="dac29-128">Verwenden Sie die Eigenschaften **ReplicaFilter** und **[PartialReplica](relation-partialreplica-property-dao.md)**, um die gewünschten Änderungen an den Replikatfiltern vorzunehmen.</span><span class="sxs-lookup"><span data-stu-id="dac29-128">Use the **ReplicaFilter** and **[PartialReplica](relation-partialreplica-property-dao.md)** properties to make the desired changes to the replica filter.</span></span>
 
-3.  <span data-ttu-id="6cfdc-129">Rufen Sie die **PopulatePartial**-Methode auf, um alle Datensätze aus dem Teilreplikat zu entfernen und alle Datensätze aus dem vollständigen Repliktat zu übertragen, die den neuen Replikatfilterkriterien entsprechen.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-129">Call the **PopulatePartial** method to remove all records from the partial replica and transfer all records from the full replica that meet the new replica filter criteria.</span></span>
+3.  <span data-ttu-id="dac29-129">Rufen Sie die **PopulatePartial**-Methode auf, um alle Datensätze aus dem Teilreplikat zu entfernen und alle Datensätze aus dem vollständigen Repliktat zu übertragen, die den neuen Replikatfilterkriterien entsprechen.</span><span class="sxs-lookup"><span data-stu-id="dac29-129">Call the **PopulatePartial** method to remove all records from the partial replica and transfer all records from the full replica that meet the new replica filter criteria.</span></span>
 
-<span data-ttu-id="6cfdc-130">Wenn ein Replikatfilter geändert wurde und die **Synchronize**-Methode ohne vorherigen Aufruf von **PopulatePartial** aufgerufen wird, tritt ein abfangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-130">If a replica filter has changed, and the **Synchronize** method is invoked without first invoking **PopulatePartial**, a trappable error occurs.</span></span>
+<span data-ttu-id="dac29-130">Wenn ein Replikatfilter geändert wurde und die **Synchronize**-Methode ohne vorherigen Aufruf von **PopulatePartial** aufgerufen wird, tritt ein abfangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="dac29-130">If a replica filter has changed, and the **Synchronize** method is invoked without first invoking **PopulatePartial**, a trappable error occurs.</span></span>
 
-<span data-ttu-id="6cfdc-p105">Die **PopulatePartial**-Methode kann nur für ein Teilreplikat aufgerufen werden, das exklusiv geöffnet ist. Darüber hinaus kann die **PopulatePartial**-Methode nicht über Code aufgerufen werden, der innerhalb des Teilreplikats ausgeführt wird. Öffnen Sie das Teilreplikat stattdessen exklusiv aus dem vollständigen Repliktat oder einer anderen Datenbank, und rufen Sie dann **PopulatePartial** auf.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-p105">The **PopulatePartial** method can only be invoked on a partial replica that has been opened for exclusive access. Furthermore, you can't call the **PopulatePartial** method from code running within the partial replica itself. Instead, open the partial replica exclusively from the full replica or another database, then call **PopulatePartial**.</span></span>
+<span data-ttu-id="dac29-p105">Die **PopulatePartial**-Methode kann nur für ein Teilreplikat aufgerufen werden, das exklusiv geöffnet ist. Darüber hinaus kann die **PopulatePartial**-Methode nicht über Code aufgerufen werden, der innerhalb des Teilreplikats ausgeführt wird. Öffnen Sie das Teilreplikat stattdessen exklusiv aus dem vollständigen Repliktat oder einer anderen Datenbank, und rufen Sie dann **PopulatePartial** auf.</span><span class="sxs-lookup"><span data-stu-id="dac29-p105">The **PopulatePartial** method can only be invoked on a partial replica that has been opened for exclusive access. Furthermore, you can't call the **PopulatePartial** method from code running within the partial replica itself. Instead, open the partial replica exclusively from the full replica or another database, then call **PopulatePartial**.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="6cfdc-p106">[!HINWEIS] Obwohl **PopulatePartial** vor dem Löschen und erneuten Auffüllen des Teilreplikats eine einseitige Synchronisierung durchführt, ist es empfehlenswert, **Synchronize** vor **PopulatePartial** aufzurufen. Wenn das Aufrufen von **Synchronize** fehlschlägt, tritt ein abfangbarer Fehler auf. Anhand dieses Fehlers können Sie entscheiden, ob Sie mit der **PopulatePartial**-Methode fortfahren möchten (bei der alle Datensätze im Teilreplikat entfernt werden). Wird **PopulatePartial** selbst aufgerufen und tritt während der Synchronisierung der Datensätze ein Fehler auf, werden die Datensätze im Teilreplikat auf jeden Fall gelöscht, auch wenn dies nicht Ihre Absicht war.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-p106">Although **PopulatePartial** performs a one-way synchronization before clearing and repopulating the partial replica, it is still a good idea to call **Synchronize** before calling **PopulatePartial**. This is because if the call to **Synchronize** fails, a trappable error occurs. You can use this error to decide whether or not to proceed with the **PopulatePartial** method (which removes all records in the partial replica). If **PopulatePartial** is called by itself and an error occurs while records are being synchronized, records in the partial replica will still be cleared, which may not be the desired result.</span></span>
+> <span data-ttu-id="dac29-p106">[!HINWEIS] Obwohl **PopulatePartial** vor dem Löschen und erneuten Auffüllen des Teilreplikats eine einseitige Synchronisierung durchführt, ist es empfehlenswert, **Synchronize** vor **PopulatePartial** aufzurufen. Wenn das Aufrufen von **Synchronize** fehlschlägt, tritt ein abfangbarer Fehler auf. Anhand dieses Fehlers können Sie entscheiden, ob Sie mit der **PopulatePartial**-Methode fortfahren möchten (bei der alle Datensätze im Teilreplikat entfernt werden). Wird **PopulatePartial** selbst aufgerufen und tritt während der Synchronisierung der Datensätze ein Fehler auf, werden die Datensätze im Teilreplikat auf jeden Fall gelöscht, auch wenn dies nicht Ihre Absicht war.</span><span class="sxs-lookup"><span data-stu-id="dac29-p106">Although **PopulatePartial** performs a one-way synchronization before clearing and repopulating the partial replica, it is still a good idea to call **Synchronize** before calling **PopulatePartial**. This is because if the call to **Synchronize** fails, a trappable error occurs. You can use this error to decide whether or not to proceed with the **PopulatePartial** method (which removes all records in the partial replica). If **PopulatePartial** is called by itself and an error occurs while records are being synchronized, records in the partial replica will still be cleared, which may not be the desired result.</span></span>
 
 
 
-## <a name="example"></a><span data-ttu-id="6cfdc-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6cfdc-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dac29-138">Beispiel</span><span class="sxs-lookup"><span data-stu-id="dac29-138">Example</span></span>
 
-<span data-ttu-id="6cfdc-139">Im folgenden Beispiel wird die **PopulatePartial**-Methode nach dem Ändern eines Replikatfilters verwendet.</span><span class="sxs-lookup"><span data-stu-id="6cfdc-139">The following example uses the **PopulatePartial** method after changing a replica filter.</span></span>
+<span data-ttu-id="dac29-139">Im folgenden Beispiel wird die **PopulatePartial**-Methode nach dem Ändern eines Replikatfilters verwendet.</span><span class="sxs-lookup"><span data-stu-id="dac29-139">The following example uses the **PopulatePartial** method after changing a replica filter.</span></span>
 
 ```vb 
 Sub PopulatePartialX() 

@@ -1,39 +1,39 @@
 ---
-title: Connection.StillExecuting Property (DAO)
+title: Connection.StillExecuting-Eigenschaft (DAO)
 TOCTitle: StillExecuting Property
 ms:assetid: 0121f98a-cc23-5b5e-9a75-28307404a9a3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff844743(v=office.15)
 ms:contentKeyID: 48542927
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2ba2444146a0174e643c7ba98cbfd46225c5a491
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: efcac1b95fe4f58a6ebef39a51c57dda4f9866a3
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874265"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25921068"
 ---
-# <a name="connectionstillexecuting-property-dao"></a><span data-ttu-id="08aaf-102">Connection.StillExecuting Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="08aaf-102">Connection.StillExecuting Property (DAO)</span></span>
+# <a name="connectionstillexecuting-property-dao"></a><span data-ttu-id="0d819-102">Connection.StillExecuting-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="0d819-102">Connection.StillExecuting property (DAO)</span></span>
 
-<span data-ttu-id="08aaf-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="08aaf-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="0d819-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0d819-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="08aaf-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="08aaf-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="0d819-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="0d819-104">Syntax</span></span>
 
-<span data-ttu-id="08aaf-105">*Ausdruck* . StillExecuting</span><span class="sxs-lookup"><span data-stu-id="08aaf-105">*expression* .StillExecuting</span></span>
+<span data-ttu-id="0d819-105">*Ausdruck* . StillExecuting</span><span class="sxs-lookup"><span data-stu-id="0d819-105">*expression* .StillExecuting</span></span>
 
-<span data-ttu-id="08aaf-106">*Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="08aaf-106">*expression* A variable that represents a **Connection** object.</span></span>
+<span data-ttu-id="0d819-106">*Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="0d819-106">*expression* A variable that represents a **Connection** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="08aaf-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="08aaf-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="0d819-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="0d819-107">Remarks</span></span>
 
-<span data-ttu-id="08aaf-p101">Mit der **StillExecuting**-Eigenschaft können Sie feststellen, ob die zuletzt aufgerufene asynchrone **Execute**- oder **OpenConnection**-Methode (d. h. eine Methode, die mit der **dbRunAsync**-Option aufgerufen wurde) abgeschlossen wurde. Solange die **StillExecuting**-Eigenschaft **True** ist, kann nicht auf zurückgegebene Objekte zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="08aaf-p101">Use the **StillExecuting** property to determine if the most recently called asynchronous **Execute** or **OpenConnection** method (that is, a method executed with the **dbRunAsync** option) is complete. While the **StillExecuting** property is **True**, any returned object cannot be accessed.</span></span>
+<span data-ttu-id="0d819-p101">Mit der **StillExecuting**-Eigenschaft können Sie feststellen, ob die zuletzt aufgerufene asynchrone **Execute**- oder **OpenConnection**-Methode (d. h. eine Methode, die mit der **dbRunAsync**-Option aufgerufen wurde) abgeschlossen wurde. Solange die **StillExecuting**-Eigenschaft **True** ist, kann nicht auf zurückgegebene Objekte zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="0d819-p101">Use the **StillExecuting** property to determine if the most recently called asynchronous **Execute** or **OpenConnection** method (that is, a method executed with the **dbRunAsync** option) is complete. While the **StillExecuting** property is **True**, any returned object cannot be accessed.</span></span>
 
-<span data-ttu-id="08aaf-p102">Wenn die **StillExecuting**-Eigenschaft im Anschluss an den **OpenConnection**-Aufruf, der das zugeordnete **Connection**-Objekt zurückgibt, **False** zurückgibt, kann auf das Objekt verwiesen werden. Solange **StillExecuting** noch **True** ist, kann nicht auf das Objekt verwiesen werden. Die **StillExecuting**-Eigenschaft kann in diesem Fall nur gelesen werden.</span><span class="sxs-lookup"><span data-stu-id="08aaf-p102">Once the **StillExecuting** property returns **False**, following the **OpenConnection** call that returns the associated **Connection** object, the object can be referenced. So long as **StillExecuting** remains **True**, the object may not be referenced, other than to read the **StillExecuting** property.</span></span>
+<span data-ttu-id="0d819-p102">Wenn die **StillExecuting**-Eigenschaft im Anschluss an den **OpenConnection**-Aufruf, der das zugeordnete **Connection**-Objekt zurückgibt, **False** zurückgibt, kann auf das Objekt verwiesen werden. Solange **StillExecuting** noch **True** ist, kann nicht auf das Objekt verwiesen werden. Die **StillExecuting**-Eigenschaft kann in diesem Fall nur gelesen werden.</span><span class="sxs-lookup"><span data-stu-id="0d819-p102">Once the **StillExecuting** property returns **False**, following the **OpenConnection** call that returns the associated **Connection** object, the object can be referenced. So long as **StillExecuting** remains **True**, the object may not be referenced, other than to read the **StillExecuting** property.</span></span>
 
-<span data-ttu-id="08aaf-112">Mit der **[Cancel](connection-cancel-method-dao.md)** -Methode können Sie die Ausführung einer Aufgabe beenden.</span><span class="sxs-lookup"><span data-stu-id="08aaf-112">Use the **[Cancel](connection-cancel-method-dao.md)** method to terminate execution of a task in progress.</span></span>
+<span data-ttu-id="0d819-112">Mit der **[Cancel](connection-cancel-method-dao.md)** -Methode können Sie die Ausführung einer Aufgabe beenden.</span><span class="sxs-lookup"><span data-stu-id="0d819-112">Use the **[Cancel](connection-cancel-method-dao.md)** method to terminate execution of a task in progress.</span></span>
 
-## <a name="example"></a><span data-ttu-id="08aaf-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="08aaf-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0d819-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="0d819-113">Example</span></span>
 
-<span data-ttu-id="08aaf-114">In diesem Beispiel werden die **StillExecuting**-Eigenschaft und die **Cancel**-Methode verwendet, um ein **Connection**-Objekt asynchron zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="08aaf-114">This example uses the **StillExecuting** property and the **Cancel** method to asynchronously open a **Connection** object.</span></span>
+<span data-ttu-id="0d819-114">In diesem Beispiel werden die **StillExecuting**-Eigenschaft und die **Cancel**-Methode verwendet, um ein **Connection**-Objekt asynchron zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="0d819-114">This example uses the **StillExecuting** property and the **Cancel** method to asynchronously open a **Connection** object.</span></span>
 
 ```vb
     Sub CancelConnectionX() 

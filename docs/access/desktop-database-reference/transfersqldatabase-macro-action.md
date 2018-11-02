@@ -1,6 +1,6 @@
 ---
 title: TransferSQLDatenbank-Makroaktion
-TOCTitle: TransferSQLDatabase Macro Action
+TOCTitle: TransferSQLDatabase macro action
 ms:assetid: 8cb95e22-f1f0-6c70-7dcb-3a3e9aafdc57
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197344(v=office.15)
 ms:contentKeyID: 48546244
@@ -10,29 +10,29 @@ f1_keywords:
 - vbaac10.chm111536
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fff0c9ac46e4a616fb5ea134e3dabc6b4e90576f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ae05da3d07cc17f54584d11282721ac83f23ccd8
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873103"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926542"
 ---
-# <a name="transfersqldatabase-macro-action"></a><span data-ttu-id="df365-102">TransferSQLDatenbank-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="df365-102">TransferSQLDatabase Macro Action</span></span>
+# <a name="transfersqldatabase-macro-action"></a><span data-ttu-id="c0d6d-102">TransferSQLDatenbank-Makroaktion</span><span class="sxs-lookup"><span data-stu-id="c0d6d-102">TransferSQLDatabase macro action</span></span>
 
 
-<span data-ttu-id="df365-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="df365-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c0d6d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c0d6d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="df365-104">Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="df365-104">In an Access project, you can use the **TransferSQLDatabase** action to transfer a Microsoft SQL Server 7.0 or later database to another SQL Server 7.0 or later database.</span></span> <span data-ttu-id="df365-105">Weitere Informationen zum Transferieren einer Datenbank finden Sie in der Dokumentation zu SQL Server.</span><span class="sxs-lookup"><span data-stu-id="df365-105">For more information about transferring a database, see the SQL Server documentation.</span></span>
+<span data-ttu-id="c0d6d-104">Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-104">In an Access project, you can use the **TransferSQLDatabase** action to transfer a Microsoft SQL Server 7.0 or later database to another SQL Server 7.0 or later database.</span></span> <span data-ttu-id="c0d6d-105">Weitere Informationen zum Transferieren einer Datenbank finden Sie in der Dokumentation zu SQL Server.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-105">For more information about transferring a database, see the SQL Server documentation.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="df365-p102">[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</span><span class="sxs-lookup"><span data-stu-id="df365-p102">This action will not be allowed if the database is not trusted. For more information about enabling macros, see the links in the See Also section of this article.</span></span>
+> <span data-ttu-id="c0d6d-p102">[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-p102">This action will not be allowed if the database is not trusted. For more information about enabling macros, see the links in the See Also section of this article.</span></span>
 
 
 
-## <a name="setting"></a><span data-ttu-id="df365-108">Einstellung</span><span class="sxs-lookup"><span data-stu-id="df365-108">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="c0d6d-108">Einstellung</span><span class="sxs-lookup"><span data-stu-id="c0d6d-108">Setting</span></span>
 
-<span data-ttu-id="df365-109">Die **TransferSQLDatenbank** -Aktion hat die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="df365-109">The **TransferSQLDatabase** action has the following arguments.</span></span>
+<span data-ttu-id="c0d6d-109">Die **TransferSQLDatenbank** -Aktion hat die folgenden Argumente.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-109">The **TransferSQLDatabase** action has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -41,58 +41,58 @@ ms.locfileid: "25873103"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="df365-110">Aktionsargument</span><span class="sxs-lookup"><span data-stu-id="df365-110">Action argument</span></span></p></th>
-<th><p><span data-ttu-id="df365-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="df365-111">Description</span></span></p></th>
+<th><p><span data-ttu-id="c0d6d-110">Aktionsargument</span><span class="sxs-lookup"><span data-stu-id="c0d6d-110">Action argument</span></span></p></th>
+<th><p><span data-ttu-id="c0d6d-111">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="c0d6d-111">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="df365-112"><strong>Server</strong></span><span class="sxs-lookup"><span data-stu-id="df365-112"><strong>Server</strong></span></span></p></td>
-<td><p><span data-ttu-id="df365-113">Der Name des Datenbankservers mit SQL Server 7.0 oder höher, auf den Sie Daten kopieren.</span><span class="sxs-lookup"><span data-stu-id="df365-113">The name of the SQL Server 7.0 or later database server you are copying to.</span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-112"><strong>Server</strong></span><span class="sxs-lookup"><span data-stu-id="c0d6d-112"><strong>Server</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-113">Der Name des Datenbankservers mit SQL Server 7.0 oder höher, auf den Sie Daten kopieren.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-113">The name of the SQL Server 7.0 or later database server you are copying to.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="df365-114"><strong>Database</strong></span><span class="sxs-lookup"><span data-stu-id="df365-114"><strong>Database</strong></span></span></p></td>
-<td><p><span data-ttu-id="df365-115">Der Name der neuen Datenbank, die auf dem Zielserver erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="df365-115">The name of the new database that will be created on the destination server.</span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-114"><strong>Database</strong></span><span class="sxs-lookup"><span data-stu-id="c0d6d-114"><strong>Database</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-115">Der Name der neuen Datenbank, die auf dem Zielserver erstellt wird.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-115">The name of the new database that will be created on the destination server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="df365-116"><strong>Vertrauenswürdige Verbindung verwenden</strong></span><span class="sxs-lookup"><span data-stu-id="df365-116"><strong>Use Trusted Connection</strong></span></span></p></td>
-<td><p><span data-ttu-id="df365-117">Gibt an ist, ob eine vertrauenswürdige Verbindung zu SQL Server nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="df365-117">Specifes whether or not there is a trusted connection to the SQL Server.</span></span> <span data-ttu-id="df365-118">Wenn legen Sie auf <strong>Ja</strong>, und klicken Sie dann eine vertrauenswürdige Verbindung vorhanden ist und die Argumente <strong>Benutzername</strong> und <strong>Kennwort</strong> nicht erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="df365-118">If set to <strong>Yes</strong>, then there is a trusted connection and the <strong>Login</strong> and <strong>Password</strong> arguments are not required.</span></span> <span data-ttu-id="df365-119">Wenn Sie auf <strong>Nein</strong>, den <strong>Benutzernamen</strong> und <strong>das Kennwort</strong> Argumente erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="df365-119">If set to <strong>No</strong>, the <strong>Login</strong> and <strong>Password</strong> arguments are required.</span></span> <span data-ttu-id="df365-120">Die Standardeinstellung ist <strong>Ja</strong>.</span><span class="sxs-lookup"><span data-stu-id="df365-120">The default is <strong>Yes</strong>.</span></span> <span data-ttu-id="df365-121">Wenn Sie eine vertrauenswürdige Verbindung verwenden, ist SQL Server-Sicherheit in die Sicherheit des Betriebssystems Windows anzugebende eine einzige Anmeldung am Netzwerk und die Datenbank integriert.</span><span class="sxs-lookup"><span data-stu-id="df365-121">When you use a trusted connection, SQL Server security integrates with the Windows operating system security to provide a single log on to the network and the database.</span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-116"><strong>Vertrauenswürdige Verbindung verwenden</strong></span><span class="sxs-lookup"><span data-stu-id="c0d6d-116"><strong>Use Trusted Connection</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-117">Gibt an ist, ob eine vertrauenswürdige Verbindung zu SQL Server nicht vorhanden.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-117">Specifes whether or not there is a trusted connection to the SQL Server.</span></span> <span data-ttu-id="c0d6d-118">Wenn legen Sie auf <strong>Ja</strong>, und klicken Sie dann eine vertrauenswürdige Verbindung vorhanden ist und die Argumente <strong>Benutzername</strong> und <strong>Kennwort</strong> nicht erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-118">If set to <strong>Yes</strong>, then there is a trusted connection and the <strong>Login</strong> and <strong>Password</strong> arguments are not required.</span></span> <span data-ttu-id="c0d6d-119">Wenn Sie auf <strong>Nein</strong>, den <strong>Benutzernamen</strong> und <strong>das Kennwort</strong> Argumente erforderlich sind.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-119">If set to <strong>No</strong>, the <strong>Login</strong> and <strong>Password</strong> arguments are required.</span></span> <span data-ttu-id="c0d6d-120">Die Standardeinstellung ist <strong>Ja</strong>.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-120">The default is <strong>Yes</strong>.</span></span> <span data-ttu-id="c0d6d-121">Wenn Sie eine vertrauenswürdige Verbindung verwenden, ist SQL Server-Sicherheit in die Sicherheit des Betriebssystems Windows anzugebende eine einzige Anmeldung am Netzwerk und die Datenbank integriert.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-121">When you use a trusted connection, SQL Server security integrates with the Windows operating system security to provide a single log on to the network and the database.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="df365-122"><strong>Benutzername</strong></span><span class="sxs-lookup"><span data-stu-id="df365-122"><strong>Login</strong></span></span></p></td>
-<td><p><span data-ttu-id="df365-123">Der Anmeldename für den Zielserver.</span><span class="sxs-lookup"><span data-stu-id="df365-123">The name of the Login to the destination server.</span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-122"><strong>Benutzername</strong></span><span class="sxs-lookup"><span data-stu-id="c0d6d-122"><strong>Login</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-123">Der Anmeldename für den Zielserver.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-123">The name of the Login to the destination server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="df365-124"><strong>Password</strong></span><span class="sxs-lookup"><span data-stu-id="df365-124"><strong>Password</strong></span></span></p></td>
-<td><p><span data-ttu-id="df365-p104">Das Kennwort für das Argument <strong>Benutzername</strong>. Dieses Kennwort wird als Text im Access-Projekt gespeichert, bleibt während des Datenbanktransfers jedoch ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="df365-p104">The password for the <strong>Login</strong> argument. This password is stored as text in the Access project, but is hidden during the transfer database operation.</span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-124"><strong>Password</strong></span><span class="sxs-lookup"><span data-stu-id="c0d6d-124"><strong>Password</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-p104">Das Kennwort für das Argument <strong>Benutzername</strong>. Dieses Kennwort wird als Text im Access-Projekt gespeichert, bleibt während des Datenbanktransfers jedoch ausgeblendet.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-p104">The password for the <strong>Login</strong> argument. This password is stored as text in the Access project, but is hidden during the transfer database operation.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="df365-127"><strong>Auch Daten kopieren</strong></span><span class="sxs-lookup"><span data-stu-id="df365-127"><strong>Transfer Copy Data</strong></span></span></p></td>
-<td><p><span data-ttu-id="df365-p105">Gibt an, ob Daten in den Datenbanktransfer eingeschlossen sind. Wenn das Argument auf <strong>Ja</strong> festgelegt ist, werden alle Daten aller Tabellen sowie alle Datenstrukturen, erweiterten Eigenschaften und Datenbankobjekte eingeschlossen. Ist das Argument auf <strong>Nein</strong> festgelegt, werden keine Daten aus den Tabellen eingeschlossen. Auf dem Zielserver werden nur die Tabellenstruktur und die erweiterten Eigenschaften erstellt sowie alle sonstigen Datenbankobjekte (außer Datenbankdiagramme). Die Standardeinstellung ist <strong>Ja</strong>.</span><span class="sxs-lookup"><span data-stu-id="df365-p105">Specifies whether or not to include data in the transfer database operation. When set to <strong>Yes</strong>, all data is included for all the tables, along with all data structures, extended properties, and database objects. When set to <strong>No</strong>, no data is included from the tables. Only the table structure and extended properties are created on the destination server, along with all other database objects (except database diagrams). The default is <strong>Yes</strong>.</span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-127"><strong>Auch Daten kopieren</strong></span><span class="sxs-lookup"><span data-stu-id="c0d6d-127"><strong>Transfer Copy Data</strong></span></span></p></td>
+<td><p><span data-ttu-id="c0d6d-p105">Gibt an, ob Daten in den Datenbanktransfer eingeschlossen sind. Wenn das Argument auf <strong>Ja</strong> festgelegt ist, werden alle Daten aller Tabellen sowie alle Datenstrukturen, erweiterten Eigenschaften und Datenbankobjekte eingeschlossen. Ist das Argument auf <strong>Nein</strong> festgelegt, werden keine Daten aus den Tabellen eingeschlossen. Auf dem Zielserver werden nur die Tabellenstruktur und die erweiterten Eigenschaften erstellt sowie alle sonstigen Datenbankobjekte (außer Datenbankdiagramme). Die Standardeinstellung ist <strong>Ja</strong>.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-p105">Specifies whether or not to include data in the transfer database operation. When set to <strong>Yes</strong>, all data is included for all the tables, along with all data structures, extended properties, and database objects. When set to <strong>No</strong>, no data is included from the tables. Only the table structure and extended properties are created on the destination server, along with all other database objects (except database diagrams). The default is <strong>Yes</strong>.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="df365-133">Hinweise</span><span class="sxs-lookup"><span data-stu-id="df365-133">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c0d6d-133">Hinweise</span><span class="sxs-lookup"><span data-stu-id="c0d6d-133">Remarks</span></span>
 
-<span data-ttu-id="df365-134">Während des Datenbanktransfers können keine weiteren Vorgänge ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="df365-134">You cannot perform other operations while the database is being transferred.</span></span>
+<span data-ttu-id="c0d6d-134">Während des Datenbanktransfers können keine weiteren Vorgänge ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-134">You cannot perform other operations while the database is being transferred.</span></span>
 
-<span data-ttu-id="df365-135">Die **TransferSQLDatenbank** -Aktion kopiert standardmäßig Daten, Datendefinitionen, Datenbankobjekte und erweiterte Eigenschaften, wie Standardwerte, Gültigkeitsmeldungseinschränkungen und Nachschlagewerte.</span><span class="sxs-lookup"><span data-stu-id="df365-135">The **TransferSQLDatabase** action, by default, copies data, data definitions, database objects, and extended properties, such as default values, text constraints, and lookup values.</span></span>
+<span data-ttu-id="c0d6d-135">Die **TransferSQLDatenbank** -Aktion kopiert standardmäßig Daten, Datendefinitionen, Datenbankobjekte und erweiterte Eigenschaften, wie Standardwerte, Gültigkeitsmeldungseinschränkungen und Nachschlagewerte.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-135">The **TransferSQLDatabase** action, by default, copies data, data definitions, database objects, and extended properties, such as default values, text constraints, and lookup values.</span></span>
 
-<span data-ttu-id="df365-136">Voraussetzungen für das Transferieren einer Datenbank:</span><span class="sxs-lookup"><span data-stu-id="df365-136">There are requirements for transferring a database:</span></span>
+<span data-ttu-id="c0d6d-136">Voraussetzungen für das Transferieren einer Datenbank:</span><span class="sxs-lookup"><span data-stu-id="c0d6d-136">There are requirements for transferring a database:</span></span>
 
-  - <span data-ttu-id="df365-137">Sie müssen auf dem Zielserver ein Mitglied der Rolle sysadmin sein. (Auf dem Quellserver ist keine spezielle Rolle erforderlich.)</span><span class="sxs-lookup"><span data-stu-id="df365-137">You must be a member of the sysadmin role on the destination server (No special role is required on the source server).</span></span>
+  - <span data-ttu-id="c0d6d-137">Sie müssen auf dem Zielserver ein Mitglied der Rolle sysadmin sein. (Auf dem Quellserver ist keine spezielle Rolle erforderlich.)</span><span class="sxs-lookup"><span data-stu-id="c0d6d-137">You must be a member of the sysadmin role on the destination server (No special role is required on the source server).</span></span>
 
 <!-- end list -->
 
-  - <span data-ttu-id="df365-138">Der aktuelle SQL Server, der mit dem Access-Projekt verbunden ist, und der Zielserver, an den Sie die Datenbank transferieren, müssen SQL Server, Version 7.0 oder höher, sein.</span><span class="sxs-lookup"><span data-stu-id="df365-138">The current SQL server connected to the Access project and the destination server you are transferring the database to must be SQL Server version 7.0 or later.</span></span>
+  - <span data-ttu-id="c0d6d-138">Der aktuelle SQL Server, der mit dem Access-Projekt verbunden ist, und der Zielserver, an den Sie die Datenbank transferieren, müssen SQL Server, Version 7.0 oder höher, sein.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-138">The current SQL server connected to the Access project and the destination server you are transferring the database to must be SQL Server version 7.0 or later.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="df365-139">[!HINWEIS] Verbindungsserver werden während eines Datenbanktransfers nicht transferiert.</span><span class="sxs-lookup"><span data-stu-id="df365-139">Linked servers are not transferred during a database transfer operation.</span></span></P>
+> <P><span data-ttu-id="c0d6d-139">[!HINWEIS] Verbindungsserver werden während eines Datenbanktransfers nicht transferiert.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-139">Linked servers are not transferred during a database transfer operation.</span></span></P>
 
 
 
-<span data-ttu-id="df365-140">Verwenden Sie die **TransferSQLDatabase** -Methode des **DoCmd** -Objekts, um die **TransferSQLDatenbank** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.</span><span class="sxs-lookup"><span data-stu-id="df365-140">To run the **TransferSQLDatabase** action in a Visual Basic for Applications (VBA) module, use the **TransferSQLDatabase** method of the **DoCmd** object.</span></span>
+<span data-ttu-id="c0d6d-140">Verwenden Sie die **TransferSQLDatabase** -Methode des **DoCmd** -Objekts, um die **TransferSQLDatenbank** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.</span><span class="sxs-lookup"><span data-stu-id="c0d6d-140">To run the **TransferSQLDatabase** action in a Visual Basic for Applications (VBA) module, use the **TransferSQLDatabase** method of the **DoCmd** object.</span></span>
 

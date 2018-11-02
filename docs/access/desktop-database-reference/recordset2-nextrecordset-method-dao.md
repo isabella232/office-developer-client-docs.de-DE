@@ -1,5 +1,5 @@
 ---
-title: Recordset2.NextRecordset Method (DAO)
+title: Recordset2.NextRecordset-Methode (DAO)
 TOCTitle: NextRecordset Method
 ms:assetid: 33288131-d4f3-0159-1736-f401346087f3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192318(v=office.15)
@@ -10,31 +10,31 @@ f1_keywords:
 - dao360.chm1053575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 55f85466a3717a3e3212b0458b3fbed78eb99c0a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 3bbc70c132f0171b5aaeed02abdcdcc933926297
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888937"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920676"
 ---
-# <a name="recordset2nextrecordset-method-dao"></a><span data-ttu-id="968f4-102">Recordset2.NextRecordset Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="968f4-102">Recordset2.NextRecordset Method (DAO)</span></span>
+# <a name="recordset2nextrecordset-method-dao"></a><span data-ttu-id="5fd23-102">Recordset2.NextRecordset-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5fd23-102">Recordset2.NextRecordset method (DAO)</span></span>
 
 
-<span data-ttu-id="968f4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="968f4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5fd23-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5fd23-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="968f4-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="968f4-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="5fd23-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="5fd23-104">Syntax</span></span>
 
-<span data-ttu-id="968f4-105">*Ausdruck* . NextRecordset</span><span class="sxs-lookup"><span data-stu-id="968f4-105">*expression* .NextRecordset</span></span>
+<span data-ttu-id="5fd23-105">*Ausdruck* . NextRecordset</span><span class="sxs-lookup"><span data-stu-id="5fd23-105">*expression* .NextRecordset</span></span>
 
-<span data-ttu-id="968f4-106">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="968f4-106">*expression* A variable that represents a **Recordset2** object.</span></span>
+<span data-ttu-id="5fd23-106">*Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="5fd23-106">*expression* A variable that represents a **Recordset2** object.</span></span>
 
-### <a name="return-value"></a><span data-ttu-id="968f4-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="968f4-107">Return value</span></span>
+### <a name="return-value"></a><span data-ttu-id="5fd23-107">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="5fd23-107">Return value</span></span>
 
-<span data-ttu-id="968f4-108">Boolean</span><span class="sxs-lookup"><span data-stu-id="968f4-108">Boolean</span></span>
+<span data-ttu-id="5fd23-108">Boolean</span><span class="sxs-lookup"><span data-stu-id="5fd23-108">Boolean</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="968f4-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="968f4-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="5fd23-109">Hinweise</span><span class="sxs-lookup"><span data-stu-id="5fd23-109">Remarks</span></span>
 
-<span data-ttu-id="968f4-110">In einem ODBCDirect-Arbeitsbereich können Sie ein **Recordset-Objekt** mit mehr als eine select-Abfrage in das Argument Source der **OpenRecordset**oder die **[SQL](querydef-sql-property-dao.md)** -Eigenschaft des **[QueryDef](querydef-object-dao.md)** -Objekt, wie im folgenden Beispiel eine select-Abfrage öffnen.</span><span class="sxs-lookup"><span data-stu-id="968f4-110">In an ODBCDirect workspace, you can open a **Recordset** containing more than one select query in the source argument of **OpenRecordset**, or the **[SQL](querydef-sql-property-dao.md)** property of a select query **[QueryDef](querydef-object-dao.md)** object, as in the following example.</span></span>
+<span data-ttu-id="5fd23-110">In einem ODBCDirect-Arbeitsbereich können Sie ein **Recordset-Objekt** mit mehr als eine select-Abfrage in das Argument Source der **OpenRecordset**oder die **[SQL](querydef-sql-property-dao.md)** -Eigenschaft des **[QueryDef](querydef-object-dao.md)** -Objekt, wie im folgenden Beispiel eine select-Abfrage öffnen.</span><span class="sxs-lookup"><span data-stu-id="5fd23-110">In an ODBCDirect workspace, you can open a **Recordset** containing more than one select query in the source argument of **OpenRecordset**, or the **[SQL](querydef-sql-property-dao.md)** property of a select query **[QueryDef](querydef-object-dao.md)** object, as in the following example.</span></span>
 
 ```sql
     SELECT LastName, FirstName FROM Authors 
@@ -43,15 +43,15 @@ ms.locfileid: "25888937"
     WHERE Pub_ID = 9999 
 ```
 
-<span data-ttu-id="968f4-p101">Das zurückgegebene **Recordset** wird mit den Ergebnissen der ersten Abfrage geöffnet. Mit der **NextRecordset**-Methode können Sie die resultierenden Datensatzgruppen aus nachfolgenden Abfragen abrufen.</span><span class="sxs-lookup"><span data-stu-id="968f4-p101">The returned **Recordset** will open with the results of the first query. To obtain the result sets of records from subsequent queries, use the **NextRecordset** method.</span></span>
+<span data-ttu-id="5fd23-p101">Das zurückgegebene **Recordset** wird mit den Ergebnissen der ersten Abfrage geöffnet. Mit der **NextRecordset**-Methode können Sie die resultierenden Datensatzgruppen aus nachfolgenden Abfragen abrufen.</span><span class="sxs-lookup"><span data-stu-id="5fd23-p101">The returned **Recordset** will open with the results of the first query. To obtain the result sets of records from subsequent queries, use the **NextRecordset** method.</span></span>
 
-<span data-ttu-id="968f4-p102">Sind mehrere Datensätze verfügbar (der **OpenRecordset**-Aufruf oder die **SQL**-Eigenschaft enthielt also eine weitere Auswahlabfrage), werden die von der nächsten Abfrage zurückgegebenen Datensätze in das **Recordset** geladen, und **NextRecordset** gibt **True** zurück, was die Verfügbarkeit der Datensätze angibt. Sind keine Datensätze mehr verfügbar (d. h. die Ergebnisse der letzten Auswahlabfrage wurden in das **Recordset**-Objekt geladen), dann gibt **NextRecordset** den Wert **False** zurück, und **Recordset** ist leer.</span><span class="sxs-lookup"><span data-stu-id="968f4-p102">If more records are available (that is, there was another select query in the **OpenRecordset** call or in the **SQL** property), the records returned from the next query will be loaded into the **Recordset**, and **NextRecordset** will return **True**, indicating that the records are available. When no more records are available (that is, results of the last select query have been loaded into the **Recordset**), then **NextRecordset** will return **False**, and the **Recordset** will be empty.</span></span>
+<span data-ttu-id="5fd23-p102">Sind mehrere Datensätze verfügbar (der **OpenRecordset**-Aufruf oder die **SQL**-Eigenschaft enthielt also eine weitere Auswahlabfrage), werden die von der nächsten Abfrage zurückgegebenen Datensätze in das **Recordset** geladen, und **NextRecordset** gibt **True** zurück, was die Verfügbarkeit der Datensätze angibt. Sind keine Datensätze mehr verfügbar (d. h. die Ergebnisse der letzten Auswahlabfrage wurden in das **Recordset**-Objekt geladen), dann gibt **NextRecordset** den Wert **False** zurück, und **Recordset** ist leer.</span><span class="sxs-lookup"><span data-stu-id="5fd23-p102">If more records are available (that is, there was another select query in the **OpenRecordset** call or in the **SQL** property), the records returned from the next query will be loaded into the **Recordset**, and **NextRecordset** will return **True**, indicating that the records are available. When no more records are available (that is, results of the last select query have been loaded into the **Recordset**), then **NextRecordset** will return **False**, and the **Recordset** will be empty.</span></span>
 
-<span data-ttu-id="968f4-p103">Zum Leeren des Inhalts eines [Recordset](connection-cancel-method-dao.md)-Objekts können Sie auch die \*\*\*\*Cancel\*\*\*\* -Methode verwenden. Mit **Cancel** werden auch die noch nicht geladenen Datensätze geleert.</span><span class="sxs-lookup"><span data-stu-id="968f4-p103">You can also use the **[Cancel](connection-cancel-method-dao.md)** method to flush the contents of a **Recordset**. However, **Cancel** also flushes any additional records not yet loaded.</span></span>
+<span data-ttu-id="5fd23-p103">Zum Leeren des Inhalts eines [Recordset](connection-cancel-method-dao.md)-Objekts können Sie auch die \*\*\*\*Cancel\*\*\*\* -Methode verwenden. Mit **Cancel** werden auch die noch nicht geladenen Datensätze geleert.</span><span class="sxs-lookup"><span data-stu-id="5fd23-p103">You can also use the **[Cancel](connection-cancel-method-dao.md)** method to flush the contents of a **Recordset**. However, **Cancel** also flushes any additional records not yet loaded.</span></span>
 
-## <a name="example"></a><span data-ttu-id="968f4-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="968f4-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5fd23-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="5fd23-117">Example</span></span>
 
-<span data-ttu-id="968f4-p104">Dieses Beispiel zeigt mit der **NextRecordset**-Methode die Daten aus einer SELECT-Verbundabfrage an. Die **DefaultCursorDriver**-Eigenschaft muss beim Ausführen solcher Abfragen auf **dbUseODBCCursor** festgelegt sein. Die **NextRecordset**-Methode gibt auch dann **True** zurück, wenn einige oder alle der SELECT-Anweisungen keine Datensätze zurückgeben; **False** wird erst zurückgegeben, nachdem jede einzelne SQL-Klausel überprüft wurde.</span><span class="sxs-lookup"><span data-stu-id="968f4-p104">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
+<span data-ttu-id="5fd23-p104">Dieses Beispiel zeigt mit der **NextRecordset**-Methode die Daten aus einer SELECT-Verbundabfrage an. Die **DefaultCursorDriver**-Eigenschaft muss beim Ausführen solcher Abfragen auf **dbUseODBCCursor** festgelegt sein. Die **NextRecordset**-Methode gibt auch dann **True** zurück, wenn einige oder alle der SELECT-Anweisungen keine Datensätze zurückgeben; **False** wird erst zurückgegeben, nachdem jede einzelne SQL-Klausel überprüft wurde.</span><span class="sxs-lookup"><span data-stu-id="5fd23-p104">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
 
 ```vb
     Sub NextRecordsetX() 
@@ -108,7 +108,7 @@ ms.locfileid: "25888937"
 
 <br/>
 
-<span data-ttu-id="968f4-p105">Diese Aufgabe können Sie auch dadurch durchführen, dass Sie eine vorbereitete Anweisung mit der verbundenen SQL-Anweisung erstellen. Die CacheSize-Eigenschaft des QueryDef-Objekts muss auf 1 festgelegt sein, und das Recordset-Objekt muss schreibgeschützt und vom Typ Vorwärts sein.</span><span class="sxs-lookup"><span data-stu-id="968f4-p105">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
+<span data-ttu-id="5fd23-p105">Diese Aufgabe können Sie auch dadurch durchführen, dass Sie eine vorbereitete Anweisung mit der verbundenen SQL-Anweisung erstellen. Die CacheSize-Eigenschaft des QueryDef-Objekts muss auf 1 festgelegt sein, und das Recordset-Objekt muss schreibgeschützt und vom Typ Vorwärts sein.</span><span class="sxs-lookup"><span data-stu-id="5fd23-p105">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
 
 ```vb 
 Sub NextRecordsetX2() 

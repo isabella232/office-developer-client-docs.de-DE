@@ -1,5 +1,5 @@
 ---
-title: Index.DistinctCount Property (DAO)
+title: Index.DistinctCount-Eigenschaft (DAO)
 TOCTitle: DistinctCount Property
 ms:assetid: 24cb7247-76b4-1fce-c3c4-892f16634eff
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191836(v=office.15)
@@ -10,34 +10,34 @@ f1_keywords:
 - dao360.chm1053119
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2e609090e66a9bfd5b4b37d8e8e8a5546cc8469a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 62c8681baebf0c1959fcb86df91d61387070adc8
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876890"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25923644"
 ---
-# <a name="indexdistinctcount-property-dao"></a><span data-ttu-id="8d620-102">Index.DistinctCount Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="8d620-102">Index.DistinctCount Property (DAO)</span></span>
+# <a name="indexdistinctcount-property-dao"></a><span data-ttu-id="f899b-102">Index.DistinctCount-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f899b-102">Index.DistinctCount property (DAO)</span></span>
 
-<span data-ttu-id="8d620-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8d620-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f899b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f899b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="8d620-104">Gibt einen Wert zurück, der die Anzahl von eindeutigen, in der verknüpften Tabelle eingeschlossen Werten für das **[Index](index-object-dao.md)** -Objekt angibt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="8d620-104">Returns a value that indicates the number of unique values for the **[Index](index-object-dao.md)** object that are included in the associated table (Microsoft Access workspaces only).</span></span>
+<span data-ttu-id="f899b-104">Gibt einen Wert zurück, der die Anzahl von eindeutigen, in der verknüpften Tabelle eingeschlossen Werten für das **[Index](index-object-dao.md)** -Objekt angibt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="f899b-104">Returns a value that indicates the number of unique values for the **[Index](index-object-dao.md)** object that are included in the associated table (Microsoft Access workspaces only).</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="8d620-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="8d620-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f899b-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="f899b-105">Syntax</span></span>
 
-<span data-ttu-id="8d620-106">*Ausdruck* . DistinctCount</span><span class="sxs-lookup"><span data-stu-id="8d620-106">*expression* .DistinctCount</span></span>
+<span data-ttu-id="f899b-106">*Ausdruck* . DistinctCount</span><span class="sxs-lookup"><span data-stu-id="f899b-106">*expression* .DistinctCount</span></span>
 
-<span data-ttu-id="8d620-107">*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8d620-107">*expression* A variable that represents an **Index** object.</span></span>
+<span data-ttu-id="f899b-107">*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f899b-107">*expression* A variable that represents an **Index** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="8d620-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="8d620-108">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="f899b-108">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="f899b-108">Remarks</span></span>
 
-<span data-ttu-id="8d620-p101">Überprüfen Sie die **DistinctCount**-Eigenschaft, um die Anzahl von eindeutigen Werten oder Schlüsseln in einem Index zu ermitteln. Jeder Schlüssel wird nur einmal gezählt, obwohl der Wert mehrmals vorkommen kann, falls der Index doppelte Werte zulässt. Diese Informationen sind in Anwendungen nützlich, die den Zugriff auf Daten durch eine Auswertung von Indexinformationen zu optimieren versuchen. Die Anzahl von eindeutigen Werten wird auch als Kardinalität eines **Index**-Objekts bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="8d620-p101">Check the **DistinctCount** property to determine the number of unique values, or keys, in an index. Any key is counted only once, even though there may be multiple occurrences of that value if the index permits duplicate values. This information is useful in applications that attempt to optimize data access by evaluating index information. The number of unique values is also known as the cardinality of an **Index** object.</span></span>
+<span data-ttu-id="f899b-p101">Überprüfen Sie die **DistinctCount**-Eigenschaft, um die Anzahl von eindeutigen Werten oder Schlüsseln in einem Index zu ermitteln. Jeder Schlüssel wird nur einmal gezählt, obwohl der Wert mehrmals vorkommen kann, falls der Index doppelte Werte zulässt. Diese Informationen sind in Anwendungen nützlich, die den Zugriff auf Daten durch eine Auswertung von Indexinformationen zu optimieren versuchen. Die Anzahl von eindeutigen Werten wird auch als Kardinalität eines **Index**-Objekts bezeichnet.</span><span class="sxs-lookup"><span data-stu-id="f899b-p101">Check the **DistinctCount** property to determine the number of unique values, or keys, in an index. Any key is counted only once, even though there may be multiple occurrences of that value if the index permits duplicate values. This information is useful in applications that attempt to optimize data access by evaluating index information. The number of unique values is also known as the cardinality of an **Index** object.</span></span>
 
-<span data-ttu-id="8d620-p102">Die **DistinctCount**-Eigenschaft gibt nicht immer die tatsächliche Anzahl von Schlüsseln zu einer bestimmten Zeit wieder. Eine Änderung, die z. B. durch einen Rollback einer Transaktion verursacht wurde, wird gegebenenfalls nicht sofort in der **DistinctCount**-Eigenschaft wiedergegeben. Möglicherweise gibt der Wert der **DistinctCount**-Eigenschaft auch das Löschen von Datensätzen mit eindeutigen Schlüsseln nicht wieder. Die Zahl ist sofort richtig, nachdem Sie die **[CreateIndex](tabledef-createindex-method-dao.md)** -Methode angewendet haben.</span><span class="sxs-lookup"><span data-stu-id="8d620-p102">The **DistinctCount** property won't always reflect the actual number of keys at a particular time. For example, a change caused by a rolled back transaction won't be reflected immediately in the **DistinctCount** property. The **DistinctCount** property value also may not reflect the deletion of records with unique keys. The number will be accurate immediately after you use the **[CreateIndex](tabledef-createindex-method-dao.md)** method.</span></span>
+<span data-ttu-id="f899b-p102">Die **DistinctCount**-Eigenschaft gibt nicht immer die tatsächliche Anzahl von Schlüsseln zu einer bestimmten Zeit wieder. Eine Änderung, die z. B. durch einen Rollback einer Transaktion verursacht wurde, wird gegebenenfalls nicht sofort in der **DistinctCount**-Eigenschaft wiedergegeben. Möglicherweise gibt der Wert der **DistinctCount**-Eigenschaft auch das Löschen von Datensätzen mit eindeutigen Schlüsseln nicht wieder. Die Zahl ist sofort richtig, nachdem Sie die **[CreateIndex](tabledef-createindex-method-dao.md)** -Methode angewendet haben.</span><span class="sxs-lookup"><span data-stu-id="f899b-p102">The **DistinctCount** property won't always reflect the actual number of keys at a particular time. For example, a change caused by a rolled back transaction won't be reflected immediately in the **DistinctCount** property. The **DistinctCount** property value also may not reflect the deletion of records with unique keys. The number will be accurate immediately after you use the **[CreateIndex](tabledef-createindex-method-dao.md)** method.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8d620-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8d620-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f899b-117">Beispiel</span><span class="sxs-lookup"><span data-stu-id="f899b-117">Example</span></span>
 
-<span data-ttu-id="8d620-p103">Dieses Beispiel veranschaulicht, wie Sie mit der DistinctCount-Eigenschaft die Anzahl von eindeutigen Werten in einem Index-Objekt ermitteln können. Dieser Wert stimmt jedoch nur direkt nachdem Sie das Index-Objekt erstellt haben. Er bleibt richtig, falls sich keine Schlüssel ändern oder wenn neue Schlüssel hinzugefügt und keine alten Schlüssel gelöscht werden; andernfalls ist er nicht zuverlässig. (Wenn diese Prozedur mehrmals ausgeführt wird, zeigt sich die Auswirkung auf die Werte der DistinctCount-Eigenschaft der vorhandenen Index-Objekte.)</span><span class="sxs-lookup"><span data-stu-id="8d620-p103">This example uses the **DistinctCount** property to show how you can determine the number of unique values in an **Index** object. However, this value is only accurate immediately after creating the **Index**. It will remain accurate if no keys change, or if new keys are added and no old keys are deleted; otherwise, it will not be reliable. (If this procedure is run several times, you can see the effect on the **DistinctCount** property values of the existing Index objects.)</span></span>
+<span data-ttu-id="f899b-p103">Dieses Beispiel veranschaulicht, wie Sie mit der DistinctCount-Eigenschaft die Anzahl von eindeutigen Werten in einem Index-Objekt ermitteln können. Dieser Wert stimmt jedoch nur direkt nachdem Sie das Index-Objekt erstellt haben. Er bleibt richtig, falls sich keine Schlüssel ändern oder wenn neue Schlüssel hinzugefügt und keine alten Schlüssel gelöscht werden; andernfalls ist er nicht zuverlässig. (Wenn diese Prozedur mehrmals ausgeführt wird, zeigt sich die Auswirkung auf die Werte der DistinctCount-Eigenschaft der vorhandenen Index-Objekte.)</span><span class="sxs-lookup"><span data-stu-id="f899b-p103">This example uses the **DistinctCount** property to show how you can determine the number of unique values in an **Index** object. However, this value is only accurate immediately after creating the **Index**. It will remain accurate if no keys change, or if new keys are added and no old keys are deleted; otherwise, it will not be reliable. (If this procedure is run several times, you can see the effect on the **DistinctCount** property values of the existing Index objects.)</span></span>
 
 ```vb
     Sub DistinctCountX() 

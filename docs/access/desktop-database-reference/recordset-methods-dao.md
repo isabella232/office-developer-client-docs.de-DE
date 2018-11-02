@@ -6,65 +6,65 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125237(v=office.15)
 ms:contentKeyID: 52073361
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ac41f8f0db13e4972ffa5a787e5d63fa0bb1af59
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 696d3fe0d1b9bf67df3f12608f4bd7ba560d0dae
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880362"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920753"
 ---
-# <a name="recordset-methods-dao"></a><span data-ttu-id="5b05f-102">Recordset-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-102">Recordset Methods (DAO)</span></span>
+# <a name="recordset-methods-dao"></a><span data-ttu-id="1d448-102">Recordset-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-102">Recordset methods (DAO)</span></span>
 
 
-<span data-ttu-id="5b05f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5b05f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="1d448-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1d448-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="5b05f-104">Recordset.AddNew-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-104">Recordset.AddNew Method (DAO)</span></span>](recordset-addnew-method-dao.md)
+  - [<span data-ttu-id="1d448-104">Recordset.AddNew-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-104">Recordset.AddNew method (DAO)</span></span>](recordset-addnew-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-105">Recordset.Cancel Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-105">Recordset.Cancel Method (DAO)</span></span>](recordset-cancel-method-dao.md)
+  - [<span data-ttu-id="1d448-105">Recordset.Cancel-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-105">Recordset.Cancel method (DAO)</span></span>](recordset-cancel-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-106">Recordset.CancelUpdate Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-106">Recordset.CancelUpdate Method (DAO)</span></span>](recordset-cancelupdate-method-dao.md)
+  - [<span data-ttu-id="1d448-106">Recordset.CancelUpdate-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-106">Recordset.CancelUpdate method (DAO)</span></span>](recordset-cancelupdate-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-107">Recordset.Clone-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-107">Recordset.Clone Method (DAO)</span></span>](recordset-clone-method-dao.md)
+  - [<span data-ttu-id="1d448-107">Recordset.Clone-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-107">Recordset.Clone method (DAO)</span></span>](recordset-clone-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-108">Recordset.Close Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-108">Recordset.Close Method (DAO)</span></span>](recordset-close-method-dao.md)
+  - [<span data-ttu-id="1d448-108">Recordset.Close-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-108">Recordset.Close method (DAO)</span></span>](recordset-close-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-109">Recordset.CopyQueryDef Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-109">Recordset.CopyQueryDef Method (DAO)</span></span>](recordset-copyquerydef-method-dao.md)
+  - [<span data-ttu-id="1d448-109">Recordset.CopyQueryDef-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-109">Recordset.CopyQueryDef method (DAO)</span></span>](recordset-copyquerydef-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-110">Recordset.Delete Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-110">Recordset.Delete Method (DAO)</span></span>](recordset-delete-method-dao.md)
+  - [<span data-ttu-id="1d448-110">Recordset.Delete-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-110">Recordset.Delete method (DAO)</span></span>](recordset-delete-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-111">Recordset.Edit-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-111">Recordset.Edit Method (DAO)</span></span>](recordset-edit-method-dao.md)
+  - [<span data-ttu-id="1d448-111">Recordset.Edit-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-111">Recordset.Edit method (DAO)</span></span>](recordset-edit-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-112">Recordset.FillCache Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-112">Recordset.FillCache Method (DAO)</span></span>](recordset-fillcache-method-dao.md)
+  - [<span data-ttu-id="1d448-112">Recordset.FillCache-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-112">Recordset.FillCache method (DAO)</span></span>](recordset-fillcache-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-113">Recordset.FindFirst-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-113">Recordset.FindFirst Method (DAO)</span></span>](recordset-findfirst-method-dao.md)
+  - [<span data-ttu-id="1d448-113">Recordset.FindFirst-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-113">Recordset.FindFirst method (DAO)</span></span>](recordset-findfirst-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-114">Recordset.FindLast-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-114">Recordset.FindLast Method (DAO)</span></span>](recordset-findlast-method-dao.md)
+  - [<span data-ttu-id="1d448-114">Recordset.FindLast-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-114">Recordset.FindLast method (DAO)</span></span>](recordset-findlast-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-115">Recordset.FindNext-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-115">Recordset.FindNext Method (DAO)</span></span>](recordset-findnext-method-dao.md)
+  - [<span data-ttu-id="1d448-115">Recordset.FindNext-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-115">Recordset.FindNext method (DAO)</span></span>](recordset-findnext-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-116">Recordset.FindPrevious-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-116">Recordset.FindPrevious Method (DAO)</span></span>](recordset-findprevious-method-dao.md)
+  - [<span data-ttu-id="1d448-116">Recordset.FindPrevious-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-116">Recordset.FindPrevious method (DAO)</span></span>](recordset-findprevious-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-117">Recordset.GetRows-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-117">Recordset.GetRows Method (DAO)</span></span>](recordset-getrows-method-dao.md)
+  - [<span data-ttu-id="1d448-117">Recordset.GetRows-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-117">Recordset.GetRows method (DAO)</span></span>](recordset-getrows-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-118">Recordset.Move-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-118">Recordset.Move Method (DAO)</span></span>](recordset-move-method-dao.md)
+  - [<span data-ttu-id="1d448-118">Recordset.Move-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-118">Recordset.Move method (DAO)</span></span>](recordset-move-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-119">Recordset.MoveFirst-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-119">Recordset.MoveFirst Method (DAO)</span></span>](recordset-movefirst-method-dao.md)
+  - [<span data-ttu-id="1d448-119">Recordset.MoveFirst-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-119">Recordset.MoveFirst method (DAO)</span></span>](recordset-movefirst-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-120">Recordset.MoveLast Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-120">Recordset.MoveLast Method (DAO)</span></span>](recordset-movelast-method-dao.md)
+  - [<span data-ttu-id="1d448-120">Recordset.MoveLast-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-120">Recordset.MoveLast method (DAO)</span></span>](recordset-movelast-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-121">Recordset.MoveNext-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-121">Recordset.MoveNext Method (DAO)</span></span>](recordset-movenext-method-dao.md)
+  - [<span data-ttu-id="1d448-121">Recordset.MoveNext-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-121">Recordset.MoveNext method (DAO)</span></span>](recordset-movenext-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-122">Recordset.MovePrevious Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-122">Recordset.MovePrevious Method (DAO)</span></span>](recordset-moveprevious-method-dao.md)
+  - [<span data-ttu-id="1d448-122">Recordset.MovePrevious-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-122">Recordset.MovePrevious method (DAO)</span></span>](recordset-moveprevious-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-123">Recordset.NextRecordset Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-123">Recordset.NextRecordset Method (DAO)</span></span>](recordset-nextrecordset-method-dao.md)
+  - [<span data-ttu-id="1d448-123">Recordset.NextRecordset-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-123">Recordset.NextRecordset method (DAO)</span></span>](recordset-nextrecordset-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-124">Recordset.OpenRecordset-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-124">Recordset.OpenRecordset Method (DAO)</span></span>](recordset-openrecordset-method-dao.md)
+  - [<span data-ttu-id="1d448-124">Recordset.OpenRecordset-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-124">Recordset.OpenRecordset method (DAO)</span></span>](recordset-openrecordset-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-125">Recordset.Requery-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-125">Recordset.Requery Method (DAO)</span></span>](recordset-requery-method-dao.md)
+  - [<span data-ttu-id="1d448-125">Recordset.Requery-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-125">Recordset.Requery method (DAO)</span></span>](recordset-requery-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-126">Recordset.Seek-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-126">Recordset.Seek Method (DAO)</span></span>](recordset-seek-method-dao.md)
+  - [<span data-ttu-id="1d448-126">Recordset.Seek-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-126">Recordset.Seek method (DAO)</span></span>](recordset-seek-method-dao.md)
 
-  - [<span data-ttu-id="5b05f-127">Recordset.Update-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="5b05f-127">Recordset.Update Method (DAO)</span></span>](recordset-update-method-dao.md)
+  - [<span data-ttu-id="1d448-127">Recordset.Update-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d448-127">Recordset.Update method (DAO)</span></span>](recordset-update-method-dao.md)
 

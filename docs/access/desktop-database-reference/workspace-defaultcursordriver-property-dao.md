@@ -1,5 +1,5 @@
 ---
-title: Workspace.DefaultCursorDriver Property (DAO)
+title: Workspace.DefaultCursorDriver-Eigenschaft (DAO)
 TOCTitle: DefaultCursorDriver Property
 ms:assetid: 15a8356d-7ae0-3c8e-fbb7-2d8ad6d9a582
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845499(v=office.15)
@@ -10,34 +10,34 @@ f1_keywords:
 - dao360.chm1053582
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ce246b7693bdbb0dedc86dcad44dc6c0f6e15638
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 03379b3d4ab6be7252aea45a07dfae4b49471136
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872984"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922482"
 ---
-# <a name="workspacedefaultcursordriver-property-dao"></a><span data-ttu-id="26fa7-102">Workspace.DefaultCursorDriver Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="26fa7-102">Workspace.DefaultCursorDriver Property (DAO)</span></span>
+# <a name="workspacedefaultcursordriver-property-dao"></a><span data-ttu-id="43654-102">Workspace.DefaultCursorDriver-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="43654-102">Workspace.DefaultCursorDriver property (DAO)</span></span>
 
 
-<span data-ttu-id="26fa7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="26fa7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="43654-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="43654-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
-## <a name="syntax"></a><span data-ttu-id="26fa7-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="26fa7-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="43654-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="43654-104">Syntax</span></span>
 
-<span data-ttu-id="26fa7-105">*Ausdruck* . DefaultCursorDriver</span><span class="sxs-lookup"><span data-stu-id="26fa7-105">*expression* .DefaultCursorDriver</span></span>
+<span data-ttu-id="43654-105">*Ausdruck* . DefaultCursorDriver</span><span class="sxs-lookup"><span data-stu-id="43654-105">*expression* .DefaultCursorDriver</span></span>
 
-<span data-ttu-id="26fa7-106">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="26fa7-106">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="43654-106">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="43654-106">*expression* A variable that represents a **Workspace** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="26fa7-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="26fa7-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="43654-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="43654-107">Remarks</span></span>
 
-<span data-ttu-id="26fa7-108">Die Einstellung oder der Rückgabewert kann auf eine der **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** -Konstanten festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="26fa7-108">The setting or return value can be set to one of the **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** constants.</span></span>
+<span data-ttu-id="43654-108">Die Einstellung oder der Rückgabewert kann auf eine der **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** -Konstanten festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="43654-108">The setting or return value can be set to one of the **[CursorDriverEnum](cursordriverenum-enumeration-dao.md)** constants.</span></span>
 
-<span data-ttu-id="26fa7-p101">Diese Eigenschafteneinstellung wirkt sich nur auf Verbindungen aus, die nach dem Festlegen der Eigenschaft eingerichtet wurden. Das Ändern der **DefaultCursorDriver**-Eigenschaft hat keine Auswirkung auf vorhandene Verbindungen.</span><span class="sxs-lookup"><span data-stu-id="26fa7-p101">This property setting only affects connections established after the property has been set. Changing the **DefaultCursorDriver** property has no effect on existing connections.</span></span>
+<span data-ttu-id="43654-p101">Diese Eigenschafteneinstellung wirkt sich nur auf Verbindungen aus, die nach dem Festlegen der Eigenschaft eingerichtet wurden. Das Ändern der **DefaultCursorDriver**-Eigenschaft hat keine Auswirkung auf vorhandene Verbindungen.</span><span class="sxs-lookup"><span data-stu-id="43654-p101">This property setting only affects connections established after the property has been set. Changing the **DefaultCursorDriver** property has no effect on existing connections.</span></span>
 
-## <a name="example"></a><span data-ttu-id="26fa7-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="26fa7-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="43654-111">Beispiel</span><span class="sxs-lookup"><span data-stu-id="43654-111">Example</span></span>
 
-<span data-ttu-id="26fa7-p102">Dieses Beispiel zeigt mit der **NextRecordset**-Methode die Daten aus einer SELECT-Verbundabfrage an. Die **DefaultCursorDriver**-Eigenschaft muss beim Ausführen solcher Abfragen auf **dbUseODBCCursor** festgelegt sein. Die **NextRecordset**-Methode gibt auch dann **True** zurück, wenn einige oder alle der SELECT-Anweisungen keine Datensätze zurückgeben; **False** wird erst zurückgegeben, nachdem jede einzelne SQL-Klausel überprüft wurde.</span><span class="sxs-lookup"><span data-stu-id="26fa7-p102">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
+<span data-ttu-id="43654-p102">Dieses Beispiel zeigt mit der **NextRecordset**-Methode die Daten aus einer SELECT-Verbundabfrage an. Die **DefaultCursorDriver**-Eigenschaft muss beim Ausführen solcher Abfragen auf **dbUseODBCCursor** festgelegt sein. Die **NextRecordset**-Methode gibt auch dann **True** zurück, wenn einige oder alle der SELECT-Anweisungen keine Datensätze zurückgeben; **False** wird erst zurückgegeben, nachdem jede einzelne SQL-Klausel überprüft wurde.</span><span class="sxs-lookup"><span data-stu-id="43654-p102">This example uses the **NextRecordset** method to view the data from a compound SELECT query. The **DefaultCursorDriver** property must be set to **dbUseODBCCursor** when executing such queries. The **NextRecordset** method will return **True** even if some or all of the SELECT statements return zero records; it will return **False** only after all the individual SQL clauses have been checked.</span></span>
 
 ```vb
     Sub NextRecordsetX() 
@@ -94,7 +94,7 @@ ms.locfileid: "25872984"
 
 <br/>
 
-<span data-ttu-id="26fa7-p103">Diese Aufgabe können Sie auch dadurch durchführen, dass Sie eine vorbereitete Anweisung mit der verbundenen SQL-Anweisung erstellen. Die CacheSize-Eigenschaft des QueryDef-Objekts muss auf 1 festgelegt sein, und das Recordset-Objekt muss schreibgeschützt und vom Typ Vorwärts sein.</span><span class="sxs-lookup"><span data-stu-id="26fa7-p103">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
+<span data-ttu-id="43654-p103">Diese Aufgabe können Sie auch dadurch durchführen, dass Sie eine vorbereitete Anweisung mit der verbundenen SQL-Anweisung erstellen. Die CacheSize-Eigenschaft des QueryDef-Objekts muss auf 1 festgelegt sein, und das Recordset-Objekt muss schreibgeschützt und vom Typ Vorwärts sein.</span><span class="sxs-lookup"><span data-stu-id="43654-p103">Another way to accomplish the same task would be to create a prepared statement containing the compound SQL statement. The **CacheSize** property of the **QueryDef** object must be set to 1, and the **Recordset** object must be forward-only and read-only.</span></span>
 
 ```vb 
 Sub NextRecordsetX2() 
@@ -160,7 +160,7 @@ End Sub
 
 <br/>
 
-<span data-ttu-id="26fa7-p104">In diesem Beispiel werden die Eigenschaften RecordStatus und DefaultCursorDriver verwendet, um zu zeigen, wie Änderungen eines lokalen Recordset-Objekts während einer Batchaktualisierung verfolgt werden. Zum Ausführen dieser Prozedur ist die RecordStatusOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="26fa7-p104">This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="43654-p104">In diesem Beispiel werden die Eigenschaften RecordStatus und DefaultCursorDriver verwendet, um zu zeigen, wie Änderungen eines lokalen Recordset-Objekts während einer Batchaktualisierung verfolgt werden. Zum Ausführen dieser Prozedur ist die RecordStatusOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="43654-p104">This example uses the **RecordStatus** and **DefaultCursorDriver** properties to show how changes to a local **Recordset** are tracked during batch updating. The RecordStatusOutput function is required for this procedure to run.</span></span>
 
 ```vb 
 Sub RecordStatusX() 

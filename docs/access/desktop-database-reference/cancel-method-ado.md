@@ -1,6 +1,6 @@
 ---
 title: Cancel-Methode (ADO)
-TOCTitle: Cancel Method (ADO)
+TOCTitle: Cancel method (ADO)
 ms:assetid: 747edc04-a5cc-3631-2d0b-82e7e41a76b7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249476(v=office.15)
 ms:contentKeyID: 48545662
@@ -10,29 +10,29 @@ f1_keywords:
 - ado210.chm1231032
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8ebdfe912f8a440f8935834256d4279a39f840f9
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 7ff92a041e785e116f6ad2c664ec7e62afada42f
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888384"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25927126"
 ---
-# <a name="cancel-method-ado"></a><span data-ttu-id="99fc4-102">Cancel-Methode (ADO)</span><span class="sxs-lookup"><span data-stu-id="99fc4-102">Cancel Method (ADO)</span></span>
+# <a name="cancel-method-ado"></a><span data-ttu-id="a7a0a-102">Cancel-Methode (ADO)</span><span class="sxs-lookup"><span data-stu-id="a7a0a-102">Cancel method (ADO)</span></span>
 
 
-<span data-ttu-id="99fc4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="99fc4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="a7a0a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a7a0a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="99fc4-104">Bricht die Ausführung eines ausstehenden asynchronen Methodenaufrufs ab.</span><span class="sxs-lookup"><span data-stu-id="99fc4-104">Cancels execution of a pending, asynchronous method call.</span></span>
+<span data-ttu-id="a7a0a-104">Bricht die Ausführung eines ausstehenden asynchronen Methodenaufrufs ab.</span><span class="sxs-lookup"><span data-stu-id="a7a0a-104">Cancels execution of a pending, asynchronous method call.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="99fc4-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="99fc4-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="a7a0a-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="a7a0a-105">Syntax</span></span>
 
-<span data-ttu-id="99fc4-106">- *Objekt*. Abbrechen</span><span class="sxs-lookup"><span data-stu-id="99fc4-106">*object*.Cancel</span></span>
+<span data-ttu-id="a7a0a-106">- *Objekt*. Abbrechen</span><span class="sxs-lookup"><span data-stu-id="a7a0a-106">*object*.Cancel</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="99fc4-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="99fc4-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a7a0a-107">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a7a0a-107">Remarks</span></span>
 
-<span data-ttu-id="99fc4-108">Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen Methodenaufrufs (d. h. einer mit der Option **adAsyncConnect**, **adAsyncExecute** oder **adAsyncFetch** aufgerufenen Methode) zu beenden.</span><span class="sxs-lookup"><span data-stu-id="99fc4-108">Use the **Cancel** method to terminate execution of an asynchronous method call (that is, a method invoked with the **adAsyncConnect**, **adAsyncExecute**, or **adAsyncFetch** option).</span></span>
+<span data-ttu-id="a7a0a-108">Verwenden Sie die **Cancel** -Methode, um die Ausführung eines asynchronen Methodenaufrufs (d. h. einer mit der Option **adAsyncConnect**, **adAsyncExecute** oder **adAsyncFetch** aufgerufenen Methode) zu beenden.</span><span class="sxs-lookup"><span data-stu-id="a7a0a-108">Use the **Cancel** method to terminate execution of an asynchronous method call (that is, a method invoked with the **adAsyncConnect**, **adAsyncExecute**, or **adAsyncFetch** option).</span></span>
 
-<span data-ttu-id="99fc4-109">In der folgenden Tabelle wird gezeigt, welcher Task beendet wird, wenn Sie die **Cancel** -Methode für einen bestimmten Objekttyp verwenden.</span><span class="sxs-lookup"><span data-stu-id="99fc4-109">The following table shows what task is terminated when you use the **Cancel** method on a particular type of object.</span></span>
+<span data-ttu-id="a7a0a-109">In der folgenden Tabelle wird gezeigt, welcher Task beendet wird, wenn Sie die **Cancel** -Methode für einen bestimmten Objekttyp verwenden.</span><span class="sxs-lookup"><span data-stu-id="a7a0a-109">The following table shows what task is terminated when you use the **Cancel** method on a particular type of object.</span></span>
 
 <table>
 <colgroup>
@@ -42,30 +42,30 @@ ms.locfileid: "25888384"
 <thead>
 <tr class="header">
 <th><p><br />
-<span data-ttu-id="99fc4-110"><em>Objekt</em></span><span class="sxs-lookup"><span data-stu-id="99fc4-110">If <em>object</em> is a</span></span></p></th>
-<th><p><span data-ttu-id="99fc4-111">Der letzte asynchrone Aufruf dieser Methode wird beendet</span><span class="sxs-lookup"><span data-stu-id="99fc4-111">The last asynchronous call to this method is terminated</span></span></p></th>
+<span data-ttu-id="a7a0a-110"><em>Objekt</em></span><span class="sxs-lookup"><span data-stu-id="a7a0a-110">If <em>object</em> is a</span></span></p></th>
+<th><p><span data-ttu-id="a7a0a-111">Der letzte asynchrone Aufruf dieser Methode wird beendet</span><span class="sxs-lookup"><span data-stu-id="a7a0a-111">The last asynchronous call to this method is terminated</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="99fc4-112"><a href="command-object-ado.md">Command</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-112"><a href="command-object-ado.md">Command</a></span></span></p></td>
-<td><p><span data-ttu-id="99fc4-113"><a href="https://msdn.microsoft.com/library/jj248785(v=office.15)">Ausführen</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-113"><a href="https://msdn.microsoft.com/library/jj248785(v=office.15)">Execute</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-112"><a href="command-object-ado.md">Command</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-112"><a href="command-object-ado.md">Command</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-113"><a href="https://msdn.microsoft.com/library/jj248785(v=office.15)">Ausführen</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-113"><a href="https://msdn.microsoft.com/library/jj248785(v=office.15)">Execute</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99fc4-114"><a href="connection-object-ado.md">Connection</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-114"><a href="connection-object-ado.md">Connection</a></span></span></p></td>
-<td><p><span data-ttu-id="99fc4-115"><a href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Execute</a> oder <a href="open-method-ado-connection.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-115"><a href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Execute</a> or <a href="open-method-ado-connection.md">Open</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-114"><a href="connection-object-ado.md">Connection</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-114"><a href="connection-object-ado.md">Connection</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-115"><a href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Execute</a> oder <a href="open-method-ado-connection.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-115"><a href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Execute</a> or <a href="open-method-ado-connection.md">Open</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99fc4-116"><a href="record-object-ado.md">Record</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-116"><a href="record-object-ado.md">Record</a></span></span></p></td>
-<td><p><span data-ttu-id="99fc4-117"><a href="copyrecord-method-ado.md">CopyRecord</a>, <a href="deleterecord-method-ado.md">DeleteRecord</a>, <a href="moverecord-method-ado.md">MoveRecord</a> oder <a href="open-method-ado-record.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-117"><a href="copyrecord-method-ado.md">CopyRecord</a>, <a href="deleterecord-method-ado.md">DeleteRecord</a>, <a href="moverecord-method-ado.md">MoveRecord</a>, or <a href="open-method-ado-record.md">Open</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-116"><a href="record-object-ado.md">Record</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-116"><a href="record-object-ado.md">Record</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-117"><a href="copyrecord-method-ado.md">CopyRecord</a>, <a href="deleterecord-method-ado.md">DeleteRecord</a>, <a href="moverecord-method-ado.md">MoveRecord</a> oder <a href="open-method-ado-record.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-117"><a href="copyrecord-method-ado.md">CopyRecord</a>, <a href="deleterecord-method-ado.md">DeleteRecord</a>, <a href="moverecord-method-ado.md">MoveRecord</a>, or <a href="open-method-ado-record.md">Open</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="99fc4-118"><a href="recordset-object-ado.md">Recordset</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-118"><a href="recordset-object-ado.md">Recordset</a></span></span></p></td>
-<td><p><span data-ttu-id="99fc4-119"><a href="open-method-ado-recordset.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-119"><a href="open-method-ado-recordset.md">Open</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-118"><a href="recordset-object-ado.md">Recordset</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-118"><a href="recordset-object-ado.md">Recordset</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-119"><a href="open-method-ado-recordset.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-119"><a href="open-method-ado-recordset.md">Open</a></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="99fc4-120"><a href="stream-object-ado.md">Stream</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-120"><a href="stream-object-ado.md">Stream</a></span></span></p></td>
-<td><p><span data-ttu-id="99fc4-121"><a href="open-method-ado-stream.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="99fc4-121"><a href="open-method-ado-stream.md">Open</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-120"><a href="stream-object-ado.md">Stream</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-120"><a href="stream-object-ado.md">Stream</a></span></span></p></td>
+<td><p><span data-ttu-id="a7a0a-121"><a href="open-method-ado-stream.md">Open</a></span><span class="sxs-lookup"><span data-stu-id="a7a0a-121"><a href="open-method-ado-stream.md">Open</a></span></span></p></td>
 </tr>
 </tbody>
 </table>

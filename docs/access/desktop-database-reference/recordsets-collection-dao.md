@@ -1,46 +1,46 @@
 ---
-title: Recordsets Collection (DAO)
+title: Recordsets-Auflistung (DAO)
 TOCTitle: Recordsets Collection
 ms:assetid: 246d9a78-4ce8-6393-982b-77ac00cd85bb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff191819(v=office.15)
 ms:contentKeyID: 48543756
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1a32c52f60ed8c7bd68f32ed9986638bffcdec84
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 1b32ef33205e23656e7bcb86d7384876e4c404c1
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869001"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25924526"
 ---
-# <a name="recordsets-collection-dao"></a><span data-ttu-id="e163e-102">Recordsets Collection (DAO)</span><span class="sxs-lookup"><span data-stu-id="e163e-102">Recordsets Collection (DAO)</span></span>
+# <a name="recordsets-collection-dao"></a><span data-ttu-id="97d27-102">Recordsets-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="97d27-102">Recordsets collection (DAO)</span></span>
 
-<span data-ttu-id="e163e-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e163e-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="97d27-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="97d27-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e163e-104">Eine **Recordsets**-Auflistung enthält alle geöffneten **Recordset**-Objekte in einem **Connection**- oder **Database**-Objekt.</span><span class="sxs-lookup"><span data-stu-id="e163e-104">A **Recordsets** collection contains all open **Recordset** objects in a **Connection** or **Database** object.</span></span>
+<span data-ttu-id="97d27-104">Eine **Recordsets**-Auflistung enthält alle geöffneten **Recordset**-Objekte in einem **Connection**- oder **Database**-Objekt.</span><span class="sxs-lookup"><span data-stu-id="97d27-104">A **Recordsets** collection contains all open **Recordset** objects in a **Connection** or **Database** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="e163e-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e163e-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="97d27-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="97d27-105">Remarks</span></span>
 
-<span data-ttu-id="e163e-106">Wenn Sie DAO-Objekte verwenden, bearbeiten Sie Daten nahezu vollständig unter Verwendung von **Recordset**-Objekten.</span><span class="sxs-lookup"><span data-stu-id="e163e-106">When you use DAO objects, you manipulate data almost entirely using **Recordset** objects.</span></span>
+<span data-ttu-id="97d27-106">Wenn Sie DAO-Objekte verwenden, bearbeiten Sie Daten nahezu vollständig unter Verwendung von **Recordset**-Objekten.</span><span class="sxs-lookup"><span data-stu-id="97d27-106">When you use DAO objects, you manipulate data almost entirely using **Recordset** objects.</span></span>
 
-<span data-ttu-id="e163e-107">Der **Recordsets**-Auflistung wird automatisch ein neues **Recordset**-Objekt hinzugefügt, wenn Sie das **Recordset**-Objekt öffnen, und automatisch daraus entfernt, wenn Sie es schließen.</span><span class="sxs-lookup"><span data-stu-id="e163e-107">A new **Recordset** object is automatically added to the **Recordsets** collection when you open the **Recordset** object, and is automatically removed when you close it.</span></span>
+<span data-ttu-id="97d27-107">Der **Recordsets**-Auflistung wird automatisch ein neues **Recordset**-Objekt hinzugefügt, wenn Sie das **Recordset**-Objekt öffnen, und automatisch daraus entfernt, wenn Sie es schließen.</span><span class="sxs-lookup"><span data-stu-id="97d27-107">A new **Recordset** object is automatically added to the **Recordsets** collection when you open the **Recordset** object, and is automatically removed when you close it.</span></span>
 
-<span data-ttu-id="e163e-p101">Sie können so viele **Recordset**-Objektvariablen erstellen wie nötig. Unterschiedliche **Recordset**-Objekte können ohne Konflikte auf dieselben Tabellen, Abfragen oder Felder zugreifen.</span><span class="sxs-lookup"><span data-stu-id="e163e-p101">You can create as many **Recordset** object variables as needed. Different **Recordset** objects can access the same tables, queries, and fields without conflicting.</span></span>
+<span data-ttu-id="97d27-p101">Sie können so viele **Recordset**-Objektvariablen erstellen wie nötig. Unterschiedliche **Recordset**-Objekte können ohne Konflikte auf dieselben Tabellen, Abfragen oder Felder zugreifen.</span><span class="sxs-lookup"><span data-stu-id="97d27-p101">You can create as many **Recordset** object variables as needed. Different **Recordset** objects can access the same tables, queries, and fields without conflicting.</span></span>
 
-<span data-ttu-id="e163e-110">Wenn Sie auf ein **Recordset**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:</span><span class="sxs-lookup"><span data-stu-id="e163e-110">To refer to a **Recordset** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="97d27-110">Wenn Sie auf ein **Recordset**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:</span><span class="sxs-lookup"><span data-stu-id="97d27-110">To refer to a **Recordset** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-- <span data-ttu-id="e163e-111">**Recordsets**(0)</span><span class="sxs-lookup"><span data-stu-id="e163e-111">**Recordsets**(0)</span></span>
+- <span data-ttu-id="97d27-111">**Recordsets**(0)</span><span class="sxs-lookup"><span data-stu-id="97d27-111">**Recordsets**(0)</span></span>
 
-- <span data-ttu-id="e163e-112">**Recordset-Objekte** ("Name")</span><span class="sxs-lookup"><span data-stu-id="e163e-112">**Recordsets**("name")</span></span>
+- <span data-ttu-id="97d27-112">**Recordset-Objekte** ("Name")</span><span class="sxs-lookup"><span data-stu-id="97d27-112">**Recordsets**("name")</span></span>
 
-- <span data-ttu-id="e163e-113">**Recordsets**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="e163e-113">**Recordsets**\!\[name\]</span></span>
+- <span data-ttu-id="97d27-113">**Recordsets**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="97d27-113">**Recordsets**\!\[name\]</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e163e-p102">[!HINWEIS] Sie können ein **Recordset**-Objekt derselben Datenquelle oder Datenbank mehrmals öffnen und dabei doppelte Namen in der **Recordsets**-Auflistung erstellen. Sie sollten Objektvariablen **Recordset**-Objekte zuweisen und mit Variablennamen auf sie verweisen.</span><span class="sxs-lookup"><span data-stu-id="e163e-p102">You can open a **Recordset** object from the same data source or database more than once, creating duplicate names in the **Recordsets** collection. You should assign **Recordset** objects to object variables and refer to them by variable name.</span></span>
+> <span data-ttu-id="97d27-p102">[!HINWEIS] Sie können ein **Recordset**-Objekt derselben Datenquelle oder Datenbank mehrmals öffnen und dabei doppelte Namen in der **Recordsets**-Auflistung erstellen. Sie sollten Objektvariablen **Recordset**-Objekte zuweisen und mit Variablennamen auf sie verweisen.</span><span class="sxs-lookup"><span data-stu-id="97d27-p102">You can open a **Recordset** object from the same data source or database more than once, creating duplicate names in the **Recordsets** collection. You should assign **Recordset** objects to object variables and refer to them by variable name.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e163e-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e163e-116">Example</span></span>
+## <a name="example"></a><span data-ttu-id="97d27-116">Beispiel</span><span class="sxs-lookup"><span data-stu-id="97d27-116">Example</span></span>
 
-<span data-ttu-id="e163e-117">Dieses Beispiel veranschaulicht Recordset-Objekte und die Recordsets-Auflistung, indem es vier verschiedene Typen von Recordsets-Objekten öffnet und die Recordsets-Auflistung des aktuellen Database-Objekts und dann die Properties-Auflistung der einzelnen Recordset-Objekte aufführt.</span><span class="sxs-lookup"><span data-stu-id="e163e-117">This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.</span></span>
+<span data-ttu-id="97d27-117">Dieses Beispiel veranschaulicht Recordset-Objekte und die Recordsets-Auflistung, indem es vier verschiedene Typen von Recordsets-Objekten öffnet und die Recordsets-Auflistung des aktuellen Database-Objekts und dann die Properties-Auflistung der einzelnen Recordset-Objekte aufführt.</span><span class="sxs-lookup"><span data-stu-id="97d27-117">This example demonstrates **Recordset** objects and the **Recordsets** collection by opening four different types of **Recordsets**, enumerating the Recordsets collection of the current **Database**, and enumerating the **Properties** collection of each **Recordset**.</span></span>
 
 ```vb
     Sub RecordsetX() 

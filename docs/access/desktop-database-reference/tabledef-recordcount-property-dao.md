@@ -1,34 +1,34 @@
 ---
-title: TableDef.RecordCount Property (DAO)
+title: TableDef.RecordCount-Eigenschaft (DAO)
 TOCTitle: RecordCount Property
 ms:assetid: f8804244-0134-fc1f-1f5f-4971afe17974
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff836946(v=office.15)
 ms:contentKeyID: 48548783
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7ef77f5882f4b215764a82d343d59f1f31487e58
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4b24aaa5aec9b17adc169c67733a19a9077a4930
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886116"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920921"
 ---
-# <a name="tabledefrecordcount-property-dao"></a><span data-ttu-id="ee293-102">TableDef.RecordCount Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="ee293-102">TableDef.RecordCount Property (DAO)</span></span>
+# <a name="tabledefrecordcount-property-dao"></a><span data-ttu-id="e8922-102">TableDef.RecordCount-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="e8922-102">TableDef.RecordCount property (DAO)</span></span>
 
 
-<span data-ttu-id="ee293-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="ee293-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e8922-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e8922-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="ee293-p101">Gibt die Gesamtzahl der Datensätze in einem **[TableDef](tabledef-object-dao.md)** -Objekt zurück. Schreibgeschützter **Long**-Wert.</span><span class="sxs-lookup"><span data-stu-id="ee293-p101">Returns the total number of records in a **[TableDef](tabledef-object-dao.md)** object. Read-only **Long**.</span></span>
+<span data-ttu-id="e8922-p101">Gibt die Gesamtzahl der Datensätze in einem **[TableDef](tabledef-object-dao.md)** -Objekt zurück. Schreibgeschützter **Long**-Wert.</span><span class="sxs-lookup"><span data-stu-id="e8922-p101">Returns the total number of records in a **[TableDef](tabledef-object-dao.md)** object. Read-only **Long**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="ee293-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="ee293-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="e8922-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="e8922-106">Syntax</span></span>
 
-<span data-ttu-id="ee293-107">*Ausdruck* . RecordCount</span><span class="sxs-lookup"><span data-stu-id="ee293-107">*expression* .RecordCount</span></span>
+<span data-ttu-id="e8922-107">*Ausdruck* . RecordCount</span><span class="sxs-lookup"><span data-stu-id="e8922-107">*expression* .RecordCount</span></span>
 
-<span data-ttu-id="ee293-108">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="ee293-108">*expression* A variable that represents a **TableDef** object.</span></span>
+<span data-ttu-id="e8922-108">*Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="e8922-108">*expression* A variable that represents a **TableDef** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="ee293-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="ee293-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8922-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e8922-109">Remarks</span></span>
 
-<span data-ttu-id="ee293-110">Die **RecordCount**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekts ohne Datensätze hat den Wert 0.</span><span class="sxs-lookup"><span data-stu-id="ee293-110">A **Recordset** or **TableDef** object with no records has a **RecordCount** property setting of 0.</span></span>
+<span data-ttu-id="e8922-110">Die **RecordCount**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekts ohne Datensätze hat den Wert 0.</span><span class="sxs-lookup"><span data-stu-id="e8922-110">A **Recordset** or **TableDef** object with no records has a **RecordCount** property setting of 0.</span></span>
 
-<span data-ttu-id="ee293-111">Wenn Sie verknüpfte**TableDef**-Objekte verwenden, ist der Wert der **RecordCount**-Eigenschaft immer –1.</span><span class="sxs-lookup"><span data-stu-id="ee293-111">When you work with linked**TableDef** objects, the **RecordCount** property setting is always –1.</span></span>
+<span data-ttu-id="e8922-111">Wenn Sie verknüpfte**TableDef**-Objekte verwenden, ist der Wert der **RecordCount**-Eigenschaft immer –1.</span><span class="sxs-lookup"><span data-stu-id="e8922-111">When you work with linked**TableDef** objects, the **RecordCount** property setting is always –1.</span></span>
 

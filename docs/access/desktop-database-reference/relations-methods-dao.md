@@ -1,28 +1,28 @@
 ---
-title: Relations Methods (DAO)
+title: Relations-Methoden (DAO)
 TOCTitle: Methods
 ms:assetid: 4581d01e-afa5-438b-847b-58ef8c8e7772
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124596(v=office.15)
 ms:contentKeyID: 52072219
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1b6e329b28d4a708f3825b55cf15476059a82593
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9f540fda4cfa59e7910905751dfe6b0a90f57b3a
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867181"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920305"
 ---
-# <a name="relations-methods-dao"></a><span data-ttu-id="7277c-102">Relations Methods (DAO)</span><span class="sxs-lookup"><span data-stu-id="7277c-102">Relations Methods (DAO)</span></span>
+# <a name="relations-methods-dao"></a><span data-ttu-id="aaf21-102">Relations-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="aaf21-102">Relations methods (DAO)</span></span>
 
 
-<span data-ttu-id="7277c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="7277c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="aaf21-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="aaf21-103">**Applies to**: Access 2013, Office 2013</span></span>
 
 
 
-  - [<span data-ttu-id="7277c-104">Relations.Append Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="7277c-104">Relations.Append Method (DAO)</span></span>](relations-append-method-dao.md)
+  - [<span data-ttu-id="aaf21-104">Relations.Append-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="aaf21-104">Relations.Append method (DAO)</span></span>](relations-append-method-dao.md)
 
-  - [<span data-ttu-id="7277c-105">Relations.Delete Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="7277c-105">Relations.Delete Method (DAO)</span></span>](relations-delete-method-dao.md)
+  - [<span data-ttu-id="aaf21-105">Relations.Delete-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="aaf21-105">Relations.Delete method (DAO)</span></span>](relations-delete-method-dao.md)
 
-  - [<span data-ttu-id="7277c-106">Relations.Refresh Method (DAO)</span><span class="sxs-lookup"><span data-stu-id="7277c-106">Relations.Refresh Method (DAO)</span></span>](relations-refresh-method-dao.md)
+  - [<span data-ttu-id="aaf21-106">Relations.Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="aaf21-106">Relations.Refresh method (DAO)</span></span>](relations-refresh-method-dao.md)
 
