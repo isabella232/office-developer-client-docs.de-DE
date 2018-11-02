@@ -1,6 +1,6 @@
 ---
-title: Makroereignis 'Vor Löschung'
-TOCTitle: Before Delete Macro Event
+title: Makroereignis "Vor Löschung"
+TOCTitle: Before Delete macro event
 ms:assetid: 1a8d3457-5c59-d13e-ada9-6ecd33dfd5b3
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845672(v=office.15)
 ms:contentKeyID: 48543520
@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm186077
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0ee4878a742454eb1b02f4b9a45c14ad79097c46
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8a2757b062efe022734c674f4c59f994f1c15692
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876260"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920256"
 ---
 # <a name="before-delete-macro-event"></a>Makroereignis "Vor Löschung"
 
@@ -66,7 +66,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Löschun
 </tr>
 <tr class="odd">
 <td><p>Programmablauf</p></td>
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Makroblock</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">Wenn...Dann...Sonst-Makroblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -74,23 +74,23 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Löschun
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="clearmacroerror-macro-action.md">Löschenmakrofehler-Makroaktion</a></p></td>
+<td><p><a href="clearmacroerror-macro-action.md">ClearMacroError-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="onerror-macro-action.md">BeiFehler-Makroaktion</a></p></td>
+<td><p><a href="onerror-macro-action.md">OnError-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="raiseerror-macro-action.md">Auslösenfehler-Makroaktion</a></p></td>
+<td><p><a href="raiseerror-macro-action.md">RaiseError-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="setlocalvar-macro-action.md">FestlegenLokaleVar-Makroaktion</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="stopmacro-macro-action.md">StoppMakro-Makroaktion</a></p></td>
+<td><p><a href="stopmacro-macro-action.md">StopMacro-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

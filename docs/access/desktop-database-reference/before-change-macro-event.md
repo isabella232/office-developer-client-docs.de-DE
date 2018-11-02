@@ -1,6 +1,6 @@
 ---
-title: Makroereignis 'Vor Änderung'
-TOCTitle: Before Change Macro Event
+title: Makroereignis "Vor Änderung"
+TOCTitle: Before Change macro event
 ms:assetid: da456d55-a773-abeb-1fac-ef58e3331cb5
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835322(v=office.15)
 ms:contentKeyID: 48548077
@@ -12,12 +12,12 @@ dev_langs:
 - xml
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 09188378ff75944f6dc8acccc64b621ea2bca1f6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fb513c83e3956a37da019d762c5fd1e0c92da755
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887859"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926563"
 ---
 # <a name="before-change-macro-event"></a>Makroereignis "Vor Änderung"
 
@@ -98,7 +98,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="odd">
 <td><p>Programmablauf</p></td>
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Makroblock</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">Wenn...Dann...Sonst-Makroblock</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenblock</p></td>
@@ -106,15 +106,15 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="clearmacroerror-macro-action.md">Löschenmakrofehler-Makroaktion</a></p></td>
+<td><p><a href="clearmacroerror-macro-action.md">ClearMacroError-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="onerror-macro-action.md">BeiFehler-Makroaktion</a></p></td>
+<td><p><a href="onerror-macro-action.md">OnError-Makroaktion</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="raiseerror-macro-action.md">Auslösenfehler-Makroaktion</a></p></td>
+<td><p><a href="raiseerror-macro-action.md">RaiseError-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
@@ -122,11 +122,11 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Änderun
 </tr>
 <tr class="odd">
 <td><p>Datenaktion</p></td>
-<td><p><a href="setlocalvar-macro-action.md">FestlegenLokaleVar-Makroaktion</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Datenaktion</p></td>
-<td><p><a href="stopmacro-macro-action.md">StoppMakro-Makroaktion</a></p></td>
+<td><p><a href="stopmacro-macro-action.md">StopMacro-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

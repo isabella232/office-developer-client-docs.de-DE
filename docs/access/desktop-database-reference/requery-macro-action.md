@@ -1,6 +1,6 @@
 ---
-title: AktualisierenDaten-Makroaktion
-TOCTitle: Requery Macro Action
+title: Requery-Makroaktion
+TOCTitle: Requery macro action
 ms:assetid: 6dbdcae5-81b6-9925-4cad-64b178c23060
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff195544(v=office.15)
 ms:contentKeyID: 48545499
@@ -10,14 +10,14 @@ f1_keywords:
 - vbaac10.chm30402
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e8e5a25b8770f3542fade53d206ff20400ebf350
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: a0f951c69939e8265bab64193e594eed32149c38
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885941"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25920032"
 ---
-# <a name="requery-macro-action"></a>AktualisierenDaten-Makroaktion
+# <a name="requery-macro-action"></a>Requery-Makroaktion
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -82,5 +82,5 @@ Wenn Sie das Argument **Steuerelementname** leer lassen, hat die **Aktualisieren
 
 
 
-Wenn Sie ein Steuerelement erneut abfragen möchten, das sich nicht im aktiven Objekt befindet, müssen Sie die **Requery** -Methode in einem VBA-Modul (Visual Basic für Applikationen) verwenden und nicht die **AktualisierenDaten** -Aktion oder die entsprechende **Requery** -Methode des **DoCmd** -Objekts. Die **Requery** -Methode in VBA ist schneller als die **AktualisierenDaten** -Aktion oder die **DoCmd.Requery** -Methode. Wenn Sie die **AktualisierenDaten** -Aktion oder die **DoCmd.Requery** -Methode verwenden, schließt Microsoft Access außerdem die Abfrage und lädt sie aus der Datenbank neu. Wenn Sie jedoch die **Requery** -Methode verwenden, führt Access die Abfrage erneut aus, ohne sie zu schließen und neu zu laden. Beachten Sie, dass die **Requery** -Methode von ActiveX Data Objects (ADO) wie die **Requery** -Methode von Access funktioniert.
+Wenn Sie ein Steuerelement erneut abfragen, die für das aktive Objekt ist nicht möchten, müssen Sie die **Requery** -Methode in einem Visual Basic für Applikationen (VBA) Modul, nicht die **AktualisierenDaten** -Aktion oder die entsprechende **Requery** -Methode des **DoCmd** -Objekts verwenden. Die **Requery** -Methode in VBA ist schneller als die **AktualisierenDaten** -Aktion oder die **Requery** -Methode. Darüber hinaus wird, wenn Sie die **AktualisierenDaten** -Aktion oder die **Requery** -Methode verwenden, schließt Microsoft Access die Abfrage und lädt ihn erneut aus der Datenbank, aber bei Verwendung die **Requery** -Methode führt Access ohne Schließen und neu zu laden. Beachten Sie, dass das ActiveX-Objekt (ADO) **Requery** -Methode die gleiche Weise wie die Access **Requery** -Methode funktioniert.
 

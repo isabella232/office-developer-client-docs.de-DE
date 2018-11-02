@@ -1,17 +1,17 @@
 ---
 title: DatensatzErstellen-Datenblock
-TOCTitle: CreateRecord Data Block
+TOCTitle: CreateRecord data block
 ms:assetid: e18f47f8-2aad-9a14-ad63-ab603a4d5b07
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff835671(v=office.15)
 ms:contentKeyID: 48548263
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bda30265cbcf2377114734d03b16f889b0d165b7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 69656b6ab65cef0e2dfec01a338dfc5a70752de3
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880817"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25922097"
 ---
 # <a name="createrecord-data-block"></a>DatensatzErstellen-Datenblock
 
@@ -67,7 +67,7 @@ Nach der **DatensatzErstellen** -Anweisung können Sie einen Block von Befehlen 
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><a href="cancelrecordchange-macro-action.md">Abbrechendatensatzänderung-Makroaktion</a></p></td>
+<td><p><a href="cancelrecordchange-macro-action.md">CancelRecordChange-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
 <td><p><a href="comment-macro-statement.md">Kommentar-Makroanweisung</a></p></td>
@@ -76,13 +76,13 @@ Nach der **DatensatzErstellen** -Anweisung können Sie einen Block von Befehlen 
 <td><p><a href="group-macro-statement.md">Gruppieren-Makroanweisung</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-Makroanweisung</a></p></td>
+<td><p><a href="if-then-else-macro-block.md">If... Im Anschluss: Else-makroanweisung</a></p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="setfield-macro-action.md">SetField-Makroaktion</a></p></td>
 </tr>
 <tr class="even">
-<td><p><a href="setlocalvar-macro-action.md">FestlegenLokaleVar-Makroaktion</a></p></td>
+<td><p><a href="setlocalvar-macro-action.md">SetLocalVar-Makroaktion</a></p></td>
 </tr>
 </tbody>
 </table>

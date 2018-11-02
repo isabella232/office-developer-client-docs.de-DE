@@ -1,19 +1,19 @@
 ---
-title: Workspace Methods (DAO)
+title: Workspace-Methoden (DAO)
 TOCTitle: Methods
 ms:assetid: 20faf18e-4c9f-4802-a7c5-5297debfd712
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn123992(v=office.15)
 ms:contentKeyID: 52071631
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bc7d1d9d5b2c93904319473acf82b0b5995c715e
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d49fb425d30966144f08fcac01b5aae04f976833
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878136"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926171"
 ---
-# <a name="workspace-methods-dao"></a>Workspace Methods (DAO)
+# <a name="workspace-methods-dao"></a>Workspace-Methoden (DAO)
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -22,15 +22,15 @@ ms.locfileid: "25878136"
 
   - [Workspace.BeginTrans-Methode (DAO)](workspace-begintrans-method-dao.md)
 
-  - [Workspace.Close Method (DAO)](workspace-close-method-dao.md)
+  - [Workspace.Close-Methode (DAO)](workspace-close-method-dao.md)
 
-  - [Workspace.CommitTrans Method (DAO)](workspace-committrans-method-dao.md)
+  - [Workspace.CommitTrans-Methode (DAO)](workspace-committrans-method-dao.md)
 
-  - [Workspace.CreateDatabase Method (DAO)](workspace-createdatabase-method-dao.md)
+  - [Workspace.CreateDatabase-Methode (DAO)](workspace-createdatabase-method-dao.md)
 
-  - [Workspace.OpenConnection Method (DAO)](workspace-openconnection-method-dao.md)
+  - [Workspace.OpenConnection-Methode (DAO)](workspace-openconnection-method-dao.md)
 
   - [Workspace.OpenDatabase-Methode (DAO)](workspace-opendatabase-method-dao.md)
 
-  - [Workspace.Rollback Method (DAO)](workspace-rollback-method-dao.md)
+  - [Workspace.Rollback-Methode (DAO)](workspace-rollback-method-dao.md)
 

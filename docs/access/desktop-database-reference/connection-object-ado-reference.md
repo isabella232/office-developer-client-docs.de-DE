@@ -1,26 +1,22 @@
 ---
-title: Connection Object (ADO) Reference
-TOCTitle: Connection Object (ADO)
+title: Connection-Objekt (ADO)-Referenz
+TOCTitle: Connection object (ADO)
 ms:assetid: 817875e9-0970-4d26-8c35-6c6257279bd0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249556(v=office.15)
 ms:contentKeyID: 48545950
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 660fb6d62f67852ea0f0588729a258a34bb9f63d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 5bffa139add42eb8037664e824cff4aa03ae21c3
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880145"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25919591"
 ---
-# <a name="connection-object-ado-reference"></a>Connection Object (ADO) Reference
-
+# <a name="connection-object-ado-reference"></a>Connection-Objekt (ADO)-Referenz
 
 **Betrifft**: Access 2013, Office 2013
 
-
-
-  - [Connection-Objekt (ADO)](connection-object-ado.md)
-
-  - [Connection Properties, Methods, and Events (ADO)](connection-properties-methods-and-events-ado.md)
+- [Connection-Objekt (ADO)](connection-object-ado.md)
+- [Verbindungseigenschaften, Methoden und Ereignisse (ADO)](connection-properties-methods-and-events-ado.md)
 

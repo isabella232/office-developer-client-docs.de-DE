@@ -1,19 +1,19 @@
 ---
-title: Reshape Name (dynamische Eigenschaft) (ADO)
-TOCTitle: Reshape Name Property--Dynamic (ADO)
+title: Reshape Name dynamische-Eigenschaft (ADO)
+TOCTitle: Reshape Name dynamic property (ADO)
 ms:assetid: 59ef99c8-da40-5cf6-b987-d47ea1433f45
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249307(v=office.15)
 ms:contentKeyID: 48545030
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1b2797d5e77e30a9e92639920960796a9d6cae52
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b5d8436979703a00f63c93e5d8cd426d190fecfc
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872144"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926164"
 ---
-# <a name="reshape-name-property--dynamic-ado"></a>Reshape Name (dynamische Eigenschaft) (ADO)
+# <a name="reshape-name-dynamic-property-ado"></a>Reshape Name dynamische-Eigenschaft (ADO)
 
 
 **Betrifft**: Access 2013, Office 2013

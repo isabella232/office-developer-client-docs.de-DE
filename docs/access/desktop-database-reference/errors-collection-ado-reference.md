@@ -1,19 +1,19 @@
 ---
-title: Errors Collection (ADO) Reference
-TOCTitle: Errors Collection (ADO)
+title: Errors-Auflistung (ADO)-Referenz
+TOCTitle: Errors collection (ADO)
 ms:assetid: 08400de5-8113-4f53-a6ae-62010372f276
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248823(v=office.15)
 ms:contentKeyID: 48543094
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6b5049225e175cdfb9695864fbc534c72fe47222
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4bea86d482ca1ac9e4cd11c8e859b042dbbf927b
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889861"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926948"
 ---
-# <a name="errors-collection-ado-reference"></a>Errors Collection (ADO) Reference
+# <a name="errors-collection-ado-reference"></a>Errors-Auflistung (ADO)-Referenz
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -22,5 +22,5 @@ ms.locfileid: "25889861"
 
   - [Errors-Auflistung (ADO)](errors-collection-ado.md)
 
-  - [Eigenschaften, Methoden und Ereignisse der Errors-Auflistung](errors-collection-properties-methods-and-events.md)
+  - [Errors-Auflistung: Eigenschaften, Methoden und Ereignisse](errors-collection-properties-methods-and-events.md)
 
