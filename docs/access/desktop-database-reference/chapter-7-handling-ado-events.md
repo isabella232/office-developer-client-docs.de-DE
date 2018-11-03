@@ -1,20 +1,19 @@
 ---
 title: 'Kapitel 7: Behandeln von ADO-Ereignissen'
-TOCTitle: 'Chapter 7: Handling ADO Events'
+TOCTitle: 'Chapter 7: Handling ADO events'
 ms:assetid: 22924fe2-d00d-8a0c-52f5-2dc6039537ff
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249004(v=office.15)
 ms:contentKeyID: 48543709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 48b74b3de734ecc10a4ff9a46b517eba18191179
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 58186a9f5612308c7762a815520d49ddce8eaf57
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880075"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937540"
 ---
 # <a name="chapter-7-handling-ado-events"></a>Kapitel 7: Behandeln von ADO-Ereignissen
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,12 +27,8 @@ Durch das Verwenden des ADO-Ereignismodells entsteht mehr Aufwand für die Anwen
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-- [ADO-Ereignishandler (Zusammenfassung)](ado-event-handler-summary.md)
-
-- [Arten von Ereignissen](types-of-events.md)
-
+- [Zusammenfassung der ADO-Ereignishandler](ado-event-handler-summary.md)
+- [Typen von Ereignissen](types-of-events.md)
 - [Ereignisparameter](event-parameters.md)
-
-- [Zusammenspiel von Ereignishandlern](how-event-handlers-work-together.md)
-
-- [ADO Event Instantiation by Language (ADO)](ado-event-instantiation-by-language-ado.md)
+- [Zusammenarbeit von Ereignishandlern](how-event-handlers-work-together.md)
+- [ADO-Ereignisinstanziierung nach Sprache (ADO)](ado-event-instantiation-by-language-ado.md)

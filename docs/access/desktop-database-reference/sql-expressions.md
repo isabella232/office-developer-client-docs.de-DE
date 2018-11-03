@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197629(v=office.15)
 ms:contentKeyID: 48546349
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c42bd49e25ad15a46955e46d60684836e52a9f32
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 92ad643c2a602a24a411db33def62af89520f9b7
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873264"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937778"
 ---
 # <a name="sql-expressions"></a>SQL-Ausdrücke
 
@@ -20,5 +20,5 @@ ms.locfileid: "25873264"
 
 Ein SQL-Ausdruck ist eine Zeichenfolge, aus der eine SQL-Anweisung ganz oder teilweise besteht. Die **FindFirst**-Methode eines **Recordset**-Objekts verwendet beispielsweise einen SQL-Ausdruck, der aus den Auswahlkriterien besteht, die in einer SQL-[WHERE-Klausel](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) gefunden wurden.
 
-Das Microsoft Access-Datenbankmodul verwendet den VBA-Ausdrucksdienst (Microsoft® Visual Basic® für Applikationen), um einfache arithmetische Berechnungen und Funktionsauswertungen durchzuführen. Alle Operatoren, die in Ausdrücken für das Microsoft Access-Datenbankmodul SQL (mit Ausnahme der Operatoren **[Zwischen](https://msdn.microsoft.com/library/ff192436\(v=office.15\))**, **[In](https://msdn.microsoft.com/library/ff836369\(v=office.15\))** und **[Wie](https://msdn.microsoft.com/library/ff195752\(v=office.15\))**) verwendet werden, werden von dem VBA-Ausdrucksdienst definiert. Zusätzlich bietet der VBA-Ausdrucksdienst über 100 VBA-Funktionen, die in SQL-Ausdrücken verwendet werden können. Sie können mit diesen VBA-Funktionen zum Beispiel eine SQL-Abfrage innerhalb der Entwurfsansicht für Microsoft Access-Abfragen zusammenstellen. Darüber hinaus können Sie diese Funktionen in einer SQL-Abfrage innerhalb der **OpenRecordset**-Methode für Datenzugriffsobjekte (DAO) in Microsoft Visual C++®-, Microsoft Visual Basic- und Microsoft Excel-Code verwenden.
+Microsoft Access-Datenbankmodul verwendet die Microsoft Visual Basic für Applikationen (oder VBA) Ausdruck Service einfache arithmetische und Funktion Bewertung durchführen. Alle Operatoren, die in Microsoft Access-Datenbank-Engine-SQL-Ausdrücke (mit Ausnahme von **[ **[zwischen](https://msdn.microsoft.com/library/ff192436\(v=office.15\))**, und **[wie](https://msdn.microsoft.com/library/ff195752\(v=office.15\))**)](https://msdn.microsoft.com/library/ff836369\(v=office.15\))** verwendet werden durch den VBA-Ausdrucks-Editor definiert. Darüber hinaus bietet der VBA-Ausdrucks-Editor über 100 VBA-Funktionen, die Sie in SQL-Ausdrücken verwenden können. Angenommen, Sie können diese VBA-Funktionen verwenden, um eine SQL-Abfrage in der Entwurfsansicht des Microsoft Access-Abfrage zum Verfassen und außerdem können diese Funktionen in einer SQL-Abfrage in der DAO- **OpenRecordset** -Methode in Microsoft Visual C++, Microsoft Visual Basic und Microsoft Excel-Code.
 

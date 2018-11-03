@@ -6,29 +6,23 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834370(v=office.15)
 ms:contentKeyID: 48547705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9fafa3ea40b492baf8b49dd240c6f7767ffad655
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4ccaffdbc39634f42f4af680786b5dc8b3957475
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926654"
+ms.locfileid: "25937631"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl-Makroaktion
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Sie können die **GeheZuSteuerelement** -Aktion verwenden, um den Fokus auf das angegebene Feld oder Steuerelement im aktuellen Datensatz des geöffneten Formulars, Datenblattes, Tabellendatenblatt oder Datenblatt Abfragen. Sie können diese Aktion verwenden, wenn ein bestimmtes Feld oder Steuerelement den Fokus haben soll. Dieses Feld oder Steuerelement kann dann für Vergleiche oder **SuchenDatensatz** -Aktionen verwendet. Sie können die Aktion auch zum Navigieren in einem Formular basierend auf bestimmten Bedingungen verwenden. Wenn der Benutzer z. B. im Steuerelement „Verheiratet“ auf einem Versicherungsformular „Nein“ angibt, kann der Fokus automatisch das Steuerelement „Name des Partners/der Partnerin“ überspringen und zum nächsten Steuerelement wechseln.
 
 ## <a name="setting"></a>Einstellung
 
-
 > [!NOTE]
-> <P>Diese Aktion ist nicht für die Verwendung mit Datenzugriffsseiten verfügbar.</P>
-
-
+> Diese Aktion ist nicht für die Verwendung mit Datenzugriffsseiten verfügbar.
 
 Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 
@@ -49,7 +43,7 @@ Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 <td><p>Der Name des Felds oder Steuerelements, das den Fokus erhalten soll. Geben Sie den Namen Feld oder Steuerelement in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators ein. Dies ist ein erforderliches Argument.</p>
 
 > [!NOTE]
-> <P>Geben Sie nur den Namen des Felds oder Steuerelements in das Argument <STRONG>Steuerelementname</STRONG> nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].</P>
+> Geben Sie nur den Namen des Felds oder Steuerelements in das Argument **Steuerelementname** nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].
 
 
 <p></p></td>
@@ -62,11 +56,8 @@ Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 
 Sie können die **GeheZuSteuerelement** -Aktion um den Fokus auf ein Steuerelement in einem ausgeblendeten Formular zu verschieben.
 
-
 > [!TIP]
-> <P>Die <STRONG>GeheZuSteuerelement</STRONG> -Aktion können Sie auf ein Unterformular setzen, das eine Art von Steuerelement ist. Die <STRONG>GeheZuDatensatz</STRONG> -Aktion können dann um auf einen bestimmten Datensatz im Unterformular zu verschieben. Sie können auch auf ein Steuerelement eines Unterformulars verschieben, mit die <STRONG>GeheZuSteuerelement</STRONG> -Aktion um auf das Unterformular, und klicken Sie dann auf das Steuerelement des Unterformulars zuerst zu verschieben.</P>
-
-
+> Die **GeheZuSteuerelement** -Aktion können Sie auf ein Unterformular setzen, das eine Art von Steuerelement ist. Die **GeheZuDatensatz** -Aktion können dann um auf einen bestimmten Datensatz im Unterformular zu verschieben. Sie können auch auf ein Steuerelement eines Unterformulars verschieben, mit die **GeheZuSteuerelement** -Aktion um auf das Unterformular, und klicken Sie dann auf das Steuerelement des Unterformulars zuerst zu verschieben.
 
 Führen Sie die **GeheZuSteuerelement** -Aktion in einem Visual Basic für Applikationen (VBA) Modul mit **der GoToControl** -Methode des **DoCmd** -Objekts. Sie können auch die **SetFocus** -Methode verwenden, um den Fokus auf ein Steuerelement eines Formulars oder eines seiner Unterformulare oder an ein Feld in einer geöffneten Tabelle, Abfrage oder Formulardatenblatt.
 

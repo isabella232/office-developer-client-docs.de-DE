@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249314(v=office.15)
 ms:contentKeyID: 48545053
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8c6e9b7a77a71acdb50536e21d9f6278dd127d75
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d067d26120e694975c662c3d018443e325e75119
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888664"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937134"
 ---
 # <a name="filter-property-ado"></a>Filter-Eigenschaft (ADO)
 
@@ -44,7 +44,7 @@ Die Kriterienzeichenfolge besteht aus Klauseln in der Form *FieldName-Operator-W
     
 
     > [!NOTE]
-    > <P>[!HINWEIS] Wenn einzelne Anführungszeichen in den Filterwert eingeschlossen werden sollen, verwenden Sie zwei einzelne Anführungszeichen zur Darstellung. Soll beispielsweise nach "O'Malley" gefiltert werden, lautet die Kriterienzeichenfolge "col1 = 'O''Malley'". Setzen Sie die Zeichenfolge zwischen Nummernzeichen (#), um einzelne Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen. Wenn Sie z. B. nach '1' filtern möchten, muss die Kriterienzeichenfolge "col1 = #'1'#" lauten.</P>
+    > [!HINWEIS] Wenn einzelne Anführungszeichen in den Filterwert eingeschlossen werden sollen, verwenden Sie zwei einzelne Anführungszeichen zur Darstellung. Soll beispielsweise nach "O'Malley" gefiltert werden, lautet die Kriterienzeichenfolge "col1 = 'O''Malley'". Setzen Sie die Zeichenfolge zwischen Nummernzeichen (#), um einzelne Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen. Wenn Sie z. B. nach '1' filtern möchten, muss die Kriterienzeichenfolge "col1 = #'1'#" lauten.
 
 
 
@@ -66,19 +66,12 @@ Unter der [Bookmark](bookmark-property-ado.md)-Eigenschaft finden Sie eine Erkl�
 
 Nur **Filter** in der Form von Kriterienzeichenfolgen (z. B. Bestelldatum \> ' 12/31/1999 ') wirken sich auf den Inhalt eines permanenten **Recordset-Objekt**. **Filter** mit einem Array von **Lesezeichen** erstellt oder mithilfe eines Werts aus der **FilterGroupEnum** wirkt sich nicht auf den Inhalt des gespeicherten Recordset-Objekts. Diese Regeln gelten für **Recordsets** mit clientseitige oder serverseitige Cursor erstellt wurden.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Angenommen, Sie wenden das Kennzeichen <STRONG>adFilterPendingRecords</STRONG> auf ein gefiltertes und geändertes <STRONG>Recordset</STRONG> -Objekt im Batchaktualisierungsmodus an. In diesem Fall ist das resultierende <STRONG>Recordset</STRONG> -Objekt leer, wenn der Filter auf dem Schlüsselfeld einer Tabelle mit einem Schlüssel basierte und die Änderung zu den Schlüsselfeldwerten vorgenommen wurden. Das resultierende <STRONG>Recordset</STRONG> -Objekt ist nicht leer, wenn eine der folgenden Aussagen zutrifft:</P>
-
-
-
-  - Die Filterung basierte in einer Tabelle mit einem Schlüssel auf Nichtschlüsselfeldern.
-
-  - Die Filterung basierte in einer Tabelle mit mehreren Schlüsseln auf allen Feldern.
-
-  - Änderungen wurden in einer Tabelle mit einem Schlüssel zu Nichtschlüsselfeldern vorgenommen.
-
-  - Änderungen wurden in einer Tabelle mit mehreren Schlüsseln zu allen Feldern vorgenommen.
+> [!HINWEIS] Angenommen, Sie wenden das Kennzeichen **adFilterPendingRecords** auf ein gefiltertes und geändertes **Recordset** -Objekt im Batchaktualisierungsmodus an. In diesem Fall ist das resultierende **Recordset** -Objekt leer, wenn der Filter auf dem Schlüsselfeld einer Tabelle mit einem Schlüssel basierte und die Änderung zu den Schlüsselfeldwerten vorgenommen wurden. Das resultierende **Recordset** -Objekt ist nicht leer, wenn eine der folgenden Aussagen zutrifft:
+> - Die Filterung basierte in einer Tabelle mit einem Schlüssel auf Nichtschlüsselfeldern.
+> - Die Filterung basierte in einer Tabelle mit mehreren Schlüsseln auf allen Feldern.
+> - Änderungen wurden in einer Tabelle mit einem Schlüssel zu Nichtschlüsselfeldern vorgenommen.
+> - Änderungen wurden in einer Tabelle mit mehreren Schlüsseln zu allen Feldern vorgenommen.
 
 In der folgenden Tabelle werden die Ergebnisse von **adFilterPendingRecords** in verschiedenen Filter- und Änderungskombinationen zusammengefasst. Die linke Spalte zeigt die möglichen Änderungen. Änderungen können für alle Nichtschlüsselfelder, für das Schlüsselfeld in einer Tabelle mit einem Schlüssel oder für alle Schlüsselfelder in einer Tabelle mit mehreren Schlüsseln erfolgen. Die obere Zeile enthält das Filterkriterium. Die Filterung kann auf allen Nichtschlüsselfeldern, dem Schlüsselfeld in einer Tabelle mit einem Schlüssel oder allen Schlüsselfeldern in einer Tabelle mit mehreren Schlüsseln basieren. Die sich überschneidenden Zellen enthalten die Ergebnisse: + bedeutet, dass **adFilterPendingRecords** ein nicht leeres **Recordset** -Objekt ergibt; **-** zeigt ein leeres **Recordset** -Objekt an.
 

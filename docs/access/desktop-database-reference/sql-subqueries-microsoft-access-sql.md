@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 72d9d9d27ac128ec587621231b5c899bc89c2752
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b2a7bdadeb700bdbc6bf18dda2e73401afb7df86
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925950"
+ms.locfileid: "25937351"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL-Unterabfragen (Microsoft Access SQL)
 
@@ -111,9 +111,7 @@ Bestimmte Unterabfragen sind in Kreuztabellenabfragen zulässig, insbesondere al
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Namen und Kontaktdaten aller Kunden aufgeführt, die im zweiten Quartal 1995 eine Bestellung aufgegeben haben.
-
-In diesem Beispiel wird die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.
+In diesem Beispiel werden die Namen und Kontaktdaten aller Kunden aufgeführt, die im zweiten Quartal 1995 eine Bestellung aufgegeben haben. Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
 
 ```vb
     Sub SubQueryX() 

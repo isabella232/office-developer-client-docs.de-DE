@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
 ms:contentKeyID: 48544926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0b01232e7afd4f32411a53dec6ae233c786c1c08
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b6841eb674aac04b979623a65b27ca84a8bc927c
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873404"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937147"
 ---
 # <a name="field-object"></a>Field-Objekt
 
@@ -46,7 +46,7 @@ In den folgenden Themen werden Eigenschaften des [Field](field-object-ado.md)-Ob
 
 ## <a name="discovering-the-data-type"></a>Ermitteln des Datentyps
 
-Die **Type**-Eigenschaft gibt den Datentyp des Felds an. Die aufgezählten Konstanten für den Datentyp, die von ADO unterstützt werden, werden unter [DataTypeEnum](datatypeenum.md) im *ADO-Programmierhandbuch* beschrieben.
+Die **Type** -Eigenschaft gibt den Datentyp des Felds an. Konstanten Typ, der Daten, die von ADO unterstützt werden, werden in [DataTypeEnum-Wert](datatypeenum.md) in der *ADO-Programmierreferenz*beschrieben.
 
 Für numerische Gleitkomma-Datentypen wie z. B. **adNumeric** können Sie weitere Informationen abrufen. Die **NumericScale** -Eigenschaft gibt an, wie viele Stellen rechts des Dezimalzeichens zur Darstellung von Werten für das **Field** -Objekt verwendet werden. Die **Precision** -Eigenschaft gibt die maximale Anzahl von Stellen zur Darstellung von Werten für das **Field** -Objekt an.
 
@@ -125,5 +125,5 @@ Wenn das **adFldLong** -Bit in der **Attributes** -Eigenschaft eines **Field** -
 
 Der Fehler 3021 (kein aktueller Datensatz) wird generiert, falls kein aktueller Datensatz vorhanden ist, wenn Sie die Methode **GetChunk** oder **AppendChunk** für ein **Field** -Objekt verwenden.
 
-Ein Beispiel für die Verwendung dieser Methoden zum Bearbeiten von Binärdaten finden Sie in den Beispielen zur [AppendChunk-Methode](appendchunk-method-ado.md) und [GetChunk-Methode](getchunk-method-ado.md) im *ADO-Programmierhandbuch*.
+Ein Beispiel für die Verwendung dieser Methoden zum Bearbeiten von Binärdaten finden Sie in den Beispielen [AppendChunk-Methode](appendchunk-method-ado.md) und [GetChunk-Methode](getchunk-method-ado.md) in der *ADO-Programmierreferenz*.
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249776(v=office.15)
 ms:contentKeyID: 48546887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b37f5930f9a9a36603700a1d27458527f128ad34
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4ff66a39de070759e0ad31b441e4be5735d87516
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922034"
+ms.locfileid: "25936611"
 ---
 # <a name="find-method-ado"></a>Find-Methode (ADO)
 
@@ -57,12 +57,9 @@ Sternchen können, wie oben dargestellt, nur am Ende oder nur am Anfang und am E
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Wird vor dem Aufrufen von <STRONG>Find</STRONG> keine aktuelle Zeilenposition festgelegt, tritt ein Fehler auf. Vor dem Aufrufen von <A href="movefirst-movelast-movenext-and-moveprevious-methods-ado.md">Find</A> sollte eine beliebige Methode aufgerufen werden, die Zeilenpositionen festlegt (z. B. <STRONG>MoveFirst</STRONG>).</P>
-
-
-
+> [!HINWEIS] Wird vor dem Aufrufen von **Find** keine aktuelle Zeilenposition festgelegt, tritt ein Fehler auf. Vor dem Aufrufen von [Find](movefirst-movelast-movenext-and-moveprevious-methods-ado.md) sollte eine beliebige Methode aufgerufen werden, die Zeilenpositionen festlegt (z. B. **MoveFirst**).
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie die <STRONG>Find</STRONG> -Methode für einen Datensatz aufrufen und sich die aktuelle Position in der Datensatzgruppe beim letzten Datensatz oder am Ende der Datei (End of File, EOF) befindet, bleibt die Suche erfolglos. Sie müssen die <STRONG>MoveFirst</STRONG> -Methode aufrufen, um die aktuelle Position bzw. den Cursor auf den Anfang der Datensatzgruppe festzulegen.</P>
+> [!HINWEIS] Wenn Sie die **Find** -Methode für einen Datensatz aufrufen und sich die aktuelle Position in der Datensatzgruppe beim letzten Datensatz oder am Ende der Datei (End of File, EOF) befindet, bleibt die Suche erfolglos. Sie müssen die **MoveFirst** -Methode aufrufen, um die aktuelle Position bzw. den Cursor auf den Anfang der Datensatzgruppe festzulegen.
 
 

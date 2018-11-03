@@ -10,12 +10,12 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: eec27b3bbd8d23fef05ab8bfe4da0209acf80ac1
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d52020deecce9235db12f749b9d6913653157034
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875161"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937771"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>Initialisieren des Text-Datenquellentreibers
 
@@ -25,7 +25,7 @@ ms.locfileid: "25875161"
 
 Für Text- und HTML-Datenquellen wird derselben Datenbanktreiber verwendet.
 
-Beim Installieren des Textdatenquellen-Datenbanktreibers schreibt das Setupprogramm Standardwerte in die Unterschlüssel Engines und ISAM Formats der Microsoft® Windows®-Registrierung. Diese Einstellungen dürfen nicht direkt geändert werden. Verwenden Sie stattdessen das Setupprogramm, um diese Einstellungen hinzuzufügen, zu entfernen oder zu ändern. In den folgenden Abschnitten werden die Einstellungen für die Initialisierung und das ISAM-Format für den Textdatenquellen-Datenbanktreiber beschrieben.
+Bei der Installation des Textdatenquellen-Datenbanktreibers schreibt das Setupprogramm Standardwerte der Microsoft Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Textdatenquellen-Datenbanktreibers beschrieben.
 
 ## <a name="text-data-source-initialization-settings"></a>Initialisierungseinstellungen für Textdatenquellen
 

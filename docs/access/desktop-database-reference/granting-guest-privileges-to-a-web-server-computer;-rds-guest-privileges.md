@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249254(v=office.15)
 ms:contentKeyID: 48544766
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ed450913c7512e8ef20983484ca4b874878fd791
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 213e405718d50369367d439457e8026d4ef71242
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25867167"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937505"
 ---
 # <a name="granting-guest-privileges-to-a-web-server-computer-rds-guest-privileges"></a>Gewähren von Gastberechtigungen für einen Webservercomputer; RDS-Gastberechtigungen 
 
@@ -22,7 +22,7 @@ Das anonyme Webserverkonto (IUSR\_*ComputerName*) der lokalen Gruppe Gäste auf 
 
 **So erteilen einem Webservercomputer Gastberechtigungen**
 
-1.  Klicken Sie auf dem Computer unter Microsoft Windows® 2000 Server auf **Start**, zeigen Sie auf **Programme**, zeigen Sie auf **Verwaltung**, und klicken Sie dann auf **Computerverwaltung**.
+1.  Klicken Sie auf dem Microsoft Windows 2000 Server-Computer auf **Start**, zeigen Sie auf **Programme**, zeigen Sie auf **Verwaltung**, und klicken Sie dann auf **Computerverwaltung**.
 
 2.  Klicken Sie in der Konsolenstruktur in **Lokale Benutzer und Gruppen** auf **Gruppen**.
 

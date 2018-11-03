@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249784(v=office.15)
 ms:contentKeyID: 48546923
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 376d80bc79af772cfd09b6f5b8759321ed4431ee
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 67bdcdbaa525039f544a7d45cb4411faeee297e8
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887166"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937029"
 ---
 # <a name="overview-of-multidimensional-schemas-and-data"></a>Übersicht über Multidimensionale Schemas und Daten
 
@@ -80,17 +80,14 @@ Jede Ebene enthält eine Gruppe von Elementen:
 
 Elemente auf der Blattebene einer Hierarchie haben keine untergeordneten Elemente, und Elemente auf der Stammebene haben keine übergeordneten Elemente. Alle anderen Elemente haben mindestens ein über- und ein untergeordnetes Element. Wenn beispielsweise die Hierarchiestruktur in der Dimension für die Geografie teilweise durchquert wird, werden folgende Beziehungen zwischen unter- und übergeordneten Elementen gefunden:
 
-  - {All} (übergeordnete) {Europa, Nordamerika}
-
-  - {North America} (übergeordnete) {Canada, USA}
-
-  - {USA} (übergeordnete) {USA-NE, USA-NW, USA-SE, USA-SW}
-
-  - {USA-NW} (übergeordnete) {Boise, Seattle}
+- {All} (übergeordnete) {Europa, Nordamerika}
+- {North America} (übergeordnete) {Canada, USA}
+- {USA} (übergeordnete) {USA-NE, USA-NW, USA-SE, USA-SW}
+- {USA-NW} (übergeordnete) {Boise, Seattle}
 
 Elemente können entlang einer oder mehrerer Hierarchien pro Dimension konsolidiert werden.
 
-Dieses Beispiel veranschaulicht außerdem ein anderes Merkmal: Einige Elemente der Wochenebene in der Jahres-Wochen-Hierarchie werden auf keiner Ebene der Jahres-Quartals-Hierarchie angezeigt. Eine Hierarchie muss also nicht alle Elemente einer Dimension enthalten.
+Dieses Beispiel veranschaulicht außerdem ein weiteres Merkmal: Einige Elemente der Wochenebene der Hierarchie Woche Jahr nicht in jeder Ebene der Hierarchie Jahr Quartal angezeigt. Eine Hierarchie muss also nicht alle Elemente einer Dimension enthalten.
 
 ## <a name="understanding-multidimensional-schemas"></a>Grundlegendes zu multidimensionalen Schemas
 
@@ -164,5 +161,5 @@ Elemente auf der Blattebene einer Hierarchie haben keine untergeordneten Element
 
 Elemente können entlang einer oder mehrerer Hierarchien pro Dimension konsolidiert werden.
 
-Dieses Beispiel veranschaulicht außerdem ein anderes Merkmal: Einige Elemente der Wochenebene in der Jahres-Wochen-Hierarchie werden auf keiner Ebene der Jahres-Quartals-Hierarchie angezeigt. Eine Hierarchie muss also nicht alle Elemente einer Dimension enthalten.
+Dieses Beispiel veranschaulicht außerdem ein weiteres Merkmal: Einige Elemente der Wochenebene der Hierarchie Woche Jahr nicht in jeder Ebene der Hierarchie Jahr Quartal angezeigt. Eine Hierarchie muss also nicht alle Elemente einer Dimension enthalten.
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194105(v=office.15)
 ms:contentKeyID: 48544896
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf640597405205987040d95033b2eb1ceee13867
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 354b080b40c9dfc59394f1a860453e539c5949fb
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922713"
+ms.locfileid: "25936602"
 ---
 # <a name="field2validationrule-property-dao"></a>Field2.ValidationRule-Eigenschaft (DAO)
 
@@ -76,6 +76,6 @@ Der von der **ValidationRule**-Eigenschaft eines **Field2**-Objekts angegebene Z
 
 
 > [!NOTE]
-> <P>Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrRule = "Preis &gt; " &amp; LngPrice, und LngPrice = 125,50), ein Fehler ausgegeben, wenn der Code versucht, Daten zu überprüfen. Dies ist, da während der Verkettung die Zahl in eine Zeichenfolge mit Ihr System vorgegebenen Standardzeichen für Dezimalzahlen konvertiert und Microsoft Access-Datenbankmodul SQL nur US-Dezimaltrennzeichen akzeptiert.</P>
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrRule = "Preis &gt; " &amp; LngPrice, und LngPrice = 125,50), ein Fehler ausgegeben, wenn der Code versucht, Daten zu überprüfen. Dies ist, da während der Verkettung die Zahl in eine Zeichenfolge mit Ihr System vorgegebenen Standardzeichen für Dezimalzahlen konvertiert und Microsoft Access-Datenbankmodul SQL nur US-Dezimaltrennzeichen akzeptiert.
 
 

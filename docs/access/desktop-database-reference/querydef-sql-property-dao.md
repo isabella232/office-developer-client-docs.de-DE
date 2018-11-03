@@ -1,6 +1,6 @@
 ---
 title: QueryDef.SQL-Eigenschaft (DAO)
-TOCTitle: SQL Property
+TOCTitle: SQL property
 ms:assetid: 16446789-c8be-bff0-eddd-b5f6a8530128
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff845522(v=office.15)
 ms:contentKeyID: 48543429
@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053054
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 25921f9bcd320c2ccc5d703b95e3ac818125d300
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 43acce256d3a46fd7b01122a8502e0af502eb3e9
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920746"
+ms.locfileid: "25937680"
 ---
 # <a name="querydefsql-property-dao"></a>QueryDef.SQL-Eigenschaft (DAO)
 
@@ -40,7 +40,7 @@ Wenn die SQL-Anweisung Parameter für die Abfrage enthält, müssen Sie sie vor 
 In einem Microsoft Access-Arbeitsbereich ist Verwenden eines **QueryDef** -Objekts die bevorzugte Methode zum Ausführen von SQL-Pass-Through-Vorgänge auf Microsoft Access-Datenbank-Engine verbundene ODBC-Datenquelle aus. **[Connect](querydef-connect-property-dao.md)** -Eigenschaft des **QueryDef** -Objekts auf einer ODBC-Datenquelle festlegen, können Sie nicht Microsoft – Access-Datenbank von SQL in der Abfrage an den externen Server übergeben werden. Beispielsweise können Sie TRANSACT-SQL-Anweisungen (mit Microsoft SQL Server oder Sybase SQL Server-Datenbanken) verwenden, die Microsoft Access-Datenbankmodul nicht anderweitig verarbeiten würde.
 
 > [!NOTE]
-> Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrSQL = "PRICE &gt; " &amp; LngPrice, und LngPrice = 125,50), ein Fehler ausgegeben, wenn Sie Versuchen Sie, das **QueryDef** -Objekt in einer Microsoft Access-Datenbank auszuführen. Das geschieht, weil die Zahl während der Verkettung mithilfe des standardmäßigen Dezimalzeichens des Systems in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-amerikanische Dezimalzeichen akzeptiert.
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (z. B. `strSQL = "PRICE > " & lngPrice, and lngPrice = 125,50`), ein Fehler ausgegeben, wenn Sie versuchen, das **QueryDef** -Objekt in einem Microsoft ausführen Access-Datenbank. Das geschieht, weil die Zahl während der Verkettung mithilfe des standardmäßigen Dezimalzeichens des Systems in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-amerikanische Dezimalzeichen akzeptiert.
 
 ## <a name="example"></a>Beispiel
 
@@ -121,9 +121,13 @@ Im folgenden Beispiel wird die **CopyQueryDef** -Methode verwendet, um eine Kopi
        End With 
      
     End Function 
+```
+
+<br/>
+
+Dieses Beispiel zeigt eine mögliche Verwendung von CopyQueryNew(). 
      
-    This example shows a possible use of CopyQueryNew(). 
-     
+```vb
     Sub CopyQueryDefX() 
      
        Dim dbsNorthwind As Database 

@@ -1,26 +1,27 @@
 ---
 title: RDS-Lernprogramm (VBScript)
-TOCTitle: RDS Tutorial (VBScript)
+TOCTitle: RDS tutorial (VBScript)
 ms:assetid: 7a6596fd-00b9-a637-7d00-fb55a621305f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249506(v=office.15)
 ms:contentKeyID: 48545792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 449a752d4ab9e1680a3cf318e73802d39d7033fb
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c1c6b42d9560a30b45fb777bb4fd1de4351830a4
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884200"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936294"
 ---
 # <a name="rds-tutorial-vbscript"></a>RDS-Lernprogramm (VBScript)
 
-
 **Betrifft**: Access 2013, Office 2013
 
-Hier handelt es sich um das in Microsoft Visual Basic Scripting Edition geschriebene RDS-Lernprogramm. Eine Beschreibung des Zweckes des Lernprogramms finden Sie unter [RDS-Lernprogramm](chapter-12-rds-tutorial.md).
+Dies ist die in Microsoft Visual Basic Scripting Edition geschriebene RDS-Lernprogramm. Eine Beschreibung des Zwecks dieses Lernprogramm finden Sie im [RDS-Lernprogramm](chapter-12-rds-tutorial.md).
 
-In diesem Lernprogramm [RDS. DataControl](datacontrol-object-rds.md) und [RDS. DataSpace](dataspace-object-rds.md) werden zur Entwurfszeit erstellt – d. h., sie sind mit Object-Tags, wie folgt definiert:. Alternativ können diese Objekte auch zur Laufzeit mit der **Server.CreateObject** -Methode erstellt werden. Sie können das **RDS.DataControl** -Objekt beispielsweise folgendermaßen erstellen:
+In diesem Lernprogramm [RDS. DataControl](datacontrol-object-rds.md) und [RDS. DataSpace](dataspace-object-rds.md) zur Entwurfszeit; erstellt werden d. h., werden sie mit der Object-Tags definiert. Alternativ können diese Objekte auch zur Laufzeit mit der **Server.CreateObject** -Methode erstellt werden. 
+
+Sie können das **RDS.DataControl** -Objekt beispielsweise folgendermaßen erstellen:
 
 ```vb
     Set DC = Server.CreateObject("RDS.DataControl") 
@@ -41,7 +42,7 @@ In diesem Lernprogramm [RDS. DataControl](datacontrol-object-rds.md) und [RDS. D
      Dim DF1 
 ```
 
-**Schritt 1- Angeben eines Serverprogramms**
+## <a name="step-1--specify-a-server-program"></a>Schritt 1- Angeben eines Serverprogramms
 
 VBScript kann es ausgeführt wird, durch Zugreifen auf die Active Server Pages verfügbare VBScript **Request.ServerVariables** -Methode den Namen der IIS-Webserver ermitteln:
 
@@ -50,8 +51,7 @@ VBScript kann es ausgeführt wird, durch Zugreifen auf die Active Server Pages v
 "https://<%=Request.ServerVariables("SERVER_NAME")%>" 
 ```
 
-Verwenden Sie für dieses Lernprogramm jedoch den imaginären Server "yourServer".
-
+Verwenden Sie für dieses Lernprogramm jedoch den imaginären Server "YourServer".
 
 > [!NOTE]
 > <P>Achten Sie auf den Datentyp von ByRef-Argumenten. In VBScript können Sie den Variablentyp nicht angeben, weshalb Sie immer einen Variant-Wert übergeben müssen. Bei Verwendung von HTTP lässt RDS das Übergeben eines Variant-Werts an eine Methode zu, die einen Nicht-Variant-Wert erwartet. Dazu müssen Sie die Variable jedoch mit der CreateObject-Methode des RDS.DataSpace-Objekts aufrufen. Wenn Sie DCOM oder einen In-Process-Server verwenden, müssen Sie die Parametertypen auf dem Client und dem Server angleichen, weil andernfalls ein Typenkonfliktfehler auftritt.</P>
@@ -61,7 +61,7 @@ Verwenden Sie für dieses Lernprogramm jedoch den imaginären Server "yourServer
 Set DF1 = DS1.CreateObject("RDSServer.DataFactory", "https://yourServer") 
 ```
 
-**Schritt 2a - Aufrufen des Serverprogramms mit "RDS.DataControl"**
+## <a name="step-2a--invoke-the-server-program-with-rdsdatacontrol"></a>Schritt 2a - Aufrufen des Serverprogramms mit "RDS.DataControl"
 
 Das folgende Beispiel dient lediglich zur Veranschaulichung, dass das Standardverhalten des **RDS.DataControl** -Objekts im Ausführen der angegebenen Abfrage besteht.
 
@@ -82,18 +82,18 @@ Sub RDSTutorial2A()
 ... 
 ```
 
-**Schritt 2b - Aufrufen des Serverprogramms mit "RDSServer.DataFactory "**
+## <a name="step-2b--invoke-the-server-program-with-rdsserverdatafactory"></a>Schritt 2b - Aufrufen des Serverprogramms mit "RDSServer.DataFactory "
 
-**Schritt 3 - Abrufen eines Recordset-Objekts durch den Server**
+## <a name="step-3--server-obtains-a-recordset"></a>Schritt 3 - Abrufen eines Recordset-Objekts durch den Server
 
-**Schritt 4 - Zurückgeben des Recordset-Objekts durch den Server**
+## <a name="step-4--server-returns-the-recordset"></a>Schritt 4 - Zurückgeben des Recordset-Objekts durch den Server
 
 ```vb
  
 Set RS = DF1.Query("DSN=Pubs;", "SELECT * FROM Authors") 
 ```
 
-**Schritt 5 - Verwendbarmachen des DataControl-Objekts durch visuelle Steuerelemente**
+## <a name="step-5--datacontrol-is-made-usable-by-visual-controls"></a>Schritt 5 - Verwendbarmachen des DataControl-Objekts durch visuelle Steuerelemente
 
 ```vb
  
@@ -102,7 +102,7 @@ Set RS = DF1.Query("DSN=Pubs;", "SELECT * FROM Authors")
 DC1.SourceRecordset = RS 
 ```
 
-**Schritt 6a - Senden von Änderungen an den Server mithilfe von "RDS.DataControl"**
+## <a name="step-6a--changes-are-sent-to-the-server-with-rdsdatacontrol"></a>Schritt 6a – Änderungen an den Server mit RDS. gesendet werden DataControl *
 
 Das folgende Beispiel dient lediglich zur Veranschaulichung, wie das **RDS.DataControl** -Objekt Aktualisierungen ausführt.
 
@@ -128,7 +128,7 @@ Set DC1.SourceRecordset = RS
 DC1.SubmitChanges 
 ```
 
-**Schritt 6a - Senden von Änderungen an den Server mithilfe von "RDSServer.DataFactory"**
+## <a name="step-6b--changes-are-sent-to-the-server-with-rdsserverdatafactory"></a>Schritt 6a - Senden von Änderungen an den Server mithilfe von "RDSServer.DataFactory"
 
 ```vb
  

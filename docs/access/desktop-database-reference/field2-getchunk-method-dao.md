@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194600(v=office.15)
 ms:contentKeyID: 48545101
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 09660c472a6fd799c111214dafe3266cdec9eced
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1d3bf59549a37e728d26da2e5986e852235d6f77
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926647"
+ms.locfileid: "25937449"
 ---
 # <a name="field2getchunk-method-dao"></a>Field2.GetChunk-Methode (DAO)
 
@@ -72,11 +72,8 @@ Wenn offset gleich 0 ist, beginnt GetChunk ab dem ersten Byte des Felds mit dem 
 
 Wenn Numbytes größer als die Anzahl von Bytes im Feld ist, gibt **GetChunk** die tatsächliche Anzahl von verbliebenen Bytes im Feld zurück.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Verwenden Sie ein <STRONG>Memo</STRONG>-Feld für Text, und schreiben Sie binäre Daten nur in Felder des Typs <STRONG>Long Binary</STRONG>. Andernfalls erzielen Sie unerwünschte Ergebnisse.</P>
-
-
+> [!HINWEIS] Verwenden Sie ein **Memo**-Feld für Text, und schreiben Sie binäre Daten nur in Felder des Typs **Long Binary**. Andernfalls erzielen Sie unerwünschte Ergebnisse.
 
 ## <a name="example"></a>Beispiel
 

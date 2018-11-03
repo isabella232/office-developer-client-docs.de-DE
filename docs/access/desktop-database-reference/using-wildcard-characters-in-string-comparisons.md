@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192499(v=office.15)
 ms:contentKeyID: 48544205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3c26b5e0a7e5448340cded61717ad27fb68aa827
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8fbc57c0a07777d62e5af82048e373e98678a8c1
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869624"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936966"
 ---
 # <a name="using-wildcard-characters-in-string-comparisons"></a>Verwenden von Platzhalterzeichen in Zeichenfolgenvergleichen
 
@@ -60,7 +60,7 @@ Sie können eine Gruppe von einem oder mehreren Zeichen (*Charlist*) in Klammern
 
 Zusätzlich zu einer Liste von Zeichen in Klammern eingeschlossen können *Charlist* einen Bereich von Zeichen angeben, mit einem Bindestrich (-) zum Trennen der Ober- und Untergrenze des Bereichs. Verwenden Sie beispielsweise \[A – Z\] in *Muster* ergibt eine Übereinstimmung, wenn die entsprechende Zeichenposition im *Ausdruck* Großbuchstaben im Bereich von A bis Z enthält. Sie können mehrere Bereiche innerhalb der Klammern einschließen, ohne zur Einschränkung die Bereiche. Beispielsweise \[a-zA-Z0-9\] entspricht einem alphanumerisches Zeichen.
 
-Es ist wichtig zu beachten, dass die ANSI SQL-Platzhalter (%) und (\_) sind nur verfügbar, mit Microsoft® Jet Version 4.X und den Microsoft OLE DB-Anbieter für Jet. Wenn sie in Microsoft Access oder DAO verwendet werden, werden sie als Literale behandelt.
+Es ist wichtig zu beachten, dass die ANSI SQL-Platzhalter (%) und (\_) sind nur verfügbar, mit Microsoft Jet Version 4.X und den Microsoft OLE DB-Anbieter für Jet. Wenn sie in Microsoft Access oder DAO verwendet werden, werden sie als Literale behandelt.
 
 Nachfolgend sind andere wichtige Regeln für den Mustervergleich aufgeführt:
 

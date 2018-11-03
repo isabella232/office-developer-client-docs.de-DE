@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277575
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1635ff8ad43af45a62cd2223be853cefb5b6e999
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c20701e9863d72a9308679965425b74c9f9818ac
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870800"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937638"
 ---
 # <a name="insert-into-statement-microsoft-access-sql"></a>INSERT INTO-Anweisung (Microsoft Access SQL)
 
@@ -25,11 +25,11 @@ Fügt einen Datensatz oder mehrere Datensätze einer Tabelle hinzu. Dies wird al
 
 ## <a name="syntax"></a>Syntax
 
-**Anfügeabfrage mit mehreren Datensätzen**:
+### <a name="multiple-record-append-query"></a>Anfügeabfrage mit mehreren Datensätzen
 
 INSERT INTO *Ziel* \[(*Feld1*\[, *Feld2*\[,... \] \])\] \[IN *externe Datenbank* \] auswählen \[ *Quelle*. \] *Feld1*\[, *Feld2*\[,... \] FROM *Tabellenausdruck]*
 
-**Anfügeabfrage mit einem Datensatz**:
+### <a name="single-record-append-query"></a>Anfügeabfrage mit einem Datensatz
 
 INSERT INTO *Ziel* \[(*Feld1*\[, *Feld2*\[,... \] \])\] Werte (*Wert1*\[, *Wert2*\[,... \])
 

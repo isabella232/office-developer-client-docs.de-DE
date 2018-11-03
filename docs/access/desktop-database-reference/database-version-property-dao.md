@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192887(v=office.15)
 ms:contentKeyID: 48544440
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d39dc351eee86ec409f85b602dfa46099c0381b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 611fed16c9020b0a6499427af0788bf9ff050c28
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923616"
+ms.locfileid: "25936560"
 ---
 # <a name="databaseversion-property-dao"></a>Database.Version-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ In einem Microsoft Access-Arbeitsbereich gibt diese Eigenschaft die Version der 
 
 Der Rückgabewert ist ein String-Datentyp, der als Versionsnummer im folgenden Format ausgewertet wird.
 
-  - Der Microsoft Access-Arbeitsbereich stellt die Versionsnummer in der Form major.minor dar, z. B. 3.0. Die Produktversionsnummer besteht aus der Versionsnummer (3), einem Punkt und einer Releasenummer (0).
+- Der Microsoft Access-Arbeitsbereich stellt die Versionsnummer in der Form major.minor dar, z. B. 3.0. Die Produktversionsnummer besteht aus der Versionsnummer (3), einem Punkt und einer Releasenummer (0).
 
 Die folgende Tabelle zeigt, welche Version der Datenbank-Engine in verschiedenen Versionen von Microsoft-Produkten enthalten waren.
 

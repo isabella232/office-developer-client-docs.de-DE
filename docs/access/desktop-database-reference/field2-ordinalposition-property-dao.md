@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052899
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1672c893994c1257a3898304042816d859e83314
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 600fe2855ba10e1ab36413f6395d3455bb7bd00b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927319"
+ms.locfileid: "25937057"
 ---
 # <a name="field2ordinalposition-property-dao"></a>Field2.Ordinalposition-Eigenschaft (DAO)
 
@@ -88,7 +88,7 @@ Sie können einen Wert angeben, der größer als die Anzahl der Felder minus 1 i
 
 
 > [!NOTE]
-> <P>Selbst wenn die Fields-Auflistung eines TableDef-Objekts nicht aktualisiert wurde, gibt die Reihenfolge der Felder in einem Recordset-Objekt, das vom TableDef-Objekt aus geöffnet wird, die OrdinalPosition-Daten des TableDef-Objekts wieder. Ein Recordset-Objekt vom Typ Tabelle besitzt dieselben OrdinalPosition-Daten wie die zugrunde liegende Tabelle, jeder andere Recordset-Objekttyp weist jedoch neue OrdinalPosition-Daten auf (beginnend bei 0), die der durch die OrdinalPosition-Daten des TableDef-Objekts bestimmten Reihenfolge entsprechen.</P>
+> Auch wenn die **Fields** -Auflistung ein **[TableDef](tabledef-object-dao.md)** -Objekt nicht aktualisiert wurde, wird die Reihenfolge der Felder in einem **[Recordset-Objekt](recordset-object-dao.md)** aus der **TableDef** geöffnet die **OrdinalPosition** -Daten des **TableDef** -Objekts widerspiegeln. Ein **Recordset-Objekt** vom Typ Tabelle wird die gleichen **OrdinalPosition** Daten wie der zugrunde liegenden Tabelle, aber eine andere Art von **Recordset-Objekt** werden neue **OrdinalPosition** -Daten (beginnend mit 0), die die Reihenfolge der **Folgen haben OrdinalPosition** Daten des **TableDef**.
 
 
 

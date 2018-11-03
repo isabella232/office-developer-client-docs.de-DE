@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249630(v=office.15)
 ms:contentKeyID: 48546295
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 195e9fc25e3aa8871233ebe60441d29909b31a48
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f638ae278835841ebf297f2472c04235c6a325b4
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878311"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936651"
 ---
 # <a name="marking-business-objects-as-safe-for-scripting"></a>Kennzeichnen von Geschäftsobjekten als sicher für die Verwendung von Skript
 
@@ -32,7 +32,7 @@ Categories\{7DD95802-9882-11CF-9FA9-00AA006C42C4}]
 
 wobei \< *MyActiveXGUID* \> hexadezimale GUID-Nummer des Geschäftsobjekts ist. Speichern Sie es, und in der Registrierung durch den Registrierungs-Editor verwenden oder durch Doppelklicken auf die REG-Datei in Windows Explorer zusammengeführt.
 
-Geschäftsobjekte, die in Microsoft® Visual Basic erstellt werden, können mit dem Paket- und Bereitstellungs-Assistenten automatisch als "sicher für Skript" gekennzeichnet werden. Wählen Sie **Safe for initialization** und **Safe for scripting** aus, wenn Sie vom Assistenten auffordert werden, Sicherheitseinstellungen anzugeben.
+In Microsoft Visual Basic erstellte Geschäftsobjekte können mit dem Package und Bereitstellungs-Assistenten automatisch als "sicher für Skripting" markiert. Wählen Sie **Safe for initialization** und **Safe for scripting** aus, wenn Sie vom Assistenten auffordert werden, Sicherheitseinstellungen anzugeben.
 
 Im letzten Schritt erstellt der Anwendungseinrichtungs-Assistent eine HTM- und eine CAB-Datei. Sie können diese beiden Dateien anschließend auf den Zielcomputer kopieren. Doppelklicken Sie dann auf die HTM-Datei, um die Seite zu laden und den Server ordnungsgemäß zu registrieren.
 

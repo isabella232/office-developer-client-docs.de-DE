@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248916(v=office.15)
 ms:contentKeyID: 48543404
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 9725a0e4af6ac6d25140739d6604abae6b76dcb6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 3c31b42d7b496762e74ffcf8d62e4927d5420374
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879445"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937666"
 ---
 # <a name="affectenum"></a>AffectEnum
 
@@ -38,8 +38,7 @@ Gibt an, welche Datensätze von einer Operation betroffen sind.
 <tr class="odd">
 <td><p><strong>adAffectAll</strong></p></td>
 <td><p>3</p></td>
-<td><p>Wenn Sie nicht, dass ein <a href="filter-property-ado.md">Filter</a> für das <strong>Recordset-Objekt</strong>angewendet wird, wirkt sich auf alle Datensätze. Wenn die <strong>Filter</strong> -Eigenschaft auf ein zeichenfolgenkriterium festgelegt ist (wie &quot;Author = 'Smith'&quot;), der Vorgang wirkt sich auf die sichtbaren Datensätze im aktuellen Kapitel. Wenn die <strong>Filter</strong> -Eigenschaft auf ein Element von <a href="filtergroupenum.md">FilterGroupEnum</a> oder ein Array von Lesezeichen festgelegt ist, wirkt sich die Operation alle Zeilen des <strong>Recordset-Objekts</strong>.</p>
-<p><strong>Hinweis</strong>: AdAffectAll ist im Objektbrowser von Visual Basic ausgeblendet.</p>
+<td><p>Wenn Sie nicht, dass ein <a href="filter-property-ado.md">Filter</a> für das <strong>Recordset-Objekt</strong>angewendet wird, wirkt sich auf alle Datensätze. Wenn die <strong>Filter</strong> -Eigenschaft auf ein zeichenfolgenkriterium festgelegt ist (wie &quot;Author = 'Smith'&quot;), der Vorgang wirkt sich auf die sichtbaren Datensätze im aktuellen Kapitel. Wenn die <strong>Filter</strong> -Eigenschaft auf ein Element von <a href="filtergroupenum.md">FilterGroupEnum</a> oder ein Array von Lesezeichen festgelegt ist, wirkt sich die Operation alle Zeilen des <strong>Recordset-Objekts</strong>.</p><p><strong>Hinweis</strong>: AdAffectAll ist im Objektbrowser von Visual Basic ausgeblendet.</p>
 </td>
 </tr>
 <tr class="even">

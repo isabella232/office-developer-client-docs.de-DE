@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052900
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6bd096b8989cefe48df882d447aab0d4f3d0a6ee
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1236b606f81533922844026d87644b7724e68977
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925198"
+ms.locfileid: "25937568"
 ---
 # <a name="fieldsourcetable-property-dao"></a>Field.SourceTable-Eigenschaft (DAO)
 
@@ -74,6 +74,6 @@ Diese Eigenschaften geben das ursprüngliche Feld und die Tabellennamen an, die 
 
 
 > [!NOTE]
-> <P>Die SourceTable-Eigenschaft gibt keinen sinnvollen Tabellenamen zurück, wenn sie für ein Field-Objekt in der Fields-Auflistung eines Recordset-Objekts vom Typ Tabelle verwendet wird.</P>
+> Die SourceTable-Eigenschaft gibt keinen sinnvollen Tabellenamen zurück, wenn sie für ein Field-Objekt in der Fields-Auflistung eines Recordset-Objekts vom Typ Tabelle verwendet wird.
 
 

@@ -10,18 +10,16 @@ f1_keywords:
 - vbaac10.chm78430
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7999d2acd19fd1f6aa4d7dd9dccd88b7ffea88a7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b0b8d7cb1a224b7f9c4d587d5c8941977dab2f66
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925328"
+ms.locfileid: "25937127"
 ---
 # <a name="cancelevent-macro-action"></a>CancelEvent-Makroaktion
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Die **AbbrechenEreignis** -Aktion können Sie das Ereignis abzubrechen, das Zugriff auf das Makro mit dieser Aktion ausgeführt. Der Name des Makros ist die Einstellung einer Ereigniseigenschaft wie **BeforeUpdate**, **OnOpen**, **OnUnload**oder **OnPrint**.
 
@@ -76,8 +74,6 @@ Die folgenden Ereignisse können von der **AbbrechenEreignis** -Aktion abgebroch
 </tr>
 </tbody>
 </table>
-
-
 
 > [!NOTE]
 > [!HINWEIS] Sie können die **AbbrechenEreignis** -Aktion mit dem **MouseDown** -Ereignis nur dazu verwenden, das Ereignis abzubrechen, das beim Klicken mit der rechten Maustaste auftritt.

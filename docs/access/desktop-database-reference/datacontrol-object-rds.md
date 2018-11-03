@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249801(v=office.15)
 ms:contentKeyID: 48547001
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8cb71c5e51e56447636b25639dae0733a729bdb1
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: 2d4b622cd65cfaf71c45ac7ae8c77bdb596ebd3a
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910866"
+ms.locfileid: "25937806"
 ---
 # <a name="datacontrol-object-rds"></a>DataControl-Objekt (RDS)
 
@@ -92,7 +92,7 @@ Beim Definieren der **RDS. DataControl** -Objekts auf einer Webseite, verwenden 
 
 Clientkomponenten von Remote Data Service sind bereits in Internet Explorer 4.0 enthalten. Aus diesem Grund ist es nicht erforderlich, einen CODEBASE-Parameter in das **RDS.DataControl** -Objekttag einzubeziehen.
 
-Bei Internet Explorer 4.0 oder höher können Sie Daten mithilfe von HTML- und ActiveX®-Steuerelementen nur binden, wenn sie als Steuerelemente des Apartmentthreading-Modells markiert sind.
+Mit Internet Explorer 4.0 oder höher, können Sie binden an Daten mithilfe von HTML- und ActiveX-Steuerelemente nur, wenn sie als Steuerelemente für des Apartmentthreading-Modells markiert sind.
 
 **Microsoft Visual Basic-Benutzer** RDS **. DataControl** wird nur in webbasierten Anwendungen verwendet. Eine Visual Basic-Clientanwendung benötigt das Objekt nicht.
 

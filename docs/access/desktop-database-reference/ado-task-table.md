@@ -1,24 +1,23 @@
 ---
-title: 'Vorgang: Tabelle ActiveX Data Objects (ADO)'
-TOCTitle: ADO Task Table
+title: Aufgabentabelle ActiveX Data Objects (ADO)
+TOCTitle: ADO task table
 ms:assetid: 39671d86-72ac-a7b0-53d2-7a17429b15ad
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6b2766fbdc7976e917b203943b70aae953a5edbc
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b7da083471149316c39595913aec26053e5ad718
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877590"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936749"
 ---
 # <a name="ado-task-table"></a>ADO-Aufgabentabelle
 
-
 **Betrifft**: Access 2013, Office 2013
 
-In der folgenden Tabelle sind Programmieraufgaben aus dem *ADO-Programmierhandbuch* sowie Themen zu den einzelnen Aufgaben aufgeführt. Bei diesen Themen kann es sich um Beschreibungen oder Codebeispiele handeln, in denen Sie Informationen zum ADO-Feature finden, mit dem die Aufgabe ausgeführt wird.
+In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* enthält und Informationsquellen für jede Aufgabe. Bei diesen Themen kann es sich um Beschreibungen oder Codebeispiele handeln, in denen Sie Informationen zum ADO-Feature finden, mit dem die Aufgabe ausgeführt wird.
 
 <table>
 <colgroup>

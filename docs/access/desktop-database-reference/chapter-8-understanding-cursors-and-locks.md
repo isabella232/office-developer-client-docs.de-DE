@@ -1,20 +1,19 @@
 ---
-title: 'Kapitel 8: Grundlegendes zu Cursorn und Sperren'
-TOCTitle: 'Chapter 8: Understanding Cursors and Locks'
+title: 'Kapitel 8: Grundlegendes zu Cursorn und Sperren für Websitesammlungen'
+TOCTitle: 'Chapter 8: Understanding cursors and locks'
 ms:assetid: 889356f9-53ca-3c46-6781-b37e1f065717
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249598(v=office.15)
 ms:contentKeyID: 48546139
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4b98952e64eac3c35ed67f50e50776c08e594474
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 3ca76b5635e057251aff845ecf45146e6e0d89a6
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869085"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936939"
 ---
-# <a name="chapter-8-understanding-cursors-and-locks"></a>Kapitel 8: Grundlegendes zu Cursorn und Sperren
-
+# <a name="chapter-8-understanding-cursors-and-locks"></a>Kapitel 8: Grundlegendes zu Cursorn und Sperren für Websitesammlungen
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -25,16 +24,10 @@ Viele Funktionen des **Recordset** -ADO-Objekts werden durch den Cursortyp und d
 In diesem Kapitel werden die folgenden Themen behandelt:
 
 - [Was ist ein Cursor?](what-is-a-cursor.md)
-
-- [Bedeutung der Cursorplatzierung](the-significance-of-cursor-location.md)
-
+- [Die Bedeutung der cursorplatzierung](the-significance-of-cursor-location.md)
 - [Microsoft Cursor Service für OLE DB](the-microsoft-cursor-service-for-ole-db.md)
-
 - [Verwenden der CacheSize-Eigenschaft](using-cachesize.md)
-
 - [Merkmale von Cursorn und Sperren](cursor-and-lock-characteristics.md)
-
-- [Types of Cursors (ADO)](types-of-cursors.md)
-
-- [What is a Lock? (ADO)](what-is-a-lock.md)
+- [Cursortypen (ADO)](types-of-cursors.md)
+- [Was ist eine Sperre? (ADO)](what-is-a-lock.md)
 

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dd38a7f4973195fdd758934ceec787d623c3353c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f754cb913918a757c91f8b87e00ef88fb0674684
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923266"
+ms.locfileid: "25936679"
 ---
 # <a name="gotopage-macro-action"></a>GoToPage-Makroaktion
 
@@ -55,12 +55,8 @@ Die **GeheZuSeite** -Aktion verwendet die folgenden Argumente.
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>[!HINWEIS] Die Argumente <STRONG>Rechts</STRONG> und <STRONG>Abwärts</STRONG> werden, abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung, in Zoll oder Zentimetern gemessen.</P>
-
-
+> >[!HINWEIS] Die Argumente **Rechts** und **Abwärts** werden, abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung, in Zoll oder Zentimetern gemessen.
 
 ## <a name="remarks"></a>Hinweise
 

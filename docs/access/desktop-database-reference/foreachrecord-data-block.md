@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822743(v=office.15)
 ms:contentKeyID: 48547455
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fd16b91bb3d6ca0d206be0a63bb73e6f9176da8e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 09a09a80773adecf760ae4610df30bbd5f36f3d6
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921026"
+ms.locfileid: "25937526"
 ---
 # <a name="foreachrecord-data-block"></a>FürJedenDatensatz-Datenblock
 
@@ -20,11 +20,8 @@ ms.locfileid: "25921026"
 
 Mit einem **FürJedenDatensatz** -Datenblock wird eine Reihe von Anweisungen für jeden Datensatz in einer Domäne wiederholt.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Der <STRONG>FürJedenDatensatz</STRONG> -Datenblock ist nur in Datenmakros verfügbar.</P>
-
-
+> [!HINWEIS] Der **FürJedenDatensatz** -Datenblock ist nur in Datenmakros verfügbar.
 
 ## <a name="setting"></a>Einstellung
 
@@ -50,7 +47,7 @@ Die **FürJedenDatensatz** -Aktion kann mit den folgenden Argumenten verwendet w
 <td><p>Eine Zeichenfolge zur Identifizierung von Datensätzen für den Betrieb die Domäne. Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</p>
 
 > [!NOTE]
-> <P>Die angegebene Domäne darf keine Daten enthalten, die in einer verknüpften Tabelle oder einer ODBC-Datenquelle gespeichert sind.</P>
+> Die angegebene Domäne darf keine Daten enthalten, die in einer verknüpften Tabelle oder einer ODBC-Datenquelle gespeichert sind.
 
 
 <p></p></td>

@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b55bf1897c6b5fc5cd7ee70402e466f2180b7d92
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 26d2b4b6281dd762e95113d5ca022e7c0d136755
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25890925"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937044"
 ---
 # <a name="constraint-clause-microsoft-access-sql"></a>CONSTRAINT-Klausel (Microsoft Access SQL)
 
@@ -32,11 +32,11 @@ Verwenden Sie die CONSTRAINT-Klausel in den [ALTER TABLE](alter-table-statement-
 
 ## <a name="syntax"></a>Syntax
 
-**Beschränkung für ein Feld**:
+### <a name="single-field-constraint"></a>Beschränkung für ein Feld
 
 CONSTRAINT *Name* {PRIMARY KEY | EINDEUTIGE | NOT NULL | REFERENCES *Fremdtabelle* \[(*fremdfeld1, fremdfeld2*)\] \[ON UPDATE CASCADE | Legen Sie NULL\] \[ON DELETE CASCADE | Legen Sie NULL\]}
 
-**Beschränkung für mehrere Felder**:
+### <a name="multiple-field-constraint"></a>Beschränkung für mehrere Felder
 
 CONSTRAINT *Name* {PRIMARY KEY (*primär1*\[, *primär2* \[,... \]\]) | EINDEUTIGE (*eindeutig1*\[, *eindeutig2* \[,... \]\]) | NOT NULL (*nichtnull1*\[, *nichtnull2* \[,... \]\]) | FREMDSCHLÜSSEL \[kein INDEX\] (*Bezug1*\[, *Bezug2* \[,... \] \]) Verweise *Foreigntable* \[(*fremdfeld1* \[, *fremdfeld2* \[,... \] \])\] \[ON UPDATE CASCADE | Legen Sie NULL\] \[ON DELETE CASCADE | Legen Sie NULL\]}
 

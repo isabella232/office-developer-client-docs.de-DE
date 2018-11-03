@@ -1,45 +1,45 @@
 ---
 title: Was ist neu in ActiveX Data Objects (ADO)
-TOCTitle: What's New in ADO
+TOCTitle: What's new in ADO
 ms:assetid: fd3d0f9c-e9df-d130-13e3-757620e9400c
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
 ms:contentKeyID: 48548905
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5f374abd42659708ddb1e9fcd131faaac94f05cf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 950edd8ce1cd0e5081d569b1b11a02a14fe94d99
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25891114"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937701"
 ---
 # <a name="whats-new-in-ado"></a>Neuigkeiten in ADO
 
-
 **Betrifft**: Access 2013, Office 2013 
  
-
 Die folgenden neuen Features und die folgende erweiterte Dokumentation sind in der Version ADO 2.5 enthalten. In dieser Liste werden ADO, ADO MD und ADOX behandelt.
 
-## <a name="new-features"></a>Neue Features
+## <a name="new-features"></a>Neue features
 
-**[Datensätze und Datenströme](chapter-10-records-and-streams.md)**
+- **[Datensätze und Datenströme](chapter-10-records-and-streams.md)**
 
-In dieser Version von ADO wird das [Record](record-object-ado.md)-Objekt eingeführt, durch das z. B. Verzeichnisse und Dateien in einem Dateisystem oder Ordner und Nachrichten in einem E-Mail-System dargestellt und verwaltet werden können. Durch ein **Record** -Objekt kann auch eine Zeile in einem [Recordset](recordset-object-ado.md)-Objekt dargestellt werden, obwohl die Objekte **Record** und **Recordset** über unterschiedliche Methoden und Eigenschaften verfügen.
+  In dieser Version von ADO wird das [Record](record-object-ado.md)-Objekt eingeführt, durch das z. B. Verzeichnisse und Dateien in einem Dateisystem oder Ordner und Nachrichten in einem E-Mail-System dargestellt und verwaltet werden können. Durch ein **Record** -Objekt kann auch eine Zeile in einem [Recordset](recordset-object-ado.md)-Objekt dargestellt werden, obwohl die Objekte **Record** und **Recordset** über unterschiedliche Methoden und Eigenschaften verfügen.
 
-Das neue [Stream](stream-object-ado.md)-Objekt ermöglicht das Lesen, Schreiben und Verwalten des binären Byte- oder Textdatenstroms, aus dem ein Datei- oder Nachrichtendatenstrom besteht.
+  Das neue [Stream](stream-object-ado.md)-Objekt ermöglicht das Lesen, Schreiben und Verwalten des binären Byte- oder Textdatenstroms, aus dem ein Datei- oder Nachrichtendatenstrom besteht.
 
-**[URL-Verwendung](absolute-and-relative-urls.md)**
+- **[URL-Verwendung](absolute-and-relative-urls.md)**
 
-In dieser Version wird außerdem die Verwendung von URLs (Uniform Resource Locators) als Alternative zu Verbindungszeichenfolgen und Befehlstext zum Benennen von Datenspeicherobjekten eingeführt. URLs können mit den vorhandenen Objekten [Connection](connection-object-ado.md) und **Recordset** sowie mit den neuen Objekten **Record** und **Stream** verwendet werden.
+  In dieser Version wird außerdem die Verwendung von URLs (Uniform Resource Locators) als Alternative zu Verbindungszeichenfolgen und Befehlstext zum Benennen von Datenspeicherobjekten eingeführt. URLs können mit den vorhandenen Objekten [Connection](connection-object-ado.md) und **Recordset** sowie mit den neuen Objekten **Record** und **Stream** verwendet werden.
 
-In dieser Version von ADO werden OLE DB-Anbieter unterstützt, von denen die eigenen URL-Schemas erkannt werden. Beispielsweise wird vom [OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md)*,* durch den auf das Windows 2000-Dateisystem zugegriffen wird, das vorhandene HTTP-Schema erkannt.
+  In dieser Version von ADO werden OLE DB-Anbieter unterstützt, von denen die eigenen URL-Schemas erkannt werden. Beispielsweise wird vom [OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md)*,* durch den auf das Windows 2000-Dateisystem zugegriffen wird, das vorhandene HTTP-Schema erkannt.
 
-**[Spezielle Felder für Dokumentquellenanbieter](records-and-provider-supplied-fields.md)**
+- **[Spezielle Felder für Dokumentquellenanbieter](records-and-provider-supplied-fields.md)**
 
-Eine spezielle Klasse von Anbietern von Anbietern von *Quelle des Dokuments* aufgerufen werden Ordner und Dokumente verwaltet. Wenn ein **Record** -Objekt ein Dokument stellt oder ein **Recordset** -Objekt einen Ordner von Dokumenten stellt, füllt der Dokumentquellenanbieter diese Objekte mit einem eindeutigen Satz von Feldern, die Merkmale des Dokuments beschrieben. Diese Felder bilden eine *Ressource* **oder ein **Recordset**** .
+  Eine spezielle Klasse von Anbietern von Anbietern von *Quelle des Dokuments* aufgerufen werden Ordner und Dokumente verwaltet. Wenn ein **Record** -Objekt ein Dokument stellt oder ein **Recordset** -Objekt einen Ordner von Dokumenten stellt, füllt der Dokumentquellenanbieter diese Objekte mit einem eindeutigen Satz von Feldern, die Merkmale des Dokuments beschrieben. Diese Felder bilden eine *Ressource* **oder ein **Recordset**** .
 
 ## <a name="new-reference-topics"></a>Neue Referenzthemen
+
+### <a name="properties"></a>Eigenschaften
 
 Die folgenden neuen Eigenschaften sind in dieser Version enthalten.
 
@@ -102,6 +102,7 @@ Die folgenden neuen Eigenschaften sind in dieser Version enthalten.
 </tbody>
 </table>
 
+### <a name="methods"></a>Methoden
 
 Die folgenden neuen Methoden sind in dieser Version enthalten.
 
@@ -187,15 +188,15 @@ Die folgenden neuen Methoden sind in dieser Version enthalten.
 
 ## <a name="new-and-enhanced-documentation"></a>Neue und erweiterte Dokumentation
 
-**[ADO-Codebeispiele](ado-code-examples.md)**
+- **[Code-Beispiele](ado-code-examples.md)**
 
-Die Beispiele wurden um in Microsoft Visual C++® und Microsoft Visual J++® geschriebene Codebeispiele erweitert. Sie können diese Codebeispiele kopieren und in den Editor einfügen.
+  In den Beispielen wurden erweitert um Codebeispiele in Microsoft Visual C++ und Microsoft Visual J++ geschriebene enthalten. Sie können diese Codebeispiele kopieren und in den Editor einfügen.
 
-**[Anhang A: Anbieter](appendix-a-providers.md)**
+- **[Anhang a: Anbieter](appendix-a-providers.md)**
 
-Es ist ein neues Thema enthalten, in dem die Verwendung von ADO mit dem [OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) erläutert wird.
+  Es ist ein neues Thema enthalten, in dem die Verwendung von ADO mit dem [OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) erläutert wird.
 
-**[Programmieren mit ADO](appendix-c-programming-with-ado.md)**
+- **[Programmieren mit ADO](appendix-c-programming-with-ado.md)**
 
-Dieser neue Abschnitt enthält Tipps und Tricks für das Verwenden von ADO mit verschiedenen Programmiersprachen. Er enthält die vorhandenen Syntaxindizes für die Visual C++-Erweiterungen für ADO und ADO/WFC sowie neue Informationen speziell für Entwickler, die Microsoft Visual Basic®, Microsoft Visual Basic® Scripting Edition, Microsoft JScript®, Microsoft Visual C++ oder Microsoft Visual J++ verwenden.
+  Dieser neue Abschnitt enthält Tipps und Tricks für das Verwenden von ADO mit verschiedenen Programmiersprachen. Sie enthält die vorhandenen Syntaxindizes für die Visual C++-Erweiterungen für ADO und ADO/WFC-als auch neue Informationen speziell für Entwickler, die mit Microsoft Visual Basic, Microsoft Visual Basic Scripting Edition, Microsoft JScript, Microsoft Visual C++, oder Microsoft Visual J++.
 

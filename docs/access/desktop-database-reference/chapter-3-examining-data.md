@@ -1,20 +1,19 @@
 ---
 title: 'Kapitel 3: Untersuchen von Daten'
-TOCTitle: 'Chapter 3: Examining Data'
+TOCTitle: 'Chapter 3: Examining data'
 ms:assetid: 73c69134-3127-3344-d5c3-5ecb9e0e958b
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249474(v=office.15)
 ms:contentKeyID: 48545648
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b5542b465cc6fc31949f2ceb5ed8bda408b1e653
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4b489400536675fccced8f87aae515b019b87123
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875931"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936861"
 ---
 # <a name="chapter-3-examining-data"></a>Kapitel 3: Untersuchen von Daten
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -54,6 +53,8 @@ ErrHandler:
 End Sub 
 'EndRsTour 
 ```
+
+<br/>
 
 Diese SQL-Abfrage gibt ein **Recordset** -Objekt mit fünf Zeilen (Datensätzen) und drei Spalten (Feldern) zurück. Die Werte für die einzelnen Zeilen sind in der folgenden Tabelle aufgelistet.
 
@@ -107,8 +108,6 @@ Im nächste Abschnitt wird erläutert, wie die aktuelle Position des Cursors in 
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-  - [Locating the Current Record (ADO)](locating-the-current-record.md)
-
-  - [Navigating Through the Data (ADO)](navigating-through-the-data.md)
-
-  - [Understanding Recordset Structure (ADO)](understanding-recordset-structure.md)
+- [Suchen des aktuellen Datensatzes (ADO)](locating-the-current-record.md)
+- [Navigieren in den Daten (ADO)](navigating-through-the-data.md)
+- [Grundlegendes zur Struktur von Recordset-Objekt (ADO)](understanding-recordset-structure.md)

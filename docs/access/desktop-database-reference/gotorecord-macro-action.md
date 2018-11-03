@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm58124
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 90d50ce1f1435d38fdfe1ed11e76b49c212b87b3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5986b8e891b42ce37cb68d8ce06e7f33feba1b8f
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922454"
+ms.locfileid: "25937729"
 ---
 # <a name="gotorecord-macro-action"></a>GoToRecord-Makroaktion
 
@@ -61,7 +61,7 @@ Die **GeheZuDatensatz** -Aktion hat die folgenden Argumente.
 </ul>
 
 > [!NOTE]
-> <P>Wenn Sie für das Argument <STRONG>Datensatz</STRONG> die Einstellung <STRONG>Erster</STRONG>, <STRONG>Letzter</STRONG> oder <STRONG>Neu</STRONG> verwenden, ignoriert Access das Argument <STRONG>Offset</STRONG>. Wenn Sie einen Wert für <STRONG>Offset</STRONG> eingeben, der zu groß ist, zeigt Access eine Fehlermeldung an. Sie können keine negative Zahlen für das Argument <STRONG>Offset</STRONG> eingeben.</P>
+> Wenn Sie für das Argument **Datensatz** die Einstellung **Erster**, **Letzter** oder **Neu** verwenden, ignoriert Access das Argument **Offset**. Wenn Sie einen Wert für **Offset** eingeben, der zu groß ist, zeigt Access eine Fehlermeldung an. Sie können keine negative Zahlen für das Argument **Offset** eingeben.
 
 
 <p></p>

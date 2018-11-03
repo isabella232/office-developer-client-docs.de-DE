@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277563
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c143e9121bd86b17856fd0e0998d2af0adf9dec6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4beb013b09ce136d6ffa7558225e01fae80da645
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880908"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937092"
 ---
 # <a name="create-table-statement-microsoft-access-sql"></a>CREATE TABLE-Anweisung (Microsoft Access SQL)
 
@@ -24,7 +24,7 @@ ms.locfileid: "25880908"
 Erstellt eine neue Tabelle.
 
 > [!NOTE]
-> [!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der CREATE TABLE- oder anderer DDL-Anweisungen für Datenbanken ohne das Microsoft Access-Datenbankmodul. Verwenden Sie stattdessen Methoden **DAO erstellen** .
+> [!HINWEIS] Das Microsoft Access-Datenbankmodul unterstützt nicht die Verwendung der CREATE TABLE- oder anderer DDL-Anweisungen für Datenbanken ohne das Microsoft Access-Datenbankmodul. Verwenden Sie stattdessen Methoden DAO **Erstellen** .
 
 ## <a name="syntax"></a>Syntax
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248853(v=office.15)
 ms:contentKeyID: 48543214
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bd4bafd29195e2ff9898973351cd7d13262c3cec
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: b346cd5c53ee101809237896acc0806bbf4e4624
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869680"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936931"
 ---
 # <a name="creating-the-connection-string"></a>Erstellen der Verbindungszeichenfolge
 
@@ -58,7 +58,7 @@ ADO unterstützt direkt fünf Argumente in einer Verbindungszeichenfolge. Andere
 
 
 > [!NOTE]
-> In den folgenden Beispielen und im ADO-Programmierhandbuch werden die Benutzer-ID "MyId" und das Kennwort "123aBc" zum Authentifizieren am Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Ersetzen Sie außerdem "MySqlServer" durch den Namen Ihres Servers.
+> In den folgenden Beispielen und in der gesamten das ADO-Programmierhandbuch wird die Benutzer-Id "MyId" und das Kennwort "123abc" zum Authentifizieren am Server verwendet. Sie sollten diese Werte durch gültige Anmeldeinformationen für Ihren Server ersetzen. Ersetzen Sie außerdem "MySqlServer" durch den Namen Ihres Servers.
 
 Für die HelloData-Anwendung in Kapitel 1 wurde die folgende Verbindungszeichenfolge verwendet:
 

@@ -1,20 +1,19 @@
 ---
 title: 'Kapitel 10: Datensätze und Datenströme'
-TOCTitle: 'Chapter 10: Records and Streams'
+TOCTitle: 'Chapter 10: Records and streams'
 ms:assetid: 74862096-2273-3b61-f89c-06554ccf42cd
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249477(v=office.15)
 ms:contentKeyID: 48545663
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c61aef7a4f0cc34f256300304823341c99fb8436
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6d0d5eec3c032780dd6065bd29f6d41c299a7379
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876967"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937694"
 ---
 # <a name="chapter-10-records-and-streams"></a>Kapitel 10: Datensätze und Datenströme
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -36,28 +35,25 @@ Weitere Informationen zum Verwenden des **Record** -Objekts zum Verarbeiten dies
 
 Durch das **Stream** -Objekt wird die Möglichkeit zum Lesen, Schreiben und Verwalten eines Bytedatenstroms bereitgestellt. Dieser Bytedatenstrom kann aus Text oder Binärdaten bestehen und ist in der Größe nur durch die Systemressourcen beschränkt. Normalerweise werden **Stream** -ADO-Objekte für die folgenden Zwecke verwendet:
 
-  - Abrufen des Texts oder der Bytes, aus denen eine Datei oder Nachricht besteht, wird normalerweise mit Anbietern wie dem Microsoft OLE DB-Anbieter für Internet Publishing verwendet. Weitere Informationen zu dieser Verwendung von **Stream** -Objekten finden Sie unter [Verwenden von ADO für Internet Publishing](using-ado-for-internet-publishing.md).
+- Abrufen des Texts oder der Bytes, aus denen eine Datei oder Nachricht besteht, wird normalerweise mit Anbietern wie dem Microsoft OLE DB-Anbieter für Internet Publishing verwendet. Weitere Informationen zu dieser Verwendung von **Stream** -Objekten finden Sie unter [Verwenden von ADO für Internet Publishing](using-ado-for-internet-publishing.md).
 
 Ein **Stream** -Objekt kann für Folgendes geöffnet werden:
 
-  - Eine einfache Datei, die mit einer URL angegeben wird.
+- Eine einfache Datei, die mit einer URL angegeben wird.
 
-  - Ein Feld eines **Record** oder **Recordset** -Objekts, das ein **Stream** -Objekt enthält.
+- Ein Feld eines **Record** oder **Recordset** -Objekts, das ein **Stream** -Objekt enthält.
 
-  - Den Standarddatenstrom eines **Record** - oder **Recordset** -Objekts, das ein Verzeichnis oder eine Verbunddatei darstellt.
+- Den Standarddatenstrom eines **Record** - oder **Recordset** -Objekts, das ein Verzeichnis oder eine Verbunddatei darstellt.
 
-  - Ein Ressourcenfeld, das die URL einer einfachen Datei enthält.
+- Ein Ressourcenfeld, das die URL einer einfachen Datei enthält.
 
-  - Keine bestimmte Quelle. In diesem Fall wird ein **Stream** -Objekt im Arbeitsspeicher geöffnet. Es ist möglich, Daten in das Objekt zu schreiben und es in einem anderen **Stream** -Objekt oder einer Datei zu speichern.
+- Keine bestimmte Quelle. In diesem Fall wird ein **Stream** -Objekt im Arbeitsspeicher geöffnet. Es ist möglich, Daten in das Objekt zu schreiben und es in einem anderen **Stream** -Objekt oder einer Datei zu speichern.
 
-  - Ein BLOB-Feld in einem **Recordset** -Objekt.
+- Ein BLOB-Feld in einem **Recordset** -Objekt.
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-- [Streams and Persistence](streams-and-persistence.md)
-
-- [Records and Provider-Supplied Fields](records-and-provider-supplied-fields.md)
-
+- [Datenströme und Permanenz](streams-and-persistence.md)
+- [Datensätze und vom Anbieter bereitgestellte Felder](records-and-provider-supplied-fields.md)
 - [Absolute und relative URLs](absolute-and-relative-urls.md)
-
-- [Using ADO for Internet Publishing (ADO)](using-ado-for-internet-publishing.md)
+- [Verwenden von ADO für Internet publishing (ADO)](using-ado-for-internet-publishing.md)

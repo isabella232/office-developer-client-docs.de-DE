@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm89832
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 0309a72040751aaab994225159fdca6698a189cc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 426bf296345c47abe58e3e6e5057a43a0d43aa21
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920732"
+ms.locfileid: "25936630"
 ---
 # <a name="findnextrecord-macro-action"></a>FindNextRecord-Makroaktion
 
@@ -34,17 +34,11 @@ Verwenden Sie die **SuchenDatensatz** -Aktion, um die Suchkriterien festzulegen.
 
 Diese Aktion hat dieselbe Wirkung wie die Schaltfläche **Weitersuchen** im Dialogfeld **Suchen und Ersetzen**.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>SuchenDatensatz</STRONG> -Aktion entspricht zwar dem Befehl <STRONG>Suchen</STRONG> auf der Registerkarte <STRONG>Start</STRONG> für Tabellen, Abfragen und Formulare, aber sie entspricht nicht dem Befehl <STRONG>Suchen</STRONG> im Menü <STRONG>Bearbeiten</STRONG> des Codefensters. Sie können weder die <STRONG>SuchenDatensatz</STRONG> -Aktion noch die <STRONG>SuchenNächstenDatensatz</STRONG> -Aktion verwenden, um in Modulen nach Text zu suchen.</P>
-
-
-
+> [!HINWEIS] Die **SuchenDatensatz** -Aktion entspricht zwar dem Befehl **Suchen** auf der Registerkarte **Start** für Tabellen, Abfragen und Formulare, aber sie entspricht nicht dem Befehl **Suchen** im Menü **Bearbeiten** des Codefensters. Sie können weder die **SuchenDatensatz** -Aktion noch die **SuchenNächstenDatensatz** -Aktion verwenden, um in Modulen nach Text zu suchen.
 
 > [!TIP]
-> <P>[!TIPP] Wenn Sie das Argument <STRONG>Nur aktuelles Feld</STRONG> der <STRONG>SuchenDatensatz</STRONG> -Aktion auf <STRONG>Ja</STRONG> festgelegt haben, müssen Sie möglicherweise die <STRONG>GeheZuSteuerelement</STRONG> -Aktion verwenden, um den Fokus auf das Steuerelement zu setzen, das die gesuchten Daten enthält. Erst dann können Sie die <STRONG>SuchenNächstenDatensatz</STRONG> -Aktion verwenden.</P>
-
-
+> [!TIPP] Wenn Sie das Argument **Nur aktuelles Feld** der **SuchenDatensatz** -Aktion auf **Ja** festgelegt haben, müssen Sie möglicherweise die **GeheZuSteuerelement** -Aktion verwenden, um den Fokus auf das Steuerelement zu setzen, das die gesuchten Daten enthält. Erst dann können Sie die **SuchenNächstenDatensatz** -Aktion verwenden.
 
 Wenn der aktuell ausgewählte Text zu dem Zeitpunkt, zu dem die **SuchenNächstenDatensatz** -Makroaktion ausgeführt wird, mit dem Suchtext übereinstimmt, beginnt die Suche sofort im Anschluss an die Auswahl und findet in demselben Feld wie die Auswahl und in demselben Datensatz statt. Andernfalls beginnt die Suche am Anfang des aktuellen Datensatzes. Auf diese Weise können Sie mehrere Instanzen derselben Suchkriterien finden, die möglicherweise in einem einzelnen Datensatz angezeigt werden.
 

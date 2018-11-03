@@ -1,20 +1,19 @@
 ---
 title: 'Kapitel 5: Aktualisieren und Speichern von Daten'
-TOCTitle: 'Chapter 5: Updating and Persisting Data'
+TOCTitle: 'Chapter 5: Updating and persisting data'
 ms:assetid: 77acb763-1c60-1945-791d-3e83d684fb0d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249493(v=office.15)
 ms:contentKeyID: 48545732
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0fe82d2fe434032165a39c95f05d426b8a7342bf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: decb4eefa7c1215d8889fec85c22296d33eff40c
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874895"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937309"
 ---
 # <a name="chapter-5-updating-and-persisting-data"></a>Kapitel 5: Aktualisieren und Speichern von Daten
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,6 +29,5 @@ Im sofortigen Aktualisierungsmodus werden durch jeden Aufruf der **Update** -Met
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-- [Updating Data (ADO)](updating-data.md)
-
-- [Persisting Data (ADO)](persisting-data.md)
+- [Aktualisieren von Daten (ADO)](updating-data.md)
+- [Speichern von Daten (ADO)](persisting-data.md)

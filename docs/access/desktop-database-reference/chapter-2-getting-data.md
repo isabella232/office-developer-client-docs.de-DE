@@ -1,20 +1,19 @@
 ---
 title: 'Kapitel 2: Abrufen von Daten'
-TOCTitle: 'Chapter 2: Getting Data'
+TOCTitle: 'Chapter 2: Getting data'
 ms:assetid: 72d097e1-9284-cc27-fd48-e6bbb6a2a543
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249465(v=office.15)
 ms:contentKeyID: 48545619
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7b045676cad97ffa1dc60f7370ec5013d4c30bdf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 729d7a74c8e1ead84810e82d608e4e9b37268a6b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888076"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937001"
 ---
 # <a name="chapter-2-getting-data"></a>Kapitel 2: Abrufen von Daten
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,20 +25,17 @@ Ihre Anwendung muss zum Abrufen von Daten in Verbindung mit einer Datenquelle, w
 
 Das ADO-Objektmodell stellt das Konzept einer Verbindung mit dem **Connection** -Objekt dar, also die Grundlage, auf der ein Großteil der ADO-Funktionalität basiert. Ein **Connection** -Objekt hat folgenden Zweck:
 
-  - Definieren der Informationen, die ADO zum Kommunizieren mit Datenquellen und zum Erstellen von Sitzungen benötigt.
+- Definieren der Informationen, die ADO zum Kommunizieren mit Datenquellen und zum Erstellen von Sitzungen benötigt.
 
-  - Definieren der Transaktionsfunktionen der Sitzung.
+- Definieren der Transaktionsfunktionen der Sitzung.
 
-  - Ermöglichen des Erstellens und Ausführens von Befehlen für die Datenquelle.
+- Ermöglichen des Erstellens und Ausführens von Befehlen für die Datenquelle.
 
-  - Bereitstellen von Informationen zum Entwurf der zugrunde liegenden Datenquelle in Form von Schemarowsets. Weitere Informationen zu Schemarowsets finden Sie unter [OpenSchema-Methode](openschema-method-ado.md).
+- Bereitstellen von Informationen zum Entwurf der zugrunde liegenden Datenquelle in Form von Schemarowsets. Weitere Informationen zu Schemarowsets finden Sie unter [OpenSchema-Methode](openschema-method-ado.md).
 
 In diesem Kapitel werden die folgenden Themen behandelt:
 
-  - [Herstellen einer Verbindung](making-a-connection.md)
-
-  - [Using the Connection Object Reference (ADO)](using-the-connection-object-access.md)
-
-  - [Using the Command Object Reference (ADO)](using-the-command-object-access.md)
-
-  - [Adding Data to a Recordset (ADO)](adding-data-to-a-recordset.md)
+- [Herstellen einer Verbindung](making-a-connection.md)
+- [Mithilfe des Connection-Objekt (ADO)](using-the-connection-object-access.md)
+- [Verwenden den Command-Objektverweis (ADO)](using-the-command-object-access.md)
+- [Hinzufügen von Daten an ein Recordset-Objekt (ADO)](adding-data-to-a-recordset.md)

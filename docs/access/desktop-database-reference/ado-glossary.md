@@ -1,17 +1,17 @@
 ---
-title: ActiveX Data Objects (ADO)-Glossar
+title: Glossar ActiveX Data Objects (ADO)
 TOCTitle: ADO Glossary
 ms:assetid: 40f00876-7525-4117-8f57-f3d87c54be99
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249184(v=office.15)
 ms:contentKeyID: 48544438
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 809431c51b7fab9e56d492b44610d607e4da3b06
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e7085edf0d7f30c70868d308130b3f438347ad4b
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869967"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937820"
 ---
 # <a name="ado-glossary"></a>ADO-Glossar
 
@@ -419,11 +419,11 @@ Eine Struktur, die eine hierarchische Beziehung zwischen Elementen (Knoten) dars
 
 Gibt den Speicherort einer Ressource im Internet oder Intranet. Eine vollständige URL besteht aus einem Schema (z. B. FTP, HTTP, Mailto, Datei usw.), gefolgt von einem Doppelpunkt, einen Servernamen und den vollständigen Pfad einer Ressource (beispielsweise ein Dokument, eine Grafik oder andere Datei). Einige Beispiele für URLs sind:  
   
-https://www.domain.com/default.html  
-FTP://FTP.Server.somewhere/ftp.File  
+- https://www.domain.com/default.html  
+- FTP://FTP.Server.somewhere/ftp.File  
   
-FTP://FTP.Server.somewhere/ftp.File  
-file://Server/Share/File.doc
+- FTP://FTP.Server.somewhere/ftp.File  
+- file://Server/Share/File.doc
 
 Siehe auch **absolute URL** und **relative URL**.
 
@@ -431,5 +431,5 @@ Siehe auch **absolute URL** und **relative URL**.
 
 Ein Computer, der Webdienste und Seiten für Intranet- und Internetbenutzer bereitstellt.
 
-Nach oben
+
 

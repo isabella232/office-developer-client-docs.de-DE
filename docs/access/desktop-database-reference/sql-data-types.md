@@ -10,19 +10,19 @@ f1_keywords:
 - jetsql40.chm5277590
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fd49861af896ae1c2d55a80665f119662c0baf53
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: cfaecd26ebd3f747a0e2db2ec530c151928fec74
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880397"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25936910"
 ---
 # <a name="sql-data-types"></a>SQL-Datentypen
 
 
 **Betrifft**: Access 2013, Office 2013
 
-Die SQL-Datentypen für das Microsoft Access-Datenbankmodul bestehen aus 13 primären Datentypen. Diese Datentypen werden von dem Microsoft® Jet-Datenbankmodul und verschiedenen gültigen Synonymen für diese Datentypen definiert.
+Microsoft Access-Datenbank-Engine SQL-Datentypen bestehen aus 13 vom Microsoft Jet-Datenbankmodul definierten primären Datentypen und mehreren gültigen Synonymen für diese Datentypen erkannt.
 
 In der folgenden Tabelle werden die primären Datentypen aufgelistet. Die Synonyme werden unter [Reservierte Wörter für das Microsoft Access-Datenbankmodul SQL](sql-reserved-words.md) angegeben.
 

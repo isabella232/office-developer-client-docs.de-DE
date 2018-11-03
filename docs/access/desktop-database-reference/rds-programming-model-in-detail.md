@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248906(v=office.15)
 ms:contentKeyID: 48543364
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fe14fd74f30a4d686dca517acd84d89a3df82555
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 8a34321df27b5270bd35844eaf28b0b335b0294e
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25871927"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25937477"
 ---
 # <a name="rds-programming-model-in-detail"></a>RDS-Programmiermodell im Detail
 
@@ -60,7 +60,7 @@ Im RDS-Objektmodell wird diese Funktionalität durch das [RDS.DataControl](datac
 
 Das **RDS.DataControl** -Objekt hat zwei Aspekte. Ein Aspekt bezieht sich auf die Datenquelle. Wenn Sie die Befehls- und Verbindungsinformationen mithilfe der Eigenschaften **Connect** und **SQL** von **RDS.DataControl** festlegen, wird automatisch **RDS.DataSpace** zum Erstellen eines Verweises auf das standardmäßige **RDSServer.DataFactory** -Objekt verwendet. Dann wird von **RDSServer.DataFactory** der Wert der **Connect** -Eigenschaft zum Herstellen einer Verbindung mit der Datenquelle verwendet, mithilfe des Werts der **SQL** -Eigenschaft ein **Recordset** -Objekt aus der Datenquelle abgerufen und das **Recordset** -Objekt an **RDS.DataControl** zurückgegeben.
 
-Der zweite Aspekt bezieht sich auf die Anzeige von zurückgegebene **Recordset** -Informationen in einem visuellen Steuerelement. Sie können ein visuelles Steuerelement mit der **RDS. zuordnen. DataControl** (in einem Prozess, der als Bindung bezeichnet) und Zugriff auf die Informationen in das zugeordnete **Recordset** -Objekt, zeigt Abfrageergebnisse auf einer Webseite in Microsoft® Internet Explorer. Jede **RDS. DataControl** -Objekt bindet ein **Recordset** -Objekt, das die Ergebnisse einer einzelnen Abfrage, mit mindestens einen visuellen Steuerelementen (beispielsweise ein Textfeld, Kombinationsfeld, Rastersteuerelement usw.) darstellt. Es ist möglicherweise mehrere **RDS. DataControl** -Objekts auf jeder Seite. Jede **RDS. DataControl** -Objekt eine andere Datenquelle hergestellt werden kann und die Ergebnisse einer separaten Abfrage enthalten.
+Der zweite Aspekt bezieht sich auf die Anzeige von zurückgegebene **Recordset** -Informationen in einem visuellen Steuerelement. Sie können ein visuelles Steuerelement mit der **RDS. zuordnen. DataControl** (in einem Prozess, der als Bindung bezeichnet) und Zugriff auf die Informationen in das zugeordnete **Recordset** -Objekt, zeigt Abfrageergebnisse auf einer Webseite in Microsoft Internet Explorer. Jede **RDS. DataControl** -Objekt bindet ein **Recordset** -Objekt, das die Ergebnisse einer einzelnen Abfrage, mit mindestens einen visuellen Steuerelementen (beispielsweise ein Textfeld, Kombinationsfeld, Rastersteuerelement usw.) darstellt. Es ist möglicherweise mehrere **RDS. DataControl** -Objekts auf jeder Seite. Jede **RDS. DataControl** -Objekt eine andere Datenquelle hergestellt werden kann und die Ergebnisse einer separaten Abfrage enthalten.
 
 Das **RDS.DataControl** -Objekt verfügt außerdem über eigene Methoden für das Navigieren, Sortieren und Filtern der Zeilen des zugeordneten **Recordset** -Objekts. Diese Methoden sind vergleichbar, jedoch nicht identisch mit den Methoden des **Recordset** -ADO-Objekts.
 

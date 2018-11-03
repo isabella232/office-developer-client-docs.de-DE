@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6c6f610c329057156875065e149db1e914a282e4
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3e38df07831e21a92afdf8106b6d8eb3844396cc
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920452"
+ms.locfileid: "25936756"
 ---
 # <a name="indexes-collection-dao"></a>Indexes-Auflistung (DAO)
 
@@ -34,7 +34,7 @@ Nachdem Sie ein neues **Index**-Objekt erstellt haben, sollten Sie es mit der **
 
 
 > [!IMPORTANT]
-> <P>Stellen Sie sicher, dass Ihre Daten mit den Attributen des neuen Indexes kompatibel sind. Wenn der Index eindeutige Werte erfordert, dürfen vorhandene Datensätze keine Duplikate enthalten. Wenn Duplikate vorhanden sind, kann das Microsoft Access-Datenbankmodul den Index nicht erstellen. Beim Versuch, die Append-Methode auf den neuen Index anzuwenden, tritt ein abfangbarer Fehler auf.</P>
+> Stellen Sie sicher, dass Ihre Daten mit den Attributen des neuen Indexes kompatibel sind. Wenn der Index eindeutige Werte erfordert, dürfen vorhandene Datensätze keine Duplikate enthalten. Wenn Duplikate vorhanden sind, kann das Microsoft Access-Datenbankmodul den Index nicht erstellen. Beim Versuch, die Append-Methode auf den neuen Index anzuwenden, tritt ein abfangbarer Fehler auf.
 
 
 
