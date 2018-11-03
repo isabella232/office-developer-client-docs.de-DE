@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125502(v=office.15)
 ms:contentKeyID: 52073624
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 18b2286f87da7f8a9918d84df0b3d81bbd33a6b7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: cb5970d31b98144058ab5e9eb3bb0c96720072b8
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923784"
+ms.locfileid: "25936301"
 ---
-# <a name="relation-methods-dao"></a><span data-ttu-id="86912-102">Relation-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="86912-102">Relation methods (DAO)</span></span>
+# <a name="relation-methods-dao"></a><span data-ttu-id="eba91-102">Relation-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="eba91-102">Relation methods (DAO)</span></span>
 
+<span data-ttu-id="eba91-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="eba91-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="86912-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="86912-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="86912-104">Relation.CreateField-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="86912-104">Relation.CreateField method (DAO)</span></span>](relation-createfield-method-dao.md)
+- [<span data-ttu-id="eba91-104">Relation.CreateField-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="eba91-104">Relation.CreateField method (DAO)</span></span>](relation-createfield-method-dao.md)
 

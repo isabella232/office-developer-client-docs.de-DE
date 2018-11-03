@@ -1,5 +1,5 @@
 ---
-title: Index.Foreign Property (DAO)
+title: Index.Foreign-Eigenschaft (DAO)
 TOCTitle: Foreign Property
 ms:assetid: 81272436-a506-4b72-fd28-2d68e76d6d9b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff196489(v=office.15)
@@ -10,36 +10,36 @@ f1_keywords:
 - dao360.chm1052974
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9eaf15cda7819ec6b98608cdad052a112229906b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 878a59d6c844c7c46cf1a38ee6e4ef165d6fca92
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881559"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25926409"
 ---
-# <a name="indexforeign-property-dao"></a><span data-ttu-id="03ef6-102">Index.Foreign Property (DAO)</span><span class="sxs-lookup"><span data-stu-id="03ef6-102">Index.Foreign Property (DAO)</span></span>
+# <a name="indexforeign-property-dao"></a><span data-ttu-id="b7638-102">Index.Foreign-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="b7638-102">Index.Foreign property (DAO)</span></span>
 
-<span data-ttu-id="03ef6-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="03ef6-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b7638-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b7638-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="03ef6-p101">Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle angibt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="03ef6-p101">Returns a value that indicates whether an **[Index](index-object-dao.md)** object represents a foreign key in a table (Microsoft Access workspaces only). .</span></span>
+<span data-ttu-id="b7638-p101">Gibt einen Wert zurück, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Fremdschlüssel in einer Tabelle angibt (gilt nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="b7638-p101">Returns a value that indicates whether an **[Index](index-object-dao.md)** object represents a foreign key in a table (Microsoft Access workspaces only). .</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="03ef6-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="03ef6-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="b7638-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="b7638-106">Syntax</span></span>
 
-<span data-ttu-id="03ef6-107">*Ausdruck* . Fremdschlüssel</span><span class="sxs-lookup"><span data-stu-id="03ef6-107">*expression* .Foreign</span></span>
+<span data-ttu-id="b7638-107">*Ausdruck* . Fremdschlüssel</span><span class="sxs-lookup"><span data-stu-id="b7638-107">*expression* .Foreign</span></span>
 
-<span data-ttu-id="03ef6-108">*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="03ef6-108">*expression* A variable that represents an **Index** object.</span></span>
+<span data-ttu-id="b7638-108">*Ausdruck* Eine Variable, die ein **Index** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="b7638-108">*expression* A variable that represents an **Index** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="03ef6-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="03ef6-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b7638-109">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="b7638-109">Remarks</span></span>
 
-<span data-ttu-id="03ef6-110">Der Rückgabewert ist vom Datentyp **Boolean** und gibt **True** zurück, wenn das **Index**-Objekt ein Fremdschlüssel ist.</span><span class="sxs-lookup"><span data-stu-id="03ef6-110">The return value is a **Boolean** data type that returns **True** if the **Index** object represents a foreign key.</span></span>
+<span data-ttu-id="b7638-110">Der Rückgabewert ist vom Datentyp **Boolean** und gibt **True** zurück, wenn das **Index**-Objekt ein Fremdschlüssel ist.</span><span class="sxs-lookup"><span data-stu-id="b7638-110">The return value is a **Boolean** data type that returns **True** if the **Index** object represents a foreign key.</span></span>
 
-<span data-ttu-id="03ef6-111">Ein Fremdschlüssel besteht aus einem oder mehreren Feldern in einer Fremdtabelle, die alle Zeilen in einer Primärtabelle eindeutig identifizieren.</span><span class="sxs-lookup"><span data-stu-id="03ef6-111">A foreign key consists of one or more fields in a foreign table that uniquely identify all rows in a primary table.</span></span>
+<span data-ttu-id="b7638-111">Ein Fremdschlüssel besteht aus einem oder mehreren Feldern in einer Fremdtabelle, die alle Zeilen in einer Primärtabelle eindeutig identifizieren.</span><span class="sxs-lookup"><span data-stu-id="b7638-111">A foreign key consists of one or more fields in a foreign table that uniquely identify all rows in a primary table.</span></span>
 
-<span data-ttu-id="03ef6-112">Das Microsoft Access-Datenbankmodul erstellt ein **Index**-Objekt für die Fremdtabelle und legt die **Foreign**-Eigenschaft fest, wenn Sie eine Beziehung erstellen, die die referentielle Integrität erzwingt.</span><span class="sxs-lookup"><span data-stu-id="03ef6-112">The Microsoft Access database engine creates an **Index** object for the foreign table and sets the **Foreign** property when you create a relationship that enforces referential integrity.</span></span>
+<span data-ttu-id="b7638-112">Das Microsoft Access-Datenbankmodul erstellt ein **Index**-Objekt für die Fremdtabelle und legt die **Foreign**-Eigenschaft fest, wenn Sie eine Beziehung erstellen, die die referentielle Integrität erzwingt.</span><span class="sxs-lookup"><span data-stu-id="b7638-112">The Microsoft Access database engine creates an **Index** object for the foreign table and sets the **Foreign** property when you create a relationship that enforces referential integrity.</span></span>
 
-## <a name="example"></a><span data-ttu-id="03ef6-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="03ef6-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b7638-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b7638-113">Example</span></span>
 
-<span data-ttu-id="03ef6-p102">Dieses Beispiel veranschaulicht, wie mit der Foreign-Eigenschaft angeben werden kann, bei welchen Index-Objekten in einem TableDef-Objekt es sich um Fremdschlüsselindizes handelt. Diese Indizes werden beim Erstellen eines Relation-Objekts vom Microsoft Access-Datenbankmodul erstellt. Der Standardname für die Fremdschlüsselindizes setzt sich aus dem Namen der Primärtabelle und dem Namen der Fremdtabelle zusammen. Zum Ausführen dieser Prozedur ist die ForeignOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="03ef6-p102">This example shows how the **Foreign** property can indicate which **Index** objects in a **TableDef** are foreign key indexes. Such indexes are created by the Microsoft Access database engine when a **Relation** is created. The default name for the foreign key indexes is the name of the primary table plus the name of the foreign table. The ForeignOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="b7638-p102">Dieses Beispiel veranschaulicht, wie mit der Foreign-Eigenschaft angeben werden kann, bei welchen Index-Objekten in einem TableDef-Objekt es sich um Fremdschlüsselindizes handelt. Diese Indizes werden beim Erstellen eines Relation-Objekts vom Microsoft Access-Datenbankmodul erstellt. Der Standardname für die Fremdschlüsselindizes setzt sich aus dem Namen der Primärtabelle und dem Namen der Fremdtabelle zusammen. Zum Ausführen dieser Prozedur ist die ForeignOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="b7638-p102">This example shows how the **Foreign** property can indicate which **Index** objects in a **TableDef** are foreign key indexes. Such indexes are created by the Microsoft Access database engine when a **Relation** is created. The default name for the foreign key indexes is the name of the primary table plus the name of the foreign table. The ForeignOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub ForeignX() 

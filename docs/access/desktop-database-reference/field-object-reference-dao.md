@@ -1,30 +1,24 @@
 ---
-title: Field-Objektreferenz (DAO)
+title: Feld-Objektverweis (DAO)
 TOCTitle: Field Object
 ms:assetid: 5600f5b5-e776-41cb-9453-d9b842b94e22
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124871(v=office.15)
 ms:contentKeyID: 52072492
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b30752936cf0540e321ea3d4776b292925ba9f02
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 76d5c1537d9227001b16bbf7e267ab88692c010a
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877317"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25921117"
 ---
-# <a name="field-object-reference-dao"></a><span data-ttu-id="4d93b-102">Field-Objektreferenz (DAO)</span><span class="sxs-lookup"><span data-stu-id="4d93b-102">Field Object Reference (DAO)</span></span>
+# <a name="field-object-reference-dao"></a><span data-ttu-id="de9d9-102">Feld-Objektverweis (DAO)</span><span class="sxs-lookup"><span data-stu-id="de9d9-102">Field object reference (DAO)</span></span>
 
+<span data-ttu-id="de9d9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="de9d9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4d93b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4d93b-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="4d93b-104">Feldobjekt (DAO)</span><span class="sxs-lookup"><span data-stu-id="4d93b-104">Field Object (DAO)</span></span>](field-object-dao.md)
-
-  - [<span data-ttu-id="4d93b-105">Field Members (DAO)</span><span class="sxs-lookup"><span data-stu-id="4d93b-105">Field Members (DAO)</span></span>](field-members-dao.md)
-
-  - [<span data-ttu-id="4d93b-106">Field Properties (DAO)</span><span class="sxs-lookup"><span data-stu-id="4d93b-106">Field Properties (DAO)</span></span>](field-properties-dao.md)
-
-  - [<span data-ttu-id="4d93b-107">Field Methods (DAO)</span><span class="sxs-lookup"><span data-stu-id="4d93b-107">Field Methods (DAO)</span></span>](field-methods-dao.md)
+- [<span data-ttu-id="de9d9-104">Field-Objekt (DAO)</span><span class="sxs-lookup"><span data-stu-id="de9d9-104">Field object (DAO)</span></span>](field-object-dao.md)
+- [<span data-ttu-id="de9d9-105">Elemente des (DAO)</span><span class="sxs-lookup"><span data-stu-id="de9d9-105">Field members (DAO)</span></span>](field-members-dao.md)
+- [<span data-ttu-id="de9d9-106">Feldeigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="de9d9-106">Field properties (DAO)</span></span>](field-properties-dao.md)
+- [<span data-ttu-id="de9d9-107">Feld-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="de9d9-107">Field methods (DAO)</span></span>](field-methods-dao.md)
 

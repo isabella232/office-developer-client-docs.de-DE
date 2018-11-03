@@ -1,26 +1,22 @@
 ---
-title: Tables Collection (ADOX) Reference
-TOCTitle: Tables Collection (ADOX)
+title: Tables-Auflistung (ADOX) (engl.)
+TOCTitle: Tables collection (ADOX)
 ms:assetid: 906a61b5-3eb2-4de9-b547-9981d2de8fa3
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249637(v=office.15)
 ms:contentKeyID: 48546324
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 841692bddc7640e2a2aa31a383fa1ed31a634415
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 60bf2b4ff0440badcd83cd07e5975b37ef0853dc
+ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878255"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25928047"
 ---
-# <a name="tables-collection-adox-reference"></a><span data-ttu-id="4b4c8-102">Tables Collection (ADOX) Reference</span><span class="sxs-lookup"><span data-stu-id="4b4c8-102">Tables Collection (ADOX) Reference</span></span>
+# <a name="tables-collection-adox-reference"></a><span data-ttu-id="278f2-102">Tables-Auflistung (ADOX) (engl.)</span><span class="sxs-lookup"><span data-stu-id="278f2-102">Tables collection (ADOX) reference</span></span>
 
+<span data-ttu-id="278f2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="278f2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4b4c8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4b4c8-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="4b4c8-104">Tables-Auflistung (ADOX)</span><span class="sxs-lookup"><span data-stu-id="4b4c8-104">Tables Collection (ADOX)</span></span>](tables-collection-adox.md)
-
-  - [<span data-ttu-id="4b4c8-105">Tables-Auflistung: Eigenschaften, Methoden und Ereignisse (ADOX)</span><span class="sxs-lookup"><span data-stu-id="4b4c8-105">Tables Collection Properties, Methods, and Events (ADOX)</span></span>](tables-collection-properties-methods-and-events-adox.md)
+- [<span data-ttu-id="278f2-104">Tables-Auflistung (ADOX)</span><span class="sxs-lookup"><span data-stu-id="278f2-104">Tables collection (ADOX)</span></span>](tables-collection-adox.md)
+- [<span data-ttu-id="278f2-105">Tables-Auflistung (Eigenschaften, Methoden und Ereignisse) (ADOX)</span><span class="sxs-lookup"><span data-stu-id="278f2-105">Tables collection properties, methods, and events (ADOX)</span></span>](tables-collection-properties-methods-and-events-adox.md)
 
