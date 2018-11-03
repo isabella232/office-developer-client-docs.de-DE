@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248791(v=office.15)
 ms:contentKeyID: 48542962
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 27741f8b1a07e4fae49818b72a7239d13d069cca
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 39c801e223eba83a8de6aa7dacda6d8296e77588
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931204"
+ms.locfileid: "25936973"
 ---
 # <a name="fields-collection-ado"></a>Fields-Auflistung (ADO)
 
@@ -24,11 +24,8 @@ Enthält alle [Field](field-object-ado.md)-Objekte eines [Recordset](recordset-o
 
 Ein **Recordset** -Objekt besitzt eine **Fields** -Auflistung, die aus **Field** -Objekten besteht. Jedes **Field** -Objekt entspricht einer Spalte im **Recordset** -Objekt. Sie können die **Fields** -Auflistung auffüllen, bevor Sie das **Recordset** -Objekt öffnen, indem Sie die [Refresh](refresh-method-ado.md)-Methode der Auflistung aufrufen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Eine detaillierte Beschreibung der Verwendung der <STRONG>Field</STRONG> -Objekte finden Sie in der Beschreibung des <STRONG>Field</STRONG> -Objekts.</P>
-
-
+> [!HINWEIS] Eine detaillierte Beschreibung der Verwendung der **Field** -Objekte finden Sie in der Beschreibung des **Field** -Objekts.
 
 Die **Fields** -Auflistung verfügt über die [Append](append-method-ado.md)-Methode, die ein **Field** -Objekt provisorisch erstellt und der Auflistung hinzufügt, sowie die **Update** -Methode, die Hinzufügungen und Löschungen fertig stellt.
 

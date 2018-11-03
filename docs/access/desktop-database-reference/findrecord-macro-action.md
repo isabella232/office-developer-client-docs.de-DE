@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 74d3c050b7d3912c6b0b369f99ca163cee87643a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 19b6c80af2bcee9ca3dbe51bbbcf56343f33d550
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919710"
+ms.locfileid: "25937610"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -61,7 +60,7 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 <td><p>Gibt an, ob die Suche formatierte Daten enthält. Klicken Sie auf <strong>Ja</strong> (Microsoft Office Access 2007 sucht sich nach den Daten, wie sie formatiert und im Feld angezeigt wird) oder auf <strong>Nein</strong> (Access sucht nach Daten an, in der Datenbank gespeichert wird, die nicht immer die gleichen wie es angezeigt wird). Die Standardeinstellung ist <strong>Nein</strong>. Dieses Feature können Sie um die Suche auf Daten in einem bestimmten Format zu beschränken. Angenommen, klicken Sie auf <strong>Ja</strong> , und geben Sie <strong>1,234</strong> in das Argument <strong>Suchen</strong> nach einem 1,234 in einem Feld so formatiert, dass Kommas enthalten. Klicken Sie auf <strong>Nein</strong> , wenn Sie <strong>1234</strong> für die Daten in diesem Feld Suchen eingeben möchten. Um nach Datumsangaben zu suchen, klicken Sie auf <strong>Ja,</strong> um ein Datum zu suchen, genau wie, beispielsweise 08 Juli 2003 formatiert. Klicken Sie auf <strong>Nein</strong>, geben Sie das Datum für das Argument <strong>Suchen nach</strong> im Format, das in den regionalen Einstellungen in Windows-Systemsteuerung festgelegt ist. Dieses Format ist im <strong>kurzen Datumsformat</strong> finden Sie auf der Registerkarte <strong>Datum</strong> in den regionalen Einstellungen angezeigt. Angenommen, wenn das Feld <strong>kurzen Datumsformat</strong> auf <strong>m/JJ</strong>festgelegt ist, können Sie 7/8/03 eingeben und Access findet alle Einträge in einem Datumsfeld, die entsprechen, 8. Juli 2003, unabhängig davon, wie das Feld formatiert ist.</p>
 
 > [!NOTE]
-> <P>Das Argument <STRONG>Wie formatiert</STRONG> ist nur dann wirksam, wenn das aktuelle Feld ein gebundenes Steuerelement ist und wenn das Argument <STRONG>Vergleichen</STRONG> auf <STRONG>Ganzes Feld</STRONG>, das Argument <STRONG>Nur aktuelles Feld</STRONG> auf <STRONG>Ja</STRONG> und das Argument <STRONG>Groß-/Kleinschreibung beachten</STRONG> auf <STRONG>Nein</STRONG> festgelegt ist.</P>
+> Das Argument **Wie formatiert** ist nur dann wirksam, wenn das aktuelle Feld ein gebundenes Steuerelement ist und wenn das Argument **Vergleichen** auf **Ganzes Feld**, das Argument **Nur aktuelles Feld** auf **Ja** und das Argument **Groß-/Kleinschreibung beachten** auf **Nein** festgelegt ist.
 
 
 <p>Wenn Sie <strong>Groß-/Kleinschreibung beachten</strong> auf <strong>Ja</strong> oder <strong>Nur aktuelles Feld</strong> auf <strong>Nein</strong> festlegen, müssen Sie außerdem <strong>Wie formatiert</strong> auf <strong>Ja</strong> festlegen.</p></td>
@@ -88,11 +87,8 @@ Access behält während einer Datenbanksitzung die letzten Argumente von **Suche
 
 Wenn Sie einen Datensatz mithilfe eines Makros finden möchten, sollten Sie die **SuchenDatensatz** -Aktion verwenden. Verwenden Sie nicht die **AusführenMenübefehl** -Aktion, deren Argument so festgelegt ist, dass der Befehl **Suchen** ausgeführt wird.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>SuchenDatensatz</STRONG> -Aktion entspricht zwar dem Befehl <STRONG>Suchen</STRONG> auf der Registerkarte <STRONG>Start</STRONG> für Tabellen, Abfragen und Formulare, sie entspricht jedoch nicht dem Befehl <STRONG>Suchen</STRONG> im Menü <STRONG>Bearbeiten</STRONG> im Codefenster. Um nach Text in Modulen zu suchen, können Sie die <STRONG>SuchenDatensatz</STRONG> -Aktion nicht verwenden.</P>
-
-
+> [!HINWEIS] Die **SuchenDatensatz** -Aktion entspricht zwar dem Befehl **Suchen** auf der Registerkarte **Start** für Tabellen, Abfragen und Formulare, sie entspricht jedoch nicht dem Befehl **Suchen** im Menü **Bearbeiten** im Codefenster. Um nach Text in Modulen zu suchen, können Sie die **SuchenDatensatz** -Aktion nicht verwenden.
 
 Wenn der aktuell ausgewählte Text zu dem Zeitpunkt, zu dem die **SuchenDatensatz** -Aktion ausgeführt wird, mit dem Suchtext übereinstimmt, beginnt die Suche sofort im Anschluss an die Auswahl in demselben Feld wie die Auswahl und in demselben Datensatz. Andernfalls beginnt die Suche am Anfang des aktuellen Datensatzes. Hierdurch ist es Ihnen möglich, mehrere Instanzen derselben Suchkriterien zu finden, die in einem einzelnen Datensatz enthalten sein können.
 
@@ -112,7 +108,6 @@ Beachten Sie jedoch Folgendes: Wenn Sie eine Befehlsschaltfläche zum Ausführen
 </tr>
 </tbody>
 </table>
-
 
 Dasselbe Verhalten tritt auf, wenn Sie eine Befehlsschaltfläche verwenden, um ein Makro auszuführen, das die **SuchenWeiter** -Aktion enthält.
 

@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 068496332479d25dfc4f20bdc683330ee462ce78
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1a61512c58ccbde82072fa4d8105c82b9f145ebc
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927669"
+ms.locfileid: "25937421"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION-Operation (Microsoft Access SQL)
 
@@ -81,9 +81,7 @@ Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, da sie in anderen Anwei
 
 ## <a name="example"></a>Beispiel
 
-In diesem Beispiel werden die Namen und Städte aller Lieferanten und Kunden in Brasilien abgerufen.
-
-In diesem Beispiel wird die EnumFields-Prozedur aufgerufen, die im Beispiel für die SELECT-Anweisung enthalten ist.
+In diesem Beispiel werden die Namen und Städte aller Lieferanten und Kunden in Brasilien abgerufen. Sie ruft die EnumFields-Prozedur, die Sie in diesem Beispiel wird die SELECT-Anweisung finden.
 
 ```vb
     Sub UnionX() 

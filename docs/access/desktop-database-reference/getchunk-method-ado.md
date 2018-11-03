@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248979(v=office.15)
 ms:contentKeyID: 48543629
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a61130db9bd4564523688adc4e045f665e7310e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ea7346c8c1b97ef16af71f56aafbbf777635d906
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919010"
+ms.locfileid: "25937785"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk-Methode (ADO)
 
@@ -49,6 +49,6 @@ Ist kein aktueller Datensatz vorhanden, wenn Sie die **GetChunk** -Methode für 
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>GetChunk</STRONG> -Methode kann nicht auf <STRONG>Field</STRONG> -Objekte eines <A href="record-object-ado.md">Record</A>-Objekts angewendet werden. Sie führt keine Vorgänge aus und generiert einen Laufzeitfehler.</P>
+> [!HINWEIS] Die **GetChunk** -Methode kann nicht auf **Field** -Objekte eines [Record](record-object-ado.md)-Objekts angewendet werden. Sie führt keine Vorgänge aus und generiert einen Laufzeitfehler.
 
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197681(v=office.15)
 ms:contentKeyID: 48546422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f8127109834a617e86116a81731d964181c1bdf2
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 39c1366a182f1757abdcbf4b36a19b553eb2b680
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930595"
+ms.locfileid: "25936763"
 ---
 # <a name="connection-members-dao"></a>Verbindung Mitglieder (DAO)
 
@@ -20,7 +20,6 @@ ms.locfileid: "25930595"
 > [!NOTE]
 > [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden. Bei einem Connection-Objekt handelt es sich um eine Verbindung mit einer ODBC-Datenbank (gilt nur für ODBCDirect-Arbeitsbereiche).
  
-
 ## <a name="methods"></a>Methoden
 
 <table>
@@ -37,12 +36,7 @@ ms.locfileid: "25930595"
 <tbody>
 <tr class="odd">
 <td><p><strong><a href="connection-cancel-method-dao.md">Abbrechen</a></strong></p></td>
-<td><p></p>
-
-<br/>
-
-
-<p>Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p>Die Ausführung eines ausstehenden asynchronen Methodenaufrufs wird abgebrochen (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-close-method-dao.md">Schließen Sie</a></strong></p></td>
@@ -84,12 +78,7 @@ ms.locfileid: "25930595"
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-database-property-dao.md">Datenbank</a></strong></p></td>
-<td><p></p>
-
-<br/>
-
-
-<p>Gibt das <strong><a href="database-object-dao.md">Database</a></strong>-Objekt zurück, das dieser Verbindung entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p>Gibt das <strong><a href="database-object-dao.md">Database</a></strong>-Objekt zurück, das dieser Verbindung entspricht (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-name-property-dao.md">Name</a></strong></p></td>
@@ -113,12 +102,7 @@ ms.locfileid: "25930595"
 </tr>
 <tr class="even">
 <td><p><strong><a href="connection-stillexecuting-property-dao.md">StillExecuting</a></strong></p></td>
-<td><p></p>
-
-<br/>
-
-
-<p>Gibt an, ob ein asynchroner Vorgang (d. h. eine Methode, die mit der <strong>dbRunAsync</strong>-Option aufgerufen wurde) abgeschlossen wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>
+<td><p>Gibt an, ob ein asynchroner Vorgang (d. h. eine Methode, die mit der <strong>dbRunAsync</strong>-Option aufgerufen wurde) abgeschlossen wurde (nur ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><a href="connection-transactions-property-dao.md">Transaktionen</a></strong></p></td>

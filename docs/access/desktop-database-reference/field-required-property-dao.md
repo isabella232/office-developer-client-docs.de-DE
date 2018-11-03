@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192247(v=office.15)
 ms:contentKeyID: 48543999
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 25ba678f759fefa460dd505cded6e05b3e96fdf5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6fbf95e02c9945558d70fff35f12a73ce0dee45e
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928354"
+ms.locfileid: "25937316"
 ---
 # <a name="fieldrequired-property-dao"></a>Field.Required-Eigenschaft (DAO)
 
@@ -72,7 +72,7 @@ Mit der **Required**-Eigenschaft können Sie in Kombination mit der **[AllowZero
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie diese Eigenschaft sowohl für ein <STRONG>Index</STRONG>- als auch für ein <STRONG>Field</STRONG>-Objekt festlegen können, sollten Sie es für das <STRONG>Field</STRONG>-Objekt angeben. Die Gültigkeit des Werts dieser Eigenschaft wird zuerst für das <STRONG>Field</STRONG>-Objekt und erst danach für das <STRONG>Index</STRONG>-Objekt überprüft.</P>
+> [!HINWEIS] Wenn Sie diese Eigenschaft sowohl für ein **Index**- als auch für ein **Field**-Objekt festlegen können, sollten Sie es für das **Field**-Objekt angeben. Die Gültigkeit des Werts dieser Eigenschaft wird zuerst für das **Field**-Objekt und erst danach für das **Index**-Objekt überprüft.
 
 
 

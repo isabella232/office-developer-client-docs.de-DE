@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052867
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f999a0519fccb8f896ed07963db621065530c1a3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e5aaab6a79893a66b12216f60c05690c1e806000
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929769"
+ms.locfileid: "25937049"
 ---
 # <a name="field2appendchunk-method-dao"></a>Field2.AppendChunk-Methode (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Fügt Daten aus einem Zeichenfolgenausdruck an ein Field2-Objekt vom Typ Memo oder Long Binary in einem Recordset an.
 
@@ -67,11 +65,8 @@ Mithilfe dieser Methoden können Sie auch Zeichenfolgenspeicher freigeben, wenn 
 
 Wenn Sie **AppendChunk** verwenden, ohne dass ein aktueller Datensatz vorhanden ist, tritt ein Fehler auf.
 
-
 > [!NOTE]
-> <P>Durch den ersten <STRONG>AppendChunk</STRONG>-Vorgang (nach einem <STRONG><A href="recordset-edit-method-dao.md">Edit</A></STRONG> - oder <STRONG><A href="recordset-addnew-method-dao.md">AddNew</A></STRONG> -Aufruf) werden die Daten einfach in das Feld geschrieben, und vorhandene Daten werden überschrieben. Nachfolgende <STRONG>AppendChunk</STRONG>-Aufrufe innerhalb derselben <STRONG>Edit</STRONG>- oder <STRONG>AddNew</STRONG>-Sitzung werden anschließend zu den vorhandenen Daten hinzugefügt.</P>
-
-
+> Durch den ersten **AppendChunk**-Vorgang (nach einem **[Edit](recordset-edit-method-dao.md)** - oder **[AddNew](recordset-addnew-method-dao.md)** -Aufruf) werden die Daten einfach in das Feld geschrieben, und vorhandene Daten werden überschrieben. Nachfolgende **AppendChunk**-Aufrufe innerhalb derselben **Edit**- oder **AddNew**-Sitzung werden anschließend zu den vorhandenen Daten hinzugefügt.
 
 ## <a name="example"></a>Beispiel
 

@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1053121
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c0edef512eb6b4c099362e737a760624dcfc0b69
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 683255f8bc425ba5d8d2cdf4c66bc2ff16eec43c
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928475"
+ms.locfileid: "25937673"
 ---
 # <a name="field2defaultvalue-property-dao"></a>Field2.DefaultValue-Eigenschaft (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Legt den Standardwert eines **Field2**-Objekts fest oder gibt den Wert zurück. Bei einem **Field2**-Objekt, das der **[Fields](fields-collection-dao.md)** -Auflistung noch nicht angefügt wurde, besteht für diese Eigenschaft Lese-/Schreibzugriff (gilt nur für Microsoft Access-Arbeitsbereiche).
 
@@ -35,11 +33,8 @@ Legt den Standardwert eines **Field2**-Objekts fest oder gibt den Wert zurück. 
 
 Die Einstellung oder der Rückgabewert ist vom Datentyp **String** und kann maximal 255 Zeichen enthalten. Es kann sich um einen Text oder einen Ausdruck handeln. Ist die Eigenschafteneinstellung ein Ausdruck, kann er benutzerdefinierte Funktionen, SQL-Aggregatfunktionen des Microsoft Access-Datenbankmoduls oder Verweise auf Abfragen, Formulare oder andere **Field2**-Objekte enthalten.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Sie können die <STRONG>DefaultValue</STRONG>-Eigenschaft eines <STRONG>Field2</STRONG>-Objekts für ein <STRONG>TableDef</STRONG>-Objekt auch auf einen speziellen Wert, "GenUniqueID( )" genannt, festlegen. Dabei wird diesem Feld eine Zufallszahl zugewiesen, sobald ein neuer Datensatz hinzugefügt oder erstellt wird, wodurch jeder Datensatz einen eindeutigen Bezeichner erhält. Die <STRONG>Type</STRONG>-Eigenschaft des Felds muss ein <STRONG>Long</STRONG>-Wert sein.</P>
-
-
+> [!HINWEIS] Sie können die **DefaultValue**-Eigenschaft eines **Field2**-Objekts für ein **TableDef**-Objekt auch auf einen speziellen Wert, "GenUniqueID( )" genannt, festlegen. Dabei wird diesem Feld eine Zufallszahl zugewiesen, sobald ein neuer Datensatz hinzugefügt oder erstellt wird, wodurch jeder Datensatz einen eindeutigen Bezeichner erhält. Die **Type**-Eigenschaft des Felds muss ein **Long**-Wert sein.
 
 Die Verfügbarkeit der **DefaultValue**-Eigenschaft hängt vom Objekt ab, in dem die **Fields**-Auflistung enthalten ist (siehe folgende Tabelle).
 

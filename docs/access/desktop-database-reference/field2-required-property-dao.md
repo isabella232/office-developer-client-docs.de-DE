@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196390(v=office.15)
 ms:contentKeyID: 48545848
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2bb7735bf2c19da3cf82ffcb10d3d5b99b1a01c1
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: cf5e459773cd0fa0976704834b1b73467fc75294
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928789"
+ms.locfileid: "25937407"
 ---
 # <a name="field2required-property-dao"></a>Field2.Required-Eigenschaft (DAO)
 
@@ -73,7 +73,7 @@ Die Eigenschaft **Required** und **AllowZeroLength**, **ValidateOnSet**oder **Va
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie diese Eigenschaft für ein <STRONG>Index</STRONG>-Objekt oder ein <STRONG>Field2</STRONG>-Objekt festlegen können, legen Sie sie für das <STRONG>Field2</STRONG>-Objekt fest. Die Gültigkeit der Eigenschafteneinstellung für ein <STRONG>Field2</STRONG>-Objekt wird vor der eines <STRONG>Index</STRONG>-Objekts überprüft.</P>
+> [!HINWEIS] Wenn Sie diese Eigenschaft für ein **Index**-Objekt oder ein **Field2**-Objekt festlegen können, legen Sie sie für das **Field2**-Objekt fest. Die Gültigkeit der Eigenschafteneinstellung für ein **Field2**-Objekt wird vor der eines **Index**-Objekts überprüft.
 
 
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193195(v=office.15)
 ms:contentKeyID: 48544578
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cfabb36e539aaff1f6e12d431d2cfcfe79ff5d04
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 49e8cdb7586af93ca17782ba0cb1071036c38eeb
+ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928088"
+ms.locfileid: "25936952"
 ---
 # <a name="relation-object-dao"></a>Relation-Objekt (DAO)
 
@@ -117,7 +117,7 @@ Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe s
 
 <br/>
 
-In diesem Beispiel wird die CreateRelation-Methode zum Erstellen eines Relation-Objekts zwischen dem TableDef-Objekt Employees (Personal) und einem neuen TableDef-Objekt namens Departments (Abteilungen) erstellt. Außerdem veranschaulicht das Beispiel, wie das Erstellen eines neuen Relation-Objekts das Erstellen erforderlicher Indexes-Objekte in der Fremdtabelle nach sich zieht (DepartmentsEmployees-Index in der Employees-Tabelle).
+In diesem Beispiel wird die **CreateRelation** -Methode zum Erstellen einer **Beziehung** zwischen Mitarbeitern **TableDef** und ein neues **TableDef** Abteilungen aufgerufen. Es wird veranschaulicht, wie Erstellen einer neuen **Relation** auch alle erforderlichen **Indizes** in der Fremdtabelle (DepartmentsEmployees Index in der Employees-Tabelle) erstellt werden.
 
 ```vb
     Sub CreateRelationX() 
