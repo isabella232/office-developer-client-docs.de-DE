@@ -1,22 +1,22 @@
 ---
-title: IdleEnum Enumeration (DAO)
+title: IdleEnum (Aufzählung) (DAO)
 TOCTitle: IdleEnum Enumeration
 ms:assetid: 44da6085-810a-f001-629b-9bd270d3949a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193165(v=office.15)
 ms:contentKeyID: 48544539
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 911d63f687fdca6e1016a6058751b2ac8266635a
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: fac7cbaa144491d8f57a6c09eb7856a0ce51884e
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881083"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947728"
 ---
-# <a name="idleenum-enumeration-dao"></a><span data-ttu-id="0b946-102">IdleEnum Enumeration (DAO)</span><span class="sxs-lookup"><span data-stu-id="0b946-102">IdleEnum Enumeration (DAO)</span></span>
+# <a name="idleenum-enumeration-dao"></a><span data-ttu-id="3ca4f-102">IdleEnum (Aufzählung) (DAO)</span><span class="sxs-lookup"><span data-stu-id="3ca4f-102">IdleEnum enumeration (DAO)</span></span>
 
 
-<span data-ttu-id="0b946-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0b946-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="3ca4f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="3ca4f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="0b946-104">Noch nicht festgelegt</span><span class="sxs-lookup"><span data-stu-id="0b946-104">TBD</span></span>
+<span data-ttu-id="3ca4f-104">Noch nicht festgelegt</span><span class="sxs-lookup"><span data-stu-id="3ca4f-104">TBD</span></span>
 

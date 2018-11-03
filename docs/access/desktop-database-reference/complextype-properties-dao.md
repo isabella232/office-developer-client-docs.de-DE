@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn160987(v=office.15)
 ms:contentKeyID: 52072951
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 181660c5ec0e1840a7700c425b516319860ec565
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f7c992ef17bc484cff5ce308c8df3b54e097b0f6
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924659"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943780"
 ---
-# <a name="complextype-properties-dao"></a><span data-ttu-id="1d8d4-102">ComplexType-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d8d4-102">ComplexType properties (DAO)</span></span>
+# <a name="complextype-properties-dao"></a><span data-ttu-id="0bbf9-102">ComplexType-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="0bbf9-102">ComplexType properties (DAO)</span></span>
 
+<span data-ttu-id="0bbf9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="0bbf9-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1d8d4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1d8d4-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-
-
-  - [<span data-ttu-id="1d8d4-104">ComplexType.Fields-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="1d8d4-104">ComplexType.Fields property (DAO)</span></span>](complextype-fields-property-dao.md)
+- [<span data-ttu-id="0bbf9-104">ComplexType.Fields-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="0bbf9-104">ComplexType.Fields property (DAO)</span></span>](complextype-fields-property-dao.md)
 

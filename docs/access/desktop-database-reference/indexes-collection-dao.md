@@ -6,41 +6,38 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3e38df07831e21a92afdf8106b6d8eb3844396cc
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 21609d6299caf6de5e2fe0b777796033b69d9f87
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936756"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946692"
 ---
-# <a name="indexes-collection-dao"></a><span data-ttu-id="031dd-102">Indexes-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="031dd-102">Indexes collection (DAO)</span></span>
+# <a name="indexes-collection-dao"></a><span data-ttu-id="863af-102">Indexes-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="863af-102">Indexes collection (DAO)</span></span>
 
+<span data-ttu-id="863af-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="863af-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="031dd-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="031dd-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="863af-104">Eine **Indexes**-Auflistung enthält alle gespeicherten **Index**-Objekte eines **TableDef**-Objekts (nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="863af-104">An **Indexes** collection contains all the stored **Index** objects of a **TableDef** object (Microsoft Access workspaces only).</span></span>
 
-<span data-ttu-id="031dd-104">Eine **Indexes**-Auflistung enthält alle gespeicherten **Index**-Objekte eines **TableDef**-Objekts (nur für Microsoft Access-Arbeitsbereiche).</span><span class="sxs-lookup"><span data-stu-id="031dd-104">An **Indexes** collection contains all the stored **Index** objects of a **TableDef** object (Microsoft Access workspaces only).</span></span>
+## <a name="remarks"></a><span data-ttu-id="863af-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="863af-105">Remarks</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="031dd-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="031dd-105">Remarks</span></span>
-
-<span data-ttu-id="031dd-106">Wenn Sie ein Recordset-Objekt vom Typ Tabelle zugreifen, verwenden Sie das Objekt **Index** -Eigenschaft, um die Reihenfolge der Datensätze anzugeben.</span><span class="sxs-lookup"><span data-stu-id="031dd-106">When you access a table-type Recordset object, use the object's **Index** property to specify the order of records.</span></span> <span data-ttu-id="031dd-107">Festlegen Sie diese Eigenschaft auf die Einstellung der **Name** -Eigenschaft eines vorhandenen **Index** -Objekts in der **Indexes** -Auflistung des **[TableDef](tabledef-object-dao.md)** -Objekts zugrunde liegenden des **[Recordset](recordset-object-dao.md)** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="031dd-107">Set this property to the **Name** property setting of an existing **Index** object in the **Indexes** collection of the **[TableDef](tabledef-object-dao.md)** object underlying the **[Recordset](recordset-object-dao.md)** object.</span></span>
+<span data-ttu-id="863af-106">Wenn Sie ein Recordset-Objekt vom Typ Tabelle zugreifen, verwenden Sie das Objekt **Index** -Eigenschaft, um die Reihenfolge der Datensätze anzugeben.</span><span class="sxs-lookup"><span data-stu-id="863af-106">When you access a table-type Recordset object, use the object's **Index** property to specify the order of records.</span></span> <span data-ttu-id="863af-107">Festlegen Sie diese Eigenschaft auf die Einstellung der **Name** -Eigenschaft eines vorhandenen **Index** -Objekts in der **Indexes** -Auflistung des **[TableDef](tabledef-object-dao.md)** -Objekts zugrunde liegenden des **[Recordset](recordset-object-dao.md)** -Objekts.</span><span class="sxs-lookup"><span data-stu-id="863af-107">Set this property to the **Name** property setting of an existing **Index** object in the **Indexes** collection of the **[TableDef](tabledef-object-dao.md)** object underlying the **[Recordset](recordset-object-dao.md)** object.</span></span>
 
 
 > [!NOTE]
-> <P><span data-ttu-id="031dd-108">[!HINWEIS] Sie können die Methode <STRONG>Append</STRONG> oder <STRONG>Delete</STRONG> nur für eine <STRONG>Indexes</STRONG>-Auflistung verwenden, wenn die Einstellung der <STRONG><A href="connection-updatable-property-dao.md">Updatable</A></STRONG> -Eigenschaft für das enthaltende <STRONG>TableDef</STRONG>-Objekt <STRONG>True</STRONG> lautet.</span><span class="sxs-lookup"><span data-stu-id="031dd-108">You can use the <STRONG>Append</STRONG> or <STRONG>Delete</STRONG> method on an <STRONG>Indexes</STRONG> collection only if the <STRONG><A href="connection-updatable-property-dao.md">Updatable</A></STRONG> property setting of the containing <STRONG>TableDef</STRONG> object is <STRONG>True</STRONG>.</span></span></P>
+> <span data-ttu-id="863af-108">[!HINWEIS] Sie können die Methode **Append** oder **Delete** nur für eine **Indexes**-Auflistung verwenden, wenn die Einstellung der **[Updatable](connection-updatable-property-dao.md)** -Eigenschaft für das enthaltende **TableDef**-Objekt **True** lautet.</span><span class="sxs-lookup"><span data-stu-id="863af-108">You can use the **Append** or **Delete** method on an **Indexes** collection only if the **[Updatable](connection-updatable-property-dao.md)** property setting of the containing **TableDef** object is **True**.</span></span>
 
-
-
-<span data-ttu-id="031dd-109">Nachdem Sie ein neues **Index**-Objekt erstellt haben, sollten Sie es mit der **Append**-Methode der **Indexes**-Auflistung des **TableDef**-Objekts hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="031dd-109">After you create a new **Index** object, you should use the **Append** method to add it to the **TableDef** object's **Indexes** collection.</span></span>
+<span data-ttu-id="863af-109">Nachdem Sie ein neues **Index**-Objekt erstellt haben, sollten Sie es mit der **Append**-Methode der **Indexes**-Auflistung des **TableDef**-Objekts hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="863af-109">After you create a new **Index** object, you should use the **Append** method to add it to the **TableDef** object's **Indexes** collection.</span></span>
 
 
 > [!IMPORTANT]
-> <span data-ttu-id="031dd-p102">Stellen Sie sicher, dass Ihre Daten mit den Attributen des neuen Indexes kompatibel sind. Wenn der Index eindeutige Werte erfordert, dürfen vorhandene Datensätze keine Duplikate enthalten. Wenn Duplikate vorhanden sind, kann das Microsoft Access-Datenbankmodul den Index nicht erstellen. Beim Versuch, die Append-Methode auf den neuen Index anzuwenden, tritt ein abfangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="031dd-p102">Make sure your data complies with the attributes of your new index. If your index requires unique values, make sure that there are no duplicates in existing data records. If duplicates exist, the Microsoft Access database engine can't create the index; a trappable error results when you attempt to use the Append method on the new index.</span></span>
+> <span data-ttu-id="863af-p102">Stellen Sie sicher, dass Ihre Daten mit den Attributen des neuen Indexes kompatibel sind. Wenn der Index eindeutige Werte erfordert, dürfen vorhandene Datensätze keine Duplikate enthalten. Wenn Duplikate vorhanden sind, kann das Microsoft Access-Datenbankmodul den Index nicht erstellen. Beim Versuch, die Append-Methode auf den neuen Index anzuwenden, tritt ein abfangbarer Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="863af-p102">Make sure your data complies with the attributes of your new index. If your index requires unique values, make sure that there are no duplicates in existing data records. If duplicates exist, the Microsoft Access database engine can't create the index; a trappable error results when you attempt to use the Append method on the new index.</span></span>
 
 
 
-## <a name="example"></a><span data-ttu-id="031dd-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="031dd-113">Example</span></span>
+## <a name="example"></a><span data-ttu-id="863af-113">Beispiel</span><span class="sxs-lookup"><span data-stu-id="863af-113">Example</span></span>
 
-<span data-ttu-id="031dd-p103">Dieses Beispiel erstellt ein neues Index-Objekt, fügt es der Indexes-Auflistung des TableDef-Objekts der Employees-Tabelle (Personal) an und führt die Indexes-Auflistung des TableDef-Objekts auf. Zuletzt listet es ein Recordset-Objekt auf, zuerst unter Verwendung des primären Index-Objekts und dann unter Verwendung des neuen Index-Objekts. Die IndexOutput-Prozedur ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="031dd-p103">This example creates a new **Index** object, appends it to the **Indexes** collection of the Employees **TableDef**, and then enumerates the **Indexes** collection of the **TableDef**. Finally, it enumerates a **Recordset**, first using the primary **Index**, and then using the new **Index**. The IndexOutput procedure is required for this procedure to run.</span></span>
+<span data-ttu-id="863af-p103">Dieses Beispiel erstellt ein neues Index-Objekt, fügt es der Indexes-Auflistung des TableDef-Objekts der Employees-Tabelle (Personal) an und führt die Indexes-Auflistung des TableDef-Objekts auf. Zuletzt listet es ein Recordset-Objekt auf, zuerst unter Verwendung des primären Index-Objekts und dann unter Verwendung des neuen Index-Objekts. Die IndexOutput-Prozedur ist zum Ausführen dieser Prozedur erforderlich.</span><span class="sxs-lookup"><span data-stu-id="863af-p103">This example creates a new **Index** object, appends it to the **Indexes** collection of the Employees **TableDef**, and then enumerates the **Indexes** collection of the **TableDef**. Finally, it enumerates a **Recordset**, first using the primary **Index**, and then using the new **Index**. The IndexOutput procedure is required for this procedure to run.</span></span>
 
 ```vb
     Sub IndexObjectX() 
@@ -123,7 +120,7 @@ ms.locfileid: "25936756"
 
 <br/>
 
-<span data-ttu-id="031dd-117">Dieses Beispiel verwendet die **CreateIndex** -Methode, um zwei neue **Index** -Objekte zu erstellen, und fügt sie dann der **Indexes** -Auflistung des **TableDef** -Objekts der Employees-Tabelle (Personal) an.</span><span class="sxs-lookup"><span data-stu-id="031dd-117">This example uses the **CreateIndex** method to create two new **Index** objects and then appends them to the **Indexes** collection of the Employees **TableDef** object.</span></span> <span data-ttu-id="031dd-118">Klicken Sie dann der **Indexes** -Auflistung des **TableDef** -Objekts, der **Fields** -Auflistung der neuen **Index** -Objekte und der Properties-Auflistung der neuen **Index** -Objekte aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="031dd-118">It then enumerates the **Indexes** collection of the **TableDef** object, the **Fields** collection of the new **Index** objects, and the Properties collection of the new **Index** objects.</span></span> <span data-ttu-id="031dd-119">Zum Ausführen dieser Prozedur ist die CreateIndexOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="031dd-119">The CreateIndexOutput function is required for this procedure to run.</span></span>
+<span data-ttu-id="863af-117">Dieses Beispiel verwendet die **CreateIndex** -Methode, um zwei neue **Index** -Objekte zu erstellen, und fügt sie dann der **Indexes** -Auflistung des **TableDef** -Objekts der Employees-Tabelle (Personal) an.</span><span class="sxs-lookup"><span data-stu-id="863af-117">This example uses the **CreateIndex** method to create two new **Index** objects and then appends them to the **Indexes** collection of the Employees **TableDef** object.</span></span> <span data-ttu-id="863af-118">Klicken Sie dann der **Indexes** -Auflistung des **TableDef** -Objekts, der **Fields** -Auflistung der neuen **Index** -Objekte und der Properties-Auflistung der neuen **Index** -Objekte aufgelistet.</span><span class="sxs-lookup"><span data-stu-id="863af-118">It then enumerates the **Indexes** collection of the **TableDef** object, the **Fields** collection of the new **Index** objects, and the Properties collection of the new **Index** objects.</span></span> <span data-ttu-id="863af-119">Zum Ausführen dieser Prozedur ist die CreateIndexOutput-Funktion erforderlich.</span><span class="sxs-lookup"><span data-stu-id="863af-119">The CreateIndexOutput function is required for this procedure to run.</span></span>
 
 ```vb
     Sub CreateIndexX() 

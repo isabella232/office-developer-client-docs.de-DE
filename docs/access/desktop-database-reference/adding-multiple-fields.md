@@ -1,24 +1,23 @@
 ---
 title: Hinzufügen mehrerer Felder
-TOCTitle: Adding Multiple Fields
+TOCTitle: Adding multiple fields
 ms:assetid: 81b2f9de-4805-4494-9990-09ffda1b2068
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249560(v=office.15)
 ms:contentKeyID: 48545961
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 01330eeed2645a0bd76f6ac51e96542068b245e7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6ea9b4999ae107c6b6ca88ca7cf75888163a5b05
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878976"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944109"
 ---
-# <a name="adding-multiple-fields"></a><span data-ttu-id="188e8-102">Hinzufügen mehrerer Felder</span><span class="sxs-lookup"><span data-stu-id="188e8-102">Adding Multiple Fields</span></span>
+# <a name="adding-multiple-fields"></a><span data-ttu-id="973a7-102">Hinzufügen mehrerer Felder</span><span class="sxs-lookup"><span data-stu-id="973a7-102">Adding multiple fields</span></span>
 
+<span data-ttu-id="973a7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="973a7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="188e8-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="188e8-103">**Applies to**: Access 2013, Office 2013</span></span>
-
-<span data-ttu-id="188e8-104">Hin und wieder kann es effizienter sein, ein Array von Feldern und die entsprechenden Werte an die **AddNew** -Methode zu übergeben, anstatt **Value** mehrmals für jedes neue Feld festzulegen.</span><span class="sxs-lookup"><span data-stu-id="188e8-104">Occasionally, it might be more efficient to pass in an array of fields and their corresponding values to the **AddNew** method, rather than setting **Value** multiple times for each new field.</span></span> <span data-ttu-id="188e8-105">Wenn *FieldList* ein Array ist, muss *Werte* auch ein Array mit der gleichen Anzahl von Elementen sein; andernfalls, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="188e8-105">If *FieldList* is an array, *Values* must also be an array with the same number of members; otherwise, an error occurs.</span></span> <span data-ttu-id="188e8-106">Die Reihenfolge der Feldnamen muss der Reihenfolge der Feldwerte in jedem Array entsprechen.</span><span class="sxs-lookup"><span data-stu-id="188e8-106">The order of field names must match the order of field values in each array.</span></span> <span data-ttu-id="188e8-107">Mit dem folgenden Code wird ein Array von Feldern und ein Array von Werten an die **AddNew** -Methode übergeben.</span><span class="sxs-lookup"><span data-stu-id="188e8-107">The following code passes an array of fields and an array of values to the **AddNew** method.</span></span>
+<span data-ttu-id="973a7-104">Hin und wieder kann es effizienter sein, ein Array von Feldern und die entsprechenden Werte an die **AddNew** -Methode zu übergeben, anstatt **Value** mehrmals für jedes neue Feld festzulegen.</span><span class="sxs-lookup"><span data-stu-id="973a7-104">Occasionally, it might be more efficient to pass in an array of fields and their corresponding values to the **AddNew** method, rather than setting **Value** multiple times for each new field.</span></span> <span data-ttu-id="973a7-105">Wenn *FieldList* ein Array ist, muss *Werte* auch ein Array mit der gleichen Anzahl von Elementen sein; andernfalls, tritt ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="973a7-105">If *FieldList* is an array, *Values* must also be an array with the same number of members; otherwise, an error occurs.</span></span> <span data-ttu-id="973a7-106">Die Reihenfolge der Feldnamen muss der Reihenfolge der Feldwerte in jedem Array entsprechen.</span><span class="sxs-lookup"><span data-stu-id="973a7-106">The order of field names must match the order of field values in each array.</span></span> <span data-ttu-id="973a7-107">Mit dem folgenden Code wird ein Array von Feldern und ein Array von Werten an die **AddNew** -Methode übergeben.</span><span class="sxs-lookup"><span data-stu-id="973a7-107">The following code passes an array of fields and an array of values to the **AddNew** method.</span></span>
 
 ```vb 
  

@@ -1,32 +1,31 @@
 ---
 title: ADO/WFC-Programmierung
-TOCTitle: ADO/WFC Programming
+TOCTitle: ADO/WFC programming
 ms:assetid: fc438cc2-00b9-9590-6e0d-a865001ccf2f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250293(v=office.15)
 ms:contentKeyID: 48548887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ea531f484ad75de268f0d4fb38a10e617c1851e6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 58ec04f92bf4d1eaaa8ea36c5937cae0bab3729f
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884632"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25943822"
 ---
-# <a name="adowfc-programming"></a><span data-ttu-id="e4fda-102">ADO/WFC-Programmierung</span><span class="sxs-lookup"><span data-stu-id="e4fda-102">ADO/WFC Programming</span></span>
+# <a name="adowfc-programming"></a><span data-ttu-id="f4062-102">ADO/WFC-Programmierung</span><span class="sxs-lookup"><span data-stu-id="f4062-102">ADO/WFC programming</span></span>
 
+<span data-ttu-id="f4062-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f4062-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e4fda-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e4fda-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f4062-p101">ADO wurde für Microsoft Visual J++ 6.0 so erweitert, dass auf folgende Weise die Zusammenarbeit mit Windows Foundation Classes (WFC) möglich ist. Erstens wurde ein Satz von Java-Klassen implementiert, durch den die ADO-Schnittstellen erweitert und für den Java-Programmierer interessante Benachrichtigungen erstellt werden. Außerdem machen die Java-Klassen Funktionen verfügbar, durch die Java-Typen an den Benutzer zurückgegeben werden. Zur Verbesserung der Leistung wird durch die Java-Klasse direkt auf die systemeigenen Datentypen im rowset-OLE DB-Objekt zugegriffen, die an den Java-Programmierer zurückgegeben werden, ohne erst in eine bzw. aus einer Variante konvertiert zu werden. ADO wurde außerdem erweitert, um mit Ereignisbenachrichtigungen im WFC-Framework zusammenzuarbeiten.</span><span class="sxs-lookup"><span data-stu-id="f4062-p101">For Microsoft Visual J++ 6.0, ADO has been extended to work with Windows Foundation Classes (WFC) in the following ways. First, a set of Java classes has been implemented that extends the ADO interfaces and creates notifications interesting to the Java programmer; the Java classes also expose functions that return Java types to the user. To improve performance, the Java class directly accesses the native data types in the OLE DB rowset object, and returns them to the Java programmer as Java types without first converting them to and from a variant. ADO has also been extended to work with event notifications in the WFC framework.</span></span>
 
-<span data-ttu-id="e4fda-p101">ADO wurde für Microsoft Visual J++ 6.0 so erweitert, dass auf folgende Weise die Zusammenarbeit mit Windows Foundation Classes (WFC) möglich ist. Erstens wurde ein Satz von Java-Klassen implementiert, durch den die ADO-Schnittstellen erweitert und für den Java-Programmierer interessante Benachrichtigungen erstellt werden. Außerdem machen die Java-Klassen Funktionen verfügbar, durch die Java-Typen an den Benutzer zurückgegeben werden. Zur Verbesserung der Leistung wird durch die Java-Klasse direkt auf die systemeigenen Datentypen im rowset-OLE DB-Objekt zugegriffen, die an den Java-Programmierer zurückgegeben werden, ohne erst in eine bzw. aus einer Variante konvertiert zu werden. ADO wurde außerdem erweitert, um mit Ereignisbenachrichtigungen im WFC-Framework zusammenzuarbeiten.</span><span class="sxs-lookup"><span data-stu-id="e4fda-p101">For Microsoft Visual J++ 6.0, ADO has been extended to work with Windows Foundation Classes (WFC) in the following ways. First, a set of Java classes has been implemented that extends the ADO interfaces and creates notifications interesting to the Java programmer; the Java classes also expose functions that return Java types to the user. To improve performance, the Java class directly accesses the native data types in the OLE DB rowset object, and returns them to the Java programmer as Java types without first converting them to and from a variant. ADO has also been extended to work with event notifications in the WFC framework.</span></span>
+<span data-ttu-id="f4062-p102">ADO für Windows Foundation Classes (ADO/WFC) unterstützt alle ADO-Standardmethoden, -eigenschaften, -objekte und -ereignisse. Operationen, für die eine Variante als Parameter erforderlich ist und die in einer Sprache wie Microsoft Visual Basic hervorragende Leistung bieten, zeigen in einer Sprache wie Visual J++ eine geringere Leistung. Aus diesem Grund werden von ADO/WFC Accessorfunktionen für das [Field](field-object-ado.md)-Objekt bereitgestellt, für die systemeigene Java-Datentypen anstelle der Variantendatentypen verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="f4062-p102">ADO for Windows Foundation Classes (ADO/WFC) supports all the standard ADO methods, properties, objects, and events. However, operations that require a variant as a parameter and show excellent performance in a language such as Microsoft Visual Basic, display lesser performance in a language such as Visual J++. For that reason, ADO/WFC also provides accessor functions on the [Field](field-object-ado.md) object that take native Java data types instead of the variant data type.</span></span>
 
-<span data-ttu-id="e4fda-p102">ADO für Windows Foundation Classes (ADO/WFC) unterstützt alle ADO-Standardmethoden, -eigenschaften, -objekte und -ereignisse. Operationen, für die eine Variante als Parameter erforderlich ist und die in einer Sprache wie Microsoft Visual Basic hervorragende Leistung bieten, zeigen in einer Sprache wie Visual J++ eine geringere Leistung. Aus diesem Grund werden von ADO/WFC Accessorfunktionen für das [Field](field-object-ado.md)-Objekt bereitgestellt, für die systemeigene Java-Datentypen anstelle der Variantendatentypen verwendet werden können.</span><span class="sxs-lookup"><span data-stu-id="e4fda-p102">ADO for Windows Foundation Classes (ADO/WFC) supports all the standard ADO methods, properties, objects, and events. However, operations that require a variant as a parameter and show excellent performance in a language such as Microsoft Visual Basic, display lesser performance in a language such as Visual J++. For that reason, ADO/WFC also provides accessor functions on the [Field](field-object-ado.md) object that take native Java data types instead of the variant data type.</span></span>
+<span data-ttu-id="f4062-111">Ausführlichere Informationen in der ADO-Dokumentation zu den ADO/WFC-Paketen finden Sie unter [dem ADO/WFC-Syntaxindex](https://msdn.microsoft.com/library/jj250066\(v=office.15\)).</span><span class="sxs-lookup"><span data-stu-id="f4062-111">For more detailed information within the ADO documentation about ADO/WFC packages, see [the ADO/WFC Syntax Index](https://msdn.microsoft.com/library/jj250066\(v=office.15\)).</span></span>
 
-<span data-ttu-id="e4fda-111">Ausführlichere Informationen in der ADO-Dokumentation zu den ADO/WFC-Paketen finden Sie unter [dem ADO/WFC-Syntaxindex](https://msdn.microsoft.com/library/jj250066\(v=office.15\)).</span><span class="sxs-lookup"><span data-stu-id="e4fda-111">For more detailed information within the ADO documentation about ADO/WFC packages, see [the ADO/WFC Syntax Index](https://msdn.microsoft.com/library/jj250066\(v=office.15\)).</span></span>
+## <a name="referencing-the-library"></a><span data-ttu-id="f4062-112">Verweisen auf die Bibliothek</span><span class="sxs-lookup"><span data-stu-id="f4062-112">Referencing the library</span></span>
 
-## <a name="referencing-the-library"></a><span data-ttu-id="e4fda-112">Verweisen auf die Bibliothek</span><span class="sxs-lookup"><span data-stu-id="e4fda-112">Referencing the Library</span></span>
-
-<span data-ttu-id="e4fda-113">Fügen Sie die folgende Zeile in den Code ein, um die ADO/WFC-Datenklassen in das Projekt zu importieren:</span><span class="sxs-lookup"><span data-stu-id="e4fda-113">To import the ADO/WFC data classes into your project, include the following line in your code:</span></span>
+<span data-ttu-id="f4062-113">Fügen Sie die folgende Zeile in den Code ein, um die ADO/WFC-Datenklassen in das Projekt zu importieren:</span><span class="sxs-lookup"><span data-stu-id="f4062-113">To import the ADO/WFC data classes into your project, include the following line in your code:</span></span>
 
 ```java 
  

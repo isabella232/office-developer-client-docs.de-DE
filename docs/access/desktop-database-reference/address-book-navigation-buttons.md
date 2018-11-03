@@ -1,30 +1,29 @@
 ---
 title: Navigationsschaltflächen des Adressbuchs
-TOCTitle: Address Book Navigation Buttons
+TOCTitle: Address Book navigation buttons
 ms:assetid: 4ec32c08-5b35-8dce-23ec-0daa4db551cf
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249253(v=office.15)
 ms:contentKeyID: 48544765
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d0a6409bcdeca211c3badb1ca7918d3d34bc3f1f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: d1a8caae94bf56532b45dcfa3e647ba092552795
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869022"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947553"
 ---
-# <a name="address-book-navigation-buttons"></a><span data-ttu-id="134ef-102">Navigationsschaltflächen des Adressbuchs</span><span class="sxs-lookup"><span data-stu-id="134ef-102">Address Book Navigation Buttons</span></span>
+# <a name="address-book-navigation-buttons"></a><span data-ttu-id="db693-102">Navigationsschaltflächen des Adressbuchs</span><span class="sxs-lookup"><span data-stu-id="db693-102">Address Book navigation buttons</span></span>
 
+<span data-ttu-id="db693-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="db693-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="134ef-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="134ef-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="db693-104">Die adressbuchanwendung zeigt die Navigationsschaltflächen unten auf der Webseite.</span><span class="sxs-lookup"><span data-stu-id="db693-104">The Address Book application displays the navigation buttons at the bottom of the webpage.</span></span> <span data-ttu-id="db693-105">Mithilfe der Navigationsschaltflächen können Sie durch die Daten in der HTML-Rasteransicht navigieren, indem Sie die erste oder die letzte Zeile mit Daten oder Zeilen neben der aktuellen Auswahl auswählen.</span><span class="sxs-lookup"><span data-stu-id="db693-105">You can use the navigation buttons to navigate through the data in the HTML grid display by selecting either the first or last row of data, or rows adjacent to the current selection.</span></span>
 
-<span data-ttu-id="134ef-104">Die adressbuchanwendung zeigt die Navigationsschaltflächen unten auf der Webseite.</span><span class="sxs-lookup"><span data-stu-id="134ef-104">The Address Book application displays the navigation buttons at the bottom of the webpage.</span></span> <span data-ttu-id="134ef-105">Mithilfe der Navigationsschaltflächen können Sie durch die Daten in der HTML-Rasteransicht navigieren, indem Sie die erste oder die letzte Zeile mit Daten oder Zeilen neben der aktuellen Auswahl auswählen.</span><span class="sxs-lookup"><span data-stu-id="134ef-105">You can use the navigation buttons to navigate through the data in the HTML grid display by selecting either the first or last row of data, or rows adjacent to the current selection.</span></span>
+## <a name="navigation-sub-procedures"></a><span data-ttu-id="db693-106">Unterprozeduren für die Navigation</span><span class="sxs-lookup"><span data-stu-id="db693-106">Navigation Sub Procedures</span></span>
 
-## <a name="navigation-sub-procedures"></a><span data-ttu-id="134ef-106">Unterprozeduren für die Navigation</span><span class="sxs-lookup"><span data-stu-id="134ef-106">Navigation Sub Procedures</span></span>
+<span data-ttu-id="db693-107">Die Adressbuchanwendung enthält verschiedene Prozeduren, die es den Benutzern ermöglichen, auf die Schaltflächen **First**, **Next**, **Previous** und **Last** zu klicken, um durch die Daten zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="db693-107">The Address Book application contains several procedures that allow users to click the **First**, **Next**, **Previous**, and **Last** buttons to move around the data.</span></span>
 
-<span data-ttu-id="134ef-107">Die Adressbuchanwendung enthält verschiedene Prozeduren, die es den Benutzern ermöglichen, auf die Schaltflächen **First**, **Next**, **Previous** und **Last** zu klicken, um durch die Daten zu navigieren.</span><span class="sxs-lookup"><span data-stu-id="134ef-107">The Address Book application contains several procedures that allow users to click the **First**, **Next**, **Previous**, and **Last** buttons to move around the data.</span></span>
-
-<span data-ttu-id="134ef-108">Aktiviert das erste VBScript beispielsweise durch Klicken auf die **erste** Schaltfläche\_OnClick Sub-Prozedur.</span><span class="sxs-lookup"><span data-stu-id="134ef-108">For example, clicking the **First** button activates the VBScript First\_OnClick Sub procedure.</span></span> <span data-ttu-id="134ef-109">Die Prozedur führt eine [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode, wodurch die erste Zeile der Daten der aktuellen Auswahl.</span><span class="sxs-lookup"><span data-stu-id="134ef-109">The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection.</span></span> <span data-ttu-id="134ef-110">Durch Klicken auf die Schaltfläche **letzte** aktiviert das letzte\_OnClick Sub-Prozedur, die die [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode der letzten Zeile der Daten der aktuellen Auswahl wird.</span><span class="sxs-lookup"><span data-stu-id="134ef-110">Clicking the **Last** button activates the Last\_OnClick Sub procedure, which invokes the [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, making the last row of data the current selection.</span></span> <span data-ttu-id="134ef-111">Die verbleibenden Navigationstasten funktionieren auf ähnliche Weise.</span><span class="sxs-lookup"><span data-stu-id="134ef-111">The remaining navigation buttons work in a similar fashion.</span></span>
+<span data-ttu-id="db693-108">Aktiviert das erste VBScript beispielsweise durch Klicken auf die **erste** Schaltfläche\_OnClick Sub-Prozedur.</span><span class="sxs-lookup"><span data-stu-id="db693-108">For example, clicking the **First** button activates the VBScript First\_OnClick Sub procedure.</span></span> <span data-ttu-id="db693-109">Die Prozedur führt eine [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode, wodurch die erste Zeile der Daten der aktuellen Auswahl.</span><span class="sxs-lookup"><span data-stu-id="db693-109">The procedure executes a [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, which makes the first row of data the current selection.</span></span> <span data-ttu-id="db693-110">Durch Klicken auf die Schaltfläche **letzte** aktiviert das letzte\_OnClick Sub-Prozedur, die die [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) -Methode der letzten Zeile der Daten der aktuellen Auswahl wird.</span><span class="sxs-lookup"><span data-stu-id="db693-110">Clicking the **Last** button activates the Last\_OnClick Sub procedure, which invokes the [MoveLast](movefirst-movelast-movenext-and-moveprevious-methods-rds.md) method, making the last row of data the current selection.</span></span> <span data-ttu-id="db693-111">Die verbleibenden Navigationstasten funktionieren auf ähnliche Weise.</span><span class="sxs-lookup"><span data-stu-id="db693-111">The remaining navigation buttons work in a similar fashion.</span></span>
 
 ```vb 
  
