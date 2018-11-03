@@ -6,14 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249965(v=office.15)
 ms:contentKeyID: 48547611
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e125837b8f3d16e012d89374650182653f98a728
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c8677428c32c70bc11b9eef6f168b09c72592a0b
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25870415"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944249"
 ---
-# <a name="step-6-changes-are-sent-to-the-server-rds-tutorial"></a>Step 6: Changes are Sent to the Server (RDS Tutorial)
+# <a name="step-6-changes-are-sent-to-the-server-rds-tutorial"></a>Schritt 6: Änderungen werden an den Server (RDS-Lernprogramm) gesendet.
 
 
 **Betrifft**: Access 2013, Office 2013

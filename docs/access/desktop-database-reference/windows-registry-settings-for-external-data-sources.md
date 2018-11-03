@@ -6,22 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn161249(v=office.15)
 ms:contentKeyID: 52074216
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: acef0ad6f64ffbbf12ebffd381bc4de39398bf33
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e13721025ae6b32aec5af9f9b3aeb29eef80e258
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25873110"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947455"
 ---
 # <a name="windows-registry-settings-for-external-data-sources"></a>Windows-Registrierungseinstellungen für externe Datenquellen
 
 **Betrifft**: Access 2013, Office 2013
 
 - [Anpassen der Einstellungen in der Windows-Registrierung für das Microsoft Access-Datenbankmodul](customizing-windows-registry-settings-for-the-microsoft-access-database-engine.md)
-
 - [Initialisieren des Microsoft Excel-Treibers](initializing-the-microsoft-excel-driver.md)
-
 - [Initialisieren des Microsoft Exchange-Datenquellentreibers](initializing-the-microsoft-exchange-data-source-driver.md)
-
 - [Initialisieren des Text-Datenquellentreibers](initializing-the-text-data-source-driver.md)
 

@@ -6,21 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249929(v=office.15)
 ms:contentKeyID: 48547480
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc062640b564f2e7f9760d15c47ac80616c444f2
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b2a8a839edaa3da4f2efed747b3e86cae113ee21
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925506"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946111"
 ---
 # <a name="fields-collection-ado-reference"></a>Feldreferenz-Auflistung (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
 
-
-
-  - [Fields-Auflistung (ADO)](fields-collection-ado.md)
-
-  - [Fields-Auflistung: Eigenschaften, Methoden und Ereignisse](fields-collection-properties-methods-and-events.md)
+- [Fields-Auflistung (ADO)](fields-collection-ado.md)
+- [Fields-Auflistung: Eigenschaften, Methoden und Ereignisse](fields-collection-properties-methods-and-events.md)
 

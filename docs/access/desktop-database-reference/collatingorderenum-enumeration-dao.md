@@ -1,19 +1,19 @@
 ---
-title: CollatingOrderEnum Enumeration (DAO)
-TOCTitle: CollatingOrderEnum Enumeration
+title: CollatingOrderEnum (Aufzählung) (DAO)
+TOCTitle: CollatingOrderEnum enumeration
 ms:assetid: 4a82ca02-172b-e796-58d8-f263287ef52a
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff193485(v=office.15)
 ms:contentKeyID: 48544667
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cef7ce48cecaea4fceadc536afa3e97faa6ac119
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: cb316572a49879f659c6e17e34ef84faaeaf381d
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25879655"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945229"
 ---
-# <a name="collatingorderenum-enumeration-dao"></a>CollatingOrderEnum Enumeration (DAO)
+# <a name="collatingorderenum-enumeration-dao"></a>CollatingOrderEnum (Aufzählung) (DAO)
 
 
 **Betrifft**: Access 2013, Office 2013

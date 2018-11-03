@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm109100
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f27e195181e6035c133c1f52c1dadc329496614b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: cbf672ea3dde9725916128593e18d4289fd89057
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925254"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945383"
 ---
 # <a name="clearmacroerror-macro-action"></a>ClearMacroError-Makroaktion
 
@@ -31,15 +31,15 @@ Die **ClearMacroError** -Aktion hat keine Argumente.
 
 ## <a name="remarks"></a>Hinweise
 
-  - Tritt ein Fehler in einem Makro, werden Informationen zu dem Fehler im **MacroError** -Objekt gespeichert. Wenn Sie Fehlermeldungen unterdrückt nicht die **[BeiFehler](onerror-macro-action.md)** -Aktion verwendet haben, wird das Makro beendet und die Fehlerinformationen in eine Standardfehlermeldung angezeigt. Wenn Sie Fehlermeldungen unterdrückt die **BeiFehler** -Aktion verwendet haben, sollten Sie die im **MacroError** -Objekt in einer Bedingung oder in einer benutzerdefinierten Fehlermeldung gespeicherte Informationen verwenden.
+- Tritt ein Fehler in einem Makro, werden Informationen zu dem Fehler im **MacroError** -Objekt gespeichert. Wenn Sie Fehlermeldungen unterdrückt nicht die **[BeiFehler](onerror-macro-action.md)** -Aktion verwendet haben, wird das Makro beendet und die Fehlerinformationen in eine Standardfehlermeldung angezeigt. Wenn Sie Fehlermeldungen unterdrückt die **BeiFehler** -Aktion verwendet haben, sollten Sie die im **MacroError** -Objekt in einer Bedingung oder in einer benutzerdefinierten Fehlermeldung gespeicherte Informationen verwenden.
     
-    Nachdem ein Fehler behandelt wurde, ist die Informationen im **MacroError** -Objekt nicht mehr aktuell, daher es ratsam ist, deaktivieren Sie das Objekt mit der Aktion **ClearMacroError**. Dies setzt die Fehlernummer im **MacroError** -Objekt auf 0 und löscht alle anderen Informationen zu dem Fehler, der in das Objekt, wie die Beschreibung des Fehlers, Makroname, Name der Aktion, Bedingung und Argumente gespeichert ist. Auf diese Weise können Sie **MacroError** -Objekt einem späteren Zeitpunkt erneut überprüfen, um festzustellen, ob ein anderer Fehler aufgetreten ist.
+  Nachdem ein Fehler behandelt wurde, ist die Informationen im **MacroError** -Objekt nicht mehr aktuell, daher es ratsam ist, deaktivieren Sie das Objekt mit der Aktion **ClearMacroError**. Dies setzt die Fehlernummer im **MacroError** -Objekt auf 0 und löscht alle anderen Informationen zu dem Fehler, der in das Objekt, wie die Beschreibung des Fehlers, Makroname, Name der Aktion, Bedingung und Argumente gespeichert ist. Auf diese Weise können Sie **MacroError** -Objekt einem späteren Zeitpunkt erneut überprüfen, um festzustellen, ob ein anderer Fehler aufgetreten ist.
 
-  - **MacroError** -Objekt wird automatisch gelöscht, wenn alle Makro beendet wird, daher Sie keine verwenden Sie die Aktion **ClearMacroError** am Ende eines Makros müssen.
+- **MacroError** -Objekt wird automatisch gelöscht, wenn alle Makro beendet wird, daher Sie keine verwenden Sie die Aktion **ClearMacroError** am Ende eines Makros müssen.
 
-  - **MacroError** -Objekt enthält Informationen zu nur einem Fehler zu einem Zeitpunkt. Wenn mehr als einen Fehler in einem Makro aufgetreten ist, enthält das **MacroError** -Objekt nur Informationen zu den letzten Fehler.
+- **MacroError** -Objekt enthält Informationen zu nur einem Fehler zu einem Zeitpunkt. Wenn mehr als einen Fehler in einem Makro aufgetreten ist, enthält das **MacroError** -Objekt nur Informationen zu den letzten Fehler.
 
-  - Um die **ClearMacroError** -Aktion in einem VBA-Modul auszuführen, verwenden Sie die **ClearMacroError** -Methode des **DoCmd** -Objekts.
+- Um die **ClearMacroError** -Aktion in einem VBA-Modul auszuführen, verwenden Sie die **ClearMacroError** -Methode des **DoCmd** -Objekts.
 
 ## <a name="example"></a>Beispiel
 

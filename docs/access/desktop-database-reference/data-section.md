@@ -1,23 +1,21 @@
 ---
 title: Datenabschnitt (Access PC-Datenbank-Referenz)
-TOCTitle: Data Section
+TOCTitle: Data section
 ms:assetid: fd8d31aa-af13-a52f-5e91-20225b8df175
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250303(v=office.15)
 ms:contentKeyID: 48548920
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 74406232a6f7d458eebb242f3f341bd4e3ccc583
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 98215394af89df30a95fcb9c5a757368cb64d4f1
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882854"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946377"
 ---
-# <a name="data-section"></a>Data Section
+# <a name="data-section"></a>Datenabschnitt
 
 **Betrifft**: Access 2013, Office 2013
- 
-## <a name="data-section"></a>Datenabschnitt
 
 Der Datenabschnitt definiert die Daten des Rowsets zusammen mit ausstehenden Aktualisierungen, Einfügungen oder Löschvorgängen. Der Datenabschnitt kann null oder mehr Zeilen enthalten. Er kann nur Daten von einem einzigen Rowset enthalten, in dem die Zeile vom Schema definiert wird. Außerdem können wie vorher beschrieben Spalten ohne Daten ausgelassen werden. Falls ein Attribut oder Unterelement im Datenabschnitt verwendet wird und dieses nicht im Schemaabschnitt definiert wurde, wird es ignoriert.
 

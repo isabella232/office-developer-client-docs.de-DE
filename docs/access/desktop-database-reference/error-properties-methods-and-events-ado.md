@@ -6,31 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249607(v=office.15)
 ms:contentKeyID: 48546183
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 849fcf9c3be55cfab0036e839ae4a9e395cf98dd
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 297108566d3ce8e6f2c3037d9d607d1c233a4c4f
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928712"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946559"
 ---
 # <a name="error-properties-methods-and-events-ado"></a>Fehlereigenschaften, Methoden und Ereignisse (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 ## <a name="properties"></a>Eigenschaften
 
 - [Description-Eigenschaft](description-property-ado.md)
-
-- [HelpContext- und HelpFile-Eigenschaft](helpcontext-helpfile-properties-ado.md)
-
+- [HelpContext-und HelpFile-Eigenschaft](helpcontext-helpfile-properties-ado.md)
 - [NativeError-Eigenschaft](nativeerror-property-ado.md)
-
 - [Number-Eigenschaft](number-property-ado.md)
-
-- [Source-Eigenschaft](source-property-ado-error.md)
-
+- [Source-Eigenschaft (ADO Error)](source-property-ado-error.md)
 - [SQLState-Eigenschaft](sqlstate-property-ado.md)
 
 ## <a name="methods"></a>Methoden

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249132(v=office.15)
 ms:contentKeyID: 48544197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 972a367d18613fd8c8935ded60223e78ee0dc4d7
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9f4ef26113d81910fa989196a0b58865e1ca62f3
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887432"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945754"
 ---
 # <a name="ado-events-model-example-vc"></a>ADO-Ereignisse (Beispiel) (VC++)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -22,27 +21,27 @@ Der Visual C++-Abschnitt der [ADO-Ereignisinstanziierung nach Sprache](https://m
 
 Die allgemeine Beschreibung verwendet **adoint.h** als Verweis für Methodensignaturen. Jedoch einige Details in der allgemeinen Beschreibung ändern etwas als Folge der Verwendung der ** \#importieren** Richtlinie:
 
-  - Die ** \#importieren** -Direktive löst **Typedef**und Methode Signatur Datentypen und Modifizierer in ihre grundlegenden Formen.
+- Die ** \#importieren** -Direktive löst **Typedef**und Methode Signatur Datentypen und Modifizierer in ihre grundlegenden Formen.
 
-  - Die reinen virtuellen Methoden, die überschrieben werden, müssen alle das Präfix durch "**unformatierten\_**".
+- Die reinen virtuellen Methoden, die überschrieben werden, müssen alle das Präfix durch "**unformatierten\_**".
 
 Ein Teil des Codes spiegelt einfach den Codierungsstil wider.
 
-  - Der von der **Advise** -Methode verwendete Zeiger auf **IUnknown** wird ausdrücklich mit einem Aufruf von **QueryInterface** abgerufen.
+- Der von der **Advise** -Methode verwendete Zeiger auf **IUnknown** wird ausdrücklich mit einem Aufruf von **QueryInterface** abgerufen.
 
-  - Sie müssen in den Klassendefinitionen nicht ausdrücklich einen Destruktor codieren.
+- Sie müssen in den Klassendefinitionen nicht ausdrücklich einen Destruktor codieren.
 
-  - Möglicherweise möchten Sie stabilere Implementierungen von QueryInterface, AddRef und Release.
+- Möglicherweise möchten Sie stabilere Implementierungen von QueryInterface, AddRef und Release.
 
-  - Die ** \_ \_uuidof()** Richtlinie wird häufig verwendet, um Schnittstellen-IDs zu erhalten.
+- Die ** \_ \_uuidof()** Richtlinie wird häufig verwendet, um Schnittstellen-IDs zu erhalten.
 
 Schließlich enthält das Beispiel einigen funktionsfähigen Code.
 
-  - Das Beispiel wird als Konsolenanwendung geschrieben.
+- Das Beispiel wird als Konsolenanwendung geschrieben.
 
-  - Sie sollten Ihren eigenen Code unter den Kommentar einfügen "/ / Do einige Arbeit".
+- Sie sollten Ihren eigenen Code unter den Kommentar einfügen "/ / Do einige Arbeit".
 
-  - Alle Ereignishandler werden standardmäßig auf keine Tätigkeit und den Abbruch weiterer Benachrichtigungen festgelegt. Sie sollten den entsprechenden Code für Ihre Anwendung einfügen und gegebenenfalls Benachrichtigungen zulassen.
+- Alle Ereignishandler werden standardmäßig auf keine Tätigkeit und den Abbruch weiterer Benachrichtigungen festgelegt. Sie sollten den entsprechenden Code für Ihre Anwendung einfügen und gegebenenfalls Benachrichtigungen zulassen.
 
 <!-- end list -->
 

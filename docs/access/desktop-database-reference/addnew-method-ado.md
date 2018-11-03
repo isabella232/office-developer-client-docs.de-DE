@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249899(v=office.15)
 ms:contentKeyID: 48547384
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 379aa71ad875213ab8c1ae022f7c8af3350b2662
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5c4ac833f2ff7681e3a4abe77ff53928fc3f4fe2
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927746"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944564"
 ---
 # <a name="addnew-method-ado"></a>AddNew-Methode (ADO)
 
@@ -26,17 +26,11 @@ Es wird ein neuer Datensatz für ein aktualisierbares [Recordset](recordset-obje
 
 ## <a name="parameters"></a>Parameter
 
-  - *recordset*
-
-  - Ein **Recordset** -Objekt.
-
-  - *Feldliste*
-
-  - Optional. Ein einzelner Name oder ein Array aus Namen oder Positionen der Felder im neuen Datensatz.
-
-  - *Values*
-
-  - Optional. Ein einzelner Wert oder ein Array aus Werten für die Felder im neuen Datensatz. Wenn *Fieldlist* ein Array ist, muss *Werte* auch ein Array mit der gleichen Anzahl von Elementen sein; andernfalls, tritt ein Fehler auf. Die Reihenfolge der Feldnamen muss mit der Reihenfolge der Feldwerte in den einzelnen Arrays übereinstimmen.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*recordset* |Ein **Recordset** -Objekt.|
+|*Feldliste* |Optional. Ein einzelner Name oder ein Array aus Namen oder Positionen der Felder im neuen Datensatz.|
+|*Values* |Optional. Ein einzelner Wert oder ein Array aus Werten für die Felder im neuen Datensatz. Wenn *Fieldlist* ein Array ist, muss *Werte* auch ein Array mit der gleichen Anzahl von Elementen sein; andernfalls, tritt ein Fehler auf. Die Reihenfolge der Feldnamen muss mit der Reihenfolge der Feldwerte in den einzelnen Arrays übereinstimmen.|
 
 ## <a name="remarks"></a>Hinweise
 

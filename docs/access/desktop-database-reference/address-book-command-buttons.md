@@ -1,17 +1,17 @@
 ---
 title: Befehlsschaltflächen des Adressbuchs
-TOCTitle: Address Book Command Buttons
+TOCTitle: Address Book command buttons
 ms:assetid: bcea6f53-3e36-b067-03c2-b157ed02d41d
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249908(v=office.15)
 ms:contentKeyID: 48547422
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e445414ead78bb5e1b05b3f3812e86f1d6c119ef
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: f586b92f309ffd330230bf732d0e477acf0a8ba9
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869512"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946929"
 ---
 # <a name="address-book-command-buttons"></a>Befehlsschaltflächen des Adressbuchs
 
@@ -21,13 +21,13 @@ ms.locfileid: "25869512"
 
 Die Adressbuchanwendung bietet die folgenden Befehlsschaltflächen:
 
-  - Eine Schaltfläche Find, um eine Abfrage an die Datenbank abzusenden.
+- Eine Schaltfläche **Find**, um eine Abfrage an die Datenbank abzusenden.
 
-  - Eine Schaltfläche **Clear**, um die Inhalte aus den Textfelder zu löschen, bevor eine neue Suche gestartet wird.
+- Eine Schaltfläche **Clear**, um die Inhalte aus den Textfelder zu löschen, bevor eine neue Suche gestartet wird.
 
-  - Eine Schaltfläche Update Profile, um die Änderungen an einem Mitarbeiterdatensatz zu ändern.
+- Eine Schaltfläche **Update Profile**, um die Änderungen an einem Mitarbeiterdatensatz zu ändern.
 
-  - Eine Schaltfläche Cancel Changes, um Änderungen zu verwerfen.
+- Eine Schaltfläche **Cancel Changes**, um Änderungen zu verwerfen.
 
 ## <a name="find-button"></a>Find (Schaltfläche)
 

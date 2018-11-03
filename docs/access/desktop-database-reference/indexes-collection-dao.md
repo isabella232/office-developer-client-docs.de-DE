@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3e38df07831e21a92afdf8106b6d8eb3844396cc
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 21609d6299caf6de5e2fe0b777796033b69d9f87
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936756"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946692"
 ---
 # <a name="indexes-collection-dao"></a>Indexes-Auflistung (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,9 +25,7 @@ Wenn Sie ein Recordset-Objekt vom Typ Tabelle zugreifen, verwenden Sie das Objek
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Sie können die Methode <STRONG>Append</STRONG> oder <STRONG>Delete</STRONG> nur für eine <STRONG>Indexes</STRONG>-Auflistung verwenden, wenn die Einstellung der <STRONG><A href="connection-updatable-property-dao.md">Updatable</A></STRONG> -Eigenschaft für das enthaltende <STRONG>TableDef</STRONG>-Objekt <STRONG>True</STRONG> lautet.</P>
-
-
+> [!HINWEIS] Sie können die Methode **Append** oder **Delete** nur für eine **Indexes**-Auflistung verwenden, wenn die Einstellung der **[Updatable](connection-updatable-property-dao.md)** -Eigenschaft für das enthaltende **TableDef**-Objekt **True** lautet.
 
 Nachdem Sie ein neues **Index**-Objekt erstellt haben, sollten Sie es mit der **Append**-Methode der **Indexes**-Auflistung des **TableDef**-Objekts hinzufügen.
 

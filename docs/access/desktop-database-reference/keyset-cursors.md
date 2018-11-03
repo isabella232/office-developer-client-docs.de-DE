@@ -1,20 +1,19 @@
 ---
 title: Keysetcursor (Access PC-Datenbank-Referenz)
-TOCTitle: Keyset Cursors
+TOCTitle: Keyset cursors
 ms:assetid: 4b6e5f90-4413-4fb3-0a08-2cb89d3c61f7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249236(v=office.15)
 ms:contentKeyID: 48544690
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 66e6b5ff69d22fa50d9765eb2087c373613bdb7d
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 098bbd0ba69fcfd874db4aa78394df1a768b68c8
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886942"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945264"
 ---
-# <a name="keyset-cursors"></a>KEYSET-Cursor
-
+# <a name="keyset-cursors"></a>Keysetcursor
 
 **Betrifft**: Access 2013, Office 2013
 

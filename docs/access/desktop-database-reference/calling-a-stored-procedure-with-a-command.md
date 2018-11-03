@@ -1,19 +1,19 @@
 ---
-title: Aufrufen einer gespeicherten Prozedur mithilfe eines Befehls
-TOCTitle: Calling a Stored Procedure with a Command
+title: Aufrufen einer gespeicherten Prozedur mit einem Befehl
+TOCTitle: Calling a stored procedure with a command
 ms:assetid: 19d600d7-f717-39df-11a0-951e3ed0f812
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248944(v=office.15)
 ms:contentKeyID: 48543509
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 05e68a18ccd97e33416c4603f033fb91acaf0210
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 4d3086124dd83fcaabda2784b8e2c9b7a2f525e8
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25876001"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945201"
 ---
-# <a name="calling-a-stored-procedure-with-a-command"></a>Aufrufen einer gespeicherten Prozedur mithilfe eines Befehls
+# <a name="calling-a-stored-procedure-with-a-command"></a>Aufrufen einer gespeicherten Prozedur mit einem Befehl
 
 
 **Betrifft**: Access 2013, Office 2013

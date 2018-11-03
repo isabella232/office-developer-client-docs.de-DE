@@ -1,20 +1,19 @@
 ---
 title: Batch-Modus (Access PC-Datenbank-Referenz)
-TOCTitle: Batch Mode
+TOCTitle: Batch mode
 ms:assetid: b73921f6-5a12-9b26-ea65-99b32dd763f6
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249883(v=office.15)
 ms:contentKeyID: 48547294
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3ee4805f89d6a6a9d114c4347d808be61683efe6
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 9541e8b7888f5fb5f16bcfb343d545cf304b1afd
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880614"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945789"
 ---
-# <a name="batch-mode"></a>Batchmodus
-
+# <a name="batch-mode"></a>Im Batchmodus
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -24,15 +23,10 @@ Mit der **UpdateBatch** -Methode werden Änderungen am **Recordset** -Objekt, di
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [Sending the Updates: UpdateBatch](sending-the-updates-updatebatch.md)
-
-- [Filtering for Updated Records](filtering-for-updated-records.md)
-
-- [Dealing with Failed Updates](dealing-with-failed-updates.md)
-
-- [Detecting and Resolving Conflicts](detecting-and-resolving-conflicts.md)
-
-- [Disconnecting and Reconnecting the Recordset](disconnecting-and-reconnecting-the-recordset.md)
-
-- [Aktualisieren von verknüpften Ergebnissen: "Unique Table"](updating-joined-results-unique-table.md)
+- [Senden der Aktualisierungen: UpdateBatch](sending-the-updates-updatebatch.md)
+- [Filtern nach aktualisierten Datensätzen](filtering-for-updated-records.md)
+- [Umgehen mit fehlgeschlagenen Aktualisierungen](dealing-with-failed-updates.md)
+- [Erkennen und Lösen von Konflikten](detecting-and-resolving-conflicts.md)
+- [Trennen und Wiederherstellen der Verbindung für des Recordset-Objekts](disconnecting-and-reconnecting-the-recordset.md)
+- [Aktualisieren von Ergebnissen beigetreten: Unique Table](updating-joined-results-unique-table.md)
 

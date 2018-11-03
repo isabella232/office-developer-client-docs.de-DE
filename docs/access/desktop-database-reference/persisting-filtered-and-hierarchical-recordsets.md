@@ -1,19 +1,19 @@
 ---
-title: Speichern gefilterter und hierarchischer Recordset-Objekte
-TOCTitle: Persisting Filtered and Hierarchical Recordsets
+title: Speichern von gefiltert und hierarchische Recordsets
+TOCTitle: Persisting filtered and hierarchical Recordsets
 ms:assetid: 3648a997-dac7-d8a3-3cca-a6827f26a4f0
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249120(v=office.15)
 ms:contentKeyID: 48544162
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 931345aff0cd3d8c9b10c53073e640b3cfdd5de5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 13255bcd5cd40745a767b8aff9f49449b0127294
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889714"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946118"
 ---
-# <a name="persisting-filtered-and-hierarchical-recordsets"></a>Speichern gefilterter und hierarchischer Recordset-Objekte
+# <a name="persisting-filtered-and-hierarchical-recordsets"></a>Speichern von gefiltert und hierarchische Recordsets
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -22,6 +22,6 @@ Wenn die [Filter](filter-property-ado.md)-Eigenschaft für das **Recordset** -Ob
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Beim Speichern hierarchischer <STRONG>Recordset</STRONG> -Objekte (Datenstrukturen) im XML-Format gelten einige Einschränkungen. Weitere Informationen finden Sie unter <A href="hierarchical-recordsets-in-xml.md">Hierarchische Recordset-Objekte in XML</A>.</P>
+> [!HINWEIS] Beim Speichern hierarchischer **Recordset** -Objekte (Datenstrukturen) im XML-Format gelten einige Einschränkungen. Weitere Informationen finden Sie unter [Hierarchische Recordset-Objekte in XML](hierarchical-recordsets-in-xml.md).
 
 

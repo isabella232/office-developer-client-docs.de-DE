@@ -1,19 +1,19 @@
 ---
-title: Connection Close-Methode vom Tabellentyp-Eigenschaft (VC++-Beispiel)
-TOCTitle: Connection Close Method, Table Type property example (VC++)
+title: Connection Close-Methode, Type-Eigenschaft (Table) (VC++-Beispiel)
+TOCTitle: Connection Close method, Table Type property example (VC++)
 ms:assetid: d75fac58-4b25-c446-8c8e-4afcf1efecc5
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15)
 ms:contentKeyID: 48548006
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 595877a88a250d69cd4b9401bb30a0d63cfcb3b5
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: dcae0898ea0ce84f334711b9d2a1f2b941f6e684
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874433"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25946902"
 ---
-# <a name="connection-close-method-table-type-property-example-vc"></a>Connection Close-Methode vom Tabellentyp-Eigenschaft (VC++-Beispiel)
+# <a name="connection-close-method-table-type-property-example-vc"></a>Connection Close-Methode, Type-Eigenschaft (Table) (VC++-Beispiel)
 
 
 **Betrifft**: Access 2013, Office 2013

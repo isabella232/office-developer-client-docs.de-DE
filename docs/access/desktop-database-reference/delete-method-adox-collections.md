@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249909(v=office.15)
 ms:contentKeyID: 48547423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b5fdcd80a49d7d9d14ba17a85f675fdfd9906c1b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6a429c18890125f1c047c6356d250713ea5ea817
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921663"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944900"
 ---
 # <a name="delete-method-adox-collections"></a>Delete-Methode (ADOX Collections)
 
@@ -28,7 +28,7 @@ Entfernt ein Objekt aus einer Auflistung.
 
 ## <a name="parameters"></a>Parameter
 
-  - *Name*
+- *Name*
 
   - Ein **Variant** -Wert, der den Namen oder die Position (Index) des zu löschenden Objekts angibt.
 

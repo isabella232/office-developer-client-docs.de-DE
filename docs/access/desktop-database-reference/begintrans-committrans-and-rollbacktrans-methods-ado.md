@@ -1,31 +1,29 @@
 ---
-title: Methoden 'BeginTrans', 'CommitTrans' und 'RollbackTrans' (ADO)
-TOCTitle: BeginTrans, CommitTrans, and RollbackTrans Methods (ADO)
+title: BeginTrans-, CommitTrans- and RollbackTrans-Methode (Beispiel) (ADO)
+TOCTitle: BeginTrans, CommitTrans, and RollbackTrans methods (ADO)
 ms:assetid: 9a0415f0-9424-8d1c-4779-92e932292d46
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 68e827f6177c0ea90d4dd8d74c9782d552b3fdd2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: ca7c63e0c310535ecdf84a11c656d00ff436627f
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25884667"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25945922"
 ---
-# <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>Methoden "BeginTrans", "CommitTrans" und "RollbackTrans" (ADO)
-
+# <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans-, CommitTrans- and RollbackTrans-Methode (Beispiel) (ADO)
 
 **Betrifft**: Access 2013, Office 2013
 
-
 Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Connection](connection-object-ado.md)-Objekt wie folgt verwaltet:
 
-  - **BeginTrans** - Eine neue Transaktion wird begonnen.
+- **BeginTrans** - Eine neue Transaktion wird begonnen.
 
-  - **CommitTrans** - Alle Änderungen werden gespeichert, und die aktuelle Transaktion wird beendet. Möglicherweise wird auch eine neue Transaktion gestartet.
+- **CommitTrans** - Alle Änderungen werden gespeichert, und die aktuelle Transaktion wird beendet. Möglicherweise wird auch eine neue Transaktion gestartet.
 
-  - **RollbackTrans** - Alle während der aktuellen Transaktion vorgenommenen Änderungen werden abgebrochen, und die Transaktion wird beendet. Möglicherweise wird auch eine neue Transaktion gestartet.
+- **RollbackTrans** - Alle während der aktuellen Transaktion vorgenommenen Änderungen werden abgebrochen, und die Transaktion wird beendet. Möglicherweise wird auch eine neue Transaktion gestartet.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,14 +41,13 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 
 ## <a name="parameters"></a>Parameter
 
-  - *Objekt*
+- *Objekt*
 
   - Ein **Connection** -Objekt.
 
-**Connection**
+### <a name="connection"></a>Connection
 
 Verwenden Sie diese Methoden mit einem **Connection** -Objekt, wenn Sie eine Reihe von an den Quelldaten vorgenommenen Änderungen als einzelne Einheit speichern oder abbrechen möchten. Beispielsweise subtrahieren Sie zum Übertragen von Geldbeträgen zwischen Konten einen Betrag von einem Konto und addieren den gleichen Betrag zu einem anderen Konto. Wenn eine der Aktualisierungen fehlschlägt, sind die Konten nicht mehr ausgeglichen. Durch das Vornehmen dieser Änderungen mit einer geöffneten Transaktion wird sichergestellt, dass alle oder keine der Änderungen durchlaufen.
-
 
 > [!NOTE]
 > Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "**Transaction DDL**"-Eigenschaft in der [Properties](properties-collection-ado.md)-Auflistung des **Connection**-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
@@ -63,7 +60,7 @@ Durch das Aufrufen der **CommitTrans** -Methode werden in einer geöffneten Tran
 
 Abhängig von der **Attributes**-Eigenschaft des [Connection](attributes-property-ado.md) -Objekts wird durch das Aufrufen der Methoden **CommitTrans** oder **RollbackTrans** möglicherweise automatisch eine neue Transaktion gestartet. Wenn die **Attributes** -Eigenschaft auf **adXactCommitRetaining** festgelegt ist, wird nach einem **CommitTrans** -Aufruf automatisch vom Anbieter eine neue Transaktion gestartet. Wenn die **Attributes** -Eigenschaft auf **adXactAbortRetaining** festgelegt ist, wird nach einem **RollbackTrans** -Aufruf automatisch vom Anbieter eine neue Transaktion gestartet.
 
-**Remote Data Service**
+### <a name="remote-data-service"></a>Remote Data Service
 
 Die Methoden **BeginTrans**, **CommitTrans** und **RollbackTrans** stehen für ein clientseitiges **Connection** -Objekt nicht zur Verfügung.
 

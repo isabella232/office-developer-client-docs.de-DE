@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249484(v=office.15)
 ms:contentKeyID: 48545691
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 17da3304dd6737712b1bd79dc4c9088bcdc2bc2a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6ba082ab64a7f2a3f4d5d5a4246e0a31c34fc075
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924540"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944571"
 ---
 # <a name="cell-properties-methods-and-events-ado-md"></a>Zelleneigenschaften, Methoden und Ereignisse (ADO MD)
 
@@ -20,14 +20,10 @@ ms.locfileid: "25924540"
 ## <a name="propertiescollections"></a>Eigenschaften/Auflistungen
 
 - [FormattedValue-Eigenschaft](formattedvalue-property-ado-md.md)
-
-- [Ordinal-Eigenschaft (Cell)](ordinal-property-ado-md-cell.md)
-
+- [Ordinal-Eigenschaft (Zelle)](ordinal-property-ado-md-cell.md)
 - [Positions-Auflistung](positions-collection-ado-md.md)
-
 - [Properties-Auflistung](properties-collection-ado.md)
-
-- [Value-Eigenschaft (Wert)](value-property-ado-md.md)
+- [Value-Eigenschaft](value-property-ado-md.md)
 
 ## <a name="methods"></a>Methoden
 

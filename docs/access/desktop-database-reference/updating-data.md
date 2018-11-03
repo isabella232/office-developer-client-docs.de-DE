@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248794(v=office.15)
 ms:contentKeyID: 48542970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d9202a81617f253477c9788055738eaa64e73322
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 70ca34183d135c6907a185984b02b394776bfda4
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25880481"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944221"
 ---
 # <a name="updating-data"></a>Aktualisieren von Daten
 
@@ -28,9 +28,7 @@ Der aktuelle Datensatz bleibt aktuell, nachdem Sie die Methode **Update** oder *
 
 Dieser Abschnitt enthält die folgenden Themen:
 
-- [Immediate Mode](immediate-mode.md)
-
+- [Sofortiger Aktualisierungsmodus](immediate-mode.md)
 - [Die Verarbeitung von Transaktionen](transaction-processing.md)
-
-- [Batch Mode (ADO)](batch-mode.md)
+- [Batch-Modus (ADO)](batch-mode.md)
 

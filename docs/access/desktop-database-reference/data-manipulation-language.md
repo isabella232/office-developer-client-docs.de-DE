@@ -1,49 +1,36 @@
 ---
 title: Data Manipulation Language (Microsoft Access SQL)
-TOCTitle: Data Manipulation Language
+TOCTitle: Data manipulation language
 ms:assetid: 25c6f127-0fee-470e-bf16-9253b14e8086
 ms:mtpsurl: https://msdn.microsoft.com/library/Dn124073(v=office.15)
 ms:contentKeyID: 52071710
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 48a95e821beeace771cbced5886072fdab37be78
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: e4dd6063ba0f4fce5ba97b37f318e94072d73191
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888139"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25947252"
 ---
 # <a name="data-manipulation-language-microsoft-access-sql"></a>Data Manipulation Language (Microsoft Access SQL)
 
 **Betrifft**: Access 2013, Office 2013
 
-  - [DELETE-Anweisung](delete-statement-microsoft-access-sql.md)
+- [DELETE-Anweisung](delete-statement-microsoft-access-sql.md)
+- [EXECUTE-Anweisung](execute-statement-microsoft-access-sql.md)
+- [INNER JOIN-Operation](inner-join-operation-microsoft-access-sql.md)
+- [INSERT INTO-Anweisung](insert-into-statement-microsoft-access-sql.md)
+- [LEFT JOIN- und RIGHT JOIN-Operation](left-join-right-join-operations-microsoft-access-sql.md)
+- [PARAMETERS-Deklaration](parameters-declaration-microsoft-access-sql.md)
+- [PROCEDURE-Klausel](procedure-clause-microsoft-access-sql.md)
+- [SELECT-Anweisung](select-statement-microsoft-access-sql.md)
+- [SELECT.INTO-Anweisung](select-into-statement-microsoft-access-sql.md)
+- [SQL-Unterabfragen](sql-subqueries-microsoft-access-sql.md)
+- [TRANSACTION-Anweisung](transaction-statement-microsoft-access-sql.md)
+- [TRANSFORM-Anweisung](transform-statement-microsoft-access-sql.md)
+- [UNION-Operation](union-operation-microsoft-access-sql.md)
+- [UPDATE-Anweisung](update-statement-microsoft-access-sql.md)
+- [WITH OWNERACCESS OPTION-Deklaration](with-owneraccess-option-declaration-microsoft-access-sql.md)
 
-  - [EXECUTE-Anweisung](execute-statement-microsoft-access-sql.md)
-
-  - [INNER JOIN-Operation](inner-join-operation-microsoft-access-sql.md)
-
-  - [INSERT INTO-Anweisung](insert-into-statement-microsoft-access-sql.md)
-
-  - [LEFT JOIN- und RIGHT JOIN-Operation](left-join-right-join-operations-microsoft-access-sql.md)
-
-  - [PARAMETERS-Deklaration](parameters-declaration-microsoft-access-sql.md)
-
-  - [PROCEDURE-Klausel](procedure-clause-microsoft-access-sql.md)
-
-  - [SELECT-Anweisung](select-statement-microsoft-access-sql.md)
-
-  - [SELECT.INTO-Anweisung](select-into-statement-microsoft-access-sql.md)
-
-  - [SQL-Unterabfragen](sql-subqueries-microsoft-access-sql.md)
-
-  - [TRANSACTION-Anweisung](transaction-statement-microsoft-access-sql.md)
-
-  - [TRANSFORM-Anweisung](transform-statement-microsoft-access-sql.md)
-
-  - [UNION-Operation](union-operation-microsoft-access-sql.md)
-
-  - [UPDATE-Anweisung](update-statement-microsoft-access-sql.md)
-
-  - [WITH OWNERACCESS OPTION-Deklaration](with-owneraccess-option-declaration-microsoft-access-sql.md)
 

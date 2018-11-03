@@ -1,20 +1,19 @@
 ---
-title: Minimieren der Speicherplatznutzung von Protokolldateien
-TOCTitle: Minimizing Log File Space Usage
+title: Minimieren der speicherplatznutzung von Protokolldateien
+TOCTitle: Minimizing log file space usage
 ms:assetid: d527c313-35ad-c30e-6ea1-ddfeff1fe890
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250073(v=office.15)
 ms:contentKeyID: 48547960
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 119e4bc607296d1a68aef6f85d44f15718940b42
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 2c462641616c126c7732433fc8b7d23bb137b06a
+ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25866985"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25944767"
 ---
-# <a name="minimizing-log-file-space-usage"></a>Minimieren der Speicherplatznutzung von Protokolldateien
-
+# <a name="minimizing-log-file-space-usage"></a>Minimieren der speicherplatznutzung von Protokolldateien
 
 **Betrifft**: Access 2013, Office 2013
 
