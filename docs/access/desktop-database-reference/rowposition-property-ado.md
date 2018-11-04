@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249887(v=office.15)
 ms:contentKeyID: 48547325
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6f83d1b113b29be06ffded5263791d3db3068f7f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 0adb1cdf9ce7b096d7b80b86a89a819d5789b60b
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25869071"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949383"
 ---
 # <a name="rowposition-property-ado"></a>RowPosition-Eigenschaft (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Ruft ein OLE DB- **RowPosition** -Objekt aus einem **ADORecordsetConstruction** -Objekt ab oder legt es dafür fest. Bei Verwendung **platzieren\_RowPosition** zur **RowPosition** -Objekt das resultierende **Recordset** -Objekt verwendet das **RowPosition** -Objekt zum Bestimmen der aktuellen Zeile.
 
@@ -32,13 +29,10 @@ Platzieren Sie HRESULT\_RowPosition (\[in\] IUnknown\* pRowPos);
 
 ## <a name="parameters"></a>Parameter
 
-  - *ppRowPos*
-
-  - Zeiger auf ein OLE DB- **RowPosition** -Objekt.
-
-  - *PRowPos*
-
-  - Ein OLE DB- **RowPosition** -Objekt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*ppRowPos* |Zeiger auf ein OLE DB- **RowPosition** -Objekt.|
+|*PRowPos* |Ein OLE DB- **RowPosition** -Objekt.|
 
 ## <a name="return-values"></a>Rückgabewerte
 
@@ -48,7 +42,7 @@ Diese Eigenschaftsmethode gibt die HRESULT-Standardwerte, einschließlich S\_OK 
 
 Wenn diese Eigenschaft festgelegt ist und sich das **Rowset** -Objekt für das **RowPosition** -Objekt vom **Rowset** -Objekt für das **Recordset** -Objekt unterscheidet, wird letzteres überschrieben. Dasselbe Verhalten gilt auch für das aktuelle **Chapter** -Objekt des **RowPosition** -Objekts.
 
-## <a name="applies-to"></a>Betrifft
+## <a name="applies-to"></a>Gilt für
 
 [ADORecordsetConstruction](adorecordsetconstruction-interface-ado.md)
 

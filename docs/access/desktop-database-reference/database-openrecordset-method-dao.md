@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052939
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ab969f2e26751a70a0f9ac9daf2ca17bcaa103c5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f241d8b6a5b13d68ed58b984ef84bfdd942a3891
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925975"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949964"
 ---
 # <a name="databaseopenrecordset-method-dao"></a>Database.OpenRecordset-Methode (DAO)
 
@@ -29,7 +29,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -48,52 +48,37 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Die Quelle der Datensätze für das neue <strong>Recordset</strong>. Die Quelle kann ein Tabellenname, ein Abfragename oder eine SQL-Anweisung sein, die Datensätze zurückgibt. Für <strong>Recordset</strong> -Objekte vom "table"-Typ in Microsoft Access-Datenbankmodul-Datenbanken kann die Quelle nur ein Tabellenname sein.  </p></td>
 </tr>
 <tr class="even">
-<td><p>Typ</p></td>
+<td><p><em>Type</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> -Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p>
-
-> [!NOTE]
-> Wenn Sie ein **Recordset** in einem Microsoft Access-Arbeitsbereich öffnen und keinen Typ angeben, erstellt **OpenRecordset**, wenn möglich, ein **Recordset** vom "table"-Typ. Wenn sie eine verknüpfte Tabelle oder Abfrage angeben, erstellt **OpenRecordset** ein **Recordset** vom "dynaset"-Typ.
-
-
+<td><p>Eine <strong><a href="recordsettypeenum-enumeration-dao.md">RecordsetTypeEnum</a></strong> -Konstante gibt den Typ des zu öffnenden <strong>Recordset</strong> an.</p><p><strong>Hinweis</strong>: Wenn Sie ein <strong>Recordset-Objekt</strong> in einer Microsoft Access-Arbeitsbereich öffnen, und Sie keinen Typ angeben, erstellt <strong>OpenRecordset</strong> eine vom Typ Tabelle <strong>Recordset</strong>, falls möglich. Wenn Sie einer verknüpften Tabelle oder Abfrage angeben, erstellt <strong>OpenRecordset</strong> ein vom Typ Dynaset- <strong>Recordset-Objekt</strong>.</p>
 </td>
 </tr>
 <tr class="odd">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine Kombination aus <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> -Konstanten, die Merkmale des neuen <strong>Recordset</strong> angeben.</p>
-
-> [!NOTE]
-> Die Konstanten **dbConsistent** und **dbInconsistent** sind gegenseitig exklusiv. Die Verwendung von beiden verursacht einen Fehler. Auch das Angeben eines LockEdit-Arguments, wenn Options die **dbReadOnly**-Konstante verwendet, verursacht einen Fehler.
-
-
+<td><p>Eine Kombination aus <strong><a href="recordsetoptionenum-enumeration-dao.md">RecordsetOptionEnum</a></strong> -Konstanten, die Merkmale des neuen <strong>Recordset</strong> angeben.</p><p><strong>Hinweis</strong>: die Konstanten <strong>DbConsistent</strong> und <strong>DbInconsistent</strong> schließen sich gegenseitig aus, und beide wird ein Fehler ausgegeben. Ein LockEdit-Argument angeben, wenn <strong>beide</strong> Optionen verwendet, tritt ein Fehler auf.</p>
 </td>
 </tr>
 <tr class="even">
-<td><p>LockEdit</p></td>
+<td><p><em>LockEdit</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Eine <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> -Konstante, die die Sperre für das <strong>Recordset</strong> bestimmt.</p>
-
-> [!NOTE]
-> Sie können **dbReadOnly** im Options-Argument oder im LockedEdit-Argument verwenden, aber nicht in beiden. Wenn Sie es für beide Argumente verwenden, tritt ein Laufzeitfehler auf.
-
-
+<td><p>Eine <strong><a href="locktypeenum-enumeration-dao.md">LockTypeEnum</a></strong> -Konstante, die die Sperre für das <strong>Recordset</strong> bestimmt.</p><p><strong>Hinweis</strong>: <strong>DbReadOnly</strong> Options-Argument oder das Argument LockedEdit, jedoch nicht beide können. Wenn Sie für beide Argumente verwenden, tritt ein Laufzeitfehler auf.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Recordset
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250152(v=office.15)
 ms:contentKeyID: 48548285
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: aa7042f34f4b125c9cd34d31baae538ea3637801
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7a6f7ac26c3089a973a68e07acbe0f6f3e4029df
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928537"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949439"
 ---
 # <a name="append-method-adox-columns"></a>Append-Methode (ADOX Columns)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,17 +25,11 @@ Fügt der [Columns](column-object-adox.md)-Auflistung ein neues [Column](columns
 
 ## <a name="parameters"></a>Parameter
 
-  - *Column*
-
-  - Das anzufügende **Column** -Objekt oder der Name der zu erstellenden und anzufügenden Spalte.
-
-  - *Type*
-
-  - Optional. Ein **Long** -Wert, der den Datentyp der Spalte angibt. Die [Type](https://msdn.microsoft.com/library/jj249169\(v=office.15\)) -Eigenschaft ein **Column** -Objekt entspricht der *Type* -Parameter.
-
-  - *DefinedSize*
-
-  - Optional. Ein **Long** -Wert, der die Größe einer Spalte angibt. Der Parameter *DefinedSize* entspricht der [DefinedSize](definedsize-property-adox.md) -Eigenschaft eines **Column** -Objekts.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Column* |Das anzufügende **Column** -Objekt oder der Name der zu erstellenden und anzufügenden Spalte.|
+|*Type* |Optional. Ein **Long** -Wert, der den Datentyp der Spalte angibt. Die [Type](https://msdn.microsoft.com/library/jj249169\(v=office.15\)) -Eigenschaft ein **Column** -Objekt entspricht der *Type* -Parameter.|
+|*DefinedSize* |Optional. Ein **Long** -Wert, der die Größe einer Spalte angibt. Der Parameter *DefinedSize* entspricht der [DefinedSize](definedsize-property-adox.md) -Eigenschaft eines **Column** -Objekts.|
 
 
 > [!NOTE]

@@ -1,24 +1,22 @@
 ---
 title: Open-Methode (ADO-Verbindung)
-TOCTitle: Open Method (ADO Connection)
+TOCTitle: Open method (ADO Connection)
 ms:assetid: 1adaa17d-dfe1-22e0-3415-720516d138f8
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248951(v=office.15)
 ms:contentKeyID: 48543525
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3bd698f7ea6c05d81e07969ae8031049804b7706
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 66a62128a8ad8828c501cdaf899448edd9f1d37f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25889469"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949873"
 ---
 # <a name="open-method-ado-connection"></a>Open-Methode (ADO-Verbindung)
 
-
 **Betrifft**: Access 2013, Office 2013
  
-
 Eine Verbindung mit einer Datenquelle wird geöffnet.
 
 ## <a name="syntax"></a>Syntax
@@ -27,21 +25,12 @@ Eine Verbindung mit einer Datenquelle wird geöffnet.
 
 ## <a name="parameters"></a>Parameter
 
-  - *ConnectionString*
-
-  - Optional. Ein **String** -Wert, der Verbindungsinformationen enthält. Details zu den gültigen Einstellungen finden Sie unter der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft.
-
-  - *UserID*
-
-  - Optional. Ein **String** -Wert, der einen Benutzernamen enthält, der beim Herstellen der Verbindung verwendet werden soll.
-
-  - *Password*
-
-  - Optional. Ein **String** -Wert, der ein Kennwort enthält, das beim Herstellen der Verbindung verwendet werden soll.
-
-  - *Options*
-
-  - Optional. Ein [ConnectOptionEnum](connectoptionenum.md)-Wert, durch den festgelegt wird, dass diese Methode nach (synchron) oder vor (asynchron) dem Herstellen der Verbindung zurückgegeben wird.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*ConnectionString* |Optional. Ein **String** -Wert, der Verbindungsinformationen enthält. Details zu den gültigen Einstellungen finden Sie unter der [ConnectionString](connectionstring-property-ado.md)-Eigenschaft.|
+|*UserID* |Optional. Ein **String** -Wert, der einen Benutzernamen enthält, der beim Herstellen der Verbindung verwendet werden soll.|
+|*Password* |Optional. Ein **String** -Wert, der ein Kennwort enthält, das beim Herstellen der Verbindung verwendet werden soll.|
+|*Options* |Optional. Ein [ConnectOptionEnum](connectoptionenum.md)-Wert, durch den festgelegt wird, dass diese Methode nach (synchron) oder vor (asynchron) dem Herstellen der Verbindung zurückgegeben wird.|
 
 ## <a name="remarks"></a>Hinweise
 
@@ -54,7 +43,6 @@ Wenn Sie Benutzer- und Kennwortinformationen sowohl im *ConnectionString*-Argume
 Wenn Sie die Operationen über eine offene **Verbindung** abgeschlossen haben, verwenden Sie die [Close](close-method-ado.md)-Methode, um zugeordnete Systemressourcen freizugeben. Durch das Schließen eines Objekts wird dieses nicht aus dem Speicher entfernt. Sie können seine Eigenschafteneinstellungen ändern und es später mit der **Open**-Methode erneut öffnen. Legen Sie die Objektvariable auf *Nothing* fest, um ein Objekt vollständig aus dem Speicher zu entfernen.
 
 **Remote Data Service-Verwendung** Wenn für ein clientseitiges **Connection** -Objekt verwendet, herstellen nicht die **Open** -Methode tatsächlich eine Verbindung mit dem Server, bis ein [Recordset-Objekt](recordset-object-ado.md) für das **Connection** -Objekt geöffnet wird.
-
 
 > [!NOTE]
 > [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).

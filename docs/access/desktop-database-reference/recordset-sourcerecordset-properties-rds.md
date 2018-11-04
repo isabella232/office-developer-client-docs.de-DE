@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249345(v=office.15)
 ms:contentKeyID: 48545160
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f842ad1498e0f6752299cd3d16d8c558042a850e
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 21176e050c77b0f14fcb03b054e8a1ab692df7d5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945782"
+ms.locfileid: "25949257"
 ---
 # <a name="recordset-sourcerecordset-properties-rds"></a>Recordset- und SourceRecordset-Eigenschaft (RDS)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,13 +27,10 @@ Gibt das **Recordset** -Objekt an, das von einem benutzerdefinierten Geschäftso
 
 ## <a name="parameters"></a>Parameter
 
-- *DataControl*
-
-  - Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.
-
-- *Recordset*
-
-  - Eine Objektvariable, die ein **Recordset** -Objekt darstellt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
+|*Recordset* |Eine Objektvariable, die ein **Recordset** -Objekt darstellt.|
 
 ## <a name="remarks"></a>Hinweise
 

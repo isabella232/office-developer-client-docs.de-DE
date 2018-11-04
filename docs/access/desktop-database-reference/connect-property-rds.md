@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248890(v=office.15)
 ms:contentKeyID: 48543324
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ebd9eb25e2e0e6b9b2233ff0d9faf8c3e369f0f9
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2b0d0969d9cbcf972a1b57faf27bbea1dfd960d5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925261"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949418"
 ---
 # <a name="connect-property-rds"></a>Connect-Eigenschaft (RDS)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,14 +29,8 @@ Laufzeit: DataControl.Connect = "ConnectionString"
 
 ## <a name="parameters"></a>Parameter
 
-- *ConnectionString*
-
-  - Eine gültige Verbindungszeichenfolge. Allgemeinere Informationen zu Verbindungszeichenfolgen finden Sie im Abschnitt zur [ConnectionString](connectionstring-property-ado.md)-Eigenschaft oder in der Dokumentation Ihres Anbieters.
-    
-    > [!NOTE]
-    > [!HINWEIS] Wenn Sie MS Remote als Anbieter für **RDS.DataControl** angeben, würde ein Szenario mit vier Ebenen erstellt. Szenarien mit mehr als drei Ebenen wurden nicht getestet und sollten nicht erforderlich sein.
-
-- *DataControl*
-
-  - Eine Objektvariable, die ein **RDS.DataControl**-Objekt darstellt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*ConnectionString* |Eine gültige Verbindungszeichenfolge. Allgemeinere Informationen zu Verbindungszeichenfolgen finden Sie im Abschnitt zur [ConnectionString](connectionstring-property-ado.md)-Eigenschaft oder in der Dokumentation Ihres Anbieters.<br/><br/>**Hinweis**: Angeben von MS Remote als Anbieter für die **RDS. DataControl** würde ein Szenario mit vier Ebenen erstellen. Szenarien mit mehr als drei Ebenen wurden nicht getestet und sollten nicht erforderlich sein.|
+|*DataControl* |Eine Objektvariable, die ein **RDS.DataControl**-Objekt darstellt.|
 

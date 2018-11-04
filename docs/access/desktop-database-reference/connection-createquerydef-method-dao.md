@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053067
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 191cd2b1bdd1f1c625743d5e50037bc944b4ef23
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a03f486d29aa70c7d4901372f81609e378ffae07
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928439"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950055"
 ---
 # <a name="connectioncreatequerydef-method-dao"></a>Connection.CreateQueryDef-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -49,13 +48,13 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), die die neue <strong>QueryDef</strong> eindeutig benennt.</p></td>
 </tr>
 <tr class="even">
-<td><p>SQLText</p></td>
+<td><p><em>SQLText</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), bei er es sich um eine SQL Anweisung handelt, die die <strong>QueryDef</strong> definiert. Wenn dieses Argument ausgelassen wird, können Sie die <strong>QueryDef</strong> durch Festlegen ihrer <strong><a href="querydef-sql-property-dao.md">SQL</a></strong>-Eigenschaft definieren, bevor oder nachdem Sie sie an eine Auflistung anfügen.</p></td>
@@ -64,7 +63,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 QueryDef-Objekt
 

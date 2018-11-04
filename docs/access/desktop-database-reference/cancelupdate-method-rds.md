@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249130(v=office.15)
 ms:contentKeyID: 48544188
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d6a6427574cd04d8196153618c5960cb38da2b04
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 794c77c0ab6ab2abf22b04def8763fd1e0c51913
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924736"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949614"
 ---
 # <a name="cancelupdate-method-rds"></a>CancelUpdate-Methode (RDS)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Verwirft alle an der aktuellen oder neuen Zeile eines [Recordset](recordset-object-ado.md)-Objekts vorgenommenen Änderungen.
 
@@ -28,9 +25,9 @@ Verwirft alle an der aktuellen oder neuen Zeile eines [Recordset](recordset-obje
 
 ## <a name="parameters"></a>Parameter
 
-  - *DataControl*
-
-  - Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
 
 ## <a name="remarks"></a>Hinweise
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845171(v=office.15)
 ms:contentKeyID: 48543197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 564f1852fac571bdf1459c98620f31e2419b2cf3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: de57bfff5b47e3c4202a17910db2413686f73d9b
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925709"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950265"
 ---
 # <a name="dbenginecommittrans-method-dao"></a>DBEngine.CommitTrans-Methode (DAO)
 
@@ -26,7 +26,7 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Option</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>In einem Microsoft Access-Arbeitsbereich können Sie die <strong>dbForceOSFlush</strong>-Konstante in <strong>CommitTrans</strong> einfügen. Dadurch wird das Datenbankmodul gezwungen, alle Aktualisierungen sofort auf den Datenträger zu leeren, statt sie temporär zu speichern. Ohne diese Option besteht die Gefahr, dass ein Benutzer direkt nach dem Aufrufen von <strong>CommitTrans</strong> durch das Anwendungsprogramm die Kontrolle übernimmt und den Computer ausschaltet, ohne dass die Daten auf einen Datenträger geschrieben wurden. Diese Option kann zwar die Anwendungsleistung beeinträchtigen, ist aber dennoch nützlich in Situationen, in denen der Computer heruntergefahren werden könnte, bevor zwischengespeicherte Aktualisierungen auf einem Datenträger gespeichert wurden.</p></td>

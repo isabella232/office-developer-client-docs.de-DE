@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052968
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 59e5cc34eb6325b6151ab053f9c870a999bd94aa
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8a5e220903a7404689b7fb4088cf10164333d67e
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927893"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950042"
 ---
 # <a name="databasecreatetabledef-method-dao"></a>Database.CreateTableDef-Methode (DAO)
 
@@ -29,7 +29,7 @@ Erstellt ein neues **[TableDef](tabledef-object-dao.md)** -Objekt (nur Microsoft
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -48,25 +48,25 @@ Erstellt ein neues **[TableDef](tabledef-object-dao.md)** -Objekt (nur Microsoft
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Paramter (Untertyp <strong>String</strong>), der das neue <strong>TableDef</strong>-Objekt eindeutig benennt. Unter der <strong><a href="tabledef-name-property-dao.md">Name</a></strong>-Eigenschaft finden Sie Einzelheiten zu gültigen <strong>TableDef</strong>-Namen.</p></td>
 </tr>
 <tr class="even">
-<td><p>Attribute</p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante oder Kombination aus Konstanten, mit der mindestens ein Merkmal des neuen <strong>TableDef</strong> -Objekts angegeben wird. Weitere Informationen finden Sie im Thema zur <strong><a href="tabledef-attributes-property-dao.md">Attributes</a></strong> -Eigenschaft.  </p></td>
 </tr>
 <tr class="odd">
-<td><p>SourceTableName</p></td>
+<td><p><em>SourceTableName</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>), der den Namen einer Tabelle in einer externen Datenbank enthält, bei der es sich um die ursprüngliche Quelle der Daten handelt. Die source-Zeichenfolge wird zur <strong><a href="tabledef-sourcetablename-property-dao.md">SourceTableName</a></strong>-Eigenschafteneinstellung des neuen <strong>TableDef</strong>-Objekts.</p></td>
 </tr>
 <tr class="even">
-<td><p>Verbinden</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Parameter (Untertyp <strong>String</strong>) mit Informationen über die Quelle einer geöffneten oder verknüpften Datenbank oder einer Datenbank, die in einer Pass-Throug-Abfrage verwendet wird. Weitere Informationen zu gültigen Verbindungszeichenfolgen finden Sie unter der <strong><a href="tabledef-connect-property-dao.md">Connect</a></strong>-Eigenschaft.</p></td>
@@ -75,7 +75,7 @@ Erstellt ein neues **[TableDef](tabledef-object-dao.md)** -Objekt (nur Microsoft
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 TableDef
 

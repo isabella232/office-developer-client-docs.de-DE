@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248940(v=office.15)
 ms:contentKeyID: 48543497
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 42a5bf11e2ed287ac683f634d3953739b2501f60
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0b4d68ac2dfca344cb98885846f2cd09fafd0ea0
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922804"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950237"
 ---
 # <a name="createrecordset-method-rds"></a>CreateRecordset-Methode (RDS)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Erstellt ein leeres, getrenntes [Recordset](recordset-object-ado.md)-Objekt.
 
@@ -27,50 +25,20 @@ Erstellt ein leeres, getrenntes [Recordset](recordset-object-ado.md)-Objekt.
 
 ## <a name="parameters"></a>Parameter
 
-  - *Object*
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Object* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)- oder [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
+|*ColumnsInfos* |Ein **Variant** -Array mit Attributen, das alle Spalten im erstellten **Recordset** -Objekt definiert. Jede Spaltendefinition enthält ein Array mit vier erforderlichen Attributen und einem optionalen Attribut. Der Satz der Spaltenarrays wird anschließend in einem Array gruppiert, das das **Recordset** -Objekt angibt. Eine Liste der Attribute finden Sie in der folgenden Tabelle.|
 
-  - Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)- oder [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.
+### <a name="variant-array-attributes"></a>Variant-Array-Attribute
 
-  - *ColumnsInfos*
-
-  - Ein **Variant** -Array mit Attributen, das alle Spalten im erstellten **Recordset** -Objekt definiert. Jede Spaltendefinition enthält ein Array mit vier erforderlichen Attributen und einem optionalen Attribut. Der Satz der Spaltenarrays wird anschließend in einem Array gruppiert, das das **Recordset** -Objekt angibt.
-    
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>Attribut</p></th>
-    <th><p>Beschreibung</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Name</p></td>
-    <td><p>Bezeichnung des Spaltenkopfs</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Type</p></td>
-    <td><p>Ganzzahl des Datentyps.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Size</p></td>
-    <td><p>Ganzzahl der Breite in Zeichen, unabhängig vom Datentyp.</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Nullability</p></td>
-    <td><p>Boolescher Wert.</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Skalieren<br />
-(Optional)</p></td>
-    <td><p>Dieses optionale Attribut definiert die Dezimalstellen von numerischen Feldern. Ist dieser Wert nicht angegeben, werden numerische Werte auf drei Dezimalstellen beschränkt. Dies wirkt sich nicht auf die Genauigkeit aus, die Anzahl der Ziffern nach dem Dezimaltrennzeichen ist jedoch auf drei Stellen beschränkt.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
+|Attribut|Beschreibung|
+|:--------|:----------|
+|Name |Bezeichnung des Spaltenkopfs|
+|Type |Ganzzahl des Datentyps.|
+|Size |Ganzzahl der Breite in Zeichen, unabhängig vom Datentyp.|
+|Nullability |Boolescher Wert.|
+|Skalierung (optional) |Dieses optionale Attribut definiert die Dezimalstellen von numerischen Feldern. Ist dieser Wert nicht angegeben, werden numerische Werte auf drei Dezimalstellen beschränkt. Dies wirkt sich nicht auf die Genauigkeit aus, die Anzahl der Ziffern nach dem Dezimaltrennzeichen ist jedoch auf drei Stellen beschränkt.|
 
 ## <a name="remarks"></a>Hinweise
 

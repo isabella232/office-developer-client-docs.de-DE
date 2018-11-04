@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249690(v=office.15)
 ms:contentKeyID: 48546519
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7eef5fc93f9cce68e6342b62c1ab07ee6f65587f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: e7e6d88b207fecc93b9a9bafa2d6b504456a3a3e
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946020"
+ms.locfileid: "25949271"
 ---
 # <a name="changepassword-method-adox"></a>ChangePassword-Methode (ADOX)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Ändert das Kennwort für ein Benutzerkonto.
 
@@ -26,15 +23,12 @@ ms.locfileid: "25946020"
 
 *Benutzer*. ChangePassword*AltesKennwort*, *NewPassword*
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Parameter
 
-- *AltesKennwort*
-
-  - Ein **String**-Wert, der das aktuelle Kennwort des Benutzers angibt. Wenn der Benutzer aktuell über kein Kennwort verfügt, verwenden Sie für *OldPassword* eine leere Zeichenfolge ("").
-
-- *NewPassword*
-
-  - Ein **String** -Wert, der das neue Kennwort angibt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*AltesKennwort* |Ein **String**-Wert, der das aktuelle Kennwort des Benutzers angibt. Wenn der Benutzer aktuell über kein Kennwort verfügt, verwenden Sie für *OldPassword* eine leere Zeichenfolge ("").|
+|*NewPassword* |Ein **String** -Wert, der das neue Kennwort angibt.|
 
 ## <a name="remarks"></a>Hinweise
 

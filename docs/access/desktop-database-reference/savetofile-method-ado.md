@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250104(v=office.15)
 ms:contentKeyID: 48548097
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 535e743a9de708b264c225f4e86390a11e1d20e5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: df7545b9abd29571788a0bbfc69323ec31e75f65
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925027"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949810"
 ---
 # <a name="savetofile-method-ado"></a>SaveToFile-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Speichert den binären Inhalt eines [Stream](stream-object-ado.md)-Objekts in eine Datei.
 
@@ -28,19 +25,13 @@ Speichert den binären Inhalt eines [Stream](stream-object-ado.md)-Objekts in ei
 
 ## <a name="parameters"></a>Parameter
 
-  - *FileName*
-
-  - Ein **String** -Wert, der den vollqualifiziertern Namen der Datei enthält, in die der Inhalt des **Stream** -Objekts gespeichert wird. Sie können einen gültigen lokalen Speicherort oder einen Speicherort, auf den Sie über einen UNC-Wert zugreifen können, angeben.
-
-  - *SaveOptions*
-
-  - Ein [SaveOptionsEnum](saveoptionsenum.md)-Wert, der angibt, ob eine neue Datei mithilfe von **SaveToFile** erstellt werden soll, falls diese nicht bereits vorhanden ist. Der Standardwert lautet **adSaveCreateNotExists**. Mit diesen Optionen können Sie angeben, dass ein Fehler auftritt, falls die angegebene Datei nicht vorhanden ist. Sie können auch angeben, dass **SaveToFile** den aktuellen Inhalt einer vorhandenen Datei überschreibt.
-
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*FileName* |Ein **String** -Wert, der den vollqualifiziertern Namen der Datei enthält, in die der Inhalt des **Stream** -Objekts gespeichert wird. Sie können einen gültigen lokalen Speicherort oder einen Speicherort, auf den Sie über einen UNC-Wert zugreifen können, angeben.|
+|*SaveOptions* |Ein [SaveOptionsEnum](saveoptionsenum.md)-Wert, der angibt, ob eine neue Datei mithilfe von **SaveToFile** erstellt werden soll, falls diese nicht bereits vorhanden ist. Der Standardwert lautet **adSaveCreateNotExists**. Mit diesen Optionen können Sie angeben, dass ein Fehler auftritt, falls die angegebene Datei nicht vorhanden ist. Sie können auch angeben, dass **SaveToFile** den aktuellen Inhalt einer vorhandenen Datei überschreibt.|
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie eine vorhandene Datei überschreiben (wenn <STRONG>adSaveCreateOverwrite</STRONG> festgelegt ist), ignoriert <STRONG>SaveToFile</STRONG> alle Bytes aus der vorhandenen ursprünglichen Datei, die dem neuen <A href="eos-property-ado.md">EOS</A> folgen.</P>
-
-
+> [!HINWEIS] Wenn Sie eine vorhandene Datei überschreiben (wenn **adSaveCreateOverwrite** festgelegt ist), ignoriert **SaveToFile** alle Bytes aus der vorhandenen ursprünglichen Datei, die dem neuen [EOS](eos-property-ado.md) folgen.
 
 ## <a name="remarks"></a>Hinweise
 

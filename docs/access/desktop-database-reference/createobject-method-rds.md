@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248905(v=office.15)
 ms:contentKeyID: 48543360
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d08b596afb24fff430c6c662a557da1880addefa
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f622ee94fa6e37c2f618b038aea746791e58e9b8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921180"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950082"
 ---
 # <a name="createobject-method-rds"></a>CreateObject-Methode (RDS)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Erstellt den Proxy für das Zielgeschäftsobjekt und gibt einen Zeiger auf das Objekt zurück. Der Proxy verpackt Daten und leitet diese Daten an den serverseitigen Stub für die Kommunikation mit dem Geschäftsobjekt weiter, damit Anfragen und Daten über das Internet gesendet werden. Bei In-Process-Komponentenobjekten werden keine Proxies verwendet, sondern wird lediglich ein Zeiger auf das Objekt bereitgestellt.
 
@@ -59,21 +57,12 @@ Von Remote Data Service werden die folgenden Protokolle unterstützt: HTTP, HTTP
 
 ## <a name="parameters"></a>Parameter
 
-  - *Object*
-
-  - Eine Objektvariable, die zu einem Objekt ausgewertet wird, das den in *ProgID* angegebenen Typ hat.
-
-  - *DataSpace*
-
-  - Eine Objektvariable, die ein [RDS.DataSpace](dataspace-object-rds.md)-Objekt darstellt, das zum Erstellen einer Instanz des neuen Objekts verwendet wird.
-
-  - *ProgID*
-
-  - Ein **String** -Wert mit dem programmgesteuerten Bezeichner, der ein serverseitiges Geschäftsobjekt angibt, das die Geschäftregeln Ihrer Anwendung implementiert.
-
-  - *Awebsrvr* oder *computername*
-
-  - Ein **String** -Wert, der eine URL, die den Webserver der Internetinformationsdienste (Internet Information Services, IIS) identifiziert, auf denen eine Instanz des Objekts Business Server darstellt, wird erstellt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Objekt* |Eine Objektvariable, die zu einem Objekt ausgewertet wird, das den in *ProgID* angegebenen Typ hat.|
+|*DataSpace* |Eine Objektvariable, die ein [RDS.DataSpace](dataspace-object-rds.md)-Objekt darstellt, das zum Erstellen einer Instanz des neuen Objekts verwendet wird.|
+|*ProgID* |Ein **String** -Wert mit dem programmgesteuerten Bezeichner, der ein serverseitiges Geschäftsobjekt angibt, das die Geschäftregeln Ihrer Anwendung implementiert.|
+|*Awebsrvr* oder *computername* |Ein **String** -Wert, der eine URL, die den Webserver der Internetinformationsdienste (Internet Information Services, IIS) identifiziert, auf denen eine Instanz des Objekts Business Server darstellt, wird erstellt.|
 
 ## <a name="remarks"></a>Hinweise
 

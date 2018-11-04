@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248835(v=office.15)
 ms:contentKeyID: 48543151
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4bccd0eb536ec67937e8c3659b2ac62ef49a0bb3
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 61d31ba6044448d2b2534d6affa6157765e9cbc7
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924064"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949635"
 ---
 # <a name="sortcolumn-property-rds"></a>SortColumn-Eigenschaft (RDS)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,13 +25,10 @@ Gibt die Spalte an, nach der die Datensätze sortiert werden sollen.
 
 ## <a name="parameters"></a>Parameter
 
-  - *DataControl*
-
-  - Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.
-
-  - *String*
-
-  - Ein **String** -Wert, der den Namen oder Alias der Spalte angibt, nach der die Datensätze sortiert werden sollen.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
+|*String* |Ein **String** -Wert, der den Namen oder Alias der Spalte angibt, nach der die Datensätze sortiert werden sollen.|
 
 ## <a name="remarks"></a>Hinweise
 

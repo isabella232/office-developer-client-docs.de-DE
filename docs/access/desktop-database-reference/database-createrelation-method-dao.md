@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052969
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 45d2835f4745a26d60c57c950ca1a48a9b47cd77
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2a1ad7798fc6236f95d31c18cd864fe64e7a3fd8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927005"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949928"
 ---
 # <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation-Methode (DAO)
 
@@ -29,7 +29,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -48,25 +48,25 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der das neue <strong>Relation</strong>-Objekt eindeutig benennt. Weitere Informationen zu gültigen <strong>Relation</strong>-Namen finden Sie in dem Thema zur <strong><a href="connection-name-property-dao.md">Name</a></strong>-Eigenschaft.</p></td>
 </tr>
 <tr class="even">
-<td><p>Tabelle</p></td>
+<td><p><em>Table</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der die primäre Tabelle in der Beziehung eindeutig benennt. Falls die Tabelle vor dem Anfügen des <strong>Relation</strong>-Objekts noch nicht vorhanden ist, tritt ein Laufzeitfehler auf.</p></td>
 </tr>
 <tr class="odd">
-<td><p>ForeignTable</p></td>
+<td><p><em>ForeignTable</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der die Fremdtabelle in der Beziehung eindeutig benennt. Falls die Tabelle vor dem Anfügen des <strong>Relation</strong>-Objekts noch nicht vorhanden ist, tritt ein Laufzeitfehler auf.</p></td>
 </tr>
 <tr class="even">
-<td><p>Attribute</p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante bzw. Kombination aus Konstanten, die Informationen über den Beziehungstyp enthält. Weitere Informationen finden Sie in dem Thema zur <strong><a href="field-attributes-property-dao.md">Attributes</a></strong>-Eigenschaft.</p></td>
@@ -75,7 +75,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Relation
 

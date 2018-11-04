@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248963(v=office.15)
 ms:contentKeyID: 48543574
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5c0c4668141c0da6e5faddee009d2548f1ee2c53
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6aecdbee544d3b30a6f6386c98d3083bb1167539
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926997"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949803"
 ---
 # <a name="writetext-method-ado"></a>WriteText-Methode (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,13 +25,10 @@ Schreibt eine angegebene Textzeichenfolge in ein [Stream](stream-object-ado.md)-
 
 ## <a name="parameters"></a>Parameter
 
-  - *Data*
-
-  - Ein Wert vom Datentyp **String**, der die Textzeichenfolge enthält, die geschrieben werden soll.
-
-  - *Options*
-
-  - Optional. Ein [StreamWriteEnum](streamwriteenum.md)-Wert, der angibt, ob am Ende der angegebenen Zeichenfolge ein Zeilentrennzeichen geschrieben werden muss.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Data* |Ein Wert vom Datentyp **String**, der die Textzeichenfolge enthält, die geschrieben werden soll.|
+|*Options* |Optional. Ein [StreamWriteEnum](streamwriteenum.md)-Wert, der angibt, ob am Ende der angegebenen Zeichenfolge ein Zeilentrennzeichen geschrieben werden muss.|
 
 ## <a name="remarks"></a>Hinweise
 
@@ -42,8 +38,7 @@ Als aktuelle [Position](position-property-ado.md) wird der Buchstabe festgelegt,
 
 Wenn Sie nach der aktuellen [EOS](eos-property-ado.md)-Position abschneiden, wird [Size](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) für **Stream** um neue Buchstaben erhöht, und **EOS** wird auf das neue letzte Byte in **Stream** verschoben.
 
-
 > [!NOTE]
-> <P>Die <STRONG>WriteText</STRONG>-Methode wird für Textdatenströme verwendet (<A href="type-property-ado-stream.md">Type</A> ist <STRONG>adTypeText</STRONG>). Für binäre Datenströme (<STRONG>Type</STRONG> ist <STRONG>adTypeBinary</STRONG>) verwenden Sie <A href="write-method-ado.md">Write</A>.</P>
+> Die **WriteText**-Methode wird für Textdatenströme verwendet ([Type](type-property-ado-stream.md) ist **adTypeText**). Für binäre Datenströme (**Type** ist **adTypeBinary**) verwenden Sie [Write](write-method-ado.md).
 
 

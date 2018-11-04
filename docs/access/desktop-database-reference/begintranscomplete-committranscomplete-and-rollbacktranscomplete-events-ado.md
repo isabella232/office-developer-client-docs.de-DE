@@ -6,26 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249713(v=office.15)
 ms:contentKeyID: 48546615
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c6a49b08c1b4f7879d50f9dd1d29cfcf89ded50c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 86bb76b4feacc1b4a06d6cbbb8a436f5f9c55bd5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928079"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949492"
 ---
 # <a name="begintranscomplete-committranscomplete-and-rollbacktranscomplete-events-ado"></a>BeginTransComplete-, CommitTransComplete- und RollbackTransComplete-Ereignisse (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Diese Ereignisse werden aufgerufen, nachdem die zugeordnete Operation für das [Connection](connection-object-ado.md)-Objekt die Ausführung beendet hat.
 
-  - **BeginTransComplete** wird nach der [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Operation aufgerufen.
+- **BeginTransComplete** wird nach der [BeginTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Operation aufgerufen.
 
-  - **CommitTransComplete** wird nach der [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Operation aufgerufen.
+- **CommitTransComplete** wird nach der [CommitTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Operation aufgerufen.
 
-  - **RollbackTransComplete** wird nach der [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Operation aufgerufen.
+- **RollbackTransComplete** wird nach der [RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)-Operation aufgerufen.
 
 ## <a name="syntax"></a>Syntax
 
@@ -37,23 +35,12 @@ RollbackTransComplete*pError*, *AdStatus*, *pConnection*
 
 ## <a name="parameters"></a>Parameter
 
-  - *TransactionLevel*
-
-  - Ein **Long** -Wert, der die neue Transaktionsebene von **BeginTrans** enthält, das zu diesem Ereignis führte.
-
-  - *pError*
-
-  - Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der auftritt, wenn der Wert von EventStatusEnum **adStatusErrorsOccurred** lautet; andernfalls wird er nicht festgelegt.
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    Diese Ereignisse können nachfolgende Benachrichtigungen verhindern, indem dieser Parameter auf **AdStatusUnwantedEvent** festgelegt wird, bevor das Ereignis zurückgegeben wird.
-
-  - *pConnection*
-
-  - Das **Connection** -Objekt, für das dieses Ereignis auftrat.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*TransactionLevel* |Ein **Long** -Wert, der die neue Transaktionsebene von **BeginTrans** enthält, das zu diesem Ereignis führte.|
+|*pError* |Ein [Error](error-object-ado.md)-Objekt. Es beschreibt den Fehler, der aufgetreten sind, wenn der Wert von EventStatusEnum **AdStatusErrorsOccurred**ist. Andernfalls wird es nicht festgelegt.|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md). Diese Ereignisse können nachfolgende Benachrichtigungen verhindern, indem dieser Parameter auf **AdStatusUnwantedEvent** festgelegt wird, bevor das Ereignis zurückgegeben wird.|
+|*pConnection* |Das **Connection** -Objekt, für das dieses Ereignis auftrat.|
 
 ## <a name="remarks"></a>Hinweise
 

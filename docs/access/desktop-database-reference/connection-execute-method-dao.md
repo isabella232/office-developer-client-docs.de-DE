@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835040(v=office.15)
 ms:contentKeyID: 48547978
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a06837ec98d96cc4c6ae75a19dd953ca4dc59dc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d95b33531f32ebc3524737c3322c92838518b97f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920081"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949537"
 ---
 # <a name="connectionexecute-method-dao"></a>Connection.Execute-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 
 *Ausdruck* Eine Variable, die ein **Connection** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -45,13 +44,13 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Abfrage</p></td>
+<td><p><em>Query</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Ein <strong>String</strong>-Wert, der eine SQL-Anweisung oder den <strong>Name</strong>-Eigenschaftswert eines <strong>QueryDef</strong>-Objekts darstellt.</p></td>
 </tr>
 <tr class="even">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante oder eine Kombination aus Konstanten, durch die die Datenintegritätsmerkmale der Abfrage festgelegt sind, wie unter Einstellungen festgelegt.</p></td>
@@ -62,7 +61,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 
 ## <a name="remarks"></a>Bemerkungen
 
-Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)**-Konstanten für Optionen verwenden.
+Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** -Konstanten für Optionen verwenden.
 
 <table>
 <colgroup>

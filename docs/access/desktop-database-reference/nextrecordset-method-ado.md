@@ -6,19 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250051(v=office.15)
 ms:contentKeyID: 48547887
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: da7e23974b9541a29aa78ba9d7de22e76102971b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6ca95e311f6040d5834fa24ce24d392375953990
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929552"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949936"
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
  
-
 Löscht das aktuelle [Recordset](recordset-object-ado.md)-Objekt, und gibt das nächste **Recordset** -Objekt zurück, indem sie durch eine Reihe von Befehlen wechselt.
 
 ## <a name="syntax"></a>Syntax
@@ -31,15 +29,12 @@ Gibt ein **Recordset**-Objekt zurück. Im Syntaxmodell können Sie für *records
 
 ## <a name="parameters"></a>Parameter
 
-- *RecordsAffected*
-
-- Optional. Eine **Long** -Variable, an die der Anbieter die Anzahl der Datensätze zurückgibt, auf die sich der aktuelle Vorgang auswirkt.
-
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*RecordsAffected* |Optional. Eine **Long** -Variable, an die der Anbieter die Anzahl der Datensätze zurückgibt, auf die sich der aktuelle Vorgang auswirkt.|
 
 > [!NOTE]
-> <P>Dieser Parameter gibt nur die Anzahl der Datensätze an, auf die sich ein Vorgang auswirkt. Er gibt nicht die Anzahl der Datensätze aus einer SELECT- Anweisung zurück, die zum Generieren des Recordset-Objekts verwendet wurde.</P>
-
-
+> Dieser Parameter gibt nur die Anzahl der Datensätze an, auf die sich ein Vorgang auswirkt. Er gibt nicht die Anzahl der Datensätze aus einer SELECT- Anweisung zurück, die zum Generieren des Recordset-Objekts verwendet wurde.
 
 ## <a name="remarks"></a>Hinweise
 

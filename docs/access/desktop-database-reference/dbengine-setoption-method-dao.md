@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1088781
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5e0282d95a77f302103414df1ee904d300a0330e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2d6d40d88051e708944dadfabb984d44cc8c5cbc
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922951"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949887"
 ---
 # <a name="dbenginesetoption-method-dao"></a>DBEngine.SetOption-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Win
 
 *Ausdruck* Ein Ausdruck, der ein **DBEngine** -Objekt zurückgibt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -49,13 +48,13 @@ Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Win
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Option</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Eine Konstante, wie unter "Hinweise" beschrieben.</p></td>
 </tr>
 <tr class="even">
-<td><p>Wert</p></td>
+<td><p><em>Wert</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Der Wert, den Sie Option festlegen möchten.</p></td>

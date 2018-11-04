@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249591(v=office.15)
 ms:contentKeyID: 48546119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a753ea57fba54f2e3b1a08c93f1309259f712446
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 21798f476e0d67b7b23ef38c6e2b268893173ac6
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947707"
+ms.locfileid: "25950062"
 ---
 # <a name="open-method-ado-recordset"></a>Open-Methode (ADO-Recordset)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Öffnet einen Cursor.
 
@@ -27,31 +25,16 @@ ms.locfileid: "25947707"
 
 ## <a name="parameters"></a>Parameter
 
-  - *Source*
-
-  - Optional. Ein **Variant** -Wert, der ausgewertet ein gültiges [Command](command-object-ado.md)-Objekt, eine SQL-Anweisung, einen Tabellennamen, den Aufruf einer gespeicherten Prozedur, eine URL oder den Namen einer Datei oder eines [Stream](stream-object-ado.md)-Objekts mit einem dauerhaft gespeicherten [Recordset](recordset-object-ado.md)-Objekt ergibt.
-
-  - *ActiveConnection*
-
-  - Optional. Ein **Variant** -Wert, der den Namen einer gültigen [Connection](connection-object-ado.md)-Objektvariablen ergibt, oder ein **String** -Wert, der [ConnectionString](connectionstring-property-ado.md)-Parameter enthält.
-
-  - *CursorType*
-
-  - Optional. Ein [CursorTypeEnum](cursortypeenum.md)-Wert, der den Cursortyp bestimmt, den der Anbieter zum Öffnen des **Recordset** -Objekts verwenden soll. Der Standardwert ist **adOpenForwardOnly**.
-
-  - *LockType*
-
-  - Optional. Ein [LockTypeEnum](locktypeenum.md)-Wert, der den Sperrtyp (vollständige Parallelität) bestimmt, den der Anbieter zum Öffnen des **Recordset** -Objekts verwenden sollte. Der Standardwert lautet **adLockReadOnly**.
-
-  - *Options*
-
-  - Optional. Ein **Long** -Wert, der angibt, wie der Anbieter das Argument *Source* auswerten soll, falls es etwas anderes als ein **Command** -Objekt darstellt, oder das **Recordset-Objekt** aus einer Datei, in der es vorher gespeichert wurde, wiederhergestellt werden soll. Es kann sich um einen oder mehrere [CommandTypeEnum](commandtypeenum.md)-Werte oder [ExecuteOptionEnum](executeoptionenum.md)-Werte handeln, die mit einem bitweisen AND-Operator kombiniert werden können.
-
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Source* |Optional. Ein **Variant** -Wert, der ausgewertet ein gültiges [Command](command-object-ado.md)-Objekt, eine SQL-Anweisung, einen Tabellennamen, den Aufruf einer gespeicherten Prozedur, eine URL oder den Namen einer Datei oder eines [Stream](stream-object-ado.md)-Objekts mit einem dauerhaft gespeicherten [Recordset](recordset-object-ado.md)-Objekt ergibt.|
+|*ActiveConnection* |Optional. Ein **Variant** -Wert, der den Namen einer gültigen [Connection](connection-object-ado.md)-Objektvariablen ergibt, oder ein **String** -Wert, der [ConnectionString](connectionstring-property-ado.md)-Parameter enthält.|
+|*CursorType* |Optional. Ein [CursorTypeEnum](cursortypeenum.md)-Wert, der den Cursortyp bestimmt, den der Anbieter zum Öffnen des **Recordset** -Objekts verwenden soll. Der Standardwert ist **adOpenForwardOnly**.|
+|*LockType* |Optional. Ein [LockTypeEnum](locktypeenum.md)-Wert, der den Sperrtyp (vollständige Parallelität) bestimmt, den der Anbieter zum Öffnen des **Recordset** -Objekts verwenden sollte. Der Standardwert lautet **adLockReadOnly**.|
+|*Options* |Optional. Ein **Long** -Wert, der angibt, wie der Anbieter das Argument *Source* auswerten soll, falls es etwas anderes als ein **Command** -Objekt darstellt, oder das **Recordset-Objekt** aus einer Datei, in der es vorher gespeichert wurde, wiederhergestellt werden soll. Es kann sich um einen oder mehrere [CommandTypeEnum](commandtypeenum.md)-Werte oder [ExecuteOptionEnum](executeoptionenum.md)-Werte handeln, die mit einem bitweisen AND-Operator kombiniert werden können.|
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie ein <STRONG>Recordset</STRONG> -Objekt aus einem <STRONG>Stream</STRONG> -Objekt, das ein permanentes <STRONG>Recordset</STRONG> -Objekt enthält, mithilfe eines <STRONG>ExecuteOptionEnum</STRONG> -Werts <STRONG>adAsyncFetchNonBlocking</STRONG> öffnen, hat dies keine Auswikungen. Der Abruf ist synchron und blockierend.</P>
-
-
+> [!HINWEIS] Wenn Sie ein **Recordset** -Objekt aus einem **Stream** -Objekt, das ein permanentes **Recordset** -Objekt enthält, mithilfe eines **ExecuteOptionEnum** -Werts **adAsyncFetchNonBlocking** öffnen, hat dies keine Auswikungen. Der Abruf ist synchron und blockierend.
 
 Die **ExecuteOpenEnum** -Werte für **adExecuteNoRecords** oder **adExecuteStream** sollten nicht mit **Open** verwendet werden.
 
@@ -69,17 +52,14 @@ Das *ActiveConnection* -Argument entspricht der [ActiveConnection](activeconnect
 
 Bei anderen Argumenten, die den Eigenschaften eines **Recordset**-Objekts direkt entsprechen (*Source*, *CursorType* und *LockType*) gestaltet sich die Beziehung zwischen den Argumenten und den Eigenschaften folgendermaßen:
 
-  - Vor dem Öffnen des **Recordset** -Objekts ist die Eigenschaft schreibgeschützt.
+- Vor dem Öffnen des **Recordset** -Objekts ist die Eigenschaft schreibgeschützt.
 
-  - Wenn Sie beim Ausführen der **Open** -Methode nicht die entsprechenden Argumente übergeben, werden die Einstellungen der Eigenschaft verwendet. Falls Sie ein Argument übergeben, überschreibt es die entsprechende Einstellung der Eigenschaft, und diese wird auf den Wert des Arguments aktualisiert.
+- Wenn Sie beim Ausführen der **Open** -Methode nicht die entsprechenden Argumente übergeben, werden die Einstellungen der Eigenschaft verwendet. Falls Sie ein Argument übergeben, überschreibt es die entsprechende Einstellung der Eigenschaft, und diese wird auf den Wert des Arguments aktualisiert.
 
-  - Nach dem Öffnen des **Recordset** -Objekts sind diese Eigenschaften schreibgeschützt.
-
+- Nach dem Öffnen des **Recordset** -Objekts sind diese Eigenschaften schreibgeschützt.
 
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>ActiveConnection</STRONG> -Eigenschaft wird nur für <STRONG>Recordset</STRONG> -Objekte gelesen, deren <A href="source-property-ado-recordset.md">Source</A>-Eigenschaft auf ein gültiges <STRONG>Command</STRONG> -Objekt festgelegt ist. Dies gilt auch, wenn das <STRONG>Recordset</STRONG> -Objekt nicht geöffnet ist.</P>
-
-
+> [!HINWEIS] Die **ActiveConnection** -Eigenschaft wird nur für **Recordset** -Objekte gelesen, deren [Source](source-property-ado-recordset.md)-Eigenschaft auf ein gültiges **Command** -Objekt festgelegt ist. Dies gilt auch, wenn das **Recordset** -Objekt nicht geöffnet ist.
 
 Wenn Sie das Argument *Quelle* ein **Command** -Objekt übergeben und auch ein *ActiveConnection* -Argument übergeben, tritt ein Fehler auf. Die **ActiveConnection** -Eigenschaft des **Command** -Objekts muss bereits auf ein gültiges **Connection** -Objekt oder eine gültige Verbindungszeichenfolge festgelegt sein.
 
@@ -97,10 +77,8 @@ Bevor Sie die **ActiveConnection** -Eigenschaft festgelegt ist, rufen Sie **Open
 
 Wenn Sie die [CursorLocation](cursorlocation-property-ado.md) -Eigenschaft auf **AdUseClient**festgelegt haben, können Sie Zeilen in einem der folgenden beiden Methoden asynchron abrufen. Die empfohlene Methode ist für *Optionen* festzulegen, **AdAsyncFetch**. Alternativ können Sie die dynamische Eigenschaft "Asynchrone Rowset Verarbeitung" in der [Properties](properties-collection-ado.md) -Auflistung, aber verwandten abgerufenen Ereignisse können deshalb verloren gehen, wenn Sie nicht den **Options** -Parameter auf **AdAsyncFetch**festlegen.
 
-
 > [!NOTE]
-> <P>Abrufen der Hintergrund im MS Remote Provider wird nur über die <STRONG>Open</STRONG> -Methode <EM>Options</EM> -Parameter unterstützt.</P>
-
+> Abrufen der Hintergrund im MS Remote Provider wird nur über die **Open** -Methode *Options* -Parameter unterstützt.
 
 > [!NOTE]
 > [!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen. Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).

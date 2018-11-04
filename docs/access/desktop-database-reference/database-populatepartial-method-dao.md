@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1101186
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2d90d82db89060894eda1e58442cb6f9d52f124e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: fc089ded79e9a25da566f44b668bf788d97fc4be
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919492"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949978"
 ---
 # <a name="databasepopulatepartial-method-dao"></a>Database.PopulatePartial-Methode (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Repliktat, löscht alle Datensätze im Teilreplikat, und füllt dann das Teilreplikat auf Basis der aktuellen Replikatfilter erneut auf (gilt nur für Microsoft Access-Datenbanken).
 
@@ -31,7 +29,7 @@ Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Rep
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -50,7 +48,7 @@ Synchronisiert alle Änderungen in einem Teilreplikat mit dem vollständigen Rep
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>DbPathName</p></td>
+<td><p><em>DbPathName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der Pfad und Name des vollständigen Replikats, aus dem Datensätze aufgefüllt werden sollen.</p></td>

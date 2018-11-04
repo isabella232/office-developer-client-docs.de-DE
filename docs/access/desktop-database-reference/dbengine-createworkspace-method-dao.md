@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052966
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: df63dfb8351da910a6f735722ef33e8ddc347150
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: af7cc3d629447bae25362b908beb1c74fd3e6b10
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937813"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950097"
 ---
 # <a name="dbenginecreateworkspace-method-dao"></a>DBEngine.CreateWorkspace-Methode (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Erstellt ein neues **[Workspace](workspace-object-dao.md)** -Objekt.
 
@@ -31,7 +29,7 @@ Erstellt ein neues **[Workspace](workspace-object-dao.md)** -Objekt.
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -50,38 +48,38 @@ Erstellt ein neues **[Workspace](workspace-object-dao.md)** -Objekt.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Ein <strong>String</strong> -Wert, das das neue <strong>Workspace</strong> -Objekt eindeutig benennt. Weitere Informationen zu gültigen <a href="connection-name-property-dao.md">Workspace</a> -Namen finden Sie im Thema zur <strong><strong>Name</strong></strong> -Eigenschaft.  </p></td>
 </tr>
 <tr class="even">
-<td><p>UserName</p></td>
+<td><p><em>UserName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Ein <strong>String</strong> -Wert, der den Besitzer des neuen <strong>Workspace</strong> -Objekts angibt. Weitere Informationen finden Sie im Thema zur <strong>UserName</strong> -Eigenschaft.  </p></td>
 </tr>
 <tr class="odd">
-<td><p>Password</p></td>
+<td><p><em>Password</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine <strong>Zeichenfolge</strong>, die das Kennwort für das neue <strong>Arbeitsbereich</strong> -Objekt enthält. Das Kennwort kann bis zu 20 Zeichen lang und alle beliebigen Zeichen außer ASCII-Zeichen 0 (Null) enthalten.  </p>
-<td><p><strong>Hinweis</strong>: Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole kombinieren. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p>
+<p><strong>Hinweis</strong>: Verwenden Sie sichere Kennwörter, die Groß- und Kleinbuchstaben, Zahlen und Symbole kombinieren. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p>
 </td>
 </tr>
 <tr class="even">
-<td><p>UseType</p></td>
+<td><p><em>UseType</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Einer der <strong><a href="workspacetypeenum-enumeration-dao.md">WorkspaceTypeEnum</a></strong> -Werte.</p>
-<td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
+<p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Workspace
 

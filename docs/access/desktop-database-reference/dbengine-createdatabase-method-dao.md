@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052972
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7478a06df491f4c2254f8c72f0eacf9c4b19d49e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e988eec4b3997bb24bf3a9aa0bb7faed1629b1f1
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927508"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950104"
 ---
 # <a name="dbenginecreatedatabase-method-dao"></a>DBEngine.CreateDatabase-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -49,13 +48,13 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine Zeichenfolge bis zu 255 Zeichen lang sein darf, die den Namen der Datenbankdatei ist, den Sie erstellen. Der vollständige Pfad und der Dateiname kann sein. Wenn Ihr Netzwerk unterstützt, Sie können auch angeben einen Netzwerkpfad wie &quot; \\server1\share1\dir1\db1&quot;. Sie können mit dieser Methode nur Microsoft Access-Datenbankdateien erstellen.</p></td>
 </tr>
 <tr class="even">
-<td><p>Locale</p></td>
+<td><p><em>Gebietsschema</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><ul>
@@ -68,7 +67,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Option</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante oder eine Kombination aus Konstanten, die eine oder mehrere Optionen angibt, wie unter Einstellungen festgelegt. Sie können Optionen kombinieren, indem Sie die Summe der entsprechenden Konstanten bilden.</p></td>

@@ -10,18 +10,16 @@ f1_keywords:
 - ado210.chm1231042
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 88a5d62cc94aa707c2e90467d74dc07d80a0af02
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d3b36d04345df4c1d556d0607c70b3425f0047e6
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928943"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949957"
 ---
 # <a name="createparameter-method-ado"></a>CreateParameter-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Erstellt ein neues [Parameter](parameter-object-ado.md)-Objekt mit den angegebenen Eigenschaften.
 
@@ -35,25 +33,13 @@ Gibt ein **Parameter** -Objekt zurück.
 
 ## <a name="parameters"></a>Parameter
 
-  - *Name*
-
-  - Optional. Ein **String** -Wert, der den Namen des **Parameter** -Objekts enthält.
-
-  - *Type*
-
-  - Optional. Ein [DataTypeEnum](datatypeenum.md)-Wert, der den Datentyp des **Parameter** -Objekts angibt.
-
-  - *Direction*
-
-  - Optional. Ein [ParameterDirectionEnum](parameterdirectionenum.md)-Wert, der den Typ des **Parameter** -Objekts angibt.
-
-  - *Size*
-
-  - Optional. Ein **Long** -Wert, der die maximale Länge des Parameterwerts in Zeichen oder Bytes angibt.
-
-  - *Wert*
-
-  - Optional. Ein **Variant** -Wert, der den Wert für das **Parameter** -Objekt angibt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Name* |Optional. Ein **String** -Wert, der den Namen des **Parameter** -Objekts enthält.|
+|*Type* |Optional. Ein [DataTypeEnum](datatypeenum.md)-Wert, der den Datentyp des **Parameter** -Objekts angibt.|
+|*Direction* |Optional. Ein [ParameterDirectionEnum](parameterdirectionenum.md)-Wert, der den Typ des **Parameter** -Objekts angibt.|
+|*Size* |Optional. Ein **Long** -Wert, der die maximale Länge des Parameterwerts in Zeichen oder Bytes angibt.|
+|*Wert* |Optional. Ein **Variant** -Wert, der den Wert für das **Parameter** -Objekt angibt.|
 
 ## <a name="remarks"></a>Hinweise
 

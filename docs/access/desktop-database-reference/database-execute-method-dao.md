@@ -1,17 +1,17 @@
 ---
 title: Database.Execute-Methode (DAO)
-TOCTitle: Execute Method
+TOCTitle: Execute method
 ms:assetid: 9294d530-f70f-e1ed-3990-ce128de4378b
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197654(v=office.15)
 ms:contentKeyID: 48546378
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1d3204ed2f5fd44b346b7b1c55be3304138d3e7b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 424fa55f90c0968d70c47b0d5fa3ff8c704f2ac9
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920060"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950150"
 ---
 # <a name="databaseexecute-method-dao"></a>Database.Execute-Methode (DAO)
 
@@ -25,7 +25,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -44,13 +44,13 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Abfrage</p></td>
+<td><p><em>Query</em></p></td>
 <td><p>Erforderlich</p></td>
-<td><p><strong>String</strong></p></td>
+<td><p><strong>Zeichenfolge</strong></p></td>
 <td><p></p></td>
 </tr>
 <tr class="even">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p></p></td>
@@ -61,7 +61,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 
 ## <a name="remarks"></a>Hinweise
 
-Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)**-Konstanten für Optionen verwenden.
+Sie können die folgenden **[RecordsetOptionEnum](recordsetoptionenum-enumeration-dao.md)** -Konstanten für Optionen verwenden.
 
 <table>
 <colgroup>

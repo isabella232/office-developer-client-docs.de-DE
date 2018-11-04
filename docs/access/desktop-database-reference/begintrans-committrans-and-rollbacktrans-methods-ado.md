@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ca7c63e0c310535ecdf84a11c656d00ff436627f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: f6e797865889bcf52c6f13e4411e945a72b978e8
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945922"
+ms.locfileid: "25949992"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans-, CommitTrans- and RollbackTrans-Methode (Beispiel) (ADO)
 
@@ -41,16 +41,16 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 
 ## <a name="parameters"></a>Parameter
 
-- *Objekt*
-
-  - Ein **Connection** -Objekt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Objekt* |Ein **Connection** -Objekt.|
 
 ### <a name="connection"></a>Connection
 
 Verwenden Sie diese Methoden mit einem **Connection** -Objekt, wenn Sie eine Reihe von an den Quelldaten vorgenommenen Änderungen als einzelne Einheit speichern oder abbrechen möchten. Beispielsweise subtrahieren Sie zum Übertragen von Geldbeträgen zwischen Konten einen Betrag von einem Konto und addieren den gleichen Betrag zu einem anderen Konto. Wenn eine der Aktualisierungen fehlschlägt, sind die Konten nicht mehr ausgeglichen. Durch das Vornehmen dieser Änderungen mit einer geöffneten Transaktion wird sichergestellt, dass alle oder keine der Änderungen durchlaufen.
 
 > [!NOTE]
-> Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "**Transaction DDL**"-Eigenschaft in der [Properties](properties-collection-ado.md)-Auflistung des **Connection**-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
+> [!HINWEIS] Transaktionen werden nicht von allen Anbietern unterstützt. Stellen Sie sicher, dass die Eigenschaft vom Anbieter definiertes **Transaction DDL** angezeigt, in die [Properties](properties-collection-ado.md) -Auflistung des **Connection** -Objekts wird, was bedeutet, dass der Anbieter Transaktionen unterstützt. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
 
 Nach dem Aufrufen der **BeginTrans** -Methode wird vom Anbieter erst wieder sofort ein Commit für vorgenommene Änderungen ausgeführt, wenn Sie **CommitTrans** oder **RollbackTrans** aufrufen, um die Transaktion zu beenden.
 

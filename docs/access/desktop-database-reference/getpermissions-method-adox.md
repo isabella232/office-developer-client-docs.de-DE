@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249683(v=office.15)
 ms:contentKeyID: 48546496
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 14cba54742a71a8b319f80b6fd1a910a85debcec
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b0860606bd0ee6036ea8a760c76662a778eb0175
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926724"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949327"
 ---
 # <a name="getpermissions-method-adox"></a>GetPermissions-Methode (ADOX)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Gibt die Berechtigungen einer Gruppe oder eines Benutzers für ein Objekt oder einen Objektcontainers zurück.
 
@@ -31,15 +29,9 @@ Gibt einen **Long** -Wert zurück, der eine Bitmaske angibt, die die Berechtigun
 
 ## <a name="parameters"></a>Parameter
 
-  - *Name*
-
-  - Ein **Variant** -Wert, der den Namen des Objekts angibt, für das Berechtigungen festgelegt werden sollen. Legen Sie *Namen* auf einen null-Wert, wenn Sie die Berechtigungen für den Objektcontainer abrufen möchten.
-
-  - *ObjectType*
-
-  - Ein **Long** -Wert, der eine der [ObjectTypeEnum](objecttypeenum.md)-Konstanten sein kann, die den Typ des Objekts angibt, für das die Berechtigungen zurückgegeben werden sollen.
-
-  - *ObjectTypeId*
-
-  - Optional. Ein **Variant** -Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **AdPermObjProviderSpecific**festgelegt ist; Andernfalls wird es nicht verwendet.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Name* |Ein **Variant** -Wert, der den Namen des Objekts angibt, für das Berechtigungen festgelegt werden sollen. Legen Sie *Namen* auf einen null-Wert, wenn Sie die Berechtigungen für den Objektcontainer abrufen möchten.|
+|*ObjectType* |Ein **Long** -Wert, der eine der [ObjectTypeEnum](objecttypeenum.md)-Konstanten sein kann, die den Typ des Objekts angibt, für das die Berechtigungen zurückgegeben werden sollen.|
+|*ObjectTypeId* |Optional. Ein **Variant** -Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **AdPermObjProviderSpecific**festgelegt ist; Andernfalls wird es nicht verwendet.|
 

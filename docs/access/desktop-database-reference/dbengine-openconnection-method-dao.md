@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053574
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f958081ee73e64ca6c895217c8aa3e821617b283
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 08e26c4a32e8648eb1833dc493b4e121030d1f1a
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927193"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950034"
 ---
 # <a name="dbengineopenconnection-method-dao"></a>DBEngine.OpenConnection-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,7 +27,7 @@ ms.locfileid: "25927193"
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -47,25 +46,25 @@ ms.locfileid: "25927193"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Ein Zeichenfolgenausdruck. Weitere Informationen erhalten Sie im Abschnitt "Hinweise".</p></td>
 </tr>
 <tr class="even">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Legt verschiedene Optionen für die Verbindung fest, wie unter "Hinweise" beschrieben. Basierend auf diesem Wert fordert der ODBC-Treibermanager den Benutzer auf, Verbindungsdaten einzugeben, z. B. den Datenquellennamen (Data Source Name, DSN), den Benutzernamen oder das Kennwort.</p></td>
 </tr>
 <tr class="odd">
-<td><p>ReadOnly</p></td>
+<td><p><em>ReadOnly</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p><strong>True</strong>, um die Verbindung nur mit Lesezugriff zu öffnen, und <strong>False</strong>, wenn die Verbindung mit Lese-/Schreibzugriff geöffnet werden soll (Standard).</p></td>
 </tr>
 <tr class="even">
-<td><p>Verbinden</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine ODBC-Verbindungszeichenfolge. Finden Sie unter der <strong><a href="connection-connect-property-dao.md">Connect</a></strong> -Eigenschaft für die bestimmte Elemente und die Syntax dieser Zeichenfolge. Eine vorangestellt &quot;ODBC; &quot; ist erforderlich.</p></td>
@@ -74,7 +73,7 @@ ms.locfileid: "25927193"
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Connection
 

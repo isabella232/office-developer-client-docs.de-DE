@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052938
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 767bd146de7a5568d7441024adb9ad6816cb806e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8310f695bdcf229e61e09bce6c0846f9520c0fc6
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923511"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949866"
 ---
 # <a name="dbengineregisterdatabase-method-dao"></a>DBEngine.RegisterDatabase-Methode (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registrierung ein. Der ODBC-Treiber benötigt Verbindungsinformationen, wenn die ODBC-Datenquelle während einer Sitzung geöffnet wird.
 
@@ -31,7 +29,7 @@ Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registri
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -50,25 +48,25 @@ Gibt Verbindungsinformationen für eine ODBC-Datenquelle in die Windows-Registri
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>DSN</p></td>
+<td><p><em>DSN</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der in der <strong><a href="dbengine-opendatabase-method-dao.md">OpenDatabase</a></strong>-Methode verwendete Name. Er verweist auf einen Block mit beschreibenden Informationen zur Datenquelle. Ist die Datenquelle beispielsweise eine ODBC-Remote-Datenquelle, könnte diese der Name des Servers sein.</p></td>
 </tr>
 <tr class="even">
-<td><p>Treiber</p></td>
+<td><p><em>Treiber</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der Name des ODBC-Treibers. Er entspricht nicht dem Namen der DLL-Datei des ODBC-Treibers.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Automatische</p></td>
+<td><p><em>Automatische</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Boolean</strong></p></td>
 <td><p><strong>True,</strong> Wenn Sie nicht möchten, um die ODBC-Treiber-Dialogfelder anzuzeigen, die Treiber-spezifische Informationen aufgefordert. oder <strong>False,</strong> Wenn Sie die ODBC-Treiber Dialogfelder anzeigen möchten. Wenn im Hintergrund ist <strong>True</strong>, Attribute müssen alle erforderliche Treiber-spezifische Informationen enthalten oder die Dialogfelder trotzdem angezeigt.</p></td>
 </tr>
 <tr class="even">
-<td><p>Attribute</p></td>
+<td><p><em>Attributes</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine Liste der Schlüsselwörter, die zur Windows-Registrierung hinzugefügt werden sollen. Die Schlüsselwörter sind in Zeichenfolgen enthalten, die durch Wagenrücklaufzeichen getrennt sind.</p></td>

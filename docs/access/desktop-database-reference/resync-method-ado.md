@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250251(v=office.15)
 ms:contentKeyID: 48548717
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 73633c38bb21a794bc2137554f0341f93d9f265d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: bfcb392fc9b89f614a8372b888db794ee4a1eb06
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931043"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950180"
 ---
 # <a name="resync-method-ado"></a>Resync-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Die Daten im aktuellen [Recordset](recordset-object-ado.md)-Objekt oder in der [Fields](fields-collection-ado.md)-Auflistung eines [Record](record-object-ado.md)-Objekts werden anhand der zugrunde liegenden Datenbank aktualisiert.
 
@@ -30,17 +27,14 @@ Die Daten im aktuellen [Recordset](recordset-object-ado.md)-Objekt oder in der [
 
 ## <a name="parameters"></a>Parameter
 
-  - *AffectRecords*
-
-  - Optional. Ein [AffectEnum](affectenum.md)-Wert, durch den bestimmt wird, auf wie viele Datensätze sich die **Resync** -Methode auswirkt. Der Standardwert ist **adAffectAll**. Dieser Wert steht für die **Resync** -Methode der **Fields** -Auflistung eines **Record** -Objekts nicht zur Verfügung.
-
-  - *ResyncValues*
-
-  - Optional. Ein [ResyncEnum](resyncenum.md)-Wert, durch den angegeben wird, ob zugrunde liegende Werte überschrieben werden. Der Standardwert ist **adResyncAllValues**.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*AffectRecords* |Optional. Ein [AffectEnum](affectenum.md)-Wert, durch den bestimmt wird, auf wie viele Datensätze sich die **Resync** -Methode auswirkt. Der Standardwert ist **adAffectAll**. Dieser Wert steht für die **Resync** -Methode der **Fields** -Auflistung eines **Record** -Objekts nicht zur Verfügung.|
+|*ResyncValues* |Optional. Ein [ResyncEnum](resyncenum.md)-Wert, durch den angegeben wird, ob zugrunde liegende Werte überschrieben werden. Der Standardwert ist **adResyncAllValues**.|
 
 ## <a name="remarks"></a>Hinweise
 
-**Recordset**
+### <a name="recordset"></a>Recordset
 
 Verwenden Sie die **Resync** -Methode zum erneuten Synchronisieren von Datensätzen im aktuellen **Recordset** mit der zugrunde liegenden Datenbank. Dies ist nützlich, wenn Sie einen statischen Cursor oder einen Vorwärtscursor verwenden, aber alle Änderungen in der zugrunde liegenden Datenbank sehen möchten.
 
@@ -52,7 +46,7 @@ Wenn der Versuch der erneuten Synchronisierung aufgrund eines Konflikts mit den 
 
 Wenn die dynamischen Eigenschaften [Unique Table](unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) und [Resync Command](resync-command-property-dynamic-ado.md) festgelegt sind und das **Recordset** das Ergebnis der Ausführung einer JOIN-Operation für mehrere Tabellen ist, wird von der **Resync** -Methode der Befehl in der **Resync Command** -Eigenschaft nur für die in der **Unique Table** -Eigenschaft genannte Tabelle ausgeführt.
 
-**Fields**
+### <a name="fields"></a>Felder
 
 Verwenden Sie die **Resync** -Methode zum erneuten Synchronisieren der Werte der **Fields** -Auflistung eines **Record** -Objekts mit der zugrunde liegenden Datenquelle. Auf die [Count](count-property-ado.md)-Eigenschaft wirkt sich diese Methode nicht aus.
 

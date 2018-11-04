@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249641(v=office.15)
 ms:contentKeyID: 48546357
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cdbf9bc7ab29b98c7d1b96700adccaa17275d698
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 2bcee0de272a14825f978abb1f6dd2834a998f86
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946552"
+ms.locfileid: "25949334"
 ---
 # <a name="read-method-ado"></a>Read-Methode (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,9 +25,9 @@ Liest eine angegebene Anzahl von Bytes aus einem binären [Stream](stream-object
 
 ## <a name="parameters"></a>Parameter
 
-  - *NumBytes*
-
-  - Optional. Ein **Long** -Wert, der die Anzahl von aus der Datei zu lesenden Bytes oder den [StreamReadEnum](streamreadenum.md)-Wert **adReadAll** angibt. Dies ist der Standardwert.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*NumBytes* |Optional. Ein **Long** -Wert, der die Anzahl von aus der Datei zu lesenden Bytes oder den [StreamReadEnum](streamreadenum.md)-Wert **adReadAll** angibt. Dies ist der Standardwert.|
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -38,8 +37,7 @@ Die **Read** -Methode liest eine angegebene Anzahl von Bytes oder den gesamten D
 
 Ist NumBytes größer als die Anzahl der im Stream-Objekt verbliebenen Bytes, werden nur die verbliebenen Bytes zurückgegeben. Die gelesenen Daten werden nicht aufgefüllt, damit sie der durch NumBytes angegebenen Länge entsprechen. Wenn keine zu lesenden Bytes vorhanden sind, wird ein Variant-Wert mit einem Nullwert zurückgegeben. Mit Read kann nicht rückwärts gelesen werden.
 
-
 > [!NOTE]
-> <P>Mit <EM>NumBytes</EM> wird immer die Anzahl an Bytes ermittelt. Verwenden Sie bei aus Text bestehenden <STRONG>Stream</STRONG>-Objekten (<A href="type-property-ado-stream.md">Type</A> ist auf <STRONG>adTypeText</STRONG> festgelegt) die <A href="readtext-method-ado.md">ReadText</A>-Methode.</P>
+> Mit *NumBytes* wird immer die Anzahl an Bytes ermittelt. Verwenden Sie bei aus Text bestehenden **Stream**-Objekten ([Type](type-property-ado-stream.md) ist auf **adTypeText** festgelegt) die [ReadText](readtext-method-ado.md)-Methode.
 
 

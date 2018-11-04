@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249459(v=office.15)
 ms:contentKeyID: 48545605
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f25d3f7cb576a9fb8ddf79a887bb3c795144682
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 161cfec0e8450ef7e80c47bc8fb1b8304790e7c5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919031"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949908"
 ---
 # <a name="copyrecord-method-ado"></a>CopyRecord-Methode (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,29 +25,14 @@ Kopiert eine durch einen **Record** dargestellte Entität an einen anderen Speic
 
 ## <a name="parameters"></a>Parameter
 
-  - *Source*
-
-  - Optional. Ein **String** -Wert, der eine URL, die Entität kopiert werden soll (beispielsweise eine Datei oder ein Verzeichnis) enthält. Wenn *Source* ausgelassen wird oder eine leere Zeichenfolge angibt, wird die Datei oder das Verzeichnis vom aktuellen [Datensatz](record-object-ado.md) dargestellt kopiert werden.
-
-  - *Destination*
-
-  - Optional. Ein **String** -Wert, der eine URL des Speicherorts, in dem *Quelle* kopiert werden, enthält.
-
-  - *UserName*
-
-  - Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.
-
-  - *Password*
-
-  - Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.
-
-  - *Options*
-
-  - Optional. Ein [CopyRecordOptionsEnum](copyrecordoptionsenum.md)-Wert, der den Standardwert **adCopyUnspecified** besitzt. Gibt das Verhalten dieser Methode an.
-
-  - *Async*
-
-  - Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Source* |Optional. Ein **String** -Wert, der eine URL, die Entität kopiert werden soll (beispielsweise eine Datei oder ein Verzeichnis) enthält. Wenn *Source* ausgelassen wird oder eine leere Zeichenfolge angibt, wird die Datei oder das Verzeichnis vom aktuellen [Datensatz](record-object-ado.md) dargestellt kopiert werden.|
+|*Destination* |Optional. Ein **String** -Wert, der eine URL des Speicherorts, in dem *Quelle* kopiert werden, enthält.|
+|*UserName* |Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.|
+|*Password* |Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.|
+|*Options* |Optional. Ein [CopyRecordOptionsEnum](copyrecordoptionsenum.md)-Wert, der den Standardwert **adCopyUnspecified** besitzt. Gibt das Verhalten dieser Methode an.|
+|*Async* |Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.|
 
 ## <a name="return-value"></a>Rückgabewert
 
@@ -62,11 +46,8 @@ Wenn **adCopyNonRecursive** nicht angegeben ist, werden alle untergeordneten Ebe
 
 Diese Methode schlägt fehl, wenn das *Ziel* eine vorhandene Entität (beispielsweise eine Datei oder ein Verzeichnis) identifiziert, es sei denn, **AdCopyOverWrite** angegeben ist.
 
-
 > [!IMPORTANT]
 > [!WICHTIG] Verwenden Sie die Option **adCopyOverWrite** nur nach sorgfältiger Überlegung. Beispielsweise wird durch das Angeben dieser Option beim Kopieren einer Datei in ein Verzeichnis das Verzeichnis wird *Löschen* und Ersetzen Sie ihn mit der Datei.
-
-
 
 
 > [!NOTE]

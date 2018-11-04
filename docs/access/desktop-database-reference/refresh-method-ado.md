@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250227(v=office.15)
 ms:contentKeyID: 48548631
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c4bbc44dbb9cdfeaac0904ed5296db206016211d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d7548a31518f225c15dbf0e9a6de2b82c66c72af
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922762"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950139"
 ---
 # <a name="refresh-method-ado"></a>Refresh-Methode (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -36,17 +35,14 @@ Legen Sie die [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft d
 
 Wenn Sie vor dem Aufrufen der **Refresh** -Methode auf die **Parameters** -Auflistung zugreifen, wird die Methode automatisch von ADO aufgerufen, und die Auflistung wird aufgefüllt.
 
-
 > [!NOTE]
-> <P>Wenn Sie die Refresh-Methode zum Abrufen von Parameterinformationen vom Anbieter verwenden und mindestens ein Parameter-Objekt mit dem variable-length-Datentyp zurückgegeben wird, wird der Speicher für die Parameter von ADO möglicherweise basierend auf der potenziellen Maximalgröße zugeordnet. Dies verursacht einen Fehler bei der Ausführung. Legen Sie die Size-Eigenschaft für diese Parameter vor dem Aufrufen der Execute-Methode explizit fest, um Fehler zu verhindern.</P>
+> Wenn Sie die Refresh-Methode zum Abrufen von Parameterinformationen vom Anbieter verwenden und mindestens ein Parameter-Objekt mit dem variable-length-Datentyp zurückgegeben wird, wird der Speicher für die Parameter von ADO möglicherweise basierend auf der potenziellen Maximalgröße zugeordnet. Dies verursacht einen Fehler bei der Ausführung. Legen Sie die Size-Eigenschaft für diese Parameter vor dem Aufrufen der Execute-Methode explizit fest, um Fehler zu verhindern.
 
-
-
-**Fields**
+### <a name="fields"></a>Felder
 
 Das Verwenden der **Refresh** -Methode für die **Fields** -Auflistung hat keine sichtbare Auswirkung. Zum Abrufen von Änderungen aus der zugrunde liegenden Datenbankstruktur müssen Sie entweder die [Requery](requery-method-ado.md)-Methode oder, wenn Textmarken vom [Recordset](recordset-object-ado.md)-Objekt nicht unterstützt werden, die [MoveFirst](movefirst-movelast-movenext-and-moveprevious-methods-ado.md)-Methode verwenden.
 
-**Eigenschaften**
+### <a name="properties"></a>Eigenschaften
 
 Durch Verwenden der **Refresh** -Methode für eine **Properties** -Auflistung mancher Objekte wird die Auflistung mit den vom Anbieter verfügbar gemachten dynamischen Eigenschaften aufgefüllt. Durch diese Eigenschaften werden Informationen zu anbieterspezifischer Funktionalität bereitgestellt, die über die von ADO unterstützten integrierten Eigenschaften hinausgeht.
 

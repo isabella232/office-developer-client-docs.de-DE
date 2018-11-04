@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249792(v=office.15)
 ms:contentKeyID: 48546962
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2bb9444091611fbd051da9fa649b5d3efdb92ee6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 98aeb3a56203fd5adbeb5b58a1298a7b1df98439
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923581"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950132"
 ---
 # <a name="handler-property-rds"></a>Handler-Eigenschaft (RDS)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Gibt den Name eines serverbasierten Anpassungsprogramms (Handlers) an, das die Funktionalität des [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekts erweitert, sowie alle vom *Handler* verwendeten Parameter.
 
@@ -27,13 +25,10 @@ Gibt den Name eines serverbasierten Anpassungsprogramms (Handlers) an, das die F
 
 ## <a name="parameters"></a>Parameter
 
-  - *DataControl*
-
-  - Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.
-
-  - *String*
-
-  - Ein **String** -Wert, der den Namen der Handler und Parameter, alle durch Kommas getrennt (beispielsweise "HandlerName, param1, param2,..., *N*Parameter") enthält.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
+|*String* |Ein **String** -Wert, der den Namen der Handler und Parameter, alle durch Kommas getrennt (beispielsweise "HandlerName, param1, param2,..., *N*Parameter") enthält.|
 
 ## <a name="remarks"></a>Hinweise
 

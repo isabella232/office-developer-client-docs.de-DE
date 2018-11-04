@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248926(v=office.15)
 ms:contentKeyID: 48543448
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 062a4a319073ccf8f2810205973c11a845e2cc6f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 492602d7150f3080df329d30a38e3af51755cf0f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925233"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949502"
 ---
 # <a name="server-property-rds"></a>Server-Eigenschaft (RDS)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -42,17 +41,11 @@ Sie können die **Server** -Eigenschaft zur Entwurfszeit in den OBJECT-Tags des 
 
 ## <a name="parameters"></a>Parameter
 
-*Awebsrvr* oder *computername*
-
-- Ein **String** -Wert, der einen Internet- oder Intranetpfad enthält oder einen Computernamen, falls sich der Server auf einem Remotecomputer befindet. Ist der Server auf einem lokalen Computer, enthält der Wert eine leere Zeichenfolge.
-
-*port*
-
-- Optional. Ein zur Verbindung mit einem IIS-Server verwendeter Port. Die Portnummer wird in IIS oder in Internet Explorer festgelegt (klicken Sie im Menü **Extras** auf **Internetoptionen**, und wählen Sie dann die Registerkarte **Verbindungen** aus).
-
-*DataControl*
-
-- Eine Objektvariable, die ein **RDS.DataControl**-Objekt darstellt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Awebsrvr* oder *computername* |Ein **String** -Wert, der einen Internet- oder Intranetpfad enthält oder einen Computernamen, falls sich der Server auf einem Remotecomputer befindet. Ist der Server auf einem lokalen Computer, enthält der Wert eine leere Zeichenfolge.|
+|*port* |Optional. Ein zur Verbindung mit einem IIS-Server verwendeter Port. Die Portnummer wird in IIS oder in Internet Explorer festgelegt (klicken Sie im Menü **Extras** auf **Internetoptionen**, und wählen Sie dann die Registerkarte **Verbindungen** aus).|
+|*DataControl* |Eine Objektvariable, die ein **RDS.DataControl**-Objekt darstellt.|
 
 ## <a name="remarks"></a>Hinweise
 

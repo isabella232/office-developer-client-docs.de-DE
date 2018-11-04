@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249292(v=office.15)
 ms:contentKeyID: 48544963
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b472f8e2cb7d95a3aa79194e7704a877864c1339
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 853f971f68bb0ec4069ba58e04b7cf9d231c6467
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920277"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949859"
 ---
 # <a name="getrows-method-ado"></a>GetRows-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Ruft mehrere Datensätze eines [Recordset](recordset-object-ado.md)-Objekts in ein Array ab.
 
@@ -31,17 +29,11 @@ Gibt einen **Variant** -Wert zurück, deren dessen Wert es sich um ein zweidimen
 
 ## <a name="parameters"></a>Parameter
 
-  - *Rows*
-
-  - Optional. Ein [GetRowsOptionEnum](getrowsoptionenum.md)-Wert, der die Anzahl der abzurufenden Datensätze angibt. Der Standardwert lautet **adGetRowsRest**.
-
-  - *Start*
-
-  - Optional. Ein **String** -Wert oder ein **Variant** -Wert, der die Textmarke für den Datensatz ergibt, bei dem der **GetRows** -Vorgang beginnen soll. Sie können auch einen [BookmarkEnum](bookmarkenum.md)-Wert verwenden.
-
-  - *Fields*
-
-  - Optional. Ein **Variant** -Wert, der einen einzelnen Feldnamen oder eine einzelne Ordnungsposition oder ein Array mit Feldnamen oder Nummern für Ordnungspositionen darstellt. ADO gibt nur die Daten in diesen Feldern zurück.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Rows* |Optional. Ein [GetRowsOptionEnum](getrowsoptionenum.md)-Wert, der die Anzahl der abzurufenden Datensätze angibt. Der Standardwert lautet **adGetRowsRest**.|
+|*Start* |Optional. Ein **String** -Wert oder ein **Variant** -Wert, der die Textmarke für den Datensatz ergibt, bei dem der **GetRows** -Vorgang beginnen soll. Sie können auch einen [BookmarkEnum](bookmarkenum.md)-Wert verwenden.|
+|*Fields* |Optional. Ein **Variant** -Wert, der einen einzelnen Feldnamen oder eine einzelne Ordnungsposition oder ein Array mit Feldnamen oder Nummern für Ordnungspositionen darstellt. ADO gibt nur die Daten in diesen Feldern zurück.|
 
 ## <a name="remarks"></a>Hinweise
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250294(v=office.15)
 ms:contentKeyID: 48548893
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c0a62618eef0a829db84de050aa07c2c645636e5
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7501f7607dbee558a67dd0e11d7f2498874f8870
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929437"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950230"
 ---
 # <a name="update-method-ado"></a>Update-Methode (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,27 +27,24 @@ Speichert alle Änderungen, die Sie an der aktuellen Zeile eines [Recordset](rec
 
 ## <a name="parameters"></a>Parameter
 
-  - *Fields*
-
-  - Optional. Ein Wert vom Datentyp **Variant**, der einen einzelnen Namen darstellt, oder ein Array vom Datentyp **Variant**, das Namen oder Positionen des Felds oder der Felder darstellt, das bzw. die Sie ändern möchten.
-
-  - *Values*
-
-  - Optional. Ein Wert vom Datentyp **Variant**, der einen einzelnen Wert darstellt, oder ein Array vom Datentyp **Variant**, das Werte für das Feld oder die Felder im neuen Datensatz darstellt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Fields* |Optional. Ein Wert vom Datentyp **Variant**, der einen einzelnen Namen darstellt, oder ein Array vom Datentyp **Variant**, das Namen oder Positionen des Felds oder der Felder darstellt, das bzw. die Sie ändern möchten.|
+|*Values* |Optional. Ein Wert vom Datentyp **Variant**, der einen einzelnen Wert darstellt, oder ein Array vom Datentyp **Variant**, das Werte für das Feld oder die Felder im neuen Datensatz darstellt.|
 
 ## <a name="remarks"></a>Hinweise
 
-**Recordset**
+### <a name="recordset"></a>Recordset
 
 Verwenden Sie die **Update** -Methode, um Änderungen am aktuellen Datensatz eines **Recordset** -Objekts seit dem Aufrufen der [AddNew](addnew-method-ado.md)-Methode oder seit dem Ändern von Feldwerten in einem vorhandenen Datensatz zu speichern. Das **Recordset** -Objekt muss Aktualisierungen unterstützen.
 
 Führen Sie eine der folgenden Aktionen aus, um Feldwerte festzulegen:
 
-  - Weisen Sie der [Value](field-object-ado.md)-Eigenschaft eines [Field](value-property-ado.md)-Objekts Werte zu, und rufen Sie die **Update** -Methode auf.
+- Weisen Sie der [Value](field-object-ado.md)-Eigenschaft eines [Field](value-property-ado.md)-Objekts Werte zu, und rufen Sie die **Update** -Methode auf.
 
-  - Übergeben Sie mithilfe des **Update** -Aufrufs einen Feldnamen und einen Wert als Argumente.
+- Übergeben Sie mithilfe des **Update** -Aufrufs einen Feldnamen und einen Wert als Argumente.
 
-  - Übergeben Sie mithilfe des **Update** -Aufrufs ein Array von Feldnamen und ein Array von Werten.
+- Übergeben Sie mithilfe des **Update** -Aufrufs ein Array von Feldnamen und ein Array von Werten.
 
 Wenn Sie Arrays von Feldern und Werten verwenden, müssen in beiden Arrays gleich viele Elemente vorhanden sein. Die Reihenfolge der Feldnamen muss außerdem der Reihenfolge der Feldwerte entsprechen. Wenn die Anzahl und die Reihenfolge von Feldern und Werten nicht übereinstimmen, tritt ein Fehler auf.
 
@@ -58,7 +54,7 @@ Wenn Sie den Datensatz verlassen, den Sie hinzufügen oder bearbeiten, bevor Sie
 
 Der aktuelle Datensatz bleibt aktuell, nachdem Sie die **Update** -Methode aufgerufen haben.
 
-**Record**
+### <a name="record"></a>Record
 
 Mit der **Update** -Methode werden Lösch- und Aktualisierungsvorgänge für Felder in der [Fields](fields-collection-ado.md)-Auflistung eines **Record** -Objekts abgeschlossen.
 

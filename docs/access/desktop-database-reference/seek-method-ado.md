@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250027(v=office.15)
 ms:contentKeyID: 48547802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ee2dbaf7dd3a15cf6cd415af208ec10a14fc9c9b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: be8127ea3f298a8f137012615b1f4de656a6ea1f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923378"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949712"
 ---
 # <a name="seek-method-ado"></a>Seek-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Durchsucht den Index eines [Recordset](recordset-object-ado.md)-Objekt, um auf schnelle Weise die Zeile zu finden, die den angegebenen Werten entspricht, und ändert die aktuelle Zeilenposition auf diese Zeile.
 
@@ -28,13 +25,10 @@ Durchsucht den Index eines [Recordset](recordset-object-ado.md)-Objekt, um auf s
 
 ## <a name="parameters"></a>Parameter
 
-  - *KeyValues*
-
-  - Ein Array mit **Variant** -Werten. Ein Index besteht aus einer oder mehreren Spalten, und das Array enthält einen Wert, mit dem jede einzelne Spalte verglichen wird.
-
-  - *SeekOption*
-
-  - Ein [SeekEnum](seekenum.md)-Wert, der die Art des Vergleichs angibt, der zwischen den Spalten des Index und den entsprechenden *KeyValues* vorgenommen wird.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*KeyValues* |Ein Array mit **Variant** -Werten. Ein Index besteht aus einer oder mehreren Spalten, und das Array enthält einen Wert, mit dem jede einzelne Spalte verglichen wird.|
+|*SeekOption* |Ein [SeekEnum](seekenum.md)-Wert, der die Art des Vergleichs angibt, der zwischen den Spalten des Index und den entsprechenden *KeyValues* vorgenommen wird.|
 
 ## <a name="remarks"></a>Hinweise
 

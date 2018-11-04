@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248982(v=office.15)
 ms:contentKeyID: 48543645
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 55439f14cd2a498ec2592c533dd308f82798b1e8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 30feb9aabeb84c577b415b2872ce407cf3fc0f44
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929447"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950006"
 ---
 # <a name="move-method-ado"></a>Move-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Verschiebt die Position des aktuellen Datensatzes in einem [Recordset](recordset-object-ado.md)-Objekt.
 
@@ -28,13 +25,10 @@ Verschiebt die Position des aktuellen Datensatzes in einem [Recordset](recordset
 
 ## <a name="parameters"></a>Parameter
 
-  - *NumRecords*
-
-  - Ein signierter **Long** -Ausdruck, der die Anzahl von Datensätzen angibt, um die die aktuelle Position des Datensatzes verschoben wird.
-
-  - *Start*
-
-  - Optional. Ein **String** -Wert oder ein **Variant** -Wert, der eine Textmarke ergibt. Sie können auch einen [BookmarkEnum](bookmarkenum.md)-Wert verwenden.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*NumRecords* |Ein signierter **Long** -Ausdruck, der die Anzahl von Datensätzen angibt, um die die aktuelle Position des Datensatzes verschoben wird.|
+|*Start* |Optional. Ein **String** -Wert oder ein **Variant** -Wert, der eine Textmarke ergibt. Sie können auch einen [BookmarkEnum](bookmarkenum.md)-Wert verwenden.|
 
 ## <a name="remarks"></a>Hinweise
 

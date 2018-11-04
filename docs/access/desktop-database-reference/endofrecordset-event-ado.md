@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249603(v=office.15)
 ms:contentKeyID: 48546167
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 89ca397c4e95dd6f18de41862e9383f77fe14aa8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 36babff0c6de48e0539375caaad367698906e3fd
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928838"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950188"
 ---
 # <a name="endofrecordset-event-ado"></a>EndOfRecordset-Ereignis (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Das **EndOfRecordset** -Ereignis wird aufgerufen, wenn in eine Zeile nach dem Ende des [Recordsets](recordset-object-ado.md) gewechselt wird.
 
@@ -28,21 +25,11 @@ EndOfRecordset*fMoreData*, *AdStatus*, *pCommand*
 
 ## <a name="parameters"></a>Parameter
 
-  - *fMoreData*
-
-  - Eine **VARIANT\_BOOL** Wert festlegen Variante\_true ist, gibt das **Recordset**mehr Zeilen hinzugefügt wurden.
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    Wenn **EndOfRecordset** aufgerufen wird, wird dieser Parameter auf **adStatusOK** festgelegt, falls die Operation, die zu diesem Ereignis führte, erfolgreich war. Er wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch der Operation, die zu diesem Ereignis führte, nicht anfordern kann.
-    
-    Bevor **EndOfRecordset** zurückgegeben wird, legen Sie diesen Parameter auf **adStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.
-
-  - *pCommand*
-
-  - Ein **Recordset**-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*fMoreData* |Eine **VARIANT\_BOOL** Wert festlegen Variante\_true ist, gibt das **Recordset**mehr Zeilen hinzugefügt wurden.|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md). Wenn **EndOfRecordset** aufgerufen wird, wird dieser Parameter auf **adStatusOK** festgelegt, falls die Operation, die zu diesem Ereignis führte, erfolgreich war. Er wird auf **adStatusCantDeny** festgelegt, wenn dieses Ereignis den Abbruch der Operation, die zu diesem Ereignis führte, nicht anfordern kann.<br/><br/>Bevor **EndOfRecordset** zurückgegeben wird, legen Sie diesen Parameter auf **adStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern.|
+|*pCommand* | Ein **Recordset**-Objekt. Das **Recordset** -Objekt, für das dieses Ereignis eingetreten ist.|
 
 ## <a name="remarks"></a>Hinweise
 

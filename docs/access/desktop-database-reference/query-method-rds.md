@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249975(v=office.15)
 ms:contentKeyID: 48547658
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 06b9372a15082a76503654dde9261db941a492f8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1e7f9dfc3ce5cb0d757951f13c1078ab44d04760
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25924001"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949425"
 ---
 # <a name="query-method-rds"></a>Query-Methode (RDS)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Verwendet eine gültige SQL-Abfragezeichenfolge, um ein [Recordset](recordset-object-ado.md)-Objekt zurückzugeben.
 
@@ -27,21 +25,12 @@ Festlegen von*Recordset-Objekt* = *DataFactory*. Abfrage (*Verbindung*, *Abfrage
 
 ## <a name="parameters"></a>Parameter
 
-  - *Recordset*
-
-  - Eine Objektvariable, die ein **Recordset** -Objekt darstellt.
-
-  - *DataFactory*
-
-  - Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt darstellt.
-
-  - *Connection*
-
-  - Ein **String** -Wert, der die Informationen zur Serververbindung enthält. Er ist mit der [Connect](connect-property-rds.md)-Eigenschaft vergleichbar.
-
-  - *Query*
-
-  - Ein **String**, der die SQL-Abfrage enthält.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Recordset* |Eine Objektvariable, die ein **Recordset** -Objekt darstellt.|
+|*DataFactory* |Eine Objektvariable, die ein [RDSServer.DataFactory](datafactory-object-rdsserver.md)-Objekt darstellt.|
+|*Connection* |Ein **String** -Wert, der die Informationen zur Serververbindung enthält. Er ist mit der [Connect](connect-property-rds.md)-Eigenschaft vergleichbar.|
+|*Query* |Ein **String**, der die SQL-Abfrage enthält.|
 
 ## <a name="remarks"></a>Hinweise
 

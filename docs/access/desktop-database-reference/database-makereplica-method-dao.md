@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053371
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a47709d1be3eab66f849e076c5756d5081d28fc8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 632bf0af35dd49951d58ba126b6e03678a1a12db
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930231"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950251"
 ---
 # <a name="databasemakereplica-method-dao"></a>Database.MakeReplica-Methode (DAO)
 
@@ -29,7 +29,7 @@ Macht aus einem Datenbankreplikat ein neues Replikat (gilt nur für Microsoft Ac
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -48,19 +48,19 @@ Macht aus einem Datenbankreplikat ein neues Replikat (gilt nur für Microsoft Ac
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Pfadname</p></td>
+<td><p><em>Pfadname</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der Pfad- und Dateiname des neuen Replikats. Wenn replica ein vorhandener Dateiname ist, tritt ein Fehler auf.</p></td>
 </tr>
 <tr class="even">
-<td><p>Beschreibung</p></td>
+<td><p><em>Description</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Ein <strong>String</strong>-Wert, der das Replikat beschreibt, das Sie erstellen.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine <strong><a href="replicatypeenum-enumeration-dao.md">ReplicaTypeEnum</a></strong> -Konstante, die Eigenschaften des Replikats angibt, die Sie erstellen.</p></td>

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195966(v=office.15)
 ms:contentKeyID: 48545686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7e6a6fe546f862f2452ac992c140a63959e48a6b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1c4aaf826785a7c8033077ee76aed4d232e3a2a0
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919745"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950244"
 ---
 # <a name="databasecreatequerydef-method-dao"></a>Database.CreateQueryDef-Methode (DAO)
 
@@ -25,7 +25,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 
 *Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -44,13 +44,13 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), die die neue <strong>QueryDef</strong> eindeutig benennt.</p></td>
 </tr>
 <tr class="even">
-<td><p>SQLText</p></td>
+<td><p><em>SQLText</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine <strong>Variant</strong> (Untertyp <strong>String</strong>), bei er es sich um eine SQL Anweisung handelt, die die <strong>QueryDef</strong> definiert. Wenn dieses Argument ausgelassen wird, können Sie die <strong>QueryDef</strong> durch Festlegen ihrer <strong><a href="querydef-sql-property-dao.md">SQL</a></strong>-Eigenschaft definieren, bevor oder nachdem Sie sie an eine Auflistung anfügen.</p></td>
@@ -59,7 +59,7 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 QueryDef-Objekt
 

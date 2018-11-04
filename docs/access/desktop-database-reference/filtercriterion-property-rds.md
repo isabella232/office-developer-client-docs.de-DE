@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249267(v=office.15)
 ms:contentKeyID: 48544834
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5a9724d84bed6c89267aeb811936eeb49b49bc17
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f9887551d4d8a141c8390764bcd23c98c59edc26
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929342"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950223"
 ---
 # <a name="filtercriterion-property-rds"></a>FilterCriterion-Eigenschaft (RDS)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Gibt den im Filterwert zu verwendenden Auswertungsoperator an.
 
@@ -28,13 +25,10 @@ Gibt den im Filterwert zu verwendenden Auswertungsoperator an.
 
 ## <a name="parameters"></a>Parameter
 
-  - *DataControl*
-
-  - Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.
-
-  - *String*
-
-  - Ein **String** -Wert, der den Auswertungsoperator für [FilterValue](filtervalue-property-rds.md) zu den Datensätzen angibt. Kann eine der folgenden sein: \<, \<=, \>, \>=, = oder \< \>.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*DataControl* |Eine Objektvariable, die ein [RDS.DataControl](datacontrol-object-rds.md)-Objekt darstellt.|
+|*String* |Ein **String** -Wert, der den Auswertungsoperator für [FilterValue](filtervalue-property-rds.md) zu den Datensätzen angibt. Kann eine der folgenden sein: \<, \<=, \>, \>=, = oder \< \>.|
 
 ## <a name="remarks"></a>Hinweise
 

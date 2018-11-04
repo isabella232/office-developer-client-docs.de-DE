@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249059(v=office.15)
 ms:contentKeyID: 48543924
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6ac3d3e1be9ff703a0e11435b776eabeb15b30eb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4aa04cf3d04b71e0a84279bfc5340e7ee326de48
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920627"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949627"
 ---
 # <a name="supports-method-ado"></a>Supports-Methode (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,9 +29,9 @@ Gibt einen **booleschen** Wert, der angibt, ob alle vom *CursorOptions* -Argumen
 
 ## <a name="parameters"></a>Parameter
 
-  - *CursorOptions*
-
-  - Ein Ausdruck vom Datentyp **Long**, der aus mindestens einem [CursorOptionEnum](cursoroptionenum.md)-Wert besteht.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*CursorOptions* |Ein Ausdruck vom Datentyp **Long**, der aus mindestens einem [CursorOptionEnum](cursoroptionenum.md)-Wert besteht.|
 
 ## <a name="remarks"></a>Hinweise
 
@@ -40,6 +39,6 @@ Mit der **Supports**-Methode bestimmen Sie, welche Funktionalität ein **Records
 
 
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>Supports</STRONG> -Methode kann zwar <STRONG>True</STRONG> für eine bestimmte Funktionalität zurückgeben, aber dies garantiert nicht, dass der Anbieter das Feature unter allen Umständen zur Verfügung stellen kann. Die <STRONG>Supports</STRONG> -Methode gibt einfach zurück, ob der Anbieter die angegebene Funktionalität unterstützen kann, vorausgesetzt bestimmte Bedingungen sind erfüllt. Beispielsweise kann die <STRONG>Supports</STRONG> -Methode angeben, dass ein <STRONG>Recordset</STRONG> -Objekt Aktualisierungen unterstützt, obwohl der Cursor auf einer Verknüpfung mehrerer Tabellen basiert, von denen manche Spalten nicht aktualisierbar sind.</P>
+> [!HINWEIS] Die **Supports** -Methode kann zwar **True** für eine bestimmte Funktionalität zurückgeben, aber dies garantiert nicht, dass der Anbieter das Feature unter allen Umständen zur Verfügung stellen kann. Die **Supports** -Methode gibt einfach zurück, ob der Anbieter die angegebene Funktionalität unterstützen kann, vorausgesetzt bestimmte Bedingungen sind erfüllt. Beispielsweise kann die **Supports** -Methode angeben, dass ein **Recordset** -Objekt Aktualisierungen unterstützt, obwohl der Cursor auf einer Verknüpfung mehrerer Tabellen basiert, von denen manche Spalten nicht aktualisierbar sind.
 
 

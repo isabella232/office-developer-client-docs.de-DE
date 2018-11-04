@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249909(v=office.15)
 ms:contentKeyID: 48547423
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6a429c18890125f1c047c6356d250713ea5ea817
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 893890e43725d8c667ee5f72b396d3ec8947f395
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944900"
+ms.locfileid: "25949369"
 ---
 # <a name="delete-method-adox-collections"></a>Delete-Methode (ADOX Collections)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Entfernt ein Objekt aus einer Auflistung.
 
@@ -28,9 +25,9 @@ Entfernt ein Objekt aus einer Auflistung.
 
 ## <a name="parameters"></a>Parameter
 
-- *Name*
-
-  - Ein **Variant** -Wert, der den Namen oder die Position (Index) des zu löschenden Objekts angibt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Name* |Ein **Variant** -Wert, der den Namen oder die Position (Index) des zu löschenden Objekts angibt.|
 
 ## <a name="remarks"></a>Hinweise
 

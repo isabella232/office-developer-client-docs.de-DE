@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 846d1c0f73ba4a17f166fffc7c1bb4682ad31d49
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a204f6e86a1c50be49400430f53dd99468668a9e
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921166"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949999"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Ruft Datenbank-Schemainformationen vom Anbieter ab.
 
@@ -31,17 +29,11 @@ Gibt ein [Recordset](recordset-object-ado.md)-Objekt zurück, das Schemainformat
 
 ## <a name="parameters"></a>Parameter
 
-  - *QueryType*
-
-  - Ein [SchemaEnum](schemaenum.md)-Wert, der den Typ der auszuführenden Schemaabfrage darstellt.
-
-  - *Criteria*
-
-  - Optional. Ein Array von Abfrage Einschränkungen für jede Option *QueryType* , wie in **SchemaEnum**aufgeführt.
-
-  - *SchemaID*
-
-  - Die GUID für eine vom Anbieter Schemaabfrage nicht vom OLE DB-Spezifikation definiert. Dieser Parameter ist erforderlich, wenn die *QueryType* auf **AdSchemaProviderSpecific**festgelegt ist; Andernfalls wird es nicht verwendet.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*QueryType* |Ein [SchemaEnum](schemaenum.md)-Wert, der den Typ der auszuführenden Schemaabfrage darstellt.|
+|*Criteria* |Optional. Ein Array von Abfrage Einschränkungen für jede Option *QueryType* , wie in **SchemaEnum**aufgeführt.|
+|*SchemaID* |Die GUID für eine vom Anbieter Schemaabfrage nicht vom OLE DB-Spezifikation definiert. Dieser Parameter ist erforderlich, wenn die *QueryType* auf **AdSchemaProviderSpecific**festgelegt ist; Andernfalls wird es nicht verwendet.|
 
 ## <a name="remarks"></a>Hinweise
 

@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052979
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 23357443eeb479a6bdba2a3cc994de226290118a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: eb3f6795ba2e64ebd6be1b04d6aa6aecccef781b
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922622"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950090"
 ---
 # <a name="dbengineopendatabase-method-dao"></a>Mit der Methode DBEngine.OpenDatabase (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ ms.locfileid: "25922622"
 
 *Ausdruck* Eine Variable, die ein **DBEngine** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -49,25 +48,25 @@ ms.locfileid: "25922622"
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Zeichenfolge</strong></p></td>
 <td><p>der Name einer vorhandenen Microsoft Access-Datenbankdatei oder der Datenquellenname (Data Source Name, DSN) einer ODBC-Datenquelle. Weitere Informationen zum Festlegen dieses Wertes finden Sie in der <strong><a href="connection-name-property-dao.md">Name</a></strong> -Eigenschaft.  </p></td>
 </tr>
 <tr class="even">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Legt entsprechend der Angaben unter den Hinweisen verschiedene Optionen für die Datenbank fest.</p></td>
 </tr>
 <tr class="odd">
-<td><p>ReadOnly</p></td>
+<td><p><em>ReadOnly</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p><strong>True</strong>, wenn Sie eine Datenbank nur mit Lesezugriff öffnen möchten, oder <strong>False</strong> (Standard), wenn Sie die Datenbank mit Lese-/Schreibzugriff öffnen möchten.</p></td>
 </tr>
 <tr class="even">
-<td><p>Verbinden</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Gibt verschiedene Verbindungsinformationen an, einschließlich der Kenntwörter.</p></td>
@@ -76,7 +75,7 @@ ms.locfileid: "25922622"
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Datenbank
 
@@ -112,14 +111,13 @@ Wenn Sie eine Datenbank öffnen, wird sie automatisch zur **Databases** -Sammlun
 
 Einige Aspekte sollten bei Verwenden von Dbname:
 
-  - Wenn er sich auf eine Datenbank bezieht, die bereits für den Zugriff durch einen anderen Benutzer geöffnet wurde, tritt ein Fehler auf.
+- Wenn er sich auf eine Datenbank bezieht, die bereits für den Zugriff durch einen anderen Benutzer geöffnet wurde, tritt ein Fehler auf.
 
-  - Wenn er sich nicht auf eine vorhandene Datenbank oder einen gültigen ODBC-Datenquellennamen bezieht, tritt ein Fehler auf.
+- Wenn er sich nicht auf eine vorhandene Datenbank oder einen gültigen ODBC-Datenquellennamen bezieht, tritt ein Fehler auf.
 
-  - Ist eine leere Zeichenfolge ("") und "ODBC;" ist *eine Verbindung herstellen* , wird ein Dialogfeld mit allen registrierten ODBC-Datenquellennamen angezeigt, damit der Benutzer eine Datenbank auswählen kann.
+- Ist eine leere Zeichenfolge ("") und "ODBC;" ist *eine Verbindung herstellen* , wird ein Dialogfeld mit allen registrierten ODBC-Datenquellennamen angezeigt, damit der Benutzer eine Datenbank auswählen kann.
 
 Um eine Datenbank zu schließen und so das **Database** -Objekt aus der **Databases** -Auflistung zu entfernen, verwenden Sie für das Objekt die **[Close](connection-close-method-dao.md)** -Methode.
-
 
 > [!NOTE]
 > [!HINWEIS] Wenn Sie auf eine ODBC-Datenquelle zugreifen, die mit einem Microsoft Access-Datenbankmodul verbunden ist, können Sie die Leistung der Anwendung verbessern, indem Sie ein **Database** -Objekt öffnen, das mit der ODBC-Datenquelle verbunden ist, anstatt einzelne [TableDef](tabledef-object-dao.md) -Objekte mit bestimmten Tabellen in der ODBC-Datenquelle zu verknüpfen.

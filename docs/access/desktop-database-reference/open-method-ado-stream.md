@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250275(v=office.15)
 ms:contentKeyID: 48548833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc0f12e05e65dd24b73dfcf5702fbe09169ba397
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 2c45c10ae75688eb1965307ba8b2fb67c752f81f
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944837"
+ms.locfileid: "25949824"
 ---
 # <a name="open-method-ado-stream"></a>Open-Methode (Stream in ADO)
 
@@ -27,25 +27,13 @@ ms.locfileid: "25944837"
 
 ## <a name="parameters"></a>Parameter
 
-  - *Source*
-
-  - Optional. Ein **Variant** -Wert, der die Quelle der Daten für das **Stream-Objekt**angibt. *Source* kann eine absolute URL-Zeichenfolge enthalten, die auf einem vorhandenen Knoten in einer bekannten Baumstruktur, wie eine e-Mail- oder Dateisystem verweist. Eine URL sollte mithilfe des URL-Schlüsselworts angegeben werden ("URL =*Schema*://*Server*/*Ordner*"). *Quelle* kann auch einen Verweis auf ein bereits geöffnetes [Record](record-object-ado.md) -Objekt enthalten, das den dem **Eintrag**zugeordneten Standarddatenstrom geöffnet wird. Wenn *Source* nicht angegeben wird, ist ein **Stream-Objekt** instanziiert und geöffnet, keine zugrunde liegenden Quelle standardmäßig zugeordnet. Weitere Informationen zu URL-Schemas und deren zugeordneten Anbietern finden Sie unter [Absolute und Relative URLs](absolute-and-relative-urls.md).
-
-  - *Mode*
-
-  - Optional. Eine [ConnectModeEnum](connectmodeenum.md) -Wert, der den Zugriffsmodus für das resultierende **Stream** angibt (beispielsweise Lese-/Schreibzugriff oder schreibgeschützt). Standardwert ist **AdModeUnknown**. Finden Sie unter die [Mode](mode-property-ado.md) -Eigenschaft für Weitere Informationen zu Access-Modi. Wenn der *Authentifizierungsmodus* nicht angegeben ist, wird es von der Source-Objekt geerbt. Beispielsweise, wenn die Quelle **Datensatz** im schreibgeschützten Modus geöffnet wird, wird der **Stream** auch im schreibgeschützten Modus standardmäßig geöffnet werden.
-
-  - *OpenOptions*
-
-  - Optional. Ein [StreamOpenOptionsEnum](streamopenoptionsenum.md)-Wert. Der Standardwert lautet **adOpenStreamUnspecified**.
-
-  - *UserName*
-
-  - Optional. Ein **String** -Wert mit der Benutzeridentifikation, mit der bei Bedarf auf das **Stream** -Objekt zugegriffen wird.
-
-  - *Password*
-
-  - Optional. Ein **String** -Wert, der das Kennwort enthält, mit dem bei Bedarf auf das **Stream** -Objekt zugegriffen wird.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Source* |Optional. Ein **Variant** -Wert, der die Quelle der Daten für das **Stream-Objekt**angibt. *Source* kann eine absolute URL-Zeichenfolge enthalten, die auf einem vorhandenen Knoten in einer bekannten Baumstruktur, wie eine e-Mail- oder Dateisystem verweist. Eine URL sollte mithilfe des URL-Schlüsselworts angegeben werden ("URL =*Schema*://*Server*/*Ordner*"). *Quelle* kann auch einen Verweis auf ein bereits geöffnetes [Record](record-object-ado.md) -Objekt enthalten, das den dem **Eintrag**zugeordneten Standarddatenstrom geöffnet wird. Wenn *Source* nicht angegeben wird, ist ein **Stream-Objekt** instanziiert und geöffnet, keine zugrunde liegenden Quelle standardmäßig zugeordnet. Weitere Informationen zu URL-Schemas und deren zugeordneten Anbietern finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).|
+|*Mode* |Optional. Eine [ConnectModeEnum](connectmodeenum.md) -Wert, der den Zugriffsmodus für das resultierende **Stream** angibt (beispielsweise Lese-/Schreibzugriff oder schreibgeschützt). Standardwert ist **AdModeUnknown**. Finden Sie unter die [Mode](mode-property-ado.md) -Eigenschaft für Weitere Informationen zu Access-Modi. Wenn der *Authentifizierungsmodus* nicht angegeben ist, wird es von der Source-Objekt geerbt. Beispielsweise, wenn die Quelle **Datensatz** im schreibgeschützten Modus geöffnet wird, wird der **Stream** auch im schreibgeschützten Modus standardmäßig geöffnet werden.|
+|*OpenOptions* |Optional. Ein [StreamOpenOptionsEnum](streamopenoptionsenum.md)-Wert. Der Standardwert lautet **adOpenStreamUnspecified**.|
+|*UserName* |Optional. Ein **String** -Wert mit der Benutzeridentifikation, mit der bei Bedarf auf das **Stream** -Objekt zugegriffen wird.|
+|*Password* |Optional. Ein **String** -Wert, der das Kennwort enthält, mit dem bei Bedarf auf das **Stream** -Objekt zugegriffen wird.|
 
 ## <a name="remarks"></a>Hinweise
 

@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249732(v=office.15)
 ms:contentKeyID: 48546686
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5e4025645e5f8b12325ba20497ca6ef2b70175df
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2ea43f565199f346287abf8fd134dec494d37cf5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919451"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949971"
 ---
 # <a name="willexecute-event-ado"></a>WillExecute-Ereignis (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Das **WillExecute** -Ereignis wird unmittelbar vor dem Ausführen eines ausstehenden Befehls für eine Verbindung aufgerufen.
 
@@ -27,39 +25,16 @@ WillExecute*Source*, *CursorType*, *LockType*, *Optionen*, *AdStatus*, *pCommand
 
 ## <a name="parameters"></a>Parameter
 
-  - *Source*
-
-  - Ein **String** -Wert, der einen SQL-Befehl oder den Namen einer gespeicherten Prozedur enthält.
-
-  - *CursorType*
-
-  - Ein [CursorTypeEnum](cursortypeenum.md)-Wert, der den Cursortyp für das **Recordset** -Objekt angibt, dass geöffnet wird. Mit diesem Parameter können Sie den Cursor während ein Vorgang zum [Öffnen](open-method-ado-recordset.md) des **Recordset-Objekt** für jede Art ändern. *CursorType* wird für alle anderen Vorgänge ignoriert.
-
-  - *LockType*
-
-  - Ein [LockTypeEnum](locktypeenum.md)-Wert, der den Sperrtyp für das **Recordset** -Objekt enthält, das geöffnet wird. Mit diesem Parameter können Sie beim **Open** -Vorgang des **Recordset** -Objekts die Sperre in einen beliebigen Typ ändern. *LockType* wird für alle anderen Vorgänge ignoriert.
-
-  - *Options*
-
-  - Ein **Long** -Wert, der die Optionen angibt, die zum Ausführen des Befehls oder zum Öffnen des **Recordset** -Objekts verwendet werden können.
-
-  - *adStatus*
-
-  - [EventStatusEnum](eventstatusenum.md)
-    
-    Legen Sie diesen Parameter vor Rückgabe des Ereignisses auf **adStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern. Oder legen Sie ihn auf **adStatusCancel** fest, um den Abbruch des das Ereignis verursachenden Vorgangs anzufordern.
-
-  - *pCommand*
-
-  - Das [Command](command-object-ado.md)-Objekt, für das diese Ereignisbenachrichtigung gilt.
-
-  - *pCommand*
-
-  - Das [Recordset](recordset-object-ado.md)-Objekt, für das diese Ereignisbenachrichtigung gilt.
-
-  - *pConnection*
-
-  - Das [Connection](connection-object-ado.md)-Objekt, für das diese Ereignisbenachrichtigung gilt.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Source* |Ein **String** -Wert, der einen SQL-Befehl oder den Namen einer gespeicherten Prozedur enthält.|
+|*CursorType* |Ein [CursorTypeEnum](cursortypeenum.md)-Wert, der den Cursortyp für das **Recordset** -Objekt angibt, dass geöffnet wird. Mit diesem Parameter können Sie den Cursor während ein Vorgang zum [Öffnen](open-method-ado-recordset.md) des **Recordset-Objekt** für jede Art ändern. *CursorType* wird für alle anderen Vorgänge ignoriert.|
+|*LockType* |Ein [LockTypeEnum](locktypeenum.md)-Wert, der den Sperrtyp für das **Recordset** -Objekt enthält, das geöffnet wird. Mit diesem Parameter können Sie beim **Open** -Vorgang des **Recordset** -Objekts die Sperre in einen beliebigen Typ ändern. *LockType* wird für alle anderen Vorgänge ignoriert.|
+|*Options* |Ein **Long** -Wert, der die Optionen angibt, die zum Ausführen des Befehls oder zum Öffnen des **Recordset** -Objekts verwendet werden können.|
+|*adStatus* |[EventStatusEnum](eventstatusenum.md). Legen Sie diesen Parameter vor Rückgabe des Ereignisses auf **adStatusUnwantedEvent** fest, um nachfolgende Benachrichtigungen zu verhindern. Oder legen Sie ihn auf **adStatusCancel** fest, um den Abbruch des das Ereignis verursachenden Vorgangs anzufordern.|
+|*pCommand* |Das [Command](command-object-ado.md)-Objekt, für das diese Ereignisbenachrichtigung gilt.|
+|*pCommand* |Das [Recordset](recordset-object-ado.md)-Objekt, für das diese Ereignisbenachrichtigung gilt.|
+|*pConnection* |Das [Connection](connection-object-ado.md)-Objekt, für das diese Ereignisbenachrichtigung gilt.|
 
 ## <a name="remarks"></a>Hinweise
 

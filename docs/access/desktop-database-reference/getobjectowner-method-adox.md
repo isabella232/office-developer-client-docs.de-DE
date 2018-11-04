@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249451(v=office.15)
 ms:contentKeyID: 48545585
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b1a37b0f341c849358b649c2222df2955fd88f5d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7243e70c95da3502a3c7b86e691858715730a955
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927813"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949244"
 ---
 # <a name="getobjectowner-method-adox"></a>GetObjectOwner-Methode (ADOX)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Gibt den Besitzer eines Objekts in einem [Catalog](catalog-object-adox.md)-Objekt zurück.
 
@@ -31,17 +29,11 @@ Gibt einen **String** -Wert zurück, der den [Namen](name-property-adox.md) des 
 
 ## <a name="parameters"></a>Parameter
 
-  - *ObjectName*
-
-  - Ein **String** -Wert, der den Namen des Objekts angibt, für das der Besitzer zurückgegeben werden soll.
-
-  - *ObjectType*
-
-  - Ein **Long** -Wert, der eine der [ObjectTypeEnum](objecttypeenum.md)-Konstanten sein kann, die den Typ des Objekts angibt, für das der Besitzer zurückgegeben werden soll.
-
-  - *ObjectTypeId*
-
-  - Optional. Ein **Variant** -Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **AdPermObjProviderSpecific**festgelegt ist; Andernfalls wird es nicht verwendet.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*ObjectName* |Ein **String** -Wert, der den Namen des Objekts angibt, für das der Besitzer zurückgegeben werden soll.|
+|*ObjectType* |Ein **Long** -Wert, der eine der [ObjectTypeEnum](objecttypeenum.md)-Konstanten sein kann, die den Typ des Objekts angibt, für das der Besitzer zurückgegeben werden soll.|
+|*ObjectTypeId* |Optional. Ein **Variant** -Wert, der die GUID für einen Anbieterobjekttyp angibt, der nicht durch die OLE DB-Spezifikation definiert ist. Dieser Parameter ist erforderlich, wenn *ObjectType* auf **AdPermObjProviderSpecific**festgelegt ist; Andernfalls wird es nicht verwendet.|
 
 ## <a name="remarks"></a>Hinweise
 

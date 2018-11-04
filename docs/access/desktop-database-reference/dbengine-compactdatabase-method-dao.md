@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052936
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e898a089843774792b1ed48cea65086331a94ec6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: df7533376bf6f6d3c5387173a90c7d5e1a5013cd
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931218"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25950048"
 ---
 # <a name="dbenginecompactdatabase-method-dao"></a>DBEngine.CompactDatabase-Methode (DAO)
 
@@ -32,7 +32,7 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglic
 
 *Ausdruck* Ein Ausdruck, der ein **DBEngine** -Objekt zurückgibt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -51,19 +51,19 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglic
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>SrcName</p></td>
+<td><p><em>SrcName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Zeichenfolge</strong></p></td>
 <td><p>Gibt eine vorhandene geschlossene Datenbank an. Sie können einen vollständigen Pfad und Dateinamen, wie etwa werden &quot;C:\db1.mdb&quot;. Wenn der Dateiname eine Erweiterung aufweist, müssen Sie es angeben. Wenn Ihr Netzwerk unterstützt, Sie können auch angeben einen Netzwerkpfad wie &quot; \\server1\share1\dir1\db1.mdb&quot;</p></td>
 </tr>
 <tr class="even">
-<td><p>DstName</p></td>
+<td><p><em>DstName</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Zeichenfolge</strong></p></td>
 <td><p>Der Dateiname (und Pfad) der komprimierten Datenbank, die Sie erstellen. Sie können auch einen Netzwerkpfad angeben. Mit diesem Argument kann nicht die gleiche Datenbankdatei angegeben werden wie mit SrcName.</p></td>
 </tr>
 <tr class="odd">
-<td><p>DstLocale</p></td>
+<td><p><em>DstLocale</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variante</strong></p></td>
 <td><p>Ein Zeichenfolgenausdruck, der eine Sortierreihenfolge zum Erstellen von DstName angibt, wie unter „Hinweise" angegeben.</p>
@@ -74,21 +74,16 @@ Kopiert und komprimiert eine geschlossene Datenbank und bietet Ihnen die Möglic
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Options</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variante</strong></p></td>
 <td><p>Optional. Ein Konstante oder Kombination aus Konstanten, mit der mindestens eine Option angegeben wird, wie unter „Hinweise" angegeben. Sie können Optionen durch Summieren der entsprechenden Konstanten kombinieren.</p></td>
 </tr>
 <tr class="odd">
-<td><p>password</p></td>
+<td><p><em>password</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
-<td><p>Ein Zeichenfolgenausdruck, einen Verschlüsselungsschlüssel enthält, wenn die Datenbank verschlüsselt ist. Die Zeichenfolge &quot;; Pwd =&quot; dem tatsächlichen Kennwort vorausgehen muss. Wenn Sie eine Kennworteinstellung in DstLocale einschließen, wird diese Einstellung ignoriert.</p>
-
-> [!NOTE]
-> Dies ist veraltete Parameter und wird nicht unterstützt. ACCDB-Format. Zum Verschlüsseln von ein. ACCDB-Datei, verwenden Sie die "Pwd =" option Zeichenfolge. [!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.
-
-
+<td><p>Ein Zeichenfolgenausdruck, einen Verschlüsselungsschlüssel enthält, wenn die Datenbank verschlüsselt ist. Die Zeichenfolge &quot;; Pwd =&quot; dem tatsächlichen Kennwort vorausgehen muss. Wenn Sie eine Kennworteinstellung in DstLocale einschließen, wird diese Einstellung ignoriert.</p><p><strong>Hinweis</strong>: Dies ist veraltete Parameter und wird nicht unterstützt. ACCDB-Format. Zum Verschlüsseln von ein. ACCDB-Datei, verwenden Sie die "Pwd =" option Zeichenfolge. [!HINWEIS] Verwenden Sie sichere Kennwörter aus Groß- und Kleinbuchstaben, Zahlen und Symbolen. Unsichere Kennwörter enthalten keine Kombination dieser Elemente. Sicheres Kennwort: Y6dh!et5. Unsicheres Kennwort: Haus27. Verwenden Sie ein sicheres Kennwort, das Sie sich gut merken können, damit Sie es nicht aufschreiben müssen.</p>
 </td>
 </tr>
 </tbody>

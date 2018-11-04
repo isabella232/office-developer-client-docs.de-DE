@@ -6,19 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250217(v=office.15)
 ms:contentKeyID: 48548588
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5aab77571b0b12c6b26cd15af386c9ee89162681
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 296232b05041c1e059b5134fdde11fceac4e3d43
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930014"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949894"
 ---
 # <a name="moverecord-method-ado"></a>MoveRecord-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
  
-
 Verschiebt die durch einen [Record](record-object-ado.md) dargestellte Entität an einen anderen Speicherort.
 
 ## <a name="syntax"></a>Syntax
@@ -27,29 +25,14 @@ Verschiebt die durch einen [Record](record-object-ado.md) dargestellte Entität 
 
 ## <a name="parameters"></a>Parameter
 
-  - *Source*
-
-  - Optional. Ein **String**-Wert mit einer URL, die den zu verschiebenden **Record** identifiziert. Wenn *Source* nicht angegeben ist oder eine leere Zeichenfolge angibt, wird das durch diesen **Record** dargestellte Objekt verschoben. Stellt **Record** beispielsweise eine Datei dar, wird der Inhalt der Datei an den durch *Destination* angegebenen Speicherort verschoben.
-
-  - *Destination*
-
-  - Optional. Ein **String** -Wert, der enthält eine URL des Speicherorts, in dem *Quelle* verschoben werden sollen.
-
-  - *UserName*
-
-  - Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.
-
-  - *Password*
-
-  - Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.
-
-  - *Options*
-
-  - Optional. Ein [MoveRecordOptionsEnum](moverecordoptionsenum.md)-Wert, dessen Standardwert **adMoveUnspecified** lautet. Gibt das Verhalten dieser Methode an.
-
-  - *Async*
-
-  - Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.
+|Parameter|Beschreibung|
+|:--------|:----------|
+|*Source* |Optional. Ein **String**-Wert mit einer URL, die den zu verschiebenden **Record** identifiziert. Wenn *Source* nicht angegeben ist oder eine leere Zeichenfolge angibt, wird das durch diesen **Record** dargestellte Objekt verschoben. Stellt **Record** beispielsweise eine Datei dar, wird der Inhalt der Datei an den durch *Destination* angegebenen Speicherort verschoben.|
+|*Destination* |Optional. Ein **String** -Wert, der enthält eine URL des Speicherorts, in dem *Quelle* verschoben werden sollen.|
+|*UserName* |Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.|
+|*Password* |Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.|
+|*Options* |Optional. Ein [MoveRecordOptionsEnum](moverecordoptionsenum.md)-Wert, dessen Standardwert **adMoveUnspecified** lautet. Gibt das Verhalten dieser Methode an.|
+|*Async* |Optional. **Boolean** -Wert, der im Wenn **True**, gibt an, dass diese Operation asynchron sein sollte.|
 
 ## <a name="return-value"></a>Rückgabewert
 
