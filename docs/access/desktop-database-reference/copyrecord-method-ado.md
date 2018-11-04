@@ -6,70 +6,51 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249459(v=office.15)
 ms:contentKeyID: 48545605
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f25d3f7cb576a9fb8ddf79a887bb3c795144682
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 161cfec0e8450ef7e80c47bc8fb1b8304790e7c5
+ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919031"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "25949908"
 ---
-# <a name="copyrecord-method-ado"></a><span data-ttu-id="e2c34-102">CopyRecord-Methode (ADO)</span><span class="sxs-lookup"><span data-stu-id="e2c34-102">CopyRecord method (ADO)</span></span>
+# <a name="copyrecord-method-ado"></a><span data-ttu-id="b907c-102">CopyRecord-Methode (ADO)</span><span class="sxs-lookup"><span data-stu-id="b907c-102">CopyRecord method (ADO)</span></span>
 
+<span data-ttu-id="b907c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b907c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="e2c34-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e2c34-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b907c-104">Kopiert eine durch einen **Record** dargestellte Entität an einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="b907c-104">Copies a entity represented by a **Record** to another location.</span></span>
 
-<span data-ttu-id="e2c34-104">Kopiert eine durch einen **Record** dargestellte Entität an einen anderen Speicherort.</span><span class="sxs-lookup"><span data-stu-id="e2c34-104">Copies a entity represented by a **Record** to another location.</span></span>
+## <a name="syntax"></a><span data-ttu-id="b907c-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="b907c-105">Syntax</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="e2c34-105">Syntax</span><span class="sxs-lookup"><span data-stu-id="e2c34-105">Syntax</span></span>
+<span data-ttu-id="b907c-106">*Datensatz*. CopyRecord (*Quelle*, *Ziel*, *Benutzername*, *Kennwort*, *Optionen*, *Async*)</span><span class="sxs-lookup"><span data-stu-id="b907c-106">*Record*.CopyRecord (*Source*, *Destination*, *UserName*, *Password*, *Options*, *Async*)</span></span>
 
-<span data-ttu-id="e2c34-106">*Datensatz*. CopyRecord (*Quelle*, *Ziel*, *Benutzername*, *Kennwort*, *Optionen*, *Async*)</span><span class="sxs-lookup"><span data-stu-id="e2c34-106">*Record*.CopyRecord (*Source*, *Destination*, *UserName*, *Password*, *Options*, *Async*)</span></span>
+## <a name="parameters"></a><span data-ttu-id="b907c-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="b907c-107">Parameters</span></span>
 
-## <a name="parameters"></a><span data-ttu-id="e2c34-107">Parameter</span><span class="sxs-lookup"><span data-stu-id="e2c34-107">Parameters</span></span>
+|<span data-ttu-id="b907c-108">Parameter</span><span class="sxs-lookup"><span data-stu-id="b907c-108">Parameter</span></span>|<span data-ttu-id="b907c-109">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b907c-109">Description</span></span>|
+|:--------|:----------|
+|<span data-ttu-id="b907c-110">*Source*</span><span class="sxs-lookup"><span data-stu-id="b907c-110">*Source*</span></span> |<span data-ttu-id="b907c-111">Optional.</span><span class="sxs-lookup"><span data-stu-id="b907c-111">Optional.</span></span> <span data-ttu-id="b907c-112">Ein **String** -Wert, der eine URL, die Entität kopiert werden soll (beispielsweise eine Datei oder ein Verzeichnis) enthält.</span><span class="sxs-lookup"><span data-stu-id="b907c-112">A **String** value that contains a URL specifying the entity to be copied (for example, a file or directory).</span></span> <span data-ttu-id="b907c-113">Wenn *Source* ausgelassen wird oder eine leere Zeichenfolge angibt, wird die Datei oder das Verzeichnis vom aktuellen [Datensatz](record-object-ado.md) dargestellt kopiert werden.</span><span class="sxs-lookup"><span data-stu-id="b907c-113">If *Source* is omitted or specifies an empty string, the file or directory represented by the current [Record](record-object-ado.md) will be copied.</span></span>|
+|<span data-ttu-id="b907c-114">*Destination*</span><span class="sxs-lookup"><span data-stu-id="b907c-114">*Destination*</span></span> |<span data-ttu-id="b907c-115">Optional.</span><span class="sxs-lookup"><span data-stu-id="b907c-115">Optional.</span></span> <span data-ttu-id="b907c-116">Ein **String** -Wert, der eine URL des Speicherorts, in dem *Quelle* kopiert werden, enthält.</span><span class="sxs-lookup"><span data-stu-id="b907c-116">A **String** value that contains a URL specifying the location where *Source* will be copied.</span></span>|
+|<span data-ttu-id="b907c-117">*UserName*</span><span class="sxs-lookup"><span data-stu-id="b907c-117">*UserName*</span></span> |<span data-ttu-id="b907c-p103">Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.</span><span class="sxs-lookup"><span data-stu-id="b907c-p103">Optional. A **String** value that contains the user ID that, if needed, authorizes access to *Destination*.</span></span>|
+|<span data-ttu-id="b907c-120">*Password*</span><span class="sxs-lookup"><span data-stu-id="b907c-120">*Password*</span></span> |<span data-ttu-id="b907c-p104">Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.</span><span class="sxs-lookup"><span data-stu-id="b907c-p104">Optional. A **String** value that contains the password that, if needed, verifies *UserName*.</span></span>|
+|<span data-ttu-id="b907c-123">*Options*</span><span class="sxs-lookup"><span data-stu-id="b907c-123">*Options*</span></span> |<span data-ttu-id="b907c-p105">Optional. Ein [CopyRecordOptionsEnum](copyrecordoptionsenum.md)-Wert, der den Standardwert **adCopyUnspecified** besitzt. Gibt das Verhalten dieser Methode an.</span><span class="sxs-lookup"><span data-stu-id="b907c-p105">Optional. A [CopyRecordOptionsEnum](copyrecordoptionsenum.md) value that has a default value of **adCopyUnspecified**. Specifies the behavior of this method.</span></span>|
+|<span data-ttu-id="b907c-127">*Async*</span><span class="sxs-lookup"><span data-stu-id="b907c-127">*Async*</span></span> |<span data-ttu-id="b907c-p106">Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.</span><span class="sxs-lookup"><span data-stu-id="b907c-p106">Optional. A **Boolean** value that, when **True**, specifies that this operation should be asynchronous.</span></span>|
 
-  - <span data-ttu-id="e2c34-108">*Source*</span><span class="sxs-lookup"><span data-stu-id="e2c34-108">*Source*</span></span>
+## <a name="return-value"></a><span data-ttu-id="b907c-130">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="b907c-130">Return value</span></span>
 
-  - <span data-ttu-id="e2c34-109">Optional.</span><span class="sxs-lookup"><span data-stu-id="e2c34-109">Optional.</span></span> <span data-ttu-id="e2c34-110">Ein **String** -Wert, der eine URL, die Entität kopiert werden soll (beispielsweise eine Datei oder ein Verzeichnis) enthält.</span><span class="sxs-lookup"><span data-stu-id="e2c34-110">A **String** value that contains a URL specifying the entity to be copied (for example, a file or directory).</span></span> <span data-ttu-id="e2c34-111">Wenn *Source* ausgelassen wird oder eine leere Zeichenfolge angibt, wird die Datei oder das Verzeichnis vom aktuellen [Datensatz](record-object-ado.md) dargestellt kopiert werden.</span><span class="sxs-lookup"><span data-stu-id="e2c34-111">If *Source* is omitted or specifies an empty string, the file or directory represented by the current [Record](record-object-ado.md) will be copied.</span></span>
+<span data-ttu-id="b907c-p107">Ein **String**-Wert, der in der Regel den Wert für *Destination* zurückgibt. Der genaue Wert, der zurückgegeben wird, ist jedoch vom Anbieter abhängig.</span><span class="sxs-lookup"><span data-stu-id="b907c-p107">A **String** value that typically returns the value of *Destination*. However, the exact value returned is provider-dependent.</span></span>
 
-  - <span data-ttu-id="e2c34-112">*Destination*</span><span class="sxs-lookup"><span data-stu-id="e2c34-112">*Destination*</span></span>
+## <a name="remarks"></a><span data-ttu-id="b907c-133">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b907c-133">Remarks</span></span>
 
-  - <span data-ttu-id="e2c34-113">Optional.</span><span class="sxs-lookup"><span data-stu-id="e2c34-113">Optional.</span></span> <span data-ttu-id="e2c34-114">Ein **String** -Wert, der eine URL des Speicherorts, in dem *Quelle* kopiert werden, enthält.</span><span class="sxs-lookup"><span data-stu-id="e2c34-114">A **String** value that contains a URL specifying the location where *Source* will be copied.</span></span>
+<span data-ttu-id="b907c-134">Die Werte der *Quell-* und *Zielserver* dürfen nicht identisch sein; andernfalls tritt ein Laufzeitfehler.</span><span class="sxs-lookup"><span data-stu-id="b907c-134">The values of *Source* and *Destination* must not be identical; otherwise, a run-time error occurs.</span></span> <span data-ttu-id="b907c-135">Mindestens einer der Server-, Pfad- oder Ressourcennamen muss unterschiedlich sein.</span><span class="sxs-lookup"><span data-stu-id="b907c-135">At least one of the server, path, or resource names must differ.</span></span>
 
-  - <span data-ttu-id="e2c34-115">*UserName*</span><span class="sxs-lookup"><span data-stu-id="e2c34-115">*UserName*</span></span>
+<span data-ttu-id="b907c-p109">Wenn **adCopyNonRecursive** nicht angegeben ist, werden alle untergeordneten Ebenen (z. B. Unterverzeichnisse) von *Source* rekursiv kopiert. Bei einem rekursiven Vorgang darf es sich bei der *Destination* nicht um ein Unterverzeichnis von *Source* handeln, andernfalls kann der Vorgang nicht abgeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="b907c-p109">All children (for example, subdirectories) of *Source* are copied recursively, unless **adCopyNonRecursive** is specified. In a recursive operation, *Destination* must not be a subdirectory of *Source*; otherwise, the operation will not complete.</span></span>
 
-  - <span data-ttu-id="e2c34-p103">Optional. Ein **String**-Wert mit der Benutzer-ID, die bei Bedarf Zugriff auf die *Destination* gewährt.</span><span class="sxs-lookup"><span data-stu-id="e2c34-p103">Optional. A **String** value that contains the user ID that, if needed, authorizes access to *Destination*.</span></span>
-
-  - <span data-ttu-id="e2c34-118">*Password*</span><span class="sxs-lookup"><span data-stu-id="e2c34-118">*Password*</span></span>
-
-  - <span data-ttu-id="e2c34-p104">Optional. Ein **String**-Wert, der das Kennwort enthält, das bei Bedarf den *UserName* bestätigt.</span><span class="sxs-lookup"><span data-stu-id="e2c34-p104">Optional. A **String** value that contains the password that, if needed, verifies *UserName*.</span></span>
-
-  - <span data-ttu-id="e2c34-121">*Options*</span><span class="sxs-lookup"><span data-stu-id="e2c34-121">*Options*</span></span>
-
-  - <span data-ttu-id="e2c34-p105">Optional. Ein [CopyRecordOptionsEnum](copyrecordoptionsenum.md)-Wert, der den Standardwert **adCopyUnspecified** besitzt. Gibt das Verhalten dieser Methode an.</span><span class="sxs-lookup"><span data-stu-id="e2c34-p105">Optional. A [CopyRecordOptionsEnum](copyrecordoptionsenum.md) value that has a default value of **adCopyUnspecified**. Specifies the behavior of this method.</span></span>
-
-  - <span data-ttu-id="e2c34-125">*Async*</span><span class="sxs-lookup"><span data-stu-id="e2c34-125">*Async*</span></span>
-
-  - <span data-ttu-id="e2c34-p106">Optional. Ein **Boolean** -Wert, der im Fall von **True** angibt, dass dieser Vorgang asynchron sein soll.</span><span class="sxs-lookup"><span data-stu-id="e2c34-p106">Optional. A **Boolean** value that, when **True**, specifies that this operation should be asynchronous.</span></span>
-
-## <a name="return-value"></a><span data-ttu-id="e2c34-128">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="e2c34-128">Return value</span></span>
-
-<span data-ttu-id="e2c34-p107">Ein **String**-Wert, der in der Regel den Wert für *Destination* zurückgibt. Der genaue Wert, der zurückgegeben wird, ist jedoch vom Anbieter abhängig.</span><span class="sxs-lookup"><span data-stu-id="e2c34-p107">A **String** value that typically returns the value of *Destination*. However, the exact value returned is provider-dependent.</span></span>
-
-## <a name="remarks"></a><span data-ttu-id="e2c34-131">Hinweise</span><span class="sxs-lookup"><span data-stu-id="e2c34-131">Remarks</span></span>
-
-<span data-ttu-id="e2c34-132">Die Werte der *Quell-* und *Zielserver* dürfen nicht identisch sein; andernfalls tritt ein Laufzeitfehler.</span><span class="sxs-lookup"><span data-stu-id="e2c34-132">The values of *Source* and *Destination* must not be identical; otherwise, a run-time error occurs.</span></span> <span data-ttu-id="e2c34-133">Mindestens einer der Server-, Pfad- oder Ressourcennamen muss unterschiedlich sein.</span><span class="sxs-lookup"><span data-stu-id="e2c34-133">At least one of the server, path, or resource names must differ.</span></span>
-
-<span data-ttu-id="e2c34-p109">Wenn **adCopyNonRecursive** nicht angegeben ist, werden alle untergeordneten Ebenen (z. B. Unterverzeichnisse) von *Source* rekursiv kopiert. Bei einem rekursiven Vorgang darf es sich bei der *Destination* nicht um ein Unterverzeichnis von *Source* handeln, andernfalls kann der Vorgang nicht abgeschlossen werden.</span><span class="sxs-lookup"><span data-stu-id="e2c34-p109">All children (for example, subdirectories) of *Source* are copied recursively, unless **adCopyNonRecursive** is specified. In a recursive operation, *Destination* must not be a subdirectory of *Source*; otherwise, the operation will not complete.</span></span>
-
-<span data-ttu-id="e2c34-136">Diese Methode schlägt fehl, wenn das *Ziel* eine vorhandene Entität (beispielsweise eine Datei oder ein Verzeichnis) identifiziert, es sei denn, **AdCopyOverWrite** angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="e2c34-136">This method fails if *Destination* identifies an existing entity (for example, a file or directory), unless **adCopyOverWrite** is specified.</span></span>
-
+<span data-ttu-id="b907c-138">Diese Methode schlägt fehl, wenn das *Ziel* eine vorhandene Entität (beispielsweise eine Datei oder ein Verzeichnis) identifiziert, es sei denn, **AdCopyOverWrite** angegeben ist.</span><span class="sxs-lookup"><span data-stu-id="b907c-138">This method fails if *Destination* identifies an existing entity (for example, a file or directory), unless **adCopyOverWrite** is specified.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="e2c34-137">[!WICHTIG] Verwenden Sie die Option **adCopyOverWrite** nur nach sorgfältiger Überlegung.</span><span class="sxs-lookup"><span data-stu-id="e2c34-137">Use the **adCopyOverWrite** option judiciously.</span></span> <span data-ttu-id="e2c34-138">Beispielsweise wird durch das Angeben dieser Option beim Kopieren einer Datei in ein Verzeichnis das Verzeichnis wird *Löschen* und Ersetzen Sie ihn mit der Datei.</span><span class="sxs-lookup"><span data-stu-id="e2c34-138">For example, specifying this option when copying a file to a directory will *delete* the directory and replace it with the file.</span></span>
-
-
+> <span data-ttu-id="b907c-139">[!WICHTIG] Verwenden Sie die Option **adCopyOverWrite** nur nach sorgfältiger Überlegung.</span><span class="sxs-lookup"><span data-stu-id="b907c-139">Use the **adCopyOverWrite** option judiciously.</span></span> <span data-ttu-id="b907c-140">Beispielsweise wird durch das Angeben dieser Option beim Kopieren einer Datei in ein Verzeichnis das Verzeichnis wird *Löschen* und Ersetzen Sie ihn mit der Datei.</span><span class="sxs-lookup"><span data-stu-id="b907c-140">For example, specifying this option when copying a file to a directory will *delete* the directory and replace it with the file.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="e2c34-139">[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="e2c34-139">URLs using the http scheme will automatically invoke the [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md).</span></span> <span data-ttu-id="e2c34-140">Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).</span><span class="sxs-lookup"><span data-stu-id="e2c34-140">For more information, see [Absolute and relative URLs](absolute-and-relative-urls.md).</span></span>
+> <span data-ttu-id="b907c-141">[!HINWEIS] Bei URLs, die das HTTP-Schema verwenden, wird der [Microsoft OLE DB Provider für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) automatisch aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="b907c-141">URLs using the http scheme will automatically invoke the [Microsoft OLE DB Provider for Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md).</span></span> <span data-ttu-id="b907c-142">Weitere Informationen finden Sie unter [Absolute und relative URLs](absolute-and-relative-urls.md).</span><span class="sxs-lookup"><span data-stu-id="b907c-142">For more information, see [Absolute and relative URLs](absolute-and-relative-urls.md).</span></span>
 
 
