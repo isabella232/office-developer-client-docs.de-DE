@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1053357
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 65611960044ea62e42be1ea9d6c6a54d5d42d5a8
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: dc32087ad924a81eea5290d84ffb63dc4ad5e1ff
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949768"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999050"
 ---
 # <a name="databasesynchronize-method-dao"></a>Database.Synchronize-Methode (DAO)
 
@@ -42,7 +42,7 @@ Synchronisiert zwei Replikate (gilt nur für Microsoft Access-Arbeitsbereiche).
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

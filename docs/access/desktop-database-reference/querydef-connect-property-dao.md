@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845479(v=office.15)
 ms:contentKeyID: 48543398
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1208ac064c92e2e3793e8f2e3ceb4502cbfa4d6c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4956d9d2652ab8268a5f49a9b7edc63ebe2878c7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922006"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997981"
 ---
 # <a name="querydefconnect-property-dao"></a>QueryDef.Connect-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -157,12 +156,8 @@ Für Daten in Microsoft Exchange sollte der erforderliche MAPILEVEL-Schlüssel i
 
 Für ein **QueryDef** -Objekt in einer Microsoft Access-Arbeitsbereich können Sie die **Connect** -Eigenschaft mit der ReturnsRecords-Eigenschaft verwenden, um eine ODBC SQL Pass-Through-Abfrage zu erstellen. Die "databasetype" der Verbindungszeichenfolge ist "ODBC;", und den Rest der Zeichenfolge enthält Informationen zu den ODBC-Treiber verwendet, um die remote-Daten zugreifen. Weitere Informationen finden Sie in der Dokumentation des Treibers.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Vor dem Festlegen der <STRONG>ReturnsRecords</STRONG>-Eigenschaft müssen Sie die <STRONG>Connect</STRONG>-Eigenschaft festlegen.</P>
-> <LI>
-> <P>Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.</P></LI></UL>
+> - Vor dem Festlegen der **ReturnsRecords**-Eigenschaft müssen Sie die **Connect**-Eigenschaft festlegen.
+> - Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.
 
 

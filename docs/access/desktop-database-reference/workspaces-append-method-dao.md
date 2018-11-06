@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845644(v=office.15)
 ms:contentKeyID: 48543498
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5b3d53a26d4f60c0ef385af23d4cb074be2e101d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ac8e1c9624932bf24fb47cd8a038f60b5933dad7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927613"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997651"
 ---
 # <a name="workspacesappend-method-dao"></a>Workspaces.Append-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Fügt der **Workspaces**-Auflistung ein neues **Workspace**-Objekt hinzu.
 
 *Ausdruck* Eine Variable, die ein **Workspaces** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,14 +37,14 @@ Fügt der **Workspaces**-Auflistung ein neues **Workspace**-Objekt hinzu.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Objekt</p></td>
+<td><p><em>Object</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Objekt</strong></p></td>
 <td><p>Eine Objektvariable, die das Feld darstellt, das an die Auflistung angefügt wird.</p></td>

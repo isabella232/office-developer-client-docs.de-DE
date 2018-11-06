@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053064
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 322b59c6556b73186fe4034e64c75d9104d29560
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d5ce90c362d6d8cddcbf04326b5443b2c1dda2ae
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926899"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996790"
 ---
 # <a name="tabledefconnect-property-dao"></a>TableDef.Connect-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -159,12 +158,6 @@ Für Daten in Microsoft Exchange sollte der erforderliche MAPILEVEL-Schlüssel i
 
 Für Basistabellen in einer Micorosoft Access-Datenbank ist der Wert der **Connect** -Eigenschaft eine Null-Zeichenfolge ("").
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>[!HINWEIS] Vor dem Festlegen der <STRONG>ReturnsRecords</STRONG> -Eigenschaft müssen Sie die <STRONG>Connect</STRONG> -Eigenschaft festlegen.</P>
-> <LI>
-> <P>Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.</P></LI></UL>
-
-
+> - [!HINWEIS] Vor dem Festlegen der **ReturnsRecords** -Eigenschaft müssen Sie die **Connect** -Eigenschaft festlegen.
+> - Sie müssen die Zugriffsberechtigungen für den Computer besitzen, der den Datenbankserver enthält, auf den Sie zugreifen wollen.

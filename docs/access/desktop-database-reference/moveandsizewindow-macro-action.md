@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197001(v=office.15)
 ms:contentKeyID: 48546090
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fd5bbe18af823e2b36772ef209db18ba6cb4b1d4
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8737de80c38626b72933eb15a59e08ab0452ce74
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925268"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998812"
 ---
 # <a name="moveandsizewindow-macro-action"></a>MoveAndSizeWindow-Makroaktion
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Wenn Sie das Dokument im Fensteroptionen auf überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden eingerichtet haben, können Sie die **Verschiebenundgrößeändernfenster** -Aktion verwenden, verschieben oder die Größe des aktiven Fensters. Informationen zum Festlegen der Dokumentfensteroptionen finden Sie unter "Hinweise".
 
@@ -61,17 +59,14 @@ Wenn Sie ein Argument leer lassen, verwendet Microsoft Access die aktuelle Einst
 
 Sie müssen einen Wert für mindestens ein Argument eingeben.
 
-
 > [!NOTE]
-> <P>Jeder Messung ist in Zoll oder Zentimeter, abhängig von den regionalen Einstellungen in Windows-Systemsteuerung.</P>
-
-
+> Jeder Messung ist in Zoll oder Zentimeter, abhängig von den regionalen Einstellungen in Windows-Systemsteuerung.
 
 ## <a name="remarks"></a>Hinweise
 
 Zum Einrichten einer Anwendung auf überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden, verwenden Sie die folgende Schritte aus:
 
-1.  und klicken Sie dann auf **Optionen**
+1.  Klicken Sie auf **Optionen**
 
 2.  Klicken Sie auf **aktuelle Datenbank**.
 
@@ -83,11 +78,9 @@ Diese Aktion entspricht dem Klicken auf **Verschieben** oder **Größe** im **Sy
 
 Sie können diese Aktion für jedes Fenster in jeder Ansicht verwenden.
 
-**Tipps**
-
-  - Um ein Fenster verschieben, ohne seine Größe zu ändern, geben Sie Werte für die **rechts** und **unten** Argumente, aber lassen Sie die **Breite** und **Höhe** Argumente leer.
-
-  - Um ein Fenster Größe ändern möchten, ohne es zu verschieben, geben Sie Werte für die **Breite** und **Höhe** Argumente, aber lassen Sie die Argumente **rechts** und **Abwärts** leer.
+> [!TIP]
+> - Um ein Fenster verschieben, ohne seine Größe zu ändern, geben Sie Werte für die **rechts** und **unten** Argumente, aber lassen Sie die **Breite** und **Höhe** Argumente leer.
+> - Um ein Fenster Größe ändern möchten, ohne es zu verschieben, geben Sie Werte für die **Breite** und **Höhe** Argumente, aber lassen Sie die Argumente **rechts** und **Abwärts** leer.
 
 Um die **Verschiebenundgrößeändernfenster** -Aktion in einem Visual Basic für Applikationen (VBA)-Modul auszuführen, verwenden Sie die **MoveSize** -Methode des **DoCmd** -Objekts.
 

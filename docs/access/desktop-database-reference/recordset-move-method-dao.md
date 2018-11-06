@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052941
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1bb39565e087a5c679e87e0e40dccb3eb4446511
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 02eb8d5e85356cd8a2f7744c057371f0ec901a20
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926087"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997504"
 ---
 # <a name="recordsetmove-method-dao"></a>Recordset.Move-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ Verschiebt die Position des aktuellen Datensatzes in ein **[Recordset](recordset
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -42,20 +41,20 @@ Verschiebt die Position des aktuellen Datensatzes in ein **[Recordset](recordset
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Zeilen</p></td>
+<td><p><em>Rows</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Die Anzahl von Zeilen, um die sich die Position verschiebt. Ist rows größer als 0, wird die Position nach vorne verschoben (Richtung Dateiende). Ist rows kleiner als 0, wird die Position nach hinten verschoben (Richtung Dateianfang).</p></td>
 </tr>
 <tr class="even">
-<td><p>Anfangslesezeichen</p></td>
+<td><p><em>Anfangslesezeichen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein Wert, der ein Lesezeichen identifiziert. Bei Angabe von startbookmark beginnt die Verschiebung relativ zu diesem Lesezeichen. Andernfalls beginnt Move mit dem aktuellen Datensatz.</p></td>
@@ -72,16 +71,10 @@ Wenn Sie mithilfe von **Move** den aktuellen Datensatzzeiger hinter dem letzten 
 
 Wenn für die **BOF**- oder die **EOF**-Eigenschaft der Wert **True** festgelegt ist und Sie versuchen, die **Move**-Methode ohne ein zulässiges Lesezeichen zu verwenden, tritt ein Laufzeitfehler auf.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Wenn Sie <STRONG>Move</STRONG> auf ein <STRONG>Recordset</STRONG>-Objekt vom Typ Vorwärts anwenden, muss das Zeilenargument eine positive Ganzzahl sein, und Lesezeichen sind nicht zulässig. Sie können sich also nur vorwärts bewegen.</P>
-> <LI>
-> <P>Verwenden Sie eine der Methoden <STRONG>MoveFirst</STRONG>, <STRONG>MoveLast</STRONG>, <STRONG>MoveNext</STRONG> oder <STRONG>MovePrevious</STRONG>, um den ersten, letzten, nächsten oder vorherigen Datensatz in einem <STRONG>Recordset</STRONG> zum aktuellen Datensatz zu machen.</P>
-> <LI>
-> <P>Das Verwenden von <STRONG>Move</STRONG> mit einer Zeilenanzahl gleich 0 ist eine einfache Möglichkeit, die zugrunde liegenden Daten für den aktuellen Datensatz abzurufen. Das ist hilfreich, wenn Sie sicherstellen möchten, dass der aktuelle Datensatz die aktuellsten Daten aus den Basistabellen enthält. Außerdem werden alle anstehenden <STRONG><A href="recordset2-edit-method-dao.md">Edit</A></STRONG> - oder <STRONG><A href="recordset-addnew-method-dao.md">AddNew</A></STRONG> -Aufrufe abgebrochen.</P></LI></UL>
-
+> - Wenn Sie **Move** auf ein **Recordset**-Objekt vom Typ Vorwärts anwenden, muss das Zeilenargument eine positive Ganzzahl sein, und Lesezeichen sind nicht zulässig. Sie können sich also nur vorwärts bewegen.
+> - Verwenden Sie eine der Methoden **MoveFirst**, **MoveLast**, **MoveNext** oder **MovePrevious**, um den ersten, letzten, nächsten oder vorherigen Datensatz in einem **Recordset** zum aktuellen Datensatz zu machen.
+> - Das Verwenden von **Move** mit einer Zeilenanzahl gleich 0 ist eine einfache Möglichkeit, die zugrunde liegenden Daten für den aktuellen Datensatz abzurufen. Das ist hilfreich, wenn Sie sicherstellen möchten, dass der aktuelle Datensatz die aktuellsten Daten aus den Basistabellen enthält. Außerdem werden alle anstehenden **[Edit](recordset2-edit-method-dao.md)** - oder **[AddNew](recordset-addnew-method-dao.md)** -Aufrufe abgebrochen.
 
 
 ## <a name="example"></a>Beispiel

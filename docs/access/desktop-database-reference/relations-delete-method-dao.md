@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836064(v=office.15)
 ms:contentKeyID: 48548438
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 462581e5b1ab3f09b697ee7f4b763a889d8119fd
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7c7a42098bcc64a58f8a004c0f1d5a35fd4f34b7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925527"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998924"
 ---
 # <a name="relationsdelete-method-dao"></a>Relations.Delete-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Löscht das angegebene **Relation**-Objekt aus der **Relations**-Auflistung.
 
 *Ausdruck* Eine Variable, die ein **Relations** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,14 +37,14 @@ Löscht das angegebene **Relation**-Objekt aus der **Relations**-Auflistung.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Der Name der zu löschenden Beziehung.</p></td>

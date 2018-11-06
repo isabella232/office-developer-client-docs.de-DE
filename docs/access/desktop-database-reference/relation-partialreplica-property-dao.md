@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053557
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 30b23b424b8c76f0681d0128348590c1558e81ec
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 11f8017c01cec9af2da26bedaf689d69554e554c
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929384"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998188"
 ---
 # <a name="relationpartialreplica-property-dao"></a>Relation.PartialReplica-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -46,6 +45,10 @@ Um alle Bestellungen aus der Region Kalifornien (CA) zu replizieren, müssen Sie
     
 
 > [!NOTE]
-> <P>Achten Sie beim Festlegen eines Replikatfilters oder einer Replikatbeziehung darauf, dass Datensätze im Teilreplikat, die die Einschränkungskriterien nicht erfüllen, aus dem Teilreplikat entfernt werden, jedoch nicht aus dem vollständigen Replikat. Wenn Sie z. B. die ReplicaFilter-Eigenschaft des TableDef-Objekts der Tabelle Customers im Teilreplikat auf "Region = 'CA'" festlegen und dann die Datenbank neu auffüllen, werden alle Datensätze für Kunden in Kalifornien eingefügt bzw. aktualisiert. Wenn Sie dann die ReplicaFilter-Eigenschaft auf "Region = 'FL'" (Florida) festlegen und die Datenbank neu auffüllen, werden alle Datensätze der Region Kalifornien aus dem Teilreplikat  entfernt. Alle Datensätze der Kunden aus Florida aus dem vollständigen Replikat werden eingefügt. Aus dem vollständigen Replikat werden keine Datensätze gelöscht. Vor dem Festlegen der ReplicaFilter- oder PartialReplica-Eigenschaft sollte das Teilreplikat, in dem Sie diese Eigenschaften festlegen, mit dem vollständigen Replikat synchronisiert werden. Damit wird sichergestellt, dass ausstehende Änderungen im Teilreplikat in das vollständige Replikat aufgenommen werden, bevor Datensätze aus dem Teilreplikat entfernt werden.</P>
+> Wenn Sie einen Replikatfilter oder Replikat Relation festlegen, achten Sie darauf, dass Datensätze aus dem Teilreplikat, die die Einschränkungskriterien erfüllen, nicht aus dem Teilreplikat, aber nicht aus dem vollständigen Replikat entfernt werden sollen. Angenommen, Sie die **ReplicaFilter** -Eigenschaft festlegen, auf die Kunden **TableDef** in dem Teilreplikat zu "Region = 'CA'" und Sie dann erneut die Datenbank aufzufüllen. Dies wird einfügen oder aktualisieren alle Datensätze für Kunden-basierte Kalifornien (CA). 
+> 
+> Wenn Sie dann die **ReplicaFilter** -Eigenschaft zum Zurücksetzen "Region = 'FL'" und die Datenbank wieder auffüllen, alle Kalifornien (CA) Region Datensätze aus dem Teilreplikat entfernt werden und alle Datensätze aus Florida-basierte Kunden aus dem vollständigen Replikat eingefügt werden soll. Es werden keine Datensätze aus dem vollständigen Replikat gelöscht werden. 
+>
+> Bevor Sie die **ReplicaFilter** - oder **PartialReplica** -Eigenschaft festlegen, ist es ratsam, synchronisieren das Teilreplikat, in dem Sie diese Eigenschaften mit dem vollständigen Replikat festlegen. Dadurch wird sichergestellt, dass mit dem vollständigen Replikat ausstehenden Änderungen aus dem Teilreplikat zusammengeführt wird, bevor alle Datensätze aus dem Teilreplikat entfernt werden.
 
 

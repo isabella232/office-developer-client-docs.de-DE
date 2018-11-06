@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm111536
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ae05da3d07cc17f54584d11282721ac83f23ccd8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ff903c459a351f69b272224ca29f9cc717498f0a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926542"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996853"
 ---
 # <a name="transfersqldatabase-macro-action"></a>TransferSQLDatenbank-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Verwenden Sie in einem Access-Projekt die **TransferSQLDatenbank** -Aktion, um eine Microsoft SQL Server-Datenbank der Version 7.0 oder höher zu übertragen. Weitere Informationen zum Transferieren einer Datenbank finden Sie in der Dokumentation zu SQL Server.
 
-
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
 
 ## <a name="setting"></a>Einstellung
 
@@ -82,17 +78,12 @@ Die **TransferSQLDatenbank** -Aktion kopiert standardmäßig Daten, Datendefinit
 
 Voraussetzungen für das Transferieren einer Datenbank:
 
-  - Sie müssen auf dem Zielserver ein Mitglied der Rolle sysadmin sein. (Auf dem Quellserver ist keine spezielle Rolle erforderlich.)
+- Sie müssen auf dem Zielserver ein Mitglied der Rolle sysadmin sein. (Auf dem Quellserver ist keine spezielle Rolle erforderlich.)
 
-<!-- end list -->
+- Der aktuelle SQL Server, der mit dem Access-Projekt verbunden ist, und der Zielserver, an den Sie die Datenbank transferieren, müssen SQL Server, Version 7.0 oder höher, sein.
 
-  - Der aktuelle SQL Server, der mit dem Access-Projekt verbunden ist, und der Zielserver, an den Sie die Datenbank transferieren, müssen SQL Server, Version 7.0 oder höher, sein.
-
-
-> [!NOTE]
-> <P>[!HINWEIS] Verbindungsserver werden während eines Datenbanktransfers nicht transferiert.</P>
-
-
+  > [!NOTE]
+  > [!HINWEIS] Verbindungsserver werden während eines Datenbanktransfers nicht transferiert.
 
 Verwenden Sie die **TransferSQLDatabase** -Methode des **DoCmd** -Objekts, um die **TransferSQLDatenbank** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 

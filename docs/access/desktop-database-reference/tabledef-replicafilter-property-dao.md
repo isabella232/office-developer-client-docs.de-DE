@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1055548
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dbd8ecc670742d6b9f88dd9c608d2304e26a8d09
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dc8f9103cffb4df4a4db327da9c8ff36e3ec2555
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929664"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997805"
 ---
 # <a name="tabledefreplicafilter-property-dao"></a>TableDef.ReplicaFilter-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -78,11 +77,8 @@ Wenn Ihre Anwendung Replikatfilter ändert, sollten Sie die folgenden Schritte a
 
 Sie können einen Filter entfernen, indem Sie für die **ReplicaFilter**-Eigenschaft den Wert **False** festlegen. Wenn Sie alle Filter entfernen und die **PopulatePartial**-Methode aufrufen, erscheinen keine Datensätze in den replizierten Tabellen im Teilreplikat.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Wenn ein Replikatfilter geändert wurde und die <STRONG>Synchronize</STRONG>-Methode aufgerufen wird, ohne zuvor <STRONG>PopulatePartial</STRONG> aufzurufen, tritt ein auffangbarer Fehler auf.</P>
-
-
+> [!HINWEIS] Wenn ein Replikatfilter geändert wurde und die **Synchronize**-Methode aufgerufen wird, ohne zuvor **PopulatePartial** aufzurufen, tritt ein auffangbarer Fehler auf.
 
 ## <a name="example"></a>Beispiel
 

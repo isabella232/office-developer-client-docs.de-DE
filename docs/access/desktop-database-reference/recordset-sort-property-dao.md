@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053063
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 18547162e7a0d64cc0ac7b0cdb2f0afa79185985
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b8dc3c551c9aa75da205717fef682f0abed7a54b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926262"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998728"
 ---
 # <a name="recordsetsort-property-dao"></a>Recordset.Sort-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -40,11 +39,8 @@ Die Standardsortierreihenfolge ist aufsteigend (A bis Z bzw. 0 bis 100).
 
 Die **Sort** -Eigenschaft wird nicht auf Tabelle oder Weiterleiten – Typ **Recordset** -Objekte angewendet. Um ein **Recordset** -Objekt vom Typ Tabelle sortieren möchten, verwenden Sie die **[Index](recordset-index-property-dao.md)** -Eigenschaft.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] In vielen Fällen ist es schneller, ein neues <STRONG>Recordset</STRONG>-Objekt mithilfe einer SQL-Anweisung zu öffnen, die die Sortierkriterien enthält.</P>
-
-
+> [!HINWEIS] In vielen Fällen ist es schneller, ein neues **Recordset**-Objekt mithilfe einer SQL-Anweisung zu öffnen, die die Sortierkriterien enthält.
 
 ## <a name="example"></a>Beispiel
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822832(v=office.15)
 ms:contentKeyID: 48547514
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5774eb4c9965cad7679d37754fd9a1f431ddaa48
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 3bb08ff90bb6a9981ef0d25c3beb1652a9415a34
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923413"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996895"
 ---
 # <a name="workspacecreatedatabase-method-dao"></a>Workspace.CreateDatabase-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 
 *Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,20 +37,20 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine Zeichenfolge bis zu 255 Zeichen lang sein darf, die den Namen der Datenbankdatei ist, den Sie erstellen. Der vollständige Pfad und der Dateiname kann sein. Wenn Ihr Netzwerk unterstützt, Sie können auch angeben einen Netzwerkpfad wie &quot; \\server1\share1\dir1\db1&quot;. Sie können mit dieser Methode nur Microsoft Access-Datenbankdateien erstellen.</p></td>
 </tr>
 <tr class="even">
-<td><p>Verbinden</p></td>
+<td><p><em>Connect</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><ul>
@@ -64,7 +63,7 @@ Erstellt ein neues **[Database](database-object-dao.md)** -Objekt, speichert die
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Option</p></td>
+<td><p><em>Option</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante oder eine Kombination aus Konstanten, die eine oder mehrere Optionen angibt, wie unter Einstellungen festgelegt. Sie können Optionen kombinieren, indem Sie die Summe der entsprechenden Konstanten bilden.</p></td>
@@ -176,6 +175,7 @@ Sie können eine der folgenden Konstanten für das Argument locale verwenden, um
 </tbody>
 </table>
 
+<br/>
 
 Sie können eine oder mehrere der folgenden Konstanten im Argument options verwenden, um anzugeben, welche Version das Datenformat haben soll und ob die Datenbank verschlüsselt werden soll.
 
@@ -222,6 +222,7 @@ Sie können eine oder mehrere der folgenden Konstanten im Argument options verwe
 </tbody>
 </table>
 
+<br/>
 
 Wenn Sie die Verschlüsselungskonstante weglassen, erstellt **CreateDatabase** eine nicht verschlüsselte Datenbank.
 

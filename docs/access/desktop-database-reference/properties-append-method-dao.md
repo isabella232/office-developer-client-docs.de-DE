@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193232(v=office.15)
 ms:contentKeyID: 48544609
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c3cc60a1f3a3b7114b3996f70c5bfe4541d60bb7
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 97b39c44e529ae6c360ddf69ac9b45b0c340d500
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928523"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997035"
 ---
 # <a name="propertiesappend-method-dao"></a>Properties.Append-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Fügt der **Properties**-Auflistung ein neues **Property**-Objekt hinzu.
 
 *Ausdruck* Eine Variable, die ein **Properties** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,14 +37,14 @@ Fügt der **Properties**-Auflistung ein neues **Property**-Objekt hinzu.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Objekt</p></td>
+<td><p><em>Object</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Objekt</strong></p></td>
 <td><p>Eine Objektvariable, die das Feld darstellt, das an die Auflistung angefügt wird.</p></td>

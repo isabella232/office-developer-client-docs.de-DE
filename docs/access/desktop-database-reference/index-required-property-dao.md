@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052963
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 44fa827be7359c598ff610313be4c2acf30d5e50
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d5daadde111c18831108c1149170b71960d84b64
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920564"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996839"
 ---
 # <a name="indexrequired-property-dao"></a>Index.Required-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -32,11 +31,8 @@ Gibt einen Wert zurück, der angibt, ob ein **[Field](field-object-dao.md)** -Ob
 
 ## <a name="remarks"></a>Bemerkungen
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie diese Eigenschaft sowohl für ein <STRONG>Index</STRONG>- als auch für ein <STRONG>Field</STRONG>-Objekt festlegen können, sollten Sie sie für das <STRONG>Field</STRONG>-Objekt festlegen. Die Gültigkeit des Werts dieser Eigenschaft wird zuerst für das <STRONG>Field</STRONG>-Objekt und erst danach für das <STRONG>Index</STRONG>-Objekt überprüft.</P>
-
-
+> [!HINWEIS] Wenn Sie diese Eigenschaft sowohl für ein **Index**- als auch für ein **Field**-Objekt festlegen können, sollten Sie sie für das **Field**-Objekt festlegen. Die Gültigkeit des Werts dieser Eigenschaft wird zuerst für das **Field**-Objekt und erst danach für das **Index**-Objekt überprüft.
 
 Die Verfügbarkeit der **Required**-Eigenschaft hängt von dem Objekt ab, das die [Fields](fields-collection-dao.md)-Auflistung enthält, wie in der folgenden Tabelle dargestellt.
 

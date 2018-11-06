@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835959(v=office.15)
 ms:contentKeyID: 48548367
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6d0489361a3c739527fb44db0c566986dc2a40a0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 652bd4ce63164463d58f30a0259a7e4208f118ee
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921397"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998736"
 ---
 # <a name="recordset2getrows-method-dao"></a>Recordset2.GetRows-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt a
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,14 +37,14 @@ Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt a
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>NumRows</p></td>
+<td><p><em>NumRows</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Die Anzahl der abzurufenden Zeilen.</p></td>
@@ -54,29 +53,29 @@ Ruft mehrere Zeilen aus einem **[Recordset](recordset-object-dao.md)** -Objekt a
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Variant
 
 ## <a name="remarks"></a>Hinweise
 
-Mit der **GetRows**-Methode kopieren Sie Datensätze aus einem **Recordset**. **GetRows** gibt ein zweidimensionales Array zurück. Der erste Index identifiziert das Feld und der zweite die Nummer der Zeile. Beispielsweise stellt intField das Feld dar, und intRecord identifiziert die Zeilennummer:
+Verwenden Sie die **GetRows** -Methode, um Datensätze aus einem **Recordset** zu kopieren. **GetRows** gibt ein zweidimensionales Array zurück. Das erste Subskript identifiziert das Feld und das zweite identifiziert die Zeilenanzahl. Beispielsweise `intField` das Feld dar und `intRecord` Nummer der Zeile:
 
-AvarRecords (IntField, IntRecord)
+`avarRecords(intField, intRecord)`
 
 Um den ersten Feldwert in der zweiten zurückgegebenen Zeile zu erhalten, verwenden Sie folgenden Code:
 
-Feld1 = avarRecords(0,1)
+`field1 = avarRecords(0,1)`
 
 Um den zweiten Feldwert in der ersten Zeile zu erhalten, verwenden Sie folgenden Code:
 
-Field2 = avarRecords(1,0)
+`field2 = avarRecords(1,0)`
 
 Die avarRecords-Variable wird automatisch zu einem zweidimensionalen Array, wenn **GetRows** Daten zurückgibt.
 
 Wenn Sie mehr Zeilen anfordern, als verfügbar sind, gibt **GetRows** nur die verfügbaren Zeilen zurück. Sie können mithilfe der Visual Basic für Applikationen-Funktion **UBound** feststellen, wie viele Zeilen durch **GetRows** abgerufen wurden, denn die Größe des Arrays entspricht der Anzahl zurückgegebener Zeilen. Wenn Sie die Ergebnisse in einer **Variant** aufgerufen VARIANZA zurückgegeben, konnte Sie beispielsweise den folgenden Code verwenden, um zu bestimmen, wie viele Zeilen tatsächlich zurückgegeben wurden:
 
-NumReturned = UBound(varA,2) + 1
+`numReturned = UBound(varA,2) + 1`
 
 Sie müssen "+ 1" verwenden, da sich die erste zurückgegebene Zeile im Element 0 des Arrays befindet. Wie viele Zeilen abgerufen werden können, hängt von dem verfügbaren Speicher ab. Verwenden Sie GetRows nicht zum Abrufen einer ganzen Tabelle in ein Array, wenn sie groß ist.
 

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff836567(v=office.15)
 ms:contentKeyID: 48548614
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 666e27b176fb973298c791f7473dbda6fe37c7b0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 598944aadb344ab97d7561e7ef55a67041c4fbf1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928831"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998748"
 ---
 # <a name="recordset2clone-method-dao"></a>Recordset2.Clone-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Erstellt ein doppeltes **[Recordset](recordset-object-dao.md)** -Objekt, das auf
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Recordset
 
@@ -38,15 +37,9 @@ Die **Clone**-Methode können Sie verwenden, um eine Operation für eine Datensa
 
 Das Anwenden der **[Close](connection-close-method-dao.md)** -Methode auf das ursprüngliche oder das duplizierte Objekt wirkt sich nicht auf das jeweils andere Objekt aus. Angenommen, Sie verwenden **Close** für die ursprüngliche Datensatzgruppe, so wird der Klon nicht geschlossen.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Wenn Sie den Klon einer Datensatzgruppe in einer ausstehenden Transaktion schließen, wird eine implizite <STRONG>Rollback</STRONG>-Operation verursacht.</P>
-> <LI>
-> <P>Wenn Sie ein <STRONG>Recordset</STRONG>-Tabellenobjekt in einem Microsoft Access-Arbeitsbereich klonen, wird die <STRONG><A href="recordset2-index-property-dao.md">Index</A></STRONG>-Eigenschafteneinstellung nicht in die neue Kopie des Recordset geklont. Sie müssen die <STRONG>Index</STRONG>-Eigenschafteneinstellung manuell kopieren.</P></LI></UL>
-
-
+> - Wenn Sie den Klon einer Datensatzgruppe in einer ausstehenden Transaktion schließen, wird eine implizite **Rollback**-Operation verursacht.
+> - Wenn Sie ein **Recordset**-Tabellenobjekt in einem Microsoft Access-Arbeitsbereich klonen, wird die **[Index](recordset2-index-property-dao.md)**-Eigenschafteneinstellung nicht in die neue Kopie des Recordset geklont. Sie müssen die **Index**-Eigenschafteneinstellung manuell kopieren.
 
 ## <a name="example"></a>Beispiel
 

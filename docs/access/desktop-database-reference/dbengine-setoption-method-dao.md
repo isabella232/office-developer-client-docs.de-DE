@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1088781
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2d6d40d88051e708944dadfabb984d44cc8c5cbc
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 55baceac9523400c5e646fbc4c1e7bb411219697
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949887"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998588"
 ---
 # <a name="dbenginesetoption-method-dao"></a>DBEngine.SetOption-Methode (DAO)
 
@@ -41,7 +41,7 @@ Werte für die Schlüssel des Microsoft Access-Datenbankmoduls werden in der Win
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

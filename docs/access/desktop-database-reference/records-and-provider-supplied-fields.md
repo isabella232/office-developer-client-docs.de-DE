@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250022(v=office.15)
 ms:contentKeyID: 48547776
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a2de9f48b9f35afb208006118add97c9b29c4885
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 3e01d9dd1dce81911b11b7de8ca8c6ad5a19eaaf
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944522"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998322"
 ---
 # <a name="records-and-provider-supplied-fields"></a>Datensätze und vom Anbieter bereitgestellte Felder
 
@@ -23,7 +23,7 @@ Wenn das **Record** -Objekt aus einem **Recordset** -Objekt geöffnet wird, enth
 
 Durch den Anbieter können zusätzliche Felder eingefügt werden, die als ergänzende Merkmale des **Record** -Objekts dienen. Daher verfügt ein **Record** -Objekt möglicherweise über eindeutige Felder, die im gesamten **Recordset** -Objekt oder in einem aus einer anderen Zeile des **Recordset** -Objekts abgeleiteten **Record** -Objekt nicht enthalten sind.
 
-Beispielsweise können alle Zeilen eines von einer E-Mail-Datenquelle abgeleiteten Recordset-Objekts die Spalten Von, An und Betreff enthalten. Ein von diesem Recordset-Objekt abgeleitetes Record-Objekt hat die gleichen Felder. Das Record-Objekt kann jedoch auch andere für die jeweilige Nachricht eindeutige Felder enthalten, die durch dieses Record-Objekt dargestellt werden, z. B. Anlage und CC (Kopie).
+Beispielsweise können alle Zeilen eines **Recordset-Objekt** aus einer e-Mail-Datenquelle abgeleiteten Spalten als aus zu haben, und Betreff. Ein **Datensatz** abgeleitet, **Recordset-Objekts** die gleichen Felder verwendet werden. Der **Datensatz** müssen jedoch auch andere Felder für die bestimmten Nachricht dargestellt durch diesen **Datensatz**, wie Anlagen und "Cc" (Carbon Copy, Blindkopie) eindeutig.
 
 Obwohl das **Record** -Objekt und die aktuelle Zeile des **Recordset** -Objekts die gleichen Felder enthalten, unterscheiden sie sich, da die Objekte **Record** und **Recordset** über verschiedene Methoden und Eigenschaften verfügen.
 

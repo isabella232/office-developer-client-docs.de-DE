@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248906(v=office.15)
 ms:contentKeyID: 48543364
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b152715c104c9c3a4d503254d0dc36622e29006c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: ea0f47e8ad86ecac4dd2423c289e3891cd7c6719
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25943829"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998525"
 ---
 # <a name="rds-programming-model-in-detail"></a>RDS-Programmiermodell im detail
 
@@ -62,8 +62,7 @@ Das **RDS.DataControl** -Objekt verfügt außerdem über eigene Methoden für da
 
 Von RDS werden zwei eigene Ereignisse unterstützt, die vom ADO-Ereignismodell unabhängig sind. Das [OnReadyStateChange](onreadystatechange-event-rds.md) -Ereignis wird aufgerufen, wenn die **RDS. DataControl** [ReadyState](readystate-property-rds.md) -Eigenschaft ändert, sodass Sie benachrichtigt werden, wenn ein asynchroner Vorgang erfolgreich abgeschlossen wurde, beendet oder ist ein Fehler aufgetreten. Das [onError](onerror-event-rds.md)-Ereignis wird bei jedem Auftreten eines Fehlers aufgerufen, selbst wenn der Fehler während einer asynchronen Operation auftritt.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Durch Microsoft Internet Explorer werden zwei zusätzliche Ereignisse für RDS bereitgestellt - <STRONG>onDataSetChanged</STRONG> (das <STRONG>Recordset</STRONG> -Objekt ist funktionsfähig, es werden aber dennoch Zeilen abgerufen) und <STRONG>onDataSetComplete</STRONG> (das Abrufen von Zeilen durch das <STRONG>Recordset</STRONG> ist beendet).</P>
+> [!HINWEIS] Durch Microsoft Internet Explorer werden zwei zusätzliche Ereignisse für RDS bereitgestellt - **onDataSetChanged** (das **Recordset** -Objekt ist funktionsfähig, es werden aber dennoch Zeilen abgerufen) und **onDataSetComplete** (das Abrufen von Zeilen durch das **Recordset** ist beendet).
 
 

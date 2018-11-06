@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249825(v=office.15)
 ms:contentKeyID: 48547072
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c03a6495b6d95723469d14dc1c3d9d2972760865
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: ef617f91aa6f36969932a4d8f2914df2de935787
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937169"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998161"
 ---
 # <a name="solutions-for-remote-data-access"></a>Lösungen für Remotedatenzugriff
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,11 +27,8 @@ Beispielsweise enthält Ihre Intranet-Webseite eine Anwendung in Microsoft Visua
 
 In diesem Beispiel wurde durch die Anwendung nie direkt eine Verbindung mit der Datenquelle hergestellt; dies erfolgte über IIS. Und durch IIS wurde mithilfe von ADO auf die Daten zugegriffen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die Client-/Serveranwendung muss nicht auf dem Internet oder einem Intranet basieren (d. h. webbasiert sein) - sie kann ausschließlich aus kompilierten Programmen in einem lokalen Netzwerk bestehen. Der typische Fall ist jedoch eine webbasierte Anwendung.</P>
-
-
+> Die Client/Server-Anwendung muss nicht auf das Internet oder Intranet basieren (d. h., webbasierte) – Es konnte bestehen kompilierte Programme auf einem lokalen Netzwerk. Jedoch ist der typische Fall eine webbasierte Anwendung.
 
 Da die zurückgegebenen Informationen möglicherweise von manchen visuellen Steuerelementen, z. B. von Rastern, Kontrollkästchen oder Listen, verwendet werden, müssen die zurückgegebenen Informationen leicht durch ein visuelles Steuerelement verwendet werden können.
 
@@ -40,5 +36,5 @@ Sie benötigen eine einfache und effiziente Anwendungsprogrammierschnittstelle, 
 
 ## <a name="the-solution"></a>Die Lösung
 
-Durch RDS wird ein Programmiermodell definiert - die Reihenfolge der Aktivitäten, die notwendig sind, um auf eine Datenquelle zuzugreifen und sie zu aktualisieren -, um über einen Vermittler auf Daten zuzugreifen, z. B. über Internetinformationsdienste (Internet Information Services, IIS). Im Programmiermodell wird die gesamte Funktionalität von RDS zusammengefasst.
+RDS definiert ein Programmiermodell – die Reihenfolge der Aktivitäten, die erforderlich sind, um den Zugriff auf und Aktualisieren einer Datenquelle – den Zugriff auf Daten über die Vermittlung, wie Internetinformationsdienste (Internet Information Services, IIS). Das Programmiermodell zusammengefasst, die gesamte Funktionalität von RDS.
 

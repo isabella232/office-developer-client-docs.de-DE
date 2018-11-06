@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052967
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d6b8d8e7e721ecbe3be08f654fbe8c682294e49d
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 4c4abedd0ce4da7bbb35187ec1d24af81586bd5b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949705"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997063"
 ---
 # <a name="documentcreateproperty-method-dao"></a>Document.CreateProperty-Methode (DAO)
 
@@ -41,7 +41,7 @@ Erstellt ein neues, benutzerdefiniertes **[Property](property-object-dao.md)** -
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

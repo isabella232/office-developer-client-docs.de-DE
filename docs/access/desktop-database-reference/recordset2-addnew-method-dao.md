@@ -6,19 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191874(v=office.15)
 ms:contentKeyID: 48543792
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 67ddd40c6973b323820efbfa67d14c88f0c0b21a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 71390c18322b0058086bf45d94da31a6e85a6f2d
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928810"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996937"
 ---
 # <a name="recordset2addnew-method-dao"></a>Recordset2.AddNew-Methode (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
  
-
 Erstellt einen neuen Datensatz für ein aktualisierbares **Recordset2**-Objekt.
 
 ## <a name="syntax"></a>Syntax
@@ -33,33 +31,24 @@ Verwenden Sie die AddNew-Methode, um einen neuen Datensatz zu erstellen und zum 
 
 Mit der **[Update](recordset2-update-method-dao.md)** -Methode können Sie nach dem Ändern des neuen Datensatzes die Änderungen speichern und den Datensatz zum **Recordset2** hinzufügen. Es treten erst dann Änderungen in der Datenbank auf, wenn Sie die **Update**-Methode verwenden.
 
+> [!NOTE]
+> [!HINWEIS] Wenn Sie eine **AddNew**-Methode aufrufen und dann durch einen beliebigen Vorgang zu einem anderen Datensatz wechseln, ohne **Update** zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Wenn Sie außerdem das **Recordset2** schließen oder die Prozedur beenden, die das **Recordset2** oder dessen **[Database](database-object-dao.md)** -Objekt deklariert, wird der neue Datensatz ohne Warnung verworfen.
 
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie eine <STRONG>AddNew</STRONG>-Methode aufrufen und dann durch einen beliebigen Vorgang zu einem anderen Datensatz wechseln, ohne <STRONG>Update</STRONG> zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Wenn Sie außerdem das <STRONG>Recordset2</STRONG> schließen oder die Prozedur beenden, die das <STRONG>Recordset2</STRONG> oder dessen <STRONG><A href="database-object-dao.md">Database</A></STRONG> -Objekt deklariert, wird der neue Datensatz ohne Warnung verworfen.</P>
-
-
-
-
-> [!NOTE]
-> <P>[!HINWEIS] Wenn Sie <STRONG>AddNew</STRONG> in einem Microsoft Access-Arbeitsbereich verwenden und das Datenbankmodul eine neue Seite für den aktuellen Datensatz erstellen muss, ist die Seitensperre pessimistisch. Passt der neue Datensatz hingegen auf eine vorhandene Seite, ist die Seitensperre optimistisch.</P>
-
-
+> [!HINWEIS] Wenn Sie **AddNew** in einem Microsoft Access-Arbeitsbereich verwenden und das Datenbankmodul eine neue Seite für den aktuellen Datensatz erstellen muss, ist die Seitensperre pessimistisch. Passt der neue Datensatz hingegen auf eine vorhandene Seite, ist die Seitensperre optimistisch.
 
 Wenn Sie noch nicht zum letzten Datensatz des **Recordset2**-Objekts gewechselt sind, werden Datensätze, die durch andere Prozesse zu Basistabellen hinzugefügt wurden, möglicherweise einbezogen, wenn sie hinter dem aktuellen Datensatz liegen. Wenn Sie einen Datensatz zu Ihrem eigenen **Recordset2** hinzufügen, ist er im **Recordset2** sichtbar und wird in die zugrunde liegende Tabelle einbezogen, in der er für neue **Recordset2**-Objekte sichtbar wird.
 
 Die Position des neuen Datensatzes hängt vom Typ des **Recordset2**-Objekts ab:
 
-  - In einem Recordset2-Objekt vom Typ Dynaset werden Datensätze an das Ende des Recordset-Objekts eingefügt, unabhängig davon, welche Regeln in Bezug auf die Sortierung oder Reihenfolge beim Öffnen des Recordset-Objekts gültig waren.
+- In einem Recordset2-Objekt vom Typ Dynaset werden Datensätze an das Ende des Recordset-Objekts eingefügt, unabhängig davon, welche Regeln in Bezug auf die Sortierung oder Reihenfolge beim Öffnen des Recordset-Objekts gültig waren.
 
-  - In einem Recordset2-Objekt vom Typ Tabelle, dessen Index-Eigenschaft festgelegt wurde, werden Datensätze in der Sortierreihenfolge an ihrer richtigen Position zurückgegeben. Falls Sie die Index-Eigenschaft nicht festgelegt haben, werden neue Datensätze am Ende des Recordset-Objekts zurückgegeben.
+- In einem Recordset2-Objekt vom Typ Tabelle, dessen Index-Eigenschaft festgelegt wurde, werden Datensätze in der Sortierreihenfolge an ihrer richtigen Position zurückgegeben. Falls Sie die Index-Eigenschaft nicht festgelegt haben, werden neue Datensätze am Ende des Recordset-Objekts zurückgegeben.
 
 Der Datensatz, der vor dem Verwenden von **AddNew** aktuell war, bleibt der aktuelle Datensatz. Wenn Sie den neuen Datensatz zum aktuellen Datensatz machen möchten, können Sie die **[Bookmark](recordset2-bookmark-property-dao.md)** -Eigenschaft auf das durch die **[LastModified](recordset2-lastmodified-property-dao.md)** -Eigenschaft identifizierte Lesezeichen festlegen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index im Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im <STRONG>AddNew</STRONG> -, <STRONG>Delete</STRONG> - oder <STRONG>Edit</STRONG> -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf.</P>
-
-
+> [!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index im Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im **AddNew** -, **Delete** - oder **Edit** -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf.
 
 ## <a name="example"></a>Beispiel
 

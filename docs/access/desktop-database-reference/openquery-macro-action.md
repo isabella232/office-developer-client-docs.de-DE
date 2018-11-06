@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm89069
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1e5e031b0dc89626a40934cb42f8f54a0eb8d057
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: fe08f6c6ab0eba46f7fff2713403f56e82983357
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928110"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999064"
 ---
 # <a name="openquery-macro-action"></a>OpenQuery-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Mit der **ÖffnenAbfrage** -Aktion können Sie eine Auswahl- oder Kreuztabellenabfrage in der Datenblattansicht, in der Entwurfsansicht oder in der Seitenansicht öffnen. Mit dieser Aktion wird eine Aktionsabfrage ausgeführt. Sie können für die Abfrage auch einen Dateneingabemodus auswählen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion ist nur in einer Umgebung mit der Access-Datenbank (MDB oder ACCDB) verfügbar. Wenn Sie eine Umgebung mit einem Access-Projekt (ADP) verwenden, lesen Sie die Informationen zu den Aktionen <STRONG>ÖffnenSicht</STRONG>, <STRONG>ÖffnenGespeicherteProzedur</STRONG> oder <STRONG>ÖffnenFunktion</STRONG>.</P>
-
-
+> [!HINWEIS] Diese Aktion ist nur in einer Umgebung mit der Access-Datenbank (MDB oder ACCDB) verfügbar. Wenn Sie eine Umgebung mit einem Access-Projekt (ADP) verwenden, lesen Sie die Informationen zu den Aktionen **ÖffnenSicht**, **ÖffnenGespeicherteProzedur** oder **ÖffnenFunktion**.
 
 ## <a name="setting"></a>Einstellung
 
@@ -68,11 +64,9 @@ Wenn Sie **Datenblatt** für das Argument **Ansicht** verwenden, zeigt Access da
 
 Die **ÖffnenAbfrage** -Aktion bewirkt dasselbe, wie wenn Sie auf die Abfrage im Navigationsbereich doppelklicken oder mit der rechten Maustaste auf die Abfrage im Navigationsbereich klicken und dann eine Ansicht auswählen. Mit dieser Aktion können Sie zusätzliche Optionen auswählen.
 
-**Tipps**
-
-  - Sie können eine Abfrage aus dem Navigationsbereich in die Aktionszeile eines Makros ziehen. Damit wird automatisch eine **ÖffnenAbfrage** -Aktion erstellt, mit der die Abfrage in der Datenblattansicht geöffnet wird. Wenn Sie in die Entwurfsansicht wechseln, während die Abfrage geöffnet ist, werden die Einstellungen für das Argument **Datenmodus** für die Abfrage entfernt. Diese Einstellung ist nicht wirksam, auch wenn der Benutzer zur Datenblattansicht zurückkehrt.
-
-  - Wenn Sie nicht möchten, dass die Systemmeldungen angezeigt werden, die normalerweise angezeigt werden (und anzeigen, dass es sich um eine Aktionsabfrage handelt, und angeben, wie viele Datensätze betroffen sind), wenn eine Aktionsabfrage ausgeführt wird, können Sie die Anzeige dieser Meldungen mithilfe der **Warnmeldungen** -Aktion unterdrücken.
+> [!TIP]
+> - Sie können eine Abfrage aus dem Navigationsbereich in die Aktionszeile eines Makros ziehen. Damit wird automatisch eine **ÖffnenAbfrage** -Aktion erstellt, mit der die Abfrage in der Datenblattansicht geöffnet wird. Wenn Sie in die Entwurfsansicht wechseln, während die Abfrage geöffnet ist, werden die Einstellungen für das Argument **Datenmodus** für die Abfrage entfernt. Diese Einstellung ist nicht wirksam, auch wenn der Benutzer zur Datenblattansicht zurückkehrt.
+> - Wenn Sie nicht möchten, dass die Systemmeldungen angezeigt werden, die normalerweise angezeigt werden (und anzeigen, dass es sich um eine Aktionsabfrage handelt, und angeben, wie viele Datensätze betroffen sind), wenn eine Aktionsabfrage ausgeführt wird, können Sie die Anzeige dieser Meldungen mithilfe der **Warnmeldungen** -Aktion unterdrücken.
 
 Wenn Sie die **ÖffnenAbfrage** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) ausführen möchten, verwenden Sie die **OpenQuery** -Methode des **DoCmd** -Objekts.
 

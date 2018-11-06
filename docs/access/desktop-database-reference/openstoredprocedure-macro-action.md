@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm187628
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 22d3422a5c00e6caa20003df3574c26ab061ab53
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dba3d57a1b9ce890898ac2f5b76b916b848c5a9b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925345"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997518"
 ---
 # <a name="openstoredprocedure-macro-action"></a>OpenStoredProcedure-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 In einem Access-Projekt können Sie die **ÖffnenGespeicherteProzedur**-Aktion zum Öffnen einer gespeicherten Prozedur in der Datenblattansicht, der Entwurfsansicht der gespeicherten Prozedur oder der Seitenansicht verwenden. Diese Aktion führt die gespeicherte benannte Prozedur aus, wenn sie in der Datenblattansicht geöffnet wird. Sie können den Dateneingabemodus für die gespeicherte Prozedur auswählen und die Datensätze einschränken, die von der gespeicherten Prozedur angezeigt werden.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -61,25 +57,16 @@ Die **ÖffnenGespeicherteProzedur**-Aktion verwendet die folgenden Argumente.
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>Hinweise
 
 Diese Aktion ist mit dem Doppelklicken auf die gespeicherte Prozedur im Navigationsbereich, dem Klicken auf die gespeicherte Prozedur im Navigationsbereich mit der rechten Maustaste und dem Auswählen des gewünschten Befehls vergleichbar.
 
 Durch das Wechseln zur Entwurfsansicht, während die gespeicherte Prozedur geöffnet ist, wird die Einstellung des Arguments **Datenmodus** für die gespeicherte Prozedur entfernt. Diese Einstellung ist nicht aktiv, selbst wenn der Benutzer zur Datenblattansicht zurückkehrt.
 
-
 > [!TIP]
-> <P></P>
-> <UL>
-> <LI>
-> <P>Sie können eine gespeicherte Prozedur im Navigationsbereich an eine Makro-Aktionszeile ziehen. Dadurch wird automatisch eine <STRONG>ÖffnenGespeicherteProzedur</STRONG> -Aktion, die die gespeicherte Prozedur in der Datenblattansicht geöffnet wird erstellt.</P>
-> <LI>
-> <P>
-> 						Wenn Sie die Systemmeldungen nicht anzeigen möchten, die normalerweise angezeigt werden, wenn eine gespeicherten Prozedur ausgeführt wird (sie melden, dass es sich um eine gespeicherte Prozedur handelt und auf wie viele Datensätze sie sich auswirkt), können Sie die <STRONG>Warnmeldungen</STRONG>-Aktion verwenden, um die Anzeige dieser Meldungen zu unterdrücken.
-</P></LI></UL>
-<P></P>
-
+> - Sie können eine gespeicherte Prozedur im Navigationsbereich an eine Makro-Aktionszeile ziehen. Dadurch wird automatisch eine **ÖffnenGespeicherteProzedur** -Aktion, die die gespeicherte Prozedur in der Datenblattansicht geöffnet wird erstellt.
+> - 
+						Wenn Sie die Systemmeldungen nicht anzeigen möchten, die normalerweise angezeigt werden, wenn eine gespeicherten Prozedur ausgeführt wird (sie melden, dass es sich um eine gespeicherte Prozedur handelt und auf wie viele Datensätze sie sich auswirkt), können Sie die **Warnmeldungen**-Aktion verwenden, um die Anzeige dieser Meldungen zu unterdrücken.
 
 
 Verwenden Sie die **OpenStoredProcedure**-Methode des **DoCmd**-Objekts, um die **ÖffnenGespeicherteProzedur**-Aktion in einem Modul für Visual Basic für Applikationen (VBA) auszuführen.

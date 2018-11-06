@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195128(v=office.15)
 ms:contentKeyID: 48545311
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 756d3ede6fe6fe99c34f9ba2cd156d779a3970ab
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d7b80444005a780e2f26c03229d0a66d66ce69eb
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928719"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996769"
 ---
 # <a name="recordsetfindlast-method-dao"></a>Recordset.FindLast-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Sucht den letzten Datensatz in einem Recordset-Objekt vom Typ Dynaset oder Snaps
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,14 +37,14 @@ Sucht den letzten Datensatz in einem Recordset-Objekt vom Typ Dynaset oder Snaps
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Kriterium</p></td>
+<td><p><em>Criteria</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine Zeichenfolge, die zum Suchen des Datensatzes verwendet wird. Sie ähnelt der WHERE-Klausel in einer SQL-Anweisung, allerdings ohne das Wort WHERE.</p></td>
@@ -119,12 +118,8 @@ Sie sollten das amerikanische Datumsformat (Monat-Tag-Jahr) verwenden, wenn Sie 
 
 Wenn Kriterien besteht aus einer Zeichenfolge mit einem nicht-Integer-Wert verkettet und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrSQL = "PRICE \> " & LngPrice, und LngPrice = 125,50), ein Fehler tritt auf, wenn Sie versuchen, Rufen Sie die-Methode. Das geschieht, weil die Zahl während der Verkettung mithilfe des standardmäßigen Dezimalzeichens des Systems in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-amerikanische Dezimalzeichen akzeptiert.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Für eine optimale Leistung der <EM>Kriterien</EM> sollte entweder in das Formular "<EM>Feld</EM> = <EM>Wert</EM>", in dem <EM>Feld</EM> einem indizierten Feld befindet sich in der zugrunde liegenden Basistabelle oder "<EM>Feld</EM> wie <EM>Präfix</EM>", in <EM>das Feld</EM> ist, ein indizierte Feld in der zugrunde liegenden Basistabelle und das <EM>Präfix</EM> ist eine Suchzeichenfolge Präfix (beispielsweise "ClipArt *").</P>
-> <LI>
-> <P>Allgemein stellt die <STRONG>Seek</STRONG>-Methode für ähnliche Suchtypen eine bessere Leistung als die <STRONG>Find</STRONG>-Methoden bereit. Dabei wird angenommen, dass nur Tabellentyp-<STRONG>Recordset</STRONG>-Objekte Ihre Anforderungen erfüllen können.</P></LI></UL>
+> - Für eine optimale Leistung der *Kriterien* sollte entweder in das Formular "*Feld* = *Wert*", in dem *Feld* einem indizierten Feld befindet sich in der zugrunde liegenden Basistabelle oder "*Feld* wie *Präfix*", in *das Feld* ist, ein indizierte Feld in der zugrunde liegenden Basistabelle und das *Präfix* ist eine Suchzeichenfolge Präfix (beispielsweise "ClipArt *").
+> - Allgemein stellt die **Seek**-Methode für ähnliche Suchtypen eine bessere Leistung als die **Find**-Methoden bereit. Dabei wird angenommen, dass nur Tabellentyp-**Recordset**-Objekte Ihre Anforderungen erfüllen können.
 
 

@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052971
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: fafccd704e1528ece69a86a5955bcb040dc24cbf
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b19cf0819353dbe4d6cdb017faf0e38b3bfb7757
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928768"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997007"
 ---
 # <a name="tabledefcreatefield-method-dao"></a>TableDef.CreateField-Methode (DAO)
 
@@ -29,7 +29,7 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 
 *Ausdruck* Eine Variable, die ein **TableDef** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -41,26 +41,26 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Name</p></td>
+<td><p><em>Name</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Zeichenfolge, die das neue <strong>Field</strong> -Objekt eindeutig benennt. Unter der <strong><a href="connection-name-property-dao.md">Name</a></strong> -Eigenschaft finden Sie Einzelheiten zu gültigen <strong>Field</strong> -Namen.  </p></td>
 </tr>
 <tr class="even">
-<td><p>Typ</p></td>
+<td><p><em>Type</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Konstante, die den Datentyp des neuen <strong>Field</strong> -Objekts bestimmt. Unter der <strong><a href="field-type-property-dao.md">Type</a></strong> -Eigenschaft finden Sie gültige Datentypen.  </p></td>
 </tr>
 <tr class="odd">
-<td><p>Größe</p></td>
+<td><p><em>Size</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Eine Integer, die die maximale Größe eines <strong>Field</strong> -Objekts mit Text in Bytes angibt. Finden Sie unter der <strong><a href="field-size-property-dao.md">Size</a></strong> -Eigenschaft für gültige Werte. Dieses Argument wird für numerische Felder und Felder mit festgelegtem Format ignoriert.</p></td>
@@ -69,7 +69,7 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Feld
 

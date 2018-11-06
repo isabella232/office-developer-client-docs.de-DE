@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249294(v=office.15)
 ms:contentKeyID: 48544970
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a204f6e86a1c50be49400430f53dd99468668a9e
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: e9e7fb19504e606fed9960a3982c0f98f9081325
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949999"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997562"
 ---
 # <a name="openschema-method-ado"></a>OpenSchema-Methode (ADO)
 
@@ -49,8 +49,7 @@ Die Anbieter müssen nicht alle standardmäßigen OLE DB-Schemaabfragen unterst�
 
 **Remote Data Service-Verwendung** **OpenSchema** -Methode ist nicht verfügbar für ein clientseitiges [Connection](connection-object-ado.md) -Objekt.
 
-
 > [!NOTE]
-> <P>In Visual Basic können Spalten, die im von der <STRONG>OpenSchema</STRONG>-Methode für das <STRONG>Connection</STRONG>-Objekt zurückgegebene <STRONG>Recordset</STRONG>-Objekt eine 4-Byte-Ganzzahl ohne Vorzeichen (DBTYPE UI4) enthalten, nicht mit anderen Variablen verglichen werden. Weitere Informationen zu den OLE DB-Datentypen erhalten Sie in Chapter 13 und Appendix A der <EM>Microsoft OLE DB Programmer's Reference</EM>.</P>
+> In Visual Basic können Spalten, die im von der **OpenSchema**-Methode für das **Connection**-Objekt zurückgegebene **Recordset**-Objekt eine 4-Byte-Ganzzahl ohne Vorzeichen (DBTYPE UI4) enthalten, nicht mit anderen Variablen verglichen werden. Weitere Informationen zu den OLE DB-Datentypen erhalten Sie in Chapter 13 und Appendix A der *Microsoft OLE DB Programmer's Reference*.
 
 

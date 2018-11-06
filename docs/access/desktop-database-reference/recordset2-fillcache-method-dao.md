@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052942
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 308d388b023b2697d1e7af52b47218eeb3d023f2
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: ef0f4ad298e316cbae295bcf4f6c4c5349b18655
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949530"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998532"
 ---
 # <a name="recordset2fillcache-method-dao"></a>Recordset2.FillCache-Methode (DAO)
 
@@ -29,7 +29,7 @@ Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit 
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -41,20 +41,20 @@ Füllt den lokalen Cache für ein **Recordset**-Objekt, das Daten aus einer mit 
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Zeilen</p></td>
+<td><p><em>Rows</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>Integer</strong>), der angibt, wie viele Zeilen im Cache gespeichert werden sollen. Wenn Sie dieses Argument auslassen, wird der Wert durch die <strong><a href="recordset2-cachesize-property-dao.md">CacheSize</a></strong>-Eigenschafteneinstellung festgelegt.</p></td>
 </tr>
 <tr class="even">
-<td><p>Anfangslesezeichen</p></td>
+<td><p><em>Anfangslesezeichen</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein <strong>Variant</strong>-Wert (Untertyp <strong>String</strong>), der ein Lesezeichen angibt. Der Cache wird ab dem Datensatz gefüllt, der durch dieses Lesezeichen angegeben wurde. Wenn Sie dieses Argument auslassen, wird der Cache ab dem Datensatz gefüllt, der durch die <strong><a href="recordset2-cachestart-property-dao.md">CacheStart</a></strong>-Eigenschaft angegeben wurde.</p></td>
@@ -75,15 +75,9 @@ Wenn Zeilen und Anfangslesezeichen erstellen einen Bereich von Datensätzen, die
 
 Übersteigen die durch **FillCache** angeforderten Datensätze die in der Remotedatenquelle verbliebene Anzahl, ruft das Microsoft Access-Datenbankmodul nur die verbliebenen Datensätze ab, und es tritt kein Fehler auf.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Aus dem Cache abgerufene Datensätze enthalten keine Änderungen, die andere Benutzer gleichzeitig an den Quelldaten vorgenommen haben.</P>
-> <LI>
-> <P>FillCache ruft nur Datensätze ab, die noch nicht zwischengespeichert wurden. Wenn Sie eine Aktualisierung aller zwischengespeicherten Daten erzwingen möchten, legen Sie die CacheSize-Eigenschaft des Recordset-Objekts auf 0 fest, setzen Sie die Größe des ursprünglich angeforderten Caches zurück, und verwenden Sie dann FillCache.</P></LI></UL>
-
-
+> - Aus dem Cache abgerufene Datensätze enthalten keine Änderungen, die andere Benutzer gleichzeitig an den Quelldaten vorgenommen haben.
+> - FillCache ruft nur Datensätze ab, die noch nicht zwischengespeichert wurden. Wenn Sie eine Aktualisierung aller zwischengespeicherten Daten erzwingen möchten, legen Sie die CacheSize-Eigenschaft des Recordset-Objekts auf 0 fest, setzen Sie die Größe des ursprünglich angeforderten Caches zurück, und verwenden Sie dann FillCache.
 
 ## <a name="example"></a>Beispiel
 

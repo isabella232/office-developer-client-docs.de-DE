@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194787(v=office.15)
 ms:contentKeyID: 48545170
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 23f7609cb918ce1dc04c17d84178daf2ce43be31
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 489e6060fdbaa4183c006e3f422c207d9a5013ee
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925394"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998854"
 ---
 # <a name="recordsetfindfirst-method-dao"></a>Recordset.FindFirst-Methode (DAO)
 
@@ -25,7 +25,7 @@ Sucht den ersten Datensatz in einem **Recordset** -Objekt vom "dynaset"- oder "s
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -37,14 +37,14 @@ Sucht den ersten Datensatz in einem **Recordset** -Objekt vom "dynaset"- oder "s
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Kriterium</p></td>
+<td><p><em>Criteria</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>String</strong></p></td>
 <td><p>Eine Zeichenfolge, die zum Suchen des Datensatzes verwendet wird. Sie ähnelt der WHERE-Klausel in einer SQL-Anweisung, allerdings ohne das Wort WHERE.</p></td>

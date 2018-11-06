@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm6446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f01fc72a620e5c08a6f98b4b69a8eb8da7b98bbb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 27fc0c38ec0f3ec98c2709a96b6dedcce17db693
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925674"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996811"
 ---
 # <a name="runmenucommand-macro-action"></a>RunMenuCommand-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -47,18 +46,14 @@ Die **AusführenMenübefehl** -Aktion hat das folgende Aktionsargument.
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>Hinweise
 
 Sie können die **AusführenMenübefehl** -Aktion dazu verwenden, einen Access-Befehl aus einer benutzerdefinierten Menüleiste, einer globalen Menüleiste, einem benutzerdefinierten Kontextmenü oder einem globalen Kontextmenü auszuführen.
 
 Um einen Befehl abhängig von bestimmten Bedingungen auszuführen, können Sie die **AusführenMenübefehl** -Aktion in einem Makro mit bedingten Ausdrücken verwenden.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie auf die Registerkarte <STRONG>Datei</STRONG> und dann auf <STRONG>Zuletzt verwendet</STRONG> klicken, werden die zuletzt verwendeten Datenbanken angezeigt. Anstatt auf <STRONG>Öffnen</STRONG> zu klicken, können Sie auf eine dieser Datenbanken klicken. Diese Datenbankelemente werden im Dropdown-Listenfeld für das Argument <STRONG>Befehl</STRONG> nicht angezeigt und sind durch Verwenden der <STRONG>AusführenMenübefehl</STRONG> -Aktion in einem Makro nicht verfügbar.</P>
-
-
+> [!HINWEIS] Wenn Sie auf die Registerkarte **Datei** und dann auf **Zuletzt verwendet** klicken, werden die zuletzt verwendeten Datenbanken angezeigt. Anstatt auf **Öffnen** zu klicken, können Sie auf eine dieser Datenbanken klicken. Diese Datenbankelemente werden im Dropdown-Listenfeld für das Argument **Befehl** nicht angezeigt und sind durch Verwenden der **AusführenMenübefehl** -Aktion in einem Makro nicht verfügbar.
 
 Einige Befehle sind möglicherweise nicht mehr verfügbar, wenn Sie eine Access-Datenbank aus einer früheren Version von Access konvertieren. Ein Befehl ist möglicherweise umbenannt worden, in ein anderes Menü verschoben worden oder ist möglicherweise nicht mehr in Access verfügbar. Die in älteren Versionen verwendeten **AusführenMenübefehl** -Aktionen für solche Befehle können nicht in **AusführenMenübefehl** -Aktionen der neuen Version konvertiert werden. Access zeigt eine **AusführenMenübefehl** -Aktion mit einem leeren **Befehl** -Argument für solche Befehle an, wenn Sie das Makro öffnen. Sie müssen das Makro bearbeiten und ein gültiges Befehlsargument eingeben, oder Sie müssen die **AusführenMenübefehl** -Aktion löschen.
 

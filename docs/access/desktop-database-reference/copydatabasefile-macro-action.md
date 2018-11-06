@@ -6,24 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835963(v=office.15)
 ms:contentKeyID: 48548373
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0f2034bb4d8d1fbf3f1a0a37bf6adc7c8b8001bb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 330ae78b86c678b675cfd44afa75f72348ac582f
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925205"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998910"
 ---
 # <a name="copydatabasefile-macro-action"></a>CopyDatabaseFile-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Sie können die **KopierenDatenbankdatei** -Aktion verwenden, um eine Kopie der aktuellen Microsoft SQL Server 7.0-Datenbank oder einer neueren Datenbank anzulegen, die mit Ihrem Access-Projekt verbunden ist. Access trennt die aktuelle Datenbank und fügt sie dann auf den Zielserver. Weitere Informationen zum Trennen und Verbinden einer Datenbank finden Sie in der SQL Server-Dokumentation.
 
-
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 
 ## <a name="setting"></a>Einstellung
@@ -54,13 +51,7 @@ Die **KopierenDatenbankdatei** -Aktion hat die folgenden Argumente.
 <td><p><strong>Alle Verbindungen trennen</strong></p></td>
 <td><p>Gibt an, ob Access das Trennen von Datenbankverbindungen erzwingen sollte. Wenn <strong>Ja</strong> festgelegt ist, werden alle Verbindungen mit der aktuellen Datenbank getrennt, damit das Kopieren der Datenbank fortgesetzt werden kann. Wenn <strong>Nein</strong> festgelegt ist und mindestens eine Verbindung zur Datenbank besteht, schlägt das Kopieren der Datenbank fehl. Die Standardeinstellung ist <strong>Nein</strong>. 
 
-</p>
-
-> [!WARNING]
-> Wenn Verbindungen zu einer Datenbank ohne angemessene Warnung getrennt werden, kann es zu Datenverlusten kommen.
-
-
-<p></p></td>
+</p><p><strong>Warnung</strong>: Trennen von Benutzern aus einer Datenbank ohne angemessene Warnung zu Datenverlusten führen kann.</p></td>
 </tr>
 </tbody>
 </table>
@@ -74,19 +65,17 @@ Die **KopierenDatenbankdatei** -Aktion kopiert nicht nur Daten, Datendefinitione
 
 Voraussetzungen für das Kopieren einer Datenbank:
 
-  - Sie müssen vor dem Kopieren der Datenbankdatei alle Anwendungen und Benutzer trennen.
+- Sie müssen vor dem Kopieren der Datenbankdatei alle Anwendungen und Benutzer trennen.
 
-  - Alle Objekte und Sichten mit Ausnahme des Navigationsbereichs müssen geschlossen sein.
+- Alle Objekte und Sichten mit Ausnahme des Navigationsbereichs müssen geschlossen sein.
 
-  - Die aktuelle Datenbank darf nicht repliziert sein.
+- Die aktuelle Datenbank darf nicht repliziert sein.
 
-  - Bei der Quellserverdatenbank muss es sich um Microsoft SQL Server, Version 7.0 oder höher, oder SQL Server 2000 Desktop Engine handeln, die auf einem lokalen Computer ausgeführt wird.
+- Bei der Quellserverdatenbank muss es sich um Microsoft SQL Server, Version 7.0 oder höher, oder SQL Server 2000 Desktop Engine handeln, die auf einem lokalen Computer ausgeführt wird.
 
-<!-- end list -->
+- Bei der SQL Server-Datenbank auf dem Quellserver muss es sich um eine einzelne Dateidatenbank handeln.
 
-  - Bei der SQL Server-Datenbank auf dem Quellserver muss es sich um eine einzelne Dateidatenbank handeln.
-
-  - 
+- 
 				Sie müssen auf dem Quell- und dem Zielcomputer mit SQL Server ein Mitglied der Rolle sysadmin sein.
 
 

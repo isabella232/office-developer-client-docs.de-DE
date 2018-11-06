@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm43195
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7aace8618e9ca5cdd540c15d04869dbce8c3a891
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 4682af5c4583b99104acf96b9cd0a4f311e6cb90
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926115"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997546"
 ---
 # <a name="runmacro-macro-action"></a>RunMacro-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,11 +25,11 @@ Zum Ausführen eines Makros können Sie die **AusführenMakro** -Aktion verwende
 
 Sie können diese Aktion für Folgendes verwenden:
 
-  - Zum Ausführen eines Makros innerhalb eines anderen Makros.
+- Zum Ausführen eines Makros innerhalb eines anderen Makros.
 
-  - Zum Ausführen eines Makros basierend auf einer bestimmten Bedingung.
+- Zum Ausführen eines Makros basierend auf einer bestimmten Bedingung.
 
-  - Zum Anfügen eines Makros an einen benutzerdefinierten Menübefehl.
+- Zum Anfügen eines Makros an einen benutzerdefinierten Menübefehl.
 
 ## <a name="setting"></a>Einstellung
 
@@ -63,38 +62,24 @@ Die **AusführenMakro** -Aktion hat die folgenden Argumente.
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>Hinweise
 
 Wenn Sie einen Makrogruppennamen für das Argument **Makroname** eingeben, wird das erste Makro in der Makrogruppe in Access ausgeführt.
 
 Diese Aktion ist mit dem Klicken auf **Makro ausführen** auf der Registerkarte **Datenbanktools**, dem Auswählen eines Makros und dem Klicken auf **OK** vergleichbar. Bei diesem Befehl wird das Makro jedoch nur einmal ausgeführt, wohingegen die **AusführenMakro** -Aktion ein Makro so häufig wie gewünscht ausführen kann.
 
-
 > [!TIP]
-> <P>[!TIPP] Sie können die Argumente <STRONG>Wiederholbedingung</STRONG> und <STRONG>Wiederholungen</STRONG> verwenden, um festzulegen, wie oft das Makro ausgeführt wird:</P>
-
-
-
-  - Wenn Sie beide Argumente leer lassen, wird das Makro einmal ausgeführt.
-
-  - Wenn Sie einen Wert für **Wiederholungen** eingeben, aber **Wiederholbedingung** leer lassen, wird das Makro mit der angegebenen Häufigkeit ausgeführt.
-
-  - Wenn Sie **Wiederholungen** leer lassen, jedoch einen Ausdruck für **Wiederholbedingung** eingeben, wird das Makro ausgeführt, bis der Ausdruck mit **Falsch** ausgewertet wird.
-
-  - Wenn Sie Werte für beide Argumente eingeben, wird das Makro mit der Häufigkeit ausgeführt, die in **Wiederholungen** angegeben ist, oder bis **Wiederholbedingung** mit **Falsch** ausgewertet wird, unabhängig davon, was zuerst erfolgt.
+> [!TIPP] Sie können die Argumente **Wiederholbedingung** und **Wiederholungen** verwenden, um festzulegen, wie oft das Makro ausgeführt wird:
+> - Wenn Sie beide Argumente leer lassen, wird das Makro einmal ausgeführt.
+> - Wenn Sie einen Wert für **Wiederholungen** eingeben, aber **Wiederholbedingung** leer lassen, wird das Makro mit der angegebenen Häufigkeit ausgeführt.
+> - Wenn Sie **Wiederholungen** leer lassen, jedoch einen Ausdruck für **Wiederholbedingung** eingeben, wird das Makro ausgeführt, bis der Ausdruck mit **Falsch** ausgewertet wird.
+> - Wenn Sie Werte für beide Argumente eingeben, wird das Makro mit der Häufigkeit ausgeführt, die in **Wiederholungen** angegeben ist, oder bis **Wiederholbedingung** mit **Falsch** ausgewertet wird, unabhängig davon, was zuerst erfolgt.
 
 Wenn Sie ein Makro ausführen, das die **AusführenMakro** -Aktion enthält, und es die **AusführenMakro** -Aktion erreicht, wird das aufgerufene Makro in Access ausgeführt. Sobald das aufgerufene Makro beendet ist, kehrt Access zum ursprünglichen Makro zurück und führt die nächste Aktion aus.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Sie können ein Makro in derselben Makrogruppe oder in einer anderen Makrogruppe aufrufen.</P>
-> <LI>
-> <P>Sie können Makros schachteln. Sie können also Makro A ausführen, das wiederum Makro B aufruft usw. Sobald das aufgerufene Makro beendet ist, kehrt Access zu dem Makro zurück, das es aufrief, und führt die nächste Aktion in diesem Makro aus.</P></LI></UL>
-
-
+> - Sie können ein Makro in derselben Makrogruppe oder in einer anderen Makrogruppe aufrufen.
+> - Sie können Makros schachteln. Sie können also Makro A ausführen, das wiederum Makro B aufruft usw. Sobald das aufgerufene Makro beendet ist, kehrt Access zu dem Makro zurück, das es aufrief, und führt die nächste Aktion in diesem Makro aus.
 
 Verwenden Sie die **RunMacro** -Methode des **DoCmd** -Objekts, um die **AusführenMakro** -Aktion in einem Modul für Visual Basic für Applikationen (VBA) auszuführen.
 

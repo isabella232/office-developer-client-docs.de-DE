@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm149011
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 451d27f97c0b4f5fc4707d3947e262ba84b9a40e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: d80065c976a014ccf379bdc2016b0324cb02b269
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926101"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998147"
 ---
 # <a name="opentable-macro-action"></a>OpenTable-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -55,16 +54,12 @@ Die **ÖffnenTabelle** -Aktion verwendet die folgenden Argumente.
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>Hinweise
 
 Diese Aktion ist mit dem Doppelklicken auf die Tabelle im Navigationsbereich, dem Klicken mit der rechten Maustaste auf die Tabelle im Navigationsbereich und dem Auswählen einer Ansicht vergleichbar.
 
-
 > [!TIP]
-> <P>[!TIPP] Sie können eine Tabelle aus dem Navigationsbereich in ein Aktionszeile-Makro ziehen. Dadurch wird automatisch eine <STRONG>ÖffnenTabelle</STRONG> -Aktion erstellt, die die Tabelle in der Datenblattansicht öffnet.</P>
-
-
+> [!TIPP] Sie können eine Tabelle aus dem Navigationsbereich in ein Aktionszeile-Makro ziehen. Dadurch wird automatisch eine **ÖffnenTabelle** -Aktion erstellt, die die Tabelle in der Datenblattansicht öffnet.
 
 Verwenden Sie die **OpenTable** -Methode des **DoCmd** -Objekts, um die **ÖffnenTabelle** -Aktion in einem Modul für Visual Basic für Applikationen (VBA) auszuführen.
 

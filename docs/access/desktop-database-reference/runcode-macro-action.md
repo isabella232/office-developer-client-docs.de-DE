@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm98700
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: acf8ed2bd10efd55436b8933a862833b8e49c5f0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: bac15bed3b416d57f75dc7482b085478a27d5fa4
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926689"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996699"
 ---
 # <a name="runcode-macro-action"></a>RunCode-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -42,13 +41,7 @@ Die **AusführenCode** -Aktion hat das folgende Argument.
 <tbody>
 <tr class="odd">
 <td><p><strong>Funktionsname</strong></p></td>
-<td><p>Der Name der VBA-Funktionsprozedur, die aufgerufen werden soll. Geben Sie die gewünschten Funktionsargumente in Klammern an. Geben Sie den Funktionsnamenn im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" ein. Dabei handelt es sich um ein Pflichtargument.  </p>
-
-> [!NOTE]
-> <P>Klicken Sie in einer Access-Datenbank (.mdb oder .accdb) auf die Schaltfläche <STRONG>Erstellen</STRONG>, um mithilfe des Ausdrucks-Generators eine Funktion für dieses Argument auszuwählen. Klicken Sie dazu im Ausdrucks-Generator auf die gewünschte Funktion in der Liste.</P>
-
-
-<p></p></td>
+<td><p>Der Name der VBA-Funktionsprozedur, die aufgerufen werden soll. Geben Sie die gewünschten Funktionsargumente in Klammern an. Geben Sie den Funktionsnamenn im Feld <strong>Funktionsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" ein. Dabei handelt es sich um ein Pflichtargument.  </p><p><strong>Hinweis</strong>: In einer Access-Datenbank (MDB oder ACCDB), klicken Sie auf die <strong>Generator</strong> -Schaltfläche des Ausdrucks-Generators verwenden, um eine Funktion für dieses Argument auszuwählen. Klicken Sie auf die gewünschte Funktion in der Liste im Ausdrucks-Generator.</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,17 +59,11 @@ Im Gegensatz zu benutzerdefinierten Funktionsnamen für Einstellungen der Ereign
 
 Access ignoriert den Rückgabewert der Funktion.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Sie können eine Funktionsprozedur nicht mit einem Makro aufrufen, wenn der Funktionsname dem Modulnamen entspricht.</P>
-
-
-
+> [!HINWEIS] Sie können eine Funktionsprozedur nicht mit einem Makro aufrufen, wenn der Funktionsname dem Modulnamen entspricht.
 
 > [!TIP]
-> <P>[!TIPP] Um eine Sub- oder Ereignis-Prozedur in Visual Basic auszuführen, erstellen Sie eine Funktionsprozedur, die die entsprechende Sub- oder Ereignisprozedur aufruft. Führen Sie die Funktionsprozedur dann mit der Aktion <STRONG>AusführenCode</STRONG> aus.</P>
-
-
+> [!TIPP] Um eine Sub- oder Ereignis-Prozedur in Visual Basic auszuführen, erstellen Sie eine Funktionsprozedur, die die entsprechende Sub- oder Ereignisprozedur aufruft. Führen Sie die Funktionsprozedur dann mit der Aktion **AusführenCode** aus.
 
 Beim Aufrufen einer Funktion mit der Aktion **AusführenCode** sucht Access in den Standardmodulen der Datenbank nach einer Funktion mit dem Namen, der im Argument **Funktionsname** angegeben wurde. Wird die Aktion allerdings über einen Menübefehl oder ein Ereignis in einem Formular oder Bericht ausgeführt, sucht Access zuerst in den Klassenmodulen des Formulars bzw. Berichts und erst dann in den Standardmodulen. Die Klassenmodule im Bereich **Module** im Navigationsbereich werden nicht nach der Funktion durchsucht, deren Name im Argument **Funktionsname** angegeben wurde.
 

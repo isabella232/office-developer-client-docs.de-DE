@@ -10,15 +10,14 @@ f1_keywords:
 - ado210.chm1231104
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 37cebaad95f1715ad53147709fb7f6a11344ef10
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a4e683781fc2c508b34717447fcac6f02f54d6ff
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922706"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997847"
 ---
 # <a name="properties-collection-ado"></a>Properties-Auflistung (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,11 +27,8 @@ Enthält alle [Property](property-object-ado.md)-Objekte für eine bestimmte Ins
 
 Einige ADO-Objekte haben eine **Properties** -Auflistung, die **Property** -Objekte enthält. Jedes **Property** -Objekt entspricht einem Merkmal des ADO-Objekts, das spezifisch für den Anbieter ist.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Detaillierte Hinweise zur Verwendung der <A href="property-object-ado.md">Field</A> -Objekte finden Sie in der Beschreibung des <STRONG>Property</STRONG>-Objekts.</P>
-
-
+> [!HINWEIS] Detaillierte Hinweise zur Verwendung der [Field](property-object-ado.md) -Objekte finden Sie in der Beschreibung des **Property**-Objekts.
 
 Die **Dynamic** -Eigenschaft des **Recordset** -Objekts liegt außerhalb des Gültigkeitsbereichs (d. h. sie wird unverfügbar), wenn das **Recordset** -Objekt geschlossen ist.
 

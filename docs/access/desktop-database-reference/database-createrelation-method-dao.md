@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052969
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2a1ad7798fc6236f95d31c18cd864fe64e7a3fd8
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 1de2b13892ceda1cf34758414d38e649545f229e
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949928"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998273"
 ---
 # <a name="databasecreaterelation-method-dao"></a>Database.CreateRelation-Methode (DAO)
 
@@ -41,7 +41,7 @@ Erstellt ein neues **[Relation](relation-object-dao.md)** -Objekt (gilt nur für
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

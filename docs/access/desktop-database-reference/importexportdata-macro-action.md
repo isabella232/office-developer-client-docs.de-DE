@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm51789
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 847f23c429b06fee51b42aa211d672b051accb7c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 363945386233fd992390f1fbc4b6115e272dc923
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920396"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997616"
 ---
 # <a name="importexportdata-macro-action"></a>ImportExportData-Makroaktion
 
@@ -24,7 +24,7 @@ ms.locfileid: "25920396"
 Verwenden Sie die **ImportierenExportierenDaten** -Aktion zum Importieren oder Exportieren von Daten zwischen der aktuellen Access-Datenbank (MDB oder ACCDB) oder dem aktuellen Access-Projekt (ADP) und anderen Datenbanken. Microsoft Access-Datenbanken lassen auch das Verknüpfen einer Tabelle mit der aktuellen Access-Datenbank aus anderen Datenbanken zu. Bei einer verknüpften Tabelle können Sie auf die Daten der Tabelle zugreifen, während die Tabelle selbst in der anderen Datenbank verbleibt.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="settings"></a>Einstellungen
 
@@ -44,13 +44,7 @@ Die **ImportierenExportierenDaten** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Transfertyp</strong></p></td>
-<td><p>Der Transfertyp, den Sie vornehmen möchten. Wählen Sie <strong>Importieren</strong>, <strong>Exportieren</strong> oder <strong>Verknüpfen</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Importieren</strong>.  </p>
-
-> [!NOTE]
-> Der Transfertyp **Verknüpfen** wird für Access-Projekte (.adp) nicht unterstützt.
-
-
-<p></p></td>
+<td><p>Der Transfertyp, den Sie vornehmen möchten. Wählen Sie <strong>Importieren</strong>, <strong>Exportieren</strong> oder <strong>Verknüpfen</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Importieren</strong>.  </p><p><strong>Hinweis</strong>: Der Transfertyp <strong>Verknüpfen</strong> wird für Access-Projekte (ADP) nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Datenbanktyp</strong></p></td>

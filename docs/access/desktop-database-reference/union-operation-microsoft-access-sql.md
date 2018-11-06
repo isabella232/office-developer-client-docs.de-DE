@@ -12,15 +12,14 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 1a61512c58ccbde82072fa4d8105c82b9f145ebc
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: ed31f0105d8381667e1398fc5d91577d40998d81
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937421"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998819"
 ---
 # <a name="union-operation-microsoft-access-sql"></a>UNION-Operation (Microsoft Access SQL)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -69,15 +68,9 @@ Alle Abfragen in einer UNION-Operation müssen dieselbe Anzahl von Feldern anfor
 
 Verwenden Sie Aliase nur in der ersten SELECT-Anweisung, da sie in anderen Anweisungen ignoriert werden. In der ORDER BY-Klausel verweisen Sie auf ein Feld unter dem Namen, der in der ersten SELECT-Anweisung verwendet wird.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Eine <A href="https://msdn.microsoft.com/library/ff837271(v=office.15)">GROUP BY-</A> oder <A href="https://msdn.microsoft.com/library/ff193795(v=office.15)">HAVING</A> -Klausel können in <EM>jedem Abfrageargument</EM> Sie um die zurückgegebenen Daten zu gruppieren.</P>
-> <LI>
-> <P><A href="https://msdn.microsoft.com/library/ff198293(v=office.15)">ORDER BY</A> -Klausel können am Ende des <EM>letzten abfragearguments</EM> Sie die zurückgegebenen Daten in einer bestimmten Reihenfolge angezeigt.</P></LI></UL>
-
-
+> - Eine [GROUP BY-](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/group-by-clause-microsoft-access-sql) oder [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql) -Klausel können in *jedem Abfrageargument* Sie um die zurückgegebenen Daten zu gruppieren.
+> - [ORDER BY](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/order-by-clause-microsoft-access-sql) -Klausel können am Ende des *letzten abfragearguments* Sie die zurückgegebenen Daten in einer bestimmten Reihenfolge angezeigt.
 
 ## <a name="example"></a>Beispiel
 

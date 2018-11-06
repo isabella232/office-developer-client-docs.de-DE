@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249738(v=office.15)
 ms:contentKeyID: 48546709
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ab1111cdbc0e5a319f1f3431477854c6d38eff20
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 0d4d907cedc3490f4ca13d47a12b9719cf3e2ee1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25875406"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997154"
 ---
 # <a name="position-property-ado"></a>Position-Eigenschaft (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,13 +25,10 @@ Legt einen Long-Wert fest, der den Offset der aktuellen Position vom Anfang des 
 
 ## <a name="remarks"></a>Hinweise
 
-Die aktuelle Position kann an einen Punkt am Ende des Datenstroms verschoben werden. Wenn Sie die aktuelle Position nach dem Ende des Datenstroms angeben, wird die [Größe](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) des **Stream** -Objekts entsprechend erhöht. Alle auf diese Art hinzugefügten neuen Bytes sind Null.
-
+Die aktuelle Position kann an einen Punkt am Ende des Datenstroms verschoben werden. Wenn Sie die aktuelle Position nach dem Ende des Datenstroms angeben, wird die [Größe](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) des **Stream** -Objekts entsprechend erhöht. Alle auf diese Art hinzugefügten neuen Bytes sind Null.
 
 > [!NOTE]
-> <P>[!HINWEIS] <STRONG>Position</STRONG> wird immer in Bytes gemessen. Multiplizieren Sie bei einem Textdatenstrom, der Multibyte-Zeichensätze verwendet, zum Ermitteln der Zeichennummer die Position mit der Zeichengröße. Bei einem Doppelbyte-Zeichensatz z. B. befindet sich das erste Zeichen auf Position 0, das zweite Zeichen auf Position 2, das dritte Zeichen auf Position 4 usw.</P>
-
-
+> [!HINWEIS] **Position** wird immer in Bytes gemessen. Multiplizieren Sie bei einem Textdatenstrom, der Multibyte-Zeichensätze verwendet, zum Ermitteln der Zeichennummer die Position mit der Zeichengröße. Bei einem Doppelbyte-Zeichensatz z. B. befindet sich das erste Zeichen auf Position 0, das zweite Zeichen auf Position 2, das dritte Zeichen auf Position 4 usw.
 
 Negative Werte können nicht verwendet werden, um die Position in einem **Stream** -Objekt zu ändern. Nur positive Zahlen können für **Position** verwendet werden.
 

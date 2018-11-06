@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052925
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a4b44545453d9ed92ae09c1d7722ae24ea35fd78
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 47dbb798a0b293f1651308de9aa2064e1c421a07
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926346"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996860"
 ---
 # <a name="tabledefvalidationrule-property-dao"></a>TableDef.ValidationRule-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -44,8 +43,5 @@ Die **ValidationRule**-Eigenschaft eines **Recordset**- oder **TableDef**-Objekt
 
 Bei einem **TableDef**-Objekt, das auf einer verknüpften Tabelle basiert, erbt die **ValidationRule**-Eigenschaft den Wert der **ValidationRule**-Eigenschaft der zugrunde liegenden Basistabelle. Wenn die zugrunde liegende Basistabelle keine Gültigkeitsprüfung unterstützt, ist der Wert dieser Eigenschaft eine leere Zeichenfolge ("").
 
-
 > [!NOTE]
-> <P>Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrRule = "Preis &gt; " &amp; LngPrice, und LngPrice = 125,50), ein Fehler ausgegeben, wenn der Code versucht, Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.</P>
-
-
+> Wenn Sie die Eigenschaft auf eine Zeichenfolge mit einem nicht-Integer-Wert verkettet festlegen und die Systemparameter einer US-decimal Zeichen wie etwa ein Komma angeben (beispielsweise StrRule = "Preis &gt; " &amp; LngPrice, und LngPrice = 125,50), ein Fehler ausgegeben, wenn der Code versucht, Daten zu überprüfen. Dies liegt daran, dass der Wert während der Verkettung mithilfe des Standard-Dezimaltrennzeichens in eine Zeichenfolge konvertiert wird und Microsoft Access SQL nur US-Dezimaltrennzeichen akzeptiert.

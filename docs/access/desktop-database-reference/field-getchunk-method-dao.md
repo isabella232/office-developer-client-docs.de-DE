@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052871
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 228c7d64d67b93a5f057c8d27c0f7a4fcc7d9064
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f8d245223549d51c49e769eedd0b92bb335357cf
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921551"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996993"
 ---
 # <a name="fieldgetchunk-method-dao"></a>Field.GetChunk-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,7 +29,7 @@ Gibt den gesamten Inhalt oder einen Teil des Inhalts eines ****Field**** -Objekt
 
 *Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -42,20 +41,20 @@ Gibt den gesamten Inhalt oder einen Teil des Inhalts eines ****Field**** -Objekt
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Offset</p></td>
+<td><p><em>Offset</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Die Anzahl von zu überspringenden Bytes, bevor das Kopieren gestartet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p>Bytes</p></td>
+<td><p><em>Bytes</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Die Anzahl von Bytes, die zurückgegeben werden sollen.</p></td>
@@ -64,7 +63,7 @@ Gibt den gesamten Inhalt oder einen Teil des Inhalts eines ****Field**** -Objekt
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Variant
 
@@ -76,11 +75,8 @@ Wenn offset gleich 0 ist, beginnt GetChunk ab dem ersten Byte des Felds mit dem 
 
 Wenn Numbytes größer als die Anzahl von Bytes im Feld ist, gibt **GetChunk** die tatsächliche Anzahl von verbliebenen Bytes im Feld zurück.
 
-
 > [!NOTE]
 > [!HINWEIS] Verwenden Sie ein **Memo**-Feld für Text, und schreiben Sie binäre Daten nur in Felder des Typs **Long Binary**. Andernfalls erzielen Sie unerwünschte Ergebnisse.
-
-
 
 ## <a name="example"></a>Beispiel
 

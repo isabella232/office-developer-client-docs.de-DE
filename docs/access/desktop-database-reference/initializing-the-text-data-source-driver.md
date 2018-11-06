@@ -10,24 +10,22 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f87c8e45cbc719ee50c017abd45a8950dc6ec7ed
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 4248adc507a93284a15725bbda0255a3518e90a9
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945446"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997469"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>Initialisieren des Text-Datenquellentreibers
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Für Text- und HTML-Datenquellen wird derselben Datenbanktreiber verwendet.
 
 Bei der Installation des Textdatenquellen-Datenbanktreibers schreibt das Setupprogramm Standardwerte der Microsoft Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Textdatenquellen-Datenbanktreibers beschrieben.
 
-## <a name="text-data-source-initialization-settings"></a>Initialisierungseinstellungen für Textdatenquellen
+## <a name="text-data-source-initialization-settings"></a>Initialisierungseinstellungen für Text Textdatenquellen
 
 Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Ordner Text** enthält initialisierungseinstellungen für Acetxt.dll-Treiber für den externen Zugriff auf Daten Textdateien verwendet. Standardeinstellungen für die Einträge in diesem Ordner sind im folgenden Beispiel dargestellt.
 
@@ -102,7 +100,7 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Text wie f
 </table>
 
 
-## <a name="text-data-source-isam-formats"></a>Textdatenquellen-ISAM-Formate
+## <a name="text-data-source-isam-formats"></a>Text Data Source-ISAM-Formate
 
 Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Text** Ordner enthält die folgenden Einträge.
 
@@ -184,11 +182,8 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Text** Ordner enthält di
 </table>
 
 
-
 > [!NOTE]
-> <P>Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.</P>
-
-
+> Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
 
 ## <a name="html-import-isam-formats"></a>HTML-Import-ISAM-Formate
 
@@ -261,12 +256,8 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Import** Ordner enth
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.</P>
-
-
+> Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
 
 ## <a name="html-export-isam-formats"></a>HTML-Export-ISAM-Formate
 
@@ -334,12 +325,8 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\HTML-Export** Ordner enth
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.</P>
-
-
+> Wenn Sie Einstellungen in der Windows-Registrierung ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.
 
 ## <a name="customizing-the-schemaini-file-for-text-and-html-data"></a>Anpassen der Datei "Schema.ini" für Text- und HTML-Daten
 
@@ -368,6 +355,8 @@ Zum Lesen, Importieren oder Exportieren von Text- und HTML-Daten müssen Sie die
     Col5=columnname9 LongChar Width 10
 ```
 
+<br/>
+
 Entsprechend sieht das Format für eine Datei mit Trennzeichen wie folgt aus:
 
 ```text
@@ -385,6 +374,8 @@ Entsprechend sieht das Format für eine Datei mit Trennzeichen wie folgt aus:
     
     Col2=dateofbirth Date width 9
 ```
+
+<br/>
 
 Beim Exportieren von Daten in eine Textdatei mit Trennzeichen definieren Sie ebenfalls das Format für diese Datei:
 
@@ -421,6 +412,8 @@ Beim Exportieren von Daten in eine Textdatei mit Trennzeichen definieren Sie ebe
     
     TextDelimeter="
 ```
+
+<br/>
 
 Das Beispiel "My Special Export" bezieht sich auf eine spezielle Exportoption. Sie können beim Herstellen einer Verbindung beliebige Exportoptionen angeben. Im letzten Beispiel wird außerdem ein Datenquellenname (Data Source Name, DSN) verwendet, der beim Herstellen einer Verbindung wahlweise übergeben werden kann. Alle drei Formatabschnitte können in derselben INI-Datei vorhanden sein.
 
@@ -510,8 +503,6 @@ Das Microsoft Access-Datenbankmodul verwendet die Einträge in der Datei Schema.
 </tr>
 </tbody>
 </table>
-
-
 
 > [!NOTE]
 > Wenn Sie Einstellungen in der Datei Schema.ini ändern, müssen Sie das Datenbankmodul beenden und erneut starten, damit die neuen Einstellungen wirksam werden.

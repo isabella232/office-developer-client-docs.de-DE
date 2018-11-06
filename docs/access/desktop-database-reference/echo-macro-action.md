@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192516(v=office.15)
 ms:contentKeyID: 48544227
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 947e3569d52558cc154ea751ecce204d02cbf7ec
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 03eeab3884e093b7c22f8fd23d5471d1dc620bc8
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921544"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997455"
 ---
 # <a name="echo-macro-action"></a>Echo-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -22,11 +21,8 @@ Die **Echo** -Aktion können Sie angeben, ob Echo aktiviert ist. Beispielsweise 
 
 ## <a name="setting"></a>Einstellung
 
-
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
 
 Die **Echo** -Aktion hat die folgenden Argumente.
 
@@ -54,7 +50,7 @@ Die **Echo** -Aktion hat die folgenden Argumente.
 </table>
 
 
-Wenn führt ein Makro, Bildschirm aktualisieren häufig zeigt Informationen für das Funktionieren des Makros nicht entscheidend. Wenn Sie das Argument **Echo** auf **Nein**festlegen, wird das Makro ausgeführt, ohne dass den Bildschirm aktualisiert. Wenn das Makro abgeschlossen ist, werden von Access automatisch Echo wieder eingeschaltet und wird das Fenster aktualisiert. Die Einstellung " **No** " für das Argument **Echo** wirkt sich nicht auf die Funktionalität des Makros oder die Ergebnisse aus.
+Beim Ausführen ein Makros, zeigt der Bildschirm häufig Informationen nicht entscheidend für das Funktionieren des Makros. Wenn Sie das Argument **Echo** auf **Nein**festlegen, wird das Makro ausgeführt, ohne dass den Bildschirm aktualisiert. Wenn das Makro abgeschlossen ist, werden von Access automatisch Echo wieder eingeschaltet und wird das Fenster aktualisiert. Die Einstellung " **No** " für das Argument **Echo** wirkt sich nicht auf die Funktionalität des Makros oder die Ergebnisse aus.
 
 Die **Echo** -Aktion unterdrückt nicht die Anzeige von modale Dialogfelder, wie Fehlermeldungen oder Popup Formulare, z. B. Eigenschaftenseiten. Können Dialogfeldern und pop-up-Formulare zum Sammeln und Anzeigen von Informationen, selbst wenn Echo deaktiviert ist. Um alle Nachricht oder Dialogfelder außer Fehlermeldungsfelder und Dialogfelder, in denen den Benutzer zur Eingabe von Informationen zu unterdrücken, verwenden Sie die **Warnmeldungen** -Aktion.
 
@@ -66,7 +62,7 @@ Um die **Echo** -Aktion in einem Visual Basic für Applikationen (VBA)-Modul aus
 
 ## <a name="examples"></a>Beispiele
 
-**Festlegen des Werts eines Steuerelements mithilfe eines Makros**
+### <a name="set-the-value-of-a-control-by-using-a-macro"></a>Festlegen des Werts eines Steuerelements mithilfe eines Makros
 
 Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche auf dem Formular Lieferanten geöffnet. Es wird die Verwendung der **Echo**, **CloseWindow**, **ÖffnenFormular**, **SetzenWert**und **GeheZuSteuerelement** -Aktionen. Die **SetzenWert** -Aktion wird das Steuerelement Lieferanten-ID auf dem Formular auf den aktuellen Lieferanten im Formular Suppliers angezeigt. Klicken Sie dann die **GeheZuSteuerelement** -Aktion verschiebt den Fokus auf das Feld Kategorie-ID, beginnen Sie können Daten für das neue Produkt eingeben. Dieses Makro sollte der Schaltfläche Artikel hinzufügen im Formular Lieferanten zugeordnet werden.
 
@@ -113,7 +109,7 @@ Mit dem folgende Makro wird das Formular Artikel Hinzufügen einer Schaltfläche
 </table>
 
 
-**Synchronisieren von Formularen mithilfe eines Makros**
+### <a name="synchronize-forms-by-using-a-macro"></a>Synchronisieren von Formularen mithilfe eines Makros
 
 Mit dem folgende Makro wird das Formular Artikelliste geöffnet, in der unteren rechten Ecke des Formulars Lieferanten, die aktuellen Lieferanten anzeigen. Es zeigt die Verwendung der Aktionen **Echo**, **MessageBox**, **GoToControl**, **StopMakro**, **OpenForm** und **MoveAndSizeWindow**. Es veranschaulicht außerdem die Verwendung eines bedingten Ausdrucks mit den Aktionen **MessageBox**, **GoToControl** und **StopMakro**. Dieses Makro sollte der Schaltfläche für die Überprüfung der Produkte im Lieferantenformular zugeordnet werden.
 

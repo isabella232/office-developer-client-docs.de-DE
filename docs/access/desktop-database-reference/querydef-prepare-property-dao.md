@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1101187
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f1d587501cb9a3279db055b9eee27d765e002a03
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: a30c9d12de32f4137e3bb365254445f96e8b03c6
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925940"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998784"
 ---
 # <a name="querydefprepare-property-dao"></a>QueryDef.Prepare-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -36,11 +35,8 @@ Das Erstellen einer gespeicherten Prozedur kann die erste Ausführung verlangsam
 
 Wenn **Vorbereiten** auf **dbExecDirect**festgelegt wird, kann dies überschrieben werden, wenn die Abfrage ausgeführt wird, indem Sie Options-Argument der **[Execute](querydef-execute-method-dao.md)** -Methode auf **DbExecDirect**festlegen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die ODBC-API <STRONG>SQLPrepare</STRONG> wird aufgerufen, sobald die DAO- <STRONG><A href="querydef-sql-property-dao.md">SQL</A></STRONG> -Eigenschaft festgelegt wird. Sie müssen daher zur Steigerung der Leistung mithilfe der <STRONG>dbQUnprepare</STRONG>-Option die <STRONG>Prepare</STRONG>-Eigenschaft festlegen, bevor Sie die <STRONG>SQL</STRONG>-Eigenschaft festlegen.</P>
-
-
+> [!HINWEIS] Die ODBC-API **SQLPrepare** wird aufgerufen, sobald die DAO- **[SQL](querydef-sql-property-dao.md)** -Eigenschaft festgelegt wird. Sie müssen daher zur Steigerung der Leistung mithilfe der **dbQUnprepare**-Option die **Prepare**-Eigenschaft festlegen, bevor Sie die **SQL**-Eigenschaft festlegen.
 
 ## <a name="example"></a>Beispiel
 

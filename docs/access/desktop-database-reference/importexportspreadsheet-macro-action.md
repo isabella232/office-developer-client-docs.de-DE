@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm31446
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6d630602d7b81fe44427d892d62275f4509dbdc2
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: eaab9d43e85ee94c5e71d52399a92515cce94693
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923973"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997133"
 ---
 # <a name="importexportspreadsheet-macro-action"></a>ImportExportSpreadsheet-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Mit der **ImportExportSpreadsheet** -Aktion können Sie Daten zwischen der aktuellen Access-Datenbank (.mdb oder .accdb) oder einem Access-Projekt (.adp) und einer Tabellenkalkulationsdatei importieren oder exportieren. Sie können auch die Daten in einer Microsoft Excel-Tabellenkalkulation mit der aktuellen Microsoft Access-Datenbank verknüpfen. Bei einer verknüpften Tabellenkalkulation können Sie die Tabellenkalkulationsdaten mit Access anzeigen und bearbeiten, während trotzdem uneingeschränkter Zugriff auf die Daten aus Ihrem Excel-Tabellenkalkulationsprogramm möglich ist. Sie können auch eine Verknüpfung mit Daten in einer Lotus-1-2-3-Tabellenkalkulationsdatei herstellen, diese Daten sind jedoch in Access schreibgeschützt. .
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -48,23 +44,12 @@ Die **TransferSpreadsheet** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Transfertyp</strong></p></td>
-<td><p>Der Transfertyp, den Sie vornehmen möchten. Wählen Sie <strong>Importieren</strong>, <strong>Exportieren</strong> oder <strong>Verknüpfen</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Importieren</strong>.  </p>
-
-> [!NOTE]
-> <P>Der Transfertyp <STRONG>Verknüpfen</STRONG> wird für Access-Projekte (.adp) nicht unterstützt.</P>
-
-
-<p></p></td>
+<td><p>Der Transfertyp, den Sie vornehmen möchten. Wählen Sie <strong>Importieren</strong>, <strong>Exportieren</strong> oder <strong>Verknüpfen</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Importieren</strong>.  </p><p><strong>Hinweis</strong>: Der Transfertyp <STRONG>Verknüpfen</STRONG> wird für Access-Projekte (ADP) nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Dateiformat</strong></p></td>
-<td><p>Der Tabellenkalkulationstyp, in den importiert, aus dem exportiert oder zu dem eine Verknüpfung hergestellt werden soll. Sie können einen der im Feld aufgeführten Tabellenkalkulationstypen auswählen. Die Standardeinstellung ist <strong>Excel-Arbeitsmappe</strong>.  </p>
-
-> [!NOTE]
-> <P>Sie können aus Lotus WK4-Dateien importieren und eine (schreibgeschützte) Verknüpfung mit diesen herstellen, aber Sie können keine Access-Daten in dieses Tabellenkalkulationsformat exportieren. Auch das Importieren, Exportieren oder Verknüpfen von Daten aus Lotus WKS- oder Excel Version 2.0-Tabellenkalkulationen mit dieser Aktion wird von Access nicht mehr unterstützt. Wenn Sie Daten aus einer Tabellenkalkulation im Excel Version 2.0- oder Lotus WKS-Format importieren oder eine Verknüpfung mit diesen herstellen möchten, konvertieren Sie die Tabellenkalkulationsdaten in eine neuere Version von Excel oder Lotus 1-2-3, bevor Sie die Daten in Access importieren oder verknüpfen.</P>
-
-
-<p></p></td>
+<td><p>Der Tabellenkalkulationstyp, in den importiert, aus dem exportiert oder zu dem eine Verknüpfung hergestellt werden soll. Sie können einen der im Feld aufgeführten Tabellenkalkulationstypen auswählen. Die Standardeinstellung ist <strong>Excel-Arbeitsmappe</strong>.  </p><p><strong>Hinweis</strong>: Sie können das Importieren und Verknüpfen von (schreibgeschützt) Lotus. WK4-Dateien, jedoch keine Access-Daten in dieses Format exportieren. Access unterstützt auch nicht mehr importieren, exportieren oder Verknüpfen von Daten aus Lotus. WKS oder Excel Version 2.0-Tabellen mit dieser Aktion. Wenn Sie aus importieren oder Verknüpfen von Kalkulationstabellendaten in Excel, Version 2.0 oder Lotus möchten. WKS format, das die Tabellendaten in eine höhere Version von Excel oder Lotus 1-2-3 vor dem Importieren oder Verknüpfen der Daten in Access konvertieren.</p>
+</td>
 </tr>
 <tr class="odd">
 <td><p><strong>Tabellenname</strong></p></td>
@@ -80,13 +65,7 @@ Die **TransferSpreadsheet** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Bereich</strong></p></td>
-<td><p>Der Bereich von Zellen, der importiert oder verknüpft werden soll. Lassen Sie dieses Argument leer, um die gesamten Tabellenkalkulation zu importieren oder zu verknüpfen. Sie können den Namen eines Bereichs in der Tabellenkalkulation eingeben oder den zu importierenden oder zu verknüpfenden Zellenbereich angeben, z. B. A1:E25 (beachten Sie, dass die A1..E25-Syntax in Access 97 oder höher nicht funktioniert). Wenn Sie aus einer Excel-Tabellenkalkulation der Version 5.0 oder höher importieren bzw. mit dieser verknüpfen, können Sie dem Bereich den Namen des Arbeitsblatts und ein Ausrufezeichen voranstellen; z. B. Budget!A1:C7.</p>
-
-> [!NOTE]
-> <P>Beim Exportieren in eine Tabellenkalkulation müssen Sie dieses Argument leer lassen. Wenn Sie einen Bereich eingeben, tritt beim Exportvorgang ein Fehler auf.</P>
-
-
-<p></p></td>
+<td><p>Der Bereich von Zellen, der importiert oder verknüpft werden soll. Lassen Sie dieses Argument leer, um die gesamten Tabellenkalkulation zu importieren oder zu verknüpfen. Sie können den Namen eines Bereichs in der Tabellenkalkulation eingeben oder den zu importierenden oder zu verknüpfenden Zellenbereich angeben, z. B. A1:E25 (beachten Sie, dass die A1..E25-Syntax in Access 97 oder höher nicht funktioniert). Wenn Sie aus einer Excel-Tabellenkalkulation der Version 5.0 oder höher importieren bzw. mit dieser verknüpfen, können Sie dem Bereich den Namen des Arbeitsblatts und ein Ausrufezeichen voranstellen; z. B. Budget!A1:C7.</p><p><strong>Hinweis</strong>: Wenn Sie in eine Kalkulationstabelle exportieren, Sie müssen dieses Argument leer lassen. Wenn Sie einen Bereich eingeben, wird der Export fehl.</p></td>
 </tr>
 </tbody>
 </table>
@@ -98,17 +77,14 @@ Sie können die Daten in Access-Auswahlabfragen in Tabellenkalkulationen exporti
 
 Tabellenkalkulationsdaten, die Sie an eine vorhandene Access-Tabelle anfügen, müssen mit der Struktur der Tabelle kompatibel sein.
 
-  - Jedes Feld in der Tabellenkalkulation muss den gleichen Datentyp haben wie das entsprechende Feld in der Tabelle.
+- Jedes Feld in der Tabellenkalkulation muss den gleichen Datentyp haben wie das entsprechende Feld in der Tabelle.
 
-  - Die Felder müssen in derselben Reihenfolge vorliegen (es sei denn, Sie legen das Argument **Besitzt Feldnamen** auf **Ja** fest; in diesem Fall müssen die Feldnamen in der Tabellenkalkulation mit den Feldnamen in der Tabelle übereinstimmen).
+- Die Felder müssen in derselben Reihenfolge vorliegen (es sei denn, Sie legen das Argument **Besitzt Feldnamen** auf **Ja** fest; in diesem Fall müssen die Feldnamen in der Tabellenkalkulation mit den Feldnamen in der Tabelle übereinstimmen).
 
 Diese Aktion entspricht dem Klicken auf die Registerkarte **Externe Daten** und dem Klicken auf **Excel** in der Gruppe **Importieren** oder **Exportieren** oder dem Klicken auf **Mehr** in der Gruppe **Importieren** oder **Exportieren** und dem Klicken auf **Lotus-1-2-3-Datei**. Sie können diese Befehle verwenden, um eine Datenquelle wie z. B. Access oder einen Datenbank-, Tabellenkalkulations- oder Textdateityp auszuwählen. Wenn Sie eine Tabellenkalkulation auswählen, wird eine Reihe von Dialogfeldern angezeigt oder ein Access-Assistent ausgeführt, in dem Sie den Namen der Tabellenkalkulation und andere Optionen auswählen. Die Argumente der **ImportExportSpreadsheet** -Aktion entsprechen den Optionen in diesen Dialogfeldern oder in den Assistenten.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Beim Abfragen oder Filtern einer verknüpften Tabellenkalkulation wird die Groß-/Kleinschreibung beachtet.</P>
-
-
+> [!HINWEIS] Beim Abfragen oder Filtern einer verknüpften Tabellenkalkulation wird die Groß-/Kleinschreibung beachtet.
 
 Wenn Sie eine Verknüpfung mit einer Excel-Tabellenkalkulation herstellen, die im Bearbeitungsmodus geöffnet ist, stellt Access die Verknüpfung erst dann her, wenn die Excel-Tabellenkalkulation den Bearbeitungsmodus verlassen hat. Es gibt kein Timeout.
 

@@ -6,19 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249107(v=office.15)
 ms:contentKeyID: 48544123
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 96bc0f55f6524a2aaa04bbe1f9b591ff2eb85bb8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c7b8492da87d0443d7992a1b9443501885ade3a0
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925723"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998581"
 ---
 # <a name="loadfromfile-method-ado"></a>LoadFromFile-Methode (ADO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
-
 
 Lädt den Inhalt einer vorhandenen Datei in ein [Stream](stream-object-ado.md)-Objekt.
 
@@ -26,11 +23,11 @@ Lädt den Inhalt einer vorhandenen Datei in ein [Stream](stream-object-ado.md)-O
 
 *Stream-Objekt*. LoadFromFile- *Dateiname*
 
-## <a name="parameter"></a>Parameter
+## <a name="parameters"></a>Parameter
 
-  - *FileName*
-
-  - Ein **String** -Wert, der den Namen der in das **Stream** -Objekt zu ladenden Datei enthält. *FileName* kann auf einem beliebigen gültigen Pfad und Namen im UNC-Format enthalten. Wenn die angegebene Datei nicht vorhanden ist, tritt ein Laufzeitfehler auf.
+|Name |Beschreibung|
+|:----|:----------|
+|*FileName* |Ein **String** -Wert, der den Namen der in das **Stream** -Objekt zu ladenden Datei enthält. *FileName* kann auf einem beliebigen gültigen Pfad und Namen im UNC-Format enthalten. Wenn die angegebene Datei nicht vorhanden ist, tritt ein Laufzeitfehler auf.|
 
 ## <a name="remarks"></a>Hinweise
 

@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052877
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f1f539659ef81ebb484c4a116176974491b0a480
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 81c7b3e2474ee6cbcd8e45b61369e22f20440587
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931064"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996755"
 ---
 # <a name="recordsetlockedits-property-dao"></a>Recordset.LockEdits-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -66,11 +65,8 @@ Wenn Sie für die **LockEdits**-Eigenschaft den Wert **False** festlegen und zu 
 
 Wenn Sie ODBC-Datenquellen verwenden, die mit der Microsoft Access-Datenbank-Engine verbunden sind, ist für die **LockEdits**-Eigenschaft immer **False** bzw. die optimistische Sperre festgelegt. Die Microsoft Access-Datenbank-Engine hat keine Kontrolle über die von externen Datenbankservern verwendeten Sperrmechanismen.
 
-
 > [!NOTE]
-> <P>Sie können den Wert der <STRONG>LockEdits</STRONG> voreinstellen, wenn Sie das <STRONG>Recordset-Objekt</STRONG> zunächst öffnen, indem Sie das Argument Sperren der <STRONG><A href="connection-openrecordset-method-dao.md">OpenRecordset</A></STRONG> -Methode festlegen. Festlegen des Arguments Lockedits auf <STRONG>DbPessimistic</STRONG> <STRONG>LockEdits</STRONG> -Eigenschaft auf <STRONG>True</STRONG>festgelegt wird, und Einstellung Lockedits auf einen anderen Wert wird die <STRONG>LockEdits</STRONG> -Eigenschaft auf <STRONG>False</STRONG>festgelegt.</P>
-
-
+> Sie können den Wert der **LockEdits** voreinstellen, wenn Sie das **Recordset-Objekt** zunächst öffnen, indem Sie das Argument Sperren der **[OpenRecordset](connection-openrecordset-method-dao.md)** -Methode festlegen. Festlegen des Arguments Lockedits auf **DbPessimistic** **LockEdits** -Eigenschaft auf **True**festgelegt wird, und Einstellung Lockedits auf einen anderen Wert wird die **LockEdits** -Eigenschaft auf **False**festgelegt.
 
 ## <a name="example"></a>Beispiel
 

@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: c43987be9e07a92c4276d13f1f2b51e3242312db
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: dc481a699ad0703075e7c7c4f97dffb147cd0280
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947168"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998945"
 ---
 # <a name="sql-reserved-words"></a>Reservierte Wörter für SQL
 
@@ -24,9 +24,7 @@ ms.locfileid: "25947168"
 Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbankmodul für die Verwendung in SQL-Anweisungen reserviert sind. Wörter, die nicht in Großbuchstaben aufgeführt sind, sind auch für andere Anwendungen reserviert. Deshalb enthalten die Hilfethemen für diese Wörter keine Beschreibung, die ausschließlich die Verwendung in SQL behandelt, sondern eine allgemeine Beschreibung.
 
 > [!NOTE]
-> <P>Wörter, gefolgt von einem Sternchen (*) reserviert sind jedoch keine Bedeutung im Kontext einer Microsoft Access SQL-Anweisung (beispielsweise <STRONG>Ebene</STRONG> und <STRONG>TableID</STRONG>) haben. Für Wörter ohne Unterstreichung in dieser Auflistung besteht keine Verknüpfung zu einem entsprechenden Hilfethema.</P>
-
-
+> Wörter, gefolgt von einem Sternchen (*) reserviert sind jedoch keine Bedeutung im Kontext einer Microsoft Access SQL-Anweisung (beispielsweise **Ebene** und **TableID**) haben. Für Wörter ohne Unterstreichung in dieser Auflistung besteht keine Verknüpfung zu einem entsprechenden Hilfethema.
 
 ## <a name="a"></a>A
 

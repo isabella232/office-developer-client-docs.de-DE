@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250310(v=office.15)
 ms:contentKeyID: 48548958
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 856f145c195c189775355fef662ea082ec629fd0
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 6a61803648a0efa5f226b222fb54ce96c8aadbfe
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883939"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999057"
 ---
 # <a name="value-property-ado"></a>Value-Eigenschaft (ADO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -30,11 +29,8 @@ Verwenden Sie die **Value** -Eigenschaft zum Festlegen oder Zurückgeben von Dat
 
 ADO ermöglicht das Festlegen oder Zurückgeben von Long binary-Daten mit der Value-Eigenschaft.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Bei <STRONG>Parameter</STRONG> -Objekten liest ADO die <STRONG>Value</STRONG> -Eigenschaft nur einmal vom Anbieter. Wenn ein Befehl ein <STRONG>Parameter</STRONG> -Objekt enthält, dessen <STRONG>Value</STRONG> -Eigenschaft leer ist, und Sie ein <A href="recordset-object-ado.md">Recordset</A>-Objekt durch den Befehl erstellen, schließen Sie zuerst das <STRONG>Recordset</STRONG> -Objekt. Rufen Sie erst danach die <STRONG>Value</STRONG> -Eigenschaft ab. Andernfalls ist bei einigen Anbietern die <STRONG>Value</STRONG> -Eigenschaft möglicherweise leer und enthält nicht den richtigen Wert.</P>
-
-
+> [!HINWEIS] Bei **Parameter** -Objekten liest ADO die **Value** -Eigenschaft nur einmal vom Anbieter. Wenn ein Befehl ein **Parameter** -Objekt enthält, dessen **Value** -Eigenschaft leer ist, und Sie ein [Recordset](recordset-object-ado.md)-Objekt durch den Befehl erstellen, schließen Sie zuerst das **Recordset** -Objekt. Rufen Sie erst danach die **Value** -Eigenschaft ab. Andernfalls ist bei einigen Anbietern die **Value** -Eigenschaft möglicherweise leer und enthält nicht den richtigen Wert.
 
 Bei neuen **Field** -Objekten, die der [Fields](fields-collection-ado.md)-Auflistung eines [Record](record-object-ado.md)-Objekts angefügt wurden, muss die **Value** -Eigenschaft festgelegt werden, bevor andere **Field** -Eigenschaften angegeben werden. Zuerst müssen ein angegebener Wert für die **Value** -Eigenschaft zugewiesen und die [Update](update-method-ado.md)-Methode für die **Fields** -Auflistung aufgerufen worden sein. Anschließend kann auf weitere Eigenschaften, wie z. B. [Type](type-property-ado.md) oder [Attributes](attributes-property-ado.md), zugegriffen werden.
 

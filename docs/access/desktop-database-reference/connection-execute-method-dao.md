@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835040(v=office.15)
 ms:contentKeyID: 48547978
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d95b33531f32ebc3524737c3322c92838518b97f
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 488fca77f09ae683232ccbd3e88a5b42d1faa1c3
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949537"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998567"
 ---
 # <a name="connectionexecute-method-dao"></a>Connection.Execute-Methode (DAO)
 
@@ -37,7 +37,7 @@ Führt eine Aktionsabfrage oder eine SQL-Anweisung für das angegebene Objekt au
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

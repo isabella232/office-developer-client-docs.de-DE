@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm119055
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 9d8747c5c4fd1a32a36841f648017bc0cab3de8f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7da3eb87e775a6b02694910cd017c9535fde1df7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920809"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998280"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -54,50 +53,48 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
 
 ## <a name="remarks"></a>Hinweise
 
-  - Diese Aktion ist mit dem Auswählen von Kategorien und Gruppen in der Titelleiste des Navigationsbereichs vergleichbar.
+- Diese Aktion entspricht dem Auswählen von Kategorien und Gruppen aus der Titelleiste des Navigationsbereichs.
 
-  - Gültige Argumente vom Typ **Gruppe** hängen vom verwendeten Argument **Kategorie** ab. Wenn Sie für **Gruppe** ein ungültiges Argument eingeben, wird eine Fehlermeldung angezeigt.Die folgende Tabelle enthält Beispiele gültiger Argumente vom Typ **Gruppe** für jedes Argument vom Typ **Kategorie**.
+- Gültige Argumente vom Typ **Gruppe** hängen vom verwendeten Argument **Kategorie** ab. Wenn Sie für **Gruppe** ein ungültiges Argument eingeben, wird eine Fehlermeldung angezeigt.Die folgende Tabelle enthält Beispiele gültiger Argumente vom Typ **Gruppe** für jedes Argument vom Typ **Kategorie**.
     
-    <table>
-    <colgroup>
-    <col style="width: 50%" />
-    <col style="width: 50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th><p>Argument "Kategorie"</p></th>
-    <th><p>Beispiel für Argumente vom Typ "Gruppe"</p></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p>Objekttyp</p></td>
-    <td><p>Tabellen, Formulare, Abfragen, Seiten, Makros, Module</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Tabellen und Sichten</p></td>
-    <td><p>Namen bestimmter Tabellen in der Datenbank</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Geändert am</p></td>
-    <td><p>Heute, Gestern, Letzten Monat, Älter</p></td>
-    </tr>
-    <tr class="even">
-    <td><p>Erstellt am</p></td>
-    <td><p>Heute, Gestern, Letzten Monat, Älter</p></td>
-    </tr>
-    <tr class="odd">
-    <td><p>Benutzerdefinierte Kategorie</p></td>
-    <td><p>Namen von Gruppen, die Sie für die angegebene benutzerdefinierte Kategorie erstellt haben</p></td>
-    </tr>
-    </tbody>
-    </table>
+  <table>
+  <colgroup>
+  <col style="width: 50%" />
+  <col style="width: 50%" />
+  </colgroup>
+  <thead>
+  <tr class="header">
+  <th><p>Argument "Kategorie"</p></th>
+  <th><p>Beispiel für Argumente vom Typ "Gruppe"</p></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="odd">
+  <td><p>Objekttyp</p></td>
+  <td><p>Tabellen, Formulare, Abfragen, Seiten, Makros, Module</p></td>
+  </tr>
+  <tr class="even">
+  <td><p>Tabellen und Sichten</p></td>
+  <td><p>Namen bestimmter Tabellen in der Datenbank</p></td>
+  </tr>
+  <tr class="odd">
+  <td><p>Geändert am</p></td>
+  <td><p>Heute, Gestern, Letzten Monat, Älter</p></td>
+  </tr>
+  <tr class="even">
+  <td><p>Erstellt am</p></td>
+  <td><p>Heute, Gestern, Letzten Monat, Älter</p></td>
+  </tr>
+  <tr class="odd">
+  <td><p>Benutzerdefinierte Kategorie</p></td>
+  <td><p>Namen von Gruppen, die Sie für die angegebene benutzerdefinierte Kategorie erstellt haben</p></td>
+  </tr>
+  </tbody>
+  </table>
 
-
-  - Verwenden Sie zum Ausführen der **NavigierenZu** -Aktion in einem VBA-Modul die **NavigateTo** -Methode des **DoCmd** -Objekts.
-
+- Verwenden Sie zum Ausführen der **NavigierenZu** -Aktion in einem VBA-Modul die **NavigateTo** -Methode des **DoCmd** -Objekts.
 
 > [!NOTE]
-> <P>Sie müssen zum Navigieren zur obersten Ebene einer Kategorie (beispielsweise Alle Tabellen, Alle Access-Objekte oder Alle Datumswerte) das Argument Gruppe leer lassen. Wenn beispielsweise das Argument Kategorie den Wert Objekttyp aufweist, wird durch Alle Access-Objekte als Argument Gruppe ein Fehler hervorgerufen.</P>
+> Sie müssen zum Navigieren zur obersten Ebene einer Kategorie (beispielsweise Alle Tabellen, Alle Access-Objekte oder Alle Datumswerte) das Argument Gruppe leer lassen. Wenn beispielsweise das Argument Kategorie den Wert Objekttyp aufweist, wird durch Alle Access-Objekte als Argument Gruppe ein Fehler hervorgerufen.
 
 

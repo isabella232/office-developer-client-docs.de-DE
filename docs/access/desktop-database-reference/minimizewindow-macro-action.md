@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm174420
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 50716a32d0fa3837f87d9d2c5ecde0b59696480d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c1c8cb8d0f1166b63031925a02186ebc8a1bdac2
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920368"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996713"
 ---
 # <a name="minimizewindow-macro-action"></a>MinimizeWindow-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Wenn überlappende Fenster anstelle von Dokumente im Registerkartenformat verwenden Zugriff konfiguriert ist, können Sie die **Minimierenfenster** -Aktion verwenden, um das aktive Fenster auf eine kleine Titelleiste am unteren Rand des Access-Fensters zu reduzieren.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur <STRONG>WindowState</STRONG> -Eigenschaft.</P>
-
-
+> [!HINWEIS] Diese Aktion kann auf Codefenster des Visual Basic-Editors nicht angewendet werden. Informationen zu den Auswirkungen auf Codefenster finden Sie im Thema zur **WindowState** -Eigenschaft.
 
 ## <a name="setting"></a>Einstellung
 
@@ -42,13 +38,13 @@ Die **Minimierenfenster** -Aktion hat dieselbe Wirkung wie das Klicken auf die S
 
 **Tipps**
 
-  - Wenn das Fenster, das Sie minimieren möchten, nicht das aktive Fenster ist, müssen Sie zuerst die **AuswählenObjekt** -Aktion verwenden.
+- Wenn das Fenster, das Sie minimieren möchten, nicht das aktive Fenster ist, müssen Sie zuerst die **AuswählenObjekt** -Aktion verwenden.
 
-  - Wenn Sie den Navigationsbereich ausblenden möchten, müssen Sie zuerst die AuswählenObjekt-Aktion mit der Einstellung Ja für das Argument Im Datenbankfenster und anschließend die MinimierenFenster-Aktion verwenden. Das Objekt, das Sie in der AuswählenObjekt-Aktion auswählen, kann ein beliebiges Objekt in der Datenbank sein.
+- Wenn Sie den Navigationsbereich ausblenden möchten, müssen Sie zuerst die AuswählenObjekt-Aktion mit der Einstellung Ja für das Argument Im Datenbankfenster und anschließend die MinimierenFenster-Aktion verwenden. Das Objekt, das Sie in der AuswählenObjekt-Aktion auswählen, kann ein beliebiges Objekt in der Datenbank sein.
 
-  - Sie können das aktive Fenster ausblenden, indem Sie auf im Menü **Ansicht** auf **Dieses Fenster verwalten**und dann auf **Ausblenden** klicken. Anstatt auf die Größe eines Symbols verkleinert zu werden, wird das Fenster in diesem Fall unsichtbar. Verwenden Sie den Befehl **Einblenden** im gleichen Menü, damit das Fenster wieder angezeigt wird. Mithilfe der **AusführenMenübefehl** -Aktion können Sie jeden dieser Befehle auch in einem Makro ausführen.
+- Sie können das aktive Fenster ausblenden, indem Sie auf im Menü **Ansicht** auf **Dieses Fenster verwalten**und dann auf **Ausblenden** klicken. Anstatt auf die Größe eines Symbols verkleinert zu werden, wird das Fenster in diesem Fall unsichtbar. Verwenden Sie den Befehl **Einblenden** im gleichen Menü, damit das Fenster wieder angezeigt wird. Mithilfe der **AusführenMenübefehl** -Aktion können Sie jeden dieser Befehle auch in einem Makro ausführen.
 
-  - Sie können auch die **SetzenWert** -Aktion verwenden, um die **Sichtbar**-Eigenschaft eines Formulars so festzulegen, dass das Fenster des Formulars ausgeblendet oder angezeigt wird.
+- Sie können auch die **SetzenWert** -Aktion verwenden, um die **Sichtbar**-Eigenschaft eines Formulars so festzulegen, dass das Fenster des Formulars ausgeblendet oder angezeigt wird.
 
 Verwenden Sie die **Minimize** -Methode des **DoCmd** -Objekts, um die **MinimierenFenster** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 

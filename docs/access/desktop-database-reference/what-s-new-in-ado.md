@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
 ms:contentKeyID: 48548905
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 950edd8ce1cd0e5081d569b1b11a02a14fe94d99
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 232af159c669968c9c3b4d3d65acbc181f958689
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937701"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998903"
 ---
 # <a name="whats-new-in-ado"></a>Neuigkeiten in ADO
 
@@ -23,7 +23,7 @@ Die folgenden neuen Features und die folgende erweiterte Dokumentation sind in d
 
 - **[Datensätze und Datenströme](chapter-10-records-and-streams.md)**
 
-  In dieser Version von ADO wird das [Record](record-object-ado.md)-Objekt eingeführt, durch das z. B. Verzeichnisse und Dateien in einem Dateisystem oder Ordner und Nachrichten in einem E-Mail-System dargestellt und verwaltet werden können. Durch ein **Record** -Objekt kann auch eine Zeile in einem [Recordset](recordset-object-ado.md)-Objekt dargestellt werden, obwohl die Objekte **Record** und **Recordset** über unterschiedliche Methoden und Eigenschaften verfügen.
+  Diese Version von ADO enthält das [Record](record-object-ado.md) -Objekt, das dargestellt und Dinge wie Verzeichnisse und Dateien in einem Dateisystem oder Ordner und Nachrichten in einem e-Mail-System verwalten kann. Ein **Datensatz** kann auch eine Zeile in einem [Recordset-Objekt](recordset-object-ado.md)darstellen, auch wenn Objekte **Record** und **Recordset** über verschiedene Methoden und Eigenschaften haben.
 
   Das neue [Stream](stream-object-ado.md)-Objekt ermöglicht das Lesen, Schreiben und Verwalten des binären Byte- oder Textdatenstroms, aus dem ein Datei- oder Nachrichtendatenstrom besteht.
 

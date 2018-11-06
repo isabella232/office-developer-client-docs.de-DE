@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1053005
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 66905394b0bf7127e952c9fe17860e84a151a3b0
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: a651e017b77e01a3fc6e810f58c00c94ece123ad
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937603"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997770"
 ---
 # <a name="querydefreturnsrecords-property-dao"></a>QueryDef.ReturnsRecords-Eigenschaft (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine externe Datenbank Datensätze zurückgibt (nur Microsoft Access-Arbeitsbereiche).
 
@@ -35,11 +33,8 @@ Gibt einen Wert zurück, der angibt, ob eine SQL Pass-Through-Abfrage an eine ex
 
 Nicht alle SQL Pass-Through-Abfragen an externe Datenbanken geben Datensätze zurück. Eine SQL UPDATE-Anweisung aktualisiert z. B. Datensätze, ohne Datensätze zurückzugeben, während eine SQL SELECT-Anweisung Datensätze zurückgibt. Wenn die Abfrage Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **True** fest. Wenn die Abfrage keine Datensätze zurückgibt, legen Sie für die **ReturnsRecords**-Eigenschaft **False** fest.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Vor dem Festlegen der <A href="querydef-connect-property-dao.md">ReturnsRecords</A>-Eigenschaft müssen Sie die <STRONG><STRONG>Connect</STRONG></STRONG> -Eigenschaft festlegen.</P>
-
-
+> [!HINWEIS] Vor dem Festlegen der [ReturnsRecords](querydef-connect-property-dao.md)-Eigenschaft müssen Sie die ****Connect**** -Eigenschaft festlegen.
 
 ## <a name="example"></a>Beispiel
 

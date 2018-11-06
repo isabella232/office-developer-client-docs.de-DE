@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249260(v=office.15)
 ms:contentKeyID: 48544798
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1cbebeab95f862cfab6b8e40d9dc5dfde7c65bee
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: fe02965bbfe0905a7bb29d5c268e6f1323c4801b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945481"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998210"
 ---
 # <a name="running-the-address-book-sample-application"></a>Ausführen der Adressbuch-beispielanwendung
 
@@ -25,5 +25,5 @@ Führen Sie zum Ausführen der Adressbuchanwendung das folgende Verfahren durch.
 
 2.  Geben Sie in Microsoft Internet Explorer 4.0 oder höher folgende Adresse: **https://***Webserver***/RDS/AddressBook/AddrBook.asp** Hierbei ist *Webserver* der Name des Webservers, auf dem die RDS-Serverkomponenten installiert sind.
 
-3.  Testen Sie dann in der Adressbuch-Beispielanwendung verschiedene Szenarien. Suchen Sie z. B. anhand der E-Mail-Adresse nach einer Person, führen Sie alle Personen mit der Position "Programm-Manager" auf, oder bearbeiten Sie vorhandene Datensätze. Klicken Sie auf **Suchen**, um das Datenraster mit den verfügbaren Namen zu füllen.
+3.  Sie können dann verschiedener Szenarien in der Adressbuch-beispielanwendung versuchen, wie Suchen nach einer Person basierend auf seinen e-Mail-Namen Auflisten aller Personen mit dem Titel "Programm-Manager" oder Bearbeiten einer vorhandenen Datensätze. Klicken Sie auf **Suchen** , um das Datenraster mit allen verfügbaren Namen zu füllen.
 

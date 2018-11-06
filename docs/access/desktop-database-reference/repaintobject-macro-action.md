@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm195788
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 369c518ab0ab213975bb7da3c96b6e5844bad9ee
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 69429aa0c623be06eae93a5e62fa06f1f0687007
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919416"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996461"
 ---
 # <a name="repaintobject-macro-action"></a>RepaintObject-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -56,19 +55,13 @@ Die **AktualisierenObjekt** -Aktion verwendet die folgenden Argumente.
 
 Microsoft Access wartet mit dem Beenden ausstehender Bildschirmaktualisierungen, bis andere ausstehende Aufgaben beendet sind. Mit dieser Aktion können Sie die sofortige Aktualisierung der Steuerelemente im angegebenen Objekt erzwingen. In den folgenden Fällen können Sie diese Aktion verwenden:
 
-  - Wenn Sie die **SetzenWert** -Aktion zum Ändern von Werten für eine Vielzahl von Steuerelementen verwenden. In Access werden die Änderungen möglicherweise nicht unmittelbar angezeigt, insbesondere, wenn andere Steuerelemente (wie berechnete Steuerelemente) von Werten des geänderten Steuerelements abhängen.
+- Wenn Sie die **SetzenWert** -Aktion zum Ändern von Werten für eine Vielzahl von Steuerelementen verwenden. In Access werden die Änderungen möglicherweise nicht unmittelbar angezeigt, insbesondere, wenn andere Steuerelemente (wie berechnete Steuerelemente) von Werten des geänderten Steuerelements abhängen.
 
-  - Wenn Sie sicher gehen möchten, dass das angezeigte Formular Daten in all seinen Steuerelementen anzeigt. Beispielsweise zeigen Steuerelemente, die OLE-Objekte enthalten, ihre Daten nicht unmittelbar nach Öffnen eines Formulars an.
-
+- Wenn Sie sicher gehen möchten, dass das angezeigte Formular Daten in all seinen Steuerelementen anzeigt. Beispielsweise zeigen Steuerelemente, die OLE-Objekte enthalten, ihre Daten nicht unmittelbar nach Öffnen eines Formulars an.
 
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Diese Aktion verursacht keine erneute Abfrage der Datenbank, sodass keine neuen und geänderten Datensätze angezeigt oder Datensätze aus der zugrunde liegenden Tabelle oder der zugrunde liegenden Abfrage des Objekts entfernt werden. Verwenden Sie zur erneuten Abfrage der Objektquelle oder eines ihrer Steuerelemente die <STRONG>AktualisierenDaten</STRONG> -Aktion. Verwenden Sie die <STRONG>AnzeigenAlleDatensätze</STRONG> -Aktion, um die neuesten Datensätze anzuzeigen, und entfernen Sie eventuell angewendete Filter.</P>
-> <LI>
-> <P>Die <STRONG>AktualisierenObjekt</STRONG> -Aktion hat dieselbe Wirkung wie das Klicken auf <STRONG>Aktualisieren</STRONG> in der Gruppe <STRONG>Datensätze</STRONG>auf der Registerkarte <STRONG>Start</STRONG>, durch das alle Änderungen angezeigt werden, die Sie oder andere Benutzer an den aktuell angezeigten Datensätzen in Formularen und Datenblättern vorgenommen haben.</P></LI></UL>
-
-
+> - Diese Aktion verursacht keine erneute Abfrage der Datenbank, sodass keine neuen und geänderten Datensätze angezeigt oder Datensätze aus der zugrunde liegenden Tabelle oder der zugrunde liegenden Abfrage des Objekts entfernt werden. Verwenden Sie zur erneuten Abfrage der Objektquelle oder eines ihrer Steuerelemente die **AktualisierenDaten** -Aktion. Verwenden Sie die **AnzeigenAlleDatensätze** -Aktion, um die neuesten Datensätze anzuzeigen, und entfernen Sie eventuell angewendete Filter.
+> - Die **AktualisierenObjekt** -Aktion hat dieselbe Wirkung wie das Klicken auf **Aktualisieren** in der Gruppe **Datensätze**auf der Registerkarte **Start**, durch das alle Änderungen angezeigt werden, die Sie oder andere Benutzer an den aktuell angezeigten Datensätzen in Formularen und Datenblättern vorgenommen haben.
 
 Verwenden Sie die **RepaintObject** -Methode des **DoCmd** -Objekts, um die **AktualisierenObjekt** -Aktion in einem Modul für Visual Basic für Applikationen (VBA) auszuführen.
 

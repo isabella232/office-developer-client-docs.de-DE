@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052930
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4e7bd39d3329c83ec2a26fbef11e3a3b4e51e760
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 95b12df62fe47779c1867a291018726ada299390
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921303"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998931"
 ---
 # <a name="indexclustered-property-dao"></a>Index.Clustered-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -38,12 +37,8 @@ Einige IISAM-Desktop-Datenbankenformate verwenden gruppierte Indizes. Ein gruppi
 
 Bei einem neuen, noch keiner Auflistung angefügten **Index**-Objekt ist die **Clustered**-Eigenschaft nicht schreibgeschützt. Bei einem vorhandenen **Index**-Objekt in einer **Indexes**-Auflistung ist sie schreibgeschützt.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Microsoft Access-Datenbanken ignorieren die <STRONG>Clustered</STRONG>-Eigenschaft, da das Microsoft Access-Datenbankmodul keine gruppierten Indizes unterstützt.</P>
-> <LI>
-> <P>Bei ODBC-Datenbankquellen gibt die <STRONG>Clustered</STRONG>-Eigenschaft immer <STRONG>False</STRONG> zurück, da nicht erkannt wird, ob die ODBC-Datenquelle einen gruppierten Index besitzt.</P></LI></UL>
+> - Microsoft Access-Datenbanken ignorieren die **Clustered**-Eigenschaft, da das Microsoft Access-Datenbankmodul keine gruppierten Indizes unterstützt.
+> - Bei ODBC-Datenquellen gibt die **Clustered** -Eigenschaft immer **False**zurück. Da nicht erkannt wird, ob die ODBC-Datenquelle einen gruppierten Index besitzt oder nicht.
 
 

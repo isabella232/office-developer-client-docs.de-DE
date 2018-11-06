@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820791(v=office.15)
 ms:contentKeyID: 48546719
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 70fa0aba5385157453a1e9b009a167f036dc874b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 576928e6538ea704bf6f10d0826c0e6bbb359bf1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929118"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998238"
 ---
 # <a name="fieldsappend-method-dao"></a>Fields.Append-Methode (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Fügt der **[Fields](field-object-dao.md)** -Auflistung ein neues **[Field](fields-collection-dao.md)** -Objekt hinzu.
 
@@ -27,7 +25,7 @@ Fügt der **[Fields](field-object-dao.md)** -Auflistung ein neues **[Field](fiel
 
 *Ausdruck* Eine Variable, die ein **Fields** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -39,14 +37,14 @@ Fügt der **[Fields](field-object-dao.md)** -Auflistung ein neues **[Field](fiel
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Objekt</p></td>
+<td><p><em>Object</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Objekt</strong></p></td>
 <td><p>Eine Objektvariable, die das Feld darstellt, das an die Auflistung angefügt wird.</p></td>

@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192306(v=office.15)
 ms:contentKeyID: 48544079
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0d5e636bf5ecae615df458754d6c4e08f00065ff
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 83db6ae8da804237222fc1f58e03058951d7ce41
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923609"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998987"
 ---
 # <a name="recordset2movelast-method-dao"></a>Recordset2.MoveLast-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Wechselt zum letzten Datensatz in einem angegebenen **Recordset**-Objekt und mac
 
 *Ausdruck* Eine Variable, die ein **Recordset2** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,14 +37,14 @@ Wechselt zum letzten Datensatz in einem angegebenen **Recordset**-Objekt und mac
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Optionen</p></td>
+<td><p><em>Options</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Auf <strong>dbRunAsync</strong> festgelegt, damit der Aufruf für <strong>MoveLast</strong> asynchron ausgeführt wird.</p></td>
@@ -66,11 +65,10 @@ Ist der erste bzw. letzte Datensatz beim Verwenden von **MoveFirst** oder **Move
 
 Wenn Recordset vom Typ Tabelle **Recordset-Objekt** (nur Microsoft Access-Arbeitsbereiche) bezieht, folgt die Verschiebung den aktuellen Index. Sie können den aktuellen Index mit der **Index** -Eigenschaft festlegen. Wenn Sie den aktuellen Index nicht festlegen, ist die Reihenfolge der zurückgegebenen Datensätze nicht definiert.
 
-
 > [!NOTE]
-> <P>Mithilfe der MoveLast-Methode können Sie ein Recordset vom Typ Dynaset oder Snapshot vollständig auffüllen, um die aktuelle Anzahl von Datensätzen im Recordset anzugeben. Wenn Sie allerdings MoveLast auf diese Weise verwenden, kann dies die Leistung der Anwendung beeinträchtigen. Sie sollten nur dann mithilfe von MoveLast eine Datensatzanzahl abrufen, wenn Sie unbedingt eine genaue Anzahl für ein neu geöffnetes Recordset benötigen. Wenn Sie die dbRunAsync-Konstante mit MoveLast verwenden, ist der Methodenaufruf asynchron. Sie können die StillExecuting-Eigenschaft verwenden, um festzustellen, ob das Recordset vollständig aufgefüllt ist. Mit der Cancel-Methode beenden Sie die Ausführung des asynchronen MoveLast-Methodenaufrufs.</P>
-
-
+> Die **MoveLast** -Methode können Sie vollständig auffüllen einen Typ Dynaset oder Snapshot- **Recordset-Objekts** , um die aktuelle Anzahl der Datensätze im **Recordset-Objekt**enthalten. Jedoch, wenn Sie auf diese Weise **MoveLast** verwenden, können Sie die Leistung der Anwendung verlangsamen. Sie sollten nur **MoveLast** verwenden, um zählen der Datensätze abzurufen, wenn dies unbedingt erforderlich ist, erhalten Sie eine genaue Anzahl für ein neu geöffneten **Recordset-Objekt**ist. 
+>
+> Wenn Sie die Konstante **DbRunAsync** mit **MoveLast**verwenden, ist der Methodenaufruf asynchron. Die **StillExecuting** -Eigenschaft können Sie bestimmen, wann **Recordset** vollständig aufgefüllt wird, und Sie können die **Cancel** -Methode verwenden, um die Ausführung des asynchronen Aufrufs **MoveLast** -Methode beendet werden.
 
 Sie können nicht auf ein **Recordset** -Objekt weiterleiten – nur – Geben Sie die **MoveFirst**, **MoveLast**und **MovePrevious** -Methoden verwenden.
 

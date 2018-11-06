@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm16614
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: ecdfcb638a471a91cc6249636748c02b341151b8
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 342b4c38b6a48ad36dc6d62ee34900e6f2057d42
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922552"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996867"
 ---
 # <a name="setmenuitem-macro-action"></a>SetMenuItem-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Sie können die **SetzenMenüelement** -Aktion verwenden, um den Zustand des Menüelements (es kann aktiviert oder deaktiviert bzw. ausgewählt oder nicht ausgewählt sein) in benutzerdefinierten oder globalen Menüs auf der Registerkarte **Add-Ins** festzulegen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>SetzenMenüelement</STRONG> -Aktion kann nur in Kombination mit benutzerdefinierten und globalen Menüs verwendet werden, die mithilfe von Menümakros erstellt wurden. Die <STRONG>SetzenMenüelement</STRONG> -Aktion ist lediglich aus Gründen der Kompatibilität mit Vorgängerversionen in Microsoft Access enthalten. Die Aktion kann nicht in Kombination mit der Funktionalität Befehlsleiste verwendet werden. Sie können jedoch die Eigenschaften <STRONG>Aktiviert</STRONG> und <STRONG>Zustand</STRONG> in einem VBA-Modul (Visual Basic für Applikationen) verwenden, um Elemente in Kontextmenüs oder benutzerdefinierten bzw. globalen Menüs zu aktivieren oder deaktivieren und auszuwählen oder nicht auszuwählen.</P>
-
-
+> [!HINWEIS] Die **SetzenMenüelement** -Aktion kann nur in Kombination mit benutzerdefinierten und globalen Menüs verwendet werden, die mithilfe von Menümakros erstellt wurden. Die **SetzenMenüelement** -Aktion ist lediglich aus Gründen der Kompatibilität mit Vorgängerversionen in Microsoft Access enthalten. Die Aktion kann nicht in Kombination mit der Funktionalität Befehlsleiste verwendet werden. Sie können jedoch die Eigenschaften **Aktiviert** und **Zustand** in einem VBA-Modul (Visual Basic für Applikationen) verwenden, um Elemente in Kontextmenüs oder benutzerdefinierten bzw. globalen Menüs zu aktivieren oder deaktivieren und auszuwählen oder nicht auszuwählen.
 
 ## <a name="setting"></a>Einstellung
 

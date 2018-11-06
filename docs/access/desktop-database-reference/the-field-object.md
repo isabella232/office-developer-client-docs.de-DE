@@ -1,20 +1,19 @@
 ---
 title: Das Field-Objekt (Access PC-Datenbank-Referenz)
-TOCTitle: The Field Object
+TOCTitle: The Field object
 ms:assetid: 55531e04-d74f-6394-df64-1660e5d572ca
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249284(v=office.15)
 ms:contentKeyID: 48544926
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cf5e5de6c45cd3b8cc8827a794f5c2ce394d8f43
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: d7a8dad03bee863ec53f2731f9e3c99287a70442
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947294"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997427"
 ---
 # <a name="field-object"></a>Field-Objekt
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -24,23 +23,23 @@ Verwenden Sie die **Value** -Eigenschaft von **Field** -Objekten, um Daten für 
 
 Die Auflistungen, Methoden und Eigenschaften eines **Field** -Objekts ermöglichen Folgendes:
 
-  - Zurückgeben des Namens eines Felds mithilfe der **Name** -Eigenschaft.
+- Zurückgeben des Namens eines Felds mithilfe der **Name** -Eigenschaft.
 
-  - Anzeigen oder Ändern der Daten im Feld mithilfe der **Value** -Eigenschaft. **Value** ist die Standardeigenschaft des **Field** -Objekts.
+- Anzeigen oder Ändern der Daten im Feld mithilfe der **Value** -Eigenschaft. **Value** ist die Standardeigenschaft des **Field** -Objekts.
 
-  - Zurückgeben der grundlegenden Merkmale eines Felds mithilfe der Eigenschaften **Type**, **Precision** und **NumericScale**.
+- Zurückgeben der grundlegenden Merkmale eines Felds mithilfe der Eigenschaften **Type**, **Precision** und **NumericScale**.
 
-  - Zurückgeben der deklarierten Größe eines Felds mithilfe der **DefinedSize** -Eigenschaft.
+- Zurückgeben der deklarierten Größe eines Felds mithilfe der **DefinedSize** -Eigenschaft.
 
-  - Zurückgeben der tatsächlichen Größe der Daten in einem bestimmten Feld mithilfe der **ActualSize** -Eigenschaft.
+- Zurückgeben der tatsächlichen Größe der Daten in einem bestimmten Feld mithilfe der **ActualSize** -Eigenschaft.
 
-  - Bestimmen der für ein bestimmtes Feld unterstützten Funktionalitätstypen mithilfe der **Attributes** -Eigenschaft und der **Properties** -Auflistung.
+- Bestimmen der für ein bestimmtes Feld unterstützten Funktionalitätstypen mithilfe der **Attributes** -Eigenschaft und der **Properties** -Auflistung.
 
-  - Bearbeiten der Werte von Feldern, die Daten vom Typ Long Binary oder Long enthalten, mithilfe der Methoden AppendChunk und GetChunk.
+- Bearbeiten der Werte von Feldern, die Daten vom Typ Long Binary oder Long enthalten, mithilfe der Methoden AppendChunk und GetChunk.
 
-Auflösen von Diskrepanzen in Feldwerten während der Batchaktualisierung mithilfe der Eigenschaften **OriginalValue** und **UnderlyingValue**, falls der Anbieter Batchaktualisierungen unterstützt.
+- Auflösen von Diskrepanzen in Feldwerten während der Batchaktualisierung mithilfe der Eigenschaften **OriginalValue** und **UnderlyingValue**, falls der Anbieter Batchaktualisierungen unterstützt.
 
-## <a name="describing-a-field"></a>Beschreiben eines Field-Objekts
+## <a name="describing-a-field"></a>Beschreiben eines Felds
 
 In den folgenden Themen werden Eigenschaften des [Field](field-object-ado.md)-Objekts behandelt, die Informationen darstellen, die das **Field** -Objekt selbst beschreiben - also Metadaten zu dem Feld. Diese Informationen helfen bei der Bestimmung des Schemas des **Recordset** -Objekts. Zu diesen Eigenschaften zählen **Type**, **DefinedSize**, **ActualSize**, **Name**, **NumericScale** und **Precision**.
 
@@ -50,7 +49,7 @@ Die **Type** -Eigenschaft gibt den Datentyp des Felds an. Konstanten Typ, der Da
 
 Für numerische Gleitkomma-Datentypen wie z. B. **adNumeric** können Sie weitere Informationen abrufen. Die **NumericScale** -Eigenschaft gibt an, wie viele Stellen rechts des Dezimalzeichens zur Darstellung von Werten für das **Field** -Objekt verwendet werden. Die **Precision** -Eigenschaft gibt die maximale Anzahl von Stellen zur Darstellung von Werten für das **Field** -Objekt an.
 
-## <a name="determining-field-size"></a>Bestimmen der Größe eines Field-Objekts
+## <a name="determining-field-size"></a>Bestimmen der Feldgröße
 
 Mithilfe der **DefinedSize** -Eigenschaft bestimmen Sie die Datenkapazität eines **Field** -Objekts.
 
@@ -58,19 +57,16 @@ Mithilfe der **ActualSize** -Eigenschaft geben Sie die tatsächliche Länge des 
 
 Die Eigenschaften **DefinedSize** und **ActualSize** haben unterschiedliche Verwendungszwecke. Angenommen, ein **Field** -Objekt mit dem deklarierten Typ **adVarChar** und einer **DefinedSize** -Eigenschaft von 50 enthält ein einzelnes Zeichen. Für die **ActualSize** -Eigenschaft wird als Wert die Länge in Bytes dieses Einzelzeichens zurückgegeben.
 
-## <a name="determining-field-contents"></a>Bestimmen des Inhalts von Field-Objekten
+## <a name="determining-field-contents"></a>Bestimmen der Inhalt des Felds
 
 Der Bezeichner der Spalte aus der Datenquelle wird durch die **Name** -Eigenschaft des **Field** -Objekts dargestellt. Mit der **Value** -Eigenschaft des **Field** -Objekts wird der tatsächliche Dateninhalt des Felds zurückgegeben oder festgelegt. Dies ist die Standardeigenschaft.
 
 Zum Ändern der Daten in einem Feld legen Sie die **Value** -Eigenschaft auf einen neuen Wert mit dem richtigen Datentyp fest. Der Cursortyp muss Aktualisierungen unterstützen, um die Inhalte eines Felds zu ändern. Die Überprüfung der Datenbank erfolgt in diesem Fall nicht im Batchmodus. Deshalb müssen Sie in einem solchen Fall beim Aufrufen von **UpdateBatch** nach Fehlern suchen. Manche Anbieter unterstützen auch die Eigenschaften **UnderlyingValue** und **OriginalValue** des **Field** -Objekts von ADO, damit Sie Konflikte beim Ausführen von Batchaktualisierungen lösen können. Weitere Informationen zum Lösen solcher Konflikte finden Sie in [Kapitel 4: Bearbeiten von Daten](chapter-4-editing-data.md).
 
-
 > [!NOTE]
-> <P>Werte für ein Field-Objekt in einem Recordset-Objekt können nicht festgelegt werden, wenn neue Field-Objekte an ein Recordset-Objekt angefügt werden. Neue Field-Objekte können aber an ein geschlossenes Recordset-Objekt angefügt werden. Das Recordset-Objekt muss dann geöffnet werden, und erst dann können diesen Field-Objekten Werte zugewiesen werden.</P>
+> Werte für ein Field-Objekt in einem Recordset-Objekt können nicht festgelegt werden, wenn neue Field-Objekte an ein Recordset-Objekt angefügt werden. Neue Field-Objekte können aber an ein geschlossenes Recordset-Objekt angefügt werden. Das Recordset-Objekt muss dann geöffnet werden, und erst dann können diesen Field-Objekten Werte zugewiesen werden.
 
-
-
-## <a name="getting-more-field-information"></a>Abrufen weiterer Informationen zum Field-Objekt
+## <a name="getting-more-field-information"></a>Abrufen weiterer Informationen zum field
 
 ADO-Objekte weisen zwei Arten von Eigenschaften auf, nämlich integrierte und dynamische Eigenschaften. Bisher wurden nur die integrierten Eigenschaften des **Field** -Objekts behandelt.
 
@@ -82,13 +78,13 @@ Keiner der beiden Eigenschaftstypen kann gelöscht werden.
 
 Ein dynamisches **Property** -Objekt weist vier integrierte Eigenschaften auf:
 
-  - Die **Name** -Eigenschaft ist eine Zeichenfolge zur Identifizierung der Eigenschaft.
+- Die **Name** -Eigenschaft ist eine Zeichenfolge zur Identifizierung der Eigenschaft.
 
-  - Die **Type** -Eigenschaft ist eine ganze Zahl zur Angabe des Datentyps der Eigenschaft.
+- Die **Type** -Eigenschaft ist eine ganze Zahl zur Angabe des Datentyps der Eigenschaft.
 
-  - Die Value-Eigenschaft ist vom Datentyp Variant und enthält die Eigenschaftseinstellung. Value ist die Standardeigenschaft für ein Property-Objekt.
+- Die Value-Eigenschaft ist vom Datentyp Variant und enthält die Eigenschaftseinstellung. Value ist die Standardeigenschaft für ein Property-Objekt.
 
-  - Die **Attributes** -Eigenschaft ist ein Wert vom Typ **Long** zur Angabe der Merkmale der anbieterspezifischen Eigenschaft.
+- Die **Attributes** -Eigenschaft ist ein Wert vom Typ **Long** zur Angabe der Merkmale der anbieterspezifischen Eigenschaft.
 
 Die **Properties** -Auflistung für das **Field** -Objekt enthält zusätzliche Metadaten zum Feld. Der Inhalt dieser Auflistung hängt vom Anbieter ab. Im folgenden Codebeispiel wird die **Properties** -Auflistung des **Recordset** -Beispielobjekts, das zu Beginn dieses Kapitels vorgestellt wurde, untersucht. Zunächst wird der Inhalt der Auflistung betrachtet. In diesem Code wird der [OLE DB-Anbieter für SQL Server](microsoft-ole-db-provider-for-sql-server.md) verwendet, weshalb die **Properties** -Auflistung relevante Informationen zu diesem Anbieter enthält.
 
@@ -107,7 +103,7 @@ Die **Properties** -Auflistung für das **Field** -Objekt enthält zusätzliche 
 'EndFieldProps 
 ```
 
-## <a name="dealing-with-binary-data"></a>Verwenden von Binärdaten
+## <a name="dealing-with-binary-data"></a>Behandlung von binären Daten
 
 Verwenden Sie die AppendChunk-Methode in einem Field-Objekt, um es mit Daten vom Typ Long Binary oder mit Zeichendaten zu füllen. Wenn der Arbeitsspeicher begrenzt ist, können Sie mit der AppendChunk-Methode umfangreiche Werte abschnittsweise anstatt in ihrer Gesamtheit bearbeiten.
 

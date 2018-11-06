@@ -6,18 +6,16 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff823095(v=office.15)
 ms:contentKeyID: 48547604
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 68f1651dd2f96f660d60e037eddbca4226e0420e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c1813a80c43eb77f8fb90442ecd6e0336b636191
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927858"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998973"
 ---
 # <a name="openform-macro-action"></a>OpenForm-Makroaktion
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Sie können die **ÖffnenFormular** -Aktion zum Öffnen eines Formulars in der Formularansicht, Entwurfsansicht, Seitenansicht oder Datenblattansicht verwenden. Sie können den Dateneingabe- und den Fenstermodus für das Formular auswählen und die Datensätze einschränken, die das Formular anzeigt.
 
@@ -43,13 +41,7 @@ Die **OpenForm** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>View</strong></p></td>
-<td><p>Die Ansicht, in der das Formular geöffnet wird. Klicken Sie auf <strong>Formular</strong>, <strong>Entwurf</strong>, <strong>Seitenansicht</strong>, <strong>Datenblatt</strong>, <strong>PivotTable-</strong>oder <strong>PivotChart</strong> in das Feld <strong>Anzeigen</strong> . Der Standardwert ist <strong>Formular</strong>.</p>
-
-> [!NOTE]
-> <P>Die Einstellung des Arguments <STRONG>Ansicht</STRONG> setzt die Einstellungen der Eigenschaften für das Formular <STRONG>DefaultView</STRONG> und <STRONG>ViewsAllowed</STRONG> außer Kraft. Beispielsweise wenn <STRONG>ViewsAllowed</STRONG> -Eigenschaft eines Formulars auf <STRONG>Datenblatt</STRONG>festgelegt ist, können weiterhin die <STRONG>ÖffnenFormular</STRONG> -Aktion Sie das Formular in der Formularansicht geöffnet.</P>
-
-
-<p></p></td>
+<td><p>Die Ansicht, in der das Formular geöffnet wird. Klicken Sie auf <strong>Formular</strong>, <strong>Entwurf</strong>, <strong>Seitenansicht</strong>, <strong>Datenblatt</strong>, <strong>PivotTable-</strong>oder <strong>PivotChart</strong> in das Feld <strong>Anzeigen</strong> . Der Standardwert ist <strong>Formular</strong>.</p><p><strong>Hinweis</strong>: die Einstellung des Arguments <STRONG>Ansicht</STRONG> setzt die Einstellungen der Eigenschaften für das Formular <STRONG>DefaultView</STRONG> und <STRONG>ViewsAllowed</STRONG> außer Kraft. Beispielsweise wenn <STRONG>ViewsAllowed</STRONG> -Eigenschaft eines Formulars auf <STRONG>Datenblatt</STRONG>festgelegt ist, können weiterhin die <STRONG>ÖffnenFormular</STRONG> -Aktion Sie das Formular in der Formularansicht geöffnet.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Filter Name</strong></p></td>
@@ -57,13 +49,7 @@ Die **OpenForm** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Where Condition</strong></p></td>
-<td><p>Eine gültige SQL WHERE-Klausel (ohne das Wort, in dem) oder ein Ausdruck, der Zugriff verwendet, um Datensätze aus dem Formular zugrunde liegenden Tabelle oder Abfrage. Wenn Sie einen Filter mit dem Argument <strong>Filtername</strong> auswählen, wendet Access diese WHERE-Klausel auf die Ergebnisse des Filters. Wenn Sie ein Formular öffnen und seine Datensätze auf diejenigen angegeben durch den Wert eines Steuerelements in ein anderes Formular zu beschränken, verwenden Sie den folgenden Ausdruck: <strong>[</strong><em>Fieldname</em><strong>] = Formulare! [</strong> <em>Formularname</em> <strong>]! [</strong><em>Steuerelementname in anderem Formular</em><strong>]</strong> ersetzen <em>Fieldname</em> durch den Namen eines Felds in der zugrunde liegenden Tabelle oder Abfrage des zu öffnenden Formulars. Ersetzen Sie <em>Formname</em> und <em>Steuerelementname in anderen Formular</em> mit dem Namen des anderen Formulars und das Steuerelement, Formular, das den Wert enthält, den Datensätze im ersten Formular übereinstimmen sollen.</p>
-
-> [!NOTE]
-> <P>Das Argument <STRONG>Bedingung</STRONG> die maximale Länge beträgt 255 Zeichen. Wenn Sie eine komplexere SQL WHERE-Klausel eingeben müssen, verwenden Sie die <STRONG>OpenForm</STRONG> -Methode des <STRONG>DoCmd</STRONG> -Objekts in einem Visual Basic für Applikationen (VBA) Modul stattdessen. Sie können in VBA SQL WHERE-Klausel Anweisungen von bis zu 32.768 Zeichen eingeben.</P>
-
-
-<p></p></td>
+<td><p>Eine gültige SQL WHERE-Klausel (ohne das Wort, in dem) oder ein Ausdruck, der Zugriff verwendet, um Datensätze aus dem Formular zugrunde liegenden Tabelle oder Abfrage. Wenn Sie einen Filter mit dem Argument <strong>Filtername</strong> auswählen, wendet Access diese WHERE-Klausel auf die Ergebnisse des Filters. Wenn Sie ein Formular öffnen und seine Datensätze auf diejenigen angegeben durch den Wert eines Steuerelements in ein anderes Formular zu beschränken, verwenden Sie den folgenden Ausdruck: <strong>[</strong><em>Fieldname</em><strong>] = Formulare! [</strong> <em>Formularname</em> <strong>]! [</strong><em>Steuerelementname in anderem Formular</em><strong>]</strong> ersetzen <em>Fieldname</em> durch den Namen eines Felds in der zugrunde liegenden Tabelle oder Abfrage des zu öffnenden Formulars. Ersetzen Sie <em>Formname</em> und <em>Steuerelementname in anderen Formular</em> mit dem Namen des anderen Formulars und das Steuerelement, Formular, das den Wert enthält, den Datensätze im ersten Formular übereinstimmen sollen.</p><p><strong>Hinweis</strong>: die maximale Länge des Arguments <STRONG>Bedingung</STRONG> beträgt 255 Zeichen. Wenn Sie eine komplexere SQL WHERE-Klausel eingeben müssen, verwenden Sie die <STRONG>OpenForm</STRONG> -Methode des <STRONG>DoCmd</STRONG> -Objekts in einem Visual Basic für Applikationen (VBA) Modul stattdessen. Sie können in VBA SQL WHERE-Klausel Anweisungen von bis zu 32.768 Zeichen eingeben.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Data Mode</strong></p></td>
@@ -76,13 +62,7 @@ Die **OpenForm** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Window Mode</strong></p></td>
-<td><p>Der Fenstermodus, in dem das Formular wird geöffnet. Klicken Sie auf <strong>Normal</strong> (das Formular wird in den Modus durch seine Eigenschaften festgelegt), <strong>ausgeblendet</strong> (das Formular ist ausgeblendet), <strong>Symbol</strong> (das Formular wird als kleine Titelleiste am unteren Rand des Bildschirms geöffnet), oder ein <strong>Dialogfeld</strong> (des Formulars <strong>Modal</strong> und PopUp <strong> </strong>auf <strong>Ja</strong>festgelegt). Die Standardeinstellung ist <strong>Normal</strong>.</p>
-
-> [!NOTE]
-> <P>Einige Einstellungen für das Argument <STRONG>Window Mode</STRONG> gelten nicht, wenn Dokumente im Registerkartenformat verwendet werden. So wechseln Sie zu überlappenden Fenstern:</P>
-
-
-<p></p>
+<td><p>Der Fenstermodus, in dem das Formular wird geöffnet. Klicken Sie auf <strong>Normal</strong> (das Formular wird in den Modus durch seine Eigenschaften festgelegt), <strong>ausgeblendet</strong> (das Formular ist ausgeblendet), <strong>Symbol</strong> (das Formular wird als kleine Titelleiste am unteren Rand des Bildschirms geöffnet), oder ein <strong>Dialogfeld</strong> (des Formulars <strong>Modal</strong> und PopUp <strong> </strong>auf <strong>Ja</strong>festgelegt). Die Standardeinstellung ist <strong>Normal</strong>.</p><p><strong>Hinweis</strong>: Einige Einstellungen für das Argument <STRONG>Fenstermodus</STRONG> beim Verwenden von Dokumenten im Registerkartenformat nicht angewendet. So wechseln Sie zu überlappenden Fenstern:</p>
 <ol>
 <li><p>Klicken Sie auf der Registerkarte Datei, und klicken Sie dann auf <strong>Optionen</strong>.</p></li>
 <li><p>Klicken Sie im Dialogfeld <strong>Access-Optionen</strong> auf <strong>Aktuelle Datenbank</strong>.</p></li>
@@ -102,11 +82,8 @@ Ein Formular ist Modal (es muss geschlossen oder ausgeblendet werden, bevor der 
 
 Beim Öffnen eines Formulars mit das Argument **Fenstermodus** auf **Dialog**festgelegt unterbricht Access das Makro aus, bis das Formular geschlossen oder ausgeblendet wird. Sie können ein Formular ausblenden, indem die **Visible** -Eigenschaft mithilfe der **SetzenWert** -Aktion auf **Nein** festlegen.
 
-
 > [!TIP]
-> <P>Sie können ein Formular im Navigationsbereich auswählen und ziehen Sie ihn in einer Zeile der Makro-Aktion. Dadurch wird automatisch eine <STRONG>ÖffnenFormular</STRONG> -Aktion, die das Formular in der Formularansicht geöffnet wird erstellt.</P>
-
-
+> Sie können ein Formular im Navigationsbereich auswählen und ziehen Sie ihn in einer Zeile der Makro-Aktion. Dadurch wird automatisch eine **ÖffnenFormular** -Aktion, die das Formular in der Formularansicht geöffnet wird erstellt.
 
 Der Filter und die WHERE-Bedingung ergeben die Einstellung der **Filter** -Eigenschaft des Formulars.
 

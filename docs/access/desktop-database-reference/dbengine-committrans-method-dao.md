@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845171(v=office.15)
 ms:contentKeyID: 48543197
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: de57bfff5b47e3c4202a17910db2413686f73d9b
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 530f638cbf996d84b476f1d9cf259f6ab444978f
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950265"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996909"
 ---
 # <a name="dbenginecommittrans-method-dao"></a>DBEngine.CommitTrans-Methode (DAO)
 
@@ -38,7 +38,7 @@ Beendet die aktuelle Transaktion und speichert die Änderungen.
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm24439
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f0c0ba73274d6f27a9e2a857aea1061416168f3a
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 84d5b9c5f65e032523be8c646cdea18890744367
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922916"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997448"
 ---
 # <a name="emaildatabaseobject-macro-action"></a>EMailDatenbankobjekt-Makroaktion
 
@@ -24,7 +24,7 @@ ms.locfileid: "25922916"
 Verwenden Sie die **EMailDatenbankobjekt** -Aktion, um ein angegebenes Datenblatt, ein Formular, einen Bericht, ein Modul oder eine Datenzugriffsseite von Microsoft Access zum Anzeigen oder Weiterleiten in eine E-Mail-Nachricht einzuschließen.
 
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="settings"></a>Einstellungen
 
@@ -112,7 +112,7 @@ Verwenden Sie die **SendObject** -Methode des **DoCmd** -Objekts, um die **EMail
 
 **Verknüpfung von bereitgestellt.** Luke Chung, [FMS, Inc.](https://www.fmsinc.com/), Gründer und Präsident von FMS, Inc., dem führenden Anbieter von kundendatenbanklösungen und Entwickler-Tools.
 
-  - [Merkmale und Begrenzungen in Bezug auf die Verwendung der Methode „SendObject" zum Senden](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
+- [Merkmale und Begrenzungen in Bezug auf die Verwendung der Methode „SendObject" zum Senden](https://www.fmsinc.com/microsoftaccess/email/sendobject.html)
 
 
 

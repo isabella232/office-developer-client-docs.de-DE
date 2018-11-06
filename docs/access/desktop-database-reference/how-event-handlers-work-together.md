@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248788(v=office.15)
 ms:contentKeyID: 48542951
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7a926bed97cf3f21e81fbf01eae554aaec45406a
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: a397b0f88bb60552a6e53432a3c8c4d788013103
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947784"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997272"
 ---
 # <a name="how-event-handlers-work-together"></a>Zusammenarbeit von Ereignishandlern
 
@@ -45,8 +45,7 @@ Beispielsweise kann das Auffüllen eines großen [Recordset](recordset-object-ad
 
 Die Flexibilität einer Programmiersprache wie Microsoft Visual C++ ermöglicht die Verarbeitung von Ereignissen mehrerer Objekte durch einen Ereignishandler. Beispielsweise können Sie einen **Disconnect** -Ereignishandler Ereignisse von verschiedenen **Connection** -Objekten verarbeiten lassen. Wenn eine der Verbindungen beendet wird, wird der **Disconnect** -Ereignishandler aufgerufen. Sie können erkennen, durch welche Verbindung das Ereignis verursacht wurde, da der Objektparameter des Ereignishandlers auf das entsprechende **Connection** -Objekt festgelegt ist.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Technik kann in Visual Basic nicht verwendet werden, da die Sprache nur ein Objekt zu einem Ereignishandler korrelieren kann.</P>
+> [!HINWEIS] Diese Technik kann in Visual Basic nicht verwendet werden, da die Sprache nur ein Objekt zu einem Ereignishandler korrelieren kann.
 
 

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm168097
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: be5497b7f1dbed4d32f25f2a675c3f996ed47c9f
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 10c4c4cb4d0e63f0610c753363b208990e6faae7
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925450"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25999085"
 ---
 # <a name="importexporttext-macro-action"></a>ImportExportText-Makroaktion
 
@@ -24,9 +24,7 @@ ms.locfileid: "25925450"
 Sie können die **Importierenexportierentext** -Aktion verwenden, um Text zwischen der aktuellen Microsoft Access-Datenbank (MDB oder ACCDB) oder Access-Projekt (ADP) und einer Textdatei importieren oder exportieren. Sie können auch die Daten in eine Textdatei mit der aktuellen Access-Datenbank verknüpfen. Mit einer verknüpften Textdatei können Sie die Textdaten mit Access anzeigen, wobei weiterhin uneingeschränkten Zugriff auf die Daten aus dem Programm Textverarbeitung. Sie können auch importieren aus zu exportieren und link zu einer Tabelle oder Liste in einer HTML-Datei (\*.html).
 
 > [!NOTE]
-> [!HINWEIS] Wenn Sie eine Verknüpfung mit Daten in einer Textdatei oder HTML-Datei herstellen, sind die Daten in Access schreibgeschützt.
-> 
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
+> [!HINWEIS] Wenn Sie eine Verknüpfung mit Daten in einer Textdatei oder HTML-Datei herstellen, sind die Daten in Access schreibgeschützt. [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -46,13 +44,7 @@ Die **ImportExportText** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p><strong>Transfertyp</strong></p></td>
-<td><p>Der Transfertyp, den Sie vornehmen möchten. Sie können Daten aus Textdateien mit Trennzeichen oder festgelegtem Format oder aus HTML-Dateien importieren, in sie exportieren oder eine Verknüpfung mit Daten in diesen Dateien herstellen. Außerdem können Sie Daten in eine Microsoft Word-Seriendruck-Datendatei exportieren, anhand der Sie anschließend mit dem Word-Seriendruckfeature Seriendruckdokumente wie z. B. Serienbriefe und Adressetiketten erstellen können. Wählen Sie <strong>Import mit Trennzeichen</strong>, <strong>Import festgelegtes Format</strong>, <strong>Import HTML</strong>, <strong>Export mit Trennzeichen</strong>, <strong>Export festgelegtes Format</strong>, <strong>Export HTML</strong>, <strong>Export Word für Windows-Seriendruck</strong>, <strong>Verknüpfung mit Trennzeichen</strong> <strong>Verknüpfung festgelegtes Format</strong> oder <strong>Verknüpfung HTML</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Import mit Trennzeichen</strong>.  </p>
-
-> [!NOTE]
-> <P>In einem Access-Projekt (.adp) werden nur <STRONG>Import mit Trennzeichen</STRONG>, <STRONG>Import festgelegtes Format</STRONG>, <STRONG>Export mit Trennzeichen</STRONG>, <STRONG>Export festgelegtes Format</STRONG> oder <STRONG>Export Word für Windows-Seriendruck</STRONG> unterstützt.</P>
-
-
-<p></p></td>
+<td><p>Der Transfertyp, den Sie vornehmen möchten. Sie können Daten aus Textdateien mit Trennzeichen oder festgelegtem Format oder aus HTML-Dateien importieren, in sie exportieren oder eine Verknüpfung mit Daten in diesen Dateien herstellen. Außerdem können Sie Daten in eine Microsoft Word-Seriendruck-Datendatei exportieren, anhand der Sie anschließend mit dem Word-Seriendruckfeature Seriendruckdokumente wie z. B. Serienbriefe und Adressetiketten erstellen können. Wählen Sie <strong>Import mit Trennzeichen</strong>, <strong>Import festgelegtes Format</strong>, <strong>Import HTML</strong>, <strong>Export mit Trennzeichen</strong>, <strong>Export festgelegtes Format</strong>, <strong>Export HTML</strong>, <strong>Export Word für Windows-Seriendruck</strong>, <strong>Verknüpfung mit Trennzeichen</strong> <strong>Verknüpfung festgelegtes Format</strong> oder <strong>Verknüpfung HTML</strong> im Feld <strong>Transfertyp</strong> des Abschnitts <strong>Aktionsargumente</strong> des Bereichs "Makro-Generator" aus. Die Standardeinstellung ist <strong>Import mit Trennzeichen</strong>.  </p><p><strong>Hinweis</strong>: nur Transfertypen <STRONG>Import mit Trennzeichen</STRONG>, <STRONG>Import festgelegtes Format</STRONG>, <STRONG>Export mit Trennzeichen</STRONG>, <STRONG>Export festgelegtes Format</STRONG>und <STRONG>Export Word für Windows-Seriendruck</STRONG> werden in einem Access-Projekt (ADP) unterstützt.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Spezifikationsname</strong></p></td>
@@ -80,11 +72,11 @@ Die **ImportExportText** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="odd">
 <td><p><strong>Besitzt Feldnamen</strong></p></td>
-<td><p>Gibt an, ob die erste Zeile der Textdatei die Namen der Felder enthält. Wenn Sie <strong>Ja</strong> wählen, verwendet Access die Namen in dieser Zeile beim Importieren oder Verknüpfen der Textdaten als Feldnamen in der Access-Tabelle. Wenn Sie <strong>Nein</strong> wählen, behandelt Access die erste Zeile als normale Zeile mit Daten. Die Standardeinstellung ist <strong>Nein</strong>. Access ignoriert dieses Argument für Word für Windows-Seriendruck-Datendateien, da die erste Zeile die Feldnamen enthalten muss. Wenn Sie eine Access-Tabelle oder -Auswahlabfrage in eine Textdatei mit Trennzeichen oder festgelegtem Format exportieren, fügt Access die Feldnamen der Tabelle oder Auswahlabfrage in die erste Zeile der Textdatei ein, sofern Sie <strong>Ja</strong> für dieses Argument ausgewählt haben. Wenn Sie eine Textdatei mit festgelegtem Format importieren oder verknüpfen und in diesem Feld <strong>Ja</strong> auswählen, muss in der ersten Zeile mit den Feldnamen das Feldtrennzeichen verwendet werden, das in der Import-/Exportspezifikation zum Trennen der Feldnamen festgelegt wurde. Wenn Sie in eine Textdatei mit festgelegtem Format exportieren und <strong>Ja</strong> für dieses Argument auswählen, fügt Access die Feldnamen mit diesem Trennzeichen in die erste Zeile der Textdatei ein.  </p></td>
+<td><p>Gibt an, ob die erste Zeile der Textdatei die Namen der Felder enthält. Wenn Sie <strong>Ja</strong> wählen, verwendet Access die Namen in dieser Zeile beim Importieren oder Verknüpfen der Textdaten als Feldnamen in der Access-Tabelle. Wenn Sie <strong>Nein</strong> wählen, behandelt Access die erste Zeile als normale Zeile mit Daten. Die Standardeinstellung ist <strong>Nein</strong>.<br/><br/>Access ignoriert dieses Argument für Word für Windows-Seriendruck-Datendateien, da die erste Zeile die Feldnamen enthalten muss. Wenn Sie eine Access-Tabelle oder -Auswahlabfrage in eine Textdatei mit Trennzeichen oder festgelegtem Format exportieren, fügt Access die Feldnamen der Tabelle oder Auswahlabfrage in die erste Zeile der Textdatei ein, sofern Sie <strong>Ja</strong> für dieses Argument ausgewählt haben.<br/><br/>Wenn Sie eine Textdatei mit festgelegtem Format importieren oder verknüpfen und in diesem Feld <strong>Ja</strong> auswählen, muss in der ersten Zeile mit den Feldnamen das Feldtrennzeichen verwendet werden, das in der Import-/Exportspezifikation zum Trennen der Feldnamen festgelegt wurde. Wenn Sie in eine Textdatei mit festgelegtem Format exportieren und <strong>Ja</strong> für dieses Argument auswählen, fügt Access die Feldnamen mit diesem Trennzeichen in die erste Zeile der Textdatei ein.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>HTML-Tabellenname</strong></p></td>
-<td><p>Der Name der Tabelle oder Liste in der HTML-Datei, die Sie importieren oder verknüpfen möchten. Dieses Argument wird ignoriert, es sei denn, das Argument <strong>Transfertyp</strong> auf Import HTML oder Verknüpfung HTML festgelegt ist. Wenn Sie dieses Argument leer lassen, wird die erste Tabelle oder Liste in der HTML-Datei importiert oder verknüpft. Name der Tabelle oder Liste in der HTML-Datei wird durch den angegebenen Text bestimmt die &lt;Beschriftung&gt; markieren, wenn es ist eine &lt;Beschriftung&gt; Tag. Wenn kein &lt;CAPTION&gt; -Tag vorhanden ist, wird der Name durch den vom &lt;TITLE&gt;-Tag angegebenen Text bestimmt. Wenn mehr als eine Tabelle oder Liste, den denselben Namen hat, werden Sie von Access durch Hinzufügen einer Zahl am Ende der einzelnen Namen unterscheidet; Personal1 und Mitarbeiter2.</p></td>
+<td><p>Der Name der Tabelle oder Liste in der HTML-Datei, die Sie importieren oder verknüpfen möchten. Dieses Argument wird ignoriert, es sei denn, das Argument <strong>Transfertyp</strong> auf Import HTML oder Verknüpfung HTML festgelegt ist. Wenn Sie dieses Argument leer lassen, wird die erste Tabelle oder Liste in der HTML-Datei importiert oder verknüpft. <br/><br/>Name der Tabelle oder Liste in der HTML-Datei wird durch den angegebenen Text bestimmt die &lt;Beschriftung&gt; markieren, wenn es ist eine &lt;Beschriftung&gt; Tag. Wenn kein &lt;CAPTION&gt; -Tag vorhanden ist, wird der Name durch den vom &lt;TITLE&gt;-Tag angegebenen Text bestimmt. Wenn mehr als eine Tabelle oder Liste, den denselben Namen hat, werden Sie von Access durch Hinzufügen einer Zahl am Ende der einzelnen Namen unterscheidet; Personal1 und Mitarbeiter2.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Codepage</strong></p></td>

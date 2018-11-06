@@ -10,31 +10,22 @@ f1_keywords:
 - vbaac10.chm27417
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 254a54b4b672ba9e40253e3bd95283eec655d3dc
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ed69a84f9b1774b7c33711a0bb8e80da54e656cc
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920508"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997930"
 ---
 # <a name="showtoolbar-macro-action"></a>ShowToolbar-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Sie können die **EinblendenSymbolleiste** -Aktion zum Anzeigen oder Ausblenden von Befehlsgruppen auf der Registerkarte **Add-Ins** verwenden.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die <STRONG>EinblendenSymbolleiste</STRONG> -Aktion wirkt sich nicht auf Kontextmenüs aus.</P>
-
-
-
-
-> [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> - [!HINWEIS] Die **EinblendenSymbolleiste** -Aktion wirkt sich nicht auf Kontextmenüs aus.
+> - [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 

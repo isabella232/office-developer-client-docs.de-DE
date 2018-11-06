@@ -10,12 +10,12 @@ f1_keywords:
 - jetsql40.chm5277590
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: bd5deb6d14aaf5911cd87c4d562dbec74e7ad1f2
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: ef5a794014f1397202483e008d164cb5de0b5179
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944487"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997812"
 ---
 # <a name="sql-data-types"></a>SQL-Datentypen
 
@@ -112,13 +112,6 @@ In der folgenden Tabelle werden die primären Datentypen aufgelistet. Die Synony
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Sowohl der Ausgangswert als auch der inkrementelle Werte können unter Verwendung der <A href="alter-table-statement-microsoft-access-sql.md">ALTER TABLE-Anweisung</A> geändert werden. Neue Zeilen, die in die Tabelle eingefügt werden, weisen Werte auf, die auf den neuen Ausgangs- bzw. inkrementellen Werten basieren und die automatisch für die Spalte generiert werden. Wenn basierend auf den neuen Ausgangs- bzw. inkrementellen Werten Werte generiert werden können, die auf vorhergehenden Ausgangs- bzw. inkrementellen Werten basieren, werden Duplikate generiert. Handelt es sich bei der Spalte um einen Primärschlüssel, kann beim Einfügen neuer Zeilen ein Fehler verursacht werden, wenn duplizierte Werte generiert wurden.</P>
-> <LI>
-> <P>Verwenden Sie die SELECT @@IDENTITY-Anweisung, um den letzten Wert zu ermitteln, der für automatisch inkrementierte Spalten generiert wurde. Es ist nicht möglich, einen Tabellennamen anzugeben. Der zurückgegebene Wert stammt aus der Tabelle mit einer automatisch inkrementierten Spalte, die zuletzt aktualisiert wurde.</P></LI></UL>
-
-
+> - Sowohl der Ausgangswert als auch der inkrementelle Werte können unter Verwendung der [ALTER TABLE-Anweisung](alter-table-statement-microsoft-access-sql.md) geändert werden. Neue Zeilen, die in die Tabelle eingefügt werden, weisen Werte auf, die auf den neuen Ausgangs- bzw. inkrementellen Werten basieren und die automatisch für die Spalte generiert werden. Wenn basierend auf den neuen Ausgangs- bzw. inkrementellen Werten Werte generiert werden können, die auf vorhergehenden Ausgangs- bzw. inkrementellen Werten basieren, werden Duplikate generiert. Handelt es sich bei der Spalte um einen Primärschlüssel, kann beim Einfügen neuer Zeilen ein Fehler verursacht werden, wenn duplizierte Werte generiert wurden.
+> - Verwenden Sie die SELECT @@IDENTITY-Anweisung, um den letzten Wert zu ermitteln, der für automatisch inkrementierte Spalten generiert wurde. Es ist nicht möglich, einen Tabellennamen anzugeben. Der zurückgegebene Wert stammt aus der Tabelle mit einer automatisch inkrementierten Spalte, die zuletzt aktualisiert wurde.

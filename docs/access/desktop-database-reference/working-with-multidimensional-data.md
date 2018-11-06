@@ -1,20 +1,19 @@
 ---
 title: Verwenden von multidimensionalen Daten
-TOCTitle: Working with Multidimensional Data
+TOCTitle: Working with multidimensional data
 ms:assetid: a0c9ac73-04da-cfdd-8787-15c8a53ff819
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249740(v=office.15)
 ms:contentKeyID: 48546717
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2210799fe46a0993a917a85a0e06a1a806b04548
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 1fc86aa61b9dda9db2246b7b5720eed31a595ea0
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945824"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998693"
 ---
 # <a name="working-with-multidimensional-data"></a>Verwenden von multidimensionalen Daten
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,35 +27,27 @@ Eine *Zelle* ist ein Objekt am Kreuzungspunkt von Achsenkoordinaten. Jede Zelle 
 
 Ein Cube hat beispielsweise die folgenden sechs Dimensionen. (Dieses Cubeschema weicht leicht vom Beispiel unter [Übersicht über Multidimensionale Schemas und Daten](overview-of-multidimensional-schemas-and-data.md) ab):
 
-  - Verkaufsberater
-
-  - Geografie (natürliche Hierarchie) - Kontinente, Länder/Regionen, Bundesländer/Kantone usw.
-
-  - Quartale - Quartale, Monate, Tage
-
-  - Jahre
-
-  - Maßeinheiten - Umsatz, Änderung in Prozent, geplanter Umsatz
-
-  - Artikel
-
+- Verkaufsberater
+- Geografie (natürliche Hierarchie) - Kontinente, Länder/Regionen, Bundesländer/Kantone usw.
+- Quartale - Quartale, Monate, Tage
+- Jahre
+- Maßeinheiten - Umsatz, Änderung in Prozent, geplanter Umsatz
+- Artikel
 
 > [!NOTE]
-> <P>[!HINWEIS] Die Zellwerte in diesem Beispiel können als Paare von Ordnungszahlen für die Achsenpositionen angezeigt werden, wobei die erste Ziffer die Position auf der X-Achse und die zweite Ziffer die Position auf der Y-Achse darstellt.</P>
-
-
+> [!HINWEIS] Die Zellwerte in diesem Beispiel können als Paare von Ordnungszahlen für die Achsenpositionen angezeigt werden, wobei die erste Ziffer die Position auf der X-Achse und die zweite Ziffer die Position auf der Y-Achse darstellt.
 
 Diese Zellmenge weist die folgenden Merkmale auf:
 
-  - Achsendimensionen: Quartale, Verkaufsberater, Geografie
+- Achsendimensionen: Quartale, Verkaufsberater, Geografie
 
-  - Filterdimensionen: Maßeinheiten, Jahre, Artikel
+- Filterdimensionen: Maßeinheiten, Jahre, Artikel
 
-  - Zwei Achsen: SPALTE (X-Achse oder Achse 0) und ZEILE (Y-Achse oder Achse 1)
+- Zwei Achsen: SPALTE (X-Achse oder Achse 0) und ZEILE (Y-Achse oder Achse 1)
 
-  - X-Achse: zwei geschachtelte Dimensionen, Verkaufsberater und Geografie
+- X-Achse: zwei geschachtelte Dimensionen, Verkaufsberater und Geografie
 
-  - Y-Achse: Dimension Quartale
+- Y-Achse: Dimension Quartale
 
 Die x-Achse enthält zwei geschachtelte Dimensionen: Verkaufsberater und Geografie. Aus Geografie, werden vier Elemente ausgewählt: Seattle, Boston, USA-South und Japan. Zwei Elemente von Verkäufer ausgewählt sind: Valentine und Nash. Daraus ergeben sich insgesamt acht Positionen auf dieser Achse (8 = 4\*2).
 

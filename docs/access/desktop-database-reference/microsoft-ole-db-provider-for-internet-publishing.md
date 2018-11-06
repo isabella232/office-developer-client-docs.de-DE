@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249327(v=office.15)
 ms:contentKeyID: 48545100
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bb0bb40d0f12bd9d5a6c8b29af1d4e27d806db87
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: c6f1c7c65d0ac1dd2a6d3ea132a31955f175bc7f
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25882084"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997483"
 ---
 # <a name="microsoft-ole-db-provider-for-internet-publishing"></a>Microsoft OLE DB-Anbieter für Internet Publishing
 
@@ -82,8 +82,6 @@ Die Zeichenfolge besteht aus den folgenden Schlüsselwörtern:
 
 Wenn Sie für den *ResourceURL*-Wert aus "URL=" in der Verbindungszeichenfolge einen ungültigen Wert festlegen, zeigt der Anbieter für Internet Publishing standardmäßig ein Dialogfeld an und fordert zur Eingabe eines gültigen Werts auf. Dies ist ein unerwünschtes Verhalten für eine Komponente auf der mittleren Ebene einer Anwendung, da es die Ausführung des Programms unterbricht, bis das Dialogfeld geschlossen wird. Der Client scheint zu blockieren, weil er von der Komponente keine Antwort erhält.
 
-
 > [!NOTE]
-> <P>Wenn MSDAIPP. DSO explizit angegeben wird, als Wert des Anbieters, entweder mit dem <EM>Anbieter</EM> Verbindungszeichenfolgen-Schlüsselworts oder der <STRONG>Provider</STRONG> -Eigenschaft kann nicht verwendet werden "URL =" in der Verbindungszeichenfolge. Wenn "URL=" dennoch verwendet wird, tritt ein Fehler auf. Geben Sie stattdessen einfach die URL an, wie im Thema <A href="the-ole-db-provider-for-internet-publishing.md">Verwenden von ADO mit dem OLE DB-Anbieter für Internet Publishing</A> beschrieben.</P>
-
+> Wenn MSDAIPP. DSO explizit angegeben wird, als Wert des Anbieters, entweder mit dem *Anbieter* Verbindungszeichenfolgen-Schlüsselworts oder der **Provider** -Eigenschaft kann nicht verwendet werden "URL =" in der Verbindungszeichenfolge. Wenn "URL=" dennoch verwendet wird, tritt ein Fehler auf. Geben Sie stattdessen einfach die URL an, wie im Thema [Verwenden von ADO mit dem OLE DB-Anbieter für Internet Publishing](the-ole-db-provider-for-internet-publishing.md) beschrieben.
 

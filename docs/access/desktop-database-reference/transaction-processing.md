@@ -6,25 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249523(v=office.15)
 ms:contentKeyID: 48545842
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f16ae14bc468ce1d96b924faa04bb9a315cab708
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: c4031bd4da8d0e1e8f1501e5d3bd23c41b33ea50
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946265"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998301"
 ---
 # <a name="transaction-processing"></a>Die Verarbeitung von Transaktionen
-
 
 **Betrifft**: Access 2013, Office 2013
 
 ADO stellt die folgenden Methoden zur Steuerung von Transaktionen bereit: **BeginTrans**, **CommitTrans** und **RollbackTrans**. Verwenden Sie diese Methoden mit einem **Connection** -Objekt, wenn Sie Änderungen an den Quelldaten als eine Einheit speichern oder abbrechen möchten. Um z. B. Geld zwischen Konten zu überweisen, subtrahieren Sie einen Betrag von einem Konto und addieren ihn zu einem anderen Konto. Wenn bei einer der Aktualisierungen ein Fehler gemeldet wird, stimmen die Konten nicht mehr. Wenn Sie diese Änderungen in einer geöffneten Transaktion vornehmen, ist sichergestellt, dass entweder alle oder keine Änderungen ausgeführt werden.
 
-
 > [!NOTE]
-> <P>Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "<STRONG>Transaction DDL</STRONG>"-Eigenschaft in der <A href="properties-collection-ado.md">Properties</A>-Auflistung des <STRONG>Connection</STRONG>-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.</P>
-
-
+> Transaktionen werden nicht von allen Anbietern unterstützt. Überprüfen Sie, ob die vom Anbieter definierte "**Transaction DDL**"-Eigenschaft in der [Properties](properties-collection-ado.md)-Auflistung des **Connection**-Objekts angezeigt wird und damit angibt, dass Transaktionen vom Anbieter unterstützt werden. Wenn Transaktionen vom Anbieter nicht unterstützt werden, wird beim Aufrufen einer dieser Methoden ein Fehler zurückgegeben.
 
 Nachdem Sie die **BeginTrans** -Methode aufgerufen haben, führt der Anbieter erst wieder einen sofortigen Commit für Ihre Änderungen aus, wenn Sie **CommitTrans** oder **RollbackTrans** zum Beenden der Transaktion aufrufen.
 

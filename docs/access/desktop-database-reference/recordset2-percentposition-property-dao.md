@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1052973
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 316dd9e8b430ba0dbb741bc1af81517749d84f77
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7cf5a0e0a9d0cf3d3cd5ce2b89dc287b41c72f74
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921887"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998797"
 ---
 # <a name="recordset2percentposition-property-dao"></a>Recordset2.PercentPosition-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -34,11 +33,8 @@ Legt einen Wert fest, der die ungefähre Position des aktuellen Datensatzes (akt
 
 Zum Festlegen oder Ändern der ungefähren Position des aktuellen Datensatz in einem Recordset-Objekt können Sie die PercentPosition-Eigenschaft überprüfen oder festlegen. Wenn Sie ein Recordset-Objekt vom Typ Dynaset oder Snapshot verwenden, das direkt in einer Basistabelle geöffnet wurde, füllen Sie zunächst das Recordset-Objekt auf, indem Sie zum letzten Datensatz gehen. Anschließend legen Sie die PercentPosition-Eigenschaft fest oder überprüfen sie. Wenn Sie die PercentPosition-Eigenschaft verwenden, bevor Sie das Recordset-Objekt vollständig aufgefüllt haben, erfolgt die Bewegung relativ zur Anzahl der Datensätze, auf die laut des Werts der RecordCount-Eigenschaft zugegriffen wurde. Mithilfe der MoveLast-Methode können Sie zum letzten Datensatz wechseln.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Es wird nicht empfohlen, die <STRONG>PercentPosition</STRONG>-Eigenschaft zu verwenden, um zu einem bestimmten Datensatz in einem <STRONG>Recordset</STRONG>-Objekt zu wechseln. Die <STRONG><A href="recordset2-bookmark-property-dao.md">Bookmark</A></STRONG> -Eigenschaft ist besser für diese Aufgabe geeignet.</P>
-
-
+> Verwenden die **PercentPosition** -Eigenschaft zum Verschieben des aktuellen Datensatzes zu einem bestimmten Datensatz in einem **Recordset** -Objekt wird nicht empfohlen. Die **[Bookmark](recordset2-bookmark-property-dao.md)** -Eigenschaft eignet sich besser für diese Aufgabe.
 
 Wenn Sie einen Wert für die **PercentPosition**-Eigenschaft festgelegt haben, wird der Datensatz an der ungefähren Position, die dem betreffenden Wert entspricht, zum aktuellen Datensatz. Die **PercentPosition**-Eigenschaft wird auf einen Wert zurückgesetzt, der die ungefähre Position des aktuellen Datensatzes widerspiegelt. Beispiel: Wenn das **Recordset**-Objekt nur 5 Datensätze enthält und Sie seine **PercentPosition**-Eigenschaft auf den Wert 77 festlegen, kann der von der **PercentPosition**-Eigenschaft zurückgegebene Wert 80 sein, anstelle von 77.
 

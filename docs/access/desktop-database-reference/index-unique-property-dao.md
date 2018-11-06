@@ -10,12 +10,12 @@ f1_keywords:
 - dao360.chm1052990
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 85d0ceec1cea782a8e43a2bebd6779841c2a56ff
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dd3bd047afed2e547be0fb7b6999c16dd0b12cc1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926108"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996475"
 ---
 # <a name="indexunique-property-dao"></a>Index.Unique-Eigenschaft (DAO)
 
@@ -37,21 +37,12 @@ Ein eindeutiger Index besteht aus einem oder mehreren Feldern, die alle Datensä
 
 Wenn sowohl die **Unique**- als auch die **[Primary](index-primary-property-dao.md)** -Eigenschaft eines **Index**-Objekts den Wert **True** hat, ist der Index eindeutig und primär, d. h. er identifiziert alle Datensätze in der Tabelle in einer vordefinierten, logischen Reihenfolge eindeutig. Wenn die **Primary**-Eigenschaft den Wert **False** hat, ist der Index ein sekundärer Index. Sekundäre Indizes (Schlüssel- als auch Nicht-Schlüsselindizes) ordnen Datensätze in einer vordefinierten Weise logisch an, ohne als Bezeichner für Datensätze in der Tabelle zu dienen.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Sie müssen keine Indizes für Tabellen erstellen, doch in großen, nicht-indizierten Tabellen kann der Zugriff auf einen Datensatz einige Zeit in Anspruch nehmen.</P>
-> <LI>
-> <P>Datensätze, die aus Tabellen ohne Indizes abgerufen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.</P>
-> <LI>
-> <P>Die <STRONG><A href="field-attributes-property-dao.md">Attributes</A></STRONG> -Eigenschaft der einzelnen <STRONG><A href="field-object-dao.md">Field</A></STRONG> -Objekte im <STRONG>Index</STRONG>-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher das für das betreffende <STRONG>Index</STRONG>-Objekt zu verwendende Zugriffsverfahren.</P>
-> <LI>
-> <P>Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.</P>
-> <LI>
-> <P>Indizes haben keine Auswirkung auf die physikalische Anordnung von Basistabellen. Sie wirken sich jedoch darauf aus, wie auf die Datensätze vom Recordset-Objekt vom Typ Tabelle zugegriffen wird, wenn ein bestimmter Index gewählt wird oder wenn die Microsoft Access-Datenbank-Engine Recordset-Objekte erstellt.</P></LI></UL>
-
-
+> - Sie müssen keine Indizes für Tabellen erstellen, doch in großen, nicht-indizierten Tabellen kann der Zugriff auf einen Datensatz einige Zeit in Anspruch nehmen.
+> - Datensätze, die aus Tabellen ohne Indizes abgerufen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.
+> - Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher das für das betreffende **Index**-Objekt zu verwendende Zugriffsverfahren.
+> - Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.
+> - Indizes wirken sich nicht auf die physische Reihenfolge einer Basistabelle aus; Indexes-wirkt sich nur wie die Datensätze durch das **[Recordset](recordset-object-dao.md)** -Objekt vom Typ Tabelle zugegriffen werden, wenn ein bestimmter Index ausgewählt ist oder wenn das Microsoft Access-Datenbankmodul **Recordset** -Objekte erstellt.
 
 ## <a name="example"></a>Beispiel
 

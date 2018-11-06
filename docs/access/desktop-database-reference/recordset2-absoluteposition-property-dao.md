@@ -10,15 +10,14 @@ f1_keywords:
 - dao360.chm1053074
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 6adf3e5ec2ec36163d4818411a1abc07e940b209
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 76137608ed5de0fbd2b841fba3101d70209c7a6d
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922685"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998756"
 ---
 # <a name="recordset2absoluteposition-property-dao"></a>Recordset2.AbsolutePosition-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -40,15 +39,9 @@ Wenn kein aktueller Datensatz vorhanden ist, als wenn im **Recordset2** -Objekt 
 
 Sie sollten diese Eigenschaft nicht als Ersatz-Datensatznummer verwenden. Lesezeichen sind weiterhin die empfohlene Methode, um zu einer bestimmten Position zurückzukehren, und sie sind die einzige Möglichkeit, den aktuellen Datensatz in allen Typen von **Recordset2**-Objekten zu positionieren. Die Position eines Datensatzes ändert sich, wenn ein oder mehr vorangehende Datensätze gelöscht werden. Außerdem gibt es keine Gewähr, dass ein Datensatz die gleiche absolute Position hat, wenn das **Recordset2**-Objekt neu erstellt wird, da die Reihenfolge einzelner Datensätze innerhalb eines **Recordset**-Objekts nicht garantiert ist, außer das Objekt wird mit einer SQL-Anweisung unter Verwendung einer ORDER BY-Klausel erstellt.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Wenn Sie die <STRONG>AbsolutePosition</STRONG>-Eigenschaft für ein soeben geöffnetes und noch nicht aufgefülltes <STRONG>Recordset2</STRONG>-Objekt auf einen größeren Wert als Null festlegen, wird ein auffangbarer Fehler verursacht. Füllen Sie das <STRONG>Recordset2</STRONG>-Objekt zuerst mit der <STRONG>MoveLast</STRONG>-Methode.</P>
-> <LI>
-> <P>Die <STRONG>AbsolutePosition</STRONG> -Eigenschaft ist nicht verfügbar, auf Forward Typ <STRONG>Recordset2</STRONG> -Objekte oder auf <STRONG>Recordset2</STRONG> -Objekte, die von Pass-Through-Abfragen für Microsoft Access-Datenbankmodul verbundene ODBC-Datenbanken geöffnet.</P></LI></UL>
-
-
+> - Wenn Sie die **AbsolutePosition**-Eigenschaft für ein soeben geöffnetes und noch nicht aufgefülltes **Recordset2**-Objekt auf einen größeren Wert als Null festlegen, wird ein auffangbarer Fehler verursacht. Füllen Sie das **Recordset2**-Objekt zuerst mit der **MoveLast**-Methode.
+> - Die **AbsolutePosition** -Eigenschaft ist nicht verfügbar, auf Forward Typ **Recordset2** -Objekte oder auf **Recordset2** -Objekte, die von Pass-Through-Abfragen für Microsoft Access-Datenbankmodul verbundene ODBC-Datenbanken geöffnet.
 
 ## <a name="example"></a>Beispiel
 

@@ -1,20 +1,19 @@
 ---
 title: Properties-Auflistung (DAO)
-TOCTitle: Properties Collection
+TOCTitle: Properties collection
 ms:assetid: cd07184a-a261-29c9-542f-bc2eff6f4af6
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff834455(v=office.15)
 ms:contentKeyID: 48547753
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 05379dee652732bc0839abb056cc15962e3683b0
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 0cd2198d0578c6ec42e4bf800d95e1d7afe22786
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926941"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998343"
 ---
 # <a name="properties-collection-dao"></a>Properties-Auflistung (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -28,29 +27,23 @@ Zusätzlich zu den integrierten Eigenschaften können Sie auch eigene benutzerde
 
 Mit der **Delete**-Methode können Sie benutzerdefinierte Eigenschaften aus der **Properties**-Auflistung entfernen. Es ist jedoch nicht möglich, integrierte Eigenschaften zu entfernen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Ein benutzerdefiniertes <STRONG>Property</STRONG>-Objekt bezieht sich nur auf eine bestimmte Objektinstanz. Die Eigenschaft ist nicht für alle Objektinstanzen des ausgewählten Typs definiert.</P>
-
-
+> [!HINWEIS] Ein benutzerdefiniertes **Property**-Objekt bezieht sich nur auf eine bestimmte Objektinstanz. Die Eigenschaft ist nicht für alle Objektinstanzen des ausgewählten Typs definiert.
 
 Der Verweis auf ein integriertes **Property**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:
 
--Objekt. **Eigenschaften** (0)
+- -Objekt. **Eigenschaften** (0)
 
--Objekt. **Eigenschaften** ("Name")
+- -Objekt. **Eigenschaften** ("Name")
 
--Objekt. **Eigenschaften** \! \[Namen\]
+- -Objekt. **Eigenschaften** \! \[Namen\]
 
 Bei einer integrierten Eigenschaft können Sie auch diese Syntax verwenden:
 
-Object.Name
-
+- Object.Name
 
 > [!NOTE]
-> <P>Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige-Objekt verwenden. <STRONG>Eigenschaften</STRONG> Syntax ("Name").</P>
-
-
+> Für eine benutzerdefinierte Eigenschaft müssen Sie das vollständige-Objekt verwenden. **Eigenschaften** Syntax ("Name").
 
 Sie können mit denselben Syntaxformen auf die **Value**-Eigenschaft eines **Property**-Objekts verweisen. Der Kontext des Verweises entscheidet, ob Sie sich auf das **Property**-Objekt selbst oder auf die **Value**-Eigenschaft des **Property**-Objekts beziehen.
 

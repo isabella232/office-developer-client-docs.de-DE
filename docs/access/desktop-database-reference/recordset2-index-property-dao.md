@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff194872(v=office.15)
 ms:contentKeyID: 48545209
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4a0956efd8082363c4d00acf491bcb0b990cdf0e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 034fd349f140e931d1a5f654dfb275854aa2b78d
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920403"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998980"
 ---
 # <a name="recordset2index-property-dao"></a>Recordset2.Index-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -38,21 +37,12 @@ Sie können einen neuen Index für die Tabelle erstellen, indem Sie ein neues **
 
 Datensätze, die von einem **Recordset** -Objekt vom Typ "Tabelle" zurückgegeben werden, können nur nach den Indizes angeordnet werden, die für das zugrunde liegende **TableDef** -Objekt definiert sind. Um Datensätze in einer anderen Reihenfolge zu sortieren, können Sie mithilfe einer SQL-Anweisung mit einer ORDER BY-Klausel einer Dynaset, Snapshot oder vorwärts Typ **Recordset** -Objekt öffnen.
 
-
 > [!NOTE]
-> <UL>
-> <LI>
-> <P>Sie brauchen keine Indizes für Tabellen zu erstellen. Bei großen, nicht-indizierten Tabellen kann der Zugriff auf einen spezifischen Datensatz oder die Erstellung eines <STRONG>Recordset</STRONG>-Objekts einige Zeit in Anspruch nehmen. Andererseits werden Aktualisierungs-, Anhänge- und Löschvorgänge durch das Erstellen zu vieler Indizes verlangsamt, da alle Indizes automatisch aktualisiert werden.</P>
-> <LI>
-> <P>Datensätze, die aus Tabellen ohne Indizes eingelesen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.</P>
-> <LI>
-> <P>Die <STRONG><A href="field-attributes-property-dao.md">Attributes</A></STRONG> -Eigenschaft der einzelnen <STRONG><A href="field-object-dao.md">Field</A></STRONG> -Objekte im <STRONG>Index</STRONG>-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher die für den betreffenden Index zu verwendenden Zugriffsverfahren.</P>
-> <LI>
-> <P>Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.</P>
-> <LI>
-> <P>Indizes haben keinen Einfluss auf die physikalische Reihenfolge einer Basistabelle. Indizes beeinflussen nur, wie ein Recordset-Objekt des Typs Tabelle auf Datensätze zugreift, wenn ein bestimmter Index gewählt wird oder ein Recordset-Objekt geöffnet wird.</P></LI></UL>
-
-
+> - Sie brauchen keine Indizes für Tabellen zu erstellen. Bei großen, nicht-indizierten Tabellen kann der Zugriff auf einen spezifischen Datensatz oder die Erstellung eines **Recordset**-Objekts einige Zeit in Anspruch nehmen. Andererseits werden Aktualisierungs-, Anhänge- und Löschvorgänge durch das Erstellen zu vieler Indizes verlangsamt, da alle Indizes automatisch aktualisiert werden.
+> - Datensätze, die aus Tabellen ohne Indizes eingelesen werden, werden in einer unbestimmten Reihenfolge zurückgegeben.
+> - Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher die für den betreffenden Index zu verwendenden Zugriffsverfahren.
+> - Mithilfe eines eindeutigen Indexes wird die Suche nach Datensätzen optimiert.
+> - Indizes haben keinen Einfluss auf die physikalische Reihenfolge einer Basistabelle. Indizes beeinflussen nur, wie ein Recordset-Objekt des Typs Tabelle auf Datensätze zugreift, wenn ein bestimmter Index gewählt wird oder ein Recordset-Objekt geöffnet wird.
 
 ## <a name="example"></a>Beispiel
 

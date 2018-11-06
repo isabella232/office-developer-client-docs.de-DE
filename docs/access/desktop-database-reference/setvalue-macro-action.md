@@ -6,32 +6,22 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820771(v=office.15)
 ms:contentKeyID: 48546712
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6f407c5da2ca669025d5aec47685e6eb9732c72c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1ec96fd588e4b20b6c2ebe0ef25f488841aa4d70
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927102"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998875"
 ---
 # <a name="setvalue-macro-action"></a>SetValue-Makroaktion
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Die **SetzenWert** -Aktion können Sie den Wert des Microsoft Access-Felds, eines Steuerelements oder einer Eigenschaft in einem Formular, einem Formulardatenblatt oder einen Bericht festzulegen.
 
-
 > [!NOTE]
-> <P>Sie können die Aktion <STRONG>SetzenWert</STRONG> nicht verwenden, um den Wert einer Access-Eigenschaft festzulegen, die ein Objekt zurückgibt.</P>
-
-
-
-
-> [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> - Sie können die Aktion **SetzenWert** nicht verwenden, um den Wert einer Access-Eigenschaft festzulegen, die ein Objekt zurückgibt.
+> - [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -55,23 +45,14 @@ Die Aktion **SetzenWert** kann mit den folgenden Argumenten verwendet werden.
 </tr>
 <tr class="even">
 <td><p><strong>Expression</strong></p></td>
-<td><p>Der Ausdruck, den Access verwendet, um den Wert für dieses Element festzulegen. Sie müssen immer die vollständige Syntax verwenden, um auf Objekte im Ausdruck zu verweisen. Um beispielsweise den Wert eines Steuerelements für das Gehalt in einem Formular für Mitarbeiter um 10 Prozent zu erhöhen, verwenden Sie Forms!Employees!Salary*1.1. Dies ist ein erforderliches Argument.</p>
-
-> [!NOTE]
-> <P>Verwenden Sie kein Gleichheitszeichen (<STRONG>=</STRONG>) vor dem Ausdruck in diesem Argument. In diesem Fall Access wertet den Ausdruck und verwendet diesen Wert als den Ausdruck in diesem Argument. Wenn der Ausdruck eine Zeichenfolge ist, können unerwartete Ergebnisse auftreten.</P>
-
-
+<td><p>Der Ausdruck, den Access verwendet, um den Wert für dieses Element festzulegen. Sie müssen immer die vollständige Syntax verwenden, um auf Objekte im Ausdruck zu verweisen. Um beispielsweise den Wert eines Steuerelements für das Gehalt in einem Formular für Mitarbeiter um 10 Prozent zu erhöhen, verwenden Sie Forms!Employees!Salary*1.1. Dies ist ein erforderliches Argument.</p><p><strong>Hinweis</strong>: Verwenden Sie ein Gleichheitszeichen (=) vor dem Ausdruck im dieses Argument. In diesem Fall Access wertet den Ausdruck und verwendet diesen Wert als den Ausdruck in diesem Argument. Wenn der Ausdruck eine Zeichenfolge ist, können unerwartete Ergebnisse auftreten.</p>
 <p>Beispiel: bei Eingabe <strong> = &quot;Zeichenfolge1&quot; </strong> für dieses Argument wertet Access zuerst den Ausdruck als Zeichenfolge1. Klicken Sie dann verwendet Zeichenfolge1 als Ausdruck, der in diesem Argument und erwartet ein Steuerelement oder eine Eigenschaft mit dem Namen String1 im Formular oder Bericht, der das Makro aufgerufen wird.</p></td>
 </tr>
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>Klicken Sie in einer Access-Datenbank (MDB oder ACCDB) auf die Schaltfläche <STRONG>Erstellen</STRONG> , um den Ausdrucks-Generator verwenden Sie zum Erstellen eines Ausdrucks für eines der folgenden Argumente.</P>
-
-
+> Klicken Sie in einer Access-Datenbank (MDB oder ACCDB) auf die Schaltfläche **Erstellen** , um den Ausdrucks-Generator verwenden Sie zum Erstellen eines Ausdrucks für eines der folgenden Argumente.
 
 ## <a name="remarks"></a>Hinweise
 
@@ -83,22 +64,13 @@ Wenn Sie den Wert eines Steuerelements in einem Formular festlegen, löst die Ak
 
 Um den Wert eines Steuerelements zu ändern, können Sie die Aktion **SetzenWert** Aktion in einem Makro verwenden, das durch die Ereigniseigenschaft **NachAktualisierung** des Steuerelements angegeben ist. Sie können Aktion **SetzenWert** jedoch nicht in einem Makro verwenden, das durch die Ereigniseigenschaft **VorAktualisierung** eines Steuerelements angegeben ist, um den Wert des Steuerelements zu ändern (Sie können die Aktion **SetzenWert ** aber zum Ändern des Werts anderer Steuerelemente verwenden). Sie können die Aktion **SetzenWert** außerdem in einem von der Eigenschaft **VorAktualisieurng** oder **NachAktualisierung** eines Formulars angegebenem Makro verwenden, um den Wert eines beliebigen Steuerelements im aktuellen Datensatz zu ändern.
 
-
 > [!NOTE]
-> <P>Die Werte der folgenden Steuerelemente können nicht mit der Aktion <STRONG>SetzenWert </STRONG> festgelegt werden:</P>
-> <UL>
-> <LI>
-> <P>Gebundene Steuerelemente und berechnete Steuerelemente in Berichten</P>
-> <LI>
-> <P>Berechnete Steuerelemente in Formularen</P></LI></UL>
-
-
-
+> Die Werte der folgenden Steuerelemente können nicht mit der Aktion **SetzenWert ** festgelegt werden:
+> - Gebundene Steuerelemente und berechnete Steuerelemente in Berichten
+> - Berechnete Steuerelemente in Formularen
 
 > [!TIP]
-> <P>Sie können die Aktion <STRONG>SetzenWert</STRONG> verwenden, um ein Formular in der Formularansicht ein- oder auszublenden. Geben Sie <STRONG>Formulare</STRONG>!<EM>Formularname</EM><STRONG>Sichtbar</STRONG> in das Feld <STRONG>Element</STRONG> und <STRONG>Nein</STRONG> oder <STRONG>Ja</STRONG> in das Feld <STRONG>Ausdruck</STRONG> ein. Wenn Sie die Eigenschaft <STRONG>Sichtbar</STRONG> eines modalen Formulars auf <STRONG>Nein</STRONG> festlegen, wird das Formular ausgeblendet und nicht modal. Wenn Sie die Eigenschaft auf <STRONG>Ja</STRONG>, wird das Formular eingeblendet und wieder modal.</P>
-
-
+> Die **SetzenWert** -Aktion können Sie ein Formular in der Formularansicht anzeigen oder ausblenden. Geben Sie **Formulare**! *Formname ***. Sichtbar** im im **Element** und **Nein** oder **Ja** im Feld **Ausdruck** . Ein modales Formular **Visible** -Eigenschaft auf **Nein** festlegen, das Formular ausgeblendet und ungebunden. Die-Eigenschaft auf **Ja** festlegen, zeigt das Formular und stellt sie erneut modal.
 
 Wenn Sie über die Aktion **SetzenWert** in einem Makro den Wert eines Steuerelements ändern oder neue Daten in einem Steuerelement hinzufügen, werden keine Ereignisse wie **VorAktualisierung**, **VorEingabe** oder **Änderung** ausgelöst, die auftreten, wenn Sie in diesen Steuerelementen in der Benutzeroberfläche Daten ändern oder Daten eingeben. Diese Ereignisse treten ebenfalls nicht auf, wenn Sie den Wert des Steuerelements mithilfe eines VBA-Moduls (Visual Basic for Applications) festlegen.
 

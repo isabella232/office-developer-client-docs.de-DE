@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm41840
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f134a43aaa56a1b206330175658f92e5076a4a14
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b34deff80157b3de63038251a649794587dacc85
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919290"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997413"
 ---
 # <a name="selectobject-macro-action"></a>SelectObject-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -46,13 +45,7 @@ Die **AuswählenObjekt** -Aktion hat die folgenden Argumente.
 </tr>
 <tr class="even">
 <td><p><strong>Objektname</strong></p></td>
-<td><p>Der Name des auszuwählenden Objekts. Im Feld Objektname werden alle Objekte in der Datenbank angezeigt, die dem vom Argument Objekttyp ausgewählten Typ entsprechen. Das ist ein erforderliches Argument, es sei denn, Sie legen das Argument Im Navigationsbereich auf Ja fest.</p>
-
-> [!NOTE]
-> <P>Die Objektnamen für <STRONG>Serversicht</STRONG>, <STRONG>Diagramm</STRONG> oder <STRONG>Gespeicherte Prozedur</STRONG>-Objekte werden im Feld <STRONG>Objektname</STRONG> eines Access-Projekts (ADP) nicht angezeigt.</P>
-
-
-<p></p></td>
+<td><p>Der Name des auszuwählenden Objekts. Im Feld Objektname werden alle Objekte in der Datenbank angezeigt, die dem vom Argument Objekttyp ausgewählten Typ entsprechen. Das ist ein erforderliches Argument, es sei denn, Sie legen das Argument Im Navigationsbereich auf Ja fest.</p><p><strong>Hinweis</strong>: die Objektnamen für <STRONG>Serversicht</STRONG>, <STRONG>Diagramm</STRONG>oder <STRONG>Gespeicherte Prozedur</STRONG> -Objekte werden im Feld <STRONG>Objektname</STRONG> eines Access-Projekts (ADP) nicht angezeigt.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Im Navigationsbereich</strong></p></td>

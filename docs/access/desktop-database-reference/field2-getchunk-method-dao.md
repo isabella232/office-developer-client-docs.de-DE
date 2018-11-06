@@ -1,20 +1,19 @@
 ---
 title: Field2.GetChunk-Methode (DAO)
-TOCTitle: GetChunk Method
+TOCTitle: GetChunk method
 ms:assetid: 5d3a66c0-8216-d701-0a91-b79fbbc822b8
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff194600(v=office.15)
 ms:contentKeyID: 48545101
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1d3bf59549a37e728d26da2e5986e852235d6f77
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: fae8e5f0331f3c59aad482b827140ecd6366f2f1
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937449"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996433"
 ---
 # <a name="field2getchunk-method-dao"></a>Field2.GetChunk-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -26,7 +25,7 @@ Gibt den gesamten oder einen Teil des Inhalts eines Objekts **vom Typ Memo** ode
 
 *Ausdruck* Eine Variable, die ein **Field2** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -38,20 +37,20 @@ Gibt den gesamten oder einen Teil des Inhalts eines Objekts **vom Typ Memo** ode
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Offset</p></td>
+<td><p><em>Offset</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Die Anzahl von zu überspringenden Bytes, bevor das Kopieren gestartet wird.</p></td>
 </tr>
 <tr class="even">
-<td><p>Bytes</p></td>
+<td><p><em>Bytes</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Long</strong></p></td>
 <td><p>Die Anzahl von Bytes, die zurückgegeben werden sollen.</p></td>
@@ -60,7 +59,7 @@ Gibt den gesamten oder einen Teil des Inhalts eines Objekts **vom Typ Memo** ode
 </table>
 
 
-### <a name="return-value"></a>Rückgabewert
+## <a name="return-value"></a>Rückgabewert
 
 Variant
 

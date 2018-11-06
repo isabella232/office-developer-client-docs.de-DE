@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837014(v=office.15)
 ms:contentKeyID: 48548819
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 830d9d10aa2d166f3e9dca013697acdeebe8a767
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 257dd342d0c0aa171d7961ab61a69da099497688
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923987"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997406"
 ---
 # <a name="fieldappendchunk-method-dao"></a>Field.AppendChunk-Methode (DAO)
 
@@ -25,7 +25,7 @@ Fügt Daten aus einem Zeichenfolgenausdruck an ein Field-Objekt vom Typ Memo ode
 
 *Ausdruck* Eine Variable, die ein **Field** -Objekt darstellt.
 
-### <a name="parameters"></a>Parameter
+## <a name="parameters"></a>Parameter
 
 <table>
 <colgroup>
@@ -37,14 +37,14 @@ Fügt Daten aus einem Zeichenfolgenausdruck an ein Field-Objekt vom Typ Memo ode
 <thead>
 <tr class="header">
 <th><p>Name</p></th>
-<th><p>Erforderlich/Optional</p></th>
+<th><p>Erforderlich oder optional</p></th>
 <th><p>Datentyp</p></th>
 <th><p>Beschreibung</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Val</p></td>
+<td><p><em>Val</em></p></td>
 <td><p>Erforderlich</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Ein Ausdruck oder eine Variable vom Typ Variant (Untertyp String) mit den Daten, die an das <strong>Field</strong>-Objekt angefügt werden sollen.</p></td>

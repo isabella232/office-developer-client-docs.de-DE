@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192114(v=office.15)
 ms:contentKeyID: 48543972
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 083e76ea4e2a0800153d50fa0c61d5acb7a29645
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f6975a438e4e724a6fc1f72be92088f0d07a5b44
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922181"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996706"
 ---
 # <a name="recordset2nomatch-property-dao"></a>Recordset2.NoMatch-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -34,11 +33,8 @@ Verwenden Sie für die Suche nach einem Datensatz die **Seek** -Methode für ein
 
 Wenn die Methoden **Seek** und **Find** nicht erfolgreich sind und die **NoMatch**-Eigenschaft den Wert **True** hat, ist der aktuelle Datensatz nicht mehr gültig. Rufen Sie das Lesezeichen des aktuellen Datensatzes ab, bevor Sie die **Seek**-Methode oder eine **Find**-Methode verwenden, falls Sie zu diesem Datensatz zurückkehren müssen.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Das Verwenden einer der <STRONG><A href="recordset-movefirst-method-dao.md">Move</A></STRONG> -Methoden für ein <STRONG>Recordset</STRONG>-Objekt hat keinen Einfluss auf die Einstellung seiner <STRONG>NoMatch</STRONG>-Eigenschaft.</P>
-
-
+> [!HINWEIS] Das Verwenden einer der **[Move](recordset-movefirst-method-dao.md)** -Methoden für ein **Recordset**-Objekt hat keinen Einfluss auf die Einstellung seiner **NoMatch**-Eigenschaft.
 
 ## <a name="example"></a>Beispiel
 

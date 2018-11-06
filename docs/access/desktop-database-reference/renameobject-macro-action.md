@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm165893
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 88009020fb320c823f9ca4c1688a0f2bfdecbd44
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7d47a59bc82cb6f603fc52d45c675eb8e2877f91
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931008"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998966"
 ---
 # <a name="renameobject-macro-action"></a>RenameObject-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Zum Umbenennen eines angegebenen Datenbankobjekts können Sie die **UmbenennenObjekt** -Aktion verwenden.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist.
 
 ## <a name="setting"></a>Einstellung
 
@@ -58,13 +54,7 @@ Die **UmbenennenObjekt** -Aktion hat die folgenden Argumente.
 <td><p><strong>Alter Name</strong></p></td>
 <td><p>Der Name des Objekts, das Sie umbenennen möchten. Im Feld <strong>Alter Name</strong> werden alle Objekte in der Datenbank mit dem Typ angezeigt, der vom Argument <strong>Objekttyp</strong> ausgewählt wurde. Wenn Sie das Argument <strong>Objekttyp</strong> leer lassen, müssen Sie auch dieses Argument leer lassen. 
 
-</p>
-
-> [!NOTE]
-> <P>Wenn Sie ein Makro ausführen, das die <STRONG>AusgabeIn</STRONG>-Aktion in einer Bibliotheksdatenbank enthält, sucht Access zuerst in der Bibliotheksdatenbank und dann in der aktuellen Datenbank nach dem Objekt mit diesem Namen.</P>
-
-
-<p></p></td>
+</p><p><strong>Hinweis</strong>: Wenn Sie ein Makro, enthält die <STRONG>Umbenennen</STRONG> -Aktion in einer Bibliotheksdatenbank ausführen, sucht Microsoft Access zuerst nach einem Objekt mit diesem Namen in die Bibliotheksdatenbank, und klicken Sie dann in der aktuellen Datenbank.</p></td>
 </tr>
 </tbody>
 </table>

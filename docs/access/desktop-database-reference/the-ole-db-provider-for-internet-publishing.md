@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249583(v=office.15)
 ms:contentKeyID: 48546082
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 536acebd305927cffe50e742245be97a48242796
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 7315df5a20cf032fc256f03893531f58857d470a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945748"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998665"
 ---
 # <a name="ole-db-provider-for-internet-publishing"></a>OLE DB-Anbieter für Internet Publishing
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -50,11 +49,8 @@ Sie haben drei Möglichkeiten, ADO mit dem Internet Publishing-Anbieter zu verbi
     objConn.Open "https://servername" 
   ```
 
-
 > [!NOTE]
-> <P>Wenn Msdaipp.dso ausdrücklich als Wert für den Anbieter angegeben ist (mit dem Schlüsselwort Provider der Verbindungszeichenfolge oder mit der Provider-Eigenschaft) kann "URL=" nicht in der Verbindungszeichenfolge verwendet werden, da sonst ein Fehler auftritt. Geben Sie die URL stattdessen wie oben dargestellt an.</P>
-
-
+> Wenn Msdaipp.dso explizit als Wert des Anbieters, mit dem *Anbieter* Verbindungszeichenfolgen-Schlüsselworts oder der **Provider** -Eigenschaft angegeben ist kann nicht verwendet "URL =" in der Verbindungszeichenfolge. Wenn "URL=" dennoch verwendet wird, tritt ein Fehler auf. Geben Sie stattdessen einfach die URL wie weiter oben in diesem Thema dargestellt.
 
 Weitere Informationen zum Internet Publishing-Anbieter finden Sie unter [Microsoft OLE DB-Anbieter für Internet Publishing](microsoft-ole-db-provider-for-internet-publishing.md) oder in der Dokumentation zum Anbieter der Quellanwendung, mit der der OLE DB-Anbieter für Internet Publishing installiert wurde: Windows 2000, Office 2000 oder Internet Explorer 5.0.
 

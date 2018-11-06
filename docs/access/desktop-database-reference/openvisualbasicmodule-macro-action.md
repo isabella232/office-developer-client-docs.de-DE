@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm50916
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7d3d2d5f76e087e428bc9211805c524ebe5247d9
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 274ec88483066b4e8dd4032501ecfcc6a662b134
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25930448"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998140"
 ---
 # <a name="openvisualbasicmodule-macro-action"></a>OpenVisualBasicModule-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Sie können die **ÖffnenVisualBasicModul** -Aktion verwenden, um ein angegebenes VBA-Modul (Visual Basic für Applikationen) in einer angegebenen Prozedur zu öffnen. Dies kann eine Unterprozedur, eine Funktion oder eine Ereignisprozedur sein.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.</P>
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -57,11 +53,8 @@ Die **ÖffnenVisualBasicModul** -Aktion hat die folgenden Argumente.
 </tbody>
 </table>
 
-
-
 > [!NOTE]
-> <P>[!HINWEIS] Sie müssen entweder im Argument <STRONG>Modulname</STRONG> oder im Argument <STRONG>Prozedurname</STRONG> einen gültigen Namen eingeben.</P>
-
+> [!HINWEIS] Sie müssen entweder im Argument **Modulname** oder im Argument **Prozedurname** einen gültigen Namen eingeben.
 
 
 ## <a name="remarks"></a>Hinweise
@@ -74,11 +67,8 @@ Zum Öffnen einer privaten Prozedur muss das Modul, in dem diese Prozedur enthal
 
 Diese Aktion bewirkt dasselbe, wie wenn Sie im Navigationsbereich auf ein Modul doppelklicken und dann auf **Entwurfsansicht** klicken. Mithilfe dieser Aktion können Sie außerdem einen Prozedurnamen angeben und in den Standardmodulen in einer Datenbank nach Prozeduren suchen.
 
-
 > [!TIP]
-> <P>[!TIPP] Sie können ein Modul im Navigationsbereich auswählen und in die Aktionszeile des Makros ziehen. Damit wird automatisch eine <STRONG>ÖffnenVisualBasicModul</STRONG> -Aktion erstellt, mit der das Modul im Deklarationsbereich geöffnet wird.</P>
-
-
+> [!TIPP] Sie können ein Modul im Navigationsbereich auswählen und in die Aktionszeile des Makros ziehen. Damit wird automatisch eine **ÖffnenVisualBasicModul** -Aktion erstellt, mit der das Modul im Deklarationsbereich geöffnet wird.
 
 Wenn Sie die **ÖffnenVisualBasicModul** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) ausführen möchten, verwenden Sie die **OpenModule** -Methode des **DoCmd** -Objekts.
 

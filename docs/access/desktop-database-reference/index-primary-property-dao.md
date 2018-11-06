@@ -1,6 +1,6 @@
 ---
 title: Index.Primary-Eigenschaft (DAO)
-TOCTitle: Primary Property
+TOCTitle: Primary property
 ms:assetid: 90eda1cb-cf7f-9682-9b74-81c27a37af16
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197416(v=office.15)
 ms:contentKeyID: 48546336
@@ -10,18 +10,16 @@ f1_keywords:
 - dao360.chm1052908
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 2ef796ca15ea551010ebf3605a6662bf66d83131
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: ff99f60fce41c7fa7de604a5109e68f6f744e68a
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921880"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997644"
 ---
 # <a name="indexprimary-property-dao"></a>Index.Primary-Eigenschaft (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 Legt einen Wert fest, der angibt, ob ein **[Index](index-object-dao.md)** -Objekt einen Primärschlüsselindex für eine Tabelle darstellt, oder gibt den betreffenden Wert zurück (nur Microsoft Access-Arbeitsbereiche).
 
@@ -37,11 +35,8 @@ Ein neues **Index**-Objekt, das noch nicht an eine Auflistung angehängt wurde, 
 
 Ein Primärschlüsselindex besteht aus einem oder mehreren Feldern, die alle Datensätze in einer Tabelle in einer vordefinierten Reihenfolge eindeutig identifizieren. Da das Indexfeld eindeutig sein muss, wird die **[Unique](index-unique-property-dao.md)** -Eigenschaft des **Index**-Objekts auf **True** festgelegt. Wenn der Primärschlüsselindex aus mehreren Feldern besteht, kann jedes Feld Duplikatwerte enthalten. Jede Kombination von Werten aus den indizierten Feldern muss jedoch eindeutig sein. Ein Primärschlüsselindex besteht aus einem Schlüssel für die Tabelle und enthält gewöhnlich dieselben Felder wie der Primärschlüssel.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Sie müssen keine Indizes für Tabellen erstellen, doch in großen, nicht-indizierten Tabellen kann der Zugriff auf einen Datensatz einige Zeit in Anspruch nehmen. Die <STRONG><A href="field-attributes-property-dao.md">Attributes</A></STRONG> -Eigenschaft der einzelnen <STRONG><A href="field-object-dao.md">Field</A></STRONG> -Objekte im <STRONG>Index</STRONG>-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher die für den betreffenden Index zu verwendenden Zugriffsverfahren. Wenn Sie in Ihrer Datenbank eine neue Tabelle erstellen, sollten Sie einen Index mit einem oder mehreren Feldern erstellen, der jeden Datensatz eindeutig identifiziert, und anschließend die <STRONG>Primary</STRONG>-Eigenschaft des <STRONG>Index</STRONG>-Objekts auf <STRONG>True</STRONG> festlegen.</P>
-
-
+> [!HINWEIS] Sie müssen keine Indizes für Tabellen erstellen, doch in großen, nicht-indizierten Tabellen kann der Zugriff auf einen Datensatz einige Zeit in Anspruch nehmen. Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft der einzelnen **[Field](field-object-dao.md)** -Objekte im **Index**-Objekt legt die Reihenfolge der Datensätze fest und bestimmt daher die für den betreffenden Index zu verwendenden Zugriffsverfahren. Wenn Sie in Ihrer Datenbank eine neue Tabelle erstellen, sollten Sie einen Index mit einem oder mehreren Feldern erstellen, der jeden Datensatz eindeutig identifiziert, und anschließend die **Primary**-Eigenschaft des **Index**-Objekts auf **True** festlegen.
 
 Wenn Sie einen Primärschlüssel für eine Tabelle festlegen, wird der Primärschlüssel automatisch als Primärschlüsselindex für die Tabelle definiert.
 

@@ -1,17 +1,17 @@
 ---
-title: Index-Objekt - Datenzugriff Objekte (DAO)
-TOCTitle: Index Object
+title: Index-Objekt - Data Access Objects (DAO)
+TOCTitle: Index object
 ms:assetid: 92c32cad-ec8a-1243-1d18-83f50b269ecb
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff197655(v=office.15)
 ms:contentKeyID: 48546380
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: cc849e22da654bd384065e4c169b3fd5540c6061
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 6646a3121bc353c8e8d74e3698ae688272656769
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928964"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997399"
 ---
 # <a name="index-object-dao"></a>Index-Objekt (DAO)
 
@@ -34,14 +34,14 @@ Das Microsoft Access-Datenbankmodul verwaltet alle Indizes von Basistabellen aut
 Wenn Sie auf ein Recordset-Objekt vom Typ Tabelle zugreifen, geben Sie mit der Index-Eigenschaft des Objekts die Reihenfolge der Datensätze an. Legen Sie diese Eigenschaft auf die Einstellung der Name-Eigenschaft eines vorhandenen Index-Objekts in der Indexes-Auflistung fest. Diese Auflistung ist im TableDef-Objekt enthalten, das dem zu füllenden Recordset-Objekt zugrunde liegt.
 
 > [!NOTE]
-> <P>[!HINWEIS] Sie müssen für Tabellen keine Indizes erstellen, jedoch kann der Zugriff auf einen bestimmten Datensatz oder die Verarbeitung von Verknüpfungen bei großen Tabellen ohne Index lange dauern. Zu viele Indizes hingegen können Aktualisierungen der Datenbank verlangsamen, da jeder der Tabellenindizes ergänzt wird.</P>
+> [!HINWEIS] Sie müssen für Tabellen keine Indizes erstellen, jedoch kann der Zugriff auf einen bestimmten Datensatz oder die Verarbeitung von Verknüpfungen bei großen Tabellen ohne Index lange dauern. Zu viele Indizes hingegen können Aktualisierungen der Datenbank verlangsamen, da jeder der Tabellenindizes ergänzt wird.
 
 Die **[Attributes](field-attributes-property-dao.md)** -Eigenschaft jedes **Field**-Objekts im Index bestimmt die Reihenfolge zurückgegebener Datensätze und somit das zu verwendende Zugriffsverfahren für diesen Index.
 
 Jedes **Field**-Objekt in der **Fields**-Auflistung eines **Index**-Objekts ist Bestandteil des Indexes. Legen Sie beim Definieren eines neuen **Index**-Objekts dessen Eigenschaften fest, bevor Sie es einer Auflistung anfügen, damit das **Index**-Objekt anschließend verwendet werden kann.
 
 > [!NOTE]
-> <P>[!HINWEIS] Sie können die Einstellung einer <STRONG>Name</STRONG>-Eigenschaft eines vorhandenen <STRONG>Index</STRONG>-Objekts nur dann ändern, wenn die Einstellung der <STRONG><A href="connection-updatable-property-dao.md">Updatable</A></STRONG> -Eigenschaft des <STRONG>TableDef</STRONG>-Objekts, in dem es sich befindet, auf <STRONG>True</STRONG> festgelegt ist.</P>
+> [!HINWEIS] Sie können die Einstellung einer **Name**-Eigenschaft eines vorhandenen **Index**-Objekts nur dann ändern, wenn die Einstellung der **[Updatable](connection-updatable-property-dao.md)** -Eigenschaft des **TableDef**-Objekts, in dem es sich befindet, auf **True** festgelegt ist.
 
 Wenn Sie einen Primärschlüssel für eine Tabelle festlegen, wird er vom Microsoft Access-Datenbankmodul automatisch als Primärindex definiert. Ein Primärindex besteht aus einem oder mehreren Feldern, die alle Datensätze einer Tabelle in einer vordefinierten Reihenfolge eindeutig anordnen. Da das Primärindexfeld eindeutig sein muss, wird die **Unique**-Eigenschaft des primären **Index**-Objekts vom Microsoft Access-Datenbankmodul automatisch auf **True** festgelegt. Wenn der Primärindex aus mehreren Feldern besteht, kann jedes Feld doppelte Werte enthalten, die Kombination der Werte aus allen indizierten Feldern muss jedoch eindeutig sein. Ein Primärindex besteht aus einem Schüssel für die Tabelle und enthält stets dieselben Felder wie der Primärschlüssel.
 
@@ -59,12 +59,9 @@ Wenn Sie eine Beziehung erstellen, die die referentielle Integrität erzwingt, e
 4.  Fügen Sie das **Field**-Objekt der **Fields**-Auflistung an.
 
 5.  Fügen Sie das **Index**-Objekt der **Indexes**-Auflistung an.
-    
 
     > [!NOTE]
-    > <P>[!HINWEIS] Die <STRONG>Clustered</STRONG>-Eigenschaft wird für Datenbanken ignoriert, die das Microsoft Access-Datenbankmodul verwenden, das gruppierte Indizes nicht unterstützt.</P>
-
-
+    > [!HINWEIS] Die **Clustered**-Eigenschaft wird für Datenbanken ignoriert, die das Microsoft Access-Datenbankmodul verwenden, das gruppierte Indizes nicht unterstützt.
 
 ## <a name="example"></a>Beispiel
 

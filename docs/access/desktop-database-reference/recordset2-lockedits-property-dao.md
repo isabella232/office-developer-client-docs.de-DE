@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196045(v=office.15)
 ms:contentKeyID: 48545716
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f93924c579dc32e0841177eeb1068df64e12ab9b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: dfb24f1fd183dd917b1eeb4033fe53a3310d5a12
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931085"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997014"
 ---
 # <a name="recordset2lockedits-property-dao"></a>Recordset2.LockEdits-Eigenschaft (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -62,11 +61,8 @@ Wenn Sie für die **LockEdits**-Eigenschaft den Wert **False** festlegen und zu 
 
 Wenn Sie ODBC-Datenquellen verwenden, die mit der Microsoft Access-Datenbank-Engine verbunden sind, ist für die **LockEdits**-Eigenschaft immer **False** bzw. die optimistische Sperre festgelegt. Die Microsoft Access-Datenbank-Engine hat keine Kontrolle über die von externen Datenbankservern verwendeten Sperrmechanismen.
 
-
 > [!NOTE]
-> <P>Sie können den Wert der <STRONG>LockEdits</STRONG> voreinstellen, wenn Sie das <STRONG>Recordset-Objekt</STRONG> zunächst öffnen, indem Sie das Argument Sperren der <STRONG><A href="connection-openrecordset-method-dao.md">OpenRecordset</A></STRONG> -Methode festlegen. Festlegen des Arguments Lockedits auf <STRONG>DbPessimistic</STRONG> <STRONG>LockEdits</STRONG> -Eigenschaft auf <STRONG>True</STRONG>festgelegt wird, und Einstellung Lockedits auf einen anderen Wert wird die <STRONG>LockEdits</STRONG> -Eigenschaft auf <STRONG>False</STRONG>festgelegt.</P>
-
-
+> Sie können den Wert der **LockEdits** voreinstellen, wenn Sie das **Recordset-Objekt** zunächst öffnen, indem Sie das Argument Sperren der **[OpenRecordset](connection-openrecordset-method-dao.md)** -Methode festlegen. Festlegen des Arguments Lockedits auf **DbPessimistic** **LockEdits** -Eigenschaft auf **True**festgelegt wird, und Einstellung Lockedits auf einen anderen Wert wird die **LockEdits** -Eigenschaft auf **False**festgelegt.
 
 ## <a name="example"></a>Beispiel
 

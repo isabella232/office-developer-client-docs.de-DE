@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm12836
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a226cca2c37a6e404275c246f2e506b500a58d2b
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 79f4e59309a4f224498421f2407df187d3b9e728
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919626"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25998067"
 ---
 # <a name="copyobject-macro-action"></a>CopyObject-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Sie können die **KopierenObjekt** -Aktion verwenden, um das angegebene Datenbankobjekt in eine andere Access-Datenbank oder innerhalb derselben Datenbank oder desselben Access-Projekts unter einem neuen Namen zu kopieren. Sie können ein vorhandenes Objekt beispielsweise in eine andere Datenbank kopieren oder dort sichern oder schnell durch einige Änderungen ein ähnliches Objekt erstellen.
 
-
 > [!NOTE]
-> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. Informationen zur Aktivierung von Makros finden Sie unter den Links im Abschnitt See Also dieses Artikels.
-
-
+> [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
 ## <a name="setting"></a>Einstellung
 
@@ -50,12 +46,7 @@ Die **KopierenObjekt** -Aktion hat die folgenden Argumente.
 <td><p><strong>Zieldatenbank</strong></p></td>
 <td><p>Ein gültiger Pfad und Dateiname für die Zieldatenbank. Geben Sie den Pfad und den Dateinamen im Feld Zieldatenbank im Abschnitt Aktionsargumente des Bereichs Makro-Generator ein. Lassen Sie dieses Argument leer, wenn die aktuelle Datenbank ausgewählt werden soll. 
 
-</p>
-
-> [!NOTE]
-> Dieses Argument ist nur in der Access-Datenbankumgebung verfügbar. Wenn diese Aktion in einer Access-Projektumgebung (ADP) verwendet wird, muss das Argument Zieldatenbank leer sein.
-
-
+</p><p><strong>Hinweis</strong>: dieses Argument ist nur in der Umgebung für Access-Datenbank verfügbar. Wenn Sie diese Aktion in einer Umgebung für Access-Projekt (ADP) verwenden, muss das Argument Zieldatenbank leer sein.</p>
 <p>Wenn Sie ein Makro, das die <strong>KopierenObjekt</strong>-Aktion enthält, in einer Bibliotheksdatenbank ausführen und dieses Argument leer lassen, wird dieses Objekt von Microsoft Office Access 2007 in die Bibliotheksdatenbank kopiert.</p></td>
 </tr>
 <tr class="even">
@@ -82,17 +73,14 @@ Wenn Sie die Argumente Objekttyp (Herkunft) und Objektname (Herkunft) leer lasse
 
 Die **KopierenObjekt** -Aktion ist mit dem manuellen Ausführen der folgenden Schritte vergleichbar:
 
-1.  Wählen Sie ein Objekt im Navigationsbereich aus.
+1. Wählen Sie ein Objekt im Navigationsbereich aus.
 
-2.  Klicken Sie auf der Registerkarte Home in der Gruppe Clipboard auf Copy.
+2. Klicken Sie auf der Registerkarte Home in der Gruppe Clipboard auf Copy.
 
-3.  Klicken Sie auf derselben Registerkarte auf **Einfügen**.Das Dialogfeld **Einfügen als** wird angezeigt, damit Sie dem Objekt einen neuen Namen zuweisen können. Diese Schritte werden von der **KopierenObjekt** -Aktion automatisch ausgeführt.
-
+3. Klicken Sie auf derselben Registerkarte auf **Einfügen**.Das Dialogfeld **Einfügen als** wird angezeigt, damit Sie dem Objekt einen neuen Namen zuweisen können. Diese Schritte werden von der **KopierenObjekt** -Aktion automatisch ausgeführt.
 
 > [!NOTE]
 > [!HINWEIS] Beim Kopieren von Datenzugriffsseiten kopiert die **KopierenObjekt** -Aktion nur die Verknüpfung zur zugeordneten HTM-Datei und nicht die Datei selbst.
-
-
 
 Der Pfad und der Dateiname der Zieldatenbank müssen vorhanden sein, bevor das Makro die **KopierenObjekt** -Aktion ausführt. Wenn sie nicht vorhanden sind, zeigt Access eine Fehlermeldung an.
 
@@ -102,11 +90,11 @@ Sie können ein Objekt, das im Navigationsbereich ausgewählt wurde, oder ein de
 
 So kopieren Sie ein Objekt manuell in eine andere Access-Datenbank:
 
-1.  Klicken Sie auf der Registerkarte **Externe Daten** in der Gruppe **Exportieren** auf **Mehr**, und klicken Sie dann auf **Access-Datenbank**.
+1. Klicken Sie auf der Registerkarte **Externe Daten** in der Gruppe **Exportieren** auf **Mehr**, und klicken Sie dann auf **Access-Datenbank**.
 
-2.  Geben Sie im Dialogfeld **Exportieren - Access-Datenbank** den Dateinamen der Zieldatenbank ein.-oder-Klicken Sie auf **Durchsuchen**, um das Dialogfeld **Datei speichern** anzuzeigen, suchen Sie die Zieldatenbank, und klicken Sie dann auf **Speichern**.
+2. Geben Sie im Dialogfeld **Exportieren - Access-Datenbank** den Dateinamen der Zieldatenbank ein.-oder-Klicken Sie auf **Durchsuchen**, um das Dialogfeld **Datei speichern** anzuzeigen, suchen Sie die Zieldatenbank, und klicken Sie dann auf **Speichern**.
 
-3.  Klicken Sie im Dialogfeld **Exportieren - Access-Datenbank** auf **OK**. Das Dialogfeld **Exportieren** wird angezeigt.
+3. Klicken Sie im Dialogfeld **Exportieren - Access-Datenbank** auf **OK**. Das Dialogfeld **Exportieren** wird angezeigt.
 
-4.  Geben Sie im Dialogfeld **Exportieren** einen Namen für das Objekt in der Zieldatenbank ein. Wählen Sie eine beliebige anwendbare Option für Tabellen aus, z. B. **Definitionen und Daten exportieren** oder **Nur Definitionen**. Klicken Sie auf **OK**, wenn Sie den Vorgang abgeschlossen haben.
+4. Geben Sie im Dialogfeld **Exportieren** einen Namen für das Objekt in der Zieldatenbank ein. Wählen Sie eine beliebige anwendbare Option für Tabellen aus, z. B. **Definitionen und Daten exportieren** oder **Nur Definitionen**. Klicken Sie auf **OK**, wenn Sie den Vorgang abgeschlossen haben.
 

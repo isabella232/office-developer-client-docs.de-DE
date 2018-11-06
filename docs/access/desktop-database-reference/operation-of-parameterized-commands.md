@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249456(v=office.15)
 ms:contentKeyID: 48545596
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bd5b694906e8c0ac1f15329f4342586793e114ec
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 1623b32a5ec52acd086bf028a5c1775daae989e8
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946150"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25997049"
 ---
 # <a name="operation-of-parameterized-commands"></a>Von parametrisierten Befehlen
 
@@ -34,11 +34,8 @@ SHAPE {SELECT * FROM customer}
 
 Die über- und untergeordneten Tabellen haben einen Spaltennamen in allgemeine, Cust\_Id *.* Der *untergeordnete Befehl* weist Platzhalter "?" die Klausel verknüpfen bezieht (d. h., "... PARAMETER 0").
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Die PARAMETER-Klausel bezieht sich ausschließlich auf die SHAPE-Befehlssyntax. Sie ist weder dem <A href="parameter-object-ado.md">Parameter</A>-Objekt noch der <A href="parameters-collection-ado.md">Parameters</A>-Auflistung von ADO zugeordnet.</P>
-
-
+> [!HINWEIS] Die PARAMETER-Klausel bezieht sich ausschließlich auf die SHAPE-Befehlssyntax. Sie ist weder dem [Parameter](parameter-object-ado.md)-Objekt noch der [Parameters](parameters-collection-ado.md)-Auflistung von ADO zugeordnet.
 
 Wenn der parametrisierte SHAPE-Befehl ausgeführt wird, passiert Folgendes:
 
@@ -56,8 +53,7 @@ Wenn der parametrisierte SHAPE-Befehl ausgeführt wird, passiert Folgendes:
 
 Die dynamische Eigenschaft **Cache Child Rows** wird standardmäßig auf **True** festgelegt. Das Zwischenspeicherungsverhalten hängt von den Parameterwerten der Abfrage ab. Bei einer Abfrage mit einem einzelnen Parameter wird das untergeordnete **Recordset** -Objekt für einen bestimmten Parameterwert zwischen den Anforderungen für ein untergeordnetes Element mit diesem Wert zwischengespeichert. Der folgende Code veranschaulicht dies:
 
-```vb 
- 
+```vb
 ... 
 SCmd = "SHAPE {select * from customer} " & _ 
  "APPEND({select * from orders where cust_id = ?} " & _ 
@@ -72,7 +68,7 @@ Rst1.MovePrevious ' RstChild now holds cached rs, saving round trip.
 
 Bei einer Abfrage mit mehreren Parametern wird nur ein zwischengespeichertes untergeordnetes Element verwendet, wenn alle Parameterwerte den zwischengespeicherten Werten entsprechen.
 
-## <a name="parameterized-commands-and-complex-parent-child-relations"></a>Parametrisierte Befehle und komplexe Beziehungen zwischen über- und untergeordneten Elementen
+## <a name="parameterized-commands-and-complex-parent-child-relations"></a>Parametrisierte Befehle und komplexe übergeordneten untergeordneten Elementen
 
 Zusätzlich zur Verwendung von parametrisierter Befehlen zum Verbessern der Leistung einer Equi-Join-Typ-Hierarchie, können parametrisierte Befehle zur Unterstützung von komplexerer über-und untergeordneten Elementen verwendet werden. Angenommen, Sie verwenden eine Datenbank Little League mit zwei Tabellen: Basisplan, der die Teams (Team\_-Id, Team\_Name) und andere Spiele (Datum und private\_Team, besuchen\_Team).
 

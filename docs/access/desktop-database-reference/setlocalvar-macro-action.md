@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm176660
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b6db77a3cd712717e5aa2eb22e89f90557a1dabf
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: b257473d2acd3d17f30a3fdd579d213dcd39487b
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926017"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996902"
 ---
 # <a name="setlocalvar-macro-action"></a>SetLocalVar-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -55,7 +54,6 @@ Die **FestlegenLokaleVar** -Aktion kann mit den folgenden Argumenten verwendet w
 </tbody>
 </table>
 
-
 ## <a name="remarks"></a>Hinweise
 
 Mit der **FestlegenLokaleVar** -Aktion festgelegte Variablen können nur in dem Makro verwendet werden, in dem sie definiert sind. Verwenden Sie die **[FestlegenTempVar](settempvar-macro-action.md)** -Aktion, um eine Variable zu definieren, die in einem anderen Makro, einer Ereignisprozedur, einem Formular oder einem Bericht verwendet werden kann.
@@ -64,8 +62,6 @@ Auf eine erstellte temporäre Variable können Sie in einem Ausdruck verweisen. 
 
 `=[LocalVars]![TotalAmount]`
 
-
 > [!NOTE]
-> <P>In einem Makro Daten müssen Sie keinen die LocalVars-Auflistung verwenden, um auf eine Variable verweisen. Angenommen, wenn Sie eine temporäre Variable eines Datenmakros, mit dem Namen TotalAmount erstellt haben, können die Variable als Steuerelementinhalt für ein Textfeld Sie mithilfe der folgenden syntax<BR>= [TotalAmount]</P>
-
+> In einem Makro Daten müssen Sie keinen die LocalVars-Auflistung verwenden, um auf eine Variable verweisen. Angenommen, wenn Sie eine temporäre Variable eines Datenmakros, mit dem Namen TotalAmount erstellt haben, können die Variable als der Steuerelementquelle für ein Textfeld mit der folgenden Syntax: `=[TotalAmount]`.
 

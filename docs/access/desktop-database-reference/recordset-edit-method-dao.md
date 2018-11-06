@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff821175(v=office.15)
 ms:contentKeyID: 48546850
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1221129ee7aaa7d53ada51f7a92dc5e91bc4afee
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 76868140d9f6f1b16a35219864d054ed1f742e84
+ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925327"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "25996482"
 ---
 # <a name="recordsetedit-method-dao"></a>Recordset.Edit-Methode (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -32,31 +31,25 @@ Wenn Sie die **Edit** -Methode verwenden, werden an den Feldern des aktuellen Da
 
 Der aktuelle Datensatz bleibt nach der Verwendung von **Edit** aktuell.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Wenn Sie einen Datensatz bearbeiten und dann einen Vorgang durchführen, mit dem Sie zu einem anderen Datensatz wechseln, ohne jedoch zunächst <STRONG>Update</STRONG> zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Darüber hinaus wird beim Schließen des Recordset-Objekts oder die Prozedur beenden, die das <STRONG>Recordset-Objekt</STRONG> oder das übergeordnete <STRONG><A href="database-object-dao.md">Datenbank-</A></STRONG> oder <STRONG><A href="connection-object-dao.md">Verbindungstyp</A></STRONG> Objekt deklariert, der bearbeitete Datensatz ohne Warnung verworfen.</P>
-
-
+> [!HINWEIS] Wenn Sie einen Datensatz bearbeiten und dann einen Vorgang durchführen, mit dem Sie zu einem anderen Datensatz wechseln, ohne jedoch zunächst **Update** zu verwenden, gehen Ihre Änderungen ohne Warnung verloren. Darüber hinaus wird beim Schließen des Recordset-Objekts oder die Prozedur beenden, die das **Recordset-Objekt** oder das übergeordnete **[Datenbank-](database-object-dao.md)** oder **[Verbindungstyp](connection-object-dao.md)** Objekt deklariert, der bearbeitete Datensatz ohne Warnung verworfen.
 
 Die Verwendung von **Edit** erzeugt in folgenden Fällen einen Fehler:
 
-  - Es ist kein aktueller Datensatz vorhanden.
+- Es ist kein aktueller Datensatz vorhanden.
 
-  - Das **Connection** -, **Database** - oder **Recordset** -Objekt wurde schreibgeschützt geöffnet.
+- Das **Connection** -, **Database** - oder **Recordset** -Objekt wurde schreibgeschützt geöffnet.
 
-  - Der Datensatz enthält keine aktualisierbaren Felder.
+- Der Datensatz enthält keine aktualisierbaren Felder.
 
-  - Das **Database** - oder **Recordset** -Objekt wurde zur exklusiven Verwendung von einem anderen Benutzer geöffnet (Microsoft Access-Arbeitsbereich).
+- Das **Database** - oder **Recordset** -Objekt wurde zur exklusiven Verwendung von einem anderen Benutzer geöffnet (Microsoft Access-Arbeitsbereich).
 
-  - Ein anderer Benutzer hat die Seite mit Ihrem Datensatz gesperrt (Microsoft Access-Arbeitsbereich).
+- Ein anderer Benutzer hat die Seite mit Ihrem Datensatz gesperrt (Microsoft Access-Arbeitsbereich).
 
 Wenn in einem Microsoft Access-Arbeitsbereich die [**LockEdits**](recordset-lockedits-property-dao.md) -Eigenschafteneinstellung des **Recordset** -Objekts in einer Mehrbenutzerumgebung auf **True** (pessimistisch gesperrt) festgelegt ist, bleibt der Datensatz ab dem Zeitpunkt der Verwendung von **Edit** bis zum Abschluss der Aktualisierung gesperrt. Wenn die **LockEdits** -Eigenschafteneinstellung auf **False** (optimistisch gesperrt) festgelegt ist, wird der Datensatz gesperrt und mit dem vorher bearbeiteten Datensatz verglichen, kurz bevor er in der Datenbank aktualisiert wird. Wenn der Datensatz seit der Verwendung der **Edit** -Methode geändert wurde, tritt beim **Update** -Vorgang ein Laufzeitfehler auf, falls Sie **OpenRecordset** ohne Angabe von **dbSeeChanges** verwenden. Standardmäßig verwenden mit dem Microsoft Access-Datenbankmodul verbundene ODBC- und installierbare ISAM-Datenbanken immer die optimistische Sperrung.
 
-
 > [!NOTE]
-> <P>[!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index für den Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im <STRONG><A href="recordset-addnew-method-dao.md">AddNew</A></STRONG> -, <STRONG><A href="fields-delete-method-dao.md">Delete</A></STRONG> - oder <STRONG>Edit</STRONG> -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf.</P>
-
-
+> [!HINWEIS] Um einen Datensatz hinzuzufügen, zu bearbeiten oder zu löschen, muss es einen eindeutigen Index für den Datensatz in der zugrunde liegenden Datenquelle geben. Andernfalls tritt ein "Berechtigung verweigert"-Fehler im **[AddNew](recordset-addnew-method-dao.md)** -, **[Delete](fields-delete-method-dao.md)** - oder **Edit** -Methodenaufruf in einem Microsoft Access-Arbeitsbereich auf.
 
 ## <a name="example"></a>Beispiel
 
