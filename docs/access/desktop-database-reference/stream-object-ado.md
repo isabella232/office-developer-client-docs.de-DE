@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250065(v=office.15)
 ms:contentKeyID: 48547945
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 75e0422b6c6fcd2f893777884d35bade81a793f6
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 6255acb0d9b7678fd8a8105bb7d0dcbdbd453d39
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997042"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025784"
 ---
 # <a name="stream-object-ado"></a>Stream-Objekt (ADO)
 
@@ -54,7 +54,7 @@ Mit den Methoden und Eigenschaften eines **Stream** -Objekts können Sie die fol
 
   - Anhalten eines asynchronen **Stream** -Vorgangs mit der [Cancel](cancel-method-ado.md)-Methode.
 
-  - Festlegen der Anzahl von Bytes in einem **Stream** -Objekt mit der [Size](https://msdn.microsoft.com/library/jj250128\(v=office.15\))-Eigenschaft.
+  - Festlegen der Anzahl von Bytes in einem **Stream** -Objekt mit der [Size](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream)-Eigenschaft.
 
   - Steuern der aktuellen Position innerhalb eines **Stream** -Objekts mit der [Position](position-property-ado.md)-Eigenschaft.
 

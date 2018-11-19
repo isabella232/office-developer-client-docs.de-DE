@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250197(v=office.15)
 ms:contentKeyID: 48548501
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c7dd53830216c302d68adf44e1bea88bbc52e980
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 1b1a15f78463ca0ff6e690b600b9cdca7cc194c7
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921313"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025959"
 ---
 # <a name="numericscale-property-adox"></a>NumericScale-Eigenschaft (ADOX)
 

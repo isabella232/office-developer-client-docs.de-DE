@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm15155
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 943f16c5bb1f1525c8da36938fa6beb2e6f71444
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 8f72083201fefffc5dfff4627cd3b54c1449e083
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929797"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026057"
 ---
 # <a name="after-delete-macro-event"></a>Makroereignis "Nach Löschvorgang"
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Das Ereignis **Nach Löschvorgang** tritt auf, nachdem ein Datensatz gelöscht wurde.
 
-
 > [!NOTE]
 > [!HINWEIS] Das Ereignis **Nach Löschvorgang** ist nur in Datenmakros verfügbar.
-
-
 
 ## <a name="remarks"></a>Hinweise
 
@@ -68,7 +64,7 @@ Die folgenden Makrobefehle verwenden, können das Ereignis **Nach Löschvorgang*
 <thead>
 <tr class="header">
 <th><p>Befehlstyp</p></th>
-<th><p>Command</p></th>
+<th><p>Befehl</p></th>
 </tr>
 </thead>
 <tbody>

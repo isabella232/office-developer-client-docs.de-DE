@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff191889(v=office.15)
 ms:contentKeyID: 48543802
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 21609d6299caf6de5e2fe0b777796033b69d9f87
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: a809afb8e38cf23faf43d5eb49c5edadaf70b2b1
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946692"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025833"
 ---
 # <a name="indexes-collection-dao"></a>Indexes-Auflistung (DAO)
 
@@ -23,17 +23,13 @@ Eine **Indexes**-Auflistung enthält alle gespeicherten **Index**-Objekte eines 
 
 Wenn Sie ein Recordset-Objekt vom Typ Tabelle zugreifen, verwenden Sie das Objekt **Index** -Eigenschaft, um die Reihenfolge der Datensätze anzugeben. Festlegen Sie diese Eigenschaft auf die Einstellung der **Name** -Eigenschaft eines vorhandenen **Index** -Objekts in der **Indexes** -Auflistung des **[TableDef](tabledef-object-dao.md)** -Objekts zugrunde liegenden des **[Recordset](recordset-object-dao.md)** -Objekts.
 
-
 > [!NOTE]
 > [!HINWEIS] Sie können die Methode **Append** oder **Delete** nur für eine **Indexes**-Auflistung verwenden, wenn die Einstellung der **[Updatable](connection-updatable-property-dao.md)** -Eigenschaft für das enthaltende **TableDef**-Objekt **True** lautet.
 
 Nachdem Sie ein neues **Index**-Objekt erstellt haben, sollten Sie es mit der **Append**-Methode der **Indexes**-Auflistung des **TableDef**-Objekts hinzufügen.
 
-
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Ihre Daten mit den Attributen des neuen Indexes kompatibel sind. Wenn der Index eindeutige Werte erfordert, dürfen vorhandene Datensätze keine Duplikate enthalten. Wenn Duplikate vorhanden sind, kann das Microsoft Access-Datenbankmodul den Index nicht erstellen. Beim Versuch, die Append-Methode auf den neuen Index anzuwenden, tritt ein abfangbarer Fehler auf.
-
-
 
 ## <a name="example"></a>Beispiel
 

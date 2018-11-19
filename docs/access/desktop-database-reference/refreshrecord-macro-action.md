@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm62122
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4b7ec534579b070d342fe2efd80af44e2ea921ef
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5e842ed4898f98f0d3c51955c3fb66010ef02853
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927270"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026197"
 ---
 # <a name="refreshrecord-macro-action"></a>RefreshRecord-Makroaktion
 
@@ -32,7 +32,7 @@ Das Verhalten dieser Makroaktion hängt davon ab, ob Sie diese in einer Clientda
 
 ## <a name="client-database"></a>Clientdatenbank
 
-In einer Clientdatenbank können Sie mit der **DatensatzAktualisieren** -Aktion die zugrunde liegende Datensatzquelle für das aktive Formular oder Datenblatt mit den Änderungen an den Daten in der aktuellen Gruppe aktualisieren. Zu den Änderungen zählen solche des aktuellen Benutzers oder anderer Benutzer in einer Mehrbenutzerumgebung. Dies entspricht der **[Aktualisieren](https://msdn.microsoft.com/library/ff836021\(v=office.15\))** -Methode.
+In einer Clientdatenbank können Sie mit der **DatensatzAktualisieren** -Aktion die zugrunde liegende Datensatzquelle für das aktive Formular oder Datenblatt mit den Änderungen an den Daten in der aktuellen Gruppe aktualisieren. Zu den Änderungen zählen solche des aktuellen Benutzers oder anderer Benutzer in einer Mehrbenutzerumgebung. Dies entspricht der **[Aktualisieren](https://docs.microsoft.com/office/vba/api/Access.Form.Refresh)** -Methode.
 
 Mit der **DatensatzAktualisieren** -Makroaktion wird in einer Clientdatenbank Folgendes ausgeführt:
 

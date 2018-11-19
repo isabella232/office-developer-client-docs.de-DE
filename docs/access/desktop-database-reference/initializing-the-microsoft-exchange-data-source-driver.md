@@ -10,12 +10,12 @@ f1_keywords:
 - acmain11.chm1032667
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 39cad98bc6f14509491e78ac4057d6488528f0b4
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: c64f28769d88c2684485ba537bdbdf22afd30ac5
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947854"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026050"
 ---
 # <a name="initializing-the-microsoft-exchange-data-source-driver"></a>Initialisieren des Microsoft Exchange-Datenquellentreibers
 
@@ -23,7 +23,7 @@ ms.locfileid: "25947854"
 
 Bei der Installation von Microsoft Exchange-Datenquellentreibers schreibt das Setupprogramm Standardwerte der Microsoft Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für Microsoft Exchange-Datenquellentreibers beschrieben.
 
-## <a name="microsoft-exchange-data-source-initialization-settings"></a>Initialisierungseinstellungen für Microsoft Exchange-Datenquellen
+## <a name="microsoft-exchange-data-source-initialization-settings"></a>Initialisierungseinstellungen für Microsoft Exchange-Datenquelle
 
 Die **Konnektivitätsmodul für Access\\Module\\Exchange** Ordner enthält initialisierungseinstellungen für Aceexch.dll-Treiber für den externen Zugriff auf Microsoft Outlook und Microsoft Exchange-Ordner verwendet. Der einzige Eintrag in diesem Ordner lautet wie folgt:
 

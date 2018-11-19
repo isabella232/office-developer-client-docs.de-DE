@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249978(v=office.15)
 ms:contentKeyID: 48547670
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 951eb10c30a0e83903b3f7c075e72d5f82e0ce9b
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: a0394b95b392bf26f68dc64f64ad70ada09e8d86
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910880"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025763"
 ---
 # <a name="ado-code-examples-in-microsoft-visual-j"></a>ADO-Codebeispiele in Microsoft Visual J++
 
@@ -76,8 +76,8 @@ Verwenden Sie die folgenden Codebeispiele, um zu erfahren, wie Sie die ADO-Metho
 - [State-Eigenschaft (Beispiel)](state-property-example-vj.md)
 - [Beispiel der Status-Eigenschaft](status-property-example-vj.md)
 - [StayInSync-Eigenschaft (Beispiel)](stayinsync-property-example-vj.md)
-- [Geben Sie die Eigenschaft (Beispiel) (Felder)](https://msdn.microsoft.com/library/jj250207\(v=office.15\))
-- [Type-Eigenschaft (Beispiel)](https://msdn.microsoft.com/library/jj249182\(v=office.15\))
+- [Geben Sie die Eigenschaft (Beispiel) (Felder)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-example-fieldvj-plus-plus)
+- [Type-Eigenschaft (Beispiel)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-example-propertyvj-plus-plus)
 - [Beispielwert-Eigenschaft](value-property-example-vj.md)
 - [Beispiel der Version-Eigenschaft](version-property-example-vj.md)
 

@@ -1,19 +1,19 @@
 ---
-title: Aggregatfunktion, die CALC-Funktion und das NEW-Schlüsselwort
+title: Aggregatfunktionen, die CALC-Funktion und das NEUE Schlüsselwort
 TOCTitle: Aggregate functions, the CALC function, and the NEW keyword
 ms:assetid: c91fef19-bf41-8d04-f195-5470fb18393f
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249977(v=office.15)
 ms:contentKeyID: 48547669
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: db726ea0b51a345e0e40c9814cef100b90b1350f
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: fb3e667a23d5bfd1d3dda5b4eb8dbd60a47e36ba
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947889"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025987"
 ---
-# <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>Aggregatfunktion, die CALC-Funktion und das NEW-Schlüsselwort
+# <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>Aggregatfunktionen, die CALC-Funktion und das NEUE Schlüsselwort
 
 
 **Betrifft**: Access 2013, Office 2013
@@ -61,17 +61,12 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 <tr class="odd">
 <td><p>Alle (<em>Kapitel-Alias</em>.<em> Spaltenname</em>)</p></td>
 <td><p>Ein Wert der angegebenen Spalte. ANY hat nur dann einen vorhersagbaren Wert, wenn der Wert der Spalte für alle Zeilen im Kapitel identisch ist.
-</p>
-
-> [!NOTE]
-> Enthält die Spalte nicht denselben Wert für alle Zeilen im Kapitel, gibt der SHAPE-Befehl nach dem Zufallsprinzip einen der Werte als Wert der ANY-Funktion zurück.
-
-
-<p></p></td>
+</p><p><strong>Hinweis</strong>: Wenn die Spalte nicht den gleichen Wert für alle Zeilen im Kapitel enthält, gibt der SHAPE-Befehl willkürlich einen der Werte der Wert der ANY-Funktion werden.</p></td>
 </tr>
 </tbody>
 </table>
 
+<br/>
 
 <table>
 <colgroup>
@@ -92,6 +87,7 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 </tbody>
 </table>
 
+<br/>
 
 <table>
 <colgroup>
@@ -112,6 +108,7 @@ Ein Kapitelalias kann vollqualifiziert sein und aus den verschiedenen Kapitelspa
 </tbody>
 </table>
 
+<br/>
 
 Für den mit dem NEW-Schlüsselwort übergebenen *Feldtyp* sind die folgenden Datentypen möglich.
 

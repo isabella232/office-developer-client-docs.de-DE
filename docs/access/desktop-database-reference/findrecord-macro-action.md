@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 19b6c80af2bcee9ca3dbe51bbbcf56343f33d550
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 4c115a5f7c2d13e918e891e80997a7327885669d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937610"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026274"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord-Makroaktion
 
@@ -58,11 +58,7 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 <tr class="odd">
 <td><p><strong>Wie formatiert</strong></p></td>
 <td><p>Gibt an, ob die Suche formatierte Daten enthält. Klicken Sie auf <strong>Ja</strong> (Microsoft Office Access 2007 sucht sich nach den Daten, wie sie formatiert und im Feld angezeigt wird) oder auf <strong>Nein</strong> (Access sucht nach Daten an, in der Datenbank gespeichert wird, die nicht immer die gleichen wie es angezeigt wird). Die Standardeinstellung ist <strong>Nein</strong>. Dieses Feature können Sie um die Suche auf Daten in einem bestimmten Format zu beschränken. Angenommen, klicken Sie auf <strong>Ja</strong> , und geben Sie <strong>1,234</strong> in das Argument <strong>Suchen</strong> nach einem 1,234 in einem Feld so formatiert, dass Kommas enthalten. Klicken Sie auf <strong>Nein</strong> , wenn Sie <strong>1234</strong> für die Daten in diesem Feld Suchen eingeben möchten. Um nach Datumsangaben zu suchen, klicken Sie auf <strong>Ja,</strong> um ein Datum zu suchen, genau wie, beispielsweise 08 Juli 2003 formatiert. Klicken Sie auf <strong>Nein</strong>, geben Sie das Datum für das Argument <strong>Suchen nach</strong> im Format, das in den regionalen Einstellungen in Windows-Systemsteuerung festgelegt ist. Dieses Format ist im <strong>kurzen Datumsformat</strong> finden Sie auf der Registerkarte <strong>Datum</strong> in den regionalen Einstellungen angezeigt. Angenommen, wenn das Feld <strong>kurzen Datumsformat</strong> auf <strong>m/JJ</strong>festgelegt ist, können Sie 7/8/03 eingeben und Access findet alle Einträge in einem Datumsfeld, die entsprechen, 8. Juli 2003, unabhängig davon, wie das Feld formatiert ist.</p>
-
-> [!NOTE]
-> Das Argument **Wie formatiert** ist nur dann wirksam, wenn das aktuelle Feld ein gebundenes Steuerelement ist und wenn das Argument **Vergleichen** auf **Ganzes Feld**, das Argument **Nur aktuelles Feld** auf **Ja** und das Argument **Groß-/Kleinschreibung beachten** auf **Nein** festgelegt ist.
-
-
+<p><strong>Hinweis</strong>: das Argument <strong>WieFormatiert</strong> wird wirksam, nur wenn das aktuelle Feld ein gebundenes Steuerelement ist, das Argument <strong>Übereinstimmung</strong> auf <strong>Ganzes Feld</strong>festgelegt ist, wird das Argument <strong>Nur aktuelles Feld</strong> auf <strong>Ja</strong>und die <strong>Übereinstimmung festgelegt Fall</strong> Argument auf <strong>Nein</strong>festgelegt ist.</p>
 <p>Wenn Sie <strong>Groß-/Kleinschreibung beachten</strong> auf <strong>Ja</strong> oder <strong>Nur aktuelles Feld</strong> auf <strong>Nein</strong> festlegen, müssen Sie außerdem <strong>Wie formatiert</strong> auf <strong>Ja</strong> festlegen.</p></td>
 </tr>
 <tr class="even">

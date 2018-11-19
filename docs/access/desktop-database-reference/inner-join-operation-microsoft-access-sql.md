@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4f9593e8bf0175ee6a25bd53d886c291eed6f75c
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e4179087408a9f7a68bccc673bcd456305ba41d5
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929436"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026484"
 ---
 # <a name="inner-join-operation-microsoft-access-sql"></a>INNER JOIN-Operation (Microsoft Access SQL)
 
@@ -63,7 +63,7 @@ Die INNER JOIN-Operation besteht aus folgenden Komponenten:
 
 ## <a name="remarks"></a>Hinweise
 
-Sie können eine INNER JOIN-Operation in jeder [FROM](https://msdn.microsoft.com/library/ff836674\(v=office.15\))-Klausel verwenden. Hierbei handelt es sich um den Verknüpfungstyp, der im Allgemeinen verwendet wird. Innere Verknüpfungen fassen Datensätze aus zwei Tabellen zusammen, wenn sich in Feldern, die in beiden Tabellen enthalten sind, übereinstimmende Werte befinden.
+Sie können eine INNER JOIN-Operation in jeder [FROM](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/from-clause-microsoft-access-sql)-Klausel verwenden. Hierbei handelt es sich um den Verknüpfungstyp, der im Allgemeinen verwendet wird. Innere Verknüpfungen fassen Datensätze aus zwei Tabellen zusammen, wenn sich in Feldern, die in beiden Tabellen enthalten sind, übereinstimmende Werte befinden.
 
 Sie können die INNER JOIN-Operation in Kombination mit der Departments-Tabelle (Abteilungen) und der Employees-Tabelle (Personal) verwenden, um alle Mitarbeiter in jeder Abteilung auszuwählen. Umgekehrt können Sie eine LEFT JOIN- oder RIGHT JOIN-Operation zur Erstellung einer äußeren Verknüpfung verwenden, um alle Abteilungen (selbst wenn den Abteilungen kein Personal zugewiesen wurde) oder das gesamte Personal (selbst wenn einige Mitarbeiter keiner Abteilung zugewiesen wurden) auszuwählen.
 

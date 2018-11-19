@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff834370(v=office.15)
 ms:contentKeyID: 48547705
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4ccaffdbc39634f42f4af680786b5dc8b3957475
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 3e5318652430f6cb9564fb1bb02832cc120b080b
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937631"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026246"
 ---
 # <a name="gotocontrol-macro-action"></a>GoToControl-Makroaktion
 
@@ -41,12 +41,7 @@ Die **GeheZuSteuerelement**-Aktion hat die folgenden Argumente.
 <tr class="odd">
 <td><p><strong>Steuerelementname</strong></p></td>
 <td><p>Der Name des Felds oder Steuerelements, das den Fokus erhalten soll. Geben Sie den Namen Feld oder Steuerelement in das Feld <strong>Steuerelementname</strong> im Abschnitt <strong>Aktionsargument</strong> des Makro-Generators ein. Dies ist ein erforderliches Argument.</p>
-
-> [!NOTE]
-> Geben Sie nur den Namen des Felds oder Steuerelements in das Argument **Steuerelementname** nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].
-
-
-<p></p></td>
+<p><strong>Hinweis</strong>: Geben Sie nur den Namen des Felds oder Steuerelements in das Argument <strong>Steuerelementname</strong> nicht den vollqualifizierten Bezeichner wie Formulare! Produkte! [Produkt-ID].</p></td>
 </tr>
 </tbody>
 </table>

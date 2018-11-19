@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250174(v=office.15)
 ms:contentKeyID: 48548407
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ffc8f1aa1097319929059ec21651e651184050d4
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: ebc91213d3ac7c638a56965ec54ddfb973eb667f
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25944242"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026323"
 ---
 # <a name="connection-properties-methods-and-events-ado"></a>Verbindungseigenschaften, Methoden und Ereignisse (ADO)
 
@@ -39,7 +39,7 @@ ms.locfileid: "25944242"
 - [BeginTrans, CommitTrans und RollbackTrans](begintrans-committrans-and-rollbacktrans-methods-ado.md)
 - [Cancel-Methode](cancel-method-ado.md)
 - [Close-Methode](close-method-ado.md)
-- [Execute-Methode (ADO-Verbindung)](https://msdn.microsoft.com/library/jj249832\(v=office.15\))
+- [Execute-Methode (ADO-Verbindung)](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)
 - [Open-Methode (ADO-Verbindung)](open-method-ado-connection.md)
 - [OpenSchema-Methode](openschema-method-ado.md)
 

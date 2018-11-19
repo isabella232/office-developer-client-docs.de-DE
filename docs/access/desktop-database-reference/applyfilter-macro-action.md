@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm79035
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 782445e9d0bb12054d41ac780c86d5d6f1a32972
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: f6f0511a1358e8d9b0d0ee820e83cf59d2400345
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926661"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025967"
 ---
 # <a name="applyfilter-macro-action"></a>ApplyFilter-Makroaktion
 
@@ -44,13 +44,7 @@ Die **AnwendenFilter** -Aktion hat die folgenden Argumente.
 <tbody>
 <tr class="odd">
 <td><p>Filtername</p></td>
-<td><p>Der Name eines Filters oder einer Abfrage, die die Datensätze der Tabelle, Formular oder Bericht einschränkt oder sortiert. Sie können den Namen einer vorhandenen Abfrage oder eines Filters, das als eine Abfrage im Feld <strong>Name des Filters</strong> im <strong>Abschnitt</strong> Bereich des <strong>Makro-Generators</strong> gespeichert wurde, eingeben.</p>
-
-> [!NOTE]
-> Wenn Sie diese Aktion verwenden, um einen Serverfilter anzuwenden, muss das Argument Filtername leer sein.
-
-
-<p></p></td>
+<td><p>Der Name eines Filters oder einer Abfrage, die die Datensätze der Tabelle, Formular oder Bericht einschränkt oder sortiert. Sie können den Namen einer vorhandenen Abfrage oder eines Filters, das als eine Abfrage im Feld <strong>Name des Filters</strong> im <strong>Abschnitt</strong> Bereich des <strong>Makro-Generators</strong> gespeichert wurde, eingeben.</p><p><strong>Hinweis</strong>: Wenn Sie diese Aktion verwenden, um einen Serverfilter anzuwenden, muss das Argument Filtername leer sein.</p></td>
 </tr>
 <tr class="even">
 <td><p>Where Condition</p></td>

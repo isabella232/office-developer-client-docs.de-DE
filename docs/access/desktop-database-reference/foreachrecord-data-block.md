@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822743(v=office.15)
 ms:contentKeyID: 48547455
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 09a09a80773adecf760ae4610df30bbd5f36f3d6
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: a627804676ad4e61c5eef050c5bc12c36b9e6d1a
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937526"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026232"
 ---
 # <a name="foreachrecord-data-block"></a>FürJedenDatensatz-Datenblock
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -44,13 +43,7 @@ Die **FürJedenDatensatz** -Aktion kann mit den folgenden Argumenten verwendet w
 <tr class="odd">
 <td><p><strong>In</strong></p></td>
 <td><p>Ja</p></td>
-<td><p>Eine Zeichenfolge zur Identifizierung von Datensätzen für den Betrieb die Domäne. Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</p>
-
-> [!NOTE]
-> Die angegebene Domäne darf keine Daten enthalten, die in einer verknüpften Tabelle oder einer ODBC-Datenquelle gespeichert sind.
-
-
-<p></p></td>
+<td><p>Eine Zeichenfolge zur Identifizierung von Datensätzen für den Betrieb die Domäne. Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</p><p><strong>Hinweis</strong>: die angegebene Domäne darf keine enthalten Daten in einer verknüpften Tabelle oder ODBC-Datenquelle gespeichert sind.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Where Condition</strong></p></td>

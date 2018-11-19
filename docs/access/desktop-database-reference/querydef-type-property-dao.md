@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff844814(v=office.15)
 ms:contentKeyID: 48542993
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 42bd391cea721176973ce4dd30c9ddc7d15471b8
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: bd958c4b2123c727c3bc0a14a067fcb719ec86b3
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937022"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026386"
 ---
 # <a name="querydeftype-property-dao"></a>QueryDef.Type-Eigenschaft (DAO)
 
@@ -72,13 +72,7 @@ Die möglichen Einstellungen und Rückgabewerte für ein **QueryDef**-Objekt sin
 </tr>
 <tr class="even">
 <td><p><strong>dbQProcedure</strong></p></td>
-<td><p>Prozedur (nur ODBCDirect-Arbeitsbereiche)</p>
-
-> [!NOTE]
-> [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
-
-
-<p></p></td>
+<td><p>Prozedur (nur ODBCDirect-Arbeitsbereiche)</p><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>dbQSelect</strong></p></td>

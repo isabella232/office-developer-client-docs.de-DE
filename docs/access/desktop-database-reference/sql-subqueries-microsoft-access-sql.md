@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b2a7bdadeb700bdbc6bf18dda2e73401afb7df86
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 4efa4e92d7fab2dc8a4aae932ccb1ffe69c7c6c8
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937351"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026099"
 ---
 # <a name="sql-subqueries-microsoft-access-sql"></a>SQL-Unterabfragen (Microsoft Access SQL)
 
@@ -68,7 +68,7 @@ Eine Unterabfrage enthält die folgenden Bestandteile:
 
 ## <a name="remarks"></a>Hinweise
 
-Anstelle eines Ausdrucks können Sie in der Feldliste einer SELECT-Anweisung oder in einer [WHERE](https://msdn.microsoft.com/library/ff195245\(v=office.15\))- oder [HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\))-Klausel auch eine Unterabfrage verwenden. In einer Unterabfrage geben Sie mithilfe einer SELECT-Anweisung mindestens einen genauen Wert an, der im Ausdruck in der WHERE- oder HAVING-Klausel ausgewertet wird.
+Anstelle eines Ausdrucks können Sie in der Feldliste einer SELECT-Anweisung oder in einer [WHERE](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql)- oder [HAVING](https://docs.microsoft.com/office/vba/access/concepts/structured-query-language/having-clause-microsoft-access-sql)-Klausel auch eine Unterabfrage verwenden. In einer Unterabfrage geben Sie mithilfe einer SELECT-Anweisung mindestens einen genauen Wert an, der im Ausdruck in der WHERE- oder HAVING-Klausel ausgewertet wird.
 
 Verwenden Sie eines der synonymen Prädikate ANY oder SOME, um in der Hauptabfrage Datensätze abzurufen, die den Vergleich mit einem der in der Unterabfrage abgerufenen Datensätze erfüllen. Im folgenden Beispiel werden alle Artikel zurückgegeben, deren Einzelpreis höher als der Preis irgendeines Artikels ist, der mindestens zu einem Preisnachlass von 25 %verkauft wird:
 
@@ -79,7 +79,7 @@ WHERE UnitPrice > ANY
 WHERE Discount >= .25);
 ```
 
-Verwenden Sie das Prädikat [ALL](https://msdn.microsoft.com/library/ff195711\(v=office.15\)), um in der Hauptabfrage nur die Datensätze abzurufen, die dem Vergleich mit allen in der Unterabfrage abgerufenen Datensätzen standhalten. Wenn Sie das vorherige Beispiel mit ALL anstelle von ANY ausführen, gibt die Abfrage nur die Artikel zurück, deren Einzelpreis höher als der Preis sämtlicher Artikel ist, die mindestens zu einem Preisnachlass von 25 % verkauft werden. Dies ist wesentlich restriktiver.
+Verwenden Sie das Prädikat [ALL](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/all-distinct-distinctrow-top-predicates-microsoft-access-sql), um in der Hauptabfrage nur die Datensätze abzurufen, die dem Vergleich mit allen in der Unterabfrage abgerufenen Datensätzen standhalten. Wenn Sie das vorherige Beispiel mit ALL anstelle von ANY ausführen, gibt die Abfrage nur die Artikel zurück, deren Einzelpreis höher als der Preis sämtlicher Artikel ist, die mindestens zu einem Preisnachlass von 25 % verkauft werden. Dies ist wesentlich restriktiver.
 
 Verwenden Sie das Prädikat IN, um in der Hauptabfrage nur die Datensätze abzurufen, für die ein identischer Wert in einem Datensatz in der Unterabfrage vorhanden ist. Im folgenden Beispiel werden alle Artikel mit einem Preisnachlass von mindestens 25 % zurückgegeben:
 

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195882(v=office.15)
 ms:contentKeyID: 48545671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d53bb8b6e4520810b98bfe81c9d35186a2392904
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: c93f312dd9b43a3235f049b9e6d3f95d08eba87f
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25928593"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025595"
 ---
 # <a name="lookuprecord-data-block"></a>NachschlagenDatensatz-Datenblock
 
@@ -43,13 +43,7 @@ Die **NachschlagenDatensatz** -Aktion kann mit den folgenden Argumenten verwende
 <tr class="odd">
 <td><p>In</p></td>
 <td><p>Ja</p></td>
-<td><p>Eine Zeichenfolge, die den Datensatz für den Betrieb identifiziert. Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</p>
-
-> [!NOTE]
-> Der angegebene Datensatz darf keine Daten enthalten, die in einer verknüpften Tabelle oder einer ODBC-Datenquelle gespeichert sind.
-
-
-<p></p></td>
+<td><p>Eine Zeichenfolge, die den Datensatz für den Betrieb identifiziert. Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</p><p><strong>Hinweis</strong>: der angegebene Datensatz darf keine enthalten Daten in einer verknüpften Tabelle oder ODBC-Datenquelle gespeichert sind.</p></td>
 </tr>
 <tr class="even">
 <td><p>Bedingung</p></td>

@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250297(v=office.15)
 ms:contentKeyID: 48548905
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 232af159c669968c9c3b4d3d65acbc181f958689
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: a36695e0d858a630ba91b954bfc9a46136e26403
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998903"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025972"
 ---
 # <a name="whats-new-in-ado"></a>Neuigkeiten in ADO
 
@@ -84,7 +84,7 @@ Die folgenden neuen Eigenschaften sind in dieser Version enthalten.
 <td><p>Gibt den Typ des <strong>Record</strong>-Objekts an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/jj250128(v=office.15)">Size</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream">Size</a></p></td>
 <td><p>Die Größe des Datenstroms wird als Byteanzahl angegeben.</p></td>
 </tr>
 <tr class="odd">

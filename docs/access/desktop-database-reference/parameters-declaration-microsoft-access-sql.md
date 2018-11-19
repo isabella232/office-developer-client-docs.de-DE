@@ -12,12 +12,12 @@ dev_langs:
 - sql
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e906e90fd6f7bf6e26898ed5381ef687c2ee8514
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 64e40da96dc6d82c0f682cba5a3ebc7cfb82bb50
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937342"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026407"
 ---
 # <a name="parameters-declaration-microsoft-access-sql"></a>PARAMETERS-Deklaration (Microsoft Access SQL)
 
@@ -68,7 +68,7 @@ Wenn die Deklaration mehrere Parameter einschließt, müssen diese durch Kommas 
 PARAMETERS [Low price] Currency, [Beginning date] DateTime;
 ```
 
-Sie können *Name* , aber nicht den *Datentyp* in einer [, in dem](https://msdn.microsoft.com/library/ff195245\(v=office.15\)) oder eine [HAVING](https://msdn.microsoft.com/library/ff193795\(v=office.15\)) -Klausel verwenden. In den folgenden Beispielen wird die Angabe von zwei Parametern erwartet, anschließend werden die Kriterien auf die Datensätze in der Orders-Tabelle angewendet:
+Sie können *Name* , aber nicht den *Datentyp* in einer [, in dem](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/where-clause-microsoft-access-sql) oder eine [HAVING](https://docs.microsoft.com/office/vba/access/Concepts/Structured-Query-Language/having-clause-microsoft-access-sql) -Klausel verwenden. In den folgenden Beispielen wird die Angabe von zwei Parametern erwartet, anschließend werden die Kriterien auf die Datensätze in der Orders-Tabelle angewendet:
 
 ```sql
 PARAMETERS [Low price] Currency, 

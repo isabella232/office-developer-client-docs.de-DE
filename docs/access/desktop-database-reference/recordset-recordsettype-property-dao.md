@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm13361
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: e521c4de48f45d080a3b201ac431b2d7da14bc22
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: e4babfce754ec0e9c4744142570054c0249936f8
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923224"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026211"
 ---
 # <a name="recordsetrecordsettype-property-dao"></a>Recordset.RecordsetType-Eigenschaft (DAO)
 
@@ -65,12 +65,8 @@ Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in eine
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > [!HINWEIS] Wenn Sie vermeiden möchten, dass Daten in gebundenen Steuerelementen bearbeitet werden, wenn das Formular in der Formularansicht oder Datenblattansicht angezeigt wird, können Sie die **RecordsetType** -Eigenschaft auf 2 festlegen.
-
-
 
 Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in einem Microsoft Access-Projekt (ADP).
 
@@ -101,12 +97,8 @@ Die **RecordsetType** -Eigenschaft verwendet die folgenden Einstellungen in eine
 </tbody>
 </table>
 
-
-
 > [!NOTE]
 > [!HINWEIS] Wenn die **RecordsetType** -Eigenschaft eines geöffneten Formulars oder Berichts geändert wird, führt dies zu einer automatischen Neuerstellung der Datensatzgruppe.
-
-
 
 Sie können Formulare erstellen, die auf mehreren zugrunde liegenden Tabellen basieren, an deren Felder Steuerelemente in den Formularen gebunden sind. Abhängig von der Einstellung der **RecordsetType** -Eigenschaft können Sie einschränken, welche gebundenen Steuerelemente bearbeitet werden können.
 

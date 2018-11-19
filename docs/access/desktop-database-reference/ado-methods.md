@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248984(v=office.15)
 ms:contentKeyID: 48543651
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3649a7146c0d6ab70bc5f785404f03269df1540b
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
+ms.openlocfilehash: 5d5b08478b714a9b70e5cb08daff6e04b8883071
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910803"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026379"
 ---
 # <a name="ado-methods"></a>ADO-Methoden
 
@@ -105,11 +105,11 @@ ms.locfileid: "25910803"
 <td><p>Eine Datei oder ein Verzeichnis mit allen Unterverzeichnissen wird gelöscht.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/jj248785(v=office.15)">Führen Sie aus (ADO-Befehl)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command">Führen Sie aus (ADO-Befehl)</a></p></td>
 <td><p>Es wird die Abfrage, SQL-Anweisung oder gespeicherte Prozedur ausgeführt, die in der <strong>CommandText</strong>-Eigenschaft angegeben ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/jj249832(v=office.15)">Führen Sie aus (ADO-Verbindung)</a></p></td>
+<td><p><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection">Führen Sie aus (ADO-Verbindung)</a></p></td>
 <td><p>Die angegebene Abfrage, SQL-Anweisung, gespeicherte Prozedur oder der angegebene anbieterspezifische Text wird ausgeführt.</p></td>
 </tr>
 <tr class="odd">

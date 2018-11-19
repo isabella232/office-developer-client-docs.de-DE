@@ -1,20 +1,19 @@
 ---
 title: Verwenden von Platzhalterzeichen in Zeichenfolgenvergleichen
-TOCTitle: Using Wildcard Characters in String Comparisons
+TOCTitle: Using wildcard characters in string comparisons
 ms:assetid: 37dda2b8-c710-4f73-bb2a-76a1348c42fe
 ms:mtpsurl: https://msdn.microsoft.com/library/Ff192499(v=office.15)
 ms:contentKeyID: 48544205
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bc45b71f1b70f1a36a9456f3ab83612933af11f6
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: 9fb6c63d5d2db1db54d52a03fef41e44a29f42c9
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946706"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026164"
 ---
 # <a name="using-wildcard-characters-in-string-comparisons"></a>Verwenden von Platzhalterzeichen in Zeichenfolgenvergleichen
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -64,11 +63,11 @@ Es ist wichtig zu beachten, dass die ANSI SQL-Platzhalter (%) und (\_) sind nur 
 
 Nachfolgend sind andere wichtige Regeln für den Mustervergleich aufgeführt:
 
-  - Ausrufezeichen (\!) am Anfang von *Charlist* bedeutet, der eine Übereinstimmung, wenn ein beliebiges Zeichen außer denen in *Charlist* im *Ausdruck*gefunden werden. Bei Verwendung außerhalb der Klammern führt das Ausrufezeichen zu einer Übereinstimmung mit einem anderen Ausrufezeichen.
+- Ausrufezeichen (\!) am Anfang von *Charlist* bedeutet, der eine Übereinstimmung, wenn ein beliebiges Zeichen außer denen in *Charlist* im *Ausdruck*gefunden werden. Bei Verwendung außerhalb der Klammern führt das Ausrufezeichen zu einer Übereinstimmung mit einem anderen Ausrufezeichen.
 
-  - Sie können Bindestrich (-) am Anfang (nach einem Ausrufezeichen, falls verwendet wird) oder am Ende des *Charlist* selbst abgleichen verwenden. An jeder anderen Position wird durch den Trennstrich ein Bereich von ANSI-Zeichen identifiziert.
+- Sie können Bindestrich (-) am Anfang (nach einem Ausrufezeichen, falls verwendet wird) oder am Ende des *Charlist* selbst abgleichen verwenden. An jeder anderen Position wird durch den Trennstrich ein Bereich von ANSI-Zeichen identifiziert.
 
-  - Wenn Sie einen Bereich von Zeichen festlegen, müssen die Zeichen in aufsteigender Reihenfolge angegeben werden (A-Z oder 0-100). \[A – Z\] ist ein gültiges Muster, aber \[Z-A\] ist nicht.
+- Wenn Sie einen Bereich von Zeichen festlegen, müssen die Zeichen in aufsteigender Reihenfolge angegeben werden (A-Z oder 0-100). \[A – Z\] ist ein gültiges Muster, aber \[Z-A\] ist nicht.
 
-  - Die Zeichenfolge \[ \] wird ignoriert. Es gilt eine Nullzeichenfolge ("").
+- Die Zeichenfolge \[ \] wird ignoriert. Es gilt eine Nullzeichenfolge ("").
 

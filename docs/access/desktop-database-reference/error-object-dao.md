@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835711(v=office.15)
 ms:contentKeyID: 48548289
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e373dd683e679737564d44057ec0b96a866ab84e
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 2c34f5c9041102ecdb1c3c789c0e7c1c5585b3a6
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923476"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026354"
 ---
 # <a name="error-object-dao"></a>Error-Objekt (DAO)
 
@@ -40,7 +40,9 @@ Das Auflisten der speziellen Fehler in der **Errors**-Auflistung ermöglicht den
     
 
     > [!NOTE]
-    > Wenn in Microsoft Visual Basic für Applikationen (VBA) programmieren, wenn Sie das **New** -Schlüsselwort verwenden, um ein Objekt zu erstellen, die anschließend, tritt ein Fehler vor hat dieses Objekt einer Auflistung, das **DBEngine** -Objekt **Fehler** angefügt wurden Auflistung enthalten keinen Eintrag für dieses Objekt Fehler; sein, da das neue Objekt nicht das **DBEngine** -Objekt zugeordnet ist. Die Fehlerinformationen sind jedoch im VBA-Objekt **Err** verfügbar. Der VBA-Code für die Fehlerbehandlung sollten die **Errors** -Auflistung untersuchen, wenn Sie einen Fehler beim Datenzugriff erwarten. Wenn Sie einen zentralen Fehlerhandler schreiben, testen Sie die VBA **Err** -Objekts, um festzustellen, ob die Fehlerinformationen in der **Errors** -Auflistung gültig ist. Wenn die **Number** -Eigenschaft des letzten Elements der **Errors** -Auflistung (DBEngine.Errors.Count - 1) und der Wert der Übereinstimmung **Err** -Objekt, anschließend können Sie eine Reihe von **Select Case** -Anweisung zum Identifizieren des bestimmten DAO-Fehlers oder aufgetretenen Fehler. Wenn sie nicht übereinstimmen, verwenden Sie die [Refresh](errors-refresh-method-dao.md) -Methode auf die **Errors** -Auflistung.
+    > Wenn in Microsoft Visual Basic für Applikationen (VBA) programmieren, wenn Sie das **New** -Schlüsselwort verwenden, um ein Objekt zu erstellen, die anschließend, tritt ein Fehler vor hat dieses Objekt einer Auflistung, das **DBEngine** -Objekt **Fehler** angefügt wurden Auflistung enthalten keinen Eintrag für dieses Objekt Fehler; sein, da das neue Objekt nicht das **DBEngine** -Objekt zugeordnet ist. Die Fehlerinformationen sind jedoch im VBA-Objekt **Err** verfügbar. Der VBA-Code für die Fehlerbehandlung sollten die **Errors** -Auflistung untersuchen, wenn Sie einen Fehler beim Datenzugriff erwarten. 
+    > 
+    > Wenn Sie einen zentralen Fehlerhandler schreiben, testen Sie die VBA **Err** -Objekts, um festzustellen, ob die Fehlerinformationen in der **Errors** -Auflistung gültig ist. Wenn die **Number** -Eigenschaft des letzten Elements der **Errors** -Auflistung (DBEngine.Errors.Count - 1) und der Wert der Übereinstimmung **Err** -Objekt, anschließend können Sie eine Reihe von **Select Case** -Anweisung zum Identifizieren des bestimmten DAO-Fehlers oder aufgetretenen Fehler. Wenn sie nicht übereinstimmen, verwenden Sie die [Refresh](errors-refresh-method-dao.md) -Methode auf die **Errors** -Auflistung.
 
 
 

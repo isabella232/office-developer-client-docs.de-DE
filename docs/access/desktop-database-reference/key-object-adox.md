@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249461(v=office.15)
 ms:contentKeyID: 48545608
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 11bd05c4959ba1f3e1819e482ce311fc798bf0e6
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 7722130c76516eaa7dcaf0598a5e1c040e21ba25
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929832"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025945"
 ---
 # <a name="key-object-adox"></a>Key-Objekt (ADOX)
 
@@ -30,7 +30,7 @@ Die Eigenschaften und Auflistungen eines **Key** -Objekts ermöglichen Folgendes
 
 - Identifizieren des Schlüssels, indem Sie die [Name](name-property-adox.md)-Eigenschaft verwenden.
 
-- Bestimmen, ob es sich um einen Primär- oder Fremdschlüssel oder um einen eindeutigen Schlüssel handelt, indem Sie die [Type](https://msdn.microsoft.com/library/jj248879\(v=office.15\))-Eigenschaft verwenden.
+- Bestimmen, ob es sich um einen Primär- oder Fremdschlüssel oder um einen eindeutigen Schlüssel handelt, indem Sie die [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-keyadox)-Eigenschaft verwenden.
 
 - Zugreifen auf die Datenbankspalten des Schlüssels, indem Sie die [Columns](columns-collection-adox.md)-Auflistung verwenden.
 

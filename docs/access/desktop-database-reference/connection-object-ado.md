@@ -10,12 +10,12 @@ f1_keywords:
 - ado210.chm1231105
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d7f35c2f76ec8cf2fd671f5ef9eefb42f8555237
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 87df4d1597661dc599c08b0f0b45b8e129484a2d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931386"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025931"
 ---
 # <a name="connection-object-ado"></a>Connection-Objekt (ADO)
 
@@ -41,9 +41,8 @@ Die Auflistungen, Methoden und Eigenschaften eines **Connection** -Objekts ermö
 
   - Einrichten und nachfolgendes Beenden der physikalischen Verbindung mit der Datenquelle mit den Methoden [Open](open-method-ado-connection.md) und [Close](close-method-ado.md).
 
-  - Ausführen eines Befehls auf der Verbindung mit der [Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\))-Methode und Konfigurieren der Ausführung mit der [CommandTimeout](commandtimeout-property-ado.md)-Eigenschaft.
+  - Ausführen eines Befehls auf der Verbindung mit der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection)-Methode und Konfigurieren der Ausführung mit der [CommandTimeout](commandtimeout-property-ado.md)-Eigenschaft.
     
-
     > [!NOTE]
     > Um eine Abfrage auszuführen, ohne die Verwendung eines Command-Objekts, übergeben Sie eine Abfragezeichenfolge an der **Execute** -Methode eines **Connection** -Objekts. Ein [Command](command-object-ado.md) -Objekt ist jedoch erforderlich, wenn den Befehlstext beibehalten und erneut ausführen oder Verwenden von Abfrageparametern werden soll.
 

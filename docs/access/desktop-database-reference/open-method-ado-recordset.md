@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249591(v=office.15)
 ms:contentKeyID: 48546119
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 21798f476e0d67b7b23ef38c6e2b268893173ac6
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: 5e0d5302291f1514fd11bca8fe7094af4525c900
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25950062"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026477"
 ---
 # <a name="open-method-ado-recordset"></a>Open-Methode (ADO-Recordset)
 
@@ -46,7 +46,7 @@ Mithilfe der **Open** -Methode für ein **Recordset** -Objekt können Sie einen 
 
 Verwenden Sie das optionale Argument *Quelle* zum Angeben einer Datenquelle mit einer der folgenden: ein **Command** -Objektvariable, eine SQL-Anweisung, eine gespeicherte Prozedur, ein Tabellenname, eine URL oder einen vollständigen Pfad Dateinamen. Wenn *Source* Pfadnamen einer Datei ist, kann ein vollständiger Pfad sein ("c:\\Dir\\file.rst"), ein relativer Pfad ("... \\file.rst "), oder eine URL ("https://files/file.rst").
 
-Es ist nicht ratsam, verwenden Sie das Argument *Source* der **Open** -Methode eine Aktionsabfrage ausführen, die keine Datensätze zurückgegeben werden, da es keine einfache Möglichkeit ist, um festzustellen, ob der Aufruf erfolgreich war. Die von einer solchen Abfrage zurückgegebene **Recordset-Objekt** wird geschlossen. Rufen Sie die [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode eines **Command** -Objekts oder der [Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\)) -Methode eines **Connection** -Objekts stattdessen um eine Abfrage durchzuführen, wie eine SQL-INSERT-Anweisung keine Datensätze zurückgegeben werden.
+Es ist nicht ratsam, verwenden Sie das Argument *Source* der **Open** -Methode eine Aktionsabfrage ausführen, die keine Datensätze zurückgegeben werden, da es keine einfache Möglichkeit ist, um festzustellen, ob der Aufruf erfolgreich war. Die von einer solchen Abfrage zurückgegebene **Recordset-Objekt** wird geschlossen. Rufen Sie die [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-command) -Methode eines **Command** -Objekts oder der [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) -Methode eines **Connection** -Objekts stattdessen um eine Abfrage durchzuführen, wie eine SQL-INSERT-Anweisung keine Datensätze zurückgegeben werden.
 
 Das *ActiveConnection* -Argument entspricht der [ActiveConnection](activeconnection-property-ado.md) -Eigenschaft und gibt an, in welche Verbindung zum Öffnen des **Recordset** -Objekt. Wenn Sie eine Verbindungsdefinition für dieses Argument übergeben, öffnet ADO mithilfe der angegebenen Parameter eine neue Verbindung. Nach dem Öffnen des **Recordset-Objekt** mit einem clientseitige Cursor (**CursorLocation** = **AdUseClient**), können Sie den Wert dieser Eigenschaft zum Senden von Updates auf einen anderen Anbieter ändern. Sie können diese Eigenschaft auch auf **Nothing** (in Microsoft Visual Basic) oder NULL festlegen, um das **Recordset** -Objekt von beliebigen Anbietern zu trennen. Beim Ändern von **ActiveConnection** für einen serverseitigen Cursor wird jedoch ein Fehler generiert.
 

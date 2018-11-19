@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249314(v=office.15)
 ms:contentKeyID: 48545053
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d067d26120e694975c662c3d018443e325e75119
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 193cf5db350fdf0b30fe19da9a61026d1cd39aa9
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937134"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026470"
 ---
 # <a name="filter-property-ado"></a>Filter-Eigenschaft (ADO)
 
@@ -41,12 +41,9 @@ Die Kriterienzeichenfolge besteht aus Klauseln in der Form *FieldName-Operator-W
   - *Operator* muss einer der folgenden sein: \<, \>, \<=, \>=, \< \>, = oder **LIKE**.
 
   - *Wert* ist der Wert, mit denen Sie die Feldwerte vergleichen (z. B. "Smith", \#8/24/95\#, 12.345 oder $50,00). Verwenden Sie einfache Anführungszeichen mit Zeichenfolgen und Nummernzeichen (\#) mit einem Datum. Zahlen können Sie die Dezimalstellen, Dollarzeichen und die wissenschaftliche Schreibweise. Wenn der *Operator* **wie**ist, können *Wert* Platzhalter verwenden. Nur das Sternchen (\*) und Prozentzeichen (%) sind Platzhalter zulässig, und sie müssen das letzte Zeichen in der Zeichenfolge sein. *Wert* darf nicht null sein.
-    
 
     > [!NOTE]
     > [!HINWEIS] Wenn einzelne Anführungszeichen in den Filterwert eingeschlossen werden sollen, verwenden Sie zwei einzelne Anführungszeichen zur Darstellung. Soll beispielsweise nach "O'Malley" gefiltert werden, lautet die Kriterienzeichenfolge "col1 = 'O''Malley'". Setzen Sie die Zeichenfolge zwischen Nummernzeichen (#), um einzelne Anführungszeichen am Anfang und am Ende des Filterwerts einzuschließen. Wenn Sie z. B. nach '1' filtern möchten, muss die Kriterienzeichenfolge "col1 = #'1'#" lauten.
-
-
 
   - Es gibt keine Rangfolge zwischen **AND** und **OR**. Klauseln können in Klammern zusammengefasst werden. Sie können jedoch durch **OR** verbundene Klauseln nicht gruppieren und dann die Gruppe durch **AND** mit einer weiteren Klausel verbinden. Beispiel:
 

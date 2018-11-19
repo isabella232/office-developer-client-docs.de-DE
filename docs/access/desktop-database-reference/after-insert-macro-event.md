@@ -10,25 +10,21 @@ f1_keywords:
 - vbaac10.chm3180
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4dc9d509dedfb74769c84f44a6237b9f6354dc16
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: af6bc99374c67560e9cd78a9f26bc9dd601c70d8
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921684"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026148"
 ---
 # <a name="after-insert-macro-event"></a>Makroereignis "Nach Eingabe"
-
 
 **Betrifft**: Access 2013, Office 2013
 
 Das Ereignis **Nach Eingabe** tritt auf, wenn ein Datensatz hinzugefügt wurde.
 
-
 > [!NOTE]
 > [!HINWEIS] Das Ereignis **Nach Eingabe** ist nur in Datenmakros verfügbar.
-
-
 
 ## <a name="remarks"></a>Hinweise
 
@@ -56,7 +52,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Nach Eingabe
 <thead>
 <tr class="header">
 <th><p>Befehlstyp</p></th>
-<th><p>Command</p></th>
+<th><p>Befehl</p></th>
 </tr>
 </thead>
 <tbody>

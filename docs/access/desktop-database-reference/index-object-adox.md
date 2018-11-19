@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250304(v=office.15)
 ms:contentKeyID: 48548929
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 7cc27964bed572431f3482e0834868690f3b77df
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
+ms.openlocfilehash: 5bc2eeaf4d26c957abb67780fe2f5d0df8f73049
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921901"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026176"
 ---
 # <a name="index-object-adox"></a>Index-Objekt (ADOX)
 
@@ -27,19 +27,19 @@ Mit dem folgenden Code wird ein neues **Index** -Objekt erstellt:
 
 Die Eigenschaften und Auflistungen eines **Index** -Objekts ermöglichen Folgendes:
 
-  - Identifizieren des Indexes, indem Sie die [Name](name-property-adox.md)-Eigenschaft verwenden.
+- Identifizieren des Indexes, indem Sie die [Name](name-property-adox.md)-Eigenschaft verwenden.
 
-  - Zugreifen auf die Datenbankspalten des Indexes, indem Sie die [Columns](columns-collection-adox.md)-Auflistung verwenden.
+- Zugreifen auf die Datenbankspalten des Indexes, indem Sie die [Columns](columns-collection-adox.md)-Auflistung verwenden.
 
-  - Angeben, ob die Indexschlüssel eindeutig sein müssen, indem Sie die [Unique](unique-property-adox.md)-Eigenschaft verwenden.
+- Angeben, ob die Indexschlüssel eindeutig sein müssen, indem Sie die [Unique](unique-property-adox.md)-Eigenschaft verwenden.
 
-  - Angeben, ob der Index den Primärschlüssel einer Tabelle darstellt, indem Sie die [PrimaryKey](primarykey-property-adox.md)-Eigenschaft verwenden.
+- Angeben, ob der Index den Primärschlüssel einer Tabelle darstellt, indem Sie die [PrimaryKey](primarykey-property-adox.md)-Eigenschaft verwenden.
 
-  - Angeben, ob Datensätze mit Nullwerten im Indexfeld über Indexeinträge verfügen, indem Sie die [IndexNulls](indexnulls-property-adox.md)-Eigenschaft verwenden.
+- Angeben, ob Datensätze mit Nullwerten im Indexfeld über Indexeinträge verfügen, indem Sie die [IndexNulls](indexnulls-property-adox.md)-Eigenschaft verwenden.
 
-  - Angeben, ob der Index gruppiert ist, indem Sie die [Clustered](clustered-property-adox.md)-Eigenschaft verwenden.
+- Angeben, ob der Index gruppiert ist, indem Sie die [Clustered](clustered-property-adox.md)-Eigenschaft verwenden.
 
-  - Zugreifen auf anbieterspezifische Indexeigenschaften mit der [Properties](properties-collection-ado.md)-Auflistung.
+- Zugreifen auf anbieterspezifische Indexeigenschaften mit der [Properties](properties-collection-ado.md)-Auflistung.
 
 
 > [!NOTE]

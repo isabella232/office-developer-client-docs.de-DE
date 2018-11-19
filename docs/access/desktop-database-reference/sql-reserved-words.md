@@ -10,21 +10,24 @@ f1_keywords:
 - jetsql40.chm5277591
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: dc481a699ad0703075e7c7c4f97dffb147cd0280
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: e3de2ba6696ac9abc065c6d4588d362f79fba273
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998945"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026400"
 ---
 # <a name="sql-reserved-words"></a>Reservierte Wörter für SQL
 
 **Betrifft**: Access 2013, Office 2013
 
-Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbankmodul für die Verwendung in SQL-Anweisungen reserviert sind. Wörter, die nicht in Großbuchstaben aufgeführt sind, sind auch für andere Anwendungen reserviert. Deshalb enthalten die Hilfethemen für diese Wörter keine Beschreibung, die ausschließlich die Verwendung in SQL behandelt, sondern eine allgemeine Beschreibung.
+Die folgende Liste enthält alle Wörter, die von dem Microsoft Access-Datenbankmodul für die Verwendung in SQL-Anweisungen reserviert sind. 
 
-> [!NOTE]
-> Wörter, gefolgt von einem Sternchen (*) reserviert sind jedoch keine Bedeutung im Kontext einer Microsoft Access SQL-Anweisung (beispielsweise **Ebene** und **TableID**) haben. Für Wörter ohne Unterstreichung in dieser Auflistung besteht keine Verknüpfung zu einem entsprechenden Hilfethema.
+- Wörter, die nicht in Großbuchstaben aufgeführt sind, sind auch für andere Anwendungen reserviert. Deshalb enthalten die Hilfethemen für diese Wörter keine Beschreibung, die ausschließlich die Verwendung in SQL behandelt, sondern eine allgemeine Beschreibung.
+
+- Wörter, gefolgt von einem Sternchen (*) sind reserviert, aber keine Bedeutung im Kontext einer Microsoft Access SQL-Anweisung (beispielsweise **Ebene** und **TableID**) haben. 
+
+- Für Wörter ohne Unterstreichung in dieser Auflistung besteht keine Verknüpfung zu einem entsprechenden Hilfethema.
 
 ## <a name="a"></a>A
 

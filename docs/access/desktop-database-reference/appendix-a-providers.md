@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249857(v=office.15)
 ms:contentKeyID: 48547207
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6665159eaf0d385d213a35a8463cdc09e738ef45
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 45416c68d52a2ba20ba9adfa19a6ebd89d1e0240
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25888034"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026204"
 ---
 # <a name="appendix-a-providers"></a>Anhang A: Anbieter
 
@@ -21,17 +21,17 @@ ms.locfileid: "25888034"
 
 In diesem Abschnitt werden drei Arten von Anbietern beschrieben: Datenprovider, Dienstanbieter und Dienstkomponenten. Anbieter können in zwei Kategorien geteilt werden: diejenigen, die Daten anbieten, und diejenigen, die Dienste anbieten. Ein *Datenprovider* besitzt eigene Daten und stellt diese für Ihre Anwendung in tabellarischer Form bereit. Ein *Dienstanbieter* kapselt einen Dienst durch Erstellen und Verwenden von Daten und Vergrößern von Features in den ADO-Anwendungen. Ein Dienstanbieter kann darüber hinaus auch als *Dienstkomponente* definiert werden, die mit anderen Dienstanbietern oder -komponenten verwendet werden muss.
 
-## <a name="data-providers"></a>Datenprovider
+## <a name="data-providers"></a>Datenanbieter
 
 ADO ist leistungsfähig und flexibel, da es eine Verbindung mit einem beliebigen Datenprovider herstellen und unabhängig von den spezifischen Features eines bestimmten Anbieters dennoch dasselbe Programmiermodell verfügbar machen kann.
 
 Da jedoch jeder Datenprovider einzigartig ist, ergeben sich bei der Interaktion der Anwendung mit ADO je nach Datenprovider geringfügige Abweichungen. Die Abweichungen können einer von drei Kategorien zugeordnet werden:
 
-  - Connection-Parameter in der ConnectionString-Eigenschaft.
+- Connection-Parameter in der ConnectionString-Eigenschaft.
 
-  - Verwendung des [Command](command-object-ado.md)-Objekts.
+- Verwendung des [Command](command-object-ado.md)-Objekts.
 
-  - Anbieterspezifisches [Recordset](recordset-object-ado.md)-Verhalten.
+- Anbieterspezifisches [Recordset](recordset-object-ado.md)-Verhalten.
 
 Ausführliche Informationen zu den derzeit von Microsoft erhältlichen Datenprovidern finden Sie in den folgenden Abschnitten.
 
@@ -89,17 +89,17 @@ Wenden Sie nach dem Herstellen der Verbindung und dem Erstellen dieser Objekte d
 
 Um einen Dienstanbieter zu verwenden, müssen Sie ein Schlüsselwort angeben. Darüber hinaus müssen Sie die anbieterspezifischen dynamischen Eigenschaften kennen, die den einzelnen Dienstanbietern zugeordnet sind. Informationen zu anwenderspezifischen Eigenschaften für die derzeit von Microsoft erhältlichen Dienstanbieter finden Sie in den folgenden Abschnitten:
 
-  - [Microsoft Data Shaping Dienst für OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)
+- [Microsoft Data Shaping Dienst für OLE DB](microsoft-data-shaping-service-for-ole-db-ado-service-provider.md)
 
-  - [Microsoft OLE DB-Anbieter für Persistenz](microsoft-ole-db-persistence-provider-ado-service-provider.md)
+- [Microsoft OLE DB-Anbieter für Persistenz](microsoft-ole-db-persistence-provider-ado-service-provider.md)
 
-  - [Microsoft OLE DB-Anbieter für Remoting](microsoft-ole-db-remoting-provider-ado-service-provider.md)
+- [Microsoft OLE DB-Anbieter für Remoting](microsoft-ole-db-remoting-provider-ado-service-provider.md)
 
 ## <a name="service-components"></a>Dienstkomponenten
 
 Die Dienstkomponente [Microsoft Cursor Service für OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) ergänzt die Cursor-Hilfsfunktionen von Datenanbietern. Sie erfordert ebenfalls ein Schlüsselwort und hat dynamische Eigenschaften.
 
-Weitere Informationen zu Anbietern finden Sie in der Dokumentation für Microsoft OLE DB in Microsoft Data Access Components SDK oder besuchen Sie das [Data Plattform Developer Center](https://msdn.microsoft.com/data/default.aspx).
+Weitere Informationen zu Anbietern finden Sie in der Dokumentation für Microsoft OLE DB in Microsoft Data Access Components SDK oder besuchen Sie das [Data Plattform Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer?view=sql-server-2017).
 
 ## <a name="provider-commands"></a>Providerbefehle
 

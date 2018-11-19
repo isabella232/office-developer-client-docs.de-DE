@@ -6,15 +6,14 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff822082(v=office.15)
 ms:contentKeyID: 48547247
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 44dacdab7dc13855426bf366bda2801ddee8c022
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 4dbd7de05a3bb2402d436e4bbac59f1ca4687317
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936693"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026330"
 ---
 # <a name="document-object-dao"></a>Document-Objekt (DAO)
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -59,27 +58,25 @@ Jedes **Container**-Objekt besitzt eine **Documents**-Auflistung mit **Document*
 > [!NOTE]
 > Verwechseln Sie die in der obigen Tabelle aufgeführten Container-Objekte nicht mit den gleichnamigen Auflistungen. Das Container-Objekt Databases bezieht sich auf alle gespeicherten Datenbankobjekte, während sich die Databases-Auflistung nur auf Datenbankobjekte bezieht, die in einem bestimmten Arbeitsbereich geöffnet sind.
 
-
-
 Bei einem **Document**-Objekt können Sie die folgenden Aktionen ausführen:
 
-  - Geben Sie mit der **Name**-Eigenschaft den Namen zurück, den das Objekt bei seiner Erstellung von einem Benutzer oder dem Microsoft Access-Datenbankmodul erhalten hat.
+- Geben Sie mit der **Name**-Eigenschaft den Namen zurück, den das Objekt bei seiner Erstellung von einem Benutzer oder dem Microsoft Access-Datenbankmodul erhalten hat.
 
-  - Geben Sie mit der **Container**-Eigenschaft den Namen des **Container**-Objekts zurück, das das **Document**-Objekt enthält.
+- Geben Sie mit der **Container**-Eigenschaft den Namen des **Container**-Objekts zurück, das das **Document**-Objekt enthält.
 
-  - Verwenden Sie die **Owner**-Eigenschaft, um den Eigentümer des Objekts festzulegen oder zurückzugeben. Um die **Owner**-Eigenschaft festlegen zu können, benötigen Sie Schreibberechtigungen für das **Document**-Objekt, außerdem müssen Sie die Eigenschaft auf den Namen eines vorhandenen **User**- oder **Group**-Objekts festlegen.
+- Verwenden Sie die **Owner**-Eigenschaft, um den Eigentümer des Objekts festzulegen oder zurückzugeben. Um die **Owner**-Eigenschaft festlegen zu können, benötigen Sie Schreibberechtigungen für das **Document**-Objekt, außerdem müssen Sie die Eigenschaft auf den Namen eines vorhandenen **User**- oder **Group**-Objekts festlegen.
 
-  - Verwenden Sie die **UserName**- oder **Permissions**-Eigenschaft, um die Zugriffsberechtigungen eines Benutzers oder einer Gruppe für das Objekt festzulegen oder zurückzugeben. Um diese Eigenschaften festlegen zu können, benötigen Sie Schreibberechtigungen für das **Document**-Objekt, außerdem müssen Sie die **UserName**-Eigenschaft auf den Namen eines vorhandenen **User**- oder **Group**-Objekts festlegen.
+- Verwenden Sie die **UserName**- oder **Permissions**-Eigenschaft, um die Zugriffsberechtigungen eines Benutzers oder einer Gruppe für das Objekt festzulegen oder zurückzugeben. Um diese Eigenschaften festlegen zu können, benötigen Sie Schreibberechtigungen für das **Document**-Objekt, außerdem müssen Sie die **UserName**-Eigenschaft auf den Namen eines vorhandenen **User**- oder **Group**-Objekts festlegen.
 
-  - Verwenden Sie die **DateCreated**- oder **LastUpdated**-Eigenschaft, um das Datum und die Uhrzeit der Erstellung oder letzten Änderung des **Document**-Objekts zurückzugeben.
+- Verwenden Sie die **DateCreated**- oder **LastUpdated**-Eigenschaft, um das Datum und die Uhrzeit der Erstellung oder letzten Änderung des **Document**-Objekts zurückzugeben.
 
 Da ein **Document**-Objekt einem vorhandenen Objekt entspricht, können keine neuen **Document**-Objekte erstellt oder vorhandene gelöscht werden. Wenn Sie auf ein **Document**-Objekt in einer Auflistung mit seiner Ordnungszahl oder mit der Einstellung seiner **Name**-Eigenschaft verweisen möchten, verwenden Sie eine der folgenden Syntaxformen:
 
-  - **Documents**(0)
+- **Documents**(0)
 
-  - **Dokumente** ("*Name*")
+- **Dokumente** ("*Name*")
 
-  - **Dokumente**\!\[*Namen*\]
+- **Dokumente**\!\[*Namen*\]
 
 ## <a name="example"></a>Beispiel
 

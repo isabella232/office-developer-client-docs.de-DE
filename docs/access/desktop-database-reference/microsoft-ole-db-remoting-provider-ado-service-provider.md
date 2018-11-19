@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250238(v=office.15)
 ms:contentKeyID: 48548673
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c8e9e6e655198cba28ece0951414af85ec14f26f
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
+ms.openlocfilehash: 07031639b707fc24a3e5b057520c601c9472b01b
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25878059"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026316"
 ---
 # <a name="microsoft-ole-db-remoting-provider-ado-service-provider"></a>Microsoft OLE DB-Anbieter für Remoting (ADO-Dienstanbieter)
 
@@ -153,7 +153,7 @@ cn.Properties("Internet Timeout") = 5000
 
 In ADO 2.0 konnte der OLE DB-Anbieter für Remoting nur in der *ActiveConnection* -Parameter der **Open** -Methode des [Recordset](recordset-object-ado.md) -Objekts angegeben werden. ADO 2.1 ab, kann der Anbieter auch in der *ConnectionString* -Parameter der **Open** -Methode des [Connection](connection-object-ado.md) -Objekts angegeben werden.
 
-Die Entsprechung der **SQL**-Eigenschaft des [RDS.DataControl](https://msdn.microsoft.com/library/jj248989\(v=office.15\)) -Objekts ist nicht verfügbar. Stattdessen wird das [Recordset](recordset-object-ado.md) -Objekt **Open** *Source* -Argument-Methode verwendet.
+Die Entsprechung der **SQL**-Eigenschaft des [RDS.DataControl](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado) -Objekts ist nicht verfügbar. Stattdessen wird das [Recordset](recordset-object-ado.md) -Objekt **Open** *Source* -Argument-Methode verwendet.
 
 Wenn Sie "...;Remote Provider=MS Remote;..." angeben, wird ein vierstufiges Szenario erstellt. Szenarien mit mehr als drei Stufen wurden noch nicht getestet und sollten nicht erforderlich sein.
 

@@ -10,12 +10,12 @@ f1_keywords:
 - vbaac10.chm116962
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 33180aa296fc40c05a3fc50da697aadbf6ada77e
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 253067d61a496073692ea4e462b9b0a67f0e26cd
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997161"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026295"
 ---
 # <a name="saveobject-macro-action"></a>SaveObject-Makroaktion
 
@@ -56,7 +56,9 @@ Die **SpeichernObjekt** -Aktion hat die folgenden Argumente.
 
 ## <a name="remarks"></a>Hinweise
 
-Die **Speichernobjekt** -Aktion funktioniert für alle Datenbankobjekte, die der Benutzer explizit öffnen kann, und speichern. Das angegebene Objekt muss für die **Speichernobjekt** -Aktion haben keinen Einfluss auf das Objekt geöffnet sein. Diese Aktion hat dieselbe Wirkung wie das Auswählen eines Objekts und klicken Sie dann speichern, indem Sie auf der **Symbolleiste für den Schnellzugriff**auf **Speichern** . Das Argument **Objekttyp** leer lassen und einen neuen Namen eingeben, in das Argument **Objektname** hat dieselbe Wirkung wie das **Speichern unter** auf der **Symbolleiste für den Schnellzugriff**klicken und eingeben einen neuen Namen für das aktive Objekt. Verwenden die **Speichernobjekt** -Aktion können Sie ein Objekt angeben, speichern und den Befehl **Speichern unter** aus einem Makro ausführen.
+Die **Speichernobjekt** -Aktion funktioniert für alle Datenbankobjekte, die der Benutzer explizit öffnen kann, und speichern. Das angegebene Objekt muss für die **Speichernobjekt** -Aktion haben keinen Einfluss auf das Objekt geöffnet sein. Diese Aktion hat dieselbe Wirkung wie das Auswählen eines Objekts und klicken Sie dann speichern, indem Sie auf der **Symbolleiste für den Schnellzugriff**auf **Speichern** . 
+
+Das Argument **Objekttyp** leer lassen und einen neuen Namen eingeben, in das Argument **Objektname** hat dieselbe Wirkung wie das **Speichern unter** auf der **Symbolleiste für den Schnellzugriff**klicken und eingeben einen neuen Namen für das aktive Objekt. Verwenden die **Speichernobjekt** -Aktion können Sie ein Objekt angeben, speichern und den Befehl **Speichern unter** aus einem Makro ausführen.
 
 > [!NOTE]
 > [!HINWEIS] Zum Speichern der folgenden Objekte unter einem neuen Namen können Sie die **SpeichernObjekt** -Aktion nicht verwenden:

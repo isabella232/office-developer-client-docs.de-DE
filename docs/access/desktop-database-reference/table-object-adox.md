@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249273(v=office.15)
 ms:contentKeyID: 48544874
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 8984c799779f0024ff50e2814a5993119eb6205f
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 19f30bec624a43bc1b821d8bef01afa166b0c544
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996797"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026428"
 ---
 # <a name="table-object-adox"></a>Table-Objekt (ADOX)
 
@@ -29,7 +29,7 @@ Die Eigenschaften und Auflistungen eines **Table** -Objekts ermöglichen Folgend
 
 - Identifizieren der Tabelle, indem Sie die [Name](name-property-adox.md)-Eigenschaft verwenden.
 
-- Bestimmen des Tabellentyps, indem Sie die [Type](https://msdn.microsoft.com/library/jj250042\(v=office.15\))-Eigenschaft verwenden.
+- Bestimmen des Tabellentyps, indem Sie die [Type](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/type-property-tableadox)-Eigenschaft verwenden.
 
 - Zugreifen auf die Datenbankspalten der Tabelle, indem Sie die [Columns](columns-collection-adox.md)-Auflistung verwenden.
 

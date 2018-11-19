@@ -1,23 +1,23 @@
 ---
-title: Zusammenarbeit von Ereignishandlern
+title: Zusammenspiel von Ereignishandlern
 TOCTitle: How event handlers work together
 ms:assetid: 02122824-881e-0bb8-cba1-c963024790ae
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ248788(v=office.15)
 ms:contentKeyID: 48542951
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a397b0f88bb60552a6e53432a3c8c4d788013103
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 294f1f87de85d8a8c54aeeb3ef74181cef755d32
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997272"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026365"
 ---
-# <a name="how-event-handlers-work-together"></a>Zusammenarbeit von Ereignishandlern
+# <a name="how-event-handlers-work-together"></a>Zusammenspiel von Ereignishandlern
 
 **Betrifft**: Access 2013, Office 2013
 
-Wenn Sie nicht in Visual Basic programmieren, müssen, unabhängig davon, ob Sie tatsächlich alle Ereignisse verarbeiten, alle Ereignishandler für die Ereignisse **Connection** und **Recordset** implementiert werden. Der Implementierungsaufwand hängt von der Programmiersprache ab. Weitere Informationen finden Sie unter [ADO-Ereignisinstanziierung nach Sprache](https://msdn.microsoft.com/library/jj250244\(v=office.15\)).
+Wenn Sie nicht in Visual Basic programmieren, müssen, unabhängig davon, ob Sie tatsächlich alle Ereignisse verarbeiten, alle Ereignishandler für die Ereignisse **Connection** und **Recordset** implementiert werden. Der Implementierungsaufwand hängt von der Programmiersprache ab. Weitere Informationen finden Sie unter [ADO-Ereignisinstanziierung nach Sprache](https://docs.microsoft.com/office/client-developer/access/desktop-database-reference/ado-event-instantiation-by-language-ado).
 
 ## <a name="paired-event-handlers"></a>Kombinierte Ereignishandler
 

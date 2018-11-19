@@ -6,23 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195178(v=office.15)
 ms:contentKeyID: 48545330
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f47b3ca15e51211a8593c5e177f53507128b2f76
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: ca6acbea99dd2a6dcb434cf4c4d18a0a065af133
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936581"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026015"
 ---
 # <a name="connections-collection-dao"></a>Connections-Auflistung (DAO)
 
-
 **Betrifft**: Access 2013, Office 2013
-
 
 > [!NOTE]
 > [!HINWEIS] ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.
-
-
 
 Eine **Connections**-Auflistung enthält die aktuellen **Connection**-Objekte eines **Workspace**-Objekts. (Gilt nur für ODBCDirect-Arbeitsbereiche.)
 
@@ -34,16 +30,15 @@ Wenn Sie ein **Connection**-Objekt öffnen, wird gleichzeitig ein entsprechendes
 
 Die Einstellung der **Name**-Eigenschaft eines **Connection**-Objekts ist eine Zeichenfolge, die den Pfad zur Datenbankdatei angibt. Der Verweis auf ein **Connection**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:
 
-  - **Connections**(0)
+- **Connections**(0)
 
-  - **Verbindungen** ("*Name*")
+- **Verbindungen** ("*Name*")
 
-  - **Verbindungen**\!\[*Namen*\]
+- **Verbindungen**\!\[*Namen*\]
 
 
 > [!NOTE]
 > [!HINWEIS] Sie können dieselbe Datenquelle mehrmals öffnen, wodurch Duplikatnamen in der **Connections**-Auflistung erstellt werden. Sie sollten Objektvariablen **Connection**-Objekte zuweisen und mit Variablennamen auf sie verweisen.
-
 
 
 ## <a name="example"></a>Beispiel

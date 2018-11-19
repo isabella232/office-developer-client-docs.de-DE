@@ -10,15 +10,14 @@ f1_keywords:
 - vbaac10.chm129285
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: f754cb913918a757c91f8b87e00ef88fb0674684
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 179ee840370cef98c70e947cef555401408bbe12
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936679"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026224"
 ---
 # <a name="gotopage-macro-action"></a>GoToPage-Makroaktion
-
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -56,7 +55,7 @@ Die **GeheZuSeite** -Aktion verwendet die folgenden Argumente.
 </table>
 
 > [!NOTE]
-> >[!HINWEIS] Die Argumente **Rechts** und **Abwärts** werden, abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung, in Zoll oder Zentimetern gemessen.
+> [!HINWEIS] Die Argumente **Rechts** und **Abwärts** werden, abhängig von den regionalen Einstellungen in der Windows-Systemsteuerung, in Zoll oder Zentimetern gemessen.
 
 ## <a name="remarks"></a>Hinweise
 
@@ -66,9 +65,9 @@ Sie können die Argumente **rechts** und **unten** für Formulare mit Seiten gr�
 
 In den folgenden Fällen können Sie die **GeheZuSeite** -Aktion nicht verwenden:
 
-  - Setzen des Fokus auf eine Seite eines ausgeblendeten Formulars.
+- Setzen des Fokus auf eine Seite eines ausgeblendeten Formulars.
 
-  - Verschieben des Fokus von einer Seite zu einer anderen innerhalb des Registersteuerelements.
+- Verschieben des Fokus von einer Seite zu einer anderen innerhalb des Registersteuerelements.
 
 Verwenden Sie die **GoToPage** -Methode des **DoCmd** -Objekts, um die **GeheZuSeite** -Aktion in einem VBA-Modul (Visual Basic für Applikationen) auszuführen.
 

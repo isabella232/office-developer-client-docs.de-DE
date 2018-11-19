@@ -10,18 +10,18 @@ f1_keywords:
 - acmain11.chm1032166
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4248adc507a93284a15725bbda0255a3518e90a9
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
+ms.openlocfilehash: 9b240dbf55d2907b24b47349ee56e492f7d5e08d
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997469"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026463"
 ---
 # <a name="initializing-the-text-data-source-driver"></a>Initialisieren des Text-Datenquellentreibers
 
 **Betrifft**: Access 2013, Office 2013
 
-Für Text- und HTML-Datenquellen wird derselben Datenbanktreiber verwendet.
+Derselben Datenbanktreiber wird für beide Datenquellen Text und HTML-Datenquellen verwendet.
 
 Bei der Installation des Textdatenquellen-Datenbanktreibers schreibt das Setupprogramm Standardwerte der Microsoft Windows-Registrierung im Unterschlüssel Module und -ISAM-Formate. Sie sollten diese Einstellungen nicht direkt geändert. Verwenden Sie das Setupprogramm für Ihre Anwendung hinzufügen, entfernen oder ändern Sie diese Einstellung. In den folgenden Abschnitten werden die Initialisierung und ISAM formateinstellungen für die Textdatenquellen-Datenbanktreibers beschrieben.
 
@@ -44,6 +44,8 @@ Die **Konnektivitätsmodul für Access\\-ISAM-Formate\\Ordner Text** enthält in
     
     ExportCurrencySymbols=Yes
 ```
+
+<br/>
 
 Das Microsoft Access-Datenbankmodul verwendet die Einträge im Ordner Text wie folgt.
 

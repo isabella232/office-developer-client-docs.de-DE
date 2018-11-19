@@ -6,12 +6,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250275(v=office.15)
 ms:contentKeyID: 48548833
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2c45c10ae75688eb1965307ba8b2fb67c752f81f
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
+ms.openlocfilehash: b20a68f1707e496b92ba8acbf8bc7ed8d8a2b058
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949824"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026414"
 ---
 # <a name="open-method-ado-stream"></a>Open-Methode (Stream in ADO)
 
@@ -37,7 +37,7 @@ ms.locfileid: "25949824"
 
 ## <a name="remarks"></a>Hinweise
 
-Wenn ein **Record** -Objekts als der Source-Parameter, die *Benutzer-ID* und *das Kennwort* -Parameter übergeben wird werden nicht verwendet werden, da bereits Zugriff auf das **Record** -Objekt zur Verfügung steht. Entsprechend wird der [Modus](mode-property-ado.md) des **Record** -Objekts an das **Stream** -Objekt weitergeleitet. Wenn *Source* nicht angegeben wird, die geöffneten **Stream-Objekt** enthält keine Daten und weist eine [Größe](https://msdn.microsoft.com/library/jj250128\(v=office.15\)) von null (0). Speichern Sie des **Stream-Objekt** mit der [CopyTo](copyto-method-ado.md) oder [SaveToFile](savetofile-method-ado.md) -Methoden vermeiden Verlust von Daten, die in diesen **Stream** geschrieben werden, wenn der **Stream** geschlossen ist, oder auf einen anderen Speicherort zu speichern.
+Wenn ein **Record** -Objekts als der Source-Parameter, die *Benutzer-ID* und *das Kennwort* -Parameter übergeben wird werden nicht verwendet werden, da bereits Zugriff auf das **Record** -Objekt zur Verfügung steht. Entsprechend wird der [Modus](mode-property-ado.md) des **Record** -Objekts an das **Stream** -Objekt weitergeleitet. Wenn *Source* nicht angegeben wird, die geöffneten **Stream-Objekt** enthält keine Daten und weist eine [Größe](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/size-property-ado-stream) von null (0). Speichern Sie des **Stream-Objekt** mit der [CopyTo](copyto-method-ado.md) oder [SaveToFile](savetofile-method-ado.md) -Methoden vermeiden Verlust von Daten, die in diesen **Stream** geschrieben werden, wenn der **Stream** geschlossen ist, oder auf einen anderen Speicherort zu speichern.
 
 Ein Wert *OpenOptions* **adOpenStreamFromRecord** identifiziert den Inhalt des *Source* -Parameter ein bereits geöffnetes **Record** -Objekt sein. Das Standardverhalten besteht, *Datenquelle* als eine URL zu behandeln, die direkt auf einen Knoten in einer Baumstruktur, wie etwa einer Datei verweist. Der diesem Knoten zugeordnete Standarddatenstrom wird geöffnet.
 

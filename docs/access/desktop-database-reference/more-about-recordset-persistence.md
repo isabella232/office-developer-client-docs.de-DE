@@ -1,23 +1,23 @@
 ---
-title: Weitere Informationen zur Permanenz von Recordsets
+title: Weitere Informationen zur Recordset-Speicherung
 TOCTitle: More about Recordset persistence
 ms:assetid: f3248de7-6eef-1dd0-ff96-557b411789e7
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ250232(v=office.15)
 ms:contentKeyID: 48548666
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ed9d6e264c6bdaedcc0b921b6eed66bf1ff6afa4
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: b0b5888d5a616ad36812af93922cb085a5c8cbb7
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946699"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26026078"
 ---
-# <a name="more-about-recordset-persistence"></a>Weitere Informationen zur Permanenz von Recordsets
+# <a name="more-about-recordset-persistence"></a>Weitere Informationen zur Recordset-Speicherung
 
 **Betrifft**: Access 2013, Office 2013
 
-Das ADO-Recordset-Objekt unterstützt das Speichern von Inhalt für ein **Recordset** -Objekt mithilfe der [Save](save-method-ado.md) -Methode in einer Datei. Die permanent gespeicherte Datei kann auf einem lokalen Laufwerk, Netzwerkserver oder als URL auf einer Website vorhanden. Die Datei kann später mit der [Open](open-method-ado-recordset.md) -Methode entweder des **Recordset** -Objekts oder die [Execute](https://msdn.microsoft.com/library/jj249832\(v=office.15\)) -Methode des [Connection](connection-object-ado.md) -Objekts wiederhergestellt werden.
+Das ADO-Recordset-Objekt unterstützt das Speichern von Inhalt für ein **Recordset** -Objekt mithilfe der [Save](save-method-ado.md) -Methode in einer Datei. Die permanent gespeicherte Datei kann auf einem lokalen Laufwerk, Netzwerkserver oder als URL auf einer Website vorhanden. Die Datei kann später mit der [Open](open-method-ado-recordset.md) -Methode entweder des **Recordset** -Objekts oder die [Execute](https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/execute-method-ado-connection) -Methode des [Connection](connection-object-ado.md) -Objekts wiederhergestellt werden.
 
 Außerdem wird durch die [GetString](getstring-method-ado.md)-Methode ein **Recordset** -Objekt in ein Formular konvertiert, dessen Spalten und Zeilen durch die von Ihnen angegebenen Zeichen getrennt sind.
 

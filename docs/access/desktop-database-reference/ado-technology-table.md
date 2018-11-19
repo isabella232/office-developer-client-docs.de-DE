@@ -1,19 +1,19 @@
 ---
-title: ADO-technologietabelle
+title: ADO-Technologietabelle
 TOCTitle: ADO technology table
 ms:assetid: 3aaf5036-ff18-7e80-c131-9459ce78eec4
 ms:mtpsurl: https://msdn.microsoft.com/library/JJ249146(v=office.15)
 ms:contentKeyID: 48544268
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 944efc31c02f0ecbc15ae0929c1dd592a36e5093
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+ms.openlocfilehash: 6489e221d52e23fa3daa94f0ec3ec200baca3144
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937302"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025917"
 ---
-# <a name="ado-technology-table"></a>ADO-technologietabelle
+# <a name="ado-technology-table"></a>ADO-Technologietabelle
 
 **Betrifft**: Access 2013, Office 2013
 
@@ -57,11 +57,11 @@ Die folgende Tabelle enthält die Microsoft-Produkte, Tools und Technologien, di
 </tr>
 <tr class="odd">
 <td><p>Internetinformationsdienste</p></td>
-<td><p><a href="chapter-10-records-and-streams.md">Kapitel 10: Datensätze und Datenströme</a><br/><br/><a href="streams-and-persistence.md">Streams and Persistence</a><br/><br/><a href="using-ado-for-internet-publishing.md">Verwenden von ADO für Internet Publishing</a><br/><br/><a href="solutions-for-remote-data-access.md">Lösungen für Remotedatenzugriff</a><br/><br/><a href="configuring-virtual-servers-on-iis.md">Konfigurieren virtueller Server in IIS</a><br/><br/><a href="specifying-threads-per-processor-on-iis.md">Angeben der Threads pro Prozessor in IIS</a><br/><br/><a href="securing-rds-applications.md">Sichern von RDS-Anwendungen</a><br/><br/><a href="internet-server-error-access-denied.md">&quot;Internet Server Error: Access Denied&quot;</a><br/><br/><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a><br/><br/><a href="internet-information-services-error-codes.md">IIS-Fehlercodes (Internetinformationsdienste)</a><br/><br/></p></td>
+<td><p><a href="chapter-10-records-and-streams.md">Kapitel 10: Datensätze und Datenströme</a><br/><br/><a href="streams-and-persistence.md">Datenströme und Permanenz</a><br/><br/><a href="using-ado-for-internet-publishing.md">Verwenden von ADO für Internet Publishing</a><br/><br/><a href="solutions-for-remote-data-access.md">Lösungen für Remotedatenzugriff</a><br/><br/><a href="configuring-virtual-servers-on-iis.md">Konfigurieren virtueller Server in IIS</a><br/><br/><a href="specifying-threads-per-processor-on-iis.md">Angeben der Threads pro Prozessor in IIS</a><br/><br/><a href="securing-rds-applications.md">Sichern von RDS-Anwendungen</a><br/><br/><a href="internet-server-error-access-denied.md">&quot;Internetserverfehler: Zugriff verweigert&quot;</a><br/><br/><a href="microsoft-ole-db-provider-for-internet-publishing.md">Microsoft OLE DB Provider for Internet Publishing</a><br/><br/><a href="internet-information-services-error-codes.md">IIS-Fehlercodes (Internetinformationsdienste)</a><br/><br/></p></td>
 </tr>
 <tr class="even">
 <td><p>JScript</p></td>
-<td><p><a href="handling-errors-in-other-languages.md">Behandeln von Fehlern in anderen Sprachen</a><br/><br/><a href="jscript-ado-programming.md">JScript ADO Programming</a><br/><br/><a href="ado-code-examples-in-microsoft-jscript.md">ADO-Codebeispiele in Microsoft JScript</a><br/><br/></p></td>
+<td><p><a href="handling-errors-in-other-languages.md">Behandeln von Fehlern in anderen Sprachen</a><br/><br/><a href="jscript-ado-programming.md">JScript-ADO-Programmierung</a><br/><br/><a href="ado-code-examples-in-microsoft-jscript.md">ADO-Codebeispiele in Microsoft JScript</a><br/><br/></p></td>
 </tr>
 <tr class="odd">
 <td><p>ODBC</p></td>
@@ -77,7 +77,7 @@ Die folgende Tabelle enthält die Microsoft-Produkte, Tools und Technologien, di
 </tr>
 <tr class="even">
 <td><p>SQL Server 2000</p></td>
-<td><p><a href="controlling-transactions.md">Kontrollieren von Transaktionen</a><br/><br/><a href="calling-a-stored-procedure-with-a-command.md">Aufrufen einer gespeicherten Prozedur mit einem Befehl</a><br/><br/><a href="counting-rows.md">Zählen von Zeilen</a><br/><br/><a href="forward-only-cursors.md">Forward-Only Cursors</a><br/><br/><a href="ensuring-sufficient-tempdb-space.md">Sicherstellen von ausreichend Speicherplatz für TempDB</a><br/><br/><a href="minimizing-log-file-space-usage.md">Minimieren der Speicherplatznutzung von Protokolldateien</a><br/><br/><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a><br/><br/></p></td>
+<td><p><a href="controlling-transactions.md">Steuern von Transaktionen</a><br/><br/><a href="calling-a-stored-procedure-with-a-command.md">Aufrufen einer gespeicherten Prozedur mit einem Befehl</a><br/><br/><a href="counting-rows.md">Zählen von Zeilen</a><br/><br/><a href="forward-only-cursors.md">Vorwärtscursor</a><br/><br/><a href="ensuring-sufficient-tempdb-space.md">Sicherstellen von ausreichend Speicherplatz für TempDB</a><br/><br/><a href="minimizing-log-file-space-usage.md">Minimieren der Speicherplatznutzung von Protokolldateien</a><br/><br/><a href="microsoft-ole-db-provider-for-sql-server.md">Microsoft OLE DB Provider for SQL Server</a><br/><br/></p></td>
 </tr>
 <tr class="odd">
 <td><p>Transaction Server</p></td>
@@ -89,15 +89,15 @@ Die folgende Tabelle enthält die Microsoft-Produkte, Tools und Technologien, di
 </tr>
 <tr class="odd">
 <td><p>Visual Basic</p></td>
-<td><p><a href="errors.md">Fehler</a><br/><br/><a href="ado-errors.md">ADO-Fehler</a><br/><br/><a href="https://msdn.microsoft.com/library/jj250244(v=office.15)">ADO-Ereignisinstanziierung nach Sprache</a><br/><br/><a href="visual-basic-for-applications-functions.md">Visual Basic für Applikationen (Funktionen)</a><br/><br/><a href="chapter-12-rds-tutorial.md">Kapitel 12: RDS-Lernprogramm</a><br/><br/><a href="using-ado-with-microsoft-visual-basic.md">Verwenden von ADO mit Microsoft Visual Basic</a><br/><br/><a href="ado-code-examples-in-microsoft-visual-basic.md">ADO-Codebeispiele in Microsoft Visual Basic</a><br/><br/></p></td>
+<td><p><a href="errors.md">Fehler</a><br/><br/><a href="ado-errors.md">ADO-Fehler</a><br/><br/><a href="ado-event-instantiation-by-language-ado.md">ADO-Ereignisinstanziierung nach Sprache</a><br/><br/><a href="visual-basic-for-applications-functions.md">Visual Basic für Applikationen (Funktionen)</a><br/><br/><a href="chapter-12-rds-tutorial.md">Kapitel 12: RDS-Lernprogramm</a><br/><br/><a href="using-ado-with-microsoft-visual-basic.md">Verwenden von ADO mit Microsoft Visual Basic</a><br/><br/><a href="ado-code-examples-in-microsoft-visual-basic.md">ADO-Codebeispiele in Microsoft Visual Basic</a><br/><br/></p></td>
 </tr>
 <tr class="even">
 <td><p>Visual C++</p></td>
-<td><p><a href="handling-errors-in-other-languages.md">Behandeln von Fehlern in anderen Sprachen</a><br/><br/><a href="https://msdn.microsoft.com/library/jj250244(v=office.15)">ADO-Ereignisinstanziierung nach Sprache</a><br/><br/><a href="using-ado-with-microsoft-visual-c.md">Verwenden von ADO mit Microsoft Visual C++</a><br/><br/><a href="ado-code-examples-in-microsoft-visual-c.md">ADO-Codebeispiele in Microsoft Visual C++</a><br/><br/></p></td>
+<td><p><a href="handling-errors-in-other-languages.md">Behandeln von Fehlern in anderen Sprachen</a><br/><br/><a href="ado-event-instantiation-by-language-ado.md">ADO-Ereignisinstanziierung nach Sprache</a><br/><br/><a href="using-ado-with-microsoft-visual-c.md">Verwenden von ADO mit Microsoft Visual C++</a><br/><br/><a href="ado-code-examples-in-microsoft-visual-c.md">ADO-Codebeispiele in Microsoft Visual C++</a><br/><br/></p></td>
 </tr>
 <tr class="odd">
 <td><p>Visual J++</p></td>
-<td><p><a href="handling-errors-in-other-languages.md">Behandeln von Fehlern in anderen Sprachen</a><br/><br/><a href="https://msdn.microsoft.com/library/jj250244(v=office.15)">ADO-Ereignisinstanziierung nach Sprache</a><br/><br/><a href="rds-tutorial-visual-j.md">RDS-Lernprogramm (Visual J +)</a><br/><br/><a href="using-ado-with-microsoft-visual-j.md">Verwenden von ADO mit Microsoft Visual Basic J++</a><br/><br/><a href="ado-code-examples-in-microsoft-visual-j.md">ADO-Codebeispiele in Microsoft Visual J++</a><br/><br/></p></td>
+<td><p><a href="handling-errors-in-other-languages.md">Behandeln von Fehlern in anderen Sprachen</a><br/><br/><a href="ado-event-instantiation-by-language-ado.md">ADO-Ereignisinstanziierung nach Sprache</a><br/><br/><a href="rds-tutorial-visual-j.md">RDS-Lernprogramm (Visual J +)</a><br/><br/><a href="using-ado-with-microsoft-visual-j.md">Verwenden von ADO mit Microsoft Visual Basic J++</a><br/><br/><a href="ado-code-examples-in-microsoft-visual-j.md">ADO-Codebeispiele in Microsoft Visual J++</a><br/><br/></p></td>
 </tr>
 <tr class="even">
 <td><p>Visual Studio</p></td>
@@ -105,7 +105,7 @@ Die folgende Tabelle enthält die Microsoft-Produkte, Tools und Technologien, di
 </tr>
 <tr class="odd">
 <td><p>Windows 2000</p></td>
-<td><p><a href="system-requirements-for-the-address-book-application.md">Systemanforderungen für die Adressbuchanwendung</a><br/><br/><a href="granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md">Gewähren von Gastberechtigungen für einen Webservercomputer</a><br/><br/><a href="https://msdn.microsoft.com/library/ff836389(v=office.15)">Registrieren eines benutzerdefinierten Geschäftsobjekts</a><br/><br/><a href="securing-rds-applications.md">Sichern von RDS-Anwendungen</a><br/><br/><a href="configuring-rds-on-windows-2000.md">Konfigurieren von RDS unter Windows 2000</a><br/><br/></p></td>
+<td><p><a href="system-requirements-for-the-address-book-application.md">Systemanforderungen für die Adressbuchanwendung</a><br/><br/><a href="granting-guest-privileges-to-a-web-server-computer;-rds-guest-privileges.md">Gewähren von Gastberechtigungen für einen Webservercomputer</a><br/><br/><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/registering-a-custom-business-object">Registrieren eines benutzerdefinierten Geschäftsobjekts</a><br/><br/><a href="securing-rds-applications.md">Sichern von RDS-Anwendungen</a><br/><br/><a href="configuring-rds-on-windows-2000.md">Konfigurieren von RDS unter Windows 2000</a><br/><br/></p></td>
 </tr>
 <tr class="even">
 <td><p>XML</p></td>
