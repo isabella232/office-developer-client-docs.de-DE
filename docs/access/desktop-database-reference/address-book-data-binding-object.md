@@ -6,25 +6,25 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250030(v=office.15)
 ms:contentKeyID: 48547807
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f90a0e4ff4accfd4496df46fb48faaf6f589f37c
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
+ms.openlocfilehash: bc8fe1fa2addab5338d7c330d90e8616f0af9b5c
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945181"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "26025714"
 ---
-# <a name="address-book-data-binding-object"></a><span data-ttu-id="1059d-102">Datenbindungsobjekt des Adressbuchs</span><span class="sxs-lookup"><span data-stu-id="1059d-102">Address Book Data-Binding object</span></span>
+# <a name="address-book-data-binding-object"></a><span data-ttu-id="282a5-102">Datenbindungsobjekt des Adressbuchs</span><span class="sxs-lookup"><span data-stu-id="282a5-102">Address Book Data-Binding object</span></span>
 
 
-<span data-ttu-id="1059d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="1059d-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="282a5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="282a5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="1059d-p101">In der Adressbuchanwendung wird das [RDS.DataControl](datacontrol-object-rds.md)-Objekt zum Binden von Daten von der SQL Server-Datenbank an visuelle Objekte (in diesem Fall eine DHTML-Tabelle) in der Client-HTML-Seite der Anwendung verwendet. Die ereignisgesteuerte VBScript-Programmlogik verwendet [RDS.DataControl](datacontrol-object-rds.md) für Folgendes:</span><span class="sxs-lookup"><span data-stu-id="1059d-p101">The Address Book application uses the [RDS.DataControl](datacontrol-object-rds.md) object to bind data from the SQL Server database to a visual object (in this case, a DHTML table) in the application's client HTML page. The event-driven VBScript program logic uses the [RDS.DataControl](datacontrol-object-rds.md) to:</span></span>
+<span data-ttu-id="282a5-p101">In der Adressbuchanwendung wird das [RDS.DataControl](datacontrol-object-rds.md)-Objekt zum Binden von Daten von der SQL Server-Datenbank an visuelle Objekte (in diesem Fall eine DHTML-Tabelle) in der Client-HTML-Seite der Anwendung verwendet. Die ereignisgesteuerte VBScript-Programmlogik verwendet [RDS.DataControl](datacontrol-object-rds.md) für Folgendes:</span><span class="sxs-lookup"><span data-stu-id="282a5-p101">The Address Book application uses the [RDS.DataControl](datacontrol-object-rds.md) object to bind data from the SQL Server database to a visual object (in this case, a DHTML table) in the application's client HTML page. The event-driven VBScript program logic uses the [RDS.DataControl](datacontrol-object-rds.md) to:</span></span>
 
-  - <span data-ttu-id="1059d-106">Die Datenbank abfragen, Aktualisierungen an die Datenbank senden, und das Datenraster aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="1059d-106">Query the database, send updates to the database, and refresh the data grid.</span></span>
+  - <span data-ttu-id="282a5-106">Die Datenbank abfragen, Aktualisierungen an die Datenbank senden, und das Datenraster aktualisieren.</span><span class="sxs-lookup"><span data-stu-id="282a5-106">Query the database, send updates to the database, and refresh the data grid.</span></span>
 
-  - <span data-ttu-id="1059d-107">Es Benutzern ermöglichen, zum ersten, zum nächsten, zum vorherigen oder zum letzten Datensatz im Datenraster zu springen.</span><span class="sxs-lookup"><span data-stu-id="1059d-107">Allow users to move to the first, next, previous, or last record in the data grid.</span></span>
+  - <span data-ttu-id="282a5-107">Es Benutzern ermöglichen, zum ersten, zum nächsten, zum vorherigen oder zum letzten Datensatz im Datenraster zu springen.</span><span class="sxs-lookup"><span data-stu-id="282a5-107">Allow users to move to the first, next, previous, or last record in the data grid.</span></span>
 
-<span data-ttu-id="1059d-108">Mit dem folgenden Code wird die Komponente **RDS.DataControl** definiert:</span><span class="sxs-lookup"><span data-stu-id="1059d-108">The following code defines the **RDS.DataControl** component:</span></span>
+<span data-ttu-id="282a5-108">Mit dem folgenden Code wird die Komponente **RDS.DataControl** definiert:</span><span class="sxs-lookup"><span data-stu-id="282a5-108">The following code defines the **RDS.DataControl** component:</span></span>
 
 ```vb 
  
@@ -36,15 +36,15 @@ Initial Catalog=AddrBookDb;Integrated Security=SSPI;">
 </OBJECT> 
 ```
 
-<span data-ttu-id="1059d-p102">Mit dem OBJECT-Tag wird die Komponente **RDS.DataControl** im Programm definiert. Das Tag umfasst zwei Arten von Parametern:</span><span class="sxs-lookup"><span data-stu-id="1059d-p102">The OBJECT tag defines the **RDS.DataControl** component in the program. The tag includes two types of parameters:</span></span>
+<span data-ttu-id="282a5-p102">Mit dem OBJECT-Tag wird die Komponente **RDS.DataControl** im Programm definiert. Das Tag umfasst zwei Arten von Parametern:</span><span class="sxs-lookup"><span data-stu-id="282a5-p102">The OBJECT tag defines the **RDS.DataControl** component in the program. The tag includes two types of parameters:</span></span>
 
-  - <span data-ttu-id="1059d-111">Parameter, die dem generischen OBJECT-Tag zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="1059d-111">Those associated with the generic OBJECT tag.</span></span>
+  - <span data-ttu-id="282a5-111">Parameter, die dem generischen OBJECT-Tag zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="282a5-111">Those associated with the generic OBJECT tag.</span></span>
 
-  - <span data-ttu-id="1059d-112">Parameter, die nur für das **RDS.DataControl** -Objekt gelten.</span><span class="sxs-lookup"><span data-stu-id="1059d-112">Those specific to the **RDS.DataControl** object.</span></span>
+  - <span data-ttu-id="282a5-112">Parameter, die nur für das **RDS.DataControl** -Objekt gelten.</span><span class="sxs-lookup"><span data-stu-id="282a5-112">Those specific to the **RDS.DataControl** object.</span></span>
 
-## <a name="generic-object-tag-parameters"></a><span data-ttu-id="1059d-113">Generische Parameter des OBJECT-Tags</span><span class="sxs-lookup"><span data-stu-id="1059d-113">Generic OBJECT Tag Parameters</span></span>
+## <a name="generic-object-tag-parameters"></a><span data-ttu-id="282a5-113">Generische Parameter des OBJECT-Tags</span><span class="sxs-lookup"><span data-stu-id="282a5-113">Generic OBJECT Tag Parameters</span></span>
 
-<span data-ttu-id="1059d-114">In der folgenden Tabellen werden die Parameter beschrieben, die dem OBJECT-Tag zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="1059d-114">The following table describes the parameters associated with the OBJECT tag.</span></span>
+<span data-ttu-id="282a5-114">In der folgenden Tabellen werden die Parameter beschrieben, die dem OBJECT-Tag zugeordnet sind.</span><span class="sxs-lookup"><span data-stu-id="282a5-114">The following table describes the parameters associated with the OBJECT tag.</span></span>
 
 <table>
 <colgroup>
@@ -53,26 +53,26 @@ Initial Catalog=AddrBookDb;Integrated Security=SSPI;">
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="1059d-115">Parameter</span><span class="sxs-lookup"><span data-stu-id="1059d-115">Parameter</span></span></p></th>
-<th><p><span data-ttu-id="1059d-116">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1059d-116">Description</span></span></p></th>
+<th><p><span data-ttu-id="282a5-115">Parameter</span><span class="sxs-lookup"><span data-stu-id="282a5-115">Parameter</span></span></p></th>
+<th><p><span data-ttu-id="282a5-116">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="282a5-116">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="1059d-117"><strong><em>CLASSID</em></strong></span><span class="sxs-lookup"><span data-stu-id="1059d-117"><strong><em>CLASSID</em></strong></span></span></p></td>
-<td><p><span data-ttu-id="1059d-p103">Eine eindeutige 128-Bit-Nummer, mit der der Typ des eingebetteten Objekts für das System definiert wird. Dieser Bezeichner wird in der Systemregistrierung des lokalen Computers verwaltet. (Informationen zu den Klassen-IDs des <strong>RDS.DataControl</strong>-Objekts finden Sie unter <a href="datacontrol-object-rds.md">RDS.DataControl-Objekt</a>.)</span><span class="sxs-lookup"><span data-stu-id="1059d-p103">A unique, 128-bit number that identifies the type of embedded object to the system. This identifier is maintained in the local computer's system registry. (For the class IDs of the <strong>RDS.DataControl</strong> object, see <a href="datacontrol-object-rds.md">RDS.DataControl Object</a>.)</span></span></p></td>
+<td><p><span data-ttu-id="282a5-117"><strong><em>CLASSID</em></strong></span><span class="sxs-lookup"><span data-stu-id="282a5-117"><strong><em>CLASSID</em></strong></span></span></p></td>
+<td><p><span data-ttu-id="282a5-p103">Eine eindeutige 128-Bit-Nummer, mit der der Typ des eingebetteten Objekts für das System definiert wird. Dieser Bezeichner wird in der Systemregistrierung des lokalen Computers verwaltet. (Informationen zu den Klassen-IDs des <strong>RDS.DataControl</strong>-Objekts finden Sie unter <a href="datacontrol-object-rds.md">RDS.DataControl-Objekt</a>.)</span><span class="sxs-lookup"><span data-stu-id="282a5-p103">A unique, 128-bit number that identifies the type of embedded object to the system. This identifier is maintained in the local computer's system registry. (For the class IDs of the <strong>RDS.DataControl</strong> object, see <a href="datacontrol-object-rds.md">RDS.DataControl Object</a>.)</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1059d-121"><strong><em>ID</em></strong></span><span class="sxs-lookup"><span data-stu-id="1059d-121"><strong><em>ID</em></strong></span></span></p></td>
-<td><p><span data-ttu-id="1059d-122">Definiert einen dokumentweiten Bezeichner für das eingebettete Objekt, der verwendet wird, um das Objekt im Code zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="1059d-122">Defines a document-wide identifier for the embedded object that is used to identify it in code.</span></span></p></td>
+<td><p><span data-ttu-id="282a5-121"><strong><em>ID</em></strong></span><span class="sxs-lookup"><span data-stu-id="282a5-121"><strong><em>ID</em></strong></span></span></p></td>
+<td><p><span data-ttu-id="282a5-122">Definiert einen dokumentweiten Bezeichner für das eingebettete Objekt, der verwendet wird, um das Objekt im Code zu identifizieren.</span><span class="sxs-lookup"><span data-stu-id="282a5-122">Defines a document-wide identifier for the embedded object that is used to identify it in code.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="rdsdatacontrol-tag-parameters"></a><span data-ttu-id="1059d-123">RDS.DataControl-Tagparameter</span><span class="sxs-lookup"><span data-stu-id="1059d-123">RDS.DataControl Tag Parameters</span></span>
+## <a name="rdsdatacontrol-tag-parameters"></a><span data-ttu-id="282a5-123">RDS.DataControl-Tagparameter</span><span class="sxs-lookup"><span data-stu-id="282a5-123">RDS.DataControl Tag Parameters</span></span>
 
-<span data-ttu-id="1059d-p104">In der folgenden Tabelle werden die Parameter beschrieben, die für das **RDS.DataControl** -Objekt gelten. (Eine vollständige Liste der **RDS.DataControl** -Objektparameter und Informationen zu deren Implementierung finden Sie unter [RDS.DataControl-Objekt](datacontrol-object-rds.md).)</span><span class="sxs-lookup"><span data-stu-id="1059d-p104">The following table describes the parameters specific to the **RDS.DataControl** object. (For a complete list of the **RDS.DataControl** object parameters, and when to implement them, see [RDS.DataControl object](datacontrol-object-rds.md).)</span></span>
+<span data-ttu-id="282a5-p104">In der folgenden Tabelle werden die Parameter beschrieben, die für das **RDS.DataControl** -Objekt gelten. (Eine vollständige Liste der **RDS.DataControl** -Objektparameter und Informationen zu deren Implementierung finden Sie unter [RDS.DataControl-Objekt](datacontrol-object-rds.md).)</span><span class="sxs-lookup"><span data-stu-id="282a5-p104">The following table describes the parameters specific to the **RDS.DataControl** object. (For a complete list of the **RDS.DataControl** object parameters, and when to implement them, see [RDS.DataControl object](datacontrol-object-rds.md).)</span></span>
 
 <table>
 <colgroup>
@@ -81,22 +81,22 @@ Initial Catalog=AddrBookDb;Integrated Security=SSPI;">
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="1059d-126">Parameter</span><span class="sxs-lookup"><span data-stu-id="1059d-126">Parameter</span></span></p></th>
-<th><p><span data-ttu-id="1059d-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="1059d-127">Description</span></span></p></th>
+<th><p><span data-ttu-id="282a5-126">Parameter</span><span class="sxs-lookup"><span data-stu-id="282a5-126">Parameter</span></span></p></th>
+<th><p><span data-ttu-id="282a5-127">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="282a5-127">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="1059d-128"><a href="server-property-rds.md">SERVER</a></span><span class="sxs-lookup"><span data-stu-id="1059d-128"><a href="server-property-rds.md">SERVER</a></span></span></p></td>
-<td><p><span data-ttu-id="1059d-129">Wenn Sie HTTP verwenden, ist der Wert der Name des Servercomputers mit https://.</span><span class="sxs-lookup"><span data-stu-id="1059d-129">If you are using HTTP, the value is the name of the server computer preceded by https:// .</span></span></p></td>
+<td><p><span data-ttu-id="282a5-128"><a href="server-property-rds.md">SERVER</a></span><span class="sxs-lookup"><span data-stu-id="282a5-128"><a href="server-property-rds.md">SERVER</a></span></span></p></td>
+<td><p><span data-ttu-id="282a5-129">Wenn Sie HTTP verwenden, ist der Wert der Name des Servercomputers mit https://.</span><span class="sxs-lookup"><span data-stu-id="282a5-129">If you are using HTTP, the value is the name of the server computer preceded by https:// .</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="1059d-130"><a href="connect-property-rds.md">EINE VERBINDUNG HERSTELLEN</a></span><span class="sxs-lookup"><span data-stu-id="1059d-130"><a href="connect-property-rds.md">CONNECT</a></span></span></p></td>
-<td><p><span data-ttu-id="1059d-131">Bietet die erforderlichen Verbindungsinformationen für <strong>RDS.DataControl</strong>, um eine Verbindung mit SQL Server herzustellen.</span><span class="sxs-lookup"><span data-stu-id="1059d-131">Provides the necessary connection information for the <strong>RDS.DataControl</strong> to connect to SQL Server.</span></span></p></td>
+<td><p><span data-ttu-id="282a5-130"><a href="connect-property-rds.md">EINE VERBINDUNG HERSTELLEN</a></span><span class="sxs-lookup"><span data-stu-id="282a5-130"><a href="connect-property-rds.md">CONNECT</a></span></span></p></td>
+<td><p><span data-ttu-id="282a5-131">Bietet die erforderlichen Verbindungsinformationen für <strong>RDS.DataControl</strong>, um eine Verbindung mit SQL Server herzustellen.</span><span class="sxs-lookup"><span data-stu-id="282a5-131">Provides the necessary connection information for the <strong>RDS.DataControl</strong> to connect to SQL Server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="1059d-132"><a href="https://msdn.microsoft.com/library/jj248989(v=office.15)">SQL</a></span><span class="sxs-lookup"><span data-stu-id="1059d-132"><a href="https://msdn.microsoft.com/library/jj248989(v=office.15)">SQL</a></span></span></p></td>
-<td><p><span data-ttu-id="1059d-133">Legt die Abfragezeichenfolge fest oder gibt sie zurück, mit der das <a href="recordset-object-ado.md">Recordset</a>-Objekt abgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="1059d-133">Sets or returns the query string used to retrieve the <a href="recordset-object-ado.md">Recordset</a>.</span></span></p></td>
+<td><p><span data-ttu-id="282a5-132"><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado">SQL</a></span><span class="sxs-lookup"><span data-stu-id="282a5-132"><a href="https://docs.microsoft.com/office/vba/access/concepts/miscellaneous/sql-property-ado">SQL</a></span></span></p></td>
+<td><p><span data-ttu-id="282a5-133">Legt die Abfragezeichenfolge fest oder gibt sie zurück, mit der das <a href="recordset-object-ado.md">Recordset</a>-Objekt abgerufen wird.</span><span class="sxs-lookup"><span data-stu-id="282a5-133">Sets or returns the query string used to retrieve the <a href="recordset-object-ado.md">Recordset</a>.</span></span></p></td>
 </tr>
 </tbody>
 </table>
