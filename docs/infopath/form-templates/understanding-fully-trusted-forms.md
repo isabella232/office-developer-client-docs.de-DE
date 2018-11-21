@@ -6,11 +6,11 @@ ms.audience: Developer
 localization_priority: Normal
 ms.assetid: 64d62990-6275-edef-c639-b6ba8d10c38c
 description: InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare erstellen Formulare, die größere Sicherheitsberechtigungen und Systemressourcen und anderen Komponenten auf dem Computer eines Benutzers zugreifen können. In diesem Artikel wird beschrieben, was ein voll vertrauenswürdiges Formular ist, und warum wird verwendet, und erstellen Sie ein voll vertrauenswürdiges Formular manuell konvertieren und Registrieren eines Standardformulars oder beim digitalen Signieren eines Standardformulars.
-ms.openlocfilehash: b410d5bee0080aae5e0af9687999595655b42edf
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: 04560e0c844d6a6ff681fd366ca7da2e4db36ba1
+ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
+ms.lasthandoff: 11/20/2018
 ms.locfileid: "19790841"
 ---
 # <a name="understanding-fully-trusted-forms"></a>Grundlegendes zu voll vertrauenswürdigen Formularen
@@ -19,9 +19,9 @@ InfoPath bietet die Möglichkeit, voll vertrauenswürdige Formulare erstellen Fo
 
 InfoPath-Formularvorlagen können mit unterschiedlichen Sicherheitsstufen bereitgestellt werden. Die Ebene, die Sie verwenden, wird durch die Zugriffsebene zu externen Ressourcen vorgegeben, die ein Formular werden soll. In der Standardeinstellung InfoPath-Formularvorlagen aus den Zugriff auf Systemressourcen eingeschränkt werden und dürfen keine Softwarekomponenten, die nicht gekennzeichnet sind als sicher für Skripting verwenden. Dieses Verhalten kann jedoch überschrieben werden, damit ein Formular zugreifen kann, Systemressourcen und andere externen Ressourcen, einschließlich Softwarekomponenten, die nicht als sicher für Skripting gekennzeichnet sind.
   
-Für ein Formular kann verwendet werden muss InfoPath auf die Formularvorlage zugreifen, der das Formular basiert. Wenn Sie eine Formularvorlage erstellen, erstellt InfoPath einen Eintrag in der Formulardefinitionsdatei (XSF) an, die die URL des Speicherorts der Formularvorlage enthält. Ein URL-basiertes Formular wird als bezeichnet, *sandboxed*. Wenn ein Benutzer ausgefüllt wird, wird das Formular in einen lokalen Cache hinzugefügt und der Zugriff auf Systemressourcen verweigert. Diese Art von Formular erbt die Berechtigungen von der Domäne, in der es geöffnet ist. 
+Für die Verwendung eines Formulars benötigt InfoPath Zugriff auf die Formularvorlage, auf der das Formular basiert. Wenn Sie eine Formularvorlage erstellen, wird von InfoPath ein Eintrag in der Formulardefinitionsdatei (XSF-Datei) erstellt, der die URL des Speicherorts der Formularvorlage enthält. Ein URL-basiertes Formular wird als Formular *mit eingeschränkter Sicherheitsstufe* bezeichnet. Wenn ein Benutzer das Formular ausfüllt, wird es einem lokalen Cache hinzugefügt, und der Zugriff auf Systemressourcen wird ihm verweigert. Diese Art von Formularen erbt die Berechtigungen von der Domäne, in der die Formulare geöffnet werden. 
   
-Jedoch können Sie ein Formular ändern, damit sie auf einen Uniform Resource Name (URN) stattdessen basiert auf Systemressourcen zugreifen können. Formulare dieser Art werden als *voll*vertrauenswürdig bezeichnet. 
+Sie können ein Formular jedoch so ändern, dass es stattdessen auf einem URN (Uniform Resource Name) basiert. Dadurch erhält es Zugriff auf Systemressourcen. Diese Art von Formularen wird als *voll vertrauenswürdig * bezeichnet. 
   
 ## <a name="why-use-a-fully-trusted-form"></a>Gründe für die Verwendung von voll vertrauenswürdigen Formularen
 
@@ -36,9 +36,9 @@ Darüber hinaus werden einige Member des InfoPath-Objektmodells auf Sicherheitss
 
 Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die folgenden Aktionen bezüglich der Benutzeroberfläche von InfoPath und der Formulardateien erforderlich:
   
-- Aktivieren von InfoPath für die Verwendung von voll vertrauenswürdigen Formularen auf der Kategorie **Vertrauenswürdige Herausgeber** im Dialogfeld **Sicherheitscenter** zulassen. Diese Option muss für Benutzer voll vertrauenswürdige Formulare öffnen aktiviert sein. 
+- Aktivieren der Verwendung von voll vertrauenswürdigen Formularen in InfoPath in der Kategorie **Vertrauenswürdige Herausgeber** des Dialogfelds **Sicherheitscenter**. Diese Option muss aktiviert sein, damit Benutzer voll vertrauenswürdige Formulare öffnen können. 
     
-- Registrieren des voll vertrauenswürdigen Formulars auf dem Zielcomputer mithilfe der **RegisterSolution** -Methode des InfoPath- **Application** -Objekts. 
+- Registrieren des voll vertrauenswürdigen Formulars auf dem Zielcomputer mithilfe der **RegisterSolution**-Methode des InfoPath-Objekts **Application**. 
     
 ## <a name="creating-a-fully-trusted-form"></a>Erstellen eines voll vertrauenswürdigen Formulars
 
@@ -54,13 +54,13 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
     
 2. Öffnen Sie die Formularvorlage in InfoPath.
     
-3. Speichern Sie das Formular Quelldateien in einen Ordner auf der Festplatte, indem Sie auf der Registerkarte **Datei** auf **Veröffentlichen**, und dann auf **Quelldateien exportieren**.
+3. Speichern Sie die Quelldateien des Formulars in einem Ordner auf der Festplatte. Klicken Sie dazu auf die Registerkarte **Datei**, dann auf **Veröffentlichen** und anschließend auf **Quelldateien exportieren**.
     
-4. Geben Sie den Ordner, in dem die Quelldateien des Formulars zu speichern, klicken Sie auf **OK**, und beenden Sie den InfoPath-Designer.
+4. Geben Sie den Ordner an, in dem die Quelldateien des Formulars gespeichert werden sollen, klicken Sie auf **OK**, und beenden Sie dann den InfoPath-Designer.
     
 5. Öffnen Sie in den Ordner, in dem Sie die Dateien extrahiert haben, die Formulardefinitionsdatei (XSF)-Datei mit dem Namen `manifest.xsf` standardmäßig in einem Texteditor wie beispielsweise Microsoft Notepad. 
     
-6. Fügen Sie dem **xDocumentClass** -Element in der XSF-Datei die folgenden Attribute: 
+6. Fügen Sie dem **xDocumentClass**-Element in der XSF-Datei die folgenden Attribute hinzu: 
    
    `requireFullTrust="yes"`<br/>
    `name="urn:MyForm:MyCompany`
@@ -73,7 +73,7 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
 8. Entfernen Sie das **Href** -Attribut aus der `mso-infoPathSolution` verarbeitungsanweisung, und Ersetzen Sie es durch dasselbe **Name** -Attribut, das Sie in Schritt 6 für die XSF-Datei verwendet. 
     
    > [!NOTE]
-   > Die URN-Werte, die für das **Name** -Attribut verwendet werden müssen in der XSF-Datei und die XML-Vorlagendatei übereinstimmen. 
+   > Die URN-Werte, die für das **name**-Attribut verwendet werden, müssen in der XSF-Datei und in der XML-Vorlagendatei übereinstimmen. 
   
 9. Speichern und schließen Sie die XML-Vorlagendatei.
     
@@ -82,7 +82,7 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
     > [!NOTE]
     > Der InfoPath-Formulardesigner unterstützt zwar das Neuverpacken der Formulardateien in einer XSN-Datei, das Formular wird jedoch dabei wieder zu einem URL-basierten Formular. Daher müssen Sie die Dateien manuell verpacken, um zu verhindern, dass Ihre Änderungen in den Formulardateien überschrieben werden. 
   
-11. Erstellen eines benutzerdefinierten Installationsprogramms mithilfe der **RegisterSolution** -Methode des InfoPath- **Application** -Objekts zum Installieren des voll vertrauenswürdigen Formulars. Eine einfache Möglichkeit hierzu ist eine Skriptdatei erstellen, die folgenden Codezeilen (in Microsoft JScript oder VBScript-Syntax) verwendet wird: 
+11. Erstellen Sie ein benutzerdefiniertes Installationsprogramm mithilfe der **RegisterSolution**-Methode des InfoPath-Objekts **Application**, um das voll vertrauenswürdige Formular zu installieren. Eine einfache Möglichkeit besteht darin, eine Skriptdatei mit den folgenden Codezeilen zu erstellen (in Microsoft JScript- oder VBScript-Syntax): 
     
     ```js
         objIPApp = new ActiveXObject("InfoPath.Application"); 
@@ -105,9 +105,9 @@ Zum Erstellen und Verwenden eines voll vertrauenswürdigen Formulars sind die fo
     ```
 
 > [!NOTE] 
-> Obwohl in diesem Beispiel wird eine einfache Skriptdatei verwendet wird, können Sie auch einen robusteren Installationsmechanismus wie Microsoft Windows Installer (MSI)-Dateien. Unbedingt, allerdings mit der **RegisterSolution** -Methode des voll vertrauenswürdigen Formulars auf dem Zielcomputer korrekt installiert. Legen Sie einen Verweis auf die Microsoft InfoPath 3.0-Typbibliothek, die vom IPEDITOR.dll bereitgestellt wird, die in der C:\Program installiert ist, um die **RegisterSolution** -Methode des **Application** -Objekts InfoPath in Visual Basic oder Visual Studio zugreifen Ordner c:\Programme\Microsoft Office\Office14. 
+> Obwohl in diesem Beispiel eine einfache Skriptdatei verwendet wird, können Sie auch robustere Installationsverfahren, wie Microsoft Windows Installer-Dateien (MSI-Dateien), verwenden. Sie müssen dabei in jedem Fall die RegisterSolution-Methode verwenden, um das voll vertrauenswürdige Formular ordnungsgemäß auf dem Zielcomputer zu installieren. Zum Zugriff auf die RegisterSolution-Methode des InfoPath-Objekts Application von Visual Basic oder Visual Studio aus legen Sie einen Verweis auf die Microsoft InfoPath 3.0-Typbibliothek fest. Diese wird in der Datei IPEDITOR.dll im Ordner C:\Programme\Microsoft Office\Office14 bereitgestellt. 
   
-Wenn Sie ein voll vertrauenswürdiges Formular entfernt haben, können Sie die **UnregisterSolution** -Methode des **Application** -Objekts verwenden, wie in den folgenden JScript- und VBScript-Beispielen gezeigt. 
+Wenn ein voll vertrauenswürdiges Formular entfernt werden muss, können Sie die **UnregisterSolution**-Methode des **Application**-Objekts verwenden, wie in den folgenden JScript- und VBScript-Beispielen gezeigt wird. 
     
 ```js
     objIPApp = new ActiveXObject("InfoPath.Application"); 
@@ -135,34 +135,34 @@ Digitales Signieren einer Formularvorlage ermöglicht Ihnen die Bereitstellung e
   
 #### <a name="to-digitally-sign-a-form-template"></a>So können Sie eine Formularvorlage digital signieren
 
-1. Öffnen Sie das Formular im InfoPath-Designer, klicken Sie auf der Registerkarte **Datei** , und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen** . 
+1. Öffnen Sie das Formular im InfoPath-Designer, klicken Sie auf die Registerkarte **Datei**, und klicken Sie dann auf der Registerkarte **Info** auf **Formularoptionen**. 
     
-2. Klicken Sie im Dialogfeld **Formularoptionen** auf die Kategorie **Sicherheit und Vertrauensstellung** . 
+2. Klicken Sie im Dialogfeld **Formularoptionen** auf die Kategorie **Sicherheit und Vertrauensstellung**. 
     
-3. Deaktivieren Sie die Auswahl für **Sicherheitsstufe automatisch ermitteln (empfohlen)**.
+3. Deaktivieren Sie die Option **Sicherheitsstufe automatisch ermitteln (empfohlen)**.
     
-4. Wählen Sie **Voll vertrauenswürdig (das Formular verfügt über Zugriff auf Dateien und Einstellungen auf dem Computer des Benutzers)**.
+4. Aktivieren Sie **Voll vertrauenswürdig (das Formular kann auf Dateien und Einstellungen auf dem Computer zugreifen)**.
     
-5. Wählen Sie unter **Signatur der Formularvorlage** **Diese Formularvorlage signieren**.
+5. Aktivieren Sie unter **Signatur der Formularvorlage** die Option **Diese Formularvorlage signieren**.
     
-6. Klicken Sie auf **Zertifikat auswählen,** um ein Zertifikat auszuwählen, das zuvor heruntergeladen und von einem vertrauenswürdigen Zertifikatanbieter installiert wurde. 
+6. Klicken Sie auf **Zertifikat auswählen**, um ein Zertifikat auszuwählen, das zuvor von einem vertrauenswürdigen Zertifikatanbieter heruntergeladen und installiert wurde. 
     
 7. Klicken Sie zweimal auf OK, um den Vorgang vollständig zu beenden.
     
 #### <a name="to-publish-the-form-template-to-a-sharepoint-document-library"></a>So veröffentlichen Sie die Formularvorlage in einer SharePoint-Dokumentbibliothek
 
-1. Klicken Sie auf der Registerkarte **Datei** , klicken Sie auf **Veröffentlichen**, und klicken Sie dann auf **SharePoint Server**.
+1. Klicken Sie auf die Registerkarte **Datei**, dann auf **Veröffentlichen** und anschließend auf **SharePoint Server**.
     
-2. Befolgen Sie die Anweisungen des **Veröffentlichungs-Assistenten** zum Veröffentlichen der Formularvorlage in einer neuen oder vorhandenen SharePoint-Dokumentbibliothek. 
+2. Folgen Sie den Anweisungen des Veröffentlichungs-Assistenten****, um die Formularvorlage in einer neuen oder vorhandenen SharePoint-Dokumentbibliothek zu veröffentlichen. 
     
 #### <a name="to-a-create-a-form-that-is-based-on-your-fully-trusted-digitally-signed-form-template"></a>So erstellen Sie ein Formular auf der Basis der voll vertrauenswürdigen, digital signierten Formularvorlage
 
 1. Klicken Sie in der SharePoint-Dokumentbibliothek auf **Fill Out the Form**.
     
    > [!NOTE]
-   > Nach dem Veröffentlichen der Formularvorlage in einer SharePoint-Dokumentbibliothek mit dem **Veröffentlichen-Assistenten**, wird die Vorlage nicht als ein Element in der Formularbibliothek angezeigt. Wenn Sie ein Formular in dieser Dokumentbibliothek erstellen, wird die Vorlage standardmäßig als Vorlage für das neue Formular verwendet werden. 
+   > Nachdem die Formatvorlage mithilfe des Veröffentlichungs-Assistenten**** in einer SharePoint-Dokumentbibliothek veröffentlicht wurde, wird die Vorlage nicht als Element in der Formularbibliothek angezeigt. Wenn Sie in dieser Dokumentbibliothek ein Formular erstellen, wird die Vorlage standardmäßig als Vorlage für das neue Formular verwendet. 
   
-2. Wenn die Standard-Formularvorlage digital signiert wurde, zeigt InfoPath einen Sicherheitshinweis über digital signierten Formularvorlage an. Wählen Sie **Always Dateien von dieser Quelle vertrauen und automatisch öffnen**, und klicken Sie dann auf **Öffnen**.
+2. Falls die Standardformularvorlage digital signiert ist, wird von InfoPath eine Sicherheitswarnung bezüglich der digital signierten Formularvorlage angezeigt. Wählen Sie **Dateien von dieser Quelle immer vertrauen und automatisch öffnen** aus, und klicken Sie dann auf **Öffnen**.
     
 ## <a name="using-a-fully-trusted-form"></a>Verwenden eines voll vertrauenswürdigen Formulars
 
@@ -173,7 +173,7 @@ Ein voll vertrauenswürdiges Formular wird ähnlich verwendet wie ein Standardfo
   
 Ein voll vertrauenswürdiges Formular kann in InfoPath im Dialogfeld **Ein Formular ausfüllen** geöffnet werden. 
   
-Das Dialogfeld **Ein Formular ausfüllen** geöffnet wird, wenn Sie auf **Weitere Formulare** im Aufgabenbereich **Ein Formular ausfüllen** , oder klicken Sie auf **Ein Formular ausfüllen** im Menü **Datei** . 
+Das Dialogfeld **Ein Formular ausfüllen** wird geöffnet, wenn Sie im Aufgabenbereich **Ein Formular ausfüllen** auf **Weitere Formulare** klicken oder wenn Sie im Menü **Datei** auf **Ein Formular ausfüllen** klicken. 
   
 ### <a name="making-changes-to-a-fully-trusted-form"></a>Ändern eines voll vertrauenswürdigen Formulars
 
