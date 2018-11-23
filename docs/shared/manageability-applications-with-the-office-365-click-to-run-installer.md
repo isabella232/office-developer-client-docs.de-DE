@@ -6,12 +6,12 @@ ms.audience: ITPro
 localization_priority: Normal
 ms.assetid: c0fa8fed-1585-4566-a9be-ef6d6d1b4ce8
 description: Erfahren Sie, wie das Installationsprogramm von Office 365 Klick-und-Los in eine Software Management-Lösung zu integrieren.
-ms.openlocfilehash: 0e9e82fbf86b81ad35928277ff11fe9b86d91964
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: cdcdde0618e2b96ce997ba5e263f75d85c21fd11
+ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25401748"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26643220"
 ---
 # <a name="integrating-manageability-applications-with-office-365-click-to-run-installer"></a>Integrieren von Office 365 Klick-und-Los-Installer Verwaltbarkeit Applikationen
 
@@ -300,7 +300,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
 
 - Wenn ein Fehler auftritt, die Fehler dar, der im letzte Befehl zur Folge der `UPDATE_STATUS_REPORT` enthält detaillierte Informationen zu dem Fehler. Zwei Arten von Fehlercodes werden von der **Status** -Methode zurückgegeben. 
     
-- Wenn der Fehler weniger als `UDPATE_ERROR_CODE::eUNKNOWN`, der Fehler befindet sich eine der folgenden vordefinierten Fehlercodes:
+- Wenn der Fehler weniger als `UPDATE_ERROR_CODE::eUNKNOWN`, der Fehler befindet sich eine der folgenden vordefinierten Fehlercodes:
     
   ```cpp
   typedef enum _UPDATE_ERROR_CODE
@@ -324,7 +324,7 @@ HRESULT status([out] _UPDATE_STATUS_REPORT& pUpdateStatusReport) // Get status o
   
   ```
 
-  Wenn der zurückgegebenen Fehlercode übersteigt `UDPATE_ERROR_CODE::eUNKNOWN` **HRESULT** eines Funktionsaufrufs fehlgeschlagen ist. So extrahieren Sie das HRESULT subtrahieren `UDPATE_ERROR_CODE::eUNKNOWN` aus der im Fehlerfeld der zurückgegebene Wert der `UPDATE_STATUS_REPORT`.
+  Wenn der zurückgegebenen Fehlercode übersteigt `UPDATE_ERROR_CODE::eUNKNOWN` **HRESULT** eines Funktionsaufrufs fehlgeschlagen ist. So extrahieren Sie das HRESULT subtrahieren `UPDATE_ERROR_CODE::eUNKNOWN` aus der im Fehlerfeld der zurückgegebene Wert der `UPDATE_STATUS_REPORT`.
     
   Die vollständige Liste der Status- und Fehlerinformationen Werte kann durch die **IUpdateNotify** -Typbibliothek in OfficeC2RCom.dll eingebettet überprüfen angezeigt werden. 
     

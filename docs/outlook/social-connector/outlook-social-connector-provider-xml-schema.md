@@ -8,12 +8,12 @@ ms.prod: office-online-server
 localization_priority: Normal
 ms.assetid: 5a88adf0-9265-4d49-976d-de0d93269aa9
 description: Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurückgegeben wird, muss mit dem folgenden XML-Schema für die OSC-Anbieter entsprechen. Das OSC-Schema wird hier in seiner Gesamtheit reproduziert.
-ms.openlocfilehash: b1ec7888f5b6d9a7264f597e0c1ef3855d27b011
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+ms.openlocfilehash: 578f0ea0c8df4f81c51ce71b50aa2768fe930d5c
+ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25394104"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26643171"
 ---
 # <a name="outlook-social-connector-provider-xml-schema"></a>Outlook Connector für soziale Netzwerke Anbieter XML-schema
 
@@ -262,7 +262,7 @@ Alle XML, das durch OSC-Anbieter in OSC-Anbieter Erweiterbarkeitsmethoden zurüc
       <!-- Indicates if the OSC should sync on-demand contacts when people pane is minimized -->
       <xs:element name="showOnDemandContactsWhenMinimized" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
       <!-- Indicates hashing function used to hash email addresses, ignored unless-->
-      <!-- dynamicActivitiesLookupEx = true or dyanamicContactsLookup = true in capabilities XML-->
+      <!-- dynamicActivitiesLookupEx = true or dynamicContactsLookup = true in capabilities XML-->
       <xs:element name="hashFunction" minOccurs="0" maxOccurs="1">
         <xs:simpleType>
           <xs:restriction base="xs:string">

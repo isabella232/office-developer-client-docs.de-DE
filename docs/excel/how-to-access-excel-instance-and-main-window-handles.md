@@ -1,5 +1,5 @@
 ---
-title: Zugriff auf Excel-Instanz und im Hauptfenster von Handles
+title: Zugreifen auf Excel-Instanz- und Hauptfensterhandles
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
@@ -8,15 +8,15 @@ keywords:
 - Zugreifen auf excel-Kontrollpunkte, Kontrollpunkte [Excel 2007], den Zugriff auf Excel-Instanzen, die Zugriff auf Fensterhandles [Excel 2007], zugreifen auf
 localization_priority: Normal
 ms.assetid: 21e1dbdc-06fa-4514-9437-c4cffc3b4621
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 035cd2a8423e3ab14f4b2ca4b73fbc39641e54d6
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: 4b71ccd428e60c9ba2e59fea0e56eb2fc61390db
+ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790520"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26643178"
 ---
-# <a name="access-excel-instance-and-main-window-handles"></a>Zugriff auf Excel-Instanz und im Hauptfenster von Handles
+# <a name="access-excel-instance-and-main-window-handles"></a>Zugreifen auf Excel-Instanz- und Hauptfensterhandles
 
  **Gilt für**: Excel 2013 | Office 2013 | Visual Studio 
   
@@ -63,7 +63,7 @@ BOOL GetHwnd(HWND * pHwnd)
   //
   // xlGetHwnd only returns the LoWord of Excel hWnd
   // so all the windows have to be enumerated to see
-  // which match the LoWord retuned by xlGetHwnd.
+  // which match the LoWord returned by xlGetHwnd.
   //
   if (Excel4(xlGetHwnd, &x, 0) == xlretSuccess)
   {
@@ -85,9 +85,9 @@ BOOL GetHwnd(HWND * pHwnd)
 
 
 
-[Anzeigen von Dialogfeldern aus innerhalb einer DLL oder XLL](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
+[Anzeigen von Dialogfeldern aus einer DLL oder XLL](displaying-dialog-boxes-from-within-a-dll-or-xll.md)
   
-[C C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden k�nnen](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
+[C-API-Funktionen, die nur aus einer DLL oder XLL aufgerufen werden können](c-api-functions-that-can-be-called-only-from-a-dll-or-xll.md)
   
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

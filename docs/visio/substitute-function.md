@@ -9,12 +9,12 @@ f1_keywords:
 localization_priority: Normal
 ms.assetid: 4a27663a-9d37-2ac4-5856-edeb0880f16e
 description: Ersetzt einen Teil einer Zeichenfolge durch eine andere Textzeichenfolge.
-ms.openlocfilehash: 2c33d8aafbd68054ac39d14bb4fb3cf857fb367e
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+ms.openlocfilehash: fc12ab30ec9c509e2f126931bee837f518e96f3a
+ms.sourcegitcommit: 4590b7ed906d008693a58abe63f089ed8a380b34
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19798216"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26643213"
 ---
 # <a name="substitute-function"></a>SUBSTITUTE Function
 
@@ -32,14 +32,14 @@ Ersetzt einen Teil einer Zeichenfolge durch eine andere Textzeichenfolge.
 | _Alter_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, der ersetzt werden soll.
   <br/> |
 | _Neuer_Text_ <br/> |Erforderlich  <br/> |**String** <br/> | Der Text, den Sie _Alter_Text_ersetzen möchten.  <br/> |
-| _start_num_opt_ <br/> |Optional  <br/> |**Numeric** <br/> |Gibt an, welche Vorkommen von old_text ersetzt werden sollen.  <br/> |
+| _start_num_opt_ <br/> |Optional  <br/> |**Numerisch** <br/> |Gibt an, welche Vorkommen von Old_text ersetzt werden soll.  <br/> |
 | _ignore_case_opt_ <br/> |Optional  <br/> |**Boolean** <br/> |FALSE, wenn Groß- und Kleinschreibung zu beachten ist; andernfalls TRUE. Die Standardeinstellung ist FALSE.  <br/> |
    
-### <a name="return-value"></a>R�ckgabewert
+### <a name="return-value"></a>Rückgabewert
 
 Zeichenfolge
   
-## <a name="remarks"></a>Bemerkungen
+## <a name="remarks"></a>Hinweise
 
  Wenn Sie _Start_num_opt_angeben, wird nur dieses Auftreten von _Old_text_ ersetzt. Andernfalls wird jedes Vorkommen von _Old_text_ in _Text_ um geändert _Neuer_Text._
   
