@@ -8,13 +8,13 @@ keywords:
 - Bekannte Probleme [excel 2007]
 localization_priority: Normal
 ms.assetid: 3dfecc0b-a91c-448e-8721-5d3486b625fa
-description: 'Gilt f�r: Excel 2013�| Office 2013�| Visual Studio'
-ms.openlocfilehash: 9cdbb10ea68723bd7e1cd9289e8592a7cc087c46
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
+ms.openlocfilehash: 34784f6895386efe7e6c3ca7ec213c7d71931058
+ms.sourcegitcommit: f139451a43598b59da22775333779df691df460a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790510"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26685179"
 ---
 # <a name="known-issues-in-excel-xll-development"></a>Bekannte Probleme in Excel XLL-Entwicklung
 
@@ -28,7 +28,7 @@ Wenn eine XLL eine Funktion oder einen Befehl registriert, Excel erstellt einen 
   
 ## <a name="argument-description-string-truncation-in-the-function-wizard"></a>Argument Beschreibung Zeichenfolge abschneiden im Funktions-Assistenten
 
-Der Parameter *pxArgumentHelp1* und alle nachfolgenden Parameter der Funktion **XlfRegister** sind optional Zeichenfolgen, die die Argumente der XLL-Funktion entsprechen. Funktions-Assistent zeigt diese um Hilfe im Dialogfeld Argument Konstruktion bereitzustellen. In einigen Fällen schneidet Excel die Zeichenfolge, die zum letzten Argument durch ein oder zwei Zeichen entspricht, in dem Dialogfeld angezeigt. Sie können dies vermeiden, indem Sie ein oder zwei Leerzeichen am Ende der letzten Zeichenfolge hinzufügen. 
+Der Parameter *pxArgumentHelp1* und alle nachfolgenden Parameter der Funktion **XlfRegister** sind optional Zeichenfolgen, die die Argumente der XLL-Funktion entsprechen. Funktions-Assistent zeigt diese um Hilfe im Dialogfeld Argument Konstruktion bereitzustellen. In einigen Fällen schneidet Excel die Zeichenfolge, die zum letzten Argument durch ein oder zwei Zeichen entspricht, in dem Dialogfeld angezeigt. Sie können dies vermeiden, indem eine zusätzliche "leere Zeichenfolge" als letzter "Argument Hilfe" Parameter Ihrer Funktion Registrierung hinzufügen.
   
 ## <a name="binary-name-scope-limitation"></a>Binäre Name Bereich Einschränkung
 
@@ -61,9 +61,9 @@ Weitere Informationen finden Sie unter [Speicherverwaltung in Excel](memory-mana
 [XLOper12ToXLOper](xloper12toxloper.md)
 
 
-[Entwickeln von Excel-XLLs](developing-excel-xlls.md)
+[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
   
-[Excel XLL-SDK-API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)
+[Excel XLL SDK – API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)
   
 [Speicherverwaltung in Excel](memory-management-in-excel.md)
 
