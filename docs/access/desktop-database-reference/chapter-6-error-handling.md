@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249420(v=office.15)
 ms:contentKeyID: 48545440
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4c6e4f4e4218992b89a3370375bb322adfcdd57c
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 14d3dc4b291d96a47e0fb67c0e7d837463cd4bf2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937183"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708872"
 ---
 # <a name="chapter-6-error-handling"></a>Kapitel 6: Fehlerbehandlung
 
@@ -38,9 +39,9 @@ ADO verwendet mehrere Methoden, um Sie über Fehler zu informieren:
 In den folgenden Abschnitten werden die verschiedenen Benachrichtigungsmethoden ausführlich beschrieben.
 
 - [ADO-Fehler](ado-errors.md)
-- [ADO-fehlerreferenz](ado-error-reference.md)
+- [ADO-Fehlerreferenz](ado-error-reference.md)
 - [Anbieterfehler](provider-errors.md)
 - [Feldbezogene Fehlerinformationen](field-related-error-information.md)
-- [Recordsetbezogene Fehlerinformationen](recordset-related-error-information.md)
+- [Recordset-bezogene Fehlerinformationen](recordset-related-error-information.md)
 - [Vorhersehen von Fehlern](anticipating-errors.md)
 - [Behandeln von Fehlern in anderen Sprachen (ADO)](handling-errors-in-other-languages.md)
