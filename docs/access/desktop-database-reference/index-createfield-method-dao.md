@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837208(v=office.15)
 ms:contentKeyID: 48548892
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 511933ddf0d4eca9755788608800e0421de4116d
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: aedda14273446ff6823776e535eb7995aa127fa5
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997140"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703027"
 ---
 # <a name="indexcreatefield-method-dao"></a>Index.CreateField-Methode (DAO)
 
@@ -56,7 +57,7 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 <td><p>Argument wird für dieses Objekt nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Size</em></p></td>
+<td><p><em>Größe</em></p></td>
 <td><p>Optional</p></td>
 <td><p><strong>Variant</strong></p></td>
 <td><p>Argument wird für dieses Objekt nicht unterstützt.</p></td>
@@ -69,7 +70,7 @@ Erstellt ein neues **[Field](field-object-dao.md)** -Objekt (gilt nur für Micro
 
 Feld
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Mit der **CreateField**-Methode können Sie ein neues Feld erstellen und den Namen und Datentyp sowie die Größe des Felds angeben. Wenn Sie **CreateField** verwenden und einen oder mehrere optionale Teile weglassen, können Sie die entsprechende Eigenschaft mithilfe einer geeigneten Zuweisungsanweisung festlegen oder zurücksetzen, bevor Sie das neue Objekt an eine Auflistung anfügen. Nachdem Sie das neue Objekt angefügt haben, können Sie dessen Eigenschafteneinstellungen zum Teil ändern. Weitere Informationen finden Sie in den Themen zu den einzelnen Eigenschaften.
 

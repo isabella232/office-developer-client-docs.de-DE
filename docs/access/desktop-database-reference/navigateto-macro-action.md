@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm119055
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7da3eb87e775a6b02694910cd017c9535fde1df7
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 1c37e798e0624a5655b63a76332073e5b57c0823
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998280"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704140"
 ---
 # <a name="navigateto-macro-action"></a>NavigateTo-Makroaktion
 
@@ -51,7 +52,7 @@ Die **NavigierenZu** -Aktion hat folgende Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 - Diese Aktion entspricht dem Auswählen von Kategorien und Gruppen aus der Titelleiste des Navigationsbereichs.
 

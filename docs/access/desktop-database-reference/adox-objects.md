@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250087(v=office.15)
 ms:contentKeyID: 48548018
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6053792912d701fd844b44835721fc0497d23ee4
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d5051a9842645ac8f93be26bf6309dd05da7ec24
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910894"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704784"
 ---
 # <a name="adox-objects"></a>ADOX-Objekte
 
@@ -50,11 +51,11 @@ Jedes Objekt kann in seiner entsprechenden Auflistung enthalten sein. Beispielsw
 <td><p>Stellt einen Index aus einer Datenbanktabelle dar.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="key-object-adox.md">Schlüssel</a></p></td>
+<td><p><a href="key-object-adox.md">Key</a></p></td>
 <td><p>Stellt ein Primärschlüsselfeld, ein Fremdschlüsselfeld oder ein Feld für einen eindeutigen Schlüssel aus einer Datenbanktabelle dar.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="procedure-object-adox.md">Prozedur</a></p></td>
+<td><p><a href="procedure-object-adox.md">Procedure</a></p></td>
 <td><p>Stellt eine gespeicherte Prozedur dar.</p></td>
 </tr>
 <tr class="odd">
@@ -62,7 +63,7 @@ Jedes Objekt kann in seiner entsprechenden Auflistung enthalten sein. Beispielsw
 <td><p>Stellt eine Datenbanktabelle dar, einschließlich Spalten, Indizes und Schlüsseln.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="user-object-adox.md">User</a></p></td>
+<td><p><a href="user-object-adox.md">Benutzer</a></p></td>
 <td><p>Stellt ein Benutzerkonto dar, das über Zugriffsberechtigungen in einer gesicherten Datenbank verfügt.</p></td>
 </tr>
 <tr class="odd">

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249259(v=office.15)
 ms:contentKeyID: 48544787
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: a090630b5db741f761314f598fcc783dd124d1cf
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9b5e25e014c6e93d35e3621bb9b5b3c21d5e77f9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25881860"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702376"
 ---
 # <a name="absoluteposition-property-ado"></a>AbsolutePosition-Eigenschaft (ADO)
 
@@ -23,7 +24,7 @@ Gibt die Position des aktuellen Datensatzes eines [Recordset](recordset-object-a
 
 Mit dieser Eigenschaft wird ein Wert vom Datentyp **Long** zwischen 1 und der Anzahl von Datensätzen im **Recordset**-Objekt ([RecordCount](recordcount-property-ado.md)) zurückgegeben oder festgelegt, oder es wird einer der Werte von [PositionEnum](positionenum.md) zurückgegeben.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Zum Festlegen der **AbsolutePosition** -Eigenschaft erfordert ADO, dass der verwendete OLE DB-Anbieter die IRowsetLocate-Schnittstelle implementieren.
 

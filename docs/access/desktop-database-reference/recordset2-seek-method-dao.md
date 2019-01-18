@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197940(v=office.15)
 ms:contentKeyID: 48546489
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6db35b060d59891bfc33bb75c6e6bb370fb3dc9a
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9510faab9035f2b2cbcccae0a8ddefa484a95cb1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998229"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700647"
 ---
 # <a name="recordset2seek-method-dao"></a>Recordset2.Seek-Methode (DAO)
 
@@ -59,7 +60,7 @@ Sucht den Datensatz in einem indizierten **Recordset** -Objekt vom Typ Tabelle, 
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Bevor Sie **Seek** verwenden können, müssen Sie den aktuellen Index mit der **Index**-Eigenschaft festlegen. Wenn der Index ein nicht eindeutiges Schlüsselfeld identifiziert, sucht **Seek** nach dem ersten Datensatz, der die Kriterien erfüllt.
 

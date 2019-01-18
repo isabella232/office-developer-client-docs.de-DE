@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249459(v=office.15)
 ms:contentKeyID: 48545605
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 161cfec0e8450ef7e80c47bc8fb1b8304790e7c5
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c5aac745bacf0662f6cd389bfefde7182a9676d3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949908"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700829"
 ---
 # <a name="copyrecord-method-ado"></a>CopyRecord-Methode (ADO)
 
@@ -38,7 +39,7 @@ Kopiert eine durch einen **Record** dargestellte Entität an einen anderen Speic
 
 Ein **String**-Wert, der in der Regel den Wert für *Destination* zurückgibt. Der genaue Wert, der zurückgegeben wird, ist jedoch vom Anbieter abhängig.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Werte der *Quell-* und *Zielserver* dürfen nicht identisch sein; andernfalls tritt ein Laufzeitfehler. Mindestens einer der Server-, Pfad- oder Ressourcennamen muss unterschiedlich sein.
 

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff845158(v=office.15)
 ms:contentKeyID: 48543188
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c671ced7d3de2ce461af3bcf0a5d832e092bbf17
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: fb6cbd6cc925a3e4841d9e7d6d77332cc36c7a03
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922937"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703111"
 ---
 # <a name="ifthenelse-macro-block"></a>Wenn...Dann...Sonst-Makroblock
 
@@ -47,7 +48,7 @@ Mit dem **If** -Makroblock können Sie eine Gruppe von Aktionen je nach Wert ein
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Expression</strong></p></td>
+<td><p><strong>Ausdruck</strong></p></td>
 <td><p>Die Bedingung, die Sie testen möchten. Es muss ein Ausdruck, der True oder False ausgewertet wird.</p></td>
 </tr>
 </tbody>

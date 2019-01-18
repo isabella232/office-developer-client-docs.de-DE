@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249964(v=office.15)
 ms:contentKeyID: 48547602
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 66ef27165e6f5823cc97a295643dfc2ae5c205c2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 4f5ffae4880cadb90f47f1ac348ffc8b3ea58785
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25883183"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704560"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc"></a>Microsoft OLE DB-Anbieter für ODBC
 
@@ -373,7 +374,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
 <td><p>nur Lesen</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
+<td><p><a href="bookmark-property-ado.md">Lesezeichen</a></p></td>
 <td><p>nicht verfügbar</p></td>
 <td><p>nicht verfügbar</p></td>
 <td><p>Lesen/Schreiben</p></td>

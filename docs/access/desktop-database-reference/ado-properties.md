@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248809(v=office.15)
 ms:contentKeyID: 48543020
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: ce8e5b8d442ba81120056219ee06753e08332354
-ms.sourcegitcommit: 48bfe5ab15b11105f4f52937b886c92bdc26525a
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a0efb40d1b5e4c5d675d8add7cdb7a05760578a9
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25910908"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704259"
 ---
 # <a name="ado-properties"></a>ADO-Eigenschaften
 
@@ -50,7 +51,7 @@ ms.locfileid: "25910908"
 <td><p>Gibt die tatsächliche Länge des Werts eines Felds an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="attributes-property-ado.md">Attributes</a></p></td>
+<td><p><a href="attributes-property-ado.md">Attribute</a></p></td>
 <td><p>Gibt mindestens ein Merkmal eines Objekts an.</p></td>
 </tr>
 <tr class="odd">
@@ -58,7 +59,7 @@ ms.locfileid: "25910908"
 <td><p><strong>BOF</strong> – gibt an, dass die aktuelle Datensatzposition vor dem ersten Datensatz in einem <strong>Recordset</strong> -Objekt ist. <strong>EOF</strong> – gibt an, dass die aktuelle Datensatzposition nach dem letzten Datensatz in einem <strong>Recordset</strong> -Objekt ist.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
+<td><p><a href="bookmark-property-ado.md">Lesezeichen</a></p></td>
 <td><p>Gibt ein Lesezeichen an, das den aktuellen Datensatz in einem <strong>Recordset</strong>-Objekt eindeutig identifiziert oder den aktuellen Datensatz in einem <strong>Recordset</strong> -Objekt auf den durch ein gültiges Lesezeichen identifizierten Datensatz festlegt.</p></td>
 </tr>
 <tr class="odd">
@@ -126,7 +127,7 @@ ms.locfileid: "25910908"
 <td><p>Beschreibt ein <strong>Error</strong>-Objekt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="direction-property-ado.md">Direction</a></p></td>
+<td><p><a href="direction-property-ado.md">Richtung</a></p></td>
 <td><p>Es wird angegeben, ob das <strong>Parameter</strong>-Objekt einen Eingabeparameter und/oder einen Ausgabeparameter darstellt oder ob der Parameter der Rückgabewert aus einer gespeicherten Prozedur ist.</p></td>
 </tr>
 <tr class="even">
@@ -186,7 +187,7 @@ ms.locfileid: "25910908"
 <td><p>Gibt den anbieterspezifischen Fehlercode für ein bestimmtes <strong>Error</strong>-Objekt an.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="number-property-ado.md">Number</a></p></td>
+<td><p><a href="number-property-ado.md">Zahl</a></p></td>
 <td><p>Gibt die Nummer an, durch die ein <strong>Error</strong>-Objekt eindeutig identifiziert wird.</p></td>
 </tr>
 <tr class="odd">
@@ -250,7 +251,7 @@ ms.locfileid: "25910908"
 <td><p>Ein <strong>Rowset</strong>-OLE DB-Objekt wird aus einem <strong>ADORecordsetConstruction</strong>-Objekt abgerufen oder für dieses festgelegt.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="size-property-ado.md">Size</a></p></td>
+<td><p><a href="size-property-ado.md">Größe</a></p></td>
 <td><p>Gibt die maximale Größe eines <strong>Parameter</strong>-Objekts in Bytes oder Zeichen an.</p></td>
 </tr>
 <tr class="odd">

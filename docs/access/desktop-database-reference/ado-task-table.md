@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249141(v=office.15)
 ms:contentKeyID: 48544245
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: b7da083471149316c39595913aec26053e5ad718
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ffb9ece91d674e3447f43ae17e2ea9415e2339ac
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936749"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700178"
 ---
 # <a name="ado-task-table"></a>ADO-Aufgabentabelle
 
@@ -49,7 +50,7 @@ In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* en
 </tr>
 <tr class="odd">
 <td><p>Navigieren zu einem bestimmten Datensatz</p></td>
-<td><p><a href="navigating-through-the-data.md">Navigieren durch die Daten</a></p></td>
+<td><p><a href="navigating-through-the-data.md">Navigieren in den Daten</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Zugreifen auf Spaltenwerte</p></td>
@@ -61,7 +62,7 @@ In der folgenden Tabelle Programmieraufgaben in der *ADO-Programmierhandbuch* en
 </tr>
 <tr class="even">
 <td><p>Ändern von Daten und Werten</p></td>
-<td><p><a href="editing-existing-records.md">Editing Existing Records</a></p></td>
+<td><p><a href="editing-existing-records.md">Bearbeiten vorhandener Datensätze</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Hinzufügen neuer Daten</p></td>

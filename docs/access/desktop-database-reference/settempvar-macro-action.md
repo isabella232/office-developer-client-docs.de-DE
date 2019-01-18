@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm150219
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 342a4db4e2ed6e06dca917beb96b4562f1fc65da
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b630304774e521162687d4c78a6a97cf18ddb419
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25919444"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705230"
 ---
 # <a name="settempvar-macro-action"></a>SetTempVar-Makroaktion
 
@@ -47,7 +48,7 @@ Die **FestlegenTempVar** -Aktion verwendet die folgenden Argumente.
 <td><p>Geben Sie den Namen der temporären Variable ein.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Expression</strong></p></td>
+<td><p><strong>Ausdruck</strong></p></td>
 <td><p>Geben Sie einen Ausdruck, der verwendet wird, um den Wert für diese temporäre Variable festzulegen. Setzen Sie den Ausdruck mit dem Gleichheitszeichen (<strong>=</strong>) anmelden. Klicken Sie auf die <strong>Generator</strong> -Schaltfläche <img src="media/access-build-button.gif" title="buildbut_ZA06047218" alt="buildbut_ZA06047218" /> , um das Argument mithilfe des Ausdrucks-Generators festzulegen.</p></td>
 </tr>
 </tbody>

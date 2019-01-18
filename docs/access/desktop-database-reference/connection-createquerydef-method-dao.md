@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053067
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 681da274ab1f709da2eb614df038e6aa492a224a
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b6600d4508a33a31098d6a2e7c92f5904beb0e95
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997252"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705932"
 ---
 # <a name="connectioncreatequerydef-method-dao"></a>Connection.CreateQueryDef-Methode (DAO)
 
@@ -65,9 +66,9 @@ Erstellt ein neues **[QueryDef](querydef-object-dao.md)** -Objekt.
 
 ## <a name="return-value"></a>Rückgabewert
 
-QueryDef-Objekt
+QueryDef
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn Sie in einem Microsoft Access-Arbeitsbereich beim Erstellen eines **QueryDef**-Objekts für den Namen einen anderen Wert angeben als eine leere Zeichenfolge, wird das resultierende **QueryDef**-Objekt automatisch an die **[QueryDefs](querydefs-collection-dao.md)** -Auflistung angefügt.
 

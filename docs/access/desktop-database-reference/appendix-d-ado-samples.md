@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249588(v=office.15)
 ms:contentKeyID: 48546113
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 83fff605e7908c8d2d8523639f07fb7046c572b7
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: eb1998d47717c488356b9cd84d2779b540b23956
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947385"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700661"
 ---
 # <a name="appendix-d-ado-samples"></a>Anhang D: ADO-Beispiele
 

@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249100(v=office.15)
 ms:contentKeyID: 48544091
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bdd9ca9a2274f03f1592f73c3da5a6837101fda2
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a92ffe9b4b713518330d9dbfd9979d904a5abe8e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947826"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703510"
 ---
 # <a name="provider-support-for-adox"></a>Anbieterunterstützung für ADOX
 
@@ -51,7 +52,7 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Procedure</strong>-Objekt</p></td>
+<td><p><strong>Procedure</strong> -Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
@@ -98,7 +99,7 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Procedure</strong>-Objekt</p></td>
+<td><p><strong>Procedure</strong> -Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">
@@ -157,7 +158,7 @@ Abhängig vom jeweiligen OLE DB-Datenprovider werden bestimmte ADOX-Features nic
 <td><p>Die Methoden <strong>Append</strong> und <strong>Delete</strong> werden nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Procedure</strong>-Objekt</p></td>
+<td><p><strong>Procedure</strong> -Objekt</p></td>
 <td><p>Die  <strong>Command</strong>-Eigenschaft wird nicht unterstützt.</p></td>
 </tr>
 <tr class="odd">

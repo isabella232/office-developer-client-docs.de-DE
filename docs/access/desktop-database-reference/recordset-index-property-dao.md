@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052906
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b5f568889d020676be420186b49c9c50c444ee54
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: f475635424cfb9ed8ddab4025d6a944bdedd39fd
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25926136"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702726"
 ---
 # <a name="recordsetindex-property-dao"></a>Recordset.Index-Eigenschaft (DAO)
 
@@ -29,7 +30,7 @@ Legt einen Wert fest, der den Namen des aktuellen **[Index](index-object-dao.md)
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Datensätze in Basistabellen werden nicht in einer bestimmten Reihenfolge gespeichert. Durch Festlegen der **Index** -Eigenschaft wird die Reihenfolge der von der Datenbank zurückgegebenen Datensätze geändert. Auf die Speicherreihenfolge der Datensätze hat dies keine Auswirkungen.
 

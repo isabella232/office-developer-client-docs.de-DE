@@ -10,12 +10,13 @@ f1_keywords:
 - ado210.chm1231115
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: d3f2a3cf85f51ac4a0d358fcc26e992d61fedca2
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 037ae753f427c42f147972170dbb2e645b260623
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25886025"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703202"
 ---
 # <a name="activeconnection-property-ado"></a>ActiveConnection-Eigenschaft (ADO)
 
@@ -31,7 +32,7 @@ Mit dieser Eigenschaft wird ein Wert vom Datentyp **String** zurückgegeben oder
 
 Bestimmen Sie mithilfe der **ActiveConnection** -Eigenschaft das **Connection** -Objekt, über das das angegebene **Command** -Objekt ausgeführt oder das angegebene **Recordset** -Objekt geöffnet wird.
 
-### <a name="command"></a>Command
+### <a name="command"></a>Befehl
 
 Für **Command** -Objekte weist die **ActiveConnection** -Eigenschaft Lese-/Schreibzugriff auf.
 
@@ -55,7 +56,7 @@ Wenn Sie die **Source** -Eigenschaft des **Recordset** -Objekts auf eine gültig
 
 **Remote Data Service Usage**: bei der Verwendung auf einem clientseitigen Recordset-Objekt, diese Eigenschaft kann nur für eine Verbindungszeichenfolge oder (in Microsoft Visual Basic oder Visual Basic Scripting Edition) auf *Nothing*festgelegt.
 
-### <a name="record"></a>Record
+### <a name="record"></a>Aufzeichnen
 
 Diese Eigenschaft weist Lese-/Schreibzugriff auf, wenn das **Record** -Objekt geschlossen ist, und kann eine Verbindungszeichenfolge oder einen Verweis auf ein geöffnetes **Connection** -Objekt enthalten. Diese Eigenschaft ist schreibgeschützt, wenn das **Record** -Objekt geöffnet ist, und enthält einen Verweis auf ein geöffnetes **Connection** -Objekt.
 

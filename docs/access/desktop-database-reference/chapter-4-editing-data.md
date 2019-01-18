@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249563(v=office.15)
 ms:contentKeyID: 48545974
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 28103cebeea517395ce2507402677fcde8114bb0
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b954cf8b730a74fb7e630fbafb96c046491c6f46
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936588"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701144"
 ---
 # <a name="chapter-4-editing-data"></a>Kapitel 4: Bearbeiten von Daten
 
@@ -73,7 +74,7 @@ End Function
 In diesem Kapitel werden die folgenden Themen behandelt:
 
 - [Bearbeiten vorhandener Datensätze](editing-existing-records.md)
-- [Bestimmen der unterstützten Funktionalität](determining-what-is-supported.md)
-- [Löschen von Datensätzen mithilfe der Delete-Methode](deleting-records-using-the-delete-method.md)
+- [Bestimmen, was unterstützt wird](determining-what-is-supported.md)
+- [Löschen von Datensätzen mit der Delete-Methode](deleting-records-using-the-delete-method.md)
 - [Alternativen: Verwenden von SQL-Anweisungen](alternatives-using-sql-statements.md)
 - [Hinzufügen von Datensätzen (ADO)](adding-records.md)

@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm186077
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 8a2757b062efe022734c674f4c59f994f1c15692
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2b2a4f978a4af2ba79cab7807f0142d35d7d30c7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25920256"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28705001"
 ---
 # <a name="before-delete-macro-event"></a>Makroereignis "Vor Löschung"
 
@@ -52,7 +53,7 @@ In der folgenden Tabelle sind Makros ausgeführt, die im Ereignis **Vor Löschun
 <thead>
 <tr class="header">
 <th><p>Befehlstyp</p></th>
-<th><p>Command</p></th>
+<th><p>Befehl</p></th>
 </tr>
 </thead>
 <tbody>

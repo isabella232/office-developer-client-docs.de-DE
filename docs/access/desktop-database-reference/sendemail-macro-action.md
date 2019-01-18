@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff196780(v=office.15)
 ms:contentKeyID: 48546046
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a5016500b62a465f21ecab93a6fb66c9e6d514e1
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c0fa220b3088cde46b0e82631c06520afd839c64
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998840"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701669"
 ---
 # <a name="sendemail-macro-action"></a>SendEmail-Makroaktion
 
@@ -41,7 +42,7 @@ Die **SendenEMail** -Aktion kann mit den folgenden Argumenten verwendet werden.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>An</strong></p></td>
+<td><p><strong>To</strong></p></td>
 <td><p>Ja</p></td>
 <td><p>Die Empfänger der Nachricht, deren Namen Sie in der Zeile <strong>an</strong> , in der Nachricht aufnehmen möchten. Trennen Sie die Namen die Empfänger, die Sie in diesem Argument (und in den Argumenten <em>Cc</em> und <em>Bcc</em> ) durch ein Semikolon (;) angeben.</p></td>
 </tr>
@@ -56,7 +57,7 @@ Die **SendenEMail** -Aktion kann mit den folgenden Argumenten verwendet werden.
 <td><p>Die Empfänger der Nachricht, deren Namen Sie in der Bcc aufnehmen möchten (&quot;blind Carbon Copy, Blindkopie&quot;) Zeile der Nachricht.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Betreff</strong></p></td>
+<td><p><strong>Subject</strong></p></td>
 <td><p>Nein</p></td>
 <td><p>Der Betreff der Nachricht. Dieser Text wird auf der Zeile <strong>Betreff</strong> der Nachricht angezeigt.</p></td>
 </tr>

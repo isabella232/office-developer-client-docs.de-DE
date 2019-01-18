@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053063
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: b8dc3c551c9aa75da205717fef682f0abed7a54b
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 630efdc4da5a9064f9dd9055e3ceabc0283d6d5f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998728"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701242"
 ---
 # <a name="recordsetsort-property-dao"></a>Recordset.Sort-Eigenschaft (DAO)
 
@@ -29,7 +30,7 @@ Legt die Sortierreihenfolge für Datensätze in einem **[Recordset](recordset-ob
 
 *Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Sie können die **Sort** -Eigenschaft mit – und Snapshot – vom Typ Dynaset **Recordset** -Objekte.
 
