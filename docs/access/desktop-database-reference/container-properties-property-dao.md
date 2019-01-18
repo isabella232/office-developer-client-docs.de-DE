@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192073(v=office.15)
 ms:contentKeyID: 48543917
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: bbdb8cc16de2877c3165b00bd76c0935c1b3b4a4
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 622d5edca3832d212ff7b9a5ed8a01c2c981e49e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25921376"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28717832"
 ---
-# <a name="containerproperties-property-dao"></a><span data-ttu-id="a92b1-102">Container.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="a92b1-102">Container.Properties property (DAO)</span></span>
+# <a name="containerproperties-property-dao"></a><span data-ttu-id="d7fa7-102">Container.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="d7fa7-102">Container.Properties property (DAO)</span></span>
 
 
-<span data-ttu-id="a92b1-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a92b1-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d7fa7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d7fa7-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a92b1-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="a92b1-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
+<span data-ttu-id="d7fa7-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="d7fa7-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="a92b1-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="a92b1-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="d7fa7-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="d7fa7-106">Syntax</span></span>
 
-<span data-ttu-id="a92b1-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="a92b1-107">*expression* .Properties</span></span>
+<span data-ttu-id="d7fa7-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="d7fa7-107">*expression* .Properties</span></span>
 
-<span data-ttu-id="a92b1-108">*Ausdruck* Eine Variable, die ein **Container** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="a92b1-108">*expression* A variable that represents a **Container** object.</span></span>
+<span data-ttu-id="d7fa7-108">*Ausdruck* Eine Variable, die ein **Container** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="d7fa7-108">*expression* A variable that represents a **Container** object.</span></span>
 

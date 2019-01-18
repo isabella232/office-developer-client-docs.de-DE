@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff835730(v=office.15)
 ms:contentKeyID: 48548302
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6e8725b99a0f0175688927baa948efed75adbf36
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 66880041d204bdcb5d15c9476bd290875409038a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923252"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719925"
 ---
-# <a name="databaserecordsets-property-dao"></a><span data-ttu-id="312eb-102">Database.Recordsets-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="312eb-102">Database.Recordsets property (DAO)</span></span>
+# <a name="databaserecordsets-property-dao"></a><span data-ttu-id="f8c5c-102">Database.Recordsets-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8c5c-102">Database.Recordsets property (DAO)</span></span>
 
 
-<span data-ttu-id="312eb-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="312eb-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f8c5c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f8c5c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="312eb-p101">Gibt eine **Recordsets**-Auflistung zurück, die alle geöffneten Recordsets für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="312eb-p101">Returns a **Recordsets** collection that contains all of the open recordsets in the for the specified database. Read-only.</span></span>
+<span data-ttu-id="f8c5c-p101">Gibt eine **Recordsets**-Auflistung zurück, die alle geöffneten Recordsets für die angegebene Datenbank enthält. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="f8c5c-p101">Returns a **Recordsets** collection that contains all of the open recordsets in the for the specified database. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="312eb-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="312eb-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="f8c5c-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="f8c5c-106">Syntax</span></span>
 
-<span data-ttu-id="312eb-107">*Ausdruck* . Recordset-Objekte</span><span class="sxs-lookup"><span data-stu-id="312eb-107">*expression* .Recordsets</span></span>
+<span data-ttu-id="f8c5c-107">*Ausdruck* . Recordset-Objekte</span><span class="sxs-lookup"><span data-stu-id="f8c5c-107">*expression* .Recordsets</span></span>
 
-<span data-ttu-id="312eb-108">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="312eb-108">*expression* A variable that represents a **Database** object.</span></span>
+<span data-ttu-id="f8c5c-108">*Ausdruck* Eine Variable, die ein **Database** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="f8c5c-108">*expression* A variable that represents a **Database** object.</span></span>
 

@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125983(v=office.15)
 ms:contentKeyID: 52074854
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0e292a37bc917b42a8847773888802cc172af8fb
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 3787ea608625f8baa34121fbb1c86cabe49efcdd
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923840"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28703818"
 ---
-# <a name="databases-object-reference-dao"></a><span data-ttu-id="96002-102">Datenbanken-Objektverweis (DAO)</span><span class="sxs-lookup"><span data-stu-id="96002-102">Databases object reference (DAO)</span></span>
+# <a name="databases-object-reference-dao"></a><span data-ttu-id="4752f-102">Datenbanken-Objektverweis (DAO)</span><span class="sxs-lookup"><span data-stu-id="4752f-102">Databases object reference (DAO)</span></span>
 
-<span data-ttu-id="96002-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="96002-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4752f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4752f-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="96002-104">Databases-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="96002-104">Databases collection (DAO)</span></span>](databases-collection-dao.md)
-- [<span data-ttu-id="96002-105">Mitglieder der Datenbanken (DAO)</span><span class="sxs-lookup"><span data-stu-id="96002-105">Databases members (DAO)</span></span>](databases-members-dao.md)
-- [<span data-ttu-id="96002-106">Datenbank-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="96002-106">Databases properties (DAO)</span></span>](databases-properties-dao.md)
-- [<span data-ttu-id="96002-107">Datenbanken-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="96002-107">Databases methods (DAO)</span></span>](databases-methods-dao.md)
+- [<span data-ttu-id="4752f-104">Databases-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="4752f-104">Databases collection (DAO)</span></span>](databases-collection-dao.md)
+- [<span data-ttu-id="4752f-105">Mitglieder der Datenbanken (DAO)</span><span class="sxs-lookup"><span data-stu-id="4752f-105">Databases members (DAO)</span></span>](databases-members-dao.md)
+- [<span data-ttu-id="4752f-106">Datenbank-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="4752f-106">Databases properties (DAO)</span></span>](databases-properties-dao.md)
+- [<span data-ttu-id="4752f-107">Datenbanken-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="4752f-107">Databases methods (DAO)</span></span>](databases-methods-dao.md)
 

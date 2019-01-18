@@ -6,16 +6,17 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn123876(v=office.15)
 ms:contentKeyID: 52071516
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: d6be101c82bc590768e31bdeba0bced5d5f41ee7
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: e824b36af319ca66f23f2ce4a442e97a7a359b29
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936448"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704742"
 ---
-# <a name="parameters-methods-dao"></a><span data-ttu-id="77969-102">Parameter-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="77969-102">Parameters methods (DAO)</span></span>
+# <a name="parameters-methods-dao"></a><span data-ttu-id="4c742-102">Parameter-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c742-102">Parameters methods (DAO)</span></span>
 
-<span data-ttu-id="77969-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="77969-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4c742-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4c742-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="77969-104">Parameters.Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="77969-104">Parameters.Refresh method (DAO)</span></span>](parameters-refresh-method-dao.md)
+- [<span data-ttu-id="4c742-104">Parameters.Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="4c742-104">Parameters.Refresh method (DAO)</span></span>](parameters-refresh-method-dao.md)
 

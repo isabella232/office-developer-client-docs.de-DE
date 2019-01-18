@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249699(v=office.15)
 ms:contentKeyID: 48546547
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 333f8481958914eadbd830600c08035acc92b031
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2229c7580acc6848551103d83b7bfcf981d37bef
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947476"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702656"
 ---
-# <a name="creating-and-executing-a-simple-command"></a><span data-ttu-id="c3df9-102">Erstellen und Ausführen eines einfachen Befehls</span><span class="sxs-lookup"><span data-stu-id="c3df9-102">Creating and executing a simple command</span></span>
+# <a name="creating-and-executing-a-simple-command"></a><span data-ttu-id="d54c0-102">Erstellen und Ausführen eines einfachen Befehls</span><span class="sxs-lookup"><span data-stu-id="d54c0-102">Creating and executing a simple command</span></span>
 
 
-<span data-ttu-id="c3df9-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c3df9-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="d54c0-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="d54c0-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c3df9-p101">Der folgende Code ist zwar nicht typisch für das **Command** -Objekt, veranschaulicht aber die grundlegende Verwendungsweise des **Command** -Objekts, um einen Befehl für eine Datenquelle auszuführen. In diesem Fall handelt es sich um einen Befehl zum Zurückgeben von Zeilen, mit dem das Ergebnis der Befehlsausführung in einem **Recordset** -Objekt ausgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="c3df9-p101">Though not a typical usage of the **Command** object, the following code shows the basic method of using the **Command** object to execute a command against a data source. In this case, it is a row-returning command, so it returns the results of the command execution into a **Recordset** object.</span></span>
+<span data-ttu-id="d54c0-p101">Der folgende Code ist zwar nicht typisch für das **Command** -Objekt, veranschaulicht aber die grundlegende Verwendungsweise des **Command** -Objekts, um einen Befehl für eine Datenquelle auszuführen. In diesem Fall handelt es sich um einen Befehl zum Zurückgeben von Zeilen, mit dem das Ergebnis der Befehlsausführung in einem **Recordset** -Objekt ausgegeben wird.</span><span class="sxs-lookup"><span data-stu-id="d54c0-p101">Though not a typical usage of the **Command** object, the following code shows the basic method of using the **Command** object to execute a command against a data source. In this case, it is a row-returning command, so it returns the results of the command execution into a **Recordset** object.</span></span>
 
 ```vb 
  
@@ -78,11 +79,11 @@ ErrHandler:
 'EndBasicCmd 
 ```
 
-<span data-ttu-id="c3df9-106">Der auszuführende Befehl wird mit der **CommandText** -Eigenschaft angegeben.</span><span class="sxs-lookup"><span data-stu-id="c3df9-106">The command to be executed is specified with the **CommandText** property.</span></span>
+<span data-ttu-id="d54c0-106">Der auszuführende Befehl wird mit der **CommandText** -Eigenschaft angegeben.</span><span class="sxs-lookup"><span data-stu-id="d54c0-106">The command to be executed is specified with the **CommandText** property.</span></span>
 
 
 > [!NOTE]
-> <span data-ttu-id="c3df9-107">Einige Beispiele in diesem Abschnitt rufen Sie eine Hilfsfunktion **GetNewConnection**herstellen eine Verbindung mit dem Datenanbieter.</span><span class="sxs-lookup"><span data-stu-id="c3df9-107">Several examples in this section call a utility function, **GetNewConnection**, to establish a connection with the data provider.</span></span> <span data-ttu-id="c3df9-108">Um Redundanz zu vermeiden, wird sie nur einmal aufgeführt:</span><span class="sxs-lookup"><span data-stu-id="c3df9-108">To avoid redundancy, it is listed only once:</span></span>
+> <span data-ttu-id="d54c0-107">Einige Beispiele in diesem Abschnitt rufen Sie eine Hilfsfunktion **GetNewConnection**herstellen eine Verbindung mit dem Datenanbieter.</span><span class="sxs-lookup"><span data-stu-id="d54c0-107">Several examples in this section call a utility function, **GetNewConnection**, to establish a connection with the data provider.</span></span> <span data-ttu-id="d54c0-108">Um Redundanz zu vermeiden, wird sie nur einmal aufgeführt:</span><span class="sxs-lookup"><span data-stu-id="d54c0-108">To avoid redundancy, it is listed only once:</span></span>
 
 ```vb 
  

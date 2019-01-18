@@ -6,35 +6,36 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff197067(v=office.15)
 ms:contentKeyID: 48546153
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: fc8fa9bb24035e344ddb8e15179d4edd128abf7d
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: fc60e36abbb353a178864b488a738fcf3247e1a1
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936847"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28701543"
 ---
-# <a name="relations-collection-dao"></a><span data-ttu-id="4cba5-102">Relations-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="4cba5-102">Relations collection (DAO)</span></span>
+# <a name="relations-collection-dao"></a><span data-ttu-id="e8787-102">Relations-Auflistung (DAO)</span><span class="sxs-lookup"><span data-stu-id="e8787-102">Relations collection (DAO)</span></span>
 
 
-<span data-ttu-id="4cba5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4cba5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e8787-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e8787-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4cba5-104">Eine **Relations**-Auflistung enthält gespeicherte **Relation**-Objekte für ein **Database**-Objekt (nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="4cba5-104">A **Relations** collection contains stored **Relation** objects of a **Database** object (Microsoft Access database engine databases only).</span></span>
+<span data-ttu-id="e8787-104">Eine **Relations**-Auflistung enthält gespeicherte **Relation**-Objekte für ein **Database**-Objekt (nur für Microsoft Access-Datenbanken).</span><span class="sxs-lookup"><span data-stu-id="e8787-104">A **Relations** collection contains stored **Relation** objects of a **Database** object (Microsoft Access database engine databases only).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="4cba5-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="4cba5-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e8787-105">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e8787-105">Remarks</span></span>
 
-<span data-ttu-id="4cba5-p101">Sie können das **Relation**-Objekt verwenden, um neue Beziehungen zu erstellen und vorhandene Beziehungen in der Datenbank zu untersuchen. Wenn Sie der **Relations**-Auflistung ein **Relation**-Objekt hinzufügen möchten, erstellen Sie es zunächst mit der **CreateRelation**-Methode und fügen es dann an die **Relations**-Auflistung an, indem Sie die **Append**-Methode verwenden. Dadurch wird das **Relation**-Objekt gespeichert, wenn Sie das **Database**-Objekt schließen. Wenn Sie ein **Relation**-Objekt aus der Auflistung entfernen möchten, verwenden Sie die **Delete**-Methode.</span><span class="sxs-lookup"><span data-stu-id="4cba5-p101">You can use the **Relation** object to create new relationships and examine existing relationships in your database. To add a **Relation** object to the **Relations** collection, first create it with the **CreateRelation** method, and then append it to the **Relations** collection with the **Append** method. This will save the **Relation** object when you close the **Database** object. To remove a **Relation** object from the collection, use the **Delete** method.</span></span>
+<span data-ttu-id="e8787-p101">Sie können das **Relation**-Objekt verwenden, um neue Beziehungen zu erstellen und vorhandene Beziehungen in der Datenbank zu untersuchen. Wenn Sie der **Relations**-Auflistung ein **Relation**-Objekt hinzufügen möchten, erstellen Sie es zunächst mit der **CreateRelation**-Methode und fügen es dann an die **Relations**-Auflistung an, indem Sie die **Append**-Methode verwenden. Dadurch wird das **Relation**-Objekt gespeichert, wenn Sie das **Database**-Objekt schließen. Wenn Sie ein **Relation**-Objekt aus der Auflistung entfernen möchten, verwenden Sie die **Delete**-Methode.</span><span class="sxs-lookup"><span data-stu-id="e8787-p101">You can use the **Relation** object to create new relationships and examine existing relationships in your database. To add a **Relation** object to the **Relations** collection, first create it with the **CreateRelation** method, and then append it to the **Relations** collection with the **Append** method. This will save the **Relation** object when you close the **Database** object. To remove a **Relation** object from the collection, use the **Delete** method.</span></span>
 
-<span data-ttu-id="4cba5-110">Der Verweis auf ein **Relation**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:</span><span class="sxs-lookup"><span data-stu-id="4cba5-110">To refer to a **Relation** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
+<span data-ttu-id="e8787-110">Der Verweis auf ein **Relation**-Objekt in einer Auflistung erfolgt über dessen Ordnungszahl oder den Wert der **Name**-Eigenschaft, wobei Sie die folgenden Syntaxformen verwenden können:</span><span class="sxs-lookup"><span data-stu-id="e8787-110">To refer to a **Relation** object in a collection by its ordinal number or by its **Name** property setting, use any of the following syntax forms:</span></span>
 
-<span data-ttu-id="4cba5-111">**Relations**(0)</span><span class="sxs-lookup"><span data-stu-id="4cba5-111">**Relations**(0)</span></span>
+<span data-ttu-id="e8787-111">**Relations**(0)</span><span class="sxs-lookup"><span data-stu-id="e8787-111">**Relations**(0)</span></span>
 
-<span data-ttu-id="4cba5-112">**Relations** ("Name")</span><span class="sxs-lookup"><span data-stu-id="4cba5-112">**Relations**("name")</span></span>
+<span data-ttu-id="e8787-112">**Relations** ("Name")</span><span class="sxs-lookup"><span data-stu-id="e8787-112">**Relations**("name")</span></span>
 
-<span data-ttu-id="4cba5-113">**Relations**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="4cba5-113">**Relations**\!\[name\]</span></span>
+<span data-ttu-id="e8787-113">**Relations**\!\[Namen\]</span><span class="sxs-lookup"><span data-stu-id="e8787-113">**Relations**\!\[name\]</span></span>
 
-## <a name="example"></a><span data-ttu-id="4cba5-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4cba5-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e8787-114">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e8787-114">Example</span></span>
 
-<span data-ttu-id="4cba5-p102">Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe steuern kann. Die Prozedur versucht mit einer bewusst falschen Kategorienummer (CategoryID) einen Datensatz hinzuzufügen. Dadurch wird die Fehlerbehandlungsroutine ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="4cba5-p102">This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.</span></span>
+<span data-ttu-id="e8787-p102">Diese Beispiel zeigt, wie ein vorhandenes **Relation**-Objekt die Dateneingabe steuern kann. Die Prozedur versucht mit einer bewusst falschen Kategorienummer (CategoryID) einen Datensatz hinzuzufügen. Dadurch wird die Fehlerbehandlungsroutine ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="e8787-p102">This example shows how an existing **Relation** object can control data entry. The procedure attempts to add a record with a deliberately incorrect CategoryID; this triggers the error-handling routine.</span></span>
 
 ```vb
     Sub RelationX() 
@@ -95,7 +96,7 @@ ms.locfileid: "25936847"
 
 <br/>
 
-<span data-ttu-id="4cba5-117">In diesem Beispiel wird die **CreateRelation** -Methode zum Erstellen einer **Beziehung** zwischen Mitarbeitern **TableDef** und ein neues **TableDef** Abteilungen aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="4cba5-117">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments.</span></span> <span data-ttu-id="4cba5-118">Es wird veranschaulicht, wie Erstellen einer neuen **Relation** auch alle erforderlichen **Indizes** in der Fremdtabelle (DepartmentsEmployees Index in der Employees-Tabelle) erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="4cba5-118">It also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
+<span data-ttu-id="e8787-117">In diesem Beispiel wird die **CreateRelation** -Methode zum Erstellen einer **Beziehung** zwischen Mitarbeitern **TableDef** und ein neues **TableDef** Abteilungen aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="e8787-117">This example uses the **CreateRelation** method to create a **Relation** between the Employees **TableDef** and a new **TableDef** called Departments.</span></span> <span data-ttu-id="e8787-118">Es wird veranschaulicht, wie Erstellen einer neuen **Relation** auch alle erforderlichen **Indizes** in der Fremdtabelle (DepartmentsEmployees Index in der Employees-Tabelle) erstellt werden.</span><span class="sxs-lookup"><span data-stu-id="e8787-118">It also demonstrates how creating a new **Relation** will also create any necessary **Indexes** in the foreign table (the DepartmentsEmployees Index in the Employees table).</span></span>
 
 ```vb
     Sub CreateRelationX() 

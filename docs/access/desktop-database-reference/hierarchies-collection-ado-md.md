@@ -6,27 +6,28 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249348(v=office.15)
 ms:contentKeyID: 48545165
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 4fc03ab931d7ae178d1192a00332d460634a4008
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7c6195fe233736a393e5ce83d4175b47e22f9d6f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25925555"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28702481"
 ---
-# <a name="hierarchies-collection-ado-md"></a><span data-ttu-id="9600c-102">Hierarchies-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="9600c-102">Hierarchies collection (ADO MD)</span></span>
+# <a name="hierarchies-collection-ado-md"></a><span data-ttu-id="392ee-102">Hierarchies-Auflistung (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="392ee-102">Hierarchies collection (ADO MD)</span></span>
 
 
-<span data-ttu-id="9600c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="9600c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="392ee-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="392ee-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="9600c-104">Enthält die [Hierarchy](hierarchy-object-ado-md.md)-Objekte aus einer Dimension.</span><span class="sxs-lookup"><span data-stu-id="9600c-104">Contains the set [Hierarchy](hierarchy-object-ado-md.md) objects from a dimension.</span></span>
+<span data-ttu-id="392ee-104">Enthält die [Hierarchy](hierarchy-object-ado-md.md)-Objekte aus einer Dimension.</span><span class="sxs-lookup"><span data-stu-id="392ee-104">Contains the set [Hierarchy](hierarchy-object-ado-md.md) objects from a dimension.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9600c-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="9600c-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="392ee-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="392ee-105">Remarks</span></span>
 
-<span data-ttu-id="9600c-p101">**Hierarchies** ist eine ADO-Standardauflistung. Die Eigenschaften und Methoden einer Auflistung ermöglichen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="9600c-p101">**Hierarchies** is a standard ADO collection. With the properties and methods of a collection, you can do the following:</span></span>
+<span data-ttu-id="392ee-p101">**Hierarchies** ist eine ADO-Standardauflistung. Die Eigenschaften und Methoden einer Auflistung ermöglichen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="392ee-p101">**Hierarchies** is a standard ADO collection. With the properties and methods of a collection, you can do the following:</span></span>
 
-  - <span data-ttu-id="9600c-108">Abrufen der Anzahl an Objekten in der Auflistung, indem Sie die [Count](count-property-ado.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="9600c-108">Obtain the number of objects in the collection with the [Count](count-property-ado.md) property.</span></span>
+  - <span data-ttu-id="392ee-108">Abrufen der Anzahl an Objekten in der Auflistung, indem Sie die [Count](count-property-ado.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="392ee-108">Obtain the number of objects in the collection with the [Count](count-property-ado.md) property.</span></span>
 
-  - <span data-ttu-id="9600c-109">Zurückgeben eines Objekts aus der Auflistung, indem Sie die Standardeigenschaft [Item](item-property-ado.md) verwenden.</span><span class="sxs-lookup"><span data-stu-id="9600c-109">Return an object from the collection with the default [Item](item-property-ado.md) property.</span></span>
+  - <span data-ttu-id="392ee-109">Zurückgeben eines Objekts aus der Auflistung, indem Sie die Standardeigenschaft [Item](item-property-ado.md) verwenden.</span><span class="sxs-lookup"><span data-stu-id="392ee-109">Return an object from the collection with the default [Item](item-property-ado.md) property.</span></span>
 
-  - <span data-ttu-id="9600c-110">Aktualisieren der Objekte in der Auflistung aus dem Anbieter, indem Sie die [Refresh](refresh-method-ado.md)-Methode verwenden.</span><span class="sxs-lookup"><span data-stu-id="9600c-110">Update the objects in the collection from the provider with the [Refresh](refresh-method-ado.md) method.</span></span>
+  - <span data-ttu-id="392ee-110">Aktualisieren der Objekte in der Auflistung aus dem Anbieter, indem Sie die [Refresh](refresh-method-ado.md)-Methode verwenden.</span><span class="sxs-lookup"><span data-stu-id="392ee-110">Update the objects in the collection from the provider with the [Refresh](refresh-method-ado.md) method.</span></span>
 

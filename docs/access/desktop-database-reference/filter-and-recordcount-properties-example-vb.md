@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249167(v=office.15)
 ms:contentKeyID: 48544354
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c291dcfdcaf14543100d68bed46cabbc05403d7e
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: f892349d2ddb9c8fc5063d3fbec37ca9ef0d469f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936518"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721640"
 ---
-# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="f40f2-102">Filter- und RecordCount-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="f40f2-102">Filter and RecordCount properties example (VB)</span></span>
+# <a name="filter-and-recordcount-properties-example-vb"></a><span data-ttu-id="5d05d-102">Filter- und RecordCount-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="5d05d-102">Filter and RecordCount properties example (VB)</span></span>
 
 
-<span data-ttu-id="f40f2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f40f2-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5d05d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5d05d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="f40f2-104">In diesem Beispiel wird ein **Recordset-Objekt** in der Tabelle Publishers in der ***Pubs*** -Datenbank zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="f40f2-104">This example open a **Recordset** on the Publishers table in the ***Pubs*** database.</span></span> <span data-ttu-id="f40f2-105">Anschließend wird die [Filter](filter-property-ado.md) -Eigenschaft zur Begrenzung der Anzahl von sichtbaren Datensätze auf die Verleger in einem bestimmten Land/Region.</span><span class="sxs-lookup"><span data-stu-id="f40f2-105">It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region.</span></span> <span data-ttu-id="f40f2-106">Die **RecordCount** -Eigenschaft wird verwendet, um die Differenz zwischen der gefilterten und ungefilterten Recordsets anzeigen.</span><span class="sxs-lookup"><span data-stu-id="f40f2-106">The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.</span></span>
+<span data-ttu-id="5d05d-104">In diesem Beispiel wird ein **Recordset-Objekt** in der Tabelle Publishers in der ***Pubs*** -Datenbank zu öffnen.</span><span class="sxs-lookup"><span data-stu-id="5d05d-104">This example open a **Recordset** on the Publishers table in the ***Pubs*** database.</span></span> <span data-ttu-id="5d05d-105">Anschließend wird die [Filter](filter-property-ado.md) -Eigenschaft zur Begrenzung der Anzahl von sichtbaren Datensätze auf die Verleger in einem bestimmten Land/Region.</span><span class="sxs-lookup"><span data-stu-id="5d05d-105">It then uses the [Filter](filter-property-ado.md) property to limit the number of visible records to those publishers in a particular country/region.</span></span> <span data-ttu-id="5d05d-106">Die **RecordCount** -Eigenschaft wird verwendet, um die Differenz zwischen der gefilterten und ungefilterten Recordsets anzeigen.</span><span class="sxs-lookup"><span data-stu-id="5d05d-106">The **RecordCount** property is used to show the difference between the filtered and unfiltered recordsets.</span></span>
 
 ```vb 
  
@@ -105,7 +106,7 @@ End Sub
 
 
 > [!NOTE]
-> <span data-ttu-id="f40f2-p102">[!HINWEIS] Wenn Sie wissen, welche Daten Sie auswählen möchten, ist es in der Regel effizienter, ein **Recordset** -Objekt mit einer SQL-Anweisung zu öffnen. Das folgende Beispiel zeigt, wie Sie nur ein **Recordset** -Objekt erstellen und die Daten eines bestimmten Landes/einer bestimmten Region erhalten.</span><span class="sxs-lookup"><span data-stu-id="f40f2-p102">When you know the data you want to select, it's usually more efficient to open a **Recordset** with an SQL statement. This example shows how you can create just one **Recordset** and obtain records from a particular country/region.</span></span>
+> <span data-ttu-id="5d05d-p102">[!HINWEIS] Wenn Sie wissen, welche Daten Sie auswählen möchten, ist es in der Regel effizienter, ein **Recordset** -Objekt mit einer SQL-Anweisung zu öffnen. Das folgende Beispiel zeigt, wie Sie nur ein **Recordset** -Objekt erstellen und die Daten eines bestimmten Landes/einer bestimmten Region erhalten.</span><span class="sxs-lookup"><span data-stu-id="5d05d-p102">When you know the data you want to select, it's usually more efficient to open a **Recordset** with an SQL statement. This example shows how you can create just one **Recordset** and obtain records from a particular country/region.</span></span>
 
 
 

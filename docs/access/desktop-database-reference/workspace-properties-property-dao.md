@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff837262(v=office.15)
 ms:contentKeyID: 48548928
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 273166ba725a6c95e267e62cb726b6a4ae3f9947
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 7343835ba095572423847d16dac66e5ffd410146
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25931225"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28698267"
 ---
-# <a name="workspaceproperties-property-dao"></a><span data-ttu-id="dcac3-102">Workspace.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="dcac3-102">Workspace.Properties property (DAO)</span></span>
+# <a name="workspaceproperties-property-dao"></a><span data-ttu-id="8786d-102">Workspace.Properties-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="8786d-102">Workspace.Properties property (DAO)</span></span>
 
 
-<span data-ttu-id="dcac3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="dcac3-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8786d-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8786d-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="dcac3-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="dcac3-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
+<span data-ttu-id="8786d-p101">Gibt die **[Properties](properties-collection-dao.md)** -Auflistung des angegebenen Objekts zurück. Schreibgeschützt.</span><span class="sxs-lookup"><span data-stu-id="8786d-p101">Returns the **[Properties](properties-collection-dao.md)** collection of the specified object. Read-only.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="dcac3-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="dcac3-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="8786d-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="8786d-106">Syntax</span></span>
 
-<span data-ttu-id="dcac3-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="dcac3-107">*expression* .Properties</span></span>
+<span data-ttu-id="8786d-107">*Ausdruck* . Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8786d-107">*expression* .Properties</span></span>
 
-<span data-ttu-id="dcac3-108">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="dcac3-108">*expression* A variable that represents a **Workspace** object.</span></span>
+<span data-ttu-id="8786d-108">*Ausdruck* Eine Variable, die ein **Workspace** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="8786d-108">*expression* A variable that represents a **Workspace** object.</span></span>
 

@@ -6,25 +6,26 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195882(v=office.15)
 ms:contentKeyID: 48545671
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c93f312dd9b43a3235f049b9e6d3f95d08eba87f
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 920f0830a310452962eb5dd1c21be63215bf0f03
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26025595"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716012"
 ---
-# <a name="lookuprecord-data-block"></a><span data-ttu-id="4925c-102">NachschlagenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="4925c-102">LookupRecord data block</span></span>
+# <a name="lookuprecord-data-block"></a><span data-ttu-id="e5ed5-102">NachschlagenDatensatz-Datenblock</span><span class="sxs-lookup"><span data-stu-id="e5ed5-102">LookupRecord data block</span></span>
 
-<span data-ttu-id="4925c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4925c-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="e5ed5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e5ed5-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="4925c-104">Mit einem **NachschlagenDatensatz** -Datenblock wird eine Reihe von Aktionen für einen bestimmten Datensatz ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="4925c-104">A **LookupRecord** data block performs a set of actions on a specific record.</span></span>
+<span data-ttu-id="e5ed5-104">Mit einem **NachschlagenDatensatz** -Datenblock wird eine Reihe von Aktionen für einen bestimmten Datensatz ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-104">A **LookupRecord** data block performs a set of actions on a specific record.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="4925c-105">[!HINWEIS] Der **NachschlagenDatensatz** -Datenblock ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="4925c-105">The **LookupRecord** data block is available only in Data Macros.</span></span>
+> <span data-ttu-id="e5ed5-105">[!HINWEIS] Der **NachschlagenDatensatz** -Datenblock ist nur in Datenmakros verfügbar.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-105">The **LookupRecord** data block is available only in Data Macros.</span></span>
 
-## <a name="setting"></a><span data-ttu-id="4925c-106">Einstellung</span><span class="sxs-lookup"><span data-stu-id="4925c-106">Setting</span></span>
+## <a name="setting"></a><span data-ttu-id="e5ed5-106">Einstellung</span><span class="sxs-lookup"><span data-stu-id="e5ed5-106">Setting</span></span>
 
-<span data-ttu-id="4925c-107">Die **NachschlagenDatensatz** -Aktion kann mit den folgenden Argumenten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="4925c-107">The **SetField** action has the following arguments.</span></span>
+<span data-ttu-id="e5ed5-107">Die **NachschlagenDatensatz** -Aktion kann mit den folgenden Argumenten verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-107">The **SetField** action has the following arguments.</span></span>
 
 <table>
 <colgroup>
@@ -34,40 +35,40 @@ ms.locfileid: "26025595"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="4925c-108">Argument</span><span class="sxs-lookup"><span data-stu-id="4925c-108">Argument</span></span></p></th>
-<th><p><span data-ttu-id="4925c-109">Eingabe erforderlich</span><span class="sxs-lookup"><span data-stu-id="4925c-109">Required</span></span></p></th>
-<th><p><span data-ttu-id="4925c-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="4925c-110">Description</span></span></p></th>
+<th><p><span data-ttu-id="e5ed5-108">Argument</span><span class="sxs-lookup"><span data-stu-id="e5ed5-108">Argument</span></span></p></th>
+<th><p><span data-ttu-id="e5ed5-109">Eingabe erforderlich</span><span class="sxs-lookup"><span data-stu-id="e5ed5-109">Required</span></span></p></th>
+<th><p><span data-ttu-id="e5ed5-110">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="e5ed5-110">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="4925c-111">In</span><span class="sxs-lookup"><span data-stu-id="4925c-111">In</span></span></p></td>
-<td><p><span data-ttu-id="4925c-112">Ja</span><span class="sxs-lookup"><span data-stu-id="4925c-112">Yes</span></span></p></td>
-<td><p><span data-ttu-id="4925c-113">Eine Zeichenfolge, die den Datensatz für den Betrieb identifiziert.</span><span class="sxs-lookup"><span data-stu-id="4925c-113">A string that identifies the record to operate on.</span></span> <span data-ttu-id="4925c-114">Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</span><span class="sxs-lookup"><span data-stu-id="4925c-114">The <em>In</em> argument can contain the name of the table, a select query, or a SQL statement.</span></span></p><p><span data-ttu-id="4925c-115"><strong>Hinweis</strong>: der angegebene Datensatz darf keine enthalten Daten in einer verknüpften Tabelle oder ODBC-Datenquelle gespeichert sind.</span><span class="sxs-lookup"><span data-stu-id="4925c-115"><strong>NOTE</strong>: The specified record cannot include data stored in a linked table or ODBC data source.</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-111">In</span><span class="sxs-lookup"><span data-stu-id="e5ed5-111">In</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-112">Ja</span><span class="sxs-lookup"><span data-stu-id="e5ed5-112">Yes</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-113">Eine Zeichenfolge, die den Datensatz für den Betrieb identifiziert.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-113">A string that identifies the record to operate on.</span></span> <span data-ttu-id="e5ed5-114">Das <em>im</em> Argument kann der Name der Tabelle, einer select-Abfrage oder eine SQL-Anweisung enthalten.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-114">The <em>In</em> argument can contain the name of the table, a select query, or a SQL statement.</span></span></p><p><span data-ttu-id="e5ed5-115"><strong>Hinweis</strong>: der angegebene Datensatz darf keine enthalten Daten in einer verknüpften Tabelle oder ODBC-Datenquelle gespeichert sind.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-115"><strong>NOTE</strong>: The specified record cannot include data stored in a linked table or ODBC data source.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="4925c-116">Bedingung</span><span class="sxs-lookup"><span data-stu-id="4925c-116">Where Condition</span></span></p></td>
-<td><p><span data-ttu-id="4925c-117">Nein</span><span class="sxs-lookup"><span data-stu-id="4925c-117">No</span></span></p></td>
-<td><p><span data-ttu-id="4925c-118">Ein Zeichenfolgenausdruck, der zum Einschränken des Bereichs der Daten auf dem des <strong>NachschlagenDatensatz</strong> -Datenblocks wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="4925c-118">A string expression used to restrict the range of data on which the <strong>LookupRecord</strong> data block is performed.</span></span> <span data-ttu-id="4925c-119">Häufig sind beispielsweise Kriterien entspricht der WHERE-Klausel in einem SQL-Ausdruck ohne das Wort, in dem.</span><span class="sxs-lookup"><span data-stu-id="4925c-119">For example, criteria are often equivalent to the WHERE clause in an SQL expression, without the word WHERE.</span></span> <span data-ttu-id="4925c-120">Wenn Kriterien Length angegeben werden, wirkt sich auf die gesamte Domäne, die durch das Argument <em>im</em> angegebenen <strong>NachschlagenDatensatz</strong> -Datenblock.</span><span class="sxs-lookup"><span data-stu-id="4925c-120">If criteria are omitted, the <strong>LookupRecord</strong> data block operates on the entire domain specified by the <em>In</em> argument.</span></span> <span data-ttu-id="4925c-121">Jedes Feld, das im Argument Kriterien enthalten ist, muss auch ein Feld in <em>In</em>sein.</span><span class="sxs-lookup"><span data-stu-id="4925c-121">Any field that is included in criteria must also be a field in <em>In</em>.</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-116">Bedingung</span><span class="sxs-lookup"><span data-stu-id="e5ed5-116">Where Condition</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-117">Nein</span><span class="sxs-lookup"><span data-stu-id="e5ed5-117">No</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-118">Ein Zeichenfolgenausdruck, der zum Einschränken des Bereichs der Daten auf dem des <strong>NachschlagenDatensatz</strong> -Datenblocks wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-118">A string expression used to restrict the range of data on which the <strong>LookupRecord</strong> data block is performed.</span></span> <span data-ttu-id="e5ed5-119">Häufig sind beispielsweise Kriterien entspricht der WHERE-Klausel in einem SQL-Ausdruck ohne das Wort, in dem.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-119">For example, criteria are often equivalent to the WHERE clause in an SQL expression, without the word WHERE.</span></span> <span data-ttu-id="e5ed5-120">Wenn Kriterien Length angegeben werden, wirkt sich auf die gesamte Domäne, die durch das Argument <em>im</em> angegebenen <strong>NachschlagenDatensatz</strong> -Datenblock.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-120">If criteria are omitted, the <strong>LookupRecord</strong> data block operates on the entire domain specified by the <em>In</em> argument.</span></span> <span data-ttu-id="e5ed5-121">Jedes Feld, das im Argument Kriterien enthalten ist, muss auch ein Feld in <em>In</em>sein.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-121">Any field that is included in criteria must also be a field in <em>In</em>.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="4925c-122">Alias</span><span class="sxs-lookup"><span data-stu-id="4925c-122">Alias</span></span></p></td>
-<td><p><span data-ttu-id="4925c-123">Nein</span><span class="sxs-lookup"><span data-stu-id="4925c-123">No</span></span></p></td>
-<td><p><span data-ttu-id="4925c-124">Eine Zeichenfolge, die einen alternativen Namen für den durch das Argument <em>im</em> angegebenen Datensatz enthält.</span><span class="sxs-lookup"><span data-stu-id="4925c-124">A string that provides an alternative name for the record specified by the <em>In</em> argument.</span></span> <span data-ttu-id="4925c-125">Häufig verwendet, um den Tabellennamen für nachfolgende Verweise zu verhindern, dass mögliche mehrdeutige Verweise zu verkürzen.</span><span class="sxs-lookup"><span data-stu-id="4925c-125">Often used to shorten the table name for subsequent references to prevent possible ambiguous references.</span></span> <span data-ttu-id="4925c-126">Wenn <em>Alias</em> nicht angegeben ist, wird der Tabellen- oder Abfragename als Alias verwendet.</span><span class="sxs-lookup"><span data-stu-id="4925c-126">If <em>Alias</em> is not specified, the table or query name will be used as the alias.</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-122">Alias</span><span class="sxs-lookup"><span data-stu-id="e5ed5-122">Alias</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-123">Nein</span><span class="sxs-lookup"><span data-stu-id="e5ed5-123">No</span></span></p></td>
+<td><p><span data-ttu-id="e5ed5-124">Eine Zeichenfolge, die einen alternativen Namen für den durch das Argument <em>im</em> angegebenen Datensatz enthält.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-124">A string that provides an alternative name for the record specified by the <em>In</em> argument.</span></span> <span data-ttu-id="e5ed5-125">Häufig verwendet, um den Tabellennamen für nachfolgende Verweise zu verhindern, dass mögliche mehrdeutige Verweise zu verkürzen.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-125">Often used to shorten the table name for subsequent references to prevent possible ambiguous references.</span></span> <span data-ttu-id="e5ed5-126">Wenn <em>Alias</em> nicht angegeben ist, wird der Tabellen- oder Abfragename als Alias verwendet.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-126">If <em>Alias</em> is not specified, the table or query name will be used as the alias.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="remarks"></a><span data-ttu-id="4925c-127">Hinweise</span><span class="sxs-lookup"><span data-stu-id="4925c-127">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="e5ed5-127">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="e5ed5-127">Remarks</span></span>
 
-<span data-ttu-id="4925c-128">Wenn die durch die Argumente *In* und *Bedingung* angegebenen Kriterien mehrere Datensätze angegeben ist, wird das **NachschlagenDatensatz** -Datenblock nur für den ersten Datensatz ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="4925c-128">If the criteria specified by the *In* and *Where Condition* arguments specifies more than one record, the **LookupRecord** data block will operate only on the first record.</span></span>
+<span data-ttu-id="e5ed5-128">Wenn die durch die Argumente *In* und *Bedingung* angegebenen Kriterien mehrere Datensätze angegeben ist, wird das **NachschlagenDatensatz** -Datenblock nur für den ersten Datensatz ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-128">If the criteria specified by the *In* and *Where Condition* arguments specifies more than one record, the **LookupRecord** data block will operate only on the first record.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4925c-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4925c-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e5ed5-129">Beispiel</span><span class="sxs-lookup"><span data-stu-id="e5ed5-129">Example</span></span>
 
-<span data-ttu-id="4925c-130">Das folgende Beispiel veranschaulicht die SetReturnVar-Aktion verwenden, um einen Wert aus ein benanntes Datenmakro zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="4925c-130">The following example shows how to use the SetReturnVar action to return a value from a named data macro.</span></span> <span data-ttu-id="4925c-131">Eine mit dem Namen **CurrentServiceRequest** ReturnVar wird an das Makro oder Visual Basic für Applikationen (VBA) Unterroutine zurückgegeben, die das benanntes Datenmakro aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="4925c-131">A ReturnVar named **CurrentServiceRequest** is returned to the macro or Visual Basic for Applications (VBA) subroutine that called the named data macro.</span></span>
+<span data-ttu-id="e5ed5-130">Das folgende Beispiel veranschaulicht die SetReturnVar-Aktion verwenden, um einen Wert aus ein benanntes Datenmakro zurückzugeben.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-130">The following example shows how to use the SetReturnVar action to return a value from a named data macro.</span></span> <span data-ttu-id="e5ed5-131">Eine mit dem Namen **CurrentServiceRequest** ReturnVar wird an das Makro oder Visual Basic für Applikationen (VBA) Unterroutine zurückgegeben, die das benanntes Datenmakro aufgerufen.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-131">A ReturnVar named **CurrentServiceRequest** is returned to the macro or Visual Basic for Applications (VBA) subroutine that called the named data macro.</span></span>
 
-<span data-ttu-id="4925c-132">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="4925c-132">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
+<span data-ttu-id="e5ed5-132">**Beispielcode von** der [Microsoft Access 2010 Programmer's Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span><span class="sxs-lookup"><span data-stu-id="e5ed5-132">**Sample code provided by** the [Microsoft Access 2010 Programmer’s Reference](https://www.amazon.com/Microsoft-Access-2010-Programmers-Reference/dp/8126528125).</span></span>
 
 ```vb
     RunDataMacro
@@ -84,7 +85,7 @@ ms.locfileid: "26025595"
 
 <br/>
 
-<span data-ttu-id="4925c-133">Das folgende Beispiel veranschaulicht die Auslösenfehler-Aktion verwenden, um das Ereignis vor Änderung Daten Makro abzubrechen.</span><span class="sxs-lookup"><span data-stu-id="4925c-133">The following example shows how to use the RaiseError action to cancel the Before Change data macro event.</span></span> <span data-ttu-id="4925c-134">Wenn das Feld AssignedTo aktualisiert wird, wird mit einem NachschlagenDatensatz-Datenblock verwendet, um festzustellen, ob der zugewiesene Techniker eine open Service-Anforderung derzeit zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="4925c-134">When the AssignedTo field is updated, a LookupRecord data block is used to determine whether the assigned technician is currently assigned to an open service request.</span></span> <span data-ttu-id="4925c-135">Wenn dies der Fall ist, wird das Ereignis vor Änderung abgebrochen, und der Datensatz nicht aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="4925c-135">If this is true, the Before Change event is cancelled and the record is not updated.</span></span>
+<span data-ttu-id="e5ed5-133">Das folgende Beispiel veranschaulicht die Auslösenfehler-Aktion verwenden, um das Ereignis vor Änderung Daten Makro abzubrechen.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-133">The following example shows how to use the RaiseError action to cancel the Before Change data macro event.</span></span> <span data-ttu-id="e5ed5-134">Wenn das Feld AssignedTo aktualisiert wird, wird mit einem NachschlagenDatensatz-Datenblock verwendet, um festzustellen, ob der zugewiesene Techniker eine open Service-Anforderung derzeit zugewiesen ist.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-134">When the AssignedTo field is updated, a LookupRecord data block is used to determine whether the assigned technician is currently assigned to an open service request.</span></span> <span data-ttu-id="e5ed5-135">Wenn dies der Fall ist, wird das Ereignis vor Änderung abgebrochen, und der Datensatz nicht aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="e5ed5-135">If this is true, the Before Change event is cancelled and the record is not updated.</span></span>
 
 ```vb
     /* Get the name of the technician  */

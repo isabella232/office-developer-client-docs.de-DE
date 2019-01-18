@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn125759(v=office.15)
 ms:contentKeyID: 52074632
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a90a9ad97213441267e2db206ead38352e0b1805
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: ecca97ca27edf5467779abc5a320760abc097c9a
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25936392"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722718"
 ---
-# <a name="properties-methods-dao"></a><span data-ttu-id="b2518-102">Eigenschaften, Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="b2518-102">Properties methods (DAO)</span></span>
+# <a name="properties-methods-dao"></a><span data-ttu-id="70d63-102">Eigenschaften, Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="70d63-102">Properties methods (DAO)</span></span>
 
-<span data-ttu-id="b2518-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b2518-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="70d63-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="70d63-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="b2518-104">Properties.Append-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="b2518-104">Properties.Append method (DAO)</span></span>](properties-append-method-dao.md)
-- [<span data-ttu-id="b2518-105">Properties.Delete-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="b2518-105">Properties.Delete method (DAO)</span></span>](properties-delete-method-dao.md)
-- [<span data-ttu-id="b2518-106">Properties.Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="b2518-106">Properties.Refresh method (DAO)</span></span>](properties-refresh-method-dao.md)
+- [<span data-ttu-id="70d63-104">Properties.Append-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="70d63-104">Properties.Append method (DAO)</span></span>](properties-append-method-dao.md)
+- [<span data-ttu-id="70d63-105">Properties.Delete-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="70d63-105">Properties.Delete method (DAO)</span></span>](properties-delete-method-dao.md)
+- [<span data-ttu-id="70d63-106">Properties.Refresh-Methode (DAO)</span><span class="sxs-lookup"><span data-stu-id="70d63-106">Properties.Refresh method (DAO)</span></span>](properties-refresh-method-dao.md)
 

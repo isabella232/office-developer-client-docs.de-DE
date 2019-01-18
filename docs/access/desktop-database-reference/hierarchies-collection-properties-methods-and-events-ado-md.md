@@ -6,28 +6,29 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249423(v=office.15)
 ms:contentKeyID: 48545458
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 2f94207368fff7925eb8d0c6878370b6077f9566
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: af88c865e27d3809e82f5b9bb53fea85883fe71b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947721"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722851"
 ---
-# <a name="hierarchies-collection-properties-methods-and-events-ado-md"></a><span data-ttu-id="e1f49-102">Hierarchies-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="e1f49-102">Hierarchies collection properties, methods, and events (ADO MD)</span></span>
+# <a name="hierarchies-collection-properties-methods-and-events-ado-md"></a><span data-ttu-id="4359b-102">Hierarchies-Auflistung: Eigenschaften, Methoden und Ereignisse (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="4359b-102">Hierarchies collection properties, methods, and events (ADO MD)</span></span>
 
 
-<span data-ttu-id="e1f49-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="e1f49-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="4359b-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="4359b-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e1f49-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="e1f49-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4359b-104">Eigenschaften</span><span class="sxs-lookup"><span data-stu-id="4359b-104">Properties</span></span>
 
-- [<span data-ttu-id="e1f49-105">Count-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e1f49-105">Count property</span></span>](count-property-ado.md)
-- [<span data-ttu-id="e1f49-106">Item-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="e1f49-106">Item property</span></span>](item-property-ado.md)
+- [<span data-ttu-id="4359b-105">Count-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="4359b-105">Count property</span></span>](count-property-ado.md)
+- [<span data-ttu-id="4359b-106">Item-Eigenschaft</span><span class="sxs-lookup"><span data-stu-id="4359b-106">Item property</span></span>](item-property-ado.md)
 
-## <a name="methods"></a><span data-ttu-id="e1f49-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="e1f49-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="4359b-107">Methoden</span><span class="sxs-lookup"><span data-stu-id="4359b-107">Methods</span></span>
 
-- [<span data-ttu-id="e1f49-108">Refresh-Methode</span><span class="sxs-lookup"><span data-stu-id="e1f49-108">Refresh method</span></span>](refresh-method-ado.md)
+- [<span data-ttu-id="4359b-108">Refresh-Methode</span><span class="sxs-lookup"><span data-stu-id="4359b-108">Refresh method</span></span>](refresh-method-ado.md)
 
-## <a name="events"></a><span data-ttu-id="e1f49-109">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="e1f49-109">Events</span></span>
+## <a name="events"></a><span data-ttu-id="4359b-109">Ereignisse</span><span class="sxs-lookup"><span data-stu-id="4359b-109">Events</span></span>
 
-<span data-ttu-id="e1f49-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="e1f49-110">None.</span></span>
+<span data-ttu-id="4359b-110">Keine.</span><span class="sxs-lookup"><span data-stu-id="4359b-110">None.</span></span>
 

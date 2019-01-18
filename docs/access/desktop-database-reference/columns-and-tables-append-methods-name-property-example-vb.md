@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249140(v=office.15)
 ms:contentKeyID: 48544238
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f017092a5bd68a4fbde7cc1a7ceab9ccf3ff2900
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d68078c24f2bee9f935b71d60cb15986d26d00ac
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872557"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28721521"
 ---
-# <a name="columns-and-tables-append-methods-name-property-example-vb"></a><span data-ttu-id="6b5fd-102">Spalten und Tabellen Append Methoden, Name-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="6b5fd-102">Columns and Tables Append Methods, Name property example (VB)</span></span>
+# <a name="columns-and-tables-append-methods-name-property-example-vb"></a><span data-ttu-id="abac2-102">Spalten und Tabellen Append Methoden, Name-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="abac2-102">Columns and Tables Append Methods, Name property example (VB)</span></span>
 
 
-<span data-ttu-id="6b5fd-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="6b5fd-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="abac2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="abac2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="6b5fd-104">Im folgenden Code wird das Erstellen einer neuen Tabelle veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="6b5fd-104">The following code demonstrates how to create a new table.</span></span>
+<span data-ttu-id="abac2-104">Im folgenden Code wird das Erstellen einer neuen Tabelle veranschaulicht.</span><span class="sxs-lookup"><span data-stu-id="abac2-104">The following code demonstrates how to create a new table.</span></span>
 
 ```vb 
  

@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn160986(v=office.15)
 ms:contentKeyID: 52072950
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5e01e6703a054e730c8cc249554e69e325ca0042
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 557e4a5330f535235ce3ba635c370ee1121f7ac2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922657"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28716538"
 ---
-# <a name="index-object-reference-dao"></a><span data-ttu-id="66853-102">Index-Objektverweis (DAO)</span><span class="sxs-lookup"><span data-stu-id="66853-102">Index object reference (DAO)</span></span>
+# <a name="index-object-reference-dao"></a><span data-ttu-id="f8406-102">Index-Objektverweis (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8406-102">Index object reference (DAO)</span></span>
 
-<span data-ttu-id="66853-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="66853-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="f8406-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="f8406-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-- [<span data-ttu-id="66853-104">Index-Objekt (DAO)</span><span class="sxs-lookup"><span data-stu-id="66853-104">Index object (DAO)</span></span>](index-object-dao.md)
-- [<span data-ttu-id="66853-105">Index-Member (DAO)</span><span class="sxs-lookup"><span data-stu-id="66853-105">Index members (DAO)</span></span>](index-members-dao.md)
-- [<span data-ttu-id="66853-106">Index-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="66853-106">Index properties (DAO)</span></span>](index-properties-dao.md)
-- [<span data-ttu-id="66853-107">Index-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="66853-107">Index methods (DAO)</span></span>](index-methods-dao.md)
+- [<span data-ttu-id="f8406-104">Index-Objekt (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8406-104">Index object (DAO)</span></span>](index-object-dao.md)
+- [<span data-ttu-id="f8406-105">Index-Member (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8406-105">Index members (DAO)</span></span>](index-members-dao.md)
+- [<span data-ttu-id="f8406-106">Index-Eigenschaften (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8406-106">Index properties (DAO)</span></span>](index-properties-dao.md)
+- [<span data-ttu-id="f8406-107">Index-Methoden (DAO)</span><span class="sxs-lookup"><span data-stu-id="f8406-107">Index methods (DAO)</span></span>](index-methods-dao.md)
 
