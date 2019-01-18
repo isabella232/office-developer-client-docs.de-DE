@@ -3,17 +3,17 @@ title: Übersicht über Outlook-MAPI-Referenz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 api_type:
 - COM
 ms.assetid: 4c126d0c-d7c0-45c0-801c-c9f1e44c9db6
 description: 'Letzte Änderung: Freitag, 1. Februar 2013'
-ms.openlocfilehash: a5c1daf44f89d1ef8aa7472d69dfd7e86bbb92f6
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+localization_priority: Priority
+ms.openlocfilehash: dc743824cf96800c32d4b4006ae86fbff0bd48a0
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25388000"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723019"
 ---
 # <a name="outlook-mapi-reference-overview"></a>Übersicht über die Outlook-MAPI-Referenz
 

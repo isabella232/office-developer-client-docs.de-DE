@@ -3,15 +3,15 @@ title: Office gemeinsam genutzt
 manager: soliver
 ms.date: 04/20/2016
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 1c4937c4-0998-4f81-a994-50d3dd54727c
 description: Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA-Referenzen, Schulungen und technische Artikel zum Entwickeln von Lösungen und zum Anpassen von Office.
-ms.openlocfilehash: c0c08c980e0f42128b0fe8b2ad6c9225e38c9afe
-ms.sourcegitcommit: 6a314fdfde4349591ed899019695c36537f45924
+localization_priority: Priority
+ms.openlocfilehash: 758d0b25457089de0d611d41fa962e7323985abe
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454558"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704413"
 ---
 # <a name="office-shared"></a>Office gemeinsam genutzt
 
@@ -32,7 +32,7 @@ Hier finden Sie Vorgehensweisen, Beispielcode, SDK- und API-Dokumentationen, VBA
   
 ### <a name="office-365-apis"></a>Office 365-APIs
   
-- [Erste Schritte](https://developer.microsoft.com/de-DE/office/docs)
+- [Erste Schritte](https://developer.microsoft.com/en-us/office/docs)
   
 - [Plattformübersicht](https://docs.microsoft.com/previous-versions/office/office-365-api/)
   

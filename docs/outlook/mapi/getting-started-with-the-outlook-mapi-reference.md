@@ -3,15 +3,15 @@ title: Erste Schritte mit der Outlook-MAPI-Referenz
 manager: soliver
 ms.date: 11/16/2014
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: a191f5e0-2a60-4d01-9010-892360b3bfa6
 description: In der Referenz zur Microsoft Outlook Messaging-API (MAPI) wird die Erstellung von MAPI-Lösungen beschrieben, die mit Microsoft Outlook 2013 und Outlook 2016 zusammenarbeiten.
-ms.openlocfilehash: f8603c2aff1d2647ff3b02cafc4760aa7f00392c
-ms.sourcegitcommit: 0cf39e5382b8c6f236c8a63c6036849ed3527ded
+localization_priority: Priority
+ms.openlocfilehash: 879495949423de7ebfe01ba584adc91ce387ef97
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "22577086"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28718266"
 ---
 # <a name="getting-started-with-the-outlook-mapi-reference"></a>Erste Schritte mit der Outlook-MAPI-Referenz
 

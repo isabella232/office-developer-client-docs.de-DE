@@ -3,15 +3,15 @@ title: OneNote-Entwicklerreferenz
 manager: soliver
 ms.date: 05/16/2016
 ms.audience: Developer
-localization_priority: Normal
 ms.assetid: 4c4ef9e8-6b30-481b-8023-2e1280bcbcc9
 description: Diese Referenz enthält konzeptionelle Übersichten und programmatische Referenzen, die Sie beim Entwickeln von Lösungen für OneNote 2013-Desktopclientanwendungen unterstützen sollen.
-ms.openlocfilehash: b19e9957d1faed1bda150df34f61209d9f40fc5d
-ms.sourcegitcommit: ef717c65d8dd41ababffb01eafc443c79950aed4
+localization_priority: Priority
+ms.openlocfilehash: d2b401a768e62c4b9712b1590bfaf499c2b022ab
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "25395707"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28725924"
 ---
 # <a name="onenote-developer-reference"></a>OneNote-Entwicklerreferenz
 

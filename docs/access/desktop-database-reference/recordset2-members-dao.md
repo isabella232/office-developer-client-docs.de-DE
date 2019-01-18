@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff195572(v=office.15)
 ms:contentKeyID: 48545523
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 5f7011edaf7cbeb145ea30af64f7ba6bd85945f4
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
+localization_priority: Normal
+ms.openlocfilehash: 29d1472e8cd02d8968ba84dbc1c1cf99be7ee858
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937708"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726281"
 ---
 # <a name="recordset2-members-dao"></a>Recordset2-Member (DAO)
 
@@ -64,7 +65,7 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 <td><p>Wird für dieses Objekt nicht unterstützt.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset2-edit-method-dao.md">Edit</a></strong></p></td>
+<td><p><strong><a href="recordset2-edit-method-dao.md">Bearbeiten</a></strong></p></td>
 <td><p>Kopiert den aktuellen Datensatz aus einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt zur nachfolgenden Bearbeitung in den Kopierpuffer.</p></td>
 </tr>
 <tr class="odd">
@@ -129,7 +130,7 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 <td><p>Sucht den Datensatz in einem indizierten <strong>Recordset</strong> -Objekt vom Typ Tabelle, das den angegebenen Kriterien für den aktuellen Index entspricht, und macht diesen Datensatz zum aktuellen Datensatz (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset2-update-method-dao.md">Aktualisieren</a></strong></p></td>
+<td><p><strong><a href="recordset2-update-method-dao.md">Update</a></strong></p></td>
 <td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Speichert den Inhalt des Kopierpuffers in einem aktualisierbaren <strong><a href="recordset-object-dao.md">Recordset</a></strong> -Objekt.</p></td>
 </tr>
@@ -191,7 +192,7 @@ Ein Recordset2 -Objekt stellt die Datensätze in einer Basistabelle oder die Dat
 <td><p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der die Textmarke des ersten Datensatzes in einem Recordset -Objekt vom Typ Dynaset angibt, das lokal zwischenzuspeichernde Daten aus einer ODBC-Datenquelle enthält (gilt nur für Microsoft Access-Arbeitsbereiche).</p></td>
 </tr>
 <tr class="even">
-<td><p><strong><a href="recordset2-connection-property-dao.md">Connection</a></strong></p></td>
+<td><p><strong><a href="recordset2-connection-property-dao.md">Verbindung</a></strong></p></td>
 <td><p>Gibt das <strong><a href="connection-object-dao.md">Connection</a></strong> -Objekt zurück, das sich auf die Datenbank bezieht.</p></td>
 </tr>
 <tr class="odd">

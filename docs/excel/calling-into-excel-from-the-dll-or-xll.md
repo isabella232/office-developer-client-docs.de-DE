@@ -1,20 +1,20 @@
 ---
 title: Aufrufen von Excel von der DLL oder XLL aus
 manager: soliver
-ms.date: 03/09/2015
+ms.date: 08/22/2018
 ms.audience: Developer
 ms.topic: overview
 keywords:
 - dialog boxes [excel 2007], invoking excel commands,DLLs [Excel 2007], calling into Excel,passing arguments to C API functions [Excel 2007],commands [Excel 2007], invoking with dialog boxes,commands [Excel 2007], accessible from DLL/XLL,Excel4 function [Excel 2007],Excel12 function [Excel 2007],XLCallVer function [Excel 2007],operRes argument [Excel 2007],functions [Excel 2007], accessible from DLL/XLL,Excel12v function [Excel 2007],DLL-only functions [Excel 2007],C API [Excel 2007], passing arguments,count argument [Excel 2007],commands [Excel 2007], calling in international versions,DLL-only commands [Excel 2007],international versions [Excel 2007], calling functions and commands,XLLs [Excel 2007], calling into Excel,Excel 4v function [Excel 2007],xlfn argument [Excel 2007],functions [Excel 2007], calling in international versions
-localization_priority: Normal
 ms.assetid: 616e3def-e4ec-4f3c-bc65-3b92710da1e6
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 3f36d2f59b7f5bef9f9ffdca4d13e95c788bf113
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+localization_priority: Priority
+ms.openlocfilehash: 8f2b63ba84b0a78bbf317c284913a8ec0986436f
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790443"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726120"
 ---
 # <a name="calling-into-excel-from-the-dll-or-xll"></a>Aufrufen von Excel von der DLL oder XLL aus
 
@@ -50,7 +50,7 @@ Damit die DLL **Excel4**, **Excel4v**, **Excel12** oder **Excel12v** aufrufen ka
     
 Sie können die Excel-C-API in den folgenden Szenarien nicht aufrufen:
   
-- Von einem Betriebssystemereignis aus (z.�B. von der [DllMain](http://msdn.microsoft.com/library/base.dllmain%28Office.15%29.aspx)-Funktion aus). 
+- Von einem Betriebssystemereignis aus (z.�B. von der [DllMain](https://docs.microsoft.com/windows/desktop/dlls/dllmain)-Funktion aus). 
     
 - Von einem Hintergrundthread aus, den die DLL erstellt hat.
     
@@ -66,7 +66,7 @@ Alle diese vier Funktionen geben eine ganze Zahl zur�ck, mit der dem Aufrufer 
 |4  <br/> |**xlretInvCount** <br/> |Die Anzahl der im Aufruf angegebenen Argumente ist falsch.  <br/> |
 |8  <br/> |**xlretInvXloper** <br/> |Mindestens eines der **XLOPER**- oder **XLOPER12**-Argumentwerte ist falsch formatiert oder aufgef�llt.  <br/> |
 |16  <br/> |**xlretStackOvfl** <br/> |Excel hat ein festgestellt, dass der Vorgang möglicherweise zum Stapelüberlauf führt und hat die Funktion deshalb nicht aufgerufen.  <br/> |
-|32  <br/> |**xlretFailed** <br/> |Beim Ausf�hren des Befehls oder der Funktion ist ein Fehler aufgetreten, dessen Ursache nicht von einem der anderen R�ckgabewerte beschrieben wird. Ein Vorgang, der zu viel Speicher erfordert, w�rde z.�B. diesen Fehler zur�ckgeben. Dies kann bei dem Versuch auftreten, einen sehr gro�en Verweis in ein **xltypeMulti**-Array mithilfe der [xlCoerce](http://msdn.microsoft.com/library/guid_9d47c16c-a7e7-4998-b594-9cf001827b7b%28Office.15%29.aspx)-Funktion zu konvertieren.  <br/> |
+|32  <br/> |**xlretFailed** <br/> |Beim Ausf�hren des Befehls oder der Funktion ist ein Fehler aufgetreten, dessen Ursache nicht von einem der anderen R�ckgabewerte beschrieben wird. Ein Vorgang, der zu viel Speicher erfordert, w�rde z.�B. diesen Fehler zur�ckgeben. Dies kann bei dem Versuch auftreten, einen sehr gro�en Verweis in ein **xltypeMulti**-Array mithilfe der [xlCoerce](xlcoerce.md)-Funktion zu konvertieren.  <br/> |
 |64  <br/> |**xlretUncalced** <br/> |Bei dem Vorgang wurde versucht, den Wert einer nicht berechneten Zelle abzurufen. Um Integrit�t der Neuberechnung in Excel zu erhalten, ist dies für Excel-Arbeitsblattfunktionen nicht zul�ssig. Als Makrovorlagenfunktionen registrierte XLL-Befehle und Funktionen d�rfen jedoch auf nicht berechnete Zellwerte zugreifen.  <br/> |
 |128  <br/> |**xlretNotThreadSafe** <br/> |(Ab Excel 2007) Eine als threadsicher registrierte XLL-Arbeitsblattfunktion hat versucht, eine C-API-Funktion aufzurufen, die nicht threadsicher ist. Eine threadsichere Funktion darf z.�B. die XLM-Funktion **xlfGetCell** nicht aufrufen.  <br/> |
 |256  <br/> |**xlRetInvAsynchronousContext** <br/> |(AbExcel 2010) Das asynchrone Behandeln von Funktionen ist ung�ltig.  <br/> |
@@ -74,7 +74,7 @@ Alle diese vier Funktionen geben eine ganze Zahl zur�ck, mit der dem Aufrufer 
    
 Gibt die Funktion einen der Fehlerwerte in der Tabelle zur�ck(d.�h. sie gibt nicht **xlretSuccess** zur�ck), wird der zur�ckgegebene **XLOPER**- oder **XLOPER12**-Wert auch auf **#VALUE!** festgelegt. Unter bestimmten Umst�nden reicht es m�glicherweise aus, dies zu pr�fen. Beachten Sie jedoch, dass ein Aufruf sowohl **xlretSuccess** als auch **#VALUE!** zur�ckgeben kann.
   
-Wenn ein Aufruf der C-API zu **xlretUncalced** oder **xlretAbort** f�hrt, sollte der DLL- oder XLL-Code ein Steuerelement an Excel zur�ckgeben, bevor weitere C-API-Aufrufe durchgef�hrt werden (andere als Aufrufe der [xlfree](http://msdn.microsoft.com/library/guid_8ce2eef2-0138-495d-b6cb-bbb727a3cda4%28Office.15%29.aspx)-Funktion zum Freigeben der an Excel zugewiesenen Arbeitsspeicherressourcen in **XLOPER**- und **XLOPER12**-Werten). 
+Wenn ein Aufruf der C-API zu **xlretUncalced** oder **xlretAbort** f�hrt, sollte der DLL- oder XLL-Code ein Steuerelement an Excel zur�ckgeben, bevor weitere C-API-Aufrufe durchgef�hrt werden (andere als Aufrufe der [xlfree](xlfree.md)-Funktion zum Freigeben der an Excel zugewiesenen Arbeitsspeicherressourcen in **XLOPER**- und **XLOPER12**-Werten). 
   
 ### <a name="command-or-function-enumeration-argument-xlfn"></a>Befehls- oder Funktionsenumerationsargument: xlfn
 
@@ -238,7 +238,7 @@ void Excel12v_example(double *dbl_array, int size, double &sum, double &average,
 
 Beim Ersetzen von Verweisen auf **XLOPER12**-Werte durch **XLOPER**, und von **Excel12v** durch **Excel4v**, w�re im vorangehenden Code eine Funktion das Ergebnis, die mit allen Versionen von Excel funktioniert. Dieser Vorgang der Excel-Funktionen **SUM**, **AVERAGE**, **MIN** und **MAX** ist so einfach, dass es effizienter w�re, diese in C zu codieren, statt Vorbereitung der Argumente und des Aufrufs in Excel. Viele der Excel-Funktionen sind jedoch komplexer, sodass dieser Ansatz in bestimmten Szenarien hilfreich ist. 
   
-Im Thema [xlfRegister](http://msdn.microsoft.com/library/guid_c730124c-1886-4a0f-8f06-79763025537d%28Office.15%29.aspx) ist ein weiteres Beispiel für die Verwendung mit **Excel4v** und **Excel12v** enthalten. Beim Registrieren einer XLL-Arbeitsblattfunktion können Sie eine beschreibende Zeichenfolge für jedes Argument angeben, das im Dialogfeld **Funktion einf�gen** verwendet wird. Die Gesamtanzahl der für **xlfRegister** angegebenen Argumente h�ngt daher von der Anzahl der Argumente ab, die Ihre XLL-Funktion verwendet, und variiert je nach Funktion. 
+Im Thema [xlfRegister](xlfregister-form-1.md) ist ein weiteres Beispiel für die Verwendung mit **Excel4v** und **Excel12v** enthalten. Beim Registrieren einer XLL-Arbeitsblattfunktion können Sie eine beschreibende Zeichenfolge für jedes Argument angeben, das im Dialogfeld **Funktion einf�gen** verwendet wird. Die Gesamtanzahl der für **xlfRegister** angegebenen Argumente h�ngt daher von der Anzahl der Argumente ab, die Ihre XLL-Funktion verwendet, und variiert je nach Funktion. 
   
 Beim Aufrufen einer C-API-Funktion oder eines -Befehls mit der gleichen Anzahl von Argumenten, m�chten Sie den zus�tzlichen Schritt vermeiden und kein Array von Zeigern für diese Argumente erstellen. In diesen F�llen ist es einfacher, **Excel4** und **Excel12** zu verwenden. Beim Registrieren von XLL-Funktionen und -Befehlen z.�B. m�ssen Sie den vollst�ndigen Pfad und Dateinamen der DLL oder XLL angeben. Sie können den Dateinamen in einem Aufruf von **xlfGetName** abrufen und diesen anschlie�end mit einem Aufruf von **xlFree** freigeben, wie im folgenden Beispiel für **Excel4** und **Excel12** dargestellt.
   
@@ -317,15 +317,9 @@ Obwohl Sie auf diese Weise feststellen können, ob die neue C-API zur Laufzeit v
   
 ## <a name="see-also"></a>Siehe auch
 
-
-
-[Erstellen von XLLs](creating-xlls.md)
-  
-[Zugreifen auf XLL-Code in Excel](accessing-xll-code-in-excel.md)
-  
-[Excel XLL SDK – API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)
-  
-[C-API-Rückruffunktionen Excel4, Excel12](c-api-callback-functions-excel4-excel12.md)
-  
-[Entwickeln von XLLs für Excel](developing-excel-xlls.md)
+- [Erstellen von XLLs](creating-xlls.md)  
+- [Zugreifen auf XLL-Code in Excel](accessing-xll-code-in-excel.md)  
+- [Excel XLL SDK – API-Funktionsreferenz](excel-xll-sdk-api-function-reference.md)  
+- [C-API-Rückruffunktionen Excel4, Excel12](c-api-callback-functions-excel4-excel12.md)  
+- [Entwickeln von XLLs für Excel](developing-excel-xlls.md)
 

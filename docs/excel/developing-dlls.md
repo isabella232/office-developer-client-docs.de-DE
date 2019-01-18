@@ -6,15 +6,15 @@ ms.audience: Developer
 ms.topic: overview
 keywords:
 - DLLs [Excel 2007], Erstellen,Erstellen von DLLs [Excel 2007]
-localization_priority: Normal
 ms.assetid: 5d69d06d-a126-4c47-82ad-17112674c8a3
 description: 'Gilt für: Excel 2013 | Office 2013 | Visual Studio'
-ms.openlocfilehash: 030cdd4358d9a71841eca6acfcef6e71839e02a0
-ms.sourcegitcommit: 9d60cd82b5413446e5bc8ace2cd689f683fb41a7
+localization_priority: Priority
+ms.openlocfilehash: 89dd7b65ad94ba2fc7e1cf3f99ee163d3003d0fe
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "19790415"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28704749"
 ---
 # <a name="developing-dlls"></a>Entwickeln von DLLs
 
