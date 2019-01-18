@@ -6,33 +6,34 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248941(v=office.15)
 ms:contentKeyID: 48543502
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 9f48b3ea16e45b3bde12ed9f8584c3218f955eba
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: c82c95a430da76694fe26300e877e86f86a2eb4b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25922391"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28719904"
 ---
-# <a name="cubedef-object-ado-md"></a><span data-ttu-id="068f7-102">CubeDef-Objekt (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="068f7-102">CubeDef object (ADO MD)</span></span>
+# <a name="cubedef-object-ado-md"></a><span data-ttu-id="07d81-102">CubeDef-Objekt (ADO MD)</span><span class="sxs-lookup"><span data-stu-id="07d81-102">CubeDef object (ADO MD)</span></span>
 
 
-<span data-ttu-id="068f7-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="068f7-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="07d81-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="07d81-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="068f7-104">Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.</span><span class="sxs-lookup"><span data-stu-id="068f7-104">Represents a cube from a multidimensional schema, containing a set of related dimensions.</span></span>
+<span data-ttu-id="07d81-104">Stellt einen Cube aus einem multidimensionalen Schema dar, das eine Reihe verknüpfter Dimensionen enthält.</span><span class="sxs-lookup"><span data-stu-id="07d81-104">Represents a cube from a multidimensional schema, containing a set of related dimensions.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="068f7-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="068f7-105">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="07d81-105">Hinweise</span><span class="sxs-lookup"><span data-stu-id="07d81-105">Remarks</span></span>
 
-<span data-ttu-id="068f7-106">Die Auflistungen und Eigenschaften eines **CubeDef** -Objekts ermöglichen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="068f7-106">With the collections and properties of a **CubeDef** object, you can do the following:</span></span>
+<span data-ttu-id="07d81-106">Die Auflistungen und Eigenschaften eines **CubeDef** -Objekts ermöglichen Folgendes:</span><span class="sxs-lookup"><span data-stu-id="07d81-106">With the collections and properties of a **CubeDef** object, you can do the following:</span></span>
 
-  - <span data-ttu-id="068f7-107">Identifizieren eines **CubeDef** -Objekts, indem Sie die [Name](name-property-ado-md.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="068f7-107">Identify a **CubeDef** with the [Name](name-property-ado-md.md) property.</span></span>
+  - <span data-ttu-id="07d81-107">Identifizieren eines **CubeDef** -Objekts, indem Sie die [Name](name-property-ado-md.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="07d81-107">Identify a **CubeDef** with the [Name](name-property-ado-md.md) property.</span></span>
 
-  - <span data-ttu-id="068f7-108">Zurückgeben einer Zeichenfolge, die den Cube beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="068f7-108">Return a string that describes the cube with the [Description](description-property-ado-md.md) property.</span></span>
+  - <span data-ttu-id="07d81-108">Zurückgeben einer Zeichenfolge, die den Cube beschreibt, indem Sie die [Description](description-property-ado-md.md)-Eigenschaft verwenden.</span><span class="sxs-lookup"><span data-stu-id="07d81-108">Return a string that describes the cube with the [Description](description-property-ado-md.md) property.</span></span>
 
-  - <span data-ttu-id="068f7-109">Zurückgeben der Dimensionen, die den Cube bilden, indem Sie die [Dimensions](dimensions-collection-ado-md.md)-Auflistung verwenden.</span><span class="sxs-lookup"><span data-stu-id="068f7-109">Return the dimensions that make up the cube with the [Dimensions](dimensions-collection-ado-md.md) collection.</span></span>
+  - <span data-ttu-id="07d81-109">Zurückgeben der Dimensionen, die den Cube bilden, indem Sie die [Dimensions](dimensions-collection-ado-md.md)-Auflistung verwenden.</span><span class="sxs-lookup"><span data-stu-id="07d81-109">Return the dimensions that make up the cube with the [Dimensions](dimensions-collection-ado-md.md) collection.</span></span>
 
-  - <span data-ttu-id="068f7-110">Abrufen zusätzlicher Informationen zum **CubeDef** -Objekt, indem Sie die [Properties](properties-collection-ado.md)-ADO-Standardauflistung verwenden.</span><span class="sxs-lookup"><span data-stu-id="068f7-110">Obtain additional information about the **CubeDef** with the standard ADO [Properties](properties-collection-ado.md) collection.</span></span>
+  - <span data-ttu-id="07d81-110">Abrufen zusätzlicher Informationen zum **CubeDef** -Objekt, indem Sie die [Properties](properties-collection-ado.md)-ADO-Standardauflistung verwenden.</span><span class="sxs-lookup"><span data-stu-id="07d81-110">Obtain additional information about the **CubeDef** with the standard ADO [Properties](properties-collection-ado.md) collection.</span></span>
 
-<span data-ttu-id="068f7-p101">Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.</span><span class="sxs-lookup"><span data-stu-id="068f7-p101">The **Properties** collection contains provider-supplied properties. The following table lists properties that might be available. The actual property list may differ depending upon the implementation of the provider. See the documentation for your provider for a more complete list of available properties.</span></span>
+<span data-ttu-id="07d81-p101">Die **Properties** -Auflistung enthält Eigenschaften, die vom Anbieter bereitgestellt werden. In der folgenden Tabelle sind Eigenschaften aufgeführt, die möglicherweise verfügbar sind. Die tatsächliche Eigenschaftenliste kann je nach Anbieterimplementierung davon abweichen. Eine ausführlichere Liste mit verfügbaren Eigenschaften finden Sie in Ihrer Anbieterdokumentation.</span><span class="sxs-lookup"><span data-stu-id="07d81-p101">The **Properties** collection contains provider-supplied properties. The following table lists properties that might be available. The actual property list may differ depending upon the implementation of the provider. See the documentation for your provider for a more complete list of available properties.</span></span>
 
 <table>
 <colgroup>
@@ -41,50 +42,50 @@ ms.locfileid: "25922391"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="068f7-115">Name</span><span class="sxs-lookup"><span data-stu-id="068f7-115">Name</span></span></p></th>
-<th><p><span data-ttu-id="068f7-116">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="068f7-116">Description</span></span></p></th>
+<th><p><span data-ttu-id="07d81-115">Name</span><span class="sxs-lookup"><span data-stu-id="07d81-115">Name</span></span></p></th>
+<th><p><span data-ttu-id="07d81-116">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="07d81-116">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="068f7-117">Katalogname</span><span class="sxs-lookup"><span data-stu-id="068f7-117">CatalogName</span></span></p></td>
-<td><p><span data-ttu-id="068f7-118">Der Name des Katalogs, zu dem dieser Cube gehört.</span><span class="sxs-lookup"><span data-stu-id="068f7-118">The name of the catalog to which this cube belongs.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-117">Katalogname</span><span class="sxs-lookup"><span data-stu-id="07d81-117">CatalogName</span></span></p></td>
+<td><p><span data-ttu-id="07d81-118">Der Name des Katalogs, zu dem dieser Cube gehört.</span><span class="sxs-lookup"><span data-stu-id="07d81-118">The name of the catalog to which this cube belongs.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="068f7-119">CreatedOn</span><span class="sxs-lookup"><span data-stu-id="068f7-119">CreatedOn</span></span></p></td>
-<td><p><span data-ttu-id="068f7-120">Datum und Uhrzeit der Cubeerstellung.</span><span class="sxs-lookup"><span data-stu-id="068f7-120">Date and time of cube creation.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-119">CreatedOn</span><span class="sxs-lookup"><span data-stu-id="07d81-119">CreatedOn</span></span></p></td>
+<td><p><span data-ttu-id="07d81-120">Datum und Uhrzeit der Cubeerstellung.</span><span class="sxs-lookup"><span data-stu-id="07d81-120">Date and time of cube creation.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="068f7-121">CubeGUID</span><span class="sxs-lookup"><span data-stu-id="068f7-121">CubeGUID</span></span></p></td>
-<td><p><span data-ttu-id="068f7-122">Die GUID des Cubes.</span><span class="sxs-lookup"><span data-stu-id="068f7-122">Cube GUID.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-121">CubeGUID</span><span class="sxs-lookup"><span data-stu-id="07d81-121">CubeGUID</span></span></p></td>
+<td><p><span data-ttu-id="07d81-122">Die GUID des Cubes.</span><span class="sxs-lookup"><span data-stu-id="07d81-122">Cube GUID.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="068f7-123">CubeName</span><span class="sxs-lookup"><span data-stu-id="068f7-123">CubeName</span></span></p></td>
-<td><p><span data-ttu-id="068f7-124">Der Name des Cubes.</span><span class="sxs-lookup"><span data-stu-id="068f7-124">The name of the cube.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-123">CubeName</span><span class="sxs-lookup"><span data-stu-id="07d81-123">CubeName</span></span></p></td>
+<td><p><span data-ttu-id="07d81-124">Der Name des Cubes.</span><span class="sxs-lookup"><span data-stu-id="07d81-124">The name of the cube.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="068f7-125">CubeType</span><span class="sxs-lookup"><span data-stu-id="068f7-125">CubeType</span></span></p></td>
-<td><p><span data-ttu-id="068f7-126">Der Typ des Cubes.</span><span class="sxs-lookup"><span data-stu-id="068f7-126">The type of the cube.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-125">CubeType</span><span class="sxs-lookup"><span data-stu-id="07d81-125">CubeType</span></span></p></td>
+<td><p><span data-ttu-id="07d81-126">Der Typ des Cubes.</span><span class="sxs-lookup"><span data-stu-id="07d81-126">The type of the cube.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="068f7-127">DataUpdatedBy</span><span class="sxs-lookup"><span data-stu-id="068f7-127">DataUpdatedBy</span></span></p></td>
-<td><p><span data-ttu-id="068f7-128">Benutzer-ID der Person, die die letzte Datenaktualisierung ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="068f7-128">User ID of the person doing the last data update.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-127">DataUpdatedBy</span><span class="sxs-lookup"><span data-stu-id="07d81-127">DataUpdatedBy</span></span></p></td>
+<td><p><span data-ttu-id="07d81-128">Benutzer-ID der Person, die die letzte Datenaktualisierung ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="07d81-128">User ID of the person doing the last data update.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="068f7-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="068f7-129">Description</span></span></p></td>
-<td><p><span data-ttu-id="068f7-130">Eine sinnvolle Beschreibung des Cubes.</span><span class="sxs-lookup"><span data-stu-id="068f7-130">A meaningful description of the cube.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="07d81-129">Description</span></span></p></td>
+<td><p><span data-ttu-id="07d81-130">Eine sinnvolle Beschreibung des Cubes.</span><span class="sxs-lookup"><span data-stu-id="07d81-130">A meaningful description of the cube.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="068f7-131">LastSchemaUpdate</span><span class="sxs-lookup"><span data-stu-id="068f7-131">LastSchemaUpdate</span></span></p></td>
-<td><p><span data-ttu-id="068f7-132">Datum und Uhrzeit der letzten Schemaaktualisierung.</span><span class="sxs-lookup"><span data-stu-id="068f7-132">Date and time of last schema update.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-131">LastSchemaUpdate</span><span class="sxs-lookup"><span data-stu-id="07d81-131">LastSchemaUpdate</span></span></p></td>
+<td><p><span data-ttu-id="07d81-132">Datum und Uhrzeit der letzten Schemaaktualisierung.</span><span class="sxs-lookup"><span data-stu-id="07d81-132">Date and time of last schema update.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="068f7-133">SchemaName</span><span class="sxs-lookup"><span data-stu-id="068f7-133">SchemaName</span></span></p></td>
-<td><p><span data-ttu-id="068f7-134">Der Name des Schemas, zu dem dieser Cube gehört.</span><span class="sxs-lookup"><span data-stu-id="068f7-134">The name of the schema to which this cube belongs.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-133">SchemaName</span><span class="sxs-lookup"><span data-stu-id="07d81-133">SchemaName</span></span></p></td>
+<td><p><span data-ttu-id="07d81-134">Der Name des Schemas, zu dem dieser Cube gehört.</span><span class="sxs-lookup"><span data-stu-id="07d81-134">The name of the schema to which this cube belongs.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="068f7-135">SchemaUpdatedBy</span><span class="sxs-lookup"><span data-stu-id="068f7-135">SchemaUpdatedBy</span></span></p></td>
-<td><p><span data-ttu-id="068f7-136">Benutzer-ID der Person, die die letzte Schemaaktualisierung ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="068f7-136">User ID of the person doing the last schema update.</span></span></p></td>
+<td><p><span data-ttu-id="07d81-135">SchemaUpdatedBy</span><span class="sxs-lookup"><span data-stu-id="07d81-135">SchemaUpdatedBy</span></span></p></td>
+<td><p><span data-ttu-id="07d81-136">Benutzer-ID der Person, die die letzte Schemaaktualisierung ausgeführt hat.</span><span class="sxs-lookup"><span data-stu-id="07d81-136">User ID of the person doing the last schema update.</span></span></p></td>
 </tr>
 </tbody>
 </table>

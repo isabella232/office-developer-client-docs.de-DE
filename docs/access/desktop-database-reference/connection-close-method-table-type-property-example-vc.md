@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250082(v=office.15)
 ms:contentKeyID: 48548006
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: dcae0898ea0ce84f334711b9d2a1f2b941f6e684
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: b8e817557c882a28365677a8f5e5ae7f677f4fc6
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25946902"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720912"
 ---
-# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="476f4-102">Connection Close-Methode, Type-Eigenschaft (Table) (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="476f4-102">Connection Close method, Table Type property example (VC++)</span></span>
+# <a name="connection-close-method-table-type-property-example-vc"></a><span data-ttu-id="76be2-102">Connection Close-Methode, Type-Eigenschaft (Table) (VC++-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="76be2-102">Connection Close method, Table Type property example (VC++)</span></span>
 
 
-<span data-ttu-id="476f4-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="476f4-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="76be2-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="76be2-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="476f4-p101">Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Beim Lesen von Eigenschaften, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="476f4-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
+<span data-ttu-id="76be2-p101">Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Beim Lesen von Eigenschaften, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="76be2-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
 
 ```cpp 
  

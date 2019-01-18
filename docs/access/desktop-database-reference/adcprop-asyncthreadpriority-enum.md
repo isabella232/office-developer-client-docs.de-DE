@@ -6,20 +6,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249844(v=office.15)
 ms:contentKeyID: 48547143
 ms.date: 10/18/2018
 mtps_version: v=office.15
-ms.openlocfilehash: ef191813e72ade80a7944f09d76f27c2b2f2738c
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 53e51f2386658ee975ec8847f7e5550ac22bbd8e
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25874923"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28700277"
 ---
-# <a name="adcpropasyncthreadpriorityenum"></a><span data-ttu-id="51fe5-102">ADCPROP\_ASYNCTHREADPRIORITY\_ENUM</span><span class="sxs-lookup"><span data-stu-id="51fe5-102">ADCPROP\_ASYNCTHREADPRIORITY\_ENUM</span></span>
+# <a name="adcpropasyncthreadpriorityenum"></a><span data-ttu-id="5b3cd-102">ADCPROP\_ASYNCTHREADPRIORITY\_ENUM</span><span class="sxs-lookup"><span data-stu-id="5b3cd-102">ADCPROP\_ASYNCTHREADPRIORITY\_ENUM</span></span>
 
-<span data-ttu-id="51fe5-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="51fe5-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="5b3cd-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="5b3cd-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="51fe5-104">Gibt für ein RDS-[Recordset](recordset-object-ado.md)-Objekt die Ausführungspriorität des asynchronen Threads an, der Daten abruft.</span><span class="sxs-lookup"><span data-stu-id="51fe5-104">For an RDS [Recordset](recordset-object-ado.md) object, specifies the execution priority of the asynchronous thread that retrieves data.</span></span>
+<span data-ttu-id="5b3cd-104">Gibt für ein RDS-[Recordset](recordset-object-ado.md)-Objekt die Ausführungspriorität des asynchronen Threads an, der Daten abruft.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-104">For an RDS [Recordset](recordset-object-ado.md) object, specifies the execution priority of the asynchronous thread that retrieves data.</span></span>
 
-<span data-ttu-id="51fe5-105">Verwenden Sie diese Konstanten mit der dynamischen **Recordset**-Eigenschaft **Background Thread Priority**, auf die im Index für dynamische ADO-Eigenschaften verwiesen wird und die in der Dokumentation [Microsoft Cursor Service für OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) beschrieben ist.</span><span class="sxs-lookup"><span data-stu-id="51fe5-105">Use these constants with the **Recordset** "**Background Thread Priority**" dynamic property, which is referenced in the ADO Dynamic Property Index and documented in the [Microsoft Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) documentation.</span></span>
+<span data-ttu-id="5b3cd-105">Verwenden Sie diese Konstanten mit der dynamischen **Recordset**-Eigenschaft **Background Thread Priority**, auf die im Index für dynamische ADO-Eigenschaften verwiesen wird und die in der Dokumentation [Microsoft Cursor Service für OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) beschrieben ist.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-105">Use these constants with the **Recordset** "**Background Thread Priority**" dynamic property, which is referenced in the ADO Dynamic Property Index and documented in the [Microsoft Cursor Service for OLE DB](microsoft-cursor-service-for-ole-db-ado-service-component.md) documentation.</span></span>
 
 <br/>
 
@@ -31,43 +32,43 @@ ms.locfileid: "25874923"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="51fe5-106">Konstante</span><span class="sxs-lookup"><span data-stu-id="51fe5-106">Constant</span></span></p></th>
-<th><p><span data-ttu-id="51fe5-107">Wert</span><span class="sxs-lookup"><span data-stu-id="51fe5-107">Value</span></span></p></th>
-<th><p><span data-ttu-id="51fe5-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="51fe5-108">Description</span></span></p></th>
+<th><p><span data-ttu-id="5b3cd-106">Konstante</span><span class="sxs-lookup"><span data-stu-id="5b3cd-106">Constant</span></span></p></th>
+<th><p><span data-ttu-id="5b3cd-107">Wert</span><span class="sxs-lookup"><span data-stu-id="5b3cd-107">Value</span></span></p></th>
+<th><p><span data-ttu-id="5b3cd-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="5b3cd-108">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="51fe5-109"><strong>adPriorityAboveNormal</strong></span><span class="sxs-lookup"><span data-stu-id="51fe5-109"><strong>adPriorityAboveNormal</strong></span></span></p></td>
-<td><p><span data-ttu-id="51fe5-110">4</span><span class="sxs-lookup"><span data-stu-id="51fe5-110">4</span></span></p></td>
-<td><p><span data-ttu-id="51fe5-111">Legt die Priorität zwischen dem normalen Wert und dem Höchstwert fest.</span><span class="sxs-lookup"><span data-stu-id="51fe5-111">Sets priority between normal and highest.</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-109"><strong>adPriorityAboveNormal</strong></span><span class="sxs-lookup"><span data-stu-id="5b3cd-109"><strong>adPriorityAboveNormal</strong></span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-110">4</span><span class="sxs-lookup"><span data-stu-id="5b3cd-110">4</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-111">Legt die Priorität zwischen dem normalen Wert und dem Höchstwert fest.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-111">Sets priority between normal and highest.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="51fe5-112"><strong>adPriorityBelowNormal</strong></span><span class="sxs-lookup"><span data-stu-id="51fe5-112"><strong>adPriorityBelowNormal</strong></span></span></p></td>
-<td><p><span data-ttu-id="51fe5-113">2</span><span class="sxs-lookup"><span data-stu-id="51fe5-113">2</span></span></p></td>
-<td><p><span data-ttu-id="51fe5-114">Legt die Priorität zwischen dem niedrigsten und dem normalen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="51fe5-114">Sets priority between lowest and normal.</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-112"><strong>adPriorityBelowNormal</strong></span><span class="sxs-lookup"><span data-stu-id="5b3cd-112"><strong>adPriorityBelowNormal</strong></span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-113">2</span><span class="sxs-lookup"><span data-stu-id="5b3cd-113">2</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-114">Legt die Priorität zwischen dem niedrigsten und dem normalen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-114">Sets priority between lowest and normal.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="51fe5-115"><strong>adPriorityHighest</strong></span><span class="sxs-lookup"><span data-stu-id="51fe5-115"><strong>adPriorityHighest</strong></span></span></p></td>
-<td><p><span data-ttu-id="51fe5-116">5</span><span class="sxs-lookup"><span data-stu-id="51fe5-116">5</span></span></p></td>
-<td><p><span data-ttu-id="51fe5-117">Legt die Priorität auf den höchst möglichen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="51fe5-117">Sets priority to the highest possible.</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-115"><strong>adPriorityHighest</strong></span><span class="sxs-lookup"><span data-stu-id="5b3cd-115"><strong>adPriorityHighest</strong></span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-116">5</span><span class="sxs-lookup"><span data-stu-id="5b3cd-116">5</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-117">Legt die Priorität auf den höchst möglichen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-117">Sets priority to the highest possible.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="51fe5-118"><strong>AdPriorityLowest</strong></span><span class="sxs-lookup"><span data-stu-id="51fe5-118"><strong>AdPriorityLowest</strong></span></span></p></td>
-<td><p><span data-ttu-id="51fe5-119">1</span><span class="sxs-lookup"><span data-stu-id="51fe5-119">1</span></span></p></td>
-<td><p><span data-ttu-id="51fe5-120">Legt die Priorität auf den niedrigsten Wert fest.</span><span class="sxs-lookup"><span data-stu-id="51fe5-120">Sets priority to the lowest possible.</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-118"><strong>AdPriorityLowest</strong></span><span class="sxs-lookup"><span data-stu-id="5b3cd-118"><strong>AdPriorityLowest</strong></span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-119">1</span><span class="sxs-lookup"><span data-stu-id="5b3cd-119">1</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-120">Legt die Priorität auf den niedrigsten Wert fest.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-120">Sets priority to the lowest possible.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="51fe5-121"><strong>adPriorityNormal</strong></span><span class="sxs-lookup"><span data-stu-id="51fe5-121"><strong>adPriorityNormal</strong></span></span></p></td>
-<td><p><span data-ttu-id="51fe5-122">3</span><span class="sxs-lookup"><span data-stu-id="51fe5-122">3</span></span></p></td>
-<td><p><span data-ttu-id="51fe5-123">Legt die Priorität auf den normalen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="51fe5-123">Sets priority to normal.</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-121"><strong>adPriorityNormal</strong></span><span class="sxs-lookup"><span data-stu-id="5b3cd-121"><strong>adPriorityNormal</strong></span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-122">3</span><span class="sxs-lookup"><span data-stu-id="5b3cd-122">3</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-123">Legt die Priorität auf den normalen Wert fest.</span><span class="sxs-lookup"><span data-stu-id="5b3cd-123">Sets priority to normal.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
-### <a name="adowfc-equivalent"></a><span data-ttu-id="51fe5-124">ADO/WFC-Entsprechung</span><span class="sxs-lookup"><span data-stu-id="51fe5-124">ADO/WFC equivalent</span></span>
+### <a name="adowfc-equivalent"></a><span data-ttu-id="5b3cd-124">ADO/WFC-Entsprechung</span><span class="sxs-lookup"><span data-stu-id="5b3cd-124">ADO/WFC equivalent</span></span>
 
-<span data-ttu-id="51fe5-125">Paket: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="51fe5-125">Package: **com.ms.wfc.data**</span></span>
+<span data-ttu-id="5b3cd-125">Paket: **com.ms.wfc.data**</span><span class="sxs-lookup"><span data-stu-id="5b3cd-125">Package: **com.ms.wfc.data**</span></span>
 
 <table>
 <colgroup>
@@ -75,24 +76,24 @@ ms.locfileid: "25874923"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="51fe5-126">Konstante</span><span class="sxs-lookup"><span data-stu-id="51fe5-126">Constant</span></span></p></th>
+<th><p><span data-ttu-id="5b3cd-126">Konstante</span><span class="sxs-lookup"><span data-stu-id="5b3cd-126">Constant</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="51fe5-127">AdoEnums.AdcPropAsyncThreadPriority.ABOVENORMAL</span><span class="sxs-lookup"><span data-stu-id="51fe5-127">AdoEnums.AdcPropAsyncThreadPriority.ABOVENORMAL</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-127">AdoEnums.AdcPropAsyncThreadPriority.ABOVENORMAL</span><span class="sxs-lookup"><span data-stu-id="5b3cd-127">AdoEnums.AdcPropAsyncThreadPriority.ABOVENORMAL</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="51fe5-128">AdoEnums.AdcPropAsyncThreadPriority.BELOWNORMAL</span><span class="sxs-lookup"><span data-stu-id="51fe5-128">AdoEnums.AdcPropAsyncThreadPriority.BELOWNORMAL</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-128">AdoEnums.AdcPropAsyncThreadPriority.BELOWNORMAL</span><span class="sxs-lookup"><span data-stu-id="5b3cd-128">AdoEnums.AdcPropAsyncThreadPriority.BELOWNORMAL</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="51fe5-129">AdoEnums.AdcPropAsyncThreadPriority.HIGHEST</span><span class="sxs-lookup"><span data-stu-id="51fe5-129">AdoEnums.AdcPropAsyncThreadPriority.HIGHEST</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-129">AdoEnums.AdcPropAsyncThreadPriority.HIGHEST</span><span class="sxs-lookup"><span data-stu-id="5b3cd-129">AdoEnums.AdcPropAsyncThreadPriority.HIGHEST</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="51fe5-130">AdoEnums.AdcPropAsyncThreadPriority.LOWEST</span><span class="sxs-lookup"><span data-stu-id="51fe5-130">AdoEnums.AdcPropAsyncThreadPriority.LOWEST</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-130">AdoEnums.AdcPropAsyncThreadPriority.LOWEST</span><span class="sxs-lookup"><span data-stu-id="5b3cd-130">AdoEnums.AdcPropAsyncThreadPriority.LOWEST</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="51fe5-131">AdoEnums.AdcPropAsyncThreadPriority.NORMAL</span><span class="sxs-lookup"><span data-stu-id="51fe5-131">AdoEnums.AdcPropAsyncThreadPriority.NORMAL</span></span></p></td>
+<td><p><span data-ttu-id="5b3cd-131">AdoEnums.AdcPropAsyncThreadPriority.NORMAL</span><span class="sxs-lookup"><span data-stu-id="5b3cd-131">AdoEnums.AdcPropAsyncThreadPriority.NORMAL</span></span></p></td>
 </tr>
 </tbody>
 </table>

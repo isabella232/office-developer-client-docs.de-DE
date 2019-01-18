@@ -6,23 +6,24 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250285(v=office.15)
 ms:contentKeyID: 48548864
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 6db51927182008314da045021f81e6547d5d78be
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 9cf773090ccb37bf4cad4aff41499ad01f966479
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026141"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699821"
 ---
-# <a name="executeoptions-property-rds"></a><span data-ttu-id="a68fd-102">ExecuteOptions-Eigenschaft (RDS)</span><span class="sxs-lookup"><span data-stu-id="a68fd-102">ExecuteOptions property (RDS)</span></span>
+# <a name="executeoptions-property-rds"></a><span data-ttu-id="b7a5a-102">ExecuteOptions-Eigenschaft (RDS)</span><span class="sxs-lookup"><span data-stu-id="b7a5a-102">ExecuteOptions property (RDS)</span></span>
 
 
-<span data-ttu-id="a68fd-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="a68fd-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="b7a5a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="b7a5a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="a68fd-104">Gibt an, ob die asynchrone Ausführung aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="a68fd-104">Indicates whether asynchronous execution is enabled.</span></span>
+<span data-ttu-id="b7a5a-104">Gibt an, ob die asynchrone Ausführung aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-104">Indicates whether asynchronous execution is enabled.</span></span>
 
-## <a name="settings-and-return-values"></a><span data-ttu-id="a68fd-105">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="a68fd-105">Settings and return values</span></span>
+## <a name="settings-and-return-values"></a><span data-ttu-id="b7a5a-105">Einstellungen und Rückgabewerte</span><span class="sxs-lookup"><span data-stu-id="b7a5a-105">Settings and return values</span></span>
 
-<span data-ttu-id="a68fd-106">Legt einen der folgenden Werte fest oder gibt ihn zurück.</span><span class="sxs-lookup"><span data-stu-id="a68fd-106">Sets or returns one of the following values.</span></span>
+<span data-ttu-id="b7a5a-106">Legt einen der folgenden Werte fest oder gibt ihn zurück.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-106">Sets or returns one of the following values.</span></span>
 
 <table>
 <colgroup>
@@ -31,30 +32,30 @@ ms.locfileid: "26026141"
 </colgroup>
 <thead>
 <tr class="header">
-<th><p><span data-ttu-id="a68fd-107">Konstante</span><span class="sxs-lookup"><span data-stu-id="a68fd-107">Constant</span></span></p></th>
-<th><p><span data-ttu-id="a68fd-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="a68fd-108">Description</span></span></p></th>
+<th><p><span data-ttu-id="b7a5a-107">Konstante</span><span class="sxs-lookup"><span data-stu-id="b7a5a-107">Constant</span></span></p></th>
+<th><p><span data-ttu-id="b7a5a-108">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b7a5a-108">Description</span></span></p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="a68fd-109"><strong>adcExecSync</strong></span><span class="sxs-lookup"><span data-stu-id="a68fd-109"><strong>adcExecSync</strong></span></span></p></td>
-<td><p><span data-ttu-id="a68fd-110">Führt die nächste Aktualisierung des <a href="recordset-object-ado.md">Recordsets</a> synchron aus.</span><span class="sxs-lookup"><span data-stu-id="a68fd-110">Executes the next refresh of the <a href="recordset-object-ado.md">Recordset</a> synchronously.</span></span></p></td>
+<td><p><span data-ttu-id="b7a5a-109"><strong>adcExecSync</strong></span><span class="sxs-lookup"><span data-stu-id="b7a5a-109"><strong>adcExecSync</strong></span></span></p></td>
+<td><p><span data-ttu-id="b7a5a-110">Führt die nächste Aktualisierung des <a href="recordset-object-ado.md">Recordsets</a> synchron aus.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-110">Executes the next refresh of the <a href="recordset-object-ado.md">Recordset</a> synchronously.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="a68fd-111"><strong>adcExecAsync</strong></span><span class="sxs-lookup"><span data-stu-id="a68fd-111"><strong>adcExecAsync</strong></span></span></p></td>
-<td><p><span data-ttu-id="a68fd-p101">Standard. Führt die nächste Aktualisierung des <strong>Recordsets</strong> asynchron aus.</span><span class="sxs-lookup"><span data-stu-id="a68fd-p101">Default. Executes the next refresh of the <strong>Recordset</strong> asynchronously.</span></span></p></td>
+<td><p><span data-ttu-id="b7a5a-111"><strong>adcExecAsync</strong></span><span class="sxs-lookup"><span data-stu-id="b7a5a-111"><strong>adcExecAsync</strong></span></span></p></td>
+<td><p><span data-ttu-id="b7a5a-p101">Standard. Führt die nächste Aktualisierung des <strong>Recordsets</strong> asynchron aus.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-p101">Default. Executes the next refresh of the <strong>Recordset</strong> asynchronously.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 > [!NOTE]
-> <span data-ttu-id="a68fd-114">Jede mithilfe der clientseitigen ausführbare Datei, die die folgenden Konstanten verwendet, muss Deklarationen bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="a68fd-114">Each client-side executable file that uses these constants must provide declarations for them.</span></span> <span data-ttu-id="a68fd-115">Sie können Ausschneiden und Einfügen die Konstantendeklarationen auf, denen Sie aus der Datei Datei Adcvbs.inc, befindet sich im Ordner C:\Program Files\Common Dateien\System\MSADC möchten.</span><span class="sxs-lookup"><span data-stu-id="a68fd-115">You can cut and paste the constant declarations that you want from the file Adcvbs.inc, located in the C:\Program Files\Common Files\System\MSADC folder.</span></span>
+> <span data-ttu-id="b7a5a-114">Jede mithilfe der clientseitigen ausführbare Datei, die die folgenden Konstanten verwendet, muss Deklarationen bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-114">Each client-side executable file that uses these constants must provide declarations for them.</span></span> <span data-ttu-id="b7a5a-115">Sie können Ausschneiden und Einfügen die Konstantendeklarationen auf, denen Sie aus der Datei Datei Adcvbs.inc, befindet sich im Ordner C:\Program Files\Common Dateien\System\MSADC möchten.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-115">You can cut and paste the constant declarations that you want from the file Adcvbs.inc, located in the C:\Program Files\Common Files\System\MSADC folder.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="a68fd-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="a68fd-116">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b7a5a-116">Hinweise</span><span class="sxs-lookup"><span data-stu-id="b7a5a-116">Remarks</span></span>
 
-<span data-ttu-id="a68fd-117">Wenn **ExecuteOptions** auf **adcExecAsync** festgelegt ist, wird dadurch der nächste **Refresh** -Aufruf für das [Recordset](datacontrol-object-rds.md) -Objekt des **RDS.DataControl**-Objekts ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="a68fd-117">If **ExecuteOptions** is set to **adcExecAsync**, then this asynchronously executes the next **Refresh** call on the [RDS.DataControl](datacontrol-object-rds.md) object's **Recordset**.</span></span>
+<span data-ttu-id="b7a5a-117">Wenn **ExecuteOptions** auf **adcExecAsync** festgelegt ist, wird dadurch der nächste **Refresh** -Aufruf für das [Recordset](datacontrol-object-rds.md) -Objekt des **RDS.DataControl**-Objekts ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-117">If **ExecuteOptions** is set to **adcExecAsync**, then this asynchronously executes the next **Refresh** call on the [RDS.DataControl](datacontrol-object-rds.md) object's **Recordset**.</span></span>
 
-<span data-ttu-id="a68fd-118">Ein Fehler tritt auf, wenn Sie versuchen, [Reset](reset-method-rds.md), [Refresh](refresh-method-rds.md), [SubmitChanges](submitchanges-method-rds.md), [CancelUpdate](cancelupdate-method-ado.md) oder [Recordset](recordset-sourcerecordset-properties-rds.md) aufzurufen, während eine andere asynchrone Operation ausgeführt wird, die das [Recordset](datacontrol-object-rds.md) -Objekt des **RDS.DataControl**-Objekts möglicherweise ändert.</span><span class="sxs-lookup"><span data-stu-id="a68fd-118">If you try to call [Reset](reset-method-rds.md), [Refresh](refresh-method-rds.md), [SubmitChanges](submitchanges-method-rds.md), [CancelUpdate](cancelupdate-method-ado.md), or [Recordset](recordset-sourcerecordset-properties-rds.md) while another asynchronous operation that might change the [RDS.DataControl](datacontrol-object-rds.md) object's **Recordset** is executing, an error occurs.</span></span>
+<span data-ttu-id="b7a5a-118">Ein Fehler tritt auf, wenn Sie versuchen, [Reset](reset-method-rds.md), [Refresh](refresh-method-rds.md), [SubmitChanges](submitchanges-method-rds.md), [CancelUpdate](cancelupdate-method-ado.md) oder [Recordset](recordset-sourcerecordset-properties-rds.md) aufzurufen, während eine andere asynchrone Operation ausgeführt wird, die das [Recordset](datacontrol-object-rds.md) -Objekt des **RDS.DataControl**-Objekts möglicherweise ändert.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-118">If you try to call [Reset](reset-method-rds.md), [Refresh](refresh-method-rds.md), [SubmitChanges](submitchanges-method-rds.md), [CancelUpdate](cancelupdate-method-ado.md), or [Recordset](recordset-sourcerecordset-properties-rds.md) while another asynchronous operation that might change the [RDS.DataControl](datacontrol-object-rds.md) object's **Recordset** is executing, an error occurs.</span></span>
 
-<span data-ttu-id="a68fd-119">Wenn bei einer asynchronen Operation ein Fehler auftritt, ändert sich der [ReadyState](readystate-property-rds.md)-Wert des **RDS.DataControl**-Objekts von **adcReadyStateLoaded** zu **adcReadyStateComplete**, und der **Recordset**-Eigenschaftswert bleibt *Nothing*.</span><span class="sxs-lookup"><span data-stu-id="a68fd-119">If an error occurs during an asynchronous operation, the **RDS.DataControl** object's [ReadyState](readystate-property-rds.md) value changes from **adcReadyStateLoaded** to **adcReadyStateComplete**, and the **Recordset** property value remains *Nothing*.</span></span>
+<span data-ttu-id="b7a5a-119">Wenn bei einer asynchronen Operation ein Fehler auftritt, ändert sich der [ReadyState](readystate-property-rds.md)-Wert des **RDS.DataControl**-Objekts von **adcReadyStateLoaded** zu **adcReadyStateComplete**, und der **Recordset**-Eigenschaftswert bleibt *Nothing*.</span><span class="sxs-lookup"><span data-stu-id="b7a5a-119">If an error occurs during an asynchronous operation, the **RDS.DataControl** object's [ReadyState](readystate-property-rds.md) value changes from **adcReadyStateLoaded** to **adcReadyStateComplete**, and the **Recordset** property value remains *Nothing*.</span></span>
 

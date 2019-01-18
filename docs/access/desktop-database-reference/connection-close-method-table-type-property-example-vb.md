@@ -6,18 +6,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250019(v=office.15)
 ms:contentKeyID: 48547754
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: a4587cec98d6e1bd272c79428955ca422bb3eec0
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 2066f4e0f5cb6002d42e029943e8f7b1fc7ad6a3
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25947742"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28699394"
 ---
-# <a name="connection-close-method-table-type-property-example-vb"></a><span data-ttu-id="69c76-102">Connection Close-Methode, Type-Eigenschaft (Table) (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="69c76-102">Connection Close method, Table Type property example (VB)</span></span>
+# <a name="connection-close-method-table-type-property-example-vb"></a><span data-ttu-id="41d6a-102">Connection Close-Methode, Type-Eigenschaft (Table) (VB-Beispiel)</span><span class="sxs-lookup"><span data-stu-id="41d6a-102">Connection Close method, Table Type property example (VB)</span></span>
 
-<span data-ttu-id="69c76-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="69c76-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="41d6a-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="41d6a-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="69c76-p101">Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Bei dem Versuch, Eigenschaften zu lesen, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="69c76-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
+<span data-ttu-id="41d6a-p101">Durch Festlegen der [ActiveConnection](activeconnection-property-adox.md)-Eigenschaft auf **Nothing** sollte der Katalog geschlossen werden. Verknüpfte Auflistungen sind leer. Alle Objekte, die von Schemaobjekten im Katalog erstellt wurden, werden verwaist. Alle zwischengespeicherten Eigenschaften für diese Objekte sind noch verfügbar. Bei dem Versuch, Eigenschaften zu lesen, die einen Aufruf des Anbieters erfordern, tritt jedoch ein Fehler auf.</span><span class="sxs-lookup"><span data-stu-id="41d6a-p101">Setting the [ActiveConnection](activeconnection-property-adox.md) property to **Nothing** should "close" the catalog. Associated collections will be empty. Any objects that were created from schema objects in the catalog will be orphaned. Any properties on those objects that have been cached will still be available, but attempting to read properties that require a call to the provider will fail.</span></span>
 
 ```vb 
  
@@ -64,7 +65,7 @@ ms.locfileid: "25947742"
 
 <br/>
 
-<span data-ttu-id="69c76-108">Das Schließen eines [Connection](connection-object-ado.md)-Objekts, das zum Öffnen des Katalogs verwendet wurde, sollte dieselbe Wirkung erzielen wie das Festlegen der **ActiveConnection** -Eigenschaft auf **Nothing**.</span><span class="sxs-lookup"><span data-stu-id="69c76-108">Closing a [Connection](connection-object-ado.md) object that was used to "open" the catalog should have the same effect as setting the **ActiveConnection** property to **Nothing**.</span></span>
+<span data-ttu-id="41d6a-108">Das Schließen eines [Connection](connection-object-ado.md)-Objekts, das zum Öffnen des Katalogs verwendet wurde, sollte dieselbe Wirkung erzielen wie das Festlegen der **ActiveConnection** -Eigenschaft auf **Nothing**.</span><span class="sxs-lookup"><span data-stu-id="41d6a-108">Closing a [Connection](connection-object-ado.md) object that was used to "open" the catalog should have the same effect as setting the **ActiveConnection** property to **Nothing**.</span></span>
 
 ```vb
     Sub CloseConnection() 
