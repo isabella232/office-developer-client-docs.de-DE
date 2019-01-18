@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1053061
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 5df9c972095d61ff17fa2a405a6786c08dad74fc
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: db2c90d42feacee58af9eea30a2d99439cb4ddaf
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997777"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708893"
 ---
 # <a name="recordsetseek-method-dao"></a>Recordset.Seek-Methode (DAO)
 
@@ -63,7 +64,7 @@ Sucht den Datensatz in einem indizierten **Recordset** -Objekt vom Typ Tabelle, 
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Bevor Sie **Seek** verwenden können, müssen Sie den aktuellen Index mit der **Index**-Eigenschaft festlegen. Wenn der Index ein nicht eindeutiges Schlüsselfeld identifiziert, sucht **Seek** nach dem ersten Datensatz, der die Kriterien erfüllt.
 

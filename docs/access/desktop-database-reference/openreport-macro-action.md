@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm188079
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: a6166f8da8597e5b0672ba0d5fdfdd3745cfd159
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: cff57a185d226328792bef79072dfc46c6134f98
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25927767"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707241"
 ---
 # <a name="openreport-macro-action"></a>OpenReport-Makroaktion
 
@@ -44,7 +45,7 @@ Die **ÖffnenBericht** -Aktion verwendet die folgenden Argumente.
 <td><p>Der Name des zu öffnenden Berichts. Im Feld <strong>Berichtsname</strong> im Abschnitt <strong>Aktionsargumente</strong> des Bereichs <strong>Makro-Generator</strong> werden alle Berichte angezeigt, die in der aktuellen Datenbank enthalten sind. Dies ist ein erforderliches Argument. Wenn Sie ein Makro ausführen, das die OpenReport-Aktion in einer Bibliotheksdatenbank enthält, sucht Microsoft Access zunächst in der Bibliotheksdatenbank nach dem Bericht mit diesem Namen und anschließend in der aktuellen Datenbank.  </p></td>
 </tr>
 <tr class="even">
-<td><p>Ansicht</p></td>
+<td><p>Anzeigen</p></td>
 <td><p>Die Ansicht, in der der Bericht geöffnet wird. Klicken Sie im Feld <strong>Ansicht</strong> auf <strong>Drucken</strong> (Bericht wird sofort gedruckt), <strong>Entwurf</strong> oder <strong>Seitenansicht</strong>. Die Standardeinstellung ist <strong>Drucken</strong>.  </p></td>
 </tr>
 <tr class="odd">
@@ -75,7 +76,7 @@ Ersetzen Sie <em>Fieldname</em> durch den Namen eines Felds in der zugrunde lieg
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Einstellung **Drucken** des Arguments **Ansicht** druckt sofort den Bericht mit den aktuellen Druckereinstellungen, ohne dass das Dialogfeld **Drucken** geöffnet wird. Sie können auch die **ÖffnenBericht** -Aktion verwenden, um einen Bericht zu öffnen und einzurichten, und dann die PrintOut-Aktion zum Drucken verwenden. Dies empfiehlt sich beispielsweise, wenn Sie den Bericht vor dem Drucken ändern oder die **Drucken** -Aktion zum Ändern der Druckereinstellungen verwenden möchten.
 

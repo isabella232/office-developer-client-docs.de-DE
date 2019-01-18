@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249647(v=office.15)
 ms:contentKeyID: 48546385
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: c1555883ef8305225d6ddd1969d98de082288a6b
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 23e1cab32fee6103a046219a7cda8c90f02d9f79
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25887537"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28712036"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Microsoft OLE DB-Anbieter für Microsoft Active Directory-Dienst
 
@@ -96,11 +97,11 @@ Eine vierteilige Befehlstextzeichenfolge wird durch den Anbieter in der folgende
 <td><p>Gibt den Suchfilter im Format RFC 1960 an.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em>Attributes</em></p></td>
+<td><p><em>Attribute</em></p></td>
 <td><p>Gibt eine Liste mit durch Komma getrennten Attributen an, die zurückgegeben werden sollen.</p></td>
 </tr>
 <tr class="even">
-<td><p><em>Scope</em></p></td>
+<td><p><em>Bereich</em></p></td>
 <td><p>Optional. Eine <strong>Zeichenfolge</strong> , die den Bereich der Suche angibt. Kann eine der folgenden sein: Basis – nur das Basisobjekt (Stamm der Suche).<br />
 Ebene – Sucht nur eine Ebene.<br />
 Unterstruktur – Suchen Sie die gesamte Unterstruktur.</p></td>
@@ -163,7 +164,7 @@ Verfügbarkeit von ADO-Standardeigenschaften des **Recordset** -Objekts:
 <td><p>nur Lesen</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="bookmark-property-ado.md">Bookmark</a></p></td>
+<td><p><a href="bookmark-property-ado.md">Lesezeichen</a></p></td>
 <td><p>Lesen/Schreiben</p></td>
 </tr>
 <tr class="even">

@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1052939
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 00b39fc81e929ad32a19ef81d3dc9fa5633308f7
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 73bb48db5b47ff1824e962ac44324a17ae0636ad
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25997267"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707682"
 ---
 # <a name="databaseopenrecordset-method-dao"></a>Database.OpenRecordset-Methode (DAO)
 
@@ -82,7 +83,7 @@ Erstellt ein neues **[Recordset](recordset-object-dao.md)** -Objekt und fügt es
 
 Recordset
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Wenn der Benutzer beim Aktualisieren eines Datensatzes diesen Fehler erhält, sollte der Code den Inhalt des Felds aktualisieren und die geänderten Werte abrufen. Tritt der Fehler beim Löschen eines Datensatzes auf, sollte der Code die Daten des neuen Datensatzes anzeigen und eine Meldung darüber ausgeben, dass die Daten kürzlich geändert wurden. An dieser Stelle könnte der Code bestätigen lassen, dass der Benutzer den Datensatz wirklich löschen möchte.
 

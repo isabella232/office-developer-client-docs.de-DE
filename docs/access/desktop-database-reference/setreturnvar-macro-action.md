@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff193989(v=office.15)
 ms:contentKeyID: 48544870
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f73ba90b4eae9f5da17e27d466044d97fb815d74
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 0e0c849fc507d535807bc088e667acd74410ddd8
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25923791"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28708158"
 ---
 # <a name="setreturnvar-macro-action"></a>SetReturnVar-Makroaktion
 
@@ -22,7 +23,7 @@ Die **SetReturnVar** -Aktion erstellt eine Variable zurückgegebene und platzier
 > [!NOTE]
 > Die **SetReturnVar** -Aktion ist nur in Datenmakros verfügbar.
 
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die **SetReturnVar** -Aktion hat die folgenden Argumente.
 
@@ -54,7 +55,7 @@ Die **SetReturnVar** -Aktion hat die folgenden Argumente.
 </table>
 
 
-## <a name="remarks"></a>Hinweise
+## <a name="remarks"></a>Bemerkungen
 
 Die Aktion **SetReturnVar** dient zum Erstellen einer **ReturnVar**die Variable, die von Makros kann, die ein Datenmakro Aufrufen verwendet werden, indem Sie mit der **AusführenDatenmakro** -Aktion ist.
 

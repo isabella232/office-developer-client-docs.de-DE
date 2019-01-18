@@ -10,12 +10,13 @@ f1_keywords:
 - vbaac10.chm7496
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 4c115a5f7c2d13e918e891e80997a7327885669d
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 086993095daef3ff4ad87aed9f572a09124a9d31
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026274"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28709971"
 ---
 # <a name="findrecord-macro-action"></a>FindRecord-Makroaktion
 
@@ -40,7 +41,7 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Suchen</strong></p></td>
+<td><p><strong>Suchen nach</strong></p></td>
 <td><p>Gibt an, die Daten, die im Datensatz ermittelt werden soll. Geben Sie den Text, Zahl oder Datum, die Sie suchen möchten oder einen Ausdruck, dem ein Gleichheitszeichen vorangestellt wird (<strong>=</strong>), in das Feld <strong>Suchen nach</strong> im <strong>Abschnitt</strong> Bereich des Makro-Generators. Sie können Platzhalterzeichen verwenden. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
@@ -52,7 +53,7 @@ Die **SuchenDatensatz** -Aktion hat die folgenden Argumente.
 <td><p>Gibt an, ob bei der Suche die Groß- und Kleinschreibung beachtet wird. Klicken Sie auf <strong>Ja</strong> (Suche mit Beachtung der Groß- und Kleinschreibung) oder auf <strong>Nein</strong> (Suche ohne Beachtung der genauen Groß- und Kleinschreibung). Die Standardeinstellung ist <strong>Nein</strong>.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Suchen</strong></p></td>
+<td><p><strong>Suche</strong></p></td>
 <td><p>Gibt an, ob die Suche vom aktuellen Datensatz nach oben bis zum Anfang der Datensätze (<strong>Aufwärts</strong>), nach unten bis zum Ende der Datensätze (<strong>Abwärts</strong>) oder bis zum Ende der Datensätze und weiter vom Anfang der Datensätze bis zum aktuellen Datensatz fortfährt, sodass letztlich alle Datensätze durchsucht wurden (<strong>Alle</strong>). Die Standardeinstellung ist <strong>Alle</strong>.</p></td>
 </tr>
 <tr class="odd">

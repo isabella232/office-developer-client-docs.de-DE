@@ -10,12 +10,13 @@ f1_keywords:
 - dao360.chm1101190
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: bb073dfbdbf4ad9d87314c04a0ae2f97e7cfddc3
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: bdb1ba92c4a0f4fbee7204b2f4fee8a96c87cc1b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25996930"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710629"
 ---
 # <a name="field2loadfromfile-method-dao"></a>Field2.LoadFromFile-Methode (DAO)
 

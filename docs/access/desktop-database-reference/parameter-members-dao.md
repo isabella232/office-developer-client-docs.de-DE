@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff192517(v=office.15)
 ms:contentKeyID: 48544228
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: e62125ee61598d6be125f9edb01f2aa4531043b9
-ms.sourcegitcommit: 45feafb3b55de0402dddf5548c0c1c43a0eabafd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 25eae70d88307331c44983c4e7cbbcce3fe9d309
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026071"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28707906"
 ---
 # <a name="parameter-members-dao"></a>Parameter-Member (DAO)
 
@@ -34,7 +35,7 @@ Ein Parameter-Objekt stellt einen Wert für eine Abfrage dar. Der Parameter wird
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong><a href="parameter-direction-property-dao.md"><ui>Direction</ui></a></strong></p></td>
+<td><p><strong><a href="parameter-direction-property-dao.md">Richtung</a></strong></p></td>
 <td><p><strong>Hinweis</strong>: für ODBCDirect-Arbeitsbereiche werden in Microsoft Access 2013 nicht unterstützt. Verwenden Sie ADO, wenn Sie auf externe Datenquellen zugreifen möchten, ohne das Microsoft Access-Datenbankmodul zu verwenden.</p>
 <p>Mit dieser Eigenschaft wird ein Wert festgelegt oder zurückgegeben, der angibt, ob ein <strong><a href="parameter-object-dao.md">Parameter</a></strong> -Objekt einen Eingabeparameter und/oder einen Ausgabeparameter oder den Rückgabewert der Prozedur darstellt (gilt nur für ODBCDirect-Arbeitsbereiche).</p></td>
 </tr>
