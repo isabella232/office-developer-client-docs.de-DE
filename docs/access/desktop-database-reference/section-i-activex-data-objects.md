@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249635(v=office.15)
 ms:contentKeyID: 48546307
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 715bb9285e12f886fc027d457d069a9b6cbda765
-ms.sourcegitcommit: 38d0db57580cc5f4a0231c27b1643f8db5431ca3
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 5fef8dbec1d8861dd8c3421735baed2fcc7d4cde
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25937659"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722949"
 ---
 # <a name="section-i-activex-data-objects"></a>Abschnitt I: ActiveX Data Objects
 
@@ -26,7 +27,7 @@ Dieser Abschnitt enthält die folgenden Kapitel:
 - [Kapitel 5: Aktualisieren und Speichern von Daten](chapter-5-updating-and-persisting-data.md)
 - [Kapitel 6: Fehlerbehandlung](chapter-6-error-handling.md)
 - [Kapitel 7: Behandeln von ADO-Ereignissen](chapter-7-handling-ado-events.md)
-- [Kapitel 8: Grundlegendes zu Cursorn und Sperren für Websitesammlungen](chapter-8-understanding-cursors-and-locks.md)
-- [Kapitel 9: Datenstrukturierung](chapter-9-data-shaping.md)
+- [Kapitel 8: Grundlegendes zu Cursorn und Sperren](chapter-8-understanding-cursors-and-locks.md)
+- [Kapitel 9: Daten modellieren](chapter-9-data-shaping.md)
 - [Kapitel 10: Datensätze und Datenströme](chapter-10-records-and-streams.md)
 

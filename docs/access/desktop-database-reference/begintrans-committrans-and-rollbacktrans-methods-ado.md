@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249694(v=office.15)
 ms:contentKeyID: 48546529
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: f6e797865889bcf52c6f13e4411e945a72b978e8
-ms.sourcegitcommit: 980a96cf444882d3d34cecb5faac8f8a7b7c4b57
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8d9dc28bd64966e85d16ee2d8cb62fdebc3ba942
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25949992"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720331"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-ado"></a>BeginTrans-, CommitTrans- and RollbackTrans-Methode (Beispiel) (ADO)
 
@@ -45,7 +46,7 @@ Durch diese Transaktionsmethoden wird die Transaktionsverarbeitung in einem [Con
 |:--------|:----------|
 |*Objekt* |Ein **Connection** -Objekt.|
 
-### <a name="connection"></a>Connection
+### <a name="connection"></a>Verbindung
 
 Verwenden Sie diese Methoden mit einem **Connection** -Objekt, wenn Sie eine Reihe von an den Quelldaten vorgenommenen Änderungen als einzelne Einheit speichern oder abbrechen möchten. Beispielsweise subtrahieren Sie zum Übertragen von Geldbeträgen zwischen Konten einen Betrag von einem Konto und addieren den gleichen Betrag zu einem anderen Konto. Wenn eine der Aktualisierungen fehlschlägt, sind die Konten nicht mehr ausgeglichen. Durch das Vornehmen dieser Änderungen mit einer geöffneten Transaktion wird sichergestellt, dass alle oder keine der Änderungen durchlaufen.
 

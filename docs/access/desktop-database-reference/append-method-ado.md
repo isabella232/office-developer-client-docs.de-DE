@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ250014(v=office.15)
 ms:contentKeyID: 48547742
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 0c4610fca129d9256e99d9dcd7deb1acce3e97c2
-ms.sourcegitcommit: 558d09fad81f8d80b5ad0edd21934fc09c098f2c
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: a85faf900860dabb809a10a92985559b7a7cf2ef
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "25945934"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28706079"
 ---
 # <a name="append-method-ado"></a>Append-Methode (ADO)
 
@@ -65,7 +66,7 @@ Wenn Sie die [CursorLocation](cursorlocation-property-ado.md)-Eigenschaft nicht 
 
 Ein Laufzeitfehler tritt auf, wenn die **Append** -Methode für die **Fields** -Auflistung eines geöffneten **Recordsets** oder für ein **Recordset**, für das die [ActiveConnection](activeconnection-property-ado.md)-Eigenschaft festgelegt wurde, aufgerufen wird. Sie können nur Felder zu einem **Recordset** hinzufügen, das nicht geöffnet ist und noch nicht mit einer Datenquelle verbunden wurde. Dies ist normalerweise der Fall, wenn ein **Recordset** -Objekt mit der [CreateRecordset](createrecordset-method-rds.md)-Methode erstellt oder einer Objektvariablen zugewiesen wird.
 
-### <a name="record"></a>Record
+### <a name="record"></a>Aufzeichnen
 
 Es tritt kein Laufzeitfehler auf, wenn die **Append** -Methode für die **Fields** -Auflistung eines geöffneten **Record** -Objekts aufgerufen wird. Das neue Feld wird der **Fields** -Auflistung des **Record** -Objekts hinzugefügt. Wenn das **Record** -Objekt von einem **Recordset** abgeleitet wurde, wird das neue Feld nicht in der **Fields** -Auflistung des **Recordset** -Objekts angezeigt.
 

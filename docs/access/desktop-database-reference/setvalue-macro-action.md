@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Ff820771(v=office.15)
 ms:contentKeyID: 48546712
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 1ec96fd588e4b20b6c2ebe0ef25f488841aa4d70
-ms.sourcegitcommit: 1dd744993ecb4bed241ace874ad26edaef1778b8
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 6b6f16c22e9265159c73279cfa1b2644adbc0277
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25998875"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28722690"
 ---
 # <a name="setvalue-macro-action"></a>SetValue-Makroaktion
 
@@ -23,7 +24,7 @@ Die **SetzenWert** -Aktion können Sie den Wert des Microsoft Access-Felds, eine
 > - Sie können die Aktion **SetzenWert** nicht verwenden, um den Wert einer Access-Eigenschaft festzulegen, die ein Objekt zurückgibt.
 > - [!HINWEIS] Diese Aktion wird nicht erlaubt, wenn die Datenbank nicht vertrauenswürdig ist. 
 
-## <a name="setting"></a>Einstellung
+## <a name="setting"></a>Setting
 
 Die Aktion **SetzenWert** kann mit den folgenden Argumenten verwendet werden.
 
@@ -40,11 +41,11 @@ Die Aktion **SetzenWert** kann mit den folgenden Argumenten verwendet werden.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Element</strong></p></td>
+<td><p><strong>Item</strong></p></td>
 <td><p>Der Name des Felds, des Steuerelements oder der Eigenschaft, dessen bzw. deren Wert Sie festlegen möchten. Geben Sie den Namen des Felds, des Steuerelements oder der Eigenschaft im Abschnitt <strong>Aktionsargument </strong> des Makro-Generators in das Feld <strong>Element </strong> ein. Verwenden Sie die vollständige Syntax, um auf dieses Element verweisen, z. B.  <em>Steuerelementname </em> (für ein Steuerelement im Formular oder Bericht, in dem das Makro aufgerufen wurde) oder <strong>Formulare</strong>!<em>Formularname</em>!<em>Steuerelementname</em>. Dies ist ein erforderliches Argument.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Expression</strong></p></td>
+<td><p><strong>Ausdruck</strong></p></td>
 <td><p>Der Ausdruck, den Access verwendet, um den Wert für dieses Element festzulegen. Sie müssen immer die vollständige Syntax verwenden, um auf Objekte im Ausdruck zu verweisen. Um beispielsweise den Wert eines Steuerelements für das Gehalt in einem Formular für Mitarbeiter um 10 Prozent zu erhöhen, verwenden Sie Forms!Employees!Salary*1.1. Dies ist ein erforderliches Argument.</p><p><strong>Hinweis</strong>: Verwenden Sie ein Gleichheitszeichen (=) vor dem Ausdruck im dieses Argument. In diesem Fall Access wertet den Ausdruck und verwendet diesen Wert als den Ausdruck in diesem Argument. Wenn der Ausdruck eine Zeichenfolge ist, können unerwartete Ergebnisse auftreten.</p>
 <p>Beispiel: bei Eingabe <strong> = &quot;Zeichenfolge1&quot; </strong> für dieses Argument wertet Access zuerst den Ausdruck als Zeichenfolge1. Klicken Sie dann verwendet Zeichenfolge1 als Ausdruck, der in diesem Argument und erwartet ein Steuerelement oder eine Eigenschaft mit dem Namen String1 im Formular oder Bericht, der das Makro aufgerufen wird.</p></td>
 </tr>

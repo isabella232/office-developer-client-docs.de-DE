@@ -6,12 +6,13 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn124645(v=office.15)
 ms:contentKeyID: 52072268
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 9af1fc1ba168366c7bb661afd463355575b62d08
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 03b31a98f36d357085d70235293766cd87f2648b
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25877205"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28720688"
 ---
 # <a name="microsoft-data-access-objects-reference"></a>Referenz zu Microsoft-Datenzugriffsobjekten
 
@@ -22,7 +23,7 @@ ms.locfileid: "25877205"
 - [Connections](connections-object-reference-dao.md)
 - [Container](container-object-reference-dao.md)
 - [Containers](containers-object-reference-dao.md)
-- [Database](database-object-reference-dao.md)
+- [Datenbank](database-object-reference-dao.md)
 - [Databases](databases-object-reference-dao.md)
 - [DBEngine](dbengine-object-reference-dao.md)
 - [Document](document-object-reference-dao.md)
@@ -38,7 +39,7 @@ ms.locfileid: "25877205"
 - [Parameter](parameters-object-reference-dao.md)
 - [Eigenschaften](properties-object-reference-dao.md)
 - [Eigenschaft](property-object-reference-dao.md)
-- [QueryDef-Objekt](querydef-object-reference-dao.md)
+- [QueryDef](querydef-object-reference-dao.md)
 - [QueryDefs](querydefs-object-reference-dao.md)
 - [Recordset](recordset-object-reference-dao.md)
 - [Recordset2](recordset2-object-reference-dao.md)
