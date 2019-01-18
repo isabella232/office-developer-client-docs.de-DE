@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ248872(v=office.15)
 ms:contentKeyID: 48543293
 ms.date: 09/18/2015
 mtps_version: v=office.15
-ms.openlocfilehash: 3f1ebd893418cde5b499be9d34c7d50aadff78f3
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 75556927bc5d3e10526da6a45bfe1e4f6d8abea2
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25872760"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710055"
 ---
-# <a name="clustered-property-example-vb"></a><span data-ttu-id="c0781-102">Clustered-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="c0781-102">Clustered property example (VB)</span></span>
+# <a name="clustered-property-example-vb"></a><span data-ttu-id="8532c-102">Clustered-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="8532c-102">Clustered property example (VB)</span></span>
 
 
-<span data-ttu-id="c0781-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c0781-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="8532c-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="8532c-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="c0781-104">Dieses Beispiel veranschaulicht die [Clustered](clustered-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md).</span><span class="sxs-lookup"><span data-stu-id="c0781-104">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="c0781-105">Beachten Sie, dass Microsoft Jet-Datenbanken gruppierte Indizes nicht unterstützen, sodass in diesem Beispiel wird für alle Indizes in der *Nordwind* -Datenbank die **Clustered** -Eigenschaft **False** zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="c0781-105">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
+<span data-ttu-id="8532c-104">Dieses Beispiel veranschaulicht die [Clustered](clustered-property-adox.md) -Eigenschaft eines [Index](index-object-adox.md).</span><span class="sxs-lookup"><span data-stu-id="8532c-104">This example demonstrates the [Clustered](clustered-property-adox.md) property of an [Index](index-object-adox.md).</span></span> <span data-ttu-id="8532c-105">Beachten Sie, dass Microsoft Jet-Datenbanken gruppierte Indizes nicht unterstützen, sodass in diesem Beispiel wird für alle Indizes in der *Nordwind* -Datenbank die **Clustered** -Eigenschaft **False** zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="8532c-105">Note that Microsoft Jet databases do not support clustered indexes, so this example will return **False** for the **Clustered** property of all indexes in the *Northwind* database.</span></span>
 
 ```vb 
  

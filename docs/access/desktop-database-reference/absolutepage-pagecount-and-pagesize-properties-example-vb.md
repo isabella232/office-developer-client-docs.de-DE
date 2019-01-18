@@ -6,19 +6,20 @@ ms:mtpsurl: https://msdn.microsoft.com/library/JJ249911(v=office.15)
 ms:contentKeyID: 48547426
 ms.date: 10/17/2018
 mtps_version: v=office.15
-ms.openlocfilehash: 0b98557f4c5906c5d1952f635c9967e3b280cbae
-ms.sourcegitcommit: c557bbcccf37a6011f89aae1ddd399dfe549d087
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: 8fa1699618a0bbeba3d35a2d94ef3117f4a3bb59
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25885073"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28710237"
 ---
-# <a name="absolutepage-pagecount-and-pagesize-properties-example-vb"></a><span data-ttu-id="2b8a3-102">AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="2b8a3-102">AbsolutePage, PageCount, and PageSize properties example (VB)</span></span>
+# <a name="absolutepage-pagecount-and-pagesize-properties-example-vb"></a><span data-ttu-id="17460-102">AbsolutePage-, PageCount- und PageSize-Eigenschaft (Beispiel) (VB)</span><span class="sxs-lookup"><span data-stu-id="17460-102">AbsolutePage, PageCount, and PageSize properties example (VB)</span></span>
 
 
-<span data-ttu-id="2b8a3-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="2b8a3-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="17460-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="17460-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-<span data-ttu-id="2b8a3-104">In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt.</span><span class="sxs-lookup"><span data-stu-id="2b8a3-104">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employees*** table, five records at a time.</span></span>
+<span data-ttu-id="17460-104">In diesem Beispiel werden mithilfe der Eigenschaften [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md) und [PageSize](pagesize-property-ado.md) Namen und Einstellungsdaten aus der ***Employees***-Tabelle angezeigt. Es werden jeweils fünf Datensätze dargestellt.</span><span class="sxs-lookup"><span data-stu-id="17460-104">This example uses the [AbsolutePage](absolutepage-property-ado.md), [PageCount](pagecount-property-ado.md), and [PageSize](pagesize-property-ado.md) properties to display names and hire dates from the ***Employees*** table, five records at a time.</span></span>
 
 ```vb 
  

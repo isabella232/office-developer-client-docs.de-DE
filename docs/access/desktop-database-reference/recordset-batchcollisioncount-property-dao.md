@@ -10,35 +10,36 @@ f1_keywords:
 - dao360.chm1101181
 f1_categories:
 - Office.Version=v15
-ms.openlocfilehash: 7d2100fb9803de406eca258b1d1093b343a6e88d
-ms.sourcegitcommit: d7248f803002b31cf7fc561b03530199a9b0a8fd
-ms.translationtype: MT
+localization_priority: Normal
+ms.openlocfilehash: d0c4af9744accd21a91dca2676a08cad3d1cc7e7
+ms.sourcegitcommit: d6695c94415fa47952ee7961a69660abc0904434
+ms.translationtype: Auto
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25929657"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28711938"
 ---
-# <a name="recordsetbatchcollisioncount-property-dao"></a><span data-ttu-id="cce6f-102">Recordset.BatchCollisionCount-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="cce6f-102">Recordset.BatchCollisionCount property (DAO)</span></span>
+# <a name="recordsetbatchcollisioncount-property-dao"></a><span data-ttu-id="c32e1-102">Recordset.BatchCollisionCount-Eigenschaft (DAO)</span><span class="sxs-lookup"><span data-stu-id="c32e1-102">Recordset.BatchCollisionCount property (DAO)</span></span>
 
 
-<span data-ttu-id="cce6f-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="cce6f-103">**Applies to**: Access 2013, Office 2013</span></span>
+<span data-ttu-id="c32e1-103">**Betrifft**: Access 2013, Office 2013</span><span class="sxs-lookup"><span data-stu-id="c32e1-103">**Applies to**: Access 2013, Office 2013</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="cce6f-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="cce6f-104">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="c32e1-104">Syntax</span><span class="sxs-lookup"><span data-stu-id="c32e1-104">Syntax</span></span>
 
-<span data-ttu-id="cce6f-105">*Ausdruck* . BatchCollisionCount</span><span class="sxs-lookup"><span data-stu-id="cce6f-105">*expression* .BatchCollisionCount</span></span>
+<span data-ttu-id="c32e1-105">*Ausdruck* . BatchCollisionCount</span><span class="sxs-lookup"><span data-stu-id="c32e1-105">*expression* .BatchCollisionCount</span></span>
 
-<span data-ttu-id="cce6f-106">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="cce6f-106">*expression* A variable that represents a **Recordset** object.</span></span>
+<span data-ttu-id="c32e1-106">*Ausdruck* Eine Variable, die ein **Recordset** -Objekt darstellt.</span><span class="sxs-lookup"><span data-stu-id="c32e1-106">*expression* A variable that represents a **Recordset** object.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="cce6f-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="cce6f-107">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="c32e1-107">Bemerkungen</span><span class="sxs-lookup"><span data-stu-id="c32e1-107">Remarks</span></span>
 
-<span data-ttu-id="cce6f-p101">Diese Eigenschaft gibt die Anzahl von Datensätzen an, bei denen Konflikte oder andere Fehler beim letzten Versuch einer Batchaktualisierung auftraten. Der Wert dieser Eigenschaft entspricht der Anzahl von Textmarken in der **[BatchCollisions](recordset-batchcollisions-property-dao.md)** -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="cce6f-p101">This property indicates how many records encountered collisions or otherwise failed to update during the last batch update attempt. The value of this property corresponds to the number of bookmarks in the **[BatchCollisions](recordset-batchcollisions-property-dao.md)** property.</span></span>
+<span data-ttu-id="c32e1-p101">Diese Eigenschaft gibt die Anzahl von Datensätzen an, bei denen Konflikte oder andere Fehler beim letzten Versuch einer Batchaktualisierung auftraten. Der Wert dieser Eigenschaft entspricht der Anzahl von Textmarken in der **[BatchCollisions](recordset-batchcollisions-property-dao.md)** -Eigenschaft.</span><span class="sxs-lookup"><span data-stu-id="c32e1-p101">This property indicates how many records encountered collisions or otherwise failed to update during the last batch update attempt. The value of this property corresponds to the number of bookmarks in the **[BatchCollisions](recordset-batchcollisions-property-dao.md)** property.</span></span>
 
-<span data-ttu-id="cce6f-110">Wenn Sie die **[Bookmark](recordset-object-dao.md)** -Eigenschaft des aktiven **[Recordset](recordset-bookmark-property-dao.md)** -Objekts auf Textmarkenwerte im **BatchCollisions**-Array festlegen, können Sie zu jedem Datensatz wechseln, bei dem die letzte **[Update](recordset-update-method-dao.md)** -Batchoperation nicht abgeschlossen werden konnte.</span><span class="sxs-lookup"><span data-stu-id="cce6f-110">If you set the working **[Recordset](recordset-object-dao.md)** object's **[Bookmark](recordset-bookmark-property-dao.md)** property to bookmark values in the **BatchCollisions** array, you can move to each record that failed to complete the most recent batch **[Update](recordset-update-method-dao.md)** operation.</span></span>
+<span data-ttu-id="c32e1-110">Wenn Sie die **[Bookmark](recordset-object-dao.md)** -Eigenschaft des aktiven **[Recordset](recordset-bookmark-property-dao.md)** -Objekts auf Textmarkenwerte im **BatchCollisions**-Array festlegen, können Sie zu jedem Datensatz wechseln, bei dem die letzte **[Update](recordset-update-method-dao.md)** -Batchoperation nicht abgeschlossen werden konnte.</span><span class="sxs-lookup"><span data-stu-id="c32e1-110">If you set the working **[Recordset](recordset-object-dao.md)** object's **[Bookmark](recordset-bookmark-property-dao.md)** property to bookmark values in the **BatchCollisions** array, you can move to each record that failed to complete the most recent batch **[Update](recordset-update-method-dao.md)** operation.</span></span>
 
-<span data-ttu-id="cce6f-111">Nachdem die Datensätze, die einen Konflikt verursacht haben, korrigiert wurden, kann erneut eine **Update**-Methode im Batchmodus aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="cce6f-111">After the collision records are corrected, a batch-mode **Update** method can be called again.</span></span> <span data-ttu-id="cce6f-112">DAO versucht eine weitere Batchaktualisierung, und die **BatchCollisions**-Eigenschaft spiegelt die Datensatzgruppe wider, die beim zweiten Versuch nicht verarbeitet werden konnte.</span><span class="sxs-lookup"><span data-stu-id="cce6f-112">At this point DAO attempts another batch update, and the **BatchCollisions** property again reflects the set of records that failed the second attempt.</span></span> <span data-ttu-id="cce6f-113">Alle Datensätze, die in der vorherigen Versuch erfolgreich abgeschlossen werden nicht in der aktuellen Versuch gesendet, da sie nun eine **[RecordStatus](recordset-recordstatus-property-dao.md)** -Eigenschaft der Wert DbRecordUnmodified aufweisen.</span><span class="sxs-lookup"><span data-stu-id="cce6f-113">Any records that succeeded in the previous attempt are not sent in the current attempt, because they now have a **[RecordStatus](recordset-recordstatus-property-dao.md)** property of dbRecordUnmodified.</span></span> <span data-ttu-id="cce6f-114">Dieser Vorgang wird so lange fortgesetzt, bis keine Konflikte mehr auftreten oder bis Sie die Aktualisierung abbrechen und die Ergebnismenge schließen.</span><span class="sxs-lookup"><span data-stu-id="cce6f-114">This process can continue as long as collisions occur, or until you abandon the updates and close the result set.</span></span>
+<span data-ttu-id="c32e1-111">Nachdem die Datensätze, die einen Konflikt verursacht haben, korrigiert wurden, kann erneut eine **Update**-Methode im Batchmodus aufgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="c32e1-111">After the collision records are corrected, a batch-mode **Update** method can be called again.</span></span> <span data-ttu-id="c32e1-112">DAO versucht eine weitere Batchaktualisierung, und die **BatchCollisions**-Eigenschaft spiegelt die Datensatzgruppe wider, die beim zweiten Versuch nicht verarbeitet werden konnte.</span><span class="sxs-lookup"><span data-stu-id="c32e1-112">At this point DAO attempts another batch update, and the **BatchCollisions** property again reflects the set of records that failed the second attempt.</span></span> <span data-ttu-id="c32e1-113">Alle Datensätze, die in der vorherigen Versuch erfolgreich abgeschlossen werden nicht in der aktuellen Versuch gesendet, da sie nun eine **[RecordStatus](recordset-recordstatus-property-dao.md)** -Eigenschaft der Wert DbRecordUnmodified aufweisen.</span><span class="sxs-lookup"><span data-stu-id="c32e1-113">Any records that succeeded in the previous attempt are not sent in the current attempt, because they now have a **[RecordStatus](recordset-recordstatus-property-dao.md)** property of dbRecordUnmodified.</span></span> <span data-ttu-id="c32e1-114">Dieser Vorgang wird so lange fortgesetzt, bis keine Konflikte mehr auftreten oder bis Sie die Aktualisierung abbrechen und die Ergebnismenge schließen.</span><span class="sxs-lookup"><span data-stu-id="c32e1-114">This process can continue as long as collisions occur, or until you abandon the updates and close the result set.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cce6f-115">Beispiel</span><span class="sxs-lookup"><span data-stu-id="cce6f-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c32e1-115">Beispiel</span><span class="sxs-lookup"><span data-stu-id="c32e1-115">Example</span></span>
 
-<span data-ttu-id="cce6f-116">Dieses Beispiel verwendet die **BatchCollisionCount**-Eigenschaft und die **Update**-Methode und zeigt eine Batchaktualisierung, bei der Konflikte durch Erzwingen der Aktualisierung gelöst werden.</span><span class="sxs-lookup"><span data-stu-id="cce6f-116">This example uses the **BatchCollisionCount** property and the **Update** method to demonstrate batch updating where any collisions are resolved by forcing the batch update.</span></span>
+<span data-ttu-id="c32e1-116">Dieses Beispiel verwendet die **BatchCollisionCount**-Eigenschaft und die **Update**-Methode und zeigt eine Batchaktualisierung, bei der Konflikte durch Erzwingen der Aktualisierung gelöst werden.</span><span class="sxs-lookup"><span data-stu-id="c32e1-116">This example uses the **BatchCollisionCount** property and the **Update** method to demonstrate batch updating where any collisions are resolved by forcing the batch update.</span></span>
 
 ```vb 
 Sub BatchX() 
